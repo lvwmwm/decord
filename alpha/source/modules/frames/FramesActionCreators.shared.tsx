@@ -1,20 +1,20 @@
-// Module ID: 10882
-// Function ID: 10883
+// Module ID: 10905
+// Function ID: 10906
 // Name: launchFrame
-// Dependencies: [32, 5, 6833, 6834, 5646, 10883, 584, 10842, 6836, 10885, 10891, 10896, 10879, 2]
+// Dependencies: [32, 5, 6840, 6841, 5652, 10906, 572, 10865, 6843, 10908, 10914, 10919, 10902, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10882 (launchFrame)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
-import createProxyTicket from "createProxyTicket" /* 10842 */;
-import leaveFrame from "leaveFrame" /* 10879 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10883 */;
+// Module 10905 (launchFrame)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5652 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6843 */;
+import createProxyTicket from "createProxyTicket" /* 10865 */;
+import leaveFrame from "leaveFrame" /* 10902 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10906 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
+import FramesStore from "FramesStore" /* 6840 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(10879);
+        const tmp4Result = tmp4(10902);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);
@@ -281,7 +281,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -437,9 +437,9 @@ export function resetFrameLayoutModes(frameId) {
   const obj4 = { type: "FRAME_SET_PANEL_MODE", frameId, activityPanelMode: PANEL };
   obj3.dispatch(obj4);
 }
-export function attachFrameIframe(id, first1) {
+export function attachFrameIframe(id, iframeId) {
   obj = DispatcherDefault;
-  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId: first1 };
+  const obj2 = { type: "FRAME_IFRAME_MOUNT", frameId: id, iframeId };
   obj.dispatch(obj2);
 }
 export function detachFrameIframe(frameId, iframeId) {

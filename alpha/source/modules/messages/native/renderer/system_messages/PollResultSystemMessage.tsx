@@ -1,16 +1,16 @@
-// Module ID: 8467
-// Function ID: 8468
+// Module ID: 8501
+// Function ID: 8502
 // Name: PollResultSystemMessage
-// Dependencies: [1392, 8373, 8375, 1125, 1415, 4951, 8468, 8377, 2]
+// Dependencies: [1387, 8410, 8412, 1114, 1410, 4955, 8502, 8414, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8467 (PollResultSystemMessage)
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8468 */;
+// Module 8501 (PollResultSystemMessage)
+import EmojiConstants from "EmojiConstants" /* 1387 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4955 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8410 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8412 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8502 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -40,10 +40,10 @@ export function createPollResultSystemMessage(message) {
     obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle };
     obj6 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
     if (0 === tmp3.totalVotes) {
-      const intl3 = tmp22(1125).intl;
+      const intl3 = tmp22(1114).intl;
       const formatToParts3 = intl3.formatToParts;
       const obj7 = { sadEmojiHook };
-      const v9dPxsm = tmp22(1125).t["9dPxsm"];
+      const v9dPxsm = tmp22(1114).t["9dPxsm"];
       const merged = Object.assign(obj2);
       let closure_0 = { type: "emoji", content: "frowning", surrogate: "\u{1F626}" };
       formatToParts3Result = formatToParts3(v9dPxsm, obj7);
@@ -52,10 +52,10 @@ export function createPollResultSystemMessage(message) {
       const _HermesInternal = HermesInternal;
       const combined = "" + Math.round(tmp3.victorAnswerVotes / tmp3.totalVotes * 100) + "%";
       if (null == tmp3.victorAnswerId) {
-        const intl2 = tmp22(1125).intl;
+        const intl2 = tmp22(1114).intl;
         const formatToParts2 = intl2.formatToParts;
         const obj8 = { percentage: combined };
-        const dqftZ2 = tmp22(1125).t.dqftZ2;
+        const dqftZ2 = tmp22(1114).t.dqftZ2;
         const merged1 = Object.assign(obj2);
         formatToParts3Result = formatToParts2(dqftZ2, obj8);
       } else {
@@ -82,16 +82,16 @@ export function createPollResultSystemMessage(message) {
         }
         const obj12 = { type: "text", content: tmp3.victorAnswerText };
         items.push(obj12);
-        const intl = tmp22(1125).intl;
+        const intl = tmp22(1114).intl;
         const formatToParts = intl.formatToParts;
         const obj13 = { answerHook: sadEmojiHook, percentage: combined };
-        const zFwIxC = tmp22(1125).t.zFwIxC;
+        const zFwIxC = tmp22(1114).t.zFwIxC;
         const merged2 = Object.assign(obj2);
         formatToParts3Result = formatToParts(zFwIxC, obj13);
       }
     }
     const obj16 = { content: formatToParts3Result };
-    const merged3 = Object.assign(tmp(8377)(message));
+    const merged3 = Object.assign(tmp(8414)(message));
     return obj16;
   }
 }

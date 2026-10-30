@@ -1,15 +1,15 @@
-// Module ID: 18432
-// Function ID: 18433
+// Module ID: 18491
+// Function ID: 18492
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2066, 18433, 1084, 1294, 584, 2]
+// Dependencies: [5, 2063, 18492, 1072, 1283, 572, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 18432 (GuildDiscoveryCategoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
+// Module 18491 (GuildDiscoveryCategoryActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18433 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18492 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -75,7 +75,7 @@ let obj = function _maybeFetchGuildDiscoveryCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c3 = 3;
         throw tmp16;
@@ -99,7 +99,7 @@ obj = function _fetchMetadataForGuild() {
       await get(obj5);
       const obj3 = closure_130_1(closure_130_2[5]);
       obj3.dispatch({ type: "GUILD_DISCOVERY_METADATA_FETCH_FAIL" });
-      await "IconComponent";
+      await "HermesInternal";
       const body = value.body;
       const obj9 = { primaryCategoryId: body.primary_category_id, secondaryCategoryIds: body.category_ids, keywords: body.keywords, emojiDiscoverabilityEnabled: body.emoji_discoverability_enabled, partnerActionedTimestamp: body.partner_actioned_timestamp, partnerApplicationTimestamp: body.partner_application_timestamp, isPublished: body.is_published, reasonsToJoin: body.reasons_to_join, socialLinks: body.social_links, about: body.about };
       const obj10 = { type: "GUILD_UPDATE_DISCOVERY_METADATA_FROM_SERVER", guildId, metadata: obj9 };
@@ -125,7 +125,7 @@ obj = function _fetchSlugForGuild() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ obj = function _fetchSlugForGuild() {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           if (0 === c3) {
@@ -219,7 +219,7 @@ obj = function _saveGuildMetadata() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -251,7 +251,7 @@ obj = function _saveGuildMetadata() {
               about = undefined;
               partner_application_timestamp = 1;
               is_published = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === partner_application_timestamp) {
             if (arg0 === 1) {
@@ -304,7 +304,7 @@ obj = function _saveGuildMetadata() {
             obj8.dispatch(obj10);
             partner_actioned_timestamp = 0;
             is_published = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           closure_3 = tmp15;

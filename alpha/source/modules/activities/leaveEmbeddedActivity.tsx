@@ -1,11 +1,11 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 10907
+// Function ID: 10908
 // Name: leaveEmbeddedActivity
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: leaveEmbeddedActivity
 
-// Module 10884 (leaveEmbeddedActivity)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 10907 (leaveEmbeddedActivity)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/leaveEmbeddedActivity.tsx");

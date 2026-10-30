@@ -1,13 +1,13 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9539
+// Function ID: 9540
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 5736, 4828, 4821, 7404, 9521, 1125, 9523, 2]
+// Dependencies: [5, 32, 19, 5742, 4829, 4822, 7412, 9540, 1114, 9542, 2]
 // Exports: useOrderSigning
 
-// Module 9520 (useOrderSigning)
-import BillingUtils from "BillingUtils" /* 4821 */;
-import BillingErrorDefault from "BillingError" /* 4828 */;
-import PaymentConstants from "PaymentConstants" /* 5736 */;
+// Module 9539 (useOrderSigning)
+import BillingUtils from "BillingUtils" /* 4822 */;
+import BillingErrorDefault from "BillingError" /* 4829 */;
+import PaymentConstants from "PaymentConstants" /* 5742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -49,13 +49,13 @@ export function useOrderSigning(order) {
     if (!(error instanceof BillingErrorDefault)) {
       const self = this;
       const self2 = this;
-      tmp3 = new tmp(4828)(error);
+      tmp3 = new tmp(4829)(error);
     }
     const obj = BillingUtils;
     if (!obj.isExpectedHttpClientError(error)) {
       const _Error = Error;
       let tmp8 = tmp3;
-      const captureBillingException = tmp5(4821).captureBillingException;
+      const captureBillingException = tmp5(4822).captureBillingException;
       BillingUtils;
       if (error instanceof Error) {
         tmp8 = error;
@@ -67,7 +67,7 @@ export function useOrderSigning(order) {
     if (null != arg2) {
       const self3 = this;
       const self4 = this;
-      tmp3 = new tmp(4828)(arg2);
+      tmp3 = new tmp(4829)(arg2);
     }
     closure_5(tmp3);
     return tmp3;
@@ -94,7 +94,7 @@ export function useOrderSigning(order) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -124,7 +124,7 @@ export function useOrderSigning(order) {
                 orderSigningError = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

@@ -1,11 +1,11 @@
-// Module ID: 16817
-// Function ID: 16818
+// Module ID: 16871
+// Function ID: 16872
 // Name: BountyRewardClaimErrorUtils
-// Dependencies: [1125, 2]
+// Dependencies: [1114, 2]
 // Exports: resolveBountyRewardClaimErrorMessage
 
-// Module 16817 (BountyRewardClaimErrorUtils)
-import intl2 from "intl" /* 1125 */;
+// Module 16871 (BountyRewardClaimErrorUtils)
+import intl2 from "intl" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 const set = new Set([260021]);

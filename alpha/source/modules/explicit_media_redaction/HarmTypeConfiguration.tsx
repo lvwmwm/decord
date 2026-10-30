@@ -1,17 +1,17 @@
-// Module ID: 7453
-// Function ID: 7454
+// Module ID: 7461
+// Function ID: 7462
 // Name: HarmTypeConfiguration
-// Dependencies: [1084, 7454, 6060, 7455, 4833, 7456, 7458, 1208, 2]
+// Dependencies: [1072, 7462, 6067, 7463, 4834, 7464, 7466, 1197, 2]
 
-// Module 7453 (HarmTypeConfiguration)
-import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import MediaTypes from "MediaTypes" /* 6060 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 7454 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7455 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7456 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7458 */;
-import Constants from "Constants" /* 1084 */;
+// Module 7461 (HarmTypeConfiguration)
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import MediaTypes from "MediaTypes" /* 6067 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 7462 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7463 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7464 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7466 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let MessageAttachmentFlags;
@@ -32,13 +32,13 @@ function getProtoUserSettings(textAndImages) {
   const obj = {};
   obj[GUILD] = prop1;
   let prop2;
-  const FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.FRIEND_DM;
+  const FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.FRIEND_DM;
   if (prop != null) {
     prop2 = prop.explicitContentFriendDm;
   }
   obj[FRIEND_DM] = prop2;
   let prop3;
-  const NON_FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
+  const NON_FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
   if (prop != null) {
     prop3 = prop.explicitContentNonFriendDm;
   }
@@ -57,16 +57,16 @@ function getUserSettingsWithDefaults(arg0) {
     }
     const obj = {};
     obj[GUILD2] = prop;
-    const FRIEND_DM = tmp15(7455).ContentHarmTypeChannel.FRIEND_DM;
-    const ExplicitContentSettings = tmp15(4833).ExplicitContentSettings;
+    const FRIEND_DM = tmp15(7463).ContentHarmTypeChannel.FRIEND_DM;
+    const ExplicitContentSettings = tmp15(4834).ExplicitContentSettings;
     const setting1 = ExplicitContentSettings.getSetting();
     let prop1;
     if (setting1 != null) {
       prop1 = setting1.explicitContentFriendDm;
     }
     obj[FRIEND_DM] = prop1;
-    const NON_FRIEND_DM = tmp15(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
-    const ExplicitContentSettings2 = tmp15(4833).ExplicitContentSettings;
+    const NON_FRIEND_DM = tmp15(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
+    const ExplicitContentSettings2 = tmp15(4834).ExplicitContentSettings;
     const setting2 = ExplicitContentSettings2.getSetting();
     let prop2;
     if (setting2 != null) {
@@ -80,23 +80,23 @@ function getUserSettingsWithDefaults(arg0) {
   const resolveExplicitContentSettingWithDefaults = SensitiveMediaExplicitRedactionSettingsUtils.resolveExplicitContentSettingWithDefaults;
   SensitiveMediaExplicitRedactionSettingsUtils;
   if (tmp != null) {
-    tmp10 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.GUILD];
+    tmp10 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.GUILD];
   }
   const obj2 = { [GUILD]: resolveExplicitContentSettingWithDefaults({ setting: tmp10 }) };
-  const FRIEND_DM2 = tmp7(7455).ContentHarmTypeChannel.FRIEND_DM;
+  const FRIEND_DM2 = tmp7(7463).ContentHarmTypeChannel.FRIEND_DM;
   let tmp12;
   const resolveExplicitContentSettingWithDefaults2 = SensitiveMediaExplicitRedactionSettingsUtils.resolveExplicitContentSettingWithDefaults;
   SensitiveMediaExplicitRedactionSettingsUtils;
   if (tmp != null) {
-    tmp12 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.FRIEND_DM];
+    tmp12 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.FRIEND_DM];
   }
   obj2[FRIEND_DM2] = resolveExplicitContentSettingWithDefaults2({ setting: tmp12, isDm: true, isFriend: true });
-  const NON_FRIEND_DM2 = tmp7(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
+  const NON_FRIEND_DM2 = tmp7(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
   let tmp14;
   const resolveExplicitContentSettingWithDefaults3 = SensitiveMediaExplicitRedactionSettingsUtils.resolveExplicitContentSettingWithDefaults;
   SensitiveMediaExplicitRedactionSettingsUtils;
   if (tmp != null) {
-    tmp14 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.NON_FRIEND_DM];
+    tmp14 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.NON_FRIEND_DM];
   }
   obj2[NON_FRIEND_DM2] = resolveExplicitContentSettingWithDefaults3({ setting: tmp14, isDm: true });
   return obj2;
@@ -117,13 +117,13 @@ const getProtoUserSettings2 = function getProtoUserSettings(textAndImages) {
   const obj = {};
   obj[GUILD] = goreContentGuilds;
   let goreContentFriendDm;
-  const FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.FRIEND_DM;
+  const FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.FRIEND_DM;
   if (goreContentSettings != null) {
     goreContentFriendDm = goreContentSettings.goreContentFriendDm;
   }
   obj[FRIEND_DM] = goreContentFriendDm;
   let prop;
-  const NON_FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
+  const NON_FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
   if (goreContentSettings != null) {
     prop = goreContentSettings.goreContentNonFriendDm;
   }
@@ -142,16 +142,16 @@ const getUserSettingsWithDefaults2 = function getUserSettingsWithDefaults(arg0) 
     }
     const obj = {};
     obj[GUILD2] = goreContentGuilds;
-    const FRIEND_DM = tmp15(7455).ContentHarmTypeChannel.FRIEND_DM;
-    const GoreContentSettings = tmp15(4833).GoreContentSettings;
+    const FRIEND_DM = tmp15(7463).ContentHarmTypeChannel.FRIEND_DM;
+    const GoreContentSettings = tmp15(4834).GoreContentSettings;
     const setting1 = GoreContentSettings.getSetting();
     let goreContentFriendDm;
     if (setting1 != null) {
       goreContentFriendDm = setting1.goreContentFriendDm;
     }
     obj[FRIEND_DM] = goreContentFriendDm;
-    const NON_FRIEND_DM = tmp15(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
-    const GoreContentSettings2 = tmp15(4833).GoreContentSettings;
+    const NON_FRIEND_DM = tmp15(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
+    const GoreContentSettings2 = tmp15(4834).GoreContentSettings;
     const setting2 = GoreContentSettings2.getSetting();
     let prop;
     if (setting2 != null) {
@@ -165,23 +165,23 @@ const getUserSettingsWithDefaults2 = function getUserSettingsWithDefaults(arg0) 
   const resolveGoreSettingWithDefaults = SensitiveMediaGoreRedactionSettingsUtils.resolveGoreSettingWithDefaults;
   SensitiveMediaGoreRedactionSettingsUtils;
   if (tmp != null) {
-    tmp10 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.GUILD];
+    tmp10 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.GUILD];
   }
   const obj2 = { [GUILD]: resolveGoreSettingWithDefaults({ setting: tmp10 }) };
-  const FRIEND_DM2 = tmp7(7455).ContentHarmTypeChannel.FRIEND_DM;
+  const FRIEND_DM2 = tmp7(7463).ContentHarmTypeChannel.FRIEND_DM;
   let tmp12;
   const resolveGoreSettingWithDefaults2 = SensitiveMediaGoreRedactionSettingsUtils.resolveGoreSettingWithDefaults;
   SensitiveMediaGoreRedactionSettingsUtils;
   if (tmp != null) {
-    tmp12 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.FRIEND_DM];
+    tmp12 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.FRIEND_DM];
   }
   obj2[FRIEND_DM2] = resolveGoreSettingWithDefaults2({ setting: tmp12, isDm: true, isFriend: true });
-  const NON_FRIEND_DM2 = tmp7(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
+  const NON_FRIEND_DM2 = tmp7(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
   let tmp14;
   const resolveGoreSettingWithDefaults3 = SensitiveMediaGoreRedactionSettingsUtils.resolveGoreSettingWithDefaults;
   SensitiveMediaGoreRedactionSettingsUtils;
   if (tmp != null) {
-    tmp14 = tmp[tmp7(undefined, 7455).ContentHarmTypeChannel.NON_FRIEND_DM];
+    tmp14 = tmp[tmp7(undefined, 7463).ContentHarmTypeChannel.NON_FRIEND_DM];
   }
   obj2[NON_FRIEND_DM2] = resolveGoreSettingWithDefaults3({ setting: tmp14, isDm: true });
   return obj2;
@@ -202,13 +202,13 @@ const getProtoUserSettings3 = function getProtoUserSettings(textAndImages) {
   const obj = {};
   obj[GUILD] = prop1;
   let prop2;
-  const FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.FRIEND_DM;
+  const FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.FRIEND_DM;
   if (prop != null) {
     prop2 = prop.selfHarmContentFriendDm;
   }
   obj[FRIEND_DM] = prop2;
   let prop3;
-  const NON_FRIEND_DM = tmp2(7455).ContentHarmTypeChannel.NON_FRIEND_DM;
+  const NON_FRIEND_DM = tmp2(7463).ContentHarmTypeChannel.NON_FRIEND_DM;
   if (prop != null) {
     prop3 = prop.selfHarmContentNonFriendDm;
   }

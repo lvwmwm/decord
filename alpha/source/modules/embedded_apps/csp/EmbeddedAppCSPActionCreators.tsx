@@ -1,11 +1,11 @@
-// Module ID: 10889
-// Function ID: 10890
+// Module ID: 10912
+// Function ID: 10913
 // Name: EmbeddedAppCSPActionCreators
-// Dependencies: [5, 1294, 584, 1254, 2]
+// Dependencies: [5, 1283, 572, 1243, 2]
 // Exports: fetchEmbeddedAppCSP
 
-// Module 10889 (EmbeddedAppCSPActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 10912 (EmbeddedAppCSPActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _fetchEmbeddedAppCSP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,13 +73,13 @@ let obj = function _fetchEmbeddedAppCSP() {
             obj.dispatch(obj8);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp21) {
-          closure_3 = tmp21;
+        } catch (tmp24) {
+          closure_3 = tmp24;
           if (0 === c4) {
             c6 = 3;
-            throw tmp21;
+            throw tmp24;
           } else {
             c5 = 1;
           }

@@ -1,33 +1,32 @@
-// Module ID: 13865
-// Function ID: 13866
+// Module ID: 13999
+// Function ID: 14000
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9043, 4935, 13858, 1084, 21, 5005, 587, 558, 576, 504, 13863, 5700, 1264, 13866, 9086, 13867, 1125, 13868, 9042, 8209, 13869, 5745, 5247, 1120, 13870, 13871, 7338, 13980, 5271, 5281, 6968, 7358, 1199, 2]
+// Dependencies: [5, 19, 17, 9056, 4939, 13992, 1072, 21, 5009, 575, 504, 13997, 5706, 1253, 14000, 14001, 9099, 14002, 1114, 9055, 8212, 14003, 5751, 5253, 1109, 14004, 14005, 7345, 14112, 5619, 5629, 6974, 7360, 1188, 2]
+// Exports: default
 
-// Module 13865 (GuildProgressActionSheet)
+// Module 13999 (GuildProgressActionSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import native from "native" /* 1199 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13863 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13866 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13871 */;
+import nativeDefault from "native" /* 575 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9099 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13997 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14000 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14005 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9043 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import GuildProgressConstants from "GuildProgressConstants" /* 13858 */;
-import Constants from "Constants" /* 1084 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import GuildProgressConstants from "GuildProgressConstants" /* 13992 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,159 +41,32 @@ let map1;
 let metroImportAll;
 let obj2;
 let unpackModuleId;
+class GuildProgressHeader {
+  constructor(arg0) {
+    let items;
+    let subtitle;
+    let title;
+    ({ title, subtitle } = arg0);
+    const tmp = closure_16();
+    const obj = { style: tmp.header, children: items };
+    items = [, ];
+    const obj2 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+    items[0] = authStore3(Text_Text.Text, obj2);
+    const obj3 = { style: tmp.headerSubtitle, children: subtitle };
+    items[1] = authStore3(native.LegacyText, obj3);
+    return closure_15(View, obj);
+  }
+}
 const View = react_native.View;
 ({ AnalyticsSetupTypes: metroImportAll, AnalyticsActions: c9 } = GuildProgressConstants);
 ({ UPLOAD_MEDIUM_SIZE: c10, AnalyticEvents: unpackModuleId, ComponentActions: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let obj = { container: { padding: 16 }, header: { alignItems: "center", paddingTop: 8, paddingBottom: 16 }, headerTitle: { marginBottom: 8, textAlign: "center" }, headerSubtitle: obj2, footer: { marginTop: 4 }, center: { alignItems: "center" } };
 obj2 = { fontSize: 14, fontWeight: "500", color: nativeDefault.colors.TEXT_SUBTLE };
-let closure_16 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgressActionSheet(guild) {
-  let errors;
-  let first;
-  let guildBoosted;
-  let guildMessaged;
-  let guildPersonalized;
-  let guildPopulated;
-  let numFinished;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp17;
-  let tmp18;
-  let tmp7;
-  const tmp = guild;
-  let tmp2 = numFinished;
-  let obj = guild(numFinished[11]);
-  const cResult = obj.c(72);
-  guild = guild.guild;
-  closure_16();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp6 = GuildChannelStore;
-    const items = [GuildChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guild.id) {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-    cResult[1] = guild.id;
-    cResult[2] = P;
-    tmp7 = P;
-  } else {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[12]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmpResult3 = tmp(tmp2[13]);
-  const iOSCompletionStates = tmpResult3.useIOSCompletionStates(guild);
-  ({ guildPopulated, guildPersonalized, guildMessaged, guildBoosted, numFinished } = iOSCompletionStates);
-  const totalSteps = iOSCompletionStates.totalSteps;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-    const items1 = [GuildSettingsStore];
-    const fn = function b() {
-      return errors.getErrors();
-    };
-    cResult[3] = items1;
-    cResult[4] = fn;
-    tmp11 = fn;
-    tmp10 = items1;
-  } else {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-    tmp11 = cResult[4];
-  }
-  const tmpResult4 = tmp(tmp2[12]);
-  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp10, tmp11);
-  const id = guild.id;
-  if (cResult[5] !== stateFromStoresObject.message) {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-    const items2 = [stateFromStoresObject.message];
-    cResult[5] = stateFromStoresObject.message;
-    cResult[6] = tmp15;
-    cResult[7] = items2;
-    tmp14 = items2;
-    tmp13 = tmp15;
-  } else {
-    class P {
-      constructor() {
-        return GuildChannelStore.getDefaultChannel(guild.id);
-      }
-    }
-    tmp14 = cResult[7];
-  }
-  const layoutEffect = stateFromStoresObject.useLayoutEffect(tmp13, tmp14);
-  const obj5 = stateFromStoresObject;
-  if (cResult[8] !== id) {
-    class M {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { type: "Guild Progress Sheet", guild_id: id };
-        obj.track(unpackModuleId.OPEN_POPOUT, obj2);
-      }
-    }
-    const items3 = [id];
-    cResult[8] = id;
-    cResult[9] = M;
-    cResult[10] = items3;
-    tmp18 = items3;
-    tmp17 = M;
-  } else {
-    class M {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { type: "Guild Progress Sheet", guild_id: id };
-        obj.track(unpackModuleId.OPEN_POPOUT, obj2);
-      }
-    }
-    tmp18 = cResult[10];
-  }
-  const effect = obj5.useEffect(tmp17, tmp18);
-  if (cResult[11] === id) {
-    class M {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { type: "Guild Progress Sheet", guild_id: id };
-        obj.track(unpackModuleId.OPEN_POPOUT, obj2);
-      }
-    }
-  }
-  const fn2 = function j() {
-    if (numFinished === totalSteps) {
-      const obj = GuildProgressActionCreatorsDefault;
-      const result = obj.markCompletedProgressSeen(id);
-    }
-  };
-  const items4 = [id, totalSteps, numFinished];
-  cResult[11] = id;
-  cResult[12] = numFinished;
-  cResult[13] = totalSteps;
-  cResult[14] = items4;
-  cResult[15] = fn2;
-}) : (function GuildProgressActionSheet(guild) {
+const authStore4 = createStyles.createStyles(obj);
+let result = size.fileFinishedImporting("modules/guild_progress/native/action_sheet/GuildProgressActionSheet.tsx");
+
+export default function GuildProgressActionSheet(guild) {
   let Text;
   let guildBoosted;
   let guildMessaged;
@@ -219,7 +91,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
   let user;
   guild = guild.guild;
   let numFinished;
-  let obj = function _addServerIcon2() {
+  let obj = function _addServerIcon() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let closure_1;
@@ -233,7 +105,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -249,12 +121,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
               return obj3;
             } else {
               base64 = undefined;
-              const obj6 = tmp4(c2[21]);
+              const obj6 = tmp4(c2[19]);
               obj6.init(closure_2_5);
-              const obj7 = tmp(c2[13]);
+              const obj7 = tmp(c2[11]);
               obj7.hideActionSheet(id.id);
               const obj4 = { size };
-              const obj8 = tmp4(c2[22]);
+              const obj8 = tmp4(c2[20]);
               c2 = 1;
               c3 = 1;
               const obj5 = { value: obj8.openImagePicker(obj4), done: false };
@@ -270,11 +142,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
           } else {
             base64 = value.base64;
             if (null != base64) {
-              obj = tmp4(c2[21]);
+              obj = tmp4(c2[19]);
               obj.updateIcon(closure_129_5, base64);
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -287,15 +159,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
   const tmp = closure_16();
   let tmp2 = guild;
   const tmp3 = numFinished;
-  obj = guild(numFinished[12]);
+  obj = guild(numFinished[10]);
   const items = [GuildChannelStore];
   importDefault = obj.useStateFromStores(items, () => GuildChannelStore.getDefaultChannel(guild.id));
-  let obj2 = guild(numFinished[13]);
+  let obj2 = guild(numFinished[11]);
   const iOSCompletionStates = obj2.useIOSCompletionStates(guild);
   numFinished = iOSCompletionStates.numFinished;
   const totalSteps = iOSCompletionStates.totalSteps;
   ({ guildPopulated, guildPersonalized, guildMessaged, guildBoosted } = iOSCompletionStates);
-  let obj3 = guild(numFinished[12]);
+  let obj3 = guild(numFinished[10]);
   const items1 = [obj];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => obj.getErrors());
   const id = guild.id;
@@ -328,28 +200,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
       }
     },
     source: obj5,
-    title: intl.string(guild(numFinished[19]).t.q9n0Ta),
+    title: intl.string(guild(numFinished[18]).t.q9n0Ta),
     isCompleted: guildPopulated,
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.INVITE
   };
-  obj5 = { uri: require("module_13867") };
+  obj5 = { uri: require("module_14002") };
   const tmp10 = require("ProgressItem");
-  intl = guild(numFinished[19]).intl;
+  intl = guild(numFinished[18]).intl;
   const tmp11 = closure_14(tmp10, obj4);
   let obj6 = {
     onPress: function addServerIcon() {
       return obj(...arguments);
     },
     source: obj7,
-    title: intl2.string(guild(numFinished[19]).t.DWB2YZ),
+    title: intl2.string(guild(numFinished[18]).t.DWB2YZ),
     isCompleted: guildPersonalized,
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.PERSONALIZE_SERVER
   };
-  obj7 = { uri: require("module_13869") };
+  obj7 = { uri: require("module_14003") };
   const tmp12 = require("ProgressItem");
-  intl2 = guild(numFinished[19]).intl;
+  intl2 = guild(numFinished[18]).intl;
   const tmp13 = closure_14(tmp12, obj6);
   let obj8 = {
     onPress: function goToChannel() {
@@ -368,14 +240,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
       ComponentDispatch.dispatch(constants2.TEXTAREA_FOCUS, tmp6);
     },
     source: obj9,
-    title: intl3.string(guild(numFinished[19]).t.dNktpr),
+    title: intl3.string(guild(numFinished[18]).t.dNktpr),
     isCompleted: guildMessaged,
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.SEND_MESSAGE
   };
-  obj9 = { uri: require("module_13870") };
+  obj9 = { uri: require("module_14004") };
   const tmp14 = require("ProgressItem");
-  intl3 = guild(numFinished[19]).intl;
+  intl3 = guild(numFinished[18]).intl;
   const tmp15 = closure_14(tmp14, obj8);
   const obj10 = {
     onPress: function goToBoosts() {
@@ -386,28 +258,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
       tmp2(obj2);
     },
     source: obj11,
-    title: intl4.string(guild(numFinished[19]).t["6Qbqxw"]),
+    title: intl4.string(guild(numFinished[18]).t["6Qbqxw"]),
     isCompleted: guildBoosted,
     analyticsSetupType: constants.GUILD_PROGRESS,
     analyticsAction: constants2.BOOST
   };
-  obj11 = { uri: require("module_13980") };
+  obj11 = { uri: require("module_14112") };
   const tmp16 = require("ProgressItem");
-  intl4 = guild(numFinished[19]).intl;
+  intl4 = guild(numFinished[18]).intl;
   const obj12 = { style: tmp.container, children: items5 };
-  const obj13 = { title: intl5.string(guild(numFinished[19]).t["tu/tr8"]), subtitle: intl6.format(guild(numFinished[19]).t.l6iRLs, obj14) };
+  const obj13 = { title: intl5.string(guild(numFinished[18]).t["tu/tr8"]), subtitle: intl6.format(guild(numFinished[18]).t.l6iRLs, obj14) };
   const tmp17 = closure_14(tmp16, obj10);
-  intl5 = guild(numFinished[19]).intl;
-  intl6 = guild(numFinished[19]).intl;
+  intl5 = guild(numFinished[18]).intl;
+  intl6 = guild(numFinished[18]).intl;
   obj14 = {
     numFinished,
     total: totalSteps,
     stepsHook(children, arg1) {
       obj = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children };
-      return closure_1_14(guild(numFinished[31]).Text, obj, arg1);
+      return closure_1_14(guild(numFinished[29]).Text, obj, arg1);
     }
   };
-  items5 = [closure_14(closure_17, obj13), tmp11, tmp13, tmp15, tmp17, ];
+  items5 = [closure_14(GuildProgressHeader, obj13), tmp11, tmp13, tmp15, tmp17, ];
   const items6 = [tmp.footer, ];
   let center = null;
   const tmp19 = closure_15;
@@ -426,88 +298,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgres
   const obj15 = { style: items6, children: tmp9Result };
   items6[1] = center;
   if (numFinished === totalSteps) {
-    const obj16 = { variant: "primary", grow: true, onPress: handleDismissGuildProgress, text: intl8.string(tmp2(tmp3[19]).t["0/5zhg"]) };
-    const Button = tmp2(tmp3[32]).Button;
-    intl8 = tmp2(tmp3[19]).intl;
+    const obj16 = { variant: "primary", grow: true, onPress: handleDismissGuildProgress, text: intl8.string(tmp2(tmp3[18]).t["0/5zhg"]) };
+    const Button = tmp2(tmp3[30]).Button;
+    intl8 = tmp2(tmp3[18]).intl;
     tmp9Result = tmp9(Button, obj16);
   } else {
     const obj17 = { accessibilityRole: "button", onPress: handleDismissGuildProgress, children: closure_14(Text, obj18) };
-    const PressableOpacity = tmp2(tmp3[33]).PressableOpacity;
-    obj18 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(tmp2(tmp3[19]).t["9E36wf"]) };
-    Text = tmp2(tmp3[31]).Text;
-    intl7 = tmp2(tmp3[19]).intl;
+    const PressableOpacity = tmp2(tmp3[31]).PressableOpacity;
+    obj18 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(tmp2(tmp3[18]).t["9E36wf"]) };
+    Text = tmp2(tmp3[29]).Text;
+    intl7 = tmp2(tmp3[18]).intl;
     tmp9Result = tmp9(PressableOpacity, obj17);
   }
   items5[5] = closure_14(id, obj15);
   const children = tmp19(tmp20, obj12);
-  return closure_14(tmp2(tmp3[34]).ActionSheet, { showGradient: true, startExpanded: true, children });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProgressHeader(arg0) {
-  let items;
-  let subtitle;
-  let title;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ title, subtitle } = arg0);
-  const tmp4 = closure_16();
-  if (cResult[0] === tmp4.headerTitle) {
-    let tmp5;
-    if (cResult[1] === title) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp4.headerSubtitle) {
-      let tmp7;
-      if (cResult[4] === subtitle) {
-        tmp7 = cResult[5];
-      }
-      if (cResult[6] === tmp4.header) {
-        if (cResult[7] === tmp5) {
-          let tmp10;
-          if (cResult[8] === tmp7) {
-            tmp10 = cResult[9];
-          }
-          return tmp10;
-        }
-      }
-      const obj2 = { style: tmp4.header, children: items };
-      items = [tmp5, tmp7];
-      const tmp13 = closure_15(View, obj2);
-      cResult[6] = tmp4.header;
-      cResult[7] = tmp5;
-      cResult[8] = tmp7;
-      cResult[9] = tmp13;
-      tmp10 = tmp13;
-    }
-    const obj3 = { style: tmp4.headerSubtitle, children: subtitle };
-    const tmp9 = syncedClientThemes(native.LegacyText, obj3);
-    cResult[3] = tmp4.headerSubtitle;
-    cResult[4] = subtitle;
-    cResult[5] = tmp9;
-    tmp7 = tmp9;
-  }
-  const obj4 = { style: tmp4.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  const tmp6 = syncedClientThemes(Text_Text.Text, obj4);
-  cResult[0] = tmp4.headerTitle;
-  cResult[1] = title;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function GuildProgressHeader(arg0) {
-  let items;
-  let subtitle;
-  let title;
-  ({ title, subtitle } = arg0);
-  const tmp = closure_16();
-  const obj = { style: tmp.header, children: items };
-  items = [, ];
-  const obj2 = { style: tmp.headerTitle, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
-  items[0] = syncedClientThemes(Text_Text.Text, obj2);
-  const obj3 = { style: tmp.headerSubtitle, children: subtitle };
-  items[1] = syncedClientThemes(native.LegacyText, obj3);
-  return closure_15(View, obj);
-});
-let closure_17 = tmp6;
-let result = size.fileFinishedImporting("modules/guild_progress/native/action_sheet/GuildProgressActionSheet.tsx");
-
-export default tmp5;
-export const GuildProgressHeader = tmp6;
+  return closure_14(tmp2(tmp3[32]).ActionSheet, { showGradient: true, startExpanded: true, children });
+};
+export { GuildProgressHeader };

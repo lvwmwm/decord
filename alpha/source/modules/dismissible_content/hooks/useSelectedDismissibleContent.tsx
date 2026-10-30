@@ -1,58 +1,18 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7563
+// Function ID: 7564
 // Name: useSelectedDismissibleContent
-// Dependencies: [32, 558, 576, 7556, 7558, 2]
+// Dependencies: [32, 7564, 7566, 2]
+// Exports: useSelectedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 7555 (useSelectedDismissibleContent)
-import react from "react" /* 576 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 7556 */;
-import useSelectedDismissibleContentShared from "useSelectedDismissibleContentShared" /* 7558 */;
+// Module 7563 (useSelectedDismissibleContent)
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7564 */;
+import useSelectedDismissibleContentShared from "useSelectedDismissibleContentShared" /* 7566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedDismissibleContent(arg0, arg1) {
-  let tmp4;
-  let tmp7;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(5);
-  if (cResult[0] !== arg1) {
-    let obj2 = arg1;
-    if (undefined === arg1) {
-      obj2 = {};
-    }
-    cResult[0] = arg1;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const bypassAutoDismiss = tmp4.bypassAutoDismiss;
-  let tmp5 = undefined !== bypassAutoDismiss;
-  const groupName = tmp4.groupName;
-  if (tmp5) {
-    tmp5 = bypassAutoDismiss;
-  }
-  const tmpResult = useGetDismissibleContent;
-  [tmp7, tmp8] = tmpResult.useGetDismissibleContent(arg0, groupName);
-  _slicedToArray(tmpResult.useGetDismissibleContent(arg0, groupName), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp7, tmp8, tmp5);
-  if (cResult[2] === tmp8) {
-    let tmp10;
-    if (cResult[3] === tmp7) {
-      tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const items = [tmp7, tmp8];
-  cResult[2] = tmp8;
-  cResult[3] = tmp7;
-  cResult[4] = items;
-  tmp10 = items;
-}) : (function useSelectedDismissibleContent(arg0) {
+const result = size.fileFinishedImporting("modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx");
+
+export function useSelectedDismissibleContent(items, arg1) {
   let bypassAutoDismiss;
   let groupName;
   let tmp2;
@@ -66,288 +26,109 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelecte
     bypassAutoDismiss = false;
   }
   const obj2 = useGetDismissibleContent;
-  [tmp2, tmp3] = obj2.useGetDismissibleContent(arg0, groupName);
-  _slicedToArray(obj2.useGetDismissibleContent(arg0, groupName), 2);
+  [tmp2, tmp3] = obj2.useGetDismissibleContent(items, groupName);
+  _slicedToArray(obj2.useGetDismissibleContent(items, groupName), 2);
   const obj3 = useSelectedDismissibleContentShared;
   const selectedDismissibleContentShared = obj3.useSelectedDismissibleContentShared(tmp2, tmp3, bypassAutoDismiss);
-  const items = [tmp2, tmp3];
+  items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSingleUseGuildDismissibleContent(arg0, arg1, arg2, arg3) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg3 && arg3;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, arg1, arg2);
-  _slicedToArray(tmpResult.useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, arg1, arg2), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4, arg1);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedSingleUseGuildDismissibleContent(arg0, arg1, arg2) {
+}
+export function useSelectedSingleUseGuildDismissibleContent(items4, id, CHANNEL_NOTICES, flag) {
   let tmp2;
   let tmp3;
-  let flag = arg3;
-  if (arg3 === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, arg1, arg2);
-  _slicedToArray(obj.useGetSingleUseGuildDismissibleContent_UNSAFE(arg0, arg1, arg2), 2);
+  [tmp2, tmp3] = obj.useGetSingleUseGuildDismissibleContent_UNSAFE(items4, id, CHANNEL_NOTICES);
+  _slicedToArray(obj.useGetSingleUseGuildDismissibleContent_UNSAFE(items4, id, CHANNEL_NOTICES), 2);
   const obj2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag, arg1);
+  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag, id);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedVersionedDismissibleContent(arg0, arg1, arg2, arg3) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg3 && arg3;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetVersionedDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(tmpResult.useGetVersionedDismissibleContent(arg0, arg1, arg2), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedVersionedDismissibleContent(arg0, arg1, arg2) {
+}
+export function useSelectedVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName, bypassAutoDismiss) {
   let tmp2;
   let tmp3;
-  let flag = arg3;
-  if (arg3 === undefined) {
+  let flag = bypassAutoDismiss;
+  if (bypassAutoDismiss === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetVersionedDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(obj.useGetVersionedDismissibleContent(arg0, arg1, arg2), 2);
+  [tmp2, tmp3] = obj.useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName);
+  _slicedToArray(obj.useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName), 2);
   const obj2 = useSelectedDismissibleContentShared;
   const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringDismissibleContent(arg0, arg1, arg2, arg3) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg3 && arg3;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetTimeRecurringDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(tmpResult.useGetTimeRecurringDismissibleContent(arg0, arg1, arg2), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedTimeRecurringDismissibleContent(arg0, arg1, arg2) {
+}
+export function useSelectedTimeRecurringDismissibleContent(prop, timeRecurringConfig, groupName, bypassAutoDismiss) {
   let tmp2;
   let tmp3;
-  let flag = arg3;
-  if (arg3 === undefined) {
+  let flag = bypassAutoDismiss;
+  if (bypassAutoDismiss === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetTimeRecurringDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(obj.useGetTimeRecurringDismissibleContent(arg0, arg1, arg2), 2);
+  [tmp2, tmp3] = obj.useGetTimeRecurringDismissibleContent(prop, timeRecurringConfig, groupName);
+  _slicedToArray(obj.useGetTimeRecurringDismissibleContent(prop, timeRecurringConfig, groupName), 2);
   const obj2 = useSelectedDismissibleContentShared;
   const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg3 && arg3;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetSnowflakeBoundDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(tmpResult.useGetSnowflakeBoundDismissibleContent(arg0, arg1, arg2), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedSnowflakeBoundDismissibleContent(arg0, arg1, arg2) {
+}
+export function useSelectedSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName, bypassAutoDismiss) {
   let tmp2;
   let tmp3;
-  let flag = arg3;
-  if (arg3 === undefined) {
+  let flag = bypassAutoDismiss;
+  if (bypassAutoDismiss === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetSnowflakeBoundDismissibleContent(arg0, arg1, arg2);
-  _slicedToArray(obj.useGetSnowflakeBoundDismissibleContent(arg0, arg1, arg2), 2);
+  [tmp2, tmp3] = obj.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName);
+  _slicedToArray(obj.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
   const obj2 = useSelectedDismissibleContentShared;
   const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedSnowflakeBoundGuildDismissibleContent(arg0, arg1, arg2, arg3, arg4) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg4 && arg4;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(arg0, arg2, arg1, arg3);
-  _slicedToArray(tmpResult.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(arg0, arg2, arg1, arg3), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4, arg1);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedSnowflakeBoundGuildDismissibleContent(arg0, arg1, arg2, arg3) {
+}
+export function useSelectedSnowflakeBoundGuildDismissibleContent(prop, id, newSnowflakeId, GUILD_HEADER_TOOLTIPS, flag) {
   let tmp2;
   let tmp3;
-  let flag = arg4;
-  if (arg4 === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(arg0, arg2, arg1, arg3);
-  _slicedToArray(obj.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(arg0, arg2, arg1, arg3), 2);
+  [tmp2, tmp3] = obj.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS);
+  _slicedToArray(obj.useGetSnowflakeBoundGuildDismissibleContent_UNSAFE(prop, newSnowflakeId, id, GUILD_HEADER_TOOLTIPS), 2);
   const obj2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag, arg1);
+  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag, id);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3, arg4) {
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(3);
-  const tmp4 = undefined !== arg4 && arg4;
-  const tmpResult = useGetDismissibleContent;
-  [tmp6, tmp7] = tmpResult.useGetTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg2, arg1, arg3);
-  _slicedToArray(tmpResult.useGetTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg2, arg1, arg3), 2);
-  const tmpResult2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = tmpResult2.useSelectedDismissibleContentShared(tmp6, tmp7, tmp4);
-  if (cResult[0] === tmp7) {
-    let tmp9;
-    if (cResult[1] === tmp6) {
-      tmp9 = cResult[2];
-    }
-    return tmp9;
-  }
-  const items = [tmp6, tmp7];
-  cResult[0] = tmp7;
-  cResult[1] = tmp6;
-  cResult[2] = items;
-  tmp9 = items;
-}) : (function useSelectedTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg1, arg2, arg3) {
+}
+export function useSelectedTimeRecurringSnowflakeBoundDismissibleContent(contentType, newSnowflakeId, timeRecurringConfig, groupName, bypassAutoDismiss) {
   let tmp2;
   let tmp3;
-  let flag = arg4;
-  if (arg4 === undefined) {
+  let flag = bypassAutoDismiss;
+  if (bypassAutoDismiss === undefined) {
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg2, arg1, arg3);
-  _slicedToArray(obj.useGetTimeRecurringSnowflakeBoundDismissibleContent(arg0, arg2, arg1, arg3), 2);
+  [tmp2, tmp3] = obj.useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName);
+  _slicedToArray(obj.useGetTimeRecurringSnowflakeBoundDismissibleContent(contentType, timeRecurringConfig, newSnowflakeId, groupName), 2);
   const obj2 = useSelectedDismissibleContentShared;
   const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];
   return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTimeRecurringGuildDismissibleContent(arg0, arg1, arg2, arg3) {
-  let tmp3;
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(3);
-  const obj2 = useGetDismissibleContent;
-  [tmp3, tmp4] = obj2.useGetTimeRecurringGuildDismissibleContent_UNSAFE(arg0, arg1, arg2, arg3);
-  _slicedToArray(obj2.useGetTimeRecurringGuildDismissibleContent_UNSAFE(arg0, arg1, arg2, arg3), 2);
-  const obj3 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = obj3.useSelectedDismissibleContentShared(tmp3, tmp4, false, arg1);
-  if (cResult[0] === tmp4) {
-    let tmp6;
-    if (cResult[1] === tmp3) {
-      tmp6 = cResult[2];
-    }
-    return tmp6;
-  }
-  const items = [tmp3, tmp4];
-  cResult[0] = tmp4;
-  cResult[1] = tmp3;
-  cResult[2] = items;
-  tmp6 = items;
-}) : (function useSelectedTimeRecurringGuildDismissibleContent(arg0, arg1, arg2, arg3) {
+}
+export function useSelectedTimeRecurringGuildDismissibleContent(prop, id, cooldownDurationMs, GUILD_HEADER_TOOLTIPS) {
   let tmp2;
   let tmp3;
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetTimeRecurringGuildDismissibleContent_UNSAFE(arg0, arg1, arg2, arg3);
-  _slicedToArray(obj.useGetTimeRecurringGuildDismissibleContent_UNSAFE(arg0, arg1, arg2, arg3), 2);
+  [tmp2, tmp3] = obj.useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, cooldownDurationMs, GUILD_HEADER_TOOLTIPS);
+  _slicedToArray(obj.useGetTimeRecurringGuildDismissibleContent_UNSAFE(prop, id, cooldownDurationMs, GUILD_HEADER_TOOLTIPS), 2);
   const obj2 = useSelectedDismissibleContentShared;
-  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, false, arg1);
+  const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, false, id);
   const items = [tmp2, tmp3];
   return items;
-});
-const result = size.fileFinishedImporting("modules/dismissible_content/hooks/useSelectedDismissibleContent.tsx");
-
-export const useSelectedDismissibleContent = tmp2;
-export const useSelectedSingleUseGuildDismissibleContent = tmp3;
-export const useSelectedVersionedDismissibleContent = tmp4;
-export const useSelectedTimeRecurringDismissibleContent = tmp5;
-export const useSelectedSnowflakeBoundDismissibleContent = tmp6;
-export const useSelectedSnowflakeBoundGuildDismissibleContent = tmp7;
-export const useSelectedTimeRecurringSnowflakeBoundDismissibleContent = tmp8;
-export const useSelectedTimeRecurringGuildDismissibleContent = tmp9;
+}

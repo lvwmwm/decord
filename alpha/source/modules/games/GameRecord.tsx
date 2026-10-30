@@ -1,15 +1,15 @@
-// Module ID: 2021
-// Function ID: 2022
+// Module ID: 2016
+// Function ID: 2017
 // Name: GameRecord
-// Dependencies: [1404, 2022, 1998, 2030, 1415, 1385, 2]
+// Dependencies: [1399, 2017, 1993, 2027, 1410, 1380, 2]
 
-// Module 2021 (GameRecord)
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import Server from "Server" /* 1998 */;
-import ApplicationRecord2 from "ApplicationRecord" /* 2022 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2030 */;
-import Record from "Record" /* 1404 */;
+// Module 2016 (GameRecord)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import Server from "Server" /* 1993 */;
+import ApplicationRecord2 from "ApplicationRecord" /* 2017 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2027 */;
+import Record from "Record" /* 1399 */;
 import size_mod from "module_2" /* 2 */;
 
 const ApplicationRecord = ApplicationRecord2;
@@ -19,7 +19,7 @@ const createExecutable = ApplicationRecord2.createExecutable;
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/games/GameRecord.tsx");
 class GameRecord extends Record {
-  constructor(item10012) {
+  constructor(executables) {
     let aliases;
     let game_flags;
     let genres;
@@ -31,68 +31,68 @@ class GameRecord extends Record {
     let tmp15;
     let tmp16;
     const tmp7 = new GameRecord(tmp6, tmp5, tmp4, tmp3, tmp2, tmp);
-    ({ id: tmp7.id, name: tmp7.name, description: tmp7.description, aliases } = item10012);
+    ({ id: tmp7.id, name: tmp7.name, description: tmp7.description, aliases } = executables);
     if (aliases == null) {
       aliases = [];
     }
     tmp7.aliases = aliases;
-    let executables = item10012.executables;
+    executables = executables.executables;
     if (executables == null) {
       executables = [];
     }
     tmp7.executables = executables.map(createExecutable);
-    let flag = item10012.overlay;
+    let flag = executables.overlay;
     if (flag == null) {
       flag = false;
     }
     tmp7.overlay = flag;
-    let flag2 = item10012.overlay_warn;
+    let flag2 = executables.overlay_warn;
     if (flag2 == null) {
       flag2 = false;
     }
     tmp7.overlayWarn = flag2;
-    let flag3 = item10012.overlay_compatibility_hook;
+    let flag3 = executables.overlay_compatibility_hook;
     if (flag3 == null) {
       flag3 = false;
     }
     tmp7.overlayCompatibilityHook = flag3;
-    let flag4 = item10012.hook;
+    let flag4 = executables.hook;
     if (flag4 == null) {
       flag4 = true;
     }
     tmp7.hook = flag4;
-    tmp7.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(item10012.overlay_methods);
-    let third_party_skus = item10012.third_party_skus;
+    tmp7.supportsOutOfProcessOverlay = ApplicationRecord.supportsOutOfProcessOverlay(executables.overlay_methods);
+    let third_party_skus = executables.third_party_skus;
     if (third_party_skus == null) {
       third_party_skus = [];
     }
     tmp7.thirdPartySkus = third_party_skus;
-    let themes = item10012.themes;
+    let themes = executables.themes;
     if (themes == null) {
       themes = [];
     }
     tmp7.themes = themes;
-    ({ linked_applications: tmp7.linkedApplications, genres } = item10012);
+    ({ linked_applications: tmp7.linkedApplications, genres } = executables);
     if (genres == null) {
       genres = [];
     }
     tmp7.genres = genres;
-    let platforms = item10012.platforms;
+    let platforms = executables.platforms;
     if (platforms == null) {
       platforms = [];
     }
     tmp7.platforms = platforms;
-    let prop = item10012.platform_availability;
+    let prop = executables.platform_availability;
     if (prop == null) {
       prop = [];
     }
     tmp7.platformAvailability = prop;
-    let websites = item10012.websites;
+    let websites = executables.websites;
     if (websites == null) {
       websites = [];
     }
     tmp7.websites = websites;
-    ({ companies: tmp7.companies, screenshot_hashes: tmp7.screenshotHashes, screenshot_urls: tmp7.screenshotUrls, trailers: tmp7.trailers, l30_rank: tmp7.l30Rank, summary_localized: tmp7.summaryLocalized, media: tmp7.media, first_release_date: tmp7.firstReleaseDate, shop_collection_ids: tmp7.shopCollectionIds, community_guild_ids: tmp7.communityGuildIds, steam_release_status: tmp7.steamReleaseStatus, reviews } = item10012);
+    ({ companies: tmp7.companies, screenshot_hashes: tmp7.screenshotHashes, screenshot_urls: tmp7.screenshotUrls, trailers: tmp7.trailers, l30_rank: tmp7.l30Rank, summary_localized: tmp7.summaryLocalized, media: tmp7.media, first_release_date: tmp7.firstReleaseDate, shop_collection_ids: tmp7.shopCollectionIds, community_guild_ids: tmp7.communityGuildIds, steam_release_status: tmp7.steamReleaseStatus, reviews } = executables);
     let steam;
     if (reviews != null) {
       steam = reviews.steam;
@@ -114,12 +114,12 @@ class GameRecord extends Record {
           }
         }
         tmp7.reviews = obj2;
-        ({ opencritic_url: tmp7.opencriticUrl, game_flags } = item10012);
+        ({ opencritic_url: tmp7.opencriticUrl, game_flags } = executables);
         if (game_flags == null) {
           game_flags = 0;
         }
         tmp7.gameFlags = game_flags;
-        tmp7.contentClassification = item10012.content_classification;
+        tmp7.contentClassification = executables.content_classification;
         return tmp7;
       }
     }
@@ -188,7 +188,7 @@ class GameRecord extends Record {
     const obj = { keepAspectRatio: true, size };
     return tmp(id, banner, obj);
   }
-  getCoverURL(rounded) {
+  getCoverURL(imageSize) {
     const media = this.media;
     let cover;
     const id = this.id;
@@ -200,7 +200,7 @@ class GameRecord extends Record {
     if (AvatarUtils.SUPPORTS_WEBP) {
       str = "webp";
     }
-    const obj = { keepAspectRatio: true, format: str, size: rounded };
+    const obj = { keepAspectRatio: true, format: str, size: imageSize };
     return tmp2(id, cover, obj);
   }
   getArtworkURLs(size) {

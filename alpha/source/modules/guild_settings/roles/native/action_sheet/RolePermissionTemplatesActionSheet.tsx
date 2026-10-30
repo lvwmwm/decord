@@ -1,26 +1,24 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 19739
+// Function ID: 19740
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 1264, 5247, 5700, 5946, 1125, 7308, 19654, 7358, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 575, 1253, 5253, 5706, 7315, 1114, 7360, 19717, 5953, 2]
+// Exports: default
 
-// Module 19676 (RolePermissionTemplatesActionSheet)
+// Module 19739 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7315 */;
+import ActionSheet2 from "ActionSheet" /* 7360 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-let dependencyMap;
 
 let hasOwnProperty;
 let metroRequire;
@@ -31,162 +29,10 @@ const jsx = Fragment.jsx;
 let obj = { templateContainer: obj2 };
 obj2 = { paddingVertical: 16, flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_8 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissionTemplatesActionSheet(permissionsEdited) {
-  let closure_2;
-  let tmp18;
-  let tmp5;
-  let tmp6;
-  let tmp = permissionsEdited;
-  let obj = permissionsEdited(576);
-  const cResult = obj.c(14);
-  permissionsEdited = permissionsEdited.permissionsEdited;
-  const onPermissionsChanged = permissionsEdited.onPermissionsChanged;
-  const guildId = permissionsEdited.guildId;
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        const obj = onPermissionsChanged(dependencyMap[8]);
-        const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-        obj.track(constants.OPEN_POPOUT, obj2);
-      }
-    }
-    const items = [];
-    cResult[0] = T;
-    cResult[1] = items;
-    tmp6 = items;
-    tmp5 = T;
-  } else {
-    class T {
-      constructor() {
-        const obj = onPermissionsChanged(dependencyMap[8]);
-        const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-        obj.track(constants.OPEN_POPOUT, obj2);
-      }
-    }
-    tmp6 = cResult[1];
-  }
-  const effect = react.useEffect(tmp5, tmp6);
-  if (cResult[2] !== onPermissionsChanged) {
-    class T {
-      constructor() {
-        const obj = onPermissionsChanged(dependencyMap[8]);
-        const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-        obj.track(constants.OPEN_POPOUT, obj2);
-      }
-    }
-    cResult[2] = onPermissionsChanged;
-    cResult[3] = tmp9;
-  } else {
-    class T {
-      constructor() {
-        const obj = onPermissionsChanged(dependencyMap[8]);
-        const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-        obj.track(constants.OPEN_POPOUT, obj2);
-      }
-    }
-  }
-  dependencyMap = tmp8;
-  if (cResult[4] === permissionsEdited) {
-    let tmp11;
-    class T {
-      constructor() {
-        const obj = onPermissionsChanged(dependencyMap[8]);
-        const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-        obj.track(constants.OPEN_POPOUT, obj2);
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor() {
-          const obj = onPermissionsChanged(dependencyMap[8]);
-          const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-          obj.track(constants.OPEN_POPOUT, obj2);
-        }
-      }
-      const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
-      let intl = tmp(1125).intl;
-      const tmp12 = <BottomSheetTitleHeader title={intl.string(tmp(1125).t.KgCkoQ)} />;
-      cResult[7] = tmp12;
-      tmp11 = tmp12;
-    } else {
-      class T {
-        constructor() {
-          const obj = onPermissionsChanged(dependencyMap[8]);
-          const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-          obj.track(constants.OPEN_POPOUT, obj2);
-        }
-      }
-    }
-    if (cResult[8] === guildId) {
-      class T {
-        constructor() {
-          const obj = onPermissionsChanged(dependencyMap[8]);
-          const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-          obj.track(constants.OPEN_POPOUT, obj2);
-        }
-      }
-      if (cResult[11] === tmp4.templateContainer) {
-        class T {
-          constructor() {
-            const obj = onPermissionsChanged(dependencyMap[8]);
-            const obj2 = { type: constants2.GUILD_ROLE_TEMPLATE_POPOUT };
-            obj.track(constants.OPEN_POPOUT, obj2);
-          }
-        }
-        return tmp18;
-      }
-      const ActionSheet = tmp(7358).ActionSheet;
-      const tmp21 = <ActionSheet header={tmp11} startExpanded>{null}</ActionSheet>;
-      cResult[11] = tmp4.templateContainer;
-      cResult[12] = tmp13;
-      cResult[13] = tmp21;
-      tmp18 = tmp21;
-    }
-    cResult[8] = guildId;
-    cResult[9] = tmp10;
-    cResult[10] = jsx(onPermissionsChanged(19654), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
-    const tmp17 = jsx(onPermissionsChanged(19654), { onSelect: tmp10, location: constants2.GUILD_ROLE_TEMPLATE_POPOUT, guildId });
-  }
-  function handleTemplateSelect(arg0) {
-    let intl;
-    let intl2;
-    let intl3;
-    let intl4;
-    let closure_0 = arg0;
-    const tmp = closure_0;
-    if (tmp) {
-      let obj = {
-        title: intl.string(permissionsEdited(dependencyMap[12]).t.MVdkgB),
-        body: intl2.string(permissionsEdited(dependencyMap[12]).t.LpogjK),
-        cancelText: intl3.string(permissionsEdited(dependencyMap[12]).t["ETE/oC"]),
-        confirmText: intl4.string(permissionsEdited(dependencyMap[12]).t.p89ACt),
-        onConfirm() {
-            dependencyMap(closure_0);
-          },
-        onCancel() {
-            const obj = onPermissionsChanged(closure_1_2[9]);
-            obj.hideActionSheet();
-          },
-        hideActionSheet: false,
-        isDismissable: false
-      };
-      const show = onPermissionsChanged(dependencyMap[11]).show;
-      onPermissionsChanged(dependencyMap[11]);
-      intl = permissionsEdited(dependencyMap[12]).intl;
-      intl2 = permissionsEdited(dependencyMap[12]).intl;
-      intl3 = permissionsEdited(dependencyMap[12]).intl;
-      intl4 = permissionsEdited(dependencyMap[12]).intl;
-      show(obj);
-    } else {
-      dependencyMap(arg0);
-    }
-  }
-  cResult[4] = permissionsEdited;
-  cResult[5] = tmp8;
-  cResult[6] = handleTemplateSelect;
-}) : (function RolePermissionTemplatesActionSheet(guildId) {
+let result = size.fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
+
+export default function RolePermissionTemplatesActionSheet(guildId) {
+  let constants2;
   ({ permissionsEdited: require, onPermissionsChanged: importDefault } = guildId);
   guildId = guildId.guildId;
   let tmp = closure_8();
@@ -201,7 +47,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePermissi
   const tmp3 = <BottomSheetTitleHeader title={intl.string(intl5.t.KgCkoQ)} />;
   const ActionSheet = ActionSheet2.ActionSheet;
   return <ActionSheet header={tmp3} startExpanded>{null}</ActionSheet>;
-});
-let result = size.fileFinishedImporting("modules/guild_settings/roles/native/action_sheet/RolePermissionTemplatesActionSheet.tsx");
-
-export default tmp3;
+};

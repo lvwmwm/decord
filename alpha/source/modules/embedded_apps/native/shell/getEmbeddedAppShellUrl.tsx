@@ -1,25 +1,25 @@
-// Module ID: 11590
-// Function ID: 11591
+// Module ID: 11791
+// Function ID: 11792
 // Name: getEmbeddedAppShellUrl
-// Dependencies: [11591, 1383, 2]
+// Dependencies: [11792, 1378, 2]
 // Exports: getEmbeddedAppShellUrl
 
-// Module 11590 (getEmbeddedAppShellUrl)
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import getNativeShellOriginForEmbeddedApp from "getNativeShellOriginForEmbeddedApp" /* 11591 */;
+// Module 11791 (getEmbeddedAppShellUrl)
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import getNativeShellOriginForEmbeddedApp from "getNativeShellOriginForEmbeddedApp" /* 11792 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/getEmbeddedAppShellUrl.tsx");
 
-export function getEmbeddedAppShellUrl(embeddedAppUrl) {
+export function getEmbeddedAppShellUrl(assetURL) {
   const obj = getNativeShellOriginForEmbeddedApp;
-  const nativeShellOriginForEmbeddedApp = obj.getNativeShellOriginForEmbeddedApp(embeddedAppUrl);
+  const nativeShellOriginForEmbeddedApp = obj.getNativeShellOriginForEmbeddedApp(assetURL);
   if (null != nativeShellOriginForEmbeddedApp) {
     const _HermesInternal = HermesInternal;
     return "" + nativeShellOriginForEmbeddedApp + "/";
   } else {
     const obj2 = URLUtilsDefault;
-    const toURLSafeResult = obj2.toURLSafe(embeddedAppUrl);
+    const toURLSafeResult = obj2.toURLSafe(assetURL);
     let protocol;
     if (toURLSafeResult != null) {
       protocol = toURLSafeResult.protocol;

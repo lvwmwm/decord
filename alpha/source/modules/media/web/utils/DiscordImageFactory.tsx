@@ -1,19 +1,19 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 8240
+// Function ID: 8241
 // Name: DiscordImageFactory
-// Dependencies: [8238, 8265, 2]
+// Dependencies: [8241, 8268, 2]
 
-// Module 8237 (DiscordImageFactory)
-import _mod8238 from "module_8238" /* 8238 */;
+// Module 8240 (DiscordImageFactory)
+import _mod8241 from "module_8241" /* 8241 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const DiscordImagePng2 = tmp2(8265);
+const DiscordImagePng2 = tmp2(8268);
 const result = size.fileFinishedImporting("modules/media/web/utils/DiscordImageFactory.tsx");
 class DiscordImageFactory {
   static create(byteLength) {
     const uint8Array = new Uint8Array(byteLength, 0, Math.min(64, byteLength.byteLength));
-    const obj = _mod8238;
+    const obj = _mod8241;
     const detectFileResult = obj.detectFile(uint8Array);
     let mimeType;
     if (detectFileResult != null) {

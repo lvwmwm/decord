@@ -1,115 +1,26 @@
-// Module ID: 18283
-// Function ID: 18284
+// Module ID: 18342
+// Function ID: 18343
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 558, 576, 18284, 8561, 8610, 1125, 5271, 2]
+// Dependencies: [19, 17, 21, 18343, 8595, 8644, 5619, 1114, 2]
+// Exports: default
 
-// Module 18283 (MentionSubtitle)
+// Module 18342 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 18284 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 18343 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSubtitle(arg0) {
-  let channel;
-  let channelName;
-  let count;
-  let guild;
-  let items;
-  let obj = react2;
-  const cResult = obj.c(16);
-  ({ guild, channel, channelName, count } = arg0);
-  const obj2 = useSubtitleStyles;
-  const subtitleStyles = obj2.useSubtitleStyles();
-  if (cResult[0] === channel) {
-    let tmp5;
-    if (cResult[1] === guild) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp5) {
-      let tmp8;
-      if (cResult[4] === subtitleStyles.channelIcon) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === channelName) {
-        let tmp12;
-        if (cResult[7] === count) {
-          tmp12 = cResult[8];
-        }
-        if (cResult[9] === subtitleStyles.subtitleText) {
-          let tmp14;
-          if (cResult[10] === tmp12) {
-            tmp14 = cResult[11];
-          }
-          if (cResult[12] === subtitleStyles.subtitleRow) {
-            if (cResult[13] === tmp8) {
-              let tmp17;
-              if (cResult[14] === tmp14) {
-                tmp17 = cResult[15];
-              }
-              return tmp17;
-            }
-          }
-          const obj3 = { style: tmp7, children: items };
-          items = [tmp8, tmp14];
-          const tmp20 = React3(View, obj3);
-          cResult[12] = subtitleStyles.subtitleRow;
-          cResult[13] = tmp8;
-          cResult[14] = tmp14;
-          cResult[15] = tmp20;
-          tmp17 = tmp20;
-        }
-        const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: tmp11, children: tmp12 };
-        const tmp16 = _false(Text_Text.Text, obj4);
-        cResult[9] = subtitleStyles.subtitleText;
-        cResult[10] = tmp12;
-        cResult[11] = tmp16;
-        tmp14 = tmp16;
-      }
-      const intl = tmp(1125).intl;
-      const obj5 = {
-        channelName,
-        count: count - 1,
-        channelHook(children, arg1) {
-              const obj = { variant: "text-xs/medium", children };
-              return closure_1_3(Text_Text.Text, obj, arg1);
-            }
-      };
-      const formatResult = intl.format(intl2.t.L9YdGH, obj5);
-      cResult[6] = channelName;
-      cResult[7] = count;
-      cResult[8] = formatResult;
-      tmp12 = formatResult;
-    }
-    const obj6 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
-    const tmp10 = _false(tmp5, obj6);
-    cResult[3] = tmp5;
-    cResult[4] = subtitleStyles.channelIcon;
-    cResult[5] = tmp10;
-    tmp8 = tmp10;
-  }
-  let channelIconComponentWithGuild;
-  if (null != channel) {
-    const tmpResult = utils_ChannelUtils;
-    channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
-  }
-  if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8610).TextIcon;
-  }
-  cResult[0] = channel;
-  cResult[1] = guild;
-  cResult[2] = channelIconComponentWithGuild;
-  tmp5 = channelIconComponentWithGuild;
-}) : (function MentionSubtitle(channel) {
+const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/MentionSubtitle.tsx");
+
+export default function MentionSubtitle(channel) {
   let channelName;
   let count;
   let guild;
@@ -126,15 +37,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8610).TextIcon;
+    channelIconComponentWithGuild = tmp(8644).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
   const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5271).Text;
-  intl = tmp(1125).intl;
+  const Text = tmp(5619).Text;
+  intl = tmp(1114).intl;
   obj5 = {
     channelName,
     count: count - 1,
@@ -145,7 +56,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MentionSub
   };
   items[1] = _false(Text, obj4);
   return React3(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/MentionSubtitle.tsx");
-
-export default tmp4;
+};

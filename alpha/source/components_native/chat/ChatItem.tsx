@@ -1,121 +1,35 @@
-// Module ID: 9838
-// Function ID: 9839
+// Module ID: 9864
+// Function ID: 9865
 // Name: ChatItem
-// Dependencies: [32, 109, 19, 17, 5006, 1084, 8189, 21, 587, 558, 576, 9839, 1100, 9840, 6875, 9841, 5005, 1381, 8668, 5289, 683, 5295, 2]
+// Dependencies: [32, 19, 17, 5010, 1072, 8370, 21, 575, 9865, 1089, 9866, 6882, 9867, 5009, 1376, 8702, 5591, 671, 5582, 2]
 // Exports: default
 
-// Module 9838 (ChatItem)
+// Module 9864 (ChatItem)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import Constants from "Constants" /* 1084 */;
-import MessageTypes2 from "MessageTypes" /* 1100 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9839 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9840 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9841 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef671 from "module_671" /* 671 */;
+import Constants from "Constants" /* 1072 */;
+import MessageTypes2 from "MessageTypes" /* 1089 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6882 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 9865 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 9866 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 9867 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react_mod from "react" /* 19 */;
-import AccessibilityStore_mod from "AccessibilityStore" /* 5006 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8189 */;
+import react from "react" /* 19 */;
+import AccessibilityStore_mod from "AccessibilityStore" /* 5010 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8370 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c10;
-let closure_12;
-let map1;
+let c9;
+let metroImportAll;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8668);
-let closure_3 = ["message"];
-let react = react_mod;
-const View = react_native.View;
-let AccessibilityStore = AccessibilityStore_mod;
-const MessageTypes = Constants.MessageTypes;
-({ RowType: c10, Changeset: unpackModuleId } = RowGeneratorConstants);
-({ jsx: closure_12, jsxs: map1 } = Fragment);
-const PX_4 = nativeDefault.space.PX_4;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDChatItem(message) {
-  let tmp10;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(11);
-  if (cResult[0] !== message) {
-    message = message.message;
-    const tmp8 = _objectWithoutProperties(message, closure_3);
-    cResult[0] = message;
-    cResult[1] = message;
-    cResult[2] = tmp8;
-    tmp5 = tmp8;
-    tmp4 = message;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  if (tmp4.type === MessageTypes.AUTO_MODERATION_ACTION) {
-    let tmp28;
-    if (cResult[3] !== tmp5) {
-      const obj2 = {};
-      const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
-      const merged = Object.assign(tmp5);
-      const tmp33 = authStore2(_default4, obj2);
-      cResult[3] = tmp5;
-      cResult[4] = tmp33;
-      tmp28 = tmp33;
-    } else {
-      tmp28 = cResult[4];
-    }
-    tmp10 = tmp28;
-  } else {
-    const AUTOMOD_INCIDENT_ACTIONS = tmp(1100).MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
-    if (AUTOMOD_INCIDENT_ACTIONS.has(tmp4.type)) {
-      let tmp22;
-      if (cResult[5] !== tmp5) {
-        const obj3 = {};
-        const _default3 = MessageViewNativeComponent.default;
-        const merged1 = Object.assign(tmp5);
-        const tmp27 = authStore2(_default3, obj3);
-        cResult[5] = tmp5;
-        cResult[6] = tmp27;
-        tmp22 = tmp27;
-      } else {
-        tmp22 = cResult[6];
-      }
-      tmp10 = tmp22;
-    } else if (isSystemMessageDefault(tmp4)) {
-      let tmp16;
-      if (cResult[7] !== tmp5) {
-        const obj4 = {};
-        const _default2 = SystemMessageViewNativeComponent.default;
-        const merged2 = Object.assign(tmp5);
-        const tmp21 = authStore2(_default2, obj4);
-        cResult[7] = tmp5;
-        cResult[8] = tmp21;
-        tmp16 = tmp21;
-      } else {
-        tmp16 = cResult[8];
-      }
-      tmp10 = tmp16;
-    } else if (cResult[9] !== tmp5) {
-      const obj5 = {};
-      const _default = MessageViewNativeComponent.default;
-      const merged3 = Object.assign(tmp5);
-      const tmp15 = authStore2(_default, obj5);
-      cResult[9] = tmp5;
-      cResult[10] = tmp15;
-      tmp10 = tmp15;
-    } else {
-      tmp10 = cResult[10];
-    }
-  }
-  return tmp10;
-}) : (function DCDChatItem(message) {
+const RowGeneratorTypes = tmp(8702);
+function DCDChatItem(message) {
   let tmp3Result;
   message = message.message;
   const merged = Object.assign(message, Object.assign({ message: 0 }));
@@ -123,14 +37,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
     const obj2 = {};
     const _default4 = AutoModerationSystemMessageViewNativeComponent.default;
     const merged1 = Object.assign(merged);
-    tmp3Result = authStore2(_default4, obj2);
+    tmp3Result = authStore(_default4, obj2);
   } else {
     const AUTOMOD_INCIDENT_ACTIONS = MessageTypes2.MessageTypesSets.AUTOMOD_INCIDENT_ACTIONS;
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       const obj3 = {};
       const _default3 = MessageViewNativeComponent.default;
       const merged2 = Object.assign(merged);
-      tmp3Result = authStore2(_default3, obj3);
+      tmp3Result = authStore(_default3, obj3);
     } else if (isSystemMessageDefault(message)) {
       const obj4 = {};
       const _default2 = SystemMessageViewNativeComponent.default;
@@ -144,8 +58,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function DCDCha
     }
   }
   return tmp3Result;
-});
-let closure_16 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
+}
+const View = react_native.View;
+let AccessibilityStore = AccessibilityStore_mod;
+const MessageTypes = Constants.MessageTypes;
+({ RowType: metroImportAll, Changeset: c9 } = RowGeneratorConstants);
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+const PX_4 = nativeDefault.space.PX_4;
+let closure_14 = createStyles.createStyles((marginLeft, marginTop, paddingTop) => {
   const obj = { container: obj2, offset: obj3, gradient: { position: "absolute", bottom: 0, height: 24, width: "100%" }, itemRow: { backgroundColor: "transparent" } };
   return obj;
 });
@@ -155,7 +75,6 @@ export default function _default(rowGenerator) {
   let _undefined;
   let backgroundColor;
   let c6;
-  let closure_8;
   let items5;
   let items6;
   let items7;
@@ -177,26 +96,26 @@ export default function _default(rowGenerator) {
   ({ backgroundColor, pointerEvents } = rowGenerator);
   if (backgroundColor === undefined) {
     let tmp = message;
-    backgroundColor = message(modifyRow[8]).colors.BACKGROUND_BASE_LOWER;
+    backgroundColor = message(modifyRow[7]).colors.BACKGROUND_BASE_LOWER;
   }
   const gradientColors = rowGenerator.gradientColors;
-  react = undefined;
+  AccessibilityStore = undefined;
   let token;
-  let obj = react;
+  let obj = messageSizeCacheRef;
   const gradientStyles = rowGenerator.gradientStyles;
-  const tmp3 = messageSizeCacheRef(react.useState(0), 2);
+  const tmp3 = onLayout(messageSizeCacheRef.useState(0), 2);
   [tmp4, c6] = tmp3;
-  const tmp5 = messageSizeCacheRef(react.useState(undefined), 2);
+  const tmp5 = onLayout(messageSizeCacheRef.useState(undefined), 2);
   const constrainedWidth = tmp5[0];
-  AccessibilityStore = tmp5[1];
+  let closure_8 = tmp5[1];
   const roleStyle = AccessibilityStore.roleStyle;
   let items = [constrainedWidth, roleStyle, message, modifyRow, rowGenerator];
-  const memo = react.useMemo(() => {
+  const memo = messageSizeCacheRef.useMemo(() => {
     let obj4;
     let stringify;
     const obj = { constrainedWidth };
     rowGenerator.setOptions(obj);
-    const obj2 = { roleStyle, rowType: rawRow.MESSAGE, changeType: unpackModuleId.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false };
+    const obj2 = { roleStyle, rowType: metroImportAll.MESSAGE, changeType: roleStyle.NOOP, message, isFirst: true, canShowImages: true, canAddNewReactions: false };
     const generateResult = rowGenerator.generate(obj2);
     if (null != modifyRow) {
       tmp3(generateResult);
@@ -210,7 +129,7 @@ export default function _default(rowGenerator) {
   const rawRow = memo.rawRow;
   const items1 = [rawRow.contextType];
   const row = memo.row;
-  const memo1 = react.useMemo(() => {
+  const memo1 = messageSizeCacheRef.useMemo(() => {
     let num = 0;
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
@@ -223,12 +142,12 @@ export default function _default(rowGenerator) {
     return num;
   }, items1);
   let num2 = 0;
-  const tmp11 = rawRow.contextType !== rowGenerator(modifyRow[18]).MessageContextType.SEARCH && null != rawRow.message && "avatarDecorationURL" in rawRow.message && null != rawRow.message.avatarDecorationURL;
+  const tmp11 = rawRow.contextType !== rowGenerator(modifyRow[15]).MessageContextType.SEARCH && null != rawRow.message && "avatarDecorationURL" in rawRow.message && null != rawRow.message.avatarDecorationURL;
   if (tmp11) {
-    const tmp9Result = rowGenerator(modifyRow[17]);
+    const tmp9Result = rowGenerator(modifyRow[14]);
     num2 = tmp9Result.isAndroid() ? tmp14 - 2 : tmp14;
   }
-  const tmp15 = closure_16(num, memo1, num2);
+  const tmp15 = closure_14(num, memo1, num2);
   const items2 = [onLayout];
   const items3 = [messageSizeCacheRef, message.id];
   const callback = obj.useCallback((nativeEvent) => {
@@ -266,10 +185,10 @@ export default function _default(rowGenerator) {
       sum = maxHeight + num2;
     }
   }
-  let obj2 = { style: tmp15.offset, onLayout: callback1, children: closure_12(closure_15, obj3) };
+  let obj2 = { style: tmp15.offset, onLayout: callback1, children: rawRow(DCDChatItem, obj3) };
   obj3 = { message, row, style: tmp15.itemRow };
-  const tmp23 = closure_12(constrainedWidth, obj2);
-  const tmp9Result2 = rowGenerator(modifyRow[19]);
+  const tmp23 = rawRow(gradientColors, obj2);
+  const tmp9Result2 = rowGenerator(modifyRow[16]);
   token = tmp9Result2.useToken(backgroundColor);
   const items4 = [gradientColors, token];
   let obj4 = { style: items5, onLayout: callback, pointerEvents, children: items6 };
@@ -279,7 +198,7 @@ export default function _default(rowGenerator) {
     let tmp = gradientColors;
     if (gradientColors == null) {
       const items = [, ];
-      const obj = _modDef683(token);
+      const obj = _modDef671(token);
       const alphaResult = obj.alpha(0);
       items[0] = alphaResult.hex();
       items[1] = token;
@@ -287,9 +206,9 @@ export default function _default(rowGenerator) {
     }
     return tmp;
   }, items4);
-  const tmp21 = closure_12;
-  const tmp22 = constrainedWidth;
-  const tmp26 = closure_13;
+  const tmp21 = rawRow;
+  const tmp22 = gradientColors;
+  const tmp26 = token;
   if (tmp27) {
     tmp27 = tmp23;
   }
@@ -297,7 +216,7 @@ export default function _default(rowGenerator) {
   if (tmp21Result) {
     const obj5 = { colors: memo2, style: items7 };
     items7 = [tmp15.gradient, gradientStyles];
-    tmp21Result = tmp21(message(tmp10[21]), obj5);
+    tmp21Result = tmp21(message(tmp10[18]), obj5);
   }
   items6[1] = tmp21Result;
   return tmp26(tmp22, obj4);

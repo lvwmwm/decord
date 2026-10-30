@@ -1,16 +1,16 @@
-// Module ID: 10164
-// Function ID: 10165
+// Module ID: 10189
+// Function ID: 10190
 // Name: UploaderBase
-// Dependencies: [5, 1084, 5010, 3, 580, 12, 8230, 8207, 8208, 2]
+// Dependencies: [5, 1072, 5014, 3, 568, 12, 8233, 8210, 8211, 2]
 
-// Module 10164 (UploaderBase)
+// Module 10189 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import _mod580 from "module_580" /* 580 */;
-import Constants from "Constants" /* 1084 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8207 */;
-import UploadTargets from "UploadTargets" /* 8230 */;
+import _mod568 from "module_568" /* 568 */;
+import Constants from "Constants" /* 1072 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8210 */;
+import UploadTargets from "UploadTargets" /* 8233 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ const AbortCodes = Constants.AbortCodes;
 const FileUploadErrorTypes = MessageConstants.FileUploadErrorTypes;
 const tmp2 = new LoggerDefault("UploaderBase.tsx");
 const metroRequire = tmp2;
-const EventEmitter = _mod580.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class UploaderBase extends EventEmitter {
   constructor() {
     const tmp3 = new UploaderBase(tmp2, new.target, this, tmp);
@@ -31,8 +31,8 @@ class UploaderBase extends EventEmitter {
     tmp3._lastUpdate = 0;
     tmp3._loaded = 0;
     tmp3.alreadyStarted = false;
-    tmp3._handleStart = function _handleStart(c5) {
-      closure_0._cancel = c5;
+    tmp3._handleStart = function _handleStart(_cancel) {
+      closure_0._cancel = _cancel;
       if (!closure_0.alreadyStarted) {
         closure_0.emit("start", closure_0._file);
       }
@@ -90,7 +90,7 @@ class UploaderBase extends EventEmitter {
     };
     let obj = _modDef12;
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "application" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "applicationId" };
     return tmp3;
   }
   _fileSize() {
@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

@@ -1,13 +1,12 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15676
+// Function ID: 15677
 // Name: GuildRoleSubscriptionsExperimentUtils
-// Dependencies: [4879, 1084, 558, 576, 573, 2]
-// Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates
+// Dependencies: [4880, 1072, 563, 2]
+// Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 15636 (GuildRoleSubscriptionsExperimentUtils)
-import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15676 (GuildRoleSubscriptionsExperimentUtils)
+import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,60 +15,6 @@ let _require;
 const GuildFeatures = Constants.GuildFeatures;
 let items = [, , ];
 ({ ROLE_SUBSCRIPTIONS_ENABLED: arr[0], CREATOR_MONETIZABLE: arr[1], CREATOR_MONETIZABLE_PROVISIONAL: arr[2] } = GuildFeatures);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEligibleForTierTemplates(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      const guild = GuildStore.getGuild(closure_0);
-      let flag;
-      if (guild != null) {
-        const features = guild.features;
-        flag = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useGuildEligibleForTierTemplates(arg0) {
-  let closure_0;
-  _require = arg0;
-  items = [GuildStore];
-  const obj = require("useStateFromStores");
-  return obj.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let flag;
-    if (guild != null) {
-      const features = guild.features;
-      flag = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
-    }
-    if (flag == null) {
-      flag = false;
-    }
-    return flag;
-  });
-});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/GuildRoleSubscriptionsExperimentUtils.tsx");
 
 export function hasEnabledMonetization(arg0) {
@@ -92,4 +37,20 @@ export function isGuildEligibleForTierTemplates(id) {
   }
   return flag;
 }
-export const useGuildEligibleForTierTemplates = tmp2;
+export function useGuildEligibleForTierTemplates(guildId) {
+  _require = guildId;
+  items = [GuildStore];
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStores(items, () => {
+    const guild = GuildStore.getGuild(guildId);
+    let flag;
+    if (guild != null) {
+      const features = guild.features;
+      flag = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  });
+}

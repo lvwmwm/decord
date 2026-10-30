@@ -1,65 +1,19 @@
-// Module ID: 10204
-// Function ID: 10205
+// Module ID: 10229
+// Function ID: 10230
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1243, 558, 576, 4838, 504, 2]
+// Dependencies: [19, 1232, 4839, 504, 2]
+// Exports: useFrecencySettings
 
-// Module 10204 (FrecencyUserSettingsHooks)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4838 */;
+// Module 10229 (FrecencyUserSettingsHooks)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4839 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+const result = size.fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecencySettings(arg0) {
-  let closure_0;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  _require = tmp4;
-  if (cResult[0] !== (undefined === arg0 || arg0)) {
-    const fn = function n() {
-      const tmp = closure_0;
-      if (tmp) {
-        const FrecencyUserSettingsActionCreators = UserSettingsProtoActionCreators.FrecencyUserSettingsActionCreators;
-        const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
-      }
-    };
-    const items = [undefined === arg0 || arg0];
-    cResult[0] = undefined === arg0 || arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const effect = react.useEffect(tmp5, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserSettingsProtoStore];
-    const fn2 = function f() {
-      return UserSettingsProtoStore.frecencyWithoutFetchingLatest;
-    };
-    cResult[3] = items1;
-    cResult[4] = fn2;
-    tmp9 = fn2;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-    tmp9 = cResult[4];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(tmp8, tmp9);
-}) : (function useFrecencySettings() {
-  let flag = arg0;
-  if (arg0 === undefined) {
+export function useFrecencySettings(flag) {
+  if (flag === undefined) {
     flag = true;
   }
   const items = [flag];
@@ -73,7 +27,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrecenc
   const items1 = [UserSettingsProtoStore];
   const obj = flag(504);
   return obj.useStateFromStores(items1, () => UserSettingsProtoStore.frecencyWithoutFetchingLatest);
-});
-const result = size.fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
-
-export const useFrecencySettings = tmp2;
+}

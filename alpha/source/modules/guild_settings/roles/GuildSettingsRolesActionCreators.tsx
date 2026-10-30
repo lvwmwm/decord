@@ -1,13 +1,13 @@
-// Module ID: 19665
-// Function ID: 19666
+// Module ID: 19728
+// Function ID: 19729
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1084, 584, 6889, 11363, 1120, 2]
+// Dependencies: [5, 1072, 572, 6896, 11566, 1109, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 19665 (GuildSettingsRolesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 19728 (GuildSettingsRolesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_15, closure_16, closure_17, closure_19, closure_7, closure_8, first1, value2, value3, value4;
@@ -160,7 +160,7 @@ let obj = function _saveRoleSettings() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ let obj = function _saveRoleSettings() {
                 closure_14 = undefined;
                 c20 = 1;
                 c21 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -253,7 +253,7 @@ let obj = function _saveRoleSettings() {
                     obj19.dispatch({ type: "GUILD_SETTINGS_ROLES_SAVE_SUCCESS" });
                     c18 = 0;
                     c21 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     c18 = 2;
                     c7 = tmp137;

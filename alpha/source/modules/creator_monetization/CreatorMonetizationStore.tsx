@@ -1,11 +1,11 @@
-// Module ID: 15496
-// Function ID: 15497
+// Module ID: 15536
+// Function ID: 15537
 // Name: CreatorMonetizationStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 15496 (CreatorMonetizationStore)
+// Module 15536 (CreatorMonetizationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;

@@ -1,18 +1,17 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13713
+// Function ID: 13714
 // Name: ForumChannelStore
-// Dependencies: [4857, 4867, 4866, 4868, 1271, 38, 8349, 570, 558, 576, 504, 2]
-// Exports: useForumChannelStoreApi
+// Dependencies: [4858, 4868, 4867, 4869, 1260, 38, 8326, 560, 504, 2]
+// Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 13564 (ForumChannelStore)
+// Module 13713 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4866 */;
-import ForumLayout from "ForumLayout" /* 4867 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4868 */;
-import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8349 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4867 */;
+import ForumLayout from "ForumLayout" /* 4868 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4869 */;
+import ForumChannelAnalyticsManagerDefault from "ForumChannelAnalyticsManager" /* 8326 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +95,7 @@ function ForumChannelStoreState(set, get) {
   obj.get = get;
   return obj;
 }
-let closure_7 = module_570.create((set, get) => {
+let closure_7 = module_560.create((set, get) => {
   if (typeof ForumChannelStoreState === "function") {
     obj = Object.create(tmp.prototype);
     obj.channelStates = {};
@@ -122,55 +121,21 @@ let closure_7 = module_570.create((set, get) => {
     throw new TypeError("Trying to call a non-function");
   }
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useForumChannelStore(channelId) {
+const result = size.fileFinishedImporting("modules/forums/ForumChannelStore.tsx");
+
+export function useForumChannelStore(parent_id) {
   let channelState;
-  let first;
-  let tmp6;
-  _require = channelId;
-  obj = require("react");
-  const cResult = obj.c(3);
-  const obj2 = closure_7();
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function h() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  if (null == tmpResult.useStateFromStores(first, tmp6)) {
-    channelState = obj;
-  } else {
-    channelState = obj2.getChannelState(channelId);
-  }
-  return channelState;
-}) : (function useForumChannelStore(channelId) {
-  let channelState;
-  _require = channelId;
+  _require = parent_id;
   obj = closure_7();
   const items = [ChannelStore];
   const obj2 = require("get initialized");
-  if (null == obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId))) {
+  if (null == obj2.useStateFromStores(items, () => ChannelStore.getChannel(parent_id))) {
     channelState = obj;
   } else {
-    channelState = obj.getChannelState(channelId);
+    channelState = obj.getChannelState(parent_id);
   }
   return channelState;
-});
-const result = size.fileFinishedImporting("modules/forums/ForumChannelStore.tsx");
-
-export const useForumChannelStore = tmp3;
+}
 export function useForumChannelStoreApi() {
   return closure_7;
 }

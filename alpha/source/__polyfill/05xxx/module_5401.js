@@ -1,106 +1,102 @@
 // Module ID: 5401
 // Function ID: 5402
-// Dependencies: []
-// Exports: containsDuplicates, isComposedGesture, prepareRelations
+// Dependencies: [5, 32, 19, 17]
+// Exports: useIsScreenReaderEnabled
 
 // Module 5401
-let set;
+import react_native from "react-native" /* 17 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
+let c4, c5;
 
-export function isComposedGesture(gesture) {
-  return "handlerTags" in gesture;
-}
-export function prepareRelations(config, handlerTag) {
-  let items;
-  let items1;
-  let items2;
-  const f96543 = (handlerTags) => {
-    if ("handlerTags" in handlerTags) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
+let c2;
+let c3;
+({ useEffect: c2, useState: c3 } = react);
+const AccessibilityInfo = react_native.AccessibilityInfo;
+
+export function useIsScreenReaderEnabled() {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_3(false);
+  const tmp3 = closure_2(() => {
+    function checkStatus() {
+      return closure_0(...arguments);
     }
-    return handlerTags;
-  };
-  const simultaneousWith1 = config.simultaneousWith;
-  let closure_0 = handlerTag;
-  if (simultaneousWith1) {
-    let tmp = globalThis;
-    const _Array = Array;
-    if (Array.isArray(simultaneousWith1)) {
-      const item = simultaneousWith1.forEach(function processSingleGesture(externalSimultaneousHandlers) {
-        let prop;
-        if ("handlerTags" in externalSimultaneousHandlers) {
-          prop = externalSimultaneousHandlers.externalSimultaneousHandlers;
+    closure_0(function*(arg0, value) {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          prop = externalSimultaneousHandlers.gestureRelations.simultaneousHandlers;
+          return { value: "HermesInternal", done: null };
         }
-        const tmp = handlerTag;
-        if (!prop.includes(handlerTag)) {
-          prop.push(tmp);
-        }
-      });
-    } else {
-      let prop;
-      if ("handlerTags" in simultaneousWith1) {
-        prop = simultaneousWith1.externalSimultaneousHandlers;
       } else {
-        prop = simultaneousWith1.gestureRelations.simultaneousHandlers;
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              closure_0 = undefined;
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
+              return obj4;
+            }
+          } else {
+            if (1 === c4) {
+              c3 = 0;
+              const _console = console;
+              console.warn("Could not read accessibility info: defaulting to false");
+            } else if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              c5 = 3;
+              const obj = { value, done: true };
+              return obj;
+            } else {
+              closure_0 = value;
+              closure_0(closure_0);
+              c3 = 0;
+            }
+            c5 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp13) {
+          let closure_2 = tmp13;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp13;
+          } else {
+            c4 = 1;
+          }
+        }
       }
-      if (!prop.includes(handlerTag)) {
-        prop.push(handlerTag);
-      }
-    }
-  }
-  const simultaneousWith = config.simultaneousWith;
-  if (simultaneousWith) {
-    let flatMapResult;
-    const _Array2 = Array;
-    if (Array.isArray(simultaneousWith)) {
-      flatMapResult = simultaneousWith.flatMap(f96543);
-    } else if ("handlerTags" in simultaneousWith) {
-      flatMapResult = simultaneousWith.handlerTags;
-    } else {
-      flatMapResult = [simultaneousWith.handlerTag];
-    }
-    items = flatMapResult;
-  } else {
-    items = [];
-  }
-  const requireToFail = config.requireToFail;
-  const obj = { simultaneousHandlers: items, waitFor: items1, blocksHandlers: items2 };
-  if (requireToFail) {
-    let flatMapResult1;
-    const _Array3 = Array;
-    if (Array.isArray(requireToFail)) {
-      flatMapResult1 = requireToFail.flatMap(f96543);
-    } else if ("handlerTags" in requireToFail) {
-      flatMapResult1 = requireToFail.handlerTags;
-    } else {
-      flatMapResult1 = [requireToFail.handlerTag];
-    }
-    items1 = flatMapResult1;
-  } else {
-    items1 = [];
-  }
-  const block = config.block;
-  if (block) {
-    let flatMapResult2;
-    const _Array4 = Array;
-    if (Array.isArray(block)) {
-      flatMapResult2 = block.flatMap(f96543);
-    } else if ("handlerTags" in block) {
-      flatMapResult2 = block.handlerTags;
-    } else {
-      flatMapResult2 = [block.handlerTag];
-    }
-    items2 = flatMapResult2;
-  } else {
-    items2 = [];
-  }
-  return obj;
-}
-export function containsDuplicates(flatMapResult) {
-  set = new Set(flatMapResult);
-  return set.size !== flatMapResult.length;
+    });
+    const tmp = checkStatus();
+    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
+      closure_0(event);
+    });
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
 }

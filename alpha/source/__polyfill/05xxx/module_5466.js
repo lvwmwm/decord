@@ -1,136 +1,78 @@
 // Module ID: 5466
 // Function ID: 5467
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5467]
+// Dependencies: [19, 21, 5275, 1651, 5271, 5467]
 
 // Module 5466
-import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5467 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react_native from "react-native" /* 17 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5271 */;
+import react_native from "react-native" /* 5467 */;
+import react_mod from "react" /* 19 */;
 
-const react = react2;
-
-let c10;
-let c9;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_3 = ["style"];
-const Component = react2.Component;
-({ StyleSheet: c9, View: c10 } = react_native);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let memo;
+let react = react_mod;
+({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty, memo } = react);
+react = react_mod;
 const jsx = Fragment.jsx;
-class TouchableHighlight {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TouchableHighlight);
-    const items = [arg0];
-    const obj = _getPrototypeOf(TouchableHighlight);
-    let tmp3 = metroRequire;
-    const tmp2 = _getPrototypeOf;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.showUnderlay = () => {
-      let obj3;
-      let obj4;
-      if (closure_0.hasPressHandler()) {
-        const obj2 = { extraChildStyle: obj3, extraUnderlayStyle: obj4 };
-        obj3 = { opacity: closure_0.props.activeOpacity };
-        obj4 = { backgroundColor: closure_0.props.underlayColor };
-        closure_0.setState(obj2);
-        const props = obj.props;
-        const onShowUnderlay = props.onShowUnderlay;
-        if (onShowUnderlay != null) {
-          onShowUnderlay();
-        }
-      }
-    };
-    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
-    tmp3Result.hideUnderlay = () => {
-      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
-      const props = closure_0.props;
-      const onHideUnderlay = props.onHideUnderlay;
-      if (onHideUnderlay != null) {
-        onHideUnderlay();
-      }
-    };
-    tmp3Result.onStateChange = (arg0, arg1) => {
-      if (arg1 === TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.BEGAN) {
-        closure_0.showUnderlay();
-      } else {
-        const tmp3 = arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.UNDETERMINED && arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
-        if (!tmp3) {
-          closure_0.hideUnderlay();
-        }
-      }
-    };
-    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
-    return tmp3Result;
+const __initData = { code: "function pnpm_BottomSheetFooterTsx1(){const{animatedFooterPosition,animatedKeyboardState,KEYBOARD_STATE,bottomInset}=this.__closure;let footerTranslateY=animatedFooterPosition.get();if(animatedKeyboardState.get()!==KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-bottomInset;}return{transform:[{translateY:Math.max(0,footerTranslateY)}]};}" };
+const memoResult = memo(function BottomSheetFooterComponent(animatedFooterPosition) {
+  animatedFooterPosition = animatedFooterPosition.animatedFooterPosition;
+  let num = animatedFooterPosition.bottomInset;
+  if (num === undefined) {
+    num = 0;
   }
-}
-_inherits(TouchableHighlight, Component);
-const entry = {
-  key: "renderChildren",
-  value: function renderChildren() {
-    const self = this;
-    if (this.props.children) {
-      const Children = react.Children;
-      const onlyResult = Children.only(self.props.children);
-      const cloneElement = react.cloneElement;
-      const obj = { style: React4.compose(onlyResult.props.style, self.state.extraChildStyle) };
-      return cloneElement(onlyResult, obj);
-    } else {
-      return <authStore />;
+  const style = animatedFooterPosition.style;
+  const children = animatedFooterPosition.children;
+  let animatedStyle;
+  const tmp = animatedStyle(null);
+  let obj = animatedFooterPosition(style[2]);
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
+  const animatedKeyboardState = bottomSheetInternal.animatedKeyboardState;
+  const obj2 = animatedFooterPosition(style[3]);
+  const fn = function c() {
+    let items;
+    const value = animatedFooterPosition.get();
+    const value2 = animatedKeyboardState.get();
+    let diff = value;
+    if (value2 !== GESTURE_SOURCE.KEYBOARD_STATE.SHOWN) {
+      diff = value - num;
     }
+    const obj = { transform: items };
+    items = [{ translateY: Math.max(0, diff) }];
+    ({ translateY: Math.max(0, diff) });
+    return obj;
+  };
+  fn.__closure = { animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num };
+  fn.__workletHash = 5322275157644;
+  fn.__initData = __initData;
+  let items = [num, animatedKeyboardState, animatedFooterPosition];
+  ({ animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num });
+  animatedStyle = obj2.useAnimatedStyle(fn, items);
+  const items1 = [style, animatedStyle];
+  const items2 = [animatedFooterHeight];
+  const items3 = [animatedFooterHeight];
+  const tmp5 = animatedKeyboardState(() => {
+    const items = [react_native.styles.container, style, animatedStyle];
+    return items;
+  }, items1);
+  const tmp6 = animatedFooterHeight((nativeEvent) => {
+    const result = animatedFooterHeight.set(nativeEvent.nativeEvent.layout.height);
+  }, items2);
+  const tmp7 = animatedFooterHeight((height) => {
+    const result = animatedFooterHeight.set(height.height);
+  }, items3);
+  const obj4 = animatedFooterPosition(style[2]);
+  const boundingClientRect = obj4.useBoundingClientRect(tmp, tmp7);
+  let tmp9 = null;
+  const tmp2 = style;
+  if (null !== children) {
+    tmp9 = jsx(num(tmp2[3]).View, { ref: tmp, onLayout: tmp6, style: tmp5, children });
   }
-};
-let items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const extraUnderlayStyle = self.state.extraUnderlayStyle;
-      const tmp = _objectWithoutProperties(props, closure_3);
-      TOUCHABLE_STATEDefault;
-      const merged = Object.assign(tmp);
-      const items = [style, extraUnderlayStyle];
-      return <tmp2 style={items} onStateChange={self.onStateChange}>{self.renderChildren()}</tmp2>;
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableHighlight, items);
-let obj = { activeOpacity: 0.85, delayPressOut: 100, underlayColor: "black" };
-let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
-importDefaultResultResult.defaultProps = obj;
+  return tmp9;
+});
+memoResult.displayName = "BottomSheetFooter";
 
-export default importDefaultResultResult;
+export const BottomSheetFooter = memoResult;

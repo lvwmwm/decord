@@ -1,291 +1,27 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11878
+// Function ID: 11879
 // Name: LottieIcon
-// Dependencies: [19, 17, 21, 558, 576, 587, 7082, 5019, 5289, 5266, 2]
+// Dependencies: [19, 17, 21, 575, 7090, 5023, 5591, 5614, 2]
+// Exports: LottieIcon
 
-// Module 11686 (LottieIcon)
+// Module 11878 (LottieIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import LottieViewDefault from "LottieView" /* 5266 */;
+import nativeDefault from "native" /* 575 */;
+import LottieViewDefault from "LottieView" /* 5614 */;
+import IconSize from "IconSize" /* 7090 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let playResult, playResult1, playResult2, tmp10, tmp11, tmp14, tmp15, tmp4, tmp9;
-
-let tmp;
-const react3 = tmp(5019);
-const useToken = tmp(5289);
-const IconSize = tmp(7082);
+let tmp3;
+const react2 = tmp3(5023);
+const useToken = tmp3(5591);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LottieIcon(animation) {
-  let autoPlay;
-  let color;
-  let dotLottie;
-  let height;
-  let layers;
-  let markers;
-  let opacity;
-  let ref;
-  let tmp7;
-  let useLottieDefaultColors;
-  let width;
-  const tmp = require;
-  let tmp2 = dependencyMap;
-  const obj = react2;
-  const cResult = obj.c(40);
-  animation = animation.animation;
-  ({ dotLottie, size, color, opacity, markers, layers, autoPlay } = animation);
-  let str = "md";
-  ({ width, height, useLottieDefaultColors, ref } = animation);
-  if (undefined !== size) {
-    str = size;
-  }
-  if (undefined === color) {
-    color = nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT;
-  }
-  let num = 1;
-  if (undefined !== opacity) {
-    num = opacity;
-  }
-  const tmp5 = IconSize.ICON_SIZE[str];
-  if (cResult[0] === animation) {
-    let tmp6;
-    if (cResult[1] === markers) {
-      tmp6 = cResult[2];
-    }
-    const start = tmp6.start;
-    const sum = start + tmp6.duration;
-    if (cResult[5] !== markers) {
-      let tmp13;
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-        cResult[7] = F;
-        tmp13 = F;
-      } else {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-      }
-      const found = markers.find(tmp13);
-      cResult[5] = markers;
-      cResult[6] = found;
-    } else {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    if (tmp11 != null) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    if (undefined == null) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    let c4 = tmp16;
-    if (tmp11 != null) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    if (undefined == null) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    const sum1 = tmp16 + tmp17;
-    const ref1 = react.useRef(null);
-    const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
-    if ("custom" === str) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    if ("custom" === str) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-    }
-    if (cResult[8] === tmp5) {
-      class F {
-        constructor(arg0) {
-          return "easteregg" === animation.name;
-        }
-      }
-      if (cResult[11] !== num) {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-        tmp25[0] = num;
-        cResult[11] = num;
-        cResult[12] = tmp25;
-      } else {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-      }
-      const tmpResult = useToken;
-      const token = tmpResult.useToken(color);
-      if (cResult[13] === layers) {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-        if (cResult[16] === sum) {
-          class F {
-            constructor(arg0) {
-              return "easteregg" === animation.name;
-            }
-          }
-        }
-        class K {
-          constructor() {
-            tmp2 = enabled;
-            if (tmp2) {
-              tmp13 = closure_6;
-              current3 = closure_6.current;
-              tmp14 = null;
-              if (current3 != null) {
-                tmp15 = closure_3;
-                playResult = current3.play(closure_3, closure_3);
-              }
-            } else {
-              if (tmp) {
-                num = 0;
-                if (c4 >= 0) {
-                  tmp9 = closure_6;
-                  current2 = closure_6.current;
-                  tmp10 = null;
-                  if (current2 != null) {
-                    tmp11 = closure_5;
-                    playResult1 = current2.play(tmp3, closure_5);
-                  }
-                }
-              }
-              tmp4 = closure_6;
-              current = closure_6.current;
-              tmp5 = null;
-              if (current != null) {
-                tmp6 = start;
-                tmp7 = closure_3;
-                playResult2 = current.play(start, closure_3);
-              }
-            }
-            return;
-          }
-        }
-        cResult[16] = sum;
-        cResult[17] = start;
-        cResult[18] = sum1;
-        cResult[19] = undefined;
-        cResult[20] = enabled;
-        cResult[21] = K;
-      }
-      if (null != token) {
-        class F {
-          constructor(arg0) {
-            return "easteregg" === animation.name;
-          }
-        }
-      }
-      cResult[13] = layers;
-      cResult[14] = token;
-      cResult[15] = undefined;
-    }
-    const size1 = { width: tmp5, height: tmp5 };
-    cResult[8] = tmp5;
-    cResult[9] = tmp5;
-    cResult[10] = size1;
-  }
-  if (cResult[3] !== animation) {
-    class F {
-      constructor(arg0) {
-        return "easteregg" === animation.name;
-      }
-    }
-    class K {
-      constructor() {
-        tmp2 = enabled;
-        if (tmp2) {
-          tmp13 = closure_6;
-          current3 = closure_6.current;
-          tmp14 = null;
-          if (current3 != null) {
-            tmp15 = closure_3;
-            playResult = current3.play(closure_3, closure_3);
-          }
-        } else {
-          if (tmp) {
-            num = 0;
-            if (c4 >= 0) {
-              tmp9 = closure_6;
-              current2 = closure_6.current;
-              tmp10 = null;
-              if (current2 != null) {
-                tmp11 = closure_5;
-                playResult1 = current2.play(tmp3, closure_5);
-              }
-            }
-          }
-          tmp4 = closure_6;
-          current = closure_6.current;
-          tmp5 = null;
-          if (current != null) {
-            tmp6 = start;
-            tmp7 = closure_3;
-            playResult2 = current.play(start, closure_3);
-          }
-        }
-        return;
-      }
-    }
-    cResult[4] = tmp8;
-    tmp7 = tmp8;
-  } else {
-    class F {
-      constructor(arg0) {
-        return "easteregg" === animation.name;
-      }
-    }
-  }
-  const found1 = markers.find(tmp7);
-  cResult[0] = animation;
-  cResult[1] = markers;
-  cResult[2] = found1;
-  tmp6 = found1;
-}) : (function LottieIcon(dotLottie) {
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
+
+export function LottieIcon(dotLottie) {
   let closure_129_0;
   let height;
   let layers;
@@ -339,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LottieIcon(a
   }
   sum1 = num2 + num3;
   ref1 = react.useRef(null);
-  enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
   let tmp12 = tmp5;
   if ("custom" === size) {
     tmp12 = width;
@@ -403,8 +139,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LottieIcon(a
   LottieViewDefault;
   const items4 = [size1, { opacity: num }];
   return <tmp19 style={size1}>{null}</tmp19>;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/LottieIcon/native/LottieIcon.tsx");
-
-export const LottieIcon = tmp2;
+}

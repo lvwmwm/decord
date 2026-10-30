@@ -1,37 +1,33 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13771
+// Function ID: 13772
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6824, 6049, 1389, 21, 5005, 587, 5181, 558, 576, 5289, 5002, 5701, 13624, 7624, 1125, 1100, 504, 5059, 13625, 10222, 5086, 5243, 1199, 10221, 5295, 6968, 10237, 5271, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 6831, 6056, 1384, 21, 5009, 575, 5187, 5591, 5006, 5707, 13772, 7629, 1114, 504, 1089, 5063, 13773, 10247, 5090, 5249, 1188, 10246, 5582, 6974, 10262, 5619, 5629, 2]
+// Exports: default
 
-// Module 13623 (DMMessageStickerGreeting)
+// Module 13771 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5181 */;
-import timing from "timing" /* 5243 */;
-import useToken2 from "useToken" /* 5289 */;
-import StickersActionCreators from "StickersActionCreators" /* 10222 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5187 */;
+import timing from "timing" /* 5249 */;
+import StickersActionCreators from "StickersActionCreators" /* 10247 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6824 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import UserStore from "UserStore" /* 1389 */;
+import react_mod from "react" /* 19 */;
+import StickersStore from "StickersStore" /* 6831 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c4, c5, dependencyMap;
+let c4, c5, closure_2, dependencyMap;
 
 let c10;
 let closure_12;
-let tmp;
 let unpackModuleId;
-const ColorUtils = tmp(5002);
+let react = react_mod;
 let View = react_native.View;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let closure_13 = createStyles.createStyles((arg0) => {
@@ -43,258 +39,79 @@ let closure_13 = createStyles.createStyles((arg0) => {
   ({ flexDirection: "row", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, justifyContent: "center", alignItems: "center", gap: 8, height: 48, paddingHorizontal: 16, borderRadius: nativeDefault.radii.xxl });
   return obj;
 });
-let c14 = "847199849233514549";
-let c15 = "749054660769218631";
-let c16 = 180;
+let c14 = "749054660769218631";
 const END = client_themes_ClientThemesUtils.GradientPercentage.END;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRendered() {
-  let closure_129_0;
-  let first;
-  let tmp3;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp3, closure_129_0] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      closure_1_0(true);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp3) {
-    const obj2 = { isRendered: tmp3, setIsRendered: first };
-    cResult[1] = tmp3;
-    cResult[2] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[2];
-  }
-  return tmp5;
-}) : (function useIsRendered() {
-  let items;
-  const tmp = _slicedToArray(react.useState(false), 2);
-  let closure_0 = tmp2;
-  const obj = {
-    isRendered: tmp[0],
-    setIsRendered: react.useCallback(() => {
-      closure_0(true);
-    }, items)
-  };
-  items = [tmp[1]];
-  return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientOverlayColors() {
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = client_themes_ClientThemesUtils;
-  let BACKGROUND_BASE_LOWER = obj2.useGradientValue(END);
-  const useToken = useToken2.useToken;
-  useToken2;
-  if (BACKGROUND_BASE_LOWER == null) {
-    BACKGROUND_BASE_LOWER = nativeDefault.colors.BACKGROUND_BASE_LOWER;
-  }
-  const token = useToken(BACKGROUND_BASE_LOWER);
-  if (cResult[0] !== token) {
-    const tmpResult = ColorUtils;
-    const hexWithOpacityResult = tmpResult.hexWithOpacity(token, 0);
-    cResult[0] = token;
-    cResult[1] = hexWithOpacityResult;
-    tmp7 = hexWithOpacityResult;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === token) {
-    let tmp9;
-    if (cResult[3] === tmp7) {
-      tmp9 = cResult[4];
-    }
-    return tmp9;
-  }
-  const items = [tmp7, token];
-  cResult[2] = token;
-  cResult[3] = tmp7;
-  cResult[4] = items;
-  tmp9 = items;
-}) : (function useGradientOverlayColors() {
-  const obj = client_themes_ClientThemesUtils;
-  let BACKGROUND_BASE_LOWER = obj.useGradientValue(END);
-  const useToken = useToken2.useToken;
-  useToken2;
-  if (BACKGROUND_BASE_LOWER == null) {
-    BACKGROUND_BASE_LOWER = nativeDefault.colors.BACKGROUND_BASE_LOWER;
-  }
-  const token = useToken(BACKGROUND_BASE_LOWER);
-  const items = [, ];
-  const tmpResult = ColorUtils;
-  items[0] = tmpResult.hexWithOpacity(token, 0);
-  items[1] = token;
-  return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleWavePress(id) {
-  let closure_4;
-  let first;
-  let first1;
-  let first2;
-  let tmp7;
-  _require = id;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  let obj2 = react;
-  [first, dependencyMap] = react.useState(null);
-  [first1, _slicedToArray] = react.useState(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
-      closure_2(null);
-    };
-    cResult[0] = fn;
-    first2 = fn;
-  } else {
-    first2 = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const items = [id.id];
-    cResult[1] = id.id;
-    cResult[2] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const effect = obj2.useEffect(first2, tmp7);
-  if (cResult[3] === id.id) {
-    if (cResult[4] === first) {
-      let tmp9;
-      if (cResult[5] === first1) {
-        tmp9 = cResult[6];
-      }
-      return tmp9;
-    }
-  }
-  _require = first1(function*(arg0, value) {
-    let closure_1;
-    let obj7;
-    let v1;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        let showErrorToast;
-        let tmp;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_0 = tmp4;
-            showErrorToast = undefined;
-            tmp = undefined;
-            const tmp35 = c3;
-            if (!tmp35) {
-              c4(true);
-              showErrorToast = function showErrorToast(text) {
-                if (closure_1_1 !== text) {
-                  closure_1_2(text);
-                }
-                const obj = closure_1(closure_2[15]);
-                const obj2 = { text, variant: "critical" };
-                obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
-              };
-              if (null !== tmp) {
-                c4(false);
-                showErrorToast(tmp24);
-                c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
-              } else {
-                c3 = 1;
-                const obj4 = { channelId: closure_0.id, source: "In-channel greet" };
-                const obj5 = closure_0(closure_2_2[16]);
-                obj5.trackWaveCtaClicked(obj4);
-                c4 = 2;
-                c5 = 1;
-                const obj6 = { value: obj7.sendGreetMessage(closure_0.id, closure_2_15), done: false };
-                obj7 = first(closure_2_2[17]);
-                return obj6;
-              }
-            }
-          }
-        } else {
-          if (1 === c4) {
-            c3 = 0;
-            tmp = closure_2;
-            const ok = tmp.ok || 429 !== tmp.status;
-            if (!ok) {
-              const intl = closure_0(closure_2_2[18]).intl;
-              showErrorToast(intl.string(closure_0(closure_2_2[18]).t.Whhv4w));
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
-            let obj = { value, done: true };
-            return obj;
-          } else {
-            c3 = 0;
-          }
-          c4(false);
-        }
-        c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
-      } catch (tmp28) {
-        closure_2 = tmp28;
-        if (0 === c3) {
-          c5 = 3;
-          throw tmp28;
-        } else {
-          c4 = 1;
-        }
-      }
-    }
+const __initData = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
+const result = size.fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
+
+export default function DMMessageStickerGreeting(channel) {
+  let gradient;
+  let intl3;
+  let items10;
+  let items11;
+  let items9;
+  let obj13;
+  let tmp20;
+  let tmp21;
+  let tmp28Result;
+  channel = channel.channel;
+  const hasInputText = channel.hasInputText;
+  let showConvoStarterInDM;
+  react = undefined;
+  let tmp = channel;
+  let obj = channel(5187);
+  const tmp3 = END;
+  const tmp4 = closure_13(obj.useGradientValue(END));
+  dependencyMap = tmp4;
+  let obj2 = channel(504);
+  const items = [MessageStore];
+  const stateFromStores = obj2.useStateFromStores(items, () => {
+    const messages = MessageStore.getMessages(channel.id);
+    return messages.filter((type) => type.type !== channel(gradient[18]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
   });
-  function t2() {
-    return closure_0(...arguments);
+  let obj3 = channel(504);
+  const items1 = [UserStore];
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => UserStore.getUser(channel.getRecipientId()));
+  let obj4 = hasInputText(5063);
+  let name = obj4.useName(stateFromStores1);
+  if (name == null) {
+    let intl = tmp(1114).intl;
+    name = intl.string(tmp(1114).t.y1Wu2f);
   }
-  cResult[3] = id.id;
-  cResult[4] = first;
-  cResult[5] = first1;
-  cResult[6] = t2;
-  tmp9 = t2;
-}) : (function useHandleWavePress(id) {
-  let closure_2;
-  let closure_4;
-  let first;
-  let first1;
-  [first, closure_2] = react.useState(null);
-  [first1, _slicedToArray] = react.useState(false);
-  const items = [id.id];
+  const intl2 = tmp(1114).intl;
+  const formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t.m0zYbV, { username: name });
+  const tmpResult = tmp(13773);
+  showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
+  const items2 = [StickersStore];
+  const items3 = [showConvoStarterInDM];
+  const tmpResult7 = tmp(504);
+  const stateFromStores2 = tmpResult7.useStateFromStores(items2, () => {
+    let stickerById = null;
+    if (showConvoStarterInDM) {
+      stickerById = StickersStore.getStickerById(c14);
+    }
+    return stickerById;
+  }, items3);
+  const items4 = [showConvoStarterInDM];
   const effect = react.useEffect(() => {
+    const tmp = showConvoStarterInDM;
+    if (tmp) {
+      const obj = StickersActionCreators;
+      const stickerPack = obj.fetchStickerPack("847199849233514549", true);
+    }
+  }, items4);
+  const tmp13 = showConvoStarterInDM(react.useState(null), 2);
+  const first = tmp13[0];
+  dependencyMap = tmp13[1];
+  const tmp15 = showConvoStarterInDM(react.useState(false), 2);
+  const first1 = tmp15[0];
+  let closure_4 = tmp15[1];
+  const items5 = [channel.id];
+  const effect1 = react.useEffect(() => {
     closure_2(null);
-  }, items);
-  const items1 = [first1, first, id.id];
-  return react.useCallback(first1(function*(arg0, value) {
+  }, items5);
+  const items6 = [first1, first, channel.id];
+  const callback = react.useCallback(stateFromStores(function*(arg0, value) {
     let closure_0;
     let closure_1;
     let obj7;
@@ -309,7 +126,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -325,13 +142,13 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            id = tmp4;
-            showErrorToast = function showErrorToast(text) {
-              if (closure_1_1 !== text) {
-                closure_1_2(text);
+            channel = tmp4;
+            showErrorToast = function showErrorToast(intl) {
+              if (closure_1_1 !== intl) {
+                closure_1_2(intl);
               }
-              const obj = first(closure_2[15]);
-              const obj2 = { text, variant: "critical" };
+              const obj = first(closure_2[13]);
+              const obj2 = { text: intl, variant: "critical" };
               obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
             };
             const tmp35 = first1;
@@ -341,16 +158,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
                 v1(false);
                 showErrorToast(tmp24);
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c3 = 1;
-                const obj4 = { channelId: id.id, source: "In-channel greet" };
-                const obj5 = id(closure_2[16]);
+                const obj4 = { channelId: channel.id, source: "In-channel greet" };
+                const obj5 = channel(closure_2[14]);
                 obj5.trackWaveCtaClicked(obj4);
                 c4 = 2;
                 c5 = 1;
-                const obj6 = { value: obj7.sendGreetMessage(id.id, closure_1_15), done: false };
-                obj7 = tmp(closure_2[17]);
+                const obj6 = { value: obj7.sendGreetMessage(channel.id, closure_1_14), done: false };
+                obj7 = tmp(closure_2[15]);
                 return obj6;
               }
             }
@@ -361,8 +178,8 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
             tmp = closure_2;
             const ok = tmp.ok || 429 !== tmp.status;
             if (!ok) {
-              const intl = id(closure_2[18]).intl;
-              showErrorToast(intl.string(id(closure_2[18]).t.Whhv4w));
+              const intl = channel(closure_2[16]).intl;
+              showErrorToast(intl.string(channel(closure_2[16]).t.Whhv4w));
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -378,7 +195,7 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp28) {
         closure_2 = tmp28;
         if (0 === c3) {
@@ -389,154 +206,16 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHan
         }
       }
     }
-  }), items1);
-});
-const __initData = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;const generateAnimationConfig=function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));};return{justifyContent:\"flex-end\",overflow:\"hidden\",marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
-const __initData2 = { code: "function DMMessageStickerGreetingTsx2(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageStickerGreeting(channel) {
-  let first;
-  let gradient;
-  let isRendered;
-  let tmp11;
-  let tmp17;
-  let tmp19;
-  let tmp20;
-  let tmp22;
-  let tmp23;
-  let tmp7;
-  let tmp9;
-  let tmp = channel;
-  let obj = channel(576);
-  const cResult = obj.c(33);
-  channel = channel.channel;
-  const hasInputText = channel.hasInputText;
-  let obj2 = channel(5181);
-  const tmp4 = closure_13(obj2.useGradientValue(END));
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel.id) {
-    const fn = function h() {
-      const messages = MessageStore.getMessages(channel.id);
-      return messages.filter((type) => type.type !== channel(gradient[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
-    };
-    let num2 = 1;
-    cResult[1] = channel.id;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
-    let num4 = 3;
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== channel) {
-    const fn2 = function x() {
-      return UserStore.getUser(channel.getRecipientId());
-    };
-    cResult[4] = channel;
-    cResult[5] = fn2;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmpResult6 = tmp(504);
-  const stateFromStores1 = tmpResult6.useStateFromStores(tmp9, tmp11);
-  let obj5 = hasInputText(5059);
-  let name = obj5.useName(stateFromStores1);
-  const tmp13 = hasInputText;
-  if (name == null) {
-    const intl = tmp(1125).intl;
-    name = intl.string(tmp(1125).t.y1Wu2f);
-  }
-  const intl2 = tmp(1125).intl;
-  intl2.formatToPlainString(tmp(1125).t.m0zYbV, { username: name });
-  const tmpResult7 = tmp(13625);
-  const showConvoStarterInDM = tmpResult7.useShowConvoStarterInDM(channel);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [StickersStore];
-    cResult[6] = items2;
-    tmp17 = items2;
-  } else {
-    tmp17 = cResult[6];
-  }
-  if (cResult[7] !== showConvoStarterInDM) {
-    class N {
-      constructor() {
-        let stickerById = null;
-        if (showConvoStarterInDM) {
-          stickerById = StickersStore.getStickerById(c15);
-        }
-        return stickerById;
-      }
-    }
-    const items3 = [showConvoStarterInDM];
-    cResult[7] = showConvoStarterInDM;
-    cResult[8] = N;
-    cResult[9] = items3;
-    tmp20 = items3;
-    tmp19 = N;
-  } else {
-    class N {
-      constructor() {
-        let stickerById = null;
-        if (showConvoStarterInDM) {
-          stickerById = StickersStore.getStickerById(c15);
-        }
-        return stickerById;
-      }
-    }
-    tmp20 = cResult[9];
-  }
-  const tmpResult8 = tmp(504);
-  const stateFromStores2 = tmpResult8.useStateFromStores(tmp17, tmp19, tmp20);
-  if (cResult[10] !== showConvoStarterInDM) {
-    class U {
-      constructor() {
-        const tmp = showConvoStarterInDM;
-        if (tmp) {
-          const obj = StickersActionCreators;
-          const stickerPack = obj.fetchStickerPack(c14, true);
-        }
-      }
-    }
-    const items4 = [showConvoStarterInDM];
-    cResult[10] = showConvoStarterInDM;
-    cResult[11] = U;
-    cResult[12] = items4;
-    tmp23 = items4;
-    tmp22 = U;
-  } else {
-    class U {
-      constructor() {
-        const tmp = showConvoStarterInDM;
-        if (tmp) {
-          const obj = StickersActionCreators;
-          const stickerPack = obj.fetchStickerPack(c14, true);
-        }
-      }
-    }
-    tmp23 = cResult[12];
-  }
-  const effect = isRendered.useEffect(tmp22, tmp23);
-  closure_20(channel);
-  isRendered = closure_18().isRendered;
-  closure_18();
-  const fn3 = function z() {
+  }), items6);
+  [tmp20, tmp21] = showConvoStarterInDM(react.useState(false), 2);
+  let c0 = tmp21;
+  const items7 = [tmp21];
+  const tmp19 = showConvoStarterInDM(react.useState(false), 2);
+  react = tmp20;
+  const callback1 = react.useCallback(() => {
+    _undefined(true);
+  }, items7);
+  const fn = function w() {
     let obj2;
     let obj3;
     let obj4;
@@ -545,15 +224,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
     let withDelay2;
     const height = gradient.gradient.height;
     let num = 0;
-    if (isRendered && !hasInputText) {
-      let num2 = 72;
-      if (!stateFromStores) {
-        num2 = c16;
+    if (c5 && !hasInputText) {
+      let num2 = 180;
+      if (stateFromStores) {
+        num2 = 72;
       }
       num = num2 - 1 + height;
     }
     let num4 = 0;
-    if (isRendered && !hasInputText) {
+    if (c5 && !hasInputText) {
       num4 = -height;
     }
     const obj = { justifyContent: "flex-end", overflow: "hidden", marginTop: withDelay(300, obj2.withTiming(num4, obj3)), height: withDelay2(300, obj4.withTiming(num, obj5)) };
@@ -567,170 +246,63 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMMessageSti
     obj5 = { easing: native.STANDARD_EASING, duration: 250 };
     return obj;
   };
-  const tmpResult9 = tmp(5086);
-  let obj3 = { styles: tmp4, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(5086).withDelay, withTiming: tmp(5243).withTiming, STANDARD_EASING: tmp(1199).STANDARD_EASING };
-  fn3.__closure = obj3;
-  fn3.__workletHash = 16992012801942;
-  fn3.__initData = __initData;
-  const animatedStyle = tmpResult9.useAnimatedStyle(fn3);
-  const tmp28 = closure_19();
-  const tmpResult10 = tmp(10221);
-  const shouldAnimateSticker = tmpResult10.useShouldAnimateSticker(false);
+  const tmpResult8 = tmp(5090);
+  let obj5 = { styles: tmp4, isRendered: tmp20, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL: 180, withDelay: tmp(5090).withDelay, withTiming: tmp(5249).withTiming, STANDARD_EASING: tmp(1188).STANDARD_EASING };
+  fn.__closure = obj5;
+  fn.__workletHash = 6327401707106;
+  fn.__initData = __initData;
+  const animatedStyle = tmpResult8.useAnimatedStyle(fn);
+  const tmpResult9 = tmp(5187);
+  let BACKGROUND_BASE_LOWER = tmpResult9.useGradientValue(tmp3);
+  const useToken = tmp(5591).useToken;
+  tmp(5591);
+  if (BACKGROUND_BASE_LOWER == null) {
+    BACKGROUND_BASE_LOWER = tmp7(575).colors.BACKGROUND_BASE_LOWER;
+  }
+  const token = useToken(BACKGROUND_BASE_LOWER);
+  const items8 = [, ];
+  const tmpResult11 = tmp(5006);
+  items8[0] = tmpResult11.hexWithOpacity(token, 0);
+  items8[1] = token;
+  const tmpResult12 = tmp(10246);
+  const shouldAnimateSticker = tmpResult12.useShouldAnimateSticker(false);
+  let tmp28Result2 = null;
   if (showConvoStarterInDM) {
-    class U {
-      constructor() {
-        const tmp = showConvoStarterInDM;
-        if (tmp) {
-          const obj = StickersActionCreators;
-          const stickerPack = obj.fetchStickerPack(c14, true);
-        }
-      }
-    }
-    let obj4 = { style: tmp4.gradient, colors: tmp28 };
-    cResult[13] = tmp28;
-    cResult[14] = tmp4.gradient;
-    cResult[15] = closure_10(tmp13(5295), obj4);
-    const tmp32 = closure_10(tmp13(5295), obj4);
-  }
-  return null;
-}) : (function DMMessageStickerGreeting(channel) {
-  let gradient;
-  let intl3;
-  let items5;
-  let items6;
-  let items7;
-  let obj13;
-  let tmp18Result;
-  channel = channel.channel;
-  const hasInputText = channel.hasInputText;
-  let showConvoStarterInDM;
-  let isRendered;
-  let tmp = channel;
-  let obj = channel(5181);
-  const tmp3 = closure_13(obj.useGradientValue(END));
-  dependencyMap = tmp3;
-  let obj2 = channel(504);
-  const items = [MessageStore];
-  const stateFromStores = obj2.useStateFromStores(items, () => {
-    const messages = MessageStore.getMessages(channel.id);
-    return messages.filter((type) => type.type !== channel(gradient[19]).MessageTypes.FRIEND_REQUEST_ACCEPTED).length > 0;
-  });
-  let obj3 = channel(504);
-  const items1 = [UserStore];
-  const stateFromStores1 = obj3.useStateFromStores(items1, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = hasInputText(5059);
-  let name = obj4.useName(stateFromStores1);
-  if (name == null) {
-    const intl = tmp(1125).intl;
-    name = intl.string(tmp(1125).t.y1Wu2f);
-  }
-  const intl2 = tmp(1125).intl;
-  const formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13625);
-  showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
-  const items2 = [StickersStore];
-  const items3 = [showConvoStarterInDM];
-  const tmpResult4 = tmp(504);
-  const stateFromStores2 = tmpResult4.useStateFromStores(items2, () => {
-    let stickerById = null;
-    if (showConvoStarterInDM) {
-      stickerById = StickersStore.getStickerById(c15);
-    }
-    return stickerById;
-  }, items3);
-  const items4 = [showConvoStarterInDM];
-  const effect = isRendered.useEffect(() => {
-    const tmp = showConvoStarterInDM;
-    if (tmp) {
-      const obj = StickersActionCreators;
-      const stickerPack = obj.fetchStickerPack(c14, true);
-    }
-  }, items4);
-  const tmp12 = closure_20(channel);
-  const tmp13 = closure_18();
-  isRendered = tmp13.isRendered;
-  const setIsRendered = tmp13.setIsRendered;
-  const tmpResult5 = tmp(5086);
-  class M {
-    constructor() {
-      let obj2;
-      let obj3;
-      let obj4;
-      let obj5;
-      let withDelay;
-      let withDelay2;
-      const height = gradient.gradient.height;
-      let num = 0;
-      if (isRendered && !hasInputText) {
-        let num2 = 72;
-        if (!stateFromStores) {
-          num2 = c16;
-        }
-        num = num2 - 1 + height;
-      }
-      let num4 = 0;
-      if (isRendered && !hasInputText) {
-        num4 = -height;
-      }
-      const obj = { justifyContent: "flex-end", overflow: "hidden", marginTop: withDelay(300, obj2.withTiming(num4, obj3)), height: withDelay2(300, obj4.withTiming(num, obj5)) };
-      withDelay = ReanimatedRexport.withDelay;
-      ReanimatedRexport;
-      obj2 = timing;
-      obj3 = { easing: native.STANDARD_EASING, duration: 250 };
-      withDelay2 = ReanimatedRexport.withDelay;
-      ReanimatedRexport;
-      obj4 = timing;
-      obj5 = { easing: native.STANDARD_EASING, duration: 250 };
-      return obj;
-    }
-  }
-  let obj5 = { styles: tmp3, isRendered, hasInputText, hasMessages: stateFromStores, HEIGHT_COMPACT: 72, HEIGHT_FULL, withDelay: tmp(5086).withDelay, withTiming: tmp(5243).withTiming, STANDARD_EASING: tmp(1199).STANDARD_EASING };
-  M.__closure = obj5;
-  M.__workletHash = 12021273723425;
-  M.__initData = __initData2;
-  const animatedStyle = tmpResult5.useAnimatedStyle(M);
-  const tmp15 = closure_19();
-  const tmpResult6 = tmp(10221);
-  const shouldAnimateSticker = tmpResult6.useShouldAnimateSticker(false);
-  let tmp18Result2 = null;
-  if (showConvoStarterInDM) {
-    const obj6 = { style: animatedStyle, onLayout: setIsRendered, children: items5 };
-    View = tmp6(5086).View;
-    const obj7 = { style: tmp3.gradient, colors: tmp15 };
-    items5 = [closure_10(hasInputText(5295), obj7), ];
-    const obj8 = { style: tmp3.container, children: tmp18Result };
+    const tmp28 = closure_11;
+    let obj6 = { style: animatedStyle, onLayout: callback1, children: items9 };
+    View = tmp7(5090).View;
+    let obj7 = { style: tmp4.gradient, colors: items8 };
+    items9 = [closure_10(tmp7(5582), obj7), ];
+    const obj8 = { style: tmp4.container, children: tmp28Result };
     if (stateFromStores) {
-      const obj9 = { style: tmp3.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1125).t.pJObYI), onPress: tmp12, children: items6 };
-      const PressableOpacity = tmp(6968).PressableOpacity;
-      intl3 = tmp(1125).intl;
-      let tmp19Result = null;
+      const obj9 = { style: tmp4.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1114).t.pJObYI), onPress: callback, children: items10 };
+      const PressableOpacity = tmp(6974).PressableOpacity;
+      intl3 = tmp(1114).intl;
+      let tmp29Result = null;
       if (null != stateFromStores2) {
         const obj10 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp19Result = tmp19(tmp6(10237), obj10);
+        tmp29Result = tmp29(tmp7(10262), obj10);
       }
-      items6 = [tmp19Result, ];
-      const obj11 = { style: tmp3.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
-      items6[1] = closure_10(tmp(5271).Text, obj11);
-      tmp18Result = tmp18(PressableOpacity, obj9);
+      items10 = [tmp29Result, ];
+      const obj11 = { style: tmp4.toastContent, variant: "text-md/bold", children: formatToPlainStringResult };
+      items10[1] = closure_10(tmp(5619).Text, obj11);
+      tmp28Result = tmp28(PressableOpacity, obj9);
     } else {
-      let tmp19Result2 = null;
-      const tmp21 = closure_12;
+      let tmp29Result2 = null;
+      const tmp31 = closure_12;
       if (null != stateFromStores2) {
-        const obj12 = { style: tmp3.stickerContainer, children: closure_10(hasInputText(10237), obj13) };
+        const obj12 = { style: tmp4.stickerContainer, children: closure_10(hasInputText(10262), obj13) };
         obj13 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
-        tmp19Result2 = tmp19(tmp20, obj12);
+        tmp29Result2 = tmp29(tmp30, obj12);
       }
-      const obj14 = { children: items7 };
-      items7 = [tmp19Result2, ];
-      const obj15 = { text: formatToPlainStringResult, onPress: tmp12, shrink: true };
-      items7[1] = closure_10(tmp(5281).Button, obj15);
-      tmp18Result = tmp18(tmp21, obj14);
+      const obj14 = { children: items11 };
+      items11 = [tmp29Result2, ];
+      const obj15 = { text: formatToPlainStringResult, onPress: callback, shrink: true };
+      items11[1] = closure_10(tmp(5629).Button, obj15);
+      tmp28Result = tmp28(tmp31, obj14);
     }
-    items5[1] = closure_10(View, obj8);
-    tmp18Result2 = tmp18(View, obj6);
+    items9[1] = closure_10(View, obj8);
+    tmp28Result2 = tmp28(View, obj6);
   }
-  return tmp18Result2;
-});
-const result = size.fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
-
-export default tmp3;
+  return tmp28Result2;
+};

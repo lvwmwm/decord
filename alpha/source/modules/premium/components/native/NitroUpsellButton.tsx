@@ -1,85 +1,20 @@
-// Module ID: 10245
-// Function ID: 10246
+// Module ID: 10270
+// Function ID: 10271
 // Name: NitroUpsellButton
-// Dependencies: [19, 5006, 21, 558, 576, 504, 9487, 587, 5281, 2]
+// Dependencies: [19, 5010, 21, 504, 5629, 9506, 575, 2]
 
-// Module 10245 (NitroUpsellButton)
+// Module 10270 (NitroUpsellButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9487 */;
+import nativeDefault from "native" /* 575 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9506 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function NitroUpsellButton(arg0) {
-  let loading;
-  let onPress;
-  let shiny;
-  let text;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let useReducedMotion;
-  const obj = react2;
-  const cResult = obj.c(9);
-  ({ loading, onPress, text, shiny, size } = arg0);
-  let tmp4 = undefined === shiny || shiny;
-  let str = "lg";
-  if (undefined !== size) {
-    str = size;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function l() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const NitroWheelIcon = tmp(9487).NitroWheelIcon;
-    const tmp12 = <NitroWheelIcon color={nativeDefault.colors.WHITE} size="sm" />;
-    cResult[2] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (tmp4) {
-    tmp4 = !stateFromStores;
-  }
-  if (cResult[3] === loading) {
-    if (cResult[4] === onPress) {
-      if (cResult[5] === str) {
-        if (cResult[6] === tmp4) {
-          let tmp13;
-          if (cResult[7] === text) {
-            tmp13 = cResult[8];
-          }
-          return tmp13;
-        }
-      }
-    }
-  }
-  const tmp14 = jsx(components_Button_Button.Button, { text, size: str, loading, onPress, icon: tmp9, variant: "experimental_premium-primary", shiny: tmp4 });
-  cResult[3] = loading;
-  cResult[4] = onPress;
-  cResult[5] = str;
-  cResult[6] = tmp4;
-  cResult[7] = text;
-  cResult[8] = tmp14;
-  tmp13 = tmp14;
-}) : (function NitroUpsellButton(shiny) {
+const memoResult = react.memo(function NitroUpsellButton(shiny) {
   let loading;
   let onPress;
   let text;
@@ -105,7 +40,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     flag = !stateFromStores;
   }
   return tmp2(Button, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/premium/components/native/NitroUpsellButton.tsx");
 
 export default memoResult;

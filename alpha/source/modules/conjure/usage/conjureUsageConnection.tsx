@@ -1,10 +1,10 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10950
+// Function ID: 10951
 // Name: conjureUsageConnection
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 10927 (conjureUsageConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 10950 (conjureUsageConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

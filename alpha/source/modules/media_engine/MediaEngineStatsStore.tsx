@@ -1,11 +1,11 @@
-// Module ID: 5769
-// Function ID: 5770
+// Module ID: 5776
+// Function ID: 5777
 // Name: MediaEngineStatsStore
-// Dependencies: [502, 504, 584, 2]
+// Dependencies: [502, 504, 572, 2]
 
-// Module 5769 (MediaEngineStatsStore)
+// Module 5776 (MediaEngineStatsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

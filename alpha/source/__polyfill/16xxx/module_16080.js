@@ -1,7 +1,10 @@
 // Module ID: 16080
 // Function ID: 16081
-// Dependencies: []
+// Dependencies: [16081, 16149]
 
 // Module 16080
+import _mod16149 from "module_16149" /* 16149 */;
+import module_16081 from "module_16081" /* 16081 */;
 
-export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });
+
+export default _mod16149.Object.assign;

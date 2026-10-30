@@ -1,259 +1,26 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16869
+// Function ID: 16870
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6768, 1084, 9646, 558, 576, 9672, 16813, 1120, 6773, 7859, 9674, 7850, 6775, 14594, 16810, 2]
+// Dependencies: [19, 6775, 1072, 9671, 9697, 16867, 1109, 6780, 7864, 9699, 7855, 6782, 14627, 16864, 2]
+// Exports: useBountyPauseAppStoreSheet
 
-// Module 16815 (useBountyPauseAppStoreSheet)
-import Constants from "Constants" /* 1084 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import AnalyticsActions from "AnalyticsActions" /* 7850 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14594 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16810 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16813 */;
+// Module 16869 (useBountyPauseAppStoreSheet)
+import Constants from "Constants" /* 1072 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import AnalyticsActions from "AnalyticsActions" /* 7855 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 14627 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16864 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16867 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let closure_0, obj1, tmp4, tmp6;
 
 const QuestsExperimentLocations = QuestConstants.QuestsExperimentLocations;
 const ComponentActions = Constants.ComponentActions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPauseAppStoreSheet(bounty) {
-  let first;
-  let items2;
-  let sourceQuestContent;
-  let tmp11;
-  let tmp12;
-  let tmp9;
-  let tmp = bounty;
-  let tmp2 = sourceQuestContent;
-  let obj = bounty(sourceQuestContent[5]);
-  const cResult = obj.c(23);
-  bounty = bounty.bounty;
-  sourceQuestContent = bounty.sourceQuestContent;
-  const isActive = bounty.isActive;
-  const playerRef = bounty.playerRef;
-  let obj2 = bounty(sourceQuestContent[6]);
-  const getQuestImpressionId = obj2.useGetQuestImpressionId();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BountiesMobileQuestBarExperiment = tmp(tmp2[3]).BountiesMobileQuestBarExperiment;
-    let obj3 = { location: playerRef.VIDEO_MODAL_MOBILE };
-    const config = BountiesMobileQuestBarExperiment.getConfig(obj3);
-    const ctrVariant = config.ctrVariant;
-    let tmp8 = null;
-    if (config.enabled) {
-      if (ctrVariant === tmp(tmp2[3]).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
-        tmp8 = ctrVariant;
-      } else {
-        tmp8 = null;
-      }
-    }
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  const ref = isActive.useRef(false);
-  const ref2 = isActive.useRef(null);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        closure_6.current = false;
-        return;
-      }
-    }
-    cResult[1] = C;
-    tmp9 = C;
-  } else {
-    class C {
-      constructor() {
-        closure_6.current = false;
-        return;
-      }
-    }
-  }
-  if (cResult[2] === bounty.id) {
-    class C {
-      constructor() {
-        closure_6.current = false;
-        return;
-      }
-    }
-    const effect = obj4.useEffect(tmp9, items2);
-    if (cResult[5] === bounty.cta) {
-      let tmp18;
-      let tmp17;
-      class C {
-        constructor() {
-          closure_6.current = false;
-          return;
-        }
-      }
-      const effect1 = obj4.useEffect(tmp11, tmp12);
-      const _Symbol = Symbol;
-      class E {
-        constructor() {
-          tmp = isActive;
-          if (tmp) {
-            tmp2 = closure_5;
-            tmp3 = null;
-            tmp = null != closure_5;
-          }
-          if (tmp) {
-            tmp4 = closure_0;
-            tmp5 = closure_1;
-            obj = closure_0(closure_1[7]);
-            tmp6 = bounty;
-            result = obj.prefetchCustomAppStoreOverlayContent(bounty.cta);
-          }
-          return;
-        }
-      }
-      if (tmp14 === Symbol.for("react.memo_cache_sentinel")) {
-        class C {
-          constructor() {
-            closure_6.current = false;
-            return;
-          }
-        }
-        cResult[9] = tmp16;
-        class E {
-          constructor() {
-            tmp = isActive;
-            if (tmp) {
-              tmp2 = closure_5;
-              tmp3 = null;
-              tmp = null != closure_5;
-            }
-            if (tmp) {
-              tmp4 = closure_0;
-              tmp5 = closure_1;
-              obj = closure_0(closure_1[7]);
-              tmp6 = bounty;
-              result = obj.prefetchCustomAppStoreOverlayContent(bounty.cta);
-            }
-            return;
-          }
-        }
-      } else {
-        class C {
-          constructor() {
-            closure_6.current = false;
-            return;
-          }
-        }
-      }
-      let closure_8 = tmp15;
-      const _Symbol2 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class T {
-          constructor() {
-            return function() { /* body not rendered: F155451 */ };
-          }
-        }
-        const items = [tmp15];
-        class E {
-          constructor() {
-            tmp = isActive;
-            if (tmp) {
-              tmp2 = closure_5;
-              tmp3 = null;
-              tmp = null != closure_5;
-            }
-            if (tmp) {
-              tmp4 = closure_0;
-              tmp5 = closure_1;
-              obj = closure_0(closure_1[7]);
-              tmp6 = bounty;
-              result = obj.prefetchCustomAppStoreOverlayContent(bounty.cta);
-            }
-            return;
-          }
-        }
-        cResult[10] = T;
-        cResult[11] = items;
-        tmp18 = items;
-        tmp17 = T;
-      } else {
-        class T {
-          constructor() {
-            return function() { /* body not rendered: F155451 */ };
-          }
-        }
-        tmp18 = cResult[11];
-      }
-      const effect2 = obj4.useEffect(tmp17, tmp18);
-      if (cResult[12] === bounty.cta) {
-        class T {
-          constructor() {
-            return function() { /* body not rendered: F155451 */ };
-          }
-        }
-      }
-      class I {
-        constructor() {
-          obj = { content: bounty(sourceQuestContent[9]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: bounty(sourceQuestContent[10]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_4(), sourceQuestContent };
-          tmp = bounty;
-          tmp2 = sourceQuestContent;
-          closure_0 = obj;
-          obj2 = bounty(sourceQuestContent[11]);
-          tmp3 = closure_0;
-          directAppStoreLinkFromCta = obj2.getDirectAppStoreLinkFromCta(closure_0.cta);
-          tmp5 = bounty(sourceQuestContent[11]);
-          url = directAppStoreLinkFromCta;
-          openAppStoreOrUrl = tmp5.openAppStoreOrUrl;
-          if (directAppStoreLinkFromCta == null) {
-            url = tmp3.cta.url;
-          }
-          obj1 = { link: url, directLink: directAppStoreLinkFromCta, inlineStoreParams: null, allowExternalOpen: false, trackOverlayEvent: null, trackOverlaySurfaceClick: null, appStoreOverlayCarouselScrollContext: null };
-          tmpResult = tmp(tmp2[11]);
-          obj1.inlineStoreParams = tmpResult.getInlineStoreParamsFromCta(tmp3.cta);
-          obj1.trackOverlayEvent = function trackOverlayEvent() { /* body not rendered: F155452 */ };
-          obj1.trackOverlaySurfaceClick = function trackOverlaySurfaceClick() { /* body not rendered: F155453 */ };
-          obj1.appStoreOverlayCarouselScrollContext = { adContentId: tmp3.id };
-          openAppStoreOrUrlResult = openAppStoreOrUrl(obj1);
-          return openAppStoreOrUrlResult.then(function() { /* body not rendered: F155454 */ });
-        }
-      }
-      cResult[12] = bounty.cta;
-      cResult[13] = bounty.id;
-      cResult[14] = getQuestImpressionId;
-      cResult[15] = playerRef;
-      cResult[16] = sourceQuestContent;
-      cResult[17] = I;
-    }
-    class E {
-      constructor() {
-        tmp = isActive;
-        if (tmp) {
-          tmp2 = closure_5;
-          tmp3 = null;
-          tmp = null != closure_5;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_1;
-          obj = closure_0(closure_1[7]);
-          tmp6 = bounty;
-          result = obj.prefetchCustomAppStoreOverlayContent(bounty.cta);
-        }
-        return;
-      }
-    }
-    const items1 = [bounty.cta, first, isActive];
-    cResult[5] = bounty.cta;
-    cResult[7] = E;
-    cResult[8] = items1;
-    tmp11 = E;
-    tmp12 = items1;
-  }
-  items2 = [bounty.id, isActive];
-  cResult[2] = bounty.id;
-  cResult[3] = isActive;
-  cResult[4] = items2;
-}) : (function useBountyPauseAppStoreSheet(bounty) {
+let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyPauseAppStoreSheet.tsx");
+
+export function useBountyPauseAppStoreSheet(bounty) {
   let items4;
   bounty = bounty.bounty;
   const sourceQuestContent = bounty.sourceQuestContent;
@@ -266,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
   let callback1;
   let tmp = bounty;
   let tmp2 = sourceQuestContent;
-  let obj = bounty(sourceQuestContent[6]);
+  let obj = bounty(sourceQuestContent[4]);
   const getQuestImpressionId = obj.useGetQuestImpressionId();
   const BountiesMobileQuestBarExperiment = bounty(sourceQuestContent[3]).BountiesMobileQuestBarExperiment;
   let obj2 = { location: playerRef.VIDEO_MODAL_MOBILE };
@@ -307,12 +74,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
   const items3 = [bounty, getQuestImpressionId, playerRef, sourceQuestContent, callback, tmp5];
   callback1 = isActive.useCallback(() => {
     let tmpResult;
-    let trackingCtx = { content: bounty(sourceQuestContent[9]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: bounty(sourceQuestContent[10]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
+    let trackingCtx = { content: bounty(sourceQuestContent[7]).QuestContent.VIDEO_MODAL_MOBILE, ctaContent: bounty(sourceQuestContent[8]).QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent };
     const tmp = bounty;
     const tmp2 = sourceQuestContent;
-    let obj2 = bounty(sourceQuestContent[11]);
+    let obj2 = bounty(sourceQuestContent[9]);
     const directAppStoreLinkFromCta = obj2.getDirectAppStoreLinkFromCta(trackingCtx.cta);
-    let tmp5 = bounty(sourceQuestContent[11]);
+    let tmp5 = bounty(sourceQuestContent[9]);
     let url = directAppStoreLinkFromCta;
     const openAppStoreOrUrl = tmp5.openAppStoreOrUrl;
     if (directAppStoreLinkFromCta == null) {
@@ -335,7 +102,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
       },
       appStoreOverlayCarouselScrollContext: { adContentId: trackingCtx.id }
     };
-    tmpResult = tmp(tmp2[11]);
+    tmpResult = tmp(tmp2[9]);
     const openAppStoreOrUrlResult = openAppStoreOrUrl(obj3);
     return openAppStoreOrUrlResult.then((result) => {
       if (false === result) {
@@ -356,7 +123,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
           }
         }
         let tmp5 = callback();
-        const ComponentDispatch = bounty(sourceQuestContent[8]).ComponentDispatch;
+        const ComponentDispatch = bounty(sourceQuestContent[6]).ComponentDispatch;
         const subscription = ComponentDispatch.subscribe(getQuestImpressionId.QUEST_APP_STORE_OVERLAY_FINISHED, handleFinished);
         ref2.current = handleFinished;
         return true;
@@ -370,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9646).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9671).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();
@@ -391,7 +158,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyPau
   };
   items4 = [tmp5, isActive, callback1];
   return obj3;
-});
-let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountyPauseAppStoreSheet.tsx");
-
-export const useBountyPauseAppStoreSheet = tmp2;
+}

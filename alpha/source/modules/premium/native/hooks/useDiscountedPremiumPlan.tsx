@@ -1,147 +1,26 @@
-// Module ID: 9879
-// Function ID: 9880
+// Module ID: 9904
+// Function ID: 9905
 // Name: useDiscountedPremiumPlan
-// Dependencies: [19, 7582, 558, 576, 504, 2]
+// Dependencies: [19, 7590, 504, 2]
+// Exports: useDiscountedPremiumPlan
 
-// Module 9879 (useDiscountedPremiumPlan)
+// Module 9904 (useDiscountedPremiumPlan)
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 7582 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import IAPStore from "IAPStore" /* 7590 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscountedPremiumPlan(discount, arr) {
-  let closure_0;
-  let closure_1;
-  let obj2;
-  let tmp13;
-  let tmp14;
-  let tmp15;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(14);
-  let tmp4 = null;
-  if (null != discount) {
-    let tmp7;
-    let tmp11;
-    discount = discount.discount;
-    let planIds;
-    const first = cResult[0];
-    if (discount != null) {
-      planIds = discount.planIds;
-    }
-    if (first !== planIds) {
-      const discount2 = discount.discount;
-      let planIds1;
-      if (discount2 != null) {
-        planIds1 = discount2.planIds;
-      }
-      if (planIds1 == null) {
-        planIds1 = [];
-      }
-      const discount3 = discount.discount;
-      let planIds2;
-      if (discount3 != null) {
-        planIds2 = discount3.planIds;
-      }
-      cResult[0] = planIds2;
-      cResult[1] = planIds1;
-      tmp7 = planIds1;
-    } else {
-      tmp7 = cResult[1];
-    }
-    _require = tmp7;
-    if (cResult[2] === tmp7) {
-      let tmp10;
-      if (cResult[3] === arr) {
-        tmp10 = cResult[4];
-      }
-      tmp4 = tmp10;
-    }
-    if (cResult[5] !== tmp7) {
-      class P {
-        constructor(arg0) {
-          return closure_0.includes(discount.basePlanId);
-        }
-      }
-      cResult[5] = tmp7;
-      cResult[6] = P;
-      tmp11 = P;
-    } else {
-      class P {
-        constructor(arg0) {
-          return closure_0.includes(discount.basePlanId);
-        }
-      }
-    }
-    const found = arr.find(tmp11);
-    cResult[2] = tmp7;
-    cResult[3] = arr;
-    cResult[4] = found;
-    tmp10 = found;
-  }
-  dependencyMap = tmp4;
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor(arg0) {
-        return closure_0.includes(discount.basePlanId);
-      }
-    }
-    const items = [IAPStore];
-    cResult[7] = items;
-    tmp13 = items;
-  } else {
-    class P {
-      constructor(arg0) {
-        return closure_0.includes(discount.basePlanId);
-      }
-    }
-  }
-  if (cResult[8] !== tmp4) {
-    class P {
-      constructor(arg0) {
-        return closure_0.includes(discount.basePlanId);
-      }
-    }
-    const items1 = [tmp4];
-    cResult[8] = tmp4;
-    cResult[9] = tmp16;
-    cResult[10] = items1;
-    tmp15 = items1;
-    tmp14 = tmp16;
-  } else {
-    class P {
-      constructor(arg0) {
-        return closure_0.includes(discount.basePlanId);
-      }
-    }
-    tmp15 = cResult[10];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp13, tmp14, tmp15);
-  if (cResult[11] === tmp4) {
-    class P {
-      constructor(arg0) {
-        return closure_0.includes(discount.basePlanId);
-      }
-    }
-    return obj2;
-  }
-  obj2 = { discountedPlan: tmp4, discountedProduct: stateFromStores };
-  cResult[11] = tmp4;
-  cResult[12] = stateFromStores;
-  cResult[13] = obj2;
-}) : (function useDiscountedPremiumPlan(arg0, arg1) {
-  let closure_0;
-  let closure_1;
+const result = size.fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumPlan.tsx");
+
+export function useDiscountedPremiumPlan(premiumDiscountOffer, items3) {
   let memo;
-  _require = arg0;
-  dependencyMap = arg1;
-  const items = [arg0, arg1];
+  _require = premiumDiscountOffer;
+  dependencyMap = items3;
+  const items = [premiumDiscountOffer, items3];
   memo = memo.useMemo(() => {
-    if (null == closure_0) {
+    if (null == premiumDiscountOffer) {
       return null;
     } else {
       const discount = tmp.discount;
@@ -152,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoun
       if (planIds == null) {
         planIds = [];
       }
-      return closure_1.find((basePlanId) => planIds.includes(basePlanId.basePlanId));
+      return items3.find((basePlanId) => planIds.includes(basePlanId.basePlanId));
     }
   }, items);
   const items1 = [IAPStore];
@@ -169,7 +48,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoun
     }, items2)
   };
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumPlan.tsx");
-
-export const useDiscountedPremiumPlan = tmp2;
+}

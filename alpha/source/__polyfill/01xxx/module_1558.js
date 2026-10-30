@@ -3,76 +3,23 @@
 // Dependencies: []
 
 // Module 1558
-function getStateFromRouteParams(params) {
-  let items;
-  let path;
-  let tmp4;
-  if (null != params) {
-    if (typeof params === "object") {
-      let state;
-      if ("state" in params) {
-        if (params.state) {
-          if (typeof params.state === "object") {
-            if ("routes" in params.state) {
-              let tmp = globalThis;
-              const _Array = Array;
-              if (Array.isArray(params.state.routes)) {
-                const routes = params.state.routes;
-                if (routes.every((name) => {
-                  let tmp = typeof name === "object";
-                  if (typeof name === "object") {
-                    tmp = null != name;
-                  }
-                  if (tmp) {
-                    tmp = "name" in name;
-                  }
-                  if (tmp) {
-                    tmp = typeof name.name === "string";
-                  }
-                  return tmp;
-                })) {
-                  state = params.state;
-                }
-                return state;
-              }
-            }
-          }
-        }
-      }
-      if ("screen" in params) {
-        if (params.screen) {
-          if (typeof params.screen === "string") {
-            const obj2 = { name: params.screen, params, path, state: tmp4 };
-            params = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  params = params.params;
-                }
-              }
-            }
-            path = undefined;
-            if ("path" in params) {
-              if (typeof params.path === "string") {
-                path = params.path;
-              }
-            }
-            tmp4 = undefined;
-            if ("params" in params) {
-              if (typeof params.params === "object") {
-                if (null != params.params) {
-                  tmp4 = getStateFromRouteParams(params.params);
-                }
-              }
-            }
-            const obj = { routes: items };
-            items = [obj2];
-            state = obj;
-          }
-        }
-      }
+
+export default (arg0, arr) => {
+  let num;
+  const obj = {};
+  const keys = Object.keys(arg0);
+  for (let num = 0; num < keys.length; num = num + 1) {
+    let tmp5;
+    let tmp2 = keys[num];
+    let tmp3 = arg0[tmp2];
+    if (tmp) {
+      tmp5 = -1 !== arr.indexOf(tmp2);
+    } else {
+      tmp5 = arr(tmp2, tmp3, arg0);
+    }
+    if (tmp5) {
+      obj[tmp2] = tmp3;
     }
   }
-}
-
-export { getStateFromRouteParams };
+  return obj;
+};

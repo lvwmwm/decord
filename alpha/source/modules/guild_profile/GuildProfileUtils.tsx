@@ -1,20 +1,20 @@
-// Module ID: 7868
-// Function ID: 7869
+// Module ID: 7874
+// Function ID: 7875
 // Name: GuildProfileUtils
-// Dependencies: [4861, 1084, 4871, 2]
+// Dependencies: [4862, 1072, 4872, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 7868 (GuildProfileUtils)
-import Constants from "Constants" /* 1084 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
+// Module 7874 (GuildProfileUtils)
+import Constants from "Constants" /* 1072 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ChannelRecord.createChannelRecordFromInvite;
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/guild_profile/GuildProfileUtils.tsx");
 
-export function getEstablishedDate(tmp2Result4, stateFromStores) {
+export function getEstablishedDate(tmp2Result4, locale) {
   if (null != tmp2Result4) {
     if ("" !== tmp2Result4) {
       const _Date = Date;
@@ -27,7 +27,7 @@ export function getEstablishedDate(tmp2Result4, stateFromStores) {
         const _isNaN = isNaN;
         toLocaleDateStringResult = null;
         if (!isNaN(date.getTime())) {
-          toLocaleDateStringResult = date.toLocaleDateString(stateFromStores, { year: "numeric", month: "short" });
+          toLocaleDateStringResult = date.toLocaleDateString(locale, { year: "numeric", month: "short" });
         }
       }
       return toLocaleDateStringResult;

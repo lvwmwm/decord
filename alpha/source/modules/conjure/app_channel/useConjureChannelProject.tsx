@@ -1,209 +1,26 @@
-// Module ID: 14329
-// Function ID: 14330
+// Module ID: 14359
+// Function ID: 14360
 // Name: useConjureChannelProject
-// Dependencies: [19, 4917, 4879, 4937, 6831, 1084, 558, 576, 7405, 504, 10832, 11, 6832, 2]
+// Dependencies: [19, 4921, 4880, 4941, 6838, 1072, 7413, 504, 10855, 11, 6839, 2]
+// Exports: default
 
-// Module 14329 (useConjureChannelProject)
-import Constants from "Constants" /* 1084 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6831 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
+// Module 14359 (useConjureChannelProject)
+import Constants from "Constants" /* 1072 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6838 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10855 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
-let _require;
 
 const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 const Permissions = Constants.Permissions;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureChannelProject(guild_id) {
-  let closure_0;
-  let stateFromStoresArray;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let tmp16;
-  let tmp4;
-  let tmp8;
-  let tmp = _require;
-  const tmp2 = guild_id;
-  let obj = require("react");
-  const cResult = obj.c(27);
-  if (cResult[0] !== guild_id) {
-    const tmpResult = tmp(tmp2[8]);
-    const conjureChannelAppIdResult = tmpResult.conjureChannelAppId(guild_id);
-    cResult[0] = guild_id;
-    cResult[1] = conjureChannelAppIdResult;
-    tmp4 = conjureChannelAppIdResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  _require = tmp4;
-  const tmp6 = null != tmp4;
-  let closure_1 = tmp6;
-  guild_id = undefined;
-  if (guild_id != null) {
-    guild_id = guild_id.guild_id;
-  }
-  if (guild_id == null) {
-    guild_id = null;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GuildStore, ];
-    let tmp10 = PermissionStore;
-    items[1] = PermissionStore;
-    cResult[2] = items;
-    tmp8 = items;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== guild_id) {
-    class S {
-      constructor() {
-        let guild = null;
-        if (null != guild_id) {
-          guild = GuildStore.getGuild(tmp);
-        }
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    const items1 = [guild_id];
-    cResult[3] = guild_id;
-    cResult[4] = S;
-    cResult[5] = items1;
-    tmp12 = items1;
-    tmp11 = S;
-  } else {
-    class S {
-      constructor() {
-        let guild = null;
-        if (null != guild_id) {
-          guild = GuildStore.getGuild(tmp);
-        }
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    tmp12 = cResult[5];
-  }
-  const tmpResult3 = tmp(tmp2[9]);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp8, tmp11, tmp12);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        let guild = null;
-        if (null != guild_id) {
-          guild = GuildStore.getGuild(tmp);
-        }
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-    const items2 = [stateFromStoresArray];
-    cResult[6] = items2;
-    tmp14 = items2;
-  } else {
-    class S {
-      constructor() {
-        let guild = null;
-        if (null != guild_id) {
-          guild = GuildStore.getGuild(tmp);
-        }
-        const canResult = null != guild && PermissionStore.can(Permissions.MANAGE_GUILD, guild);
-        return canResult;
-      }
-    }
-  }
-  if (cResult[7] !== guild_id) {
-    class C {
-      constructor() {
-        let items;
-        if (null != guild_id) {
-          const selfMember = GuildMemberStore.getSelfMember(tmp);
-          let roles;
-          if (selfMember != null) {
-            roles = selfMember.roles;
-          }
-          if (roles == null) {
-            roles = [];
-          }
-          items = roles;
-        } else {
-          items = [];
-        }
-        return items;
-      }
-    }
-    const items3 = [guild_id];
-    cResult[7] = guild_id;
-    cResult[8] = C;
-    cResult[9] = items3;
-    tmp16 = items3;
-    tmp15 = C;
-  } else {
-    class C {
-      constructor() {
-        let items;
-        if (null != guild_id) {
-          const selfMember = GuildMemberStore.getSelfMember(tmp);
-          let roles;
-          if (selfMember != null) {
-            roles = selfMember.roles;
-          }
-          if (roles == null) {
-            roles = [];
-          }
-          items = roles;
-        } else {
-          items = [];
-        }
-        return items;
-      }
-    }
-    tmp16 = cResult[9];
-  }
-  const tmpResult4 = tmp(tmp2[9]);
-  stateFromStoresArray = tmpResult4.useStateFromStoresArray(tmp14, tmp15, tmp16);
-  if (cResult[10] === tmp4) {
-    class C {
-      constructor() {
-        let items;
-        if (null != guild_id) {
-          const selfMember = GuildMemberStore.getSelfMember(tmp);
-          let roles;
-          if (selfMember != null) {
-            roles = selfMember.roles;
-          }
-          if (roles == null) {
-            roles = [];
-          }
-          items = roles;
-        } else {
-          items = [];
-        }
-        return items;
-      }
-    }
-  }
-  const fn = function y() {
-    const tmp = closure_1 && null != closure_0;
-    if (tmp) {
-      const listProjects = ConjureActionCreators.listProjects;
-      ConjureActionCreators;
-      listProjects(guild_id);
-    }
-  };
-  cResult[10] = tmp4;
-  cResult[11] = guild_id;
-  cResult[12] = tmp6;
-  cResult[13] = fn;
-}) : (function useConjureChannelProject(guild_id) {
-  let require;
+let result = size.fileFinishedImporting("modules/conjure/app_channel/useConjureChannelProject.tsx");
+
+export default function useConjureChannelProject(guild_id) {
   let stateFromStoresArray;
   let tmp = require;
   const tmp2 = guild_id;
@@ -220,7 +37,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
   }
   let items = [GuildStore, PermissionStore];
   const items1 = [guild_id];
-  const tmpResult = tmp(tmp2[9]);
+  const tmpResult = tmp(tmp2[7]);
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     let guild = null;
     if (null != guild_id) {
@@ -231,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
   }, items1);
   const items2 = [stateFromStoresArray];
   const items3 = [guild_id];
-  const tmpResult3 = tmp(tmp2[9]);
+  const tmpResult3 = tmp(tmp2[7]);
   stateFromStoresArray = tmpResult3.useStateFromStoresArray(items2, () => {
     let items;
     if (null != guild_id) {
@@ -260,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
   }, items4);
   const items5 = [ConjureProjectStore];
   const items6 = [conjureChannelAppIdResult, stateFromStores, stateFromStoresArray, guild_id];
-  const tmpResult4 = tmp(tmp2[9]);
+  const tmpResult4 = tmp(tmp2[7]);
   return tmpResult4.useStateFromStores(items5, () => {
     let result1;
     if (null == result1) {
@@ -271,7 +88,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
         if (!isProjectOwner(result)) {
           result1 = null;
           if (null != guild_id) {
-            const obj = closure_1(guild_id[11]);
+            const obj = closure_1(guild_id[9]);
             result1 = obj.castGuildIdAsEveryoneGuildRoleId(tmp2);
           }
           let prop = result.collaborator_role_ids;
@@ -297,7 +114,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCh
       return result;
     }
   }, items6);
-});
-let result = size.fileFinishedImporting("modules/conjure/app_channel/useConjureChannelProject.tsx");
-
-export default tmp2;
+};

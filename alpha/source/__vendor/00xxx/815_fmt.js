@@ -1,0 +1,73 @@
+// Module ID: 815
+// Function ID: 816
+// Name: fmt
+// Dependencies: [744, 765]
+// Exports: debug, error, fatal, info, trace, warn
+
+// Module 815 (fmt)
+import _INTERNAL_captureLog from "_INTERNAL_captureLog" /* 744 */;
+import parameterize from "parameterize" /* 765 */;
+
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+
+export const fmt = parameterize.fmt;
+export function debug(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "debug", message, attributes, severityNumber: "applicationId" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}
+export function error(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "error", message, attributes, severityNumber: "HermesInternal" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}
+export function fatal(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "fatal", message, attributes, severityNumber: "e" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}
+export function info(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "info", message, attributes, severityNumber: "applicationId" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}
+export function trace(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "trace", message, attributes, severityNumber: "applicationId" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}
+export function warn(message, attributes) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const scope = obj.scope;
+  const obj2 = _INTERNAL_captureLog;
+  const obj3 = { level: "warn", message, attributes, severityNumber: "ix" };
+  obj2._INTERNAL_captureLog(obj3, scope);
+}

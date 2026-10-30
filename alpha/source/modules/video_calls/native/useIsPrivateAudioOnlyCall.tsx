@@ -1,17 +1,17 @@
-// Module ID: 10958
-// Function ID: 10959
+// Module ID: 10983
+// Function ID: 10984
 // Name: useIsPrivateAudioOnlyCall
-// Dependencies: [32, 4856, 6830, 6701, 2012, 5668, 5670, 558, 576, 504, 2]
+// Dependencies: [32, 4857, 6837, 6708, 2007, 5674, 5676, 504, 2]
+// Exports: default
 
-// Module 10958 (useIsPrivateAudioOnlyCall)
-import CallConstants from "CallConstants" /* 5670 */;
+// Module 10983 (useIsPrivateAudioOnlyCall)
+import CallConstants from "CallConstants" /* 5676 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,87 +25,9 @@ function areParticipantStatesEqual(arg0, arg1) {
   return tmp === tmp2;
 }
 const isActivityParticipant = CallConstants.isActivityParticipant;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPrivateAudioOnlyCall(id) {
-  let _private;
-  let closure_1;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = id;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [ChannelRTCStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function h() {
-      const items = [ChannelRTCStore.getSelectedParticipant(_private.id), ChannelRTCStore.getParticipantsVersion(_private.id)];
-      return items;
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== id) {
-    const items1 = [id];
-    cResult[3] = id;
-    cResult[4] = items1;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[4];
-  }
-  const tmpResult = tmp(504);
-  const first1 = _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, areParticipantStatesEqual), 1)[0];
-  if (cResult[5] === id.id) {
-    let tmp9;
-    let tmp12;
-    if (cResult[6] === first1) {
-      tmp9 = cResult[7];
-    }
-    dependencyMap = tmp9;
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [VoiceStateStore, MediaEngineStore, ApplicationStreamingStore];
-      cResult[8] = items2;
-      tmp12 = items2;
-    } else {
-      tmp12 = cResult[8];
-    }
-    if (cResult[9] === id) {
-      let tmp16;
-      let tmp17;
-      if (cResult[10] === tmp9) {
-        tmp16 = cResult[11];
-        tmp17 = cResult[12];
-      }
-      const tmpResult2 = tmp(504);
-      return tmpResult2.useStateFromStores(tmp12, tmp16, tmp17);
-    }
-    const fn2 = function _() {
-      const isPrivateResult = _private.isPrivate() && !VoiceStateStore.hasVideo(tmp.id) && !closure_1 && 0 === ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp.id).length && 0 === ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp.id).length && !MediaEngineStore.isVideoEnabled();
-      return isPrivateResult;
-    };
-    const items3 = [id, tmp9];
-    cResult[9] = id;
-    cResult[10] = tmp9;
-    cResult[11] = fn2;
-    cResult[12] = items3;
-    tmp17 = items3;
-    tmp16 = fn2;
-  }
-  const tmp10 = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(id.id).length > 0 || isActivityParticipant(first1);
-  cResult[5] = id.id;
-  cResult[6] = first1;
-  cResult[7] = tmp10;
-  tmp9 = tmp10;
-}) : (function useIsPrivateAudioOnlyCall(id) {
+const result = size.fileFinishedImporting("modules/video_calls/native/useIsPrivateAudioOnlyCall.tsx");
+
+export default function useIsPrivateAudioOnlyCall(id) {
   let _private;
   let closure_1;
   _require = id;
@@ -129,7 +51,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsPriva
     const isPrivateResult = _private.isPrivate() && !VoiceStateStore.hasVideo(tmp.id) && !closure_1 && 0 === ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp.id).length && 0 === ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp.id).length && !MediaEngineStore.isVideoEnabled();
     return isPrivateResult;
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/video_calls/native/useIsPrivateAudioOnlyCall.tsx");
-
-export default tmp2;
+};

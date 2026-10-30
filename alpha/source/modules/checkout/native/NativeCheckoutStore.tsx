@@ -1,19 +1,18 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7602
+// Function ID: 7603
 // Name: NativeCheckoutStore
-// Dependencies: [5, 32, 19, 7595, 5736, 7598, 558, 4920, 1266, 7599, 12, 7404, 4821, 7600, 2]
-// Exports: createNativeStore, useNativeCheckoutStoreOrNull
+// Dependencies: [5, 32, 19, 7603, 5742, 7606, 4924, 1255, 7607, 12, 7412, 4822, 7608, 2]
+// Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 7594 (NativeCheckoutStore)
-import _mod1266 from "module_1266" /* 1266 */;
-import _slicedToArray2 from "_slicedToArray" /* 4920 */;
-import PaymentConstants from "PaymentConstants" /* 5736 */;
-import ContextUtilsDefault from "ContextUtils" /* 7598 */;
+// Module 7602 (NativeCheckoutStore)
+import _mod1255 from "module_1255" /* 1255 */;
+import _slicedToArray2 from "_slicedToArray" /* 4924 */;
+import PaymentConstants from "PaymentConstants" /* 5742 */;
+import ContextUtilsDefault from "ContextUtils" /* 7606 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import OrderRecord from "OrderRecord" /* 7595 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import OrderRecord from "OrderRecord" /* 7603 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, checkoutInitParameters, closure_1, country, paymentGateway;
@@ -23,40 +22,32 @@ let first;
 const OrderStatus = PaymentConstants.OrderStatus;
 [first, closure_7] = ContextUtilsDefault();
 let context = react.createContext("unset_context");
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeCheckoutStore(cResult, shallow) {
-  if (undefined === shallow) {
-    shallow = _slicedToArray2.shallow;
-  }
-  const tmp3 = closure_7();
-  const obj = _mod1266;
-  return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
-}) : (function useNativeCheckoutStore(cResult, shallow) {
+let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutStore.tsx");
+
+export const NativeCheckoutStoreContextOrNull = context;
+export function useNativeCheckoutStore(arg0, shallow) {
   if (shallow === undefined) {
     shallow = _slicedToArray2.shallow;
   }
   const tmp3 = closure_7();
-  const obj = _mod1266;
-  return obj.useStoreWithEqualityFn(tmp3, cResult, shallow);
-});
-let result = size.fileFinishedImporting("modules/checkout/native/NativeCheckoutStore.tsx");
-
-export const NativeCheckoutStoreContextOrNull = context;
-export const useNativeCheckoutStore = tmp6;
-export function useNativeCheckoutStoreOrNull(cResult, shallow) {
+  const obj = _mod1255;
+  return obj.useStoreWithEqualityFn(tmp3, arg0, shallow);
+}
+export function useNativeCheckoutStoreOrNull(arg0, shallow) {
   if (shallow === undefined) {
     shallow = _slicedToArray2.shallow;
   }
   context = react.useContext(context);
   let storeWithEqualityFn = null;
   if ("unset_context" !== context) {
-    const obj = _mod1266;
-    storeWithEqualityFn = obj.useStoreWithEqualityFn(context, cResult, shallow);
+    const obj = _mod1255;
+    storeWithEqualityFn = obj.useStoreWithEqualityFn(context, arg0, shallow);
   }
   return storeWithEqualityFn;
 }
 export function createNativeStore(arg0) {
   ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: _asyncToGenerator, paymentGateway: react, orderRequired: OrderRecord, onOrderRetryCancellation: OrderStatus, initialSubscriptionFacet: closure_7 } = arg0);
-  let obj = _mod1266;
+  let obj = _mod1255;
   return obj.createWithEqualityFn((arg0, arg1) => {
     let tmp;
     let closure_0 = arg0;
@@ -80,7 +71,7 @@ export function createNativeStore(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -111,7 +102,7 @@ export function createNativeStore(arg0) {
                     c4 = 1;
                     c5 = 1;
                     const obj7 = { value: obj4.patchOrder(obj6), done: false };
-                    obj4 = closure_2_0(runPatchOrderLineItems[9]);
+                    obj4 = closure_2_0(runPatchOrderLineItems[8]);
                     return obj7;
                   }
                 }
@@ -156,7 +147,7 @@ export function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -177,7 +168,7 @@ export function createNativeStore(arg0) {
                   const orderLineItems = orderRecord.orderLineItems;
                   const mapped = orderLineItems.map((sku_id) => ({ sku_id: sku_id.sku_id, quantity: sku_id.quantity, purchase_type: sku_id.purchase_type, subscription_plan_id: sku_id.subscription_plan_id }));
                   let tmp14;
-                  const obj3 = closure_2_1(runPatchOrderLineItems[10]);
+                  const obj3 = closure_2_1(runPatchOrderLineItems[9]);
                   const tmp13 = runPatchOrderLineItems;
                   if (obj3.some(mapped, (subscription_plan_id) => null != subscription_plan_id.subscription_plan_id)) {
                     const obj6 = { subscription_preview: obj8 };
@@ -203,7 +194,7 @@ export function createNativeStore(arg0) {
                   c3 = 1;
                   paymentGateway = 1;
                   const obj11 = { value: obj7.createOrder(obj10), done: false };
-                  obj7 = closure_2_0(tmp13[9]);
+                  obj7 = closure_2_0(tmp13[8]);
                   return obj11;
                 }
               }
@@ -220,7 +211,7 @@ export function createNativeStore(arg0) {
               closure_130_0(obj);
             }
             paymentGateway = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp23) {
             paymentGateway = 3;
             throw tmp23;
@@ -246,7 +237,7 @@ export function createNativeStore(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -271,7 +262,7 @@ export function createNativeStore(arg0) {
                   c6 = 1;
                   c7 = 1;
                   const obj5 = { value: obj6.getOrder(id), done: false };
-                  obj6 = closure_2_0(runPatchOrderLineItems[11]);
+                  obj6 = closure_2_0(runPatchOrderLineItems[10]);
                   return obj5;
                 }
               }
@@ -312,7 +303,7 @@ export function createNativeStore(arg0) {
                       c6 = 2;
                       c7 = 1;
                       const obj8 = { value: obj3.cancelOrderSigning(id), done: false };
-                      obj3 = closure_2_0(runPatchOrderLineItems[9]);
+                      obj3 = closure_2_0(runPatchOrderLineItems[8]);
                       return obj8;
                     }
                   } else {
@@ -333,7 +324,7 @@ export function createNativeStore(arg0) {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp40) {
             c7 = 3;
             throw tmp40;
@@ -417,7 +408,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -450,8 +441,8 @@ export function createNativeStore(arg0) {
             c5 = 1;
             closure_2 = closure_4;
             const obj5 = { tags: { source: "NativeCheckoutStore_patchOrderLineItems" }, extra: obj6 };
-            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
-            const tmp23 = closure_0(runPatchOrderLineItems[12]);
+            const captureBillingException = closure_0(runPatchOrderLineItems[11]).captureBillingException;
+            const tmp23 = closure_0(runPatchOrderLineItems[11]);
             const orderRecord = closure_131_1().orderRecord;
             let id;
             const tmp24 = closure_2;
@@ -463,7 +454,7 @@ export function createNativeStore(arg0) {
             c6 = 4;
             c7 = 1;
             const obj8 = { value: obj7.showCheckoutOrderErrorModal(() => closure_2(closure_1_0, closure_1_1)), done: false };
-            obj7 = closure_0(runPatchOrderLineItems[13]);
+            obj7 = closure_0(runPatchOrderLineItems[12]);
             return obj8;
           } else if (3 === c6) {
             if (arg0 === 1) {
@@ -525,7 +516,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -557,8 +548,8 @@ export function createNativeStore(arg0) {
             c4 = 1;
             closure_1 = closure_3;
             const obj6 = { tags: { source: "NativeCheckoutStore_recreateOrder" }, extra: obj7 };
-            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
-            const tmp20 = closure_0(runPatchOrderLineItems[12]);
+            const captureBillingException = closure_0(runPatchOrderLineItems[11]).captureBillingException;
+            const tmp20 = closure_0(runPatchOrderLineItems[11]);
             const orderRecord = closure_130_1().orderRecord;
             let id;
             const tmp21 = closure_1;
@@ -570,7 +561,7 @@ export function createNativeStore(arg0) {
             c5 = 4;
             c6 = 1;
             const obj8 = { value: obj5.showCheckoutOrderErrorModal(() => c4(closure_1_0), c6), done: false };
-            obj5 = closure_0(runPatchOrderLineItems[13]);
+            obj5 = closure_0(runPatchOrderLineItems[12]);
             return obj8;
           } else {
             if (3 === c5) {
@@ -599,7 +590,7 @@ export function createNativeStore(arg0) {
             c4 = 0;
             closure_130_0({ isCreateOrderLoading: false });
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp39) {
           closure_3 = tmp39;
@@ -627,7 +618,7 @@ export function createNativeStore(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -659,8 +650,8 @@ export function createNativeStore(arg0) {
             c3 = 1;
             closure_0 = closure_2;
             const obj6 = { tags: { source: "NativeCheckoutStore_revertOrderToDraft" }, extra: obj7 };
-            const captureBillingException = closure_0(runPatchOrderLineItems[12]).captureBillingException;
-            const tmp20 = closure_0(runPatchOrderLineItems[12]);
+            const captureBillingException = closure_0(runPatchOrderLineItems[11]).captureBillingException;
+            const tmp20 = closure_0(runPatchOrderLineItems[11]);
             const orderRecord = closure_129_1().orderRecord;
             let id;
             const tmp21 = closure_0;
@@ -672,7 +663,7 @@ export function createNativeStore(arg0) {
             c4 = 4;
             c5 = 1;
             const obj8 = { value: obj5.showCheckoutOrderErrorModal(() => closure_1_6(), closure_1_6), done: false };
-            obj5 = closure_0(runPatchOrderLineItems[13]);
+            obj5 = closure_0(runPatchOrderLineItems[12]);
             return obj8;
           } else {
             if (3 === c4) {
@@ -701,7 +692,7 @@ export function createNativeStore(arg0) {
             c3 = 0;
             closure_129_0({ isCreateOrderLoading: false });
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

@@ -1,51 +1,118 @@
 // Module ID: 956
 // Function ID: 957
-// Dependencies: [946, 693, 902]
-// Exports: checkAndWarnIfIsEmbeddedBrowserExtension
+// Dependencies: [934, 681, 895]
+// Exports: isSpotlightInteraction
 
 // Module 956
-import _mod693 from "module_693" /* 693 */;
-import _mod902 from "module_902" /* 902 */;
-import _mod946 from "module_946" /* 946 */;
+import _addMeasureSpans from "_addMeasureSpans" /* 895 */;
+import _mod934 from "module_934" /* 934 */;
+import registerSpanErrorInstrumentation from "module_681" /* 681 */;
 
+let closure_2;
+
+const f79823 = (description) => {
+  description = description.description;
+  let hasItem;
+  if (description != null) {
+    hasItem = description.includes("#sentry-spotlight");
+  }
+  return hasItem;
+};
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const SpotlightBrowser = "SpotlightBrowser";
 
-export function checkAndWarnIfIsEmbeddedBrowserExtension() {
-  let flag = false;
-  if (undefined !== _mod902.WINDOW.window) {
-    const WINDOW = tmp(902).WINDOW;
-    flag = false;
-    if (!WINDOW.nw) {
-      let id;
-      if ((WINDOW.chrome || WINDOW.browser) != null) {
-        const runtime = tmp3.runtime;
-        if (runtime != null) {
-          id = runtime.id;
-        }
-      }
-      flag = false;
-      if (id) {
-        const tmpResult = _mod693;
-        const locationHref = tmpResult.getLocationHref();
-        let someResult = tmp(902).WINDOW === tmp(902).WINDOW.top;
-        if (someResult) {
-          const items = ["chrome-extension", "moz-extension", "ms-browser-extension", "safari-web-extension"];
-          someResult = items.some((item) => closure_0.startsWith("" + item + "://"));
-        }
-        flag = !someResult;
-      }
-    }
+export const INTEGRATION_NAME = "SpotlightBrowser";
+export function isSpotlightInteraction(type) {
+  let spans = "transaction" === type.type;
+  const _Boolean = Boolean;
+  if (spans) {
+    spans = type.spans;
   }
-  let flag2 = flag;
-  if (flag2) {
-    flag2 = true;
-    if (_mod946.DEBUG_BUILD) {
-      const tmpResult2 = _mod693;
-      tmpResult2.consoleSandbox(() => {
-        console.error("[Sentry] You cannot use Sentry.init() in a browser extension, see: https://docs.sentry.io/platforms/javascript/best-practices/browser-extensions/");
-      });
-      flag2 = true;
+  if (spans) {
+    const contexts = type.contexts;
+    let trace;
+    if (contexts != null) {
+      trace = contexts.trace;
     }
+    spans = trace;
   }
-  return flag2;
+  if (spans) {
+    spans = "ui.action.click" === type.contexts.trace.op;
+  }
+  if (spans) {
+    const spans2 = type.spans;
+    spans = spans2.some(f79823);
+  }
+  return _Boolean(spans);
 }
+export const spotlightBrowserIntegration = registerSpanErrorInstrumentation.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_0 = obj.sidecarUrl || "http://localhost:8969/stream";
+  let obj2 = {
+    name: SpotlightBrowser,
+    setup() {
+      if (_mod934.DEBUG_BUILD) {
+        const debug = registerSpanErrorInstrumentation.debug;
+        debug.log("Using Sidecar URL", closure_0);
+      }
+    },
+    processEvent(type) {
+      let spans = "transaction" === type.type;
+      const _Boolean = Boolean;
+      if (spans) {
+        spans = type.spans;
+      }
+      if (spans) {
+        const contexts = type.contexts;
+        let trace;
+        if (contexts != null) {
+          trace = contexts.trace;
+        }
+        spans = trace;
+      }
+      if (spans) {
+        spans = "ui.action.click" === type.contexts.trace.op;
+      }
+      if (spans) {
+        const spans2 = type.spans;
+        spans = spans2.some(f79823);
+      }
+      let tmp3 = null;
+      if (!_Boolean(spans)) {
+        tmp3 = type;
+      }
+      return tmp3;
+    },
+    afterAllSetup(on) {
+      const obj = _addMeasureSpans;
+      const nativeImplementation = obj.getNativeImplementation("fetch");
+      let c2 = 0;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj2;
+        if (c2 > 3) {
+          let debug = closure_2_0(closure_2_1[1]).debug;
+          debug.warn("[Spotlight] Disabled Sentry -> Spotlight integration due to too many failed requests:", c2);
+        } else {
+          let tmp = arg0;
+          const request = { method: "POST", body: obj2.serializeEnvelope(arg0), headers: { "Content-Type": "application/x-sentry-envelope" }, mode: "cors" };
+          obj2 = closure_2_0(closure_2_1[1]);
+          const promise = closure_1(closure_0, request);
+          promise.then((status) => {
+            const tmp = status.status >= 200 && status.status < 400;
+            if (tmp) {
+              closure_2 = 0;
+            }
+          }, (arg0) => {
+            closure_2 = closure_2 + 1;
+            const debug = closure_0(closure_1[1]).debug;
+            debug.error("Sentry SDK can't connect to Sidecar is it running? See: https://spotlightjs.com/sidecar/npx/", arg0);
+          });
+        }
+      });
+    }
+  };
+  return obj2;
+});

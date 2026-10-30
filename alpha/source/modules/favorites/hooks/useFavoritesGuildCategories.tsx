@@ -1,48 +1,23 @@
-// Module ID: 18084
-// Function ID: 18085
+// Module ID: 18145
+// Function ID: 18146
 // Name: useFavoritesGuildCategories
-// Dependencies: [4860, 558, 576, 10789, 504, 2]
+// Dependencies: [4861, 504, 10812, 2]
+// Exports: default
 
-// Module 18084 (useFavoritesGuildCategories)
-import react from "react" /* 576 */;
-import FavoritesHooks from "FavoritesHooks" /* 10789 */;
-import FavoriteStore from "FavoriteStore" /* 4860 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18145 (useFavoritesGuildCategories)
+import get_initialized from "get initialized" /* 504 */;
+import FavoritesHooks from "FavoritesHooks" /* 10812 */;
+import FavoriteStore from "FavoriteStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 function areCategoriesEqual(arr, arg1) {
   let closure_0 = arg1;
   const tmp = arr.length === arg1.length && arr.every((id, index) => id.id === closure_0[index].id && id.name === tmp[index].name);
   return tmp;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildCategories() {
-  let favoriteChannels;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let obj = react;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FavoriteStore];
-    const fn = function s() {
-      const obj = FavoritesHooks;
-      return obj.getFavoritesCategories(favoriteChannels.getFavoriteChannels());
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp4 = items;
-    tmp5 = fn;
-    tmp6 = items1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5, tmp6, areCategoriesEqual);
-}) : (function useFavoritesGuildCategories() {
+const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategories.tsx");
+
+export default function useFavoritesGuildCategories() {
   let favoriteChannels;
   let obj = get_initialized;
   const items = [FavoriteStore];
@@ -50,7 +25,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     const obj = FavoritesHooks;
     return obj.getFavoritesCategories(favoriteChannels.getFavoriteChannels());
   }, [], areCategoriesEqual);
-});
-const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategories.tsx");
-
-export default tmp2;
+};

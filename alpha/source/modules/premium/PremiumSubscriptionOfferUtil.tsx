@@ -1,23 +1,23 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8518
+// Function ID: 8519
 // Name: PremiumSubscriptionOfferUtil
-// Dependencies: [32, 19, 2056, 1391, 558, 7615, 8485, 8486, 576, 504, 2047, 8487, 8488, 1998, 8491, 2]
-// Exports: renewalInvoiceChurnDiscountInfo, useIsNUXEligible
+// Dependencies: [32, 19, 2053, 1386, 7620, 8519, 8520, 504, 2044, 8521, 8522, 1993, 8525, 2]
+// Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 8484 (PremiumSubscriptionOfferUtil)
-import react2 from "react" /* 576 */;
-import Server from "Server" /* 1998 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7615 */;
-import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8485 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8486 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8487 */;
-import ReverseTrialUtils from "ReverseTrialUtils" /* 8491 */;
+// Module 8518 (PremiumSubscriptionOfferUtil)
+import get_initialized from "get initialized" /* 504 */;
+import Server from "Server" /* 1993 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7620 */;
+import PremiumSubscriptionTrialUtil from "PremiumSubscriptionTrialUtil" /* 8519 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8520 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8521 */;
+import UserOfferActionCreators from "UserOfferActionCreators" /* 8522 */;
+import ReverseTrialUtils from "ReverseTrialUtils" /* 8525 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 2056 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -35,10 +35,8 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp;
 let unpackModuleId;
-const get_initialized = tmp(504);
-const UserOfferActionCreators = tmp(8488);
+const f92624 = () => SubscriptionStore.getPremiumTypeSubscription();
 function getDiscountInfo(active_discount_id) {
   if (authStore !== active_discount_id) {
     if (authStore2 !== active_discount_id) {
@@ -48,7 +46,7 @@ function getDiscountInfo(active_discount_id) {
         return { duration: 1, percentage: 50, discountId: active_discount_id };
       } else {
         if (unpackModuleId !== active_discount_id) {
-          if (syncedClientThemes !== active_discount_id) {
+          if (authStore3 !== active_discount_id) {
             if (closure_15 !== active_discount_id) {
               if (map1 === active_discount_id) {
                 return { duration: 1, percentage: 40, discountId: active_discount_id };
@@ -60,9 +58,9 @@ function getDiscountInfo(active_discount_id) {
                 return { duration: 12, percentage: 20, discountId: active_discount_id };
               } else if (React4 === active_discount_id) {
                 return { duration: 12, percentage: 30, discountId: active_discount_id };
-              } else if (authStore3 === active_discount_id) {
-                return { duration: 1, percentage: 40, discountId: active_discount_id };
               } else if (authStore4 === active_discount_id) {
+                return { duration: 1, percentage: 40, discountId: active_discount_id };
+              } else if (authStore5 === active_discount_id) {
                 return { duration: 3, percentage: 30, discountId: active_discount_id };
               } else if (closure_17 === active_discount_id) {
                 return { duration: 1, percentage: 30, discountId: active_discount_id };
@@ -77,105 +75,10 @@ function getDiscountInfo(active_discount_id) {
   return { duration: 1, percentage: 30, discountId: active_discount_id };
 }
 ({ PREMIUM_TIER_2_ANNUAL_20_PERCENT_DISCOUNT_ID: metroRequire, PREMIUM_TIER_2_ANNUAL_25_PERCENT_DISCOUNT_ID: metroImportDefault, PREMIUM_TIER_2_ANNUAL_V2_20_PERCENT_DISCOUNT_ID: metroImportAll, PREMIUM_TIER_2_ANNUAL_V2_30_PERCENT_DISCOUNT_ID: c9, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: c10, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: unpackModuleId, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_30_PERCENT_DISCOUNT_ID: closure_12, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID: map1, PREMIUM_TIER_2_LIKELIHOOD_DISCOUNT_ID: closure_14, PREMIUM_TIER_2_REACTIVATION_DISCOUNT_ID: closure_15, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID: closure_16, PREMIUM_TIER_2_REFERRAL_INCENTIVE_DISCOUNT_ID: closure_17, PREMIUM_GROUP_30_PERCENT_3_MONTH_DISCOUNT_ID: closure_18, PREMIUM_TIER_2_CHURN_1_MONTH_10_PERCENT_DISCOUNT_ID: closure_19, PREMIUM_TIER_2_CHURN_1_MONTH_50_PERCENT_DISCOUNT_ID: closure_20, CHURN_DISCOUNT_IDS: closure_21 } = PremiumConstants);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsInPremiumOfferExperience() {
-  const obj = usePremiumTrialOffer;
-  const premiumTrialOffer = obj.usePremiumTrialOffer();
-  const obj2 = PremiumSubscriptionTrialUtil;
-  const hasActiveTrial = obj2.useHasActiveTrial();
-  const obj3 = usePremiumDiscountOffer;
-  const premiumDiscountOffer = obj3.usePremiumDiscountOffer();
-  const obj4 = usePremiumDiscountOffer;
-  const premiumGroupDiscountOffer = obj4.usePremiumGroupDiscountOffer();
-  let tmp6 = null != premiumTrialOffer;
-  const tmp5 = closure_22();
-  if (!tmp6) {
-    tmp6 = hasActiveTrial;
-  }
-  if (!tmp6) {
-    tmp6 = null != premiumDiscountOffer;
-  }
-  if (!tmp6) {
-    tmp6 = null != premiumGroupDiscountOffer;
-  }
-  if (!tmp6) {
-    tmp6 = tmp5;
-  }
-  return tmp6;
-}) : (function useIsInPremiumOfferExperience() {
-  const obj = usePremiumTrialOffer;
-  const premiumTrialOffer = obj.usePremiumTrialOffer();
-  const obj2 = PremiumSubscriptionTrialUtil;
-  const hasActiveTrial = obj2.useHasActiveTrial();
-  const obj3 = usePremiumDiscountOffer;
-  const premiumDiscountOffer = obj3.usePremiumDiscountOffer();
-  const obj4 = usePremiumDiscountOffer;
-  const premiumGroupDiscountOffer = obj4.usePremiumGroupDiscountOffer();
-  let tmp6 = null != premiumTrialOffer;
-  const tmp5 = closure_22();
-  if (!tmp6) {
-    tmp6 = hasActiveTrial;
-  }
-  if (!tmp6) {
-    tmp6 = null != premiumDiscountOffer;
-  }
-  if (!tmp6) {
-    tmp6 = null != premiumGroupDiscountOffer;
-  }
-  if (!tmp6) {
-    tmp6 = tmp5;
-  }
-  return tmp6;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let premiumTypeSubscription;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionStore];
-    const fn = function n() {
-      return premiumTypeSubscription.getPremiumTypeSubscription();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  let prop;
-  if (stateFromStores != null) {
-    const metadata = stateFromStores.metadata;
-    if (metadata != null) {
-      prop = metadata.active_discount_expires_at;
-    }
-  }
-  if (cResult[2] !== prop) {
-    let tmp10 = null != prop;
-    if (tmp10) {
-      const _Date = Date;
-      const tmp12 = _modDef2047;
-      const tmp12Result = tmp12(Date.now());
-      tmp10 = tmp12Result <= _modDef2047(prop);
-    }
-    cResult[2] = prop;
-    cResult[3] = tmp10;
-    tmp9 = tmp10;
-  } else {
-    tmp9 = cResult[3];
-  }
-  return tmp9;
-}) : (() => {
-  let premiumTypeSubscription;
+function useHasDiscountApplied() {
   const items = [SubscriptionStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
+  const stateFromStores = obj.useStateFromStores(items, f92624);
   let prop;
   if (stateFromStores != null) {
     const metadata = stateFromStores.metadata;
@@ -186,52 +89,48 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   let tmp4 = null != prop;
   if (tmp4) {
     const _Date = Date;
-    const tmp6 = _modDef2047;
+    const tmp6 = _modDef2044;
     const tmp6Result = tmp6(Date.now());
-    tmp4 = tmp6Result <= _modDef2047(prop);
+    tmp4 = tmp6Result <= _modDef2044(prop);
   }
   return tmp4;
-});
-let closure_22 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveDiscountInfo() {
-  let premiumTypeSubscription;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+}
+const result = size.fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
+
+export function useIsInPremiumOfferExperience() {
+  const obj = usePremiumTrialOffer;
+  const premiumTrialOffer = obj.usePremiumTrialOffer();
+  const obj2 = PremiumSubscriptionTrialUtil;
+  const hasActiveTrial = obj2.useHasActiveTrial();
+  const obj3 = usePremiumDiscountOffer;
+  const premiumDiscountOffer = obj3.usePremiumDiscountOffer();
+  usePremiumDiscountOffer;
+  if (typeof useHasDiscountApplied === "function") {
     const items = [SubscriptionStore];
-    const fn = function n() {
-      return premiumTypeSubscription.getPremiumTypeSubscription();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  let active_discount_id;
-  if (stateFromStores != null) {
-    const metadata = stateFromStores.metadata;
-    if (metadata != null) {
-      active_discount_id = metadata.active_discount_id;
+    const tmpResult = get_initialized;
+    const stateFromStores = tmpResult.useStateFromStores(items, f92624);
+    let prop;
+    if (stateFromStores != null) {
+      const metadata = stateFromStores.metadata;
+      if (metadata != null) {
+        prop = metadata.active_discount_expires_at;
+      }
     }
-  }
-  if (cResult[2] !== active_discount_id) {
-    const tmp11 = getDiscountInfo(active_discount_id);
-    cResult[2] = active_discount_id;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
+    let tmp12 = null != prop;
+    if (tmp12) {
+      const _Date = Date;
+      const tmp14 = _modDef2044;
+      const tmp14Result = tmp14(Date.now());
+      tmp12 = tmp14Result <= _modDef2044(prop);
+    }
+    return null != premiumTrialOffer || hasActiveTrial || null != premiumDiscountOffer || null != tmp7 || tmp12;
   } else {
-    tmp9 = cResult[3];
+    throw new TypeError("Trying to call a non-function");
   }
-  return tmp9;
-}) : (function useActiveDiscountInfo() {
+}
+export { useHasDiscountApplied };
+export { getDiscountInfo };
+export function useActiveDiscountInfo() {
   let premiumTypeSubscription;
   const items = [SubscriptionStore];
   const obj = get_initialized;
@@ -244,108 +143,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActiveDis
     }
   }
   return getDiscountInfo(active_discount_id);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchChurnUserDiscountOffer(arg0) {
-  let closure_129_0;
-  let closure_129_2;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(8);
-  let tmp4 = useDiscountOfferDefault(authStore);
-  const tmp5 = useDiscountOfferDefault(closure_19);
-  const tmp6 = useDiscountOfferDefault(closure_20);
-  const tmp7 = useDiscountOfferDefault(unpackModuleId);
-  [tmp9, closure_129_0] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  [tmp11, tmp12] = react.useState(false);
-  let closure_1 = tmp12;
-  _slicedToArray(react.useState(false), 2);
-  [tmp14, closure_129_2] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
-  if (tmp4 == null) {
-    tmp4 = tmp5;
-  }
-  if (tmp4 == null) {
-    tmp4 = tmp6;
-  }
-  if (tmp4 == null) {
-    tmp4 = tmp7;
-  }
-  if (tmp4 == null) {
-    tmp4 = null;
-  }
-  if (null != tmp4) {
-    let tmp20;
-    if (cResult[0] !== tmp4) {
-      const obj2 = { churnUserDiscountOffer: tmp4, isFetchingChurnDiscountOffer: false };
-      cResult[0] = tmp4;
-      cResult[1] = obj2;
-      tmp20 = obj2;
-    } else {
-      tmp20 = cResult[1];
-    }
-    return tmp20;
-  } else {
-    const tmp21 = arg0;
-    if (tmp21) {
-      if (cResult[2] === tmp14) {
-        let tmp19;
-        if (cResult[3] === tmp11) {
-          tmp19 = cResult[4];
-        }
-        return tmp19;
-      }
-      const obj3 = { churnUserDiscountOffer: tmp14, isFetchingChurnDiscountOffer: tmp11 };
-      cResult[2] = tmp14;
-      cResult[3] = tmp11;
-      cResult[4] = obj3;
-      tmp19 = obj3;
-    } else {
-      function onFetchComplete() {
-
-      }
-      const tmp15 = tmp11 || tmp9;
-      if (!tmp15) {
-        tmp12(true);
-        const tmpResult = UserOfferActionCreators;
-        const churnDiscountOffer = tmpResult.fetchChurnDiscountOffer();
-        const nextPromise = churnDiscountOffer.then((result) => {
-          closure_1_2(result);
-          if (typeof onFetchComplete === "function") {
-            closure_1_0(true);
-            tmp12(false);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        });
-        nextPromise.catch(() => {
-          if (typeof onFetchComplete === "function") {
-            closure_1_0(true);
-            tmp12(false);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        });
-      }
-      if (cResult[5] === tmp14) {
-        let tmp18;
-        if (cResult[6] === tmp11) {
-          tmp18 = cResult[7];
-        }
-        return tmp18;
-      }
-      const obj4 = { churnUserDiscountOffer: tmp14, isFetchingChurnDiscountOffer: tmp11 };
-      cResult[5] = tmp14;
-      cResult[6] = tmp11;
-      cResult[7] = obj4;
-      tmp18 = obj4;
-    }
-  }
-}) : (function useFetchChurnUserDiscountOffer(arg0) {
+}
+export function useFetchChurnUserDiscountOffer(arg0) {
   let closure_129_0;
   let closure_129_2;
   let tmp10;
@@ -400,76 +199,43 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchChur
       return { churnUserDiscountOffer: tmp12, isFetchingChurnDiscountOffer: tmp9 };
     }
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldFetchChurnOffer() {
-  let premiumTypeSubscription;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionStore];
-    const fn = function n() {
-      return premiumTypeSubscription.getPremiumTypeSubscription();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  let hasPremiumNitroMonthly = null !== stateFromStores;
-  const tmp8 = closure_22();
-  if (hasPremiumNitroMonthly) {
-    hasPremiumNitroMonthly = stateFromStores.hasPremiumNitroMonthly;
-  }
-  if (hasPremiumNitroMonthly) {
-    hasPremiumNitroMonthly = !tmp8;
-  }
-  if (hasPremiumNitroMonthly) {
-    let hasActiveTrial;
-    if (stateFromStores != null) {
-      hasActiveTrial = stateFromStores.hasActiveTrial;
-    }
-    hasPremiumNitroMonthly = !hasActiveTrial;
-  }
-  return hasPremiumNitroMonthly;
-}) : (function useShouldFetchChurnOffer() {
-  let premiumTypeSubscription;
+}
+export function useShouldFetchChurnOffer() {
   const items = [SubscriptionStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  let hasPremiumNitroMonthly = null !== stateFromStores;
-  const tmp2 = closure_22();
-  if (hasPremiumNitroMonthly) {
-    hasPremiumNitroMonthly = stateFromStores.hasPremiumNitroMonthly;
-  }
-  if (hasPremiumNitroMonthly) {
-    hasPremiumNitroMonthly = !tmp2;
-  }
-  if (hasPremiumNitroMonthly) {
-    let hasActiveTrial;
-    if (stateFromStores != null) {
-      hasActiveTrial = stateFromStores.hasActiveTrial;
+  const stateFromStores = obj.useStateFromStores(items, () => SubscriptionStore.getPremiumTypeSubscription());
+  const tmp3 = SubscriptionStore;
+  if (typeof useHasDiscountApplied === "function") {
+    const items1 = [tmp3];
+    const tmpResult = get_initialized;
+    const stateFromStores1 = tmpResult.useStateFromStores(items1, f92624);
+    let prop;
+    if (stateFromStores1 != null) {
+      const metadata = stateFromStores1.metadata;
+      if (metadata != null) {
+        prop = metadata.active_discount_expires_at;
+      }
     }
-    hasPremiumNitroMonthly = !hasActiveTrial;
+    let tmp8 = null != prop;
+    if (tmp8) {
+      const _Date = Date;
+      const tmp10 = _modDef2044;
+      const tmp10Result = tmp10(Date.now());
+      tmp8 = tmp10Result <= _modDef2044(prop);
+    }
+    let tmp13 = null !== stateFromStores && stateFromStores.hasPremiumNitroMonthly && !tmp8;
+    if (tmp13) {
+      let hasActiveTrial;
+      if (stateFromStores != null) {
+        hasActiveTrial = stateFromStores.hasActiveTrial;
+      }
+      tmp13 = !hasActiveTrial;
+    }
+    return tmp13;
+  } else {
+    throw new TypeError("Trying to call a non-function");
   }
-  return hasPremiumNitroMonthly;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/premium/PremiumSubscriptionOfferUtil.tsx");
-
-export const useIsInPremiumOfferExperience = tmp3;
-export const useHasDiscountApplied = tmp4;
-export { getDiscountInfo };
-export const useActiveDiscountInfo = tmp5;
-export const useFetchChurnUserDiscountOffer = tmp6;
-export const useShouldFetchChurnOffer = tmp7;
+}
 export function renewalInvoiceChurnDiscountInfo(arg0) {
   const iter = arg0.invoiceItems[Symbol.iterator]();
   while (iter !== undefined) {

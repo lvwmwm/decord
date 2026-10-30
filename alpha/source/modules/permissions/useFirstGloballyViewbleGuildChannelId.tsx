@@ -1,78 +1,28 @@
-// Module ID: 18003
-// Function ID: 18004
+// Module ID: 18066
+// Function ID: 18067
 // Name: useFirstGloballyViewbleGuildChannelId
-// Dependencies: [4935, 1095, 558, 576, 4942, 504, 2]
+// Dependencies: [4939, 1083, 504, 4946, 2]
+// Exports: useFirstGloballyViewbleGuildChannelId
 
-// Module 18003 (useFirstGloballyViewbleGuildChannelId)
-import Constants from "Constants" /* 1095 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18066 (useFirstGloballyViewbleGuildChannelId)
+import Constants from "Constants" /* 1083 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGloballyViewbleGuildChannelId(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      if (null != closure_0) {
-        const selectableChannels = GuildChannelStore.getSelectableChannels(tmp);
-        for (const item10010 of selectableChannels) {
-          let channel = item10010.channel;
-          let obj2 = PermissionUtilsAll;
-          if (obj2.canEveryone(Permissions.VIEW_CHANNEL, channel)) {
-            let id = channel.id;
-            obj.return();
-            return id;
-          }
-        }
-        let id1;
-        if (selectableChannels != null) {
-          const first = selectableChannels[0];
-          if (first != null) {
-            id1 = first.channel.id;
-          }
-        }
-        return id1;
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useFirstGloballyViewbleGuildChannelId(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/permissions/useFirstGloballyViewbleGuildChannelId.tsx");
+
+export function useFirstGloballyViewbleGuildChannelId(guildId) {
+  _require = guildId;
   const obj = require("get initialized");
   const items = [GuildChannelStore];
-  const items1 = [arg0];
+  const items1 = [guildId];
   return obj.useStateFromStores(items, () => {
-    if (null != closure_0) {
+    if (null != guildId) {
       const selectableChannels = GuildChannelStore.getSelectableChannels(tmp);
       for (const item10010 of selectableChannels) {
         let channel = item10010.channel;
@@ -93,7 +43,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstGl
       return id1;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/permissions/useFirstGloballyViewbleGuildChannelId.tsx");
-
-export const useFirstGloballyViewbleGuildChannelId = tmp2;
+}

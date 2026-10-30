@@ -1,20 +1,20 @@
-// Module ID: 12817
-// Function ID: 12818
+// Module ID: 12968
+// Function ID: 12969
 // Name: ConjurePerfTraceFormat
-// Dependencies: [32, 10846, 12818, 2]
+// Dependencies: [32, 10869, 12969, 2]
 // Exports: formatDuration, formatSpanCount, formatTokens, perfCategoryTotal, perfModelSummary, perfNodeSections, perfSmallerLabel, perfTickLabel, perfTraceDuration, perfTraceSummary
 
-// Module 12817 (ConjurePerfTraceFormat)
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10846 */;
-import ConjureTimeFormat from "ConjureTimeFormat" /* 12818 */;
+// Module 12968 (ConjurePerfTraceFormat)
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10869 */;
+import ConjureTimeFormat from "ConjureTimeFormat" /* 12969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
-function formatPerfMs(totalMs) {
+function formatPerfMs(start) {
   let combined;
-  const rounded = Math.round(totalMs);
+  const rounded = Math.round(start);
   if (rounded < 1000) {
     const _HermesInternal2 = HermesInternal;
     combined = "" + rounded + "ms";

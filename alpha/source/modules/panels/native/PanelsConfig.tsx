@@ -1,11 +1,11 @@
-// Module ID: 17942
-// Function ID: 17943
+// Module ID: 18001
+// Function ID: 18002
 // Name: PanelsConfig
-// Dependencies: [1199, 2]
+// Dependencies: [1188, 2]
 // Exports: isTimingConfig
 
-// Module 17942 (PanelsConfig)
-import native from "native" /* 1199 */;
+// Module 18001 (PanelsConfig)
+import native from "native" /* 1188 */;
 import size from "module_2" /* 2 */;
 
 function isTimingConfig(duration) {

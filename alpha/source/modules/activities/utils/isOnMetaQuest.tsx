@@ -1,14 +1,13 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14825
+// Function ID: 14826
 // Name: isOnMetaQuest
-// Dependencies: [1084, 2]
+// Dependencies: [9718, 2]
 // Exports: default
 
-// Module 14790 (isOnMetaQuest)
-import Constants from "Constants" /* 1084 */;
+// Module 14825 (isOnMetaQuest)
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
 import size from "module_2" /* 2 */;
 
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
 const result = size.fileFinishedImporting("modules/activities/utils/isOnMetaQuest.tsx");
 
 export default function isOnMetaQuest(platform) {
@@ -16,5 +15,5 @@ export default function isOnMetaQuest(platform) {
   if (platform != null) {
     platform = platform.platform;
   }
-  return platform === ActivityGamePlatforms.META_QUEST;
+  return platform === ActivityGamePlatforms.ActivityGamePlatforms.META_QUEST;
 };

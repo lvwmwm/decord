@@ -1,21 +1,21 @@
-// Module ID: 10899
-// Function ID: 10900
+// Module ID: 10922
+// Function ID: 10923
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1389, 6831, 10824, 1084, 10830, 1294, 10832, 584, 8710, 10900, 10852, 10902, 2]
+// Dependencies: [5, 1384, 6838, 10847, 1072, 10853, 1283, 10855, 572, 8744, 10923, 10875, 10925, 2]
 // Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
 
-// Module 10899 (ConjurePublishActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10830 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10852 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10900 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10902 */;
+// Module 10922 (ConjurePublishActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10853 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10855 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10875 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10923 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 10925 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
+import UserStore from "UserStore" /* 1384 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10847 */;
 import size from "module_2" /* 2 */;
 
 let also_remove_preview_bot, closure_4, ok;
@@ -42,7 +42,7 @@ let obj = function _unpublishProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ let obj = function _unpublishProject() {
               ({ guildId: c1, alsoRemovePreviewBot: c2 } = closure_1);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -134,7 +134,7 @@ obj = function _unpublishUserApp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -222,7 +222,7 @@ obj = function _refreshPublishedProject() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -260,7 +260,7 @@ obj = function _refreshPublishedProject() {
             obj8 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -360,7 +360,7 @@ obj = function _refreshPublishedProject() {
             return obj;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp53) {
         c5 = 3;
@@ -389,7 +389,7 @@ obj = function _refreshPublishedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -431,7 +431,7 @@ obj = function _refreshPublishedApplication() {
               closure_132_14(applicationId, closure_1, closure_2);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c6 = 3;

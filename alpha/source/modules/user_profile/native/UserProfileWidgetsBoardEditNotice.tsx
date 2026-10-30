@@ -1,20 +1,21 @@
-// Module ID: 14868
-// Function ID: 14869
+// Module ID: 14904
+// Function ID: 14905
 // Name: UserProfileWidgetsBoardEditNotice
-// Dependencies: [19, 17, 4854, 21, 5005, 587, 558, 576, 8772, 4841, 10475, 5724, 5271, 1125, 6968, 6991, 2]
+// Dependencies: [19, 17, 4855, 21, 5009, 575, 8806, 10500, 4842, 5730, 5619, 1114, 6974, 7048, 2]
+// Exports: default
 
-// Module 14868 (UserProfileWidgetsBoardEditNotice)
+// Module 14904 (UserProfileWidgetsBoardEditNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import XSmallIcon from "XSmallIcon" /* 6991 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8772 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import XSmallIcon from "XSmallIcon" /* 7048 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8806 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10500 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,85 +24,15 @@ let _require, importDefault;
 let hasOwnProperty;
 let metroRequire;
 let obj2;
-let tmp5;
-const SelectedDismissibleContentDefault = tmp5(10475);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { container: obj2, icon: { flexShrink: 0, marginTop: 2 }, text: { flex: 1 }, closeButton: { flexShrink: 0 } };
 obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_16 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileWidgetsBoardEditNotice() {
-  let card;
-  let closure_0;
-  let first;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  const tmp4 = closure_7();
-  _require = tmp4;
-  const tmp6 = UserProfileSharedStylesDefault();
-  importDefault = tmp6;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [tmp(4841).DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === tmp6) {
-    let tmp8;
-    if (cResult[2] === tmp4) {
-      tmp8 = cResult[3];
-    }
-    return tmp8;
-  }
-  let obj2 = {
-    contentTypes: first,
-    bypassAutoDismiss: true,
-    children(markAsDismissed) {
-      let CircleInformationIcon;
-      let intl;
-      let intl2;
-      let items;
-      let items1;
-      let obj3;
-      markAsDismissed = markAsDismissed.markAsDismissed;
-      let tmp3 = null;
-      if (markAsDismissed.visibleContent === dismissible_content.DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE) {
-        const obj = { style: items, children: items1 };
-        items = [card.card, closure_0.container];
-        const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
-        obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5724).CircleInformationIcon;
-        items1 = [hasOwnProperty(View, obj2), , ];
-        const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5271).Text;
-        intl = tmp(1125).intl;
-        items1[1] = hasOwnProperty(Text, obj4);
-        const obj5 = {
-          accessibilityRole: "button",
-          accessibilityLabel: intl2.string(intl3.t.WAI6xu),
-          onPress() {
-              return markAsDismissed(constants.USER_DISMISS);
-            },
-          style: closure_0.closeButton,
-          children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
-        };
-        const PressableOpacity = tmp(6968).PressableOpacity;
-        intl2 = tmp(1125).intl;
-        items1[2] = hasOwnProperty(PressableOpacity, obj5);
-        tmp3 = metroRequire(View, obj);
-      }
-      return tmp3;
-    }
-  };
-  const tmp9 = closure_5(SelectedDismissibleContentDefault, obj2);
-  cResult[1] = tmp6;
-  cResult[2] = tmp4;
-  cResult[3] = tmp9;
-  tmp8 = tmp9;
-}) : (function UserProfileWidgetsBoardEditNotice() {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardEditNotice.tsx");
+
+export default function UserProfileWidgetsBoardEditNotice() {
   let card;
   let closure_0;
   let items;
@@ -124,11 +55,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
         items = [card.card, closure_0.container];
         const obj2 = { style: closure_0.icon, children: hasOwnProperty(CircleInformationIcon, obj3) };
         obj3 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
-        CircleInformationIcon = tmp(5724).CircleInformationIcon;
+        CircleInformationIcon = tmp(5730).CircleInformationIcon;
         items1 = [hasOwnProperty(View, obj2), , ];
         const obj4 = { style: closure_0.text, variant: "text-sm/medium", color: "text-strong", children: intl.string(intl3.t.kv8ULD) };
-        const Text = tmp(5271).Text;
-        intl = tmp(1125).intl;
+        const Text = tmp(5619).Text;
+        intl = tmp(1114).intl;
         items1[1] = hasOwnProperty(Text, obj4);
         const obj5 = {
           accessibilityRole: "button",
@@ -139,8 +70,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
           style: closure_0.closeButton,
           children: hasOwnProperty(XSmallIcon.XSmallIcon, { size: "sm" })
         };
-        const PressableOpacity = tmp(6968).PressableOpacity;
-        intl2 = tmp(1125).intl;
+        const PressableOpacity = tmp(6974).PressableOpacity;
+        intl2 = tmp(1114).intl;
         items1[2] = hasOwnProperty(PressableOpacity, obj5);
         tmp3 = metroRequire(View, obj);
       }
@@ -150,7 +81,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileW
   const tmp = SelectedDismissibleContentDefault;
   items = [require("dismissible_content").DismissibleContent.USER_PROFILE_WIDGETS_BOARD_MOBILE_EDIT_NOTICE];
   return closure_5(tmp, obj);
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoardEditNotice.tsx");
-
-export default tmp4;
+};

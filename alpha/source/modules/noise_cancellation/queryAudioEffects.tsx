@@ -1,15 +1,15 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15910
+// Function ID: 15911
 // Name: queryAudioEffects
-// Dependencies: [5, 1084, 4, 1382, 15814, 4819, 584, 1264, 2]
+// Dependencies: [5, 1072, 4, 1377, 15853, 4820, 572, 1253, 2]
 // Exports: default
 
-// Module 15871 (queryAudioEffects)
+// Module 15910 (queryAudioEffects)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 1084 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
-import _modDef15814 from "module_15814" /* 15814 */;
+import Constants from "Constants" /* 1072 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
+import _modDef15853 from "module_15853" /* 15853 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let obj = function _queryAudioEffects() {
         const error1 = new Error("Audio effects querying not supported on non-Windows platforms");
         return reject(error1);
       }
-      const obj5 = _modDef15814;
+      const obj5 = _modDef15853;
       if (!obj5.satisfies(DiscordNativeDefault.os.release, ">=10.0.22000")) {
         const _Error2 = Error;
         const self3 = this;
@@ -50,7 +50,7 @@ let obj = function _queryAudioEffects() {
       closure_132_5.error("Failed to probe audio effects for device", closure_2);
       const obj3 = closure_132_1(closure_132_2[7]);
       obj3.track(closure_132_4.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
-      value = await "IconComponent";
+      value = await "HermesInternal";
       const obj10 = { type: "MEDIA_ENGINE_SET_DEVICE_AUDIO_EFFECTS", deviceId };
       const dispatch = closure_132_1(closure_132_2[6]).dispatch;
       closure_132_1(closure_132_2[6]);

@@ -1,22 +1,22 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16247
+// Function ID: 16248
 // Name: validateConjureAppFrame
-// Dependencies: [2043, 6831, 4857, 1084, 5640, 5664, 16208, 6841, 9300, 2]
+// Dependencies: [2040, 6838, 4858, 1072, 5646, 5670, 16248, 6848, 9313, 2]
 // Exports: default, isUserScopedConjureApplication, isVoiceChannelInFrameGuild
 
-// Module 16207 (validateConjureAppFrame)
-import Constants from "Constants" /* 1084 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
-import isConjureApplicationDefault from "isConjureApplication" /* 6841 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16208 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+// Module 16247 (validateConjureAppFrame)
+import Constants from "Constants" /* 1072 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5646 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 6848 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 16248 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const RPCErrorDefault = tmp(9300);
+const RPCErrorDefault = tmp(9313);
 const RPCErrors = Constants.RPCErrors;
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateConjureAppFrame.tsx");
 

@@ -1,75 +1,17 @@
-// Module ID: 17714
-// Function ID: 17715
-// Name: useScrollToInitialIndexOnce
-// Dependencies: [19, 558, 576, 2]
+// Module ID: 17785
+// Function ID: 17786
+// Name: react
+// Dependencies: [19, 2]
+// Exports: useScrollToInitialIndexOnce
 
-// Module 17714 (useScrollToInitialIndexOnce)
-import react2 from "react" /* 576 */;
+// Module 17785 (react)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToInitialIndexOnce(initialScrollIndex) {
-  let afterMs;
-  let resetKey;
-  let obj = react2;
-  const cResult = obj.c(7);
-  initialScrollIndex = initialScrollIndex.initialScrollIndex;
-  const shouldScroll = initialScrollIndex.shouldScroll;
-  const flashListRef = initialScrollIndex.flashListRef;
-  ({ afterMs, resetKey } = initialScrollIndex);
-  let num = 100;
-  if (undefined !== afterMs) {
-    num = afterMs;
-  }
-  let closure_5 = react.useRef(false);
-  let closure_6 = react.useRef(resetKey);
-  const obj2 = react;
-  if (cResult[0] === num) {
-    if (cResult[1] === flashListRef) {
-      if (cResult[2] === initialScrollIndex) {
-        if (cResult[3] === resetKey) {
-          let tmp2;
-          let tmp3;
-          if (cResult[4] === shouldScroll) {
-            tmp2 = cResult[5];
-            tmp3 = cResult[6];
-          }
-          const effect = obj2.useEffect(tmp2, tmp3);
-        }
-      }
-    }
-  }
-  const fn = function l() {
-    let index;
-    if (ref2.current !== resetKey) {
-      ref2.current = resetKey;
-      ref.current = false;
-    }
-    const tmp2 = null != initialScrollIndex && shouldScroll && !ref.current;
-    if (tmp2) {
-      ref.current = true;
-      const _setTimeout = setTimeout;
-      const timerId = setTimeout(() => {
-        const current = ref.current;
-        if (current != null) {
-          const obj = { animated: true, index };
-          current.scrollToIndex(obj);
-        }
-      }, num);
-    }
-  };
-  const items = [shouldScroll, initialScrollIndex, num, flashListRef, resetKey];
-  cResult[0] = num;
-  cResult[1] = flashListRef;
-  cResult[2] = initialScrollIndex;
-  cResult[3] = resetKey;
-  cResult[4] = shouldScroll;
-  cResult[5] = fn;
-  cResult[6] = items;
-  tmp3 = items;
-  tmp2 = fn;
-}) : (function useScrollToInitialIndexOnce(initialScrollIndex) {
+const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");
+
+export const INITIAL_SCROLL_DELAY_MS = 100;
+export function useScrollToInitialIndexOnce(initialScrollIndex) {
   initialScrollIndex = initialScrollIndex.initialScrollIndex;
   const shouldScroll = initialScrollIndex.shouldScroll;
   const flashListRef = initialScrollIndex.flashListRef;
@@ -100,8 +42,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScrollToI
       }, num);
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useScrollToInitialIndexOnce.tsx");
-
-export const INITIAL_SCROLL_DELAY_MS = 100;
-export const useScrollToInitialIndexOnce = tmp2;
+}

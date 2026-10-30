@@ -1,95 +1,26 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14142
+// Function ID: 14143
 // Name: GuildIconPile
-// Dependencies: [19, 21, 558, 576, 6943, 12613, 13225, 13224, 9468, 2]
+// Dependencies: [19, 21, 6951, 13374, 12764, 9487, 13375, 2]
+// Exports: GuildIconPile
 
-// Module 14010 (GuildIconPile)
-import react2 from "react" /* 576 */;
-import GuildIcon from "GuildIcon" /* 6943 */;
-import ClipView from "ClipView" /* 9468 */;
-import ListUtils from "ListUtils" /* 12613 */;
-import Pile2 from "Pile" /* 13224 */;
+// Module 14142 (GuildIconPile)
+import GuildIcon from "GuildIcon" /* 6951 */;
+import ClipView from "ClipView" /* 9487 */;
+import ListUtils from "ListUtils" /* 12764 */;
+import Pile2 from "Pile" /* 13374 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import size_mod from "module_2" /* 2 */;
+import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(13225);
+const PileOverflow = tmp2(13375);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildIconPile(size) {
-  let children;
-  let items;
-  let names;
-  let totalCount;
-  const obj = react2;
-  const cResult = obj.c(13);
-  ({ totalCount, names, children } = size);
-  const Children = react.Children;
-  size = size.size;
-  const countResult = Children.count(children);
-  const tmp5 = GuildIcon.ImageSizes[size];
-  if (cResult[0] === names) {
-    let tmp6;
-    if (cResult[1] === totalCount) {
-      tmp6 = cResult[2];
-    }
-    let num3 = 3;
-    if (tmp5 <= 40) {
-      num3 = 2;
-    }
-    if (cResult[3] === countResult) {
-      if (cResult[4] === tmp5) {
-        let tmp8;
-        if (cResult[5] === totalCount) {
-          tmp8 = cResult[6];
-        }
-        if (cResult[7] === children) {
-          if (cResult[8] === tmp5) {
-            if (cResult[9] === tmp6) {
-              if (cResult[10] === num3) {
-                let tmp12;
-                if (cResult[11] === tmp8) {
-                  tmp12 = cResult[12];
-                }
-                return tmp12;
-              }
-            }
-          }
-        }
-        const obj2 = { "aria-label": tmp6, shape: ClipView.CutoutShape.RoundedRect, size: tmp5, gap: num3, depthX: 0.25, children: items };
-        const Pile = tmp(13224).Pile;
-        items = [children, tmp8];
-        const tmp14 = React3(Pile, obj2);
-        cResult[7] = children;
-        cResult[8] = tmp5;
-        cResult[9] = tmp6;
-        cResult[10] = num3;
-        cResult[11] = tmp8;
-        cResult[12] = tmp14;
-        tmp12 = tmp14;
-      }
-    }
-    let tmp10 = null != totalCount && countResult < totalCount;
-    if (tmp10) {
-      const obj3 = { size: tmp5, borderRadius: tmp5 / 3, value: totalCount - countResult };
-      tmp10 = _false(tmp(13225).PileOverflow, obj3);
-    }
-    cResult[3] = countResult;
-    cResult[4] = tmp5;
-    cResult[5] = totalCount;
-    cResult[6] = tmp10;
-    tmp8 = tmp10;
-  }
-  const tmpResult = ListUtils;
-  const listSummaryLabel = tmpResult.getListSummaryLabel(names, totalCount);
-  cResult[0] = names;
-  cResult[1] = totalCount;
-  cResult[2] = listSummaryLabel;
-  tmp6 = listSummaryLabel;
-}) : (function GuildIconPile(arg0) {
+const result = size.fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
+
+export function GuildIconPile(arg0) {
   let children;
   let items;
   let names;
@@ -117,8 +48,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildIconP
   }
   items[1] = tmp6;
   return tmp5(Pile, obj);
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/Pile/native/GuildIconPile.native.tsx");
-
-export const GuildIconPile = tmp3;
+}

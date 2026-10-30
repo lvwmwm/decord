@@ -1,17 +1,17 @@
-// Module ID: 8418
-// Function ID: 8419
+// Module ID: 8452
+// Function ID: 8453
 // Name: UserPremiumGuildSubscriptionSystemMessage
-// Dependencies: [8419, 8373, 8375, 1125, 8377, 2]
+// Dependencies: [8453, 8410, 8412, 1114, 8414, 2]
 // Exports: createUserPremiumGuildSubscriptionSystemMessage
 
-// Module 8418 (UserPremiumGuildSubscriptionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8419 */;
+// Module 8452 (UserPremiumGuildSubscriptionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8410 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8412 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8453 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const createCommonMessageDefault = tmp(8377);
+const createCommonMessageDefault = tmp(8414);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionSystemMessage.tsx");
 
 export function createUserPremiumGuildSubscriptionSystemMessage(message) {
@@ -23,13 +23,13 @@ export function createUserPremiumGuildSubscriptionSystemMessage(message) {
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const tmp6 = formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle });
   if (tmp3 > 1) {
-    const intl2 = tmp4(1125).intl;
+    const intl2 = tmp4(1114).intl;
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6, numSubscriptions: tmp3 };
-    formatToPartsResult = intl2.formatToParts(tmp4(1125).t.rbj006, obj2);
+    formatToPartsResult = intl2.formatToParts(tmp4(1114).t.rbj006, obj2);
   } else {
-    const intl = tmp4(1125).intl;
+    const intl = tmp4(1114).intl;
     const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp6 };
-    formatToPartsResult = intl.formatToParts(tmp4(1125).t.ihxM9x, obj3);
+    formatToPartsResult = intl.formatToParts(tmp4(1114).t.ihxM9x, obj3);
   }
   const obj4 = { content: formatToPartsResult };
   const merged = Object.assign(createCommonMessageDefault(message));

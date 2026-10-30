@@ -1,17 +1,17 @@
-// Module ID: 9793
-// Function ID: 9794
+// Module ID: 9819
+// Function ID: 9820
 // Name: ForumActionCreators
-// Dependencies: [5, 1084, 5946, 1125, 584, 1294, 8341, 9794, 9795, 9796, 8343, 2]
+// Dependencies: [5, 1072, 5953, 1114, 572, 1283, 8194, 9820, 9821, 9822, 8196, 2]
 
-// Module 9793 (ForumActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl3 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9794 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9795 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9796 */;
+// Module 9819 (ForumActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl3 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9820 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9821 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9822 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, errors, title;
@@ -71,7 +71,7 @@ let body = function _withErrorHandling() {
           show(obj6);
         }
       }
-      await "IconComponent";
+      await "HermesInternal";
       return value;
     })();
   });
@@ -112,9 +112,9 @@ body = {
     }
     tmpResult = HTTPUtils;
     let closure_0 = put(request);
-    const intl = tmp(1125).intl;
+    const intl = tmp(1114).intl;
     const stringResult = intl.string(intl3.t.T8sBLJ);
-    const intl2 = tmp(1125).intl;
+    const intl2 = tmp(1114).intl;
     withErrorHandling(() => closure_0, stringResult, intl2.string(intl3.t.imcb5u));
   },
   deleteForumTag(channelId, id) {
@@ -190,7 +190,7 @@ body = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ body = {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           if (0 === c2) {

@@ -1,21 +1,20 @@
-// Module ID: 6892
-// Function ID: 6893
+// Module ID: 6899
+// Function ID: 6900
 // Name: QuarantineModeInfoAlert
-// Dependencies: [19, 1084, 21, 5005, 6710, 587, 558, 576, 1125, 1199, 5271, 6018, 2]
+// Dependencies: [19, 1072, 21, 5009, 6717, 575, 6025, 1188, 1114, 5619, 2]
+// Exports: default
 
-// Module 6892 (QuarantineModeInfoAlert)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import AlertDefault from "Alert" /* 6018 */;
+// Module 6899 (QuarantineModeInfoAlert)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AlertDefault from "Alert" /* 6025 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles from "TextStyles" /* 6710 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,70 +28,9 @@ obj2 = { textAlign: "center", marginVertical: 12 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_5 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuarantineModeInfoAlert(onClose) {
-  let first;
-  let items;
-  let tmp10;
-  let tmp12;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(10);
-  onClose = onClose.onClose;
-  const tmp4 = closure_5();
-  const header = tmp4.header;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl3.t.EouHwv);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.header) {
-    const obj2 = { style: header, children: first };
-    const tmp9 = _false(native.LegacyText, obj2);
-    cResult[1] = tmp4.header;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const text = tmp4.text;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl3.t.zNPBMA);
-    cResult[3] = stringResult1;
-    tmp10 = stringResult1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.text) {
-    const obj3 = { style: text, variant: "text-md/medium", children: tmp10 };
-    const tmp14 = _false(Text_Text.Text, obj3);
-    cResult[4] = tmp4.text;
-    cResult[5] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === onClose) {
-    if (cResult[7] === tmp7) {
-      let tmp15;
-      if (cResult[8] === tmp12) {
-        tmp15 = cResult[9];
-      }
-      return tmp15;
-    }
-  }
-  const obj4 = { onClose, children: items };
-  items = [tmp7, tmp12];
-  const tmp16 = React3(AlertDefault, obj4);
-  cResult[6] = onClose;
-  cResult[7] = tmp7;
-  cResult[8] = tmp12;
-  cResult[9] = tmp16;
-  tmp15 = tmp16;
-}) : (function QuarantineModeInfoAlert(onClose) {
+const result = size.fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
+
+export default function QuarantineModeInfoAlert(onClose) {
   let intl;
   let intl2;
   let items;
@@ -109,7 +47,4 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuarantineMo
   intl2 = intl3.intl;
   items[1] = _false(Text, obj3);
   return React3(tmp2, obj);
-});
-const result = size.fileFinishedImporting("modules/quarantine/native/QuarantineModeInfoAlert.tsx");
-
-export default tmp7;
+};

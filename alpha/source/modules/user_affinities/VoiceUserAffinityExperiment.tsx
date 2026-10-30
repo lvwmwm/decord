@@ -1,34 +1,15 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8532
+// Function ID: 8533
 // Name: VoiceUserAffinityExperiment
-// Dependencies: [1453, 558, 576, 2]
-// Exports: getVoiceUserAffinitySortType
+// Dependencies: [1448, 2]
+// Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 8498 (VoiceUserAffinityExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8532 (VoiceUserAffinityExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2025-08-voice-user-affinity", defaultConfig: { enabled: false }, variations: { 0: { enabled: false, sortType: "Array" }, 1: { enabled: true, sortType: "vc_probability" }, 2: { enabled: true, sortType: "communication_probability" } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceUserAffinitySortType(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2).sortType;
-}) : (function useVoiceUserAffinitySortType(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj).sortType;
-});
 const result = size.fileFinishedImporting("modules/user_affinities/VoiceUserAffinityExperiment.tsx");
 
 export default apexExperiment;
@@ -36,4 +17,7 @@ export function getVoiceUserAffinitySortType(location) {
   const obj = { location };
   return apexExperiment.getConfig(obj).sortType;
 }
-export const useVoiceUserAffinitySortType = tmp3;
+export function useVoiceUserAffinitySortType(useVoiceChannelUsers) {
+  const obj = { location: useVoiceChannelUsers };
+  return apexExperiment.useConfig(obj).sortType;
+}

@@ -1,118 +1,27 @@
-// Module ID: 13008
-// Function ID: 13009
+// Module ID: 13159
+// Function ID: 13160
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 13000, 21, 5005, 587, 558, 576, 5707, 5271, 6015, 13002, 1503, 11415, 5701, 1125, 7958, 7959, 2404, 13009, 13007, 6754, 5281, 2]
+// Dependencies: [5, 32, 19, 13151, 21, 5009, 13153, 1498, 11618, 5707, 1114, 7964, 7965, 6022, 575, 5619, 2405, 13160, 13161, 13158, 6761, 5629, 2]
 // Exports: AcceptStep
 
-// Module 13008 (AcceptStep)
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
+// Module 13159 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13000 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13151 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, id;
 
-let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-let obj2;
-const View = react_native.View;
-({ closeGameOrganizationJoinModal: metroImportDefault, GameOrganizationJoinScenes: metroImportAll } = GameOrganizationJoinModalConstants);
-({ jsx: c9, jsxs: c10 } = Fragment);
-let obj = { text: { textAlign: "center" }, benefitCard: { flex: 1 }, benefitImage: obj2 };
-obj2 = { width: "100%", aspectRatio: 1.7, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_11 = createStyles.createStyles(obj);
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function BenefitCard(arg0) {
-  let img;
-  let items;
-  let obj5;
-  let text;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(9);
-  ({ text, img } = arg0);
-  const tmp4 = closure_11();
-  if (cResult[0] === img) {
-    let tmp5;
-    let tmp11;
-    if (cResult[1] === tmp4.benefitImage) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] !== text) {
-      const obj2 = { variant: "text-md/normal", color: "text-muted", children: text };
-      const tmp13 = React4(Text_Text.Text, obj2);
-      cResult[3] = text;
-      cResult[4] = tmp13;
-      tmp11 = tmp13;
-    } else {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] === tmp4.benefitCard) {
-      if (cResult[6] === tmp5) {
-        let tmp14;
-        if (cResult[7] === tmp11) {
-          tmp14 = cResult[8];
-        }
-        return tmp14;
-      }
-    }
-    const obj3 = { spacing: nativeDefault.space.PX_16, style: tmp4.benefitCard, children: items };
-    const Stack = tmp(6015).Stack;
-    items = [tmp5, tmp11];
-    const tmp17 = authStore(Stack, obj3);
-    cResult[5] = tmp4.benefitCard;
-    cResult[6] = tmp5;
-    cResult[7] = tmp11;
-    cResult[8] = tmp17;
-    tmp14 = tmp17;
-  }
-  if (null != img) {
-    const obj4 = { source: obj5, style: tmp4.benefitImage, resizeMode: "cover", accessible: false };
-    obj5 = { uri: img };
-    tmp8 = React4(FastImageDefault, obj4);
-  } else {
-    const obj6 = { style: tmp4.benefitImage };
-    tmp8 = React4(View, obj6);
-  }
-  cResult[0] = img;
-  cResult[1] = tmp4.benefitImage;
-  cResult[2] = tmp8;
-  tmp5 = tmp8;
-}) : (function BenefitCard(img) {
-  let items;
-  let obj3;
-  let tmp6;
-  let tmp8;
-  img = img.img;
-  const text = img.text;
-  const tmp = closure_11();
-  const obj = { spacing: nativeDefault.space.PX_16, style: tmp.benefitCard, children: items };
-  const Stack = Stack_Stack.Stack;
-  const tmp2 = authStore;
-  if (null != img) {
-    const obj2 = { source: obj3, style: tmp.benefitImage, resizeMode: "cover", accessible: false };
-    obj3 = { uri: img };
-    tmp8 = React4(FastImageDefault, obj2);
-    tmp6 = React4;
-  } else {
-    tmp6 = React4;
-    const obj4 = { style: tmp.benefitImage };
-    tmp8 = React4(View, obj4);
-  }
-  items = [tmp8, tmp6(Text_Text.Text, { variant: "text-md/normal", color: "text-muted", children: text })];
-  return tmp2(Stack, obj);
-});
+let metroRequire;
+({ closeGameOrganizationJoinModal: metroRequire, GameOrganizationJoinScenes: metroImportDefault } = GameOrganizationJoinModalConstants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let closure_10 = createStyles.createStyles({ text: { textAlign: "center" }, buttonGroup: { paddingVertical: 0 } });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/steps/AcceptStep.tsx");
 
 export function AcceptStep(code) {
@@ -125,15 +34,12 @@ export function AcceptStep(code) {
   let intl;
   let intl2;
   let intl3;
-  let intl4;
-  let intl5;
   let items;
   let items1;
   let items2;
   let items3;
   let items4;
-  let items5;
-  let obj15;
+  let obj12;
   let obj7;
   let tmp7;
   code = code.code;
@@ -153,7 +59,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -179,8 +85,8 @@ export function AcceptStep(code) {
               _undefined(true);
               c4 = 2;
               id = undefined;
-              const acceptGameOrganizationInvite = joinStatus(failureReason[15]).acceptGameOrganizationInvite;
-              const tmp49 = joinStatus(failureReason[15]);
+              const acceptGameOrganizationInvite = joinStatus(failureReason[8]).acceptGameOrganizationInvite;
+              const tmp49 = joinStatus(failureReason[8]);
               const tmp50 = code;
               if (id != null) {
                 id = id.id;
@@ -197,10 +103,10 @@ export function AcceptStep(code) {
           } else {
             if (2 === c5) {
               c4 = 1;
-              const obj5 = { text: intl.string(characterName(failureReason[17]).t.fEptJP) };
-              const open = joinStatus(failureReason[16]).open;
-              const tmp14 = joinStatus(failureReason[16]);
-              intl = characterName(failureReason[17]).intl;
+              const obj5 = { text: intl.string(characterName(failureReason[10]).t.fEptJP) };
+              const open = joinStatus(failureReason[9]).open;
+              const tmp14 = joinStatus(failureReason[9]);
+              intl = characterName(failureReason[10]).intl;
               open("GAME_ORGANIZATION_INVITE_ACCEPT_ERROR", obj5);
             } else if (arg0 === 1) {
               c6 = 3;
@@ -233,7 +139,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_3(false);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -250,10 +156,10 @@ export function AcceptStep(code) {
     });
     return obj(...arguments);
   };
+  const tmp = closure_10();
   const tmp3 = dependencyMap;
-  const tmp = closure_11();
-  const tmp4 = character(13002)(code);
-  obj = code(1503);
+  const tmp4 = character(13153)(code);
+  obj = code(1498);
   dependencyMap = obj.useNavigation();
   [tmp7, c3] = obj(react.useState(false), 2);
   const tmp6 = obj(react.useState(false), 2);
@@ -262,50 +168,41 @@ export function AcceptStep(code) {
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    const ModalScreen = tmp5(7958).ModalScreen;
-    const ModalContent = tmp5(7959).ModalContent;
-    let obj2 = { spacing: tmp2(587).space.PX_48, children: items1 };
-    const Stack3 = tmp5(6015).Stack;
-    let obj3 = { spacing: tmp2(587).space.PX_24, children: items };
-    const Stack4 = tmp5(6015).Stack;
+    const ModalScreen = tmp5(7964).ModalScreen;
+    const ModalContent = tmp5(7965).ModalContent;
+    let obj2 = { spacing: tmp2(575).space.PX_48, children: items1 };
+    const Stack2 = tmp5(6022).Stack;
+    let obj3 = { spacing: tmp2(575).space.PX_24, children: items };
+    const Stack3 = tmp5(6022).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5271).Text;
-    const intl6 = tmp5(1125).intl;
-    formatToPlainString = intl6.formatToPlainString;
-    WmxMAI = tmp2(2404).WmxMAI;
+    const Text2 = tmp5(5619).Text;
+    const intl4 = tmp5(1114).intl;
+    formatToPlainString = intl4.formatToPlainString;
+    WmxMAI = tmp2(2405).WmxMAI;
     if (str == null) {
       str = "other";
     }
-    let obj5 = { children: items4 };
-    let obj6 = { children: tmp10(Stack3, obj2) };
+    let obj5 = { children: items3 };
+    let obj6 = { children: tmp9(Stack2, obj2) };
     obj7 = { displayNoun: str };
-    items = [tmp11(Text2, obj4), ];
+    items = [tmp10(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = closure_9(character(13009), obj8);
-    items1 = [tmp10(Stack4, obj3), ];
-    const obj9 = { spacing: character(587).space.PX_24, children: items2 };
-    const Stack = tmp5(6015).Stack;
-    const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2404).yFqGy8) };
-    const Text = tmp5(5271).Text;
-    intl = tmp5(1125).intl;
-    items2 = [tmp11(Text, obj10), ];
-    const obj11 = { direction: "horizontal", spacing: character(587).space.PX_16, children: items3 };
-    const Stack2 = tmp5(6015).Stack;
-    const obj12 = { text: intl2.string(character(2404).WUVzdk) };
-    intl2 = tmp5(1125).intl;
-    items3 = [tmp11(closure_12, obj12), ];
-    const obj13 = { text: intl3.string(character(2404).MEQJ1m) };
-    intl3 = tmp5(1125).intl;
-    items3[1] = closure_9(closure_12, obj13);
-    items2[1] = closure_10(Stack2, obj11);
-    items1[1] = closure_10(Stack, obj9);
-    items4 = [tmp11(ModalContent, obj6), ];
-    const obj14 = { children: closure_10(ButtonGroup, obj15) };
-    const ModalFooter = tmp5(13007).ModalFooter;
-    obj15 = { children: items5 };
-    ButtonGroup = tmp5(6754).ButtonGroup;
-    const obj16 = {
-      text: intl4.string(character(2404).BaZ6nt),
+    items[1] = closure_8(character(13160), obj8);
+    items1 = [tmp9(Stack3, obj3), ];
+    const obj9 = { spacing: character(575).space.PX_24, children: items2 };
+    const Stack = tmp5(6022).Stack;
+    const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2405).yFqGy8) };
+    const Text = tmp5(5619).Text;
+    intl = tmp5(1114).intl;
+    items2 = [tmp10(Text, obj10), tmp10(tmp2(13161), {})];
+    items1[1] = closure_9(Stack, obj9);
+    items3 = [tmp10(ModalContent, obj6), ];
+    const obj11 = { children: closure_9(ButtonGroup, obj12) };
+    const ModalFooter = tmp5(13158).ModalFooter;
+    obj12 = { style: tmp.buttonGroup, children: items4 };
+    ButtonGroup = tmp5(6761).ButtonGroup;
+    const obj13 = {
+      text: intl2.string(character(2405).BaZ6nt),
       size: "lg",
       loading: tmp7,
       disabled: tmp7,
@@ -313,14 +210,14 @@ export function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5281).Button;
-    intl4 = tmp5(1125).intl;
-    items5 = [tmp11(Button, obj16), ];
-    const obj17 = { text: intl5.string(code(1125).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5281).Button;
-    intl5 = tmp5(1125).intl;
-    items5[1] = closure_9(Button2, obj17);
-    items4[1] = closure_9(ModalFooter, obj14);
-    return closure_10(ModalScreen, obj5);
+    const Button = tmp5(5629).Button;
+    intl2 = tmp5(1114).intl;
+    items4 = [tmp10(Button, obj13), ];
+    const obj14 = { text: intl3.string(code(1114).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
+    const Button2 = tmp5(5629).Button;
+    intl3 = tmp5(1114).intl;
+    items4[1] = closure_8(Button2, obj14);
+    items3[1] = closure_8(ModalFooter, obj11);
+    return closure_9(ModalScreen, obj5);
   }
 }

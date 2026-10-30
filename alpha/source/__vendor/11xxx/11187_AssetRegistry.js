@@ -1,10 +1,10 @@
 // Module ID: 11187
 // Function ID: 11188
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 11187 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 61, height: 61, scales: [3], hash: "a162bb51b9ed292f4f10e545ed35e2e3", name: "asset_platinum_badge_small", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/light", width: 280, height: 120, scales: [2, 3], hash: "634e3e2f609abec6ee1af702b841050e", name: "channel_following_success_3", type: "png" });

@@ -1,0 +1,64 @@
+// Module ID: 1592
+// Function ID: 1593
+// Dependencies: [32, 19, 1507, 1541, 1538, 1593, 1520]
+// Exports: usePreventRemove
+
+// Module 1592
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
+
+const require = globalThis.__r;
+let _require, importDefault, navigation;
+
+
+export function usePreventRemove(arg0, arg1) {
+  let closure_0;
+  let closure_1;
+  let key;
+  _require = arg0;
+  importDefault = arg1;
+  const first = navigation(key.useState(() => {
+    const obj = closure_0(first[2]);
+    return obj.nanoid();
+  }), 1)[0];
+  let obj = require("module_1541");
+  navigation = obj.useNavigation();
+  const obj2 = require("react");
+  key = obj2.useRoute().key;
+  const obj3 = require("react");
+  const preventRemoveContext = obj3.usePreventRemoveContext();
+  const setPreventRemove = preventRemoveContext.setPreventRemove;
+  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
+  const items = [setPreventRemove, first, key, arg0];
+  const insertionEffect = key.useInsertionEffect(() => {
+    setPreventRemove(first, key, closure_0);
+    return () => {
+      setPreventRemove(first, key, false);
+    };
+  }, items);
+  const items1 = [first, key, arg0, notifyPreventRemove];
+  const effect = key.useEffect(() => {
+    notifyPreventRemove();
+    return () => {
+      notifyPreventRemove();
+    };
+  }, items1);
+  const tmp6 = require("useLatestCallback")((preventDefault) => {
+    const tmp = closure_0;
+    if (tmp) {
+      preventDefault.preventDefault();
+      const obj = { data: preventDefault.data };
+      closure_1(obj);
+    }
+  });
+  let closure_7 = tmp6;
+  const items2 = [navigation, tmp6];
+  const effect1 = key.useEffect(() => {
+    let addListenerResult;
+    const obj = navigation;
+    if (navigation != null) {
+      addListenerResult = obj.addListener("beforeRemove", closure_7);
+    }
+    return addListenerResult;
+  }, items2);
+}

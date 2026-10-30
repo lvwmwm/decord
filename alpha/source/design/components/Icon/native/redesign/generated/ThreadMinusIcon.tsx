@@ -1,73 +1,21 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 14863
+// Function ID: 14864
 // Name: ThreadMinusIcon
-// Dependencies: [109, 19, 21, 558, 576, 587, 14829, 5706, 2]
+// Dependencies: [19, 21, 575, 5711, 14864, 2]
+// Exports: ThreadMinusIcon
 
-// Module 14828 (ThreadMinusIcon)
+// Module 14863 (ThreadMinusIcon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import BaseIconImage2 from "BaseIconImage" /* 5706 */;
-import AssetRegistry from "AssetRegistry" /* 14829 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import BaseIconImage2 from "BaseIconImage" /* 5711 */;
+import AssetRegistry from "AssetRegistry" /* 14864 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = ["style", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadMinusIcon(arg0) {
-  let INTERACTIVE_ICON_DEFAULT;
-  let color;
-  let style;
-  let tmp10;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(9);
-  if (cResult[0] !== arg0) {
-    ({ style, color } = arg0);
-    const tmp8 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = tmp8;
-    cResult[2] = style;
-    cResult[3] = color;
-    INTERACTIVE_ICON_DEFAULT = color;
-    tmp5 = style;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    INTERACTIVE_ICON_DEFAULT = cResult[3];
-  }
-  if (undefined === INTERACTIVE_ICON_DEFAULT) {
-    INTERACTIVE_ICON_DEFAULT = nativeDefault.colors.INTERACTIVE_ICON_DEFAULT;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = AssetRegistry;
-    cResult[4] = tmpResult;
-    tmp10 = tmpResult;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === INTERACTIVE_ICON_DEFAULT) {
-    if (cResult[6] === tmp4) {
-      let tmp12;
-      if (cResult[7] === tmp5) {
-        tmp12 = cResult[8];
-      }
-      return tmp12;
-    }
-  }
-  const BaseIconImage = tmp(5706).BaseIconImage;
-  const merged = Object.assign(tmp4);
-  const tmp14 = <BaseIconImage source={tmp10} color={INTERACTIVE_ICON_DEFAULT} style={tmp5} />;
-  cResult[5] = INTERACTIVE_ICON_DEFAULT;
-  cResult[6] = tmp4;
-  cResult[7] = tmp5;
-  cResult[8] = tmp14;
-  tmp12 = tmp14;
-}) : (function ThreadMinusIcon(color) {
+const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadMinusIcon.tsx");
+
+export function ThreadMinusIcon(color) {
   let INTERACTIVE_ICON_DEFAULT = color.color;
   const style = color.style;
   if (INTERACTIVE_ICON_DEFAULT === undefined) {
@@ -77,7 +25,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadMinu
   const BaseIconImage = BaseIconImage2.BaseIconImage;
   const merged1 = Object.assign(merged);
   return <BaseIconImage source={AssetRegistry} color={INTERACTIVE_ICON_DEFAULT} style={style} />;
-});
-const result = size.fileFinishedImporting("design/components/Icon/native/redesign/generated/ThreadMinusIcon.tsx");
-
-export const ThreadMinusIcon = tmp3;
+}

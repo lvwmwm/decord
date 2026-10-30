@@ -1,90 +1,34 @@
-// Module ID: 7196
-// Function ID: 7197
+// Module ID: 7203
+// Function ID: 7204
 // Name: useNavigationTheme
-// Dependencies: [19, 558, 576, 5289, 587, 5012, 1504, 2]
+// Dependencies: [19, 5591, 575, 5016, 1499, 2]
+// Exports: useNavigationTheme
 
-// Module 7196 (useNavigationTheme)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1504 */;
-import shared from "shared" /* 5012 */;
-import useToken from "useToken" /* 5289 */;
+// Module 7203 (useNavigationTheme)
+import Link from "Link" /* 1499 */;
+import shared from "shared" /* 5016 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigationTheme(theme) {
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(11);
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.colors.TEXT_STRONG, theme);
-  const obj3 = useToken;
-  const token1 = obj3.useToken(nativeDefault.colors.BORDER_SUBTLE, theme);
-  const obj4 = useToken;
-  const token2 = obj4.useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, theme);
-  const obj5 = useToken;
-  const token3 = obj5.useToken(nativeDefault.colors.TEXT_MUTED, theme);
-  const obj6 = useToken;
-  const token4 = obj6.useToken(nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
-  if (cResult[0] !== theme) {
-    const tmpResult = shared;
-    const isThemeDarkResult = tmpResult.isThemeDark(theme);
-    cResult[0] = theme;
-    cResult[1] = isThemeDarkResult;
-    tmp9 = isThemeDarkResult;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === token1) {
-    if (cResult[3] === token2) {
-      if (cResult[4] === token4) {
-        if (cResult[5] === token) {
-          let tmp11;
-          if (cResult[6] === token3) {
-            tmp11 = cResult[7];
-          }
-          if (cResult[8] === tmp9) {
-            let tmp12;
-            if (cResult[9] === tmp11) {
-              tmp12 = cResult[10];
-            }
-            return tmp12;
-          }
-          const obj7 = { dark: tmp9, colors: tmp11, fonts: Link.DefaultTheme.fonts };
-          cResult[8] = tmp9;
-          cResult[9] = tmp11;
-          cResult[10] = obj7;
-          tmp12 = obj7;
-        }
-      }
-    }
-  }
-  const obj8 = { primary: token, background: "transparent", border: token1, card: token2, text: token3, notification: token4 };
-  cResult[2] = token1;
-  cResult[3] = token2;
-  cResult[4] = token4;
-  cResult[5] = token;
-  cResult[6] = token3;
-  cResult[7] = obj8;
-  tmp11 = obj8;
-}) : (function useNavigationTheme(theme) {
+const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
+
+export function useNavigationTheme(theme) {
   let token;
   let token1;
   _require = theme;
   let obj = require("useToken");
-  token = obj.useToken(token(token1[4]).colors.TEXT_STRONG, theme);
+  token = obj.useToken(token(token1[2]).colors.TEXT_STRONG, theme);
   let obj2 = require("useToken");
-  token1 = obj2.useToken(token(token1[4]).colors.BORDER_SUBTLE, theme);
+  token1 = obj2.useToken(token(token1[2]).colors.BORDER_SUBTLE, theme);
   const obj3 = require("useToken");
-  const token2 = obj3.useToken(token(token1[4]).colors.MOBILE_ACTIONSHEET_BACKGROUND, theme);
+  const token2 = obj3.useToken(token(token1[2]).colors.MOBILE_ACTIONSHEET_BACKGROUND, theme);
   const obj4 = require("useToken");
-  const token3 = obj4.useToken(token(token1[4]).colors.TEXT_MUTED, theme);
+  const token3 = obj4.useToken(token(token1[2]).colors.TEXT_MUTED, theme);
   const obj5 = require("useToken");
-  const token4 = obj5.useToken(token(token1[4]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
+  const token4 = obj5.useToken(token(token1[2]).colors.BACKGROUND_FEEDBACK_NOTIFICATION, theme);
   const items = [token1, token2, token4, token, token3, theme];
   return token2.useMemo(() => {
     let obj2;
@@ -92,7 +36,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
     obj2 = shared;
     return obj;
   }, items);
-});
-const result = size.fileFinishedImporting("design/components/Navigator/native/useNavigationTheme.native.tsx");
-
-export const useNavigationTheme = tmp2;
+}

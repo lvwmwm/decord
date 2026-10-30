@@ -1,27 +1,26 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9360
+// Function ID: 9361
 // Name: GameProfileMedia
-// Dependencies: [32, 19, 17, 5006, 1095, 21, 587, 9347, 5005, 558, 576, 9282, 8791, 5707, 8830, 1125, 9348, 9334, 504, 9351, 8792, 7280, 9352, 2]
+// Dependencies: [32, 19, 17, 5010, 1083, 21, 575, 9361, 5009, 9320, 8825, 5712, 8864, 1114, 9362, 9348, 504, 9365, 8826, 7288, 9366, 2]
+// Exports: default
 
-// Module 9346 (GameProfileMedia)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1095 */;
-import intl2 from "intl" /* 1125 */;
-import openMediaModal from "openMediaModal" /* 8791 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8792 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9282 */;
-import GameProfileMediaSources from "GameProfileMediaSources" /* 9347 */;
+// Module 9360 (GameProfileMedia)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import intl2 from "intl" /* 1114 */;
+import openMediaModal from "openMediaModal" /* 8825 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8826 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
+import GameProfileMediaSources from "GameProfileMediaSources" /* 9361 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let obj1, openMediaModalResult;
+let nativeEvent;
 
 let StyleSheet;
 let c10;
@@ -36,6 +35,14 @@ let obj5;
 let obj6;
 let size;
 let unpackModuleId;
+function Separator() {
+  const obj = { style: closure_15().separator };
+  return React4(hasOwnProperty, obj);
+}
+function ListPadding() {
+  const obj = { style: closure_15().listPadding };
+  return React4(hasOwnProperty, obj);
+}
 function keyExtractor(originalUrl, arg1) {
   return "" + originalUrl.originalUrl + "-" + arg1;
 }
@@ -53,7 +60,7 @@ let react = react_mod;
 const NOOP = Constants.NOOP;
 ({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 const PX_12 = nativeDefault.space.PX_12;
-let PX_16 = nativeDefault.space.PX_16;
+const PX_16 = nativeDefault.space.PX_16;
 let closure_14 = 2 * (GameProfileMediaSources.MEDIA_ITEM_MAX_WIDTH + PX_12);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, list: { overflow: "visible" }, separator: { width: PX_12 }, listPadding: { width: PX_16 }, mediaItem: obj3, mediaImage: { width: "100%", height: "100%", resizeMode: "cover" }, portraitImage: { resizeMode: "contain" }, imageBackdrop: obj4, mediaVideo: size, reducedMotionPoster: obj5, playIconWrapper: obj6 };
@@ -70,425 +77,7 @@ const merged2 = Object.assign(StyleSheet.absoluteFillObject);
 obj6 = { alignItems: "center", justifyContent: "center" };
 const merged3 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_15 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Separator() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const tmp2 = closure_15();
-  if (cResult[0] !== tmp2.separator) {
-    const obj2 = { style: tmp2.separator };
-    const tmp6 = React4(hasOwnProperty, obj2);
-    cResult[0] = tmp2.separator;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function Separator() {
-  const obj = { style: closure_15().separator };
-  return React4(hasOwnProperty, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function ListPadding() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const tmp2 = closure_15();
-  if (cResult[0] !== tmp2.listPadding) {
-    const obj2 = { style: tmp2.listPadding };
-    const tmp6 = React4(hasOwnProperty, obj2);
-    cResult[0] = tmp2.listPadding;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function ListPadding() {
-  const obj = { style: closure_15().listPadding };
-  return React4(hasOwnProperty, obj);
-});
-let memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ImageItem(index) {
-  let accessibilityLabel;
-  let height;
-  let items;
-  let onScrollToIndex;
-  let recordDimensions;
-  let sources;
-  let tmp13;
-  let url;
-  let width;
-  let obj = recordDimensions(sources[10]);
-  const cResult = obj.c(34);
-  ({ url, accessibilityLabel, recordDimensions } = index);
-  index = index.index;
-  sources = index.sources;
-  const trackAction = index.trackAction;
-  ({ width, height, onScrollToIndex } = index);
-  const setMediaModalOpen = index.setMediaModalOpen;
-  const tmp3 = closure_15();
-  const ref = onScrollToIndex.useRef(null);
-  size = sources[index];
-  if (cResult[0] === recordDimensions) {
-    let tmp6;
-    if (cResult[1] === size.uri) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] === index) {
-      if (cResult[4] === onScrollToIndex) {
-        if (cResult[5] === setMediaModalOpen) {
-          if (cResult[6] === sources) {
-            let tmp7;
-            if (cResult[7] === trackAction) {
-              tmp7 = cResult[8];
-            }
-            if (cResult[9] === height) {
-              let tmp8;
-              if (cResult[10] === width) {
-                tmp8 = cResult[11];
-              }
-              if (cResult[12] === tmp3.mediaItem) {
-                let tmp10;
-                if (cResult[13] === tmp8) {
-                  tmp10 = cResult[14];
-                }
-                if (cResult[15] === size.height > size.width) {
-                  if (cResult[16] === tmp3.imageBackdrop) {
-                    let tmp12;
-                    let tmp17;
-                    if (cResult[17] === url) {
-                      tmp12 = cResult[18];
-                    }
-                    if (cResult[19] !== url) {
-                      let obj2 = { uri: url };
-                      class A {
-                        constructor() {
-                          tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                          tmp2 = setMediaModalOpen(true);
-                          obj = closure_0(closure_2[12]);
-                          obj1 = {
-                            initialSources: sources,
-                            initialIndex: index,
-                            originViewOrOriginLayout: closure_6.current,
-                            analyticsSource: "game_profile",
-                            openAs: "action-sheet",
-                            disableMediaOverlayButton: true,
-                            shareable: false,
-                            onIndexChange(arg0) {
-                                                      return onScrollToIndex(arg0);
-                                                    },
-                            onClose() {
-                                                      return setMediaModalOpen(false);
-                                                    }
-                          };
-                          openMediaModalResult = obj.openMediaModal(obj1);
-                          return;
-                        }
-                      }
-                      cResult[19] = url;
-                      cResult[20] = obj2;
-                      tmp17 = obj2;
-                    } else {
-                      tmp17 = cResult[20];
-                    }
-                    class A {
-                      constructor() {
-                        tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                        tmp2 = setMediaModalOpen(true);
-                        obj = closure_0(closure_2[12]);
-                        obj1 = {
-                          initialSources: sources,
-                          initialIndex: index,
-                          originViewOrOriginLayout: closure_6.current,
-                          analyticsSource: "game_profile",
-                          openAs: "action-sheet",
-                          disableMediaOverlayButton: true,
-                          shareable: false,
-                          onIndexChange(arg0) {
-                                                  return onScrollToIndex(arg0);
-                                                },
-                          onClose() {
-                                                  return setMediaModalOpen(false);
-                                                }
-                        };
-                        openMediaModalResult = obj.openMediaModal(obj1);
-                        return;
-                      }
-                    }
-                    if (cResult[21] === tmp3.mediaImage) {
-                      let tmp18;
-                      if (cResult[22] === size.height > size.width) {
-                        tmp18 = cResult[23];
-                      }
-                      if (cResult[24] === tmp6) {
-                        if (cResult[25] === tmp17) {
-                          let tmp19;
-                          if (cResult[26] === tmp18) {
-                            tmp19 = cResult[27];
-                          }
-                          if (cResult[28] === accessibilityLabel) {
-                            if (cResult[29] === tmp7) {
-                              if (cResult[30] === tmp10) {
-                                if (cResult[31] === tmp12) {
-                                  let tmp22;
-                                  if (cResult[32] === tmp19) {
-                                    tmp22 = cResult[33];
-                                  }
-                                  return tmp22;
-                                }
-                              }
-                            }
-                          }
-                          class A {
-                            constructor() {
-                              tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                              tmp2 = setMediaModalOpen(true);
-                              obj = closure_0(closure_2[12]);
-                              obj1 = {
-                                initialSources: sources,
-                                initialIndex: index,
-                                originViewOrOriginLayout: closure_6.current,
-                                analyticsSource: "game_profile",
-                                openAs: "action-sheet",
-                                disableMediaOverlayButton: true,
-                                shareable: false,
-                                onIndexChange(arg0) {
-                                                              return onScrollToIndex(arg0);
-                                                            },
-                                onClose() {
-                                                              return setMediaModalOpen(false);
-                                                            }
-                              };
-                              openMediaModalResult = obj.openMediaModal(obj1);
-                              return;
-                            }
-                          }
-                          const obj3 = { ref, style: tmp10, onPress: tmp7, accessibilityLabel, children: items };
-                          items = [tmp12, tmp19];
-                          const tmp24 = closure_10(ref, obj3);
-                          cResult[28] = accessibilityLabel;
-                          cResult[29] = tmp7;
-                          cResult[30] = tmp10;
-                          cResult[31] = tmp12;
-                          cResult[32] = tmp19;
-                          cResult[33] = tmp24;
-                          tmp22 = tmp24;
-                        }
-                      }
-                      class A {
-                        constructor() {
-                          tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                          tmp2 = setMediaModalOpen(true);
-                          obj = closure_0(closure_2[12]);
-                          obj1 = {
-                            initialSources: sources,
-                            initialIndex: index,
-                            originViewOrOriginLayout: closure_6.current,
-                            analyticsSource: "game_profile",
-                            openAs: "action-sheet",
-                            disableMediaOverlayButton: true,
-                            shareable: false,
-                            onIndexChange(arg0) {
-                                                      return onScrollToIndex(arg0);
-                                                    },
-                            onClose() {
-                                                      return setMediaModalOpen(false);
-                                                    }
-                          };
-                          openMediaModalResult = obj.openMediaModal(obj1);
-                          return;
-                        }
-                      }
-                      const obj4 = { source: tmp17, style: tmp18, onLoad: tmp6, accessible: false };
-                      const tmp21 = closure_9(index(sources[13]), obj4);
-                      cResult[24] = tmp6;
-                      cResult[25] = tmp17;
-                      cResult[26] = tmp18;
-                      cResult[27] = tmp21;
-                      tmp19 = tmp21;
-                    }
-                    const items1 = [tmp3.mediaImage, size.height > size.width];
-                    cResult[21] = tmp3.mediaImage;
-                    cResult[22] = size.height > size.width;
-                    cResult[23] = items1;
-                    tmp18 = items1;
-                  }
-                }
-                class A {
-                  constructor() {
-                    tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                    tmp2 = setMediaModalOpen(true);
-                    obj = closure_0(closure_2[12]);
-                    obj1 = {
-                      initialSources: sources,
-                      initialIndex: index,
-                      originViewOrOriginLayout: closure_6.current,
-                      analyticsSource: "game_profile",
-                      openAs: "action-sheet",
-                      disableMediaOverlayButton: true,
-                      shareable: false,
-                      onIndexChange(arg0) {
-                                          return onScrollToIndex(arg0);
-                                        },
-                      onClose() {
-                                          return setMediaModalOpen(false);
-                                        }
-                    };
-                    openMediaModalResult = obj.openMediaModal(obj1);
-                    return;
-                  }
-                }
-                if (tmp13) {
-                  class A {
-                    constructor() {
-                      tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                      tmp2 = setMediaModalOpen(true);
-                      obj = closure_0(closure_2[12]);
-                      obj1 = {
-                        initialSources: sources,
-                        initialIndex: index,
-                        originViewOrOriginLayout: closure_6.current,
-                        analyticsSource: "game_profile",
-                        openAs: "action-sheet",
-                        disableMediaOverlayButton: true,
-                        shareable: false,
-                        onIndexChange(arg0) {
-                                              return onScrollToIndex(arg0);
-                                            },
-                        onClose() {
-                                              return setMediaModalOpen(false);
-                                            }
-                      };
-                      openMediaModalResult = obj.openMediaModal(obj1);
-                      return;
-                    }
-                  }
-                  const obj5 = { uri: url };
-                  tmp16[0] = obj5;
-                  tmp16[1] = tmp3.imageBackdrop;
-                  tmp13 = closure_9(index(sources[13]), tmp16);
-                }
-                cResult[15] = size.height > size.width;
-                cResult[16] = tmp3.imageBackdrop;
-                cResult[17] = url;
-                cResult[18] = tmp13;
-                tmp12 = tmp13;
-              }
-              class A {
-                constructor() {
-                  tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                  tmp2 = setMediaModalOpen(true);
-                  obj = closure_0(closure_2[12]);
-                  obj1 = {
-                    initialSources: sources,
-                    initialIndex: index,
-                    originViewOrOriginLayout: closure_6.current,
-                    analyticsSource: "game_profile",
-                    openAs: "action-sheet",
-                    disableMediaOverlayButton: true,
-                    shareable: false,
-                    onIndexChange(arg0) {
-                                      return onScrollToIndex(arg0);
-                                    },
-                    onClose() {
-                                      return setMediaModalOpen(false);
-                                    }
-                  };
-                  openMediaModalResult = obj.openMediaModal(obj1);
-                  return;
-                }
-              }
-              tmp11[0] = tmp3.mediaItem;
-              tmp11[1] = tmp8;
-              cResult[12] = tmp3.mediaItem;
-              cResult[13] = tmp8;
-              cResult[14] = tmp11;
-              tmp10 = tmp11;
-            }
-            class A {
-              constructor() {
-                tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-                tmp2 = setMediaModalOpen(true);
-                obj = closure_0(closure_2[12]);
-                obj1 = {
-                  initialSources: sources,
-                  initialIndex: index,
-                  originViewOrOriginLayout: closure_6.current,
-                  analyticsSource: "game_profile",
-                  openAs: "action-sheet",
-                  disableMediaOverlayButton: true,
-                  shareable: false,
-                  onIndexChange(arg0) {
-                                  return onScrollToIndex(arg0);
-                                },
-                  onClose() {
-                                  return setMediaModalOpen(false);
-                                }
-                };
-                openMediaModalResult = obj.openMediaModal(obj1);
-                return;
-              }
-            }
-            tmp9[0] = width;
-            tmp9[1] = height;
-            cResult[9] = height;
-            cResult[10] = width;
-            cResult[11] = tmp9;
-            tmp8 = tmp9;
-          }
-        }
-      }
-    }
-    class A {
-      constructor() {
-        tmp = trackAction(closure_0(closure_2[11]).GameProfileTrackActionActions.ClickImage);
-        tmp2 = setMediaModalOpen(true);
-        obj = closure_0(closure_2[12]);
-        obj1 = {
-          initialSources: sources,
-          initialIndex: index,
-          originViewOrOriginLayout: closure_6.current,
-          analyticsSource: "game_profile",
-          openAs: "action-sheet",
-          disableMediaOverlayButton: true,
-          shareable: false,
-          onIndexChange(arg0) {
-                  return onScrollToIndex(arg0);
-                },
-          onClose() {
-                  return setMediaModalOpen(false);
-                }
-        };
-        openMediaModalResult = obj.openMediaModal(obj1);
-        return;
-      }
-    }
-    cResult[3] = index;
-    cResult[4] = onScrollToIndex;
-    cResult[5] = setMediaModalOpen;
-    cResult[6] = sources;
-    cResult[7] = trackAction;
-    cResult[8] = A;
-    tmp7 = A;
-  }
-  const fn = function o(nativeEvent) {
-    nativeEvent = nativeEvent.nativeEvent;
-    let source = nativeEvent;
-    if ("source" in nativeEvent) {
-      source = nativeEvent.source;
-    }
-    size = { width: source.width, height: source.height };
-    recordDimensions(size.uri, size);
-  };
-  cResult[0] = recordDimensions;
-  cResult[1] = size.uri;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : (function ImageItem(index) {
+let closure_20 = react.memo(function ImageItem(index) {
   let accessibilityLabel;
   let height;
   let items2;
@@ -554,20 +143,20 @@ let closure_20 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function I
   if (portraitImage) {
     let obj2 = { source: obj3, style: tmp.imageBackdrop, resizeMode: "cover", blurRadius: 24, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
     obj3 = { uri: url };
-    tmp6 = closure_9(index(sources[13]), obj2);
+    tmp6 = closure_9(index(sources[11]), obj2);
   }
   items3 = [tmp6, ];
   const obj4 = { source: { uri: url }, style: items4, onLoad: callback, accessible: false };
   items4 = [tmp.mediaImage, ];
   const tmp10 = closure_9;
-  const tmp11 = index(sources[13]);
+  const tmp11 = index(sources[11]);
   if (portraitImage) {
     portraitImage = tmp.portraitImage;
   }
   items4[1] = portraitImage;
   items3[1] = tmp10(tmp11, obj4);
   return tmp4(tmp5, obj);
-}));
+});
 let closure_21 = react.memo(function TrailerItem(sources) {
   let active;
   let height;
@@ -595,7 +184,7 @@ let closure_21 = react.memo(function TrailerItem(sources) {
     ref.current = current;
   }, []);
   const useRef = setMediaModalOpen.useRef;
-  let obj = index(trackAction[14]);
+  let obj = index(trackAction[12]);
   const ref1 = useRef(obj.createVideoControls(NOOP));
   const current = ref1.current;
   const subscribe = current.useSubscribe(callback, NOOP, NOOP);
@@ -625,209 +214,31 @@ let closure_21 = react.memo(function TrailerItem(sources) {
       };
       obj.openMediaModal(obj2);
     }, items),
-    accessibilityLabel: intl.string(index(trackAction[15]).t.oRN0Og),
+    accessibilityLabel: intl.string(index(trackAction[13]).t.oRN0Og),
     children: tmp8Result
   };
   items1 = [tmp.mediaItem, { width, height }];
-  intl = index(trackAction[15]).intl;
+  intl = index(trackAction[13]).intl;
   const tmp9 = ref;
   if (reducedMotion) {
     const obj4 = { source: obj5, style: tmp.reducedMotionPoster, accessibilityIgnoresInvertColors: true };
     const obj3 = { children: items2 };
     obj5 = { uri: posterUrl };
-    items2 = [closure_9(sources(trackAction[13]), obj4), ];
-    const obj6 = { style: tmp.playIconWrapper, pointerEvents: "none", children: closure_9(index(trackAction[16]).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
+    items2 = [closure_9(sources(trackAction[11]), obj4), ];
+    const obj6 = { style: tmp.playIconWrapper, pointerEvents: "none", children: closure_9(index(trackAction[14]).CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" }) };
     items2[1] = closure_9(ref, obj6);
     tmp8Result = closure_10(closure_11, obj3);
   } else {
     const obj7 = { style: tmp.mediaVideo, source: obj8, poster: posterUrl, posterResizeMode: "cover", paused: !active, muted: true, resizeMode: "cover", pauseWhileAppInactive: true, controls: ref1.current };
     obj8 = { uri: url };
-    tmp8Result = tmp8(tmp4(tmp5[14]).VideoComponent, obj7);
+    tmp8Result = tmp8(tmp4(tmp5[12]).VideoComponent, obj7);
   }
   return closure_9(tmp9, obj2);
 });
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileMedia(game) {
-  let arr2;
-  let closure_4;
-  let dimensions;
-  let first;
-  let length;
-  let recordDimensions;
-  let ref;
-  let setMediaModalOpen;
-  let stateFromStores;
-  let tmp10;
-  let tmp15;
-  let tmp26;
-  let tmp27;
-  let tmp32;
-  let tmp5;
-  let tmp6;
-  let tmp = game;
-  let tmp2 = stateFromStores;
-  let obj = game(stateFromStores[10]);
-  const cResult = obj.c(51);
-  game = game.game;
-  const trackAction = game.trackAction;
-  let tmp4 = onScrollToIndex();
-  const obj2 = game(stateFromStores[17]);
-  const obscured = obj2.useObscuredSurface().obscured;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ref];
-    const fn = function l() {
-      return ref.useReducedMotion;
-    };
-    let num = 0;
-    cResult[0] = items;
-    let num2 = 1;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(tmp2[18]);
-  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const tmp9 = _slicedToArray(react.useState(0), 2);
-  [tmp10, _slicedToArray] = tmp9;
-  const obj4 = react;
-  const tmp11 = _slicedToArray(react.useState(0), 2);
-  react = tmp11[1];
-  [first, setMediaModalOpen] = react.useState(false);
-  ref = react.useRef(null);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult4 = tmp(tmp2[7]);
-    const carouselPreviewPixelSize = tmpResult4.getCarouselPreviewPixelSize();
-    cResult[2] = carouselPreviewPixelSize;
-    tmp15 = carouselPreviewPixelSize;
-  } else {
-    tmp15 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
-      constructor(nativeEvent) {
-        _slicedToArray(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-    let num3 = 3;
-    cResult[3] = U;
-  } else {
-    class U {
-      constructor(nativeEvent) {
-        _slicedToArray(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-  }
-  if (cResult[4] !== game) {
-    class U {
-      constructor(nativeEvent) {
-        _slicedToArray(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-    const mediaEntries = obj6.buildMediaEntries(game);
-    cResult[4] = game;
-    cResult[5] = mediaEntries;
-    arr2 = mediaEntries;
-  } else {
-    class U {
-      constructor(nativeEvent) {
-        _slicedToArray(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-  }
-  const tmpResult5 = tmp(tmp2[19]);
-  const gameProfileMediaDimensions = tmpResult5.useGameProfileMediaDimensions(tmp(tmp2[7]).MEDIA_VIEWER_ITEM_SIZE.width);
-  ({ dimensions, recordDimensions } = gameProfileMediaDimensions);
-  let tmp20 = PX_12;
-  let tmp21 = PX_16;
-  const bound = Math.max(0, Math.min(tmp(tmp2[7]).MEDIA_ITEM_MAX_WIDTH, tmp10 - PX_12 - 2 * PX_16));
-  const height = min(tmp(tmp2[7]).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(tmp2[7]).MEDIA_ITEM_ASPECT_RATIO);
-  min(tmp(tmp2[7]).MEDIA_ITEM_MAX_HEIGHT, bound / tmp(tmp2[7]).MEDIA_ITEM_ASPECT_RATIO);
-  if (cResult[6] === dimensions) {
-    class U {
-      constructor(nativeEvent) {
-        _slicedToArray(nativeEvent.nativeEvent.layout.width);
-      }
-    }
-    const sources = tmp24;
-    if (cResult[9] === tmp24) {
-      class U {
-        constructor(nativeEvent) {
-          _slicedToArray(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-      const effect = obj4.useEffect(tmp26, tmp27);
-      let result = (tmp10 - bound - 2 * tmp21) / 2;
-      class Q {
-        constructor() {
-          const tmp = first;
-          if (tmp) {
-            const obj = useMediaViewerSources;
-            const result = obj.updateMediaViewerSources(sources);
-          }
-        }
-      }
-      const sum = bound + tmp20;
-      PX_16 = sum;
-      if (cResult[13] === sum) {
-        class U {
-          constructor(nativeEvent) {
-            _slicedToArray(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      if (cResult[17] === sum) {
-        class U {
-          constructor(nativeEvent) {
-            _slicedToArray(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-        const mapped = arr2.map(tmp32);
-        class Q {
-          constructor() {
-            const tmp = first;
-            if (tmp) {
-              const obj = useMediaViewerSources;
-              const result = obj.updateMediaViewerSources(sources);
-            }
-          }
-        }
-        cResult[14] = arr2;
-        cResult[15] = result;
-        cResult[16] = mapped;
-      }
-      function re(arg0, arg1) {
-        return Math.max(0, arg1 * PX_16 - PX_12);
-      }
-      cResult[17] = sum;
-      cResult[18] = result;
-      cResult[19] = re;
-      tmp32 = re;
-    }
-    class Q {
-      constructor() {
-        const tmp = first;
-        if (tmp) {
-          const obj = useMediaViewerSources;
-          const result = obj.updateMediaViewerSources(sources);
-        }
-      }
-    }
-    const items1 = [tmp24, first];
-    cResult[9] = tmp24;
-    cResult[10] = first;
-    cResult[11] = Q;
-    cResult[12] = items1;
-    tmp26 = Q;
-    tmp27 = items1;
-  }
-  const tmpResult6 = tmp(tmp2[7]);
-  const mediaViewerSources = tmpResult6.buildMediaViewerSources(arr2, tmp15, dimensions);
-  cResult[6] = dimensions;
-  cResult[7] = arr2;
-  cResult[8] = mediaViewerSources;
-}) : (function GameProfileMedia(game) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
+
+export default function GameProfileMedia(game) {
   let closure_4;
   let obj6;
   let tmp34Result;
@@ -841,9 +252,9 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
   let tmp = memo4();
   let tmp3 = stateFromStores;
   let tmp2 = game;
-  let obj = game(stateFromStores[17]);
+  let obj = game(stateFromStores[15]);
   const obscured = obj.useObscuredSurface().obscured;
-  const obj2 = game(stateFromStores[18]);
+  const obj2 = game(stateFromStores[16]);
   const items = [setMediaModalOpen];
   stateFromStores = obj2.useStateFromStores(items, () => setMediaModalOpen.useReducedMotion);
   const tmp6 = first(react.useState(0), 2);
@@ -869,7 +280,7 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
     const obj = GameProfileMediaSources;
     return obj.buildMediaEntries(game);
   }, items1);
-  const obj3 = game(stateFromStores[19]);
+  const obj3 = game(stateFromStores[17]);
   const gameProfileMediaDimensions = obj3.useGameProfileMediaDimensions(game(stateFromStores[7]).MEDIA_VIEWER_ITEM_SIZE.width);
   const dimensions = gameProfileMediaDimensions.dimensions;
   const recordDimensions = gameProfileMediaDimensions.recordDimensions;
@@ -987,16 +398,12 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileM
     tmp34Result = memo2 > 0;
     const tmp35 = closure_5;
     if (tmp34Result) {
-      const obj5 = { ref, horizontal: true, renderScrollComponent: trackAction(tmp3[22]), style: tmp.list, overrideProps: obj6, data: memo1, extraData: tmp25, renderItem: callback3, keyExtractor: num, getItemType, drawDistance: memo3, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: memo5, ListHeaderComponent: callback2, ListFooterComponent: callback2, decelerationRate: "fast", snapToOffsets: memo5, snapToStart: false, snapToEnd: false, onMomentumScrollEnd: callback1 };
-      const FlashList = tmp2(tmp3[21]).FlashList;
+      const obj5 = { ref, horizontal: true, renderScrollComponent: trackAction(tmp3[20]), style: tmp.list, overrideProps: obj6, data: memo1, extraData: tmp25, renderItem: callback3, keyExtractor: num, getItemType, drawDistance: memo3, showsHorizontalScrollIndicator: false, ItemSeparatorComponent: memo5, ListHeaderComponent: callback2, ListFooterComponent: callback2, decelerationRate: "fast", snapToOffsets: memo5, snapToStart: false, snapToEnd: false, onMomentumScrollEnd: callback1 };
+      const FlashList = tmp2(tmp3[19]).FlashList;
       obj6 = { style: tmp.list };
       tmp34Result = tmp34(FlashList, obj5);
     }
     tmp34Result2 = tmp34(tmp35, obj4);
   }
   return tmp34Result2;
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileMedia.tsx");
-
-export default tmp9;
+};

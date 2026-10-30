@@ -1,26 +1,26 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15086
+// Function ID: 15087
 // Name: VoiceChannelLinkEmbed
-// Dependencies: [32, 17, 4875, 4857, 4879, 4937, 4947, 1389, 1084, 7867, 8329, 1415, 1381, 1125, 8561, 5641, 2]
+// Dependencies: [32, 17, 4876, 4858, 4880, 4941, 4951, 1384, 1072, 7872, 8386, 1410, 1376, 1114, 8595, 5647, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 15042 (VoiceChannelLinkEmbed)
+// Module 15086 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import GuildRecord from "GuildRecord" /* 4875 */;
-import useChannelName from "useChannelName" /* 5641 */;
-import Constants2 from "Constants" /* 7867 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import GuildRecord from "GuildRecord" /* 4876 */;
+import useChannelName from "useChannelName" /* 5647 */;
+import Constants2 from "Constants" /* 7872 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8386 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -60,7 +60,7 @@ export function createVoiceChannelLinkEmbed(code, arg1) {
             }
             if (null != icon) {
               let id;
-              const getGuildIconURL = tmp5(1415).getGuildIconURL;
+              const getGuildIconURL = tmp5(1410).getGuildIconURL;
               AvatarUtilsDefault;
               if (guild != null) {
                 id = guild.id;
@@ -82,9 +82,9 @@ export function createVoiceChannelLinkEmbed(code, arg1) {
               str = "";
             }
             const isGuildStageVoiceResult = channel.isGuildStageVoice();
-            const intl = tmp18(1125).intl;
+            const intl = tmp18(1114).intl;
             const string = intl.string;
-            const t = tmp18(1125).t;
+            const t = tmp18(1114).t;
             if (isGuildStageVoiceResult) {
               stringResult = string(t["7vb2cc"]);
             } else {
@@ -102,7 +102,7 @@ export function createVoiceChannelLinkEmbed(code, arg1) {
             if (null != guildIconURL) {
               tmp26 = guildIconURL;
             }
-            intl2 = tmp18(1125).intl;
+            intl2 = tmp18(1114).intl;
             return obj2;
           }
         }

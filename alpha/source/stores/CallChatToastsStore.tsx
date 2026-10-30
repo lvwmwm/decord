@@ -1,11 +1,11 @@
-// Module ID: 18569
-// Function ID: 18570
+// Module ID: 18628
+// Function ID: 18629
 // Name: CallChatToastsStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 18569 (CallChatToastsStore)
+// Module 18628 (CallChatToastsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

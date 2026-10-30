@@ -1,22 +1,21 @@
-// Module ID: 11728
-// Function ID: 11729
+// Module ID: 11921
+// Function ID: 11922
 // Name: KrispLogo
-// Dependencies: [19, 17, 1204, 1084, 21, 2065, 1264, 1125, 5698, 558, 576, 504, 5012, 11729, 11730, 5707, 5271, 2]
+// Dependencies: [19, 17, 1193, 1072, 21, 2062, 1253, 1114, 5704, 504, 5016, 11922, 11923, 5712, 5619, 2]
+// Exports: default
 
-// Module 11728 (KrispLogo)
+// Module 11921 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import shared from "shared" /* 5012 */;
-import LinkingDefault from "Linking" /* 5698 */;
+import intl4 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import shared from "shared" /* 5016 */;
+import LinkingDefault from "Linking" /* 5704 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
-import Constants from "Constants" /* 1084 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -46,93 +45,9 @@ function handleKrispLinkPressed() {
 ({ AnalyticEvents: metroRequire, AnalyticsPages: metroImportDefault, AnalyticsSections: metroImportAll, HelpdeskArticles: c9 } = Constants);
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = { logo: { marginLeft: 20, height: 30, width: 67 }, detailsView: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingBottom: 12, gap: 12 } };
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() {
-  let Text;
-  let intl3;
-  let items1;
-  let obj4;
-  let theme;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp17;
-  let tmp19;
-  let tmp24;
-  let tmp4;
-  let tmp5;
-  let tmp8Result;
-  const obj = react2;
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function o() {
-      return theme.theme;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult2 = shared;
-  if (tmpResult2.isThemeLight(stateFromStores)) {
-    tmp8Result = tmp8(11729);
-    tmp10 = tmp8;
-  } else {
-    tmp8Result = tmp8(11730);
-    tmp10 = tmp8;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.vFiCSx);
-    cResult[2] = stringResult;
-    tmp11 = stringResult;
-  } else {
-    tmp11 = cResult[2];
-  }
-  if (cResult[3] !== tmp8Result) {
-    const obj2 = { style: closure_12.logo, source: tmp8Result, accessibilityLabel: tmp11 };
-    const tmp16 = authStore(tmp10(5707), obj2);
-    cResult[3] = tmp8Result;
-    cResult[4] = tmp16;
-    tmp13 = tmp16;
-  } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl4.t.hvVgAZ);
-    cResult[5] = stringResult1;
-    tmp17 = stringResult1;
-  } else {
-    tmp17 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { accessibilityRole: "link", accessibilityLabel: tmp17, onPress: handleKrispLinkPressed, children: authStore(Text, obj4) };
-    obj4 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-    Text = tmp(5271).Text;
-    intl3 = tmp(1125).intl;
-    const tmp23 = authStore(React3, obj3);
-    cResult[6] = tmp23;
-    tmp19 = tmp23;
-  } else {
-    tmp19 = cResult[6];
-  }
-  if (cResult[7] !== tmp13) {
-    const obj5 = { style: closure_12.detailsView, children: items1 };
-    items1 = [tmp13, tmp19];
-    const tmp28 = unpackModuleId(_false, obj5);
-    cResult[7] = tmp13;
-    cResult[8] = tmp28;
-    tmp24 = tmp28;
-  } else {
-    tmp24 = cResult[8];
-  }
-  return tmp24;
-}) : (function KrispLogo() {
+const result = size.fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
+
+export default function KrispLogo() {
   let Text;
   let intl;
   let intl2;
@@ -147,26 +62,23 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function KrispLogo() 
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(11729);
+    tmp4Result = tmp4(11922);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(11730);
+    tmp4Result = tmp4(11923);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(5707);
-  intl = tmp(1125).intl;
+  const tmp6Result = tmp6(5712);
+  intl = tmp(1114).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
-  intl2 = tmp(1125).intl;
+  intl2 = tmp(1114).intl;
   obj6 = { variant: "text-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5271).Text;
-  intl3 = tmp(1125).intl;
+  Text = tmp(5619).Text;
+  intl3 = tmp(1114).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);
-});
-const result = size.fileFinishedImporting("modules/user_settings/voice/native/KrispLogo.tsx");
-
-export default tmp6;
+};
 export { handleKrispLinkPressed };

@@ -1,16 +1,15 @@
-// Module ID: 14712
-// Function ID: 14713
+// Module ID: 14746
+// Function ID: 14747
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5271, 5281, 5698, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 1114, 5629, 5704, 2]
 
-// Module 14712 (MediaModalYoutubeEmbedError)
+// Module 14746 (MediaModalYoutubeEmbedError)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 5698 */;
+import nativeDefault from "native" /* 575 */;
+import LinkingDefault from "Linking" /* 5704 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,93 +24,19 @@ obj2 = { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND
 createStyles = createStyles.createStyles;
 obj3 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_6 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MediaModalYoutubeEmbedError(videoId) {
-  let container;
-  let first;
-  let items;
-  let text;
-  let tmp10;
-  let tmp12;
-  let tmp7;
-  let obj = videoId(576);
-  const cResult = obj.c(10);
-  videoId = videoId.videoId;
-  const tmp4 = closure_6();
-  ({ container, text } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(videoId(1125).t.u7vKPs);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.text) {
-    const obj2 = { style: text, variant: "text-md/semibold", color: "text-overlay-light", children: first };
-    const tmp9 = closure_4(videoId(5271).Text, obj2);
-    cResult[1] = tmp4.text;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(videoId(1125).t.LLpxJ5);
-    cResult[3] = stringResult1;
-    tmp10 = stringResult1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== videoId) {
-    const obj3 = {
-      text: tmp10,
-      variant: "secondary",
-      size: "md",
-      shrink: true,
-      grow: false,
-      onPress() {
-          const obj = LinkingDefault;
-          obj.openURL("https://youtube.com/watch?v=" + videoId);
-        }
-    };
-    const tmp14 = closure_4(videoId(5281).Button, obj3);
-    cResult[4] = videoId;
-    cResult[5] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === tmp4.container) {
-    if (cResult[7] === tmp7) {
-      let tmp15;
-      if (cResult[8] === tmp12) {
-        tmp15 = cResult[9];
-      }
-      return tmp15;
-    }
-  }
-  const obj4 = { style: container, children: items };
-  items = [tmp7, tmp12];
-  const tmp16 = closure_5(View, obj4);
-  cResult[6] = tmp4.container;
-  cResult[7] = tmp7;
-  cResult[8] = tmp12;
-  cResult[9] = tmp16;
-  tmp15 = tmp16;
-}) : (function MediaModalYoutubeEmbedError(videoId) {
+const memoResult = react.memo(function MediaModalYoutubeEmbedError(videoId) {
   let intl;
   let intl2;
   let items;
   videoId = videoId.videoId;
   const tmp = closure_6();
   let obj = { style: tmp.container, children: items };
-  const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1125).t.u7vKPs) };
-  const Text = videoId(5271).Text;
-  intl = videoId(1125).intl;
+  const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(videoId(1114).t.u7vKPs) };
+  const Text = videoId(5619).Text;
+  intl = videoId(1114).intl;
   items = [closure_4(Text, obj2), ];
   const obj3 = {
-    text: intl2.string(videoId(1125).t.LLpxJ5),
+    text: intl2.string(videoId(1114).t.LLpxJ5),
     variant: "secondary",
     size: "md",
     shrink: true,
@@ -121,11 +46,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj.openURL("https://youtube.com/watch?v=" + videoId);
     }
   };
-  const Button = videoId(5281).Button;
-  intl2 = videoId(1125).intl;
+  const Button = videoId(5629).Button;
+  intl2 = videoId(1114).intl;
   items[1] = closure_4(Button, obj3);
   return closure_5(View, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/media_viewer/native/components/renderers/MediaModalYoutubeEmbedError.tsx");
 
 export default memoResult;

@@ -1,10 +1,10 @@
 // Module ID: 10014
 // Function ID: 10015
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 10014 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3246c14a68781de782d6622fffa7ce47", name: "StarOutlineIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 80, height: 64, scales: [2, 3], hash: "5f09a79d208de30c6568041c7b77048f", name: "img_search_empty_dark", type: "png" });

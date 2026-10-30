@@ -1,18 +1,19 @@
 // Module ID: 10471
 // Function ID: 10472
-// Dependencies: [41, 42, 93, 95, 98, 10282, 10470, 10283, 10289]
+// Dependencies: [41, 42, 93, 95, 98, 10307, 10461, 10334, 10463]
 
 // Module 10471
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10282 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10283 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10289 */;
-import _mod10470 from "module_10470" /* 10470 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10307 */;
+import _mod10461 from "module_10461" /* 10461 */;
+import _mod10463 from "module_10463" /* 10463 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod10334 = tmp2(10334);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,13 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:den\\s*?)?([0-9]{1,2})(?:\\s*(?:till|\\-|\\\u2013|\\s)\\s*([0-9]{1,2}))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10470.MONTH_DICTIONARY) + ")(?:(?:-|/|,?\\s*)([0-9]{4}(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class SVMonthNameLittleEndianParser {
+class UKWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, SVMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(SVMonthNameLittleEndianParser);
+    _classCallCheck(this, UKWeekdayParser);
+    const obj = _getPrototypeOf(UKWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,48 +46,55 @@ class SVMonthNameLittleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(SVMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKWeekdayParser, _mod10463.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:\u0443\\s*?)?(?:(\u0446\u0435\u0439|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043C\u0438\u043D\u0443\u043B\u0438\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10461.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*(\u043D\u0430|\u0443|\u0432)\\s*(\u0446\u044C\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*\u0442\u0438\u0436\u043D\u0456)?";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod10470.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const parsed = parseInt(index[1]);
-      if (parsed > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", parsed);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod10470.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
-        }
-        if (index[2]) {
-          const _parseInt = parseInt;
-          const start3 = parsingResult.start;
-          const parsed1 = parseInt(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", parsed1);
-        }
-        return parsingResult;
+    value: function innerExtract(reference, arg1) {
+      let str = arg1[1];
+      const obj = arg1[2];
+      const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
+      const tmp4 = _mod10461.WEEKDAY_DICTIONARY[toLocaleLowerCaseResult];
+      if (!str) {
+        str = arg1[3];
       }
+      if (!str) {
+        str = "";
+      }
+      const toLocaleLowerCaseResult1 = str.toLocaleLowerCase();
+      let str2 = "last";
+      if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+        str2 = "last";
+        if ("\u043C\u0438\u043D\u0443\u043B\u0438\u0439" != toLocaleLowerCaseResult1) {
+          str2 = "last";
+          if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439" != toLocaleLowerCaseResult1) {
+            str2 = "last";
+            if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+              str2 = "next";
+              if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+                str2 = "next";
+                if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439" != toLocaleLowerCaseResult1) {
+                  str2 = null;
+                  const tmp6 = "\u0446\u0435\u0439" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u043C\u0443" != toLocaleLowerCaseResult1;
+                  if (!tmp6) {
+                    str2 = "this";
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      return _mod10334.createParsingComponentsAtWeekday(reference.reference, tmp4, str2);
     }
   }
 ];
 
-export default _createClass(SVMonthNameLittleEndianParser, items);
+export default _createClass(UKWeekdayParser, items);

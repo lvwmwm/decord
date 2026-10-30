@@ -1,21 +1,21 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18231
+// Function ID: 18232
 // Name: preloadChannelAppFrame
-// Dependencies: [4857, 4937, 6833, 6834, 1084, 6721, 6740, 5661, 10842, 6836, 10885, 6868, 2]
+// Dependencies: [4858, 4941, 6840, 6841, 1072, 6728, 6747, 5667, 10865, 6843, 10908, 6875, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 18171 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 5661 */;
-import AgeGateUtils from "AgeGateUtils" /* 6721 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6740 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
-import createProxyTicket from "createProxyTicket" /* 10842 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10885 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import Constants from "Constants" /* 1084 */;
+// Module 18231 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5667 */;
+import AgeGateUtils from "AgeGateUtils" /* 6728 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6747 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6843 */;
+import createProxyTicket from "createProxyTicket" /* 10865 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 10908 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import FramesStore from "FramesStore" /* 6840 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -55,7 +55,7 @@ export function preloadChannelAppFrame(id) {
         tmp11Result2.prefetchProxyTicket(application_id, getChannelIdForEmbeddedSurfaceDefault(tmp4), tmp4.type);
         const promise = loadEmbeddedAppCSPForLaunchDefault(application_id);
         promise.catch(React4);
-        const useApplication = tmp11(6868).useApplication;
+        const useApplication = tmp11(6875).useApplication;
         const items = [application_id];
         const many = useApplication.fetchMany(items);
         many.catch(React4);

@@ -1,25 +1,24 @@
-// Module ID: 11619
-// Function ID: 11620
+// Module ID: 11838
+// Function ID: 11839
 // Name: StageMusicManager
-// Dependencies: [4857, 2012, 4908, 5668, 6700, 4862, 11617, 11620, 558, 576, 504, 6752, 6746, 7274, 2]
-// Exports: shouldShowStageMusicMuteButton
+// Dependencies: [4858, 2007, 4912, 5674, 6707, 4863, 11836, 11011, 504, 6759, 6753, 7281, 2]
+// Exports: shouldShowStageMusicMuteButton, useShowStageMusicMuteButton
 
-// Module 11619 (StageMusicManager)
-import StageChannelParticipants from "StageChannelParticipants" /* 6746 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6700 */;
-import StageInstanceStore from "StageInstanceStore" /* 4862 */;
-import StageMusicStore from "StageMusicStore" /* 11617 */;
-import SoundUtils from "SoundUtils" /* 11620 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+// Module 11838 (StageMusicManager)
+import StageChannelParticipants from "StageChannelParticipants" /* 6753 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6707 */;
+import StageInstanceStore from "StageInstanceStore" /* 4863 */;
+import StageMusicStore from "StageMusicStore" /* 11836 */;
+import SoundUtils from "SoundUtils" /* 11011 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, voiceState;
 
 function checkVoiceStates() {
   const voiceChannelId = SelectedChannelStore.getVoiceChannelId();
@@ -77,139 +76,6 @@ function checkVoiceStates() {
 }
 let c9 = false;
 const authStore = SoundUtils.createSound("stage_waiting", "stage_waiting", MediaEngineStore.getOutputVolume() / 400);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowStageMusicMuteButton(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return SelectedChannelStore.getVoiceChannelId() === closure_0;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmpResult3 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = tmpResult3.useStageParticipants(arg0, tmp(6746).StageChannelParticipantNamedIndex.SPEAKER);
-  if (cResult[3] !== stageParticipants) {
-    let tmp9;
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor(voiceState) {
-          voiceState = voiceState.voiceState;
-          return !voiceState.isVoiceMuted();
-        }
-      }
-      cResult[5] = S;
-      tmp9 = S;
-    } else {
-      class S {
-        constructor(voiceState) {
-          voiceState = voiceState.voiceState;
-          return !voiceState.isVoiceMuted();
-        }
-      }
-    }
-    const found = stageParticipants.find(tmp9);
-    cResult[3] = stageParticipants;
-    cResult[4] = found;
-  } else {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-    const items1 = [StageInstanceStore];
-    cResult[6] = items1;
-  } else {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-  }
-  if (cResult[7] !== arg0) {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-    cResult[7] = arg0;
-    cResult[8] = tmp13;
-  } else {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-  }
-  require("get initialized");
-  if (stateFromStores) {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-  }
-  if (stateFromStores) {
-    class S {
-      constructor(voiceState) {
-        voiceState = voiceState.voiceState;
-        return !voiceState.isVoiceMuted();
-      }
-    }
-  }
-  return stateFromStores;
-}) : (function useShowStageMusicMuteButton(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [SelectedChannelStore];
-  const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, () => SelectedChannelStore.getVoiceChannelId() === closure_0);
-  const obj2 = require("StageChannelParticipantStoreHooks");
-  const stageParticipants = obj2.useStageParticipants(arg0, require("StageChannelParticipants").StageChannelParticipantNamedIndex.SPEAKER);
-  const items1 = [StageInstanceStore];
-  const tmp2 = null != stageParticipants.find((voiceState) => {
-    voiceState = voiceState.voiceState;
-    return !voiceState.isVoiceMuted();
-  });
-  const obj3 = require("get initialized");
-  if (stateFromStores) {
-    stateFromStores = null == obj3.useStateFromStores(items1, () => StageInstanceStore.getStageInstanceByChannel(closure_0));
-  }
-  if (stateFromStores) {
-    stateFromStores = !tmp2;
-  }
-  return stateFromStores;
-});
 class StageMusicManager extends AutomaticLifecycleManager {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -270,7 +136,27 @@ const stageMusicManager = new StageMusicManager();
 const result = size.fileFinishedImporting("modules/stage_channels/StageMusicManager.tsx");
 
 export default stageMusicManager;
-export const useShowStageMusicMuteButton = tmp2;
+export function useShowStageMusicMuteButton(channelId) {
+  _require = channelId;
+  const items = [SelectedChannelStore];
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => SelectedChannelStore.getVoiceChannelId() === channelId);
+  const obj2 = require("StageChannelParticipantStoreHooks");
+  const stageParticipants = obj2.useStageParticipants(channelId, require("StageChannelParticipants").StageChannelParticipantNamedIndex.SPEAKER);
+  const items1 = [StageInstanceStore];
+  const tmp2 = null != stageParticipants.find((voiceState) => {
+    voiceState = voiceState.voiceState;
+    return !voiceState.isVoiceMuted();
+  });
+  const obj3 = require("get initialized");
+  if (stateFromStores) {
+    stateFromStores = null == obj3.useStateFromStores(items1, () => StageInstanceStore.getStageInstanceByChannel(channelId));
+  }
+  if (stateFromStores) {
+    stateFromStores = !tmp2;
+  }
+  return stateFromStores;
+}
 export function shouldShowStageMusicMuteButton(id) {
   let tmp = SelectedChannelStore.getVoiceChannelId() === id;
   const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(id, StageChannelParticipants.StageChannelParticipantNamedIndex.SPEAKER);

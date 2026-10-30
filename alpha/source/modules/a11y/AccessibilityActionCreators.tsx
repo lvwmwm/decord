@@ -1,17 +1,17 @@
-// Module ID: 16185
-// Function ID: 16186
+// Module ID: 16225
+// Function ID: 16226
 // Name: AccessibilityActionCreators
-// Dependencies: [5006, 1084, 4836, 1094, 584, 1264, 5906, 2]
+// Dependencies: [5010, 1072, 4837, 1082, 572, 1253, 5913, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setMinToastDuration, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 16185 (AccessibilityActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import StickersConstants from "StickersConstants" /* 4836 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5906 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+// Module 16225 (AccessibilityActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import StickersConstants from "StickersConstants" /* 4837 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5913 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

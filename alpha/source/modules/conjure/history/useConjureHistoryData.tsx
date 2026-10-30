@@ -1,385 +1,255 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12497
+// Function ID: 12498
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 558, 576, 12323, 12336, 12325, 2]
+// Dependencies: [32, 19, 12485, 12498, 12487, 2]
+// Exports: default, useHistoryLoad
 
-// Module 12335 (useConjureHistoryData)
-import react2 from "react" /* 576 */;
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12323 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12325 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12336 */;
+// Module 12497 (useConjureHistoryData)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12485 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12487 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12498 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, map, set;
+let c0, map, set;
 
-const f115977 = (result) => {
-  let tmp;
-  let tmp2;
-  [tmp, tmp2] = result;
-  return { points, window: _window };
+const f102092 = () => {
+  _undefined2(null);
+  _undefined((arg0) => arg0 + 1);
 };
-let react = react_mod;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHistoryLoad(arg0) {
-  let closure_129_1;
-  let closure_129_2;
+let closure_4 = [];
+let result = size.fileFinishedImporting("modules/conjure/history/useConjureHistoryData.tsx");
+
+export default function useConjureHistoryData(arg0, arg1) {
+  let c1;
+  let c2;
   let obj3;
-  let tmp3;
-  let tmp5;
-  let tmp6;
+  let tmp13;
+  let tmp15;
+  let tmp21;
+  let tmp23;
+  let tmp29;
+  let tmp31;
+  let tmp7;
   let closure_0 = arg0;
-  let obj = react2;
-  const cResult = obj.c(12);
-  let obj2 = react;
-  [tmp3, closure_129_1] = _slicedToArray(react.useState(0), 2);
-  const tmp2 = _slicedToArray(react.useState(0), 2);
-  [tmp5, closure_129_2] = _slicedToArray(react.useState(null), 2);
-  const tmp4 = _slicedToArray(react.useState(null), 2);
-  if (cResult[0] !== arg0) {
-    const fn = function n() {
-      let load;
-      let c0 = false;
-      const promise = c0();
-      promise.then((data) => {
-        let obj2;
-        const tmp = c0;
-        if (!tmp) {
-          const obj = { load, state: obj2 };
-          const _Date = Date;
-          obj2 = { status: "loaded", data, nowMs: Date.now() };
-          closure_2_2(obj);
-        }
-      }, () => {
-        const tmp = c0;
-        if (!tmp) {
-          const obj = { load, state: { status: "failed" } };
-          closure_2_2(obj);
-        }
-      });
-      return () => {
-        let c0 = true;
-      };
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === arg0) {
-    let tmp7;
-    let tmp10;
-    let tmp11;
-    if (cResult[3] === tmp3) {
-      tmp7 = cResult[4];
-    }
-    const effect = obj2.useEffect(tmp6, tmp7);
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function l() {
-        closure_1_2(null);
-        closure_1_1((arg0) => arg0 + 1);
-      };
-      cResult[5] = fn2;
-      tmp10 = fn2;
-    } else {
-      tmp10 = cResult[5];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class D {
-        constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
-        }
-      }
-      cResult[6] = D;
-      tmp11 = D;
-    } else {
-      class D {
-        constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
-        }
-      }
-    }
-    if (cResult[7] === arg0) {
-      let tmp13;
-      class D {
-        constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
-        }
-      }
-      if (cResult[10] !== tmp12) {
-        class D {
-          constructor() {
-            return closure_1_1((arg0) => arg0 + 1);
-          }
-        }
-        tmp14[0] = tmp12;
-        tmp14[1] = tmp10;
-        tmp14[2] = tmp11;
-        cResult[10] = tmp12;
-        cResult[11] = tmp14;
-        tmp13 = tmp14;
-      } else {
-        class D {
-          constructor() {
-            return closure_1_1((arg0) => arg0 + 1);
-          }
-        }
-      }
-      return tmp13;
-    }
-    if (null != tmp5) {
-      class D {
-        constructor() {
-          return closure_1_1((arg0) => arg0 + 1);
-        }
-      }
-      cResult[7] = arg0;
-      cResult[8] = tmp5;
-      cResult[9] = obj3;
-    }
-    obj3 = { status: "loading" };
-  }
-  const items = [arg0, tmp3];
-  cResult[2] = arg0;
-  cResult[3] = tmp3;
-  cResult[4] = items;
-  tmp7 = items;
-}) : (function useHistoryLoad(arg0) {
-  let closure_1;
-  let closure_129_2;
-  let first;
-  let tmp4;
-  let closure_0 = arg0;
-  [first, closure_1] = react.useState(0);
-  [tmp4, closure_129_2] = _slicedToArray(react.useState(null), 2);
-  const items = [arg0, first];
-  const tmp3 = _slicedToArray(react.useState(null), 2);
-  const effect = react.useEffect(() => {
-    let load;
-    let c0 = false;
-    const promise = c0();
+  let obj = obj3;
+  let items = [arg1];
+  const memo = obj3.useMemo(() => {
+    const obj = ConjureRestorePanelOp;
+    return obj.restorePanelEnvironments(closure_1);
+  }, items);
+  const hasItem = memo.includes("preview");
+  const items1 = [arg0];
+  const callback = obj3.useCallback(() => {
+    const obj = conjureHistoryRequests;
+    return obj.fetchVersionHistory(closure_0);
+  }, items1);
+  c2 = undefined;
+  let tmp4 = hasItem(obj3.useState(0), 2);
+  let closure_1 = tmp4[1];
+  const first = tmp4[0];
+  [tmp7, c2] = hasItem(obj3.useState(null), 2);
+  const items2 = [callback, first];
+  const tmp6 = hasItem(obj3.useState(null), 2);
+  const effect = obj3.useEffect(() => {
+    callback6 = false;
+    const promise = callback6();
     promise.then((data) => {
       let obj2;
       const tmp = c0;
       if (!tmp) {
-        const obj = { load, state: obj2 };
+        const obj = { load: callback6, state: obj2 };
         const _Date = Date;
         obj2 = { status: "loaded", data, nowMs: Date.now() };
-        closure_2_2(obj);
+        c2(obj);
       }
     }, () => {
       const tmp = c0;
       if (!tmp) {
-        const obj = { load, state: { status: "failed" } };
-        closure_2_2(obj);
+        const obj = { load: callback6, state: { status: "failed" } };
+        c2(obj);
       }
     });
     return () => {
-      let c0 = true;
+      c0 = true;
     };
-  }, items);
-  const callback = react.useCallback(() => {
-    closure_1_2(null);
-    closure_1((arg0) => arg0 + 1);
-  }, []);
-  if (null != tmp4) {
-    if (tmp4.load === arg0) {
-      const state = tmp4.state;
+  }, items2);
+  const callback1 = obj3.useCallback(f102092, []);
+  if (null != tmp7) {
+    if (tmp7.load === callback) {
+      let state = tmp7.state;
     }
-    let obj = { state: { status: "loading" }, retry: callback, refresh: tmp7 };
-    return obj;
-  }
-});
-let closure_4 = tmp2;
-let closure_5 = [];
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHistoryData(arg0, arg1) {
-  let arr;
-  let state2;
-  let tmp11;
-  let tmp14;
-  let tmp9;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(38);
-  const tmp2 = _require;
-  if (cResult[0] !== arg1) {
-    const tmp2Result = tmp2(12336);
-    const result = tmp2Result.restorePanelEnvironments(arg1);
-    cResult[0] = arg1;
-    cResult[1] = result;
-    arr = result;
-  } else {
-    arr = cResult[1];
-  }
-  if (cResult[2] !== arr) {
-    const hasItem = arr.includes("preview");
-    cResult[2] = arr;
-    cResult[3] = hasItem;
-    tmp9 = hasItem;
-  } else {
-    tmp9 = cResult[3];
-  }
-  dependencyMap = tmp9;
-  if (cResult[4] !== arg0) {
-    const fn = function v() {
-      const obj = conjureHistoryRequests;
-      return obj.fetchVersionHistory(closure_0);
-    };
-    cResult[4] = arg0;
-    cResult[5] = fn;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmp13 = state2(tmp11);
-  if (cResult[6] !== arg0) {
-    const fn2 = function h() {
+    let obj2 = { state: { status: "loading" }, retry: callback1, refresh: tmp10 };
+    const items3 = [arg0];
+    const callback2 = obj.useCallback(() => {
       const items = [, ];
       const obj = conjureHistoryRequests;
       items[0] = obj.fetchDatabaseRestorePoints(closure_0, "stable");
       const obj2 = conjureHistoryRequests;
       items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
       const allResult = all(items);
-      return allResult.then(f115977);
-    };
-    cResult[6] = arg0;
-    cResult[7] = fn2;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[7];
-  }
-  const tmp12Result = state2(tmp14);
-  let closure_2 = tmp12Result;
-  if (cResult[8] === tmp9) {
-    let tmp16;
-    if (cResult[9] === arg0) {
-      tmp16 = cResult[10];
-    }
-    const tmp12Result3 = state2(tmp16);
-    let state = tmp12Result3;
-    if (cResult[11] === tmp9) {
-      let tmp18;
-      if (cResult[12] === arg0) {
-        tmp18 = cResult[13];
+      return allResult.then((result) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = result;
+        return { points, window: _window };
+      });
+    }, items3);
+    c1 = undefined;
+    c2 = undefined;
+    [tmp13, c1] = hasItem(obj.useState(0), 2);
+    hasItem(obj.useState(0), 2);
+    [tmp15, c2] = hasItem(obj.useState(null), 2);
+    const items4 = [callback2, tmp13];
+    hasItem(obj.useState(null), 2);
+    const effect1 = obj.useEffect(() => {
+      callback6 = false;
+      const promise = callback6();
+      promise.then((data) => {
+        let obj2;
+        const tmp = c0;
+        if (!tmp) {
+          const obj = { load: callback6, state: obj2 };
+          const _Date = Date;
+          obj2 = { status: "loaded", data, nowMs: Date.now() };
+          c2(obj);
+        }
+      }, () => {
+        const tmp = c0;
+        if (!tmp) {
+          const obj = { load: callback6, state: { status: "failed" } };
+          c2(obj);
+        }
+      });
+      return () => {
+        c0 = true;
+      };
+    }, items4);
+    const callback3 = obj.useCallback(f102092, []);
+    if (null != tmp15) {
+      let state1;
+      if (tmp15.load === callback2) {
+        state1 = tmp15.state;
       }
-      const tmp12Result4 = state2(tmp18);
-      state2 = tmp12Result4;
-      const refresh = tmp12Result.refresh;
-      const refresh2 = tmp12Result3.refresh;
-      const refresh3 = tmp12Result4.refresh;
-      if (cResult[14] === refresh) {
-        if (cResult[15] === refresh2) {
-          let tmp20;
-          let tmp21;
-          if (cResult[16] === refresh3) {
-            tmp20 = cResult[17];
+      obj3 = { state: state1, retry: callback3, refresh: tmp18 };
+      const items5 = [arg0, hasItem];
+      const callback4 = obj.useCallback(() => {
+        let databaseRestorePoints;
+        const tmp = hasItem;
+        if (tmp) {
+          const obj = conjureHistoryRequests;
+          databaseRestorePoints = obj.fetchDatabaseRestorePoints(closure_0, "preview");
+        } else {
+          databaseRestorePoints = Promise.resolve(closure_4);
+        }
+        return databaseRestorePoints;
+      }, items5);
+      c1 = undefined;
+      c2 = undefined;
+      [tmp21, c1] = hasItem(obj.useState(0), 2);
+      hasItem(obj.useState(0), 2);
+      [tmp23, c2] = hasItem(obj.useState(null), 2);
+      const items6 = [callback4, tmp21];
+      hasItem(obj.useState(null), 2);
+      const effect2 = obj.useEffect(() => {
+        callback6 = false;
+        const promise = callback6();
+        promise.then((data) => {
+          let obj2;
+          const tmp = c0;
+          if (!tmp) {
+            const obj = { load: callback6, state: obj2 };
+            const _Date = Date;
+            obj2 = { status: "loaded", data, nowMs: Date.now() };
+            c2(obj);
           }
-          if (cResult[18] === arr) {
-            if (cResult[19] === tmp12Result) {
-              if (cResult[20] === tmp12Result3) {
-                if (cResult[21] === tmp12Result4) {
-                  tmp21 = cResult[22];
-                }
-                state = tmp13.state;
-                if (cResult[27] === state.data) {
-                  let tmp24;
-                  if (cResult[28] === state.status) {
-                    tmp24 = cResult[29];
-                  }
-                  state2 = tmp12Result3.state;
-                  const tmp29 = "loaded" === state2.status ? state2.data : refresh;
-                  if (cResult[30] === tmp21) {
-                    if (cResult[31] === tmp20) {
-                      if (cResult[32] === "loading" === state2.status) {
-                        if (cResult[33] === !tmp9) {
-                          if (cResult[34] === tmp29) {
-                            if (cResult[35] === tmp24) {
-                              let tmp31;
-                              if (cResult[36] === tmp13) {
-                                tmp31 = cResult[37];
-                              }
-                              return tmp31;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  let obj2 = { sharedDatabase: !tmp9, versions: null, databases: tmp21, previewBackups: tmp29, previewBackupsLoading: "loading" === state2.status, refreshAllBackups: tmp20, versionTitles: tmp24 };
-                  class B {
-                    constructor() {
-                      refresh();
-                      refresh2();
-                      refresh3();
-                    }
-                  }
-                  cResult[30] = tmp21;
-                  cResult[31] = tmp20;
-                  cResult[32] = "loading" === state2.status;
-                  cResult[33] = !tmp9;
-                  cResult[34] = tmp29;
-                  cResult[35] = tmp24;
-                  cResult[36] = tmp13;
-                  cResult[37] = obj2;
-                  tmp31 = obj2;
-                }
-                const _Map = Map;
-                const self = this;
-                const self2 = this;
-                map = new Map();
-                class B {
-                  constructor() {
-                    refresh();
-                    refresh2();
-                    refresh3();
-                  }
-                }
-                cResult[27] = state.data;
-                cResult[28] = state.status;
-                cResult[29] = map;
-                tmp24 = map;
-              }
+        }, () => {
+          const tmp = c0;
+          if (!tmp) {
+            const obj = { load: callback6, state: { status: "failed" } };
+            c2(obj);
+          }
+        });
+        return () => {
+          c0 = true;
+        };
+      }, items6);
+      const callback5 = obj.useCallback(f102092, []);
+      if (null != tmp23) {
+        let state4;
+        if (tmp23.load === callback4) {
+          state4 = tmp23.state;
+        }
+        let obj4 = { state: state4, retry: callback5, refresh: tmp26 };
+        const items7 = [arg0, hasItem];
+        let callback6 = obj.useCallback(() => {
+          let databaseRestoreWindow;
+          const tmp = hasItem;
+          if (tmp) {
+            const obj = conjureHistoryRequests;
+            databaseRestoreWindow = obj.fetchDatabaseRestoreWindow(closure_0, "preview");
+          } else {
+            databaseRestoreWindow = Promise.resolve(null);
+          }
+          return databaseRestoreWindow;
+        }, items7);
+        c1 = undefined;
+        c2 = undefined;
+        [tmp29, c1] = hasItem(obj.useState(0), 2);
+        hasItem(obj.useState(0), 2);
+        [tmp31, c2] = hasItem(obj.useState(null), 2);
+        const items8 = [callback6, tmp29];
+        hasItem(obj.useState(null), 2);
+        const effect3 = obj.useEffect(() => {
+          callback6 = false;
+          const promise = callback6();
+          promise.then((data) => {
+            let obj2;
+            const tmp = c0;
+            if (!tmp) {
+              const obj = { load: callback6, state: obj2 };
+              const _Date = Date;
+              obj2 = { status: "loaded", data, nowMs: Date.now() };
+              c2(obj);
             }
-          }
-          if (cResult[23] === tmp12Result) {
-            if (cResult[24] === tmp12Result3) {
-              let tmp22;
-              if (cResult[25] === tmp12Result4) {
-                tmp22 = cResult[26];
-              }
-              const mapped = arr.map(tmp22);
-              cResult[18] = arr;
-              cResult[19] = tmp12Result;
-              cResult[20] = tmp12Result3;
-              cResult[21] = tmp12Result4;
-              class B {
-                constructor() {
-                  refresh();
-                  refresh2();
-                  refresh3();
-                }
-              }
-              cResult[22] = mapped;
-              tmp21 = mapped;
+          }, () => {
+            const tmp = c0;
+            if (!tmp) {
+              const obj = { load: callback6, state: { status: "failed" } };
+              c2(obj);
             }
+          });
+          return () => {
+            c0 = true;
+          };
+        }, items8);
+        const callback7 = obj.useCallback(f102092, []);
+        if (null != tmp31) {
+          let state5;
+          if (tmp31.load === callback6) {
+            state5 = tmp31.state;
           }
-          const fn5 = function _(environment) {
-            let obj3;
+          const obj5 = { state: state5, retry: callback7, refresh: tmp34 };
+          const refresh = obj3.refresh;
+          const refresh2 = obj4.refresh;
+          const refresh3 = obj5.refresh;
+          const items9 = [refresh, refresh2, refresh3];
+          const callback8 = obj.useCallback(() => {
+            refresh();
+            refresh2();
+            refresh3();
+          }, items9);
+          let state2 = obj2.state;
+          const items10 = [state2];
+          const mapped = memo.map((environment) => {
             let tmp;
             const obj = { environment, backups: tmp };
             if ("preview" === environment) {
-              closure_0 = state;
-              closure_1 = state2;
-              state = state.state;
-              state2 = state2.state;
+              closure_0 = obj4;
+              closure_1 = obj5;
+              const state = obj4.state;
+              state2 = obj5.state;
               if ("failed" !== state.status) {
                 let obj2;
                 if ("failed" !== state2.status) {
@@ -395,7 +265,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
                   }
                   obj2 = { status: "loading" };
                 }
-                tmp = {
+                obj4 = {
                   state: obj2,
                   retry() {
                         closure_0.retry();
@@ -406,223 +276,84 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHi
                         closure_1.refresh();
                       }
                 };
-                const obj4 = {
-                  state: obj2,
-                  retry() {
-                        closure_0.retry();
-                        closure_1.retry();
-                      },
-                  refresh() {
-                        closure_0.refresh();
-                        closure_1.refresh();
-                      }
-                };
+                tmp = obj4;
               }
               obj2 = { status: "failed" };
             } else {
-              tmp = closure_2;
+              tmp = obj3;
             }
             return obj;
+          });
+          const state3 = obj4.state;
+          const obj6 = {
+            sharedDatabase: !hasItem,
+            versions: obj2,
+            databases: mapped,
+            previewBackups: "loaded" === state3.status ? state3.data : obj4,
+            previewBackupsLoading: "loading" === state3.status,
+            refreshAllBackups: callback8,
+            versionTitles: obj.useMemo(() => {
+                      map = new Map();
+                      if ("loaded" === state2.status) {
+                        const entries = state2.data.entries;
+                        for (const item10015 of entries) {
+                          set = map.set;
+                          let sha = item10015.sha;
+                          let obj = ConjureHistoryFormat;
+                          let result = set(sha, obj.versionTitle(item10015.subject).short);
+                          continue;
+                        }
+                      }
+                      return map;
+                    }, items10)
           };
-          cResult[23] = tmp12Result;
-          cResult[24] = tmp12Result3;
-          cResult[25] = tmp12Result4;
-          class B {
-            constructor() {
-              refresh();
-              refresh2();
-              refresh3();
-            }
-          }
-          cResult[26] = fn5;
-          tmp22 = fn5;
+          return obj6;
         }
+        state5 = { status: "loading" };
       }
-      class B {
-        constructor() {
-          refresh();
-          refresh2();
-          refresh3();
-        }
-      }
-      cResult[14] = refresh;
-      cResult[15] = refresh2;
-      cResult[16] = refresh3;
-      cResult[17] = B;
-      tmp20 = B;
+      state4 = { status: "loading" };
     }
-    const fn4 = function y() {
-      let databaseRestoreWindow;
-      const tmp = closure_1;
-      if (tmp) {
-        const obj = conjureHistoryRequests;
-        databaseRestoreWindow = obj.fetchDatabaseRestoreWindow(closure_0, "preview");
-      } else {
-        databaseRestoreWindow = Promise.resolve(null);
-      }
-      return databaseRestoreWindow;
-    };
-    cResult[11] = tmp9;
-    cResult[12] = arg0;
-    tmp18 = fn4;
+    state1 = { status: "loading" };
   }
-  const fn3 = function w() {
-    let databaseRestorePoints;
-    const tmp = closure_1;
-    if (tmp) {
-      const obj = conjureHistoryRequests;
-      databaseRestorePoints = obj.fetchDatabaseRestorePoints(closure_0, "preview");
-    } else {
-      databaseRestorePoints = Promise.resolve(closure_5);
-    }
-    return databaseRestorePoints;
-  };
-  cResult[8] = tmp9;
-  cResult[9] = arg0;
-  cResult[10] = fn3;
-  tmp16 = fn3;
-}) : (function useConjureHistoryData(arg0, arg1) {
-  let closure_3;
-  let state;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let items = [arg1];
-  const memo = react.useMemo(() => {
-    const obj = ConjureRestorePanelOp;
-    return obj.restorePanelEnvironments(closure_1);
+};
+export function useHistoryLoad(callback) {
+  let closure_1;
+  let closure_129_2;
+  let first;
+  let tmp4;
+  let closure_0 = callback;
+  [first, closure_1] = react.useState(0);
+  [tmp4, closure_129_2] = react.useState(null);
+  const items = [callback, first];
+  _slicedToArray(react.useState(null), 2);
+  const effect = react.useEffect(() => {
+    callback6 = false;
+    const promise = callback6();
+    promise.then((data) => {
+      let obj2;
+      const tmp = c0;
+      if (!tmp) {
+        const obj = { load: callback6, state: obj2 };
+        const _Date = Date;
+        obj2 = { status: "loaded", data, nowMs: Date.now() };
+        c2(obj);
+      }
+    }, () => {
+      const tmp = c0;
+      if (!tmp) {
+        const obj = { load: callback6, state: { status: "failed" } };
+        c2(obj);
+      }
+    });
+    return () => {
+      c0 = true;
+    };
   }, items);
-  const hasItem = memo.includes("preview");
-  const items1 = [arg0];
-  const tmp2 = state(react.useCallback(() => {
-    const obj = conjureHistoryRequests;
-    return obj.fetchVersionHistory(closure_0);
-  }, items1));
-  const items2 = [arg0];
-  const tmp3 = state(react.useCallback(() => {
-    const items = [, ];
-    const obj = conjureHistoryRequests;
-    items[0] = obj.fetchDatabaseRestorePoints(closure_0, "stable");
-    const obj2 = conjureHistoryRequests;
-    items[1] = obj2.fetchDatabaseRestoreWindow(closure_0, "stable");
-    const allResult = all(items);
-    return allResult.then(f115977);
-  }, items2));
-  react = tmp3;
-  const items3 = [arg0, hasItem];
-  let tmp4 = state(react.useCallback(() => {
-    let databaseRestorePoints;
-    const tmp = hasItem;
-    if (tmp) {
-      const obj = conjureHistoryRequests;
-      databaseRestorePoints = obj.fetchDatabaseRestorePoints(closure_0, "preview");
-    } else {
-      databaseRestorePoints = Promise.resolve(closure_5);
+  callback = react.useCallback(f102092, []);
+  if (null != tmp4) {
+    if (tmp4.load === callback) {
+      const state = tmp4.state;
     }
-    return databaseRestorePoints;
-  }, items3));
-  state = tmp4;
-  const items4 = [arg0, hasItem];
-  let tmp5 = state(react.useCallback(() => {
-    let databaseRestoreWindow;
-    const tmp = hasItem;
-    if (tmp) {
-      const obj = conjureHistoryRequests;
-      databaseRestoreWindow = obj.fetchDatabaseRestoreWindow(closure_0, "preview");
-    } else {
-      databaseRestoreWindow = Promise.resolve(null);
-    }
-    return databaseRestoreWindow;
-  }, items4));
-  const refresh = tmp3.refresh;
-  const refresh2 = tmp4.refresh;
-  const refresh3 = tmp5.refresh;
-  const items5 = [refresh, refresh2, refresh3];
-  const callback = react.useCallback(() => {
-    refresh();
-    refresh2();
-    refresh3();
-  }, items5);
-  state = tmp2.state;
-  const items6 = [state];
-  const mapped = memo.map((environment) => {
-    let obj3;
-    let tmp;
-    const obj = { environment, backups: tmp };
-    if ("preview" === environment) {
-      closure_0 = state;
-      closure_1 = state2;
-      state = state.state;
-      state2 = state2.state;
-      if ("failed" !== state.status) {
-        let obj2;
-        if ("failed" !== state2.status) {
-          if ("loading" !== state.status) {
-            if ("loading" !== state2.status) {
-              if (null == state2.data) {
-                obj2 = { status: "failed" };
-              } else {
-                obj2 = { status: "loaded", data: obj3, nowMs: state.nowMs };
-                obj3 = { points: state.data, window: state2.data };
-              }
-            }
-          }
-          obj2 = { status: "loading" };
-        }
-        tmp = {
-          state: obj2,
-          retry() {
-                closure_0.retry();
-                closure_1.retry();
-              },
-          refresh() {
-                closure_0.refresh();
-                closure_1.refresh();
-              }
-        };
-        const obj4 = {
-          state: obj2,
-          retry() {
-                closure_0.retry();
-                closure_1.retry();
-              },
-          refresh() {
-                closure_0.refresh();
-                closure_1.refresh();
-              }
-        };
-      }
-      obj2 = { status: "failed" };
-    } else {
-      tmp = closure_3;
-    }
-    return obj;
-  });
-  let state2 = tmp4.state;
-  let obj = {
-    sharedDatabase: !hasItem,
-    versions: tmp2,
-    databases: mapped,
-    previewBackups: "loaded" === state2.status ? state2.data : state2,
-    previewBackupsLoading: "loading" === state2.status,
-    refreshAllBackups: callback,
-    versionTitles: react.useMemo(() => {
-      map = new Map();
-      if ("loaded" === state.status) {
-        const entries = state.data.entries;
-        for (const item10015 of entries) {
-          set = map.set;
-          let sha = item10015.sha;
-          let obj = ConjureHistoryFormat;
-          let result = set(sha, obj.versionTitle(item10015.subject).short);
-          continue;
-        }
-      }
-      return map;
-    }, items6)
-  };
-  return obj;
-});
-let result = size.fileFinishedImporting("modules/conjure/history/useConjureHistoryData.tsx");
-
-export default tmp3;
-export const useHistoryLoad = tmp2;
+    return { state: { status: "loading" }, retry: callback, refresh: tmp7 };
+  }
+}

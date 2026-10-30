@@ -1,54 +1,20 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19260
+// Function ID: 19261
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 558, 576, 5952, 1125, 5952, 2]
+// Dependencies: [19, 21, 5959, 5959, 1114, 2]
+// Exports: default
 
-// Module 19157 (VoicePanelNoVideoPermissionsAlert)
+// Module 19260 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import AlertModal2 from "AlertModal" /* 5952 */;
+import intl4 from "intl" /* 1114 */;
+import AlertModal2 from "AlertModal" /* 5959 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelNoVideoPermissionsAlert() {
-  let tmp11;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = AlertModal2;
-  const dismissModalCallback = obj2.useDismissModalCallback();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.OYzPcW);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl4.t.oBH7Y2);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult2 = intl3.string(intl4.t["NX+WJN"]);
-    cResult[2] = stringResult2;
-  }
-  if (cResult[3] !== dismissModalCallback) {
-    const AlertModal = tmp(5952).AlertModal;
-    const tmp13 = <AlertModal title={tmp5} content={tmp6} actions={null} />;
-    cResult[3] = dismissModalCallback;
-    cResult[4] = tmp13;
-    tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[4];
-  }
-  return tmp11;
-}) : (function VoicePanelNoVideoPermissionsAlert() {
+const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoVideoPermissionsAlert.tsx");
+
+export default function VoicePanelNoVideoPermissionsAlert() {
   let intl3;
   const obj = AlertModal2;
   const dismissModalCallback = obj.useDismissModalCallback();
@@ -59,8 +25,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
   return <AlertModal title={intl.string(intl4.t.OYzPcW)} content={intl2.string(intl4.t.oBH7Y2)} actions={null} />;
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelNoVideoPermissionsAlert.tsx");
-
-export default tmp3;
+};
 export const VOICE_PANEL_NO_VIDEO_PERMS_KEY = "voice-panel-no-video-perms";

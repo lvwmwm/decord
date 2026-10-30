@@ -1,14 +1,14 @@
-// Module ID: 16274
-// Function ID: 16275
+// Module ID: 16314
+// Function ID: 16315
 // Name: auth
-// Dependencies: [2043, 1084, 9300, 2029, 1120, 16275, 2]
+// Dependencies: [2040, 1072, 9313, 2026, 1109, 16315, 2]
 
-// Module 16274 (auth)
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2029 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 16275 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import Constants from "Constants" /* 1084 */;
+// Module 16314 (auth)
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2026 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 16315 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

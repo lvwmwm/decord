@@ -1,40 +1,32 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 17027
+// Function ID: 17028
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 7834, 6768, 21, 5005, 587, 558, 576, 7841, 9637, 5701, 1125, 9636, 9674, 6771, 16943, 504, 14614, 7856, 16974, 16976, 5302, 9672, 7859, 9639, 9642, 6775, 17010, 17012, 17013, 7854, 8012, 5271, 2]
+// Dependencies: [32, 19, 17, 7839, 6775, 21, 5009, 575, 7846, 9662, 5707, 1114, 9661, 9699, 6778, 16997, 504, 14647, 7861, 5267, 17028, 17030, 9697, 7864, 9664, 9667, 6782, 17064, 17066, 17067, 7859, 8018, 5619, 2]
+// Exports: default
 
-// Module 16973 (QuestBottomSheet)
+// Module 17027 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
-import react3 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7854 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
-import WarningIcon2 from "WarningIcon" /* 8012 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9636 */;
-import QuestActionCreators from "QuestActionCreators" /* 9637 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9674 */;
-import QuestHooks from "QuestHooks" /* 16943 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16974 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 16976 */;
-import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 17010 */;
-import QuestBottomSheetTaskSelectDefault from "QuestBottomSheetTaskSelect" /* 17012 */;
-import QuestBottomSheetConsoleConnectDefault from "QuestBottomSheetConsoleConnect" /* 17013 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7834 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
+import nativeDefault from "native" /* 575 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7859 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9661 */;
+import QuestHooks from "QuestHooks" /* 16997 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17028 */;
+import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 17064 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import QuestStore from "QuestStore" /* 7839 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const react_mod = react2;
-let BottomSheet, _require, dependencyMap, importDefault;
+const react = react2;
+let BottomSheet, dependencyMap;
 
 let c10;
 let c9;
@@ -43,891 +35,10 @@ let metroImportAll;
 let obj3;
 let obj4;
 let obj5;
+let tmp11;
 let unpackModuleId;
-let react = react_mod;
-let useState = react2.useState;
-const View = react_native.View;
-({ QuestsExperimentLocations: metroImportAll, QuestTaskPlatform: c9 } = QuestConstants);
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
-const QuestBottomSheetStep = { TASK_SELECT: "TASK_SELECT", CONSOLE_CONNECT: "CONSOLE_CONNECT", TASK_STATUS: "TASK_STATUS" };
-let createStyles = createStyles_mod;
-let obj2 = { contentContainer: obj3, microphoneUnit: obj4, microphoneUnitHeader: obj5 };
-obj3 = { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
-createStyles = createStyles.createStyles;
-obj4 = { display: "flex", gap: nativeDefault.space.PX_8, marginHorizontal: -nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-obj5 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-let closure_14 = createStyles(obj2);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefibrillator(quest) {
-  let _slicedToArray;
-  let tmp11;
-  let tmp4;
-  let tmp7;
-  let tmp9;
-  _require = quest;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(10);
-  if (cResult[0] !== quest) {
-    const obj2 = { quest, location: constants.QUEST_HOME_MOBILE };
-    const tmpResult = tmp(7841);
-    const questLogger = tmpResult.getQuestLogger(obj2);
-    cResult[0] = quest;
-    cResult[1] = questLogger;
-    tmp4 = questLogger;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let closure_1 = tmp4;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [];
-    cResult[2] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[2];
-  }
-  [tmp9, dependencyMap] = useState(tmp7);
-  _slicedToArray(useState(tmp7), 2);
-  const tmp10 = _slicedToArray(useState(false), 2);
-  [tmp11, _slicedToArray] = tmp10;
-  if (cResult[3] === tmp4) {
-    let tmp12;
-    if (cResult[4] === quest) {
-      tmp12 = cResult[5];
-    }
-    if (cResult[6] === tmp9) {
-      if (cResult[7] === tmp11) {
-        let tmp13;
-        if (cResult[8] === tmp12) {
-          tmp13 = cResult[9];
-        }
-        return tmp13;
-      }
-    }
-    const obj3 = { errorHints: tmp9, isActive: tmp11, start: tmp12 };
-    cResult[6] = tmp9;
-    cResult[7] = tmp11;
-    cResult[8] = tmp12;
-    cResult[9] = obj3;
-    tmp13 = obj3;
-  }
-  const fn = function c() {
-    let logger;
-    _slicedToArray(true);
-    let obj = QuestActionCreators;
-    const result = obj.manuallyStartConsoleQuest(quest.id);
-    const nextPromise = result.then((errorHints) => closure_1_2(errorHints.errorHints));
-    const catchPromise = nextPromise.catch((error) => {
-      let intl;
-      closure_1_2([]);
-      logger.error("Failed to start console quest", error);
-      const obj = { text: intl.string(quest(dependencyMap[13]).t.CKsXk3), variant: "critical" };
-      const open = logger(dependencyMap[12]).open;
-      logger(dependencyMap[12]);
-      intl = quest(dependencyMap[13]).intl;
-      open("START_DEFIBRILLATOR_ERROR", obj);
-    });
-    catchPromise.finally(() => closure_1_3(false));
-  };
-  cResult[3] = tmp4;
-  cResult[4] = quest;
-  cResult[5] = fn;
-  tmp12 = fn;
-}) : (function useDefibrillator(quest) {
-  let closure_2;
-  let closure_3;
-  let items;
-  _require = quest;
-  let obj = require("getQuestLogger");
-  const obj2 = { quest, location: constants.QUEST_HOME_MOBILE };
-  const questLogger = obj.getQuestLogger(obj2);
-  const tmp2 = quest(useState([]), 2);
-  dependencyMap = tmp4;
-  const first = tmp2[0];
-  const tmp5 = quest(useState(false), 2);
-  quest = tmp6;
-  const obj3 = {
-    errorHints: first,
-    isActive: tmp5[0],
-    start: react.useCallback(() => {
-      let logger;
-      closure_3(true);
-      let obj = QuestActionCreators;
-      const result = obj.manuallyStartConsoleQuest(quest.id);
-      const nextPromise = result.then((errorHints) => closure_1_2(errorHints.errorHints));
-      const catchPromise = nextPromise.catch((error) => {
-        let intl;
-        closure_1_2([]);
-        logger.error("Failed to start console quest", error);
-        const obj = { text: intl.string(quest(closure_2[13]).t.CKsXk3), variant: "critical" };
-        const open = questLogger(closure_2[12]).open;
-        questLogger(closure_2[12]);
-        intl = quest(closure_2[13]).intl;
-        open("START_DEFIBRILLATOR_ERROR", obj);
-      });
-      catchPromise.finally(() => closure_1_3(false));
-    }, items)
-  };
-  items = [quest, questLogger, tmp5[1], tmp2[1]];
-  return obj3;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSteps(quest) {
-  let tmp13;
-  let tmp14;
-  let tmp19;
-  let tmp20;
-  let tmp6;
-  const obj = react3;
-  const cResult = obj.c(36);
-  quest = quest.quest;
-  const userStatus = quest.userStatus;
-  let completedAt;
-  const initialStep = quest.initialStep;
-  if (userStatus != null) {
-    completedAt = userStatus.completedAt;
-  }
-  const tmpResult = hooks_QuestHooks;
-  const xboxAndPlaystationAccounts = tmpResult.useConnectedAccounts().xboxAndPlaystationAccounts;
-  if (cResult[0] === quest) {
-    let arr;
-    if (cResult[1] === xboxAndPlaystationAccounts) {
-      arr = cResult[2];
-    }
-    const tmpResult5 = hooks_QuestHooks;
-    const questTaskDetails = tmpResult5.useQuestTaskDetails(quest);
-    const tmpResult6 = hooks_QuestHooks;
-    const isQuestProgressing = tmpResult6.useIsQuestProgressing(quest);
-    const tmpResult7 = hooks_QuestHooks;
-    [tmp13, r10054, tmp14] = tmpResult7.useTaskPlatformScreen(quest, questTaskDetails);
-    importDefault = tmp14;
-    let tmp16 = 0 === arr.length;
-    useState = react.useState;
-    _slicedToArray(tmpResult7.useTaskPlatformScreen(quest, questTaskDetails), 3);
-    if (tmp16) {
-      tmp16 = !tmp5;
-    }
-    if (tmp16) {
-      tmp16 = tmp13 === tmp(6771).TaskPlatformScreen.CONSOLE;
-    }
-    if (!tmp16) {
-      tmp16 = initialStep === obj.CONSOLE_CONNECT;
-    }
-    [tmp19, tmp20] = _slicedToArray(useState(tmp16), 2);
-    dependencyMap = tmp20;
-    _slicedToArray(useState(tmp16), 2);
-    const tmp22 = 0 !== arr.length || null != completedAt || tmp13 !== QuestTypes.TaskPlatformScreen.CONSOLE || tmp19;
-    if (!tmp22) {
-      tmp20(true);
-    }
-    if (cResult[5] !== tmp14) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      cResult[5] = tmp14;
-      cResult[6] = C;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      cResult[7] = tmp27;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      cResult[8] = tmp29;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      tmp31[0] = obj.TASK_STATUS;
-      const items = [tmp31];
-      cResult[9] = items;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    if (cResult[10] !== tmp19) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      tmp34[0] = obj.CONSOLE_CONNECT;
-      tmp34[1] = tmp19;
-      tmp34[2] = tmp28;
-      cResult[10] = tmp19;
-      cResult[11] = tmp34;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    if (!(isQuestProgressing || questTaskDetails.progressSeconds > 0)) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    if (cResult[12] !== undefined) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      tmp38[0] = obj.TASK_STATUS;
-      tmp38[2] = undefined;
-      cResult[12] = undefined;
-      cResult[13] = tmp38;
-    } else {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-    }
-    if (cResult[14] === tmp33) {
-      class C {
-        constructor() {
-          tmp = closure_2(false);
-          tmp2 = closure_1(null);
-          return;
-        }
-      }
-      const tmp41 = tmp13 === QuestTypes.TaskPlatformScreen.SELECT;
-      if (cResult[17] !== tmp41) {
-        class C {
-          constructor() {
-            tmp = closure_2(false);
-            tmp2 = closure_1(null);
-            return;
-          }
-        }
-        tmp43[0] = obj.TASK_SELECT;
-        tmp43[1] = tmp41;
-        cResult[17] = tmp41;
-        cResult[18] = tmp43;
-      } else {
-        class C {
-          constructor() {
-            tmp = closure_2(false);
-            tmp2 = closure_1(null);
-            return;
-          }
-        }
-      }
-      const tmp45 = tmp13 === QuestTypes.TaskPlatformScreen.CONSOLE && tmp19;
-      if (cResult[19] === tmp24) {
-        class C {
-          constructor() {
-            tmp = closure_2(false);
-            tmp2 = closure_1(null);
-            return;
-          }
-        }
-        let tmp48;
-        if (!(isQuestProgressing || questTaskDetails.progressSeconds > 0)) {
-          class C {
-            constructor() {
-              tmp = closure_2(false);
-              tmp2 = closure_1(null);
-              return;
-            }
-          }
-          tmp48 = tmp24;
-        }
-        if (cResult[22] !== tmp48) {
-          class C {
-            constructor() {
-              tmp = closure_2(false);
-              tmp2 = closure_1(null);
-              return;
-            }
-          }
-          tmp50[0] = obj.TASK_STATUS;
-          tmp50[2] = tmp48;
-          cResult[22] = tmp48;
-          cResult[23] = tmp50;
-        } else {
-          class C {
-            constructor() {
-              tmp = closure_2(false);
-              tmp2 = closure_1(null);
-              return;
-            }
-          }
-        }
-        if (cResult[24] === tmp42) {
-          class C {
-            constructor() {
-              tmp = closure_2(false);
-              tmp2 = closure_1(null);
-              return;
-            }
-          }
-        }
-        const items1 = [tmp42, tmp46, tmp49];
-        cResult[24] = tmp42;
-        cResult[25] = tmp46;
-        cResult[26] = tmp49;
-        cResult[27] = items1;
-      }
-      const obj2 = { type: obj.CONSOLE_CONNECT, shouldShow: tmp45, onBack: tmp24, onNext: tmp28 };
-      cResult[19] = tmp24;
-      cResult[20] = tmp45;
-      cResult[21] = obj2;
-    }
-    const items2 = [tmp33, tmp37];
-    cResult[14] = tmp33;
-    cResult[15] = tmp37;
-    cResult[16] = items2;
-  }
-  if (cResult[3] !== xboxAndPlaystationAccounts) {
-    class C {
-      constructor() {
-        tmp = closure_2(false);
-        tmp2 = closure_1(null);
-        return;
-      }
-    }
-    cResult[3] = xboxAndPlaystationAccounts;
-    cResult[4] = tmp7;
-    tmp6 = tmp7;
-  } else {
-    class C {
-      constructor() {
-        tmp = closure_2(false);
-        tmp2 = closure_1(null);
-        return;
-      }
-    }
-  }
-  const tmpResult8 = QuestPlatformUtils;
-  const supportedConsolesResult = tmpResult8.supportedConsoles(quest);
-  const found = supportedConsolesResult.filter(tmp6);
-  cResult[0] = quest;
-  cResult[1] = xboxAndPlaystationAccounts;
-  cResult[2] = found;
-  arr = found;
-}) : (function useSteps(quest) {
-  let closure_4;
-  let length;
-  let onNext;
-  let xboxAndPlaystationAccounts;
-  let first;
-  quest = undefined;
-  react = undefined;
-  let first1;
-  let closure_6;
-  let isQuestProgressing;
-  let onBack;
-  let memo1;
-  let memo2;
-  let memo3;
-  let hasWatchVideoOnMobileTasks;
-  let isMobileActivityQuest;
-  function showConsoleSelect() {
-    return closure_6(true);
-  }
-  function hideConsoleSelect() {
-    return closure_6(false);
-  }
-  const userStatus = quest.userStatus;
-  let completedAt;
-  const initialStep = quest.initialStep;
-  if (userStatus != null) {
-    completedAt = userStatus.completedAt;
-  }
-  let tmp2 = null != completedAt;
-  let tmp3 = quest;
-  let obj = quest(first[14]);
-  xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = react;
-  let items = [quest, xboxAndPlaystationAccounts];
-  const memo = react.useMemo(() => {
-    const obj = QuestPlatformUtils;
-    const supportedConsolesResult = obj.supportedConsoles(quest);
-    return supportedConsolesResult.filter((item) => {
-      let closure_0 = item;
-      return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
-    });
-  }, items);
-  let obj3 = quest(first[14]);
-  const questTaskDetails = obj3.useQuestTaskDetails(quest);
-  const obj4 = quest(first[14]);
-  isQuestProgressing = obj4.useIsQuestProgressing(quest);
-  let tmp7 = quest;
-  const obj5 = quest(first[14]);
-  const tmp8 = quest(obj5.useTaskPlatformScreen(quest, questTaskDetails), 3);
-  first = tmp8[0];
-  quest = tmp10;
-  react = tmp11;
-  let tmp12 = 0 === memo.length;
-  useState = react.useState;
-  if (tmp12) {
-    tmp12 = !tmp2;
-  }
-  if (tmp12) {
-    tmp12 = first === tmp3(tmp4[16]).TaskPlatformScreen.CONSOLE;
-  }
-  if (!tmp12) {
-    tmp12 = initialStep === memo3.CONSOLE_CONNECT;
-  }
-  const tmp7Result = tmp7(useState(tmp12), 2);
-  first1 = tmp7Result[0];
-  closure_6 = tmp16;
-  if (!isQuestProgressing) {
-    isQuestProgressing = questTaskDetails.progressSeconds > 0;
-  }
-  const tmp17 = 0 !== memo.length || tmp2 || first !== tmp3(first[16]).TaskPlatformScreen.CONSOLE || first1;
-  if (!tmp17) {
-    tmp7Result[1](true);
-  }
-  const items1 = [tmp8[2]];
-  onBack = obj2.useCallback(() => {
-    closure_6(false);
-    closure_4(null);
-  }, items1);
-  memo1 = obj2.useMemo(() => {
-    const items = [];
-    const obj = { type: memo3.TASK_STATUS, shouldShow: true };
-    items[0] = obj;
-    return items;
-  }, []);
-  const items2 = [first1, isQuestProgressing];
-  memo2 = obj2.useMemo(() => {
-    let obj;
-    let tmp;
-    obj = { type: obj.CONSOLE_CONNECT, shouldShow: first1, onNext: hideConsoleSelect };
-    const items = [obj, ];
-    const obj2 = { type: obj.TASK_STATUS, shouldShow: true, onBack: tmp };
-    tmp = undefined;
-    if (!isQuestProgressing) {
-      tmp = showConsoleSelect;
-    }
-    items[1] = obj2;
-    return items;
-  }, items2);
-  const items3 = [first, first1, isQuestProgressing, onBack];
-  memo3 = obj2.useMemo(() => {
-    let obj;
-    let tmp7;
-    obj = { type: obj.TASK_SELECT, shouldShow: first === QuestTypes.TaskPlatformScreen.SELECT };
-    const items = [obj, , ];
-    let tmp6 = onBack;
-    items[1] = { type: obj.CONSOLE_CONNECT, shouldShow: first === QuestTypes.TaskPlatformScreen.CONSOLE && first1, onBack, onNext: hideConsoleSelect };
-    const obj3 = { type: obj.TASK_STATUS, shouldShow: true, onBack: tmp7 };
-    tmp7 = undefined;
-    const obj2 = { type: obj.CONSOLE_CONNECT, shouldShow: first === QuestTypes.TaskPlatformScreen.CONSOLE && first1, onBack, onNext: hideConsoleSelect };
-    first === QuestTypes.TaskPlatformScreen.CONSOLE && first1;
-    const tmp2 = first;
-    if (!isQuestProgressing) {
-      if (tmp2 === QuestTypes.TaskPlatformScreen.CONSOLE) {
-        tmp6 = showConsoleSelect;
-      }
-      tmp7 = tmp6;
-    }
-    items[2] = obj3;
-    return items;
-  }, items3);
-  const tmp3Result = tmp3(first[17]);
-  hasWatchVideoOnMobileTasks = tmp3Result.useHasWatchVideoOnMobileTasks(quest.config);
-  const tmp3Result2 = tmp3(first[17]);
-  isMobileActivityQuest = tmp3Result2.useMobileActivityQuest(quest).isMobileActivityQuest;
-  const items4 = [tmp8[1], memo3, memo1, memo2, hasWatchVideoOnMobileTasks, isMobileActivityQuest];
-  const memo4 = obj2.useMemo(() => {
-    const hasItem = 1 === length.length && arr.includes(showConsoleSelect.DESKTOP);
-    const hasItem1 = 1 === arr.length && arr.includes(showConsoleSelect.CONSOLE);
-    let arr2 = memo3;
-    if (!hasItem) {
-      const tmp5 = hasWatchVideoOnMobileTasks;
-      if (!tmp5) {
-        const tmp6 = isMobileActivityQuest;
-        if (!tmp6) {
-          if (hasItem1) {
-            arr2 = memo2;
-          }
-        }
-        let found = arr2.find((shouldShow) => shouldShow.shouldShow);
-        if (found == null) {
-          found = arr2.at(-1);
-        }
-        return found;
-      }
-    }
-    arr2 = memo1;
-  }, items4);
-  const items5 = [memo4.type, ];
-  onBack = undefined;
-  if (memo4 != null) {
-    onBack = memo4.onBack;
-  }
-  const obj6 = { onBack, onNext };
-  onNext = undefined;
-  if (memo4 != null) {
-    onNext = memo4.onNext;
-  }
-  items5[1] = obj6;
-  return items5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomSheetConnected(questId) {
-  let first;
-  let sourceQuestContent;
-  let tmp6;
-  let obj = questId(sourceQuestContent[9]);
-  const cResult = obj.c(12);
-  questId = questId.questId;
-  const initialStep = questId.initialStep;
-  sourceQuestContent = questId.sourceQuestContent;
-  const questContentPosition = questId.questContentPosition;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [QuestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== questId) {
-    const fn = function o() {
-      return QuestStore.getQuest(questId);
-    };
-    cResult[1] = questId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = questId(sourceQuestContent[18]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (null != stateFromStores) {
-    if (cResult[3] === initialStep) {
-      if (cResult[4] === stateFromStores) {
-        let tmp8;
-        if (cResult[5] === sourceQuestContent) {
-          tmp8 = cResult[6];
-        }
-        class T {
-          constructor() {
-            const obj = { quest: stateFromStores, initialStep, sourceQuestContent };
-            return authStore(closure_17, obj);
-          }
-        }
-        const obj2 = { overrideVisibility: true, questOrQuests: stateFromStores, questContent: questId(sourceQuestContent[16]).QuestContent.QUEST_BOTTOM_SHEET, questContentPosition, sourceQuestContent, children: tmp8 };
-        const QuestContentImpressionTrackerNative = tmp(tmp2[19]).QuestContentImpressionTrackerNative;
-        cResult[7] = stateFromStores;
-        cResult[8] = questContentPosition;
-        cResult[9] = sourceQuestContent;
-        cResult[10] = tmp8;
-        cResult[11] = closure_10(QuestContentImpressionTrackerNative, obj2);
-        const tmp11 = closure_10(QuestContentImpressionTrackerNative, obj2);
-      }
-    }
-    class T {
-      constructor() {
-        const obj = { quest: stateFromStores, initialStep, sourceQuestContent };
-        return authStore(closure_17, obj);
-      }
-    }
-    cResult[3] = initialStep;
-    cResult[4] = stateFromStores;
-    cResult[5] = sourceQuestContent;
-    cResult[6] = T;
-    tmp8 = T;
-  }
-  return null;
-}) : (function QuestBottomSheetConnected(questContentPosition) {
-  let initialStep;
-  let require;
-  let sourceQuestContent;
-  ({ questId: require, initialStep: importDefault, sourceQuestContent } = questContentPosition);
-  questContentPosition = questContentPosition.questContentPosition;
-  let obj = require("get initialized");
-  const items = [QuestStore];
-  const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(_require));
-  let tmp4 = null;
-  if (null != stateFromStores) {
-    const obj2 = {
-      overrideVisibility: true,
-      questOrQuests: stateFromStores,
-      questContent: require("QuestTypes").QuestContent.QUEST_BOTTOM_SHEET,
-      questContentPosition,
-      sourceQuestContent,
-      children() {
-          const obj = { quest: stateFromStores, initialStep: importDefault, sourceQuestContent };
-          return authStore(closure_17, obj);
-        }
-    };
-    const QuestContentImpressionTrackerNative = tmp(tmp2[19]).QuestContentImpressionTrackerNative;
-    tmp4 = closure_10(QuestContentImpressionTrackerNative, obj2);
-  }
-  return tmp4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomSheet(arg0) {
-  let closure_0;
-  let defibrillator;
-  let first;
-  let handleTaskSelect;
-  let initialStep;
-  let obj5;
-  let showMicrophone;
-  let sourceQuestContent;
-  let step;
-  let stepActions;
-  const obj = react3;
-  const cResult = obj.c(39);
-  ({ quest, initialStep, sourceQuestContent } = arg0);
-  const tmp4 = closure_14();
-  if (cResult[0] === initialStep) {
-    if (cResult[1] === quest) {
-      let tmp5;
-      let tmp9;
-      let tmp11;
-      let tmp18;
-      let tmp21;
-      if (cResult[2] === sourceQuestContent) {
-        tmp5 = cResult[3];
-      }
-      ({ step, defibrillator, stepActions, handleTaskSelect, showMicrophone } = closure_18(tmp5));
-      closure_18(tmp5);
-      const tmpResult = QuestHooks;
-      const hasWatchVideoOnMobileTasks = tmpResult.useHasWatchVideoOnMobileTasks(quest.config);
-      if (cResult[4] !== quest) {
-        const tmpResult3 = QuestTaskUtils;
-        const hasWatchVideoTasksResult = tmpResult3.hasWatchVideoTasks(quest);
-        cResult[4] = quest;
-        cResult[5] = hasWatchVideoTasksResult;
-        tmp9 = hasWatchVideoTasksResult;
-      } else {
-        tmp9 = cResult[5];
-      }
-      if (cResult[6] !== quest) {
-        const tmpResult4 = QuestTaskUtils;
-        const isInGameQuestResult = tmpResult4.isInGameQuest(quest);
-        cResult[6] = quest;
-        cResult[7] = isInGameQuestResult;
-        tmp11 = isInGameQuestResult;
-      } else {
-        tmp11 = cResult[7];
-      }
-      [first, closure_0] = useState(0);
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        function handleLayout(nativeEvent) {
-          closure_0(nativeEvent.nativeEvent.layout.height);
-        }
-        cResult[8] = handleLayout;
-        tmp18 = handleLayout;
-      } else {
-        tmp18 = cResult[8];
-      }
-      let tmp19 = !tmp11;
-      if (tmp19) {
-        let tmp20 = !tmp9;
-        if (tmp9) {
-          tmp20 = hasWatchVideoOnMobileTasks;
-        }
-        tmp19 = tmp20;
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { isInQuestBottomSheet: true };
-        cResult[9] = obj2;
-        tmp21 = obj2;
-      } else {
-        tmp21 = cResult[9];
-      }
-      if (cResult[10] === quest) {
-        let tmp22;
-        if (cResult[11] === step) {
-          tmp22 = cResult[12];
-        }
-        if (cResult[13] === defibrillator) {
-          if (cResult[14] === quest) {
-            if (cResult[15] === tmp19) {
-              if (cResult[16] === sourceQuestContent) {
-                if (cResult[17] === step) {
-                  let tmp27;
-                  let tmp32;
-                  if (cResult[18] === stepActions) {
-                    tmp27 = cResult[19];
-                  }
-                  let num19 = 0;
-                  if (step !== obj.TASK_SELECT) {
-                    num19 = first;
-                  }
-                  if (cResult[20] !== num19) {
-                    const obj3 = { paddingBottom: num19 };
-                    cResult[20] = num19;
-                    cResult[21] = obj3;
-                    tmp32 = obj3;
-                  } else {
-                    tmp32 = cResult[21];
-                  }
-                  if (cResult[22] === tmp4.contentContainer) {
-                    let tmp33;
-                    if (cResult[23] === tmp32) {
-                      tmp33 = cResult[24];
-                    }
-                    if (cResult[25] === defibrillator) {
-                      if (cResult[26] === handleTaskSelect) {
-                        if (cResult[27] === quest) {
-                          if (cResult[28] === showMicrophone) {
-                            if (cResult[29] === sourceQuestContent) {
-                              let tmp34;
-                              if (cResult[30] === step) {
-                                tmp34 = cResult[31];
-                              }
-                              if (cResult[32] === tmp33) {
-                                let tmp39;
-                                if (cResult[33] === tmp34) {
-                                  tmp39 = cResult[34];
-                                }
-                                if (cResult[35] === tmp39) {
-                                  if (cResult[36] === tmp22) {
-                                    let tmp43;
-                                    if (cResult[37] === tmp27) {
-                                      tmp43 = cResult[38];
-                                    }
-                                    return tmp43;
-                                  }
-                                }
-                                const Provider = context.Provider;
-                                const obj4 = { value: tmp21, children: authStore(Sheet_BottomSheet.BottomSheet, obj5) };
-                                obj5 = { header: tmp22, footer: tmp27, startExpanded: true, children: tmp39 };
-                                const tmp46 = authStore(Provider, obj4);
-                                cResult[35] = tmp39;
-                                cResult[36] = tmp22;
-                                cResult[37] = tmp27;
-                                cResult[38] = tmp46;
-                                tmp43 = tmp46;
-                              }
-                              const obj6 = { style: tmp33, children: tmp34 };
-                              const tmp42 = authStore(View, obj6);
-                              cResult[32] = tmp33;
-                              cResult[33] = tmp34;
-                              cResult[34] = tmp42;
-                              tmp39 = tmp42;
-                            }
-                          }
-                        }
-                      }
-                    }
-                    const obj7 = { defibrillator, quest, handleTaskSelect, location: metroImportAll.QUEST_HOME_MOBILE, showMicrophone, sourceQuestContent, step };
-                    const tmp38 = authStore(closure_19, obj7);
-                    cResult[25] = defibrillator;
-                    cResult[26] = handleTaskSelect;
-                    cResult[27] = quest;
-                    cResult[28] = showMicrophone;
-                    cResult[29] = sourceQuestContent;
-                    cResult[30] = step;
-                    cResult[31] = tmp38;
-                    tmp34 = tmp38;
-                  }
-                  const items = [tmp4.contentContainer, tmp32];
-                  cResult[22] = tmp4.contentContainer;
-                  cResult[23] = tmp32;
-                  cResult[24] = items;
-                  tmp33 = items;
-                }
-              }
-            }
-          }
-        }
-        let tmp28 = null;
-        if (tmp19) {
-          const obj8 = { quest, sourceQuestContent, step, isDefibrilating: defibrillator.isActive, onLayout: tmp18, onBack: stepActions.onBack, onDefib: defibrillator.start, onConnectConsoleNext: stepActions.onNext };
-          tmp28 = authStore(QuestBottomSheetFooterDefault, obj8);
-        }
-        cResult[13] = defibrillator;
-        cResult[14] = quest;
-        cResult[15] = tmp19;
-        cResult[16] = sourceQuestContent;
-        cResult[17] = step;
-        cResult[18] = stepActions;
-        cResult[19] = tmp28;
-        tmp27 = tmp28;
-      }
-      const obj9 = { quest, step, location: metroImportAll.QUEST_HOME_MOBILE };
-      const tmp26 = authStore(QuestBottomSheetHeaderDefault, obj9);
-      cResult[10] = quest;
-      cResult[11] = step;
-      cResult[12] = tmp26;
-      tmp22 = tmp26;
-    }
-  }
-  const obj10 = { quest, initialStep, location: metroImportAll.QUEST_HOME_MOBILE, sourceQuestContent };
-  cResult[0] = initialStep;
-  cResult[1] = quest;
-  cResult[2] = sourceQuestContent;
-  cResult[3] = obj10;
-  tmp5 = obj10;
-}) : (function QuestBottomSheet(initialStep) {
+const QuestBottomSheetFooterDefault = tmp11(17030);
+function QuestBottomSheet(initialStep) {
   let closure_0;
   let defibrillator;
   let first;
@@ -936,6 +47,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestB
   let obj6;
   let obj7;
   let obj9;
+  let quest;
   let showMicrophone;
   let sourceQuestContent;
   let step;
@@ -946,7 +58,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestB
   closure_0 = undefined;
   const obj = { quest, initialStep: initialStep.initialStep, location: metroImportAll.QUEST_HOME_MOBILE, sourceQuestContent };
   const tmp = closure_14();
-  const tmp3 = closure_18(obj);
+  const tmp3 = useEnrolledQuestContentProps(obj);
   ({ step, defibrillator, stepActions } = tmp3);
   ({ handleTaskSelect, showMicrophone } = tmp3);
   const obj2 = QuestHooks;
@@ -989,155 +101,232 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestB
     num = first;
   }
   items[1] = { paddingBottom: num };
-  obj9 = { style: items, children: authStore(closure_19, obj10) };
+  obj9 = { style: items, children: authStore(QuestBottomSheetContent, obj10) };
   obj10 = { defibrillator, quest, handleTaskSelect, location: tmp2.QUEST_HOME_MOBILE, showMicrophone, sourceQuestContent, step };
   return authStore(Provider, obj5);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnrolledQuestContentProps(quest) {
-  let _location;
-  let closure_3;
-  let getQuestImpressionId;
-  let initialStep;
-  let sourceQuestContent;
-  let tmp16;
-  let tmp17;
-  const tmp = quest;
-  let obj = quest(getQuestImpressionId[9]);
-  const cResult = obj.c(16);
-  quest = quest.quest;
-  ({ initialStep, location: _location, sourceQuestContent } = quest);
-  const obj2 = quest(getQuestImpressionId[24]);
-  const tmp2 = getQuestImpressionId;
-  getQuestImpressionId = obj2.useGetQuestImpressionId();
-  const obj3 = quest(getQuestImpressionId[14]);
-  const questTaskDetails = obj3.useQuestTaskDetails(quest);
-  const obj4 = quest(getQuestImpressionId[14]);
-  const isQuestProgressing = obj4.useIsQuestProgressing(quest);
-  const obj5 = quest(getQuestImpressionId[14]);
-  const tmp8 = quest(obj5.useTaskPlatformScreen(quest, questTaskDetails), 3);
-  quest = tmp10;
-  const first = tmp8[0];
-  quest(getQuestImpressionId[17]);
-  if (cResult[0] === initialStep) {
-    if (cResult[1] === _location) {
-      let tmp13;
-      if (cResult[2] === quest) {
-        tmp13 = cResult[3];
-      }
-      [tmp16, tmp17] = quest(closure_16(tmp13), 2);
-      quest(closure_16(tmp13), 2);
-      const tmp19 = closure_15(quest);
-      const userStatus = quest.userStatus;
-      let completedAt;
-      if (userStatus != null) {
-        completedAt = userStatus.completedAt;
-      }
-      const tmp22 = null == completedAt && !isQuestProgressing && first === tmp(tmp2[16]).TaskPlatformScreen.CONSOLE && !tmp12;
-      if (cResult[4] === getQuestImpressionId) {
-        if (cResult[5] === quest.id) {
-          if (cResult[6] === tmp8[2]) {
-            let tmp23;
-            if (cResult[7] === sourceQuestContent) {
-              tmp23 = cResult[8];
-            }
-            if (cResult[9] === tmp19) {
-              if (cResult[10] === tmp23) {
-                if (cResult[11] === quest) {
-                  if (cResult[12] === tmp22) {
-                    if (cResult[13] === tmp16) {
-                      let tmp24;
-                      if (cResult[14] === tmp17) {
-                        tmp24 = cResult[15];
-                      }
-                      return tmp24;
-                    }
-                  }
-                }
-              }
-            }
-            const obj6 = { quest, defibrillator: tmp19, step: tmp16, stepActions: tmp17, showMicrophone: tmp22, handleTaskSelect: tmp23 };
-            cResult[9] = tmp19;
-            cResult[10] = tmp23;
-            cResult[11] = quest;
-            cResult[12] = tmp22;
-            cResult[13] = tmp16;
-            cResult[14] = tmp17;
-            cResult[15] = obj6;
-            tmp24 = obj6;
-          }
-        }
-      }
-      function handleTaskSelect(arg0) {
-        let DESELECT_PLATFORM;
-        let tmp4;
-        if (arg0 === constants.CONSOLE) {
-          DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.SELECT_CONSOLE_PLATFORM;
-          tmp4 = require;
-        } else if (arg0 === tmp.DESKTOP) {
-          DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.SELECT_DESKTOP_PLATFORM;
-          tmp4 = require;
-        } else {
-          DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.DESELECT_PLATFORM;
-          tmp4 = require;
-        }
-        const tmp4Result = tmp4(9639);
-        const obj = { type: tmp4(9642).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(6775).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(6771).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: getQuestImpressionId() };
-        tmp4Result.captureAdUserAction(obj);
-        closure_3(arg0);
-      }
-      cResult[4] = getQuestImpressionId;
-      cResult[5] = quest.id;
-      cResult[6] = tmp8[2];
-      cResult[7] = sourceQuestContent;
-      cResult[8] = handleTaskSelect;
-      tmp23 = handleTaskSelect;
-    }
-  }
-  const obj7 = { quest, initialStep, location: _location };
-  cResult[0] = initialStep;
-  cResult[1] = _location;
-  cResult[2] = quest;
-  cResult[3] = obj7;
-  tmp13 = obj7;
-}) : (function useEnrolledQuestContentProps(quest) {
+}
+function useEnrolledQuestContentProps(quest) {
   let _location;
   let closure_2;
   let closure_3;
-  let initialStep;
-  let tmp10;
-  let tmp9;
+  let first;
+  let onNext;
+  let sourceQuestContent;
+  let tmp33;
+  let tmp34;
   quest = quest.quest;
-  const sourceQuestContent = quest.sourceQuestContent;
-  quest = undefined;
-  ({ initialStep, location: _location } = quest);
-  const tmp = quest;
-  let obj = quest(9672);
+  ({ location: _location, sourceQuestContent: importDefault } = quest);
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  let tmp = quest;
+  let tmp2 = dependencyMap;
+  const initialStep = quest.initialStep;
+  let obj = quest(9697);
   dependencyMap = obj.useGetQuestImpressionId();
-  const obj2 = quest(9636);
+  let obj2 = quest(9661);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
-  const obj3 = quest(9636);
+  let obj3 = quest(9661);
   const isQuestProgressing = obj3.useIsQuestProgressing(quest);
-  const obj4 = quest(9636);
-  const tmp5 = quest(obj4.useTaskPlatformScreen(quest, questTaskDetails), 3);
-  quest = tmp5[2];
-  const first = tmp5[0];
-  const obj5 = quest(16943);
-  const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
-  [tmp9, tmp10] = quest(closure_16({ quest, initialStep, location: _location }), 2);
+  let tmp5 = _slicedToArray;
+  const obj4 = quest(9661);
+  [first, , _slicedToArray] = obj4.useTaskPlatformScreen(quest, questTaskDetails);
+  let xboxAndPlaystationAccounts;
+  let first1;
+  _slicedToArray = undefined;
+  let closure_4;
+  let first2;
+  let closure_6;
+  let isQuestProgressing1;
+  let callback;
+  let memo1;
+  let memo2;
+  let memo3;
+  let hasWatchVideoOnMobileTasks1;
+  let isMobileActivityQuest;
+  function showConsoleSelect() {
+    return closure_6(true);
+  }
+  function hideConsoleSelect() {
+    return closure_6(false);
+  }
   const userStatus = quest.userStatus;
   let completedAt;
-  const tmp8 = quest(closure_16({ quest, initialStep, location: _location }), 2);
-  const tmp11 = closure_15(quest);
+  const obj5 = quest(16997);
+  const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
   if (userStatus != null) {
     completedAt = userStatus.completedAt;
   }
-  const obj6 = {
+  const tmpResult = tmp(9661);
+  xboxAndPlaystationAccounts = tmpResult.useConnectedAccounts().xboxAndPlaystationAccounts;
+  let items = [quest, xboxAndPlaystationAccounts];
+  const memo = react.useMemo(() => {
+    const obj = quest(first1[13]);
+    const supportedConsolesResult = obj.supportedConsoles(quest);
+    return supportedConsolesResult.filter((item) => {
+      let closure_0 = item;
+      return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
+    });
+  }, items);
+  const tmpResult7 = tmp(9661);
+  const questTaskDetails1 = tmpResult7.useQuestTaskDetails(quest);
+  const tmpResult8 = tmp(9661);
+  isQuestProgressing1 = tmpResult8.useIsQuestProgressing(quest);
+  const tmpResult9 = tmp(9661);
+  const tmp5Result = tmp5(tmpResult9.useTaskPlatformScreen(quest, questTaskDetails1), 3);
+  first1 = tmp5Result[0];
+  _slicedToArray = tmp15;
+  closure_4 = tmp16;
+  let tmp17 = 0 === memo.length;
+  useState = react.useState;
+  if (tmp17) {
+    tmp17 = !tmp10;
+  }
+  if (tmp17) {
+    tmp17 = first1 === tmp(6778).TaskPlatformScreen.CONSOLE;
+  }
+  if (!tmp17) {
+    tmp17 = initialStep === obj.CONSOLE_CONNECT;
+  }
+  const tmp5Result5 = tmp5(useState(tmp17), 2);
+  first2 = tmp5Result5[0];
+  closure_6 = tmp21;
+  if (!isQuestProgressing1) {
+    isQuestProgressing1 = questTaskDetails1.progressSeconds > 0;
+  }
+  const tmp22 = 0 !== memo.length || null != completedAt || first1 !== tmp(6778).TaskPlatformScreen.CONSOLE || first2;
+  if (!tmp22) {
+    tmp5Result5[1](true);
+  }
+  const items1 = [tmp5Result[2]];
+  callback = obj7.useCallback(() => {
+    closure_6(false);
+    closure_4(null);
+  }, items1);
+  memo1 = obj7.useMemo(() => {
+    const items = [];
+    const obj = { type: constants2.TASK_STATUS, shouldShow: true };
+    items[0] = obj;
+    return items;
+  }, []);
+  const items2 = [first2, isQuestProgressing1];
+  memo2 = obj7.useMemo(() => {
+    let tmp;
+    const items = [, ];
+    const obj = { type: constants2.CONSOLE_CONNECT, shouldShow: first2, onNext: hideConsoleSelect };
+    items[0] = obj;
+    const obj2 = { type: constants2.TASK_STATUS, shouldShow: true, onBack: tmp };
+    tmp = undefined;
+    if (!isQuestProgressing1) {
+      tmp = showConsoleSelect;
+    }
+    items[1] = obj2;
+    return items;
+  }, items2);
+  const items3 = [first1, first2, isQuestProgressing1, callback];
+  memo3 = obj7.useMemo(() => {
+    let tmp7;
+    const items = [{ type: constants2.TASK_SELECT, shouldShow: first1 === quest(first1[14]).TaskPlatformScreen.SELECT }, , ];
+    const obj2 = { type: constants2.CONSOLE_CONNECT, shouldShow: first1 === quest(first1[14]).TaskPlatformScreen.CONSOLE && first2, onBack, onNext: hideConsoleSelect };
+    ({ type: constants2.TASK_SELECT, shouldShow: first1 === quest(first1[14]).TaskPlatformScreen.SELECT });
+    let tmp6 = onBack;
+    items[1] = obj2;
+    const obj3 = { type: constants2.TASK_STATUS, shouldShow: true, onBack: tmp7 };
+    tmp7 = undefined;
+    first1 === quest(first1[14]).TaskPlatformScreen.CONSOLE && first2;
+    const tmp2 = first1;
+    const tmp3 = quest;
+    const tmp4 = first1;
+    if (!isQuestProgressing1) {
+      if (tmp2 === tmp3(tmp4[14]).TaskPlatformScreen.CONSOLE) {
+        tmp6 = showConsoleSelect;
+      }
+      tmp7 = tmp6;
+    }
+    items[2] = obj3;
+    return items;
+  }, items3);
+  const tmpResult10 = tmp(16997);
+  hasWatchVideoOnMobileTasks1 = tmpResult10.useHasWatchVideoOnMobileTasks(quest.config);
+  const tmpResult11 = tmp(16997);
+  isMobileActivityQuest = tmpResult11.useMobileActivityQuest(quest).isMobileActivityQuest;
+  const items4 = [tmp5Result[1], memo3, memo1, memo2, hasWatchVideoOnMobileTasks1, isMobileActivityQuest];
+  const memo4 = obj7.useMemo(() => {
+    const hasItem = 1 === length.length && arr.includes(constants.DESKTOP);
+    const hasItem1 = 1 === arr.length && arr.includes(constants.CONSOLE);
+    let arr2 = memo3;
+    if (!hasItem) {
+      const tmp5 = hasWatchVideoOnMobileTasks1;
+      if (!tmp5) {
+        const tmp6 = isMobileActivityQuest;
+        if (!tmp6) {
+          if (hasItem1) {
+            arr2 = memo2;
+          }
+        }
+        let found = arr2.find((shouldShow) => shouldShow.shouldShow);
+        if (found == null) {
+          found = arr2.at(-1);
+        }
+        return found;
+      }
+    }
+    arr2 = memo1;
+  }, items4);
+  const items5 = [memo4.type, ];
+  let onBack;
+  if (memo4 != null) {
+    onBack = memo4.onBack;
+  }
+  const obj6 = { onBack, onNext };
+  onNext = undefined;
+  if (memo4 != null) {
+    onNext = memo4.onNext;
+  }
+  items5[1] = obj6;
+  [tmp33, tmp34] = tmp5(items5, 2);
+  tmp5(items5, 2);
+  const obj8 = { quest, location: constants.QUEST_HOME_MOBILE };
+  const tmpResult12 = tmp(7846);
+  const questLogger = tmpResult12.getQuestLogger(obj8);
+  const tmp5Result7 = tmp5(useState([]), 2);
+  dependencyMap = tmp38;
+  const first3 = tmp5Result7[0];
+  const tmp5Result8 = tmp5(useState(false), 2);
+  _slicedToArray = tmp40;
+  const items6 = [quest, questLogger, tmp5Result8[1], tmp5Result7[1]];
+  const userStatus2 = quest.userStatus;
+  let completedAt1;
+  const obj9 = {
+    errorHints: first3,
+    isActive: tmp5Result8[0],
+    start: react.useCallback(() => {
+      let logger;
+      closure_3(true);
+      let obj = quest(closure_2[9]);
+      const result = obj.manuallyStartConsoleQuest(quest.id);
+      const nextPromise = result.then((errorHints) => closure_1_2(errorHints.errorHints));
+      const catchPromise = nextPromise.catch((error) => {
+        let intl;
+        closure_1_2([]);
+        logger.error("Failed to start console quest", error);
+        const obj = { text: intl.string(quest(closure_2[11]).t.CKsXk3), variant: "critical" };
+        const open = questLogger(closure_2[10]).open;
+        questLogger(closure_2[10]);
+        intl = quest(closure_2[11]).intl;
+        open("START_DEFIBRILLATOR_ERROR", obj);
+      });
+      catchPromise.finally(() => closure_1_3(false));
+    }, items6)
+  };
+  if (userStatus2 != null) {
+    completedAt1 = userStatus2.completedAt;
+  }
+  const obj10 = {
     quest,
-    defibrillator: tmp11,
-    step: tmp9,
-    stepActions: tmp10,
-    showMicrophone: null == completedAt && !isQuestProgressing && first === tmp(6771).TaskPlatformScreen.CONSOLE && !hasWatchVideoOnMobileTasks,
+    defibrillator: obj9,
+    step: tmp33,
+    stepActions: tmp34,
+    showMicrophone: null == completedAt1 && !isQuestProgressing && first === tmp(6778).TaskPlatformScreen.CONSOLE && !hasWatchVideoOnMobileTasks,
     handleTaskSelect(arg0) {
       let DESELECT_PLATFORM;
       let tmp4;
@@ -1151,399 +340,97 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnrolledQ
         DESELECT_PLATFORM = AnalyticsTypes.QuestContentCTA.DESELECT_PLATFORM;
         tmp4 = require;
       }
-      const tmp4Result = tmp4(9639);
-      const obj = { type: tmp4(9642).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(6775).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(6771).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent, impressionId: closure_2() };
+      const tmp4Result = tmp4(9664);
+      const obj = { type: tmp4(9667).AdUserActionType.CLICK_INTERNAL, adCreativeType: tmp4(6782).AdCreativeType.QUEST, adCreativeId: quest.id, questContentCTA: DESELECT_PLATFORM, surfaceId: tmp4(6778).QuestContent.QUEST_BOTTOM_SHEET, sourceQuestContent: importDefault, impressionId: closure_2() };
       tmp4Result.captureAdUserAction(obj);
       closure_3(arg0);
     }
   };
-  return obj6;
-});
-let closure_18 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestBottomSheetContent(arg0) {
-  let defibrillator;
-  let errorHints1;
-  let handleTaskSelect;
-  let items;
-  let showMicrophone;
-  let sourceQuestContent;
-  let step;
-  let tmp6;
-  const obj = react3;
-  const cResult = obj.c(27);
-  ({ defibrillator, quest, handleTaskSelect, showMicrophone, sourceQuestContent, step } = arg0);
-  const tmpResult = QuestHooks;
-  const hasWatchVideoOnMobileTasks = tmpResult.useHasWatchVideoOnMobileTasks(quest.config);
-  if (hasWatchVideoOnMobileTasks) {
-    if (cResult[0] === quest) {
-      let tmp12;
-      if (cResult[1] === sourceQuestContent) {
-        tmp12 = cResult[2];
-      }
-      tmp6 = tmp12;
+  return obj10;
+}
+class QuestBottomSheetContent {
+  constructor(showMicrophone) {
+    let defibrillator;
+    let errorHints;
+    let quest;
+    ({ defibrillator, quest } = showMicrophone);
+    let flag = showMicrophone.showMicrophone;
+    const handleTaskSelect = showMicrophone.handleTaskSelect;
+    if (flag === undefined) {
+      flag = false;
     }
-    const obj2 = { quest, sourceQuestContent };
-    const tmp14 = authStore(QuestBottomSheetProgressCard.QuestBottomSheetProgressCardWatchTask, obj2);
-    cResult[0] = quest;
-    cResult[1] = sourceQuestContent;
-    cResult[2] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    const tmpResult2 = QuestTaskUtils;
-    if (tmpResult2.isInGameQuest(quest)) {
-      if (cResult[3] === quest) {
-        let tmp9;
-        if (cResult[4] === sourceQuestContent) {
-          tmp9 = cResult[5];
-        }
-        tmp6 = tmp9;
-      }
-      const obj3 = { quest, sourceQuestContent };
-      const tmp11 = authStore(QuestBottomSheetProgressCard.QuestBottomSheetProgressCardInGameTask, obj3);
-      cResult[3] = quest;
-      cResult[4] = sourceQuestContent;
-      cResult[5] = tmp11;
-      tmp9 = tmp11;
-    } else {
-      if (cResult[6] === quest) {
-        if (cResult[7] === sourceQuestContent) {
-          tmp6 = cResult[8];
+    const sourceQuestContent = showMicrophone.sourceQuestContent;
+    const step = showMicrophone.step;
+    let hasWatchVideoOnMobileTasks;
+    let tmp = hasWatchVideoOnMobileTasks;
+    let obj = quest(hasWatchVideoOnMobileTasks[15]);
+    hasWatchVideoOnMobileTasks = obj.useHasWatchVideoOnMobileTasks(quest.config);
+    const items = [quest, hasWatchVideoOnMobileTasks, sourceQuestContent];
+    const tmp6 = obj;
+    let tmp7 = step === obj.TASK_SELECT;
+    const memo = react.useMemo(() => {
+      let tmp6Result;
+      const tmp = hasWatchVideoOnMobileTasks;
+      if (tmp) {
+        const obj2 = { quest, sourceQuestContent };
+        tmp6Result = authStore(QuestBottomSheetProgressCard.QuestBottomSheetProgressCardWatchTask, obj2);
+      } else {
+        const obj = QuestTaskUtils;
+        const isInGameQuestResult = obj.isInGameQuest(quest);
+        const tmp9 = QuestBottomSheetProgressCard;
+        if (isInGameQuestResult) {
+          const obj3 = { quest, sourceQuestContent };
+          tmp6Result = tmp6(tmp9.QuestBottomSheetProgressCardInGameTask, obj3);
+        } else {
+          const obj4 = { quest, sourceQuestContent };
+          tmp6Result = tmp6(tmp9.QuestBottomSheetProgressCardPlayStreamTask, obj4);
         }
       }
-      const obj4 = { quest, sourceQuestContent };
-      const tmp8 = authStore(QuestBottomSheetProgressCard.QuestBottomSheetProgressCardPlayStreamTask, obj4);
-      cResult[6] = quest;
-      cResult[7] = sourceQuestContent;
-      cResult[8] = tmp8;
-      tmp6 = tmp8;
+      return tmp6Result;
+    }, items);
+    const tmp5 = closure_12;
+    if (tmp7) {
+      let tmp9 = sourceQuestContent;
+      let obj2 = { onTaskSelect: handleTaskSelect };
+      tmp7 = closure_10(sourceQuestContent(tmp[28]), obj2);
     }
-  }
-  if (cResult[9] === handleTaskSelect) {
-    let tmp15;
-    if (cResult[10] === step) {
-      tmp15 = cResult[11];
+    const children = [tmp7, , ];
+    let tmp10 = step === tmp6.CONSOLE_CONNECT;
+    if (tmp10) {
+      let obj3 = { quest, step, sourceQuestContent };
+      tmp10 = closure_10(sourceQuestContent(tmp[29]), obj3);
     }
-    if (cResult[12] === quest) {
-      if (cResult[13] === sourceQuestContent) {
-        let tmp19;
-        if (cResult[14] === step) {
-          tmp19 = cResult[15];
-        }
-        let errorHints;
-        const tmp24 = cResult[16];
+    children[1] = tmp10;
+    let tmp4Result = step === tmp6.TASK_STATUS;
+    if (tmp4Result) {
+      const items2 = [memo, ];
+      const tmp14 = View;
+      if (flag) {
+        flag = !hasWatchVideoOnMobileTasks;
+      }
+      if (flag) {
+        let obj4 = { quest, errorHints };
+        errorHints = undefined;
+        const tmp15 = closure_10;
+        const tmp16 = MicrophoneUnit;
         if (defibrillator != null) {
           errorHints = defibrillator.errorHints;
         }
-        if (tmp24 === errorHints) {
-          if (cResult[17] === quest) {
-            if (cResult[18] === hasWatchVideoOnMobileTasks) {
-              if (cResult[19] === (undefined !== showMicrophone && showMicrophone)) {
-                if (cResult[20] === step) {
-                  let tmp27;
-                  if (cResult[21] === tmp6) {
-                    tmp27 = cResult[22];
-                  }
-                  if (cResult[23] === tmp15) {
-                    if (cResult[24] === tmp19) {
-                      let tmp37;
-                      if (cResult[25] === tmp27) {
-                        tmp37 = cResult[26];
-                      }
-                      return tmp37;
-                    }
-                  }
-                  const obj5 = { children: items };
-                  items = [tmp15, tmp19, tmp27];
-                  const tmp40 = unpackModuleId(authStore2, obj5);
-                  cResult[23] = tmp15;
-                  cResult[24] = tmp19;
-                  cResult[25] = tmp27;
-                  cResult[26] = tmp40;
-                  tmp37 = tmp40;
-                }
-              }
-            }
-          }
-        }
-        let tmp30Result = step === obj.TASK_STATUS;
-        if (tmp30Result) {
-          const items1 = [tmp6, ];
-          let tmp33Result = tmp4;
-          const tmp30 = unpackModuleId;
-          const tmp31 = View;
-          if (undefined !== showMicrophone && showMicrophone) {
-            tmp33Result = !hasWatchVideoOnMobileTasks;
-          }
-          if (tmp33Result) {
-            const obj6 = { quest, errorHints: errorHints1 };
-            errorHints1 = undefined;
-            const tmp33 = authStore;
-            const tmp34 = closure_20;
-            if (defibrillator != null) {
-              errorHints1 = defibrillator.errorHints;
-            }
-            tmp33Result = tmp33(tmp34, obj6);
-          }
-          const obj7 = { children: items1 };
-          items1[1] = tmp33Result;
-          tmp30Result = tmp30(tmp31, obj7);
-        }
-        let errorHints2;
-        if (defibrillator != null) {
-          errorHints2 = defibrillator.errorHints;
-        }
-        cResult[16] = errorHints2;
-        cResult[17] = quest;
-        cResult[18] = hasWatchVideoOnMobileTasks;
-        cResult[19] = undefined !== showMicrophone && showMicrophone;
-        cResult[20] = step;
-        cResult[21] = tmp6;
-        cResult[22] = tmp30Result;
-        tmp27 = tmp30Result;
+        flag = tmp15(tmp16, obj4);
       }
+      const obj5 = { children: items2 };
+      items2[1] = flag;
+      tmp4Result = tmp4(tmp14, obj5);
     }
-    let tmp21 = step === obj.CONSOLE_CONNECT;
-    if (tmp21) {
-      const obj8 = { quest, step, sourceQuestContent };
-      tmp21 = authStore(QuestBottomSheetConsoleConnectDefault, obj8);
-    }
-    cResult[12] = quest;
-    cResult[13] = sourceQuestContent;
-    cResult[14] = step;
-    cResult[15] = tmp21;
-    tmp19 = tmp21;
+    children[2] = tmp4Result;
+    return closure_11(tmp5, { children });
   }
-  let tmp16 = step === obj.TASK_SELECT;
-  if (tmp16) {
-    const obj9 = { onTaskSelect: handleTaskSelect };
-    tmp16 = authStore(QuestBottomSheetTaskSelectDefault, obj9);
-  }
-  cResult[9] = handleTaskSelect;
-  cResult[10] = step;
-  cResult[11] = tmp16;
-  tmp15 = tmp16;
-}) : (function QuestBottomSheetContent(showMicrophone) {
-  let defibrillator;
-  let errorHints;
-  ({ defibrillator, quest } = showMicrophone);
-  let flag = showMicrophone.showMicrophone;
-  const handleTaskSelect = showMicrophone.handleTaskSelect;
-  if (flag === undefined) {
-    flag = false;
-  }
-  const sourceQuestContent = showMicrophone.sourceQuestContent;
-  const step = showMicrophone.step;
-  let hasWatchVideoOnMobileTasks;
-  let tmp = hasWatchVideoOnMobileTasks;
-  let obj = quest(hasWatchVideoOnMobileTasks[17]);
-  hasWatchVideoOnMobileTasks = obj.useHasWatchVideoOnMobileTasks(quest.config);
-  const items = [quest, hasWatchVideoOnMobileTasks, sourceQuestContent];
-  const tmp6 = obj;
-  let tmp7 = step === obj.TASK_SELECT;
-  const memo = react.useMemo(() => {
-    let tmp6Result;
-    const tmp = hasWatchVideoOnMobileTasks;
-    if (tmp) {
-      const obj2 = { quest, sourceQuestContent };
-      tmp6Result = authStore(QuestBottomSheetProgressCard.QuestBottomSheetProgressCardWatchTask, obj2);
-    } else {
-      const obj = QuestTaskUtils;
-      const isInGameQuestResult = obj.isInGameQuest(quest);
-      const tmp9 = QuestBottomSheetProgressCard;
-      if (isInGameQuestResult) {
-        const obj3 = { quest, sourceQuestContent };
-        tmp6Result = tmp6(tmp9.QuestBottomSheetProgressCardInGameTask, obj3);
-      } else {
-        const obj4 = { quest, sourceQuestContent };
-        tmp6Result = tmp6(tmp9.QuestBottomSheetProgressCardPlayStreamTask, obj4);
-      }
-    }
-    return tmp6Result;
-  }, items);
-  const tmp5 = closure_12;
-  if (tmp7) {
-    let tmp9 = sourceQuestContent;
-    let obj2 = { onTaskSelect: handleTaskSelect };
-    tmp7 = closure_10(sourceQuestContent(tmp[30]), obj2);
-  }
-  const children = [tmp7, , ];
-  let tmp10 = step === tmp6.CONSOLE_CONNECT;
-  if (tmp10) {
-    let obj3 = { quest, step, sourceQuestContent };
-    tmp10 = closure_10(sourceQuestContent(tmp[31]), obj3);
-  }
-  children[1] = tmp10;
-  let tmp4Result = step === tmp6.TASK_STATUS;
-  if (tmp4Result) {
-    const items2 = [memo, ];
-    const tmp14 = View;
-    if (flag) {
-      flag = !hasWatchVideoOnMobileTasks;
-    }
-    if (flag) {
-      let obj4 = { quest, errorHints };
-      errorHints = undefined;
-      const tmp15 = closure_10;
-      const tmp16 = closure_20;
-      if (defibrillator != null) {
-        errorHints = defibrillator.errorHints;
-      }
-      flag = tmp15(tmp16, obj4);
-    }
-    const obj5 = { children: items2 };
-    items2[1] = flag;
-    tmp4Result = tmp4(tmp14, obj5);
-  }
-  children[2] = tmp4Result;
-  return closure_11(tmp5, { children });
-});
-let closure_19 = tmp7;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function MicrophoneUnit(arg0) {
-  let arr;
-  let errorHints;
-  let items;
-  let items1;
-  let stringResult;
-  let obj = react3;
-  const cResult = obj.c(22);
-  ({ quest, errorHints } = arg0);
-  const tmp5 = closure_14();
-  const obj2 = hooks_QuestHooks;
-  const message = obj2.useQuestHowToHelpArticle().message;
-  let num;
-  if (errorHints != null) {
-    num = errorHints.length;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  if (cResult[0] === errorHints) {
-    if (cResult[1] === num > 0) {
-      if (cResult[2] === quest) {
-        let tmp10;
-        let formatToPlainStringResult;
-        if (cResult[3] === message) {
-          arr = cResult[4];
-        }
-        let str = "text-feedback-warning";
-        const microphoneUnit = tmp5.microphoneUnit;
-        if (num > 0) {
-          str = "text-feedback-critical";
-        }
-        if (cResult[5] !== str) {
-          const obj3 = { color: str };
-          const tmp12 = authStore(WarningIcon2.WarningIcon, obj3);
-          cResult[5] = str;
-          cResult[6] = tmp12;
-          tmp10 = tmp12;
-        } else {
-          tmp10 = cResult[6];
-        }
-        if (cResult[7] === num > 0) {
-          let tmp13;
-          let tmp15;
-          if (cResult[8] === quest) {
-            tmp13 = cResult[9];
-          }
-          if (cResult[10] !== tmp13) {
-            const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp13 };
-            const tmp17 = authStore(Text_Text.Text, obj4);
-            cResult[10] = tmp13;
-            cResult[11] = tmp17;
-            tmp15 = tmp17;
-          } else {
-            tmp15 = cResult[11];
-          }
-          if (cResult[12] === tmp5.microphoneUnitHeader) {
-            if (cResult[13] === tmp10) {
-              let tmp18;
-              let tmp22;
-              if (cResult[14] === tmp15) {
-                tmp18 = cResult[15];
-              }
-              if (cResult[16] !== arr) {
-                const mapped = arr.map((children, index) => {
-                  const obj = { variant: "text-sm/normal", children };
-                  return closure_1_10(require("Text/Text").Text, obj, index);
-                });
-                cResult[16] = arr;
-                cResult[17] = mapped;
-                tmp22 = mapped;
-              } else {
-                tmp22 = cResult[17];
-              }
-              if (cResult[18] === tmp5.microphoneUnit) {
-                if (cResult[19] === tmp18) {
-                  let tmp24;
-                  if (cResult[20] === tmp22) {
-                    tmp24 = cResult[21];
-                  }
-                  return tmp24;
-                }
-              }
-              const obj5 = { style: microphoneUnit, children: items };
-              items = [tmp18, tmp22];
-              const tmp27 = unpackModuleId(View, obj5);
-              cResult[18] = tmp5.microphoneUnit;
-              cResult[19] = tmp18;
-              cResult[20] = tmp22;
-              cResult[21] = tmp27;
-              tmp24 = tmp27;
-            }
-          }
-          const obj6 = { style: tmp5.microphoneUnitHeader, children: items1 };
-          items1 = [tmp10, tmp15];
-          const tmp21 = unpackModuleId(View, obj6);
-          cResult[12] = tmp5.microphoneUnitHeader;
-          cResult[13] = tmp10;
-          cResult[14] = tmp15;
-          cResult[15] = tmp21;
-          tmp18 = tmp21;
-        }
-        const intl2 = tmp2(1125).intl;
-        if (num > 0) {
-          const obj7 = { gameTitle: quest.config.messages.gameTitle };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1125).t["28Ql27"], obj7);
-        } else {
-          formatToPlainStringResult = intl2.string(tmp2(1125).t.YstzGO);
-        }
-        cResult[7] = num > 0;
-        cResult[8] = quest;
-        cResult[9] = formatToPlainStringResult;
-        tmp13 = formatToPlainStringResult;
-      }
-    }
-  }
-  if (num > 0) {
-    let items3;
-    if (null != errorHints) {
-      const items2 = [];
-      items2[HermesBuiltin.arraySpread(items2, errorHints.map((message) => message.message), 0)] = message;
-      items3 = items2;
-    }
-    cResult[0] = errorHints;
-    cResult[1] = num > 0;
-    cResult[2] = quest;
-    cResult[3] = message;
-    cResult[4] = items3;
-    arr = items3;
-  }
-  const tmp2Result = utils_QuestUtils;
-  const isSponsoredPlayQuestResult = tmp2Result.isSponsoredPlayQuest(quest);
-  const intl = tmp2(1125).intl;
-  if (isSponsoredPlayQuestResult) {
-    stringResult = intl.string(tmp2(1125).t.bUyEZZ);
-  } else {
-    const obj8 = { gameTitle: quest.config.messages.gameTitle };
-    stringResult = intl.formatToPlainString(tmp2(1125).t.GXqvC1, obj8);
-  }
-  items3 = [stringResult];
-}) : (function MicrophoneUnit(arg0) {
+}
+function MicrophoneUnit(arg0) {
   let errorHints;
   let items1;
   let items2;
+  let quest;
   let stringResult;
   ({ quest, errorHints } = arg0);
   const tmp2 = closure_14();
@@ -1567,19 +454,19 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Microp
     let str = "text-feedback-warning";
     const obj2 = { style: tmp2.microphoneUnit, children: items2 };
     const obj3 = { style: tmp2.microphoneUnitHeader, children: items1 };
-    const WarningIcon = tmp3(8012).WarningIcon;
+    const WarningIcon = tmp3(8018).WarningIcon;
     if (num > 0) {
       str = "text-feedback-critical";
     }
     const obj4 = { color: str };
     items1 = [authStore(WarningIcon, obj4), ];
-    const Text = tmp3(5271).Text;
-    const intl2 = tmp3(1125).intl;
+    const Text = tmp3(5619).Text;
+    const intl2 = tmp3(1114).intl;
     if (num > 0) {
       const obj5 = { gameTitle: quest.config.messages.gameTitle };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp3(1125).t["28Ql27"], obj5);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp3(1114).t["28Ql27"], obj5);
     } else {
-      formatToPlainStringResult = intl2.string(tmp3(1125).t.YstzGO);
+      formatToPlainStringResult = intl2.string(tmp3(1114).t.YstzGO);
     }
     const obj6 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
     items1[1] = authStore(Text, obj6);
@@ -1587,27 +474,65 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function Microp
       unpackModuleId(View, obj3),
       items3.map((children, index) => {
           const obj = { variant: "text-sm/normal", children };
-          return closure_1_10(require("Text/Text").Text, obj, index);
+          return closure_1_10(Text_Text.Text, obj, index);
         })
     ];
     return unpackModuleId(View, obj2);
   }
   const tmp3Result = utils_QuestUtils;
   const isSponsoredPlayQuestResult = tmp3Result.isSponsoredPlayQuest(quest);
-  const intl = tmp3(1125).intl;
+  const intl = tmp3(1114).intl;
   if (isSponsoredPlayQuestResult) {
-    stringResult = intl.string(tmp3(1125).t.bUyEZZ);
+    stringResult = intl.string(tmp3(1114).t.bUyEZZ);
   } else {
     const obj7 = { gameTitle: quest.config.messages.gameTitle };
-    stringResult = intl.formatToPlainString(tmp3(1125).t.GXqvC1, obj7);
+    stringResult = intl.formatToPlainString(tmp3(1114).t.GXqvC1, obj7);
   }
   items3 = [stringResult];
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+let useState = react2.useState;
+const View = react_native.View;
+({ QuestsExperimentLocations: metroImportAll, QuestTaskPlatform: c9 } = QuestConstants);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+const QuestBottomSheetStep = { TASK_SELECT: "TASK_SELECT", CONSOLE_CONNECT: "CONSOLE_CONNECT", TASK_STATUS: "TASK_STATUS" };
+let createStyles = createStyles_mod;
+let obj2 = { contentContainer: obj3, microphoneUnit: obj4, microphoneUnitHeader: obj5 };
+obj3 = { display: "flex", paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj4 = { display: "flex", gap: nativeDefault.space.PX_8, marginHorizontal: -nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+obj5 = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
+let closure_14 = createStyles(obj2);
 const context = react.createContext({ isInQuestBottomSheet: false });
 let result = size.fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheet.tsx");
 
-export default tmp5;
+export default function QuestBottomSheetConnected(questContentPosition) {
+  let initialStep;
+  let sourceQuestContent;
+  ({ questId: require, initialStep: importDefault, sourceQuestContent } = questContentPosition);
+  questContentPosition = questContentPosition.questContentPosition;
+  let obj = require("get initialized");
+  const items = [QuestStore];
+  const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(require));
+  let tmp4 = null;
+  if (null != stateFromStores) {
+    const obj2 = {
+      overrideVisibility: true,
+      questOrQuests: stateFromStores,
+      questContent: require("QuestTypes").QuestContent.QUEST_BOTTOM_SHEET,
+      questContentPosition,
+      sourceQuestContent,
+      children() {
+          const obj = { quest: stateFromStores, initialStep: importDefault, sourceQuestContent };
+          return authStore(QuestBottomSheet, obj);
+        }
+    };
+    const QuestContentImpressionTrackerNative = tmp(tmp2[17]).QuestContentImpressionTrackerNative;
+    tmp4 = closure_10(QuestContentImpressionTrackerNative, obj2);
+  }
+  return tmp4;
+};
 export { QuestBottomSheetStep };
-export const useEnrolledQuestContentProps = tmp6;
-export const QuestBottomSheetContent = tmp7;
+export { useEnrolledQuestContentProps };
+export { QuestBottomSheetContent };
 export const QuestBottomSheetContext = context;

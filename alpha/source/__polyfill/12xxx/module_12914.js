@@ -1,35 +1,72 @@
 // Module ID: 12914
 // Function ID: 12915
-// Dependencies: [12900, 12859, 12897]
-// Exports: createCheckInEnvelope
+// Dependencies: [12915, 12916, 12917]
 
 // Module 12914
-import _mod12859 from "module_12859" /* 12859 */;
-import _mod12897 from "module_12897" /* 12897 */;
-import _mod12900 from "module_12900" /* 12900 */;
+import SelectorType from "SelectorType" /* 12915 */;
 
+const require = globalThis.__r;
+let hasOwnProperty;
 
-export function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
-  let date;
-  const obj = { sent_at: date.toISOString() };
-  date = new Date();
-  const tmp = sdk && sdk.sdk;
-  if (tmp) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
-    obj.sdk = obj2;
-  }
-  const tmp2 = arg3 && arg4;
-  if (tmp2) {
-    const obj4 = _mod12900;
-    obj.dsn = obj4.dsnToString(arg4);
-  }
-  const tmp5 = arg1;
-  if (tmp5) {
-    const obj5 = _mod12859;
-    obj.trace = obj5.dropUndefinedKeys(arg1);
-  }
-  const items = [{ type: "check_in" }, arg0];
-  const items1 = [items];
-  const obj6 = _mod12897;
-  return obj6.createEnvelope(obj, items1);
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
 }
+let closure_2 = tmp;
+let tmp3 = self && self.__exportStar || ((obj, arg1) => {
+  for (const key10007 in obj) {
+    let callResult = "default" === key10007;
+    if (!callResult) {
+      let _Object = Object;
+      hasOwnProperty = Object.prototype.hasOwnProperty;
+      callResult = hasOwnProperty.call(arg1, key10007);
+    }
+    if (callResult) {
+      continue;
+    } else {
+      let tmp3 = closure_2(arg1, obj, key10007);
+      continue;
+    }
+    continue;
+  }
+});
+tmp3(SelectorType, exports);
+
+export const isTraversal = require("module_12916").isTraversal;
+export const parse = require("module_12916").parse;
+export const stringify = require("module_12917").stringify;

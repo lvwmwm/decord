@@ -1,28 +1,33 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14513
+// Function ID: 14514
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4854, 21, 4841, 5005, 587, 558, 576, 5271, 1125, 7555, 9906, 2]
+// Dependencies: [32, 19, 17, 4855, 21, 4842, 5009, 575, 5619, 1114, 7563, 9933, 2]
+// Exports: ConversationCoachmark
 
-// Module 14480 (ConversationCoachmark)
+// Module 14513 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import Text_Text from "Text/Text" /* 5271 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import Text_Text from "Text/Text" /* 5619 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let dependencyMap;
 
 let obj2;
 let obj3;
+function NewBadge() {
+  let intl;
+  ({ variant: "text-sm/bold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
+  const Text = Text_Text.Text;
+  intl = intl3.intl;
+  return <View style={closure_9().badge}>{null}</View>;
+}
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
@@ -34,170 +39,9 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, paddingVertical
 createStyles = createStyles.createStyles;
 obj3 = { marginRight: nativeDefault.space.PX_12 };
 let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
-  let first;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5271).Text;
-    const intl = tmp(1125).intl;
-    const tmp7 = <Text variant="text-sm/bold" color="text-default">{intl.string(intl3.t.c2GSIl)}</Text>;
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.badge) {
-    const tmp11 = <View style={tmp4.badge}>{first}</View>;
-    cResult[1] = tmp4.badge;
-    cResult[2] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (function NewBadge() {
-  let intl;
-  ({ variant: "text-sm/bold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
-  const Text = Text_Text.Text;
-  intl = intl3.intl;
-  return <View style={closure_9().badge}>{null}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationCoachmark(children) {
-  let closure_0;
-  let obj5;
-  let tmp10;
-  let tmp14;
-  let tmp15;
-  let tmp25;
-  let tmp9;
-  const obj = require("react");
-  const cResult = obj.c(18);
-  children = children.children;
-  const isLast = children.isLast;
-  closure_9();
-  const ref = react.useRef(null);
-  const obj2 = require("useSelectedDismissibleContent");
-  const tmp6 = _slicedToArray(obj2.useSelectedDismissibleContent(items), 2);
-  _require = tmp8;
-  const first = tmp6[0];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(require("intl").t.UcQjDe);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(require("intl").t.QeJIbA);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp10 = stringResult1;
-    tmp9 = stringResult;
-  } else {
-    [tmp9, tmp10] = cResult;
-  }
-  if (cResult[2] !== tmp6[1]) {
-    const fn = function x() {
-      closure_0(ContentDismissActionType.USER_DISMISS);
-    };
-    cResult[2] = tmp6[1];
-    cResult[3] = fn;
-    tmp14 = fn;
-  } else {
-    tmp14 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        return <closure_1_10 />;
-      }
-    }
-    cResult[4] = E;
-    tmp15 = E;
-  } else {
-    class E {
-      constructor() {
-        return <closure_1_10 />;
-      }
-    }
-  }
-  if (cResult[5] === first === TOPICAL_NAVIGATION_HEADER_COACHMARK) {
-    class E {
-      constructor() {
-        return <closure_1_10 />;
-      }
-    }
-    const tmpResult = require("useCoachmark");
-    const coachmark = tmpResult.useCoachmark(ref, obj5);
-    if (cResult[8] !== tmp6[1]) {
-      class N {
-        constructor() {
-          closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      cResult[8] = tmp6[1];
-      cResult[9] = N;
-    } else {
-      class N {
-        constructor() {
-          closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (!isLast) {
-      class N {
-        constructor() {
-          closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    if (cResult[10] === children) {
-      class N {
-        constructor() {
-          closure_0(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      if (cResult[13] !== tmp20) {
-        class N {
-          constructor() {
-            closure_0(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        const tmp24 = <View ref={ref}>{tmp20}</View>;
-        cResult[13] = tmp20;
-        cResult[14] = tmp24;
-      } else {
-        class N {
-          constructor() {
-            closure_0(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-      if (cResult[15] === tmp22) {
-        class N {
-          constructor() {
-            closure_0(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-        return tmp25;
-      }
-      const tmp28 = <View style={tmp19}>{tmp22}</View>;
-      cResult[15] = tmp22;
-      cResult[16] = tmp19;
-      cResult[17] = tmp28;
-      tmp25 = tmp28;
-    }
-    cResult[10] = children;
-    cResult[11] = tmp18;
-    cResult[12] = children(tmp18);
-    const childrenResult = children(tmp18);
-  }
-  obj5 = { title: tmp9, description: tmp10, position: "bottom", visible: first === TOPICAL_NAVIGATION_HEADER_COACHMARK, onDismiss: tmp14, renderImgComponent: tmp15 };
-  cResult[5] = first === TOPICAL_NAVIGATION_HEADER_COACHMARK;
-  cResult[6] = tmp14;
-  cResult[7] = obj5;
-}) : (function ConversationCoachmark(arg0) {
+const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
+
+export function ConversationCoachmark(arg0) {
   let children;
   let closure_1;
   let isLast;
@@ -205,7 +49,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7555);
+  let obj = first(7563);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -229,7 +73,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(9906);
+  const obj2 = first(9933);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;
@@ -241,7 +85,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   }
   ({ ref, children: children(callback) });
   return <View style={coachmarkWrapper}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationCoachmark.tsx");
-
-export const ConversationCoachmark = tmp3;
+}

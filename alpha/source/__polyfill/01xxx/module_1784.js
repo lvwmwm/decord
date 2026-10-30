@@ -1,36 +1,85 @@
 // Module ID: 1784
 // Function ID: 1785
-// Dependencies: [1785, 1786, 1787, 1788, 1789, 1790]
+// Dependencies: [32, 41, 42, 93, 95, 98, 1721]
 
 // Module 1784
-import CurvedTransition from "CurvedTransition" /* 1785 */;
-import EntryExitTransition from "EntryExitTransition" /* 1786 */;
-import _mod1787 from "module_1787" /* 1787 */;
-import _mod1788 from "module_1788" /* 1788 */;
-import _mod1789 from "module_1789" /* 1789 */;
-import _mod1790 from "module_1790" /* 1790 */;
+import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1721 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c2 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-for (const key10013 in CurvedTransition) {
-  exports[key10013] = CurvedTransition[key10013];
-  continue;
+let size;
+
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
 }
-for (const key10017 in EntryExitTransition) {
-  exports[key10017] = EntryExitTransition[key10017];
-  continue;
+let closure_5 = { code: "function pnpm_LinearTransitionTs1(values){const{delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,animation(values.targetOriginX,config)),originY:delayFunction(delay,animation(values.targetOriginY,config)),width:delayFunction(delay,animation(values.targetWidth,config)),height:delayFunction(delay,animation(values.targetHeight,config))},callback:callback};}" };
+class LinearTransition {
+  constructor() {
+    let constructResult;
+    const self = this;
+    const items = [...arguments];
+    let closure_0;
+    _classCallCheck(this, LinearTransition);
+    const items1 = [...items];
+    let tmp2 = _getPrototypeOf;
+    let obj = _getPrototypeOf(LinearTransition);
+    const tmp3 = c2;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items1);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    closure_0 = tmp3Result;
+    tmp3Result.build = () => {
+      const delayFunction = closure_0.getDelayFunction();
+      const tmp2 = LinearTransition(closure_0.getAnimationAndConfig(), 2);
+      const first = tmp2[0];
+      let closure_2 = tmp4;
+      const callbackV = closure_0.callbackV;
+      const delay = closure_0.getDelay();
+      const fn = function t(originX) {
+        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
+        size = { originX: delayFunction(delay, first(originX.targetOriginX, closure_2)), originY: delayFunction(delay, first(originX.targetOriginY, closure_2)), width: delayFunction(delay, first(originX.targetWidth, closure_2)), height: delayFunction(delay, first(originX.targetHeight, closure_2)) };
+        return obj;
+      };
+      fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], callback: callbackV };
+      fn.__workletHash = 16224579837767;
+      fn.__initData = __initData;
+      return fn;
+    };
+    return tmp3Result;
+  }
 }
-for (const key10021 in _mod1787) {
-  exports[key10021] = _mod1787[key10021];
-  continue;
-}
-for (const key10025 in _mod1788) {
-  exports[key10025] = _mod1788[key10025];
-  continue;
-}
-for (const key10029 in _mod1789) {
-  exports[key10029] = _mod1789[key10029];
-  continue;
-}
-for (const key10033 in _mod1790) {
-  exports[key10033] = _mod1790[key10033];
-  continue;
-}
+_inherits(LinearTransition, BaseAnimationBuilder.ComplexAnimationBuilder);
+const entry = {
+  key: "createInstance",
+  value: function createInstance() {
+    const tmp = LinearTransition();
+    return tmp;
+  }
+};
+let items = [entry];
+const importDefaultResultResult = _createClass(LinearTransition, null, items);
+importDefaultResultResult.presetName = "LinearTransition";
+const LinearTransition_export = importDefaultResultResult;
+
+export { LinearTransition_export as LinearTransition };
+export const Layout = importDefaultResultResult;

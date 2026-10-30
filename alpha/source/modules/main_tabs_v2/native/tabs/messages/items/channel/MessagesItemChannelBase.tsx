@@ -1,34 +1,31 @@
-// Module ID: 17972
-// Function ID: 17973
+// Module ID: 18033
+// Function ID: 18034
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5750, 6829, 4947, 4908, 6762, 1389, 1084, 21, 5005, 587, 558, 576, 504, 17973, 8747, 1381, 7471, 5745, 10759, 9054, 9473, 17974, 5681, 8789, 17975, 9469, 17976, 6968, 2]
+// Dependencies: [19, 17, 5756, 6836, 4951, 4912, 6769, 1384, 21, 5009, 575, 504, 18034, 8781, 1376, 7479, 5751, 10782, 6974, 9066, 9492, 18035, 5687, 9488, 18036, 8823, 18037, 5757, 2]
 
-// Module 17972 (MessagesItemChannelBase)
+// Module 18033 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import UserStore from "UserStore" /* 1389 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
-let map1;
+let unpackModuleId;
 const View = react_native.View;
-const ActivityTypes = Constants.ActivityTypes;
-({ jsx: closure_12, jsxs: map1 } = Fragment);
-let closure_14 = createStyles.createStyles(() => {
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let closure_13 = createStyles.createStyles(() => {
   let rect;
   const obj = { pressable: { marginBottom: 1, borderRadius: nativeDefault.radii.md, marginHorizontal: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", flex: 1 }, nameplate: { borderRadius: nativeDefault.radii.md }, rowActive: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE }, selectedBorder: rect, rowSelected: { borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED } };
   ({ marginBottom: 1, borderRadius: nativeDefault.radii.md, marginHorizontal: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", flex: 1 });
@@ -38,508 +35,7 @@ let closure_14 = createStyles.createStyles(() => {
   ({ borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemChannelBase(channel) {
-  let activities;
-  let blocked;
-  let favorite;
-  let first;
-  let hasUnreadMessages;
-  let height;
-  let ignored;
-  let isIncomingCall;
-  let isOngoingCall;
-  let isPressed;
-  let mentionCount;
-  let muted;
-  let resolvedUnreadSetting;
-  let setIsPressed;
-  let status;
-  let tmp6;
-  let tmp2 = dependencyMap;
-  let obj = channel(576);
-  const cResult = obj.c(105);
-  channel = channel.channel;
-  ({ height, isPressed, setIsPressed } = channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel.id) {
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-    cResult[1] = channel.id;
-    cResult[2] = M;
-    tmp6 = M;
-  } else {
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-  }
-  const tmpResult = channel(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp8 = closure_14();
-  if (cResult[3] !== height) {
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-    tmp10[0] = height;
-    cResult[3] = height;
-    cResult[4] = tmp10;
-  } else {
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-  }
-  if (stateFromStores) {
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-  }
-  if (cResult[5] === tmp8.pressable) {
-    let tmp12;
-    let tmp13;
-    let tmp15;
-    let tmp16;
-    let tmp21;
-    let tmp22;
-    let tmp24;
-    let tmp25;
-    let tmp27;
-    let tmp28;
-    let tmp31;
-    class M {
-      constructor() {
-        let id;
-        const channelId = SelectedChannelStore.getChannelId(null);
-        if (channel != null) {
-          id = channel.id;
-        }
-        return channelId === id;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor() {
-          let id;
-          const channelId = SelectedChannelStore.getChannelId(null);
-          if (channel != null) {
-            id = channel.id;
-          }
-          return channelId === id;
-        }
-      }
-      const items1 = [PresenceStore];
-      cResult[8] = items1;
-      tmp12 = items1;
-    } else {
-      class M {
-        constructor() {
-          let id;
-          const channelId = SelectedChannelStore.getChannelId(null);
-          if (channel != null) {
-            id = channel.id;
-          }
-          return channelId === id;
-        }
-      }
-    }
-    if (cResult[9] !== channel) {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-      cResult[9] = channel;
-      cResult[10] = B;
-      tmp13 = B;
-    } else {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-    }
-    const tmpResult8 = channel(504);
-    const stateFromStoresObject = tmpResult8.useStateFromStoresObject(tmp12, tmp13);
-    ({ status, activities } = stateFromStoresObject);
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-      const items2 = [ReadStateStore];
-      cResult[11] = items2;
-      tmp15 = items2;
-    } else {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-    }
-    if (cResult[12] !== channel) {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-      cResult[12] = channel;
-      cResult[13] = tmp17;
-      tmp16 = tmp17;
-    } else {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-    }
-    const tmpResult9 = channel(504);
-    const stateFromStoresObject1 = tmpResult9.useStateFromStoresObject(tmp15, tmp16);
-    ({ mentionCount, hasUnreadMessages } = stateFromStoresObject1);
-    ({ isIncomingCall, isOngoingCall } = setIsPressed(17973)(channel.id));
-    const _Symbol3 = Symbol;
-    setIsPressed(17973)(channel.id);
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-      const items3 = [UserGuildSettingsStore];
-      cResult[14] = items3;
-      tmp21 = items3;
-    } else {
-      class B {
-        constructor() {
-          let activities;
-          let obj3;
-          if (channel.isDM()) {
-            activities = PresenceStore.getActivities(obj.getRecipientId());
-          }
-          if (channel.isDM()) {
-            obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-            const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
-          } else {
-            obj3 = { status: "Array", activities: "Reflect" };
-          }
-          return obj3;
-        }
-      }
-    }
-    if (cResult[15] !== channel) {
-      class G {
-        constructor() {
-          const obj = { resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), muted: UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id), favorite: UserGuildSettingsStore.isMessagesFavorite(channel.id) };
-          return obj;
-        }
-      }
-      cResult[15] = channel;
-      cResult[16] = G;
-      tmp22 = G;
-    } else {
-      class G {
-        constructor() {
-          const obj = { resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), muted: UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id), favorite: UserGuildSettingsStore.isMessagesFavorite(channel.id) };
-          return obj;
-        }
-      }
-    }
-    const tmpResult10 = channel(504);
-    const stateFromStoresObject2 = tmpResult10.useStateFromStoresObject(tmp21, tmp22);
-    ({ resolvedUnreadSetting, muted, favorite } = stateFromStoresObject2);
-    const _Symbol4 = Symbol;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor() {
-          const obj = { resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), muted: UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id), favorite: UserGuildSettingsStore.isMessagesFavorite(channel.id) };
-          return obj;
-        }
-      }
-      const items4 = [RelationshipStore];
-      cResult[17] = items4;
-      tmp24 = items4;
-    } else {
-      class G {
-        constructor() {
-          const obj = { resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), muted: UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id), favorite: UserGuildSettingsStore.isMessagesFavorite(channel.id) };
-          return obj;
-        }
-      }
-    }
-    if (cResult[18] !== channel) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      cResult[18] = channel;
-      cResult[19] = Z;
-      tmp25 = Z;
-    } else {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-    }
-    const tmpResult11 = channel(504);
-    const stateFromStoresObject3 = tmpResult11.useStateFromStoresObject(tmp24, tmp25);
-    ({ ignored, blocked } = stateFromStoresObject3);
-    const _Symbol5 = Symbol;
-    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      const items5 = [UserStore];
-      cResult[20] = items5;
-      tmp27 = items5;
-    } else {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-    }
-    if (cResult[21] !== channel) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      cResult[21] = channel;
-      cResult[22] = tmp29;
-      tmp28 = tmp29;
-    } else {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-    }
-    const tmpResult12 = channel(504);
-    const stateFromStores1 = tmpResult12.useStateFromStores(tmp27, tmp28);
-    if (cResult[23] !== stateFromStores1) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      tmp32[0] = stateFromStores1;
-      cResult[23] = stateFromStores1;
-      cResult[24] = tmp32;
-      tmp31 = tmp32;
-    } else {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-    }
-    const tmpResult13 = channel(8747);
-    const nameplate = tmpResult13.useNameplate(tmp31);
-    let tmp35 = null != nameplate;
-    if (tmp35) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      tmp35 = tmp36;
-    }
-    const tmpResult14 = channel(1381);
-    if (tmpResult14.isIOS()) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-      if (!tmp35) {
-        class Z {
-          constructor() {
-            let isBlockedResult;
-            const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-            isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-            return obj2;
-          }
-        }
-      }
-    }
-    if (cResult[25] === channel.guild_id) {
-      class Z {
-        constructor() {
-          let isBlockedResult;
-          const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
-          isBlockedResult = obj.isDM() && RelationshipStore.isBlocked(obj.getRecipientId());
-          return obj2;
-        }
-      }
-    }
-    function re() {
-      const obj = ChannelActionCreatorsDefault;
-      obj.preload(channel.guild_id, channel.id);
-      setIsPressed(true);
-    }
-    cResult[25] = channel.guild_id;
-    cResult[26] = channel.id;
-    cResult[27] = setIsPressed;
-    cResult[28] = re;
-  }
-  const items6 = [tmp8.pressable, undefined];
-  cResult[5] = tmp8.pressable;
-  cResult[6] = undefined;
-  cResult[7] = items6;
-}) : (function MessagesItemChannelBase(channel) {
+const memoResult = react.memo(function MessagesItemChannelBase(channel) {
   let PressableHighlight;
   let activities;
   let blocked;
@@ -564,7 +60,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let closure_6;
   let tmp = channel;
   let tmp2 = isPressed;
-  let obj = channel(isPressed[14]);
+  let obj = channel(isPressed[11]);
   let items = [SelectedChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let id;
@@ -574,7 +70,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return channelId === id;
   });
-  let tmp4 = closure_14();
+  let tmp4 = closure_13();
   let closure_5 = tmp4;
   let obj2 = setIsPressed;
   const items1 = [height];
@@ -589,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items[1] = rowSelected;
     return items;
   }, items2);
-  let obj3 = channel(isPressed[14]);
+  let obj3 = channel(isPressed[11]);
   const items3 = [closure_5];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items3, () => {
     let activities;
@@ -601,13 +97,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "Array", activities: "Reflect" };
+      obj3 = { status: "color", activities: "Error" };
     }
     return obj3;
   });
   ({ status, activities } = stateFromStoresObject);
   const items4 = [closure_6];
-  const obj4 = channel(isPressed[14]);
+  const obj4 = channel(isPressed[11]);
   const stateFromStoresObject1 = obj4.useStateFromStoresObject(items4, () => {
     let tmp2;
     const mentionCount = ReadStateStore.getMentionCount(channel.id);
@@ -621,17 +117,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   });
   const hasUnreadMessages = stateFromStoresObject1.hasUnreadMessages;
   let mentionCount = stateFromStoresObject1.mentionCount;
-  ({ isIncomingCall, isOngoingCall } = height(isPressed[15])(channel.id));
-  height(isPressed[15])(channel.id);
+  ({ isIncomingCall, isOngoingCall } = height(isPressed[12])(channel.id));
+  height(isPressed[12])(channel.id);
   const items5 = [UserGuildSettingsStore];
-  const obj5 = channel(isPressed[14]);
+  const obj5 = channel(isPressed[11]);
   const stateFromStoresObject2 = obj5.useStateFromStoresObject(items5, () => {
     const obj = { resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel), muted: UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id), favorite: UserGuildSettingsStore.isMessagesFavorite(channel.id) };
     return obj;
   });
   ({ resolvedUnreadSetting, muted, favorite } = stateFromStoresObject2);
   const items6 = [RelationshipStore];
-  const obj6 = channel(isPressed[14]);
+  const obj6 = channel(isPressed[11]);
   const stateFromStoresObject3 = obj6.useStateFromStoresObject(items6, () => {
     let isBlockedResult;
     const obj2 = { ignored: channel.isDM() && RelationshipStore.isIgnored(obj.getRecipientId()), blocked: isBlockedResult };
@@ -640,7 +136,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   });
   ({ ignored, blocked } = stateFromStoresObject3);
   const items7 = [UserStore];
-  const obj7 = channel(isPressed[14]);
+  const obj7 = channel(isPressed[11]);
   const stateFromStores1 = obj7.useStateFromStores(items7, () => {
     const getUser = UserStore.getUser;
     let recipientId;
@@ -650,7 +146,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return getUser(recipientId);
   });
-  const obj8 = channel(isPressed[16]);
+  const obj8 = channel(isPressed[13]);
   const nameplate = obj8.useNameplate({ user: stateFromStores1 });
   let tmp15 = null != nameplate;
   if (tmp15) {
@@ -700,41 +196,41 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = openChannelLongPressActionSheet;
     const result = obj.openChannelLongPressActionSheet(channel.id);
   }, items12);
-  obj10 = { onPressIn: callback, onPressOut: callback1, onPress: callback2, onLongPress: callback3, accessibilityRole: "button", accessibilityLabel: height(tmp2[21])({ channel, unread: hasUnreadMessages, mentionCount, isIncomingCall, isOngoingCall, ignored, blocked }), accessibilityHint: tmpResult.getChannelA11yHint({ channel, muted, userStatus: status, isFavorite: favorite }), underlayColor: tmp4.rowActive.backgroundColor, style: memo1, children: items13 };
-  PressableHighlight = tmp(tmp2[29]).PressableHighlight;
+  obj10 = { onPressIn: callback, onPressOut: callback1, onPress: callback2, onLongPress: callback3, accessibilityRole: "button", accessibilityLabel: height(tmp2[19])({ channel, unread: hasUnreadMessages, mentionCount, isIncomingCall, isOngoingCall, ignored, blocked }), accessibilityHint: tmpResult.getChannelA11yHint({ channel, muted, userStatus: status, isFavorite: favorite }), underlayColor: tmp4.rowActive.backgroundColor, style: memo1, children: items13 };
+  PressableHighlight = tmp(tmp2[18]).PressableHighlight;
   let tmp26;
-  tmpResult = tmp(tmp2[21]);
-  tmp24 = closure_13;
-  const tmp9Result = height(tmp2[22]);
+  tmpResult = tmp(tmp2[19]);
+  tmp24 = closure_12;
+  const tmp9Result = height(tmp2[20]);
   if (tmp15) {
     tmp26 = nameplate;
   }
   items13 = [, , , , ];
   const obj11 = { nameplate: tmp26, isFocused: stateFromStores, isPressed, isMuted: muted || ignored || blocked, fadeIn: isPressed, style: tmp4.nameplate };
-  items13[0] = closure_12(tmp9Result, obj11);
+  items13[0] = closure_11(tmp9Result, obj11);
   let tmp22Result = stateFromStores;
   if (tmp22Result) {
     const obj12 = { style: tmp4.selectedBorder, pointerEvents: "none" };
     tmp22Result = tmp22(tmp23, obj12);
   }
   items13[1] = tmp22Result;
-  const obj13 = { unread: hasUnreadMessages, resolvedUnreadSetting, muted, layout: tmp(tmp2[24]).ChannelListLayoutTypes.COZY_DRAWER_SMOL, panelVariant: true };
-  const tmp9Result4 = height(tmp2[23]);
-  items13[2] = closure_12(tmp9Result4, obj13);
-  const obj14 = { backgroundColor: memo2, children: closure_12(tmp9Result5, obj15) };
-  const CutoutBackgroundProvider = tmp(tmp2[27]).CutoutBackgroundProvider;
+  const obj13 = { unread: hasUnreadMessages, resolvedUnreadSetting, muted, layout: tmp(tmp2[22]).ChannelListLayoutTypes.COZY_DRAWER_SMOL, panelVariant: true };
+  const tmp9Result4 = height(tmp2[21]);
+  items13[2] = closure_11(tmp9Result4, obj13);
+  const obj14 = { backgroundColor: memo2, children: closure_11(tmp9Result5, obj15) };
+  const CutoutBackgroundProvider = tmp(tmp2[23]).CutoutBackgroundProvider;
   obj15 = { channel, channelSelected: stateFromStores, hasUnreadMessages, muted, ignored, blocked, isStreaming: height(tmp2[25])(activities), status };
-  tmp9Result5 = height(tmp2[26]);
-  items13[3] = closure_12(CutoutBackgroundProvider, obj14);
+  tmp9Result5 = height(tmp2[24]);
+  items13[3] = closure_11(CutoutBackgroundProvider, obj14);
   const obj16 = { channel, channelSelected: stateFromStores, favorite, muted, ignored, blocked, hasActivity: true === someResult, hasUnreadMessages, resolvedUnreadSetting, hasNameplate: tmp15 };
   someResult = undefined;
-  const tmp9Result6 = height(tmp2[28]);
+  const tmp9Result6 = height(tmp2[26]);
   if (activities != null) {
-    someResult = activities.some((type) => type.type !== constants.CUSTOM_STATUS);
+    someResult = activities.some((type) => type.type !== channel(isPressed[27]).ActivityTypes.CUSTOM_STATUS);
   }
-  items13[4] = closure_12(tmp9Result6, obj16);
-  return closure_12(stateFromStores, obj9);
-}));
+  items13[4] = closure_11(tmp9Result6, obj16);
+  return closure_11(stateFromStores, obj9);
+});
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/channel/MessagesItemChannelBase.tsx");
 
 export default memoResult;

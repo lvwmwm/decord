@@ -1,33 +1,26 @@
-// Module ID: 5302
-// Function ID: 5303
+// Module ID: 5267
+// Function ID: 5268
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 109, 19, 17, 5303, 21, 5005, 587, 1381, 558, 576, 1631, 5304, 5305, 5306, 5295, 1104, 5086, 5617, 5019, 5618, 5300, 5619, 5620, 5629, 1497, 5183, 5634, 5071, 2]
+// Dependencies: [32, 19, 17, 5268, 21, 5009, 575, 1376, 1626, 5269, 5270, 5581, 5582, 1093, 5090, 5586, 5023, 5587, 5588, 5590, 5592, 5601, 1492, 5189, 5606, 5075, 2]
+// Exports: BottomSheet
 
-// Module 5302 (Sheet/BottomSheet)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5183 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import BottomSheetModal from "BottomSheetModal" /* 5306 */;
-import reactDefault from "react" /* 5617 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5619 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5620 */;
+// Module 5267 (Sheet/BottomSheet)
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5269 */;
+import BottomSheetModal from "BottomSheetModal" /* 5270 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5590 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5592 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap, importDefault, tmp5Result;
 
 let Platform;
 let c10;
@@ -37,26 +30,35 @@ let closure_14;
 let closure_15;
 let closure_16;
 let closure_17;
-let closure_18;
-let closure_19;
-let closure_20;
-let closure_21;
+let hasOwnProperty;
 let map1;
-let tmp;
+let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 let tmp2;
+let tmp5;
 let unpackModuleId;
-const ConstantsIOS = tmp(1104);
-const useIsScreenReaderEnabled = tmp(5304);
-const NavigatorConstants = tmp(5305);
-const BottomSheetModalDefault = tmp2(5306);
-const NavScrim = tmp2(5629);
-let closure_3 = ["startHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "scrollViewStyle", "startExpanded", "onChange", "onExpand", "keyboardShouldPersistTaps", "children", "maxDynamicContentSize", "ref"];
-let closure_4 = ["startHeight", "contentHeight", "maxHeight", "hasEverExpanded", "windowDimensions", "wrapperStyle", "onChange", "onExpand", "children", "borderGradient", "extraContent", "ref"];
-let closure_5 = ["scrollable", "startHeight", "maxHeight", "containerHeight", "startExpanded", "backdropOpacity", "backdropChildren", "header", "handleComponent", "handleDisabled", "dismissAccessibilityLabel", "footer", "onExpand", "onDismiss", "keyboardShouldPersistTaps", "children", "backgroundStyles", "contentStyles", "bodyStyles", "borderGradient", "showGradient", "extraContent", "contentHeight", "ref"];
-({ StyleSheet: c9, View: c10, Platform } = react_native);
-({ ACTION_SHEET_START_HEIGHT_RATIO: unpackModuleId, ACTION_SHEET_MAX_WIDTH: closure_12, ACTION_SHEET_SPRING_CONFIG: map1, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: closure_14, ACTION_SHEET_GRADIENT_BORDER_WIDTH: closure_15, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_16, ACTION_SHEET_BORDER_RADIUS: closure_17, ACTION_SHEET_INNER_BORDER_RADIUS: closure_18, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_19 } = ActionSheetConstants);
-({ jsx: closure_20, jsxs: closure_21 } = Fragment);
-let closure_22 = createStyles.createStyles((arg0) => {
+const ConstantsIOS = tmp5(1093);
+const BottomSheetModalDefault = tmp2(5270);
+const NavigatorConstants = tmp5(5581);
+const NavScrim = tmp2(5601);
+function Background(arg0) {
+  const obj = {};
+  const merged = Object.assign(arg0);
+  return authStore4(metroRequire, obj);
+}
+function GradientBackground(arg0) {
+  let obj2;
+  const obj = { children: authStore4(metroRequire, obj2) };
+  const tmp = closure_18(false);
+  const merged = Object.assign(arg0);
+  obj2 = { style: tmp.backgroundOverlay };
+  return authStore4(metroRequire, obj);
+}
+({ StyleSheet: hasOwnProperty, View: metroRequire, Platform } = react_native);
+({ ACTION_SHEET_START_HEIGHT_RATIO: metroImportDefault, ACTION_SHEET_MAX_WIDTH: metroImportAll, ACTION_SHEET_SPRING_CONFIG: c9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: unpackModuleId, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ActionSheetConstants);
+({ jsx: closure_16, jsxs: closure_17 } = Fragment);
+let closure_18 = createStyles.createStyles((arg0) => {
   let num2;
   let obj4;
   let obj6;
@@ -99,194 +101,13 @@ let closure_22 = createStyles.createStyles((arg0) => {
   obj6 = { height: "100%", overflow: str2, borderTopLeftRadius: borderTopRightRadius, borderTopRightRadius };
   obj8 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT };
   ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG });
-  const merged = Object.assign(React4.absoluteFillObject);
+  const merged = Object.assign(hasOwnProperty.absoluteFillObject);
   return obj;
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentSizeBottomSheetInner(arg0) {
-  let children;
-  let closure_129_4;
-  let diff;
-  let hasEverExpanded;
-  let items1;
-  let keyboardShouldPersistTaps;
-  let maxDynamicContentSize;
-  let onChange;
-  let onExpand;
-  let ref;
-  let result;
-  let scrollViewStyle;
-  let startExpanded;
-  let startHeight;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let tmp21;
-  let tmp5;
-  let tmp8;
-  let windowDimensions;
-  let wrapperStyle;
-  let tmp = require;
-  const obj = react2;
-  const cResult = obj.c(40);
-  if (cResult[0] !== arg0) {
-    ({ startHeight, hasEverExpanded, windowDimensions, wrapperStyle, scrollViewStyle, startExpanded, onChange, onExpand, keyboardShouldPersistTaps, children, maxDynamicContentSize, ref } = arg0);
-    let closure_0 = onChange;
-    let closure_1 = onExpand;
-    cResult[0] = arg0;
-    cResult[1] = maxDynamicContentSize;
-    cResult[2] = children;
-    cResult[3] = keyboardShouldPersistTaps;
-    cResult[4] = onChange;
-    cResult[5] = onExpand;
-    cResult[6] = _objectWithoutProperties(arg0, closure_3);
-    cResult[7] = ref;
-    cResult[8] = scrollViewStyle;
-    cResult[9] = startExpanded;
-    cResult[10] = startHeight;
-    cResult[11] = windowDimensions;
-    cResult[12] = wrapperStyle;
-    tmp15 = wrapperStyle;
-    tmp14 = windowDimensions;
-    result = startHeight;
-    tmp12 = startExpanded;
-    tmp5 = children;
-    diff = maxDynamicContentSize;
-    const tmp18 = _objectWithoutProperties(arg0, closure_3);
-    tmp8 = onExpand;
-  } else {
-    diff = cResult[1];
-    tmp5 = cResult[2];
-    closure_0 = cResult[4];
-    closure_1 = cResult[5];
-    tmp12 = cResult[9];
-    result = cResult[10];
-    tmp14 = cResult[11];
-    tmp15 = cResult[12];
-  }
-  const height = tmp14.height;
-  const top = useSafeAreaInsetsDefault().top;
-  const tmpResult = useIsScreenReaderEnabled;
-  const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
-  if (result == null) {
-    result = height * unpackModuleId;
-  }
-  if (diff == null) {
-    diff = height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top;
-  }
-  if (cResult[13] === result) {
-    if (cResult[14] === isScreenReaderEnabled) {
-      let tmp25;
-      let tmp24;
-      if (cResult[15] === tmp12) {
-        tmp21 = cResult[16];
-      }
-      [r10081, closure_129_4] = react.useState(tmp21);
-      _slicedToArray(react.useState(tmp21), 2);
-      const obj3 = react;
-      if (cResult[17] !== isScreenReaderEnabled) {
-        class W {
-          constructor() {
-            const tmp = isScreenReaderEnabled;
-            if (tmp) {
-              closure_1_4([]);
-            }
-          }
-        }
-        const items = [isScreenReaderEnabled];
-        cResult[17] = isScreenReaderEnabled;
-        cResult[18] = W;
-        cResult[19] = items;
-        tmp25 = items;
-        tmp24 = W;
-      } else {
-        class W {
-          constructor() {
-            const tmp = isScreenReaderEnabled;
-            if (tmp) {
-              closure_1_4([]);
-            }
-          }
-        }
-        tmp25 = cResult[19];
-      }
-      const effect = obj3.useEffect(tmp24, tmp25);
-      if (cResult[20] !== result) {
-        class Y {
-          constructor(nativeEvent) {
-            if (nativeEvent.nativeEvent.layout.height < result) {
-              closure_1_4([]);
-            }
-          }
-        }
-        cResult[20] = result;
-        cResult[21] = Y;
-      } else {
-        class Y {
-          constructor(nativeEvent) {
-            if (nativeEvent.nativeEvent.layout.height < result) {
-              closure_1_4([]);
-            }
-          }
-        }
-      }
-      if (cResult[22] === tmp7) {
-        class Y {
-          constructor(nativeEvent) {
-            if (nativeEvent.nativeEvent.layout.height < result) {
-              closure_1_4([]);
-            }
-          }
-        }
-        if (cResult[25] === tmp5) {
-          class Y {
-            constructor(nativeEvent) {
-              if (nativeEvent.nativeEvent.layout.height < result) {
-                closure_1_4([]);
-              }
-            }
-          }
-        }
-        const obj2 = { onLayout: tmp27, style: tmp15, children: tmp5 };
-        cResult[25] = tmp5;
-        cResult[26] = tmp27;
-        cResult[27] = tmp15;
-        cResult[28] = closure_20(authStore, obj2);
-        const tmp32 = closure_20(authStore, obj2);
-      }
-      const fn = function $(arg0, arg1, arg2) {
-        if (closure_0 != null) {
-          tmp(arg0, arg1, arg2);
-        }
-        if (0 === arg0) {
-          if (closure_1 != null) {
-            tmp5();
-          }
-        }
-      };
-      cResult[22] = tmp7;
-      cResult[23] = tmp8;
-      cResult[24] = fn;
-    }
-  }
-  if (!isScreenReaderEnabled) {
-    class Y {
-      constructor(nativeEvent) {
-        if (nativeEvent.nativeEvent.layout.height < result) {
-          closure_1_4([]);
-        }
-      }
-    }
-    cResult[13] = result;
-    cResult[14] = isScreenReaderEnabled;
-    cResult[15] = tmp12;
-    cResult[16] = items1;
-    tmp21 = items1;
-  }
-  items1 = [];
-}) : (function ContentSizeBottomSheetInner(windowDimensions) {
+function ContentSizeBottomSheetInner(windowDimensions) {
   let BottomSheetScrollView;
   let children;
+  let closure_4;
   let first;
   let hasEverExpanded;
   let keyboardShouldPersistTaps;
@@ -310,7 +131,7 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
   const obj = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   if (startHeight == null) {
-    startHeight = height * unpackModuleId;
+    startHeight = height * metroImportDefault;
   }
   if (!isScreenReaderEnabled) {
     let items;
@@ -342,330 +163,20 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conten
         }
       }
     }, items3);
-    const obj3 = { enableDynamicSizing: true, snapPoints: first, maxDynamicContentSize, ref, onChange: callback1, children: closure_20(BottomSheetScrollView, obj4) };
+    const obj3 = { enableDynamicSizing: true, snapPoints: first, maxDynamicContentSize, ref, onChange: callback1, children: authStore4(BottomSheetScrollView, obj4) };
     const tmp2Result = BottomSheetModalDefault;
     const merged1 = Object.assign(merged);
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(5305).NAV_BAR_HEIGHT_MULTILINE - top;
+      maxDynamicContentSize = height - tmp4(5581).NAV_BAR_HEIGHT_MULTILINE - top;
     }
-    obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: closure_20(authStore, obj5) };
+    obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: authStore4(metroRequire, obj5) };
     obj5 = { onLayout: callback, style: wrapperStyle, children };
-    BottomSheetScrollView = tmp4(5306).BottomSheetScrollView;
-    return closure_20(tmp2Result, obj3);
+    BottomSheetScrollView = tmp4(5270).BottomSheetScrollView;
+    return authStore4(tmp2Result, obj3);
   }
   items = [];
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollableBottomSheetInner(onExpand) {
-  let borderGradient;
-  let children;
-  let contentHeight;
-  let diff;
-  let extraContent;
-  let hasEverExpanded;
-  let items;
-  let maxHeight;
-  let onChange;
-  let ref;
-  let result;
-  let startHeight;
-  let tmp12;
-  let tmp13;
-  let tmp15;
-  let tmp16;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  let windowDimensions;
-  let wrapperStyle;
-  const tmp = require;
-  const obj = react2;
-  const cResult = obj.c(43);
-  if (cResult[0] !== onExpand) {
-    ({ startHeight, contentHeight, maxHeight, hasEverExpanded, windowDimensions, wrapperStyle, onChange } = onExpand);
-    let closure_0 = onChange;
-    onExpand = onExpand.onExpand;
-    let closure_1 = onExpand;
-    ({ children, borderGradient, extraContent, ref } = onExpand);
-    const tmp19 = _objectWithoutProperties(onExpand, closure_4);
-    cResult[0] = onExpand;
-    cResult[1] = maxHeight;
-    cResult[2] = borderGradient;
-    cResult[3] = children;
-    cResult[4] = contentHeight;
-    cResult[5] = extraContent;
-    cResult[6] = hasEverExpanded;
-    cResult[7] = onChange;
-    cResult[8] = onExpand;
-    cResult[9] = tmp19;
-    cResult[10] = ref;
-    cResult[11] = startHeight;
-    cResult[12] = windowDimensions;
-    cResult[13] = wrapperStyle;
-    tmp16 = wrapperStyle;
-    tmp15 = windowDimensions;
-    result = startHeight;
-    tmp13 = ref;
-    tmp12 = tmp19;
-    tmp9 = hasEverExpanded;
-    tmp8 = extraContent;
-    tmp7 = contentHeight;
-    tmp6 = children;
-    tmp5 = borderGradient;
-    diff = maxHeight;
-  } else {
-    diff = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-    tmp8 = cResult[5];
-    tmp9 = cResult[6];
-    closure_0 = cResult[7];
-    closure_1 = cResult[8];
-    tmp12 = cResult[9];
-    tmp13 = cResult[10];
-    result = cResult[11];
-    tmp15 = cResult[12];
-    tmp16 = cResult[13];
-  }
-  const height = tmp15.height;
-  const tmp20 = closure_22(false);
-  const top = useSafeAreaInsetsDefault().top;
-  const tmpResult = useIsScreenReaderEnabled;
-  const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
-  if (result == null) {
-    result = height * unpackModuleId;
-  }
-  if (diff == null) {
-    diff = tmp7;
-  }
-  if (diff == null) {
-    diff = height - NavigatorConstants.NAV_BAR_HEIGHT_MULTILINE - top;
-  }
-  if (cResult[14] === result) {
-    if (cResult[15] === tmp9) {
-      if (cResult[16] === isScreenReaderEnabled) {
-        let arr;
-        if (cResult[17] === diff) {
-          arr = cResult[18];
-        }
-        const diff1 = arr.length - 1;
-        if (cResult[19] === diff1) {
-          if (cResult[20] === tmp10) {
-            let tmp28;
-            let tmp29;
-            if (cResult[21] === tmp11) {
-              tmp28 = cResult[22];
-            }
-            if (cResult[23] !== diff) {
-              const obj2 = { maxHeight: diff };
-              cResult[23] = diff;
-              class L {
-                constructor(arg0, arg1, arg2) {
-                  if (closure_0 != null) {
-                    tmp2 = arg1;
-                    tmp3 = arg2;
-                    tmpResult = tmp(onExpand, arg1, arg2);
-                  }
-                  if (onExpand === closure_2) {
-                    if (closure_1 != null) {
-                      tmp5Result = tmp5();
-                    }
-                  }
-                  return;
-                }
-              }
-              tmp29 = obj2;
-            } else {
-              tmp29 = cResult[24];
-            }
-            if (cResult[25] === tmp29) {
-              let tmp30;
-              if (cResult[26] === tmp16) {
-                tmp30 = cResult[27];
-              }
-              if (cResult[28] === tmp6) {
-                let tmp31;
-                if (cResult[29] === tmp30) {
-                  tmp31 = cResult[30];
-                }
-                if (cResult[31] === tmp5) {
-                  if (cResult[32] === tmp31) {
-                    let tmp35;
-                    if (cResult[33] === tmp20) {
-                      tmp35 = cResult[34];
-                    }
-                    if (cResult[35] === tmp7) {
-                      if (cResult[36] === tmp8) {
-                        if (cResult[37] === tmp28) {
-                          if (cResult[38] === tmp12) {
-                            if (cResult[39] === tmp13) {
-                              if (cResult[40] === arr) {
-                                let tmp39;
-                                if (cResult[41] === tmp35) {
-                                  tmp39 = cResult[42];
-                                }
-                                return tmp39;
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                    const obj3 = { ref: tmp13, enableDynamicSizing: false, contentHeight: tmp7, snapPoints: arr, onChange: tmp28, children: items };
-                    class L {
-                      constructor(arg0, arg1, arg2) {
-                        if (closure_0 != null) {
-                          tmp2 = arg1;
-                          tmp3 = arg2;
-                          tmpResult = tmp(onExpand, arg1, arg2);
-                        }
-                        if (onExpand === closure_2) {
-                          if (closure_1 != null) {
-                            tmp5Result = tmp5();
-                          }
-                        }
-                        return;
-                      }
-                    }
-                    const tmp21Result = BottomSheetModalDefault;
-                    const merged = Object.assign(tmp12);
-                    items = [tmp35, tmp8];
-                    const tmp44 = closure_21(tmp21Result, obj3);
-                    cResult[35] = tmp7;
-                    cResult[36] = tmp8;
-                    cResult[37] = tmp28;
-                    cResult[38] = tmp12;
-                    cResult[39] = tmp13;
-                    cResult[40] = arr;
-                    cResult[41] = tmp35;
-                    cResult[42] = tmp44;
-                    tmp39 = tmp44;
-                  }
-                }
-                let tmp36 = tmp31;
-                if (null != tmp5) {
-                  const obj4 = { style: tmp20.gradient, start: ConstantsIOS.VerticalGradient.START, end: null, colors: tmp5, children: tmp31 };
-                  const tmp21Result2 = LinearGradientDefault;
-                  class L {
-                    constructor(arg0, arg1, arg2) {
-                      if (closure_0 != null) {
-                        tmp2 = arg1;
-                        tmp3 = arg2;
-                        tmpResult = tmp(onExpand, arg1, arg2);
-                      }
-                      if (onExpand === closure_2) {
-                        if (closure_1 != null) {
-                          tmp5Result = tmp5();
-                        }
-                      }
-                      return;
-                    }
-                  }
-                  tmp36 = closure_20(tmp21Result2, obj4);
-                }
-                class L {
-                  constructor(arg0, arg1, arg2) {
-                    if (closure_0 != null) {
-                      tmp2 = arg1;
-                      tmp3 = arg2;
-                      tmpResult = tmp(onExpand, arg1, arg2);
-                    }
-                    if (onExpand === closure_2) {
-                      if (closure_1 != null) {
-                        tmp5Result = tmp5();
-                      }
-                    }
-                    return;
-                  }
-                }
-                cResult[32] = tmp31;
-                cResult[33] = tmp20;
-                cResult[34] = tmp36;
-                tmp35 = tmp36;
-              }
-              const obj5 = { style: null, children: tmp6 };
-              class L {
-                constructor(arg0, arg1, arg2) {
-                  if (closure_0 != null) {
-                    tmp2 = arg1;
-                    tmp3 = arg2;
-                    tmpResult = tmp(onExpand, arg1, arg2);
-                  }
-                  if (onExpand === closure_2) {
-                    if (closure_1 != null) {
-                      tmp5Result = tmp5();
-                    }
-                  }
-                  return;
-                }
-              }
-              const tmp34 = closure_20(authStore, obj5);
-              cResult[28] = tmp6;
-              cResult[29] = tmp30;
-              cResult[30] = tmp34;
-              tmp31 = tmp34;
-            }
-            const items1 = [tmp16, ];
-            class L {
-              constructor(arg0, arg1, arg2) {
-                if (closure_0 != null) {
-                  tmp2 = arg1;
-                  tmp3 = arg2;
-                  tmpResult = tmp(onExpand, arg1, arg2);
-                }
-                if (onExpand === closure_2) {
-                  if (closure_1 != null) {
-                    tmp5Result = tmp5();
-                  }
-                }
-                return;
-              }
-            }
-            cResult[25] = tmp29;
-            cResult[26] = tmp16;
-            cResult[27] = items1;
-            tmp30 = items1;
-          }
-        }
-        class L {
-          constructor(arg0, arg1, arg2) {
-            if (closure_0 != null) {
-              tmp2 = arg1;
-              tmp3 = arg2;
-              tmpResult = tmp(onExpand, arg1, arg2);
-            }
-            if (onExpand === closure_2) {
-              if (closure_1 != null) {
-                tmp5Result = tmp5();
-              }
-            }
-            return;
-          }
-        }
-        cResult[19] = diff1;
-        cResult[20] = tmp10;
-        cResult[21] = tmp11;
-        cResult[22] = L;
-        tmp28 = L;
-      }
-    }
-  }
-  const items2 = [];
-  const tmp24 = !isScreenReaderEnabled && !tmp9 && result < diff;
-  if (tmp24) {
-    items2.push(result);
-  }
-  items2.push(diff);
-  cResult[14] = result;
-  cResult[15] = tmp9;
-  cResult[16] = isScreenReaderEnabled;
-  cResult[17] = diff;
-  cResult[18] = items2;
-  arr = items2;
-}) : (function ScrollableBottomSheetInner(windowDimensions) {
+}
+function ScrollableBottomSheetInner(windowDimensions) {
   let children;
   let contentHeight;
   let extraContent;
@@ -687,12 +198,12 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scroll
   maxHeight = undefined;
   let c6;
   const tmp5 = require;
-  const tmp2 = closure_22(false);
+  const tmp2 = closure_18(false);
   const top = useSafeAreaInsetsDefault().top;
   const obj = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   if (startHeight == null) {
-    startHeight = height * unpackModuleId;
+    startHeight = height * metroImportDefault;
   }
   if (maxHeight == null) {
     maxHeight = contentHeight;
@@ -725,13 +236,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scroll
       }
     }
   }, items1);
-  const tmp11 = closure_20(authStore, obj2);
+  const tmp11 = authStore4(metroRequire, obj2);
   const obj3 = { ref, enableDynamicSizing: false, contentHeight, snapPoints: memo, onChange: callback, children: items3 };
   const tmp3Result = BottomSheetModalDefault;
   const merged1 = Object.assign(merged);
   let tmp10Result = tmp11;
-  const tmp10 = closure_20;
-  const tmp12 = closure_21;
+  const tmp10 = authStore4;
+  const tmp12 = closure_17;
   if (null != borderGradient) {
     const obj4 = { style: tmp2.gradient, start: ConstantsIOS.VerticalGradient.START, end: ConstantsIOS.VerticalGradient.END, colors: borderGradient, children: tmp11 };
     const tmp3Result2 = LinearGradientDefault;
@@ -739,740 +250,13 @@ let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scroll
   }
   items3 = [tmp10Result, extraContent];
   return tmp12(tmp3Result, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_25 = ReactCompilerGating.isReactCompilerEnabled() ? (function Background(arg0) {
-  let tmp2;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const obj2 = {};
-    const merged = Object.assign(arg0);
-    const tmp8 = closure_20(authStore, obj2);
-    cResult[0] = arg0;
-    cResult[1] = tmp8;
-    tmp2 = tmp8;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : (function Background(arg0) {
-  const obj = {};
-  const merged = Object.assign(arg0);
-  return closure_20(authStore, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_26 = ReactCompilerGating.isReactCompilerEnabled() ? (function GradientBackground(arg0) {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const tmp2 = closure_22(false);
-  if (cResult[0] !== tmp2.backgroundOverlay) {
-    const obj2 = { style: tmp2.backgroundOverlay };
-    const tmp6 = closure_20(authStore, obj2);
-    cResult[0] = tmp2.backgroundOverlay;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  if (cResult[2] === arg0) {
-    let tmp7;
-    if (cResult[3] === tmp3) {
-      tmp7 = cResult[4];
-    }
-    return tmp7;
-  }
-  const obj3 = { children: tmp3 };
-  const merged = Object.assign(arg0);
-  const tmp9 = closure_20(authStore, obj3);
-  cResult[2] = arg0;
-  cResult[3] = tmp3;
-  cResult[4] = tmp9;
-  tmp7 = tmp9;
-}) : (function GradientBackground(arg0) {
-  let obj2;
-  const obj = { children: closure_20(authStore, obj2) };
-  const tmp = closure_22(false);
-  const merged = Object.assign(arg0);
-  obj2 = { style: tmp.backgroundOverlay };
-  return closure_20(authStore, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConstrainedContainerStyle(width) {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const result = Math.max(width.width - authStore2, 0) / 2;
-  if (cResult[0] !== result) {
-    const obj2 = { marginHorizontal: result };
-    cResult[0] = result;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function useConstrainedContainerStyle(width) {
-  width = width.width;
-  const items = [width];
-  return react.useMemo(() => {
-    const obj = { marginHorizontal: Math.max(width - authStore2, 0) / 2 };
-    return obj;
-  }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAnimatedIndex(arg0) {
-  let sharedValue = arg0;
-  const obj = ReanimatedRexport;
-  if (arg0 == null) {
-    sharedValue = obj.useSharedValue(-1);
-  }
-  return sharedValue;
-}) : (function useAnimatedIndex(arg0) {
-  let sharedValue = arg0;
-  const obj = ReanimatedRexport;
-  if (arg0 == null) {
-    sharedValue = obj.useSharedValue(-1);
-  }
-  return sharedValue;
-});
+}
 const __initData = { code: "function BottomSheetNativeTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()<=-1;}" };
 const __initData2 = { code: "function BottomSheetNativeTsx2(){const{animatedIsVisuallyClosed}=this.__closure;return animatedIsVisuallyClosed.get();}" };
-const __initData3 = { code: "function BottomSheetNativeTsx3(isVisuallyClosed){const{transitionState,runOnJS,onLeave}=this.__closure;if(isVisuallyClosed&&transitionState===\"exiting\"){runOnJS(onLeave)();}}" };
-const __initData4 = { code: "function BottomSheetNativeTsx4(){const{animatedIndex}=this.__closure;return animatedIndex.get()<=-1;}" };
-const __initData5 = { code: "function BottomSheetNativeTsx5(){const{animatedIsVisuallyClosed}=this.__closure;return animatedIsVisuallyClosed.get();}" };
-const __initData6 = { code: "function BottomSheetNativeTsx6(isVisuallyClosed){const{transitionState,runOnJS,onLeave}=this.__closure;if(isVisuallyClosed&&transitionState==='exiting'){runOnJS(onLeave)();}}" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(backdropChildren) {
-  let accessibilityLabel;
-  let backdropOpacity;
-  let backgroundStyles;
-  let bodyStyles;
-  let borderGradient;
-  let children;
-  let close;
-  let closure_0;
-  let closure_11;
-  let containerHeight;
-  let contentHeight;
-  let contentStyles;
-  let dismissAccessibilityLabel;
-  let extraContent;
-  let handleComponent;
-  let handleDisabled;
-  let header;
-  let items;
-  let keyboardShouldPersistTaps;
-  let maxHeight;
-  let obj7;
-  let onLeave;
-  let opacity;
-  let ref;
-  let scrollable;
-  let showGradient;
-  let startExpanded;
-  let startHeight;
-  let tmp12;
-  let tmp13;
-  let tmp18;
-  let tmp23;
-  let tmp26;
-  let tmp27;
-  let tmp28;
-  let tmp29;
-  let tmp30;
-  let tmp7;
-  let tmp8;
-  let tmp80;
-  let tmp9;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(102);
-  if (cResult[0] !== backdropChildren) {
-    ({ scrollable, startHeight, maxHeight, containerHeight, startExpanded, backdropOpacity } = backdropChildren);
-    importDefault = backdropOpacity;
-    backdropChildren = backdropChildren.backdropChildren;
-    _require = backdropChildren;
-    ({ header, handleComponent, handleDisabled, dismissAccessibilityLabel } = backdropChildren);
-    dependencyMap = dismissAccessibilityLabel;
-    const footer = backdropChildren.footer;
-    closure_3 = footer;
-    const onExpand = backdropChildren.onExpand;
-    closure_5 = onExpand;
-    const onDismiss = backdropChildren.onDismiss;
-    closure_4 = onDismiss;
-    ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, borderGradient, showGradient, extraContent, contentHeight, ref } = backdropChildren);
-    const tmp6 = close(backdropChildren, closure_5);
-    cResult[0] = backdropChildren;
-    cResult[1] = backdropChildren;
-    cResult[2] = backdropOpacity;
-    cResult[3] = backgroundStyles;
-    cResult[4] = bodyStyles;
-    cResult[5] = borderGradient;
-    cResult[6] = children;
-    cResult[7] = containerHeight;
-    cResult[8] = contentHeight;
-    cResult[9] = contentStyles;
-    cResult[10] = dismissAccessibilityLabel;
-    cResult[11] = extraContent;
-    cResult[12] = footer;
-    cResult[13] = handleComponent;
-    cResult[14] = header;
-    cResult[15] = keyboardShouldPersistTaps;
-    cResult[16] = maxHeight;
-    cResult[17] = onDismiss;
-    cResult[18] = onExpand;
-    cResult[19] = tmp6;
-    cResult[20] = ref;
-    cResult[21] = showGradient;
-    cResult[22] = startHeight;
-    cResult[23] = scrollable;
-    cResult[24] = startExpanded;
-    cResult[25] = handleDisabled;
-    tmp7 = handleDisabled;
-    tmp8 = startExpanded;
-    tmp9 = scrollable;
-    tmp12 = ref;
-    tmp13 = tmp6;
-    tmp18 = header;
-    tmp23 = contentStyles;
-    tmp26 = children;
-    tmp27 = borderGradient;
-    tmp28 = bodyStyles;
-    tmp29 = backgroundStyles;
-    tmp30 = backdropOpacity;
-  } else {
-    _require = cResult[1];
-    importDefault = cResult[2];
-    tmp29 = cResult[3];
-    tmp28 = cResult[4];
-    tmp27 = cResult[5];
-    tmp26 = cResult[6];
-    tmp23 = cResult[9];
-    dependencyMap = cResult[10];
-    closure_3 = cResult[12];
-    tmp18 = cResult[14];
-    closure_4 = cResult[17];
-    closure_5 = cResult[18];
-    tmp13 = cResult[19];
-    tmp12 = cResult[20];
-    tmp9 = cResult[23];
-    tmp8 = cResult[24];
-    tmp7 = cResult[25];
-  }
-  let obj2 = onLeave;
-  const context = onLeave.useContext(reactDefault);
-  const transitionState = context.transitionState;
-  close = context.close;
-  onLeave = context.onLeave;
-  const registerDismissHandler = context.registerDismissHandler;
-  const tmp37 = useSafeAreaInsetsDefault();
-  const tmp38 = closure_22(undefined !== tmp7 && tmp7, Math.max(tmp37.bottom, closure_19), undefined !== tmp9 && tmp9);
-  const ref1 = onLeave.useRef(null);
-  [r10121, closure_11] = transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
-  transitionState(onLeave.useState(undefined !== tmp8 && tmp8), 2);
-  let closure_12 = onLeave.useRef(false);
-  ref = onLeave.useRef(true);
-  onLeave.useContext(tmp(5019).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
-  if (cResult[26] === tmp15) {
-    let tmp42;
-    let tmp43;
-    if (cResult[27] === registerDismissHandler) {
-      tmp42 = cResult[28];
-      tmp43 = cResult[29];
-    }
-    const layoutEffect = obj2.useLayoutEffect(tmp42, tmp43);
-    let tmpResult = tmp(5618);
-    const bottomSheetImperativeHandle = tmpResult.useBottomSheetImperativeHandle(tmp12, ref1);
-    if (cResult[30] === close) {
-      let tmp46;
-      let tmp47;
-      if (cResult[31] === transitionState) {
-        tmp46 = cResult[32];
-        tmp47 = cResult[33];
-      }
-      const effect = obj2.useEffect(tmp46, tmp47);
-      if (cResult[34] === tmp15) {
-        let tmp49;
-        if (cResult[35] === onLeave) {
-          tmp49 = cResult[36];
-        }
-        const tmpResult4 = tmp(5300);
-        const unmountEffect = tmpResult4.useUnmountEffect(tmp49);
-        if (cResult[37] !== close) {
-          function ie(arg0, arg1, arg2, arg3, arg4) {
-            if (arg4 !== BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-              if (-1 === arg1) {
-                if (!closure_12.current) {
-                  tmp2.current = true;
-                  close();
-                }
-              }
-              const current = arg1 > -1 && closure_12.current;
-              if (current) {
-                const current2 = ref1.current;
-                if (current2 != null) {
-                  current2.forceClose();
-                }
-              }
-            }
-          }
-          cResult[37] = close;
-          cResult[38] = ie;
-        }
-        if (cResult[39] !== tmp14) {
-          class He {
-            constructor() {
-              closure_11(true);
-              if (closure_5 != null) {
-                closure_5();
-              }
-            }
-          }
-          cResult[39] = tmp14;
-          cResult[40] = He;
-        } else {
-          class He {
-            constructor() {
-              closure_11(true);
-              if (closure_5 != null) {
-                closure_5();
-              }
-            }
-          }
-        }
-        const tmp54 = closure_28(tmp13.animatedIndex);
-        closure_14 = tmp54;
-        function ke() {
-          return closure_14.get() <= -1;
-        }
-        const obj3 = { animatedIndex: tmp54 };
-        ke.__closure = obj3;
-        ke.__workletHash = 4341912681188;
-        ke.__initData = __initData;
-        const tmpResult5 = tmp(5086);
-        const derivedValue = tmpResult5.useDerivedValue(ke);
-        const tmpResult6 = tmp(5086);
-        class Be {
-          constructor() {
-            return derivedValue.get();
-          }
-        }
-        const obj4 = { animatedIsVisuallyClosed: derivedValue };
-        Be.__closure = obj4;
-        Be.__workletHash = 6995719052506;
-        Be.__initData = __initData2;
-        class De {
-          constructor(arg0) {
-            const tmp = arg0 && "exiting" === transitionState;
-            if (tmp) {
-              const obj = ReanimatedRexport;
-              obj.runOnJS(onLeave)();
-            }
-          }
-        }
-        const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-        De.__closure = { transitionState, runOnJS: tmp(5086).runOnJS, onLeave };
-        De.__workletHash = 1921852093213;
-        De.__initData = __initData3;
-        const obj5 = { transitionState, runOnJS: tmp(5086).runOnJS, onLeave };
-        const animatedReaction = useAnimatedReaction(Be, De);
-        if (cResult[41] !== tmp22) {
-          class Oe {
-            constructor() {
-              obj = {
-                accessibilityLabel: closure_2,
-                onPress() {
-                              const current = ref.current;
-                              if (current != null) {
-                                current.close();
-                              }
-                            }
-              };
-              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
-            }
-          }
-          cResult[41] = tmp22;
-          cResult[42] = Oe;
-        } else {
-          class Oe {
-            constructor() {
-              obj = {
-                accessibilityLabel: closure_2,
-                onPress() {
-                              const current = ref.current;
-                              if (current != null) {
-                                current.close();
-                              }
-                            }
-              };
-              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
-            }
-          }
-        }
-        if (cResult[43] === tmp31) {
-          let tmp64;
-          class Oe {
-            constructor() {
-              obj = {
-                accessibilityLabel: closure_2,
-                onPress() {
-                              const current = ref.current;
-                              if (current != null) {
-                                current.close();
-                              }
-                            }
-              };
-              return jsx(closure_0(closure_2[22]).ActionSheetHeaderBar, obj);
-            }
-          }
-          if (cResult[46] !== tmp20) {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-            cResult[46] = tmp20;
-            cResult[47] = Me;
-          } else {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-          }
-          const _Symbol = Symbol;
-          if (cResult[48] === Symbol.for("react.memo_cache_sentinel")) {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-            cResult[48] = tmp65;
-            tmp64 = tmp65;
-          } else {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-          }
-          const tmp66 = useWindowDimensionsDefault(tmp64);
-          closure_27(tmp66);
-          useColorThemeBackgroundDefault();
-          if (tmp13.backgroundComponent == null) {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-          }
-          if (cResult[49] === tmp38.wrapper) {
-            class Me {
-              constructor(arg0) {
-                let tmpResult;
-                const obj = { children: tmpResult };
-                const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                const merged = Object.assign(arg0);
-                tmpResult = closure_3;
-                if (closure_3 == null) {
-                  tmpResult = tmp(NavScrim.NavScrim, {});
-                }
-                return closure_20(BottomSheetFooter, obj);
-              }
-            }
-            if (cResult[52] === tmp29) {
-              class Me {
-                constructor(arg0) {
-                  let tmpResult;
-                  const obj = { children: tmpResult };
-                  const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                  const merged = Object.assign(arg0);
-                  tmpResult = closure_3;
-                  if (closure_3 == null) {
-                    tmpResult = tmp(NavScrim.NavScrim, {});
-                  }
-                  return closure_20(BottomSheetFooter, obj);
-                }
-              }
-              if (undefined !== tmp9 && tmp9) {
-                class Me {
-                  constructor(arg0) {
-                    let tmpResult;
-                    const obj = { children: tmpResult };
-                    const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                    const merged = Object.assign(arg0);
-                    tmpResult = closure_3;
-                    if (closure_3 == null) {
-                      tmpResult = tmp(NavScrim.NavScrim, {});
-                    }
-                    return closure_20(BottomSheetFooter, obj);
-                  }
-                }
-              }
-              if (!(undefined !== tmp7 && tmp7)) {
-                class Me {
-                  constructor(arg0) {
-                    let tmpResult;
-                    const obj = { children: tmpResult };
-                    const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                    const merged = Object.assign(arg0);
-                    tmpResult = closure_3;
-                    if (closure_3 == null) {
-                      tmpResult = tmp(NavScrim.NavScrim, {});
-                    }
-                    return closure_20(BottomSheetFooter, obj);
-                  }
-                }
-              }
-              if (cResult[55] === tmp23) {
-                class Me {
-                  constructor(arg0) {
-                    let tmpResult;
-                    const obj = { children: tmpResult };
-                    const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                    const merged = Object.assign(arg0);
-                    tmpResult = closure_3;
-                    if (closure_3 == null) {
-                      tmpResult = tmp(NavScrim.NavScrim, {});
-                    }
-                    return closure_20(BottomSheetFooter, obj);
-                  }
-                }
-                if (cResult[58] === tmp18) {
-                  class Me {
-                    constructor(arg0) {
-                      let tmpResult;
-                      const obj = { children: tmpResult };
-                      const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                      const merged = Object.assign(arg0);
-                      tmpResult = closure_3;
-                      if (closure_3 == null) {
-                        tmpResult = tmp(NavScrim.NavScrim, {});
-                      }
-                      return closure_20(BottomSheetFooter, obj);
-                    }
-                  }
-                  if (cResult[61] === tmp28) {
-                    class Me {
-                      constructor(arg0) {
-                        let tmpResult;
-                        const obj = { children: tmpResult };
-                        const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                        const merged = Object.assign(arg0);
-                        tmpResult = closure_3;
-                        if (closure_3 == null) {
-                          tmpResult = tmp(NavScrim.NavScrim, {});
-                        }
-                        return closure_20(BottomSheetFooter, obj);
-                      }
-                    }
-                    if (cResult[64] === tmp26) {
-                      class Me {
-                        constructor(arg0) {
-                          let tmpResult;
-                          const obj = { children: tmpResult };
-                          const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                          const merged = Object.assign(arg0);
-                          tmpResult = closure_3;
-                          if (closure_3 == null) {
-                            tmpResult = tmp(NavScrim.NavScrim, {});
-                          }
-                          return closure_20(BottomSheetFooter, obj);
-                        }
-                      }
-                      if (cResult[67] === tmp75) {
-                        class Me {
-                          constructor(arg0) {
-                            let tmpResult;
-                            const obj = { children: tmpResult };
-                            const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                            const merged = Object.assign(arg0);
-                            tmpResult = closure_3;
-                            if (closure_3 == null) {
-                              tmpResult = tmp(NavScrim.NavScrim, {});
-                            }
-                            return closure_20(BottomSheetFooter, obj);
-                          }
-                        }
-                      }
-                      const obj6 = { children: closure_21(ref1, obj7) };
-                      obj7 = { style: tmp75, children: items };
-                      items = [tmp76, tmp80];
-                      const LayerScope = tmp(5634).LayerScope;
-                      cResult[67] = tmp75;
-                      cResult[68] = tmp76;
-                      const tmp88 = closure_20(LayerScope, obj6);
-                      class Be {
-                        constructor() {
-                          return derivedValue.get();
-                        }
-                      }
-                      cResult[70] = tmp88;
-                    }
-                    const obj8 = { style: tmp79, children: tmp26 };
-                    const tmp83 = closure_20(ref1, obj8);
-                    cResult[64] = tmp26;
-                    cResult[65] = tmp79;
-                    cResult[66] = tmp83;
-                    tmp80 = tmp83;
-                  }
-                  let items1 = [tmp38.body, tmp28];
-                  cResult[61] = tmp28;
-                  cResult[62] = tmp38.body;
-                  cResult[63] = items1;
-                }
-                let tmp77 = null != tmp18;
-                if (tmp77) {
-                  class Me {
-                    constructor(arg0) {
-                      let tmpResult;
-                      const obj = { children: tmpResult };
-                      const BottomSheetFooter = BottomSheetModal.BottomSheetFooter;
-                      const merged = Object.assign(arg0);
-                      tmpResult = closure_3;
-                      if (closure_3 == null) {
-                        tmpResult = tmp(NavScrim.NavScrim, {});
-                      }
-                      return closure_20(BottomSheetFooter, obj);
-                    }
-                  }
-                  const obj9 = { style: tmp38.header, children: tmp18 };
-                  tmp77 = closure_20(ref1, obj9);
-                }
-                cResult[58] = tmp18;
-                cResult[59] = tmp38.header;
-                cResult[60] = tmp77;
-              }
-              const items2 = [tmp38.content, tmp23];
-              cResult[55] = tmp23;
-              cResult[56] = tmp38.content;
-              cResult[57] = items2;
-            }
-            const items3 = [tmp38.background, tmp29];
-            cResult[52] = tmp29;
-            cResult[53] = tmp38.background;
-            cResult[54] = items3;
-          }
-          const items4 = [tmp38.wrapper, null != tmp27 && tmp38.wrapperWithBorder];
-          cResult[49] = tmp38.wrapper;
-          class Be {
-            constructor() {
-              return derivedValue.get();
-            }
-          }
-          cResult[50] = null != tmp27 && tmp38.wrapperWithBorder;
-          cResult[51] = items4;
-        }
-        class Le {
-          constructor(animatedIndex) {
-            let items;
-            let items1;
-            const obj = { style: items, children: items1 };
-            items = [React4.absoluteFill, animatedIndex.style];
-            items1 = [, ];
-            const obj2 = { animatedIndex: animatedIndex.animatedIndex, opacity };
-            items1[0] = closure_20(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
-            items1[1] = closure_0;
-            return closure_21(authStore, obj);
-          }
-        }
-        cResult[43] = tmp31;
-        cResult[44] = tmp30;
-        cResult[45] = Le;
-      }
-      function oe() {
-        if (ref.current) {
-          if (closure_4 != null) {
-            tmp();
-          }
-        }
-        onLeave();
-      }
-      cResult[34] = tmp15;
-      cResult[35] = onLeave;
-      cResult[36] = oe;
-      tmp49 = oe;
-    }
-    function re() {
-      let current = "exiting" !== transitionState;
-      const tmp = transitionState;
-      if (!current) {
-        current = closure_12.current;
-      }
-      if (!current) {
-        ref.current = false;
-        const current2 = ref1.current;
-        if (current2 != null) {
-          current2.forceClose();
-        }
-      }
-      const current3 = "visible" === tmp && closure_12.current;
-      if (current3) {
-        close();
-      }
-    }
-    const items5 = [transitionState, close];
-    cResult[30] = close;
-    cResult[31] = transitionState;
-    cResult[32] = re;
-    cResult[33] = items5;
-    tmp47 = items5;
-    tmp46 = re;
-  }
-  function te() {
-    registerDismissHandler(closure_4);
-  }
-  const items6 = [tmp15, registerDismissHandler];
-  cResult[26] = tmp15;
-  cResult[27] = registerDismissHandler;
-  cResult[28] = te;
-  cResult[29] = items6;
-  tmp43 = items6;
-  tmp42 = te;
-}) : (function BottomSheet(scrollable) {
+const __initData3 = { code: "function BottomSheetNativeTsx3(isVisuallyClosed){const{transitionState,runOnJS,onLeave}=this.__closure;if(isVisuallyClosed&&transitionState==='exiting'){runOnJS(onLeave)();}}" };
+const result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheet.native.tsx");
+
+export function BottomSheet(scrollable) {
   let LayerScope;
   let backgroundStyles;
   let bodyStyles;
@@ -1487,7 +271,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   let header;
   let items10;
   let items11;
-  let items7;
+  let items12;
   let items8;
   let items9;
   let keyboardShouldPersistTaps;
@@ -1498,7 +282,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   let startExpanded;
   let startHeight;
   let str;
-  let tmp28;
+  let tmp27;
   let flag = scrollable.scrollable;
   if (flag === undefined) {
     flag = false;
@@ -1520,30 +304,29 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
   ({ borderGradient, showGradient } = scrollable);
   ({ keyboardShouldPersistTaps, children, backgroundStyles, contentStyles, bodyStyles, extraContent, contentHeight, ref } = scrollable);
   let merged = Object.assign(scrollable, Object.assign({ scrollable: 0, startHeight: 0, maxHeight: 0, containerHeight: 0, startExpanded: 0, backdropOpacity: 0, backdropChildren: 0, header: 0, handleComponent: 0, handleDisabled: 0, dismissAccessibilityLabel: 0, footer: 0, onExpand: 0, onDismiss: 0, keyboardShouldPersistTaps: 0, children: 0, backgroundStyles: 0, contentStyles: 0, bodyStyles: 0, borderGradient: 0, showGradient: 0, extraContent: 0, contentHeight: 0, ref: 0 }));
-  let onLeave;
-  let closure_14;
-  let obj = onLeave;
+  let derivedValue;
+  let obj = onExpand;
   let tmp2 = backdropChildren;
-  const context = onLeave.useContext(backdropChildren(dismissAccessibilityLabel[18]));
+  const context = onExpand.useContext(backdropChildren(dismissAccessibilityLabel[15]));
   const transitionState = context.transitionState;
   const close = context.close;
-  onLeave = context.onLeave;
+  const onLeave = context.onLeave;
   const registerDismissHandler = context.registerDismissHandler;
-  const rect = backdropChildren(dismissAccessibilityLabel[11])();
+  const rect = backdropChildren(dismissAccessibilityLabel[8])();
   const top = rect.top;
-  const tmp5 = closure_22(handleDisabled, Math.max(rect.bottom, closure_19), flag);
-  const ref1 = onLeave.useRef(null);
-  const tmp7 = transitionState(onLeave.useState(startExpanded), 2);
+  const tmp5 = closure_18(handleDisabled, Math.max(rect.bottom, derivedValue), flag);
+  const ref1 = onExpand.useRef(null);
+  const tmp7 = footer(onExpand.useState(startExpanded), 2);
   let closure_11 = tmp7[1];
   const first = tmp7[0];
-  let closure_12 = onLeave.useRef(false);
-  ref = onLeave.useRef(true);
+  let closure_12 = onExpand.useRef(false);
+  ref = onExpand.useRef(true);
   let items = [onDismiss, registerDismissHandler];
-  const tmp10 = onLeave.useContext(backdropOpacity(dismissAccessibilityLabel[19]).AccessibilityPreferencesContext).reducedMotion.enabled ? closure_14 : ref;
+  const tmp10 = onExpand.useContext(backdropOpacity(dismissAccessibilityLabel[16]).AccessibilityPreferencesContext).reducedMotion.enabled ? ref1 : registerDismissHandler;
   const layoutEffect = obj.useLayoutEffect(() => {
     registerDismissHandler(onDismiss);
   }, items);
-  const tmp9Result = backdropOpacity(dismissAccessibilityLabel[20]);
+  const tmp9Result = backdropOpacity(dismissAccessibilityLabel[17]);
   const bottomSheetImperativeHandle = tmp9Result.useBottomSheetImperativeHandle(ref, ref1);
   let items1 = [transitionState, close];
   const effect = obj.useEffect(() => {
@@ -1564,8 +347,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       close();
     }
   }, items1);
-  const tmp9Result4 = backdropOpacity(dismissAccessibilityLabel[21]);
-  const unmountEffect = tmp9Result4.useUnmountEffect(() => {
+  const tmp9Result5 = backdropOpacity(dismissAccessibilityLabel[18]);
+  const unmountEffect = tmp9Result5.useUnmountEffect(() => {
     if (ref.current) {
       if (onDismiss != null) {
         tmp();
@@ -1592,43 +375,44 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
       }
     }
   }, items2);
+  let animatedIndex = merged.animatedIndex;
   const callback1 = obj.useCallback(() => {
     closure_11(true);
     if (onExpand != null) {
       onExpand();
     }
   }, items3);
-  const tmp17 = closure_28(merged.animatedIndex);
-  closure_14 = tmp17;
-  function me() {
-    return closure_14.get() <= -1;
+  const tmp9Result6 = backdropOpacity(dismissAccessibilityLabel[14]);
+  if (animatedIndex == null) {
+    animatedIndex = tmp9Result6.useSharedValue(-1);
   }
-  me.__closure = { animatedIndex: tmp17 };
-  me.__workletHash = 11856440255681;
-  me.__initData = __initData4;
-  const tmp9Result5 = backdropOpacity(dismissAccessibilityLabel[17]);
-  const derivedValue = tmp9Result5.useDerivedValue(me);
-  function pe() {
+  function ue() {
+    return animatedIndex.get() <= -1;
+  }
+  ue.__closure = { animatedIndex };
+  ue.__workletHash = 4341912681188;
+  ue.__initData = __initData;
+  const tmp9Result7 = backdropOpacity(dismissAccessibilityLabel[14]);
+  derivedValue = tmp9Result7.useDerivedValue(ue);
+  function _e() {
     return derivedValue.get();
   }
-  pe.__closure = { animatedIsVisuallyClosed: derivedValue };
-  pe.__workletHash = 888700167933;
-  pe.__initData = __initData5;
-  const tmp9Result6 = backdropOpacity(dismissAccessibilityLabel[17]);
-  class Se {
-    constructor(arg0) {
-      const tmp = arg0 && "exiting" === transitionState;
-      if (tmp) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(onLeave)();
-      }
+  _e.__closure = { animatedIsVisuallyClosed: derivedValue };
+  _e.__workletHash = 6995719052506;
+  _e.__initData = __initData2;
+  function he(arg0) {
+    const tmp = arg0 && "exiting" === transitionState;
+    if (tmp) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(onLeave)();
     }
   }
-  let obj2 = { transitionState, runOnJS: tmp9(tmp3[17]).runOnJS, onLeave };
-  Se.__closure = obj2;
-  Se.__workletHash = 9237161324088;
-  Se.__initData = __initData6;
-  const animatedReaction = tmp9Result6.useAnimatedReaction(pe, Se);
+  const tmp9Result8 = backdropOpacity(dismissAccessibilityLabel[14]);
+  let obj2 = { transitionState, runOnJS: tmp9(tmp3[14]).runOnJS, onLeave };
+  he.__closure = obj2;
+  he.__workletHash = 77590951197;
+  he.__initData = __initData3;
+  const animatedReaction = tmp9Result8.useAnimatedReaction(_e, he);
   const items4 = [dismissAccessibilityLabel];
   const items5 = [backdropOpacity, backdropChildren];
   const callback2 = obj.useCallback(() => {
@@ -1641,19 +425,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
         }
       }
     };
-    return closure_20(ActionSheetHeaderBar.ActionSheetHeaderBar, obj);
+    return authStore4(ActionSheetHeaderBar.ActionSheetHeaderBar, obj);
   }, items4);
   const items6 = [footer];
   const callback3 = obj.useCallback((animatedIndex) => {
     let items;
     let items1;
     const obj = { style: items, children: items1 };
-    items = [React4.absoluteFill, animatedIndex.style];
+    items = [hasOwnProperty.absoluteFill, animatedIndex.style];
     items1 = [, ];
     const obj2 = { animatedIndex: animatedIndex.animatedIndex, opacity: backdropOpacity };
-    items1[0] = closure_20(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
+    items1[0] = authStore4(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
     items1[1] = backdropChildren;
-    return closure_21(authStore, obj);
+    return closure_17(metroRequire, obj);
   }, items5);
   const callback4 = obj.useCallback((arg0) => {
     let tmpResult;
@@ -1664,57 +448,59 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BottomSheet(
     if (footer == null) {
       tmpResult = tmp(NavScrim.NavScrim, {});
     }
-    return closure_20(BottomSheetFooter, obj);
+    return authStore4(BottomSheetFooter, obj);
   }, items6);
-  const tmp23 = tmp2(dismissAccessibilityLabel[25])({ ignoreKeyboard: true });
-  const tmp24 = closure_27(tmp23);
-  const tmp25 = flag ? closure_24 : closure_23;
-  const tmp26 = tmp2(dismissAccessibilityLabel[26])();
+  const tmp22 = tmp2(dismissAccessibilityLabel[22])({ ignoreKeyboard: true });
+  const width = tmp22.width;
+  const items7 = [width];
+  const memo = obj.useMemo(() => {
+    const obj = { marginHorizontal: Math.max(width - onLeave, 0) / 2 };
+    return obj;
+  }, items7);
+  const tmp24 = flag ? ScrollableBottomSheetInner : ContentSizeBottomSheetInner;
+  const tmp25 = tmp2(dismissAccessibilityLabel[23])();
   let backgroundComponent = merged.backgroundComponent;
   if (backgroundComponent == null) {
-    backgroundComponent = showGradient ? closure_26 : closure_25;
+    backgroundComponent = showGradient ? GradientBackground : Background;
   }
-  const obj3 = { ref: ref1, accessible: false, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp23, wrapperStyle: items7, onExpand: callback1, enablePanDownToClose: true, containerStyle: tmp24, backgroundStyle: items8, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[17]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp28, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex: tmp17, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_20(LayerScope, obj6) };
-  items7 = [tmp5.wrapper, null != borderGradient && tmp5.wrapperWithBorder];
-  items8 = [tmp5.background, backgroundStyles];
+  const obj3 = { ref: ref1, accessible: false, accessibilityRole: "none", accessibilityLabel: "", startHeight, contentHeight, maxHeight, containerHeight, startExpanded, hasEverExpanded: first, windowDimensions: tmp22, wrapperStyle: items8, onExpand: callback1, enablePanDownToClose: true, containerStyle: memo, backgroundStyle: items9, topInset: top, keyboardBehavior: str, keyboardBlurBehavior: "restore", keyboardShouldPersistTaps, animationConfigs: tmp10, overrideReduceMotion: backdropOpacity(dismissAccessibilityLabel[14]).ReduceMotion.Never, handleIndicatorStyle: tmp5.handleIndicator, handleComponent: tmp27, backdropComponent: callback3, backgroundComponent, renderFooter: callback4, animatedIndex, onAnimate: callback, onClose: onLeave, borderGradient, extraContent, children: closure_16(LayerScope, obj6) };
+  items8 = [tmp5.wrapper, null != borderGradient && tmp5.wrapperWithBorder];
+  items9 = [tmp5.background, backgroundStyles];
   str = "interactive";
   if (flag) {
     str = "extend";
   }
-  tmp28 = null;
+  tmp27 = null;
   if (!handleDisabled) {
     if (handleComponent == null) {
       handleComponent = callback2;
     }
-    tmp28 = handleComponent;
+    tmp27 = handleComponent;
   }
-  const obj4 = { style: items9, children: items10 };
-  items9 = [tmp5.content, contentStyles];
-  let tmp27Result = null != header;
-  LayerScope = tmp9(tmp3[27]).LayerScope;
-  const tmp29 = closure_21;
-  if (tmp27Result) {
+  const obj4 = { style: items10, children: items11 };
+  items10 = [tmp5.content, contentStyles];
+  let tmp26Result = null != header;
+  LayerScope = tmp9(tmp3[24]).LayerScope;
+  const tmp28 = closure_17;
+  if (tmp26Result) {
     const obj5 = { style: tmp5.header, children: header };
-    tmp27Result = tmp27(tmp30, obj5);
+    tmp26Result = tmp26(tmp29, obj5);
   }
-  items10 = [tmp27Result, ];
-  const obj7 = { style: items11, children };
-  items11 = [tmp5.body, bodyStyles];
-  obj6 = { children: tmp29(ref1, obj4) };
-  items10[1] = closure_20(ref1, obj7);
-  const tmp27Result3 = closure_20(tmp25, obj3);
-  let tmp27Result4 = tmp27Result3;
+  items11 = [tmp26Result, ];
+  const obj7 = { style: items12, children };
+  items12 = [tmp5.body, bodyStyles];
+  obj6 = { children: tmp28(transitionState, obj4) };
+  items11[1] = closure_16(transitionState, obj7);
+  const tmp26Result3 = closure_16(tmp24, obj3);
+  let tmp26Result4 = tmp26Result3;
   if (showGradient) {
-    let tmp34 = tmp26;
-    const ThemeContextProvider = tmp9(tmp3[28]).ThemeContextProvider;
-    if (tmp26 == null) {
-      tmp34 = null;
+    let tmp33 = tmp25;
+    const ThemeContextProvider = tmp9(tmp3[25]).ThemeContextProvider;
+    if (tmp25 == null) {
+      tmp33 = null;
     }
-    const obj8 = { gradient: tmp34, children: tmp27Result3 };
-    tmp27Result4 = tmp27(ThemeContextProvider, obj8);
+    const obj8 = { gradient: tmp33, children: tmp26Result3 };
+    tmp26Result4 = tmp26(ThemeContextProvider, obj8);
   }
-  return tmp27Result4;
-});
-let result = size.fileFinishedImporting("design/components/Sheet/native/BottomSheet.native.tsx");
-
-export const BottomSheet = tmp5;
+  return tmp26Result4;
+}

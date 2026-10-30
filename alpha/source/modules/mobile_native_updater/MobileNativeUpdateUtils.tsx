@@ -1,15 +1,15 @@
-// Module ID: 15649
-// Function ID: 15650
+// Module ID: 15689
+// Function ID: 15690
 // Name: MobileNativeUpdateUtils
-// Dependencies: [5, 5735, 3, 1294, 5698, 1381, 1104, 2]
+// Dependencies: [5, 5741, 3, 1283, 5704, 1376, 1093, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 15649 (MobileNativeUpdateUtils)
+// Module 15689 (MobileNativeUpdateUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Linking from "Linking" /* 5698 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5735 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import Linking from "Linking" /* 5704 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _checkForNewerBuild() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ function openBuildInstallerUrl(install) {
       obj = PlatformUtils;
       const tmp7 = require;
       if (obj.isIOS()) {
-        openURLExternally(uRL.toString(), tmp7(1104).WebBrowserType.SAFARI);
+        openURLExternally(uRL.toString(), tmp7(1093).WebBrowserType.SAFARI);
       } else {
         openURLExternally(uRL.toString());
       }

@@ -1,56 +1,21 @@
-// Module ID: 8732
-// Function ID: 8733
+// Module ID: 8766
+// Function ID: 8767
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 558, 576, 8733, 8743, 7707, 2]
+// Dependencies: [19, 8767, 8777, 7712, 2]
+// Exports: default
 
-// Module 8732 (useMaybeFetchProfileFrame)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
-import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8733 */;
-import useProfileFrameDefault from "useProfileFrame" /* 8743 */;
+// Module 8766 (useMaybeFetchProfileFrame)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7712 */;
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8767 */;
+import useProfileFrameDefault from "useProfileFrame" /* 8777 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault;
+let importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetchProfileFrame(arg0) {
-  let closure_0;
-  let closure_1;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  let tmp2 = useFramePreviewOverrideFrameDefault();
-  const tmp3 = useProfileFrameDefault(arg0);
-  importDefault = tmp4;
-  if (cResult[0] === (null == tmp2 && null != arg0 && null == tmp3)) {
-    let tmp5;
-    let tmp6;
-    if (cResult[1] === arg0) {
-      tmp5 = cResult[2];
-      tmp6 = cResult[3];
-    }
-    const effect = react.useEffect(tmp5, tmp6);
-    if (tmp2 == null) {
-      tmp2 = tmp3;
-    }
-    return tmp2;
-  }
-  const fn = function u() {
-    const tmp = closure_1;
-    if (tmp) {
-      const obj = CollectiblesActionCreators;
-      const result = obj.maybeFetchCollectiblesProduct(closure_0);
-    }
-  };
-  const items = [tmp4, arg0];
-  cResult[0] = null == tmp2 && null != arg0 && null == tmp3;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp6 = items;
-  tmp5 = fn;
-}) : (function useMaybeFetchProfileFrame(arg0) {
+let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
+
+export default function useMaybeFetchProfileFrame(arg0) {
   let closure_1;
   let closure_0 = arg0;
   let tmp = useFramePreviewOverrideFrameDefault();
@@ -68,7 +33,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMaybeFetc
     tmp = tmp2;
   }
   return tmp;
-});
-let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
-
-export default tmp2;
+};

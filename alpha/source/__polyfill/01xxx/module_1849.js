@@ -1,41 +1,31 @@
 // Module ID: 1849
 // Function ID: 1850
-// Dependencies: [19, 17]
-// Exports: useKeyboardContext
+// Dependencies: [1850, 1851, 1852, 1853, 1854]
 
 // Module 1849
-import react_native from "react-native" /* 17 */;
-import react from "react" /* 19 */;
+import _mod1850 from "module_1850" /* 1850 */;
+import _mod1851 from "module_1851" /* 1851 */;
+import _mod1852 from "module_1852" /* 1852 */;
+import _mod1853 from "module_1853" /* 1853 */;
+import _mod1854 from "module_1854" /* 1854 */;
 
-let _window;
-let createContext;
-let obj2;
-let obj4;
-let value;
-let value2;
-function get() {
-  return c0;
+for (const key10013 in _mod1850) {
+  exports[key10013] = _mod1850[key10013];
+  continue;
 }
-({ useContext: _window, createContext } = react);
-const Animated = react_native.Animated;
-class NOOP {
-  constructor() {
-
-  }
+for (const key10017 in _mod1851) {
+  exports[key10017] = _mod1851[key10017];
+  continue;
 }
-class NESTED_NOOP {
-  constructor() {
-    return NOOP;
-  }
+for (const key10021 in _mod1852) {
+  exports[key10021] = _mod1852[key10021];
+  continue;
 }
-const obj = { value: 0, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-let c0 = null;
-const obj3 = { enabled: true, animated: obj4, reanimated: { progress: obj, height: obj }, layout: obj2, update: Promise.resolve, setKeyboardHandlers: NESTED_NOOP, setInputHandlers: NESTED_NOOP, setEnabled: NOOP };
-obj2 = { value: null, addListener: NOOP, removeListener: NOOP, modify: NOOP, get, set: NOOP };
-obj4 = { progress: value, height: value2 };
-value = new Animated.Value(0);
-value2 = new Animated.Value(0);
-const context = createContext(obj3);
-
-export const KeyboardContext = context;
-export const useKeyboardContext = () => React(context);
+for (const key10025 in _mod1853) {
+  exports[key10025] = _mod1853[key10025];
+  continue;
+}
+for (const key10029 in _mod1854) {
+  exports[key10029] = _mod1854[key10029];
+  continue;
+}

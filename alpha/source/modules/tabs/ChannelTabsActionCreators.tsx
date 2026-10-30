@@ -1,42 +1,48 @@
-// Module ID: 13199
-// Function ID: 13200
+// Module ID: 13350
+// Function ID: 13351
 // Name: ChannelTabsActionCreators
-// Dependencies: [4857, 4908, 5036, 13200, 1084, 4864, 5748, 1111, 5745, 584, 2]
-// Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
+// Dependencies: [4858, 4912, 5040, 13348, 1072, 4865, 5754, 1100, 5751, 572, 2]
+// Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 13199 (ChannelTabsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import router_utils from "router_utils" /* 1111 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5748 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 13200 */;
+// Module 13350 (ChannelTabsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1100 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 13348 */;
 import size from "module_2" /* 2 */;
 
-function navigateToTabLocation(found) {
+function navigateToTabLocation(activeTab, flag) {
   let channelId;
   let guildId;
-  if ("route" === found.kind) {
-    const obj4 = router_utils;
-    obj4.transitionTo(found.routePath);
+  if (flag === undefined) {
+    flag = false;
+  }
+  if ("route" === activeTab.kind) {
+    const obj5 = router_utils;
+    obj5.transitionTo(activeTab.routePath);
   } else {
-    ({ channelId, guildId } = found);
+    ({ channelId, guildId } = activeTab);
+    if (flag === undefined) {
+      flag = false;
+    }
     const channel = ChannelStore.getChannel(channelId);
-    const tmp = null != channel && channel.isGuildVocal();
-    if (tmp) {
-      const obj = ChannelRTCActionCreatorsDefault;
-      obj.updateChatOpen(channelId, true);
+    const tmp3 = null != channel && channel.isGuildVocal();
+    if (tmp3) {
+      const obj2 = ChannelRTCActionCreatorsDefault;
+      obj2.updateChatOpen(channelId, !flag);
     }
     if (null != guildId) {
-      const obj3 = router_utils;
-      obj3.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
+      const obj4 = router_utils;
+      obj4.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
     } else {
-      const obj2 = transitionToChannel;
-      obj2.transitionToChannel(channelId);
+      const obj3 = transitionToChannel;
+      obj3.transitionToChannel(channelId);
     }
   }
 }
@@ -68,7 +74,7 @@ function openChannelTabActive(id, guildId) {
       const channel1 = ChannelStore.getChannel(id);
       const tmp18 = null != channel1 && channel1.isGuildVocal();
       if (tmp18) {
-        const tmp15Result = tmp15(5748);
+        const tmp15Result = tmp15(5754);
         tmp15Result.updateChatOpen(id, true);
       }
       if (null != guildId) {
@@ -144,7 +150,7 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj11.getChannel(channelId);
               const tmp8 = null != channel && channel.isGuildVocal();
               if (tmp8) {
-                const tmp36Result = tmp36(5748);
+                const tmp36Result = tmp36(5754);
                 tmp36Result.updateChatOpen(channelId, true);
               }
               if (null != guildId) {
@@ -164,6 +170,60 @@ function navigateActiveTabHistory(arg0) {
     }
   } else {
     return ChannelTabsStore.Passthrough;
+  }
+}
+function selectChannelTab(id, flag) {
+  let channelId;
+  let guildId;
+  let closure_0 = id;
+  if (flag === undefined) {
+    flag = false;
+  }
+  const tabs = ChannelTabsStore.getTabs();
+  const found = tabs.find((id) => id.id === closure_0);
+  const obj = ChannelTabsStore;
+  if (null != found) {
+    if (obj.getActiveTabId() !== id) {
+      const obj2 = { type: "CHANNEL_TABS_SET_ACTIVE", tabId: id };
+      const obj8 = DispatcherDefault;
+      obj8.dispatch(obj2);
+      navigateToTabLocation(found, flag);
+    } else if ("channel" === found.kind) {
+      if (SelectedChannelStore.getCurrentlySelectedChannelId() !== found.channelId) {
+        ({ channelId, guildId } = found);
+        let flag4 = flag;
+        if (flag === undefined) {
+          flag4 = false;
+        }
+        const channel = ChannelStore.getChannel(channelId);
+        const tmp9 = null != channel && channel.isGuildVocal();
+        if (tmp9) {
+          const obj5 = ChannelRTCActionCreatorsDefault;
+          obj5.updateChatOpen(channelId, !flag4);
+        }
+        if (null != guildId) {
+          const obj7 = router_utils;
+          obj7.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
+        } else {
+          const obj6 = transitionToChannel;
+          obj6.transitionToChannel(channelId);
+        }
+      } else {
+        let tmp2 = flag;
+        if (tmp2) {
+          const channel1 = ChannelStore.getChannel(found.channelId);
+          let isGuildVocalResult;
+          if (channel1 != null) {
+            isGuildVocalResult = channel1.isGuildVocal();
+          }
+          tmp2 = true === isGuildVocalResult;
+        }
+        if (tmp2) {
+          const obj3 = ChannelRTCActionCreatorsDefault;
+          obj3.updateChatOpen(found.channelId, false);
+        }
+      }
+    }
   }
 }
 const Routes = Constants.Routes;
@@ -245,34 +305,14 @@ export function setChannelTabsEnabled(enabled) {
   const obj2 = { type: "CHANNEL_TABS_SET_ENABLED", enabled };
   obj.dispatch(obj2);
 }
-export function selectChannelTab(tabId) {
-  let closure_0 = tabId;
-  const tabs = ChannelTabsStore.getTabs();
-  const found = tabs.find((id) => id.id === id);
-  const tmp2 = null != found && ChannelTabsStore.getActiveTabId() !== tabId;
-  if (tmp2) {
-    const obj3 = { type: "CHANNEL_TABS_SET_ACTIVE", tabId };
-    const obj2 = DispatcherDefault;
-    obj2.dispatch(obj3);
-    navigateToTabLocation(found);
-  }
-}
+export { selectChannelTab };
 export function cycleChannelTab(arg0) {
   let activeTabId;
   const tabs = ChannelTabsStore.getTabs();
   if (tabs.length > 1) {
     const findIndexResult = tabs.findIndex((id) => id.id === activeTabId.getActiveTabId());
     if (-1 !== findIndexResult) {
-      const id = tabs[(findIndexResult + arg0 + tabs.length) % tabs.length].id;
-      const tabs1 = obj.getTabs();
-      const found = tabs1.find((id) => id.id === id);
-      const tmp = null != found && ChannelTabsStore.getActiveTabId() !== id;
-      if (tmp) {
-        const obj3 = { type: "CHANNEL_TABS_SET_ACTIVE", tabId: id };
-        const obj2 = DispatcherDefault;
-        obj2.dispatch(obj3);
-        navigateToTabLocation(found);
-      }
+      selectChannelTab(tabs[(findIndexResult + arg0 + tabs.length) % tabs.length].id);
     }
   }
 }

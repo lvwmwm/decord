@@ -1,9 +1,18 @@
 // Module ID: 16109
 // Function ID: 16110
-// Dependencies: [16043]
+// Dependencies: []
 
 // Module 16109
-import _mod16043 from "module_16043" /* 16043 */;
-
-
-export default _mod16043;
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

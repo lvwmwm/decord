@@ -1,21 +1,20 @@
-// Module ID: 10976
-// Function ID: 10977
+// Module ID: 11206
+// Function ID: 11207
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6830, 10974, 10977, 5670, 558, 576, 5086, 10978, 568, 10979, 10980, 10981, 1271, 2]
+// Dependencies: [32, 19, 17, 6837, 11204, 11207, 5676, 5090, 11208, 558, 11209, 11210, 11211, 1260, 2]
+// Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 10976 (VoicePanelCardLayoutManager)
+// Module 11206 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
-import shallowEqualDefault from "shallowEqual" /* 568 */;
-import react2 from "react" /* 576 */;
-import react_native2 from "react-native" /* 1271 */;
-import CallConstants from "CallConstants" /* 5670 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10978 */;
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import react_native2 from "react-native" /* 1260 */;
+import CallConstants from "CallConstants" /* 5676 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10977 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11207 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,183 +47,6 @@ const VoicePanelCardItemType = VoicePanelConstants.VoicePanelCardItemType;
 ({ EDGE_GUTTER: closure_12, CALL_TILE_GUTTER: map1 } = VoicePanelCardConstants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
-  let closure_0;
-  let sharedValue;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(5);
-  const tmp2 = require("ReanimatedRexport");
-  const useSharedValue = tmp2.useSharedValue;
-  let cardCoords = getCardCoords.getCardCoords(arg0);
-  if (cardCoords == null) {
-    cardCoords = closure_15;
-  }
-  const obj2 = {};
-  const merged = Object.assign(cardCoords);
-  sharedValue = useSharedValue(obj2);
-  if (cResult[0] === sharedValue) {
-    if (cResult[1] === arg0) {
-      let tmp6;
-      let tmp7;
-      if (cResult[2] === getCardCoords) {
-        tmp6 = cResult[3];
-        tmp7 = cResult[4];
-      }
-      const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
-      return sharedValue;
-    }
-  }
-  const fn = function o() {
-    let cardCoords = getCardCoords.getCardCoords(closure_0);
-    const obj = getCardCoords;
-    if (null != cardCoords) {
-      updateSharedValueIfChangedDefault(sharedValue, cardCoords);
-    }
-    return obj.subscribeFromItem(function updateSharedValues() {
-      cardCoords = cardCoords.getCardCoords(closure_1_0);
-      if (null != cardCoords) {
-        cardCoords(sharedValue[10])(closure_1_2, cardCoords);
-      }
-    });
-  };
-  const items = [arg0, getCardCoords, sharedValue];
-  cResult[0] = sharedValue;
-  cResult[1] = arg0;
-  cResult[2] = getCardCoords;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp7 = items;
-  tmp6 = fn;
-}) : (function useCardLayoutCoordsSubscription(arg0, getCardCoords) {
-  let closure_0;
-  let sharedValue;
-  _require = arg0;
-  const useSharedValue = require("ReanimatedRexport").useSharedValue;
-  require("ReanimatedRexport");
-  let cardCoords = getCardCoords.getCardCoords(arg0);
-  if (cardCoords == null) {
-    cardCoords = closure_15;
-  }
-  let obj = {};
-  const merged = Object.assign(cardCoords);
-  sharedValue = useSharedValue(obj);
-  const items = [arg0, getCardCoords, sharedValue];
-  const layoutEffect = react.useLayoutEffect(() => {
-    let cardCoords = getCardCoords.getCardCoords(closure_0);
-    const obj = getCardCoords;
-    if (null != cardCoords) {
-      updateSharedValueIfChangedDefault(sharedValue, cardCoords);
-    }
-    return obj.subscribeFromItem(function updateSharedValues() {
-      cardCoords = cardCoords.getCardCoords(closure_1_0);
-      if (null != cardCoords) {
-        cardCoords(sharedValue[10])(closure_1_2, cardCoords);
-      }
-    });
-  }, items);
-  return sharedValue;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTargetDimensionsSubscription(id, getTargetDimensions) {
-  let sharedValue;
-  _require = id;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  const tmp2 = require("ReanimatedRexport");
-  const useSharedValue = tmp2.useSharedValue;
-  const obj2 = {};
-  const merged = Object.assign(getTargetDimensions.getTargetDimensions(id));
-  sharedValue = useSharedValue(obj2);
-  if (cResult[0] === id) {
-    if (cResult[1] === getTargetDimensions) {
-      let tmp5;
-      let tmp6;
-      if (cResult[2] === sharedValue) {
-        tmp5 = cResult[3];
-        tmp6 = cResult[4];
-      }
-      const layoutEffect = react.useLayoutEffect(tmp5, tmp6);
-      return sharedValue;
-    }
-  }
-  const fn = function o() {
-    let targetDimensions = getTargetDimensions.getTargetDimensions(id);
-    updateSharedValueIfChangedDefault(sharedValue, targetDimensions);
-    return getTargetDimensions.subscribeFromItem(function updateSharedValues() {
-      targetDimensions = targetDimensions.getTargetDimensions(id);
-      targetDimensions(sharedValue[10])(closure_1_2, targetDimensions);
-    });
-  };
-  const items = [id, getTargetDimensions, sharedValue];
-  cResult[0] = id;
-  cResult[1] = getTargetDimensions;
-  cResult[2] = sharedValue;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp6 = items;
-  tmp5 = fn;
-}) : (function useTargetDimensionsSubscription(id, getTargetDimensions) {
-  let sharedValue;
-  _require = id;
-  const useSharedValue = require("ReanimatedRexport").useSharedValue;
-  const obj = {};
-  require("ReanimatedRexport");
-  const merged = Object.assign(getTargetDimensions.getTargetDimensions(id));
-  sharedValue = useSharedValue(obj);
-  const items = [id, getTargetDimensions, sharedValue];
-  const layoutEffect = react.useLayoutEffect(() => {
-    let targetDimensions = getTargetDimensions.getTargetDimensions(id);
-    updateSharedValueIfChangedDefault(sharedValue, targetDimensions);
-    return getTargetDimensions.subscribeFromItem(function updateSharedValues() {
-      targetDimensions = targetDimensions.getTargetDimensions(id);
-      targetDimensions(sharedValue[10])(closure_1_2, targetDimensions);
-    });
-  }, items);
-  return sharedValue;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useManagerSubscription(getLayoutKey) {
-  let closure_129_1;
-  let tmp2;
-  let tmp5;
-  let tmp6;
-  let closure_0 = getLayoutKey;
-  const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] !== getLayoutKey) {
-    const layoutKey = getLayoutKey.getLayoutKey();
-    cResult[0] = getLayoutKey;
-    cResult[1] = layoutKey;
-    tmp2 = layoutKey;
-  } else {
-    tmp2 = cResult[1];
-  }
-  [tmp5, closure_129_1] = react.useState(tmp2);
-  _slicedToArray(react.useState(tmp2), 2);
-  const obj2 = react;
-  if (cResult[2] !== getLayoutKey) {
-    const fn = function h() {
-      return layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey()));
-    };
-    cResult[2] = getLayoutKey;
-    cResult[3] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[3];
-  }
-  const layoutEffect = obj2.useLayoutEffect(tmp6);
-  return tmp5;
-}) : (function useManagerSubscription(getLayoutKey) {
-  let closure_129_1;
-  let tmp2;
-  let closure_0 = getLayoutKey;
-  [tmp2, closure_129_1] = react.useState(getLayoutKey.getLayoutKey());
-  _slicedToArray(react.useState(getLayoutKey.getLayoutKey()), 2);
-  const layoutEffect = react.useLayoutEffect(() => layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey())));
-  return tmp2;
-});
 let set = new Set();
 let closure_17 = { enlargeSquare: false, fillAspectRatio: false };
 let obj = { match: set1, layouts: items, global: true };
@@ -310,10 +132,10 @@ class VoicePanelCardLayoutManager {
     const cardsLayout = this.computeCardsLayout();
     return this.contentDimensions;
   }
-  getCardCoords(arg0) {
+  getCardCoords(id) {
     const cardsLayout = this.computeCardsLayout();
     const cardCoords = this.cardCoords;
-    return cardCoords.get(arg0);
+    return cardCoords.get(id);
   }
   getCardCoordsMap() {
     const cardsLayout = this.computeCardsLayout();
@@ -484,7 +306,7 @@ class VoicePanelCardLayoutManager {
         let tmp20 = self;
         let tmp21 = windowWidth;
         let rect = { top: safeAreaTop, left: safeAreaLeft, right: safeAreaRight, bottom: safeAreaBottom };
-        let bound = Math.max(120, windowHeight - self(windowWidth[13])(rect, found).height - found - controlBarSize - safeAreaBottom);
+        let bound = Math.max(120, windowHeight - self(windowWidth[11])(rect, found).height - found - controlBarSize - safeAreaBottom);
         let _Math2 = Math;
         if (null == found) {
           let cardSize;
@@ -497,7 +319,7 @@ class VoicePanelCardLayoutManager {
             if (self.items.length < 7) {
               if (0 !== self.items.length) {
                 let obj3 = { cardCount: self.items.length, gutterSize: gutter, availableWidth: tmp24, availableHeight: bound };
-                let tmp25 = tmp20(tmp21[14])(obj3);
+                let tmp25 = tmp20(tmp21[12])(obj3);
                 bound2 = tmp25.columns;
                 cardSize = tmp25.cardSize;
               }
@@ -553,7 +375,7 @@ class VoicePanelCardLayoutManager {
               }
             }
           }
-          if (!tmp20(tmp21[11])(size, self.defaultTargetCoords)) {
+          if (!tmp20(tmp21[9])(size, self.defaultTargetCoords)) {
             self.defaultTargetCoords = size;
           }
           let obj4 = { cardWidth: self.defaultTargetCoords.width, cardHeight: self.defaultTargetCoords.height, gutter, totalItems: self.items.length, windowWidth };
@@ -1033,6 +855,59 @@ class VoicePanelCardLayoutManager {
 const prototype = VoicePanelCardLayoutManager.prototype;
 
 export default VoicePanelCardLayoutManager;
-export const useCardLayoutCoordsSubscription = tmp4;
-export const useTargetDimensionsSubscription = tmp5;
-export const useManagerSubscription = tmp6;
+export function useCardLayoutCoordsSubscription(id, layoutManager) {
+  let sharedValue;
+  _require = id;
+  const useSharedValue = require("ReanimatedRexport").useSharedValue;
+  require("ReanimatedRexport");
+  let cardCoords = layoutManager.getCardCoords(id);
+  if (cardCoords == null) {
+    cardCoords = closure_15;
+  }
+  let obj = {};
+  const merged = Object.assign(cardCoords);
+  sharedValue = useSharedValue(obj);
+  const items = [id, layoutManager, sharedValue];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let cardCoords = layoutManager.getCardCoords(id);
+    const obj = layoutManager;
+    if (null != cardCoords) {
+      updateSharedValueIfChangedDefault(sharedValue, cardCoords);
+    }
+    return obj.subscribeFromItem(function updateSharedValues() {
+      cardCoords = cardCoords.getCardCoords(id);
+      if (null != cardCoords) {
+        cardCoords(sharedValue[8])(closure_1_2, cardCoords);
+      }
+    });
+  }, items);
+  return sharedValue;
+}
+export function useTargetDimensionsSubscription(participantId, layoutManager) {
+  let sharedValue;
+  _require = participantId;
+  const useSharedValue = require("ReanimatedRexport").useSharedValue;
+  const obj = {};
+  require("ReanimatedRexport");
+  const merged = Object.assign(layoutManager.getTargetDimensions(participantId));
+  sharedValue = useSharedValue(obj);
+  const items = [participantId, layoutManager, sharedValue];
+  const layoutEffect = react.useLayoutEffect(() => {
+    let targetDimensions = layoutManager.getTargetDimensions(participantId);
+    updateSharedValueIfChangedDefault(sharedValue, targetDimensions);
+    return layoutManager.subscribeFromItem(function updateSharedValues() {
+      targetDimensions = targetDimensions.getTargetDimensions(participantId);
+      targetDimensions(sharedValue[8])(closure_1_2, targetDimensions);
+    });
+  }, items);
+  return sharedValue;
+}
+export function useManagerSubscription(first3) {
+  let closure_129_1;
+  let tmp2;
+  let closure_0 = first3;
+  [tmp2, closure_129_1] = react.useState(first3.getLayoutKey());
+  _slicedToArray(react.useState(first3.getLayoutKey()), 2);
+  const layoutEffect = react.useLayoutEffect(() => layoutKey.subscribeToManager(() => closure_1_1(layoutKey.getLayoutKey())));
+  return tmp2;
+}

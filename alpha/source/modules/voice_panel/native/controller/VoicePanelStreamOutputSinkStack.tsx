@@ -1,76 +1,16 @@
-// Module ID: 19083
-// Function ID: 19084
+// Module ID: 19137
+// Function ID: 19138
 // Name: VoicePanelStreamOutputSinkStack
-// Dependencies: [32, 19, 558, 576, 2]
+// Dependencies: [32, 19, 2]
+// Exports: useSetHasActiveVideoOutputSink
 
-// Module 19083 (VoicePanelStreamOutputSinkStack)
-import react2 from "react" /* 576 */;
+// Module 19137 (VoicePanelStreamOutputSinkStack)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSetHasActiveVideoOutputSink(arg0) {
-  let closure_0 = arg0;
-  const obj = react2;
-  const cResult = obj.c(10);
-  const id = react.useId();
-  const obj2 = react;
-  if (cResult[0] === id) {
-    let tmp3;
-    if (cResult[1] === arg0) {
-      tmp3 = cResult[2];
-    }
-    if (cResult[3] === id) {
-      let tmp4;
-      if (cResult[4] === arg0) {
-        tmp4 = cResult[5];
-      }
-      if (cResult[6] === id) {
-        if (cResult[7] === tmp3) {
-          let tmp5;
-          if (cResult[8] === arg0) {
-            tmp5 = cResult[9];
-          }
-          const effect = obj2.useEffect(tmp4, tmp5);
-          return tmp3;
-        }
-      }
-      const items = [id, tmp3, arg0];
-      cResult[6] = id;
-      cResult[7] = tmp3;
-      cResult[8] = arg0;
-      cResult[9] = items;
-      tmp5 = items;
-    }
-    const fn2 = function o() {
-      return () => hasActiveVideoOutputSink.clearLock(id);
-    };
-    cResult[3] = id;
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    tmp4 = fn2;
-  }
-  const fn = function c(arg0, arg1) {
-    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
-  };
-  cResult[0] = id;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : (function useSetHasActiveVideoOutputSink(arg0) {
-  let closure_0 = arg0;
-  const id = react.useId();
-  const items = [id, arg0];
-  const callback = react.useCallback((arg0, arg1) => {
-    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
-  }, items);
-  const items1 = [id, callback, arg0];
-  const effect = react.useEffect(() => () => hasActiveVideoOutputSink.clearLock(id), items1);
-  return callback;
-});
 let result = size.fileFinishedImporting("modules/voice_panel/native/controller/VoicePanelStreamOutputSinkStack.tsx");
 class VoicePanelStreamOutputSinkStack {
   constructor(mediaEngine) {
@@ -172,4 +112,14 @@ class VoicePanelStreamOutputSinkStack {
 const prototype = VoicePanelStreamOutputSinkStack.prototype;
 
 export default VoicePanelStreamOutputSinkStack;
-export const useSetHasActiveVideoOutputSink = tmp2;
+export function useSetHasActiveVideoOutputSink(streamOutputSinkStack) {
+  let closure_0 = streamOutputSinkStack;
+  const id = react.useId();
+  const items = [id, streamOutputSinkStack];
+  const callback = react.useCallback((arg0, arg1) => {
+    const result = hasActiveVideoOutputSink.setHasActiveVideoOutputSink(id, arg0, arg1);
+  }, items);
+  const items1 = [id, callback, streamOutputSinkStack];
+  const effect = react.useEffect(() => () => hasActiveVideoOutputSink.clearLock(id), items1);
+  return callback;
+}

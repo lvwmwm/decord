@@ -1,16 +1,16 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8337
+// Function ID: 8338
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8361, 1084, 1381, 1998, 5749, 504, 584, 2]
+// Dependencies: [8338, 1072, 1376, 1993, 5755, 504, 572, 2]
 
-// Module 8360 (ApplicationCommandAutocompleteStore)
+// Module 8337 (ApplicationCommandAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import Server from "Server" /* 1998 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8361 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import Server from "Server" /* 1993 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8338 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -77,7 +77,7 @@ class ApplicationCommandAutocompleteStore extends Store {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
       const _Map2 = Map;
       const self3 = this;
       const self4 = this;
@@ -113,7 +113,7 @@ class ApplicationCommandAutocompleteStore extends Store {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
       const _Map2 = Map;
       const self3 = this;
       const self4 = this;
@@ -155,7 +155,7 @@ class ApplicationCommandAutocompleteStore extends Store {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
       const _Map2 = Map;
       const self3 = this;
       const self4 = this;
@@ -192,7 +192,7 @@ class ApplicationCommandAutocompleteStore extends Store {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(id), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
       const _Map2 = Map;
       const self3 = this;
       const self4 = this;
@@ -241,7 +241,7 @@ let obj = {
       const _Map = Map;
       const self = this;
       const self2 = this;
-      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+      const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
       map = new Map();
       const _Map2 = Map;
       const self3 = this;
@@ -340,7 +340,7 @@ let obj = {
         const _Map = Map;
         const self = this;
         const self2 = this;
-        const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+        const obj3 = { commandId: id, optionName: obj2.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
         map = new Map();
         const _Map2 = Map;
         const self3 = this;
@@ -475,7 +475,7 @@ let obj = {
           const _Map = Map;
           const self3 = this;
           const self4 = this;
-          const obj3 = { commandId: id, optionName: obj5.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "ix" };
+          const obj3 = { commandId: id, optionName: obj5.getActiveOptionName(channelId), optionNameToAutocompleteQueries: map, optionNameToLastResults: map1, optionNameToNonce: map2, optionNameToLastQuery: map3, optionNameToContextKey: map4, lastErrored: false, lastResponseNonce: "id" };
           map = new Map();
           const _Map2 = Map;
           const self5 = this;

@@ -1,17 +1,17 @@
-// Module ID: 13692
-// Function ID: 13693
+// Module ID: 13839
+// Function ID: 13840
 // Name: SmartSearchUtils
-// Dependencies: [13693, 13691, 1084, 9780, 13695, 13696, 13694, 2]
+// Dependencies: [13840, 13838, 1072, 9806, 13842, 13843, 13841, 2]
 // Exports: getChannelFilterKey, getChannelIdsForFilterKey, getSmartSearchCitationsCount, getSmartSearchQuery, getSmartSearchStatus, isSmartSearchEmptyOrErrored, isSupportedSearchContext, parseConversationId
 
-// Module 13692 (SmartSearchUtils)
-import SearchConstants from "SearchConstants" /* 9780 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13694 */;
-import QueryTokenizer from "QueryTokenizer" /* 13695 */;
-import SearchUtils from "SearchUtils" /* 13696 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13693 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13691 */;
-import Constants from "Constants" /* 1084 */;
+// Module 13839 (SmartSearchUtils)
+import SearchConstants from "SearchConstants" /* 9806 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13841 */;
+import QueryTokenizer from "QueryTokenizer" /* 13842 */;
+import SearchUtils from "SearchUtils" /* 13843 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 13840 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13838 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let SearchTokenTypes;
@@ -30,7 +30,7 @@ let items = [, ];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/SmartSearchUtils.tsx");
 
-export function getSmartSearchQuery(searchContext, searchQueryString) {
+export function getSmartSearchQuery(searchContext, c1) {
   let channel_id;
   const tmp2 = searchContext.type === hasOwnProperty.GUILD || searchContext.type === tmp.GUILD_CHANNEL;
   if (tmp2) {
@@ -40,16 +40,16 @@ export function getSmartSearchQuery(searchContext, searchQueryString) {
       return null;
     } else {
       const tmp4Result = SearchUtils;
-      const searchTabFetchId = tmp4Result.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, searchQueryString);
+      const searchTabFetchId = tmp4Result.getSearchTabFetchId(searchContext, SearchTabs.MESSAGES, c1);
       const tmp4Result4 = SearchUtils;
-      const tokenizeQueryResult = tmp4Result4.tokenizeQuery(searchQueryString);
+      const tokenizeQueryResult = tmp4Result4.tokenizeQuery(c1);
       const tmp4Result5 = SearchUtils;
       const searchQueryFromTokens = tmp4Result5.getSearchQueryFromTokens(tokenizeQueryResult);
       const tmp4Result6 = SearchUtils;
       const nonTokenQuery = tmp4Result6.getNonTokenQuery(tokenizeQueryResult);
       let tmp8 = null;
       if (!tokenizeQueryResult.some(isUnsupportedFilterToken)) {
-        const obj2 = { queryText: nonTokenQuery, requestKey: searchTabFetchId, guildId: guildIdFromSearchContext, channelIds: channel_id, searchContext, searchQueryString };
+        const obj2 = { queryText: nonTokenQuery, requestKey: searchTabFetchId, guildId: guildIdFromSearchContext, channelIds: channel_id, searchContext, searchQueryString: c1 };
         channel_id = searchQueryFromTokens.channel_id;
         if (channel_id == null) {
           channel_id = [];

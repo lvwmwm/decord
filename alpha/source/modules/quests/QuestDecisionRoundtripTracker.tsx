@@ -1,17 +1,17 @@
-// Module ID: 9644
-// Function ID: 9645
+// Module ID: 9669
+// Function ID: 9670
 // Name: QuestDecisionRoundtripTracker
-// Dependencies: [7831, 5928, 1084, 6775, 7832, 7627, 1264, 7807, 7630, 2]
+// Dependencies: [7836, 5935, 1072, 6782, 7837, 7632, 1253, 7812, 7635, 2]
 
-// Module 9644 (QuestDecisionRoundtripTracker)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import NetStats from "NetStats" /* 7627 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7807 */;
-import AdDecisionUtils from "AdDecisionUtils" /* 7832 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7831 */;
-import NetworkStore from "NetworkStore" /* 5928 */;
+// Module 9669 (QuestDecisionRoundtripTracker)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import NetStats from "NetStats" /* 7632 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7812 */;
+import AdDecisionUtils from "AdDecisionUtils" /* 7837 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7836 */;
+import NetworkStore from "NetworkStore" /* 5935 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
@@ -58,7 +58,7 @@ function trackRoundtrip(apiResponseTimestamp, transition_case, fetched_at) {
     if (fetchedAt == null) {
       fetchedAt = null;
     }
-    tmp2Result = tmp2(7630);
+    tmp2Result = tmp2(7635);
     track(QUEST_DECISION_ROUNDTRIP, obj3);
   }
 }
@@ -200,7 +200,7 @@ class QuestDecisionRoundtripTracker {
             }
             const deliveredAdCreativeId = getDeliveredAdCreativeId(creative);
             let creative1;
-            const getDeliveredAdCreativeId2 = tmp12(7832).getDeliveredAdCreativeId;
+            const getDeliveredAdCreativeId2 = tmp12(7837).getDeliveredAdCreativeId;
             AdDecisionUtils;
             if (tmp6 != null) {
               creative1 = tmp6.creative;

@@ -1,51 +1,17 @@
-// Module ID: 11597
-// Function ID: 11598
+// Module ID: 11798
+// Function ID: 11799
 // Name: useDispatchOpenActivity
-// Dependencies: [19, 558, 576, 584, 2]
+// Dependencies: [19, 572, 2]
+// Exports: default
 
-// Module 11597 (useDispatchOpenActivity)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 11798 (useDispatchOpenActivity)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDispatchOpenActivity(connectedEmbeddedActivity) {
-  let obj = connectedEmbeddedActivity(576);
-  const cResult = obj.c(4);
-  connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
-  let applicationId;
-  if (connectedEmbeddedActivity != null) {
-    applicationId = connectedEmbeddedActivity.applicationId;
-  }
-  if (cResult[0] === applicationId) {
-    let tmp3;
-    let tmp4;
-    if (cResult[1] === connectedEmbeddedActivity) {
-      tmp3 = cResult[2];
-      tmp4 = cResult[3];
-    }
-    const effect = react.useEffect(tmp3, tmp4);
-  }
-  const fn = function n() {
-    let tmp2 = null != connectedEmbeddedActivity;
-    const tmp = connectedEmbeddedActivity;
-    if (tmp2) {
-      tmp2 = null != applicationId;
-    }
-    if (tmp2) {
-      const obj2 = { type: "EMBEDDED_ACTIVITY_OPEN", location: tmp.location, applicationId };
-      const obj = DispatcherDefault;
-      obj.dispatch(obj2);
-    }
-  };
-  const items = [applicationId, connectedEmbeddedActivity];
-  cResult[0] = applicationId;
-  cResult[1] = connectedEmbeddedActivity;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (function useDispatchOpenActivity(connectedEmbeddedActivity) {
+const result = size.fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
+
+export default function useDispatchOpenActivity(connectedEmbeddedActivity) {
   connectedEmbeddedActivity = connectedEmbeddedActivity.connectedEmbeddedActivity;
   let applicationId;
   if (connectedEmbeddedActivity != null) {
@@ -64,7 +30,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDispatchO
       obj.dispatch(obj2);
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/activities/useDispatchOpenActivity.tsx");
-
-export default tmp2;
+};

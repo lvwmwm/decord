@@ -1,15 +1,15 @@
-// Module ID: 8821
-// Function ID: 8822
+// Module ID: 8855
+// Function ID: 8856
 // Name: AppFreezeStore
-// Dependencies: [570, 1271, 2]
+// Dependencies: [560, 1260, 2]
 
-// Module 8821 (AppFreezeStore)
-import module_570 from "module_570" /* 570 */;
+// Module 8855 (AppFreezeStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let obj = module_570.create((arg0) => {
+let obj = module_560.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     lockKeys: set,

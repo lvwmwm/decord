@@ -1,64 +1,29 @@
-// Module ID: 11041
-// Function ID: 11042
+// Module ID: 11269
+// Function ID: 11270
 // Name: useLastChannelMessage
-// Dependencies: [6049, 558, 576, 504, 2]
+// Dependencies: [6056, 504, 2]
+// Exports: useLastChannelMessage
 
-// Module 11041 (useLastChannelMessage)
-import MessageStore from "MessageStore" /* 6049 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11269 (useLastChannelMessage)
+import MessageStore from "MessageStore" /* 6056 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLastChannelMessage(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      let lastNonCurrentUserMessage = MessageStore.getLastNonCurrentUserMessage(closure_0);
-      const obj = MessageStore;
-      const tmp = closure_0;
-      if (lastNonCurrentUserMessage == null) {
-        lastNonCurrentUserMessage = obj.getLastMessage(tmp);
-      }
-      return lastNonCurrentUserMessage;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useLastChannelMessage(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
+
+export function useLastChannelMessage(channelId) {
+  _require = channelId;
   let obj = require("get initialized");
   const items = [MessageStore];
   return obj.useStateFromStores(items, () => {
-    let lastNonCurrentUserMessage = MessageStore.getLastNonCurrentUserMessage(closure_0);
+    let lastNonCurrentUserMessage = MessageStore.getLastNonCurrentUserMessage(channelId);
     const obj = MessageStore;
-    const tmp = closure_0;
+    const tmp = channelId;
     if (lastNonCurrentUserMessage == null) {
       lastNonCurrentUserMessage = obj.getLastMessage(tmp);
     }
     return lastNonCurrentUserMessage;
   });
-});
-const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");
-
-export const useLastChannelMessage = tmp2;
+}

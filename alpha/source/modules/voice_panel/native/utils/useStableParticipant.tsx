@@ -1,20 +1,19 @@
-// Module ID: 19028
-// Function ID: 19029
+// Module ID: 19159
+// Function ID: 19160
 // Name: useStableParticipant
-// Dependencies: [6830, 502, 2012, 1389, 5670, 568, 558, 576, 6029, 6840, 10979, 504, 2]
-// Exports: isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
+// Dependencies: [6837, 502, 2007, 1384, 5676, 558, 504, 6036, 6847, 11209, 2]
+// Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 19028 (useStableParticipant)
-import shallowEqualDefault from "shallowEqual" /* 568 */;
-import CallConstants from "CallConstants" /* 5670 */;
-import NicknameUtils from "NicknameUtils" /* 6029 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6840 */;
-import participantHasVideoDefault from "participantHasVideo" /* 10979 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
+// Module 19159 (useStableParticipant)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import CallConstants from "CallConstants" /* 5676 */;
+import NicknameUtils from "NicknameUtils" /* 6036 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6847 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11209 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,108 +28,9 @@ function areStableParticipantsEqual(arg0, arg1) {
   return tmp;
 }
 const ParticipantTypes = CallConstants.ParticipantTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableParticipant(id, arg1, arg2) {
-  let closure_2;
-  let first;
-  _require = id;
-  let closure_1 = arg1;
-  dependencyMap = arg2;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, UserStore, , ];
-    let tmp7 = AuthenticationStore;
-    items[2] = AuthenticationStore;
-    items[3] = MediaEngineStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg2) {
-      let tmp9;
-      let tmp10;
-      if (cResult[3] === id) {
-        tmp9 = cResult[4];
-        tmp10 = cResult[5];
-      }
-      let tmp15 = tmp10;
-      const tmpResult = tmp(504);
-      return tmpResult.useStateFromStores(first, tmp9, tmp10, areStableParticipantsEqual);
-    }
-  }
-  const fn = function v() {
-    let flag;
-    let guildId;
-    let id1;
-    let id4;
-    let id5;
-    let obj5;
-    let obj6;
-    let streamId;
-    let streamId2;
-    let tmp7;
-    let voiceState;
-    if (null != id) {
-      const participant = ChannelRTCStore.getParticipant(closure_1, tmp);
-      const tmp3 = closure_1;
-      if (null == participant) {
-        const user = UserStore.getUser(tmp);
-        if (null != user) {
-          const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
-          id1 = AuthenticationStore.getId();
-          obj5 = NicknameUtils;
-          obj6 = useAvatarDecoration;
-          return obj3;
-        }
-      } else {
-        const tmp15 = participantHasVideoDefault(participant);
-        const type = participant.type;
-        if (ParticipantTypes.ACTIVITY === type) {
-          return { type: participant.type, id, applicationId: participant.applicationId };
-        } else {
-          if (ParticipantTypes.STREAM !== type) {
-            if (ParticipantTypes.HIDDEN_STREAM !== type) {
-              if (ParticipantTypes.USER === type) {
-                id = participant.user.id;
-                const obj = { type: participant.type, id, user: null, selfVideo: flag, userNick: null, userAvatarDecoration: null, streamId, ringing: participant.ringing, hasVideo: tmp15, canRenderVideo: tmp7, isSelf: id === id4 };
-                ({ user: obj.user, voiceState } = participant);
-                flag = undefined;
-                id4 = AuthenticationStore.getId();
-                if (voiceState != null) {
-                  flag = voiceState.selfVideo;
-                }
-                if (flag == null) {
-                  flag = false;
-                }
-                ({ userNick: obj.userNick, userAvatarDecoration: obj.userAvatarDecoration, streamId } = participant);
-                tmp7 = tmp15 && !MediaEngineStore.isLocalVideoDisabled(participant.user.id);
-                return obj;
-              }
-            }
-          }
-          const id2 = participant.user.id;
-          const obj9 = { type: participant.type, id, user: null, userNick: null, streamId: streamId2, streamGuildId: guildId, hasVideo: tmp15, isSelf: id2 === id5 };
-          ({ user: obj2.user, userNick: obj2.userNick, streamId: streamId2 } = participant);
-          id5 = AuthenticationStore.getId();
-          guildId = participant.stream.guildId;
-          return obj9;
-        }
-      }
-    }
-  };
-  const items1 = [id, arg1, arg2];
-  cResult[1] = arg1;
-  cResult[2] = arg2;
-  cResult[3] = id;
-  cResult[4] = fn;
-  cResult[5] = items1;
-  tmp10 = items1;
-  tmp9 = fn;
-}) : (function useStableParticipant(id, arg1, arg2) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
+
+export default function useStableParticipant(id, arg1, arg2) {
   let closure_2;
   _require = id;
   let closure_1 = arg1;
@@ -157,7 +57,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
         const user = UserStore.getUser(tmp);
         if (null != user) {
           const id3 = user.id;
-          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "Set", ringing: null, hasVideo: "LottieFiles AE 3.0.2", isSelf: id3 === id1 };
+          const obj3 = { type: ParticipantTypes.USER, id, user, selfVideo: false, canRenderVideo: false, userNick: obj5.getName(closure_2, tmp3, user), userAvatarDecoration: obj6.getAvatarDecoration(user, closure_2), streamId: "PX_8", ringing: null, hasVideo: 161.285, isSelf: id3 === id1 };
           id1 = AuthenticationStore.getId();
           obj5 = NicknameUtils;
           obj6 = useAvatarDecoration;
@@ -199,8 +99,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStableP
       }
     }
   }, items1, areStableParticipantsEqual);
-});
-function isStableStreamParticipant(participant) {
+};
+export function isStableStreamParticipant(participant) {
   let type;
   const _Boolean = Boolean;
   if (participant != null) {
@@ -216,7 +116,7 @@ function isStableStreamParticipant(participant) {
   }
   return _Boolean(tmp3);
 }
-function isStableUserParticipant(type) {
+export function isStableUserParticipant(type) {
   type = undefined;
   const _Boolean = Boolean;
   if (type != null) {
@@ -224,7 +124,7 @@ function isStableUserParticipant(type) {
   }
   return _Boolean(type === ParticipantTypes.USER);
 }
-function isStableActivityParticipant(participant) {
+export function isStableActivityParticipant(participant) {
   let type;
   const _Boolean = Boolean;
   if (participant != null) {
@@ -232,12 +132,6 @@ function isStableActivityParticipant(participant) {
   }
   return _Boolean(type === ParticipantTypes.ACTIVITY);
 }
-const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
-
-export default tmp2;
-export { isStableStreamParticipant };
-export { isStableUserParticipant };
-export { isStableActivityParticipant };
 export function isStableParticipantWithUser(participant) {
   let type;
   const _Boolean = Boolean;

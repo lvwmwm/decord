@@ -1,19 +1,18 @@
-// Module ID: 17974
-// Function ID: 17975
+// Module ID: 18035
+// Function ID: 18036
 // Name: ChannelUnreadBadge
-// Dependencies: [19, 17, 12046, 6763, 21, 5005, 558, 12047, 5290, 9770, 2]
+// Dependencies: [19, 17, 11027, 6770, 21, 5009, 11030, 5637, 9797, 2]
 
-// Module 17974 (ChannelUnreadBadge)
+// Module 18035 (ChannelUnreadBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useFontScale from "useFontScale" /* 5290 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import shared_components_Badge from "shared_components/Badge" /* 9770 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
-import ChannelListLayout from "ChannelListLayout" /* 12047 */;
+import useFontScale from "useFontScale" /* 5637 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import shared_components_Badge from "shared_components/Badge" /* 9797 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
+import ChannelListLayout from "ChannelListLayout" /* 11030 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const shared_components_BadgeDefault = shared_components_Badge;
@@ -23,52 +22,7 @@ const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ unreadBadge: { flexGrow: 0, flexShrink: 0, position: "absolute" }, unreadBadgePanel: { marginLeft: -16 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelUnreadBadge(panelVariant) {
-  let isThread;
-  let launchpad;
-  let layout;
-  let muted;
-  let obj4;
-  let resolvedUnreadSetting;
-  let unread;
-  panelVariant = panelVariant.panelVariant;
-  let tmp = undefined !== panelVariant;
-  ({ unread, resolvedUnreadSetting, muted, isThread, layout, launchpad } = panelVariant);
-  if (tmp) {
-    tmp = panelVariant;
-  }
-  const tmp2 = closure_7();
-  const obj = ChannelListLayout;
-  const layoutStyles = obj.getLayoutStyles(layout, launchpad);
-  useFontScale;
-  let tmp9Result = null;
-  if (unread) {
-    let num2;
-    const items = [tmp2.unreadBadge, , , ];
-    let unreadBadgePanel;
-    const tmp10 = View;
-    if (tmp) {
-      unreadBadgePanel = tmp2.unreadBadgePanel;
-    }
-    items[1] = unreadBadgePanel;
-    const unreadBadge = layoutStyles.unreadBadge;
-    const obj2 = { style: items, children: null };
-    items[2] = isThread ? unreadBadge.positionThread : unreadBadge.position;
-    const tmp3Result = ChannelListLayout;
-    items[3] = tmp3Result.makeSizeStyle(layoutStyles.unreadBadge.size);
-    ({ classic: tmp, size: shared_components_Badge.CHANNEL_BADGE_SIZE * Math.max(tmp7, 1), badgeStyle: obj4 });
-    const _Math = Math;
-    shared_components_BadgeDefault;
-    if (resolvedUnreadSetting !== UnreadSetting.ALL_MESSAGES) {
-      num2 = MUTED_OPACITY_CONTENT;
-    } else {
-      num2 = 1;
-    }
-    obj4 = { opacity: num2 };
-    tmp9Result = tmp9(tmp10, obj2);
-  }
-  return tmp9Result;
-}) : (function ChannelUnreadBadge(panelVariant) {
+const memoResult = react.memo(function ChannelUnreadBadge(panelVariant) {
   let isThread;
   let launchpad;
   let layout;
@@ -112,7 +66,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp8Result = tmp8(tmp9, obj2);
   }
   return tmp8Result;
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/ChannelUnreadBadge.tsx");
 
 export default memoResult;

@@ -1,74 +1,21 @@
-// Module ID: 18704
-// Function ID: 18705
+// Module ID: 18763
+// Function ID: 18764
 // Name: ChannelDetailsMoreButton
-// Dependencies: [19, 21, 558, 576, 10759, 1125, 9771, 9765, 9068, 2]
+// Dependencies: [19, 21, 10782, 9794, 9791, 1114, 9081, 2]
+// Exports: default
 
-// Module 18704 (ChannelDetailsMoreButton)
+// Module 18763 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9068 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9771 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9081 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9794 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(channel) {
-  let tmp4;
-  let tmp = channel;
-  const obj = channel(576);
-  const cResult = obj.c(5);
-  channel = channel.channel;
-  if (cResult[0] !== channel) {
-    const fn = function l() {
-      let tmp = null != channel;
-      if (tmp) {
-        tmp = channel.isDM() || channel.isMultiUserDM();
-        channel.isDM() || channel.isMultiUserDM();
-      }
-      if (tmp) {
-        const obj2 = openChannelLongPressActionSheet;
-        const result = obj2.openChannelLongPressActionSheet(obj.id);
-      }
-    };
-    cResult[0] = channel;
-    cResult[1] = fn;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let tmp5 = null;
-  if (null != channel) {
-    if (channel.isDM()) {
-      let tmp7;
-      let tmp9;
-      const _Symbol = Symbol;
-      if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1125).intl;
-        const stringResult = intl.string(tmp(1125).t["UKOtz+"]);
-        cResult[2] = stringResult;
-        tmp7 = stringResult;
-      } else {
-        tmp7 = cResult[2];
-      }
-      if (cResult[3] !== tmp4) {
-        ({ accessibilityLabel: tmp7, source: AssetRegistryDefault, onPress: tmp4 });
-        PressableNavigatorButtonWrapperDefault;
-        const HeaderIconButton = tmp(9765).HeaderIconButton;
-        const tmp13 = <tmp12>{null}</tmp12>;
-        cResult[3] = tmp4;
-        cResult[4] = tmp13;
-        tmp9 = tmp13;
-      } else {
-        tmp9 = cResult[4];
-      }
-      tmp5 = tmp9;
-    } else {
-      tmp5 = null;
-    }
-  }
-  return tmp5;
-}) : (function MoreButton(channel) {
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
+
+export default function MoreButton(channel) {
   let intl;
   let tmp;
   channel = channel.channel;
@@ -76,17 +23,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MoreButton(c
   let tmp2 = null;
   if (null != channel) {
     if (channel.isDM()) {
-      let obj2 = { accessibilityLabel: intl.string(channel(1125).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
+      let obj2 = { accessibilityLabel: intl.string(channel(1114).t["UKOtz+"]), source: AssetRegistryDefault, onPress: tmp };
       PressableNavigatorButtonWrapperDefault;
-      const HeaderIconButton = channel(9765).HeaderIconButton;
-      intl = channel(1125).intl;
+      const HeaderIconButton = channel(9791).HeaderIconButton;
+      intl = channel(1114).intl;
       tmp2 = <tmp6>{null}</tmp6>;
     } else {
       tmp2 = null;
     }
   }
   return tmp2;
-});
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsMoreButton.tsx");
-
-export default tmp2;
+};

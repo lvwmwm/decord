@@ -1,16 +1,16 @@
-// Module ID: 15718
-// Function ID: 15719
+// Module ID: 15758
+// Function ID: 15759
 // Name: GuildHeaderCountsStore
-// Dependencies: [7432, 4857, 5231, 1389, 5668, 504, 584, 2]
+// Dependencies: [7440, 4858, 5237, 1384, 5674, 504, 572, 2]
 
-// Module 15718 (GuildHeaderCountsStore)
+// Module 15758 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7432 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7440 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
+import UserStore from "UserStore" /* 1384 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;
@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "duration", onlineCount: "toCharArray$esjava$1", memberCount: "toCharArray$esjava$1" };
+      closure_6[guildId] = { activeChannelsCount: "sa", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "duration", onlineCount: "toCharArray$esjava$1", memberCount: "toCharArray$esjava$1" };
+      closure_6[guildId] = { activeChannelsCount: "sa", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "duration", onlineCount: "toCharArray$esjava$1", memberCount: "toCharArray$esjava$1" };
+      closure_6[guildId] = { activeChannelsCount: "sa", onlineCount: "isArray", memberCount: "isArray" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

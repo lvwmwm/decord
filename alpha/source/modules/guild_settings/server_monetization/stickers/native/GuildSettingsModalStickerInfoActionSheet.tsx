@@ -1,15 +1,15 @@
-// Module ID: 19626
-// Function ID: 19627
+// Module ID: 19689
+// Function ID: 19690
 // Name: GuildSettingsModalStickerInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 6824, 21, 504, 10222, 5701, 1125, 5302, 7308, 587, 7047, 6963, 10187, 19619, 5727, 2]
+// Dependencies: [5, 32, 19, 17, 6831, 21, 504, 10247, 5707, 1114, 5267, 7315, 575, 7054, 6969, 10212, 19682, 5733, 2]
 
-// Module 19626 (GuildSettingsModalStickerInfoActionSheet)
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19619 */;
+// Module 19689 (GuildSettingsModalStickerInfoActionSheet)
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19682 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StickersStore from "StickersStore" /* 6824 */;
+import StickersStore from "StickersStore" /* 6831 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -110,7 +110,7 @@ const memoResult = react.memo(function GuildSettingsModalStickerInfoActionSheet(
             closure_128_4(false);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp34) {
           closure_2 = tmp34;
           if (0 === c3) {

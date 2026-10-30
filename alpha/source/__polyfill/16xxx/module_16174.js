@@ -1,148 +1,131 @@
 // Module ID: 16174
 // Function ID: 16175
-// Dependencies: [32, 16175]
-// Exports: default
+// Dependencies: [42, 41, 93, 95, 98, 158, 17, 16175]
 
 // Module 16174
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import react_native from "react-native" /* 17 */;
+import base64Decode from "base64Decode" /* 16175 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
+import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-let regex;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const re3 = /^(image)\/.*$/i;
-let closure_4 = {};
-
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return (arg0) => {
-    let closure_0 = arg0;
-    function onSend(data, _url) {
-      if (merged.ignoreUrls) {
-        const ignoreUrls = merged.ignoreUrls;
-        if (ignoreUrls.test(_url._url)) {
-          _url._skipReactotron = true;
-        }
-      }
-      sum = sum + 1;
-      _url._trackingName = sum;
-      closure_4[sum] = { data, xhr: _url, stopTimer: closure_0.startTimer() };
-      ({ data, xhr: _url, stopTimer: closure_0.startTimer() });
+}
+const NativeModules = react_native.NativeModules;
+class TypeMismatchError {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TypeMismatchError);
+    const obj = _getPrototypeOf(TypeMismatchError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
     }
-    function onResponse(status, arg1, _bodyBlob, arg3, arg4, _skipReactotron) {
-      let data;
-      let responseHeaders;
-      let closure_1 = _bodyBlob;
-      regex = _skipReactotron;
-      if (!_skipReactotron._skipReactotron) {
-        let _url = arg3;
-        obj = null;
-        let num2 = -1;
-        if (arg3) {
-          let str = "?";
-          num2 = _url.indexOf("?");
-        }
-        let tmp2 = null;
-        if (num2 > -1) {
-          obj = {};
-          const str2 = _url.substr(num2 + 1);
-          const parts = str2.split("&");
-          const item = parts.forEach((item) => {
-            let str;
-            let tmp2;
-            [tmp2, str] = closure_3_2(item.split("="), 2);
-            closure_3_2(item.split("="), 2);
-            const tmp3 = tmp2 && undefined !== str;
-            if (tmp3) {
-              const _decodeURIComponent = decodeURIComponent;
-              obj[tmp2] = decodeURIComponent(str.replace(/\+/g, " "));
-            }
-          });
-          tmp2 = obj;
-        }
-        const _trackingName = _skipReactotron._trackingName;
-        let tmp5 = closure_4[_trackingName];
-        const tmp4 = closure_4;
-        if (!tmp5) {
-          tmp5 = { xhr: _skipReactotron };
-          const obj2 = { xhr: _skipReactotron };
-        }
-        tmp4[_trackingName] = null;
-        ({ stopTimer: closure_4, data } = tmp5);
-        if (!_url) {
-          _url = tmp5.xhr._url;
-        }
-        const request = { url: _url, method: _skipReactotron._method || null, data, headers: _skipReactotron._headers || null, params: tmp2 };
-        let str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["content-type"];
-        if (!str4) {
-          str4 = _skipReactotron.responseHeaders && _skipReactotron.responseHeaders["Content-Type"];
-        }
-        if (!str4) {
-          str4 = "";
-        }
-        function sendResponse(result) {
-          let str = "~~~ skipped ~~~";
-          if (result) {
-            try {
-              const _JSON = JSON;
-              str = JSON.parse(result);
-            } catch (err) {
-              str = _bodyBlob;
-            }
-          }
-          const response = { body: str, status, headers: responseHeaders.responseHeaders || null };
-          let tmp4Result = null;
-          const apiResponse = status.apiResponse;
-          const tmp3 = request;
-          if (closure_4) {
-            tmp4Result = tmp4();
-          }
-          apiResponse(tmp3, response, tmp4Result);
-        }
-        if (typeof _bodyBlob === "string") {
-          const test = regex.test;
-          if (!str4) {
-            str4 = "";
-          }
-          if (!test(str4)) {
-            if ("blob" === arg4) {
-              const _FileReader = FileReader;
-              if (typeof FileReader !== "undefined") {
-                if (_bodyBlob) {
-                  const _FileReader2 = FileReader;
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(TypeMismatchError, _wrapNativeSuper(Error));
+let closure_8 = _createClass(TypeMismatchError);
+class QuotaExceededError {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, QuotaExceededError);
+    const obj = _getPrototypeOf(QuotaExceededError);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(QuotaExceededError, _wrapNativeSuper(Error));
+let closure_9 = _createClass(QuotaExceededError);
+if (typeof global.crypto !== "object") {
+  global.crypto = {};
+}
+if (typeof global.crypto.getRandomValues !== "function") {
+  global.crypto.getRandomValues = function getRandomValues(uint8Array) {
+    if (!(uint8Array instanceof Int8Array)) {
+      const _Uint8Array = Uint8Array;
+      if (!(uint8Array instanceof Uint8Array)) {
+        const _Int16Array = Int16Array;
+        if (!(uint8Array instanceof Int16Array)) {
+          const _Uint16Array = Uint16Array;
+          if (!(uint8Array instanceof Uint16Array)) {
+            const _Int32Array = Int32Array;
+            if (!(uint8Array instanceof Int32Array)) {
+              const _Uint32Array = Uint32Array;
+              if (!(uint8Array instanceof Uint32Array)) {
+                const _Uint8ClampedArray = Uint8ClampedArray;
+                if (!(uint8Array instanceof Uint8ClampedArray)) {
                   const self = this;
                   const self2 = this;
-                  const fileReader = new FileReader();
-                  function brListener() {
-                    sendResponse(fileReader.result);
-                    const removed = fileReader.removeEventListener("loadend", brListener);
-                  }
-                  const listener = fileReader.addEventListener("loadend", brListener);
-                  const asText = fileReader.readAsText(_bodyBlob);
+                  const tmp2 = new closure_8("Expected an integer array");
+                  throw tmp2;
                 }
               }
             }
-            sendResponse(_bodyBlob);
           }
         }
-        sendResponse("");
       }
     }
-    const merged = Object.assign({}, closure_4, obj);
-    let closure_2 = merged.ignoreContentTypes || re3;
-    let sum = 1000;
-    closure_4 = {};
-    obj = {
-      onConnect() {
-        const XHRInterceptor = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor.setSendCallback(onSend);
-        const XHRInterceptor2 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor2.setResponseCallback(onResponse);
-        const XHRInterceptor3 = obj(closure_2_1[1]).XHRInterceptor;
-        XHRInterceptor3.enableInterception();
+    if (uint8Array.byteLength > 65536) {
+      const self7 = this;
+      const self8 = this;
+      const tmp11 = new closure_9("Can only request a maximum of 65536 bytes");
+      throw tmp11;
+    } else {
+      let randomBase64;
+      const byteLength = uint8Array.byteLength;
+      const tmp15 = base64Decode;
+      if (NativeModules.RNGetRandomValues) {
+        const RNGetRandomValues = tmp16.RNGetRandomValues;
+        randomBase64 = RNGetRandomValues.getRandomBase64(byteLength);
+      } else if (NativeModules.ExpoRandom) {
+        const ExpoRandom2 = tmp16.ExpoRandom;
+        randomBase64 = ExpoRandom2.getRandomBase64String(byteLength);
+      } else if (global.ExpoModules) {
+        const ExpoRandom = global.ExpoModules.ExpoRandom;
+        randomBase64 = ExpoRandom.getRandomBase64String(byteLength);
+      } else {
+        const _Error = Error;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Native module not found");
+        throw error;
       }
-    };
-    return obj;
+      const _Uint8Array2 = Uint8Array;
+      const self5 = this;
+      const self6 = this;
+      uint8Array = new Uint8Array(uint8Array.buffer, uint8Array.byteOffset, uint8Array.byteLength);
+      tmp15(randomBase64, uint8Array);
+      return uint8Array;
+    }
   };
-};
+}

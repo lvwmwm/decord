@@ -1,15 +1,15 @@
-// Module ID: 8380
-// Function ID: 8381
+// Module ID: 8417
+// Function ID: 8418
 // Name: MessageAccessibilityActions
-// Dependencies: [4833, 8381, 1125, 8384, 8388, 2]
+// Dependencies: [4834, 8418, 1114, 8421, 8425, 2]
 // Exports: createMessageAccessibilityActions, getMessageAccessibilityActionFromLabel
 
-// Module 8380 (MessageAccessibilityActions)
-import intl10 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8381 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8384 */;
-import canReplyToMessage from "canReplyToMessage" /* 8388 */;
+// Module 8417 (MessageAccessibilityActions)
+import intl10 from "intl" /* 1114 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8418 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8421 */;
+import canReplyToMessage from "canReplyToMessage" /* 8425 */;
 import size from "module_2" /* 2 */;
 
 const MessageAccessibilityAction = { VIEW_PROFILE: "view_profile", ADD_REACTION: "add_reaction", ADD_QUICK_REACTION: "add_quick_reaction", REPLY: "reply", MESSAGE_ACTIONS_MENU: "message_actions_menu", EDIT_GDM: "edit_gdm", OPEN_PINS: "open_pins", JUMP_TO_MESSAGE: "jump_to_message" };
@@ -45,13 +45,13 @@ export function getMessageAccessibilityActionFromLabel(action) {
       const tmpResult = DoubleTapToReactUtils;
       const result = tmpResult.disambiguatedEmojiFromSettingsValue(setting);
       if (null != result) {
-        const intl9 = tmp(1125).intl;
+        const intl9 = tmp(1114).intl;
         const obj2 = { emojiName: result.name };
-        formatToPlainStringResult = intl9.formatToPlainString(tmp(1125).t.eQIttH, obj2);
+        formatToPlainStringResult = intl9.formatToPlainString(tmp(1114).t.eQIttH, obj2);
       }
     }
-    const intl8 = tmp(1125).intl;
-    formatToPlainStringResult = intl8.formatToPlainString(tmp(1125).t.eQIttH, { emojiName: "heart" });
+    const intl8 = tmp(1114).intl;
+    formatToPlainStringResult = intl8.formatToPlainString(tmp(1114).t.eQIttH, { emojiName: "heart" });
   }
   if (null != formatToPlainStringResult) {
     obj[formatToPlainStringResult] = tmp3.ADD_QUICK_REACTION;
@@ -73,9 +73,9 @@ export function createMessageAccessibilityActions(message, channel) {
     if (canAddNewReactionsDefault(channel)) {
       obj = { label: intl.string(intl10.t.lfIHs4), name: obj.ADD_REACTION };
       const push = items.push;
-      intl = tmp10(1125).intl;
+      intl = tmp10(1114).intl;
       push(obj);
-      const DoubleTapReactionEmoji = tmp10(4833).DoubleTapReactionEmoji;
+      const DoubleTapReactionEmoji = tmp10(4834).DoubleTapReactionEmoji;
       const setting = DoubleTapReactionEmoji.getSetting();
       let disableDoubleTap;
       if (setting != null) {
@@ -87,13 +87,13 @@ export function createMessageAccessibilityActions(message, channel) {
           const tmp10Result = DoubleTapToReactUtils;
           const result = tmp10Result.disambiguatedEmojiFromSettingsValue(setting);
           if (null != result) {
-            const intl3 = tmp10(1125).intl;
+            const intl3 = tmp10(1114).intl;
             const obj3 = { emojiName: result.name };
-            formatToPlainStringResult = intl3.formatToPlainString(tmp10(1125).t.eQIttH, obj3);
+            formatToPlainStringResult = intl3.formatToPlainString(tmp10(1114).t.eQIttH, obj3);
           }
         }
-        const intl2 = tmp10(1125).intl;
-        formatToPlainStringResult = intl2.formatToPlainString(tmp10(1125).t.eQIttH, { emojiName: "heart" });
+        const intl2 = tmp10(1114).intl;
+        formatToPlainStringResult = intl2.formatToPlainString(tmp10(1114).t.eQIttH, { emojiName: "heart" });
       }
       if (null != formatToPlainStringResult) {
         const obj4 = { label: formatToPlainStringResult, name: obj.ADD_QUICK_REACTION };
@@ -104,12 +104,12 @@ export function createMessageAccessibilityActions(message, channel) {
     if (tmp10Result2.canReplyToMessage(channel, message)) {
       const push2 = items.push;
       const obj5 = { label: intl4.string(intl10.t["5IEsGx"]), name: obj.REPLY };
-      intl4 = tmp10(1125).intl;
+      intl4 = tmp10(1114).intl;
       push2(obj5);
     }
     const push3 = items.push;
     const obj6 = { label: intl5.string(intl10.t.ChPNkN), name: obj.MESSAGE_ACTIONS_MENU };
-    intl5 = tmp10(1125).intl;
+    intl5 = tmp10(1114).intl;
     push3(obj6);
     return items;
   }

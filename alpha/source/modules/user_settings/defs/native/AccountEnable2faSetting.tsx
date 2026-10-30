@@ -1,22 +1,19 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16600
+// Function ID: 16601
 // Name: AccountEnable2faSetting
-// Dependencies: [1389, 8387, 558, 16477, 16550, 5946, 1125, 11302, 2]
+// Dependencies: [1384, 8424, 16528, 16601, 5953, 1114, 11505, 2]
 
-// Module 16549 (AccountEnable2faSetting)
-import intl3 from "intl" /* 1125 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 16477 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16550 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 16600 (AccountEnable2faSetting)
+import intl3 from "intl" /* 1114 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16528 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16601 */;
+import UserStore from "UserStore" /* 1384 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl3.intl;
@@ -51,6 +48,6 @@ let obj = {
   }
 };
 const pressable = SettingBuilders.createPressable(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/AccountEnable2faSetting.tsx");
 
 export default pressable;

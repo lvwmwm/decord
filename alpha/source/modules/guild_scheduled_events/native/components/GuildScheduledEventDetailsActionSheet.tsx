@@ -1,21 +1,21 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 8955
+// Function ID: 8956
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 4879, 6842, 4863, 21, 5005, 587, 1125, 558, 576, 7313, 7338, 504, 8923, 8936, 8924, 8937, 1631, 8938, 8939, 9182, 5306, 9184, 9185, 5302, 2]
+// Dependencies: [32, 19, 17, 4880, 6849, 4864, 21, 5009, 575, 1114, 7320, 7345, 504, 8956, 8969, 8970, 8957, 1626, 8971, 8972, 9195, 5267, 5270, 9197, 9198, 2]
+// Exports: default
 
-// Module 8922 (GuildScheduledEventDetailsActionSheet)
+// Module 8955 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8924 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 8957 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -33,334 +33,9 @@ const View = react_native.View;
 let obj = { segmentedControl: obj2, header: { flexDirection: "column" } };
 obj2 = { paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_12 };
 let closure_12 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildScheduledEventDetailsActionSheet(eventId) {
-  let closure_3;
-  let error;
-  let first;
-  let first1;
-  let first2;
-  let items2;
-  let loading;
-  let stateFromStores;
-  const tmp2 = eventId;
-  let obj = eventId(stateFromStores[11]);
-  const cResult = obj.c(58);
-  eventId = eventId.eventId;
-  const event = eventId.event;
-  const recurrenceId = eventId.recurrenceId;
-  closure_12();
-  const tmp7 = event(stateFromStores[12]);
-  const analyticsLocations = tmp7(event(stateFromStores[13]).GUILD_EVENT_MODAL).analyticsLocations;
-  [first] = first2.useState(recurrenceId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [items2];
-    cResult[0] = items;
-    first1 = items;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] === event) {
-    let tmp13;
-    let tmp14;
-    let tmp16;
-    let tmp21;
-    if (cResult[2] === eventId) {
-      tmp13 = cResult[3];
-      tmp14 = cResult[4];
-    }
-    const tmp2Result = tmp2(stateFromStores[14]);
-    stateFromStores = tmp2Result.useStateFromStores(first1, tmp13, tmp14);
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [GuildStore];
-      cResult[5] = items1;
-      tmp16 = items1;
-    } else {
-      tmp16 = cResult[5];
-    }
-    let guild_id;
-    const tmp18 = cResult[6];
-    if (stateFromStores != null) {
-      guild_id = stateFromStores.guild_id;
-    }
-    if (tmp18 !== guild_id) {
-      let guild_id1;
-      if (stateFromStores != null) {
-        guild_id1 = stateFromStores.guild_id;
-      }
-      class G {
-        constructor() {
-          let guild_id;
-          const getGuild = GuildStore.getGuild;
-          if (stateFromStores != null) {
-            guild_id = stateFromStores.guild_id;
-          }
-          return null != getGuild(guild_id);
-        }
-      }
-      cResult[6] = guild_id1;
-      cResult[7] = G;
-      tmp21 = G;
-    } else {
-      tmp21 = cResult[7];
-    }
-    const tmp2Result2 = tmp2(stateFromStores[14]);
-    const stateFromStores1 = tmp2Result2.useStateFromStores(tmp16, tmp21);
-    let id;
-    if (stateFromStores != null) {
-      id = stateFromStores.id;
-    }
-    let guild_id2;
-    const tmp6Result = event(stateFromStores[15]);
-    if (stateFromStores != null) {
-      guild_id2 = stateFromStores.guild_id;
-    }
-    const tmp6ResultResult = tmp6Result(guild_id2, id, first);
-    _slicedToArray = tmp6ResultResult;
-    const arr4 = event(stateFromStores[16])(id, first);
-    let num6 = 0;
-    const tmp28 = arr4.length >= closure_9 && tmp6ResultResult > closure_9;
-    if (tmp28) {
-      const _Math = Math;
-      num6 = Math.max(tmp6ResultResult - length, 0);
-    }
-    if (cResult[8] === arr4) {
-      let guild_id3;
-      class G {
-        constructor() {
-          let guild_id;
-          const getGuild = GuildStore.getGuild;
-          if (stateFromStores != null) {
-            guild_id = stateFromStores.guild_id;
-          }
-          return null != getGuild(guild_id);
-        }
-      }
-      if (stateFromStores != null) {
-        guild_id3 = stateFromStores.guild_id;
-      }
-      if (tmp33 === guild_id3) {
-        let tmp37;
-        const tmp35 = cResult[12];
-        class G {
-          constructor() {
-            let guild_id;
-            const getGuild = GuildStore.getGuild;
-            if (stateFromStores != null) {
-              guild_id = stateFromStores.guild_id;
-            }
-            return null != getGuild(guild_id);
-          }
-        }
-        if (tmp35 === undefined) {
-          tmp37 = cResult[13];
-        }
-        const tmp8Result = _slicedToArray(event(stateFromStores[18])(tmp37), 2);
-        first2 = tmp8Result[0];
-        ({ loading, error } = tmp8Result[1]);
-        const tmp8Result3 = _slicedToArray(first2.useState(0), 2);
-        class M {
-          constructor() {
-            let id;
-            const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
-            GuildScheduledEventManagerDefault;
-            if (stateFromStores != null) {
-              id = tmp2.id;
-            }
-            let guild_id;
-            if (stateFromStores != null) {
-              guild_id = tmp2.guild_id;
-            }
-            return getGuildEventUsers(id, null, guild_id);
-          }
-        }
-        let closure_5 = tmp8Result3[1];
-        [r10139, GuildStore] = _slicedToArray(first2.useState(0), 2);
-        _slicedToArray(first2.useState(0), 2);
-        const bottom = tmp6(tmp3[19])().bottom;
-        const _Symbol2 = Symbol;
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-          class G {
-            constructor() {
-              let guild_id;
-              const getGuild = GuildStore.getGuild;
-              if (stateFromStores != null) {
-                guild_id = stateFromStores.guild_id;
-              }
-              return null != getGuild(guild_id);
-            }
-          }
-        } else {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-        }
-        const _Symbol3 = Symbol;
-        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-          class G {
-            constructor() {
-              let guild_id;
-              const getGuild = GuildStore.getGuild;
-              if (stateFromStores != null) {
-                guild_id = stateFromStores.guild_id;
-              }
-              return null != getGuild(guild_id);
-            }
-          }
-        } else {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-        }
-        if (cResult[16] === tmp43) {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-        }
-        items2 = [constants.EVENT_INFO];
-        if (stateFromStores1) {
-          class X {
-            constructor(nativeEvent) {
-              GuildStore(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-        }
-        const useSegmentedControlState = tmp2(tmp3[20]).useSegmentedControlState;
-        function ue(arg0) {
-          const tmp = arg0 < items2.length && items2[arg0] === metroImportAll.RSVP_LIST;
-          if (tmp) {
-            first2();
-          }
-          closure_5(arg0);
-        }
-        class S {
-          constructor() {
-            let guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
-            if (guildScheduledEvent == null) {
-              guildScheduledEvent = event;
-            }
-            return guildScheduledEvent;
-          }
-        }
-        cResult[16] = tmp43;
-        cResult[17] = first2;
-        cResult[18] = stateFromStores1;
-        cResult[19] = tmp6ResultResult;
-        cResult[20] = items2;
-        cResult[21] = 0;
-        cResult[22] = tmp43;
-        cResult[23] = ue;
-        cResult[24] = tmp53;
-        cResult[25] = useSegmentedControlState;
-      }
-      if (stateFromStores != null) {
-        class X {
-          constructor(nativeEvent) {
-            GuildStore(nativeEvent.nativeEvent.layout.height);
-          }
-        }
-      }
-      cResult[11] = undefined;
-      if (stateFromStores != null) {
-        class X {
-          constructor(nativeEvent) {
-            GuildStore(nativeEvent.nativeEvent.layout.height);
-          }
-        }
-      }
-      class M {
-        constructor() {
-          let id;
-          const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
-          GuildScheduledEventManagerDefault;
-          if (stateFromStores != null) {
-            id = tmp2.id;
-          }
-          let guild_id;
-          if (stateFromStores != null) {
-            guild_id = tmp2.guild_id;
-          }
-          return getGuildEventUsers(id, null, guild_id);
-        }
-      }
-      cResult[12] = undefined;
-      cResult[13] = M;
-      tmp37 = M;
-    }
-    let tmp30 = arr4;
-    if (num6 > 0) {
-      class X {
-        constructor(nativeEvent) {
-          GuildStore(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-      if (arr4.length > 0) {
-        class X {
-          constructor(nativeEvent) {
-            GuildStore(nativeEvent.nativeEvent.layout.height);
-          }
-        }
-        class G {
-          constructor() {
-            let guild_id;
-            const getGuild = GuildStore.getGuild;
-            if (stateFromStores != null) {
-              guild_id = stateFromStores.guild_id;
-            }
-            return null != getGuild(guild_id);
-          }
-        }
-        const obj3 = { count: num6 };
-        tmp31[HermesBuiltin.arraySpread(tmp31, arr4, 0)] = obj3;
-        tmp30 = tmp31;
-      }
-    }
-    class S {
-      constructor() {
-        let guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
-        if (guildScheduledEvent == null) {
-          guildScheduledEvent = event;
-        }
-        return guildScheduledEvent;
-      }
-    }
-    cResult[8] = arr4;
-    cResult[9] = num6;
-    cResult[10] = tmp30;
-  }
-  class S {
-    constructor() {
-      let guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
-      if (guildScheduledEvent == null) {
-        guildScheduledEvent = event;
-      }
-      return guildScheduledEvent;
-    }
-  }
-  const items3 = [eventId, event];
-  cResult[1] = event;
-  cResult[2] = eventId;
-  cResult[3] = S;
-  cResult[4] = items3;
-  tmp14 = items3;
-  tmp13 = S;
-}) : (function GuildScheduledEventDetailsActionSheet(eventId) {
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventDetailsActionSheet.tsx");
+
+export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -381,7 +56,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f103734 = () => {
+  const f93383 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -409,13 +84,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   const tmp2 = event;
   let tmp3 = stateFromStores;
   let obj = react;
-  const tmp4 = event(stateFromStores[12]);
-  const analyticsLocations = tmp4(event(stateFromStores[13]).GUILD_EVENT_MODAL).analyticsLocations;
+  const tmp4 = event(stateFromStores[10]);
+  const analyticsLocations = tmp4(event(stateFromStores[11]).GUILD_EVENT_MODAL).analyticsLocations;
   let tmp5 = _slicedToArray;
   [first, tmp8] = react.useState(recurrenceId);
   let items = [c7];
   const items1 = [eventId, event];
-  const obj2 = eventId(stateFromStores[14]);
+  const obj2 = eventId(stateFromStores[12]);
   stateFromStores = obj2.useStateFromStores(items, () => {
     let guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
     if (guildScheduledEvent == null) {
@@ -425,7 +100,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   }, items1);
   const items2 = [c6];
   let id;
-  const obj3 = eventId(stateFromStores[14]);
+  const obj3 = eventId(stateFromStores[12]);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => {
     let guild_id;
     const getGuild = GuildStore.getGuild;
@@ -438,13 +113,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     id = stateFromStores.id;
   }
   let guild_id;
-  const tmp2Result = tmp2(tmp3[15]);
+  const tmp2Result = tmp2(tmp3[13]);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
   const tmp2ResultResult = tmp2Result(guild_id, id, first);
   _slicedToArray = tmp2ResultResult;
-  const tmp16 = tmp2(tmp3[16])(id, first);
+  const tmp16 = tmp2(tmp3[14])(id, first);
   react = tmp16;
   const items3 = [tmp16, tmp2ResultResult];
   const memo = obj.useMemo(() => {
@@ -466,14 +141,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[18])(f103734), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93383), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[18])(f103734), 2);
+  tmp5(tmp2(tmp3[15])(f93383), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
-  const bottom = tmp2(tmp3[19])().bottom;
+  const bottom = tmp2(tmp3[17])().bottom;
   const callback = obj.useCallback((nativeEvent) => {
     _undefined3(nativeEvent.nativeEvent.layout.height);
   }, []);
@@ -485,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   if (stateFromStores1) {
     const arr = items4.push(tmp26.RSVP_LIST);
   }
-  eventId(tmp3[20]);
+  eventId(tmp3[18]);
   ({
     pageWidth: 0,
     defaultIndex: tmp21,
@@ -517,12 +192,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
   } else {
     const obj5 = { style: tmp.header, onLayout: callback1, children: items5 };
     const obj6 = { event: stateFromStores };
-    items5 = [closure_10(tmp9(tmp3[21]).GuildEventCardImageHeader, obj6), ];
+    items5 = [closure_10(tmp9(tmp3[19]).GuildEventCardImageHeader, obj6), ];
     let num = 1;
     let tmp36Result = null;
     const tmp34 = closure_11;
     if (items4.length > 1) {
-      const obj7 = { style: tmp.segmentedControl, children: closure_10(eventId(tmp3[22]).SegmentedControl, obj8) };
+      const obj7 = { style: tmp.segmentedControl, children: closure_10(eventId(tmp3[20]).SegmentedControl, obj8) };
       obj8 = { state: tmp29 };
       tmp36Result = tmp36(tmp35, obj7);
     }
@@ -530,21 +205,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSchedul
     const obj9 = { value: analyticsLocations, children: closure_10(BottomSheet, obj10) };
     const tmp32 = tmp21 < items4.length ? items4[tmp21] : items4.EVENT_INFO;
     const tmp34Result = tmp34(c5, obj5);
-    const AnalyticsLocationProvider = tmp9(tmp3[12]).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp9(tmp3[10]).AnalyticsLocationProvider;
     obj10 = { scrollable: true, startExpanded: true, onDismiss: onCloseActionSheet, header: tmp34Result, children: tmp36Result2 };
-    BottomSheet = tmp9(tmp3[26]).BottomSheet;
+    BottomSheet = tmp9(tmp3[21]).BottomSheet;
     if (tmp32 === items4.EVENT_INFO) {
-      const obj11 = { children: closure_10(tmp2(tmp3[24]), obj12) };
-      const BottomSheetScrollView = tmp9(tmp3[23]).BottomSheetScrollView;
+      const obj11 = { children: closure_10(tmp2(tmp3[23]), obj12) };
+      const BottomSheetScrollView = tmp9(tmp3[22]).BottomSheetScrollView;
       obj12 = { guildEvent: stateFromStores, safeBottomPadding: bottom, onCloseActionSheet, onLayout: callback, recurrenceId: first, onRecurrencePress: tmp8 };
       tmp36Result2 = tmp36(BottomSheetScrollView, obj11);
     } else {
       const obj13 = { userListItems: memo, guildId: stateFromStores.guild_id, loading, error, contentHeight: tmp23 - bottom, safeBottomPadding: bottom };
-      tmp36Result2 = tmp36(tmp2(tmp3[25]), obj13);
+      tmp36Result2 = tmp36(tmp2(tmp3[24]), obj13);
     }
     return closure_10(AnalyticsLocationProvider, obj9);
   }
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildScheduledEventDetailsActionSheet.tsx");
-
-export default tmp4;
+};

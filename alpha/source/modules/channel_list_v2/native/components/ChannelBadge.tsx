@@ -1,16 +1,16 @@
-// Module ID: 13643
-// Function ID: 13644
-// Name: components/ChannelBadge
-// Dependencies: [19, 21, 1199, 13642, 5271, 1125, 1901, 2]
+// Module ID: 13790
+// Function ID: 13791
+// Name: ChannelBadge
+// Dependencies: [19, 21, 1188, 13789, 5619, 1114, 1896, 2]
 // Exports: renderChannelBadge
 
-// Module 13643 (components/ChannelBadge)
+// Module 13790 (ChannelBadge)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import NumberUtils from "NumberUtils" /* 1901 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import _mod13642 from "module_13642" /* 13642 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import NumberUtils from "NumberUtils" /* 1896 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import _mod13789 from "module_13789" /* 13789 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ export function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(_mod13642.NewBadge, {});
+    tmp2 = jsx(_mod13789.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {

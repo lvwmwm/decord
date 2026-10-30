@@ -1,16 +1,16 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11220
+// Function ID: 11221
 // Name: useSafeAreaInsetsSharedValue
-// Dependencies: [5086, 1631, 10991, 10978, 1644, 558, 1500, 2]
+// Dependencies: [5090, 1626, 11221, 11208, 1639, 1495, 2]
+// Exports: default
 
-// Module 10990 (useSafeAreaInsetsSharedValue)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
-import AppEntryKey from "AppEntryKey" /* 1644 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10978 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10991 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5086 */;
-import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1631 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11220 (useSafeAreaInsetsSharedValue)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
+import AppEntryKey from "AppEntryKey" /* 1639 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11208 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 11221 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
+import useSafeAreaInsets_mod from "useSafeAreaInsets" /* 1626 */;
 import size from "module_2" /* 2 */;
 
 let makeMutable;
@@ -56,13 +56,9 @@ const tmp7 = (() => {
   getSafeAreaInsetsWorklet.__initData = __initData;
   return getSafeAreaInsetsWorklet;
 })();
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaInsetsSharedValue() {
-  obj = AppEntryKeyContext;
-  return obj[obj.useAppEntryKey(obj)];
-}) : (function useSafeAreaInsetsSharedValue() {
-  obj = AppEntryKeyContext;
-  return obj[obj.useAppEntryKey(obj)];
-});
 const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsetsSharedValue.native.tsx");
 
-export default tmp8;
+export default function useSafeAreaInsetsSharedValue() {
+  obj = AppEntryKeyContext;
+  return obj[obj.useAppEntryKey(obj)];
+};

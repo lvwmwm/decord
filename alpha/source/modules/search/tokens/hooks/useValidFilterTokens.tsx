@@ -1,105 +1,37 @@
-// Module ID: 18585
-// Function ID: 18586
+// Module ID: 18644
+// Function ID: 18645
 // Name: useValidFilterTokens
-// Dependencies: [5060, 558, 576, 13702, 504, 4874, 2]
+// Dependencies: [5064, 504, 13849, 4875, 2]
+// Exports: useValidFilterTokens, useValidOrderedFilterTokens
 
-// Module 18585 (useValidFilterTokens)
-import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 13702 */;
-import StreamerModeStore from "StreamerModeStore" /* 5060 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 18644 (useValidFilterTokens)
+import SearchTokenStreamerModeUtils from "SearchTokenStreamerModeUtils" /* 13849 */;
+import StreamerModeStore from "StreamerModeStore" /* 5064 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValidOrderedFilterTokens(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [StreamerModeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const items = [StreamerModeStore];
-      const obj = SearchTokenStreamerModeUtils;
-      return obj.getValidOrderedFilterTokens(closure_0, items);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresArray(first, tmp6);
-}) : (function useValidOrderedFilterTokens(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");
+
+export function useValidOrderedFilterTokens(searchContext) {
+  _require = searchContext;
   let obj = require("get initialized");
   let items = [StreamerModeStore];
   return obj.useStateFromStoresArray(items, () => {
     const items = [StreamerModeStore];
     const obj = SearchTokenStreamerModeUtils;
-    return obj.getValidOrderedFilterTokens(closure_0, items);
+    return obj.getValidOrderedFilterTokens(searchContext, items);
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useValidFilterTokens(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [StreamerModeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const items = [StreamerModeStore];
-      const obj = SearchTokenStreamerModeUtils;
-      return obj.getValidFilterTokens(closure_0, items);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  return tmpResult.useStateFromStores(first, tmp6, tmp7, require("SetUtils").areSetsEqual);
-}) : (function useValidFilterTokens(arg0) {
-  let closure_0;
-  _require = arg0;
+}
+export function useValidFilterTokens(searchContext) {
+  _require = searchContext;
   let obj = require("get initialized");
   let items = [StreamerModeStore];
-  const items1 = [arg0];
+  const items1 = [searchContext];
   return obj.useStateFromStores(items, () => {
     const items = [StreamerModeStore];
     const obj = SearchTokenStreamerModeUtils;
-    return obj.getValidFilterTokens(closure_0, items);
+    return obj.getValidFilterTokens(searchContext, items);
   }, items1, require("SetUtils").areSetsEqual);
-});
-const result = size.fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");
-
-export const useValidOrderedFilterTokens = tmp2;
-export const useValidFilterTokens = tmp3;
+}

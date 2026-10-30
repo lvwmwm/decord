@@ -1,16 +1,16 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7868
+// Function ID: 7869
 // Name: AdUserActionCreators
-// Dependencies: [5, 7861, 1084, 1264, 584, 7864, 2]
+// Dependencies: [5, 7866, 1072, 1253, 572, 7869, 2]
 // Exports: fetchAdUser
 
-// Module 7863 (AdUserActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import react_nativeDefault from "react-native" /* 7864 */;
+// Module 7868 (AdUserActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import react_nativeDefault from "react-native" /* 7869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdUserStore from "AdUserStore" /* 7861 */;
-import Constants from "Constants" /* 1084 */;
+import AdUserStore from "AdUserStore" /* 7866 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let adUser, duration_ms, duration_ms2, googleAdvertisingId, message;
@@ -34,7 +34,7 @@ let obj = function _fetchAdUser() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -126,7 +126,7 @@ let obj = function _fetchAdUser() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp54) {
           duration_ms = tmp54;
           if (0 === c4) {

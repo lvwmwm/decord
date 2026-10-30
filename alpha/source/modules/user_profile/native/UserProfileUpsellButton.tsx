@@ -1,17 +1,17 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16394
+// Function ID: 16395
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 1084, 1391, 21, 5005, 558, 576, 7313, 7614, 1264, 9738, 1125, 9487, 5281, 2]
+// Dependencies: [19, 1072, 1386, 21, 5009, 7320, 7619, 1253, 5629, 9764, 1114, 9506, 2]
+// Exports: default
 
-// Module 16341 (UserProfileUpsellButton)
+// Module 16394 (UserProfileUpsellButton)
 import Fragment from "Fragment" /* 21 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9738 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9764 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -22,109 +22,15 @@ let metroRequire;
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 const jsx = Fragment.jsx;
 let closure_10 = createStyles.createStyles({ nitroWheel: { marginRight: 2 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileUpsellButton(analyticsObject) {
-  let analyticsLocations;
-  let obj = analyticsObject(576);
-  const cResult = obj.c(16);
-  analyticsObject = analyticsObject.analyticsObject;
-  const label = analyticsObject.label;
-  const tmp4 = closure_10();
-  analyticsLocations = analyticsLocations(7313)().analyticsLocations;
-  let obj2 = analyticsObject(7614);
-  const nitroTrialCtaOverride = obj2.useNitroTrialCtaOverride("user_profile_upsell_button");
-  if (cResult[0] === analyticsLocations) {
-    let tmp6;
-    let tmp7;
-    if (cResult[1] === analyticsObject) {
-      tmp6 = cResult[2];
-      tmp7 = cResult[3];
-    }
-    const effect = react.useEffect(tmp6, tmp7);
-    if (cResult[4] === analyticsLocations) {
-      let tmp10;
-      if (cResult[5] === analyticsObject) {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === label) {
-        let tmp11;
-        let tmp14;
-        if (cResult[8] === nitroTrialCtaOverride) {
-          tmp11 = cResult[9];
-        }
-        if (cResult[10] !== tmp4.nitroWheel) {
-          const tmp16 = jsx(analyticsObject(9487).NitroWheelIcon, { color: "white", size: "sm", style: tmp4.nitroWheel });
-          cResult[10] = tmp4.nitroWheel;
-          cResult[11] = tmp16;
-          tmp14 = tmp16;
-        } else {
-          tmp14 = cResult[11];
-        }
-        if (cResult[12] === tmp10) {
-          if (cResult[13] === tmp11) {
-            let tmp17;
-            if (cResult[14] === tmp14) {
-              tmp17 = cResult[15];
-            }
-            return tmp17;
-          }
-        }
-        const tmp19 = jsx(analyticsObject(5281).Button, { onPress: tmp10, variant: "active", text: tmp11, icon: tmp14 });
-        cResult[12] = tmp10;
-        cResult[13] = tmp11;
-        cResult[14] = tmp14;
-        cResult[15] = tmp19;
-        tmp17 = tmp19;
-      }
-      let stringResult = nitroTrialCtaOverride;
-      if (nitroTrialCtaOverride == null) {
-        stringResult = label;
-      }
-      if (stringResult == null) {
-        const intl = tmp(1125).intl;
-        stringResult = intl.string(tmp(1125).t.pj0XBN);
-      }
-      cResult[7] = label;
-      cResult[8] = nitroTrialCtaOverride;
-      cResult[9] = stringResult;
-      tmp11 = stringResult;
-    }
-    const fn = function u() {
-      let obj3;
-      let obj4;
-      const obj2 = { initialUpsellKey: hasOwnProperty.CUSTOM_PROFILES, analyticsLocation: obj3, analyticsLocations, analyticsProperties: obj4 };
-      obj3 = { page: constants.USER_SETTINGS, section: metroRequire.USER_PROFILE, object: analyticsObject };
-      obj4 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_UPSELL };
-      const obj = PremiumUpsellUtilsDefault;
-      const result = obj.handleShowUpsellAlert(obj2);
-    };
-    cResult[4] = analyticsLocations;
-    cResult[5] = analyticsObject;
-    cResult[6] = fn;
-    tmp10 = fn;
-  }
-  class U {
-    constructor() {
-      let obj3;
-      const obj2 = { type: PremiumUpsellTypes.CUSTOM_PROFILE_SETTINGS_BANNER_BUTTON, location: obj3, location_stack: analyticsLocations };
-      obj3 = { page: constants.USER_SETTINGS, section: metroRequire.USER_PROFILE, object: analyticsObject };
-      const obj = AnalyticsUtilsDefault;
-      obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
-    }
-  }
-  const items = [analyticsLocations, analyticsObject];
-  cResult[0] = analyticsLocations;
-  cResult[1] = analyticsObject;
-  cResult[2] = U;
-  cResult[3] = items;
-  tmp7 = items;
-  tmp6 = U;
-}) : (function UserProfileUpsellButton(analyticsObject) {
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
+
+export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
   const label = analyticsObject.label;
   const tmp = closure_10();
-  analyticsLocations = analyticsLocations(7313)().analyticsLocations;
-  let obj = analyticsObject(7614);
+  analyticsLocations = analyticsLocations(7320)().analyticsLocations;
+  let obj = analyticsObject(7619);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = react.useEffect(() => {
@@ -134,13 +40,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const obj = AnalyticsUtilsDefault;
     obj.track(metroImportDefault.PREMIUM_UPSELL_VIEWED, obj2);
   }, items);
-  const Button = analyticsObject(5281).Button;
+  const Button = analyticsObject(5629).Button;
   if (nitroTrialCtaOverride == null) {
     nitroTrialCtaOverride = label;
   }
   if (nitroTrialCtaOverride == null) {
-    const intl = tmp3(1125).intl;
-    nitroTrialCtaOverride = intl.string(tmp3(1125).t.pj0XBN);
+    const intl = tmp3(1114).intl;
+    nitroTrialCtaOverride = intl.string(tmp3(1114).t.pj0XBN);
   }
   let obj3 = { color: "white", size: "sm", style: tmp.nitroWheel };
   return <Button onPress={function onPress() {
@@ -152,7 +58,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     const obj = PremiumUpsellUtilsDefault;
     const result = obj.handleShowUpsellAlert(obj2);
   }} variant="active" text={nitroTrialCtaOverride} icon={null} />;
-});
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellButton.tsx");
-
-export default tmp3;
+};

@@ -1,33 +1,18 @@
-// Module ID: 12629
-// Function ID: 12630
+// Module ID: 12778
+// Function ID: 12779
 // Name: MobileMarkdownFormatMenuExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useIsMobileMarkdownFormatMenuEnabled
 
-// Module 12629 (MobileMarkdownFormatMenuExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12778 (MobileMarkdownFormatMenuExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-mobile-markdown-format-menu", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileMarkdownFormatMenuEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsMobileMarkdownFormatMenuEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/chat_input/experiments/MobileMarkdownFormatMenuExperiment.tsx");
 
-export const useIsMobileMarkdownFormatMenuEnabled = tmp2;
+export function useIsMobileMarkdownFormatMenuEnabled(ChatInputNativeComponent) {
+  const obj = { location: ChatInputNativeComponent };
+  return closure_0.useConfig(obj).enabled;
+}

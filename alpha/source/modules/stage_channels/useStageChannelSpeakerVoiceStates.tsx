@@ -1,24 +1,24 @@
-// Module ID: 18184
-// Function ID: 18185
+// Module ID: 18244
+// Function ID: 18245
 // Name: useStageChannelSpeakerVoiceStates
-// Dependencies: [32, 4860, 4857, 5755, 6700, 558, 576, 4882, 11, 1385, 6746, 504, 6753, 2]
+// Dependencies: [32, 4861, 4858, 5762, 6707, 504, 4883, 11, 1380, 6753, 6760, 2]
+// Exports: default
 
-// Module 18184 (useStageChannelSpeakerVoiceStates)
+// Module 18244 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FavoritesUtils from "FavoritesUtils" /* 4882 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5755 */;
+import FavoritesUtils from "FavoritesUtils" /* 4883 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FavoriteStore from "FavoriteStore" /* 4860 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6700 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FavoriteStore from "FavoriteStore" /* 4861 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6707 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const GlobalUtils = tmp(1385);
+const GlobalUtils = tmp(1380);
 function transformParticipantToSortedVoiceState(user) {
   let userNick;
   let voiceState;
@@ -27,64 +27,9 @@ function transformParticipantToSortedVoiceState(user) {
   return obj;
 }
 const getComparator = SortedVoiceStateStore.getComparator;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelSpeakerVoiceStates(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [StageChannelParticipantStore, , ];
-    items[1] = ChannelStore;
-    items[2] = FavoriteStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      let channel;
-      let found1;
-      const obj = FavoritesUtils;
-      const tmp3 = closure_0;
-      if (obj.isFavoritesGuildId(closure_0)) {
-        const obj2 = SnowflakeUtilsDefault;
-        const keys = obj2.keys(FavoriteStore.getFavoriteChannels());
-        const mapped = keys.map((item) => channel.getChannel(item));
-        let found = mapped.filter(GlobalUtils.isNotNullish);
-        found1 = found.filter((isGuildStageVoice) => isGuildStageVoice.isGuildStageVoice());
-      } else {
-        found1 = StageChannelParticipantStore.getChannels(tmp3);
-      }
-      const items = [
-        found1.reduce((acc, id) => {
-          const mutableParticipants = closure_1_7.getMutableParticipants(id.id, closure_1_0(closure_1_2[10]).StageChannelParticipantNamedIndex.SPEAKER);
-          id = id.id;
-          const found = mutableParticipants.filter((type) => type.type === closure_1_0(closure_1_2[10]).StageChannelParticipantTypes.VOICE);
-          acc[id] = found.map(closure_1_8);
-          return acc;
-        }, {}),
-        found1.reduce((acc, id) => acc + closure_1_7.getParticipantsVersion(id.id), 0)
-      ];
-      return items;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return _slicedToArray(tmpResult.useStateFromStores(first, tmp8, tmp9, tmp(6753).isVersionEqual), 1)[0];
-}) : (function useStageChannelSpeakerVoiceStates(arg0) {
+const result = size.fileFinishedImporting("modules/stage_channels/useStageChannelSpeakerVoiceStates.tsx");
+
+export default function useStageChannelSpeakerVoiceStates(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("get initialized");
@@ -106,9 +51,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageCh
     }
     const items = [
       found1.reduce((acc, id) => {
-        const mutableParticipants = closure_1_7.getMutableParticipants(id.id, closure_1_0(closure_1_2[10]).StageChannelParticipantNamedIndex.SPEAKER);
+        const mutableParticipants = closure_1_7.getMutableParticipants(id.id, closure_1_0(closure_1_2[9]).StageChannelParticipantNamedIndex.SPEAKER);
         id = id.id;
-        const found = mutableParticipants.filter((type) => type.type === closure_1_0(closure_1_2[10]).StageChannelParticipantTypes.VOICE);
+        const found = mutableParticipants.filter((type) => type.type === closure_1_0(closure_1_2[9]).StageChannelParticipantTypes.VOICE);
         acc[id] = found.map(closure_1_8);
         return acc;
       }, {}),
@@ -116,8 +61,5 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageCh
     ];
     return items;
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-});
-const result = size.fileFinishedImporting("modules/stage_channels/useStageChannelSpeakerVoiceStates.tsx");
-
-export default tmp2;
+};
 export { transformParticipantToSortedVoiceState };

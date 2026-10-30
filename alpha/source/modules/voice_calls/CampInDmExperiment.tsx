@@ -1,11 +1,11 @@
-// Module ID: 19287
-// Function ID: 19288
+// Module ID: 19350
+// Function ID: 19351
 // Name: CampInDmExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 // Exports: shouldDisableCallIdleDisconnect
 
-// Module 19287 (CampInDmExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 19350 (CampInDmExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

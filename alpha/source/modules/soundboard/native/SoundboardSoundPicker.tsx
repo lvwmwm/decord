@@ -1,23 +1,22 @@
-// Module ID: 19036
-// Function ID: 19037
+// Module ID: 19116
+// Function ID: 19117
 // Name: SoundboardSoundPicker
-// Dependencies: [32, 19, 17, 19037, 5752, 1389, 6048, 19038, 1084, 21, 5005, 587, 558, 576, 5086, 573, 19039, 7510, 5630, 7313, 7338, 1272, 6016, 1381, 9918, 5203, 1125, 5271, 7205, 19043, 19053, 19054, 5302, 2]
+// Dependencies: [32, 19, 17, 19117, 5759, 1384, 6055, 19118, 1072, 21, 5009, 575, 5090, 563, 19119, 7518, 5602, 7320, 7345, 6023, 1261, 1376, 9945, 5267, 5209, 5619, 1114, 7212, 19123, 19133, 19134, 2]
 
-// Module 19036 (SoundboardSoundPicker)
+// Module 19116 (SoundboardSoundPicker)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import SoundboardConstants from "SoundboardConstants" /* 6048 */;
-import searchSounds from "searchSounds" /* 7510 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19038 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import SoundboardConstants from "SoundboardConstants" /* 6055 */;
+import searchSounds from "searchSounds" /* 7518 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19037 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import UserStore from "UserStore" /* 1389 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19117 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -36,106 +35,7 @@ const EXPRESSION_FOOTER_HEIGHT = Constants.EXPRESSION_FOOTER_HEIGHT;
 let obj = { title: { marginBottom: 8 }, container: { flex: 1, alignItems: "center" }, header: obj2, body: { flex: 1, width: "100%" } };
 obj2 = { paddingHorizontal: SOUND_ROW_HORIZONTAL_PADDING, padding: nativeDefault.space.PX_8, width: "100%" };
 let closure_14 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SoundboardSoundPicker(channel) {
-  let analyticsSource;
-  let availableSounds;
-  let categories;
-  let currentUser;
-  let initialScrollLocation;
-  let mediaSessionId;
-  let ref;
-  let stateFromStores;
-  let tmp12;
-  let tmp13;
-  let tmp8;
-  let tmp9;
-  let tmp = channel;
-  let obj = channel(ref[13]);
-  const cResult = obj.c(64);
-  channel = channel.channel;
-  ({ analyticsSource, initialScrollLocation } = channel);
-  closure_14();
-  stateFromStores(availableSounds.useState(0), 2);
-  ref = availableSounds.useRef(null);
-  const obj2 = channel(ref[14]);
-  const sharedValue = obj2.useSharedValue(0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function b() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp8 = items;
-    tmp9 = fn;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  const tmpResult = tmp(ref[15]);
-  stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [RTCConnectionStore];
-    class B {
-      constructor() {
-        return mediaSessionId.getMediaSessionId();
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = B;
-    tmp13 = B;
-    tmp12 = items1;
-  } else {
-    tmp12 = cResult[2];
-    tmp13 = cResult[3];
-  }
-  const tmpResult3 = tmp(ref[15]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp12, tmp13);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { filterOutEmptyCurrentGuild: true };
-    cResult[4] = obj3;
-    class B {
-      constructor() {
-        return mediaSessionId.getMediaSessionId();
-      }
-    }
-  }
-  ({ categories, availableSounds } = initialScrollLocation(ref[16])(channel, tmp16));
-  initialScrollLocation(ref[16])(channel, tmp16);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor(searchQuery) {
-        return searchQuery.searchQuery;
-      }
-    }
-    cResult[5] = F;
-    class B {
-      constructor() {
-        return mediaSessionId.getMediaSessionId();
-      }
-    }
-  } else {
-    class F {
-      constructor(searchQuery) {
-        return searchQuery.searchQuery;
-      }
-    }
-  }
-  const tmp19 = closure_7(tmp18);
-  if (cResult[6] === availableSounds) {
-    class F {
-      constructor(searchQuery) {
-        return searchQuery.searchQuery;
-      }
-    }
-  }
-  const tmpResult4 = tmp(ref[17]);
-  cResult[6] = availableSounds;
-  cResult[7] = channel;
-  cResult[8] = stateFromStores;
-  cResult[9] = tmp19;
-  cResult[10] = tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
-  tmpResult4.searchSounds(tmp19, availableSounds, stateFromStores, channel);
-}) : (function SoundboardSoundPicker(channel) {
+const memoResult = react.memo(function SoundboardSoundPicker(channel) {
   let SearchBar;
   let SoundboardSoundPickerList;
   let _undefined;
@@ -167,39 +67,39 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   [tmp3, tmp4] = stateFromStores(availableSounds.useState(0), 2);
   const tmp2 = stateFromStores(availableSounds.useState(0), 2);
   let ref = availableSounds.useRef(null);
-  let obj = channel(ref[14]);
+  let obj = channel(ref[12]);
   const sharedValue = obj.useSharedValue(0);
   const items = [UserStore];
-  const obj2 = channel(ref[15]);
+  const obj2 = channel(ref[13]);
   stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [RTCConnectionStore];
-  const obj3 = channel(ref[15]);
+  const obj3 = channel(ref[13]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => mediaSessionId.getMediaSessionId());
-  ({ categories, availableSounds } = initialScrollLocation(ref[16])(channel, { filterOutEmptyCurrentGuild: true }));
-  initialScrollLocation(ref[16])(channel, { filterOutEmptyCurrentGuild: true });
+  ({ categories, availableSounds } = initialScrollLocation(ref[14])(channel, { filterOutEmptyCurrentGuild: true }));
+  initialScrollLocation(ref[14])(channel, { filterOutEmptyCurrentGuild: true });
   const tmp13 = closure_7((searchQuery) => searchQuery.searchQuery);
   const useState = availableSounds.useState;
-  const obj4 = channel(ref[17]);
+  const obj4 = channel(ref[15]);
   [tmp15, c5] = stateFromStores(useState(obj4.searchSounds(tmp13, availableSounds, stateFromStores, channel)), 2);
   stateFromStores(useState(obj4.searchSounds(tmp13, availableSounds, stateFromStores, channel)), 2);
-  const obj5 = channel(ref[16]);
+  const obj5 = channel(ref[14]);
   const searchCategories = obj5.useSearchCategories(categories, tmp15, tmp13);
-  const insets = initialScrollLocation(ref[18])({ isKeyboardAwareOnAndroid: false }).insets;
+  const insets = initialScrollLocation(ref[16])({ isKeyboardAwareOnAndroid: false }).insets;
   const items2 = [channel, stateFromStores, availableSounds];
-  const tmp17 = initialScrollLocation(ref[19]);
-  const analyticsLocations = tmp17(initialScrollLocation(ref[20]).SOUNDBOARD_ACTION_SHEET).analyticsLocations;
+  const tmp17 = initialScrollLocation(ref[17]);
+  const analyticsLocations = tmp17(initialScrollLocation(ref[18]).SOUNDBOARD_ACTION_SHEET).analyticsLocations;
   const callback = availableSounds.useCallback((arg0) => {
     metroRequire(arg0);
     const obj = searchSounds;
     _undefined(obj.searchSounds(arg0, availableSounds, stateFromStores, channel));
   }, items2);
-  const obj6 = { type: channel(ref[21]).ImpressionTypes.HALFSHEET, name: channel(ref[21]).ImpressionNames.SOUNDBOARD_POPOUT, properties: obj7 };
+  const obj6 = { type: channel(ref[20]).ImpressionTypes.HALFSHEET, name: channel(ref[20]).ImpressionNames.SOUNDBOARD_POPOUT, properties: obj7 };
   obj7 = { source: analyticsSource, guild_id: channel.guild_id, media_session_id: stateFromStores1, type: SoundboardPickerType.FULL_PICKER };
-  const tmp19 = initialScrollLocation(ref[22]);
+  const tmp19 = initialScrollLocation(ref[19]);
   tmp19(obj6);
-  const obj8 = channel(ref[14]);
+  const obj8 = channel(ref[12]);
   const sharedValue1 = obj8.useSharedValue(-1);
-  const obj9 = channel(ref[14]);
+  const obj9 = channel(ref[12]);
   const sharedValue2 = obj9.useSharedValue(false);
   ref = availableSounds.useRef(false);
   const items3 = [initialScrollLocation];
@@ -220,43 +120,43 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }, items3);
   const obj10 = { value: analyticsLocations, children: items4 };
-  const AnalyticsLocationProvider = channel(ref[19]).AnalyticsLocationProvider;
-  const obj11 = channel(ref[23]);
+  const AnalyticsLocationProvider = channel(ref[17]).AnalyticsLocationProvider;
+  const obj11 = channel(ref[21]);
   let isIOSResult = obj11.isIOS();
   if (isIOSResult) {
     const obj12 = { animatedSheetIndex: sharedValue1, portalHostName: "soundboard-footer", followSystemKeyboard: true };
-    isIOSResult = closure_12(tmp11(tmp7[24]), obj12);
+    isIOSResult = closure_12(tmp11(tmp7[22]), obj12);
   }
   items4 = [isIOSResult, ];
   const obj13 = { animatedIndex: sharedValue1, scrollable: true, startExpanded: true, onExpand: callback1, footer: tmp27, children: items6 };
-  BottomSheet = tmp6(tmp7[32]).BottomSheet;
+  BottomSheet = tmp6(tmp7[23]).BottomSheet;
   tmp27 = undefined;
-  const tmp6Result = channel(ref[23]);
+  const tmp6Result = channel(ref[21]);
   if (tmp6Result.isAndroid()) {
-    tmp27 = closure_12(tmp6(tmp7[25]).PortalHost, { name: "soundboard-footer" });
+    tmp27 = closure_12(tmp6(tmp7[24]).PortalHost, { name: "soundboard-footer" });
   }
   const obj14 = { style: tmp.container, children: items5 };
   const obj15 = { accessibilityRole: "header", variant: "heading-lg/bold", style: tmp.title, children: intl.string(channel(ref[26]).t.ABjMWI) };
-  const Text = tmp6(tmp7[27]).Text;
+  const Text = tmp6(tmp7[25]).Text;
   intl = tmp6(tmp7[26]).intl;
   items5 = [closure_12(Text, obj15), , , ];
   const obj16 = { style: tmp.header, children: closure_12(SearchBar, obj17) };
   obj17 = { size: "md", placeholder: intl2.string(channel(ref[26]).t.sKt3xS), onChange: callback };
-  SearchBar = tmp6(tmp7[28]).SearchBar;
+  SearchBar = tmp6(tmp7[27]).SearchBar;
   intl2 = tmp6(tmp7[26]).intl;
   items5[1] = closure_12(c5, obj16);
   const obj18 = { style: tmp.body, children: closure_12(SoundboardSoundPickerList, obj19) };
   obj19 = { listRef: ref, channel, insetBottom: sum + initialScrollLocation(ref[11]).space.PX_16, scrollPosition: sharedValue, setCategoryIndex: tmp4, categories: searchCategories, shouldShowPremiumUpsell: sharedValue2 };
-  SoundboardSoundPickerList = tmp6(tmp7[29]).SoundboardSoundPickerList;
+  SoundboardSoundPickerList = tmp6(tmp7[28]).SoundboardSoundPickerList;
   sum = EXPRESSION_FOOTER_HEIGHT + insets.bottom;
   items5[2] = closure_12(c5, obj18);
-  items5[3] = closure_12(initialScrollLocation(ref[30]), { shouldShow: sharedValue2 });
+  items5[3] = closure_12(initialScrollLocation(ref[29]), { shouldShow: sharedValue2 });
   items6 = [closure_13(c5, obj14), ];
   const obj20 = { guildId: channel.guild_id, listRef: ref, categories, categoryIndex: tmp3 };
-  items6[1] = closure_12(initialScrollLocation(ref[31]), obj20);
+  items6[1] = closure_12(initialScrollLocation(ref[30]), obj20);
   items4[1] = closure_13(BottomSheet, obj13);
   return closure_13(AnalyticsLocationProvider, obj10);
-}));
+});
 const result = size.fileFinishedImporting("modules/soundboard/native/SoundboardSoundPicker.tsx");
 
 export default memoResult;

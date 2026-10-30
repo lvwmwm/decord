@@ -1,118 +1,35 @@
-// Module ID: 19271
-// Function ID: 19272
+// Module ID: 19330
+// Function ID: 19331
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 6721, 7941, 6716, 5271, 5281, 7281, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 6728, 7286, 5619, 5629, 7947, 6723, 2]
+// Exports: default
 
-// Module 19271 (AgeGateVerify)
+// Module 19330 (AgeGateVerify)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6716 */;
-import AgeGateUtils from "AgeGateUtils" /* 6721 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7941 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6723 */;
+import AgeGateUtils from "AgeGateUtils" /* 6728 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7947 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
+let tmp2;
+const components_Button_Button = tmp2(5629);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, header: { textAlign: "center" }, body: { textAlign: "center" }, buttonWrapper: { width: "100%" } };
 obj2 = { padding: nativeDefault.space.PX_16, flex: 1, alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateVerify(source) {
-  let first;
-  let items;
-  let obj5;
-  let verifyAgreementButtonText;
-  let verifyGateDescription;
-  let verifyTitle;
-  let obj = react2;
-  const cResult = obj.c(15);
-  source = source.source;
-  const tmp4 = closure_6();
-  let obj2 = AgeGateUtils;
-  const ageGateVerifyContent = obj2.useAgeGateVerifyContent(source);
-  ({ verifyAgreementButtonText, verifyGateDescription, verifyTitle } = ageGateVerifyContent);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleConfirm() {
-      const obj = AgeVerificationActionCreatorsDefault;
-      const obj2 = { entryPoint: AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
-      const result = obj.showAgeVerificationGetStartedModal(obj2);
-    }
-    cResult[0] = handleConfirm;
-    first = handleConfirm;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === tmp4.header) {
-    let tmp7;
-    if (cResult[2] === verifyTitle) {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] === tmp4.body) {
-      let tmp9;
-      if (cResult[5] === verifyGateDescription) {
-        tmp9 = cResult[6];
-      }
-      if (cResult[7] === tmp4.buttonWrapper) {
-        let tmp12;
-        if (cResult[8] === verifyAgreementButtonText) {
-          tmp12 = cResult[9];
-        }
-        if (cResult[10] === tmp4.container) {
-          if (cResult[11] === tmp7) {
-            if (cResult[12] === tmp9) {
-              let tmp17;
-              if (cResult[13] === tmp12) {
-                tmp17 = cResult[14];
-              }
-              return tmp17;
-            }
-          }
-        }
-        const obj3 = { top: true, style: tmp4.container, children: items };
-        items = [tmp7, tmp9, tmp12];
-        const tmp19 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj3);
-        cResult[10] = tmp4.container;
-        cResult[11] = tmp7;
-        cResult[12] = tmp9;
-        cResult[13] = tmp12;
-        cResult[14] = tmp19;
-        tmp17 = tmp19;
-      }
-      let tmp14 = null != verifyAgreementButtonText;
-      if (tmp14) {
-        const obj4 = { style: tmp4.buttonWrapper, children: React3(components_Button_Button.Button, obj5) };
-        obj5 = { text: verifyAgreementButtonText, onPress: first, grow: true };
-        tmp14 = React3(View, obj4);
-      }
-      cResult[7] = tmp4.buttonWrapper;
-      cResult[8] = verifyAgreementButtonText;
-      cResult[9] = tmp14;
-      tmp12 = tmp14;
-    }
-    const obj6 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
-    const tmp11 = React3(Text_Text.Text, obj6);
-    cResult[4] = tmp4.body;
-    cResult[5] = verifyGateDescription;
-    cResult[6] = tmp11;
-    tmp9 = tmp11;
-  }
-  const obj7 = { style: tmp4.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: verifyTitle };
-  const tmp8 = React3(Text_Text.Heading, obj7);
-  cResult[1] = tmp4.header;
-  cResult[2] = verifyTitle;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (function AgeGateVerify(source) {
+let result = size.fileFinishedImporting("modules/age_gate/native/components/AgeGateVerify.tsx");
+
+export default function AgeGateVerify(source) {
   let items;
   let obj6;
   let verifyAgreementButtonText;
@@ -147,7 +64,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AgeGateVerif
   }
   items[2] = tmp6Result;
   return tmp5(SafeAreaPaddingView, obj2);
-});
-let result = size.fileFinishedImporting("modules/age_gate/native/components/AgeGateVerify.tsx");
-
-export default tmp4;
+};

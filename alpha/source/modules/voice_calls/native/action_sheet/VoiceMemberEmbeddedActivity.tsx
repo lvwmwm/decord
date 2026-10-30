@@ -1,24 +1,23 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15155
+// Function ID: 15156
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 4856, 4857, 1389, 1203, 5303, 21, 1199, 5005, 587, 558, 576, 7317, 1385, 504, 4926, 11551, 1497, 8566, 11554, 1125, 5707, 5271, 11601, 5282, 6968, 2]
-// Exports: calculateActivityRowHeight
+// Dependencies: [32, 19, 17, 4857, 4858, 1384, 1192, 5268, 21, 1188, 5009, 575, 7324, 1380, 504, 4930, 11752, 1492, 8600, 11755, 6974, 1114, 5712, 5619, 11802, 5630, 2]
+// Exports: calculateActivityRowHeight, default
 
-// Module 15115 (VoiceMemberEmbeddedActivity)
+// Module 15155 (VoiceMemberEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import FormConstants from "FormConstants" /* 1203 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11554 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import FormConstants from "FormConstants" /* 1192 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11755 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import UserStore from "UserStore" /* 1389 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let applicationId;
@@ -47,213 +46,10 @@ obj3 = { height: native.AVATAR_SIZE_MAP[XSMALL] };
 obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 let closure_14 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberEmbeddedActivity(onItemPress) {
-  let application;
-  let channelId;
-  let embeddedActivity;
-  let embeddedActivityJoinability;
-  let embeddedActivityLocationGuildId;
-  let handleCanJoin;
-  let stateFromStores;
-  let tmp11;
-  let tmp13;
-  let tmp15;
-  let tmp23;
-  let tmp5;
-  let tmp = channelId;
-  let tmp2 = application;
-  let obj = channelId(application[13]);
-  const cResult = obj.c(97);
-  ({ embeddedActivity, channelId } = onItemPress);
-  onItemPress = onItemPress.onItemPress;
-  let tmp4 = closure_14();
-  if (cResult[0] !== embeddedActivity.applicationId) {
-    const items = [embeddedActivity.applicationId];
-    cResult[0] = embeddedActivity.applicationId;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  application = stateFromStores(onItemPress(tmp2[14])(tmp5), 1)[0];
-  const tmp6 = onItemPress;
-  if (cResult[2] !== embeddedActivity.userIds) {
-    const _Array = Array;
-    const arr = Array.from(embeddedActivity.userIds);
-    const mapped = arr.map((item) => handleCanJoin.getUser(item));
-    let found = mapped.filter(tmp(tmp2[15]).isNotNullish);
-    cResult[2] = embeddedActivity.userIds;
-    cResult[3] = found;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [embeddedActivityJoinability];
-    cResult[4] = items1;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] !== channelId) {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    cResult[5] = channelId;
-    cResult[6] = E;
-    tmp13 = E;
-  } else {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[16]);
-  stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    const items2 = [embeddedActivityLocationGuildId];
-    cResult[7] = items2;
-    tmp15 = items2;
-  } else {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  const tmp16 = cResult[8];
-  if (application != null) {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  if (tmp16 === undefined) {
-    let tmp18;
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    const tmpResult3 = tmp(tmp2[16]);
-    const stateFromStores1 = tmpResult3.useStateFromStores(tmp15, T);
-    if (cResult[11] !== embeddedActivity.location) {
-      class E {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-      embeddedActivityLocationGuildId = obj4.getEmbeddedActivityLocationGuildId(embeddedActivity.location);
-      cResult[11] = embeddedActivity.location;
-      cResult[12] = embeddedActivityLocationGuildId;
-      tmp18 = embeddedActivityLocationGuildId;
-    } else {
-      class E {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-    }
-    embeddedActivityLocationGuildId = tmp18;
-    const _Symbol = Symbol;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-      const currentUser = UserStore.getCurrentUser();
-      if (currentUser != null) {
-        class E {
-          constructor() {
-            return ChannelStore.getChannel(channelId);
-          }
-        }
-      }
-      cResult[13] = undefined;
-    } else {
-      class E {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-    }
-    if (cResult[14] === application) {
-      class E {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-      const tmpResult4 = tmp(tmp2[18]);
-      embeddedActivityJoinability = tmpResult4.useEmbeddedActivityJoinability(tmp23);
-      const _Math = Math;
-      const bound = Math.min(ACTION_SHEET_MAX_WIDTH, tmp6(tmp2[19])().width);
-      if (cResult[17] !== bound) {
-        class E {
-          constructor() {
-            return ChannelStore.getChannel(channelId);
-          }
-        }
-        const sum = 40 + (bound - 32) / c13 + 12 + 16;
-        cResult[17] = bound;
-        cResult[18] = sum;
-      } else {
-        class E {
-          constructor() {
-            return ChannelStore.getChannel(channelId);
-          }
-        }
-      }
-      if (null != application) {
-        class E {
-          constructor() {
-            return ChannelStore.getChannel(channelId);
-          }
-        }
-      }
-      return null;
-    }
-    let obj2 = { userId: tmp20, channelId, application };
-    cResult[14] = application;
-    cResult[15] = channelId;
-    cResult[16] = obj2;
-    tmp23 = obj2;
-  }
-  if (application != null) {
-    class E {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  class T {
-    constructor() {
-      found = null;
-      if (null != closure_3) {
-        tmp3 = closure_5;
-        embeddedActivitiesForChannel = closure_5.getEmbeddedActivitiesForChannel(tmp.id);
-        found = embeddedActivitiesForChannel.find((applicationId) => {
-          id = undefined;
-          applicationId = applicationId.applicationId;
-          if (id != null) {
-            id = id.id;
-          }
-          return applicationId === id;
-        });
-      }
-      return found;
-    }
-  }
-  cResult[8] = undefined;
-  cResult[9] = stateFromStores;
-  cResult[10] = T;
-}) : (function VoiceMemberEmbeddedActivity(onItemPress) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberEmbeddedActivity.tsx");
+
+export default function VoiceMemberEmbeddedActivity(onItemPress) {
   let channelId;
   let closure_3;
   let embeddedActivity;
@@ -283,16 +79,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
   let tmp2 = onItemPress;
   let tmp3 = application;
   const items = [embeddedActivity.applicationId];
-  application = _slicedToArray(onItemPress(application[14])(items), 1)[0];
+  application = _slicedToArray(onItemPress(application[12])(items), 1)[0];
   const arr = Array.from(embeddedActivity.userIds);
   const mapped = arr.map((item) => handleCanJoin.getUser(item));
   let tmp4 = channelId;
-  let found = mapped.filter(channelId(application[15]).isNotNullish);
-  let obj2 = channelId(application[16]);
+  let found = mapped.filter(channelId(application[13]).isNotNullish);
+  let obj2 = channelId(application[14]);
   const items1 = [embeddedActivityJoinability];
   _slicedToArray = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId));
   const items2 = [guildId];
-  const obj3 = channelId(application[16]);
+  const obj3 = channelId(application[14]);
   const stateFromStores = obj3.useStateFromStores(items2, () => {
     let found = null;
     if (null != closure_3) {
@@ -308,29 +104,29 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
     }
     return found;
   });
-  const obj4 = channelId(application[17]);
+  const obj4 = channelId(application[15]);
   guildId = obj4.getEmbeddedActivityLocationGuildId(embeddedActivity.location);
-  const useEmbeddedActivityJoinability = channelId(application[18]).useEmbeddedActivityJoinability;
-  channelId(application[18]);
+  const useEmbeddedActivityJoinability = channelId(application[16]).useEmbeddedActivityJoinability;
+  channelId(application[16]);
   const currentUser = handleCanJoin.getCurrentUser();
   let id;
   if (currentUser != null) {
     id = currentUser.id;
   }
   embeddedActivityJoinability = useEmbeddedActivityJoinability({ userId: id, channelId, application });
-  const bound = Math.min(ACTION_SHEET_MAX_WIDTH, tmp2(tmp3[19])().width);
+  const bound = Math.min(ACTION_SHEET_MAX_WIDTH, tmp2(tmp3[17])().width);
   if (null != application) {
     if (null != stateFromStores) {
       let iconSource = application.getIconSource(32);
       if (iconSource == null) {
-        iconSource = tmp2(tmp3[20]);
+        iconSource = tmp2(tmp3[18]);
       }
       const name = application.name;
       const diff = bound - 32;
       const sum = 40 + tmp12 / tmp13 + 12 + 16;
       let obj = {
         accessibilityRole: "button",
-        accessibilityLabel: intl.formatToPlainString(tmp4(tmp3[22]).t.Yw5Hr2, obj5),
+        accessibilityLabel: intl.formatToPlainString(tmp4(tmp3[21]).t.Yw5Hr2, obj5),
         androidRippleConfig,
         onPress() {
               const obj = { embeddedActivityJoinability, handleCanJoin };
@@ -338,8 +134,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
             },
         children: closure_10(stateFromStores, obj6)
       };
-      const PressableOpacity = tmp4(tmp3[27]).PressableOpacity;
-      intl = tmp4(tmp3[22]).intl;
+      const PressableOpacity = tmp4(tmp3[20]).PressableOpacity;
+      intl = tmp4(tmp3[21]).intl;
       obj6 = { style: items3, children: items7 };
       items3 = [tmp.voiceMemberItemRow, ];
       obj5 = { applicationName: name };
@@ -348,10 +144,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
       const obj8 = { style: items4, children: items5 };
       items4 = [, ];
       ({ innerRow: arr7[0], activityDetails: arr7[1] } = tmp);
-      const obj9 = { style: iconSource === tmp2(tmp3[20]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
-      const tmp2Result = tmp2(tmp3[23]);
+      const obj9 = { style: iconSource === tmp2(tmp3[18]) ? tmp.appIconPlaceholder : tmp.appIcon, source: iconSource };
+      const tmp2Result = tmp2(tmp3[22]);
       items5 = [closure_9(tmp2Result, obj9), , ];
-      const obj10 = { style: tmp.centerGroup, children: closure_9(tmp4(tmp3[24]).Text, obj11) };
+      const obj10 = { style: tmp.centerGroup, children: closure_9(tmp4(tmp3[23]).Text, obj11) };
       obj11 = { style: tmp.applicationName, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
       items5[1] = closure_9(stateFromStores, obj10);
       const items6 = [tmp.overflow, ];
@@ -385,10 +181,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
       items8[1] = obj14;
       const obj15 = { application, dimensionsStyle: size, borderRadius: 8, resizeMode: "contain" };
       size = { position: "absolute", width: diff, height: result };
-      items9 = [closure_9(tmp2(tmp3[25]), obj15), ];
+      items9 = [closure_9(tmp2(tmp3[24]), obj15), ];
       const obj16 = { style: tmp.joinButtonContainer, children: tmp17Result };
       tmp17Result = null;
-      if (embeddedActivityJoinability === tmp4(tmp3[18]).EmbeddedActivityJoinability.CAN_JOIN) {
+      if (embeddedActivityJoinability === tmp4(tmp3[16]).EmbeddedActivityJoinability.CAN_JOIN) {
         ({ joinButton: obj19.style, joinButtonPill: obj19.pillStyle } = tmp);
         const obj17 = {
           onPress() {
@@ -397,13 +193,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
                 },
           style: null,
           pillStyle: null,
-          text: intl2.string(tmp4(tmp3[22]).t["4i2vj+"]),
+          text: intl2.string(tmp4(tmp3[21]).t["4i2vj+"]),
           variant: "secondary",
           size: "sm",
           shrink: true
         };
-        const BaseTextButton = tmp4(tmp3[26]).BaseTextButton;
-        intl2 = tmp4(tmp3[22]).intl;
+        const BaseTextButton = tmp4(tmp3[25]).BaseTextButton;
+        intl2 = tmp4(tmp3[21]).intl;
         tmp17Result = tmp17(BaseTextButton, obj17);
       }
       items9[1] = closure_9(stateFromStores, obj16);
@@ -412,12 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceMemberE
     }
   }
   return null;
-});
-function calculateActivityRowHeight(bound) {
-  return 40 + (bound - 32) / c13 + 12 + 16;
+};
+export function calculateActivityRowHeight(arg0) {
+  return 40 + (arg0 - 32) / c13 + 12 + 16;
 }
-size = size_mod;
-let result = size.fileFinishedImporting("modules/voice_calls/native/action_sheet/VoiceMemberEmbeddedActivity.tsx");
-
-export default tmp6;
-export { calculateActivityRowHeight };

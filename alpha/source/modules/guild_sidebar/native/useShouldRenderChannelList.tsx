@@ -1,132 +1,24 @@
-// Module ID: 18207
-// Function ID: 18208
+// Module ID: 18267
+// Function ID: 18268
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7643, 6555, 1084, 558, 576, 5187, 5188, 1120, 2]
+// Dependencies: [32, 19, 7648, 6562, 1072, 5193, 5194, 1109, 2]
+// Exports: useShouldRenderChannelList
 
-// Module 18207 (useShouldRenderChannelList)
-import Constants from "Constants" /* 1084 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+// Module 18267 (useShouldRenderChannelList)
+import Constants from "Constants" /* 1072 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CacheStore from "CacheStore" /* 7643 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CacheStore from "CacheStore" /* 7648 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
 import size from "module_2" /* 2 */;
-
-let addListenerResult, flag, flag2, str, str2, tmp10, tmp11, tmp12, tmp13, tmp6, tmp8;
 
 const ComponentActions = Constants.ComponentActions;
 let c7 = false;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRenderChannelList() {
-  let closure_1;
-  let first;
-  let tmp4;
-  let tmp5;
-  let obj = first(576);
-  const cResult = obj.c(3);
-  let obj2 = react;
-  [first, dependencyMap] = react.useState(c7);
-  if (cResult[0] !== first) {
-    class R {
-      constructor() {
-        tmp = allowRender;
-        if (tmp) {
-          return;
-        } else {
-          allowRender = function allowRender() { /* body not rendered: F156865 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F156866 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F156867 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F156868 */ };
-          obj = closure_1_5;
-          result = closure_1_5.addReactChangeListener(checkGatewayConnection);
-          obj2 = closure_1_4;
-          result1 = closure_1_4.addReactChangeListener(checkCacheLoadStatus);
-          tmp4 = closure_0;
-          tmp5 = closure_1;
-          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
-          tmp6 = closure_1_6;
-          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-          obj3 = closure_0(closure_1[8]);
-          rootNavigationRef = obj3.getRootNavigationRef();
-          tmp8 = null;
-          if (rootNavigationRef != null) {
-            str = "state";
-            addListenerResult = rootNavigationRef.addListener("state", checkNavigationState);
-          }
-          if (obj.isConnected()) {
-            flag = true;
-            c7 = true;
-            tmp10 = checkGatewayConnection;
-            tmp11 = checkGatewayConnection(true);
-          }
-          str2 = "cache-loaded";
-          if ("cache-loaded" === obj2.getLazyCacheStatus()) {
-            flag2 = true;
-            c7 = true;
-            tmp12 = checkGatewayConnection;
-            tmp13 = checkGatewayConnection(true);
-          }
-          return function() { /* body not rendered: F156869 */ };
-        }
-      }
-    }
-    const items = [first];
-    cResult[0] = first;
-    cResult[1] = R;
-    cResult[2] = items;
-    tmp5 = items;
-    tmp4 = R;
-  } else {
-    class R {
-      constructor() {
-        tmp = allowRender;
-        if (tmp) {
-          return;
-        } else {
-          allowRender = function allowRender() { /* body not rendered: F156865 */ };
-          checkGatewayConnection = function checkGatewayConnection() { /* body not rendered: F156866 */ };
-          checkCacheLoadStatus = function checkCacheLoadStatus() { /* body not rendered: F156867 */ };
-          checkNavigationState = function checkNavigationState() { /* body not rendered: F156868 */ };
-          obj = closure_1_5;
-          result = closure_1_5.addReactChangeListener(checkGatewayConnection);
-          obj2 = closure_1_4;
-          result1 = closure_1_4.addReactChangeListener(checkCacheLoadStatus);
-          tmp4 = closure_0;
-          tmp5 = closure_1;
-          ComponentDispatch = closure_0(closure_1[9]).ComponentDispatch;
-          tmp6 = closure_1_6;
-          subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-          obj3 = closure_0(closure_1[8]);
-          rootNavigationRef = obj3.getRootNavigationRef();
-          tmp8 = null;
-          if (rootNavigationRef != null) {
-            str = "state";
-            addListenerResult = rootNavigationRef.addListener("state", checkNavigationState);
-          }
-          if (obj.isConnected()) {
-            flag = true;
-            c7 = true;
-            tmp10 = checkGatewayConnection;
-            tmp11 = checkGatewayConnection(true);
-          }
-          str2 = "cache-loaded";
-          if ("cache-loaded" === obj2.getLazyCacheStatus()) {
-            flag2 = true;
-            c7 = true;
-            tmp12 = checkGatewayConnection;
-            tmp13 = checkGatewayConnection(true);
-          }
-          return function() { /* body not rendered: F156869 */ };
-        }
-      }
-    }
-    tmp5 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-  return first;
-}) : (function useShouldRenderChannelList() {
+let result = size.fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
+
+export function useShouldRenderChannelList() {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(c7);
@@ -149,9 +41,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
       }
     }
     function checkNavigationState() {
-      const coerceGuildsRoute = first(checkGatewayConnection[7]).coerceGuildsRoute;
-      first(checkGatewayConnection[7]);
-      const obj = first(checkGatewayConnection[8]);
+      const coerceGuildsRoute = first(checkGatewayConnection[5]).coerceGuildsRoute;
+      first(checkGatewayConnection[5]);
+      const obj = first(checkGatewayConnection[6]);
       const rootNavigationRef = obj.getRootNavigationRef();
       let currentRoute;
       if (rootNavigationRef != null) {
@@ -167,9 +59,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
       let obj = GatewayConnectionStore;
       let result = GatewayConnectionStore.addReactChangeListener(checkGatewayConnection);
       let result1 = CacheStore.addReactChangeListener(checkCacheLoadStatus);
-      let ComponentDispatch = first(checkGatewayConnection[9]).ComponentDispatch;
+      let ComponentDispatch = first(checkGatewayConnection[7]).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      const obj3 = first(checkGatewayConnection[8]);
+      const obj3 = first(checkGatewayConnection[6]);
       let rootNavigationRef = obj3.getRootNavigationRef();
       const obj2 = CacheStore;
       if (rootNavigationRef != null) {
@@ -197,7 +89,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldR
     }
   }, items);
   return first;
-});
-let result = size.fileFinishedImporting("modules/guild_sidebar/native/useShouldRenderChannelList.tsx");
-
-export const useShouldRenderChannelList = tmp2;
+}

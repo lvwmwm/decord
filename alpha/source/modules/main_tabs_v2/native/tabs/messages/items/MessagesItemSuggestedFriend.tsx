@@ -1,28 +1,27 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 18043
+// Function ID: 18044
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 4947, 1084, 21, 5005, 587, 11152, 8708, 2000, 573, 1125, 5059, 17983, 17984, 1264, 6968, 1199, 5271, 5281, 5718, 558, 576, 7280, 14340, 2]
+// Dependencies: [32, 19, 17, 4951, 1072, 21, 5009, 575, 11028, 8742, 1995, 563, 1114, 5063, 18044, 18045, 1253, 6974, 1188, 5619, 5629, 5724, 7288, 14370, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 17982 (MessagesItemSuggestedFriend)
+// Module 18043 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
-import LegendList from "LegendList" /* 14340 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 17983 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17984 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7288 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
+import LegendList from "LegendList" /* 14370 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 18044 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import Constants from "Constants" /* 1084 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -33,8 +32,6 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let tmp;
-const defaultMVCPConfig = tmp(7280);
 let react = react_mod;
 const View = react_native.View;
 ({ AnalyticEvents: metroImportDefault, RelationshipTypes: metroImportAll } = Constants);
@@ -72,7 +69,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(8708, dependencyMap.paths);
+    const promise = asyncRequire(8742, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);
@@ -162,31 +159,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
   items5[2] = tmp9Result;
   return closure_10(PressableHighlight, obj3);
 });
-let memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const memo2 = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendFast(arg0) {
-  let tmp3;
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp3, tmp4] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[0] === tmp3) {
-    let tmp5;
-    if (cResult[1] === arg0) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  const obj2 = { addedPressed: tmp3, setAddedPressed: tmp4 };
-  const merged = Object.assign(arg0);
-  const tmp7 = React4(closure_12, obj2);
-  cResult[0] = tmp3;
-  cResult[1] = arg0;
-  cResult[2] = tmp7;
-  tmp5 = tmp7;
-}) : (function MessagesItemSuggestedFriendFast(arg0) {
+const memoResult = react.memo(function MessagesItemSuggestedFriendFast(arg0) {
   let tmp2;
   let tmp3;
   const obj = { addedPressed: tmp2, setAddedPressed: tmp3 };
@@ -194,44 +167,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   _slicedToArray(react.useState(false), 2);
   const merged = Object.assign(arg0);
   return React4(closure_12, obj);
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-const memo3 = react.memo;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendFlash(suggestedFriend) {
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] !== suggestedFriend.suggestedFriend.user.id) {
-    const items = [suggestedFriend.suggestedFriend.user.id];
-    cResult[0] = suggestedFriend.suggestedFriend.user.id;
-    cResult[1] = items;
-    tmp4 = items;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = defaultMVCPConfig;
-  [tmp6, tmp7] = tmpResult.useRecyclingState(false, tmp4);
-  _slicedToArray(tmpResult.useRecyclingState(false, tmp4), 2);
-  if (cResult[2] === tmp6) {
-    if (cResult[3] === suggestedFriend) {
-      let tmp8;
-      if (cResult[4] === tmp7) {
-        tmp8 = cResult[5];
-      }
-      return tmp8;
-    }
-  }
-  const obj2 = { addedPressed: tmp6, setAddedPressed: tmp7 };
-  const merged = Object.assign(suggestedFriend);
-  const tmp10 = React4(closure_12, obj2);
-  cResult[2] = tmp6;
-  cResult[3] = suggestedFriend;
-  cResult[4] = tmp7;
-  cResult[5] = tmp10;
-  tmp8 = tmp10;
-}) : (function MessagesItemSuggestedFriendFlash(suggestedFriend) {
+});
+const memoResult1 = react.memo(function MessagesItemSuggestedFriendFlash(suggestedFriend) {
   let tmp2;
   let tmp3;
   const items = [suggestedFriend.suggestedFriend.user.id];
@@ -241,34 +178,8 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   _slicedToArray(obj.useRecyclingState(false, items), 2);
   const merged = Object.assign(suggestedFriend);
   return React4(closure_12, obj2);
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendLegend(arg0) {
-  let tmp3;
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(4);
-  const obj2 = LegendList;
-  [tmp3, tmp4] = obj2.useRecyclingState(false);
-  _slicedToArray(obj2.useRecyclingState(false), 2);
-  if (cResult[0] === tmp3) {
-    if (cResult[1] === arg0) {
-      let tmp5;
-      if (cResult[2] === tmp4) {
-        tmp5 = cResult[3];
-      }
-      return tmp5;
-    }
-  }
-  const obj3 = { addedPressed: tmp3, setAddedPressed: tmp4 };
-  const merged = Object.assign(arg0);
-  const tmp7 = React4(closure_12, obj3);
-  cResult[0] = tmp3;
-  cResult[1] = arg0;
-  cResult[2] = tmp4;
-  cResult[3] = tmp7;
-  tmp5 = tmp7;
-}) : (function MessagesItemSuggestedFriendLegend(arg0) {
+});
+const memoResult2 = react.memo(function MessagesItemSuggestedFriendLegend(arg0) {
   let tmp2;
   let tmp3;
   const obj = LegendList;
@@ -277,7 +188,7 @@ const memo3Result = memo3(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   _slicedToArray(obj.useRecyclingState(false), 2);
   const merged = Object.assign(arg0);
   return React4(closure_12, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriend.tsx");
 
 export function getMessagesItemSuggestedFriendHeight(fontScale) {
@@ -288,5 +199,5 @@ export function getMessagesItemSuggestedFriendHeight(fontScale) {
   return sum + nativeDefault.space.PX_16;
 }
 export const MessagesItemSuggestedFriendFast = memoResult;
-export const MessagesItemSuggestedFriendFlash = memo2Result;
-export const MessagesItemSuggestedFriendLegend = memo3Result;
+export const MessagesItemSuggestedFriendFlash = memoResult1;
+export const MessagesItemSuggestedFriendLegend = memoResult2;

@@ -1,16 +1,16 @@
-// Module ID: 8952
-// Function ID: 8953
+// Module ID: 8985
+// Function ID: 8986
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5290, 5281, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5637, 5629, 2]
+// Exports: TwinButtons
 
-// Module 8952 (TwinButtons)
+// Module 8985 (TwinButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
+import nativeDefault from "native" /* 575 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,57 +28,9 @@ let closure_6 = createStyles.createStyles((arg0) => {
   space = nativeDefault.space;
   return { container, button: { flex: 1 } };
 });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwinButtons(children) {
-  let button;
-  let tmp5;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  children = children.children;
-  const obj2 = require("useFontScale");
-  const tmp2 = closure_6(obj2.useFontScale() > 1.2);
-  _require = tmp2;
-  if (cResult[0] === children) {
-    let tmp4;
-    if (cResult[1] === tmp2.button) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[5] === tmp2.container) {
-      let tmp7;
-      if (cResult[6] === tmp4) {
-        tmp7 = cResult[7];
-      }
-      return tmp7;
-    }
-    const tmp10 = <View style={tmp3}>{tmp4}</View>;
-    cResult[5] = tmp2.container;
-    cResult[6] = tmp4;
-    cResult[7] = tmp10;
-    tmp7 = tmp10;
-  }
-  if (cResult[3] !== tmp2.button) {
-    const fn = function s(type) {
-      let tmp = null;
-      if (react.isValidElement(type)) {
-        tmp = null;
-        if (type.type === components_Button_Button.Button) {
-          tmp = <View style={button.button}>{arg0}</View>;
-        }
-      }
-      return tmp;
-    };
-    cResult[3] = tmp2.button;
-    cResult[4] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[4];
-  }
-  const Children = react.Children;
-  const mapped = Children.map(children, tmp5);
-  cResult[0] = children;
-  cResult[1] = tmp2.button;
-  cResult[2] = mapped;
-  tmp4 = mapped;
-}) : (function TwinButtons(children) {
+const result = size.fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
+
+export function TwinButtons(children) {
   let button;
   _require = undefined;
   children = children.children;
@@ -96,7 +48,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwinButtons(
     }
     return tmp;
   })}</View>;
-});
-const result = size.fileFinishedImporting("design/components/experimental/Button/native/TwinButtons.native.tsx");
-
-export const TwinButtons = tmp2;
+}

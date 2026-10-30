@@ -1,12 +1,12 @@
-// Module ID: 1451
-// Function ID: 1452
+// Module ID: 1446
+// Function ID: 1447
 // Name: AttachmentImageLadderExperiment
-// Dependencies: [1452, 1453, 2]
+// Dependencies: [1447, 1448, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1451 (AttachmentImageLadderExperiment)
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1452 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 1446 (AttachmentImageLadderExperiment)
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1447 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

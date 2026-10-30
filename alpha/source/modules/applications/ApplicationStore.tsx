@@ -1,13 +1,13 @@
-// Module ID: 2043
-// Function ID: 2044
+// Module ID: 2040
+// Function ID: 2041
 // Name: ApplicationStore
-// Dependencies: [32, 2022, 504, 584, 2]
+// Dependencies: [32, 2017, 504, 572, 2]
 
-// Module 2043 (ApplicationStore)
+// Module 2040 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
+import ApplicationRecord from "ApplicationRecord" /* 2017 */;
 import size from "module_2" /* 2 */;
 
 let attachments;
@@ -231,8 +231,8 @@ class ApplicationStore extends PersistedStore {
   isHydrated(applicationId) {
     return set.has(applicationId);
   }
-  didFetchingApplicationFail(application_id) {
-    return false === map5.get(application_id);
+  didFetchingApplicationFail(applicationId) {
+    return false === map5.get(applicationId);
   }
   getFetchingOrFailedFetchingIds() {
     return Array.from(map5.keys());

@@ -1,10 +1,10 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9693
+// Function ID: 9694
 // Name: QuestHomeHeroCta
 // Dependencies: [2]
 // Exports: questHomeHeroCtaFromServer
 
-// Module 9668 (QuestHomeHeroCta)
+// Module 9693 (QuestHomeHeroCta)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/QuestHomeHeroCta.tsx");

@@ -1,138 +1,56 @@
 // Module ID: 763
 // Function ID: 764
-// Dependencies: [699, 700, 724]
-// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
+// Dependencies: [764]
+// Exports: isSentryRequestUrl
 
 // Module 763
-import _mod699 from "module_699" /* 699 */;
-import _mod724 from "module_724" /* 724 */;
+import _mod764 from "module_764" /* 764 */;
 
-let integrations;
-
-function setupIntegration(on, name, arg2) {
-  let closure_0 = on;
-  if (arg2[name.name]) {
-    const tmp10 = require;
-    if (_mod699.DEBUG_BUILD) {
-      const debug2 = tmp10(700).debug;
-      const _HermesInternal2 = HermesInternal;
-      debug2.log("Integration skipped because it was already installed: " + name.name);
-    }
-  } else {
-    arg2[name.name] = name;
-    const arr = items;
-    const tmp = items.includes(name.name) || typeof name.setupOnce !== "function";
-    if (!tmp) {
-      name.setupOnce();
-      arr.push(name.name);
-    }
-    const tmp4 = name.setup && typeof name.setup === "function";
-    if (tmp4) {
-      name.setup(on);
-    }
-    if (typeof name.preprocessEvent === "function") {
-      const preprocessEvent = name.preprocessEvent;
-      let closure_1 = preprocessEvent.bind(name);
-      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
-    }
-    if (typeof name.processEvent === "function") {
-      const processEvent = name.processEvent;
-      let closure_2 = processEvent.bind(name);
-      const _Object = Object;
-      const obj = { id: name.name };
-      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
-    }
-    const tmp6 = require;
-    if (_mod699.DEBUG_BUILD) {
-      const debug = tmp6(700).debug;
-      const _HermesInternal = HermesInternal;
-      debug.log("Integration installed: " + name.name);
-    }
-  }
-}
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
-let items = [];
 
-export function addIntegration(name) {
-  const obj = _mod724;
-  const client = obj.getClient();
-  if (client) {
-    client.addIntegration(name);
-  } else if (_mod699.DEBUG_BUILD) {
-    const debug = tmp(700).debug;
-    const _HermesInternal = HermesInternal;
-    debug.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+export function isSentryRequestUrl(arr, getDsn) {
+  let dsn;
+  let tunnel;
+  if (getDsn != null) {
+    dsn = getDsn.getDsn();
   }
-}
-export function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let obj = nextResult;
-    let afterAllSetup;
-    if (nextResult != null) {
-      afterAllSetup = nextResult.afterAllSetup;
-    }
-    if (afterAllSetup) {
-      let afterAllSetupResult = obj.afterAllSetup(arg0);
-    }
-    continue;
+  if (getDsn != null) {
+    tunnel = getDsn.getOptions().tunnel;
   }
-}
-export function defineIntegration(arg0) {
-  return arg0;
-}
-export function getIntegrationsToSetup(defaultIntegrations) {
-  let arr2;
-  const arr = defaultIntegrations.defaultIntegrations || [];
-  integrations = defaultIntegrations.integrations;
-  const item = arr.forEach((item) => {
-    item.isDefaultInstance = true;
-  });
-  if (Array.isArray(integrations)) {
-    items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
-    arr2 = items;
-  } else {
-    arr2 = arr;
-    if (typeof integrations === "function") {
-      const integrationsResult = integrations(arr);
-      const _Array = Array;
-      let tmp3 = integrationsResult;
-      if (!Array.isArray(integrationsResult)) {
-        const items1 = [integrationsResult];
-        tmp3 = items1;
+  const obj = _mod764;
+  const result = obj.parseStringToURLObject(arr);
+  let flag = false;
+  if (result) {
+    flag = false;
+    const tmp2Result = _mod764;
+    if (!tmp2Result.isURLObjectRelative(result)) {
+      let tmp5 = dsn;
+      if (tmp5) {
+        const host = result.host;
+        let hasItem = host.includes(dsn.host);
+        if (hasItem) {
+          const obj3 = /(^|&|\?)sentry_key=/;
+          hasItem = obj3.test(result.search);
+        }
+        tmp5 = hasItem;
       }
-      arr2 = tmp3;
+      flag = tmp5;
     }
   }
-  const obj = {};
-  const item1 = arr2.forEach((name) => {
-    name = name.name;
-    let isDefaultInstance = tmp2;
-    const tmp = obj;
-    if (obj[name]) {
-      isDefaultInstance = !tmp2.isDefaultInstance;
+  if (!flag) {
+    let flag2 = false;
+    if (tunnel) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = tunnel;
+      if ("/" === tunnel[tunnel.length - 1]) {
+        substr1 = tunnel.slice(0, -1);
+      }
+      flag2 = substr === substr1;
     }
-    if (isDefaultInstance) {
-      isDefaultInstance = name.isDefaultInstance;
-    }
-    if (!isDefaultInstance) {
-      tmp[name] = name;
-    }
-  });
-  return Object.values(obj);
-}
-export const installedIntegrations = items;
-export { setupIntegration };
-export function setupIntegrations(arg0, arr) {
-  let closure_0 = arg0;
-  const obj = {};
-  const item = arr.forEach((item) => {
-    const tmp = item;
-    if (tmp) {
-      setupIntegration(closure_0, item, obj);
-    }
-  });
-  return obj;
+    flag = flag2;
+  }
+  return flag;
 }

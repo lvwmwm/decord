@@ -1,13 +1,21 @@
 // Module ID: 15856
 // Function ID: 15857
-// Dependencies: [15845]
+// Dependencies: []
 
 // Module 15856
-import _mod15845 from "module_15845" /* 15845 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod15845(arg0, arg2);
-  const tmp = new _mod15845(arg1, arg2);
-  return obj.intersects(tmp, arg2);
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
+  }
+  return tmp2;
 };

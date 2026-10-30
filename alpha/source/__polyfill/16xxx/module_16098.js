@@ -1,14 +1,21 @@
 // Module ID: 16098
 // Function ID: 16099
-// Dependencies: [16046, 16047]
+// Dependencies: [16099]
 
 // Module 16098
-import _mod16046 from "module_16046" /* 16046 */;
-import _mod16047 from "module_16047" /* 16047 */;
+import _mod16099 from "module_16099" /* 16099 */;
 
-const f72900 = () => 42 !== Object.defineProperty(() => {
 
-}, "prototype", { value: 42, writable: false }).prototype;
-_mod16046 && _mod16047(f72900);
-
-export default _mod16046 && _mod16047(f72900);
+export default (arg0, arg1) => {
+  let tmp3 = _mod16099[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod16099;
+    if (!arg1) {
+      obj = {};
+    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
+  }
+  return tmp3;
+};

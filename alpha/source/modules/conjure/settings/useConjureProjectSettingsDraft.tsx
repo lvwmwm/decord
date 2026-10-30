@@ -1,18 +1,18 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12435
+// Function ID: 12436
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6831, 504, 12273, 12255, 12276, 10847, 6832, 7405, 12277, 10843, 11857, 1125, 3864, 12258, 10832, 2]
+// Dependencies: [5, 32, 19, 6838, 504, 12436, 12416, 12439, 10870, 6839, 7413, 12440, 10866, 12400, 1114, 3865, 12419, 10855, 2]
 // Exports: default
 
-// Module 12272 (useConjureProjectSettingsDraft)
+// Module 12435 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c4, c5, channel, closure_0, closure_1, importDefault;
+let _require, c2, c4, c5, closure_0, closure_1, importDefault;
 
 let result = size.fileFinishedImporting("modules/conjure/settings/useConjureProjectSettingsDraft.tsx");
 
@@ -226,7 +226,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -363,7 +363,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
   const useCallback = obj5.useCallback;
   _require = save(function*(arg0, value) {
     let tmp14;
-    channel = arg0;
+    closure_0 = arg0;
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -374,7 +374,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -391,12 +391,12 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
             return obj3;
           } else {
             closure_1 = tmp14;
-            const obj6 = channel;
+            const obj6 = closure_0;
             apply = undefined;
-            if (channel.length > channel(stateFromStores[9]).MAX_PROJECT_COLLABORATOR_ROLES) {
+            if (closure_0.length > closure_0(stateFromStores[9]).MAX_PROJECT_COLLABORATOR_ROLES) {
               const intl = tmp18(tmp19[14]).intl;
               const formatToPlainString = intl.formatToPlainString;
-              const obj4 = { max: channel(stateFromStores[9]).MAX_PROJECT_COLLABORATOR_ROLES };
+              const obj4 = { max: closure_0(stateFromStores[9]).MAX_PROJECT_COLLABORATOR_ROLES };
               prop = closure_2_1(tmp19[15])["dH7+/Z"];
               closure_1_19(formatToPlainString(prop, obj4));
             } else {
@@ -433,7 +433,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         tmp14 = c3;
         if (0 === c3) {
@@ -448,7 +448,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
   const items6 = [callback5, first1];
   const items7 = [setChecked2];
   const callback6 = useCallback(function() {
-    return channel(...arguments);
+    return closure_0(...arguments);
   }, items6);
   const items8 = [setChecked3];
   const callback7 = obj5.useCallback((arg0) => {
@@ -476,7 +476,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

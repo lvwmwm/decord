@@ -1,17 +1,15 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17870
+// Function ID: 17871
 // Name: ReactCompilerSetting
-// Dependencies: [558, 4833, 11302, 17432, 2]
+// Dependencies: [4834, 15921, 11505, 17486, 2]
 
-// Module 17799 (ReactCompilerSetting)
-import UserSettings from "UserSettings" /* 4833 */;
-import WrenchIcon from "WrenchIcon" /* 17432 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17870 (ReactCompilerSetting)
+import UserSettings from "UserSettings" /* 4834 */;
+import ReactCompilerGating from "ReactCompilerGating" /* 15921 */;
+import WrenchIcon from "WrenchIcon" /* 17486 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     return "React Compiler";
@@ -37,6 +35,6 @@ let obj = {
   }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ReactCompilerSetting.tsx");
 
 export default createStaticResult;

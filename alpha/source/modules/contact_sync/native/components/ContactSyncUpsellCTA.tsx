@@ -1,19 +1,18 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15635
+// Function ID: 15636
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 14049, 1084, 21, 5005, 587, 558, 576, 1264, 14046, 7350, 1125, 8988, 15596, 2]
+// Dependencies: [19, 14197, 1072, 21, 5009, 575, 8169, 1253, 14194, 7357, 1114, 15636, 2]
 
-// Module 15595 (ContactSyncUpsellCTA)
+// Module 15635 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14046 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14049 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15596 */;
+import nativeDefault from "native" /* 575 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14194 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 14197 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15636 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,112 +24,14 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { padding: 12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_7 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncUpsellCTA(arg0) {
-  let _location;
-  let style;
-  let tmp5;
-  let tmp6;
-  let tmp = _location;
-  let obj = _location(576);
-  const cResult = obj.c(11);
-  ({ style, location: _location } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] !== _location) {
-    function handleOpen() {
-      let str2;
-      let str = _location;
-      const obj = { type: hasOwnProperty.CONTACT_SYNC_MODAL, location: { page: str2 } };
-      str2 = _location;
-      const track = AnalyticsUtilsDefault.track;
-      const OPEN_MODAL = constants.OPEN_MODAL;
-      AnalyticsUtilsDefault;
-      if (_location == null) {
-        str2 = "Friends List Upsell";
-      }
-      track(OPEN_MODAL, obj);
-      const openContactSyncModal = ContactSyncModalActionCreators.openContactSyncModal;
-      ContactSyncModalActionCreators;
-      if (str == null) {
-        str = "Friends List Upsell";
-      }
-      openContactSyncModal({}, { page: str });
-    }
-    cResult[0] = _location;
-    cResult[1] = handleOpen;
-    tmp5 = handleOpen;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    function openDismissOption() {
-      let intl;
-      let items;
-      const obj = { key: "ContactSyncUpsellLongPress", options: items, hasIcons: false };
-      const tmp = _location(dependencyMap[10]);
-      const showSimpleActionSheet = tmp.showSimpleActionSheet;
-      const obj2 = {
-        label: intl.string(_location(dependencyMap[11]).t.WAI6xu),
-        onPress() {
-          closure_1_3();
-        }
-      };
-      intl = _location(dependencyMap[11]).intl;
-      items = [obj2];
-      const result = showSimpleActionSheet(obj);
-    }
-    cResult[2] = openDismissOption;
-    tmp6 = openDismissOption;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === style) {
-    let tmp7;
-    let tmp9;
-    let tmp8;
-    if (cResult[4] === tmp4.container) {
-      tmp7 = cResult[5];
-    }
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let intl = tmp(1125).intl;
-      const stringResult = intl.string(tmp(1125).t.T6Rfd9);
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(tmp(1125).t.c6KIpg);
-      cResult[6] = stringResult;
-      cResult[7] = stringResult1;
-      tmp9 = stringResult1;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[6];
-      tmp9 = cResult[7];
-    }
-    if (cResult[8] === tmp5) {
-      let tmp12;
-      if (cResult[9] === tmp7) {
-        tmp12 = cResult[10];
-      }
-      return tmp12;
-    }
-    const FormCTA = tmp(8988).FormCTA;
-    const tmp15 = <FormCTA onPress={tmp5} onLongPress={tmp6} style={tmp7} iconSource={AssetRegistryDefault} title={tmp8} subtitle={tmp9} />;
-    cResult[8] = tmp5;
-    cResult[9] = tmp7;
-    cResult[10] = tmp15;
-    tmp12 = tmp15;
-  }
-  let items = [tmp4.container, style];
-  cResult[3] = style;
-  cResult[4] = tmp4.container;
-  cResult[5] = items;
-  tmp7 = items;
-}) : (function ContactSyncUpsellCTA(location) {
+const memoResult = react.memo(function ContactSyncUpsellCTA(location) {
   location = location.location;
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(8988).FormCTA;
-  let intl = location(1125).intl;
-  const intl2 = location(1125).intl;
+  const FormCTA = location(8169).FormCTA;
+  let intl = location(1114).intl;
+  const intl2 = location(1114).intl;
   return <FormCTA onPress={function handleOpen() {
     let str2;
     let str = location;
@@ -153,19 +54,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let intl;
     let items;
     const obj = { key: "ContactSyncUpsellLongPress", options: items, hasIcons: false };
-    const tmp = location(dependencyMap[10]);
+    const tmp = location(dependencyMap[9]);
     const showSimpleActionSheet = tmp.showSimpleActionSheet;
     const obj2 = {
-      label: intl.string(location(dependencyMap[11]).t.WAI6xu),
+      label: intl.string(location(dependencyMap[10]).t.WAI6xu),
       onPress() {
         closure_1_3();
       }
     };
-    intl = location(dependencyMap[11]).intl;
+    intl = location(dependencyMap[10]).intl;
     items = [obj2];
     const result = showSimpleActionSheet(obj);
-  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1125).t.T6Rfd9)} subtitle={intl2.string(location(1125).t.c6KIpg)} />;
-}));
+  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1114).t.T6Rfd9)} subtitle={intl2.string(location(1114).t.c6KIpg)} />;
+});
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx");
 
 export default memoResult;

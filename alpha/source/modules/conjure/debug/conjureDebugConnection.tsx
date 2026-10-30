@@ -1,15 +1,15 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 10868
+// Function ID: 10869
 // Name: conjureDebugConnection
-// Dependencies: [10814, 584, 10831, 10830, 10846, 2]
+// Dependencies: [10837, 572, 10854, 10853, 10869, 2]
 // Exports: forceCompaction, pollConjureDebugInstance, requestConjureDebugGitInfo, requestDebugStatus, restartConjureAgent, restartConjureSandbox
 
-// Module 10845 (conjureDebugConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10830 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10846 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10814 */;
+// Module 10868 (conjureDebugConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10853 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 10869 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 10837 */;
 import size from "module_2" /* 2 */;
 
 let obj4;
@@ -314,7 +314,7 @@ export function forceCompaction(projectId, flag) {
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_DEBUG_FORCE_COMPACTION_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);
@@ -342,7 +342,7 @@ export function restartConjureSandbox(projectId) {
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_SANDBOX_RESTART_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);
@@ -391,7 +391,7 @@ export function requestConjureDebugGitInfo(projectId) {
     dispatch(obj4);
   }
 }
-export function restartConjureAgent(projectId, first1) {
+export function restartConjureAgent(projectId, clear_alarm) {
   let date;
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_RESTART_AGENT_REQUESTED", projectId };
@@ -406,14 +406,14 @@ export function restartConjureAgent(projectId, first1) {
       const error = new Error("Not connected");
       throw error;
     } else {
-      conjureSocket.sendRestartAgent(first1);
+      conjureSocket.sendRestartAgent(clear_alarm);
     }
   } catch (err) {
     const _Date = Date;
     const self3 = this;
     const self4 = this;
     const obj4 = { type: "CONJURE_RESTART_AGENT_RESULT", projectId, outcome: "failed", reason: "Not connected", observedAt: date.toISOString() };
-    const dispatch = tmp(584).dispatch;
+    const dispatch = tmp(572).dispatch;
     DispatcherDefault;
     date = new Date();
     dispatch(obj4);

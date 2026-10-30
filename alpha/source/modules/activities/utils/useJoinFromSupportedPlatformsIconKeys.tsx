@@ -1,13 +1,12 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15101
+// Function ID: 15102
 // Name: useJoinFromSupportedPlatformsIconKeys
-// Dependencies: [19, 1084, 558, 576, 2]
+// Dependencies: [19, 9718, 2]
+// Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 15057 (useJoinFromSupportedPlatformsIconKeys)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
+// Module 15101 (useJoinFromSupportedPlatformsIconKeys)
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -15,7 +14,7 @@ let set;
 function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
   let currentPlatform;
   let platforms;
-  let tmp15;
+  let tmp16;
   ({ platforms, currentPlatform } = isGameLaunchable);
   isGameLaunchable = isGameLaunchable.isGameLaunchable;
   set = new Set(platforms);
@@ -23,66 +22,48 @@ function getJoinFromSupportedPlatformsIconKeys(isGameLaunchable) {
     if (0 !== platforms.length) {
       if (null != currentPlatform) {
         if (set.has(currentPlatform)) {
-          return tmp15;
+          return tmp16;
         }
       }
       const items = [];
-      if (set.has(ActivityGamePlatforms.ANDROID)) {
-        if (set.has(ActivityGamePlatforms.IOS)) {
+      if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.ANDROID)) {
+        if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.IOS)) {
           items.push(obj.MOBILE);
         }
-        const tmp8 = set.has(ActivityGamePlatforms.PS4) || set.has(ActivityGamePlatforms.PS5);
-        if (tmp8) {
+        const hasItem = set.has(tmp(9718).ActivityGamePlatforms.PLAYSTATION_4) || set.has(tmp(9718).ActivityGamePlatforms.PLAYSTATION_5);
+        if (hasItem) {
           items.push(obj.PLAYSTATION);
         }
-        if (set.has(ActivityGamePlatforms.XBOX)) {
+        if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.XBOX)) {
           items.push(obj.XBOX);
         }
-        if (set.has(ActivityGamePlatforms.DESKTOP)) {
+        if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.DESKTOP)) {
           items.push(obj.DESKTOP);
         }
-        tmp15 = items;
-        if (set.has(ActivityGamePlatforms.META_QUEST)) {
+        tmp16 = items;
+        if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.META_QUEST)) {
           items.push(obj.VR);
-          tmp15 = items;
+          tmp16 = items;
         }
       }
-      if (set.has(ActivityGamePlatforms.ANDROID)) {
+      if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.ANDROID)) {
         items.push(obj.ANDROID);
-      } else if (set.has(ActivityGamePlatforms.IOS)) {
+      } else if (set.has(ActivityGamePlatforms.ActivityGamePlatforms.IOS)) {
         items.push(obj.IOS);
       }
     }
   }
-  tmp15 = closure_5;
+  tmp16 = closure_4;
 }
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
 const IconKey = { DESKTOP: "desktop", MOBILE: "mobile", ANDROID: "android", IOS: "ios", PLAYSTATION: "playstation", XBOX: "xbox", VR: "vr" };
-let closure_5 = [];
-const obj2 = { [ActivityGamePlatforms.DESKTOP]: IconKey.DESKTOP, [ActivityGamePlatforms.ANDROID]: IconKey.ANDROID, [ActivityGamePlatforms.IOS]: IconKey.IOS, [ActivityGamePlatforms.XBOX]: IconKey.XBOX, [ActivityGamePlatforms.PS4]: IconKey.PLAYSTATION, [ActivityGamePlatforms.PS5]: IconKey.PLAYSTATION, [ActivityGamePlatforms.SAMSUNG]: null, [ActivityGamePlatforms.EMBEDDED]: null, [ActivityGamePlatforms.META_QUEST]: IconKey.VR };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useJoinFromSupportedPlatformsIconKeys(arg0) {
-  let currentPlatform;
-  let isGameLaunchable;
-  let platforms;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ platforms, currentPlatform, isGameLaunchable } = arg0);
-  if (cResult[0] === currentPlatform) {
-    if (cResult[1] === isGameLaunchable) {
-      let tmp2;
-      if (cResult[2] === platforms) {
-        tmp2 = cResult[3];
-      }
-      return tmp2;
-    }
-  }
-  const tmp3 = getJoinFromSupportedPlatformsIconKeys({ platforms, currentPlatform, isGameLaunchable });
-  cResult[0] = currentPlatform;
-  cResult[1] = isGameLaunchable;
-  cResult[2] = platforms;
-  cResult[3] = tmp3;
-  tmp2 = tmp3;
-}) : (function useJoinFromSupportedPlatformsIconKeys(platforms) {
+let closure_4 = [];
+const obj2 = { [ActivityGamePlatforms.ActivityGamePlatforms.DESKTOP]: IconKey.DESKTOP, [ActivityGamePlatforms.ActivityGamePlatforms.ANDROID]: IconKey.ANDROID, [ActivityGamePlatforms.ActivityGamePlatforms.IOS]: IconKey.IOS, [ActivityGamePlatforms.ActivityGamePlatforms.XBOX]: IconKey.XBOX, [ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4]: IconKey.PLAYSTATION, [ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_5]: IconKey.PLAYSTATION, [ActivityGamePlatforms.ActivityGamePlatforms.SAMSUNG]: null, [ActivityGamePlatforms.ActivityGamePlatforms.EMBEDDED]: null, [ActivityGamePlatforms.ActivityGamePlatforms.META_QUEST]: IconKey.VR };
+const result = size.fileFinishedImporting("modules/activities/utils/useJoinFromSupportedPlatformsIconKeys.tsx");
+
+export { IconKey };
+export const ACTIVITY_GAME_PLATFORM_TO_ICON_KEY = obj2;
+export { getJoinFromSupportedPlatformsIconKeys };
+export function useJoinFromSupportedPlatformsIconKeys(platforms) {
   platforms = platforms.platforms;
   const currentPlatform = platforms.currentPlatform;
   const isGameLaunchable = platforms.isGameLaunchable;
@@ -91,10 +72,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useJoinFromS
     const obj = { platforms, currentPlatform, isGameLaunchable };
     return getJoinFromSupportedPlatformsIconKeys(obj);
   }, items);
-});
-const result = size.fileFinishedImporting("modules/activities/utils/useJoinFromSupportedPlatformsIconKeys.tsx");
-
-export { IconKey };
-export const ACTIVITY_GAME_PLATFORM_TO_ICON_KEY = obj2;
-export { getJoinFromSupportedPlatformsIconKeys };
-export const useJoinFromSupportedPlatformsIconKeys = tmp2;
+}

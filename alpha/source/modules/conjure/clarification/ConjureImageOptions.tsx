@@ -1,13 +1,13 @@
-// Module ID: 12571
-// Function ID: 12572
+// Module ID: 12721
+// Function ID: 12722
 // Name: ConjureImageOptions
-// Dependencies: [32, 1125, 3864, 8900, 2]
+// Dependencies: [32, 1114, 3865, 8934, 2]
 // Exports: answeredOptionIds, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, ownImageOption, ownImageUploadText, registrableDomain, viewableImageOptions
 
-// Module 12571 (ConjureImageOptions)
-import intl2 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8900 */;
+// Module 12721 (ConjureImageOptions)
+import intl2 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8934 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -40,14 +40,14 @@ export function viewableImageOptions(items) {
     return items1;
   });
 }
-export function answeredOptionIds(first1) {
+export function answeredOptionIds(kind) {
   let tmp2;
-  let kind;
-  if (first1 != null) {
-    kind = first1.kind;
+  kind = undefined;
+  if (kind != null) {
+    kind = kind.kind;
   }
   if ("option" === kind) {
-    const items = [first1.optionId];
+    const items = [kind.optionId];
     tmp2 = items;
   } else {
     tmp2 = closure_4;
@@ -61,7 +61,7 @@ export function imageOptionViewerSize(value) {
 }
 export function ownImageOption(image) {
   let intl;
-  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3864.SUdqCQ), image: { attachment_id: image.attachment.id } };
+  const obj = { id: "own:" + image.attachment.id, label: intl.string(_modDef3865.SUdqCQ), image: { attachment_id: image.attachment.id } };
   intl = intl2.intl;
   return obj;
 }
@@ -153,6 +153,6 @@ export function ownImageUploadText(question) {
   const string = intl.string;
   const obj = /\bicons?\b/i;
   const isMatch = obj.test(question.question);
-  const tmp2 = _modDef3864;
+  const tmp2 = _modDef3865;
   return string(isMatch ? tmp2.qU4WN6 : tmp2.cbMDDB);
 }

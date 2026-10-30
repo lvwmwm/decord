@@ -1,49 +1,19 @@
-// Module ID: 19010
-// Function ID: 19011
+// Module ID: 19104
+// Function ID: 19105
 // Name: panel/LeaveActivityButton
-// Dependencies: [19, 5646, 21, 558, 576, 10879, 18886, 2]
+// Dependencies: [19, 5652, 21, 18946, 10902, 2]
 
-// Module 19010 (panel/LeaveActivityButton)
+// Module 19104 (panel/LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
-import leaveFrame from "leaveFrame" /* 10879 */;
-import LeaveActivityButton2 from "LeaveActivityButton" /* 18886 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5652 */;
+import leaveFrame from "leaveFrame" /* 10902 */;
+import LeaveActivityButton2 from "LeaveActivityButton" /* 18946 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function LeaveActivityButton(frame) {
-  let setMode;
-  let obj = frame(setMode[4]);
-  const cResult = obj.c(3);
-  const tmp = frame;
-  frame = frame.frame;
-  const tmp2 = setMode;
-  setMode = frame.setMode;
-  if (cResult[0] === frame) {
-    let tmp4;
-    if (cResult[1] === setMode) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  const tmp5 = jsx(tmp(tmp2[6]).BaseLeaveActivityButton, {
-    onPress() {
-      let id;
-      setMode(ActivityPanelModes.DISCONNECTED);
-      const timerId = setTimeout(() => {
-        const obj = frame(setMode[5]);
-        obj.leaveFrame(id.id);
-      }, 400);
-    }
-  });
-  cResult[0] = frame;
-  cResult[1] = setMode;
-  cResult[2] = tmp5;
-  tmp4 = tmp5;
-}) : (function LeaveActivityButton(arg0) {
+const memoResult = react.memo(function LeaveActivityButton(arg0) {
   ({ frame: require, setMode: dependencyMap } = arg0);
   return jsx(LeaveActivityButton2.BaseLeaveActivityButton, {
     onPress() {
@@ -55,7 +25,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }, 400);
     }
   });
-}));
+});
 const result = size.fileFinishedImporting("modules/frames/panel/native/LeaveActivityButton.tsx");
 
 export default memoResult;

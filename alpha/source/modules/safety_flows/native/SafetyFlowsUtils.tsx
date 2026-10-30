@@ -1,21 +1,20 @@
-// Module ID: 19957
-// Function ID: 19958
+// Module ID: 20020
+// Function ID: 20021
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1389, 19951, 19953, 6731, 19952, 5701, 1125, 2834, 558, 576, 1503, 19956, 2]
-// Exports: getScreensForTaskType
+// Dependencies: [5, 19, 1384, 20014, 20016, 6738, 20015, 5707, 1114, 2835, 1498, 20019, 2]
+// Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 19957 (SafetyFlowsUtils)
-import intl2 from "intl" /* 1125 */;
-import _modDef2834 from "module_2834" /* 2834 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import types from "types" /* 19951 */;
-import constants from "constants" /* 19952 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 19953 */;
+// Module 20020 (SafetyFlowsUtils)
+import intl2 from "intl" /* 1114 */;
+import _modDef2835 from "module_2835" /* 2835 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import types from "types" /* 20014 */;
+import constants from "constants" /* 20015 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20016 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let c2, closure_1, closure_2, data, navigation;
@@ -37,7 +36,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -86,7 +85,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { text: intl.string(_modDef2834["/fHz9S"]), variant: "success" };
+    const obj2 = { text: intl.string(_modDef2835["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -118,7 +117,9 @@ function navigateToScreenForTask(arr, task_type) {
     }
   }
 }
-function getScreensForTaskType(task_type) {
+const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
+
+export function getScreensForTaskType(task_type) {
   const tmp3 = types.TASK_TYPE_TO_SCREENS[task_type];
   let tmp4 = null;
   if (null != tmp3) {
@@ -139,110 +140,13 @@ function getScreensForTaskType(task_type) {
   }
   return tmp4;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskComplete() {
+export { fetchAndUpdateTask };
+export { navigateToScreenForTask };
+export function useOnTaskComplete() {
   let setTask;
-  obj = navigation(setTask[11]);
-  const cResult = obj.c(5);
-  const obj2 = navigation(setTask[12]);
-  navigation = obj2.useNavigation();
-  const obj3 = navigation(setTask[13]);
-  const safetyFlowTask = obj3.useSafetyFlowTask();
-  const task = safetyFlowTask.task;
-  setTask = safetyFlowTask.setTask;
-  if (cResult[0] === navigation) {
-    if (cResult[1] === setTask) {
-      if (cResult[2] === task.flow_context.flow_id) {
-        let tmp4;
-        if (cResult[3] === task.task_id) {
-          tmp4 = cResult[4];
-        }
-        return tmp4;
-      }
-    }
-  }
-  let closure_0 = _asyncToGenerator(async (data) => {
-    let c3 = 0;
-    let c4 = 0;
-    return (async (arg0, value) => {
-      let obj7;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp;
-              closure_1 = tmp4;
-              data = undefined;
-              c3 = 1;
-              c4 = 1;
-              const obj4 = { task_id: closure_1.task_id, flow_id: closure_1.flow_context.flow_id, data };
-              const obj5 = { value: obj7.completeTask(obj4), done: false };
-              obj7 = data(setTask[4]);
-              return obj5;
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj8 = { value: closure_2_6(closure_2), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            data = value;
-            closure_2_8(data, data);
-            c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp14) {
-          c4 = 3;
-          throw tmp14;
-        }
-      }
-    })();
-  });
-  function t0() {
-    return closure_0(...arguments);
-  }
-  cResult[0] = navigation;
-  cResult[1] = setTask;
-  cResult[2] = task.flow_context.flow_id;
-  cResult[3] = task.task_id;
-  cResult[4] = t0;
-  tmp4 = t0;
-}) : (function useOnTaskComplete() {
-  let setTask;
-  obj = navigation(setTask[12]);
+  obj = navigation(setTask[10]);
   navigation = obj.useNavigation();
-  const obj2 = navigation(setTask[13]);
+  const obj2 = navigation(setTask[11]);
   const safetyFlowTask = obj2.useSafetyFlowTask();
   const task = safetyFlowTask.task;
   setTask = safetyFlowTask.setTask;
@@ -261,7 +165,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -307,7 +211,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -320,10 +224,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-});
-const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsUtils.tsx");
-
-export { getScreensForTaskType };
-export { fetchAndUpdateTask };
-export { navigateToScreenForTask };
-export const useOnTaskComplete = tmp2;
+}

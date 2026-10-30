@@ -1,48 +1,26 @@
-// Module ID: 9990
-// Function ID: 9991
+// Module ID: 10017
+// Function ID: 10018
 // Name: useModalDismissGuardRefreshControl
-// Dependencies: [19, 17, 21, 558, 576, 9991, 1381, 2]
+// Dependencies: [19, 17, 21, 10018, 1376, 2]
+// Exports: useModalDismissGuardRefreshControl
 
-// Module 9990 (useModalDismissGuardRefreshControl)
+// Module 10017 (useModalDismissGuardRefreshControl)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import PortalKeyboardModalContext from "PortalKeyboardModalContext" /* 9991 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const PlatformUtils = tmp(1381);
 function noop() {
 
 }
 const RefreshControl = react_native.RefreshControl;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalDismissGuardRefreshControl() {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = PortalKeyboardModalContext;
-  const isPortalKeyboardInModal = obj2.useIsPortalKeyboardInModal();
-  if (cResult[0] !== isPortalKeyboardInModal) {
-    let tmp6;
-    if (isPortalKeyboardInModal) {
-      const tmpResult = PlatformUtils;
-      if (tmpResult.isIOS()) {
-        tmp6 = <RefreshControl refreshing={false} onRefresh={noop} tintColor="transparent" />;
-      }
-    }
-    cResult[0] = isPortalKeyboardInModal;
-    cResult[1] = tmp6;
-    tmp5 = tmp6;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function useModalDismissGuardRefreshControl() {
+const result = size.fileFinishedImporting("modules/keyboard/native/useModalDismissGuardRefreshControl.tsx");
+
+export function useModalDismissGuardRefreshControl() {
   let isPortalKeyboardInModal;
-  let obj = isPortalKeyboardInModal(9991);
+  let obj = isPortalKeyboardInModal(10018);
   isPortalKeyboardInModal = obj.useIsPortalKeyboardInModal();
   const items = [isPortalKeyboardInModal];
   return react.useMemo(() => {
@@ -55,7 +33,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalDi
     }
     return tmp;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/keyboard/native/useModalDismissGuardRefreshControl.tsx");
-
-export const useModalDismissGuardRefreshControl = tmp2;
+}

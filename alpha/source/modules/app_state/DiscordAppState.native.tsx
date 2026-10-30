@@ -1,17 +1,13 @@
-// Module ID: 6859
-// Function ID: 6860
+// Module ID: 6866
+// Function ID: 6867
 // Name: DiscordAppState
-// Dependencies: [1999, 558, 576, 504, 2]
+// Dependencies: [1994, 504, 2]
 
-// Module 6859 (DiscordAppState)
-import react from "react" /* 576 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 6866 (DiscordAppState)
+import get_initialized from "get initialized" /* 504 */;
+import AppStateStore from "AppStateStore" /* 1994 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating;
-let tmp;
-const get_initialized = tmp(504);
 let obj = {
   canUIRequestGatewaySocket() {
     return "active" === AppStateStore.getState();
@@ -19,34 +15,13 @@ let obj = {
   getState() {
     return AppStateStore.getState();
   },
-  useCanUIRequestGatewaySocket: ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUIRequestGatewaySocket() {
-    let state;
-    let tmp4;
-    let tmp5;
-    const obj = react;
-    const cResult = obj.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [AppStateStore];
-      const fn = function c() {
-        return "active" === state.getState();
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    const tmpResult = get_initialized;
-    return tmpResult.useStateFromStores(tmp4, tmp5);
-  }) : (function useCanUIRequestGatewaySocket() {
+  useCanUIRequestGatewaySocket() {
     let state;
     const items = [AppStateStore];
     const obj = get_initialized;
     return obj.useStateFromStores(items, () => "active" === state.getState());
-  })
+  }
 };
-ReactCompilerGating = ReactCompilerGating_mod;
 const result = size.fileFinishedImporting("modules/app_state/DiscordAppState.native.tsx");
 
 export default obj;

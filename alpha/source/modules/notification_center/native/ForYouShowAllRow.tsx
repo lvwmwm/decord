@@ -1,30 +1,28 @@
-// Module ID: 18402
-// Function ID: 18403
+// Module ID: 18461
+// Function ID: 18462
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1084, 14070, 21, 5005, 12047, 587, 1381, 558, 576, 1503, 1264, 1199, 5290, 15792, 1125, 5271, 7302, 18398, 6968, 18397, 2]
+// Dependencies: [19, 17, 1072, 14218, 21, 5009, 11030, 575, 1376, 1498, 1253, 1188, 5637, 18456, 6974, 18457, 15830, 5619, 1114, 7308, 2]
+// Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 18402 (ForYouShowAllRow)
+// Module 18461 (ForYouShowAllRow)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useFontScale from "useFontScale" /* 5290 */;
-import Pressables from "Pressables" /* 6968 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7302 */;
-import ChannelListLayout from "ChannelListLayout" /* 12047 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 14070 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15792 */;
-import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18397 */;
-import ChannelWrapper from "ChannelWrapper" /* 18398 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import useFontScale from "useFontScale" /* 5637 */;
+import Pressables from "Pressables" /* 6974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7308 */;
+import ChannelListLayout from "ChannelListLayout" /* 11030 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 14218 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15830 */;
+import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18456 */;
+import ChannelWrapper from "ChannelWrapper" /* 18457 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -32,345 +30,7 @@ let navigation;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const View = react_native.View;
-const AnalyticEvents = Constants.AnalyticEvents;
-const Sections = FriendsScreenConstants.Sections;
-({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
-let closure_10 = createStyles.createStyles((layout) => {
-  let num;
-  let obj7;
-  const obj = ChannelListLayout;
-  const layoutStyles = obj.getLayoutStyles(layout);
-  const obj2 = ChannelListLayout;
-  const sizeStyle = obj2.makeSizeStyle(layoutStyles.icon.wrapper.size);
-  const obj3 = { rowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, pressable: { flex: 1 }, textContainer: { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: nativeDefault.space.PX_8 }, nameText: { flexShrink: 1, marginBottom: num }, avatar: obj7, icon: size, iconColor: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
-  ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED });
-  ({ flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: nativeDefault.space.PX_8 });
-  num = 0;
-  const obj6 = PlatformUtils;
-  if (obj6.isAndroid()) {
-    num = 2;
-  }
-  obj7 = { position: "relative", borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, marginRight: layoutStyles.icon.margin.marginRight + 4 };
-  const merged = Object.assign(sizeStyle);
-  size = { width: 8, height: 32, paddingRight: tmp4(587).space.PX_24 };
-  ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
-  return obj3;
-});
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouSuggestedFriendShowAllRow(suggestedFriends) {
-  let messagesTabLayout;
-  let obj = suggestedFriends(messagesTabLayout[10]);
-  const cResult = obj.c(13);
-  suggestedFriends = suggestedFriends.suggestedFriends;
-  const panelVariant = suggestedFriends.panelVariant;
-  const tmpResult = suggestedFriends(messagesTabLayout[11]);
-  navigation = tmpResult.useNavigation();
-  const tmpResult2 = suggestedFriends(messagesTabLayout[6]);
-  messagesTabLayout = tmpResult2.useMessagesTabLayout(tmp4);
-  if (cResult[0] === navigation) {
-    let tmp7;
-    let tmp9;
-    if (cResult[1] === suggestedFriends.length) {
-      tmp7 = cResult[2];
-    }
-    if (cResult[3] === messagesTabLayout) {
-      let tmp8;
-      if (cResult[4] === suggestedFriends) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[8] === tmp8) {
-        if (cResult[9] === tmp7) {
-          if (cResult[10] === (undefined !== panelVariant && panelVariant)) {
-            let tmp11;
-            if (cResult[11] === suggestedFriends.length) {
-              tmp11 = cResult[12];
-            }
-            return tmp11;
-          }
-        }
-      }
-      let obj2 = { children: tmp8, count: suggestedFriends.length, onPress: tmp7, panelVariant: undefined !== panelVariant && panelVariant };
-      const tmp14 = closure_7(closure_11, obj2);
-      cResult[8] = tmp8;
-      cResult[9] = tmp7;
-      cResult[10] = undefined !== panelVariant && panelVariant;
-      cResult[11] = suggestedFriends.length;
-      cResult[12] = tmp14;
-      tmp11 = tmp14;
-    }
-    if (cResult[6] !== messagesTabLayout) {
-      const fn2 = function y(user) {
-        let AvatarSizes;
-        let isLayoutCompactResult;
-        const obj = { user: user.user, guildId: "Array", size: isLayoutCompactResult ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL };
-        const Avatar = native.Avatar;
-        const obj2 = ChannelListLayout;
-        isLayoutCompactResult = obj2.isLayoutCompact(messagesTabLayout);
-        AvatarSizes = native.AvatarSizes;
-        return metroImportDefault(Avatar, obj, user.user.id);
-      };
-      cResult[6] = messagesTabLayout;
-      cResult[7] = fn2;
-      tmp9 = fn2;
-    } else {
-      tmp9 = cResult[7];
-    }
-    const substr = suggestedFriends.slice(2, 4);
-    const mapped = substr.map(tmp9);
-    cResult[3] = messagesTabLayout;
-    cResult[4] = suggestedFriends;
-    cResult[5] = mapped;
-    tmp8 = mapped;
-  }
-  const fn = function n() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { section_id: Sections.FRIEND_SUGGESTIONS, truncated_count: 2, expanded_count: suggestedFriends.length, location: "NotificationsTab" };
-    obj.track(AnalyticEvents.FRIEND_FINDER_SECTION_EXPANDED, obj2);
-    navigation.navigate("friends", { screen: "suggested-friends", params: { presentation: "card" } });
-  };
-  cResult[0] = navigation;
-  cResult[1] = suggestedFriends.length;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : (function ForYouSuggestedFriendShowAllRow(suggestedFriends) {
-  suggestedFriends = suggestedFriends.suggestedFriends;
-  let flag = suggestedFriends.panelVariant;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let messagesTabLayout;
-  let obj = suggestedFriends(messagesTabLayout[11]);
-  navigation = obj.useNavigation();
-  let obj2 = suggestedFriends(messagesTabLayout[6]);
-  messagesTabLayout = obj2.useMessagesTabLayout(flag);
-  const items = [navigation, suggestedFriends];
-  const items1 = [messagesTabLayout, suggestedFriends];
-  const callback = react.useCallback(() => {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { section_id: Sections.FRIEND_SUGGESTIONS, truncated_count: 2, expanded_count: suggestedFriends.length, location: "NotificationsTab" };
-    obj.track(AnalyticEvents.FRIEND_FINDER_SECTION_EXPANDED, obj2);
-    navigation.navigate("friends", { screen: "suggested-friends", params: { presentation: "card" } });
-  }, items);
-  const obj3 = {
-    children: react.useMemo(() => {
-      const substr = suggestedFriends.slice(2, 4);
-      return substr.map((user) => {
-        let AvatarSizes;
-        let isLayoutCompactResult;
-        const obj = { user: user.user, guildId: "Array", size: isLayoutCompactResult ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL };
-        const Avatar = suggestedFriends(messagesTabLayout[13]).Avatar;
-        const obj2 = suggestedFriends(messagesTabLayout[6]);
-        isLayoutCompactResult = obj2.isLayoutCompact(closure_1_2);
-        AvatarSizes = suggestedFriends(messagesTabLayout[13]).AvatarSizes;
-        return closure_2_7(Avatar, obj, user.user.id);
-      });
-    }, items1),
-    count: suggestedFriends.length,
-    onPress: callback,
-    panelVariant: flag
-  };
-  return closure_7(closure_11, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouShowAllRow(arg0) {
-  let children;
-  let count;
-  let items;
-  let onPress;
-  let panelVariant;
-  let tmp10;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(43);
-  ({ children, count, onPress, panelVariant } = arg0);
-  const tmpResult = ChannelListLayout;
-  const messagesTabLayout = tmpResult.useMessagesTabLayout(tmp4);
-  const tmp6 = closure_10(messagesTabLayout);
-  if (cResult[0] !== messagesTabLayout) {
-    const tmpResult6 = ChannelListLayout;
-    const layoutStyles = tmpResult6.getLayoutStyles(messagesTabLayout);
-    cResult[0] = messagesTabLayout;
-    cResult[1] = layoutStyles;
-    tmp7 = layoutStyles;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const tmpResult7 = useFontScale;
-  const fontScale = tmpResult7.useFontScale();
-  const backgroundColor = tmp6.rowActive.backgroundColor;
-  if (cResult[2] !== tmp7.container.borderRadius) {
-    const obj2 = { borderRadius: tmp7.container.borderRadius };
-    cResult[2] = tmp7.container.borderRadius;
-    cResult[3] = obj2;
-    tmp10 = obj2;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp6.pressable) {
-    let tmp11;
-    if (cResult[5] === tmp10) {
-      tmp11 = cResult[6];
-    }
-    const tmpResult8 = ChannelListLayout;
-    const isLayoutCompactResult = tmpResult8.isLayoutCompact(messagesTabLayout);
-    const AvatarSizes = tmp(1199).AvatarSizes;
-    const tmp13 = isLayoutCompactResult ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL;
-    if (cResult[7] === children) {
-      let tmp14;
-      if (cResult[8] === tmp13) {
-        tmp14 = cResult[9];
-      }
-      if (cResult[10] === tmp6.avatar) {
-        let tmp17;
-        let tmp21;
-        if (cResult[11] === tmp14) {
-          tmp17 = cResult[12];
-        }
-        const textContainer = tmp6.textContainer;
-        const variant = tmp7.channelName.text.variant;
-        const nameText = tmp6.nameText;
-        if (cResult[13] !== count) {
-          const intl = tmp(1125).intl;
-          const obj3 = { count };
-          const formatResult = intl.format(intl2.t.NrzztX, obj3);
-          cResult[13] = count;
-          cResult[14] = formatResult;
-          tmp21 = formatResult;
-        } else {
-          tmp21 = cResult[14];
-        }
-        if (cResult[15] === tmp7.channelName.text.variant) {
-          if (cResult[16] === tmp6.nameText) {
-            let tmp23;
-            if (cResult[17] === tmp21) {
-              tmp23 = cResult[18];
-            }
-            if (cResult[19] === tmp6.textContainer) {
-              let tmp26;
-              if (cResult[20] === tmp23) {
-                tmp26 = cResult[21];
-              }
-              if (cResult[22] === tmp6.icon) {
-                let tmp30;
-                if (cResult[23] === tmp6.iconColor.color) {
-                  tmp30 = cResult[24];
-                }
-                if (cResult[25] === tmp26) {
-                  if (cResult[26] === tmp30) {
-                    let tmp34;
-                    if (cResult[27] === tmp17) {
-                      tmp34 = cResult[28];
-                    }
-                    if (cResult[29] === fontScale) {
-                      if (cResult[30] === messagesTabLayout) {
-                        if (cResult[31] === (undefined !== panelVariant && panelVariant)) {
-                          let tmp38;
-                          if (cResult[32] === tmp34) {
-                            tmp38 = cResult[33];
-                          }
-                          if (cResult[34] === onPress) {
-                            if (cResult[35] === tmp6.rowActive.backgroundColor) {
-                              if (cResult[36] === tmp38) {
-                                let tmp40;
-                                if (cResult[37] === tmp11) {
-                                  tmp40 = cResult[38];
-                                }
-                                if (cResult[39] === messagesTabLayout) {
-                                  if (cResult[40] === (undefined !== panelVariant && panelVariant)) {
-                                    let tmp43;
-                                    if (cResult[41] === tmp40) {
-                                      tmp43 = cResult[42];
-                                    }
-                                    return tmp43;
-                                  }
-                                }
-                                const obj4 = { layout: messagesTabLayout, panelVariant: undefined !== panelVariant && panelVariant };
-                                const tmpResult9 = ChannelPressableWrapper;
-                                const result = tmpResult9.renderChannelPressableWrapper(tmp40, obj4);
-                                cResult[39] = messagesTabLayout;
-                                cResult[40] = undefined !== panelVariant && panelVariant;
-                                cResult[41] = tmp40;
-                                cResult[42] = result;
-                                tmp43 = result;
-                              }
-                            }
-                          }
-                          const obj5 = { accessibilityRole: "button", underlayColor: backgroundColor, onPress, style: tmp11, children: tmp38 };
-                          const tmp42 = metroImportDefault(Pressables.PressableHighlight, obj5);
-                          cResult[34] = onPress;
-                          cResult[35] = tmp6.rowActive.backgroundColor;
-                          cResult[36] = tmp38;
-                          cResult[37] = tmp11;
-                          cResult[38] = tmp42;
-                          tmp40 = tmp42;
-                        }
-                      }
-                    }
-                    const obj6 = { layout: messagesTabLayout, fontScale, panelVariant: undefined !== panelVariant && panelVariant };
-                    const tmpResult10 = ChannelWrapper;
-                    const renderChannelWrapperResult = tmpResult10.renderChannelWrapper(tmp34, obj6);
-                    cResult[29] = fontScale;
-                    cResult[30] = messagesTabLayout;
-                    cResult[31] = undefined !== panelVariant && panelVariant;
-                    cResult[32] = tmp34;
-                    cResult[33] = renderChannelWrapperResult;
-                    tmp38 = renderChannelWrapperResult;
-                  }
-                }
-                const obj7 = { children: items };
-                items = [tmp17, tmp26, tmp30];
-                const tmp37 = React4(metroImportAll, obj7);
-                cResult[25] = tmp26;
-                cResult[26] = tmp30;
-                cResult[27] = tmp17;
-                cResult[28] = tmp37;
-                tmp34 = tmp37;
-              }
-              const obj8 = { style: tmp6.icon, color: tmp6.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };
-              const Icon = tmp(1199).Icon;
-              const tmp33 = metroImportDefault(Icon, obj8);
-              cResult[22] = tmp6.icon;
-              cResult[23] = tmp6.iconColor.color;
-              cResult[24] = tmp33;
-              tmp30 = tmp33;
-            }
-            const obj9 = { style: textContainer, children: tmp23 };
-            const tmp29 = metroImportDefault(View, obj9);
-            cResult[19] = tmp6.textContainer;
-            cResult[20] = tmp23;
-            cResult[21] = tmp29;
-            tmp26 = tmp29;
-          }
-        }
-        const obj10 = { lineClamp: 1, variant, color: "text-brand", style: nameText, children: tmp21 };
-        const tmp25 = metroImportDefault(Text_Text.Text, obj10);
-        cResult[15] = tmp7.channelName.text.variant;
-        cResult[16] = tmp6.nameText;
-        cResult[17] = tmp21;
-        cResult[18] = tmp25;
-        tmp23 = tmp25;
-      }
-      const obj11 = { style: tmp6.avatar, children: tmp14 };
-      const tmp20 = metroImportDefault(View, obj11);
-      cResult[10] = tmp6.avatar;
-      cResult[11] = tmp14;
-      cResult[12] = tmp20;
-      tmp17 = tmp20;
-    }
-    const obj12 = { size: tmp13, "aria-label": "", children };
-    const tmp16 = metroImportDefault(AvatarDuoPile2.AvatarDuoPile, obj12);
-    cResult[7] = children;
-    cResult[8] = tmp13;
-    cResult[9] = tmp16;
-    tmp14 = tmp16;
-  }
-  const items1 = [tmp6.pressable, tmp10];
-  cResult[4] = tmp6.pressable;
-  cResult[5] = tmp10;
-  cResult[6] = items1;
-  tmp11 = items1;
-}) : (function ForYouShowAllRow(panelVariant) {
+function ForYouShowAllRow(panelVariant) {
   let AvatarDuoPile;
   let Text;
   let children;
@@ -410,15 +70,78 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYou
   items1 = [metroImportDefault(View, obj5), , ];
   const obj9 = { style: tmp4.textContainer, children: metroImportDefault(Text, obj10) };
   obj10 = { lineClamp: 1, variant: layoutStyles.channelName.text.variant, color: "text-brand", style: tmp4.nameText, children: intl.format(intl2.t.NrzztX, { count }) };
-  Text = tmp(5271).Text;
-  intl = tmp(1125).intl;
+  Text = tmp(5619).Text;
+  intl = tmp(1114).intl;
   items1[1] = metroImportDefault(View, obj9);
   const obj11 = { style: tmp4.icon, color: tmp4.iconColor.color, source: AssetRegistryDefault, size: native.IconSizes.CUSTOM };
-  const Icon = tmp(1199).Icon;
+  const Icon = tmp(1188).Icon;
   items1[2] = metroImportDefault(Icon, obj11);
   return renderChannelPressableWrapper(metroImportDefault(PressableHighlight, obj4), { layout, panelVariant });
+}
+const View = react_native.View;
+const AnalyticEvents = Constants.AnalyticEvents;
+const Sections = FriendsScreenConstants.Sections;
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+let closure_10 = createStyles.createStyles((layout) => {
+  let num;
+  let obj7;
+  const obj = ChannelListLayout;
+  const layoutStyles = obj.getLayoutStyles(layout);
+  const obj2 = ChannelListLayout;
+  const sizeStyle = obj2.makeSizeStyle(layoutStyles.icon.wrapper.size);
+  const obj3 = { rowActive: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, pressable: { flex: 1 }, textContainer: { flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: nativeDefault.space.PX_8 }, nameText: { flexShrink: 1, marginBottom: num }, avatar: obj7, icon: size, iconColor: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT } };
+  ({ backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED });
+  ({ flexDirection: "column", flexGrow: 2, flexShrink: 2, alignSelf: "center", overflow: "hidden", marginTop: -2, marginRight: nativeDefault.space.PX_8 });
+  num = 0;
+  const obj6 = PlatformUtils;
+  if (obj6.isAndroid()) {
+    num = 2;
+  }
+  obj7 = { position: "relative", borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexShrink: 0, flexGrow: 0, marginRight: layoutStyles.icon.margin.marginRight + 4 };
+  const merged = Object.assign(sizeStyle);
+  size = { width: 8, height: 32, paddingRight: tmp4(575).space.PX_24 };
+  ({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
+  return obj3;
 });
 let size = size_mod;
-let result = size.fileFinishedImporting("modules/notification_center/native/ForYouShowAllRow.tsx");
+const result = size.fileFinishedImporting("modules/notification_center/native/ForYouShowAllRow.tsx");
 
-export const ForYouSuggestedFriendShowAllRow = tmp3;
+export function ForYouSuggestedFriendShowAllRow(suggestedFriends) {
+  suggestedFriends = suggestedFriends.suggestedFriends;
+  let flag = suggestedFriends.panelVariant;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let messagesTabLayout;
+  let obj = suggestedFriends(messagesTabLayout[9]);
+  navigation = obj.useNavigation();
+  let obj2 = suggestedFriends(messagesTabLayout[6]);
+  messagesTabLayout = obj2.useMessagesTabLayout(flag);
+  const items = [navigation, suggestedFriends];
+  const items1 = [messagesTabLayout, suggestedFriends];
+  const callback = react.useCallback(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { section_id: Sections.FRIEND_SUGGESTIONS, truncated_count: 2, expanded_count: suggestedFriends.length, location: "NotificationsTab" };
+    obj.track(AnalyticEvents.FRIEND_FINDER_SECTION_EXPANDED, obj2);
+    navigation.navigate("friends", { screen: "suggested-friends", params: { presentation: "card" } });
+  }, items);
+  const obj3 = {
+    children: react.useMemo(() => {
+      const substr = suggestedFriends.slice(2, 4);
+      return substr.map((user) => {
+        let AvatarSizes;
+        let isLayoutCompactResult;
+        const obj = { user: user.user, guildId: "Array", size: isLayoutCompactResult ? AvatarSizes.XSMALL_20 : AvatarSizes.SMALL };
+        const Avatar = suggestedFriends(messagesTabLayout[11]).Avatar;
+        const obj2 = suggestedFriends(messagesTabLayout[6]);
+        isLayoutCompactResult = obj2.isLayoutCompact(closure_1_2);
+        AvatarSizes = suggestedFriends(messagesTabLayout[11]).AvatarSizes;
+        return closure_2_7(Avatar, obj, user.user.id);
+      });
+    }, items1),
+    count: suggestedFriends.length,
+    onPress: callback,
+    panelVariant: flag
+  };
+  return closure_7(ForYouShowAllRow, obj3);
+}

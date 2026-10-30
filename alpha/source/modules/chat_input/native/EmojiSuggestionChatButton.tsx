@@ -1,24 +1,24 @@
-// Module ID: 13799
-// Function ID: 13800
+// Module ID: 13946
+// Function ID: 13947
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1204, 4854, 1240, 21, 5005, 587, 1381, 5289, 13793, 13800, 5086, 5284, 11868, 13801, 5334, 12152, 6968, 1125, 5707, 5012, 7288, 7289, 9978, 1199, 2]
+// Dependencies: [32, 19, 17, 1193, 4855, 1229, 21, 5009, 575, 1376, 5591, 13940, 13947, 5090, 5632, 12056, 13948, 5298, 12328, 6974, 1114, 5712, 5016, 7295, 7296, 10005, 1188, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 13799 (EmojiSuggestionChatButton)
-import nativeDefault from "native" /* 587 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1240 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import spring from "spring" /* 5284 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13793 */;
+// Module 13946 (EmojiSuggestionChatButton)
+import nativeDefault from "native" /* 575 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1229 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import spring from "spring" /* 5632 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2;

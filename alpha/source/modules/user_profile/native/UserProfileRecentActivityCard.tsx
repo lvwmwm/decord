@@ -1,87 +1,64 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 14936
+// Function ID: 14937
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 14781, 8676, 14786, 5005, 587, 558, 576, 8869, 5071, 5012, 8129, 1415, 5707, 2031, 5271, 14768, 7313, 7338, 14793, 14794, 9282, 9283, 6968, 1125, 2]
+// Dependencies: [19, 17, 21, 14816, 8710, 14821, 5009, 575, 8903, 5075, 8135, 5016, 5712, 1410, 2028, 5619, 14803, 7320, 7345, 14828, 14829, 9296, 9320, 6974, 1114, 2]
+// Exports: default
 
-// Module 14899 (UserProfileRecentActivityCard)
+// Module 14936 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import shared from "shared" /* 5012 */;
-import native from "native" /* 5071 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7313 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
-import UnknownGameIcon2 from "UnknownGameIcon" /* 8129 */;
-import utils from "utils" /* 8676 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8869 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9282 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9283 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14768 */;
-import BadgesAll from "Badges" /* 14781 */;
-import TrendingType from "TrendingType" /* 14786 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14793 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14794 */;
+import nativeDefault from "native" /* 575 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import StringUtils from "StringUtils" /* 2028 */;
+import shared from "shared" /* 5016 */;
+import native from "native" /* 5075 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7320 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import utils from "utils" /* 8710 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8903 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14803 */;
+import BadgesAll from "Badges" /* 14816 */;
+import TrendingType from "TrendingType" /* 14821 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14828 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14829 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
-
-const useAnalyticsLocationsDefault = useAnalyticsLocations;
-let _require, importDefault, tmp2;
 
 let metroImportDefault;
 let metroRequire;
+let obj10;
 let obj8;
 let obj9;
 let rect;
 let size;
-function getEntryText(entry) {
-  let name;
-  const obj = ContentInventoryTypes;
-  if (obj.isGamingLikeEntry(entry)) {
-    return { title: entry.extra.game_name };
+let tmp4;
+const useOpenGameProfileModalDefault = tmp4(9296);
+function GamingEntryBadges(entry) {
+  let mapped;
+  let obj4;
+  entry = entry.entry;
+  const tmp = closure_9();
+  const badgeCell = tmp;
+  const found = items.filter((predicate) => predicate.predicate(entry));
+  let obj = { location: "user-profile", style: tmp.badges, children: mapped };
+  const BadgesContainer = BadgesAll.BadgesContainer;
+  let obj2 = entry(8903);
+  if (obj2.isTopGameEntry(entry)) {
+    const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
+    obj4 = { entry };
+    mapped = tmp2(View, obj3);
   } else {
-    const tmpResult = ContentInventoryTypes;
-    if (tmpResult.isWatchedMediaEntry(entry)) {
-      return { title: entry.extra.media_title, subtitle: entry.extra.media_subtitle };
-    } else {
-      const tmpResult3 = ContentInventoryTypes;
-      if (tmpResult3.isListenedSessionEntry(entry)) {
-        const first = entry.extra.entries[0];
-        let media;
-        if (first != null) {
-          media = first.media;
-        }
-        let title;
-        if (media != null) {
-          title = media.title;
-        }
-        const obj4 = { title, subtitle: name };
-        name = undefined;
-        if (media != null) {
-          const first1 = media.artists[0];
-          if (first1 != null) {
-            name = first1.name;
-          }
-        }
-        return obj4;
-      } else {
-        let obj6;
-        const tmpResult4 = ContentInventoryTypes;
-        if (tmpResult4.isLaunchedActivityEntry(entry)) {
-          obj6 = { title: entry.extra.activity_name };
-          const obj5 = { title: entry.extra.activity_name };
-        } else {
-          obj6 = { title: "r" };
-        }
-        return obj6;
-      }
-    }
+    mapped = found.map((Badge, index) => {
+      let obj2;
+      const obj = { style: badgeCell.badgeCell, children: metroRequire(Badge.Badge, obj2) };
+      obj2 = { entry };
+      return metroRequire(View, obj, index);
+    });
   }
+  return closure_6(BadgesContainer, obj);
 }
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -108,9 +85,9 @@ let obj3 = {
 items[2] = obj3;
 let obj4 = {
   Badge: BadgesAll.TrendingBadge,
-  predicate(traits) {
+  predicate(entry) {
     const obj = utils;
-    const trendingType = obj.getTrendingType(traits);
+    const trendingType = obj.getTrendingType(entry);
     const tmp4 = null != trendingType && trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED;
     return tmp4;
   }
@@ -118,9 +95,9 @@ let obj4 = {
 items[3] = obj4;
 let obj5 = {
   Badge: BadgesAll.ResurrectedBadge,
-  predicate(traits) {
+  predicate(entry) {
     const obj = utils;
-    return null != obj.getResurrectedEntryLastPlayTime(traits);
+    return null != obj.getResurrectedEntryLastPlayTime(entry);
   }
 };
 items[4] = obj5;
@@ -138,273 +115,15 @@ let obj6 = {
 };
 items[5] = obj6;
 let createStyles = createStyles_mod;
-let obj7 = { body: obj8, content: { flex: 1 }, imageContainer: { position: "relative" }, imageAspectRatio: { width: 60, maxHeight: 60, aspectRatio: "1 / 1" }, posterImageAspectRatio: { width: 60, maxHeight: 100, aspectRatio: "2 / 3" }, largeImage: size, smallImageBackground: rect, smallImage: { width: 24, height: 24, borderRadius: 12 }, badges: obj9, badgeCell: { width: "50%", paddingRight: nativeDefault.space.PX_8 } };
+let obj7 = { body: obj8, content: { flex: 1 }, imageContainer: { position: "relative" }, imageAspectRatio: { width: 60, maxHeight: 60, aspectRatio: "1 / 1" }, posterImageAspectRatio: { width: 60, maxHeight: 100, aspectRatio: "2 / 3" }, largeImage: size, smallImageBackground: rect, smallImage: { width: 24, height: 24, borderRadius: 12 }, badges: obj9, badgeCell: obj10 };
 obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 size = { borderRadius: nativeDefault.radii.xs, width: "100%", height: "100%" };
 rect = { borderRadius: 16, position: "absolute", right: -4, bottom: -4, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj9 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", rowGap: nativeDefault.space.PX_4, marginTop: nativeDefault.space.PX_8 };
-({ width: "50%", paddingRight: nativeDefault.space.PX_8 });
+obj10 = { width: "50%", paddingRight: nativeDefault.space.PX_8 };
 let closure_9 = createStyles(obj7);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function GamingEntryBadges(entry) {
-  let obj4;
-  let tmp11;
-  let tmp8;
-  let obj = entry(576);
-  const cResult = obj.c(14);
-  const tmp = entry;
-  entry = entry.entry;
-  const tmp4 = closure_9();
-  const badgeCell = tmp4;
-  if (cResult[0] === entry) {
-    if (cResult[1] === tmp4.badgeCell) {
-      let tmp5;
-      let str;
-      let tmp6;
-      let tmp7;
-      if (cResult[2] === tmp4.badges) {
-        tmp5 = cResult[3];
-        str = cResult[4];
-        tmp6 = cResult[5];
-        tmp7 = cResult[6];
-      }
-      if (cResult[9] === tmp5) {
-        if (cResult[10] === str) {
-          if (cResult[11] === tmp6) {
-            let tmp13;
-            if (cResult[12] === tmp7) {
-              tmp13 = cResult[13];
-            }
-            return tmp13;
-          }
-        }
-      }
-      let obj2 = { location: str, style: tmp6, children: tmp7 };
-      const tmp15 = closure_6(tmp5, obj2);
-      cResult[9] = tmp5;
-      cResult[10] = str;
-      cResult[11] = tmp6;
-      cResult[12] = tmp7;
-      cResult[13] = tmp15;
-      tmp13 = tmp15;
-    }
-  }
-  if (cResult[7] !== entry) {
-    class E {
-      constructor(arg0) {
-        return entry.predicate(entry);
-      }
-    }
-    cResult[7] = entry;
-    cResult[8] = E;
-    tmp8 = E;
-  } else {
-    class E {
-      constructor(arg0) {
-        return entry.predicate(entry);
-      }
-    }
-  }
-  const found = items.filter(tmp8);
-  const BadgesContainer = BadgesAll.BadgesContainer;
-  const badges = tmp4.badges;
-  const tmpResult = tmp(8869);
-  if (tmpResult.isTopGameEntry(entry)) {
-    class E {
-      constructor(arg0) {
-        return entry.predicate(entry);
-      }
-    }
-    const obj3 = { style: tmp4.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
-    obj4 = { entry };
-    tmp11 = closure_6(View, obj3);
-  } else {
-    class E {
-      constructor(arg0) {
-        return entry.predicate(entry);
-      }
-    }
-  }
-  cResult[0] = entry;
-  cResult[1] = tmp4.badgeCell;
-  cResult[2] = tmp4.badges;
-  cResult[3] = BadgesContainer;
-  cResult[4] = "user-profile";
-  cResult[5] = badges;
-  cResult[6] = tmp11;
-  tmp7 = tmp11;
-  tmp6 = badges;
-  str = "user-profile";
-  tmp5 = BadgesContainer;
-}) : (function GamingEntryBadges(entry) {
-  let mapped;
-  let obj4;
-  entry = entry.entry;
-  const tmp = closure_9();
-  const badgeCell = tmp;
-  const found = items.filter((predicate) => predicate.predicate(entry));
-  let obj = { location: "user-profile", style: tmp.badges, children: mapped };
-  const BadgesContainer = BadgesAll.BadgesContainer;
-  let obj2 = entry(8869);
-  if (obj2.isTopGameEntry(entry)) {
-    const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
-    obj4 = { entry };
-    mapped = tmp2(View, obj3);
-  } else {
-    mapped = found.map((Badge, index) => {
-      let obj2;
-      const obj = { style: badgeCell.badgeCell, children: metroRequire(Badge.Badge, obj2) };
-      obj2 = { entry };
-      return metroRequire(View, obj, index);
-    });
-  }
-  return closure_6(BadgesContainer, obj);
-});
-const memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EntryImage(poster) {
-  let items1;
-  let largeImage;
-  let obj7;
-  let smallImage;
-  let tmp20;
-  let tmpResult4;
-  const obj = react2;
-  const cResult = obj.c(26);
-  ({ largeImage, smallImage } = poster);
-  poster = poster.poster;
-  const tmp4 = closure_9();
-  let src;
-  const obj2 = native;
-  const theme = obj2.useThemeContext().theme;
-  if (largeImage != null) {
-    src = largeImage.src;
-  }
-  if (null == src) {
-    if (cResult[0] === tmp4.imageAspectRatio) {
-      let tmp25;
-      if (cResult[1] === tmp4.imageContainer) {
-        tmp25 = cResult[2];
-      }
-      const tmpResult = shared;
-      const isThemeDarkResult = tmpResult.isThemeDark(theme);
-      const colors = nativeDefault.colors;
-      const tmp28 = isThemeDarkResult ? colors.WHITE : colors.BLACK;
-      if (cResult[3] === tmp4.largeImage) {
-        let tmp29;
-        if (cResult[4] === tmp28) {
-          tmp29 = cResult[5];
-        }
-        if (cResult[6] === tmp25) {
-          let tmp32;
-          if (cResult[7] === tmp29) {
-            tmp32 = cResult[8];
-          }
-          return tmp32;
-        }
-        const obj3 = { style: tmp25, children: tmp29 };
-        const tmp35 = metroRequire(View, obj3);
-        cResult[6] = tmp25;
-        cResult[7] = tmp29;
-        cResult[8] = tmp35;
-        tmp32 = tmp35;
-      }
-      const obj4 = { size: "custom", style: tmp4.largeImage, color: tmp28 };
-      const tmp31 = metroRequire(UnknownGameIcon2.UnknownGameIcon, obj4);
-      cResult[3] = tmp4.largeImage;
-      cResult[4] = tmp28;
-      cResult[5] = tmp31;
-      tmp29 = tmp31;
-    }
-    items = [, ];
-    ({ imageContainer: arr3[0], imageAspectRatio: arr3[1] } = tmp4);
-    cResult[0] = tmp4.imageAspectRatio;
-    cResult[1] = tmp4.imageContainer;
-    cResult[2] = items;
-    tmp25 = items;
-  } else {
-    const tmp6 = poster ? tmp4.posterImageAspectRatio : tmp4.imageAspectRatio;
-    if (cResult[9] === tmp4.imageContainer) {
-      let tmp7;
-      let tmp8;
-      if (cResult[10] === tmp6) {
-        tmp7 = cResult[11];
-      }
-      if (cResult[12] !== largeImage.src) {
-        const tmpResult3 = AvatarUtils;
-        const source = tmpResult3.makeSource(largeImage.src);
-        cResult[12] = largeImage.src;
-        cResult[13] = source;
-        tmp8 = source;
-      } else {
-        tmp8 = cResult[13];
-      }
-      if (cResult[14] === largeImage.alt) {
-        if (cResult[15] === tmp4.largeImage) {
-          let tmp10;
-          if (cResult[16] === tmp8) {
-            tmp10 = cResult[17];
-          }
-          if (cResult[18] === smallImage) {
-            if (cResult[19] === tmp4.smallImage) {
-              let tmp14;
-              if (cResult[20] === tmp4.smallImageBackground) {
-                tmp14 = cResult[21];
-              }
-              if (cResult[22] === tmp7) {
-                if (cResult[23] === tmp10) {
-                  let tmp21;
-                  if (cResult[24] === tmp14) {
-                    tmp21 = cResult[25];
-                  }
-                  return tmp21;
-                }
-              }
-              const obj5 = { style: tmp7, children: items1 };
-              items1 = [tmp10, tmp14];
-              const tmp24 = metroImportDefault(View, obj5);
-              cResult[22] = tmp7;
-              cResult[23] = tmp10;
-              cResult[24] = tmp14;
-              cResult[25] = tmp24;
-              tmp21 = tmp24;
-            }
-          }
-          let src1;
-          if (smallImage != null) {
-            src1 = smallImage.src;
-          }
-          let tmp16 = null != src1;
-          if (tmp16) {
-            const obj6 = { style: tmp4.smallImageBackground, children: metroRequire(tmp20, obj7) };
-            obj7 = { source: tmpResult4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp4.smallImage };
-            tmp20 = FastImageDefault;
-            tmpResult4 = AvatarUtils;
-            tmp16 = metroRequire(View, obj6);
-          }
-          cResult[18] = smallImage;
-          cResult[19] = tmp4.smallImage;
-          cResult[20] = tmp4.smallImageBackground;
-          cResult[21] = tmp16;
-          tmp14 = tmp16;
-        }
-      }
-      const obj8 = { source: tmp8, accessibilityLabel: largeImage.alt, style: tmp4.largeImage };
-      const tmp13 = metroRequire(FastImageDefault, obj8);
-      cResult[14] = largeImage.alt;
-      cResult[15] = tmp4.largeImage;
-      cResult[16] = tmp8;
-      cResult[17] = tmp13;
-      tmp10 = tmp13;
-    }
-    const items2 = [tmp4.imageContainer, tmp6];
-    cResult[9] = tmp4.imageContainer;
-    cResult[10] = tmp6;
-    cResult[11] = items2;
-    tmp7 = items2;
-  }
-}) : (function EntryImage(poster) {
+let closure_11 = react.memo(function EntryImage(poster) {
   let UnknownGameIcon;
   let colors;
   let isThemeDarkResult;
@@ -431,7 +150,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     items = [, ];
     ({ imageContainer: arr2[0], imageAspectRatio: arr2[1] } = tmp);
     obj3 = { size: "custom", style: tmp.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
-    UnknownGameIcon = tmp2(8129).UnknownGameIcon;
+    UnknownGameIcon = tmp2(8135).UnknownGameIcon;
     const tmp2Result = shared;
     isThemeDarkResult = tmp2Result.isThemeDark(theme);
     colors = nativeDefault.colors;
@@ -454,7 +173,7 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
       obj7 = { source: tmp2Result4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp.smallImage };
-      tmp6Result = tmp6(5707);
+      tmp6Result = tmp6(5712);
       tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
     }
@@ -462,139 +181,8 @@ let closure_11 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function E
     tmp16Result = tmp16(tmp17, obj4);
   }
   return tmp16Result;
-}));
-const memo2 = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function EntryCardBody(arg0) {
-  let entry;
-  let items1;
-  let largeImage;
-  let smallImage;
-  let style;
-  let subtitle;
-  let title;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(24);
-  ({ entry, largeImage, smallImage, title, subtitle, style } = arg0);
-  const tmp4 = closure_9();
-  const body = tmp4.body;
-  if (cResult[0] !== entry) {
-    const tmpResult = ContentInventoryTypes;
-    const isWatchedMediaEntryResult = tmpResult.isWatchedMediaEntry(entry);
-    cResult[0] = entry;
-    cResult[1] = isWatchedMediaEntryResult;
-    tmp5 = isWatchedMediaEntryResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === largeImage) {
-    if (cResult[3] === smallImage) {
-      let tmp7;
-      let tmp9;
-      let tmp13;
-      let tmp17;
-      if (cResult[4] === tmp5) {
-        tmp7 = cResult[5];
-      }
-      if (cResult[6] !== title) {
-        const tmpResult4 = StringUtils;
-        let tmp11 = !tmpResult4.isNullOrEmpty(title);
-        tmpResult4.isNullOrEmpty(title);
-        if (tmp11) {
-          const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-          tmp11 = metroRequire(tmp(5271).Text, obj2);
-        }
-        cResult[6] = title;
-        cResult[7] = tmp11;
-        tmp9 = tmp11;
-      } else {
-        tmp9 = cResult[7];
-      }
-      if (cResult[8] !== subtitle) {
-        const tmpResult5 = StringUtils;
-        let tmp15 = !tmpResult5.isNullOrEmpty(subtitle);
-        tmpResult5.isNullOrEmpty(subtitle);
-        if (tmp15) {
-          const obj3 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-          tmp15 = metroRequire(tmp(5271).Text, obj3);
-        }
-        cResult[8] = subtitle;
-        cResult[9] = tmp15;
-        tmp13 = tmp15;
-      } else {
-        tmp13 = cResult[9];
-      }
-      if (cResult[10] !== entry) {
-        const tmpResult6 = ContentInventoryTypes;
-        let isGamingLikeEntryResult = tmpResult6.isGamingLikeEntry(entry);
-        if (isGamingLikeEntryResult) {
-          const obj4 = { entry };
-          isGamingLikeEntryResult = metroRequire(closure_10, obj4);
-        }
-        cResult[10] = entry;
-        cResult[11] = isGamingLikeEntryResult;
-        tmp17 = isGamingLikeEntryResult;
-      } else {
-        tmp17 = cResult[11];
-      }
-      if (cResult[12] === tmp4.content) {
-        if (cResult[13] === tmp9) {
-          if (cResult[14] === tmp13) {
-            let tmp21;
-            if (cResult[15] === tmp17) {
-              tmp21 = cResult[16];
-            }
-            if (cResult[17] === tmp4.body) {
-              if (cResult[18] === tmp7) {
-                let tmp25;
-                if (cResult[19] === tmp21) {
-                  tmp25 = cResult[20];
-                }
-                if (cResult[21] === style) {
-                  let tmp29;
-                  if (cResult[22] === tmp25) {
-                    tmp29 = cResult[23];
-                  }
-                  return tmp29;
-                }
-                const obj5 = { style, children: tmp25 };
-                const tmp32 = metroRequire(View, obj5);
-                cResult[21] = style;
-                cResult[22] = tmp25;
-                cResult[23] = tmp32;
-                tmp29 = tmp32;
-              }
-            }
-            const obj6 = { style: body, children: items };
-            items = [tmp7, tmp21];
-            const tmp28 = metroImportDefault(View, obj6);
-            cResult[17] = tmp4.body;
-            cResult[18] = tmp7;
-            cResult[19] = tmp21;
-            cResult[20] = tmp28;
-            tmp25 = tmp28;
-          }
-        }
-      }
-      const obj7 = { style: tmp4.content, children: items1 };
-      items1 = [tmp9, tmp13, tmp17];
-      const tmp24 = metroImportDefault(View, obj7);
-      cResult[12] = tmp4.content;
-      cResult[13] = tmp9;
-      cResult[14] = tmp13;
-      cResult[15] = tmp17;
-      cResult[16] = tmp24;
-      tmp21 = tmp24;
-    }
-  }
-  const tmp8 = metroRequire(closure_11, { largeImage, smallImage, poster: tmp5 });
-  cResult[2] = largeImage;
-  cResult[3] = smallImage;
-  cResult[4] = tmp5;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function EntryCardBody(arg0) {
+});
+let closure_12 = react.memo(function EntryCardBody(arg0) {
   let entry;
   let items1;
   let largeImage;
@@ -618,7 +206,7 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   obj6.isNullOrEmpty(title);
   if (tmp2Result) {
     const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(5271).Text, obj7);
+    tmp2Result = tmp2(tmp5(5619).Text, obj7);
   }
   items1 = [tmp2Result, , ];
   const tmp5Result = StringUtils;
@@ -626,227 +214,33 @@ let closure_12 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function 
   tmp5Result.isNullOrEmpty(subtitle);
   if (tmp2Result2) {
     const obj8 = { variant: "text-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(5271).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(5619).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result2 = ContentInventoryTypes;
   let isGamingLikeEntryResult = tmp5Result2.isGamingLikeEntry(entry);
   if (isGamingLikeEntryResult) {
     const obj9 = { entry };
-    isGamingLikeEntryResult = tmp2(closure_10, obj9);
+    isGamingLikeEntryResult = tmp2(GamingEntryBadges, obj9);
   }
   items1[2] = isGamingLikeEntryResult;
   items[1] = metroImportDefault(View, obj5);
   return metroRequire(View, obj);
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileRecentActivityCard(arg0) {
-  let entry;
-  let largeImage;
-  let smallImage;
-  let style;
-  let tmp4;
-  let user;
-  const obj = react2;
-  const cResult = obj.c(33);
-  ({ user, entry, style } = arg0);
-  if (cResult[0] !== entry) {
-    const obj2 = { entry, showCoverImage: false, trackingSource: "user_profile_recent_activity_native" };
-    cResult[0] = entry;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = ContentInventoryActivityImageUtils;
-  const imageForContentEntry = tmpResult.useImageForContentEntry(tmp4);
-  ({ largeImage, smallImage } = imageForContentEntry);
-  const tmp7 = useAnalyticsLocationsDefault;
-  const analyticsLocations = tmp7(AnalyticsLocationDefault.USER_PROFILE_RECENT_ACTIVITY_CARD).analyticsLocations;
-  if (cResult[2] === analyticsLocations) {
-    if (cResult[3] === entry) {
-      let tmp8;
-      if (cResult[4] === user) {
-        tmp8 = cResult[5];
-      }
-      const tmp9 = useTrackUserProfileActivityActionDefault(tmp8);
-      _require = tmp9;
-      if (cResult[6] === tmp9) {
-        let tmp10;
-        if (cResult[7] === user.id) {
-          tmp10 = cResult[8];
-        }
-        useTrackUserProfileActivityViewDefault(tmp10);
-        let application_id;
-        if ("application_id" in entry.extra) {
-          application_id = entry.extra.application_id;
-        }
-        if (cResult[9] === application_id) {
-          let tmp14;
-          if (cResult[10] === user.id) {
-            tmp14 = cResult[11];
-          }
-          const tmp15 = useOpenGameProfileModalDefault(tmp14);
-          importDefault = tmp15;
-          if (cResult[12] === tmp9) {
-            let tmp16;
-            let tmp17;
-            let tmp18;
-            if (cResult[13] === tmp15) {
-              tmp16 = cResult[14];
-            }
-            if (cResult[15] !== entry) {
-              const str2 = getEntryText(entry).title;
-              class T {
-                constructor() {
-                  tmp = closure_0({ action: "PRESS_TEXT" });
-                  if (closure_1 != null) {
-                    tmp2 = closure_1();
-                  }
-                  return;
-                }
-              }
-              let trimmed;
-              if (str2 != null) {
-                trimmed = str2.trim();
-              }
-              let trimmed1;
-              if (str3 != null) {
-                trimmed1 = str3.trim();
-              }
-              cResult[15] = entry;
-              cResult[16] = trimmed1;
-              cResult[17] = trimmed;
-              tmp17 = trimmed1;
-              tmp18 = trimmed;
-            } else {
-              tmp17 = cResult[16];
-              tmp18 = cResult[17];
-            }
-            if (cResult[18] === entry) {
-              if (cResult[19] === largeImage) {
-                if (cResult[20] === smallImage) {
-                  if (cResult[21] === style) {
-                    if (cResult[22] === tmp17) {
-                      let tmp24;
-                      if (cResult[23] === tmp18) {
-                        tmp24 = cResult[24];
-                      }
-                      if (cResult[25] === tmp24) {
-                        if (cResult[26] === tmp16) {
-                          if (cResult[27] === tmp15) {
-                            let tmp27;
-                            if (cResult[28] === tmp18) {
-                              tmp27 = cResult[29];
-                            }
-                            if (cResult[30] === analyticsLocations) {
-                              let tmp30;
-                              if (cResult[31] === tmp27) {
-                                tmp30 = cResult[32];
-                              }
-                              return tmp30;
-                            }
-                            const obj3 = { value: null, children: tmp27 };
-                            class T {
-                              constructor() {
-                                tmp = closure_0({ action: "PRESS_TEXT" });
-                                if (closure_1 != null) {
-                                  tmp2 = closure_1();
-                                }
-                                return;
-                              }
-                            }
-                            const tmp32 = metroRequire(useAnalyticsLocations.AnalyticsLocationProvider, obj3);
-                            cResult[30] = analyticsLocations;
-                            cResult[31] = tmp27;
-                            cResult[32] = tmp32;
-                            tmp30 = tmp32;
-                          }
-                        }
-                      }
-                      class T {
-                        constructor() {
-                          tmp = closure_0({ action: "PRESS_TEXT" });
-                          if (closure_1 != null) {
-                            tmp2 = closure_1();
-                          }
-                          return;
-                        }
-                      }
-                      cResult[25] = tmp24;
-                      cResult[26] = tmp16;
-                      cResult[27] = tmp15;
-                      cResult[28] = tmp18;
-                      cResult[29] = tmp24;
-                      tmp27 = tmp29;
-                    }
-                  }
-                }
-              }
-            }
-            class T {
-              constructor() {
-                tmp = closure_0({ action: "PRESS_TEXT" });
-                if (closure_1 != null) {
-                  tmp2 = closure_1();
-                }
-                return;
-              }
-            }
-            const obj4 = { entry, largeImage, smallImage, title: tmp18, subtitle: tmp17, style };
-            const tmp26 = metroRequire(closure_12, obj4);
-            cResult[18] = entry;
-            cResult[19] = largeImage;
-            cResult[20] = smallImage;
-            cResult[21] = style;
-            cResult[22] = tmp17;
-            cResult[23] = tmp18;
-            cResult[24] = tmp26;
-            tmp24 = tmp26;
-          }
-          class T {
-            constructor() {
-              tmp = closure_0({ action: "PRESS_TEXT" });
-              if (closure_1 != null) {
-                tmp2 = closure_1();
-              }
-              return;
-            }
-          }
-          cResult[12] = tmp9;
-          cResult[13] = tmp15;
-          cResult[14] = T;
-          tmp16 = T;
-        }
-        const obj5 = { location: "UserProfileRecentActivityCard", applicationId: application_id, source: GameProfileAnalyticUtils.GameProfileSources.UserProfile, trackEntryPointImpression: true, sourceUserId: user.id };
-        cResult[9] = application_id;
-        cResult[10] = user.id;
-        cResult[11] = obj5;
-        tmp14 = obj5;
-      }
-      tmp11[0] = user.id;
-      tmp11[1] = tmp9;
-      cResult[6] = tmp9;
-      cResult[7] = user.id;
-      cResult[8] = tmp11;
-      tmp10 = tmp11;
-    }
-  }
-  const obj6 = { display: "recent", user, entry, analyticsLocations };
-  cResult[2] = analyticsLocations;
-  cResult[3] = entry;
-  cResult[4] = user;
-  cResult[5] = obj6;
-  tmp8 = obj6;
-}) : (function UserProfileRecentActivityCard(style) {
+});
+size = size_mod;
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRecentActivityCard.tsx");
+
+export default function UserProfileRecentActivityCard(style) {
   let entry;
   let formatToPlainString;
   let largeImage;
-  let obj6;
+  let name;
+  let obj11;
+  let obj8;
   let smallImage;
   let subtitle;
   let title;
-  let tmp14Result;
+  let tmp19Result;
   let user;
   let v9sZWVp;
   ({ user, entry } = style);
@@ -876,9 +270,49 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
       closure_1();
     }
   }, items);
-  ({ title, subtitle } = getEntryText(entry));
+  const tmpResult = ContentInventoryTypes;
+  if (tmpResult.isGamingLikeEntry(entry)) {
+    obj8 = { title: entry.extra.game_name };
+    const obj4 = { title: entry.extra.game_name };
+  } else {
+    const tmpResult4 = ContentInventoryTypes;
+    if (tmpResult4.isWatchedMediaEntry(entry)) {
+      obj8 = { title: entry.extra.media_title, subtitle: entry.extra.media_subtitle };
+      const obj5 = { title: entry.extra.media_title, subtitle: entry.extra.media_subtitle };
+    } else {
+      const tmpResult5 = ContentInventoryTypes;
+      if (tmpResult5.isListenedSessionEntry(entry)) {
+        const first = entry.extra.entries[0];
+        let media;
+        if (first != null) {
+          media = first.media;
+        }
+        let title1;
+        if (media != null) {
+          title1 = media.title;
+        }
+        const obj6 = { title: title1, subtitle: name };
+        name = undefined;
+        if (media != null) {
+          const first1 = media.artists[0];
+          if (first1 != null) {
+            name = first1.name;
+          }
+        }
+        obj8 = obj6;
+      } else {
+        const tmpResult6 = ContentInventoryTypes;
+        if (tmpResult6.isLaunchedActivityEntry(entry)) {
+          obj8 = { title: entry.extra.activity_name };
+          const obj7 = { title: entry.extra.activity_name };
+        } else {
+          obj8 = { title: "getCurrentUser" };
+        }
+      }
+    }
+  }
+  ({ title, subtitle } = obj8);
   let str;
-  getEntryText(entry);
   if (title != null) {
     str = title.trim();
   }
@@ -886,25 +320,21 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
   if (subtitle != null) {
     trimmed = subtitle.trim();
   }
-  const tmp15 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
-  const obj4 = { value: analyticsLocations, children: tmp14Result };
-  tmp14Result = tmp15;
-  const AnalyticsLocationProvider = tmp(7313).AnalyticsLocationProvider;
+  const tmp20 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
+  const obj9 = { value: analyticsLocations, children: tmp19Result };
+  tmp19Result = tmp20;
+  const AnalyticsLocationProvider = tmp(7320).AnalyticsLocationProvider;
   if (null != tmp4ResultResult) {
-    const obj5 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj6), children: tmp15 };
-    const PressableOpacity = tmp(6968).PressableOpacity;
-    const intl = tmp(1125).intl;
+    const obj10 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj11), children: tmp20 };
+    const PressableOpacity = tmp(6974).PressableOpacity;
+    const intl = tmp(1114).intl;
     formatToPlainString = intl.formatToPlainString;
-    v9sZWVp = tmp(1125).t["9sZWVp"];
+    v9sZWVp = tmp(1114).t["9sZWVp"];
     if (str == null) {
       str = "";
     }
-    obj6 = { gameName: str };
-    tmp14Result = tmp14(PressableOpacity, obj5);
+    obj11 = { gameName: str };
+    tmp19Result = tmp19(PressableOpacity, obj10);
   }
-  return metroRequire(AnalyticsLocationProvider, obj4);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRecentActivityCard.tsx");
-
-export default tmp5;
+  return metroRequire(AnalyticsLocationProvider, obj9);
+};

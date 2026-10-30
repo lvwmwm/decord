@@ -1,18 +1,18 @@
-// Module ID: 8005
-// Function ID: 8006
+// Module ID: 8011
+// Function ID: 8012
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1389, 1084, 7476, 504, 584, 7941, 7482, 558, 576, 7954, 2]
+// Dependencies: [5, 32, 19, 1384, 1072, 7484, 504, 572, 7947, 7490, 7960, 2]
+// Exports: useInitiateAgeVerification, useInitiateAgeVerificationV2
 
-// Module 8005 (useInitiateAgeVerification)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 7476 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7954 */;
+// Module 8011 (useInitiateAgeVerification)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 7484 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 7960 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let code, v2;
@@ -64,7 +64,7 @@ function useAgeVerificationRunner(onComplete) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function useAgeVerificationRunner(onComplete) {
             c5 = 0;
             tmp64(false);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp64) {
           if (0 === c5) {
@@ -171,71 +171,9 @@ function useAgeVerificationRunner(onComplete) {
 let _slicedToArray = _slicedToArray_mod;
 const AbortCodes = Constants.AbortCodes;
 const SafetyToastType = Constants2.SafetyToastType;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInitiateAgeVerification(arg0) {
-  let classificationId;
-  let entryPoint;
-  let loading;
-  let onComplete;
-  let shouldShowExpressiveModal;
-  let startVerification;
-  let obj = classificationId(576);
-  const cResult = obj.c(10);
-  ({ onComplete, entryPoint, shouldShowExpressiveModal, classificationId } = arg0);
-  const tmp2 = undefined !== shouldShowExpressiveModal && shouldShowExpressiveModal;
-  let tmp3 = null;
-  if (undefined !== classificationId) {
-    tmp3 = classificationId;
-  }
-  classificationId = tmp3;
-  if (cResult[0] === entryPoint) {
-    if (cResult[1] === onComplete) {
-      let tmp4;
-      if (cResult[2] === tmp2) {
-        tmp4 = cResult[3];
-      }
-      ({ loading, startVerification } = useAgeVerificationRunner(tmp4));
-      useAgeVerificationRunner(tmp4);
-      if (cResult[4] === tmp3) {
-        let tmp7;
-        if (cResult[5] === startVerification) {
-          tmp7 = cResult[6];
-        }
-        if (cResult[7] === tmp7) {
-          let tmp8;
-          if (cResult[8] === loading) {
-            tmp8 = cResult[9];
-          }
-          return tmp8;
-        }
-        const obj2 = { loading, initiateAgeVerification: tmp7 };
-        cResult[7] = tmp7;
-        cResult[8] = loading;
-        cResult[9] = obj2;
-        tmp8 = obj2;
-      }
-      const fn = function v(method, vendor) {
-        startVerification = vendor;
-        return startVerification(() => {
-          const obj = { method, classificationId, vendor };
-          const requestAgeVerification = AgeVerificationURLActionCreators.requestAgeVerification;
-          AgeVerificationURLActionCreators;
-          return requestAgeVerification(obj);
-        });
-      };
-      cResult[4] = tmp3;
-      cResult[5] = startVerification;
-      cResult[6] = fn;
-      tmp7 = fn;
-    }
-  }
-  const obj3 = { onComplete, entryPoint, shouldShowExpressiveModal: tmp2 };
-  cResult[0] = entryPoint;
-  cResult[1] = onComplete;
-  cResult[2] = tmp2;
-  cResult[3] = obj3;
-  tmp4 = obj3;
-}) : (function useInitiateAgeVerification(shouldShowExpressiveModal) {
+const result = size.fileFinishedImporting("modules/age_assurance/hooks/useInitiateAgeVerification.tsx");
+
+export function useInitiateAgeVerification(shouldShowExpressiveModal) {
   let entryPoint;
   let items;
   let onComplete;
@@ -264,61 +202,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInitiateA
   };
   items = [startVerification, classificationId];
   return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInitiateAgeVerificationV2(arg0) {
-  let entryPoint;
-  let loading;
-  let onComplete;
-  let onMethodUnavailable;
-  let startVerification;
-  let obj = startVerification(576);
-  const cResult = obj.c(9);
-  ({ onComplete, entryPoint, onMethodUnavailable } = arg0);
-  if (cResult[0] === entryPoint) {
-    if (cResult[1] === onComplete) {
-      let tmp2;
-      let tmp5;
-      if (cResult[2] === onMethodUnavailable) {
-        tmp2 = cResult[3];
-      }
-      ({ loading, startVerification } = useAgeVerificationRunner(tmp2));
-      useAgeVerificationRunner(tmp2);
-      if (cResult[4] !== startVerification) {
-        const fn = function c(arg0) {
-          let closure_0 = arg0;
-          return startVerification(() => {
-            const obj = startVerification(closure_2_2[12]);
-            return obj.requestAgeVerificationV2(closure_0.method, closure_0.vendor);
-          }, arg0);
-        };
-        cResult[4] = startVerification;
-        cResult[5] = fn;
-        tmp5 = fn;
-      } else {
-        tmp5 = cResult[5];
-      }
-      if (cResult[6] === tmp5) {
-        let tmp6;
-        if (cResult[7] === loading) {
-          tmp6 = cResult[8];
-        }
-        return tmp6;
-      }
-      const obj2 = { loading, initiateAgeVerificationV2: tmp5 };
-      cResult[6] = tmp5;
-      cResult[7] = loading;
-      cResult[8] = obj2;
-      tmp6 = obj2;
-    }
-  }
-  const obj3 = { onComplete, entryPoint, shouldShowExpressiveModal: true, onMethodUnavailable };
-  cResult[0] = entryPoint;
-  cResult[1] = onComplete;
-  cResult[2] = onMethodUnavailable;
-  cResult[3] = obj3;
-  tmp2 = obj3;
-}) : (function useInitiateAgeVerificationV2(onComplete) {
+}
+export function useInitiateAgeVerificationV2(onComplete) {
   let items;
   let obj = { onComplete: onComplete.onComplete, entryPoint: onComplete.entryPoint, shouldShowExpressiveModal: true, onMethodUnavailable: onComplete.onMethodUnavailable };
   const tmp = useAgeVerificationRunner(obj);
@@ -328,15 +213,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInitiateA
     initiateAgeVerificationV2: react.useCallback((arg0) => {
       let closure_0 = arg0;
       return startVerification(() => {
-        const obj = startVerification(closure_2_2[12]);
+        const obj = startVerification(closure_2_2[10]);
         return obj.requestAgeVerificationV2(closure_0.method, closure_0.vendor);
       }, arg0);
     }, items)
   };
   items = [startVerification];
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/age_assurance/hooks/useInitiateAgeVerification.tsx");
-
-export const useInitiateAgeVerification = tmp2;
-export const useInitiateAgeVerificationV2 = tmp3;
+}

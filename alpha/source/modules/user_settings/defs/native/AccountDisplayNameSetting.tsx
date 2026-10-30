@@ -1,68 +1,40 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16557
+// Function ID: 16558
 // Name: AccountDisplayNameSetting
-// Dependencies: [1389, 8387, 1084, 558, 576, 504, 11302, 1125, 16333, 2]
+// Dependencies: [1384, 8424, 1072, 504, 11505, 1114, 16386, 2]
 
-// Module 16506 (AccountDisplayNameSetting)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 16557 (AccountDisplayNameSetting)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import UserStore from "UserStore" /* 1384 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let currentUser;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountDisplayNameSettingTrailing() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function s() {
-      currentUser = currentUser.getCurrentUser();
-      let globalName;
-      if (currentUser != null) {
-        globalName = currentUser.globalName;
-      }
-      return globalName;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useAccountDisplayNameSettingTrailing() {
-  const items = [UserStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => {
-    currentUser = currentUser.getCurrentUser();
-    let globalName;
-    if (currentUser != null) {
-      globalName = currentUser.globalName;
-    }
-    return globalName;
-  });
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["9AjdkD"]);
   },
   parent: MobileUserSettings.ACCOUNT,
-  useTrailing: tmp2,
+  useTrailing: function useAccountDisplayNameSettingTrailing() {
+    const items = [UserStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => {
+      currentUser = currentUser.getCurrentUser();
+      let globalName;
+      if (currentUser != null) {
+        globalName = currentUser.globalName;
+      }
+      return globalName;
+    });
+  },
   screen: {
     route: UserSettingsSections.PROFILE_CUSTOMIZATION,
     getComponent() {

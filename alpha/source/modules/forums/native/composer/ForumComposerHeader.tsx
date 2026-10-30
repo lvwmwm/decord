@@ -1,23 +1,22 @@
-// Module ID: 10183
-// Function ID: 10184
+// Module ID: 10208
+// Function ID: 10209
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5641, 1125, 6991, 6968, 8618, 5271, 8605, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5647, 6974, 1114, 7048, 8652, 5619, 8639, 2]
+// Exports: default
 
-// Module 10183 (ForumComposerHeader)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useChannelNameDefault from "useChannelName" /* 5641 */;
-import Pressables from "Pressables" /* 6968 */;
-import XSmallIcon from "XSmallIcon" /* 6991 */;
-import BookCheckIcon from "BookCheckIcon" /* 8605 */;
-import ForumIcon from "ForumIcon" /* 8618 */;
+// Module 10208 (ForumComposerHeader)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useChannelNameDefault from "useChannelName" /* 5647 */;
+import Pressables from "Pressables" /* 6974 */;
+import XSmallIcon from "XSmallIcon" /* 7048 */;
+import BookCheckIcon from "BookCheckIcon" /* 8639 */;
+import ForumIcon from "ForumIcon" /* 8652 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -37,204 +36,9 @@ let closure_7 = createStyles.createStyles((height) => {
   ({ paddingHorizontal: nativeDefault.space.PX_16 });
   return obj;
 });
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumComposerHeader(onGuidelinesPress) {
-  let button;
-  let channel;
-  let first;
-  let headerBar;
-  let intl3;
-  let items;
-  let items1;
-  let items2;
-  let onClose;
-  let submitting;
-  let title;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(34);
-  ({ title, channel, submitting, onClose } = onGuidelinesPress);
-  onGuidelinesPress = onGuidelinesPress.onGuidelinesPress;
-  const tmp4 = closure_7(onGuidelinesPress.height);
-  const tmp5 = useChannelNameDefault(channel);
-  ({ headerBar, button } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.cpT0Cq);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== onClose) {
-    const fn = function o() {
-      return onClose(false);
-    };
-    cResult[1] = onClose;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = hasOwnProperty(XSmallIcon.XSmallIcon, {});
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.button) {
-    if (cResult[5] === submitting) {
-      let tmp12;
-      let tmp14;
-      let tmp17;
-      let tmp19;
-      let tmp22;
-      if (cResult[6] === tmp8) {
-        tmp12 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = hasOwnProperty(ForumIcon.ForumIcon, { size: "sm" });
-        cResult[8] = tmp16;
-        tmp14 = tmp16;
-      } else {
-        tmp14 = cResult[8];
-      }
-      if (cResult[9] !== title) {
-        let stringResult1 = title;
-        if ("" === title) {
-          const intl2 = tmp(1125).intl;
-          stringResult1 = intl2.string(tmp(1125).t["7EjFCk"]);
-        }
-        cResult[9] = title;
-        cResult[10] = stringResult1;
-        tmp17 = stringResult1;
-      } else {
-        tmp17 = cResult[10];
-      }
-      if (cResult[11] !== tmp17) {
-        const obj2 = { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp17 };
-        const tmp21 = hasOwnProperty(Text_Text.Text, obj2);
-        cResult[11] = tmp17;
-        cResult[12] = tmp21;
-        tmp19 = tmp21;
-      } else {
-        tmp19 = cResult[12];
-      }
-      if (cResult[13] !== tmp5) {
-        const obj3 = { variant: "text-xs/medium", color: "text-default", children: tmp5 };
-        const tmp24 = hasOwnProperty(Text_Text.Text, obj3);
-        cResult[13] = tmp5;
-        cResult[14] = tmp24;
-        tmp22 = tmp24;
-      } else {
-        tmp22 = cResult[14];
-      }
-      if (cResult[15] === tmp4.headerBarText) {
-        if (cResult[16] === tmp22) {
-          let tmp25;
-          if (cResult[17] === tmp19) {
-            tmp25 = cResult[18];
-          }
-          if (cResult[19] === tmp4.headerBarContent) {
-            let tmp29;
-            if (cResult[20] === tmp25) {
-              tmp29 = cResult[21];
-            }
-            let length;
-            const tmp33 = cResult[22];
-            if (channel != null) {
-              length = channel.topic.length;
-            }
-            if (tmp33 === length) {
-              if (cResult[23] === onGuidelinesPress) {
-                let tmp36;
-                let tmp41;
-                if (cResult[24] === tmp4.button) {
-                  tmp36 = cResult[25];
-                }
-                if (cResult[26] !== tmp4.headerBarSeparator) {
-                  const obj4 = { style: tmp4.headerBarSeparator };
-                  const tmp44 = hasOwnProperty(React3, obj4);
-                  cResult[26] = tmp4.headerBarSeparator;
-                  cResult[27] = tmp44;
-                  tmp41 = tmp44;
-                } else {
-                  tmp41 = cResult[27];
-                }
-                if (cResult[28] === tmp4.headerBar) {
-                  if (cResult[29] === tmp29) {
-                    if (cResult[30] === tmp36) {
-                      if (cResult[31] === tmp41) {
-                        let tmp45;
-                        if (cResult[32] === tmp12) {
-                          tmp45 = cResult[33];
-                        }
-                        return tmp45;
-                      }
-                    }
-                  }
-                }
-                const obj5 = { style: headerBar, children: items };
-                items = [tmp12, tmp29, tmp36, tmp41];
-                const tmp48 = metroRequire(React3, obj5);
-                cResult[28] = tmp4.headerBar;
-                cResult[29] = tmp29;
-                cResult[30] = tmp36;
-                cResult[31] = tmp41;
-                cResult[32] = tmp12;
-                cResult[33] = tmp48;
-                tmp45 = tmp48;
-              }
-            }
-            let length1;
-            if (channel != null) {
-              length1 = channel.topic.length;
-            }
-            let tmp38 = null;
-            if (length1 > 0) {
-              const obj6 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp4.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-              const PressableOpacity = tmp(6968).PressableOpacity;
-              intl3 = tmp(1125).intl;
-              tmp38 = hasOwnProperty(PressableOpacity, obj6);
-            }
-            let length2;
-            if (channel != null) {
-              length2 = channel.topic.length;
-            }
-            cResult[22] = length2;
-            cResult[23] = onGuidelinesPress;
-            cResult[24] = tmp4.button;
-            cResult[25] = tmp38;
-            tmp36 = tmp38;
-          }
-          const obj7 = { style: tmp4.headerBarContent, children: items1 };
-          items1 = [tmp14, tmp25];
-          const tmp32 = metroRequire(React3, obj7);
-          cResult[19] = tmp4.headerBarContent;
-          cResult[20] = tmp25;
-          cResult[21] = tmp32;
-          tmp29 = tmp32;
-        }
-      }
-      const obj8 = { style: tmp4.headerBarText, children: items2 };
-      items2 = [tmp19, tmp22];
-      const tmp28 = metroRequire(React3, obj8);
-      cResult[15] = tmp4.headerBarText;
-      cResult[16] = tmp22;
-      cResult[17] = tmp19;
-      cResult[18] = tmp28;
-      tmp25 = tmp28;
-    }
-  }
-  const tmp13 = hasOwnProperty(Pressables.PressableOpacity, { style: button, accessibilityRole: "button", accessibilityLabel: first, disabled: submitting, onPress: tmp8, children: tmp9 });
-  cResult[4] = tmp4.button;
-  cResult[5] = submitting;
-  cResult[6] = tmp8;
-  cResult[7] = tmp13;
-  tmp12 = tmp13;
-}) : (function ForumComposerHeader(height) {
+const result = size.fileFinishedImporting("modules/forums/native/composer/ForumComposerHeader.tsx");
+
+export default function ForumComposerHeader(height) {
   let channel;
   let closure_129_0;
   let intl;
@@ -268,8 +72,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
   const obj4 = { style: tmp.headerBarText, children: items2 };
   const Text = Text_Text.Text;
   if ("" === title) {
-    const intl2 = tmp7(1125).intl;
-    title = intl2.string(tmp7(1125).t["7EjFCk"]);
+    const intl2 = tmp7(1114).intl;
+    title = intl2.string(tmp7(1114).t["7EjFCk"]);
   }
   items2 = [hasOwnProperty(Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: tmp3 })];
   items1[1] = metroRequire(React3, obj4);
@@ -281,15 +85,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumCompose
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(6968).PressableOpacity;
-    intl3 = tmp7(1125).intl;
+    const PressableOpacity2 = tmp7(6974).PressableOpacity;
+    intl3 = tmp7(1114).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }
   items[2] = tmp6Result;
   const obj6 = { style: tmp.headerBarSeparator };
   items[3] = hasOwnProperty(React3, obj6);
   return metroRequire(React3, obj);
-});
-const result = size.fileFinishedImporting("modules/forums/native/composer/ForumComposerHeader.tsx");
-
-export default tmp5;
+};

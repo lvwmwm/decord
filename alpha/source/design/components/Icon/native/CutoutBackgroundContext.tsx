@@ -1,131 +1,56 @@
-// Module ID: 9469
-// Function ID: 9470
+// Module ID: 9488
+// Function ID: 9489
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 558, 576, 683, 9470, 587, 5289, 2]
+// Dependencies: [19, 21, 671, 9489, 575, 5591, 2]
+// Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 9469 (CutoutBackgroundContext)
+// Module 9488 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 5289 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const colors = tmp(9470);
+let tmp3;
+let tmp6;
+const _modDef671 = tmp3(671);
+const colors = tmp6(9489);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-function useCutoutBackgroundColor() {
+const result = size.fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
+
+export function useCutoutBackgroundColor() {
   return react.useContext(closure_5);
 }
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CutoutBackgroundProvider(children) {
-  const obj = react2;
-  const cResult = obj.c(6);
-  children = children.children;
-  if (typeof useCutoutBackgroundColor === "function") {
-    let tmp11;
-    const context = react.useContext(closure_5);
-    const tmp9 = closure_7(tmp4);
-    if (null != tmp9) {
-      tmp11 = tmp9;
-      const obj2 = _modDef683(tmp9);
-      if (1 !== obj2.alpha()) {
-        if (null != context) {
-          if (cResult[0] === context) {
-            let tmp14;
-            if (cResult[1] === tmp9) {
-              tmp14 = cResult[2];
-            }
-            tmp11 = tmp14;
-          }
-          const tmpResult = colors;
-          const result = tmpResult.flattenColorOverOpaqueBackground(tmp9, context);
-          cResult[0] = context;
-          cResult[1] = tmp9;
-          cResult[2] = result;
-          tmp14 = result;
-        }
-      }
-    } else if (undefined === tmp9) {
-      tmp11 = context;
-    }
-    if (cResult[3] === children) {
-      let tmp16;
-      if (cResult[4] === tmp11) {
-        tmp16 = cResult[5];
-      }
-      return tmp16;
-    }
-    const tmp18 = <tmp6.Provider value={tmp11}>{children}</tmp6.Provider>;
-    cResult[3] = children;
-    cResult[4] = tmp11;
-    cResult[5] = tmp18;
-    tmp16 = tmp18;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}) : (function CutoutBackgroundProvider(arg0) {
-  if (typeof useCutoutBackgroundColor === "function") {
-    let result;
-    const context = react.useContext(closure_5);
-    const tmp7 = closure_7(tmp);
-    if (null != tmp7) {
-      result = tmp7;
-      const obj = _modDef683(tmp7);
-      if (1 !== obj.alpha()) {
-        if (null != context) {
-          const obj2 = colors;
-          result = obj2.flattenColorOverOpaqueBackground(tmp7, context);
-        }
-      }
-    } else if (undefined === tmp7) {
-      result = context;
-    }
-    return <tmp4.Provider value={result}>{tmp2}</tmp4.Provider>;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTokenOrColor(BACKGROUND_BASE_LOW) {
+export function CutoutBackgroundProvider(backgroundColor) {
+  let tmp5;
+  let value;
+  backgroundColor = backgroundColor.backgroundColor;
+  const children = backgroundColor.children;
+  const context = react.useContext(closure_5);
   const internal = nativeDefault.internal;
-  let tmp2;
-  if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
-    tmp2 = BACKGROUND_BASE_LOW;
+  if (internal.isSemanticColor(backgroundColor)) {
+    tmp5 = backgroundColor;
   }
+  let token = null;
   const obj = useToken;
-  let token = obj.useToken(tmp2);
-  let tmp4 = null;
-  if (null !== BACKGROUND_BASE_LOW) {
-    if (typeof BACKGROUND_BASE_LOW === "string") {
-      token = BACKGROUND_BASE_LOW;
+  if (null !== backgroundColor) {
+    token = obj.useToken(tmp5);
+    if (typeof backgroundColor === "string") {
+      token = backgroundColor;
     }
-    tmp4 = token;
   }
-  return tmp4;
-}) : (function useTokenOrColor(BACKGROUND_BASE_LOW) {
-  const internal = nativeDefault.internal;
-  let tmp2;
-  if (internal.isSemanticColor(BACKGROUND_BASE_LOW)) {
-    tmp2 = BACKGROUND_BASE_LOW;
-  }
-  const obj = useToken;
-  let token = obj.useToken(tmp2);
-  let tmp4 = null;
-  if (null !== BACKGROUND_BASE_LOW) {
-    if (typeof BACKGROUND_BASE_LOW === "string") {
-      token = BACKGROUND_BASE_LOW;
+  if (null != token) {
+    value = token;
+    const obj2 = _modDef671(token);
+    if (1 !== obj2.alpha()) {
+      if (null != context) {
+        const tmp6Result = colors;
+        value = tmp6Result.flattenColorOverOpaqueBackground(token, context);
+      }
     }
-    tmp4 = token;
+  } else if (undefined === token) {
+    value = context;
   }
-  return tmp4;
-});
-const result1 = size.fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");
-
-export { useCutoutBackgroundColor };
-export const CutoutBackgroundProvider = tmp3;
+  return <tmp.Provider value={value}>{children}</tmp.Provider>;
+}

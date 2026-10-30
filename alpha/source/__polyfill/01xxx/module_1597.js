@@ -1,64 +1,221 @@
 // Module ID: 1597
 // Function ID: 1598
-// Dependencies: [32, 19, 1512, 1546, 1543, 1598, 1525]
-// Exports: usePreventRemove
+// Dependencies: [19, 1501, 1598]
+// Exports: useLinkBuilder
 
 // Module 1597
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1501 */;
 import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require, importDefault, navigation;
-
-
-export function usePreventRemove(arg0, arg1) {
-  let closure_0;
-  let closure_1;
+function useBuildHref() {
+  let context;
+  let context1;
+  let options;
+  let tmp = options;
+  let tmp3 = context1;
+  const tmp2 = context;
+  context = options.useContext(context(context1[1]).NavigationHelpersContext);
+  context1 = options.useContext(context(context1[1]).NavigationRouteContext);
+  options = options.useContext(context(context1[2]).LinkingContext).options;
+  let obj = context(context1[1]);
+  const stateForPath = obj.useStateForPath();
+  let getPathFromState;
+  if (options != null) {
+    getPathFromState = options.getPathFromState;
+  }
+  if (getPathFromState == null) {
+    getPathFromState = tmp2(tmp3[1]).getPathFromState;
+  }
+  let enabled;
+  const useCallback = tmp.useCallback;
+  if (options != null) {
+    enabled = options.enabled;
+  }
+  let items = [enabled, , , , , ];
+  let config;
+  if (options != null) {
+    config = options.config;
+  }
+  items[1] = config;
   let key;
-  _require = arg0;
-  importDefault = arg1;
-  const first = navigation(key.useState(() => {
-    const obj = closure_0(first[2]);
-    return obj.nanoid();
-  }), 1)[0];
-  let obj = require("module_1546");
-  navigation = obj.useNavigation();
-  const obj2 = require("react");
-  key = obj2.useRoute().key;
-  const obj3 = require("react");
-  const preventRemoveContext = obj3.usePreventRemoveContext();
-  const setPreventRemove = preventRemoveContext.setPreventRemove;
-  const notifyPreventRemove = preventRemoveContext.notifyPreventRemove;
-  const items = [setPreventRemove, first, key, arg0];
-  const insertionEffect = key.useInsertionEffect(() => {
-    setPreventRemove(first, key, closure_0);
-    return () => {
-      setPreventRemove(first, key, false);
-    };
+  if (context1 != null) {
+    key = context1.key;
+  }
+  items[2] = key;
+  items[3] = context;
+  items[4] = stateForPath;
+  items[5] = getPathFromState;
+  return useCallback((name, params) => {
+    let constructState;
+    let items;
+    let items1;
+    let items2;
+    let obj3;
+    let tmp21;
+    let tmp = constructState;
+    let enabled;
+    if (constructState != null) {
+      enabled = tmp.enabled;
+    }
+    if (false !== enabled) {
+      let obj = context;
+      let tmp3 = context;
+      if (tmp3) {
+        let key1;
+        if (obj3 != null) {
+          key1 = obj3.key;
+        }
+        tmp3 = key1;
+      }
+      if (tmp3) {
+        tmp3 = stateForPath;
+      }
+      let tmp5 = tmp3;
+      if (tmp5) {
+        const key = obj3.key;
+        let obj2 = context(context1[1]);
+        const findFocusedRouteResult = obj2.findFocusedRoute(stateForPath);
+        let key2;
+        if (findFocusedRouteResult != null) {
+          key2 = findFocusedRouteResult.key;
+        }
+        let someResult = key === key2;
+        if (someResult) {
+          const routes = obj.getState().routes;
+          someResult = routes.some((key) => key.key === obj3.key);
+        }
+        tmp5 = someResult;
+      }
+      context = tmp5;
+      obj3 = { routes: items };
+      items = [{ name, params }];
+      constructState = function constructState(state) {
+        let items;
+        const tmp = state;
+        if (tmp) {
+          const first = state.routes[0];
+          const tmp4 = context;
+          if (tmp4) {
+            let tmp5;
+            if (!first.state) {
+              tmp5 = obj3;
+            }
+            return tmp5;
+          }
+          const obj = { routes: items };
+          const obj2 = { state: constructState(first.state) };
+          const merged = Object.assign(first);
+          items = [obj2];
+          tmp5 = obj;
+        } else {
+          return obj3;
+        }
+      };
+      let tmp15 = obj3;
+      const obj4 = { name, params };
+      if (stateForPath) {
+        let tmp17;
+        let first = stateForPath.routes[0];
+        if (!tmp5) {
+          const obj5 = { state: tmp21 };
+          let merged = Object.assign(first);
+          const state = first.state;
+          tmp21 = obj3;
+          if (state) {
+            const first1 = state.routes[0];
+            if (!tmp5) {
+              const obj6 = { routes: items1 };
+              const obj7 = { state: constructState(first1.state) };
+              const merged1 = Object.assign(first1);
+              items1 = [obj7];
+              obj3 = obj6;
+            }
+            tmp21 = obj3;
+          }
+          const obj8 = { routes: items2 };
+          items2 = [obj5];
+          tmp17 = obj8;
+        } else {
+          tmp17 = obj3;
+        }
+        tmp15 = tmp17;
+      }
+      let config;
+      const tmp26 = getPathFromState;
+      if (tmp != null) {
+        config = tmp.config;
+      }
+      return tmp26(tmp15, config);
+    }
   }, items);
-  const items1 = [first, key, arg0, notifyPreventRemove];
-  const effect = key.useEffect(() => {
-    notifyPreventRemove();
-    return () => {
-      notifyPreventRemove();
-    };
-  }, items1);
-  const tmp6 = require("useLatestCallback")((preventDefault) => {
-    const tmp = closure_0;
-    if (tmp) {
-      preventDefault.preventDefault();
-      const obj = { data: preventDefault.data };
-      closure_1(obj);
+}
+function useBuildAction() {
+  let getActionFromState;
+  let getStateFromPath;
+  let options;
+  options = getActionFromState.useContext(options(getStateFromPath[2]).LinkingContext).options;
+  getStateFromPath = undefined;
+  const tmp = getActionFromState;
+  if (options != null) {
+    getStateFromPath = options.getStateFromPath;
+  }
+  if (getStateFromPath == null) {
+    getStateFromPath = tmp2(tmp3[1]).getStateFromPath;
+  }
+  getActionFromState = undefined;
+  if (options != null) {
+    getActionFromState = options.getActionFromState;
+  }
+  if (getActionFromState == null) {
+    getActionFromState = tmp2(tmp3[1]).getActionFromState;
+  }
+  let config;
+  const useCallback = tmp.useCallback;
+  if (options != null) {
+    config = options.config;
+  }
+  const items = [config, getStateFromPath, getActionFromState];
+  return useCallback(function(str) {
+    if (str.startsWith("/")) {
+      let config;
+      const tmp4 = getStateFromPath;
+      if (options != null) {
+        config = tmp5.config;
+      }
+      const tmp4Result = tmp4(str, config);
+      if (tmp4Result) {
+        let config1;
+        const tmp12 = getActionFromState;
+        if (options != null) {
+          config1 = tmp5.config;
+        }
+        let resetResult = tmp12(tmp4Result, config1);
+        if (resetResult == null) {
+          const CommonActions = BaseNavigationContainer.CommonActions;
+          resetResult = CommonActions.reset(tmp4Result);
+        }
+        return resetResult;
+      } else {
+        const _Error2 = Error;
+        const self3 = this;
+        const self4 = this;
+        const error = new Error("Failed to parse the href to a navigation state.");
+        throw error;
+      }
+    } else {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error1 = new Error("The href must start with '/' (" + str + ").");
+      throw error1;
     }
-  });
-  let closure_7 = tmp6;
-  const items2 = [navigation, tmp6];
-  const effect1 = key.useEffect(() => {
-    let addListenerResult;
-    const obj = navigation;
-    if (navigation != null) {
-      addListenerResult = obj.addListener("beforeRemove", closure_7);
-    }
-    return addListenerResult;
-  }, items2);
+  }, items);
+}
+
+export { useBuildHref };
+export { useBuildAction };
+export function useLinkBuilder() {
+  const obj = { buildHref: useBuildHref(), buildAction: useBuildAction() };
+  return obj;
 }

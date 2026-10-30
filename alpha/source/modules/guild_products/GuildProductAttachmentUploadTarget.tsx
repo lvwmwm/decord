@@ -1,11 +1,11 @@
-// Module ID: 8231
-// Function ID: 8232
+// Module ID: 8234
+// Function ID: 8235
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: [8232, 1084, 2]
+// Dependencies: [8235, 1072, 2]
 
-// Module 8231 (GuildProductAttachmentUploadTarget)
-import Constants from "Constants" /* 1084 */;
-import GuildProductConstants from "GuildProductConstants" /* 8232 */;
+// Module 8234 (GuildProductAttachmentUploadTarget)
+import Constants from "Constants" /* 1072 */;
+import GuildProductConstants from "GuildProductConstants" /* 8235 */;
 import size from "module_2" /* 2 */;
 
 let _window;

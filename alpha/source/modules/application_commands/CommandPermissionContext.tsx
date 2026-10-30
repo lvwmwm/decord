@@ -1,28 +1,28 @@
-// Module ID: 9721
-// Function ID: 9722
+// Module ID: 9747
+// Function ID: 9748
 // Name: CommandPermissionContext
-// Dependencies: [19, 4910, 4861, 4875, 502, 4857, 4917, 4879, 4937, 1389, 1084, 7376, 558, 576, 504, 1096, 1998, 2]
+// Dependencies: [19, 4914, 4862, 4876, 502, 4858, 4921, 4880, 4941, 1384, 1072, 7383, 504, 1084, 1993, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 9721 (CommandPermissionContext)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import Server from "Server" /* 1998 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import GuildRecord from "GuildRecord" /* 4875 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7376 */;
+// Module 9747 (CommandPermissionContext)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import Server from "Server" /* 1993 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import GuildRecord from "GuildRecord" /* 4876 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7383 */;
 import react_mod from "react" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 4910 */;
+import ImpersonateStore from "ImpersonateStore" /* 4914 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 let closure_14;
 let map1;
@@ -70,7 +70,6 @@ let react = react_mod;
 const ChannelRecordBase = ChannelRecord.ChannelRecordBase;
 const isGuildNSFW = GuildRecord.isGuildNSFW;
 ({ ChannelTypes: map1, Permissions: closure_14 } = Constants);
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled();
 const result = size.fileFinishedImporting("modules/application_commands/CommandPermissionContext.tsx");
 
 export function buildPermissionContext(channel, items) {
@@ -135,467 +134,96 @@ export function buildPermissionContext(channel, items) {
 }
 export function usePermissionContext(channel, items) {
   let closure_3;
-  let guild;
-  let memo;
-  let memo1;
-  let stateFromStores4;
-  let stateFromStores5;
-  let stateFromStoresArray1;
-  let tmp = closure_15;
-  if (tmp) {
-    let tmp31;
-    let tmp37;
-    let tmp36;
-    let tmp41;
-    let tmp40;
-    let tmp44;
-    const obj7 = require("react");
-    const cResult = obj7.c(37);
-    let tmp26 = channel;
-    const tmp25 = stateFromStoresArray1;
-    if (channel instanceof stateFromStoresArray1) {
-      tmp26 = channel;
+  let stateFromStoresArray;
+  _require = channel;
+  const commandTypes = items;
+  let obj = react;
+  items = [channel];
+  const memo = react.useMemo(() => {
+    let tmp = channel;
+    if (channel instanceof ChannelRecordBase) {
+      tmp = obj;
       if (channel.isThread()) {
-        let tmp27;
-        if (cResult[0] !== channel) {
-          channel = ChannelStore.getChannel(channel.parent_id);
-          cResult[0] = channel;
-          cResult[1] = channel;
-          tmp27 = channel;
-        } else {
-          tmp27 = cResult[1];
+        channel = ChannelStore.getChannel(obj.parent_id);
+        if (channel == null) {
+          channel = obj;
         }
-        tmp26 = tmp27;
+        tmp = channel;
       }
     }
-    if (cResult[2] !== tmp26) {
-      let tmp33;
-      if (null != tmp26) {
-        tmp33 = tmp26 instanceof tmp25 ? tmp26.guild_id : tmp26.id;
-      }
-      cResult[2] = tmp26;
-      cResult[3] = tmp33;
-      tmp31 = tmp33;
-    } else {
-      tmp31 = cResult[3];
-    }
-    let closure_0 = tmp31;
-    const tmp22Result = require("AgeRestrictedContentSettingsUtils");
-    const viewNsfwCommandsOrDefault = tmp22Result.useViewNsfwCommandsOrDefault();
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      items = [stateFromStores5];
-      class A {
-        constructor() {
-          return stateFromStores5.getId();
-        }
-      }
-      cResult[4] = items;
-      cResult[5] = A;
-      tmp37 = A;
-      tmp36 = items;
-    } else {
-      tmp36 = cResult[4];
-      tmp37 = cResult[5];
-    }
-    const tmp22Result6 = require("get initialized");
-    const stateFromStores = tmp22Result6.useStateFromStores(tmp36, tmp37);
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [UserStore];
-      class M {
-        constructor() {
-          const currentUser = authStore.getCurrentUser();
-          let flag;
-          if (currentUser != null) {
-            flag = currentUser.nsfwAllowed;
-          }
-          if (flag == null) {
-            flag = false;
-          }
-          return flag;
-        }
-      }
-      cResult[6] = items1;
-      cResult[7] = M;
-      tmp41 = M;
-      tmp40 = items1;
-    } else {
-      tmp40 = cResult[6];
-      tmp41 = cResult[7];
-    }
-    const tmp22Result7 = require("get initialized");
-    const stateFromStores1 = tmp22Result7.useStateFromStores(tmp40, tmp41);
-    const _Symbol3 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [GuildMemberStore];
-      class M {
-        constructor() {
-          const currentUser = authStore.getCurrentUser();
-          let flag;
-          if (currentUser != null) {
-            flag = currentUser.nsfwAllowed;
-          }
-          if (flag == null) {
-            flag = false;
-          }
-          return flag;
-        }
-      }
-      cResult[8] = items2;
-      tmp44 = items2;
-    } else {
-      tmp44 = cResult[8];
-    }
-    if (cResult[9] === tmp31) {
-      let tmp46;
-      let tmp48;
-      let tmp50;
-      let tmp52;
-      let tmp55;
-      let tmp54;
-      if (cResult[10] === stateFromStores) {
-        tmp46 = cResult[11];
-      }
-      const tmp22Result8 = require("get initialized");
-      const stateFromStoresArray = tmp22Result8.useStateFromStoresArray(tmp44, tmp46);
-      class M {
-        constructor() {
-          const currentUser = authStore.getCurrentUser();
-          let flag;
-          if (currentUser != null) {
-            flag = currentUser.nsfwAllowed;
-          }
-          if (flag == null) {
-            flag = false;
-          }
-          return flag;
-        }
-      }
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        const items3 = [stateFromStores4];
-        class M {
-          constructor() {
-            const currentUser = authStore.getCurrentUser();
-            let flag;
-            if (currentUser != null) {
-              flag = currentUser.nsfwAllowed;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            return flag;
-          }
-        }
-        cResult[12] = items3;
-        tmp48 = items3;
-      } else {
-        tmp48 = cResult[12];
-      }
-      if (cResult[13] !== tmp31) {
-        const fn = function b() {
-          return stateFromStores4.isViewingRoles(closure_0);
-        };
-        cResult[13] = tmp31;
-        class M {
-          constructor() {
-            const currentUser = authStore.getCurrentUser();
-            let flag;
-            if (currentUser != null) {
-              flag = currentUser.nsfwAllowed;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            return flag;
-          }
-        }
-        cResult[14] = fn;
-        tmp50 = fn;
-      } else {
-        tmp50 = cResult[14];
-      }
-      const tmp22Result9 = require("get initialized");
-      const stateFromStores2 = tmp22Result9.useStateFromStores(tmp48, tmp50);
-      const _Symbol4 = Symbol;
-      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        const items4 = [GuildStore];
-        class M {
-          constructor() {
-            const currentUser = authStore.getCurrentUser();
-            let flag;
-            if (currentUser != null) {
-              flag = currentUser.nsfwAllowed;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            return flag;
-          }
-        }
-        cResult[15] = items4;
-        tmp52 = items4;
-      } else {
-        tmp52 = cResult[15];
-      }
-      if (cResult[16] !== tmp31) {
-        class R {
-          constructor() {
-            return stateFromStores6(guild.getGuild(closure_0));
-          }
-        }
-        const items5 = [tmp31];
-        class M {
-          constructor() {
-            const currentUser = authStore.getCurrentUser();
-            let flag;
-            if (currentUser != null) {
-              flag = currentUser.nsfwAllowed;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            return flag;
-          }
-        }
-        cResult[16] = tmp31;
-        cResult[17] = R;
-        cResult[18] = items5;
-        tmp55 = items5;
-        tmp54 = R;
-      } else {
-        class R {
-          constructor() {
-            return stateFromStores6(guild.getGuild(closure_0));
-          }
-        }
-        tmp55 = cResult[18];
-      }
-      const tmp22Result10 = require("get initialized");
-      const stateFromStores3 = tmp22Result10.useStateFromStores(tmp52, tmp54, tmp55);
-      if (cResult[19] === tmp26) {
-        class R {
-          constructor() {
-            return stateFromStores6(guild.getGuild(closure_0));
-          }
-        }
-      }
-      let tmp58 = stateFromStores1;
-      if (tmp58) {
-        class R {
-          constructor() {
-            return stateFromStores6(guild.getGuild(closure_0));
-          }
-        }
-        if (!tmp59) {
-          class R {
-            constructor() {
-              return stateFromStores6(guild.getGuild(closure_0));
-            }
-          }
-          if (null != tmp26.guild_id) {
-            class R {
-              constructor() {
-                return stateFromStores6(guild.getGuild(closure_0));
-              }
-            }
-          }
-          class M {
-            constructor() {
-              const currentUser = authStore.getCurrentUser();
-              let flag;
-              if (currentUser != null) {
-                flag = currentUser.nsfwAllowed;
-              }
-              if (flag == null) {
-                flag = false;
-              }
-              return flag;
-            }
-          }
-        }
-        tmp58 = tmp59;
-      }
-      cResult[19] = tmp26;
-      cResult[20] = stateFromStores3;
-      cResult[21] = stateFromStores1;
-      cResult[22] = viewNsfwCommandsOrDefault;
-      cResult[23] = tmp58;
-    }
-    class E {
-      constructor() {
-        let items;
-        if (null != closure_0) {
-          member = member.getMember(tmp, stateFromStores);
-          let roles;
-          if (member != null) {
-            roles = member.roles;
-          }
-          if (roles == null) {
-            roles = [];
-          }
-          items = roles;
-        } else {
-          items = [];
-        }
-        return items;
-      }
-    }
-    cResult[9] = tmp31;
-    cResult[10] = stateFromStores;
-    cResult[11] = E;
-    tmp46 = E;
-  } else {
-    class R {
-      constructor() {
-        return stateFromStores6(guild.getGuild(closure_0));
-      }
-    }
-    const commandTypes = items;
-    let obj = react;
-    class M {
-      constructor() {
-        const currentUser = authStore.getCurrentUser();
-        let flag;
-        if (currentUser != null) {
-          flag = currentUser.nsfwAllowed;
-        }
-        if (flag == null) {
-          flag = false;
-        }
-        return flag;
-      }
-    }
-    tmp2[0] = channel;
-    memo = react.useMemo(() => {
-      let tmp = require;
-      if (require instanceof ChannelRecordBase) {
-        tmp = obj;
-        if (require.isThread()) {
-          let channel = ChannelStore.getChannel(obj.parent_id);
-          if (channel == null) {
-            channel = obj;
-          }
-          tmp = channel;
-        }
-      }
-      return tmp;
-    }, tmp2);
-    let tmp5;
-    if (null != memo) {
-      class R {
-        constructor() {
-          return stateFromStores6(guild.getGuild(closure_0));
-        }
-      }
-      tmp5 = memo instanceof stateFromStoresArray1 ? memo.guild_id : memo.id;
-    }
-    react = tmp5;
-    const obj2 = require("AgeRestrictedContentSettingsUtils");
-    const viewNsfwCommandsOrDefault1 = obj2.useViewNsfwCommandsOrDefault();
-    const items6 = [stateFromStores5];
-    const obj3 = require("get initialized");
-    stateFromStores4 = obj3.useStateFromStores(items6, () => stateFromStores5.getId());
-    const items7 = [UserStore];
-    const obj4 = require("get initialized");
-    stateFromStores5 = obj4.useStateFromStores(items7, () => {
-      const currentUser = authStore.getCurrentUser();
-      let flag;
-      if (currentUser != null) {
-        flag = currentUser.nsfwAllowed;
-      }
-      if (flag == null) {
-        flag = false;
-      }
-      return flag;
-    });
-    const items8 = [];
-    const obj5 = require("get initialized");
-    class E {
-      constructor() {
-        let items;
-        if (null != closure_0) {
-          member = member.getMember(tmp, stateFromStores);
-          let roles;
-          if (member != null) {
-            roles = member.roles;
-          }
-          if (roles == null) {
-            roles = [];
-          }
-          items = roles;
-        } else {
-          items = [];
-        }
-        return items;
-      }
-    }
-    stateFromStoresArray1 = obj5.useStateFromStoresArray(items8, () => {
-      let items;
-      if (null != closure_3) {
-        member = GuildMemberStore.getMember(tmp, stateFromStores4);
-        let roles;
-        if (member != null) {
-          roles = member.roles;
-        }
-        if (roles == null) {
-          roles = [];
-        }
-        items = roles;
-      } else {
-        items = [];
-      }
-      return items;
-    });
-    const items9 = [stateFromStores4];
-    const obj6 = require("get initialized");
-    const stateFromStores6 = obj6.useStateFromStores(items9, () => ImpersonateStore.isViewingRoles(closure_3));
-    require("get initialized");
-    const items10 = [GuildStore];
-    const items11 = [tmp5];
-    if (stateFromStores5) {
-      class R {
-        constructor() {
-          return stateFromStores6(guild.getGuild(closure_0));
-        }
-      }
-      let tmp20 = !(memo instanceof stateFromStoresArray1);
-      if (!tmp20) {
-        class R {
-          constructor() {
-            return stateFromStores6(guild.getGuild(closure_0));
-          }
-        }
-        tmp20 = viewNsfwCommandsOrDefault1;
-      }
-      class M {
-        constructor() {
-          const currentUser = authStore.getCurrentUser();
-          let flag;
-          if (currentUser != null) {
-            flag = currentUser.nsfwAllowed;
-          }
-          if (flag == null) {
-            flag = false;
-          }
-          return flag;
-        }
-      }
-    }
-    stateFromStores5 = tmp19;
-    const items12 = [items, memo, stateFromStores6, stateFromStoresArray1, stateFromStores4, stateFromStores5, channel];
-    memo1 = obj.useMemo(() => {
-      let isThreadResult = require instanceof ChannelRecordBase;
-      const obj = require;
-      const tmp = computePermissions;
-      if (isThreadResult) {
-        isThreadResult = obj.isThread();
-      }
-      const tmpResult = tmp(memo, isThreadResult);
-      return { context: memo, userId: stateFromStores4, roleIds: stateFromStoresArray1, commandTypes, isImpersonating: stateFromStores6, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: stateFromStores5 };
-    }, items12);
+    return tmp;
+  }, items);
+  let tmp;
+  if (null != memo) {
+    tmp = memo instanceof stateFromStoresArray ? memo.guild_id : memo.id;
   }
-  return memo1;
+  react = tmp;
+  const obj3 = require("AgeRestrictedContentSettingsUtils");
+  let viewNsfwCommandsOrDefault = obj3.useViewNsfwCommandsOrDefault();
+  const items1 = [viewNsfwCommandsOrDefault];
+  const obj4 = require("get initialized");
+  const stateFromStores = obj4.useStateFromStores(items1, () => viewNsfwCommandsOrDefault.getId());
+  const items2 = [UserStore];
+  const obj5 = require("get initialized");
+  const stateFromStores1 = obj5.useStateFromStores(items2, () => {
+    currentUser = currentUser.getCurrentUser();
+    let flag;
+    if (currentUser != null) {
+      flag = currentUser.nsfwAllowed;
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  });
+  const items3 = [GuildMemberStore];
+  const obj6 = require("get initialized");
+  stateFromStoresArray = obj6.useStateFromStoresArray(items3, () => {
+    let items;
+    if (null != closure_3) {
+      const member = GuildMemberStore.getMember(tmp, stateFromStores);
+      let roles;
+      if (member != null) {
+        roles = member.roles;
+      }
+      if (roles == null) {
+        roles = [];
+      }
+      items = roles;
+    } else {
+      items = [];
+    }
+    return items;
+  });
+  const items4 = [stateFromStores];
+  const obj7 = require("get initialized");
+  const stateFromStores2 = obj7.useStateFromStores(items4, () => ImpersonateStore.isViewingRoles(closure_3));
+  require("get initialized");
+  [][0] = tmp;
+  let tmp10 = stateFromStores1;
+  if (tmp10) {
+    let tmp12 = !(memo instanceof stateFromStoresArray);
+    if (!tmp12) {
+      if (null != memo.guild_id) {
+        viewNsfwCommandsOrDefault = memo.isNSFW() || tmp9;
+        memo.isNSFW() || tmp9;
+      }
+      tmp12 = viewNsfwCommandsOrDefault;
+    }
+    tmp10 = tmp12;
+  }
+  viewNsfwCommandsOrDefault = tmp10;
+  const items5 = [items, memo, stateFromStores2, stateFromStoresArray, stateFromStores, tmp10, channel];
+  return obj.useMemo(() => {
+    let isThreadResult = channel instanceof ChannelRecordBase;
+    const obj = channel;
+    const tmp = computePermissions;
+    if (isThreadResult) {
+      isThreadResult = obj.isThread();
+    }
+    const tmpResult = tmp(memo, isThreadResult);
+    return { context: memo, userId: stateFromStores, roleIds: stateFromStoresArray, commandTypes, isImpersonating: stateFromStores2, computedPermissions: tmpResult.computedPermissions, hasBaseAccessPermissions: tmpResult.hasBaseAccessPermissions, hasSendMessagesPermission: tmpResult.hasSendMessagesPermission, allowNsfw: viewNsfwCommandsOrDefault };
+  }, items5);
 }
 export function computeCommandContextType(channel, applicationId) {
   if (channel instanceof ChannelRecordBase) {

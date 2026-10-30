@@ -1,15 +1,15 @@
-// Module ID: 1391
-// Function ID: 1392
+// Module ID: 1386
+// Function ID: 1387
 // Name: PremiumConstants
-// Dependencies: [1084, 1392, 1125, 1393, 1087, 2, 1394]
+// Dependencies: [1072, 1387, 1114, 1388, 1075, 2, 1389]
 
-// Module 1391 (PremiumConstants)
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1087 */;
-import intl from "intl" /* 1125 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import BadgeRarity from "BadgeRarity" /* 1393 */;
-import gift_intent_type from "gift_intent_type" /* 1394 */;
-import Constants from "Constants" /* 1084 */;
+// Module 1386 (PremiumConstants)
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
+import intl from "intl" /* 1114 */;
+import EmojiConstants from "EmojiConstants" /* 1387 */;
+import BadgeRarity from "BadgeRarity" /* 1388 */;
+import gift_intent_type from "gift_intent_type" /* 1389 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let BITRATE_MAX;

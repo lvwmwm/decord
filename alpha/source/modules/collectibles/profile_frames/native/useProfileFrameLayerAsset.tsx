@@ -1,24 +1,22 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8787
+// Function ID: 8788
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 7364, 1987, 558, 576, 1899, 8754, 8755, 2]
-// Exports: isProfileFrameLayerShown
+// Dependencies: [5, 32, 19, 17, 7371, 1982, 1894, 8788, 8789, 2]
+// Exports: default, isProfileFrameLayerShown, usePreloadLayerImages
 
-// Module 8753 (useProfileFrameLayerAsset)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 1987 */;
-import Constants from "Constants" /* 7364 */;
+// Module 8787 (useProfileFrameLayerAsset)
+import Constants from "Constants" /* 7371 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
-let _Promise, c4, c5, importDefault, nextPromise, num2;
+let c4, c5;
 
 let metroImportDefault;
 let metroRequire;
-const f103311 = (arg0) => {
+const f93062 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -45,7 +43,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f103311);
+      const promise = new Promise(f93062);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -56,9 +54,6 @@ function measureProfileFrameLayer(arg0) {
 function getProfileFrameLayerAssetUrl(arg0, arg1, arg2) {
   const rounded = Math.round(arg2 * metroImportDefault.get());
   return "" + arg0 + "?width=" + rounded + "&height=" + Math.round(rounded * arg1);
-}
-function preloadLayer() {
-  return obj(...arguments);
 }
 let obj = function _preloadLayer() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -75,7 +70,7 @@ let obj = function _preloadLayer() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -115,7 +110,7 @@ let obj = function _preloadLayer() {
                 c4 = 2;
                 c5 = 1;
                 const obj8 = { value: obj2.preload(obj7), done: false };
-                obj2 = closure_131_1(closure_131_2[8]);
+                obj2 = closure_131_1(closure_131_2[6]);
                 return obj8;
               }
             }
@@ -130,7 +125,7 @@ let obj = function _preloadLayer() {
             closure_131_11.add(uri);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp22) {
         c5 = 3;
@@ -140,147 +135,16 @@ let obj = function _preloadLayer() {
   });
   return obj(...arguments);
 };
-let react = react_mod;
 ({ Image: metroRequire, PixelRatio: metroImportDefault } = react_native);
 const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
 const map = new Map();
 const map1 = new Map();
 const set = new Set();
 const set1 = new Set();
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFrameLayerAsset(arg0) {
-  let closure_1;
-  let collectiblesItemAssetUrl;
-  let layer;
-  let ratio;
-  let skuId;
-  let tmp4;
-  let tmp5;
-  let width;
-  obj = collectiblesItemAssetUrl(ratio[7]);
-  const cResult = obj.c(14);
-  ({ width, skuId, layer } = arg0);
-  const obj2 = collectiblesItemAssetUrl(ratio[5]);
-  const obj3 = { skuId, assetFormat: collectiblesItemAssetUrl(ratio[5]).CollectiblesItemAssetFormat.STATIC, assetId: layer.id };
-  collectiblesItemAssetUrl = obj2.getCollectiblesItemAssetUrl(obj3);
-  const tmp3 = _slicedToArray(react.useState(null), 2);
-  [tmp4, tmp5] = tmp3;
-  importDefault = tmp5;
-  let value;
-  const obj4 = react;
-  if (null != collectiblesItemAssetUrl) {
-    value = map.get(collectiblesItemAssetUrl);
-  }
-  ratio = value;
-  if (null != tmp4) {
-    ratio = value;
-    if (tmp4.baseUrl === collectiblesItemAssetUrl) {
-      ratio = tmp4.ratio;
-    }
-  }
-  if (cResult[0] === collectiblesItemAssetUrl) {
-    if (cResult[1] === ratio) {
-      let tmp8;
-      if (cResult[2] === tmp5) {
-        tmp8 = cResult[3];
-      }
-      if (cResult[4] === collectiblesItemAssetUrl) {
-        let tmp9;
-        if (cResult[5] === ratio) {
-          tmp9 = cResult[6];
-        }
-        const effect = obj4.useEffect(tmp8, tmp9);
-        let num4 = 0;
-        if (null != ratio) {
-          num4 = ratio * width;
-        }
-        if (cResult[7] === collectiblesItemAssetUrl) {
-          if (cResult[8] === ratio) {
-            let tmp11;
-            if (cResult[9] === width) {
-              tmp11 = cResult[10];
-            }
-            if (cResult[11] === tmp11) {
-              let tmp18;
-              if (cResult[12] === num4) {
-                tmp18 = cResult[13];
-              }
-              return tmp18;
-            }
-            const obj5 = { assetUrl: tmp11, imageHeight: num4 };
-            cResult[11] = tmp11;
-            cResult[12] = num4;
-            cResult[13] = obj5;
-            tmp18 = obj5;
-          }
-        }
-        let combined = null;
-        if (null != collectiblesItemAssetUrl) {
-          combined = null;
-          if (null != ratio) {
-            const _Math = Math;
-            const rounded = Math.round(width * closure_7.get());
-            const _Math2 = Math;
-            const _HermesInternal = HermesInternal;
-            combined = "" + collectiblesItemAssetUrl + "?width=" + rounded + "&height=" + Math.round(rounded * ratio);
-          }
-        }
-        cResult[7] = collectiblesItemAssetUrl;
-        cResult[8] = ratio;
-        cResult[9] = width;
-        cResult[10] = combined;
-        tmp11 = combined;
-      }
-      const items = [collectiblesItemAssetUrl, ratio];
-      cResult[4] = collectiblesItemAssetUrl;
-      cResult[5] = ratio;
-      cResult[6] = items;
-      tmp9 = items;
-    }
-  }
-  const fn = function n() {
-    let tmp = c0;
-    if (null != c0) {
-      if ("" !== tmp) {
-        if (null == ratio) {
-          let resolved;
-          c0 = false;
-          let closure_0 = tmp;
-          const value = map.get(tmp);
-          if (null != value) {
-            resolved = Promise.resolve(value);
-          } else {
-            obj = map1;
-            resolved = map1.get(tmp);
-            if (null == resolved) {
-              const self = this;
-              const self2 = this;
-              const promise = new Promise(f103311);
-              const cleanupPromise = promise.finally(() => set.delete(closure_0));
-              const result = obj.set(tmp, cleanupPromise);
-              resolved = cleanupPromise;
-            }
-          }
-          resolved.then((ratio) => {
-            const tmp = c0 || null == ratio;
-            if (!tmp) {
-              obj = { baseUrl: collectiblesItemAssetUrl, ratio };
-              importDefault(obj);
-            }
-          });
-          return () => {
-            c0 = true;
-          };
-        }
-      }
-    }
-  };
-  cResult[0] = collectiblesItemAssetUrl;
-  cResult[1] = ratio;
-  cResult[2] = tmp5;
-  cResult[3] = fn;
-  tmp8 = fn;
-}) : (function useProfileFrameLayerAsset(width) {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
+
+export default function useProfileFrameLayerAsset(width) {
   let c1;
   let layer;
   let skuId;
@@ -325,7 +189,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f103311);
+              const promise = new Promise(f93062);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;
@@ -361,307 +225,21 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfileFr
     }
   }
   return { assetUrl, imageHeight };
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLayerImages(frame) {
-  let closure_5;
-  let containerWidth;
-  let filterLayer;
-  let first;
-  let profileThemeType;
-  let tmp = filterLayer;
-  obj = frame(filterLayer[7]);
-  const cResult = obj.c(27);
-  frame = frame.frame;
-  ({ containerWidth, profileThemeType } = frame);
-  filterLayer = frame.filterLayer;
-  let obj2 = frame(filterLayer[9]);
-  const isProfileFrameLayerPreloadEnabled = obj2.useIsProfileFrameLayerPreloadEnabled("usePreloadLayerImages");
-  if (null != frame) {
-    let tmp5;
-    if (cResult[1] === filterLayer) {
-      if (cResult[2] === frame.layers) {
-        if (cResult[3] === frame.skuId) {
-          if (cResult[4] === profileThemeType) {
-            tmp5 = cResult[5];
-          }
-          first = tmp5;
-        }
-      }
+};
+export function isProfileFrameLayerShown(anchor, arg1, fn) {
+  let tmp2 = !(null != fn && !fn(anchor));
+  const tmp = null != fn && !fn(anchor);
+  if (tmp2) {
+    let tmp5 = arg1 === UserProfileThemeTypes.PREVIEW;
+    if (!tmp5) {
+      tmp5 = "top" === anchor.anchor && "staple" === anchor.type;
+      const tmp6 = "top" === anchor.anchor && "staple" === anchor.type;
     }
-    if (cResult[6] === filterLayer) {
-      let tmp6;
-      let tmp7;
-      let tmp9;
-      if (cResult[7] === profileThemeType) {
-        tmp6 = cResult[8];
-      }
-      if (cResult[9] !== frame.skuId) {
-        const fn2 = function h(assetId) {
-          const skuId = frame.skuId;
-          obj = CollectiblesAssetUtils;
-          const obj2 = { skuId, assetFormat: CollectiblesAssetUtils.CollectiblesItemAssetFormat.STATIC, assetId: assetId.id };
-          return obj.getCollectiblesItemAssetUrl(obj2);
-        };
-        cResult[9] = frame.skuId;
-        cResult[10] = fn2;
-        tmp7 = fn2;
-      } else {
-        tmp7 = cResult[10];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function p(arg0) {
-          return null != arg0 && "" !== arg0;
-        };
-        cResult[11] = fn3;
-        tmp9 = fn3;
-      } else {
-        tmp9 = cResult[11];
-      }
-      const layers = frame.layers;
-      const found = layers.filter(tmp6);
-      const mapped = found.map(tmp7);
-      const found1 = mapped.filter(tmp9);
-      cResult[1] = filterLayer;
-      cResult[2] = frame.layers;
-      cResult[3] = frame.skuId;
-      cResult[4] = profileThemeType;
-      cResult[5] = found1;
-      tmp5 = found1;
-    }
-    const fn = function v(anchor) {
-      let tmp3 = null != filterLayer;
-      const tmp = profileThemeType;
-      if (tmp3) {
-        tmp3 = !tmp2(anchor);
-      }
-      let tmp4 = !tmp3;
-      if (tmp4) {
-        let tmp6 = tmp === UserProfileThemeTypes.PREVIEW;
-        if (!tmp6) {
-          tmp6 = "top" === anchor.anchor && "staple" === anchor.type;
-          const tmp7 = "top" === anchor.anchor && "staple" === anchor.type;
-        }
-        tmp4 = tmp6;
-      }
-      return tmp4;
-    };
-    cResult[6] = filterLayer;
-    cResult[7] = profileThemeType;
-    cResult[8] = fn;
-    tmp6 = fn;
-  } else {
-    let tmp4 = globalThis;
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [];
-      cResult[0] = items;
-      first = items;
-    } else {
-      first = cResult[0];
-    }
+    tmp2 = tmp5;
   }
-  if (cResult[12] === containerWidth) {
-    let tmp11;
-    if (cResult[13] === frame) {
-      tmp11 = cResult[14];
-    }
-    react = tmp11;
-    let skuId;
-    if (frame != null) {
-      skuId = frame.skuId;
-    }
-    let _HermesInternal = HermesInternal;
-    const combined = "" + skuId + ":" + tmp11;
-    let closure_7 = first(react.useState(null), 2)[1];
-    first(react.useState(null), 2);
-    const obj4 = react;
-    if (cResult[15] === first) {
-      let tmp19;
-      if (cResult[16] === tmp11) {
-        tmp19 = cResult[17];
-      }
-      let closure_8 = tmp19;
-      if (cResult[18] === first) {
-        if (cResult[19] === isProfileFrameLayerPreloadEnabled) {
-          if (cResult[20] === tmp19) {
-            if (cResult[21] === combined) {
-              let tmp21;
-              let tmp22;
-              let tmp25;
-              if (cResult[22] === tmp11) {
-                tmp21 = cResult[23];
-                tmp22 = cResult[24];
-              }
-              const effect = obj4.useEffect(tmp21, tmp22);
-              let tmp24 = !isProfileFrameLayerPreloadEnabled;
-              class E {
-                constructor() {
-                  tmp = closure_3;
-                  if (tmp) {
-                    tmp2 = closure_5;
-                    num = 0;
-                    if (closure_5 > 0) {
-                      tmp3 = closure_8;
-                      if (!tmp3) {
-                        flag = false;
-                        c0 = false;
-                        markSettled = function markSettled() {
-                          const tmp = c0;
-                          if (!tmp) {
-                            closure_7(combined);
-                          }
-                        };
-                        tmp4 = globalThis;
-                        _setTimeout = setTimeout;
-                        num2 = 3000;
-                        closure_1 = setTimeout(markSettled, 3000);
-                        _Promise = Promise;
-                        tmp5 = closure_4;
-                        allPromises = Promise.all(closure_4.map((item) => preloadLayer(item, closure_1_5)));
-                        nextPromise = allPromises.then(markSettled);
-                        return () => {
-                          c0 = true;
-                          clearTimeout(closure_1);
-                        };
-                      }
-                    }
-                  }
-                  return;
-                }
-              }
-              if (!tmp24) {
-                tmp24 = tmp18 === combined;
-              }
-              if (cResult[25] !== tmp24) {
-                const obj3 = { settled: tmp24 };
-                class E {
-                  constructor() {
-                    tmp = closure_3;
-                    if (tmp) {
-                      tmp2 = closure_5;
-                      num = 0;
-                      if (closure_5 > 0) {
-                        tmp3 = closure_8;
-                        if (!tmp3) {
-                          flag = false;
-                          c0 = false;
-                          markSettled = function markSettled() {
-                            const tmp = c0;
-                            if (!tmp) {
-                              closure_7(combined);
-                            }
-                          };
-                          tmp4 = globalThis;
-                          _setTimeout = setTimeout;
-                          num2 = 3000;
-                          closure_1 = setTimeout(markSettled, 3000);
-                          _Promise = Promise;
-                          tmp5 = closure_4;
-                          allPromises = Promise.all(closure_4.map((item) => preloadLayer(item, closure_1_5)));
-                          nextPromise = allPromises.then(markSettled);
-                          return () => {
-                            c0 = true;
-                            clearTimeout(closure_1);
-                          };
-                        }
-                      }
-                    }
-                    return;
-                  }
-                }
-                cResult[26] = obj3;
-                tmp25 = obj3;
-              } else {
-                tmp25 = cResult[26];
-              }
-              return tmp25;
-            }
-          }
-        }
-      }
-      class E {
-        constructor() {
-          tmp = closure_3;
-          if (tmp) {
-            tmp2 = closure_5;
-            num = 0;
-            if (closure_5 > 0) {
-              tmp3 = closure_8;
-              if (!tmp3) {
-                flag = false;
-                c0 = false;
-                markSettled = function markSettled() {
-                  const tmp = c0;
-                  if (!tmp) {
-                    closure_7(combined);
-                  }
-                };
-                tmp4 = globalThis;
-                _setTimeout = setTimeout;
-                num2 = 3000;
-                closure_1 = setTimeout(markSettled, 3000);
-                _Promise = Promise;
-                tmp5 = closure_4;
-                allPromises = Promise.all(closure_4.map((item) => preloadLayer(item, closure_1_5)));
-                nextPromise = allPromises.then(markSettled);
-                return () => {
-                  c0 = true;
-                  clearTimeout(closure_1);
-                };
-              }
-            }
-          }
-          return;
-        }
-      }
-      const items1 = [isProfileFrameLayerPreloadEnabled, first, tmp11, combined, tmp19];
-      cResult[18] = first;
-      cResult[19] = isProfileFrameLayerPreloadEnabled;
-      cResult[20] = tmp19;
-      cResult[21] = combined;
-      cResult[22] = tmp11;
-      cResult[23] = E;
-      cResult[24] = items1;
-      tmp22 = items1;
-      tmp21 = E;
-    }
-    const tmp20 = tmp11 > 0 && first.every((item) => {
-      let flag = true;
-      const tmp = closure_5;
-      if (!set1.has(item)) {
-        const value = map.get(item);
-        let hasItem = null != value;
-        if (hasItem) {
-          const _Math = Math;
-          const has = set.has;
-          const rounded = Math.round(tmp * metroImportDefault.get());
-          const _Math2 = Math;
-          const _HermesInternal = HermesInternal;
-          hasItem = has("" + item + "?width=" + rounded + "&height=" + Math.round(rounded * value));
-        }
-        flag = hasItem;
-      }
-      return flag;
-    });
-    cResult[15] = first;
-    cResult[16] = tmp11;
-    cResult[17] = tmp20;
-    tmp19 = tmp20;
-  }
-  let num13 = 0;
-  if (null != frame) {
-    num13 = 0;
-    if (containerWidth > 0) {
-      num13 = containerWidth + 2 * profileThemeType(tmp[10])(frame, containerWidth).overflowHorizontal;
-    }
-  }
-  cResult[12] = containerWidth;
-  cResult[13] = frame;
-  cResult[14] = num13;
-  tmp11 = num13;
-}) : (function usePreloadLayerImages(frame) {
+  return tmp2;
+}
+export function usePreloadLayerImages(frame) {
   let containerWidth;
   let profileThemeType;
   frame = frame.frame;
@@ -672,7 +250,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLa
   let closure_7;
   let c8;
   let tmp = filterLayer;
-  obj = frame(filterLayer[9]);
+  obj = frame(filterLayer[7]);
   const isProfileFrameLayerPreloadEnabled = obj.useIsProfileFrameLayerPreloadEnabled("usePreloadLayerImages");
   let obj2 = num;
   let items = [frame, profileThemeType, filterLayer];
@@ -715,7 +293,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLa
     num = 0;
     if (containerWidth > 0) {
       let tmp3 = profileThemeType;
-      num = containerWidth + 2 * profileThemeType(tmp[10])(frame, containerWidth).overflowHorizontal;
+      num = containerWidth + 2 * profileThemeType(tmp[8])(frame, containerWidth).overflowHorizontal;
     }
   }
   let skuId;
@@ -766,7 +344,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLa
           let c0 = false;
           const _setTimeout = setTimeout;
           const timeout = setTimeout(markSettled, 3000);
-          const allPromises = Promise.all(memo.map((item) => preloadLayer(item, num)));
+          const allPromises = Promise.all(memo.map((item) => {
+            function preloadLayer() {
+              return closure_1_15(...arguments);
+            }
+            return preloadLayer(item, num);
+          }));
           allPromises.then(markSettled);
           return () => {
             c0 = true;
@@ -784,23 +367,4 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreloadLa
     settled = first === combined;
   }
   return { settled };
-});
-function isProfileFrameLayerShown(anchor, profileThemeType, filterLayer) {
-  let tmp2 = !(null != filterLayer && !filterLayer(anchor));
-  const tmp = null != filterLayer && !filterLayer(anchor);
-  if (tmp2) {
-    let tmp5 = profileThemeType === UserProfileThemeTypes.PREVIEW;
-    if (!tmp5) {
-      tmp5 = "top" === anchor.anchor && "staple" === anchor.type;
-      const tmp6 = "top" === anchor.anchor && "staple" === anchor.type;
-    }
-    tmp2 = tmp5;
-  }
-  return tmp2;
 }
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/useProfileFrameLayerAsset.tsx");
-
-export default tmp7;
-export { isProfileFrameLayerShown };
-export const usePreloadLayerImages = tmp8;

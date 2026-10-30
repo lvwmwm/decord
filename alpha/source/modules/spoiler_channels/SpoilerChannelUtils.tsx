@@ -1,13 +1,12 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6747
+// Function ID: 6748
 // Name: SpoilerChannelUtils
-// Dependencies: [4857, 6741, 558, 576, 504, 2]
-// Exports: shouldShowSpoilerGateForChannelId
+// Dependencies: [4858, 6748, 504, 2]
+// Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 6740 (SpoilerChannelUtils)
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6741 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 6747 (SpoilerChannelUtils)
+import ChannelStore from "ChannelStore" /* 4858 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6748 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,89 +54,28 @@ function isChannelSpoilerGated(channel, ChannelSpoilerAgreeStore, ChannelStore) 
   }
   return null != id1;
 }
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSpoilerGatingChannelId(arg0) {
-  let first;
-  let spoilerChannel;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelSpoilerAgreeStore, ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      if (ChannelSpoilerAgreeStore !== undefined) {
-        if (ChannelStore !== undefined) {
-          let id1 = null;
-          if (null != spoilerChannel) {
-            if (spoilerChannel.isSpoilerChannel()) {
-              let id = null;
-              if (!ChannelSpoilerAgreeStore.didAgree(spoilerChannel.id)) {
-                id = obj.id;
-              }
-              id1 = id;
-            } else {
-              id1 = null;
-              if (null != spoilerChannel.parent_id) {
-                const channel = obj3.getChannel(obj.parent_id);
-                id1 = null;
-                if (null != channel) {
-                  id1 = null;
-                  if (channel.isSpoilerChannel()) {
-                    id1 = null;
-                    if (!ChannelSpoilerAgreeStore.didAgree(channel.id)) {
-                      id1 = channel.id;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          return id1;
-        }
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useGetSpoilerGatingChannelId(arg0) {
-  let spoilerChannel;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/spoiler_channels/SpoilerChannelUtils.tsx");
+
+export function useGetSpoilerGatingChannelId(channel) {
+  _require = channel;
   const obj = require("get initialized");
   const items = [ChannelSpoilerAgreeStore, ChannelStore];
-  const items1 = [arg0];
+  const items1 = [channel];
   return obj.useStateFromStores(items, () => {
     if (ChannelSpoilerAgreeStore !== undefined) {
       if (ChannelStore !== undefined) {
         let id1 = null;
-        if (null != spoilerChannel) {
-          if (spoilerChannel.isSpoilerChannel()) {
+        if (null != channel) {
+          if (channel.isSpoilerChannel()) {
             let id = null;
-            if (!ChannelSpoilerAgreeStore.didAgree(spoilerChannel.id)) {
+            if (!ChannelSpoilerAgreeStore.didAgree(channel.id)) {
               id = obj.id;
             }
             id1 = id;
           } else {
             id1 = null;
-            if (null != spoilerChannel.parent_id) {
-              const channel = obj3.getChannel(obj.parent_id);
+            if (null != channel.parent_id) {
+              channel = obj3.getChannel(obj.parent_id);
               id1 = null;
               if (null != channel) {
                 id1 = null;
@@ -155,95 +93,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSpoi
       }
     }
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelSpoilerGated(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelSpoilerAgreeStore, ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return isChannelSpoilerGated(closure_0, ChannelSpoilerAgreeStore, ChannelStore);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useIsChannelSpoilerGated(arg0) {
-  let closure_0;
-  _require = arg0;
+}
+export { isChannelSpoilerGated };
+export function useIsChannelSpoilerGated(channel) {
+  _require = channel;
   const items = [ChannelSpoilerAgreeStore, ChannelStore];
-  const items1 = [arg0];
+  const items1 = [channel];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => isChannelSpoilerGated(closure_0, ChannelSpoilerAgreeStore, ChannelStore), items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowSpoilerGateForChannelId(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, ChannelSpoilerAgreeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return isChannelSpoilerGated(ChannelStore.getChannel(closure_0), ChannelSpoilerAgreeStore, ChannelStore);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useShouldShowSpoilerGateForChannelId(arg0) {
+  return obj.useStateFromStores(items, () => isChannelSpoilerGated(channel, ChannelSpoilerAgreeStore, ChannelStore), items1);
+}
+export function useShouldShowSpoilerGateForChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [ChannelStore, ChannelSpoilerAgreeStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => isChannelSpoilerGated(ChannelStore.getChannel(closure_0), ChannelSpoilerAgreeStore, ChannelStore), items1);
-});
-const result = size.fileFinishedImporting("modules/spoiler_channels/SpoilerChannelUtils.tsx");
-
-export const useGetSpoilerGatingChannelId = tmp2;
-export { isChannelSpoilerGated };
-export const useIsChannelSpoilerGated = tmp3;
-export const useShouldShowSpoilerGateForChannelId = tmp4;
+}
 export function shouldShowSpoilerGateForChannelId(channelId) {
   const tmp = null != channelId && isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   return tmp;

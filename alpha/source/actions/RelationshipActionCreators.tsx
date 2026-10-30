@@ -1,27 +1,27 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7482
+// Function ID: 7483
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1389, 1084, 7475, 7476, 6915, 5946, 6891, 1125, 7477, 7478, 7479, 1294, 5059, 5012, 7481, 584, 7482, 2]
+// Dependencies: [32, 1384, 1072, 7483, 7484, 6922, 5953, 6898, 1114, 7485, 7486, 7487, 1283, 5063, 5016, 7489, 572, 7490, 2]
 
-// Module 7474 (RelationshipActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl10 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import shared from "shared" /* 5012 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6891 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6915 */;
-import RelationshipConstants from "RelationshipConstants" /* 7475 */;
-import Constants2 from "Constants" /* 7476 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7477 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7478 */;
-import FriendsUtils from "FriendsUtils" /* 7479 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 7481 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7482 */;
+// Module 7482 (RelationshipActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl10 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import shared from "shared" /* 5016 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6898 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 6922 */;
+import RelationshipConstants from "RelationshipConstants" /* 7483 */;
+import Constants2 from "Constants" /* 7484 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7485 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7486 */;
+import FriendsUtils from "FriendsUtils" /* 7487 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7489 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -93,12 +93,12 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               }
               humanizeAbortCodeResult = humanizeAbortCode(num, userTag);
             } else {
-              const intl = tmp19(1125).intl;
-              humanizeAbortCodeResult = intl.string(tmp19(1125).t.paDJBM);
+              const intl = tmp19(1114).intl;
+              humanizeAbortCodeResult = intl.string(tmp19(1114).t.paDJBM);
             }
             obj = { title: intl2.string(intl10.t["6moJ8s"]), body: humanizeAbortCodeResult, confirmText: intl3.string(intl10.t.BddRzS) };
-            intl2 = tmp19(1125).intl;
-            intl3 = tmp19(1125).intl;
+            intl2 = tmp19(1114).intl;
+            intl3 = tmp19(1114).intl;
             const tmp19Result2 = ContextMenuActionCreators;
             tmp19Result2.closeContextMenu();
             const obj3 = AlertActionCreatorsDefault;
@@ -132,12 +132,12 @@ let obj2 = {
     }
     [tmp3, tmp4] = str.split("#");
     _slicedToArray(str.split("#"), 2);
-    const HTTP = str(1294).HTTP;
+    const HTTP = str(1283).HTTP;
     const request = { url: closure_6.USER_RELATIONSHIPS(), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     body = { username: tmp3, discriminator: parseInt(tmp4), note };
     const merged = Object.assign(captchaPayload);
-    obj3 = str(1294);
+    obj3 = str(1283);
     const postResult = post(request);
     return postResult.catch((error) => {
       handleRelationshipAddError(error, errorUxConfig, str);
@@ -204,15 +204,15 @@ let obj2 = {
       announce(intl.string(require("intl").t.vGSLa2));
     });
   },
-  blockUser(userId, context, channelId) {
-    let closure_0 = userId;
+  blockUser(id, context, channelId) {
+    let closure_0 = id;
     let closure_1 = channelId;
-    obj = { userId, context, type: constants2.BLOCKED };
+    obj = { userId: id, context, type: constants2.BLOCKED };
     return obj2.addRelationship(obj, function onSuccess() {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       obj = SafetyToastsUtils;
-      announce(obj.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, userId, channelId));
+      announce(obj.getSafetyToastTypeContent(SafetyToastType.BLOCK_SUCCESS, id, channelId));
     });
   },
   unblockUser(id, arg1, channelId) {
@@ -312,14 +312,14 @@ let obj2 = {
       announce(intl.string(require("intl").t.n6Jo3E));
     });
   },
-  ignoreUser(id, mobile_iar_ignore_user_element, channelId) {
+  ignoreUser(id, IGNORE_CONFIRMATION_ACTION_SHEET, channelId) {
     let obj3;
     let userId;
     _require = id;
     const HTTP = require("HTTPUtils").HTTP;
     obj = { url: closure_6.IGNORE_USER(id), context: obj2, rejectWithError: obj3.rejectWithMigratedError() };
     const put = HTTP.put;
-    obj2 = { location: mobile_iar_ignore_user_element };
+    obj2 = { location: IGNORE_CONFIRMATION_ACTION_SHEET };
     obj3 = require("HTTPUtils");
     const putResult = put(obj);
     const nextPromise = putResult.then(() => {

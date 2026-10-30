@@ -1,13 +1,11 @@
-// Module ID: 5061
-// Function ID: 5062
+// Module ID: 5065
+// Function ID: 5066
 // Name: OverlayV3Experiment
-// Dependencies: [1453, 558, 576, 2]
-// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayNativeWindowRenderingConfig, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments
+// Dependencies: [1448, 2]
+// Exports: getOverlayChatConfig, getOverlayDefaultKeybind, getOverlayNativeWindowRenderingConfig, getOverlayStreamerModeConfig, trackOverlayInitializedExperiments, useOverlayChat, useOverlayStreamerMode
 
-// Module 5061 (OverlayV3Experiment)
-import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 5065 (OverlayV3Experiment)
+import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,7 +13,7 @@ let obj4;
 let obj6;
 let obj8;
 let ApexExperiment = ApexExperiment_mod;
-let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "r" }, variations: obj2 };
+let obj = { name: "2026-03-overlay-default-keybind", kind: "user", defaultConfig: { keybindOverride: "getCurrentUser" }, variations: obj2 };
 obj2 = { 1: null, 2: { keybindOverride: "ctrl+tab" }, 3: { keybindOverride: "alt+x" } };
 obj2[3] = { keybindOverride: "ctrl+l" };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
@@ -24,55 +22,11 @@ const obj3 = { name: "2025-11-overlay-chat", kind: "user", defaultConfig: { hasC
 obj4 = { 1: null, 2: { hasChat: true, hasFriendList: false, showNowPlayingForDifferentGames: false }, 3: { hasChat: true, hasFriendList: true, showNowPlayingForDifferentGames: false } };
 obj4[3] = { hasChat: true, hasFriendList: true, showNowPlayingForDifferentGames: true };
 const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlayChat(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment1.useConfig(tmp2);
-}) : (function useOverlayChat(location) {
-  const obj = { location };
-  return apexExperiment1.useConfig(obj);
-});
 ApexExperiment = ApexExperiment_mod;
 const obj5 = { name: "2026-04-overlay-streamer-mode", kind: "user", defaultConfig: { enabled: false }, variations: obj6 };
 obj6 = { 1: null };
 obj6[1] = { enabled: true };
 const apexExperiment2 = ApexExperiment.createApexExperiment(obj5);
-ReactCompilerGating = ReactCompilerGating_mod;
-function getOverlayChatConfig(location) {
-  const obj = { location };
-  return apexExperiment1.getConfig(obj);
-}
-function getOverlayStreamerModeConfig(StreamerModeStore) {
-  const obj = { location: StreamerModeStore };
-  return apexExperiment2.getConfig(obj);
-}
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOverlayStreamerMode(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment2.useConfig(tmp2).enabled;
-}) : (function useOverlayStreamerMode(location) {
-  const obj = { location };
-  return apexExperiment2.useConfig(obj).enabled;
-});
 ApexExperiment = ApexExperiment_mod;
 const obj7 = { name: "2026-10-overlay-native-window-rendering", kind: "user", defaultConfig: { enabled: false, enableNVOverlay: false }, variations: obj8 };
 obj8 = { 1: null, 2: { enabled: true, enableNVOverlay: false } };
@@ -86,11 +40,23 @@ export function getOverlayDefaultKeybind(location) {
   return apexExperiment.getConfig(obj);
 }
 export const OverlayChatExperiment = apexExperiment1;
-export { getOverlayChatConfig };
-export const useOverlayChat = tmp4;
+export function getOverlayChatConfig(location) {
+  const obj = { location };
+  return apexExperiment1.getConfig(obj);
+}
+export function useOverlayChat(location) {
+  const obj = { location };
+  return apexExperiment1.useConfig(obj);
+}
 export const OverlayStreamerModeExperiment = apexExperiment2;
-export { getOverlayStreamerModeConfig };
-export const useOverlayStreamerMode = tmp6;
+export function getOverlayStreamerModeConfig(StreamerModeStore) {
+  const obj = { location: StreamerModeStore };
+  return apexExperiment2.getConfig(obj);
+}
+export function useOverlayStreamerMode(location) {
+  const obj = { location };
+  return apexExperiment2.useConfig(obj).enabled;
+}
 export function trackOverlayInitializedExperiments() {
   const config = apexExperiment1.getConfig({ location: "OVERLAY_INITIALIZED" });
   const config1 = apexExperiment2.getConfig({ location: "OVERLAY_INITIALIZED" });

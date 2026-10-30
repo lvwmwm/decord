@@ -1,23 +1,20 @@
-// Module ID: 5624
-// Function ID: 5625
+// Module ID: 5596
+// Function ID: 5597
 // Name: VEVOOStore
-// Dependencies: [570, 558, 1271, 2]
+// Dependencies: [560, 1260, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 5624 (VEVOOStore)
-import react_native from "react-native" /* 1271 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 5596 (VEVOOStore)
+import react_native from "react-native" /* 1260 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let closure_2 = {};
-const state = module_570.create(() => closure_2);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
+const state = module_560.create(() => closure_2);
+const result = size.fileFinishedImporting("modules/visual_effect_view/native/overrides/VEVOOStore.tsx");
 
 export function useVisualEffectViewOverrides() {
   return state();

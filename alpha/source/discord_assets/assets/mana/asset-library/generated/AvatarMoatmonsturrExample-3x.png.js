@@ -1,8 +1,8 @@
-// Module ID: 19789
-// Function ID: 19790
+// Module ID: 19852
+// Function ID: 19853
 // Dependencies: [2]
 
-// Module 19789
+// Module 19852
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarMoatmonsturrExample-3x.png.js");

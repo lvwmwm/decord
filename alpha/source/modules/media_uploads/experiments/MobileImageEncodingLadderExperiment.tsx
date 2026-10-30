@@ -1,11 +1,11 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8229
+// Function ID: 8230
 // Name: MobileImageEncodingLadderExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 // Exports: getMobileImageEncodingLadderConfig
 
-// Module 8226 (MobileImageEncodingLadderExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 8229 (MobileImageEncodingLadderExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-01-image-optimized-encoding-ladder", kind: "user", defaultConfig: { useImageEncodingLadder: false }, variations: { 0: { useImageEncodingLadder: false }, 1: { useImageEncodingLadder: true } } };

@@ -1,83 +1,44 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17029
+// Function ID: 17030
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 558, 576, 6775, 2]
+// Dependencies: [19, 21, 6782, 2]
+// Exports: QuestDockBountyProvider, QuestDockPlayableProvider, QuestDockQuestProvider, useBountyCreative, usePlayableCreative, useQuestCreative, useQuestDockBounty, useQuestDockCreative, useQuestDockPlayable, useQuestDockQuest
 
-// Module 16975 (QuestDockCreativeContext)
+// Module 17029 (QuestDockCreativeContext)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 const redux = react.createContext(null);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockQuestProvider(children) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  children = children.children;
-  const tmp2 = closure_5(children.quest);
-  if (cResult[0] === children) {
-    let tmp3;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <redux.Provider value={tmp2}>{children}</redux.Provider>;
-  cResult[0] = children;
-  cResult[1] = tmp2;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function QuestDockQuestProvider(children) {
-  return <redux.Provider value={closure_5(arg0.quest)}>{arg0.children}</redux.Provider>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBountyProvider(children) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  children = children.children;
-  const tmp2 = closure_6(children.bounty);
-  if (cResult[0] === children) {
-    let tmp3;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <redux.Provider value={tmp2}>{children}</redux.Provider>;
-  cResult[0] = children;
-  cResult[1] = tmp2;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function QuestDockBountyProvider(bounty) {
-  return <redux.Provider value={closure_6(arg0.bounty)}>{arg0.children}</redux.Provider>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockPlayableProvider(children) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  children = children.children;
-  const tmp2 = closure_7(children.playable);
-  if (cResult[0] === children) {
-    let tmp3;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <redux.Provider value={tmp2}>{children}</redux.Provider>;
-  cResult[0] = children;
-  cResult[1] = tmp2;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function QuestDockPlayableProvider(children) {
-  return <redux.Provider value={closure_7(arg0.playable)}>{arg0.children}</redux.Provider>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockQuest() {
+const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockCreativeContext.tsx");
+
+export function QuestDockQuestProvider(children) {
+  const quest = children.quest;
+  const items = [quest];
+  return <redux.Provider value={react.useMemo(() => {
+    const obj = { type: AdCreativeType.AdCreativeType.QUEST, quest };
+    return obj;
+  }, items)}>{arg0.children}</redux.Provider>;
+}
+export function QuestDockBountyProvider(bounty) {
+  bounty = bounty.bounty;
+  const items = [bounty];
+  return <redux.Provider value={react.useMemo(() => {
+    const obj = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty };
+    return obj;
+  }, items)}>{arg0.children}</redux.Provider>;
+}
+export function QuestDockPlayableProvider(children) {
+  const playable = children.playable;
+  const items = [playable];
+  return <redux.Provider value={react.useMemo(() => {
+    const obj = { type: AdCreativeType.AdCreativeType.PLAYABLE, playable };
+    return obj;
+  }, items)}>{arg0.children}</redux.Provider>;
+}
+export function useQuestDockQuest() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -92,46 +53,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDo
   } else {
     return context.quest;
   }
-}) : (function useQuestDockQuest() {
-  const context = react.useContext(redux);
-  let type;
-  if (context != null) {
-    type = context.type;
-  }
-  if (type !== AdCreativeType.AdCreativeType.QUEST) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useQuestDockQuest requires a QuestDockQuestProvider ancestor");
-    throw error;
-  } else {
-    return context.quest;
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestCreative(quest) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== quest) {
-    const obj2 = { type: AdCreativeType.AdCreativeType.QUEST, quest };
-    cResult[0] = quest;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useQuestCreative(quest) {
+}
+export function useQuestCreative(quest) {
+  let closure_0 = quest;
   const items = [quest];
   return react.useMemo(() => {
     const obj = { type: AdCreativeType.AdCreativeType.QUEST, quest };
     return obj;
   }, items);
-});
-let closure_5 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockBounty() {
+}
+export function useQuestDockBounty() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -146,46 +77,16 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDo
   } else {
     return context.bounty;
   }
-}) : (function useQuestDockBounty() {
-  const context = react.useContext(redux);
-  let type;
-  if (context != null) {
-    type = context.type;
-  }
-  if (type !== AdCreativeType.AdCreativeType.BOUNTY) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useQuestDockBounty requires a QuestDockBountyProvider ancestor");
-    throw error;
-  } else {
-    return context.bounty;
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBountyCreative(bounty) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== bounty) {
-    const obj2 = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty };
-    cResult[0] = bounty;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useBountyCreative(bounty) {
-  const items = [bounty];
+}
+export function useBountyCreative(questDockBounty) {
+  let closure_0 = questDockBounty;
+  const items = [questDockBounty];
   return react.useMemo(() => {
     const obj = { type: AdCreativeType.AdCreativeType.BOUNTY, bounty };
     return obj;
   }, items);
-});
-let closure_6 = tmp8;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockPlayable() {
+}
+export function useQuestDockPlayable() {
   const context = react.useContext(redux);
   let type;
   if (context != null) {
@@ -200,46 +101,16 @@ const tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDo
   } else {
     return context.playable;
   }
-}) : (function useQuestDockPlayable() {
-  const context = react.useContext(redux);
-  let type;
-  if (context != null) {
-    type = context.type;
-  }
-  if (type !== AdCreativeType.AdCreativeType.PLAYABLE) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useQuestDockPlayable requires a QuestDockPlayableProvider ancestor");
-    throw error;
-  } else {
-    return context.playable;
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayableCreative(playable) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== playable) {
-    const obj2 = { type: AdCreativeType.AdCreativeType.PLAYABLE, playable };
-    cResult[0] = playable;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function usePlayableCreative(playable) {
-  const items = [playable];
+}
+export function usePlayableCreative(questDockPlayable) {
+  let closure_0 = questDockPlayable;
+  const items = [questDockPlayable];
   return react.useMemo(() => {
     const obj = { type: AdCreativeType.AdCreativeType.PLAYABLE, playable };
     return obj;
   }, items);
-});
-let closure_7 = tmp10;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestDockCreative() {
+}
+export function useQuestDockCreative() {
   const context = react.useContext(redux);
   if (null == context) {
     const _Error = Error;
@@ -250,27 +121,4 @@ const tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestD
   } else {
     return context;
   }
-}) : (function useQuestDockCreative() {
-  const context = react.useContext(redux);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useQuestDockCreative requires a QuestDockBountyProvider, QuestDockPlayableProvider or QuestDockQuestProvider ancestor");
-    throw error;
-  } else {
-    return context;
-  }
-});
-const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockCreativeContext.tsx");
-
-export const QuestDockQuestProvider = tmp2;
-export const QuestDockBountyProvider = tmp3;
-export const QuestDockPlayableProvider = tmp4;
-export const useQuestDockQuest = tmp5;
-export const useQuestCreative = tmp6;
-export const useQuestDockBounty = tmp7;
-export const useBountyCreative = tmp8;
-export const useQuestDockPlayable = tmp9;
-export const usePlayableCreative = tmp10;
-export const useQuestDockCreative = tmp11;
+}

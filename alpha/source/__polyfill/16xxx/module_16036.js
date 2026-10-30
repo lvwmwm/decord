@@ -1,7 +1,10 @@
 // Module ID: 16036
 // Function ID: 16037
 // Dependencies: []
+// Exports: CanonicalizeLocaleList
 
 // Module 16036
 
-export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];
+export function CanonicalizeLocaleList(items) {
+  return Intl.getCanonicalLocales(items);
+}

@@ -1,114 +1,42 @@
-// Module ID: 11776
-// Function ID: 11777
+// Module ID: 11969
+// Function ID: 11970
 // Name: SingleScreenshare
-// Dependencies: [19, 10956, 21, 5005, 587, 558, 576, 5300, 5748, 11777, 2]
+// Dependencies: [19, 10981, 21, 5009, 575, 5588, 11970, 5754, 2]
+// Exports: default
 
-// Module 11776 (SingleScreenshare)
+// Module 11969 (SingleScreenshare)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import useMountEffectDefault from "useMountEffect" /* 5300 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5748 */;
+import nativeDefault from "native" /* 575 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5754 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 10956 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelCallStore from "ChannelCallStore" /* 10981 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
+let c2;
 let c3;
-let closure_4;
-let obj2;
-let tmp5;
-const ScreenshareParticipantDefault = tmp5(11777);
-({ resetFocus: c3, toggleFocus: closure_4 } = ChannelCallStore);
+({ resetFocus: c2, toggleFocus: c3 } = ChannelCallStore);
 const jsx = Fragment.jsx;
-let obj = { stageStreamContainer: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BLACK };
-let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleScreenshare(arg0) {
-  let channel;
-  let first;
-  let participant;
-  let tmp7;
-  let tmp8;
-  let obj = channel(576);
-  const cResult = obj.c(11);
-  ({ participant, channel } = arg0);
-  const tmp3 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      closure_1_3();
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  useMountEffectDefault(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    function onSingleTap() {
-      closure_1_4();
-    }
-    cResult[1] = onSingleTap;
-    tmp7 = onSingleTap;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== channel.id) {
-    function onDoubleTap() {
-      _false();
-      const obj = ChannelRTCActionCreatorsDefault;
-      const participant = obj.selectParticipant(channel.id, null);
-    }
-    cResult[2] = channel.id;
-    cResult[3] = onDoubleTap;
-    tmp8 = onDoubleTap;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === channel) {
-    let tmp9;
-    if (cResult[5] === tmp3) {
-      tmp9 = cResult[6];
-    }
-    if (cResult[7] === tmp8) {
-      if (cResult[8] === participant) {
-        let tmp11;
-        if (cResult[9] === tmp9) {
-          tmp11 = cResult[10];
-        }
-        return tmp11;
-      }
-    }
-    const tmp13 = jsx(ScreenshareParticipantDefault, { participant, onSingleTap: tmp7, onDoubleTap: tmp8, containerStyle: tmp9 });
-    cResult[7] = tmp8;
-    cResult[8] = participant;
-    cResult[9] = tmp9;
-    cResult[10] = tmp13;
-    tmp11 = tmp13;
-  }
-  let stageStreamContainer;
-  if (channel.isGuildStageVoice()) {
-    stageStreamContainer = tmp3.stageStreamContainer;
-  }
-  cResult[4] = channel;
-  cResult[5] = tmp3;
-  cResult[6] = stageStreamContainer;
-  tmp9 = stageStreamContainer;
-}) : (function SingleScreenshare(channel) {
+let obj = { stageStreamContainer: { backgroundColor: nativeDefault.colors.BLACK } };
+({ backgroundColor: nativeDefault.colors.BLACK });
+let closure_5 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
+
+export default function SingleScreenshare(channel) {
   let stageStreamContainer;
   channel = channel.channel;
   let participant = channel.participant;
-  const tmp = closure_6();
-  useMountEffectDefault(() => {
-    closure_1_3();
+  const tmp = closure_5();
+  channel(5588)(() => {
+    closure_1_2();
   });
   let obj = {
     participant,
     onSingleTap() {
-      closure_1_4();
+      closure_1_3();
     },
     onDoubleTap() {
-      _false();
+      React2();
       const obj = ChannelRTCActionCreatorsDefault;
       const participant = obj.selectParticipant(channel.id, null);
     },
@@ -116,12 +44,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SingleScreen
   };
   stageStreamContainer = undefined;
   const tmp3 = jsx;
-  const tmp4 = ScreenshareParticipantDefault;
+  const tmp4 = channel(11970);
   if (channel.isGuildStageVoice()) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   return tmp3(tmp4, obj);
-});
-const result = size.fileFinishedImporting("modules/video_calls/native/components/SingleScreenshare.tsx");
-
-export default tmp4;
+};

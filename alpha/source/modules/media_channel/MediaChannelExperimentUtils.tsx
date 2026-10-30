@@ -1,11 +1,11 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9018
+// Function ID: 9019
 // Name: MediaChannelExperimentUtils
-// Dependencies: [1084, 2]
+// Dependencies: [1072, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 9005 (MediaChannelExperimentUtils)
-import Constants from "Constants" /* 1084 */;
+// Module 9018 (MediaChannelExperimentUtils)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

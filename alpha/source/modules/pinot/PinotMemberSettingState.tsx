@@ -1,18 +1,16 @@
-// Module ID: 17773
-// Function ID: 17774
+// Module ID: 17844
+// Function ID: 17845
 // Name: PinotMemberSettingState
-// Dependencies: [15566, 4837, 1239, 558, 576, 504, 2]
+// Dependencies: [15606, 4838, 1228, 504, 2]
+// Exports: usePinotMemberSettingState
 
-// Module 17773 (PinotMemberSettingState)
-import react from "react" /* 576 */;
-import wrappers from "wrappers" /* 1239 */;
-import PinotMemberSettingStore from "PinotMemberSettingStore" /* 15566 */;
-import UserSettingDefinitions from "UserSettingDefinitions" /* 4837 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17844 (PinotMemberSettingState)
+import get_initialized from "get initialized" /* 504 */;
+import wrappers from "wrappers" /* 1228 */;
+import PinotMemberSettingStore from "PinotMemberSettingStore" /* 15606 */;
+import UserSettingDefinitions from "UserSettingDefinitions" /* 4838 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const defineProtoSettingResult = UserSettingDefinitions.defineProtoSetting("privacy", "swpMessagePromotionOptedOut", (value) => {
   value = undefined;
   if (value != null) {
@@ -32,48 +30,10 @@ const defineProtoSettingResult = UserSettingDefinitions.defineProtoSetting("priv
   return obj2;
 });
 let c3 = defineProtoSettingResult;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinotMemberSettingState() {
-  let tmp5;
-  let tmp6;
-  let obj = react;
-  const cResult = obj.c(5);
-  let setting = defineProtoSettingResult.useSetting();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PinotMemberSettingStore];
-    const fn = function n() {
-      const obj = { locked: PinotMemberSettingStore.isLocked(), defaultOptedOut: PinotMemberSettingStore.defaultsToOptedOut() };
-      return obj;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
-  const locked = stateFromStoresObject.locked;
-  let tmp10 = locked;
-  if (!tmp10) {
-    if (setting == null) {
-      setting = tmp9;
-    }
-    tmp10 = setting;
-  }
-  if (cResult[2] === locked) {
-    let tmp12;
-    if (cResult[3] === tmp10) {
-      tmp12 = cResult[4];
-    }
-    return tmp12;
-  }
-  const obj2 = { locked, optedOut: tmp10 };
-  cResult[2] = locked;
-  cResult[3] = tmp10;
-  cResult[4] = obj2;
-  tmp12 = obj2;
-}) : (function usePinotMemberSettingState() {
+const result = size.fileFinishedImporting("modules/pinot/PinotMemberSettingState.tsx");
+
+export const PinotMemberOptedOut = defineProtoSettingResult;
+export function usePinotMemberSettingState() {
   let setting = defineProtoSettingResult.useSetting();
   let obj = get_initialized;
   const items = [PinotMemberSettingStore];
@@ -90,8 +50,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePinotMe
     locked = setting;
   }
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/pinot/PinotMemberSettingState.tsx");
-
-export const PinotMemberOptedOut = defineProtoSettingResult;
-export const usePinotMemberSettingState = tmp3;
+}

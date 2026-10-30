@@ -1,12 +1,12 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 5942
+// Function ID: 5943
 // Name: AVError
-// Dependencies: [109, 3, 584, 2]
+// Dependencies: [109, 3, 572, 2]
 
-// Module 5935 (AVError)
+// Module 5942 (AVError)
 import _mod2 from "module_2" /* 2 */;
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 
 let obj10;
@@ -103,7 +103,7 @@ if (mapped.length !== set.size) {
     const obj2 = { type: "REPORT_AV_ERROR", error: type, errorCode: obj4[type].errorCode, severity: obj4[type].severity, category: obj4[type].category, context };
     obj.dispatch(obj2);
   };
-  exports.getErrorInfo = function getErrorInfo(STREAM_FAILED_TO_START) {
-    return obj4[STREAM_FAILED_TO_START];
+  exports.getErrorInfo = function getErrorInfo(avError) {
+    return obj4[avError];
   };
 }

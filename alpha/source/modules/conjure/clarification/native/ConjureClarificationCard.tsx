@@ -1,17 +1,17 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12720
+// Function ID: 12721
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5005, 587, 1125, 3864, 558, 576, 12571, 12572, 12566, 7068, 5271, 8014, 6991, 12573, 7047, 6960, 6965, 12564, 5281, 12577, 12280, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 1114, 3865, 12721, 12722, 12549, 7076, 12442, 5619, 8020, 7048, 12723, 7054, 6968, 6971, 12716, 5629, 12727, 2]
+// Exports: default
 
-// Module 12570 (ConjureClarificationCard)
+// Module 12720 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import ConjureClarification from "ConjureClarification" /* 12566 */;
+import nativeDefault from "native" /* 575 */;
+import ConjureClarification from "ConjureClarification" /* 12549 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -20,7 +20,6 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const f116867 = (item) => "" !== item;
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -34,337 +33,9 @@ obj5 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", justifyCo
 let closure_8 = createStyles(obj);
 let closure_9 = [];
 let closure_10 = [];
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClarificationCard(projectId) {
-  let backText;
-  let first;
-  let hideSubmit;
-  let obj6;
-  let onBack;
-  let onDismiss;
-  let onInputFocusChange;
-  let onSubmit;
-  let optionHeader;
-  let submitText;
-  let tmp10;
-  let tmp12;
-  let tmp19;
-  let tmp27;
-  let tmp = projectId;
-  let tmp2 = onSubmit;
-  let obj = projectId(onSubmit[9]);
-  const cResult = obj.c(107);
-  projectId = projectId.projectId;
-  const clarification = projectId.clarification;
-  onSubmit = projectId.onSubmit;
-  ({ onDismiss, onInputFocusChange } = projectId);
-  ({ submitText, onBack, backText, hideSubmit } = projectId);
-  let tmp4 = closure_8();
-  react = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = {};
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  let obj3 = react;
-  let tmp7 = onInputFocusChange(react.useState(first), 2);
-  const first1 = tmp7[0];
-  let closure_6 = tmp9;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj4 = {};
-    cResult[1] = obj4;
-    tmp10 = obj4;
-  } else {
-    tmp10 = cResult[1];
-  }
-  let closure_7 = tmp6(obj3.useState(tmp10), 2)[1];
-  onInputFocusChange(obj3.useState(tmp10), 2);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj5 = {};
-    cResult[2] = obj5;
-    tmp12 = obj5;
-  } else {
-    tmp12 = cResult[2];
-  }
-  [r10059, closure_8] = onInputFocusChange(obj3.useState(tmp12), 2);
-  onInputFocusChange(obj3.useState(tmp12), 2);
-  if (cResult[3] !== clarification.questions) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    cResult[3] = clarification.questions;
-    cResult[4] = X;
-  } else {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-  }
-  [r10071, closure_9] = onInputFocusChange(obj3.useState(tmp14), 2);
-  onInputFocusChange(obj3.useState(tmp14), 2);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    cResult[5] = tmp17;
-  } else {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-  }
-  closure_10 = tmp6(obj3.useState(tmp16), 2)[1];
-  onInputFocusChange(obj3.useState(tmp16), 2);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    cResult[6] = tmp20;
-    tmp19 = tmp20;
-  } else {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-  }
-  const tmp6Result9 = onInputFocusChange(obj3.useState(tmp19), 2);
-  const first2 = tmp6Result9[0];
-  let closure_12 = tmp6Result9[1];
-  const tmp6Result10 = onInputFocusChange(obj3.useState(0), 2);
-  let closure_13 = tmp6Result10[1];
-  const disabled = null == onSubmit;
-  const bound = Math.min(tmp6Result10[0], clarification.questions.length - 1);
-  let id = tmp25;
-  let closure_17 = tmp26;
-  if (cResult[7] !== clarification.questions[bound]) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    let isImageQuestionResult = obj6.isImageQuestion(tmp25);
-    cResult[7] = clarification.questions[bound];
-    cResult[8] = isImageQuestionResult;
-    tmp27 = isImageQuestionResult;
-  } else {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-  }
-  isImageQuestionResult = tmp27;
-  if (true === clarification.questions[bound].multi_select) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    if (tmp30 == null) {
-      class X {
-        constructor() {
-          questions = clarification.questions;
-          return Object.fromEntries(questions.flatMap((default_entities) => {
-            let items2;
-            if (null != default_entities.default_entities) {
-              const items = [, ];
-              ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-              const items1 = [items];
-              items2 = items1;
-            } else {
-              items2 = [];
-            }
-            return items2;
-          }));
-        }
-      }
-    }
-    let answeredOptionIdsResult = tmp30;
-  } else {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-    answeredOptionIdsResult = obj7.answeredOptionIds(first1[tmp25.id]);
-  }
-  let tmpResult = tmp(tmp2[11]);
-  const conjureOwnImages = tmpResult.useConjureOwnImages(projectId, first1, tmp9);
-  if (cResult[9] === first1) {
-    class X {
-      constructor() {
-        questions = clarification.questions;
-        return Object.fromEntries(questions.flatMap((default_entities) => {
-          let items2;
-          if (null != default_entities.default_entities) {
-            const items = [, ];
-            ({ id: arr2[0], default_entities: arr2[1] } = default_entities);
-            const items1 = [items];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-          return items2;
-        }));
-      }
-    }
-  }
-  function fe(arg0) {
-    if (null != onSubmit) {
-      const obj = {};
-      const merged = Object.assign(first1);
-      obj[id.id] = arg0;
-      closure_6(obj);
-      const obj3 = ConjureClarification;
-      const result = obj3.followingClarificationStep(clarification, obj, bound);
-      const tmp18 = require;
-      if (null == result) {
-        const tmp18Result = tmp18(12566);
-        const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first2, tmp);
-      } else {
-        closure_13(result);
-      }
-    }
-  }
-  cResult[9] = first1;
-  cResult[10] = clarification;
-  cResult[11] = bound;
-  cResult[12] = first2;
-  cResult[13] = onSubmit;
-  cResult[14] = projectId;
-  cResult[15] = clarification.questions[bound].id;
-  cResult[16] = fe;
-}) : (function ConjureClarificationCard(projectId) {
+let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureClarificationCard.tsx");
+
+export default function ConjureClarificationCard(projectId) {
   let Button;
   let Button2;
   let _undefined;
@@ -409,7 +80,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp63;
   let tmp64;
   let tmp8;
-  const f116882 = () => {
+  const f102646 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -452,8 +123,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f116882), 2);
-  const tmp9 = _slicedToArray(react.useState(f116882), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f102646), 2);
+  const tmp9 = _slicedToArray(react.useState(f102646), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -466,7 +137,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let id = tmp18;
   let closure_17 = tmp19;
   const tmp20 = projectId;
-  let obj2 = projectId(onSubmit[10]);
+  let obj2 = projectId(onSubmit[8]);
   const isImageQuestionResult = obj2.isImageQuestion(tmp18);
   let c18 = isImageQuestionResult;
   if (true === tmp18.multi_select) {
@@ -476,11 +147,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     }
     answeredOptionIdsResult = tmp24;
   } else {
-    const tmp20Result = tmp20(onSubmit[10]);
+    const tmp20Result = tmp20(onSubmit[8]);
     answeredOptionIdsResult = tmp20Result.answeredOptionIds(first[tmp18.id]);
   }
   c19 = answeredOptionIdsResult;
-  const tmp20Result7 = tmp20(onSubmit[11]);
+  const tmp20Result7 = tmp20(onSubmit[9]);
   const conjureOwnImages = tmp20Result7.useConjureOwnImages(projectId, first, tmp4);
   let items = [first, clarification, bound, first1, onSubmit, projectId, tmp18.id];
   callback = obj.useCallback((arg0) => {
@@ -493,7 +164,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       const result = obj3.followingClarificationStep(clarification, obj, bound);
       const tmp18 = require;
       if (null == result) {
-        const tmp18Result = tmp18(12566);
+        const tmp18Result = tmp18(12549);
         const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first1, tmp);
       } else {
         closure_13(result);
@@ -556,15 +227,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   }
   let multiSelectAnswerResult = null;
   if (true === tmp18.multi_select) {
-    const tmp20Result8 = tmp20(onSubmit[12]);
+    const tmp20Result8 = tmp20(onSubmit[10]);
     multiSelectAnswerResult = tmp20Result8.multiSelectAnswer(tmp18, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp18));
   }
   let entityAnswerResult = null;
   if (null != tmp18.input) {
     const input = tmp18.input;
     let tmp35 = tmp10[tmp18.id];
-    const entityAnswer = tmp20(onSubmit[12]).entityAnswer;
-    const tmp20Result9 = tmp20(onSubmit[12]);
+    const entityAnswer = tmp20(onSubmit[10]).entityAnswer;
+    const tmp20Result9 = tmp20(onSubmit[10]);
     if (tmp35 == null) {
       tmp35 = c10;
     }
@@ -588,7 +259,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       return obj;
     });
   }, items3);
-  const tmp20Result10 = tmp20(onSubmit[12]);
+  const tmp20Result10 = tmp20(onSubmit[10]);
   let result = tmp20Result10.clarificationDraftAnswer(entityAnswerResult, multiSelectAnswerResult, str);
   c22 = result;
   const items4 = [result, callback];
@@ -652,8 +323,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         },
       returnKeyType: "send"
     };
-    const TextInput = tmp20(tmp21[13]).TextInput;
-    tmp20Result11 = tmp20(onSubmit[12]);
+    const TextInput = tmp20(tmp21[11]).TextInput;
+    tmp20Result11 = tmp20(onSubmit[10]);
     intl = tmp20(tmp21[6]).intl;
     obj4 = { question: tmp18.question };
     tmp47 = closure_6(TextInput, obj3);
@@ -662,22 +333,22 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let obj6 = { style: tmp.footer, children: items6 };
   let tmp54 = null;
   const obj7 = { style: tmp.customField, children: items5 };
-  const tmp52 = clarification(onSubmit[24]);
+  const tmp52 = clarification(onSubmit[12]);
   if (clarification.questions.length > 1) {
     const obj8 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.formatToPlainString(clarification(onSubmit[7]).yzYUjq, obj9) };
-    let Text = tmp20(tmp21[14]).Text;
+    let Text = tmp20(tmp21[13]).Text;
     intl2 = tmp20(tmp21[6]).intl;
     obj9 = { index: bound + 1, total: clarification.questions.length };
     tmp54 = closure_6(Text, obj8);
   }
   items5 = [tmp54, ];
   const obj10 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: tmp18.question };
-  items5[1] = closure_6(tmp20(onSubmit[14]).Text, obj10);
+  items5[1] = closure_6(tmp20(onSubmit[13]).Text, obj10);
   items6 = [c7(first, obj7), ];
   let tmp56Result = null;
   if (null != onDismiss) {
-    const obj11 = { variant: "tertiary", size: "sm", icon: closure_6(tmp20(onSubmit[16]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl3.string(clarification(onSubmit[7]).qVXlk0) };
-    const IconButton = tmp20(tmp21[15]).IconButton;
+    const obj11 = { variant: "tertiary", size: "sm", icon: closure_6(tmp20(onSubmit[15]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl3.string(clarification(onSubmit[7]).qVXlk0) };
+    const IconButton = tmp20(tmp21[14]).IconButton;
     intl3 = tmp20(tmp21[6]).intl;
     tmp56Result = tmp56(IconButton, obj11);
   }
@@ -686,14 +357,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp56Result8 = null;
   if (true === tmp18.multi_select) {
     const obj12 = { variant: "text-xs/normal", color: "text-muted", children: intl4.string(clarification(onSubmit[7]).tE8qbz) };
-    const Text2 = tmp20(tmp21[14]).Text;
+    const Text2 = tmp20(tmp21[13]).Text;
     intl4 = tmp20(tmp21[6]).intl;
     tmp56Result8 = tmp56(Text2, obj12);
   }
   items7[1] = tmp56Result8;
   if (isImageQuestionResult) {
     const obj13 = { projectId, question: tmp18, selectedIds: answeredOptionIdsResult, disabled: tmp16, onPick: callback1, own: conjureOwnImages.controlsFor(tmp18, tmp16) };
-    const tmp51Result = clarification(onSubmit[17]);
+    const tmp51Result = clarification(onSubmit[16]);
     tmp56Result9 = tmp56(tmp51Result, obj13);
   } else if (true === tmp18.multi_select) {
     const obj14 = {
@@ -711,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
               return callback1(label);
             }
           };
-          const TableCheckboxRow = projectId(onSubmit[19]).TableCheckboxRow;
+          const TableCheckboxRow = projectId(onSubmit[18]).TableCheckboxRow;
           const tmp = closure_6;
           const tmp2 = projectId;
           if (true === label.recommended) {
@@ -724,7 +395,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
             str2 = "";
           }
           items[1] = str2;
-          const found = items.filter(f116867);
+          const found = items.filter((item) => "" !== item);
           joined = undefined;
           if (found.length > 0) {
             joined = found.join(" \u00B7 ");
@@ -733,7 +404,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         })
     };
     options = tmp18.options;
-    const TableRowGroup = tmp20(tmp21[18]).TableRowGroup;
+    const TableRowGroup = tmp20(tmp21[17]).TableRowGroup;
     tmp56Result9 = tmp56(TableRowGroup, obj14);
   } else {
     const options1 = tmp18.options;
@@ -754,7 +425,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         accessibilityLabel: formatToPlainString(AQbxhf, obj2),
         children: items1
       };
-      const Card = projectId(onSubmit[20]).Card;
+      const Card = projectId(onSubmit[19]).Card;
       const intl = projectId(onSubmit[6]).intl;
       formatToPlainString = intl.formatToPlainString;
       if (true === answer.recommended) {
@@ -768,12 +439,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
       items = [, ];
       obj2 = { answer: answer.label };
       const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
-      items[0] = closure_6(projectId(onSubmit[14]).Text, obj4);
+      items[0] = closure_6(projectId(onSubmit[13]).Text, obj4);
       let tmp8Result = null;
       const tmp7 = first;
       if (true === answer.recommended) {
         const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(onSubmit[7]).zku6r1) };
-        const Text = tmp2(tmp3[14]).Text;
+        const Text = tmp2(tmp3[13]).Text;
         intl2 = tmp2(tmp3[6]).intl;
         tmp8Result = tmp8(Text, obj5);
       }
@@ -784,7 +455,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         tmp8Result2 = null;
         if ("" !== answer.detail) {
           const obj6 = { variant: "text-xs/normal", color: "text-muted", children: answer.detail };
-          tmp8Result2 = tmp8(tmp2(tmp3[14]).Text, obj6);
+          tmp8Result2 = tmp8(tmp2(tmp3[13]).Text, obj6);
         }
       }
       items1[1] = tmp8Result2;
@@ -796,7 +467,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   if (null != tmp18.input) {
     const obj15 = { projectId, question: tmp18, value: tmp63, disabled: tmp16, onChange: callback3, fallback: tmp64 };
     tmp63 = tmp10[tmp18.id];
-    const tmp51Result3 = clarification(onSubmit[21]);
+    const tmp51Result3 = clarification(onSubmit[20]);
     if (tmp63 == null) {
       tmp63 = c10;
     }
@@ -832,12 +503,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
                   });
                 }
         };
-        Button = tmp20(tmp21[22]).Button;
+        Button = tmp20(tmp21[21]).Button;
         intl5 = tmp20(tmp21[6]).intl;
         tmp56Result11 = tmp56(tmp53, obj16);
       } else {
         let str2 = first1[tmp18.id];
-        const tmp51Result4 = clarification(onSubmit[23]);
+        const tmp51Result4 = clarification(onSubmit[22]);
         if (str2 == null) {
           str2 = "auto";
         }
@@ -863,7 +534,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
   let tmp56Result12 = null;
   if (null != tmp18.note) {
     const obj19 = { variant: "text-xs/normal", color: "text-muted", children: tmp18.note };
-    tmp56Result12 = tmp56(tmp20(tmp21[14]).Text, obj19);
+    tmp56Result12 = tmp56(tmp20(tmp21[13]).Text, obj19);
   }
   items7[5] = tmp56Result12;
   let tmp69 = null;
@@ -877,7 +548,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
         if (null == tmp18.input) {
           if (null == onBack) {
             tmp50Result = null;
-            tmp20(onSubmit[12]);
+            tmp20(onSubmit[10]);
           }
           items7[7] = tmp50Result;
           obj5.children = items7;
@@ -892,7 +563,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     const items8 = [tmp56Result14, ];
     let tmp56Result13 = null;
     if (!hideSubmit) {
-      const Button3 = tmp20(tmp21[22]).Button;
+      const Button3 = tmp20(tmp21[21]).Button;
       if (!tmp16) {
         tmp16 = null == tmp43;
       }
@@ -924,7 +595,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     tmp50Result = tmp50(tmp53, obj20);
   }
   const obj22 = { style: tmp.backAction, children: closure_6(Button2, obj23) };
-  Button2 = tmp20(tmp21[22]).Button;
+  Button2 = tmp20(tmp21[21]).Button;
   if (backText == null) {
     const intl6 = tmp20(tmp21[6]).intl;
     backText = intl6.string(tmp51(tmp21[7]).Pk5lfA);
@@ -934,7 +605,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureClari
     tmp46 = callback2;
   }
   tmp56Result14 = tmp56(tmp53, obj22);
-});
-let result = size.fileFinishedImporting("modules/conjure/clarification/native/ConjureClarificationCard.tsx");
-
-export default tmp4;
+};

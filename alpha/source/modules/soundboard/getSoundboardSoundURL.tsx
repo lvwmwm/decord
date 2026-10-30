@@ -1,11 +1,11 @@
-// Module ID: 16307
-// Function ID: 16308
+// Module ID: 16348
+// Function ID: 16349
 // Name: getSoundboardSoundURL
-// Dependencies: [1084, 2]
+// Dependencies: [1072, 2]
 // Exports: default
 
-// Module 16307 (getSoundboardSoundURL)
-import Constants from "Constants" /* 1084 */;
+// Module 16348 (getSoundboardSoundURL)
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

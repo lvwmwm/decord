@@ -1,19 +1,25 @@
 // Module ID: 7174
 // Function ID: 7175
-// Dependencies: [7175]
-// Exports: getDistanceForDirection
+// Dependencies: []
+// Exports: throttle
 
 // Module 7174
-import _mod7175 from "module_7175" /* 7175 */;
+let c2;
 
 
-export function getDistanceForDirection(layout, gestureDirection, arg2) {
-  const obj = _mod7175;
-  const invertedMultiplier = obj.getInvertedMultiplier(gestureDirection, arg2);
-  if ("vertical" !== gestureDirection) {
-    if ("vertical-inverted" !== gestureDirection) {
-      return layout.width * invertedMultiplier;
+export function throttle(arg0, arg1) {
+  let closure_2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return function() {
+    let timeout;
+    if (null == timeout) {
+      const self = this;
+      closure_0.apply(this, tmp);
+      const _setTimeout = setTimeout;
+      timeout = setTimeout(() => {
+        c2 = undefined;
+      }, closure_1);
     }
-  }
-  return layout.height * invertedMultiplier;
+  };
 }

@@ -1,19 +1,18 @@
-// Module ID: 16449
-// Function ID: 16450
+// Module ID: 16493
+// Function ID: 16494
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5006, 8689, 21, 5005, 587, 558, 576, 8695, 504, 4833, 1125, 16450, 10730, 10729, 6972, 6968, 2]
+// Dependencies: [19, 17, 5010, 8723, 21, 5009, 575, 504, 8729, 4834, 6974, 1114, 16494, 10752, 10753, 6978, 2]
+// Exports: default
 
-// Module 16449 (UserProfileDisplayNameStyleTileButton)
+// Module 16493 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8695 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10729 */;
+import nativeDefault from "native" /* 575 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8729 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8689 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8723 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -24,176 +23,9 @@ const View = react_native.View;
 let obj = { button: obj2, previewContainer: { flex: 1, minWidth: 0 } };
 obj2 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_STRONG, borderRadius: nativeDefault.radii.md };
 let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileDisplayNameStyleTileButton(user) {
-  let displayName;
-  let displayNameStyles;
-  let first;
-  let items2;
-  let useReducedMotion;
-  let tmp = user;
-  let obj = user(576);
-  const cResult = obj.c(26);
-  user = user.user;
-  const onPress = user.onPress;
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserProfileSettingsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === user.globalName) {
-    let tmp7;
-    let tmp10;
-    let tmp9;
-    let tmp14;
-    let tmp16;
-    let tmp18;
-    let tmp19;
-    if (cResult[2] === user.username) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp7);
-    ({ displayName, displayNameStyles } = stateFromStoresObject);
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [AccessibilityStore];
-      const fn2 = function v() {
-        return useReducedMotion.useReducedMotion;
-      };
-      cResult[4] = items1;
-      cResult[5] = fn2;
-      tmp10 = fn2;
-      tmp9 = items1;
-    } else {
-      tmp9 = cResult[4];
-      tmp10 = cResult[5];
-    }
-    const tmpResult3 = tmp(504);
-    const stateFromStores = tmpResult3.useStateFromStores(tmp9, tmp10);
-    const GifAutoPlay = tmp(4833).GifAutoPlay;
-    const _Symbol2 = Symbol;
-    const setting = GifAutoPlay.useSetting();
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(tmp(1125).t.lsjENp);
-      cResult[6] = stringResult;
-      tmp14 = stringResult;
-    } else {
-      tmp14 = cResult[6];
-    }
-    if (cResult[7] !== displayNameStyles) {
-      const tmpResult4 = tmp(16450);
-      const displayNameStyleAccessibleValue = tmpResult4.getDisplayNameStyleAccessibleValue(displayNameStyles);
-      cResult[7] = displayNameStyles;
-      cResult[8] = displayNameStyleAccessibleValue;
-      tmp16 = displayNameStyleAccessibleValue;
-    } else {
-      tmp16 = cResult[8];
-    }
-    if (cResult[9] !== tmp16) {
-      let obj2 = { text: tmp16 };
-      cResult[9] = tmp16;
-      cResult[10] = obj2;
-      tmp18 = obj2;
-    } else {
-      tmp18 = cResult[10];
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(tmp(1125).t["4lAcxv"]);
-      cResult[11] = stringResult1;
-      tmp19 = stringResult1;
-    } else {
-      tmp19 = cResult[11];
-    }
-    if (!stateFromStores) {
-      let STATIC;
-      if (setting) {
-        STATIC = tmp(10730).EffectDisplayType.ANIMATED;
-      }
-      if (cResult[12] === displayName) {
-        if (cResult[13] === displayNameStyles) {
-          if (cResult[14] === STATIC) {
-            let tmp21;
-            if (cResult[15] === user.id) {
-              tmp21 = cResult[16];
-            }
-            if (cResult[17] === tmp4.previewContainer) {
-              let tmp25;
-              let tmp29;
-              if (cResult[18] === tmp21) {
-                tmp25 = cResult[19];
-              }
-              const _Symbol4 = Symbol;
-              if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                const tmp31 = closure_6(tmp(6972).TableRowArrow, {});
-                cResult[20] = tmp31;
-                tmp29 = tmp31;
-              } else {
-                tmp29 = cResult[20];
-              }
-              if (cResult[21] === onPress) {
-                if (cResult[22] === tmp4.button) {
-                  if (cResult[23] === tmp25) {
-                    let tmp32;
-                    if (cResult[24] === tmp18) {
-                      tmp32 = cResult[25];
-                    }
-                    return tmp32;
-                  }
-                }
-              }
-              const obj3 = { accessibilityRole: "button", accessibilityLabel: tmp14, accessibilityValue: tmp18, accessibilityHint: tmp19, onPress, style: tmp4.button, children: items2 };
-              items2 = [tmp25, tmp29];
-              const tmp34 = closure_7(tmp(6968).PressableHighlight, obj3);
-              cResult[21] = onPress;
-              cResult[22] = tmp4.button;
-              cResult[23] = tmp25;
-              cResult[24] = tmp18;
-              cResult[25] = tmp34;
-              tmp32 = tmp34;
-            }
-            const obj4 = { style: tmp4.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp21 };
-            const tmp28 = closure_6(View, obj4);
-            cResult[17] = tmp4.previewContainer;
-            cResult[18] = tmp21;
-            cResult[19] = tmp28;
-            tmp25 = tmp28;
-          }
-        }
-      }
-      const obj5 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: STATIC, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };
-      const tmp24 = closure_6(UsernameWithEffectsDefault, obj5);
-      cResult[12] = displayName;
-      cResult[13] = displayNameStyles;
-      cResult[14] = STATIC;
-      cResult[15] = user.id;
-      cResult[16] = tmp24;
-      tmp21 = tmp24;
-    }
-    STATIC = tmp(10730).EffectDisplayType.STATIC;
-  }
-  const fn = function p() {
-    const displayNameStyles = UserProfileSettingsStore.getTryItOutChanges().tryItOutDisplayNameStyles;
-    const pendingGlobalName = UserProfileSettingsStore.getPendingChanges().pendingGlobalName;
-    const obj = ProfileCustomizationUtils;
-    const obj2 = { pendingValue: pendingGlobalName, userValue: user.globalName };
-    let displayName = obj.getProfilePreviewValue(obj2);
-    const tmp = user;
-    if (displayName == null) {
-      displayName = tmp.username;
-    }
-    return { displayName, displayNameStyles };
-  };
-  cResult[1] = user.globalName;
-  cResult[2] = user.username;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function UserProfileDisplayNameStyleTileButton(user) {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStyleTileButton.tsx");
+
+export default function UserProfileDisplayNameStyleTileButton(user) {
   let displayName;
   let displayNameStyles;
   let intl;
@@ -222,14 +54,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   let obj2 = user(504);
   const items1 = [AccessibilityStore];
   const stateFromStores = obj2.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
-  const GifAutoPlay = user(4833).GifAutoPlay;
+  const GifAutoPlay = user(4834).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
-  const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(user(1125).t.lsjENp), accessibilityValue: obj4, accessibilityHint: intl2.string(user(1125).t["4lAcxv"]), onPress, style: tmp.button, children: null };
-  const PressableHighlight = user(6968).PressableHighlight;
-  intl = user(1125).intl;
+  const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(user(1114).t.lsjENp), accessibilityValue: obj4, accessibilityHint: intl2.string(user(1114).t["4lAcxv"]), onPress, style: tmp.button, children: null };
+  const PressableHighlight = user(6974).PressableHighlight;
+  intl = user(1114).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(16450);
-  intl2 = user(1125).intl;
+  obj5 = user(16494);
+  intl2 = user(1114).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };
   const tmp7 = closure_7;
@@ -237,16 +69,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileD
   if (!stateFromStores) {
     let STATIC;
     if (setting) {
-      STATIC = tmp2(10730).EffectDisplayType.ANIMATED;
+      STATIC = tmp2(10753).EffectDisplayType.ANIMATED;
     }
     obj7.effectDisplayType = STATIC;
     obj6.children = closure_6(tmp10, obj7);
-    const items2 = [closure_6(tmp9, obj6), closure_6(user(6972).TableRowArrow, {})];
+    const items2 = [closure_6(tmp9, obj6), closure_6(user(6978).TableRowArrow, {})];
     obj3.children = items2;
     return tmp7(PressableHighlight, obj3);
   }
-  STATIC = tmp2(10730).EffectDisplayType.STATIC;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileDisplayNameStyleTileButton.tsx");
-
-export default tmp4;
+  STATIC = tmp2(10753).EffectDisplayType.STATIC;
+};

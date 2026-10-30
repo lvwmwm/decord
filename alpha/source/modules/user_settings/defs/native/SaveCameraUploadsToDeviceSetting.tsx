@@ -1,52 +1,29 @@
-// Module ID: 17332
-// Function ID: 17333
+// Module ID: 17386
+// Function ID: 17387
 // Name: SaveCameraUploadsToDeviceSetting
-// Dependencies: [1206, 8387, 558, 576, 504, 5906, 11302, 1125, 2]
+// Dependencies: [1195, 8424, 504, 5913, 11505, 1114, 2]
 
-// Module 17332 (SaveCameraUploadsToDeviceSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5906 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17386 (SaveCameraUploadsToDeviceSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl2 from "intl" /* 1114 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5913 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSaveCameraUploadsToDeviceValue() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UnsyncedUserSettingsStore];
-    const fn = function o() {
-      return UnsyncedUserSettingsStore.saveCameraUploadsToDevice;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSaveCameraUploadsToDeviceValue() {
-  const items = [UnsyncedUserSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => UnsyncedUserSettingsStore.saveCameraUploadsToDevice);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["99tBAC"]);
   },
   parent: MobileUserSettings.CHAT,
-  useValue: tmp2,
+  useValue: function useSaveCameraUploadsToDeviceValue() {
+    const items = [UnsyncedUserSettingsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => UnsyncedUserSettingsStore.saveCameraUploadsToDevice);
+  },
   onValueChange: function onSaveCameraUploadsToDeviceValueChange(saveCameraUploadsToDevice) {
     const obj = UserSettingsActionCreatorsDefault;
     const obj2 = { saveCameraUploadsToDevice };

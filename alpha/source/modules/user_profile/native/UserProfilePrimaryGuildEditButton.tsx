@@ -1,18 +1,18 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16459
+// Function ID: 16460
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 4879, 8328, 21, 5005, 587, 504, 16408, 14655, 8694, 8693, 1125, 1381, 5271, 16373, 5247, 16409, 2000, 6943, 9262, 2]
+// Dependencies: [19, 4880, 8385, 21, 5009, 575, 504, 16460, 14689, 8728, 8727, 1114, 1376, 5619, 16425, 5253, 16461, 1995, 6951, 9276, 2]
 // Exports: default
 
-// Module 16407 (UserProfilePrimaryGuildEditButton)
+// Module 16459 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import GuildTagConstants from "GuildTagConstants" /* 8328 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import GuildTagConstants from "GuildTagConstants" /* 8385 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import createStyles from "createStyles" /* 5005 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(16409, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(16461, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

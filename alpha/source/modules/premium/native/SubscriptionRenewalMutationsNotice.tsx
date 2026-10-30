@@ -1,30 +1,29 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15234
+// Function ID: 15235
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 2049, 21, 5005, 587, 6765, 558, 576, 1199, 1125, 2051, 2]
+// Dependencies: [19, 17, 2046, 21, 5009, 575, 6772, 1188, 1114, 2048, 2]
+// Exports: default
 
-// Module 15194 (SubscriptionRenewalMutationsNotice)
+// Module 15234 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2049 */;
-import PremiumUtils from "PremiumUtils" /* 2051 */;
-import LegacyTokens from "LegacyTokens" /* 6765 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2046 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
+import LegacyTokens from "LegacyTokens" /* 6772 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-const PremiumUtilsDefault = PremiumUtils;
 
 let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
 let obj4;
+let tmp5;
+const PremiumUtils = tmp5(2048);
 const View = react_native.View;
 const isNoneSubscription = SubscriptionPlanRecord.isNoneSubscription;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -35,81 +34,9 @@ createStyles = createStyles.createStyles;
 obj3 = { alignSelf: "center", marginLeft: 15, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 obj4 = { paddingLeft: 10, marginRight: 15, color: LegacyTokens.DARK_PRIMARY_300_LIGHT_PRIMARY_500 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SubscriptionRenewalMutationsNotice(arg0) {
-  let items;
-  let renewalMutations;
-  let subscription;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(13);
-  ({ subscription, renewalMutations } = arg0);
-  const tmp4 = closure_7();
-  const container = tmp4.container;
-  if (cResult[0] !== tmp4.icon) {
-    const obj2 = { style: tmp4.icon };
-    const tmp7 = hasOwnProperty(native.WarningCircle, obj2);
-    cResult[0] = tmp4.icon;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === renewalMutations) {
-    if (cResult[3] === subscription.currentPeriodEnd) {
-      if (cResult[4] === subscription.hasExternalPlanChange) {
-        tmp9 = cResult[5];
-      }
-      if (cResult[6] === tmp4.text) {
-        let tmp15;
-        if (cResult[7] === tmp9) {
-          tmp15 = cResult[8];
-        }
-        if (cResult[9] === tmp4.container) {
-          if (cResult[10] === tmp5) {
-            let tmp18;
-            if (cResult[11] === tmp15) {
-              tmp18 = cResult[12];
-            }
-            return tmp18;
-          }
-        }
-        const obj4 = { style: container, children: items };
-        items = [tmp5, tmp15];
-        const tmp21 = metroRequire(View, obj4);
-        cResult[9] = tmp4.container;
-        cResult[10] = tmp5;
-        cResult[11] = tmp15;
-        cResult[12] = tmp21;
-        tmp18 = tmp21;
-      }
-      const obj5 = { style: tmp8, children: tmp9 };
-      const tmp17 = hasOwnProperty(native.LegacyText, obj5);
-      cResult[6] = tmp4.text;
-      cResult[7] = tmp9;
-      cResult[8] = tmp17;
-      tmp15 = tmp17;
-    }
-  }
-  const intl = tmp(1125).intl;
-  const format = intl.format;
-  if (!subscription.hasExternalPlanChange) {
-    let displayName;
-    if (!isNoneSubscription(renewalMutations.planId)) {
-      const obj3 = PremiumUtilsDefault;
-      displayName = obj3.getDisplayName(renewalMutations.planId);
-    }
-    const obj6 = { planName: displayName, date: subscription.currentPeriodEnd };
-    const formatResult = format(tmp10, obj6);
-    cResult[2] = renewalMutations;
-    cResult[3] = subscription.currentPeriodEnd;
-    cResult[4] = subscription.hasExternalPlanChange;
-    cResult[5] = formatResult;
-    tmp9 = formatResult;
-  }
-  const tmpResult = PremiumUtils;
-  displayName = tmpResult.getExternalPlanDisplayName(renewalMutations);
-}) : (function SubscriptionRenewalMutationsNotice(arg0) {
+const result = size.fileFinishedImporting("modules/premium/native/SubscriptionRenewalMutationsNotice.tsx");
+
+export default function SubscriptionRenewalMutationsNotice(arg0) {
   let renewalMutations;
   let subscription;
   ({ subscription, renewalMutations } = arg0);
@@ -139,7 +66,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
   }
   const tmp5Result = PremiumUtils;
   displayName = tmp5Result.getExternalPlanDisplayName(renewalMutations);
-});
-const result = size.fileFinishedImporting("modules/premium/native/SubscriptionRenewalMutationsNotice.tsx");
-
-export default tmp5;
+};

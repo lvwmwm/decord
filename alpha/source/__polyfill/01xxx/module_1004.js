@@ -1,10 +1,8 @@
 // Module ID: 1004
 // Function ID: 1005
 // Dependencies: []
-// Exports: hasHooks
 
 // Module 1004
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function hasHooks(on) {
-  return undefined !== on.on;
-}
+export const DEBUG_BUILD = typeof globalThis.__SENTRY_DEBUG__ === "undefined" || globalThis.__SENTRY_DEBUG__;

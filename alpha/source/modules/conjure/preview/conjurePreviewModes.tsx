@@ -1,17 +1,20 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 12043
+// Function ID: 12044
 // Name: conjurePreviewModes
-// Dependencies: [10841, 6832, 11851, 2]
-// Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
+// Dependencies: [1072, 10864, 6839, 12044, 5646, 1084, 6877, 2]
+// Exports: permissionReviewBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, previewNeedsAppConsent, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 11850 (conjurePreviewModes)
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10841 */;
+// Module 12043 (conjurePreviewModes)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6877 */;
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 10864 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let obj = {
+let closure_3 = {
   frame(hasFrame) {
     return hasFrame.hasFrame;
   },
@@ -25,6 +28,8 @@ let obj = {
     return true === hasBotDm.hasBotDm;
   }
 };
+const items = [, , ];
+({ GATEWAY_PRESENCE_LIMITED: arr[0], GATEWAY_GUILD_MEMBERS_LIMITED: arr[1], GATEWAY_MESSAGE_CONTENT_LIMITED: arr[2] } = Constants.ApplicationFlags);
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModes.tsx");
 
 export function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) {
@@ -37,13 +42,13 @@ export function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) 
   if (null != previewSupportedSurfaces) {
     tmp = legacy;
     if (0 !== previewSupportedSurfaces.length) {
-      obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
+      const obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
       obj2 = conjurePreviewFrameSurfaces;
       if (widgetResolvable) {
-        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6832).ConjureSupportedSurface.PROFILE_WIDGET);
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6839).ConjureSupportedSurface.PROFILE_WIDGET);
       }
       if (botDmResolvable) {
-        const hasItem = previewSupportedSurfaces.includes(tmp3(6832).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6832).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6839).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6839).ConjureSupportedSurface.APPLICATION_COMMANDS);
         botDmResolvable = hasItem;
       }
       tmp = obj;
@@ -56,8 +61,8 @@ export function previewModeAvailability(installScope) {
   let str;
   _require = installScope;
   const prop = require("ConjurePreviewMode").CONJURE_PREVIEW_MODE_ORDER;
-  const found = prop.filter((item) => obj[item](installScope));
-  obj = { modes: found, defaultMode: first, showModeSwitch: found.length > 1, profileState: str };
+  const found = prop.filter((item) => closure_3[item](installScope));
+  const obj = { modes: found, defaultMode: first, showModeSwitch: found.length > 1, profileState: str };
   first = found[0];
   if (first == null) {
     first = null;
@@ -104,7 +109,7 @@ export function showsFramePreview(modes, arg1) {
 export function profileSurfaceAvailability(widgetTop) {
   let tmp = widgetTop.widgetTop && widgetTop.widgetBottom;
   const miniProfile = widgetTop.miniProfile;
-  obj = { hasMainCard: tmp, hasPopoutCard: miniProfile, hasAny: tmp };
+  const obj = { hasMainCard: tmp, hasPopoutCard: miniProfile, hasAny: tmp };
   if (!tmp) {
     tmp = miniProfile;
   }
@@ -131,21 +136,70 @@ export function requiresPermissionReview(arg0) {
   }
   return tmp3;
 }
-export function permissionReviewBlocksMode(activeMode, result, arg2) {
+export function previewNeedsAppConsent(data) {
+  _require = data;
+  if (null == data) {
+    return false;
+  } else {
+    const integrationTypesConfig = data.integrationTypesConfig;
+    let permissions;
+    if (integrationTypesConfig != null) {
+      const tmp3 = integrationTypesConfig[require("ApplicationIntegrationType").ApplicationIntegrationType.GUILD_INSTALL];
+      if (tmp3 != null) {
+        const oauth2InstallParams = tmp3.oauth2InstallParams;
+        if (oauth2InstallParams != null) {
+          permissions = oauth2InstallParams.permissions;
+        }
+      }
+    }
+    if (permissions == null) {
+      const installParams = data.installParams;
+      let permissions1;
+      if (installParams != null) {
+        permissions1 = installParams.permissions;
+      }
+      permissions = permissions1;
+    }
+    let someResult = null != permissions;
+    if (someResult) {
+      const equals = BigFlagUtilsAll.equals;
+      BigFlagUtilsAll;
+      const deserializer = BigFlagUtilsAll;
+      const deserializeResult = deserializer.deserialize(permissions);
+      someResult = !equals(deserializeResult, BigFlagUtilsAll.EMPTY_FLAG);
+    }
+    if (!someResult) {
+      someResult = items.some((item) => {
+        const obj = ApplicationFlagUtils;
+        return obj.hasApplicationFlag(data, item);
+      });
+    }
+    return someResult;
+  }
+}
+export function permissionReviewBlocksMode(activeMode, result, arg2, tmpResult31) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
+  let flag2 = tmpResult31;
+  if (tmpResult31 === undefined) {
+    flag2 = false;
+  }
   let tmp = result;
   if (tmp) {
-    let tmp3 = "bot" === activeMode;
-    if (!tmp3) {
-      if (flag) {
-        flag = "frame" === activeMode;
+    let tmp2 = flag2;
+    if (!tmp2) {
+      let tmp4 = "bot" === activeMode;
+      if (!tmp4) {
+        if (flag) {
+          flag = "frame" === activeMode;
+        }
+        tmp4 = flag;
       }
-      tmp3 = flag;
+      tmp2 = tmp4;
     }
-    tmp = tmp3;
+    tmp = tmp2;
   }
   return tmp;
 }

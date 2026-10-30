@@ -1,15 +1,15 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1378
+// Function ID: 1379
 // Name: URLUtils
-// Dependencies: [1084, 1384, 1385, 1386, 1383, 12, 2]
+// Dependencies: [1072, 1379, 1380, 1381, 1378, 12, 2]
 
-// Module 1383 (URLUtils)
+// Module 1378 (URLUtils)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1084 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import urlParseAll from "urlParse" /* 1386 */;
-import ip from "ip" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import urlParseAll from "urlParse" /* 1381 */;
+import ip from "ip" /* 1379 */;
 import size from "module_2" /* 2 */;
 
 function isDiscordDirectAssetUrl(shareURI) {
@@ -66,14 +66,14 @@ function isDiscordDirectAssetUrl(shareURI) {
     return tmp18;
   }
 }
-function isDiscordProxiedAssetUrl(src, arg1, arg2) {
+function isDiscordProxiedAssetUrl(assetURL, arg1, arg2) {
   const tmp = null != arg1 && null != arg2 && arg1 !== arg2;
   if (tmp) {
-    if (null == src) {
+    if (null == assetURL) {
       return false;
     } else {
       const obj4 = URLUtilsDefault;
-      const url = obj4.toURLSafe(src);
+      const url = obj4.toURLSafe(assetURL);
       let tmp15 = null != url;
       if (tmp15) {
         const obj = GlobalUtils;
@@ -227,25 +227,25 @@ let obj = {
   },
   isDiscordDirectAssetUrl,
   isDiscordProxiedAssetUrl,
-  isAllowedGifProviderUrl(src) {
-    if (null == src) {
+  isAllowedGifProviderUrl(assetURL) {
+    if (null == assetURL) {
       return false;
     } else {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(src);
+      const toURLSafeResult = obj.toURLSafe(assetURL);
       const hasItem = null != toURLSafeResult && set.has(toURLSafeResult.hostname);
       return hasItem;
     }
   },
-  isDiscordAssetUrl(src, arg1, arg2) {
-    let tmp = isDiscordDirectAssetUrl(src);
+  isDiscordAssetUrl(assetURL, arg1, arg2) {
+    let tmp = isDiscordDirectAssetUrl(assetURL);
     if (!tmp) {
-      let tmp5 = isDiscordProxiedAssetUrl(src, arg1, arg2);
+      let tmp5 = isDiscordProxiedAssetUrl(assetURL, arg1, arg2);
       if (!tmp5) {
         let flag = false;
-        if (null != src) {
+        if (null != assetURL) {
           const obj = URLUtilsDefault;
-          const toURLSafeResult = obj.toURLSafe(src);
+          const toURLSafeResult = obj.toURLSafe(assetURL);
           const hasItem = null != toURLSafeResult && set.has(toURLSafeResult.hostname);
           flag = hasItem;
         }
@@ -255,11 +255,11 @@ let obj = {
     }
     return tmp;
   },
-  isDiscordUrlOrUri(src) {
+  isDiscordUrlOrUri(assetURL) {
     let flag = false;
-    if (null != src) {
+    if (null != assetURL) {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(src);
+      const toURLSafeResult = obj.toURLSafe(assetURL);
       let hostname;
       if (toURLSafeResult != null) {
         hostname = toURLSafeResult.hostname;
@@ -278,10 +278,10 @@ let obj = {
       }
     }
     if (!flag) {
-      let tmp8 = null != src;
+      let tmp8 = null != assetURL;
       if (tmp8) {
         const obj2 = urlParseAll;
-        const protocol = obj2.parse(src).protocol;
+        const protocol = obj2.parse(assetURL).protocol;
         tmp8 = null != protocol && "discord:" === protocol;
         const tmp11 = null != protocol && "discord:" === protocol;
       }
@@ -322,22 +322,22 @@ let obj = {
       return null;
     }
   },
-  toURLSafe(src, arg1) {
+  toURLSafe(assetURL, arg1) {
     try {
       const _URL = URL;
       const self = this;
       const self2 = this;
-      const uRL = new URL(src, arg1);
+      const uRL = new URL(assetURL, arg1);
       return uRL;
     } catch (err) {
       return null;
     }
   },
-  toOriginSafe(src) {
+  toOriginSafe(assetURL) {
     let tmp = null;
-    if (null != src) {
+    if (null != assetURL) {
       const obj = URLUtilsDefault;
-      const toURLSafeResult = obj.toURLSafe(src);
+      const toURLSafeResult = obj.toURLSafe(assetURL);
       let origin;
       if (toURLSafeResult != null) {
         origin = toURLSafeResult.origin;

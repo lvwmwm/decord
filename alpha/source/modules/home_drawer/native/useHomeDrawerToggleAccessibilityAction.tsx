@@ -1,84 +1,19 @@
-// Module ID: 18257
-// Function ID: 18258
+// Module ID: 18316
+// Function ID: 18317
 // Name: useHomeDrawerToggleAccessibilityAction
-// Dependencies: [19, 558, 576, 1125, 5187, 5014, 2]
+// Dependencies: [19, 1114, 5193, 5018, 2]
+// Exports: default
 
-// Module 18257 (useHomeDrawerToggleAccessibilityAction)
-import intl2 from "intl" /* 1125 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
+// Module 18316 (useHomeDrawerToggleAccessibilityAction)
+import intl2 from "intl" /* 1114 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
-let tmp;
-const AccessibilityAnnouncer2 = tmp(5014);
 let c3 = "toggle-home-drawer";
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
-  let closure_0;
-  _require = arg1;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  let tmp4 = null;
-  if (arg0) {
-    let tmp5;
-    let tmp7;
-    if (cResult[0] !== arg1) {
-      let stringResult;
-      let intl = tmp(1125).intl;
-      let string = intl.string;
-      let t = tmp(1125).t;
-      if (arg1) {
-        stringResult = string(t.h8xFEv);
-      } else {
-        stringResult = string(t["Rgk/2h"]);
-      }
-      cResult[0] = arg1;
-      cResult[1] = stringResult;
-      tmp5 = stringResult;
-    } else {
-      tmp5 = cResult[1];
-    }
-    if (cResult[2] !== arg1) {
-      function action() {
-        let stringResult;
-        const obj = NavigationRouteUtils;
-        obj.setHomeDrawerState(!closure_0);
-        const intl = intl2.intl;
-        const string = intl.string;
-        const t = intl2.t;
-        if (closure_0) {
-          stringResult = string(t["0s/g+O"]);
-        } else {
-          stringResult = string(t.hfxfVb);
-        }
-        const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-        AccessibilityAnnouncer.announce(stringResult);
-      }
-      cResult[2] = arg1;
-      cResult[3] = action;
-      tmp7 = action;
-    } else {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] === tmp7) {
-      let tmp8;
-      if (cResult[5] === tmp5) {
-        tmp8 = cResult[6];
-      }
-      tmp4 = tmp8;
-    }
-    const obj2 = { name, label: tmp5, action: tmp7 };
-    cResult[4] = tmp7;
-    cResult[5] = tmp5;
-    cResult[6] = obj2;
-    tmp8 = obj2;
-  }
-  return tmp4;
-}) : (function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerToggleAccessibilityAction.tsx");
+
+export default function useHomeDrawerToggleAccessibilityAction(arg0, arg1) {
+  let name;
   let closure_0 = arg0;
   let closure_1 = arg1;
   const items = [arg0, arg1];
@@ -99,11 +34,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
         label: stringResult,
         action() {
             let stringResult;
-            const obj = closure_0(closure_1[4]);
+            const obj = closure_0(closure_1[2]);
             obj.setHomeDrawerState(!closure_1_1);
-            const intl = closure_0(closure_1[3]).intl;
+            const intl = closure_0(closure_1[1]).intl;
             const string = intl.string;
-            const t = closure_0(closure_1[3]).t;
+            const t = closure_0(closure_1[1]).t;
             const tmp = closure_0;
             const tmp2 = closure_1;
             if (closure_1_1) {
@@ -111,7 +46,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
             } else {
               stringResult = string(t.hfxfVb);
             }
-            const AccessibilityAnnouncer = tmp(tmp2[5]).AccessibilityAnnouncer;
+            const AccessibilityAnnouncer = tmp(tmp2[3]).AccessibilityAnnouncer;
             AccessibilityAnnouncer.announce(stringResult);
           }
       };
@@ -121,8 +56,5 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHomeDrawe
       return null;
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerToggleAccessibilityAction.tsx");
-
-export default tmp2;
+};
 export const TOGGLE_HOME_DRAWER_A11Y_ACTION = "toggle-home-drawer";

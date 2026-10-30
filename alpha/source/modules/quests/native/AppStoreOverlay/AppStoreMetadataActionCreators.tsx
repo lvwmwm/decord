@@ -1,15 +1,15 @@
-// Module ID: 14579
-// Function ID: 14580
+// Module ID: 14612
+// Function ID: 14613
 // Name: AppStoreMetadataActionCreators
-// Dependencies: [5, 2066, 1084, 1101, 584, 1294, 569, 2]
+// Dependencies: [5, 2063, 1072, 1090, 572, 1283, 559, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 14579 (AppStoreMetadataActionCreators)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
+// Module 14612 (AppStoreMetadataActionCreators)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import Dispatcher from "Dispatcher" /* 584 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -80,7 +80,7 @@ export function fetchAppStoreMetadata(os) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;

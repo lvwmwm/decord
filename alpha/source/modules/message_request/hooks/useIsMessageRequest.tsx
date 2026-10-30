@@ -1,107 +1,36 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11233
+// Function ID: 11234
 // Name: useIsMessageRequest
-// Dependencies: [6843, 6844, 558, 576, 504, 2]
+// Dependencies: [6850, 6851, 504, 2]
+// Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 11003 (useIsMessageRequest)
-import MessageRequestStore from "MessageRequestStore" /* 6843 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6844 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 11233 (useIsMessageRequest)
+import MessageRequestStore from "MessageRequestStore" /* 6850 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6851 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMessageRequest(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageRequestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return MessageRequestStore.isMessageRequest(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useIsMessageRequest(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
+
+export function useIsMessageRequest(id) {
+  _require = id;
   const items = [MessageRequestStore];
-  const items1 = [arg0];
+  const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => MessageRequestStore.isMessageRequest(closure_0), items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEitherTypeOfMessageRequest(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageRequestStore, SpamMessageRequestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        tmp2 = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
-        const isMessageRequestResult = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
-      }
-      return tmp2;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useIsEitherTypeOfMessageRequest(arg0) {
-  let closure_0;
-  _require = arg0;
+  return obj.useStateFromStores(items, () => MessageRequestStore.isMessageRequest(id), items1);
+}
+export function useIsEitherTypeOfMessageRequest(id) {
+  _require = id;
   const items = [MessageRequestStore, SpamMessageRequestStore];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+    let tmp2 = null != id;
     if (tmp2) {
       tmp2 = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
       const isMessageRequestResult = MessageRequestStore.isMessageRequest(tmp) || SpamMessageRequestStore.isSpam(tmp);
     }
     return tmp2;
   });
-});
-const result = size.fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");
-
-export const useIsMessageRequest = tmp2;
-export const useIsEitherTypeOfMessageRequest = tmp3;
+}

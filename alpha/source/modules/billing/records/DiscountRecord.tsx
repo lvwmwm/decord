@@ -1,11 +1,11 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7624
+// Function ID: 7625
 // Name: DiscountRecord
-// Dependencies: [1404, 1391, 2]
+// Dependencies: [1399, 1386, 2]
 
-// Module 7619 (DiscountRecord)
-import Record from "Record" /* 1404 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+// Module 7624 (DiscountRecord)
+import Record from "Record" /* 1399 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let DiscountUserUsageLimitIntervalTypes;

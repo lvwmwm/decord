@@ -1,10 +1,10 @@
-// Module ID: 9645
-// Function ID: 9646
+// Module ID: 9670
+// Function ID: 9671
 // Name: LessPersonalizedAdsExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 9645 (LessPersonalizedAdsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 9670 (LessPersonalizedAdsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-01-less-personalized-ads", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

@@ -1,64 +1,23 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15659
+// Function ID: 15660
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 1084, 558, 576, 6719, 15620, 1264, 2]
+// Dependencies: [19, 1072, 6726, 15660, 1253, 2]
+// Exports: useActivateDeviceStepTracking
 
-// Module 15619 (useActivateDeviceStepTracking)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import usePreviousDefault from "usePrevious" /* 6719 */;
-import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15620 */;
+// Module 15659 (useActivateDeviceStepTracking)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import usePreviousDefault from "usePrevious" /* 6726 */;
+import ActivateDeviceUtils from "ActivateDeviceUtils" /* 15660 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault;
+let importDefault;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivateDeviceStepTracking(arg0) {
-  let closure_1;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  const tmp2 = usePreviousDefault(arg0);
-  importDefault = tmp2;
-  if (cResult[0] === tmp2) {
-    let tmp3;
-    let tmp4;
-    if (cResult[1] === arg0) {
-      tmp3 = cResult[2];
-      tmp4 = cResult[3];
-    }
-    const effect = react.useEffect(tmp3, tmp4);
-  }
-  const fn = function p() {
-    if (type !== closure_1) {
-      let result = null;
-      const tmp3 = "user-code-input" !== tmp.type && "handoff" !== tmp.type;
-      if (tmp3) {
-        const obj = ActivateDeviceUtils;
-        result = obj.clientIdToActivateDevicePlatform(tmp.userCodeData.clientId);
-      }
-      type = undefined;
-      const track = AnalyticsUtilsDefault.track;
-      const DEVICE_LINK_STEP = AnalyticEvents.DEVICE_LINK_STEP;
-      AnalyticsUtilsDefault;
-      if (closure_1 != null) {
-        type = tmp2.type;
-      }
-      const obj2 = { previous_step: type, current_step: type.type, platform_type: result };
-      track(DEVICE_LINK_STEP, obj2);
-    }
-  };
-  const items = [tmp2, arg0];
-  cResult[0] = tmp2;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (function useActivateDeviceStepTracking(arg0) {
+let result = size.fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
+
+export function useActivateDeviceStepTracking(arg0) {
   let closure_1;
   let type = arg0;
   const tmp = usePreviousDefault(arg0);
@@ -83,7 +42,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivateD
       track(DEVICE_LINK_STEP, obj2);
     }
   }, items);
-});
-let result = size.fileFinishedImporting("modules/activate_device/useActivateDeviceStepTracking.tsx");
-
-export const useActivateDeviceStepTracking = tmp2;
+}

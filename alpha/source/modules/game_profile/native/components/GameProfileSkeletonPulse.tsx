@@ -1,27 +1,26 @@
-// Module ID: 9399
-// Function ID: 9400
+// Module ID: 9417
+// Function ID: 9418
 // Name: GameProfileSkeletonPulse
-// Dependencies: [19, 5006, 5086, 5243, 558, 576, 504, 2]
+// Dependencies: [19, 5010, 5090, 5249, 504, 2]
+// Exports: useSkeletonPulseStyle
 
-// Module 9399 (GameProfileSkeletonPulse)
+// Module 9417 (GameProfileSkeletonPulse)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5086 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
 import size from "module_2" /* 2 */;
 
-let cancelAnimationResult, closure_8, closure_9, dependencyMap, diff, flag, num, set, tmp6, tmp8Result1;
+let closure_8, dependencyMap, diff, set;
 
 let ReanimatedRexport;
-let c4 = 0.1;
-let c5 = 1300;
+let c4 = 1300;
 const Easing = ReanimatedRexport.Easing;
 const inOutResult = Easing.inOut(ReanimatedRexport.Easing.quad);
-const metroRequire = inOutResult;
+const hasOwnProperty = inOutResult;
 ReanimatedRexport = ReanimatedRexport_mod;
 const pulsePhase = ReanimatedRexport.makeMutable(0);
-let c8 = 0;
-let c9 = false;
+let c7 = 0;
+let c8 = false;
 function getPulseOpacity(arg0, arg1) {
   let result1;
   const result = (arg0 + arg1) % 1;
@@ -29,7 +28,7 @@ function getPulseOpacity(arg0, arg1) {
   if (result < 0) {
     sum = result + 1;
   }
-  const tmp3 = metroRequire;
+  const tmp3 = hasOwnProperty;
   if (sum < 0.5) {
     result1 = 2 * sum;
   } else {
@@ -41,280 +40,10 @@ getPulseOpacity.__closure = { MIN_OPACITY: 0.05, MAX_OPACITY: 0.1, DEFAULT_TIMIN
 getPulseOpacity.__workletHash = 2217576423672;
 getPulseOpacity.__initData = { code: "function getPulseOpacity_GameProfileSkeletonPulseTsx1(phase,phaseOffset){const{MIN_OPACITY,MAX_OPACITY,DEFAULT_TIMING_EASING}=this.__closure;const shiftedPhase=(phase+phaseOffset)%1;const cyclePhase=shiftedPhase<0?shiftedPhase+1:shiftedPhase;const pulseProgress=cyclePhase<0.5?cyclePhase*2:(1-cyclePhase)*2;return MIN_OPACITY+(MAX_OPACITY-MIN_OPACITY)*DEFAULT_TIMING_EASING(pulseProgress);}" };
 const __initData = { code: "function GameProfileSkeletonPulseTsx2(){const{shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset}=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};}" };
-const __initData2 = { code: "function GameProfileSkeletonPulseTsx3(){const{shouldReduceMotion,MAX_OPACITY,getPulseOpacity,pulsePhase,phaseOffset}=this.__closure;if(shouldReduceMotion){return{opacity:MAX_OPACITY};}return{opacity:getPulseOpacity(pulsePhase.get(),phaseOffset)};}" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonPulseStyle(arg0) {
-  let stateFromStores;
-  let tmp11;
-  let tmp12;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const tmp = stateFromStores;
-  let tmp2 = dependencyMap;
-  let obj = stateFromStores(576);
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function _() {
-      return AccessibilityStore.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = fn;
-    tmp4 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        sum = closure_8 + 1;
-        closure_8 = sum;
-        tmp2 = sum > 0;
-        if (tmp2) {
-          tmp3 = closure_1_3;
-          tmp2 = !closure_1_3.useReducedMotion;
-        }
-        if (tmp2 !== closure_9) {
-          closure_9 = tmp2;
-          tmp8 = closure_0;
-          tmp9 = closure_1;
-          obj2 = closure_0(closure_1[2]);
-          tmp10 = closure_1_7;
-          cancelAnimationResult = obj2.cancelAnimation(closure_1_7);
-          result = closure_1_7.set(0);
-          if (tmp2) {
-            set = tmp10.set;
-            tmp8Result = tmp8(tmp9[2]);
-            withRepeat = tmp8Result.withRepeat;
-            tmp8Result1 = tmp8(tmp9[3]);
-            obj = { duration: null, easing: null };
-            tmp6 = closure_1_5;
-            obj.duration = closure_1_5;
-            withTiming = tmp8Result1.withTiming;
-            obj.easing = tmp8(tmp9[2]).Easing.linear;
-            flag = false;
-            num = -1;
-            result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-        return () => {
-          diff = diff - 1;
-          if ((diff > 0 && !useReducedMotion.useReducedMotion) !== closure_9) {
-            closure_9 = tmp2;
-            const obj2 = stateFromStores(closure_1_1[2]);
-            obj2.cancelAnimation(closure_1_7);
-            result = closure_1_7.set(0);
-            const tmp10 = closure_1_7;
-            if (diff > 0 && !useReducedMotion.useReducedMotion) {
-              set = tmp10.set;
-              const withRepeat = stateFromStores(closure_1_1[2]).withRepeat;
-              stateFromStores(closure_1_1[2]);
-              const obj = { duration, easing: stateFromStores(closure_1_1[2]).Easing.linear };
-              const withTiming = stateFromStores(closure_1_1[3]).withTiming;
-              stateFromStores(closure_1_1[3]);
-              const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-            }
-          }
-        };
-      }
-    }
-    const items1 = [];
-    cResult[2] = A;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = A;
-  } else {
-    class A {
-      constructor() {
-        sum = closure_8 + 1;
-        closure_8 = sum;
-        tmp2 = sum > 0;
-        if (tmp2) {
-          tmp3 = closure_1_3;
-          tmp2 = !closure_1_3.useReducedMotion;
-        }
-        if (tmp2 !== closure_9) {
-          closure_9 = tmp2;
-          tmp8 = closure_0;
-          tmp9 = closure_1;
-          obj2 = closure_0(closure_1[2]);
-          tmp10 = closure_1_7;
-          cancelAnimationResult = obj2.cancelAnimation(closure_1_7);
-          result = closure_1_7.set(0);
-          if (tmp2) {
-            set = tmp10.set;
-            tmp8Result = tmp8(tmp9[2]);
-            withRepeat = tmp8Result.withRepeat;
-            tmp8Result1 = tmp8(tmp9[3]);
-            obj = { duration: null, easing: null };
-            tmp6 = closure_1_5;
-            obj.duration = closure_1_5;
-            withTiming = tmp8Result1.withTiming;
-            obj.easing = tmp8(tmp9[2]).Easing.linear;
-            flag = false;
-            num = -1;
-            result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-        return () => {
-          diff = diff - 1;
-          if ((diff > 0 && !useReducedMotion.useReducedMotion) !== closure_9) {
-            closure_9 = tmp2;
-            const obj2 = stateFromStores(closure_1_1[2]);
-            obj2.cancelAnimation(closure_1_7);
-            result = closure_1_7.set(0);
-            const tmp10 = closure_1_7;
-            if (diff > 0 && !useReducedMotion.useReducedMotion) {
-              set = tmp10.set;
-              const withRepeat = stateFromStores(closure_1_1[2]).withRepeat;
-              stateFromStores(closure_1_1[2]);
-              const obj = { duration, easing: stateFromStores(closure_1_1[2]).Easing.linear };
-              const withTiming = stateFromStores(closure_1_1[3]).withTiming;
-              stateFromStores(closure_1_1[3]);
-              const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-            }
-          }
-        };
-      }
-    }
-    tmp9 = cResult[3];
-  }
-  const effect = react.useEffect(tmp8, tmp9);
-  const obj3 = react;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class O {
-      constructor() {
-        if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_9) {
-          closure_9 = tmp;
-          const obj2 = stateFromStores(dependencyMap[2]);
-          obj2.cancelAnimation(pulsePhase);
-          dependencyMap = pulsePhase.set(0);
-          const tmp9 = pulsePhase;
-          if (sum > 0 && !AccessibilityStore.useReducedMotion) {
-            set = tmp9.set;
-            const withRepeat = stateFromStores(dependencyMap[2]).withRepeat;
-            stateFromStores(dependencyMap[2]);
-            const obj = { duration, easing: stateFromStores(dependencyMap[2]).Easing.linear };
-            const withTiming = stateFromStores(dependencyMap[3]).withTiming;
-            stateFromStores(dependencyMap[3]);
-            const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-      }
-    }
-    cResult[4] = O;
-    tmp11 = O;
-  } else {
-    class O {
-      constructor() {
-        if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_9) {
-          closure_9 = tmp;
-          const obj2 = stateFromStores(dependencyMap[2]);
-          obj2.cancelAnimation(pulsePhase);
-          dependencyMap = pulsePhase.set(0);
-          const tmp9 = pulsePhase;
-          if (sum > 0 && !AccessibilityStore.useReducedMotion) {
-            set = tmp9.set;
-            const withRepeat = stateFromStores(dependencyMap[2]).withRepeat;
-            stateFromStores(dependencyMap[2]);
-            const obj = { duration, easing: stateFromStores(dependencyMap[2]).Easing.linear };
-            const withTiming = stateFromStores(dependencyMap[3]).withTiming;
-            stateFromStores(dependencyMap[3]);
-            const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-      }
-    }
-  }
-  if (cResult[5] !== stateFromStores) {
-    class O {
-      constructor() {
-        if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_9) {
-          closure_9 = tmp;
-          const obj2 = stateFromStores(dependencyMap[2]);
-          obj2.cancelAnimation(pulsePhase);
-          dependencyMap = pulsePhase.set(0);
-          const tmp9 = pulsePhase;
-          if (sum > 0 && !AccessibilityStore.useReducedMotion) {
-            set = tmp9.set;
-            const withRepeat = stateFromStores(dependencyMap[2]).withRepeat;
-            stateFromStores(dependencyMap[2]);
-            const obj = { duration, easing: stateFromStores(dependencyMap[2]).Easing.linear };
-            const withTiming = stateFromStores(dependencyMap[3]).withTiming;
-            stateFromStores(dependencyMap[3]);
-            const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-      }
-    }
-    tmp13[0] = stateFromStores;
-    cResult[5] = stateFromStores;
-    cResult[6] = tmp13;
-    tmp12 = tmp13;
-  } else {
-    class O {
-      constructor() {
-        if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_9) {
-          closure_9 = tmp;
-          const obj2 = stateFromStores(dependencyMap[2]);
-          obj2.cancelAnimation(pulsePhase);
-          dependencyMap = pulsePhase.set(0);
-          const tmp9 = pulsePhase;
-          if (sum > 0 && !AccessibilityStore.useReducedMotion) {
-            set = tmp9.set;
-            const withRepeat = stateFromStores(dependencyMap[2]).withRepeat;
-            stateFromStores(dependencyMap[2]);
-            const obj = { duration, easing: stateFromStores(dependencyMap[2]).Easing.linear };
-            const withTiming = stateFromStores(dependencyMap[3]).withTiming;
-            stateFromStores(dependencyMap[3]);
-            const result1 = set(withRepeat(withTiming(1, obj), -1, false));
-          }
-        }
-      }
-    }
-  }
-  const effect1 = obj3.useEffect(tmp11, tmp12);
-  let result = -arg0 % c5 / c5;
-  dependencyMap = result;
-  const tmpResult2 = tmp(5086);
-  class T {
-    constructor() {
-      let tmp7;
-      const obj = { opacity: null };
-      if (stateFromStores) {
-        obj.opacity = opacity;
-        tmp7 = obj;
-      } else if (typeof getPulseOpacity === "function") {
-        let result1;
-        dependencyMap = (pulsePhase.get() + dependencyMap) % 1;
-        sum = dependencyMap;
-        if (dependencyMap < 0) {
-          sum = dependencyMap + 1;
-        }
-        const tmp5 = metroRequire;
-        if (sum < 0.5) {
-          result1 = 2 * sum;
-        } else {
-          result1 = 2 * (1 - sum);
-        }
-        obj.opacity = 0.05 + 0.05 * tmp5(result1);
-        tmp7 = obj;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-      return tmp7;
-    }
-  }
-  let obj2 = { shouldReduceMotion: stateFromStores, MAX_OPACITY: v01, getPulseOpacity, pulsePhase, phaseOffset: result };
-  T.__closure = obj2;
-  T.__workletHash = 3992024948852;
-  T.__initData = __initData;
-  return tmpResult2.useAnimatedStyle(T);
-}) : (function useSkeletonPulseStyle(arg0) {
+let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSkeletonPulse.tsx");
+
+export function useSkeletonPulseStyle(animationDelayMs) {
+  let duration;
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [AccessibilityStore];
@@ -326,8 +55,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
     if (tmp2) {
       tmp2 = !AccessibilityStore.useReducedMotion;
     }
-    if (tmp2 !== closure_9) {
-      closure_9 = tmp2;
+    if (tmp2 !== closure_8) {
+      closure_8 = tmp2;
       let obj2 = stateFromStores(dependencyMap[2]);
       let tmp10 = pulsePhase;
       obj2.cancelAnimation(pulsePhase);
@@ -344,12 +73,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
     }
     return () => {
       diff = diff - 1;
-      if ((diff > 0 && !useReducedMotion.useReducedMotion) !== closure_9) {
-        closure_9 = tmp2;
+      if ((diff > 0 && !useReducedMotion.useReducedMotion) !== closure_8) {
+        closure_8 = tmp2;
         const obj2 = stateFromStores(closure_1_1[2]);
-        obj2.cancelAnimation(closure_1_7);
-        result = closure_1_7.set(0);
-        const tmp10 = closure_1_7;
+        obj2.cancelAnimation(closure_1_6);
+        result = closure_1_6.set(0);
+        const tmp10 = closure_1_6;
         if (diff > 0 && !useReducedMotion.useReducedMotion) {
           set = tmp10.set;
           const withRepeat = stateFromStores(closure_1_1[2]).withRepeat;
@@ -364,8 +93,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
   }, []);
   const items1 = [stateFromStores];
   const effect1 = react.useEffect(() => {
-    if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_9) {
-      closure_9 = tmp;
+    if ((sum > 0 && !AccessibilityStore.useReducedMotion) !== closure_8) {
+      closure_8 = tmp;
       const obj2 = stateFromStores(dependencyMap[2]);
       obj2.cancelAnimation(pulsePhase);
       dependencyMap = pulsePhase.set(0);
@@ -381,41 +110,38 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSkeletonP
       }
     }
   }, items1);
-  let result = -arg0 % c5 / c5;
+  let result = -animationDelayMs % c4 / c4;
   dependencyMap = result;
-  let obj2 = stateFromStores(5086);
-  const fn = function _() {
-    let tmp7;
-    const obj = { opacity: null };
-    if (stateFromStores) {
-      obj.opacity = opacity;
-      tmp7 = obj;
-    } else if (typeof getPulseOpacity === "function") {
-      let result1;
-      dependencyMap = (pulsePhase.get() + dependencyMap) % 1;
-      sum = dependencyMap;
-      if (dependencyMap < 0) {
-        sum = dependencyMap + 1;
-      }
-      const tmp5 = metroRequire;
-      if (sum < 0.5) {
-        result1 = 2 * sum;
+  let obj2 = stateFromStores(5090);
+  class P {
+    constructor() {
+      let obj;
+      const tmp = stateFromStores;
+      if (tmp) {
+        obj = { opacity: 0.1 };
+      } else if (typeof getPulseOpacity === "function") {
+        let result1;
+        dependencyMap = (pulsePhase.get() + dependencyMap) % 1;
+        sum = dependencyMap;
+        if (dependencyMap < 0) {
+          sum = dependencyMap + 1;
+        }
+        const tmp6 = hasOwnProperty;
+        if (sum < 0.5) {
+          result1 = 2 * sum;
+        } else {
+          result1 = 2 * (1 - sum);
+        }
+        obj = { opacity: 0.05 + 0.05 * tmp6(result1) };
       } else {
-        result1 = 2 * (1 - sum);
+        throw new TypeError("Trying to call a non-function");
       }
-      obj.opacity = 0.05 + 0.05 * tmp5(result1);
-      tmp7 = obj;
-    } else {
-      throw new TypeError("Trying to call a non-function");
+      return obj;
     }
-    return tmp7;
-  };
-  const obj3 = { shouldReduceMotion: stateFromStores, MAX_OPACITY: v01, getPulseOpacity, pulsePhase, phaseOffset: result };
-  fn.__closure = obj3;
-  fn.__workletHash = 15886965849973;
-  fn.__initData = __initData2;
-  return obj2.useAnimatedStyle(fn);
-});
-let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSkeletonPulse.tsx");
-
-export const useSkeletonPulseStyle = tmp3;
+  }
+  const obj3 = { shouldReduceMotion: stateFromStores, MAX_OPACITY: 0.1, getPulseOpacity, pulsePhase, phaseOffset: result };
+  P.__closure = obj3;
+  P.__workletHash = 3992024948852;
+  P.__initData = __initData;
+  return obj2.useAnimatedStyle(P);
+}

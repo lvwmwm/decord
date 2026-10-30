@@ -1,36 +1,33 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13193
+// Function ID: 13194
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4857, 1084, 5010, 21, 5005, 587, 7624, 7812, 1264, 7338, 558, 576, 5630, 504, 7240, 1125, 13042, 10197, 5281, 6731, 6984, 5636, 7155, 2]
+// Dependencies: [32, 5, 19, 17, 4858, 1072, 5014, 21, 5009, 575, 7629, 7817, 1253, 7345, 5602, 504, 7247, 1114, 13194, 10222, 5629, 6738, 5607, 6992, 7163, 2]
+// Exports: default
 
-// Module 13041 (GiftIntentGifModal)
+// Module 13193 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let closure_2, gif, gift_intent_type, is_custom_message, ref, url;
+let closure_2, gift_intent_type, is_custom_message, url;
 
 let c10;
 let obj2;
 let obj3;
 let obj4;
 let unpackModuleId;
-function sendGiftIntentGif() {
-  return obj(...arguments);
-}
 let obj = function _sendGiftIntentGif() {
   obj = _asyncToGenerator(async (arg0) => {
     let user = arg0;
@@ -53,7 +50,7 @@ let obj = function _sendGiftIntentGif() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,7 +72,7 @@ let obj = function _sendGiftIntentGif() {
               is_custom_message = undefined;
               url = 1;
               c4 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else {
             if (1 === url) {
@@ -123,7 +120,7 @@ let obj = function _sendGiftIntentGif() {
               items[0] = closure_130_1(closure_130_2[13]).PREMIUM_GIFT_INTENT_CARD;
               track(GIFT_INTENT_MESSAGE_SENT, obj10);
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
             const id = user.id;
             const sendMessage = closure_130_1(closure_130_2[10]).sendMessage;
@@ -146,147 +143,7 @@ let obj = function _sendGiftIntentGif() {
   });
   return obj(...arguments);
 };
-let View = react_native.View;
-const AnalyticEvents = Constants.AnalyticEvents;
-const MessageSendLocation = MessageConstants.MessageSendLocation;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let createStyles = createStyles_mod;
-obj = { container: obj2, messageContainer: obj3, pickerContainer: { flex: 1 }, footer: obj4 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
-obj4 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
-let closure_12 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGifModalBody(channelId) {
-  let closure_6;
-  let first;
-  let first1;
-  let onClose;
-  let tmp7;
-  let tmp = channelId;
-  let tmp2 = onClose;
-  obj = channelId(onClose[15]);
-  const cResult = obj.c(41);
-  channelId = channelId.channelId;
-  const giftIntentType = channelId.giftIntentType;
-  onClose = channelId.onClose;
-  closure_12();
-  const insets = giftIntentType(onClose[16])().insets;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function f() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[17]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  ref = first1.useRef(null);
-  const tmp10 = stateFromStores(first1.useState(null), 2);
-  first1 = tmp10[0];
-  View = tmp10[1];
-  first1.useRef(null);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor(arg0) {
-        closure_0 = channelId;
-        tmp = closure_6((src) => {
-          src = undefined;
-          if (src != null) {
-            src = src.src;
-          }
-          let tmp2 = null;
-          if (src !== src.src) {
-            tmp2 = src;
-          }
-          return tmp2;
-        });
-        return;
-      }
-    }
-    cResult[3] = S;
-  } else {
-    class S {
-      constructor(arg0) {
-        closure_0 = channelId;
-        tmp = closure_6((src) => {
-          src = undefined;
-          if (src != null) {
-            src = src.src;
-          }
-          let tmp2 = null;
-          if (src !== src.src) {
-            tmp2 = src;
-          }
-          return tmp2;
-        });
-        return;
-      }
-    }
-  }
-  if (cResult[4] === stateFromStores) {
-    class S {
-      constructor(arg0) {
-        closure_0 = channelId;
-        tmp = closure_6((src) => {
-          src = undefined;
-          if (src != null) {
-            src = src.src;
-          }
-          let tmp2 = null;
-          if (src !== src.src) {
-            tmp2 = src;
-          }
-          return tmp2;
-        });
-        return;
-      }
-    }
-  }
-  class M {
-    constructor() {
-      let str;
-      let tmp2 = null != stateFromStores;
-      const tmp = stateFromStores;
-      if (tmp2) {
-        tmp2 = null != first1;
-      }
-      if (tmp2) {
-        tmp2 = 0 !== first1.url.length;
-      }
-      if (tmp2) {
-        const current = ref.current;
-        obj = { channel: tmp, giftIntentType, text: str, gif: first1 };
-        str = undefined;
-        const tmp5 = sendGiftIntentGif;
-        if (current != null) {
-          str = current.getText();
-        }
-        if (str == null) {
-          str = "";
-        }
-        tmp5(obj);
-        onClose();
-      }
-    }
-  }
-  cResult[4] = stateFromStores;
-  cResult[5] = giftIntentType;
-  cResult[6] = onClose;
-  cResult[7] = first1;
-  cResult[8] = M;
-}) : (function GiftIntentGifModalBody(channelId) {
+function GiftIntentGifModalBody(channelId) {
   let TextArea;
   let guild_id;
   let intl;
@@ -304,14 +161,14 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIn
   channelId = channelId.channelId;
   const giftIntentType = channelId.giftIntentType;
   const onClose = channelId.onClose;
-  gif = undefined;
+  let gif;
   let tmp = closure_12();
   let tmp2 = giftIntentType;
-  const insets = giftIntentType(onClose[16])().insets;
-  obj = channelId(onClose[17]);
+  const insets = giftIntentType(onClose[14])().insets;
+  obj = channelId(onClose[15]);
   const items = [ChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  ref = gif.useRef(null);
+  const ref = gif.useRef(null);
   const tmp7 = stateFromStores(gif.useState(null), 2);
   gif = tmp7[0];
   let closure_6 = tmp7[1];
@@ -336,6 +193,9 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIn
   const obj3 = { style: tmp.messageContainer, children: closure_10(TextArea, obj4) };
   const callback1 = gif.useCallback(() => {
     let str;
+    function sendGiftIntentGif() {
+      return closure_1_13(...arguments);
+    }
     let tmp2 = null != stateFromStores;
     const tmp = stateFromStores;
     if (tmp2) {
@@ -348,119 +208,63 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIn
       const current = ref.current;
       obj = { channel: tmp, giftIntentType, text: str, gif };
       str = undefined;
-      const tmp5 = sendGiftIntentGif;
       if (current != null) {
         str = current.getText();
       }
       if (str == null) {
         str = "";
       }
-      tmp5(obj);
+      !sendGiftIntentGif(obj);
       onClose();
     }
   }, items1);
-  obj4 = { ref, accessibilityLabel: intl.string(channelId(onClose[19]).t.ZV02cV), placeholder: obj5.getGiftIntentCustomMessagePlaceholder() };
-  TextArea = channelId(onClose[18]).TextArea;
-  intl = channelId(onClose[19]).intl;
-  obj5 = channelId(onClose[20]);
+  obj4 = { ref, accessibilityLabel: intl.string(channelId(onClose[17]).t.ZV02cV), placeholder: obj5.getGiftIntentCustomMessagePlaceholder() };
+  TextArea = channelId(onClose[16]).TextArea;
+  intl = channelId(onClose[17]).intl;
+  obj5 = channelId(onClose[18]);
   items3 = [closure_10(closure_6, obj3), , ];
   const obj6 = { style: tmp.pickerContainer, children: closure_10(tmp15, obj7) };
-  obj7 = { bottomSheetRef: ref1, channelId, guildId: guild_id, initialQuery: intl2.string(channelId(onClose[19]).t.jrtJi4), inActionSheet: false, contentHorizontalPadding: tmp2(onClose[9]).space.PX_16, selectedGifSrc: src, keyboardDismissMode: "on-drag", onPressGIF: callback };
+  obj7 = { bottomSheetRef: ref1, channelId, guildId: guild_id, initialQuery: intl2.string(channelId(onClose[17]).t.jrtJi4), inActionSheet: false, contentHorizontalPadding: tmp2(onClose[9]).space.PX_16, selectedGifSrc: src, keyboardDismissMode: "on-drag", onPressGIF: callback };
   guild_id = undefined;
-  tmp15 = giftIntentType(onClose[21]);
+  tmp15 = giftIntentType(onClose[19]);
   if (stateFromStores != null) {
     guild_id = stateFromStores.guild_id;
   }
-  intl2 = tmp4(tmp3[19]).intl;
+  intl2 = tmp4(tmp3[17]).intl;
   src = undefined;
   if (gif != null) {
     src = gif.src;
   }
   items3[1] = closure_10(closure_6, obj6);
   const obj8 = { style: tmp.footer, children: items4 };
-  const obj9 = { grow: true, variant: "primary", text: intl3.string(channelId(onClose[19]).t.TXNS7S), onPress: callback1, disabled: null == gif };
-  const Button = tmp4(tmp3[22]).Button;
-  intl3 = tmp4(tmp3[19]).intl;
+  const obj9 = { grow: true, variant: "primary", text: intl3.string(channelId(onClose[17]).t.TXNS7S), onPress: callback1, disabled: null == gif };
+  const Button = tmp4(tmp3[20]).Button;
+  intl3 = tmp4(tmp3[17]).intl;
   items4 = [closure_10(Button, obj9), ];
-  const obj10 = { grow: true, variant: "secondary", text: intl4.string(channelId(onClose[19]).t["ETE/oC"]), onPress: onClose };
-  const Button2 = tmp4(tmp3[22]).Button;
-  intl4 = tmp4(tmp3[19]).intl;
+  const obj10 = { grow: true, variant: "secondary", text: intl4.string(channelId(onClose[17]).t["ETE/oC"]), onPress: onClose };
+  const Button2 = tmp4(tmp3[20]).Button;
+  intl4 = tmp4(tmp3[17]).intl;
   items4[1] = closure_10(Button2, obj10);
   items3[2] = closure_11(closure_6, obj8);
   return closure_11(closure_6, obj2);
-});
+}
+const View = react_native.View;
+const AnalyticEvents = Constants.AnalyticEvents;
+const MessageSendLocation = MessageConstants.MessageSendLocation;
+({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+obj = { container: obj2, messageContainer: obj3, pickerContainer: { flex: 1 }, footer: obj4 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };
+obj4 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
+let closure_12 = createStyles(obj);
 const constants = { GIFT_INTENT_GIF: "GIFT_INTENT_GIF" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGifModal(channelId) {
+const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");
+
+export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  let tmp4;
-  obj = channelId(onDismiss[15]);
-  const cResult = obj.c(8);
-  const tmp = channelId;
-  channelId = channelId.channelId;
-  const giftIntentType = channelId.giftIntentType;
-  onDismiss = channelId.onDismiss;
-  if (cResult[0] !== onDismiss) {
-    const fn = function n() {
-      const arr = ModalActionCreatorsDefault;
-      arr.pop();
-      if (onDismiss != null) {
-        onDismiss();
-      }
-    };
-    cResult[0] = onDismiss;
-    cResult[1] = fn;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let closure_3 = tmp4;
-  if (cResult[2] === channelId) {
-    if (cResult[3] === giftIntentType) {
-      let tmp5;
-      let tmp8;
-      if (cResult[4] === tmp4) {
-        tmp5 = cResult[5];
-      }
-      const tmp7 = giftIntentType(onDismiss[25])(tmp5);
-      if (cResult[6] !== tmp7) {
-        let obj2 = { initialRouteName: constants.GIFT_INTENT_GIF, screens: tmp7 };
-        const tmp11 = closure_10(tmp(onDismiss[26]).Navigator, obj2);
-        cResult[6] = tmp7;
-        cResult[7] = tmp11;
-        tmp8 = tmp11;
-      } else {
-        tmp8 = cResult[7];
-      }
-      return tmp8;
-    }
-  }
-  const fn2 = function f() {
-    let intl;
-    let obj3;
-    obj = {};
-    const GIFT_INTENT_GIF = constants.GIFT_INTENT_GIF;
-    const obj2 = {
-      title: intl.string(intl5.t.PQRuGc),
-      headerLeft: obj3.getHeaderCloseButton(onClose),
-      render() {
-        obj = { channelId, giftIntentType, onClose };
-        return closure_2_10(closure_2_15, obj);
-      }
-    };
-    intl = intl5.intl;
-    obj[GIFT_INTENT_GIF] = obj2;
-    obj3 = NavigatorHeader;
-    return obj;
-  };
-  cResult[2] = channelId;
-  cResult[3] = giftIntentType;
-  cResult[4] = tmp4;
-  cResult[5] = fn2;
-  tmp5 = fn2;
-}) : (function GiftIntentGifModal(arg0) {
-  let onDismiss;
-  const f118193 = () => {
+  const f103778 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -472,7 +276,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
       headerLeft: obj3.getHeaderCloseButton(onClose),
       render() {
         obj = { channelId, giftIntentType, onClose };
-        return closure_2_10(closure_2_15, obj);
+        return closure_2_10(GiftIntentGifModalBody, obj);
       }
     };
     intl = intl5.intl;
@@ -489,10 +293,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftIntentGi
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("useInitialValue")(f118193) };
-  require("useInitialValue")(f118193);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f103778) };
+  require("react")(f103778);
   return closure_10(require("Navigator").Navigator, obj);
-});
-const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIntentGifModal.tsx");
-
-export default tmp4;
+};

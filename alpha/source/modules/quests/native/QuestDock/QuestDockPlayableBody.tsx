@@ -1,214 +1,38 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17119
+// Function ID: 17120
 // Name: QuestDockPlayableBody
-// Dependencies: [19, 6768, 21, 558, 576, 17029, 16975, 16944, 16951, 9672, 7313, 9639, 9642, 6775, 7859, 6771, 11455, 9674, 17047, 9662, 17062, 1125, 8014, 15090, 2]
+// Dependencies: [19, 6775, 21, 17083, 17029, 16998, 17005, 9697, 7320, 9664, 9667, 6782, 7864, 6778, 11656, 9699, 17101, 9687, 17116, 1114, 8020, 15134, 2]
 
-// Module 17065 (QuestDockPlayableBody)
+// Module 17119 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
-import captureAdUserAction from "captureAdUserAction" /* 9639 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9674 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11455 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+import captureAdUserAction from "captureAdUserAction" /* 9664 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9667 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9699 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11656 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockPlayableBody() {
-  let analyticsLocations;
-  let getQuestImpressionId;
-  let questDockPlayable;
-  let setRestingQuestDockMode;
-  let tmp = questDockPlayable;
-  let obj = questDockPlayable(getQuestImpressionId[4]);
-  const cResult = obj.c(24);
-  const isRendered = analyticsLocations.useContext(setRestingQuestDockMode(getQuestImpressionId[5])).isRendered;
-  let obj2 = questDockPlayable(getQuestImpressionId[6]);
-  questDockPlayable = obj2.useQuestDockPlayable();
-  let obj3 = questDockPlayable(getQuestImpressionId[7]);
-  let isQuestDockExpanded = obj3.useIsQuestDockExpanded();
-  setRestingQuestDockMode = analyticsLocations.useContext(questDockPlayable(getQuestImpressionId[8]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj4 = questDockPlayable(getQuestImpressionId[9]);
-  getQuestImpressionId = obj4.useGetQuestImpressionId();
-  analyticsLocations = setRestingQuestDockMode(getQuestImpressionId[10])().analyticsLocations;
-  if (cResult[0] === analyticsLocations) {
-    if (cResult[1] === getQuestImpressionId) {
-      if (cResult[2] === questDockPlayable.applicationId) {
-        if (cResult[3] === questDockPlayable.id) {
-          let tmp8;
-          if (cResult[4] === setRestingQuestDockMode) {
-            tmp8 = cResult[5];
-          }
-          if (cResult[6] === getQuestImpressionId) {
-            if (cResult[7] === questDockPlayable.cta) {
-              let tmp9;
-              if (cResult[8] === questDockPlayable.id) {
-                tmp9 = cResult[9];
-              }
-              class L {
-                constructor() {
-                  const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-                  const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-                  const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-                  const result = openAdGameLinkDirectly(obj, obj2);
-                }
-              }
-              if (isQuestDockExpanded) {
-                isQuestDockExpanded = isRendered;
-              }
-              if (cResult[10] === !isQuestDockExpanded) {
-                let tmp11;
-                let tmp15;
-                let tmp19;
-                let tmp18;
-                if (cResult[11] === isQuestDockExpanded) {
-                  tmp11 = cResult[12];
-                }
-                class L {
-                  constructor() {
-                    const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-                    const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-                    const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-                    const result = openAdGameLinkDirectly(obj, obj2);
-                  }
-                }
-                if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp17 = jsx(setRestingQuestDockMode(getQuestImpressionId[20]), {});
-                  class L {
-                    constructor() {
-                      const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-                      const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-                      const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-                      const result = openAdGameLinkDirectly(obj, obj2);
-                    }
-                  }
-                  cResult[13] = tmp17;
-                  tmp15 = tmp17;
-                } else {
-                  tmp15 = cResult[13];
-                }
-                const _Symbol = Symbol;
-                const productName = questDockPlayable.productName;
-                if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                  const string = tmp(tmp2[21]).intl.string;
-                  class L {
-                    constructor() {
-                      const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-                      const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-                      const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-                      const result = openAdGameLinkDirectly(obj, obj2);
-                    }
-                  }
-                  const intl = tmp(tmp2[21]).intl;
-                  const stringResult = intl.string(tmp(getQuestImpressionId[21]).t.U7cCLU);
-                  cResult[14] = tmp20;
-                  cResult[15] = stringResult;
-                  tmp19 = stringResult;
-                  tmp18 = tmp20;
-                } else {
-                  tmp18 = cResult[14];
-                  tmp19 = cResult[15];
-                }
-                if (cResult[16] === tmp9) {
-                  let tmp22;
-                  if (cResult[17] === questDockPlayable.cta.buttonLabel) {
-                    tmp22 = cResult[18];
-                  }
-                  if (cResult[19] === tmp8) {
-                    if (cResult[20] === questDockPlayable.productName) {
-                      if (cResult[21] === tmp11) {
-                        let tmp25;
-                        if (cResult[22] === tmp22) {
-                          tmp25 = cResult[23];
-                        }
-                        return tmp25;
-                      }
-                    }
-                  }
-                  class L {
-                    constructor() {
-                      const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-                      const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-                      const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-                      const result = openAdGameLinkDirectly(obj, obj2);
-                    }
-                  }
-                  const tmp26 = jsx(setRestingQuestDockMode(getQuestImpressionId[18]), { rewardTile: tmp11, contentBadge: tmp15, title: productName, description: tmp18, ctaText: tmp19, onCtaPress: tmp8, ctaButtonVariant: "primary", secondaryCta: tmp22 });
-                  cResult[19] = tmp8;
-                  cResult[20] = questDockPlayable.productName;
-                  cResult[21] = tmp11;
-                  cResult[22] = tmp22;
-                  cResult[23] = tmp26;
-                  tmp25 = tmp26;
-                }
-                const IconButton = tmp(tmp2[22]).IconButton;
-                const tmp24 = <IconButton variant="secondary-overlay" size="md" icon={setRestingQuestDockMode(getQuestImpressionId[23])} accessibilityLabel={questDockPlayable.cta.buttonLabel} onPress={tmp9} />;
-                cResult[16] = tmp9;
-                cResult[17] = questDockPlayable.cta.buttonLabel;
-                cResult[18] = tmp24;
-                tmp22 = tmp24;
-              }
-              const QuestDockBodyRewardTile = tmp(tmp2[18]).QuestDockBodyRewardTile;
-              const tmp13 = <QuestDockBodyRewardTile assetUrl={setRestingQuestDockMode(getQuestImpressionId[19])} isAnimatedAsset paused={!isQuestDockExpanded} withAnimation={isQuestDockExpanded} />;
-              cResult[10] = !isQuestDockExpanded;
-              cResult[11] = isQuestDockExpanded;
-              cResult[12] = tmp13;
-              tmp11 = tmp13;
-            }
-          }
-          class L {
-            constructor() {
-              const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
-              const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
-              const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-              const result = openAdGameLinkDirectly(obj, obj2);
-            }
-          }
-          cResult[6] = getQuestImpressionId;
-          cResult[7] = questDockPlayable.cta;
-          cResult[8] = questDockPlayable.id;
-          cResult[9] = L;
-          tmp9 = L;
-        }
-      }
-    }
-  }
-  const fn = function s() {
-    const obj = captureAdUserAction;
-    const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, adCreativeId: questDockPlayable.id, questContentCTA: AnalyticsTypes.QuestContentCTA.LAUNCH_MOBILE_ACTIVITY, surfaceId: QuestTypes.QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE, impressionId: getQuestImpressionId() };
-    obj.captureAdUserAction(obj2);
-    const obj3 = GamesActionCreatorsDefault;
-    const obj4 = { applicationId: questDockPlayable.applicationId, analyticsLocations };
-    obj3.launch(obj4);
-    setRestingQuestDockMode(QuestDockMode.COLLAPSED);
-  };
-  cResult[0] = analyticsLocations;
-  cResult[1] = getQuestImpressionId;
-  cResult[2] = questDockPlayable.applicationId;
-  cResult[3] = questDockPlayable.id;
-  cResult[4] = setRestingQuestDockMode;
-  cResult[5] = fn;
-  tmp8 = fn;
-}) : (function QuestDockPlayableBody() {
+const memoResult = react.memo(function QuestDockPlayableBody() {
   let analyticsLocations;
   let getQuestImpressionId;
   let questDockPlayable;
   let setRestingQuestDockMode;
   let tmp = setRestingQuestDockMode;
-  const isRendered = analyticsLocations.useContext(setRestingQuestDockMode(getQuestImpressionId[5])).isRendered;
-  let obj = questDockPlayable(getQuestImpressionId[6]);
+  const isRendered = analyticsLocations.useContext(setRestingQuestDockMode(getQuestImpressionId[3])).isRendered;
+  let obj = questDockPlayable(getQuestImpressionId[4]);
   questDockPlayable = obj.useQuestDockPlayable();
-  let obj2 = questDockPlayable(getQuestImpressionId[7]);
+  let obj2 = questDockPlayable(getQuestImpressionId[5]);
   let isQuestDockExpanded = obj2.useIsQuestDockExpanded();
-  setRestingQuestDockMode = analyticsLocations.useContext(questDockPlayable(getQuestImpressionId[8]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj3 = questDockPlayable(getQuestImpressionId[9]);
+  setRestingQuestDockMode = analyticsLocations.useContext(questDockPlayable(getQuestImpressionId[6]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  let obj3 = questDockPlayable(getQuestImpressionId[7]);
   getQuestImpressionId = obj3.useGetQuestImpressionId();
-  analyticsLocations = setRestingQuestDockMode(getQuestImpressionId[10])().analyticsLocations;
+  analyticsLocations = setRestingQuestDockMode(getQuestImpressionId[8])().analyticsLocations;
   const items = [, , , , ];
   ({ id: arr[0], applicationId: arr[1] } = questDockPlayable);
   items[2] = analyticsLocations;
@@ -232,8 +56,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
     const result = openAdGameLinkDirectly(obj, obj2);
   }, items1);
-  setRestingQuestDockMode(getQuestImpressionId[18]);
-  const QuestDockBodyRewardTile = questDockPlayable(getQuestImpressionId[18]).QuestDockBodyRewardTile;
+  setRestingQuestDockMode(getQuestImpressionId[16]);
+  const QuestDockBodyRewardTile = questDockPlayable(getQuestImpressionId[16]).QuestDockBodyRewardTile;
   let tmp11 = !isQuestDockExpanded;
   if (isQuestDockExpanded) {
     tmp11 = !isRendered;
@@ -241,12 +65,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (isQuestDockExpanded) {
     isQuestDockExpanded = isRendered;
   }
-  const intl = tmp3(tmp2[21]).intl;
-  const intl2 = tmp3(tmp2[21]).intl;
-  ({ variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[23]), accessibilityLabel: questDockPlayable.cta.buttonLabel, onPress: callback1 });
-  const IconButton = tmp3(tmp2[22]).IconButton;
-  return <tmp10 rewardTile={<QuestDockBodyRewardTile assetUrl={setRestingQuestDockMode(getQuestImpressionId[19])} isAnimatedAsset paused={tmp11} withAnimation={isQuestDockExpanded} />} contentBadge={jsx(tmp(getQuestImpressionId[20]), {})} title={questDockPlayable.productName} description={intl.string(questDockPlayable(getQuestImpressionId[21]).t["1uzE2S"])} ctaText={intl2.string(questDockPlayable(getQuestImpressionId[21]).t.U7cCLU)} onCtaPress={callback} ctaButtonVariant="primary" secondaryCta={null} />;
-}));
+  const intl = tmp3(tmp2[19]).intl;
+  const intl2 = tmp3(tmp2[19]).intl;
+  ({ variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[21]), accessibilityLabel: questDockPlayable.cta.buttonLabel, onPress: callback1 });
+  const IconButton = tmp3(tmp2[20]).IconButton;
+  return <tmp10 rewardTile={<QuestDockBodyRewardTile assetUrl={setRestingQuestDockMode(getQuestImpressionId[17])} isAnimatedAsset paused={tmp11} withAnimation={isQuestDockExpanded} />} contentBadge={jsx(tmp(getQuestImpressionId[18]), {})} title={questDockPlayable.productName} description={intl.string(questDockPlayable(getQuestImpressionId[19]).t["1uzE2S"])} ctaText={intl2.string(questDockPlayable(getQuestImpressionId[19]).t.U7cCLU)} onCtaPress={callback} ctaButtonVariant="primary" secondaryCta={null} />;
+});
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockPlayableBody.tsx");
 
 export default memoResult;

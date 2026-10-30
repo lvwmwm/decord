@@ -1,16 +1,16 @@
-// Module ID: 7835
-// Function ID: 7836
+// Module ID: 7840
+// Function ID: 7841
 // Name: ConsoleQuestUIStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 
-// Module 7835 (ConsoleQuestUIStore)
-import module_570 from "module_570" /* 570 */;
+// Module 7840 (ConsoleQuestUIStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
 
 let closure_0 = [];
-let obj = module_570.create((arg0, arg1) => {
+let obj = module_560.create((arg0, arg1) => {
   closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {

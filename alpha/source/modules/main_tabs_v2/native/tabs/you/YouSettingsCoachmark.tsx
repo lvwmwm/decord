@@ -1,40 +1,24 @@
-// Module ID: 18754
-// Function ID: 18755
+// Module ID: 18813
+// Function ID: 18814
 // Name: YouSettingsCoachmark
-// Dependencies: [109, 558, 576, 18755, 9906, 2]
-// Exports: default
+// Dependencies: [18814, 9933, 2]
+// Exports: default, useYouSettingsCoachmark
 
-// Module 18754 (YouSettingsCoachmark)
-import react from "react" /* 576 */;
-import useCoachmark from "useCoachmark" /* 9906 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 18813 (YouSettingsCoachmark)
+import useCoachmark from "useCoachmark" /* 9933 */;
+import useReferralProgramCoachmark from "useReferralProgramCoachmark" /* 18814 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const useReferralProgramCoachmark = tmp(18755);
-let closure_2 = ["buttonRef"];
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouSettingsCoachmark(disabled) {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  disabled = disabled.disabled;
-  if (cResult[0] !== disabled) {
-    const obj2 = { disabled };
-    cResult[0] = disabled;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = useReferralProgramCoachmark;
-  let referralProgramCoachmark = tmpResult.useReferralProgramCoachmark(tmp4);
-  if (referralProgramCoachmark == null) {
-    referralProgramCoachmark = null;
-  }
-  return referralProgramCoachmark;
-}) : (function useYouSettingsCoachmark(disabled) {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
+
+export default function YouSettingsCoachmark(buttonRef) {
+  buttonRef = buttonRef.buttonRef;
+  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
+  const obj = useCoachmark;
+  const coachmark = obj.useCoachmark(buttonRef, merged);
+  return null;
+};
+export function useYouSettingsCoachmark(disabled) {
   disabled = disabled.disabled;
   const obj = useReferralProgramCoachmark;
   let referralProgramCoachmark = obj.useReferralProgramCoachmark({ disabled });
@@ -42,39 +26,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouSett
     referralProgramCoachmark = null;
   }
   return referralProgramCoachmark;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_4 = ReactCompilerGating.isReactCompilerEnabled();
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouSettingsCoachmark.tsx");
-
-export default function YouSettingsCoachmark(buttonRef) {
-  const tmp = closure_4;
-  if (tmp) {
-    let tmp12;
-    let tmp11;
-    const obj3 = react;
-    const cResult = obj3.c(3);
-    const tmp8 = require;
-    if (cResult[0] !== buttonRef) {
-      const buttonRef2 = buttonRef.buttonRef;
-      const tmp15 = _objectWithoutProperties(buttonRef, closure_2);
-      cResult[0] = buttonRef;
-      cResult[1] = buttonRef2;
-      cResult[2] = tmp15;
-      tmp12 = tmp15;
-      tmp11 = buttonRef2;
-    } else {
-      tmp11 = cResult[1];
-      tmp12 = cResult[2];
-    }
-    const tmp8Result = tmp8(9906);
-    const coachmark = tmp8Result.useCoachmark(tmp11, tmp12);
-  } else {
-    buttonRef = buttonRef.buttonRef;
-    const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
-    const obj2 = useCoachmark;
-    const coachmark1 = obj2.useCoachmark(buttonRef, merged);
-  }
-  return null;
-};
-export const useYouSettingsCoachmark = tmp2;
+}

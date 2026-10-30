@@ -1,19 +1,17 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18100
+// Function ID: 18101
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5271, 587, 5005, 558, 576, 5086, 8799, 10693, 1125, 2]
+// Dependencies: [19, 17, 21, 5619, 575, 5009, 5090, 8833, 10716, 1114, 2]
 
-// Module 18037 (MessagesItemSuggestedFriendsHeader)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8799 */;
+// Module 18100 (MessagesItemSuggestedFriendsHeader)
+import nativeDefault from "native" /* 575 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8833 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -23,10 +21,10 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp;
-let tmp6;
-const intl2 = tmp(1125);
-const ThemedGradientDefault = tmp6(10693);
+let tmp2;
+let tmp5;
+const intl2 = tmp2(1114);
+const ThemedGradientDefault = tmp5(10716);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const sum = Text_Text.TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
@@ -38,102 +36,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
 const __initData = { code: "function MessagesItemSuggestedFriendsHeaderTsx1(){const{stickyAt,scrollPosition}=this.__closure;return stickyAt!=null&&scrollPosition.get()>=stickyAt;}" };
-const __initData2 = { code: "function MessagesItemSuggestedFriendsHeaderTsx2(){const{stickyAt,scrollPosition}=this.__closure;return stickyAt!=null&&scrollPosition.get()>=stickyAt;}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemSuggestedFriendsHeader(stickyAt) {
-  let items;
-  let items1;
-  let stickyLeft;
-  let stickyTop;
-  const tmp = require;
-  let tmp2 = dependencyMap;
-  const obj = react2;
-  const cResult = obj.c(14);
-  stickyAt = stickyAt.stickyAt;
-  const scrollPosition = stickyAt.scrollPosition;
-  ({ stickyLeft, stickyTop } = stickyAt);
-  const tmp4 = closure_8();
-  const fn = function s() {
-    const tmp2 = null != stickyAt && scrollPosition.get() >= tmp;
-    return tmp2;
-  };
-  fn.__closure = { stickyAt, scrollPosition };
-  fn.__workletHash = 895751186732;
-  fn.__initData = __initData;
-  const obj2 = ReanimatedRexport;
-  const derivedValue = obj2.useDerivedValue(fn);
-  const tmp7 = useStateFromSharedValueDefault(derivedValue);
-  if (cResult[0] === -stickyLeft) {
-    let tmp10;
-    if (cResult[1] === -stickyTop) {
-      tmp10 = cResult[2];
-    }
-    if (cResult[3] === tmp7) {
-      if (cResult[4] === tmp10) {
-        let tmp12;
-        let tmp19;
-        let tmp21;
-        if (cResult[5] === tmp4.stickyOverlay) {
-          tmp12 = cResult[6];
-        }
-        const _Symbol = Symbol;
-        const headerText = tmp4.headerText;
-        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = intl2.intl;
-          const stringResult = intl.string(intl2.t["1uAmCw"]);
-          cResult[7] = stringResult;
-          tmp19 = stringResult;
-        } else {
-          tmp19 = cResult[7];
-        }
-        if (cResult[8] !== tmp4.headerText) {
-          const obj3 = { style: headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "text-md/semibold", color: "text-default", children: tmp19 };
-          const tmp23 = hasOwnProperty(Text_Text.Text, obj3);
-          cResult[8] = tmp4.headerText;
-          cResult[9] = tmp23;
-          tmp21 = tmp23;
-        } else {
-          tmp21 = cResult[9];
-        }
-        if (cResult[10] === tmp4.headerContainer) {
-          if (cResult[11] === tmp12) {
-            let tmp24;
-            if (cResult[12] === tmp21) {
-              tmp24 = cResult[13];
-            }
-            return tmp24;
-          }
-        }
-        const obj4 = { style: tmp11, collapsable: false, children: items };
-        items = [tmp12, tmp21];
-        const tmp27 = metroImportDefault(React3, obj4);
-        cResult[10] = tmp4.headerContainer;
-        cResult[11] = tmp12;
-        cResult[12] = tmp21;
-        cResult[13] = tmp27;
-        tmp24 = tmp27;
-      }
-    }
-    let tmp13 = null;
-    if (tmp7) {
-      const obj5 = { children: items1 };
-      const obj6 = { absolute: true, wide: true, componentStyles: tmp10, tall: true, mix: true };
-      items1 = [hasOwnProperty(ThemedGradientDefault, obj6), ];
-      const obj7 = { style: tmp4.stickyOverlay };
-      items1[1] = hasOwnProperty(React3, obj7);
-      tmp13 = metroImportDefault(metroRequire, obj5);
-    }
-    cResult[3] = tmp7;
-    cResult[4] = tmp10;
-    cResult[5] = tmp4.stickyOverlay;
-    cResult[6] = tmp13;
-    tmp12 = tmp13;
-  }
-  const rect = { left: tmp8, top: tmp9 };
-  cResult[0] = -stickyLeft;
-  cResult[1] = -stickyTop;
-  cResult[2] = rect;
-  tmp10 = rect;
-}) : (function MessagesItemSuggestedFriendsHeader(stickyAt) {
+const memoResult = react.memo(function MessagesItemSuggestedFriendsHeader(stickyAt) {
   let intl;
   let items1;
   let items2;
@@ -148,8 +51,8 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return tmp2;
   };
   fn.__closure = { stickyAt, scrollPosition };
-  fn.__workletHash = 10594399404463;
-  fn.__initData = __initData2;
+  fn.__workletHash = 895751186732;
+  fn.__initData = __initData;
   const obj = ReanimatedRexport;
   const derivedValue = obj.useDerivedValue(fn);
   const items = [stickyLeft, stickyTop];
@@ -170,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   intl = intl2.intl;
   items2[1] = hasOwnProperty(Text, obj6);
   return metroImportDefault(React3, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemSuggestedFriendsHeader.tsx");
 
 export default memoResult;

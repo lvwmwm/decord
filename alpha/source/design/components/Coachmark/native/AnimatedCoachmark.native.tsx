@@ -1,24 +1,21 @@
-// Module ID: 9914
-// Function ID: 9915
+// Module ID: 9941
+// Function ID: 9942
 // Name: AnimatedCoachmark
-// Dependencies: [32, 109, 19, 17, 21, 5086, 9915, 558, 576, 5019, 9911, 9912, 2]
+// Dependencies: [32, 19, 17, 21, 5090, 9942, 5023, 9938, 9939, 2]
+// Exports: AnimatedCoachmark
 
-// Module 9914 (AnimatedCoachmark)
+// Module 9941 (AnimatedCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import react3 from "react" /* 5019 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5086 */;
-import TooltipConstants from "TooltipConstants" /* 9911 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9912 */;
-import Coachmark from "Coachmark" /* 9915 */;
+import react2 from "react" /* 5023 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
+import TooltipConstants from "TooltipConstants" /* 9938 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9939 */;
+import Coachmark from "Coachmark" /* 9942 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = ["visible"];
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 function renderTooltipItem(arg0, enterExitAnimatedStyles) {
@@ -33,68 +30,16 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
   }
   return <View style={items} pointerEvents="box-none">{tmpResult}</View>;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCoachmark(visible) {
-  const obj = react2;
-  const cResult = obj.c(9);
-  visible = visible.visible;
-  const tmp3 = _objectWithoutProperties(visible, closure_3);
-  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
-  const tmp4 = _slicedToArray(react.useState(visible), 2);
-  let closure_1 = tmp6;
-  const first = tmp4[0];
-  const obj3 = TooltipConstants;
-  const result = obj3.tooltipEnterExitAnimation(tmp3.position);
-  const obj2 = react;
-  if (cResult[0] === tmp4[1]) {
-    let tmp8;
-    let tmp9;
-    if (cResult[1] === visible) {
-      tmp8 = cResult[2];
-    }
-    if (cResult[3] !== visible) {
-      const items = [visible];
-      cResult[3] = visible;
-      cResult[4] = items;
-      tmp9 = items;
-    } else {
-      tmp9 = cResult[4];
-    }
-    const effect = obj2.useEffect(tmp8, tmp9);
-    let tmp11;
-    if (first) {
-      tmp11 = tmp3;
-    }
-    if (cResult[5] === result) {
-      if (cResult[6] === tmp11) {
-        let tmp12;
-        if (cResult[7] === enabled) {
-          tmp12 = cResult[8];
-        }
-        return tmp12;
-      }
-    }
-    const tmp16 = jsx(AnimatedEnterExitItemDefault, { useReducedMotion: enabled, item: tmp11, entering: result, exiting: result, renderItem: renderTooltipItem });
-    cResult[5] = result;
-    cResult[6] = tmp11;
-    cResult[7] = enabled;
-    cResult[8] = tmp16;
-    tmp12 = tmp16;
-  }
-  const fn = function u() {
-    closure_1(visible);
-  };
-  cResult[0] = tmp4[1];
-  cResult[1] = visible;
-  cResult[2] = fn;
-  tmp8 = fn;
-}) : (function AnimatedCoachmark(visible) {
+let result = size.fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
+
+export function AnimatedCoachmark(visible) {
   let c1;
   let tmp3;
   let tmp8;
   visible = visible.visible;
   const merged = Object.assign(visible, Object.assign({ visible: 0 }));
   c1 = undefined;
-  const enabled = react.useContext(react3.AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
   [tmp3, c1] = react.useState(visible);
   _slicedToArray(react.useState(visible), 2);
   const obj = TooltipConstants;
@@ -111,7 +56,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedCo
     tmp8 = merged;
   }
   return tmp6(tmp7, obj2);
-});
-let result = size.fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
-
-export const AnimatedCoachmark = tmp2;
+}

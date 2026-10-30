@@ -1,38 +1,38 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14334
+// Function ID: 14335
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6555, 4861, 4857, 4879, 5750, 4947, 1389, 1084, 4864, 4854, 21, 5005, 6710, 587, 558, 576, 504, 1125, 8561, 5641, 10702, 14203, 14204, 1199, 14205, 14206, 5707, 14207, 9924, 6968, 5271, 5059, 8789, 9077, 5035, 4841, 10475, 14208, 2]
+// Dependencies: [19, 17, 6562, 4862, 4858, 4880, 5756, 4951, 1384, 1072, 4865, 4855, 21, 5009, 6717, 575, 504, 1114, 8595, 5647, 10725, 14335, 14336, 1188, 14337, 14338, 5712, 14339, 9951, 6974, 5619, 5063, 8823, 9090, 5039, 4842, 10500, 14340, 2]
+// Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 14202 (ChannelNavbar)
+// Module 14334 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useChannelName from "useChannelName" /* 5641 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
-import isStreamingDefault from "isStreaming" /* 8789 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10702 */;
+import nativeDefault from "native" /* 575 */;
+import intl10 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5039 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useChannelName from "useChannelName" /* 5647 */;
+import Pressables from "Pressables" /* 6974 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
+import isStreamingDefault from "isStreaming" /* 8823 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10725 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles from "TextStyles" /* 6710 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles from "TextStyles" /* 6717 */;
 import size_mod from "module_2" /* 2 */;
 
 let onPress;
@@ -47,8 +47,104 @@ let obj2;
 let obj3;
 let obj4;
 let size;
-let tmp;
-const Pressables = tmp(6968);
+function ChannelTitleContent(arg0) {
+  let accessibleTitle;
+  let icon;
+  let items;
+  let items1;
+  let items2;
+  let obj3;
+  let subTitle;
+  let title;
+  let titleSuffix;
+  ({ title, icon } = arg0);
+  ({ titleSuffix, subTitle, accessibleTitle } = arg0);
+  const tmp = closure_18();
+  let tmp2 = null;
+  if (null != icon) {
+    let tmp4 = icon;
+    if (!react.isValidElement(icon)) {
+      const obj = { size: native.Icon.Sizes.CUSTOM, source: icon, style: tmp.channelIcon, color: tmp.channelIconColor.color };
+      const Icon = native.Icon;
+      tmp4 = authStore4(Icon, obj);
+    }
+    tmp2 = tmp4;
+  }
+  let tmp8 = title;
+  if (!react.isValidElement(title)) {
+    const obj2 = { style: tmp.channelNameContainer, children: authStore4(Text_Text.Text, obj3) };
+    obj3 = { style: tmp.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
+    tmp8 = authStore4(View, obj2);
+  }
+  const obj4 = { style: tmp.flexRow, children: items };
+  items = [tmp2, ];
+  const obj6 = { style: tmp.flexRow, children: items1 };
+  items1 = [tmp8, titleSuffix];
+  const obj5 = { style: tmp.channelTextContainer, children: items2 };
+  items2 = [closure_17(View, obj6), subTitle];
+  items[1] = closure_17(View, obj5);
+  return closure_17(View, obj4);
+}
+function ParentChannelSubTitle(parentChannel) {
+  let BjYvHO;
+  let formatToPlainString;
+  let obj2;
+  let obj3;
+  let obj4;
+  parentChannel = parentChannel.parentChannel;
+  const obj = { lineClamp: 1, style: closure_18().navbarTitleSecondaryText, accessibilityLabel: formatToPlainString(BjYvHO, obj2), maxFontSizeMultiplier: 1, variant: "text-xs/medium", color: "text-muted", children: obj4.computeChannelName(parentChannel, UserStore, RelationshipStore, true) };
+  const Text = Text_Text.Text;
+  const intl = intl10.intl;
+  formatToPlainString = intl.formatToPlainString;
+  obj2 = { channelName: obj3.computeChannelName(parentChannel, UserStore, RelationshipStore) };
+  BjYvHO = intl10.t.BjYvHO;
+  obj3 = useChannelName;
+  obj4 = useChannelName;
+  return authStore4(Text, obj);
+}
+function DMChannelName(userId) {
+  let intl;
+  userId = userId.userId;
+  const style = userId.style;
+  let obj = userId(504);
+  const items = [UserStore, RelationshipStore];
+  const items1 = [userId];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let str = RelationshipStore.getNickname(userId);
+    if (str == null) {
+      const obj = UserUtilsDefault;
+      str = obj.getName(tmp);
+    }
+    if (str == null) {
+      str = "";
+    }
+    return str;
+  }, items1);
+  const obj2 = { numberOfLines: 1, style, accessibilityLabel: intl.formatToPlainString(userId(1114).t.fYqXVY, { channelName: stateFromStores }), maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores };
+  const LegacyText = userId(1188).LegacyText;
+  intl = userId(1114).intl;
+  return closure_16(LegacyText, obj2);
+}
+function ConnectedStatus(userId) {
+  let isMobileOnline;
+  let isVROnline;
+  let status;
+  let streaming;
+  userId = userId.userId;
+  const style = userId.style;
+  let obj = userId(504);
+  const items = [PresenceStore];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
+    let tmp;
+    const obj = { status: PresenceStore.getStatus(userId), isMobileOnline: PresenceStore.isMobileOnline(userId), isVROnline: PresenceStore.isVROnline(userId), streaming: tmp(PresenceStore.getActivities(userId)) };
+    tmp = isStreamingDefault;
+    return obj;
+  });
+  ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
+  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: userId(1188).StatusSizes.SMALL, style };
+  const Status = userId(1188).Status;
+  return closure_16(Status, obj2);
+}
 const View = react_native.View;
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 ({ ChannelTypes: closure_12, Fonts } = Constants);
@@ -64,274 +160,253 @@ obj3 = { fontSize: 12, lineHeight: 16, color: nativeDefault.colors.TEXT_MUTED, m
 obj4 = { color: nativeDefault.colors.CHANNEL_ICON };
 size = { height: 20, width: 20, tintColor: nativeDefault.colors.TEXT_MUTED, marginTop: 0, marginRight: 8 };
 let closure_18 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitleWithoutRoute(arg0) {
+function ChannelTitleWrapper(arg0) {
+  let children;
+  let items;
+  let items1;
+  let onPressTitle;
+  let style;
+  let tmp5;
+  ({ children, onPressTitle, style } = arg0);
+  const tmp = closure_18();
+  if (null == onPressTitle) {
+    const obj2 = { style: items, children };
+    items = [tmp.navbarTitleContainer, style];
+    tmp5 = authStore4(View, obj2);
+  } else {
+    const obj = {
+      style: items1,
+      accessibilityRole: "header",
+      onPress: onPressTitle,
+      onAccessibilityTap() {
+          return null;
+        },
+      children
+    };
+    items1 = [tmp.navbarTitleContainer, style];
+    tmp5 = authStore4(Pressables.PressableOpacity, obj);
+  }
+  return tmp5;
+}
+const memoResult = react.memo(function ChannelTitle(threadDraft) {
   let channelId;
   let connected;
-  let first;
+  let guild_id;
+  let intl5;
+  let intl6;
+  let intl7;
+  let intl8;
+  let intl9;
+  let obj10;
+  let obj13;
+  let obj16;
+  let obj19;
+  let obj22;
+  let obj24;
+  let obj29;
+  let obj32;
+  let obj36;
+  let obj7;
   let onPressTitle;
-  let tmp12;
-  let tmp14;
-  let tmp16;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = channelId(576);
-  const cResult = obj.c(39);
-  ({ onPressTitle, channelId } = arg0);
-  const tmp4 = closure_18();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function l() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = channelId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GatewayConnectionStore];
-    class C {
-      constructor() {
-        return connected.isConnected();
+  let stringResult;
+  let tmp15Result;
+  let tmp17;
+  let tmp24Result;
+  let tmp26;
+  let tmp48;
+  let tmp52;
+  let tmp56;
+  ({ onPressTitle, channelId } = threadDraft);
+  threadDraft = threadDraft.threadDraft;
+  const style = threadDraft.style;
+  let stateFromStores1;
+  let guildId = threadDraft.guildId;
+  const tmp = closure_18();
+  const tmp2 = channelId;
+  let obj = channelId(stateFromStores1[16]);
+  const items = [GatewayConnectionStore];
+  const stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
+  const items1 = [ChannelStore];
+  const obj2 = channelId(stateFromStores1[16]);
+  stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    let channel = null;
+    if (channelId !== StaticChannelRoute.GUILD_HOME) {
+      channel = null;
+      if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
+        channel = ChannelStore.getChannel(tmp);
       }
     }
-    cResult[3] = items1;
-    cResult[4] = C;
-    tmp9 = C;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-    tmp9 = cResult[4];
-  }
-  const tmpResult4 = channelId(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp8, tmp9);
-  if (cResult[5] !== stateFromStores1) {
-    const string = tmp(1125).intl.string;
-    const t = tmp(1125).t;
-    class C {
-      constructor() {
-        return connected.isConnected();
+    return channel;
+  });
+  const items2 = [GuildStore];
+  const obj4 = channelId(stateFromStores1[16]);
+  const stateFromStores2 = obj4.useStateFromStores(items2, () => {
+    let guildId;
+    const getGuild = GuildStore.getGuild;
+    const obj = stateFromStores1;
+    if (stateFromStores1 != null) {
+      guildId = obj.getGuildId();
+    }
+    return getGuild(guildId);
+  });
+  const items3 = [ChannelStore];
+  const items4 = [stateFromStores1, threadDraft];
+  const obj5 = channelId(stateFromStores1[16]);
+  const stateFromStores3 = obj5.useStateFromStores(items3, () => {
+    let channel;
+    if (null != threadDraft) {
+      if (null != threadDraft.parentChannelId) {
+        channel = ChannelStore.getChannel(tmp.parentChannelId);
       }
+      return channel;
     }
-    cResult[5] = stateFromStores1;
-    cResult[6] = tmp13;
-    tmp12 = tmp13;
-  } else {
-    tmp12 = cResult[6];
-  }
-  if (cResult[7] !== stateFromStores) {
-    let channelIcon = null;
-    if (null != stateFromStores) {
-      const tmpResult5 = channelId(8561);
-      channelIcon = tmpResult5.getChannelIcon(stateFromStores);
-    }
-    class C {
-      constructor() {
-        return connected.isConnected();
-      }
-    }
-    cResult[8] = channelIcon;
-    tmp14 = channelIcon;
-  } else {
-    tmp14 = cResult[8];
-  }
-  if (cResult[9] !== stateFromStores) {
-    if (null != stateFromStores) {
-      channelId(5641);
-      class C {
-        constructor() {
-          return connected.isConnected();
+    channel = null;
+    if (null != stateFromStores1) {
+      channel = null;
+      if (null != stateFromStores1.parent_id) {
+        channel = null;
+        if (THREAD_CHANNEL_TYPES.has(stateFromStores1.type)) {
+          channel = ChannelStore.getChannel(tmp2.parent_id);
         }
       }
     }
-    class C {
-      constructor() {
-        return connected.isConnected();
+  }, items4);
+  const obj6 = channelId(stateFromStores1[21]);
+  const selectedSpecialNavigationPath = obj6.useSelectedSpecialNavigationPath();
+  const tmp9 = threadDraft(stateFromStores1[22])();
+  const intl = channelId(stateFromStores1[17]).intl;
+  const string = intl.string;
+  const t = channelId(stateFromStores1[17]).t;
+  if (stateFromStores) {
+    stringResult = string(t.ai6Lbr);
+  } else {
+    stringResult = string(t.ZTNur7);
+  }
+  if (selectedSpecialNavigationPath === tmp2(stateFromStores1[21]).SpecialNavigationPath.FRIENDS) {
+    const obj3 = { style, children: closure_16(ChannelTitleContent, obj7) };
+    obj7 = { title: intl9.string(tmp2(stateFromStores1[17]).t.TdEu5X) };
+    intl9 = tmp2(tmp3[17]).intl;
+    return closure_16(ChannelTitleWrapper, obj3);
+  } else if (channelId === StaticChannelRoute.GUILD_HOME) {
+    const obj8 = { size: tmp2(stateFromStores1[23]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[24]), style: tmp.homeIcon };
+    const Icon2 = tmp2(tmp3[23]).Icon;
+    const obj9 = { onPressTitle, style, children: closure_16(ChannelTitleContent, obj10) };
+    obj10 = { title: intl8.string(tmp2(stateFromStores1[17]).t.Ym2Ri6), icon: tmp56 };
+    tmp56 = closure_16(Icon2, obj8);
+    intl8 = tmp2(tmp3[17]).intl;
+    return closure_16(ChannelTitleWrapper, obj9);
+  } else if (channelId === tmp62.MEMBER_SAFETY) {
+    const obj11 = { size: tmp2(stateFromStores1[23]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[25]), style: tmp.homeIcon };
+    const Icon = tmp2(tmp3[23]).Icon;
+    const obj12 = { onPressTitle, style, children: closure_16(ChannelTitleContent, obj13) };
+    obj13 = { title: intl7.string(tmp2(stateFromStores1[17]).t["9Oq93m"]), icon: tmp52 };
+    tmp52 = closure_16(Icon, obj11);
+    intl7 = tmp2(tmp3[17]).intl;
+    return closure_16(ChannelTitleWrapper, obj12);
+  } else if (tmp9) {
+    const obj14 = { source: threadDraft(stateFromStores1[27]), style: tmp.premiumIcon };
+    const tmp8Result = threadDraft(stateFromStores1[26]);
+    const obj15 = { style, children: closure_16(ChannelTitleContent, obj16) };
+    obj16 = { title: intl6.string(tmp2(stateFromStores1[17]).t["KzCF/6"]), icon: tmp48 };
+    tmp48 = closure_16(tmp8Result, obj14);
+    intl6 = tmp2(tmp3[17]).intl;
+    return closure_16(ChannelTitleWrapper, obj15);
+  } else {
+    if (null != threadDraft) {
+      let isForumLikeChannelResult;
+      if (stateFromStores1 != null) {
+        isForumLikeChannelResult = stateFromStores1.isForumLikeChannel();
+      }
+      if (!isForumLikeChannelResult) {
+        if (null != threadDraft.name) {
+          let name;
+          if (threadDraft.name.length > 0) {
+            name = threadDraft.name;
+          }
+          const tmp2Result = tmp2(stateFromStores1[18]);
+          const threadChannelIcon = tmp2Result.getThreadChannelIcon(threadDraft.isPrivate ? tmp13.PRIVATE_THREAD : tmp13.PUBLIC_THREAD);
+          const intl3 = tmp2(tmp3[17]).intl;
+          const obj17 = { channelName: name };
+          const obj18 = { style, children: closure_16(tmp17, obj19) };
+          obj19 = { title: name, accessibleTitle: intl3.formatToPlainString(tmp2(stateFromStores1[17]).t["OkzL+Q"], obj17), icon: threadChannelIcon, subTitle: tmp15Result };
+          tmp15Result = null != stateFromStores3;
+          const tmp16 = ChannelTitleWrapper;
+          tmp17 = ChannelTitleContent;
+          if (tmp15Result) {
+            const obj20 = { parentChannel: stateFromStores3 };
+            tmp15Result = tmp15(ParentChannelSubTitle, obj20);
+          }
+          return closure_16(tmp16, obj18);
+        }
+        const intl2 = tmp2(tmp3[17]).intl;
+        name = intl2.string(tmp2(tmp3[17]).t["4WNcpu"]);
       }
     }
-    cResult[10] = null;
-    tmp16 = tmp17;
-  } else {
-    tmp16 = cResult[10];
-  }
-  let isDMResult;
-  if (stateFromStores != null) {
-    isDMResult = stateFromStores.isDM();
-  }
-  if (isDMResult) {
-    let tmp28;
-    let tmp30;
-    if (cResult[11] !== stateFromStores) {
-      const recipientId = stateFromStores.getRecipientId();
-      cResult[11] = stateFromStores;
-      class C {
-        constructor() {
-          return connected.isConnected();
-        }
-      }
-      cResult[12] = recipientId;
-      tmp28 = recipientId;
+    const tmp2Result4 = tmp2(stateFromStores1[28]);
+    if (tmp2Result4.shouldNSFWGateGuild(guildId)) {
+      const obj21 = { style, children: closure_16(ChannelTitleContent, obj22) };
+      obj22 = { title: intl5.string(tmp2(stateFromStores1[17]).t.HbPHt1) };
+      intl5 = tmp2(tmp3[17]).intl;
+      return closure_16(ChannelTitleWrapper, obj21);
+    } else if (null == stateFromStores1) {
+      const obj23 = { style, children: closure_16(ChannelTitleContent, obj24) };
+      obj24 = { title: stringResult };
+      return closure_16(ChannelTitleWrapper, obj23);
     } else {
-      tmp28 = cResult[12];
-    }
-    if (cResult[13] !== stateFromStores) {
-      const isSystemDMResult = stateFromStores.isSystemDM();
-      cResult[13] = stateFromStores;
-      class C {
-        constructor() {
-          return connected.isConnected();
+      const tmp2Result5 = tmp2(stateFromStores1[19]);
+      const channelName = tmp2Result5.computeChannelName(stateFromStores1, UserStore, RelationshipStore);
+      const tmp2Result6 = tmp2(stateFromStores1[18]);
+      const channelIconWithGuild = tmp2Result6.getChannelIconWithGuild(stateFromStores1, stateFromStores2);
+      if (stateFromStores1.isDM()) {
+        const recipientId = stateFromStores1.getRecipientId();
+        let tmp31Result = null;
+        const obj25 = { userId: recipientId, style: tmp.navbarTitlePrimaryText };
+        const isSystemDMResult = stateFromStores1.isSystemDM();
+        const tmp33 = closure_16(DMChannelName, obj25);
+        if (!isSystemDMResult) {
+          const obj26 = { userId: recipientId, style: tmp.status };
+          tmp31Result = tmp31(ConnectedStatus, obj26);
         }
-      }
-      cResult[14] = isSystemDMResult;
-      tmp30 = isSystemDMResult;
-    } else {
-      tmp30 = cResult[14];
-    }
-    if (cResult[15] === tmp4.navbarTitlePrimaryText) {
-      let tmp32;
-      if (cResult[16] === tmp28) {
-        tmp32 = cResult[17];
-      }
-      if (cResult[18] === tmp30) {
-        if (cResult[19] === tmp4.status) {
-          let tmp35;
-          if (cResult[20] === tmp28) {
-            tmp35 = cResult[21];
+        const obj27 = { userId: recipientId, guildId: guild_id };
+        guild_id = undefined;
+        const tmp8Result2 = threadDraft(stateFromStores1[20]);
+        if (stateFromStores1 != null) {
+          guild_id = stateFromStores1.guild_id;
+        }
+        const obj28 = { onPressTitle, style, children: closure_16(ChannelTitleContent, obj29) };
+        obj29 = { title: tmp33, icon: channelIconWithGuild, titleSuffix: tmp31Result, subTitle: closure_16(tmp8Result2, obj27) };
+        return closure_16(ChannelTitleWrapper, obj28);
+      } else {
+        const isThreadResult = stateFromStores1.isThread();
+        const intl4 = tmp2(tmp3[17]).intl;
+        const formatToPlainString = intl4.formatToPlainString;
+        const t2 = tmp2(tmp3[17]).t;
+        if (isThreadResult) {
+          const obj30 = { channelName };
+          const obj31 = { onPressTitle, style, children: closure_16(tmp26, obj32) };
+          obj32 = { title: channelName, accessibleTitle: formatToPlainString(t2["OkzL+Q"], obj30), icon: channelIconWithGuild, subTitle: tmp24Result };
+          tmp24Result = null != stateFromStores3;
+          const tmp25 = ChannelTitleWrapper;
+          tmp26 = ChannelTitleContent;
+          if (tmp24Result) {
+            const obj33 = { parentChannel: stateFromStores3 };
+            tmp24Result = tmp24(ParentChannelSubTitle, obj33);
           }
-          if (cResult[22] === stateFromStores.guild_id) {
-            let tmp37;
-            if (cResult[23] === tmp28) {
-              tmp37 = cResult[24];
-            }
-            if (cResult[25] === tmp14) {
-              if (cResult[26] === tmp32) {
-                if (cResult[27] === tmp37) {
-                  let tmp40;
-                  if (cResult[28] === tmp35) {
-                    tmp40 = cResult[29];
-                  }
-                  if (cResult[30] === onPressTitle) {
-                    let tmp43;
-                    if (cResult[31] === tmp40) {
-                      tmp43 = cResult[32];
-                    }
-                    return tmp43;
-                  }
-                  class C {
-                    constructor() {
-                      return connected.isConnected();
-                    }
-                  }
-                  const obj2 = { onPressTitle, children: tmp40 };
-                  const tmp45 = closure_16(closure_19, obj2);
-                  cResult[30] = onPressTitle;
-                  cResult[31] = tmp40;
-                  cResult[32] = tmp45;
-                  tmp43 = tmp45;
-                }
-              }
-            }
-            class C {
-              constructor() {
-                return connected.isConnected();
-              }
-            }
-            const obj3 = { title: tmp32, icon: tmp14, titleSuffix: tmp35, subTitle: tmp37 };
-            const tmp42 = closure_16(closure_20, obj3);
-            cResult[25] = tmp14;
-            cResult[26] = tmp32;
-            cResult[27] = tmp37;
-            cResult[28] = tmp35;
-            cResult[29] = tmp42;
-            tmp40 = tmp42;
-          }
-          class C {
-            constructor() {
-              return connected.isConnected();
-            }
-          }
-          const obj4 = { userId: tmp28, guildId: stateFromStores.guild_id };
-          const tmp39 = closure_16(ActivityStatusDefault, obj4);
-          cResult[22] = stateFromStores.guild_id;
-          cResult[23] = tmp28;
-          cResult[24] = tmp39;
-          tmp37 = tmp39;
+          return closure_16(tmp25, obj31);
+        } else {
+          const obj34 = { channelName };
+          const obj35 = { onPressTitle, style, children: closure_16(ChannelTitleContent, obj36) };
+          obj36 = { title: channelName, accessibleTitle: formatToPlainString(t2.UbNmGc, obj34), icon: channelIconWithGuild };
+          return closure_16(ChannelTitleWrapper, obj35);
         }
       }
-      class C {
-        constructor() {
-          return connected.isConnected();
-        }
-      }
-      cResult[18] = tmp30;
-      cResult[19] = tmp4.status;
-      cResult[20] = tmp28;
-      cResult[21] = null;
-      tmp35 = tmp36;
     }
-    class C {
-      constructor() {
-        return connected.isConnected();
-      }
-    }
-    const obj5 = { userId: tmp28, style: tmp4.navbarTitlePrimaryText };
-    const tmp34 = closure_16(closure_22, obj5);
-    cResult[15] = tmp4.navbarTitlePrimaryText;
-    cResult[16] = tmp28;
-    cResult[17] = tmp34;
-    tmp32 = tmp34;
-  } else {
-    if (tmp16 == null) {
-      tmp16 = tmp12;
-    }
-    if (cResult[33] === tmp14) {
-      let tmp22;
-      if (cResult[34] === tmp16) {
-        tmp22 = cResult[35];
-      }
-      if (cResult[36] === onPressTitle) {
-        let tmp25;
-        if (cResult[37] === tmp22) {
-          tmp25 = cResult[38];
-        }
-        return tmp25;
-      }
-      class C {
-        constructor() {
-          return connected.isConnected();
-        }
-      }
-      const obj6 = { onPressTitle, children: tmp22 };
-      const tmp27 = closure_16(closure_19, obj6);
-      cResult[36] = onPressTitle;
-      cResult[37] = tmp22;
-      cResult[38] = tmp27;
-      tmp25 = tmp27;
-    }
-    class C {
-      constructor() {
-        return connected.isConnected();
-      }
-    }
-    const obj7 = { title: tmp16, icon: tmp14 };
-    const tmp24 = closure_16(closure_20, obj7);
-    cResult[33] = tmp14;
-    cResult[34] = tmp16;
-    cResult[35] = tmp24;
-    tmp22 = tmp24;
   }
-}) : (function ChannelTitleWithoutRoute(arg0) {
+});
+size = size_mod;
+let result = size.fileFinishedImporting("modules/navbars/native/components/ChannelNavbar.tsx");
+
+export function ChannelTitleWithoutRoute(arg0) {
   let connected;
   let obj7;
   let obj9;
@@ -373,1170 +448,34 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle
     let tmp16Result = null;
     const obj2 = { userId: recipientId, style: tmp.navbarTitlePrimaryText };
     const isSystemDMResult = stateFromStores.isSystemDM();
-    const tmp18 = closure_16(closure_22, obj2);
+    const tmp18 = closure_16(DMChannelName, obj2);
     if (!isSystemDMResult) {
       const obj4 = { userId: recipientId, style: tmp.status };
-      tmp16Result = tmp16(closure_23, obj4);
+      tmp16Result = tmp16(ConnectedStatus, obj4);
     }
     const obj5 = { userId: recipientId, guildId: stateFromStores.guild_id };
-    const obj6 = { onPressTitle, children: closure_16(closure_20, obj7) };
+    const obj6 = { onPressTitle, children: closure_16(ChannelTitleContent, obj7) };
     obj7 = { title: tmp18, icon: channelIcon, titleSuffix: tmp16Result, subTitle: closure_16(ActivityStatusDefault, obj5) };
-    return closure_16(closure_19, obj6);
+    return closure_16(ChannelTitleWrapper, obj6);
   } else {
     const obj8 = { onPressTitle, children: closure_16(tmp13, obj9) };
-    const tmp12 = closure_19;
-    tmp13 = closure_20;
+    const tmp12 = ChannelTitleWrapper;
+    tmp13 = ChannelTitleContent;
     if (channelName == null) {
       channelName = stringResult;
     }
     obj9 = { title: channelName, icon: channelIcon };
     return closure_16(tmp12, obj8);
   }
-});
-const memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitle(threadDraft) {
-  let channelId;
-  let connected;
-  let intl;
-  let items4;
-  let onPressTitle;
-  let stateFromStores1;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp16;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const tmp = channelId;
-  const tmp2 = stateFromStores1;
-  let obj = channelId(stateFromStores1[17]);
-  const cResult = obj.c(115);
-  ({ onPressTitle, channelId } = threadDraft);
-  threadDraft = threadDraft.threadDraft;
-  const style = threadDraft.style;
-  closure_18();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GatewayConnectionStore];
-    const fn = function c() {
-      return connected.isConnected();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(tmp2[18]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ChannelStore];
-    cResult[2] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== channelId) {
-    class L {
-      constructor() {
-        let channel = null;
-        if (channelId !== StaticChannelRoute.GUILD_HOME) {
-          channel = null;
-          if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
-            channel = ChannelStore.getChannel(tmp);
-          }
-        }
-        return channel;
-      }
-    }
-    cResult[3] = channelId;
-    cResult[4] = L;
-    tmp11 = L;
-  } else {
-    class L {
-      constructor() {
-        let channel = null;
-        if (channelId !== StaticChannelRoute.GUILD_HOME) {
-          channel = null;
-          if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
-            channel = ChannelStore.getChannel(tmp);
-          }
-        }
-        return channel;
-      }
-    }
-  }
-  const tmpResult5 = tmp(tmp2[18]);
-  stateFromStores1 = tmpResult5.useStateFromStores(tmp9, tmp11);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        let channel = null;
-        if (channelId !== StaticChannelRoute.GUILD_HOME) {
-          channel = null;
-          if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
-            channel = ChannelStore.getChannel(tmp);
-          }
-        }
-        return channel;
-      }
-    }
-    const items2 = [GuildStore];
-    cResult[5] = items2;
-    tmp13 = items2;
-  } else {
-    class L {
-      constructor() {
-        let channel = null;
-        if (channelId !== StaticChannelRoute.GUILD_HOME) {
-          channel = null;
-          if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
-            channel = ChannelStore.getChannel(tmp);
-          }
-        }
-        return channel;
-      }
-    }
-  }
-  if (cResult[6] !== stateFromStores1) {
-    class F {
-      constructor() {
-        let guildId;
-        const getGuild = GuildStore.getGuild;
-        const obj = stateFromStores1;
-        if (stateFromStores1 != null) {
-          guildId = obj.getGuildId();
-        }
-        return getGuild(guildId);
-      }
-    }
-    cResult[6] = stateFromStores1;
-    cResult[7] = F;
-    tmp14 = F;
-  } else {
-    class F {
-      constructor() {
-        let guildId;
-        const getGuild = GuildStore.getGuild;
-        const obj = stateFromStores1;
-        if (stateFromStores1 != null) {
-          guildId = obj.getGuildId();
-        }
-        return getGuild(guildId);
-      }
-    }
-  }
-  const tmpResult6 = tmp(tmp2[18]);
-  const stateFromStores2 = tmpResult6.useStateFromStores(tmp13, tmp14);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        let guildId;
-        const getGuild = GuildStore.getGuild;
-        const obj = stateFromStores1;
-        if (stateFromStores1 != null) {
-          guildId = obj.getGuildId();
-        }
-        return getGuild(guildId);
-      }
-    }
-    const items3 = [ChannelStore];
-    cResult[8] = items3;
-    tmp16 = items3;
-  } else {
-    class F {
-      constructor() {
-        let guildId;
-        const getGuild = GuildStore.getGuild;
-        const obj = stateFromStores1;
-        if (stateFromStores1 != null) {
-          guildId = obj.getGuildId();
-        }
-        return getGuild(guildId);
-      }
-    }
-  }
-  if (cResult[9] === stateFromStores1) {
-    class F {
-      constructor() {
-        let guildId;
-        const getGuild = GuildStore.getGuild;
-        const obj = stateFromStores1;
-        if (stateFromStores1 != null) {
-          guildId = obj.getGuildId();
-        }
-        return getGuild(guildId);
-      }
-    }
-    const tmpResult7 = tmp(tmp2[18]);
-    const stateFromStores3 = tmpResult7.useStateFromStores(tmp16, U, items4);
-    const tmpResult8 = tmp(tmp2[23]);
-    const selectedSpecialNavigationPath = tmpResult8.useSelectedSpecialNavigationPath();
-    threadDraft(tmp2[24])();
-    if (cResult[13] !== stateFromStores) {
-      class F {
-        constructor() {
-          let guildId;
-          const getGuild = GuildStore.getGuild;
-          const obj = stateFromStores1;
-          if (stateFromStores1 != null) {
-            guildId = obj.getGuildId();
-          }
-          return getGuild(guildId);
-        }
-      }
-      const string = tmp22.string;
-      const t = tmp(tmp2[19]).t;
-      if (stateFromStores) {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-      } else {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-      }
-      cResult[13] = stateFromStores;
-      cResult[14] = tmp23;
-    } else {
-      class F {
-        constructor() {
-          let guildId;
-          const getGuild = GuildStore.getGuild;
-          const obj = stateFromStores1;
-          if (stateFromStores1 != null) {
-            guildId = obj.getGuildId();
-          }
-          return getGuild(guildId);
-        }
-      }
-    }
-    if (selectedSpecialNavigationPath === tmp(tmp2[23]).SpecialNavigationPath.FRIENDS) {
-      let tmp24;
-      let tmp27;
-      class F {
-        constructor() {
-          let guildId;
-          const getGuild = GuildStore.getGuild;
-          const obj = stateFromStores1;
-          if (stateFromStores1 != null) {
-            guildId = obj.getGuildId();
-          }
-          return getGuild(guildId);
-        }
-      }
-      if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-        const obj2 = { title: intl.string(tmp(tmp2[19]).t.TdEu5X) };
-        intl = tmp(tmp2[19]).intl;
-        const tmp26 = closure_16(closure_20, obj2);
-        cResult[15] = tmp26;
-        tmp24 = tmp26;
-      } else {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-      }
-      if (cResult[16] !== style) {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-        const obj3 = { style, children: tmp24 };
-        const tmp29 = closure_16(closure_19, obj3);
-        cResult[16] = style;
-        cResult[17] = tmp29;
-        tmp27 = tmp29;
-      } else {
-        class F {
-          constructor() {
-            let guildId;
-            const getGuild = GuildStore.getGuild;
-            const obj = stateFromStores1;
-            if (stateFromStores1 != null) {
-              guildId = obj.getGuildId();
-            }
-            return getGuild(guildId);
-          }
-        }
-      }
-      return tmp27;
-    } else {
-      class F {
-        constructor() {
-          let guildId;
-          const getGuild = GuildStore.getGuild;
-          const obj = stateFromStores1;
-          if (stateFromStores1 != null) {
-            guildId = obj.getGuildId();
-          }
-          return getGuild(guildId);
-        }
-      }
-    }
-  }
-  class U {
-    constructor() {
-      let channel;
-      if (null != threadDraft) {
-        if (null != threadDraft.parentChannelId) {
-          channel = ChannelStore.getChannel(tmp.parentChannelId);
-        }
-        return channel;
-      }
-      channel = null;
-      if (null != stateFromStores1) {
-        channel = null;
-        if (null != stateFromStores1.parent_id) {
-          channel = null;
-          if (THREAD_CHANNEL_TYPES.has(stateFromStores1.type)) {
-            channel = ChannelStore.getChannel(tmp2.parent_id);
-          }
-        }
-      }
-    }
-  }
-  items4 = [stateFromStores1, threadDraft];
-  cResult[9] = stateFromStores1;
-  cResult[10] = threadDraft;
-  cResult[11] = U;
-  cResult[12] = items4;
-}) : (function ChannelTitle(threadDraft) {
-  let channelId;
-  let connected;
-  let guild_id;
-  let intl5;
-  let intl6;
-  let intl7;
-  let intl8;
-  let intl9;
-  let obj10;
-  let obj13;
-  let obj16;
-  let obj19;
-  let obj22;
-  let obj24;
-  let obj29;
-  let obj32;
-  let obj36;
-  let obj7;
-  let onPressTitle;
-  let stringResult;
-  let tmp15Result;
-  let tmp17;
-  let tmp24Result;
-  let tmp26;
-  let tmp48;
-  let tmp52;
-  let tmp56;
-  ({ onPressTitle, channelId } = threadDraft);
-  threadDraft = threadDraft.threadDraft;
-  const style = threadDraft.style;
-  let stateFromStores1;
-  let guildId = threadDraft.guildId;
-  const tmp = closure_18();
-  const tmp2 = channelId;
-  let obj = channelId(stateFromStores1[18]);
-  const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, () => connected.isConnected());
-  const items1 = [ChannelStore];
-  const obj2 = channelId(stateFromStores1[18]);
-  stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    let channel = null;
-    if (channelId !== StaticChannelRoute.GUILD_HOME) {
-      channel = null;
-      if (channelId !== StaticChannelRoute.MEMBER_SAFETY) {
-        channel = ChannelStore.getChannel(tmp);
-      }
-    }
-    return channel;
-  });
-  const items2 = [GuildStore];
-  const obj4 = channelId(stateFromStores1[18]);
-  const stateFromStores2 = obj4.useStateFromStores(items2, () => {
-    let guildId;
-    const getGuild = GuildStore.getGuild;
-    const obj = stateFromStores1;
-    if (stateFromStores1 != null) {
-      guildId = obj.getGuildId();
-    }
-    return getGuild(guildId);
-  });
-  const items3 = [ChannelStore];
-  const items4 = [stateFromStores1, threadDraft];
-  const obj5 = channelId(stateFromStores1[18]);
-  const stateFromStores3 = obj5.useStateFromStores(items3, () => {
-    let channel;
-    if (null != threadDraft) {
-      if (null != threadDraft.parentChannelId) {
-        channel = ChannelStore.getChannel(tmp.parentChannelId);
-      }
-      return channel;
-    }
-    channel = null;
-    if (null != stateFromStores1) {
-      channel = null;
-      if (null != stateFromStores1.parent_id) {
-        channel = null;
-        if (THREAD_CHANNEL_TYPES.has(stateFromStores1.type)) {
-          channel = ChannelStore.getChannel(tmp2.parent_id);
-        }
-      }
-    }
-  }, items4);
-  const obj6 = channelId(stateFromStores1[23]);
-  const selectedSpecialNavigationPath = obj6.useSelectedSpecialNavigationPath();
-  const tmp9 = threadDraft(stateFromStores1[24])();
-  const intl = channelId(stateFromStores1[19]).intl;
-  const string = intl.string;
-  const t = channelId(stateFromStores1[19]).t;
-  if (stateFromStores) {
-    stringResult = string(t.ai6Lbr);
-  } else {
-    stringResult = string(t.ZTNur7);
-  }
-  if (selectedSpecialNavigationPath === tmp2(stateFromStores1[23]).SpecialNavigationPath.FRIENDS) {
-    const obj3 = { style, children: closure_16(closure_20, obj7) };
-    obj7 = { title: intl9.string(tmp2(stateFromStores1[19]).t.TdEu5X) };
-    intl9 = tmp2(tmp3[19]).intl;
-    return closure_16(closure_19, obj3);
-  } else if (channelId === StaticChannelRoute.GUILD_HOME) {
-    const obj8 = { size: tmp2(stateFromStores1[25]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[26]), style: tmp.homeIcon };
-    const Icon2 = tmp2(tmp3[25]).Icon;
-    const obj9 = { onPressTitle, style, children: closure_16(closure_20, obj10) };
-    obj10 = { title: intl8.string(tmp2(stateFromStores1[19]).t.Ym2Ri6), icon: tmp56 };
-    tmp56 = closure_16(Icon2, obj8);
-    intl8 = tmp2(tmp3[19]).intl;
-    return closure_16(closure_19, obj9);
-  } else if (channelId === tmp62.MEMBER_SAFETY) {
-    const obj11 = { size: tmp2(stateFromStores1[25]).Icon.Sizes.CUSTOM, source: threadDraft(stateFromStores1[27]), style: tmp.homeIcon };
-    const Icon = tmp2(tmp3[25]).Icon;
-    const obj12 = { onPressTitle, style, children: closure_16(closure_20, obj13) };
-    obj13 = { title: intl7.string(tmp2(stateFromStores1[19]).t["9Oq93m"]), icon: tmp52 };
-    tmp52 = closure_16(Icon, obj11);
-    intl7 = tmp2(tmp3[19]).intl;
-    return closure_16(closure_19, obj12);
-  } else if (tmp9) {
-    const obj14 = { source: threadDraft(stateFromStores1[29]), style: tmp.premiumIcon };
-    const tmp8Result = threadDraft(stateFromStores1[28]);
-    const obj15 = { style, children: closure_16(closure_20, obj16) };
-    obj16 = { title: intl6.string(tmp2(stateFromStores1[19]).t["KzCF/6"]), icon: tmp48 };
-    tmp48 = closure_16(tmp8Result, obj14);
-    intl6 = tmp2(tmp3[19]).intl;
-    return closure_16(closure_19, obj15);
-  } else {
-    if (null != threadDraft) {
-      let isForumLikeChannelResult;
-      if (stateFromStores1 != null) {
-        isForumLikeChannelResult = stateFromStores1.isForumLikeChannel();
-      }
-      if (!isForumLikeChannelResult) {
-        if (null != threadDraft.name) {
-          let name;
-          if (threadDraft.name.length > 0) {
-            name = threadDraft.name;
-          }
-          const tmp2Result = tmp2(stateFromStores1[20]);
-          const threadChannelIcon = tmp2Result.getThreadChannelIcon(threadDraft.isPrivate ? tmp13.PRIVATE_THREAD : tmp13.PUBLIC_THREAD);
-          const intl3 = tmp2(tmp3[19]).intl;
-          const obj17 = { channelName: name };
-          const obj18 = { style, children: closure_16(tmp17, obj19) };
-          obj19 = { title: name, accessibleTitle: intl3.formatToPlainString(tmp2(stateFromStores1[19]).t["OkzL+Q"], obj17), icon: threadChannelIcon, subTitle: tmp15Result };
-          tmp15Result = null != stateFromStores3;
-          const tmp16 = closure_19;
-          tmp17 = closure_20;
-          if (tmp15Result) {
-            const obj20 = { parentChannel: stateFromStores3 };
-            tmp15Result = tmp15(closure_21, obj20);
-          }
-          return closure_16(tmp16, obj18);
-        }
-        const intl2 = tmp2(tmp3[19]).intl;
-        name = intl2.string(tmp2(tmp3[19]).t["4WNcpu"]);
-      }
-    }
-    const tmp2Result4 = tmp2(stateFromStores1[30]);
-    if (tmp2Result4.shouldNSFWGateGuild(guildId)) {
-      const obj21 = { style, children: closure_16(closure_20, obj22) };
-      obj22 = { title: intl5.string(tmp2(stateFromStores1[19]).t.HbPHt1) };
-      intl5 = tmp2(tmp3[19]).intl;
-      return closure_16(closure_19, obj21);
-    } else if (null == stateFromStores1) {
-      const obj23 = { style, children: closure_16(closure_20, obj24) };
-      obj24 = { title: stringResult };
-      return closure_16(closure_19, obj23);
-    } else {
-      const tmp2Result5 = tmp2(stateFromStores1[21]);
-      const channelName = tmp2Result5.computeChannelName(stateFromStores1, UserStore, RelationshipStore);
-      const tmp2Result6 = tmp2(stateFromStores1[20]);
-      const channelIconWithGuild = tmp2Result6.getChannelIconWithGuild(stateFromStores1, stateFromStores2);
-      if (stateFromStores1.isDM()) {
-        const recipientId = stateFromStores1.getRecipientId();
-        let tmp31Result = null;
-        const obj25 = { userId: recipientId, style: tmp.navbarTitlePrimaryText };
-        const isSystemDMResult = stateFromStores1.isSystemDM();
-        const tmp33 = closure_16(closure_22, obj25);
-        if (!isSystemDMResult) {
-          const obj26 = { userId: recipientId, style: tmp.status };
-          tmp31Result = tmp31(closure_23, obj26);
-        }
-        const obj27 = { userId: recipientId, guildId: guild_id };
-        guild_id = undefined;
-        const tmp8Result2 = threadDraft(stateFromStores1[22]);
-        if (stateFromStores1 != null) {
-          guild_id = stateFromStores1.guild_id;
-        }
-        const obj28 = { onPressTitle, style, children: closure_16(closure_20, obj29) };
-        obj29 = { title: tmp33, icon: channelIconWithGuild, titleSuffix: tmp31Result, subTitle: closure_16(tmp8Result2, obj27) };
-        return closure_16(closure_19, obj28);
-      } else {
-        const isThreadResult = stateFromStores1.isThread();
-        const intl4 = tmp2(tmp3[19]).intl;
-        const formatToPlainString = intl4.formatToPlainString;
-        const t2 = tmp2(tmp3[19]).t;
-        if (isThreadResult) {
-          const obj30 = { channelName };
-          const obj31 = { onPressTitle, style, children: closure_16(tmp26, obj32) };
-          obj32 = { title: channelName, accessibleTitle: formatToPlainString(t2["OkzL+Q"], obj30), icon: channelIconWithGuild, subTitle: tmp24Result };
-          tmp24Result = null != stateFromStores3;
-          const tmp25 = closure_19;
-          tmp26 = closure_20;
-          if (tmp24Result) {
-            const obj33 = { parentChannel: stateFromStores3 };
-            tmp24Result = tmp24(closure_21, obj33);
-          }
-          return closure_16(tmp25, obj31);
-        } else {
-          const obj34 = { channelName };
-          const obj35 = { onPressTitle, style, children: closure_16(closure_20, obj36) };
-          obj36 = { title: channelName, accessibleTitle: formatToPlainString(t2.UbNmGc, obj34), icon: channelIconWithGuild };
-          return closure_16(closure_19, obj35);
-        }
-      }
-    }
-  }
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let children;
-  let onPressTitle;
-  let style;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(14);
-  ({ children, onPressTitle, style } = arg0);
-  const tmp4 = closure_18();
-  if (null == onPressTitle) {
-    if (cResult[0] === style) {
-      let tmp11;
-      if (cResult[1] === tmp4.navbarTitleContainer) {
-        tmp11 = cResult[2];
-      }
-      if (cResult[3] === children) {
-        let tmp12;
-        if (cResult[4] === tmp11) {
-          tmp12 = cResult[5];
-        }
-        tmp8 = tmp12;
-      }
-      const obj2 = { style: tmp11, children };
-      const tmp15 = authStore3(View, obj2);
-      cResult[3] = children;
-      cResult[4] = tmp11;
-      cResult[5] = tmp15;
-      tmp12 = tmp15;
-    }
-    const items = [tmp4.navbarTitleContainer, style];
-    cResult[0] = style;
-    cResult[1] = tmp4.navbarTitleContainer;
-    cResult[2] = items;
-    tmp11 = items;
-  } else {
-    if (cResult[6] === style) {
-      let tmp5;
-      let tmp7;
-      if (cResult[7] === tmp4.navbarTitleContainer) {
-        tmp5 = cResult[8];
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn = function o() {
-          return null;
-        };
-        cResult[9] = fn;
-        tmp7 = fn;
-      } else {
-        tmp7 = cResult[9];
-      }
-      if (cResult[10] === children) {
-        if (cResult[11] === onPressTitle) {
-          if (cResult[12] === tmp5) {
-            tmp8 = cResult[13];
-          }
-        }
-      }
-      const obj3 = { style: tmp5, accessibilityRole: "header", onPress: onPressTitle, onAccessibilityTap: tmp7, children };
-      const tmp10 = authStore3(Pressables.PressableOpacity, obj3);
-      cResult[10] = children;
-      cResult[11] = onPressTitle;
-      cResult[12] = tmp5;
-      cResult[13] = tmp10;
-      tmp8 = tmp10;
-    }
-    const items1 = [tmp4.navbarTitleContainer, style];
-    cResult[6] = style;
-    cResult[7] = tmp4.navbarTitleContainer;
-    cResult[8] = items1;
-    tmp5 = items1;
-  }
-  return tmp8;
-}) : ((arg0) => {
-  let children;
-  let items;
-  let items1;
-  let onPressTitle;
-  let style;
-  let tmp5;
-  ({ children, onPressTitle, style } = arg0);
-  const tmp = closure_18();
-  if (null == onPressTitle) {
-    const obj2 = { style: items, children };
-    items = [tmp.navbarTitleContainer, style];
-    tmp5 = authStore3(View, obj2);
-  } else {
-    const obj = {
-      style: items1,
-      accessibilityRole: "header",
-      onPress: onPressTitle,
-      onAccessibilityTap() {
-          return null;
-        },
-      children
-    };
-    items1 = [tmp.navbarTitleContainer, style];
-    tmp5 = authStore3(Pressables.PressableOpacity, obj);
-  }
-  return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelTitleContent(arg0) {
-  let accessibleTitle;
-  let icon;
-  let items;
-  let items1;
-  let items2;
-  let obj7;
-  let subTitle;
-  let title;
-  let titleSuffix;
-  const obj = react2;
-  const cResult = obj.c(21);
-  ({ title, icon, titleSuffix, subTitle, accessibleTitle } = arg0);
-  const tmp4 = closure_18();
-  let tmp5 = null;
-  if (null != icon) {
-    if (cResult[0] === icon) {
-      if (cResult[1] === tmp4.channelIcon) {
-        let tmp6;
-        if (cResult[2] === tmp4.channelIconColor) {
-          tmp6 = cResult[3];
-        }
-        tmp5 = tmp6;
-      }
-    }
-    let tmp8 = icon;
-    if (!react.isValidElement(icon)) {
-      const obj2 = { size: native.Icon.Sizes.CUSTOM, source: icon, style: tmp4.channelIcon, color: tmp4.channelIconColor.color };
-      const Icon = tmp(1199).Icon;
-      tmp8 = authStore3(Icon, obj2);
-    }
-    cResult[0] = icon;
-    cResult[1] = tmp4.channelIcon;
-    cResult[2] = tmp4.channelIconColor;
-    cResult[3] = tmp8;
-    tmp6 = tmp8;
-  }
-  if (cResult[4] === accessibleTitle) {
-    if (cResult[5] === tmp4.channelName) {
-      if (cResult[6] === tmp4.channelNameContainer) {
-        let tmp10;
-        if (cResult[7] === title) {
-          tmp10 = cResult[8];
-        }
-        if (cResult[9] === tmp10) {
-          if (cResult[10] === tmp4.flexRow) {
-            let tmp14;
-            if (cResult[11] === titleSuffix) {
-              tmp14 = cResult[12];
-            }
-            if (cResult[13] === tmp4.channelTextContainer) {
-              if (cResult[14] === subTitle) {
-                let tmp18;
-                if (cResult[15] === tmp14) {
-                  tmp18 = cResult[16];
-                }
-                if (cResult[17] === tmp5) {
-                  if (cResult[18] === tmp4.flexRow) {
-                    let tmp22;
-                    if (cResult[19] === tmp18) {
-                      tmp22 = cResult[20];
-                    }
-                    return tmp22;
-                  }
-                }
-                const obj3 = { style: tmp4.flexRow, children: items };
-                items = [tmp5, tmp18];
-                const tmp25 = closure_17(View, obj3);
-                cResult[17] = tmp5;
-                cResult[18] = tmp4.flexRow;
-                cResult[19] = tmp18;
-                cResult[20] = tmp25;
-                tmp22 = tmp25;
-              }
-            }
-            const obj4 = { style: tmp4.channelTextContainer, children: items1 };
-            items1 = [tmp14, subTitle];
-            const tmp21 = closure_17(View, obj4);
-            cResult[13] = tmp4.channelTextContainer;
-            cResult[14] = subTitle;
-            cResult[15] = tmp14;
-            cResult[16] = tmp21;
-            tmp18 = tmp21;
-          }
-        }
-        const obj5 = { style: tmp4.flexRow, children: items2 };
-        items2 = [tmp10, titleSuffix];
-        const tmp17 = closure_17(View, obj5);
-        cResult[9] = tmp10;
-        cResult[10] = tmp4.flexRow;
-        cResult[11] = titleSuffix;
-        cResult[12] = tmp17;
-        tmp14 = tmp17;
-      }
-    }
-  }
-  let tmp11 = title;
-  if (!react.isValidElement(title)) {
-    const obj6 = { style: tmp4.channelNameContainer, children: authStore3(Text_Text.Text, obj7) };
-    obj7 = { style: tmp4.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
-    tmp11 = authStore3(View, obj6);
-  }
-  cResult[4] = accessibleTitle;
-  cResult[5] = tmp4.channelName;
-  cResult[6] = tmp4.channelNameContainer;
-  cResult[7] = title;
-  cResult[8] = tmp11;
-  tmp10 = tmp11;
-}) : (function ChannelTitleContent(arg0) {
-  let accessibleTitle;
-  let icon;
-  let items;
-  let items1;
-  let items2;
-  let obj3;
-  let subTitle;
-  let title;
-  let titleSuffix;
-  ({ title, icon } = arg0);
-  ({ titleSuffix, subTitle, accessibleTitle } = arg0);
-  const tmp = closure_18();
-  let tmp2 = null;
-  if (null != icon) {
-    let tmp4 = icon;
-    if (!react.isValidElement(icon)) {
-      const obj = { size: native.Icon.Sizes.CUSTOM, source: icon, style: tmp.channelIcon, color: tmp.channelIconColor.color };
-      const Icon = native.Icon;
-      tmp4 = authStore3(Icon, obj);
-    }
-    tmp2 = tmp4;
-  }
-  let tmp8 = title;
-  if (!react.isValidElement(title)) {
-    const obj2 = { style: tmp.channelNameContainer, children: authStore3(Text_Text.Text, obj3) };
-    obj3 = { style: tmp.channelName, lineClamp: 1, variant: "heading-md/bold", color: "mobile-text-heading-primary", accessibilityLabel: accessibleTitle, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: title };
-    tmp8 = authStore3(View, obj2);
-  }
-  const obj4 = { style: tmp.flexRow, children: items };
-  items = [tmp2, ];
-  const obj6 = { style: tmp.flexRow, children: items1 };
-  items1 = [tmp8, titleSuffix];
-  const obj5 = { style: tmp.channelTextContainer, children: items2 };
-  items2 = [closure_17(View, obj6), subTitle];
-  items[1] = closure_17(View, obj5);
-  return closure_17(View, obj4);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParentChannelSubTitle(parentChannel) {
-  let tmp5;
-  let tmp9;
-  let tmpResult;
-  const obj = react2;
-  const cResult = obj.c(8);
-  parentChannel = parentChannel.parentChannel;
-  const tmp4 = closure_18();
-  const navbarTitleSecondaryText = tmp4.navbarTitleSecondaryText;
-  if (cResult[0] !== parentChannel) {
-    const intl = tmp(1125).intl;
-    const formatToPlainString = intl.formatToPlainString;
-    const obj2 = { channelName: tmpResult.computeChannelName(parentChannel, UserStore, RelationshipStore) };
-    const BjYvHO = tmp(1125).t.BjYvHO;
-    tmpResult = useChannelName;
-    const formatToPlainStringResult = formatToPlainString(BjYvHO, obj2);
-    cResult[0] = parentChannel;
-    cResult[1] = formatToPlainStringResult;
-    tmp5 = formatToPlainStringResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== parentChannel) {
-    const tmpResult2 = useChannelName;
-    const channelName = tmpResult2.computeChannelName(parentChannel, UserStore, RelationshipStore, true);
-    cResult[2] = parentChannel;
-    cResult[3] = channelName;
-    tmp9 = channelName;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.navbarTitleSecondaryText) {
-    if (cResult[5] === tmp5) {
-      let tmp15;
-      if (cResult[6] === tmp9) {
-        tmp15 = cResult[7];
-      }
-      return tmp15;
-    }
-  }
-  const tmp16 = authStore3(Text_Text.Text, { lineClamp: 1, style: navbarTitleSecondaryText, accessibilityLabel: tmp5, maxFontSizeMultiplier: 1, variant: "text-xs/medium", color: "text-muted", children: tmp9 });
-  cResult[4] = tmp4.navbarTitleSecondaryText;
-  cResult[5] = tmp5;
-  cResult[6] = tmp9;
-  cResult[7] = tmp16;
-  tmp15 = tmp16;
-}) : (function ParentChannelSubTitle(parentChannel) {
-  let BjYvHO;
-  let formatToPlainString;
-  let obj2;
-  let obj3;
-  let obj4;
-  parentChannel = parentChannel.parentChannel;
-  const obj = { lineClamp: 1, style: closure_18().navbarTitleSecondaryText, accessibilityLabel: formatToPlainString(BjYvHO, obj2), maxFontSizeMultiplier: 1, variant: "text-xs/medium", color: "text-muted", children: obj4.computeChannelName(parentChannel, UserStore, RelationshipStore, true) };
-  const Text = Text_Text.Text;
-  const intl = intl10.intl;
-  formatToPlainString = intl.formatToPlainString;
-  obj2 = { channelName: obj3.computeChannelName(parentChannel, UserStore, RelationshipStore) };
-  BjYvHO = intl10.t.BjYvHO;
-  obj3 = useChannelName;
-  obj4 = useChannelName;
-  return authStore3(Text, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChannelName(userId) {
-  let first;
-  let tmp10;
-  let tmp7;
-  let tmp8;
-  const tmp = userId;
-  let obj = userId(576);
-  const cResult = obj.c(10);
-  userId = userId.userId;
-  const style = userId.style;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore, RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function t() {
-      let str = RelationshipStore.getNickname(userId);
-      if (str == null) {
-        const obj = UserUtilsDefault;
-        str = obj.getName(tmp);
-      }
-      if (str == null) {
-        str = "";
-      }
-      return str;
-    };
-    const items1 = [userId];
-    cResult[1] = userId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  if (cResult[4] !== stateFromStores) {
-    const intl = tmp(1125).intl;
-    const obj2 = { channelName: stateFromStores };
-    const formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.fYqXVY, obj2);
-    cResult[4] = stateFromStores;
-    cResult[5] = formatToPlainStringResult;
-    tmp10 = formatToPlainStringResult;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] === stateFromStores) {
-    if (cResult[7] === style) {
-      let tmp12;
-      if (cResult[8] === tmp10) {
-        tmp12 = cResult[9];
-      }
-      return tmp12;
-    }
-  }
-  const tmp13 = closure_16(tmp(1199).LegacyText, { numberOfLines: 1, style, accessibilityLabel: tmp10, maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores });
-  cResult[6] = stateFromStores;
-  cResult[7] = style;
-  cResult[8] = tmp10;
-  cResult[9] = tmp13;
-  tmp12 = tmp13;
-}) : (function DMChannelName(userId) {
-  let intl;
-  userId = userId.userId;
-  const style = userId.style;
-  let obj = userId(504);
-  const items = [UserStore, RelationshipStore];
-  const items1 = [userId];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    let str = RelationshipStore.getNickname(userId);
-    if (str == null) {
-      const obj = UserUtilsDefault;
-      str = obj.getName(tmp);
-    }
-    if (str == null) {
-      str = "";
-    }
-    return str;
-  }, items1);
-  const obj2 = { numberOfLines: 1, style, accessibilityLabel: intl.formatToPlainString(userId(1125).t.fYqXVY, { channelName: stateFromStores }), maxFontSizeMultiplier: 1, accessibilityRole: "header", children: stateFromStores };
-  const LegacyText = userId(1199).LegacyText;
-  intl = userId(1125).intl;
-  return closure_16(LegacyText, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedStatus(arg0) {
-  let first;
-  let isMobileOnline;
-  let isVROnline;
-  let status;
-  let streaming;
-  let style;
-  let tmp6;
-  let userId;
-  let tmp = userId;
-  let obj = userId(576);
-  const cResult = obj.c(9);
-  ({ style, userId } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PresenceStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function t() {
-      let tmp;
-      const obj = { status: PresenceStore.getStatus(userId), isMobileOnline: PresenceStore.isMobileOnline(userId), isVROnline: PresenceStore.isVROnline(userId), streaming: tmp(PresenceStore.getActivities(userId)) };
-      tmp = isStreamingDefault;
-      return obj;
-    };
-    cResult[1] = userId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
-  ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
-  if (cResult[3] === isMobileOnline) {
-    if (cResult[4] === isVROnline) {
-      if (cResult[5] === status) {
-        if (cResult[6] === streaming) {
-          let tmp8;
-          if (cResult[7] === style) {
-            tmp8 = cResult[8];
-          }
-          return tmp8;
-        }
-      }
-    }
-  }
-  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: tmp(1199).StatusSizes.SMALL, style };
-  const Status = tmp(1199).Status;
-  const tmp9 = closure_16(Status, obj2);
-  cResult[3] = isMobileOnline;
-  cResult[4] = isVROnline;
-  cResult[5] = status;
-  cResult[6] = streaming;
-  cResult[7] = style;
-  cResult[8] = tmp9;
-  tmp8 = tmp9;
-}) : (function ConnectedStatus(userId) {
-  let isMobileOnline;
-  let isVROnline;
-  let status;
-  let streaming;
-  userId = userId.userId;
-  const style = userId.style;
-  let obj = userId(504);
-  const items = [PresenceStore];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
-    let tmp;
-    const obj = { status: PresenceStore.getStatus(userId), isMobileOnline: PresenceStore.isMobileOnline(userId), isVROnline: PresenceStore.isVROnline(userId), streaming: tmp(PresenceStore.getActivities(userId)) };
-    tmp = isStreamingDefault;
-    return obj;
-  });
-  ({ status, isMobileOnline, isVROnline, streaming } = stateFromStoresObject);
-  const obj2 = { isMobileOnline, isVROnline, status, streaming, size: userId(1199).StatusSizes.SMALL, style };
-  const Status = userId(1199).Status;
-  return closure_16(Status, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelButtons(arg0) {
-  let buttons;
-  let constants2;
-  let style;
-  let tmp2;
-  let obj = react2;
-  const cResult = obj.c(5);
-  ({ buttons, style } = arg0);
-  if (cResult[0] !== buttons) {
-    const tmp3 = null;
-    let mapped;
-    if (buttons != null) {
-      mapped = buttons.map((onPress, index) => {
-        let accessibilityLabel;
-        let children;
-        let color;
-        let disabled;
-        let items1;
-        let onLongPress;
-        let source;
-        let style;
-        onPress = onPress.onPress;
-        const hasActivitiesPrivateChannelTooltip = onPress.hasActivitiesPrivateChannelTooltip;
-        ({ onLongPress, source, color, style, accessibilityLabel, children, disabled } = onPress);
-        let tmp = closure_17;
-        let tmp2 = closure_4;
-        let obj = { accessibilityRole: "button", accessibilityLabel, color, source, onPress, onLongPress, disabled, style, children };
-        const tmp4 = closure_1;
-        const tmp6 = closure_1(closure_2[35]);
-        if (hasActivitiesPrivateChannelTooltip) {
-          onPress = (arg0) => {
-            if (null != fn) {
-              tmp(arg0);
-            }
-            const obj = DismissibleContentUnsafeUtils;
-            const obj2 = { dismissAction: constants.AUTO };
-            const result = obj.UNSAFE_markDismissibleContentAsDismissed(dismissible_content.DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj2);
-          };
-        }
-        const children1 = [tmp3(tmp6, obj), ];
-        let tmp3Result = null;
-        if (hasActivitiesPrivateChannelTooltip) {
-          let obj2 = {
-            contentTypes: items1,
-            groupName: constants2.CHANNEL_HEADER_CALL_BUTTON_TOOLTIPS,
-            children(markAsDismissed) {
-                markAsDismissed = markAsDismissed.markAsDismissed;
-                let tmp2 = null;
-                const tmp = closure_2;
-                if (markAsDismissed.visibleContent === markAsDismissed(closure_2[37]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP) {
-                  const obj = {
-                    onClosePress() {
-                        return markAsDismissed(constants.UNKNOWN);
-                      }
-                  };
-                  tmp2 = closure_16(closure_1(tmp[39]), obj);
-                }
-                return tmp2;
-              }
-          };
-          items1 = [];
-          const tmp4Result = tmp4(closure_2[38]);
-          items1[0] = onPress(closure_2[37]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP;
-          tmp3Result = tmp3(tmp4Result, obj2);
-        }
-        children1[1] = tmp3Result;
-        return tmp(tmp2, { children: children1 }, index);
-      });
-    }
-    cResult[0] = buttons;
-    cResult[1] = mapped;
-    tmp2 = mapped;
-  } else {
-    tmp2 = cResult[1];
-  }
-  if (cResult[2] === style) {
-    let tmp5;
-    if (cResult[3] === tmp2) {
-      tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  let tmp6 = authStore3(View, { style, children: tmp2 });
-  cResult[2] = style;
-  cResult[3] = tmp2;
-  cResult[4] = tmp6;
-  tmp5 = tmp6;
-}) : (function ChannelButtons(buttons) {
+}
+export const ChannelTitle = memoResult;
+export function ChannelButtons(buttons) {
   let constants2;
   let mapped;
   buttons = buttons.buttons;
   let obj = { style: buttons.style, children: mapped };
   mapped = undefined;
-  let tmp = authStore3;
+  let tmp = authStore4;
   let tmp2 = View;
   if (buttons != null) {
     mapped = buttons.map((onPress, index) => {
@@ -1555,7 +494,7 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelButt
       let tmp2 = closure_4;
       let obj = { accessibilityRole: "button", accessibilityLabel, color, source, onPress, onLongPress, disabled, style, children };
       const tmp4 = closure_1;
-      const tmp6 = closure_1(closure_2[35]);
+      const tmp6 = closure_1(closure_2[33]);
       if (hasActivitiesPrivateChannelTooltip) {
         onPress = (arg0) => {
           if (null != fn) {
@@ -1576,20 +515,20 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelButt
               markAsDismissed = markAsDismissed.markAsDismissed;
               let tmp2 = null;
               const tmp = closure_2;
-              if (markAsDismissed.visibleContent === markAsDismissed(closure_2[37]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP) {
+              if (markAsDismissed.visibleContent === markAsDismissed(closure_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP) {
                 const obj = {
                   onClosePress() {
                       return markAsDismissed(constants.UNKNOWN);
                     }
                 };
-                tmp2 = closure_16(closure_1(tmp[39]), obj);
+                tmp2 = closure_16(closure_1(tmp[37]), obj);
               }
               return tmp2;
             }
         };
         items1 = [];
-        const tmp4Result = tmp4(closure_2[38]);
-        items1[0] = onPress(closure_2[37]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP;
+        const tmp4Result = tmp4(closure_2[36]);
+        items1[0] = onPress(closure_2[35]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP;
         tmp3Result = tmp3(tmp4Result, obj2);
       }
       children1[1] = tmp3Result;
@@ -1597,10 +536,4 @@ let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelButt
     });
   }
   return tmp(tmp2, obj);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/navbars/native/components/ChannelNavbar.tsx");
-
-export const ChannelTitleWithoutRoute = tmp9;
-export const ChannelTitle = memoResult;
-export const ChannelButtons = tmp11;
+}

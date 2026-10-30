@@ -1,30 +1,30 @@
-// Module ID: 7627
-// Function ID: 7628
+// Module ID: 7632
+// Function ID: 7633
 // Name: NetStats
-// Dependencies: [5, 17, 6555, 7628, 4879, 1084, 3, 1483, 1482, 5936, 1101, 510, 584, 5194, 7629, 7642, 9, 2]
+// Dependencies: [5, 17, 6562, 7633, 4880, 1072, 3, 1478, 1477, 5943, 1090, 510, 572, 5200, 7634, 7647, 9, 2]
 // Exports: getSignalStrength, isSlowNetwork
 
-// Module 7627 (NetStats)
+// Module 7632 (NetStats)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import configure from "configure" /* 1483 */;
-import react_nativeDefault from "react-native" /* 5194 */;
-import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5936 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import configure from "configure" /* 1478 */;
+import react_nativeDefault from "react-native" /* 5200 */;
+import RTCBandwidthMonitor from "RTCBandwidthMonitor" /* 5943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7628 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import NetworkUtils_mod from "utils/NetworkUtils" /* 1482 */;
-import Dispatcher_mod from "Dispatcher" /* 584 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7633 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import NetworkUtils_mod from "utils/NetworkUtils" /* 1477 */;
+import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let c14, c2, c3, c6, c7, closure_1_11, fileOnly, nativeStats, sendMessageOptions;
 
 let AppState;
 let closure_4;
-const f100870 = (arg0) => {
+const f90931 = (arg0) => {
   let obj2;
   nativeStats = arg0;
   if (null == closure_1_11) {
@@ -42,7 +42,7 @@ function receiveNetworkInfoformation(result) {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f100870);
+    const networkUsage = getNetworkUsage(f90931);
   }
 }
 function updateNetworkUsage() {
@@ -50,7 +50,7 @@ function updateNetworkUsage() {
   const SystemResourceManager = React3.SystemResourceManager;
   const getNetworkUsage = SystemResourceManager.getNetworkUsage;
   if (getNetworkUsage != null) {
-    const networkUsage = getNetworkUsage(f100870);
+    const networkUsage = getNetworkUsage(f90931);
   }
 }
 ({ NativeModules: closure_4, AppState } = react_native);
@@ -149,7 +149,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ class EventTracker {
             const result = Storage.set("previousNetStatsEvents", length);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c3 = 3;
           throw tmp23;
@@ -221,7 +221,7 @@ class EventTracker {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ class EventTracker {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;
@@ -308,7 +308,7 @@ class EventTracker {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

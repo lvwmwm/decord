@@ -1,96 +1,30 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14268
+// Function ID: 14269
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [19, 21, 14121, 14122, 14123, 558, 576, 7055, 5707, 2]
+// Dependencies: [19, 21, 14269, 14270, 14271, 7063, 5712, 2]
+// Exports: HelloWumpusSpotIllustration
 
-// Module 14120 (HelloWumpusSpotIllustration)
+// Module 14268 (HelloWumpusSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import react_native from "react-native" /* 7055 */;
-import _modDef14121 from "module_14121" /* 14121 */;
-import _modDef14122 from "module_14122" /* 14122 */;
-import _modDef14123 from "module_14123" /* 14123 */;
+import react_native from "react-native" /* 7063 */;
+import _modDef14269 from "module_14269" /* 14269 */;
+import _modDef14270 from "module_14270" /* 14270 */;
+import _modDef14271 from "module_14271" /* 14271 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14121 };
+let obj2 = { uri: _modDef14269 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14122 };
+let obj3 = { uri: _modDef14270 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14123 };
-({ uri: _modDef14123 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HelloWumpusSpotIllustration(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let height;
-  let resizeMode;
-  let scale;
-  let width;
-  obj = react2;
-  const cResult = obj.c(12);
-  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 1;
-  if (undefined !== scale) {
-    num = scale;
-  }
-  if (cResult[0] === height) {
-    if (cResult[1] === num) {
-      let tmp4;
-      let tmp7;
-      let tmp10;
-      if (cResult[2] === width) {
-        tmp4 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = react_native;
-        const assetSource = tmpResult.getAssetSource(obj);
-        cResult[4] = assetSource;
-        tmp7 = assetSource;
-      } else {
-        tmp7 = cResult[4];
-      }
-      if (cResult[5] !== resizeMode) {
-        const tmpResult3 = react_native;
-        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
-        cResult[5] = resizeMode;
-        cResult[6] = assetResizeMode;
-        tmp10 = assetResizeMode;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === accessibilityLabel) {
-        if (cResult[8] === accessible) {
-          if (cResult[9] === tmp4) {
-            let tmp12;
-            if (cResult[10] === tmp10) {
-              tmp12 = cResult[11];
-            }
-            return tmp12;
-          }
-        }
-      }
-      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
-      cResult[7] = accessibilityLabel;
-      cResult[8] = accessible;
-      cResult[9] = tmp4;
-      cResult[10] = tmp10;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-  }
-  const tmpResult4 = react_native;
-  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 288, intrinsicHeight: 192 });
-  cResult[0] = height;
-  cResult[1] = num;
-  cResult[2] = width;
-  cResult[3] = assetSizeStyle;
-  tmp4 = assetSizeStyle;
-}) : (function HelloWumpusSpotIllustration(width) {
+obj[3] = { uri: _modDef14271 };
+({ uri: _modDef14271 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
+
+export function HelloWumpusSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -110,12 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function HelloWumpu
     return obj.getAssetSizeStyle(size);
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
-  height(num[8]);
-  obj2 = width(num[7]);
-  obj3 = width(num[7]);
+  height(num[6]);
+  obj2 = width(num[5]);
+  obj3 = width(num[5]);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");
-
-export const HelloWumpusSpotIllustration = tmp2;
+}

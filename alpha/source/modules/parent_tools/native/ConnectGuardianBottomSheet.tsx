@@ -1,27 +1,26 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16728
+// Function ID: 16729
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7703, 7704, 21, 5005, 587, 558, 576, 573, 5247, 16676, 1125, 2536, 5271, 16677, 5281, 5302, 2]
+// Dependencies: [19, 17, 7708, 7709, 21, 5009, 575, 563, 5253, 16729, 5267, 5619, 1114, 2537, 16730, 5629, 2]
+// Exports: default
 
-// Module 16675 (ConnectGuardianBottomSheet)
+// Module 16728 (ConnectGuardianBottomSheet)
 import react_native from "react-native" /* 17 */;
-import useStateFromStores from "useStateFromStores" /* 573 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16676 */;
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef2537 from "module_2537" /* 2537 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 16729 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, hideActionSheetResult;
+let BottomSheet;
 
 let metroImportAll;
 let metroImportDefault;
@@ -30,219 +29,15 @@ let obj3;
 const View = react_native.View;
 let closure_6 = FamilyCenterConstants.CONNECT_GUARDIAN_BOTTOM_SHEET_KEY;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = "https://support.discord.com/hc/articles/14155060633623";
 let createStyles = createStyles_mod;
 let obj = { container: obj2, info: obj3, centered: { textAlign: "center" }, cardContainer: { alignItems: "center" } };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_24, paddingVertical: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_24 };
 createStyles = createStyles.createStyles;
 obj3 = { alignItems: "center", gap: nativeDefault.space.PX_8 };
-let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuardianBottomSheet(arg0) {
-  let body;
-  let expiresAt;
-  let items2;
-  let linkCode;
-  let onRefresh;
-  let title;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let obj = react2;
-  const cResult = obj.c(31);
-  ({ onRefresh, title, body } = arg0);
-  ({ linkCode, expiresAt } = arg0);
-  const tmp4 = closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
-    class C {
-      constructor() {
-        return closure_1_5.getLinkCode();
-      }
-    }
-    cResult[0] = items;
-    cResult[1] = C;
-    tmp5 = items;
-    tmp6 = C;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = useStateFromStores;
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [FamilyCenterStore];
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = A;
-    tmp10 = A;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult2 = useStateFromStores;
-  let stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  if (stateFromStores1 == null) {
-    stateFromStores1 = expiresAt;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    cResult[4] = B;
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-  } else {
-    class B {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-  }
-  useOnNewPendingRequestDefault(tmp14);
-  if (cResult[5] !== title) {
-    let stringResult;
-    class B {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    if (title == null) {
-      class B {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      stringResult = obj4.string(_modDef2536.aCUVfL);
-    }
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    cResult[6] = stringResult;
-  } else {
-    class B {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-  }
-  if (cResult[7] === tmp4.centered) {
-    class B {
-      constructor() {
-        obj = closure_1_1(closure_1_2[10]);
-        hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-        return;
-      }
-    }
-    if (cResult[10] !== body) {
-      let formatResult;
-      class B {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      if (body == null) {
-        class B {
-          constructor() {
-            obj = closure_1_1(closure_1_2[10]);
-            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-            return;
-          }
-        }
-        const format = tmp23.format;
-        const obj2 = { link };
-        class A {
-          constructor() {
-            return closure_1_5.getLinkCodeExpiresAt();
-          }
-        }
-        formatResult = format(_modDef2536["2O6ltn"], obj2);
-      }
-      class A {
-        constructor() {
-          return closure_1_5.getLinkCodeExpiresAt();
-        }
-      }
-      cResult[11] = formatResult;
-    } else {
-      class B {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-    }
-    if (cResult[12] === tmp4.centered) {
-      class B {
-        constructor() {
-          obj = closure_1_1(closure_1_2[10]);
-          hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-          return;
-        }
-      }
-      if (cResult[15] === tmp4.info) {
-        class B {
-          constructor() {
-            obj = closure_1_1(closure_1_2[10]);
-            hideActionSheetResult = obj.hideActionSheet(closure_1_6);
-            return;
-          }
-        }
-      }
-      class A {
-        constructor() {
-          return closure_1_5.getLinkCodeExpiresAt();
-        }
-      }
-      const obj3 = { style: tmp4.info, children: items2 };
-      items2 = [tmp19, tmp24];
-      cResult[15] = tmp4.info;
-      cResult[16] = tmp19;
-      cResult[17] = tmp24;
-      cResult[18] = metroImportAll(View, obj3);
-      const tmp28 = metroImportAll(View, obj3);
-    }
-    class A {
-      constructor() {
-        return closure_1_5.getLinkCodeExpiresAt();
-      }
-    }
-    const obj5 = { style: tmp4.centered, variant: "text-md/medium", color: "text-default", children: tmp21 };
-    cResult[12] = tmp4.centered;
-    cResult[13] = tmp21;
-    cResult[14] = metroImportDefault(Text_Text.Text, obj5);
-    const tmp25 = metroImportDefault(Text_Text.Text, obj5);
-  }
-  const obj6 = { style: tmp4.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp17 };
-  cResult[7] = tmp4.centered;
-  cResult[8] = tmp17;
-  cResult[9] = metroImportDefault(Text_Text.Text, obj6);
-  const tmp20 = metroImportDefault(Text_Text.Text, obj6);
-}) : (function ConnectGuardianBottomSheet(arg0) {
+let closure_9 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
+
+export default function ConnectGuardianBottomSheet(arg0) {
   let ConnectGuardianCard;
   let body;
   let expiresAt;
@@ -250,12 +45,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   let items2;
   let items3;
   let linkCode;
-  let obj9;
+  let obj8;
   let onRefresh;
   let title;
   ({ title, body } = arg0);
   ({ linkCode, expiresAt, onRefresh } = arg0);
-  const tmp = closure_10();
+  const tmp = closure_9();
   let obj = useStateFromStores;
   const items = [FamilyCenterStore];
   let stateFromStores = obj.useStateFromStores(items, () => FamilyCenterStore.getLinkCode());
@@ -273,36 +68,32 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectGuard
   const obj5 = { style: tmp.centered, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: title };
   const Text = Text_Text.Text;
   if (title == null) {
-    const intl = tmp2(1125).intl;
-    title = intl.string(tmp7(2536).aCUVfL);
+    const intl = tmp2(1114).intl;
+    title = intl.string(tmp7(2537).aCUVfL);
   }
   items2 = [metroImportDefault(Text, obj5), ];
   const obj6 = { style: tmp.centered, variant: "text-md/medium", color: "text-default", children: body };
-  const Text2 = tmp2(5271).Text;
+  const Text2 = tmp2(5619).Text;
   if (body == null) {
-    const intl2 = tmp2(1125).intl;
-    const obj7 = { link };
-    body = intl2.format(tmp7(2536)["2O6ltn"], obj7);
+    const intl2 = tmp2(1114).intl;
+    body = intl2.format(tmp7(2537)["2O6ltn"], { link: "https://support.discord.com/hc/articles/14155060633623" });
   }
   items2[1] = metroImportDefault(Text2, obj6);
   items3 = [metroImportAll(View, obj4), , ];
-  const obj8 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj9) };
-  ConnectGuardianCard = tmp2(16677).ConnectGuardianCard;
+  const obj7 = { style: tmp.cardContainer, children: metroImportDefault(ConnectGuardianCard, obj8) };
+  ConnectGuardianCard = tmp2(16730).ConnectGuardianCard;
   if (stateFromStores == null) {
     stateFromStores = linkCode;
   }
-  obj9 = { linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh };
+  obj8 = { linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh };
   if (stateFromStores1 == null) {
     stateFromStores1 = expiresAt;
   }
-  const obj10 = { startExpanded: true, children: metroImportAll(View, obj3) };
-  items3[1] = metroImportDefault(View, obj8);
-  const obj11 = { variant: "secondary", size: "md", text: intl3.string(_modDef2536.Hsm5IF), onPress: callback };
-  const Button = tmp2(5281).Button;
-  intl3 = tmp2(1125).intl;
-  items3[2] = metroImportDefault(Button, obj11);
-  return metroImportDefault(BottomSheet, obj10);
-});
-const result = size.fileFinishedImporting("modules/parent_tools/native/ConnectGuardianBottomSheet.tsx");
-
-export default tmp4;
+  const obj9 = { startExpanded: true, children: metroImportAll(View, obj3) };
+  items3[1] = metroImportDefault(View, obj7);
+  const obj10 = { variant: "secondary", size: "md", text: intl3.string(_modDef2537.Hsm5IF), onPress: callback };
+  const Button = tmp2(5629).Button;
+  intl3 = tmp2(1114).intl;
+  items3[2] = metroImportDefault(Button, obj10);
+  return metroImportDefault(BottomSheet, obj9);
+};

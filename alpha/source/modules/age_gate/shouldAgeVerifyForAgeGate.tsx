@@ -1,33 +1,15 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6719
+// Function ID: 6720
 // Name: shouldAgeVerifyForAgeGate
-// Dependencies: [6713, 5682, 6718, 558, 2]
-// Exports: shouldAgeVerifyForAgeGate
+// Dependencies: [6720, 5688, 6725, 2]
+// Exports: shouldAgeVerifyForAgeGate, useShouldAgeVerifyForAgeGate
 
-// Module 6712 (shouldAgeVerifyForAgeGate)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 6719 (shouldAgeVerifyForAgeGate)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6725 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAgeVerifyForAgeGate() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
-  const obj2 = AgeVerificationUtils;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
-  }
-  return isFeatureAgeGated;
-}) : (function useShouldAgeVerifyForAgeGate() {
-  const obj = RegionalFeatureConfigUtils;
-  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
-  const obj2 = AgeVerificationUtils;
-  if (isFeatureAgeGated) {
-    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
-  }
-  return isFeatureAgeGated;
-});
 let result = size.fileFinishedImporting("modules/age_gate/shouldAgeVerifyForAgeGate.tsx");
 
 export function shouldAgeVerifyForAgeGate() {
@@ -37,4 +19,12 @@ export function shouldAgeVerifyForAgeGate() {
   const tmp2 = obj2.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES) && result;
   return tmp2;
 }
-export const useShouldAgeVerifyForAgeGate = tmp2;
+export function useShouldAgeVerifyForAgeGate() {
+  const obj = RegionalFeatureConfigUtils;
+  let isFeatureAgeGated = obj.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
+  const obj2 = AgeVerificationUtils;
+  if (isFeatureAgeGated) {
+    isFeatureAgeGated = obj2.useShouldShowTiggerPawtect();
+  }
+  return isFeatureAgeGated;
+}

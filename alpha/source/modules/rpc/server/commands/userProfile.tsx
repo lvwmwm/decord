@@ -1,13 +1,13 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16299
+// Function ID: 16300
 // Name: commands/userProfile
-// Dependencies: [5, 6437, 1084, 16215, 16208, 16260, 2]
+// Dependencies: [5, 6444, 1072, 16255, 16248, 16300, 2]
 
-// Module 16259 (commands/userProfile)
-import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 6437 */;
+// Module 16299 (commands/userProfile)
+import Constants from "Constants" /* 1072 */;
+import Constants2 from "Constants" /* 6444 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16215 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16255 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -35,7 +35,7 @@ let obj2 = {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

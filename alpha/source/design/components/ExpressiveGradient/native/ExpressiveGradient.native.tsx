@@ -1,18 +1,17 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 9944
+// Function ID: 9945
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 587, 558, 576, 5289, 683, 5295, 2]
+// Dependencies: [19, 17, 21, 575, 5591, 671, 5582, 2]
+// Exports: ExpressiveGradient
 
-// Module 9917 (ExpressiveGradient)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import useToken from "useToken" /* 5289 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
+// Module 9944 (ExpressiveGradient)
+import nativeDefault from "native" /* 575 */;
+import _modDef671 from "module_671" /* 671 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import useToken from "useToken" /* 5591 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -38,160 +37,9 @@ const start = { x: 0, y: 0.5 };
 const end = { x: 1, y: 0.5 };
 const start2 = { x: 0.5, y: 0 };
 const end2 = { x: 0.5, y: 0.5 };
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExpressiveGradient(backgroundColor) {
-  let children;
-  let color;
-  let items2;
-  let items3;
-  let offsetBottom;
-  let style;
-  let tmp10;
-  let tmp6;
-  obj = react2;
-  const cResult = obj.c(26);
-  ({ color, offsetBottom, children, style } = backgroundColor);
-  let num = 0;
-  backgroundColor = backgroundColor.backgroundColor;
-  if (undefined !== offsetBottom) {
-    num = offsetBottom;
-  }
-  let str = "purple";
-  if (undefined !== color) {
-    str = color;
-  }
-  if (typeof str !== "object") {
-    let str2 = str;
-    const tmp4 = obj;
-    if (str == null) {
-      str2 = "purple";
-    }
-    tmp6 = tmp4[str2];
-  } else {
-    tmp6 = str;
-  }
-  const tmpResult = useToken;
-  const token = tmpResult.useToken(tmp6.start);
-  const tmpResult3 = useToken;
-  const token1 = tmpResult3.useToken(tmp6.end);
-  const tmpResult4 = useToken;
-  const token2 = tmpResult4.useToken(backgroundColor);
-  if (cResult[0] !== token2) {
-    const obj5 = _modDef683(token2);
-    const alphaResult = obj5.alpha(0);
-    const cssResult = alphaResult.css();
-    cResult[0] = token2;
-    cResult[1] = cssResult;
-    tmp10 = cssResult;
-  } else {
-    tmp10 = cResult[1];
-  }
-  if (cResult[2] === token1) {
-    let tmp13;
-    if (cResult[3] === token) {
-      tmp13 = cResult[4];
-    }
-    if (cResult[5] === token2) {
-      let tmp14;
-      let tmp15;
-      let tmp17;
-      let tmp19;
-      let tmp21;
-      let tmp28;
-      if (cResult[6] === tmp10) {
-        tmp14 = cResult[7];
-      }
-      if (cResult[8] !== style) {
-        const items = [React3.absoluteFill, style];
-        cResult[8] = style;
-        cResult[9] = items;
-        tmp15 = items;
-      } else {
-        tmp15 = cResult[9];
-      }
-      if (cResult[10] !== num) {
-        let tmp18;
-        if (num > 0) {
-          tmp18 = { bottom: `${100 * num}%` };
-          const obj2 = { bottom: `${100 * num}%` };
-        }
-        cResult[10] = num;
-        cResult[11] = tmp18;
-        tmp17 = tmp18;
-      } else {
-        tmp17 = cResult[11];
-      }
-      if (cResult[12] !== tmp17) {
-        const items1 = [React3.absoluteFill, tmp17];
-        cResult[12] = tmp17;
-        cResult[13] = items1;
-        tmp19 = items1;
-      } else {
-        tmp19 = cResult[13];
-      }
-      if (cResult[14] !== tmp13) {
-        const obj3 = { style: React3.absoluteFillObject, colors: tmp13, start, end, pointerEvents: "none" };
-        const tmp27 = hasOwnProperty(LinearGradientDefault, obj3);
-        cResult[14] = tmp13;
-        cResult[15] = tmp27;
-        tmp21 = tmp27;
-      } else {
-        tmp21 = cResult[15];
-      }
-      if (cResult[16] !== tmp14) {
-        const obj4 = { style: React3.absoluteFillObject, colors: tmp14, start: start2, end: end2, pointerEvents: "none" };
-        const tmp34 = hasOwnProperty(LinearGradientDefault, obj4);
-        cResult[16] = tmp14;
-        cResult[17] = tmp34;
-        tmp28 = tmp34;
-      } else {
-        tmp28 = cResult[17];
-      }
-      if (cResult[18] === tmp28) {
-        if (cResult[19] === tmp19) {
-          let tmp35;
-          if (cResult[20] === tmp21) {
-            tmp35 = cResult[21];
-          }
-          if (cResult[22] === children) {
-            if (cResult[23] === tmp35) {
-              let tmp39;
-              if (cResult[24] === tmp15) {
-                tmp39 = cResult[25];
-              }
-              return tmp39;
-            }
-          }
-          const obj6 = { style: tmp15, children: items2 };
-          items2 = [tmp35, children];
-          const tmp42 = metroRequire(_false, obj6);
-          cResult[22] = children;
-          cResult[23] = tmp35;
-          cResult[24] = tmp15;
-          cResult[25] = tmp42;
-          tmp39 = tmp42;
-        }
-      }
-      const obj7 = { style: tmp19, children: items3 };
-      items3 = [tmp21, tmp28];
-      const tmp38 = metroRequire(_false, obj7);
-      cResult[18] = tmp28;
-      cResult[19] = tmp19;
-      cResult[20] = tmp21;
-      cResult[21] = tmp38;
-      tmp35 = tmp38;
-    }
-    const items4 = [tmp10, token2];
-    cResult[5] = token2;
-    cResult[6] = tmp10;
-    cResult[7] = items4;
-    tmp14 = items4;
-  }
-  const items5 = [token, token1];
-  cResult[2] = token1;
-  cResult[3] = token;
-  cResult[4] = items5;
-  tmp13 = items5;
-}) : (function ExpressiveGradient(color) {
+const result = size.fileFinishedImporting("design/components/ExpressiveGradient/native/ExpressiveGradient.native.tsx");
+
+export function ExpressiveGradient(color) {
   let backgroundColor;
   let children;
   let items;
@@ -230,7 +78,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expressive
   items = [React3.absoluteFill, style];
   const items1 = [React3.absoluteFill, ];
   let tmp13;
-  const obj4 = _modDef683(token2);
+  const obj4 = _modDef671(token2);
   const alphaResult = obj4.alpha(0);
   const cssResult = alphaResult.css();
   if (num > 0) {
@@ -247,7 +95,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Expressive
   items3[1] = hasOwnProperty(LinearGradientDefault, obj9);
   items5 = [metroRequire(_false, obj7), children];
   return metroRequire(_false, obj5);
-});
-const result = size.fileFinishedImporting("design/components/ExpressiveGradient/native/ExpressiveGradient.native.tsx");
-
-export const ExpressiveGradient = tmp5;
+}

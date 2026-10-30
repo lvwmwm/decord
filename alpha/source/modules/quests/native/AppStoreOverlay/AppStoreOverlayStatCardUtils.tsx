@@ -1,10 +1,10 @@
-// Module ID: 14584
-// Function ID: 14585
+// Module ID: 14617
+// Function ID: 14618
 // Name: AppStoreOverlayStatCardUtils
 // Dependencies: [2]
 // Exports: formatAppStoreChartRank, formatAppStoreRatingCount, formatAppStoreRatingValue, getAppStoreStarFillAmounts
 
-// Module 14584 (AppStoreOverlayStatCardUtils)
+// Module 14617 (AppStoreOverlayStatCardUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");
@@ -17,9 +17,9 @@ export function formatAppStoreRatingCount(ratingCount, currentLocale) {
   const numberFormat = new Intl.NumberFormat(currentLocale, { notation: "compact", compactDisplay: "short" });
   return numberFormat.format(ratingCount);
 }
-export function getAppStoreStarFillAmounts(rating, stat) {
-  let num = stat;
-  if (stat === undefined) {
+export function getAppStoreStarFillAmounts(rating, arg1) {
+  let num = arg1;
+  if (arg1 === undefined) {
     num = 5;
   }
   const length = Math.max(1, num);

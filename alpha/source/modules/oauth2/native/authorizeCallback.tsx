@@ -1,17 +1,17 @@
-// Module ID: 10863
-// Function ID: 10864
+// Module ID: 10886
+// Function ID: 10887
 // Name: authorizeCallback
-// Dependencies: [10862, 6731, 9707, 2000, 1383, 10864, 5731, 1104, 5698, 2]
+// Dependencies: [10885, 6738, 9733, 1995, 1378, 10887, 5737, 1093, 5704, 2]
 // Exports: default
 
-// Module 10863 (authorizeCallback)
-import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import BrowserManager from "BrowserManager" /* 5731 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import Constants from "Constants" /* 10862 */;
+// Module 10886 (authorizeCallback)
+import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import BrowserManager from "BrowserManager" /* 5737 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import Constants from "Constants" /* 10885 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -43,13 +43,13 @@ export default function authorizeCallback(arg0) {
           if (null != pathname.match(re5)) {
             const obj3 = { application: tmp, guild: tmp2 };
             const tmp8Result4 = ModalActionCreatorsDefault;
-            tmp8Result4.pushLazy(asyncRequire(10864, dependencyMap.paths), obj3, _false);
+            tmp8Result4.pushLazy(asyncRequire(10887, dependencyMap.paths), obj3, _false);
           } else if (null != pathname.match(re6)) {
             if (!canceled) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               let str1;
               ModalActionCreatorsDefault;
-              const tmp19 = asyncRequire(9707, dependencyMap.paths);
+              const tmp19 = asyncRequire(9733, dependencyMap.paths);
               if (searchParams != null) {
                 const str2 = searchParams.get("error_description");
                 if (str2 != null) {
@@ -87,6 +87,6 @@ export default function authorizeCallback(arg0) {
     openURL(_location, SAFARI);
   } else if (!canceled) {
     const obj = ModalActionCreatorsDefault;
-    obj.pushLazy(asyncRequire(9707, dependencyMap.paths), undefined, React3);
+    obj.pushLazy(asyncRequire(9733, dependencyMap.paths), undefined, React3);
   }
 };

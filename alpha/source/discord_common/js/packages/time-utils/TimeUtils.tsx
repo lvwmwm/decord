@@ -1,14 +1,14 @@
-// Module ID: 5760
-// Function ID: 5761
+// Module ID: 5767
+// Function ID: 5768
 // Name: TimeUtils
-// Dependencies: [5, 5761, 581, 5762, 2]
+// Dependencies: [5, 5768, 569, 5769, 2]
 // Exports: convertMinutesToGivenTimeUnit, getTimeAndUnit, getTimeUnit
 
-// Module 5760 (TimeUtils)
-import navigationStart from "navigationStart" /* 581 */;
-import createFindDefault from "createFind" /* 5762 */;
+// Module 5767 (TimeUtils)
+import navigationStart from "navigationStart" /* 569 */;
+import createFindDefault from "createFind" /* 5769 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_5761 from "module_5761" /* 5761 */;
+import module_5768 from "module_5768" /* 5768 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, importDefault, max;
@@ -262,7 +262,7 @@ class StopWatch {
     if (timestampProducer === undefined) {
       tmp = obj2;
     }
-    const merged = Object.assign({ startTime: "duration", timePassed: false });
+    const merged = Object.assign({ startTime: "sa", timePassed: false });
     merged.timestampProducer = tmp;
     return merged;
   }
@@ -315,7 +315,7 @@ class StopWatch {
   }
   static startNew() {
     if (typeof StopWatch === "function") {
-      const merged = Object.assign({ startTime: "duration", timePassed: false });
+      const merged = Object.assign({ startTime: "sa", timePassed: false });
       merged.timestampProducer = obj2;
       merged.start();
       return merged;
@@ -341,7 +341,7 @@ class TimeOut {
   constructor(timeout) {
     if (typeof StopWatch === "function") {
       const merged = Object.assign({ watch: null });
-      const merged1 = Object.assign({ startTime: "duration", timePassed: false });
+      const merged1 = Object.assign({ startTime: "sa", timePassed: false });
       merged1.timestampProducer = obj2;
       merged[0] = merged1;
       merged.timeout = timeout;
@@ -374,7 +374,7 @@ class TimeOut {
       const self = this;
       if (typeof StopWatch === "function") {
         const merged = Object.assign({ watch: null });
-        const merged1 = Object.assign({ startTime: "duration", timePassed: false });
+        const merged1 = Object.assign({ startTime: "sa", timePassed: false });
         merged1.timestampProducer = obj2;
         merged[0] = merged1;
         merged.timeout = timeout;
@@ -402,7 +402,7 @@ class TimeOut {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -504,7 +504,7 @@ class DurationEnabled {
         tmp = obj2;
       }
       const obj = Object.create(tmp2);
-      const merged = Object.assign({ startTime: "duration", timePassed: false });
+      const merged = Object.assign({ startTime: "sa", timePassed: false });
       merged.timestampProducer = tmp;
       obj.stopwatch = merged;
       obj.state = noiseCancellation;
@@ -590,12 +590,12 @@ export function getTimeUnit(arg0, arg1) {
     max = max.max;
     return max.unit === obj.NONE && rounded === max || rounded < max;
   });
-  const tmp2 = createFindDefault(items, (unit) => f97420(unit.unit), findIndexResult);
+  const tmp2 = createFindDefault(items, (unit) => f88067(unit.unit), findIndexResult);
   const arr = items;
   if (null != tmp2) {
     return tmp2.unit;
   } else {
-    const found = arr.find((unit) => f97420(unit.unit));
+    const found = arr.find((unit) => f88067(unit.unit));
     let unit = null;
     if (null != found) {
       unit = found.unit;
@@ -611,17 +611,17 @@ export function getTimeAndUnit(rounded, items) {
   } else {
     let unit;
     closure_0 = rounded;
-    const f97420 = (dependencyMap) => closure_0.includes(dependencyMap);
+    const f88067 = (dependencyMap) => closure_0.includes(dependencyMap);
     const findIndexResult = items.findIndex((max) => {
       max = max.max;
       return max.unit === obj.NONE && rounded === max || rounded < max;
     });
-    const tmp11 = f97420(5762)(items, (unit) => f97420(unit.unit), findIndexResult);
+    const tmp11 = f88067(5769)(items, (unit) => f88067(unit.unit), findIndexResult);
     const arr = items;
     if (null != tmp11) {
       unit = tmp11.unit;
     } else {
-      const found = arr.find((unit) => f97420(unit.unit));
+      const found = arr.find((unit) => f88067(unit.unit));
       unit = null;
       if (null != found) {
         unit = found.unit;

@@ -1,27 +1,25 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14545
+// Function ID: 14546
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 4857, 21, 5005, 587, 558, 576, 1631, 9728, 504, 7812, 9761, 9760, 6731, 1125, 9765, 1381, 6984, 6968, 5271, 6993, 7240, 2]
+// Dependencies: [5, 32, 19, 17, 4858, 21, 5009, 575, 1626, 9754, 504, 7817, 9787, 9786, 6738, 1114, 6999, 9791, 1376, 6992, 6974, 5619, 7247, 2]
+// Exports: default
 
-// Module 14512 (ScheduledMessageEditContentModal)
+// Module 14545 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import MessageParserDefault from "MessageParser" /* 7812 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9761 */;
-import HeaderShared from "HeaderShared" /* 9765 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import MessageParserDefault from "MessageParser" /* 7817 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9787 */;
+import HeaderShared from "HeaderShared" /* 9791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-let c1;
 
 let c9;
 let metroImportAll;
@@ -41,138 +39,9 @@ obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
 obj5 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_24 };
 let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMessageEditContentModal(scheduledMessage) {
-  let channelId;
-  let first;
-  let first1;
-  let fn;
-  let onPress;
-  let stateFromStores;
-  let title;
-  let tmp8;
-  const tmp = scheduledMessage;
-  const tmp2 = stateFromStores;
-  let obj = scheduledMessage(stateFromStores[9]);
-  const cResult = obj.c(33);
-  scheduledMessage = scheduledMessage.scheduledMessage;
-  closure_10();
-  const top = channelId(stateFromStores[10])().top;
-  channelId(stateFromStores[11])();
-  channelId = scheduledMessage.createArgs.channelId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    class C {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    cResult[1] = channelId;
-    cResult[2] = C;
-    tmp8 = C;
-  } else {
-    class C {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[12]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] === channelId) {
-    class C {
-      constructor() {
-        return ChannelStore.getChannel(channelId);
-      }
-    }
-    [first1] = react.useState(fn);
-    if (cResult[6] === stateFromStores) {
-      class C {
-        constructor() {
-          return ChannelStore.getChannel(channelId);
-        }
-      }
-    }
-    let closure_0 = first1(function*(arg0, value) {
-      let obj6;
-      if (c2 === 2) {
-        c2 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          c2 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              const obj5 = channelId(stateFromStores[13]);
-              const content = obj5.parse(c2, first1).content;
-              const obj4 = { content, flags: tmp3.createArgs.flags };
-              c1 = 1;
-              c2 = 1;
-              const obj7 = { value: obj6.editScheduledMessage(tmp3.scheduledMessageId, obj4), done: false };
-              obj6 = tmp3(stateFromStores[15]);
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            if (value) {
-              const arr = channelId(stateFromStores[16]);
-              arr.pop();
-            }
-            c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp8) {
-          c2 = 3;
-          throw tmp8;
-        }
-      }
-    });
-    function t4() {
-      return closure_0(...arguments);
-    }
-    cResult[6] = stateFromStores;
-    cResult[7] = first1;
-    cResult[8] = scheduledMessage.createArgs.flags;
-    cResult[9] = scheduledMessage.scheduledMessageId;
-    cResult[10] = t4;
-  }
-  fn = function v() {
-    const unparse = MessageParserDefault.unparse;
-    MessageParserDefault;
-    const obj = ScheduledMessageUtils;
-    return unparse(obj.unparseContentAndFlagsForSilentMessage(scheduledMessage.createArgs), channelId);
-  };
-  cResult[3] = channelId;
-  cResult[4] = scheduledMessage.createArgs;
-  cResult[5] = fn;
-}) : (function ScheduledMessageEditContentModal(scheduledMessage) {
+const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageEditContentModal.tsx");
+
+export default function ScheduledMessageEditContentModal(scheduledMessage) {
   let items2;
   let num;
   let onPress;
@@ -188,10 +57,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
   const tmp = closure_10();
   const tmp2 = channelId;
   const tmp3 = stateFromStores;
-  const top = channelId(stateFromStores[10])().top;
+  const top = channelId(stateFromStores[8])().top;
   channelId = scheduledMessage.createArgs.channelId;
-  const tmp4 = channelId(stateFromStores[11])();
-  let obj = scheduledMessage(stateFromStores[12]);
+  const tmp4 = channelId(stateFromStores[9])();
+  let obj = scheduledMessage(stateFromStores[10]);
   const items = [ChannelStore];
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   [value, tmp9] = react.useState(() => {
@@ -215,7 +84,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -229,11 +98,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj5 = channelId(stateFromStores[13]);
+            const obj5 = channelId(stateFromStores[11]);
             const content = obj5.parse(stateFromStores, first).content;
             const obj4 = { content, flags: scheduledMessage.createArgs.flags };
             channelId = 1;
-            const obj6 = tmp3(stateFromStores[15]);
+            const obj6 = tmp3(stateFromStores[13]);
             stateFromStores = 1;
             const obj7 = { value: obj6.editScheduledMessage(scheduledMessage.scheduledMessageId, obj4), done: false };
             return obj7;
@@ -247,11 +116,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
           return obj;
         } else {
           if (value) {
-            const arr = channelId(stateFromStores[16]);
+            const arr = channelId(stateFromStores[14]);
             arr.pop();
           }
           stateFromStores = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         stateFromStores = 3;
@@ -259,8 +128,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
       }
     }
   }), items1);
-  let intl = scheduledMessage(stateFromStores[17]).intl;
-  const stringResult = intl.string(scheduledMessage(stateFromStores[17]).t.ZXE1s4);
+  let intl = scheduledMessage(stateFromStores[15]).intl;
+  const stringResult = intl.string(scheduledMessage(stateFromStores[15]).t.ZXE1s4);
   react = stringResult;
   let obj2 = { style: tmp.modal, children: items2 };
   let obj5 = {
@@ -271,7 +140,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: num + tmp2(tmp3[7]).space.PX_8,
-    headerLeft: tmp5Result.getHeaderCloseButton(tmp2(tmp3[16]).pop),
+    headerLeft: tmp5Result.getHeaderCloseButton(tmp2(tmp3[14]).pop),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null,
     headerRight() {
@@ -286,20 +155,17 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScheduledMes
       return metroImportAll(PressableOpacity, obj);
     }
   };
-  const Header = scheduledMessage(stateFromStores[23]).Header;
-  let obj4 = scheduledMessage(stateFromStores[19]);
+  const Header = scheduledMessage(stateFromStores[16]).Header;
+  let obj4 = scheduledMessage(stateFromStores[18]);
   num = 0;
   const tmp11 = closure_9;
   if (!obj4.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj3.headerLeftContainerStyle, headerRightContainer: obj3.headerRightContainerStyle } = tmp);
-  tmp5Result = scheduledMessage(tmp3[20]);
+  tmp5Result = scheduledMessage(tmp3[19]);
   items2 = [tmp13(Header, obj5), ];
-  let obj6 = { style: tmp.container, children: tmp13(tmp5(tmp3[24]).TextArea, { accessibilityLabel: stringResult, value, onChange: tmp9, maxLength: tmp4, autoFocus: true }) };
+  let obj6 = { style: tmp.container, children: tmp13(tmp5(tmp3[22]).TextArea, { accessibilityLabel: stringResult, value, onChange: tmp9, maxLength: tmp4, autoFocus: true }) };
   items2[1] = closure_8(View, obj6);
   return tmp11(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageEditContentModal.tsx");
-
-export default tmp4;
+};

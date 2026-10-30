@@ -1,64 +1,69 @@
-// Module ID: 9610
-// Function ID: 9611
+// Module ID: 9633
+// Function ID: 9634
 // Name: admin_editor_test_component
-// Dependencies: [32, 1209, 9588, 9598, 9589, 9590, 9596, 2]
+// Dependencies: [32, 1198, 9611, 9621, 9612, 9613, 9619, 2]
 
-// Module 9610 (admin_editor_test_component)
-import _mod1209 from "module_1209" /* 1209 */;
-import localized_string from "localized_string" /* 9588 */;
-import help_article from "help_article" /* 9589 */;
-import cta_button from "cta_button" /* 9590 */;
-import gradient from "gradient" /* 9596 */;
-import theme_aware_asset from "theme_aware_asset" /* 9598 */;
+// Module 9633 (admin_editor_test_component)
+import _mod1198 from "module_1198" /* 1198 */;
+import localized_string from "localized_string" /* 9611 */;
+import help_article from "help_article" /* 9612 */;
+import cta_button from "cta_button" /* 9613 */;
+import gradient from "gradient" /* 9619 */;
+import theme_aware_asset from "theme_aware_asset" /* 9621 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6;
 
 let tmp;
 const T2 = function T() {
-  return require("localized_string").LocalizedString;
+  return localized_string.LocalizedString;
 };
 const T3 = function T() {
-  return require("localized_string").LocalizedString;
+  return localized_string.LocalizedString;
 };
 const T4 = function T() {
-  return require("theme_aware_asset").ThemeAwareAsset;
+  return theme_aware_asset.ThemeAwareAsset;
 };
 const T5 = function T() {
-  return require("help_article").HelpArticle;
+  return help_article.HelpArticle;
 };
 const T6 = function T() {
-  return require("cta_button").CTAButton;
+  return cta_button.CTAButton;
 };
 const T7 = function T() {
+  return gradient.Gradient;
+};
+const T8 = function T() {
   const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
   return items;
 };
 const AdminEditorTestSelectOption = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FIRST: 1, [1]: "FIRST", SECOND: 2, [2]: "SECOND" };
-const MessageType = _mod1209.MessageType;
+const MessageType = _mod1198.MessageType;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
-    let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, , ];
-    const obj = { no: 10, name: "gradient_field", kind: "message", T };
+    let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, { no: 10, name: "gradient_field", kind: "message", T: T7 }, , ];
+    const obj = { no: 11, name: "select_field", kind: "enum", T };
     class T {
       constructor() {
-        return closure_1_0(closure_1_1[6]).Gradient;
+        items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption"];
+        items[1] = closure_1_3;
+        items[2] = "ADMIN_EDITOR_TEST_SELECT_OPTION_";
+        return items;
       }
     }
-    items[9] = obj;
-    items[10] = { no: 11, name: "select_field", kind: "enum", T: T7 };
+    items[10] = obj;
+    items[11] = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T: T8 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0 };
+    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0, multiSelectField: [] };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1209;
+      const tmpResult = _mod1198;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -76,43 +81,44 @@ class AdminEditorTestComponent$Type extends MessageType {
     return obj;
   }
   internalBinaryWrite(deprecatedField, tag, writeUnknownFields) {
+    let length;
     if ("" !== deprecatedField.deprecatedField) {
-      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
       tagResult.string(deprecatedField.deprecatedField);
     }
     if (deprecatedField.localizedTextField) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const localizedTextField = deprecatedField.localizedTextField;
-      const tagResult1 = tag.tag(2, _mod1209.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(localizedTextField, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("" !== deprecatedField.plainTextField) {
-      const tagResult2 = tag.tag(3, _mod1209.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1198.WireType.LengthDelimited);
       tagResult2.string(deprecatedField.plainTextField);
     }
     if (deprecatedField.textareaField) {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const textareaField = deprecatedField.textareaField;
-      const tagResult3 = tag.tag(4, _mod1209.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(textareaField, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (false !== deprecatedField.checkboxField) {
-      const tagResult4 = tag.tag(5, _mod1209.WireType.Varint);
+      const tagResult4 = tag.tag(5, _mod1198.WireType.Varint);
       tagResult4.bool(deprecatedField.checkboxField);
     }
     if ("" !== deprecatedField.assetField) {
-      const tagResult5 = tag.tag(6, _mod1209.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1198.WireType.LengthDelimited);
       tagResult5.string(deprecatedField.assetField);
     }
     if (deprecatedField.themedAssetField) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite3 = ThemeAwareAsset.internalBinaryWrite;
       const themedAssetField = deprecatedField.themedAssetField;
-      const tagResult6 = tag.tag(7, _mod1209.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(themedAssetField, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -120,7 +126,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite4 = HelpArticle.internalBinaryWrite;
       const helpArticleField = deprecatedField.helpArticleField;
-      const tagResult7 = tag.tag(8, _mod1209.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(helpArticleField, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -128,7 +134,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite5 = CTAButton.internalBinaryWrite;
       const ctaField = deprecatedField.ctaField;
-      const tagResult8 = tag.tag(9, _mod1209.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(ctaField, tagResult8.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
@@ -136,18 +142,31 @@ class AdminEditorTestComponent$Type extends MessageType {
       const Gradient = gradient.Gradient;
       internalBinaryWrite6 = Gradient.internalBinaryWrite;
       const gradientField = deprecatedField.gradientField;
-      const tagResult9 = tag.tag(10, _mod1209.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(10, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(gradientField, tagResult9.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (0 !== deprecatedField.selectField) {
-      const tagResult10 = tag.tag(11, _mod1209.WireType.Varint);
+      const tagResult10 = tag.tag(11, _mod1198.WireType.Varint);
       tagResult10.int32(deprecatedField.selectField);
+    }
+    if (deprecatedField.multiSelectField.length) {
+      const tagResult11 = tag.tag(12, _mod1198.WireType.LengthDelimited);
+      tagResult11.fork();
+      let num14 = 0;
+      if (0 < deprecatedField.multiSelectField.length) {
+        do {
+          let int32Result1 = tag.int32(deprecatedField.multiSelectField[num14]);
+          num14 = num14 + 1;
+          length = deprecatedField.multiSelectField.length;
+        } while (num14 < length);
+      }
+      const joined6 = tag.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1209.UnknownFieldHandler.onWrite;
+        onWrite = _mod1198.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, deprecatedField, tag);
@@ -156,15 +175,16 @@ class AdminEditorTestComponent$Type extends MessageType {
   }
 }
 const prototype = AdminEditorTestComponent$Type.prototype;
-let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, , ];
-let obj2 = { no: 10, name: "gradient_field", kind: "message", T };
+let items = [{ no: 1, name: "deprecated_field", kind: "scalar", T: 9 }, { no: 2, name: "localized_text_field", kind: "message", T: T2 }, { no: 3, name: "plain_text_field", kind: "scalar", T: 9 }, { no: 4, name: "textarea_field", kind: "message", T: T3 }, { no: 5, name: "checkbox_field", kind: "scalar", T: 8 }, { no: 6, name: "asset_field", kind: "scalar", T: 9 }, { no: 7, name: "themed_asset_field", kind: "message", T: T4 }, { no: 8, name: "help_article_field", kind: "message", T: T5 }, { no: 9, name: "cta_field", kind: "message", T: T6 }, { no: 10, name: "gradient_field", kind: "message", T: T7 }, , ];
+let obj2 = { no: 11, name: "select_field", kind: "enum", T };
 class T {
   constructor() {
-    return require("gradient").Gradient;
+    const items = ["discord_protos.premium_marketing.v1.AdminEditorTestSelectOption", AdminEditorTestSelectOption, "ADMIN_EDITOR_TEST_SELECT_OPTION_"];
+    return items;
   }
 }
-items[9] = obj2;
-items[10] = { no: 11, name: "select_field", kind: "enum", T: T7 };
+items[10] = obj2;
+items[11] = { no: 12, name: "multi_select_field", kind: "enum", repeat: 1, T: T8 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, tmp, T, AdminEditorTestComponent$Type, prototype, items, require, dependencyMap);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/admin_editor_test_component.tsx");
 

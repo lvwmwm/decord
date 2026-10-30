@@ -1,18 +1,18 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17406
+// Function ID: 17407
 // Name: NotificationPermissionSettingsHeader
-// Dependencies: [19, 17, 1084, 13777, 21, 5005, 587, 558, 576, 13778, 1264, 10948, 5271, 1125, 5281, 6965, 2]
+// Dependencies: [19, 17, 1072, 13924, 21, 5009, 575, 13925, 1253, 6971, 10973, 5619, 1114, 5629, 2]
+// Exports: default
 
-// Module 17352 (NotificationPermissionSettingsHeader)
+// Module 17406 (NotificationPermissionSettingsHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import nativeDefault from "native" /* 575 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13777 */;
+import Constants from "Constants" /* 1072 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13924 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -37,304 +37,16 @@ createStyles = createStyles.createStyles;
 size = { width: 48, height: 48, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_8 };
 obj3 = { marginBottom: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 let closure_13 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationPermissionSettingsHeader() {
-  let Button;
-  let canSeePushNotificationNudge;
-  let cardContent;
-  let container;
-  let intl;
-  let intl2;
-  let items1;
-  let obj11;
-  let obj9;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  let tmp = canSeePushNotificationNudge;
-  let obj = canSeePushNotificationNudge(576);
-  const cResult = obj.c(20);
-  const tmp4 = closure_13();
-  let obj2 = canSeePushNotificationNudge(13778);
-  canSeePushNotificationNudge = obj2.useCanSeePushNotificationNudge();
-  if (cResult[0] !== canSeePushNotificationNudge) {
-    const fn = function o() {
-      const tmp = canSeePushNotificationNudge;
-      if (tmp) {
-        const obj2 = { action: constants4.IMPRESSION, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-        const obj = AnalyticsUtilsDefault;
-        obj.track(hasOwnProperty.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    };
-    const items = [canSeePushNotificationNudge];
-    cResult[0] = canSeePushNotificationNudge;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp7 = items;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const effect = react.useEffect(tmp6, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-        obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-        const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-        const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-      }
-    }
-    cResult[3] = E;
-    tmp9 = E;
-  } else {
-    class E {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-        obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-        const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-        const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-      }
-    }
-  }
-  if (canSeePushNotificationNudge) {
-    let tmp10;
-    let tmp16;
-    let tmp18;
-    let tmp22;
-    let tmp24;
-    class E {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-        obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-        const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-        const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-      }
-    }
-    ({ container, cardContent } = tmp4);
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      let obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-      const BellSlashIcon = tmp(10948).BellSlashIcon;
-      const tmp12 = closure_11(BellSlashIcon, obj3);
-      cResult[4] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    if (cResult[5] !== tmp4.iconCircle) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      const obj4 = { style: tmp4.iconCircle, children: tmp10 };
-      cResult[5] = tmp4.iconCircle;
-      cResult[6] = closure_11(View, obj4);
-      const tmp15 = closure_11(View, obj4);
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      const obj5 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(tmp(1125).t.MUwOvc) };
-      const Text = tmp(5271).Text;
-      intl = tmp(1125).intl;
-      const tmp17 = closure_11(Text, obj5);
-      cResult[7] = tmp17;
-      tmp16 = tmp17;
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    const body = tmp4.body;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      const stringResult = obj6.string(tmp(1125).t.G4uKoe);
-      cResult[8] = stringResult;
-      tmp18 = stringResult;
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    if (cResult[9] !== tmp4.body) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      const obj7 = { variant: "text-sm/medium", style: body, color: "text-muted", children: tmp18 };
-      cResult[9] = tmp4.body;
-      cResult[10] = closure_11(tmp(5271).Text, obj7);
-      const tmp21 = closure_11(tmp(5271).Text, obj7);
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      cResult[11] = tmp23;
-      tmp22 = tmp23;
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-      const obj8 = { style: tmp22, children: closure_11(Button, obj9) };
-      obj9 = { variant: "primary", text: intl2.string(tmp(1125).t["5xWOXv"]), onPress: tmp9 };
-      Button = tmp(5281).Button;
-      intl2 = tmp(1125).intl;
-      const tmp26 = closure_11(View, obj8);
-      cResult[12] = tmp26;
-      tmp24 = tmp26;
-    } else {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    if (cResult[13] === tmp4.cardContent) {
-      class E {
-        constructor() {
-          const obj = AnalyticsUtilsDefault;
-          const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-          obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-          const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-          const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-        }
-      }
-    }
-    const obj10 = { border: "none", shadow: "none", children: closure_12(View, obj11) };
-    obj11 = { style: cardContent, children: items1 };
-    items1 = [tmp13, tmp16, tmp20, tmp24];
-    const Card = tmp(6965).Card;
-    cResult[13] = tmp4.cardContent;
-    cResult[14] = tmp20;
-    cResult[15] = tmp13;
-    cResult[16] = closure_11(Card, obj10);
-    const tmp31 = closure_11(Card, obj10);
-  } else {
-    class E {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: constants4.ACCEPT, prompt_type: constants5.NOTIFICATION_SETTINGS_PERMISSION_HEADER };
-        obj.track(constants.CONTEXTUAL_REMINDER_ACTION, obj2);
-        const obj3 = canSeePushNotificationNudge(dependencyMap[9]);
-        const pushNotificationPermission = obj3.requestPushNotificationPermission(constants3.ALLOW_TO_REQUEST, constants2.NOTIFICATION_SETTING, closure_1_6);
-      }
-    }
-    return null;
-  }
-}) : (function NotificationPermissionSettingsHeader() {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/user_settings/notifications/native/NotificationPermissionSettingsHeader.tsx");
+
+export default function NotificationPermissionSettingsHeader() {
   let BellSlashIcon;
   let Button;
   let Card;
   let canSeePushNotificationNudge;
+  let constants4;
+  let constants5;
   let intl;
   let intl2;
   let intl3;
@@ -344,7 +56,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
   let obj4;
   let obj6;
   let tmp = closure_13();
-  let obj = canSeePushNotificationNudge(13778);
+  let obj = canSeePushNotificationNudge(13925);
   canSeePushNotificationNudge = obj.useCanSeePushNotificationNudge();
   const items = [canSeePushNotificationNudge];
   const effect = react.useEffect(() => {
@@ -361,28 +73,24 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notification
     obj3 = { border: "none", shadow: "none", children: closure_12(View, obj4) };
     obj4 = { style: tmp.cardContent, children: items1 };
     const obj5 = { style: tmp.iconCircle, children: closure_11(BellSlashIcon, obj6) };
-    Card = tmp2(6965).Card;
+    Card = tmp2(6971).Card;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-    BellSlashIcon = tmp2(10948).BellSlashIcon;
+    BellSlashIcon = tmp2(10973).BellSlashIcon;
     items1 = [closure_11(View, obj5), , , ];
-    const obj7 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1125).t.MUwOvc) };
-    const Text = tmp2(5271).Text;
-    intl = tmp2(1125).intl;
+    const obj7 = { variant: "heading-lg/bold", color: "text-default", children: intl.string(canSeePushNotificationNudge(1114).t.MUwOvc) };
+    const Text = tmp2(5619).Text;
+    intl = tmp2(1114).intl;
     items1[1] = closure_11(Text, obj7);
-    const obj8 = { variant: "text-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1125).t.G4uKoe) };
-    const Text2 = tmp2(5271).Text;
-    intl2 = tmp2(1125).intl;
+    const obj8 = { variant: "text-sm/medium", style: tmp.body, color: "text-muted", children: intl2.string(canSeePushNotificationNudge(1114).t.G4uKoe) };
+    const Text2 = tmp2(5619).Text;
+    intl2 = tmp2(1114).intl;
     items1[2] = closure_11(Text2, obj8);
     const obj9 = { style: { alignSelf: "stretch" }, children: closure_11(Button, obj10) };
-    obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1125).t["5xWOXv"]), onPress: tmp6 };
-    Button = tmp2(5281).Button;
-    intl3 = tmp2(1125).intl;
+    obj10 = { variant: "primary", text: intl3.string(canSeePushNotificationNudge(1114).t["5xWOXv"]), onPress: tmp6 };
+    Button = tmp2(5629).Button;
+    intl3 = tmp2(1114).intl;
     items1[3] = closure_11(View, obj9);
     tmp7 = closure_11(View, obj2);
   }
   return tmp7;
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/user_settings/notifications/native/NotificationPermissionSettingsHeader.tsx");
-
-export default tmp6;
+};

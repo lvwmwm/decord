@@ -1,52 +1,50 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12757
+// Function ID: 12758
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5006, 10822, 12396, 10482, 21, 587, 5005, 1125, 3864, 558, 576, 5289, 8012, 10481, 12607, 10930, 12397, 1381, 12609, 12608, 12398, 12611, 12288, 12445, 12260, 12290, 504, 12576, 12360, 12614, 10715, 12361, 12374, 12616, 5247, 12309, 12618, 12476, 12619, 5718, 12621, 9827, 10785, 12624, 5071, 12630, 5271, 2]
+// Dependencies: [5, 32, 19, 17, 5010, 10845, 12546, 10507, 21, 575, 5009, 1114, 3865, 5591, 10506, 8018, 12758, 10955, 12547, 1376, 12760, 12759, 12548, 12762, 12451, 12599, 12421, 12453, 504, 12726, 11080, 12765, 10738, 11081, 12524, 11151, 5253, 12470, 12767, 12628, 12768, 5724, 12770, 9853, 10808, 12773, 5075, 12779, 5619, 2]
 // Exports: default
 
-// Module 12606 (ConjureNativeComposer)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import useToken from "useToken" /* 5289 */;
-import SendMessageIcon from "SendMessageIcon" /* 5718 */;
-import ImageCarousel from "ImageCarousel" /* 10481 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10482 */;
-import MusicIcon from "MusicIcon" /* 10715 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10785 */;
-import conjureStoredAttachments2 from "conjureStoredAttachments" /* 12288 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 12309 */;
-import FileUpIcon from "FileUpIcon" /* 12374 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12397 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12398 */;
-import conjureMentions from "conjureMentions" /* 12445 */;
-import StopIcon from "StopIcon" /* 12476 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 12576 */;
-import conjureComposerPills from "conjureComposerPills" /* 12607 */;
-import ChatInputParser from "ChatInputParser" /* 12608 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12609 */;
-import ImagesIcon from "ImagesIcon" /* 12614 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 12616 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12618 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12619 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12621 */;
+// Module 12757 (ConjureNativeComposer)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import useToken from "useToken" /* 5591 */;
+import SendMessageIcon from "SendMessageIcon" /* 5724 */;
+import ImageCarousel from "ImageCarousel" /* 10506 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10507 */;
+import MusicIcon from "MusicIcon" /* 10738 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10808 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11151 */;
+import conjureStoredAttachments2 from "conjureStoredAttachments" /* 12451 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 12470 */;
+import FileUpIcon from "FileUpIcon" /* 12524 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12547 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12548 */;
+import conjureMentions from "conjureMentions" /* 12599 */;
+import StopIcon from "StopIcon" /* 12628 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 12726 */;
+import conjureComposerPills from "conjureComposerPills" /* 12758 */;
+import ChatInputParser from "ChatInputParser" /* 12759 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12760 */;
+import ImagesIcon from "ImagesIcon" /* 12765 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12767 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12768 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12770 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10822 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12396 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10845 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12546 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureModelSettingsSheetDefault = ConjureModelSettingsSheet;
-let arr, c1, closure_1, closure_2, map, nativeEvent, set, types;
+let arr, c1, closure_1, closure_19, closure_2, map, nativeEvent, set, types;
 
 let StyleSheet;
 let closure_12;
@@ -71,23 +69,62 @@ let size;
 function trailingItemKey(key) {
   return key.key;
 }
-function draftAccessibilityLabel(draft) {
+function ConjureNativeDraftTile(draft) {
+  let WarningIcon;
+  let contentType;
+  let contentType2;
   let formatToPlainStringResult;
-  if ("uploading" === draft.status) {
-    const intl3 = intl5.intl;
-    const obj3 = { name: draft.name };
-    formatToPlainStringResult = intl3.formatToPlainString(_modDef3864.MWTYwv, obj3);
-  } else if (null != draft.errorText) {
-    const intl2 = intl5.intl;
-    const obj5 = { name: null, error: null };
-    ({ name: obj2.name, errorText: obj2.error } = draft);
-    formatToPlainStringResult = intl2.formatToPlainString(_modDef3864.U2WbGx, obj5);
-  } else {
-    const intl = intl5.intl;
-    const obj = { name: draft.name };
-    formatToPlainStringResult = intl.formatToPlainString(intl5.t.MJHFt9, obj);
+  let intl4;
+  let obj10;
+  let obj20;
+  let obj8;
+  let str;
+  let tmp7Result;
+  draft = draft.draft;
+  const onRemove = draft.onRemove;
+  const tmp = closure_16();
+  const items = [onRemove, draft.localId];
+  const obj = useToken;
+  const token = obj.useToken(nativeDefault.colors.TEXT_OVERLAY_LIGHT);
+  const callback = react.useCallback(() => onRemove(draft.localId), items);
+  const obj3 = { itemKey: String(draft.localId), uri: str, fileName: null, isImage: contentType.startsWith("image/"), isVideo: contentType2.startsWith("video/"), accessibilityLabel: formatToPlainStringResult, removeAccessibilityLabel: intl4.formatToPlainString(intl5.t.FxKgb3, obj8), onRemove: callback, children: tmp7Result };
+  const ImageCarouselTile = ImageCarousel.ImageCarouselTile;
+  str = draft.previewUrl;
+  if (str == null) {
+    str = "";
   }
-  return formatToPlainStringResult;
+  ({ name: obj2.fileName, contentType } = draft);
+  contentType2 = draft.contentType;
+  if ("uploading" === draft.status) {
+    const intl3 = tmp2(1114).intl;
+    const obj5 = { name: draft.name };
+    formatToPlainStringResult = intl3.formatToPlainString(tmp4(3865).MWTYwv, obj5);
+  } else if (null != draft.errorText) {
+    const intl2 = tmp2(1114).intl;
+    const obj6 = { name: null, error: null };
+    ({ name: obj4.name, errorText: obj4.error } = draft);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp4(3865).U2WbGx, obj6);
+  } else {
+    const intl = tmp2(1114).intl;
+    const obj7 = { name: draft.name };
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1114).t.MJHFt9, obj7);
+  }
+  intl4 = tmp2(1114).intl;
+  obj8 = { name: draft.name };
+  if ("uploading" === draft.status) {
+    const obj9 = { style: tmp.draftOverlay, children: authStore2(metroRequire, obj10) };
+    obj10 = { size: "small", color: token };
+    tmp7Result = tmp7(metroImportAll, obj9);
+  } else {
+    tmp7Result = null;
+    if ("error" === draft.status) {
+      const obj19 = { style: tmp.draftOverlay, children: authStore2(WarningIcon, obj20) };
+      obj20 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
+      WarningIcon = tmp2(8018).WarningIcon;
+      tmp7Result = tmp7(metroImportAll, obj19);
+    }
+  }
+  return authStore2(ImageCarouselTile, obj3);
 }
 ({ ActivityIndicator: metroRequire, Pressable: metroImportDefault, View: metroImportAll, StyleSheet } = react_native);
 const IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING = ImageCarouselConstants.IMAGE_CAROUSEL_TILE_CLOSE_BUTTON_PADDING;
@@ -115,181 +152,7 @@ obj13 = { backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BA
 obj14 = { tintColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT };
 obj15 = { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND };
 let closure_16 = createStyles(obj3);
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureNativeDraftTile(draft) {
-  let WarningIcon;
-  let obj6;
-  let obj8;
-  const obj = react2;
-  const cResult = obj.c(25);
-  draft = draft.draft;
-  const onRemove = draft.onRemove;
-  const tmp4 = closure_16();
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.colors.TEXT_OVERLAY_LIGHT);
-  if (cResult[0] === draft.localId) {
-    let tmp7;
-    let tmp11;
-    let tmp13;
-    let tmp15;
-    let tmp18;
-    let tmp21;
-    if (cResult[1] === onRemove) {
-      tmp7 = cResult[2];
-    }
-    const _String = String;
-    const StringResult = String(draft.localId);
-    let str = draft.previewUrl;
-    if (str == null) {
-      str = "";
-    }
-    const name = draft.name;
-    if (cResult[3] !== draft.contentType) {
-      const contentType = draft.contentType;
-      const startsWithResult = contentType.startsWith("image/");
-      cResult[3] = draft.contentType;
-      cResult[4] = startsWithResult;
-      tmp11 = startsWithResult;
-    } else {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] !== draft.contentType) {
-      const contentType2 = draft.contentType;
-      const startsWithResult1 = contentType2.startsWith("video/");
-      cResult[5] = draft.contentType;
-      cResult[6] = startsWithResult1;
-      tmp13 = startsWithResult1;
-    } else {
-      tmp13 = cResult[6];
-    }
-    if (cResult[7] !== draft) {
-      const tmp17 = draftAccessibilityLabel(draft);
-      cResult[7] = draft;
-      cResult[8] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[8];
-    }
-    if (cResult[9] !== draft.name) {
-      const intl = tmp(1125).intl;
-      const obj3 = { name: draft.name };
-      const formatToPlainStringResult = intl.formatToPlainString(intl5.t.FxKgb3, obj3);
-      cResult[9] = draft.name;
-      cResult[10] = formatToPlainStringResult;
-      tmp18 = formatToPlainStringResult;
-    } else {
-      tmp18 = cResult[10];
-    }
-    if (cResult[11] === draft.status) {
-      if (cResult[12] === token) {
-        let tmp20;
-        if (cResult[13] === tmp4) {
-          tmp20 = cResult[14];
-        }
-        if (cResult[15] === draft.name) {
-          if (cResult[16] === tmp7) {
-            if (cResult[17] === StringResult) {
-              if (cResult[18] === str) {
-                if (cResult[19] === tmp11) {
-                  if (cResult[20] === tmp13) {
-                    if (cResult[21] === tmp15) {
-                      if (cResult[22] === tmp18) {
-                        let tmp27;
-                        if (cResult[23] === tmp20) {
-                          tmp27 = cResult[24];
-                        }
-                        return tmp27;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        const obj4 = { itemKey: StringResult, uri: str, fileName: name, isImage: tmp11, isVideo: tmp13, accessibilityLabel: tmp15, removeAccessibilityLabel: tmp18, onRemove: tmp7, children: tmp20 };
-        const tmp29 = authStore2(ImageCarousel.ImageCarouselTile, obj4);
-        cResult[15] = draft.name;
-        cResult[16] = tmp7;
-        cResult[17] = StringResult;
-        cResult[18] = str;
-        cResult[19] = tmp11;
-        cResult[20] = tmp13;
-        cResult[21] = tmp15;
-        cResult[22] = tmp18;
-        cResult[23] = tmp20;
-        cResult[24] = tmp29;
-        tmp27 = tmp29;
-      }
-    }
-    if ("uploading" === draft.status) {
-      const obj5 = { style: tmp4.draftOverlay, children: authStore2(metroRequire, obj6) };
-      obj6 = { size: "small", color: token };
-      tmp21 = authStore2(metroImportAll, obj5);
-    } else {
-      tmp21 = null;
-      if ("error" === draft.status) {
-        const obj7 = { style: tmp4.draftOverlay, children: authStore2(WarningIcon, obj8) };
-        obj8 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        WarningIcon = tmp(8012).WarningIcon;
-        tmp21 = authStore2(metroImportAll, obj7);
-      }
-    }
-    cResult[11] = draft.status;
-    cResult[12] = token;
-    cResult[13] = tmp4;
-    cResult[14] = tmp21;
-    tmp20 = tmp21;
-  }
-  const fn = function n() {
-    return onRemove(draft.localId);
-  };
-  cResult[0] = draft.localId;
-  cResult[1] = onRemove;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : (function ConjureNativeDraftTile(draft) {
-  let WarningIcon;
-  let contentType;
-  let contentType2;
-  let intl;
-  let obj13;
-  let obj4;
-  let obj6;
-  let str;
-  let tmp7Result;
-  draft = draft.draft;
-  const onRemove = draft.onRemove;
-  const tmp = closure_16();
-  const items = [onRemove, draft.localId];
-  const obj = useToken;
-  const token = obj.useToken(nativeDefault.colors.TEXT_OVERLAY_LIGHT);
-  const callback = react.useCallback(() => onRemove(draft.localId), items);
-  const obj3 = { itemKey: String(draft.localId), uri: str, fileName: null, isImage: contentType.startsWith("image/"), isVideo: contentType2.startsWith("video/"), accessibilityLabel: draftAccessibilityLabel(draft), removeAccessibilityLabel: intl.formatToPlainString(intl5.t.FxKgb3, obj4), onRemove: callback, children: tmp7Result };
-  const ImageCarouselTile = ImageCarousel.ImageCarouselTile;
-  str = draft.previewUrl;
-  if (str == null) {
-    str = "";
-  }
-  ({ name: obj2.fileName, contentType } = draft);
-  contentType2 = draft.contentType;
-  intl = tmp2(1125).intl;
-  obj4 = { name: draft.name };
-  if ("uploading" === draft.status) {
-    const obj5 = { style: tmp.draftOverlay, children: authStore2(metroRequire, obj6) };
-    obj6 = { size: "small", color: token };
-    tmp7Result = tmp7(metroImportAll, obj5);
-  } else {
-    tmp7Result = null;
-    if ("error" === draft.status) {
-      const obj7 = { style: tmp.draftOverlay, children: authStore2(WarningIcon, obj13) };
-      obj13 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      WarningIcon = tmp2(8012).WarningIcon;
-      tmp7Result = tmp7(metroImportAll, obj7);
-    }
-  }
-  return authStore2(ImageCarouselTile, obj3);
-});
-let c20 = 1;
+let c19 = 1;
 size = size_mod;
 let result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureNativeComposer.tsx");
 
@@ -402,7 +265,7 @@ export default function ConjureNativeComposer(projectId) {
   str = tmp4[0];
   closure_14 = tmp4[1];
   let tmp5 = projectId;
-  let obj2 = projectId(onSend[19]);
+  let obj2 = projectId(onSend[17]);
   const conjureLinkPrefetch = obj2.useConjureLinkPrefetch(str);
   closure_15 = flag2.useRef(first.pills);
   flag2.useRef(str);
@@ -475,7 +338,7 @@ export default function ConjureNativeComposer(projectId) {
       obj.blur(ref.current);
     }
   }, items5);
-  const tmp5Result = tmp5(onSend[24]);
+  const tmp5Result = tmp5(onSend[22]);
   conjureAttachmentDraftList = tmp5Result.useConjureAttachmentDraftList(projectId, "chat");
   const tmp2Result = tmp2(obj.useState([]), 2);
   first1 = tmp2Result[0];
@@ -544,9 +407,9 @@ export default function ConjureNativeComposer(projectId) {
     }
     tmp5(end);
   }, items9);
-  const tmp35 = running(onSend[25])(projectId);
+  const tmp35 = running(onSend[23])(projectId);
   closure_31 = tmp35;
-  const tmp5Result9 = tmp5(onSend[26]);
+  const tmp5Result9 = tmp5(onSend[24]);
   conjureStoredAttachments = tmp5Result9.useConjureStoredAttachments(projectId);
   const items10 = [str, first2, canSend, flag2, tmp];
   memo1 = obj.useMemo(() => {
@@ -606,19 +469,19 @@ export default function ConjureNativeComposer(projectId) {
         combined = "<file:" + kind.file.id + ">";
       }
       if ("user" === kind.kind) {
-        const obj = projectId(onSend[18]);
+        const obj = projectId(onSend[16]);
         name = obj.conjureUserPillLabel(kind.user.id);
       } else {
         name = kind.file.name;
       }
-      const obj2 = projectId(onSend[18]);
+      const obj2 = projectId(onSend[16]);
       const conjurePillTextResult = obj2.conjurePillText(current, name, combined);
       running = conjurePillTextResult;
       const obj3 = { raw: combined, icon: conjureFilePillIconResult };
       conjureFilePillIconResult = null;
       set = current.set;
       if ("user" !== kind.kind) {
-        const obj4 = projectId(onSend[18]);
+        const obj4 = projectId(onSend[16]);
         conjureFilePillIconResult = obj4.conjureFilePillIcon();
       }
       const result = set(conjurePillTextResult, obj3);
@@ -629,18 +492,18 @@ export default function ConjureNativeComposer(projectId) {
       const sum2 = tmp.start + combined1.length;
       callback(sum1);
       closure_30(sum2);
-      const obj5 = running(onSend[22]);
+      const obj5 = running(onSend[20]);
       obj5.setText(ref.current, sum1);
-      const obj6 = running(onSend[22]);
+      const obj6 = running(onSend[20]);
       obj6.setSelectedRange(ref.current, sum2, 0);
       callback1(sum1);
       let hasItem = "file" === kind.kind;
       if (hasItem) {
-        const CONJURE_VIEWABLE_IMAGE_TYPES = projectId(onSend[28]).CONJURE_VIEWABLE_IMAGE_TYPES;
+        const CONJURE_VIEWABLE_IMAGE_TYPES = projectId(onSend[26]).CONJURE_VIEWABLE_IMAGE_TYPES;
         hasItem = CONJURE_VIEWABLE_IMAGE_TYPES.has(kind.file.content_type);
       }
       if (hasItem) {
-        const obj7 = projectId(onSend[29]);
+        const obj7 = projectId(onSend[27]);
         const attachmentUrl = obj7.getAttachmentUrl(current, kind.file.id);
         attachmentUrl.then((icon) => {
           const value = current.get(running);
@@ -654,16 +517,16 @@ export default function ConjureNativeComposer(projectId) {
       }
     }
   }, items13);
-  const tmp5Result10 = tmp5(onSend[15]);
+  const tmp5Result10 = tmp5(onSend[13]);
   const token = tmp5Result10.useToken(tmp34(tmp6[9]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
-  const tmp5Result11 = tmp5(onSend[15]);
+  const tmp5Result11 = tmp5(onSend[13]);
   const token1 = tmp5Result11.useToken(tmp34(tmp6[9]).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
-  const tmp5Result12 = tmp5(onSend[15]);
+  const tmp5Result12 = tmp5(onSend[13]);
   const token2 = tmp5Result12.useToken(tmp34(tmp6[9]).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-  const tmp5Result13 = tmp5(onSend[15]);
+  const tmp5Result13 = tmp5(onSend[13]);
   const token3 = tmp5Result13.useToken(tmp34(tmp6[9]).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   const items14 = [focusRequest];
-  const tmp5Result14 = tmp5(onSend[30]);
+  const tmp5Result14 = tmp5(onSend[28]);
   const stateFromStores = tmp5Result14.useStateFromStores(items14, () => focusRequest.useReducedMotion);
   const bound = Math.max(0, (token1 - token) / 2);
   const bound1 = Math.min(closure_14, Math.max(0, (token - 20) / 2));
@@ -689,16 +552,16 @@ export default function ConjureNativeComposer(projectId) {
       } else {
         let tmp = projectId;
         let tmp2 = onSend;
-        let obj = projectId(onSend[24]);
+        let obj = projectId(onSend[22]);
         let tmp3 = substr;
         length = obj.getConjureAttachmentDrafts(substr, "chat").length;
       }
-      const diff = projectId(onSend[28]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE - length;
+      const diff = projectId(onSend[26]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE - length;
       substr = arr;
       if (arr.length > diff) {
         const intl = projectId(onSend[11]).intl;
         const formatToPlainString = intl.formatToPlainString;
-        let obj2 = { count: projectId(onSend[28]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
+        let obj2 = { count: projectId(onSend[26]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE };
         const Q0aCVZ = running(onSend[12]).Q0aCVZ;
         _undefined3(formatToPlainString(Q0aCVZ, obj2));
         const _Math = Math;
@@ -713,15 +576,15 @@ export default function ConjureNativeComposer(projectId) {
             ...arg0,
             ...substr.map((file) => {
               let result;
-              const obj = { localId: +closure_20, file, errorText: result };
-              closure_20 = tmp + 1;
+              const obj = { localId: +closure_19, file, errorText: result };
+              closure_19 = tmp + 1;
               result = undefined;
               if (null != file.size) {
-                const obj2 = substr(closure_1_2[28]);
+                const obj2 = substr(closure_1_2[26]);
                 const tmp3 = substr;
                 const tmp4 = closure_1_2;
                 if (!obj2.isConjureAttachmentWithinLimit(file.size, file.contentType)) {
-                  const tmp3Result = tmp3(tmp4[24]);
+                  const tmp3Result = tmp3(tmp4[22]);
                   result = tmp3Result.conjureAttachmentTooLargeText(file.contentType);
                 }
               }
@@ -739,21 +602,21 @@ export default function ConjureNativeComposer(projectId) {
           let obj = { name: name.name, contentType: name.contentType, previewUrl: name.uri };
           if (null != name.size) {
             let obj3;
-            const obj2 = substr(onSend[28]);
+            const obj2 = substr(onSend[26]);
             const tmp = substr;
             const tmp2 = onSend;
             if (!obj2.isConjureAttachmentWithinLimit(name.size, name.contentType)) {
               obj3 = { draft: obj4 };
               obj4 = { status: "error", errorText: tmpResult.conjureAttachmentTooLargeText(name.contentType) };
               const merged = Object.assign(obj);
-              tmpResult = tmp(tmp2[24]);
+              tmpResult = tmp(tmp2[22]);
             }
             return obj3;
           }
           const obj5 = {
             draft: obj6,
             upload() {
-              const obj = projectId(onSend[31]);
+              const obj = projectId(onSend[29]);
               return obj.uploadConjurePickedFile(substr, name);
             }
           };
@@ -761,7 +624,7 @@ export default function ConjureNativeComposer(projectId) {
           const merged1 = Object.assign(obj);
           obj3 = obj5;
         });
-        let obj3 = projectId(onSend[24]);
+        let obj3 = projectId(onSend[22]);
         let result = obj3.addConjureAttachmentDrafts(substr, "chat", mapped);
       }
     }
@@ -791,7 +654,7 @@ export default function ConjureNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -807,9 +670,9 @@ export default function ConjureNativeComposer(projectId) {
           } else {
             projectId = callback6;
             c1 = 1;
-            const obj2 = projectId(onSend[31]);
+            const obj2 = projectId(onSend[29]);
             onSend = 1;
-            const obj5 = { value: obj2.pickConjurePhotos("mixed", projectId(onSend[28]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE), done: false };
+            const obj5 = { value: obj2.pickConjurePhotos("mixed", projectId(onSend[26]).CONJURE_MAX_ATTACHMENTS_PER_MESSAGE), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -822,7 +685,7 @@ export default function ConjureNativeComposer(projectId) {
         } else {
           projectId(value);
           onSend = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         onSend = 3;
@@ -863,7 +726,7 @@ export default function ConjureNativeComposer(projectId) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -879,7 +742,7 @@ export default function ConjureNativeComposer(projectId) {
               closure_2 = tmp4;
               closure_1 = tmp;
               types = undefined;
-              let obj2 = types(onSend[32]);
+              let obj2 = types(onSend[30]);
               c3 = 1;
               c4 = 1;
               const obj5 = { pickMultiple: true, types };
@@ -900,7 +763,7 @@ export default function ConjureNativeComposer(projectId) {
                 let obj2;
                 const obj = { uri: uri.uri, name: obj2.pickedName(uri.uri, uri.name), contentType: str, size };
                 str = uri.type;
-                obj2 = types(closure_1_2[31]);
+                obj2 = types(closure_1_2[29]);
                 if (str == null) {
                   str = "application/octet-stream";
                 }
@@ -912,7 +775,7 @@ export default function ConjureNativeComposer(projectId) {
               }));
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -929,9 +792,9 @@ export default function ConjureNativeComposer(projectId) {
   callback10 = obj.useCallback(() => {
     const current = ref.current;
     if (onSendToOtherProjects != null) {
-      const withConjureMentionNames = projectId(onSend[27]).withConjureMentionNames;
-      const tmp4 = projectId(onSend[27]);
-      let obj = projectId(onSend[18]);
+      const withConjureMentionNames = projectId(onSend[25]).withConjureMentionNames;
+      const tmp4 = projectId(onSend[25]);
+      let obj = projectId(onSend[16]);
       tmp(withConjureMentionNames(obj.encodeConjurePills(current, closure_15.current)), function() {
         if (ref.current === current) {
           const _Map = Map;
@@ -953,21 +816,21 @@ export default function ConjureNativeComposer(projectId) {
     let intl3;
     let intl4;
     let items2;
-    const obj = { label: intl.string(_modDef3864["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback7 };
+    const obj = { label: intl.string(_modDef3865["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback7 };
     intl = intl5.intl;
     let items = [obj, , ];
     const obj2 = {
-      label: intl2.string(_modDef3864["10ljr2"]),
+      label: intl2.string(_modDef3865["10ljr2"]),
       IconComponent: MusicIcon.MusicIcon,
       action() {
-        const items = [projectId(onSend[35]).types.audio];
+        const items = [projectId(onSend[33]).types.audio];
         return callback9(items);
       }
     };
     intl2 = intl5.intl;
     items[1] = obj2;
     const obj3 = {
-      label: intl3.string(_modDef3864.aotDee),
+      label: intl3.string(_modDef3865.aotDee),
       IconComponent: FileUpIcon.FileUpIcon,
       action() {
         return callback9();
@@ -976,8 +839,8 @@ export default function ConjureNativeComposer(projectId) {
     intl3 = intl5.intl;
     items[2] = obj3;
     if (null != onSendToOtherProjects) {
-      const obj4 = { label: intl4.string(_modDef3864["5HmLrK"]), IconComponent: ChatArrowRightIcon.ChatArrowRightIcon, action: callback10 };
-      intl4 = tmp2(1125).intl;
+      const obj4 = { label: intl4.string(_modDef3865["5HmLrK"]), IconComponent: ChatArrowRightIcon.ChatArrowRightIcon, action: callback10 };
+      intl4 = tmp2(1114).intl;
       const items1 = [obj4];
       items2 = items1;
     } else {
@@ -1018,7 +881,7 @@ export default function ConjureNativeComposer(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1034,12 +897,12 @@ export default function ConjureNativeComposer(projectId) {
           } else {
             const tmp27 = sendable;
             if (tmp27) {
-              const obj2 = tmp3(onSend[18]);
+              const obj2 = tmp3(onSend[16]);
               const encodeConjurePillsResult = obj2.encodeConjurePills(str, ref.current);
               const tmp10 = onSend;
               const tmp9 = tmp3;
               if (null == onSendFiles) {
-                const tmp9Result = tmp9(tmp10[24]);
+                const tmp9Result = tmp9(tmp10[22]);
                 const result = tmp9Result.takeConjureAttachmentRefs(projectId, "chat");
                 if (onSend != null) {
                   let tmp19;
@@ -1069,7 +932,7 @@ export default function ConjureNativeComposer(projectId) {
           closure_128_43();
         }
         onSend = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp23) {
         onSend = 3;
         throw tmp23;
@@ -1078,7 +941,7 @@ export default function ConjureNativeComposer(projectId) {
   }), items23);
   const items24 = [blurRequest];
   const items25 = [projectId];
-  const tmp5Result15 = tmp5(onSend[30]);
+  const tmp5Result15 = tmp5(onSend[28]);
   stateFromStores1 = tmp5Result15.useStateFromStores(items24, () => {
     const modelSettings = ConjureModelSettingsStore.getModelSettings(projectId);
     let tierSettings;
@@ -1096,7 +959,7 @@ export default function ConjureNativeComposer(projectId) {
     obj2 = { projectId };
     showActionSheet(obj);
   }, items26);
-  const tmp5Result16 = tmp5(onSend[15]);
+  const tmp5Result16 = tmp5(onSend[13]);
   token4 = tmp5Result16.useToken(tmp34(tmp6[9]).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT);
   const items27 = [sending, tmp60, running, stateFromStores1, canSend && tmp60 && everyResult];
   const memo4 = obj.useMemo(() => {
@@ -1137,12 +1000,12 @@ export default function ConjureNativeComposer(projectId) {
       obj3 = { size: "small", color: token4 };
       tmp14 = authStore2(metroImportAll, obj2);
     } else if ("stop" === key.key) {
-      const obj4 = { style: closure_35.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef3864.wiguT0) };
+      const obj4 = { style: closure_35.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef3865.wiguT0) };
       const tmp18 = ChatInputActionButtonDefault;
       intl2 = intl5.intl;
       tmp14 = authStore2(tmp18, obj4);
     } else if ("models" === key.key) {
-      const obj = { style: closure_35.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback13, disabled: !canSend, accessibilityLabel: intl.string(_modDef3864["3E7Yc0"]) };
+      const obj = { style: closure_35.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback13, disabled: !canSend, accessibilityLabel: intl.string(_modDef3865["3E7Yc0"]) };
       const tmp4 = ChatInputActionButtonDefault;
       intl = intl5.intl;
       tmp14 = authStore2(tmp4, obj);
@@ -1174,7 +1037,7 @@ export default function ConjureNativeComposer(projectId) {
   if (undefined === stackedAccessory) {
     num3 = bound;
   }
-  let obj3 = { style: { paddingBottom: num3 }, children: closure_12(tmp5(tmp6[45]).ContextMenu, obj4) };
+  let obj3 = { style: { paddingBottom: num3 }, children: closure_12(tmp5(tmp6[43]).ContextMenu, obj4) };
   obj4 = {
     items: memo3,
     align: "above",
@@ -1184,7 +1047,7 @@ export default function ConjureNativeComposer(projectId) {
       let onAccessibilityAction;
       let onPress;
       ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef3864.hFS71Z), accessibilityActions, onAccessibilityAction };
+      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef3865.hFS71Z), accessibilityActions, onAccessibilityAction };
       const tmp = ChatInputActionButtonDefault;
       intl = intl5.intl;
       return authStore2(tmp, obj);
@@ -1201,7 +1064,7 @@ export default function ConjureNativeComposer(projectId) {
   items30[1] = { marginBottom: num4, height: bound2 };
   obj6 = { style: { height: minResult }, children: closure_12(tmp34Result, obj7) };
   obj7 = { ref, editable: canSend, shouldShowCursor: true, maxHeight: 120, verticalInset: bound1, placeholder, accessibilityLabel: intl2.string(tmp34(tmp6[12]).ldNl9x), onBeginFocus: callback16, onEndBlur: callback17, onChangeContentSize: callback3, onSelectionOrTextChange: callback4, onPasteImage: callback8 };
-  tmp34Result = running(onSend[47]);
+  tmp34Result = running(onSend[45]);
   if (placeholder == null) {
     let zZ9NgM;
     let intl = tmp5(tmp6[11]).intl;
@@ -1226,18 +1089,18 @@ export default function ConjureNativeComposer(projectId) {
     callback14Result = callback14(memo4[0]);
   } else {
     let obj9 = { items: memo4, renderItem: callback15, getItemKey };
-    callback14Result = tmp74(tmp5(tmp6[48]).TransitionGroup, obj9);
+    callback14Result = tmp74(tmp5(tmp6[46]).TransitionGroup, obj9);
   }
   const tmp74Result6 = closure_12(sending, obj8);
   const items32 = [tmp51.container, ];
   const obj10 = { style: items32, children: items33 };
   const tmp85 = undefined !== stackedAccessory && !tmp73 && tmp51.containerFlushTop;
   items32[1] = tmp85;
-  items33 = [closure_12(tmp34(tmp6[49]), { projectId, suggestions: memo2, onSelect: callback5 }), , , , ];
+  items33 = [closure_12(tmp34(tmp6[47]), { projectId, suggestions: memo2, onSelect: callback5 }), , , , ];
   let tmp74Result7 = null;
   if (null != tmp26) {
     const obj11 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp26 };
-    tmp74Result7 = tmp74(tmp5(tmp6[50]).Text, obj11);
+    tmp74Result7 = tmp74(tmp5(tmp6[48]).Text, obj11);
   }
   items33[1] = tmp74Result7;
   items33[2] = memo.map((errorText) => {
@@ -1246,7 +1109,7 @@ export default function ConjureNativeComposer(projectId) {
     let tmp = null;
     if (null != errorText.errorText) {
       const obj = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: intl.formatToPlainString(running(onSend[12]).U2WbGx, obj3) };
-      const Text = projectId(onSend[50]).Text;
+      const Text = projectId(onSend[48]).Text;
       intl = projectId(onSend[11]).intl;
       obj3 = { name: null, error: null };
       ({ name: obj2.name, errorText: obj2.error } = errorText);
@@ -1261,10 +1124,10 @@ export default function ConjureNativeComposer(projectId) {
       style: tmp51.draftCarousel,
       children: memo.map((draft) => {
           const obj = { draft, onRemove };
-          return authStore2(closure_19, obj, draft.localId);
+          return authStore2(ConjureNativeDraftTile, obj, draft.localId);
         })
     };
-    const ImageCarouselRow = tmp5(tmp6[17]).ImageCarouselRow;
+    const ImageCarouselRow = tmp5(tmp6[14]).ImageCarouselRow;
     tmp74Result8 = tmp74(ImageCarouselRow, obj12);
   }
   items33[3] = tmp74Result8;

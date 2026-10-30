@@ -1,17 +1,7 @@
 // Module ID: 16076
 // Function ID: 16077
-// Dependencies: [16051]
+// Dependencies: []
 
 // Module 16076
-import _mod16051 from "module_16051" /* 16051 */;
 
-let fn;
-if (_mod16051) {
-  fn = call.bind(call);
-} else {
-  fn = function() {
-    return call(...arguments);
-  };
-}
-
-export default fn;
+export const units = ["degree", "acre", "hectare", "percent", "bit", "byte", "gigabit", "gigabyte", "kilobit", "kilobyte", "megabit", "megabyte", "petabyte", "terabit", "terabyte", "day", "hour", "millisecond", "minute", "month", "second", "week", "year", "centimeter", "foot", "inch", "kilometer", "meter", "mile-scandinavian", "mile", "millimeter", "yard", "gram", "kilogram", "ounce", "pound", "stone", "celsius", "fahrenheit", "fluid-ounce", "gallon", "liter", "milliliter"];

@@ -1,10 +1,10 @@
 // Module ID: 6683
 // Function ID: 6684
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 6683 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "18bf95267062a719213a10081e62b607", name: "img_amazon_music", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 500, height: 500, scales: [1], hash: "df9cdfb6f7f1a0f370383360cce3dd97", name: "img_account_sync_crunchyroll_light_and_dark", type: "png" });

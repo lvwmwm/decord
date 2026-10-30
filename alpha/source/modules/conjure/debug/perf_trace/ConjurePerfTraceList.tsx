@@ -1,16 +1,16 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12973
+// Function ID: 12974
 // Name: ConjurePerfTraceList
 // Dependencies: [2]
 // Exports: filterPerfTraces, perfTraceExport
 
-// Module 12822 (ConjurePerfTraceList)
+// Module 12973 (ConjurePerfTraceList)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/ConjurePerfTraceList.tsx");
 
-export function filterPerfTraces(stateFromStoresArray, first1) {
-  let str = first1.trim();
+export function filterPerfTraces(stateFromStoresArray, str) {
+  str = str.trim();
   const formatted = str.toLowerCase();
   let found = stateFromStoresArray;
   if ("" !== formatted) {

@@ -1,10 +1,10 @@
-// Module ID: 4835
-// Function ID: 4836
+// Module ID: 4836
+// Function ID: 4837
 // Name: DMSafetyConstants
-// Dependencies: [1208, 2]
+// Dependencies: [1197, 2]
 
-// Module 4835 (DMSafetyConstants)
-import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
+// Module 4836 (DMSafetyConstants)
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
 import size from "module_2" /* 2 */;
 
 const obj = { DISABLED: 0, [0]: "DISABLED", NON_FRIENDS: 1, [1]: "NON_FRIENDS", FRIENDS_AND_NON_FRIENDS: 2, [2]: "FRIENDS_AND_NON_FRIENDS" };

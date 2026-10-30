@@ -1,27 +1,25 @@
-// Module ID: 9729
-// Function ID: 9730
+// Module ID: 9755
+// Function ID: 9756
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7462, 502, 4857, 7689, 6049, 7818, 1124, 1084, 5010, 558, 7429, 7812, 7441, 576, 1125, 9730, 11, 1294, 8358, 9731, 7814, 1402, 8201, 9733, 8343, 5749, 7624, 5946, 584, 5012, 1101, 10270, 14525, 2]
-// Exports: createThread
+// Dependencies: [32, 5, 19, 7470, 502, 4858, 7694, 6056, 7823, 1113, 1072, 5014, 7437, 7817, 7449, 1114, 9756, 11, 1283, 8335, 9757, 7819, 1397, 8204, 9759, 8196, 5755, 7629, 5953, 572, 5016, 1090, 10295, 14558, 2]
+// Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 9729 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import ThreadHooks from "ThreadHooks" /* 7429 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
-import DraftStore from "DraftStore" /* 7689 */;
-import MessageParserDefault from "MessageParser" /* 7812 */;
-import SlowmodeStore from "SlowmodeStore" /* 7818 */;
+// Module 9755 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import ThreadHooks from "ThreadHooks" /* 7437 */;
+import DraftStore from "DraftStore" /* 7694 */;
+import MessageParserDefault from "MessageParser" /* 7817 */;
+import SlowmodeStore from "SlowmodeStore" /* 7823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7462 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7470 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import ThreadConstants from "ThreadConstants" /* 1124 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import ThreadConstants from "ThreadConstants" /* 1113 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let andDeleteMostRecentUserCreatedThreadId, c3, c4, channel, getChannel;
@@ -105,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7441);
+    const tmp17Result = tmp17(7449);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -144,58 +142,6 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
     return text2;
   }
 }
-function buildMessageActivity(activity) {
-  let activity2;
-  let id;
-  activity = activity.activity;
-  let session_id;
-  if (activity != null) {
-    session_id = activity.session_id;
-  }
-  if (null == session_id) {
-    session_id = AuthenticationStore.getSessionId();
-  }
-  let tmp3 = null;
-  if (null != session_id) {
-    obj = { type: activity.type, session_id, target_user_id: null, party_id: id };
-    ({ targetUserId: obj.target_user_id, activity: activity2 } = activity);
-    id = undefined;
-    if (activity2 != null) {
-      const party = activity2.party;
-      if (party != null) {
-        id = party.id;
-      }
-    }
-    tmp3 = obj;
-  }
-  return tmp3;
-}
-function sendMessage(id, arg1, items, arg3, fn) {
-  if (null != fn) {
-    if (null != arg3) {
-      if (arg3.length > 0) {
-        fn(id, arg3, arg1, items);
-      }
-    }
-  }
-  if (null != items) {
-    let sendStickersResult;
-    if (items.length > 0) {
-      const id2 = id.id;
-      const sendStickers = MessageActionCreatorsDefault.sendStickers;
-      const obj2 = { location: MessageSendLocation.THREAD_CREATION };
-      const obj3 = MessageParserDefault;
-      sendStickersResult = sendStickers(id2, items, obj3.parse(id, arg1), obj2);
-    }
-    return sendStickersResult;
-  }
-  id = id.id;
-  sendMessage = MessageActionCreatorsDefault.sendMessage;
-  MessageActionCreatorsDefault;
-  obj = MessageParserDefault;
-  const obj4 = { location: MessageSendLocation.THREAD_CREATION };
-  sendStickersResult = sendMessage(id, obj.parse(id, arg1), undefined, obj4);
-}
 function createThread_() {
   return obj(...arguments);
 }
@@ -228,7 +174,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -264,20 +210,20 @@ let obj = function _createThread_() {
               }
               if (code === closure_135_14.TOO_MANY_THREADS) {
                 let string2Result;
-                self = closure_135_1(closure_135_2[30]);
+                self = closure_135_1(closure_135_2[28]);
                 const show4 = self.show;
-                const intl9 = closure_135_0(closure_135_2[17]).intl;
+                const intl9 = closure_135_0(closure_135_2[15]).intl;
                 const string2 = intl9.string;
-                const t2 = closure_135_0(closure_135_2[17]).t;
+                const t2 = closure_135_0(closure_135_2[15]).t;
                 if (closure_4) {
                   string2Result = string2(t2.vWNFkx);
                 } else {
                   string2Result = string2(t2["1KEdvB"]);
                 }
                 const obj5 = { title: string2Result, body: string3Result };
-                const intl10 = closure_135_0(closure_135_2[17]).intl;
+                const intl10 = closure_135_0(closure_135_2[15]).intl;
                 const string3 = intl10.string;
-                const t3 = closure_135_0(closure_135_2[17]).t;
+                const t3 = closure_135_0(closure_135_2[15]).t;
                 if (closure_4) {
                   string3Result = string3(t3.KGaiEK);
                 } else {
@@ -292,11 +238,11 @@ let obj = function _createThread_() {
                   code1 = body6.code;
                 }
                 if (code1 === closure_135_14.TOO_MANY_ANNOUNCEMENT_THREADS) {
-                  self = closure_135_1(closure_135_2[30]);
+                  self = closure_135_1(closure_135_2[28]);
                   const show3 = self.show;
-                  const obj6 = { title: intl7.string(closure_135_0(closure_135_2[17]).t["1KEdvB"]), body: intl8.string(closure_135_0(closure_135_2[17]).t.jDMxz2) };
-                  intl7 = closure_135_0(closure_135_2[17]).intl;
-                  intl8 = closure_135_0(closure_135_2[17]).intl;
+                  const obj6 = { title: intl7.string(closure_135_0(closure_135_2[15]).t["1KEdvB"]), body: intl8.string(closure_135_0(closure_135_2[15]).t.jDMxz2) };
+                  intl7 = closure_135_0(closure_135_2[15]).intl;
+                  intl8 = closure_135_0(closure_135_2[15]).intl;
                   show3(obj6);
                 } else {
                   const body7 = tmp166.body;
@@ -313,25 +259,25 @@ let obj = function _createThread_() {
                     }
                     analyticsLocations = c4;
                     if (analyticsLocations > 0) {
-                      self = closure_135_1(closure_135_2[31]);
+                      self = closure_135_1(closure_135_2[29]);
                       const dispatch = self.dispatch;
-                      const obj7 = { type: "SLOWMODE_SET_COOLDOWN", channelId: closure_0.id, slowmodeType: closure_135_11.CreateThread, cooldownMs: analyticsLocations * closure_135_1(closure_135_2[33]).Millis.SECOND };
+                      const obj7 = { type: "SLOWMODE_SET_COOLDOWN", channelId: closure_0.id, slowmodeType: closure_135_11.CreateThread, cooldownMs: analyticsLocations * closure_135_1(closure_135_2[31]).Millis.SECOND };
                       dispatch(obj7);
                     }
                   } else if (429 === tmp166.status) {
                     let stringResult;
-                    self = closure_135_1(closure_135_2[30]);
+                    self = closure_135_1(closure_135_2[28]);
                     const show2 = self.show;
-                    const intl5 = closure_135_0(closure_135_2[17]).intl;
+                    const intl5 = closure_135_0(closure_135_2[15]).intl;
                     const string = intl5.string;
-                    const t = closure_135_0(closure_135_2[17]).t;
+                    const t = closure_135_0(closure_135_2[15]).t;
                     if (closure_4) {
                       stringResult = string(t.vWNFkx);
                     } else {
                       stringResult = string(t["1KEdvB"]);
                     }
-                    const obj8 = { title: stringResult, body: intl6.string(closure_135_0(closure_135_2[17]).t.Whhv4w) };
-                    intl6 = closure_135_0(closure_135_2[17]).intl;
+                    const obj8 = { title: stringResult, body: intl6.string(closure_135_0(closure_135_2[15]).t.Whhv4w) };
+                    intl6 = closure_135_0(closure_135_2[15]).intl;
                     show2(obj8);
                   } else {
                     self = closure_135_12;
@@ -384,19 +330,19 @@ let obj = function _createThread_() {
                               self = body10.code;
                             }
                             if (self === closure_135_14.EXPLICIT_CONTENT) {
-                              const obj9 = closure_135_0(closure_135_2[34]);
+                              const obj9 = closure_135_0(closure_135_2[32]);
                               self = obj9.createNonce();
                               const tmp82 = null != tmp166.body.attachments && tmp166.body.attachments.length > 0;
                               if (tmp82) {
                                 const obj11 = { type: "MESSAGE_EXPLICIT_CONTENT_FP_CREATE", messageId: self, channelId: closure_0.id, attachments: tmp166.body.attachments };
-                                const obj10 = closure_135_1(closure_135_2[31]);
+                                const obj10 = closure_135_1(closure_135_2[29]);
                                 obj10.dispatch(obj11);
-                                closure_135_1(closure_135_2[35])(closure_0.id, self);
+                                closure_135_1(closure_135_2[33])(closure_0.id, self);
                               }
                             } else {
-                              self = closure_135_0(closure_135_2[26]).handleUploadMessageAttachmentsErrors;
+                              self = closure_135_0(closure_135_2[24]).handleUploadMessageAttachmentsErrors;
                               const obj12 = { file, guildId: closure_0.getGuildId(), analyticsLocations, code: code5, reason };
-                              closure_135_0(closure_135_2[26]);
+                              closure_135_0(closure_135_2[24]);
                               analyticsLocations = closure_1;
                               if (closure_1 == null) {
                                 analyticsLocations = [];
@@ -441,11 +387,11 @@ let obj = function _createThread_() {
                           };
                           return obj13;
                         } else {
-                          self = closure_135_1(closure_135_2[30]).show;
-                          const obj14 = { title: intl3.string(closure_135_0(closure_135_2[17]).t.j2d6Km), body: intl4.string(closure_135_0(closure_135_2[17]).t.fEptJP) };
-                          closure_135_1(closure_135_2[30]);
-                          intl3 = closure_135_0(closure_135_2[17]).intl;
-                          intl4 = closure_135_0(closure_135_2[17]).intl;
+                          self = closure_135_1(closure_135_2[28]).show;
+                          const obj14 = { title: intl3.string(closure_135_0(closure_135_2[15]).t.j2d6Km), body: intl4.string(closure_135_0(closure_135_2[15]).t.fEptJP) };
+                          closure_135_1(closure_135_2[28]);
+                          intl3 = closure_135_0(closure_135_2[15]).intl;
+                          intl4 = closure_135_0(closure_135_2[15]).intl;
                           self(obj14);
                         }
                       }
@@ -462,7 +408,7 @@ let obj = function _createThread_() {
                 return { value, done: true };
               } else {
                 c9 = 2;
-                self = closure_135_1(closure_135_2[29]);
+                self = closure_135_1(closure_135_2[27]);
                 c10 = 5;
                 c11 = 1;
                 const obj16 = { channelId: value.id, limit: closure_135_19 };
@@ -480,25 +426,25 @@ let obj = function _createThread_() {
               } else {
                 closure_3 = value;
                 if (null == value.body) {
-                  self = closure_135_1(closure_135_2[30]);
+                  self = closure_135_1(closure_135_2[28]);
                   const show = self.show;
-                  const obj19 = { title: intl.string(closure_135_0(closure_135_2[17]).t.j2d6Km), body: intl2.string(closure_135_0(closure_135_2[17]).t.fEptJP) };
-                  intl = closure_135_0(closure_135_2[17]).intl;
-                  intl2 = closure_135_0(closure_135_2[17]).intl;
+                  const obj19 = { title: intl.string(closure_135_0(closure_135_2[15]).t.j2d6Km), body: intl2.string(closure_135_0(closure_135_2[15]).t.fEptJP) };
+                  intl = closure_135_0(closure_135_2[15]).intl;
+                  intl2 = closure_135_0(closure_135_2[15]).intl;
                   show(obj19);
                 } else {
                   let XkUoBb;
                   const obj21 = { type: "SLOWMODE_RESET_COOLDOWN", slowmodeType: closure_135_11.CreateThread, channelId: closure_0.id };
-                  const obj20 = closure_135_1(closure_135_2[31]);
+                  const obj20 = closure_135_1(closure_135_2[29]);
                   obj20.dispatch(obj21);
                   const obj23 = { type: "THREAD_CREATE_LOCAL", channelId: closure_3.body.id };
-                  const obj22 = closure_135_1(closure_135_2[31]);
+                  const obj22 = closure_135_1(closure_135_2[29]);
                   obj22.dispatch(obj23);
-                  self = closure_135_0(closure_135_2[32]).AccessibilityAnnouncer;
+                  self = closure_135_0(closure_135_2[30]).AccessibilityAnnouncer;
                   const announce = self.announce;
-                  const intl11 = closure_135_0(closure_135_2[17]).intl;
+                  const intl11 = closure_135_0(closure_135_2[15]).intl;
                   const string4 = intl11.string;
-                  const t4 = closure_135_0(closure_135_2[17]).t;
+                  const t4 = closure_135_0(closure_135_2[15]).t;
                   if (closure_4) {
                     XkUoBb = t4.zDAG2N;
                   } else {
@@ -568,202 +514,24 @@ const SlowmodeType = SlowmodeStore.SlowmodeType;
 ({ AbortCodes: closure_14, AnalyticEvents: closure_15, ChannelTypes: closure_16, Endpoints: closure_17, LoggingInviteTypes: closure_18, MAX_MESSAGES_PER_CHANNEL: closure_19, MessageFlags: closure_20 } = Constants);
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 obj = { Disabled: 1, [1]: "Disabled", Enabled: 2, [2]: "Enabled", PrivateOnly: 3, [3]: "PrivateOnly" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateThreadMode(arg0) {
+let result = size.fileFinishedImporting("modules/threads/ThreadCreationHooks.tsx");
+
+export const PrivateThreadMode = obj;
+export function usePrivateThreadMode(parentChannel) {
   let Disabled;
   obj = ThreadHooks;
-  const canStartPublicThread = obj.useCanStartPublicThread(arg0);
+  const canStartPublicThread = obj.useCanStartPublicThread(parentChannel);
   const obj2 = ThreadHooks;
-  if (obj2.useCanStartPrivateThread(arg0)) {
+  if (obj2.useCanStartPrivateThread(parentChannel)) {
     Disabled = canStartPublicThread ? tmp2.Enabled : tmp2.PrivateOnly;
   } else {
     Disabled = tmp2.Disabled;
   }
   return Disabled;
-}) : (function usePrivateThreadMode(arg0) {
-  let Disabled;
-  obj = ThreadHooks;
-  const canStartPublicThread = obj.useCanStartPublicThread(arg0);
-  const obj2 = ThreadHooks;
-  if (obj2.useCanStartPrivateThread(arg0)) {
-    Disabled = canStartPublicThread ? tmp2.Enabled : tmp2.PrivateOnly;
-  } else {
-    Disabled = tmp2.Disabled;
-  }
-  return Disabled;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateThreadCommon(parentChannel) {
-  let threadSettings;
-  let uploadHandler;
-  obj = parentChannel(threadSettings[16]);
-  const cResult = obj.c(9);
-  parentChannel = parentChannel.parentChannel;
-  const parentMessageId = parentChannel.parentMessageId;
-  threadSettings = parentChannel.threadSettings;
-  const privateThreadMode = parentChannel.privateThreadMode;
-  let _location = parentChannel.location;
-  const onThreadCreated = parentChannel.onThreadCreated;
-  const useDefaultThreadName = parentChannel.useDefaultThreadName;
-  if (cResult[0] === _location) {
-    if (cResult[1] === onThreadCreated) {
-      if (cResult[2] === parentChannel) {
-        if (cResult[3] === parentMessageId) {
-          if (cResult[4] === privateThreadMode) {
-            if (cResult[5] === threadSettings) {
-              if (cResult[6] === parentChannel.uploadHandler) {
-                let tmp2;
-                if (cResult[7] === useDefaultThreadName) {
-                  tmp2 = cResult[8];
-                }
-                return tmp2;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  let closure_0 = _location((arg0, arg1, arg2) => {
-    let closure_4;
-    let closure_5;
-    closure_0 = arg0;
-    let closure_1 = arg1;
-    let name = arg2;
-    let c6 = 0;
-    let c7 = 0;
-    return (function*(arg0, value, arg2) {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          let autoArchiveDuration;
-          let closure_6;
-          let closure_7;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              _location = tmp;
-              let stringResult;
-              autoArchiveDuration = undefined;
-              closure_6 = undefined;
-              closure_7 = undefined;
-              let closure_3 = closure_2_23(name, c3);
-              name = name.name;
-              c3 = name;
-              if (name == null) {
-                c3 = "";
-              }
-              stringResult = c3;
-              if ("" === c3) {
-                const tmp25 = c6;
-                if (tmp25) {
-                  stringResult = closure_2_24(user, closure_1);
-                  if ("" === stringResult) {
-                    const intl = user(threadSettings[17]).intl;
-                    stringResult = intl.string(user(threadSettings[17]).t["7Xm5QI"]);
-                  }
-                }
-              }
-              const obj3 = user(threadSettings[18]);
-              autoArchiveDuration = obj3.getAutoArchiveDuration(user);
-              getChannel = getChannel.getChannel;
-              const obj4 = parentMessageId(threadSettings[19]);
-              closure_6 = getChannel(obj4.castMessageIdAsChannelId(closure_1));
-              c6 = 1;
-              c7 = 1;
-              const obj6 = {
-                value: closure_2_27(user, [], undefined, () => {
-                          let PRIVATE_THREAD;
-                          let result;
-                          let tmp3;
-                          let tmp7Result;
-                          if (null != closure_2_1) {
-                            result = closure_3_17.CHANNEL_MESSAGE_THREADS(user.id, tmp);
-                            tmp3 = user;
-                          } else {
-                            tmp3 = user;
-                            result = closure_3_17.CHANNEL_THREADS(user.id);
-                          }
-                          const HTTP = closure_0(closure_2[20]).HTTP;
-                          const request = { url: result, body: obj, rejectWithError: tmp7Result.rejectWithMigratedError() };
-                          const post = HTTP.post;
-                          obj = { name, type: PRIVATE_THREAD, auto_archive_duration, location: _location };
-                          const tmp7 = closure_0;
-                          const tmp8 = closure_2;
-                          if (closure_1_3) {
-                            PRIVATE_THREAD = constants.PRIVATE_THREAD;
-                          } else {
-                            PRIVATE_THREAD = tmp3.type === constants.GUILD_ANNOUNCEMENT ? tmp9.ANNOUNCEMENT_THREAD : tmp9.PUBLIC_THREAD;
-                          }
-                          tmp7Result = tmp7(tmp8[20]);
-                          return post(request);
-                        }),
-                done: false
-              };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            return { value, done: true };
-          } else {
-            closure_7 = value;
-            if (closure_7 !== closure_6) {
-              const obj8 = parentMessageId(threadSettings[21]);
-              obj8.clearDraft(user.id, closure_2_9.ThreadSettings);
-              const obj9 = parentMessageId(threadSettings[21]);
-              obj9.clearDraft(user.id, closure_2_9.FirstThreadMessage);
-              if (autoArchiveDuration != null) {
-                let tmp7 = closure_7;
-                tmp60(closure_7);
-              }
-              const tmp9 = _location;
-              closure_2_26(closure_7, user, closure_1, name, c7);
-            }
-            obj = parentMessageId(threadSettings[22]);
-            obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
-            c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp42) {
-          c7 = 3;
-          throw tmp42;
-        }
-      }
-    })();
-  });
-  function t1() {
-    return closure_0(...arguments);
-  }
-  cResult[0] = _location;
-  cResult[1] = onThreadCreated;
-  cResult[2] = parentChannel;
-  cResult[3] = parentMessageId;
-  cResult[4] = privateThreadMode;
-  cResult[5] = threadSettings;
-  cResult[6] = parentChannel.uploadHandler;
-  cResult[7] = useDefaultThreadName;
-  cResult[8] = t1;
-  tmp2 = t1;
-}) : (function useCreateThreadCommon(parentChannel) {
+}
+export { getIsPrivate };
+export { getDefaultThreadName };
+export function useCreateThreadCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const parentMessageId = parentChannel.parentMessageId;
   const threadSettings = parentChannel.threadSettings;
@@ -782,6 +550,33 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
     let c6 = 0;
     let c7 = 0;
     return (function*(arg0, value, arg2) {
+      const sendMessage2 = function sendMessage(id, arg1, items1, arg3, c7) {
+        if (null != c7) {
+          if (null != arg3) {
+            if (arg3.length > 0) {
+              c7(id, arg3, arg1, items1);
+            }
+          }
+        }
+        if (null != items1) {
+          let sendStickersResult;
+          if (items1.length > 0) {
+            const id2 = id.id;
+            const sendStickers = closure_1_1(name[27]).sendStickers;
+            const obj2 = { location: constants.THREAD_CREATION };
+            const tmp6 = closure_1_1(name[27]);
+            const obj3 = closure_1_1(name[13]);
+            sendStickersResult = sendStickers(id2, items1, obj3.parse(id, arg1), obj2);
+          }
+          return sendStickersResult;
+        }
+        id = id.id;
+        const sendMessage = closure_1_1(name[27]).sendMessage;
+        closure_1_1(name[27]);
+        obj = closure_1_1(name[13]);
+        const obj4 = { location: constants.THREAD_CREATION };
+        sendStickersResult = sendMessage(id, obj.parse(id, arg1), undefined, obj4);
+      };
       if (c7 === 2) {
         c7 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -789,9 +584,10 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          return { value, done: true };
+          let obj2 = { value, done: true };
+          return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -820,24 +616,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
               }
               stringResult = c3;
               if ("" === c3) {
-                const tmp25 = c6;
-                if (tmp25) {
+                const tmp24 = c6;
+                if (tmp24) {
                   stringResult = closure_2_24(user, closure_1);
                   if ("" === stringResult) {
-                    const intl = user(threadSettings[17]).intl;
-                    stringResult = intl.string(user(threadSettings[17]).t["7Xm5QI"]);
+                    const intl = user(threadSettings[15]).intl;
+                    stringResult = intl.string(user(threadSettings[15]).t["7Xm5QI"]);
                   }
                 }
               }
-              const obj3 = user(threadSettings[18]);
+              let obj3 = user(threadSettings[16]);
               autoArchiveDuration = obj3.getAutoArchiveDuration(user);
               getChannel = getChannel.getChannel;
-              const obj4 = parentMessageId(threadSettings[19]);
+              let obj4 = parentMessageId(threadSettings[17]);
               closure_6 = getChannel(obj4.castMessageIdAsChannelId(closure_1));
               c6 = 1;
               c7 = 1;
               const obj6 = {
-                value: closure_2_27(user, [], undefined, () => {
+                value: closure_2_25(user, [], undefined, () => {
                           let PRIVATE_THREAD;
                           let result;
                           let tmp3;
@@ -849,7 +645,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
                             tmp3 = user;
                             result = closure_3_17.CHANNEL_THREADS(user.id);
                           }
-                          const HTTP = closure_0(closure_2[20]).HTTP;
+                          const HTTP = closure_0(closure_2[18]).HTTP;
                           const request = { url: result, body: obj, rejectWithError: tmp7Result.rejectWithMigratedError() };
                           const post = HTTP.post;
                           obj = { name, type: PRIVATE_THREAD, auto_archive_duration, location: _location };
@@ -860,7 +656,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
                           } else {
                             PRIVATE_THREAD = tmp3.type === constants.GUILD_ANNOUNCEMENT ? tmp9.ANNOUNCEMENT_THREAD : tmp9.PUBLIC_THREAD;
                           }
-                          tmp7Result = tmp7(tmp8[20]);
+                          tmp7Result = tmp7(tmp8[18]);
                           return post(request);
                         }),
                 done: false
@@ -876,25 +672,26 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
           } else {
             closure_7 = value;
             if (closure_7 !== closure_6) {
-              const obj8 = parentMessageId(threadSettings[21]);
+              const obj8 = parentMessageId(threadSettings[19]);
               obj8.clearDraft(user.id, closure_2_9.ThreadSettings);
-              const obj9 = parentMessageId(threadSettings[21]);
+              const obj9 = parentMessageId(threadSettings[19]);
               obj9.clearDraft(user.id, closure_2_9.FirstThreadMessage);
               if (autoArchiveDuration != null) {
+                let tmp6 = _location;
                 let tmp7 = closure_7;
-                tmp60(closure_7);
+                tmp59(closure_7);
               }
               const tmp9 = _location;
-              closure_2_26(closure_7, user, closure_1, name, c7);
+              sendMessage2(closure_7, user, closure_1, name, c7);
             }
-            obj = parentMessageId(threadSettings[22]);
+            obj = parentMessageId(threadSettings[20]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp42) {
+        } catch (tmp41) {
           c7 = 3;
-          throw tmp42;
+          throw tmp41;
         }
       }
     })();
@@ -903,281 +700,20 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateForumPostCommon(parentChannel) {
-  let appliedTags;
-  obj = parentChannel(appliedTags[16]);
-  const cResult = obj.c(10);
-  parentChannel = parentChannel.parentChannel;
-  let name = parentChannel.name;
-  appliedTags = parentChannel.appliedTags;
-  let analyticsLocations = parentChannel.analyticsLocations;
-  const onThreadCreated = parentChannel.onThreadCreated;
-  const upload = parentChannel.upload;
-  const activityAction = parentChannel.activityAction;
-  let applicationId = parentChannel.applicationId;
-  let voiceChatEnabled = parentChannel.voiceChatEnabled;
-  if (cResult[0] === activityAction) {
-    if (cResult[1] === analyticsLocations) {
-      if (cResult[2] === applicationId) {
-        if (cResult[3] === appliedTags) {
-          if (cResult[4] === name) {
-            if (cResult[5] === onThreadCreated) {
-              if (cResult[6] === parentChannel) {
-                if (cResult[7] === upload) {
-                  let tmp2;
-                  if (cResult[8] === voiceChatEnabled) {
-                    tmp2 = cResult[9];
-                  }
-                  return tmp2;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  let closure_0 = onThreadCreated((arg0, name, applied_tags) => {
-    let closure_5;
-    let closure_6;
-    closure_0 = arg0;
-    let c8 = 0;
-    let c9 = 0;
-    let c7 = 0;
-    return (function*(arg0, value, arg2) {
-      let obj9;
-      let tmp83;
-      if (c9 === 2) {
-        c9 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        let tmp91;
-        try {
-          let obj8;
-          let tmp;
-          let file;
-          let code;
-          let reason;
-          let createThread;
-          c9 = 2;
-          if (0 === voiceChatEnabled) {
-            if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c9 = 3;
-              return { value, done: true };
-            } else {
-              let tmp74 = closure_0;
-              let uploaderFile;
-              name = undefined;
-              obj8 = undefined;
-              analyticsLocations = undefined;
-              message = undefined;
-              tmp = undefined;
-              tmp91 = undefined;
-              file = undefined;
-              code = undefined;
-              reason = undefined;
-              value = undefined;
-              createThread = undefined;
-              body = undefined;
-              let num10 = 0;
-              const tmp115 = name;
-              const tmp119 = closure_2_3(closure_2_1(appliedTags[23])(closure_0), 2);
-              if (tmp119[0]) {
-                const obj12 = closure_0(appliedTags[24]);
-                num10 = obj12.addFlag(0, constants4.SUPPRESS_NOTIFICATIONS);
-                tmp74 = tmp120;
-              }
-              const obj13 = closure_0(appliedTags[18]);
-              const autoArchiveDuration = obj13.getAutoArchiveDuration(closure_0, null);
-              name = closure_2_17.CHANNEL_THREADS(closure_0.id) + "?use_nested_fields=true";
-              obj8 = { name, auto_archive_duration: autoArchiveDuration, applied_tags, message: obj9 };
-              obj9 = { content: tmp74, sticker_ids: tmp115, flags: tmp83 };
-              tmp83 = undefined;
-              if (0 !== num10) {
-                tmp83 = num10;
-              }
-              let tmp85 = null;
-              if (null != tmp91) {
-                tmp85 = closure_2_25(tmp84);
-              }
-              analyticsLocations = tmp85;
-              message = null != tmp85 && null != tmp84;
-              if (message) {
-                message = obj8.message;
-                const activity = tmp84.activity;
-                let application_id;
-                if (activity != null) {
-                  application_id = activity.application_id;
-                }
-                message.application_id = application_id;
-                obj8.message.activity = tmp85;
-              }
-              if (null != applied_tags) {
-                if (applied_tags.length > 0) {
-                  applicationId = 1;
-                  voiceChatEnabled = 3;
-                  c9 = 1;
-                  const obj10 = { value: tmp(applied_tags), done: false };
-                  return obj10;
-                }
-              }
-            }
-          } else if (1 === voiceChatEnabled) {
-            applicationId = 0;
-            tmp = tmp91;
-            tmp91 = tmp;
-            file = tmp91.file;
-            code = tmp91.code;
-            reason = tmp91.reason;
-            const obj11 = { file, guildId: message, analyticsLocations, code, reason };
-            const handleUploadMessageAttachmentsErrors = closure_0(appliedTags[26]).handleUploadMessageAttachmentsErrors;
-            closure_0(appliedTags[26]);
-            message = closure_0.getGuildId();
-            if (analyticsLocations == null) {
-              analyticsLocations = [];
-            }
-            message = reason;
-            const result = handleUploadMessageAttachmentsErrors(obj11);
-            throw tmp;
-          } else if (2 === voiceChatEnabled) {
-            applicationId = 0;
-            body = tmp91;
-            code = undefined;
-            if (body != null) {
-              body = body.body;
-              if (body != null) {
-                code = body.code;
-              }
-            }
-            if (code === constants.UNKNOWN_SESSION) {
-              if (null != analyticsLocations) {
-                delete obj8.message[tmp98];
-                delete obj8.message[tmp99];
-                voiceChatEnabled = 5;
-                c9 = 1;
-                const obj14 = { value: createThread(), done: false };
-                return obj14;
-              }
-            }
-            throw body;
-          } else if (3 === voiceChatEnabled) {
-            if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              applicationId = 0;
-              c9 = 3;
-              return { value, done: true };
-            } else {
-              message = value;
-              uploaderFile = message.uploaderFile;
-              const files = message.files;
-              obj8.message.attachments = files.map((item, index) => {
-                obj = closure_1_0(applied_tags[25]);
-                return obj.getAttachmentPayload(item, index);
-              });
-              applicationId = 0;
-            }
-          } else {
-            if (4 === voiceChatEnabled) {
-              if (arg0 === 1) {
-                c9 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                applicationId = 0;
-                c9 = 3;
-                return { value, done: true };
-              } else {
-                applicationId = 0;
-              }
-            } else if (arg0 === 1) {
-              c9 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c9 = 3;
-              obj = { value, done: true };
-              return obj;
-            }
-            let obj2 = closure_2_1(appliedTags[21]);
-            obj2.clearDraft(closure_0.id, closure_2_9.ThreadSettings);
-            const obj3 = closure_2_1(appliedTags[21]);
-            obj3.clearDraft(closure_0.id, closure_2_9.FirstThreadMessage);
-            const obj4 = closure_2_1(appliedTags[22]);
-            obj4.clearAll(closure_0.id, closure_2_9.FirstThreadMessage);
-            message = voiceChatEnabled;
-            const obj17 = { guildId: closure_0.guild_id, channelId: closure_0.id, postId: value.id, applicationId, voiceChatEnabled };
-            const obj5 = closure_0(appliedTags[27]);
-            const result1 = obj5.trackForumPostCreated(obj17);
-            if (null != obj8.message.application_id) {
-              const obj18 = { location: constants5.THREAD_CREATION, invite_type: constants3.APPLICATION, application_id: obj8.message.application_id, guild_id: closure_0.getGuildId(), channel_id: value.id, message_id: value.id };
-              const trackWithMetadata = closure_2_1(appliedTags[28]).trackWithMetadata;
-              const INVITE_SENT = constants2.INVITE_SENT;
-              closure_2_1(appliedTags[28]);
-              trackWithMetadata(INVITE_SENT, obj18);
-            }
-            if (message != null) {
-              tmp29(value);
-            }
-            c9 = 3;
-            return { value, done: true };
-          }
-          createThread = function createThread() {
-            let url;
-            return closure_3_27(closure_2_0, analyticsLocations, uploaderFile, () => {
-              let obj2;
-              const HTTP = closure_3_0(applied_tags[20]).HTTP;
-              const request = { url, body, rejectWithError: obj2.rejectWithMigratedError() };
-              const post = HTTP.post;
-              obj2 = closure_3_0(applied_tags[20]);
-              return post(request);
-            });
-          };
-          applicationId = 2;
-          voiceChatEnabled = 4;
-          c9 = 1;
-          const obj20 = { value: createThread(), done: false };
-          return obj20;
-        } catch (tmp91) {
-          if (0 === applicationId) {
-            c9 = 3;
-            throw tmp91;
-          } else if (1 === tmp93) {
-            voiceChatEnabled = 1;
-          } else {
-            voiceChatEnabled = 2;
-          }
-        }
-      }
-    })();
+}
+export function createThread(arg0, name, type, auto_archive_duration, _location) {
+  const id = arg0;
+  return createThread_(arg0, [], undefined, () => {
+    let obj3;
+    const HTTP = HTTPUtils.HTTP;
+    const request = { url: closure_17.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+    const post = HTTP.post;
+    obj = { name, type, auto_archive_duration, location: _location };
+    obj3 = HTTPUtils;
+    return post(request);
   });
-  function t1() {
-    return closure_0(...arguments);
-  }
-  cResult[0] = activityAction;
-  cResult[1] = analyticsLocations;
-  cResult[2] = applicationId;
-  cResult[3] = appliedTags;
-  cResult[4] = name;
-  cResult[5] = onThreadCreated;
-  cResult[6] = parentChannel;
-  cResult[7] = upload;
-  cResult[8] = voiceChatEnabled;
-  cResult[9] = t1;
-  tmp2 = t1;
-}) : (function useCreateForumPostCommon(parentChannel) {
+}
+export function useCreateForumPostCommon(parentChannel) {
   parentChannel = parentChannel.parentChannel;
   const name = parentChannel.name;
   const appliedTags = parentChannel.appliedTags;
@@ -1198,7 +734,35 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
     let c7 = 0;
     return (function*(arg0, value, arg2) {
       let obj9;
+      let sessionId;
+      let tmp3;
       let tmp83;
+      function buildMessageActivity(activity) {
+        let activity2;
+        let id;
+        activity = activity.activity;
+        let session_id;
+        if (activity != null) {
+          session_id = activity.session_id;
+        }
+        if (null == session_id) {
+          session_id = sessionId.getSessionId();
+        }
+        let tmp3 = null;
+        if (null != session_id) {
+          obj = { type: activity.type, session_id, target_user_id: null, party_id: id };
+          ({ targetUserId: obj.target_user_id, activity: activity2 } = activity);
+          id = undefined;
+          if (activity2 != null) {
+            const party = activity2.party;
+            if (party != null) {
+              id = party.id;
+            }
+          }
+          tmp3 = obj;
+        }
+        return tmp3;
+      }
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -1208,10 +772,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
-        let tmp91;
+        let tmp90;
         try {
           let obj8;
           let closure_4;
@@ -1236,47 +800,47 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               obj8 = undefined;
               closure_4 = undefined;
               tmp = undefined;
-              tmp91 = undefined;
+              tmp90 = undefined;
               file = undefined;
               code = undefined;
               reason = undefined;
               createThread = function createThread() {
                 let url;
-                return closure_3_27(closure_2_0, analyticsLocations, uploaderFile, () => {
+                return closure_3_25(closure_2_0, analyticsLocations, uploaderFile, () => {
                   let obj2;
-                  const HTTP = closure_3_0(applied_tags[20]).HTTP;
+                  const HTTP = closure_3_0(applied_tags[18]).HTTP;
                   const request = { url, body, rejectWithError: obj2.rejectWithMigratedError() };
                   const post = HTTP.post;
-                  obj2 = closure_3_0(applied_tags[20]);
+                  obj2 = closure_3_0(applied_tags[18]);
                   return post(request);
                 });
               };
               let num10 = 0;
-              const tmp115 = user;
-              const tmp119 = closure_2_3(name(appliedTags[23])(closure_0), 2);
-              if (tmp119[0]) {
-                const obj12 = closure_0(appliedTags[24]);
+              const tmp114 = user;
+              const tmp118 = closure_2_3(name(appliedTags[21])(closure_0), 2);
+              if (tmp118[0]) {
+                const obj12 = closure_0(appliedTags[22]);
                 num10 = obj12.addFlag(0, constants4.SUPPRESS_NOTIFICATIONS);
-                tmp74 = tmp120;
+                tmp74 = tmp119;
               }
-              const obj13 = closure_0(appliedTags[18]);
+              const obj13 = closure_0(appliedTags[16]);
               const autoArchiveDuration = obj13.getAutoArchiveDuration(closure_0, null);
               applied_tags = closure_2_17.CHANNEL_THREADS(closure_0.id) + "?use_nested_fields=true";
               obj8 = { name: user, auto_archive_duration: autoArchiveDuration, applied_tags, message: obj9 };
-              obj9 = { content: tmp74, sticker_ids: tmp115, flags: tmp83 };
+              obj9 = { content: tmp74, sticker_ids: tmp114, flags: tmp83 };
               tmp83 = undefined;
               if (0 !== num10) {
                 tmp83 = num10;
               }
               let tmp85 = null;
-              if (null != tmp91) {
-                tmp85 = closure_2_25(tmp84);
+              if (null != tmp90) {
+                tmp85 = buildMessageActivity(tmp84);
               }
               closure_4 = tmp85;
               message = null != tmp85 && null != tmp84;
               if (message) {
                 message = obj8.message;
-                const activity = tmp84.activity;
+                let activity = tmp84.activity;
                 let application_id;
                 if (activity != null) {
                   application_id = activity.application_id;
@@ -1296,14 +860,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             }
           } else if (1 === voiceChatEnabled) {
             applicationId = 0;
-            let closure_11 = tmp91;
-            tmp91 = closure_11;
-            file = tmp91.file;
-            code = tmp91.code;
-            reason = tmp91.reason;
+            let closure_11 = tmp90;
+            tmp90 = closure_11;
+            file = tmp90.file;
+            code = tmp90.code;
+            reason = tmp90.reason;
             const obj11 = { file, guildId: message, analyticsLocations, code, reason };
-            const handleUploadMessageAttachmentsErrors = closure_0(appliedTags[26]).handleUploadMessageAttachmentsErrors;
-            closure_0(appliedTags[26]);
+            const handleUploadMessageAttachmentsErrors = closure_0(appliedTags[24]).handleUploadMessageAttachmentsErrors;
+            closure_0(appliedTags[24]);
             message = closure_0.getGuildId();
             if (analyticsLocations == null) {
               analyticsLocations = [];
@@ -1313,7 +877,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             throw closure_11;
           } else if (2 === voiceChatEnabled) {
             applicationId = 0;
-            body = tmp91;
+            body = tmp90;
             code = undefined;
             if (body != null) {
               body = body.body;
@@ -1323,8 +887,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             }
             if (code === constants.UNKNOWN_SESSION) {
               if (null != closure_4) {
+                delete obj8.message[tmp97];
                 delete obj8.message[tmp98];
-                delete obj8.message[tmp99];
                 voiceChatEnabled = 5;
                 c9 = 1;
                 const obj14 = { value: createThread(), done: false };
@@ -1345,7 +909,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
               uploaderFile = tmp.uploaderFile;
               const files = tmp.files;
               obj8.message.attachments = files.map((item, index) => {
-                obj = closure_1_0(applied_tags[25]);
+                obj = closure_1_0(applied_tags[23]);
                 return obj.getAttachmentPayload(item, index);
               });
               applicationId = 0;
@@ -1373,21 +937,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
             } else {
               user = value;
             }
-            let obj2 = name(appliedTags[21]);
+            let obj2 = name(appliedTags[19]);
             obj2.clearDraft(closure_0.id, closure_2_9.ThreadSettings);
-            const obj3 = name(appliedTags[21]);
+            const obj3 = name(appliedTags[19]);
             obj3.clearDraft(closure_0.id, closure_2_9.FirstThreadMessage);
-            const obj4 = name(appliedTags[22]);
+            const obj4 = name(appliedTags[20]);
             obj4.clearAll(closure_0.id, closure_2_9.FirstThreadMessage);
             message = voiceChatEnabled;
             const obj17 = { guildId: closure_0.guild_id, channelId: closure_0.id, postId: user.id, applicationId, voiceChatEnabled };
-            const obj5 = closure_0(appliedTags[27]);
+            const obj5 = closure_0(appliedTags[25]);
             const result1 = obj5.trackForumPostCreated(obj17);
             if (null != obj8.message.application_id) {
               const obj18 = { location: constants5.THREAD_CREATION, invite_type: constants3.APPLICATION, application_id: obj8.message.application_id, guild_id: closure_0.getGuildId(), channel_id: user.id, message_id: user.id };
-              const trackWithMetadata = name(appliedTags[28]).trackWithMetadata;
+              const trackWithMetadata = name(appliedTags[26]).trackWithMetadata;
               const INVITE_SENT = constants2.INVITE_SENT;
-              name(appliedTags[28]);
+              name(appliedTags[26]);
               trackWithMetadata(INVITE_SENT, obj18);
             }
             if (message != null) {
@@ -1401,11 +965,11 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
           c9 = 1;
           const obj20 = { value: createThread(), done: false };
           return obj20;
-        } catch (tmp91) {
+        } catch (tmp90) {
           if (0 === applicationId) {
             c9 = 3;
-            throw tmp91;
-          } else if (1 === tmp93) {
+            throw tmp90;
+          } else if (1 === tmp92) {
             voiceChatEnabled = 1;
           } else {
             voiceChatEnabled = 2;
@@ -1418,24 +982,4 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
   return useCallback(function() {
     return closure_0(...arguments);
   }, items);
-});
-let result = size.fileFinishedImporting("modules/threads/ThreadCreationHooks.tsx");
-
-export const PrivateThreadMode = obj;
-export const usePrivateThreadMode = tmp4;
-export { getIsPrivate };
-export { getDefaultThreadName };
-export const useCreateThreadCommon = tmp5;
-export function createThread(arg0, name, type, auto_archive_duration, _location) {
-  const id = arg0;
-  return createThread_(arg0, [], undefined, () => {
-    let obj3;
-    const HTTP = HTTPUtils.HTTP;
-    const request = { url: closure_17.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
-    const post = HTTP.post;
-    obj = { name, type, auto_archive_duration, location: _location };
-    obj3 = HTTPUtils;
-    return post(request);
-  });
 }
-export const useCreateForumPostCommon = tmp6;

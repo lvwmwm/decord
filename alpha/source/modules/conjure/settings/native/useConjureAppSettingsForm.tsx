@@ -1,33 +1,32 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12444
+// Function ID: 12445
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4935, 4879, 4947, 1389, 10826, 21, 5005, 587, 504, 12282, 1125, 3864, 10923, 10922, 12283, 7047, 12284, 6960, 7045, 7044, 7240, 7068, 5271, 5281, 558, 576, 12295, 7405, 6963, 6974, 5641, 5247, 12297, 12296, 12299, 2]
+// Dependencies: [5, 32, 19, 17, 4939, 4880, 4951, 1384, 10849, 21, 5009, 575, 504, 12445, 1114, 3865, 10946, 10945, 12446, 7054, 12447, 6968, 7052, 7055, 7247, 7076, 5619, 5629, 12458, 7413, 6969, 6980, 5647, 5253, 11181, 12459, 12460, 2]
 // Exports: default
 
-// Module 12281 (useConjureAppSettingsForm)
+// Module 12444 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import conjureSettingValues from "conjureSettingValues" /* 10923 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 12297 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12299 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import conjureSettingValues from "conjureSettingValues" /* 10946 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11181 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12460 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10826 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10849 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c5, channels, importDefault, map, obj1, showActionSheetResult;
+let c5, channels, map;
 
 let closure_12;
 let closure_14;
@@ -37,462 +36,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const useConjureSettingPickerOptions = tmp(12295);
-let _slicedToArray = _slicedToArray_mod;
-const View = react_native.View;
-({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
-const ConjureSettingsChannelSheet = "ConjureSettingsChannelSheet";
-const ConjureSettingsPickerSheet = "ConjureSettingsPickerSheet";
-let createStyles = createStyles_mod;
-let obj = { linkedField: obj2, section: obj3, secretRow: obj4, secretRowInfo: obj5 };
-obj2 = { gap: nativeDefault.space.PX_4 };
-createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_16 };
-obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
-obj5 = { flex: 1, gap: nativeDefault.space.PX_4 };
-let closure_17 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureChannelSettingRow(def) {
-  let disabled;
-  let fallback;
-  let first;
-  let hint;
-  let isPreview;
-  let onChange;
-  let projectId;
-  let tmp7;
-  let tmp8;
-  let tmpResult5;
-  let value;
-  let tmp = def;
-  let tmp2 = onChange;
-  let obj = def(onChange[29]);
-  const cResult = obj.c(44);
-  def = def.def;
-  ({ hint, value } = def);
-  importDefault = value;
-  ({ disabled, onChange } = def);
-  ({ fallback, projectId, isPreview } = def);
-  let obj2 = def(onChange[30]);
-  const conjureSettingsGuildId = obj2.useConjureSettingsGuildId(projectId, isPreview);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== conjureSettingsGuildId) {
-    const fn = function l() {
-      channels = null;
-      if (null != conjureSettingsGuildId) {
-        channels = GuildChannelStore.getChannels(tmp);
-      }
-      return channels;
-    };
-    const items1 = [conjureSettingsGuildId];
-    cResult[1] = conjureSettingsGuildId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(tmp2[12]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  let tmp10 = fallback;
-  if (null != conjureSettingsGuildId) {
-    tmp10 = fallback;
-    if (null != stateFromStores) {
-      let arr3;
-      let found;
-      let tmp22;
-      let channelName;
-      if (cResult[4] === stateFromStores) {
-        if (cResult[5] === def.channel_filter) {
-          if (cResult[6] === def.label) {
-            if (cResult[7] === disabled) {
-              if (cResult[8] === hint) {
-                let tmp11;
-                let tmp12;
-                let tmp13;
-                let tmp16;
-                let tmp17;
-                let tmp18;
-                let flag;
-                let tmp19;
-                let flag2;
-                if (cResult[9] === value) {
-                  tmp11 = cResult[10];
-                  tmp12 = cResult[11];
-                  tmp13 = cResult[12];
-                  arr3 = cResult[13];
-                  found = cResult[14];
-                  tmp16 = cResult[15];
-                  tmp17 = cResult[16];
-                  tmp18 = cResult[17];
-                  flag = cResult[18];
-                  tmp19 = cResult[19];
-                  flag2 = cResult[20];
-                }
-                if (cResult[23] === tmp11) {
-                  let tmp32;
-                  if (cResult[24] === tmp16) {
-                    tmp32 = cResult[25];
-                  }
-                  if (cResult[26] === tmp14) {
-                    if (cResult[27] === def.label) {
-                      if (cResult[28] === conjureSettingsGuildId) {
-                        if (cResult[29] === onChange) {
-                          let tmp34;
-                          if (cResult[30] === tmp15) {
-                            tmp34 = cResult[31];
-                          }
-                          if (cResult[32] === tmp12) {
-                            if (cResult[33] === tmp32) {
-                              if (cResult[34] === tmp34) {
-                                if (cResult[35] === tmp17) {
-                                  if (cResult[36] === tmp18) {
-                                    if (cResult[37] === flag) {
-                                      let tmp35;
-                                      if (cResult[38] === tmp19) {
-                                        tmp35 = cResult[39];
-                                      }
-                                      if (cResult[40] === tmp13) {
-                                        if (cResult[41] === tmp35) {
-                                          let tmp37;
-                                          if (cResult[42] === flag2) {
-                                            tmp37 = cResult[43];
-                                          }
-                                          tmp10 = tmp37;
-                                        }
-                                      }
-                                      class N {
-                                        constructor() {
-                                          tmp = closure_0(closure_2[35]);
-                                          obj = { content: null, key: null, stackingBehavior: "stack" };
-                                          showActionSheet = tmp.showActionSheet;
-                                          obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-                                          obj4 = { title: def.label };
-                                          obj1.header = obj4;
-                                          tmp2 = closure_1(closure_2[36]);
-                                          obj1.guild = closure_8.getGuild(closure_3);
-                                          obj1.channels = closure_4;
-                                          obj1.selectedChannel = c5;
-                                          intl = closure_0(closure_2[14]).intl;
-                                          obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-                                          obj1.onSelect = function onSelect(id) {
-                                            let str;
-                                            const tmp = onChange;
-                                            if (id != null) {
-                                              str = id.id;
-                                            }
-                                            if (str == null) {
-                                              str = "";
-                                            }
-                                            return tmp(str);
-                                          };
-                                          obj.content = jsx(tmp2, obj1);
-                                          obj.key = ConjureSettingsChannelSheet;
-                                          showActionSheetResult = showActionSheet(obj);
-                                          return;
-                                        }
-                                      }
-                                      let obj3 = { hasIcons: flag2, children: tmp35 };
-                                      const tmp38 = closure_12(tmp13, obj3);
-                                      cResult[40] = tmp13;
-                                      cResult[41] = tmp35;
-                                      cResult[42] = flag2;
-                                      cResult[43] = tmp38;
-                                      tmp37 = tmp38;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                          class N {
-                            constructor() {
-                              tmp = closure_0(closure_2[35]);
-                              obj = { content: null, key: null, stackingBehavior: "stack" };
-                              showActionSheet = tmp.showActionSheet;
-                              obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-                              obj4 = { title: def.label };
-                              obj1.header = obj4;
-                              tmp2 = closure_1(closure_2[36]);
-                              obj1.guild = closure_8.getGuild(closure_3);
-                              obj1.channels = closure_4;
-                              obj1.selectedChannel = c5;
-                              intl = closure_0(closure_2[14]).intl;
-                              obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-                              obj1.onSelect = function onSelect(id) {
-                                let str;
-                                const tmp = onChange;
-                                if (id != null) {
-                                  str = id.id;
-                                }
-                                if (str == null) {
-                                  str = "";
-                                }
-                                return tmp(str);
-                              };
-                              obj.content = jsx(tmp2, obj1);
-                              obj.key = ConjureSettingsChannelSheet;
-                              showActionSheetResult = showActionSheet(obj);
-                              return;
-                            }
-                          }
-                          const obj4 = { label: tmp17, subLabel: tmp18, arrow: flag, disabled: tmp19, trailing: tmp32, onPress: tmp34 };
-                          const tmp36 = closure_12(tmp12, obj4);
-                          cResult[32] = tmp12;
-                          cResult[33] = tmp32;
-                          cResult[34] = tmp34;
-                          cResult[35] = tmp17;
-                          cResult[36] = tmp18;
-                          cResult[37] = flag;
-                          cResult[38] = tmp19;
-                          cResult[39] = tmp36;
-                          tmp35 = tmp36;
-                        }
-                      }
-                    }
-                  }
-                  class N {
-                    constructor() {
-                      tmp = closure_0(closure_2[35]);
-                      obj = { content: null, key: null, stackingBehavior: "stack" };
-                      showActionSheet = tmp.showActionSheet;
-                      obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-                      obj4 = { title: def.label };
-                      obj1.header = obj4;
-                      tmp2 = closure_1(closure_2[36]);
-                      obj1.guild = closure_8.getGuild(closure_3);
-                      obj1.channels = closure_4;
-                      obj1.selectedChannel = c5;
-                      intl = closure_0(closure_2[14]).intl;
-                      obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-                      obj1.onSelect = function onSelect(id) {
-                        let str;
-                        const tmp = onChange;
-                        if (id != null) {
-                          str = id.id;
-                        }
-                        if (str == null) {
-                          str = "";
-                        }
-                        return tmp(str);
-                      };
-                      obj.content = jsx(tmp2, obj1);
-                      obj.key = ConjureSettingsChannelSheet;
-                      showActionSheetResult = showActionSheet(obj);
-                      return;
-                    }
-                  }
-                  cResult[26] = tmp14;
-                  cResult[27] = def.label;
-                  cResult[28] = conjureSettingsGuildId;
-                  cResult[29] = onChange;
-                  cResult[30] = tmp15;
-                  cResult[31] = N;
-                  tmp34 = N;
-                }
-                const obj5 = { text: tmp16 };
-                const tmp33 = closure_12(tmp11, obj5);
-                cResult[23] = tmp11;
-                cResult[24] = tmp16;
-                cResult[25] = tmp33;
-                tmp32 = tmp33;
-              }
-            }
-          }
-        }
-      }
-      tmp(tmp2[31]);
-      found = arr3.find((id) => id.id === importDefault);
-      if (found == null) {
-        found = null;
-      }
-      const TableRowGroup = tmp(tmp2[19]).TableRowGroup;
-      const TableRow = tmp(tmp2[32]).TableRow;
-      const label = def.label;
-      if (cResult[21] !== hint) {
-        let tmp23;
-        if (null != hint) {
-          const obj6 = { variant: "text-xs/medium", color: "text-subtle", children: tmpResult5.conjureLinkedNodes(hint, "text-xs/medium") };
-          class N {
-            constructor() {
-              tmp = closure_0(closure_2[35]);
-              obj = { content: null, key: null, stackingBehavior: "stack" };
-              showActionSheet = tmp.showActionSheet;
-              obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-              obj4 = { title: def.label };
-              obj1.header = obj4;
-              tmp2 = closure_1(closure_2[36]);
-              obj1.guild = closure_8.getGuild(closure_3);
-              obj1.channels = closure_4;
-              obj1.selectedChannel = c5;
-              intl = closure_0(closure_2[14]).intl;
-              obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-              obj1.onSelect = function onSelect(id) {
-                let str;
-                const tmp = onChange;
-                if (id != null) {
-                  str = id.id;
-                }
-                if (str == null) {
-                  str = "";
-                }
-                return tmp(str);
-              };
-              obj.content = jsx(tmp2, obj1);
-              obj.key = ConjureSettingsChannelSheet;
-              showActionSheetResult = showActionSheet(obj);
-              return;
-            }
-          }
-          let str = "text-xs/medium";
-          tmpResult5 = tmp(tmp2[20]);
-          tmp23 = closure_12(tmp25, obj6);
-        }
-        class N {
-          constructor() {
-            tmp = closure_0(closure_2[35]);
-            obj = { content: null, key: null, stackingBehavior: "stack" };
-            showActionSheet = tmp.showActionSheet;
-            obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-            obj4 = { title: def.label };
-            obj1.header = obj4;
-            tmp2 = closure_1(closure_2[36]);
-            obj1.guild = closure_8.getGuild(closure_3);
-            obj1.channels = closure_4;
-            obj1.selectedChannel = c5;
-            intl = closure_0(closure_2[14]).intl;
-            obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-            obj1.onSelect = function onSelect(id) {
-              let str;
-              const tmp = onChange;
-              if (id != null) {
-                str = id.id;
-              }
-              if (str == null) {
-                str = "";
-              }
-              return tmp(str);
-            };
-            obj.content = jsx(tmp2, obj1);
-            obj.key = ConjureSettingsChannelSheet;
-            showActionSheetResult = showActionSheet(obj);
-            return;
-          }
-        }
-        cResult[21] = hint;
-        cResult[22] = tmp23;
-        tmp22 = tmp23;
-      } else {
-        tmp22 = cResult[22];
-      }
-      const TableRowTrailingText = tmp(tmp2[33]).TableRowTrailingText;
-      if (null != found) {
-        const tmpResult6 = tmp(tmp2[34]);
-        class N {
-          constructor() {
-            tmp = closure_0(closure_2[35]);
-            obj = { content: null, key: null, stackingBehavior: "stack" };
-            showActionSheet = tmp.showActionSheet;
-            obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-            obj4 = { title: def.label };
-            obj1.header = obj4;
-            tmp2 = closure_1(closure_2[36]);
-            obj1.guild = closure_8.getGuild(closure_3);
-            obj1.channels = closure_4;
-            obj1.selectedChannel = c5;
-            intl = closure_0(closure_2[14]).intl;
-            obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-            obj1.onSelect = function onSelect(id) {
-              let str;
-              const tmp = onChange;
-              if (id != null) {
-                str = id.id;
-              }
-              if (str == null) {
-                str = "";
-              }
-              return tmp(str);
-            };
-            obj.content = jsx(tmp2, obj1);
-            obj.key = ConjureSettingsChannelSheet;
-            showActionSheetResult = showActionSheet(obj);
-            return;
-          }
-        }
-        channelName = tmpResult6.computeChannelName(found, UserStore, RelationshipStore, true);
-      } else {
-        let intl = tmp(tmp2[14]).intl;
-        class N {
-          constructor() {
-            tmp = closure_0(closure_2[35]);
-            obj = { content: null, key: null, stackingBehavior: "stack" };
-            showActionSheet = tmp.showActionSheet;
-            obj1 = { header: null, guild: null, channels: null, selectedChannel: null, noChannelOptionLabel: null, onSelect: null };
-            obj4 = { title: def.label };
-            obj1.header = obj4;
-            tmp2 = closure_1(closure_2[36]);
-            obj1.guild = closure_8.getGuild(closure_3);
-            obj1.channels = closure_4;
-            obj1.selectedChannel = c5;
-            intl = closure_0(closure_2[14]).intl;
-            obj1.noChannelOptionLabel = intl.string(closure_1(closure_2[15])["jtBVV+"]);
-            obj1.onSelect = function onSelect(id) {
-              let str;
-              const tmp = onChange;
-              if (id != null) {
-                str = id.id;
-              }
-              if (str == null) {
-                str = "";
-              }
-              return tmp(str);
-            };
-            obj.content = jsx(tmp2, obj1);
-            obj.key = ConjureSettingsChannelSheet;
-            showActionSheetResult = showActionSheet(obj);
-            return;
-          }
-        }
-        channelName = tmp26(require("module_3864").iZIF9m);
-      }
-      cResult[4] = stateFromStores;
-      cResult[5] = def.channel_filter;
-      cResult[6] = def.label;
-      cResult[7] = disabled;
-      cResult[8] = hint;
-      cResult[9] = value;
-      cResult[10] = TableRowTrailingText;
-      cResult[11] = TableRow;
-      cResult[12] = TableRowGroup;
-      cResult[13] = arr3;
-      cResult[14] = found;
-      cResult[15] = channelName;
-      cResult[16] = label;
-      cResult[17] = tmp22;
-      cResult[18] = true;
-      cResult[19] = disabled;
-      cResult[20] = false;
-      tmp16 = channelName;
-      flag2 = false;
-      tmp19 = disabled;
-      flag = true;
-      tmp18 = tmp22;
-      tmp17 = label;
-      tmp13 = TableRowGroup;
-      tmp12 = TableRow;
-      tmp11 = TableRowTrailingText;
-    }
-  }
-  return tmp10;
-}) : (function ConjureChannelSettingRow(def) {
+const useConjureSettingPickerOptions = tmp(12458);
+function ConjureChannelSettingRow(def) {
   let TableRowTrailingText;
   let disabled;
   let fallback;
@@ -509,7 +54,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ projectId, isPreview, disabled, fallback } = def);
-  let obj = def(12295);
+  let obj = def(12458);
   const conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, isPreview);
   let obj2 = def(504);
   const items = [GuildChannelStore];
@@ -524,14 +69,14 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   if (null != conjureSettingsGuildId) {
     if (null != stateFromStores) {
       let channelName;
-      const tmpResult = tmp(7405);
+      const tmpResult = tmp(7413);
       const result = tmpResult.conjureSettingChannels(stateFromStores, def.channel_filter);
       c4 = result;
       found = result.find((id) => id.id === importDefault);
       if (found == null) {
         found = null;
       }
-      const TableRowGroup = tmp(7047).TableRowGroup;
+      const TableRowGroup = tmp(7054).TableRowGroup;
       let obj3 = {
         label: def.label,
         subLabel: tmp6Result,
@@ -545,13 +90,13 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               let tmp2;
               let tmp = ActionSheetActionCreators;
               const showActionSheet = tmp.showActionSheet;
-              const obj = { content: authStore2(tmp2, obj2), key: ConjureSettingsChannelSheet, stackingBehavior: "stack" };
+              const obj = { content: authStore2(tmp2, obj2), key: "ConjureSettingsChannelSheet", stackingBehavior: "stack" };
               obj2 = {
                 header: obj3,
                 guild: GuildStore.getGuild(conjureSettingsGuildId),
                 channels,
                 selectedChannel: found,
-                noChannelOptionLabel: intl.string(_modDef3864["jtBVV+"]),
+                noChannelOptionLabel: intl.string(_modDef3865["jtBVV+"]),
                 onSelect(id) {
                   let str;
                   const tmp = closure_1_2;
@@ -571,21 +116,21 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
             }
       };
       tmp6Result = undefined;
-      const TableRow = tmp(6963).TableRow;
+      const TableRow = tmp(6969).TableRow;
       if (null != hint) {
         const obj4 = { variant: "text-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "text-xs/medium") };
-        const Text = tmp(5271).Text;
+        const Text = tmp(5619).Text;
         let str = "text-xs/medium";
-        tmpResult3 = tmp(12284);
+        tmpResult3 = tmp(12447);
         tmp6Result = tmp6(Text, obj4);
       }
-      TableRowTrailingText = tmp(6974).TableRowTrailingText;
+      TableRowTrailingText = tmp(6980).TableRowTrailingText;
       if (null != found) {
-        const tmpResult4 = tmp(5641);
+        const tmpResult4 = tmp(5647);
         channelName = tmpResult4.computeChannelName(found, UserStore, RelationshipStore, true);
       } else {
-        let intl = tmp(1125).intl;
-        channelName = intl.string(_modDef3864.iZIF9m);
+        let intl = tmp(1114).intl;
+        channelName = intl.string(_modDef3865.iZIF9m);
       }
       const obj5 = { hasIcons: false, children: closure_12(TableRow, obj3) };
       obj6 = { text: channelName };
@@ -593,349 +138,8 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     }
   }
   return fallback;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePickerSettingRow(def) {
-  let arr;
-  let conjureSettingsGuildId;
-  let disabled;
-  let fallback;
-  let hint;
-  let isPreview;
-  let onChange;
-  let projectId;
-  let value;
-  let tmp = def;
-  let tmp2 = conjureSettingsGuildId;
-  let obj = def(conjureSettingsGuildId[29]);
-  const cResult = obj.c(29);
-  def = def.def;
-  ({ hint, value, disabled, onChange } = def);
-  ({ projectId, isPreview, fallback } = def);
-  let obj2 = def(conjureSettingsGuildId[30]);
-  conjureSettingsGuildId = obj2.useConjureSettingsGuildId(projectId, isPreview);
-  let tmp5 = onChange;
-  const tmp6 = onChange(conjureSettingsGuildId[30])(conjureSettingsGuildId, def);
-  if (cResult[0] !== value) {
-    const tmpResult = tmp(tmp2[30]);
-    const result = tmpResult.conjureSettingPickedIds(value);
-    let num = 0;
-    cResult[0] = value;
-    cResult[1] = result;
-    arr = result;
-  } else {
-    arr = cResult[1];
-  }
-  let tmp9 = null;
-  const useConjureMemberRequests = tmp(tmp2[37]).useConjureMemberRequests;
-  tmp(tmp2[37]);
-  if ("user" === def.type) {
-    tmp9 = conjureSettingsGuildId;
-  }
-  const conjureMemberRequests = useConjureMemberRequests(tmp9, arr);
-  if (null != conjureSettingsGuildId) {
-    if (null != tmp6) {
-      let formatToPlainStringResult;
-      if (cResult[2] === def.multiple) {
-        if (cResult[3] === tmp6) {
-          if (cResult[4] === arr) {
-            let tmp13;
-            let tmp20;
-            let tmp24;
-            if (cResult[5] === value) {
-              let closure_3 = cResult[6];
-              let _slicedToArray = cResult[7];
-              tmp13 = cResult[8];
-            }
-            const label = def.label;
-            if (cResult[10] !== hint) {
-              let tmp21;
-              if (null != hint) {
-                const obj3 = { variant: "text-xs/medium", color: "text-subtle", children: null };
-                const Text = tmp(tmp2[26]).Text;
-                tmp(tmp2[20]);
-                class I {
-                  constructor() {
-                    tmp = closure_0;
-                    tmp2 = closure_2;
-                    tmp3 = closure_0(closure_2[35]);
-                    showActionSheet = tmp3.showActionSheet;
-                    tmp4 = jsx;
-                    obj = { guildId: closure_2, type: def.type, channelFilter: def.channel_filter, title: def.label, maxPicks: null, selected: null, onSubmit: null };
-                    num = 1;
-                    tmp5 = closure_1(closure_2[38]);
-                    if (closure_3) {
-                      num = tmp(tmp2[30]).MAX_CONJURE_SETTING_PICKS;
-                    }
-                    obj1 = { content: null, key: null, stackingBehavior: "stack" };
-                    obj.maxPicks = num;
-                    obj.selected = closure_4.filter((id) => arr.includes(id.id));
-                    obj.onSubmit = function onSubmit(arr) {
-                      const mapped = arr.map(function() { /* body not rendered: F163302 */ });
-                      let tmp3 = mapped;
-                      const tmp2 = onChange;
-                      if (!closure_1_3) {
-                        let str = mapped[0];
-                        if (str == null) {
-                          str = "";
-                        }
-                        tmp3 = str;
-                      }
-                      tmp2(tmp3);
-                    };
-                    obj1.content = tmp4(tmp5, obj);
-                    obj1.key = ConjureSettingsPickerSheet;
-                    showActionSheetResult = showActionSheet(obj1);
-                    return;
-                  }
-                }
-                tmp21 = closure_12(Text, obj3);
-              }
-              cResult[10] = hint;
-              class I {
-                constructor() {
-                  tmp = closure_0;
-                  tmp2 = closure_2;
-                  tmp3 = closure_0(closure_2[35]);
-                  showActionSheet = tmp3.showActionSheet;
-                  tmp4 = jsx;
-                  obj = { guildId: closure_2, type: def.type, channelFilter: def.channel_filter, title: def.label, maxPicks: null, selected: null, onSubmit: null };
-                  num = 1;
-                  tmp5 = closure_1(closure_2[38]);
-                  if (closure_3) {
-                    num = tmp(tmp2[30]).MAX_CONJURE_SETTING_PICKS;
-                  }
-                  obj1 = { content: null, key: null, stackingBehavior: "stack" };
-                  obj.maxPicks = num;
-                  obj.selected = closure_4.filter((id) => arr.includes(id.id));
-                  obj.onSubmit = function onSubmit(arr) {
-                    const mapped = arr.map(function() { /* body not rendered: F163302 */ });
-                    let tmp3 = mapped;
-                    const tmp2 = onChange;
-                    if (!closure_1_3) {
-                      let str = mapped[0];
-                      if (str == null) {
-                        str = "";
-                      }
-                      tmp3 = str;
-                    }
-                    tmp2(tmp3);
-                  };
-                  obj1.content = tmp4(tmp5, obj);
-                  obj1.key = ConjureSettingsPickerSheet;
-                  showActionSheetResult = showActionSheet(obj1);
-                  return;
-                }
-              }
-              tmp20 = tmp21;
-            } else {
-              tmp20 = cResult[11];
-            }
-            if (cResult[12] !== tmp13) {
-              const obj4 = { text: tmp13 };
-              const tmp26 = closure_12(tmp(tmp2[33]).TableRowTrailingText, obj4);
-              class I {
-                constructor() {
-                  tmp = closure_0;
-                  tmp2 = closure_2;
-                  tmp3 = closure_0(closure_2[35]);
-                  showActionSheet = tmp3.showActionSheet;
-                  tmp4 = jsx;
-                  obj = { guildId: closure_2, type: def.type, channelFilter: def.channel_filter, title: def.label, maxPicks: null, selected: null, onSubmit: null };
-                  num = 1;
-                  tmp5 = closure_1(closure_2[38]);
-                  if (closure_3) {
-                    num = tmp(tmp2[30]).MAX_CONJURE_SETTING_PICKS;
-                  }
-                  obj1 = { content: null, key: null, stackingBehavior: "stack" };
-                  obj.maxPicks = num;
-                  obj.selected = closure_4.filter((id) => arr.includes(id.id));
-                  obj.onSubmit = function onSubmit(arr) {
-                    const mapped = arr.map(function() { /* body not rendered: F163302 */ });
-                    let tmp3 = mapped;
-                    const tmp2 = onChange;
-                    if (!closure_1_3) {
-                      let str = mapped[0];
-                      if (str == null) {
-                        str = "";
-                      }
-                      tmp3 = str;
-                    }
-                    tmp2(tmp3);
-                  };
-                  obj1.content = tmp4(tmp5, obj);
-                  obj1.key = ConjureSettingsPickerSheet;
-                  showActionSheetResult = showActionSheet(obj1);
-                  return;
-                }
-              }
-              cResult[13] = tmp26;
-              tmp24 = tmp26;
-            } else {
-              tmp24 = cResult[13];
-            }
-            if (cResult[14] === def.channel_filter) {
-              if (cResult[15] === def.label) {
-                if (cResult[16] === def.type) {
-                  if (cResult[17] === conjureSettingsGuildId) {
-                    if (cResult[18] === tmp11) {
-                      if (cResult[19] === onChange) {
-                        if (cResult[20] === tmp12) {
-                          let tmp27;
-                          if (cResult[21] === arr) {
-                            tmp27 = cResult[22];
-                          }
-                          if (cResult[23] === def.label) {
-                            if (cResult[24] === disabled) {
-                              if (cResult[25] === tmp20) {
-                                if (cResult[26] === tmp24) {
-                                  let tmp28;
-                                  if (cResult[27] === tmp27) {
-                                    tmp28 = cResult[28];
-                                  }
-                                  return tmp28;
-                                }
-                              }
-                            }
-                          }
-                          const obj5 = { hasIcons: false, children: closure_12(tmp(tmp2[32]).TableRow, tmp30) };
-                          const TableRowGroup = tmp(tmp2[19]).TableRowGroup;
-                          class I {
-                            constructor() {
-                              tmp = closure_0;
-                              tmp2 = closure_2;
-                              tmp3 = closure_0(closure_2[35]);
-                              showActionSheet = tmp3.showActionSheet;
-                              tmp4 = jsx;
-                              obj = { guildId: closure_2, type: def.type, channelFilter: def.channel_filter, title: def.label, maxPicks: null, selected: null, onSubmit: null };
-                              num = 1;
-                              tmp5 = closure_1(closure_2[38]);
-                              if (closure_3) {
-                                num = tmp(tmp2[30]).MAX_CONJURE_SETTING_PICKS;
-                              }
-                              obj1 = { content: null, key: null, stackingBehavior: "stack" };
-                              obj.maxPicks = num;
-                              obj.selected = closure_4.filter((id) => arr.includes(id.id));
-                              obj.onSubmit = function onSubmit(arr) {
-                                const mapped = arr.map(function() { /* body not rendered: F163302 */ });
-                                let tmp3 = mapped;
-                                const tmp2 = onChange;
-                                if (!closure_1_3) {
-                                  let str = mapped[0];
-                                  if (str == null) {
-                                    str = "";
-                                  }
-                                  tmp3 = str;
-                                }
-                                tmp2(tmp3);
-                              };
-                              obj1.content = tmp4(tmp5, obj);
-                              obj1.key = ConjureSettingsPickerSheet;
-                              showActionSheetResult = showActionSheet(obj1);
-                              return;
-                            }
-                          }
-                          tmp30[0] = label;
-                          tmp30[1] = tmp20;
-                          tmp30[3] = disabled;
-                          tmp30[4] = tmp24;
-                          tmp30[5] = tmp27;
-                          const tmp31 = closure_12(TableRowGroup, obj5);
-                          cResult[23] = def.label;
-                          cResult[24] = disabled;
-                          cResult[25] = tmp20;
-                          cResult[26] = tmp24;
-                          cResult[27] = tmp27;
-                          cResult[28] = tmp31;
-                          tmp28 = tmp31;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            class I {
-              constructor() {
-                tmp = closure_0;
-                tmp2 = closure_2;
-                tmp3 = closure_0(closure_2[35]);
-                showActionSheet = tmp3.showActionSheet;
-                tmp4 = jsx;
-                obj = { guildId: closure_2, type: def.type, channelFilter: def.channel_filter, title: def.label, maxPicks: null, selected: null, onSubmit: null };
-                num = 1;
-                tmp5 = closure_1(closure_2[38]);
-                if (closure_3) {
-                  num = tmp(tmp2[30]).MAX_CONJURE_SETTING_PICKS;
-                }
-                obj1 = { content: null, key: null, stackingBehavior: "stack" };
-                obj.maxPicks = num;
-                obj.selected = closure_4.filter((id) => arr.includes(id.id));
-                obj.onSubmit = function onSubmit(arr) {
-                  const mapped = arr.map(function() { /* body not rendered: F163302 */ });
-                  let tmp3 = mapped;
-                  const tmp2 = onChange;
-                  if (!closure_1_3) {
-                    let str = mapped[0];
-                    if (str == null) {
-                      str = "";
-                    }
-                    tmp3 = str;
-                  }
-                  tmp2(tmp3);
-                };
-                obj1.content = tmp4(tmp5, obj);
-                obj1.key = ConjureSettingsPickerSheet;
-                showActionSheetResult = showActionSheet(obj1);
-                return;
-              }
-            }
-            cResult[14] = def.channel_filter;
-            cResult[15] = def.label;
-            cResult[16] = def.type;
-            cResult[17] = conjureSettingsGuildId;
-            cResult[18] = tmp11;
-            cResult[19] = onChange;
-            cResult[20] = tmp12;
-            cResult[21] = arr;
-            cResult[22] = I;
-            tmp27 = I;
-          }
-        }
-      }
-      const _Symbol = Symbol;
-      let str = "react.memo_cache_sentinel";
-      const tmpResult6 = tmp(tmp2[30]);
-      const withSavedPicksResult = tmpResult6.withSavedPicks(tmp6, value, tmp16);
-      _slicedToArray = withSavedPicksResult;
-      closure_3 = tmp17;
-      if (true === def.multiple) {
-        const intl2 = tmp(tmp2[14]).intl;
-        const obj6 = { count: arr.length };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp5(tmp2[15])["LPs/Pv"], obj6);
-      } else {
-        const found = withSavedPicksResult.find((id) => id.id === arr[0]);
-        formatToPlainStringResult = undefined;
-        if (found != null) {
-          formatToPlainStringResult = found.label;
-        }
-        if (formatToPlainStringResult == null) {
-          const intl = tmp(tmp2[14]).intl;
-          formatToPlainStringResult = intl.string(tmp5(tmp2[15]).rn7w7I);
-        }
-      }
-      cResult[2] = def.multiple;
-      cResult[3] = tmp6;
-      cResult[4] = arr;
-      cResult[5] = value;
-      cResult[6] = true === def.multiple;
-      cResult[7] = withSavedPicksResult;
-      cResult[8] = formatToPlainStringResult;
-      tmp13 = formatToPlainStringResult;
-    }
-  }
-  return fallback;
-}) : (function ConjurePickerSettingRow(def) {
+}
+function ConjurePickerSettingRow(def) {
   let _undefined;
   let _undefined2;
   let disabled;
@@ -955,16 +159,16 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   let tmp = def;
   let tmp2 = conjureSettingsGuildId;
   ({ projectId, isPreview, disabled, fallback } = def);
-  let obj = def(conjureSettingsGuildId[30]);
+  let obj = def(conjureSettingsGuildId[28]);
   conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, isPreview);
   let tmp4 = importDefault;
   let tmp5 = require("useConjureSettingPickerOptions")(conjureSettingsGuildId, def);
-  let obj2 = def(conjureSettingsGuildId[30]);
+  let obj2 = def(conjureSettingsGuildId[28]);
   const result = obj2.conjureSettingPickedIds(value);
   let c3 = result;
   let tmp7 = null;
-  const useConjureMemberRequests = def(conjureSettingsGuildId[37]).useConjureMemberRequests;
-  def(conjureSettingsGuildId[37]);
+  const useConjureMemberRequests = def(conjureSettingsGuildId[35]).useConjureMemberRequests;
+  def(conjureSettingsGuildId[35]);
   if ("user" === def.type) {
     tmp7 = conjureSettingsGuildId;
   }
@@ -972,7 +176,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
   if (null != conjureSettingsGuildId) {
     if (null != tmp5) {
       let formatToPlainStringResult;
-      const tmpResult = tmp(tmp2[30]);
+      const tmpResult = tmp(tmp2[28]);
       const withSavedPicksResult = tmpResult.withSavedPicks(tmp5, value, (id) => ({ id, label: id }));
       c4 = withSavedPicksResult;
       closure_5 = tmp13;
@@ -997,7 +201,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
         subLabel: tmp11Result,
         arrow: true,
         disabled,
-        trailing: closure_12(tmp(tmp2[33]).TableRowTrailingText, obj7),
+        trailing: closure_12(tmp(tmp2[31]).TableRowTrailingText, obj7),
         onPress() {
               let num;
               let tmp2 = dependencyMap;
@@ -1030,12 +234,12 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
               if (closure_5) {
                 num = useConjureSettingPickerOptions.MAX_CONJURE_SETTING_PICKS;
               }
-              const obj2 = { content: tmp4(tmp5, obj), key: ConjureSettingsPickerSheet, stackingBehavior: "stack" };
+              const obj2 = { content: tmp4(tmp5, obj), key: "ConjureSettingsPickerSheet", stackingBehavior: "stack" };
               showActionSheet(obj2);
             }
       };
       tmp11Result = undefined;
-      const TableRow = tmp(tmp2[32]).TableRow;
+      const TableRow = tmp(tmp2[30]).TableRow;
       if (null != hint) {
         const obj5 = { variant: "text-xs/medium", color: "text-subtle", children: tmpResult2.conjureLinkedNodes(hint, "text-xs/medium") };
         const Text = tmp(tmp2[26]).Text;
@@ -1049,7 +253,18 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
     }
   }
   return fallback;
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+const View = react_native.View;
+({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { linkedField: obj2, section: obj3, secretRow: obj4, secretRowInfo: obj5 };
+obj2 = { gap: nativeDefault.space.PX_4 };
+createStyles = createStyles.createStyles;
+obj3 = { gap: nativeDefault.space.PX_16 };
+obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8 };
+obj5 = { flex: 1, gap: nativeDefault.space.PX_4 };
+let closure_15 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/conjure/settings/native/useConjureAppSettingsForm.tsx");
 
 export default function useConjureAppSettingsForm(projectId) {
@@ -1060,7 +275,13 @@ export default function useConjureAppSettingsForm(projectId) {
   let c14;
   let c15;
   let c16;
+  let closure_13;
   let closure_4;
+  let closure_7;
+  let closure_9;
+  let first;
+  let first1;
+  let first2;
   let intl;
   let intl2;
   let intl3;
@@ -1084,12 +305,17 @@ export default function useConjureAppSettingsForm(projectId) {
   if (flag === undefined) {
     flag = false;
   }
+  first = undefined;
+  closure_7 = undefined;
+  first1 = undefined;
+  closure_9 = undefined;
   c10 = undefined;
   c11 = undefined;
+  first2 = undefined;
+  closure_13 = undefined;
   c14 = undefined;
   c15 = undefined;
   c16 = undefined;
-  let memo;
   let found1;
   let closure_22;
   let closure_23;
@@ -1320,7 +546,7 @@ export default function useConjureAppSettingsForm(projectId) {
             };
             tmp9 = first[found.key];
             const tmp4 = first2;
-            const tmp5 = memo1;
+            const tmp5 = c16;
             if (tmp9 == null) {
               tmp9 = memo1[found.key];
             }
@@ -1351,7 +577,7 @@ export default function useConjureAppSettingsForm(projectId) {
       };
       tmp19 = first[found.key];
       const tmp14 = first2;
-      const tmp15 = found;
+      const tmp15 = memo;
       if (tmp19 == null) {
         tmp19 = memo1[found.key];
       }
@@ -1586,31 +812,25 @@ export default function useConjureAppSettingsForm(projectId) {
     items2[1] = tmp6Result;
     tmp4Result = tmp4(tmp5, obj, value.name);
   }
-  let tmp = memo();
-  channels = tmp;
+  let tmp = c15();
+  _slicedToArray = tmp;
   let tmp2 = projectId;
   let tmp3 = onSaved;
   let obj = projectId(onSaved[12]);
   let items = [c11];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureSettingsStore.getSettings(projectId));
   let obj2 = stateFromStores;
-  let tmp5 = channels(stateFromStores.useState({}), 2);
-  const first = tmp5[0];
-  let closure_7 = tmp5[1];
-  let tmp7 = channels(stateFromStores.useState({}), 2);
-  const first1 = tmp7[0];
-  let closure_9 = tmp7[1];
-  let tmp9 = channels(stateFromStores.useState({}), 2);
+  [first, closure_7] = stateFromStores.useState({});
+  [first1, closure_9] = stateFromStores.useState({});
+  let tmp9 = _slicedToArray(stateFromStores.useState({}), 2);
   [c10, c11] = tmp9;
-  let tmp10 = channels(stateFromStores.useState(false), 2);
-  const first2 = tmp10[0];
-  let closure_13 = tmp10[1];
-  const tmp12 = channels(stateFromStores.useState(false), 2);
+  [first2, closure_13] = stateFromStores.useState(false);
+  const tmp12 = _slicedToArray(stateFromStores.useState(false), 2);
   [tmp13, c14] = tmp12;
-  let tmp14 = channels(stateFromStores.useState(false), 2);
+  let tmp14 = _slicedToArray(stateFromStores.useState(false), 2);
   [c15, c16] = tmp14;
   let items1 = [stateFromStores];
-  memo = stateFromStores.useMemo(() => {
+  const memo = stateFromStores.useMemo(() => {
     let schema;
     if (stateFromStores != null) {
       schema = stateFromStores.schema;
@@ -1768,7 +988,7 @@ export default function useConjureAppSettingsForm(projectId) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

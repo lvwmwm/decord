@@ -1,21 +1,20 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11815
+// Function ID: 11816
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11660, 5005, 587, 558, 576, 1631, 11661, 11676, 5271, 2]
+// Dependencies: [19, 17, 21, 11816, 5009, 575, 1626, 11817, 11830, 5619, 2]
+// Exports: default
 
-// Module 11659 (StageViewWithPrompts)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11660 */;
-import FocusedControls from "FocusedControls" /* 11661 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11676 */;
+// Module 11815 (StageViewWithPrompts)
+import nativeDefault from "native" /* 575 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11816 */;
+import FocusedControls from "FocusedControls" /* 11817 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 11830 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,125 +28,9 @@ let closure_7 = StageChannelHeightHooks.CALL_ACTION_BAR_HEIGHT + 8;
 let obj = { scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, illustration: obj2, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } };
 obj2 = { marginTop: nativeDefault.space.PX_48, marginBottom: nativeDefault.space.PX_16 };
 const styles = createStyles.createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageViewWithPrompts(arg0) {
-  let body;
-  let bottom;
-  let children;
-  let items;
-  let title;
-  let top;
-  const obj = react2;
-  const cResult = obj.c(25);
-  ({ title, body, children } = arg0);
-  const tmp4 = styles();
-  ({ top, bottom } = useSafeAreaInsetsDefault());
-  useSafeAreaInsetsDefault();
-  const sum = top + FocusedControls.FOCUSED_CONTROLS_HEADER_HEIGHT;
-  const sum1 = bottom + closure_7;
-  if (cResult[0] === sum) {
-    let tmp8;
-    if (cResult[1] === sum1) {
-      tmp8 = cResult[2];
-    }
-    if (cResult[3] === tmp4.container) {
-      let tmp9;
-      let tmp11;
-      let tmp14;
-      if (cResult[4] === tmp8) {
-        tmp9 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp13 = hasOwnProperty(MicrophoneSpotIllustration.MicrophoneSpotIllustration, { accessible: false });
-        cResult[6] = tmp13;
-        tmp11 = tmp13;
-      } else {
-        tmp11 = cResult[6];
-      }
-      if (cResult[7] !== tmp4.illustration) {
-        const obj2 = { style: tmp4.illustration, children: tmp11 };
-        const tmp17 = hasOwnProperty(React3, obj2);
-        cResult[7] = tmp4.illustration;
-        cResult[8] = tmp17;
-        tmp14 = tmp17;
-      } else {
-        tmp14 = cResult[8];
-      }
-      if (cResult[9] === tmp4.title) {
-        let tmp18;
-        if (cResult[10] === title) {
-          tmp18 = cResult[11];
-        }
-        if (cResult[12] === body) {
-          let tmp21;
-          if (cResult[13] === tmp4.body) {
-            tmp21 = cResult[14];
-          }
-          if (cResult[15] === children) {
-            let tmp24;
-            if (cResult[16] === tmp4.prompts) {
-              tmp24 = cResult[17];
-            }
-            if (cResult[18] === tmp4.scrollView) {
-              if (cResult[19] === tmp9) {
-                if (cResult[20] === tmp14) {
-                  if (cResult[21] === tmp18) {
-                    if (cResult[22] === tmp21) {
-                      let tmp28;
-                      if (cResult[23] === tmp24) {
-                        tmp28 = cResult[24];
-                      }
-                      return tmp28;
-                    }
-                  }
-                }
-              }
-            }
-            const obj3 = { style: tmp4.scrollView, contentContainerStyle: tmp9, alwaysBounceVertical: false, children: items };
-            items = [tmp14, tmp18, tmp21, tmp24];
-            const tmp31 = metroRequire(_false, obj3);
-            cResult[18] = tmp4.scrollView;
-            cResult[19] = tmp9;
-            cResult[20] = tmp14;
-            cResult[21] = tmp18;
-            cResult[22] = tmp21;
-            cResult[23] = tmp24;
-            cResult[24] = tmp31;
-            tmp28 = tmp31;
-          }
-          const obj4 = { style: tmp4.prompts, children };
-          const tmp27 = hasOwnProperty(React3, obj4);
-          cResult[15] = children;
-          cResult[16] = tmp4.prompts;
-          cResult[17] = tmp27;
-          tmp24 = tmp27;
-        }
-        const obj5 = { style: tmp4.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
-        const tmp23 = hasOwnProperty(Text_Text.Text, obj5);
-        cResult[12] = body;
-        cResult[13] = tmp4.body;
-        cResult[14] = tmp23;
-        tmp21 = tmp23;
-      }
-      const obj6 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "text-overlay-light", children: title };
-      const tmp20 = hasOwnProperty(Text_Text.Text, obj6);
-      cResult[9] = tmp4.title;
-      cResult[10] = title;
-      cResult[11] = tmp20;
-      tmp18 = tmp20;
-    }
-    const items1 = [tmp4.container, tmp8];
-    cResult[3] = tmp4.container;
-    cResult[4] = tmp8;
-    cResult[5] = items1;
-    tmp9 = items1;
-  }
-  const obj7 = { paddingTop: sum, paddingBottom: sum1 };
-  cResult[0] = sum;
-  cResult[1] = sum1;
-  cResult[2] = obj7;
-  tmp8 = obj7;
-}) : (function StageViewWithPrompts(arg0) {
+const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageViewWithPrompts.tsx");
+
+export default function StageViewWithPrompts(arg0) {
   let body;
   let bottom;
   let children;
@@ -173,8 +56,5 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageViewW
   const obj6 = { style: tmp.prompts, children };
   items1[3] = hasOwnProperty(React3, obj6);
   return metroRequire(_false, obj);
-});
-const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageViewWithPrompts.tsx");
-
-export default tmp6;
+};
 export const useStyles = styles;

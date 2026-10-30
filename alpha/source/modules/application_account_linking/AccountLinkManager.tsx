@@ -1,25 +1,27 @@
-// Module ID: 19984
-// Function ID: 19985
+// Module ID: 20047
+// Function ID: 20048
 // Name: AccountLinkManager
-// Dependencies: [32, 5, 7263, 19985, 1084, 1101, 1294, 7274, 2]
+// Dependencies: [32, 5, 7270, 20048, 1072, 1090, 1283, 7281, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 19984 (AccountLinkManager)
-import DurationsDefault from "Durations" /* 1101 */;
+// Module 20047 (AccountLinkManager)
+import DurationsDefault from "Durations" /* 1090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7263 */;
-import AccountLinkStore from "AccountLinkStore" /* 19985 */;
-import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7270 */;
+import AccountLinkStore from "AccountLinkStore" /* 20048 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
-let application_id, closure_2, closure_3, postResult;
+let postResult;
 
 let metroImportDefault;
 let metroRequire;
 let obj = function _claimIncentivizedAccountLinkingReward() {
   obj = _asyncToGenerator(async (application_id) => {
+    let closure_2;
+    let closure_3;
     let c5 = 0;
     let c6 = 0;
     let c4 = 0;
@@ -28,87 +30,33 @@ let obj = function _claimIncentivizedAccountLinkingReward() {
       let c1;
       let c2;
       let obj5;
-      if (c6 === 2) {
+      const HTTP = closure_130_0(closure_130_1[6]).HTTP;
+      const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
+      obj5 = { application_id };
+      postResult = HTTP.post(request);
+      await postResult;
+      if (2 === c5) {
+        c4 = 0;
+        postResult = c2;
+        if (c2 != null) {
+          postResult(closure_3);
+        }
+      } else if (arg0 === 1) {
         c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 0;
+        c6 = 3;
+        return { value, done: true };
       } else {
-        try {
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp;
-              application_id = undefined;
-              postResult = undefined;
-              c2 = undefined;
-              ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
-              c5 = 1;
-              c6 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              c4 = 1;
-              const HTTP = closure_130_0(closure_130_1[6]).HTTP;
-              const request = { url: closure_130_7.OAUTH2_ACCOUNT_LINKING_ACHIEVEMENT, body: obj5, rejectWithError: true };
-              obj5 = { application_id };
-              postResult = HTTP.post(request);
-              c5 = 3;
-              c6 = 1;
-              return { value: postResult, done: false };
-            }
-          } else {
-            if (2 === c5) {
-              c4 = 0;
-              postResult = c2;
-              if (c2 != null) {
-                postResult(closure_3);
-              }
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
-              return { value, done: true };
-            } else {
-              if (postResult != null) {
-                postResult();
-              }
-              c4 = 0;
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp21) {
-          closure_3 = tmp21;
-          if (0 === c4) {
-            c6 = 3;
-            throw tmp21;
-          } else {
-            c5 = 2;
-          }
+        if (postResult != null) {
+          postResult();
         }
+        c4 = 0;
       }
+      await "HermesInternal";
+      ({ applicationId: c0, onSuccess: c1, onError: c2 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;

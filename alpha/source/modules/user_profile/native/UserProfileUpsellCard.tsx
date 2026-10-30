@@ -1,19 +1,19 @@
-// Module ID: 16386
-// Function ID: 16387
+// Module ID: 16438
+// Function ID: 16439
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7364, 7602, 21, 5005, 587, 558, 576, 9487, 5271, 5295, 1104, 1199, 2]
+// Dependencies: [19, 17, 7371, 7610, 21, 5009, 575, 1188, 9506, 5619, 5582, 1093, 2]
+// Exports: default
 
-// Module 16386 (UserProfileUpsellCard)
-import nativeDefault from "native" /* 587 */;
-import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import Constants from "Constants" /* 7364 */;
-import ColorConstants from "ColorConstants" /* 7602 */;
+// Module 16438 (UserProfileUpsellCard)
+import nativeDefault from "native" /* 575 */;
+import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import Constants from "Constants" /* 7371 */;
+import ColorConstants from "ColorConstants" /* 7610 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,132 +37,15 @@ createStyles = createStyles.createStyles;
 obj3 = { marginHorizontal: PROFILE_SIDE_PADDING - 1 };
 obj4 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileUpsellCard(arg0) {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
+
+export default function UserProfileUpsellCard(headerText) {
   let cardStyle;
   let children;
   let closure_0;
   let contentStyle;
   let ctaStyle;
   let ctaText;
-  let disabled;
-  let headerText;
-  let items1;
-  let onPress;
-  let showLinearGradient;
-  let style;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(34);
-  ({ style, children, ctaText, headerText, showLinearGradient, cardStyle, contentStyle, ctaStyle, disabled, onPress } = arg0);
-  const tmp4 = closure_8();
-  _require = tmp4;
-  if (cResult[0] === style) {
-    if (cResult[3] === cardStyle) {
-      if (cResult[6] === contentStyle) {
-        if (cResult[9] === headerText) {
-          if (cResult[12] === ctaStyle) {
-            let tmp13;
-            let tmp15;
-            if (cResult[13] === tmp4.upsellButton) {
-              tmp13 = cResult[14];
-            }
-            const _Symbol = Symbol;
-            if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-              class G {
-                constructor() {
-                  return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-                }
-              }
-              cResult[15] = G;
-              tmp15 = G;
-            } else {
-              class G {
-                constructor() {
-                  return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-                }
-              }
-            }
-            if (cResult[16] === showLinearGradient) {
-              class G {
-                constructor() {
-                  return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-                }
-              }
-              if (cResult[19] === ctaText) {
-                class G {
-                  constructor() {
-                    return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-                  }
-                }
-              }
-              const obj2 = { style: tmp13, disabled, onPress, text: ctaText, color: tmp(1199).ButtonColors.GREEN, renderIcon: tmp15, renderLinearGradient: tmp16 };
-              const ShinyButton = tmp(1199).ShinyButton;
-              cResult[19] = ctaText;
-              cResult[20] = disabled;
-              cResult[21] = onPress;
-              cResult[22] = tmp13;
-              cResult[23] = tmp16;
-              cResult[24] = closure_6(ShinyButton, obj2);
-              const tmp20 = closure_6(ShinyButton, obj2);
-            }
-            if (showLinearGradient) {
-              class G {
-                constructor() {
-                  return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-                }
-              }
-            }
-            cResult[16] = showLinearGradient;
-            cResult[17] = tmp4.linearGradient;
-            cResult[18] = undefined;
-          }
-          const items = [tmp4.upsellButton, ctaStyle];
-          cResult[12] = ctaStyle;
-          cResult[13] = tmp4.upsellButton;
-          cResult[14] = items;
-          tmp13 = items;
-        }
-        let tmp9 = null;
-        if (null != headerText) {
-          class G {
-            constructor() {
-              return closure_1_6(closure_0(closure_1_2[9]).NitroWheelIcon, { color: "white", size: "xs" });
-            }
-          }
-          const obj3 = { style: tmp4.titleContainer, children: items1 };
-          const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-          const NitroWheelIcon = tmp(9487).NitroWheelIcon;
-          items1 = [closure_6(NitroWheelIcon, obj4), ];
-          const obj5 = { variant: "heading-sm/bold", children: headerText };
-          items1[1] = closure_6(tmp(5271).Text, obj5);
-          tmp9 = closure_7(closure_3, obj3);
-        }
-        cResult[9] = headerText;
-        cResult[10] = tmp4.titleContainer;
-        cResult[11] = tmp9;
-      }
-      const items2 = [tmp4.inner, contentStyle];
-      cResult[6] = contentStyle;
-      cResult[7] = tmp4.inner;
-      cResult[8] = items2;
-    }
-    const items3 = [tmp4.scroll, cardStyle];
-    cResult[3] = cardStyle;
-    cResult[4] = tmp4.scroll;
-    cResult[5] = items3;
-  }
-  const items4 = [tmp4.outer, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.outer;
-  cResult[2] = items4;
-}) : (function UserProfileUpsellCard(headerText) {
-  let cardStyle;
-  let children;
-  let closure_0;
-  let contentStyle;
-  let ctaStyle;
-  let ctaText;
-  let disabled;
   let fn;
   let items;
   let items1;
@@ -176,7 +59,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let style;
   let tmp7;
   headerText = headerText.headerText;
-  ({ style, children, ctaText, showLinearGradient, cardStyle, contentStyle, ctaStyle, disabled, onPress } = headerText);
+  ({ style, children, ctaText, showLinearGradient, cardStyle, contentStyle, ctaStyle, onPress } = headerText);
   let tmp = closure_8();
   _require = tmp;
   let obj = { borderWidth: 1, style: items, direction: require("native").GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: nativeDefault.radii.lg, children: closure_7(tmp7, obj2) };
@@ -190,7 +73,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: items3 };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const NitroWheelIcon = tmp3(9487).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(9506).NitroWheelIcon;
     items3 = [closure_6(NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
     items3[1] = closure_6(require("Text/Text").Text, obj5);
@@ -199,17 +82,16 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   items4 = [tmp6Result, children, ];
   const obj6 = {
     style: items5,
-    disabled,
     onPress,
     text: ctaText,
     color: require("native").ButtonColors.GREEN,
     renderIcon() {
-      return closure_1_6(closure_0(dependencyMap[9]).NitroWheelIcon, { color: "white", size: "xs" });
+      return closure_1_6(closure_0(dependencyMap[8]).NitroWheelIcon, { color: "white", size: "xs" });
     },
     renderLinearGradient: fn
   };
   items5 = [tmp.upsellButton, ctaStyle];
-  const ShinyButton = tmp3(1199).ShinyButton;
+  const ShinyButton = tmp3(1188).ShinyButton;
   fn = undefined;
   if (showLinearGradient) {
     fn = () => {
@@ -220,7 +102,4 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   }
   items4[2] = closure_6(ShinyButton, obj6);
   return closure_6(GradientBorder, obj);
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileUpsellCard.tsx");
-
-export default tmp6;
+};

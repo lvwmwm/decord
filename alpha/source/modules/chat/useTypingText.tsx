@@ -1,134 +1,18 @@
-// Module ID: 13533
-// Function ID: 13534
+// Module ID: 13682
+// Function ID: 13683
 // Name: useTypingText
-// Dependencies: [32, 1389, 558, 576, 6029, 504, 1125, 2]
+// Dependencies: [32, 1384, 504, 6036, 1114, 2]
+// Exports: default
 
-// Module 13533 (useTypingText)
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+// Module 13682 (useTypingText)
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypingText(channelId) {
-  let first;
-  let tmp10;
-  let tmp11;
-  let tmp12;
-  let typingUserIds;
-  let tmp2 = typingUserIds;
-  let obj = channelId(typingUserIds[3]);
-  const cResult = obj.c(16);
-  channelId = channelId.channelId;
-  const guildId = channelId.guildId;
-  typingUserIds = channelId.typingUserIds;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    if (cResult[2] === guildId) {
-      let tmp6;
-      let tmp7;
-      if (cResult[3] === typingUserIds) {
-        tmp6 = cResult[4];
-        tmp7 = cResult[5];
-      }
-      let tmp8 = _slicedToArray;
-      const tmpResult = channelId(tmp2[5]);
-      let tmp9 = _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp6, tmp7), 4);
-      [tmp10, tmp11, tmp12] = tmp9;
-      let tmp15 = null;
-      if (null != tmp10) {
-        let tmp16;
-        if (null == tmp11) {
-          let tmp22;
-          if (cResult[6] !== tmp10) {
-            const intl4 = tmp(tmp2[6]).intl;
-            const obj2 = { a: tmp10 };
-            const formatResult = intl4.format(channelId(tmp2[6]).t.lJ9sZX, obj2);
-            cResult[6] = tmp10;
-            cResult[7] = formatResult;
-            tmp22 = formatResult;
-          } else {
-            tmp22 = cResult[7];
-          }
-          tmp16 = tmp22;
-        } else if (null == tmp12) {
-          if (cResult[8] === tmp10) {
-            let tmp20;
-            if (cResult[9] === tmp11) {
-              tmp20 = cResult[10];
-            }
-            tmp16 = tmp20;
-          }
-          const intl3 = tmp(tmp2[6]).intl;
-          const obj3 = { a: tmp10, b: tmp11 };
-          const formatResult1 = intl3.format(channelId(tmp2[6]).t.rB0CUa, obj3);
-          cResult[8] = tmp10;
-          cResult[9] = tmp11;
-          cResult[10] = formatResult1;
-          tmp20 = formatResult1;
-        } else if (null == tmp13) {
-          if (cResult[11] === tmp10) {
-            if (cResult[12] === tmp11) {
-              let tmp18;
-              if (cResult[13] === tmp12) {
-                tmp18 = cResult[14];
-              }
-              tmp16 = tmp18;
-            }
-          }
-          const intl2 = tmp(tmp2[6]).intl;
-          const obj4 = { a: tmp10, b: tmp11, c: tmp12 };
-          const formatResult2 = intl2.format(channelId(tmp2[6]).t.StKThj, obj4);
-          cResult[11] = tmp10;
-          cResult[12] = tmp11;
-          cResult[13] = tmp12;
-          cResult[14] = formatResult2;
-          tmp18 = formatResult2;
-        } else {
-          const _Symbol = Symbol;
-          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const intl = tmp(tmp2[6]).intl;
-            const stringResult = intl.string(channelId(tmp2[6]).t.uVDhqZ);
-            cResult[15] = stringResult;
-            tmp16 = stringResult;
-          } else {
-            tmp16 = cResult[15];
-          }
-        }
-        tmp15 = tmp16;
-      }
-      return tmp15;
-    }
-  }
-  const fn = function u() {
-    const items = [];
-    const tmp2 = typingUserIds[Symbol.iterator]();
-    while (tmp2 !== undefined) {
-      let user = UserStore.getUser(tmp3);
-      if (null != user) {
-        let push = items.push;
-        let obj = NicknameUtilsDefault;
-        let arr = push(obj.getName(guildId, channelId, tmp6));
-      }
-      continue;
-    }
-    return items;
-  };
-  const items1 = [channelId, guildId, typingUserIds];
-  cResult[1] = channelId;
-  cResult[2] = guildId;
-  cResult[3] = typingUserIds;
-  cResult[4] = fn;
-  cResult[5] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : (function useTypingText(channelId) {
+const result = size.fileFinishedImporting("modules/chat/useTypingText.tsx");
+
+export default function useTypingText(channelId) {
   let tmp4;
   let tmp5;
   let tmp6;
@@ -137,7 +21,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypingTex
   const guildId = channelId.guildId;
   const typingUserIds = channelId.typingUserIds;
   let tmp2 = typingUserIds;
-  let obj = channelId(typingUserIds[5]);
+  let obj = channelId(typingUserIds[2]);
   let items = [UserStore];
   const items1 = [channelId, guildId, typingUserIds];
   const tmp3 = _slicedToArray(obj.useStateFromStoresArray(items, () => {
@@ -159,25 +43,22 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypingTex
   if (null != tmp4) {
     let formatResult;
     if (null == tmp5) {
-      const intl4 = tmp(tmp2[6]).intl;
+      const intl4 = tmp(tmp2[4]).intl;
       const obj2 = { a: tmp4 };
-      formatResult = intl4.format(tmp(tmp2[6]).t.lJ9sZX, obj2);
+      formatResult = intl4.format(tmp(tmp2[4]).t.lJ9sZX, obj2);
     } else if (null == tmp6) {
-      const intl3 = tmp(tmp2[6]).intl;
+      const intl3 = tmp(tmp2[4]).intl;
       const obj3 = { a: tmp4, b: tmp5 };
-      formatResult = intl3.format(tmp(tmp2[6]).t.rB0CUa, obj3);
+      formatResult = intl3.format(tmp(tmp2[4]).t.rB0CUa, obj3);
     } else if (null == tmp7) {
-      const intl2 = tmp(tmp2[6]).intl;
+      const intl2 = tmp(tmp2[4]).intl;
       const obj4 = { a: tmp4, b: tmp5, c: tmp6 };
-      formatResult = intl2.format(tmp(tmp2[6]).t.StKThj, obj4);
+      formatResult = intl2.format(tmp(tmp2[4]).t.StKThj, obj4);
     } else {
-      const intl = tmp(tmp2[6]).intl;
-      formatResult = intl.string(tmp(tmp2[6]).t.uVDhqZ);
+      const intl = tmp(tmp2[4]).intl;
+      formatResult = intl.string(tmp(tmp2[4]).t.uVDhqZ);
     }
     tmp8 = formatResult;
   }
   return tmp8;
-});
-const result = size.fileFinishedImporting("modules/chat/useTypingText.tsx");
-
-export default tmp2;
+};

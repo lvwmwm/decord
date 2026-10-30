@@ -1,41 +1,39 @@
-// Module ID: 18752
-// Function ID: 18753
+// Module ID: 18811
+// Function ID: 18812
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7760, 2066, 16484, 6873, 1389, 18329, 1084, 1086, 4854, 7364, 21, 5086, 8776, 5005, 1382, 587, 683, 5188, 558, 576, 573, 1125, 18363, 6968, 8761, 6016, 1272, 8715, 1631, 8758, 5242, 8774, 5190, 1497, 4833, 1504, 18753, 1415, 8778, 7098, 9581, 8719, 8731, 8732, 8744, 7338, 8755, 4841, 7555, 5707, 18754, 13532, 5634, 18757, 18758, 5071, 18759, 8751, 8738, 8768, 1102, 10503, 9456, 18761, 13134, 8716, 9431, 7549, 7707, 11154, 7642, 2]
+// Dependencies: [32, 19, 17, 7765, 2063, 16535, 6880, 1384, 18388, 1072, 1074, 4855, 7371, 21, 5090, 8810, 5009, 1377, 575, 671, 5194, 563, 1114, 6974, 18422, 8795, 6023, 1261, 8749, 1626, 8792, 5248, 8808, 5196, 1492, 4834, 1499, 18812, 1410, 8812, 7106, 9604, 8753, 8765, 8766, 8778, 7345, 8789, 4842, 7563, 5712, 18813, 13681, 5606, 18816, 18817, 5075, 18818, 8785, 8772, 8802, 1091, 10528, 9475, 18820, 13285, 8750, 9448, 7557, 7712, 11360, 7647, 2]
+// Exports: default
 
-// Module 18752 (YouScreen)
-import useStateFromStores from "useStateFromStores" /* 573 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef683 from "module_683" /* 683 */;
-import Constants from "Constants" /* 1084 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import intl4 from "intl" /* 1125 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import Pressables from "Pressables" /* 6968 */;
-import Constants2 from "Constants" /* 7364 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8776 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9581 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18363 */;
+// Module 18811 (YouScreen)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef671 from "module_671" /* 671 */;
+import Constants from "Constants" /* 1072 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import intl4 from "intl" /* 1114 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import Constants2 from "Constants" /* 7371 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8750 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8810 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9604 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18422 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 7760 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16484 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6873 */;
-import UserStore from "UserStore" /* 1389 */;
-import YouConstants from "YouConstants" /* 18329 */;
+import UserProfileStore from "UserProfileStore" /* 7765 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16535 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6880 */;
+import UserStore from "UserStore" /* 1384 */;
+import YouConstants from "YouConstants" /* 18388 */;
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexport_mod from "ReanimatedRexport" /* 5086 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ReanimatedRexport_mod from "ReanimatedRexport" /* 5090 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, nativeID, navigation, scrollEventThrottle;
+let dependencyMap, nativeID, navigation, scrollEventThrottle;
 
 let ScrollView;
 let closure_12;
@@ -56,6 +54,28 @@ function handleBackButtonPress() {
       navigation.navigate("guilds");
     }
   }
+}
+function BackButton(paddingTop) {
+  let formatToPlainStringResult;
+  let items1;
+  let totalMentionCount;
+  paddingTop = paddingTop.paddingTop;
+  const items = [GuildReadStateStore];
+  const tmp = closure_24();
+  const obj = useStateFromStores;
+  const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
+  if (stateFromStores > 0) {
+    const intl2 = tmp2(1114).intl;
+    const obj2 = { mentionCount: stateFromStores };
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1114).t.vxFYaM, obj2);
+  } else {
+    const intl = tmp2(1114).intl;
+    formatToPlainStringResult = intl.string(tmp2(1114).t["13/7kX"]);
+  }
+  const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_20(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
+  items1 = [tmp.backButton, { top: paddingTop }];
+  const PressableOpacity = tmp2(6974).PressableOpacity;
+  return closure_20(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(arg0) {
   let UserProfileAnalyticsProvider;
@@ -131,38 +151,38 @@ function UnconnectedYouScreen(arg0) {
     c2(nativeEvent.nativeEvent.layout.width);
   }, []);
   let tmp8;
-  const tmp7 = navigateToShop(8761);
+  const tmp7 = navigateToShop(8795);
   if (tmp3 > 0) {
     tmp8 = tmp3;
   }
   const tmp7Result = tmp7(tmp8);
   _slicedToArray = tmp7Result;
   const tmp10 = closure_23(tmp7Result);
-  let obj2 = { type: navigateToSettings(1272).ImpressionTypes.VIEW, name: navigateToSettings(1272).ImpressionNames.USER_YOU_SCREEN };
-  const tmp5Result = navigateToShop(6016);
+  let obj2 = { type: navigateToSettings(1261).ImpressionTypes.VIEW, name: navigateToSettings(1261).ImpressionNames.USER_YOU_SCREEN };
+  const tmp5Result = navigateToShop(6023);
   tmp5Result(obj2);
-  const obj3 = navigateToShop(8715)(user.id);
-  rect = tmp5(1631)();
-  ({ theme, primaryColor, secondaryColor } = navigateToShop(8758)({ user, displayProfile: obj3 }));
-  navigateToShop(8758)({ user, displayProfile: obj3 });
-  const tmp15 = navigateToShop(5242)();
+  const obj3 = navigateToShop(8749)(user.id);
+  rect = tmp5(1626)();
+  ({ theme, primaryColor, secondaryColor } = navigateToShop(8792)({ user, displayProfile: obj3 }));
+  navigateToShop(8792)({ user, displayProfile: obj3 });
+  const tmp15 = navigateToShop(5248)();
   const ref = obj.useRef(null);
-  let obj4 = navigateToSettings(5086);
+  let obj4 = navigateToSettings(5090);
   sharedValue = obj4.useSharedValue(0);
-  const obj5 = navigateToSettings(5086);
-  class Y {
+  const obj5 = navigateToSettings(5090);
+  class N {
     constructor(contentOffset) {
       const result = sharedValue.set(contentOffset.contentOffset.y);
     }
   }
-  Y.__closure = { scrollPosition: sharedValue };
-  Y.__workletHash = 952837799380;
-  Y.__initData = __initData;
-  const animatedScrollHandler = obj5.useAnimatedScrollHandler(Y);
-  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = navigateToShop(8774)({ scrollPosition: sharedValue, bannerHeight: tmp7Result }));
-  navigateToShop(8774)({ scrollPosition: sharedValue, bannerHeight: tmp7Result });
-  const isChatBesideChannelList = tmp5(5190)().isChatBesideChannelList;
-  size = tmp5(1497)();
+  N.__closure = { scrollPosition: sharedValue };
+  N.__workletHash = 952837799380;
+  N.__initData = __initData;
+  const animatedScrollHandler = obj5.useAnimatedScrollHandler(N);
+  ({ bannerAnimatedStyle, bannerImageAnimatedStyle, contentAnimatedStyle, blurAnimatedProps, showBlur } = navigateToShop(8808)({ scrollPosition: sharedValue, bannerHeight: tmp7Result }));
+  navigateToShop(8808)({ scrollPosition: sharedValue, bannerHeight: tmp7Result });
+  const isChatBesideChannelList = tmp5(5196)().isChatBesideChannelList;
+  size = tmp5(1492)();
   const height = size.height;
   let num = 0;
   const diff = size.width - rect.right - rect.left;
@@ -178,11 +198,11 @@ function UnconnectedYouScreen(arg0) {
   const tmpResult = tmp(obj.useState(false), 2);
   first = tmpResult[0];
   closure_8 = tmpResult[1];
-  const GifAutoPlay = tmp12(4833).GifAutoPlay;
+  const GifAutoPlay = tmp12(4834).GifAutoPlay;
   const setting = GifAutoPlay.getSetting();
-  const tmp12Result = navigateToSettings(1504);
+  const tmp12Result = navigateToSettings(1499);
   const isFocused = tmp12Result.useIsFocused();
-  const tmp12Result14 = navigateToSettings(18753);
+  const tmp12Result14 = navigateToSettings(18812);
   const tmp28 = !isFocused && !tmp12Result14.useIsProfileModalTransitioning();
   const ref1 = obj.useRef(Date.now());
   const ref2 = obj.useRef(undefined);
@@ -200,19 +220,19 @@ function UnconnectedYouScreen(arg0) {
     }
     let source = null;
     if (null != bannerURL) {
-      const tmp12Result15 = navigateToSettings(1415);
+      const tmp12Result15 = navigateToSettings(1410);
       source = tmp12Result15.makeSource(bannerURL);
     }
-    const tmp12Result16 = navigateToSettings(1415);
+    const tmp12Result16 = navigateToSettings(1410);
     const isAnimatedImageURLResult = tmp12Result16.isAnimatedImageURL(bannerURL);
-    let intl = tmp12(1125).intl;
+    let intl = tmp12(1114).intl;
     const obj7 = { username: user.username };
-    const formatToPlainStringResult = intl.formatToPlainString(navigateToSettings(1125).t.gVn4uJ, obj7);
+    const formatToPlainStringResult = intl.formatToPlainString(navigateToSettings(1114).t.gVn4uJ, obj7);
     const obj8 = { user, displayProfile: obj3 };
-    const tmp12Result17 = navigateToSettings(8778);
+    const tmp12Result17 = navigateToSettings(8812);
     const userProfileBannerBackgroundColor = tmp12Result17.useUserProfileBannerBackgroundColor(obj8);
     let items = [tmp7Result, bound, rect.bottom];
-    const tmp38 = navigateToShop(7098)();
+    const tmp38 = navigateToShop(7106)();
     const memo = obj.useMemo(() => {
       let floatingNavBottomMargin;
       let obj2;
@@ -225,12 +245,12 @@ function UnconnectedYouScreen(arg0) {
     }, items);
     ({ dimensionStyle, contentContainerStyle } = memo);
     const obj9 = { layout: "YOU_SCREEN", userId: user.id };
-    const tmp12Result18 = navigateToSettings(8719);
+    const tmp12Result18 = navigateToSettings(8753);
     const createUserProfileAnalyticsContext = tmp12Result18.useCreateUserProfileAnalyticsContext(obj9);
-    const tmp12Result19 = navigateToSettings(8731);
+    const tmp12Result19 = navigateToSettings(8765);
     const isScreenLandscape = tmp12Result19.useIsScreenLandscape();
     let tmp43;
-    const tmp5Result7 = navigateToShop(8732);
+    const tmp5Result7 = navigateToShop(8766);
     if (!isScreenLandscape) {
       let skuId;
       if (obj3 != null) {
@@ -243,7 +263,7 @@ function UnconnectedYouScreen(arg0) {
     }
     const tmp5Result1Result = tmp5Result7(tmp43);
     let tmp47;
-    const tmp5Result8 = navigateToShop(8744);
+    const tmp5Result8 = navigateToShop(8778);
     if (!isScreenLandscape) {
       let skuId1;
       if (obj3 != null) {
@@ -255,16 +275,16 @@ function UnconnectedYouScreen(arg0) {
       tmp47 = skuId1;
     }
     const obj10 = { skuId: tmp47, openedAt: ref2.current, analyticsLocations: items1, context: createUserProfileAnalyticsContext };
-    items1 = [tmp5(7338).YOU_SCREEN];
+    items1 = [tmp5(7345).YOU_SCREEN];
     tmp5Result8(obj10);
     num2 = 0;
     if (null != tmp5Result1Result) {
-      num2 = tmp5(8755)(tmp5Result1Result, bound).overflowTop;
+      num2 = tmp5(8789)(tmp5Result1Result, bound).overflowTop;
     }
     const items2 = [num2];
     if (!tmp38) {
       let bound1;
-      const tmp12Result20 = navigateToSettings(1382);
+      const tmp12Result20 = navigateToSettings(1377);
       if (!tmp12Result20.isIOS()) {
         const _Math2 = Math;
         bound1 = Math.max(rect.top - num2, youSettingsCoachmark);
@@ -278,10 +298,10 @@ function UnconnectedYouScreen(arg0) {
       }
       let tmp89Result2 = null != skuId2;
       const memo1 = obj.useMemo(() => {
-        const items = [navigateToSettings(c2[50]).DismissibleContent.WISHLIST_MOBILE_YOU_SCREEN_COACHMARK];
+        const items = [navigateToSettings(c2[48]).DismissibleContent.WISHLIST_MOBILE_YOU_SCREEN_COACHMARK];
         return items;
       }, []);
-      const tmp12Result21 = navigateToSettings(7555);
+      const tmp12Result21 = navigateToSettings(7563);
       const tmpResult4 = tmp(tmp12Result21.useSelectedDismissibleContent(memo1), 2);
       closure_10 = tmp58;
       const items3 = [null != tmpResult4[0]];
@@ -296,7 +316,7 @@ function UnconnectedYouScreen(arg0) {
             avatarSrc: {},
             decorationAsset: "",
             renderImgComponent() {
-                return closure_1_20(navigateToShop(_undefined[52]), { source: { uri: "https://cdn.discordapp.com/assets/content/1979309f7455b06e0bc1e8f5da89de9934155a0a9a74bfff5b680c82fb45d53f.png" }, style: { width: 80, height: 80 } });
+                return closure_1_20(navigateToShop(_undefined[50]), { source: { uri: "https://cdn.discordapp.com/assets/content/1979309f7455b06e0bc1e8f5da89de9934155a0a9a74bfff5b680c82fb45d53f.png" }, style: { width: 80, height: 80 } });
               }
           };
           intl = intl4.intl;
@@ -315,10 +335,10 @@ function UnconnectedYouScreen(arg0) {
       }, items4);
       let tmp63 = null != memo2;
       const obj11 = { disabled: tmp63 };
-      const tmp12Result22 = navigateToSettings(18754);
+      const tmp12Result22 = navigateToSettings(18813);
       youSettingsCoachmark = tmp12Result22.useYouSettingsCoachmark(obj11);
       let tmp65 = null != youSettingsCoachmark;
-      const tmp12Result23 = navigateToSettings(13532);
+      const tmp12Result23 = navigateToSettings(13681);
       const customTypingIndicatorConfig = tmp12Result23.useCustomTypingIndicatorConfig("YouScreen");
       if ("settings" === customTypingIndicatorConfig.entryPoint) {
         if (customTypingIndicatorConfig.canSet) {
@@ -326,12 +346,12 @@ function UnconnectedYouScreen(arg0) {
             if (!tmp63) {
               let items5;
               if (!tmp65) {
-                items5 = [navigateToSettings(4841).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK];
+                items5 = [navigateToSettings(4842).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK];
               }
-              const tmp12Result24 = navigateToSettings(7555);
+              const tmp12Result24 = navigateToSettings(7563);
               const tmpResult5 = tmp(tmp12Result24.useSelectedDismissibleContent(items5), 2);
               closure_13 = tmp68;
-              const tmp69 = tmpResult5[0] === navigateToSettings(4841).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
+              const tmp69 = tmpResult5[0] === navigateToSettings(4842).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK;
               nativeID = tmp69;
               scrollEventThrottle = tmp70;
               closure_16 = tmp(obj.useState(false), 2)[1];
@@ -340,17 +360,17 @@ function UnconnectedYouScreen(arg0) {
               if (tmp63 || tmp65 || tmp69) {
                 tmp74Result = null;
                 if (tmp72) {
-                  const LayerScope = tmp12(5634).LayerScope;
+                  const LayerScope = tmp12(5606).LayerScope;
                   const tmp74 = closure_21;
                   if (tmp63) {
                     const obj12 = { buttonRef: ref4, markAsDismissed: tmpResult4[1], visible: null != tmpResult4[0], title: null, description: null, avatarSrc: null, decorationAsset: null, renderImgComponent: null, navigateToShop: callback1 };
                     ({ title: obj24.title, description: obj24.description, avatarSrc: obj24.avatarSrc, decorationAsset: obj24.decorationAsset, renderImgComponent: obj24.renderImgComponent } = memo2);
-                    tmp63 = closure_20(tmp5(18757), obj12);
+                    tmp63 = closure_20(tmp5(18816), obj12);
                   }
                   const items6 = [tmp63, , ];
                   if (tmp65) {
                     const obj13 = { buttonRef: ref5 };
-                    const tmp5Result9 = navigateToShop(18754);
+                    const tmp5Result9 = navigateToShop(18813);
                     const merged = Object.assign(youSettingsCoachmark.props);
                     tmp65 = closure_20(tmp5Result9, obj13);
                   }
@@ -358,7 +378,7 @@ function UnconnectedYouScreen(arg0) {
                   let tmp80 = tmp69;
                   if (tmp80) {
                     const obj14 = { targetRef: ref5, visible: tmp69, markAsDismissed: tmpResult5[1], position: "top" };
-                    tmp80 = closure_20(tmp5(18758), obj14);
+                    tmp80 = closure_20(tmp5(18817), obj14);
                   }
                   const obj15 = { zIndex: 1, children: items6 };
                   items6[2] = tmp80;
@@ -390,13 +410,13 @@ function UnconnectedYouScreen(arg0) {
                 navigateToSettings();
               }, items8);
               const obj16 = { navigateToPremium, navigateToSettings: callback2, navigateToShop: callback1, shopButtonRef: ref4, settingsButtonRef: ref5, paddingBottom: rect.bottom };
-              const tmp85 = closure_20(navigateToShop(9581), obj16);
-              const LayerScope2 = tmp12(5634).LayerScope;
+              const tmp85 = closure_20(navigateToShop(9604), obj16);
+              const LayerScope2 = tmp12(5606).LayerScope;
               const obj17 = { theme, primaryColor, secondaryColor, children: closure_20(UserProfileAnalyticsProvider, obj18) };
-              const ThemeContextProvider = tmp12(5071).ThemeContextProvider;
+              const ThemeContextProvider = tmp12(5075).ThemeContextProvider;
               obj18 = { value: createUserProfileAnalyticsContext, openedAt: ref1.current, fetchStartedAt, fetchEndedAt, isLoaded, children: closure_21(tmp5Result10, obj19) };
               fetchStartedAt = undefined;
-              UserProfileAnalyticsProvider = tmp12(8719).UserProfileAnalyticsProvider;
+              UserProfileAnalyticsProvider = tmp12(8753).UserProfileAnalyticsProvider;
               if (obj3 != null) {
                 fetchStartedAt = obj3.fetchStartedAt;
               }
@@ -411,29 +431,29 @@ function UnconnectedYouScreen(arg0) {
               obj19 = { style: items9, nativeID, children: items10 };
               items9 = [tmp10.container, tmp50];
               let tmp84Result = null != tmp5Result1Result;
-              tmp5Result10 = navigateToShop(18759);
+              tmp5Result10 = navigateToShop(18818);
               if (tmp84Result) {
-                const obj20 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: navigateToSettings(8738).ProfileFrameLayerOrder.BACK, containerWidth: bound };
-                const tmp5Result11 = navigateToShop(8751);
+                const obj20 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: navigateToSettings(8772).ProfileFrameLayerOrder.BACK, containerWidth: bound };
+                const tmp5Result11 = navigateToShop(8785);
                 tmp84Result = tmp84(tmp5Result11, obj20);
               }
               items10 = [tmp84Result, , , , , ];
               const obj21 = { gradientHeight: height, bannerHeight: tmp7Result, style: null };
-              class Y {
+              class N {
                 constructor(contentOffset) {
                   const result = sharedValue.set(contentOffset.contentOffset.y);
                 }
               }
-              items10[1] = closure_20(navigateToShop(8768), obj21);
+              items10[1] = closure_20(navigateToShop(8802), obj21);
               const obj23 = { style: items11, children: items12 };
               items11 = [tmp10.banner, bannerAnimatedStyle];
               let tmp84Result5 = !tmp89Result2;
               const obj22 = { contentContainerStyle, ref, onScroll: animatedScrollHandler, onLayout: callback, scrollEventThrottle, style: tmp10.scrollView, children: items18 };
-              const View = tmp5(5086).View;
+              const View = tmp5(5090).View;
               const tmp95 = closure_25;
               if (!tmp89Result2) {
                 const obj25 = { paddingTop: bound1 };
-                tmp84Result5 = tmp84(closure_27, obj25);
+                tmp84Result5 = tmp84(BackButton, obj25);
               }
               items12 = [tmp84Result5, ];
               const obj26 = { style: items13, children: items15 };
@@ -441,9 +461,9 @@ function UnconnectedYouScreen(arg0) {
               const obj27 = { style: items14 };
               items14 = [sharedValue.absoluteFill, ];
               const obj28 = { backgroundColor: tmp12Result25.int2hex(userProfileBannerBackgroundColor) };
-              const View2 = tmp5(5086).View;
+              const View2 = tmp5(5090).View;
               items14[1] = obj28;
-              tmp12Result25 = navigateToSettings(1102);
+              tmp12Result25 = navigateToSettings(1091);
               items15 = [closure_20(bound, obj27), , ];
               let tmp101 = null != source;
               const tmp100 = sharedValue;
@@ -455,18 +475,18 @@ function UnconnectedYouScreen(arg0) {
                                       return closure_8(!first);
                                     },
                     accessibilityRole: "image",
-                    accessibilityLabel: intl2.string(navigateToSettings(1125).t["3fzj/l"]),
+                    accessibilityLabel: intl2.string(navigateToSettings(1114).t["3fzj/l"]),
                     children: items16
                   };
-                  const PressableOpacity = tmp12(6968).PressableOpacity;
-                  intl2 = tmp12(1125).intl;
+                  const PressableOpacity = tmp12(6974).PressableOpacity;
+                  intl2 = tmp12(1114).intl;
                   const obj30 = { style: dimensionStyle, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp28 };
-                  items16 = [closure_20(tmp5(5707), obj30), ];
+                  items16 = [closure_20(tmp5(5712), obj30), ];
                   let tmp84Result6 = !tmp32;
                   if (tmp84Result6) {
-                    const obj31 = { label: intl3.string(navigateToSettings(1125).t.I5gL2H), style: items17, textStyle: tmp10.gifTagText };
-                    const Caption = tmp12(10503).Caption;
-                    intl3 = tmp12(1125).intl;
+                    const obj31 = { label: intl3.string(navigateToSettings(1114).t.I5gL2H), style: items17, textStyle: tmp10.gifTagText };
+                    const Caption = tmp12(10528).Caption;
+                    intl3 = tmp12(1114).intl;
                     items17 = [tmp10.gifTag, ];
                     const obj32 = { top: bound1 };
                     items17[1] = obj32;
@@ -476,12 +496,12 @@ function UnconnectedYouScreen(arg0) {
                   tmp84Result7 = tmp89(PressableOpacity, obj29);
                 } else {
                   const obj33 = { style: dimensionStyle, accessibilityRole: "image", accessibilityLabel: formatToPlainStringResult, source, paused: tmp28 };
-                  tmp84Result7 = tmp84(tmp5(5707), obj33);
+                  tmp84Result7 = tmp84(tmp5(5712), obj33);
                 }
                 tmp101 = tmp84Result7;
               }
               items15[1] = tmp101;
-              const tmp12Result26 = navigateToSettings(1382);
+              const tmp12Result26 = navigateToSettings(1377);
               let tmp84Result8 = tmp12Result26.isIOS() && showBlur;
               if (tmp84Result8) {
                 const obj34 = { animatedProps: blurAnimatedProps, style: tmp100.absoluteFillObject };
@@ -496,23 +516,23 @@ function UnconnectedYouScreen(arg0) {
                 const size1 = { width: bound, height };
                 items19[1] = size1;
                 items19[2] = bannerAnimatedStyle;
-                const View3 = tmp5(5086).View;
+                const View3 = tmp5(5090).View;
                 const obj36 = { skuId: skuId2, bannerAdjustment: 0, replayOnNavigationFocus: true, paused: tmp28 };
-                items20 = [closure_20(tmp5(9456), obj36), ];
+                items20 = [closure_20(tmp5(9475), obj36), ];
                 const obj37 = { paddingTop: bound1 };
-                items20[1] = closure_20(closure_27, obj37);
+                items20[1] = closure_20(BackButton, obj37);
                 tmp89Result2 = tmp89(View3, obj35);
               }
               items18[1] = tmp89Result2;
               const obj38 = { user, userTheme: tmp15, scrollViewRef: ref, scrollPosition: sharedValue, style: items21, navigateToProfileCustomization, navigateToCustomStatus, navigateToFriends, navigateToPremium, navigateToShop, initialTab, animateAvatar: !tmp28 };
               items21 = [tmp10.content, contentAnimatedStyle];
-              items18[2] = closure_20(navigateToShop(18761), obj38);
-              items18[3] = closure_20(navigateToSettings(13134).TTIFirstContentfulPaint, { label: "you_screen" });
+              items18[2] = closure_20(navigateToShop(18820), obj38);
+              items18[3] = closure_20(navigateToSettings(13285).TTIFirstContentfulPaint, { label: "you_screen" });
               items10[2] = closure_21(tmp95, obj22);
               let tmp84Result9 = null != tmp5Result1Result;
               if (tmp84Result9) {
-                const obj39 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: navigateToSettings(8738).ProfileFrameLayerOrder.FRONT, containerWidth: bound };
-                const tmp5Result12 = navigateToShop(8751);
+                const obj39 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: navigateToSettings(8772).ProfileFrameLayerOrder.FRONT, containerWidth: bound };
+                const tmp5Result12 = navigateToShop(8785);
                 tmp84Result9 = tmp84(tmp5Result12, obj39);
               }
               items10[3] = tmp84Result9;
@@ -536,7 +556,7 @@ let _slicedToArray = _slicedToArray_mod;
 ({ StyleSheet: hasOwnProperty, View: metroRequire, ScrollView } = react_native);
 ({ YOU_ACTION_SHEET_TOP_INSET: closure_12, YOU_AVATAR_SIZE: map1, YOU_SCREEN_ID: closure_14, YOU_SCROLL_EVENT_THROTTLE: closure_15 } = YouConstants);
 const UserSettingsSections = Constants.UserSettingsSections;
-const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
+let closure_17 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
 ({ jsx: closure_20, jsxs: closure_21 } = Fragment);
@@ -569,7 +589,7 @@ let closure_23 = createStyles.createStyles((minHeight) => {
   obj6 = { flex: 1 };
   const merged2 = Object.assign(obj2);
   rect = { position: "absolute", left: 16, right: "auto", bottom: "auto", marginTop: 8, backgroundColor: alphaResult.css() };
-  const tmp10 = _modDef683;
+  const tmp10 = _modDef671;
   const tmp10Result = tmp10(nativeDefault.unsafe_rawColors.WHITE);
   alphaResult = tmp10Result.alpha(0.9);
   ({ color: nativeDefault.unsafe_rawColors.PRIMARY_800, fontSize: 14 });
@@ -583,607 +603,11 @@ let closure_24 = createStyles.createStyles(() => {
 });
 ReanimatedRexport = ReanimatedRexport_mod;
 let closure_25 = ReanimatedRexport.createAnimatedComponent(ScrollView);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function BackButton(paddingTop) {
-  let tmp11;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let totalMentionCount;
-  const obj = react2;
-  const cResult = obj.c(15);
-  paddingTop = paddingTop.paddingTop;
-  const tmp4 = closure_24();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildReadStateStore];
-    const fn = function o() {
-      return totalMentionCount.getTotalMentionCount();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = useStateFromStores;
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] !== stateFromStores) {
-    let formatToPlainStringResult;
-    if (stateFromStores > 0) {
-      const intl2 = tmp(1125).intl;
-      const obj2 = { mentionCount: stateFromStores };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.vxFYaM, obj2);
-    } else {
-      const intl = tmp(1125).intl;
-      formatToPlainStringResult = intl.string(tmp(1125).t["13/7kX"]);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = formatToPlainStringResult;
-    tmp9 = formatToPlainStringResult;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== paddingTop) {
-    const obj3 = { top: paddingTop };
-    cResult[4] = paddingTop;
-    cResult[5] = obj3;
-    tmp11 = obj3;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] === tmp4.backButton) {
-    let tmp12;
-    let tmp13;
-    if (cResult[7] === tmp11) {
-      tmp12 = cResult[8];
-    }
-    if (cResult[9] !== stateFromStores) {
-      const obj4 = { count: stateFromStores };
-      const tmp15 = closure_20(BackIconWithBadge.CloseIconWithBadgeOnSide, obj4);
-      cResult[9] = stateFromStores;
-      cResult[10] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[10];
-    }
-    if (cResult[11] === tmp9) {
-      if (cResult[12] === tmp12) {
-        let tmp16;
-        if (cResult[13] === tmp13) {
-          tmp16 = cResult[14];
-        }
-        return tmp16;
-      }
-    }
-    const obj5 = { style: tmp12, accessibilityRole: "button", accessibilityLabel: tmp9, onPress: handleBackButtonPress, children: tmp13 };
-    const tmp19 = closure_20(Pressables.PressableOpacity, obj5);
-    cResult[11] = tmp9;
-    cResult[12] = tmp12;
-    cResult[13] = tmp13;
-    cResult[14] = tmp19;
-    tmp16 = tmp19;
-  }
-  const items1 = [tmp4.backButton, tmp11];
-  cResult[6] = tmp4.backButton;
-  cResult[7] = tmp11;
-  cResult[8] = items1;
-  tmp12 = items1;
-}) : (function BackButton(paddingTop) {
-  let formatToPlainStringResult;
-  let items1;
-  let totalMentionCount;
-  paddingTop = paddingTop.paddingTop;
-  const items = [GuildReadStateStore];
-  const tmp = closure_24();
-  const obj = useStateFromStores;
-  const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
-  if (stateFromStores > 0) {
-    const intl2 = tmp2(1125).intl;
-    const obj2 = { mentionCount: stateFromStores };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1125).t.vxFYaM, obj2);
-  } else {
-    const intl = tmp2(1125).intl;
-    formatToPlainStringResult = intl.string(tmp2(1125).t["13/7kX"]);
-  }
-  const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_20(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
-  items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(6968).PressableOpacity;
-  return closure_20(PressableOpacity, obj3);
-});
 const __initData = { code: "function YouScreenTsx1(e){const{scrollPosition}=this.__closure;scrollPosition.set(e.contentOffset.y);}" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(initialTab) {
-  let closure_1;
-  let closure_2;
-  let constants2;
-  let currentUser;
-  let id;
-  let locale;
-  let state;
-  let tmp12;
-  let tmp22;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  let tmp8;
-  let tmp = id;
-  let tmp2 = dependencyMap;
-  let obj = id(576);
-  const cResult = obj.c(31);
-  initialTab = initialTab.initialTab;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(573);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [LocaleStore];
-    class T {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = T;
-    tmp8 = T;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult5 = tmp(573);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp7, tmp8);
-  id = undefined;
-  if (stateFromStores != null) {
-    id = stateFromStores.id;
-  }
-  if (cResult[4] !== stateFromStores) {
-    let avatarURL;
-    if (stateFromStores != null) {
-      avatarURL = stateFromStores.getAvatarURL(null, closure_13);
-    }
-    class T {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    cResult[5] = avatarURL;
-    tmp12 = avatarURL;
-  } else {
-    tmp12 = cResult[5];
-  }
-  importDefault = tmp12;
-  if (cResult[6] === tmp12) {
-    let tmp15;
-    if (cResult[7] === id) {
-      tmp15 = cResult[8];
-    }
-    if (cResult[9] === tmp12) {
-      if (cResult[10] === stateFromStores1) {
-        let tmp16;
-        let tmp18;
-        let tmp20;
-        if (cResult[11] === id) {
-          tmp16 = cResult[12];
-        }
-        const layoutEffect = react.useLayoutEffect(tmp15, tmp16);
-        class T {
-          constructor() {
-            return locale.locale;
-          }
-        }
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const items2 = [UserProfileStore];
-          class T {
-            constructor() {
-              return locale.locale;
-            }
-          }
-          cResult[13] = items2;
-          tmp18 = items2;
-        } else {
-          tmp18 = cResult[13];
-        }
-        if (cResult[14] !== id) {
-          class A {
-            constructor() {
-              let firstWishlistId = null;
-              if (null != id) {
-                firstWishlistId = UserProfileStore.getFirstWishlistId(tmp);
-              }
-              return firstWishlistId;
-            }
-          }
-          cResult[14] = id;
-          class T {
-            constructor() {
-              return locale.locale;
-            }
-          }
-          cResult[15] = A;
-          tmp20 = A;
-        } else {
-          class A {
-            constructor() {
-              let firstWishlistId = null;
-              if (null != id) {
-                firstWishlistId = UserProfileStore.getFirstWishlistId(tmp);
-              }
-              return firstWishlistId;
-            }
-          }
-        }
-        const tmpResult6 = tmp(573);
-        const stateFromStores2 = tmpResult6.useStateFromStores(tmp18, tmp20);
-        if (cResult[16] === id) {
-          let tmp33;
-          let tmp32;
-          let tmp37;
-          class A {
-            constructor() {
-              let firstWishlistId = null;
-              if (null != id) {
-                firstWishlistId = UserProfileStore.getFirstWishlistId(tmp);
-              }
-              return firstWishlistId;
-            }
-          }
-          const tmpResult7 = tmp(9431);
-          const fetchWishlist = tmpResult7.useFetchWishlist(tmp22);
-          class T {
-            constructor() {
-              return locale.locale;
-            }
-          }
-          if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-            class A {
-              constructor() {
-                let firstWishlistId = null;
-                if (null != id) {
-                  firstWishlistId = UserProfileStore.getFirstWishlistId(tmp);
-                }
-                return firstWishlistId;
-              }
-            }
-            cResult[19] = tmp25;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class A {
-              constructor() {
-                let firstWishlistId = null;
-                if (null != id) {
-                  firstWishlistId = UserProfileStore.getFirstWishlistId(tmp);
-                }
-                return firstWishlistId;
-              }
-            }
-          }
-          dependencyMap = tmp24;
-          const _Symbol = Symbol;
-          if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-            class B {
-              constructor() {
-                const obj = id(dependencyMap[70]);
-                const obj2 = { screen: constants.PREMIUM };
-                obj.openUserSettings(obj2);
-              }
-            }
-            cResult[20] = B;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class B {
-              constructor() {
-                const obj = id(dependencyMap[70]);
-                const obj2 = { screen: constants.PREMIUM };
-                obj.openUserSettings(obj2);
-              }
-            }
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-            class N {
-              constructor() {
-                let items;
-                const tmp = id(dependencyMap[71]);
-                const openCollectiblesShopMobile = tmp.openCollectiblesShopMobile;
-                const obj = { analyticsSource: closure_1(dependencyMap[48]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
-                items = [closure_1(dependencyMap[48]).YOU_SCREEN];
-                const result = openCollectiblesShopMobile(obj);
-              }
-            }
-            cResult[21] = N;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class N {
-              constructor() {
-                let items;
-                const tmp = id(dependencyMap[71]);
-                const openCollectiblesShopMobile = tmp.openCollectiblesShopMobile;
-                const obj = { analyticsSource: closure_1(dependencyMap[48]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
-                items = [closure_1(dependencyMap[48]).YOU_SCREEN];
-                const result = openCollectiblesShopMobile(obj);
-              }
-            }
-          }
-          const _Symbol3 = Symbol;
-          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            class N {
-              constructor() {
-                let items;
-                const tmp = id(dependencyMap[71]);
-                const openCollectiblesShopMobile = tmp.openCollectiblesShopMobile;
-                const obj = { analyticsSource: closure_1(dependencyMap[48]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
-                items = [closure_1(dependencyMap[48]).YOU_SCREEN];
-                const result = openCollectiblesShopMobile(obj);
-              }
-            }
-            cResult[22] = tmp29;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class N {
-              constructor() {
-                let items;
-                const tmp = id(dependencyMap[71]);
-                const openCollectiblesShopMobile = tmp.openCollectiblesShopMobile;
-                const obj = { analyticsSource: closure_1(dependencyMap[48]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
-                items = [closure_1(dependencyMap[48]).YOU_SCREEN];
-                const result = openCollectiblesShopMobile(obj);
-              }
-            }
-          }
-          const _Symbol4 = Symbol;
-          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            class D {
-              constructor() {
-                let items;
-                const obj = { analyticsLocations: items };
-                const openEditCustomStatusModal = id(dependencyMap[72]).openEditCustomStatusModal;
-                items = [];
-                id(dependencyMap[72]);
-                items[0] = closure_1(dependencyMap[48]).YOU_SCREEN;
-                const result = openEditCustomStatusModal(obj);
-              }
-            }
-            cResult[23] = D;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class D {
-              constructor() {
-                let items;
-                const obj = { analyticsLocations: items };
-                const openEditCustomStatusModal = id(dependencyMap[72]).openEditCustomStatusModal;
-                items = [];
-                id(dependencyMap[72]);
-                items[0] = closure_1(dependencyMap[48]).YOU_SCREEN;
-                const result = openEditCustomStatusModal(obj);
-              }
-            }
-          }
-          const _Symbol5 = Symbol;
-          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-            cResult[24] = H;
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-          } else {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-          }
-          const _Symbol6 = Symbol;
-          if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-            const items3 = [];
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-            cResult[26] = items3;
-            tmp33 = items3;
-            tmp32 = tmp34;
-          } else {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-            tmp33 = cResult[26];
-          }
-          const layoutEffect1 = obj5.useLayoutEffect(tmp32, tmp33);
-          const _Symbol7 = Symbol;
-          class I {
-            constructor() {
-              let tmp2 = null != id;
-              const tmp = id;
-              if (tmp2) {
-                tmp2 = null != closure_1;
-              }
-              if (tmp2) {
-                maybeFetchUserProfileDefault(tmp, closure_1, { type: "you_screen" });
-              }
-            }
-          }
-          if (tmp36 === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-            tmp38[0] = function scrollToTop() {
-              dependencyMap();
-            };
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-            tmp37 = tmp38;
-          } else {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-          }
-          const tmpResult8 = tmp(1504);
-          const scrollToTop = tmpResult8.useScrollToTop(obj5.useRef(tmp37));
-          if (null != stateFromStores) {
-            class H {
-              constructor() {
-                const obj = id(dependencyMap[20]);
-                const rootNavigationRef = obj.getRootNavigationRef();
-                if (null != rootNavigationRef) {
-                  if (rootNavigationRef.isReady()) {
-                    rootNavigationRef.navigate("friends");
-                  }
-                }
-                return false;
-              }
-            }
-            class T {
-              constructor() {
-                return locale.locale;
-              }
-            }
-            tmp44[0] = stateFromStores;
-            tmp44[1] = tmp24;
-            tmp44[2] = tmp26;
-            tmp44[3] = tmp28;
-            tmp44[4] = tmp30;
-            tmp44[5] = tmp31;
-            tmp44[6] = tmp27;
-            tmp44[7] = initialTab;
-            cResult[28] = initialTab;
-            cResult[29] = stateFromStores;
-            cResult[30] = closure_20(UnconnectedYouScreen, tmp44);
-            const tmp45 = closure_20(UnconnectedYouScreen, tmp44);
-          }
-          return null;
-        }
-        let obj2 = { wishlistId: stateFromStores2, userId: id };
-        cResult[16] = id;
-        cResult[17] = stateFromStores2;
-        cResult[18] = obj2;
-        tmp22 = obj2;
-      }
-    }
-    const items4 = [, , ];
-    class T {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    items4[1] = tmp12;
-    items4[2] = stateFromStores1;
-    cResult[9] = tmp12;
-    cResult[10] = stateFromStores1;
-    cResult[11] = id;
-    cResult[12] = items4;
-    tmp16 = items4;
-  }
-  class I {
-    constructor() {
-      let tmp2 = null != id;
-      const tmp = id;
-      if (tmp2) {
-        tmp2 = null != closure_1;
-      }
-      if (tmp2) {
-        maybeFetchUserProfileDefault(tmp, closure_1, { type: "you_screen" });
-      }
-    }
-  }
-  cResult[6] = tmp12;
-  cResult[7] = id;
-  cResult[8] = I;
-  tmp15 = I;
-}) : (function YouScreen(initialTab) {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreen.tsx");
+
+export default function YouScreen(initialTab) {
   let constants2;
   let currentUser;
   let locale;
@@ -1194,10 +618,10 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
   let tmp = stateFromStores;
   let tmp2 = memo;
   initialTab = initialTab.initialTab;
-  let obj = stateFromStores(memo[23]);
+  let obj = stateFromStores(memo[21]);
   let items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(memo[23]);
+  let obj2 = stateFromStores(memo[21]);
   const items1 = [LocaleStore];
   let id;
   const stateFromStores1 = obj2.useStateFromStores(items1, () => locale.locale);
@@ -1225,7 +649,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
     }
   }, items3);
   const items4 = [UserProfileStore];
-  const tmpResult = tmp(tmp2[23]);
+  const tmpResult = tmp(tmp2[21]);
   const stateFromStores2 = tmpResult.useStateFromStores(items4, () => {
     let firstWishlistId = null;
     if (null != id) {
@@ -1233,40 +657,40 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
     }
     return firstWishlistId;
   });
-  const tmpResult3 = tmp(tmp2[69]);
+  const tmpResult3 = tmp(tmp2[67]);
   const fetchWishlist = tmpResult3.useFetchWishlist({ wishlistId: stateFromStores2, userId: id });
   navigateToSettings = react.useCallback(() => {
     state.setState({ query: "", isActive: false });
-    const obj = stateFromStores(memo[70]);
+    const obj = stateFromStores(memo[68]);
     obj.openUserSettings();
   }, []);
   const callback1 = react.useCallback(() => {
-    const obj = stateFromStores(memo[70]);
+    const obj = stateFromStores(memo[68]);
     const obj2 = { screen: constants.PREMIUM };
     obj.openUserSettings(obj2);
   }, []);
   const callback2 = react.useCallback(() => {
     let items;
-    const tmp = stateFromStores(memo[71]);
+    const tmp = stateFromStores(memo[69]);
     const openCollectiblesShopMobile = tmp.openCollectiblesShopMobile;
-    const obj = { analyticsSource: id(memo[48]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
-    items = [id(memo[48]).YOU_SCREEN];
+    const obj = { analyticsSource: id(memo[46]).YOU_SCREEN, analyticsLocations: items, screen: constants2.FEATURED_PAGE };
+    items = [id(memo[46]).YOU_SCREEN];
     const result = openCollectiblesShopMobile(obj);
   }, []);
   const callback3 = react.useCallback((autoFocusElement) => {
     let obj3;
     const obj2 = { screen: constants.PROFILE_CUSTOMIZATION, params: obj3 };
     obj3 = { autoFocusElement };
-    const obj = stateFromStores(memo[70]);
+    const obj = stateFromStores(memo[68]);
     obj.openUserSettings(obj2);
   }, []);
   const callback4 = react.useCallback(() => {
     let items;
     const obj = { analyticsLocations: items };
-    const openEditCustomStatusModal = stateFromStores(memo[72]).openEditCustomStatusModal;
+    const openEditCustomStatusModal = stateFromStores(memo[70]).openEditCustomStatusModal;
     items = [];
-    stateFromStores(memo[72]);
-    items[0] = id(memo[48]).YOU_SCREEN;
+    stateFromStores(memo[70]);
+    items[0] = id(memo[46]).YOU_SCREEN;
     const result = openEditCustomStatusModal(obj);
   }, []);
   const callback5 = react.useCallback(() => {
@@ -1280,7 +704,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
     return false;
   }, []);
   const layoutEffect1 = react.useLayoutEffect(() => {
-    const obj = stateFromStores(memo[73]);
+    const obj = stateFromStores(memo[71]);
     return obj.trackAppUIViewed();
   }, []);
   let obj3 = {
@@ -1288,7 +712,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
       callback();
     }
   };
-  const tmpResult4 = tmp(tmp2[38]);
+  const tmpResult4 = tmp(tmp2[36]);
   const scrollToTop = tmpResult4.useScrollToTop(react.useRef(obj3));
   let tmp18 = null;
   if (null != stateFromStores) {
@@ -1296,8 +720,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function YouScreen(in
     tmp18 = closure_20(UnconnectedYouScreen, obj4);
   }
   return tmp18;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreen.tsx");
-
-export default tmp5;
+};

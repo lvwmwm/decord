@@ -1,19 +1,19 @@
-// Module ID: 11013
-// Function ID: 11014
+// Module ID: 11243
+// Function ID: 11244
 // Name: SafetyWarningUtils
-// Dependencies: [1389, 1084, 1264, 2]
+// Dependencies: [1384, 1072, 1253, 2]
 // Exports: getUserIsTeen, trackCtaEvent, trackNamedViewEvent, trackViewedEvent
 
-// Module 11013 (SafetyWarningUtils)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserStore from "UserStore" /* 1389 */;
+// Module 11243 (SafetyWarningUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/self_mod/shared/SafetyWarningUtils.tsx");
 
-export function trackViewedEvent(SAFETY_WARNING_MODAL_VIEWED, warningId) {
+export function trackViewedEvent(SAFETY_WARNING_VIEWED, warningId) {
   let channelId;
   let parsed;
   let senderId;
@@ -28,7 +28,7 @@ export function trackViewedEvent(SAFETY_WARNING_MODAL_VIEWED, warningId) {
     const _parseInt = parseInt;
     parsed = parseInt(warningId);
   }
-  track(SAFETY_WARNING_MODAL_VIEWED, obj);
+  track(SAFETY_WARNING_VIEWED, obj);
 }
 export const ViewNameTypes = { SAFETY_WARNING_BANNER: "safety_warning_banner", SAFETY_TAKEOVER_MODAL: "safety_takeover_modal", SAFETY_TOOLS_NUDGE_TOOLTIP: "safety_tools_nudge_tooltip", SAFETY_TOOLS_BUTTON: "safety_tools_button" };
 export function trackNamedViewEvent(warningId) {

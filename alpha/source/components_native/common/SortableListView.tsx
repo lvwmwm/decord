@@ -1,16 +1,14 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18395
+// Function ID: 18396
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 558, 576, 5632, 7280, 2]
+// Dependencies: [19, 17, 21, 5604, 7288, 2]
 
-// Module 18337 (SortableListView)
-import react2 from "react" /* 576 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5632 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7280 */;
+// Module 18395 (SortableListView)
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5604 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7288 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 let hoverIndex;
@@ -111,79 +109,7 @@ let closure_11 = react.memo(function Row(initialHeight) {
   items[1] = tmp9(_false, { style: obj4, children: cloneElementResult });
   return tmp7(_false, obj3);
 });
-const memo = react.memo;
-let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SortRow(listPageY) {
-  let frameHeight;
-  let pan;
-  let renderRow;
-  let rowData;
-  let sortRowStyle;
-  const obj = react2;
-  const cResult = obj.c(16);
-  ({ sortRowStyle, rowData, renderRow, pan, frameHeight } = listPageY);
-  const diff = listPageY.listPageY - listPageY.wrapperPageY;
-  if (cResult[0] === frameHeight) {
-    let tmp3;
-    let tmp4;
-    if (cResult[1] === diff) {
-      tmp3 = cResult[2];
-    }
-    if (cResult[3] !== pan) {
-      const layout = pan.getLayout();
-      cResult[3] = pan;
-      cResult[4] = layout;
-      tmp4 = layout;
-    } else {
-      tmp4 = cResult[4];
-    }
-    if (cResult[5] === sortRowStyle) {
-      if (cResult[6] === tmp3) {
-        let tmp6;
-        if (cResult[7] === tmp4) {
-          tmp6 = cResult[8];
-        }
-        if (cResult[9] === renderRow) {
-          if (cResult[10] === rowData.index) {
-            let tmp7;
-            if (cResult[11] === rowData.item) {
-              tmp7 = cResult[12];
-            }
-            if (cResult[13] === tmp6) {
-              let tmp9;
-              if (cResult[14] === tmp7) {
-                tmp9 = cResult[15];
-              }
-              return tmp9;
-            }
-            const obj2 = { style: tmp6, children: tmp7 };
-            const tmp12 = metroRequire(RN.View, obj2);
-            cResult[13] = tmp6;
-            cResult[14] = tmp7;
-            cResult[15] = tmp12;
-            tmp9 = tmp12;
-          }
-        }
-        const renderRowResult = renderRow(rowData.item, rowData.index, true);
-        cResult[9] = renderRow;
-        cResult[10] = rowData.index;
-        cResult[11] = rowData.item;
-        cResult[12] = renderRowResult;
-        tmp7 = renderRowResult;
-      }
-    }
-    const items = [tmp3, sortRowStyle, tmp4];
-    cResult[5] = sortRowStyle;
-    cResult[6] = tmp3;
-    cResult[7] = tmp4;
-    cResult[8] = items;
-    tmp6 = items;
-  }
-  const rect = { position: "absolute", left: 0, right: 0, opacity: 0.25, overflow: "hidden", backgroundColor: "transparent", height: frameHeight, marginTop: diff };
-  cResult[0] = frameHeight;
-  cResult[1] = diff;
-  cResult[2] = rect;
-  tmp3 = rect;
-}) : (function SortRow(listPageY) {
+let closure_12 = react.memo(function SortRow(listPageY) {
   let frameHeight;
   let items1;
   let pan;
@@ -207,7 +133,7 @@ let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   const View = RN.View;
   items1[2] = pan.getLayout();
   return metroRequire(View, obj);
-}));
+});
 const Component = react.Component;
 class SortableListView extends Component {
   constructor(arg0) {
@@ -403,7 +329,7 @@ class SortableListView extends Component {
         sum = maxResult + 1;
       }
       if (sum !== obj.state.hoverIndex) {
-        const obj2 = closure_0(state[5]);
+        const obj2 = closure_0(state[3]);
         const result = obj2.DeprecatedLayoutAnimation();
         const obj3 = { hovering: true, hoverIndex: sum };
         obj.setState(obj3);
@@ -487,7 +413,7 @@ class SortableListView extends Component {
             active.wrapperLayout = obj;
             const pan = active.state.pan;
             pan.setValue({ x: 0, y: 0 });
-            const obj2 = active(state[5]);
+            const obj2 = active(state[3]);
             const result = obj2.DeprecatedLayoutAnimation();
             active.moveY = active.layout.pageY;
             const obj3 = { active, hovering: true, hoverIndex: active.rowData.index };

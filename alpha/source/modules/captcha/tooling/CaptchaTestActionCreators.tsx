@@ -1,12 +1,12 @@
-// Module ID: 17566
-// Function ID: 17567
+// Module ID: 17620
+// Function ID: 17621
 // Name: CaptchaTestActionCreators
-// Dependencies: [5, 1084, 1294, 2]
+// Dependencies: [5, 1072, 1283, 2]
 // Exports: testCaptcha
 
-// Module 17566 (CaptchaTestActionCreators)
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 17620 (CaptchaTestActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _testCaptcha() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _testCaptcha() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c2 = 3;

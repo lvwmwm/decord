@@ -1,17 +1,17 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9450
+// Function ID: 9451
 // Name: WishlistRecord
-// Dependencies: [1404, 2022, 9434, 9435, 9436, 9437, 1084, 2]
+// Dependencies: [1399, 2017, 9451, 9452, 9453, 9454, 1072, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
-// Module 9433 (WishlistRecord)
-import Constants from "Constants" /* 1084 */;
-import Record from "Record" /* 1404 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9434 */;
-import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9435 */;
-import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9436 */;
-import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9437 */;
+// Module 9450 (WishlistRecord)
+import Constants from "Constants" /* 1072 */;
+import Record from "Record" /* 1399 */;
+import ApplicationRecord from "ApplicationRecord" /* 2017 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 9451 */;
+import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 9452 */;
+import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 9453 */;
+import SKUWishlistItemRecord from "SKUWishlistItemRecord" /* 9454 */;
 import size from "module_2" /* 2 */;
 
 let set, sku_product_line;
@@ -69,8 +69,8 @@ class WishlistRecord extends Record {
 const result = size.fileFinishedImporting("modules/wishlists/records/WishlistRecord.tsx");
 
 export default WishlistRecord;
-export function getWishlistSkuIds(first1) {
-  const items = first1.items;
+export function getWishlistSkuIds(items) {
+  items = items.items;
   return items.map((skuId) => skuId.skuId);
 }
 export function wishlistHasSkuId(items, arg1) {

@@ -1,11 +1,11 @@
-// Module ID: 12397
-// Function ID: 12398
+// Module ID: 12547
+// Function ID: 12548
 // Name: ConjureChatActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: setComposerDraft
 
-// Module 12397 (ConjureChatActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 12547 (ConjureChatActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/ConjureChatActionCreators.tsx");

@@ -1,59 +1,23 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14214
+// Function ID: 14215
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 14048, 558, 576, 6990, 2]
+// Dependencies: [17, 14196, 6998, 2]
+// Exports: default, useBackHandlerMinimizeApp
 
-// Module 14066 (useBackHandlerSkipPhoneScreens)
+// Module 14214 (useBackHandlerSkipPhoneScreens)
 import react_native from "react-native" /* 17 */;
-import react from "react" /* 576 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14048 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 6998 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14196 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let MinimizeApp, _require, dependencyMap;
 
-let tmp;
-const useNavigatorBackPressHandler = tmp(6990);
 const NativeModules = react_native.NativeModules;
 const ContactSyncScenes = ContactSyncConstants.ContactSyncScenes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHandlerSkipPhoneScreens(arg0, arg1) {
-  let closure_1;
-  let state;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === arg1) {
-    let tmp4;
-    if (cResult[1] === arg0) {
-      tmp4 = cResult[2];
-    }
-    const tmpResult = tmp(6990);
-    tmpResult.useNavigatorBackPressHandler(tmp4);
-  }
-  const fn = function c() {
-    if (null != closure_1) {
-      tmp();
-    } else {
-      const items = [, , ];
-      ({ ADD_PHONE: arr2[0], VERIFY_PHONE: arr2[1], VERIFY_PASSWORD: arr2[2] } = ContactSyncScenes);
-      const routes = state.getState().routes;
-      if (routes.length <= 2) {
-        state.pop();
-      } else if (items.includes(routes[routes.length - 2].name)) {
-        state.pop(routes.length - 1);
-      }
-    }
-    return true;
-  };
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : (function useBackHandlerSkipPhoneScreens(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/contact_sync/native/components/useBackHandlerSkipPhoneScreens.tsx");
+
+export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   let closure_1;
   let state;
   _require = arg0;
@@ -74,34 +38,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHan
     }
     return true;
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBackHandlerMinimizeApp() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      MinimizeApp = MinimizeApp.MinimizeApp;
-      MinimizeApp.minimizeApp();
-      return true;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = useNavigatorBackPressHandler;
-  tmpResult.useNavigatorBackPressHandler(first);
-}) : (function useBackHandlerMinimizeApp() {
+};
+export function useBackHandlerMinimizeApp() {
   const obj = useNavigatorBackPressHandler;
   obj.useNavigatorBackPressHandler(() => {
     MinimizeApp = MinimizeApp.MinimizeApp;
     MinimizeApp.minimizeApp();
     return true;
   });
-});
-const result = size.fileFinishedImporting("modules/contact_sync/native/components/useBackHandlerSkipPhoneScreens.tsx");
-
-export default tmp2;
-export const useBackHandlerMinimizeApp = tmp3;
+}

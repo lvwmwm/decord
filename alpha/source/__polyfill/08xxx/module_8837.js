@@ -1,9 +1,0 @@
-// Module ID: 8837
-// Function ID: 8838
-// Dependencies: [8838]
-
-// Module 8837
-import _modDef8838 from "module_8838" /* 8838 */;
-
-
-export default _modDef8838({ contain: null, cover: null, stretch: null });

@@ -1,56 +1,27 @@
-// Module ID: 11063
-// Function ID: 11064
+// Module ID: 11056
+// Function ID: 11057
 // Name: notifications/NotificationUtils
-// Dependencies: [6762, 1084, 1094, 1125, 11, 1402, 4940, 558, 576, 504, 2]
-// Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem
+// Dependencies: [6769, 1072, 1082, 1114, 11, 1397, 4944, 504, 2]
+// Exports: filterOverrides, getMuteTimeOptions, useShouldUseNewNotificationSystem
 
-// Module 11063 (notifications/NotificationUtils)
+// Module 11056 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl7 from "intl" /* 1125 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import MuteTimers from "MuteTimers" /* 4940 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import intl7 from "intl" /* 1114 */;
+import FlagUtilsAll from "FlagUtils" /* 1397 */;
+import MuteTimers from "MuteTimers" /* 4944 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const get_initialized = tmp(504);
 const UserNotificationSettings = Constants.UserNotificationSettings;
 ({ MuteUntilSeconds: metroRequire, ChannelNotificationSettingsFlags: metroImportDefault } = UserSettingsConstants);
 let closure_8 = { ignoreMute: false, ignoreUnreadSetting: true, ignoreNotificationSetting: false };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldUseNewNotificationSystem() {
-  let tmp4;
-  let tmp5;
-  let useNewNotifications;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserGuildSettingsStore];
-    const fn = function o() {
-      return useNewNotifications.useNewNotifications;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useShouldUseNewNotificationSystem() {
-  let useNewNotifications;
-  const items = [UserGuildSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => useNewNotifications.useNewNotifications);
-});
 const result = size.fileFinishedImporting("modules/notifications/NotificationUtils.tsx");
 
 export function getMuteTimeOptions() {
@@ -102,7 +73,7 @@ export function filterOverrides(channelOverrides, arg1) {
     const tmp5 = metroImportDefault;
     if (!hasFlagResult) {
       let num2 = tmp[item].flags;
-      const hasFlag2 = tmp2(1402).hasFlag;
+      const hasFlag2 = tmp2(1397).hasFlag;
       FlagUtilsAll;
       if (num2 == null) {
         num2 = 0;
@@ -124,7 +95,9 @@ export function filterOverrides(channelOverrides, arg1) {
     return tmp9;
   });
 }
-export const useShouldUseNewNotificationSystem = tmp3;
-export function shouldShowUseNewNotificationSystem() {
-  return UserGuildSettingsStore.useNewNotifications;
+export function useShouldUseNewNotificationSystem() {
+  let useNewNotifications;
+  const items = [UserGuildSettingsStore];
+  const obj = get_initialized;
+  return obj.useStateFromStores(items, () => useNewNotifications.useNewNotifications);
 }

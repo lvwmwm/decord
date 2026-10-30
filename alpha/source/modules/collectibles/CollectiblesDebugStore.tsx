@@ -1,14 +1,14 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7727
+// Function ID: 7728
 // Name: CollectiblesDebugStore
-// Dependencies: [570, 2]
+// Dependencies: [560, 2]
 // Exports: addDebugLog
 
-// Module 7722 (CollectiblesDebugStore)
-import module_570 from "module_570" /* 570 */;
+// Module 7727 (CollectiblesDebugStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-const useCollectiblesDebugStore = module_570.create((arg0) => {
+const useCollectiblesDebugStore = module_560.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     logs: [],

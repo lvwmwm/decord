@@ -1,29 +1,23 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9590
+// Function ID: 9591
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 1503, 9282, 9568, 9112, 9109, 6731, 1125, 7544, 6991, 6984, 5271, 7045, 7044, 7068, 5281, 7240, 7155, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 1498, 9320, 9122, 9591, 9125, 6738, 1114, 7552, 7048, 6992, 5619, 7052, 7055, 7076, 5629, 7247, 7163, 2]
+// Exports: default
 
-// Module 9567 (GameDetectionReportModal)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl10 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import TableRadioRow3 from "TableRadioRow" /* 7044 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 7045 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7068 */;
-import TextArea2 from "TextArea" /* 7240 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9282 */;
+// Module 9590 (GameDetectionReportModal)
+import nativeDefault from "native" /* 575 */;
+import intl10 from "intl" /* 1114 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import Navigator from "Navigator" /* 7163 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9320 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let importDefault, navigation, obj1, popWithKeyResult, results, setOptions2Result, setOptions3Result, setOptionsResult, tmp13, tmp14, tmp17, tmp19, tmp21, tmp22, tmp3, tmp7;
+let navigation;
 
 let c9;
 let hasOwnProperty;
@@ -33,213 +27,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let tmp;
-const Navigator = tmp(7155);
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
-let c10 = "game-detection-report";
-let createStyles = createStyles_mod;
-let obj = { container: obj2, content: obj3, submitContainer: obj4 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
-obj4 = { padding: nativeDefault.space.PX_16 };
-let viewId = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function ReportContent(applicationId) {
-  let closure_1;
-  let closure_4;
-  let first;
-  let first4;
-  let items;
-  let length;
-  let onPress;
-  let onSelect;
-  let tmp16;
-  let tmp = applicationId;
-  let tmp2 = navigation;
-  let obj = applicationId(navigation[7]);
-  const cResult = obj.c(31);
-  applicationId = applicationId.applicationId;
-  const tmp4 = first4();
-  importDefault = tmp4;
-  let obj2 = applicationId(navigation[8]);
-  navigation = obj2.useNavigation();
-  let obj3 = react;
-  const tmp6 = first(react.useState("issue_selection"), 2);
-  first = tmp6[0];
-  react = tmp6[1];
-  const tmp8 = first(react.useState(""), 2);
-  const first1 = tmp8[0];
-  let closure_6 = tmp8[1];
-  const tmp10 = first(react.useState(null), 2);
-  const first2 = tmp10[0];
-  let closure_8 = tmp10[1];
-  const tmp12 = first(react.useState(""), 2);
-  const first3 = tmp12[0];
-  const onChange = tmp12[1];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(tmp2[9]);
-    viewId = tmpResult.generateViewId();
-    cResult[0] = viewId;
-    first4 = viewId;
-  } else {
-    first4 = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj4 = { surface: tmp(tmp2[10]).GameSearchSurface.DETECTION_REPORT, filterGroup: tmp(tmp2[11]).GameSearchFilterGroup.DEFAULT };
-    cResult[1] = obj4;
-    tmp16 = obj4;
-  } else {
-    tmp16 = cResult[1];
-  }
-  const tmpResult2 = tmp(tmp2[12]);
-  const debouncedGameAutocomplete = tmpResult2.useDebouncedGameAutocomplete(first1, tmp16);
-  ({ results, onSelect } = debouncedGameAutocomplete);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
-      constructor() {
-        obj = closure_1(closure_2[13]);
-        popWithKeyResult = obj.popWithKey(closure_10);
-        return;
-      }
-    }
-    cResult[2] = N;
-  } else {
-    class N {
-      constructor() {
-        obj = closure_1(closure_2[13]);
-        popWithKeyResult = obj.popWithKey(closure_10);
-        return;
-      }
-    }
-  }
-  N = tmp18;
-  if (cResult[3] === navigation) {
-    class N {
-      constructor() {
-        obj = closure_1(closure_2[13]);
-        popWithKeyResult = obj.popWithKey(closure_10);
-        return;
-      }
-    }
-    const layoutEffect = obj3.useLayoutEffect(Y, items);
-    if (cResult[7] === applicationId) {
-      class N {
-        constructor() {
-          obj = closure_1(closure_2[13]);
-          popWithKeyResult = obj.popWithKey(closure_10);
-          return;
-        }
-      }
-    }
-    cResult[7] = applicationId;
-    cResult[8] = first3;
-    cResult[9] = first1;
-    if (first2 != null) {
-      class N {
-        constructor() {
-          obj = closure_1(closure_2[13]);
-          popWithKeyResult = obj.popWithKey(closure_10);
-          return;
-        }
-      }
-    }
-    class X {
-      constructor() {
-        tmp = closure_0(closure_2[9]);
-        obj = { viewId: closure_11, applicationId, suggestedGameName: null, suggestedGameApplicationId: null, feedback: null, submitted: true };
-        str = closure_5;
-        trackGameProfileFeedback = tmp.trackGameProfileFeedback;
-        trimmed = undefined;
-        if ("" !== closure_5.trim()) {
-          trimmed = str.trim();
-        }
-        obj.suggestedGameName = trimmed;
-        id = undefined;
-        if (closure_7 != null) {
-          id = closure_7.id;
-        }
-        if (id == null) {
-          id = null;
-        }
-        obj.suggestedGameApplicationId = id;
-        str2 = closure_9;
-        trimmed1 = undefined;
-        if ("" !== closure_9.trim()) {
-          trimmed1 = str2.trim();
-        }
-        obj.feedback = trimmed1;
-        result = trackGameProfileFeedback(obj);
-        tmp6 = closure_13();
-        return;
-      }
-    }
-    cResult[10] = undefined;
-    cResult[11] = X;
-  }
-  class Y {
-    constructor() {
-      if ("issue_selection" === closure_3) {
-        tmp10 = closure_2;
-        obj1 = { title: null, headerLeft: null, headerRight: null };
-        tmp11 = closure_0;
-        tmp12 = closure_2;
-        setOptions2 = closure_2.setOptions;
-        intl2 = closure_0(closure_2[14]).intl;
-        tmp13 = closure_0;
-        tmp14 = closure_2;
-        obj1.title = intl2.string(closure_0(closure_2[14]).t["6tnjbD"]);
-        obj1.headerLeft = function headerLeft() { /* body not rendered: F149342 */ };
-        obj1.headerRight = function headerRight() { /* body not rendered: F149343 */ };
-        setOptions2Result = setOptions2(obj1);
-      } else {
-        str = "game_search";
-        if ("game_search" === tmp) {
-          tmp2 = closure_2;
-          obj = { title: null, headerLeft: null, headerRight: null };
-          tmp3 = closure_0;
-          tmp4 = closure_2;
-          setOptions = closure_2.setOptions;
-          intl = closure_0(closure_2[14]).intl;
-          tmp5 = closure_0;
-          tmp6 = closure_2;
-          obj.title = intl.string(closure_0(closure_2[14]).t.TZgkxY);
-          tmp7 = closure_0;
-          tmp8 = closure_2;
-          obj2 = closure_0(closure_2[17]);
-          obj.headerLeft = obj2.getHeaderBackButton(function() { /* body not rendered: F149344 */ });
-          obj.headerRight = function headerRight() { /* body not rendered: F149345 */ };
-          setOptionsResult = setOptions(obj);
-        } else {
-          tmp16 = closure_2;
-          obj6 = { title: null, headerLeft: null, headerRight: null };
-          tmp17 = closure_0;
-          tmp18 = closure_2;
-          setOptions3 = closure_2.setOptions;
-          intl3 = closure_0(closure_2[14]).intl;
-          tmp19 = closure_0;
-          tmp20 = closure_2;
-          obj6.title = intl3.string(closure_0(closure_2[14]).t.tdDpJj);
-          tmp21 = closure_0;
-          tmp22 = closure_2;
-          obj5 = closure_0(closure_2[17]);
-          obj6.headerLeft = obj5.getHeaderBackButton(function() { /* body not rendered: F149346 */ });
-          obj6.headerRight = function headerRight() { /* body not rendered: F149347 */ };
-          setOptions3Result = setOptions3(obj6);
-        }
-      }
-      return;
-    }
-  }
-  items = [first, navigation, tmp18];
-  cResult[3] = navigation;
-  cResult[4] = first;
-  cResult[5] = Y;
-  cResult[6] = items;
-}) : (function ReportContent(applicationId) {
+function ReportContent(applicationId) {
   let Button;
   let Button2;
   let closure_3;
@@ -279,23 +67,23 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   let onSelect;
   let tmp = onSelect();
   let tmp2 = applicationId;
-  let obj = applicationId(first[8]);
+  let obj = applicationId(first[6]);
   navigation = obj.useNavigation();
   [first, _slicedToArray] = str.useState("issue_selection");
   [str, closure_5] = str.useState("");
   [first1, closure_7] = str.useState(null);
   [str2, tmp11] = str.useState("");
   const memo = str.useMemo(() => {
-    const obj = applicationId(first[9]);
+    const obj = applicationId(first[7]);
     return obj.generateViewId();
   }, []);
-  let obj2 = applicationId(first[12]);
-  let obj3 = { surface: applicationId(first[10]).GameSearchSurface.DETECTION_REPORT, filterGroup: applicationId(first[11]).GameSearchFilterGroup.DEFAULT };
+  let obj2 = applicationId(first[8]);
+  let obj3 = { surface: applicationId(first[9]).GameSearchSurface.DETECTION_REPORT, filterGroup: applicationId(first[10]).GameSearchFilterGroup.DEFAULT };
   const debouncedGameAutocomplete = obj2.useDebouncedGameAutocomplete(str, obj3);
-  results = debouncedGameAutocomplete.results;
+  const results = debouncedGameAutocomplete.results;
   onSelect = debouncedGameAutocomplete.onSelect;
   const callback = str.useCallback(() => {
-    const obj = navigation(first[13]);
+    const obj = navigation(first[11]);
     obj.popWithKey(results);
   }, []);
   let items = [first, navigation, callback];
@@ -315,9 +103,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
           },
         headerRight() {
             let intl;
-            const obj = { IconComponent: applicationId(first[16]).XSmallIcon, accessibilityLabel: intl.string(applicationId(first[14]).t.cpT0Cq), onPress };
-            const HeaderActionButton = applicationId(first[15]).HeaderActionButton;
-            intl = applicationId(first[14]).intl;
+            const obj = { IconComponent: applicationId(first[14]).XSmallIcon, accessibilityLabel: intl.string(applicationId(first[12]).t.cpT0Cq), onPress };
+            const HeaderActionButton = applicationId(first[13]).HeaderActionButton;
+            intl = applicationId(first[12]).intl;
             return closure_7(HeaderActionButton, obj);
           }
       };
@@ -387,9 +175,9 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
   const tmp18 = closure_5;
   if ("issue_selection" === first) {
     let obj5 = { style: tmp.content, children: items3 };
-    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[14]).t.IQHicr) };
-    const Text2 = tmp2(tmp3[18]).Text;
-    intl4 = tmp2(tmp3[14]).intl;
+    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[12]).t.IQHicr) };
+    const Text2 = tmp2(tmp3[16]).Text;
+    intl4 = tmp2(tmp3[12]).intl;
     items3 = [tmp17(Text2, obj6), ];
     const obj7 = {
       value: "Array",
@@ -407,22 +195,22 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
       hasIcons: null,
       children: items4
     };
-    const TableRadioGroup2 = tmp2(tmp3[19]).TableRadioGroup;
-    const obj8 = { value: "wrong_game_shown", label: intl5.string(tmp2(first[14]).t.TZgkxY) };
-    const TableRadioRow = tmp2(tmp3[20]).TableRadioRow;
-    intl5 = tmp2(tmp3[14]).intl;
+    const TableRadioGroup2 = tmp2(tmp3[17]).TableRadioGroup;
+    const obj8 = { value: "wrong_game_shown", label: intl5.string(tmp2(first[12]).t.TZgkxY) };
+    const TableRadioRow = tmp2(tmp3[18]).TableRadioRow;
+    intl5 = tmp2(tmp3[12]).intl;
     items4 = [tmp17(TableRadioRow, obj8), ];
-    const obj9 = { value: "other_feedback", label: intl6.string(tmp2(first[14]).t.tdDpJj) };
-    const TableRadioRow2 = tmp2(tmp3[20]).TableRadioRow;
-    intl6 = tmp2(tmp3[14]).intl;
+    const obj9 = { value: "other_feedback", label: intl6.string(tmp2(first[12]).t.tdDpJj) };
+    const TableRadioRow2 = tmp2(tmp3[18]).TableRadioRow;
+    intl6 = tmp2(tmp3[12]).intl;
     items4[1] = closure_7(TableRadioRow2, obj9);
     items3[1] = str2(TableRadioGroup2, obj7);
     tmp19Result = str2(first1, obj5);
   } else if ("game_search" === first) {
     const obj10 = { style: tmp.content, children: items5 };
-    const obj11 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(tmp2(first[14]).t["79o/iq"]) };
-    const Text = tmp2(tmp3[18]).Text;
-    intl = tmp2(tmp3[14]).intl;
+    const obj11 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(tmp2(first[12]).t["79o/iq"]) };
+    const Text = tmp2(tmp3[16]).Text;
+    intl = tmp2(tmp3[12]).intl;
     items5 = [tmp17(Text, obj11), , ];
     const obj12 = {
       value: str,
@@ -433,16 +221,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
             closure_7(null);
           }
         },
-      placeholder: intl2.string(tmp2(first[14]).t["/SGi7v"])
+      placeholder: intl2.string(tmp2(first[12]).t["/SGi7v"])
     };
-    const TextInput = tmp2(tmp3[21]).TextInput;
-    intl2 = tmp2(tmp3[14]).intl;
+    const TextInput = tmp2(tmp3[19]).TextInput;
+    intl2 = tmp2(tmp3[12]).intl;
     items5[1] = closure_7(TextInput, obj12);
     let tmp17Result = memo1.length > 0;
     const tmp20 = memo;
     if (tmp17Result) {
       let id;
-      const TableRadioGroup = tmp2(tmp3[19]).TableRadioGroup;
+      const TableRadioGroup = tmp2(tmp3[17]).TableRadioGroup;
       if (first1 != null) {
         id = first1.id;
       }
@@ -463,7 +251,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
         hasIcons: false,
         children: memo1.map((id, index) => {
               const obj = { value: id.id, label: id.name };
-              return closure_7(applicationId(first[20]).TableRadioRow, obj, "" + id.id + "-" + index);
+              return closure_7(applicationId(first[18]).TableRadioRow, obj, "" + id.id + "-" + index);
             })
       };
       tmp17Result = tmp17(TableRadioGroup, obj13);
@@ -472,71 +260,47 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Report
     items5[2] = tmp17Result;
     items6 = [tmp19(tmp21, obj10), ];
     const obj15 = { style: tmp.submitContainer, children: closure_7(Button, obj16) };
-    obj16 = { variant: "primary", size: "md", text: intl3.string(tmp2(first[14]).t.geKm7t), disabled: "" === str.trim(), onPress: callback1 };
-    Button = tmp2(tmp3[22]).Button;
-    intl3 = tmp2(tmp3[14]).intl;
+    obj16 = { variant: "primary", size: "md", text: intl3.string(tmp2(first[12]).t.geKm7t), disabled: "" === str.trim(), onPress: callback1 };
+    Button = tmp2(tmp3[20]).Button;
+    intl3 = tmp2(tmp3[12]).intl;
     items6[1] = closure_7(first1, obj15);
     tmp19Result = tmp19(tmp20, obj14);
   } else if ("other_feedback" === first) {
     const obj17 = { children: items8 };
     const obj18 = { style: tmp.content, children: items7 };
-    const obj19 = { variant: "text-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[14]).t.IblYEw) };
-    const Text3 = tmp2(tmp3[18]).Text;
-    intl7 = tmp2(tmp3[14]).intl;
+    const obj19 = { variant: "text-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[12]).t.IblYEw) };
+    const Text3 = tmp2(tmp3[16]).Text;
+    intl7 = tmp2(tmp3[12]).intl;
     items7 = [tmp17(Text3, obj19), ];
-    const obj20 = { value: str2, onChange: tmp11, placeholder: intl8.string(tmp2(first[14]).t.aiPKV4), maxLength: 300 };
-    const TextArea = tmp2(tmp3[23]).TextArea;
-    intl8 = tmp2(tmp3[14]).intl;
+    const obj20 = { value: str2, onChange: tmp11, placeholder: intl8.string(tmp2(first[12]).t.aiPKV4), maxLength: 300 };
+    const TextArea = tmp2(tmp3[21]).TextArea;
+    intl8 = tmp2(tmp3[12]).intl;
     items7[1] = closure_7(TextArea, obj20);
     items8 = [str2(first1, obj18), ];
     const obj21 = { style: tmp.submitContainer, children: closure_7(Button2, obj22) };
-    obj22 = { variant: "primary", size: "md", text: intl9.string(tmp2(first[14]).t.geKm7t), disabled: "" === str2.trim(), onPress: callback1 };
-    Button2 = tmp2(tmp3[22]).Button;
-    intl9 = tmp2(tmp3[14]).intl;
+    obj22 = { variant: "primary", size: "md", text: intl9.string(tmp2(first[12]).t.geKm7t), disabled: "" === str2.trim(), onPress: callback1 };
+    Button2 = tmp2(tmp3[20]).Button;
+    intl9 = tmp2(tmp3[12]).intl;
     items8[1] = closure_7(first1, obj21);
     tmp19Result = str2(memo, obj17);
   }
   return closure_7(tmp18, obj4);
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+let c10 = "game-detection-report";
+let createStyles = createStyles_mod;
+let obj = { container: obj2, content: obj3, submitContainer: obj4 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
+obj4 = { padding: nativeDefault.space.PX_16 };
+let closure_11 = createStyles(obj);
 const REPORT = "REPORT";
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameDetectionReportModal(applicationId) {
-  let first;
-  let items;
-  let obj6;
-  let tmp6;
-  let obj = react2;
-  const cResult = obj.c(3);
-  applicationId = applicationId.applicationId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = {};
-    const obj3 = {
-      render(arg0) {
-          const obj = {};
-          const merged = Object.assign(arg0);
-          return closure_1_7(closure_1_12, obj);
-        }
-    };
-    obj2[REPORT] = obj3;
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== applicationId) {
-    const obj5 = { name: REPORT, params: obj6 };
-    const obj4 = { screens: first, initialRouteStack: items };
-    items = [obj5];
-    obj6 = { applicationId };
-    const tmp9 = metroImportDefault(Navigator.Navigator, obj4);
-    cResult[1] = applicationId;
-    cResult[2] = tmp9;
-    tmp6 = tmp9;
-  } else {
-    tmp6 = cResult[2];
-  }
-  return tmp6;
-}) : (function GameDetectionReportModal(applicationId) {
+let result = size.fileFinishedImporting("modules/game_profile/native/components/GameDetectionReportModal.tsx");
+
+export default function GameDetectionReportModal(applicationId) {
   let items;
   applicationId = applicationId.applicationId;
   const memo = react.useMemo(() => {
@@ -554,8 +318,5 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameDetect
   const obj2 = { name: REPORT, params: { applicationId } };
   items[0] = obj2;
   return metroImportDefault(Navigator.Navigator, obj);
-});
-let result = size.fileFinishedImporting("modules/game_profile/native/components/GameDetectionReportModal.tsx");
-
-export default tmp5;
+};
 export const MODAL_KEY = "game-detection-report";

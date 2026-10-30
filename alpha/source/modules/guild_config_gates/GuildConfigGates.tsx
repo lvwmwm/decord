@@ -1,16 +1,15 @@
-// Module ID: 19682
-// Function ID: 19683
+// Module ID: 19745
+// Function ID: 19746
 // Name: GuildConfigGates
-// Dependencies: [5, 19683, 1084, 504, 1294, 584, 558, 2]
+// Dependencies: [5, 19746, 1072, 504, 1283, 572, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 19682 (GuildConfigGates)
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 19745 (GuildConfigGates)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19683 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19746 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let applicationIdentityLinkedRolesEnabled, closure_4, guildVerificationRoleEnabled;
@@ -54,7 +53,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -103,7 +102,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
           dispatch(obj5);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         c6 = 3;
         throw tmp13;
@@ -112,11 +111,7 @@ let closure_3 = _asyncToGenerator(async (guildId) => {
   })();
 });
 let closure_6 = createFetchStore(GuildConfigGatesStore, obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result2 = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
+const result = size.fileFinishedImporting("modules/guild_config_gates/GuildConfigGates.tsx");
 
 export function useGuildVerificationRoleEnabled(arg0) {
   const data = closure_6(arg0).data;

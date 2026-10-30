@@ -1,25 +1,23 @@
-// Module ID: 9832
-// Function ID: 9833
+// Module ID: 9858
+// Function ID: 9859
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 7755, 5644, 21, 5005, 587, 9833, 558, 576, 5271, 1125, 1506, 1631, 9801, 504, 11, 9802, 9805, 7280, 2]
+// Dependencies: [5, 32, 19, 17, 7760, 5650, 21, 5009, 575, 9859, 5619, 1114, 1501, 1626, 9827, 504, 11, 9828, 9831, 7288, 2]
 // Exports: default
 
-// Module 9832 (ConversationListScreen)
+// Module 9858 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9805 */;
-import ConversationListItemDefault from "ConversationListItem" /* 9833 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9831 */;
+import ConversationListItemDefault from "ConversationListItem" /* 9859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7755 */;
-import ConversationConstants from "ConversationConstants" /* 5644 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7760 */;
+import ConversationConstants from "ConversationConstants" /* 5650 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -55,38 +53,13 @@ createStyles = createStyles_mod;
 let obj = { empty: obj2 };
 obj2 = { paddingVertical: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_15 = createStyles.createStyles(obj);
-let memo = react.memo;
-const ListEmptyComponent = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyComponent() {
-  let first;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp4 = closure_15();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const Text = tmp(5271).Text;
-    const intl = tmp(1125).intl;
-    const tmp7 = <Text variant="text-md/normal" color="text-muted">{intl.string(intl2.t.LJuFRG)}</Text>;
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.empty) {
-    const tmp11 = <metroImportDefault style={tmp4.empty}>{first}</metroImportDefault>;
-    cResult[1] = tmp4.empty;
-    cResult[2] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (function EmptyComponent() {
+const ListEmptyComponent = react.memo(function EmptyComponent() {
   let intl;
   ({ variant: "text-md/normal", color: "text-muted", children: intl.string(intl2.t.LJuFRG) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <metroImportDefault style={closure_15().empty}>{null}</metroImportDefault>;
-}));
+});
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationListScreen.tsx");
 
 export default function ConversationListScreen() {
@@ -100,14 +73,14 @@ export default function ConversationListScreen() {
   let stateFromStores1;
   let tmp16;
   const tmp = channelId;
-  let obj = channelId(1506);
+  let obj = channelId(1501);
   const params = obj.useRoute().params;
   channelId = params.channelId;
   let guildId = params.guildId;
-  const bottom = guildId(1631)().bottom;
+  const bottom = guildId(1626)().bottom;
   let tmp3 = closure_14(bottom);
   dependencyMap = tmp3;
-  let obj2 = channelId(9801);
+  let obj2 = channelId(9827);
   const conversationBackoffRef = obj2.useConversationBackoffRef();
   let obj3 = react;
   const tmp5 = first(react.useState(false), 2);
@@ -127,7 +100,7 @@ export default function ConversationListScreen() {
   const memo = react.useMemo(() => {
     const substr = stateFromStoresArray.slice();
     const sorted = substr.sort((arg0, arg1) => {
-      const obj = guildId(closure_1_2[18]);
+      const obj = guildId(closure_1_2[16]);
       return obj.compare(arg1, arg0);
     });
     return sorted.map((conversationId) => ({ channelId, conversationId }));
@@ -157,7 +130,7 @@ export default function ConversationListScreen() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -185,7 +158,7 @@ export default function ConversationListScreen() {
                     guildId = 2;
                     ref = 1;
                     const obj7 = { value: obj3.fetchChannelConversations(obj5), done: false };
-                    obj3 = tmp(closure_2_2[19]);
+                    obj3 = tmp(closure_2_2[17]);
                     return obj7;
                   }
                 }
@@ -215,7 +188,7 @@ export default function ConversationListScreen() {
         current2.succeed();
         closure_1_5(false);
         ref = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp22) {
         if (0 === c2) {
           ref = 3;
@@ -287,7 +260,7 @@ export default function ConversationListScreen() {
   }, items9);
   obj8 = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp3.content, scrollIndicatorInsets: { bottom }, onEndReached: tmp16, ListEmptyComponent, ListFooterComponent: memo1, onViewableItemsChanged: callback1, viewabilityConfig };
   tmp16 = undefined;
-  FlashList = tmp(7280).FlashList;
+  FlashList = tmp(7288).FlashList;
   const tmp15 = memo;
   if (stateFromStores) {
     tmp16 = callback;

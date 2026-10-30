@@ -1,13 +1,13 @@
-// Module ID: 19570
-// Function ID: 19571
+// Module ID: 19633
+// Function ID: 19634
 // Name: ApplicationTriggerFields
-// Dependencies: [19, 21, 19571, 1125, 5271, 7047, 6963, 5299, 5247, 19573, 2000, 2]
+// Dependencies: [19, 21, 19634, 1114, 5619, 7054, 6969, 5642, 5253, 19636, 1995, 2]
 // Exports: default
 
-// Module 19570 (ApplicationTriggerFields)
+// Module 19633 (ApplicationTriggerFields)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -58,10 +58,10 @@ export default function ApplicationTriggerFields(rule) {
         const obj2 = {
           applications: tmp,
           selectedApplicationId: applicationId,
-          onSelectApplication(dependencyMap) {
+          onSelectApplication(applicationId) {
               let name;
-              let closure_0 = dependencyMap;
-              const obj = { name, triggerMetadata: { applicationId: dependencyMap } };
+              let closure_0 = applicationId;
+              const obj = { name, triggerMetadata: { applicationId } };
               const merged = Object.assign(rule);
               const found = guildBotApplications.find((id) => id.id === closure_0);
               name = undefined;
@@ -76,7 +76,7 @@ export default function ApplicationTriggerFields(rule) {
               return tmp(obj);
             }
         };
-        obj.openLazy(asyncRequire(19573, dependencyMap.paths), "AutomodSelectApplication", obj2);
+        obj.openLazy(asyncRequire(19636, dependencyMap.paths), "AutomodSelectApplication", obj2);
       }
     }
   };

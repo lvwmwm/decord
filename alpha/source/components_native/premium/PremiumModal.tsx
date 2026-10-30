@@ -1,97 +1,105 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 7588
+// Function ID: 7589
 // Name: PremiumModal
-// Dependencies: [19, 1084, 21, 1125, 6984, 7581, 15301, 15304, 15346, 15362, 558, 576, 7313, 7155, 2]
+// Dependencies: [19, 1072, 21, 1114, 6992, 7589, 15341, 15344, 15386, 15402, 7320, 7163, 2]
+// Exports: default
 
-// Module 7580 (PremiumModal)
+// Module 7588 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import Navigator2 from "Navigator" /* 7155 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7313 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7581 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 15346 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 15362 */;
+import Constants from "Constants" /* 1072 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7589 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 15386 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 15402 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const useAnalyticsLocationsDefault = useAnalyticsLocations;
+const UserSettingsSections = Constants.UserSettingsSections;
+const jsx = Fragment.jsx;
+const result = size.fileFinishedImporting("components_native/premium/PremiumModal.tsx");
 
-function getScreens(analyticsLocation) {
+export default function PremiumModal(arg0) {
+  let Navigator;
   let activitySessionId;
+  let analyticsLocation;
+  let analyticsLocations;
   let applicationId;
   let channelId;
-  let closure_10;
-  let closure_11;
-  let closure_6;
-  let closure_7;
-  let closure_8;
-  let closure_9;
+  let giftRecipientId;
   let guildId;
+  let initialRoute;
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
   let isBoostPurchaseFlow;
+  let obj11;
+  let obj2;
   let obj3;
-  let obj6;
-  let obj9;
+  let obj5;
+  let obj8;
+  let onBack;
+  let onClose;
   let onPaymentDismiss;
   let onPaymentSuccess;
   let planId;
   let predicate;
   let premiumFeatureCardOrder;
-  let recipientUserId;
   let showCurrentPlan;
-  analyticsLocation = analyticsLocation.analyticsLocation;
-  const onClose = analyticsLocation.onClose;
-  ({ onBack: dependencyMap, giftRecipientId: UserSettingsSections, planId: jsx, applicationId: getScreens, activitySessionId: closure_6, channelId: closure_7, guildId: closure_8, premiumFeatureCardOrder: closure_9, onPaymentSuccess: closure_10, onPaymentDismiss: closure_11 } = analyticsLocation);
-  let obj = {};
-  ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = analyticsLocation);
-  const PREMIUM = UserSettingsSections.PREMIUM;
-  const obj2 = {
-    title: intl.string(analyticsLocation(1125).t.lpNrPu),
-    headerLeft: obj3.getHeaderCloseButton(onClose),
+  ({ analyticsLocation, initialRoute, onClose } = arg0);
+  ({ applicationId, analyticsLocations, onBack, giftRecipientId, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss } = arg0);
+  const analyticsLocations2 = onClose(onBack[10])(analyticsLocations).analyticsLocations;
+  if (initialRoute == null) {
+    let tmp2 = giftRecipientId;
+    initialRoute = giftRecipientId.PREMIUM;
+  }
+  let obj = { value: analyticsLocations2, children: planId(Navigator, obj2) };
+  const AnalyticsLocationProvider = analyticsLocation(tmp[10]).AnalyticsLocationProvider;
+  obj2 = { screens: obj3, initialRouteName: initialRoute };
+  obj3 = {};
+  const obj4 = {
+    title: intl.string(analyticsLocation(onBack[3]).t.lpNrPu),
+    headerLeft: obj5.getHeaderCloseButton(onClose),
     initialParams: { analyticsLocation },
     render() {
-      return jsx(UserSettingsPremiumDefault, { applicationId: getScreens, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
+      return jsx(UserSettingsPremiumDefault, { applicationId, onClose, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss, isFullScreenPresentation: true });
     }
   };
-  intl = analyticsLocation(1125).intl;
-  obj[PREMIUM] = obj2;
-  obj3 = analyticsLocation(6984);
-  const PREMIUM_MANAGE_PLAN = UserSettingsSections.PREMIUM_MANAGE_PLAN;
-  const obj4 = {
-    title: intl2.string(analyticsLocation(1125).t["8jmdON"]),
+  Navigator = analyticsLocation(tmp[11]).Navigator;
+  const PREMIUM = giftRecipientId.PREMIUM;
+  intl = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM] = obj4;
+  obj5 = analyticsLocation(onBack[4]);
+  const PREMIUM_MANAGE_PLAN = giftRecipientId.PREMIUM_MANAGE_PLAN;
+  const obj6 = {
+    title: intl2.string(analyticsLocation(onBack[3]).t["8jmdON"]),
     render() {
-      return jsx(onClose(dependencyMap[6]), {});
+      return planId(onClose(onBack[6]), {});
     }
   };
-  intl2 = analyticsLocation(1125).intl;
-  obj[PREMIUM_MANAGE_PLAN] = obj4;
-  const GUILD_BOOSTING = UserSettingsSections.GUILD_BOOSTING;
-  const obj5 = {
-    title: intl3.string(analyticsLocation(1125).t["+CbP2v"]),
-    headerLeft: obj6.getHeaderCloseButton(onClose),
-    render() {
-      return jsx(onClose(dependencyMap[7]), {});
-    }
-  };
-  intl3 = analyticsLocation(1125).intl;
-  obj[GUILD_BOOSTING] = obj5;
-  obj6 = analyticsLocation(6984);
-  const PREMIUM_PLAN_SELECT = UserSettingsSections.PREMIUM_PLAN_SELECT;
+  intl2 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_MANAGE_PLAN] = obj6;
+  const GUILD_BOOSTING = giftRecipientId.GUILD_BOOSTING;
   const obj7 = {
-    title: intl4.string(analyticsLocation(1125).t.u95Dt4),
+    title: intl3.string(analyticsLocation(onBack[3]).t["+CbP2v"]),
+    headerLeft: obj8.getHeaderCloseButton(onClose),
+    render() {
+      return planId(onClose(onBack[7]), {});
+    }
+  };
+  intl3 = analyticsLocation(tmp[3]).intl;
+  obj3[GUILD_BOOSTING] = obj7;
+  obj8 = analyticsLocation(onBack[4]);
+  const PREMIUM_PLAN_SELECT = giftRecipientId.PREMIUM_PLAN_SELECT;
+  const obj9 = {
+    title: intl4.string(analyticsLocation(onBack[3]).t.u95Dt4),
     headerLeft(canGoBack) {
       let tmp2;
       canGoBack = canGoBack.canGoBack;
       const obj = NavigatorHeader;
       if (canGoBack) {
-        tmp2 = obj.getHeaderBackButton(dependencyMap)(canGoBack);
+        tmp2 = obj.getHeaderBackButton(onBack)(canGoBack);
       } else {
         tmp2 = obj.getHeaderCloseButton(onClose)(canGoBack);
       }
@@ -103,152 +111,22 @@ function getScreens(analyticsLocation) {
       let predicate;
       let showCurrentPlan;
       ({ predicate, showCurrentPlan, isBoostPurchaseFlow } = arg0);
-      return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId: jsx, applicationId: getScreens, guildId });
+      return jsx(PremiumPlanSelectDefault, { analyticsLocation, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, guildId });
     }
   };
-  intl4 = analyticsLocation(1125).intl;
-  obj[PREMIUM_PLAN_SELECT] = obj7;
-  const PREMIUM_GIFTING = UserSettingsSections.PREMIUM_GIFTING;
-  const obj8 = {
-    title: intl5.string(analyticsLocation(1125).t.Oba8Sh),
-    headerLeft: obj9.getHeaderCloseButton(onClose),
+  intl4 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_PLAN_SELECT] = obj9;
+  const PREMIUM_GIFTING = giftRecipientId.PREMIUM_GIFTING;
+  const obj10 = {
+    title: intl5.string(analyticsLocation(onBack[3]).t.Oba8Sh),
+    headerLeft: obj11.getHeaderCloseButton(onClose),
     render() {
-      return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: UserSettingsSections, analyticsLocation });
+      return jsx(UserSettingsPremiumGiftingDefault, { recipientUserId: giftRecipientId, analyticsLocation });
     }
   };
-  intl5 = analyticsLocation(1125).intl;
-  obj[PREMIUM_GIFTING] = obj8;
-  obj9 = analyticsLocation(6984);
-  return obj;
-}
-const UserSettingsSections = Constants.UserSettingsSections;
-const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumModal(analyticsLocations) {
-  let activitySessionId;
-  let analyticsLocation;
-  let applicationId;
-  let channelId;
-  let giftRecipientId;
-  let guildId;
-  let initialRoute;
-  let isBoostPurchaseFlow;
-  let onBack;
-  let onClose;
-  let onPaymentDismiss;
-  let onPaymentSuccess;
-  let planId;
-  let predicate;
-  let premiumFeatureCardOrder;
-  let showCurrentPlan;
-  const obj = react2;
-  const cResult = obj.c(22);
-  ({ applicationId, analyticsLocation, initialRoute, onClose, onBack, giftRecipientId, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss } = analyticsLocations);
-  analyticsLocations = useAnalyticsLocationsDefault(analyticsLocations.analyticsLocations).analyticsLocations;
-  if (initialRoute == null) {
-    initialRoute = UserSettingsSections.PREMIUM;
-  }
-  if (cResult[0] === activitySessionId) {
-    if (cResult[1] === analyticsLocation) {
-      if (cResult[2] === applicationId) {
-        if (cResult[3] === channelId) {
-          if (cResult[4] === giftRecipientId) {
-            if (cResult[5] === guildId) {
-              if (cResult[6] === isBoostPurchaseFlow) {
-                if (cResult[7] === onBack) {
-                  if (cResult[8] === onClose) {
-                    if (cResult[9] === onPaymentDismiss) {
-                      if (cResult[10] === onPaymentSuccess) {
-                        if (cResult[11] === planId) {
-                          if (cResult[12] === predicate) {
-                            if (cResult[13] === premiumFeatureCardOrder) {
-                              let tmp5;
-                              if (cResult[14] === showCurrentPlan) {
-                                tmp5 = cResult[15];
-                              }
-                              if (cResult[16] === initialRoute) {
-                                let tmp7;
-                                if (cResult[17] === tmp5) {
-                                  tmp7 = cResult[18];
-                                }
-                                if (cResult[19] === analyticsLocations) {
-                                  let tmp10;
-                                  if (cResult[20] === tmp7) {
-                                    tmp10 = cResult[21];
-                                  }
-                                  return tmp10;
-                                }
-                                const tmp12 = jsx(useAnalyticsLocations.AnalyticsLocationProvider, { value: analyticsLocations, children: tmp7 });
-                                cResult[19] = analyticsLocations;
-                                cResult[20] = tmp7;
-                                cResult[21] = tmp12;
-                                tmp10 = tmp12;
-                              }
-                              const tmp9 = jsx(Navigator2.Navigator, { screens: tmp5, initialRouteName: initialRoute });
-                              cResult[16] = initialRoute;
-                              cResult[17] = tmp5;
-                              cResult[18] = tmp9;
-                              tmp7 = tmp9;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  const tmp6 = getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss });
-  cResult[0] = activitySessionId;
-  cResult[1] = analyticsLocation;
-  cResult[2] = applicationId;
-  cResult[3] = channelId;
-  cResult[4] = giftRecipientId;
-  cResult[5] = guildId;
-  cResult[6] = isBoostPurchaseFlow;
-  cResult[7] = onBack;
-  cResult[8] = onClose;
-  cResult[9] = onPaymentDismiss;
-  cResult[10] = onPaymentSuccess;
-  cResult[11] = planId;
-  cResult[12] = predicate;
-  cResult[13] = premiumFeatureCardOrder;
-  cResult[14] = showCurrentPlan;
-  cResult[15] = tmp6;
-  tmp5 = tmp6;
-}) : (function PremiumModal(initialRoute) {
-  let activitySessionId;
-  let analyticsLocation;
-  let analyticsLocations;
-  let applicationId;
-  let channelId;
-  let giftRecipientId;
-  let guildId;
-  let isBoostPurchaseFlow;
-  let onBack;
-  let onClose;
-  let onPaymentDismiss;
-  let onPaymentSuccess;
-  let planId;
-  let predicate;
-  let premiumFeatureCardOrder;
-  let showCurrentPlan;
-  let PREMIUM = initialRoute.initialRoute;
-  ({ applicationId, analyticsLocation, analyticsLocations, onClose, onBack, giftRecipientId, predicate, showCurrentPlan, isBoostPurchaseFlow, planId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss } = initialRoute);
-  const analyticsLocations2 = useAnalyticsLocationsDefault(analyticsLocations).analyticsLocations;
-  if (PREMIUM == null) {
-    PREMIUM = UserSettingsSections.PREMIUM;
-  }
-  const AnalyticsLocationProvider = useAnalyticsLocations.AnalyticsLocationProvider;
-  ({ screens: getScreens({ analyticsLocation, onClose, onBack, predicate, giftRecipientId, showCurrentPlan, isBoostPurchaseFlow, planId, applicationId, activitySessionId, channelId, guildId, premiumFeatureCardOrder, onPaymentSuccess, onPaymentDismiss }), initialRouteName: PREMIUM });
-  const Navigator = Navigator2.Navigator;
-  return <AnalyticsLocationProvider value={analyticsLocations2}>{null}</AnalyticsLocationProvider>;
-});
-const result = size.fileFinishedImporting("components_native/premium/PremiumModal.tsx");
-
-export default tmp3;
+  intl5 = analyticsLocation(tmp[3]).intl;
+  obj3[PREMIUM_GIFTING] = obj10;
+  obj11 = analyticsLocation(onBack[4]);
+  return planId(AnalyticsLocationProvider, obj);
+};
 export const PREMIUM_KEY = "PREMIUM_KEY";

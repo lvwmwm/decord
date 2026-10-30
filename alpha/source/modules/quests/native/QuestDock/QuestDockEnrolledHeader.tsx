@@ -1,25 +1,23 @@
-// Module ID: 17037
-// Function ID: 17038
+// Module ID: 17091
+// Function ID: 17092
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 16947, 21, 587, 5005, 558, 576, 16975, 9636, 14611, 6771, 11152, 16985, 5271, 2]
+// Dependencies: [32, 19, 17, 17001, 21, 575, 5009, 17029, 9661, 14644, 6778, 11028, 17039, 5619, 2]
 
-// Module 17037 (QuestDockEnrolledHeader)
+// Module 17091 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9636 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 14611 */;
-import QuestDockConstants from "QuestDockConstants" /* 16947 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 16975 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16985 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9661 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 14644 */;
+import QuestDockConstants from "QuestDockConstants" /* 17001 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17029 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17039 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -33,121 +31,7 @@ let c8 = "text-sm/medium";
 let closure_9 = QUEST_DOCK_COLLAPSED_HEIGHT - 2 * PX_8;
 let obj = { wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: PX_8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1, minWidth: 0 } };
 let closure_10 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockEnrolledHeader() {
-  let items;
-  let items1;
-  const obj = react2;
-  const cResult = obj.c(22);
-  const obj2 = QuestDockCreativeContext;
-  const questDockQuest = obj2.useQuestDockQuest();
-  const tmp5 = closure_10();
-  const obj3 = hooks_QuestHooks;
-  const questTaskDetails = obj3.useQuestTaskDetails(questDockQuest);
-  const obj4 = hooks_QuestHooks;
-  const first = _slicedToArray(obj4.useTaskPlatformScreen(questDockQuest, questTaskDetails), 1)[0];
-  const obj5 = QuestCopyHooks;
-  const questBarTitle = obj5.useQuestBarTitle(questDockQuest);
-  if (cResult[0] === first) {
-    let tmp9;
-    if (cResult[1] === questDockQuest) {
-      tmp9 = cResult[2];
-    }
-    const tmpResult = QuestCopyHooks;
-    const questBarSubtitle = tmpResult.useQuestBarSubtitle(tmp9);
-    const tmpResult3 = useScaledTextLineHeight;
-    const scaledTextLineHeight = tmpResult3.useScaledTextLineHeight(c7);
-    useScaledTextLineHeight;
-    const tmp11 = c7;
-    const tmp14 = c8;
-    if (cResult[3] === questDockQuest) {
-      let tmp17;
-      if (cResult[4] === questTaskDetails.percentComplete) {
-        tmp17 = cResult[5];
-      }
-      if (cResult[6] === tmp5.progressIndicatorWrapper) {
-        let tmp21;
-        let tmp25;
-        if (cResult[7] === tmp17) {
-          tmp21 = cResult[8];
-        }
-        if (cResult[9] !== questBarTitle) {
-          const obj6 = { variant: tmp11, color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, children: questBarTitle };
-          const tmp27 = hasOwnProperty(Text_Text.Text, obj6);
-          cResult[9] = questBarTitle;
-          cResult[10] = tmp27;
-          tmp25 = tmp27;
-        } else {
-          tmp25 = cResult[10];
-        }
-        if (cResult[11] === tmp15 <= tmp16) {
-          let tmp29;
-          if (cResult[12] === questBarSubtitle) {
-            tmp29 = cResult[13];
-          }
-          if (cResult[14] === tmp5.copy) {
-            if (cResult[15] === tmp25) {
-              let tmp32;
-              if (cResult[16] === tmp29) {
-                tmp32 = cResult[17];
-              }
-              if (cResult[18] === tmp5.wrapper) {
-                if (cResult[19] === tmp21) {
-                  let tmp36;
-                  if (cResult[20] === tmp32) {
-                    tmp36 = cResult[21];
-                  }
-                  return tmp36;
-                }
-              }
-              const obj7 = { style: tmp5.wrapper, children: items };
-              items = [tmp21, tmp32];
-              const tmp39 = metroRequire(View, obj7);
-              cResult[18] = tmp5.wrapper;
-              cResult[19] = tmp21;
-              cResult[20] = tmp32;
-              cResult[21] = tmp39;
-              tmp36 = tmp39;
-            }
-          }
-          const obj8 = { style: tmp5.copy, children: items1 };
-          items1 = [tmp25, tmp29];
-          const tmp35 = metroRequire(View, obj8);
-          cResult[14] = tmp5.copy;
-          cResult[15] = tmp25;
-          cResult[16] = tmp29;
-          cResult[17] = tmp35;
-          tmp32 = tmp35;
-        }
-        let tmp30 = null;
-        if (tmp15 <= tmp16) {
-          const obj9 = { variant: tmp14, color: "text-muted", lineClamp: 1, children: questBarSubtitle };
-          tmp30 = hasOwnProperty(tmp(5271).Text, obj9);
-        }
-        cResult[11] = tmp15 <= tmp16;
-        cResult[12] = questBarSubtitle;
-        cResult[13] = tmp30;
-        tmp29 = tmp30;
-      }
-      const obj10 = { style: tmp5.progressIndicatorWrapper, children: tmp17 };
-      const tmp24 = hasOwnProperty(View, obj10);
-      cResult[6] = tmp5.progressIndicatorWrapper;
-      cResult[7] = tmp17;
-      cResult[8] = tmp24;
-      tmp21 = tmp24;
-    }
-    const obj11 = { quest: questDockQuest, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
-    const tmp20 = hasOwnProperty(QuestProgressIndicatorDefault, obj11);
-    cResult[3] = questDockQuest;
-    cResult[4] = questTaskDetails.percentComplete;
-    cResult[5] = tmp20;
-    tmp17 = tmp20;
-  }
-  const obj12 = { quest: questDockQuest, isExpanded: false, activeScreen: first, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
-  cResult[0] = first;
-  cResult[1] = questDockQuest;
-  cResult[2] = obj12;
-  tmp9 = obj12;
-}) : (function QuestDockEnrolledHeader() {
+const memoResult = react.memo(function QuestDockEnrolledHeader() {
   let items;
   let items1;
   let obj11;
@@ -185,7 +69,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   items1[1] = tmp14Result;
   items[1] = metroRequire(View, obj12);
   return metroRequire(View, obj9);
-}));
+});
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockEnrolledHeader.tsx");
 
 export default memoResult;

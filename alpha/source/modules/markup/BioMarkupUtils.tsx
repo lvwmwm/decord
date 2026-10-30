@@ -1,17 +1,17 @@
-// Module ID: 11254
-// Function ID: 11255
+// Module ID: 11459
+// Function ID: 11460
 // Name: BioMarkupUtils
-// Dependencies: [6021, 6022, 5744, 1457, 8399, 5743, 1949, 12, 2]
+// Dependencies: [6028, 6029, 5750, 1452, 8436, 5749, 1944, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 11254 (BioMarkupUtils)
-import LRUCacheDefault from "LRUCache" /* 1457 */;
-import _modDef1949 from "module_1949" /* 1949 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 5744 */;
-import MarkupRulesDefault from "MarkupRules" /* 6022 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 6021 */;
-import MarkupParser_mod from "MarkupParser" /* 8399 */;
-import MarkupUtils from "MarkupUtils" /* 5743 */;
+// Module 11459 (BioMarkupUtils)
+import LRUCacheDefault from "LRUCache" /* 1452 */;
+import _modDef1944 from "module_1944" /* 1944 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 5750 */;
+import MarkupRulesDefault from "MarkupRules" /* 6029 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 6028 */;
+import MarkupParser_mod from "MarkupParser" /* 8436 */;
+import MarkupUtils from "MarkupUtils" /* 5749 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -65,8 +65,8 @@ export function getOrParseBioAST(arg0, guildId) {
   }
   return value;
 }
-export function parseBioReactWithCachedAST(cResult, guildId) {
-  if (0 === cResult.trim().length) {
+export function parseBioReactWithCachedAST(description, guildId) {
+  if (0 === description.trim().length) {
     return null;
   } else {
     let str = guildId;
@@ -74,18 +74,18 @@ export function parseBioReactWithCachedAST(cResult, guildId) {
       str = "";
     }
     const _HermesInternal = HermesInternal;
-    const combined = "" + str + ":" + cResult;
+    const combined = "" + str + ":" + description;
     let value = closure_3.get(combined);
     const obj = closure_3;
     if (null == value) {
       const obj2 = { guildId };
-      const tmp5 = closure_6(cResult, true, obj2);
+      const tmp5 = closure_6(description, true, obj2);
       const result = obj.set(combined, tmp5);
       value = tmp5;
     }
-    const reactFor = _modDef1949.reactFor;
-    _modDef1949;
-    const obj3 = _modDef1949;
+    const reactFor = _modDef1944.reactFor;
+    _modDef1944;
+    const obj3 = _modDef1944;
     return reactFor(obj3.ruleOutput(c2, "react"))(value);
   }
 }

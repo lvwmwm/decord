@@ -1,47 +1,20 @@
-// Module ID: 18525
-// Function ID: 18526
+// Module ID: 18585
+// Function ID: 18586
 // Name: useResourceChannels
-// Dependencies: [4857, 7385, 558, 576, 573, 2]
+// Dependencies: [4858, 7392, 563, 2]
+// Exports: default
 
-// Module 18525 (useResourceChannels)
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7385 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18585 (useResourceChannels)
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7392 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResourceChannels(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildOnboardingHomeSettingsStore, ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      let channel;
-      const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(closure_0);
-      return resourceChannels.filter((channelId) => null != channel.getChannel(channelId.channelId));
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStoresArray(first, tmp7);
-}) : (function useResourceChannels(arg0) {
+const result = size.fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
+
+export default function useResourceChannels(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildOnboardingHomeSettingsStore, ChannelStore];
@@ -51,7 +24,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResourc
     const resourceChannels = GuildOnboardingHomeSettingsStore.getResourceChannels(closure_0);
     return resourceChannels.filter((channelId) => null != channel.getChannel(channelId.channelId));
   });
-});
-const result = size.fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");
-
-export default tmp2;
+};

@@ -1,101 +1,45 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13640
+// Function ID: 13641
 // Name: FinalizeTraitActionSheet
-// Dependencies: [21, 6422, 3090, 558, 576, 7308, 1125, 5247, 7044, 7358, 7045, 2]
+// Dependencies: [21, 6429, 3091, 7360, 7315, 1114, 7052, 5253, 7055, 2]
+// Exports: default
 
-// Module 13490 (FinalizeTraitActionSheet)
+// Module 13640 (FinalizeTraitActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3090 from "module_3090" /* 3090 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6422 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import _modDef3091 from "module_3091" /* 3091 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6429 */;
 import size from "module_2" /* 2 */;
 
 let option;
 
 const jsx = Fragment.jsx;
-let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3090.f4BaUg };
+let obj = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.AURA, subtitle: _modDef3091.f4BaUg };
 const items = [obj, , , , , ];
-let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3090.gpEOaS };
+let obj2 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.WEARABLE, subtitle: _modDef3091.gpEOaS };
 items[1] = obj2;
-const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3090["l/tCAO"] };
+const obj3 = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.SHOES, subtitle: _modDef3091["l/tCAO"] };
 items[2] = obj3;
-items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3090["+oFzYq"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3090["+oFzYq"] });
-items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3090.xa55WX };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3090.xa55WX });
-items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3090["1dd6Fx"] };
-({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3090["1dd6Fx"] });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTraitActionSheet(arg0) {
-  let first;
-  let onSelectOption;
-  let selectedOption;
-  let tmp11;
-  let obj = onSelectOption(576);
-  const cResult = obj.c(8);
-  ({ selectedOption, onSelectOption } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
-    let intl = tmp(1125).intl;
-    const tmp7 = <BottomSheetTitleHeader title={intl.string(_modDef3090.Zl5vPW)} />;
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult = intl2.string(_modDef3090.Zl5vPW);
-    cResult[1] = stringResult;
-  }
-  if (cResult[2] !== onSelectOption) {
-    const fn = function c(arg0) {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-      onSelectOption(arg0);
-    };
-    cResult[2] = onSelectOption;
-    cResult[3] = fn;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const mapped = items.map((option) => {
-      option = option.option;
-      const subtitle = option.subtitle;
-      const TableRadioRow = onSelectOption(dependencyMap[8]).TableRadioRow;
-      const obj2 = onSelectOption(dependencyMap[1]);
-      const intl = onSelectOption(dependencyMap[6]).intl;
-      return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
-    });
-    cResult[4] = mapped;
-  }
-  if (cResult[5] === selectedOption) {
-    let tmp15;
-    if (cResult[6] === tmp11) {
-      tmp15 = cResult[7];
-    }
-    return tmp15;
-  }
-  const ActionSheet = tmp(7358).ActionSheet;
-  const tmp16 = <ActionSheet startExpanded header={first}>{null}</ActionSheet>;
-  cResult[5] = selectedOption;
-  cResult[6] = tmp11;
-  cResult[7] = tmp16;
-  tmp15 = tmp16;
-}) : (function FinalizeTraitActionSheet(onSelectOption) {
+items[3] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3091["+oFzYq"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.HAT, subtitle: _modDef3091["+oFzYq"] });
+items[4] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3091.xa55WX };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT, subtitle: _modDef3091.xa55WX });
+items[5] = { option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3091["1dd6Fx"] };
+({ option: CheckpointCustomizationUtils.CheckpointCustomizationOption.FACE, subtitle: _modDef3091["1dd6Fx"] });
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitActionSheet.tsx");
+
+export default function FinalizeTraitActionSheet(onSelectOption) {
   let intl;
   let intl2;
   onSelectOption = onSelectOption.onSelectOption;
   const selectedOption = onSelectOption.selectedOption;
-  const ActionSheet = onSelectOption(7358).ActionSheet;
-  let obj2 = { title: intl.string(_modDef3090.Zl5vPW) };
-  const BottomSheetTitleHeader = onSelectOption(7308).BottomSheetTitleHeader;
-  intl = onSelectOption(1125).intl;
+  const ActionSheet = onSelectOption(7360).ActionSheet;
+  let obj2 = { title: intl.string(_modDef3091.Zl5vPW) };
+  const BottomSheetTitleHeader = onSelectOption(7315).BottomSheetTitleHeader;
+  intl = onSelectOption(1114).intl;
   ({
     hasIcons: false,
-    accessibilityLabel: intl2.string(_modDef3090.Zl5vPW),
+    accessibilityLabel: intl2.string(_modDef3091.Zl5vPW),
     defaultValue: selectedOption,
     onChange(arg0) {
       const obj = ActionSheetActionCreatorsDefault;
@@ -107,14 +51,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FinalizeTr
       const subtitle = option.subtitle;
       const TableRadioRow = onSelectOption(dependencyMap[8]).TableRadioRow;
       const obj2 = onSelectOption(dependencyMap[1]);
-      const intl = onSelectOption(dependencyMap[6]).intl;
+      const intl = onSelectOption(dependencyMap[5]).intl;
       return <TableRadioRow key={option} value={option} label={obj2.getCustomizationOptionName(option)} subLabel={intl.string(subtitle)} />;
     })
   });
-  const TableRadioGroup = onSelectOption(7045).TableRadioGroup;
-  intl2 = onSelectOption(1125).intl;
+  const TableRadioGroup = onSelectOption(7052).TableRadioGroup;
+  intl2 = onSelectOption(1114).intl;
   return <ActionSheet startExpanded header={null}>{null}</ActionSheet>;
-});
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/FinalizeTraitActionSheet.tsx");
-
-export default tmp2;
+};

@@ -1,43 +1,32 @@
 // Module ID: 1587
 // Function ID: 1588
 // Name: react
-// Dependencies: [19, 1533]
-// Exports: useFocusedListenersChildrenAdapter
+// Dependencies: [19]
 
 // Module 1587 (react)
-import react2 from "react" /* 1533 */;
 import react from "react" /* 19 */;
 
 
-export function useFocusedListenersChildrenAdapter(navigation) {
-  navigation = navigation.navigation;
-  const focusedListeners = navigation.focusedListeners;
-  const addListener = react.useContext(react2.NavigationBuilderContext).addListener;
-  const items = [focusedListeners, navigation];
-  const callback = react.useCallback((fn) => {
-    if (navigation.isFocused()) {
-      for (const item10012 of focusedListeners) {
-        let item10012Result = item10012(fn);
-        let handled = item10012Result.handled;
-        let tmp4 = handled;
-        if (tmp4) {
-          let obj2 = { handled, result: tmp5 };
-          obj.return();
-          return obj2;
+export const StaticContainer = react.memo(function StaticContainer(children) {
+  return children.children;
+}, (arg0, arg1) => {
+  const keys = Object.keys(arg0);
+  if (keys.length !== Object.keys(arg1).length) {
+    return false;
+  } else {
+    const iter = keys[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      let tmp5 = nextResult;
+      if ("children" !== nextResult) {
+        if (arg0[tmp5] !== arg1[tmp5]) {
+          iter.return();
+          let flag = false;
+          return false;
         }
       }
-      const obj3 = { handled: true, result: fn(navigation) };
-      return obj3;
-    } else {
-      return { handled: false, result: null };
+      continue;
     }
-  }, items);
-  const items1 = [addListener, callback];
-  const effect = react.useEffect(() => {
-    let tmpResult;
-    if (addListener != null) {
-      tmpResult = tmp("focus", callback);
-    }
-    return tmpResult;
-  }, items1);
-}
+    return true;
+  }
+});

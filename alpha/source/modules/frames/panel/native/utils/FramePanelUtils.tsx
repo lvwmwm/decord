@@ -1,44 +1,25 @@
-// Module ID: 19389
-// Function ID: 19390
+// Module ID: 19452
+// Function ID: 19453
 // Name: FramePanelUtils
-// Dependencies: [6833, 6834, 5646, 558, 576, 504, 2]
-// Exports: isFramePanelFullscreen
+// Dependencies: [6840, 6841, 5652, 504, 2]
+// Exports: isFramePanelFullscreen, useIsActivityPanelFullscreen
 
-// Module 19389 (FramePanelUtils)
-import react from "react" /* 576 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19452 (FramePanelUtils)
+import get_initialized from "get initialized" /* 504 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5652 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import FramesStore from "FramesStore" /* 6840 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const asLaunched = FramesConstants.asLaunched;
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivityPanelFullscreen() {
-  let mainFrame;
-  let tmp4;
-  let tmp5;
-  let tmp = require;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    const fn = function u() {
-      const tmp = asLaunched(mainFrame.getMainFrame());
-      return null != tmp && tmp.data.activityPanelMode === constants.PANEL;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIsActivityPanelFullscreen() {
+const result = size.fileFinishedImporting("modules/frames/panel/native/utils/FramePanelUtils.tsx");
+
+export function isFramePanelFullscreen() {
+  const tmp = asLaunched(FramesStore.getMainFrame());
+  return null != tmp && tmp.data.activityPanelMode === ActivityPanelModes.PANEL;
+}
+export function useIsActivityPanelFullscreen() {
   let mainFrame;
   const items = [FramesStore];
   const obj = get_initialized;
@@ -46,11 +27,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActivit
     const tmp = asLaunched(mainFrame.getMainFrame());
     return null != tmp && tmp.data.activityPanelMode === constants.PANEL;
   });
-});
-const result = size.fileFinishedImporting("modules/frames/panel/native/utils/FramePanelUtils.tsx");
-
-export function isFramePanelFullscreen() {
-  const tmp = asLaunched(FramesStore.getMainFrame());
-  return null != tmp && tmp.data.activityPanelMode === ActivityPanelModes.PANEL;
 }
-export const useIsActivityPanelFullscreen = tmp2;

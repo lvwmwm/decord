@@ -1,37 +1,36 @@
-// Module ID: 5751
-// Function ID: 5752
+// Module ID: 5758
+// Function ID: 5759
 // Name: hasRichActivity
-// Dependencies: [1084, 2]
+// Dependencies: [5757, 2]
 // Exports: default
 
-// Module 5751 (hasRichActivity)
-import Constants from "Constants" /* 1084 */;
+// Module 5758 (hasRichActivity)
+import ActivityTypes from "ActivityTypes" /* 5757 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
 const result = size.fileFinishedImporting("modules/activities/utils/hasRichActivity.tsx");
 
 export default function hasRichActivity(type) {
-  let tmp = null != type && type.type !== ActivityTypes.CUSTOM_STATUS;
+  let tmp = null != type && type.type !== ActivityTypes.ActivityTypes.CUSTOM_STATUS;
   if (tmp) {
-    let tmp3 = null != type.details;
-    if (!tmp3) {
-      let tmp4 = null != type.assets;
-      if (tmp4) {
-        tmp4 = null != type.assets.large_image || null != type.assets.small_text;
+    let tmp4 = null != type.details;
+    if (!tmp4) {
+      let tmp5 = null != type.assets;
+      if (tmp5) {
+        tmp5 = null != type.assets.large_image || null != type.assets.small_text;
       }
-      tmp3 = tmp4;
+      tmp4 = tmp5;
     }
-    if (!tmp3) {
-      tmp3 = null != type.party;
+    if (!tmp4) {
+      tmp4 = null != type.party;
     }
-    if (!tmp3) {
-      tmp3 = null != type.secrets;
+    if (!tmp4) {
+      tmp4 = null != type.secrets;
     }
-    if (!tmp3) {
-      tmp3 = null != type.state;
+    if (!tmp4) {
+      tmp4 = null != type.state;
     }
-    tmp = tmp3;
+    tmp = tmp4;
   }
   return tmp;
 };

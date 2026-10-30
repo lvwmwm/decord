@@ -1,24 +1,22 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 9015
+// Function ID: 9016
 // Name: StageChannelUpsellCardStore
-// Dependencies: [4863, 1266, 510, 1271, 558, 576, 4920, 2]
+// Dependencies: [4864, 1255, 510, 1260, 4924, 2]
+// Exports: useStageChannelUpsellCardStore
 
-// Module 8985 (StageChannelUpsellCardStore)
+// Module 9015 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
-import react from "react" /* 576 */;
-import react_native from "react-native" /* 1271 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
-import module_1266 from "module_1266" /* 1266 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import react_native from "react-native" /* 1260 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import _slicedToArray from "_slicedToArray" /* 4924 */;
+import module_1255 from "module_1255" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp;
-const _slicedToArray = tmp(4920);
 let closure_2 = GuildScheduledEventsConstants.GUILD_EVENT_STAGE_UPSELL_CARD_KEY;
-let closure_3 = module_1266.createWithEqualityFn((arg0) => {
+let closure_3 = module_1255.createWithEqualityFn((arg0) => {
   let Storage;
   let closure_0;
   _require = arg0;
@@ -34,29 +32,12 @@ let closure_3 = module_1266.createWithEqualityFn((arg0) => {
   Storage = require("Storage").Storage;
   return obj;
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useStageChannelUpsellCardStore() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(arg0) {
-      const items = [, ];
-      ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
-      return items;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_3(first, _slicedToArray.shallow);
-}) : (function useStageChannelUpsellCardStore() {
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
+
+export function useStageChannelUpsellCardStore() {
   return closure_3((arg0) => {
     const items = [, ];
     ({ hasSeenUpsellCard: arr[0], markAsSeen: arr[1] } = arg0);
     return items;
   }, _slicedToArray.shallow);
-});
-let result = size.fileFinishedImporting("modules/guild_scheduled_events/StageChannelUpsellCardStore.tsx");
-
-export const useStageChannelUpsellCardStore = tmp2;
+}

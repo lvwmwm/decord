@@ -1,22 +1,22 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14822
+// Function ID: 14823
 // Name: getActivityHeader
-// Dependencies: [1084, 14788, 14789, 1125, 14791, 14792, 10720, 2]
+// Dependencies: [1072, 14823, 14824, 5757, 1114, 14826, 14827, 10743, 2]
 // Exports: default
 
-// Module 14787 (getActivityHeader)
-import intl23 from "intl" /* 1125 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10720 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14788 */;
-import getActivityPlatformDefault from "getActivityPlatform" /* 14789 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14791 */;
-import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14792 */;
-import Constants from "Constants" /* 1084 */;
+// Module 14822 (getActivityHeader)
+import Constants from "Constants" /* 1072 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 14823 */;
+import getActivityPlatformDefault from "getActivityPlatform" /* 14824 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 14826 */;
+import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 14827 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-({ ActivityTypes: c3, PlatformTypes: closure_4 } = Constants);
+let tmp5;
+const intl23 = tmp5(1114);
+const StageChannelRichPresenceUtils = tmp5(10743);
+const PlatformTypes = Constants.PlatformTypes;
 const result = size.fileFinishedImporting("modules/user_profile/utils/getActivityHeader.tsx");
 
 export default function getActivityHeader(session_id) {
@@ -64,12 +64,12 @@ export default function getActivityHeader(session_id) {
   if (str == null) {
     str = "";
   }
-  if (session_id.type === constants.PLAYING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.PLAYING) {
     let type1;
     if (tmp4 != null) {
       type1 = tmp4.type;
     }
-    if (type1 === constants2.XBOX) {
+    if (type1 === PlatformTypes.XBOX) {
       const obj2 = { text: formatToPlainString6(A17aM83, obj3), platformIcon: icon, platformLabel: str };
       const intl21 = intl23.intl;
       formatToPlainString6 = intl21.formatToPlainString;
@@ -79,12 +79,12 @@ export default function getActivityHeader(session_id) {
       return obj2;
     }
   }
-  if (session_id.type === constants.PLAYING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.PLAYING) {
     let type2;
     if (tmp4 != null) {
       type2 = tmp4.type;
     }
-    if (type2 === constants2.PLAYSTATION) {
+    if (type2 === PlatformTypes.PLAYSTATION) {
       const obj4 = { text: formatToPlainString5(A17aM82, obj5), platformIcon: icon, platformLabel: str };
       const intl19 = intl23.intl;
       formatToPlainString5 = intl19.formatToPlainString;
@@ -94,20 +94,20 @@ export default function getActivityHeader(session_id) {
       return obj4;
     }
   }
-  if (session_id.type === constants.PLAYING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.PLAYING) {
     let type3;
     if (tmp4 != null) {
       type3 = tmp4.type;
     }
-    if (type3 === constants2.META_QUEST_OR_HORIZON) {
+    if (type3 === PlatformTypes.META_QUEST_OR_HORIZON) {
       const intl17 = intl23.intl;
       const formatToPlainString4 = intl17.formatToPlainString;
       const A17aM8 = intl23.t.A17aM8;
-      const tmp33 = isOnMetaHorizonDefault(session_id);
+      const tmp22 = isOnMetaHorizonDefault(session_id);
       const intl18 = intl23.intl;
       const string2 = intl18.string;
       const t2 = intl23.t;
-      if (tmp33) {
+      if (tmp22) {
         let string2Result = string2(t2.BrHQaq);
       } else {
         string2Result = string2(t2.p6vL0e);
@@ -116,20 +116,20 @@ export default function getActivityHeader(session_id) {
       return obj6;
     }
   }
-  if (session_id.type === constants.WATCHING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.WATCHING) {
     let type4;
     if (tmp4 != null) {
       type4 = tmp4.type;
     }
-    if (type4 === constants2.META_QUEST_OR_HORIZON) {
+    if (type4 === PlatformTypes.META_QUEST_OR_HORIZON) {
       const intl15 = intl23.intl;
       const formatToPlainString3 = intl15.formatToPlainString;
       const ENbTKQ = intl23.t.ENbTKQ;
-      const tmp30 = isOnMetaHorizonDefault(session_id);
+      const tmp20 = isOnMetaHorizonDefault(session_id);
       const intl16 = intl23.intl;
       const string = intl16.string;
       const t = intl23.t;
-      if (tmp30) {
+      if (tmp20) {
         let stringResult = string(t.BrHQaq);
       } else {
         stringResult = string(t.p6vL0e);
@@ -138,12 +138,12 @@ export default function getActivityHeader(session_id) {
       return obj8;
     }
   }
-  if (session_id.type === constants.STREAMING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.STREAMING) {
     let type5;
     if (tmp4 != null) {
       type5 = tmp4.type;
     }
-    if (type5 === constants2.TWITCH) {
+    if (type5 === PlatformTypes.TWITCH) {
       const obj10 = { text: formatToPlainString2(v4CQq9Q, obj11), platformIcon: icon, platformLabel: str };
       const intl13 = intl23.intl;
       formatToPlainString2 = intl13.formatToPlainString;
@@ -153,12 +153,12 @@ export default function getActivityHeader(session_id) {
       return obj10;
     }
   }
-  if (session_id.type === constants.STREAMING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.STREAMING) {
     let type6;
     if (tmp4 != null) {
       type6 = tmp4.type;
     }
-    if (type6 === constants2.YOUTUBE) {
+    if (type6 === PlatformTypes.YOUTUBE) {
       const obj12 = { text: formatToPlainString(v4CQq9Q1, obj13), platformIcon: icon, platformLabel: str };
       const intl11 = intl23.intl;
       formatToPlainString = intl11.formatToPlainString;
@@ -171,16 +171,16 @@ export default function getActivityHeader(session_id) {
   if (null != tmp3) {
     let Dzgz4u;
     const type = session_id.type;
-    const tmp37 = getActivityPlatformDisplayNameDefault(tmp3, session_id);
-    if (constants.PLAYING === type) {
+    const tmp24 = getActivityPlatformDisplayNameDefault(tmp3, session_id);
+    if (ActivityTypes.ActivityTypes.PLAYING === type) {
       Dzgz4u = intl23.t.A17aM8;
-    } else if (constants.WATCHING === type) {
+    } else if (ActivityTypes.ActivityTypes.WATCHING === type) {
       Dzgz4u = intl23.t.ENbTKQ;
-    } else if (constants.LISTENING === type) {
+    } else if (ActivityTypes.ActivityTypes.LISTENING === type) {
       Dzgz4u = intl23.t.EcHzWI;
-    } else if (constants.COMPETING === type) {
+    } else if (ActivityTypes.ActivityTypes.COMPETING === type) {
       Dzgz4u = intl23.t.ikpHeS;
-    } else if (constants.STREAMING === type) {
+    } else if (ActivityTypes.ActivityTypes.STREAMING === type) {
       Dzgz4u = intl23.t.Dzgz4u;
     }
     if (undefined !== Dzgz4u) {
@@ -189,59 +189,59 @@ export default function getActivityHeader(session_id) {
       return obj14;
     }
   }
-  if (session_id.type === constants.PLAYING) {
+  if (session_id.type === ActivityTypes.ActivityTypes.PLAYING) {
     const obj16 = { text: intl9.string(intl23.t.BMTj28), platformIcon: icon, platformLabel: str };
     intl9 = intl23.intl;
     obj = obj16;
-  } else if (session_id.type === constants.STREAMING) {
+  } else if (session_id.type === ActivityTypes.ActivityTypes.STREAMING) {
     const obj17 = { text: intl8.string(intl23.t["Jpkr/q"]), platformIcon: icon, platformLabel: str };
     intl8 = intl23.intl;
     obj = obj17;
   } else {
-    const obj29 = StageChannelRichPresenceUtils;
-    if (obj29.isStageActivity(session_id)) {
+    const tmp5Result = StageChannelRichPresenceUtils;
+    if (tmp5Result.isStageActivity(session_id)) {
       const obj18 = { text: intl7.formatToPlainString(intl23.t.pW3Ip3, obj19) };
-      intl7 = tmp39(1125).intl;
+      intl7 = intl23.intl;
       obj = obj18;
       obj19 = { name: session_id.name };
     } else {
-      if (session_id.type === constants.LISTENING) {
+      if (session_id.type === ActivityTypes.ActivityTypes.LISTENING) {
         if (null != session_id.details) {
           const obj20 = { text: intl6.formatToPlainString(intl23.t["b+lA5+"], obj21), platformIcon: icon, platformLabel: str };
-          intl6 = tmp39(1125).intl;
+          intl6 = intl23.intl;
           obj = obj20;
           obj21 = { name: session_id.name };
         }
       }
-      if (session_id.type === constants.LISTENING) {
+      if (session_id.type === ActivityTypes.ActivityTypes.LISTENING) {
         const obj22 = { text: intl5.string(intl23.t.dBISa6), platformIcon: icon, platformLabel: str };
-        intl5 = tmp39(1125).intl;
+        intl5 = intl23.intl;
         obj = obj22;
       } else {
-        if (session_id.type === constants.WATCHING) {
+        if (session_id.type === ActivityTypes.ActivityTypes.WATCHING) {
           if (null != session_id.details) {
             const obj23 = { text: intl4.formatToPlainString(intl23.t.mqdfDc, obj24), platformIcon: icon, platformLabel: str };
-            intl4 = tmp39(1125).intl;
+            intl4 = intl23.intl;
             obj = obj23;
             obj24 = { name: session_id.name };
           }
         }
-        if (session_id.type === constants.WATCHING) {
+        if (session_id.type === ActivityTypes.ActivityTypes.WATCHING) {
           const obj25 = { text: intl3.string(intl23.t.GpNXjC), platformIcon: icon, platformLabel: str };
-          intl3 = tmp39(1125).intl;
+          intl3 = intl23.intl;
           obj = obj25;
         } else {
-          if (session_id.type === constants.COMPETING) {
+          if (session_id.type === ActivityTypes.ActivityTypes.COMPETING) {
             if (null != session_id.details) {
               const obj26 = { text: intl2.formatToPlainString(intl23.t.oHF7Ch, obj27), platformIcon: icon, platformLabel: str };
-              intl2 = tmp39(1125).intl;
+              intl2 = intl23.intl;
               obj = obj26;
               obj27 = { name: session_id.name };
             }
           }
-          if (session_id.type === constants.COMPETING) {
+          if (session_id.type === ActivityTypes.ActivityTypes.COMPETING) {
             const obj28 = { text: intl.string(intl23.t.OzCsIA), platformIcon: icon, platformLabel: str };
-            intl = tmp39(1125).intl;
+            intl = intl23.intl;
             obj = obj28;
           } else {
             obj = { text: "r", platformIcon: icon, platformLabel: str };

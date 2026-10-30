@@ -1,44 +1,44 @@
-// Module ID: 9360
-// Function ID: 9361
+// Module ID: 9374
+// Function ID: 9375
 // Name: useGameProfileOpenCritic
-// Dependencies: [9361, 1125, 9362, 9363, 9364, 9365, 2]
+// Dependencies: [9375, 1114, 9376, 9377, 9378, 9379, 2]
 // Exports: getOpenCriticCircleRatingColor, getOpenCriticTierImage, getOpenCriticTierText
 
-// Module 9360 (useGameProfileOpenCritic)
-import intl5 from "intl" /* 1125 */;
-import OpenCriticTier from "OpenCriticTier" /* 9361 */;
-import _modDef9362 from "module_9362" /* 9362 */;
-import _modDef9363 from "module_9363" /* 9363 */;
-import _modDef9364 from "module_9364" /* 9364 */;
-import _modDef9365 from "module_9365" /* 9365 */;
+// Module 9374 (useGameProfileOpenCritic)
+import intl5 from "intl" /* 1114 */;
+import OpenCriticTier from "OpenCriticTier" /* 9375 */;
+import _modDef9376 from "module_9376" /* 9376 */;
+import _modDef9377 from "module_9377" /* 9377 */;
+import _modDef9378 from "module_9378" /* 9378 */;
+import _modDef9379 from "module_9379" /* 9379 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileOpenCritic.tsx");
 
 export function getOpenCriticTierText(tier) {
   if (OpenCriticTier.OpenCriticTier.MIGHTY === tier) {
-    const intl4 = tmp(1125).intl;
+    const intl4 = tmp(1114).intl;
     return intl4.string(intl5.t.aZej2g);
   } else if (OpenCriticTier.OpenCriticTier.STRONG === tier) {
-    const intl3 = tmp(1125).intl;
+    const intl3 = tmp(1114).intl;
     return intl3.string(intl5.t.MLxnSg);
   } else if (OpenCriticTier.OpenCriticTier.FAIR === tier) {
-    const intl2 = tmp(1125).intl;
+    const intl2 = tmp(1114).intl;
     return intl2.string(intl5.t["3f19KA"]);
   } else if (OpenCriticTier.OpenCriticTier.WEAK === tier) {
-    const intl = tmp(1125).intl;
+    const intl = tmp(1114).intl;
     return intl.string(intl5.t.jtVgSh);
   }
 }
 export function getOpenCriticTierImage(tier) {
   if (OpenCriticTier.OpenCriticTier.MIGHTY === tier) {
-    return _modDef9362;
+    return _modDef9376;
   } else if (OpenCriticTier.OpenCriticTier.STRONG === tier) {
-    return _modDef9363;
+    return _modDef9377;
   } else if (OpenCriticTier.OpenCriticTier.FAIR === tier) {
-    return _modDef9364;
+    return _modDef9378;
   } else if (OpenCriticTier.OpenCriticTier.WEAK === tier) {
-    return _modDef9365;
+    return _modDef9379;
   }
 }
 export function getOpenCriticCircleRatingColor(tier) {

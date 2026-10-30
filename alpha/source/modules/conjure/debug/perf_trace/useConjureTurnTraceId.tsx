@@ -1,118 +1,19 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12608
+// Function ID: 12609
 // Name: useConjureTurnTraceId
-// Dependencies: [10814, 558, 576, 12346, 10809, 504, 2]
+// Dependencies: [10837, 12508, 10832, 504, 2]
+// Exports: default
 
-// Module 12454 (useConjureTurnTraceId)
-import ConjureDebugStore from "ConjureDebugStore" /* 10814 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12608 (useConjureTurnTraceId)
+import ConjureDebugStore from "ConjureDebugStore" /* 10837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, spans;
+let _require, spans;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTurnTraceId(arg0, role) {
-  let closure_0;
-  let closure_1;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  const obj2 = require("useConjureDebugAccess");
-  const conjureTraceTabEnabled = obj2.useConjureTraceTabEnabled();
-  if (cResult[0] === role) {
-    let tmp5;
-    let tmp10;
-    if (cResult[1] === conjureTraceTabEnabled) {
-      tmp5 = cResult[2];
-    }
-    dependencyMap = tmp5;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ConjureDebugStore];
-      cResult[3] = items;
-      tmp10 = items;
-    } else {
-      tmp10 = cResult[3];
-    }
-    if (cResult[4] === arg0) {
-      let tmp12;
-      let tmp13;
-      if (cResult[5] === tmp5) {
-        tmp12 = cResult[6];
-        tmp13 = cResult[7];
-      }
-      const tmpResult = tmp(504);
-      return tmpResult.useStateFromStores(tmp10, tmp12, tmp13);
-    }
-    const fn = function _() {
-      let findLastResult = null;
-      if (null != closure_1) {
-        const timingTraces = ConjureDebugStore.getTimingTraces(closure_0);
-        findLastResult = timingTraces.findLast((spans) => {
-          spans = spans.spans;
-          let tmp = "turn" === spans.name;
-          if (tmp) {
-            const found = spans.find((parent) => null == parent.parent);
-            let turn_id;
-            if (found != null) {
-              const attrs = found.attrs;
-              if (attrs != null) {
-                turn_id = attrs.turn_id;
-              }
-            }
-            tmp = turn_id === closure_1_1;
-          }
-          return tmp;
-        });
-      }
-      let id = null;
-      if (null != findLastResult) {
-        id = null;
-        if (!findLastResult.live) {
-          id = findLastResult.id;
-        }
-      }
-      return id;
-    };
-    const items1 = [arg0, tmp5];
-    cResult[4] = arg0;
-    cResult[5] = tmp5;
-    cResult[6] = fn;
-    cResult[7] = items1;
-    tmp13 = items1;
-    tmp12 = fn;
-  }
-  let tmp6 = null;
-  if (conjureTraceTabEnabled) {
-    tmp6 = null;
-    if ("assistant" === role.role) {
-      tmp6 = null;
-      const tmpResult2 = tmp(10809);
-      if (tmpResult2.turnSettled(role)) {
-        let turn_id = role.turn_id;
-        if (turn_id == null) {
-          const steps = role.steps;
-          let found = steps.find((turn_id) => null != turn_id.turn_id);
-          let turn_id1;
-          if (found != null) {
-            turn_id1 = found.turn_id;
-          }
-          turn_id = turn_id1;
-        }
-        if (turn_id == null) {
-          const str2 = role.id;
-          turn_id = str2.replace(/^turn:/, "");
-        }
-        tmp6 = turn_id;
-      }
-    }
-  }
-  cResult[0] = role;
-  cResult[1] = conjureTraceTabEnabled;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function useConjureTurnTraceId(arg0, role) {
+const result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/useConjureTurnTraceId.tsx");
+
+export default function useConjureTurnTraceId(arg0, role) {
   let closure_0;
   let turn_id;
   _require = arg0;
@@ -123,7 +24,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     tmp3 = null;
     if ("assistant" === role.role) {
       tmp3 = null;
-      const tmpResult = tmp(turn_id[4]);
+      const tmpResult = tmp(turn_id[2]);
       if (tmpResult.turnSettled(role)) {
         turn_id = role.turn_id;
         if (turn_id == null) {
@@ -146,7 +47,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   turn_id = tmp3;
   const items = [ConjureDebugStore];
   const items1 = [arg0, tmp3];
-  const tmpResult2 = tmp(turn_id[5]);
+  const tmpResult2 = tmp(turn_id[3]);
   return tmpResult2.useStateFromStores(items, () => {
     let findLastResult = null;
     if (null != turn_id) {
@@ -177,7 +78,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
     return id;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/conjure/debug/perf_trace/useConjureTurnTraceId.tsx");
-
-export default tmp2;
+};

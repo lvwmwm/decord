@@ -3,44 +3,23 @@
 // Dependencies: []
 
 // Module 12878
-let hasOwnProperty;
-
-function merge(arg0, obj) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 2;
+let items;
+let obj2;
+const obj = {
+  name: "Value",
+  structure: obj2,
+  parse() {
+    let sequence;
+    const tokenStart = this.scanner.tokenStart;
+    const element = { type: "Value", loc: this.getLocation(tokenStart, this.scanner.tokenStart), children: sequence };
+    sequence = this.readSequence(this.scope.Value);
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0);
   }
-  const tmp = obj;
-  if (tmp) {
-    if (typeof obj === "object") {
-      if (num > 0) {
-        const tmp9 = arg0;
-        if (tmp9) {
-          if (obj) {
-            const _Object = Object;
-            if (0 === Object.keys(obj).length) {
-              return arg0;
-            }
-          }
-        }
-        obj = {};
-        const merged = Object.assign(arg0);
-        for (const key10016 in obj) {
-          let _Object2 = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          if (!hasOwnProperty.call(obj, key10016)) {
-            continue;
-          } else {
-            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
-            continue;
-          }
-          continue;
-        }
-        return obj;
-      }
-    }
-  }
-  return obj;
-}
+};
+obj2 = { children: items };
+items = [[]];
 
-export { merge };
+export default obj;

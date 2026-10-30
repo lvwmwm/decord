@@ -1,11 +1,11 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5032
+// Function ID: 5033
 // Name: Colors
-// Dependencies: [32, 683, 2]
+// Dependencies: [32, 671, 2]
 // Exports: brightenColor, darkenColor, getContrastingColor, setColorOpacity
 
-// Module 5028 (Colors)
-import _modDef683 from "module_683" /* 683 */;
+// Module 5032 (Colors)
+import _modDef671 from "module_671" /* 671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -27,14 +27,14 @@ export function getContrastingColor(primaryColor, arg1) {
     num = 3;
   }
   let base = obj.base;
-  const tmp4 = _modDef683;
+  const tmp4 = _modDef671;
   if (base == null) {
     base = primaryColor;
   }
   const tmp4Result = tmp4(base);
-  let obj3 = tmp2(683)(primaryColor);
+  let obj3 = tmp2(671)(primaryColor);
   const luminanceResult = tmp4Result.luminance();
-  const tmp2Result = _modDef683;
+  const tmp2Result = _modDef671;
   let contrastResult = tmp2Result.contrast(tmp4Result, obj3);
   let num2 = 99;
   while (true) {
@@ -46,7 +46,7 @@ export function getContrastingColor(primaryColor, arg1) {
       if (!tmp8) {
         if (!tmp7) {
           let brightenResult = obj3.brighten();
-          let obj6 = _modDef683;
+          let obj6 = _modDef671;
           contrastResult = obj6.contrast(tmp4Result, brightenResult);
           num2 = num2 - 1;
           obj3 = brightenResult;
@@ -76,19 +76,19 @@ export function getContrastingColor(primaryColor, arg1) {
   }
 }
 export function darkenColor(contrastingColor, arg1) {
-  const obj = _modDef683(contrastingColor);
+  const obj = _modDef671(contrastingColor);
   const darkenResult = obj.darken(arg1);
   const tmp = _slicedToArray(darkenResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 }
 export function brightenColor(profilePrimaryColor, arg1) {
-  const obj = _modDef683(profilePrimaryColor);
+  const obj = _modDef671(profilePrimaryColor);
   const brightenResult = obj.brighten(arg1);
   const tmp = _slicedToArray(brightenResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";
 }
 export function setColorOpacity(white, alphaResult) {
-  const obj = _modDef683(white);
+  const obj = _modDef671(white);
   alphaResult = obj.alpha(alphaResult);
   const tmp = _slicedToArray(alphaResult.rgba(), 4);
   return "rgba(" + tmp[0] + ", " + tmp[1] + ", " + tmp[2] + ", " + tmp[3] + ")";

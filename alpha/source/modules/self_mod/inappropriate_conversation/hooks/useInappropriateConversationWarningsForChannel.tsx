@@ -1,11 +1,11 @@
-// Module ID: 11005
-// Function ID: 11006
+// Module ID: 11235
+// Function ID: 11236
 // Name: useInappropriateConversationWarningsForChannel
-// Dependencies: [10761, 558, 576, 504, 2]
+// Dependencies: [10784, 504, 2]
+// Exports: useInappropriateConversationWarningsForChannel
 
-// Module 11005 (useInappropriateConversationWarningsForChannel)
-import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10761 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11235 (useInappropriateConversationWarningsForChannel)
+import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10784 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -13,78 +13,13 @@ const ChannelSafetyWarningsStore = ChannelSafetyWarningsStore2;
 let _require;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore2.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationWarningsForChannel(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelSafetyWarningsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function p() {
-      return ChannelSafetyWarningsStore.getChannelSafetyWarnings(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] !== stateFromStores) {
-    let tmp9;
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor(type) {
-          return type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2;
-        }
-      }
-      cResult[6] = R;
-      tmp9 = R;
-    } else {
-      class R {
-        constructor(type) {
-          return type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2;
-        }
-      }
-    }
-    const found = stateFromStores.filter(tmp9);
-    cResult[4] = stateFromStores;
-    cResult[5] = found;
-    tmp8 = found;
-  } else {
-    class R {
-      constructor(type) {
-        return type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2;
-      }
-    }
-  }
-  return tmp8;
-}) : (function useInappropriateConversationWarningsForChannel(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [ChannelSafetyWarningsStore];
-  const items1 = [arg0];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarnings(closure_0), items1);
-  return stateFromStores.filter((type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2);
-});
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationWarningsForChannel.tsx");
 
-export const useInappropriateConversationWarningsForChannel = tmp2;
+export function useInappropriateConversationWarningsForChannel(channelId) {
+  _require = channelId;
+  const items = [ChannelSafetyWarningsStore];
+  const items1 = [channelId];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => ChannelSafetyWarningsStore.getChannelSafetyWarnings(channelId), items1);
+  return stateFromStores.filter((type) => type.type === SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1 || type.type === tmp.INAPPROPRIATE_CONVERSATION_TIER_2);
+}

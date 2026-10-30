@@ -1,18 +1,17 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16758
+// Function ID: 16759
 // Name: SpendingLimitDisplay
-// Dependencies: [1243, 7703, 1391, 558, 576, 504, 16616, 7399, 7400, 1125, 2536, 2]
+// Dependencies: [1232, 7708, 1386, 504, 16669, 7407, 7408, 1114, 2537, 2]
+// Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 16705 (SpendingLimitDisplay)
+// Module 16758 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import PriceUtils from "PriceUtils" /* 7399 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16616 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import _modDef2537 from "module_2537" /* 2537 */;
+import PriceUtils from "PriceUtils" /* 7407 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16669 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
 import size from "module_2" /* 2 */;
 
 function getSpendingLimitDisplayState(amount, arg1) {
@@ -34,17 +33,17 @@ function getSpendingLimitDisplayState(amount, arg1) {
       return { kind: "spent", monthlyText: formatRateResult };
     } else {
       let obj;
-      let num = tmp6(7400).CurrencyExponents[amount.currency];
+      let num = tmp6(7408).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
       const diff = amount.amount - arg1;
       if (diff <= 10 * 10 ** num) {
         const obj3 = { kind: "close-to-limit", monthlyText: formatRateResult, remainingText: formatToPlainString(prop, obj4) };
-        const intl = tmp6(1125).intl;
+        const intl = tmp6(1114).intl;
         formatToPlainString = intl.formatToPlainString;
         obj4 = { amount: tmp6Result.formatPrice(diff, currency) };
-        prop = _modDef2536["+Q+bU1"];
+        prop = _modDef2537["+Q+bU1"];
         obj = obj3;
         tmp6Result = PriceUtils;
       } else {
@@ -55,43 +54,9 @@ function getSpendingLimitDisplayState(amount, arg1) {
   }
 }
 const SubscriptionIntervalTypes = PremiumConstants.SubscriptionIntervalTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendingLimitFromUserSettings() {
-  let settings;
-  let tmp4;
-  let tmp5;
-  let tmp2 = dependencyMap;
-  let obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserSettingsProtoStore];
-    const fn = function o() {
-      const safetySettings = settings.settings.safetySettings;
-      let oneTimePurchaseLimit;
-      if (safetySettings != null) {
-        const spendingLimitSettings = safetySettings.spendingLimitSettings;
-        if (spendingLimitSettings != null) {
-          oneTimePurchaseLimit = spendingLimitSettings.oneTimePurchaseLimit;
-        }
-      }
-      let tmp2 = null;
-      if (null != oneTimePurchaseLimit) {
-        const _Number = Number;
-        tmp2 = { amount: Number(oneTimePurchaseLimit.amount), currency: oneTimePurchaseLimit.currency };
-        const obj = { amount: Number(oneTimePurchaseLimit.amount), currency: oneTimePurchaseLimit.currency };
-      }
-      return tmp2;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5, undefined, SpendingLimitUtils.spendingLimitEqual);
-}) : (function useSpendingLimitFromUserSettings() {
+const result = size.fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
+
+export function useSpendingLimitFromUserSettings() {
   let settings;
   let obj = get_initialized;
   const items = [UserSettingsProtoStore];
@@ -112,48 +77,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendingL
     }
     return tmp2;
   }, undefined, SpendingLimitUtils.spendingLimitEqual);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendingLimitDisplayState(amount) {
-  let monthlyPurchases;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
-    const fn = function s() {
-      return monthlyPurchases.getMonthlyPurchases();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  let num3;
-  if (stateFromStores != null) {
-    num3 = stateFromStores.total_amount;
-  }
-  if (num3 == null) {
-    num3 = 0;
-  }
-  if (cResult[2] === amount) {
-    let tmp8;
-    if (cResult[3] === num3) {
-      tmp8 = cResult[4];
-    }
-    return tmp8;
-  }
-  const tmp9 = getSpendingLimitDisplayState(amount, num3);
-  cResult[2] = amount;
-  cResult[3] = num3;
-  cResult[4] = tmp9;
-  tmp8 = tmp9;
-}) : (function useSpendingLimitDisplayState(arg0) {
+}
+export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
+export { getSpendingLimitDisplayState };
+export function useSpendingLimitDisplayState(cap) {
   let monthlyPurchases;
   const items = [FamilyCenterStore];
   const obj = get_initialized;
@@ -166,11 +93,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSpendin
   if (num == null) {
     num = 0;
   }
-  return tmp2(arg0, num);
-});
-const result = size.fileFinishedImporting("modules/parent_tools/SpendingLimitDisplay.tsx");
-
-export const useSpendingLimitFromUserSettings = tmp2;
-export const CLOSE_TO_LIMIT_THRESHOLD_MAJOR_UNITS = 10;
-export { getSpendingLimitDisplayState };
-export const useSpendingLimitDisplayState = tmp3;
+  return tmp2(cap, num);
+}

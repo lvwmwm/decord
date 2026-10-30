@@ -1,31 +1,31 @@
-// Module ID: 19654
-// Function ID: 19655
+// Module ID: 19717
+// Function ID: 19718
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5006, 4879, 19650, 1084, 21, 5005, 587, 558, 576, 7098, 1497, 5304, 5086, 1264, 5749, 5271, 1199, 11352, 5281, 1125, 8809, 6968, 10583, 2]
+// Dependencies: [32, 19, 17, 5010, 4880, 19713, 1072, 21, 5009, 575, 7106, 1492, 5269, 5090, 1253, 5755, 8843, 6974, 5619, 10609, 1188, 11555, 5629, 1114, 2]
+// Exports: default
 
-// Module 19654 (GuildSettingsRoleTemplate)
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5304 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7098 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11352 */;
+// Module 19717 (GuildSettingsRoleTemplate)
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5269 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7106 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11555 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19650 */;
-import Constants from "Constants" /* 1084 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19713 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let title;
+let constants, title;
 
 let Dimensions;
 let c10;
@@ -41,206 +41,26 @@ let obj3;
 let tmp11;
 let tmp2;
 let unpackModuleId;
-const ReanimatedRexport = tmp11(5086);
-const _modDef8809 = tmp2(8809);
-const PaginationDefault = tmp2(10583);
+const ReanimatedRexport = tmp11(5090);
+const _modDef8843 = tmp2(8843);
+const PaginationDefault = tmp2(10609);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
 ({ AnalyticEvents: closure_12, GuildFeatures: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
 let width = Dimensions.get("window").width;
-let c17 = 300;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, carousel: { flex: 1 }, cardWrapper: { width: 300, alignSelf: "center", paddingHorizontal: 10, flex: 1 }, card: obj3, templateTitle: { alignItems: "center", textAlign: "center", paddingBottom: 16 }, templateSubtitle: { paddingBottom: 16 }, templateContentWrapper: { flex: 1, justifyContent: "flex-start" }, templateContent: { alignItems: "center", flexDirection: "row", paddingBottom: 8 }, templateContentText: { flex: 1, marginLeft: 12 }, templateButton: { justifyContent: "flex-end", flexGrow: 0, paddingTop: 16 }, sliderContainer: { alignItems: "center" }, slider: { marginTop: 8, width: 300, maxWidth: "72%" }, sliderLabels: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 16, textAlign: "center", width: 380, maxWidth: "85%" }, sliderLabel: { marginHorizontal: 0, width: "25%", textAlign: "center", alignItems: "center" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.sm, borderStyle: "solid", borderWidth: 1, flex: 1, flexDirection: "column", marginVertical: 16, padding: 16, paddingTop: 20 };
-let closure_18 = createStyles(obj);
+let closure_17 = createStyles(obj);
 const __initData = { code: "function GuildSettingsRoleTemplateTsx1(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
-const __initData2 = { code: "function GuildSettingsRoleTemplateTsx2(value){const{interpolate,sheetWidth,parallaxScrollingOffset,Extrapolation,inactiveOpacity}=this.__closure;const translate=interpolate(value,[-1,0,1],[-sheetWidth+parallaxScrollingOffset,0,sheetWidth-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,sheetWidth,0],Extrapolation.CLAMP));return{transform:[{translateX:translate}],opacity:interpolate(value,[-1,0,1],[inactiveOpacity,1,inactiveOpacity],Extrapolation.CLAMP),zIndex:zIndex};}" };
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleTemplate(onSelect) {
-  let bound;
-  let closure_3;
-  let closure_6;
-  let closure_7;
-  let closure_9;
-  let guildId;
-  let height;
-  let items;
-  let ref;
-  let sheetWidth;
-  let tmp16;
-  let tmp = onSelect;
-  let tmp2 = guildId;
-  let obj = onSelect(guildId[11]);
-  const cResult = obj.c(83);
-  onSelect = onSelect.onSelect;
-  const location = onSelect.location;
-  guildId = onSelect.guildId;
-  _slicedToArray = closure_18();
-  const tmp4 = closure_18();
-  const tmp5 = location(guildId[12])();
-  const tmp6 = location(guildId[13])();
-  ({ width, height } = tmp6);
-  let obj2 = ref;
-  ref = ref.useRef(null);
-  const ref1 = ref.useRef(null);
-  [closure_6, closure_7] = ref.useState(bound);
-  [sheetWidth, closure_9] = ref.useState(width);
-  let obj3 = onSelect(guildId[14]);
-  let num = 0.7;
-  const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
-  if (tmp5) {
-    num = 0.3;
-  }
-  bound = Math.max(sheetWidth - c17, 0);
-  if (cResult[0] !== height) {
-    const _Math = Math;
-    let rounded = Math.round(0.45 * height);
-    cResult[0] = height;
-    cResult[1] = rounded;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        current = closure_4.current;
-        width = undefined;
-        if (current != null) {
-          width = current.getBoundingClientRect().width;
-        }
-        tmp2 = null != width;
-        if (tmp2) {
-          num = 0;
-          tmp2 = width > 0;
-        }
-        if (tmp2) {
-          tmp3 = closure_9;
-          tmp4 = closure_9((arg0) => {
-            let tmp = arg0;
-            if (arg0 !== width) {
-              tmp = width;
-            }
-            return tmp;
-          });
-        }
-        return;
-      }
-    }
-    cResult[2] = K;
-    tmp16 = K;
-  } else {
-    class K {
-      constructor() {
-        current = closure_4.current;
-        width = undefined;
-        if (current != null) {
-          width = current.getBoundingClientRect().width;
-        }
-        tmp2 = null != width;
-        if (tmp2) {
-          num = 0;
-          tmp2 = width > 0;
-        }
-        if (tmp2) {
-          tmp3 = closure_9;
-          tmp4 = closure_9((arg0) => {
-            let tmp = arg0;
-            if (arg0 !== width) {
-              tmp = width;
-            }
-            return tmp;
-          });
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[3] === height) {
-    class K {
-      constructor() {
-        current = closure_4.current;
-        width = undefined;
-        if (current != null) {
-          width = current.getBoundingClientRect().width;
-        }
-        tmp2 = null != width;
-        if (tmp2) {
-          num = 0;
-          tmp2 = width > 0;
-        }
-        if (tmp2) {
-          tmp3 = closure_9;
-          tmp4 = closure_9((arg0) => {
-            let tmp = arg0;
-            if (arg0 !== width) {
-              tmp = width;
-            }
-            return tmp;
-          });
-        }
-        return;
-      }
-    }
-    const layoutEffect = obj2.useLayoutEffect(tmp16, items);
-    if (cResult[6] === num) {
-      class K {
-        constructor() {
-          current = closure_4.current;
-          width = undefined;
-          if (current != null) {
-            width = current.getBoundingClientRect().width;
-          }
-          tmp2 = null != width;
-          if (tmp2) {
-            num = 0;
-            tmp2 = width > 0;
-          }
-          if (tmp2) {
-            tmp3 = closure_9;
-            tmp4 = closure_9((arg0) => {
-              let tmp = arg0;
-              if (arg0 !== width) {
-                tmp = width;
-              }
-              return tmp;
-            });
-          }
-          return;
-        }
-      }
-    }
-    const fn = function q(arg0) {
-      let items2;
-      let items3;
-      let obj4;
-      let roundResult;
-      const items = [-first + bound, 0, first - bound];
-      const obj = ReanimatedRexport;
-      const items1 = [0, first, 0];
-      const interpolateResult = obj.interpolate(arg0, [-1, 0, 1], items);
-      const obj3 = { transform: items2, opacity: obj4.interpolate(arg0, [-1, 0, 1], items3, ReanimatedRexport.Extrapolation.CLAMP), zIndex: roundResult };
-      items2 = [{ translateX: interpolateResult }];
-      const obj2 = ReanimatedRexport;
-      items3 = [num, 1, num];
-      roundResult = round(obj2.interpolate(arg0, [-1, 0, 1], items1, ReanimatedRexport.Extrapolation.CLAMP));
-      obj4 = ReanimatedRexport;
-      return obj3;
-    };
-    let obj4 = { interpolate: tmp(tmp2[15]).interpolate, sheetWidth, parallaxScrollingOffset: bound, Extrapolation: tmp(tmp2[15]).Extrapolation, inactiveOpacity: num };
-    fn.__closure = obj4;
-    fn.__workletHash = 1786335394860;
-    fn.__initData = __initData;
-    cResult[6] = num;
-    cResult[7] = bound;
-    cResult[8] = sheetWidth;
-    cResult[9] = fn;
-  }
-  items = [width, height];
-  cResult[3] = height;
-  cResult[4] = width;
-  cResult[5] = items;
-}) : (function GuildSettingsRoleTemplate(arg0) {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx");
+
+export default function GuildSettingsRoleTemplate(arg0) {
   let closure_3;
   let closure_7;
   let closure_9;
@@ -258,9 +78,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   value = undefined;
   closure_7 = undefined;
   first1 = undefined;
-  closure_9 = undefined;
+  constants = undefined;
   let bound;
-  let tmp = closure_18();
+  let tmp = closure_17();
   _slicedToArray = tmp;
   let tmp2 = importDefault;
   const tmp3 = dependencyMap;
@@ -272,7 +92,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   ref = ref.useRef(null);
   const ref1 = ref.useRef(null);
   [value, closure_7] = ref.useState(bound);
-  [first1, closure_9] = ref.useState(width);
+  [first1, constants] = ref.useState(width);
   const tmp11 = require;
   let obj2 = useIsScreenReaderEnabled;
   let num = 0.7;
@@ -289,7 +109,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
       current.scrollTo(obj);
     }
   }
-  bound = Math.max(first1 - c17, 0);
+  bound = Math.max(first1 - 300, 0);
   let items = [width, height];
   let rounded = Math.round(0.45 * height);
   const layoutEffect = obj.useLayoutEffect(() => {
@@ -309,7 +129,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
       });
     }
   }, items);
-  class X {
+  class V {
     constructor(arg0) {
       let items2;
       let items3;
@@ -329,16 +149,16 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
     }
   }
   let obj3 = { interpolate: ReanimatedRexport.interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: ReanimatedRexport.Extrapolation, inactiveOpacity: num };
-  X.__closure = obj3;
-  X.__workletHash = 989185039823;
-  X.__initData = __initData2;
+  V.__closure = obj3;
+  V.__workletHash = 1786335394860;
+  V.__initData = __initData;
   let items1 = [first1, bound, num];
-  const callback = obj.useCallback(X, items1);
+  const callback = obj.useCallback(V, items1);
   const values = Object.values(num);
   let obj4 = { ref, style: tmp.container, children: items3 };
   let obj5 = { style: tmp.sliderContainer, children: items2 };
-  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8809, obj7) };
-  obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: closure_9.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
+  let obj6 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8843, obj7) };
+  obj7 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items2 = [closure_14(ref1, obj6), ];
   let obj8 = {
     style: tmp.sliderLabels,
@@ -424,9 +244,9 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
           const obj = { style: closure_3.templateContent, children: items };
           const obj2 = { source: AssetRegistryDefault, size: native.IconSizes.MEDIUM, color: nativeDefault.unsafe_rawColors.GREEN_360 };
           const Icon = native.Icon;
-          items = [syncedClientThemes(Icon, obj2), ];
+          items = [authStore3(Icon, obj2), ];
           const obj3 = { style: closure_3.templateContentText, variant: "text-sm/medium", children };
-          items[1] = syncedClientThemes(Text_Text.Text, obj3);
+          items[1] = authStore3(Text_Text.Text, obj3);
           return closure_15(hasOwnProperty, obj, "" + item.key + "_content_" + index);
         })
       };
@@ -461,8 +281,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
           }
         }
       };
-      Button = tmp10(tmp11[21]).Button;
-      intl = tmp10(tmp11[22]).intl;
+      Button = tmp10(tmp11[22]).Button;
+      intl = tmp10(tmp11[23]).intl;
       items2[1] = closure_1_14(ref1, obj9);
       return closure_1_14(ref1, obj);
     },
@@ -480,8 +300,4 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetti
   };
   items3[1] = closure_14(ref1, obj9);
   return closure_15(ref1, obj4);
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleTemplate.tsx");
-
-export default tmp7;
+};

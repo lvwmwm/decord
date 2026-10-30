@@ -1,18 +1,17 @@
-// Module ID: 11983
-// Function ID: 11984
+// Module ID: 12171
+// Function ID: 12172
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 11891, 5707, 11978, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 12079, 5712, 12166, 5619, 2]
+// Exports: default
 
-// Module 11983 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 12171 (UserProfileApplicationWidgetBottomProgressLayout)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import _mod11891 from "module_11891" /* 11891 */;
+import nativeDefault from "native" /* 575 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import _mod12079 from "module_12079" /* 12079 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -35,362 +34,10 @@ size1 = { width: "100%", height: 6, borderRadius: nativeDefault.radii.md, backgr
 obj4 = { height: 6, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.ICON_STRONG };
 obj5 = { flexDirection: "row", justifyContent: "space-between", gap: nativeDefault.space.PX_4 };
 let closure_6 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
-  let bottomConfig;
-  let combined1;
-  let items;
-  let items1;
-  let items2;
-  let items5;
-  let items6;
-  let num16;
-  let obj13;
-  let range;
-  let resolveFieldValue;
-  const obj = react2;
-  const cResult = obj.c(68);
-  ({ bottomConfig, resolveFieldValue } = arg0);
-  const tmp4 = closure_6();
-  const objective = bottomConfig.components.objective;
-  let image;
-  if (objective != null) {
-    image = objective.fields.image;
-  }
-  if (cResult[0] === resolveFieldValue) {
-    let tmp6;
-    if (cResult[1] === image) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] === objective) {
-      let tmp8;
-      if (cResult[4] === resolveFieldValue) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === objective) {
-        let tmp10;
-        let tmp23;
-        let tmp22;
-        let tmp21;
-        let tmp20;
-        let tmp19;
-        let tmp18;
-        let tmp17;
-        let tmp16;
-        let tmp15;
-        let tmp14;
-        let tmp30;
-        if (cResult[7] === resolveFieldValue) {
-          tmp10 = cResult[8];
-        }
-        const progress = bottomConfig.components.progress;
-        let current;
-        if (progress != null) {
-          current = progress.fields.current;
-        }
-        if (cResult[9] === tmp10.status) {
-          if (cResult[10] === tmp10.text) {
-            if (cResult[11] === tmp6) {
-              if (cResult[12] === tmp8.status) {
-                if (cResult[13] === tmp8.text) {
-                  let max;
-                  const tmp60 = cResult[14];
-                  if (progress != null) {
-                    max = progress.fields.max;
-                  }
-                  if (tmp60 === max) {
-                    if (cResult[15] === resolveFieldValue) {
-                      if (cResult[16] === tmp4.content) {
-                        if (cResult[17] === tmp4.image) {
-                          if (cResult[18] === tmp4.progress) {
-                            if (cResult[19] === tmp4.progressContainer) {
-                              if (cResult[20] === tmp4.progressText) {
-                                if (cResult[21] === tmp4.root) {
-                                  if (cResult[22] === tmp4.textContent) {
-                                    if (cResult[23] === tmp4.textLeft) {
-                                      if (cResult[24] === current) {
-                                        tmp14 = cResult[25];
-                                        tmp15 = cResult[26];
-                                        tmp16 = cResult[27];
-                                        tmp17 = cResult[28];
-                                        tmp18 = cResult[29];
-                                        tmp19 = cResult[30];
-                                        tmp20 = cResult[31];
-                                        tmp21 = cResult[32];
-                                        tmp22 = cResult[33];
-                                        tmp23 = cResult[34];
-                                      }
-                                      if (cResult[53] === tmp14) {
-                                        if (cResult[54] === tmp20) {
-                                          if (cResult[55] === tmp21) {
-                                            let tmp51;
-                                            if (cResult[56] === tmp22) {
-                                              tmp51 = cResult[57];
-                                            }
-                                            if (cResult[58] === tmp15) {
-                                              if (cResult[59] === tmp17) {
-                                                if (cResult[60] === tmp51) {
-                                                  let tmp54;
-                                                  if (cResult[61] === tmp23) {
-                                                    tmp54 = cResult[62];
-                                                  }
-                                                  if (cResult[63] === tmp16) {
-                                                    if (cResult[64] === tmp18) {
-                                                      if (cResult[65] === tmp19) {
-                                                        let tmp57;
-                                                        if (cResult[66] === tmp54) {
-                                                          tmp57 = cResult[67];
-                                                        }
-                                                        return tmp57;
-                                                      }
-                                                    }
-                                                  }
-                                                  const obj2 = { style: tmp18, children: items };
-                                                  items = [tmp19, tmp54];
-                                                  const tmp59 = hasOwnProperty(tmp16, obj2);
-                                                  cResult[63] = tmp16;
-                                                  cResult[64] = tmp18;
-                                                  cResult[65] = tmp19;
-                                                  cResult[66] = tmp54;
-                                                  cResult[67] = tmp59;
-                                                  tmp57 = tmp59;
-                                                }
-                                              }
-                                            }
-                                            const obj3 = { style: tmp23, children: items1 };
-                                            items1 = [tmp17, tmp51];
-                                            const tmp56 = hasOwnProperty(tmp15, obj3);
-                                            cResult[58] = tmp15;
-                                            cResult[59] = tmp17;
-                                            cResult[60] = tmp51;
-                                            cResult[61] = tmp23;
-                                            cResult[62] = tmp56;
-                                            tmp54 = tmp56;
-                                          }
-                                        }
-                                      }
-                                      const obj4 = { style: tmp20, children: items2 };
-                                      items2 = [tmp21, tmp22];
-                                      const tmp53 = hasOwnProperty(tmp14, obj4);
-                                      cResult[53] = tmp14;
-                                      cResult[54] = tmp20;
-                                      cResult[55] = tmp21;
-                                      cResult[56] = tmp22;
-                                      cResult[57] = tmp53;
-                                      tmp51 = tmp53;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        const items3 = [_mod11891.ResolvedValueType.NUMBER];
-        const iter = resolveFieldValue(current, items3);
-        let max1;
-        if (progress != null) {
-          max1 = progress.fields.max;
-        }
-        const items4 = [_mod11891.ResolvedValueType.NUMBER];
-        const iter2 = resolveFieldValue(max1, items4);
-        _mod11891;
-        const root = tmp4.root;
-        if (cResult[35] === tmp6) {
-          let tmp28;
-          let tmp35;
-          if (cResult[36] === tmp4.image) {
-            tmp28 = cResult[37];
-          }
-          const content = tmp4.content;
-          const _HermesInternal = HermesInternal;
-          const combined = "" + tmp26 + "%";
-          if (cResult[38] !== combined) {
-            const obj5 = { width: combined };
-            cResult[38] = combined;
-            cResult[39] = obj5;
-            tmp35 = obj5;
-          } else {
-            tmp35 = cResult[39];
-          }
-          if (cResult[40] === tmp4.progress) {
-            let tmp36;
-            let tmp39Result6;
-            if (cResult[41] === tmp35) {
-              tmp36 = cResult[42];
-            }
-            let num15;
-            const obj6 = { style: tmp4.progressContainer, accessibilityRole: "progressbar", accessibilityValue: range, children: tmp36 };
-            if (iter2 != null) {
-              num15 = iter2.value;
-            }
-            if (num15 == null) {
-              num15 = 1;
-            }
-            range = { min: 0, max: num15, now: num16 };
-            num16 = undefined;
-            if (iter != null) {
-              num16 = iter.value;
-            }
-            if (num16 == null) {
-              num16 = 0;
-            }
-            const tmp39Result = React3(View, obj6);
-            const textContent = tmp4.textContent;
-            if (cResult[43] === tmp8.status) {
-              let tmp41;
-              let tmp39Result5;
-              if (cResult[44] === tmp8.text) {
-                tmp41 = cResult[45];
-              }
-              if (cResult[46] === tmp10.status) {
-                let tmp43;
-                if (cResult[47] === tmp10.text) {
-                  tmp43 = cResult[48];
-                }
-                if (cResult[49] === tmp4.textLeft) {
-                  if (cResult[50] === tmp41) {
-                    let tmp45;
-                    let tmp39Result4;
-                    if (cResult[51] === tmp43) {
-                      tmp45 = cResult[52];
-                    }
-                    if (null != iter) {
-                      const obj7 = { variant: "text-sm/medium", lineClamp: 1, style: tmp4.progressText, children: combined1 };
-                      const Text = tmp(5271).Text;
-                      if (null != iter2) {
-                        const _HermesInternal3 = HermesInternal;
-                        combined1 = "" + iter.value + "/" + iter2.value;
-                      } else {
-                        const _HermesInternal2 = HermesInternal;
-                        const tmpResult4 = _mod11891;
-                        combined1 = "" + tmpResult4.decimalToClampedPercentage(iter.value) + "%";
-                      }
-                      tmp39Result4 = tmp39(Text, obj7);
-                    } else {
-                      tmp39Result4 = tmp39(tmp(11978).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
-                    }
-                    cResult[9] = tmp10.status;
-                    cResult[10] = tmp10.text;
-                    cResult[11] = tmp6;
-                    cResult[12] = tmp8.status;
-                    cResult[13] = tmp8.text;
-                    let max2;
-                    if (progress != null) {
-                      max2 = progress.fields.max;
-                    }
-                    cResult[14] = max2;
-                    cResult[15] = resolveFieldValue;
-                    cResult[16] = tmp4.content;
-                    cResult[17] = tmp4.image;
-                    cResult[18] = tmp4.progress;
-                    cResult[19] = tmp4.progressContainer;
-                    cResult[20] = tmp4.progressText;
-                    cResult[21] = tmp4.root;
-                    cResult[22] = tmp4.textContent;
-                    cResult[23] = tmp4.textLeft;
-                    cResult[24] = current;
-                    cResult[25] = View;
-                    cResult[26] = View;
-                    cResult[27] = View;
-                    cResult[28] = tmp39Result;
-                    cResult[29] = root;
-                    cResult[30] = tmp28;
-                    cResult[31] = textContent;
-                    cResult[32] = tmp45;
-                    cResult[33] = tmp39Result4;
-                    cResult[34] = content;
-                    tmp23 = content;
-                    tmp22 = tmp39Result4;
-                    tmp21 = tmp45;
-                    tmp20 = textContent;
-                    tmp19 = tmp28;
-                    tmp18 = root;
-                    tmp17 = tmp39Result;
-                    tmp16 = tmp27;
-                    tmp15 = tmp27;
-                    tmp14 = tmp27;
-                  }
-                }
-                const obj8 = { style: tmp4.textLeft, children: items5 };
-                items5 = [tmp41, tmp43];
-                const tmp47 = hasOwnProperty(View, obj8);
-                cResult[49] = tmp4.textLeft;
-                cResult[50] = tmp41;
-                cResult[51] = tmp43;
-                cResult[52] = tmp47;
-                tmp45 = tmp47;
-              }
-              if ("value" === tmp10.status) {
-                const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: tmp10.text };
-                tmp39Result5 = tmp39(tmp(5271).Text, obj9);
-              } else {
-                tmp39Result5 = tmp39(tmp(11978).TextSkeleton, { variant: "text-xs/medium" });
-              }
-              cResult[46] = tmp10.status;
-              cResult[47] = tmp10.text;
-              cResult[48] = tmp39Result5;
-              tmp43 = tmp39Result5;
-            }
-            if ("value" === tmp8.status) {
-              const obj10 = { variant: "heading-sm/medium", lineClamp: 2, children: tmp8.text };
-              tmp39Result6 = tmp39(tmp(5271).Text, obj10);
-            } else {
-              tmp39Result6 = tmp39(tmp(11978).TextSkeleton, { variant: "heading-sm/medium" });
-            }
-            cResult[43] = tmp8.status;
-            cResult[44] = tmp8.text;
-            cResult[45] = tmp39Result6;
-            tmp41 = tmp39Result6;
-          }
-          const obj11 = { style: items6 };
-          items6 = [tmp4.progress, tmp35];
-          const tmp38 = React3(View, obj11);
-          cResult[40] = tmp4.progress;
-          cResult[41] = tmp35;
-          cResult[42] = tmp38;
-          tmp36 = tmp38;
-        }
-        if (null != tmp6) {
-          const obj12 = { source: obj13, style: tmp4.image, resizeMode: "contain" };
-          obj13 = { uri: tmp6.media.url };
-          tmp30 = React3(FastImageDefault, obj12);
-        } else {
-          const obj14 = { style: tmp4.image };
-          tmp30 = React3(tmp(11978).ImageSkeleton, obj14);
-        }
-        cResult[35] = tmp6;
-        cResult[36] = tmp4.image;
-        cResult[37] = tmp30;
-        tmp28 = tmp30;
-      }
-      const tmpResult5 = _mod11891;
-      const singleStringOrSkeleton = tmpResult5.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
-      cResult[6] = objective;
-      cResult[7] = resolveFieldValue;
-      cResult[8] = singleStringOrSkeleton;
-      tmp10 = singleStringOrSkeleton;
-    }
-    const tmpResult6 = _mod11891;
-    const singleStringOrSkeleton1 = tmpResult6.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-    cResult[3] = objective;
-    cResult[4] = resolveFieldValue;
-    cResult[5] = singleStringOrSkeleton1;
-    tmp8 = singleStringOrSkeleton1;
-  }
-  const items7 = [_mod11891.ResolvedValueType.MEDIA];
-  const fieldValue = resolveFieldValue(image, items7);
-  cResult[0] = resolveFieldValue;
-  cResult[1] = image;
-  cResult[2] = fieldValue;
-  tmp6 = fieldValue;
-}) : (function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomProgressLayout.tsx");
+
+export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   let bottomConfig;
   let combined;
   let items3;
@@ -415,27 +62,27 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [_mod11891.ResolvedValueType.MEDIA];
+  const items = [_mod12079.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod11891;
+  const obj = _mod12079;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  const obj2 = _mod11891;
+  const obj2 = _mod12079;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [_mod11891.ResolvedValueType.NUMBER];
+  const items1 = [_mod12079.ResolvedValueType.NUMBER];
   const iter = resolveFieldValue(current, items1);
   let max;
   if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [_mod11891.ResolvedValueType.NUMBER];
+  const items2 = [_mod12079.ResolvedValueType.NUMBER];
   const iter2 = resolveFieldValue(max, items2);
   const obj3 = { style: tmp.root, children: items3 };
-  const tmp3Result = _mod11891;
+  const tmp3Result = _mod12079;
   const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
     const obj4 = { source: obj5, style: tmp.image, resizeMode: "contain" };
@@ -444,7 +91,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     tmp15 = React3;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React3(tmp3(11978).ImageSkeleton, obj6);
+    tmp14 = React3(tmp3(12166).ImageSkeleton, obj6);
     tmp15 = React3;
   }
   items3 = [tmp14, ];
@@ -473,40 +120,36 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   const obj12 = { style: tmp.textLeft, children: items6 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj13 = { variant: "heading-sm/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    tmp15Result = tmp15(tmp3(5271).Text, obj13);
+    tmp15Result = tmp15(tmp3(5619).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(11978).TextSkeleton, { variant: "heading-sm/medium" });
+    tmp15Result = tmp15(tmp3(12166).TextSkeleton, { variant: "heading-sm/medium" });
   }
   items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    tmp15Result3 = tmp15(tmp3(5271).Text, obj14);
+    tmp15Result3 = tmp15(tmp3(5619).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(11978).TextSkeleton, { variant: "text-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(12166).TextSkeleton, { variant: "text-xs/medium" });
   }
   items6[1] = tmp15Result3;
   items7 = [hasOwnProperty(View, obj12), ];
   if (null != iter) {
     const obj15 = { variant: "text-sm/medium", lineClamp: 1, style: tmp.progressText, children: combined };
-    const Text = tmp3(5271).Text;
+    const Text = tmp3(5619).Text;
     if (null != iter2) {
       const _HermesInternal2 = HermesInternal;
       combined = "" + iter.value + "/" + iter2.value;
     } else {
       const _HermesInternal = HermesInternal;
-      const tmp3Result2 = _mod11891;
+      const tmp3Result2 = _mod12079;
       combined = "" + tmp3Result2.decimalToClampedPercentage(iter.value) + "%";
     }
     tmp15Result4 = tmp15(Text, obj15);
   } else {
-    tmp15Result4 = tmp15(tmp3(11978).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
+    tmp15Result4 = tmp15(tmp3(12166).TextSkeleton, { variant: "text-sm/medium", widthChars: 4 });
   }
   items7[1] = tmp15Result4;
   items5[1] = hasOwnProperty(View, obj11);
   items3[1] = hasOwnProperty(View, obj7);
   return hasOwnProperty(View, obj3);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetBottomProgressLayout.tsx");
-
-export default tmp5;
+};

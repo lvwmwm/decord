@@ -1,13 +1,13 @@
-// Module ID: 1494
-// Function ID: 1495
+// Module ID: 1489
+// Function ID: 1490
 // Name: ImageUtils
-// Dependencies: [5, 1495, 1496, 12, 38, 2]
+// Dependencies: [5, 1490, 1491, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1494 (ImageUtils)
+// Module 1489 (ImageUtils)
 import _modDef38 from "module_38" /* 38 */;
-import quantizeDefault from "quantize" /* 1495 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1496 */;
+import quantizeDefault from "quantize" /* 1490 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1491 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ let obj = function _dataUrlToFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -361,9 +361,9 @@ export function makeCssUrlString(arg0) {
   return str;
 }
 export { getPalette };
-export function getPaletteForAvatar(src) {
+export function getPaletteForAvatar(automodAvatarURL) {
   const _default = utils_ImageUtils.default;
-  return _default.getPaletteForAvatarMobile(src);
+  return _default.getPaletteForAvatarMobile(automodAvatarURL);
 }
 export function readFileAsBase64(value) {
   let closure_0 = value;

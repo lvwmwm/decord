@@ -1,13 +1,13 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14829
+// Function ID: 14830
 // Name: useTrackUserProfileActivityView
-// Dependencies: [32, 19, 9448, 558, 576, 504, 2]
+// Dependencies: [32, 19, 9465, 504, 2]
+// Exports: default
 
-// Module 14794 (useTrackUserProfileActivityView)
+// Module 14829 (useTrackUserProfileActivityView)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9448 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9465 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,65 +16,9 @@ let c3;
 let closure_4;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: c3, useState: closure_4 } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackUserProfileActivityView(userId) {
-  let closure_2;
-  let first;
-  let onAction;
-  let tmp6;
-  let tmp = userId;
-  const obj = userId(onAction[4]);
-  const cResult = obj.c(7);
-  userId = userId.userId;
-  const tmp2 = onAction;
-  onAction = userId.onAction;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ContentInventoryOutboxStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function f() {
-      return ContentInventoryOutboxStore.isFetchingUserOutbox(userId);
-    };
-    cResult[1] = userId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[5]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const tmp8 = _slicedToArray(closure_4(false), 2);
-  _slicedToArray = tmp8[1];
-  let closure_3 = tmp9;
-  if (cResult[3] === onAction) {
-    let tmp10;
-    let tmp11;
-    if (cResult[4] === (!stateFromStores && !tmp8[0])) {
-      tmp10 = cResult[5];
-      tmp11 = cResult[6];
-    }
-    closure_3(tmp10, tmp11);
-  }
-  class A {
-    constructor() {
-      const tmp = closure_3;
-      if (tmp) {
-        onAction({ action: "VIEW_ACTIVITY_CARD" });
-        closure_2(true);
-      }
-    }
-  }
-  const items1 = [!stateFromStores && !tmp8[0], onAction];
-  cResult[3] = onAction;
-  cResult[4] = !stateFromStores && !tmp8[0];
-  cResult[5] = A;
-  cResult[6] = items1;
-  tmp11 = items1;
-  tmp10 = A;
-}) : (function useTrackUserProfileActivityView(arg0) {
+const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
+
+export default function useTrackUserProfileActivityView(arg0) {
   let closure_2;
   let onAction;
   ({ userId: require, onAction } = arg0);
@@ -93,7 +37,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackUs
       closure_2(true);
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileActivityView.tsx");
-
-export default tmp3;
+};

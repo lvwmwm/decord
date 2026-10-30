@@ -1,226 +1,36 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12216
+// Function ID: 12217
 // Name: AppLauncherSearchUtils
-// Dependencies: [32, 19, 9718, 9716, 9717, 12031, 6023, 6024, 558, 576, 1998, 9721, 9715, 10272, 12003, 12033, 12, 11262, 504, 5640, 12032, 12034, 2]
-// Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useGlobalSearchResults, useLocalSearchResults
+// Dependencies: [32, 19, 9744, 9742, 9743, 12217, 6030, 6031, 9747, 1993, 9741, 10297, 12189, 12219, 12, 11467, 504, 5646, 12218, 12220, 2]
+// Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 12030 (AppLauncherSearchUtils)
-import Server from "Server" /* 1998 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5640 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9721 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12031 */;
-import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12032 */;
-import ArraySearch from "ArraySearch" /* 12033 */;
-import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12034 */;
+// Module 12216 (AppLauncherSearchUtils)
+import Server from "Server" /* 1993 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5646 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6030 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6031 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9741 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9747 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12217 */;
+import SearchAppsRequestSource from "SearchAppsRequestSource" /* 12218 */;
+import ArraySearch from "ArraySearch" /* 12219 */;
+import ApplicationDirectoryActionCreatorsAll from "ApplicationDirectoryActionCreators" /* 12220 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9718 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9716 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9717 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ApplicationCommandFrecencyStore from "ApplicationCommandFrecencyStore" /* 9744 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9742 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9743 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ApplicationDirectorySearchStore = ApplicationDirectorySearchStore2;
-let _require, dependencyMap, map, results, searchResults, set, tmp12;
+let _require, dependencyMap, map, searchResults, set;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-function sortApplicationFreceny(id, id2) {
-  const scoreWithoutLoadingLatest = ApplicationFrecencyStore.getScoreWithoutLoadingLatest(id.id);
-  return ApplicationFrecencyStore.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
-}
-function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP2) {
-  const obj = AppLauncherUtils;
-  const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
-  const obj2 = AppLauncherUtils;
-  return metroImportDefault(sectionName, obj2.getSectionName(FAKE_BUILT_IN_APP));
-}
-function sortCommandsAlpha(displayName, displayName2) {
-  return metroImportDefault(displayName.displayName, displayName2.displayName);
-}
-({ appLauncherOnlyCompareNames: metroImportDefault, getSection: metroImportAll, useContextIndexState: c9, useUserIndexState: c10 } = ApplicationCommandIndexStore);
-const FetchState = ApplicationDirectorySearchStore2.FetchState;
-const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
-const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationsInContext(includeNonEmbeddedApps) {
-  let allowFetch;
-  let context;
-  let first;
-  let includeBuiltIn;
-  let includeEmbeddedApps;
-  let onlyWithCommands;
-  let tmp = onlyWithCommands;
-  let obj = onlyWithCommands(576);
-  const cResult = obj.c(14);
-  ({ context, onlyWithCommands } = includeNonEmbeddedApps);
-  ({ includeBuiltIn, allowFetch, includeEmbeddedApps } = includeNonEmbeddedApps);
-  includeNonEmbeddedApps = includeNonEmbeddedApps.includeNonEmbeddedApps;
-  let channel;
-  if ("channel" === context.type) {
-    channel = context.channel;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [tmp(1998).ApplicationCommandType.CHAT];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(9721);
-  const hasBaseAccessPermissions = tmpResult.usePermissionContext(channel, first).hasBaseAccessPermissions;
-  let tmp7 = closure_9(context, hasBaseAccessPermissions, tmp4);
-  const tmp8 = closure_10(hasBaseAccessPermissions, undefined === allowFetch || allowFetch);
-  if (cResult[1] === includeEmbeddedApps) {
-    if (cResult[2] === includeNonEmbeddedApps) {
-      let tmp9;
-      if (cResult[3] === onlyWithCommands) {
-        tmp9 = cResult[4];
-      }
-      if (cResult[5] === tmp7.result) {
-        if (cResult[6] === includeBuiltIn) {
-          if (cResult[7] === includeNonEmbeddedApps) {
-            if (cResult[8] === tmp9) {
-              let tmp10;
-              if (cResult[9] === tmp8) {
-                tmp10 = cResult[10];
-              }
-              let fetching;
-              if (tmp7 != null) {
-                fetching = tmp7.fetchState.fetching;
-              }
-              let tmp37 = true === fetching;
-              if (!tmp37) {
-                let fetching1;
-                if (tmp8 != null) {
-                  fetching1 = tmp8.fetchState.fetching;
-                }
-                tmp37 = true === fetching1;
-              }
-              if (cResult[11] === tmp10) {
-                let tmp39;
-                if (cResult[12] === tmp37) {
-                  tmp39 = cResult[13];
-                }
-                return tmp39;
-              }
-              let obj2 = { apps: tmp10, loading: tmp37 };
-              cResult[11] = tmp10;
-              cResult[12] = tmp37;
-              cResult[13] = obj2;
-              tmp39 = obj2;
-            }
-          }
-        }
-      }
-      const items1 = [];
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      set = new Set();
-      let tmp11 = set;
-      if (null != tmp7.result) {
-        let _Object = Object;
-        const values = Object.values(tmp7.result.sections);
-        for (const item10077 of values) {
-          let application = item10077.descriptor.application;
-          let tmp17 = application;
-          let tmp9Result = null != application;
-          if (tmp9Result) {
-            tmp9Result = tmp9(tmp16);
-          }
-          if (tmp9Result) {
-            let arr = items1.push(tmp17);
-            let addResult = set.add(tmp17.id);
-          }
-          continue;
-        }
-      }
-      if (null != tmp8.result) {
-        const _Object2 = Object;
-        const values2 = Object.values(tmp8.result.sections);
-        for (const item10094 of values2) {
-          let application2 = item10094.descriptor.application;
-          let tmp25 = application2;
-          let tmp9Result2 = null != application2;
-          let tmp24 = item10094;
-          if (tmp9Result2) {
-            tmp9Result2 = !set.has(tmp25.id);
-          }
-          if (tmp9Result2) {
-            tmp9Result2 = tmp9(tmp24);
-          }
-          if (tmp9Result2) {
-            let arr2 = items1.push(tmp25);
-          }
-          continue;
-        }
-      }
-      const tmp31 = includeNonEmbeddedApps && includeBuiltIn;
-      if (tmp31) {
-        items1.push(onlyWithCommands(9715).FAKE_BUILT_IN_APP);
-      }
-      cResult[5] = tmp7.result;
-      cResult[6] = includeBuiltIn;
-      cResult[7] = includeNonEmbeddedApps;
-      cResult[8] = tmp9;
-      cResult[9] = tmp8;
-      cResult[10] = items1;
-      tmp10 = items1;
-    }
-  }
-  class S {
-    constructor(arg0) {
-      application = includeNonEmbeddedApps.descriptor.application;
-      tmp = null != application;
-      if (tmp) {
-        tmp2 = includeEmbeddedApps;
-        tmp3 = !includeEmbeddedApps;
-        if (includeEmbeddedApps) {
-          tmp4 = closure_0;
-          tmp5 = closure_3;
-          obj = closure_0(closure_3[12]);
-          tmp3 = !obj.isActivityApp(application);
-        }
-        tmp6 = !tmp3;
-        if (tmp3) {
-          tmp7 = null != application && includeNonEmbeddedApps;
-          if (tmp7) {
-            tmp8 = closure_0;
-            tmp9 = closure_3;
-            obj2 = closure_0(closure_3[12]);
-            tmp7 = !obj2.isActivityApp(application);
-          }
-          if (tmp7) {
-            tmp10 = onlyWithCommands;
-            tmp11 = !onlyWithCommands;
-            if (onlyWithCommands) {
-              tmp12 = globalThis;
-              _Object = Object;
-              num = 0;
-              tmp11 = Object.keys(includeNonEmbeddedApps.commands).length > 0;
-            }
-            tmp7 = tmp11;
-          }
-          tmp6 = tmp7;
-        }
-        tmp = tmp6;
-      }
-      return tmp;
-    }
-  }
-  cResult[1] = includeEmbeddedApps;
-  cResult[2] = includeNonEmbeddedApps;
-  cResult[3] = onlyWithCommands;
-  cResult[4] = S;
-  tmp9 = S;
-}) : (function useApplicationsInContext(allowFetch) {
+function useApplicationsInContext(allowFetch) {
   let context;
   let onlyWithCommands;
   let tmp28;
@@ -236,9 +46,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  const usePermissionContext = onlyWithCommands(9721).usePermissionContext;
-  const tmp2 = onlyWithCommands(9721);
-  const items = [onlyWithCommands(1998).ApplicationCommandType.CHAT];
+  const usePermissionContext = onlyWithCommands(9747).usePermissionContext;
+  const tmp2 = onlyWithCommands(9747);
+  const items = [onlyWithCommands(1993).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = usePermissionContext(channel, items).hasBaseAccessPermissions;
   let tmp3 = closure_9(context, hasBaseAccessPermissions, flag);
   const tmp4 = closure_10(hasBaseAccessPermissions, flag);
@@ -317,7 +127,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
     includeNonEmbeddedApps = includeBuiltIn;
   }
   if (includeNonEmbeddedApps) {
-    items2.push(onlyWithCommands(9715).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(9741).FAKE_BUILT_IN_APP);
   }
   let obj = { apps: items2, loading: tmp28 };
   let fetching;
@@ -333,120 +143,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
     tmp28 = true === fetching1;
   }
   return obj;
-});
-let closure_16 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationCommandsInContext(context) {
-  let allowFetch;
-  let includeBuiltIn;
-  let item10081;
-  let items1;
-  let obj3;
-  let tmp13;
-  let tmp9;
-  const obj = context(items1[9]);
-  const cResult = obj.c(14);
-  context = context.context;
-  ({ includeBuiltIn, allowFetch } = context);
-  const tmp5 = closure_9(context, true, undefined === allowFetch || allowFetch);
-  const tmp6 = closure_10(true, undefined === allowFetch || allowFetch);
-  const result = tmp5.result;
-  let sections;
-  const first = cResult[0];
-  if (result != null) {
-    sections = result.sections;
-  }
-  if (first !== sections) {
-    const result2 = tmp5.result;
-    let sections1;
-    if (result2 != null) {
-      sections1 = result2.sections;
-    }
-    if (sections1 == null) {
-      sections1 = {};
-    }
-    const result3 = tmp5.result;
-    let sections2;
-    if (result3 != null) {
-      sections2 = result3.sections;
-    }
-    cResult[0] = sections2;
-    cResult[1] = sections1;
-    tmp9 = sections1;
-  } else {
-    tmp9 = cResult[1];
-  }
-  let closure_1 = tmp9;
-  const result4 = tmp6.result;
-  let sections3;
-  const tmp11 = cResult[2];
-  if (result4 != null) {
-    sections3 = result4.sections;
-  }
-  if (tmp11 !== sections3) {
-    const result5 = tmp6.result;
-    let sections4;
-    if (result5 != null) {
-      sections4 = result5.sections;
-    }
-    if (sections4 == null) {
-      sections4 = {};
-    }
-    const result6 = tmp6.result;
-    let sections5;
-    if (result6 != null) {
-      sections5 = result6.sections;
-    }
-    cResult[2] = sections5;
-    cResult[3] = sections4;
-    tmp13 = sections4;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] === context) {
-    if (cResult[5] === tmp9) {
-      if (cResult[6] === (undefined === includeBuiltIn || includeBuiltIn)) {
-        if (cResult[7] === tmp13) {
-          obj3 = cResult[8];
-          items1 = cResult[9];
-        }
-        if (cResult[10] === tmp15) {
-          if (cResult[11] === tmp16) {
-            let tmp24;
-            if (cResult[12] === (true === tmp5.fetchState.fetching || true === tmp6.fetchState.fetching)) {
-              tmp24 = cResult[13];
-            }
-            return tmp24;
-          }
-        }
-        const obj2 = { commands: tmp16, commandSectionMap: tmp15, loading: true === tmp5.fetchState.fetching || true === tmp6.fetchState.fetching };
-        cResult[10] = tmp15;
-        cResult[11] = tmp16;
-        cResult[12] = true === tmp5.fetchState.fetching || true === tmp6.fetchState.fetching;
-        cResult[13] = obj2;
-        tmp24 = obj2;
-      }
-    }
-  }
-  let items = [...Object.keys(tmp9)];
-  const keys = Object.keys(tmp13);
-  HermesBuiltin.arraySpread(items, keys.filter((item) => !(item in closure_1)), tmp17);
-  if (undefined === includeBuiltIn || includeBuiltIn) {
-    items.push(BuiltInSectionId.BUILT_IN);
-  }
-  items1 = [];
-  obj3 = {};
-  for (const item10081 of items) {
-    let tmp21Result = tmp21();
-    continue;
-  }
-  cResult[4] = context;
-  cResult[5] = tmp9;
-  cResult[6] = undefined === includeBuiltIn || includeBuiltIn;
-  cResult[7] = tmp13;
-  cResult[8] = obj3;
-  cResult[9] = items1;
-}) : (function useApplicationCommandsInContext(context) {
+}
+function sortApplicationFreceny(id, id2) {
+  const scoreWithoutLoadingLatest = ApplicationFrecencyStore.getScoreWithoutLoadingLatest(id.id);
+  return ApplicationFrecencyStore.getScoreWithoutLoadingLatest(id2.id) - scoreWithoutLoadingLatest;
+}
+function sortApplicationAlpha(FAKE_BUILT_IN_APP, FAKE_BUILT_IN_APP2) {
+  const obj = AppLauncherUtils;
+  const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
+  const obj2 = AppLauncherUtils;
+  return metroImportDefault(sectionName, obj2.getSectionName(FAKE_BUILT_IN_APP));
+}
+function sortCommandsAlpha(displayName, displayName2) {
+  return metroImportDefault(displayName.displayName, displayName2.displayName);
+}
+({ appLauncherOnlyCompareNames: metroImportDefault, getSection: metroImportAll, useContextIndexState: c9, useUserIndexState: c10 } = ApplicationCommandIndexStore);
+const FetchState = ApplicationDirectorySearchStore2.FetchState;
+const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
+const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
+let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherSearchUtils.tsx");
+
+export { useApplicationsInContext };
+export function useApplicationCommandsInContext(context) {
   context = context.context;
   let flag = context.includeBuiltIn;
   if (flag === undefined) {
@@ -456,12 +174,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
   if (flag2 === undefined) {
     flag2 = true;
   }
-  let tmp = closure_9(context, true, flag2);
+  const tmp = closure_9(context, true, flag2);
   let closure_2 = tmp;
   const tmp2 = closure_10(true, flag2);
   let closure_3 = tmp2;
-  let items = [context, flag, tmp.fetchState.fetching, , , ];
-  let result = tmp.result;
+  const items = [context, flag, tmp.fetchState.fetching, , , ];
+  const result = tmp.result;
   let sections;
   const useMemo = react.useMemo;
   if (result != null) {
@@ -469,14 +187,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
   }
   items[3] = sections;
   items[4] = tmp2.fetchState.fetching;
-  let result2 = tmp2.result;
+  const result2 = tmp2.result;
   let sections1;
   if (result2 != null) {
     sections1 = result2.sections;
   }
   items[5] = sections1;
   return useMemo(() => {
-    let commandSectionMap;
     let items1;
     const result = commandSectionMap.result;
     let sections;
@@ -510,9 +227,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicati
     const obj2 = { commands: items1, commandSectionMap, loading: tmp9 };
     return obj2;
   }, items);
-});
-let closure_17 = tmp4;
-function filterApplicationAllowed(type) {
+}
+export function filterApplicationAllowed(type) {
   _require = type;
   let channel;
   const buildPermissionContext = require("CommandPermissionContext").buildPermissionContext;
@@ -541,8 +257,8 @@ function filterApplicationAllowed(type) {
     let allowedForUser = null;
     if (null != guild_id) {
       let permissions;
-      const computeAllowedForUser = closure_1_2(closure_1_3[13]).computeAllowedForUser;
-      const tmp6 = closure_1_2(closure_1_3[13]);
+      const computeAllowedForUser = closure_1_2(closure_1_3[11]).computeAllowedForUser;
+      const tmp6 = closure_1_2(closure_1_3[11]);
       if (descriptor != null) {
         permissions = descriptor.permissions;
       }
@@ -555,8 +271,8 @@ function filterApplicationAllowed(type) {
     let allowedForChannel = null;
     if (null != guild_id1) {
       let permissions1;
-      const computeAllowedForChannel = closure_1_2(closure_1_3[13]).computeAllowedForChannel;
-      closure_1_2(closure_1_3[13]);
+      const computeAllowedForChannel = closure_1_2(closure_1_3[11]).computeAllowedForChannel;
+      closure_1_2(closure_1_3[11]);
       if (descriptor != null) {
         permissions1 = descriptor.permissions;
       }
@@ -568,24 +284,24 @@ function filterApplicationAllowed(type) {
         let botId;
         const obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: botId, isGuildInstalled, isUserInstalled };
         botId = undefined;
-        const hasAccess = commandLimit(applicationLimit[13]).hasAccess;
-        commandLimit(applicationLimit[13]);
+        const hasAccess = commandLimit(applicationLimit[11]).hasAccess;
+        commandLimit(applicationLimit[11]);
         const tmp = applicationLimit;
         const tmp3 = isGuildInstalled;
         if (descriptor != null) {
           botId = descriptor.botId;
         }
         const hasAccessResult = hasAccess(item, tmp3, obj);
-        return hasAccessResult === context(tmp[13]).HasAccessResult.ALLOWED;
+        return hasAccessResult === context(tmp[11]).HasAccessResult.ALLOWED;
       });
     }
     return someResult;
   };
 }
-function defaultApplicationBucketing(arg0) {
+export function defaultApplicationBucketing(arg0) {
   const items = [
     (FAKE_BUILT_IN_APP) => {
-      const obj = context(applicationLimit[12]);
+      const obj = context(applicationLimit[10]);
       const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
       return toLocaleLowerCaseResult.startsWith(closure_0.toLocaleLowerCase());
@@ -595,14 +311,14 @@ function defaultApplicationBucketing(arg0) {
 
   ];
   items[1] = (FAKE_BUILT_IN_APP) => {
-    const obj = context(applicationLimit[12]);
+    const obj = context(applicationLimit[10]);
     const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
     const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
     return toLocaleLowerCaseResult.includes(closure_0.toLocaleLowerCase());
   };
-  items[2] = (application) => {
-    const obj = context(applicationLimit[12]);
-    const sectionDescription = obj.getSectionDescription(application);
+  items[2] = (FAKE_BUILT_IN_APP) => {
+    const obj = context(applicationLimit[10]);
+    const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
     if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -617,9 +333,9 @@ function defaultApplicationBucketing(arg0) {
     return flag;
   };
   let closure_0 = arg0;
-  items[3] = (application) => {
-    const obj = context(applicationLimit[12]);
-    const sectionDescription = obj.getSectionDescription(application);
+  items[3] = (FAKE_BUILT_IN_APP) => {
+    const obj = context(applicationLimit[10]);
+    const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
     if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -635,29 +351,29 @@ function defaultApplicationBucketing(arg0) {
   };
   return items;
 }
-function bucketApplicationNameStartsWith(arg0) {
+export function bucketApplicationNameStartsWith(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const obj = context(applicationLimit[12]);
+    const obj = context(applicationLimit[10]);
     const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
     const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
     return toLocaleLowerCaseResult.startsWith(closure_0.toLocaleLowerCase());
   };
 }
-function bucketApplicationNameContains(arg0) {
+export function bucketApplicationNameContains(arg0) {
   let closure_0 = arg0;
   return (FAKE_BUILT_IN_APP) => {
-    const obj = context(applicationLimit[12]);
+    const obj = context(applicationLimit[10]);
     const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
     const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
     return toLocaleLowerCaseResult.includes(closure_0.toLocaleLowerCase());
   };
 }
-function bucketApplicationDescriptionStartsWith(arg0) {
+export function bucketApplicationDescriptionStartsWith(arg0) {
   let closure_0 = arg0;
-  return (application) => {
-    const obj = context(applicationLimit[12]);
-    const sectionDescription = obj.getSectionDescription(application);
+  return (FAKE_BUILT_IN_APP) => {
+    const obj = context(applicationLimit[10]);
+    const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
     if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -672,11 +388,11 @@ function bucketApplicationDescriptionStartsWith(arg0) {
     return flag;
   };
 }
-function bucketApplicationDescriptionContains(arg0) {
+export function bucketApplicationDescriptionContains(arg0) {
   let closure_0 = arg0;
-  return (application) => {
-    const obj = context(applicationLimit[12]);
-    const sectionDescription = obj.getSectionDescription(application);
+  return (FAKE_BUILT_IN_APP) => {
+    const obj = context(applicationLimit[10]);
+    const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
     let toLocaleLowerCaseResult;
     if (sectionDescription != null) {
       toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -691,7 +407,9 @@ function bucketApplicationDescriptionContains(arg0) {
     return flag;
   };
 }
-function filterCommandAllowed(type) {
+export { sortApplicationFreceny };
+export { sortApplicationAlpha };
+export function filterCommandAllowed(type) {
   _require = type;
   let channel;
   const buildPermissionContext = require("CommandPermissionContext").buildPermissionContext;
@@ -700,7 +418,7 @@ function filterCommandAllowed(type) {
   if ("channel" === type.type) {
     channel = type.channel;
   }
-  const items = [tmp(1998).ApplicationCommandType.CHAT];
+  const items = [tmp(1993).ApplicationCommandType.CHAT];
   let closure_1 = buildPermissionContext(channel, items);
   let closure_2 = {};
   return (applicationId) => {
@@ -727,8 +445,8 @@ function filterCommandAllowed(type) {
       let allowedForUser = null;
       if (null != guild_id) {
         let permissions;
-        const computeAllowedForUser = commandLimit(applicationLimit[13]).computeAllowedForUser;
-        const tmp11 = commandLimit(applicationLimit[13]);
+        const computeAllowedForUser = commandLimit(applicationLimit[11]).computeAllowedForUser;
+        const tmp11 = commandLimit(applicationLimit[11]);
         if (descriptor != null) {
           permissions = descriptor.permissions;
         }
@@ -741,8 +459,8 @@ function filterCommandAllowed(type) {
       let allowedForChannel = null;
       if (null != guild_id1) {
         let permissions1;
-        const computeAllowedForChannel = commandLimit(applicationLimit[13]).computeAllowedForChannel;
-        commandLimit(applicationLimit[13]);
+        const computeAllowedForChannel = commandLimit(applicationLimit[11]).computeAllowedForChannel;
+        commandLimit(applicationLimit[11]);
         if (descriptor != null) {
           permissions1 = descriptor.permissions;
         }
@@ -755,16 +473,16 @@ function filterCommandAllowed(type) {
     ({ applicationAllowedForChannel, applicationAllowedForUser, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 } = closure_2[applicationId.applicationId]);
     const obj2 = { applicationAllowedForUser, applicationAllowedForChannel, commandBotId: botId, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 };
     botId = undefined;
-    const hasAccess = commandLimit(applicationLimit[13]).hasAccess;
-    commandLimit(applicationLimit[13]);
+    const hasAccess = commandLimit(applicationLimit[11]).hasAccess;
+    commandLimit(applicationLimit[11]);
     if (descriptor2 != null) {
       botId = descriptor2.botId;
     }
     const hasAccessResult = hasAccess(applicationId, tmp, obj2);
-    return hasAccessResult === closure_2_0(applicationLimit[13]).HasAccessResult.ALLOWED;
+    return hasAccessResult === closure_2_0(applicationLimit[11]).HasAccessResult.ALLOWED;
   };
 }
-function defaultCommandBucketing(str) {
+export function defaultCommandBucketing(str) {
   let closure_0 = str;
   const items = [
     (arg0) => {
@@ -885,7 +603,7 @@ function defaultCommandBucketing(str) {
   };
   return items;
 }
-function bucketRootCommandNameStartsWith(arg0) {
+export function bucketRootCommandNameStartsWith(arg0) {
   let closure_0 = arg0;
   return (arg0) => {
     let displayName;
@@ -895,7 +613,7 @@ function bucketRootCommandNameStartsWith(arg0) {
     return tmp2;
   };
 }
-function bucketFullCommandNameStartsWith(str) {
+export function bucketFullCommandNameStartsWith(str) {
   let parts;
   if (str != null) {
     parts = str.split(" ");
@@ -927,7 +645,7 @@ function bucketFullCommandNameStartsWith(str) {
     return false;
   };
 }
-function bucketCommandNameContains(arg0) {
+export function bucketCommandNameContains(arg0) {
   let closure_0 = arg0;
   return (arg0) => {
     let displayName;
@@ -937,7 +655,7 @@ function bucketCommandNameContains(arg0) {
     return tmp2;
   };
 }
-function bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0) {
+export function bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0) {
   let closure_0 = arg0;
   return (options) => {
     options = options.options;
@@ -985,7 +703,7 @@ function bucketOptionNameStartsWithOrCommandAndOptionStartsWith(arg0) {
     return false;
   };
 }
-function bucketCommandOptionNameContains(arg0) {
+export function bucketCommandOptionNameContains(arg0) {
   let closure_0 = arg0;
   return (options) => {
     let name;
@@ -1010,43 +728,6 @@ function bucketCommandOptionNameContains(arg0) {
     return false;
   };
 }
-function defaultCommandsSort(arg0) {
-  let closure_0 = arg0;
-  const items = [
-    (arg0, arg1) => {
-      const scoreWithoutLoadingLatest = flag3.getScoreWithoutLoadingLatest(obj2, arg0);
-      return flag3.getScoreWithoutLoadingLatest(obj2, arg1) - scoreWithoutLoadingLatest;
-    },
-    sortCommandsAlpha
-  ];
-  return items;
-}
-function sortCommandsByFreceny(arg0) {
-  let closure_0 = arg0;
-  return (arg0, arg1) => {
-    const scoreWithoutLoadingLatest = flag3.getScoreWithoutLoadingLatest(obj2, arg0);
-    return flag3.getScoreWithoutLoadingLatest(obj2, arg1) - scoreWithoutLoadingLatest;
-  };
-}
-let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherSearchUtils.tsx");
-
-export const useApplicationsInContext = tmp3;
-export const useApplicationCommandsInContext = tmp4;
-export { filterApplicationAllowed };
-export { defaultApplicationBucketing };
-export { bucketApplicationNameStartsWith };
-export { bucketApplicationNameContains };
-export { bucketApplicationDescriptionStartsWith };
-export { bucketApplicationDescriptionContains };
-export { sortApplicationFreceny };
-export { sortApplicationAlpha };
-export { filterCommandAllowed };
-export { defaultCommandBucketing };
-export { bucketRootCommandNameStartsWith };
-export { bucketFullCommandNameStartsWith };
-export { bucketCommandNameContains };
-export { bucketOptionNameStartsWithOrCommandAndOptionStartsWith };
-export { bucketCommandOptionNameContains };
 export function bucketCommandSectionNameStartsWith(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
@@ -1061,7 +742,7 @@ export function bucketCommandSectionNameStartsWith(arg0, arg1) {
       AppLauncherUtils;
       const tmp3 = require;
       if (FAKE_BUILT_IN_APP == null) {
-        FAKE_BUILT_IN_APP = tmp3(9715).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP = tmp3(9741).FAKE_BUILT_IN_APP;
       }
       const sectionName = getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
@@ -1085,7 +766,7 @@ export function bucketCommandSectionNameContains(arg0, arg1) {
       AppLauncherUtils;
       const tmp3 = require;
       if (FAKE_BUILT_IN_APP == null) {
-        FAKE_BUILT_IN_APP = tmp3(9715).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP = tmp3(9741).FAKE_BUILT_IN_APP;
       }
       const sectionName = getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
@@ -1095,8 +776,24 @@ export function bucketCommandSectionNameContains(arg0, arg1) {
     }
   };
 }
-export { defaultCommandsSort };
-export { sortCommandsByFreceny };
+export function defaultCommandsSort(arg0) {
+  let closure_0 = arg0;
+  const items = [
+    (arg0, arg1) => {
+      const scoreWithoutLoadingLatest = flag3.getScoreWithoutLoadingLatest(obj2, arg0);
+      return flag3.getScoreWithoutLoadingLatest(obj2, arg1) - scoreWithoutLoadingLatest;
+    },
+    sortCommandsAlpha
+  ];
+  return items;
+}
+export function sortCommandsByFreceny(arg0) {
+  let closure_0 = arg0;
+  return (arg0, arg1) => {
+    const scoreWithoutLoadingLatest = flag3.getScoreWithoutLoadingLatest(obj2, arg0);
+    return flag3.getScoreWithoutLoadingLatest(obj2, arg1) - scoreWithoutLoadingLatest;
+  };
+}
 export { sortCommandsAlpha };
 export function useLocalSearchResults(context) {
   context = context.context;
@@ -1120,26 +817,89 @@ export function useLocalSearchResults(context) {
   let commandSectionMap;
   let apps;
   let closure_10;
-  let memo;
+  let memo1;
   let tmp = str;
   if (str.startsWith("" + COMMAND_SENTINEL)) {
     substr = str.substring(1);
     tmp = substr;
   }
-  let tmp3 = closure_17({ context, includeBuiltIn: true });
-  commands = tmp3.commands;
-  commandSectionMap = tmp3.commandSectionMap;
-  let loading = tmp3.loading;
-  apps = closure_16({ context, onlyWithCommands: true, includeBuiltIn: true, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 }).apps;
+  let obj = { context, includeBuiltIn: true };
+  const context2 = obj.context;
+  let flag4 = obj.includeBuiltIn;
+  if (flag4 === undefined) {
+    flag4 = true;
+  }
+  let flag5 = obj.allowFetch;
+  if (flag5 === undefined) {
+    flag5 = true;
+  }
+  let tmp3 = apps(context2, true, flag5);
+  let closure_2 = tmp3;
+  let tmp4 = closure_10(true, flag5);
+  let closure_3 = tmp4;
+  let obj2 = flag2;
+  let items = [context2, flag4, tmp3.fetchState.fetching, , , ];
+  let result = tmp3.result;
+  let sections;
+  const useMemo = flag2.useMemo;
+  if (result != null) {
+    sections = result.sections;
+  }
+  items[3] = sections;
+  items[4] = tmp4.fetchState.fetching;
+  let result2 = tmp4.result;
+  let sections1;
+  if (result2 != null) {
+    sections1 = result2.sections;
+  }
+  items[5] = sections1;
+  const memo = useMemo(() => {
+    let items1;
+    const result = commandSectionMap.result;
+    let sections;
+    if (result != null) {
+      sections = result.sections;
+    }
+    if (sections == null) {
+      sections = {};
+    }
+    const result2 = item10038.result;
+    let sections1;
+    if (result2 != null) {
+      sections1 = result2.sections;
+    }
+    if (sections1 == null) {
+      sections1 = {};
+    }
+    let items = [...Object.keys(sections)];
+    const keys = Object.keys(sections1);
+    HermesBuiltin.arraySpread(items, keys.filter((item) => !(item in sections)), tmp2);
+    const tmp4 = items1;
+    if (tmp4) {
+      items.push(constants.BUILT_IN);
+    }
+    items1 = [];
+    commandSectionMap = {};
+    for (const item10038 of items) {
+      let tmp7Result = tmp7();
+      continue;
+    }
+    const obj2 = { commands: items1, commandSectionMap, loading: tmp9 };
+    return obj2;
+  }, items);
+  commands = memo.commands;
+  commandSectionMap = memo.commandSectionMap;
+  let loading = memo.loading;
+  apps = useApplicationsInContext({ context, onlyWithCommands: true, includeBuiltIn: true, includeEmbeddedApps: flag3, includeNonEmbeddedApps: flag2 }).apps;
   let guild_id = null;
-  let tmp4 = substr(applicationLimit[14]);
+  let tmp8 = substr(applicationLimit[12]);
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp4Result = tmp4({ guildId: guild_id });
-  closure_10 = tmp4Result;
-  let items = [flag, commands, commandLimit, context, tmp];
-  memo = flag2.useMemo(() => {
+  const tmp8Result = tmp8({ guildId: guild_id });
+  closure_10 = tmp8Result;
+  let items1 = [flag, commands, commandLimit, context, tmp];
+  memo1 = obj2.useMemo(() => {
     let items1;
     let items2;
     let items3;
@@ -1163,7 +923,7 @@ export function useLocalSearchResults(context) {
       if ("channel" === context.type) {
         channel = tmp7.channel;
       }
-      const items = [tmp2(1998).ApplicationCommandType.CHAT];
+      const items = [tmp2(1993).ApplicationCommandType.CHAT];
       buildPermissionContext(channel, items);
       closure_2 = {};
       items1 = [
@@ -1191,8 +951,8 @@ export function useLocalSearchResults(context) {
               let allowedForUser = null;
               if (null != guild_id) {
                 let permissions;
-                const computeAllowedForUser = commandLimit(applicationLimit[13]).computeAllowedForUser;
-                const tmp11 = commandLimit(applicationLimit[13]);
+                const computeAllowedForUser = commandLimit(applicationLimit[11]).computeAllowedForUser;
+                const tmp11 = commandLimit(applicationLimit[11]);
                 if (descriptor != null) {
                   permissions = descriptor.permissions;
                 }
@@ -1205,8 +965,8 @@ export function useLocalSearchResults(context) {
               let allowedForChannel = null;
               if (null != guild_id1) {
                 let permissions1;
-                const computeAllowedForChannel = commandLimit(applicationLimit[13]).computeAllowedForChannel;
-                commandLimit(applicationLimit[13]);
+                const computeAllowedForChannel = commandLimit(applicationLimit[11]).computeAllowedForChannel;
+                commandLimit(applicationLimit[11]);
                 if (descriptor != null) {
                   permissions1 = descriptor.permissions;
                 }
@@ -1219,13 +979,13 @@ export function useLocalSearchResults(context) {
             ({ applicationAllowedForChannel, applicationAllowedForUser, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 } = closure_2[applicationId.applicationId]);
             const obj2 = { applicationAllowedForUser, applicationAllowedForChannel, commandBotId: botId, isGuildInstalled: isGuildInstalled2, isUserInstalled: isUserInstalled2 };
             botId = undefined;
-            const hasAccess = commandLimit(applicationLimit[13]).hasAccess;
-            commandLimit(applicationLimit[13]);
+            const hasAccess = commandLimit(applicationLimit[11]).hasAccess;
+            commandLimit(applicationLimit[11]);
             if (descriptor2 != null) {
               botId = descriptor2.botId;
             }
             const hasAccessResult = hasAccess(applicationId, tmp, obj2);
-            return hasAccessResult === closure_2_0(applicationLimit[13]).HasAccessResult.ALLOWED;
+            return hasAccessResult === closure_2_0(applicationLimit[11]).HasAccessResult.ALLOWED;
           }
       ];
       const str2 = substr;
@@ -1367,11 +1127,11 @@ export function useLocalSearchResults(context) {
       queryDataResult = [];
     }
     return queryDataResult;
-  }, items);
-  let items1 = [apps, memo, commandSectionMap];
-  const memo1 = flag2.useMemo(function() {
-    const arr = memo;
-    if (0 === memo.length) {
+  }, items1);
+  let items2 = [apps, memo1, commandSectionMap];
+  const memo2 = obj2.useMemo(function() {
+    const arr = memo1;
+    if (0 === memo1.length) {
       return [];
     } else {
       const _Map = Map;
@@ -1383,7 +1143,7 @@ export function useLocalSearchResults(context) {
         return items;
       }));
       let tmp4 = map;
-      let obj = substr(applicationLimit[16]);
+      let obj = substr(applicationLimit[14]);
       return obj.compact(arr.map((applicationId) => {
         let tmp4;
         const value = map.get(applicationId.applicationId);
@@ -1399,9 +1159,9 @@ export function useLocalSearchResults(context) {
         return tmp2;
       }));
     }
-  }, items1);
-  let items2 = [flag2, flag3, applicationLimit, context, tmp, apps, tmp4Result];
-  const memo2 = flag2.useMemo(function() {
+  }, items2);
+  let items3 = [flag2, flag3, applicationLimit, context, tmp, apps, tmp8Result];
+  const memo3 = obj2.useMemo(function() {
     let items4;
     let items5;
     let items6;
@@ -1464,8 +1224,8 @@ export function useLocalSearchResults(context) {
         let allowedForUser = null;
         if (null != guild_id) {
           let permissions;
-          const computeAllowedForUser = closure_1_2(closure_1_3[13]).computeAllowedForUser;
-          const tmp6 = closure_1_2(closure_1_3[13]);
+          const computeAllowedForUser = closure_1_2(closure_1_3[11]).computeAllowedForUser;
+          const tmp6 = closure_1_2(closure_1_3[11]);
           if (descriptor != null) {
             permissions = descriptor.permissions;
           }
@@ -1478,8 +1238,8 @@ export function useLocalSearchResults(context) {
         let allowedForChannel = null;
         if (null != guild_id1) {
           let permissions1;
-          const computeAllowedForChannel = closure_1_2(closure_1_3[13]).computeAllowedForChannel;
-          closure_1_2(closure_1_3[13]);
+          const computeAllowedForChannel = closure_1_2(closure_1_3[11]).computeAllowedForChannel;
+          closure_1_2(closure_1_3[11]);
           if (descriptor != null) {
             permissions1 = descriptor.permissions;
           }
@@ -1491,15 +1251,15 @@ export function useLocalSearchResults(context) {
             let botId;
             const obj = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: botId, isGuildInstalled, isUserInstalled };
             botId = undefined;
-            const hasAccess = commandLimit(applicationLimit[13]).hasAccess;
-            commandLimit(applicationLimit[13]);
+            const hasAccess = commandLimit(applicationLimit[11]).hasAccess;
+            commandLimit(applicationLimit[11]);
             const tmp = applicationLimit;
             const tmp3 = isGuildInstalled;
             if (descriptor != null) {
               botId = descriptor.botId;
             }
             const hasAccessResult = hasAccess(item, tmp3, obj);
-            return hasAccessResult === context(tmp[13]).HasAccessResult.ALLOWED;
+            return hasAccessResult === context(tmp[11]).HasAccessResult.ALLOWED;
           });
         }
         return someResult;
@@ -1507,7 +1267,7 @@ export function useLocalSearchResults(context) {
     ];
     items5 = [
       (FAKE_BUILT_IN_APP) => {
-        const obj = context(applicationLimit[12]);
+        const obj = context(applicationLimit[10]);
         const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
         const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
         return toLocaleLowerCaseResult.startsWith(closure_0.toLocaleLowerCase());
@@ -1517,14 +1277,14 @@ export function useLocalSearchResults(context) {
 
     ];
     items5[1] = (FAKE_BUILT_IN_APP) => {
-      const obj = context(applicationLimit[12]);
+      const obj = context(applicationLimit[10]);
       const sectionName = obj.getSectionName(FAKE_BUILT_IN_APP);
       const toLocaleLowerCaseResult = sectionName.toLocaleLowerCase();
       return toLocaleLowerCaseResult.includes(closure_0.toLocaleLowerCase());
     };
-    items5[2] = (application) => {
-      const obj = context(applicationLimit[12]);
-      const sectionDescription = obj.getSectionDescription(application);
+    items5[2] = (FAKE_BUILT_IN_APP) => {
+      const obj = context(applicationLimit[10]);
+      const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
       let toLocaleLowerCaseResult;
       if (sectionDescription != null) {
         toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -1539,9 +1299,9 @@ export function useLocalSearchResults(context) {
       return flag;
     };
     closure_0 = substr;
-    items5[3] = (application) => {
-      const obj = context(applicationLimit[12]);
-      const sectionDescription = obj.getSectionDescription(application);
+    items5[3] = (FAKE_BUILT_IN_APP) => {
+      const obj = context(applicationLimit[10]);
+      const sectionDescription = obj.getSectionDescription(FAKE_BUILT_IN_APP);
       let toLocaleLowerCaseResult;
       if (sectionDescription != null) {
         toLocaleLowerCaseResult = sectionDescription.toLocaleLowerCase();
@@ -1557,14 +1317,14 @@ export function useLocalSearchResults(context) {
     };
     items6 = [sortApplicationFreceny, sortApplicationAlpha];
     return queryData(tmp3, obj);
-  }, items2);
-  let tmp8 = memo1.length > 0;
-  let tmp9 = memo2.length > 0;
-  let obj = { commandResults: memo1, hasCommandResults: tmp8, applicationResults: memo2, hasApplicationResults: tmp9, isEmptyState: !tmp8 && !tmp9, loading };
+  }, items3);
+  const tmp12 = memo2.length > 0;
+  const tmp13 = memo3.length > 0;
+  const obj3 = { commandResults: memo2, hasCommandResults: tmp12, applicationResults: memo3, hasApplicationResults: tmp13, isEmptyState: !tmp12 && !tmp13, loading };
   if (loading) {
     loading = flag;
   }
-  return obj;
+  return obj3;
 }
 export function useGlobalSearchResults(fetches) {
   let context;
@@ -1597,7 +1357,7 @@ export function useGlobalSearchResults(fetches) {
     tmp = substr;
   }
   const tmp3 = query;
-  const tmp5 = entrypoint === query(11262).AppLauncherEntrypoint.VOICE;
+  const tmp5 = entrypoint === query(11467).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {
@@ -1638,9 +1398,9 @@ export function useGlobalSearchResults(fetches) {
       }
       let obj = { length: diff };
       return tmp2(obj, (arg0, arg1) => {
-        const obj = { query, guildId, page: arg1 + 1, integrationType: query(excludeNonEmbeddedApps[19]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: query(excludeNonEmbeddedApps[20]).SearchAppsRequestSource.APP_LAUNCHER };
+        const obj = { query, guildId, page: arg1 + 1, integrationType: query(excludeNonEmbeddedApps[17]).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: query(excludeNonEmbeddedApps[18]).SearchAppsRequestSource.APP_LAUNCHER };
         searchResults = searchResults.getSearchResults(obj);
-        results = undefined;
+        let results;
         if (searchResults != null) {
           results = searchResults.results;
         }

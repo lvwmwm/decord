@@ -1,20 +1,20 @@
-// Module ID: 9353
-// Function ID: 9354
+// Module ID: 9367
+// Function ID: 9368
 // Name: GameProfileStoreLinks
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 9290, 5698, 5281, 1125, 5247, 9332, 9282, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 9303, 5704, 5629, 1114, 5253, 9346, 9320, 2]
+// Exports: default
 
-// Module 9353 (GameProfileStoreLinks)
+// Module 9367 (GameProfileStoreLinks)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9290 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9332 */;
+import nativeDefault from "native" /* 575 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9303 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9346 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;
@@ -22,60 +22,7 @@ const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet
 let closure_4;
 let hasOwnProperty;
 let obj2;
-let tmp;
-const components_Button_Button = tmp(5281);
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { container: obj2 };
-obj2 = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
-let closure_6 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebsiteGameStoreLinkButton(data) {
-  const obj = react2;
-  const cResult = obj.c(9);
-  data = data.data;
-  const trackAction = data.trackAction;
-  const tmp4 = useOpenExternalUrlFromGameProfileDefault;
-  const tmp4Result = tmp4(LinkingDefault.openURL);
-  let closure_2 = tmp4Result;
-  if (cResult[0] === data.action) {
-    if (cResult[1] === data.url) {
-      if (cResult[2] === tmp4Result) {
-        let tmp6;
-        if (cResult[3] === trackAction) {
-          tmp6 = cResult[4];
-        }
-        if (cResult[5] === data.icon) {
-          if (cResult[6] === data.title) {
-            let tmp7;
-            if (cResult[7] === tmp6) {
-              tmp7 = cResult[8];
-            }
-            return tmp7;
-          }
-        }
-        const obj3 = { variant: "secondary", size: "md", text: null, icon: null, onPress: tmp6 };
-        ({ title: obj2.text, icon: obj2.icon } = data);
-        const tmp9 = React3(components_Button_Button.Button, obj3);
-        cResult[5] = data.icon;
-        cResult[6] = data.title;
-        cResult[7] = tmp6;
-        cResult[8] = tmp9;
-        tmp7 = tmp9;
-      }
-    }
-  }
-  const fn = function n() {
-    trackAction(data.action);
-    closure_2(data.url);
-  };
-  cResult[0] = data.action;
-  cResult[1] = data.url;
-  cResult[2] = tmp4Result;
-  cResult[3] = trackAction;
-  cResult[4] = fn;
-  tmp6 = fn;
-}) : (function WebsiteGameStoreLinkButton(data) {
+function WebsiteGameStoreLinkButton(data) {
   data = data.data;
   const trackAction = data.trackAction;
   const tmp = useOpenExternalUrlFromGameProfileDefault;
@@ -91,163 +38,15 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Website
     }
   };
   return React3(components_Button_Button.Button, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileStoreLinks(websiteButtons) {
-  let game;
-  let items;
-  let items1;
-  let name;
-  let trackAction;
-  let tmp = trackAction;
-  let obj = trackAction(name[6]);
-  const cResult = obj.c(25);
-  ({ game, trackAction } = websiteButtons);
-  websiteButtons = websiteButtons.websiteButtons;
-  const tmp4 = closure_6();
-  name = undefined;
-  if (game != null) {
-    name = game.name;
-  }
-  if (0 !== websiteButtons.length) {
-    if (null != name) {
-      if (1 === websiteButtons.length) {
-        if (cResult[0] === trackAction) {
-          let tmp34;
-          if (cResult[1] === websiteButtons[0]) {
-            tmp34 = cResult[2];
-          }
-          return tmp34;
-        }
-        let obj2 = { data: websiteButtons[0], trackAction };
-        const tmp37 = closure_4(closure_7, obj2);
-        cResult[0] = trackAction;
-        cResult[1] = websiteButtons[0];
-        cResult[2] = tmp37;
-        tmp34 = tmp37;
-      } else if (2 === websiteButtons.length) {
-        if (cResult[3] === trackAction) {
-          let tmp22;
-          if (cResult[4] === websiteButtons[0]) {
-            tmp22 = cResult[5];
-          }
-          if (cResult[6] === trackAction) {
-            let tmp26;
-            if (cResult[7] === websiteButtons[1]) {
-              tmp26 = cResult[8];
-            }
-            if (cResult[9] === tmp4.container) {
-              if (cResult[10] === tmp22) {
-                let tmp30;
-                if (cResult[11] === tmp26) {
-                  tmp30 = cResult[12];
-                }
-                return tmp30;
-              }
-            }
-            const obj3 = { style: tmp4.container, children: items };
-            items = [tmp22, tmp26];
-            const tmp33 = closure_5(View, obj3);
-            cResult[9] = tmp4.container;
-            cResult[10] = tmp22;
-            cResult[11] = tmp26;
-            cResult[12] = tmp33;
-            tmp30 = tmp33;
-          }
-          const obj4 = { data: websiteButtons[1], trackAction };
-          const tmp29 = closure_4(closure_7, obj4);
-          cResult[6] = trackAction;
-          cResult[7] = websiteButtons[1];
-          cResult[8] = tmp29;
-          tmp26 = tmp29;
-        }
-        const obj5 = { data: websiteButtons[0], trackAction };
-        const tmp25 = closure_4(closure_7, obj5);
-        cResult[3] = trackAction;
-        cResult[4] = websiteButtons[0];
-        cResult[5] = tmp25;
-        tmp22 = tmp25;
-      } else {
-        let tmp6;
-        const _Symbol = Symbol;
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(tmp2[10]).intl;
-          const stringResult = intl.string(tmp(name[10]).t["/hMurx"]);
-          cResult[13] = stringResult;
-          tmp6 = stringResult;
-        } else {
-          tmp6 = cResult[13];
-        }
-        if (cResult[14] === name) {
-          if (cResult[15] === trackAction) {
-            let tmp8;
-            if (cResult[16] === websiteButtons) {
-              tmp8 = cResult[17];
-            }
-            const first = websiteButtons[0];
-            let action;
-            if (first != null) {
-              action = first.action;
-            }
-            let tmp13 = tmp8;
-            if (action === tmp(name[13]).GameProfileTrackActionActions.XboxGamePassStoreLink) {
-              if (cResult[18] === trackAction) {
-                let tmp14;
-                if (cResult[19] === websiteButtons[0]) {
-                  tmp14 = cResult[20];
-                }
-                if (cResult[21] === tmp8) {
-                  if (cResult[22] === tmp4.container) {
-                    let tmp18;
-                    if (cResult[23] === tmp14) {
-                      tmp18 = cResult[24];
-                    }
-                    tmp13 = tmp18;
-                  }
-                }
-                const obj6 = { style: tmp4.container, children: items1 };
-                items1 = [tmp14, tmp8];
-                const tmp21 = closure_5(View, obj6);
-                cResult[21] = tmp8;
-                cResult[22] = tmp4.container;
-                cResult[23] = tmp14;
-                cResult[24] = tmp21;
-                tmp18 = tmp21;
-              }
-              const obj7 = { data: websiteButtons[0], trackAction };
-              const tmp17 = closure_4(closure_7, obj7);
-              cResult[18] = trackAction;
-              cResult[19] = websiteButtons[0];
-              cResult[20] = tmp17;
-              tmp14 = tmp17;
-            }
-            return tmp13;
-          }
-        }
-        const obj8 = {
-          variant: "secondary",
-          size: "md",
-          text: tmp6,
-          onPress() {
-                  let obj2;
-                  const tmp = ActionSheetActionCreators;
-                  const showActionSheet = tmp.showActionSheet;
-                  const obj = { key: GameProfileStoreLinksActionSheet.ACTION_SHEET_KEY, content: React3(GameProfileStoreLinksActionSheetDefault, obj2) };
-                  obj2 = { gameName: name, websiteButtons, trackAction };
-                  return showActionSheet(obj);
-                }
-        };
-        const tmp10 = closure_4(tmp(name[9]).Button, obj8);
-        cResult[14] = name;
-        cResult[15] = trackAction;
-        cResult[16] = websiteButtons;
-        cResult[17] = tmp10;
-        tmp8 = tmp10;
-      }
-    }
-  }
-  return null;
-}) : (function GameProfileStoreLinks(websiteButtons) {
+}
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { container: obj2 };
+obj2 = { flexDirection: "column", gap: nativeDefault.space.PX_8 };
+let closure_6 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileStoreLinks.tsx");
+
+export default function GameProfileStoreLinks(websiteButtons) {
   let game;
   let intl;
   let items;
@@ -264,19 +63,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
     if (null != name) {
       if (1 === websiteButtons.length) {
         let obj2 = { data: websiteButtons[0], trackAction };
-        return closure_4(closure_7, obj2);
+        return closure_4(WebsiteGameStoreLinkButton, obj2);
       } else if (2 === websiteButtons.length) {
         const obj3 = { style: tmp.container, children: items };
         const obj4 = { data: websiteButtons[0], trackAction };
-        items = [closure_4(closure_7, obj4), ];
+        items = [closure_4(WebsiteGameStoreLinkButton, obj4), ];
         const obj5 = { data: websiteButtons[1], trackAction };
-        items[1] = closure_4(closure_7, obj5);
+        items[1] = closure_4(WebsiteGameStoreLinkButton, obj5);
         return closure_5(View, obj3);
       } else {
         const obj6 = {
           variant: "secondary",
           size: "md",
-          text: intl.string(trackAction(name[10]).t["/hMurx"]),
+          text: intl.string(trackAction(name[8]).t["/hMurx"]),
           onPress() {
                   let obj2;
                   const tmp = ActionSheetActionCreators;
@@ -286,8 +85,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
                   return showActionSheet(obj);
                 }
         };
-        const Button = trackAction(name[9]).Button;
-        intl = trackAction(name[10]).intl;
+        const Button = trackAction(name[7]).Button;
+        intl = trackAction(name[8]).intl;
         const tmp17 = closure_4(Button, obj6);
         const first = websiteButtons[0];
         let action;
@@ -298,10 +97,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
           action = first.action;
         }
         let tmp4 = tmp17;
-        if (action === tmp15(tmp16[13]).GameProfileTrackActionActions.XboxGamePassStoreLink) {
+        if (action === tmp15(tmp16[11]).GameProfileTrackActionActions.XboxGamePassStoreLink) {
           let obj = { style: tmp.container, children: items1 };
           const obj7 = { data: websiteButtons[0], trackAction };
-          items1 = [tmp14(closure_7, obj7), tmp17];
+          items1 = [tmp14(WebsiteGameStoreLinkButton, obj7), tmp17];
           tmp4 = closure_5(View, obj);
         }
         return tmp4;
@@ -309,7 +108,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameProfileS
     }
   }
   return null;
-});
-const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileStoreLinks.tsx");
-
-export default tmp4;
+};

@@ -1,12 +1,12 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 7728
+// Function ID: 7729
 // Name: CollectiblesPurchaseStore
-// Dependencies: [12, 504, 584, 2]
+// Dependencies: [12, 504, 572, 2]
 
-// Module 7723 (CollectiblesPurchaseStore)
+// Module 7728 (CollectiblesPurchaseStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

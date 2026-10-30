@@ -1,15 +1,15 @@
-// Module ID: 19920
-// Function ID: 19921
+// Module ID: 19983
+// Function ID: 19984
 // Name: AVErrorNoAudioInputDetected
-// Dependencies: [4857, 2012, 5752, 1084, 5935, 19921, 2]
+// Dependencies: [4858, 2007, 5759, 1072, 5942, 19984, 2]
 
-// Module 19920 (AVErrorNoAudioInputDetected)
-import AVError from "AVError" /* 5935 */;
-import AVErrorContext from "AVErrorContext" /* 19921 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import Constants from "Constants" /* 1084 */;
+// Module 19983 (AVErrorNoAudioInputDetected)
+import AVError from "AVError" /* 5942 */;
+import AVErrorContext from "AVErrorContext" /* 19984 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

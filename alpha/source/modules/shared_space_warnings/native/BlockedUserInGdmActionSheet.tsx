@@ -1,30 +1,27 @@
-// Module ID: 19492
-// Function ID: 19493
+// Module ID: 19555
+// Function ID: 19556
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4857, 1389, 15542, 1084, 21, 5005, 587, 5271, 6029, 1125, 558, 576, 504, 1385, 1199, 12268, 10756, 7327, 5724, 1264, 5247, 19493, 7471, 7358, 5707, 11019, 7047, 6963, 5281, 2]
+// Dependencies: [19, 17, 4858, 1384, 15582, 1072, 21, 5009, 575, 5619, 6036, 1114, 504, 1380, 1188, 12431, 10779, 7334, 5730, 1253, 7360, 5712, 11247, 7054, 6969, 5629, 5253, 19556, 7479, 2]
+// Exports: default
 
-// Module 19492 (BlockedUserInGdmActionSheet)
+// Module 19555 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl7 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
-import TableRow2 from "TableRow" /* 6963 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7327 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19493 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl7 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19556 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import UserStore from "UserStore" /* 1389 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15542 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import UserStore from "UserStore" /* 1384 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15582 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -40,7 +37,6 @@ function getUserCalloutRowText(arg0) {
   let calledOutUserIds;
   let closure_2;
   let formatResult;
-  let require;
   let totalUsers;
   let user;
   ({ calledOutUserIds, totalUsers, guildId: require, channelId: importDefault } = arg0);
@@ -52,7 +48,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -60,7 +56,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -75,7 +71,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -83,7 +79,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -97,7 +93,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -105,7 +101,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, tmp) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -120,7 +116,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(_require, importDefault, first) };
+          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -130,178 +126,7 @@ function getUserCalloutRowText(arg0) {
   }
   return formatResult;
 }
-function getBlockedUserInGDMTableRows(arg0) {
-  let blockedUserIds;
-  let channelId;
-  let guild_id;
-  let guild_id1;
-  let guild_id2;
-  let guild_id3;
-  let ignoredUserIds;
-  let intl;
-  let intl2;
-  let obj5;
-  let obj8;
-  let substr1;
-  let tmp16;
-  let tmp28;
-  ({ channelId, blockedUserIds, ignoredUserIds } = arg0);
-  const channel = ChannelStore.getChannel(channelId);
-  const obj = { icon: authStore(CircleCheckIcon.CircleCheckIcon, {}), label: intl.string(intl7.t.RIMw54) };
-  const tmp4 = ignoredUserIds.length > 0;
-  intl = intl7.intl;
-  const items = [obj, ];
-  const obj2 = { icon: authStore(CircleInformationIcon.CircleInformationIcon, {}), label: intl2.string(intl7.t.bejNWN) };
-  intl2 = intl7.intl;
-  items[1] = obj2;
-  if (blockedUserIds.length > 0) {
-    if (tmp4) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, ignoredUserIds, HermesBuiltin.arraySpread(items1, blockedUserIds, 0));
-      const substr = items1.slice(0, 2);
-      const obj3 = { userIds: substr, guildId: guild_id };
-      guild_id = undefined;
-      const unshift2 = items.unshift;
-      const tmp25 = closure_15;
-      if (channel != null) {
-        guild_id = channel.guild_id;
-      }
-      const obj4 = { icon: authStore(tmp25, obj3), label: tmp28(obj5) };
-      obj5 = { calledOutUserIds: substr, totalUsers: items1.length, channelId, guildId: guild_id1 };
-      guild_id1 = undefined;
-      tmp28 = getUserCalloutRowText;
-      if (channel != null) {
-        guild_id1 = channel.guild_id;
-      }
-      unshift2(obj4);
-    }
-    return items;
-  }
-  const items2 = [];
-  if (blockedUserIds.length > 0) {
-    HermesBuiltin.arraySpread(items2, blockedUserIds, 0);
-    substr1 = items2.slice(0, 2);
-  } else {
-    HermesBuiltin.arraySpread(items2, ignoredUserIds, 0);
-    substr1 = items2.slice(0, 2);
-  }
-  const obj6 = { userIds: substr1, guildId: guild_id2 };
-  guild_id2 = undefined;
-  const unshift = items.unshift;
-  const tmp13 = blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length;
-  const tmp14 = closure_15;
-  if (channel != null) {
-    guild_id2 = channel.guild_id;
-  }
-  const obj7 = { icon: authStore(tmp14, obj6), label: tmp16(obj8) };
-  obj8 = { calledOutUserIds: substr1, totalUsers: tmp13, channelId, guildId: guild_id3 };
-  guild_id3 = undefined;
-  tmp16 = getUserCalloutRowText;
-  if (channel != null) {
-    guild_id3 = channel.guild_id;
-  }
-  unshift(obj7);
-}
-let react = react_mod;
-const View = react_native.View;
-({ BlockWarningEngagements: metroImportDefault, GdmWarningMedium: metroImportAll } = SharedSpaceWarningConstants);
-const AnalyticEvents = Constants.AnalyticEvents;
-({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: obj3, buttons: { gap: 8 }, icon: { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 } };
-obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
-createStyles = createStyles.createStyles;
-obj3 = { paddingVertical: nativeDefault.space.PX_24 };
-let closure_13 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCalloutAvatars(userIds) {
-  let first;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  const obj = userIds(576);
-  const cResult = obj.c(14);
-  userIds = userIds.userIds;
-  const guildId = userIds.guildId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userIds) {
-    const fn = function l() {
-      let user;
-      return userIds.map((item) => user.getUser(item));
-    };
-    const items1 = [userIds];
-    cResult[1] = userIds;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = userIds(504);
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6, tmp7);
-  if (cResult[4] !== stateFromStoresArray) {
-    const found = stateFromStoresArray.filter(tmp(1385).isNotNullish);
-    cResult[4] = stateFromStoresArray;
-    cResult[5] = found;
-    tmp8 = found;
-  } else {
-    tmp8 = cResult[5];
-  }
-  if (1 === userIds.length) {
-    let tmp13;
-    let tmp19;
-    if (cResult[6] !== userIds[0]) {
-      const user = UserStore.getUser(userIds[0]);
-      cResult[6] = userIds[0];
-      cResult[7] = user;
-      tmp13 = user;
-    } else {
-      tmp13 = cResult[7];
-    }
-    if (cResult[8] === guildId) {
-      if (cResult[9] === tmp13) {
-        let tmp16;
-        if (cResult[10] === tmp8) {
-          tmp16 = cResult[11];
-        }
-        return tmp16;
-      }
-    }
-    if (null != tmp13) {
-      const obj2 = { user: tmp8[0], guildId, size: userIds(1199).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1199).Avatar;
-      tmp19 = closure_10(Avatar, obj2);
-    } else {
-      tmp19 = closure_10(tmp(12268).UserIcon, {});
-    }
-    cResult[8] = guildId;
-    cResult[9] = tmp13;
-    cResult[10] = tmp8;
-    cResult[11] = tmp19;
-    tmp16 = tmp19;
-  } else {
-    let tmp10;
-    if (cResult[12] !== tmp8) {
-      const obj3 = { users: tmp8, size: userIds(1199).AvatarSizes.REFRESH_MEDIUM_32 };
-      const FacepileGroupDMAvatar = tmp(10756).FacepileGroupDMAvatar;
-      const tmp12 = closure_10(FacepileGroupDMAvatar, obj3);
-      cResult[12] = tmp8;
-      cResult[13] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[13];
-    }
-    return tmp10;
-  }
-}) : (function UserCalloutAvatars(userIds) {
+function UserCalloutAvatars(userIds) {
   let tmp5;
   userIds = userIds.userIds;
   const guildId = userIds.guildId;
@@ -312,138 +137,26 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserCa
     let user;
     return userIds.map((item) => user.getUser(item));
   }, items1);
-  const found = stateFromStoresArray.filter(userIds(1385).isNotNullish);
+  const found = stateFromStoresArray.filter(userIds(1380).isNotNullish);
   const obj2 = UserStore;
   if (1 === userIds.length) {
     let tmp8;
     if (null != obj2.getUser(userIds[0])) {
-      const obj3 = { user: found[0], guildId, size: userIds(1199).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
-      const Avatar = tmp(1199).Avatar;
+      const obj3 = { user: found[0], guildId, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32, "aria-hidden": true };
+      const Avatar = tmp(1188).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12268).UserIcon, {});
+      tmp8 = closure_10(tmp(12431).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
-    const obj4 = { users: found, size: userIds(1199).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10756).FacepileGroupDMAvatar;
+    const obj4 = { users: found, size: userIds(1188).AvatarSizes.REFRESH_MEDIUM_32 };
+    const FacepileGroupDMAvatar = tmp(10779).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGDMDescription(arg0) {
-  let items;
-  let items1;
-  let items2;
-  let numOfBlockedUsers;
-  let numOfIgnoredUsers;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ numOfBlockedUsers, numOfIgnoredUsers } = arg0);
-  if (numOfBlockedUsers > 0) {
-    if (numOfIgnoredUsers > 0) {
-      let first;
-      let tmp28;
-      const _Symbol3 = Symbol;
-      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl5 = tmp(1125).intl;
-        const stringResult = intl5.string(intl7.t.xbRNI3);
-        cResult[0] = stringResult;
-        first = stringResult;
-      } else {
-        first = cResult[0];
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { children: items };
-        items = [first, "\n", ];
-        const intl6 = tmp(1125).intl;
-        items[2] = intl6.string(intl7.t["Bp2/ni"]);
-        const tmp31 = authStore2(unpackModuleId, obj2);
-        cResult[1] = tmp31;
-        tmp28 = tmp31;
-      } else {
-        tmp28 = cResult[1];
-      }
-      tmp6 = tmp28;
-    }
-    return tmp6;
-  }
-  if (numOfBlockedUsers > 0) {
-    let tmp16;
-    let tmp19;
-    let tmp21;
-    if (cResult[2] !== numOfBlockedUsers) {
-      const intl3 = tmp(1125).intl;
-      const obj3 = { n: numOfBlockedUsers };
-      const formatResult = intl3.format(intl7.t.iKtixW, obj3);
-      cResult[2] = numOfBlockedUsers;
-      cResult[3] = formatResult;
-      tmp16 = formatResult;
-    } else {
-      tmp16 = cResult[3];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1125).intl;
-      const stringResult1 = intl4.string(intl7.t.SN1hrl);
-      cResult[4] = stringResult1;
-      tmp19 = stringResult1;
-    } else {
-      tmp19 = cResult[4];
-    }
-    if (cResult[5] !== tmp16) {
-      const obj4 = { children: items1 };
-      items1 = [tmp16, "\n", tmp19];
-      const tmp24 = authStore2(unpackModuleId, obj4);
-      cResult[5] = tmp16;
-      cResult[6] = tmp24;
-      tmp21 = tmp24;
-    } else {
-      tmp21 = cResult[6];
-    }
-    tmp6 = tmp21;
-  } else {
-    tmp6 = null;
-    if (numOfIgnoredUsers > 0) {
-      let tmp7;
-      let tmp10;
-      let tmp12;
-      if (cResult[7] !== numOfIgnoredUsers) {
-        const intl = tmp(1125).intl;
-        const obj5 = { n: numOfIgnoredUsers };
-        const formatResult1 = intl.format(intl7.t["6IRwua"], obj5);
-        cResult[7] = numOfIgnoredUsers;
-        cResult[8] = formatResult1;
-        tmp7 = formatResult1;
-      } else {
-        tmp7 = cResult[8];
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1125).intl;
-        const stringResult2 = intl2.string(intl7.t["6AKLRt"]);
-        cResult[9] = stringResult2;
-        tmp10 = stringResult2;
-      } else {
-        tmp10 = cResult[9];
-      }
-      if (cResult[10] !== tmp7) {
-        const obj6 = { children: items2 };
-        items2 = [tmp7, "\n", tmp10];
-        const tmp15 = authStore2(unpackModuleId, obj6);
-        cResult[10] = tmp7;
-        cResult[11] = tmp15;
-        tmp12 = tmp15;
-      } else {
-        tmp12 = cResult[11];
-      }
-      tmp6 = tmp12;
-    }
-  }
-}) : (function BlockedUserInGDMDescription(arg0) {
+}
+function BlockedUserInGDMDescription(arg0) {
   let items;
   let items1;
   let items2;
@@ -482,490 +195,176 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Blocke
       tmp3 = authStore2(unpackModuleId, obj);
     }
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInGdmActionSheet(channelId) {
-  let icon;
-  let ignoredUserIds;
-  let items;
-  let items1;
-  let items2;
-  let obj = channelId(ignoredUserIds[13]);
-  const cResult = obj.c(78);
-  channelId = channelId.channelId;
-  const blockedUserIds = channelId.blockedUserIds;
-  ignoredUserIds = channelId.ignoredUserIds;
-  const tmp4 = closure_13();
-  react = tmp4;
-  if (cResult[0] === blockedUserIds) {
-    if (cResult[1] === channelId) {
-      let tmp5;
-      let tmp6;
-      if (cResult[2] === ignoredUserIds) {
-        tmp5 = cResult[3];
-        tmp6 = cResult[4];
-      }
-      const effect = react.useEffect(tmp5, tmp6);
-      if (cResult[5] === blockedUserIds) {
-        if (cResult[6] === channelId) {
-          let tmp9;
-          if (cResult[7] === ignoredUserIds) {
-            tmp9 = cResult[8];
-          }
-          if (cResult[9] === blockedUserIds) {
-            if (cResult[10] === channelId) {
-              let tmp10;
-              let tmp22;
-              let tmp28;
-              let tmp30;
-              let tmp19;
-              let tmp18;
-              let tmp17;
-              let tmp16;
-              let flag2;
-              let flag;
-              let tmp15;
-              let tmp14;
-              let tmp13;
-              let tmp12;
-              let tmp11;
-              if (cResult[11] === ignoredUserIds) {
-                tmp10 = cResult[12];
-              }
-              if (cResult[13] === blockedUserIds) {
-                if (cResult[14] === channelId) {
-                  if (cResult[15] === ignoredUserIds) {
-                    if (cResult[16] === tmp4.container) {
-                      if (cResult[17] === tmp4.description) {
-                        if (cResult[18] === tmp4.headerImage) {
-                          if (cResult[19] === tmp4.icon) {
-                            if (cResult[20] === tmp4.tableGroup) {
-                              if (cResult[21] === tmp4.title) {
-                                tmp11 = cResult[22];
-                                tmp12 = cResult[23];
-                                tmp13 = cResult[24];
-                                tmp14 = cResult[25];
-                                tmp15 = cResult[26];
-                                flag = cResult[27];
-                                flag2 = cResult[28];
-                                tmp16 = cResult[29];
-                                tmp17 = cResult[30];
-                                tmp18 = cResult[31];
-                                tmp19 = cResult[32];
-                              }
-                              if (cResult[49] === tmp11) {
-                                if (cResult[50] === flag2) {
-                                  let tmp45;
-                                  if (cResult[51] === tmp16) {
-                                    tmp45 = cResult[52];
-                                  }
-                                  if (cResult[53] === tmp12) {
-                                    if (cResult[54] === tmp45) {
-                                      let tmp48;
-                                      let tmp52;
-                                      let tmp54;
-                                      let tmp57;
-                                      let tmp59;
-                                      if (cResult[55] === tmp17) {
-                                        tmp48 = cResult[56];
-                                      }
-                                      const _Symbol2 = Symbol;
-                                      const buttons = tmp4.buttons;
-                                      if (cResult[57] === Symbol.for("react.memo_cache_sentinel")) {
-                                        const intl2 = tmp(tmp2[11]).intl;
-                                        const stringResult = intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA);
-                                        cResult[57] = stringResult;
-                                        tmp52 = stringResult;
-                                      } else {
-                                        tmp52 = cResult[57];
-                                      }
-                                      if (cResult[58] !== tmp10) {
-                                        let obj2 = { size: "lg", onPress: tmp10, text: tmp52 };
-                                        const tmp56 = closure_10(channelId(ignoredUserIds[30]).Button, obj2);
-                                        cResult[58] = tmp10;
-                                        cResult[59] = tmp56;
-                                        tmp54 = tmp56;
-                                      } else {
-                                        tmp54 = cResult[59];
-                                      }
-                                      const _Symbol3 = Symbol;
-                                      if (cResult[60] === Symbol.for("react.memo_cache_sentinel")) {
-                                        const intl3 = tmp(tmp2[11]).intl;
-                                        const stringResult1 = intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT);
-                                        cResult[60] = stringResult1;
-                                        tmp57 = stringResult1;
-                                      } else {
-                                        tmp57 = cResult[60];
-                                      }
-                                      if (cResult[61] !== tmp9) {
-                                        let obj3 = { size: "lg", variant: "secondary", onPress: tmp9, text: tmp57 };
-                                        const tmp61 = closure_10(channelId(ignoredUserIds[30]).Button, obj3);
-                                        cResult[61] = tmp9;
-                                        cResult[62] = tmp61;
-                                        tmp59 = tmp61;
-                                      } else {
-                                        tmp59 = cResult[62];
-                                      }
-                                      if (cResult[63] === tmp4.buttons) {
-                                        if (cResult[64] === tmp54) {
-                                          let tmp62;
-                                          if (cResult[65] === tmp59) {
-                                            tmp62 = cResult[66];
-                                          }
-                                          if (cResult[67] === tmp13) {
-                                            if (cResult[68] === tmp15) {
-                                              if (cResult[69] === tmp48) {
-                                                if (cResult[70] === tmp62) {
-                                                  if (cResult[71] === tmp18) {
-                                                    let tmp66;
-                                                    if (cResult[72] === tmp19) {
-                                                      tmp66 = cResult[73];
-                                                    }
-                                                    if (cResult[74] === tmp14) {
-                                                      if (cResult[75] === flag) {
-                                                        let tmp69;
-                                                        if (cResult[76] === tmp66) {
-                                                          tmp69 = cResult[77];
-                                                        }
-                                                        return tmp69;
-                                                      }
-                                                    }
-                                                    let obj4 = { startExpanded: flag, children: tmp66 };
-                                                    const tmp71 = closure_10(tmp14, obj4);
-                                                    cResult[74] = tmp14;
-                                                    cResult[75] = flag;
-                                                    cResult[76] = tmp66;
-                                                    cResult[77] = tmp71;
-                                                    tmp69 = tmp71;
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                          let obj5 = { style: tmp18, children: items };
-                                          items = [tmp19, tmp15, tmp48, tmp62];
-                                          const tmp68 = closure_12(tmp13, obj5);
-                                          cResult[67] = tmp13;
-                                          cResult[68] = tmp15;
-                                          cResult[69] = tmp48;
-                                          cResult[70] = tmp62;
-                                          cResult[71] = tmp18;
-                                          cResult[72] = tmp19;
-                                          cResult[73] = tmp68;
-                                          tmp66 = tmp68;
-                                        }
-                                      }
-                                      const obj6 = { style: buttons, children: items1 };
-                                      items1 = [tmp54, tmp59];
-                                      const tmp65 = closure_12(View, obj6);
-                                      cResult[63] = tmp4.buttons;
-                                      cResult[64] = tmp54;
-                                      cResult[65] = tmp59;
-                                      cResult[66] = tmp65;
-                                      tmp62 = tmp65;
-                                    }
-                                  }
-                                  const obj7 = { style: tmp17, children: tmp45 };
-                                  const tmp50 = closure_10(tmp12, obj7);
-                                  cResult[53] = tmp12;
-                                  cResult[54] = tmp45;
-                                  cResult[55] = tmp17;
-                                  cResult[56] = tmp50;
-                                  tmp48 = tmp50;
-                                }
-                              }
-                              const obj8 = { hasIcons: flag2, children: tmp16 };
-                              const tmp47 = closure_10(tmp11, obj8);
-                              cResult[49] = tmp11;
-                              cResult[50] = flag2;
-                              cResult[51] = tmp16;
-                              cResult[52] = tmp47;
-                              tmp45 = tmp47;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              const obj9 = { channelId, blockedUserIds, ignoredUserIds };
-              const arr4 = getBlockedUserInGDMTableRows(obj9);
-              const ActionSheet = tmp(tmp2[25]).ActionSheet;
-              const container = tmp4.container;
-              if (cResult[33] !== tmp4.headerImage) {
-                const obj10 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp4.headerImage };
-                const tmp25 = blockedUserIds(ignoredUserIds[26]);
-                const tmp26 = closure_10(tmp25, obj10);
-                cResult[33] = tmp4.headerImage;
-                cResult[34] = tmp26;
-                tmp22 = tmp26;
-              } else {
-                tmp22 = cResult[34];
-              }
-              const _Symbol = Symbol;
-              const title = tmp4.title;
-              if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
-                const intl = tmp(tmp2[11]).intl;
-                const stringResult2 = intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]);
-                cResult[35] = stringResult2;
-                tmp28 = stringResult2;
-              } else {
-                tmp28 = cResult[35];
-              }
-              if (cResult[36] !== tmp4.title) {
-                const obj11 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp28 };
-                const tmp32 = closure_10(channelId(ignoredUserIds[9]).Text, obj11);
-                cResult[36] = tmp4.title;
-                cResult[37] = tmp32;
-                tmp30 = tmp32;
-              } else {
-                tmp30 = cResult[37];
-              }
-              if (cResult[38] === blockedUserIds.length) {
-                let tmp33;
-                if (cResult[39] === ignoredUserIds.length) {
-                  tmp33 = cResult[40];
-                }
-                if (cResult[41] === tmp4.description) {
-                  let tmp37;
-                  if (cResult[42] === tmp33) {
-                    tmp37 = cResult[43];
-                  }
-                  if (cResult[44] === tmp30) {
-                    let tmp40;
-                    let tmp43;
-                    if (cResult[45] === tmp37) {
-                      tmp40 = cResult[46];
-                    }
-                    const tableGroup = tmp4.tableGroup;
-                    const TableRowGroup = tmp(tmp2[28]).TableRowGroup;
-                    if (cResult[47] !== tmp4.icon) {
-                      class J {
-                        constructor(arg0, arg1) {
-                          let label;
-                          let obj2;
-                          ({ icon, label } = arg0);
-                          const obj = { icon: authStore(View, obj2), label };
-                          obj2 = { style: icon.icon, children: icon };
-                          const TableRow = TableRow2.TableRow;
-                          return authStore(TableRow, obj, arg1);
-                        }
-                      }
-                      cResult[47] = tmp4.icon;
-                      cResult[48] = J;
-                      tmp43 = J;
-                    } else {
-                      class J {
-                        constructor(arg0, arg1) {
-                          let label;
-                          let obj2;
-                          ({ icon, label } = arg0);
-                          const obj = { icon: authStore(View, obj2), label };
-                          obj2 = { style: icon.icon, children: icon };
-                          const TableRow = TableRow2.TableRow;
-                          return authStore(TableRow, obj, arg1);
-                        }
-                      }
-                    }
-                    const mapped = arr4.map(tmp43);
-                    cResult[13] = blockedUserIds;
-                    cResult[14] = channelId;
-                    cResult[15] = ignoredUserIds;
-                    cResult[16] = tmp4.container;
-                    cResult[17] = tmp4.description;
-                    cResult[18] = tmp4.headerImage;
-                    cResult[19] = tmp4.icon;
-                    cResult[20] = tmp4.tableGroup;
-                    cResult[21] = tmp4.title;
-                    cResult[22] = TableRowGroup;
-                    cResult[23] = View;
-                    cResult[24] = View;
-                    cResult[25] = ActionSheet;
-                    cResult[26] = tmp40;
-                    cResult[27] = true;
-                    cResult[28] = true;
-                    cResult[29] = mapped;
-                    cResult[30] = tableGroup;
-                    cResult[31] = container;
-                    cResult[32] = tmp22;
-                    tmp19 = tmp22;
-                    tmp18 = container;
-                    tmp17 = tableGroup;
-                    tmp16 = mapped;
-                    flag2 = true;
-                    flag = true;
-                    tmp15 = tmp40;
-                    tmp14 = ActionSheet;
-                    tmp13 = tmp21;
-                    tmp12 = tmp21;
-                    tmp11 = TableRowGroup;
-                  }
-                  const obj12 = { children: items2 };
-                  items2 = [tmp30, tmp37];
-                  const tmp42 = closure_12(View, obj12);
-                  cResult[44] = tmp30;
-                  cResult[45] = tmp37;
-                  cResult[46] = tmp42;
-                  tmp40 = tmp42;
-                }
-                const obj13 = { variant: "text-md/medium", color: "text-default", style: tmp4.description, children: tmp33 };
-                const tmp39 = closure_10(channelId(ignoredUserIds[9]).Text, obj13);
-                cResult[41] = tmp4.description;
-                cResult[42] = tmp33;
-                cResult[43] = tmp39;
-                tmp37 = tmp39;
-              }
-              const obj14 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
-              const tmp36 = closure_10(closure_16, obj14);
-              cResult[38] = blockedUserIds.length;
-              cResult[39] = ignoredUserIds.length;
-              cResult[40] = tmp36;
-              tmp33 = tmp36;
-            }
-          }
-          function handleDismissAndLeave() {
-            const obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet();
-            const obj2 = SharedSpacesWarningActionCreators;
-            const result = obj2.dismissGdmBlockedUserWarning(channelId);
-            const obj3 = ChannelActionCreatorsDefault;
-            obj3.closePrivateChannel(channelId, true, true);
-            const obj4 = AnalyticsUtilsDefault;
-            const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-            obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-          }
-          cResult[9] = blockedUserIds;
-          cResult[10] = channelId;
-          cResult[11] = ignoredUserIds;
-          cResult[12] = handleDismissAndLeave;
-          tmp10 = handleDismissAndLeave;
-        }
-      }
-      function handleDismissAndStay() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        const obj2 = SharedSpacesWarningActionCreators;
-        const result = obj2.dismissGdmBlockedUserWarning(channelId);
-        const obj3 = AnalyticsUtilsDefault;
-        const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-        obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
-      }
-      cResult[5] = blockedUserIds;
-      cResult[6] = channelId;
-      cResult[7] = ignoredUserIds;
-      cResult[8] = handleDismissAndStay;
-      tmp9 = handleDismissAndStay;
-    }
-  }
-  const fn = function s() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-    obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
-  };
-  const items3 = [channelId, blockedUserIds, ignoredUserIds];
-  cResult[0] = blockedUserIds;
-  cResult[1] = channelId;
-  cResult[2] = ignoredUserIds;
-  cResult[3] = fn;
-  cResult[4] = items3;
-  tmp6 = items3;
-  tmp5 = fn;
-}) : (function BlockedUserInGdmActionSheet(channelId) {
+}
+let react = react_mod;
+const View = react_native.View;
+({ BlockWarningEngagements: metroImportDefault, GdmWarningMedium: metroImportAll } = SharedSpaceWarningConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, headerImage: { alignSelf: "center", width: 73, height: 86 }, title: { textAlign: "center", alignSelf: "center" }, description: { textAlign: "center", alignSelf: "center" }, tableGroup: obj3, buttons: { gap: 8 }, icon: { display: "flex", justifyContent: "center", alignItems: "center", minWidth: 32 } };
+obj2 = { paddingTop: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, textAlign: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { paddingVertical: nativeDefault.space.PX_24 };
+let closure_13 = createStyles(obj);
+let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
+
+export default function BlockedUserInGdmActionSheet(channelId) {
   let TableRowGroup;
+  let guild_id;
+  let guild_id1;
+  let guild_id2;
+  let guild_id3;
   let icon;
   let intl;
   let intl2;
   let intl3;
-  let items1;
-  let items2;
+  let intl4;
+  let intl5;
   let items3;
-  let obj2;
+  let items4;
+  let items5;
+  let obj12;
+  let obj14;
+  let obj20;
+  let obj5;
   let obj7;
-  let obj9;
+  let substr1;
+  let tmp20;
+  let tmp32;
   channelId = channelId.channelId;
   const blockedUserIds = channelId.blockedUserIds;
   const ignoredUserIds = channelId.ignoredUserIds;
-  const tmp = closure_13();
-  react = tmp;
+  const tmp2 = closure_13();
+  react = tmp2;
   const items = [channelId, blockedUserIds, ignoredUserIds];
   const effect = react.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
     obj.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_VIEWED, obj2);
   }, items);
-  let obj = { startExpanded: true, children: closure_12(View, obj2) };
-  obj2 = { style: tmp.container, children: items1 };
-  const arr4 = getBlockedUserInGDMTableRows({ channelId, blockedUserIds, ignoredUserIds });
-  const ActionSheet = channelId(ignoredUserIds[25]).ActionSheet;
-  let obj3 = { source: blockedUserIds(ignoredUserIds[27]), style: tmp.headerImage };
-  const tmp3 = blockedUserIds(ignoredUserIds[26]);
-  items1 = [closure_10(tmp3, obj3), , , ];
-  let obj4 = { children: items2 };
-  let obj5 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
-  const Text = channelId(ignoredUserIds[9]).Text;
+  const channel = ChannelStore.getChannel(channelId);
+  let obj = { icon: closure_10(channelId(ignoredUserIds[17]).CircleCheckIcon, {}), label: intl.string(channelId(ignoredUserIds[11]).t.RIMw54) };
+  const tmp6 = ignoredUserIds.length > 0;
   intl = channelId(ignoredUserIds[11]).intl;
-  items2 = [closure_10(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", color: "text-default", style: tmp.description, children: closure_10(closure_16, obj7) };
-  obj7 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
-  const Text2 = channelId(ignoredUserIds[9]).Text;
-  items2[1] = closure_10(Text2, obj6);
-  items1[1] = closure_12(View, obj4);
-  const obj8 = { style: tmp.tableGroup, children: closure_10(TableRowGroup, obj9) };
-  obj9 = {
-    hasIcons: true,
-    children: arr4.map((item, index) => {
-      let label;
-      let obj2;
-      ({ icon, label } = item);
-      const obj = { icon: authStore(View, obj2), label };
-      obj2 = { style: icon.icon, children: icon };
-      const TableRow = TableRow2.TableRow;
-      return authStore(TableRow, obj, index);
-    })
-  };
-  TableRowGroup = channelId(ignoredUserIds[28]).TableRowGroup;
-  items1[2] = closure_10(View, obj8);
-  const obj10 = { style: tmp.buttons, children: items3 };
-  const obj11 = {
-    size: "lg",
-    onPress: function handleDismissAndLeave() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-      const obj2 = SharedSpacesWarningActionCreators;
-      const result = obj2.dismissGdmBlockedUserWarning(channelId);
-      const obj3 = ChannelActionCreatorsDefault;
-      obj3.closePrivateChannel(channelId, true, true);
-      const obj4 = AnalyticsUtilsDefault;
-      const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-      obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
-    },
-    text: intl2.string(channelId(ignoredUserIds[11]).t.I4q1kA)
-  };
-  const Button = channelId(ignoredUserIds[30]).Button;
+  const items1 = [obj, ];
+  let obj2 = { icon: closure_10(channelId(ignoredUserIds[18]).CircleInformationIcon, {}), label: intl2.string(channelId(ignoredUserIds[11]).t.bejNWN) };
   intl2 = channelId(ignoredUserIds[11]).intl;
-  items3 = [closure_10(Button, obj11), ];
-  const obj12 = {
-    size: "lg",
-    variant: "secondary",
-    onPress: function handleDismissAndStay() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-      const obj2 = SharedSpacesWarningActionCreators;
-      const result = obj2.dismissGdmBlockedUserWarning(channelId);
-      const obj3 = AnalyticsUtilsDefault;
-      const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
-      obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
-    },
-    text: intl3.string(channelId(ignoredUserIds[11]).t.DRJhmT)
-  };
-  const Button2 = channelId(ignoredUserIds[30]).Button;
-  intl3 = channelId(ignoredUserIds[11]).intl;
-  items3[1] = closure_10(Button2, obj12);
-  items1[3] = closure_12(View, obj10);
-  return closure_10(ActionSheet, obj);
-});
-let result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInGdmActionSheet.tsx");
-
-export default tmp5;
+  items1[1] = obj2;
+  if (blockedUserIds.length > 0) {
+    if (tmp6) {
+      const items2 = [];
+      HermesBuiltin.arraySpread(items2, ignoredUserIds, HermesBuiltin.arraySpread(items2, blockedUserIds, 0));
+      const substr = items2.slice(0, 2);
+      let obj3 = { userIds: substr, guildId: guild_id };
+      guild_id = undefined;
+      const unshift2 = items1.unshift;
+      const tmp29 = UserCalloutAvatars;
+      if (channel != null) {
+        guild_id = channel.guild_id;
+      }
+      let obj4 = { icon: closure_10(tmp29, obj3), label: tmp32(obj5) };
+      obj5 = { calledOutUserIds: substr, totalUsers: items2.length, channelId, guildId: guild_id1 };
+      guild_id1 = undefined;
+      tmp32 = getUserCalloutRowText;
+      if (channel != null) {
+        guild_id1 = channel.guild_id;
+      }
+      unshift2(obj4);
+    }
+    const obj6 = { startExpanded: true, children: closure_12(View, obj7) };
+    obj7 = { style: tmp2.container, children: items3 };
+    const ActionSheet = tmp8(tmp9[20]).ActionSheet;
+    const obj8 = { source: blockedUserIds(ignoredUserIds[22]), style: tmp2.headerImage };
+    const tmp38 = blockedUserIds(ignoredUserIds[21]);
+    items3 = [closure_10(tmp38, obj8), , , ];
+    const obj9 = { children: items4 };
+    const obj10 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp2.title, children: intl3.string(channelId(ignoredUserIds[11]).t["mwJJ+f"]) };
+    const Text = tmp8(tmp9[9]).Text;
+    intl3 = tmp8(tmp9[11]).intl;
+    items4 = [closure_10(Text, obj10), ];
+    const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp2.description, children: closure_10(BlockedUserInGDMDescription, obj12) };
+    obj12 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
+    const Text2 = tmp8(tmp9[9]).Text;
+    items4[1] = closure_10(Text2, obj11);
+    items3[1] = closure_12(View, obj9);
+    const obj13 = { style: tmp2.tableGroup, children: closure_10(TableRowGroup, obj14) };
+    obj14 = {
+      hasIcons: true,
+      children: items1.map((item, index) => {
+          let label;
+          let obj2;
+          ({ icon, label } = item);
+          const obj = { icon: authStore(View, obj2), label };
+          obj2 = { style: icon.icon, children: icon };
+          const TableRow = TableRow2.TableRow;
+          return authStore(TableRow, obj, index);
+        })
+    };
+    TableRowGroup = tmp8(tmp9[23]).TableRowGroup;
+    items3[2] = closure_10(View, obj13);
+    const obj15 = { style: tmp2.buttons, children: items5 };
+    const obj16 = {
+      size: "lg",
+      onPress: function handleDismissAndLeave() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = SharedSpacesWarningActionCreators;
+          const result = obj2.dismissGdmBlockedUserWarning(channelId);
+          const obj3 = ChannelActionCreatorsDefault;
+          obj3.closePrivateChannel(channelId, true, true);
+          const obj4 = AnalyticsUtilsDefault;
+          const obj5 = { action: metroImportDefault.CLICK_TO_LEAVE, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+          obj4.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj5);
+        },
+      text: intl4.string(channelId(ignoredUserIds[11]).t.I4q1kA)
+    };
+    const Button = tmp8(tmp9[25]).Button;
+    intl4 = tmp8(tmp9[11]).intl;
+    items5 = [closure_10(Button, obj16), ];
+    const obj17 = {
+      size: "lg",
+      variant: "secondary",
+      onPress: function handleDismissAndStay() {
+          const obj = ActionSheetActionCreatorsDefault;
+          obj.hideActionSheet();
+          const obj2 = SharedSpacesWarningActionCreators;
+          const result = obj2.dismissGdmBlockedUserWarning(channelId);
+          const obj3 = AnalyticsUtilsDefault;
+          const obj4 = { action: metroImportDefault.CLICK_TO_STAY, channel_id: channelId, warning_medium: metroImportAll.ACTION_SHEET, ignored_user_ids: ignoredUserIds, blocked_user_ids: blockedUserIds };
+          obj3.track(AnalyticEvents.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, obj4);
+        },
+      text: intl5.string(channelId(ignoredUserIds[11]).t.DRJhmT)
+    };
+    const Button2 = tmp8(tmp9[25]).Button;
+    intl5 = tmp8(tmp9[11]).intl;
+    items5[1] = closure_10(Button2, obj17);
+    items3[3] = closure_12(View, obj15);
+    return closure_10(ActionSheet, obj6);
+  }
+  const items6 = [];
+  if (blockedUserIds.length > 0) {
+    HermesBuiltin.arraySpread(items6, blockedUserIds, 0);
+    substr1 = items6.slice(0, 2);
+  } else {
+    HermesBuiltin.arraySpread(items6, ignoredUserIds, 0);
+    substr1 = items6.slice(0, 2);
+  }
+  const obj18 = { userIds: substr1, guildId: guild_id2 };
+  guild_id2 = undefined;
+  const unshift = items1.unshift;
+  const tmp17 = blockedUserIds.length > 0 ? blockedUserIds.length : ignoredUserIds.length;
+  const tmp18 = UserCalloutAvatars;
+  if (channel != null) {
+    guild_id2 = channel.guild_id;
+  }
+  const obj19 = { icon: closure_10(tmp18, obj18), label: tmp20(obj20) };
+  obj20 = { calledOutUserIds: substr1, totalUsers: tmp17, channelId, guildId: guild_id3 };
+  guild_id3 = undefined;
+  tmp20 = getUserCalloutRowText;
+  if (channel != null) {
+    guild_id3 = channel.guild_id;
+  }
+  unshift(obj19);
+};
 export { getUserCalloutRowText };

@@ -1,58 +1,27 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19113
+// Function ID: 19114
 // Name: useInviteMembersCallback
-// Dependencies: [19, 4857, 1084, 558, 576, 11386, 9086, 2]
+// Dependencies: [19, 4858, 1072, 11589, 9099, 2]
+// Exports: useInviteMembersCallback
 
-// Module 19026 (useInviteMembersCallback)
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9086 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11386 */;
+// Module 19113 (useInviteMembersCallback)
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9099 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11589 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let hasOwnProperty;
 let metroRequire;
 ({ AnalyticsPages: hasOwnProperty, InstantInviteSources: metroRequire } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteMembersCallback(arg0) {
-  let closure_0;
-  let tmp2;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function s() {
-      const channel = ChannelStore.getChannel(closure_0);
-      let tmp = null;
-      if (null != channel) {
-        let result;
-        if (channel.isPrivate()) {
-          result = openGroupDMAddMembersDefault(channel.id, hasOwnProperty.CHANNEL_CALL);
-        } else {
-          const obj = { source: metroRequire.VOICE_CHANNEL };
-          const obj2 = instant_invite_InstantInviteUtils;
-          result = obj2.showInstantInviteActionSheet(channel, obj);
-        }
-        tmp = result;
-      }
-      return tmp;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : (function useInviteMembersCallback(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
+let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
+
+export function useInviteMembersCallback(channelId) {
+  let closure_0 = channelId;
+  const items = [channelId];
   return react.useCallback(() => {
-    const channel = ChannelStore.getChannel(closure_0);
+    const channel = ChannelStore.getChannel(channelId);
     let tmp = null;
     if (null != channel) {
       let result;
@@ -67,7 +36,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInviteM
     }
     return tmp;
   }, items);
-});
-let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useInviteMembersCallback.tsx");
-
-export const useInviteMembersCallback = tmp3;
+}

@@ -1,95 +1,21 @@
-// Module ID: 17102
-// Function ID: 17103
+// Module ID: 17156
+// Function ID: 17157
 // Name: FastAssetImage
-// Dependencies: [32, 19, 21, 558, 576, 6442, 5707, 2]
+// Dependencies: [32, 19, 21, 6449, 5712, 2]
+// Exports: default
 
-// Module 17102 (FastAssetImage)
+// Module 17156 (FastAssetImage)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
+import StoreUtils from "StoreUtils" /* 6449 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const StoreUtils = tmp(6442);
 let _slicedToArray = _slicedToArray_mod;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastAssetImage(applicationId) {
-  let asset;
-  let closure_129_0;
-  let first;
-  let style;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ asset, style } = applicationId);
-  applicationId = applicationId.applicationId;
-  [tmp5, closure_129_0] = react.useState();
-  _slicedToArray(react.useState(), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(nativeEvent) {
-      closure_1_0(nativeEvent.nativeEvent.layout.width);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  let application_id;
-  if (asset != null) {
-    application_id = asset.application_id;
-  }
-  if (application_id == null) {
-    application_id = applicationId;
-  }
-  if (cResult[1] === application_id) {
-    if (cResult[2] === asset) {
-      let tmp8;
-      let tmp9;
-      if (cResult[3] === tmp5) {
-        tmp8 = cResult[4];
-      }
-      if (cResult[5] !== tmp8) {
-        const obj2 = { uri: tmp8 };
-        cResult[5] = tmp8;
-        cResult[6] = obj2;
-        tmp9 = obj2;
-      } else {
-        tmp9 = cResult[6];
-      }
-      if (cResult[7] === tmp9) {
-        let tmp10;
-        if (cResult[8] === style) {
-          tmp10 = cResult[9];
-        }
-        return tmp10;
-      }
-      const tmp13 = jsx(FastImageDefault, { style, onLayout: first, source: tmp9 });
-      cResult[7] = tmp9;
-      cResult[8] = style;
-      cResult[9] = tmp13;
-      tmp10 = tmp13;
-    }
-  }
-  let str = "";
-  if (null != asset) {
-    str = "";
-    if (null != application_id) {
-      str = "";
-      if (null != tmp5) {
-        const tmpResult = StoreUtils;
-        str = tmpResult.getAssetURL(application_id, asset, tmp5);
-      }
-    }
-  }
-  cResult[1] = application_id;
-  cResult[2] = asset;
-  cResult[3] = tmp5;
-  cResult[4] = str;
-  tmp8 = str;
-}) : (function FastAssetImage(applicationId) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FastAssetImage.tsx");
+
+export default function FastAssetImage(applicationId) {
   let closure_3;
   let first;
   let tmp3;
@@ -125,8 +51,5 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FastAssetI
     }
     return { uri };
   }, items1);
-  return jsx(asset(first[6]), { style, onLayout, source });
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/FastAssetImage.tsx");
-
-export default tmp2;
+  return jsx(asset(first[4]), { style, onLayout, source });
+};

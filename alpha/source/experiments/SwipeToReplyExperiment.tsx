@@ -1,27 +1,21 @@
-// Module ID: 11297
-// Function ID: 11298
+// Module ID: 11500
+// Function ID: 11501
 // Name: SwipeToReplyExperiment
-// Dependencies: [11298, 558, 11299, 11300, 2]
+// Dependencies: [11501, 11502, 11503, 2]
+// Exports: useIsMessageSwipeActionsEnabled
 
-// Module 11297 (SwipeToReplyExperiment)
-import LaunchPadConstants from "LaunchPadConstants" /* 11298 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11299 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11300 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11500 (SwipeToReplyExperiment)
+import LaunchPadConstants from "LaunchPadConstants" /* 11501 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11502 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11503 */;
 import size from "module_2" /* 2 */;
 
 const LaunchPadTypes = LaunchPadConstants.LaunchPadTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMessageSwipeActionsEnabled() {
-  const tmp = useLaunchPadTypeDefault() === LaunchPadTypes.GESTURE_FULL;
-  const obj = SwipeToMemberListUtils;
-  const tmp2 = !tmp && !obj.useIsSwipeToMemberListEnabled();
-  return tmp2;
-}) : (function useIsMessageSwipeActionsEnabled() {
-  const tmp = useLaunchPadTypeDefault() === LaunchPadTypes.GESTURE_FULL;
-  const obj = SwipeToMemberListUtils;
-  const tmp2 = !tmp && !obj.useIsSwipeToMemberListEnabled();
-  return tmp2;
-});
 const result = size.fileFinishedImporting("experiments/SwipeToReplyExperiment.tsx");
 
-export const useIsMessageSwipeActionsEnabled = tmp2;
+export function useIsMessageSwipeActionsEnabled() {
+  const tmp = useLaunchPadTypeDefault() === LaunchPadTypes.GESTURE_FULL;
+  const obj = SwipeToMemberListUtils;
+  const tmp2 = !tmp && !obj.useIsSwipeToMemberListEnabled();
+  return tmp2;
+}

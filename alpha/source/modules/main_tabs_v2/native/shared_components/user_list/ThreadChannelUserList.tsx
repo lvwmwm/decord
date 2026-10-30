@@ -1,18 +1,18 @@
-// Module ID: 18665
-// Function ID: 18666
+// Module ID: 18724
+// Function ID: 18725
 // Name: ThreadChannelUserList
-// Dependencies: [19, 4857, 4917, 4879, 1389, 1084, 21, 7313, 504, 18666, 7204, 550, 7437, 5059, 8708, 10690, 2]
+// Dependencies: [19, 4858, 4921, 4880, 1384, 1072, 21, 7320, 504, 18725, 7211, 550, 7445, 5063, 8742, 10713, 2]
 
-// Module 18665 (ThreadChannelUserList)
+// Module 18724 (ThreadChannelUserList)
 import Fragment from "Fragment" /* 21 */;
 import throttleDefault from "throttle" /* 550 */;
-import Constants from "Constants" /* 1084 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
+import Constants from "Constants" /* 1072 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const RelationshipTypes = Constants.RelationshipTypes;

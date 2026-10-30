@@ -1,16 +1,16 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13578
+// Function ID: 13579
 // Name: CheckpointCharacterReferencedAssets
-// Dependencies: [1382, 13261, 13260, 13427, 2]
+// Dependencies: [1377, 13411, 13410, 13577, 2]
 // Exports: getCheckpointCharacterReferencedAssets, getCheckpointCharacterVisibleTextureNames
 
-// Module 13428 (CheckpointCharacterReferencedAssets)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13260 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13261 */;
+// Module 13578 (CheckpointCharacterReferencedAssets)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13410 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13411 */;
 import size from "module_2" /* 2 */;
 
-let set = new Set([1, 8]);
+let set = new Set([1]);
 const keys = Object.keys(CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET);
 let closure_3 = keys.map((name) => {
   let combined;
@@ -27,10 +27,10 @@ let closure_3 = keys.map((name) => {
 });
 const result = size.fileFinishedImporting("modules/checkpoint/character/CheckpointCharacterReferencedAssets.tsx");
 
-export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID, MobileLandscape) {
+export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID, arg2) {
   let closure_0 = arg0;
   let closure_1 = chapterID;
-  let closure_2 = MobileLandscape;
+  let closure_2 = arg2;
   set = new Set();
   const item = set.forEach((item) => {
     let name;
@@ -44,7 +44,7 @@ export function getCheckpointCharacterVisibleTextureNames(arg0, chapterID, Mobil
         }
       } else if (CheckpointCharacterTextureUtils.CheckpointCharacterTextureType.LAYOUT === type) {
         const layouts = role.layouts;
-        if (layouts.includes(MobileLandscape)) {
+        if (layouts.includes(closure_2)) {
           set.add(name);
         }
       } else if (CheckpointCharacterTextureUtils.CheckpointCharacterTextureType.ALWAYS === type) {
@@ -68,7 +68,7 @@ export function getCheckpointCharacterReferencedAssets(checkpointCharacterLoaded
       const tmpResult = CheckpointCharacterTextureUtils;
       url = tmpResult.getCheckpointCharacterTextureUrl(name, closure_1);
     } else {
-      url = tmp(13427).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
+      url = tmp(13577).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;
     }
     obj = { source: { uri: url } };
     obj[swapKey] = obj;

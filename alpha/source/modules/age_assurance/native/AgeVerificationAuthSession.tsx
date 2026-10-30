@@ -1,17 +1,15 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7981
+// Function ID: 7982
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 3, 570, 5733, 1381, 558, 576, 2]
-// Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession
+// Dependencies: [5, 3, 560, 5739, 1376, 2]
+// Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 7975 (AgeVerificationAuthSession)
+// Module 7981 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
-import react from "react" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_nativeDefault from "react-native" /* 5733 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import react_nativeDefault from "react-native" /* 5739 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +58,7 @@ let obj = function _openAgeVerificationAuthSession() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -134,29 +132,9 @@ let obj = function _openAgeVerificationAuthSession() {
 };
 let closure_4 = new LoggerDefault("AgeVerificationAuthSession");
 const tmp2 = new LoggerDefault("AgeVerificationAuthSession");
-let closure_5 = module_570.create(() => ({ isOpen: false }));
+let closure_5 = module_560.create(() => ({ isOpen: false }));
 let c6 = false;
 let c7 = null;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsAgeVerificationAuthSessionOpen() {
-  let first;
-  obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isOpen) {
-      return isOpen.isOpen;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_5(first);
-}) : (function useIsAgeVerificationAuthSessionOpen() {
-  return closure_5((isOpen) => isOpen.isOpen);
-});
-function getIsAgeVerificationAuthSessionOpen() {
-  return closure_5.getState().isOpen;
-}
 const result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerificationAuthSession.tsx");
 
 export function openAgeVerificationAuthSession() {
@@ -180,5 +158,9 @@ export function closeAgeVerificationAuthSession() {
 export function getIsAgeVerificationAuthSessionAwaitingResult() {
   return c6;
 }
-export const useIsAgeVerificationAuthSessionOpen = tmp3;
-export { getIsAgeVerificationAuthSessionOpen };
+export function useIsAgeVerificationAuthSessionOpen() {
+  return closure_5((isOpen) => isOpen.isOpen);
+}
+export function getIsAgeVerificationAuthSessionOpen() {
+  return closure_5.getState().isOpen;
+}

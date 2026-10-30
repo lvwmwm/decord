@@ -1,27 +1,37 @@
 // Module ID: 16071
 // Function ID: 16072
-// Dependencies: [16069, 16043]
+// Dependencies: [15986, 16072]
+// Exports: getSupportedNumberingSystems
 
 // Module 16071
-import _mod16043 from "module_16043" /* 16043 */;
-import _mod16069 from "module_16069" /* 16069 */;
+const require = globalThis.__r;
+let _require;
 
 
-export default function(arg0, arg1) {
-  let tmp3;
-  if (arguments.length < 2) {
-    const tmp7 = _mod16043[arg0];
-    let tmp8;
-    if (_mod16069(tmp7)) {
-      tmp8 = tmp7;
+export function getSupportedNumberingSystems(locale) {
+  _require = locale;
+  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
+  return numberingSystemNames.filter((item) => {
+    function isSupportedNumberingSystem(item, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const concat = "".concat;
+        const createMemoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat;
+        const combined = "".concat(str, "-u-nu-");
+        const memoizedNumberFormat = createMemoizedNumberFormat(combined.concat(item));
+        const obj3 = memoizedNumberFormat;
+        if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
+          if ("123" === obj3.format(123)) {
+            return false;
+          }
+        }
+        return true;
+      } catch (err) {
+      }
     }
-    tmp3 = tmp8;
-  } else {
-    tmp3 = _mod16043[arg0];
-    const tmp = require;
-    if (tmp3) {
-      tmp3 = tmp(16043)[arg0][arg1];
-    }
-  }
-  return tmp3;
-};
+    return isSupportedNumberingSystem(item, locale);
+  });
+}

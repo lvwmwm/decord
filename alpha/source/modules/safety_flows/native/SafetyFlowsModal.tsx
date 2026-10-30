@@ -1,140 +1,39 @@
-// Module ID: 19954
-// Function ID: 19955
+// Module ID: 20017
+// Function ID: 20018
 // Name: SafetyFlowsModal
-// Dependencies: [32, 19, 21, 558, 576, 19951, 19955, 19959, 6984, 19961, 19963, 19964, 19965, 19966, 19974, 19975, 7155, 19957, 13011, 19956, 2]
+// Dependencies: [32, 19, 21, 7163, 20014, 20018, 20022, 6992, 20024, 20026, 20027, 20028, 20029, 20037, 20038, 20020, 20019, 13163, 2]
+// Exports: default
 
-// Module 19954 (SafetyFlowsModal)
+// Module 20017 (SafetyFlowsModal)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import StepModal from "StepModal" /* 13011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-
-let tmp;
-const Navigator = tmp(7155);
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScreens() {
-  let tmp4;
-  let tmp5;
-  let obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      let obj2;
-      let obj3;
-      let obj5;
-      const obj = { [closure_1_0(closure_1_2[5]).SafetyFlowScreens.OVERVIEW]: obj2, [closure_1_0(closure_1_2[5]).SafetyFlowScreens.ENTER_EMAIL]: obj3 };
-      obj2 = {
-        headerLeft() {
-          return null;
-        },
-        headerShown: false,
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[6]), {});
-        }
-      };
-      obj3 = {
-        headerLeft() {
-          return null;
-        },
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[7]), {});
-        }
-      };
-      const obj4 = {
-        headerLeft: obj5.getHeaderBackButton(),
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[9]), {});
-        }
-      };
-      const VERIFY_EMAIL = require("types").SafetyFlowScreens.VERIFY_EMAIL;
-      obj[VERIFY_EMAIL] = obj4;
-      obj[require("types").SafetyFlowScreens.UPDATE_APP] = {
-        headerLeft() {
-          return null;
-        },
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[10]), {});
-        }
-      };
-      obj[require("types").SafetyFlowScreens.AGE_VERIFICATION] = {
-        headerLeft() {
-          return null;
-        },
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[11]), {});
-        }
-      };
-      obj[require("types").SafetyFlowScreens.PARENTAL_CONSENT_CONNECTION] = {
-        headerShown: false,
-        customNavbar() {
-          return closure_1_5(closure_1_0(closure_1_2[12]).ParentalConsentConnectionNavbar, {});
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[13]), {});
-        }
-      };
-      obj[require("types").SafetyFlowScreens.APP_STORE_PARENTAL_REVOCATION] = {
-        headerShown: false,
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[14]), {});
-        }
-      };
-      obj[require("types").SafetyFlowScreens.ERROR] = {
-        headerLeft() {
-          return null;
-        },
-        headerTitle() {
-          return null;
-        },
-        render() {
-          return closure_1_5(closure_1_1(closure_1_2[15]), {});
-        }
-      };
-      obj5 = require("NavigatorHeader");
-      return obj;
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp4 = fn;
-    tmp5 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = Navigator;
-  return tmpResult.useNavigatorScreens(tmp4, tmp5);
-}) : (function useScreens() {
-  let obj = Navigator;
-  return obj.useNavigatorScreens(() => {
+const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsModal.tsx");
+
+export default function SafetyFlowsModal(initialScreen) {
+  let setTask;
+  let task;
+  task = undefined;
+  setTask = undefined;
+  initialScreen = initialScreen.initialScreen;
+  [task, setTask] = react.useState(initialScreen.task);
+  let obj = task(7163);
+  const items = [task];
+  const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj2;
     let obj3;
     let obj5;
-    const obj = { [closure_1_0(closure_1_2[5]).SafetyFlowScreens.OVERVIEW]: obj2, [closure_1_0(closure_1_2[5]).SafetyFlowScreens.ENTER_EMAIL]: obj3 };
+    const obj = { [closure_1_0(closure_1_2[4]).SafetyFlowScreens.OVERVIEW]: obj2, [closure_1_0(closure_1_2[4]).SafetyFlowScreens.ENTER_EMAIL]: obj3 };
     obj2 = {
       headerLeft() {
         return null;
       },
       headerShown: false,
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[6]), {});
+        return closure_1_5(setTask(closure_1_2[5]), {});
       }
     };
     obj3 = {
@@ -145,7 +44,7 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         return null;
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[7]), {});
+        return closure_1_5(setTask(closure_1_2[6]), {});
       }
     };
     const obj4 = {
@@ -154,12 +53,12 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         return null;
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[9]), {});
+        return closure_1_5(setTask(closure_1_2[8]), {});
       }
     };
-    const VERIFY_EMAIL = require("types").SafetyFlowScreens.VERIFY_EMAIL;
+    const VERIFY_EMAIL = first(dependencyMap[4]).SafetyFlowScreens.VERIFY_EMAIL;
     obj[VERIFY_EMAIL] = obj4;
-    obj[require("types").SafetyFlowScreens.UPDATE_APP] = {
+    obj[first(dependencyMap[4]).SafetyFlowScreens.UPDATE_APP] = {
       headerLeft() {
         return null;
       },
@@ -167,10 +66,10 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         return null;
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[10]), {});
+        return closure_1_5(setTask(closure_1_2[9]), {});
       }
     };
-    obj[require("types").SafetyFlowScreens.AGE_VERIFICATION] = {
+    obj[first(dependencyMap[4]).SafetyFlowScreens.AGE_VERIFICATION] = {
       headerLeft() {
         return null;
       },
@@ -178,25 +77,25 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         return null;
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[11]), {});
+        return closure_1_5(setTask(closure_1_2[10]), {});
       }
     };
-    obj[require("types").SafetyFlowScreens.PARENTAL_CONSENT_CONNECTION] = {
+    obj[first(dependencyMap[4]).SafetyFlowScreens.PARENTAL_CONSENT_CONNECTION] = {
       headerShown: false,
       customNavbar() {
-        return closure_1_5(closure_1_0(closure_1_2[12]).ParentalConsentConnectionNavbar, {});
+        return closure_1_5(task(closure_1_2[11]).ParentalConsentConnectionNavbar, {});
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[13]), {});
+        return closure_1_5(setTask(closure_1_2[12]), {});
       }
     };
-    obj[require("types").SafetyFlowScreens.APP_STORE_PARENTAL_REVOCATION] = {
+    obj[first(dependencyMap[4]).SafetyFlowScreens.APP_STORE_PARENTAL_REVOCATION] = {
       headerShown: false,
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[14]), {});
+        return closure_1_5(setTask(closure_1_2[13]), {});
       }
     };
-    obj[require("types").SafetyFlowScreens.ERROR] = {
+    obj[first(dependencyMap[4]).SafetyFlowScreens.ERROR] = {
       headerLeft() {
         return null;
       },
@@ -204,155 +103,12 @@ let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScre
         return null;
       },
       render() {
-        return closure_1_5(closure_1_1(closure_1_2[15]), {});
+        return closure_1_5(setTask(closure_1_2[14]), {});
       }
     };
-    obj5 = require("NavigatorHeader");
+    obj5 = first(dependencyMap[7]);
     return obj;
   }, []);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlowsModal(initialScreen) {
-  let first;
-  let tmp6;
-  let tmp9;
-  let obj = react2;
-  const cResult = obj.c(15);
-  initialScreen = initialScreen.initialScreen;
-  [first, tmp6] = react.useState(initialScreen.task);
-  const tmp7 = closure_6();
-  let flow_context;
-  if (first != null) {
-    flow_context = first.flow_context;
-  }
-  if (null != flow_context) {
-    let tmp13;
-    const tasks = first.flow_context.tasks;
-    if (1 === tasks.length) {
-      let tmp12;
-      const _Symbol2 = Symbol;
-      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const items = [];
-        cResult[1] = items;
-        tmp12 = items;
-      } else {
-        tmp12 = cResult[1];
-      }
-      tmp9 = tmp12;
-    }
-    if (cResult[2] !== first.flow_context.tasks) {
-      let tmp15;
-      let tmp16;
-      const _Symbol3 = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        class A {
-          constructor(arg0) {
-            obj = closure_1_0(closure_1_2[17]);
-            return obj.getScreensForTaskType(initialScreen.task_type);
-          }
-        }
-        cResult[4] = A;
-        tmp15 = A;
-      } else {
-        class A {
-          constructor(arg0) {
-            obj = closure_1_0(closure_1_2[17]);
-            return obj.getScreensForTaskType(initialScreen.task_type);
-          }
-        }
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-        class R {
-          constructor(arg0) {
-            return null != initialScreen;
-          }
-        }
-        cResult[5] = R;
-        tmp16 = R;
-      } else {
-        class R {
-          constructor(arg0) {
-            return null != initialScreen;
-          }
-        }
-      }
-      const tasks1 = first.flow_context.tasks;
-      const mapped = tasks1.map(tmp15);
-      const found = mapped.filter(tmp16);
-      const flatResult = found.flat();
-      cResult[2] = first.flow_context.tasks;
-      cResult[3] = flatResult;
-      tmp13 = flatResult;
-    } else {
-      class R {
-        constructor(arg0) {
-          return null != initialScreen;
-        }
-      }
-    }
-    tmp9 = tmp13;
-  } else {
-    class R {
-      constructor(arg0) {
-        return null != initialScreen;
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor(arg0) {
-          return null != initialScreen;
-        }
-      }
-      cResult[0] = tmp10;
-      tmp9 = tmp10;
-    } else {
-      class R {
-        constructor(arg0) {
-          return null != initialScreen;
-        }
-      }
-    }
-  }
-  if (cResult[6] !== first) {
-    class R {
-      constructor(arg0) {
-        return null != initialScreen;
-      }
-    }
-    tmp19[0] = first;
-    tmp19[1] = tmp6;
-    cResult[6] = first;
-    cResult[7] = tmp19;
-  } else {
-    class R {
-      constructor(arg0) {
-        return null != initialScreen;
-      }
-    }
-  }
-  if (cResult[8] === initialScreen) {
-    class R {
-      constructor(arg0) {
-        return null != initialScreen;
-      }
-    }
-  }
-  cResult[8] = initialScreen;
-  cResult[9] = tmp7;
-  cResult[10] = tmp9;
-  cResult[11] = jsx(StepModal.StepModal, { initialRouteName: initialScreen, screens: tmp7, steps: tmp9 });
-  jsx(StepModal.StepModal, { initialRouteName: initialScreen, screens: tmp7, steps: tmp9 });
-}) : (function SafetyFlowsModal(initialScreen) {
-  let setTask;
-  let task;
-  task = undefined;
-  setTask = undefined;
-  initialScreen = initialScreen.initialScreen;
-  [task, setTask] = react.useState(initialScreen.task);
-  const items = [task];
-  const tmp3 = closure_6();
   const items1 = [task];
   const memo = react.useMemo(() => {
     let flow_context;
@@ -367,7 +123,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlow
       if (1 !== tasks.length) {
         const tasks1 = tmp.flow_context.tasks;
         const mapped = tasks1.map((task_type) => {
-          const obj = task(closure_1_2[17]);
+          const obj = task(closure_1_2[15]);
           return obj.getScreensForTaskType(task_type.task_type);
         });
         const found = mapped.filter((item) => null != item);
@@ -379,9 +135,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SafetyFlow
     }
   }, items);
   const memo1 = react.useMemo(() => ({ task, setTask }), items1);
-  const Provider = task(19956).SafetyFlowTaskContext.Provider;
+  const Provider = task(20019).SafetyFlowTaskContext.Provider;
   return <Provider value={memo1}>{null}</Provider>;
-});
-const result = size.fileFinishedImporting("modules/safety_flows/native/SafetyFlowsModal.tsx");
-
-export default tmp2;
+};

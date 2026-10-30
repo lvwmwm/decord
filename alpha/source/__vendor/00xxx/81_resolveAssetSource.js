@@ -11,7 +11,7 @@ import pickScale from "pickScale" /* 86 */;
 
 let c4, first, scriptURL;
 
-function resolveAssetSource(value2) {
+function resolveAssetSource(channelIcon) {
   function getDevServerURL() {
     let tmp = first;
     if (undefined === first) {
@@ -57,10 +57,10 @@ function resolveAssetSource(value2) {
     }
     return tmp;
   }
-  if (null != value2) {
-    if (typeof value2 !== "object") {
+  if (null != channelIcon) {
+    if (typeof channelIcon !== "object") {
       const obj3 = AssetRegistry;
-      const assetByID = obj3.getAssetByID(value2);
+      const assetByID = obj3.getAssetByID(channelIcon);
       const tmp10 = require;
       if (assetByID) {
         const _default = tmp10(85).default;
@@ -84,7 +84,7 @@ function resolveAssetSource(value2) {
       }
     }
   }
-  return value2;
+  return channelIcon;
 }
 let items = [];
 resolveAssetSource.pickScale = pickScale.pickScale;

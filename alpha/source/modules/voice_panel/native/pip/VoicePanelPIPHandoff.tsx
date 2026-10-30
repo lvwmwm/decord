@@ -1,60 +1,15 @@
-// Module ID: 10982
-// Function ID: 10983
+// Module ID: 11212
+// Function ID: 11213
 // Name: VoicePanelPIPHandoff
-// Dependencies: [19, 558, 576, 2]
+// Dependencies: [19, 2]
+// Exports: usePIPCardsSettled, usePIPPanelLayoutCommitted
 
-// Module 10982 (VoicePanelPIPHandoff)
-import react2 from "react" /* 576 */;
+// Module 11212 (VoicePanelPIPHandoff)
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPCardsSettled(subscribe) {
-  let tmp2;
-  let closure_0 = subscribe;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== subscribe) {
-    const fn = function n() {
-      return closure_0.arePIPCardsSettled();
-    };
-    cResult[0] = subscribe;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return react.useSyncExternalStore(subscribe.subscribe, tmp2);
-}) : (function usePIPCardsSettled(subscribe) {
-  let closure_0 = subscribe;
-  const items = [subscribe];
-  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(() => closure_0.arePIPCardsSettled(), items));
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePIPPanelLayoutCommitted(subscribe) {
-  let tmp2;
-  let closure_0 = subscribe;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== subscribe) {
-    const fn = function n() {
-      return panelLayoutCommitted.isPanelLayoutCommitted();
-    };
-    cResult[0] = subscribe;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return react.useSyncExternalStore(subscribe.subscribe, tmp2);
-}) : (function usePIPPanelLayoutCommitted(subscribe) {
-  let closure_0 = subscribe;
-  const items = [subscribe];
-  return react.useSyncExternalStore(subscribe.subscribe, react.useCallback(() => panelLayoutCommitted.isPanelLayoutCommitted(), items));
-});
 let result = size.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPHandoff.tsx");
 class VoicePanelPIPHandoff {
   constructor() {
@@ -151,5 +106,13 @@ class VoicePanelPIPHandoff {
 const prototype = VoicePanelPIPHandoff.prototype;
 
 export default VoicePanelPIPHandoff;
-export const usePIPCardsSettled = tmp2;
-export const usePIPPanelLayoutCommitted = tmp3;
+export function usePIPCardsSettled(pipHandoff) {
+  let closure_0 = pipHandoff;
+  const items = [pipHandoff];
+  return react.useSyncExternalStore(pipHandoff.subscribe, react.useCallback(() => closure_0.arePIPCardsSettled(), items));
+}
+export function usePIPPanelLayoutCommitted(pipHandoff) {
+  let closure_0 = pipHandoff;
+  const items = [pipHandoff];
+  return react.useSyncExternalStore(pipHandoff.subscribe, react.useCallback(() => panelLayoutCommitted.isPanelLayoutCommitted(), items));
+}

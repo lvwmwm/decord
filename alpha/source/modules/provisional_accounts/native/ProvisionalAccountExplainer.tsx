@@ -1,23 +1,20 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14150
+// Function ID: 14151
 // Name: ProvisionalAccountExplainer
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 14019, 14020, 5271, 1125, 7072, 6965, 7363, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 14151, 14152, 6971, 5619, 1114, 7080, 7370, 2]
+// Exports: ChatProvisionalAccountExplainerCard, UserProfileProvisionalAccountExplainerCard
 
-// Module 14018 (ProvisionalAccountExplainer)
+// Module 14150 (ProvisionalAccountExplainer)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Card_Card from "Card/Card" /* 6965 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7072 */;
-import UserProfileCardDefault from "UserProfileCard" /* 7363 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14019 */;
+import nativeDefault from "native" /* 575 */;
+import UserProfileCardDefault from "UserProfileCard" /* 7370 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14151 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
+
+let importDefault;
 
 let hasOwnProperty;
 let metroRequire;
@@ -29,236 +26,54 @@ let closure_7 = createStyles.createStyles(() => {
   ({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 });
   return obj;
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNativeProvisionalAccountExplainerText(textVariant) {
-  let iconSize;
+const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountExplainer.tsx");
+
+export function ChatProvisionalAccountExplainerCard(iconSize) {
+  let intl;
+  let items1;
+  let items2;
+  let items3;
+  let style;
   let userId;
-  let obj = iconSize(576);
-  const cResult = obj.c(6);
-  const tmp = iconSize;
-  ({ userId, iconSize } = textVariant);
-  textVariant = textVariant.textVariant;
-  if (cResult[0] === iconSize) {
-    let tmp4;
-    if (cResult[1] === textVariant) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === tmp4) {
-      let tmp5;
-      if (cResult[4] === userId) {
-        tmp5 = cResult[5];
-      }
-      const tmpResult = tmp(14020);
-      return tmpResult.useProvisionalAccountExplanationText(tmp5);
-    }
-    const obj2 = { userId, renderApplicationName: tmp4 };
-    cResult[3] = tmp4;
-    cResult[4] = userId;
-    cResult[5] = obj2;
-    tmp5 = obj2;
-  }
-  const fn = function n(application) {
-    const obj = { application, textVariant, iconSize };
-    return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
-  };
-  cResult[0] = iconSize;
-  cResult[1] = textVariant;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : (function useNativeProvisionalAccountExplainerText(iconSize) {
   iconSize = iconSize.iconSize;
-  const textVariant = iconSize.textVariant;
-  const items = [iconSize, textVariant];
-  const userId = iconSize.userId;
-  const renderApplicationName = react.useCallback((application) => {
+  ({ style, userId } = iconSize);
+  const tmp = closure_7();
+  let c1 = "text-sm/semibold";
+  const items = [iconSize, "text-sm/semibold"];
+  const callback = react.useCallback((application) => {
     const obj = { application, textVariant, iconSize };
     return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
   }, items);
-  let obj = iconSize(14020);
-  return obj.useProvisionalAccountExplanationText({ userId, renderApplicationName });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatProvisionalAccountExplainerCard(arg0) {
-  let iconSize;
+  const obj = iconSize(14152);
+  const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
+  const obj2 = { style: items1, children: items3 };
+  items1 = [tmp.chatContainer, style];
+  const obj3 = { style: tmp.header, children: items2 };
+  const Card = iconSize(6971).Card;
+  const obj4 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(iconSize(1114).t.Iyka0U) };
+  const Text = iconSize(5619).Text;
+  intl = iconSize(1114).intl;
+  items2 = [closure_5(Text, obj4), closure_5(iconSize(7080).CircleErrorIcon, { size: "xs", color: "text-default" })];
+  items3 = [closure_6(View, obj3), closure_5(iconSize(5619).Text, { variant: "text-sm/normal", color: "text-default", children: provisionalAccountExplanationText })];
+  return closure_6(Card, obj2);
+}
+export function UserProfileProvisionalAccountExplainerCard(iconSize) {
   let intl;
-  let items;
-  let items1;
   let style;
+  let textVariant;
   let userId;
-  const obj = react2;
-  const cResult = obj.c(16);
-  ({ style, userId, iconSize } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] === iconSize) {
-    let tmp5;
-    if (cResult[1] === userId) {
-      tmp5 = cResult[2];
-    }
-    const tmp7 = closure_8(tmp5);
-    if (cResult[3] === style) {
-      let tmp8;
-      let tmp11;
-      let tmp10;
-      let tmp15;
-      let tmp19;
-      if (cResult[4] === tmp4.chatContainer) {
-        tmp8 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl2.t.Iyka0U) };
-        const Text = tmp(5271).Text;
-        intl = tmp(1125).intl;
-        const tmp13 = hasOwnProperty(Text, obj2);
-        const tmp14 = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" });
-        cResult[6] = tmp13;
-        cResult[7] = tmp14;
-        tmp11 = tmp14;
-        tmp10 = tmp13;
-      } else {
-        tmp10 = cResult[6];
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] !== tmp4.header) {
-        const obj3 = { style: tmp4.header, children: items };
-        items = [tmp10, tmp11];
-        const tmp18 = metroRequire(View, obj3);
-        cResult[8] = tmp4.header;
-        cResult[9] = tmp18;
-        tmp15 = tmp18;
-      } else {
-        tmp15 = cResult[9];
-      }
-      if (cResult[10] !== tmp7) {
-        const obj4 = { variant: "text-sm/normal", color: "text-default", children: tmp7 };
-        const tmp21 = hasOwnProperty(Text_Text.Text, obj4);
-        cResult[10] = tmp7;
-        cResult[11] = tmp21;
-        tmp19 = tmp21;
-      } else {
-        tmp19 = cResult[11];
-      }
-      if (cResult[12] === tmp8) {
-        if (cResult[13] === tmp15) {
-          let tmp22;
-          if (cResult[14] === tmp19) {
-            tmp22 = cResult[15];
-          }
-          return tmp22;
-        }
-      }
-      const obj5 = { style: tmp8, children: items1 };
-      items1 = [tmp15, tmp19];
-      const tmp24 = metroRequire(Card_Card.Card, obj5);
-      cResult[12] = tmp8;
-      cResult[13] = tmp15;
-      cResult[14] = tmp19;
-      cResult[15] = tmp24;
-      tmp22 = tmp24;
-    }
-    const items2 = [tmp4.chatContainer, style];
-    cResult[3] = style;
-    cResult[4] = tmp4.chatContainer;
-    cResult[5] = items2;
-    tmp8 = items2;
-  }
-  const obj6 = { userId, iconSize, textVariant: "text-sm/semibold" };
-  cResult[0] = iconSize;
-  cResult[1] = userId;
-  cResult[2] = obj6;
-  tmp5 = obj6;
-}) : (function ChatProvisionalAccountExplainerCard(arg0) {
-  let iconSize;
-  let intl;
-  let items;
-  let items1;
-  let items2;
-  let style;
-  let userId;
-  ({ style, userId, iconSize } = arg0);
-  const tmp = closure_7();
-  const obj = { style: items, children: items2 };
-  items = [tmp.chatContainer, style];
-  const obj2 = { style: tmp.header, children: items1 };
-  const tmp2 = closure_8({ userId, iconSize, textVariant: "text-sm/semibold" });
-  const Card = Card_Card.Card;
-  const obj3 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(intl2.t.Iyka0U) };
-  const Text = Text_Text.Text;
-  intl = intl2.intl;
-  items1 = [hasOwnProperty(Text, obj3), hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" })];
-  items2 = [metroRequire(View, obj2), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", children: tmp2 })];
-  return metroRequire(Card, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileProvisionalAccountExplainerCard(arg0) {
-  let iconSize;
-  let style;
-  let userId;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ style, userId, iconSize } = arg0);
-  if (cResult[0] === iconSize) {
-    let tmp4;
-    let tmp9;
-    let tmp8;
-    let tmp13;
-    if (cResult[1] === userId) {
-      tmp4 = cResult[2];
-    }
-    const tmp6 = closure_8(tmp4);
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl2.t.Iyka0U);
-      const tmp12 = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" });
-      cResult[3] = stringResult;
-      cResult[4] = tmp12;
-      tmp9 = tmp12;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[3];
-      tmp9 = cResult[4];
-    }
-    if (cResult[5] !== tmp6) {
-      const obj2 = { variant: "text-md/normal", color: "text-default", children: tmp6 };
-      const tmp15 = hasOwnProperty(Text_Text.Text, obj2);
-      cResult[5] = tmp6;
-      cResult[6] = tmp15;
-      tmp13 = tmp15;
-    } else {
-      tmp13 = cResult[6];
-    }
-    if (cResult[7] === style) {
-      let tmp16;
-      if (cResult[8] === tmp13) {
-        tmp16 = cResult[9];
-      }
-      return tmp16;
-    }
-    const obj3 = { style, title: tmp8, titleIcon: tmp9, children: tmp13 };
-    const tmp19 = hasOwnProperty(UserProfileCardDefault, obj3);
-    cResult[7] = style;
-    cResult[8] = tmp13;
-    cResult[9] = tmp19;
-    tmp16 = tmp19;
-  }
-  const obj4 = { userId, iconSize, textVariant: "text-md/semibold" };
-  cResult[0] = iconSize;
-  cResult[1] = userId;
-  cResult[2] = obj4;
-  tmp4 = obj4;
-}) : (function UserProfileProvisionalAccountExplainerCard(userId) {
-  let intl;
-  let tmp;
-  const style = userId.style;
-  const obj = { userId: userId.userId, iconSize: userId.iconSize, textVariant: "text-md/semibold" };
-  const obj2 = { style, title: intl.string(intl2.t.Iyka0U), titleIcon: hasOwnProperty(CircleErrorIcon.CircleErrorIcon, { size: "xs", color: "text-default" }), children: hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: "text-default", children: tmp }) };
-  tmp = closure_8(obj);
-  const tmp2 = UserProfileCardDefault;
-  intl = intl2.intl;
-  return hasOwnProperty(tmp2, obj2);
-});
-const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountExplainer.tsx");
-
-export const ChatProvisionalAccountExplainerCard = tmp3;
-export const UserProfileProvisionalAccountExplainerCard = tmp4;
+  iconSize = iconSize.iconSize;
+  importDefault = "text-md/semibold";
+  const items = [iconSize, "text-md/semibold"];
+  ({ style, userId } = iconSize);
+  const callback = react.useCallback((application) => {
+    const obj = { application, textVariant, iconSize };
+    return hasOwnProperty(ApplicationIconAndNameDefault, obj, application.id);
+  }, items);
+  let obj = iconSize(14152);
+  const provisionalAccountExplanationText = obj.useProvisionalAccountExplanationText({ userId, renderApplicationName: callback });
+  const obj2 = { style, title: intl.string(iconSize(1114).t.Iyka0U), titleIcon: closure_5(iconSize(7080).CircleErrorIcon, { size: "xs", color: "text-default" }), children: closure_5(iconSize(5619).Text, { variant: "text-md/normal", color: "text-default", children: provisionalAccountExplanationText }) };
+  const tmp3 = UserProfileCardDefault;
+  intl = iconSize(1114).intl;
+  return closure_5(tmp3, obj2);
+}

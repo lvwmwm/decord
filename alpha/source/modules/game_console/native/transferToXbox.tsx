@@ -1,14 +1,14 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 11952
+// Function ID: 11953
 // Name: transferToXbox
-// Dependencies: [5, 19, 17, 1084, 21, 11751, 11747, 11760, 5947, 11761, 2000, 11754, 7887, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 11944, 11940, 11953, 5954, 11954, 1995, 11947, 7893, 2]
 // Exports: default
 
-// Module 11759 (transferToXbox)
+// Module 11952 (transferToXbox)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11751 */;
+import Constants from "Constants" /* 1072 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11944 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _transferToXbox() {
           obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ let obj = function _transferToXbox() {
             obj5.stopOwnStream(false);
             closure_130_5.openURL(closure_2);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else {
             c4 = 3;
             const obj17 = {

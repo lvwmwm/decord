@@ -1,72 +1,35 @@
-// Module ID: 13622
-// Function ID: 13623
+// Module ID: 13770
+// Function ID: 13771
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 558, 576, 5304, 1381, 1125, 2]
+// Dependencies: [19, 17, 21, 5269, 1376, 1114, 2]
 
-// Module 13622 (ChatInputAccessibilityDivider)
+// Module 13770 (ChatInputAccessibilityDivider)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5304 */;
+import intl2 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5269 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 ({ StyleSheet: c2, View: c3 } = react_native);
 const jsx = Fragment.jsx;
-let c5 = "chat-input-accessibility-divider";
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputAccessibilityDivider() {
-  const obj = react2;
-  const cResult = obj.c(2);
-  let tmp4 = null;
-  const obj2 = useIsScreenReaderEnabled;
-  if (obj2.useIsScreenReaderEnabled()) {
-    tmp4 = null;
-    const tmpResult = PlatformUtils;
-    if (!tmpResult.isAndroid()) {
-      let first;
-      let tmp8;
-      const _Symbol = Symbol;
-      if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1125).intl;
-        const stringResult = intl.string(intl2.t["uKZtC/"]);
-        cResult[0] = stringResult;
-        first = stringResult;
-      } else {
-        first = cResult[0];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-        const items = [React2.absoluteFill, { height: 1 }];
-        const tmp13 = <_false nativeID={c5} accessible accessibilityLabel={first} accessibilityRole="header" style={items} />;
-        cResult[1] = tmp13;
-        tmp8 = tmp13;
-      } else {
-        tmp8 = cResult[1];
-      }
-      tmp4 = tmp8;
-    }
-  }
-  return tmp4;
-}) : (function ChatInputAccessibilityDivider() {
+const memoResult = react.memo(function ChatInputAccessibilityDivider() {
   let tmp3 = null;
   const obj = useIsScreenReaderEnabled;
   if (obj.useIsScreenReaderEnabled()) {
     tmp3 = null;
     const tmpResult = PlatformUtils;
     if (!tmpResult.isAndroid()) {
-      const intl = tmp(1125).intl;
-      const items = [React2.absoluteFill, { height: 1 }];
-      tmp3 = <_false nativeID={c5} accessible accessibilityLabel={intl.string(intl2.t["uKZtC/"])} accessibilityRole="header" style={items} />;
+      const intl = tmp(1114).intl;
+      const items = [absoluteFill.absoluteFill, { height: 1 }];
+      tmp3 = <_false nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={intl.string(intl2.t["uKZtC/"])} accessibilityRole="header" style={items} />;
     }
   }
   return tmp3;
-}));
+});
 const result = size.fileFinishedImporting("modules/chat_input/native/accessories/ChatInputAccessibilityDivider.tsx");
 
 export const ChatInputAccessibilityDivider = memoResult;

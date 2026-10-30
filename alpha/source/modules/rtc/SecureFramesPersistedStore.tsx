@@ -1,11 +1,11 @@
-// Module ID: 5770
-// Function ID: 5771
+// Module ID: 5777
+// Function ID: 5778
 // Name: SecureFramesPersistedStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 5770 (SecureFramesPersistedStore)
+// Module 5777 (SecureFramesPersistedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let items = [];

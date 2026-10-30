@@ -1,35 +1,35 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 12977
+// Function ID: 12978
 // Name: ConjureDebugLabels
-// Dependencies: [1125, 3864, 12827, 2]
+// Dependencies: [1114, 3865, 12978, 2]
 // Exports: analyticsMemoryValue, analyticsRoleLabel, analyticsUnavailableReason, debugEnvLabel, debugLogFilterLabel, debugYesNo, filterDebugLogs, forceCompactionStatus, isRenderableLog, sandboxRestartStatus
 
-// Module 12826 (ConjureDebugLabels)
-import intl6 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12827 */;
+// Module 12977 (ConjureDebugLabels)
+import intl6 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12978 */;
 import size from "module_2" /* 2 */;
 
 let log;
 
 let closure_3 = {
   db() {
-    return _modDef3864["7l+DFG"];
+    return _modDef3865["7l+DFG"];
   },
   db_preview() {
-    return _modDef3864.FAuffi;
+    return _modDef3865.FAuffi;
   },
   runtime() {
-    return _modDef3864["Gkl+ab"];
+    return _modDef3865["Gkl+ab"];
   },
   runtime_preview() {
-    return _modDef3864.ynpJzv;
+    return _modDef3865.ynpJzv;
   },
   bot() {
-    return _modDef3864["5/i0cj"];
+    return _modDef3865["5/i0cj"];
   },
   bot_preview() {
-    return _modDef3864.m2jsnw;
+    return _modDef3865.m2jsnw;
   }
 };
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugLabels.tsx");
@@ -39,16 +39,16 @@ export function debugEnvLabel(env) {
   const intl = intl6.intl;
   const string = intl.string;
   if ("preview" === env) {
-    eiAi57 = _modDef3864["2yLYlG"];
+    eiAi57 = _modDef3865["2yLYlG"];
   } else {
-    eiAi57 = _modDef3864.eiAi57;
+    eiAi57 = _modDef3865.eiAi57;
   }
   return string(eiAi57);
 }
 export function debugYesNo(connected) {
   const intl = intl6.intl;
   const string = intl.string;
-  const tmp = _modDef3864;
+  const tmp = _modDef3865;
   return string(connected ? tmp.Wv025I : tmp["7/lsFY"]);
 }
 export const DEBUG_LOG_FILTERS = ["all", "preview", "stable", "web"];
@@ -58,19 +58,19 @@ export function debugLogFilterLabel(id) {
     if ("stable" !== id) {
       if ("web" === id) {
         const intl2 = intl6.intl;
-        return intl2.string(_modDef3864.IVzfVV);
+        return intl2.string(_modDef3865.IVzfVV);
       } else {
         const intl = intl6.intl;
-        return intl.string(_modDef3864["Um1/8L"]);
+        return intl.string(_modDef3865["Um1/8L"]);
       }
     }
   }
   const intl3 = intl6.intl;
   const string = intl3.string;
   if ("preview" === id) {
-    eiAi57 = _modDef3864["2yLYlG"];
+    eiAi57 = _modDef3865["2yLYlG"];
   } else {
-    eiAi57 = _modDef3864.eiAi57;
+    eiAi57 = _modDef3865.eiAi57;
   }
   return string(eiAi57);
 }
@@ -139,27 +139,27 @@ export function filterDebugLogs(stateFromStores, arg1, first1) {
 export function forceCompactionStatus(forceState) {
   if ("idle" === forceState) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3864.wox6Ev);
+    return intl4.string(_modDef3865.wox6Ev);
   } else if ("pending" === forceState) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3864.OcPHQ1);
+    return intl3.string(_modDef3865.OcPHQ1);
   } else {
     const obj3 = ConjureDebugFormat;
     const formatObservedAtResult = obj3.formatObservedAt(forceState.observedAt);
     if ("compacted" === forceState.outcome) {
-      const intl2 = tmp12(1125).intl;
+      const intl2 = tmp12(1114).intl;
       const obj2 = { time: formatObservedAtResult };
-      return intl2.formatToPlainString(_modDef3864.BhRjZZ, obj2);
+      return intl2.formatToPlainString(_modDef3865.BhRjZZ, obj2);
     } else {
       let ZoUSVK;
       if ("declined" === forceState.outcome) {
-        ZoUSVK = _modDef3864["o/FKzF"];
+        ZoUSVK = _modDef3865["o/FKzF"];
       } else if ("busy" === forceState.outcome) {
-        ZoUSVK = _modDef3864.YZb4hK;
+        ZoUSVK = _modDef3865.YZb4hK;
       } else {
-        ZoUSVK = _modDef3864.ZoUSVK;
+        ZoUSVK = _modDef3865.ZoUSVK;
       }
-      const intl = tmp12(1125).intl;
+      const intl = tmp12(1114).intl;
       let str2 = forceState.reason;
       const formatToPlainString = intl.formatToPlainString;
       if (str2 == null) {
@@ -174,22 +174,22 @@ export function analyticsUnavailableReason(analytics) {
   const reason = analytics.reason;
   if ("local" === reason) {
     const intl5 = intl6.intl;
-    return intl5.string(_modDef3864.mUeKML);
+    return intl5.string(_modDef3865.mUeKML);
   } else if ("unconfigured" === reason) {
     const intl4 = intl6.intl;
-    return intl4.string(_modDef3864.bGefb5);
+    return intl4.string(_modDef3865.bGefb5);
   } else if ("unauthorized" === reason) {
     const intl3 = intl6.intl;
-    return intl3.string(_modDef3864.KLx6Bb);
+    return intl3.string(_modDef3865.KLx6Bb);
   } else {
     let formatToPlainStringResult;
     if (null != analytics.detail) {
       const intl2 = intl6.intl;
       const obj = { detail: analytics.detail };
-      formatToPlainStringResult = intl2.formatToPlainString(_modDef3864.t09Q6q, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(_modDef3865.t09Q6q, obj);
     } else {
       const intl = intl6.intl;
-      formatToPlainStringResult = intl.string(_modDef3864["t+tG59"]);
+      formatToPlainStringResult = intl.string(_modDef3865["t+tG59"]);
     }
     return formatToPlainStringResult;
   }
@@ -201,7 +201,7 @@ export function analyticsMemoryValue(found) {
   if (null != found.memory_p50_bytes) {
     const intl = intl6.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const prop = _modDef3864["XO/bN4"];
+    const prop = _modDef3865["XO/bN4"];
     let num = found.memory_p50_bytes;
     const formatBytes = ConjureDebugFormat.formatBytes;
     ConjureDebugFormat;
@@ -210,7 +210,7 @@ export function analyticsMemoryValue(found) {
     }
     const obj = { p50: formatBytes(num), p999: formatBytes2(num2) };
     num2 = found.memory_p999_bytes;
-    formatBytes2 = tmp2(12827).formatBytes;
+    formatBytes2 = tmp2(12978).formatBytes;
     ConjureDebugFormat;
     if (num2 == null) {
       num2 = found.memory_p50_bytes;
@@ -239,10 +239,10 @@ export function analyticsRoleLabel(role) {
 export function sandboxRestartStatus(restartState) {
   if ("idle" === restartState) {
     const intl2 = intl6.intl;
-    return intl2.string(_modDef3864.mlok8D);
+    return intl2.string(_modDef3865.mlok8D);
   } else if ("pending" === restartState) {
     const intl = intl6.intl;
-    return intl.string(_modDef3864["1ugSyK"]);
+    return intl.string(_modDef3865["1ugSyK"]);
   } else {
     let FiVRoT;
     const obj2 = ConjureDebugFormat;
@@ -250,9 +250,9 @@ export function sandboxRestartStatus(restartState) {
     const intl3 = intl6.intl;
     const formatToPlainString = intl3.formatToPlainString;
     if ("restarted" === restartState.outcome) {
-      FiVRoT = _modDef3864["76mfqO"];
+      FiVRoT = _modDef3865["76mfqO"];
     } else {
-      FiVRoT = _modDef3864.FiVRoT;
+      FiVRoT = _modDef3865.FiVRoT;
     }
     let str = restartState.reason;
     if (str == null) {

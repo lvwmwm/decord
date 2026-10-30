@@ -1,12 +1,12 @@
-// Module ID: 14312
-// Function ID: 14313
+// Module ID: 14342
+// Function ID: 14343
 // Name: openAppChannelToChat
-// Dependencies: [5745, 9782, 2]
+// Dependencies: [5751, 9808, 2]
 // Exports: default
 
-// Module 14312 (openAppChannelToChat)
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9782 */;
+// Module 14342 (openAppChannelToChat)
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9808 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_channels/native/openAppChannelToChat.tsx");

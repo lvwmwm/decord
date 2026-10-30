@@ -1,37 +1,33 @@
-// Module ID: 13963
-// Function ID: 13964
+// Module ID: 14095
+// Function ID: 14096
 // Name: GuildPowerupsPerkCard
-// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 5242, 5012, 7135, 13913, 5295, 5271, 13914, 1199, 1125, 13959, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5248, 5016, 7143, 14092, 14047, 5582, 5619, 14048, 1188, 1114, 2]
+// Exports: default
 
-// Module 13963 (GuildPowerupsPerkCard)
+// Module 14095 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import shared from "shared" /* 5012 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7135 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13913 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13959 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import shared from "shared" /* 5016 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14047 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14092 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let metroImportDefault;
-let metroRequire;
+let closure_4;
+let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
 let rect;
-let closure_3 = ["title", "description", "imageUrl", "isImageAnimated", "riveComponent", "style", "onPress", "status", "badge"];
 const View = react_native.View;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, card: { padding: 0, overflow: "hidden" }, contentContainer: obj3, imageContainer: { width: "100%", height: 160 }, gradient: { position: "absolute", left: 0, right: 0, top: 0, height: "100%" }, headerContainer: obj4, badge: rect };
 obj2 = { marginHorizontal: nativeDefault.space.PX_16 };
@@ -39,309 +35,10 @@ createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_16 };
 obj4 = { gap: nativeDefault.space.PX_4 };
 rect = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
-let closure_8 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsPerkCard(arg0) {
-  let badge;
-  let description;
-  let imageUrl;
-  let intl;
-  let intl2;
-  let isImageAnimated;
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let onPress;
-  let riveComponent;
-  let status;
-  let style;
-  let title;
-  let tmp10;
-  let tmp11;
-  let tmp12;
-  let tmp13;
-  let tmp21;
-  let tmp24;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(62);
-  if (cResult[0] !== arg0) {
-    ({ title, description, imageUrl, isImageAnimated, riveComponent, style, onPress, status, badge } = arg0);
-    const tmp16 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = badge;
-    cResult[2] = description;
-    cResult[3] = tmp16;
-    cResult[4] = imageUrl;
-    cResult[5] = onPress;
-    cResult[6] = riveComponent;
-    cResult[7] = status;
-    cResult[8] = style;
-    cResult[9] = isImageAnimated;
-    cResult[10] = title;
-    tmp13 = title;
-    tmp12 = isImageAnimated;
-    tmp11 = style;
-    tmp10 = status;
-    tmp9 = riveComponent;
-    tmp8 = onPress;
-    tmp7 = imageUrl;
-    tmp6 = tmp16;
-    tmp5 = description;
-    tmp4 = badge;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-    tmp8 = cResult[5];
-    tmp9 = cResult[6];
-    tmp10 = cResult[7];
-    tmp11 = cResult[8];
-    tmp12 = cResult[9];
-    tmp13 = cResult[10];
-  }
-  const tmp18 = closure_8();
-  const tmp20 = useThemeDefault();
-  if (cResult[11] !== tmp20) {
-    const tmpResult = shared;
-    const isThemeDarkResult = tmpResult.isThemeDark(tmp20);
-    cResult[11] = tmp20;
-    cResult[12] = isThemeDarkResult;
-    tmp21 = isThemeDarkResult;
-  } else {
-    tmp21 = cResult[12];
-  }
-  const tmpResult2 = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = tmpResult2.useManaTypeConsolidationExperiment("GuildPowerupsPerkCard");
-  if (cResult[13] !== tmp21) {
-    const tmp25 = tmp21 ? ["#0f101100", "#0f101166"] : ["#0f101100", "#0f10111a"];
-    cResult[13] = tmp21;
-    cResult[14] = tmp25;
-    tmp24 = tmp25;
-  } else {
-    tmp24 = cResult[14];
-  }
-  if (cResult[15] === tmp11) {
-    let tmp26;
-    if (cResult[16] === tmp18.container) {
-      tmp26 = cResult[17];
-    }
-    if (cResult[18] === tmp7) {
-      if (cResult[19] === (undefined === tmp12 || tmp12)) {
-        let tmp27;
-        if (cResult[20] === tmp9) {
-          tmp27 = cResult[21];
-        }
-        if (cResult[22] === tmp24) {
-          let tmp32;
-          if (cResult[23] === tmp18.gradient) {
-            tmp32 = cResult[24];
-          }
-          if (cResult[25] === tmp18.imageContainer) {
-            if (cResult[26] === tmp27) {
-              let tmp35;
-              if (cResult[27] === tmp32) {
-                tmp35 = cResult[28];
-              }
-              let str2;
-              if (manaTypeConsolidationExperiment) {
-                str2 = "text-strong";
-              }
-              let str3 = "heading-md/bold";
-              if (manaTypeConsolidationExperiment) {
-                str3 = "experimental/heading-md/semibold";
-              }
-              if (cResult[29] === str2) {
-                if (cResult[30] === str3) {
-                  let tmp39;
-                  if (cResult[31] === tmp13) {
-                    tmp39 = cResult[32];
-                  }
-                  let str4 = "text-sm/medium";
-                  if (manaTypeConsolidationExperiment) {
-                    str4 = "experimental/body-sm/normal";
-                  }
-                  if (cResult[33] === tmp5) {
-                    let tmp42;
-                    if (cResult[34] === str4) {
-                      tmp42 = cResult[35];
-                    }
-                    if (cResult[36] === tmp18.headerContainer) {
-                      if (cResult[37] === tmp39) {
-                        let tmp45;
-                        if (cResult[38] === tmp42) {
-                          tmp45 = cResult[39];
-                        }
-                        if (cResult[40] === tmp6) {
-                          let tmp49;
-                          if (cResult[41] === tmp10) {
-                            tmp49 = cResult[42];
-                          }
-                          if (cResult[43] === tmp18.contentContainer) {
-                            if (cResult[44] === tmp45) {
-                              let tmp55;
-                              if (cResult[45] === tmp49) {
-                                tmp55 = cResult[46];
-                              }
-                              if (cResult[47] === tmp4) {
-                                let tmp59;
-                                if (cResult[48] === tmp18.badge) {
-                                  tmp59 = cResult[49];
-                                }
-                                if (cResult[50] === tmp4) {
-                                  let tmp62;
-                                  if (cResult[51] === tmp18.badge) {
-                                    tmp62 = cResult[52];
-                                  }
-                                  if (cResult[53] === tmp8) {
-                                    if (cResult[54] === tmp10) {
-                                      if (cResult[55] === tmp18.card) {
-                                        if (cResult[56] === tmp55) {
-                                          if (cResult[57] === tmp59) {
-                                            if (cResult[58] === tmp62) {
-                                              if (cResult[59] === tmp26) {
-                                                let tmp65;
-                                                if (cResult[60] === tmp35) {
-                                                  tmp65 = cResult[61];
-                                                }
-                                                return tmp65;
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                  const obj2 = { containerStyle: tmp26, style: tmp18.card, status: tmp10, onPress: tmp8, children: items };
-                                  items = [tmp35, tmp55, tmp59, tmp62];
-                                  const tmp67 = metroImportDefault(GuildPowerupsCardDefault, obj2);
-                                  cResult[53] = tmp8;
-                                  cResult[54] = tmp10;
-                                  cResult[55] = tmp18.card;
-                                  cResult[56] = tmp55;
-                                  cResult[57] = tmp59;
-                                  cResult[58] = tmp62;
-                                  cResult[59] = tmp26;
-                                  cResult[60] = tmp35;
-                                  cResult[61] = tmp67;
-                                  tmp65 = tmp67;
-                                }
-                                let tmp63 = "beta" === tmp4;
-                                if (tmp63) {
-                                  const obj3 = { text: intl2.string(intl3.t.oW0eUd), color: native.BadgeColors.BRAND, style: tmp18.badge };
-                                  const TextBadge2 = tmp(1199).TextBadge;
-                                  intl2 = tmp(1125).intl;
-                                  tmp63 = metroRequire(TextBadge2, obj3);
-                                }
-                                cResult[50] = tmp4;
-                                cResult[51] = tmp18.badge;
-                                cResult[52] = tmp63;
-                                tmp62 = tmp63;
-                              }
-                              let tmp60 = "new" === tmp4;
-                              if (tmp60) {
-                                const obj4 = { text: intl.string(intl3.t.y2b7CA), style: tmp18.badge };
-                                const TextBadge = tmp(1199).TextBadge;
-                                intl = tmp(1125).intl;
-                                tmp60 = metroRequire(TextBadge, obj4);
-                              }
-                              cResult[47] = tmp4;
-                              cResult[48] = tmp18.badge;
-                              cResult[49] = tmp60;
-                              tmp59 = tmp60;
-                            }
-                          }
-                          const obj5 = { style: tmp18.contentContainer, children: items1 };
-                          items1 = [tmp45, tmp49];
-                          const tmp58 = metroImportDefault(View, obj5);
-                          cResult[43] = tmp18.contentContainer;
-                          cResult[44] = tmp45;
-                          cResult[45] = tmp49;
-                          cResult[46] = tmp58;
-                          tmp55 = tmp58;
-                        }
-                        const obj6 = { status: tmp10 };
-                        const GuildPowerupsCardFooter = tmp(13914).GuildPowerupsCardFooter;
-                        const merged = Object.assign(tmp6);
-                        const tmp54 = metroRequire(GuildPowerupsCardFooter, obj6);
-                        cResult[40] = tmp6;
-                        cResult[41] = tmp10;
-                        cResult[42] = tmp54;
-                        tmp49 = tmp54;
-                      }
-                    }
-                    const obj7 = { style: tmp18.headerContainer, children: items2 };
-                    items2 = [tmp39, tmp42];
-                    const tmp48 = metroImportDefault(View, obj7);
-                    cResult[36] = tmp18.headerContainer;
-                    cResult[37] = tmp39;
-                    cResult[38] = tmp42;
-                    cResult[39] = tmp48;
-                    tmp45 = tmp48;
-                  }
-                  const obj8 = { variant: str4, children: tmp5 };
-                  const tmp44 = metroRequire(Text_Text.Text, obj8);
-                  cResult[33] = tmp5;
-                  cResult[34] = str4;
-                  cResult[35] = tmp44;
-                  tmp42 = tmp44;
-                }
-              }
-              const obj9 = { color: str2, variant: str3, children: tmp13 };
-              const tmp41 = metroRequire(Text_Text.Text, obj9);
-              cResult[29] = str2;
-              cResult[30] = str3;
-              cResult[31] = tmp13;
-              cResult[32] = tmp41;
-              tmp39 = tmp41;
-            }
-          }
-          const obj10 = { style: tmp18.imageContainer, children: items3 };
-          items3 = [tmp27, tmp32];
-          const tmp38 = metroImportDefault(View, obj10);
-          cResult[25] = tmp18.imageContainer;
-          cResult[26] = tmp27;
-          cResult[27] = tmp32;
-          cResult[28] = tmp38;
-          tmp35 = tmp38;
-        }
-        const obj11 = { colors: tmp24, style: tmp18.gradient };
-        const tmp34 = metroRequire(LinearGradientDefault, obj11);
-        cResult[22] = tmp24;
-        cResult[23] = tmp18.gradient;
-        cResult[24] = tmp34;
-        tmp32 = tmp34;
-      }
-    }
-    let tmp30Result = tmp9;
-    if (tmp9 == null) {
-      let str = tmp7;
-      const tmp19Result = GuildPowerupsImageDefault;
-      const tmp30 = metroRequire;
-      if (tmp7 == null) {
-        str = "";
-      }
-      const obj12 = { imageUrl: str, isAnimated: undefined === tmp12 || tmp12 };
-      tmp30Result = tmp30(tmp19Result, obj12);
-    }
-    cResult[18] = tmp7;
-    cResult[19] = undefined === tmp12 || tmp12;
-    cResult[20] = tmp9;
-    cResult[21] = tmp30Result;
-    tmp27 = tmp30Result;
-  }
-  const items4 = [tmp18.container, tmp11];
-  cResult[15] = tmp11;
-  cResult[16] = tmp18.container;
-  cResult[17] = items4;
-  tmp26 = items4;
-}) : (function GuildPowerupsPerkCard(arg0) {
+let closure_6 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerkCard.tsx");
+
+export default function GuildPowerupsPerkCard(arg0) {
   let badge;
   let description;
   let imageUrl;
@@ -367,7 +64,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   ({ riveComponent, status, badge } = arg0);
   ({ style, onPress } = arg0);
   const merged = Object.assign(arg0, Object.assign({ title: 0, description: 0, imageUrl: 0, isImageAnimated: 0, riveComponent: 0, style: 0, onPress: 0, status: 0, badge: 0 }));
-  const tmp2 = closure_8();
+  const tmp2 = closure_6();
   const tmp5 = useThemeDefault();
   const obj = shared;
   const isThemeDarkResult = obj.isThemeDark(tmp5);
@@ -381,7 +78,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   const obj4 = { style: tmp2.imageContainer, children: items1 };
   const tmp3Result = GuildPowerupsCardDefault;
   if (riveComponent == null) {
-    const tmp13 = metroRequire;
+    const tmp13 = React3;
     const tmp3Result2 = GuildPowerupsImageDefault;
     if (imageUrl == null) {
       imageUrl = "";
@@ -391,12 +88,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   }
   items1 = [riveComponent, ];
   const obj6 = { colors: tmp9, style: tmp2.gradient };
-  items1[1] = metroRequire(LinearGradientDefault, obj6);
-  items2 = [metroImportDefault(View, obj4), , , ];
+  items1[1] = React3(LinearGradientDefault, obj6);
+  items2 = [hasOwnProperty(View, obj4), , , ];
   let str;
   const obj7 = { style: tmp2.contentContainer, children: items4 };
   const obj8 = { style: tmp2.headerContainer, children: items3 };
-  const Text = tmp6(5271).Text;
+  const Text = tmp6(5619).Text;
   if (manaTypeConsolidationExperiment) {
     str = "text-strong";
   }
@@ -405,37 +102,34 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerup
   if (manaTypeConsolidationExperiment) {
     str2 = "experimental/heading-md/semibold";
   }
-  items3 = [metroRequire(Text, obj9), ];
+  items3 = [React3(Text, obj9), ];
   let str3 = "text-sm/medium";
-  const Text2 = tmp6(5271).Text;
+  const Text2 = tmp6(5619).Text;
   if (manaTypeConsolidationExperiment) {
     str3 = "experimental/body-sm/normal";
   }
-  items3[1] = metroRequire(Text2, { variant: str3, children: description });
-  items4 = [metroImportDefault(View, obj8), ];
+  items3[1] = React3(Text2, { variant: str3, children: description });
+  items4 = [hasOwnProperty(View, obj8), ];
   const obj10 = { status };
-  const GuildPowerupsCardFooter = tmp6(13914).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(14048).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
-  items4[1] = metroRequire(GuildPowerupsCardFooter, obj10);
-  items2[1] = metroImportDefault(View, obj7);
+  items4[1] = React3(GuildPowerupsCardFooter, obj10);
+  items2[1] = hasOwnProperty(View, obj7);
   let tmp15Result = "new" === badge;
   if (tmp15Result) {
     const obj11 = { text: intl.string(intl3.t.y2b7CA), style: tmp2.badge };
-    const TextBadge = tmp6(1199).TextBadge;
-    intl = tmp6(1125).intl;
+    const TextBadge = tmp6(1188).TextBadge;
+    intl = tmp6(1114).intl;
     tmp15Result = tmp15(TextBadge, obj11);
   }
   items2[2] = tmp15Result;
   let tmp15Result2 = "beta" === badge;
   if (tmp15Result2) {
     const obj12 = { text: intl2.string(intl3.t.oW0eUd), color: native.BadgeColors.BRAND, style: tmp2.badge };
-    const TextBadge2 = tmp6(1199).TextBadge;
-    intl2 = tmp6(1125).intl;
+    const TextBadge2 = tmp6(1188).TextBadge;
+    intl2 = tmp6(1114).intl;
     tmp15Result2 = tmp15(TextBadge2, obj12);
   }
   items2[3] = tmp15Result2;
-  return metroImportDefault(tmp3Result, obj3);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsPerkCard.tsx");
-
-export default tmp5;
+  return hasOwnProperty(tmp3Result, obj3);
+};

@@ -1,61 +1,23 @@
-// Module ID: 10092
-// Function ID: 10093
+// Module ID: 10119
+// Function ID: 10120
 // Name: ChatGDMCustomizeActionSheet
-// Dependencies: [19, 21, 558, 576, 10093, 1125, 10096, 10098, 2]
+// Dependencies: [19, 21, 10120, 10123, 1114, 10125, 2]
+// Exports: default
 
-// Module 10092 (ChatGDMCustomizeActionSheet)
+// Module 10119 (ChatGDMCustomizeActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 10093 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10096 */;
-import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 10098 */;
+import useNavigatorConfirmChangesOnBackDefault from "useNavigatorConfirmChangesOnBack" /* 10120 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10123 */;
+import ChatGDMCustomizeDefault from "ChatGDMCustomize" /* 10125 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMCustomizeActionSheet(channelId) {
-  let first;
-  let onGoBack;
-  let ref;
-  const obj = channelId(ref[3]);
-  const cResult = obj.c(5);
-  channelId = channelId.channelId;
-  const tmp5 = onGoBack(ref[4])();
-  const tmp4 = onGoBack;
-  onGoBack = tmp5.onGoBack;
-  ref = tmp5.ref;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(tmp2[5]).intl;
-    const stringResult = intl.string(channelId(ref[5]).t["1r5E+m"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    if (cResult[2] === onGoBack) {
-      let tmp8;
-      if (cResult[3] === ref) {
-        tmp8 = cResult[4];
-      }
-      return tmp8;
-    }
-  }
-  const tmp9 = jsx(tmp4(ref[6]), {
-    screenKey: "kick",
-    title: first,
-    render() {
-      return jsx(ChatGDMCustomizeDefault, { ref, onFinish: onGoBack, channelId });
-    }
-  });
-  cResult[1] = channelId;
-  cResult[2] = onGoBack;
-  cResult[3] = ref;
-  cResult[4] = tmp9;
-  tmp8 = tmp9;
-}) : (function ChatGDMCustomizeActionSheet(channelId) {
+const result = size.fileFinishedImporting("modules/group_dm/native/ChatGDMCustomizeActionSheet.tsx");
+
+export default function ChatGDMCustomizeActionSheet(channelId) {
   let c1;
   let c2;
   let onFinish;
@@ -66,11 +28,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatGDMCus
   ({ onGoBack: c1, ref: c2 } = useNavigatorConfirmChangesOnBackDefault());
   useNavigatorConfirmChangesOnBackDefault();
   ModalStackNavigatorDefault;
-  const intl = channelId(1125).intl;
-  return <tmp2 screenKey="kick" title={intl.string(channelId(1125).t["1r5E+m"])} render={function render() {
+  const intl = channelId(1114).intl;
+  return <tmp2 screenKey="kick" title={intl.string(channelId(1114).t["1r5E+m"])} render={function render() {
     return jsx(ChatGDMCustomizeDefault, { ref, onFinish, channelId });
   }} />;
-});
-const result = size.fileFinishedImporting("modules/group_dm/native/ChatGDMCustomizeActionSheet.tsx");
-
-export default tmp3;
+};

@@ -1,42 +1,35 @@
-// Module ID: 7081
-// Function ID: 7082
+// Module ID: 7089
+// Function ID: 7090
 // Name: useInputAttachments
-// Dependencies: [32, 19, 17, 21, 7082, 5271, 558, 576, 7083, 2]
-// Exports: estimateAttachmentWidth, renderInputAttachment
+// Dependencies: [32, 19, 17, 21, 7090, 5619, 7091, 2]
+// Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 7081 (useInputAttachments)
+// Module 7089 (useInputAttachments)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import IconSize from "IconSize" /* 7082 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import IconSize from "IconSize" /* 7090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
 let closure_4;
 let hasOwnProperty;
-({ Platform, Pressable: closure_4, View: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputAttachmentContainer(setWidth) {
-  let content;
-  let style;
-  let obj = react2;
-  const cResult = obj.c(15);
-  ({ content, style } = setWidth);
-  setWidth = setWidth.setWidth;
-  const pressableProps = setWidth.pressableProps;
-  let tmp2 = null;
-  if (null != content) {
-    let tmp4;
-    if (null != pressableProps) {
-      let tmp8;
-      let tmp9;
-      if (cResult[0] !== style) {
-        const fn2 = function n(pressed) {
+class InputAttachmentContainer {
+  constructor(arg0) {
+    let closure_129_1;
+    let content;
+    let pressableProps;
+    let style;
+    ({ content, style } = arg0);
+    ({ setWidth: closure_129_1, pressableProps } = arg0);
+    let tmp = null;
+    if (null != content) {
+      let tmp4;
+      if (null != pressableProps) {
+        const merged = Object.assign(pressableProps);
+        tmp4 = <React3 role="button" style={function style(pressed) {
           const items = [style, { pointerEvents: "auto" }, ];
           let obj;
           if (pressed.pressed) {
@@ -44,279 +37,44 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InputAttachm
           }
           items[2] = obj;
           return items;
-        };
-        cResult[0] = style;
-        cResult[1] = fn2;
-        tmp8 = fn2;
+        }} onLayout={function onLayout(nativeEvent) {
+          return closure_1_1(nativeEvent.nativeEvent.layout.width);
+        }}>{content}</React3>;
       } else {
-        tmp8 = cResult[1];
+        tmp4 = <hasOwnProperty style={style} onLayout={function onLayout(nativeEvent) {
+          return closure_1_1(nativeEvent.nativeEvent.layout.width);
+        }}>{content}</hasOwnProperty>;
       }
-      if (cResult[2] !== setWidth) {
-        const fn3 = function l(nativeEvent) {
-          return setWidth(nativeEvent.nativeEvent.layout.width);
-        };
-        cResult[2] = setWidth;
-        cResult[3] = fn3;
-        tmp9 = fn3;
-      } else {
-        tmp9 = cResult[3];
-      }
-      if (cResult[4] === content) {
-        if (cResult[5] === pressableProps) {
-          if (cResult[6] === tmp8) {
-            let tmp10;
-            if (cResult[7] === tmp9) {
-              tmp10 = cResult[8];
-            }
-            tmp4 = tmp10;
-          }
-        }
-      }
-      const merged = Object.assign(pressableProps);
-      const tmp16 = <React3 role="button" style={tmp8} onLayout={tmp9}>{content}</React3>;
-      cResult[4] = content;
-      cResult[5] = pressableProps;
-      cResult[6] = tmp8;
-      cResult[7] = tmp9;
-      cResult[8] = tmp16;
-      tmp10 = tmp16;
-    } else {
-      let tmp3;
-      if (cResult[9] !== setWidth) {
-        const fn = function p(nativeEvent) {
-          return setWidth(nativeEvent.nativeEvent.layout.width);
-        };
-        cResult[9] = setWidth;
-        cResult[10] = fn;
-        tmp3 = fn;
-      } else {
-        tmp3 = cResult[10];
-      }
-      if (cResult[11] === content) {
-        if (cResult[12] === style) {
-          if (cResult[13] === tmp3) {
-            tmp4 = cResult[14];
-          }
-        }
-      }
-      const tmp7 = <hasOwnProperty style={style} onLayout={tmp3}>{content}</hasOwnProperty>;
-      cResult[11] = content;
-      cResult[12] = style;
-      cResult[13] = tmp3;
-      cResult[14] = tmp7;
-      tmp4 = tmp7;
+      tmp = tmp4;
     }
-    tmp2 = tmp4;
+    return tmp;
+  }
+}
+({ Platform, Pressable: closure_4, View: hasOwnProperty } = react_native);
+const jsx = Fragment.jsx;
+const result = size.fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
+
+export function estimateAttachmentWidth(arg0, arg1) {
+  let num = 0;
+  if (null != arg0) {
+    num = IconSize.ICON_SIZE.xs + arg1;
+  }
+  return num;
+}
+export function renderInputAttachment(arg0, leadingText, text) {
+  let tmp2;
+  if (null != arg0) {
+    tmp2 = jsx(arg0, { size: "xs", color: "input-icon-default" });
+  } else {
+    tmp2 = null;
+    if (null != leadingText) {
+      tmp2 = jsx(Text_Text.Text, { variant: "text-md/normal", style: text, children: leadingText });
+    }
   }
   return tmp2;
-}) : (function InputAttachmentContainer(arg0) {
-  let closure_129_1;
-  let content;
-  let pressableProps;
-  let style;
-  ({ content, style } = arg0);
-  ({ setWidth: closure_129_1, pressableProps } = arg0);
-  let tmp = null;
-  if (null != content) {
-    let tmp4;
-    if (null != pressableProps) {
-      const merged = Object.assign(pressableProps);
-      tmp4 = <React3 role="button" style={function style(pressed) {
-        const items = [style, { pointerEvents: "auto" }, ];
-        let obj;
-        if (pressed.pressed) {
-          obj = { opacity: 0.2 };
-        }
-        items[2] = obj;
-        return items;
-      }} onLayout={function onLayout(nativeEvent) {
-        return closure_1_1(nativeEvent.nativeEvent.layout.width);
-      }}>{content}</React3>;
-    } else {
-      tmp4 = <hasOwnProperty style={style} onLayout={function onLayout(nativeEvent) {
-        return closure_1_1(nativeEvent.nativeEvent.layout.width);
-      }}>{content}</hasOwnProperty>;
-    }
-    tmp = tmp4;
-  }
-  return tmp;
-});
-let closure_7 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAttachments(leadingIcon, leading) {
-  let inputStyles;
-  let leadingText;
-  let trailingIcon;
-  const tmp = inputStyles;
-  const obj = inputStyles(leadingIcon[7]);
-  const cResult = obj.c(35);
-  if (cResult[0] === leadingIcon.size) {
-    let tmp5;
-    if (cResult[1] === null != leadingIcon.leadingIcon) {
-      tmp5 = cResult[2];
-    }
-    const tmpResult = tmp(leadingIcon[8]);
-    inputStyles = tmpResult.useInputStyles(tmp5);
-    leadingIcon = leadingIcon.leadingIcon;
-    ({ leadingText, trailingIcon } = leadingIcon);
-    const trailingText = leadingIcon.trailingText;
-    if (cResult[3] === leadingIcon) {
-      if (cResult[4] === leadingText) {
-        leading = undefined;
-        const tmp9 = cResult[5];
-        if (leading != null) {
-          leading = leading.leading;
-        }
-        if (tmp9 === leading) {
-          let tmp11;
-          if (cResult[6] === inputStyles.text) {
-            tmp11 = cResult[7];
-          }
-          let trailing;
-          const tmp18 = cResult[8];
-          if (leading != null) {
-            trailing = leading.trailing;
-          }
-          if (tmp18 === trailing) {
-            if (cResult[9] === inputStyles.text) {
-              if (cResult[10] === trailingIcon) {
-                if (null == leadingIcon) {
-                  let leadingIcon2;
-                  let leading1;
-                  if (leading != null) {
-                    leading1 = leading.leading;
-                  }
-                  if (null == leading1) {
-                    leadingIcon2 = inputStyles.leadingText;
-                  }
-                  if (null == trailingIcon) {
-                    let trailing1;
-                    if (leading != null) {
-                      trailing1 = leading.trailing;
-                    }
-                    if (null == trailing1) {
-                      let trailingIcon2 = inputStyles.trailingText;
-                    }
-                    if (cResult[13] === leadingIcon) {
-                      let tmp25;
-                      if (cResult[14] === inputStyles.leadingIcon) {
-                        tmp25 = cResult[15];
-                      }
-                      const first = trailingIcon(react.useState(tmp25), 2)[0];
-                      trailingIcon(react.useState(tmp25), 2);
-                      const obj5 = react;
-                      const tmp26 = trailingIcon;
-                      if (cResult[16] === inputStyles.trailingIcon) {
-                        let tmp30;
-                        if (cResult[17] === trailingIcon) {
-                          tmp30 = cResult[18];
-                        }
-                        const first1 = tmp26(obj5.useState(tmp30), 2)[0];
-                        let prop;
-                        const tmp26Result = tmp26(obj5.useState(tmp30), 2);
-                        if (leading != null) {
-                          prop = leading.leadingPressableProps;
-                        }
-                        if (prop == null) {
-                          prop = tmp8;
-                        }
-                        class L {
-                          constructor() {
-                            let num = 0;
-                            if (null != trailingIcon) {
-                              num = IconSize.ICON_SIZE.xs + tmp;
-                            }
-                            return num;
-                          }
-                        }
-                        const tmp38 = <closure_7 content={tmp11} setWidth={tmp29} pressableProps={prop} style={leadingIcon2} />;
-                        cResult[19] = tmp11;
-                        cResult[20] = leadingIcon2;
-                        cResult[21] = prop;
-                        cResult[22] = tmp38;
-                      }
-                      class L {
-                        constructor() {
-                          let num = 0;
-                          if (null != trailingIcon) {
-                            num = IconSize.ICON_SIZE.xs + tmp;
-                          }
-                          return num;
-                        }
-                      }
-                      cResult[16] = inputStyles.trailingIcon;
-                      cResult[17] = trailingIcon;
-                      cResult[18] = L;
-                      tmp30 = L;
-                    }
-                    const fn = function f() {
-                      let num = 0;
-                      if (null != leadingIcon) {
-                        num = IconSize.ICON_SIZE.xs + tmp;
-                      }
-                      return num;
-                    };
-                    cResult[13] = leadingIcon;
-                    cResult[14] = inputStyles.leadingIcon;
-                    cResult[15] = fn;
-                    tmp25 = fn;
-                  }
-                  trailingIcon2 = inputStyles.trailingIcon;
-                }
-                leadingIcon2 = inputStyles.leadingIcon;
-              }
-            }
-          }
-          let trailing2;
-          if (leading != null) {
-            trailing2 = leading.trailing;
-          }
-          let trailing3;
-          if (leading != null) {
-            trailing3 = leading.trailing;
-          }
-          cResult[8] = trailing3;
-          cResult[9] = inputStyles.text;
-          cResult[10] = trailingIcon;
-          cResult[11] = trailingText;
-          cResult[12] = trailing2;
-        }
-      }
-    }
-    let leading2;
-    if (leading != null) {
-      leading2 = leading.leading;
-    }
-    if (leading2 == null) {
-      let tmp14;
-      if (null != leadingIcon) {
-        tmp14 = <leadingIcon size="xs" color="input-icon-default" />;
-      } else {
-        tmp14 = null;
-        if (null != leadingText) {
-          tmp14 = jsx(tmp(tmp2[5]).Text, { variant: "text-md/normal", style: tmp13, children: leadingText });
-        }
-      }
-      leading2 = tmp14;
-    }
-    let num = 3;
-    cResult[3] = leadingIcon;
-    cResult[4] = leadingText;
-    let leading3;
-    if (leading != null) {
-      leading3 = leading.leading;
-    }
-    cResult[5] = leading3;
-    cResult[6] = inputStyles.text;
-    cResult[7] = leading2;
-    tmp11 = leading2;
-  }
-  const obj4 = { size: leadingIcon.size, hasLeadingIcon: null != leadingIcon.leadingIcon };
-  cResult[0] = leadingIcon.size;
-  cResult[1] = null != leadingIcon.leadingIcon;
-  cResult[2] = obj4;
-  tmp5 = obj4;
-}) : (function useInputAttachments(size, leading) {
+}
+export { InputAttachmentContainer };
+export function useInputAttachments(merged, leading) {
   let diff1;
   let inputStyles;
   let leadingIcon;
@@ -327,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
   let tmp20;
   let trailingIcon;
   let trailingPressableProps;
-  const f99230 = () => {
+  const f89659 = () => {
     let num = 0;
     if (null != leadingIcon) {
       num = IconSize.ICON_SIZE.xs + tmp;
@@ -335,14 +93,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
     return num;
   };
   const tmp = inputStyles;
-  const obj = inputStyles(leadingIcon[8]);
-  const obj2 = { size: size.size, hasLeadingIcon: null != size.leadingIcon };
+  const obj = inputStyles(leadingIcon[6]);
+  const obj2 = { size: merged.size, hasLeadingIcon: null != merged.leadingIcon };
   inputStyles = obj.useInputStyles(obj2);
-  leadingIcon = size.leadingIcon;
-  ({ leadingText, trailingIcon } = size);
-  const trailingText = size.trailingText;
+  leadingIcon = merged.leadingIcon;
+  ({ leadingText, trailingIcon } = merged);
+  const trailingText = merged.trailingText;
   leading = undefined;
-  ({ leadingPressableProps, trailingPressableProps } = size);
+  ({ leadingPressableProps, trailingPressableProps } = merged);
   if (leading != null) {
     leading = leading.leading;
   }
@@ -391,8 +149,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
         let trailingIcon2 = inputStyles.trailingText;
       }
       let num = 2;
-      [tmp19, tmp20] = trailingIcon(react.useState(f99230), 2);
-      trailingIcon(react.useState(f99230), 2);
+      [tmp19, tmp20] = trailingIcon(react.useState(f89659), 2);
+      trailingIcon(react.useState(f89659), 2);
       const tmp21 = trailingIcon(react.useState(() => {
         let num = 0;
         if (null != trailingIcon) {
@@ -430,29 +188,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInputAtta
     trailingIcon2 = inputStyles.trailingIcon;
   }
   leadingIcon2 = inputStyles.leadingIcon;
-});
-function estimateAttachmentWidth(arg0, arg1) {
-  let num = 0;
-  if (null != arg0) {
-    num = IconSize.ICON_SIZE.xs + arg1;
-  }
-  return num;
 }
-function renderInputAttachment(arg0, leadingText, text) {
-  let tmp2;
-  if (null != arg0) {
-    tmp2 = jsx(arg0, { size: "xs", color: "input-icon-default" });
-  } else {
-    tmp2 = null;
-    if (null != leadingText) {
-      tmp2 = jsx(Text_Text.Text, { variant: "text-md/normal", style: text, children: leadingText });
-    }
-  }
-  return tmp2;
-}
-const result = size.fileFinishedImporting("design/components/Input/native/useInputAttachments.native.tsx");
-
-export { estimateAttachmentWidth };
-export { renderInputAttachment };
-export const InputAttachmentContainer = tmp3;
-export const useInputAttachments = tmp4;

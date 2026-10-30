@@ -1,23 +1,23 @@
-// Module ID: 6759
-// Function ID: 6760
+// Module ID: 6766
+// Function ID: 6767
 // Name: SortedGuildStore
-// Dependencies: [5037, 4938, 1243, 6760, 6761, 4917, 4879, 1083, 6762, 1389, 6764, 1354, 38, 1385, 2039, 2]
+// Dependencies: [5041, 4942, 1232, 6767, 6768, 4921, 4880, 1071, 6769, 1384, 6771, 1343, 38, 1380, 2036, 2]
 
-// Module 6759 (SortedGuildStore)
+// Module 6766 (SortedGuildStore)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef1354 from "module_1354" /* 1354 */;
-import GuildsTree from "GuildsTree" /* 6764 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
-import LurkingStore from "LurkingStore" /* 4938 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6760 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6761 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1083 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import UserStore from "UserStore" /* 1389 */;
-import FunctionUtils_mod from "FunctionUtils" /* 2039 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import GuildsTree from "GuildsTree" /* 6771 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
+import LurkingStore from "LurkingStore" /* 4942 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6767 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6768 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import UserStore from "UserStore" /* 1384 */;
+import FunctionUtils_mod from "FunctionUtils" /* 2036 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,7 +137,7 @@ function rebuildTree(arg0, arg1) {
       return addNode(obj.createGuildNode(item10030), guildsTree.root, false);
     });
     guildsTree.version = guildsTree.version;
-    const tmp69 = _modDef1354(guildsTree, guildsTree);
+    const tmp69 = _modDef1343(guildsTree, guildsTree);
     if (tmp69) {
       guildsTree = tmp;
     } else {
@@ -193,7 +193,7 @@ function handleSettingsUpdate() {
   let tmp6Result = null == guildFolders1;
   const tmp = UserSettingsProtoStore;
   if (!tmp6Result) {
-    tmp6Result = !_modDef1354(guildFolders1, guildFolders1);
+    tmp6Result = !_modDef1343(guildFolders1, guildFolders1);
   }
   if (tmp6Result) {
     const tmp6 = rebuildTree;
@@ -244,7 +244,7 @@ function handleMoveById(targetId) {
       const tmp13 = require;
       if (combine) {
         let convertToFolderResult = node1;
-        if (node1.type !== tmp13(6764).GuildsNodeType.FOLDER) {
+        if (node1.type !== tmp13(6771).GuildsNodeType.FOLDER) {
           convertToFolderResult = guildsTree.convertToFolder(node1);
         }
         guildsTree.moveInto(node, convertToFolderResult, moveToBelow);
@@ -347,12 +347,12 @@ function handleGuildFolderDeleteLocal(targetId) {
   const element = guildsTree.getNode(targetId.targetId);
   let tmp = null != element;
   if (tmp) {
-    const tmp4 = element.type === element(6764).GuildsNodeType.FOLDER;
+    const tmp4 = element.type === element(6771).GuildsNodeType.FOLDER;
     const tmp2 = element;
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(tmp2(1385).isNotNullish);
+      const found = mapped.filter(tmp2(1380).isNotNullish);
       const item = found.forEach((item) => {
         const node = guildsTree.getNode(item);
         if (null != node) {
@@ -462,7 +462,7 @@ function setNodeExpanded(id, arg1) {
 }
 let guildsTree = new GuildsTree.GuildsTree();
 let FunctionUtils = FunctionUtils_mod;
-const results = FunctionUtils.cachedFunction((sortedGuildNodes) => {
+let closure_28 = FunctionUtils.cachedFunction((sortedGuildNodes) => {
   const sortedGuildNodesResult = sortedGuildNodes.sortedGuildNodes();
   return sortedGuildNodesResult.map((id) => id.id);
 });

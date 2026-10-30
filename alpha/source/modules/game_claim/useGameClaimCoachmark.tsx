@@ -1,64 +1,27 @@
-// Module ID: 18212
-// Function ID: 18213
+// Module ID: 18272
+// Function ID: 18273
 // Name: useGameClaimCoachmark
-// Dependencies: [4937, 1084, 558, 576, 18213, 504, 18135, 2]
+// Dependencies: [4941, 1072, 18273, 504, 18196, 2]
+// Exports: useCanShowGameClaimCoachmark
 
-// Module 18212 (useGameClaimCoachmark)
-import Constants from "Constants" /* 1084 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18272 (useGameClaimCoachmark)
+import Constants from "Constants" /* 1072 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShowGameClaimCoachmark(guildId) {
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = guildId;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  const obj2 = require("GameClaimCoachmarkExperiment");
-  let gameClaimCoachmarkEnabled = obj2.useGameClaimCoachmarkEnabled(guildId, "useCanShowGameClaimCoachmark");
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function l() {
-      const obj = { guildId };
-      return PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, obj);
-    };
-    const items1 = [guildId];
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  if (gameClaimCoachmarkEnabled) {
-    gameClaimCoachmarkEnabled = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  const tmpResult2 = require("UnclaimedGamesActionCreators");
-  if (gameClaimCoachmarkEnabled) {
-    gameClaimCoachmarkEnabled = tmpResult2.useHasUnclaimedGames(guildId, gameClaimCoachmarkEnabled);
-  }
-  return gameClaimCoachmarkEnabled;
-}) : (function useCanShowGameClaimCoachmark(guildId) {
-  _require = guildId;
+const result = size.fileFinishedImporting("modules/game_claim/useGameClaimCoachmark.tsx");
+
+export function useCanShowGameClaimCoachmark(id) {
+  let guildId;
+  _require = id;
   let obj = require("GameClaimCoachmarkExperiment");
-  let gameClaimCoachmarkEnabled = obj.useGameClaimCoachmarkEnabled(guildId, "useCanShowGameClaimCoachmark");
+  let gameClaimCoachmarkEnabled = obj.useGameClaimCoachmarkEnabled(id, "useCanShowGameClaimCoachmark");
   const items = [PermissionStore];
-  const items1 = [guildId];
+  const items1 = [id];
   const obj2 = require("get initialized");
   const tmp = _require;
   if (gameClaimCoachmarkEnabled) {
@@ -67,12 +30,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanShow
       return PermissionStore.canWithPartialContext(Permissions.ADMINISTRATOR, obj);
     }, items1);
   }
-  const tmpResult = tmp(18135);
+  const tmpResult = tmp(18196);
   if (gameClaimCoachmarkEnabled) {
-    gameClaimCoachmarkEnabled = tmpResult.useHasUnclaimedGames(guildId, gameClaimCoachmarkEnabled);
+    gameClaimCoachmarkEnabled = tmpResult.useHasUnclaimedGames(id, gameClaimCoachmarkEnabled);
   }
   return gameClaimCoachmarkEnabled;
-});
-const result = size.fileFinishedImporting("modules/game_claim/useGameClaimCoachmark.tsx");
-
-export const useCanShowGameClaimCoachmark = tmp2;
+}

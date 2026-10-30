@@ -1,22 +1,22 @@
-// Module ID: 11258
-// Function ID: 11259
+// Module ID: 11463
+// Function ID: 11464
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4857, 1502, 6023, 6024, 21, 5672, 5188, 5247, 1629, 5947, 1125, 1199, 11259, 5700, 7345, 4833, 10479, 7350, 558, 576, 11261, 5196, 11264, 8529, 5271, 2]
+// Dependencies: [19, 4858, 1497, 6030, 6031, 21, 5678, 5194, 5253, 1624, 5954, 1114, 1188, 11464, 5706, 7352, 4834, 10504, 7357, 11466, 5619, 5202, 11469, 8563, 2]
+// Exports: default
 
-// Module 11258 (MarkupReactCommandRule)
+// Module 11463 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6023 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6024 */;
-import ClipboardUtils from "ClipboardUtils" /* 7345 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11264 */;
+import KeyboardTypes from "KeyboardTypes" /* 1624 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6030 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6031 */;
+import ClipboardUtils from "ClipboardUtils" /* 7352 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11469 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -156,7 +156,7 @@ function handleLongPressCommandMention(arg0, arg1) {
         }
     };
     const push = items.push;
-    intl2 = tmp(1125).intl;
+    intl2 = tmp(1114).intl;
     push(obj2);
   }
   const tmpResult = require("showSimpleActionSheet");
@@ -166,152 +166,23 @@ function handleLongPressCommandMention(arg0, arg1) {
 const SUB_COMMAND_KEY_SEPARATOR = ApplicationCommandConstants.SUB_COMMAND_KEY_SEPARATOR;
 const COMMAND_SENTINEL = ChannelAutocompleteConstants.COMMAND_SENTINEL;
 const jsxs = Fragment.jsxs;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReactCommandRule(node) {
-  let closure_2;
-  let output;
-  let state;
-  let style;
-  let tmp = node;
-  let tmp2 = dependencyMap;
-  let obj = node(576);
-  const cResult = obj.c(18);
-  node = node.node;
-  ({ output, state, style } = node);
-  const tmp4 = null != react.useContext(node(11261).AppLauncherContext);
-  let closure_1 = tmp4;
-  const tmp5 = closure_6();
-  dependencyMap = tmp5;
-  if (cResult[0] === tmp4) {
-    if (cResult[1] === tmp5) {
-      if (cResult[2] === node.channelId) {
-        if (cResult[3] === node.commandId) {
-          let tmp6;
-          if (cResult[4] === node.commandName) {
-            tmp6 = cResult[5];
-          }
-          if (cResult[6] === node.commandId) {
-            let tmp7;
-            if (cResult[7] === node.commandName) {
-              tmp7 = cResult[8];
-            }
-            if (cResult[9] === node) {
-              if (cResult[10] === output) {
-                let tmp8;
-                if (cResult[11] === state) {
-                  tmp8 = cResult[12];
-                }
-                if (cResult[13] === style) {
-                  if (cResult[14] === tmp6) {
-                    if (cResult[15] === tmp7) {
-                      let tmp10;
-                      if (cResult[16] === tmp8) {
-                        tmp10 = cResult[17];
-                      }
-                      return tmp10;
-                    }
-                  }
-                }
-                const items = ["/", tmp8];
-                const tmp12 = jsxs(tmp(5271).Text, { style, variant: "text-md/bold", onPress: tmp6, onLongPress: tmp7, children: items });
-                cResult[13] = style;
-                cResult[14] = tmp6;
-                cResult[15] = tmp7;
-                cResult[16] = tmp8;
-                cResult[17] = tmp12;
-                tmp10 = tmp12;
-              }
-            }
-            const tmpResult = tmp(8529);
-            const smartOutputResult = tmpResult.smartOutput(node, output, state);
-            cResult[9] = node;
-            cResult[10] = output;
-            cResult[11] = state;
-            cResult[12] = smartOutputResult;
-            tmp8 = smartOutputResult;
-          }
-          const fn2 = function i() {
-            handleLongPressCommandMention(node.commandName, node.commandId);
-          };
-          cResult[6] = node.commandId;
-          cResult[7] = node.commandName;
-          cResult[8] = fn2;
-          tmp7 = fn2;
-        }
-      }
-    }
-  }
-  const fn = function t() {
-    let str;
-    let obj = node(closure_2[22]);
-    const bestActiveInput = obj.getBestActiveInput();
-    let tmp2;
-    const tmp = handleTapCommandMention;
-    if (closure_1) {
-      tmp2 = closure_2;
-    }
-    const obj2 = {
-      appLauncherNavigator: tmp2,
-      channelId: bestActiveInput.channelId,
-      commandId: bestActiveInput.commandId,
-      commandName: bestActiveInput.commandName,
-      currentText: str,
-      onOpenCustomKeyboard(arg0) {
-        let openCustomKeyboardResult;
-        const obj = bestActiveInput;
-        if (bestActiveInput != null) {
-          openCustomKeyboardResult = obj.openCustomKeyboard(arg0);
-        }
-        return openCustomKeyboardResult;
-      },
-      onSetCommand() {
-        let commandId;
-        let commandName;
-        navigateToLastChannelDefault();
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        if (bestActiveInput != null) {
-          bestActiveInput.openSystemKeyboard();
-        }
-        if (bestActiveInput != null) {
-          const applicationCommandManager = obj2.getApplicationCommandManager();
-          if (applicationCommandManager != null) {
-            ({ commandId, commandName } = node);
-            applicationCommandManager.setPartialCommand(commandId, commandName, ApplicationCommandTypes.ApplicationCommandTriggerLocations.MENTION);
-          }
-        }
-      }
-    };
-    str = undefined;
-    if (bestActiveInput != null) {
-      str = bestActiveInput.getText();
-    }
-    if (str == null) {
-      str = "";
-    }
-    tmp(obj2);
-  };
-  cResult[0] = tmp4;
-  cResult[1] = tmp5;
-  cResult[2] = node.channelId;
-  cResult[3] = node.commandId;
-  cResult[4] = node.commandName;
-  cResult[5] = fn;
-  tmp6 = fn;
-}) : (function MarkupReactCommandRule(node) {
+let result = size.fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
+
+export default function MarkupReactCommandRule(node) {
   let closure_2;
   let output;
   let state;
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11261).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11466).AppLauncherContext);
   dependencyMap = closure_6();
-  const Text = node(5271).Text;
-  let obj2 = node(8529);
+  const Text = node(5619).Text;
+  let obj2 = node(8563);
   const items = ["/", obj2.smartOutput(node, output, state)];
   return <Text style={style} variant="text-md/bold" onPress={function onPress() {
     let str;
-    let obj = node(closure_2[22]);
+    let obj = node(closure_2[21]);
     const bestActiveInput = obj.getBestActiveInput();
     let tmp2;
     const tmp = handleTapCommandMention;
@@ -361,9 +232,6 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarkupReac
   }} onLongPress={function onLongPress() {
     handleLongPressCommandMention(node.commandName, node.commandId);
   }}>{items}</Text>;
-});
-let result = size.fileFinishedImporting("modules/markup/native/MarkupReactCommandRule.tsx");
-
-export default tmp3;
+};
 export { handleTapCommandMention };
 export { handleLongPressCommandMention };

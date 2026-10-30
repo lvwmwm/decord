@@ -1,42 +1,19 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16715
+// Function ID: 16716
 // Name: useParentalConsentWarning
-// Dependencies: [16663, 558, 576, 504, 2]
+// Dependencies: [16716, 504, 2]
+// Exports: useParentalConsentWarning
 
-// Module 16662 (useParentalConsentWarning)
-import react from "react" /* 576 */;
-import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 16663 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16715 (useParentalConsentWarning)
+import get_initialized from "get initialized" /* 504 */;
+import ParentalConsentWarningStore from "ParentalConsentWarningStore" /* 16716 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalConsentWarning() {
-  let tmp4;
-  let tmp5;
-  let warning;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ParentalConsentWarningStore];
-    const fn = function o() {
-      return warning.getWarning();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useParentalConsentWarning() {
+const result = size.fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");
+
+export function useParentalConsentWarning() {
   let warning;
   const items = [ParentalConsentWarningStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => warning.getWarning());
-});
-const result = size.fileFinishedImporting("modules/parent_tools/useParentalConsentWarning.tsx");
-
-export const useParentalConsentWarning = tmp2;
+}

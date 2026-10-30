@@ -1,154 +1,23 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 14987
+// Function ID: 14988
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 558, 576, 1125, 9907, 6968, 2]
+// Dependencies: [32, 19, 21, 1114, 9934, 6974, 2]
+// Exports: DynamicBadgeTooltip
 
-// Module 14944 (DynamicBadgeTooltip)
+// Module 14987 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import Pressables from "Pressables" /* 6968 */;
-import useTooltip from "useTooltip" /* 9907 */;
+import intl2 from "intl" /* 1114 */;
+import Pressables from "Pressables" /* 6974 */;
+import useTooltip from "useTooltip" /* 9934 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let num, tmp;
 
 const jsx = Fragment.jsx;
 const hitSlop = { top: 14, bottom: 14, left: 14, right: 14 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBadgeTooltip(arg0) {
-  let accessibilityLabel;
-  let children;
-  let first;
-  let first1;
-  let obj4;
-  let tmp15;
-  let tmp9;
-  let tooltipPosition;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ children, accessibilityLabel, tooltipPosition } = arg0);
-  let str = "bottom";
-  if (undefined !== tooltipPosition) {
-    str = tooltipPosition;
-  }
-  const ref = react.useRef(null);
-  [first, dependencyMap] = react.useState(false);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl2.t.dCou7i);
-    cResult[0] = stringResult;
-    first1 = stringResult;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        tmp = closure_1(false);
-        return;
-      }
-    }
-    cResult[1] = S;
-    tmp9 = S;
-  } else {
-    class S {
-      constructor() {
-        tmp = closure_1(false);
-        return;
-      }
-    }
-  }
-  if (cResult[2] === str) {
-    let tmp12;
-    let tmp11;
-    let tmp14;
-    class S {
-      constructor() {
-        tmp = closure_1(false);
-        return;
-      }
-    }
-    const tmpResult = useTooltip;
-    const tooltip = tmpResult.useTooltip(ref, obj4);
-    if (cResult[5] !== first) {
-      class D {
-        constructor() {
-          if (closure_0) {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 2500;
-            closure_0 = setTimeout(function() { /* body not rendered: F154337 */ }, 2500);
-            return function() { /* body not rendered: F154338 */ };
-          } else {
-            return;
-          }
-        }
-      }
-      const items = [first];
-      cResult[5] = first;
-      cResult[6] = D;
-      cResult[7] = items;
-      tmp12 = items;
-      tmp11 = D;
-    } else {
-      class D {
-        constructor() {
-          if (closure_0) {
-            tmp = globalThis;
-            _setTimeout = setTimeout;
-            num = 2500;
-            closure_0 = setTimeout(function() { /* body not rendered: F154337 */ }, 2500);
-            return function() { /* body not rendered: F154338 */ };
-          } else {
-            return;
-          }
-        }
-      }
-      tmp12 = cResult[7];
-    }
-    const effect = obj2.useEffect(tmp11, tmp12);
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          tmp = closure_1(function() { /* body not rendered: F154339 */ });
-          return;
-        }
-      }
-      cResult[8] = E;
-      tmp14 = E;
-    } else {
-      class E {
-        constructor() {
-          tmp = closure_1(function() { /* body not rendered: F154339 */ });
-          return;
-        }
-      }
-    }
-    if (cResult[9] === accessibilityLabel) {
-      class E {
-        constructor() {
-          tmp = closure_1(function() { /* body not rendered: F154339 */ });
-          return;
-        }
-      }
-      return tmp15;
-    }
-    const tmp18 = jsx(Pressables.PressableOpacity, { ref, onPress: tmp14, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: first1, children });
-    cResult[9] = accessibilityLabel;
-    cResult[10] = children;
-    cResult[11] = tmp18;
-    tmp15 = tmp18;
-  }
-  obj4 = { position: str, label: first1, visible: first, onPress: tmp9 };
-  cResult[2] = str;
-  cResult[3] = first;
-  cResult[4] = obj4;
-}) : (function DynamicBadgeTooltip(tooltipPosition) {
+const result = size.fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
+
+export function DynamicBadgeTooltip(tooltipPosition) {
   let accessibilityLabel;
   let children;
   let closure_2;
@@ -185,7 +54,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function DynamicBad
     closure_2((arg0) => !arg0);
   }, []);
   return jsx(Pressables.PressableOpacity, { ref, onPress: callback1, hitSlop, accessibilityRole: "button", accessibilityLabel, accessibilityHint: stringResult, children });
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/DynamicBadgeTooltip.tsx");
-
-export const DynamicBadgeTooltip = tmp2;
+}

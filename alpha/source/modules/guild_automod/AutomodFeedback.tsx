@@ -1,11 +1,11 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7690
+// Function ID: 7691
 // Name: AutomodFeedback
-// Dependencies: [1125, 2]
+// Dependencies: [1114, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7685 (AutomodFeedback)
-import intl3 from "intl" /* 1125 */;
+// Module 7690 (AutomodFeedback)
+import intl3 from "intl" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 const Feedback = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };
@@ -27,14 +27,14 @@ export function generateFeedbackOptions() {
 }
 export const RaidAlertType = { JOIN_RAID: "JOIN_RAID", MENTION_RAID: "MENTION_RAID" };
 export const RaidResolutionType = obj2;
-export function getMostImportantRaidResolutionType(c3) {
+export function getMostImportantRaidResolutionType(arr) {
   let DM_SPAM;
-  if (c3.includes(obj2.LEGITIMATE_ACTIVITY)) {
+  if (arr.includes(obj2.LEGITIMATE_ACTIVITY)) {
     DM_SPAM = tmp.LEGITIMATE_ACTIVITY;
-  } else if (c3.includes(obj2.DM_SPAM)) {
+  } else if (arr.includes(obj2.DM_SPAM)) {
     DM_SPAM = tmp.DM_SPAM;
   } else {
-    DM_SPAM = c3.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
+    DM_SPAM = arr.includes(tmp.JOIN_RAID) ? tmp.JOIN_RAID : tmp.OTHER;
   }
   return DM_SPAM;
 }

@@ -1,24 +1,24 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15583
+// Function ID: 15584
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 4857, 4947, 1389, 15540, 15542, 1084, 21, 5005, 587, 558, 576, 504, 5247, 1264, 6693, 1125, 7358, 5707, 11019, 5271, 7047, 6963, 1199, 12268, 11740, 5281, 2]
+// Dependencies: [19, 17, 4858, 4951, 1384, 15580, 15582, 1072, 21, 5009, 575, 504, 1114, 7360, 5712, 11247, 5619, 7054, 6969, 1188, 12431, 11933, 5629, 5253, 6700, 1253, 2]
+// Exports: default
 
-// Module 15543 (BlockedUserInVoiceChannelActionSheet)
+// Module 15583 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15540 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6700 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15580 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15542 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15582 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,127 +43,9 @@ createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_4, marginBottom: nativeDefault.space.PX_16 };
 obj4 = { paddingVertical: nativeDefault.space.PX_16, gap: 8 };
 let closure_14 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUserInVoiceChannelActionSheet(channelId) {
-  let first;
-  let stateFromStores;
-  let tmp10;
-  let tmp7;
-  let tmp9;
-  let obj = channelId(stateFromStores[12]);
-  const cResult = obj.c(79);
-  channelId = channelId.channelId;
-  const blockedUserId = channelId.blockedUserId;
-  const tmp4 = closure_14();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== blockedUserId) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-    cResult[1] = blockedUserId;
-    cResult[2] = A;
-    tmp7 = A;
-  } else {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  const tmpResult = channelId(stateFromStores[13]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-    let items1 = [ChannelStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  if (cResult[4] !== channelId) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-    cResult[4] = channelId;
-    cResult[5] = tmp11;
-    tmp10 = tmp11;
-  } else {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  const tmpResult2 = channelId(stateFromStores[13]);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp10);
-  const tmp13 = cResult[6];
-  if (stateFromStores1 != null) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  if (tmp13 === undefined) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  const user = UserStore.getUser(blockedUserId);
-  if (cResult[27] === channelId) {
-    class A {
-      constructor() {
-        return RelationshipStore.isBlocked(blockedUserId);
-      }
-    }
-  }
-  function handleDismissAndStay() {
-    let items1;
-    let items2;
-    const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet();
-    setDismissalTimeForUser(blockedUserId);
-    const obj2 = { action: metroImportAll.CLICK_TO_STAY, channel_id: channelId, blocked_user_ids: items1, ignored_user_ids: items2, warning_surface: constants.POST_JOIN_SHEET };
-    const track = AnalyticsUtilsDefault.track;
-    const VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT = AnalyticEvents.VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT;
-    AnalyticsUtilsDefault;
-    if (stateFromStores) {
-      const items = [blockedUserId];
-      items1 = items;
-    } else {
-      items1 = [];
-    }
-    if (stateFromStores) {
-      items2 = [];
-    } else {
-      items2 = [blockedUserId];
-    }
-    track(VOICE_CHANNEL_BLOCKED_USER_WARNING_ENGAGEMENT, obj2);
-  }
-  cResult[27] = channelId;
-  cResult[28] = stateFromStores;
-  cResult[29] = blockedUserId;
-  cResult[30] = handleDismissAndStay;
-}) : (function BlockedUserInVoiceChannelActionSheet(arg0) {
+const result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
+
+export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   let blockedUserId;
   let channel_id;
   let formatToPlainString;
@@ -198,49 +80,49 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUse
   const tmp8 = closure_11;
   if (stateFromStores) {
     let items2 = [string(t.cpgfFk), "\n", ];
-    const intl3 = tmp2(tmp3[17]).intl;
+    const intl3 = tmp2(tmp3[12]).intl;
     items2[2] = intl3.string(require("intl").t.UKQ4Cn);
     obj3.children = items2;
     tmp9 = obj3;
   } else {
     const items3 = [string(t.xj3j47), "\n", ];
-    const intl2 = tmp2(tmp3[17]).intl;
+    const intl2 = tmp2(tmp3[12]).intl;
     items3[2] = intl2.string(require("intl").t.wWueRW);
     obj3.children = items3;
     tmp9 = obj3;
   }
   const obj4 = { style: tmp.container, children: items4 };
   const tmp7Result = closure_12(tmp8, tmp9);
-  const ActionSheet = tmp2(tmp3[18]).ActionSheet;
-  const obj5 = { source: blockedUserId(tmp3[20]), style: tmp.headerImage };
-  const tmp13 = blockedUserId(tmp3[19]);
+  const ActionSheet = tmp2(tmp3[13]).ActionSheet;
+  const obj5 = { source: blockedUserId(tmp3[15]), style: tmp.headerImage };
+  const tmp13 = blockedUserId(tmp3[14]);
   items4 = [closure_13(tmp13, obj5), , , ];
   const obj6 = { style: tmp.headerText, children: items5 };
   const obj7 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: tmp.centerText, children: intl4.string(require("intl").t["1/gpFh"]) };
-  const Text = tmp2(tmp3[21]).Text;
-  intl4 = tmp2(tmp3[17]).intl;
+  const Text = tmp2(tmp3[16]).Text;
+  intl4 = tmp2(tmp3[12]).intl;
   items5 = [closure_13(Text, obj7), ];
   const obj8 = { variant: "text-md/medium", style: tmp.centerText, children: tmp7Result };
   items5[1] = closure_13(require("Text/Text").Text, obj8);
   items4[1] = closure_12(View, obj6);
-  const TableRowGroup = tmp2(tmp3[22]).TableRowGroup;
-  const TableRow = tmp2(tmp3[23]).TableRow;
+  const TableRowGroup = tmp2(tmp3[17]).TableRowGroup;
+  const TableRow = tmp2(tmp3[18]).TableRow;
   if (null != user) {
     const obj9 = { size: require("native").AvatarSizes.SMALL, user, guildId: guild_id };
-    const Avatar = tmp2(tmp3[24]).Avatar;
+    const Avatar = tmp2(tmp3[19]).Avatar;
     guild_id = undefined;
     if (stateFromStores1 != null) {
       guild_id = stateFromStores1.guild_id;
     }
     tmp11Result = tmp11(Avatar, obj9);
   } else {
-    tmp11Result = tmp11(tmp2(tmp3[25]).UserIcon, {});
+    tmp11Result = tmp11(tmp2(tmp3[20]).UserIcon, {});
   }
   const obj10 = { icon: tmp11Result, label: formatToPlainString(w0YvUo, { userName: username }) };
-  const intl5 = tmp2(tmp3[17]).intl;
+  const intl5 = tmp2(tmp3[12]).intl;
   formatToPlainString = intl5.formatToPlainString;
   username = undefined;
-  w0YvUo = tmp2(tmp3[17]).t.w0YvUo;
+  w0YvUo = tmp2(tmp3[12]).t.w0YvUo;
   if (user != null) {
     username = user.username;
   }
@@ -248,8 +130,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUse
   const obj12 = { hasIcons: true, children: items6 };
   items6 = [closure_13(TableRow, obj10), ];
   const obj13 = { icon: closure_13(require("MicrophoneIcon").MicrophoneIcon, {}), label: intl6.string(require("intl").t["+4O9nX"]) };
-  const TableRow2 = tmp2(tmp3[23]).TableRow;
-  intl6 = tmp2(tmp3[17]).intl;
+  const TableRow2 = tmp2(tmp3[18]).TableRow;
+  intl6 = tmp2(tmp3[12]).intl;
   items6[1] = closure_13(TableRow2, obj13);
   items4[2] = closure_12(TableRowGroup, obj12);
   const obj14 = { style: tmp.buttonGroup, children: items7 };
@@ -281,8 +163,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUse
     },
     text: intl7.string(require("intl").t["Y56/oK"])
   };
-  const Button = tmp2(tmp3[27]).Button;
-  intl7 = tmp2(tmp3[17]).intl;
+  const Button = tmp2(tmp3[22]).Button;
+  intl7 = tmp2(tmp3[12]).intl;
   items7 = [closure_13(Button, obj15), ];
   const obj16 = {
     size: "lg",
@@ -312,12 +194,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedUse
     },
     text: intl8.string(require("intl").t.bCcJST)
   };
-  const Button2 = tmp2(tmp3[27]).Button;
-  intl8 = tmp2(tmp3[17]).intl;
+  const Button2 = tmp2(tmp3[22]).Button;
+  intl8 = tmp2(tmp3[12]).intl;
   items7[1] = closure_13(Button2, obj16);
   items4[3] = closure_12(View, obj14);
   return closure_13(ActionSheet, obj11);
-});
-const result = size.fileFinishedImporting("modules/shared_space_warnings/native/BlockedUserInVoiceChannelActionSheet.tsx");
-
-export default tmp6;
+};

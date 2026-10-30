@@ -1,11 +1,11 @@
-// Module ID: 15569
-// Function ID: 15570
+// Module ID: 15609
+// Function ID: 15610
 // Name: muteCustomJoinSound
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: default
 
-// Module 15569 (muteCustomJoinSound)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 15609 (muteCustomJoinSound)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/soundboard/muteCustomJoinSound.tsx");

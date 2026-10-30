@@ -1,17 +1,16 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14618
+// Function ID: 14619
 // Name: AppStoreOverlayStarRating
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 10013, 10015, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 10040, 10042, 2]
+// Exports: default
 
-// Module 14585 (AppStoreOverlayStarRating)
+// Module 14618 (AppStoreOverlayStarRating)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 10013 */;
+import nativeDefault from "native" /* 575 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 10040 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,78 +19,8 @@ let rect;
 let size;
 let size1;
 let tmp5;
-const StarIcon2 = tmp5(10015);
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { row: { flexDirection: "row", alignItems: "center", gap: 2 }, star: size, starIcon: size1, starFillMask: rect };
-size = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "relative" };
-createStyles = createStyles.createStyles;
-size1 = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "absolute", left: 0, top: 0 };
-rect = { position: "absolute", left: 0, top: 0, height: nativeDefault.space.PX_10, overflow: "hidden" };
-let closure_6 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FractionalStar(fillAmount) {
-  let StarIcon;
-  let items;
-  let items1;
-  let obj6;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(10);
-  fillAmount = fillAmount.fillAmount;
-  const tmp4 = closure_6();
-  if (cResult[0] !== tmp4.starIcon) {
-    const obj2 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    const StarOutlineIcon = tmp(10013).StarOutlineIcon;
-    const tmp8 = React3(StarOutlineIcon, obj2);
-    cResult[0] = tmp4.starIcon;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === fillAmount) {
-    if (cResult[3] === tmp4.starFillMask) {
-      let tmp9;
-      if (cResult[4] === tmp4.starIcon) {
-        tmp9 = cResult[5];
-      }
-      if (cResult[6] === tmp4.star) {
-        if (cResult[7] === tmp5) {
-          let tmp14;
-          if (cResult[8] === tmp9) {
-            tmp14 = cResult[9];
-          }
-          return tmp14;
-        }
-      }
-      const obj3 = { style: tmp4.star, importantForAccessibility: "no", accessibilityElementsHidden: true, children: items };
-      items = [tmp5, tmp9];
-      const tmp17 = hasOwnProperty(View, obj3);
-      cResult[6] = tmp4.star;
-      cResult[7] = tmp5;
-      cResult[8] = tmp9;
-      cResult[9] = tmp17;
-      tmp14 = tmp17;
-    }
-  }
-  let tmp10 = fillAmount > 0;
-  if (tmp10) {
-    const obj4 = { style: items1, children: React3(StarIcon, obj6) };
-    items1 = [tmp4.starFillMask, ];
-    items1[1] = { width: nativeDefault.space.PX_10 * fillAmount };
-    const obj5 = { width: nativeDefault.space.PX_10 * fillAmount };
-    obj6 = { size: "custom", color: nativeDefault.colors.TEXT_MUTED, style: tmp4.starIcon };
-    StarIcon = tmp(10015).StarIcon;
-    tmp10 = React3(View, obj4);
-  }
-  cResult[2] = fillAmount;
-  cResult[3] = tmp4.starFillMask;
-  cResult[4] = tmp4.starIcon;
-  cResult[5] = tmp10;
-  tmp9 = tmp10;
-}) : (function FractionalStar(fillAmount) {
+const StarIcon2 = tmp5(10042);
+function FractionalStar(fillAmount) {
   let StarIcon;
   let items;
   let items1;
@@ -115,59 +44,27 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Fractio
   }
   items[1] = tmp4Result;
   return tmp2(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayStarRating(fillAmounts) {
-  let tmp3;
-  let obj = react2;
-  const cResult = obj.c(6);
-  fillAmounts = fillAmounts.fillAmounts;
-  const tmp2 = closure_6();
-  const row = tmp2.row;
-  if (cResult[0] !== fillAmounts) {
-    let tmp5;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function p(fillAmount, arg1) {
-        const obj = { fillAmount };
-        return closure_1_4(closure_1_7, obj, arg1);
-      };
-      cResult[2] = fn;
-      tmp5 = fn;
-    } else {
-      tmp5 = cResult[2];
-    }
-    const mapped = fillAmounts.map(tmp5);
-    cResult[0] = fillAmounts;
-    cResult[1] = mapped;
-    tmp3 = mapped;
-  } else {
-    tmp3 = cResult[1];
-  }
-  if (cResult[3] === tmp2.row) {
-    let tmp7;
-    if (cResult[4] === tmp3) {
-      tmp7 = cResult[5];
-    }
-    return tmp7;
-  }
-  const tmp8 = React3(View, { style: row, children: tmp3 });
-  cResult[3] = tmp2.row;
-  cResult[4] = tmp3;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function AppStoreOverlayStarRating(fillAmounts) {
+}
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { row: { flexDirection: "row", alignItems: "center", gap: 2 }, star: size, starIcon: size1, starFillMask: rect };
+size = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "relative" };
+createStyles = createStyles.createStyles;
+size1 = { width: nativeDefault.space.PX_10, height: nativeDefault.space.PX_10, position: "absolute", left: 0, top: 0 };
+rect = { position: "absolute", left: 0, top: 0, height: nativeDefault.space.PX_10, overflow: "hidden" };
+let closure_6 = createStyles(obj);
+size = size_mod;
+const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStarRating.tsx");
+
+export default function AppStoreOverlayStarRating(fillAmounts) {
   fillAmounts = fillAmounts.fillAmounts;
   let obj = {
     style: closure_6().row,
     children: fillAmounts.map((fillAmount, index) => {
       const obj = { fillAmount };
-      return closure_1_4(closure_1_7, obj, index);
+      return closure_1_4(FractionalStar, obj, index);
     })
   };
   return React3(View, obj);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStarRating.tsx");
-
-export default tmp5;
+};

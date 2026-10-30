@@ -1,14 +1,14 @@
-// Module ID: 15538
-// Function ID: 15539
+// Module ID: 15578
+// Function ID: 15579
 // Name: VoiceChannelBlockedUserStore
-// Dependencies: [4947, 5668, 15539, 504, 584, 2]
+// Dependencies: [4951, 5674, 15579, 504, 572, 2]
 
-// Module 15538 (VoiceChannelBlockedUserStore)
+// Module 15578 (VoiceChannelBlockedUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import handleBlockedOrIgnoredUserVoiceChannelJoinDefault from "handleBlockedOrIgnoredUserVoiceChannelJoin" /* 15539 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import handleBlockedOrIgnoredUserVoiceChannelJoinDefault from "handleBlockedOrIgnoredUserVoiceChannelJoin" /* 15579 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;
@@ -91,15 +91,15 @@ class VoiceChannelBlockedUserStore extends Store {
   initialize() {
     this.waitFor(RelationshipStore, VoiceStateStore);
   }
-  getBlockedUsersForVoiceChannel(voiceStatesForChannelAlt) {
-    let tmp = closure_4[voiceStatesForChannelAlt];
+  getBlockedUsersForVoiceChannel(channelId) {
+    let tmp = closure_4[channelId];
     if (tmp == null) {
       tmp = set;
     }
     return tmp;
   }
-  getIgnoredUsersForVoiceChannel(voiceStatesForChannelAlt) {
-    let tmp = closure_5[voiceStatesForChannelAlt];
+  getIgnoredUsersForVoiceChannel(channelId) {
+    let tmp = closure_5[channelId];
     if (tmp == null) {
       tmp = set;
     }

@@ -1,113 +1,25 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 10030
+// Function ID: 10031
 // Name: MessageEmojiActionSheet
-// Dependencies: [19, 17, 1084, 21, 5005, 1381, 558, 576, 1278, 1264, 10004, 5302, 10010, 10011, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 1376, 1267, 5267, 1253, 10031, 10037, 10038, 2]
+// Exports: default
 
-// Module 10003 (MessageEmojiActionSheet)
+// Module 10030 (MessageEmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import StandardEmojiContentDefault from "StandardEmojiContent" /* 10004 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 10011 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, nonce, obj1, trackResult;
+let BottomSheet, _require;
 
-const View = react_native.View;
-const AnalyticEvents = Constants.AnalyticEvents;
-const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-createStyles = createStyles.createStyles;
-let num = 0;
-if (PlatformUtils.isAndroid()) {
-  num = 16;
-}
-let obj = { contentWrapper: { paddingHorizontal: 16, paddingBottom: num } };
-let closure_6 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageStandardEmojiActionSheet(emojiNode) {
-  let tmp11;
-  let tmp7;
-  let obj = nonce(576);
-  const cResult = obj.c(7);
-  emojiNode = emojiNode.emojiNode;
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = nonce(1278);
-    const v4Result = tmpResult.v4();
-    cResult[0] = v4Result;
-    nonce = v4Result;
-  } else {
-    nonce = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        obj = closure_1(closure_2[9]);
-        obj1 = { nonce: closure_0 };
-        trackResult = obj.track(AnalyticEvents.CLOSE_POPOUT, obj1);
-        return;
-      }
-    }
-    cResult[1] = S;
-    tmp7 = S;
-  } else {
-    class S {
-      constructor() {
-        obj = closure_1(closure_2[9]);
-        obj1 = { nonce: closure_0 };
-        trackResult = obj.track(AnalyticEvents.CLOSE_POPOUT, obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[2] !== emojiNode) {
-    class S {
-      constructor() {
-        obj = closure_1(closure_2[9]);
-        obj1 = { nonce: closure_0 };
-        trackResult = obj.track(AnalyticEvents.CLOSE_POPOUT, obj1);
-        return;
-      }
-    }
-    cResult[2] = emojiNode;
-    cResult[3] = jsx(StandardEmojiContentDefault, { emojiNode, nonce });
-    const tmp10 = jsx(StandardEmojiContentDefault, { emojiNode, nonce });
-  } else {
-    class S {
-      constructor() {
-        obj = closure_1(closure_2[9]);
-        obj1 = { nonce: closure_0 };
-        trackResult = obj.track(AnalyticEvents.CLOSE_POPOUT, obj1);
-        return;
-      }
-    }
-  }
-  if (cResult[4] === tmp4.contentWrapper) {
-    class S {
-      constructor() {
-        obj = closure_1(closure_2[9]);
-        obj1 = { nonce: closure_0 };
-        trackResult = obj.track(AnalyticEvents.CLOSE_POPOUT, obj1);
-        return;
-      }
-    }
-    return tmp11;
-  }
-  BottomSheet = tmp(5302).BottomSheet;
-  tmp11 = <BottomSheet startExpanded onDismiss={tmp7}>{null}</BottomSheet>;
-  cResult[4] = tmp4.contentWrapper;
-  cResult[5] = tmp8;
-  cResult[6] = tmp11;
-}) : (function MessageStandardEmojiActionSheet(emojiNode) {
-  let _require;
+function MessageStandardEmojiActionSheet(emojiNode) {
+  let nonce;
+  _require = undefined;
   emojiNode = emojiNode.emojiNode;
   const tmp = closure_6();
   let obj = require("v1");
@@ -119,98 +31,11 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
     const obj2 = { nonce };
     obj.track(AnalyticEvents.CLOSE_POPOUT, obj2);
   }}>{null}</BottomSheet>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageCustomEmojiActionSheet(emojiNode) {
-  let _require;
-  let emoji;
-  let expressionSourceApplication;
-  let expressionSourceGuild;
-  let hasJoinedEmojiSourceGuild;
-  let sourceType;
-  let tmp5;
-  let obj = require("react");
-  const cResult = obj.c(14);
+}
+function MessageCustomEmojiActionSheet(emojiNode) {
+  let nonce;
   emojiNode = emojiNode.emojiNode;
-  const tmp4 = closure_6();
-  if (cResult[0] !== emojiNode.id) {
-    let obj2 = { emojiId: emojiNode.id };
-    cResult[0] = emojiNode.id;
-    cResult[1] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult = require("useEmojiAndSource");
-  const emojiAndSource = tmpResult.useEmojiAndSource(tmp5);
-  ({ sourceType, expressionSourceGuild, expressionSourceApplication, hasJoinedEmojiSourceGuild, emoji } = emojiAndSource);
-  if (emojiAndSource.isFetching) {
-    return null;
-  } else {
-    let tmp8;
-    let tmp10;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmpResult2 = require("v1");
-      const v4Result = tmpResult2.v4();
-      cResult[2] = v4Result;
-      tmp8 = v4Result;
-    } else {
-      tmp8 = cResult[2];
-    }
-    _require = tmp8;
-    const _Symbol2 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function y() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { nonce };
-        obj.track(AnalyticEvents.CLOSE_POPOUT, obj2);
-      };
-      cResult[3] = fn;
-      tmp10 = fn;
-    } else {
-      tmp10 = cResult[3];
-    }
-    if (cResult[4] === emoji) {
-      if (cResult[5] === emojiNode) {
-        if (cResult[6] === expressionSourceApplication) {
-          if (cResult[7] === expressionSourceGuild) {
-            if (cResult[8] === hasJoinedEmojiSourceGuild) {
-              let tmp11;
-              if (cResult[9] === sourceType) {
-                tmp11 = cResult[10];
-              }
-              if (cResult[11] === tmp4.contentWrapper) {
-                let tmp15;
-                if (cResult[12] === tmp11) {
-                  tmp15 = cResult[13];
-                }
-                return tmp15;
-              }
-              BottomSheet = tmp(5302).BottomSheet;
-              const tmp18 = <BottomSheet startExpanded onDismiss={tmp10}>{null}</BottomSheet>;
-              cResult[11] = tmp4.contentWrapper;
-              cResult[12] = tmp11;
-              cResult[13] = tmp18;
-              tmp15 = tmp18;
-            }
-          }
-        }
-      }
-    }
-    const tmp14 = jsx(CustomEmojiContentDefault, { emojiNode, sourceType, expressionSourceApplication, expressionSourceGuild, customEmojiFromJoinedGuild: emoji, hasJoinedEmojiSourceGuild, nonce: tmp8 });
-    cResult[4] = emoji;
-    cResult[5] = emojiNode;
-    cResult[6] = expressionSourceApplication;
-    cResult[7] = expressionSourceGuild;
-    cResult[8] = hasJoinedEmojiSourceGuild;
-    cResult[9] = sourceType;
-    cResult[10] = tmp14;
-    tmp11 = tmp14;
-  }
-}) : (function MessageCustomEmojiActionSheet(emojiNode) {
-  emojiNode = emojiNode.emojiNode;
-  let _require;
+  _require = undefined;
   const tmp = closure_6();
   let obj = require("useEmojiAndSource");
   let obj2 = { emojiId: emojiNode.id };
@@ -221,48 +46,36 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
     const tmp2Result = require("v1");
     const v4Result = tmp2Result.v4();
     _require = v4Result;
-    BottomSheet = tmp2(5302).BottomSheet;
+    BottomSheet = tmp2(5267).BottomSheet;
     return <BottomSheet startExpanded onDismiss={function onDismiss() {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { nonce };
       obj.track(AnalyticEvents.CLOSE_POPOUT, obj2);
     }}>{null}</BottomSheet>;
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageEmojiActionSheet(emojiNode) {
-  let tmp2;
-  const obj = react2;
-  const cResult = obj.c(2);
-  emojiNode = emojiNode.emojiNode;
-  if (cResult[0] !== emojiNode) {
-    let tmp3Result;
-    if ("surrogate" in emojiNode) {
-      const obj2 = { emojiNode };
-      tmp3Result = tmp3(closure_7, obj2);
-    } else {
-      const obj3 = { emojiNode };
-      tmp3Result = tmp3(closure_8, obj3);
-    }
-    cResult[0] = emojiNode;
-    cResult[1] = tmp3Result;
-    tmp2 = tmp3Result;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : (function MessageEmojiActionSheet(emojiNode) {
+}
+const View = react_native.View;
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+createStyles = createStyles.createStyles;
+let num = 0;
+if (PlatformUtils.isAndroid()) {
+  num = 16;
+}
+let obj = { contentWrapper: { paddingHorizontal: 16, paddingBottom: num } };
+let closure_6 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/messages/native/emoji/MessageEmojiActionSheet.tsx");
+
+export default function MessageEmojiActionSheet(emojiNode) {
   let tmpResult;
   emojiNode = emojiNode.emojiNode;
   if ("surrogate" in emojiNode) {
     const obj2 = { emojiNode };
-    tmpResult = tmp(closure_7, obj2);
+    tmpResult = tmp(MessageStandardEmojiActionSheet, obj2);
   } else {
     const obj = { emojiNode };
-    tmpResult = tmp(closure_8, obj);
+    tmpResult = tmp(MessageCustomEmojiActionSheet, obj);
   }
   return tmpResult;
-});
-const result = size.fileFinishedImporting("modules/messages/native/emoji/MessageEmojiActionSheet.tsx");
-
-export default tmp4;
+};

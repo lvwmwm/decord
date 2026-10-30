@@ -1,9 +1,9 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6731
+// Function ID: 6732
 // Name: TinyBroncoConstants
 // Dependencies: [2]
 
-// Module 6724 (TinyBroncoConstants)
+// Module 6731 (TinyBroncoConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoConstants.tsx");

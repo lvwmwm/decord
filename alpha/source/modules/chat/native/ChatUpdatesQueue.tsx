@@ -1,9 +1,9 @@
-// Module ID: 11310
-// Function ID: 11311
+// Module ID: 11513
+// Function ID: 11514
 // Name: ChatUpdatesQueue
 // Dependencies: [17, 2]
 
-// Module 11310 (ChatUpdatesQueue)
+// Module 11513 (ChatUpdatesQueue)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ const DCDChatBlockerManager = react_native.NativeModules.DCDChatBlockerManager;
 const result = size.fileFinishedImporting("modules/chat/native/ChatUpdatesQueue.tsx");
 class ChatUpdatesQueue {
   constructor(getReactTag, onFlushItem) {
-    let obj = Object.create(new.target.prototype);
+    const obj = Object.create(new.target.prototype);
     obj.blockers = new Set();
     obj.queue = [];
     obj.queueStartTimestamp = null;

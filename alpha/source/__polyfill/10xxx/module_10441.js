@@ -1,12 +1,12 @@
 // Module ID: 10441
 // Function ID: 10442
-// Dependencies: [41, 42, 93, 95, 98, 10436, 10284, 10285, 10438]
+// Dependencies: [41, 42, 93, 95, 98, 10436, 10309, 10310, 10438]
 
 // Module 10441
-import EmptyDuration from "EmptyDuration" /* 10284 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10285 */;
-import _mod10436 from "module_10436" /* 10436 */;
-import _mod10438 from "module_10438" /* 10438 */;
+import EmptyDuration from "EmptyDuration" /* 10309 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10310 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10436 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10438 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,12 +28,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeUnitAgoFormatParser {
+class RUTimeUnitAgoFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitAgoFormatParser);
+    _classCallCheck(this, RUTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,11 +45,11 @@ class UKTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitAgoFormatParser, _mod10438.AbstractParserWithLeftBoundaryChecking);
+_inherits(RUTimeUnitAgoFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftBoundaryChecking);
 const entry = {
   key: "innerPatternString",
   value: function innerPatternString(arg0) {
-    return "(" + _mod10436.TIME_UNITS_PATTERN + ")\\s{0,5}\u0442\u043E\u043C\u0443(?=(?:\\W|$))";
+    return "(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")\\s{0,5}\u043D\u0430\u0437\u0430\u0434(?=(?:\\W|$))";
   }
 };
 const items = [
@@ -57,7 +57,7 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10436.parseDuration(arg1[1]);
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
       const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
       const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
       return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
@@ -65,4 +65,4 @@ const items = [
   }
 ];
 
-export default _createClass(UKTimeUnitAgoFormatParser, items);
+export default _createClass(RUTimeUnitAgoFormatParser, items);

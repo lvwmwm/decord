@@ -1,81 +1,20 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11238
+// Function ID: 11239
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1243, 1389, 558, 576, 504, 8179, 11009, 2]
+// Dependencies: [1232, 1384, 504, 8360, 11239, 2]
+// Exports: useSafetyAlertsSettingOrDefault
 
-// Module 11008 (useSafetyAlertsSettingOrDefault)
+// Module 11238 (useSafetyAlertsSettingOrDefault)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import useUserIsTeen from "useUserIsTeen" /* 8179 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11009 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import useUserIsTeen from "useUserIsTeen" /* 8360 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11239 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyAlertsSettingOrDefault() {
-  let settings;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react;
-  const cResult = obj.c(3);
-  const currentUser = UserStore.getCurrentUser();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserSettingsProtoStore];
-    const fn = function o() {
-      const privacy = settings.settings.privacy;
-      let flag;
-      if (privacy != null) {
-        if (privacy.inappropriateConversationWarnings != null) {
-          flag = iter.value;
-        }
-      }
-      if (flag == null) {
-        flag = true;
-      }
-      return flag;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult3 = useUserIsTeen;
-  let userIsTeen = tmpResult3.useUserIsTeen();
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "useSafetyAlertsSettingOrDefault" };
-    cResult[2] = obj2;
-    tmp9 = obj2;
-  } else {
-    tmp9 = cResult[2];
-  }
-  let tmp10 = !userIsTeen;
-  const tmpResult4 = InappropriateConversationsDefaultOn;
-  if (userIsTeen) {
-    tmp10 = !tmpResult4.useIsEligibleForInappropriateConversationDefaultOn(tmp9);
-  }
-  let tmp11 = !tmp10;
-  if (tmp10) {
-    if (!userIsTeen) {
-      let isStaffResult;
-      if (currentUser != null) {
-        isStaffResult = currentUser.isStaff();
-      }
-      let flag = true;
-      userIsTeen = true === isStaffResult;
-    }
-    if (userIsTeen) {
-      userIsTeen = stateFromStores;
-    }
-    tmp11 = userIsTeen;
-  }
-  return tmp11;
-}) : (function useSafetyAlertsSettingOrDefault() {
+const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
+
+export function useSafetyAlertsSettingOrDefault() {
   let settings;
   const currentUser = UserStore.getCurrentUser();
   const items = [UserSettingsProtoStore];
@@ -116,7 +55,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyA
     tmp4 = userIsTeen;
   }
   return tmp4;
-});
-const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");
-
-export const useSafetyAlertsSettingOrDefault = tmp2;
+}

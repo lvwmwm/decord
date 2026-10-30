@@ -1,12 +1,12 @@
-// Module ID: 10842
-// Function ID: 10843
+// Module ID: 10865
+// Function ID: 10866
 // Name: createProxyTicket
-// Dependencies: [5, 502, 1084, 1294, 5661, 2]
+// Dependencies: [5, 502, 1072, 1283, 5667, 2]
 // Exports: createProxyTicket, prefetchProxyTicket, rememberProxyTicket
 
-// Module 10842 (createProxyTicket)
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 10865 (createProxyTicket)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _createProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

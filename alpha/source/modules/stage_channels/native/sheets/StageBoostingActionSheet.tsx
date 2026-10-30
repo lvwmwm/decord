@@ -1,21 +1,21 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6758
+// Function ID: 6759
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 5006, 4879, 4937, 6696, 1084, 1391, 21, 504, 4865, 1125, 5247, 1264, 6752, 6746, 5300, 6754, 5281, 6755, 10799, 15435, 5707, 15439, 2]
+// Dependencies: [19, 5010, 4880, 4941, 6703, 1072, 1386, 21, 504, 4866, 1114, 5253, 1253, 6759, 6753, 5588, 6761, 5629, 6762, 10817, 15475, 5712, 15479, 2]
 // Exports: default
 
-// Module 6751 (StageBoostingActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4865 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6696 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6755 */;
+// Module 6758 (StageBoostingActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4866 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6703 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6762 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -92,9 +92,9 @@ export default function StageBoostingActionSheet(channel) {
     }
     if (premiumTier1 === closure_8.TIER_3) {
       let string2Result;
-      const intl2 = tmp(1125).intl;
+      const intl2 = tmp(1114).intl;
       const string2 = intl2.string;
-      const t2 = tmp(1125).t;
+      const t2 = tmp(1114).t;
       if (tmp9) {
         string2Result = string2(t2.tJmOuw);
       } else {
@@ -102,9 +102,9 @@ export default function StageBoostingActionSheet(channel) {
       }
       stringResult = string2Result;
     }
-    const intl3 = tmp(1125).intl;
+    const intl3 = tmp(1114).intl;
     const string3 = intl3.string;
-    const t3 = tmp(1125).t;
+    const t3 = tmp(1114).t;
     if (stateFromStores2) {
       let string3Result;
       if (tmp9) {
@@ -123,23 +123,23 @@ export default function StageBoostingActionSheet(channel) {
       const obj3 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: constants.DISMISS };
       obj2.track(metroImportDefault.BOOSTING_UPSELL_CLICKED, obj3);
     }
-    const tmpResult3 = channel(6752);
+    const tmpResult3 = channel(6759);
     dependencyMap = tmpResult3.useActualStageSpeakerCount(channel.id);
-    const tmpResult4 = channel(6752);
-    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6746).StageChannelParticipantNamedIndex.AUDIENCE);
-    stateFromStores2(5300)(() => {
+    const tmpResult4 = channel(6759);
+    useReducedMotion = tmpResult4.useStageParticipantsCount(channel.id, tmp(6753).StageChannelParticipantNamedIndex.AUDIENCE);
+    stateFromStores2(5588)(() => {
       const obj = AnalyticsUtilsDefault;
       const obj2 = { guild_id: channel.guild_id, type: map1.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, listener_count: closure_2 + useReducedMotion };
       obj.track(metroImportDefault.BOOSTING_UPSELL_VIEWED, obj2);
     });
     if (tmp9) {
       let obj3 = { size: "lg", children: items5 };
-      const ButtonGroup = tmp(6754).ButtonGroup;
+      const ButtonGroup = tmp(6761).ButtonGroup;
       let obj4 = {
         variant: "experimental_premium-primary",
         size: "lg",
         shiny: !stateFromStores1,
-        text: intl6.string(channel(1125).t.Uj0md3),
+        text: intl6.string(channel(1114).t.Uj0md3),
         onPress: function handleBoost() {
               const obj = ActionSheetActionCreatorsDefault;
               obj.hideActionSheet(STAGE_BOOSTING_SHEET_KEY);
@@ -153,43 +153,43 @@ export default function StageBoostingActionSheet(channel) {
               obj5.track(metroImportDefault.BOOSTING_UPSELL_CLICKED, obj6);
             }
       };
-      const Button2 = tmp(5281).Button;
-      intl6 = tmp(1125).intl;
+      const Button2 = tmp(5629).Button;
+      intl6 = tmp(1114).intl;
       items5 = [closure_14(Button2, obj4), ];
-      let obj5 = { variant: "secondary", size: "lg", text: intl7.string(channel(1125).t.f3Pet9), onPress: handleClose };
-      const Button3 = tmp(5281).Button;
-      intl7 = tmp(1125).intl;
+      let obj5 = { variant: "secondary", size: "lg", text: intl7.string(channel(1114).t.f3Pet9), onPress: handleClose };
+      const Button3 = tmp(5629).Button;
+      intl7 = tmp(1114).intl;
       items5[1] = closure_14(Button3, obj5);
       tmp21Result = closure_15(ButtonGroup, obj3);
       tmp21 = closure_14;
     } else {
       let obj7;
       tmp21 = closure_14;
-      const Button = tmp(5281).Button;
+      const Button = tmp(5629).Button;
       if (stateFromStores2) {
-        let obj6 = { variant: "secondary", size: "lg", text: intl5.string(channel(1125).t.WAI6xu), onPress: handleClose };
-        intl5 = tmp(1125).intl;
+        let obj6 = { variant: "secondary", size: "lg", text: intl5.string(channel(1114).t.WAI6xu), onPress: handleClose };
+        intl5 = tmp(1114).intl;
         obj7 = obj6;
       } else {
-        obj7 = { variant: "primary", size: "lg", text: intl4.string(channel(1125).t["NX+WJN"]), onPress: handleClose };
-        intl4 = tmp(1125).intl;
+        obj7 = { variant: "primary", size: "lg", text: intl4.string(channel(1114).t["NX+WJN"]), onPress: handleClose };
+        intl4 = tmp(1114).intl;
       }
       tmp21Result = tmp21(Button, obj7);
     }
     const obj8 = { title: string3Result1, description: stringResult, illustration: tmp21Result2, actions: tmp21Result };
-    const PromoSheet = tmp(10799).PromoSheet;
+    const PromoSheet = tmp(10817).PromoSheet;
     if (tmp9) {
-      tmp21Result2 = tmp21(tmp(15435).HoldingGemSpotIllustration, { accessible: false });
+      tmp21Result2 = tmp21(tmp(15475).HoldingGemSpotIllustration, { accessible: false });
     } else {
-      const obj9 = { source: stateFromStores2(15439) };
-      const tmp19Result = stateFromStores2(5707);
+      const obj9 = { source: stateFromStores2(15479) };
+      const tmp19Result = stateFromStores2(5712);
       tmp21Result2 = tmp21(tmp19Result, obj9);
     }
     return tmp21(PromoSheet, obj8);
   }
-  const intl = tmp(1125).intl;
+  const intl = tmp(1114).intl;
   const string = intl.string;
-  const t = tmp(1125).t;
+  const t = tmp(1114).t;
   if (tmp9) {
     stringResult = string(t["8/uDSF"]);
   } else {

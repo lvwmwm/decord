@@ -1,227 +1,100 @@
-// Module ID: 18558
-// Function ID: 18559
+// Module ID: 18617
+// Function ID: 18618
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6834, 558, 576, 10880, 18559, 18560, 6868, 2029, 5661, 2]
+// Dependencies: [32, 5, 19, 6841, 10903, 18618, 18619, 6875, 2026, 5667, 2]
+// Exports: default
 
-// Module 18558 (useFrameLifecycle)
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 18617 (useFrameLifecycle)
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 
 let metroImportDefault;
 let metroRequire;
-function useFrameLifecycleState(applicationId) {
-  let closure_3;
+({ isLaunched: metroRequire, makeFrameId: metroImportDefault } = FramesConstants);
+const FrameLifecycleState = { Loading: "loading", AwaitingLaunch: "awaiting-launch", Launched: "launched", RenderingElsewhere: "rendering-elsewhere", NoApplication: "no-application", DoesNotSupportSurface: "does-not-support-surface", Error: "error" };
+let result = size.fileFinishedImporting("modules/frames/useFrameLifecycle.tsx");
+
+export default function useFrameLifecycle(applicationId) {
+  let AwaitingLaunch;
   let data;
-  let first;
   let isLoading;
-  let items2;
   let obj10;
   applicationId = applicationId.applicationId;
-  const surface = applicationId.surface;
-  _slicedToArray = undefined;
+  let surface = applicationId.surface;
+  let callback;
+  let state;
+  let obj = react;
   const items = [applicationId, surface];
-  const memo = react.useMemo(() => metroImportDefault(applicationId, surface), items);
+  const memo = react.useMemo(() => closure_2_7(applicationId, surface), items);
   const items1 = [memo];
   const memo1 = react.useMemo(() => surface, items1);
-  const tmp3 = surface(memo[7])(memo);
-  const tmp4 = surface(memo[8])(memo);
-  const obj = applicationId(memo[9]);
-  const application = obj.useApplication(applicationId);
+  const tmp3 = memo1(callback[5])(memo);
+  const tmp4 = memo1(callback[6])(memo);
+  let obj2 = applicationId(callback[7]);
+  const application = obj2.useApplication(applicationId);
   ({ data, isLoading } = application);
-  const obj2 = applicationId(memo[10]);
-  const result = obj2.isEmbeddedApplication(data);
-  const tmp7 = null != surface(memo[11])(applicationId);
-  [first, _slicedToArray] = react.useState(null);
-  const obj3 = { surface: memo1, setFailed: react.useCallback(() => closure_3(memo), items2), lifecycle: obj10 };
-  items2 = [memo];
+  let obj3 = applicationId(callback[8]);
+  const result = obj3.isEmbeddedApplication(data);
+  const tmp7 = null != memo1(callback[9])(applicationId);
+  const tmp8 = state(react.useState(null), 2);
+  let closure_3 = tmp8[1];
+  const items2 = [memo];
+  const first = tmp8[0];
+  callback = react.useCallback(() => closure_3(memo), items2);
   if (closure_6(tmp3)) {
     let obj5;
     if (tmp4) {
-      obj5 = { state: obj.RenderingElsewhere };
-      const obj4 = { state: obj.RenderingElsewhere };
+      let obj4 = { state: obj.RenderingElsewhere };
+      obj5 = obj4;
     } else {
       obj5 = { state: obj.Launched, frame: tmp3 };
     }
     obj10 = obj5;
   } else if (first === memo) {
-    obj10 = { state: obj.Error };
-    const obj6 = { state: obj.Error };
+    let obj6 = { state: obj.Error };
+    obj10 = obj6;
   } else {
-    let state;
+    let state1;
     if (tmp3 != null) {
-      state = tmp3.state;
+      state1 = tmp3.state;
     }
-    if ("loading" === state) {
+    if ("loading" === state1) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "a" };
-      const obj8 = { state: obj.Loading, frame: "a" };
+      obj10 = { state: obj.Loading, frame: "Array" };
+      const obj8 = { state: obj.Loading, frame: "Array" };
     } else {
       if (null != data) {
         if (tmp7) {
-          let tmp13;
+          let tmp14;
           const obj9 = { state: null };
           if (result) {
             obj9.state = obj.AwaitingLaunch;
-            tmp13 = obj9;
+            tmp14 = obj9;
           } else {
             obj9.state = obj.DoesNotSupportSurface;
-            tmp13 = obj9;
+            tmp14 = obj9;
           }
-          obj10 = tmp13;
+          obj10 = tmp14;
         }
       }
       obj10 = { state: obj.NoApplication };
+      const tmp12 = obj;
     }
   }
-  return obj3;
-}
-let _slicedToArray = _slicedToArray_mod;
-({ isLaunched: metroRequire, makeFrameId: metroImportDefault } = FramesConstants);
-const FrameLifecycleState = { Loading: "loading", AwaitingLaunch: "awaiting-launch", Launched: "launched", RenderingElsewhere: "rendering-elsewhere", NoApplication: "no-application", DoesNotSupportSurface: "does-not-support-surface", Error: "error" };
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLifecycle(applicationId) {
-  let AwaitingLaunch;
-  let setFailed;
-  let obj = applicationId(setFailed[5]);
-  const cResult = obj.c(9);
-  applicationId = applicationId.applicationId;
-  let surface = applicationId.surface;
-  if (cResult[0] === surface) {
-    let tmp2;
-    if (cResult[1] === applicationId) {
-      tmp2 = cResult[2];
-    }
-    const tmp3 = useFrameLifecycleState;
-    const tmp4 = useFrameLifecycleState(tmp2);
-    const surface2 = tmp4.surface;
-    setFailed = tmp4.setFailed;
-    const lifecycle = tmp4.lifecycle;
-    const state = lifecycle.state;
-    if (cResult[3] === applicationId) {
-      if (cResult[4] === setFailed) {
-        if (cResult[5] === state) {
-          let tmp5;
-          let tmp6;
-          if (cResult[6] === surface2) {
-            tmp5 = cResult[7];
-            tmp6 = cResult[8];
-          }
-          const effect = react.useEffect(tmp5, tmp6);
-          return lifecycle;
-        }
-      }
-    }
-    const fn = function p() {
-      function launch() {
-        return closure_0(...arguments);
-      }
-      if (state === AwaitingLaunch.AwaitingLaunch) {
-        const tmp = _asyncToGenerator;
-        let closure_0 = _asyncToGenerator(async (arg0, value) => {
-          let obj2;
-          let v0;
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } else {
-            let c2;
-            try {
-              c3 = 2;
-              if (0 === surface) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  applicationId = tmp;
-                  c2 = 1;
-                  const obj5 = { applicationId, surface };
-                  surface = 2;
-                  c3 = 1;
-                  const obj6 = { value: obj2.launchFrame(obj5), done: false };
-                  obj2 = surface2(setFailed[6]);
-                  return obj6;
-                }
-              } else {
-                if (1 === tmp4) {
-                  c2 = 0;
-                  c2();
-                } else if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c2 = 0;
-                  c3 = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                } else {
-                  c2 = 0;
-                }
-                c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
-              }
-            } catch (tmp12) {
-              if (0 === c2) {
-                c3 = 3;
-                throw tmp12;
-              } else {
-                surface = 1;
-              }
-            }
-          }
-        });
-        launch();
-      }
-    };
-    const items = [state, applicationId, surface2, setFailed];
-    cResult[3] = applicationId;
-    cResult[4] = setFailed;
-    cResult[5] = state;
-    cResult[6] = surface2;
-    cResult[7] = fn;
-    cResult[8] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  }
-  let obj2 = { applicationId, surface };
-  cResult[0] = surface;
-  cResult[1] = applicationId;
-  cResult[2] = obj2;
-  tmp2 = obj2;
-}) : (function useFrameLifecycle(applicationId) {
-  let AwaitingLaunch;
-  applicationId = applicationId.applicationId;
-  let obj = { applicationId, surface: applicationId.surface };
-  let tmp = useFrameLifecycleState(obj);
-  let surface = tmp.surface;
-  const setFailed = tmp.setFailed;
-  const lifecycle = tmp.lifecycle;
-  const state = lifecycle.state;
-  const items = [state, applicationId, surface, setFailed];
-  const effect = react.useEffect(() => {
+  state = obj10.state;
+  const items3 = [state, applicationId, memo1, callback];
+  const effect = obj.useEffect(() => {
     function launch() {
       return obj(...arguments);
     }
-    let obj = function _launch2() {
+    let obj = function _launch() {
       obj = _asyncToGenerator(async (arg0, value) => {
         let obj2;
         let v0;
@@ -235,7 +108,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -256,7 +129,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                 surface = 2;
                 c3 = 1;
                 const obj6 = { value: obj2.launchFrame(obj5), done: false };
-                obj2 = closure_2_1(setFailed[6]);
+                obj2 = memo1(callback[4]);
                 return obj6;
               }
             } else {
@@ -275,7 +148,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             if (0 === c2) {
@@ -292,10 +165,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameLife
     if (state === AwaitingLaunch.AwaitingLaunch) {
       const tmp = launch();
     }
-  }, items);
-  return lifecycle;
-});
-let result = size.fileFinishedImporting("modules/frames/useFrameLifecycle.tsx");
-
-export default tmp3;
+  }, items3);
+  return obj10;
+};
 export { FrameLifecycleState };

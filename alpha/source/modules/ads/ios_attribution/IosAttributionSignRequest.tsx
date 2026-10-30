@@ -1,11 +1,11 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14631
+// Function ID: 14632
 // Name: IosAttributionSignRequest
-// Dependencies: [5, 1084, 1294, 1254, 2]
+// Dependencies: [5, 1072, 1283, 1243, 2]
 // Exports: fetchIosAttributionSignedPayloads
 
-// Module 14598 (IosAttributionSignRequest)
-import Constants from "Constants" /* 1084 */;
+// Module 14631 (IosAttributionSignRequest)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ let obj = function _fetchIosAttributionSignedPayloads() {
               ({ metadataSealed: c0, impressionId: c1, specs: c2, signal: c3 } = closure_0);
               c6 = 1;
               c7 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {

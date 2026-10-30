@@ -1,80 +1,75 @@
 // Module ID: 10326
 // Function ID: 10327
-// Dependencies: [41, 42, 93, 95, 96, 98, 10296]
+// Dependencies: [41, 42]
 
 // Module 10326
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10296 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class DETimeExpressionParser {
+class Filter {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, DETimeExpressionParser);
-    const obj = _getPrototypeOf(DETimeExpressionParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, Filter);
   }
 }
-_inherits(DETimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
 const entry = {
-  key: "primaryPrefix",
-  value: function primaryPrefix() {
-    return "(?:(?:um|von)\\s*)?";
+  key: "refine",
+  value: function refine(arg0, arr) {
+    const self = this;
+    let closure_0 = arg0;
+    return arr.filter((item) => self.isValid(closure_0, item));
   }
 };
-let items = [
-  entry,
-  {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|bis)\\s*";
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      let fnResult = null;
-      const str = arg1[0];
-      if (!str.match(/^\s*\d{4}\s*$/)) {
-        const self = this;
-        let fn = _get(_getPrototypeOf(DETimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-        if (typeof fn === "function") {
-          fn = (items) => fn.apply(self, items);
-        }
-        const items = [arg0, arg1];
-        fnResult = fn(items);
+let items = [entry];
+class MergingRefiner {
+  constructor() {
+    _classCallCheck(this, MergingRefiner);
+  }
+}
+const entry1 = {
+  key: "refine",
+  value: function refine(text, arg1) {
+    const self = this;
+    if (arg1.length < 2) {
+      return arg1;
+    } else {
+      const items = [];
+      let first = arg1[0];
+      let num = 1;
+      let num2 = 1;
+      let tmp20 = first;
+      if (1 < arg1.length) {
+        do {
+          let tmp11;
+          let tmp = arg1[num];
+          let str = text.text;
+          let substr = str.substring(first.index + first.text.length, tmp.index);
+          if (self.shouldMergeResults(substr, first, tmp, text)) {
+            let closure_1 = tmp;
+            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
+            let debugResult = text.debug(() => {
+              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
+            });
+            tmp11 = mergeResultsResult;
+          } else {
+            let arr = items.push(first);
+            tmp11 = tmp;
+          }
+          num = num2 + 1;
+          first = tmp11;
+          tmp20 = tmp11;
+          num2 = num;
+        } while (num < arg1.length);
       }
-      return fnResult;
+      if (null != tmp20) {
+        items.push(tmp20);
+      }
+      return items;
     }
   }
-];
+};
+const items1 = [entry1];
+const Filter_export = _createClass(Filter, items);
+const MergingRefiner_export = _createClass(MergingRefiner, items1);
 
-export default _createClass(DETimeExpressionParser, items);
+export { Filter_export as Filter };
+export { MergingRefiner_export as MergingRefiner };

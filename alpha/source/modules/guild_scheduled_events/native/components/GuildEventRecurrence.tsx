@@ -1,20 +1,20 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9080
+// Function ID: 9081
 // Name: GuildEventRecurrence
-// Dependencies: [19, 17, 4857, 4879, 6842, 21, 5005, 587, 558, 576, 504, 8934, 8981, 8935, 8927, 1125, 8943, 8939, 6968, 5271, 1199, 9068, 2]
+// Dependencies: [19, 17, 4858, 4880, 6849, 21, 5009, 575, 504, 8967, 9011, 8968, 8960, 1114, 6974, 8972, 5619, 8976, 1188, 9081, 2]
+// Exports: default
 
-// Module 9067 (GuildEventRecurrence)
+// Module 9080 (GuildEventRecurrence)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import ScheduleUtils from "ScheduleUtils" /* 8927 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8943 */;
+import nativeDefault from "native" /* 575 */;
+import ScheduleUtils from "ScheduleUtils" /* 8960 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 8976 */;
 import react from "react" /* 19 */;
-import ChannelStore_mod from "ChannelStore" /* 4857 */;
-import GuildStore_mod from "GuildStore" /* 4879 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -23,8 +23,6 @@ let obj2;
 let obj3;
 let obj4;
 const View = react_native.View;
-let ChannelStore = ChannelStore_mod;
-let GuildStore = GuildStore_mod;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { alignSelf: "stretch", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, eventHeader: { marginStart: 8, flexShrink: 0, flexGrow: 1 }, active: obj2, actions: { alignItems: "center", flexDirection: "row", flexShrink: 0 }, secondarySmallButton: obj3, secondarySmallIcon: obj4 };
@@ -33,394 +31,9 @@ createStyles = createStyles.createStyles;
 obj3 = { flexShrink: 0, alignItems: "center", flexDirection: "row", padding: 8, marginLeft: 8, borderRadius: nativeDefault.radii.xs };
 obj4 = { tintColor: nativeDefault.colors.TEXT_STRONG };
 let closure_10 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventRecurrence(recurrenceId) {
-  let canManageGuildEventResult;
-  let closure_6;
-  let first;
-  let onPress;
-  let tmp11;
-  let tmp13;
-  let tmp16;
-  let tmp18;
-  let tmp7;
-  const tmp = recurrenceId;
-  let tmp2 = onPress;
-  let obj = recurrenceId(onPress[9]);
-  const cResult = obj.c(59);
-  recurrenceId = recurrenceId.recurrenceId;
-  const guildEventId = recurrenceId.guildEventId;
-  onPress = recurrenceId.onPress;
-  closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildScheduledEventStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildEventId) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    cResult[1] = guildEventId;
-    cResult[2] = S;
-    tmp7 = S;
-  } else {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[10]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  const tmp9 = guildEventId(tmp2[11]);
-  if (stateFromStores != null) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  tmp9(recurrenceId, undefined);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    const items1 = [GuildStore];
-    cResult[3] = items1;
-    tmp11 = items1;
-  } else {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const tmp12 = cResult[4];
-  if (stateFromStores != null) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  if (tmp12 !== undefined) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    if (stateFromStores != null) {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    }
-    class R {
-      constructor() {
-        let guild_id;
-        const getGuild = GuildStore.getGuild;
-        if (stateFromStores != null) {
-          guild_id = stateFromStores.guild_id;
-        }
-        return getGuild(guild_id);
-      }
-    }
-    cResult[4] = tmp14;
-    cResult[5] = R;
-    tmp13 = R;
-  } else {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const tmpResult4 = tmp(tmp2[10]);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp11, tmp13);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    const items2 = [];
-    class R {
-      constructor() {
-        let guild_id;
-        const getGuild = GuildStore.getGuild;
-        if (stateFromStores != null) {
-          guild_id = stateFromStores.guild_id;
-        }
-        return getGuild(guild_id);
-      }
-    }
-    cResult[6] = items2;
-    tmp16 = items2;
-  } else {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const tmp17 = cResult[7];
-  if (stateFromStores != null) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  if (tmp17 !== undefined) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    if (stateFromStores != null) {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    }
-    class G {
-      constructor() {
-        let channel_id;
-        const getChannel = ChannelStore.getChannel;
-        if (stateFromStores != null) {
-          channel_id = stateFromStores.channel_id;
-        }
-        return getChannel(channel_id);
-      }
-    }
-    cResult[7] = tmp19;
-    cResult[8] = G;
-    tmp18 = G;
-  } else {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const tmpResult5 = tmp(tmp2[10]);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp16, tmp18);
-  const useManageResourcePermissions = tmp(tmp2[12]).useManageResourcePermissions;
-  tmp(tmp2[12]);
-  if (stateFromStores2 == null) {
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-  }
-  const canManageGuildEvent = useManageResourcePermissions(stateFromStores2).canManageGuildEvent;
-  if (cResult[9] === canManageGuildEvent) {
-    let tmp29;
-    class S {
-      constructor() {
-        return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-      }
-    }
-    ChannelStore = canManageGuildEventResult;
-    class G {
-      constructor() {
-        let channel_id;
-        const getChannel = ChannelStore.getChannel;
-        if (stateFromStores != null) {
-          channel_id = stateFromStores.channel_id;
-        }
-        return getChannel(channel_id);
-      }
-    }
-    const eventScheduleById = obj5.useEventScheduleById(guildEventId, recurrenceId);
-    const tmp24 = cResult[12];
-    if (eventScheduleById != null) {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    }
-    if (tmp24 !== undefined) {
-      let toISOStringResult;
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-      if (eventScheduleById != null) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-        toISOStringResult = obj6.toISOString();
-      }
-      class G {
-        constructor() {
-          let channel_id;
-          const getChannel = ChannelStore.getChannel;
-          if (stateFromStores != null) {
-            channel_id = stateFromStores.channel_id;
-          }
-          return getChannel(channel_id);
-        }
-      }
-      if (eventScheduleById != null) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-      }
-      cResult[12] = tmp28;
-      cResult[13] = toISOStringResult;
-    } else {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    }
-    if (cResult[14] !== tmp26) {
-      let eventTimeData;
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-      if (null != tmp26) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-        eventTimeData = obj7.getEventTimeData(tmp26);
-      }
-      class G {
-        constructor() {
-          let channel_id;
-          const getChannel = ChannelStore.getChannel;
-          if (stateFromStores != null) {
-            channel_id = stateFromStores.channel_id;
-          }
-          return getChannel(channel_id);
-        }
-      }
-      cResult[14] = tmp26;
-      cResult[15] = eventTimeData;
-      tmp29 = eventTimeData;
-    } else {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    }
-    if (null == stateFromStores) {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-    } else {
-      class S {
-        constructor() {
-          return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-        }
-      }
-      const is_canceled = tmp31.is_canceled;
-      class G {
-        constructor() {
-          let channel_id;
-          const getChannel = ChannelStore.getChannel;
-          if (stateFromStores != null) {
-            channel_id = stateFromStores.channel_id;
-          }
-          return getChannel(channel_id);
-        }
-      }
-      GuildStore = tmp32;
-      if (cResult[18] !== tmp32) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-        class G {
-          constructor() {
-            let channel_id;
-            const getChannel = ChannelStore.getChannel;
-            if (stateFromStores != null) {
-              channel_id = stateFromStores.channel_id;
-            }
-            return getChannel(channel_id);
-          }
-        }
-        cResult[18] = tmp32;
-        cResult[19] = "";
-      } else {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-      }
-      const sum = tmp33 + stateFromStores.name;
-      if (null != tmp29) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-        class G {
-          constructor() {
-            let channel_id;
-            const getChannel = ChannelStore.getChannel;
-            if (stateFromStores != null) {
-              channel_id = stateFromStores.channel_id;
-            }
-            return getChannel(channel_id);
-          }
-        }
-      }
-      const sum1 = sum + str3;
-      if (cResult[20] === tmp32) {
-        class S {
-          constructor() {
-            return GuildScheduledEventStore.getGuildScheduledEvent(guildEventId);
-          }
-        }
-      }
-      function handlePress(stopPropagation) {
-        stopPropagation.stopPropagation();
-        const tmp2 = GuildStore;
-        if (!tmp2) {
-          if (onPress != null) {
-            tmp3(recurrenceId);
-          }
-        }
-      }
-      cResult[20] = tmp32;
-      cResult[21] = onPress;
-      cResult[22] = recurrenceId;
-      cResult[23] = handlePress;
-    }
-  }
-  canManageGuildEventResult = canManageGuildEvent(stateFromStores);
-  cResult[9] = canManageGuildEvent;
-  cResult[10] = stateFromStores;
-  cResult[11] = canManageGuildEventResult;
-}) : (function GuildEventRecurrence(recurrenceId) {
+let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx");
+
+export default function GuildEventRecurrence(recurrenceId) {
   let Icon;
   let intl2;
   let intl3;
@@ -444,7 +57,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
   const stateFromStores = obj.useStateFromStores(items, () => GuildScheduledEventStore.getGuildScheduledEvent(guildEventId));
   let id;
   const tmp5 = guildEventId;
-  const tmp6 = guildEventId(8934);
+  const tmp6 = guildEventId(8967);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -469,13 +82,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
     }
     return getChannel(channel_id);
   });
-  const useManageResourcePermissions = tmp2(8981).useManageResourcePermissions;
-  tmp2(8981);
+  const useManageResourcePermissions = tmp2(9011).useManageResourcePermissions;
+  tmp2(9011);
   if (stateFromStores2 == null) {
     stateFromStores2 = stateFromStores1;
   }
   closure_5 = useManageResourcePermissions(stateFromStores2).canManageGuildEvent(stateFromStores);
-  const tmp2Result6 = tmp2(8935);
+  const tmp2Result6 = tmp2(8968);
   const eventScheduleById = tmp2Result6.useEventScheduleById(guildEventId, recurrenceId);
   let toISOStringResult;
   if (eventScheduleById != null) {
@@ -503,9 +116,9 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
     closure_7 = tmp22Result;
     let str2 = "";
     if (tmp22Result) {
-      const intl = tmp2(1125).intl;
+      const intl = tmp2(1114).intl;
       const _HermesInternal = HermesInternal;
-      str2 = "" + intl.string(tmp2(1125).t.fyBVRm) + ", ";
+      str2 = "" + intl.string(tmp2(1114).t.fyBVRm) + ", ";
     }
     let str4 = "";
     const sum = str2 + stateFromStores.name;
@@ -535,23 +148,23 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
           }
         },
       style: tmp.eventHeader,
-      children: closure_8(tmp2(8939).GuildEventCardHeader, obj5)
+      children: closure_8(tmp2(8972).GuildEventCardHeader, obj5)
     };
-    const PressableOpacity = tmp2(6968).PressableOpacity;
+    const PressableOpacity = tmp2(6974).PressableOpacity;
     obj5 = { isActive, event: stateFromStores, showUserCount: false, showCreator: false, recurrenceId };
     items5 = [closure_8(PressableOpacity, obj4), ];
     const obj6 = { style: tmp.actions, children: items6 };
     if (tmp22Result) {
-      const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1125).t.fyBVRm) };
-      const Text = tmp2(5271).Text;
-      intl2 = tmp2(1125).intl;
+      const obj7 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl2.string(tmp2(1114).t.fyBVRm) };
+      const Text = tmp2(5619).Text;
+      intl2 = tmp2(1114).intl;
       tmp22Result = tmp22(Text, obj7);
     }
     items6 = [tmp22Result, ];
     const obj8 = {
       accessible: true,
       accessibilityRole: "button",
-      accessibilityLabel: "" + intl3.string(tmp2(1125).t.HIgA5a) + ", " + sum1,
+      accessibilityLabel: "" + intl3.string(tmp2(1114).t.HIgA5a) + ", " + sum1,
       onPress: function handlePressOverflow(stopPropagation) {
           if (null != stateFromStores) {
             stopPropagation.stopPropagation();
@@ -564,16 +177,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEvent
       style: tmp.secondarySmallButton,
       children: closure_8(Icon, obj9)
     };
-    const PressableOpacity2 = tmp2(6968).PressableOpacity;
-    intl3 = tmp2(1125).intl;
+    const PressableOpacity2 = tmp2(6974).PressableOpacity;
+    intl3 = tmp2(1114).intl;
     const _HermesInternal3 = HermesInternal;
-    obj9 = { source: tmp5(9068), size: tmp2(1199).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
-    Icon = tmp2(1199).Icon;
+    obj9 = { source: tmp5(9081), size: tmp2(1188).Icon.Sizes.REFRESH_SMALL_16, style: tmp.secondarySmallIcon };
+    Icon = tmp2(1188).Icon;
     items6[1] = closure_8(PressableOpacity2, obj8);
     items5[1] = closure_9(stateFromStores1, obj6);
     return closure_9(stateFromStores1, obj3);
   }
-});
-let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventRecurrence.tsx");
-
-export default tmp4;
+};

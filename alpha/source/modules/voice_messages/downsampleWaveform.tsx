@@ -1,10 +1,10 @@
-// Module ID: 13617
-// Function ID: 13618
+// Module ID: 13765
+// Function ID: 13766
 // Name: downsampleWaveform
 // Dependencies: [38, 2]
 // Exports: default
 
-// Module 13617 (downsampleWaveform)
+// Module 13765 (downsampleWaveform)
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
 

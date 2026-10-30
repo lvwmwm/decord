@@ -1,11 +1,11 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12577
+// Function ID: 12578
 // Name: conjureTipTurn
-// Dependencies: [10809, 2]
-// Exports: entryActivityAt, hasNoTurns, hasOpenAsk, newestPublish, newestSettledTurn
+// Dependencies: [10832, 2]
+// Exports: entryActivityAt, hasNoTurns, hasOpenAsk, hasRunningTurn, newestPublish, newestSettledTurn
 
-// Module 12425 (conjureTipTurn)
-import conjureChatTurns from "conjureChatTurns" /* 10809 */;
+// Module 12577 (conjureTipTurn)
+import conjureChatTurns from "conjureChatTurns" /* 10832 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipTurn.tsx");
@@ -26,7 +26,7 @@ export function newestSettledTurn(arr) {
               if (obj.turnSettled(tmp2)) {
                 return tmp2;
               } else {
-                let tmp4Result = tmp4(10809);
+                let tmp4Result = tmp4(10832);
                 if (!tmp4Result.isStrandedSegment(arr, diff)) {
                   return null;
                 }
@@ -40,6 +40,16 @@ export function newestSettledTurn(arr) {
     return null;
   }
   return null;
+}
+export function hasRunningTurn(arr) {
+  const obj = conjureChatTurns;
+  const findOpenTurnResult = obj.findOpenTurn(arr);
+  let tmp4 = null != findOpenTurnResult;
+  if (tmp4) {
+    const tmpResult = conjureChatTurns;
+    tmp4 = !tmpResult.isStrandedSegment(arr, arr.lastIndexOf(findOpenTurnResult));
+  }
+  return tmp4;
 }
 export function newestPublish(arr) {
   let tmp2;
@@ -78,6 +88,18 @@ export function hasOpenAsk(newestSettledTurnResult) {
       num = 0;
     }
     tmp = num > 0;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.clarification;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.appBuildRequest;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.restoreProposal;
+  }
+  if (!tmp) {
+    tmp = null != newestSettledTurnResult.publishScheduleProposal;
   }
   return tmp;
 }

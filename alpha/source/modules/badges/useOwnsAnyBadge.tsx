@@ -1,85 +1,21 @@
-// Module ID: 18768
-// Function ID: 18769
+// Module ID: 18827
+// Function ID: 18828
 // Name: useOwnsAnyBadge
-// Dependencies: [1389, 8721, 558, 576, 504, 8715, 8773, 2]
+// Dependencies: [1384, 8755, 504, 8749, 8807, 2]
+// Exports: default
 
-// Module 18768 (useOwnsAnyBadge)
-import useDisplayProfileDefault from "useDisplayProfile" /* 8715 */;
-import useBadgesDefault from "useBadges" /* 8773 */;
-import UserStore from "UserStore" /* 1389 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8721 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18827 (useOwnsAnyBadge)
+import useDisplayProfileDefault from "useDisplayProfile" /* 8749 */;
+import useBadgesDefault from "useBadges" /* 8807 */;
+import UserStore from "UserStore" /* 1384 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8755 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnsAnyBadge() {
-  let stateFromStores;
-  let tmp10;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const tmp = stateFromStores;
-  let obj = stateFromStores(576);
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      currentUser = currentUser.getCurrentUser();
-      let id;
-      if (currentUser != null) {
-        id = currentUser.id;
-      }
-      return id;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [BadgeDirectoryStore];
-    cResult[2] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== stateFromStores) {
-    const fn2 = function c() {
-      let someResult = null;
-      if (null != stateFromStores) {
-        someResult = null;
-        const obj = BadgeDirectoryStore;
-        if (BadgeDirectoryStore.hasCatalogFor(stateFromStores)) {
-          const badges = obj.getBadges(tmp);
-          someResult = badges.some((owned) => owned.owned);
-        }
-      }
-      return someResult;
-    };
-    const items2 = [stateFromStores];
-    cResult[3] = stateFromStores;
-    cResult[4] = fn2;
-    cResult[5] = items2;
-    tmp11 = items2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-    tmp11 = cResult[5];
-  }
-  const tmpResult2 = tmp(504);
-  let stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10, tmp11);
-  const tmp13 = useDisplayProfileDefault(stateFromStores);
-  if (stateFromStores1 == null) {
-    stateFromStores1 = useBadgesDefault(tmp13).length > 0;
-  }
-  return stateFromStores1;
-}) : (function useOwnsAnyBadge() {
+const result = size.fileFinishedImporting("modules/badges/useOwnsAnyBadge.tsx");
+
+export default function useOwnsAnyBadge() {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [UserStore];
@@ -111,7 +47,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnsAny
     stateFromStores1 = useBadgesDefault(tmp3).length > 0;
   }
   return stateFromStores1;
-});
-const result = size.fileFinishedImporting("modules/badges/useOwnsAnyBadge.tsx");
-
-export default tmp2;
+};

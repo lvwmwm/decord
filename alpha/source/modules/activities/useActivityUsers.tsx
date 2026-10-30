@@ -1,70 +1,20 @@
-// Module ID: 19101
-// Function ID: 19102
+// Module ID: 19207
+// Function ID: 19208
 // Name: useActivityUsers
-// Dependencies: [1389, 4856, 558, 576, 573, 2]
+// Dependencies: [1384, 4857, 563, 2]
+// Exports: default
 
-// Module 19101 (useActivityUsers)
-import UserStore from "UserStore" /* 1389 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19207 (useActivityUsers)
+import UserStore from "UserStore" /* 1384 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivityUsers(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [EmbeddedActivitiesStore, UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(573);
-    return tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
-  }
-  const fn = function a() {
-    let user;
-    if (null == closure_1) {
-      return [];
-    } else {
-      let items;
-      const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
-      const found = embeddedActivitiesForChannel.find((applicationId) => applicationId.applicationId === closure_1_0);
-      if (null == found) {
-        items = [];
-      } else {
-        const _Array = Array;
-        const arr = Array.from(found.userIds);
-        const mapped = arr.map((item) => user.getUser(item));
-        items = mapped.filter((item) => null != item);
-      }
-      return items;
-    }
-  };
-  const items1 = [arg1, arg0];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useActivityUsers(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/activities/useActivityUsers.tsx");
+
+export default function useActivityUsers(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -91,7 +41,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActivit
       return items;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/activities/useActivityUsers.tsx");
-
-export default tmp2;
+};

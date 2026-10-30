@@ -1,15 +1,15 @@
-// Module ID: 10567
-// Function ID: 10568
+// Module ID: 10593
+// Function ID: 10594
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5736, 1391, 1095, 3, 7599, 1381, 2047, 4821, 2]
+// Dependencies: [5, 19, 5742, 1386, 1083, 3, 7607, 1376, 2044, 4822, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10567 (createOrReuseGiftOrder)
+// Module 10593 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1095 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import PaymentConstants from "PaymentConstants" /* 5736 */;
+import Constants from "Constants" /* 1083 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import PaymentConstants from "PaymentConstants" /* 5742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -44,7 +44,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -72,7 +72,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
             skuId = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else {
           let error;
@@ -105,7 +105,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
                 } else {
                   APPLE = tmp60.APPLE;
                 }
-                const obj6 = _modDef2047();
+                const obj6 = _modDef2044();
                 const utcResult = obj6.utc();
                 subtractResult = utcResult.subtract(location(dependencyMap[6]).DRAFT_ORDER_LOOKBACK_DAYS, "days");
                 obj7 = { line_items: items };

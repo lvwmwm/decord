@@ -1,10 +1,10 @@
-// Module ID: 5285
-// Function ID: 5286
+// Module ID: 5633
+// Function ID: 5634
 // Name: springPresets
-// Dependencies: [2, 5286]
+// Dependencies: [2, 5634]
 
-// Module 5285 (springPresets)
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5286 */;
+// Module 5633 (springPresets)
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5634 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");

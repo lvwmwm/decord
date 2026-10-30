@@ -1,18 +1,18 @@
-// Module ID: 17874
-// Function ID: 17875
+// Module ID: 17933
+// Function ID: 17934
 // Name: RegistrationUIStore
-// Dependencies: [570, 1271, 2]
+// Dependencies: [560, 1260, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 17874 (RegistrationUIStore)
-import react_native from "react-native" /* 1271 */;
-import module_570 from "module_570" /* 570 */;
+// Module 17933 (RegistrationUIStore)
+import react_native from "react-native" /* 1260 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useRegistrationUIStore = module_570.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "emoji" }));
+const useRegistrationUIStore = module_560.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "applicationId" }));
 const result = size.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export { useRegistrationUIStore };
@@ -28,7 +28,7 @@ export function clearRegistrationErrorMessage() {
   let errors = {};
   const merged = Object.assign(errors.getState().errors);
   delete errors["message"];
-  const obj2 = errors(1271);
+  const obj2 = errors(1260);
   obj2.batchUpdates(() => {
     errors = { errors };
     errors.setState(errors);

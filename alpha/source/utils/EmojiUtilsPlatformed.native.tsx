@@ -1,21 +1,21 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 4965
+// Function ID: 4966
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 4952, 4962, 1381, 12, 1415, 1899, 4963, 1494, 5002, 5004, 5637, 2]
+// Dependencies: [32, 5, 17, 4956, 4966, 1376, 12, 1410, 1894, 4967, 1489, 5006, 5008, 5643, 2]
 
-// Module 4961 (EmojiUtilsPlatformed)
+// Module 4965 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import react_nativeDefault from "react-native" /* 1899 */;
-import DeviceUtils from "DeviceUtils" /* 4962 */;
-import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4963 */;
-import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 5004 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import react_nativeDefault from "react-native" /* 1894 */;
+import DeviceUtils from "DeviceUtils" /* 4966 */;
+import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 4967 */;
+import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet" /* 5008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_4952 from "module_4952" /* 4952 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 5637 */;
+import module_4956 from "module_4956" /* 4956 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 5643 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, unicodeVersion;
@@ -24,7 +24,7 @@ let MemoizerUtils;
 function getURL(name) {
   let str;
   if (null == name) {
-    const convert = module_4952.convert;
+    const convert = module_4956.convert;
     const _HermesInternal = HermesInternal;
     str = "asset:/emoji-" + convert.toCodePoint(name) + ".png";
   } else {
@@ -50,7 +50,7 @@ let LIGHT = function _getEmojiColors() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

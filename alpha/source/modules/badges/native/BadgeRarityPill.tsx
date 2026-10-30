@@ -1,200 +1,96 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 11432
+// Function ID: 11433
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 587, 1393, 11228, 1125, 11230, 5002, 11232, 11234, 5005, 558, 576, 5012, 5242, 5271, 2]
+// Dependencies: [19, 17, 21, 575, 1388, 11433, 1114, 11435, 5006, 11437, 11439, 5009, 5016, 5248, 5619, 2]
+// Exports: default
 
-// Module 11227 (BadgeRarityPill)
+// Module 11432 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import BadgeRarity from "BadgeRarity" /* 1393 */;
-import ColorUtils from "ColorUtils" /* 5002 */;
-import shared from "shared" /* 5012 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11228 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11230 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11232 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11234 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import BadgeRarity from "BadgeRarity" /* 1388 */;
+import ColorUtils from "ColorUtils" /* 5006 */;
+import shared from "shared" /* 5016 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11433 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11435 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11437 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11439 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
-let tmp;
-const Text_Text = tmp(5271);
-function getRarityStyle(rarity, arg1) {
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let tmp2Result;
-  let tmp2Result3;
-  let tmp2Result4;
-  const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-  if (BadgeRarity.BadgeRarity.COMMON === rarity) {
-    const obj2 = { Icon: ExperimentalCommonIcon.ExperimentalCommonIcon, label: intl4.string(intl5.t.L0K5ci), background: null, border: null, text: arg1 ? unsafe_rawColors.NEUTRAL_45 : unsafe_rawColors.NEUTRAL_15 };
-    intl4 = tmp2(1125).intl;
-    ({ OPACITY_24: obj7.background, NEUTRAL_35: obj7.border } = unsafe_rawColors);
-    return obj2;
-  } else if (BadgeRarity.BadgeRarity.RARE === rarity) {
-    const obj3 = { Icon: ExperimentalRareIcon.ExperimentalRareIcon, label: intl3.string(intl5.t["sTx/5z"]), background: tmp2Result.hexOpacityToRgba(unsafe_rawColors.ILLO_BLUE_40, c6), border: unsafe_rawColors.ILLO_BLUE_40, text: arg1 ? unsafe_rawColors.ILLO_BLUE_50 : unsafe_rawColors.ILLO_BLUE_30 };
-    intl3 = tmp2(1125).intl;
-    tmp2Result = ColorUtils;
-    return obj3;
-  } else if (BadgeRarity.BadgeRarity.EPIC === rarity) {
-    const obj4 = { Icon: ExperimentalEpicIcon.ExperimentalEpicIcon, label: intl2.string(intl5.t.RD8RiN), background: tmp2Result3.hexOpacityToRgba(unsafe_rawColors.ILLO_PURPLE_40, c6), border: unsafe_rawColors.ILLO_PURPLE_40, text: arg1 ? unsafe_rawColors.ILLO_PURPLE_50 : unsafe_rawColors.ILLO_PURPLE_30 };
-    intl2 = tmp2(1125).intl;
-    tmp2Result3 = ColorUtils;
-    return obj4;
-  } else if (BadgeRarity.BadgeRarity.MYTHIC === rarity) {
-    const obj = { Icon: ExperimentalMythicIcon.ExperimentalMythicIcon, label: intl.string(intl5.t.vqc1ol), background: tmp2Result4.hexOpacityToRgba(unsafe_rawColors.ILLO_ORANGE_40, c6), border: unsafe_rawColors.ILLO_ORANGE_40, text: arg1 ? unsafe_rawColors.ILLO_ORANGE_50 : unsafe_rawColors.ILLO_ORANGE_30 };
-    intl = tmp2(1125).intl;
-    tmp2Result4 = ColorUtils;
-    return obj;
-  } else {
-    return null;
-  }
-}
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let c6 = 0.24;
 let obj = { pill: obj2, label: { textTransform: "uppercase" } };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_6, minHeight: 20, borderRadius: nativeDefault.radii.round, borderWidth: 1 };
-let closure_8 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BadgeRarityPill(rarity) {
-  let Icon;
-  let background;
-  let border;
-  let items;
-  let label;
-  let text;
-  const obj = react2;
-  const cResult = obj.c(21);
-  rarity = rarity.rarity;
-  const tmp4 = closure_8();
-  const obj2 = shared;
-  const tmp5 = getRarityStyle(rarity, obj2.isThemeLight(useThemeDefault()));
-  if (null == tmp5) {
-    return null;
-  } else {
-    ({ Icon, label, background, border, text } = tmp5);
-    if (cResult[0] === background) {
-      let tmp6;
-      if (cResult[1] === border) {
-        tmp6 = cResult[2];
-      }
-      if (cResult[3] === tmp4.pill) {
-        let tmp7;
-        if (cResult[4] === tmp6) {
-          tmp7 = cResult[5];
-        }
-        if (cResult[6] === Icon) {
-          let tmp8;
-          let tmp11;
-          if (cResult[7] === text) {
-            tmp8 = cResult[8];
-          }
-          if (cResult[9] !== text) {
-            const obj3 = { color: text };
-            cResult[9] = text;
-            cResult[10] = obj3;
-            tmp11 = obj3;
-          } else {
-            tmp11 = cResult[10];
-          }
-          if (cResult[11] === tmp4.label) {
-            let tmp12;
-            if (cResult[12] === tmp11) {
-              tmp12 = cResult[13];
-            }
-            if (cResult[14] === label) {
-              let tmp13;
-              if (cResult[15] === tmp12) {
-                tmp13 = cResult[16];
-              }
-              if (cResult[17] === tmp7) {
-                if (cResult[18] === tmp8) {
-                  let tmp16;
-                  if (cResult[19] === tmp13) {
-                    tmp16 = cResult[20];
-                  }
-                  return tmp16;
-                }
-              }
-              const obj4 = { style: tmp7, children: items };
-              items = [tmp8, tmp13];
-              const tmp19 = hasOwnProperty(View, obj4);
-              cResult[17] = tmp7;
-              cResult[18] = tmp8;
-              cResult[19] = tmp13;
-              cResult[20] = tmp19;
-              tmp16 = tmp19;
-            }
-            const obj5 = { variant: "text-xs/bold", color: "none", lineClamp: 1, style: tmp12, children: label };
-            const tmp15 = React3(Text_Text.Text, obj5);
-            cResult[14] = label;
-            cResult[15] = tmp12;
-            cResult[16] = tmp15;
-            tmp13 = tmp15;
-          }
-          const items1 = [tmp4.label, tmp11];
-          cResult[11] = tmp4.label;
-          cResult[12] = tmp11;
-          cResult[13] = items1;
-          tmp12 = items1;
-        }
-        const obj6 = { size: "xxs", color: text };
-        const tmp10 = React3(Icon, obj6);
-        cResult[6] = Icon;
-        cResult[7] = text;
-        cResult[8] = tmp10;
-        tmp8 = tmp10;
-      }
-      const items2 = [tmp4.pill, tmp6];
-      cResult[3] = tmp4.pill;
-      cResult[4] = tmp6;
-      cResult[5] = items2;
-      tmp7 = items2;
-    }
-    const obj7 = { backgroundColor: background, borderColor: border };
-    cResult[0] = background;
-    cResult[1] = border;
-    cResult[2] = obj7;
-    tmp6 = obj7;
-  }
-}) : (function BadgeRarityPill(rarity) {
+let closure_7 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/badges/native/BadgeRarityPill.tsx");
+
+export default function BadgeRarityPill(rarity) {
+  let intl;
+  let intl2;
+  let intl3;
+  let intl4;
   let items;
   let items1;
   let items2;
+  let tmp2Result;
+  let tmp2Result3;
+  let tmp2Result4;
+  let tmp5;
   rarity = rarity.rarity;
-  const tmp = closure_8();
+  const tmp = closure_7();
   const obj = shared;
-  const tmp4 = getRarityStyle(rarity, obj.isThemeLight(useThemeDefault()));
-  if (null == tmp4) {
+  const isThemeLightResult = obj.isThemeLight(useThemeDefault());
+  const unsafe_rawColors = nativeDefault.unsafe_rawColors;
+  if (BadgeRarity.BadgeRarity.COMMON === rarity) {
+    const obj2 = { Icon: ExperimentalCommonIcon.ExperimentalCommonIcon, label: intl3.string(intl5.t.L0K5ci), background: null, border: null, text: isThemeLightResult ? unsafe_rawColors.NEUTRAL_45 : unsafe_rawColors.NEUTRAL_15 };
+    intl3 = tmp2(1114).intl;
+    ({ OPACITY_24: obj6.background, NEUTRAL_35: obj6.border } = unsafe_rawColors);
+    tmp5 = obj2;
+  } else if (BadgeRarity.BadgeRarity.RARE === rarity) {
+    const obj3 = { Icon: ExperimentalRareIcon.ExperimentalRareIcon, label: intl2.string(intl5.t["sTx/5z"]), background: tmp2Result.hexOpacityToRgba(unsafe_rawColors.ILLO_BLUE_40, c6), border: unsafe_rawColors.ILLO_BLUE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_BLUE_50 : unsafe_rawColors.ILLO_BLUE_30 };
+    intl2 = tmp2(1114).intl;
+    tmp5 = obj3;
+    tmp2Result = ColorUtils;
+  } else if (BadgeRarity.BadgeRarity.EPIC === rarity) {
+    const obj4 = { Icon: ExperimentalEpicIcon.ExperimentalEpicIcon, label: intl.string(intl5.t.RD8RiN), background: tmp2Result3.hexOpacityToRgba(unsafe_rawColors.ILLO_PURPLE_40, c6), border: unsafe_rawColors.ILLO_PURPLE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_PURPLE_50 : unsafe_rawColors.ILLO_PURPLE_30 };
+    intl = tmp2(1114).intl;
+    tmp5 = obj4;
+    tmp2Result3 = ColorUtils;
+  } else {
+    tmp5 = null;
+    if (BadgeRarity.BadgeRarity.MYTHIC === rarity) {
+      const obj5 = { Icon: ExperimentalMythicIcon.ExperimentalMythicIcon, label: intl4.string(intl5.t.vqc1ol), background: tmp2Result4.hexOpacityToRgba(unsafe_rawColors.ILLO_ORANGE_40, c6), border: unsafe_rawColors.ILLO_ORANGE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_ORANGE_50 : unsafe_rawColors.ILLO_ORANGE_30 };
+      intl4 = tmp2(1114).intl;
+      tmp5 = obj5;
+      tmp2Result4 = ColorUtils;
+    }
+  }
+  if (null == tmp5) {
     return null;
   } else {
-    const text = tmp4.text;
-    const obj2 = { style: items, children: items1 };
+    const text = tmp5.text;
+    const obj7 = { style: items, children: items1 };
     items = [tmp.pill, ];
-    const obj4 = { backgroundColor: null, borderColor: null };
-    ({ background: obj3.backgroundColor, border: obj3.borderColor } = tmp4);
-    items[1] = obj4;
-    const label = tmp4.label;
-    const obj5 = { size: "xxs", color: text };
-    items1 = [React3(tmp4.Icon, obj5), ];
-    const obj6 = { variant: "text-xs/bold", color: "none", lineClamp: 1, style: items2, children: label };
+    const obj8 = { backgroundColor: null, borderColor: null };
+    ({ background: obj10.backgroundColor, border: obj10.borderColor } = tmp5);
+    items[1] = obj8;
+    const label = tmp5.label;
+    const obj9 = { size: "xxs", color: text };
+    items1 = [React3(tmp5.Icon, obj9), ];
+    const obj11 = { variant: "text-xs/bold", color: "none", lineClamp: 1, style: items2, children: label };
     items2 = [tmp.label, ];
-    const obj11 = { color: text };
-    items2[1] = obj11;
-    items1[1] = React3(Text_Text.Text, obj6);
-    return hasOwnProperty(View, obj2);
+    const obj12 = { color: text };
+    items2[1] = obj12;
+    items1[1] = React3(Text_Text.Text, obj11);
+    return hasOwnProperty(View, obj7);
   }
-});
-const result = size.fileFinishedImporting("modules/badges/native/BadgeRarityPill.tsx");
-
-export default tmp4;
+};

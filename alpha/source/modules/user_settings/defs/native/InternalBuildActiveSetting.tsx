@@ -1,25 +1,15 @@
-// Module ID: 17626
-// Function ID: 17627
+// Module ID: 17697
+// Function ID: 17698
 // Name: InternalBuildActiveSetting
-// Dependencies: [16140, 558, 16638, 11302, 17429, 2]
+// Dependencies: [16180, 16691, 11505, 17483, 2]
 
-// Module 17626 (InternalBuildActiveSetting)
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16638 */;
-import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17429 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16140 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17697 (InternalBuildActiveSetting)
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16691 */;
+import MobilePhoneSettingsIcon from "MobilePhoneSettingsIcon" /* 17483 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16180 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasCheckNativeUpdateSetting() {
-  const obj = useIsStaffOrDeveloperSettingPredicate;
-  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
-  return tmp;
-}) : (function useHasCheckNativeUpdateSetting() {
-  const obj = useIsStaffOrDeveloperSettingPredicate;
-  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
-  return tmp;
-});
 let obj = {
   useTitle() {
     return "Internal Build Active";
@@ -29,7 +19,11 @@ let obj = {
   useDescription: function useInternalBuildActiveDescription() {
     return "Build installed from builds.discord.tools";
   },
-  usePredicate: tmp2
+  usePredicate: function useHasCheckNativeUpdateSetting() {
+    const obj = useIsStaffOrDeveloperSettingPredicate;
+    const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
+    return tmp;
+  }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/InternalBuildActiveSetting.tsx");

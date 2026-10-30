@@ -1,21 +1,21 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 11067
+// Function ID: 11068
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 14251, 1084, 21, 5005, 587, 5707, 14243, 14232, 14223, 6731, 14225, 14252, 2000, 7549, 2]
+// Dependencies: [19, 17, 11068, 1072, 21, 5009, 575, 5712, 11057, 11018, 11003, 6738, 11005, 11069, 1995, 7557, 2]
 // Exports: BugReporterNotification
 
-// Module 14250 (BugReporterNotification)
+// Module 11067 (BugReporterNotification)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 14223 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 14225 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11003 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11005 */;
 import react from "react" /* 19 */;
-import BugReportStore from "BugReportStore" /* 14251 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import BugReportStore from "BugReportStore" /* 11068 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -39,7 +39,7 @@ export function BugReporterNotification(notification) {
   const memo = react.useMemo(() => ({ type: "simple", text: "Bug Catcher Clyde" }), []);
   let obj2 = { source: { uri: imageUri }, style: tmp.preview };
   const tmp3 = <View style={tmp.rightAccessoryContainer}>{null}</View>;
-  const NotificationPressable = notification(14243).NotificationPressable;
+  const NotificationPressable = notification(11057).NotificationPressable;
   return <NotificationPressable header={memo} rightAccessory={tmp3} onPress={function onPress() {
     const obj = BugReportStore;
     if (!BugReportStore.getField("isReportOpen")) {
@@ -55,7 +55,7 @@ export function BugReporterNotification(notification) {
       const obj10 = { screenshotUri: null, screenshot: null };
       ({ imageUri: obj7.screenshotUri, image: obj7.screenshot } = notification);
       const obj6 = ModalActionCreatorsDefault;
-      obj6.pushLazy(asyncRequire(14252, dependencyMap.paths), obj10);
+      obj6.pushLazy(asyncRequire(11069, dependencyMap.paths), obj10);
     }
   }} onSettingsPress={function onSettingsPress() {
     const obj = notification(dependencyMap[15]);

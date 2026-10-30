@@ -1,567 +1,25 @@
-// Module ID: 19813
-// Function ID: 19814
+// Module ID: 19876
+// Function ID: 19877
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1372, 21, 558, 576, 1503, 17078, 19814, 19747, 5630, 19815, 12, 6984, 7544, 1125, 5700, 587, 19817, 19821, 19825, 2]
+// Dependencies: [5, 32, 19, 17, 1361, 21, 1498, 17132, 19877, 19810, 5602, 19878, 12, 6992, 7552, 1114, 5706, 575, 19880, 19884, 19888, 2]
+// Exports: default
 
-// Module 19813 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 19876 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19825 */;
+import ApplicationConstants from "ApplicationConstants" /* 1361 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 19888 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let _require, c1, c2, navigation;
+let c2, navigation;
 
 let c10;
 let c9;
-let _slicedToArray = _slicedToArray_mod;
-const ScrollView = react_native.ScrollView;
-const ApplicationTypes = ApplicationConstants.ApplicationTypes;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
-  let closure_5;
-  let first;
-  let first1;
-  let first3;
-  let isFullServerGating;
-  let items1;
-  let loading;
-  let tmp10;
-  const tmp = guildId;
-  let tmp2 = isFullServerGating;
-  let obj = guildId(isFullServerGating[7]);
-  const cResult = obj.c(33);
-  guildId = guildId.guildId;
-  let obj2 = guildId(isFullServerGating[8]);
-  navigation = obj2.useNavigation();
-  let obj3 = guildId(isFullServerGating[9]);
-  const subscriptionsSettings = obj3.useSubscriptionsSettings(guildId);
-  isFullServerGating = navigation(isFullServerGating[10])(guildId).isFullServerGating;
-  const application = navigation(isFullServerGating[11])(guildId, loading.GUILD_ROLE_SUBSCRIPTIONS).application;
-  let obj4 = first1;
-  [first, tmp10] = first1.useState(null);
-  _slicedToArray = tmp10;
-  let description;
-  const useState = first1.useState;
-  if (subscriptionsSettings != null) {
-    description = subscriptionsSettings.description;
-  }
-  const tmp7Result = _slicedToArray(useState(description), 2);
-  first1 = tmp7Result[0];
-  const tmp13 = tmp7Result[1];
-  const tmp7Result2 = _slicedToArray(obj4.useState(isFullServerGating), 2);
-  const first2 = tmp7Result2[0];
-  const tmp16 = tmp7Result2[1];
-  const tmpResult = tmp(tmp2[9]);
-  const updateSubscriptionsSettings1 = tmpResult.useUpdateSubscriptionsSettings();
-  loading = updateSubscriptionsSettings1.loading;
-  const updateSubscriptionsSettings = updateSubscriptionsSettings1.updateSubscriptionsSettings;
-  const error = updateSubscriptionsSettings1.error;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj5 = {};
-    cResult[0] = obj5;
-    first3 = obj5;
-  } else {
-    first3 = cResult[0];
-  }
-  let tmp19 = null != first;
-  const insets = tmp6(tmp2[12])(first3).insets;
-  if (!tmp19) {
-    let tmp20 = null != first1;
-    if (tmp20) {
-      let description1;
-      if (subscriptionsSettings != null) {
-        description1 = subscriptionsSettings.description;
-      }
-      tmp20 = first1 !== description1;
-    }
-    if (tmp20) {
-      tmp20 = 0 !== first1.length;
-    }
-    tmp19 = tmp20;
-  }
-  if (!tmp19) {
-    tmp19 = isFullServerGating !== first2;
-  }
-  closure_11 = tmp19;
-  if (cResult[1] === application) {
-    if (cResult[2] === first) {
-      let tmp22;
-      if (cResult[3] === subscriptionsSettings) {
-        tmp22 = cResult[4];
-      }
-      if (cResult[5] === first) {
-        if (cResult[6] === first1) {
-          if (cResult[7] === guildId) {
-            if (cResult[8] === first2) {
-              if (cResult[9] === isFullServerGating) {
-                let description2;
-                const tmp26 = cResult[10];
-                if (subscriptionsSettings != null) {
-                  description2 = subscriptionsSettings.description;
-                }
-                if (tmp26 === description2) {
-                  let tmp28;
-                  if (cResult[11] === updateSubscriptionsSettings) {
-                    tmp28 = cResult[12];
-                  }
-                  let closure_12 = tmp28;
-                  if (cResult[13] === tmp28) {
-                    if (cResult[14] === tmp19) {
-                      if (cResult[15] === loading) {
-                        let tmp31;
-                        let tmp32;
-                        let tmp35;
-                        let tmp34;
-                        if (cResult[16] === navigation) {
-                          tmp31 = cResult[17];
-                          tmp32 = cResult[18];
-                        }
-                        const layoutEffect = obj4.useLayoutEffect(tmp31, tmp32);
-                        if (cResult[19] !== error) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          const items = [error];
-                          cResult[19] = error;
-                          cResult[20] = V;
-                          cResult[21] = items;
-                          tmp35 = items;
-                          tmp34 = V;
-                        } else {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          tmp35 = cResult[21];
-                        }
-                        const effect = obj4.useEffect(tmp34, tmp35);
-                        const sum = insets.bottom + tmp6(tmp2[19]).space.PX_16;
-                        if (cResult[22] !== sum) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          tmp39[0] = sum;
-                          cResult[22] = sum;
-                          cResult[23] = tmp39;
-                        } else {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                        }
-                        if (cResult[24] !== first2) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          let obj6 = { isFullServerGating: first2, onChange: tmp16 };
-                          cResult[24] = first2;
-                          cResult[25] = updateSubscriptionsSettings(navigation(tmp2[20]), obj6);
-                          const tmp41 = updateSubscriptionsSettings(navigation(tmp2[20]), obj6);
-                        } else {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                        }
-                        if (first1 == null) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          if (subscriptionsSettings != null) {
-                            class V {
-                              constructor() {
-                                const obj = error;
-                                if (null != error) {
-                                  const presentError = ToastUtils.presentError;
-                                  ToastUtils;
-                                  let anyErrorMessage = obj.getAnyErrorMessage();
-                                  if (anyErrorMessage == null) {
-                                    const intl = tmp(1125).intl;
-                                    anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                  }
-                                  presentError(anyErrorMessage);
-                                }
-                              }
-                            }
-                          }
-                          first1 = tmp42;
-                        }
-                        if (first1 == null) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                        }
-                        if (cResult[26] === tmp22) {
-                          class V {
-                            constructor() {
-                              const obj = error;
-                              if (null != error) {
-                                const presentError = ToastUtils.presentError;
-                                ToastUtils;
-                                let anyErrorMessage = obj.getAnyErrorMessage();
-                                if (anyErrorMessage == null) {
-                                  const intl = tmp(1125).intl;
-                                  anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                }
-                                presentError(anyErrorMessage);
-                              }
-                            }
-                          }
-                          if (cResult[29] === tmp40) {
-                            class V {
-                              constructor() {
-                                const obj = error;
-                                if (null != error) {
-                                  const presentError = ToastUtils.presentError;
-                                  ToastUtils;
-                                  let anyErrorMessage = obj.getAnyErrorMessage();
-                                  if (anyErrorMessage == null) {
-                                    const intl = tmp(1125).intl;
-                                    anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-                                  }
-                                  presentError(anyErrorMessage);
-                                }
-                              }
-                            }
-                          }
-                          const obj8 = { contentContainerStyle: tmp38, children: items1 };
-                          items1 = [tmp40, tmp43];
-                          cResult[29] = tmp40;
-                          cResult[30] = tmp43;
-                          cResult[31] = tmp38;
-                          cResult[32] = error(first2, obj8);
-                          const tmp49 = error(first2, obj8);
-                        }
-                        const obj9 = { cover: tmp22, setCover: tmp10, description: first1, setDescription: tmp13 };
-                        cResult[26] = tmp22;
-                        cResult[27] = first1;
-                        cResult[28] = updateSubscriptionsSettings(tmp(tmp2[21]).Content, obj9);
-                        const tmp45 = updateSubscriptionsSettings(tmp(tmp2[21]).Content, obj9);
-                      }
-                    }
-                  }
-                  let fn = function k() {
-                    let fn;
-                    let onPress;
-                    const setOptions = navigation.setOptions;
-                    if (loading) {
-                      fn = () => updateSubscriptionsSettings(guildId(isFullServerGating[15]).HeaderSubmittingIndicator, {});
-                    } else {
-                      const tmp2 = closure_11;
-                      if (tmp2) {
-                        fn = () => {
-                          let intl;
-                          const obj = { text: intl.string(guildId(isFullServerGating[17]).t["R3BPH+"]), onPress };
-                          const HeaderActionButton = guildId(isFullServerGating[16]).HeaderActionButton;
-                          intl = guildId(isFullServerGating[17]).intl;
-                          return updateSubscriptionsSettings(HeaderActionButton, obj);
-                        };
-                      } else {
-                        fn = () => null;
-                      }
-                    }
-                    setOptions({ headerRight: fn });
-                  };
-                  const items2 = [navigation, tmp19, loading, tmp28];
-                  cResult[13] = tmp28;
-                  cResult[14] = tmp19;
-                  cResult[15] = loading;
-                  cResult[16] = navigation;
-                  cResult[17] = fn;
-                  cResult[18] = items2;
-                  tmp32 = items2;
-                  tmp31 = fn;
-                }
-              }
-            }
-          }
-        }
-      }
-      _require = first(function*(arg0, value) {
-        if (description === 2) {
-          description = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            description = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
-                description = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                description = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                closure_0 = tmp;
-                let tmp10 = null != description2;
-                if (tmp10) {
-                  description = undefined;
-                  if (description != null) {
-                    description = description.description;
-                  }
-                  tmp10 = arr !== description;
-                }
-                if (tmp10) {
-                  tmp10 = 0 !== arr.length;
-                }
-                const obj5 = {};
-                if (tmp10) {
-                  obj5.description = description2;
-                }
-                if (null != uri) {
-                  obj5.cover_image = uri.uri;
-                }
-                if (closure_1_3 !== full_server_gate) {
-                  obj5.full_server_gate = full_server_gate;
-                }
-                const obj3 = navigation(isFullServerGating[14]);
-                if (!obj3.isEmpty(obj5)) {
-                  c1 = 1;
-                  description = 1;
-                  const obj6 = { value: updateSubscriptionsSettings(closure_0, obj5), done: false };
-                  return obj6;
-                }
-              }
-            } else if (arg0 === 1) {
-              description = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              description = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              closure_1_5(null);
-            }
-            description = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          } catch (tmp16) {
-            description = 3;
-            throw tmp16;
-          }
-        }
-      });
-      cResult[5] = first;
-      cResult[6] = first1;
-      cResult[7] = guildId;
-      cResult[8] = first2;
-      cResult[9] = isFullServerGating;
-      if (subscriptionsSettings != null) {
-        class V {
-          constructor() {
-            const obj = error;
-            if (null != error) {
-              const presentError = ToastUtils.presentError;
-              ToastUtils;
-              let anyErrorMessage = obj.getAnyErrorMessage();
-              if (anyErrorMessage == null) {
-                const intl = tmp(1125).intl;
-                anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-              }
-              presentError(anyErrorMessage);
-            }
-          }
-        }
-      }
-      function t3() {
-        return closure_0(...arguments);
-      }
-      cResult[10] = undefined;
-      cResult[11] = updateSubscriptionsSettings;
-      cResult[12] = t3;
-      tmp28 = t3;
-    }
-  }
-  let tmp23 = first;
-  if (first == null) {
-    class V {
-      constructor() {
-        const obj = error;
-        if (null != error) {
-          const presentError = ToastUtils.presentError;
-          ToastUtils;
-          let anyErrorMessage = obj.getAnyErrorMessage();
-          if (anyErrorMessage == null) {
-            const intl = tmp(1125).intl;
-            anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-          }
-          presentError(anyErrorMessage);
-        }
-      }
-    }
-    if (subscriptionsSettings != null) {
-      class V {
-        constructor() {
-          const obj = error;
-          if (null != error) {
-            const presentError = ToastUtils.presentError;
-            ToastUtils;
-            let anyErrorMessage = obj.getAnyErrorMessage();
-            if (anyErrorMessage == null) {
-              const intl = tmp(1125).intl;
-              anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-            }
-            presentError(anyErrorMessage);
-          }
-        }
-      }
-    }
-    let source = null;
-    if (null != tmp24) {
-      class V {
-        constructor() {
-          const obj = error;
-          if (null != error) {
-            const presentError = ToastUtils.presentError;
-            ToastUtils;
-            let anyErrorMessage = obj.getAnyErrorMessage();
-            if (anyErrorMessage == null) {
-              const intl = tmp(1125).intl;
-              anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-            }
-            presentError(anyErrorMessage);
-          }
-        }
-      }
-      if (null != application) {
-        class V {
-          constructor() {
-            const obj = error;
-            if (null != error) {
-              const presentError = ToastUtils.presentError;
-              ToastUtils;
-              let anyErrorMessage = obj.getAnyErrorMessage();
-              if (anyErrorMessage == null) {
-                const intl = tmp(1125).intl;
-                anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
-              }
-              presentError(anyErrorMessage);
-            }
-          }
-        }
-        const obj10 = { application_id: application.id, image_asset: subscriptionsSettings.cover_image_asset };
-        const obj7 = subscriptionsSettings(tmp2[13]);
-        source = obj7.getSource(obj10);
-      }
-    }
-    tmp23 = source;
-  }
-  cResult[1] = application;
-  cResult[2] = first;
-  cResult[3] = subscriptionsSettings;
-  cResult[4] = tmp23;
-  tmp22 = tmp23;
-}) : (function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
+function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   let closure_5;
   let items3;
   guildId = guildId.guildId;
@@ -572,16 +30,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
   let loading;
   let updateSubscriptionsSettings;
   let error;
-  closure_11 = undefined;
+  let closure_11;
   let callback;
   const tmp = guildId;
   let tmp2 = isFullServerGating;
-  let obj = guildId(isFullServerGating[8]);
+  let obj = guildId(isFullServerGating[6]);
   navigation = obj.useNavigation();
-  let obj2 = guildId(isFullServerGating[9]);
+  let obj2 = guildId(isFullServerGating[7]);
   const subscriptionsSettings = obj2.useSubscriptionsSettings(guildId);
-  isFullServerGating = navigation(isFullServerGating[10])(guildId).isFullServerGating;
-  const application = navigation(isFullServerGating[11])(guildId, loading.GUILD_ROLE_SUBSCRIPTIONS).application;
+  isFullServerGating = navigation(isFullServerGating[8])(guildId).isFullServerGating;
+  const application = navigation(isFullServerGating[9])(guildId, loading.GUILD_ROLE_SUBSCRIPTIONS).application;
   let obj3 = str;
   const tmp7 = _slicedToArray(str.useState(null), 2);
   const first = tmp7[0];
@@ -597,13 +55,13 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
   const tmp6Result2 = _slicedToArray(obj3.useState(isFullServerGating), 2);
   first1 = tmp6Result2[0];
   const tmp15 = tmp6Result2[1];
-  const tmpResult = tmp(tmp2[9]);
+  const tmpResult = tmp(tmp2[7]);
   const updateSubscriptionsSettings1 = tmpResult.useUpdateSubscriptionsSettings();
   loading = updateSubscriptionsSettings1.loading;
   updateSubscriptionsSettings = updateSubscriptionsSettings1.updateSubscriptionsSettings;
   error = updateSubscriptionsSettings1.error;
   let tmp17 = null != first;
-  const insets = tmp5(tmp2[12])({}).insets;
+  const insets = tmp5(tmp2[10])({}).insets;
   if (!tmp17) {
     let tmp18 = null != str;
     if (tmp18) {
@@ -632,7 +90,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
     if (null != cover_image_asset) {
       source = null;
       if (null != application) {
-        let obj5 = subscriptionsSettings(tmp2[13]);
+        let obj5 = subscriptionsSettings(tmp2[11]);
         let obj4 = { application_id: application.id, image_asset: subscriptionsSettings.cover_image_asset };
         source = obj5.getSource(obj4);
       }
@@ -652,7 +110,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -688,7 +146,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
             if (isFullServerGating !== first1) {
               obj5.full_server_gate = first1;
             }
-            const obj3 = navigation(isFullServerGating[14]);
+            const obj3 = navigation(isFullServerGating[12]);
             if (!obj3.isEmpty(obj5)) {
               navigation = 1;
               c2 = 1;
@@ -707,7 +165,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
           closure_128_5(null);
         }
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c2 = 3;
         throw tmp16;
@@ -720,15 +178,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
     let onPress;
     const setOptions = navigation.setOptions;
     if (loading) {
-      fn = () => updateSubscriptionsSettings(guildId(isFullServerGating[15]).HeaderSubmittingIndicator, {});
+      fn = () => updateSubscriptionsSettings(guildId(isFullServerGating[13]).HeaderSubmittingIndicator, {});
     } else {
       const tmp2 = closure_11;
       if (tmp2) {
         fn = () => {
           let intl;
-          const obj = { text: intl.string(guildId(isFullServerGating[17]).t["R3BPH+"]), onPress };
-          const HeaderActionButton = guildId(isFullServerGating[16]).HeaderActionButton;
-          intl = guildId(isFullServerGating[17]).intl;
+          const obj = { text: intl.string(guildId(isFullServerGating[15]).t["R3BPH+"]), onPress };
+          const HeaderActionButton = guildId(isFullServerGating[14]).HeaderActionButton;
+          intl = guildId(isFullServerGating[15]).intl;
           return updateSubscriptionsSettings(HeaderActionButton, obj);
         };
       } else {
@@ -745,18 +203,18 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
       ToastUtils;
       let anyErrorMessage = obj.getAnyErrorMessage();
       if (anyErrorMessage == null) {
-        const intl = tmp(1125).intl;
-        anyErrorMessage = intl.string(tmp(1125).t.ZUEGFn);
+        const intl = tmp(1114).intl;
+        anyErrorMessage = intl.string(tmp(1114).t.ZUEGFn);
       }
       presentError(anyErrorMessage);
     }
   }, items2);
-  let obj6 = { contentContainerStyle: { paddingBottom: insets.bottom + tmp5(tmp2[19]).space.PX_16 }, children: items3 };
+  let obj6 = { contentContainerStyle: { paddingBottom: insets.bottom + tmp5(tmp2[17]).space.PX_16 }, children: items3 };
   items3 = [, ];
-  ({ paddingBottom: insets.bottom + navigation(tmp2[19]).space.PX_16 });
-  items3[0] = updateSubscriptionsSettings(navigation(tmp2[20]), { isFullServerGating: first1, onChange: tmp15 });
+  ({ paddingBottom: insets.bottom + navigation(tmp2[17]).space.PX_16 });
+  items3[0] = updateSubscriptionsSettings(navigation(tmp2[18]), { isFullServerGating: first1, onChange: tmp15 });
   const obj8 = { cover: tmp20, setCover: tmp7[1], description: str, setDescription: tmp12 };
-  const Content = tmp(tmp2[21]).Content;
+  const Content = tmp(tmp2[19]).Content;
   const tmp27 = error;
   const tmp28 = first1;
   const tmp29 = updateSubscriptionsSettings;
@@ -772,40 +230,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
   }
   items3[1] = tmp29(Content, obj8);
   return tmp27(tmp28, obj6);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(5);
-  guildId = guildId.guildId;
-  if (cResult[0] !== guildId) {
-    const obj2 = { guildId };
-    const tmp6 = React4(closure_11, obj2);
-    cResult[0] = guildId;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  if (cResult[2] === guildId) {
-    let tmp7;
-    if (cResult[3] === tmp3) {
-      tmp7 = cResult[4];
-    }
-    return tmp7;
-  }
-  const tmp8 = React4(GuildSettingsRoleSubscriptionContainerDefault, { guildId, children: tmp3 });
-  cResult[2] = guildId;
-  cResult[3] = tmp3;
-  cResult[4] = tmp8;
-  tmp7 = tmp8;
-}) : (function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
-  guildId = guildId.guildId;
-  const obj = { guildId, children: React4(closure_11, { guildId }) };
-  const tmp = GuildSettingsRoleSubscriptionContainerDefault;
-  return React4(tmp, obj);
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+const ScrollView = react_native.ScrollView;
+const ApplicationTypes = ApplicationConstants.ApplicationTypes;
+({ jsx: c9, jsxs: c10 } = Fragment);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsGroupEdit.tsx");
 
-export default tmp3;
+export default function GuildSettingsRoleSubscriptionsGroupEdit(guildId) {
+  guildId = guildId.guildId;
+  const obj = { guildId, children: React4(GuildSettingsRoleSubscriptionsGroupEditInner, { guildId }) };
+  const tmp = GuildSettingsRoleSubscriptionContainerDefault;
+  return React4(tmp, obj);
+};

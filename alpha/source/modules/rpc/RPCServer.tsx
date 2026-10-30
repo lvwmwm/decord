@@ -1,18 +1,18 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9310
+// Function ID: 9311
 // Name: RPCServer
-// Dependencies: [5, 6437, 1084, 12, 9298, 9300, 9302, 1264, 38, 9303, 9305, 4852, 1101, 2]
+// Dependencies: [5, 6444, 1072, 12, 9311, 9313, 9315, 1253, 38, 9316, 9318, 4853, 1090, 2]
 
-// Module 9297 (RPCServer)
+// Module 9310 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Constants2 from "Constants" /* 6437 */;
-import transformUserDefault from "transformUser" /* 9298 */;
-import RPCErrorDefault from "RPCError" /* 9300 */;
-import validateScopeDefault from "validateScope" /* 9302 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9305 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Constants2 from "Constants" /* 6444 */;
+import transformUserDefault from "transformUser" /* 9311 */;
+import RPCErrorDefault from "RPCError" /* 9313 */;
+import validateScopeDefault from "validateScope" /* 9315 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9318 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, command, dependencyMap, importDefault;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f149179 = function() {
+    const f124781 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f149179).then;
-    then(f149179);
+    const then2 = then(f124781).then;
+    then(f124781);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

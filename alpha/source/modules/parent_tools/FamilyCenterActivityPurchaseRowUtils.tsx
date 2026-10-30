@@ -1,36 +1,36 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16751
+// Function ID: 16752
 // Name: FamilyCenterActivityPurchaseRowUtils
-// Dependencies: [7713, 7714, 1391, 1993, 1125, 2536, 1415, 2]
+// Dependencies: [7718, 7719, 1386, 1988, 1114, 2537, 1410, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 16698 (FamilyCenterActivityPurchaseRowUtils)
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7713 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7714 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+// Module 16751 (FamilyCenterActivityPurchaseRowUtils)
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
+import _modDef2537 from "module_2537" /* 2537 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7718 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7719 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl5 = tmp(1125).intl;
-    return intl5.string(_modDef2536.obi47v);
+    const intl5 = tmp(1114).intl;
+    return intl5.string(_modDef2537.obi47v);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl4 = tmp(1125).intl;
-    return intl4.string(_modDef2536.RX8BMR);
+    const intl4 = tmp(1114).intl;
+    return intl4.string(_modDef2537.RX8BMR);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-    const intl3 = tmp(1125).intl;
-    return intl3.string(_modDef2536.nNGEHk);
+    const intl3 = tmp(1114).intl;
+    return intl3.string(_modDef2537.nNGEHk);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
-    const intl2 = tmp(1125).intl;
-    return intl2.string(_modDef2536.VS1fKo);
+    const intl2 = tmp(1114).intl;
+    return intl2.string(_modDef2537.VS1fKo);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp(1125).intl;
-    return intl.string(_modDef2536.JiIY1l);
+    const intl = tmp(1114).intl;
+    return intl.string(_modDef2537.JiIY1l);
   } else {
     return "";
   }

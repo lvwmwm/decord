@@ -1,71 +1,24 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17164
+// Function ID: 17165
 // Name: PremiumRestoreSubscriptionSetting
-// Dependencies: [1389, 21, 7589, 5947, 1125, 17111, 2000, 558, 576, 504, 1381, 11302, 9487, 2]
+// Dependencies: [1384, 21, 7597, 5954, 1114, 17165, 1995, 504, 1376, 11505, 9506, 2]
 
-// Module 17110 (PremiumRestoreSubscriptionSetting)
+// Module 17164 (PremiumRestoreSubscriptionSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7589 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import intl4 from "intl" /* 1114 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7597 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
+import UserStore from "UserStore" /* 1384 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
+let tmp;
+const PlatformUtils = tmp(1376);
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPremiumRestoreSubscriptionSetting() {
-  let currentUser;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let tmp10 = null != stateFromStores && stateFromStores.verified;
-    if (tmp10) {
-      const tmpResult2 = PlatformUtils;
-      tmp10 = !tmpResult2.isAndroid();
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function useHasPremiumRestoreSubscriptionSetting() {
-  let currentUser;
-  const items = [UserStore];
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let tmp4 = null != stateFromStores && stateFromStores.verified;
-  if (tmp4) {
-    const tmpResult = PlatformUtils;
-    tmp4 = !tmpResult.isAndroid();
-  }
-  return tmp4;
-});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
@@ -123,7 +76,18 @@ let obj = {
     obj2.openLazy(obj3);
   },
   withArrow: true,
-  usePredicate: tmp2
+  usePredicate: function useHasPremiumRestoreSubscriptionSetting() {
+    let currentUser;
+    const items = [UserStore];
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+    let tmp4 = null != stateFromStores && stateFromStores.verified;
+    if (tmp4) {
+      const tmpResult = PlatformUtils;
+      tmp4 = !tmpResult.isAndroid();
+    }
+    return tmp4;
+  }
 };
 const pressable = SettingBuilders.createPressable(obj);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/PremiumRestoreSubscriptionSetting.tsx");

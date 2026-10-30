@@ -1,12 +1,12 @@
-// Module ID: 13837
-// Function ID: 13838
+// Module ID: 11183
+// Function ID: 11184
 // Name: ChannelFollowerActionCreators
-// Dependencies: [5, 1084, 1294, 584, 2]
+// Dependencies: [5, 1072, 1283, 572, 2]
 
-// Module 13837 (ChannelFollowerActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 11183 (ChannelFollowerActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -90,7 +90,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           closure_2 = tmp18;

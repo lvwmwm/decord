@@ -1,17 +1,17 @@
-// Module ID: 14025
-// Function ID: 14026
+// Module ID: 14157
+// Function ID: 14158
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 4857, 1084, 5701, 1125, 7407, 5247, 6903, 5039, 14026, 2000, 2]
+// Dependencies: [5, 32, 19, 4858, 1072, 5707, 1114, 7415, 5253, 6910, 5043, 14158, 1995, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 14025 (useJoinRequestButtonActions)
-import Constants from "Constants" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+// Module 14157 (useJoinRequestButtonActions)
+import Constants from "Constants" /* 1072 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -19,11 +19,11 @@ let c4, c5;
 const Routes = Constants.Routes;
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/useJoinRequestButtonActions.tsx");
 
-export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cResult) {
+export function useJoinRequestButtonActions(joinRequest, interviewChannelId, callback) {
   let callback1;
   let items1;
   let items2;
-  let onDismiss = cResult;
+  let onDismiss = callback;
   let obj = joinRequest;
   if (joinRequest == null) {
     obj = {};
@@ -59,7 +59,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(14026, dependencyMap.paths);
+        const tmp10 = asyncRequire(14158, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {
@@ -307,6 +307,6 @@ export function useJoinRequestButtonActions(joinRequest, interviewChannelId, cRe
     }
   }), items);
   items1 = [guildId, joinRequestId, onError, submitting, userId];
-  items2 = [guildId, joinRequestId, joinRequest, cResult, onError, userId];
+  items2 = [guildId, joinRequestId, joinRequest, callback, onError, userId];
   return obj2;
 }

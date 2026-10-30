@@ -1,11 +1,11 @@
-// Module ID: 9892
-// Function ID: 9893
+// Module ID: 9919
+// Function ID: 9920
 // Name: emojis/EmojiActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: initiateEmojiInteraction, toggleGuildExpandedState
 
-// Module 9892 (emojis/EmojiActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 9919 (emojis/EmojiActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/EmojiActionCreators.tsx");

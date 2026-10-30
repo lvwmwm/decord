@@ -1,12 +1,12 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16326
+// Function ID: 16327
 // Name: screenCaptureEvents
-// Dependencies: [6437, 1084, 16207, 2]
+// Dependencies: [6444, 1072, 16247, 2]
 
-// Module 16285 (screenCaptureEvents)
-import Constants2 from "Constants" /* 1084 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16207 */;
-import Constants from "Constants" /* 6437 */;
+// Module 16326 (screenCaptureEvents)
+import Constants2 from "Constants" /* 1072 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16247 */;
+import Constants from "Constants" /* 6444 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

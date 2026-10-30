@@ -1,27 +1,27 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 13970
+// Function ID: 13971
 // Name: SpamMessageHamActionSheet
-// Dependencies: [32, 19, 17, 1389, 21, 5005, 587, 558, 576, 5701, 1125, 5247, 504, 13818, 7353, 7308, 8988, 5281, 5302, 2]
+// Dependencies: [32, 19, 17, 1384, 21, 5009, 575, 504, 13965, 5707, 1114, 5253, 5267, 7315, 7361, 8169, 5629, 2]
+// Exports: default
 
-// Module 13823 (SpamMessageHamActionSheet)
+// Module 13970 (SpamMessageHamActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7353 */;
-import Form from "Form" /* 8988 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 13818 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7315 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 7361 */;
+import _mod8169 from "module_8169" /* 8169 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 13965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -41,116 +41,9 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
 obj4 = { marginTop: nativeDefault.space.PX_24 };
 let closure_9 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessageRequestHamActionSheet(channel) {
-  let closure_4;
-  let first;
-  let first1;
-  let isAcceptLoading;
-  let isOptimisticAccepted;
-  let onCancel;
-  let tmp11;
-  let tmp13;
-  let tmp8;
-  let tmp9;
-  const tmp = channel;
-  let obj = channel(onCancel[8]);
-  const cResult = obj.c(44);
-  channel = channel.channel;
-  const onConfirm = channel.onConfirm;
-  onCancel = channel.onCancel;
-  closure_9();
-  const tmp5 = first(react.useState(false), 2);
-  first = tmp5[0];
-  react = tmp5[1];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleRequestError() {
-      let intl;
-      const obj = { text: intl.string(channel(onCancel[10]).t["EDYbS+"]), variant: "critical" };
-      const open = onConfirm(onCancel[9]).open;
-      onConfirm(onCancel[9]);
-      intl = channel(onCancel[10]).intl;
-      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
-    }
-    cResult[0] = handleRequestError;
-    first1 = handleRequestError;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleAcceptSuccess() {
-      const obj = onConfirm(onCancel[11]);
-      obj.hideActionSheet();
-    }
-    cResult[1] = handleAcceptSuccess;
-    tmp8 = handleAcceptSuccess;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== channel) {
-    class P {
-      constructor() {
-        return UserStore.getUser(channel.getRecipientId());
-      }
-    }
-    cResult[3] = channel;
-    cResult[4] = P;
-    tmp11 = P;
-  } else {
-    class P {
-      constructor() {
-        return UserStore.getUser(channel.getRecipientId());
-      }
-    }
-  }
-  const tmpResult = tmp(onCancel[12]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
-  if (cResult[5] !== stateFromStores) {
-    class P {
-      constructor() {
-        return UserStore.getUser(channel.getRecipientId());
-      }
-    }
-    tmp14[0] = stateFromStores;
-    tmp14[1] = first1;
-    tmp14[2] = tmp8;
-    cResult[5] = stateFromStores;
-    cResult[6] = tmp14;
-    tmp13 = tmp14;
-  } else {
-    class P {
-      constructor() {
-        return UserStore.getUser(channel.getRecipientId());
-      }
-    }
-  }
-  const tmpResult2 = tmp(onCancel[13]);
-  const messageRequestActions = tmpResult2.useMessageRequestActions(tmp13);
-  const acceptMessageRequest = messageRequestActions.acceptMessageRequest;
-  ({ isAcceptLoading, isOptimisticAccepted } = messageRequestActions);
-  if (cResult[7] === acceptMessageRequest) {
-    class P {
-      constructor() {
-        return UserStore.getUser(channel.getRecipientId());
-      }
-    }
-  }
-  function handleAccept() {
-    onConfirm(first);
-    acceptMessageRequest(channel.id);
-  }
-  cResult[7] = acceptMessageRequest;
-  cResult[8] = channel.id;
-  cResult[9] = first;
-  cResult[10] = onConfirm;
-  cResult[11] = handleAccept;
-}) : (function SpamMessageRequestHamActionSheet(arg0) {
+const result = size.fileFinishedImporting("modules/message_request/native/spam/SpamMessageHamActionSheet.tsx");
+
+export default function SpamMessageRequestHamActionSheet(arg0) {
   let Button;
   let _undefined;
   let c5;
@@ -223,7 +116,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
       return closure_4(arg0);
     }
   };
-  const FormSwitchRow = Form.FormSwitchRow;
+  const FormSwitchRow = _mod8169.FormSwitchRow;
   intl2 = intl4.intl;
   items2 = [closure_7(FormSwitchRow, obj8), ];
   const obj9 = { style: tmp.buttonContainer, children: closure_7(Button, obj10) };
@@ -245,7 +138,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SpamMessag
   items2[1] = closure_7(c5, obj9);
   items1[1] = closure_8(c5, obj7);
   return closure_8(BottomSheet, obj4);
-});
-const result = size.fileFinishedImporting("modules/message_request/native/spam/SpamMessageHamActionSheet.tsx");
-
-export default tmp4;
+};

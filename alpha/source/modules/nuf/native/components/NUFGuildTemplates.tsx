@@ -1,32 +1,23 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14225
+// Function ID: 14226
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5040, 1084, 14078, 7133, 21, 6889, 13863, 11264, 14079, 14158, 1264, 1272, 6984, 14053, 1111, 14081, 14110, 13684, 1125, 14124, 14125, 14159, 14137, 558, 576, 7155, 2]
+// Dependencies: [5, 19, 17, 5044, 1072, 14226, 7141, 21, 6896, 13997, 11469, 14227, 14305, 1253, 1261, 6992, 14201, 1100, 14229, 14258, 13831, 1114, 14272, 14273, 14306, 14284, 7163, 2]
+// Exports: default
 
-// Module 14077 (NUFGuildTemplates)
+// Module 14225 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import router_utils from "router_utils" /* 1111 */;
-import intl2 from "intl" /* 1125 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import Navigator2 from "Navigator" /* 7155 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14053 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14078 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14079 */;
-import GuildTemplatesDefault from "GuildTemplates" /* 14081 */;
-import CreationIntentDefault from "CreationIntent" /* 14110 */;
-import components_JoinServerDefault from "components/JoinServer" /* 14124 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 14125 */;
-import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 14137 */;
+import intl2 from "intl" /* 1114 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import Navigator2 from "Navigator" /* 7163 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14226 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5040 */;
-import Constants from "Constants" /* 1084 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7133 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5044 */;
+import Constants from "Constants" /* 1072 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7141 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -52,7 +43,7 @@ let obj = function _onCreateGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -93,7 +84,7 @@ let obj = function _onCreateGuild() {
           const obj9 = closure_130_1(closure_130_2[13]);
           obj9.track(closure_130_7.USER_FLOW_TRANSITION, obj10);
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -120,7 +111,7 @@ obj = function _onCreateServer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -152,7 +143,7 @@ obj = function _onCreateServer() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c3 = 3;
           throw tmp7;
@@ -162,159 +153,140 @@ obj = function _onCreateServer() {
   });
   return obj(...arguments);
 };
-function getScreens() {
-  let constants2;
-  let fallbackRoute;
-  let obj3;
-  let onCancel;
-  function headerTitle() {
-    return null;
-  }
-  function render(guildTemplate) {
-    return jsx(CreationIntentDefault, { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF });
-  }
-  const headerTitle2 = function headerTitle() {
-    return null;
-  };
-  const render2 = function render(arg0, arg1) {
-    let intl;
-    const guildTemplate = arg0;
-    let closure_1 = arg1;
-    obj = {
-      onCreate(guild) {
-        function onCreateServer() {
-          return closure_1_17(...arguments);
-        }
-        return onCreateServer(closure_1, guild.guild.id, guildTemplate.guildTemplate);
-      },
-      customTitle: intl.string(guildTemplate(closure_2[21]).t["5HZu07"])
-    };
-    const tmp = closure_1(closure_2[20]);
-    const merged = Object.assign(arg0);
-    intl = guildTemplate(closure_2[21]).intl;
-    return closure_14(tmp, obj);
-  };
-  const headerTitle3 = function headerTitle() {
-    return null;
-  };
-  const render3 = function render() {
-    components_JoinServerDefault;
-    return <tmp location="Onboarding Join Guild Modal" onClose={CreateGuildModalActionCreatorsDefault.closeCreateGuildModal} />;
-  };
-  const headerTitle4 = function headerTitle() {
-    return null;
-  };
-  function headerLeft() {
-    return null;
-  }
-  const render4 = function render(code) {
-    AcceptInviteContainerDefault;
-    return <tmp code={arg0.code} onPressClose={CreateGuildModalActionCreatorsDefault.closeCreateGuildModal} />;
-  };
-  const headerTitle5 = function headerTitle() {
-    return null;
-  };
-  const render5 = function render(guildId) {
-    let intl;
-    guildId = guildId.guildId;
-    obj = {
-      hasSkip: true,
-      hasBack: false,
-      onCancel,
-      onSuccess() {
-        return onCreateGuild(guildId);
-      },
-      guildId,
-      buttonText: intl.string(guildId(closure_2[21]).t["uHXB+F"])
-    };
-    const tmp = closure_1(closure_2[24]);
-    intl = guildId(closure_2[21]).intl;
-    return closure_14(tmp, obj);
-  };
-  obj = {};
-  let obj2 = {
-    impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_LANDING,
-    impressionProperties: obj,
-    fullscreen: true,
-    headerTitle() {
-      return null;
-    },
-    headerLeft: obj3.getHeaderCloseButton(() => {
-      obj = NewUserAnalyticsUtils;
-      obj.trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
-      const obj2 = router_utils;
-      obj2.transitionTo(fallbackRoute.fallbackRoute);
-      const obj3 = CreateGuildModalActionCreatorsDefault;
-      const result = obj3.closeCreateGuildOnboardingModal();
-    }),
-    render() {
-      return jsx(GuildTemplatesDefault, { trigger: constants.NUF });
-    }
-  };
-  const GUILD_TEMPLATES = unpackModuleId.GUILD_TEMPLATES;
-  obj3 = NavigatorHeader;
-  obj[GUILD_TEMPLATES] = obj2;
-  obj[unpackModuleId.CREATION_INTENT] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_INTENT_SELECTION, impressionProperties: obj, fullscreen: true, headerTitle, render };
-  ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_INTENT_SELECTION, impressionProperties: obj, fullscreen: true, headerTitle, render });
-  obj[unpackModuleId.CREATE_SERVER] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CUSTOMIZE, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle2, render: render2 };
-  ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CUSTOMIZE, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle2, render: render2 });
-  obj[unpackModuleId.JOIN_SERVER] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_JOIN, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle3, render: render3 };
-  ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_JOIN, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle3, render: render3 });
-  obj[unpackModuleId.ACCEPT_INVITE] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle4, headerLeft, render: render4 };
-  ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle4, headerLeft, render: render4 });
-  obj[unpackModuleId.CHANNEL_PROMPT] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle5, render: render5 };
-  const obj9 = {
-    impressionName: "Array",
-    impressionProperties: obj,
-    fullscreen: true,
-    ignoreKeyboard: null,
-    headerTitle() {
-      return null;
-    },
-    headerLeft() {
-      return null;
-    },
-    render() {
-      return jsx(HubEmailConnectionModalDefault, { isNestedNavigator: true });
-    }
-  };
-  obj[unpackModuleId.JOIN_STUDENT_HUB] = obj9;
-  ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT, impressionProperties: obj, fullscreen: true, headerTitle: headerTitle5, render: render5 });
-  return obj;
-}
 const Keyboard = react_native.Keyboard;
 ({ AnalyticEvents: metroImportDefault, AnalyticsSections: metroImportAll, NOOP: c9 } = Constants);
 const GuildTemplateId = create_guild_CreateGuildConstants.GuildTemplateId;
 ({ CreateGuildModalStates: unpackModuleId, GuildTemplateTriggers: closure_12, NUXGuildTemplatesAnalytics: map1 } = CreateGuildConstants);
 const jsx = Fragment.jsx;
 obj = { impression_group: discord_common_AnalyticsUtils.ImpressionGroups.GUILD_ADD_FLOW };
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFGuildTemplates() {
-  let first;
-  let tmp7;
-  obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = getScreens();
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(7155).Navigator;
-    const intl = tmp(1125).intl;
-    const tmp11 = <Navigator screens={first} onWillFocus={Keyboard.dismiss} headerBackTitle={intl.string(intl2.t["13/7kX"])} initialRouteName={unpackModuleId.GUILD_TEMPLATES} />;
-    cResult[1] = tmp11;
-    tmp7 = tmp11;
-  } else {
-    tmp7 = cResult[1];
-  }
-  return tmp7;
-}) : (function NUFGuildTemplates() {
-  const Navigator = Navigator2.Navigator;
-  const intl = intl2.intl;
-  return <Navigator screens={react.useMemo(() => getScreens(), [])} onWillFocus={Keyboard.dismiss} headerBackTitle={intl.string(intl2.t["13/7kX"])} initialRouteName={unpackModuleId.GUILD_TEMPLATES} />;
-});
 let result = size.fileFinishedImporting("modules/nuf/native/components/NUFGuildTemplates.tsx");
 
-export default tmp4;
+export default function NUFGuildTemplates() {
+  let impressionProperties;
+  const Navigator = Navigator2.Navigator;
+  let intl = intl2.intl;
+  return <Navigator screens={react.useMemo(() => {
+    let constants2;
+    let fallbackRoute;
+    let obj3;
+    let onCancel;
+    function headerTitle() {
+      return null;
+    }
+    function render(guildTemplate) {
+      obj = { guildTemplate: guildTemplate.guildTemplate, trigger: constants.NUF };
+      return closure_1_14(closure_1_1(closure_1_2[19]), obj);
+    }
+    const headerTitle2 = function headerTitle() {
+      return null;
+    };
+    const render2 = function render(arg0, arg1) {
+      let intl;
+      const guildTemplate = arg0;
+      let closure_1 = arg1;
+      obj = {
+        onCreate(guild) {
+          function onCreateServer() {
+            return closure_1_17(...arguments);
+          }
+          return onCreateServer(closure_1, guild.guild.id, guildTemplate.guildTemplate);
+        },
+        customTitle: intl.string(guildTemplate(closure_2[21]).t["5HZu07"])
+      };
+      const tmp = closure_1(closure_2[20]);
+      const merged = Object.assign(arg0);
+      intl = guildTemplate(closure_2[21]).intl;
+      return closure_14(tmp, obj);
+    };
+    const headerTitle3 = function headerTitle() {
+      return null;
+    };
+    const render3 = function render() {
+      obj = { location: "Onboarding Join Guild Modal", onClose: closure_1_1(closure_1_2[11]).closeCreateGuildModal };
+      const tmp = closure_1_1(closure_1_2[22]);
+      return closure_1_14(tmp, obj);
+    };
+    const headerTitle4 = function headerTitle() {
+      return null;
+    };
+    function headerLeft() {
+      return null;
+    }
+    const render4 = function render(code) {
+      obj = { code: code.code, onPressClose: closure_1_1(closure_1_2[11]).closeCreateGuildModal };
+      const tmp = closure_1_1(closure_1_2[23]);
+      return closure_1_14(tmp, obj);
+    };
+    const headerTitle5 = function headerTitle() {
+      return null;
+    };
+    const render5 = function render(guildId) {
+      let intl;
+      guildId = guildId.guildId;
+      obj = {
+        hasSkip: true,
+        hasBack: false,
+        onCancel,
+        onSuccess() {
+          return closure_2_15(guildId);
+        },
+        guildId,
+        buttonText: intl.string(guildId(closure_2[21]).t["uHXB+F"])
+      };
+      const tmp = closure_1(closure_2[24]);
+      intl = guildId(closure_2[21]).intl;
+      return closure_14(tmp, obj);
+    };
+    obj = {};
+    let obj2 = {
+      impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_LANDING,
+      impressionProperties,
+      fullscreen: true,
+      headerTitle() {
+        return null;
+      },
+      headerLeft: obj3.getHeaderCloseButton(() => {
+        obj = closure_1_0(closure_1_2[16]);
+        obj.trackNUFStep(constants2.STEP_GUILD_TEMPLATE, constants2.STEP_FRIEND_LIST, { skip: true });
+        const obj2 = closure_1_0(closure_1_2[17]);
+        obj2.transitionTo(fallbackRoute.fallbackRoute);
+        const obj3 = closure_1_1(closure_1_2[11]);
+        const result = obj3.closeCreateGuildOnboardingModal();
+      }),
+      render() {
+        obj = { trigger: constants.NUF };
+        return closure_1_14(closure_1_1(closure_1_2[18]), obj);
+      }
+    };
+    const GUILD_TEMPLATES = constants.GUILD_TEMPLATES;
+    obj3 = NavigatorHeader;
+    obj[GUILD_TEMPLATES] = obj2;
+    obj[constants.CREATION_INTENT] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_INTENT_SELECTION, impressionProperties, fullscreen: true, headerTitle, render };
+    ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_INTENT_SELECTION, impressionProperties, fullscreen: true, headerTitle, render });
+    obj[constants.CREATE_SERVER] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CUSTOMIZE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, render: render2 };
+    ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CUSTOMIZE, impressionProperties, fullscreen: true, headerTitle: headerTitle2, render: render2 });
+    obj[constants.JOIN_SERVER] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_JOIN, impressionProperties, fullscreen: true, headerTitle: headerTitle3, render: render3 };
+    ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_JOIN, impressionProperties, fullscreen: true, headerTitle: headerTitle3, render: render3 });
+    obj[constants.ACCEPT_INVITE] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle4, headerLeft, render: render4 };
+    ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_ACCEPT_INVITE, impressionProperties, fullscreen: true, headerTitle: headerTitle4, headerLeft, render: render4 });
+    obj[constants.CHANNEL_PROMPT] = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT, impressionProperties, fullscreen: true, headerTitle: headerTitle5, render: render5 };
+    const obj9 = {
+      impressionName: "Array",
+      impressionProperties,
+      fullscreen: true,
+      ignoreKeyboard: null,
+      headerTitle() {
+        return null;
+      },
+      headerLeft() {
+        return null;
+      },
+      render() {
+        return closure_1_14(closure_1_1(closure_1_2[25]), { isNestedNavigator: true });
+      }
+    };
+    obj[constants.JOIN_STUDENT_HUB] = obj9;
+    ({ impressionName: discord_common_AnalyticsUtils.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT, impressionProperties, fullscreen: true, headerTitle: headerTitle5, render: render5 });
+    return obj;
+  }, [])} onWillFocus={Keyboard.dismiss} headerBackTitle={intl.string(intl2.t["13/7kX"])} initialRouteName={unpackModuleId.GUILD_TEMPLATES} />;
+};

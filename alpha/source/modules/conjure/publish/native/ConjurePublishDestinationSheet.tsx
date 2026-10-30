@@ -1,232 +1,32 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12398
+// Function ID: 12399
 // Name: ConjurePublishDestinationSheet
-// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 1125, 3864, 5247, 7308, 7044, 7045, 5281, 7358, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 1114, 3865, 5253, 7360, 7315, 7052, 7055, 5629, 2]
 // Exports: default
 
-// Module 12242 (ConjurePublishDestinationSheet)
+// Module 12398 (ConjurePublishDestinationSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import TableRadioRow from "TableRadioRow" /* 7044 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7045 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7052 */;
+import TableRadioRow from "TableRadioRow" /* 7055 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7315 */;
+import ActionSheet2 from "ActionSheet" /* 7360 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
-let dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
-const View = react_native.View;
-({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-const ConjurePublishDestinationSheet = "ConjurePublishDestinationSheet";
-let obj = { content: obj2 };
-obj2 = { gap: nativeDefault.space.PX_16 };
-let closure_9 = createStyles.createStyles(obj);
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublishDestinationSheet(arg0) {
-  let closure_2;
-  let first1;
-  let items;
-  let onDone;
-  let options;
-  let tmp11;
-  let tmp7;
-  let value;
-  let obj = onDone(576);
-  const cResult = obj.c(27);
-  ({ options, onDone } = arg0);
-  const tmp4 = closure_9();
-  [value, tmp7] = react.useState(options.selected_destination_id);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(value(3864).lJrOGW);
-    cResult[0] = stringResult;
-    first1 = stringResult;
-  } else {
-    first1 = cResult[0];
-  }
-  if (cResult[1] !== onDone) {
-    function finish(arg0) {
-      onDone(arg0);
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(ConjurePublishDestinationSheet);
-    }
-    cResult[1] = onDone;
-    cResult[2] = finish;
-    tmp11 = finish;
-  } else {
-    tmp11 = cResult[2];
-  }
-  dependencyMap = tmp11;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { title: first1 };
-    cResult[3] = closure_6(onDone(7308).BottomSheetTitleHeader, obj2);
-    const tmp14 = closure_6(onDone(7308).BottomSheetTitleHeader, obj2);
-  }
-  if (cResult[4] !== onDone) {
-    const fn = function w() {
-      return onDone(null);
-    };
-    cResult[4] = onDone;
-    cResult[5] = fn;
-  }
-  const content = tmp4.content;
-  if (cResult[6] !== options.destinations) {
-    let tmp17;
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor(label) {
-          const id = label.id;
-          return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-        }
-      }
-      cResult[8] = T;
-      tmp17 = T;
-    } else {
-      class T {
-        constructor(label) {
-          const id = label.id;
-          return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-        }
-      }
-    }
-    const destinations = options.destinations;
-    const mapped = destinations.map(tmp17);
-    cResult[6] = options.destinations;
-    cResult[7] = mapped;
-  } else {
-    class T {
-      constructor(label) {
-        const id = label.id;
-        return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-      }
-    }
-  }
-  if (cResult[9] === value) {
-    let tmp21;
-    class T {
-      constructor(label) {
-        const id = label.id;
-        return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor(label) {
-          const id = label.id;
-          return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-        }
-      }
-      const stringResult1 = obj3.string(value(3864).zh1Izp);
-      cResult[12] = stringResult1;
-      tmp21 = stringResult1;
-    } else {
-      class T {
-        constructor(label) {
-          const id = label.id;
-          return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-        }
-      }
-    }
-    if (cResult[13] === value) {
-      let tmp27;
-      class T {
-        constructor(label) {
-          const id = label.id;
-          return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-        }
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-        class T {
-          constructor(label) {
-            const id = label.id;
-            return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-          }
-        }
-        const stringResult2 = obj5.string(value(3864).y83r6D);
-        cResult[16] = stringResult2;
-        tmp27 = stringResult2;
-      } else {
-        class T {
-          constructor(label) {
-            const id = label.id;
-            return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-          }
-        }
-      }
-      if (cResult[17] !== tmp11) {
-        class T {
-          constructor(label) {
-            const id = label.id;
-            return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-          }
-        }
-        const obj4 = {
-          variant: "secondary",
-          text: tmp27,
-          onPress() {
-                  return closure_2(null);
-                }
-        };
-        cResult[17] = tmp11;
-        cResult[18] = closure_6(onDone(5281).Button, obj4);
-        const tmp31 = closure_6(onDone(5281).Button, obj4);
-      } else {
-        class T {
-          constructor(label) {
-            const id = label.id;
-            return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-          }
-        }
-      }
-      if (cResult[19] === tmp4.content) {
-        class T {
-          constructor(label) {
-            const id = label.id;
-            return closure_1_6(onDone(closure_2[12]).TableRadioRow, { value: id, label: label.label }, id);
-          }
-        }
-      }
-      const obj6 = { style: content, children: items };
-      items = [tmp19, tmp24, tmp30];
-      cResult[19] = tmp4.content;
-      cResult[20] = tmp30;
-      cResult[21] = tmp19;
-      cResult[22] = tmp24;
-      cResult[23] = closure_7(View, obj6);
-      const tmp35 = closure_7(View, obj6);
-    }
-    const obj7 = {
-      variant: "primary",
-      text: tmp21,
-      onPress() {
-          return closure_2(first);
-        }
-    };
-    cResult[13] = value;
-    cResult[14] = tmp11;
-    cResult[15] = closure_6(onDone(5281).Button, obj7);
-    const tmp26 = closure_6(onDone(5281).Button, obj7);
-  }
-  cResult[9] = value;
-  cResult[10] = tmp16;
-  cResult[11] = closure_6(onDone(7045).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
-  const tmp20 = closure_6(onDone(7045).TableRadioGroup, { hasIcons: false, value, onChange: tmp7, accessibilityLabel: first1, children: tmp16 });
-}) : (function PublishDestinationSheet(arg0) {
+function PublishDestinationSheet(arg0) {
   let destinations;
   let intl2;
   let intl3;
@@ -240,7 +40,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   const tmp = closure_9();
   [value, tmp4] = react.useState(options.selected_destination_id);
   const intl = intl4.intl;
-  const stringResult = intl.string(value(3864).lJrOGW);
+  const stringResult = intl.string(value(3865).lJrOGW);
   let obj = {
     header: closure_6(BottomSheetTitleHeader.BottomSheetTitleHeader, { title: stringResult }),
     onDismiss() {
@@ -265,7 +65,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   items = [closure_6(TableRadioGroup, obj3), , ];
   const obj4 = {
     variant: "primary",
-    text: intl2.string(value(3864).zh1Izp),
+    text: intl2.string(value(3865).zh1Izp),
     onPress() {
       require(first);
       const obj = ActionSheetActionCreatorsDefault;
@@ -277,7 +77,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   items[1] = closure_6(Button, obj4);
   const obj5 = {
     variant: "secondary",
-    text: intl3.string(value(3864).y83r6D),
+    text: intl3.string(value(3865).y83r6D),
     onPress() {
       require(null);
       const obj = ActionSheetActionCreatorsDefault;
@@ -288,13 +88,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Publis
   intl3 = intl4.intl;
   items[2] = closure_6(Button2, obj5);
   return closure_6(ActionSheet, obj);
-});
+}
+const View = react_native.View;
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+const ConjurePublishDestinationSheet = "ConjurePublishDestinationSheet";
+let obj = { content: obj2 };
+obj2 = { gap: nativeDefault.space.PX_16 };
+let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishDestinationSheet.tsx");
 
 export default function showConjurePublishDestinationSheet(options) {
   const promise = new Promise((onDone) => {
     let obj2;
-    const obj = { key: ConjurePublishDestinationSheet, content: metroRequire(closure_10, obj2) };
+    const obj = { key: ConjurePublishDestinationSheet, content: metroRequire(PublishDestinationSheet, obj2) };
     const showActionSheet = ActionSheetActionCreators.showActionSheet;
     obj2 = { options, onDone };
     ActionSheetActionCreators;

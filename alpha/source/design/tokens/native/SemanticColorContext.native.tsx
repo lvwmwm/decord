@@ -1,34 +1,34 @@
-// Module ID: 5175
-// Function ID: 5176
+// Module ID: 5181
+// Function ID: 5182
 // Name: SemanticColorContext
-// Dependencies: [1102, 683, 5176, 5180, 5181, 2]
+// Dependencies: [1091, 671, 5182, 5186, 5187, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
-// Module 5175 (SemanticColorContext)
-import _modDef683 from "module_683" /* 683 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import native from "native" /* 5176 */;
-import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5180 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5181 */;
+// Module 5181 (SemanticColorContext)
+import _modDef671 from "module_671" /* 671 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
+import native from "native" /* 5182 */;
+import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 5186 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5187 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 
-export function getSemanticColorContextFromThemeContext(primaryColor) {
+export function getSemanticColorContextFromThemeContext(themeContext) {
   let contrast;
   let enabledExperiments;
   let obj5;
   let primaryColor2;
   let saturation;
   let secondaryColor;
-  primaryColor = primaryColor.primaryColor;
+  const primaryColor = themeContext.primaryColor;
   const obj = getGradientThemeFromFlags;
-  const gradientThemeFromFlags = obj.getGradientThemeFromFlags(primaryColor);
-  ({ contrast, saturation, enabledExperiments } = primaryColor);
+  const gradientThemeFromFlags = obj.getGradientThemeFromFlags(themeContext);
+  ({ contrast, saturation, enabledExperiments } = themeContext);
   const obj2 = client_themes_ClientThemesUtils;
-  let gradientThemeMetadata = obj2.getGradientThemeMetadata(gradientThemeFromFlags, primaryColor.gradient);
+  let gradientThemeMetadata = obj2.getGradientThemeMetadata(gradientThemeFromFlags, themeContext.gradient);
   if (null != primaryColor) {
-    ({ primaryColor: primaryColor2, secondaryColor } = primaryColor);
+    ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
     let tmp10 = null;
     if (null != primaryColor2) {
       const tmpResult = utils_ColorUtils;
@@ -39,7 +39,7 @@ export function getSemanticColorContextFromThemeContext(primaryColor) {
         secondaryColor = primaryColor2;
       }
       const int2hexResult1 = int2hex(secondaryColor);
-      const obj4 = _modDef683(int2hexResult);
+      const obj4 = _modDef671(int2hexResult);
       const mixResult = obj4.mix(int2hexResult1, 0.5);
       let str = "dark";
       const hexResult = mixResult.hex();

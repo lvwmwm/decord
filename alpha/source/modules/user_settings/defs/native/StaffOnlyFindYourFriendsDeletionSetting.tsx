@@ -1,25 +1,23 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16690
+// Function ID: 16691
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8387, 21, 1266, 1271, 558, 576, 4920, 14050, 1348, 5701, 11302, 16638, 2]
+// Dependencies: [5, 17, 8424, 21, 1255, 1260, 4924, 14198, 1337, 5707, 11505, 16691, 2]
 
-// Module 16637 (StaffOnlyFindYourFriendsDeletionSetting)
+// Module 16690 (StaffOnlyFindYourFriendsDeletionSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16638 */;
+import _slicedToArray from "_slicedToArray" /* 4924 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_1266 from "module_1266" /* 1266 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import module_1255 from "module_1255" /* 1255 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c4, c5, closure_2;
 
-let tmp;
-const _slicedToArray = tmp(4920);
+const f110198 = (isLoading) => isLoading.isLoading;
 function setFindYourFriendsDeletionIsLoading(isLoading) {
   let state;
   _require = isLoading;
@@ -45,7 +43,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -84,11 +82,11 @@ let obj = function _onFindYourFriendsDeletionPress() {
             closure_1 = closure_2;
             const self = this;
             const self2 = this;
-            const aPIError = new closure_129_0(closure_129_2[10]).APIError(closure_1);
+            const aPIError = new closure_129_0(closure_129_2[8]).APIError(closure_1);
             text = aPIError.getAnyErrorMessage();
             if (null != text) {
               const obj7 = { text };
-              const obj3 = closure_129_1(closure_129_2[11]);
+              const obj3 = closure_129_1(closure_129_2[9]);
               obj3.open("FIND_YOUR_FRIENDS_DELETION", obj7);
             }
           } else if (arg0 === 1) {
@@ -107,7 +105,7 @@ let obj = function _onFindYourFriendsDeletionPress() {
           closure_129_7(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp35) {
         closure_2 = tmp35;
         if (0 === c3) {
@@ -126,68 +124,28 @@ let obj = function _onFindYourFriendsDeletionPress() {
 const ActivityIndicator = react_native.ActivityIndicator;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-let closure_6 = module_1266.createWithEqualityFn(() => ({ isLoading: false }));
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFindYourFriendsDeletionIsLoading() {
-  let first;
-  obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function e(isLoading) {
-      return isLoading.isLoading;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_6(first, _slicedToArray.shallow);
-}) : (function useFindYourFriendsDeletionIsLoading() {
-  return closure_6((isLoading) => isLoading.isLoading, _slicedToArray.shallow);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsFindYourFriendsDeletionTrailing() {
-  let tmp3;
-  obj = react;
-  const cResult = obj.c(2);
-  const tmp2 = closure_8();
-  if (cResult[0] !== tmp2) {
-    let tmp4 = null;
-    if (tmp2) {
-      tmp4 = <ActivityIndicator />;
-    }
-    cResult[0] = tmp2;
-    cResult[1] = tmp4;
-    tmp3 = tmp4;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function useIsFindYourFriendsDeletionTrailing() {
-  let tmp = null;
-  if (closure_8()) {
-    tmp = <ActivityIndicator />;
-  }
-  return tmp;
-});
-function useIsFindYourFriendsDeletionDisabled() {
-  return closure_8();
-}
+let closure_6 = module_1255.createWithEqualityFn(() => ({ isLoading: false }));
 obj = {
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useIsDisabled: useIsFindYourFriendsDeletionDisabled,
+  useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
+    return closure_6(f110198, _slicedToArray.shallow);
+  },
   onPress: function onFindYourFriendsDeletionPress() {
     return obj(...arguments);
   },
   usePredicate: useIsStaffOrDeveloperSettingPredicate.useStaffOrDeveloperSettingPredicate,
-  useTrailing: tmp3
+  useTrailing: function useIsFindYourFriendsDeletionTrailing() {
+    let tmp = null;
+    if (closure_6(f110198, _slicedToArray.shallow)) {
+      tmp = <ActivityIndicator />;
+    }
+    return tmp;
+  }
 };
 const pressable = SettingBuilders.createPressable(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/StaffOnlyFindYourFriendsDeletionSetting.tsx");
 
 export default pressable;

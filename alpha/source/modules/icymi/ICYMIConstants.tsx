@@ -1,10 +1,10 @@
-// Module ID: 18412
-// Function ID: 18413
+// Module ID: 18471
+// Function ID: 18472
 // Name: ICYMIConstants
-// Dependencies: [1101, 2]
+// Dependencies: [1090, 2]
 
-// Module 18412 (ICYMIConstants)
-import DurationsDefault from "Durations" /* 1101 */;
+// Module 18471 (ICYMIConstants)
+import DurationsDefault from "Durations" /* 1090 */;
 import size from "module_2" /* 2 */;
 
 const result = 15 * DurationsDefault.Millis.MINUTE;

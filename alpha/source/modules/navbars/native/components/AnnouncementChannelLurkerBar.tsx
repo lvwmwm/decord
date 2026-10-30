@@ -1,137 +1,58 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 11175
+// Function ID: 11176
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 13832, 1125, 5271, 5281, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 1114, 5629, 11176, 2]
 
-// Module 14310 (AnnouncementChannelLurkerBar)
+// Module 11175 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 13832 */;
+import nativeDefault from "native" /* 575 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11176 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let obj2;
+class AnnouncementChannelLurkerBar {
+  constructor(channel) {
+    let intl;
+    let intl2;
+    let items;
+    channel = channel.channel;
+    const tmp = closure_5();
+    let obj = { style: tmp.wrapper, children: items };
+    const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1114).t.Hl0Mqh) };
+    const Text = channel(5619).Text;
+    intl = channel(1114).intl;
+    items = [closure_3(Text, obj2), ];
+    const obj3 = {
+      onPress: function handleFollowing() {
+        const id = channel.id;
+        const guildId = channel.getGuildId();
+        if (null != guildId) {
+          const obj = showChannelFollowingActionSheet;
+          const result = obj.showChannelFollowingActionSheet(id, guildId);
+        }
+      },
+      text: intl2.string(channel(1114).t["4z5PU1"]),
+      size: "sm",
+      variant: "secondary",
+      grow: true
+    };
+    const Button = channel(5629).Button;
+    intl2 = channel(1114).intl;
+    items[1] = closure_3(Button, obj3);
+    return closure_4(View, obj);
+  }
+}
 const View = react_native.View;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 let obj = { wrapper: obj2, text: { textAlign: "center", marginBottom: 8 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 };
-let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnnouncementChannelLurkerBar(channel) {
-  let items;
-  let text;
-  let tmp11;
-  let tmp13;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  let wrapper;
-  let obj = channel(576);
-  const cResult = obj.c(12);
-  channel = channel.channel;
-  const tmp4 = closure_5();
-  if (cResult[0] !== channel) {
-    function handleFollowing() {
-      const id = channel.id;
-      const guildId = channel.getGuildId();
-      if (null != guildId) {
-        const obj = showChannelFollowingActionSheet;
-        const result = obj.showChannelFollowingActionSheet(id, guildId);
-      }
-    }
-    cResult[0] = channel;
-    cResult[1] = handleFollowing;
-    tmp5 = handleFollowing;
-  } else {
-    tmp5 = cResult[1];
-  }
-  ({ wrapper, text } = tmp4);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(channel(1125).t.Hl0Mqh);
-    cResult[2] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.text) {
-    const obj2 = { style: text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: tmp6 };
-    const tmp10 = closure_3(channel(5271).Text, obj2);
-    cResult[3] = tmp4.text;
-    cResult[4] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(channel(1125).t["4z5PU1"]);
-    cResult[5] = stringResult1;
-    tmp11 = stringResult1;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] !== tmp5) {
-    const obj3 = { onPress: tmp5, text: tmp11, size: "sm", variant: "secondary", grow: true };
-    const tmp15 = closure_3(channel(5281).Button, obj3);
-    cResult[6] = tmp5;
-    cResult[7] = tmp15;
-    tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[7];
-  }
-  if (cResult[8] === tmp4.wrapper) {
-    if (cResult[9] === tmp8) {
-      let tmp16;
-      if (cResult[10] === tmp13) {
-        tmp16 = cResult[11];
-      }
-      return tmp16;
-    }
-  }
-  const obj4 = { style: wrapper, children: items };
-  items = [tmp8, tmp13];
-  const tmp17 = closure_4(View, obj4);
-  cResult[8] = tmp4.wrapper;
-  cResult[9] = tmp8;
-  cResult[10] = tmp13;
-  cResult[11] = tmp17;
-  tmp16 = tmp17;
-}) : (function AnnouncementChannelLurkerBar(channel) {
-  let intl;
-  let intl2;
-  let items;
-  channel = channel.channel;
-  const tmp = closure_5();
-  let obj = { style: tmp.wrapper, children: items };
-  const obj2 = { style: tmp.text, variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1125).t.Hl0Mqh) };
-  const Text = channel(5271).Text;
-  intl = channel(1125).intl;
-  items = [closure_3(Text, obj2), ];
-  const obj3 = {
-    onPress: function handleFollowing() {
-      const id = channel.id;
-      const guildId = channel.getGuildId();
-      if (null != guildId) {
-        const obj = showChannelFollowingActionSheet;
-        const result = obj.showChannelFollowingActionSheet(id, guildId);
-      }
-    },
-    text: intl2.string(channel(1125).t["4z5PU1"]),
-    size: "sm",
-    variant: "secondary",
-    grow: true
-  };
-  const Button = channel(5281).Button;
-  intl2 = channel(1125).intl;
-  items[1] = closure_3(Button, obj3);
-  return closure_4(View, obj);
-});
+const hasOwnProperty = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/navbars/native/components/AnnouncementChannelLurkerBar.tsx");
 
-export default tmp4;
-export const AnnouncementChannelLurkerBar = tmp4;
+export default AnnouncementChannelLurkerBar;
+export { AnnouncementChannelLurkerBar };

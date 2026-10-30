@@ -1,36 +1,21 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8161
+// Function ID: 8162
 // Name: ManualReviewInconclusiveCopyExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useIsManualReviewInconclusiveCopyEnabled
 
-// Module 8155 (ManualReviewInconclusiveCopyExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8161 (ManualReviewInconclusiveCopyExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { kind: "user", name: "2026-09-manual-review-inconclusive-copy", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsManualReviewInconclusiveCopyEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsManualReviewInconclusiveCopyEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/ManualReviewInconclusiveCopyExperiment.tsx");
 
-export const useIsManualReviewInconclusiveCopyEnabled = tmp2;
+export function useIsManualReviewInconclusiveCopyEnabled(manual_review_decided_teen_modal) {
+  const obj = { location: manual_review_decided_teen_modal };
+  return closure_0.useConfig(obj).enabled;
+}

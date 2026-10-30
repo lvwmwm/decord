@@ -1,20 +1,19 @@
-// Module ID: 18152
-// Function ID: 18153
+// Module ID: 18213
+// Function ID: 18214
 // Name: DirectoryChannel
-// Dependencies: [19, 4857, 4935, 12046, 6763, 21, 5005, 587, 558, 576, 573, 1111, 10759, 9054, 18069, 2]
+// Dependencies: [19, 4858, 4939, 11027, 6770, 21, 5009, 575, 563, 1100, 10782, 18118, 9066, 2]
 
-// Module 18152 (DirectoryChannel)
+// Module 18213 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import router_utils from "router_utils" /* 1111 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
+import nativeDefault from "native" /* 575 */;
+import router_utils from "router_utils" /* 1100 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -24,141 +23,12 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_8 = createStyles.createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DirectoryChannel(guildId) {
-  let first;
-  let tmp8;
-  const tmp = guildId;
-  let obj = guildId(576);
-  const cResult = obj.c(20);
-  guildId = guildId.guildId;
-  let selected = guildId.selected;
-  const selectedChannelId = guildId.selectedChannelId;
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, GuildChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function h() {
-      const directoryChannelIds = GuildChannelStore.getDirectoryChannelIds(guildId);
-      let channel = null;
-      if (0 !== directoryChannelIds.length) {
-        channel = ChannelStore.getChannel(directoryChannelIds[0]);
-      }
-      return channel;
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(573);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  let id;
-  if (stateFromStores != null) {
-    id = stateFromStores.id;
-  }
-  if (!selected) {
-    selected = id === selectedChannelId;
-  }
-  if (cResult[3] === id) {
-    let tmp11;
-    let tmp12;
-    if (cResult[4] === guildId) {
-      tmp11 = cResult[5];
-    }
-    if (cResult[6] !== id) {
-      const fn2 = function f() {
-        if (null != id) {
-          const obj = openChannelLongPressActionSheet;
-          const result = obj.openChannelLongPressActionSheet(tmp);
-        }
-      };
-      cResult[6] = id;
-      cResult[7] = fn2;
-      tmp12 = fn2;
-    } else {
-      tmp12 = cResult[7];
-    }
-    if (null == stateFromStores) {
-      return null;
-    } else {
-      let tmp13;
-      let tmp16;
-      const container = tmp4.container;
-      if (cResult[8] !== stateFromStores) {
-        const obj2 = { channel: stateFromStores };
-        const tmp15 = id(9054)(obj2);
-        cResult[8] = stateFromStores;
-        cResult[9] = tmp15;
-        tmp13 = tmp15;
-      } else {
-        tmp13 = cResult[9];
-      }
-      if (cResult[10] !== selected) {
-        const obj3 = { selected };
-        cResult[10] = selected;
-        cResult[11] = obj3;
-        tmp16 = obj3;
-      } else {
-        tmp16 = cResult[11];
-      }
-      if (cResult[12] === stateFromStores) {
-        if (cResult[13] === tmp12) {
-          if (cResult[14] === tmp11) {
-            if (cResult[15] === selected) {
-              if (cResult[16] === tmp4.container) {
-                if (cResult[17] === tmp13) {
-                  let tmp17;
-                  if (cResult[18] === tmp16) {
-                    tmp17 = cResult[19];
-                  }
-                  return tmp17;
-                }
-              }
-            }
-          }
-        }
-      }
-      const tmp21 = jsx(id(18069), { onPress: tmp11, onLongPress: tmp12, style: container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp13, accessibilityState: tmp16, channel: stateFromStores, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
-      cResult[12] = stateFromStores;
-      cResult[13] = tmp12;
-      cResult[14] = tmp11;
-      cResult[15] = selected;
-      cResult[16] = tmp4.container;
-      class I {
-        constructor() {
-          const obj = router_utils;
-          obj.transitionToGuild(guildId, id);
-        }
-      }
-      cResult[17] = tmp13;
-      cResult[18] = tmp16;
-      cResult[19] = tmp21;
-      tmp17 = tmp21;
-    }
-  }
-  class I {
-    constructor() {
-      const obj = router_utils;
-      obj.transitionToGuild(guildId, id);
-    }
-  }
-  cResult[3] = id;
-  cResult[4] = guildId;
-  cResult[5] = I;
-  tmp11 = I;
-}) : (function DirectoryChannel(guildId) {
+const memoResult = react.memo(function DirectoryChannel(guildId) {
   guildId = guildId.guildId;
   let selected = guildId.selected;
   const selectedChannelId = guildId.selectedChannelId;
   const tmp = closure_8();
-  let obj = guildId(573);
+  let obj = guildId(563);
   const items = [ChannelStore, GuildChannelStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const directoryChannelIds = GuildChannelStore.getDirectoryChannelIds(guildId);
@@ -184,12 +54,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(18069);
+    id(18118);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9054)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(9066)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
-}));
+});
 let result = size.fileFinishedImporting("modules/guild_sidebar/native/DirectoryChannel.tsx");
 
 export default memoResult;

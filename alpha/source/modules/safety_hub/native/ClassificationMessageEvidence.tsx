@@ -1,27 +1,25 @@
-// Module ID: 13124
-// Function ID: 13125
+// Module ID: 13274
+// Function ID: 13275
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1204, 1389, 7980, 7956, 1084, 21, 8188, 5005, 558, 576, 504, 5012, 13125, 13126, 7955, 6039, 8791, 8831, 13127, 6051, 11, 9838, 2]
+// Dependencies: [32, 19, 17, 1193, 1384, 7986, 7962, 1072, 21, 8369, 5009, 504, 5016, 13275, 13276, 7961, 6046, 8825, 8865, 13277, 9864, 6058, 11, 2]
+// Exports: default
 
-// Module 13124 (ClassificationMessageEvidence)
-import Constants from "Constants" /* 1084 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7955 */;
-import RowGeneratorDefault from "RowGenerator" /* 8188 */;
-import openMediaModal from "openMediaModal" /* 8791 */;
+// Module 13274 (ClassificationMessageEvidence)
+import Constants from "Constants" /* 1072 */;
+import RowGeneratorDefault from "RowGenerator" /* 8369 */;
+import openMediaModal from "openMediaModal" /* 8825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
-import UserStore from "UserStore" /* 1389 */;
-import SafetyHubStore from "SafetyHubStore" /* 7980 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UserStore from "UserStore" /* 1384 */;
+import SafetyHubStore from "SafetyHubStore" /* 7986 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let closure_10, dependencyMap, width;
+let dependencyMap, filename, width;
 
 let closure_12;
 let closure_14;
@@ -34,473 +32,19 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f118671 = (arg0, arg1) => {
-  url = arg0;
-  return size.getSize(url.url, (width, height) => {
-    size = { width, height };
-    return closure_0(size);
-  }, arg1);
-};
 let react = react_mod;
 ({ View: hasOwnProperty, findNodeHandle: metroRequire, Image: metroImportDefault, ActivityIndicator: metroImportAll } = react_native);
 ({ DEFAULT_MEDIA_MAX_WIDTH: closure_12, DEFAULT_MEDIA_MAX_HEIGHT: map1, VIDEO_PLACEHOLDER_WIDTH: closure_14, VIDEO_PLACEHOLDER_HEIGHT: closure_15, VIDEO_PLACEHOLDER_FILENAME: closure_16 } = SafetyHubConstants);
 const MessageTypes = Constants.MessageTypes;
 ({ jsx: closure_18, jsxs: closure_19 } = Fragment);
-let c20 = "1";
 let tmp5 = new RowGeneratorDefault();
 const rowGenerator = tmp5;
-let closure_22 = createStyles.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClassificationEvidence(flaggedContent) {
-  let ae;
-  let channelId;
-  let closure_2;
-  let closure_4;
-  let first1;
-  let first3;
-  let id;
-  let items5;
-  let ref;
-  let tmp13;
-  let tmp16;
-  let tmp17;
-  let tmp20;
-  let tmp27;
-  let tmp28;
-  let tmp31;
-  let tmp5;
-  let tmp6;
-  let tmp61;
-  let username;
-  let tmp = ref;
-  let tmp2 = dependencyMap;
-  let obj = ref(576);
-  const cResult = obj.c(52);
-  flaggedContent = flaggedContent.flaggedContent;
-  let tmp4 = closure_22();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [closure_10];
-    const fn = function w() {
-      return closure_10.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  let tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  let obj3 = react;
-  ref = react.useRef(null);
-  const tmp10 = first1;
-  const tmp11 = first1(react.useState(null), 2);
-  const reactTag = tmp11[0];
-  dependencyMap = tmp11[1];
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = {};
-    cResult[2] = obj2;
-    tmp13 = obj2;
-  } else {
-    tmp13 = cResult[2];
-  }
-  const tmp10Result = tmp10(obj3.useState(tmp13), 2);
-  first1 = tmp10Result[0];
-  react = tmp10Result[1];
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = id;
-    const items1 = [id];
-    class G {
-      constructor() {
-        const obj = ref(closure_2[14]);
-        return obj.isThemeLight(id.theme);
-      }
-    }
-    cResult[3] = items1;
-    cResult[4] = G;
-    tmp17 = G;
-    tmp16 = items1;
-  } else {
-    tmp16 = cResult[3];
-    tmp17 = cResult[4];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp16, tmp17);
-  if (cResult[5] !== stateFromStores1) {
-    const resolveAssetSource = first3.resolveAssetSource;
-    class G {
-      constructor() {
-        const obj = ref(closure_2[14]);
-        return obj.isThemeLight(id.theme);
-      }
-    }
-    cResult[5] = stateFromStores1;
-    cResult[6] = tmp23;
-    tmp20 = tmp23;
-  } else {
-    tmp20 = cResult[6];
-  }
-  const uri = tmp20;
-  const first2 = flaggedContent[0];
-  const tmp10Result2 = tmp10(obj3.useState(first2.attachments.length), 2);
-  first3 = tmp10Result2[0];
-  let closure_8 = tmp10Result2[1];
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [SafetyHubStore];
-    class J {
-      constructor() {
-        return username.getUsername();
-      }
-    }
-    cResult[7] = items2;
-    cResult[8] = J;
-    tmp28 = J;
-    tmp27 = items2;
-  } else {
-    tmp27 = cResult[7];
-    tmp28 = cResult[8];
-  }
-  const tmpResult5 = tmp(504);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp27, tmp28);
-  id = first2.id;
-  if (cResult[9] === first2.attachments) {
-    if (cResult[10] === first1) {
-      if (cResult[11] === tmp20) {
-        tmp31 = cResult[12];
-      }
-      closure_10 = tmp31;
-      if (cResult[16] === first2.attachments) {
-        if (cResult[17] === first1) {
-          if (cResult[18] === id) {
-            if (cResult[19] === tmp31) {
-              let tmp39;
-              let tmp38;
-              if (cResult[22] !== reactTag) {
-                function me(arg0) {
-                  arg0.reactTag = reactTag;
-                }
-                cResult[22] = reactTag;
-                class J {
-                  constructor() {
-                    return username.getUsername();
-                  }
-                }
-                cResult[23] = me;
-              }
-              if (cResult[24] !== first2.attachments) {
-                function oe() {
-                  const attachments = first2.attachments;
-                  const found = attachments.filter((filename) => {
-                    filename = filename.filename;
-                    const obj = ref(closure_1_2[18]);
-                    return obj.isImageFile(filename);
-                  });
-                  const mapped = found.map((item) => {
-                    let closure_0 = item;
-                    const promise = new Promise(f118671);
-                    const nextPromise = promise.then((result) => {
-                      id = result;
-                      return closure_1_4((arg0) => {
-                        const obj = {};
-                        const merged = Object.assign(arg0);
-                        obj[id.id] = id;
-                        return obj;
-                      });
-                    });
-                    return nextPromise.finally(() => closure_1_8((arg0) => arg0 - 1));
-                  });
-                }
-                const items3 = [first2.attachments];
-                class J {
-                  constructor() {
-                    return username.getUsername();
-                  }
-                }
-                cResult[24] = first2.attachments;
-                cResult[25] = oe;
-                cResult[26] = items3;
-              }
-              class J {
-                constructor() {
-                  return username.getUsername();
-                }
-              }
-              if (cResult[27] !== first3) {
-                function ce() {
-                  if (0 === first3) {
-                    closure_2(metroRequire(ref.current));
-                  }
-                }
-                const items4 = [first3];
-                class J {
-                  constructor() {
-                    return username.getUsername();
-                  }
-                }
-                cResult[27] = first3;
-                cResult[28] = ce;
-                cResult[29] = items4;
-                tmp39 = items4;
-                tmp38 = ce;
-              } else {
-                tmp38 = cResult[28];
-                tmp39 = cResult[29];
-              }
-              const effect = obj3.useEffect(tmp38, tmp39);
-              let str = "";
-              if ("" === first2.content) {
-                if (0 === first2.attachments.length) {
-                  return null;
-                }
-              }
-              if (first3 > 0) {
-                let tmp51;
-                const _Symbol = Symbol;
-                if (cResult[30] === Symbol.for("react.memo_cache_sentinel")) {
-                  const tmp54 = closure_18(closure_8, {});
-                  class J {
-                    constructor() {
-                      return username.getUsername();
-                    }
-                  }
-                  cResult[30] = tmp54;
-                  tmp51 = tmp54;
-                } else {
-                  tmp51 = cResult[30];
-                }
-                class J {
-                  constructor() {
-                    return username.getUsername();
-                  }
-                }
-                if (cResult[31] !== first2.attachments) {
-                  const _Symbol2 = Symbol;
-                  if (cResult[33] === Symbol.for("react.memo_cache_sentinel")) {
-                    class Ee {
-                      constructor(filename) {
-                        filename = filename.filename;
-                        const obj = ref(closure_2[18]);
-                        return obj.isVideoFile(filename);
-                      }
-                    }
-                    cResult[33] = Ee;
-                    class J {
-                      constructor() {
-                        return username.getUsername();
-                      }
-                    }
-                  } else {
-                    class Ee {
-                      constructor(filename) {
-                        filename = filename.filename;
-                        const obj = ref(closure_2[18]);
-                        return obj.isVideoFile(filename);
-                      }
-                    }
-                  }
-                  class J {
-                    constructor() {
-                      return username.getUsername();
-                    }
-                  }
-                  if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                    class Ee {
-                      constructor(filename) {
-                        filename = filename.filename;
-                        const obj = ref(closure_2[18]);
-                        return obj.isVideoFile(filename);
-                      }
-                    }
-                    cResult[34] = tmp59;
-                    class J {
-                      constructor() {
-                        return username.getUsername();
-                      }
-                    }
-                  } else {
-                    class Ee {
-                      constructor(filename) {
-                        filename = filename.filename;
-                        const obj = ref(closure_2[18]);
-                        return obj.isVideoFile(filename);
-                      }
-                    }
-                  }
-                  let attachments = first2.attachments;
-                  let found = attachments.filter(tmp57);
-                  let mapped = found.map(tmp58);
-                  cResult[31] = first2.attachments;
-                  cResult[32] = mapped;
-                } else {
-                  class Ee {
-                    constructor(filename) {
-                      filename = filename.filename;
-                      const obj = ref(closure_2[18]);
-                      return obj.isVideoFile(filename);
-                    }
-                  }
-                }
-                if (cResult[35] === tmp4.dummyVideoAttachments) {
-                  class Ee {
-                    constructor(filename) {
-                      filename = filename.filename;
-                      const obj = ref(closure_2[18]);
-                      return obj.isVideoFile(filename);
-                    }
-                  }
-                  return tmp61;
-                }
-                let obj4 = { children: items5 };
-                items5 = [tmp51, ];
-                let obj5 = { style: tmp55, children: tmp56 };
-                items5[1] = closure_18(uri, obj5);
-                const tmp65 = closure_19(uri, obj4);
-                cResult[35] = tmp4.dummyVideoAttachments;
-                cResult[36] = tmp56;
-                cResult[37] = tmp65;
-                tmp61 = tmp65;
-              } else {
-                class Ee {
-                  constructor(filename) {
-                    filename = filename.filename;
-                    const obj = ref(closure_2[18]);
-                    return obj.isVideoFile(filename);
-                  }
-                }
-                if (cResult[40] === first2.content) {
-                  class Ee {
-                    constructor(filename) {
-                      filename = filename.filename;
-                      const obj = ref(closure_2[18]);
-                      return obj.isVideoFile(filename);
-                    }
-                  }
-                }
-                const tmpResult6 = tmp(6051);
-                class J {
-                  constructor() {
-                    return username.getUsername();
-                  }
-                }
-                tmp43[0] = first2.id;
-                const _Date = Date;
-                const createMessageRecord = tmpResult6.createMessageRecord;
-                const self = this;
-                const self2 = this;
-                const obj7 = reactTag(11);
-                const date = new Date(obj7.extractTimestamp(first2.id));
-                tmp43[1] = date.toUTCString();
-                tmp43[2] = c20;
-                tmp43[3] = MessageTypes.DEFAULT;
-                let tmp48 = stateFromStores;
-                if (stateFromStores == null) {
-                  class Ee {
-                    constructor(filename) {
-                      filename = filename.filename;
-                      const obj = ref(closure_2[18]);
-                      return obj.isVideoFile(filename);
-                    }
-                  }
-                  tmp49[3] = stateFromStores2;
-                  tmp48 = tmp49;
-                }
-                tmp43[4] = tmp48;
-                tmp43[5] = first2.content;
-                tmp43[6] = tmp31;
-                const messageRecord = createMessageRecord(tmp43);
-                cResult[40] = first2.content;
-                cResult[41] = first2.id;
-                cResult[42] = stateFromStores;
-                cResult[43] = tmp31;
-                cResult[44] = stateFromStores2;
-                cResult[45] = messageRecord;
-              }
-            }
-          }
-        }
-      }
-      class J {
-        constructor() {
-          return username.getUsername();
-        }
-      }
-      cResult[16] = first2.attachments;
-      cResult[17] = first1;
-      cResult[18] = id;
-      cResult[19] = tmp31;
-      cResult[20] = tmp20;
-      cResult[21] = tmp34;
-    }
-  }
-  if (cResult[13] === first1) {
-    class Ee {
-      constructor(filename) {
-        filename = filename.filename;
-        const obj = ref(closure_2[18]);
-        return obj.isVideoFile(filename);
-      }
-    }
-    const attachments1 = first2.attachments;
-    const mapped1 = attachments1.map(ae);
-    class J {
-      constructor() {
-        return username.getUsername();
-      }
-    }
-    cResult[9] = first2.attachments;
-    cResult[10] = first1;
-    cResult[11] = tmp20;
-    cResult[12] = mapped1;
-    tmp31 = mapped1;
-  }
-  ae = function ae(filename) {
-    let obj2;
-    let str;
-    let tmp4;
-    const obj = { filename: str, flags: obj2.getSpoilerFlagsForAttachment(filename), size: 0, proxy_url: filename.url };
-    const merged = Object.assign(filename);
-    str = filename.filename;
-    if (str == null) {
-      str = "";
-    }
-    obj2 = SafetyHubUtils;
-    const obj3 = MediaFormatTesters;
-    if (obj3.isImageFile(filename.filename)) {
-      const obj4 = { width, height };
-      const merged1 = Object.assign(obj);
-      width = undefined;
-      const tmp15 = first1;
-      if (first1[filename.id] != null) {
-        width = tmp16.width;
-      }
-      if (width == null) {
-        width = authStore2;
-      }
-      height = undefined;
-      if (tmp15[filename.id] != null) {
-        height = tmp18.height;
-      }
-      if (height == null) {
-        height = map1;
-      }
-      tmp4 = obj4;
-    } else {
-      tmp4 = obj;
-      const tmp2Result = MediaFormatTesters;
-      if (tmp2Result.isVideoFile(filename.filename)) {
-        const obj5 = { width, height, proxy_url: uri.uri, filename };
-        const merged2 = Object.assign(obj);
-        tmp4 = obj5;
-      }
-    }
-    return tmp4;
-  };
-  cResult[13] = first1;
-  cResult[14] = tmp20;
-  cResult[15] = ae;
-}) : (function ClassificationEvidence(flaggedContent) {
+let closure_21 = createStyles.createStyles({ dummyVideoAttachments: { width: 0, height: 0 } });
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
+
+export default function ClassificationEvidence(flaggedContent) {
   let assetSource;
-  let channelId;
   let closure_2;
   let closure_4;
   let createMessageRecord;
@@ -520,7 +64,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
   flaggedContent = flaggedContent.flaggedContent;
   let tmp2 = ref;
   let tmp3 = dependencyMap;
-  let tmp = closure_22();
+  let tmp = closure_21();
   let obj = ref(504);
   const items = [memo];
   const stateFromStores = obj.useStateFromStores(items, () => memo.getCurrentUser());
@@ -538,13 +82,13 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
   const resolveAssetSource = first3.resolveAssetSource;
   const tmp12 = reactTag;
   if (obj3.useStateFromStores(items1, () => {
-    const obj = ref(closure_2[14]);
+    const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(13125));
+    assetSource = resolveAssetSource(tmp12(13275));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(13126));
+    assetSource = resolveAssetSource(tmp12(13276));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -569,8 +113,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
       if (str == null) {
         str = "";
       }
-      obj2 = ref(closure_2[17]);
-      const obj3 = ref(closure_2[18]);
+      obj2 = ref(closure_2[15]);
+      const obj3 = ref(closure_2[16]);
       const tmp2 = ref;
       const tmp3 = closure_2;
       if (obj3.isImageFile(filename.filename)) {
@@ -594,7 +138,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
         tmp4 = obj4;
       } else {
         tmp4 = obj;
-        const tmp2Result = tmp2(tmp3[18]);
+        const tmp2Result = tmp2(tmp3[16]);
         if (tmp2Result.isVideoFile(filename.filename)) {
           const obj5 = { width, height, proxy_url: uri.uri, filename };
           const merged2 = Object.assign(obj);
@@ -616,9 +160,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     const mapped = memo.map((uri, mediaIndex) => {
       let tmp5;
       let url;
-      size = { uri: uri.url, videoURI: url, thumbnail: tmp5, mediaIndex, channelId, messageId, width, height, accessoryType: "attachment", attachmentId: uri.id };
+      size = { uri: uri.url, videoURI: url, thumbnail: tmp5, mediaIndex, channelId: "1", messageId, width, height, accessoryType: "attachment", attachmentId: uri.id };
       url = undefined;
-      const obj2 = ref(closure_2[18]);
+      const obj2 = ref(closure_2[16]);
       const tmp = ref;
       const tmp2 = closure_2;
       const tmp3 = attachments;
@@ -626,7 +170,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
         url = uri.url;
       }
       tmp5 = undefined;
-      const tmpResult = tmp(tmp2[18]);
+      const tmpResult = tmp(tmp2[16]);
       if (tmpResult.isVideoFile(tmp3.attachments[mediaIndex].filename)) {
         const size1 = { width, height, uri: uri.uri };
         tmp5 = size1;
@@ -659,12 +203,18 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     const attachments = first2.attachments;
     const found = attachments.filter((filename) => {
       filename = filename.filename;
-      const obj = ref(closure_1_2[18]);
+      const obj = ref(closure_1_2[16]);
       return obj.isImageFile(filename);
     });
     const mapped = found.map((item) => {
       let closure_0 = item;
-      const promise = new Promise(f118671);
+      const promise = new Promise((arg0, arg1) => {
+        url = arg0;
+        return size.getSize(url.url, (width, height) => {
+          size = { width, height };
+          return closure_0(size);
+        }, arg1);
+      });
       const nextPromise = promise.then((result) => {
         id = result;
         return closure_1_4((arg0) => {
@@ -710,26 +260,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
                   return closure_1_8((arg0) => arg0 - 1);
                 }
               };
-              return closure_1_18(first(closure_2[20]), obj, index);
+              return closure_1_18(first(closure_2[18]), obj, index);
             })
       };
       let attachments = first2.attachments;
       found = attachments.filter((filename) => {
         filename = filename.filename;
-        const obj = ref(closure_2[18]);
+        const obj = ref(closure_2[16]);
         return obj.isVideoFile(filename);
       });
       items8[1] = closure_18(assetSource, obj5);
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(13127), obj6), ];
+      const items9 = [closure_18(tmp14(13277), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(9838);
+      const tmp14Result = tmp14(9864);
       const _Date = Date;
-      obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id, type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(6051).createMessageRecord;
-      tmp2(6051);
+      obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
+      createMessageRecord = tmp2(6058).createMessageRecord;
+      tmp2(6058);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);
@@ -748,8 +298,4 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function Classificati
     tmp25Result = null;
   }
   return tmp25Result;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/safety_hub/native/ClassificationMessageEvidence.tsx");
-
-export default tmp6;
+};

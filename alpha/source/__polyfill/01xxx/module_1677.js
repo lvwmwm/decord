@@ -1,94 +1,313 @@
 // Module ID: 1677
 // Function ID: 1678
-// Dependencies: []
-// Exports: getValueUnpackerCode
+// Dependencies: [41, 42, 90, 91, 1667, 1678, 1673, 1662, 1654, 1679]
+// Exports: createNativeReanimatedModule
 
 // Module 1677
-let __initData, map;
+import _mod1654 from "module_1654" /* 1654 */;
+import WorkletsModule from "WorkletsModule" /* 1667 */;
+import react_native from "react-native" /* 1673 */;
+import jsVersion from "jsVersion" /* 1678 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import _classPrivateFieldBase from "_classPrivateFieldBase" /* 90 */;
+import _classPrivateFieldKey from "_classPrivateFieldKey" /* 91 */;
 
-function valueUnpacker(__workletHash, arg1, arg2) {
-  let __handleCache;
-  let __workletsCache;
-  let closure_0 = arg2;
-  ({ __workletsCache, __handleCache } = global);
-  if (undefined === __workletsCache) {
-    const tmp = globalThis;
-    const _Map = Map;
+let tmp;
+const findHostInstance = tmp(1679);
+let closure_5 = _classPrivateFieldKey("workletsModule");
+let closure_6 = _classPrivateFieldKey("reanimatedModuleProxy");
+class NativeReanimatedModule {
+  constructor() {
     const self = this;
-    const self2 = this;
-    map = new Map();
-    global.__workletsCache = map;
-    const _WeakMap = WeakMap;
-    const self3 = this;
-    const self4 = this;
-    const weakMap = new WeakMap();
-    global.__handleCache = weakMap;
-    __handleCache = weakMap;
-    __workletsCache = map;
-  }
-  __workletHash = __workletHash.__workletHash;
-  if (undefined !== __workletHash) {
-    let value = __workletsCache.get(__workletHash);
-    if (undefined === value) {
-      let evalWithSourceMapResult;
-      __initData = __workletHash.__initData;
-      if (global.evalWithSourceMap) {
-        evalWithSourceMapResult = obj.evalWithSourceMap(`(${__initData.code}
-  )`, __initData.location, __initData.sourceMap);
-      } else if (global.evalWithSourceUrl) {
-        const _HermesInternal2 = HermesInternal;
-        const text = `(${__initData.code}`;
-        evalWithSourceMapResult = obj.evalWithSourceUrl(`${`(${__initData.code}`}
-  )`, "worklet_" + __workletHash);
-      } else {
-        const text1 = `${"(" + __initData.code}
-  )`;
-        evalWithSourceMapResult = globalThis.eval === Date.UTC ? eval() : globalThis.eval(`${"(" + __initData.code}
-  )`);
-      }
-      const result = __workletsCache.set(__workletHash, evalWithSourceMapResult);
-      value = evalWithSourceMapResult;
-    }
-    const bindResult = value.bind(__workletHash);
-    __workletHash._recur = bindResult;
-    return bindResult;
-  } else if (undefined !== __workletHash.__init) {
-    let value2 = __handleCache.get(__workletHash);
-    if (undefined === value2) {
-      const __initResult = __workletHash.__init();
-      const result1 = __handleCache.set(__workletHash, __initResult);
-      value2 = __initResult;
-    }
-    return value2;
-  } else {
-    let str = "RemoteFunction";
-    if ("RemoteFunction" === arg1) {
-      function fun() {
-        let str = "anonymous function";
-        const _Error = Error;
-        if (closure_0) {
-          const _HermesInternal = HermesInternal;
-          str = "function `" + tmp + "`";
+    _classCallCheck(this, NativeReanimatedModule);
+    Object.defineProperty(this, closure_5, { writable: true, value: "Array" });
+    Object.defineProperty(this, closure_6, { writable: true, value: "Array" });
+    const tmp6 = _classPrivateFieldBase(this, closure_5);
+    tmp6[closure_5] = WorkletsModule.WorkletsModule;
+    global._REANIMATED_VERSION_JS = jsVersion.jsVersion;
+    if (undefined === global.__reanimatedModuleProxy) {
+      if (react_native.ReanimatedTurboModule) {
+        const ReanimatedTurboModule = tmp7(1673).ReanimatedTurboModule;
+        if (!ReanimatedTurboModule.installTurboModule()) {
+          const self2 = this;
+          const self3 = this;
+          const tmp5Result = _classPrivateFieldBase(self, closure_6);
+          tmp5Result[closure_6] = new closure_8();
+          const tmp12 = new closure_8();
         }
-        const _Error1 = new _Error("[Reanimated] Tried to synchronously call a non-worklet " + str + " on the UI thread.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.");
-        throw _Error1;
       }
-      fun.__remoteFunction = __workletHash;
-      return fun;
-    } else {
-      let _Error = Error;
-      let _HermesInternal = HermesInternal;
+    }
+    if (undefined === global.__reanimatedModuleProxy) {
+      const self4 = this;
       const self5 = this;
-      const self6 = this;
-      const error = new Error("[Reanimated] Data type in category \"" + arg1 + "\" not recognized by value unpacker: \"" + globalThis._toString(__workletHash) + "\".");
-      throw error;
+      const reanimatedError = new tmp7(1662).ReanimatedError("Native part of Reanimated doesn't seem to be initialized.\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#native-part-of-reanimated-doesnt-seem-to-be-initialized for more details.");
+      throw reanimatedError;
+    } else {
+      _classPrivateFieldBase(self, closure_6)[closure_6] = global.__reanimatedModuleProxy;
     }
   }
 }
-valueUnpacker.__closure = {};
-valueUnpacker.__workletHash = 7175751357828;
-valueUnpacker.__initData = { code: "function valueUnpacker_Pnpm_valueUnpackerTs1(objectToUnpack,category,remoteFunctionName){let workletsCache=global.__workletsCache;let handleCache=global.__handleCache;if(workletsCache===undefined){workletsCache=global.__workletsCache=new Map();handleCache=global.__handleCache=new WeakMap();}const workletHash=objectToUnpack.__workletHash;if(workletHash!==undefined){let workletFun=workletsCache.get(workletHash);if(workletFun===undefined){const initData=objectToUnpack.__initData;if(global.evalWithSourceMap){workletFun=global.evalWithSourceMap('('+initData.code+'\\n)',initData.location,initData.sourceMap);}else if(global.evalWithSourceUrl){workletFun=global.evalWithSourceUrl('('+initData.code+'\\n)',\"worklet_\"+workletHash);}else{workletFun=eval('('+initData.code+'\\n)');}workletsCache.set(workletHash,workletFun);}const functionInstance=workletFun.bind(objectToUnpack);objectToUnpack._recur=functionInstance;return functionInstance;}else if(objectToUnpack.__init!==undefined){let value=handleCache.get(objectToUnpack);if(value===undefined){value=objectToUnpack.__init();handleCache.set(objectToUnpack,value);}return value;}else if(category==='RemoteFunction'){const fun=function(){const label=remoteFunctionName?\"function `\"+remoteFunctionName+\"`\":'anonymous function';throw new Error(\"[Reanimated] Tried to synchronously call a non-worklet \"+label+\" on the UI thread.\\nSee https://docs.swmansion.com/react-native-reanimated/docs/guides/troubleshooting#tried-to-synchronously-call-a-non-worklet-function-on-the-ui-thread for more details.\");};fun.__remoteFunction=objectToUnpack;return fun;}else{throw new Error(\"[Reanimated] Data type in category \\\"\"+category+\"\\\" not recognized by value unpacker: \\\"\"+_toString(objectToUnpack)+\"\\\".\");}}" };
+const entry = {
+  key: "scheduleOnUI",
+  value: function scheduleOnUI(arg0) {
+    const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+    return obj.scheduleOnUI(arg0);
+  }
+};
+const items = [
+  entry,
+  {
+    key: "executeOnUIRuntimeSync",
+    value: function executeOnUIRuntimeSync(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.executeOnUIRuntimeSync(arg0);
+    }
+  },
+  {
+    key: "createWorkletRuntime",
+    value: function createWorkletRuntime(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.createWorkletRuntime(arg0, arg1);
+    }
+  },
+  {
+    key: "scheduleOnRuntime",
+    value: function scheduleOnRuntime(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.scheduleOnRuntime(arg0, arg1);
+    }
+  },
+  {
+    key: "registerSensor",
+    value: function registerSensor(arg0, arg1, arg2, arg3) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.registerSensor(arg0, arg1, arg2, arg3);
+    }
+  },
+  {
+    key: "unregisterSensor",
+    value: function unregisterSensor(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.unregisterSensor(arg0);
+    }
+  },
+  {
+    key: "registerEventHandler",
+    value: function registerEventHandler(arg0, arg1, arg2) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.registerEventHandler(arg0, arg1, arg2);
+    }
+  },
+  {
+    key: "unregisterEventHandler",
+    value: function unregisterEventHandler(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.unregisterEventHandler(arg0);
+    }
+  },
+  {
+    key: "getViewProp",
+    value: function getViewProp(arg0, arg1, self, arg3) {
+      let viewProp;
+      self = this;
+      const obj = _mod1654;
+      if (obj.isFabric()) {
+        const tmpResult = findHostInstance;
+        const shadowNodeWrapperFromRef = tmpResult.getShadowNodeWrapperFromRef(self);
+        const obj4 = _classPrivateFieldBase(self, closure_6)[closure_6];
+        viewProp = obj4.getViewProp(shadowNodeWrapperFromRef, arg1, arg3);
+      } else {
+        const obj2 = _classPrivateFieldBase(self, closure_6)[closure_6];
+        viewProp = obj2.getViewProp(arg0, arg1, arg3);
+      }
+      return viewProp;
+    }
+  },
+  {
+    key: "configureLayoutAnimationBatch",
+    value: function configureLayoutAnimationBatch(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.configureLayoutAnimationBatch(arg0);
+    }
+  },
+  {
+    key: "setShouldAnimateExitingForTag",
+    value: function setShouldAnimateExitingForTag(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.setShouldAnimateExitingForTag(arg0, arg1);
+    }
+  },
+  {
+    key: "enableLayoutAnimations",
+    value: function enableLayoutAnimations(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.enableLayoutAnimations(arg0);
+    }
+  },
+  {
+    key: "configureProps",
+    value: function configureProps(arg0, arg1) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      obj.configureProps(arg0, arg1);
+    }
+  },
+  {
+    key: "subscribeForKeyboardEvents",
+    value: function subscribeForKeyboardEvents(arg0, arg1, arg2) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.subscribeForKeyboardEvents(arg0, arg1, arg2);
+    }
+  },
+  {
+    key: "unsubscribeFromKeyboardEvents",
+    value: function unsubscribeFromKeyboardEvents(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.unsubscribeFromKeyboardEvents(arg0);
+    }
+  },
+  {
+    key: "markNodeAsRemovable",
+    value: function markNodeAsRemovable(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      obj.markNodeAsRemovable(arg0);
+    }
+  },
+  {
+    key: "unmarkNodeAsRemovable",
+    value: function unmarkNodeAsRemovable(arg0) {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      const result = obj.unmarkNodeAsRemovable(arg0);
+    }
+  },
+  {
+    key: "getSettledUpdates",
+    value: function getSettledUpdates() {
+      const obj = _classPrivateFieldBase(this, closure_6)[closure_6];
+      return obj.getSettledUpdates();
+    }
+  }
+];
+let closure_7 = _createClass(NativeReanimatedModule, items);
+class DummyReanimatedModuleProxy {
+  constructor() {
+    _classCallCheck(this, DummyReanimatedModuleProxy);
+  }
+}
+const entry1 = {
+  key: "scheduleOnUI",
+  value: function scheduleOnUI() {
 
-export function getValueUnpackerCode() {
-  return valueUnpacker.__initData.code;
+  }
+};
+const items1 = [
+  entry1,
+  {
+    key: "executeOnUIRuntimeSync",
+    value: function executeOnUIRuntimeSync() {
+      return null;
+    }
+  },
+  {
+    key: "createWorkletRuntime",
+    value: function createWorkletRuntime() {
+      return null;
+    }
+  },
+  {
+    key: "scheduleOnRuntime",
+    value: function scheduleOnRuntime() {
+
+    }
+  },
+  {
+    key: "configureLayoutAnimationBatch",
+    value: function configureLayoutAnimationBatch() {
+
+    }
+  },
+  {
+    key: "setShouldAnimateExitingForTag",
+    value: function setShouldAnimateExitingForTag() {
+
+    }
+  },
+  {
+    key: "enableLayoutAnimations",
+    value: function enableLayoutAnimations() {
+
+    }
+  },
+  {
+    key: "configureProps",
+    value: function configureProps() {
+
+    }
+  },
+  {
+    key: "subscribeForKeyboardEvents",
+    value: function subscribeForKeyboardEvents() {
+      return -1;
+    }
+  },
+  {
+    key: "unsubscribeFromKeyboardEvents",
+    value: function unsubscribeFromKeyboardEvents() {
+
+    }
+  },
+  {
+    key: "markNodeAsRemovable",
+    value: function markNodeAsRemovable() {
+
+    }
+  },
+  {
+    key: "unmarkNodeAsRemovable",
+    value: function unmarkNodeAsRemovable() {
+
+    }
+  },
+  {
+    key: "registerSensor",
+    value: function registerSensor() {
+      return -1;
+    }
+  },
+  {
+    key: "unregisterSensor",
+    value: function unregisterSensor() {
+
+    }
+  },
+  {
+    key: "registerEventHandler",
+    value: function registerEventHandler() {
+      return -1;
+    }
+  },
+  {
+    key: "unregisterEventHandler",
+    value: function unregisterEventHandler() {
+
+    }
+  },
+  {
+    key: "getViewProp",
+    value: function getViewProp() {
+      return null;
+    }
+  },
+  {
+    key: "getSettledUpdates",
+    value: function getSettledUpdates() {
+      return [];
+    }
+  }
+];
+let closure_8 = _createClass(DummyReanimatedModuleProxy, items1);
+
+export function createNativeReanimatedModule() {
+  const tmp = new closure_7();
+  return tmp;
 }

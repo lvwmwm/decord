@@ -1,75 +1,30 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17254
+// Function ID: 17255
 // Name: RoleColorsSetting
-// Dependencies: [19, 5006, 8387, 558, 576, 504, 16185, 1125, 11302, 2]
-// Exports: onRoleColorSettingValueChange
+// Dependencies: [19, 5010, 8424, 504, 16225, 1114, 11505, 2]
+// Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 17200 (RoleColorsSetting)
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16185 */;
+// Module 17254 (RoleColorsSetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl4 from "intl" /* 1114 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16225 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleColorSettingValue() {
-  let roleStyle;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function o() {
-      return roleStyle.roleStyle;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useRoleColorSettingValue() {
+function useRoleColorSettingValue() {
   let roleStyle;
   const items = [AccessibilityStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => roleStyle.roleStyle);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleColorSettingOptions() {
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: intl.string(intl4.t.YEOEi6), value: "username" };
-    intl = tmp(1125).intl;
-    const items = [obj2, , ];
-    const obj3 = { label: intl2.string(intl4.t.mQaro3), value: "dot" };
-    intl2 = tmp(1125).intl;
-    items[1] = obj3;
-    const obj4 = { label: intl3.string(intl4.t.Ji2EVJ), value: "hidden" };
-    intl3 = tmp(1125).intl;
-    items[2] = obj4;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useRoleColorSettingOptions() {
+}
+function onRoleColorSettingValueChange(roleStyle) {
+  const obj = AccessibilityActionCreators;
+  obj.setRoleStyle(roleStyle);
+}
+function useRoleColorSettingOptions() {
   return react.useMemo(() => {
     let intl;
     let intl2;
@@ -85,25 +40,22 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRoleCol
     items[2] = obj3;
     return items;
   }, []);
-});
-function onRoleColorSettingValueChange(roleStyle) {
-  const obj = AccessibilityActionCreators;
-  obj.setRoleStyle(roleStyle);
 }
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t.uSOPWm);
   },
   parent: MobileUserSettings.ACCESSIBILITY,
-  useValue: tmp2,
+  useValue: useRoleColorSettingValue,
   onValueChange: onRoleColorSettingValueChange,
-  useOptions: tmp3
+  useOptions: useRoleColorSettingOptions
 };
 const radio = SettingBuilders.createRadio(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/RoleColorsSetting.tsx");
 
 export default radio;
-export const useRoleColorSettingValue = tmp2;
+export { useRoleColorSettingValue };
 export { onRoleColorSettingValueChange };
-export const useRoleColorSettingOptions = tmp3;
+export { useRoleColorSettingOptions };

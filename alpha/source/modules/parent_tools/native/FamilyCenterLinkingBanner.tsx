@@ -1,23 +1,22 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16762
+// Function ID: 16763
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 8181, 1125, 2536, 13162, 16710, 5271, 16672, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 8362, 13312, 1114, 2537, 16763, 5619, 16725, 2]
+// Exports: default
 
-// Module 16709 (FamilyCenterLinkingBanner)
+// Module 16762 (FamilyCenterLinkingBanner)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1125 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8181 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 13162 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16672 */;
-import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16710 */;
+import nativeDefault from "native" /* 575 */;
+import intl7 from "intl" /* 1114 */;
+import _modDef2537 from "module_2537" /* 2537 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8362 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 13312 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16725 */;
+import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,241 +24,8 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
-let obj7;
 let size;
-const View = react_native.View;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, content: obj3, art: obj4, header: obj5 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16 };
-obj4 = { marginBottom: nativeDefault.space.PX_12 };
-obj5 = { marginBottom: nativeDefault.space.PX_8 };
-let closure_6 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBanner() {
-  let items;
-  let items1;
-  let tmp12;
-  let tmp13;
-  let tmp17;
-  let tmp20;
-  let tmp7;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(23);
-  const tmp4 = closure_6();
-  const tmp6 = useIsInAdultAgeGroupDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2536.zUCWEL);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(_modDef2536.B0NPbp);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp7 = stringResult;
-    tmp8 = stringResult1;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  const tmpResult = useAgeSpecificText3;
-  const ageSpecificText = tmpResult.useAgeSpecificText(tmp7, tmp8);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const formatResult = intl3.format(_modDef2536.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
-    const intl4 = tmp(1125).intl;
-    const stringResult2 = intl4.string(_modDef2536.JsAEDi);
-    cResult[2] = formatResult;
-    cResult[3] = stringResult2;
-    tmp13 = stringResult2;
-    tmp12 = formatResult;
-  } else {
-    tmp12 = cResult[2];
-    tmp13 = cResult[3];
-  }
-  const tmpResult2 = useAgeSpecificText3;
-  const ageSpecificText1 = tmpResult2.useAgeSpecificText(tmp12, tmp13);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp19 = React3(WizardHatAndBookSpotIllustration.WizardHatAndBookSpotIllustration, { accessible: false });
-    cResult[4] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.art) {
-    const obj2 = { style: tmp4.art, children: tmp17 };
-    const tmp23 = React3(View, obj2);
-    cResult[5] = tmp4.art;
-    cResult[6] = tmp23;
-    tmp20 = tmp23;
-  } else {
-    tmp20 = cResult[6];
-  }
-  if (cResult[7] === ageSpecificText) {
-    let tmp24;
-    let tmp26;
-    if (cResult[8] === tmp4.header) {
-      tmp24 = cResult[9];
-    }
-    if (cResult[10] !== ageSpecificText1) {
-      const obj3 = { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText1 };
-      const tmp28 = React3(Text_Text.Text, obj3);
-      cResult[10] = ageSpecificText1;
-      cResult[11] = tmp28;
-      tmp26 = tmp28;
-    } else {
-      tmp26 = cResult[11];
-    }
-    if (cResult[12] === tmp4.content) {
-      if (cResult[13] === tmp24) {
-        let tmp29;
-        let tmp33;
-        if (cResult[14] === tmp26) {
-          tmp29 = cResult[15];
-        }
-        if (cResult[16] !== tmp6) {
-          const tmp34 = React3(tmp6 ? closure_8 : closure_10, {});
-          cResult[16] = tmp6;
-          cResult[17] = tmp34;
-          tmp33 = tmp34;
-        } else {
-          tmp33 = cResult[17];
-        }
-        if (cResult[18] === tmp4.container) {
-          if (cResult[19] === tmp20) {
-            if (cResult[20] === tmp29) {
-              let tmp35;
-              if (cResult[21] === tmp33) {
-                tmp35 = cResult[22];
-              }
-              return tmp35;
-            }
-          }
-        }
-        const obj4 = { style: tmp4.container, children: items };
-        items = [tmp20, tmp29, tmp33];
-        const tmp38 = hasOwnProperty(View, obj4);
-        cResult[18] = tmp4.container;
-        cResult[19] = tmp20;
-        cResult[20] = tmp29;
-        cResult[21] = tmp33;
-        cResult[22] = tmp38;
-        tmp35 = tmp38;
-      }
-    }
-    const obj5 = { style: tmp4.content, children: items1 };
-    items1 = [tmp24, tmp26];
-    const tmp32 = hasOwnProperty(View, obj5);
-    cResult[12] = tmp4.content;
-    cResult[13] = tmp24;
-    cResult[14] = tmp26;
-    cResult[15] = tmp32;
-    tmp29 = tmp32;
-  }
-  const obj6 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };
-  const tmp25 = React3(Text_Text.Text, obj6);
-  cResult[7] = ageSpecificText;
-  cResult[8] = tmp4.header;
-  cResult[9] = tmp25;
-  tmp24 = tmp25;
-}) : (function FamilyCenterLinkingBanner() {
-  let items;
-  let items1;
-  const tmp = closure_6();
-  const tmp2 = useIsInAdultAgeGroupDefault();
-  const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
-  useAgeSpecificText3;
-  const intl = intl7.intl;
-  const stringResult = intl.string(_modDef2536.zUCWEL);
-  const intl2 = intl7.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2536.B0NPbp));
-  const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
-  useAgeSpecificText3;
-  const intl3 = intl7.intl;
-  const formatResult = intl3.format(_modDef2536.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
-  const intl4 = intl7.intl;
-  const obj = { style: tmp.container, children: items };
-  const obj2 = { style: tmp.art, children: React3(WizardHatAndBookSpotIllustration.WizardHatAndBookSpotIllustration, { accessible: false }) };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2536.JsAEDi));
-  items = [React3(View, obj2), , ];
-  const obj3 = { style: tmp.content, children: items1 };
-  items1 = [, ];
-  const obj4 = { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText };
-  items1[0] = React3(Text_Text.Text, obj4);
-  items1[1] = React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText2 });
-  items[1] = hasOwnProperty(View, obj3);
-  items[2] = React3(tmp2 ? closure_8 : closure_10, {});
-  return hasOwnProperty(View, obj);
-});
-createStyles = createStyles_mod;
-let obj6 = { container: obj7 };
-obj7 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
-let closure_7 = createStyles.createStyles(obj6);
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBannerParentContent() {
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  let intl6;
-  let items;
-  let tmp10;
-  let tmp15;
-  let tmp16;
-  let tmp22;
-  const obj = react2;
-  const cResult = obj.c(6);
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { index: 1, header: intl.string(_modDef2536["7xxAni"]), description: intl2.string(_modDef2536["1M9So2"]) };
-    intl = tmp(1125).intl;
-    intl2 = tmp(1125).intl;
-    const tmp9 = React3(closure_12, obj2);
-    cResult[0] = tmp9;
-    first = tmp9;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { index: 2, header: intl3.string(_modDef2536["AXgx+a"]), description: intl4.string(_modDef2536.GzMFnb) };
-    intl3 = tmp(1125).intl;
-    intl4 = tmp(1125).intl;
-    const tmp14 = React3(closure_12, obj3);
-    cResult[1] = tmp14;
-    tmp10 = tmp14;
-  } else {
-    tmp10 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { index: 3, header: intl5.string(_modDef2536.MZn1tG), description: intl6.string(_modDef2536["8rLBxD"]), isLast: true };
-    intl5 = tmp(1125).intl;
-    intl6 = tmp(1125).intl;
-    const tmp20 = React3(closure_12, obj4);
-    const tmp21 = React3(FamilyCenterBannerButton.FamilyCenterParentQRCodeButton, {});
-    cResult[2] = tmp20;
-    cResult[3] = tmp21;
-    tmp16 = tmp21;
-    tmp15 = tmp20;
-  } else {
-    tmp15 = cResult[2];
-    tmp16 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.container) {
-    const obj5 = { style: tmp4.container, children: items };
-    items = [first, tmp10, tmp15, tmp16];
-    const tmp25 = hasOwnProperty(View, obj5);
-    cResult[4] = tmp4.container;
-    cResult[5] = tmp25;
-    tmp22 = tmp25;
-  } else {
-    tmp22 = cResult[5];
-  }
-  return tmp22;
-}) : (function FamilyCenterLinkingBannerParentContent() {
+function FamilyCenterLinkingBannerParentContent() {
   let intl;
   let intl2;
   let intl3;
@@ -268,160 +34,26 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyC
   let intl6;
   let items;
   const obj = { style: closure_7().container, children: items };
-  const obj2 = { index: 1, header: intl.string(_modDef2536["7xxAni"]), description: intl2.string(_modDef2536["1M9So2"]) };
+  const obj2 = { index: 1, header: intl.string(_modDef2537["7xxAni"]), description: intl2.string(_modDef2537["1M9So2"]) };
   intl = intl7.intl;
   intl2 = intl7.intl;
-  items = [React3(closure_12, obj2), , , ];
-  const obj3 = { index: 2, header: intl3.string(_modDef2536["AXgx+a"]), description: intl4.string(_modDef2536.GzMFnb) };
+  items = [React3(FamilyCenterLinkingInstructionsRow, obj2), , , ];
+  const obj3 = { index: 2, header: intl3.string(_modDef2537["AXgx+a"]), description: intl4.string(_modDef2537.GzMFnb) };
   intl3 = intl7.intl;
   intl4 = intl7.intl;
-  items[1] = React3(closure_12, obj3);
-  const obj4 = { index: 3, header: intl5.string(_modDef2536.MZn1tG), description: intl6.string(_modDef2536["8rLBxD"]), isLast: true };
+  items[1] = React3(FamilyCenterLinkingInstructionsRow, obj3);
+  const obj4 = { index: 3, header: intl5.string(_modDef2537.MZn1tG), description: intl6.string(_modDef2537["8rLBxD"]), isLast: true };
   intl5 = intl7.intl;
   intl6 = intl7.intl;
-  items[2] = React3(closure_12, obj4);
+  items[2] = React3(FamilyCenterLinkingInstructionsRow, obj4);
   items[3] = React3(FamilyCenterBannerButton.FamilyCenterParentQRCodeButton, {});
   return hasOwnProperty(View, obj);
-});
-createStyles = createStyles_mod;
-const obj8 = { container: { width: "100%", paddingHorizontal: nativeDefault.space.PX_16 } };
-({ width: "100%", paddingHorizontal: nativeDefault.space.PX_16 });
-let closure_9 = createStyles.createStyles(obj8);
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingBannerTeenContent() {
-  let first;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = React3(FamilyCenterBannerButton.FamilyCenterTeenQRCodeButton, {});
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.container) {
-    const obj2 = { style: tmp4.container, children: first };
-    const tmp11 = React3(View, obj2);
-    cResult[1] = tmp4.container;
-    cResult[2] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (function FamilyCenterLinkingBannerTeenContent() {
+}
+function FamilyCenterLinkingBannerTeenContent() {
   const obj = { style: closure_9().container, children: React3(FamilyCenterBannerButton.FamilyCenterTeenQRCodeButton, {}) };
   return React3(View, obj);
-});
-createStyles = createStyles_mod;
-const obj10 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, gap: { marginBottom: 12 }, circle: size, rowContent: { marginLeft: 12, flex: 1 } };
-size = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-let closure_11 = createStyles.createStyles(obj10);
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkingInstructionsRow(isLast) {
-  let description;
-  let header;
-  let index;
-  let items;
-  let items1;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(20);
-  ({ header, description, index } = isLast);
-  isLast = isLast.isLast;
-  const tmp4 = closure_11();
-  if (cResult[0] !== index) {
-    const obj2 = { variant: "heading-md/semibold", color: "text-brand", children: index };
-    const tmp7 = React3(Text_Text.Text, obj2);
-    cResult[0] = index;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.circle) {
-    let tmp8;
-    if (cResult[3] === tmp5) {
-      tmp8 = cResult[4];
-    }
-    let gap = null;
-    if (!isLast) {
-      gap = tmp4.gap;
-    }
-    if (cResult[5] === tmp4.rowContent) {
-      let tmp11;
-      let tmp12;
-      let tmp15;
-      if (cResult[6] === gap) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] !== header) {
-        const obj3 = { variant: "heading-sm/bold", children: header };
-        const tmp14 = React3(Text_Text.Text, obj3);
-        cResult[8] = header;
-        cResult[9] = tmp14;
-        tmp12 = tmp14;
-      } else {
-        tmp12 = cResult[9];
-      }
-      if (cResult[10] !== description) {
-        const obj4 = { variant: "text-sm/medium", color: "text-muted", children: description };
-        const tmp17 = React3(Text_Text.Text, obj4);
-        cResult[10] = description;
-        cResult[11] = tmp17;
-        tmp15 = tmp17;
-      } else {
-        tmp15 = cResult[11];
-      }
-      if (cResult[12] === tmp11) {
-        if (cResult[13] === tmp12) {
-          let tmp18;
-          if (cResult[14] === tmp15) {
-            tmp18 = cResult[15];
-          }
-          if (cResult[16] === tmp4.row) {
-            if (cResult[17] === tmp8) {
-              let tmp22;
-              if (cResult[18] === tmp18) {
-                tmp22 = cResult[19];
-              }
-              return tmp22;
-            }
-          }
-          const obj5 = { style: tmp4.row, children: items };
-          items = [tmp8, tmp18];
-          const tmp25 = hasOwnProperty(View, obj5);
-          cResult[16] = tmp4.row;
-          cResult[17] = tmp8;
-          cResult[18] = tmp18;
-          cResult[19] = tmp25;
-          tmp22 = tmp25;
-        }
-      }
-      const obj6 = { style: tmp11, children: items1 };
-      items1 = [tmp12, tmp15];
-      const tmp21 = hasOwnProperty(View, obj6);
-      cResult[12] = tmp11;
-      cResult[13] = tmp12;
-      cResult[14] = tmp15;
-      cResult[15] = tmp21;
-      tmp18 = tmp21;
-    }
-    const items2 = [tmp4.rowContent, gap];
-    cResult[5] = tmp4.rowContent;
-    cResult[6] = gap;
-    cResult[7] = items2;
-    tmp11 = items2;
-  }
-  const obj7 = { style: tmp4.circle, children: tmp5 };
-  const tmp9 = React3(View, obj7);
-  cResult[2] = tmp4.circle;
-  cResult[3] = tmp5;
-  cResult[4] = tmp9;
-  tmp8 = tmp9;
-}) : (function FamilyCenterLinkingInstructionsRow(arg0) {
+}
+function FamilyCenterLinkingInstructionsRow(arg0) {
   let description;
   let header;
   let index;
@@ -444,8 +76,58 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Family
   items2 = [React3(Text_Text.Text, { variant: "heading-sm/bold", children: header }), React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: description })];
   items[1] = hasOwnProperty(View, obj3);
   return hasOwnProperty(View, obj);
-});
+}
+const View = react_native.View;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, content: obj3, art: obj4, header: { marginBottom: nativeDefault.space.PX_8 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+obj4 = { marginBottom: nativeDefault.space.PX_12 };
+({ marginBottom: nativeDefault.space.PX_8 });
+let closure_6 = createStyles(obj);
+createStyles = createStyles_mod;
+const obj6 = { container: { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" } };
+({ marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" });
+let closure_7 = createStyles.createStyles(obj6);
+createStyles = createStyles_mod;
+const obj8 = { container: { width: "100%", paddingHorizontal: nativeDefault.space.PX_16 } };
+({ width: "100%", paddingHorizontal: nativeDefault.space.PX_16 });
+let closure_9 = createStyles.createStyles(obj8);
+createStyles = createStyles_mod;
+const obj10 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, gap: { marginBottom: 12 }, circle: size, rowContent: { marginLeft: 12, flex: 1 } };
+size = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+let closure_11 = createStyles.createStyles(obj10);
 size = size_mod;
 const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkingBanner.tsx");
 
-export default tmp5;
+export default function FamilyCenterLinkingBanner() {
+  let items;
+  let items1;
+  const tmp = closure_6();
+  const tmp2 = useIsInAdultAgeGroupDefault();
+  const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
+  useAgeSpecificText3;
+  const intl = intl7.intl;
+  const stringResult = intl.string(_modDef2537.zUCWEL);
+  const intl2 = intl7.intl;
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2537.B0NPbp));
+  const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
+  useAgeSpecificText3;
+  const intl3 = intl7.intl;
+  const formatResult = intl3.format(_modDef2537.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" });
+  const intl4 = intl7.intl;
+  const obj = { style: tmp.container, children: items };
+  const obj2 = { style: tmp.art, children: React3(WizardHatAndBookSpotIllustration.WizardHatAndBookSpotIllustration, { accessible: false }) };
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.string(_modDef2537.JsAEDi));
+  items = [React3(View, obj2), , ];
+  const obj3 = { style: tmp.content, children: items1 };
+  items1 = [, ];
+  const obj4 = { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText };
+  items1[0] = React3(Text_Text.Text, obj4);
+  items1[1] = React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText2 });
+  items[1] = hasOwnProperty(View, obj3);
+  items[2] = React3(tmp2 ? FamilyCenterLinkingBannerParentContent : FamilyCenterLinkingBannerTeenContent, {});
+  return hasOwnProperty(View, obj);
+};

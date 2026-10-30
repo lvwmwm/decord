@@ -1,16 +1,16 @@
-// Module ID: 6726
-// Function ID: 6727
+// Module ID: 6733
+// Function ID: 6734
 // Name: AgeGateModalActionCreators
-// Dependencies: [1109, 1084, 1264, 584, 6727, 1111, 2]
-// Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
+// Dependencies: [1098, 1072, 1253, 572, 6734, 1100, 2]
+// Exports: closeAgeGateModal, closeAgeGateModalAfterSubmit, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
 
-// Module 6726 (AgeGateModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AgeGateConstants from "AgeGateConstants" /* 1109 */;
-import router_utils from "router_utils" /* 1111 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6727 */;
-import Constants from "Constants" /* 1084 */;
+// Module 6733 (AgeGateModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AgeGateConstants from "AgeGateConstants" /* 1098 */;
+import router_utils from "router_utils" /* 1100 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6734 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -35,6 +35,10 @@ export function closeAgeGateModal(source) {
     const tmpResult = AnalyticsUtilsDefault;
     tmpResult.track(hasOwnProperty.AGE_GATE_ACTION, obj2);
   }
+}
+export function closeAgeGateModalAfterSubmit() {
+  const obj = DispatcherDefault;
+  obj.dispatch({ type: "AGE_GATE_MODAL_CLOSE", submitted: true });
 }
 export function openSuccessAgeGateModal(source) {
   const obj = DispatcherDefault;

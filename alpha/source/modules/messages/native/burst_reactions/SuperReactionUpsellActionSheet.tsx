@@ -1,32 +1,32 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9876
+// Function ID: 9877
 // Name: SuperReactionUpsellActionSheet
-// Dependencies: [19, 17, 1389, 1084, 21, 4841, 9851, 9852, 9853, 9854, 9855, 9856, 9857, 5005, 587, 558, 576, 7313, 504, 2051, 9858, 9859, 12, 9889, 4974, 1125, 4963, 1199, 5247, 9890, 2]
+// Dependencies: [19, 17, 1384, 1072, 21, 4842, 9877, 9878, 9879, 9880, 9881, 9882, 9883, 5009, 575, 7320, 504, 2048, 9884, 9885, 12, 9916, 4978, 9917, 1114, 4967, 1188, 5253, 2]
+// Exports: default
 
-// Module 9850 (SuperReactionUpsellActionSheet)
+// Module 9876 (SuperReactionUpsellActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import native from "native" /* 1199 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import _mod4974 from "module_4974" /* 4974 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import AssetRegistry from "AssetRegistry" /* 9851 */;
-import AssetRegistry2 from "AssetRegistry" /* 9852 */;
-import AssetRegistry3 from "AssetRegistry" /* 9853 */;
-import AssetRegistry4 from "AssetRegistry" /* 9854 */;
-import AssetRegistry5 from "AssetRegistry" /* 9855 */;
-import AssetRegistry6 from "AssetRegistry" /* 9856 */;
-import AssetRegistry7 from "AssetRegistry" /* 9857 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9858 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9859 */;
-import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 9889 */;
-import react_mod from "react" /* 19 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import native from "native" /* 1188 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import _mod4978 from "module_4978" /* 4978 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import AssetRegistry from "AssetRegistry" /* 9877 */;
+import AssetRegistry2 from "AssetRegistry" /* 9878 */;
+import AssetRegistry3 from "AssetRegistry" /* 9879 */;
+import AssetRegistry4 from "AssetRegistry" /* 9880 */;
+import AssetRegistry5 from "AssetRegistry" /* 9881 */;
+import AssetRegistry6 from "AssetRegistry" /* 9882 */;
+import AssetRegistry7 from "AssetRegistry" /* 9883 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
+import SuperReactionLocalImageAnimationDefault from "SuperReactionLocalImageAnimation" /* 9916 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,6 @@ let StyleSheet;
 let closure_4;
 let obj2;
 let size;
-let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
 const AnalyticsPages = Constants.AnalyticsPages;
 const jsx = Fragment.jsx;
@@ -49,234 +48,10 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 size = { tintColor: nativeDefault.colors.WHITE, width: 32, height: 32, marginVertical: -8, marginRight: -4 };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReactionCoachmarkActionSheet(onDismiss) {
-  let analyticsLocation;
-  let analyticsLocations;
-  let closure_3;
-  let currentUser;
-  let nitroIcon;
-  let tmp13;
-  let tmp15;
-  let tmp8;
-  let tmp9;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(24);
-  onDismiss = onDismiss.onDismiss;
-  const tmp4 = closure_10();
-  _require = tmp4;
-  analyticsLocations = analyticsLocations(analyticsLocation[17])().analyticsLocations;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { page: AnalyticsPages.PREMIUM_UPSELL_BURST_REACTIONS };
-    cResult[0] = obj2;
-    analyticsLocation = obj2;
-  } else {
-    analyticsLocation = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [UserStore];
-    class C {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[1] = items;
-    cResult[2] = C;
-    tmp9 = C;
-    tmp8 = items;
-  } else {
-    tmp8 = cResult[1];
-    tmp9 = cResult[2];
-  }
-  const tmpResult = tmp(analyticsLocation[18]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmpResult2 = tmp(analyticsLocation[19]);
-  const isPremiumResult = tmpResult2.isPremium(stateFromStores);
-  if (cResult[3] !== analyticsLocations) {
-    function handlePremiumUpsellPress() {
-      const obj = { analyticsLocation, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
-      const tmp = openPremiumModalDefault;
-      tmp(obj);
-    }
-    cResult[3] = analyticsLocations;
-    class C {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[4] = handlePremiumUpsellPress;
-    tmp13 = handlePremiumUpsellPress;
-  } else {
-    tmp13 = cResult[4];
-  }
-  react = tmp13;
-  const tmp5Result = analyticsLocations(analyticsLocation[22]);
-  const tmp14 = items[tmp5Result.random(tmp5Result, 0, items.length - 1)];
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    const tmp18 = <tmp17 localImageSource={tmp14} animationSource={tmp(analyticsLocation[24])} />;
-    cResult[5] = tmp18;
-    tmp15 = tmp18;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.fill) {
-    class C {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    const tmp22 = <closure_4 style={null}>{tmp15}</closure_4>;
-    cResult[6] = tmp4.fill;
-    cResult[7] = tmp22;
-  }
-  if (isPremiumResult) {
-    return null;
-  } else {
-    let tmp23;
-    let tmp26;
-    let tmp28;
-    let tmp32;
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(tmp2[25]).intl;
-      const stringResult = intl.string(tmp(analyticsLocation[25]).t.Wfl5zp);
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[8] = stringResult;
-      tmp23 = stringResult;
-    } else {
-      tmp23 = cResult[8];
-    }
-    class C {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(tmp2[25]).intl;
-      const stringResult1 = intl2.string(tmp(analyticsLocation[25]).t.eikz43);
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[11] = stringResult1;
-      tmp26 = stringResult1;
-    } else {
-      tmp26 = cResult[11];
-    }
-    const _Symbol3 = Symbol;
-    const description = tmp4.description;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(tmp2[25]).intl;
-      const stringResult2 = intl3.string(tmp(analyticsLocation[25]).t.sEAnVH);
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[12] = stringResult2;
-      tmp28 = stringResult2;
-    } else {
-      tmp28 = cResult[12];
-    }
-    if (cResult[13] !== tmp4.nitroIcon) {
-      class F {
-        constructor() {
-          return jsx(native.NitroWheel, { style: nitroIcon.nitroIcon });
-        }
-      }
-      cResult[13] = tmp4.nitroIcon;
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[14] = F;
-    } else {
-      class F {
-        constructor() {
-          return jsx(native.NitroWheel, { style: nitroIcon.nitroIcon });
-        }
-      }
-    }
-    if (cResult[15] !== tmp13) {
-      class M {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          closure_3();
-        }
-      }
-      cResult[15] = tmp13;
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[16] = M;
-    } else {
-      class M {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          closure_3();
-        }
-      }
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          closure_3();
-        }
-      }
-      const stringResult3 = obj8.string(tmp(analyticsLocation[25]).t.TulDPl);
-      class C {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[17] = stringResult3;
-      tmp32 = stringResult3;
-    } else {
-      class M {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          closure_3();
-        }
-      }
-    }
-    if (cResult[18] === onDismiss) {
-      class M {
-        constructor() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          closure_3();
-        }
-      }
-    }
-    cResult[18] = onDismiss;
-    cResult[19] = tmp4.description;
-    cResult[20] = tmp30;
-    cResult[21] = tmp31;
-    cResult[22] = tmp25;
-    cResult[23] = jsx(analyticsLocations(analyticsLocation[29]), { title: tmp23, backdropProps: tmp25, description: tmp26, descriptionStyle: description, dismissibleContent, primaryButtonText: tmp28, primaryButtonIcon: tmp30, onPrimaryButtonPress: tmp31, secondaryButtonText: tmp32, onDismiss });
-    const tmp37 = jsx(analyticsLocations(analyticsLocation[29]), { title: tmp23, backdropProps: tmp25, description: tmp26, descriptionStyle: description, dismissibleContent, primaryButtonText: tmp28, primaryButtonIcon: tmp30, onPrimaryButtonPress: tmp31, secondaryButtonText: tmp32, onDismiss });
-  }
-}) : (function SuperReactionCoachmarkActionSheet(onDismiss) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx");
+
+export default function SuperReactionCoachmarkActionSheet(onDismiss) {
   let currentUser;
   let nitroIcon;
   let analyticsLocations;
@@ -285,7 +60,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReact
   const tmp = closure_10();
   _require = tmp;
   let tmp2 = analyticsLocations;
-  analyticsLocations = analyticsLocations(analyticsLocation[17])().analyticsLocations;
+  analyticsLocations = analyticsLocations(analyticsLocation[15])().analyticsLocations;
   analyticsLocation = { page: AnalyticsPages.PREMIUM_UPSELL_BURST_REACTIONS };
   let obj2 = require("get initialized");
   items = [UserStore];
@@ -295,12 +70,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReact
   let tmp8 = null;
   const isPremiumResult = obj3.isPremium(stateFromStores);
   if (!isPremiumResult) {
-    tmp2(tmp3[29]);
-    const intl = tmp4(tmp3[25]).intl;
+    tmp2(tmp3[23]);
+    const intl = tmp4(tmp3[24]).intl;
     const obj5 = { backdropOpacity: require("burst_reactions/BurstReactionEffectUtils").BACKDROP_OPACITY, backdropChildren: tmp7 };
-    const intl2 = tmp4(tmp3[25]).intl;
-    const intl3 = tmp4(tmp3[25]).intl;
-    const intl4 = tmp4(tmp3[25]).intl;
+    const intl2 = tmp4(tmp3[24]).intl;
+    const intl3 = tmp4(tmp3[24]).intl;
+    const intl4 = tmp4(tmp3[24]).intl;
     tmp8 = <tmp2Result title={intl.string(require("intl").t.Wfl5zp)} backdropProps={obj5} description={intl2.string(require("intl").t.eikz43)} descriptionStyle={tmp.description} dismissibleContent={dismissibleContent} primaryButtonText={intl3.string(require("intl").t.sEAnVH)} primaryButtonIcon={function primaryButtonIcon() {
       return jsx(native.NitroWheel, { style: nitroIcon.nitroIcon });
     }} onPrimaryButtonPress={function onPrimaryButtonPress() {
@@ -312,8 +87,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuperReact
     }} secondaryButtonText={intl4.string(require("intl").t.TulDPl)} onDismiss={onDismiss} />;
   }
   return tmp8;
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/messages/native/burst_reactions/SuperReactionUpsellActionSheet.tsx");
-
-export default tmp5;
+};

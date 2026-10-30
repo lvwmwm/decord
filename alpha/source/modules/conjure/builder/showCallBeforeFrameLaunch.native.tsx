@@ -1,10 +1,10 @@
-// Module ID: 11490
-// Function ID: 11491
+// Module ID: 11690
+// Function ID: 11691
 // Name: showCallBeforeFrameLaunch
 // Dependencies: [2]
 // Exports: default
 
-// Module 11490 (showCallBeforeFrameLaunch)
+// Module 11690 (showCallBeforeFrameLaunch)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/builder/showCallBeforeFrameLaunch.native.tsx");

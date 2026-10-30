@@ -1,18 +1,18 @@
-// Module ID: 5643
-// Function ID: 5644
+// Module ID: 5649
+// Function ID: 5650
 // Name: LinkUtils
-// Dependencies: [4857, 4879, 4937, 1084, 4864, 5644, 5645, 11, 2]
+// Dependencies: [4858, 4880, 4941, 1072, 4865, 5650, 5651, 11, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseConversationIdFromQuery, tryParseDiceRollLink, tryParseEventDetailsPath, tryParseUserProfilePath
 
-// Module 5643 (LinkUtils)
+// Module 5649 (LinkUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import ConversationConstants from "ConversationConstants" /* 5644 */;
-import RegexUtilsDefault from "RegexUtils" /* 5645 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import ConversationConstants from "ConversationConstants" /* 5650 */;
+import RegexUtilsDefault from "RegexUtils" /* 5651 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

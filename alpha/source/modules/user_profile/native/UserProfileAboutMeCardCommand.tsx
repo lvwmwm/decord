@@ -1,22 +1,21 @@
-// Module ID: 11257
-// Function ID: 11258
+// Module ID: 11462
+// Function ID: 11463
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1084, 21, 5005, 587, 558, 576, 5196, 11258, 1264, 5749, 5247, 11264, 7688, 5672, 5271, 2]
+// Dependencies: [19, 1072, 21, 5009, 575, 5619, 5202, 11463, 1253, 5755, 5253, 11469, 7693, 5678, 2]
 
-// Module 11257 (UserProfileAboutMeCardCommand)
+// Module 11462 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11258 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11264 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7693 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11463 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11469 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,128 +26,7 @@ const jsxs = Fragment.jsxs;
 let obj = { commandClickable: obj2 };
 obj2 = { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 };
 let closure_5 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileAboutMeCardCommand(application) {
-  let channel;
-  let tmp = application;
-  let obj = application(channel[6]);
-  const cResult = obj.c(12);
-  application = application.application;
-  const command = application.command;
-  const tmp2 = channel;
-  channel = application.channel;
-  const tmp4 = closure_5();
-  if (cResult[0] === application) {
-    if (cResult[1] === channel) {
-      let tmp5;
-      if (cResult[2] === command) {
-        tmp5 = cResult[3];
-      }
-      if (cResult[4] === command.displayName) {
-        let tmp6;
-        if (cResult[5] === command.id) {
-          tmp6 = cResult[6];
-        }
-        if (cResult[7] === command.displayName) {
-          if (cResult[8] === tmp4.commandClickable) {
-            if (cResult[9] === tmp5) {
-              let tmp7;
-              if (cResult[10] === tmp6) {
-                tmp7 = cResult[11];
-              }
-              return tmp7;
-            }
-          }
-        }
-        const items = ["/", command.displayName];
-        const tmp9 = jsxs(tmp(tmp2[15]).Text, { variant: "text-md/bold", onPress: tmp5, onLongPress: tmp6, style: tmp4.commandClickable, children: items });
-        cResult[7] = command.displayName;
-        cResult[8] = tmp4.commandClickable;
-        cResult[9] = tmp5;
-        cResult[10] = tmp6;
-        cResult[11] = tmp9;
-        tmp7 = tmp9;
-      }
-      const fn2 = function s() {
-        const obj = MarkupReactCommandRule;
-        return obj.handleLongPressCommandMention(command.displayName, command.id);
-      };
-      cResult[4] = command.displayName;
-      cResult[5] = command.id;
-      cResult[6] = fn2;
-      tmp6 = fn2;
-    }
-  }
-  const fn = function c() {
-    let str;
-    let obj = application(channel[7]);
-    const bestActiveInput = obj.getBestActiveInput();
-    let obj2 = {
-      channelId: channel.id,
-      currentText: str,
-      commandId: null,
-      commandName: null,
-      onOpenCustomKeyboard(arg0) {
-        let openCustomKeyboardResult;
-        const obj = bestActiveInput;
-        if (bestActiveInput != null) {
-          openCustomKeyboardResult = obj.openCustomKeyboard(arg0);
-        }
-        return openCustomKeyboardResult;
-      },
-      onSetCommand() {
-        let applicationCommandSection;
-        let id;
-        const track = AnalyticsUtilsDefault.track;
-        const POPULAR_APPLICATION_COMMAND_CLICKED = AnalyticEvents.POPULAR_APPLICATION_COMMAND_CLICKED;
-        AnalyticsUtilsDefault;
-        if (application != null) {
-          id = tmp4.id;
-        }
-        const obj = { application_id: id, command_id: command.id, guild_id: channel.getGuildId() };
-        const obj2 = AppAnalyticsUtils;
-        const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));
-        track(POPULAR_APPLICATION_COMMAND_CLICKED, obj);
-        const tmpResult = ActionSheetActionCreatorsDefault;
-        tmpResult.hideAllActionSheets();
-        navigateToLastChannelDefault();
-        const tmp6 = command;
-        const tmp7 = channel;
-        if (bestActiveInput != null) {
-          bestActiveInput.openSystemKeyboard();
-        }
-        if (bestActiveInput != null) {
-          const applicationCommandManager = obj4.getApplicationCommandManager();
-          if (applicationCommandManager != null) {
-            const obj3 = { channelId: tmp7.id, command: tmp6, section: applicationCommandSection, location: ApplicationCommandTypes.ApplicationCommandTriggerLocations.POPULAR_COMMANDS };
-            applicationCommandSection = null;
-            const setCommand = applicationCommandManager.setCommand;
-            if (null != application) {
-              const tmp8Result = ApplicationCommandUtils;
-              applicationCommandSection = tmp8Result.getApplicationCommandSection(tmp4);
-            }
-            setCommand(obj3);
-          }
-        }
-      }
-    };
-    str = undefined;
-    const handleTapCommandMention = application(channel[8]).handleTapCommandMention;
-    const tmp = application(channel[8]);
-    if (bestActiveInput != null) {
-      str = bestActiveInput.getText();
-    }
-    if (str == null) {
-      str = "";
-    }
-    ({ id: obj3.commandId, displayName: obj3.commandName } = command);
-    const result = handleTapCommandMention(obj2);
-  };
-  cResult[0] = application;
-  cResult[1] = channel;
-  cResult[2] = command;
-  cResult[3] = fn;
-  tmp5 = fn;
-}) : (function UserProfileAboutMeCardCommand(channel) {
+const memoResult = react.memo(function UserProfileAboutMeCardCommand(channel) {
   let command;
   ({ application: require, command } = channel);
   channel = channel.channel;
@@ -228,7 +106,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     style: tmp.commandClickable,
     children: items
   });
-}));
+});
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileAboutMeCardCommand.tsx");
 
 export default memoResult;

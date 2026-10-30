@@ -1,25 +1,27 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12352
+// Function ID: 12353
 // Name: AppLauncherViewAllScreen
-// Dependencies: [19, 17, 1502, 21, 5005, 587, 12107, 558, 576, 1631, 11261, 12015, 5672, 1125, 6988, 6968, 5271, 1199, 12068, 12020, 12105, 12073, 12076, 12077, 12016, 11262, 2]
+// Dependencies: [19, 17, 1497, 21, 5009, 575, 12283, 1626, 11466, 12201, 5678, 6974, 1114, 6996, 5619, 1188, 12244, 12206, 12281, 12249, 12252, 12253, 12202, 11467, 2]
+// Exports: default
 
-// Module 12193 (AppLauncherViewAllScreen)
+// Module 12352 (AppLauncherViewAllScreen)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6988 */;
-import AppLauncherContext from "AppLauncherContext" /* 11261 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12107 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import ArrowLargeLeftIcon2 from "ArrowLargeLeftIcon" /* 6996 */;
+import AppLauncherContext from "AppLauncherContext" /* 11466 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12283 */;
 import react from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
+
+let navigation;
 
 let metroImportAll;
 let metroImportDefault;
@@ -28,7 +30,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const ApplicationCommandTypes = tmp(5672);
+const ApplicationCommandTypes = tmp(5678);
 const View = react_native.View;
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = AppLauncherNativeConstants.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG;
@@ -42,125 +44,10 @@ obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-betw
 obj4 = { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: nativeDefault.space.PX_4 };
 size = { width: AppLauncherBackButton.BACK_BUTTON_SIZE, height: AppLauncherBackButton.BACK_BUTTON_SIZE, alignItems: "center", justifyContent: "center" };
 let closure_10 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherViewAllScreen(navigation) {
-  let analyticsLocation;
-  let keyboardCloseReasonRef;
-  let onExecuteCommand;
-  let promotedApplicationIds;
-  let sectionItemType;
-  let sectionName;
-  let sectionOverallPosition;
-  let title;
-  let tmp = navigation;
-  let tmp2 = analyticsLocation;
-  let obj = navigation(analyticsLocation[8]);
-  const cResult = obj.c(73);
-  navigation = navigation.navigation;
-  const params = navigation.route.params;
-  const context = params.context;
-  analyticsLocation = params.analyticsLocation;
-  ({ sectionItemType, sectionName, sectionOverallPosition } = params);
-  const applications = params.applications;
-  const commands = params.commands;
-  const sectionDescriptors = params.sectionDescriptors;
-  ({ title, promotedApplicationIds } = params);
-  if (sectionName == null) {
-    sectionName = "frecency_view_all";
-  }
-  const tmp4 = keyboardCloseReasonRef();
-  const sum = context(tmp2[9])().bottom + commands;
-  const tmpResult = tmp(tmp2[10]);
-  const requiredAppLauncherContext = tmpResult.useRequiredAppLauncherContext();
-  const chatInputRef = requiredAppLauncherContext.chatInputRef;
-  keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
-  const entrypoint = requiredAppLauncherContext.entrypoint;
-  if (cResult[0] === chatInputRef) {
-    if (cResult[1] === keyboardCloseReasonRef) {
-      if (cResult[2] === navigation) {
-        const tmp7 = cResult[3];
-      }
-      if (cResult[4] === analyticsLocation) {
-        if (cResult[5] === context) {
-          if (cResult[6] === entrypoint) {
-            let tmp8;
-            if (cResult[7] === navigation) {
-              tmp8 = cResult[8];
-            }
-            let closure_12 = tmp8;
-            class F {
-              constructor(arg0) {
-                let application;
-                ({ application, sectionName } = arg0);
-                let APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = analyticsLocation;
-                const handleApplicationSelected = AppLauncherNativeUtils.handleApplicationSelected;
-                AppLauncherNativeUtils;
-                if (analyticsLocation == null) {
-                  APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT;
-                }
-                const obj = { location: APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, application, navigation, context, sectionName, entrypoint };
-                const result = handleApplicationSelected(obj);
-              }
-            }
-            class D {
-              constructor(command, section, sectionName) {
-                let APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = analyticsLocation;
-                const handleApplicationCommandSelected = AppLauncherNativeUtils.handleApplicationCommandSelected;
-                AppLauncherNativeUtils;
-                if (analyticsLocation == null) {
-                  APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT;
-                }
-                const obj = { location: APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, context, command, section, sectionDescriptors, query: "", navigation, sectionName, entrypoint };
-                const result = handleApplicationCommandSelected(obj);
-              }
-            }
-            cResult[9] = analyticsLocation;
-            cResult[10] = context;
-            cResult[11] = entrypoint;
-            cResult[12] = navigation;
-            cResult[13] = sectionDescriptors;
-            cResult[14] = D;
-          }
-        }
-      }
-      class F {
-        constructor(arg0) {
-          let application;
-          ({ application, sectionName } = arg0);
-          let APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = analyticsLocation;
-          const handleApplicationSelected = AppLauncherNativeUtils.handleApplicationSelected;
-          AppLauncherNativeUtils;
-          if (analyticsLocation == null) {
-            APP_LAUNCHER_APPLICATION_VIEW_FRECENCT = ApplicationCommandTypes.ApplicationCommandTriggerLocations.APP_LAUNCHER_APPLICATION_VIEW_FRECENCT;
-          }
-          const obj = { location: APP_LAUNCHER_APPLICATION_VIEW_FRECENCT, application, navigation, context, sectionName, entrypoint };
-          const result = handleApplicationSelected(obj);
-        }
-      }
-      cResult[4] = analyticsLocation;
-      cResult[5] = context;
-      cResult[6] = entrypoint;
-      cResult[7] = navigation;
-      cResult[8] = F;
-      tmp8 = F;
-    }
-  }
-  const fn = function n() {
-    const arr = navigation;
-    if (navigation.canGoBack()) {
-      arr.pop();
-    } else {
-      keyboardCloseReasonRef.current = AppLauncherContext.AppLauncherKeyboardCloseReason.BACK;
-      const current = chatInputRef.current;
-      if (current != null) {
-        current.closeCustomKeyboard();
-      }
-    }
-  };
-  cResult[0] = chatInputRef;
-  cResult[1] = keyboardCloseReasonRef;
-  cResult[2] = navigation;
-  cResult[3] = fn;
-}) : (function AppLauncherViewAllScreen(route) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/app_launcher/native/screens/app_list_view/AppLauncherViewAllScreen.tsx");
+
+export default function AppLauncherViewAllScreen(route) {
   let bottomVisibilityInsetRef;
   let flashListRef;
   let items10;
@@ -198,9 +85,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   closure_10 = tmp;
   let tmp2 = analyticsLocation;
   let tmp3 = sectionOverallPosition;
-  const sum = analyticsLocation(sectionOverallPosition[9])().bottom + sectionDescriptors;
+  const sum = analyticsLocation(sectionOverallPosition[7])().bottom + sectionDescriptors;
   c11 = sum;
-  let obj = context(sectionOverallPosition[10]);
+  let obj = context(sectionOverallPosition[8]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   chatInputRef = requiredAppLauncherContext.chatInputRef;
   keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
@@ -284,7 +171,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const tmp = null != applications && index === applications.length - 1;
     const obj2 = promotedApplicationIds;
     const tmp2 = promotedApplicationIds;
-    const tmp3 = analyticsLocation(sectionOverallPosition[18]);
+    const tmp3 = analyticsLocation(sectionOverallPosition[16]);
     if (promotedApplicationIds != null) {
       hasItem = obj2.has(item.id);
     }
@@ -308,8 +195,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       found = arr.find((id) => id.id === item.applicationId);
     }
     let application;
-    const getAppLauncherIconSource = context(sectionOverallPosition[11]).getAppLauncherIconSource;
-    context(sectionOverallPosition[11]);
+    const getAppLauncherIconSource = context(sectionOverallPosition[9]).getAppLauncherIconSource;
+    context(sectionOverallPosition[9]);
     if (found != null) {
       application = found.application;
     }
@@ -320,7 +207,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       let tmp10 = null != appLauncherIconSource;
       if (tmp10) {
         const obj = { iconSource: appLauncherIconSource, iconSize: 36 };
-        tmp10 = promotedApplicationIds(analyticsLocation(tmp3[19]), obj);
+        tmp10 = promotedApplicationIds(analyticsLocation(tmp3[17]), obj);
       }
       const obj2 = {
         command: item,
@@ -332,21 +219,21 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
         isLastRow: tmp11,
         context: item,
         section: found,
-        location: context(sectionOverallPosition[12]).ApplicationCommandTriggerLocations.APP_LAUNCHER_FRECENTS_VIEW_ALL,
+        location: context(sectionOverallPosition[10]).ApplicationCommandTriggerLocations.APP_LAUNCHER_FRECENTS_VIEW_ALL,
         sectionName,
         icon: tmp10
       };
       tmp11 = index === tmp7;
-      const CommandRow = tmp2(tmp3[20]).CommandRow;
+      const CommandRow = tmp2(tmp3[18]).CommandRow;
       return promotedApplicationIds(CommandRow, obj2);
     }
   }, items6);
-  let obj2 = context(sectionOverallPosition[21]);
+  let obj2 = context(sectionOverallPosition[19]);
   const bottomSheetFlashListBottomViewabilityInset = obj2.useBottomSheetFlashListBottomViewabilityInset();
   ({ flashListRef, bottomVisibilityInsetRef } = bottomSheetFlashListBottomViewabilityInset);
-  let obj3 = context(sectionOverallPosition[22]);
+  let obj3 = context(sectionOverallPosition[20]);
   trackAppLauncherItemImpressionOnFirstView = obj3.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
-  let obj4 = context(sectionOverallPosition[23]);
+  let obj4 = context(sectionOverallPosition[21]);
   const appLauncherFlashListProps = obj4.useAppLauncherFlashListProps();
   const items7 = [sum, tmp.list];
   const memo1 = applications.useMemo(() => {
@@ -386,7 +273,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     const items = [obj];
     return items;
   }, items9);
-  if (sectionItemType === context(sectionOverallPosition[24]).SectionItemType.APPS) {
+  if (sectionItemType === context(sectionOverallPosition[22]).SectionItemType.APPS) {
     const obj6 = {
       preserveScrollMomentum: true,
       contentContainerStyle: memo1,
@@ -405,8 +292,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
       animatedProps: null
     };
     const tmp20 = promotedApplicationIds;
-    const tmp2Result = tmp2(tmp3[23]);
-    if (entrypoint === context(tmp3[25]).AppLauncherEntrypoint.VOICE) {
+    const tmp2Result = tmp2(tmp3[21]);
+    if (entrypoint === context(tmp3[23]).AppLauncherEntrypoint.VOICE) {
       flashListRef = appLauncherFlashListProps.scrollerRef;
     }
     ({ onScroll: obj5.animatedOnScroll, gestureRef: obj5.simultaneousHandlers, animatedProps: obj5.animatedProps } = appLauncherFlashListProps);
@@ -431,8 +318,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
     };
     scrollerRef = flashListRef;
     const tmp23 = promotedApplicationIds;
-    const tmp2Result2 = tmp2(tmp3[23]);
-    if (entrypoint === context(tmp3[25]).AppLauncherEntrypoint.VOICE) {
+    const tmp2Result2 = tmp2(tmp3[21]);
+    if (entrypoint === context(tmp3[23]).AppLauncherEntrypoint.VOICE) {
       scrollerRef = appLauncherFlashListProps.scrollerRef;
     }
     ({ onScroll: obj7.animatedOnScroll, gestureRef: obj7.simultaneousHandlers, animatedProps: obj7.animatedProps } = appLauncherFlashListProps);
@@ -441,8 +328,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLaunche
   const obj11 = { style: tmp.container, children: items10 };
   items10 = [memo, tmp23Result];
   return navigation(commands, obj11);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/app_launcher/native/screens/app_list_view/AppLauncherViewAllScreen.tsx");
-
-export default tmp5;
+};

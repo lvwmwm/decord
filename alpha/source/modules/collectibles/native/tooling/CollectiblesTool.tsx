@@ -1,29 +1,28 @@
-// Module ID: 17602
-// Function ID: 17603
+// Module ID: 17673
+// Function ID: 17674
 // Name: CollectiblesTool
-// Dependencies: [32, 19, 17, 10518, 1389, 7708, 7723, 8734, 1084, 1391, 21, 5005, 587, 558, 576, 9420, 5271, 11131, 5282, 573, 10558, 14410, 17603, 1199, 2]
+// Dependencies: [32, 19, 17, 10543, 1384, 7713, 7728, 8768, 1072, 1386, 21, 5009, 575, 9437, 5619, 5630, 11336, 563, 10584, 17674, 1188, 14443, 2]
+// Exports: default
 
-// Module 17602 (CollectiblesTool)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import BaseTextButton from "BaseTextButton" /* 5282 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8734 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9420 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11131 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14410 */;
+// Module 17673 (CollectiblesTool)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import BaseTextButton from "BaseTextButton" /* 5630 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8768 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9437 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11336 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14443 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 10518 */;
-import UserStore from "UserStore" /* 1389 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 10543 */;
+import UserStore from "UserStore" /* 1384 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7713 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,447 +51,36 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-let closure_11 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
-const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
-const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, scrollContainer: obj3, contentContainer: obj4, section: obj5, sectionHeader: obj6, sectionTitle: obj7, inputContainer: obj8, inputWrapper: obj9, inputLabel: obj10, statusText: obj11, statusSuccess: obj12, statusError: obj13, statusLoading: obj14, previewContainer: obj15, previewButton: obj16, secondaryButton: obj17, description: obj18, placeholder: obj19, placeholderText: obj20 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
-obj4 = { gap: nativeDefault.space.PX_12 };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-obj6 = { flexDirection: "row", alignItems: "center", marginBottom: nativeDefault.space.PX_16 };
-obj7 = { flex: 1, color: nativeDefault.colors.TEXT_DEFAULT };
-obj8 = { marginBottom: nativeDefault.space.PX_16 };
-obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, padding: nativeDefault.space.PX_4 };
-obj10 = { marginBottom: nativeDefault.space.PX_8, color: nativeDefault.colors.TEXT_DEFAULT, fontWeight: "600" };
-obj11 = { marginTop: nativeDefault.space.PX_8, fontSize: 12, fontWeight: "500" };
-obj12 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
-obj13 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
-obj14 = { color: nativeDefault.colors.TEXT_MUTED };
-obj15 = { marginBottom: nativeDefault.space.PX_16 };
-obj16 = { backgroundColor: "#23a55a", borderRadius: nativeDefault.radii.md, paddingVertical: nativeDefault.space.PX_12, alignItems: "center" };
-obj17 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.md, paddingVertical: nativeDefault.space.PX_12, alignItems: "center", marginTop: nativeDefault.space.PX_8 };
-obj18 = { color: nativeDefault.colors.TEXT_MUTED, marginBottom: nativeDefault.space.PX_12 };
-obj19 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_MUTED, padding: nativeDefault.space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
-obj20 = { color: nativeDefault.colors.TEXT_MUTED, textAlign: "center", fontSize: 14 };
-let closure_16 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? ((arg0) => {
-  let require;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(5);
-  [tmp4, require] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
-      const getPurchase = CollectiblesPurchaseStore.getPurchase;
-      CollectiblesPurchaseStore.getPurchase = () => {
-
-      };
-      CollectiblesPurchaseStore.emitChange();
-      require("logAppStart");
-      return () => {
-        closure_2_10.getPurchase = getPurchase;
-        closure_2_10.emitChange();
-      };
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp5 = fn;
-    tmp6 = items;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const layoutEffect = obj2.useLayoutEffect(tmp5, tmp6);
-  if (cResult[2] === tmp4) {
-    let tmp8;
-    if (cResult[3] === arg0) {
-      tmp8 = cResult[4];
-    }
-    return tmp8;
-  }
-  const obj3 = {};
-  const tmp9 = CollectiblesShopCardV2Default;
-  const merged = Object.assign(arg0);
-  const tmp11 = closure_14(tmp9, obj3, tmp4);
-  cResult[2] = tmp4;
-  cResult[3] = arg0;
-  cResult[4] = tmp11;
-  tmp8 = tmp11;
-}) : ((arg0) => {
-  let require;
-  let tmp2;
-  [tmp2, require] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  const layoutEffect = react.useLayoutEffect(() => {
-    const getPurchase = CollectiblesPurchaseStore.getPurchase;
-    CollectiblesPurchaseStore.getPurchase = () => {
-
-    };
-    CollectiblesPurchaseStore.emitChange();
-    require("logAppStart");
-    return () => {
-      closure_2_10.getPurchase = getPurchase;
-      closure_2_10.emitChange();
-    };
-  }, []);
-  const obj = {};
-  const tmp4 = CollectiblesShopCardV2Default;
-  const merged = Object.assign(arg0);
-  return closure_14(tmp4, obj, tmp2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GiftingFlowSection(product) {
-  let closure_0;
-  let obj = require("react");
-  const cResult = obj.c(10);
-  product = product.product;
-  const tmp4 = closure_16();
-  if (null == product) {
-    let first;
-    const _Symbol2 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp19 = closure_14(require("Text/Text").Text, { variant: "text-xs/normal", color: "text-muted", children: "Enter a valid product SKU ID above to preview the gift screens." });
-      cResult[0] = tmp19;
-      first = tmp19;
+class GiftingFlowSection {
+  constructor(product) {
+    let c0;
+    let obj2;
+    product = product.product;
+    _require = undefined;
+    let obj;
+    if (null == product) {
+      return closure_14(require("Text/Text").Text, { variant: "text-xs/normal", color: "text-muted", children: "Enter a valid product SKU ID above to preview the gift screens." });
     } else {
-      first = cResult[0];
-    }
-    return first;
-  } else {
-    let tmp5;
-    const _Symbol3 = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
+      _require = "devtools-collectibles-gift";
       const currentUser = UserStore.getCurrentUser();
-      cResult[1] = currentUser;
-      tmp5 = currentUser;
-    } else {
-      tmp5 = cResult[1];
-    }
-    if (null != tmp5) {
-      let tmp8;
-      let tmp9;
-      let tmp12;
-      const _Symbol = Symbol;
-      if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj2 = { id: tmp5.id };
-        cResult[2] = obj2;
-        tmp8 = obj2;
-      } else {
-        tmp8 = cResult[2];
-      }
-      if (cResult[3] !== product.skuId) {
-        const obj3 = { code: "devtools-collectibles-gift", user: tmp8, sku_id: product.skuId, uses: 1, max_uses: 1, expires_at: null, redeemed: false, application_id, gift_style: PremiumGiftStyles.STANDARD_BOX };
-        cResult[3] = product.skuId;
-        cResult[4] = obj3;
-        tmp9 = obj3;
-      } else {
-        tmp9 = cResult[4];
-      }
-      _require = tmp9;
-      if (cResult[5] !== tmp9) {
-        const fn = function _() {
-          const obj = actions_GiftCodeActionCreators;
-          return obj.openGiftCodeRedeemModal("devtools-collectibles-gift", GiftCodeRecord.createFromServer(closure_0));
+      if (null != currentUser) {
+        obj = { code: "devtools-collectibles-gift", user: obj2, sku_id: product.skuId, uses: 1, max_uses: 1, expires_at: null, redeemed: false, application_id, gift_style: PremiumGiftStyles.STANDARD_BOX };
+        obj2 = { id: currentUser.id };
+        const obj3 = {
+          variant: "primary",
+          pillStyle: tmp.previewButton,
+          text: "Open Gift Redeem Modal",
+          onPress() {
+                obj = actions_GiftCodeActionCreators;
+                return obj.openGiftCodeRedeemModal(c0, GiftCodeRecord.createFromServer(obj));
+              }
         };
-        cResult[5] = tmp9;
-        cResult[6] = fn;
-        tmp12 = fn;
-      } else {
-        tmp12 = cResult[6];
-      }
-      if (cResult[7] === tmp4.previewButton) {
-        let tmp13;
-        if (cResult[8] === tmp12) {
-          tmp13 = cResult[9];
-        }
-        return tmp13;
-      }
-      const obj4 = { variant: "primary", pillStyle: tmp4.previewButton, text: "Open Gift Redeem Modal", onPress: tmp12 };
-      const tmp15 = closure_14(require("BaseTextButton").BaseTextButton, obj4);
-      cResult[7] = tmp4.previewButton;
-      cResult[8] = tmp12;
-      cResult[9] = tmp15;
-      tmp13 = tmp15;
-    }
-  }
-}) : (function GiftingFlowSection(product) {
-  let c0;
-  let obj2;
-  product = product.product;
-  _require = undefined;
-  let obj;
-  if (null == product) {
-    return closure_14(require("Text/Text").Text, { variant: "text-xs/normal", color: "text-muted", children: "Enter a valid product SKU ID above to preview the gift screens." });
-  } else {
-    _require = "devtools-collectibles-gift";
-    const currentUser = UserStore.getCurrentUser();
-    if (null != currentUser) {
-      obj = { code: "devtools-collectibles-gift", user: obj2, sku_id: product.skuId, uses: 1, max_uses: 1, expires_at: null, redeemed: false, application_id, gift_style: PremiumGiftStyles.STANDARD_BOX };
-      obj2 = { id: currentUser.id };
-      const obj3 = {
-        variant: "primary",
-        pillStyle: tmp.previewButton,
-        text: "Open Gift Redeem Modal",
-        onPress() {
-              obj = actions_GiftCodeActionCreators;
-              return obj.openGiftCodeRedeemModal(c0, GiftCodeRecord.createFromServer(obj));
-            }
-      };
-      return closure_14(require("BaseTextButton").BaseTextButton, obj3);
-    }
-  }
-});
-let closure_18 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePreviewOverrideSection() {
-  let first;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp17;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(34);
-  const tmp4 = closure_16();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(override) {
-      return override.override;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmp7 = closure_11(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function l(status) {
-      return status.status;
-    };
-    cResult[1] = fn2;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[1];
-  }
-  const tmp6Result = closure_11(tmp8);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function u(error) {
-      return error.error;
-    };
-    cResult[2] = fn3;
-    tmp10 = fn3;
-  } else {
-    tmp10 = cResult[2];
-  }
-  const tmp6Result4 = closure_11(tmp10);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function h(loadFromDevice) {
-      return loadFromDevice.loadFromDevice;
-    };
-    cResult[3] = fn4;
-    tmp12 = fn4;
-  } else {
-    tmp12 = cResult[3];
-  }
-  const tmp6Result5 = closure_11(tmp12);
-  let closure_0 = tmp6Result5;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-    cResult[4] = T;
-    tmp14 = T;
-  } else {
-    class T {
-      constructor(clear) {
-        return clear.clear;
+        return closure_14(require("BaseTextButton").BaseTextButton, obj3);
       }
     }
   }
-  const tmp6Result6 = closure_11(tmp14);
-  if ("error" === tmp6Result) {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-  } else {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-    tmp17 = "loading" === tmp6Result ? tmp4.statusLoading : tmp4.statusSuccess;
-  }
-  let str = "Loading\u2026";
-  if ("loading" !== tmp6Result) {
-    let combined;
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-    if ("error" === tmp6Result) {
-      class T {
-        constructor(clear) {
-          return clear.clear;
-        }
-      }
-      combined = tmp6Result4;
-    } else {
-      class T {
-        constructor(clear) {
-          return clear.clear;
-        }
-      }
-      if (null != tmp7) {
-        class T {
-          constructor(clear) {
-            return clear.clear;
-          }
-        }
-        if (1 === tmp7.layers.length) {
-          class T {
-            constructor(clear) {
-              return clear.clear;
-            }
-          }
-        }
-        const _HermesInternal = HermesInternal;
-        combined = "Showing \"" + tmp19 + "\" \u00B7 " + length + " layer" + str2;
-      }
-    }
-    str = combined;
-  }
-  if (cResult[5] !== tmp4.sectionTitle) {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-    const obj2 = { variant: "heading-md/semibold", style: tmp4.sectionTitle, children: "Frame Preview Override" };
-    cResult[5] = tmp4.sectionTitle;
-    cResult[6] = syncedClientThemes(Text_Text.Text, obj2);
-    const tmp24 = syncedClientThemes(Text_Text.Text, obj2);
-  } else {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-  }
-  if (cResult[7] === tmp4.sectionHeader) {
-    class T {
-      constructor(clear) {
-        return clear.clear;
-      }
-    }
-    if (cResult[10] !== tmp4.description) {
-      class T {
-        constructor(clear) {
-          return clear.clear;
-        }
-      }
-      const obj3 = { variant: "text-sm/normal", style: tmp4.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-      cResult[10] = tmp4.description;
-      cResult[11] = syncedClientThemes(Text_Text.Text, obj3);
-      const tmp27 = syncedClientThemes(Text_Text.Text, obj3);
-    } else {
-      class T {
-        constructor(clear) {
-          return clear.clear;
-        }
-      }
-    }
-    if (cResult[12] === tmp17) {
-      class T {
-        constructor(clear) {
-          return clear.clear;
-        }
-      }
-      if (cResult[15] === str) {
-        class T {
-          constructor(clear) {
-            return clear.clear;
-          }
-        }
-        if (cResult[18] !== tmp6Result5) {
-          class T {
-            constructor(clear) {
-              return clear.clear;
-            }
-          }
-          cResult[18] = tmp6Result5;
-          cResult[19] = tmp33;
-        } else {
-          class T {
-            constructor(clear) {
-              return clear.clear;
-            }
-          }
-        }
-        if (cResult[20] === tmp4.secondaryButton) {
-          class T {
-            constructor(clear) {
-              return clear.clear;
-            }
-          }
-          if (cResult[23] === tmp6Result6) {
-            class T {
-              constructor(clear) {
-                return clear.clear;
-              }
-            }
-          }
-          let tmp39 = null != tmp7;
-          if (tmp39) {
-            class T {
-              constructor(clear) {
-                return clear.clear;
-              }
-            }
-            const obj4 = { pillStyle: tmp4.secondaryButton, text: "Clear override", onPress: tmp6Result6 };
-            tmp39 = syncedClientThemes(tmp(5282).BaseTextButton, obj4);
-          }
-          cResult[23] = tmp6Result6;
-          cResult[24] = tmp7;
-          cResult[25] = tmp4.secondaryButton;
-          cResult[26] = tmp39;
-        }
-        const obj5 = { pillStyle: tmp4.secondaryButton, text: "Load from device", onPress: tmp32 };
-        cResult[20] = tmp4.secondaryButton;
-        cResult[21] = tmp32;
-        cResult[22] = syncedClientThemes(BaseTextButton.BaseTextButton, obj5);
-        const tmp36 = syncedClientThemes(BaseTextButton.BaseTextButton, obj5);
-      }
-      const obj6 = { variant: "text-xs/normal", style: tmp28, children: str };
-      cResult[15] = str;
-      cResult[16] = tmp28;
-      cResult[17] = syncedClientThemes(Text_Text.Text, obj6);
-      const tmp31 = syncedClientThemes(Text_Text.Text, obj6);
-    }
-    const items = [tmp4.statusText, tmp17];
-    cResult[12] = tmp17;
-    cResult[13] = tmp4.statusText;
-    cResult[14] = items;
-  }
-  const obj7 = { style: tmp4.sectionHeader, children: tmp23 };
-  cResult[7] = tmp4.sectionHeader;
-  cResult[8] = tmp23;
-  cResult[9] = syncedClientThemes(metroRequire, obj7);
-  syncedClientThemes(metroRequire, obj7);
-}) : (function FramePreviewOverrideSection() {
+}
+function FramePreviewOverrideSection() {
   let items;
   let items1;
   let obj3;
@@ -531,14 +119,14 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
     str3 = str4;
   }
   const obj = { style: tmp.section, children: items };
-  const obj2 = { style: tmp.sectionHeader, children: syncedClientThemes(Text_Text.Text, obj3) };
+  const obj2 = { style: tmp.sectionHeader, children: authStore3(Text_Text.Text, obj3) };
   obj3 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Frame Preview Override" };
-  items = [syncedClientThemes(metroRequire, obj2), , , , ];
+  items = [authStore3(metroRequire, obj2), , , , ];
   const obj4 = { variant: "text-sm/normal", style: tmp.description, children: "Overrides every profile-frame preview with a frame pushed to this device. Tap Load after Cap (or pushFrameOverride.mjs) pushes one." };
-  items[1] = syncedClientThemes(Text_Text.Text, obj4);
+  items[1] = authStore3(Text_Text.Text, obj4);
   const obj5 = { variant: "text-xs/normal", style: items1, children: str3 };
   items1 = [tmp.statusText, statusError];
-  items[2] = syncedClientThemes(Text_Text.Text, obj5);
+  items[2] = authStore3(Text_Text.Text, obj5);
   const obj6 = {
     pillStyle: tmp.secondaryButton,
     text: "Load from device",
@@ -546,588 +134,71 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function FrameP
       closure_0();
     }
   };
-  items[3] = syncedClientThemes(BaseTextButton.BaseTextButton, obj6);
+  items[3] = authStore3(BaseTextButton.BaseTextButton, obj6);
   let tmp12Result = null != tmp2;
   const tmp10 = closure_15;
   const tmp11 = metroRequire;
-  const tmp12 = syncedClientThemes;
+  const tmp12 = authStore3;
   if (tmp12Result) {
     const obj7 = { pillStyle: tmp.secondaryButton, text: "Clear override", onPress: tmp4 };
     tmp12Result = tmp12(BaseTextButton.BaseTextButton, obj7);
   }
   items[4] = tmp12Result;
   return tmp10(tmp11, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
-  let categories;
-  let closure_0;
-  let closure_3;
-  let isFetching;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  let items7;
-  let items8;
-  let obj14;
-  let obj18;
-  let product;
-  let purchases;
-  let str;
-  let tmp10;
-  let tmp13;
-  let tmp14;
-  let tmp19;
-  let tmp28;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const tmp = _require;
-  let tmp2 = product;
-  let obj = require("react");
-  const cResult = obj.c(89);
-  const tmp4 = closure_16();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesCategoryStore];
-    const fn = function c() {
-      return CollectiblesCategoryStore.categories;
+}
+({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
+let closure_11 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
+const authStore2 = Constants.COLLECTIBLES_APPLICATION_ID;
+const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, scrollContainer: obj3, contentContainer: obj4, section: obj5, sectionHeader: obj6, sectionTitle: obj7, inputContainer: obj8, inputWrapper: obj9, inputLabel: obj10, statusText: obj11, statusSuccess: obj12, statusError: obj13, statusLoading: obj14, previewContainer: obj15, previewButton: obj16, secondaryButton: obj17, description: obj18, placeholder: obj19, placeholderText: obj20 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
+obj4 = { gap: nativeDefault.space.PX_12 };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+obj6 = { flexDirection: "row", alignItems: "center", marginBottom: nativeDefault.space.PX_16 };
+obj7 = { flex: 1, color: nativeDefault.colors.TEXT_DEFAULT };
+obj8 = { marginBottom: nativeDefault.space.PX_16 };
+obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, padding: nativeDefault.space.PX_4 };
+obj10 = { marginBottom: nativeDefault.space.PX_8, color: nativeDefault.colors.TEXT_DEFAULT, fontWeight: "600" };
+obj11 = { marginTop: nativeDefault.space.PX_8, fontSize: 12, fontWeight: "500" };
+obj12 = { color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
+obj13 = { color: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
+obj14 = { color: nativeDefault.colors.TEXT_MUTED };
+obj15 = { marginBottom: nativeDefault.space.PX_16 };
+obj16 = { backgroundColor: "#23a55a", borderRadius: nativeDefault.radii.md, paddingVertical: nativeDefault.space.PX_12, alignItems: "center" };
+obj17 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.md, paddingVertical: nativeDefault.space.PX_12, alignItems: "center", marginTop: nativeDefault.space.PX_8 };
+obj18 = { color: nativeDefault.colors.TEXT_MUTED, marginBottom: nativeDefault.space.PX_12 };
+obj19 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, borderRadius: nativeDefault.radii.md, borderWidth: 2, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_MUTED, padding: nativeDefault.space.PX_32, alignItems: "center", justifyContent: "center", minHeight: 120 };
+obj20 = { color: nativeDefault.colors.TEXT_MUTED, textAlign: "center", fontSize: 14 };
+let closure_16 = createStyles(obj);
+function UnpurchasedCollectiblesShopCardV2(arg0) {
+  let require;
+  let tmp2;
+  [tmp2, require] = react.useState(0);
+  _slicedToArray(react.useState(0), 2);
+  const layoutEffect = react.useLayoutEffect(() => {
+    const getPurchase = CollectiblesPurchaseStore.getPurchase;
+    CollectiblesPurchaseStore.getPurchase = () => {
+
     };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(tmp2[19]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [CollectiblesPurchaseStore];
-    class T {
-      constructor() {
-        return purchases.purchases;
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = T;
-    tmp10 = T;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult3 = tmp(tmp2[19]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp10);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [CollectiblesCategoryStore];
-    class E {
-      constructor() {
-        return CollectiblesCategoryStore.lastSuccessfulFetch;
-      }
-    }
-    cResult[4] = items2;
-    cResult[5] = E;
-    tmp14 = E;
-    tmp13 = items2;
-  } else {
-    tmp13 = cResult[4];
-    tmp14 = cResult[5];
-  }
-  let tmp17 = stateFromStores.size > 0;
-  const tmpResult4 = tmp(tmp2[19]);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp14);
-  if (tmp17) {
-    tmp17 = stateFromStores1.size > 0;
-  }
-  if (tmp17) {
-    tmp17 = null != stateFromStores2;
-  }
-  if (cResult[6] !== tmp17) {
-    let obj2 = { logPerf: false, stalePurchasesOK: true, noOp: tmp17 };
-    class E {
-      constructor() {
-        return CollectiblesCategoryStore.lastSuccessfulFetch;
-      }
-    }
-    cResult[7] = obj2;
-    tmp19 = obj2;
-  } else {
-    tmp19 = cResult[7];
-  }
-  ({ isFetching, categories } = str(tmp2[20])(tmp19));
-  let tmp22 = tmp17;
-  str(tmp2[20])(tmp19);
-  const tmp20 = str;
-  if (!tmp22) {
-    let tmp23 = !isFetching;
-    if (tmp23) {
-      if (tmp17) {
-        categories = stateFromStores;
-      }
-      tmp23 = categories.size > 0;
-    }
-    tmp22 = tmp23;
-  }
-  _require = tmp22;
-  str = _slicedToArray(react.useState(""), 2)[0];
-  _slicedToArray(react.useState(""), 2);
-  [product, _slicedToArray] = react.useState(null);
-  const obj6 = react;
-  const tmp27 = _slicedToArray(react.useState(null), 2);
-  [tmp28, react] = tmp27;
-  if (cResult[8] === tmp22) {
-    let tmp29;
-    let tmp30;
-    let tmp32;
-    if (cResult[9] === str) {
-      tmp29 = cResult[10];
-      tmp30 = cResult[11];
-    }
-    const effect = obj6.useEffect(tmp29, tmp30);
-    if (cResult[12] !== product) {
-      function handleOpenCollectedModal() {
-        if (null != first) {
-          const obj2 = { product: tmp, useCategoryImage: true };
-          const obj = ProductPurchaseSuccessActionCreatorsDefault;
-          obj.open(obj2);
-        }
-      }
-      cResult[12] = product;
-      class E {
-        constructor() {
-          return CollectiblesCategoryStore.lastSuccessfulFetch;
-        }
-      }
-      cResult[13] = handleOpenCollectedModal;
-      tmp32 = handleOpenCollectedModal;
-    } else {
-      tmp32 = cResult[13];
-    }
-    class E {
-      constructor() {
-        return CollectiblesCategoryStore.lastSuccessfulFetch;
-      }
-    }
-    if (cResult[16] === tmp4.sectionHeader) {
-      let tmp34;
-      if (cResult[17] === tmp33) {
-        tmp34 = cResult[18];
-      }
-      const _Symbol = Symbol;
-      class E {
-        constructor() {
-          return CollectiblesCategoryStore.lastSuccessfulFetch;
-        }
-      }
-      if (cResult[20] === tmp4.section) {
-        let tmp40;
-        let tmp44;
-        if (cResult[21] === tmp34) {
-          tmp40 = cResult[22];
-        }
-        if (cResult[23] !== tmp4.sectionTitle) {
-          class E {
-            constructor() {
-              return CollectiblesCategoryStore.lastSuccessfulFetch;
-            }
-          }
-          cResult[23] = tmp4.sectionTitle;
-          cResult[24] = tmp46;
-          tmp44 = tmp46;
-        } else {
-          tmp44 = cResult[24];
-        }
-        if (cResult[25] === tmp4.sectionHeader) {
-          let tmp47;
-          let tmp50;
-          let tmp54;
-          let tmp55;
-          if (cResult[26] === tmp44) {
-            tmp47 = cResult[27];
-          }
-          if (cResult[28] !== tmp4.inputLabel) {
-            class E {
-              constructor() {
-                return CollectiblesCategoryStore.lastSuccessfulFetch;
-              }
-            }
-            cResult[28] = tmp4.inputLabel;
-            cResult[29] = tmp52;
-            tmp50 = tmp52;
-          } else {
-            tmp50 = cResult[29];
-          }
-          const _Symbol2 = Symbol;
-          class E {
-            constructor() {
-              return CollectiblesCategoryStore.lastSuccessfulFetch;
-            }
-          }
-          if (tmp53 === Symbol.for("react.memo_cache_sentinel")) {
-            const obj5 = { fontSize: 14, padding: tmp20(tmp2[12]).space.PX_12 };
-            class E {
-              constructor() {
-                return CollectiblesCategoryStore.lastSuccessfulFetch;
-              }
-            }
-            tmp54 = obj5;
-          } else {
-            tmp54 = cResult[30];
-          }
-          if (cResult[31] !== str) {
-            const obj7 = { value: str, onChangeText: null, placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done", style: tmp54 };
-            class E {
-              constructor() {
-                return CollectiblesCategoryStore.lastSuccessfulFetch;
-              }
-            }
-            const tmp57 = closure_14(tmp(tmp2[23]).TextInput, obj7);
-            cResult[31] = str;
-            cResult[32] = tmp57;
-            tmp55 = tmp57;
-          } else {
-            tmp55 = cResult[32];
-          }
-          if (cResult[33] === tmp4.inputWrapper) {
-            let tmp58;
-            if (cResult[34] === tmp55) {
-              tmp58 = cResult[35];
-            }
-            if (cResult[36] === tmp22) {
-              if (cResult[37] === str) {
-                if (cResult[38] === tmp4.statusLoading) {
-                  let tmp62;
-                  if (cResult[39] === tmp4.statusText) {
-                    tmp62 = cResult[40];
-                  }
-                  if (cResult[41] === tmp22) {
-                    if (cResult[42] === str) {
-                      if (cResult[43] === product) {
-                        if (cResult[44] === tmp4.statusError) {
-                          let tmp64;
-                          if (cResult[45] === tmp4.statusText) {
-                            tmp64 = cResult[46];
-                          }
-                          if (cResult[47] === product) {
-                            if (cResult[48] === tmp4.statusSuccess) {
-                              let tmp66;
-                              if (cResult[49] === tmp4.statusText) {
-                                tmp66 = cResult[50];
-                              }
-                              if (cResult[51] === tmp4.inputContainer) {
-                                if (cResult[52] === tmp50) {
-                                  if (cResult[53] === tmp58) {
-                                    if (cResult[54] === tmp62) {
-                                      if (cResult[55] === tmp64) {
-                                        let tmp68;
-                                        if (cResult[56] === tmp66) {
-                                          tmp68 = cResult[57];
-                                        }
-                                        if (cResult[58] === tmp4.section) {
-                                          if (cResult[59] === tmp47) {
-                                            let tmp71;
-                                            let tmp74;
-                                            if (cResult[60] === tmp68) {
-                                              tmp71 = cResult[61];
-                                            }
-                                            if (cResult[62] !== tmp4.sectionTitle) {
-                                              class E {
-                                                constructor() {
-                                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                }
-                                              }
-                                              cResult[62] = tmp4.sectionTitle;
-                                              cResult[63] = tmp76;
-                                              tmp74 = tmp76;
-                                            } else {
-                                              tmp74 = cResult[63];
-                                            }
-                                            if (cResult[64] === tmp4.sectionHeader) {
-                                              let tmp77;
-                                              let tmp80;
-                                              if (cResult[65] === tmp74) {
-                                                tmp77 = cResult[66];
-                                              }
-                                              if (cResult[67] === tmp32) {
-                                                if (cResult[68] === tmp28) {
-                                                  if (cResult[69] === product) {
-                                                    if (cResult[70] === tmp4.contentContainer) {
-                                                      if (cResult[71] === tmp4.placeholder) {
-                                                        if (cResult[72] === tmp4.placeholderText) {
-                                                          if (cResult[73] === tmp4.previewButton) {
-                                                            if (cResult[74] === tmp4.previewContainer) {
-                                                              tmp80 = cResult[75];
-                                                            }
-                                                            if (cResult[76] === tmp4.section) {
-                                                              if (cResult[77] === tmp77) {
-                                                                let tmp89;
-                                                                if (cResult[78] === tmp80) {
-                                                                  tmp89 = cResult[79];
-                                                                }
-                                                                const _Symbol3 = Symbol;
-                                                                class E {
-                                                                  constructor() {
-                                                                    return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                                  }
-                                                                }
-                                                                if (cResult[81] === tmp4.scrollContainer) {
-                                                                  if (cResult[82] === tmp40) {
-                                                                    if (cResult[83] === tmp71) {
-                                                                      let tmp94;
-                                                                      if (cResult[84] === tmp89) {
-                                                                        tmp94 = cResult[85];
-                                                                      }
-                                                                      if (cResult[86] === tmp4.container) {
-                                                                        let tmp98;
-                                                                        if (cResult[87] === tmp94) {
-                                                                          tmp98 = cResult[88];
-                                                                        }
-                                                                        return tmp98;
-                                                                      }
-                                                                      class E {
-                                                                        constructor() {
-                                                                          return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                                        }
-                                                                      }
-                                                                      const obj9 = { style: tmp4.container, children: tmp94 };
-                                                                      const tmp100 = closure_14(closure_6, obj9);
-                                                                      cResult[86] = tmp4.container;
-                                                                      cResult[87] = tmp94;
-                                                                      cResult[88] = tmp100;
-                                                                      tmp98 = tmp100;
-                                                                    }
-                                                                  }
-                                                                }
-                                                                const obj10 = { contentContainerStyle: tmp4.scrollContainer, showsVerticalScrollIndicator: false, children: items3 };
-                                                                items3 = [tmp40, tmp71, tmp89, tmp93];
-                                                                const tmp97 = closure_15(closure_5, obj10);
-                                                                cResult[81] = tmp4.scrollContainer;
-                                                                cResult[82] = tmp40;
-                                                                cResult[83] = tmp71;
-                                                                cResult[84] = tmp89;
-                                                                cResult[85] = tmp97;
-                                                                tmp94 = tmp97;
-                                                              }
-                                                            }
-                                                            class E {
-                                                              constructor() {
-                                                                return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                              }
-                                                            }
-                                                            const obj11 = { style: tmp4.section, children: items4 };
-                                                            items4 = [tmp77, tmp80];
-                                                            const tmp91 = closure_15(closure_6, obj11);
-                                                            cResult[76] = tmp4.section;
-                                                            cResult[77] = tmp77;
-                                                            cResult[78] = tmp80;
-                                                            cResult[79] = tmp91;
-                                                            tmp89 = tmp91;
-                                                          }
-                                                        }
-                                                      }
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                              if (null != product) {
-                                                let tmp83;
-                                                if (null != tmp28) {
-                                                  const obj12 = { style: null, children: items5 };
-                                                  class E {
-                                                    constructor() {
-                                                      return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                    }
-                                                  }
-                                                  const obj13 = { style: tmp4.previewContainer, children: closure_14(closure_17, obj14) };
-                                                  obj14 = { product };
-                                                  items5 = [closure_14(closure_6, obj13), , ];
-                                                  const obj15 = { pillStyle: tmp4.previewButton, text: "Show Collectibles Modal", onPress: tmp32 };
-                                                  items5[1] = closure_14(tmp(tmp2[18]).BaseTextButton, obj15);
-                                                  const obj16 = { product };
-                                                  items5[2] = closure_14(closure_18, obj16);
-                                                  tmp83 = closure_15(closure_6, obj12);
-                                                }
-                                                cResult[67] = tmp32;
-                                                class E {
-                                                  constructor() {
-                                                    return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                  }
-                                                }
-                                                cResult[68] = tmp28;
-                                                cResult[69] = product;
-                                                cResult[70] = tmp4.contentContainer;
-                                                cResult[71] = tmp4.placeholder;
-                                                cResult[72] = tmp4.placeholderText;
-                                                cResult[73] = tmp4.previewButton;
-                                                cResult[74] = tmp4.previewContainer;
-                                                cResult[75] = tmp83;
-                                                tmp80 = tmp83;
-                                              }
-                                              class E {
-                                                constructor() {
-                                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                                }
-                                              }
-                                              const obj17 = { style: tmp4.placeholder, children: closure_15(tmp(tmp2[16]).Text, obj18) };
-                                              obj18 = { variant: "text-sm/normal", style: tmp4.placeholderText, children: ["Enter a valid product SKU ID above", "\n", "to see the product preview"] };
-                                              tmp83 = closure_14(closure_6, obj17);
-                                            }
-                                            class E {
-                                              constructor() {
-                                                return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                              }
-                                            }
-                                            const obj19 = { style: tmp4.sectionHeader, children: tmp74 };
-                                            const tmp79 = closure_14(closure_6, obj19);
-                                            cResult[64] = tmp4.sectionHeader;
-                                            cResult[65] = tmp74;
-                                            cResult[66] = tmp79;
-                                            tmp77 = tmp79;
-                                          }
-                                        }
-                                        class E {
-                                          constructor() {
-                                            return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                          }
-                                        }
-                                        const obj20 = { style: tmp4.section, children: items6 };
-                                        items6 = [tmp47, tmp68];
-                                        const tmp73 = closure_15(closure_6, obj20);
-                                        cResult[58] = tmp4.section;
-                                        cResult[59] = tmp47;
-                                        cResult[60] = tmp68;
-                                        cResult[61] = tmp73;
-                                        tmp71 = tmp73;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                              class E {
-                                constructor() {
-                                  return CollectiblesCategoryStore.lastSuccessfulFetch;
-                                }
-                              }
-                              const obj21 = { style: tmp4.inputContainer, children: items7 };
-                              items7 = [tmp50, tmp58, tmp62, tmp64, tmp66];
-                              const tmp70 = closure_15(closure_6, obj21);
-                              cResult[51] = tmp4.inputContainer;
-                              cResult[52] = tmp50;
-                              cResult[53] = tmp58;
-                              cResult[54] = tmp62;
-                              cResult[55] = tmp64;
-                              cResult[56] = tmp66;
-                              cResult[57] = tmp70;
-                              tmp68 = tmp70;
-                            }
-                          }
-                          class E {
-                            constructor() {
-                              return CollectiblesCategoryStore.lastSuccessfulFetch;
-                            }
-                          }
-                          cResult[47] = product;
-                          cResult[48] = tmp4.statusSuccess;
-                          cResult[49] = tmp4.statusText;
-                          cResult[50] = null != product;
-                          tmp66 = tmp67;
-                        }
-                      }
-                    }
-                  }
-                  const tmp65 = tmp22 && "" !== str.trim() && null == product;
-                  class E {
-                    constructor() {
-                      return CollectiblesCategoryStore.lastSuccessfulFetch;
-                    }
-                  }
-                  cResult[41] = tmp22;
-                  cResult[42] = str;
-                  cResult[43] = product;
-                  cResult[44] = tmp4.statusError;
-                  cResult[45] = tmp4.statusText;
-                  cResult[46] = tmp65;
-                  tmp64 = tmp65;
-                }
-              }
-            }
-            const tmp63 = !tmp22 && "" !== str.trim();
-            class E {
-              constructor() {
-                return CollectiblesCategoryStore.lastSuccessfulFetch;
-              }
-            }
-            cResult[36] = tmp22;
-            cResult[37] = str;
-            cResult[38] = tmp4.statusLoading;
-            cResult[39] = tmp4.statusText;
-            cResult[40] = tmp63;
-            tmp62 = tmp63;
-          }
-          const obj22 = { style: tmp4.inputWrapper, children: tmp55 };
-          const tmp61 = closure_14(closure_6, obj22);
-          cResult[33] = tmp4.inputWrapper;
-          cResult[34] = tmp55;
-          cResult[35] = tmp61;
-          tmp58 = tmp61;
-        }
-        class E {
-          constructor() {
-            return CollectiblesCategoryStore.lastSuccessfulFetch;
-          }
-        }
-        const obj23 = { style: tmp4.sectionHeader, children: tmp44 };
-        const tmp49 = closure_14(closure_6, obj23);
-        cResult[25] = tmp4.sectionHeader;
-        cResult[26] = tmp44;
-        cResult[27] = tmp49;
-        tmp47 = tmp49;
-      }
-      const obj24 = { style: tmp4.section, children: items8 };
-      items8 = [tmp34, tmp39];
-      const tmp43 = closure_15(closure_6, obj24);
-      cResult[20] = tmp4.section;
-      cResult[21] = tmp34;
-      cResult[22] = tmp43;
-      tmp40 = tmp43;
-    }
-    const obj25 = { style: tmp4.sectionHeader, children: tmp33 };
-    const tmp37 = closure_14(closure_6, obj25);
-    cResult[16] = tmp4.sectionHeader;
-    cResult[17] = tmp33;
-    cResult[18] = tmp37;
-    tmp34 = tmp37;
-  }
-  class L {
-    constructor() {
-      if ("" !== str.trim()) {
-        const tmp2 = closure_0;
-        if (tmp2) {
-          product = CollectiblesCategoryStore.getProduct(tmp);
-          const categoryForProduct = CollectiblesCategoryStore.getCategoryForProduct(tmp);
-          if (null != product) {
-            if (null != categoryForProduct) {
-              closure_3(product);
-              react(categoryForProduct);
-            }
-          }
-          closure_3(null);
-          react(null);
-        }
-      }
-      closure_3(null);
-      react(null);
-    }
-  }
-  const items9 = [str, tmp22];
-  cResult[8] = tmp22;
-  cResult[9] = str;
-  cResult[10] = L;
-  cResult[11] = items9;
-  tmp30 = items9;
-  tmp29 = L;
-}) : (() => {
+    CollectiblesPurchaseStore.emitChange();
+    require("logAppStart");
+    return () => {
+      closure_2_10.getPurchase = getPurchase;
+      closure_2_10.emitChange();
+    };
+  }, []);
+  const obj = {};
+  const tmp4 = CollectiblesShopCardV2Default;
+  const merged = Object.assign(arg0);
+  return closure_14(tmp4, obj, tmp2);
+}
+const result = size.fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");
+
+export default function _default() {
   let TextInput;
   let categories;
   let closure_0;
@@ -1172,9 +243,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   if (tmp7) {
     tmp7 = null != stateFromStores2;
   }
-  ({ isFetching, categories } = str(product[20])({ logPerf: false, stalePurchasesOK: true, noOp: tmp7 }));
+  ({ isFetching, categories } = str(product[18])({ logPerf: false, stalePurchasesOK: true, noOp: tmp7 }));
   let tmp20Result2 = tmp7;
-  const tmp10 = str(product[20])({ logPerf: false, stalePurchasesOK: true, noOp: tmp7 });
+  const tmp10 = str(product[18])({ logPerf: false, stalePurchasesOK: true, noOp: tmp7 });
   const tmp9 = str;
   if (!tmp20Result2) {
     let tmp12 = !isFetching;
@@ -1213,22 +284,22 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
   const obj4 = { style: tmp.container, children: null };
   const obj5 = { contentContainerStyle: tmp.scrollContainer, showsVerticalScrollIndicator: false, children: null };
   const obj6 = { style: tmp.section, children: items4 };
-  const obj7 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[16]).Text, obj8) };
+  const obj7 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj8) };
   obj8 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Shop Settings" };
-  items4 = [closure_14(closure_6, obj7), closure_14(tmp2(tmp3[22]).ShopSkipCategoriesFilter, {})];
+  items4 = [closure_14(closure_6, obj7), closure_14(tmp2(tmp3[19]).ShopSkipCategoriesFilter, {})];
   const items5 = [closure_15(closure_6, obj6), , , ];
   const obj9 = { style: tmp.section, children: items6 };
-  const obj10 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[16]).Text, obj11) };
+  const obj10 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj11) };
   obj11 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Product Configuration" };
   items6 = [closure_14(closure_6, obj10), ];
   const obj12 = { style: tmp.inputContainer, children: items7 };
   items7 = [, , , , ];
   const obj13 = { variant: "text-md/semibold", style: tmp.inputLabel, children: "Primary Product SKU ID" };
-  items7[0] = closure_14(tmp2(product[16]).Text, obj13);
+  items7[0] = closure_14(tmp2(product[14]).Text, obj13);
   const obj14 = { style: tmp.inputWrapper, children: closure_14(TextInput, obj15) };
   obj15 = { value: str, onChangeText: tmp14, placeholder: "Enter product SKU ID (e.g., 1366494385482502184)", returnKeyType: "done", style: obj16 };
   obj16 = { fontSize: 14, padding: tmp9(product[12]).space.PX_12 };
-  TextInput = tmp2(tmp3[23]).TextInput;
+  TextInput = tmp2(tmp3[20]).TextInput;
   items7[1] = closure_14(closure_6, obj14);
   let tmp20Result = !tmp20Result2 && "" !== str.trim();
   const tmp23 = closure_5;
@@ -1236,7 +307,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj17 = { variant: "text-xs/normal", style: items8, children: "Loading products..." };
     items8 = [, ];
     ({ statusText: arr9[0], statusLoading: arr9[1] } = tmp);
-    tmp20Result = tmp20(tmp2(tmp3[16]).Text, obj17);
+    tmp20Result = tmp20(tmp2(tmp3[14]).Text, obj17);
   }
   items7[2] = tmp20Result;
   if (tmp20Result2) {
@@ -1249,7 +320,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     const obj18 = { variant: "text-xs/normal", style: items9, children: "Product not found" };
     items9 = [, ];
     ({ statusText: arr10[0], statusError: arr10[1] } = tmp);
-    tmp20Result2 = tmp20(tmp2(tmp3[16]).Text, obj18);
+    tmp20Result2 = tmp20(tmp2(tmp3[14]).Text, obj18);
   }
   items7[3] = tmp20Result2;
   let tmp22Result = null != product;
@@ -1258,20 +329,20 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
     items10 = [, ];
     ({ statusText: arr11[0], statusSuccess: arr11[1] } = tmp);
     items11 = ["Found: ", product.name];
-    tmp22Result = tmp22(tmp2(tmp3[16]).Text, obj19);
+    tmp22Result = tmp22(tmp2(tmp3[14]).Text, obj19);
   }
   items7[4] = tmp22Result;
   items6[1] = closure_15(closure_6, obj12);
   items5[1] = closure_15(closure_6, obj9);
   const obj20 = { style: tmp.section, children: null };
-  const obj21 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[16]).Text, obj22) };
+  const obj21 = { style: tmp.sectionHeader, children: closure_14(tmp2(product[14]).Text, obj22) };
   obj22 = { variant: "heading-md/semibold", style: tmp.sectionTitle, children: "Product Preview" };
   const items12 = [closure_14(closure_6, obj21), ];
   if (null != product) {
     let tmp22Result2;
     if (null != first1) {
       const obj23 = { style: tmp.contentContainer, children: items13 };
-      const obj24 = { style: tmp.previewContainer, children: closure_14(closure_17, obj25) };
+      const obj24 = { style: tmp.previewContainer, children: closure_14(UnpurchasedCollectiblesShopCardV2, obj25) };
       obj25 = { product };
       items13 = [closure_14(closure_6, obj24), , ];
       const obj26 = {
@@ -1285,24 +356,21 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (() => {
               }
             }
       };
-      items13[1] = closure_14(tmp2(product[18]).BaseTextButton, obj26);
+      items13[1] = closure_14(tmp2(product[15]).BaseTextButton, obj26);
       const obj27 = { product };
-      items13[2] = closure_14(closure_18, obj27);
+      items13[2] = closure_14(GiftingFlowSection, obj27);
       tmp22Result2 = tmp22(tmp21, obj23);
     }
     items12[1] = tmp22Result2;
     obj20.children = items12;
     items5[2] = closure_15(closure_6, obj20);
-    items5[3] = closure_14(closure_19, {});
+    items5[3] = closure_14(FramePreviewOverrideSection, {});
     obj5.children = items5;
     obj4.children = closure_15(tmp23, obj5);
     return closure_14(closure_6, obj4);
   }
-  const obj28 = { style: tmp.placeholder, children: closure_15(tmp2(product[16]).Text, obj29) };
+  const obj28 = { style: tmp.placeholder, children: closure_15(tmp2(product[14]).Text, obj29) };
   obj29 = { variant: "text-sm/normal", style: tmp.placeholderText, children: ["Enter a valid product SKU ID above", "\n", "to see the product preview"] };
   tmp22Result2 = tmp20(tmp21, obj28);
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/tooling/CollectiblesTool.tsx");
-
-export default tmp6;
-export const GiftingFlowSection = tmp5;
+};
+export { GiftingFlowSection };

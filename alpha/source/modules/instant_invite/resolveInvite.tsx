@@ -1,34 +1,30 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14702
+// Function ID: 14703
 // Name: resolveInvite
-// Dependencies: [502, 4879, 7867, 1084, 7866, 5739, 1264, 6734, 1272, 4869, 2]
+// Dependencies: [502, 4880, 7872, 1072, 7873, 7871, 5745, 1253, 6741, 1261, 4870, 2]
 // Exports: default
 
-// Module 14669 (resolveInvite)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import TypeUtils from "TypeUtils" /* 4869 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+// Module 14702 (resolveInvite)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import TypeUtils from "TypeUtils" /* 4870 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7871 */;
+import Constants2 from "Constants" /* 7872 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7873 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import Constants_mod from "Constants" /* 7867 */;
-import Constants_mod2 from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, code, dependencyMap, importDefault;
 
-let c10;
 let c9;
-let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp3;
-const InviteTypeUtils = tmp3(7866);
-let Constants = Constants_mod2;
-({ InviteTargetTypes: hasOwnProperty, InviteTypes: metroRequire } = Constants);
-Constants = Constants_mod2;
-({ Endpoints: metroImportDefault, AnalyticEvents: metroImportAll, LoggingInviteTypes: c9, AbortCodes: c10 } = Constants);
+const InviteTypes = Constants2.InviteTypes;
+({ Endpoints: metroRequire, AnalyticEvents: metroImportDefault, LoggingInviteTypes: metroImportAll, AbortCodes: c9 } = Constants);
 const map = new Map();
 let result = size.fileFinishedImporting("modules/instant_invite/resolveInvite.tsx");
 
@@ -51,7 +47,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
   let obj2 = { invite_code: baseCode, invite_instance_id: inviteInstanceId };
   inviteInstanceId = undefined;
   let track = tmp5.track;
-  const INVITE_OPENED = constants3.INVITE_OPENED;
+  const INVITE_OPENED = constants.INVITE_OPENED;
   if (inviteInstanceId != null) {
     inviteInstanceId = inviteInstanceId.inviteInstanceId;
   }
@@ -72,12 +68,11 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
     if (inviteInstanceId != null) {
       withGuildExperiments = inviteInstanceId.withGuildExperiments;
     }
-    const request = { url: closure_7.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
-    const tmp12 = closure_7;
-    const get = tmp4(6734).get;
+    const request = { url: closure_6.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
+    const get = tmp4(6741).get;
     TrackedHTTPUtilsDefault;
     obj5 = {
-      event: tmp(1272).NetworkActionNames.INVITE_RESOLVE,
+      event: tmp(1261).NetworkActionNames.INVITE_RESOLVE,
       properties(ok) {
           let STREAM;
           let getGuild;
@@ -99,7 +94,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
           if (body != null) {
             code = body.code;
           }
-          const USER_BANNED = constants2.USER_BANNED;
+          const USER_BANNED = constants.USER_BANNED;
           const obj = { resolved: ok.ok, guild_id: id, channel_id: id1, channel_type: type, inviter_id: id2, code: baseCode, input_value: inputValue, location: _location, authenticated: AuthenticationStore.isAuthenticated(), size_total: prop, size_online: prop1, destination_user_id: id3, invite_type: STREAM, user_banned: code === USER_BANNED, user_is_member: null != getGuild(id4) };
           id = undefined;
           const exact = TypeUtils.exact;
@@ -152,19 +147,19 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
           }
           STREAM = null;
           if (null != body1) {
-            if (body1.target_type === hasOwnProperty.STREAM) {
-              STREAM = constants.STREAM;
-            } else if (body1.target_type === tmp15.EMBEDDED_APPLICATION) {
-              STREAM = constants.APPLICATION;
+            if (body1.target_type === InviteTargetTypes.InviteTargetTypes.STREAM) {
+              STREAM = metroImportAll.STREAM;
+            } else if (body1.target_type === InviteTargetTypes.InviteTargetTypes.EMBEDDED_APPLICATION) {
+              STREAM = metroImportAll.APPLICATION;
             } else {
               const tmp3Result = InviteTypeUtils;
               const inviteType = tmp3Result.getInviteType(body1);
-              if (metroRequire.FRIEND === inviteType) {
-                STREAM = constants.FRIEND_INVITE;
-              } else if (metroRequire.GROUP_DM === inviteType) {
-                STREAM = constants.GDM_INVITE;
-              } else if (metroRequire.GUILD === inviteType) {
-                STREAM = constants.SERVER_INVITE;
+              if (InviteTypes.FRIEND === inviteType) {
+                STREAM = metroImportAll.FRIEND_INVITE;
+              } else if (InviteTypes.GROUP_DM === inviteType) {
+                STREAM = metroImportAll.GDM_INVITE;
+              } else if (InviteTypes.GUILD === inviteType) {
+                STREAM = metroImportAll.SERVER_INVITE;
               } else {
                 const _String = String;
                 STREAM = String(inviteType);
@@ -196,7 +191,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
       if (null != _location) {
         let id = null;
         const track = AnalyticsUtilsDefault.track;
-        const INVITE_RESOLVED = metroImportAll.INVITE_RESOLVED;
+        const INVITE_RESOLVED = metroImportDefault.INVITE_RESOLVED;
         AnalyticsUtilsDefault;
         if (null != body.guild) {
           id = body.guild.id;
@@ -225,19 +220,19 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
         }
         STREAM = null;
         if (null != body) {
-          if (body.target_type === hasOwnProperty.STREAM) {
-            STREAM = constants.STREAM;
-          } else if (body.target_type === tmp12.EMBEDDED_APPLICATION) {
-            STREAM = constants.APPLICATION;
+          if (body.target_type === InviteTargetTypes.InviteTargetTypes.STREAM) {
+            STREAM = metroImportAll.STREAM;
+          } else if (body.target_type === InviteTargetTypes.InviteTargetTypes.EMBEDDED_APPLICATION) {
+            STREAM = metroImportAll.APPLICATION;
           } else {
-            const obj2 = InviteTypeUtils;
-            const inviteType = obj2.getInviteType(body);
-            if (metroRequire.FRIEND === inviteType) {
-              STREAM = constants.FRIEND_INVITE;
-            } else if (metroRequire.GROUP_DM === inviteType) {
-              STREAM = constants.GDM_INVITE;
-            } else if (metroRequire.GUILD === inviteType) {
-              STREAM = constants.SERVER_INVITE;
+            const tmp12Result = InviteTypeUtils;
+            const inviteType = tmp12Result.getInviteType(body);
+            if (InviteTypes.FRIEND === inviteType) {
+              STREAM = metroImportAll.FRIEND_INVITE;
+            } else if (InviteTypes.GROUP_DM === inviteType) {
+              STREAM = metroImportAll.GDM_INVITE;
+            } else if (InviteTypes.GUILD === inviteType) {
+              STREAM = metroImportAll.SERVER_INVITE;
             } else {
               const _String = String;
               STREAM = String(inviteType);
@@ -266,10 +261,10 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
       let inputValue;
       let message;
       if (null != _location) {
-        const obj2 = { resolved: false, code: baseCode, input_value: inputValue, location: tmp3, authenticated: AuthenticationStore.isAuthenticated(), user_banned: null != body.body && body.body.code === constants2.USER_BANNED, error_code: code, error_message: message };
+        const obj2 = { resolved: false, code: baseCode, input_value: inputValue, location: tmp3, authenticated: AuthenticationStore.isAuthenticated(), user_banned: null != body.body && body.body.code === constants.USER_BANNED, error_code: code, error_message: message };
         inputValue = undefined;
         const track = AnalyticsUtilsDefault.track;
-        const INVITE_RESOLVED = metroImportAll.INVITE_RESOLVED;
+        const INVITE_RESOLVED = metroImportDefault.INVITE_RESOLVED;
         AnalyticsUtilsDefault;
         if (inviteInstanceId != null) {
           inputValue = inviteInstanceId.inputValue;
@@ -286,7 +281,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
         }
         track(INVITE_RESOLVED, obj2, { flush: true });
       }
-      return { invite: null, code, banned: null != body.body && body.body.code === constants2.USER_BANNED };
+      return { invite: null, code, banned: null != body.body && body.body.code === constants.USER_BANNED };
     });
     const cleanupPromise = nextPromise.finally(() => {
       map.delete(code);

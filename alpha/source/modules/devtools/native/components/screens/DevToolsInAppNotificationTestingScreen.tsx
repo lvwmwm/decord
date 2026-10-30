@@ -1,35 +1,35 @@
-// Module ID: 17614
-// Function ID: 17615
+// Module ID: 17685
+// Function ID: 17686
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6824, 4861, 4948, 4857, 4879, 4908, 1389, 1084, 21, 5005, 587, 5701, 14223, 14225, 6548, 11, 558, 576, 1631, 1199, 7047, 6963, 17457, 6972, 2]
+// Dependencies: [19, 17, 6831, 4862, 4952, 4858, 4880, 4912, 1384, 1072, 21, 5009, 575, 5707, 11003, 11005, 6555, 11, 1626, 1188, 7054, 6969, 17511, 6978, 2]
+// Exports: default
 
-// Module 17614 (DevToolsInAppNotificationTestingScreen)
+// Module 17685 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import StickersTypes from "StickersTypes" /* 6548 */;
-import TableRowGroup2 from "TableRowGroup" /* 7047 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 14223 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 14225 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import StickersTypes from "StickersTypes" /* 6555 */;
+import TableRowGroup2 from "TableRowGroup" /* 7054 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11003 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11005 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6824 */;
-import MessageRecord from "MessageRecord" /* 4948 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import StickersStore from "StickersStore" /* 6831 */;
+import MessageRecord from "MessageRecord" /* 4952 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, closure_0;
 
 let InAppNotificationTypes;
 let closure_12;
@@ -505,136 +505,10 @@ const items3 = [
     }
   }
 ];
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAppNotificationTestingScreen() {
-  let first;
-  let tmp9;
-  let obj = first(576);
-  const cResult = obj.c(12);
-  const tmp4 = closure_16();
-  const tmp6 = useSafeAreaInsetsDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(build) {
-      const buildResult = build.build();
-      if (null != buildResult) {
-        const obj = InAppNotificationActionCreatorsDefault;
-        obj.enqueueNotification(buildResult);
-      }
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const sum = tmp4.content.padding + tmp6.bottom;
-  const container = tmp4.container;
-  if (cResult[1] !== sum) {
-    let obj2 = { paddingBottom: sum };
-    cResult[1] = sum;
-    cResult[2] = obj2;
-    tmp9 = obj2;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === tmp4.content) {
-    let tmp10;
-    let tmp12;
-    let tmp11;
-    let tmp17;
-    if (cResult[4] === tmp9) {
-      tmp10 = cResult[5];
-    }
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj3 = { size: nativeDefault.space.PX_16 };
-      let Spacer = tmp(1199).Spacer;
-      const tmp14 = closure_14(Spacer, obj3);
-      const mapped = closure_25.map((title) => {
-        let options;
-        let obj = { children: items };
-        const Fragment = react.Fragment;
-        const obj2 = {
-          title: title.title,
-          description: "Enqueues notification using the currently selected channel.",
-          hasIcons: true,
-          children: options.map((label) => {
-            let closure_0 = label;
-            const obj = {
-              label: label.label,
-              subLabel: label.subLabel,
-              icon: closure_1_14(first(closure_1_2[24]).BeakerIcon, {}),
-              onPress() {
-                return first(label);
-              },
-              trailing: closure_1_14(first(closure_1_2[25]).TableRowArrow, {})
-            };
-            const TableRow = first(closure_1_2[23]).TableRow;
-            return closure_1_14(TableRow, obj, label.label);
-          })
-        };
-        options = title.options;
-        const TableRowGroup = TableRowGroup2.TableRowGroup;
-        items = [syncedClientThemes(TableRowGroup, obj2), ];
-        const obj3 = { size: nativeDefault.space.PX_16 };
-        const Spacer = native.Spacer;
-        items[1] = syncedClientThemes(Spacer, obj3);
-        return closure_15(Fragment, obj, title.title);
-      });
-      cResult[6] = tmp14;
-      cResult[7] = mapped;
-      tmp12 = mapped;
-      tmp11 = tmp14;
-    } else {
-      tmp11 = cResult[6];
-      tmp12 = cResult[7];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj4 = {
-        title: "Other Notification Types",
-        hasIcons: true,
-        children: items3.map((label) => {
-              let closure_0 = label;
-              const obj = {
-                label: label.label,
-                subLabel: label.subLabel,
-                icon: closure_1_14(first(dependencyMap[24]).BeakerIcon, {}),
-                onPress() {
-                  return first(label);
-                },
-                trailing: closure_1_14(first(dependencyMap[25]).TableRowArrow, {})
-              };
-              const TableRow = first(dependencyMap[23]).TableRow;
-              return closure_1_14(TableRow, obj, label.label);
-            })
-      };
-      let TableRowGroup = tmp(7047).TableRowGroup;
-      const tmp20 = closure_14(TableRowGroup, obj4);
-      cResult[8] = tmp20;
-      tmp17 = tmp20;
-    } else {
-      tmp17 = cResult[8];
-    }
-    if (cResult[9] === tmp4.container) {
-      let tmp21;
-      if (cResult[10] === tmp10) {
-        tmp21 = cResult[11];
-      }
-      return tmp21;
-    }
-    const obj5 = { style: container, contentContainerStyle: tmp10, children: items };
-    items = [tmp11, tmp12, tmp17];
-    const tmp24 = closure_15(ScrollView, obj5);
-    cResult[9] = tmp4.container;
-    cResult[10] = tmp10;
-    cResult[11] = tmp24;
-    tmp21 = tmp24;
-  }
-  items1 = [tmp4.content, tmp9];
-  cResult[3] = tmp4.content;
-  cResult[4] = tmp9;
-  cResult[5] = items1;
-  tmp10 = items1;
-}) : (function DevToolsInAppNotificationTestingScreen() {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsInAppNotificationTestingScreen.tsx");
+
+export default function DevToolsInAppNotificationTestingScreen() {
   const tmp = closure_16();
   const tmp2 = useSafeAreaInsetsDefault();
   _require = react.useCallback((build) => {
@@ -663,22 +537,22 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
           const obj = {
             label: label.label,
             subLabel: label.subLabel,
-            icon: closure_1_14(closure_1_0(closure_1_2[24]).BeakerIcon, {}),
+            icon: closure_1_14(closure_1_0(closure_1_2[22]).BeakerIcon, {}),
             onPress() {
               return closure_2_0(label);
             },
-            trailing: closure_1_14(closure_1_0(closure_1_2[25]).TableRowArrow, {})
+            trailing: closure_1_14(closure_1_0(closure_1_2[23]).TableRowArrow, {})
           };
-          const TableRow = closure_1_0(closure_1_2[23]).TableRow;
+          const TableRow = closure_1_0(closure_1_2[21]).TableRow;
           return closure_1_14(TableRow, obj, label.label);
         })
       };
       options = title.options;
       const TableRowGroup = TableRowGroup2.TableRowGroup;
-      items = [syncedClientThemes(TableRowGroup, obj2), ];
+      items = [authStore3(TableRowGroup, obj2), ];
       const obj3 = { size: nativeDefault.space.PX_16 };
       const Spacer = native.Spacer;
-      items[1] = syncedClientThemes(Spacer, obj3);
+      items[1] = authStore3(Spacer, obj3);
       return closure_15(Fragment, obj, title.title);
     }),
 
@@ -690,21 +564,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function DevToolsInAp
       const obj = {
         label: label.label,
         subLabel: label.subLabel,
-        icon: closure_1_14(label(dependencyMap[24]).BeakerIcon, {}),
+        icon: closure_1_14(label(dependencyMap[22]).BeakerIcon, {}),
         onPress() {
           return label(label);
         },
-        trailing: closure_1_14(label(dependencyMap[25]).TableRowArrow, {})
+        trailing: closure_1_14(label(dependencyMap[23]).TableRowArrow, {})
       };
-      const TableRow = label(dependencyMap[23]).TableRow;
+      const TableRow = label(dependencyMap[21]).TableRow;
       return closure_1_14(TableRow, obj, label.label);
     })
   };
   let TableRowGroup = require("TableRowGroup").TableRowGroup;
   items1[2] = closure_14(TableRowGroup, obj3);
   return closure_15(ScrollView, obj);
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/DevToolsInAppNotificationTestingScreen.tsx");
-
-export default tmp5;
+};

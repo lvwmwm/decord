@@ -1,14 +1,14 @@
-// Module ID: 11393
-// Function ID: 11394
+// Module ID: 11596
+// Function ID: 11597
 // Name: PremiumMarketingUtil
-// Dependencies: [1084, 7549, 7748, 1111, 2]
+// Dependencies: [1072, 7557, 7753, 1100, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 11393 (PremiumMarketingUtil)
-import router_utils from "router_utils" /* 1111 */;
-import openUserSettings from "openUserSettings" /* 7549 */;
-import LayerActionCreators from "LayerActionCreators" /* 7748 */;
-import Constants from "Constants" /* 1084 */;
+// Module 11596 (PremiumMarketingUtil)
+import router_utils from "router_utils" /* 1100 */;
+import openUserSettings from "openUserSettings" /* 7557 */;
+import LayerActionCreators from "LayerActionCreators" /* 7753 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;

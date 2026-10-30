@@ -1,303 +1,30 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18126
+// Function ID: 18127
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 5005, 558, 576, 6426, 9258, 5059, 5271, 1125, 18063, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 6433, 9271, 5619, 5063, 1114, 18127, 2]
+// Exports: default
 
-// Module 18062 (VoiceUserNameItem)
+// Module 18126 (VoiceUserNameItem)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6426 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9258 */;
-import VoiceGuildTagDefault from "VoiceGuildTag" /* 18063 */;
+import intl2 from "intl" /* 1114 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6433 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9271 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 18127 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-let tmp2;
 
 let metroImportDefault;
 let metroRequire;
 const View = react_native.View;
 ({ jsxs: metroRequire, jsx: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ container: { marginLeft: 8, flex: 1, flexDirection: "row" }, tag: { flexDirection: "row", alignItems: "center", paddingLeft: 8 }, measuringTag: { opacity: 0 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserNameItem(arg0) {
-  let closure_129_0;
-  let closure_129_1;
-  let closure_129_2;
-  let closure_129_3;
-  let color;
-  let guildId;
-  let isGuest;
-  let items;
-  let items1;
-  let member;
-  let tmp15;
-  let tmp34;
-  let user;
-  let variant;
-  const obj = react2;
-  const cResult = obj.c(32);
-  ({ member, user, guildId, isGuest, color, variant } = arg0);
-  const tmp4 = closure_8();
-  if (cResult[0] === guildId) {
-    let tmp5;
-    let tmp8;
-    let tmp19;
-    if (cResult[1] === user.id) {
-      tmp5 = cResult[2];
-    }
-    const tmp7 = useDisplayNameStylesDefault(tmp5);
-    if (cResult[3] !== tmp7) {
-      const obj2 = { displayNameStyles: tmp7 };
-      cResult[3] = tmp7;
-      cResult[4] = obj2;
-      tmp8 = obj2;
-    } else {
-      tmp8 = cResult[4];
-    }
-    const tmpResult = useDisplayNameStylesFont;
-    const displayNameStylesFont = tmpResult.useDisplayNameStylesFont(tmp8);
-    [r10047, closure_129_0] = react.useState(0);
-    _slicedToArray(react.useState(0), 2);
-    [r10052, closure_129_1] = react.useState(0);
-    _slicedToArray(react.useState(0), 2);
-    [tmp15, closure_129_2] = react.useState(true);
-    _slicedToArray(react.useState(true), 2);
-    [r10063, closure_129_3] = react.useState(0);
-    const _Symbol = Symbol;
-    _slicedToArray(react.useState(0), 2);
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      class N {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
-      cResult[5] = N;
-    } else {
-      class N {
-        constructor(arg0) {
-          tmp = closure_0(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class A {
-        constructor(arg0) {
-          tmp = closure_1(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
-      cResult[6] = A;
-      tmp19 = A;
-    } else {
-      class A {
-        constructor(arg0) {
-          tmp = closure_1(arg0.nativeEvent.layout.width);
-          return;
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class H {
-        constructor(arg0) {
-          tmp = closure_3(arg0.nativeEvent.layout.width);
-          tmp2 = closure_2(false);
-          return;
-        }
-      }
-      cResult[7] = H;
-    } else {
-      class H {
-        constructor(arg0) {
-          tmp = closure_3(arg0.nativeEvent.layout.width);
-          tmp2 = closure_2(false);
-          return;
-        }
-      }
-    }
-    let tmp21 = tmp15;
-    if (!tmp21) {
-      class H {
-        constructor(arg0) {
-          tmp = closure_3(arg0.nativeEvent.layout.width);
-          tmp2 = closure_2(false);
-          return;
-        }
-      }
-      tmp21 = tmp22;
-    }
-    if (tmp15) {
-      class H {
-        constructor(arg0) {
-          tmp = closure_3(arg0.nativeEvent.layout.width);
-          tmp2 = closure_2(false);
-          return;
-        }
-      }
-    }
-    if (cResult[8] === tmp4.container) {
-      class H {
-        constructor(arg0) {
-          tmp = closure_3(arg0.nativeEvent.layout.width);
-          tmp2 = closure_2(false);
-          return;
-        }
-      }
-      if (cResult[11] !== displayNameStylesFont) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-        let tmp25 = null != displayNameStylesFont;
-        if (tmp25) {
-          class H {
-            constructor(arg0) {
-              tmp = closure_3(arg0.nativeEvent.layout.width);
-              tmp2 = closure_2(false);
-              return;
-            }
-          }
-          tmp26[0] = displayNameStylesFont;
-          tmp25 = tmp26;
-        }
-        cResult[11] = displayNameStylesFont;
-        cResult[12] = tmp25;
-      } else {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-      }
-      const tmp27 = cResult[13];
-      if (member != null) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-      }
-      if (tmp27 === undefined) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-        if (cResult[16] !== isGuest) {
-          class H {
-            constructor(arg0) {
-              tmp = closure_3(arg0.nativeEvent.layout.width);
-              tmp2 = closure_2(false);
-              return;
-            }
-          }
-          if (tmp34) {
-            class H {
-              constructor(arg0) {
-                tmp = closure_3(arg0.nativeEvent.layout.width);
-                tmp2 = closure_2(false);
-                return;
-              }
-            }
-            const obj3 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items };
-            const Text = tmp(5271).Text;
-            const intl = tmp(1125).intl;
-            items = ["\u00A0", intl.string(tmp(1125).t["pFO/Ph"])];
-            tmp34 = metroRequire(Text, obj3);
-          }
-          cResult[16] = isGuest;
-          cResult[17] = tmp34;
-        } else {
-          class H {
-            constructor(arg0) {
-              tmp = closure_3(arg0.nativeEvent.layout.width);
-              tmp2 = closure_2(false);
-              return;
-            }
-          }
-        }
-        if (cResult[18] === color) {
-          class H {
-            constructor(arg0) {
-              tmp = closure_3(arg0.nativeEvent.layout.width);
-              tmp2 = closure_2(false);
-              return;
-            }
-          }
-        }
-        const obj4 = { variant, color, lineClamp: 1, onLayout: tmp19, style: tmp24, children: items1 };
-        items1 = [tmp30, tmp33];
-        cResult[18] = color;
-        cResult[19] = tmp33;
-        cResult[20] = tmp24;
-        cResult[21] = tmp30;
-        cResult[22] = variant;
-        cResult[23] = metroRequire(Text_Text.Text, obj4);
-        const tmp37 = metroRequire(Text_Text.Text, obj4);
-      }
-      let name;
-      if (member != null) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-      }
-      if (name == null) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-        name = obj5.getName(user);
-      }
-      if (member != null) {
-        class H {
-          constructor(arg0) {
-            tmp = closure_3(arg0.nativeEvent.layout.width);
-            tmp2 = closure_2(false);
-            return;
-          }
-        }
-      }
-      cResult[13] = undefined;
-      cResult[14] = user;
-      cResult[15] = name;
-    }
-    const items2 = [tmp4.container, tmp15];
-    cResult[8] = tmp4.container;
-    cResult[9] = tmp15;
-    cResult[10] = items2;
-  }
-  const obj6 = { userId: user.id, guildId };
-  cResult[0] = guildId;
-  cResult[1] = user.id;
-  cResult[2] = obj6;
-  tmp5 = obj6;
-}) : (function VoiceUserNameItem(arg0) {
+const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
+
+export default function VoiceUserNameItem(arg0) {
   let c0;
   let c1;
   let c2;
@@ -356,7 +83,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
   items[1] = measuringTag;
   const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: tmp20, children: items1 };
   tmp20 = null != displayNameStylesFont;
-  const Text = tmp5(5271).Text;
+  const Text = tmp5(5619).Text;
   if (tmp20) {
     tmp20 = { fontFamily: displayNameStylesFont };
     const obj5 = { fontFamily: displayNameStylesFont };
@@ -372,8 +99,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
   items1 = [nick, ];
   if (isGuest) {
     const obj6 = { variant: "text-sm/normal", lineClamp: 1, color: "status-positive", children: items2 };
-    const Text2 = tmp5(5271).Text;
-    const intl = tmp5(1125).intl;
+    const Text2 = tmp5(5619).Text;
+    const intl = tmp5(1114).intl;
     items2 = ["\u00A0", intl.string(intl2.t["pFO/Ph"])];
     isGuest = tmp18(Text2, obj6);
   }
@@ -389,7 +116,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUserN
   }
   items3[1] = tmp12;
   return metroRequire(View, obj3);
-});
-const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUserNameItem.tsx");
-
-export default tmp3;
+};

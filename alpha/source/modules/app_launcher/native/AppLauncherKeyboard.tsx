@@ -1,29 +1,28 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 12185
+// Function ID: 12186
 // Name: AppLauncherKeyboard
-// Dependencies: [19, 17, 1084, 4854, 12000, 21, 5005, 587, 558, 576, 11263, 11261, 10993, 5304, 12001, 5086, 12010, 5071, 5306, 12011, 1381, 5749, 1628, 1501, 1629, 6009, 11262, 12042, 12194, 2]
+// Dependencies: [19, 17, 1072, 4855, 12186, 21, 5009, 575, 11468, 11466, 11223, 5269, 12187, 5090, 12196, 5075, 5270, 12197, 1376, 5755, 1623, 1496, 1624, 6016, 12228, 11467, 12231, 2]
 // Exports: setAppLauncherA11yFocusReturnRef
 
-// Module 11999 (AppLauncherKeyboard)
+// Module 12185 (AppLauncherKeyboard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1501 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import native from "native" /* 5071 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import BottomSheetModal from "BottomSheetModal" /* 5306 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import react_native2 from "react-native" /* 6009 */;
-import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12000 */;
-import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12010 */;
-import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12011 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1496 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
+import KeyboardTypes from "KeyboardTypes" /* 1624 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import native from "native" /* 5075 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import BottomSheetModal from "BottomSheetModal" /* 5270 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import react_native2 from "react-native" /* 6016 */;
+import PortalKeyboardConstants from "PortalKeyboardConstants" /* 12186 */;
+import completeAppLauncherOnboardingDefault from "completeAppLauncherOnboarding" /* 12196 */;
+import AppLauncherOnboardingLayerDefault from "AppLauncherOnboardingLayer" /* 12197 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let animationConfigs;
@@ -35,7 +34,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp4;
-const PlatformUtils = tmp4(1381);
+const PlatformUtils = tmp4(1376);
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -49,218 +48,9 @@ obj3 = { borderWidth: 2, borderBottomWidth: 0, borderColor: nativeDefault.colors
 obj4 = { borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderTopLeftRadius: nativeDefault.radii.sm, borderTopRightRadius: nativeDefault.radii.sm };
 let closure_11 = createStyles(obj);
 let c12 = null;
-let ref = { code: "function AppLauncherKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-let closure_14 = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev){return;}runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-const __initData = { code: "function AppLauncherKeyboardTsx3(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
-const __initData2 = { code: "function AppLauncherKeyboardTsx4(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherKeyboard(context) {
-  let first;
-  let items1;
-  let maximum;
-  let minimum;
-  let onClose;
-  let ref3;
-  let tmp13;
-  let tmp = context;
-  let tmp2 = onClose;
-  let obj = context(onClose[9]);
-  const cResult = obj.c(52);
-  context = context.context;
-  const chatInputRef = context.chatInputRef;
-  onClose = context.onClose;
-  const transitionState = context.transitionState;
-  const entrypoint = context.entrypoint;
-  let obj2 = context(onClose[10]);
-  const defaultAppLauncherWidth = obj2.useDefaultAppLauncherWidth(entrypoint);
-  let obj3 = transitionState;
-  ref = transitionState.useRef(context(onClose[11]).AppLauncherKeyboardCloseReason.DISMISSED);
-  const ref1 = transitionState.useRef(undefined);
-  const tmp7 = closure_11();
-  let tmp9 = chatInputRef(onClose[12])();
-  ({ maximum, minimum } = tmp9);
-  const tmp8 = chatInputRef;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let _Date = Date;
-    const timestamp = Date.now();
-    let num = 0;
-    cResult[0] = timestamp;
-    first = timestamp;
-  } else {
-    first = cResult[0];
-  }
-  ref = obj3.useRef(first);
-  let ref2 = obj3.useRef(false);
-  const tmpResult = tmp(tmp2[13]);
-  const isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
-  if (cResult[1] !== context.channel.id) {
-    let obj4 = { channelId: context.channel.id };
-    cResult[1] = context.channel.id;
-    cResult[2] = obj4;
-    tmp13 = obj4;
-  } else {
-    tmp13 = cResult[2];
-  }
-  const visibleContent = tmp8(tmp2[14])(tmp13).visibleContent;
-  let tmp14 = null != visibleContent;
-  closure_11 = tmp14;
-  const tmpResult4 = tmp(tmp2[15]);
-  const sharedValue = tmpResult4.useSharedValue(-1);
-  const tmpResult5 = tmp(tmp2[15]);
-  const sharedValue1 = tmpResult5.useSharedValue(0);
-  ref2 = obj3.useRef(null);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        if (ref2 != null) {
-          const current = ref2.current;
-          if (current != null) {
-            current.expandActionSheet();
-          }
-        }
-      }
-    }
-    cResult[3] = P;
-  } else {
-    class P {
-      constructor() {
-        if (ref2 != null) {
-          const current = ref2.current;
-          if (current != null) {
-            current.expandActionSheet();
-          }
-        }
-      }
-    }
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class W {
-      constructor(arg0, arg1) {
-        const tmp = arg1 && 1 === arg0;
-        if (tmp) {
-          chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-      }
-    }
-    cResult[4] = W;
-  } else {
-    class W {
-      constructor(arg0, arg1) {
-        const tmp = arg1 && 1 === arg0;
-        if (tmp) {
-          chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-      }
-    }
-  }
-  W = tmp19;
-  if (cResult[5] === sharedValue) {
-    let tmp26;
-    let tmp25;
-    class W {
-      constructor(arg0, arg1) {
-        const tmp = arg1 && 1 === arg0;
-        if (tmp) {
-          chatInputRef(onClose[16])(minimum.TAKE_ACTION);
-        }
-      }
-    }
-    const effect = obj3.useEffect(F, items1);
-    const fn = function j() {
-      return sharedValue.get();
-    };
-    let obj5 = { bottomSheetIndex: sharedValue };
-    fn.__closure = obj5;
-    fn.__workletHash = 15587451723262;
-    fn.__initData = ref2;
-    const tmpResult6 = tmp(tmp2[15]);
-    class Q {
-      constructor(arg0, arg1) {
-        if (arg0 !== arg1) {
-          const obj = ReanimatedRexport;
-          obj.runOnJS(W)(arg0, closure_11);
-        }
-      }
-    }
-    const useAnimatedReaction = tmpResult6.useAnimatedReaction;
-    Q.__closure = { runOnJS: tmp(tmp2[15]).runOnJS, handleOnboardingParamChange: tmp19, showOnboarding: tmp14 };
-    Q.__workletHash = 12446570101635;
-    Q.__initData = W;
-    const obj6 = { runOnJS: tmp(tmp2[15]).runOnJS, handleOnboardingParamChange: tmp19, showOnboarding: tmp14 };
-    const animatedReaction = useAnimatedReaction(fn, Q);
-    if (cResult[9] !== transitionState) {
-      class X {
-        constructor() {
-          if (transitionState === native.TransitionStates.YEETED) {
-            completeAppLauncherOnboardingDefault(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-      const items = [transitionState];
-      cResult[9] = transitionState;
-      cResult[10] = X;
-      cResult[11] = items;
-      tmp26 = items;
-      tmp25 = X;
-    } else {
-      class X {
-        constructor() {
-          if (transitionState === native.TransitionStates.YEETED) {
-            completeAppLauncherOnboardingDefault(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-      tmp26 = cResult[11];
-    }
-    const layoutEffect = obj3.useLayoutEffect(tmp25, tmp26);
-    if (cResult[12] === visibleContent) {
-      class X {
-        constructor() {
-          if (transitionState === native.TransitionStates.YEETED) {
-            completeAppLauncherOnboardingDefault(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-    }
-    const fn2 = function z(arg0) {
-      let num;
-      const obj = { pressBehavior: "collapse" };
-      const BottomSheetBackdrop = BottomSheetModal.BottomSheetBackdrop;
-      const merged = Object.assign(arg0);
-      const children = [metroImportAll(BottomSheetBackdrop, obj), ];
-      let tmp3Result = closure_11;
-      const tmp = authStore;
-      const tmp2 = React4;
-      const tmp3 = metroImportAll;
-      if (tmp3Result) {
-        const obj2 = { context, visibleContent, bottomOffset: num };
-        num = 0;
-        const tmp9 = AppLauncherOnboardingLayerDefault;
-        const tmp4Result = PlatformUtils;
-        if (!tmp4Result.isAndroid()) {
-          num = minimum;
-        }
-        tmp3Result = tmp3(tmp9, obj2);
-      }
-      children[1] = tmp3Result;
-      return tmp(tmp2, { children });
-    };
-    cResult[12] = visibleContent;
-    cResult[13] = context;
-    cResult[14] = minimum;
-    cResult[15] = tmp14;
-    cResult[16] = fn2;
-  }
-  class F {
-    constructor() {
-      W(sharedValue.get(), closure_11);
-    }
-  }
-  items1 = [tmp14, sharedValue, tmp19];
-  cResult[5] = sharedValue;
-  cResult[6] = tmp14;
-  cResult[7] = F;
-  cResult[8] = items1;
-}) : (function AppLauncherKeyboard(context) {
+let closure_13 = { code: "function AppLauncherKeyboardTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };
+let closure_14 = { code: "function AppLauncherKeyboardTsx2(i,prev){const{runOnJS,handleOnboardingParamChange,showOnboarding}=this.__closure;if(i===prev)return;runOnJS(handleOnboardingParamChange)(i,showOnboarding);}" };
+const memoResult = react.memo(function AppLauncherKeyboard(context) {
   let obj10;
   let obj9;
   let ref3;
@@ -276,25 +66,25 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let onboardingNavigatorContent;
   let tmp = context;
   let tmp2 = onClose;
-  let obj = context(onClose[10]);
+  let obj = context(onClose[8]);
   const defaultAppLauncherWidth = obj.useDefaultAppLauncherWidth(entrypoint);
-  ref = transitionState.useRef(context(onClose[11]).AppLauncherKeyboardCloseReason.DISMISSED);
+  const ref = transitionState.useRef(context(onClose[9]).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = transitionState.useRef(undefined);
   const tmp6 = onboardingNavigatorContent();
   const tmp7 = chatInputRef;
-  const tmp8 = chatInputRef(onClose[12])();
+  const tmp8 = chatInputRef(onClose[10])();
   const minimum = tmp8.minimum;
   const maximum = tmp8.maximum;
   animationConfigs = transitionState.useRef(Date.now());
   transitionState.useRef(false);
-  let obj2 = context(onClose[13]);
+  let obj2 = context(onClose[11]);
   let isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   let obj3 = { channelId: context.channel.id };
-  const visibleContent = chatInputRef(onClose[14])(obj3).visibleContent;
+  const visibleContent = chatInputRef(onClose[12])(obj3).visibleContent;
   onboardingNavigatorContent = null != visibleContent;
-  let obj4 = context(onClose[15]);
+  let obj4 = context(onClose[13]);
   const sharedValue = obj4.useSharedValue(-1);
-  let obj5 = context(onClose[15]);
+  let obj5 = context(onClose[13]);
   const sharedValue1 = obj5.useSharedValue(0);
   const ref2 = transitionState.useRef(null);
   const items = [ref2];
@@ -309,33 +99,33 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const callback1 = transitionState.useCallback((arg0, arg1) => {
     const tmp = arg1 && 1 === arg0;
     if (tmp) {
-      chatInputRef(onClose[16])(minimum.TAKE_ACTION);
+      chatInputRef(onClose[14])(minimum.TAKE_ACTION);
     }
   }, []);
   const items1 = [onboardingNavigatorContent, sharedValue, callback1];
   const effect = transitionState.useEffect(() => {
     callback1(sharedValue.get(), onboardingNavigatorContent);
   }, items1);
-  const fn = function y() {
-    return sharedValue.get();
-  };
-  fn.__closure = { bottomSheetIndex: sharedValue };
-  fn.__workletHash = 9724245552188;
-  fn.__initData = __initData;
-  const obj6 = context(onClose[15]);
-  class C {
-    constructor(arg0, arg1) {
-      if (arg0 !== arg1) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(callback1)(arg0, onboardingNavigatorContent);
-      }
+  const obj6 = context(onClose[13]);
+  class O {
+    constructor() {
+      return sharedValue.get();
     }
   }
-  C.__closure = { runOnJS: context(onClose[15]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
-  C.__workletHash = 10242116658851;
-  C.__initData = __initData2;
-  ({ runOnJS: context(onClose[15]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent });
-  const animatedReaction = obj6.useAnimatedReaction(fn, C);
+  O.__closure = { bottomSheetIndex: sharedValue };
+  O.__workletHash = 15587451723262;
+  O.__initData = ref2;
+  const fn = function _(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(callback1)(arg0, onboardingNavigatorContent);
+    }
+  };
+  fn.__closure = { runOnJS: context(onClose[13]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent };
+  fn.__workletHash = 14003176039781;
+  fn.__initData = callback1;
+  ({ runOnJS: context(onClose[13]).runOnJS, handleOnboardingParamChange: callback1, showOnboarding: onboardingNavigatorContent });
+  const animatedReaction = obj6.useAnimatedReaction(O, fn);
   const items2 = [transitionState];
   const layoutEffect = transitionState.useLayoutEffect(() => {
     if (transitionState === native.TransitionStates.YEETED) {
@@ -373,11 +163,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       if (1 === arg1) {
         let current;
         if (arg2 === BottomSheetModal.ANIMATION_SOURCE.KEYBOARD) {
-          current = tmp7(11261).AppLauncherBottomSheetExpandReason.KEYBOARD;
+          current = tmp7(11466).AppLauncherBottomSheetExpandReason.KEYBOARD;
         } else if (arg2 === BottomSheetModal.ANIMATION_SOURCE.GESTURE) {
-          current = tmp7(11261).AppLauncherBottomSheetExpandReason.GESTURE;
+          current = tmp7(11466).AppLauncherBottomSheetExpandReason.GESTURE;
         } else if (arg2 !== BottomSheetModal.ANIMATION_SOURCE.USER) {
-          current = tmp7(11261).AppLauncherBottomSheetExpandReason.OTHER;
+          current = tmp7(11466).AppLauncherBottomSheetExpandReason.OTHER;
         } else {
           current = ref1.current;
         }
@@ -427,23 +217,23 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }
   }, items5);
-  const obj8 = { ref: ref2, animationConfigs, animatedIndex: sharedValue, animatedPosition: sharedValue1, chatInputRef, forceMaxHeight: isScreenReaderEnabled, enablePanDownToClose: tmpResult2.isMetaQuest(), onAnimate: callback3, onClose: callback4, transitionState, backdropComponent: callback2, disableHeaderRoundingAnimation: tmp23, roundingViewStyle: onboardingNavigatorContent && tmp6.onboardingRoundingView, headerStyle: onboardingNavigatorContent && tmp6.onboardingHeader, isAppsKeyboard: true, rendersHandle: entrypoint !== tmp(tmp2[26]).AppLauncherEntrypoint.VOICE, width: defaultAppLauncherWidth, children: ref2(tmp24, obj9) };
-  const tmp22 = chatInputRef(onClose[28]);
+  const obj8 = { ref: ref2, animationConfigs, animatedIndex: sharedValue, animatedPosition: sharedValue1, chatInputRef, forceMaxHeight: isScreenReaderEnabled, enablePanDownToClose: tmpResult2.isMetaQuest(), onAnimate: callback3, onClose: callback4, transitionState, backdropComponent: callback2, disableHeaderRoundingAnimation: tmp23, roundingViewStyle: onboardingNavigatorContent && tmp6.onboardingRoundingView, headerStyle: onboardingNavigatorContent && tmp6.onboardingHeader, isAppsKeyboard: true, rendersHandle: entrypoint !== tmp(tmp2[25]).AppLauncherEntrypoint.VOICE, width: defaultAppLauncherWidth, children: ref2(tmp24, obj9) };
+  const tmp22 = chatInputRef(onClose[24]);
   if (!isScreenReaderEnabled) {
-    const tmpResult = tmp(tmp2[22]);
+    const tmpResult = tmp(tmp2[20]);
     isScreenReaderEnabled = tmpResult.isMetaQuest();
   }
-  tmpResult2 = tmp(tmp2[22]);
-  tmp23 = onboardingNavigatorContent || entrypoint === tmp(tmp2[26]).AppLauncherEntrypoint.VOICE;
+  tmpResult2 = tmp(tmp2[20]);
+  tmp23 = onboardingNavigatorContent || entrypoint === tmp(tmp2[25]).AppLauncherEntrypoint.VOICE;
   obj9 = { style: { position: "relative", height: maximum }, children: ref2(tmp7Result, obj10) };
   obj10 = { bottomSheetExpandReasonRef: ref1, bottomSheetIndex: sharedValue, bottomSheetPosition: sharedValue1, context, chatInputRef, contentStyle: onboardingNavigatorContent, entrypoint, expandBottomSheet: callback, keyboardCloseReasonRef: ref, width: defaultAppLauncherWidth };
-  tmp7Result = tmp7(tmp2[27]);
+  tmp7Result = tmp7(tmp2[26]);
   tmp24 = ref;
   if (onboardingNavigatorContent) {
     onboardingNavigatorContent = tmp6.onboardingNavigatorContent;
   }
   return ref2(tmp22, obj8);
-}));
+});
 let result = size.fileFinishedImporting("modules/app_launcher/native/AppLauncherKeyboard.tsx");
 
 export default memoResult;

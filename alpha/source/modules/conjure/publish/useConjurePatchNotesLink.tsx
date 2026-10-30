@@ -1,17 +1,16 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12624
+// Function ID: 12625
 // Name: useConjurePatchNotesLink
-// Dependencies: [19, 6831, 10824, 1084, 558, 576, 11857, 504, 1111, 2]
-// Exports: conjurePatchNotesEditorProps, openConjureSentPatchNotes
+// Dependencies: [19, 6838, 10847, 1072, 12400, 504, 1100, 2]
+// Exports: conjurePatchNotesEditorProps, default, openConjureSentPatchNotes
 
-// Module 12472 (useConjurePatchNotesLink)
-import Constants from "Constants" /* 1084 */;
-import router_utils from "router_utils" /* 1111 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6831 */;
-import useConjurePublishAction from "useConjurePublishAction" /* 11857 */;
+// Module 12624 (useConjurePatchNotesLink)
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1100 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6838 */;
+import useConjurePublishAction from "useConjurePublishAction" /* 12400 */;
 import react from "react" /* 19 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10824 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 10847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,137 +19,9 @@ let _require, dependencyMap;
 
 const canPublishProject = ConjureProjectStore2.canPublishProject;
 const Routes = Constants.Routes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePatchNotesLink(arg0, published_revision) {
-  let closure_0;
-  let first;
-  let guildId;
-  _require = arg0;
-  dependencyMap = published_revision;
-  let obj = require("react");
-  const cResult = obj.c(12);
-  const context = guildId.useContext(require("useConjurePublishAction").ConjurePublishActionContext);
-  guildId = undefined;
-  const tmp = _require;
-  if (context != null) {
-    guildId = context.guildId;
-  }
-  if (guildId == null) {
-    guildId = null;
-  }
-  published_revision = published_revision.published_revision;
-  if (published_revision == null) {
-    published_revision = null;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjurePublishStatusStore, ];
-    items[1] = published_revision;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === guildId) {
-    if (cResult[2] === published_revision.update) {
-      if (cResult[3] === arg0) {
-        let tmp10;
-        let tmp11;
-        let tmp14;
-        if (cResult[4] === published_revision) {
-          tmp10 = cResult[5];
-          tmp11 = cResult[6];
-        }
-        const tmpResult = tmp(504);
-        const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp10, tmp11);
-        const sent = stateFromStoresObject.sent;
-        if (null != sent) {
-          let tmp16;
-          if (cResult[7] !== sent) {
-            const obj2 = { state: "sent", sent };
-            cResult[7] = sent;
-            cResult[8] = obj2;
-            tmp16 = obj2;
-          } else {
-            tmp16 = cResult[8];
-          }
-          tmp14 = tmp16;
-        } else {
-          tmp14 = null;
-          if (tmp13) {
-            tmp14 = null;
-            if (null != published_revision) {
-              tmp14 = null;
-              if (null != guildId) {
-                if (cResult[9] === guildId) {
-                  let tmp15;
-                  if (cResult[10] === published_revision) {
-                    tmp15 = cResult[11];
-                  }
-                  tmp14 = tmp15;
-                }
-                const obj3 = { state: "offer", publishedRevision: published_revision, fallbackGuildId: guildId };
-                cResult[9] = guildId;
-                cResult[10] = published_revision;
-                cResult[11] = obj3;
-                tmp15 = obj3;
-              }
-            }
-          }
-        }
-        return tmp14;
-      }
-    }
-  }
-  const fn = function p() {
-    let update;
-    const publishStatus = ConjurePublishStatusStore.getPublishStatus(closure_0);
-    const project = ConjureProjectStore.getProject(closure_0);
-    let tmp4 = null;
-    if (null != published_revision) {
-      let found;
-      if (publishStatus != null) {
-        const patchNotesSent = publishStatus.patchNotesSent;
-        if (patchNotesSent != null) {
-          found = patchNotesSent.find((publishedRevision) => publishedRevision.publishedRevision === published_revision);
-        }
-      }
-      if (found == null) {
-        found = null;
-      }
-      tmp4 = found;
-    }
-    const obj = { sent: tmp4, canOffer: update };
-    update = null != tmp3 && published_revision.update;
-    if (update) {
-      let publishedRevision;
-      if (publishStatus != null) {
-        publishedRevision = publishStatus.publishedRevision;
-      }
-      update = tmp3 === publishedRevision;
-    }
-    if (update) {
-      update = null != guildId;
-    }
-    if (update) {
-      update = null != project;
-    }
-    if (update) {
-      update = "user" !== project.install_scope;
-    }
-    if (update) {
-      update = canPublishProject(project);
-    }
-    return obj;
-  };
-  const items1 = [arg0, published_revision, published_revision.update, guildId];
-  cResult[1] = guildId;
-  cResult[2] = published_revision.update;
-  cResult[3] = arg0;
-  cResult[4] = published_revision;
-  cResult[5] = fn;
-  cResult[6] = items1;
-  tmp11 = items1;
-  tmp10 = fn;
-}) : (function useConjurePatchNotesLink(arg0, published_revision) {
+const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePatchNotesLink.tsx");
+
+export default function useConjurePatchNotesLink(arg0, published_revision) {
   let closure_0;
   let guildId;
   let tmp8;
@@ -231,10 +102,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     }
   }
   return tmp8;
-});
-const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePatchNotesLink.tsx");
-
-export default tmp2;
+};
 export function openConjureSentPatchNotes(sent) {
   let channelId;
   let guildId;

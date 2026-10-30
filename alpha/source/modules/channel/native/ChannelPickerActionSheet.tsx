@@ -1,263 +1,31 @@
-// Module ID: 12297
-// Function ID: 12298
+// Module ID: 11181
+// Function ID: 11182
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4947, 1389, 21, 558, 576, 1631, 7353, 5247, 7308, 6971, 12298, 7044, 8561, 5641, 7045, 5306, 7358, 2]
+// Dependencies: [19, 4951, 1384, 21, 1626, 7361, 5253, 7315, 7055, 6977, 11182, 7360, 5270, 7052, 8595, 5647, 2]
+// Exports: default
 
-// Module 12297 (ChannelPickerActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import useChannelName from "useChannelName" /* 5641 */;
-import TableRadioRow2 from "TableRadioRow" /* 7044 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
+// Module 11181 (ChannelPickerActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import useChannelName from "useChannelName" /* 5647 */;
+import TableRadioRow2 from "TableRadioRow" /* 7055 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, hideActionSheetResult, hideActionSheetResult1, onSelectResult, tmp8;
+let _require;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const TableRowIcon2 = tmp(6971);
+const TableRowIcon2 = tmp(6977);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPickerActionSheet(channels) {
-  let guild;
-  let header;
-  let items1;
-  let onClose;
-  let title;
-  let title2;
-  let tmp21;
-  _require = channels;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(33);
-  const tmp4 = guild;
-  const bottom = guild(channels[6])().bottom;
-  ({ header, guild } = channels);
-  channels = channels.channels;
-  const onSelect = channels.onSelect;
-  const selectedChannel = channels.selectedChannel;
-  if (null != header) {
-    ({ title, onClose } = header);
-    let tmp6;
-    if (null != onClose) {
-      let tmp7;
-      if (cResult[0] !== onClose) {
-        let obj2 = {
-          onPress() {
-                  const obj = ActionSheetActionCreatorsDefault;
-                  obj.hideActionSheet();
-                  onClose();
-                }
-        };
-        const tmp9 = closure_5(tmp(channels[7]).ActionSheetCloseButton, obj2);
-        cResult[0] = onClose;
-        cResult[1] = tmp9;
-        tmp7 = tmp9;
-      } else {
-        tmp7 = cResult[1];
-      }
-      tmp6 = tmp7;
-    }
-    let obj3 = { title, trailing: tmp6 };
-    const tmp12 = closure_5(tmp(channels[9]).BottomSheetTitleHeader, obj3);
-    cResult[2] = tmp6;
-    cResult[3] = title;
-    cResult[4] = tmp12;
-  }
-  if (null != channels.noChannelOptionLabel) {
-    let tmp15;
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj4 = { source: tmp4(tmp2[11]) };
-      const TableRowIcon = tmp(tmp2[10]).TableRowIcon;
-      const tmp17 = closure_5(TableRowIcon, obj4);
-      cResult[5] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[5];
-    }
-    if (cResult[6] !== channels.noChannelOptionLabel) {
-      const obj5 = { value: "", label: channels.noChannelOptionLabel, icon: tmp15 };
-      const tmp20 = closure_5(tmp(channels[12]).TableRadioRow, obj5);
-      cResult[6] = channels.noChannelOptionLabel;
-      cResult[7] = tmp20;
-    }
-  }
-  if (cResult[8] !== bottom) {
-    const obj6 = { paddingBottom: bottom };
-    cResult[8] = bottom;
-    cResult[9] = obj6;
-    tmp21 = obj6;
-  } else {
-    tmp21 = cResult[9];
-  }
-  let str2;
-  if (selectedChannel != null) {
-    str2 = selectedChannel.id;
-  }
-  if (str2 == null) {
-    str2 = "";
-  }
-  if (header != null) {
-    title2 = header.title;
-  }
-  if (cResult[10] === channels) {
-    if (cResult[11] === onSelect) {
-      let tmp22;
-      let tmp23;
-      let tmp25;
-      if (cResult[12] === channels) {
-        tmp22 = cResult[13];
-      }
-      if (cResult[14] !== tmp13) {
-        let items = tmp13;
-        if (tmp13 == null) {
-          items = [];
-        }
-        cResult[14] = tmp13;
-        cResult[15] = items;
-        tmp23 = items;
-      } else {
-        tmp23 = cResult[15];
-      }
-      if (cResult[16] === channels) {
-        let tmp24;
-        if (cResult[17] === guild) {
-          tmp24 = cResult[18];
-        }
-        if (cResult[21] === str2) {
-          if (cResult[22] === title2) {
-            if (cResult[23] === tmp22) {
-              if (cResult[24] === tmp23) {
-                let tmp27;
-                if (cResult[25] === tmp24) {
-                  tmp27 = cResult[26];
-                }
-                if (cResult[27] === tmp21) {
-                  let tmp30;
-                  if (cResult[28] === tmp27) {
-                    tmp30 = cResult[29];
-                  }
-                  if (cResult[30] === tmp5) {
-                    let tmp33;
-                    if (cResult[31] === tmp30) {
-                      tmp33 = cResult[32];
-                    }
-                    return tmp33;
-                  }
-                  const obj7 = { scrollable: true, header: tmp5, children: tmp30 };
-                  const tmp35 = closure_5(tmp(channels[17]).ActionSheet, obj7);
-                  cResult[30] = tmp5;
-                  cResult[31] = tmp30;
-                  cResult[32] = tmp35;
-                  tmp33 = tmp35;
-                }
-                const obj8 = { contentContainerStyle: tmp21, children: tmp27 };
-                const tmp32 = closure_5(tmp(channels[16]).BottomSheetScrollView, obj8);
-                cResult[27] = tmp21;
-                cResult[28] = tmp27;
-                cResult[29] = tmp32;
-                tmp30 = tmp32;
-              }
-            }
-          }
-        }
-        const obj9 = { defaultValue: str2, accessibilityLabel: title2, onChange: tmp22, hasIcons: true, children: items1 };
-        items1 = [tmp23, tmp24];
-        const tmp29 = closure_6(tmp(channels[15]).TableRadioGroup, obj9);
-        cResult[21] = str2;
-        cResult[22] = title2;
-        cResult[23] = tmp22;
-        cResult[24] = tmp23;
-        cResult[25] = tmp24;
-        cResult[26] = tmp29;
-        tmp27 = tmp29;
-      }
-      if (cResult[19] !== guild) {
-        class V {
-          constructor(id) {
-            let obj3;
-            let tmp4Result;
-            const obj = utils_ChannelUtils;
-            const channelIconWithGuild = obj.getChannelIconWithGuild(id, guild);
-            const obj2 = { value: id.id, label: obj3.computeChannelName(id, UserStore, RelationshipStore), icon: tmp4Result };
-            const TableRadioRow = TableRadioRow2.TableRadioRow;
-            tmp4Result = null;
-            obj3 = useChannelName;
-            if (null != channelIconWithGuild) {
-              const obj4 = { source: channelIconWithGuild };
-              tmp4Result = tmp4(TableRowIcon2.TableRowIcon, obj4);
-            }
-            return hasOwnProperty(TableRadioRow, obj2, id.id);
-          }
-        }
-        cResult[19] = guild;
-        cResult[20] = V;
-        tmp25 = V;
-      } else {
-        class V {
-          constructor(id) {
-            let obj3;
-            let tmp4Result;
-            const obj = utils_ChannelUtils;
-            const channelIconWithGuild = obj.getChannelIconWithGuild(id, guild);
-            const obj2 = { value: id.id, label: obj3.computeChannelName(id, UserStore, RelationshipStore), icon: tmp4Result };
-            const TableRadioRow = TableRadioRow2.TableRadioRow;
-            tmp4Result = null;
-            obj3 = useChannelName;
-            if (null != channelIconWithGuild) {
-              const obj4 = { source: channelIconWithGuild };
-              tmp4Result = tmp4(TableRowIcon2.TableRowIcon, obj4);
-            }
-            return hasOwnProperty(TableRadioRow, obj2, id.id);
-          }
-        }
-      }
-      const mapped = channels.map(tmp25);
-      cResult[16] = channels;
-      cResult[17] = guild;
-      cResult[18] = mapped;
-      tmp24 = mapped;
-    }
-  }
-  class P {
-    constructor(arg0) {
-      closure_0 = channels;
-      if ("" === channels) {
-        obj = closure_0;
-        tmp = null;
-        if (null != closure_0.noChannelOptionLabel) {
-          tmp8 = closure_1;
-          tmp9 = closure_2;
-          obj3 = closure_1(closure_2[8]);
-          hideActionSheetResult = obj3.hideActionSheet();
-          onSelectResult = obj.onSelect(null);
-          return;
-        }
-      }
-      found = channels.find((id) => id.id === closure_0);
-      if (null != found) {
-        tmp3 = closure_1;
-        tmp4 = closure_2;
-        obj2 = closure_1(closure_2[8]);
-        hideActionSheetResult1 = obj2.hideActionSheet();
-        tmp6 = onSelect;
-        tmp7 = onSelect(found);
-      }
-      return;
-    }
-  }
-  cResult[10] = channels;
-  cResult[11] = onSelect;
-  cResult[12] = channels;
-  cResult[13] = P;
-  tmp22 = P;
-}) : (function ChannelPickerActionSheet(noChannelOptionLabel) {
+const result = size.fileFinishedImporting("modules/channel/native/ChannelPickerActionSheet.tsx");
+
+export default function ChannelPickerActionSheet(noChannelOptionLabel) {
   let BottomSheetScrollView;
   let TableRadioGroup;
   let TableRowIcon;
@@ -297,7 +65,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPicke
   if (null != noChannelOptionLabel.noChannelOptionLabel) {
     let obj3 = { value: "", label: noChannelOptionLabel.noChannelOptionLabel, icon: closure_5(TableRowIcon, obj4) };
     let TableRadioRow = require("TableRadioRow").TableRadioRow;
-    obj4 = { source: tmp(tmp2[11]) };
+    obj4 = { source: tmp(tmp2[10]) };
     TableRowIcon = require("TableRowIcon").TableRowIcon;
     items = closure_5(TableRadioRow, obj3);
   }
@@ -363,7 +131,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelPicke
     })
   ];
   return closure_5(ActionSheet, obj5);
-});
-const result = size.fileFinishedImporting("modules/channel/native/ChannelPickerActionSheet.tsx");
-
-export default tmp4;
+};

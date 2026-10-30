@@ -1,78 +1,31 @@
-// Module ID: 10907
-// Function ID: 10908
+// Module ID: 10930
+// Function ID: 10931
 // Name: conjurePreviewModeRequests
-// Dependencies: [19, 558, 576, 2]
-// Exports: requestConjurePreviewMode
+// Dependencies: [19, 2]
+// Exports: requestConjurePreviewMode, useConjurePreviewModeRequests
 
-// Module 10907 (conjurePreviewModeRequests)
+// Module 10930 (conjurePreviewModeRequests)
 import react_mod from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
 
 let react = react_mod;
 const set = new Set();
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePreviewModeRequests(arg0, cResult) {
-  let closure_0;
-  let closure_2;
-  let current;
-  let tmp2;
-  let tmp4;
-  let tmp5;
-  _require = arg0;
-  dependencyMap = cResult;
-  const obj = require("react");
-  cResult = obj.c(5);
-  react = react.useRef(cResult);
-  if (cResult[0] !== cResult) {
-    const fn = function s() {
-      closure_2.current = current;
-    };
-    cResult[0] = cResult;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
+const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModeRequests.tsx");
+
+export function requestConjurePreviewMode(arg0, widget) {
+  for (const item10007 of set) {
+    let item10007Result = item10007(arg0, widget);
+    continue;
   }
-  const layoutEffect = obj2.useLayoutEffect(tmp2);
-  if (cResult[2] !== arg0) {
-    const fn2 = function f() {
-      let listener;
-      let ref;
-      if (null != listener) {
-        listener = function listener(arg0, AUTO_DISMISS) {
-          if (arg0 === listener) {
-            ref.current(AUTO_DISMISS);
-          }
-        };
-        set.add(listener);
-        return () => {
-          set.delete(listener);
-        };
-      }
-    };
-    const items = [arg0];
-    cResult[2] = arg0;
-    cResult[3] = fn2;
-    cResult[4] = items;
-    tmp5 = items;
-    tmp4 = fn2;
-  } else {
-    tmp4 = cResult[3];
-    tmp5 = cResult[4];
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-}) : (function useConjurePreviewModeRequests(arg0, cResult) {
-  let closure_2;
-  let closure_0 = arg0;
-  const current = cResult;
-  react = react.useRef(cResult);
+}
+export function useConjurePreviewModeRequests(projectId, set) {
+  react = projectId;
+  const current = set;
+  let closure_2 = react.useRef(set);
   const layoutEffect = react.useLayoutEffect(() => {
     closure_2.current = current;
   });
-  const items = [arg0];
+  const items = [projectId];
   const effect = react.useEffect(() => {
     let listener;
     let ref;
@@ -82,19 +35,10 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
           ref.current(AUTO_DISMISS);
         }
       };
-      set.add(listener);
+      current.add(listener);
       return () => {
         set.delete(listener);
       };
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewModeRequests.tsx");
-
-export function requestConjurePreviewMode(arg0, widget) {
-  for (const item10007 of set) {
-    let item10007Result = item10007(arg0, widget);
-    continue;
-  }
 }
-export const useConjurePreviewModeRequests = tmp3;

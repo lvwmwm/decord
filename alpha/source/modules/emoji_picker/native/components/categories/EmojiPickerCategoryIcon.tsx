@@ -1,183 +1,30 @@
-// Module ID: 10026
-// Function ID: 10027
+// Module ID: 10053
+// Function ID: 10054
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6786, 21, 558, 576, 9344, 10015, 5729, 10027, 9413, 10029, 10031, 9682, 10033, 10035, 9429, 10037, 9487, 2]
+// Dependencies: [19, 6793, 21, 9358, 10042, 5735, 10054, 9430, 10056, 10058, 9707, 10060, 10062, 9446, 10064, 9506, 2]
 
-// Module 10026 (EmojiPickerCategoryIcon)
+// Module 10053 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import ClockIcon from "ClockIcon" /* 5729 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6786 */;
-import TrophyIcon from "TrophyIcon" /* 9344 */;
-import ReactionIcon from "ReactionIcon" /* 9413 */;
-import HeartIcon from "HeartIcon" /* 9429 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
-import GameControllerIcon from "GameControllerIcon" /* 9682 */;
-import StarIcon from "StarIcon" /* 10015 */;
-import LightbulbIcon from "LightbulbIcon" /* 10027 */;
-import NatureIcon from "NatureIcon" /* 10029 */;
-import FoodIcon from "FoodIcon" /* 10031 */;
-import BicycleIcon from "BicycleIcon" /* 10033 */;
-import ObjectIcon from "ObjectIcon" /* 10035 */;
-import FlagIcon from "FlagIcon" /* 10037 */;
+import ClockIcon from "ClockIcon" /* 5735 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6793 */;
+import TrophyIcon from "TrophyIcon" /* 9358 */;
+import ReactionIcon from "ReactionIcon" /* 9430 */;
+import HeartIcon from "HeartIcon" /* 9446 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
+import GameControllerIcon from "GameControllerIcon" /* 9707 */;
+import StarIcon from "StarIcon" /* 10042 */;
+import LightbulbIcon from "LightbulbIcon" /* 10054 */;
+import NatureIcon from "NatureIcon" /* 10056 */;
+import FoodIcon from "FoodIcon" /* 10058 */;
+import BicycleIcon from "BicycleIcon" /* 10060 */;
+import ObjectIcon from "ObjectIcon" /* 10062 */;
+import FlagIcon from "FlagIcon" /* 10064 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const EmojiCategories = EmojiPickerConstants.EmojiCategories;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPickerCategoryIcon(id) {
-  const obj = react2;
-  const cResult = obj.c(13);
-  id = id.id;
-  if (EmojiCategories.TOP_GUILD_EMOJI === id) {
-    let first;
-    const _Symbol13 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp56 = jsx(TrophyIcon.TrophyIcon, {});
-      cResult[0] = tmp56;
-      first = tmp56;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  } else if (EmojiCategories.FAVORITES === id) {
-    let tmp50;
-    const _Symbol12 = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp52 = jsx(StarIcon.StarIcon, {});
-      cResult[1] = tmp52;
-      tmp50 = tmp52;
-    } else {
-      tmp50 = cResult[1];
-    }
-    return tmp50;
-  } else if (EmojiCategories.RECENT === id) {
-    let tmp46;
-    const _Symbol11 = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp48 = jsx(ClockIcon.ClockIcon, {});
-      cResult[2] = tmp48;
-      tmp46 = tmp48;
-    } else {
-      tmp46 = cResult[2];
-    }
-    return tmp46;
-  } else if (EmojiCategories.SUGGESTED === id) {
-    let tmp42;
-    const _Symbol10 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp44 = jsx(LightbulbIcon.LightbulbIcon, {});
-      cResult[3] = tmp44;
-      tmp42 = tmp44;
-    } else {
-      tmp42 = cResult[3];
-    }
-    return tmp42;
-  } else if (EmojiCategories.PEOPLE === id) {
-    let tmp38;
-    const _Symbol9 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp40 = jsx(ReactionIcon.ReactionIcon, {});
-      cResult[4] = tmp40;
-      tmp38 = tmp40;
-    } else {
-      tmp38 = cResult[4];
-    }
-    return tmp38;
-  } else if (EmojiCategories.NATURE === id) {
-    let tmp34;
-    const _Symbol8 = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp36 = jsx(NatureIcon.NatureIcon, {});
-      cResult[5] = tmp36;
-      tmp34 = tmp36;
-    } else {
-      tmp34 = cResult[5];
-    }
-    return tmp34;
-  } else if (EmojiCategories.FOOD === id) {
-    let tmp30;
-    const _Symbol7 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp32 = jsx(FoodIcon.FoodIcon, {});
-      cResult[6] = tmp32;
-      tmp30 = tmp32;
-    } else {
-      tmp30 = cResult[6];
-    }
-    return tmp30;
-  } else if (EmojiCategories.ACTIVITY === id) {
-    let tmp26;
-    const _Symbol6 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp28 = jsx(GameControllerIcon.GameControllerIcon, {});
-      cResult[7] = tmp28;
-      tmp26 = tmp28;
-    } else {
-      tmp26 = cResult[7];
-    }
-    return tmp26;
-  } else if (EmojiCategories.TRAVEL === id) {
-    let tmp22;
-    const _Symbol5 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp24 = jsx(BicycleIcon.BicycleIcon, {});
-      cResult[8] = tmp24;
-      tmp22 = tmp24;
-    } else {
-      tmp22 = cResult[8];
-    }
-    return tmp22;
-  } else if (EmojiCategories.OBJECTS === id) {
-    let tmp18;
-    const _Symbol4 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp20 = jsx(ObjectIcon.ObjectIcon, {});
-      cResult[9] = tmp20;
-      tmp18 = tmp20;
-    } else {
-      tmp18 = cResult[9];
-    }
-    return tmp18;
-  } else if (EmojiCategories.SYMBOLS === id) {
-    let tmp14;
-    const _Symbol3 = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp16 = jsx(HeartIcon.HeartIcon, {});
-      cResult[10] = tmp16;
-      tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[10];
-    }
-    return tmp14;
-  } else if (EmojiCategories.FLAGS === id) {
-    let tmp10;
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp12 = jsx(FlagIcon.FlagIcon, {});
-      cResult[11] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[11];
-    }
-    return tmp10;
-  } else {
-    let tmp6;
-    if (EmojiCategories.CUSTOM !== id) {
-      const PREMIUM_UPSELL = tmp4.PREMIUM_UPSELL;
-    }
-    const _Symbol = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp8 = jsx(NitroWheelIcon.NitroWheelIcon, {});
-      cResult[12] = tmp8;
-      tmp6 = tmp8;
-    } else {
-      tmp6 = cResult[12];
-    }
-    return tmp6;
-  }
-}) : (function EmojiPickerCategoryIcon(id) {
+const memoResult = react.memo(function EmojiPickerCategoryIcon(id) {
   id = id.id;
   if (EmojiCategories.TOP_GUILD_EMOJI === id) {
     return jsx(TrophyIcon.TrophyIcon, {});
@@ -209,7 +56,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return jsx(NitroWheelIcon.NitroWheelIcon, {});
   }
-}));
+});
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategoryIcon.tsx");
 
 export default memoResult;

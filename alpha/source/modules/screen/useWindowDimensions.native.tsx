@@ -1,63 +1,19 @@
-// Module ID: 1497
-// Function ID: 1498
+// Module ID: 1492
+// Function ID: 1493
 // Name: useWindowDimensions
-// Dependencies: [19, 1498, 558, 576, 1500, 2]
-// Exports: getWindowDimensions
+// Dependencies: [19, 1493, 1495, 2]
+// Exports: default, getWindowDimensions
 
-// Module 1497 (useWindowDimensions)
-import react2 from "react" /* 576 */;
+// Module 1492 (useWindowDimensions)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1498 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DimensionsStore from "DimensionsStore" /* 1493 */;
 import size from "module_2" /* 2 */;
 
-let tmp2;
-const AppEntryKeyContext = tmp2(1500);
 let closure_4 = { ignoreKeyboard: false };
-function WINDOW_DIMENSIONS_GETTER(arg0) {
+const result = size.fileFinishedImporting("modules/screen/useWindowDimensions.native.tsx");
 
-}
-function WINDOW_DIMENSIONS_GETTER_IGNORING_KEYBOARD(arg0) {
-
-}
-tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowDimensions(arg0) {
-  let appEntryKey;
-  let fn;
-  let ignoreKeyboard;
-  let tmp = arg0;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (undefined === arg0) {
-    tmp = closure_4;
-  }
-  ({ ignoreKeyboard, appEntryKey } = tmp);
-  const tmp2Result = AppEntryKeyContext;
-  if (appEntryKey == null) {
-    appEntryKey = tmp2Result.useAppEntryKey();
-  }
-  if (cResult[0] === appEntryKey) {
-    let tmp6;
-    if (cResult[1] === (undefined !== ignoreKeyboard && ignoreKeyboard)) {
-      tmp6 = cResult[2];
-    }
-    return DimensionsStore(tmp6);
-  }
-  if (undefined !== ignoreKeyboard && ignoreKeyboard) {
-    if (typeof WINDOW_DIMENSIONS_GETTER_IGNORING_KEYBOARD === "function") {
-      fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else if (typeof WINDOW_DIMENSIONS_GETTER === "function") {
-    fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensions;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-  cResult[0] = appEntryKey;
-  cResult[1] = undefined !== ignoreKeyboard && ignoreKeyboard;
-  cResult[2] = fn;
-  tmp6 = fn;
-}) : (function useWindowDimensions() {
+export default function useWindowDimensions() {
   let tmp = arg0;
   if (arg0 === undefined) {
     tmp = closure_4;
@@ -67,33 +23,23 @@ tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowDimensi
     flag = false;
   }
   let appEntryKey;
-  const obj = flag(appEntryKey[4]);
+  const obj = AppEntryKeyContext;
   if (appEntryKey == null) {
     appEntryKey = obj.useAppEntryKey();
   }
   const items = [flag, appEntryKey];
   return DimensionsStore(react.useMemo(() => {
     let fn;
-    const tmp = flag;
-    if (tmp) {
-      if (typeof WINDOW_DIMENSIONS_GETTER_IGNORING_KEYBOARD === "function") {
-        let closure_0 = appEntryKey;
-        fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    } else if (typeof WINDOW_DIMENSIONS_GETTER === "function") {
-      closure_0 = appEntryKey;
-      fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensions;
+    if (flag) {
+      let closure_0 = tmp;
+      fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensionsIgnoringKeyboard;
     } else {
-      throw new TypeError("Trying to call a non-function");
+      closure_0 = tmp;
+      fn = (arg0) => arg0.byAppEntry[closure_0].windowDimensions;
     }
     return fn;
   }, items));
-});
-const result = size.fileFinishedImporting("modules/screen/useWindowDimensions.native.tsx");
-
-export default tmp2;
+};
 export function getWindowDimensions(arg0) {
   let tmp = arg0;
   if (arg0 === undefined) {

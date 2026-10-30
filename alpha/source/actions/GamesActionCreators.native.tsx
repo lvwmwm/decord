@@ -1,15 +1,15 @@
-// Module ID: 11455
-// Function ID: 11456
+// Module ID: 11656
+// Function ID: 11657
 // Name: GamesActionCreators
-// Dependencies: [5, 1084, 2024, 11456, 1104, 7469, 5698, 584, 1294, 11457, 11458, 2]
+// Dependencies: [5, 1072, 2019, 11657, 1093, 7477, 5704, 572, 1283, 11658, 11659, 2]
 
-// Module 11455 (GamesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 2024 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11456 */;
+// Module 11656 (GamesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants2 from "Constants" /* 2019 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -115,7 +115,7 @@ function fetchJoinSecret(applicationId, arg1) {
     obj = { channel_id: channelId, message_id: messageId, headless: true };
     tmp2 = obj;
   }
-  let obj2 = applicationId(584);
+  let obj2 = applicationId(572);
   obj2.dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId, remotePartyId });
   const HTTP = require("HTTPUtils").HTTP;
   const request = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, applicationId), retries: 3, query: tmp2, oldFormErrors: true, rejectWithError: true };
@@ -181,7 +181,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

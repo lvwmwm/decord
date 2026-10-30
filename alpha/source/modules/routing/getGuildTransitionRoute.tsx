@@ -1,25 +1,25 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7386
+// Function ID: 7387
 // Name: getGuildTransitionRoute
-// Dependencies: [7380, 4860, 7251, 4857, 4935, 4879, 4908, 7382, 1084, 4864, 7384, 7388, 7390, 4882, 7405, 2]
+// Dependencies: [7387, 4861, 7258, 4858, 4939, 4880, 4912, 7389, 1072, 4865, 7391, 7396, 7398, 4883, 7413, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 7379 (getGuildTransitionRoute)
-import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import FavoritesUtils from "FavoritesUtils" /* 4882 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7384 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 7388 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7390 */;
-import ConjureUtils from "ConjureUtils" /* 7405 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7380 */;
-import FavoriteStore from "FavoriteStore" /* 4860 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7251 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7382 */;
+// Module 7386 (getGuildTransitionRoute)
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import FavoritesUtils from "FavoritesUtils" /* 4883 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7391 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 7396 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7398 */;
+import ConjureUtils from "ConjureUtils" /* 7413 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7387 */;
+import FavoriteStore from "FavoriteStore" /* 4861 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7258 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7389 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

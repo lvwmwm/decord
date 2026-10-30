@@ -1,203 +1,38 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14869
+// Function ID: 14870
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 558, 576, 1503, 6731, 1382, 1125, 5271, 6984, 14835, 7155, 2]
+// Dependencies: [32, 19, 21, 1498, 6738, 7163, 1377, 1114, 5619, 6992, 14870, 2]
+// Exports: default
 
-// Module 14834 (UserProfileEditNoteModal)
+// Module 14869 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import useNavigation from "useNavigation" /* 1503 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import Navigator2 from "Navigator" /* 7155 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 14835 */;
+import intl2 from "intl" /* 1114 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import useNavigation from "useNavigation" /* 1498 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import Navigator2 from "Navigator" /* 7163 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 14870 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import size from "module_2" /* 2 */;
+import size_mod from "module_2" /* 2 */;
 
-let navigation, onClose, shouldFocusInput;
+let navigation;
 
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsModalPresented() {
-  let closure_129_1;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const obj2 = useNavigation;
-  navigation = obj2.useNavigation();
-  [tmp4, closure_129_1] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  const obj3 = react;
-  if (cResult[0] !== navigation) {
-    const fn = function n() {
-      return navigation.addListener("transitionEnd", (data) => {
-        if (!data.data.closing) {
-          closure_1_1(true);
-        }
-      });
-    };
-    const items = [navigation];
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const effect = obj3.useEffect(tmp5, tmp6);
-  return tmp4;
-}) : (function useIsModalPresented() {
-  let closure_1;
-  let first;
-  const obj = useNavigation;
-  navigation = obj.useNavigation();
-  [first, closure_1] = react.useState(false);
-  const items = [navigation];
-  const effect = react.useEffect(() => navigation.addListener("transitionEnd", (data) => {
-    if (!data.data.closing) {
-      closure_1_1(true);
-    }
-  }), items);
-  return first;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditNoteModal(userId) {
-  let obj4;
-  let obj5;
-  let onBack;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  const obj = userId(onBack[4]);
-  const cResult = obj.c(15);
-  userId = userId.userId;
-  const onSave = userId.onSave;
-  onBack = userId.onBack;
-  const tmp4 = closure_6();
-  shouldFocusInput = tmp4;
-  if (cResult[0] !== onBack) {
-    function handleClose() {
-      const arr = ModalActionCreatorsDefault;
-      arr.pop();
-      if (onBack != null) {
-        onBack();
-      }
-    }
-    cResult[0] = onBack;
-    cResult[1] = handleClose;
-    tmp5 = handleClose;
-  } else {
-    tmp5 = cResult[1];
-  }
-  onClose = tmp5;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2;
-    const tmpResult = userId(onBack[7]);
-    if (!tmpResult.isAndroid()) {
-      obj2 = { height: 56 };
-    }
-    let intl = tmp(tmp2[8]).intl;
-    const stringResult = intl.string(userId(onBack[8]).t.sHHsOM);
-    class H {
-      constructor() {
-        const Text = userId(onBack[9]).Text;
-        const intl = userId(onBack[8]).intl;
-        return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(userId(onBack[8]).t.sHHsOM)}</Text>;
-      }
-    }
-    cResult[2] = obj2;
-    cResult[3] = stringResult;
-    cResult[4] = H;
-    tmp6 = obj2;
-    tmp8 = H;
-    tmp7 = stringResult;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-    tmp8 = cResult[4];
-  }
-  if (cResult[5] !== tmp5) {
-    const tmpResult3 = userId(onBack[10]);
-    const headerCloseButton = tmpResult3.getHeaderCloseButton(tmp5);
-    cResult[5] = tmp5;
-    cResult[6] = headerCloseButton;
-    class H {
-      constructor() {
-        const Text = userId(onBack[9]).Text;
-        const intl = userId(onBack[8]).intl;
-        return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(userId(onBack[8]).t.sHHsOM)}</Text>;
-      }
-    }
-  }
-  if (cResult[7] === tmp5) {
-    if (cResult[8] === tmp4) {
-      if (cResult[9] === onSave) {
-        let tmp12;
-        if (cResult[10] === userId) {
-          tmp12 = cResult[11];
-        }
-        if (cResult[12] === tmp10) {
-          let tmp13;
-          if (cResult[13] === tmp12) {
-            tmp13 = cResult[14];
-          }
-          return tmp13;
-        }
-        const Navigator = tmp(tmp2[12]).Navigator;
-        userId(onBack[7]);
-        class H {
-          constructor() {
-            const Text = userId(onBack[9]).Text;
-            const intl = userId(onBack[8]).intl;
-            return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(userId(onBack[8]).t.sHHsOM)}</Text>;
-          }
-        }
-        const obj3 = { initialRouteName: "root", headerStatusBarHeight: tmp15, headerStyle: tmp6, screens: obj4 };
-        obj4 = { root: obj5 };
-        obj5 = { title: tmp7, headerTitle: tmp8, headerLeft: tmp10, render: tmp12 };
-        cResult[12] = tmp10;
-        cResult[13] = tmp12;
-        cResult[14] = jsx(Navigator, obj3);
-        jsx(Navigator, obj3);
-        class S {
-          constructor() {
-            return jsx(UserProfileEditNote.default, { userId, onSave, onClose, shouldFocusInput });
-          }
-        }
-      }
-    }
-  }
-  class S {
-    constructor() {
-      return jsx(UserProfileEditNote.default, { userId, onSave, onClose, shouldFocusInput });
-    }
-  }
-  cResult[7] = tmp5;
-  cResult[8] = tmp4;
-  cResult[9] = onSave;
-  cResult[10] = userId;
-  cResult[11] = S;
-  tmp12 = S;
-}) : (function UserProfileEditNoteModal(arg0) {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
+
+export default function UserProfileEditNoteModal(arg0) {
   let intl;
-  let obj3;
   let obj4;
   let obj5;
-  let onSave;
-  let require;
-  let tmp2Result2;
+  let obj6;
+  let tmpResult2;
   let userId;
   ({ userId: require, onSave: importDefault, onBack: dependencyMap } = arg0);
+  let shouldFocusInput;
   function handleClose() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
@@ -205,33 +40,40 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       dependencyMap();
     }
   }
-  shouldFocusInput = closure_6();
+  const obj = useNavigation;
+  navigation = obj.useNavigation();
+  const tmp4 = shouldFocusInput(handleClose.useState(false), 2);
+  const onSave = tmp4[1];
+  const items = [navigation];
+  shouldFocusInput = tmp4[0];
+  const effect = handleClose.useEffect(() => navigation.addListener("transitionEnd", (data) => {
+    if (!data.data.closing) {
+      uri(true);
+    }
+  }), items);
   const Navigator = Navigator2.Navigator;
   utils_PlatformUtils;
-  const obj2 = { initialRouteName: "root", headerStatusBarHeight: 12, headerStyle: obj3, screens: obj4 };
-  obj3 = undefined;
-  const tmp = jsx;
-  const tmp2Result = utils_PlatformUtils;
-  if (!tmp2Result.isAndroid()) {
-    obj3 = { height: 56 };
+  const obj3 = { initialRouteName: "root", headerStatusBarHeight: 12, headerStyle: obj4, screens: obj5 };
+  obj4 = undefined;
+  const tmp7 = jsx;
+  const tmpResult = utils_PlatformUtils;
+  if (!tmpResult.isAndroid()) {
+    obj4 = { height: 56 };
   }
-  obj4 = { root: obj5 };
-  obj5 = {
+  obj5 = { root: obj6 };
+  obj6 = {
     title: intl.string(intl2.t.sHHsOM),
     headerTitle() {
       const Text = Text_Text.Text;
       const intl = intl2.intl;
       return <Text variant="redesign/heading-18/bold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
     },
-    headerLeft: tmp2Result2.getHeaderCloseButton(handleClose),
+    headerLeft: tmpResult2.getHeaderCloseButton(handleClose),
     render() {
       return jsx(UserProfileEditNote.default, { userId: require, onSave: importDefault, onClose: handleClose, shouldFocusInput });
     }
   };
-  intl = tmp2(1125).intl;
-  tmp2Result2 = NavigatorHeader;
-  return tmp(Navigator, obj2);
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNoteModal.tsx");
-
-export default tmp2;
+  intl = tmp(1114).intl;
+  tmpResult2 = NavigatorHeader;
+  return tmp7(Navigator, obj3);
+};

@@ -1,59 +1,56 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 14849
+// Function ID: 14850
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [1084, 1382, 1628, 7469, 2]
+// Dependencies: [1072, 1377, 9718, 1623, 7477, 5757, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 14814 (isActivityJoinableOnCurrentPlatform)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import hasFlagDefault from "hasFlag" /* 7469 */;
-import Constants from "Constants" /* 1084 */;
+// Module 14849 (isActivityJoinableOnCurrentPlatform)
+import Constants from "Constants" /* 1072 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import hasFlagDefault from "hasFlag" /* 7477 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-({ ActivityFlags: c3, ActivityGamePlatforms: closure_4, ActivityTypes: hasOwnProperty } = Constants);
+const ActivityFlags = Constants.ActivityFlags;
 const result = size.fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
 
 export default function isActivityJoinableOnCurrentPlatform(type) {
-  const tmp = null == type || !hasFlagDefault(type, constants.JOIN) || type.type !== hasOwnProperty.PLAYING;
+  const tmp = null == type || !hasFlagDefault(type, ActivityFlags.JOIN) || type.type !== ActivityTypes.ActivityTypes.PLAYING;
   if (!tmp) {
+    let META_QUEST;
     let DESKTOP;
-    let tmp9;
     const obj = utils_PlatformUtils;
     if (obj.isIOS()) {
-      DESKTOP = constants2.IOS;
-      tmp9 = constants2;
+      META_QUEST = tmp7(9718).ActivityGamePlatforms.IOS;
     } else {
-      const tmp6Result = MetaQuestUtils;
-      if (tmp6Result.isMetaQuest()) {
-        DESKTOP = constants2.META_QUEST;
-        tmp9 = constants2;
+      const tmp7Result = MetaQuestUtils;
+      if (tmp7Result.isMetaQuest()) {
+        META_QUEST = tmp7(9718).ActivityGamePlatforms.META_QUEST;
       } else {
-        const tmp6Result2 = utils_PlatformUtils;
-        if (tmp6Result2.isAndroid()) {
-          DESKTOP = tmp8.ANDROID;
-          tmp9 = tmp8;
-        } else {
-          DESKTOP = tmp8.DESKTOP;
-          tmp9 = tmp8;
-        }
+        const tmp7Result2 = utils_PlatformUtils;
+        const isAndroidResult = tmp7Result2.isAndroid();
+        const ActivityGamePlatforms = tmp7(9718).ActivityGamePlatforms;
+        META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
       }
     }
     let platform;
     if (type != null) {
       platform = type.platform;
     }
-    if ((null != platform ? type.platform : tmp9.DESKTOP) === DESKTOP) {
+    if (null != platform) {
+      DESKTOP = type.platform;
+    } else {
+      DESKTOP = tmp7(9718).ActivityGamePlatforms.DESKTOP;
+    }
+    if (DESKTOP === META_QUEST) {
       return true;
     } else {
       let supported_platforms;
       if (type != null) {
         supported_platforms = type.supported_platforms;
       }
-      const hasItem = null != supported_platforms && 0 !== supported_platforms.length && supported_platforms.includes(DESKTOP);
+      const hasItem = null != supported_platforms && 0 !== supported_platforms.length && supported_platforms.includes(META_QUEST);
       return hasItem;
     }
   } else {
@@ -64,19 +61,21 @@ export function getCurrentActivityGamePlatform() {
   let META_QUEST;
   const obj = utils_PlatformUtils;
   if (obj.isIOS()) {
-    META_QUEST = constants2.IOS;
+    META_QUEST = tmp(9718).ActivityGamePlatforms.IOS;
   } else {
     const tmpResult = MetaQuestUtils;
     if (tmpResult.isMetaQuest()) {
-      META_QUEST = constants2.META_QUEST;
+      META_QUEST = tmp(9718).ActivityGamePlatforms.META_QUEST;
     } else {
       const tmpResult2 = utils_PlatformUtils;
-      META_QUEST = tmpResult2.isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
+      const isAndroidResult = tmpResult2.isAndroid();
+      const ActivityGamePlatforms = tmp(9718).ActivityGamePlatforms;
+      META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
     }
   }
   return META_QUEST;
 }
 export function isActivityJoinable(type) {
-  const tmp = null == type || !hasFlagDefault(type, constants.JOIN) || type.type !== hasOwnProperty.PLAYING;
+  const tmp = null == type || !hasFlagDefault(type, ActivityFlags.JOIN) || type.type !== ActivityTypes.ActivityTypes.PLAYING;
   return !tmp;
 }

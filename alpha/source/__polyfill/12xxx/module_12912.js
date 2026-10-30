@@ -1,303 +1,274 @@
 // Module ID: 12912
 // Function ID: 12913
-// Dependencies: [32, 41, 42, 93, 95, 96, 98, 12852, 12867, 12849, 12913, 12877, 12880, 12881, 12853, 12906, 12864, 12914, 12875, 12858, 12889, 12908]
+// Dependencies: [12911, 12913, 12918, 12914, 12919]
+// Exports: compile, compileUnsafe
 
 // Module 12912
-import _mod12849 from "module_12849" /* 12849 */;
-import _mod12858 from "module_12858" /* 12858 */;
-import _mod12864 from "module_12864" /* 12864 */;
-import _mod12875 from "module_12875" /* 12875 */;
-import _mod12877 from "module_12877" /* 12877 */;
-import _mod12880 from "module_12880" /* 12880 */;
-import _mod12881 from "module_12881" /* 12881 */;
-import _mod12889 from "module_12889" /* 12889 */;
-import BaseClient from "BaseClient" /* 12908 */;
-import eventFromMessage2 from "eventFromMessage" /* 12913 */;
+import _mod12911 from "module_12911" /* 12911 */;
+import sortByProcedure2 from "sortByProcedure" /* 12913 */;
 import _mod12914 from "module_12914" /* 12914 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
-import DEBUG_BUILD from "module_12852" /* 12852 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12867 */;
+import PLACEHOLDER_ELEMENT from "PLACEHOLDER_ELEMENT" /* 12918 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+let _require, c3, dependencyMap, hasOwnProperty;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+let self = this;
+function includesScopePseudo(type) {
+  let tmp = type.type === _mod12914.SelectorType.Pseudo;
+  if (tmp) {
+    let tmp2 = "scope" === type.name;
+    if (!tmp2) {
+      const _Array = Array;
+      let isArray = Array.isArray(type.data);
+      if (isArray) {
+        const data = type.data;
+        isArray = data.some((arr) => arr.some(includesScopePseudo));
+      }
+      tmp2 = isArray;
+    }
+    tmp = tmp2;
   }
+  return tmp;
 }
-class ServerRuntimeClient {
-  constructor(arg0) {
-    let constructResult;
+function compileToken(arr, context, arg2) {
+  let traversal;
+  _require = context;
+  const item = arr.forEach(sortByProcedure.default);
+  context = context.context;
+  let tmp2 = arg2;
+  if (null !== context) {
+    tmp2 = arg2;
+    if (undefined !== context) {
+      tmp2 = context;
+    }
+  }
+  dependencyMap = Array.isArray(tmp2);
+  obj = tmp2;
+  if (obj) {
+    const _Array = Array;
+    let tmp3 = tmp2;
+    if (!Array.isArray(tmp2)) {
+      const items = [tmp2];
+      tmp3 = items;
+    }
+    obj = tmp3;
+  }
+  if (false !== context.relativeSelector) {
+    const adapter = context.adapter;
+    if (null != obj) {
+      obj.every((item) => {
+        const tmp = adapter.isTag(item) && adapter.getParent(item);
+        let tmp2 = item === adapter(closure_1[2]).PLACEHOLDER_ELEMENT;
+        if (!tmp2) {
+          tmp2 = tmp && adapter.isTag(tmp);
+          tmp && adapter.isTag(tmp);
+        }
+        return tmp2;
+      });
+    }
+    let num3 = 0;
+    if (0 < arr.length) {
+      while (true) {
+        let arr2 = arr[num3];
+        let tmp8 = num3;
+        if (arr2.length > 0) {
+          arr = arr2.unshift(obj2);
+          num3 = num3 + 1;
+          if (num3 >= arr.length) {
+            break;
+          }
+        }
+        if (tmp7) {
+          if (!arr2.some(includesScopePseudo)) {
+            let arr3 = arr2.unshift(obj);
+          }
+        }
+      }
+    }
+  } else if (arr.some((item) => {
+    const isTraversalResult = item.length > 0 && traversal.isTraversal(item[0]);
+    return isTraversalResult;
+  })) {
+    const _Error = Error;
     const self = this;
-    _classCallCheck(this, ServerRuntimeClient);
-    const obj = _mod12849;
-    const result = obj.registerSpanErrorInstrumentation();
-    const items = [arg0];
-    const obj2 = _getPrototypeOf(ServerRuntimeClient);
-    const tmp3 = _getPrototypeOf;
-    const tmp4 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj2, items, tmp3(self).constructor);
-    } else {
-      constructResult = obj2.apply(self, items);
-    }
-    return tmp4(self, constructResult);
+    const self2 = this;
+    const error = new Error("Relative selectors are not allowed when the `relativeSelector` option is disabled");
+    throw error;
   }
+  shouldTestNextSiblings = false;
+  const mapped = arr.map((item) => {
+    let tmp6;
+    let tmp7;
+    if (item.length >= 2) {
+      [tmp6, tmp7] = item;
+      const tmp = tmp6.type !== _mod12914.SelectorType.Pseudo || "scope" !== tmp6.name;
+      if (!tmp) {
+        const tmp2 = closure_1;
+        if (tmp2) {
+          if (tmp7.type === _mod12914.SelectorType.Descendant) {
+            item[1] = closure_8;
+          }
+        }
+        const tmp3 = tmp7.type !== tmp8(12914).SelectorType.Adjacent && tmp7.type !== tmp8(12914).SelectorType.Sibling;
+        if (!tmp3) {
+          c3 = true;
+        }
+      }
+    }
+    closure_1 = obj;
+    let trueFunc = context.rootFunc;
+    const reduce = item.reduce;
+    if (null === trueFunc) {
+      trueFunc = module_12911.default.trueFunc;
+    }
+    return reduce((arg0, type) => {
+      let falseFunc;
+      if (arg0 === closure_2_4.default.falseFunc) {
+        falseFunc = closure_2_4.default.falseFunc;
+      } else {
+        falseFunc = context(closure_2_1[4]).compileGeneralSelector(arg0, type, closure_0, closure_1, closure_2_10);
+      }
+      return falseFunc;
+    }, trueFunc);
+  });
+  const reduced = mapped.reduce(reduceRules, module_12911.default.falseFunc);
+  reduced.shouldTestNextSiblings = shouldTestNextSiblings;
+  return reduced;
 }
-_inherits(ServerRuntimeClient, BaseClient.BaseClient);
-const entry = {
-  key: "eventFromException",
-  value: function eventFromException(arg0, arg1) {
-    const obj = eventFromMessage2;
-    const result = obj.eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
-    result.level = "error";
-    const obj2 = _mod12877;
-    return obj2.resolvedSyncPromise(result);
-  }
-};
-let items = [
-  entry,
-  {
-    key: "eventFromMessage",
-    value: function eventFromMessage(arg0) {
-      let str = arg1;
-      if (arg1 === undefined) {
-        str = "info";
-      }
-      const resolvedSyncPromise = _mod12877.resolvedSyncPromise;
-      const obj = eventFromMessage2;
-      return resolvedSyncPromise(obj.eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace));
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(arg0, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const obj = _mod12880;
-          const isolationScope = obj.getIsolationScope();
-          const requestSession = isolationScope.getRequestSession();
-          const tmp4 = requestSession && "ok" === requestSession.status;
-          if (tmp4) {
-            requestSession.status = "errored";
-          }
+function reduceRules(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let tmp = module_12911;
+  let tmp2 = arg0;
+  if (arg1 !== module_12911.default.falseFunc) {
+    tmp2 = arg0;
+    if (arg0 !== tmp.default.trueFunc) {
+      let combine = arg1;
+      if (arg0 !== tmp.default.falseFunc) {
+        combine = arg1;
+        if (arg1 !== tmp.default.trueFunc) {
+          combine = function combine(arg0) {
+            const tmp = closure_0(arg0) || closure_1(arg0);
+            return tmp;
+          };
         }
       }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureException", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(type, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const tmp = type.type || "exception";
-          if ("exception" === tmp) {
-            if (type.exception) {
-              if (type.exception.values) {
-                if (type.exception.values.length > 0) {
-                  const obj = _mod12880;
-                  const isolationScope = obj.getIsolationScope();
-                  const requestSession = isolationScope.getRequestSession();
-                  const tmp5 = requestSession && "ok" === requestSession.status;
-                  if (tmp5) {
-                    requestSession.status = "errored";
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [type, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "close",
-    value: function close(arg0) {
-      const self = this;
-      if (this._sessionFlusher) {
-        const _sessionFlusher = self._sessionFlusher;
-        _sessionFlusher.close();
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "close", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
-    }
-  },
-  {
-    key: "initSessionFlusher",
-    value: function initSessionFlusher() {
-      const self = this;
-      const release = this._options.release;
-      if (release) {
-        const self2 = this;
-        const self3 = this;
-        const obj = { release, environment: tmp };
-        const sessionFlusher = new tmp2(12906).SessionFlusher(self, obj);
-        self._sessionFlusher = sessionFlusher;
-      } else if (_mod12881.DEBUG_BUILD) {
-        const logger = tmp2(12853).logger;
-        logger.warn("Cannot initialize an instance of SessionFlusher if no release is provided!");
-      }
-    }
-  },
-  {
-    key: "captureCheckIn",
-    value: function captureCheckIn(checkInId, arg1, arg2) {
-      let tmp10;
-      let tmp9;
-      if ("checkInId" in checkInId) {
-        if (checkInId.checkInId) {
-          checkInId = checkInId.checkInId;
-        }
-        const self = this;
-        if (this._isEnabled()) {
-          const options = self.getOptions();
-          const tunnel = options.tunnel;
-          const obj4 = { check_in_id: checkInId, monitor_slug: null, status: null, release: null, environment: null };
-          ({ monitorSlug: obj2.monitor_slug, status: obj2.status } = checkInId);
-          ({ release: obj2.release, environment: obj2.environment } = options);
-          if ("duration" in checkInId) {
-            obj4.duration = checkInId.duration;
-          }
-          const tmp5 = arg1;
-          if (tmp5) {
-            const obj7 = { schedule: null, checkin_margin: null, max_runtime: null, timezone: null, failure_issue_threshold: null, recovery_threshold: null };
-            ({ schedule: obj3.schedule, checkinMargin: obj3.checkin_margin, maxRuntime: obj3.max_runtime, timezone: obj3.timezone, failureIssueThreshold: obj3.failure_issue_threshold, recoveryThreshold: obj3.recovery_threshold } = arg1);
-            obj4.monitor_config = obj7;
-          }
-          [tmp9, tmp10] = self._getTraceInfoFromScope(arg2);
-          _slicedToArray(self._getTraceInfoFromScope(arg2), 2);
-          if (tmp10) {
-            const obj8 = { trace: tmp10 };
-            obj4.contexts = obj8;
-          }
-          const createCheckInEnvelope = _mod12914.createCheckInEnvelope;
-          const sdkMetadata = self.getSdkMetadata();
-          const checkInEnvelope = createCheckInEnvelope(obj4, tmp9, sdkMetadata, tunnel, self.getDsn());
-          const tmp11 = require;
-          if (_mod12881.DEBUG_BUILD) {
-            const logger2 = tmp11(12853).logger;
-            logger2.info("Sending checkin:", checkInId.monitorSlug, checkInId.status);
-          }
-          self.sendEnvelope(checkInEnvelope);
-          return checkInId;
-        } else {
-          const tmp = require;
-          if (_mod12881.DEBUG_BUILD) {
-            const logger = tmp(12853).logger;
-            logger.warn("SDK not enabled, will not capture checkin.");
-          }
-          return checkInId;
-        }
-      }
-      const obj = _mod12864;
-      checkInId = obj.uuid4();
-    }
-  },
-  {
-    key: "_captureRequestSession",
-    value: function _captureRequestSession() {
-      if (this._sessionFlusher) {
-        const _sessionFlusher = this._sessionFlusher;
-        const result = _sessionFlusher.incrementSessionStatusCount();
-      } else {
-        const tmp = require;
-        if (_mod12881.DEBUG_BUILD) {
-          const logger = tmp(12853).logger;
-          logger.warn("Discarded request mode session because autoSessionTracking option was disabled");
-        }
-      }
-    }
-  },
-  {
-    key: "_prepareEvent",
-    value: function _prepareEvent(platform, arg1, arg2, arg3) {
-      let tmp3;
-      const self = this;
-      if (this._options.platform) {
-        platform.platform = platform.platform || self._options.platform;
-      }
-      if (self._options.runtime) {
-        const obj = { runtime: tmp3.runtime || self._options.runtime };
-        const merged = Object.assign(platform.contexts);
-        tmp3 = platform.contexts || {};
-        platform.contexts = obj;
-      }
-      if (self._options.serverName) {
-        platform.server_name = platform.server_name || self._options.serverName;
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "_prepareEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [platform, arg1, arg2, arg3];
-      return fn(items);
-    }
-  },
-  {
-    key: "_getTraceInfoFromScope",
-    value: function _getTraceInfoFromScope(arg0) {
-      const tmp = arg0;
-      if (tmp) {
-        let spanToTraceContextResult;
-        let dynamicSamplingContextFromSpan;
-        const obj = _mod12875;
-        const _getSpanForScopeResult = obj._getSpanForScope(arg0);
-        if (_getSpanForScopeResult) {
-          const tmp2Result = _mod12858;
-          spanToTraceContextResult = tmp2Result.spanToTraceContext(_getSpanForScopeResult);
-        } else {
-          const tmp2Result3 = _mod12880;
-          spanToTraceContextResult = tmp2Result3.getTraceContextFromScope(arg0);
-        }
-        const tmp2Result4 = _mod12889;
-        if (_getSpanForScopeResult) {
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromSpan(_getSpanForScopeResult);
-        } else {
-          const self = this;
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromScope(this, arg0);
-        }
-        const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
-        return items;
-      } else {
-        const items1 = [undefined, undefined];
-        return items1;
-      }
+      tmp2 = combine;
     }
   }
-];
-const ServerRuntimeClient_export = _createClass(ServerRuntimeClient, items);
+  return tmp2;
+}
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_2 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let shouldTestNextSiblings = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
+    }
+  }
+  obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_2(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  shouldTestNextSiblings(obj, __esModule);
+  return obj;
+});
+function compileUnsafe(fn, arg1, arr) {
+  let parsed = fn;
+  const tmp = compileToken;
+  if (typeof fn === "string") {
+    parsed = _mod12914.parse(fn);
+  }
+  return tmp(parsed, arg1, arr);
+}
+const fn = self && self.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const module_12911 = fn(_mod12911);
+const sortByProcedure = tmp5(sortByProcedure2);
+let obj = { type: _mod12914.SelectorType.Descendant };
+let closure_8 = { type: "_flexibleDescendant" };
+const obj2 = { type: _mod12914.SelectorType.Pseudo, name: "scope", data: null };
 
-export { ServerRuntimeClient_export as ServerRuntimeClient };
+export function compile(str, adapter, arg2) {
+  let parsed = str;
+  const tmp = compileToken;
+  if (typeof str === "string") {
+    parsed = _mod12914.parse(str);
+  }
+  const tmpResult = tmp(parsed, adapter, arg2);
+  return PLACEHOLDER_ELEMENT.ensureIsTag(tmpResult, adapter.adapter);
+}
+export { compileUnsafe };
+export { compileToken };

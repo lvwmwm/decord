@@ -1,12 +1,15 @@
 // Module ID: 10317
 // Function ID: 10318
-// Dependencies: [41, 42, 93, 95, 98, 10301]
+// Dependencies: [41, 42, 93, 95, 98, 10307, 10306, 10308, 10314]
 
 // Module 10317
-import _mod10301 from "module_10301" /* 10301 */;
+import _mod10306 from "module_10306" /* 10306 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10307 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10308 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10314 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,63 +28,68 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ENUnlikelyFormatFilter {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10306.MONTH_DICTIONARY);
+const regExp = new RegExp("((?:in)\\s*)?(" + matchAnyPatternResult + ")\\s*(?:(?:,|-|of)?\\s*(" + _mod10306.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class ENMonthNameParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENUnlikelyFormatFilter);
-    const obj = _getPrototypeOf(ENUnlikelyFormatFilter);
+    _classCallCheck(this, ENMonthNameParser);
+    const obj = _getPrototypeOf(ENMonthNameParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENUnlikelyFormatFilter, _mod10301.Filter);
+_inherits(ENMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "isValid",
-  value: function isValid(text, text2) {
-    let closure_0 = text2;
-    const str = text2.text;
-    const str2 = str.trim();
-    const str3 = text.text;
-    if (str2 === str3.trim()) {
-      return true;
-    } else {
-      if ("may" === str2.toLowerCase()) {
-        const str4 = text.text;
-        const str5 = str4.substring(0, text2.index);
-        const str6 = str5.trim();
-        if (!str6.match(/\b(in)$/i)) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + text2);
-          });
-          return false;
-        }
-      }
-      const formatted = str2.toLowerCase();
-      const endsWithResult = formatted.endsWith("the second");
-      let flag2 = !endsWithResult;
-      if (endsWithResult) {
-        flag2 = false;
-        const str8 = text.text;
-        const str9 = str8.substring(text2.index + text2.text.length);
-        if (str9.trim().length > 0) {
-          text.debug(() => {
-            console.log("Removing unlikely result: " + text2);
-          });
-          flag2 = false;
-        }
-      }
-      return flag2;
-    }
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const str = index[2];
+      const formatted = str.toLowerCase();
+      if (index[0].length <= 3) {
+        if (!_mod10306.FULL_MONTH_NAME_DICTIONARY[formatted]) {
+          return null;
+        }
+      }
+      let str2 = index[1];
+      index = index.index;
+      createParsingResult = createParsingResult.createParsingResult;
+      if (!str2) {
+        str2 = "";
+      }
+      const parsingResult = createParsingResult(index + str2.length, index.index + index[0].length);
+      const start = parsingResult.start;
+      start.imply("day", 1);
+      const start2 = parsingResult.start;
+      start2.addTag("parser/ENMonthNameParser");
+      const tmp10 = _mod10306.MONTH_DICTIONARY[formatted];
+      const start3 = parsingResult.start;
+      start3.assign("month", tmp10);
+      if (index[3]) {
+        const start5 = parsingResult.start;
+        start5.assign("year", _mod10306.parseYear(index[3]));
+      } else {
+        const start4 = parsingResult.start;
+        start4.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, 1, tmp10));
+      }
+      return parsingResult;
+    }
+  }
+];
 
-export default _createClass(ENUnlikelyFormatFilter, items);
+export default _createClass(ENMonthNameParser, items);

@@ -1,12 +1,11 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14660
+// Function ID: 14661
 // Name: useConjureTitleBarStatus
-// Dependencies: [14628, 10834, 558, 576, 14629, 504, 2]
+// Dependencies: [14661, 10857, 14662, 504, 2]
+// Exports: default
 
-// Module 14627 (useConjureTitleBarStatus)
-import conjureHomeProjectState2 from "conjureHomeProjectState" /* 14628 */;
-import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14629 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14660 (useConjureTitleBarStatus)
+import useConjureHomeOwnProjectsDefault from "useConjureHomeOwnProjects" /* 14662 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,81 +24,59 @@ function summaryEqual(status, status2) {
   }
   return kind === kind1 && status.hasUnread === status2.hasUnread;
 }
-function summarize(arg0) {
-  let obj2;
-  let flag = false;
-  let flag2 = false;
-  let flag3 = false;
-  const iter = arg0[Symbol.iterator]();
-  const nextResult = iter.next();
-  while (iter !== undefined) {
-    let tmp2 = nextResult;
-    let tmp3 = require;
-    let obj = conjureHomeProjectState2;
-    let conjureHomeProjectState = obj.readConjureHomeProjectState(nextResult.id);
-    if ("in_progress" === conjureHomeProjectState) {
-      flag = true;
-    } else if ("unread" === tmp6) {
-      let tmp3Result = tmp3(10834);
-      if (tmp3Result.getConjureProjectMentionCount(tmp2.id) > 0) {
-        flag2 = true;
-      } else {
-        flag3 = true;
-      }
-    }
-    continue;
-  }
-  if (flag) {
-    obj2 = { kind: "working" };
-  } else {
-    const tmp9 = flag2;
-    if (tmp9) {
-      obj2 = { kind: "needs_input" };
-    } else {
-      obj2 = null;
-      if (flag3) {
-        obj2 = { kind: "unread" };
-      }
-    }
-  }
-  const obj3 = { status: obj2, hasUnread: flag2 };
-  if (!flag2) {
-    flag2 = flag3;
-  }
-  return obj3;
-}
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTitleBarStatus() {
-  let closure_0;
-  let tmp5;
-  let tmp6;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp4 = useConjureHomeOwnProjectsDefault();
-  _require = tmp4;
-  if (cResult[0] !== tmp4) {
-    const fn = function t() {
-      return summarize(closure_0);
-    };
-    const items = [tmp4];
-    cResult[0] = tmp4;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  return tmpResult.useStateFromStores(require("conjureHomeProjectState").CONJURE_HOME_PROJECT_STATE_STORES, tmp5, tmp6, summaryEqual);
-}) : (function useConjureTitleBarStatus() {
+const result = size.fileFinishedImporting("modules/conjure/title_bar/useConjureTitleBarStatus.tsx");
+
+export default function useConjureTitleBarStatus() {
   let closure_0;
   const tmp = useConjureHomeOwnProjectsDefault();
   _require = tmp;
+  let obj = require("get initialized");
   const items = [tmp];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(require("conjureHomeProjectState").CONJURE_HOME_PROJECT_STATE_STORES, () => summarize(closure_0), items, summaryEqual);
-});
-const result = size.fileFinishedImporting("modules/conjure/title_bar/useConjureTitleBarStatus.tsx");
-
-export default tmp2;
+  return obj.useStateFromStores(require("conjureHomeProjectState").CONJURE_HOME_PROJECT_STATE_STORES, () => {
+    function summarize(arg0) {
+      let obj2;
+      let flag = false;
+      let flag2 = false;
+      let flag3 = false;
+      const iter = arg0[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp2 = nextResult;
+        let tmp3 = closure_1_0;
+        let tmp4 = closure_1_2;
+        let obj = closure_1_0(closure_1_2[0]);
+        let conjureHomeProjectState = obj.readConjureHomeProjectState(nextResult.id);
+        if ("in_progress" === conjureHomeProjectState) {
+          flag = true;
+        } else if ("unread" === tmp6) {
+          let tmp3Result = tmp3(tmp4[1]);
+          if (tmp3Result.getConjureProjectMentionCount(tmp2.id) > 0) {
+            flag2 = true;
+          } else {
+            flag3 = true;
+          }
+        }
+        continue;
+      }
+      if (flag) {
+        obj2 = { kind: "working" };
+      } else {
+        const tmp9 = flag2;
+        if (tmp9) {
+          obj2 = { kind: "needs_input" };
+        } else {
+          obj2 = null;
+          if (flag3) {
+            obj2 = { kind: "unread" };
+          }
+        }
+      }
+      const obj3 = { status: obj2, hasUnread: flag2 };
+      if (!flag2) {
+        flag2 = flag3;
+      }
+      return obj3;
+    }
+    return summarize(closure_0);
+  }, items, summaryEqual);
+};

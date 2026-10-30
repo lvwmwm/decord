@@ -1,24 +1,21 @@
-// Module ID: 10232
-// Function ID: 10233
+// Module ID: 10256
+// Function ID: 10257
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 10191, 21, 5005, 587, 558, 576, 5271, 6547, 1199, 10233, 10234, 1125, 10235, 6968, 2]
+// Dependencies: [19, 17, 10216, 21, 5009, 575, 5619, 6554, 1188, 10257, 10258, 1114, 10259, 6974, 2]
 
-// Module 10232 (StickerPackHeader)
+// Module 10256 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import StickersUtils from "StickersUtils" /* 6547 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10233 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10234 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 10235 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import StickersUtils from "StickersUtils" /* 6554 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10257 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10258 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 10191 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 10216 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let PADDING_HORIZONTAL;
@@ -29,6 +26,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let size;
+let tmp10;
+const StickerPackBannerDefault = tmp10(10259);
 const View = react_native.View;
 ({ PADDING_VERTICAL, PADDING_HORIZONTAL } = StickerPickerConstants);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
@@ -40,231 +39,7 @@ createStyles = createStyles.createStyles;
 size = { marginLeft: 8, height: 16, width: 16, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, alignItems: "center", justifyContent: "center" };
 obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_7 = createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function StickerPackHeader(arg0) {
-  let Icon;
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let obj16;
-  let onPress;
-  let stickerPack;
-  let style;
-  let withBanner;
-  let withDescription;
-  const obj = react2;
-  const cResult = obj.c(46);
-  ({ stickerPack, style, onPress, withBanner, withDescription } = arg0);
-  const tmp6 = closure_7();
-  if (cResult[0] === stickerPack.name) {
-    let tmp7;
-    if (cResult[1] === tmp6.label) {
-      tmp7 = cResult[2];
-    }
-    if (cResult[3] === stickerPack) {
-      if (cResult[4] === tmp6.animatedIcon) {
-        if (cResult[5] === tmp6.icon.color) {
-          let tmp9;
-          if (cResult[6] === tmp6.iconContainer) {
-            tmp9 = cResult[7];
-          }
-          if (cResult[8] === tmp6.icon.color) {
-            let tmp14;
-            if (cResult[9] === tmp6.premiumIcon) {
-              tmp14 = cResult[10];
-            }
-            if (cResult[11] === tmp6.iconContainer) {
-              let tmp18;
-              if (cResult[12] === tmp14) {
-                tmp18 = cResult[13];
-              }
-              if (cResult[14] === tmp6.headline) {
-                if (cResult[15] === tmp7) {
-                  if (cResult[16] === tmp9) {
-                    let tmp22;
-                    if (cResult[17] === tmp18) {
-                      tmp22 = cResult[18];
-                    }
-                    if (cResult[19] === tmp6.header) {
-                      let tmp26;
-                      if (cResult[20] === tmp22) {
-                        tmp26 = cResult[21];
-                      }
-                      if (cResult[22] === stickerPack.description) {
-                        let tmp30;
-                        let tmp34;
-                        let tmp36;
-                        if (cResult[23] === (undefined !== withDescription && withDescription)) {
-                          tmp30 = cResult[24];
-                        }
-                        if (cResult[25] !== stickerPack.stickers.length) {
-                          const intl = tmp(1125).intl;
-                          const obj2 = { numStickers: stickerPack.stickers.length };
-                          const formatResult = intl.format(intl2.t["0S3JpO"], obj2);
-                          cResult[25] = stickerPack.stickers.length;
-                          cResult[26] = formatResult;
-                          tmp34 = formatResult;
-                        } else {
-                          tmp34 = cResult[26];
-                        }
-                        if (cResult[27] !== tmp34) {
-                          const obj3 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: tmp34 };
-                          const tmp38 = React3(Text_Text.Text, obj3);
-                          cResult[27] = tmp34;
-                          cResult[28] = tmp38;
-                          tmp36 = tmp38;
-                        } else {
-                          tmp36 = cResult[28];
-                        }
-                        if (cResult[29] === tmp36) {
-                          if (cResult[30] === tmp26) {
-                            let tmp39;
-                            if (cResult[31] === tmp30) {
-                              tmp39 = cResult[32];
-                            }
-                            if (cResult[33] === stickerPack) {
-                              if (cResult[34] === tmp6.banner) {
-                                if (cResult[35] === tmp6.bannerContainer) {
-                                  let tmp43;
-                                  let tmp51;
-                                  if (cResult[36] === (undefined !== withBanner && withBanner)) {
-                                    tmp43 = cResult[37];
-                                  }
-                                  if (cResult[38] === tmp39) {
-                                    if (cResult[39] === onPress) {
-                                      if (cResult[40] === style) {
-                                        let tmp47;
-                                        if (cResult[41] === tmp6.section) {
-                                          tmp47 = cResult[42];
-                                        }
-                                        if (cResult[43] === tmp43) {
-                                          let tmp53;
-                                          if (cResult[44] === tmp47) {
-                                            tmp53 = cResult[45];
-                                          }
-                                          return tmp53;
-                                        }
-                                        const obj4 = { children: items };
-                                        items = [tmp43, tmp47];
-                                        const tmp56 = hasOwnProperty(metroRequire, obj4);
-                                        cResult[43] = tmp43;
-                                        cResult[44] = tmp47;
-                                        cResult[45] = tmp56;
-                                        tmp53 = tmp56;
-                                      }
-                                    }
-                                  }
-                                  if (null != onPress) {
-                                    const obj5 = { style: items1, onPress, accessibilityRole: "header", children: tmp39 };
-                                    items1 = [tmp6.section, style];
-                                    tmp51 = React3(tmp(6968).PressableOpacity, obj5);
-                                  } else {
-                                    const obj6 = { style: items2, children: tmp39 };
-                                    items2 = [tmp6.section, style];
-                                    tmp51 = React3(View, obj6);
-                                  }
-                                  cResult[38] = tmp39;
-                                  cResult[39] = onPress;
-                                  cResult[40] = style;
-                                  cResult[41] = tmp6.section;
-                                  cResult[42] = tmp51;
-                                  tmp47 = tmp51;
-                                }
-                              }
-                            }
-                            let tmp44 = tmp4;
-                            if (tmp44) {
-                              const obj7 = { stickerPack, containerStyle: null, style: null };
-                              ({ bannerContainer: obj14.containerStyle, banner: obj14.style } = tmp6);
-                              tmp44 = React3(StickerPackBannerDefault, obj7);
-                            }
-                            cResult[33] = stickerPack;
-                            cResult[34] = tmp6.banner;
-                            cResult[35] = tmp6.bannerContainer;
-                            cResult[36] = undefined !== withBanner && withBanner;
-                            cResult[37] = tmp44;
-                            tmp43 = tmp44;
-                          }
-                        }
-                        const obj8 = { children: items3 };
-                        items3 = [tmp26, tmp30, tmp36];
-                        const tmp42 = hasOwnProperty(metroRequire, obj8);
-                        cResult[29] = tmp36;
-                        cResult[30] = tmp26;
-                        cResult[31] = tmp30;
-                        cResult[32] = tmp42;
-                        tmp39 = tmp42;
-                      }
-                      let tmp31 = tmp5 && null != stickerPack.description;
-                      if (tmp31) {
-                        const obj9 = { variant: "text-sm/medium", children: stickerPack.description };
-                        tmp31 = React3(tmp(5271).Text, obj9);
-                      }
-                      cResult[22] = stickerPack.description;
-                      cResult[23] = undefined !== withDescription && withDescription;
-                      cResult[24] = tmp31;
-                      tmp30 = tmp31;
-                    }
-                    const obj10 = { style: tmp6.header, children: tmp22 };
-                    const tmp29 = React3(View, obj10);
-                    cResult[19] = tmp6.header;
-                    cResult[20] = tmp22;
-                    cResult[21] = tmp29;
-                    tmp26 = tmp29;
-                  }
-                }
-              }
-              const obj11 = { style: tmp6.headline, children: items4 };
-              items4 = [tmp7, tmp9, tmp18];
-              const tmp25 = hasOwnProperty(View, obj11);
-              cResult[14] = tmp6.headline;
-              cResult[15] = tmp7;
-              cResult[16] = tmp9;
-              cResult[17] = tmp18;
-              cResult[18] = tmp25;
-              tmp22 = tmp25;
-            }
-            const obj12 = { style: tmp6.iconContainer, children: tmp14 };
-            const tmp21 = React3(View, obj12);
-            cResult[11] = tmp6.iconContainer;
-            cResult[12] = tmp14;
-            cResult[13] = tmp21;
-            tmp18 = tmp21;
-          }
-          const obj13 = { source: AssetRegistryDefault2, style: tmp6.premiumIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp6.icon.color };
-          const Icon2 = tmp(1199).Icon;
-          const tmp17 = React3(Icon2, obj13);
-          cResult[8] = tmp6.icon.color;
-          cResult[9] = tmp6.premiumIcon;
-          cResult[10] = tmp17;
-          tmp14 = tmp17;
-        }
-      }
-    }
-    const tmpResult = StickersUtils;
-    let result = tmpResult.isStickerPackAnimated(stickerPack);
-    if (result) {
-      const obj15 = { style: tmp6.iconContainer, children: React3(Icon, obj16) };
-      obj16 = { source: AssetRegistryDefault, style: tmp6.animatedIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp6.icon.color };
-      Icon = tmp(1199).Icon;
-      result = React3(View, obj15);
-    }
-    cResult[3] = stickerPack;
-    cResult[4] = tmp6.animatedIcon;
-    cResult[5] = tmp6.icon.color;
-    cResult[6] = tmp6.iconContainer;
-    cResult[7] = result;
-    tmp9 = result;
-  }
-  const obj17 = { style: tmp6.label, lineClamp: 1, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stickerPack.name };
-  const tmp8 = React3(Text_Text.Text, obj17);
-  cResult[0] = stickerPack.name;
-  cResult[1] = tmp6.label;
-  cResult[2] = tmp8;
-  tmp7 = tmp8;
-}) : (function StickerPackHeader(withDescription) {
+const memoResult = react.memo(function StickerPackHeader(withDescription) {
   let Icon;
   let Icon2;
   let intl;
@@ -299,13 +74,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (result) {
     const obj5 = { style: tmp.iconContainer, children: React3(Icon, obj6) };
     obj6 = { source: AssetRegistryDefault, style: tmp.animatedIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
-    Icon = tmp6(1199).Icon;
+    Icon = tmp6(1188).Icon;
     result = tmp4(tmp5, obj5);
   }
   items[1] = result;
   const obj7 = { style: tmp.iconContainer, children: React3(Icon2, obj8) };
   obj8 = { source: AssetRegistryDefault2, style: tmp.premiumIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
-  Icon2 = tmp6(1199).Icon;
+  Icon2 = tmp6(1188).Icon;
   items[2] = React3(View, obj7);
   const items1 = [React3(View, obj), , ];
   if (flag) {
@@ -313,13 +88,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   if (flag) {
     const obj9 = { variant: "text-sm/medium", children: stickerPack.description };
-    flag = tmp4(tmp6(5271).Text, obj9);
+    flag = tmp4(tmp6(5619).Text, obj9);
   }
   const obj10 = { children: items1 };
   items1[1] = flag;
   const obj11 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: intl.format(intl2.t["0S3JpO"], obj12) };
-  const Text = tmp6(5271).Text;
-  intl = tmp6(1125).intl;
+  const Text = tmp6(5619).Text;
+  intl = tmp6(1114).intl;
   obj12 = { numStickers: stickerPack.stickers.length };
   items1[2] = React3(Text, obj11);
   const tmp2Result = hasOwnProperty(metroRequire, obj10);
@@ -332,7 +107,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   if (null != onPress) {
     const obj15 = { style: items3, onPress, accessibilityRole: "header", children: tmp2Result };
     items3 = [tmp.section, style];
-    tmp4Result = tmp4(tmp6(6968).PressableOpacity, obj15);
+    tmp4Result = tmp4(tmp6(6974).PressableOpacity, obj15);
   } else {
     const obj28 = { style: items4, children: tmp2Result };
     items4 = [tmp.section, style];
@@ -340,7 +115,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }
   children[1] = tmp4Result;
   return hasOwnProperty(metroRequire, { children });
-}));
+});
 size = size_mod;
 const result1 = size.fileFinishedImporting("modules/stickers/native/StickerPackHeader.tsx");
 

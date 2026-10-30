@@ -1,40 +1,17 @@
-// Module ID: 15224
-// Function ID: 15225
+// Module ID: 15263
+// Function ID: 15264
 // Name: usePremiumPrimaryGradientColors
-// Dependencies: [558, 576, 5289, 587, 2]
+// Dependencies: [5591, 575, 2]
+// Exports: default
 
-// Module 15224 (usePremiumPrimaryGradientColors)
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15263 (usePremiumPrimaryGradientColors)
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumPrimaryGradientColors() {
-  const obj = react;
-  const cResult = obj.c(4);
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT);
-  const obj3 = useToken;
-  const token1 = obj3.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2);
-  const obj4 = useToken;
-  const token2 = obj4.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
-  if (cResult[0] === token) {
-    if (cResult[1] === token1) {
-      let tmp5;
-      if (cResult[2] === token2) {
-        tmp5 = cResult[3];
-      }
-      return tmp5;
-    }
-  }
-  const items = [token, token1, token2];
-  cResult[0] = token;
-  cResult[1] = token1;
-  cResult[2] = token2;
-  cResult[3] = items;
-  tmp5 = items;
-}) : (function usePremiumPrimaryGradientColors() {
+const result = size.fileFinishedImporting("modules/premium/native/usePremiumPrimaryGradientColors.tsx");
+
+export default function usePremiumPrimaryGradientColors() {
   const items = [, , ];
   const obj = useToken;
   items[0] = obj.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT);
@@ -43,7 +20,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
   const obj3 = useToken;
   items[2] = obj3.useToken(nativeDefault.colors.REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT);
   return items;
-});
-const result = size.fileFinishedImporting("modules/premium/native/usePremiumPrimaryGradientColors.tsx");
-
-export default tmp2;
+};

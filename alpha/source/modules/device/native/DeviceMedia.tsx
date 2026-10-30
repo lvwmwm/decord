@@ -1,19 +1,19 @@
-// Module ID: 10496
-// Function ID: 10497
+// Module ID: 10521
+// Function ID: 10522
 // Name: DeviceMedia
-// Dependencies: [1084, 570, 1264, 1271, 10497, 1381, 2]
+// Dependencies: [1072, 560, 1253, 1260, 10522, 1376, 2]
 
-// Module 10496 (DeviceMedia)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10497 */;
-import module_570 from "module_570" /* 570 */;
+// Module 10521 (DeviceMedia)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10522 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, page;
 
 const AnalyticEvents = Constants.AnalyticEvents;
-let state = module_570.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
+let state = module_560.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
 let obj = {
   getNextAssetPage(arg0) {
     let batchSize;
@@ -34,7 +34,7 @@ let obj = {
             image = node.image;
           }
         }
-        let obj = assets(1381);
+        let obj = assets(1376);
         if (!obj.isIOS()) {
           dependencyMap = tmp2 + 1;
           let obj2 = {
@@ -109,7 +109,7 @@ let obj = {
                     obj3.track(constants.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj2);
                   }
           };
-          lastAssetIndex(10497)(obj2);
+          lastAssetIndex(10522)(obj2);
         }
       }
     }

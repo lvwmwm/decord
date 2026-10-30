@@ -1,21 +1,20 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17072
+// Function ID: 17073
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7834, 21, 5005, 587, 558, 576, 504, 14614, 6771, 7612, 5271, 1125, 5302, 2]
+// Dependencies: [19, 17, 7839, 21, 5009, 575, 504, 14647, 6778, 7617, 5267, 5619, 1114, 2]
+// Exports: default
 
-// Module 17018 (QuestEnrollmentBlockedBottomSheet)
+// Module 17072 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import useCountdownDefault from "useCountdown" /* 7612 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useCountdownDefault from "useCountdown" /* 7617 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7834 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import QuestStore from "QuestStore" /* 7839 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,220 +22,7 @@ let BottomSheet;
 
 let obj2;
 let obj3;
-const View = react_native.View;
-const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { heading: obj2, container: obj3 };
-obj2 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
-createStyles = createStyles.createStyles;
-obj3 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
-let closure_6 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEnrollmentBlockedBottomSheetConnected(questId) {
-  let first;
-  let questContentPosition;
-  let sourceQuestContent;
-  let tmp6;
-  const obj = questId(sourceQuestContent[7]);
-  const cResult = obj.c(12);
-  questId = questId.questId;
-  const questEnrollmentBlockedUntil = questId.questEnrollmentBlockedUntil;
-  ({ questContentPosition, sourceQuestContent } = questId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [QuestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== questId) {
-    const fn = function s() {
-      return QuestStore.getQuest(questId);
-    };
-    cResult[1] = questId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = questId(sourceQuestContent[8]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (null != stateFromStores) {
-    if (cResult[3] === questEnrollmentBlockedUntil) {
-      if (cResult[4] === questId) {
-        let tmp8;
-        if (cResult[5] === sourceQuestContent) {
-          tmp8 = cResult[6];
-        }
-        class B {
-          constructor() {
-            return <closure_7 questId={questId} questEnrollmentBlockedUntil={questEnrollmentBlockedUntil} sourceQuestContent={sourceQuestContent} />;
-          }
-        }
-        const QuestContentImpressionTrackerNative = tmp(tmp2[9]).QuestContentImpressionTrackerNative;
-        const tmp11 = <QuestContentImpressionTrackerNative overrideVisibility questOrQuests={stateFromStores} questContent={questId(sourceQuestContent[10]).QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET} questContentPosition={questContentPosition} sourceQuestContent={sourceQuestContent}>{tmp8}</QuestContentImpressionTrackerNative>;
-        cResult[7] = stateFromStores;
-        cResult[8] = questContentPosition;
-        cResult[9] = sourceQuestContent;
-        cResult[10] = tmp8;
-        cResult[11] = tmp11;
-      }
-    }
-    class B {
-      constructor() {
-        return <closure_7 questId={questId} questEnrollmentBlockedUntil={questEnrollmentBlockedUntil} sourceQuestContent={sourceQuestContent} />;
-      }
-    }
-    cResult[3] = questEnrollmentBlockedUntil;
-    cResult[4] = questId;
-    cResult[5] = sourceQuestContent;
-    cResult[6] = B;
-    tmp8 = B;
-  }
-  return null;
-}) : (function QuestEnrollmentBlockedBottomSheetConnected(questContentPosition) {
-  let questEnrollmentBlockedUntil;
-  let questId;
-  let sourceQuestContent;
-  ({ questId: require, questEnrollmentBlockedUntil: importDefault, sourceQuestContent } = questContentPosition);
-  questContentPosition = questContentPosition.questContentPosition;
-  const items = [QuestStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(require));
-  let tmp4 = null;
-  if (null != stateFromStores) {
-    const QuestContentImpressionTrackerNative = tmp(tmp2[9]).QuestContentImpressionTrackerNative;
-    tmp4 = <QuestContentImpressionTrackerNative overrideVisibility questOrQuests={stateFromStores} questContent={require("QuestTypes").QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET} questContentPosition={questContentPosition} sourceQuestContent={sourceQuestContent}>{function children() {
-      return <closure_7 questId={require} questEnrollmentBlockedUntil={importDefault} sourceQuestContent={sourceQuestContent} />;
-    }}</QuestContentImpressionTrackerNative>;
-  }
-  return tmp4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
-  let minutes;
-  let seconds;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(21);
-  questEnrollmentBlockedUntil = questEnrollmentBlockedUntil.questEnrollmentBlockedUntil;
-  const tmp4 = closure_6();
-  if (cResult[0] !== questEnrollmentBlockedUntil) {
-    let date = questEnrollmentBlockedUntil;
-    if (questEnrollmentBlockedUntil == null) {
-      const _Date = Date;
-      const self = this;
-      const self2 = this;
-      date = new Date();
-    }
-    cResult[0] = questEnrollmentBlockedUntil;
-    cResult[1] = date;
-    tmp5 = date;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmp9 = useCountdownDefault(tmp5);
-  ({ minutes, seconds } = tmp9);
-  const StringResult = String(tmp9.hours);
-  if (cResult[2] !== StringResult) {
-    const padStartResult = StringResult.padStart(2, "0");
-    cResult[2] = StringResult;
-    cResult[3] = padStartResult;
-    tmp10 = padStartResult;
-  } else {
-    tmp10 = cResult[3];
-  }
-  const StringResult1 = String(minutes);
-  if (cResult[4] !== StringResult1) {
-    const padStartResult1 = StringResult1.padStart(2, "0");
-    cResult[4] = StringResult1;
-    cResult[5] = padStartResult1;
-    tmp12 = padStartResult1;
-  } else {
-    tmp12 = cResult[5];
-  }
-  const StringResult2 = String(seconds);
-  if (cResult[6] !== StringResult2) {
-    const padStartResult2 = StringResult2.padStart(2, "0");
-    cResult[6] = StringResult2;
-    cResult[7] = padStartResult2;
-    tmp14 = padStartResult2;
-  } else {
-    tmp14 = cResult[7];
-  }
-  const combined = "" + tmp10 + ":" + tmp12 + ":" + tmp14;
-  if (null == questEnrollmentBlockedUntil) {
-    return null;
-  } else {
-    let tmp17;
-    let tmp20;
-    let tmp24;
-    let tmp26;
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const Text = tmp(5271).Text;
-      const intl = tmp(1125).intl;
-      const tmp19 = <Text variant="heading-xl/bold">{intl.string(intl3.t["XEHDT/"])}</Text>;
-      cResult[8] = tmp19;
-      tmp17 = tmp19;
-    } else {
-      tmp17 = cResult[8];
-    }
-    if (cResult[9] !== tmp4.heading) {
-      const tmp23 = <View style={tmp4.heading}>{tmp17}</View>;
-      cResult[9] = tmp4.heading;
-      cResult[10] = tmp23;
-      tmp20 = tmp23;
-    } else {
-      tmp20 = cResult[10];
-    }
-    const container = tmp4.container;
-    if (cResult[11] !== combined) {
-      const intl2 = tmp(1125).intl;
-      const obj4 = { countdownString: combined };
-      const formatToPlainStringResult = intl2.formatToPlainString(intl3.t["+5XVH+"], obj4);
-      cResult[11] = combined;
-      cResult[12] = formatToPlainStringResult;
-      tmp24 = formatToPlainStringResult;
-    } else {
-      tmp24 = cResult[12];
-    }
-    if (cResult[13] !== tmp24) {
-      const tmp28 = jsx(Text_Text.Text, { variant: "text-md/normal", children: tmp24 });
-      cResult[13] = tmp24;
-      cResult[14] = tmp28;
-      tmp26 = tmp28;
-    } else {
-      tmp26 = cResult[14];
-    }
-    if (cResult[15] === tmp4.container) {
-      let tmp29;
-      if (cResult[16] === tmp26) {
-        tmp29 = cResult[17];
-      }
-      if (cResult[18] === tmp29) {
-        let tmp33;
-        if (cResult[19] === tmp20) {
-          tmp33 = cResult[20];
-        }
-        return tmp33;
-      }
-      const tmp35 = jsx(Sheet_BottomSheet.BottomSheet, { header: tmp20, footer: null, startExpanded: true, children: tmp29 });
-      cResult[18] = tmp29;
-      cResult[19] = tmp20;
-      cResult[20] = tmp35;
-      tmp33 = tmp35;
-    }
-    const tmp32 = <View style={container}>{tmp26}</View>;
-    cResult[15] = tmp4.container;
-    cResult[16] = tmp26;
-    cResult[17] = tmp32;
-    tmp29 = tmp32;
-  }
-}) : (function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
+function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
   let formatToPlainString;
   let intl;
   let minutes;
@@ -277,7 +63,32 @@ let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestEn
     tmp10 = <BottomSheet header={null} footer={null} startExpanded>{null}</BottomSheet>;
   }
   return tmp10;
-});
+}
+const View = react_native.View;
+const jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { heading: obj2, container: obj3 };
+obj2 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_24 };
+createStyles = createStyles.createStyles;
+obj3 = { display: "flex", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
+let closure_6 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/quests/native/QuestEnrollmentBlockedBottomSheet/QuestEnrollmentBlockedBottomSheet.tsx");
 
-export default tmp4;
+export default function QuestEnrollmentBlockedBottomSheetConnected(questContentPosition) {
+  let questEnrollmentBlockedUntil;
+  let questId;
+  let sourceQuestContent;
+  ({ questId: require, questEnrollmentBlockedUntil: importDefault, sourceQuestContent } = questContentPosition);
+  questContentPosition = questContentPosition.questContentPosition;
+  const items = [QuestStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => QuestStore.getQuest(require));
+  let tmp4 = null;
+  if (null != stateFromStores) {
+    const QuestContentImpressionTrackerNative = tmp(tmp2[7]).QuestContentImpressionTrackerNative;
+    tmp4 = <QuestContentImpressionTrackerNative overrideVisibility questOrQuests={stateFromStores} questContent={require("QuestTypes").QuestContent.QUEST_ENROLLMENT_BLOCKED_BOTTOM_SHEET} questContentPosition={questContentPosition} sourceQuestContent={sourceQuestContent}>{function children() {
+      return <QuestEnrollmentBlockedBottomSheet questId={require} questEnrollmentBlockedUntil={importDefault} sourceQuestContent={sourceQuestContent} />;
+    }}</QuestContentImpressionTrackerNative>;
+  }
+  return tmp4;
+};

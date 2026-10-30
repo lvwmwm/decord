@@ -1,29 +1,26 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 15011
+// Function ID: 15012
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1084, 1095, 21, 558, 576, 14969, 11144, 14970, 6015, 14971, 9643, 10631, 1264, 6731, 7958, 7959, 13007, 38, 1278, 1125, 6984, 11242, 2]
+// Dependencies: [19, 1072, 1083, 21, 15012, 11349, 6022, 15014, 15015, 9668, 10657, 1253, 6738, 7964, 7965, 13158, 38, 1267, 1114, 6992, 11447, 2]
 // Exports: default
 
-// Module 14968 (OrbCheckoutModal)
-import react2 from "react" /* 576 */;
-import Constants2 from "Constants" /* 1095 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9643 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10631 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11144 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14969 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 14970 */;
+// Module 15011 (OrbCheckoutModal)
+import Constants2 from "Constants" /* 1083 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9668 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11349 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15012 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15014 */;
 import "react";
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let dependencyMap;
 
 let c9;
 let closure_12;
@@ -33,78 +30,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-({ useRef: closure_4, useEffect: hasOwnProperty, useCallback: metroRequire, useMemo: metroImportDefault } = react);
-({ AnalyticEvents: metroImportAll, CurrencyCodes: c9 } = Constants);
-const InternalPaymentGateways = Constants2.InternalPaymentGateways;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-const constants3 = { MAIN: "MAIN" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutModalContent(orbBalance) {
-  let items;
-  let orbRedemptionError;
-  let skuId;
-  let tmp10;
-  let tmp13;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(10);
-  orbBalance = orbBalance.orbBalance;
-  const obj2 = OrbCheckoutModalContext;
-  const orbCheckoutModalContext = obj2.useOrbCheckoutModalContext();
-  ({ orbRedemptionError, skuId } = orbCheckoutModalContext);
-  const obj3 = useFetchCollectiblesProduct;
-  let product = obj3.useFetchCollectiblesProduct(skuId).product;
-  if (cResult[0] !== orbRedemptionError) {
-    let tmp8 = null != orbRedemptionError;
-    if (tmp8) {
-      const obj4 = { error: orbRedemptionError.message };
-      tmp8 = unpackModuleId(tmp(14970).OrbCheckoutErrorCard, obj4);
-    }
-    cResult[0] = orbRedemptionError;
-    cResult[1] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (product == null) {
-    product = null;
-  }
-  if (cResult[2] !== product) {
-    const obj5 = { product };
-    const tmp12 = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutOrderSummary, obj5);
-    cResult[2] = product;
-    cResult[3] = tmp12;
-    tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== orbBalance) {
-    const obj6 = { orbBalance };
-    const tmp15 = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutPaymentSourceDetails, obj6);
-    cResult[4] = orbBalance;
-    cResult[5] = tmp15;
-    tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[5];
-  }
-  if (cResult[6] === tmp6) {
-    if (cResult[7] === tmp10) {
-      let tmp16;
-      if (cResult[8] === tmp13) {
-        tmp16 = cResult[9];
-      }
-      return tmp16;
-    }
-  }
-  const obj7 = { children: items };
-  items = [tmp6, tmp10, tmp13];
-  const tmp17 = authStore2(Stack_Stack.Stack, obj7);
-  cResult[6] = tmp6;
-  cResult[7] = tmp10;
-  cResult[8] = tmp13;
-  cResult[9] = tmp17;
-  tmp16 = tmp17;
-}) : (function OrbCheckoutModalContent(orbBalance) {
+function OrbCheckoutModalContent(orbBalance) {
   let orbRedemptionError;
   let skuId;
   orbBalance = orbBalance.orbBalance;
@@ -118,10 +44,10 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
   const tmp5 = authStore2;
   if (tmp6) {
     const obj3 = { error: orbRedemptionError.message };
-    tmp6 = unpackModuleId(tmp(14970).OrbCheckoutErrorCard, obj3);
+    tmp6 = unpackModuleId(tmp(15014).OrbCheckoutErrorCard, obj3);
   }
   const items = [tmp6, , ];
-  const OrbCheckoutOrderSummary = tmp(14970).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(15014).OrbCheckoutOrderSummary;
   if (product == null) {
     product = null;
   }
@@ -129,199 +55,48 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbChe
   items[1] = unpackModuleId(OrbCheckoutOrderSummary, { product });
   items[2] = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutPaymentSourceDetails, { orbBalance });
   return tmp5(Stack, obj4);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function OrbCheckoutModalFooter(onPress) {
-  let first;
-  let items;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(3);
-  onPress = onPress.onPress;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutLegalFinePrint, {});
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== onPress) {
-    const obj2 = { children: items };
-    items = [first, ];
-    const Stack = tmp(6015).Stack;
-    const obj3 = { onPress };
-    items[1] = unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutPurchaseButton, obj3);
-    const tmp10 = authStore2(Stack, obj2);
-    cResult[1] = onPress;
-    cResult[2] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[2];
-  }
-  return tmp7;
-}) : (function OrbCheckoutModalFooter(onPress) {
+}
+function OrbCheckoutModalFooter(onPress) {
   let items;
   onPress = onPress.onPress;
   const obj = { children: items };
   const Stack = Stack_Stack.Stack;
   items = [unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutLegalFinePrint, {}), unpackModuleId(OrbCheckoutModalComponents.OrbCheckoutPurchaseButton, { onPress })];
   return authStore2(Stack, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrbCheckoutPaymentFlowEvents(arg0) {
-  let analyticsLocations;
-  let closure_0;
-  let loadId;
-  let orbPriceAmount2;
-  let orbProductContext;
-  let skuId;
-  let tmp6;
-  let tmp8;
-  _require = arg0;
-  const tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(16);
-  let obj2 = require("OrbCheckoutModalContext");
-  const orbCheckoutModalContext = obj2.useOrbCheckoutModalContext();
-  ({ skuId, loadId, analyticsLocations, orbProductContext } = orbCheckoutModalContext);
-  const obj3 = require("useVirtualCurrencyBalance");
-  const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
-  const tmp = _require;
-  if (cResult[0] !== skuId) {
-    const tmpResult = tmp(9643);
-    let result = tmpResult.get1PShopApplicationIdForSKU(skuId);
-    cResult[0] = skuId;
-    cResult[1] = result;
-    tmp6 = result;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== orbProductContext) {
-    let tmp10 = null != orbProductContext;
-    if (tmp10) {
-      const orbPriceAmount = orbProductContext.orbPriceAmount;
-      let obj4 = { price: orbPriceAmount, regular_price: orbPriceAmount2 };
-      orbPriceAmount2 = orbProductContext.orbPriceAmount;
-      tmp10 = obj4;
-    }
-    cResult[2] = orbProductContext;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === analyticsLocations) {
-    if (cResult[5] === loadId) {
-      if (cResult[6] === skuId) {
-        if (cResult[7] === tmp6) {
-          if (cResult[8] === tmp8) {
-            let tmp11;
-            if (cResult[9] === virtualCurrencyBalance) {
-              tmp11 = cResult[10];
-            }
-            let closure_1 = tmp11;
-            if (cResult[11] === tmp11) {
-              let tmp13;
-              let tmp14;
-              if (cResult[12] === arg0) {
-                tmp13 = cResult[13];
-              }
-              if (cResult[14] !== tmp13) {
-                let obj5 = { emitOrbCheckoutPaymentFlowEvent: tmp13 };
-                cResult[14] = tmp13;
-                cResult[15] = obj5;
-                tmp14 = obj5;
-              } else {
-                tmp14 = cResult[15];
-              }
-              return tmp14;
-            }
-            const fn = function h(arg0, arg1) {
-              const diff = Date.now() - closure_0;
-              if (arg0 === metroImportAll.PAYMENT_FLOW_STARTED) {
-                const obj2 = { has_saved_payment_source: false, continue_session_initial_step: null };
-                const trackPaymentFlowStartedAnalyticsAndCTP = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP;
-                PaymentFlowStartedTriggerPoint;
-                const merged = Object.assign(closure_1);
-                const result = trackPaymentFlowStartedAnalyticsAndCTP(obj2);
-              } else if (arg0 === metroImportAll.PAYMENT_FLOW_COMPLETED) {
-                const obj4 = { duration_ms: diff };
-                const track4 = AnalyticsUtilsDefault.track;
-                const PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
-                AnalyticsUtilsDefault;
-                const merged1 = Object.assign(closure_1);
-                track4(PAYMENT_FLOW_COMPLETED, obj4);
-              } else if (arg0 === metroImportAll.PAYMENT_FLOW_SUCCEEDED) {
-                const obj5 = { duration_ms: diff };
-                const track3 = AnalyticsUtilsDefault.track;
-                const PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
-                AnalyticsUtilsDefault;
-                const merged2 = Object.assign(closure_1);
-                track3(PAYMENT_FLOW_SUCCEEDED, obj5);
-              } else if (arg0 === metroImportAll.PAYMENT_FLOW_CANCELED) {
-                const obj6 = { duration_ms: diff };
-                const track2 = AnalyticsUtilsDefault.track;
-                const PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
-                AnalyticsUtilsDefault;
-                const merged3 = Object.assign(closure_1);
-                track2(PAYMENT_FLOW_CANCELED, obj6);
-              } else {
-                let obj13;
-                const obj = { duration_ms: diff };
-                const track = AnalyticsUtilsDefault.track;
-                const PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
-                AnalyticsUtilsDefault;
-                const merged4 = Object.assign(closure_1);
-                if (null != arg1) {
-                  const obj7 = { payment_error_code: null, error_message: null };
-                  ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
-                  obj13 = obj7;
-                } else {
-                  obj13 = {};
-                }
-                const merged5 = Object.assign(obj13);
-                track(PAYMENT_FLOW_FAILED, obj);
-              }
-            };
-            cResult[11] = tmp11;
-            cResult[12] = arg0;
-            cResult[13] = fn;
-            tmp13 = fn;
-          }
-        }
-      }
-    }
-  }
-  let obj6 = { load_id: loadId, application_id: tmp6, location_stack: analyticsLocations, sku_id: skuId, currency: constants2.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, virtual_currency_balance: virtualCurrencyBalance };
-  let merged = Object.assign(tmp8);
-  cResult[4] = analyticsLocations;
-  cResult[5] = loadId;
-  cResult[6] = skuId;
-  cResult[7] = tmp6;
-  cResult[8] = tmp8;
-  cResult[9] = virtualCurrencyBalance;
-  cResult[10] = obj6;
-  tmp11 = obj6;
-}) : (function useOrbCheckoutPaymentFlowEvents(arg0) {
-  let closure_0;
-  let items1;
-  let loadId;
-  _require = arg0;
-  let obj = require("OrbCheckoutModalContext");
+}
+({ useRef: closure_4, useEffect: hasOwnProperty, useCallback: metroRequire, useMemo: metroImportDefault } = react);
+({ AnalyticEvents: metroImportAll, CurrencyCodes: c9 } = Constants);
+const InternalPaymentGateways = Constants2.InternalPaymentGateways;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+const constants3 = { MAIN: "MAIN" };
+function OrbCheckoutModalScreen(startTime) {
+  let closure_2;
+  let items5;
+  startTime = startTime.startTime;
+  let onRedeemVirtualCurrency;
+  dependencyMap = undefined;
+  let ref;
+  let tmp = onRedeemVirtualCurrency;
+  let tmp2 = dependencyMap;
+  let obj = onRedeemVirtualCurrency(15012);
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
-  const skuId = orbCheckoutModalContext.skuId;
-  loadId = orbCheckoutModalContext.loadId;
-  const analyticsLocations = orbCheckoutModalContext.analyticsLocations;
-  const orbProductContext = orbCheckoutModalContext.orbProductContext;
-  let obj2 = require("useVirtualCurrencyBalance");
-  const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
+  onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
+  const orbRedemptionError = orbCheckoutModalContext.orbRedemptionError;
+  let obj2 = onRedeemVirtualCurrency(15012);
+  const orbCheckoutModalContext1 = obj2.useOrbCheckoutModalContext();
+  const skuId = orbCheckoutModalContext1.skuId;
+  const loadId = orbCheckoutModalContext1.loadId;
+  const analyticsLocations = orbCheckoutModalContext1.analyticsLocations;
+  const orbProductContext = orbCheckoutModalContext1.orbProductContext;
+  let obj3 = onRedeemVirtualCurrency(15015);
+  const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
   const items = [loadId, skuId, analyticsLocations, orbProductContext, virtualCurrencyBalance];
-  const tmp3 = closure_7(() => {
+  const tmp6 = closure_7(() => {
     let obj2;
     let orbPriceAmount2;
-    const obj = { load_id: loadId, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, sku_id: skuId, currency: constants.DISCORD_ORB, payment_gateway: InternalPaymentGateways.VIRTUAL_CURRENCY, virtual_currency_balance: virtualCurrencyBalance };
+    const obj = { load_id: loadId, application_id: obj2.get1PShopApplicationIdForSKU(skuId), location_stack: analyticsLocations, sku_id: skuId, currency: constants2.DISCORD_ORB, payment_gateway: constants3.VIRTUAL_CURRENCY, virtual_currency_balance: virtualCurrencyBalance };
     let tmp2 = null != orbProductContext;
-    obj2 = VirtualCurrencyUtils;
+    obj2 = onRedeemVirtualCurrency(loadId[9]);
     if (tmp2) {
       const orbPriceAmount = tmp.orbPriceAmount;
       const obj3 = { price: orbPriceAmount, regular_price: orbPriceAmount2 };
@@ -331,81 +106,65 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOrb
     const merged = Object.assign(tmp2);
     return obj;
   }, items);
-  let closure_6 = tmp3;
-  let obj3 = {
-    emitOrbCheckoutPaymentFlowEvent: closure_6((arg0, arg1) => {
-      const diff = Date.now() - closure_0;
-      if (arg0 === metroImportAll.PAYMENT_FLOW_STARTED) {
-        const obj2 = { has_saved_payment_source: false, continue_session_initial_step: null };
-        const trackPaymentFlowStartedAnalyticsAndCTP = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP;
-        PaymentFlowStartedTriggerPoint;
-        const merged = Object.assign(closure_6);
-        const result = trackPaymentFlowStartedAnalyticsAndCTP(obj2);
-      } else if (arg0 === metroImportAll.PAYMENT_FLOW_COMPLETED) {
-        const obj4 = { duration_ms: diff };
-        const track4 = AnalyticsUtilsDefault.track;
-        const PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
-        AnalyticsUtilsDefault;
-        const merged1 = Object.assign(closure_6);
-        track4(PAYMENT_FLOW_COMPLETED, obj4);
-      } else if (arg0 === metroImportAll.PAYMENT_FLOW_SUCCEEDED) {
-        const obj5 = { duration_ms: diff };
-        const track3 = AnalyticsUtilsDefault.track;
-        const PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
-        AnalyticsUtilsDefault;
-        const merged2 = Object.assign(closure_6);
-        track3(PAYMENT_FLOW_SUCCEEDED, obj5);
-      } else if (arg0 === metroImportAll.PAYMENT_FLOW_CANCELED) {
-        const obj6 = { duration_ms: diff };
-        const track2 = AnalyticsUtilsDefault.track;
-        const PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
-        AnalyticsUtilsDefault;
-        const merged3 = Object.assign(closure_6);
-        track2(PAYMENT_FLOW_CANCELED, obj6);
+  let closure_6 = tmp6;
+  const items1 = [startTime, tmp6];
+  const tmp8 = closure_6((arg0, arg1) => {
+    const diff = Date.now() - startTime;
+    if (arg0 === constants.PAYMENT_FLOW_STARTED) {
+      const obj2 = { has_saved_payment_source: false, continue_session_initial_step: null };
+      const trackPaymentFlowStartedAnalyticsAndCTP = onRedeemVirtualCurrency(loadId[10]).trackPaymentFlowStartedAnalyticsAndCTP;
+      onRedeemVirtualCurrency(loadId[10]);
+      const merged = Object.assign(closure_6);
+      const result = trackPaymentFlowStartedAnalyticsAndCTP(obj2);
+    } else if (arg0 === constants.PAYMENT_FLOW_COMPLETED) {
+      const obj4 = { duration_ms: diff };
+      const track4 = orbRedemptionError(loadId[11]).track;
+      const PAYMENT_FLOW_COMPLETED = tmp2.PAYMENT_FLOW_COMPLETED;
+      orbRedemptionError(loadId[11]);
+      const merged1 = Object.assign(closure_6);
+      track4(PAYMENT_FLOW_COMPLETED, obj4);
+    } else if (arg0 === constants.PAYMENT_FLOW_SUCCEEDED) {
+      const obj5 = { duration_ms: diff };
+      const track3 = orbRedemptionError(loadId[11]).track;
+      const PAYMENT_FLOW_SUCCEEDED = tmp2.PAYMENT_FLOW_SUCCEEDED;
+      orbRedemptionError(loadId[11]);
+      const merged2 = Object.assign(closure_6);
+      track3(PAYMENT_FLOW_SUCCEEDED, obj5);
+    } else if (arg0 === constants.PAYMENT_FLOW_CANCELED) {
+      const obj6 = { duration_ms: diff };
+      const track2 = orbRedemptionError(loadId[11]).track;
+      const PAYMENT_FLOW_CANCELED = tmp2.PAYMENT_FLOW_CANCELED;
+      orbRedemptionError(loadId[11]);
+      const merged3 = Object.assign(closure_6);
+      track2(PAYMENT_FLOW_CANCELED, obj6);
+    } else {
+      let obj13;
+      const obj = { duration_ms: diff };
+      const track = orbRedemptionError(loadId[11]).track;
+      const PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
+      orbRedemptionError(loadId[11]);
+      const merged4 = Object.assign(closure_6);
+      if (null != arg1) {
+        const obj7 = { payment_error_code: null, error_message: null };
+        ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
+        obj13 = obj7;
       } else {
-        let obj13;
-        const obj = { duration_ms: diff };
-        const track = AnalyticsUtilsDefault.track;
-        const PAYMENT_FLOW_FAILED = tmp2.PAYMENT_FLOW_FAILED;
-        AnalyticsUtilsDefault;
-        const merged4 = Object.assign(closure_6);
-        if (null != arg1) {
-          const obj7 = { payment_error_code: null, error_message: null };
-          ({ code: obj3.payment_error_code, message: obj3.error_message } = arg1);
-          obj13 = obj7;
-        } else {
-          obj13 = {};
-        }
-        const merged5 = Object.assign(obj13);
-        track(PAYMENT_FLOW_FAILED, obj);
+        obj13 = {};
       }
-    }, items1)
-  };
-  items1 = [arg0, tmp3];
-  return obj3;
-});
-function OrbCheckoutModalScreen(startTime) {
-  let items3;
-  let onRedeemVirtualCurrency;
-  let emitOrbCheckoutPaymentFlowEvent;
-  let ref;
-  let tmp = onRedeemVirtualCurrency;
-  let tmp2 = emitOrbCheckoutPaymentFlowEvent;
-  startTime = startTime.startTime;
-  const obj = onRedeemVirtualCurrency(emitOrbCheckoutPaymentFlowEvent[6]);
-  const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
-  onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
-  const orbRedemptionError = orbCheckoutModalContext.orbRedemptionError;
-  emitOrbCheckoutPaymentFlowEvent = closure_16(startTime).emitOrbCheckoutPaymentFlowEvent;
-  const obj2 = onRedeemVirtualCurrency(emitOrbCheckoutPaymentFlowEvent[10]);
-  const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
-  const tmp5 = ref(virtualCurrencyBalance);
-  ref = tmp5;
-  const items = [emitOrbCheckoutPaymentFlowEvent];
+      const merged5 = Object.assign(obj13);
+      track(PAYMENT_FLOW_FAILED, obj);
+    }
+  }, items1);
+  dependencyMap = tmp8;
+  let obj4 = onRedeemVirtualCurrency(15015);
+  const virtualCurrencyBalance1 = obj4.useVirtualCurrencyBalance();
+  const tmp10 = ref(virtualCurrencyBalance1);
+  ref = tmp10;
+  const items2 = [tmp8];
   closure_5(() => {
-    emitOrbCheckoutPaymentFlowEvent(metroImportAll.PAYMENT_FLOW_STARTED);
-  }, items);
-  const items1 = [orbRedemptionError, emitOrbCheckoutPaymentFlowEvent];
+    closure_2(metroImportAll.PAYMENT_FLOW_STARTED);
+  }, items2);
+  const items3 = [orbRedemptionError, tmp8];
   closure_5(() => {
     let tmp2 = null != orbRedemptionError;
     const tmp = orbRedemptionError;
@@ -413,33 +172,34 @@ function OrbCheckoutModalScreen(startTime) {
       tmp2 = null !== ref.current;
     }
     if (tmp2) {
-      emitOrbCheckoutPaymentFlowEvent(metroImportAll.PAYMENT_FLOW_FAILED, tmp);
+      closure_2(metroImportAll.PAYMENT_FLOW_FAILED, tmp);
       ref.current = null;
     }
-  }, items1);
-  let current = tmp5.current;
+  }, items3);
+  let current = tmp10.current;
+  const tmp7 = closure_6;
   if (current == null) {
-    current = virtualCurrencyBalance;
+    current = virtualCurrencyBalance1;
   }
-  const items2 = [emitOrbCheckoutPaymentFlowEvent, virtualCurrencyBalance, onRedeemVirtualCurrency];
-  const obj3 = { children: items3 };
-  const tmp8 = closure_6(() => {
-    emitOrbCheckoutPaymentFlowEvent(metroImportAll.PAYMENT_FLOW_COMPLETED);
-    ref.current = virtualCurrencyBalance;
+  const items4 = [tmp8, virtualCurrencyBalance1, onRedeemVirtualCurrency];
+  let obj5 = { children: items5 };
+  const tmp7Result = tmp7(() => {
+    closure_2(metroImportAll.PAYMENT_FLOW_COMPLETED);
+    ref.current = virtualCurrencyBalance1;
     onRedeemVirtualCurrency(() => {
       closure_1_2(constants.PAYMENT_FLOW_SUCCEEDED);
-      const arr = orbRedemptionError(emitOrbCheckoutPaymentFlowEvent[14]);
+      const arr = orbRedemptionError(closure_2[12]);
       arr.pop();
     });
-  }, items2);
-  const ModalScreen = tmp(tmp2[15]).ModalScreen;
-  const obj4 = { children: closure_11(closure_14, { orbBalance: current }) };
-  const ModalContent = tmp(tmp2[16]).ModalContent;
-  items3 = [closure_11(ModalContent, obj4), ];
-  const obj5 = { children: closure_11(closure_15, { onPress: tmp8 }) };
-  const ModalFooter = tmp(tmp2[17]).ModalFooter;
-  items3[1] = closure_11(ModalFooter, obj5);
-  return closure_12(ModalScreen, obj3);
+  }, items4);
+  const ModalScreen = tmp(7964).ModalScreen;
+  let obj6 = { children: closure_11(OrbCheckoutModalContent, { orbBalance: current }) };
+  const ModalContent = tmp(7965).ModalContent;
+  items5 = [closure_11(ModalContent, obj6), ];
+  let obj7 = { children: closure_11(OrbCheckoutModalFooter, { onPress: tmp7Result }) };
+  const ModalFooter = tmp(13158).ModalFooter;
+  items5[1] = closure_11(ModalFooter, obj7);
+  return closure_12(ModalScreen, obj5);
 }
 let result = size.fileFinishedImporting("modules/virtual_currency/checkout/native/OrbCheckoutModal.tsx");
 
@@ -455,10 +215,10 @@ export default function _default(skuId) {
   let current;
   require("module_38")(null != skuId, "SKU ID is required");
   const useRef = current.useRef;
-  let obj = skuId(analyticsLocations[19]);
+  let obj = skuId(analyticsLocations[17]);
   current = useRef(obj.v4()).current;
   const current2 = current.useRef(Date.now()).current;
-  let obj2 = skuId(analyticsLocations[10]);
+  let obj2 = skuId(analyticsLocations[8]);
   const virtualCurrencyBalance = obj2.useVirtualCurrencyBalance();
   const items = [analyticsLocations, skuId];
   const effect = current.useEffect(() => {
@@ -469,9 +229,9 @@ export default function _default(skuId) {
   const items1 = [skuId, current, analyticsLocations, current2, virtualCurrencyBalance];
   const obj3 = {};
   const obj4 = {
-    title: intl.string(skuId(analyticsLocations[20]).t.q9EGps),
+    title: intl.string(skuId(analyticsLocations[18]).t.q9EGps),
     headerShown: true,
-    headerLeft: getHeaderTextButton(intl2.string(skuId(analyticsLocations[20]).t["ETE/oC"]), callback),
+    headerLeft: getHeaderTextButton(intl2.string(skuId(analyticsLocations[18]).t["ETE/oC"]), callback),
     render() {
       let obj2;
       const obj = { skuId, loadId: current, onCheckoutSuccess: importDefault, analyticsLocations, children: unpackModuleId(OrbCheckoutModalScreen, obj2) };
@@ -493,11 +253,11 @@ export default function _default(skuId) {
     arr.pop();
   }, items1);
   const MAIN = constants3.MAIN;
-  intl = skuId(analyticsLocations[20]).intl;
-  getHeaderTextButton = skuId(analyticsLocations[21]).getHeaderTextButton;
-  skuId(analyticsLocations[21]);
-  intl2 = skuId(analyticsLocations[20]).intl;
+  intl = skuId(analyticsLocations[18]).intl;
+  getHeaderTextButton = skuId(analyticsLocations[19]).getHeaderTextButton;
+  skuId(analyticsLocations[19]);
+  intl2 = skuId(analyticsLocations[18]).intl;
   obj3[MAIN] = obj4;
   const obj5 = { screens: obj3, initialRouteName: constants3.MAIN, headerTitleAlign: "center" };
-  return closure_11(skuId(analyticsLocations[22]).Modal, obj5);
+  return closure_11(skuId(analyticsLocations[20]).Modal, obj5);
 };

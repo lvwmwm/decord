@@ -1,11 +1,11 @@
-// Module ID: 19132
-// Function ID: 19133
+// Module ID: 19235
+// Function ID: 19236
 // Name: VoicePanelControlUtils
-// Dependencies: [12057, 2]
+// Dependencies: [12233, 2]
 // Exports: getDrawerSpec
 
-// Module 19132 (VoicePanelControlUtils)
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12057 */;
+// Module 19235 (VoicePanelControlUtils)
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12233 */;
 import size from "module_2" /* 2 */;
 
 function getDrawerSpec(height, top) {

@@ -1,16 +1,16 @@
-// Module ID: 19828
-// Function ID: 19829
+// Module ID: 19891
+// Function ID: 19892
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 17078, 17093, 1125, 5947, 1199, 38, 5700, 2]
+// Dependencies: [5, 32, 19, 17132, 17147, 1114, 5954, 1188, 38, 5706, 2]
+// Exports: default
 
-// Module 19828 (useArchiveOrDelete)
-import intl13 from "intl" /* 1125 */;
-import ToastUtilsAll from "ToastUtils" /* 5700 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17093 */;
+// Module 19891 (useArchiveOrDelete)
+import intl13 from "intl" /* 1114 */;
+import ToastUtilsAll from "ToastUtils" /* 5706 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,463 +20,9 @@ let metroImportDefault;
 let metroRequire;
 let _slicedToArray = _slicedToArray_mod;
 ({ useEffect: metroRequire, useRef: metroImportDefault } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchiveOrDelete(arg0, arg1, arg2, arg3) {
-  let archiveSubscriptionListing;
-  let closure_0;
-  let closure_2;
-  let closure_3;
-  let deleteSubscriptionListing;
-  let error;
-  let obj7;
-  let obj9;
-  let stringResult3;
-  let submitting;
-  let submitting2;
-  let tmp14;
-  let tmp15;
-  let tmp16;
-  _require = arg0;
-  let closure_1 = arg1;
-  importAll = arg2;
-  dependencyMap = arg3;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(41);
-  let obj2 = require("GuildRoleSubscriptionsHooks");
-  const subscriptionListing = obj2.useSubscriptionListing(arg2);
-  let obj3 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const removeEditStateId = obj3.useEditStateIds(arg1, arg0).removeEditStateId;
-  let obj4 = require("GuildRoleSubscriptionsHooks");
-  const deleteSubscriptionListing1 = obj4.useDeleteSubscriptionListing();
-  ({ submitting, error, deleteSubscriptionListing } = deleteSubscriptionListing1);
-  let obj5 = require("GuildRoleSubscriptionsHooks");
-  const archiveSubscriptionListing1 = obj5.useArchiveSubscriptionListing();
-  ({ submitting: submitting2, archiveSubscriptionListing } = archiveSubscriptionListing1);
-  const error2 = archiveSubscriptionListing1.error;
-  const ref = removeEditStateId(null);
-  let obj6 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first = stringResult3(obj6.useName(arg2), 1)[0];
-  let archived;
-  if (subscriptionListing != null) {
-    archived = subscriptionListing.archived;
-  }
-  let tmp9 = true === archived;
-  let closure_11 = tmp9;
-  let closure_12 = tmp10;
-  if (error == null) {
-    error = error2;
-  }
-  if (cResult[0] === tmp9) {
-    if (cResult[1] === undefined === subscriptionListing) {
-      let stringResult2;
-      let stringResult1;
-      if (cResult[2] === first) {
-        stringResult2 = cResult[3];
-        stringResult3 = cResult[4];
-        stringResult1 = cResult[5];
-        tmp14 = cResult[6];
-        tmp15 = cResult[7];
-        tmp16 = cResult[8];
-      }
-      if (cResult[18] === tmp11) {
-        if (cResult[19] === tmp12) {
-          if (cResult[20] === tmp13) {
-            if (cResult[21] === archiveSubscriptionListing) {
-              if (cResult[22] === deleteSubscriptionListing) {
-                if (cResult[23] === arg2) {
-                  if (cResult[24] === arg1) {
-                    if (cResult[25] === arg0) {
-                      if (cResult[26] === tmp9) {
-                        if (cResult[27] === undefined === subscriptionListing) {
-                          if (cResult[28] === arg3) {
-                            let tmp33;
-                            let tmp36;
-                            let tmp35;
-                            if (cResult[29] === removeEditStateId) {
-                              tmp33 = cResult[30];
-                            }
-                            if (cResult[31] !== error) {
-                              class F {
-                                constructor() {
-                                  let tmp2;
-                                  const tmp = ref;
-                                  if (ref.current !== error) {
-                                    tmp2 = error;
-                                  }
-                                  if (null != tmp2) {
-                                    tmp.current = tmp2;
-                                    const presentFailedToast = ToastUtilsAll.presentFailedToast;
-                                    ToastUtilsAll;
-                                    const intl = intl13.intl;
-                                    presentFailedToast(intl.string(intl13.t.R0RpRX));
-                                  }
-                                }
-                              }
-                              const items = [error];
-                              cResult[31] = error;
-                              cResult[32] = F;
-                              cResult[33] = items;
-                              tmp36 = items;
-                              tmp35 = F;
-                            } else {
-                              class F {
-                                constructor() {
-                                  let tmp2;
-                                  const tmp = ref;
-                                  if (ref.current !== error) {
-                                    tmp2 = error;
-                                  }
-                                  if (null != tmp2) {
-                                    tmp.current = tmp2;
-                                    const presentFailedToast = ToastUtilsAll.presentFailedToast;
-                                    ToastUtilsAll;
-                                    const intl = intl13.intl;
-                                    presentFailedToast(intl.string(intl13.t.R0RpRX));
-                                  }
-                                }
-                              }
-                              tmp36 = cResult[33];
-                            }
-                            stringResult1(tmp35, tmp36);
-                            if (cResult[34] === submitting2) {
-                              class F {
-                                constructor() {
-                                  let tmp2;
-                                  const tmp = ref;
-                                  if (ref.current !== error) {
-                                    tmp2 = error;
-                                  }
-                                  if (null != tmp2) {
-                                    tmp.current = tmp2;
-                                    const presentFailedToast = ToastUtilsAll.presentFailedToast;
-                                    ToastUtilsAll;
-                                    const intl = intl13.intl;
-                                    presentFailedToast(intl.string(intl13.t.R0RpRX));
-                                  }
-                                }
-                              }
-                            }
-                            let obj8 = { headerText: tmp14, buttonText: tmp15, descriptionText: tmp16, handleArchiveOrDelete: tmp33, deleting: submitting, archiving: submitting2 };
-                            cResult[34] = submitting2;
-                            cResult[35] = tmp15;
-                            cResult[36] = submitting;
-                            cResult[37] = tmp16;
-                            cResult[38] = tmp33;
-                            cResult[39] = tmp14;
-                            cResult[40] = obj8;
-                            let tmp39 = obj8;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-      _require = stringResult2(function*(arg0, value) {
-        if (c2 === 2) {
-          c2 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            c2 = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
-                c2 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c2 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                const obj4 = { title, body, confirmText, confirmColor: tmp(closure_2_3[9]).ButtonColors.RED };
-                const _confirm = closure_2_1(closure_2_3[8]).confirm;
-                const tmp39 = closure_2_1(closure_2_3[8]);
-                c1 = 1;
-                c2 = 1;
-                const obj5 = { value: _confirm(obj4), done: false };
-                return obj5;
-              }
-            } else {
-              if (1 === c1) {
-                if (arg0 === 1) {
-                  c2 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c2 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else if (value) {
-                  const tmp9 = closure_1_12;
-                  if (tmp9) {
-                    removeEditStateId(c2);
-                    if (null != navigation) {
-                      navigation.goBack();
-                    }
-                  } else {
-                    closure_2_1(closure_2_3[10])(null != c1, "group listing id cannot be null");
-                    if (closure_1_11) {
-                      c1 = 3;
-                      c2 = 1;
-                      const obj7 = { value: deleteSubscriptionListing(tmp, c1, c2), done: false };
-                      return obj7;
-                    } else {
-                      c1 = 2;
-                      c2 = 1;
-                      const obj8 = { value: archiveSubscriptionListing(tmp, c1, c2), done: false };
-                      return obj8;
-                    }
-                  }
-                }
-              } else if (2 === c1) {
-                if (arg0 === 1) {
-                  c2 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c2 = 3;
-                  const obj9 = { value, done: true };
-                  return obj9;
-                }
-              } else if (arg0 === 1) {
-                c2 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c2 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else if (null != navigation) {
-                navigation.goBack();
-              }
-              c2 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } catch (tmp30) {
-            c2 = 3;
-            throw tmp30;
-          }
-        }
-      });
-      function handleArchiveOrDelete() {
-        return closure_0(...arguments);
-      }
-      cResult[18] = tmp11;
-      cResult[19] = tmp12;
-      cResult[20] = tmp13;
-      cResult[21] = archiveSubscriptionListing;
-      cResult[22] = deleteSubscriptionListing;
-      cResult[23] = arg2;
-      cResult[24] = arg1;
-      cResult[25] = arg0;
-      cResult[26] = tmp9;
-      cResult[27] = undefined === subscriptionListing;
-      cResult[28] = arg3;
-      cResult[29] = removeEditStateId;
-      cResult[30] = handleArchiveOrDelete;
-      tmp33 = handleArchiveOrDelete;
-    }
-  }
-  if (!tmp9) {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-    cResult[0] = tmp9;
-    cResult[1] = undefined === subscriptionListing;
-    cResult[2] = first;
-    cResult[3] = tmp21;
-    cResult[4] = tmp22;
-    cResult[5] = tmp20;
-    cResult[6] = tmp17;
-    cResult[7] = tmp18;
-    cResult[8] = tmp19;
-    tmp16 = tmp19;
-    tmp15 = tmp18;
-    tmp14 = tmp17;
-  }
-  if (cResult[9] !== first) {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-    const obj10 = { tierName: first };
-    const formatToPlainStringResult = obj7.formatToPlainString(tmp(1125).t.x2qwWL, obj10);
-    cResult[9] = first;
-    cResult[10] = formatToPlainStringResult;
-  } else {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-    const stringResult = obj9.string(tmp(1125).t.GMtG6p);
-    cResult[11] = stringResult;
-  } else {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-  }
-  if (cResult[12] !== (undefined === subscriptionListing)) {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-    const string = tmp28.string;
-    const t = tmp(1125).t;
-    if (undefined === subscriptionListing) {
-      class F {
-        constructor() {
-          let tmp2;
-          const tmp = ref;
-          if (ref.current !== error) {
-            tmp2 = error;
-          }
-          if (null != tmp2) {
-            tmp.current = tmp2;
-            const presentFailedToast = ToastUtilsAll.presentFailedToast;
-            ToastUtilsAll;
-            const intl = intl13.intl;
-            presentFailedToast(intl.string(intl13.t.R0RpRX));
-          }
-        }
-      }
-    } else {
-      class F {
-        constructor() {
-          let tmp2;
-          const tmp = ref;
-          if (ref.current !== error) {
-            tmp2 = error;
-          }
-          if (null != tmp2) {
-            tmp.current = tmp2;
-            const presentFailedToast = ToastUtilsAll.presentFailedToast;
-            ToastUtilsAll;
-            const intl = intl13.intl;
-            presentFailedToast(intl.string(intl13.t.R0RpRX));
-          }
-        }
-      }
-    }
-    cResult[12] = undefined === subscriptionListing;
-    cResult[13] = tmp29;
-  } else {
-    class F {
-      constructor() {
-        let tmp2;
-        const tmp = ref;
-        if (ref.current !== error) {
-          tmp2 = error;
-        }
-        if (null != tmp2) {
-          tmp.current = tmp2;
-          const presentFailedToast = ToastUtilsAll.presentFailedToast;
-          ToastUtilsAll;
-          const intl = intl13.intl;
-          presentFailedToast(intl.string(intl13.t.R0RpRX));
-        }
-      }
-    }
-  }
-  let intl = tmp(1125).intl;
-  stringResult1 = intl.string(tmp(1125).t["4H6RLl"]);
-  const intl2 = tmp(1125).intl;
-  stringResult2 = intl2.string(tmp(1125).t.uG6b1w);
-  const intl3 = tmp(1125).intl;
-  stringResult3 = intl3.string(tmp(1125).t.JoCdPC);
-}) : (function useArchiveOrDelete(arg0, arg1, arg2, arg3) {
-  let closure_0;
-  let closure_2;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/useArchiveOrDelete.tsx");
+
+export default function useArchiveOrDelete(guildId, groupListingId, editStateId, arg3) {
   let closure_3;
   let closure_5;
   let closure_8;
@@ -485,15 +31,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
   let stringResult3;
   let submitting;
   let submitting2;
-  _require = arg0;
-  let closure_1 = arg1;
-  importAll = arg2;
+  _require = guildId;
+  let closure_1 = groupListingId;
+  importAll = editStateId;
   dependencyMap = arg3;
-  let obj = function _handleArchiveOrDelete2() {
+  let obj = function _handleArchiveOrDelete() {
     let body;
     let confirmText;
     let title;
     obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
       let v2;
       if (c2 === 2) {
         c2 = 3;
@@ -505,7 +52,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -519,9 +66,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const obj4 = { title, body, confirmText, confirmColor: tmp(closure_1_3[9]).ButtonColors.RED };
-              const _confirm = c1(closure_1_3[8]).confirm;
-              const tmp39 = c1(closure_1_3[8]);
+              const obj4 = { title, body, confirmText, confirmColor: tmp(closure_1_3[7]).ButtonColors.RED };
+              const _confirm = c1(closure_1_3[6]).confirm;
+              const tmp39 = c1(closure_1_3[6]);
               c1 = 1;
               c2 = 1;
               const obj5 = { value: _confirm(obj4), done: false };
@@ -544,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
                     closure_128_3.goBack();
                   }
                 } else {
-                  c1(closure_1_3[10])(null != closure_128_1, "group listing id cannot be null");
+                  c1(closure_1_3[8])(null != closure_128_1, "group listing id cannot be null");
                   if (closure_128_11) {
                     c1 = 3;
                     c2 = 1;
@@ -578,7 +125,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c2 = 3;
@@ -591,9 +138,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
   let tmp = _require;
   let tmp2 = dependencyMap;
   obj = require("GuildRoleSubscriptionsHooks");
-  const subscriptionListing = obj.useSubscriptionListing(arg2);
+  const subscriptionListing = obj.useSubscriptionListing(editStateId);
   let obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const removeEditStateId = obj2.useEditStateIds(arg1, arg0).removeEditStateId;
+  const removeEditStateId = obj2.useEditStateIds(groupListingId, guildId).removeEditStateId;
   let obj3 = require("GuildRoleSubscriptionsHooks");
   const deleteSubscriptionListing = obj3.useDeleteSubscriptionListing();
   ({ error, deleteSubscriptionListing: closure_8, submitting } = deleteSubscriptionListing);
@@ -603,7 +150,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
   ({ submitting: submitting2, error: error2 } = archiveSubscriptionListing);
   const ref = removeEditStateId(null);
   let obj5 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const first = _slicedToArray(obj5.useName(arg2), 1)[0];
+  const first = _slicedToArray(obj5.useName(editStateId), 1)[0];
   let archived;
   if (subscriptionListing != null) {
     archived = subscriptionListing.archived;
@@ -620,19 +167,19 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
     let stringResult1;
     let closure_6;
     if (!tmp9) {
-      let intl = tmp(1125).intl;
+      let intl = tmp(1114).intl;
       let obj6 = { tierName: first };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1125).t.OuuIOY, obj6);
-      const intl2 = tmp(1125).intl;
-      stringResult = intl2.string(tmp(1125).t.RL0wjm);
-      const intl3 = tmp(1125).intl;
-      stringResult1 = intl3.string(tmp(1125).t["5/Jeg2"]);
-      const intl4 = tmp(1125).intl;
-      let closure_4 = intl4.string(tmp(1125).t.N5AIuE);
-      const intl5 = tmp(1125).intl;
-      _slicedToArray = intl5.string(tmp(1125).t.TEKiiP);
-      const intl6 = tmp(1125).intl;
-      closure_6 = intl6.string(tmp(1125).t["170XOL"]);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1114).t.OuuIOY, obj6);
+      const intl2 = tmp(1114).intl;
+      stringResult = intl2.string(tmp(1114).t.RL0wjm);
+      const intl3 = tmp(1114).intl;
+      stringResult1 = intl3.string(tmp(1114).t["5/Jeg2"]);
+      const intl4 = tmp(1114).intl;
+      let closure_4 = intl4.string(tmp(1114).t.N5AIuE);
+      const intl5 = tmp(1114).intl;
+      _slicedToArray = intl5.string(tmp(1114).t.TEKiiP);
+      const intl6 = tmp(1114).intl;
+      closure_6 = intl6.string(tmp(1114).t["170XOL"]);
     }
     const items = [error];
     closure_6(() => {
@@ -661,28 +208,25 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
     };
     return obj7;
   }
-  const intl7 = tmp(1125).intl;
-  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1125).t.x2qwWL, { tierName: first });
-  const intl8 = tmp(1125).intl;
-  const stringResult2 = intl8.string(tmp(1125).t.GMtG6p);
-  const intl9 = tmp(1125).intl;
+  const intl7 = tmp(1114).intl;
+  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1114).t.x2qwWL, { tierName: first });
+  const intl8 = tmp(1114).intl;
+  const stringResult2 = intl8.string(tmp(1114).t.GMtG6p);
+  const intl9 = tmp(1114).intl;
   const string = intl9.string;
-  const t = tmp(1125).t;
+  const t = tmp(1114).t;
   if (tmp9) {
     stringResult3 = string(t.DHWKJS);
   } else {
     stringResult3 = string(t.Y4KjUN);
   }
-  const intl10 = tmp(1125).intl;
-  closure_4 = intl10.string(tmp(1125).t["4H6RLl"]);
-  const intl11 = tmp(1125).intl;
-  _slicedToArray = intl11.string(tmp(1125).t.uG6b1w);
-  const intl12 = tmp(1125).intl;
-  closure_6 = intl12.string(tmp(1125).t.JoCdPC);
+  const intl10 = tmp(1114).intl;
+  closure_4 = intl10.string(tmp(1114).t["4H6RLl"]);
+  const intl11 = tmp(1114).intl;
+  _slicedToArray = intl11.string(tmp(1114).t.uG6b1w);
+  const intl12 = tmp(1114).intl;
+  closure_6 = intl12.string(tmp(1114).t.JoCdPC);
   stringResult1 = stringResult3;
   stringResult = stringResult2;
   formatToPlainStringResult = formatToPlainStringResult1;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/useArchiveOrDelete.tsx");
-
-export default tmp3;
+};

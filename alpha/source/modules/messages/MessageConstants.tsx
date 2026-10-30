@@ -1,13 +1,13 @@
-// Module ID: 5010
-// Function ID: 5011
+// Module ID: 5014
+// Function ID: 5015
 // Name: MessageConstants
-// Dependencies: [1084, 1101, 569, 2]
+// Dependencies: [1072, 1090, 559, 2]
 // Exports: isChannelStreamMessage
 
-// Module 5010 (MessageConstants)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import Backoff_mod from "Backoff" /* 569 */;
+// Module 5014 (MessageConstants)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import Backoff_mod from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
 let Backoff;

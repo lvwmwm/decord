@@ -1,24 +1,24 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12969
+// Function ID: 12970
 // Name: ConjureTimeFormat
 // Dependencies: [2]
 // Exports: formatClockTime
 
-// Module 12818 (ConjureTimeFormat)
+// Module 12969 (ConjureTimeFormat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureTimeFormat.tsx");
 
-export function formatClockTime(ts) {
+export function formatClockTime(date) {
   let str = arg1;
   if (arg1 === undefined) {
     str = "seconds";
   }
-  if (ts.length > 64) {
+  if (date.length > 64) {
     return null;
   } else {
     const _Date2 = Date;
-    const parsed = Date.parse(ts);
+    const parsed = Date.parse(date);
     const _Number = Number;
     if (Number.isNaN(parsed)) {
       return null;
@@ -26,7 +26,7 @@ export function formatClockTime(ts) {
       const _Date = Date;
       const self = this;
       const self2 = this;
-      const date = new Date(parsed);
+      date = new Date(parsed);
       const _String = String;
       const StringResult = String(date.getHours());
       const _String2 = String;

@@ -1,11 +1,11 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 16421
+// Function ID: 16422
 // Name: DisplayNameStylesActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 16369 (DisplayNameStylesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 16421 (DisplayNameStylesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesActionCreators.tsx");

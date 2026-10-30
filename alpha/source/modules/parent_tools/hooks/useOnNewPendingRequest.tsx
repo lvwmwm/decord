@@ -1,134 +1,42 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16729
+// Function ID: 16730
 // Name: useOnNewPendingRequest
-// Dependencies: [19, 7703, 558, 576, 8180, 504, 7705, 5300, 2]
+// Dependencies: [19, 7708, 8361, 504, 5588, 7710, 2]
+// Exports: default
 
-// Module 16676 (useOnNewPendingRequest)
+// Module 16729 (useOnNewPendingRequest)
 import react_mod from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let _require;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnNewPendingRequest(cResult) {
-  let fn3;
-  let items2;
-  let ref;
-  let ref2;
-  let stateFromStores;
-  let tmp11;
-  let tmp12;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const _require = cResult;
-  let tmp = _require;
-  let obj = require("react");
-  cResult = obj.c(10);
-  const obj2 = require("useUserLinks");
-  const pendingRequestCount = obj2.usePendingRequestCount();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ref2];
-    const fn = function c() {
-      return ref2.getAreLinkedUsersProcessed();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(stateFromStores[5]);
-  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function l() {
-      if (!ref2.getAreLinkedUsersProcessed()) {
-        const obj = pendingRequestCount(stateFromStores[6]);
-        const linkedUsers = obj.fetchLinkedUsers();
-        linkedUsers.catch(() => {
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
 
-        });
-      }
-    };
-    cResult[2] = fn2;
-    tmp9 = fn2;
-  } else {
-    tmp9 = cResult[2];
-  }
-  pendingRequestCount(stateFromStores[7])(tmp9);
-  react = react.useRef(cResult);
-  if (cResult[3] !== cResult) {
-    class P {
-      constructor() {
-        ref.current = current;
-      }
-    }
-    const items1 = [cResult];
-    cResult[3] = cResult;
-    cResult[4] = P;
-    cResult[5] = items1;
-    tmp12 = items1;
-    tmp11 = P;
-  } else {
-    class P {
-      constructor() {
-        ref.current = current;
-      }
-    }
-    tmp12 = cResult[5];
-  }
-  const effect = obj4.useEffect(tmp11, tmp12);
-  ref2 = obj4.useRef(null);
-  if (cResult[6] === stateFromStores) {
-    class P {
-      constructor() {
-        ref.current = current;
-      }
-    }
-    const effect1 = obj4.useEffect(fn3, items2);
-  }
-  fn3 = function h() {
-    const tmp = stateFromStores;
-    if (tmp) {
-      if (null != ref2.current) {
-        ref2.current = pendingRequestCount;
-        if (pendingRequestCount > ref2.current) {
-          ref.current();
-        }
-      } else {
-        ref2.current = pendingRequestCount;
-      }
-    }
-  };
-  items2 = [stateFromStores, pendingRequestCount];
-  cResult[6] = stateFromStores;
-  cResult[7] = pendingRequestCount;
-  cResult[8] = fn3;
-  cResult[9] = items2;
-}) : (function useOnNewPendingRequest(cResult) {
+export default function useOnNewPendingRequest(set) {
+  let current;
   let ref;
   let ref2;
   let stateFromStores;
-  const _require = cResult;
+  _require = set;
   let obj = require("useUserLinks");
   const pendingRequestCount = obj.usePendingRequestCount();
   const items = [ref2];
   const obj2 = require("get initialized");
   stateFromStores = obj2.useStateFromStores(items, () => ref2.getAreLinkedUsersProcessed());
-  pendingRequestCount(stateFromStores[7])(() => {
+  pendingRequestCount(stateFromStores[4])(() => {
     if (!ref2.getAreLinkedUsersProcessed()) {
-      const obj = pendingRequestCount(stateFromStores[6]);
+      const obj = pendingRequestCount(stateFromStores[5]);
       const linkedUsers = obj.fetchLinkedUsers();
       linkedUsers.catch(() => {
 
       });
     }
   });
-  react = react.useRef(cResult);
-  const items1 = [cResult];
+  react = react.useRef(set);
+  const items1 = [set];
   const effect = react.useEffect(() => {
     ref.current = current;
   }, items1);
@@ -147,7 +55,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnNewPe
       }
     }
   }, items2);
-});
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useOnNewPendingRequest.tsx");
-
-export default tmp2;
+};

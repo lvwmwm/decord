@@ -1,77 +1,31 @@
 // Module ID: 7165
 // Function ID: 7166
-// Dependencies: [19, 21, 1634, 7166, 1504, 7167, 6993, 7168]
+// Dependencies: [7166, 7173, 7167, 7180, 7172, 7178, 7179, 7190, 7170, 7196, 7197]
 
 // Module 7165
-import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1504 */;
-import react from "react" /* 19 */;
+import _mod7166 from "module_7166" /* 7166 */;
+import StackView from "StackView" /* 7167 */;
+import react from "react" /* 7170 */;
+import react_nativeAll from "react-native" /* 7172 */;
+import _mod7173 from "module_7173" /* 7173 */;
+import SlideFromRightIOSAll from "SlideFromRightIOS" /* 7178 */;
+import TransitionIOSSpecAll from "TransitionIOSSpec" /* 7179 */;
+import forHorizontalIOSAll from "forHorizontalIOS" /* 7180 */;
+import react2 from "react" /* 7190 */;
+import react3 from "react" /* 7196 */;
+import react4 from "react" /* 7197 */;
 
-const jsx = Fragment.jsx;
+const StackView_export = StackView.StackView;
 
-export const Header = react.memo(function Header(navigation) {
-  let back;
-  let headerBackTitle;
-  let href;
-  let layout;
-  let num;
-  let options;
-  let progress;
-  let route;
-  let styleInterpolator;
-  let tmp9;
-  let tmpResult2;
-  ({ back, options, route } = navigation);
-  navigation = navigation.navigation;
-  let tmp = route;
-  ({ layout, progress, styleInterpolator } = navigation);
-  const obj = route(navigation[2]);
-  const safeAreaInsets = obj.useSafeAreaInsets();
-  if (undefined !== options.headerBackTitle) {
-    headerBackTitle = options.headerBackTitle;
-  } else if (back) {
-    headerBackTitle = back.title;
-  }
-  const items = [navigation, route.key];
-  const useCallback = react.useCallback;
-  const tmpResult = tmp(navigation[3]);
-  const callback = useCallback(tmpResult.throttle(() => {
-    const tmp = navigation.isFocused() && navigation.canGoBack();
-    if (tmp) {
-      const dispatch = obj.dispatch;
-      const obj2 = { source: route.key };
-      const StackActions = Link.StackActions;
-      const merged = Object.assign(StackActions.pop());
-      dispatch(obj2);
-    }
-  }, 50), items);
-  const context = react.useContext(tmp(tmp2[5]).ModalPresentationContext);
-  if (undefined !== options.headerStatusBarHeight) {
-    num = options.headerStatusBarHeight;
-  } else {
-    num = 0;
-    if (!context) {
-      num = 0;
-      if (!tmp6) {
-        num = safeAreaInsets.top;
-      }
-    }
-  }
-  let obj2 = { title: tmpResult2.getHeaderTitle(options, route.name), progress, layout, modal: context, headerBackTitle, headerStatusBarHeight: num, onGoBack: tmp9, backHref: href, styleInterpolator };
-  const HeaderSegment = tmp(tmp2[7]).HeaderSegment;
-  let merged = Object.assign(options);
-  const tmp7 = jsx;
-  tmpResult2 = tmp(navigation[6]);
-  if (undefined !== options.headerBackTitle) {
-    headerBackTitle = options.headerBackTitle;
-  }
-  tmp9 = undefined;
-  if (back) {
-    tmp9 = callback;
-  }
-  href = undefined;
-  if (back) {
-    href = back.href;
-  }
-  return tmp7(HeaderSegment, obj2);
-});
+export const createStackNavigator = _mod7166.createStackNavigator;
+export const createStackScreen = _mod7166.createStackScreen;
+export const Header = _mod7173.Header;
+export { StackView_export as StackView };
+export const CardStyleInterpolators = forHorizontalIOSAll;
+export const HeaderStyleInterpolators = react_nativeAll;
+export const TransitionPresets = SlideFromRightIOSAll;
+export const TransitionSpecs = TransitionIOSSpecAll;
+export const CardAnimationContext = react2.CardAnimationContext;
+export const GestureHandlerRefContext = react.GestureHandlerRefContext;
+export const useCardAnimation = react3.useCardAnimation;
+export const useGestureHandlerRef = react4.useGestureHandlerRef;

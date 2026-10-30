@@ -1,28 +1,23 @@
-// Module ID: 17998
-// Function ID: 17999
+// Module ID: 18061
+// Function ID: 18062
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 17163, 21, 12185, 587, 5005, 558, 576, 5289, 17999, 9469, 2]
+// Dependencies: [19, 17, 17217, 21, 12344, 575, 5009, 5591, 9488, 18062, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 17998 (MessagesItemHappeningNow)
+// Module 18061 (MessagesItemHappeningNow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12185 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9488 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12344 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17163 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let HappeningNowItem;
 let closure_4;
-let tmp;
-let tmp4;
-const CutoutBackgroundContext = tmp(9469);
-const HappeningNowDefault = tmp4(17999);
 const View = react_native.View;
 ({ HAPPENING_NOW_CARD_HEIGHT: closure_4, HappeningNowItem } = HappeningNowConstants);
 const jsx = Fragment.jsx;
@@ -34,41 +29,13 @@ let closure_7 = createStyles.createStyles((height) => {
   ({ height, paddingStart: nativeDefault.space.PX_8, overflow: "hidden" });
   return obj;
 });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MessagesItemHappeningNow(listRef) {
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(5);
-  listRef = listRef.listRef;
-  const obj2 = useToken;
-  const tmp5 = closure_7(React3 + obj2.useToken(nativeDefault.modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM));
-  if (cResult[0] !== listRef) {
-    const tmp9 = jsx(HappeningNowDefault, { cards: set, listRef });
-    cResult[0] = listRef;
-    cResult[1] = tmp9;
-    tmp6 = tmp9;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp5.container) {
-    let tmp10;
-    if (cResult[3] === tmp6) {
-      tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const CutoutBackgroundProvider = CutoutBackgroundContext.CutoutBackgroundProvider;
-  const tmp11 = <CutoutBackgroundProvider backgroundColor={null}>{null}</CutoutBackgroundProvider>;
-  cResult[2] = tmp5.container;
-  cResult[3] = tmp6;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function MessagesItemHappeningNow(listRef) {
+const memoResult = react.memo(function MessagesItemHappeningNow(listRef) {
   listRef = listRef.listRef;
   const obj = useToken;
   ({ style: closure_7(React3 + obj.useToken(nativeDefault.modules.mobile.MESSAGES_ITEM_HAPPENING_NOW_PADDING_BOTTOM)).container, collapsable: false, children: null });
   const CutoutBackgroundProvider = CutoutBackgroundContext.CutoutBackgroundProvider;
   return <CutoutBackgroundProvider backgroundColor={null}>{null}</CutoutBackgroundProvider>;
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/items/MessagesItemHappeningNow.tsx");
 
 export default memoResult;

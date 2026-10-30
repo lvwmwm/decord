@@ -1,53 +1,32 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16680
+// Function ID: 16681
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8387, 558, 576, 16621, 8645, 7458, 16622, 1125, 11302, 16624, 2]
+// Dependencies: [8424, 16674, 8679, 7466, 16675, 1114, 11505, 16677, 2]
 
-// Module 16627 (GoreMediaFiltersFriendsDMsSetting)
-import react from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7458 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16621 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16622 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16624 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 16680 (GoreMediaFiltersFriendsDMsSetting)
+import intl4 from "intl" /* 1114 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7466 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8679 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16674 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16675 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16677 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const ExplicitMediaRedactionUtils = tmp(8645);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-function getTitle() {
-  const intl = intl4.intl;
-  return intl.string(intl4.t["+uI23H"]);
-}
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentFriendsDmSettingValue() {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = useExplicitContentSettingsOrDefault;
-  const goreContentFriendDm = obj2.useGoreContentSettingOrDefault().goreContentFriendDm;
-  if (cResult[0] !== goreContentFriendDm) {
-    const tmpResult = ExplicitMediaRedactionUtils;
-    const tmp5 = tmpResult.redactionSettingToRenderedString(goreContentFriendDm)();
-    cResult[0] = goreContentFriendDm;
-    cResult[1] = tmp5;
-    tmp4 = tmp5;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useGoreContentFriendsDmSettingValue() {
-  const obj = useExplicitContentSettingsOrDefault;
-  const goreContentFriendDm = obj.useGoreContentSettingOrDefault().goreContentFriendDm;
-  const obj2 = ExplicitMediaRedactionUtils;
-  return obj2.redactionSettingToRenderedString(goreContentFriendDm)();
-});
 let obj = {
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = intl4.intl;
+    return intl.string(intl4.t["+uI23H"]);
+  },
   parent: MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
-  useTrailing: tmp2,
+  useTrailing: function useGoreContentFriendsDmSettingValue() {
+    const obj = useExplicitContentSettingsOrDefault;
+    const goreContentFriendDm = obj.useGoreContentSettingOrDefault().goreContentFriendDm;
+    const obj2 = ExplicitMediaRedactionUtils;
+    return obj2.redactionSettingToRenderedString(goreContentFriendDm)();
+  },
   onPress: function onGoreContentFriendsDmOnPress() {
     let intl;
     let intl2;

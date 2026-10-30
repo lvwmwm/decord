@@ -1,187 +1,41 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11671
+// Function ID: 11672
 // Name: usePipVideoOrStream
-// Dependencies: [4856, 6830, 11471, 6701, 502, 4857, 2012, 5752, 5670, 558, 576, 6704, 5187, 11460, 504, 2]
+// Dependencies: [4857, 6837, 11672, 6708, 502, 4858, 2007, 5759, 5676, 504, 6711, 5193, 11661, 2]
+// Exports: default, useHasPipParticipant
 
-// Module 11470 (usePipVideoOrStream)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 11460 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
-import VideoSpeakerStore from "VideoSpeakerStore" /* 11471 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
+// Module 11671 (usePipVideoOrStream)
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
+import VideoSpeakerStore from "VideoSpeakerStore" /* 11672 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import CallConstants from "CallConstants" /* 5670 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import CallConstants from "CallConstants" /* 5676 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, allActiveStreamsForChannel;
 
 let closure_12;
 let map1;
 let unpackModuleId;
 ({ isStreamParticipant: unpackModuleId, isUserParticipant: closure_12, ParticipantTypes: map1 } = CallConstants);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoOrStream(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelRTCStore, VideoSpeakerStore, ApplicationStreamingStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let allActiveStreamsForChannel;
-      let tmp8;
-      let videoParticipants;
-      let videoParticipants1;
-      if (null != closure_0) {
-        videoParticipants = ChannelRTCStore.getVideoParticipants(tmp);
-      } else {
-        videoParticipants = [];
-      }
-      let selectedParticipant = null;
-      if (null != closure_0) {
-        selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
-      }
-      const found = videoParticipants.find((type) => type.type === constants.USER && !type.localVideoDisabled);
-      let obj = VideoSpeakerStore;
-      let obj2 = ChannelRTCStore;
-      if (null != closure_0) {
-        videoParticipants1 = obj2.getVideoParticipants(tmp);
-      } else {
-        videoParticipants1 = [];
-      }
-      let participant = null;
-      const found1 = videoParticipants1.find((id) => {
-        let tmp = id.id !== id.getId();
-        if (tmp) {
-          const tmp3 = closure_1_12(id);
-          let localVideoDisabled = !tmp3;
-          if (tmp3) {
-            localVideoDisabled = id.localVideoDisabled;
-          }
-          tmp = localVideoDisabled;
-        }
-        return tmp;
-      });
-      if (null != closure_0) {
-        participant = obj2.getParticipant(tmp, obj.getSpeaker(tmp));
-      }
-      if (participant == null) {
-        participant = found1;
-      }
-      if (!authStore2(participant)) {
-        tmp8 = participant;
-      } else {
-        tmp8 = null;
-      }
-      if (null != closure_0) {
-        allActiveStreamsForChannel = ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp);
-      } else {
-        allActiveStreamsForChannel = [];
-      }
-      let c0 = tmp8;
-      let tmp10 = tmp8;
-      if (unpackModuleId(tmp8)) {
-        if (allActiveStreamsForChannel.filter((streamType) => {
-          let id;
-          const obj = closure_2_0(closure_2_2[11]);
-          const obj2 = { streamType: streamType.streamType, guildId: streamType.guildId, channelId: streamType.channelId, ownerId: streamType.ownerId };
-          const encodeStreamKeyResult = obj.encodeStreamKey(obj2);
-          if (_undefined != null) {
-            id = _undefined.id;
-          }
-          return encodeStreamKeyResult === id;
-        }).length <= 0) {
-          c0 = undefined;
-        }
-        tmp10 = tmp8;
-      }
-      let tmp11 = tmp10;
-      if (tmp10 == null) {
-        tmp11 = found;
-      }
-      let isModalOpenResult = null != tmp && null != selectedParticipant;
-      if (isModalOpenResult) {
-        let id1;
-        let id = selectedParticipant.id;
-        if (tmp10 != null) {
-          id1 = tmp10.id;
-        }
-        isModalOpenResult = id === id1;
-      }
-      if (isModalOpenResult) {
-        isModalOpenResult = null != tmp11;
-      }
-      if (isModalOpenResult) {
-        let id3;
-        const id2 = tmp11.id;
-        if (tmp10 != null) {
-          id3 = tmp10.id;
-        }
-        isModalOpenResult = id2 === id3;
-      }
-      if (isModalOpenResult) {
-        const obj3 = NavigationRouteUtils;
-        isModalOpenResult = obj3.isModalOpen(ChannelCallModalDefault);
-      }
-      if (isModalOpenResult) {
-        isModalOpenResult = !obj2.getChatOpen(tmp);
-      }
-      if (isModalOpenResult) {
-        tmp11 = found;
-      }
-      let tmp18 = null;
-      if (null != tmp11) {
-        tmp18 = null;
-        if (tmp11.type !== map1.ACTIVITY) {
-          tmp18 = null;
-          if (null != tmp11.streamId) {
-            tmp18 = tmp11;
-          }
-        }
-      }
-      return tmp18;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8, tmp9);
-}) : (function usePipVideoOrStream(arg0) {
+const result = size.fileFinishedImporting("modules/video_calls/native/usePipVideoOrStream.tsx");
+
+export default function usePipVideoOrStream(arg0) {
   let closure_0;
   _require = arg0;
-  let obj = require("get initialized");
   const items = [ChannelRTCStore, VideoSpeakerStore, ApplicationStreamingStore];
   const items1 = [arg0];
+  const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    let allActiveStreamsForChannel;
-    let tmp8;
     let videoParticipants;
     let videoParticipants1;
-    let tmp = closure_0;
-    if (null != closure_0) {
+    let tmp = stateFromStores;
+    if (null != stateFromStores) {
       videoParticipants = ChannelRTCStore.getVideoParticipants(tmp);
     } else {
       videoParticipants = [];
@@ -217,22 +71,25 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoO
     if (participant == null) {
       participant = found1;
     }
-    if (!authStore2(participant)) {
-      tmp8 = participant;
-    } else {
-      tmp8 = null;
+    let tmp8 = participant;
+    if (closure_2_12(participant)) {
+      let tmp9 = null;
+      if (!participant.localVideoDisabled) {
+        tmp9 = participant;
+      }
+      tmp8 = tmp9;
     }
     if (null != tmp) {
-      allActiveStreamsForChannel = ApplicationStreamingStore.getAllActiveStreamsForChannel(tmp);
+      allActiveStreamsForChannel = allActiveStreamsForChannel.getAllActiveStreamsForChannel(tmp);
     } else {
       allActiveStreamsForChannel = [];
     }
     let c0 = tmp8;
-    let tmp10 = tmp8;
-    if (unpackModuleId(tmp8)) {
+    let tmp11 = tmp8;
+    if (closure_2_11(tmp8)) {
       if (allActiveStreamsForChannel.filter((streamType) => {
         id = undefined;
-        const obj = closure_2_0(closure_2_2[11]);
+        const obj = stateFromStores(closure_2_2[10]);
         const obj2 = { streamType: streamType.streamType, guildId: streamType.guildId, channelId: streamType.channelId, ownerId: streamType.ownerId };
         const encodeStreamKeyResult = obj.encodeStreamKey(obj2);
         if (_undefined != null) {
@@ -242,157 +99,201 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePipVideoO
       }).length <= 0) {
         c0 = undefined;
       }
-      tmp10 = tmp8;
+      tmp11 = tmp8;
     }
-    let tmp11 = tmp10;
-    if (tmp10 == null) {
-      tmp11 = found;
+    let tmp12 = tmp11;
+    if (tmp11 == null) {
+      tmp12 = found;
     }
     let isModalOpenResult = null != tmp && null != selectedParticipant;
     if (isModalOpenResult) {
       let id1;
       let id = selectedParticipant.id;
-      if (tmp10 != null) {
-        id1 = tmp10.id;
+      if (tmp11 != null) {
+        id1 = tmp11.id;
       }
       isModalOpenResult = id === id1;
     }
     if (isModalOpenResult) {
-      isModalOpenResult = null != tmp11;
+      isModalOpenResult = null != tmp12;
     }
     if (isModalOpenResult) {
       let id3;
-      const id2 = tmp11.id;
-      if (tmp10 != null) {
-        id3 = tmp10.id;
+      const id2 = tmp12.id;
+      if (tmp11 != null) {
+        id3 = tmp11.id;
       }
       isModalOpenResult = id2 === id3;
     }
     if (isModalOpenResult) {
-      const obj3 = NavigationRouteUtils;
-      isModalOpenResult = obj3.isModalOpen(ChannelCallModalDefault);
+      const obj3 = isActivityViewFocused(stateFromStores1[11]);
+      isModalOpenResult = obj3.isModalOpen(stateFromStores(stateFromStores1[12]));
     }
     if (isModalOpenResult) {
       isModalOpenResult = !obj2.getChatOpen(tmp);
     }
     if (isModalOpenResult) {
-      tmp11 = found;
+      tmp12 = found;
     }
-    let tmp18 = null;
-    if (null != tmp11) {
-      tmp18 = null;
-      if (tmp11.type !== map1.ACTIVITY) {
-        tmp18 = null;
-        if (null != tmp11.streamId) {
-          tmp18 = tmp11;
+    let tmp19 = null;
+    if (null != tmp12) {
+      tmp19 = null;
+      if (tmp12.type !== constants.ACTIVITY) {
+        tmp19 = null;
+        if (null != tmp12.streamId) {
+          tmp19 = tmp12;
         }
       }
     }
-    return tmp18;
+    return tmp19;
   }, items1);
-});
-let closure_14 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPipParticipant(isActivityViewFocused) {
+};
+export function useHasPipParticipant(isActivityViewFocused) {
   let channelId;
-  let streamId;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  const obj = isActivityViewFocused(576);
-  const cResult = obj.c(8);
   isActivityViewFocused = isActivityViewFocused.isActivityViewFocused;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp6 = RTCConnectionStore;
-    const items = [RTCConnectionStore];
-    const fn = function o() {
-      return channelId.getChannelId();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = isActivityViewFocused(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmp8 = closure_14;
-  const tmp8Result = tmp8(stateFromStores);
-  dependencyMap = tmp8Result;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ChannelStore, EmbeddedActivitiesStore, MediaEngineStore];
-    cResult[2] = items1;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[2];
-  }
-  if (cResult[3] === stateFromStores) {
-    if (cResult[4] === isActivityViewFocused) {
-      let tmp15;
-      let tmp16;
-      if (cResult[5] === tmp8Result) {
-        tmp15 = cResult[6];
-        tmp16 = cResult[7];
-      }
-      const tmpResult2 = isActivityViewFocused(504);
-      return tmpResult2.useStateFromStores(tmp11, tmp15, tmp16);
-    }
-  }
-  const fn2 = function v() {
-    if (null == ChannelStore.getChannel(stateFromStores)) {
-      return false;
-    } else {
-      let isLocalVideoDisabledResult = null != streamId;
-      const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-      if (isLocalVideoDisabledResult) {
-        isLocalVideoDisabledResult = MediaEngineStore.isLocalVideoDisabled(tmp3.id);
-      }
-      let tmp6 = null != currentEmbeddedActivity && !isActivityViewFocused;
-      if (!tmp6) {
-        tmp6 = null != streamId && null != streamId.streamId && !isLocalVideoDisabledResult;
-      }
-      return tmp6;
-    }
-  };
-  const items2 = [stateFromStores, tmp8Result, isActivityViewFocused];
-  cResult[3] = stateFromStores;
-  cResult[4] = isActivityViewFocused;
-  cResult[5] = tmp8Result;
-  cResult[6] = fn2;
-  cResult[7] = items2;
-  tmp16 = items2;
-  tmp15 = fn2;
-}) : (function useHasPipParticipant(isActivityViewFocused) {
-  let channelId;
-  let streamId;
-  isActivityViewFocused = isActivityViewFocused.isActivityViewFocused;
+  let stateFromStores1;
+  let tmp = isActivityViewFocused;
+  const tmp2 = stateFromStores1;
+  let obj = isActivityViewFocused(stateFromStores1[9]);
   const items = [RTCConnectionStore];
-  const obj = isActivityViewFocused(504);
-  const stateFromStores = obj.useStateFromStores(items, () => channelId.getChannelId());
-  const tmp4Result = closure_14(stateFromStores);
-  dependencyMap = tmp4Result;
-  const items1 = [ChannelStore, EmbeddedActivitiesStore, MediaEngineStore];
-  const items2 = [stateFromStores, tmp4Result, isActivityViewFocused];
-  const tmpResult = isActivityViewFocused(504);
-  return tmpResult.useStateFromStores(items1, () => {
+  obj.useStateFromStores(items, () => channelId.getChannelId());
+  const stateFromStores = tmp4;
+  const items1 = [ChannelRTCStore, VideoSpeakerStore, ApplicationStreamingStore];
+  const items2 = [tmp4];
+  const tmpResult = tmp(tmp2[9]);
+  stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
+    let videoParticipants;
+    let videoParticipants1;
+    let tmp = stateFromStores;
+    if (null != stateFromStores) {
+      videoParticipants = ChannelRTCStore.getVideoParticipants(tmp);
+    } else {
+      videoParticipants = [];
+    }
+    let selectedParticipant = null;
+    if (null != tmp) {
+      selectedParticipant = ChannelRTCStore.getSelectedParticipant(tmp);
+    }
+    const found = videoParticipants.find((type) => type.type === constants.USER && !type.localVideoDisabled);
+    let obj = VideoSpeakerStore;
+    let obj2 = ChannelRTCStore;
+    if (null != tmp) {
+      videoParticipants1 = obj2.getVideoParticipants(tmp);
+    } else {
+      videoParticipants1 = [];
+    }
+    let participant = null;
+    const found1 = videoParticipants1.find((id) => {
+      let tmp = id.id !== id.getId();
+      if (tmp) {
+        const tmp3 = closure_1_12(id);
+        let localVideoDisabled = !tmp3;
+        if (tmp3) {
+          localVideoDisabled = id.localVideoDisabled;
+        }
+        tmp = localVideoDisabled;
+      }
+      return tmp;
+    });
+    if (null != tmp) {
+      participant = obj2.getParticipant(tmp, obj.getSpeaker(tmp));
+    }
+    if (participant == null) {
+      participant = found1;
+    }
+    let tmp8 = participant;
+    if (closure_2_12(participant)) {
+      let tmp9 = null;
+      if (!participant.localVideoDisabled) {
+        tmp9 = participant;
+      }
+      tmp8 = tmp9;
+    }
+    if (null != tmp) {
+      allActiveStreamsForChannel = allActiveStreamsForChannel.getAllActiveStreamsForChannel(tmp);
+    } else {
+      allActiveStreamsForChannel = [];
+    }
+    let c0 = tmp8;
+    let tmp11 = tmp8;
+    if (closure_2_11(tmp8)) {
+      if (allActiveStreamsForChannel.filter((streamType) => {
+        id = undefined;
+        const obj = stateFromStores(closure_2_2[10]);
+        const obj2 = { streamType: streamType.streamType, guildId: streamType.guildId, channelId: streamType.channelId, ownerId: streamType.ownerId };
+        const encodeStreamKeyResult = obj.encodeStreamKey(obj2);
+        if (_undefined != null) {
+          id = _undefined.id;
+        }
+        return encodeStreamKeyResult === id;
+      }).length <= 0) {
+        c0 = undefined;
+      }
+      tmp11 = tmp8;
+    }
+    let tmp12 = tmp11;
+    if (tmp11 == null) {
+      tmp12 = found;
+    }
+    let isModalOpenResult = null != tmp && null != selectedParticipant;
+    if (isModalOpenResult) {
+      let id1;
+      let id = selectedParticipant.id;
+      if (tmp11 != null) {
+        id1 = tmp11.id;
+      }
+      isModalOpenResult = id === id1;
+    }
+    if (isModalOpenResult) {
+      isModalOpenResult = null != tmp12;
+    }
+    if (isModalOpenResult) {
+      let id3;
+      const id2 = tmp12.id;
+      if (tmp11 != null) {
+        id3 = tmp11.id;
+      }
+      isModalOpenResult = id2 === id3;
+    }
+    if (isModalOpenResult) {
+      const obj3 = isActivityViewFocused(stateFromStores1[11]);
+      isModalOpenResult = obj3.isModalOpen(stateFromStores(stateFromStores1[12]));
+    }
+    if (isModalOpenResult) {
+      isModalOpenResult = !obj2.getChatOpen(tmp);
+    }
+    if (isModalOpenResult) {
+      tmp12 = found;
+    }
+    let tmp19 = null;
+    if (null != tmp12) {
+      tmp19 = null;
+      if (tmp12.type !== constants.ACTIVITY) {
+        tmp19 = null;
+        if (null != tmp12.streamId) {
+          tmp19 = tmp12;
+        }
+      }
+    }
+    return tmp19;
+  }, items2);
+  const items3 = [ChannelStore, EmbeddedActivitiesStore, MediaEngineStore];
+  const items4 = [stateFromStores, stateFromStores1, isActivityViewFocused];
+  const tmpResult2 = tmp(tmp2[9]);
+  return tmpResult2.useStateFromStores(items3, () => {
     if (null == ChannelStore.getChannel(stateFromStores)) {
       return false;
     } else {
-      let isLocalVideoDisabledResult = null != streamId;
+      let isLocalVideoDisabledResult = null != stateFromStores1;
       const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
       if (isLocalVideoDisabledResult) {
         isLocalVideoDisabledResult = MediaEngineStore.isLocalVideoDisabled(tmp3.id);
       }
       let tmp6 = null != currentEmbeddedActivity && !isActivityViewFocused;
       if (!tmp6) {
-        tmp6 = null != streamId && null != streamId.streamId && !isLocalVideoDisabledResult;
+        tmp6 = null != stateFromStores1 && null != stateFromStores1.streamId && !isLocalVideoDisabledResult;
       }
       return tmp6;
     }
-  }, items2);
-});
-const result = size.fileFinishedImporting("modules/video_calls/native/usePipVideoOrStream.tsx");
-
-export default tmp3;
-export const useHasPipParticipant = tmp4;
+  }, items4);
+}

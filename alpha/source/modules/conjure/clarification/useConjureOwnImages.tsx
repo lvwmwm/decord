@@ -1,19 +1,19 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12722
+// Function ID: 12723
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1125, 3864, 12290, 2]
+// Dependencies: [109, 32, 19, 1114, 3865, 12453, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 12572 (useConjureOwnImages)
-import _modDef3864 from "module_3864" /* 3864 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12290 */;
+// Module 12722 (useConjureOwnImages)
+import _modDef3865 from "module_3865" /* 3865 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12453 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, id, importDefault;
+let _require, closure_1, dependencyMap, id, importDefault;
 
 function onPick() {
 
@@ -60,24 +60,25 @@ let result = size.fileFinishedImporting("modules/conjure/clarification/useConjur
 export function inertOwnImageControls(image, selected) {
   return { image, selected, busy: null, error: null, onPick, onRemove, onUpload, onLink };
 }
-export function useConjureOwnImages(projectId, first1, arg2) {
+export function useConjureOwnImages(projectId, arg1, arg2) {
   let closure_2;
   let closure_4;
   let closure_6;
   let closure_8;
   let first;
+  let first1;
   let first2;
   _require = projectId;
-  importDefault = first1;
+  importDefault = arg1;
   dependencyMap = arg2;
   [first, _slicedToArray] = first1.useState({});
   [first1, closure_6] = first1.useState({});
   [first2, closure_8] = first1.useState({});
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef3864.wTsP5l);
+  const stringResult = intl.string(_modDef3865.wTsP5l);
   const text = stringResult;
   let items = [first];
-  const items1 = [first1, first, first2];
+  const items1 = [arg1, first, first2];
   const callback = first1.useCallback((arg0) => {
     let tmp = first[arg0];
     if (tmp == null) {
@@ -93,7 +94,7 @@ export function useConjureOwnImages(projectId, first1, arg2) {
         tmp5 = true === first2[multi_select.id];
       } else {
         let kind;
-        if (first1[multi_select.id] != null) {
+        if (closure_1[multi_select.id] != null) {
           kind = tmp3.kind;
         }
         tmp5 = "image" === kind;
@@ -103,7 +104,7 @@ export function useConjureOwnImages(projectId, first1, arg2) {
     return tmp;
   }, items1);
   const items2 = [stringResult, first, first2];
-  const items3 = [stringResult, first1, first, projectId, callback1, arg2, first1];
+  const items3 = [stringResult, arg1, first, projectId, callback1, arg2, first1];
   const callback2 = first1.useCallback((arg0) => {
     let tmp2;
     if (null != first[arg0.id]) {
@@ -121,17 +122,16 @@ export function useConjureOwnImages(projectId, first1, arg2) {
     controlsFor: first1.useCallback((id, arg1) => {
       let _null;
       let busy;
-      let closure_1;
       let closure_3;
       let error;
-      const f163402 = (arg0) => {
+      const f136505 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
         return obj;
       };
       id = id.id;
-      first1 = true === id.multi_select;
+      closure_1 = true === id.multi_select;
       let tmp = first[id];
       if (tmp == null) {
         tmp = null;
@@ -141,8 +141,8 @@ export function useConjureOwnImages(projectId, first1, arg2) {
         let obj2 = { image: tmp, selected: callback1(id), busy: null, error: null, onPick, onRemove, onUpload, onLink };
         return obj2;
       } else {
-        let tmp2 = first1;
-        first = first1[id];
+        let tmp2 = closure_1;
+        first = closure_1[id];
         let obj = {
           image: tmp,
           selected: callback1(id),
@@ -245,7 +245,7 @@ export function useConjureOwnImages(projectId, first1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f163402);
+                    closure_1_8(f136505);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -308,7 +308,7 @@ export function useConjureOwnImages(projectId, first1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f163402);
+                  closure_1_8(f136505);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

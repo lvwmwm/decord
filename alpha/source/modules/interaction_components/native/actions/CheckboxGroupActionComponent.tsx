@@ -1,186 +1,15 @@
-// Module ID: 19377
-// Function ID: 19378
+// Module ID: 19440
+// Function ID: 19441
 // Name: CheckboxGroupActionComponent
-// Dependencies: [19, 21, 558, 576, 8654, 6960, 7047, 2]
+// Dependencies: [19, 21, 8688, 7054, 6968, 2]
 
-// Module 19377 (CheckboxGroupActionComponent)
+// Module 19440 (CheckboxGroupActionComponent)
 import Fragment from "Fragment" /* 21 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 6960 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let jsx = Fragment.jsx;
-let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function CheckboxGroupActionComponent(type) {
-  let arr;
-  let closure_3;
-  let executeStateUpdate;
-  let maxValues;
-  let options;
-  let state;
-  let tmp2 = maxValues;
-  let obj = type(maxValues[3]);
-  const cResult = obj.c(25);
-  type = type.type;
-  ({ options, maxValues } = type);
-  if (cResult[0] !== options) {
-    let tmp5;
-    let tmp6;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function n(arg0) {
-        return arg0.default;
-      };
-      cResult[2] = fn;
-      tmp5 = fn;
-    } else {
-      tmp5 = cResult[2];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function u(value) {
-        return value.value;
-      };
-      cResult[3] = fn2;
-      tmp6 = fn2;
-    } else {
-      tmp6 = cResult[3];
-    }
-    let found = options.filter(tmp5);
-    const mapped = found.map(tmp6);
-    cResult[0] = options;
-    cResult[1] = mapped;
-    arr = mapped;
-  } else {
-    arr = cResult[1];
-  }
-  if (cResult[4] === arr) {
-    let tmp8;
-    if (cResult[5] === type) {
-      tmp8 = cResult[6];
-    }
-    const tmpResult = type(tmp2[4]);
-    const componentState = tmpResult.useComponentState(type, tmp8);
-    ({ state, executeStateUpdate } = componentState);
-    if (cResult[7] === state) {
-      let tmp11;
-      if (cResult[8] === type) {
-        tmp11 = cResult[9];
-      }
-      jsx = tmp11;
-      if (cResult[10] === executeStateUpdate) {
-        if (cResult[11] === type) {
-          let tmp15;
-          let tmp16;
-          if (cResult[12] === tmp11) {
-            tmp15 = cResult[13];
-          }
-          let closure_4 = tmp15;
-          if (cResult[14] === tmp15) {
-            if (cResult[15] === maxValues) {
-              if (cResult[16] === options) {
-                let tmp19;
-                if (cResult[17] === tmp11) {
-                  tmp16 = cResult[18];
-                }
-                if (cResult[23] !== tmp16) {
-                  const tmp21 = jsx(type(tmp2[6]).TableRowGroup, { hasIcons: false, children: tmp16 });
-                  class G {
-                    constructor(label) {
-                      const hasItem = closure_3.includes(label.value);
-                      const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
-                      return <TableCheckboxRow key={arg0.value} label={arg0.label} subLabel={arg0.description} checked={hasItem} onPress={closure_4(arg0.value)} disabled={closure_3.length >= maxValues && !hasItem} />;
-                    }
-                  }
-                  cResult[23] = tmp16;
-                  cResult[24] = tmp21;
-                  tmp19 = tmp21;
-                } else {
-                  tmp19 = cResult[24];
-                }
-                return tmp19;
-              }
-            }
-          }
-          if (cResult[19] === tmp15) {
-            if (cResult[20] === maxValues) {
-              let tmp17;
-              if (cResult[21] === tmp11) {
-                tmp17 = cResult[22];
-              }
-              const mapped1 = options.map(tmp17);
-              cResult[14] = tmp15;
-              class G {
-                constructor(label) {
-                  const hasItem = closure_3.includes(label.value);
-                  const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
-                  return <TableCheckboxRow key={arg0.value} label={arg0.label} subLabel={arg0.description} checked={hasItem} onPress={closure_4(arg0.value)} disabled={closure_3.length >= maxValues && !hasItem} />;
-                }
-              }
-              cResult[15] = maxValues;
-              cResult[16] = options;
-              cResult[17] = tmp11;
-              cResult[18] = mapped1;
-              tmp16 = mapped1;
-            }
-          }
-          class G {
-            constructor(label) {
-              const hasItem = closure_3.includes(label.value);
-              const TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
-              return <TableCheckboxRow key={arg0.value} label={arg0.label} subLabel={arg0.description} checked={hasItem} onPress={closure_4(arg0.value)} disabled={closure_3.length >= maxValues && !hasItem} />;
-            }
-          }
-          cResult[19] = tmp15;
-          cResult[20] = maxValues;
-          cResult[21] = tmp11;
-          cResult[22] = G;
-          tmp17 = G;
-        }
-      }
-      function getOnPress(arg0) {
-        let closure_0 = arg0;
-        return (arg0) => {
-          let found;
-          const tmp2 = arg0;
-          if (tmp2) {
-            const items = [];
-            items[HermesBuiltin.arraySpread(items, closure_3, 0)] = closure_0;
-            found = items;
-          } else {
-            found = arr.filter((item) => item !== closure_1_0);
-          }
-          const obj = { type, values: found };
-          executeStateUpdate(obj);
-        };
-      }
-      cResult[10] = executeStateUpdate;
-      cResult[11] = type;
-      cResult[12] = tmp11;
-      cResult[13] = getOnPress;
-      tmp15 = getOnPress;
-    }
-    let type1;
-    if (state != null) {
-      type1 = state.type;
-    }
-    const tmp14 = type1 === type ? state.values : [];
-    cResult[7] = state;
-    cResult[8] = type;
-    cResult[9] = tmp14;
-    tmp11 = tmp14;
-  }
-  let tmp9;
-  if (arr.length > 0) {
-    tmp9 = { type, values: arr };
-    const obj3 = { type, values: arr };
-  }
-  cResult[4] = arr;
-  cResult[5] = type;
-  cResult[6] = tmp9;
-  tmp8 = tmp9;
-}) : (function CheckboxGroupActionComponent(type) {
+const jsx = Fragment.jsx;
+const memoResult = react.memo(function CheckboxGroupActionComponent(type) {
   type = type.type;
   const options = type.options;
   const maxValues = type.maxValues;
@@ -192,7 +21,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items);
   const tmp = type;
   let tmp2 = options;
-  let tmp3 = type(options[4]);
+  let tmp3 = type(options[2]);
   let tmp4;
   const useComponentState = tmp3.useComponentState;
   if (memo.length > 0) {
@@ -238,16 +67,16 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       };
       type = label.value;
       tmp3 = closure_5.length >= maxValues;
-      const TableCheckboxRow = type(options[5]).TableCheckboxRow;
+      const TableCheckboxRow = type(options[4]).TableCheckboxRow;
       if (tmp3) {
         tmp3 = !hasItem;
       }
       return tmp2(TableCheckboxRow, obj, label.value);
     })
   };
-  const TableRowGroup = tmp(tmp2[6]).TableRowGroup;
+  const TableRowGroup = tmp(tmp2[3]).TableRowGroup;
   return state(TableRowGroup, obj3);
-}));
+});
 const result = size.fileFinishedImporting("modules/interaction_components/native/actions/CheckboxGroupActionComponent.tsx");
 
 export default memoResult;

@@ -1,19 +1,19 @@
-// Module ID: 11166
-// Function ID: 11167
+// Module ID: 11372
+// Function ID: 11373
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7364, 21, 5005, 587, 8715, 8773, 8758, 8772, 8769, 5196, 5247, 11167, 2000, 5071, 8777, 8786, 11170, 11151, 11171, 9456, 2]
+// Dependencies: [19, 17, 7371, 21, 5009, 575, 8749, 8807, 8792, 8806, 8803, 5202, 5253, 11373, 1995, 5075, 8811, 8820, 11358, 11359, 11376, 9475, 2]
 // Exports: default
 
-// Module 11166 (CustomStatusPreview)
+// Module 11372 (CustomStatusPreview)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ChatInputUtils from "ChatInputUtils" /* 5196 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ChatInputUtils from "ChatInputUtils" /* 5202 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7364 */;
+import Constants from "Constants" /* 7371 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,7 +26,7 @@ const View = react_native.View;
 let closure_9 = createStyles.createStyles((arg0) => {
   let BACKGROUND_SURFACE_HIGH;
   let tmp4;
-  const obj = { flex: 1, position: "relative", overflow: "hidden", width: 323, maxHeight: 301, borderWidth: 1, borderColor: BACKGROUND_SURFACE_HIGH, borderRadius: tmp4(587).radii.lg };
+  const obj = { flex: 1, position: "relative", overflow: "hidden", width: 323, maxHeight: 301, borderWidth: 1, borderColor: BACKGROUND_SURFACE_HIGH, borderRadius: tmp4(575).radii.lg };
   const colors = nativeDefault.colors;
   if (arg0) {
     BACKGROUND_SURFACE_HIGH = colors.BORDER_MUTED;
@@ -36,7 +36,7 @@ let closure_9 = createStyles.createStyles((arg0) => {
     tmp4 = tmp;
   }
   const obj2 = { profileContainer: obj, profileEffect: { zIndex: 1 } };
-  const merged = Object.assign(tmp4(587).shadows.SHADOW_HIGH);
+  const merged = Object.assign(tmp4(575).shadows.SHADOW_HIGH);
   return obj2;
 });
 const result = size.fileFinishedImporting("modules/custom_status/native/CustomStatusPreview.tsx");
@@ -72,7 +72,7 @@ export default function CustomStatusPreview(user) {
     obj.dismissKeyboard();
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji };
-    obj2.openLazy(asyncRequire(11167, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(11373, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
   }, items);
   let obj2 = { theme, primaryColor, secondaryColor, children: closure_8(View, obj3) };
   obj3 = { style: tmp7.profileContainer, children: items1 };

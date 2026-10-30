@@ -1,40 +1,12 @@
-// Module ID: 19363
-// Function ID: 19364
+// Module ID: 19426
+// Function ID: 19427
 // Name: HolidayEventsUtils
-// Dependencies: [19359, 558, 576, 2]
+// Dependencies: [19422, 2]
 
-// Module 19363 (HolidayEventsUtils)
-import react from "react" /* 576 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19359 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 19426 (HolidayEventsUtils)
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19422 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligible() {
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = HolidayEventsConfigDefault;
-  const isExperimentEligible = obj2.useIsExperimentEligible();
-  if (cResult[0] !== isExperimentEligible) {
-    const _Date = Date;
-    const timestamp = Date.now();
-    const tmp8 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
-    cResult[0] = isExperimentEligible;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function useIsEligible() {
-  const obj = HolidayEventsConfigDefault;
-  const isExperimentEligible = obj.useIsExperimentEligible();
-  const timestamp = Date.now();
-  const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
-  return tmp5;
-});
-let closure_3 = tmp2;
 let obj = {
   isEligible() {
     const obj = HolidayEventsConfigDefault;
@@ -43,51 +15,37 @@ let obj = {
     const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
     return tmp5;
   },
-  useHolidaySoundpack: ReactCompilerGating.isReactCompilerEnabled() ? (function useHolidaySoundpack() {
-    let tmp4;
-    const obj = react;
-    const cResult = obj.c(2);
-    const tmp3 = closure_3();
-    if (cResult[0] !== tmp3) {
-      let tmp6 = null;
-      if (tmp3) {
-        tmp6 = null;
-        if (null != HolidayEventsConfigDefault.soundpack) {
-          tmp6 = null;
-          if (null != HolidayEventsConfigDefault.soundpackLabel) {
-            tmp6 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
-            const obj2 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
-          }
-        }
-      }
-      cResult[0] = tmp3;
-      cResult[1] = tmp6;
-      tmp4 = tmp6;
-    } else {
-      tmp4 = cResult[1];
-    }
-    return tmp4;
-  }) : (function useHolidaySoundpack() {
-    let tmp = null;
-    if (closure_3()) {
-      tmp = null;
+  useHolidaySoundpack() {
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.useIsExperimentEligible();
+    const timestamp = Date.now();
+    let tmp6 = null;
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    if (tmp5) {
+      tmp6 = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        tmp = null;
+        tmp6 = null;
         if (null != HolidayEventsConfigDefault.soundpackLabel) {
-          tmp = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
-          const obj = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
+          tmp6 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
+          const obj2 = { soundpack: HolidayEventsConfigDefault.soundpack, soundpackLabel: HolidayEventsConfigDefault.soundpackLabel };
         }
       }
     }
-    return tmp;
-  }),
-  useIsEligible: tmp2,
+    return tmp6;
+  },
+  useIsEligible() {
+    const obj = HolidayEventsConfigDefault;
+    const isExperimentEligible = obj.useIsExperimentEligible();
+    const timestamp = Date.now();
+    const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
+    return tmp5;
+  },
   getAppSpinnerSources() {
     const timestamp = Date.now();
     let appSpinnerSources = null;
     const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
     if (tmp4) {
-      appSpinnerSources = tmp2(19359).appSpinnerSources;
+      appSpinnerSources = tmp2(19422).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -115,13 +73,12 @@ let obj = {
     if (tmp5) {
       soundpack = null;
       if (null != HolidayEventsConfigDefault.soundpack) {
-        soundpack = tmp(19359).soundpack;
+        soundpack = tmp(19422).soundpack;
       }
     }
     return soundpack;
   }
 };
-ReactCompilerGating = ReactCompilerGating_mod;
 const result = size.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
 export default obj;

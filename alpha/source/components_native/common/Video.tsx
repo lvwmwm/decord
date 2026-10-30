@@ -1,274 +1,120 @@
-// Module ID: 8830
-// Function ID: 8831
+// Module ID: 8864
+// Function ID: 8865
 // Name: common/Video
-// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 8831, 5071, 8791, 7193, 5707, 1125, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 8865, 5075, 8825, 7201, 5712, 1114, 2]
 // Exports: createVideoControls
 
-// Module 8830 (common/Video)
+// Module 8864 (common/Video)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 5071 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7193 */;
-import openMediaModal2 from "openMediaModal" /* 8791 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 5075 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7201 */;
+import openMediaModal2 from "openMediaModal" /* 8825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let _require, closure_0, tmp2;
+let closure_0;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let obj3;
+class VideoComponent {
+  constructor(paused) {
+    let ariaHidden;
+    let closure_1;
+    let controls;
+    let disableFocus;
+    let first;
+    let importantForAccessibility;
+    let mixWithOthers;
+    let onEnd;
+    let onError;
+    let onLoad;
+    let onLoadStart;
+    let onReadyForDisplay;
+    let pauseWhileAppInactive;
+    let poster;
+    let source;
+    let style;
+    let flag = paused.paused;
+    ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd } = paused);
+    if (flag === undefined) {
+      flag = false;
+    }
+    let flag2 = paused.muted;
+    if (flag2 === undefined) {
+      flag2 = true;
+    }
+    let str = paused.posterResizeMode;
+    if (str === undefined) {
+      str = "contain";
+    }
+    let str2 = paused.resizeMode;
+    if (str2 === undefined) {
+      str2 = "contain";
+    }
+    ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = paused);
+    if (pauseWhileAppInactive === undefined) {
+      pauseWhileAppInactive = true;
+    }
+    let flag3 = paused.playInBackground;
+    if (flag3 === undefined) {
+      flag3 = false;
+    }
+    let flag4 = paused.preventsDisplaySleepDuringVideoPlayback;
+    if (flag4 === undefined) {
+      flag4 = true;
+    }
+    closure_1 = undefined;
+    const httpEngine = paused.httpEngine;
+    const _default = pauseWhileAppInactive(8865).default;
+    [first, closure_1] = react.useState("active" === currentState.currentState);
+    const items = [pauseWhileAppInactive];
+    const effect = react.useEffect(() => {
+      const tmp = closure_0;
+      if (tmp) {
+        closure_0 = currentState.addEventListener("change", (event) => {
+          closure_1_1("active" === event);
+        });
+        return () => {
+          closure_0.remove();
+        };
+      }
+    }, items);
+    const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
+    const tmp4 = jsx;
+    if (!flag) {
+      if (pauseWhileAppInactive) {
+        pauseWhileAppInactive = !first;
+      }
+      flag = pauseWhileAppInactive;
+    }
+    let props;
+    if (controls != null) {
+      props = controls.props;
+    }
+    const merged = Object.assign(props);
+    return tmp4(_default, obj);
+  }
+}
 ({ TouchableWithoutFeedback: hasOwnProperty, View: metroRequire, AppState: metroImportDefault } = react_native);
 const jsx = Fragment.jsx;
-let obj = { container: obj2, video: obj3 };
+let obj = { container: obj2, video: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 obj2 = { flex: 1, shadowColor: nativeDefault.unsafe_rawColors.BLACK, shadowOpacity: 0.5, shadowOffset: { height: 1, width: 0 }, shadowRadius: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 const createLegacyClassComponentStyles = createStyles.createLegacyClassComponentStyles;
-obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
+({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND });
 const React4 = createLegacyClassComponentStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoComponent(arg0) {
-  let ariaHidden;
-  let controls;
-  let disableFocus;
-  let httpEngine;
-  let importantForAccessibility;
-  let mixWithOthers;
-  let muted;
-  let onEnd;
-  let onError;
-  let onLoad;
-  let onLoadStart;
-  let onReadyForDisplay;
-  let pauseWhileAppInactive;
-  let paused;
-  let playInBackground;
-  let poster;
-  let posterResizeMode;
-  let preventsDisplaySleepDuringVideoPlayback;
-  let resizeMode;
-  let source;
-  let style;
-  let tmp12;
-  let tmp13;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(25);
-  ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, paused, muted, posterResizeMode, resizeMode, disableFocus, controls, ariaHidden, mixWithOthers, importantForAccessibility, pauseWhileAppInactive, playInBackground, preventsDisplaySleepDuringVideoPlayback, httpEngine } = arg0);
-  let tmp4 = undefined !== paused && paused;
-  let str = "contain";
-  let str2 = "contain";
-  if (undefined !== posterResizeMode) {
-    str2 = posterResizeMode;
-  }
-  if (undefined !== resizeMode) {
-    str = resizeMode;
-  }
-  _require = tmp6;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(8831);
-    cResult[0] = tmpResult;
-    let first = tmpResult;
-  } else {
-    first = cResult[0];
-  }
-  [r10058, importDefault] = react.useState("active" === closure_7.currentState);
-  _slicedToArray(react.useState("active" === closure_7.currentState), 2);
-  const obj2 = react;
-  if (cResult[1] !== (undefined === pauseWhileAppInactive || pauseWhileAppInactive)) {
-    class N {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1_7;
-          str = "change";
-          closure_0 = closure_1_7.addEventListener("change", function() { /* body not rendered: F148634 */ });
-          return function() { /* body not rendered: F148635 */ };
-        } else {
-          return;
-        }
-      }
-    }
-    const items = [undefined === pauseWhileAppInactive || pauseWhileAppInactive];
-    cResult[1] = undefined === pauseWhileAppInactive || pauseWhileAppInactive;
-    cResult[2] = items;
-    cResult[3] = N;
-    tmp13 = N;
-    tmp12 = items;
-  } else {
-    class N {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1_7;
-          str = "change";
-          closure_0 = closure_1_7.addEventListener("change", function() { /* body not rendered: F148634 */ });
-          return function() { /* body not rendered: F148635 */ };
-        } else {
-          return;
-        }
-      }
-    }
-    tmp13 = cResult[3];
-  }
-  const effect = obj2.useEffect(tmp13, tmp12);
-  if (!tmp4) {
-    class N {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1_7;
-          str = "change";
-          closure_0 = closure_1_7.addEventListener("change", function() { /* body not rendered: F148634 */ });
-          return function() { /* body not rendered: F148635 */ };
-        } else {
-          return;
-        }
-      }
-    }
-    tmp4 = tmp6;
-  }
-  if (controls != null) {
-    class N {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1_7;
-          str = "change";
-          closure_0 = closure_1_7.addEventListener("change", function() { /* body not rendered: F148634 */ });
-          return function() { /* body not rendered: F148635 */ };
-        } else {
-          return;
-        }
-      }
-    }
-  }
-  if (cResult[4] === ariaHidden) {
-    class N {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1_7;
-          str = "change";
-          closure_0 = closure_1_7.addEventListener("change", function() { /* body not rendered: F148634 */ });
-          return function() { /* body not rendered: F148635 */ };
-        } else {
-          return;
-        }
-      }
-    }
-  }
-  const merged = Object.assign(tmp15);
-  cResult[4] = ariaHidden;
-  cResult[5] = disableFocus;
-  cResult[6] = httpEngine;
-  cResult[7] = importantForAccessibility;
-  cResult[8] = mixWithOthers;
-  cResult[9] = undefined === muted || muted;
-  cResult[10] = onEnd;
-  cResult[11] = onError;
-  cResult[12] = onLoad;
-  cResult[13] = onLoadStart;
-  cResult[14] = onReadyForDisplay;
-  cResult[15] = undefined !== playInBackground && playInBackground;
-  cResult[16] = poster;
-  cResult[17] = str2;
-  cResult[18] = undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback;
-  cResult[19] = str;
-  cResult[20] = source;
-  cResult[21] = style;
-  cResult[22] = tmp4;
-  cResult[23] = undefined;
-  cResult[24] = <_default style={style} source={source} importantForAccessibility={importantForAccessibility} poster={poster} muted={undefined === muted || muted} paused={tmp4} posterResizeMode={str2} resizeMode={str} repeat playInBackground={undefined !== playInBackground && playInBackground} pictureInPicture={false} playWhenInactive={false} onLoadStart={onLoadStart} onLoad={onLoad} onReadyForDisplay={onReadyForDisplay} onError={onError} onEnd={onEnd} disableFocus={disableFocus} aria-hidden={ariaHidden} mixWithOthers={mixWithOthers} preventsDisplaySleepDuringVideoPlayback={undefined === preventsDisplaySleepDuringVideoPlayback || preventsDisplaySleepDuringVideoPlayback} httpEngine={httpEngine} />;
-}) : (function VideoComponent(paused) {
-  let ariaHidden;
-  let closure_1;
-  let controls;
-  let disableFocus;
-  let first;
-  let importantForAccessibility;
-  let mixWithOthers;
-  let onEnd;
-  let onError;
-  let onLoad;
-  let onLoadStart;
-  let onReadyForDisplay;
-  let pauseWhileAppInactive;
-  let poster;
-  let source;
-  let style;
-  let flag = paused.paused;
-  ({ style, source, poster, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd } = paused);
-  if (flag === undefined) {
-    flag = false;
-  }
-  let flag2 = paused.muted;
-  if (flag2 === undefined) {
-    flag2 = true;
-  }
-  let str = paused.posterResizeMode;
-  if (str === undefined) {
-    str = "contain";
-  }
-  let str2 = paused.resizeMode;
-  if (str2 === undefined) {
-    str2 = "contain";
-  }
-  ({ controls, pauseWhileAppInactive, disableFocus, ariaHidden, mixWithOthers, importantForAccessibility } = paused);
-  if (pauseWhileAppInactive === undefined) {
-    pauseWhileAppInactive = true;
-  }
-  let flag3 = paused.playInBackground;
-  if (flag3 === undefined) {
-    flag3 = false;
-  }
-  let flag4 = paused.preventsDisplaySleepDuringVideoPlayback;
-  if (flag4 === undefined) {
-    flag4 = true;
-  }
-  closure_1 = undefined;
-  const httpEngine = paused.httpEngine;
-  const _default = pauseWhileAppInactive(8831).default;
-  [first, closure_1] = react.useState("active" === closure_7.currentState);
-  const items = [pauseWhileAppInactive];
-  const effect = react.useEffect(() => {
-    const tmp = closure_0;
-    if (tmp) {
-      closure_0 = closure_1_7.addEventListener("change", (event) => {
-        closure_1_1("active" === event);
-      });
-      return () => {
-        closure_0.remove();
-      };
-    }
-  }, items);
-  const obj = { style, source, importantForAccessibility, poster, muted: flag2, paused: flag, posterResizeMode: str, resizeMode: str2, repeat: true, playInBackground: flag3, pictureInPicture: false, playWhenInactive: false, onLoadStart, onLoad, onReadyForDisplay, onError, onEnd, disableFocus, "aria-hidden": ariaHidden, mixWithOthers, preventsDisplaySleepDuringVideoPlayback: flag4, httpEngine };
-  const tmp4 = jsx;
-  if (!flag) {
-    if (pauseWhileAppInactive) {
-      pauseWhileAppInactive = !first;
-    }
-    flag = pauseWhileAppInactive;
-  }
-  let props;
-  if (controls != null) {
-    props = controls.props;
-  }
-  const merged = Object.assign(props);
-  return tmp4(_default, obj);
-});
-let closure_10 = tmp5;
 const PureComponent = react.PureComponent;
 class Video extends PureComponent {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    const require = applyArgumentsResult;
+    require = applyArgumentsResult;
     applyArgumentsResult.state = { postponeRender: true };
     applyArgumentsResult.ref = react.createRef();
     applyArgumentsResult.isVideo = function isVideo() {
@@ -327,7 +173,7 @@ class Video extends PureComponent {
           size = { width: tmp3, height: tmp4 };
           items[1] = size;
           items[2] = tmp7;
-          tmp13 = <closure_10 style={items} source={{ uri: videoURI }} poster={tmp2} muted={tmp5} paused={tmp6} resizeMode={resizeMode} posterResizeMode={resizeMode} ariaHidden={tmp8} disableFocus={tmp9} httpEngine={tmp10} />;
+          tmp13 = <VideoComponent style={items} source={{ uri: videoURI }} poster={tmp2} muted={tmp5} paused={tmp6} resizeMode={resizeMode} posterResizeMode={resizeMode} ariaHidden={tmp8} disableFocus={tmp9} httpEngine={tmp10} />;
           const obj2 = { uri: videoURI };
         }
         return tmp13;
@@ -461,4 +307,4 @@ export function createVideoControls(NOOP) {
     }
   };
 }
-export const VideoComponent = tmp5;
+export { VideoComponent };

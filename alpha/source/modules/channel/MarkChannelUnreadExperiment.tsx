@@ -1,10 +1,10 @@
-// Module ID: 10943
-// Function ID: 10944
+// Module ID: 10968
+// Function ID: 10969
 // Name: MarkChannelUnreadExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 10943 (MarkChannelUnreadExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 10968 (MarkChannelUnreadExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

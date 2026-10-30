@@ -1,13 +1,13 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 10847
+// Function ID: 10848
 // Name: ConjurePublishStatusStore
-// Dependencies: [6831, 504, 568, 584, 2]
+// Dependencies: [6838, 504, 558, 572, 2]
 
-// Module 10824 (ConjurePublishStatusStore)
+// Module 10847 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import shallowEqual from "shallowEqual" /* 568 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import shallowEqual from "shallowEqual" /* 558 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -194,7 +194,7 @@ let obj = {
               const obj2 = shallowEqual;
               if (obj2.areArraysShallowEqual(value.previewAppChannels, previewAppChannels)) {
                 let previewDevicePermissions2 = value.previewDevicePermissions;
-                const areArraysShallowEqual = tmp18(568).areArraysShallowEqual;
+                const areArraysShallowEqual = tmp18(558).areArraysShallowEqual;
                 shallowEqual;
                 if (previewDevicePermissions2 == null) {
                   previewDevicePermissions2 = closure_10;
@@ -312,7 +312,7 @@ let obj = {
         patchNotesSent = closure_9;
       }
       items = [];
-      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== asks.publishedRevision), 0)] = sent;
+      items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== publishedRevision.publishedRevision), 0)] = sent;
       const result = set(projectId, obj);
     }
   },

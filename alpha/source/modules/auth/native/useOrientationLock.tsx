@@ -1,66 +1,21 @@
-// Module ID: 17936
-// Function ID: 17937
+// Module ID: 17995
+// Function ID: 17996
 // Name: useOrientationLock
-// Dependencies: [19, 4962, 1628, 558, 576, 7097, 8860, 2]
+// Dependencies: [19, 4966, 1623, 7105, 8894, 2]
+// Exports: default
 
-// Module 17936 (useOrientationLock)
-import DeviceUtils from "DeviceUtils" /* 4962 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7097 */;
+// Module 17995 (useOrientationLock)
+import DeviceUtils from "DeviceUtils" /* 4966 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7105 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
 let tmp;
-const MetaQuestUtils = tmp(1628);
-const DeviceOrientation = tmp(8860);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePortraitOrientationOnly() {
-  let tmp3;
-  let tmp4;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  const tmp2 = useWideAuthViewDefault();
-  _require = tmp2;
-  if (cResult[0] !== tmp2) {
-    const fn = function o() {
-      let tmp = require;
-      let obj = DeviceUtils;
-      let tmp4 = !obj.isIpadOS();
-      obj.isIpadOS();
-      if (tmp4) {
-        const tmpResult = MetaQuestUtils;
-        tmp4 = !tmpResult.isMetaQuest();
-      }
-      if (tmp4) {
-        tmp4 = !closure_0;
-      }
-      closure_0 = tmp4;
-      if (closure_0) {
-        const tmpResult2 = DeviceOrientation;
-        tmpResult2.lockOrientation("PORTRAIT", false);
-      }
-      return () => {
-        const tmp = closure_0;
-        if (tmp) {
-          const obj = closure_2_0(closure_2_2[6]);
-          obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
-        }
-      };
-    };
-    const items = [tmp2];
-    cResult[0] = tmp2;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp4 = items;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const effect = react.useEffect(tmp3, tmp4);
-}) : (function usePortraitOrientationOnly() {
+const MetaQuestUtils = tmp(1623);
+const DeviceOrientation = tmp(8894);
+const result = size.fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
+
+export default function usePortraitOrientationOnly() {
   let tmp = useWideAuthViewDefault();
   let closure_0 = tmp;
   const items = [tmp];
@@ -84,12 +39,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePortraitO
     return () => {
       const tmp = closure_0;
       if (tmp) {
-        const obj = closure_2_0(closure_2_2[6]);
+        const obj = closure_2_0(closure_2_2[4]);
         obj.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
       }
     };
   }, items);
-});
-const result = size.fileFinishedImporting("modules/auth/native/useOrientationLock.tsx");
-
-export default tmp2;
+};

@@ -1,32 +1,31 @@
-// Module ID: 8988
-// Function ID: 8989
-// Name: Form
-// Dependencies: [2, 7298, 7301, 7296, 7306, 8989, 8991, 8992, 8993, 7307, 8994, 7299, 7303, 7297, 8995, 7300, 8997, 8998, 8996, 8999, 9000, 7295, 9001, 9002]
+// Module ID: 8169
+// Function ID: 8170
+// Dependencies: [2, 7304, 7307, 7312, 7313, 8170, 8174, 8175, 8176, 7314, 8177, 7305, 7309, 7303, 8178, 7306, 8180, 8181, 8179, 8182, 8183, 7302, 8184, 8185]
 
-// Module 8988 (Form)
-import FormCheckboxRowDefault from "FormCheckboxRow" /* 7295 */;
-import Form_FormCheckboxDefault from "Form/FormCheckbox" /* 7296 */;
-import FormRowDefault from "FormRow" /* 7297 */;
-import Form_FormDefault from "Form/Form" /* 7298 */;
-import FormLabelDefault from "FormLabel" /* 7299 */;
-import FormSubLabelDefault from "FormSubLabel" /* 7300 */;
-import FormArrowDefault from "FormArrow" /* 7301 */;
-import Form_FormRadioDefault from "Form/FormRadio" /* 7303 */;
-import FormCheckmarkDefault from "FormCheckmark" /* 7306 */;
-import FormIconDefault from "FormIcon" /* 7307 */;
-import FormCTADefault from "FormCTA" /* 8989 */;
-import FormCTAButtonDefault from "FormCTAButton" /* 8991 */;
-import FormDividerDefault from "FormDivider" /* 8992 */;
-import FormHintDefault from "FormHint" /* 8993 */;
-import FormInputDefault from "FormInput" /* 8994 */;
-import FormSectionDefault from "FormSection" /* 8995 */;
-import FormTitleDefault from "FormTitle" /* 8996 */;
-import Form_FormSwitchDefault from "Form/FormSwitch" /* 8997 */;
-import FormText from "FormText" /* 8998 */;
-import FormSwitchRowDefault from "FormSwitchRow" /* 8999 */;
-import FormRadioRowDefault from "FormRadioRow" /* 9000 */;
-import FormRadioGroupDefault from "FormRadioGroup" /* 9001 */;
-import CardSectionDefault from "CardSection" /* 9002 */;
+// Module 8169
+import FormCheckboxRowDefault from "FormCheckboxRow" /* 7302 */;
+import FormRowDefault from "FormRow" /* 7303 */;
+import FormDefault from "Form" /* 7304 */;
+import FormLabelDefault from "FormLabel" /* 7305 */;
+import FormSubLabelDefault from "FormSubLabel" /* 7306 */;
+import FormArrowDefault from "FormArrow" /* 7307 */;
+import FormRadioDefault from "FormRadio" /* 7309 */;
+import FormCheckboxDefault from "FormCheckbox" /* 7312 */;
+import FormCheckmarkDefault from "FormCheckmark" /* 7313 */;
+import FormIconDefault from "FormIcon" /* 7314 */;
+import FormCTADefault from "FormCTA" /* 8170 */;
+import FormCTAButtonDefault from "FormCTAButton" /* 8174 */;
+import FormDividerDefault from "FormDivider" /* 8175 */;
+import FormHintDefault from "FormHint" /* 8176 */;
+import FormInputDefault from "FormInput" /* 8177 */;
+import FormSectionDefault from "FormSection" /* 8178 */;
+import FormTitleDefault from "FormTitle" /* 8179 */;
+import FormSwitchDefault from "FormSwitch" /* 8180 */;
+import FormText from "FormText" /* 8181 */;
+import FormSwitchRowDefault from "FormSwitchRow" /* 8182 */;
+import FormRadioRowDefault from "FormRadioRow" /* 8183 */;
+import FormRadioGroupDefault from "FormRadioGroup" /* 8184 */;
+import CardSectionDefault from "CardSection" /* 8185 */;
 import size from "module_2" /* 2 */;
 
 const FormTextDefault = FormText;
@@ -34,9 +33,9 @@ const FormTextDefault = FormText;
 const result = size.fileFinishedImporting("design/void/Form/native/index.tsx");
 const FormText_export = FormTextDefault;
 
-export const Form = Form_FormDefault;
+export const Form = FormDefault;
 export const FormArrow = FormArrowDefault;
-export const FormCheckbox = Form_FormCheckboxDefault;
+export const FormCheckbox = FormCheckboxDefault;
 export const FormCheckmark = FormCheckmarkDefault;
 export const FormCTA = FormCTADefault;
 export const FormCTAButton = FormCTAButtonDefault;
@@ -45,11 +44,11 @@ export const FormHint = FormHintDefault;
 export const FormIcon = FormIconDefault;
 export const FormInput = FormInputDefault;
 export const FormLabel = FormLabelDefault;
-export const FormRadio = Form_FormRadioDefault;
+export const FormRadio = FormRadioDefault;
 export const FormRow = FormRowDefault;
 export const FormSection = FormSectionDefault;
 export const FormSubLabel = FormSubLabelDefault;
-export const FormSwitch = Form_FormSwitchDefault;
+export const FormSwitch = FormSwitchDefault;
 export { FormText_export as FormText };
 export const FormTextColors = FormText.FormTextColors;
 export const FormTitle = FormTitleDefault;

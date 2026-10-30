@@ -1,81 +1,18 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 18038
+// Function ID: 18039
 // Name: useRelativeTimestamp
-// Dependencies: [32, 19, 558, 576, 6847, 1101, 2]
+// Dependencies: [32, 19, 6854, 1090, 2]
+// Exports: useRelativeTimestamp
 
-// Module 17977 (useRelativeTimestamp)
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6847 */;
+// Module 18038 (useRelativeTimestamp)
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+const result = size.fileFinishedImporting("modules/notification_center/useRelativeTimestamp.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRelativeTimestamp(timestamp) {
-  let closure_2;
-  let obj = timestamp(576);
-  const cResult = obj.c(7);
-  timestamp = timestamp.timestamp;
-  const abbreviated = timestamp.abbreviated;
-  let closure_1 = tmp2;
-  if (cResult[0] === (undefined === abbreviated || abbreviated)) {
-    let tmp3;
-    if (cResult[1] === timestamp) {
-      tmp3 = cResult[2];
-    }
-    const tmp4 = _slicedToArray;
-    dependencyMap = _slicedToArray(react.useState(tmp3), 2)[1];
-    _slicedToArray(react.useState(tmp3), 2);
-    const obj2 = react;
-    if (cResult[3] === (undefined === abbreviated || abbreviated)) {
-      let tmp7;
-      let tmp8;
-      if (cResult[4] === timestamp) {
-        tmp7 = cResult[5];
-        tmp8 = cResult[6];
-      }
-      const effect = obj2.useEffect(tmp7, tmp8);
-      return tmp6;
-    }
-    const fn2 = function c() {
-      let closure_0;
-      let interval;
-      let obj = timestamp(closure_2[4]);
-      closure_2(obj.getRelativeTimestamp(interval, closure_1));
-      const diff = Date.now() - interval;
-      if (diff <= closure_1(closure_2[5]).Millis.DAY) {
-        let MINUTE;
-        if (diff >= closure_1(closure_2[5]).Millis.HOUR) {
-          MINUTE = tmp4(tmp[5]).Millis.HOUR;
-        } else {
-          MINUTE = tmp4(tmp[5]).Millis.MINUTE;
-        }
-        const _setInterval = setInterval;
-        interval = setInterval(() => {
-          const obj = timestamp(closure_2[4]);
-          closure_1_2(obj.getRelativeTimestamp(closure_0, closure_1_1));
-        }, MINUTE, MINUTE - diff % MINUTE);
-        return () => clearInterval(closure_0);
-      }
-    };
-    const items = [timestamp, tmp2];
-    cResult[3] = undefined === abbreviated || abbreviated;
-    cResult[4] = timestamp;
-    cResult[5] = fn2;
-    cResult[6] = items;
-    tmp8 = items;
-    tmp7 = fn2;
-  }
-  const fn = function v() {
-    const obj = NotificationCenterUtils;
-    return obj.getRelativeTimestamp(timestamp, closure_1);
-  };
-  cResult[0] = undefined === abbreviated || abbreviated;
-  cResult[1] = timestamp;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : (function useRelativeTimestamp(timestamp) {
+export function useRelativeTimestamp(timestamp) {
   let closure_2;
   let first;
   timestamp = timestamp.timestamp;
@@ -92,26 +29,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRelativ
   const effect = react.useEffect(() => {
     let closure_0;
     let interval;
-    let obj = timestamp(closure_2[4]);
+    let obj = timestamp(closure_2[2]);
     closure_2(obj.getRelativeTimestamp(interval, flag));
     const diff = Date.now() - interval;
-    if (diff <= flag(closure_2[5]).Millis.DAY) {
+    if (diff <= flag(closure_2[3]).Millis.DAY) {
       let MINUTE;
-      if (diff >= flag(closure_2[5]).Millis.HOUR) {
-        MINUTE = tmp4(tmp[5]).Millis.HOUR;
+      if (diff >= flag(closure_2[3]).Millis.HOUR) {
+        MINUTE = tmp4(tmp[3]).Millis.HOUR;
       } else {
-        MINUTE = tmp4(tmp[5]).Millis.MINUTE;
+        MINUTE = tmp4(tmp[3]).Millis.MINUTE;
       }
       const _setInterval = setInterval;
       interval = setInterval(() => {
-        const obj = timestamp(closure_2[4]);
+        const obj = timestamp(closure_2[2]);
         closure_1_2(obj.getRelativeTimestamp(closure_0, flag));
       }, MINUTE, MINUTE - diff % MINUTE);
       return () => clearInterval(closure_0);
     }
   }, items);
   return first;
-});
-const result = size.fileFinishedImporting("modules/notification_center/useRelativeTimestamp.tsx");
-
-export const useRelativeTimestamp = tmp2;
+}

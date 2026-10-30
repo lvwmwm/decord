@@ -1,10 +1,10 @@
 // Module ID: 10444
 // Function ID: 10445
-// Dependencies: [41, 42, 93, 95, 98, 10306, 10438]
+// Dependencies: [41, 42, 93, 95, 98, 10331, 10438]
 
 // Module 10444
-import now2 from "now" /* 10306 */;
-import _mod10438 from "module_10438" /* 10438 */;
+import now2 from "now" /* 10331 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10438 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -124,12 +124,12 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-class UKCasualDateParser {
+class RUCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKCasualDateParser);
-    const obj = _getPrototypeOf(UKCasualDateParser);
+    _classCallCheck(this, RUCasualDateParser);
+    const obj = _getPrototypeOf(RUCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -141,11 +141,11 @@ class UKCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKCasualDateParser, _mod10438.AbstractParserWithLeftRightBoundaryChecking);
+_inherits(RUCasualDateParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
   key: "innerPatternString",
   value: function innerPatternString(arg0) {
-    return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
+    return "(?:\u0441|\u0441\u043E)?\\s*(\u0441\u0435\u0433\u043E\u0434\u043D\u044F|\u0432\u0447\u0435\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0441\u043B\u0435\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0441\u043B\u0435\u043F\u043E\u0441\u043B\u0435\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u0435\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u0435\u0440\u0430)";
   }
 };
 let items = [
@@ -155,19 +155,19 @@ let items = [
     value: function innerExtract(reference, arg1) {
       const str = arg1[1];
       const formatted = str.toLowerCase();
-      if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+      if ("\u0441\u0435\u0433\u043E\u0434\u043D\u044F" === formatted) {
         return now.today(reference.reference);
-      } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
+      } else if ("\u0432\u0447\u0435\u0440\u0430" === formatted) {
         return now.yesterday(reference.reference);
       } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
         return now.tomorrow(reference.reference);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+      } else if ("\u043F\u043E\u0441\u043B\u0435\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
         return now.theDayAfter(reference.reference, 2);
-      } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
+      } else if ("\u043F\u043E\u0441\u043B\u0435\u043F\u043E\u0441\u043B\u0435\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
         return now.theDayAfter(reference.reference, 3);
-      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+      } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u0435\u0440\u0430" === formatted) {
         return now.theDayBefore(reference.reference, 2);
-      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
+      } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u0435\u0440\u0430" === formatted) {
         return now.theDayBefore(reference.reference, 3);
       } else {
         return tmp2;
@@ -176,4 +176,4 @@ let items = [
   }
 ];
 
-export default _createClass(UKCasualDateParser, items);
+export default _createClass(RUCasualDateParser, items);

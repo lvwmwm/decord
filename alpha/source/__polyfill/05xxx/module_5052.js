@@ -1,1505 +1,1078 @@
 // Module ID: 5052
 // Function ID: 5053
-// Dependencies: []
-// Exports: isAsyncMode, isContextConsumer, isContextProvider, isElement, isForwardRef, isFragment, isLazy, isMemo, isPortal, isProfiler, isStrictMode, isSuspense, isValidElementType, typeOf
+// Dependencies: [19, 5048, 1107, 1108, 5053, 5055, 5057, 1101]
+// Exports: Prompt, Redirect, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter
 
 // Module 5052
-class A {
-  constructor($$typeof) {
-    let tmp;
-    if (typeof $$typeof === "object") {
-      if (null !== $$typeof) {
-        $$typeof = $$typeof.$$typeof;
-        if (num === $$typeof) {
-          const type = $$typeof.type;
-          tmp = type;
-          if (num9 !== type) {
-            tmp = type;
-            if (num8 !== type) {
-              tmp = type;
-              if (num3 !== type) {
-                tmp = type;
-                if (num5 !== type) {
-                  tmp = type;
-                  if (num4 !== type) {
-                    tmp = type;
-                    if (num11 !== type) {
-                      if (num7 !== (type && type.$$typeof)) {
-                        if (num10 !== (type && type.$$typeof)) {
-                          if (num14 !== (type && type.$$typeof)) {
-                            if (num13 !== (type && type.$$typeof)) {
-                              tmp = $$typeof;
-                            }
-                          }
-                        }
-                      }
-                      tmp = tmp9;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        } else if (num2 === $$typeof) {
-          tmp = $$typeof;
-        }
-      }
-    }
-    return tmp === num8;
-  }
-}
-let _for = typeof Symbol === "function";
-if (typeof Symbol === "function") {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  _for = Symbol.for;
-}
-let num = 60103;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num = Symbol.for("react.element");
-}
-let num2 = 60106;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num2 = Symbol.for("react.portal");
-}
-let num3 = 60107;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num3 = Symbol.for("react.fragment");
-}
-let num4 = 60108;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num4 = Symbol.for("react.strict_mode");
-}
-let num5 = 60114;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num5 = Symbol.for("react.profiler");
-}
-let num6 = 60109;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num6 = Symbol.for("react.provider");
-}
-let num7 = 60110;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num7 = Symbol.for("react.context");
-}
-let num8 = 60111;
-let num9 = 60111;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num9 = Symbol.for("react.async_mode");
-}
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num8 = Symbol.for("react.concurrent_mode");
-}
-let num10 = 60112;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num10 = Symbol.for("react.forward_ref");
-}
-let num11 = 60113;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num11 = Symbol.for("react.suspense");
-}
-let num12 = 60120;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num12 = Symbol.for("react.suspense_list");
-}
-let num13 = 60115;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num13 = Symbol.for("react.memo");
-}
-let num14 = 60116;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num14 = Symbol.for("react.lazy");
-}
-let num15 = 60121;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num15 = Symbol.for("react.block");
-}
-let num16 = 60117;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num16 = Symbol.for("react.fundamental");
-}
-let num17 = 60118;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num17 = Symbol.for("react.responder");
-}
-let num18 = 60119;
-if (_for) {
-  class A {
-    constructor($$typeof) {
-      let tmp;
-      if (typeof $$typeof === "object") {
-        if (null !== $$typeof) {
-          $$typeof = $$typeof.$$typeof;
-          if (num === $$typeof) {
-            const type = $$typeof.type;
-            tmp = type;
-            if (num9 !== type) {
-              tmp = type;
-              if (num8 !== type) {
-                tmp = type;
-                if (num3 !== type) {
-                  tmp = type;
-                  if (num5 !== type) {
-                    tmp = type;
-                    if (num4 !== type) {
-                      tmp = type;
-                      if (num11 !== type) {
-                        if (num7 !== (type && type.$$typeof)) {
-                          if (num10 !== (type && type.$$typeof)) {
-                            if (num14 !== (type && type.$$typeof)) {
-                              if (num13 !== (type && type.$$typeof)) {
-                                tmp = $$typeof;
-                              }
-                            }
-                          }
-                        }
-                        tmp = tmp9;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          } else if (num2 === $$typeof) {
-            tmp = $$typeof;
-          }
-        }
-      }
-      return tmp === num8;
-    }
-  }
-  num18 = Symbol.for("react.scope");
-}
+import _mod1101 from "module_1101" /* 1101 */;
+import react_mod from "react" /* 19 */;
+import module_5048_mod from "module_5048" /* 5048 */;
+import warning from "warning" /* 1107 */;
+import invariant_mod from "invariant" /* 1108 */;
+import pathToRegexp_mod from "pathToRegexp" /* 5053 */;
+import AsyncMode from "AsyncMode" /* 5055 */;
+import hoistNonReactStatics_mod from "hoistNonReactStatics" /* 5057 */;
 
-export const AsyncMode = num9;
-export const ConcurrentMode = num8;
-export const ContextConsumer = num7;
-export const ContextProvider = num6;
-export const Element = num;
-export const ForwardRef = num10;
-export const Fragment = num3;
-export const Lazy = num14;
-export const Memo = num13;
-export const Portal = num2;
-export const Profiler = num5;
-export const StrictMode = num4;
-export const Suspense = num11;
-export const isAsyncMode = ($$typeof) => {
-  let tmp = A($$typeof);
+let array, call, closure_18, hasOwnProperty, length;
+
+let tmp13;
+let tmp18;
+let obj = function _extends() {
+  obj = Object.assign || (function(arg0) {
+    let num;
+    for (let num = 1; num < arguments.length; num = num + 1) {
+      let tmp = arguments[num];
+      for (const key10012 in tmp) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(tmp, key10012)) {
+          continue;
+        } else {
+          arg0[key10012] = tmp[key10012];
+          continue;
+        }
+        continue;
+      }
+    }
+    return arg0;
+  });
+  return obj(...arguments);
+};
+let fn = function _setPrototypeOf(arg0, Component) {
+  fn = Object.setPrototypeOf || ((arg0, Component) => {
+    arg0.__proto__ = Component;
+    return arg0;
+  });
+  return fn(arg0, Component);
+};
+function noop() {
+
+}
+let react = react_mod;
+if (react) {
+  if (typeof react === "object") {
+    let str = "default";
+    if ("default" in react) {
+      react = react.default;
+    }
+  }
+}
+let module_5048 = module_5048_mod;
+if (module_5048) {
+  if (typeof module_5048 === "object") {
+    let str2 = "default";
+    if ("default" in module_5048) {
+      module_5048 = module_5048.default;
+    }
+  }
+}
+let invariant = invariant_mod;
+if (invariant) {
+  if (typeof invariant === "object") {
+    let str3 = "default";
+    if ("default" in invariant) {
+      invariant = invariant.default;
+    }
+  }
+}
+let pathToRegexp = pathToRegexp_mod;
+if (pathToRegexp) {
+  if (typeof pathToRegexp === "object") {
+    if ("default" in pathToRegexp) {
+      pathToRegexp = pathToRegexp.default;
+    }
+  }
+}
+let hoistNonReactStatics = hoistNonReactStatics_mod;
+if (hoistNonReactStatics) {
+  if (typeof hoistNonReactStatics === "object") {
+    if ("default" in hoistNonReactStatics) {
+      hoistNonReactStatics = hoistNonReactStatics.default;
+    }
+  }
+}
+let c9 = 1073741823;
+if (typeof globalThis !== "undefined") {
+  let _globalThis = globalThis;
+} else {
+  const _window = window;
+  if (typeof window !== "undefined") {
+    _globalThis = window;
+  } else {
+    _globalThis = global;
+    if (undefined === global) {
+      _globalThis = {};
+    }
+  }
+}
+let tmp9 = react.createContext || (function createReactContext(arg0, arg1) {
+  let closure_2;
+  let tmp2;
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  let num = _globalThis.__global_unique_id__;
+  let tmp = _globalThis;
+  if (!num) {
+    num = 0;
+  }
+  const sum = num + 1;
+  tmp.__global_unique_id__ = sum;
+  react = `${"__create-react-context-" + tmp2}__`;
+  const Component = react.Component;
+  class t {
+    constructor() {
+      length = arguments.length;
+      array = new Array(length);
+      for (let num = 0; num < length; num = num + 1) {
+        array[num] = arguments[num];
+      }
+      call = Component.call;
+      items = [];
+      items[0] = this;
+      tmp2 = call.apply(Component, items.concat(array)) || this;
+      value = tmp2.props.value;
+      closure_1 = [];
+      tmp2.emitter = {
+        on(arg0) {
+              closure_1.push(arg0);
+            },
+        off(arg0) {
+              closure_0 = arg0;
+              closure_1 = closure_1.filter(function() { /* body not rendered: F139531 */ });
+            },
+        get() {
+              return value;
+            },
+        set(arg0, arg1) {
+              closure_0 = arg0;
+              const item = closure_1.forEach(function() { /* body not rendered: F139532 */ });
+            }
+      };
+      return tmp2;
+    }
+  }
+  t.prototype = Object.create(Component.prototype);
+  t.prototype.constructor = t;
+  const tmp3 = fn(t, Component);
+  const prototype = t.prototype;
+  prototype.getChildContext = function() {
+    return { [closure_1_2]: this.emitter };
+  };
+  prototype.componentWillReceiveProps = function(value) {
+    const self = this;
+    if (this.props.value !== value.value) {
+      let tmp;
+      value = self.props.value;
+      const value2 = value.value;
+      if (value === value2) {
+        tmp = 0 !== value || 1 / value === 1 / value2;
+        const tmp2 = 0 !== value || 1 / value === 1 / value2;
+      } else {
+        tmp = value != value && value2 != value2;
+      }
+      if (!tmp) {
+        let tmp3Result;
+        if (typeof closure_1 === "function") {
+          tmp3Result = tmp3(value, value2);
+        } else {
+          tmp3Result = c9;
+        }
+        if (0 !== (tmp3Result | 0)) {
+          const emitter = self.emitter;
+          const result = emitter.set(value.value, tmp5);
+        }
+      }
+    }
+  };
+  prototype.render = function() {
+    return this.props.children;
+  };
+  const childContextTypes = { [`${"__create-react-context-" + tmp2}__`]: module_5048.object.isRequired };
+  t.childContextTypes = childContextTypes;
+  const Component2 = react.Component;
+  tmp4.prototype = Object.create(Component2.prototype);
+  tmp4.prototype.constructor = tmp4;
+  const tmp5 = fn(tmp4, Component2);
+  const prototype2 = tmp4.prototype;
+  prototype2.componentWillReceiveProps = function(observedBits) {
+    observedBits = observedBits.observedBits;
+    if (null == observedBits) {
+      observedBits = closure_1_9;
+    }
+    this.observedBits = observedBits;
+  };
+  prototype2.componentDidMount = function() {
+    const self = this;
+    if (this.context[closure_2]) {
+      obj = self.context[tmp];
+      obj.on(self.onUpdate);
+    }
+    let observedBits = self.props.observedBits;
+    if (null == observedBits) {
+      observedBits = c9;
+    }
+    self.observedBits = observedBits;
+  };
+  prototype2.componentWillUnmount = function() {
+    const self = this;
+    if (this.context[closure_2]) {
+      obj = self.context[tmp];
+      obj.off(self.onUpdate);
+    }
+  };
+  prototype2.getValue = function() {
+    let value;
+    if (this.context[closure_2]) {
+      obj = this.context[tmp];
+      value = obj.get();
+    } else {
+      value = closure_0;
+    }
+    return value;
+  };
+  prototype2.render = function() {
+    const children = this.props.children;
+    let first = children;
+    if (Array.isArray(children)) {
+      first = children[0];
+    }
+    return first(this.state.value);
+  };
+  tmp4.contextTypes = { [`${"__create-react-context-" + tmp2}__`]: module_5048.object };
+  let obj2 = { Provider: t, Consumer: tmp4 };
+  return obj2;
+});
+function generatePath(arg0, arg1) {
+  let str = arg0;
+  if (undefined === arg0) {
+    str = "/";
+  }
+  obj = arg1;
+  if (undefined === arg1) {
+    obj = {};
+  }
+  let tmp = str;
+  if ("/" !== str) {
+    let tmp6;
+    if (closure_15[str]) {
+      tmp6 = tmp2[str];
+    } else {
+      const compileResult = pathToRegexp.compile(str);
+      tmp6 = compileResult;
+      if (closure_16 < 10000) {
+        closure_15[str] = compileResult;
+        closure_16 = closure_16 + 1;
+        tmp6 = compileResult;
+      }
+    }
+    tmp = tmp6(obj, { pretty: true });
+  }
+  return tmp;
+}
+function matchPath(pathname, arg1) {
+  let closure_0 = pathname;
+  let path = arg1;
+  if (undefined === arg1) {
+    path = {};
+  }
+  let tmp = typeof path !== "string";
+  if (typeof path !== "string") {
+    const _Array = Array;
+    tmp = !Array.isArray(path);
+  }
+  let tmp2 = path;
   if (!tmp) {
-    let tmp2;
-    if (typeof $$typeof === "object") {
-      if (null !== $$typeof) {
-        $$typeof = $$typeof.$$typeof;
-        if (num === $$typeof) {
-          const type = $$typeof.type;
-          tmp2 = type;
-          if (num9 !== type) {
-            tmp2 = type;
-            if (num8 !== type) {
-              tmp2 = type;
-              if (num3 !== type) {
-                tmp2 = type;
-                if (num5 !== type) {
-                  tmp2 = type;
-                  if (num4 !== type) {
-                    tmp2 = type;
-                    if (num11 !== type) {
-                      if (num7 !== (type && type.$$typeof)) {
-                        if (num10 !== (type && type.$$typeof)) {
-                          if (num14 !== (type && type.$$typeof)) {
-                            if (num13 !== (type && type.$$typeof)) {
-                              tmp2 = $$typeof;
-                            }
-                          }
-                        }
-                      }
-                      tmp2 = tmp10;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        } else if (num2 === $$typeof) {
-          tmp2 = $$typeof;
-        }
+    tmp2 = { path };
+    const obj2 = { path };
+  }
+  let exact = tmp2.exact;
+  let tmp3 = undefined !== exact;
+  path = tmp2.path;
+  if (tmp3) {
+    tmp3 = exact;
+  }
+  exact = tmp3;
+  const strict = tmp2.strict;
+  let closure_2 = undefined !== strict && strict;
+  const sensitive = tmp2.sensitive;
+  let closure_3 = undefined !== sensitive && sensitive;
+  const items = [];
+  const combined = items.concat(path);
+  return combined.reduce((acc, path) => {
+    let keys;
+    let regexp;
+    let str2;
+    const tmp = path;
+    if (!tmp) {
+      if ("" !== path) {
+        return null;
       }
     }
-    tmp = tmp2 === num9;
-  }
-  return tmp;
-};
-export const isConcurrentMode = A;
-export const isContextConsumer = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
-            }
-          }
+    const tmp3 = acc;
+    if (tmp3) {
+      return acc;
+    } else {
+      let tmp12;
+      obj = { end: exact, strict, sensitive };
+      const sum = "" + obj.end + obj.strict + obj.sensitive;
+      let tmp9 = closure_2_17[sum];
+      const tmp4 = exact;
+      if (!tmp9) {
+        const obj2 = {};
+        tmp8[sum] = obj2;
+        tmp9 = obj2;
+      }
+      if (tmp9[path]) {
+        tmp12 = tmp9[path];
+      } else {
+        const items = [];
+        const obj3 = { regexp: closure_2_5(path, items, obj), keys: items };
+        tmp12 = obj3;
+        if (closure_18 < 10000) {
+          tmp9[path] = obj3;
+          closure_18 = closure_18 + 1;
+          tmp12 = obj3;
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+      }
+      ({ regexp, keys } = tmp12);
+      match = regexp.exec(pathname);
+      const tmp14 = pathname;
+      if (match) {
+        let tmp18;
+        const first = match[0];
+        let closure_0 = match.slice(1);
+        if (!tmp4) {
+          const obj4 = {
+            path,
+            url: str2,
+            isExact: tmp14 === first,
+            params: keys.reduce((acc, name, index) => {
+                    acc[name.name] = closure_0[index];
+                    return acc;
+                  }, {})
+          };
+          str2 = "/";
+          if ("/" !== path) {
+            str2 = first;
+          }
+          tmp18 = obj4;
+        } else {
+          tmp18 = null;
+        }
+        return tmp18;
+      } else {
+        return null;
       }
     }
+  }, null);
+}
+function useLocation() {
+  return useContext(closure_12).location;
+}
+const tmp9Result = tmp9();
+tmp9Result.displayName = "Router-History";
+let closure_11 = tmp9Result;
+const tmp9Result2 = tmp9();
+tmp9Result2.displayName = "Router";
+const authStore2 = tmp9Result2;
+let Component = react.Component;
+class t {
+  constructor(history) {
+    const self = this;
+    const tmp = Component.call(self, history) || self;
+    let closure_0 = tmp;
+    tmp.state = { location: history.history.location };
+    tmp._isMounted = false;
+    tmp._pendingLocation = null;
+    if (!history.staticContext) {
+      history = history.history;
+      tmp.unlisten = history.listen((_pendingLocation) => {
+        closure_0._pendingLocation = _pendingLocation;
+      });
+    }
+    return tmp;
   }
-  return tmp === num7;
+  static computeRootMatch(arg0) {
+  return { path: "/", url: "/", params: {}, isExact: "/" === arg0 };
+}
+  render() {
+  return <t history={this.history} children={this.props.children} />;
+}
+}
+t.prototype = Object.create(Component.prototype);
+t.prototype.constructor = t;
+let tmp12 = fn(t, Component);
+let prototype = t.prototype;
+prototype.componentDidMount = function() {
+  const self = this;
+  this._isMounted = true;
+  if (this.unlisten) {
+    self.unlisten();
+  }
+  if (!self.props.staticContext) {
+    const history = self.props.history;
+    self.unlisten = history.listen((location) => {
+      obj = self;
+      if (self._isMounted) {
+        const obj2 = { location };
+        obj.setState(obj2);
+      }
+    });
+  }
+  if (self._pendingLocation) {
+    obj = { location: self._pendingLocation };
+    self.setState(obj);
+  }
 };
-export const isContextProvider = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
+prototype.componentWillUnmount = function() {
+  const self = this;
+  if (this.unlisten) {
+    self.unlisten();
+    self._isMounted = false;
+    self._pendingLocation = null;
+  }
+};
+prototype.render = function() {
+  const createElement = react.createElement;
+  const Provider = redux2.Provider;
+  let children = this.props.children;
+  const createElement2 = react.createElement;
+  const Provider2 = redux.Provider;
+  ({ history: this.props.history, location: this.state.location, match: t.computeRootMatch(this.state.location.pathname), staticContext: this.props.staticContext });
+  if (!children) {
+    children = null;
+  }
+  const obj3 = { children, value: this.props.history };
+  return <Provider value={{ history: this.props.history, location: this.state.location, match: t.computeRootMatch(this.state.location.pathname), staticContext: this.props.staticContext }}>{createElement2(Provider2, obj3)}</Provider>;
+};
+let Component2 = react.Component;
+tmp13.prototype = Object.create(Component2.prototype);
+tmp13.prototype.constructor = tmp13;
+let tmp14 = fn(tmp13, Component2);
+const Component3 = react.Component;
+class e {
+  constructor() {
+    const self = this;
+    const tmp = Component3(...arguments) || self;
+    return tmp;
+  }
+  render() {
+    let redux;
+    const self = this;
+    return <redux.Consumer>{(location) => {
+      let children;
+      let component;
+      let match;
+      let render;
+      let tmp13Result2;
+      const tmp = location;
+      if (!tmp) {
+        invariant(false);
+      }
+      obj = { location: self.props.location || location.location, match };
+      const props = tmp4.props;
+      const tmp6 = obj;
+      if (self.props.computedMatch) {
+        match = props.computedMatch;
+      } else if (props.path) {
+        let props1 = tmp4.props;
+        const pathname = tmp5.pathname;
+        let exact;
+        let closure_2;
+        let closure_3;
+        if (undefined === props1) {
+          props1 = {};
+        }
+        let tmp7 = typeof props1 !== "string";
+        if (typeof props1 !== "string") {
+          const _Array = Array;
+          tmp7 = !Array.isArray(props1);
+        }
+        let tmp8 = props1;
+        if (!tmp7) {
+          tmp8 = { path: props1 };
+          const obj2 = { path: props1 };
+        }
+        exact = tmp8.exact;
+        let tmp9 = undefined !== exact;
+        const path = tmp8.path;
+        if (tmp9) {
+          tmp9 = exact;
+        }
+        exact = tmp9;
+        const strict = tmp8.strict;
+        closure_2 = undefined !== strict && strict;
+        const sensitive = tmp8.sensitive;
+        closure_3 = undefined !== sensitive && sensitive;
+        const items = [];
+        const combined = items.concat(path);
+        match = combined.reduce((acc, path) => {
+          let keys;
+          let regexp;
+          let str2;
+          const tmp = path;
+          if (!tmp) {
+            if ("" !== path) {
+              return null;
             }
           }
-        }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
-      }
-    }
-  }
-  return tmp === num6;
-};
-export const isElement = ($$typeof) => {
-  let tmp = typeof $$typeof === "object";
-  if (typeof $$typeof === "object") {
-    tmp = null !== $$typeof;
-  }
-  if (tmp) {
-    tmp = $$typeof.$$typeof === num;
-  }
-  return tmp;
-};
-export const isForwardRef = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
+          const tmp3 = acc;
+          if (tmp3) {
+            return acc;
+          } else {
+            let tmp12;
+            obj = { end: exact, strict, sensitive };
+            const sum = "" + obj.end + obj.strict + obj.sensitive;
+            let tmp9 = closure_2_17[sum];
+            const tmp4 = exact;
+            if (!tmp9) {
+              const obj2 = {};
+              tmp8[sum] = obj2;
+              tmp9 = obj2;
+            }
+            if (tmp9[path]) {
+              tmp12 = tmp9[path];
+            } else {
+              const items = [];
+              const obj3 = { regexp: closure_2_5(path, items, obj), keys: items };
+              tmp12 = obj3;
+              if (closure_18 < 10000) {
+                tmp9[path] = obj3;
+                closure_18 = closure_18 + 1;
+                tmp12 = obj3;
               }
             }
-          }
-        }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
-      }
-    }
-  }
-  return tmp === num10;
-};
-export const isFragment = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
+            ({ regexp, keys } = tmp12);
+            match = regexp.exec(pathname);
+            const tmp14 = pathname;
+            if (match) {
+              let tmp18;
+              const first = match[0];
+              let closure_0 = match.slice(1);
+              if (!tmp4) {
+                const obj4 = {
+                  path,
+                  url: str2,
+                  isExact: tmp14 === first,
+                  params: keys.reduce((acc, name, index) => {
+                          acc[name.name] = closure_0[index];
+                          return acc;
+                        }, {})
+                };
+                str2 = "/";
+                if ("/" !== path) {
+                  str2 = first;
                 }
+                tmp18 = obj4;
+              } else {
+                tmp18 = null;
               }
+              return tmp18;
+            } else {
+              return null;
             }
           }
-        }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+        }, null);
+      } else {
+        match = location.match;
       }
-    }
-  }
-  return tmp === num3;
-};
-export const isLazy = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
-            }
+      const tmp6Result = tmp6({}, location, obj);
+      ({ children, component, render } = self.props);
+      let isArray = Array.isArray(children);
+      if (isArray) {
+        const Children = react.Children;
+        isArray = 0 === Children.count(children);
+      }
+      let tmp13 = children;
+      if (isArray) {
+        tmp13 = null;
+      }
+      const createElement = react.createElement;
+      const Provider = redux.Provider;
+      if (tmp6Result.match) {
+        let element;
+        if (tmp13) {
+          let tmp13Result = tmp13;
+          if (typeof tmp13 === "function") {
+            tmp13Result = tmp13(tmp6Result);
+          }
+          element = tmp13Result;
+        } else if (component) {
+          element = <component {...tmp6Result} />;
+        } else {
+          element = null;
+          if (render) {
+            element = render(tmp6Result);
           }
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+        tmp13Result2 = element;
+      } else {
+        tmp13Result2 = null;
+        if (typeof tmp13 === "function") {
+          tmp13Result2 = tmp13(tmp6Result);
+        }
       }
+      return <Provider value={tmp6Result}>{tmp13Result2}</Provider>;
+    }}</redux.Consumer>;
+  }
+}
+e.prototype = Object.create(Component3.prototype);
+e.prototype.constructor = e;
+let tmp15 = fn(e, Component3);
+let prototype2 = e.prototype;
+prototype2.componentDidMount = function() {
+  const self = this;
+  if (this.props.onMount) {
+    const onMount = self.props.onMount;
+    onMount.call(self, self);
+  }
+};
+prototype2.componentDidUpdate = function(arg0) {
+  const self = this;
+  if (this.props.onUpdate) {
+    const onUpdate = self.props.onUpdate;
+    onUpdate.call(self, self, arg0);
+  }
+};
+prototype2.componentWillUnmount = function() {
+  const self = this;
+  if (this.props.onUnmount) {
+    const onUnmount = self.props.onUnmount;
+    onUnmount.call(self, self);
+  }
+};
+prototype2.render = () => null;
+let closure_15 = {};
+let closure_16 = 0;
+let closure_17 = {};
+let c18 = 0;
+const Component4 = react.Component;
+tmp16.prototype = Object.create(Component4.prototype);
+tmp16.prototype.constructor = tmp16;
+fn(tmp16, Component4);
+const Component5 = react.Component;
+tmp18.prototype = Object.create(Component5.prototype);
+tmp18.prototype.constructor = tmp18;
+const tmp19 = fn(tmp18, Component5);
+const prototype3 = tmp18.prototype;
+prototype3.navigateTo = function(_location, action) {
+  const props = this.props;
+  const basename = props.basename;
+  let str = "";
+  if (undefined !== basename) {
+    str = basename;
+  }
+  let context = props.context;
+  if (undefined === context) {
+    context = {};
+  }
+  context.action = action;
+  const obj2 = _mod1101;
+  const _location1 = obj2.createLocation(_location);
+  let tmp5Result = _location1;
+  if (str) {
+    let text = str;
+    const tmp5 = obj;
+    if ("/" !== str.charAt(0)) {
+      text = `/${str}`;
+    }
+    obj = { pathname: text + _location1.pathname };
+    tmp5Result = tmp5({}, _location1, obj);
+  }
+  context.location = tmp5Result;
+  _location = context.location;
+  let path = _location;
+  if (typeof _location !== "string") {
+    const tmpResult = _mod1101;
+    path = tmpResult.createPath(_location);
+  }
+  context.url = path;
+};
+prototype3.render = function() {
+  let str3;
+  let tmp5;
+  const go = () => {
+    invariant(false);
+  };
+  const self = this;
+  const props = this.props;
+  const basename = props.basename;
+  let str = "";
+  if (undefined !== basename) {
+    str = basename;
+  }
+  let staticContext = props.context;
+  if (undefined === staticContext) {
+    staticContext = {};
+  }
+  const _location = props.location;
+  let str2 = "/";
+  if (undefined !== _location) {
+    str2 = _location;
+  }
+  const items = ["basename", "context", "location"];
+  if (null == props) {
+    obj = {};
+  } else {
+    const obj2 = {};
+    let tmp = globalThis;
+    const _Object = Object;
+    const keys = Object.keys(props);
+    let num3 = 0;
+    obj = obj2;
+    if (0 < keys.length) {
+      do {
+        let tmp2 = keys[num3];
+        if (0 > items.indexOf(tmp2)) {
+          obj2[tmp2] = props[tmp2];
+        }
+        num3 = num3 + 1;
+        obj = obj2;
+      } while (num3 < keys.length);
     }
   }
-  return tmp === num14;
+  const obj3 = {
+    createHref(_location) {
+      let path = _location;
+      const tmp = str;
+      if (typeof _location !== "string") {
+        obj = _mod1101;
+        path = obj.createPath(_location);
+      }
+      let text = str;
+      if ("/" !== (tmp + path).charAt(0)) {
+        text = `/${str}`;
+      }
+      return text;
+    },
+    action: "POP",
+    location: tmp5,
+    push: null,
+    replace: null,
+    go,
+    goBack: go,
+    goForward: go,
+    listen: null,
+    block: null
+  };
+  const obj5 = str(1101);
+  const _location1 = obj5.createLocation(str2);
+  tmp5 = _location1;
+  if (str) {
+    let text = str;
+    if ("/" !== str.charAt(0)) {
+      text = `/${str}`;
+    }
+    const pathname = _location1.pathname;
+    let tmp7 = _location1;
+    if (0 === pathname.indexOf(text)) {
+      const obj6 = { pathname: str3.substr(text.length) };
+      str3 = _location1.pathname;
+      tmp7 = obj({}, _location1, obj6);
+    }
+    tmp5 = tmp7;
+  }
+  ({ handlePush: obj4.push, handleReplace: obj4.replace } = self);
+  ({ handleListen: obj4.listen, handleBlock: obj4.block } = self);
+  return <t {...obj({}, obj, { history: obj3, staticContext })} />;
 };
-export const isMemo = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
+const Component6 = react.Component;
+tmp20.prototype = Object.create(Component6.prototype);
+tmp20.prototype.constructor = tmp20;
+fn(tmp20, Component6);
+const useContext = react.useContext;
+
+export const MemoryRouter = tmp13;
+export function Prompt(arg0) {
+  let when;
+  ({ message: require, when } = arg0);
+  let closure_1 = undefined === when || when;
+  return <closure_12.Consumer>{(staticContext) => {
+    const tmp = staticContext;
+    if (!tmp) {
+      invariant(false);
+    }
+    const tmp4 = closure_1;
+    if (tmp4) {
+      if (!staticContext.staticContext) {
+        const block = staticContext.history.block;
+        return <closure_1_14 onMount={function onMount(arg0) {
+          arg0.release = block(require);
+        }} onUpdate={function onUpdate(release, message) {
+          if (message.message !== require) {
+            release.release();
+            release.release = block(tmp);
+          }
+        }} onUnmount={function onUnmount(cellKey) {
+          cellKey.release();
+        }} message={block} />;
+      }
+    }
+    return null;
+  }}</closure_12.Consumer>;
+}
+export function Redirect(arg0) {
+  let closure_2;
+  let push;
+  ({ computedMatch: require, to: dependencyMap, push } = arg0);
+  react = undefined !== push && push;
+  return <closure_12.Consumer>{(history) => {
+    let element;
+    let tmp8;
+    let tmp9;
+    const tmp = history;
+    if (!tmp) {
+      let tmp2 = invariant;
+      invariant(false);
+    }
+    history = history.history;
+    const tmp4 = closure_2 ? history.push : history.replace;
+    let closure_0 = tmp4;
+    const staticContext = history.staticContext;
+    const createLocation = _mod1101.createLocation;
+    _mod1101;
+    if (require) {
+      let tmp30Result;
+      if (typeof dependencyMap === "string") {
+        let params = tmp6.params;
+        let str3 = tmp7;
+        if (undefined === dependencyMap) {
+          str3 = "/";
+        }
+        if (undefined === params) {
+          params = {};
+        }
+        let tmp23Result = str3;
+        if ("/" !== str3) {
+          let tmp23;
+          if (closure_15[str3]) {
+            tmp23 = tmp19[str3];
+          } else {
+            const compileResult = pathToRegexp.compile(str3);
+            tmp23 = compileResult;
+            if (closure_16 < 10000) {
+              closure_15[str3] = compileResult;
+              closure_16 = closure_16 + 1;
+              tmp23 = compileResult;
             }
           }
+          tmp23Result = tmp23(params, { pretty: true });
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
-      }
-    }
-  }
-  return tmp === num13;
-};
-export const isPortal = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
+        tmp30Result = tmp23Result;
+      } else {
+        let str = tmp7.pathname;
+        let params1 = tmp6.params;
+        const tmp30 = obj;
+        if (undefined === str) {
+          str = "/";
+        }
+        if (undefined === params1) {
+          params1 = {};
+        }
+        let tmp15Result = str;
+        if ("/" !== str) {
+          let tmp15;
+          if (closure_15[str]) {
+            tmp15 = tmp11[str];
+          } else {
+            const compileResult1 = pathToRegexp.compile(str);
+            tmp15 = compileResult1;
+            if (closure_16 < 10000) {
+              closure_15[str] = compileResult1;
+              closure_16 = closure_16 + 1;
+              tmp15 = compileResult1;
             }
           }
+          tmp15Result = tmp15(params1, { pretty: true });
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+        obj = { pathname: tmp15Result };
+        tmp30Result = tmp30({}, tmp7, obj);
       }
+      tmp9 = tmp30Result;
+      tmp8 = tmp7;
+    } else {
+      tmp8 = tmp7;
+      tmp9 = tmp7;
     }
-  }
-  return tmp === num2;
-};
-export const isProfiler = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
-            }
+    let _location = createLocation(tmp9);
+    if (staticContext) {
+      tmp4(_location);
+      element = null;
+    } else {
+      element = <e onMount={function onMount() {
+        closure_0(_location);
+      }} onUpdate={function onUpdate(arg0, to) {
+        obj = closure_2_0(closure_2_1[7]);
+        _location = obj.createLocation(to.to);
+        const obj2 = closure_2_0(closure_2_1[7]);
+        const obj3 = { key: _location.key };
+        const tmp2 = _location;
+        if (!obj2.locationsAreEqual(_location, closure_2_7({}, _location, obj3))) {
+          closure_0(tmp2);
+        }
+      }} to={tmp8} />;
+    }
+    return element;
+  }}</closure_12.Consumer>;
+}
+export const Route = tmp16;
+export const Router = t;
+export const StaticRouter = tmp18;
+export const Switch = tmp20;
+export const __HistoryContext = tmp9Result;
+export const __RouterContext = tmp9Result2;
+export { generatePath };
+export { matchPath };
+export function useHistory() {
+  return useContext(closure_11);
+}
+export { useLocation };
+export function useParams() {
+  const match = useContext(closure_12).match;
+  return match ? match.params : {};
+}
+export function useRouteMatch(arg0) {
+  let path = arg0;
+  const _location = useContext(closure_12).location;
+  let match = useContext(closure_12).match;
+  if (arg0) {
+    const pathname = _location.pathname;
+    let exact;
+    let closure_2;
+    let closure_3;
+    if (undefined === path) {
+      path = {};
+    }
+    let tmp = typeof path !== "string";
+    if (typeof path !== "string") {
+      const _Array = Array;
+      tmp = !Array.isArray(path);
+    }
+    let tmp2 = path;
+    if (!tmp) {
+      tmp2 = { path };
+      const obj2 = { path };
+    }
+    exact = tmp2.exact;
+    let tmp3 = undefined !== exact;
+    path = tmp2.path;
+    if (tmp3) {
+      tmp3 = exact;
+    }
+    exact = tmp3;
+    const strict = tmp2.strict;
+    closure_2 = undefined !== strict && strict;
+    const sensitive = tmp2.sensitive;
+    closure_3 = undefined !== sensitive && sensitive;
+    const items = [];
+    const combined = items.concat(path);
+    match = combined.reduce((acc, path) => {
+      let keys;
+      let regexp;
+      let str2;
+      const tmp = path;
+      if (!tmp) {
+        if ("" !== path) {
+          return null;
+        }
+      }
+      const tmp3 = acc;
+      if (tmp3) {
+        return acc;
+      } else {
+        let tmp12;
+        obj = { end: exact, strict, sensitive };
+        const sum = "" + obj.end + obj.strict + obj.sensitive;
+        let tmp9 = closure_2_17[sum];
+        const tmp4 = exact;
+        if (!tmp9) {
+          const obj2 = {};
+          tmp8[sum] = obj2;
+          tmp9 = obj2;
+        }
+        if (tmp9[path]) {
+          tmp12 = tmp9[path];
+        } else {
+          const items = [];
+          const obj3 = { regexp: closure_2_5(path, items, obj), keys: items };
+          tmp12 = obj3;
+          if (closure_18 < 10000) {
+            tmp9[path] = obj3;
+            closure_18 = closure_18 + 1;
+            tmp12 = obj3;
           }
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
-      }
-    }
-  }
-  return tmp === num5;
-};
-export const isStrictMode = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
+        ({ regexp, keys } = tmp12);
+        match = regexp.exec(pathname);
+        const tmp14 = pathname;
+        if (match) {
+          let tmp18;
+          const first = match[0];
+          let closure_0 = match.slice(1);
+          if (!tmp4) {
+            const obj4 = {
+              path,
+              url: str2,
+              isExact: tmp14 === first,
+              params: keys.reduce((acc, name, index) => {
+                      acc[name.name] = closure_0[index];
+                      return acc;
+                    }, {})
+            };
+            str2 = "/";
+            if ("/" !== path) {
+              str2 = first;
             }
+            tmp18 = obj4;
+          } else {
+            tmp18 = null;
           }
+          return tmp18;
+        } else {
+          return null;
         }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+      }
+    }, null);
+  }
+  return match;
+}
+export function withRouter(displayName) {
+  let Consumer;
+  let closure_0 = displayName;
+  let tmp = displayName.displayName || displayName.name;
+  fn = function t(wrappedComponentRef) {
+    wrappedComponentRef = wrappedComponentRef.wrappedComponentRef;
+    const items = ["wrappedComponentRef"];
+    if (null == wrappedComponentRef) {
+      let obj2 = {};
+    } else {
+      obj = {};
+      let tmp = globalThis;
+      const _Object = Object;
+      const keys = Object.keys(wrappedComponentRef);
+      let num3 = 0;
+      obj2 = obj;
+      if (0 < keys.length) {
+        do {
+          let tmp2 = keys[num3];
+          if (0 > items.indexOf(tmp2)) {
+            obj[tmp2] = wrappedComponentRef[tmp2];
+          }
+          num3 = num3 + 1;
+          obj2 = obj;
+        } while (num3 < keys.length);
       }
     }
-  }
-  return tmp === num4;
-};
-export const isSuspense = ($$typeof) => {
-  let tmp;
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        tmp = type;
-        if (num9 !== type) {
-          tmp = type;
-          if (num8 !== type) {
-            tmp = type;
-            if (num3 !== type) {
-              tmp = type;
-              if (num5 !== type) {
-                tmp = type;
-                if (num4 !== type) {
-                  tmp = type;
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            tmp = $$typeof;
-                          }
-                        }
-                      }
-                    }
-                    tmp = tmp9;
-                  }
-                }
-              }
-            }
-          }
-        }
-      } else if (num2 === $$typeof) {
-        tmp = $$typeof;
+    return <Consumer.Consumer>{(arg0) => {
+      const tmp = arg0;
+      if (!tmp) {
+        invariant(false);
       }
-    }
-  }
-  return tmp === num11;
-};
-export const isValidElementType = ($$typeof) => {
-  let tmp = typeof $$typeof === "string" || typeof $$typeof === "function" || $$typeof === num3 || $$typeof === num8 || $$typeof === num5 || $$typeof === num4 || $$typeof === num11 || $$typeof === num12;
-  if (!tmp) {
-    let tmp8 = typeof $$typeof === "object";
-    if (typeof $$typeof === "object") {
-      tmp8 = null !== $$typeof;
-    }
-    if (tmp8) {
-      tmp8 = $$typeof.$$typeof === num14 || $$typeof.$$typeof === num13 || $$typeof.$$typeof === num6 || $$typeof.$$typeof === num7 || $$typeof.$$typeof === num10 || $$typeof.$$typeof === num16 || $$typeof.$$typeof === num17 || $$typeof.$$typeof === num18 || $$typeof.$$typeof === num15;
-      const tmp10 = $$typeof.$$typeof === num14 || $$typeof.$$typeof === num13 || $$typeof.$$typeof === num6 || $$typeof.$$typeof === num7 || $$typeof.$$typeof === num10 || $$typeof.$$typeof === num16 || $$typeof.$$typeof === num17 || $$typeof.$$typeof === num18 || $$typeof.$$typeof === num15;
-    }
-    tmp = tmp8;
-  }
-  return tmp;
-};
-export const typeOf = function z($$typeof) {
-  if (typeof $$typeof === "object") {
-    if (null !== $$typeof) {
-      $$typeof = $$typeof.$$typeof;
-      if (num === $$typeof) {
-        const type = $$typeof.type;
-        if (num9 !== type) {
-          if (num8 !== type) {
-            if (num3 !== type) {
-              if (num5 !== type) {
-                if (num4 !== type) {
-                  if (num11 !== type) {
-                    if (num7 !== (type && type.$$typeof)) {
-                      if (num10 !== (type && type.$$typeof)) {
-                        if (num14 !== (type && type.$$typeof)) {
-                          if (num13 !== (type && type.$$typeof)) {
-                            if (num6 !== (type && type.$$typeof)) {
-                              return $$typeof;
-                            }
-                          }
-                        }
-                      }
-                    }
-                    return type && type.$$typeof;
-                  }
-                }
-              }
-            }
-          }
-        }
-        return type;
-      } else if (num2 === $$typeof) {
-        return $$typeof;
-      }
-    }
-  }
-};
+      obj = { ref: wrappedComponentRef };
+      return <closure_0 {...obj({}, obj2, arg0, obj)} />;
+    }}</Consumer.Consumer>;
+  };
+  fn.displayName = `withRouter(${tmp})`;
+  fn.WrappedComponent = displayName;
+  return hoistNonReactStatics(fn, displayName);
+}

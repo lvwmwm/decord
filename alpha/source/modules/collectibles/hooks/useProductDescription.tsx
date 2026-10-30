@@ -1,14 +1,13 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14999
+// Function ID: 15000
 // Name: useProductDescription
-// Dependencies: [19, 1125, 1993, 558, 576, 2]
+// Dependencies: [19, 1114, 1988, 2]
+// Exports: useProductDescription
 
-// Module 14956 (useProductDescription)
+// Module 14999 (useProductDescription)
 import react from "react" /* 19 */;
-import react2 from "react" /* 576 */;
-import intl7 from "intl" /* 1125 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import intl7 from "intl" /* 1114 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
 import size from "module_2" /* 2 */;
 
 function getBundleDescription(bundledProducts, flag) {
@@ -39,19 +38,19 @@ function getBundleDescription(bundledProducts, flag) {
       let tmp6 = require;
       if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
         let push2 = items.push;
-        let intl2 = tmp6(1125).intl;
+        let intl2 = tmp6(1114).intl;
         let obj3 = { itemName: tmp4.name };
-        let push2Result = push2(intl2.formatToPlainString(tmp6(1125).t.Ntv9Jt, obj3));
-      } else if (tmp6(1993).CollectiblesItemType.PROFILE_EFFECT === type) {
+        let push2Result = push2(intl2.formatToPlainString(tmp6(1114).t.Ntv9Jt, obj3));
+      } else if (tmp6(1988).CollectiblesItemType.PROFILE_EFFECT === type) {
         let push = items.push;
-        let intl = tmp6(1125).intl;
+        let intl = tmp6(1114).intl;
         let obj = { itemName: tmp4.name };
-        let arr = push(intl.formatToPlainString(tmp6(1125).t["3Y8q7a"], obj));
-      } else if (tmp6(1993).CollectiblesItemType.NAMEPLATE === type) {
+        let arr = push(intl.formatToPlainString(tmp6(1114).t["3Y8q7a"], obj));
+      } else if (tmp6(1988).CollectiblesItemType.NAMEPLATE === type) {
         let push3 = items.push;
-        let intl6 = tmp6(1125).intl;
+        let intl6 = tmp6(1114).intl;
         let obj4 = { itemName: tmp4.name };
-        let push3Result = push3(intl6.formatToPlainString(tmp6(1125).t["2keXky"], obj4));
+        let push3Result = push3(intl6.formatToPlainString(tmp6(1114).t["2keXky"], obj4));
         flag2 = true;
       }
       continue;
@@ -94,16 +93,16 @@ function getProductDescription(summary, flag) {
     type = summary.type;
   }
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl4 = tmp2(1125).intl;
+    const intl4 = tmp2(1114).intl;
     return intl4.string(intl7.t["3lv7q2"]);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl3 = tmp2(1125).intl;
+    const intl3 = tmp2(1114).intl;
     return intl3.string(intl7.t.VhJL72);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-    const intl2 = tmp2(1125).intl;
+    const intl2 = tmp2(1114).intl;
     return intl2.string(intl7.t.ik37EZ);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === type) {
-    const intl = tmp2(1125).intl;
+    const intl = tmp2(1114).intl;
     return intl.string(intl7.t.fWzWPp);
   } else if (CollectiblesItemType.CollectiblesItemType.BUNDLE === type) {
     return getBundleDescription(summary, flag);
@@ -112,31 +111,15 @@ function getProductDescription(summary, flag) {
   }
 }
 const useMemo = react.useMemo;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProductDescription(summary, arg1) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === summary) {
-    let tmp3;
-    if (cResult[1] === (undefined !== arg1 && arg1)) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = getProductDescription(summary, undefined !== arg1 && arg1);
-  cResult[0] = summary;
-  cResult[1] = undefined !== arg1 && arg1;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function useProductDescription(arg0) {
-  let closure_0 = arg0;
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
+
+export { getProductDescription };
+export function useProductDescription(product) {
+  let closure_0 = product;
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
-  const items = [arg0, flag];
-  return useMemo(() => getProductDescription(closure_0, flag), items);
-});
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useProductDescription.tsx");
-
-export { getProductDescription };
-export const useProductDescription = tmp2;
+  const items = [product, flag];
+  return useMemo(() => getProductDescription(require, flag), items);
+}

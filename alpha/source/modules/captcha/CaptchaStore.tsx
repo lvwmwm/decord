@@ -1,21 +1,21 @@
-// Module ID: 6526
-// Function ID: 6527
+// Module ID: 6533
+// Function ID: 6534
 // Name: CaptchaStore
-// Dependencies: [32, 570, 1271, 6527, 6532, 2]
+// Dependencies: [32, 560, 1260, 6534, 6539, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 6526 (CaptchaStore)
-import react_native from "react-native" /* 1271 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6527 */;
-import MetricEvents from "MetricEvents" /* 6532 */;
+// Module 6533 (CaptchaStore)
+import react_native from "react-native" /* 1260 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6534 */;
+import MetricEvents from "MetricEvents" /* 6539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import module_570 from "module_570" /* 570 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useCaptchaStore = module_570.create(() => ({ captchaServeVolume: {} }));
+const useCaptchaStore = module_560.create(() => ({ captchaServeVolume: {} }));
 const result = size.fileFinishedImporting("modules/captcha/CaptchaStore.tsx");
 
 export { useCaptchaStore };

@@ -1,12 +1,12 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11712
+// Function ID: 11713
 // Name: selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 4908, 6693, 2]
+// Dependencies: [5, 4912, 6700, 2]
 // Exports: default
 
-// Module 11512 (selectAndWaitForVoiceChannelJoin)
+// Module 11712 (selectAndWaitForVoiceChannelJoin)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -26,7 +26,7 @@ let obj = function _selectAndWaitForVoiceChannelJoin() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -54,7 +54,7 @@ let obj = function _selectAndWaitForVoiceChannelJoin() {
             promise = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

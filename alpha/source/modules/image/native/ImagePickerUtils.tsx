@@ -1,11 +1,11 @@
-// Module ID: 8211
-// Function ID: 8212
+// Module ID: 8214
+// Function ID: 8215
 // Name: ImagePickerUtils
-// Dependencies: [1628, 2]
+// Dependencies: [1623, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 8211 (ImagePickerUtils)
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+// Module 8214 (ImagePickerUtils)
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");

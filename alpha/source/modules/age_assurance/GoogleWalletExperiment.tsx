@@ -1,41 +1,25 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8158
+// Function ID: 8159
 // Name: GoogleWalletExperiment
-// Dependencies: [1453, 558, 576, 2]
-// Exports: isGoogleWalletEnabled
+// Dependencies: [1448, 2]
+// Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 8152 (GoogleWalletExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8158 (GoogleWalletExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { kind: "user", name: "2026-03-age-verification-google-wallet", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGoogleWalletEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsGoogleWalletEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/GoogleWalletExperiment.tsx");
 
-export const useIsGoogleWalletEnabled = tmp2;
+export function useIsGoogleWalletEnabled(location) {
+  const obj = { location };
+  return closure_0.useConfig(obj).enabled;
+}
 export function isGoogleWalletEnabled(age_verification_methods) {
   const obj = { location: age_verification_methods };
-  return closure_2.getConfig(obj).enabled;
+  return closure_0.getConfig(obj).enabled;
 }

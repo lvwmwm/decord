@@ -1,27 +1,27 @@
-// Module ID: 10686
-// Function ID: 10687
+// Module ID: 10709
+// Function ID: 10710
 // Name: useUserListData
-// Dependencies: [109, 32, 19, 7792, 7788, 7789, 1403, 4947, 1389, 1084, 4932, 7787, 9106, 584, 7791, 6888, 12, 1125, 558, 576, 9119, 2]
+// Dependencies: [109, 32, 19, 7797, 7793, 7794, 1398, 4951, 1384, 1072, 4936, 7792, 9119, 572, 7796, 6895, 12, 1114, 9132, 2]
+// Exports: default
 
-// Module 10686 (useUserListData)
+// Module 10709 (useUserListData)
 import _modDef12 from "module_12" /* 12 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import intl6 from "intl" /* 1125 */;
-import GuildUtilsDefault from "GuildUtils" /* 6888 */;
-import UserSearchItemsDefault from "UserSearchItems" /* 7787 */;
-import UserSearchUtils from "UserSearchUtils" /* 7791 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9106 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import intl6 from "intl" /* 1114 */;
+import GuildUtilsDefault from "GuildUtils" /* 6895 */;
+import UserSearchItemsDefault from "UserSearchItems" /* 7792 */;
+import UserSearchUtils from "UserSearchUtils" /* 7796 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9119 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7792 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7797 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7793 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
+import UserRecord from "UserRecord" /* 1398 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -131,7 +131,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   let withFriendSuggestions;
   let withFriends;
   let withGuildMembers;
-  const f109683 = (items) => items.items;
+  const f97714 = (items) => items.items;
   ({ data, withFriends, excludeCurrentUser } = affinitySuggestionsLimit);
   ({ withGuildMembers, withAffinitySuggestions, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam } = affinitySuggestionsLimit);
   if (excludeCurrentUser === undefined) {
@@ -198,8 +198,8 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   } else {
     items11 = [];
   }
-  let items9 = [{ title: null, items: items11.flatMap(f109683) }];
-  const obj = { title: null, items: items11.flatMap(f109683) };
+  let items9 = [{ title: null, items: items11.flatMap(f97714) }];
+  const obj = { title: null, items: items11.flatMap(f97714) };
   const obj2 = { title: intl.string(intl6.t.HbJ7eD), items: valueResult2 };
   intl = intl6.intl;
   if (withAffinitySuggestions) {
@@ -212,7 +212,7 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   const items10 = [obj2, , , , , , , ];
   const obj3 = { title: intl2.formatToPlainString(intl6.t.zsVtft, obj5), items: items1 };
-  intl2 = tmp7(1125).intl;
+  intl2 = tmp7(1114).intl;
   obj5 = { pendingRequestNumber: items1.length };
   if (!withFriendRequests) {
     items1 = [];
@@ -231,20 +231,20 @@ function parseUserSearchResults(affinitySuggestionsLimit) {
   }
   items10[4] = { title: null, items: items4 };
   const obj6 = { title: intl3.formatToPlainString(intl6.t["DYMZ/p"], obj7), items: items5 };
-  intl3 = tmp7(1125).intl;
+  intl3 = tmp7(1114).intl;
   obj7 = { count: items5.length };
   if (!withFriendSuggestions) {
     items5 = [];
   }
   items10[5] = obj6;
   const obj8 = { title: intl4.string(intl6.t.TdEu5X), items: items6 };
-  intl4 = tmp7(1125).intl;
+  intl4 = tmp7(1114).intl;
   if (!withFriends) {
     items6 = [];
   }
   items10[6] = obj8;
   const obj9 = { title: intl5.string(intl6.t.y29JXs), items: found };
-  intl5 = tmp7(1125).intl;
+  intl5 = tmp7(1114).intl;
   if (!withGuildMembers) {
     found = [];
   }
@@ -259,7 +259,7 @@ const RelationshipTypes = Constants.RelationshipTypes;
 let items = [, , , ];
 ({ FRIEND: arr[0], SUGGESTION: arr[1], PENDING_INCOMING: arr[2], PENDING_OUTGOING: arr[3] } = RelationshipTypes);
 const set = new Set(items);
-const authStore3 = { AffinitySuggestions: "AFFINITY_SUGGESTIONS", Friends: "FRIENDS", FriendRequests: "FRIEND_REQUESTS", FriendRequestsIncoming: "FRIEND_REQUESTS_INCOMING", FriendRequestsOutgoing: "FRIEND_REQUESTS_OUTGOING", FriendRequestsSpam: "FRIEND_REQUESTS_SPAM", FriendSuggestions: "FRIEND_SUGGESTIONS", GuildMembers: "GUILD_MEMBERS" };
+const authStore4 = { AffinitySuggestions: "AFFINITY_SUGGESTIONS", Friends: "FRIENDS", FriendRequests: "FRIEND_REQUESTS", FriendRequestsIncoming: "FRIEND_REQUESTS_INCOMING", FriendRequestsOutgoing: "FRIEND_REQUESTS_OUTGOING", FriendRequestsSpam: "FRIEND_REQUESTS_SPAM", FriendSuggestions: "FRIEND_SUGGESTIONS", GuildMembers: "GUILD_MEMBERS" };
 class UserSearch {
   constructor(arg0, withGameFriends) {
     let spam;
@@ -272,7 +272,7 @@ class UserSearch {
     obj.currentQuery = "";
     obj.affinities = {};
     obj.userSearchContext = null;
-    const secondaryIndexMap = new obj(4932).SecondaryIndexMap((arg0) => {
+    const secondaryIndexMap = new obj(4936).SecondaryIndexMap((arg0) => {
       let names;
       let type;
       ({ names, type } = arg0);
@@ -712,7 +712,7 @@ class UserSearch {
       if ("" !== self.currentQuery) {
         nick = isMatch(names, self.currentQuery, { contains: true });
       }
-      const tmp12Result = tmp12(7791);
+      const tmp12Result = tmp12(7796);
       const relationshipType = tmp12Result.getRelationshipType(user.id);
       if (relationshipType !== RelationshipTypes.FRIEND) {
         const gameFriendsForUser = GameRelationshipStore.getGameFriendsForUser(id);
@@ -767,105 +767,9 @@ class UserSearch {
   }
 }
 const prototype = UserSearch.prototype;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListData(query) {
-  let affinitySuggestionsLimit;
-  let arr;
-  let excludeCurrentUser;
-  let first;
-  let tmp4;
-  let withAffinitySuggestions;
-  let withAlphabeticalSections;
-  let withFriendRequests;
-  let withFriendRequestsIncoming;
-  let withFriendRequestsOutgoing;
-  let withFriendRequestsSpam;
-  let withFriendSuggestions;
-  let withFriends;
-  let withGameFriends;
-  let obj = query(576);
-  const cResult = obj.c(32);
-  query = query.query;
-  const withGuildMembers = query.withGuildMembers;
-  ({ withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser, affinitySuggestionsLimit, withAlphabeticalSections } = query);
-  [tmp4, dependencyMap] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      return dependencyMap(Date.now());
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== withGameFriends) {
-    const self = this;
-    const tmp9 = new UserSearch(first, withGameFriends);
-    cResult[1] = withGameFriends;
-    cResult[2] = tmp9;
-    arr = tmp9;
-  } else {
-    arr = cResult[2];
-  }
-  if (cResult[3] === query) {
-    if (cResult[4] === arr) {
-      if (cResult[7] === arr) {
-        let tmp12;
-        let tmp13;
-        if (cResult[8] === withGuildMembers) {
-          tmp12 = cResult[9];
-          tmp13 = cResult[10];
-        }
-        const effect = obj2.useEffect(tmp12, tmp13);
-        class A {
-          constructor() {
-            obj = withGuildMembers(closure_2[16]);
-            closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
-            subscription = closure_3.subscribe(() => {
-              closure_0();
-            }, withGuildMembers);
-            return () => arr.unsubscribe();
-          }
-        }
-        class T {
-          constructor() {
-            const response = arr.fetch(query, withGuildMembers);
-          }
-        }
-        const items = [arr, query, withGuildMembers];
-        cResult[11] = query;
-        cResult[12] = arr;
-        cResult[13] = withGuildMembers;
-        cResult[14] = items;
-        cResult[15] = T;
-      }
-      class A {
-        constructor() {
-          obj = withGuildMembers(closure_2[16]);
-          closure_0 = obj.debounce(() => closure_1_2(Date.now()), 0);
-          subscription = closure_3.subscribe(() => {
-            closure_0();
-          }, withGuildMembers);
-          return () => arr.unsubscribe();
-        }
-      }
-      tmp14[0] = arr;
-      tmp14[1] = withGuildMembers;
-      cResult[7] = arr;
-      cResult[8] = withGuildMembers;
-      cResult[9] = A;
-      cResult[10] = tmp14;
-      tmp13 = tmp14;
-      tmp12 = A;
-    }
-  }
-  const found = arr.filter(query, tmp4);
-  cResult[3] = query;
-  cResult[4] = arr;
-  cResult[5] = tmp4;
-  cResult[6] = found;
-}) : (function useUserListData(query) {
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
+
+export default function useUserListData(query) {
   query = query.query;
   const withGuildMembers = query.withGuildMembers;
   const withAffinitySuggestions = query.withAffinitySuggestions;
@@ -909,7 +813,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
     const response = memo.fetch(query, withGuildMembers);
   }, items3);
   const effect2 = withFriendSuggestions.useEffect(() => {
-    const obj = query(withAffinitySuggestions[20]);
+    const obj = query(withAffinitySuggestions[18]);
     const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
   const items4 = [memo1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, flag, num, flag2];
@@ -917,9 +821,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserListD
     const obj = { data: memo1, withGuildMembers, withAffinitySuggestions, withFriends, withGameFriends, withFriendSuggestions, withFriendRequests, withFriendRequestsIncoming, withFriendRequestsOutgoing, withFriendRequestsSpam, excludeCurrentUser: flag, affinitySuggestionsLimit: num, withAlphabeticalSections: flag2 };
     return parseUserSearchResults(obj);
   }, items4);
-});
-let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserListData.tsx");
-
-export default tmp3;
+};
 export { UserSearch };
 export { parseUserSearchResults };

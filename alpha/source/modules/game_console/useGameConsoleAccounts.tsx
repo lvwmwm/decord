@@ -1,47 +1,24 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11937
+// Function ID: 11938
 // Name: useGameConsoleAccounts
-// Dependencies: [6559, 1084, 558, 576, 1385, 504, 2]
+// Dependencies: [6566, 1072, 504, 1380, 2]
+// Exports: default
 
-// Module 11744 (useGameConsoleAccounts)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11937 (useGameConsoleAccounts)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const PlatformTypes = Constants.PlatformTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameConsoleAccounts() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [ConnectedAccountsStore];
-    const fn = function l() {
-      const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
-      return items.filter(GlobalUtils.isNotNullish);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (function useGameConsoleAccounts() {
+const result = size.fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
+
+export default function useGameConsoleAccounts() {
   let items = [ConnectedAccountsStore];
   const obj = get_initialized;
   return obj.useStateFromStoresArray(items, () => {
     const items = [ConnectedAccountsStore.getAccount(null, constants.XBOX), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION), ConnectedAccountsStore.getAccount(null, constants.PLAYSTATION_STAGING)];
     return items.filter(GlobalUtils.isNotNullish);
   });
-});
-const result = size.fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");
-
-export default tmp2;
+};

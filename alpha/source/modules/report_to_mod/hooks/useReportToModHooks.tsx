@@ -1,64 +1,27 @@
-// Module ID: 10151
-// Function ID: 10152
+// Module ID: 10178
+// Function ID: 10179
 // Name: useReportToModHooks
-// Dependencies: [19, 4879, 6049, 558, 576, 7426, 7447, 504, 7443, 7624, 8710, 2]
-// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel
+// Dependencies: [19, 4880, 6056, 504, 7434, 7455, 7451, 7629, 8744, 2]
+// Exports: loadOriginalAuthorFromSnapshot, useIsModeratorReportOrPostChannel, useIsModeratorReportPostChannel, useIsReportToModEnabled, useLoadReportedMessage, useReportToModChannelId
 
-// Module 10151 (useReportToModHooks)
+// Module 10178 (useReportToModHooks)
 import react from "react" /* 19 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7426 */;
-import ReportToModUtils from "ReportToModUtils" /* 7443 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7447 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
-import UserActionCreators from "UserActionCreators" /* 8710 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 7434 */;
+import ReportToModUtils from "ReportToModUtils" /* 7451 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 7455 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7629 */;
+import UserActionCreators from "UserActionCreators" /* 8744 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import MessageStore from "MessageStore" /* 6056 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const useEffect = react.useEffect;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsReportToModEnabled(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      if (null == closure_0) {
-        return false;
-      } else {
-        const guild = GuildStore.getGuild(tmp);
-        let tmp4 = null != guild;
-        if (tmp4) {
-          tmp4 = getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
-          getGuildModeratorReportingEnabledDefault(guild) && null != getGuildModeratorReportChannelIdDefault(guild);
-        }
-        return tmp4;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useIsReportToModEnabled(arg0) {
+const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
+
+export function useIsReportToModEnabled(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -76,48 +39,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRepor
       return tmp4;
     }
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportToModChannelId(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let guild = null;
-      if (null != closure_0) {
-        guild = GuildStore.getGuild(tmp);
-      }
-      let tmp4 = null;
-      if (null != guild) {
-        let tmp7 = getGuildModeratorReportChannelIdDefault(guild);
-        if (tmp7 == null) {
-          tmp7 = null;
-        }
-        tmp4 = tmp7;
-      }
-      return tmp4;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useReportToModChannelId(arg0) {
+}
+export function useReportToModChannelId(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildStore];
@@ -137,65 +60,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReportT
     }
     return tmp4;
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadReportedMessage(messageReference) {
-  let first;
-  let tmp6;
-  let tmp = messageReference;
-  let obj = messageReference(576);
-  const cResult = obj.c(7);
-  messageReference = messageReference.messageReference;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== messageReference) {
-    const fn = function l() {
-      let message = null;
-      if (null != messageReference) {
-        message = MessageStore.getMessage(tmp.channel_id, tmp.message_id);
-      }
-      return message;
-    };
-    cResult[1] = messageReference;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === messageReference) {
-    let tmp8;
-    let tmp9;
-    if (cResult[4] === stateFromStores) {
-      tmp8 = cResult[5];
-      tmp9 = cResult[6];
-    }
-    useEffect(tmp8, tmp9);
-  }
-  const fn2 = function p() {
-    let obj3;
-    const tmp = null == stateFromStores && null != messageReference;
-    if (tmp) {
-      const obj2 = { channelId: messageReference.channel_id, jump: obj3, limit: 10 };
-      obj3 = { messageId: messageReference.message_id };
-      const obj = MessageActionCreatorsDefault;
-      const messages = obj.fetchMessages(obj2);
-    }
-  };
-  const items1 = [stateFromStores, messageReference];
-  cResult[3] = messageReference;
-  cResult[4] = stateFromStores;
-  cResult[5] = fn2;
-  cResult[6] = items1;
-  tmp9 = items1;
-  tmp8 = fn2;
-}) : (function useLoadReportedMessage(messageReference) {
+}
+export function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
+}
+export function useIsModeratorReportPostChannel(isModeratorReportChannel) {
+  const obj = ReportToModUtils;
+  return obj.isModeratorReportPostChannel(isModeratorReportChannel);
+}
+export function useLoadReportedMessage(messageReference) {
   messageReference = messageReference.messageReference;
   let obj = messageReference(504);
   const items = [MessageStore];
@@ -217,20 +91,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLoadRepor
       const messages = obj.fetchMessages(obj2);
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/report_to_mod/hooks/useReportToModHooks.tsx");
-
-export const useIsReportToModEnabled = tmp2;
-export const useReportToModChannelId = tmp3;
-export function useIsModeratorReportOrPostChannel(isModeratorReportChannel) {
-  const obj = ReportToModUtils;
-  return obj.isModeratorReportOrPostChannel(isModeratorReportChannel);
 }
-export function useIsModeratorReportPostChannel(isModeratorReportChannel) {
-  const obj = ReportToModUtils;
-  return obj.isModeratorReportPostChannel(isModeratorReportChannel);
-}
-export const useLoadReportedMessage = tmp4;
 export function loadOriginalAuthorFromSnapshot(arg0) {
   let reported_user_id;
   if (arg0 != null) {

@@ -1,29 +1,27 @@
-// Module ID: 12300
-// Function ID: 12301
+// Module ID: 12461
+// Function ID: 12462
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 4911, 5750, 1389, 1084, 21, 5005, 587, 6061, 1199, 7343, 7361, 9027, 558, 576, 9169, 5271, 12268, 1125, 2]
+// Dependencies: [19, 17, 4915, 5756, 1384, 1072, 21, 5009, 575, 6068, 1188, 7350, 7368, 9040, 9182, 5619, 12431, 1114, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 12300 (MentionableSelectOptionParts)
+// Module 12461 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6061 */;
-import RoleIconUtils from "RoleIconUtils" /* 7343 */;
-import RoleIconDefault from "RoleIcon" /* 7361 */;
-import DiscordTagDefault from "DiscordTag" /* 9169 */;
-import UserIcon from "UserIcon" /* 12268 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6068 */;
+import RoleIconUtils from "RoleIconUtils" /* 7350 */;
+import RoleIconDefault from "RoleIcon" /* 7368 */;
+import DiscordTagDefault from "DiscordTag" /* 9182 */;
+import UserIcon from "UserIcon" /* 12431 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -32,86 +30,13 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
-const View = react_native.View;
-({ Fonts, DEFAULT_ROLE_COLOR_HEX: metroImportDefault } = Constants);
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { name: obj2, discriminator: obj3, roleCountContainer: { display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center", justifyContent: "flex-end", marginRight: 12 }, roleCountText: { paddingRight: 4 } };
-obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
-createStyles = createStyles.createStyles;
-obj3 = { color: nativeDefault.colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
-let closure_10 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserOptionTag(user) {
-  const obj = react2;
-  const cResult = obj.c(4);
-  user = user.user;
-  const tmp3 = closure_10();
-  if (cResult[0] === tmp3.discriminator) {
-    if (cResult[1] === tmp3.name) {
-      let tmp4;
-      if (cResult[2] === user) {
-        tmp4 = cResult[3];
-      }
-      return tmp4;
-    }
-  }
-  const obj2 = { user, usernameStyle: tmp3.name, discriminatorStyle: tmp3.discriminator, nicknameStyle: tmp3.name };
-  const tmp5 = metroImportAll(DiscordTagDefault, obj2);
-  cResult[0] = tmp3.discriminator;
-  cResult[1] = tmp3.name;
-  cResult[2] = user;
-  cResult[3] = tmp5;
-  tmp4 = tmp5;
-}) : (function UserOptionTag(user) {
+function UserOptionTag(user) {
   user = user.user;
   const tmp = closure_10();
   const obj = { user, usernameStyle: tmp.name, discriminatorStyle: tmp.discriminator, nicknameStyle: tmp.name };
   return metroImportAll(DiscordTagDefault, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMemberCount(count) {
-  let items;
-  const obj = react2;
-  const cResult = obj.c(7);
-  count = count.count;
-  const tmp4 = closure_10();
-  if (cResult[0] === count) {
-    let tmp5;
-    let tmp8;
-    if (cResult[1] === tmp4.roleCountText) {
-      tmp5 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp10 = metroImportAll(UserIcon.UserIcon, { size: "xs" });
-      cResult[3] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[3];
-    }
-    if (cResult[4] === tmp4.roleCountContainer) {
-      let tmp11;
-      if (cResult[5] === tmp5) {
-        tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-    const obj2 = { style: tmp4.roleCountContainer, children: items };
-    items = [tmp5, tmp8];
-    const tmp14 = React4(View, obj2);
-    cResult[4] = tmp4.roleCountContainer;
-    cResult[5] = tmp5;
-    cResult[6] = tmp14;
-    tmp11 = tmp14;
-  }
-  const obj3 = { style: tmp4.roleCountText, variant: "text-sm/medium", color: "interactive-text-default", children: count };
-  const tmp6 = metroImportAll(Text_Text.Text, obj3);
-  cResult[0] = count;
-  cResult[1] = tmp4.roleCountText;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function RoleMemberCount(count) {
+}
+function RoleMemberCount(count) {
   let items;
   count = count.count;
   const tmp = closure_10();
@@ -121,7 +46,16 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleMe
   items[0] = metroImportAll(Text_Text.Text, obj2);
   items[1] = metroImportAll(UserIcon.UserIcon, { size: "xs" });
   return React4(View, obj);
-});
+}
+const View = react_native.View;
+({ Fonts, DEFAULT_ROLE_COLOR_HEX: metroImportDefault } = Constants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { name: obj2, discriminator: obj3, roleCountContainer: { display: "flex", flexDirection: "row", flexGrow: 1, alignItems: "center", justifyContent: "flex-end", marginRight: 12 }, roleCountText: { paddingRight: 4 } };
+obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12, lineHeight: 16 };
+createStyles = createStyles.createStyles;
+obj3 = { color: nativeDefault.colors.TEXT_MUTED, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
+let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/interaction_components/native/components/MentionableSelectOptionParts.tsx");
 
 export function renderMentionableOptionIcon(type, guild, guildId) {
@@ -134,7 +68,7 @@ export function renderMentionableOptionIcon(type, guild, guildId) {
       const isVROnlineResult = PresenceStore.isVROnline(user.id);
       const status = PresenceStore.getStatus(user.id);
       const obj = { user, isMobileOnline: isMobileOnlineResult, isVROnline: isVROnlineResult, status, guildId, size: native.AvatarSizes.XSMALL };
-      const Avatar = tmp(1199).Avatar;
+      const Avatar = tmp(1188).Avatar;
       return metroImportAll(Avatar, obj);
     }
   } else if (type.type === InteractionComponentTypes.SelectOptionType.ROLE) {
@@ -155,7 +89,7 @@ export function renderMentionableOptionIcon(type, guild, guildId) {
           }
         }
         let colorString;
-        const ShieldUserIcon = tmp(9027).ShieldUserIcon;
+        const ShieldUserIcon = tmp(9040).ShieldUserIcon;
         const tmp8 = metroImportAll;
         if (role != null) {
           colorString = role.colorString;
@@ -173,7 +107,7 @@ export function renderMentionableOptionIcon(type, guild, guildId) {
 export function renderMentionableOptionDescription(type) {
   if (type.type === InteractionComponentTypes.SelectOptionType.USER) {
     const obj = { user: UserStore.getUser(type.value) };
-    return metroImportAll(closure_11, obj);
+    return metroImportAll(UserOptionTag, obj);
   }
 }
 export function renderMentionableOptionSuffix(type, guild, arg2) {
@@ -192,7 +126,7 @@ export function renderMentionableOptionSuffix(type, guild, arg2) {
     }
     if (null != tmp5) {
       const obj = { count: tmp5 };
-      return metroImportAll(closure_12, obj);
+      return metroImportAll(RoleMemberCount, obj);
     }
   }
 }
@@ -206,9 +140,9 @@ export function mentionableOptionAccessibilityLabel(type) {
     if (user != null) {
       bot = user.bot;
     }
-    const intl2 = tmp(1125).intl;
+    const intl2 = tmp(1114).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const t = tmp(1125).t;
+    const t = tmp(1114).t;
     if (bot) {
       const obj2 = { username: type.label, discriminator };
       discriminator = undefined;
@@ -228,7 +162,7 @@ export function mentionableOptionAccessibilityLabel(type) {
     }
     return formatToPlainStringResult;
   } else if (type.type === InteractionComponentTypes.SelectOptionType.ROLE) {
-    const intl = tmp(1125).intl;
+    const intl = tmp(1114).intl;
     const obj = { roleName: type.label };
     return intl.formatToPlainString(intl3.t.F6ejkk, obj);
   }

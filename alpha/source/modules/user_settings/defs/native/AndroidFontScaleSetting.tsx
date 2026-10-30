@@ -1,21 +1,19 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17234
+// Function ID: 17235
 // Name: AndroidFontScaleSetting
-// Dependencies: [19, 17132, 1094, 8387, 21, 558, 576, 1271, 17181, 11249, 11302, 1125, 1381, 2]
+// Dependencies: [19, 17186, 1082, 8424, 21, 1260, 17235, 11454, 11505, 1114, 1376, 2]
 
-// Module 17180 (AndroidFontScaleSetting)
+// Module 17234 (AndroidFontScaleSetting)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import intl2 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 11249 */;
-import FontScaleStore from "FontScaleStore" /* 17132 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 17181 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import intl2 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 11454 */;
+import FontScaleStore from "FontScaleStore" /* 17186 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 17235 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 function formatFontScale(arg0) {
@@ -25,105 +23,37 @@ const useFontScaleStore = FontScaleStore.useFontScaleStore;
 const FontScales = UserSettingsConstants.FontScales;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFontScaleSliderProps() {
-  let state;
-  let tmp10;
-  let tmp11;
-  let tmp15;
-  let tmp5;
-  let tmp9;
-  let obj = react2;
-  const cResult = obj.c(9);
-  const tmp4 = useFontScaleStore();
-  if (cResult[0] !== tmp4.persistedFontScale) {
-    let index;
-    if (null != tmp4.persistedFontScale) {
-      index = FontScales.indexOf(tmp4.persistedFontScale);
-    }
-    cResult[0] = tmp4.persistedFontScale;
-    cResult[1] = index;
-    tmp5 = index;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(arg0) {
-      let closure_0 = arg0;
-      let obj = closure_0(closure_1[7]);
-      obj.batchUpdates(() => {
-        const obj = { fontScale: FontScales[closure_0] };
-        return state.setState(obj);
-      });
-    };
-    cResult[2] = fn;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-  }
-  const fontScale = tmp4.fontScale;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = jsx(CircleMinusIcon.CircleMinusIcon, {});
-    const tmp14 = jsx(CirclePlusIcon.CirclePlusIcon, {});
-    cResult[3] = tmp13;
-    cResult[4] = tmp14;
-    tmp11 = tmp14;
-    tmp10 = tmp13;
-  } else {
-    tmp10 = cResult[3];
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const index1 = FontScales.indexOf(1);
-    cResult[5] = index1;
-    tmp15 = index1;
-  } else {
-    tmp15 = cResult[5];
-  }
-  const text = `${fontScale * 100}%`;
-  if (cResult[6] === tmp5) {
-    let tmp19;
-    if (cResult[7] === `${fontScale * 100}%`) {
-      tmp19 = cResult[8];
-    }
-    return tmp19;
-  }
-  const obj2 = { value: tmp5, minValue: 0, maxValue: FontScales.length - 1, step: 1, onChange: tmp9, startIcon: tmp10, endIcon: tmp11, formatValue: formatFontScale, valueLabel: text, defaultValue: tmp15 };
-  cResult[6] = tmp5;
-  cResult[7] = text;
-  cResult[8] = obj2;
-  tmp19 = obj2;
-}) : (function useFontScaleSliderProps() {
-  let onChange;
-  let state;
-  const tmp = useFontScaleStore();
-  let closure_0 = tmp;
-  let index;
-  if (null != tmp.persistedFontScale) {
-    index = FontScales.indexOf(tmp.persistedFontScale);
-  }
-  onChange = onChange.useCallback((arg0) => {
-    closure_0 = arg0;
-    let obj = closure_0(index[7]);
-    obj.batchUpdates(() => {
-      const obj = { fontScale: FontScales[closure_0] };
-      return state.setState(obj);
-    });
-  }, []);
-  const items = [index, onChange, tmp.fontScale];
-  return onChange.useMemo(() => {
-    let fontScale;
-    const obj = { value: index, minValue: 0, maxValue: FontScales.length - 1, step: 1, onChange, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}), formatValue: formatFontScale, valueLabel: `${fontScale * 100}%`, defaultValue: FontScales.indexOf(1) };
-    fontScale = closure_0.fontScale;
-    return obj;
-  }, items);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.i19n5L);
   },
   parent: MobileUserSettings.APPEARANCE,
-  useProps: tmp2,
+  useProps: function useFontScaleSliderProps() {
+    let onChange;
+    let state;
+    const tmp = useFontScaleStore();
+    let closure_0 = tmp;
+    let index;
+    if (null != tmp.persistedFontScale) {
+      index = FontScales.indexOf(tmp.persistedFontScale);
+    }
+    onChange = onChange.useCallback((arg0) => {
+      closure_0 = arg0;
+      let obj = closure_0(index[5]);
+      obj.batchUpdates(() => {
+        const obj = { fontScale: FontScales[closure_0] };
+        return state.setState(obj);
+      });
+    }, []);
+    const items = [index, onChange, tmp.fontScale];
+    return onChange.useMemo(() => {
+      let fontScale;
+      const obj = { value: index, minValue: 0, maxValue: FontScales.length - 1, step: 1, onChange, startIcon: jsx(CircleMinusIcon.CircleMinusIcon, {}), endIcon: jsx(CirclePlusIcon.CirclePlusIcon, {}), formatValue: formatFontScale, valueLabel: `${fontScale * 100}%`, defaultValue: FontScales.indexOf(1) };
+      fontScale = closure_0.fontScale;
+      return obj;
+    }, items);
+  },
   usePredicate: PlatformUtils.isAndroid
 };
 const slider = SettingBuilders.createSlider(obj);

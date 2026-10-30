@@ -1,11 +1,11 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14176
+// Function ID: 14177
 // Name: GuildPromptsActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: viewPrompt
 
-// Module 14193 (GuildPromptsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 14176 (GuildPromptsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function viewPrompt(REAL_NAME_PROMPT, guildId) {

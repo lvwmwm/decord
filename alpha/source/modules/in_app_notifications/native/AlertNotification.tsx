@@ -1,24 +1,20 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 11110
+// Function ID: 11111
 // Name: AlertNotification
-// Dependencies: [19, 17, 21, 6943, 9468, 587, 5005, 558, 576, 14226, 1125, 5745, 8012, 14232, 14243, 2]
+// Dependencies: [19, 17, 21, 6951, 9487, 575, 5009, 11006, 1114, 5751, 11057, 8018, 11018, 2]
+// Exports: default
 
-// Module 14266 (AlertNotification)
+// Module 11110 (AlertNotification)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import GuildIcon from "GuildIcon" /* 6943 */;
-import ClipView from "ClipView" /* 9468 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import GuildIcon from "GuildIcon" /* 6951 */;
+import ClipView from "ClipView" /* 9487 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
-
-const GuildIconDefault = GuildIcon;
-const ClipViewDefault = ClipView;
-let transitionToChannelResult;
 
 let hasOwnProperty;
 let metroImportDefault;
@@ -29,223 +25,10 @@ const View = react_native.View;
 let size = { shape: ClipView.CutoutShape.RoundedRect, x: tmp3 - -6 - 24, y: -6, width: 24, height: 24, cornerRadius: nativeDefault.radii.sm };
 tmp3 = GuildIcon.ImageSizes[GuildIcon.GuildIconSizes.NORMAL];
 let closure_9 = createStyles.createStyles({ warningBadge: { position: "absolute", top: -6, right: -6, width: 24, height: 24, alignItems: "center", justifyContent: "center" }, warningIcon: { width: 16, height: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotification(notification) {
-  let channel;
-  let items1;
-  let obj5;
-  let tmp11;
-  let tmp14;
-  let tmp16;
-  let tmp7;
-  let obj = channel(576);
-  const cResult = obj.c(26);
-  notification = notification.notification;
-  channel = notification.channel;
-  const guild = notification.guild;
-  const key = notification.key;
-  const tmp4 = closure_9();
-  const obj2 = channel(14226);
-  const incidentData = obj2.useGuildIncidentsState(key).incidentData;
-  let raidDetectedAt;
-  const first = cResult[0];
-  if (incidentData != null) {
-    raidDetectedAt = incidentData.raidDetectedAt;
-  }
-  if (first !== raidDetectedAt) {
-    let stringResult;
-    let raidDetectedAt1;
-    if (incidentData != null) {
-      raidDetectedAt1 = incidentData.raidDetectedAt;
-    }
-    if (null != raidDetectedAt1) {
-      const intl2 = tmp(1125).intl;
-      stringResult = intl2.string(tmp(1125).t.Mn3elp);
-    } else {
-      const intl = tmp(1125).intl;
-      stringResult = intl.string(tmp(1125).t.evRhwg);
-    }
-    let raidDetectedAt2;
-    if (incidentData != null) {
-      raidDetectedAt2 = incidentData.raidDetectedAt;
-    }
-    cResult[0] = raidDetectedAt2;
-    cResult[1] = stringResult;
-    tmp7 = stringResult;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult1 = intl3.string(channel(1125).t["2IY4YN"]);
-    cResult[2] = stringResult1;
-    tmp11 = stringResult1;
-  } else {
-    tmp11 = cResult[2];
-  }
-  let name;
-  if (guild != null) {
-    name = guild.name;
-  }
-  if (cResult[3] !== name) {
-    const obj3 = { type: "simple", text: tmp11, secondaryText: name };
-    cResult[3] = name;
-    cResult[4] = obj3;
-    tmp14 = obj3;
-  } else {
-    tmp14 = cResult[4];
-  }
-  if (cResult[5] !== channel.id) {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-    cResult[5] = channel.id;
-    cResult[6] = C;
-  } else {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-    const items = [size];
-    cResult[7] = items;
-    tmp16 = items;
-  } else {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-  }
-  if (cResult[8] !== guild) {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-    const obj4 = { cutouts: tmp16, children: closure_5(GuildIconDefault, obj5) };
-    obj5 = { guild, selected: false };
-    const tmp19 = ClipViewDefault;
-    cResult[8] = guild;
-    cResult[9] = closure_5(tmp19, obj4);
-    const tmp20 = closure_5(tmp19, obj4);
-  } else {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-  }
-  if (cResult[10] !== tmp4.warningIcon) {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-    const obj6 = { style: tmp4.warningIcon, color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-    const WarningIcon = tmp(8012).WarningIcon;
-    cResult[10] = tmp4.warningIcon;
-    cResult[11] = closure_5(WarningIcon, obj6);
-    const tmp23 = closure_5(WarningIcon, obj6);
-  } else {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-  }
-  if (cResult[12] === tmp4.warningBadge) {
-    class C {
-      constructor() {
-        obj = closure_0(closure_2[11]);
-        transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-        return;
-      }
-    }
-    if (cResult[15] === tmp17) {
-      class C {
-        constructor() {
-          obj = closure_0(closure_2[11]);
-          transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-          return;
-        }
-      }
-      if (cResult[18] !== tmp7) {
-        class C {
-          constructor() {
-            obj = closure_0(closure_2[11]);
-            transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-            return;
-          }
-        }
-        const obj7 = { text: tmp7 };
-        cResult[18] = tmp7;
-        cResult[19] = closure_5(channel(14232).SystemMessageText, obj7);
-        const tmp31 = closure_5(channel(14232).SystemMessageText, obj7);
-      } else {
-        class C {
-          constructor() {
-            obj = closure_0(closure_2[11]);
-            transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-            return;
-          }
-        }
-      }
-      if (cResult[20] === tmp14) {
-        class C {
-          constructor() {
-            obj = closure_0(closure_2[11]);
-            transitionToChannelResult = obj.transitionToChannel(channel.id, { navigationReplace: true });
-            return;
-          }
-        }
-      }
-      const obj8 = { icon: tmp26, header: tmp14, children: tmp30, onPress: tmp15, notification };
-      cResult[20] = tmp14;
-      cResult[21] = notification;
-      cResult[22] = tmp15;
-      cResult[23] = tmp26;
-      cResult[24] = tmp30;
-      cResult[25] = closure_5(channel(14243).NotificationPressable, obj8);
-      const tmp34 = closure_5(channel(14243).NotificationPressable, obj8);
-    }
-    const obj9 = { children: items1 };
-    items1 = [tmp17, tmp24];
-    cResult[15] = tmp17;
-    cResult[16] = tmp24;
-    cResult[17] = closure_7(closure_6, obj9);
-    const tmp29 = closure_7(closure_6, obj9);
-  }
-  const obj10 = { style: tmp4.warningBadge, children: tmp21 };
-  cResult[12] = tmp4.warningBadge;
-  cResult[13] = tmp21;
-  cResult[14] = closure_5(View, obj10);
-  const tmp25 = closure_5(View, obj10);
-}) : (function AlertNotification(notification) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
+
+export default function AlertNotification(notification) {
   let WarningIcon;
   let items2;
   let items3;
@@ -257,26 +40,26 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
   const guild = notification.guild;
   const key = notification.key;
   const tmp = closure_9();
-  let obj = channel(14226);
+  let obj = channel(11006);
   const incidentData = obj.useGuildIncidentsState(key).incidentData;
   let raidDetectedAt;
   if (incidentData != null) {
     raidDetectedAt = incidentData.raidDetectedAt;
   }
   if (null != raidDetectedAt) {
-    const intl2 = tmp2(1125).intl;
-    stringResult = intl2.string(tmp2(1125).t.Mn3elp);
+    const intl2 = tmp2(1114).intl;
+    stringResult = intl2.string(tmp2(1114).t.Mn3elp);
   } else {
-    let intl = tmp2(1125).intl;
-    stringResult = intl.string(tmp2(1125).t.evRhwg);
+    let intl = tmp2(1114).intl;
+    stringResult = intl.string(tmp2(1114).t.evRhwg);
   }
   const items = [guild];
   const items1 = [channel.id];
   const memo = react.useMemo(() => {
     let intl;
     let name;
-    const obj = { type: "simple", text: intl.string(intl4.t["2IY4YN"]), secondaryText: name };
-    intl = intl4.intl;
+    const obj = { type: "simple", text: intl.string(intl3.t["2IY4YN"]), secondaryText: name };
+    intl = intl3.intl;
     name = undefined;
     if (guild != null) {
       name = guild.name;
@@ -287,20 +70,16 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AlertNotific
     const obj = transitionToChannel;
     obj.transitionToChannel(channel.id, { navigationReplace: true });
   }, items1);
-  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(14232).SystemMessageText, { text: stringResult }), onPress: callback, notification };
+  const obj2 = { icon: closure_7(closure_6, obj3), header: memo, children: closure_5(channel(11018).SystemMessageText, { text: stringResult }), onPress: callback, notification };
   obj3 = { children: items3 };
-  const NotificationPressable = tmp2(14243).NotificationPressable;
-  const obj4 = { cutouts: items2, children: closure_5(guild(6943), { guild, selected: false }) };
+  const NotificationPressable = tmp2(11057).NotificationPressable;
+  const obj4 = { cutouts: items2, children: closure_5(guild(6951), { guild, selected: false }) };
   items2 = [size];
-  const tmp8 = guild(9468);
+  const tmp8 = guild(9487);
   items3 = [closure_5(tmp8, obj4), ];
   const obj5 = { style: tmp.warningBadge, children: closure_5(WarningIcon, obj6) };
-  obj6 = { style: tmp.warningIcon, color: guild(587).colors.ICON_FEEDBACK_WARNING };
-  WarningIcon = tmp2(8012).WarningIcon;
+  obj6 = { style: tmp.warningIcon, color: guild(575).colors.ICON_FEEDBACK_WARNING };
+  WarningIcon = tmp2(8018).WarningIcon;
   items3[1] = closure_5(View, obj5);
   return closure_5(NotificationPressable, obj2);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/in_app_notifications/native/AlertNotification.tsx");
-
-export default tmp4;
+};

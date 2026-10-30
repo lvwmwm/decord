@@ -1,21 +1,21 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18973
+// Function ID: 18974
 // Name: PremiumMarketingMomentActionSheet
-// Dependencies: [19, 17, 5006, 1084, 4854, 21, 5005, 587, 558, 576, 504, 7313, 584, 15229, 1272, 10563, 6016, 15232, 8201, 8830, 5707, 5271, 5698, 1125, 10245, 5302, 2]
+// Dependencies: [19, 17, 5010, 1072, 4855, 21, 5009, 575, 504, 7320, 572, 15268, 6023, 1261, 10589, 15271, 5267, 8204, 8864, 5712, 5619, 5704, 10270, 1114, 2]
+// Exports: default
 
-// Module 18913 (PremiumMarketingMomentActionSheet)
+// Module 18973 (PremiumMarketingMomentActionSheet)
 import react_native from "react-native" /* 17 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 15229 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import PremiumMarketingButtonActions from "PremiumMarketingButtonActions" /* 15268 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -27,7 +27,7 @@ let obj3;
 let obj4;
 let size;
 let size1;
-let View = react_native.View;
+const View = react_native.View;
 const AnalyticsPages = Constants.AnalyticsPages;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -40,152 +40,10 @@ obj3 = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
 size1 = { height: 188, width: 335, borderRadius: nativeDefault.radii.md, marginBottom: nativeDefault.space.PX_24 };
 obj4 = { borderRadius: nativeDefault.radii.md, marginBottom: nativeDefault.space.PX_24 };
 let closure_10 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMarketingMomentActionSheet(markAsDismissed) {
-  let button3;
-  let button4;
-  let closure_4;
-  let componentId;
-  let obj3;
-  let promotionId;
-  let tmp5;
-  let tmp6;
-  let obj = markAsDismissed(promotionId[9]);
-  const cResult = obj.c(50);
-  markAsDismissed = markAsDismissed.markAsDismissed;
-  const bottomSheetData = markAsDismissed.bottomSheetData;
-  ({ componentId, promotionId } = markAsDismissed);
-  closure_10();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function h() {
-      return AccessibilityStore.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = markAsDismissed(promotionId[10]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const analyticsLocations = bottomSheetData(tmp2[11])().analyticsLocations;
-  if (cResult[2] === markAsDismissed) {
-    let tmp9;
-    if (cResult[3] === promotionId) {
-      tmp9 = cResult[4];
-    }
-    View = tmp9;
-    if (cResult[5] === analyticsLocations) {
-      let button = bottomSheetData.button;
-      let buttonAction;
-      const tmp10 = cResult[6];
-      if (button != null) {
-        buttonAction = button.buttonAction;
-      }
-      if (tmp10 === buttonAction) {
-        let button2 = bottomSheetData.button;
-        let value;
-        const tmp13 = cResult[7];
-        if (button2 != null) {
-          const iter = button2.navigableStorefrontApplicationId;
-          if (iter != null) {
-            value = iter.value;
-          }
-        }
-        if (tmp13 === value) {
-          ({ button: button3, button: button4 } = bottomSheetData);
-          if (cResult[10] !== tmp9) {
-            class P {
-              constructor() {
-                closure_4(ContentDismissActionType.USER_DISMISS);
-              }
-            }
-            cResult[10] = tmp9;
-            cResult[11] = P;
-          } else {
-            class P {
-              constructor() {
-                closure_4(ContentDismissActionType.USER_DISMISS);
-              }
-            }
-          }
-          if (cResult[12] === bottomSheetData.dismissibleContent) {
-            class P {
-              constructor() {
-                closure_4(ContentDismissActionType.USER_DISMISS);
-              }
-            }
-          }
-          let obj2 = { type: tmp(tmp2[14]).ImpressionTypes.HALFSHEET, name: tmp(tmp2[14]).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: obj3 };
-          cResult[12] = bottomSheetData.dismissibleContent;
-          cResult[13] = componentId;
-          cResult[14] = promotionId;
-          cResult[15] = obj2;
-          obj3 = { component_type: markAsDismissed(promotionId[15]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId };
-        }
-      }
-    }
-    cResult[5] = analyticsLocations;
-    if (bottomSheetData.button != null) {
-      class P {
-        constructor() {
-          closure_4(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-    }
-    cResult[6] = undefined;
-    if (bottomSheetData.button != null) {
-      class P {
-        constructor() {
-          closure_4(ContentDismissActionType.USER_DISMISS);
-        }
-      }
-      if (tmp19 != null) {
-        class P {
-          constructor() {
-            closure_4(ContentDismissActionType.USER_DISMISS);
-          }
-        }
-      }
-    }
-    const fn2 = function x() {
-      let value;
-      closure_4(ContentDismissActionType.PRIMARY);
-      const button = bottomSheetData.button;
-      let buttonAction;
-      const getButtonActionHandler = PremiumMarketingButtonActions.getButtonActionHandler;
-      const tmp3 = bottomSheetData;
-      if (button != null) {
-        buttonAction = button.buttonAction;
-      }
-      const button2 = tmp3.button;
-      const obj = { buttonAction, applicationId: value, analyticsLocations, analyticsPage: AnalyticsPages.PREMIUM_MARKETING_MOMENT_ACTION_SHEET };
-      value = undefined;
-      if (button2 != null) {
-        if (button2.navigableStorefrontApplicationId != null) {
-          value = iter.value;
-        }
-      }
-      getButtonActionHandler(obj)();
-    };
-    cResult[7] = undefined;
-    cResult[8] = tmp9;
-    cResult[9] = fn2;
-  }
-  class S {
-    constructor(arg0) {
-      markAsDismissed(arg0);
-      const obj = DispatcherDefault;
-      const obj2 = { type: "PREMIUM_MARKETING_ANNOUNCEMENT_MODAL_DISMISSED", promotionId };
-      obj.dispatch(obj2);
-    }
-  }
-  cResult[2] = markAsDismissed;
-  cResult[3] = promotionId;
-  cResult[4] = S;
-  tmp9 = S;
-}) : (function PremiumMarketingMomentActionSheet(markAsDismissed) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
+
+export default function PremiumMarketingMomentActionSheet(markAsDismissed) {
   let copy;
   let items4;
   let items5;
@@ -201,10 +59,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   const componentId = markAsDismissed.componentId;
   const tmp = closure_10();
   let tmp3 = promotionId;
-  let obj = markAsDismissed(promotionId[10]);
+  let obj = markAsDismissed(promotionId[8]);
   const items = [helpArticleLinkProps];
   const stateFromStores = obj.useStateFromStores(items, () => helpArticleLinkProps.useReducedMotion);
-  const analyticsLocations = bottomSheetData(promotionId[11])().analyticsLocations;
+  const analyticsLocations = bottomSheetData(promotionId[9])().analyticsLocations;
   let obj2 = analyticsLocations;
   const items1 = [markAsDismissed, promotionId];
   const callback = analyticsLocations.useCallback((arg0) => {
@@ -255,34 +113,34 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   const callback2 = obj2.useCallback(() => {
     callback(ContentDismissActionType.USER_DISMISS);
   }, items3);
-  const obj3 = { type: markAsDismissed(tmp3[14]).ImpressionTypes.HALFSHEET, name: markAsDismissed(tmp3[14]).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: markAsDismissed(tmp3[15]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId } };
-  const tmp5Result = bottomSheetData(tmp3[16]);
-  ({ component_type: markAsDismissed(tmp3[15]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId });
+  const obj3 = { type: markAsDismissed(tmp3[13]).ImpressionTypes.HALFSHEET, name: markAsDismissed(tmp3[13]).ImpressionNames.PREMIUM_MARKETING_COMPONENT, properties: { component_type: markAsDismissed(tmp3[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId } };
+  const tmp5Result = bottomSheetData(tmp3[12]);
+  ({ component_type: markAsDismissed(tmp3[14]).MarketingComponentType.MOBILE_BOTTOM_SHEET, component_id: componentId, dismissible_content: bottomSheetData.dismissibleContent, promotion_id: promotionId });
   tmp5Result(obj3);
-  const tmp2Result = markAsDismissed(tmp3[17]);
+  const tmp2Result = markAsDismissed(tmp3[15]);
   helpArticleLinkProps = tmp2Result.getHelpArticleLinkProps(bottomSheetData.helpArticle, bottomSheetData.helpArticleId);
   const obj5 = { onDismiss: callback2, children: closure_9(callback, obj6) };
   obj6 = { style: tmp.container, children: items4 };
-  BottomSheet = tmp2(tmp3[25]).BottomSheet;
+  BottomSheet = tmp2(tmp3[16]).BottomSheet;
   const obj7 = { uri: bottomSheetData.assetUrl };
-  const tmp2Result2 = markAsDismissed(tmp3[18]);
+  const tmp2Result2 = markAsDismissed(tmp3[17]);
   if (tmp2Result2.getFile(obj7).isVideo) {
     size = { src: obj8, style: tmp.video, muted: true, height: 188, width: 335, paused: stateFromStores, resizeMode: "contain" };
     obj8 = { videoURI: null, uri: null };
     ({ assetUrl: obj13.videoURI, assetUrl: obj13.uri } = bottomSheetData);
-    tmp14Result = tmp14(tmp5(tmp3[19]), size);
+    tmp14Result = tmp14(tmp5(tmp3[18]), size);
   } else {
     const obj9 = { source: obj10, style: tmp.image, resizeMode: "contain" };
     obj10 = { uri: bottomSheetData.assetUrl };
-    tmp14Result = tmp14(tmp5(tmp3[20]), obj9);
+    tmp14Result = tmp14(tmp5(tmp3[19]), obj9);
   }
   items4 = [tmp14Result, , , ];
   const obj11 = { style: tmp.header, color: "mobile-text-heading-primary", variant: "heading-lg/extrabold", children: bottomSheetData.header };
-  items4[1] = closure_8(markAsDismissed(tmp3[21]).Text, obj11);
+  items4[1] = closure_8(markAsDismissed(tmp3[20]).Text, obj11);
   const obj12 = { style: tmp.body, color: "text-default", variant: "text-sm/normal", children: items5 };
   items5 = [bottomSheetData.body, " ", ];
   let tmp14Result2 = null != helpArticleLinkProps;
-  const Text = tmp2(tmp3[21]).Text;
+  const Text = tmp2(tmp3[20]).Text;
   if (tmp14Result2) {
     const obj14 = {
       color: "text-link",
@@ -294,14 +152,14 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp14Result2 = tmp14(tmp2(tmp3[21]).Text, obj14);
+    tmp14Result2 = tmp14(tmp2(tmp3[20]).Text, obj14);
   }
   items5[2] = tmp14Result2;
   items4[2] = closure_9(Text, obj12);
   const button3 = bottomSheetData.button;
   const obj15 = { style: tmp.buttonContainer, children: closure_8(tmp5Result2, { text: copy, onPress: callback1 }) };
   copy = undefined;
-  tmp5Result2 = bottomSheetData(tmp3[24]);
+  tmp5Result2 = bottomSheetData(tmp3[22]);
   if (button3 != null) {
     copy = button3.copy;
   }
@@ -311,8 +169,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumMar
   }
   items4[3] = closure_8(callback, obj15);
   return closure_8(BottomSheet, obj5);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/premium/promotions/native/PremiumMarketingMomentActionSheet.tsx");
-
-export default tmp4;
+};

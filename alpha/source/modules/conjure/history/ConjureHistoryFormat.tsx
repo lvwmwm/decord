@@ -1,14 +1,14 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12487
+// Function ID: 12488
 // Name: ConjureHistoryFormat
-// Dependencies: [6064, 4830, 1125, 3864, 2]
+// Dependencies: [6071, 4831, 1114, 3865, 2]
 // Exports: backupRow, formatAuthoredAt, formatHistoryDateTime, formatHistoryTime, groupHistoryByDay, historyDatabaseTitle, historyEnvironmentLabel, historyPreviewSha, historyRewindCopy, matchingPreviewBackup, parseTimestampMs, versionTitle, visibleBackups
 
-// Module 12325 (ConjureHistoryFormat)
-import intl8 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import DateUtils from "DateUtils" /* 4830 */;
-import getTimestampString from "getTimestampString" /* 6064 */;
+// Module 12487 (ConjureHistoryFormat)
+import intl8 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import DateUtils from "DateUtils" /* 4831 */;
+import getTimestampString from "getTimestampString" /* 6071 */;
 import size from "module_2" /* 2 */;
 
 function startOfDayMs(arg0) {
@@ -25,7 +25,7 @@ function formatHistoryDay(arg0, nowMs) {
   const time1 = date1.getTime();
   if (time === time1) {
     const intl2 = intl8.intl;
-    return intl2.string(_modDef3864.CADyoV);
+    return intl2.string(_modDef3865.CADyoV);
   } else {
     const _Date = Date;
     const self = this;
@@ -34,7 +34,7 @@ function formatHistoryDay(arg0, nowMs) {
     date2.setDate(date2.getDate() - 1);
     if (time === date2.getTime()) {
       const intl = intl8.intl;
-      return intl.string(_modDef3864.mghe4b);
+      return intl.string(_modDef3865.mghe4b);
     } else {
       const _Date2 = Date;
       const self3 = this;
@@ -63,18 +63,18 @@ function backupTitle(origin) {
     let stringResult;
     if ("stable" === origin.deployEnvironment) {
       const intl6 = intl8.intl;
-      stringResult = intl6.string(_modDef3864["4TpI2y"]);
+      stringResult = intl6.string(_modDef3865["4TpI2y"]);
     } else if ("preview" === origin.deployEnvironment) {
       const intl5 = intl8.intl;
-      stringResult = intl5.string(_modDef3864.NdyxPu);
+      stringResult = intl5.string(_modDef3865.NdyxPu);
     } else {
       const intl4 = intl8.intl;
-      stringResult = intl4.string(_modDef3864["4JCH6A"]);
+      stringResult = intl4.string(_modDef3865["4JCH6A"]);
     }
     return stringResult;
   } else if ("undo" === origin) {
     const intl3 = intl8.intl;
-    return intl3.string(_modDef3864.VjJT5R);
+    return intl3.string(_modDef3865.VjJT5R);
   } else {
     const str4 = origin.label;
     const trimmed = str4.trim();
@@ -83,12 +83,12 @@ function backupTitle(origin) {
       if ("Manual restore point" !== trimmed) {
         const intl = intl8.intl;
         const obj = { label: trimmed };
-        formatToPlainStringResult = intl.formatToPlainString(_modDef3864["UKyQ+E"], obj);
+        formatToPlainStringResult = intl.formatToPlainString(_modDef3865["UKyQ+E"], obj);
       }
       return formatToPlainStringResult;
     }
     const intl2 = intl8.intl;
-    formatToPlainStringResult = intl2.string(_modDef3864.ObcM6b);
+    formatToPlainStringResult = intl2.string(_modDef3865.ObcM6b);
   }
 }
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureHistoryFormat.tsx");
@@ -208,13 +208,13 @@ export function versionTitle(subject, arg1) {
         }
       }
       const intl = intl8.intl;
-      const stringResult = intl.string(_modDef3864.Vk8vB1);
+      const stringResult = intl.string(_modDef3865.Vk8vB1);
       obj = { short: stringResult, full: stringResult };
       const obj2 = { short: stringResult, full: stringResult };
     }
     let tmp8 = obj;
     if (flag) {
-      const obj3 = { short: intl3.formatToPlainString(_modDef3864.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3864.Z4n6LX, obj5) };
+      const obj3 = { short: intl3.formatToPlainString(_modDef3865.Z4n6LX, obj4), full: intl4.formatToPlainString(_modDef3865.Z4n6LX, obj5) };
       intl3 = intl8.intl;
       obj4 = { title: obj.short };
       intl4 = intl8.intl;
@@ -224,7 +224,7 @@ export function versionTitle(subject, arg1) {
     return tmp8;
   }
   const intl2 = intl8.intl;
-  const stringResult1 = intl2.string(_modDef3864.sFC5fT);
+  const stringResult1 = intl2.string(_modDef3865.sFC5fT);
   obj = { short: stringResult1, full: stringResult1 };
 }
 export function historyEnvironmentLabel(environment) {
@@ -232,9 +232,9 @@ export function historyEnvironmentLabel(environment) {
   const intl = intl8.intl;
   const string = intl.string;
   if ("preview" === environment) {
-    S65Rv3 = _modDef3864.Ebk40C;
+    S65Rv3 = _modDef3865.Ebk40C;
   } else {
-    S65Rv3 = _modDef3864.S65Rv3;
+    S65Rv3 = _modDef3865.S65Rv3;
   }
   return string(S65Rv3);
 }
@@ -244,13 +244,13 @@ export function historyDatabaseTitle(environment, sharedDatabase) {
   const string = intl.string;
   const tmp2 = sharedDatabase;
   if (tmp2) {
-    stringResult = string(_modDef3864.h3WBgO);
+    stringResult = string(_modDef3865.h3WBgO);
   } else {
     let yLsAhA;
     if ("preview" === environment) {
-      yLsAhA = _modDef3864.cjJdqL;
+      yLsAhA = _modDef3865.cjJdqL;
     } else {
-      yLsAhA = _modDef3864.yLsAhA;
+      yLsAhA = _modDef3865.yLsAhA;
     }
     stringResult = string(yLsAhA);
   }
@@ -278,7 +278,7 @@ export function visibleBackups(points, arg1) {
   }
   return { shown: substr, collapsible: points.length > 3 };
 }
-export function backupRow(createdAt, restoreToMs) {
+export function backupRow(createdAt, get) {
   let found;
   let tmp5;
   const parsed = Date.parse(createdAt.createdAt);
@@ -288,7 +288,7 @@ export function backupRow(createdAt, restoreToMs) {
   }
   let value;
   if (null != createdAt.sourceSha) {
-    value = restoreToMs.get(createdAt.sourceSha);
+    value = get.get(createdAt.sourceSha);
   }
   const obj = { title: backupTitle(createdAt), restoreToMs: tmp5, detail: found.join(" \u00B7 ") };
   tmp5 = null;
@@ -310,7 +310,7 @@ export function backupRow(createdAt, restoreToMs) {
   if (null != value) {
     const intl = intl8.intl;
     const obj2 = { title: value };
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3864.V7YNvf, obj2);
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3865.V7YNvf, obj2);
   }
   items[1] = formatToPlainStringResult;
   found = items.filter((item) => null != item);
@@ -332,35 +332,35 @@ export function historyRewindCopy(arg0, arg1) {
   const date = new Date(arg1);
   const dateFormatResult = dateFormat(date, "LLL");
   if ("stable" === arg0) {
-    const obj2 = { title: intl2.string(_modDef3864.G9wD92), body: intl3.formatToPlainString(_modDef3864.vyxJO8, obj3), confirmText: intl4.string(_modDef3864.kap49k), critical: true };
-    intl2 = tmp(1125).intl;
-    intl3 = tmp(1125).intl;
+    const obj2 = { title: intl2.string(_modDef3865.G9wD92), body: intl3.formatToPlainString(_modDef3865.vyxJO8, obj3), confirmText: intl4.string(_modDef3865.kap49k), critical: true };
+    intl2 = tmp(1114).intl;
+    intl3 = tmp(1114).intl;
     obj3 = { time: dateFormatResult };
-    intl4 = tmp(1125).intl;
+    intl4 = tmp(1114).intl;
     obj4 = obj2;
   } else {
     let S65Rv3;
-    obj4 = { title: intl5.string(_modDef3864.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3864.XfeFw5), critical: false };
-    intl5 = tmp(1125).intl;
-    const intl6 = tmp(1125).intl;
+    obj4 = { title: intl5.string(_modDef3865.rR8rgj), body: formatToPlainString(KfgzUO, obj), confirmText: intl.string(_modDef3865.XfeFw5), critical: false };
+    intl5 = tmp(1114).intl;
+    const intl6 = tmp(1114).intl;
     formatToPlainString = intl6.formatToPlainString;
-    KfgzUO = _modDef3864.KfgzUO;
-    const intl7 = tmp(1125).intl;
+    KfgzUO = _modDef3865.KfgzUO;
+    const intl7 = tmp(1114).intl;
     const string = intl7.string;
     if ("preview" === arg0) {
-      S65Rv3 = tmp7(3864).Ebk40C;
+      S65Rv3 = tmp7(3865).Ebk40C;
     } else {
-      S65Rv3 = tmp7(3864).S65Rv3;
+      S65Rv3 = tmp7(3865).S65Rv3;
     }
     obj = { environment: string(S65Rv3), time: dateFormatResult };
-    intl = tmp(1125).intl;
+    intl = tmp(1114).intl;
   }
   return obj4;
 }
 export { backupTitle };
-export function matchingPreviewBackup(sha, previewBackups) {
+export function matchingPreviewBackup(sha, arg1) {
   let tmp = null;
-  const iter = previewBackups[Symbol.iterator]();
+  const iter = arg1[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp3 = nextResult;

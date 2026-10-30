@@ -1,32 +1,27 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7437
+// Function ID: 7438
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5226, 4861, 502, 4857, 4937, 6828, 7430, 1084, 558, 576, 1096, 504, 6875, 11, 12, 7437, 7435, 7438, 7439, 6712, 6721, 2]
-// Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator
+// Dependencies: [32, 19, 5232, 4862, 502, 4858, 4941, 6835, 7438, 1072, 504, 1084, 6882, 11, 12, 7445, 7443, 7446, 7447, 6719, 6728, 2]
+// Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadMember, useIsThreadModerator
 
-// Module 7429 (ThreadHooks)
+// Module 7437 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import react2 from "react" /* 576 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6712 */;
-import AgeGateUtils from "AgeGateUtils" /* 6721 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6875 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7435 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7437 */;
-import useIsRemoteDefault from "useIsRemote" /* 7438 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7439 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6882 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 7443 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 7445 */;
+import useIsRemoteDefault from "useIsRemote" /* 7446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5226 */;
+import createExperiment from "createExperiment" /* 5232 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6828 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7430 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6835 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7438 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,6 +31,95 @@ let closure_12;
 let closure_14;
 let items;
 let map1;
+const f90408 = () => {
+  let SEND_MESSAGES;
+  const tmp = channel;
+  if (channel.isForumLikeChannel()) {
+    SEND_MESSAGES = constants.SEND_MESSAGES;
+  } else {
+    const obj = BigFlagUtilsAll;
+    SEND_MESSAGES = obj.combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
+  }
+  return PermissionStore.can(SEND_MESSAGES, tmp);
+};
+const f90412 = () => {
+  const items = [PermissionStore];
+  const first = _slicedToArray(items, 1)[0];
+  let canResult = null != channel;
+  const tmp = channel;
+  if (canResult) {
+    canResult = first.can(constants.MANAGE_THREADS, tmp);
+  }
+  return canResult;
+};
+const f90413 = () => PermissionStore.can(constants.CONNECT, channel);
+function useCanStartPrivateThread(type) {
+  _require = type;
+  let obj = require("get initialized");
+  const items = [PermissionStore];
+  const items1 = [type];
+  let tmp3 = type.type === constants3.GUILD_TEXT;
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const can = PermissionStore.can;
+    const obj = BigFlagUtilsAll;
+    return can(obj.combine(constants.CREATE_PRIVATE_THREADS), type);
+  }, items1);
+  if (!tmp3) {
+    tmp3 = type.type === tmp2.GUILD_APP;
+  }
+  if (tmp3) {
+    let flag = false;
+    if (stateFromStores) {
+      flag = false;
+      if (THREADED_CHANNEL_TYPES.has(type.type)) {
+        flag = true;
+      }
+    }
+    tmp3 = flag;
+  }
+  return tmp3;
+}
+function useCanUnarchiveThread(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, () => {
+    const canResult = null != channel && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, tmp);
+    return canResult;
+  });
+  const items1 = [PermissionStore, ChannelStore];
+  const items2 = [channel];
+  const obj2 = require("get initialized");
+  _require = channel;
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    channel = null;
+    if (null != closure_0) {
+      channel = ChannelStore.getChannel(tmp.parent_id);
+    }
+    const canResult = null != channel && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, channel);
+    return canResult;
+  }, items2);
+  const items3 = [PermissionStore];
+  const obj3 = require("get initialized");
+  const stateFromStores2 = obj3.useStateFromStores(items3, f90412);
+  if (stateFromStores) {
+    stateFromStores = stateFromStores1;
+  }
+  let tmp5 = !(null == channel || !channel.isThread() || channel.isMediaThread());
+  const tmp4 = null == channel || !channel.isThread() || channel.isMediaThread();
+  if (tmp5) {
+    const threadMetadata = channel.threadMetadata;
+    let locked;
+    if (threadMetadata != null) {
+      locked = threadMetadata.locked;
+    }
+    if (locked) {
+      stateFromStores = stateFromStores2;
+    }
+    tmp5 = stateFromStores;
+  }
+  return tmp5;
+}
 function canUnarchiveThread(stateFromStores) {
   let canResult = null != stateFromStores && obj.can(constants.SEND_MESSAGES_IN_THREADS, stateFromStores);
   let channel = null;
@@ -69,102 +153,24 @@ const THREADED_CHANNEL_TYPES = ChannelRecord.THREADED_CHANNEL_TYPES;
 let obj = { id: "2022-07_voice_in_threads", label: "Voice in Threads", kind: "guild", defaultConfig: { enabled: false }, treatments: items };
 items = [{ id: 1, label: "On", config: { enabled: true } }];
 const importDefaultResultResult = createExperiment(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanStartPublicThread(type, hasFlag) {
-  let first;
-  let tmp6;
-  let tmp7;
+const result = size.fileFinishedImporting("modules/threads/ThreadHooks.tsx");
+
+export const VoiceInThreadsExperiment = importDefaultResultResult;
+export function useCanStartPublicThread(type, arg1) {
   _require = type;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== type) {
-    const fn = function s() {
-      let SEND_MESSAGES;
-      const tmp = type;
-      if (type.isForumLikeChannel()) {
-        SEND_MESSAGES = constants.SEND_MESSAGES;
-      } else {
-        const obj = BigFlagUtilsAll;
-        SEND_MESSAGES = obj.combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
-      }
-      return PermissionStore.can(SEND_MESSAGES, tmp);
-    };
-    const items1 = [type];
-    cResult[1] = type;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === type) {
-    if (cResult[5] === stateFromStores) {
-      let tmp9;
-      if (cResult[6] === hasFlag) {
-        tmp9 = cResult[7];
-      }
-      return tmp9;
-    }
-  }
-  let flag = false;
-  if (stateFromStores) {
-    flag = false;
-    if (THREADED_CHANNEL_TYPES.has(type.type)) {
-      flag = true;
-      if (null != hasFlag) {
-        flag = false;
-        if (!hasFlag.hasFlag(constants2.HAS_THREAD)) {
-          flag = true;
-          if (isSystemMessageDefault(hasFlag)) {
-            flag = false;
-          }
-        }
-      }
-    }
-  }
-  cResult[4] = type;
-  cResult[5] = stateFromStores;
-  cResult[6] = hasFlag;
-  cResult[7] = flag;
-  tmp9 = flag;
-}) : (function useCanStartPublicThread(type, hasFlag) {
-  _require = type;
-  let tmp = dependencyMap;
-  let obj = require("get initialized");
   const items = [PermissionStore];
   const items1 = [type];
   let flag = false;
-  if (obj.useStateFromStores(items, () => {
-    let SEND_MESSAGES;
-    const tmp = type;
-    if (type.isForumLikeChannel()) {
-      SEND_MESSAGES = constants.SEND_MESSAGES;
-    } else {
-      const obj = BigFlagUtilsAll;
-      SEND_MESSAGES = obj.combine(constants.CREATE_PUBLIC_THREADS, constants.READ_MESSAGE_HISTORY);
-    }
-    return PermissionStore.can(SEND_MESSAGES, tmp);
-  }, items1)) {
+  const obj = require("get initialized");
+  if (obj.useStateFromStores(items, f90408, items1)) {
     flag = false;
     if (THREADED_CHANNEL_TYPES.has(type.type)) {
       flag = true;
-      if (null != hasFlag) {
+      if (null != arg1) {
         flag = false;
-        if (!hasFlag.hasFlag(constants2.HAS_THREAD)) {
+        if (!arg1.hasFlag(constants2.HAS_THREAD)) {
           flag = true;
-          if (isSystemMessageDefault(hasFlag)) {
+          if (isSystemMessageDefault(arg1)) {
             flag = false;
           }
         }
@@ -172,1072 +178,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanStartP
     }
   }
   return flag;
-});
-let closure_16 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanStartPrivateThread(type) {
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = type;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== type) {
-    const fn = function o() {
-      const can = PermissionStore.can;
-      const obj = BigFlagUtilsAll;
-      return can(obj.combine(constants.CREATE_PRIVATE_THREADS), type);
-    };
-    const items1 = [type];
-    cResult[1] = type;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === type) {
-    let tmp9;
-    if (cResult[5] === stateFromStores) {
-      tmp9 = cResult[6];
-    }
-    return tmp9;
-  }
-  let tmp11 = type.type === constants3.GUILD_TEXT || type.type === tmp10.GUILD_APP;
-  if (tmp11) {
-    let flag = false;
-    if (stateFromStores) {
-      flag = false;
-      if (THREADED_CHANNEL_TYPES.has(type.type)) {
-        flag = true;
-      }
-    }
-    tmp11 = flag;
-  }
-  cResult[4] = type;
-  cResult[5] = stateFromStores;
-  cResult[6] = tmp11;
-  tmp9 = tmp11;
-}) : (function useCanStartPrivateThread(type) {
-  _require = type;
-  let obj = require("get initialized");
-  const items = [PermissionStore];
-  const items1 = [type];
-  let tmp3 = type.type === constants3.GUILD_TEXT;
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const can = PermissionStore.can;
-    const obj = BigFlagUtilsAll;
-    return can(obj.combine(constants.CREATE_PRIVATE_THREADS), type);
-  }, items1);
-  if (!tmp3) {
-    tmp3 = type.type === tmp2.GUILD_APP;
-  }
-  if (tmp3) {
-    let flag = false;
-    if (stateFromStores) {
-      flag = false;
-      if (THREADED_CHANNEL_TYPES.has(type.type)) {
-        flag = true;
-      }
-    }
-    tmp3 = flag;
-  }
-  return tmp3;
-});
-let closure_17 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanStartThread(arg0) {
-  const tmp = closure_16(arg0) || closure_17(arg0);
-  return tmp;
-}) : (function useCanStartThread(arg0) {
-  const tmp = closure_16(arg0) || closure_17(arg0);
-  return tmp;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanViewThreadForMessage(id) {
-  let first;
-  let tmp11;
-  let tmp12;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  _require = id;
-  let obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function o() {
-      const getChannel = ChannelStore.getChannel;
-      const obj = SnowflakeUtilsDefault;
-      return getChannel(obj.castMessageIdAsChannelId(id.id));
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== id) {
-    const items1 = [id];
-    cResult[3] = id;
-    cResult[4] = items1;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[4];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PermissionStore];
-    cResult[5] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[5];
-  }
-  if (cResult[6] !== stateFromStores) {
-    class S {
-      constructor() {
-        return PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores);
-      }
-    }
-    const items3 = [stateFromStores];
-    cResult[6] = stateFromStores;
-    cResult[7] = S;
-    cResult[8] = items3;
-    tmp12 = items3;
-    tmp11 = S;
-  } else {
-    class S {
-      constructor() {
-        return PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores);
-      }
-    }
-    tmp12 = cResult[8];
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
-  if (cResult[9] === stateFromStores1) {
-    class S {
-      constructor() {
-        return PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores);
-      }
-    }
-  }
-  let hasFlagResult = id.hasFlag(constants2.HAS_THREAD);
-  if (hasFlagResult) {
-    class S {
-      constructor() {
-        return PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores);
-      }
-    }
-    hasFlagResult = null != stateFromStores && stateFromStores1;
-  }
-  cResult[9] = stateFromStores1;
-  cResult[10] = id;
-  cResult[11] = stateFromStores;
-  cResult[12] = hasFlagResult;
-}) : (function useCanViewThreadForMessage(hasFlag) {
-  _require = hasFlag;
-  let obj = require("get initialized");
-  const items = [ChannelStore];
-  const items1 = [hasFlag];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const getChannel = ChannelStore.getChannel;
-    const obj = SnowflakeUtilsDefault;
-    return getChannel(obj.castMessageIdAsChannelId(hasFlag.id));
-  }, items1);
-  const items2 = [PermissionStore];
-  const items3 = [stateFromStores];
-  const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores), items3);
-  let hasFlagResult = hasFlag.hasFlag(constants2.HAS_THREAD);
-  if (hasFlagResult) {
-    hasFlagResult = null != stateFromStores && stateFromStores1;
-  }
-  return hasFlagResult;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasActiveThreads(guild_id) {
-  let first;
-  _require = guild_id;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ActiveJoinedThreadsStore, PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === guild_id.guild_id) {
-    let tmp7;
-    if (cResult[2] === guild_id.id) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStoresObject(first, tmp7);
-  }
-  const fn = function o() {
-    const activeJoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedThreadsForParent(guild_id.guild_id, guild_id.id);
-    const activeJoinedRelevantThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedRelevantThreadsForParent(guild_id.guild_id, guild_id.id);
-    const activeUnjoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveUnjoinedThreadsForParent(guild_id.guild_id, guild_id.id);
-    const obj = _modDef12(activeJoinedRelevantThreadsForParent);
-    const someResult = obj.some((channel) => closure_1_9.can(constants.VIEW_CHANNEL, channel.channel));
-    const obj2 = _modDef12(activeJoinedThreadsForParent);
-    const someResult1 = obj2.some((channel) => {
-      const canResult = !(channel.channel.id in activeJoinedRelevantThreadsForParent) && closure_2_9.can(constants.VIEW_CHANNEL, channel.channel);
-      return canResult;
-    });
-    const obj3 = _modDef12(activeUnjoinedThreadsForParent);
-    let someResult2 = obj3.some((item) => closure_1_9.can(constants.VIEW_CHANNEL, item));
-    const obj4 = { hasActiveThreads: someResult || someResult1 || someResult2, hasMoreActiveThreads: someResult2 };
-    if (!someResult2) {
-      someResult2 = someResult1;
-    }
-    return obj4;
-  };
-  cResult[1] = guild_id.guild_id;
-  cResult[2] = guild_id.id;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function useHasActiveThreads(arg0) {
-  let user;
-  _require = arg0;
-  let obj = require("get initialized");
-  const items = [ActiveJoinedThreadsStore, PermissionStore];
-  return obj.useStateFromStoresObject(items, () => {
-    const activeJoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedThreadsForParent(user.guild_id, user.id);
-    const activeJoinedRelevantThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedRelevantThreadsForParent(user.guild_id, user.id);
-    const activeUnjoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveUnjoinedThreadsForParent(user.guild_id, user.id);
-    const obj = _modDef12(activeJoinedRelevantThreadsForParent);
-    const someResult = obj.some((channel) => closure_1_9.can(constants.VIEW_CHANNEL, channel.channel));
-    const obj2 = _modDef12(activeJoinedThreadsForParent);
-    const someResult1 = obj2.some((channel) => {
-      const canResult = !(channel.channel.id in activeJoinedRelevantThreadsForParent) && closure_2_9.can(constants.VIEW_CHANNEL, channel.channel);
-      return canResult;
-    });
-    const obj3 = _modDef12(activeUnjoinedThreadsForParent);
-    let someResult2 = obj3.some((item) => closure_1_9.can(constants.VIEW_CHANNEL, item));
-    const obj4 = { hasActiveThreads: someResult || someResult1 || someResult2, hasMoreActiveThreads: someResult2 };
-    if (!someResult2) {
-      someResult2 = someResult1;
-    }
-    return obj4;
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanManageThread(parent_id) {
-  let first;
-  let id;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp16;
-  let tmp17;
-  let tmp8;
-  _require = parent_id;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  parent_id = undefined;
-  const tmp6 = cResult[1];
-  if (parent_id != null) {
-    parent_id = parent_id.parent_id;
-  }
-  if (tmp6 !== parent_id) {
-    let parent_id1;
-    if (parent_id != null) {
-      parent_id1 = parent_id.parent_id;
-    }
-    const fn = function o() {
-      parent_id = undefined;
-      const getChannel = ChannelStore.getChannel;
-      if (parent_id != null) {
-        parent_id = parent_id.parent_id;
-      }
-      return getChannel(parent_id);
-    };
-    cResult[1] = parent_id1;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PermissionStore];
-    cResult[3] = items1;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] !== stateFromStores) {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-    const items2 = [stateFromStores];
-    cResult[4] = stateFromStores;
-    cResult[5] = S;
-    cResult[6] = items2;
-    tmp14 = items2;
-    tmp13 = S;
-  } else {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-    tmp14 = cResult[6];
-  }
-  const tmpResult3 = tmp(504);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp11, tmp13, tmp14);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-    const items3 = [AuthenticationStore];
-    class A {
-      constructor() {
-        return id.getId();
-      }
-    }
-    cResult[7] = items3;
-    cResult[8] = A;
-    tmp17 = A;
-    tmp16 = items3;
-  } else {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-    tmp17 = cResult[8];
-  }
-  let tmp19 = null != parent_id;
-  const tmpResult4 = tmp(504);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp16, tmp17);
-  if (tmp19) {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-  }
-  if (tmp19) {
-    class S {
-      constructor() {
-        const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-        return canResult;
-      }
-    }
-    if (tmp20) {
-      class S {
-        constructor() {
-          const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-          return canResult;
-        }
-      }
-      if (!tmp21) {
-        class S {
-          constructor() {
-            const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-            return canResult;
-          }
-        }
-      }
-    }
-    tmp19 = tmp20;
-  }
-  return tmp19;
-}) : (function useCanManageThread(isThread) {
-  let id;
-  _require = isThread;
-  const items = [ChannelStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    let parent_id;
-    const getChannel = ChannelStore.getChannel;
-    if (isThread != null) {
-      parent_id = isThread.parent_id;
-    }
-    return getChannel(parent_id);
-  });
-  const items1 = [PermissionStore];
-  const items2 = [stateFromStores];
-  const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
-    return canResult;
-  }, items2);
-  const items3 = [AuthenticationStore];
-  let tmp4 = null != isThread;
-  const obj3 = require("get initialized");
-  const stateFromStores2 = obj3.useStateFromStores(items3, () => id.getId());
-  if (tmp4) {
-    tmp4 = null != stateFromStores;
-  }
-  if (tmp4) {
-    let isThreadResult = isThread.isThread();
-    if (isThreadResult) {
-      let tmp6 = stateFromStores1;
-      if (!tmp6) {
-        tmp6 = !isThread.isLockedThread() && isThread.ownerId === stateFromStores2;
-        !isThread.isLockedThread() && isThread.ownerId === stateFromStores2;
-      }
-      isThreadResult = tmp6;
-    }
-    tmp4 = isThreadResult;
-  }
-  return tmp4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanUnarchiveThread(isThread) {
-  let first;
-  let tmp11;
-  let tmp12;
-  let tmp6;
-  let tmp8;
-  _require = isThread;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== isThread) {
-    const fn = function o() {
-      const canResult = null != isThread && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, tmp);
-      return canResult;
-    };
-    cResult[1] = isThread;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PermissionStore, ChannelStore];
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== isThread) {
-    const fn2 = function h() {
-      let channel = null;
-      if (null != isThread) {
-        channel = ChannelStore.getChannel(tmp.parent_id);
-      }
-      const canResult = null != channel && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, channel);
-      return canResult;
-    };
-    const items2 = [isThread];
-    cResult[4] = isThread;
-    cResult[5] = fn2;
-    cResult[6] = items2;
-    tmp12 = items2;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-    tmp12 = cResult[6];
-  }
-  const tmpResult2 = tmp(504);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp11, tmp12);
-  const tmp14 = closure_21(isThread);
-  if (cResult[7] === isThread) {
-    if (cResult[8] === tmp14) {
-      let tmp16;
-      if (cResult[9] === (stateFromStores && stateFromStores1)) {
-        tmp16 = cResult[10];
-      }
-      return tmp16;
-    }
-  }
-  let tmp18 = !(null == isThread || !isThread.isThread() || isThread.isMediaThread());
-  null == isThread || !isThread.isThread() || isThread.isMediaThread();
-  if (tmp18) {
-    const threadMetadata = isThread.threadMetadata;
-    let locked;
-    if (threadMetadata != null) {
-      locked = threadMetadata.locked;
-    }
-    let tmp20 = tmp15;
-    if (locked) {
-      tmp20 = tmp14;
-    }
-    tmp18 = tmp20;
-  }
-  cResult[7] = isThread;
-  cResult[8] = tmp14;
-  cResult[9] = stateFromStores && stateFromStores1;
-  cResult[10] = tmp18;
-  tmp16 = tmp18;
-}) : (function useCanUnarchiveThread(isThread) {
-  _require = isThread;
-  const items = [PermissionStore];
-  const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, () => {
-    const canResult = null != isThread && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, tmp);
-    return canResult;
-  });
-  const items1 = [PermissionStore, ChannelStore];
-  const items2 = [isThread];
-  const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    let channel = null;
-    if (null != isThread) {
-      channel = ChannelStore.getChannel(tmp.parent_id);
-    }
-    const canResult = null != channel && PermissionStore.can(constants.SEND_MESSAGES_IN_THREADS, tmp) && PermissionStore.can(constants.SEND_MESSAGES, channel);
-    return canResult;
-  }, items2);
-  const tmp3 = closure_21(isThread);
-  if (stateFromStores) {
-    stateFromStores = stateFromStores1;
-  }
-  let tmp5 = !(null == isThread || !isThread.isThread() || isThread.isMediaThread());
-  const tmp4 = null == isThread || !isThread.isThread() || isThread.isMediaThread();
-  if (tmp5) {
-    const threadMetadata = isThread.threadMetadata;
-    let locked;
-    if (threadMetadata != null) {
-      locked = threadMetadata.locked;
-    }
-    if (locked) {
-      stateFromStores = tmp3;
-    }
-    tmp5 = stateFromStores;
-  }
-  return tmp5;
-});
-let closure_18 = tmp11;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsActiveChannelOrUnarchivableThread(isThread) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp2 = closure_18(isThread);
-  let tmp3 = null != isThread;
-  if (tmp3) {
-    if (cResult[0] === tmp2) {
-      let tmp4;
-      if (cResult[1] === isThread) {
-        tmp4 = cResult[2];
-      }
-      tmp3 = tmp4;
-    }
-    const isThreadResult = isThread.isThread();
-    let isActiveThreadResult = !isThreadResult;
-    if (isThreadResult) {
-      isActiveThreadResult = isThread.isActiveThread();
-    }
-    if (!isActiveThreadResult) {
-      let isArchivedThreadResult = isThread.isArchivedThread();
-      if (isArchivedThreadResult) {
-        const threadMetadata = isThread.threadMetadata;
-        let locked;
-        if (threadMetadata != null) {
-          locked = threadMetadata.locked;
-        }
-        isArchivedThreadResult = true !== locked;
-      }
-      if (isArchivedThreadResult) {
-        isArchivedThreadResult = tmp2;
-      }
-      isActiveThreadResult = isArchivedThreadResult;
-    }
-    cResult[0] = tmp2;
-    cResult[1] = isThread;
-    cResult[2] = isActiveThreadResult;
-    tmp4 = isActiveThreadResult;
-  }
-  return tmp3;
-}) : (function useIsActiveChannelOrUnarchivableThread(isThread) {
-  let tmp2 = null != isThread;
-  if (tmp2) {
-    const isThreadResult = isThread.isThread();
-    let isActiveThreadResult = !isThreadResult;
-    if (isThreadResult) {
-      isActiveThreadResult = isThread.isActiveThread();
-    }
-    if (!isActiveThreadResult) {
-      let isArchivedThreadResult = isThread.isArchivedThread();
-      if (isArchivedThreadResult) {
-        const threadMetadata = isThread.threadMetadata;
-        let locked;
-        if (threadMetadata != null) {
-          locked = threadMetadata.locked;
-        }
-        isArchivedThreadResult = true !== locked;
-      }
-      if (isArchivedThreadResult) {
-        isArchivedThreadResult = tmp;
-      }
-      isActiveThreadResult = isArchivedThreadResult;
-    }
-    tmp2 = isActiveThreadResult;
-  }
-  return tmp2;
-});
-let closure_20 = tmp12;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsThreadModerator(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const items = [PermissionStore];
-      const first = _slicedToArray(items, 1)[0];
-      let canResult = null != closure_0;
-      const tmp = closure_0;
-      if (canResult) {
-        canResult = first.can(constants.MANAGE_THREADS, tmp);
-      }
-      return canResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useIsThreadModerator(arg0) {
-  let closure_0;
-  _require = arg0;
-  let items = [PermissionStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const items = [PermissionStore];
-    const first = _slicedToArray(items, 1)[0];
-    let canResult = null != closure_0;
-    const tmp = closure_0;
-    if (canResult) {
-      canResult = first.can(constants.MANAGE_THREADS, tmp);
-    }
-    return canResult;
-  });
-});
-let closure_21 = tmp13;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp14 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRemoveThreadMember(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = ChannelStore;
-    let items = [ChannelStore, , ];
-    items[1] = PermissionStore;
-    items[2] = AuthenticationStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const channel = ChannelStore.getChannel(closure_0);
-      if (null == channel) {
-        return false;
-      } else {
-        let tmp5 = channel.type === constants2.PRIVATE_THREAD && channel.ownerId === tmp3;
-        if (!tmp5) {
-          const items = [PermissionStore];
-          const first = _slicedToArray(items, 1)[0];
-          tmp5 = null != channel && first.can(constants.MANAGE_THREADS, channel);
-          const canResult = null != channel && first.can(constants.MANAGE_THREADS, channel);
-        }
-        return tmp5;
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8);
-}) : (function useCanRemoveThreadMember(arg0) {
-  let closure_0;
-  _require = arg0;
-  let items = [ChannelStore, PermissionStore, AuthenticationStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(closure_0);
-    if (null == channel) {
-      return false;
-    } else {
-      let tmp5 = channel.type === constants2.PRIVATE_THREAD && channel.ownerId === tmp3;
-      if (!tmp5) {
-        const items = [PermissionStore];
-        const first = _slicedToArray(items, 1)[0];
-        tmp5 = null != channel && first.can(constants.MANAGE_THREADS, channel);
-        const canResult = null != channel && first.can(constants.MANAGE_THREADS, channel);
-      }
-      return tmp5;
-    }
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsThreadMember(arg0, arg1) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  let closure_1 = arg1;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      const channel = ChannelStore.getChannel(closure_0);
-      let isThreadResult;
-      if (channel != null) {
-        isThreadResult = channel.isThread();
-      }
-      let guildId = null;
-      if (true === isThreadResult) {
-        guildId = channel.getGuildId();
-      }
-      return guildId;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === arg0) {
-    let tmp8;
-    let tmp9;
-    let tmp12;
-    if (cResult[4] === stateFromStores) {
-      tmp8 = cResult[5];
-      tmp9 = cResult[6];
-    }
-    const effect = react.useEffect(tmp8, tmp9);
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [ThreadMemberListStore];
-      cResult[7] = items1;
-      tmp12 = items1;
-    } else {
-      tmp12 = cResult[7];
-    }
-    if (cResult[8] === arg0) {
-      let tmp14;
-      if (cResult[9] === arg1) {
-        tmp14 = cResult[10];
-      }
-      const tmpResult2 = tmp(504);
-      return tmpResult2.useStateFromStores(tmp12, tmp14);
-    }
-    const fn3 = function _() {
-      let isMemberResult = null;
-      if (null != closure_0) {
-        isMemberResult = ThreadMemberListStore.isMember(tmp, closure_1);
-      }
-      return isMemberResult;
-    };
-    cResult[8] = arg0;
-    cResult[9] = arg1;
-    cResult[10] = fn3;
-    tmp14 = fn3;
-  }
-  const fn2 = function h() {
-    let tmp2 = null != stateFromStores;
-    const tmp = stateFromStores;
-    if (tmp2) {
-      tmp2 = null != closure_0;
-    }
-    if (tmp2) {
-      const obj = GuildSubscriptionsActionCreators;
-      obj.subscribeChannel(tmp, closure_0, GuildChannelSubscriptions.DEFAULT_RANGES);
-    }
-  };
-  const items2 = [stateFromStores, arg0];
-  cResult[3] = arg0;
-  cResult[4] = stateFromStores;
-  cResult[5] = fn2;
-  cResult[6] = items2;
-  tmp9 = items2;
-  tmp8 = fn2;
-}) : (function useIsThreadMember(arg0, arg1) {
-  let closure_0;
-  _require = arg0;
-  let closure_1 = arg1;
-  let obj = require("get initialized");
-  const items = [ChannelStore];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const channel = ChannelStore.getChannel(closure_0);
-    let isThreadResult;
-    if (channel != null) {
-      isThreadResult = channel.isThread();
-    }
-    let guildId = null;
-    if (true === isThreadResult) {
-      guildId = channel.getGuildId();
-    }
-    return guildId;
-  });
-  const items1 = [stateFromStores, arg0];
-  const effect = react.useEffect(() => {
-    let tmp2 = null != stateFromStores;
-    const tmp = stateFromStores;
-    if (tmp2) {
-      tmp2 = null != closure_0;
-    }
-    if (tmp2) {
-      const obj = GuildSubscriptionsActionCreators;
-      obj.subscribeChannel(tmp, closure_0, GuildChannelSubscriptions.DEFAULT_RANGES);
-    }
-  }, items1);
-  const items2 = [ThreadMemberListStore];
-  const obj2 = require("get initialized");
-  return obj2.useStateFromStores(items2, () => {
-    let isMemberResult = null;
-    if (null != closure_0) {
-      isMemberResult = ThreadMemberListStore.isMember(tmp, closure_1);
-    }
-    return isMemberResult;
-  });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp16 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasPermissionToJoinThreadVoice(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return PermissionStore.can(constants.CONNECT, closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6) && closure_20(arg0);
-  return stateFromStores;
-}) : (function useHasPermissionToJoinThreadVoice(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [PermissionStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(constants.CONNECT, closure_0)) && closure_20(arg0);
-  return stateFromStores;
-});
-let closure_22 = tmp16;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp17 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanJoinThreadVoice(guild_id) {
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(10);
-  const tmp4 = useIsRemoteDefault();
-  const tmp5 = closure_22(guild_id);
-  if (cResult[0] !== guild_id.guild_id) {
-    const obj2 = { guildId: guild_id.guild_id, location: "e791ea_1" };
-    cResult[0] = guild_id.guild_id;
-    cResult[1] = obj2;
-    tmp6 = obj2;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { autoTrackExposure: false };
-    cResult[2] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const enabled = importDefaultResultResult.useExperiment(tmp6, tmp7).enabled;
-  const tmpResult = GameInvitesChannelUtils;
-  const isGameInvitesPost = tmpResult.useIsGameInvitesPost(guild_id);
-  const tmpResult3 = shouldAgeVerifyForAgeGate2;
-  let shouldAgeVerifyForAgeGate = tmpResult3.useShouldAgeVerifyForAgeGate();
-  if (shouldAgeVerifyForAgeGate) {
-    const tmpResult4 = AgeGateUtils;
-    shouldAgeVerifyForAgeGate = tmpResult4.shouldShowAgeGateForChannelId(guild_id.id);
-  }
-  if (cResult[3] === guild_id) {
-    if (cResult[4] === enabled) {
-      if (cResult[5] === tmp5) {
-        if (cResult[6] === isGameInvitesPost) {
-          if (cResult[7] === tmp4) {
-            let tmp10;
-            if (cResult[8] === shouldAgeVerifyForAgeGate) {
-              tmp10 = cResult[9];
-            }
-            return tmp10;
-          }
-        }
-      }
-    }
-  }
-  let tmp11 = !tmp4 && guild_id.isVocalThread();
-  if (tmp11) {
-    tmp11 = enabled || isGameInvitesPost;
-  }
-  if (tmp11) {
-    tmp11 = tmp5;
-  }
-  if (tmp11) {
-    tmp11 = !shouldAgeVerifyForAgeGate;
-  }
-  cResult[3] = guild_id;
-  cResult[4] = enabled;
-  cResult[5] = tmp5;
-  cResult[6] = isGameInvitesPost;
-  cResult[7] = tmp4;
-  cResult[8] = shouldAgeVerifyForAgeGate;
-  cResult[9] = tmp11;
-  tmp10 = tmp11;
-}) : (function useCanJoinThreadVoice(guildId) {
-  const obj = { guildId: guildId.guild_id, location: "e791ea_1" };
-  const tmp2 = useIsRemoteDefault();
-  const tmp3 = closure_22(guildId);
-  let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
-  const obj2 = GameInvitesChannelUtils;
-  const isGameInvitesPost = obj2.useIsGameInvitesPost(guildId);
-  const obj3 = shouldAgeVerifyForAgeGate2;
-  let shouldAgeVerifyForAgeGate = obj3.useShouldAgeVerifyForAgeGate();
-  if (shouldAgeVerifyForAgeGate) {
-    const tmp4Result = AgeGateUtils;
-    shouldAgeVerifyForAgeGate = tmp4Result.shouldShowAgeGateForChannelId(guildId.id);
-  }
-  let tmp7 = !tmp2 && guildId.isVocalThread();
-  if (tmp7) {
-    if (!enabled) {
-      enabled = isGameInvitesPost;
-    }
-    tmp7 = enabled;
-  }
-  if (tmp7) {
-    tmp7 = tmp3;
-  }
-  if (tmp7) {
-    tmp7 = !shouldAgeVerifyForAgeGate;
-  }
-  return tmp7;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNonModInLockedThread(isLockedThread) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp2 = closure_21(isLockedThread);
-  if (cResult[0] === isLockedThread) {
-    let tmp3;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = isLockedThread.isLockedThread() && !tmp2;
-  cResult[0] = isLockedThread;
-  cResult[1] = tmp2;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function useIsNonModInLockedThread(isLockedThread) {
-  const tmp = closure_21(isLockedThread);
-  const tmp2 = isLockedThread.isLockedThread() && !tmp;
-  return tmp2;
-});
-function isThreadModerator(arg0) {
-  let tmp = arg1;
-  if (arg1 === undefined) {
-    const items = [PermissionStore];
-    tmp = items;
-  }
-  const first = _slicedToArray(tmp, 1)[0];
-  const canResult = null != arg0 && first.can(constants.MANAGE_THREADS, arg0);
-  return canResult;
 }
-const result = size.fileFinishedImporting("modules/threads/ThreadHooks.tsx");
-
-export const VoiceInThreadsExperiment = importDefaultResultResult;
-export const useCanStartPublicThread = tmp5;
 export function computeCanStartPublicThread(channel, message) {
   let SEND_MESSAGES;
   if (channel.isForumLikeChannel()) {
@@ -1264,7 +205,7 @@ export function computeCanStartPublicThread(channel, message) {
   }
   return flag;
 }
-export const useCanStartPrivateThread = tmp6;
+export { useCanStartPrivateThread };
 export function computeCanStartPrivateThread(type, hasFlag) {
   let tmp3 = type.type === constants3.GUILD_TEXT;
   const canResult = PermissionStore.can(constants.CREATE_PRIVATE_THREADS, type);
@@ -1292,13 +233,138 @@ export function computeCanStartPrivateThread(type, hasFlag) {
   }
   return tmp3;
 }
-export const useCanStartThread = tmp7;
-export const useCanViewThreadForMessage = tmp8;
-export const useHasActiveThreads = tmp9;
-export const useCanManageThread = tmp10;
-export const useCanUnarchiveThread = tmp11;
+export function useCanStartThread(channel) {
+  _require = channel;
+  let obj = require("get initialized");
+  const items = [PermissionStore];
+  const items1 = [channel];
+  let flag = false;
+  if (obj.useStateFromStores(items, f90408, items1)) {
+    let tmp = THREADED_CHANNEL_TYPES;
+    flag = false;
+    if (THREADED_CHANNEL_TYPES.has(channel.type)) {
+      flag = true;
+    }
+  }
+  if (!flag) {
+    flag = useCanStartPrivateThread(channel);
+  }
+  return flag;
+}
+export function useCanViewThreadForMessage(hasFlag) {
+  _require = hasFlag;
+  let obj = require("get initialized");
+  const items = [ChannelStore];
+  const items1 = [hasFlag];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const getChannel = ChannelStore.getChannel;
+    const obj = SnowflakeUtilsDefault;
+    return getChannel(obj.castMessageIdAsChannelId(hasFlag.id));
+  }, items1);
+  const items2 = [PermissionStore];
+  const items3 = [stateFromStores];
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items2, () => PermissionStore.can(constants.VIEW_CHANNEL, stateFromStores), items3);
+  let hasFlagResult = hasFlag.hasFlag(constants2.HAS_THREAD);
+  if (hasFlagResult) {
+    hasFlagResult = null != stateFromStores && stateFromStores1;
+  }
+  return hasFlagResult;
+}
+export function useHasActiveThreads(channel) {
+  _require = channel;
+  let obj = require("get initialized");
+  const items = [ActiveJoinedThreadsStore, PermissionStore];
+  return obj.useStateFromStoresObject(items, () => {
+    const activeJoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedThreadsForParent(channel.guild_id, channel.id);
+    const activeJoinedRelevantThreadsForParent = ActiveJoinedThreadsStore.getActiveJoinedRelevantThreadsForParent(channel.guild_id, channel.id);
+    const activeUnjoinedThreadsForParent = ActiveJoinedThreadsStore.getActiveUnjoinedThreadsForParent(channel.guild_id, channel.id);
+    const obj = _modDef12(activeJoinedRelevantThreadsForParent);
+    const someResult = obj.some((channel) => closure_1_9.can(constants.VIEW_CHANNEL, channel.channel));
+    const obj2 = _modDef12(activeJoinedThreadsForParent);
+    const someResult1 = obj2.some((channel) => {
+      const canResult = !(channel.channel.id in activeJoinedRelevantThreadsForParent) && closure_2_9.can(constants.VIEW_CHANNEL, channel.channel);
+      return canResult;
+    });
+    const obj3 = _modDef12(activeUnjoinedThreadsForParent);
+    let someResult2 = obj3.some((item) => closure_1_9.can(constants.VIEW_CHANNEL, item));
+    const obj4 = { hasActiveThreads: someResult || someResult1 || someResult2, hasMoreActiveThreads: someResult2 };
+    if (!someResult2) {
+      someResult2 = someResult1;
+    }
+    return obj4;
+  });
+}
+export function useCanManageThread(channel) {
+  let id;
+  _require = channel;
+  const items = [ChannelStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let parent_id;
+    const getChannel = ChannelStore.getChannel;
+    if (channel != null) {
+      parent_id = channel.parent_id;
+    }
+    return getChannel(parent_id);
+  });
+  const items1 = [PermissionStore];
+  const items2 = [stateFromStores];
+  const obj2 = require("get initialized");
+  const stateFromStores1 = obj2.useStateFromStores(items1, () => {
+    const canResult = null != stateFromStores && PermissionStore.can(constants.MANAGE_THREADS, tmp);
+    return canResult;
+  }, items2);
+  const items3 = [AuthenticationStore];
+  let tmp4 = null != channel;
+  const obj3 = require("get initialized");
+  const stateFromStores2 = obj3.useStateFromStores(items3, () => id.getId());
+  if (tmp4) {
+    tmp4 = null != stateFromStores;
+  }
+  if (tmp4) {
+    let isThreadResult = channel.isThread();
+    if (isThreadResult) {
+      let tmp6 = stateFromStores1;
+      if (!tmp6) {
+        tmp6 = !channel.isLockedThread() && channel.ownerId === stateFromStores2;
+        !channel.isLockedThread() && channel.ownerId === stateFromStores2;
+      }
+      isThreadResult = tmp6;
+    }
+    tmp4 = isThreadResult;
+  }
+  return tmp4;
+}
+export { useCanUnarchiveThread };
 export { canUnarchiveThread };
-export const useIsActiveChannelOrUnarchivableThread = tmp12;
+export function useIsActiveChannelOrUnarchivableThread(channel) {
+  let tmp2 = null != channel;
+  if (tmp2) {
+    const isThreadResult = channel.isThread();
+    let isActiveThreadResult = !isThreadResult;
+    if (isThreadResult) {
+      isActiveThreadResult = channel.isActiveThread();
+    }
+    if (!isActiveThreadResult) {
+      let isArchivedThreadResult = channel.isArchivedThread();
+      if (isArchivedThreadResult) {
+        const threadMetadata = channel.threadMetadata;
+        let locked;
+        if (threadMetadata != null) {
+          locked = threadMetadata.locked;
+        }
+        isArchivedThreadResult = true !== locked;
+      }
+      if (isArchivedThreadResult) {
+        isArchivedThreadResult = tmp;
+      }
+      isActiveThreadResult = isArchivedThreadResult;
+    }
+    tmp2 = isActiveThreadResult;
+  }
+  return tmp2;
+}
 export function getIsActiveChannelOrUnarchivableThread(channel) {
   let tmp = null != channel;
   if (tmp) {
@@ -1335,13 +401,181 @@ export function computeIsReadOnlyThread(channel) {
     return tmp4;
   }
 }
-export const useIsThreadModerator = tmp13;
-export { isThreadModerator };
-export const useCanRemoveThreadMember = tmp14;
-export const useIsThreadMember = tmp15;
-export const useHasPermissionToJoinThreadVoice = tmp16;
-export const useCanJoinThreadVoice = tmp17;
-export const useIsNonModInLockedThread = tmp18;
+export function useIsThreadModerator(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, f90412);
+}
+export function isThreadModerator(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    const items = [PermissionStore];
+    tmp = items;
+  }
+  const first = _slicedToArray(tmp, 1)[0];
+  const canResult = null != arg0 && first.can(constants.MANAGE_THREADS, arg0);
+  return canResult;
+}
+export function useCanRemoveThreadMember(channelId) {
+  _require = channelId;
+  let items = [ChannelStore, PermissionStore, AuthenticationStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(channelId);
+    if (null == channel) {
+      return false;
+    } else {
+      let tmp5 = channel.type === constants2.PRIVATE_THREAD && channel.ownerId === tmp3;
+      if (!tmp5) {
+        const items = [PermissionStore];
+        const first = _slicedToArray(items, 1)[0];
+        tmp5 = null != channel && first.can(constants.MANAGE_THREADS, channel);
+        const canResult = null != channel && first.can(constants.MANAGE_THREADS, channel);
+      }
+      return tmp5;
+    }
+  });
+}
+export function useIsThreadMember(channelId, id) {
+  _require = channelId;
+  let closure_1 = id;
+  let obj = require("get initialized");
+  const items = [ChannelStore];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const channel = ChannelStore.getChannel(channelId);
+    let isThreadResult;
+    if (channel != null) {
+      isThreadResult = channel.isThread();
+    }
+    let guildId = null;
+    if (true === isThreadResult) {
+      guildId = channel.getGuildId();
+    }
+    return guildId;
+  });
+  const items1 = [stateFromStores, channelId];
+  const effect = react.useEffect(() => {
+    let tmp2 = null != stateFromStores;
+    const tmp = stateFromStores;
+    if (tmp2) {
+      tmp2 = null != channelId;
+    }
+    if (tmp2) {
+      const obj = GuildSubscriptionsActionCreators;
+      obj.subscribeChannel(tmp, channelId, GuildChannelSubscriptions.DEFAULT_RANGES);
+    }
+  }, items1);
+  const items2 = [ThreadMemberListStore];
+  const obj2 = require("get initialized");
+  return obj2.useStateFromStores(items2, () => {
+    let isMemberResult = null;
+    if (null != channelId) {
+      isMemberResult = ThreadMemberListStore.isMember(tmp, id);
+    }
+    return isMemberResult;
+  });
+}
+export function useHasPermissionToJoinThreadVoice(isThread) {
+  _require = isThread;
+  const items = [PermissionStore];
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, f90413);
+  let tmp3 = null != isThread;
+  if (tmp3) {
+    const isThreadResult = isThread.isThread();
+    let isActiveThreadResult = !isThreadResult;
+    if (isThreadResult) {
+      isActiveThreadResult = isThread.isActiveThread();
+    }
+    if (!isActiveThreadResult) {
+      let isArchivedThreadResult = isThread.isArchivedThread();
+      if (isArchivedThreadResult) {
+        const threadMetadata = isThread.threadMetadata;
+        let locked;
+        if (threadMetadata != null) {
+          locked = threadMetadata.locked;
+        }
+        isArchivedThreadResult = true !== locked;
+      }
+      if (isArchivedThreadResult) {
+        isArchivedThreadResult = tmp2;
+      }
+      isActiveThreadResult = isArchivedThreadResult;
+    }
+    tmp3 = isActiveThreadResult;
+  }
+  if (stateFromStores) {
+    stateFromStores = tmp3;
+  }
+  return stateFromStores;
+}
+export function useCanJoinThreadVoice(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const tmp2 = useIsRemoteDefault();
+  const obj = require("get initialized");
+  let stateFromStores = obj.useStateFromStores(items, f90413);
+  let tmp6 = null != channel;
+  if (tmp6) {
+    const isThreadResult = channel.isThread();
+    let isActiveThreadResult = !isThreadResult;
+    if (isThreadResult) {
+      isActiveThreadResult = channel.isActiveThread();
+    }
+    if (!isActiveThreadResult) {
+      let isArchivedThreadResult = channel.isArchivedThread();
+      if (isArchivedThreadResult) {
+        const threadMetadata = channel.threadMetadata;
+        let locked;
+        if (threadMetadata != null) {
+          locked = threadMetadata.locked;
+        }
+        isArchivedThreadResult = true !== locked;
+      }
+      if (isArchivedThreadResult) {
+        isArchivedThreadResult = tmp5;
+      }
+      isActiveThreadResult = isArchivedThreadResult;
+    }
+    tmp6 = isActiveThreadResult;
+  }
+  if (stateFromStores) {
+    stateFromStores = tmp6;
+  }
+  const obj2 = { guildId: channel.guild_id, location: "e791ea_1" };
+  let enabled = importDefaultResultResult.useExperiment(obj2, { autoTrackExposure: false }).enabled;
+  const tmp3Result = require("GameInvitesChannelUtils");
+  const isGameInvitesPost = tmp3Result.useIsGameInvitesPost(channel);
+  const tmp3Result3 = require("shouldAgeVerifyForAgeGate");
+  let shouldAgeVerifyForAgeGate = tmp3Result3.useShouldAgeVerifyForAgeGate();
+  if (shouldAgeVerifyForAgeGate) {
+    const tmp3Result4 = require("AgeGateUtils");
+    shouldAgeVerifyForAgeGate = tmp3Result4.shouldShowAgeGateForChannelId(channel.id);
+  }
+  let tmp13 = !tmp2 && channel.isVocalThread();
+  if (tmp13) {
+    if (!enabled) {
+      enabled = isGameInvitesPost;
+    }
+    tmp13 = enabled;
+  }
+  if (tmp13) {
+    tmp13 = stateFromStores;
+  }
+  if (tmp13) {
+    tmp13 = !shouldAgeVerifyForAgeGate;
+  }
+  return tmp13;
+}
+export function useIsNonModInLockedThread(channel) {
+  _require = channel;
+  let items = [PermissionStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f90412);
+  const tmp2 = channel.isLockedThread() && !stateFromStores;
+  return tmp2;
+}
 export function isNonModInLockedThread(isLockedThread) {
   const items = [PermissionStore];
   const first = _slicedToArray(items, 1)[0];

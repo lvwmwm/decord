@@ -1,18 +1,18 @@
-// Module ID: 19888
-// Function ID: 19889
+// Module ID: 19951
+// Function ID: 19952
 // Name: InviteSelectActionSheet
-// Dependencies: [19, 21, 5005, 587, 558, 576, 5247, 7308, 7044, 7045, 5302, 2]
+// Dependencies: [19, 21, 5009, 575, 5267, 7315, 7052, 5253, 7055, 2]
+// Exports: default
 
-// Module 19888 (InviteSelectActionSheet)
+// Module 19951 (InviteSelectActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import TableRadioRow from "TableRadioRow" /* 7044 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7045 */;
+import nativeDefault from "native" /* 575 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7052 */;
+import TableRadioRow from "TableRadioRow" /* 7055 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,88 +23,9 @@ const jsx = Fragment.jsx;
 let obj = { content: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSelectActionSheet(arg0) {
-  let onChange;
-  let options;
-  let title;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let value;
-  let obj = onChange(576);
-  const cResult = obj.c(15);
-  ({ title, options, value, onChange } = arg0);
-  const tmp4 = closure_4();
-  if (cResult[0] !== onChange) {
-    function handleChange(arg0) {
-      onChange(arg0);
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-    }
-    cResult[0] = onChange;
-    cResult[1] = handleChange;
-    tmp5 = handleChange;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const content = tmp4.content;
-  if (cResult[2] !== title) {
-    const tmp8 = jsx(onChange(7308).BottomSheetTitleHeader, { title });
-    cResult[2] = title;
-    cResult[3] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] !== options) {
-    let tmp11;
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function _(value) {
-        return jsx(onChange(dependencyMap[8]).TableRadioRow, { value: value.value, label: value.label, accessibilityHint: value.descriptiveLabel }, "" + value.value);
-      };
-      cResult[6] = fn;
-      tmp11 = fn;
-    } else {
-      tmp11 = cResult[6];
-    }
-    const mapped = options.map(tmp11);
-    cResult[4] = options;
-    cResult[5] = mapped;
-    tmp9 = mapped;
-  } else {
-    tmp9 = cResult[5];
-  }
-  if (cResult[7] === tmp5) {
-    if (cResult[8] === tmp9) {
-      let tmp13;
-      if (cResult[9] === value) {
-        tmp13 = cResult[10];
-      }
-      if (cResult[11] === tmp4.content) {
-        if (cResult[12] === tmp6) {
-          let tmp15;
-          if (cResult[13] === tmp13) {
-            tmp15 = cResult[14];
-          }
-          return tmp15;
-        }
-      }
-      const tmp17 = jsx(onChange(5302).BottomSheet, { contentStyles: content, header: tmp6, children: tmp13 });
-      cResult[11] = tmp4.content;
-      cResult[12] = tmp6;
-      cResult[13] = tmp13;
-      cResult[14] = tmp17;
-      tmp15 = tmp17;
-    }
-  }
-  const tmp14 = jsx(onChange(7045).TableRadioGroup, { value, onChange: tmp5, hasIcons: false, children: tmp9 });
-  cResult[7] = tmp5;
-  cResult[8] = tmp9;
-  cResult[9] = value;
-  cResult[10] = tmp14;
-  tmp13 = tmp14;
-}) : (function InviteSelectActionSheet(arg0) {
+const result = size.fileFinishedImporting("modules/guild_invite/native/action_sheet/InviteSelectActionSheet.tsx");
+
+export default function InviteSelectActionSheet(arg0) {
   let options;
   let title;
   let value;
@@ -124,7 +45,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InviteSele
   });
   const TableRadioGroup = TableRadioGroup2.TableRadioGroup;
   return <BottomSheet contentStyles={tmp.content} header={null}>{null}</BottomSheet>;
-});
-const result = size.fileFinishedImporting("modules/guild_invite/native/action_sheet/InviteSelectActionSheet.tsx");
-
-export default tmp3;
+};

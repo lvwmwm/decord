@@ -1,129 +1,24 @@
-// Module ID: 18662
-// Function ID: 18663
+// Module ID: 18721
+// Function ID: 18722
 // Name: useSearchScreenError
-// Dependencies: [19, 6850, 13703, 9780, 558, 576, 13696, 504, 1125, 5701, 2]
+// Dependencies: [19, 6857, 13850, 9806, 504, 13843, 1114, 5707, 2]
+// Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 18662 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import SearchConstants from "SearchConstants" /* 9780 */;
-import SearchUtils from "SearchUtils" /* 13696 */;
+// Module 18721 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import SearchConstants from "SearchConstants" /* 9806 */;
+import SearchUtils from "SearchUtils" /* 13843 */;
 import react from "react" /* 19 */;
-import SearchMessageStore_mod from "SearchMessageStore" /* 6850 */;
-import SearchQueryStore from "SearchQueryStore" /* 13703 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import SearchMessageStore from "SearchMessageStore" /* 6857 */;
+import SearchQueryStore from "SearchQueryStore" /* 13850 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let text;
 
-let SearchMessageStore = SearchMessageStore_mod;
 let closure_6 = SearchConstants.SEARCH_MESSAGE_TAB_SENTINEL;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSearchErrorScreen(searchContext) {
-  let first;
-  let ref;
-  let stateFromStores;
-  const tmp = searchContext;
-  const tmp2 = stateFromStores;
-  let obj = searchContext(stateFromStores[5]);
-  const cResult = obj.c(15);
-  searchContext = searchContext.searchContext;
-  const tab = searchContext.tab;
-  const hasListItems = searchContext.hasListItems;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SearchQueryStore, SearchMessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === searchContext) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === tab) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = tmp(tmp2[7]);
-    stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    if (cResult[4] !== stateFromStores) {
-      let anyErrorMessage;
-      if (stateFromStores != null) {
-        anyErrorMessage = stateFromStores.getAnyErrorMessage();
-      }
-      if (anyErrorMessage == null) {
-        const intl = tmp(tmp2[8]).intl;
-        anyErrorMessage = intl.string(tmp(tmp2[8]).t.uvDZBZ);
-      }
-      cResult[4] = stateFromStores;
-      cResult[5] = anyErrorMessage;
-      tmp8 = anyErrorMessage;
-    } else {
-      tmp8 = cResult[5];
-    }
-    text = tmp8;
-    SearchMessageStore = text.useRef(null);
-    if (cResult[6] === stateFromStores) {
-      let tmp13;
-      if (cResult[7] === tmp8) {
-        tmp13 = cResult[8];
-      }
-      if (cResult[9] === tmp8) {
-        if (cResult[10] === tmp13) {
-          if (cResult[11] === null != stateFromStores) {
-            if (cResult[12] === (null != stateFromStores && !hasListItems)) {
-              let tmp17;
-              if (cResult[13] === (null != stateFromStores && hasListItems)) {
-                tmp17 = cResult[14];
-              }
-              return tmp17;
-            }
-          }
-        }
-      }
-      let obj2 = { hasError: null != stateFromStores, errorText: tmp8, isErrorFullscreen: null != stateFromStores && !hasListItems, isErrorToast: null != stateFromStores && hasListItems, showErrorToast: null };
-      class C {
-        constructor() {
-          if (stateFromStores !== ref.current) {
-            const obj2 = { text, variant: "critical" };
-            const obj = ToastActionCreatorsDefault;
-            obj.open("SEARCH_ERROR_TOAST", obj2);
-            tmp2.current = tmp;
-          }
-        }
-      }
-      cResult[9] = tmp8;
-      cResult[10] = tmp13;
-      cResult[11] = null != stateFromStores;
-      cResult[12] = null != stateFromStores && !hasListItems;
-      cResult[13] = null != stateFromStores && hasListItems;
-      cResult[14] = obj2;
-      tmp17 = obj2;
-    }
-    class C {
-      constructor() {
-        if (stateFromStores !== ref.current) {
-          const obj2 = { text, variant: "critical" };
-          const obj = ToastActionCreatorsDefault;
-          obj.open("SEARCH_ERROR_TOAST", obj2);
-          tmp2.current = tmp;
-        }
-      }
-    }
-    cResult[6] = stateFromStores;
-    cResult[7] = tmp8;
-    cResult[8] = C;
-    tmp13 = C;
-  }
-  const fn = function l() {
-    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
-    const obj = SearchUtils;
-    return SearchMessageStore.getError(obj.getSearchTabFetchId(searchContext, tab, searchResultsQuery));
-  };
-  cResult[1] = searchContext;
-  cResult[2] = tab;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function useMessageSearchErrorScreen(arg0) {
+const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
+
+export function useMessageSearchErrorScreen(arg0) {
   let callback;
   let hasListItems;
   let tmp5;
@@ -144,8 +39,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
     anyErrorMessage = stateFromStores.getAnyErrorMessage();
   }
   if (anyErrorMessage == null) {
-    const intl = tmp(tmp2[8]).intl;
-    anyErrorMessage = intl.string(tmp(tmp2[8]).t.uvDZBZ);
+    const intl = tmp(tmp2[6]).intl;
+    anyErrorMessage = intl.string(tmp(tmp2[6]).t.uvDZBZ);
   }
   ref = anyErrorMessage.useRef(null);
   const items1 = [stateFromStores, anyErrorMessage];
@@ -163,58 +58,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageSe
     tmp5 = !hasListItems;
   }
   return obj2;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageTabCountsErrorText(searchContext) {
-  let first;
-  let tmp7;
-  const tmp2 = dependencyMap;
-  let obj = searchContext(576);
-  const cResult = obj.c(3);
-  const tmp = searchContext;
-  searchContext = searchContext.searchContext;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = SearchQueryStore;
-    const items = [SearchQueryStore, SearchMessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== searchContext) {
-    const fn = function l() {
-      const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
-      const obj = SearchUtils;
-      const searchTabFetchId = obj.getSearchTabFetchId(searchContext, closure_6, searchResultsQuery);
-      if (SearchMessageStore.getIsInitialFetchComplete(searchTabFetchId)) {
-        if (null != SearchMessageStore.getTotalCount(searchTabFetchId)) {
-          return null;
-        } else {
-          const error = obj2.getError(searchTabFetchId);
-          let tmp5 = null;
-          if (null != error) {
-            let anyErrorMessage = error.getAnyErrorMessage();
-            if (anyErrorMessage == null) {
-              const intl = tmp2(1125).intl;
-              anyErrorMessage = intl.string(tmp2(1125).t.uvDZBZ);
-            }
-            tmp5 = anyErrorMessage;
-          }
-          return tmp5;
-        }
-      } else {
-        return null;
-      }
-    };
-    cResult[1] = searchContext;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useMessageTabCountsErrorText(searchContext) {
+}
+export function useMessageTabCountsErrorText(searchContext) {
   searchContext = searchContext.searchContext;
   let obj = searchContext(504);
   const items = [SearchQueryStore, SearchMessageStore];
@@ -231,8 +76,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
         if (null != error) {
           let anyErrorMessage = error.getAnyErrorMessage();
           if (anyErrorMessage == null) {
-            const intl = tmp2(1125).intl;
-            anyErrorMessage = intl.string(tmp2(1125).t.uvDZBZ);
+            const intl = tmp2(1114).intl;
+            anyErrorMessage = intl.string(tmp2(1114).t.uvDZBZ);
           }
           tmp5 = anyErrorMessage;
         }
@@ -242,8 +87,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
       return null;
     }
   });
-});
-const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
-
-export const useMessageSearchErrorScreen = tmp2;
-export const useMessageTabCountsErrorText = tmp3;
+}

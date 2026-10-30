@@ -1,15 +1,15 @@
-// Module ID: 2045
-// Function ID: 2046
+// Module ID: 2042
+// Function ID: 2043
 // Name: SKURecord
-// Dependencies: [1404, 2022, 2046, 1084, 2047, 2048, 2050, 1402, 2]
+// Dependencies: [1399, 2017, 2043, 1072, 2044, 2045, 2047, 1397, 2]
 
-// Module 2045 (SKURecord)
-import SKUConstants from "SKUConstants" /* 2046 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 2048 */;
-import Record from "Record" /* 1404 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import Constants from "Constants" /* 1084 */;
+// Module 2042 (SKURecord)
+import SKUConstants from "SKUConstants" /* 2043 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 2045 */;
+import Record from "Record" /* 1399 */;
+import ApplicationRecord from "ApplicationRecord" /* 2017 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp15;
-const transformSKUTenantMetadataDefault = tmp15(2050);
+const transformSKUTenantMetadataDefault = tmp15(2047);
 const set = SKUConstants.THE_GAME_AWARD_WINNER_SKUS;
 ({ GIFTABLE_CURRENCIES: hasOwnProperty, OperatingSystems: metroRequire, SKUFlags: metroImportDefault, SKUTypes: metroImportAll } = Constants);
 class SKURecord extends Record {
@@ -68,11 +68,11 @@ class SKURecord extends Record {
     }
     tmp6 = null;
     if (null != id.release_date) {
-      tmp6 = _modDef2047(id.release_date);
+      tmp6 = _modDef2044(id.release_date);
     }
     tmp9 = null;
     if (null != id.preorder_release_at) {
-      tmp9 = _modDef2047(id.preorder_release_at);
+      tmp9 = _modDef2044(id.preorder_release_at);
     }
     ({ preorder_approximate_release_date: obj.preorderApproximateReleaseDate, summary: obj.summary } = id);
     new Set(id.features);
@@ -215,7 +215,7 @@ class SKURecord extends Record {
       const tmp = require;
       const tmp3 = metroImportDefault;
       if (!hasFlagResult) {
-        const tmpResult = tmp(1402);
+        const tmpResult = tmp(1397);
         hasFlagResult = tmpResult.hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
       }
       premium = hasFlagResult;

@@ -1,36 +1,17 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9549
+// Function ID: 9550
 // Name: useIsVariantColorLight
-// Dependencies: [19, 558, 576, 1102, 2]
+// Dependencies: [19, 1091, 2]
+// Exports: default
 
-// Module 9530 (useIsVariantColorLight)
-import react2 from "react" /* 576 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
+// Module 9549 (useIsVariantColorLight)
+import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVariantColorLight(variantValue) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== variantValue.variantValue) {
-    const tmpResult = utils_ColorUtils;
-    let isValidHexResult = tmpResult.isValidHex(variantValue.variantValue);
-    if (isValidHexResult) {
-      const getDarkness = utils_ColorUtils.getDarkness;
-      utils_ColorUtils;
-      const tmpResult4 = utils_ColorUtils;
-      isValidHexResult = getDarkness(tmpResult4.hex2int(variantValue.variantValue)) < 0.3;
-    }
-    cResult[0] = variantValue.variantValue;
-    cResult[1] = isValidHexResult;
-    tmp4 = isValidHexResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useIsVariantColorLight(variantValue) {
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useIsVariantColorLight.tsx");
+
+export default function useIsVariantColorLight(variantValue) {
   const items = [variantValue.variantValue];
   return react.useMemo(() => {
     const obj = utils_ColorUtils;
@@ -44,7 +25,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVaria
     }
     return isValidHexResult;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useIsVariantColorLight.tsx");
-
-export default tmp2;
+};

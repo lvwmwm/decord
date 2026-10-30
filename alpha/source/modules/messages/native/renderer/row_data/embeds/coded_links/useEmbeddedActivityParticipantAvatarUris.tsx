@@ -1,105 +1,19 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15080
+// Function ID: 15081
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 4856, 1389, 1385, 558, 576, 573, 2]
-// Exports: getEmbeddedActivityParticipantAvatarUris
+// Dependencies: [19, 4857, 1384, 1380, 563, 2]
+// Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 15036 (useEmbeddedActivityParticipantAvatarUris)
-import GlobalUtils from "GlobalUtils" /* 1385 */;
+// Module 15080 (useEmbeddedActivityParticipantAvatarUris)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedActivityParticipantAvatarUris(arg0) {
-  let activity;
-  let closure_1;
-  let guildId;
-  let tmp10;
-  let tmp12;
-  let tmp13;
-  let tmp15;
-  let tmp6;
-  const obj = guildId(576);
-  const cResult = obj.c(11);
-  ({ activity, guildId } = arg0);
-  let userIds;
-  const first = cResult[0];
-  if (activity != null) {
-    userIds = activity.userIds;
-  }
-  if (first !== userIds) {
-    let userIds1;
-    const _Array = Array;
-    if (activity != null) {
-      userIds1 = activity.userIds;
-    }
-    if (userIds1 == null) {
-      userIds1 = [];
-    }
-    const fromResult = from(userIds1);
-    let userIds2;
-    if (activity != null) {
-      userIds2 = activity.userIds;
-    }
-    cResult[0] = userIds2;
-    cResult[1] = fromResult;
-    tmp6 = fromResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  dependencyMap = tmp6;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[2] = items;
-    tmp10 = items;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] !== tmp6) {
-    const fn = function v() {
-      let user;
-      return closure_1.map((item) => user.getUser(item));
-    };
-    const items1 = [tmp6];
-    cResult[3] = tmp6;
-    cResult[4] = fn;
-    cResult[5] = items1;
-    tmp13 = items1;
-    tmp12 = fn;
-  } else {
-    tmp12 = cResult[4];
-    tmp13 = cResult[5];
-  }
-  const tmpResult = guildId(573);
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp10, tmp12, tmp13);
-  if (cResult[6] === guildId) {
-    let tmp14;
-    if (cResult[7] === stateFromStoresArray) {
-      tmp14 = cResult[8];
-    }
-    return tmp14;
-  }
-  if (cResult[9] !== guildId) {
-    const fn2 = function y(getAvatarURL) {
-      return "" + getAvatarURL.getAvatarURL(guildId, 64);
-    };
-    cResult[9] = guildId;
-    cResult[10] = fn2;
-    tmp15 = fn2;
-  } else {
-    tmp15 = cResult[10];
-  }
-  const found = stateFromStoresArray.filter(tmp(1385).isNotNullish);
-  const mapped = found.map(tmp15);
-  cResult[6] = guildId;
-  cResult[7] = stateFromStoresArray;
-  cResult[8] = mapped;
-  tmp14 = mapped;
-}) : (function useEmbeddedActivityParticipantAvatarUris(activity) {
+export default function useEmbeddedActivityParticipantAvatarUris(activity) {
   activity = activity.activity;
   const guildId = activity.guildId;
   let memo;
@@ -117,7 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
   }, items);
   const items1 = [UserStore];
   const items2 = [memo];
-  const obj = activity(guildId[6]);
+  const obj = activity(guildId[4]);
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
     let user;
     return memo.map((item) => user.getUser(item));
@@ -127,10 +41,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
     const found = stateFromStoresArray.filter(GlobalUtils.isNotNullish);
     return found.map((getAvatarURL) => "" + getAvatarURL.getAvatarURL(guildId, 64));
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");
-
-export default tmp2;
+};
 export function getEmbeddedActivityParticipantAvatarUris(arg0) {
   let activity;
   ({ guildId: require, applicationId: dependencyMap, activity } = arg0);

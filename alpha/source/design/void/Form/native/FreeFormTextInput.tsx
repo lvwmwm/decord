@@ -1,22 +1,20 @@
-// Module ID: 7091
-// Function ID: 7092
+// Module ID: 7099
+// Function ID: 7100
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 1199, 7092, 6968, 38, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 6974, 1114, 1188, 7100, 38, 2]
 // Exports: default
 
-// Module 7091 (FreeFormTextInput)
+// Module 7099 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Pressables from "Pressables" /* 6968 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7092 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Pressables from "Pressables" /* 6974 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7100 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -28,71 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, TouchableOpacity: metroRequire } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, onPress: { flexDirection: "row" }, input: obj3, error: obj4, closeIcon: obj5, placeholder: { color: nativeDefault.colors.TEXT_MUTED } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
-createStyles = createStyles.createStyles;
-obj3 = { flex: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-obj4 = { borderColor: nativeDefault.unsafe_rawColors.RED_400 };
-obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8, flexShrink: 0 };
-({ color: nativeDefault.colors.TEXT_MUTED });
-let closure_9 = createStyles(obj);
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearButton(onPress) {
-  let first;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(8);
-  onPress = onPress.onPress;
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { borderRadius: 20, padding: 8 };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl2.t.VkKicb);
-    cResult[1] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const rect = { top: 8, bottom: 8, right: 8 };
-    cResult[2] = rect;
-    tmp8 = rect;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.closeIcon) {
-    const obj3 = { source: AssetRegistryDefault, style: tmp4.closeIcon, size: native.Icon.Sizes.MEDIUM };
-    const Icon = tmp(1199).Icon;
-    const tmp12 = metroImportDefault(Icon, obj3);
-    cResult[3] = tmp4.closeIcon;
-    cResult[4] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] === onPress) {
-    let tmp13;
-    if (cResult[6] === tmp9) {
-      tmp13 = cResult[7];
-    }
-    return tmp13;
-  }
-  const tmp14 = metroImportDefault(Pressables.PressableOpacity, { style: first, accessibilityRole: "button", accessibilityLabel: tmp6, onPress, hitSlop: tmp8, children: tmp9 });
-  cResult[5] = onPress;
-  cResult[6] = tmp9;
-  cResult[7] = tmp14;
-  tmp13 = tmp14;
-}) : (function ClearButton(onPress) {
+function ClearButton(onPress) {
   let Icon;
   let intl;
   let obj2;
@@ -104,7 +38,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClearB
   obj2 = { source: AssetRegistryDefault, style: tmp.closeIcon, size: native.Icon.Sizes.MEDIUM };
   Icon = native.Icon;
   return metroImportDefault(PressableOpacity, obj);
-});
+}
+({ TouchableWithoutFeedback: closure_4, View: hasOwnProperty, TouchableOpacity: metroRequire } = react_native);
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, onPress: { flexDirection: "row" }, input: obj3, error: obj4, closeIcon: obj5, placeholder: { color: nativeDefault.colors.TEXT_MUTED } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, height: 48, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.xs, paddingRight: 6, paddingLeft: 12, flexDirection: "row", alignItems: "center" };
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj4 = { borderColor: nativeDefault.unsafe_rawColors.RED_400 };
+obj5 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginLeft: 8, flexShrink: 0 };
+({ color: nativeDefault.colors.TEXT_MUTED });
+let closure_9 = createStyles(obj);
 let result = size.fileFinishedImporting("design/void/Form/native/FreeFormTextInput.tsx");
 
 export default (editable) => {
@@ -232,7 +177,7 @@ export default (editable) => {
   }
   items1 = [result, , , ];
   let str3 = "auto";
-  const TextInput = tmp7(1199).TextInput;
+  const TextInput = tmp7(1188).TextInput;
   if (null != onPress) {
     str3 = "none";
   }
@@ -284,7 +229,7 @@ export default (editable) => {
           return tmpResult;
         }
     };
-    tmp15Result = tmp15(closure_10, obj5);
+    tmp15Result = tmp15(ClearButton, obj5);
   }
   items1[3] = tmp15Result;
   return metroImportDefault(tmp16, obj);

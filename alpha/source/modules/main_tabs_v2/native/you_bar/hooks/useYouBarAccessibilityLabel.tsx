@@ -1,218 +1,43 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18386
+// Function ID: 18387
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6701, 4857, 4937, 5750, 4947, 6557, 5668, 1084, 558, 576, 5059, 4833, 10706, 8694, 10704, 10705, 10712, 1125, 10716, 504, 2]
+// Dependencies: [6708, 4858, 4941, 5756, 4951, 6564, 5674, 1072, 5063, 4834, 10729, 8728, 504, 10727, 10728, 10735, 1114, 5757, 10739, 2]
+// Exports: useYouBarAccessibilityLabel
 
-// Module 18327 (useYouBarAccessibilityLabel)
-import UserUtils from "UserUtils" /* 5059 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10704 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10705 */;
-import isGameActivityDefault from "isGameActivity" /* 10712 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10716 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18386 (useYouBarAccessibilityLabel)
+import Constants from "Constants" /* 1072 */;
+import UserUtils from "UserUtils" /* 5063 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10727 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 10728 */;
+import isGameActivityDefault from "isGameActivity" /* 10735 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10739 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, flag, obj1, obj8, obj9, str, str2, tmp10, tmp11, tmp12, tmp17, tmp19, tmp2, tmp22, tmp4, tmp5, tmp8, type;
+let _require, dependencyMap, type;
 
-let c10;
-let unpackModuleId;
-({ ActivityTypes: c10, StatusTypes: unpackModuleId } = Constants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarAccessibilityLabel(id) {
-  let first;
-  let gameMentionsAsPlainText;
-  let name;
-  const tmp = name;
-  let obj = name(gameMentionsAsPlainText[9]);
-  const cResult = obj.c(6);
-  let obj2 = id(gameMentionsAsPlainText[10]);
-  name = obj2.useName(id);
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  const CustomStatusSetting = tmp(tmp2[11]).CustomStatusSetting;
-  const setting = CustomStatusSetting.useSetting();
-  let text;
-  if (setting != null) {
-    text = setting.text;
-  }
-  let tmp9 = null;
-  const useGameMentionsAsPlainText = tmp(tmp2[12]).useGameMentionsAsPlainText;
-  tmp(gameMentionsAsPlainText[12]);
-  if ("" !== text) {
-    tmp9 = text;
-  }
-  gameMentionsAsPlainText = useGameMentionsAsPlainText(tmp9);
-  let primaryGuild;
-  const getUserPrimaryGuild = tmp(tmp2[13]).getUserPrimaryGuild;
-  tmp(gameMentionsAsPlainText[13]);
-  if (id != null) {
-    primaryGuild = id.primaryGuild;
-  }
-  const userPrimaryGuild = getUserPrimaryGuild(primaryGuild);
-  let tag;
-  if (userPrimaryGuild != null) {
-    tag = userPrimaryGuild.tag;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SelfPresenceStore, , , , , , ];
-    items[1] = tag;
-    items[2] = RelationshipStore;
-    items[3] = ChannelStore;
-    items[4] = PermissionStore;
-    items[5] = VoiceStateStore;
-    items[6] = PresenceStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === gameMentionsAsPlainText) {
-    if (cResult[2] === tag) {
-      if (cResult[3] === name) {
-        let tmp23;
-        if (cResult[4] === id) {
-          tmp23 = cResult[5];
-        }
-        const tmpResult4 = tmp(gameMentionsAsPlainText[19]);
-        return tmpResult4.useStateFromStores(first, tmp23);
-      }
-    }
-  }
-  class A {
-    constructor() {
-      if (null != closure_0) {
-        tmp2 = closure_8;
-        status = closure_8.getStatus();
-        tmp4 = closure_0;
-        tmp5 = closure_2;
-        obj = closure_0(closure_2[14]);
-        tmp7 = closure_3;
-        items = [, ];
-        items[0] = closure_3;
-        tmp8 = closure_7;
-        items[1] = closure_7;
-        tmp6 = id;
-        discoverableApplicationStream = obj.getDiscoverableApplicationStream(id, items);
-        obj2 = closure_0(closure_2[15]);
-        obj1 = { userId: null };
-        obj1.userId = id;
-        obj8 = { ChannelStore: null, PermissionStore: null, VoiceStateStore: null };
-        tmp10 = closure_4;
-        obj8.ChannelStore = closure_4;
-        tmp11 = closure_5;
-        obj8.PermissionStore = closure_5;
-        tmp12 = closure_9;
-        obj8.VoiceStateStore = closure_9;
-        voiceChannel = obj2.getVisibleUserVoiceActivity(obj1, obj8).voiceChannel;
-        text = null;
-        if (null != id) {
-          text = null;
-          if (status !== StatusTypes.OFFLINE) {
-            text = null;
-            if (status !== StatusTypes.INVISIBLE) {
-              tmp23 = closure_6;
-              activities = closure_6.getActivities(tmp6);
-              if (null != discoverableApplicationStream) {
-                name = undefined;
-                if (activities != null) {
-                  tmp19 = closure_1;
-                  found = activities.find(closure_1(tmp5[16]));
-                  if (found != null) {
-                    name = found.name;
-                  }
-                }
-                if (null != name) {
-                  str = "";
-                  if ("" !== name) {
-                    intl4 = tmp4(tmp5[17]).intl;
-                    obj9 = { name: null };
-                    obj9.name = name;
-                    formatToPlainStringResult = intl4.formatToPlainString(tmp4(tmp5[17]).t["0wJXSh"], obj9);
-                  }
-                  text = formatToPlainStringResult;
-                }
-                intl3 = tmp4(tmp5[17]).intl;
-                formatToPlainStringResult = intl3.string(tmp4(tmp5[17]).t.eXan7B);
-              } else {
-                found1 = undefined;
-                if (activities != null) {
-                  found1 = activities.find(function() { /* body not rendered: F157045 */ });
-                }
-                if (null != found1) {
-                  tmp17 = closure_1;
-                  flag = true;
-                  text = closure_1(tmp5[18])(found1, true).text;
-                } else {
-                  text = null;
-                  if (null != voiceChannel) {
-                    if (!voiceChannel.isDM()) {
-                      if (!voiceChannel.isGroupDM()) {
-                        isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
-                        intl = tmp4(tmp5[17]).intl;
-                        string = intl.string;
-                        t = tmp4(tmp5[17]).t;
-                        if (isGuildStageVoiceResult) {
-                          stringResult = string(t.QygGCN);
-                        } else {
-                          stringResult = string(t.msxteM);
-                        }
-                      }
-                      text = stringResult;
-                    }
-                    intl2 = tmp4(tmp5[17]).intl;
-                    stringResult = intl2.string(tmp4(tmp5[17]).t["9FaEzi"]);
-                  }
-                }
-              }
-            }
-          }
-        }
-        if (text == null) {
-          text = closure_2;
-        }
-        if (text == null) {
-          tmp4Result = tmp4(tmp5[10]);
-          text = tmp4Result.humanizeStatus(status);
-        }
-        items1 = [, , ];
-        items1[0] = tmp;
-        tmp22 = tag;
-        items1[1] = tag;
-        items1[2] = text;
-        found2 = items1.filter(function() { /* body not rendered: F157046 */ });
-        str2 = ", ";
-        return found2.join(", ");
-      } else {
-        return;
-      }
-    }
-  }
-  cResult[1] = gameMentionsAsPlainText;
-  cResult[2] = tag;
-  cResult[3] = name;
-  cResult[4] = id;
-  cResult[5] = A;
-  tmp23 = A;
-}) : (function useYouBarAccessibilityLabel(id) {
+const StatusTypes = Constants.StatusTypes;
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarAccessibilityLabel.tsx");
+
+export function useYouBarAccessibilityLabel(stateFromStores) {
   let closure_0;
   let closure_2;
+  let id;
   const tmp = dependencyMap;
-  let obj = id(5059);
-  _require = obj.useName(id);
+  let obj = id(5063);
+  _require = obj.useName(stateFromStores);
   id = undefined;
-  if (id != null) {
-    id = id.id;
+  if (stateFromStores != null) {
+    id = stateFromStores.id;
   }
+  let tmp3 = _require;
   const CustomStatusSetting = require("UserSettings").CustomStatusSetting;
   const setting = CustomStatusSetting.useSetting();
   let text;
@@ -220,17 +45,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
     text = setting.text;
   }
   let tmp7 = null;
-  const useGameMentionsAsPlainText = require("useGameMentionsAsPlainText").useGameMentionsAsPlainText;
-  require("useGameMentionsAsPlainText");
+  const useGameMentionsAsPlainText = tmp3(10729).useGameMentionsAsPlainText;
+  tmp3(10729);
   if ("" !== text) {
     tmp7 = text;
   }
   dependencyMap = useGameMentionsAsPlainText(tmp7);
   let primaryGuild;
-  const getUserPrimaryGuild = require("GuildTagUtils").getUserPrimaryGuild;
-  require("GuildTagUtils");
-  if (id != null) {
-    primaryGuild = id.primaryGuild;
+  const getUserPrimaryGuild = tmp3(8728).getUserPrimaryGuild;
+  tmp3(8728);
+  if (stateFromStores != null) {
+    primaryGuild = stateFromStores.primaryGuild;
   }
   const userPrimaryGuild = getUserPrimaryGuild(primaryGuild);
   let tag;
@@ -238,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
     tag = userPrimaryGuild.tag;
   }
   let items = [SelfPresenceStore, tag, RelationshipStore, ChannelStore, PermissionStore, VoiceStateStore, PresenceStore];
-  const tmp3Result4 = require("get initialized");
+  const tmp3Result4 = tmp3(504);
   return tmp3Result4.useStateFromStores(items, () => {
     if (null != closure_0) {
       const status = SelfPresenceStore.getStatus();
@@ -253,9 +78,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
       const tmp6 = id;
       if (null != id) {
         text = null;
-        if (status !== unpackModuleId.OFFLINE) {
+        if (status !== StatusTypes.OFFLINE) {
           text = null;
-          if (status !== unpackModuleId.INVISIBLE) {
+          if (status !== StatusTypes.INVISIBLE) {
             const activities = PresenceStore.getActivities(tmp6);
             if (null != discoverableApplicationStream) {
               let name;
@@ -268,20 +93,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
               if (null != name) {
                 let formatToPlainStringResult;
                 if ("" !== name) {
-                  const intl4 = tmp4(1125).intl;
+                  const intl4 = tmp4(1114).intl;
                   const obj5 = { name };
-                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1125).t["0wJXSh"], obj5);
+                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1114).t["0wJXSh"], obj5);
                 }
                 text = formatToPlainStringResult;
               }
-              const intl3 = tmp4(1125).intl;
-              formatToPlainStringResult = intl3.string(tmp4(1125).t.eXan7B);
+              const intl3 = tmp4(1114).intl;
+              formatToPlainStringResult = intl3.string(tmp4(1114).t.eXan7B);
             } else {
               let found1;
               if (activities != null) {
                 found1 = activities.find((type) => {
                   type = type.type;
-                  return type !== constants.CUSTOM_STATUS && type !== constants.HANG_STATUS;
+                  const tmp3 = type !== closure_1_0(closure_1_2[17]).ActivityTypes.CUSTOM_STATUS && type !== closure_1_0(closure_1_2[17]).ActivityTypes.HANG_STATUS;
+                  return tmp3;
                 });
               }
               if (null != found1) {
@@ -293,9 +119,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
                     let stringResult;
                     if (!voiceChannel.isGroupDM()) {
                       const isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
-                      const intl = tmp4(1125).intl;
+                      const intl = tmp4(1114).intl;
                       const string = intl.string;
-                      const t = tmp4(1125).t;
+                      const t = tmp4(1114).t;
                       if (isGuildStageVoiceResult) {
                         stringResult = string(t.QygGCN);
                       } else {
@@ -304,8 +130,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
                     }
                     text = stringResult;
                   }
-                  const intl2 = tmp4(1125).intl;
-                  stringResult = intl2.string(tmp4(1125).t["9FaEzi"]);
+                  const intl2 = tmp4(1114).intl;
+                  stringResult = intl2.string(tmp4(1114).t["9FaEzi"]);
                 }
               }
             }
@@ -324,7 +150,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useYouBarA
       return found2.join(", ");
     }
   });
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarAccessibilityLabel.tsx");
-
-export const useYouBarAccessibilityLabel = tmp3;
+}

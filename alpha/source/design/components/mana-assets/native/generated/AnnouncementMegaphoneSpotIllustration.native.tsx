@@ -1,96 +1,30 @@
-// Module ID: 19765
-// Function ID: 19766
+// Module ID: 19828
+// Function ID: 19829
 // Name: AnnouncementMegaphoneSpotIllustration
-// Dependencies: [19, 21, 19766, 19767, 19768, 558, 576, 7055, 5707, 2]
+// Dependencies: [19, 21, 19829, 19830, 19831, 7063, 5712, 2]
+// Exports: AnnouncementMegaphoneSpotIllustration
 
-// Module 19765 (AnnouncementMegaphoneSpotIllustration)
+// Module 19828 (AnnouncementMegaphoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import react_native from "react-native" /* 7055 */;
-import _modDef19766 from "module_19766" /* 19766 */;
-import _modDef19767 from "module_19767" /* 19767 */;
-import _modDef19768 from "module_19768" /* 19768 */;
+import react_native from "react-native" /* 7063 */;
+import _modDef19829 from "module_19829" /* 19829 */;
+import _modDef19830 from "module_19830" /* 19830 */;
+import _modDef19831 from "module_19831" /* 19831 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19766 };
+let obj2 = { uri: _modDef19829 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19767 };
+let obj3 = { uri: _modDef19830 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19768 };
-({ uri: _modDef19768 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnnouncementMegaphoneSpotIllustration(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let height;
-  let resizeMode;
-  let scale;
-  let width;
-  obj = react2;
-  const cResult = obj.c(12);
-  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 1;
-  if (undefined !== scale) {
-    num = scale;
-  }
-  if (cResult[0] === height) {
-    if (cResult[1] === num) {
-      let tmp4;
-      let tmp7;
-      let tmp10;
-      if (cResult[2] === width) {
-        tmp4 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = react_native;
-        const assetSource = tmpResult.getAssetSource(obj);
-        cResult[4] = assetSource;
-        tmp7 = assetSource;
-      } else {
-        tmp7 = cResult[4];
-      }
-      if (cResult[5] !== resizeMode) {
-        const tmpResult3 = react_native;
-        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
-        cResult[5] = resizeMode;
-        cResult[6] = assetResizeMode;
-        tmp10 = assetResizeMode;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === accessibilityLabel) {
-        if (cResult[8] === accessible) {
-          if (cResult[9] === tmp4) {
-            let tmp12;
-            if (cResult[10] === tmp10) {
-              tmp12 = cResult[11];
-            }
-            return tmp12;
-          }
-        }
-      }
-      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
-      cResult[7] = accessibilityLabel;
-      cResult[8] = accessible;
-      cResult[9] = tmp4;
-      cResult[10] = tmp10;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-  }
-  const tmpResult4 = react_native;
-  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 288, intrinsicHeight: 192 });
-  cResult[0] = height;
-  cResult[1] = num;
-  cResult[2] = width;
-  cResult[3] = assetSizeStyle;
-  tmp4 = assetSizeStyle;
-}) : (function AnnouncementMegaphoneSpotIllustration(width) {
+obj[3] = { uri: _modDef19831 };
+({ uri: _modDef19831 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AnnouncementMegaphoneSpotIllustration.native.tsx");
+
+export function AnnouncementMegaphoneSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -110,12 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Announceme
     return obj.getAssetSizeStyle(size);
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
-  height(num[8]);
-  obj2 = width(num[7]);
-  obj3 = width(num[7]);
+  height(num[6]);
+  obj2 = width(num[5]);
+  obj3 = width(num[5]);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AnnouncementMegaphoneSpotIllustration.native.tsx");
-
-export const AnnouncementMegaphoneSpotIllustration = tmp2;
+}

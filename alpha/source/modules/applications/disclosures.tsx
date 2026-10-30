@@ -1,14 +1,14 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9725
+// Function ID: 9726
 // Name: disclosures
-// Dependencies: [5, 1084, 1294, 9700, 1125, 2]
+// Dependencies: [5, 1072, 1283, 9726, 1114, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9699 (disclosures)
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import applications from "applications" /* 9700 */;
+// Module 9725 (disclosures)
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import applications from "applications" /* 9726 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ obj = function _ackDisclosures() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ obj = function _ackDisclosures() {
             return { value, done: true };
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -102,10 +102,10 @@ export function ackDisclosures() {
 }
 export function getTextForDisclosure(disclosure) {
   if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
-    const intl2 = tmp(1125).intl;
+    const intl2 = tmp(1114).intl;
     return intl2.string(intl3.t["6wPmjo"]);
   } else if (applications.ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === disclosure) {
-    const intl = tmp(1125).intl;
+    const intl = tmp(1114).intl;
     return intl.string(intl3.t["/uOMKZ"]);
   } else {
     return null;

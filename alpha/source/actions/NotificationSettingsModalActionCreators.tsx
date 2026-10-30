@@ -1,20 +1,20 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7282
+// Function ID: 7283
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6762, 1084, 4950, 1094, 584, 7270, 7272, 11, 5012, 1125, 1402, 1294, 2]
+// Dependencies: [5, 6769, 1072, 4954, 1082, 572, 7277, 7279, 11, 5016, 1114, 1397, 1283, 2]
 
-// Module 7275 (NotificationSettingsModalActionCreators)
+// Module 7282 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import intl2 from "intl" /* 1125 */;
-import NotificationConstants from "NotificationConstants" /* 4950 */;
-import shared from "shared" /* 5012 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7270 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7272 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import intl2 from "intl" /* 1114 */;
+import NotificationConstants from "NotificationConstants" /* 4954 */;
+import shared from "shared" /* 5016 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7277 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7279 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,8 +96,8 @@ let obj = {
       message = accessibilityAnnouncement.message;
     }
     if (message == null) {
-      const intl = tmp(1125).intl;
-      message = intl.string(tmp(1125).t.MlIsJ8);
+      const intl = tmp(1114).intl;
+      message = intl.string(tmp(1114).t.MlIsJ8);
     }
     let assertiveness;
     if (accessibilityAnnouncement != null) {
@@ -184,7 +184,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c3 = 3;

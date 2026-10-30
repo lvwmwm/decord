@@ -1,36 +1,47 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16832
+// Function ID: 16833
 // Name: PremiumSetting
-// Dependencies: [19, 1389, 2056, 1084, 21, 15202, 2051, 1125, 558, 576, 7587, 11132, 16779, 11302, 9487, 16783, 2]
+// Dependencies: [19, 1384, 2053, 1072, 21, 2048, 1114, 7595, 11337, 16833, 11505, 9506, 16837, 2]
 
-// Module 16778 (PremiumSetting)
+// Module 16832 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import PremiumUtils from "PremiumUtils" /* 2051 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7587 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
-import MobileNitroManageSubscriptionsSettingsExperiment from "MobileNitroManageSubscriptionsSettingsExperiment" /* 15202 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16779 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import PremiumUtils from "PremiumUtils" /* 2048 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7595 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16833 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import SubscriptionStore from "SubscriptionStore" /* 2056 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import UserStore from "UserStore" /* 1384 */;
+import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavigateToPaymentSetting() {
-  let first;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
+let obj = {
+  useTitle: function getPremiumSettingTitle() {
+    let stringResult;
+    const hasPremiumSubscriptionToDisplay = PremiumUtils.hasPremiumSubscriptionToDisplay;
+    PremiumUtils;
+    const currentUser = UserStore.getCurrentUser();
+    const result = hasPremiumSubscriptionToDisplay(currentUser, SubscriptionStore.getPremiumTypeSubscription());
+    const intl = intl2.intl;
+    const string = intl.string;
+    const t = intl2.t;
+    if (result) {
+      stringResult = string(t["4gwVVn"]);
+    } else {
+      stringResult = string(t["8x0jKT"]);
+    }
+    return stringResult;
+  },
+  parent: null,
+  IconComponent: NitroWheelIcon.NitroWheelIcon,
+  usePreNavigationAction: function useCanNavigateToPaymentSetting() {
+    return react.useCallback(() => {
       const obj = BlockedPaymentsCountryExperiment;
       const isPaymentsBlocked = obj.getIsPaymentsBlocked();
       let flag = !isPaymentsBlocked;
@@ -40,71 +51,11 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanNavi
         flag = false;
       }
       return flag;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function useCanNavigateToPaymentSetting() {
-  return react.useCallback(() => {
-    const obj = BlockedPaymentsCountryExperiment;
-    const isPaymentsBlocked = obj.getIsPaymentsBlocked();
-    let flag = !isPaymentsBlocked;
-    const tmp = dependencyMap;
-    if (isPaymentsBlocked) {
-      require("openBlockedPaymentsCountryActionSheet")();
-      flag = false;
-    }
-    return flag;
-  }, []);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumSettingTrailing() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = jsx(PremiumTabBadgeDefault, {});
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function usePremiumSettingTrailing() {
-  return jsx(PremiumTabBadgeDefault, {});
-});
-let obj = {
-  useTitle: function getPremiumSettingTitle() {
-    let stringResult1;
-    const obj = MobileNitroManageSubscriptionsSettingsExperiment;
-    const mobileNitroManageSubscriptionsSettingsExperiment = obj.getMobileNitroManageSubscriptionsSettingsExperiment({ location: "PremiumSetting" });
-    const hasPremiumSubscriptionToDisplay = PremiumUtils.hasPremiumSubscriptionToDisplay;
-    PremiumUtils;
-    const currentUser = UserStore.getCurrentUser();
-    const result = hasPremiumSubscriptionToDisplay(currentUser, SubscriptionStore.getPremiumTypeSubscription());
-    const intl = intl2.intl;
-    const string = intl.string;
-    const t = intl2.t;
-    if (result) {
-      let stringResult;
-      if (mobileNitroManageSubscriptionsSettingsExperiment) {
-        stringResult = string(t["4gwVVn"]);
-      } else {
-        stringResult = string(t["8jmdON"]);
-      }
-      stringResult1 = stringResult;
-    } else {
-      stringResult1 = string(t["8x0jKT"]);
-    }
-    return stringResult1;
+    }, []);
   },
-  parent: null,
-  IconComponent: NitroWheelIcon.NitroWheelIcon,
-  usePreNavigationAction: tmp2,
-  useTrailing: tmp3,
+  useTrailing: function usePremiumSettingTrailing() {
+    return jsx(PremiumTabBadgeDefault, {});
+  },
   screen: {
     route: UserSettingsSections.PREMIUM,
     getComponent() {

@@ -1,519 +1,151 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11677
+// Function ID: 11678
 // Name: CallBarAction
-// Dependencies: [109, 19, 17, 10956, 21, 5002, 587, 5005, 558, 576, 11477, 11478, 5707, 6968, 5271, 2]
+// Dependencies: [19, 17, 10981, 21, 5006, 575, 5009, 11678, 6974, 11679, 5712, 5619, 2]
+// Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 11476 (CallBarAction)
+// Module 11677 (CallBarAction)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Pressables from "Pressables" /* 6968 */;
-import ChannelCallStore from "ChannelCallStore" /* 10956 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11478 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import ChannelCallStore from "ChannelCallStore" /* 10981 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11679 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 5002 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ColorUtils from "ColorUtils" /* 5006 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const CircleWithCutoutUtilsDefault = CircleWithCutoutUtils;
 
-let c10;
+let metroImportDefault;
+let metroRequire;
 let obj2;
 let obj3;
 let rect;
-let tmp;
-let unpackModuleId;
-const Text_Text = tmp(5271);
-let closure_3 = ["isActive", "disableTint", "showBadge", "isSmallSize", "backgroundColor", "tintColor"];
-let closure_4 = ["isSmallSize"];
-let closure_5 = ["notifications", "isMentioned"];
+class ActionButton {
+  constructor(appearsDisabled) {
+    let IconComponent;
+    let accessibilityLabel;
+    let accessibilityState;
+    let backgroundColor;
+    let children;
+    let cloneElementResult;
+    let imageStyle;
+    let items1;
+    let items2;
+    let items3;
+    let lottieComponent;
+    let lottieComponentColor;
+    let obj2;
+    let showBadge;
+    let source;
+    let tmp11Result;
+    let tmp11Result2;
+    let tmp12;
+    let flag = appearsDisabled.appearsDisabled;
+    if (flag === undefined) {
+      flag = false;
+    }
+    ({ backgroundColor, imageStyle, onPress: require, showBadge, accessibilityLabel, accessibilityState, source } = appearsDisabled);
+    if (showBadge === undefined) {
+      showBadge = false;
+    }
+    let flag2 = appearsDisabled.isSmallSize;
+    if (flag2 === undefined) {
+      flag2 = false;
+    }
+    ({ lottieComponent, IconComponent } = appearsDisabled);
+    ({ children, lottieComponentColor } = appearsDisabled);
+    const tmp = closure_12();
+    let num = 12;
+    if (flag2) {
+      num = 12;
+      if (tmp4 < closure_11) {
+        num = 6;
+      }
+    }
+    const tmp6 = flag2 ? frozen : closure_9;
+    const result = 2 * tmp6.buttonRadius;
+    const result1 = 2 * tmp6.badgeRadius;
+    const sum = tmp6.badgeRadius + tmp6.cutoutInset;
+    const items = [tmp.buttonContainer, { width: result, height: result, borderRadius: tmp6.buttonRadius }, ];
+    let num2 = 1;
+    const obj = {
+      accessibilityLabel,
+      accessibilityRole: "button",
+      accessibilityState,
+      onPress() {
+        resetFocusTimer();
+        require();
+      },
+      disabled: false,
+      style: { width: result, height: result, borderRadius: tmp6.buttonRadius, marginHorizontal: num },
+      children: tmp12(View, obj2)
+    };
+    const PressableOpacity = Pressables.PressableOpacity;
+    tmp12 = closure_7;
+    if (flag) {
+      num2 = 0.25;
+    }
+    obj2 = { style: items, children: items1 };
+    items[2] = { opacity: num2 };
+    const obj3 = { circleRadius: tmp6.buttonRadius, cutoutRadius: sum, enableCutout: showBadge, cutoutPositionInDegrees: 45, circleFillColor: backgroundColor };
+    const tmp2Result = CircleWithCutoutUtilsDefault;
+    if (null == backgroundColor) {
+      backgroundColor = closure_8;
+    }
+    items1 = [closure_6(tmp2Result, obj3), , , ];
+    const obj4 = { style: items2, children: cloneElementResult };
+    items2 = [tmp.iconContainer, { width: result, height: result }];
+    if (null != lottieComponent) {
+      const obj5 = { color: lottieComponentColor };
+      cloneElementResult = react.cloneElement(lottieComponent, obj5);
+    } else if (null != IconComponent) {
+      const obj6 = { style: imageStyle };
+      cloneElementResult = tmp10(IconComponent, obj6);
+    } else {
+      const obj7 = { source, style: imageStyle };
+      cloneElementResult = tmp10(tmp2(5712), obj7);
+    }
+    items1[1] = closure_6(View, obj4);
+    let tmp10Result = null;
+    if (showBadge) {
+      const obj8 = { style: items3 };
+      items3 = [tmp.badge, ];
+      size = { width: result1, height: result1, borderRadius: tmp6.badgeRadius, top: tmp11Result.getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, 45), left: tmp11Result2.getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, 45) };
+      tmp11Result = CircleWithCutoutUtils;
+      items3[1] = size;
+      tmp11Result2 = CircleWithCutoutUtils;
+      tmp10Result = tmp10(tmp13, obj8);
+    }
+    items1[2] = tmp10Result;
+    items1[3] = children;
+    return closure_6(PressableOpacity, obj);
+  }
+}
 const View = react_native.View;
 const resetFocusTimer = ChannelCallStore.resetFocusTimer;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
-let closure_12 = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.24);
-let c13 = 45;
-let closure_14 = Object.freeze({ buttonRadius: 28, badgeRadius: 6, cutoutInset: 3 });
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
+let closure_8 = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.WHITE, 0.24);
+let closure_9 = Object.freeze({ buttonRadius: 28, badgeRadius: 6, cutoutInset: 3 });
 const frozen = Object.freeze({ buttonRadius: 24, badgeRadius: 4, cutoutInset: 2 });
-let closure_16 = 24 + 2 * frozen.buttonRadius * 5 + 96;
+let closure_11 = 24 + 2 * frozen.buttonRadius * 5 + 96;
 let createStyles = createStyles_mod;
 let obj = { buttonContainer: { position: "absolute" }, iconContainer: { position: "absolute", justifyContent: "center", alignItems: "center" }, badge: { backgroundColor: "white", position: "absolute" }, notificationArea: rect, notificationText: { lineHeight: 16 }, notificationAreaMentioned: obj2, notificationAreaUnread: obj3 };
 rect = { position: "absolute", top: -4, right: -4, height: 24, minWidth: 24, paddingHorizontal: 4, borderRadius: 12, borderWidth: 4, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_760, alignItems: "center", justifyContent: "center" };
 createStyles = createStyles.createStyles;
 obj2 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
 obj3 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
-let closure_17 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActionButton(arg0) {
-  let IconComponent;
-  let accessibilityLabel;
-  let accessibilityState;
-  let appearsDisabled;
-  let backgroundColor;
-  let children;
-  let imageStyle;
-  let isSmallSize;
-  let items;
-  let items1;
-  let lottieComponent;
-  let lottieComponentColor;
-  let onPress;
-  let showBadge;
-  let source;
-  let tmp15;
-  let tmpResult;
-  let tmpResult2;
-  const obj = onPress(576);
-  const cResult = obj.c(52);
-  ({ appearsDisabled, backgroundColor, imageStyle, onPress } = arg0);
-  ({ accessibilityLabel, accessibilityState, source, showBadge, isSmallSize, children, lottieComponent, lottieComponentColor, IconComponent } = arg0);
-  const tmp4 = undefined !== appearsDisabled && appearsDisabled;
-  const tmp7 = closure_17();
-  let num = 12;
-  if (undefined !== isSmallSize && isSmallSize) {
-    num = 12;
-    if (tmp9 < closure_16) {
-      num = 6;
-    }
-  }
-  const tmp11 = undefined !== isSmallSize && isSmallSize ? frozen : closure_14;
-  const result = 2 * tmp11.buttonRadius;
-  const result1 = 2 * tmp11.badgeRadius;
-  const sum = tmp11.badgeRadius + tmp11.cutoutInset;
-  if (cResult[0] !== onPress) {
-    const fn = function o() {
-      resetFocusTimer();
-      onPress();
-    };
-    cResult[0] = onPress;
-    cResult[1] = fn;
-    tmp15 = fn;
-  } else {
-    tmp15 = cResult[1];
-  }
-  if (cResult[2] === tmp11.buttonRadius) {
-    if (cResult[3] === result) {
-      let tmp16;
-      if (cResult[4] === num) {
-        tmp16 = cResult[5];
-      }
-      if (cResult[6] === tmp11.buttonRadius) {
-        let tmp17;
-        let tmp18;
-        if (cResult[7] === result) {
-          tmp17 = cResult[8];
-        }
-        let num7 = 1;
-        if (tmp4) {
-          num7 = 0.25;
-        }
-        if (cResult[9] !== num7) {
-          const obj2 = { opacity: num7 };
-          cResult[9] = num7;
-          cResult[10] = obj2;
-          tmp18 = obj2;
-        } else {
-          tmp18 = cResult[10];
-        }
-        if (cResult[11] === tmp7.buttonContainer) {
-          if (cResult[12] === tmp17) {
-            let tmp19;
-            if (cResult[13] === tmp18) {
-              tmp19 = cResult[14];
-            }
-            if (null == backgroundColor) {
-              backgroundColor = closure_12;
-            }
-            if (cResult[15] === tmp11.buttonRadius) {
-              if (cResult[16] === sum) {
-                if (cResult[17] === (undefined !== showBadge && showBadge)) {
-                  let tmp21;
-                  let tmp25;
-                  if (cResult[18] === backgroundColor) {
-                    tmp21 = cResult[19];
-                  }
-                  if (cResult[20] !== result) {
-                    size = { width: result, height: result };
-                    cResult[20] = result;
-                    cResult[21] = size;
-                    tmp25 = size;
-                  } else {
-                    tmp25 = cResult[21];
-                  }
-                  if (cResult[22] === tmp7.iconContainer) {
-                    let tmp26;
-                    let cloneElementResult;
-                    if (cResult[23] === tmp25) {
-                      tmp26 = cResult[24];
-                    }
-                    if (cResult[25] === IconComponent) {
-                      if (cResult[26] === imageStyle) {
-                        if (cResult[27] === lottieComponent) {
-                          if (cResult[28] === lottieComponentColor) {
-                            let tmp27;
-                            if (cResult[29] === source) {
-                              tmp27 = cResult[30];
-                            }
-                            if (cResult[31] === tmp26) {
-                              let tmp32;
-                              if (cResult[32] === tmp27) {
-                                tmp32 = cResult[33];
-                              }
-                              if (cResult[34] === tmp11.badgeRadius) {
-                                if (cResult[35] === tmp11.buttonRadius) {
-                                  if (cResult[36] === result1) {
-                                    if (cResult[37] === (undefined !== showBadge && showBadge)) {
-                                      let tmp36;
-                                      if (cResult[38] === tmp7.badge) {
-                                        tmp36 = cResult[39];
-                                      }
-                                      if (cResult[40] === children) {
-                                        if (cResult[41] === tmp21) {
-                                          if (cResult[42] === tmp32) {
-                                            if (cResult[43] === tmp36) {
-                                              let tmp41;
-                                              if (cResult[44] === tmp19) {
-                                                tmp41 = cResult[45];
-                                              }
-                                              if (cResult[46] === accessibilityLabel) {
-                                                if (cResult[47] === accessibilityState) {
-                                                  if (cResult[48] === tmp41) {
-                                                    if (cResult[49] === tmp15) {
-                                                      let tmp45;
-                                                      if (cResult[50] === tmp16) {
-                                                        tmp45 = cResult[51];
-                                                      }
-                                                      return tmp45;
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                              const obj3 = { accessibilityLabel, accessibilityRole: "button", accessibilityState, onPress: tmp15, disabled: false, style: tmp16, children: tmp41 };
-                                              const tmp47 = closure_10(onPress(6968).PressableOpacity, obj3);
-                                              cResult[46] = accessibilityLabel;
-                                              cResult[47] = accessibilityState;
-                                              cResult[48] = tmp41;
-                                              cResult[49] = tmp15;
-                                              cResult[50] = tmp16;
-                                              cResult[51] = tmp47;
-                                              tmp45 = tmp47;
-                                            }
-                                          }
-                                        }
-                                      }
-                                      const obj4 = { style: tmp19, children: items };
-                                      items = [tmp21, tmp32, tmp36, children];
-                                      const tmp44 = closure_11(View, obj4);
-                                      cResult[40] = children;
-                                      cResult[41] = tmp21;
-                                      cResult[42] = tmp32;
-                                      cResult[43] = tmp36;
-                                      cResult[44] = tmp19;
-                                      cResult[45] = tmp44;
-                                      tmp41 = tmp44;
-                                    }
-                                  }
-                                }
-                              }
-                              let tmp37 = null;
-                              if (undefined !== showBadge && showBadge) {
-                                const obj5 = { style: items1 };
-                                items1 = [tmp7.badge, ];
-                                const size1 = { width: result1, height: result1, borderRadius: tmp11.badgeRadius, top: tmpResult.getBadgeTop(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees), left: tmpResult2.getBadgeLeft(tmp11.badgeRadius, tmp11.buttonRadius, cutoutPositionInDegrees) };
-                                tmpResult = onPress(11478);
-                                items1[1] = size1;
-                                tmpResult2 = onPress(11478);
-                                tmp37 = closure_10(View, obj5);
-                              }
-                              cResult[34] = tmp11.badgeRadius;
-                              cResult[35] = tmp11.buttonRadius;
-                              cResult[36] = result1;
-                              cResult[37] = undefined !== showBadge && showBadge;
-                              cResult[38] = tmp7.badge;
-                              cResult[39] = tmp37;
-                              tmp36 = tmp37;
-                            }
-                            const obj6 = { style: tmp26, children: tmp27 };
-                            const tmp35 = closure_10(View, obj6);
-                            cResult[31] = tmp26;
-                            cResult[32] = tmp27;
-                            cResult[33] = tmp35;
-                            tmp32 = tmp35;
-                          }
-                        }
-                      }
-                    }
-                    if (null != lottieComponent) {
-                      const obj7 = { color: lottieComponentColor };
-                      cloneElementResult = react.cloneElement(lottieComponent, obj7);
-                    } else if (null != IconComponent) {
-                      const obj8 = { style: imageStyle };
-                      cloneElementResult = closure_10(IconComponent, obj8);
-                    } else {
-                      const obj9 = { source, style: imageStyle };
-                      cloneElementResult = closure_10(tmp8(5707), obj9);
-                    }
-                    cResult[25] = IconComponent;
-                    cResult[26] = imageStyle;
-                    cResult[27] = lottieComponent;
-                    cResult[28] = lottieComponentColor;
-                    cResult[29] = source;
-                    cResult[30] = cloneElementResult;
-                    tmp27 = cloneElementResult;
-                  }
-                  const items2 = [tmp7.iconContainer, tmp25];
-                  cResult[22] = tmp7.iconContainer;
-                  cResult[23] = tmp25;
-                  cResult[24] = items2;
-                  tmp26 = items2;
-                }
-              }
-            }
-            const obj10 = { circleRadius: tmp11.buttonRadius, cutoutRadius: sum, enableCutout: undefined !== showBadge && showBadge, cutoutPositionInDegrees, circleFillColor: backgroundColor };
-            const tmp24 = closure_10(CircleWithCutoutUtilsDefault, obj10);
-            cResult[15] = tmp11.buttonRadius;
-            cResult[16] = sum;
-            cResult[17] = undefined !== showBadge && showBadge;
-            cResult[18] = backgroundColor;
-            cResult[19] = tmp24;
-            tmp21 = tmp24;
-          }
-        }
-        const items3 = [tmp7.buttonContainer, tmp17, tmp18];
-        cResult[11] = tmp7.buttonContainer;
-        cResult[12] = tmp17;
-        cResult[13] = tmp18;
-        cResult[14] = items3;
-        tmp19 = items3;
-      }
-      const size2 = { width: result, height: result, borderRadius: tmp11.buttonRadius };
-      cResult[6] = tmp11.buttonRadius;
-      cResult[7] = result;
-      cResult[8] = size2;
-      tmp17 = size2;
-    }
-  }
-  const size3 = { width: result, height: result, borderRadius: tmp11.buttonRadius, marginHorizontal: num };
-  cResult[2] = tmp11.buttonRadius;
-  cResult[3] = result;
-  cResult[4] = num;
-  cResult[5] = size3;
-  tmp16 = size3;
-}) : (function ActionButton(appearsDisabled) {
-  let IconComponent;
-  let accessibilityLabel;
-  let accessibilityState;
-  let backgroundColor;
-  let children;
-  let cloneElementResult;
-  let imageStyle;
-  let items1;
-  let items2;
-  let items3;
-  let lottieComponent;
-  let lottieComponentColor;
-  let obj2;
-  let showBadge;
-  let source;
-  let tmp11Result;
-  let tmp11Result2;
-  let tmp12;
-  let flag = appearsDisabled.appearsDisabled;
-  if (flag === undefined) {
-    flag = false;
-  }
-  ({ backgroundColor, imageStyle, onPress: require, showBadge, accessibilityLabel, accessibilityState, source } = appearsDisabled);
-  if (showBadge === undefined) {
-    showBadge = false;
-  }
-  let flag2 = appearsDisabled.isSmallSize;
-  if (flag2 === undefined) {
-    flag2 = false;
-  }
-  ({ lottieComponent, IconComponent } = appearsDisabled);
-  ({ children, lottieComponentColor } = appearsDisabled);
-  const tmp = closure_17();
-  let num = 12;
-  if (flag2) {
-    num = 12;
-    if (tmp4 < closure_16) {
-      num = 6;
-    }
-  }
-  const tmp6 = flag2 ? frozen : closure_14;
-  const result = 2 * tmp6.buttonRadius;
-  const result1 = 2 * tmp6.badgeRadius;
-  const sum = tmp6.badgeRadius + tmp6.cutoutInset;
-  const items = [tmp.buttonContainer, { width: result, height: result, borderRadius: tmp6.buttonRadius }, ];
-  let num2 = 1;
-  const obj = {
-    accessibilityLabel,
-    accessibilityRole: "button",
-    accessibilityState,
-    onPress() {
-      resetFocusTimer();
-      require();
-    },
-    disabled: false,
-    style: { width: result, height: result, borderRadius: tmp6.buttonRadius, marginHorizontal: num },
-    children: tmp12(View, obj2)
-  };
-  const PressableOpacity = Pressables.PressableOpacity;
-  tmp12 = closure_11;
-  if (flag) {
-    num2 = 0.25;
-  }
-  obj2 = { style: items, children: items1 };
-  items[2] = { opacity: num2 };
-  const obj3 = { circleRadius: tmp6.buttonRadius, cutoutRadius: sum, enableCutout: showBadge, cutoutPositionInDegrees, circleFillColor: backgroundColor };
-  const tmp2Result = CircleWithCutoutUtilsDefault;
-  if (null == backgroundColor) {
-    backgroundColor = closure_12;
-  }
-  items1 = [closure_10(tmp2Result, obj3), , , ];
-  const obj4 = { style: items2, children: cloneElementResult };
-  items2 = [tmp.iconContainer, { width: result, height: result }];
-  if (null != lottieComponent) {
-    const obj5 = { color: lottieComponentColor };
-    cloneElementResult = react.cloneElement(lottieComponent, obj5);
-  } else if (null != IconComponent) {
-    const obj6 = { style: imageStyle };
-    cloneElementResult = tmp10(IconComponent, obj6);
-  } else {
-    const obj7 = { source, style: imageStyle };
-    cloneElementResult = tmp10(tmp2(5707), obj7);
-  }
-  items1[1] = closure_10(View, obj4);
-  let tmp10Result = null;
-  if (showBadge) {
-    const obj8 = { style: items3 };
-    items3 = [tmp.badge, ];
-    size = { width: result1, height: result1, borderRadius: tmp6.badgeRadius, top: tmp11Result.getBadgeTop(tmp6.badgeRadius, tmp6.buttonRadius, cutoutPositionInDegrees), left: tmp11Result2.getBadgeLeft(tmp6.badgeRadius, tmp6.buttonRadius, cutoutPositionInDegrees) };
-    tmp11Result = CircleWithCutoutUtils;
-    items3[1] = size;
-    tmp11Result2 = CircleWithCutoutUtils;
-    tmp10Result = tmp10(tmp13, obj8);
-  }
-  items1[2] = tmp10Result;
-  items1[3] = children;
-  return closure_10(PressableOpacity, obj);
-});
-let closure_18 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggledActionButton(arg0) {
-  let backgroundColor;
-  let disableTint;
-  let isActive;
-  let isSmallSize;
-  let showBadge;
-  let tintColor;
-  let tmp18;
-  let tmp20;
-  let tmp21;
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(20);
-  if (cResult[0] !== arg0) {
-    ({ isActive, disableTint, showBadge, isSmallSize, backgroundColor, tintColor } = arg0);
-    const tmp12 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = backgroundColor;
-    cResult[2] = isActive;
-    cResult[3] = tmp12;
-    cResult[4] = disableTint;
-    cResult[5] = showBadge;
-    cResult[6] = isSmallSize;
-    cResult[7] = tintColor;
-    tmp9 = tintColor;
-    tmp8 = isSmallSize;
-    tmp7 = showBadge;
-    tmp6 = disableTint;
-    tmp5 = tmp12;
-    tmp4 = isActive;
-    tmp3 = backgroundColor;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-    tmp5 = cResult[3];
-    tmp6 = cResult[4];
-    tmp7 = cResult[5];
-    tmp8 = cResult[6];
-    tmp9 = cResult[7];
-  }
-  let WHITE = null;
-  const tmp13 = undefined !== tmp6 && tmp6;
-  if (tmp4) {
-    WHITE = nativeDefault.unsafe_rawColors.WHITE;
-  }
-  const unsafe_rawColors = nativeDefault.unsafe_rawColors;
-  if (!tmp13) {
-    tmp18 = tmp4 ? unsafe_rawColors.PRIMARY_900 : unsafe_rawColors.WHITE;
-  }
-  if (tmp3 == null) {
-    tmp3 = WHITE;
-  }
-  let tmp19 = tmp9;
-  if (tmp9 == null) {
-    tmp19 = tmp18;
-  }
-  if (cResult[8] !== tmp19) {
-    const obj2 = { tintColor: tmp19 };
-    cResult[8] = tmp19;
-    cResult[9] = obj2;
-    tmp20 = obj2;
-  } else {
-    tmp20 = cResult[9];
-  }
-  if (cResult[10] !== tmp4) {
-    const obj3 = { selected: tmp4 };
-    cResult[10] = tmp4;
-    cResult[11] = obj3;
-    tmp21 = obj3;
-  } else {
-    tmp21 = cResult[11];
-  }
-  if (tmp9 == null) {
-    tmp9 = tmp18;
-  }
-  if (cResult[12] === (undefined !== tmp8 && tmp8)) {
-    if (cResult[13] === tmp5) {
-      if (cResult[14] === (undefined !== tmp7 && tmp7)) {
-        if (cResult[15] === tmp3) {
-          if (cResult[16] === tmp20) {
-            if (cResult[17] === tmp21) {
-              let tmp22;
-              if (cResult[18] === tmp9) {
-                tmp22 = cResult[19];
-              }
-              return tmp22;
-            }
-          }
-        }
-      }
-    }
-  }
-  const obj4 = { backgroundColor: tmp3, imageStyle: tmp20, accessibilityState: tmp21, isSmallSize: undefined !== tmp8 && tmp8, showBadge: undefined !== tmp7 && tmp7, lottieComponentColor: tmp9 };
-  const merged = Object.assign(tmp5);
-  const tmp24 = authStore(closure_18, obj4);
-  cResult[12] = undefined !== tmp8 && tmp8;
-  cResult[13] = tmp5;
-  cResult[14] = undefined !== tmp7 && tmp7;
-  cResult[15] = tmp3;
-  cResult[16] = tmp20;
-  cResult[17] = tmp21;
-  cResult[18] = tmp9;
-  cResult[19] = tmp24;
-  tmp22 = tmp24;
-}) : (function ToggledActionButton(showBadge) {
+const authStore2 = createStyles(obj);
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/video_calls/native/components/CallBarAction.tsx");
+
+export const SMALL_ACTION_BUTTON_DIMENSIONS = frozen;
+export { ActionButton };
+export function ToggledActionButton(showBadge) {
   let backgroundColor;
   let disableTint;
   let isActive;
@@ -542,8 +174,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggledActio
   if (!disableTint) {
     tmp5 = isActive ? unsafe_rawColors.PRIMARY_900 : unsafe_rawColors.WHITE;
   }
-  const tmp6 = authStore;
-  const tmp7 = closure_18;
+  const tmp6 = metroRequire;
+  const tmp7 = ActionButton;
   if (backgroundColor == null) {
     backgroundColor = WHITE;
   }
@@ -557,50 +189,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ToggledActio
     tintColor = tmp5;
   }
   return tmp6(tmp7, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryActionButton(isSmallSize) {
-  let tmp3;
-  let tmp4;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] !== isSmallSize) {
-    isSmallSize = isSmallSize.isSmallSize;
-    const tmp7 = _objectWithoutProperties(isSmallSize, closure_4);
-    cResult[0] = isSmallSize;
-    cResult[1] = tmp7;
-    cResult[2] = isSmallSize;
-    tmp4 = isSmallSize;
-    tmp3 = tmp7;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const RED_400 = nativeDefault.unsafe_rawColors.RED_400;
-  const WHITE = nativeDefault.unsafe_rawColors.WHITE;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { tintColor: WHITE };
-    cResult[3] = obj2;
-    tmp9 = obj2;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === (undefined !== tmp4 && tmp4)) {
-    let tmp10;
-    if (cResult[5] === tmp3) {
-      tmp10 = cResult[6];
-    }
-    return tmp10;
-  }
-  const obj3 = { backgroundColor: RED_400, imageStyle: tmp9, isSmallSize: undefined !== tmp4 && tmp4 };
-  const merged = Object.assign(tmp3);
-  const tmp12 = authStore(closure_18, obj3);
-  cResult[4] = undefined !== tmp4 && tmp4;
-  cResult[5] = tmp3;
-  cResult[6] = tmp12;
-  tmp10 = tmp12;
-}) : (function PrimaryActionButton(isSmallSize) {
+}
+export function PrimaryActionButton(isSmallSize) {
   let flag = isSmallSize.isSmallSize;
   if (flag === undefined) {
     flag = false;
@@ -609,120 +199,29 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PrimaryActio
   const obj = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, imageStyle: { tintColor: nativeDefault.unsafe_rawColors.WHITE }, isSmallSize: flag };
   ({ tintColor: nativeDefault.unsafe_rawColors.WHITE });
   const merged1 = Object.assign(merged);
-  return authStore(closure_18, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotifiedActionButton(arg0) {
-  let isMentioned;
-  let notifications;
-  let obj3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(16);
-  if (cResult[0] !== arg0) {
-    ({ notifications, isMentioned } = arg0);
-    const tmp9 = _objectWithoutProperties(arg0, closure_5);
-    cResult[0] = arg0;
-    cResult[1] = isMentioned;
-    cResult[2] = notifications;
-    cResult[3] = tmp9;
-    tmp6 = tmp9;
-    tmp5 = notifications;
-    tmp4 = isMentioned;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-  }
-  const tmp10 = closure_17();
-  if (true !== tmp4) {
-    let notificationAreaMentioned;
-    if (undefined !== tmp4) {
-      notificationAreaMentioned = tmp10.notificationAreaUnread;
-    }
-    if (cResult[4] === tmp10.notificationArea) {
-      let tmp11;
-      if (cResult[5] === notificationAreaMentioned) {
-        tmp11 = cResult[6];
-      }
-      if (cResult[7] === tmp5) {
-        let tmp12;
-        if (cResult[8] === tmp10.notificationText) {
-          tmp12 = cResult[9];
-        }
-        if (cResult[10] === tmp11) {
-          let tmp15;
-          if (cResult[11] === tmp12) {
-            tmp15 = cResult[12];
-          }
-          if (cResult[13] === tmp6) {
-            let tmp19;
-            if (cResult[14] === tmp15) {
-              tmp19 = cResult[15];
-            }
-            return tmp19;
-          }
-          const obj2 = { children: authStore(closure_18, obj3) };
-          obj3 = { children: tmp15 };
-          const merged = Object.assign(tmp6);
-          const tmp26 = authStore(View, obj2);
-          cResult[13] = tmp6;
-          cResult[14] = tmp15;
-          cResult[15] = tmp26;
-          tmp19 = tmp26;
-        }
-        const obj4 = { style: tmp11, children: tmp12 };
-        const tmp18 = authStore(View, obj4);
-        cResult[10] = tmp11;
-        cResult[11] = tmp12;
-        cResult[12] = tmp18;
-        tmp15 = tmp18;
-      }
-      const obj5 = { style: tmp10.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp5 };
-      const tmp14 = authStore(Text_Text.Text, obj5);
-      cResult[7] = tmp5;
-      cResult[8] = tmp10.notificationText;
-      cResult[9] = tmp14;
-      tmp12 = tmp14;
-    }
-    const items = [tmp10.notificationArea, notificationAreaMentioned];
-    cResult[4] = tmp10.notificationArea;
-    cResult[5] = notificationAreaMentioned;
-    cResult[6] = items;
-    tmp11 = items;
-  }
-  notificationAreaMentioned = tmp10.notificationAreaMentioned;
-}) : (function NotifiedActionButton(isMentioned) {
+  return metroRequire(ActionButton, obj);
+}
+export function NotifiedActionButton(isMentioned) {
   let obj4;
   isMentioned = isMentioned.isMentioned;
   const notifications = isMentioned.notifications;
   const merged = Object.assign(isMentioned, Object.assign({ notifications: 0, isMentioned: 0 }));
-  const tmp2 = closure_17();
+  const tmp2 = closure_12();
   const obj = {};
   const merged1 = Object.assign(merged);
   const items = [tmp2.notificationArea, ];
-  const tmp5 = closure_18;
+  const tmp5 = ActionButton;
   if (true !== isMentioned) {
     let notificationAreaMentioned;
     if (undefined !== isMentioned) {
       notificationAreaMentioned = tmp2.notificationAreaUnread;
     }
-    const obj2 = { children: authStore(tmp5, obj) };
+    const obj2 = { children: metroRequire(tmp5, obj) };
     items[1] = notificationAreaMentioned;
-    const obj3 = { style: items, children: authStore(Text_Text.Text, obj4) };
+    const obj3 = { style: items, children: metroRequire(Text_Text.Text, obj4) };
     obj4 = { style: tmp2.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: notifications };
-    obj.children = authStore(View, obj3);
-    return authStore(View, obj2);
+    obj.children = metroRequire(View, obj3);
+    return metroRequire(View, obj2);
   }
   notificationAreaMentioned = tmp2.notificationAreaMentioned;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/video_calls/native/components/CallBarAction.tsx");
-
-export const SMALL_ACTION_BUTTON_DIMENSIONS = frozen;
-export const ActionButton = tmp5;
-export const ToggledActionButton = tmp6;
-export const PrimaryActionButton = tmp7;
-export const NotifiedActionButton = tmp8;
+}

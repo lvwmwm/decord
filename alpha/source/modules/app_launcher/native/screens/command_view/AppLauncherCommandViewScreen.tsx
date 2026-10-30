@@ -1,55 +1,53 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12306
+// Function ID: 12307
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5006, 9716, 4911, 1502, 1084, 1627, 21, 5005, 587, 12131, 558, 576, 504, 5086, 5243, 5246, 5249, 5002, 5295, 1125, 5718, 5282, 11261, 5749, 5630, 12133, 5672, 6719, 12015, 1271, 12081, 12135, 1998, 9715, 12082, 11499, 1497, 10993, 10485, 12136, 10486, 8209, 1894, 8199, 12137, 11262, 5306, 5271, 12138, 12139, 12190, 1199, 38, 12104, 10271, 7688, 9721, 10272, 12191, 12192, 12090, 12091, 2]
+// Dependencies: [5, 32, 19, 17, 5010, 9742, 4915, 1497, 1072, 1622, 21, 5009, 575, 12307, 504, 5090, 5249, 5252, 5255, 5582, 5006, 5630, 1114, 5724, 11466, 5755, 5602, 12309, 5678, 6726, 12201, 1260, 12257, 12311, 1993, 9741, 12258, 11699, 1492, 11223, 10510, 12312, 10511, 8212, 1889, 8202, 12313, 11467, 5270, 5619, 12314, 12315, 12349, 1188, 38, 12280, 10296, 7693, 9747, 10297, 12350, 12351, 12266, 12267, 2]
+// Exports: default
 
-// Module 12130 (AppLauncherCommandViewScreen)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1627 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
-import timingPresets from "timingPresets" /* 5246 */;
-import HapticUtils from "HapticUtils" /* 5249 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import BaseTextButton2 from "BaseTextButton" /* 5282 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8209 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9715 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10485 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10486 */;
-import AppLauncherContext from "AppLauncherContext" /* 11261 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11262 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12082 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12090 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12091 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12131 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12133 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12135 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 12138 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12191 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12192 */;
+// Module 12306 (AppLauncherCommandViewScreen)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1622 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
+import timingPresets from "timingPresets" /* 5252 */;
+import HapticUtils from "HapticUtils" /* 5255 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import BaseTextButton2 from "BaseTextButton" /* 5630 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8212 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9741 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10510 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 10511 */;
+import AppLauncherContext from "AppLauncherContext" /* 11466 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11467 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12258 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12266 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12267 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 12307 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 12309 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 12311 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 12314 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12350 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12351 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9716 */;
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import Constants from "Constants" /* 1084 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9742 */;
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c1, c2, num3, num4, num5, obj1, set, set2, str, tmp25, tmp29;
+let c1, c2, importAll, set, set2;
 
 let DEFAULT_CONTENT_PADDING;
 let c9;
@@ -72,6 +70,140 @@ let obj6;
 let obj7;
 let obj8;
 let unpackModuleId;
+function AppLauncherCommandViewFooter(arg0) {
+  let SendMessageIcon;
+  let View2;
+  let animatedStyle;
+  let closure_2;
+  let closure_5;
+  let enableSubmit;
+  let first;
+  let first1;
+  let footerStickyInsetBottom;
+  let intl;
+  let isSending;
+  let items1;
+  let items2;
+  let items3;
+  let obj8;
+  let obj9;
+  let onSubmit;
+  let point;
+  let useReducedMotion;
+  ({ onHeightChange: require, isSending } = arg0);
+  closure_2 = undefined;
+  let stateFromStores;
+  first1 = undefined;
+  _slicedToArray = undefined;
+  ({ enableSubmit, onSubmit, animatedStyle, footerStickyInsetBottom } = arg0);
+  let tmp = closure_23();
+  [first, closure_2] = react.useState(0);
+  let obj = require("get initialized");
+  let items = [AccessibilityStore];
+  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  [first1, _slicedToArray] = react.useState(false);
+  let obj2 = require("ReanimatedRexport");
+  let fn = function h() {
+    let fn;
+    let items;
+    let items1;
+    let obj2;
+    let timingStandard;
+    let withDelay;
+    let withTiming3;
+    const tmp = stateFromStores;
+    if (tmp) {
+      obj2 = {};
+    } else {
+      const tmp2 = first1;
+      if (tmp2) {
+        const obj3 = { opacity: 1, transform: items };
+        const obj4 = { translateX: withDelay(100, withTiming3(-4, timingStandard, "respect-motion-settings", fn)) };
+        withDelay = ReanimatedRexport.withDelay;
+        ReanimatedRexport;
+        withTiming3 = timing.withTiming;
+        fn = function e() {
+          const obj = closure_1_0(stateFromStores[15]);
+          const runOnJSResult = obj.runOnJS(closure_1_0(stateFromStores[18]).triggerHapticFeedback);
+          return runOnJSResult(closure_1_0(stateFromStores[18]).HapticFeedbackTypes.IMPACT_LIGHT);
+        };
+        const obj5 = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes };
+        timingStandard = timingPresets.timingStandard;
+        fn.__closure = obj5;
+        fn.__workletHash = 8545458901090;
+        fn.__initData = __initData;
+        items = [obj4];
+        obj2 = obj3;
+      } else {
+        let obj = isSending;
+        const withTiming = timing.withTiming;
+        let num = 1;
+        timing;
+        if (isSending.get()) {
+          num = 0;
+        }
+        obj2 = { opacity: withTiming(num, timingPresets.timingStandard), transform: items1 };
+        const withTiming2 = timing.withTiming;
+        let num2 = 0;
+        timing;
+        if (obj.get()) {
+          num2 = 100;
+        }
+        items1 = [{ translateX: withTiming2(num2, timingPresets.timingStandard) }];
+        const obj6 = { translateX: withTiming2(num2, timingPresets.timingStandard) };
+      }
+    }
+    return obj2;
+  };
+  let obj3 = { shouldReduceMotion: stateFromStores, isPressedDown: first1, withDelay: require("ReanimatedRexport").withDelay, withTiming: require("timing").withTiming, timingStandard: require("timingPresets").timingStandard, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticFeedback: require("HapticUtils").triggerHapticFeedback, HapticFeedbackTypes: require("HapticUtils").HapticFeedbackTypes, isSending };
+  fn.__closure = obj3;
+  fn.__workletHash = 576353278359;
+  fn.__initData = __initData;
+  const animatedStyle1 = obj2.useAnimatedStyle(fn);
+  let obj4 = {
+    onLayout(nativeEvent) {
+      const height = nativeEvent.nativeEvent.layout.height;
+      closure_2(height);
+      if (require != null) {
+        require(height);
+      }
+    },
+    style: items1,
+    children: items3
+  };
+  items1 = [tmp.footerContainer, animatedStyle];
+  const View = isSending(stateFromStores[15]).View;
+  let obj5 = { style: { width: "100%", top: -12, bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal, position: "absolute" }, start: constants3.START, end: point, colors: items2, pointerEvents: "none" };
+  point = { x: 0, y: 12 / (first + 12) };
+  items2 = [, ];
+  const tmp8 = isSending(stateFromStores[19]);
+  const obj7 = require("ColorUtils");
+  items2[0] = obj7.hexWithOpacity(tmp.linearGradient.backgroundColor, 0);
+  items2[1] = tmp.linearGradient.backgroundColor;
+  items3 = [closure_20(tmp8, obj5), ];
+  let obj6 = {
+    onPress: onSubmit,
+    onPressIn() {
+      return closure_5(true);
+    },
+    onPressOut() {
+      return closure_5(false);
+    },
+    disabled: !enableSubmit,
+    style: tmp.submitButton,
+    text: intl.string(require("intl").t.TXNS7S),
+    icon: closure_20(View2, obj8),
+    iconPosition: "end"
+  };
+  const BaseTextButton = require("BaseTextButton").BaseTextButton;
+  intl = require("intl").intl;
+  obj8 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj9) };
+  View2 = isSending(stateFromStores[15]).View;
+  obj9 = { style: { marginLeft: 8 }, color: isSending(stateFromStores[12]).unsafe_rawColors.WHITE, size: "sm" };
+  SendMessageIcon = require("SendMessageIcon").SendMessageIcon;
+  items3[1] = closure_20(BaseTextButton, obj6);
+  return closure_21(View, obj4);
+}
 function AppLauncherCommandViewInner(command) {
   let BottomSheetScrollView;
   let Text;
@@ -80,7 +212,6 @@ function AppLauncherCommandViewInner(command) {
   let arr4;
   let c24;
   let c31;
-  let closure_29;
   let hasPermissions;
   let installOnDemand;
   let intl;
@@ -98,6 +229,7 @@ function AppLauncherCommandViewInner(command) {
   let obj5;
   let optionalOptionsChild;
   let preSelectedCommand;
+  let ref9;
   let section;
   let tmp20;
   let tmp70;
@@ -119,15 +251,15 @@ function AppLauncherCommandViewInner(command) {
   c24 = undefined;
   let first;
   let closure_26;
-  let ref9;
+  __initData2 = undefined;
   let first1;
-  __initData4 = undefined;
+  let closure_29;
   let ref10;
   c31 = undefined;
   let optionValues;
   let first2;
-  closure_34 = undefined;
-  closure_35 = undefined;
+  let closure_34;
+  let closure_35;
   let first4;
   let closure_37;
   let first5;
@@ -162,7 +294,7 @@ function AppLauncherCommandViewInner(command) {
   let closure_7 = tmp2;
   let tmp3 = command;
   let tmp4 = sectionName;
-  let obj = command(sectionName[26]);
+  let obj = command(sectionName[24]);
   const requiredAppLauncherContext = obj.useRequiredAppLauncherContext();
   const keyboardCloseReasonRef = requiredAppLauncherContext.keyboardCloseReasonRef;
   const entrypoint = requiredAppLauncherContext.entrypoint;
@@ -196,7 +328,7 @@ function AppLauncherCommandViewInner(command) {
   prefilledOptions = tmp9;
   guild_id = context.channel.guild_id;
   let items = [ref2];
-  const tmp3Result = tmp3(tmp4[16]);
+  const tmp3Result = tmp3(tmp4[14]);
   stateFromStores = tmp3Result.useStateFromStores(items, () => GuildRoleStore.getRolesSnapshot(guild_id));
   ref6 = obj2.useRef(false);
   ref7 = obj2.useRef(Date.now());
@@ -249,10 +381,10 @@ function AppLauncherCommandViewInner(command) {
   closure_26 = tmp15[1];
   const useRef = obj2.useRef;
   set = new Set();
-  ref9 = useRef(set);
+  __initData2 = useRef(set);
   const tmp17 = onCommandExecuted(obj2.useState([]), 2);
   first1 = tmp17[0];
-  __initData4 = tmp17[1];
+  closure_29 = tmp17[1];
   const useRef2 = obj2.useRef;
   const set1 = new Set();
   ref10 = useRef2(set1);
@@ -276,16 +408,16 @@ function AppLauncherCommandViewInner(command) {
   const tmp30 = onCommandExecuted(obj2.useState(null), 2);
   first6 = tmp30[0];
   setFocusedOption = tmp30[1];
-  const bottom = context(tmp4[28])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom;
-  const insets = context(tmp4[28])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets;
+  const bottom = context(tmp4[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets.bottom;
+  const insets = context(tmp4[26])({ includeCustomKeyboardHeight: false, includeKeyboardHeight: true }).insets;
   const tmp33 = onCommandExecuted(obj2.useState(0), 2);
   let sum = insets.bottom + tmp33[0];
   const tmp34 = tmp33[1];
   sum1 = sum + context(tmp4[12]).space.PX_16;
   sum2 = bottom + context(tmp4[12]).space.PX_16;
-  const tmp3Result6 = tmp3(tmp4[17]);
+  const tmp3Result6 = tmp3(tmp4[15]);
   sharedValue = tmp3Result6.useSharedValue(false);
-  const tmp3Result7 = tmp3(tmp4[17]);
+  const tmp3Result7 = tmp3(tmp4[15]);
   sharedValue1 = tmp3Result7.useSharedValue(0);
   const items3 = [first5, sum1, sharedValue1];
   callback1 = obj2.useCallback((required) => {
@@ -373,7 +505,7 @@ function AppLauncherCommandViewInner(command) {
     ref6.current = true;
     ref8.current = name.type;
   }, items4);
-  const tmp42 = context(tmp4[31])(command);
+  const tmp42 = context(tmp4[29])(command);
   id = tmp42;
   const items5 = [guild_id, command, , , , ];
   let id1;
@@ -442,7 +574,7 @@ function AppLauncherCommandViewInner(command) {
           });
         }
       }
-      let obj = command(sectionName[33]);
+      let obj = command(sectionName[31]);
       obj.batchUpdates(() => {
         closure_34(closure_3);
         c24(closure_2);
@@ -467,7 +599,7 @@ function AppLauncherCommandViewInner(command) {
       });
     }
   }, items5);
-  const tmp3Result8 = tmp3(tmp4[34]);
+  const tmp3Result8 = tmp3(tmp4[32]);
   commandContext = tmp3Result8.useCommandContext(context);
   const items6 = [callback1, chatInputRef, command, commandContext, sharedValue, keyboardCloseReasonRef, onCommandExecuted, first2, sectionName];
   callback3 = obj2.useCallback(function() {
@@ -497,7 +629,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(1998).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(1993).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -512,10 +644,10 @@ function AppLauncherCommandViewInner(command) {
         tmp13Result4 = ApplicationCommandOptionValueParser;
         const result1 = executeAppLauncherCommand(obj3);
         const nextPromise = result1.then(() => {
-          const obj = command(sectionName[20]);
-          const result = obj.triggerHapticFeedback(command(sectionName[20]).HapticFeedbackTypes.IMPACT_MEDIUM);
+          const obj = command(sectionName[18]);
+          const result = obj.triggerHapticFeedback(command(sectionName[18]).HapticFeedbackTypes.IMPACT_MEDIUM);
           const timerId = setTimeout(() => {
-            closure_1_8.current = command(sectionName[26]).AppLauncherKeyboardCloseReason.COMMAND;
+            closure_1_8.current = command(sectionName[24]).AppLauncherKeyboardCloseReason.COMMAND;
             const current = ref.current;
             if (current != null) {
               current.closeCustomKeyboard();
@@ -549,7 +681,7 @@ function AppLauncherCommandViewInner(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -567,14 +699,14 @@ function AppLauncherCommandViewInner(command) {
             if (tmp14) {
               if (null == command) {
                 c2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const obj4 = { applicationId: command.applicationId, channel: context.channel, commandIntegrationTypes: command.integration_types, appLauncherContext: obj6 };
                 obj6 = { entrypoint, location: analyticsLocation, sectionName };
                 c1 = 1;
                 c2 = 1;
                 const obj7 = { value: obj5.installApplicationOnDemandIfNeeded(obj4), done: false };
-                obj5 = tmp(sectionName[39]);
+                obj5 = tmp(sectionName[37]);
                 return obj7;
               }
             }
@@ -588,34 +720,34 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!value.isAuthorized) {
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
         closure_128_50();
         c2 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c2 = 3;
         throw tmp10;
       }
     }
   }), items7);
-  height = tmp32(tmp4[40])({ ignoreKeyboard: true }).height;
-  maximum = tmp32(tmp4[41])().maximum;
-  const tmp3Result9 = tmp3(tmp4[26]);
+  height = tmp32(tmp4[38])({ ignoreKeyboard: true }).height;
+  maximum = tmp32(tmp4[39])().maximum;
+  const tmp3Result9 = tmp3(tmp4[24]);
   bottomSheetPosition = tmp3Result9.useRequiredAppLauncherContext().bottomSheetPosition;
-  function ot() {
+  function tt() {
     let items;
     const obj = { transform: items };
     items = [{ translateY: -bottomSheetPosition.get() - height + maximum - sum2 }];
     ({ translateY: -bottomSheetPosition.get() - height + maximum - sum2 });
     return obj;
   }
-  ot.__closure = { bottomSheetPosition, screenHeight: height, maxHeight: maximum, footerStickyInsetBottom: sum2 };
-  ot.__workletHash = 10939625510733;
-  ot.__initData = __initData4;
+  tt.__closure = { bottomSheetPosition, screenHeight: height, maxHeight: maximum, footerStickyInsetBottom: sum2 };
+  tt.__workletHash = 3470381437387;
+  tt.__initData = __initData2;
   const items8 = [first4, callback1];
-  const tmp3Result10 = tmp3(tmp4[17]);
-  const animatedStyle = tmp3Result10.useAnimatedStyle(ot);
+  const tmp3Result10 = tmp3(tmp4[15]);
+  const animatedStyle = tmp3Result10.useAnimatedStyle(tt);
   onStartEditing = obj2.useCallback((name) => {
     first4.delete(name.name);
     set = new Set(first4);
@@ -659,19 +791,19 @@ function AppLauncherCommandViewInner(command) {
     let onRestoreKeyboard;
     let obj = { target: stateFromStores.APP_LAUNCHER, option };
     let tmp = command;
-    let obj2 = command(sectionName[42]);
+    let obj2 = command(sectionName[40]);
     const mediaKeyboardDraftType = obj2.getMediaKeyboardDraftType(obj.target);
     let fileTypes;
-    if (option.type === command(sectionName[36]).ApplicationCommandOptionType.ATTACHMENT) {
+    if (option.type === command(sectionName[34]).ApplicationCommandOptionType.ATTACHMENT) {
       fileTypes = option.fileTypes;
     }
-    let tmpResult = tmp(tmp2[43]);
+    let tmpResult = tmp(tmp2[41]);
     const fileTypeFiltering = tmpResult.getFileTypeFiltering(fileTypes);
     const allowedExtensions = fileTypeFiltering.allowedExtensions;
     ({ validateFilenames: analyticsLocation, showInvalidFileTypeAlert: onCommandExecuted } = fileTypeFiltering);
     const mediaFilesAllowed = fileTypeFiltering.mediaFilesAllowed;
     callback6(option);
-    const tmpResult4 = tmp(sectionName[46]);
+    const tmpResult4 = tmp(sectionName[44]);
     let result = tmpResult4.dismissGlobalKeyboard();
     if (mediaFilesAllowed) {
       const obj3 = {
@@ -683,15 +815,15 @@ function AppLauncherCommandViewInner(command) {
         includedUploadIds: items,
         onAttachPress() {
             obj = {};
-            const handleAttachFile = command(sectionName[42]).handleAttachFile;
-            command(sectionName[42]);
-            const FILE_ATTACHMENT = command(sectionName[47]).UploadOrigin.FILE_ATTACHMENT;
+            const handleAttachFile = command(sectionName[40]).handleAttachFile;
+            command(sectionName[40]);
+            const FILE_ATTACHMENT = command(sectionName[45]).UploadOrigin.FILE_ATTACHMENT;
             const obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[44]);
+                obj = IMAGE_PICKER(allowedExtensions[42]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -712,15 +844,15 @@ function AppLauncherCommandViewInner(command) {
           },
         onPressCamera(previewType) {
             obj = { previewType };
-            const handleCameraDialog = command(sectionName[42]).handleCameraDialog;
-            command(sectionName[42]);
-            const IMAGE_PICKER = command(sectionName[47]).UploadOrigin.IMAGE_PICKER;
+            const handleCameraDialog = command(sectionName[40]).handleCameraDialog;
+            command(sectionName[40]);
+            const IMAGE_PICKER = command(sectionName[45]).UploadOrigin.IMAGE_PICKER;
             const obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[44]);
+                obj = IMAGE_PICKER(allowedExtensions[42]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -755,19 +887,19 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8199).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8202).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
-            const handleViewAllDialog = command(sectionName[42]).handleViewAllDialog;
-            const tmp = command(sectionName[42]);
-            const IMAGE_PICKER = command(sectionName[47]).UploadOrigin.IMAGE_PICKER;
+            const handleViewAllDialog = command(sectionName[40]).handleViewAllDialog;
+            const tmp = command(sectionName[40]);
+            const IMAGE_PICKER = command(sectionName[45]).UploadOrigin.IMAGE_PICKER;
             let obj2 = {
               channel: obj.channel,
               uploadLimit: 1,
               extensions: allowedExtensions,
               onDismissKeyboard() {
-                obj = IMAGE_PICKER(allowedExtensions[44]);
+                obj = IMAGE_PICKER(allowedExtensions[42]);
                 return obj.hideMediaKeyboardActionSheet();
               },
               onRestoreKeyboard: prefilledOptions,
@@ -787,32 +919,32 @@ function AppLauncherCommandViewInner(command) {
             handleViewAllDialog(obj);
           },
         onManageLimited() {
-            obj = option(allowedExtensions[42]);
-            const obj2 = { onDismissKeyboard: option(allowedExtensions[44]).hideMediaKeyboardActionSheet, onRestoreKeyboard };
+            obj = option(allowedExtensions[40]);
+            const obj2 = { onDismissKeyboard: option(allowedExtensions[42]).hideMediaKeyboardActionSheet, onRestoreKeyboard };
             const result = obj.handleLimitedPickerDialog(obj2);
           },
         onClose() {
             callback5(option);
           },
         onBack() {
-            obj = option(allowedExtensions[44]);
+            obj = option(allowedExtensions[42]);
             const result = obj.hideMediaKeyboardActionSheet();
           }
       };
       items = [option.name];
-      const tmpResult5 = tmp(sectionName[44]);
+      const tmpResult5 = tmp(sectionName[42]);
       let result1 = tmpResult5.showMediaKeyboardActionSheet(obj3);
     } else {
       const obj4 = {};
-      let handleAttachFile = tmp(tmp2[42]).handleAttachFile;
-      tmp(sectionName[42]);
-      let FILE_ATTACHMENT = tmp(tmp2[47]).UploadOrigin.FILE_ATTACHMENT;
+      let handleAttachFile = tmp(tmp2[40]).handleAttachFile;
+      tmp(sectionName[40]);
+      let FILE_ATTACHMENT = tmp(tmp2[45]).UploadOrigin.FILE_ATTACHMENT;
       const obj5 = {
         channel: obj.channel,
         uploadLimit: 1,
         extensions: allowedExtensions,
         onDismissKeyboard() {
-            obj = IMAGE_PICKER(allowedExtensions[44]);
+            obj = IMAGE_PICKER(allowedExtensions[42]);
             return obj.hideMediaKeyboardActionSheet();
           },
         onRestoreKeyboard: prefilledOptions,
@@ -832,7 +964,7 @@ function AppLauncherCommandViewInner(command) {
       handleAttachFile(obj4);
     }
   }, items11);
-  const tmp54 = context(tmp4[48])(() => {
+  const tmp54 = context(tmp4[46])(() => {
     callback1(first6);
   });
   setLatch = tmp54.setLatch;
@@ -962,9 +1094,9 @@ function AppLauncherCommandViewInner(command) {
       setFocusedOption(null);
     }
     let applicationId;
-    const trackWithMetadata = command(sectionName[27]).trackWithMetadata;
+    const trackWithMetadata = command(sectionName[25]).trackWithMetadata;
     const APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED = ref5.APPLICATION_COMMAND_OPTIONAL_OPTION_REMOVED;
-    command(sectionName[27]);
+    command(sectionName[25]);
     if (name != null) {
       applicationId = tmp14.applicationId;
     }
@@ -991,26 +1123,26 @@ function AppLauncherCommandViewInner(command) {
     prefilledOptions1 = preSelectedCommand.prefilledOptions;
   }
   closure_62 = null != prefilledOptions1;
-  if (entrypoint === tmp3(tmp4[49]).AppLauncherEntrypoint.VOICE) {
+  if (entrypoint === tmp3(tmp4[47]).AppLauncherEntrypoint.VOICE) {
     BottomSheetScrollView = entrypoint;
   } else {
-    BottomSheetScrollView = tmp3(tmp4[50]).BottomSheetScrollView;
+    BottomSheetScrollView = tmp3(tmp4[48]).BottomSheetScrollView;
   }
   if (loading) {
-    tmp73Result2 = ref6(first2, {});
+    tmp73Result2 = ref6(ref10, {});
     tmp70 = ref6;
   } else if (null == command) {
     let obj3 = { onPressBack: callback };
-    tmp73Result2 = ref6(closure_34, obj3);
+    tmp73Result2 = ref6(c31, obj3);
     tmp70 = ref6;
   } else if (hasPermissions) {
     let obj4 = { ref, contentContainerStyle: tmp.optionsContainer, scrollIndicatorInsets: obj5, scrollToOverflowEnabled: true, onContentSizeChange: callback10, preserveScrollMomentum: true, lockableScrollableContentOffsetY: sharedValue1, keyboardShouldPersistTaps: "handled", contentInsetAdjustmentBehavior: "never", automaticallyAdjustContentInsets: false, onLayout: callback9, automaticallyAdjustsScrollIndicatorInsets: false, children: items18 };
     obj5 = { bottom: sum1 };
     let obj6 = { style: tmp.commandNameContainer, children: items17 };
     let obj7 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
-    items17 = [ref6(tmp3(tmp4[51]).Text, obj7), ];
+    items17 = [ref6(tmp3(tmp4[49]).Text, obj7), ];
     const obj8 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
-    items17[1] = ref6(tmp3(tmp4[51]).Text, obj8);
+    items17[1] = ref6(tmp3(tmp4[49]).Text, obj8);
     items18 = [ref7(closure_7, obj6), , , , , ];
     let tmp76Result = tmp66;
     if (tmp76Result) {
@@ -1050,26 +1182,26 @@ function AppLauncherCommandViewInner(command) {
     let tmp76Result3 = !tmp66 && tmp68;
     if (tmp76Result3) {
       const obj10 = { style: tmp.noRequiredOptionsCalloutContainer, children: ref6(Text, obj11) };
-      obj11 = { variant: "text-sm/medium", color: "text-strong", style: { textAlign: "center" }, children: intl.string(tmp3(tmp4[23]).t.HS2KtY) };
-      Text = tmp3(tmp4[51]).Text;
-      intl = tmp3(tmp4[23]).intl;
+      obj11 = { variant: "text-sm/medium", color: "text-strong", style: { textAlign: "center" }, children: intl.string(tmp3(tmp4[22]).t.HS2KtY) };
+      Text = tmp3(tmp4[49]).Text;
+      intl = tmp3(tmp4[22]).intl;
       tmp76Result3 = tmp76(tmp75, obj10);
     }
     items18[2] = tmp76Result3;
     let tmp76Result4 = !tmp68;
     if (tmp76Result4) {
       const obj12 = { style: tmp.noOptionCalloutContainer, children: ref6(Text2, obj13) };
-      obj13 = { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(tmp3(tmp4[23]).t.G8lEFB) };
-      Text2 = tmp3(tmp4[51]).Text;
-      intl2 = tmp3(tmp4[23]).intl;
+      obj13 = { variant: "text-sm/medium", color: "text-muted", style: { textAlign: "center" }, children: intl2.string(tmp3(tmp4[22]).t.G8lEFB) };
+      Text2 = tmp3(tmp4[49]).Text;
+      intl2 = tmp3(tmp4[22]).intl;
       tmp76Result4 = tmp76(tmp75, obj12);
     }
     items18[3] = tmp76Result4;
     if (tmp73Result) {
       const obj14 = { children: items19 };
-      const obj15 = { style: tmp.optionalOptionsSectionTitle, variant: "text-md/normal", color: "text-default", children: intl3.string(tmp3(tmp4[23]).t["5C107K"]) };
-      const Text3 = tmp3(tmp4[51]).Text;
-      intl3 = tmp3(tmp4[23]).intl;
+      const obj15 = { style: tmp.optionalOptionsSectionTitle, variant: "text-md/normal", color: "text-default", children: intl3.string(tmp3(tmp4[22]).t["5C107K"]) };
+      const Text3 = tmp3(tmp4[49]).Text;
+      intl3 = tmp3(tmp4[22]).intl;
       items19 = [ref6(Text3, obj15), , ];
       const obj16 = {
         style: tmp.optionalOptionsContainer,
@@ -1095,8 +1227,8 @@ function AppLauncherCommandViewInner(command) {
             })
       };
       items19[1] = ref6(closure_7, obj16);
-      const obj17 = { layout: tmp3(tmp4[53]).LayoutAnimation, collapsable: false, children: ref6(context(tmp4[54]), obj18) };
-      const View = tmp32(tmp4[17]).View;
+      const obj17 = { layout: tmp3(tmp4[51]).LayoutAnimation, collapsable: false, children: ref6(context(tmp4[52]), obj18) };
+      const View = tmp32(tmp4[15]).View;
       obj18 = { style: tmp.optionalOptionList, options: tmp20, onSelectOption: callback21 };
       items19[2] = ref6(View, obj17);
       tmp73Result = tmp73(tmp74, obj14);
@@ -1104,942 +1236,100 @@ function AppLauncherCommandViewInner(command) {
     const obj19 = { children: items20 };
     items18[4] = tmp73Result;
     const obj20 = { size: sum1 };
-    items18[5] = ref6(tmp3(tmp4[55]).Spacer, obj20);
+    items18[5] = ref6(tmp3(tmp4[53]).Spacer, obj20);
     items20 = [ref7(BottomSheetScrollView, obj4), ];
     const obj21 = { enableSubmit: first3, onSubmit: callback4, animatedStyle, onHeightChange: tmp34, isSending: sharedValue, footerStickyInsetBottom: sum2 };
-    items20[1] = ref6(first1, obj21);
+    items20[1] = ref6(closure_26, obj21);
     tmp73Result2 = tmp73(tmp74, obj19);
     tmp70 = tmp76;
   } else {
     tmp70 = ref6;
     const obj22 = { command, onPressBack: callback };
-    tmp73Result2 = ref6(closure_35, obj22);
+    tmp73Result2 = ref6(optionValues, obj22);
   }
   const obj23 = { style: tmp.container, children: items21 };
   items21 = [tmp70(tmp3(tmp4[13]).AppLauncherCommandViewHeader, { command, onPressBack: callback, scrollOffsetY: sharedValue1, section }), tmp73Result2];
   return ref7(closure_7, obj23);
 }
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ View: metroImportDefault, ActivityIndicator: metroImportAll, ScrollView: c9 } = react_native);
-({ useContextIndexState: unpackModuleId, useUserIndexState: closure_12 } = ApplicationCommandIndexStore);
-({ AppLauncherOptionAutoFocusType: closure_14, useAppLauncherNavigation: closure_15, DEFAULT_CONTENT_PADDING } = AppLauncherNativeConstants);
-({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = Constants);
-const MediaKeyboardTarget = MediaKeyboardConstants.MediaKeyboardTarget;
-({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, optionsContainer: obj3, requiredOptionsContainer: { marginTop: 24, gap: 24 }, optionalOptionsContainer: {}, optionalOptionsChild: { marginBottom: 24 }, optionalOptionsFirstChild: { marginTop: 12 }, optionalOptionsLastChild: { marginBottom: 12 }, footerContainer: { position: "absolute", left: 0, bottom: 0, right: 0, paddingHorizontal: DEFAULT_CONTENT_PADDING }, submitButton: { flex: 1, overflow: "hidden" }, optionalOptionsSectionTitle: { marginTop: 36 }, optionalOptionList: { marginTop: 12 }, noRequiredOptionsCalloutContainer: obj4, noOptionCalloutContainer: obj5, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start", paddingTop: 30 }, emptyStateContainer: obj6, failureStateButtonWrapper: { marginTop: 24, alignSelf: "center" }, failureStateButtonPill: obj7, commandNameContainer: { alignItems: "center", justifyContent: "center", textAlign: "center" }, linearGradient: obj8 };
-obj2 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-createStyles = createStyles.createStyles;
-obj3 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-obj4 = { paddingVertical: 16, paddingHorizontal: 12, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, marginTop: 24, borderRadius: nativeDefault.radii.lg };
-obj5 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, borderRadius: nativeDefault.radii.lg };
-obj6 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, flex: 1 };
-obj7 = { borderRadius: nativeDefault.radii.xxl, paddingHorizontal: 12, paddingVertical: 8 };
-obj8 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
-let closure_23 = createStyles(obj);
-const __initData = { code: "function AppLauncherCommandViewScreenTsx1(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion){return{};}if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,\"respect-motion-settings\",function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
-const __initData2 = { code: "function AppLauncherCommandViewScreenTsx2(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
-const __initData3 = { code: "function AppLauncherCommandViewScreenTsx3(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
-let closure_27 = { code: "function AppLauncherCommandViewScreenTsx4(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_28 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandViewFooter(isSending) {
-  let animatedStyle;
-  let closure_2;
-  let closure_5;
-  let enableSubmit;
-  let first;
-  let footerStickyInsetBottom;
-  let onHeightChange;
-  let onSubmit;
-  let stateFromStores;
-  let tmp8;
-  let tmp9;
-  let useReducedMotion;
-  let tmp = onHeightChange;
-  let tmp2 = stateFromStores;
-  let obj = onHeightChange(stateFromStores[15]);
-  const cResult = obj.c(37);
-  ({ onSubmit, animatedStyle, onHeightChange } = isSending);
-  isSending = isSending.isSending;
-  ({ enableSubmit, footerStickyInsetBottom } = isSending);
-  const tmp4 = closure_23();
-  let obj2 = react;
-  const tmp5 = _slicedToArray;
-  [first, importAll] = react.useState(0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AccessibilityStore];
-    let fn = function l() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    let num = 1;
-    cResult[1] = fn;
-    tmp8 = items;
-    tmp9 = fn;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  const tmpResult = tmp(tmp2[16]);
-  stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  const tmp5Result = tmp5(obj2.useState(false), 2);
-  const first1 = tmp5Result[0];
-  _slicedToArray = tmp5Result[1];
-  const tmpResult2 = tmp(tmp2[17]);
-  class T {
-    constructor() {
-      tmp = closure_3;
-      if (tmp) {
-        obj1 = {};
-      } else {
-        tmp2 = closure_4;
-        if (tmp2) {
-          obj7 = { opacity: 1, transform: null };
-          obj8 = { translateX: null };
-          tmp13 = closure_0;
-          tmp14 = closure_3;
-          tmp15 = closure_0(closure_3[17]);
-          tmp16 = closure_0;
-          tmp17 = closure_3;
-          withDelay = tmp15.withDelay;
-          tmp18 = closure_0(closure_3[18]);
-          tmp19 = closure_0;
-          tmp20 = closure_3;
-          withTiming3 = tmp18.withTiming;
-          fn = function e() {
-            const obj = onHeightChange(stateFromStores[17]);
-            const runOnJSResult = obj.runOnJS(onHeightChange(stateFromStores[20]).triggerHapticFeedback);
-            return runOnJSResult(onHeightChange(stateFromStores[20]).HapticFeedbackTypes.IMPACT_LIGHT);
-          };
-          obj9 = { runOnJS: null, triggerHapticFeedback: null, HapticFeedbackTypes: null };
-          tmp21 = closure_0;
-          tmp22 = closure_3;
-          timingStandard = closure_0(closure_3[19]).timingStandard;
-          obj9.runOnJS = closure_0(closure_3[17]).runOnJS;
-          tmp23 = closure_0;
-          tmp24 = closure_3;
-          obj9.triggerHapticFeedback = closure_0(closure_3[20]).triggerHapticFeedback;
-          tmp25 = closure_0;
-          tmp26 = closure_3;
-          obj9.HapticFeedbackTypes = closure_0(closure_3[20]).HapticFeedbackTypes;
-          fn.__closure = obj9;
-          num3 = 8545458901090;
-          fn.__workletHash = 8545458901090;
-          tmp27 = closure_25;
-          fn.__initData = closure_25;
-          str = "respect-motion-settings";
-          num4 = -4;
-          tmp28 = tmp18;
-          tmp29 = fn;
-          num5 = 100;
-          obj8.translateX = withDelay(100, withTiming3(-4, timingStandard, "respect-motion-settings", fn));
-          items = [];
-          items[0] = obj8;
-          obj7.transform = items;
-          obj1 = obj7;
-        } else {
-          tmp3 = closure_0;
-          tmp4 = closure_3;
-          tmp5 = closure_0(closure_3[18]);
-          obj = isSending;
-          withTiming = tmp5.withTiming;
-          num = 1;
-          if (isSending.get()) {
-            num = 0;
-          }
-          obj1 = { opacity: null, transform: null };
-          tmp6 = closure_0;
-          tmp7 = closure_3;
-          obj1.opacity = withTiming(num, closure_0(closure_3[19]).timingStandard);
-          tmp8 = closure_0;
-          tmp9 = closure_3;
-          tmp10 = closure_0(closure_3[18]);
-          withTiming2 = tmp10.withTiming;
-          num2 = 0;
-          if (obj.get()) {
-            num2 = 100;
-          }
-          obj10 = { translateX: null };
-          tmp11 = closure_0;
-          tmp12 = closure_3;
-          obj10.translateX = withTiming2(num2, closure_0(closure_3[19]).timingStandard);
-          items1 = [];
-          items1[0] = obj10;
-          obj1.transform = items1;
-        }
-      }
-      return obj1;
-    }
-  }
-  let obj3 = { shouldReduceMotion: stateFromStores, isPressedDown: first1, withDelay: tmp(tmp2[17]).withDelay, withTiming: tmp(tmp2[18]).withTiming, timingStandard: tmp(tmp2[19]).timingStandard, runOnJS: tmp(tmp2[17]).runOnJS, triggerHapticFeedback: tmp(tmp2[20]).triggerHapticFeedback, HapticFeedbackTypes: tmp(tmp2[20]).HapticFeedbackTypes, isSending };
-  T.__closure = obj3;
-  T.__workletHash = 3221051482353;
-  T.__initData = __initData;
-  const animatedStyle1 = tmpResult2.useAnimatedStyle(T);
-  if (cResult[2] !== onHeightChange) {
-    class E {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        closure_2(height);
-        if (onHeightChange != null) {
-          onHeightChange(height);
-        }
-      }
-    }
-    cResult[2] = onHeightChange;
-    let num2 = 3;
-    cResult[3] = E;
-  } else {
-    class E {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        closure_2(height);
-        if (onHeightChange != null) {
-          onHeightChange(height);
-        }
-      }
-    }
-  }
-  if (cResult[4] === animatedStyle) {
-    class E {
-      constructor(nativeEvent) {
-        const height = nativeEvent.nativeEvent.layout.height;
-        closure_2(height);
-        if (onHeightChange != null) {
-          onHeightChange(height);
-        }
-      }
-    }
-    if (cResult[7] === tmp4.footerContainer.paddingHorizontal) {
-      class E {
-        constructor(nativeEvent) {
-          const height = nativeEvent.nativeEvent.layout.height;
-          closure_2(height);
-          if (onHeightChange != null) {
-            onHeightChange(height);
-          }
-        }
-      }
-      const result = 12 / (first + 12);
-      if (cResult[10] !== result) {
-        class E {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            closure_2(height);
-            if (onHeightChange != null) {
-              onHeightChange(height);
-            }
-          }
-        }
-        tmp20[1] = result;
-        cResult[10] = result;
-        cResult[11] = tmp20;
-      } else {
-        class E {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            closure_2(height);
-            if (onHeightChange != null) {
-              onHeightChange(height);
-            }
-          }
-        }
-      }
-      if (cResult[12] !== tmp4.linearGradient.backgroundColor) {
-        class E {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            closure_2(height);
-            if (onHeightChange != null) {
-              onHeightChange(height);
-            }
-          }
-        }
-        const hexWithOpacityResult = obj7.hexWithOpacity(tmp4.linearGradient.backgroundColor, 0);
-        cResult[12] = tmp4.linearGradient.backgroundColor;
-        cResult[13] = hexWithOpacityResult;
-      } else {
-        class E {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            closure_2(height);
-            if (onHeightChange != null) {
-              onHeightChange(height);
-            }
-          }
-        }
-      }
-      if (cResult[14] === tmp4.linearGradient.backgroundColor) {
-        class E {
-          constructor(nativeEvent) {
-            const height = nativeEvent.nativeEvent.layout.height;
-            closure_2(height);
-            if (onHeightChange != null) {
-              onHeightChange(height);
-            }
-          }
-        }
-        if (cResult[17] === tmp23) {
-          class E {
-            constructor(nativeEvent) {
-              const height = nativeEvent.nativeEvent.layout.height;
-              closure_2(height);
-              if (onHeightChange != null) {
-                onHeightChange(height);
-              }
-            }
-          }
-        }
-        let obj4 = { style: tmp17, start: constants3.START, end: tmp19, colors: tmp23, pointerEvents: "none" };
-        const tmp28 = closure_20(isSending(tmp2[22]), obj4);
-        cResult[17] = tmp23;
-        cResult[18] = tmp17;
-        cResult[19] = tmp19;
-        cResult[20] = tmp28;
-      }
-      let items1 = [tmp21, tmp4.linearGradient.backgroundColor];
-      cResult[14] = tmp4.linearGradient.backgroundColor;
-      cResult[15] = tmp21;
-      cResult[16] = items1;
-    }
-    const rect = { width: "100%", top: -12, bottom: tmp16, left: tmp4.footerContainer.paddingHorizontal, position: "absolute" };
-    cResult[7] = tmp4.footerContainer.paddingHorizontal;
-    cResult[8] = -footerStickyInsetBottom;
-    cResult[9] = rect;
-  }
-  const items2 = [tmp4.footerContainer, animatedStyle];
-  cResult[4] = animatedStyle;
-  cResult[5] = tmp4.footerContainer;
-  cResult[6] = items2;
-}) : (function AppLauncherCommandViewFooter(arg0) {
-  let SendMessageIcon;
-  let View2;
-  let animatedStyle;
-  let closure_2;
-  let closure_5;
-  let enableSubmit;
-  let first;
-  let first1;
-  let footerStickyInsetBottom;
-  let intl;
-  let isSending;
-  let items1;
-  let items2;
-  let items3;
-  let obj8;
-  let obj9;
-  let onSubmit;
-  let point;
-  let require;
-  let useReducedMotion;
-  ({ onHeightChange: require, isSending } = arg0);
-  closure_2 = undefined;
-  let stateFromStores;
-  first1 = undefined;
-  _slicedToArray = undefined;
-  ({ enableSubmit, onSubmit, animatedStyle, footerStickyInsetBottom } = arg0);
-  let tmp = closure_23();
-  [first, closure_2] = react.useState(0);
-  let obj = require("get initialized");
-  let items = [AccessibilityStore];
-  stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  [first1, _slicedToArray] = react.useState(false);
-  let obj2 = require("ReanimatedRexport");
-  let fn = function h() {
-    let fn;
-    let items;
-    let items1;
-    let obj2;
-    let timingStandard;
-    let withDelay;
-    let withTiming3;
-    const tmp = stateFromStores;
-    if (tmp) {
-      obj2 = {};
-    } else {
-      const tmp2 = first1;
-      if (tmp2) {
-        const obj3 = { opacity: 1, transform: items };
-        const obj4 = { translateX: withDelay(100, withTiming3(-4, timingStandard, "respect-motion-settings", fn)) };
-        withDelay = ReanimatedRexport.withDelay;
-        ReanimatedRexport;
-        withTiming3 = timing.withTiming;
-        fn = function e() {
-          const obj = closure_1_0(stateFromStores[17]);
-          const runOnJSResult = obj.runOnJS(closure_1_0(stateFromStores[20]).triggerHapticFeedback);
-          return runOnJSResult(closure_1_0(stateFromStores[20]).HapticFeedbackTypes.IMPACT_LIGHT);
-        };
-        const obj5 = { runOnJS: ReanimatedRexport.runOnJS, triggerHapticFeedback: HapticUtils.triggerHapticFeedback, HapticFeedbackTypes: HapticUtils.HapticFeedbackTypes };
-        timingStandard = timingPresets.timingStandard;
-        fn.__closure = obj5;
-        fn.__workletHash = 16763250045668;
-        fn.__initData = __initData;
-        items = [obj4];
-        obj2 = obj3;
-      } else {
-        let obj = isSending;
-        const withTiming = timing.withTiming;
-        let num = 1;
-        timing;
-        if (isSending.get()) {
-          num = 0;
-        }
-        obj2 = { opacity: withTiming(num, timingPresets.timingStandard), transform: items1 };
-        const withTiming2 = timing.withTiming;
-        let num2 = 0;
-        timing;
-        if (obj.get()) {
-          num2 = 100;
-        }
-        items1 = [{ translateX: withTiming2(num2, timingPresets.timingStandard) }];
-        const obj6 = { translateX: withTiming2(num2, timingPresets.timingStandard) };
-      }
-    }
-    return obj2;
-  };
-  let obj3 = { shouldReduceMotion: stateFromStores, isPressedDown: first1, withDelay: require("ReanimatedRexport").withDelay, withTiming: require("timing").withTiming, timingStandard: require("timingPresets").timingStandard, runOnJS: require("ReanimatedRexport").runOnJS, triggerHapticFeedback: require("HapticUtils").triggerHapticFeedback, HapticFeedbackTypes: require("HapticUtils").HapticFeedbackTypes, isSending };
-  fn.__closure = obj3;
-  fn.__workletHash = 9254309165845;
-  fn.__initData = __initData3;
-  const animatedStyle1 = obj2.useAnimatedStyle(fn);
-  let obj4 = {
-    onLayout(nativeEvent) {
-      const height = nativeEvent.nativeEvent.layout.height;
-      closure_2(height);
-      if (_require != null) {
-        _require(height);
-      }
-    },
-    style: items1,
-    children: items3
-  };
-  items1 = [tmp.footerContainer, animatedStyle];
-  const View = isSending(stateFromStores[17]).View;
-  let obj5 = { style: { width: "100%", top: -12, bottom: -footerStickyInsetBottom, left: tmp.footerContainer.paddingHorizontal, position: "absolute" }, start: constants3.START, end: point, colors: items2, pointerEvents: "none" };
-  point = { x: 0, y: 12 / (first + 12) };
-  items2 = [, ];
-  const tmp8 = isSending(stateFromStores[22]);
-  const obj7 = require("ColorUtils");
-  items2[0] = obj7.hexWithOpacity(tmp.linearGradient.backgroundColor, 0);
-  items2[1] = tmp.linearGradient.backgroundColor;
-  items3 = [closure_20(tmp8, obj5), ];
-  let obj6 = {
-    onPress: onSubmit,
-    onPressIn() {
-      return closure_5(true);
-    },
-    onPressOut() {
-      return closure_5(false);
-    },
-    disabled: !enableSubmit,
-    style: tmp.submitButton,
-    text: intl.string(require("intl").t.TXNS7S),
-    icon: closure_20(View2, obj8),
-    iconPosition: "end"
-  };
-  const BaseTextButton = require("BaseTextButton").BaseTextButton;
-  intl = require("intl").intl;
-  obj8 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj9) };
-  View2 = isSending(stateFromStores[17]).View;
-  obj9 = { style: { marginLeft: 8 }, color: isSending(stateFromStores[12]).unsafe_rawColors.WHITE, size: "sm" };
-  SendMessageIcon = require("SendMessageIcon").SendMessageIcon;
-  items3[1] = closure_20(BaseTextButton, obj6);
-  return closure_21(View, obj4);
-});
-let __initData4 = { code: "function AppLauncherCommandViewScreenTsx5(){const{bottomSheetPosition,screenHeight,maxHeight,footerStickyInsetBottom}=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-footerStickyInsetBottom}]};}" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_31 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandView(command) {
+function AppLauncherCommandView(command) {
   let analyticsLocation;
+  let closure_2;
   let context;
+  let context2;
   let expandBottomSheet;
+  let hasAccessResult;
   let hasPermission;
   let installOnDemand;
-  let loading;
-  let preSelectedCommand;
-  let section;
-  let sectionDescriptor;
-  let sectionName;
-  let tmp7;
-  let tmp = command;
-  let tmp2 = loading;
-  const obj = command(loading[15]);
-  const cResult = obj.c(21);
-  command = command.command;
-  ({ context, section, preSelectedCommand, analyticsLocation, installOnDemand, sectionName, expandBottomSheet } = command);
-  const onCommandExecuted = command.onCommandExecuted;
-  let tmp4 = expandBottomSheet(loading[56])(null != context.channel, "channel should not be null");
-  const tmp5 = expandBottomSheet(loading[57])();
-  let closure_2 = tmp5;
-  const tmp6 = closure_32(context.channel, preSelectedCommand, analyticsLocation, sectionName);
-  loading = tmp6.loading;
-  let command2 = command;
-  ({ sectionDescriptor, hasPermission } = tmp6);
-  if (command == null) {
-    command2 = tmp6.command;
-  }
-  const tmpResult = tmp(tmp2[26]);
-  const bottomSheetExpandReasonRef = tmpResult.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
-  if (cResult[0] !== command2) {
-    let tmp8 = null != command2;
-    if (tmp8) {
-      let options = command2.options;
-      if (options == null) {
-        options = [];
-      }
-      tmp8 = options.length > 0;
-    }
-    cResult[0] = command2;
-    cResult[1] = tmp8;
-    tmp7 = tmp8;
-  } else {
-    tmp7 = cResult[1];
-  }
-  let closure_5 = tmp7;
-  if (cResult[2] === bottomSheetExpandReasonRef) {
-    if (cResult[3] === command) {
-      if (cResult[4] === tmp7) {
-        if (cResult[5] === expandBottomSheet) {
-          if (cResult[6] === loading) {
-            let tmp9;
-            let tmp10;
-            if (cResult[7] === tmp5) {
-              tmp9 = cResult[8];
-              tmp10 = cResult[9];
-            }
-            const effect = react.useEffect(tmp9, tmp10);
-            if (section == null) {
-              section = sectionDescriptor;
-            }
-            if (preSelectedCommand == null) {
-              preSelectedCommand = null;
-            }
-            if (cResult[10] === analyticsLocation) {
-              if (cResult[11] === context) {
-                if (cResult[12] === installOnDemand) {
-                  if (cResult[13] === loading) {
-                    if (cResult[14] === onCommandExecuted) {
-                      if (cResult[15] === sectionName) {
-                        if (cResult[16] === command2) {
-                          if (cResult[17] === section) {
-                            if (cResult[18] === preSelectedCommand) {
-                              let tmp14;
-                              if (cResult[19] === (null != command || hasPermission)) {
-                                tmp14 = cResult[20];
-                              }
-                              return tmp14;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            const obj2 = { command: command2, context, section, preSelectedCommand, loading, hasPermissions: null != command || hasPermission, installOnDemand, sectionName, analyticsLocation, onCommandExecuted };
-            const tmp17 = closure_20(AppLauncherCommandViewInner, obj2);
-            cResult[10] = analyticsLocation;
-            cResult[11] = context;
-            cResult[12] = installOnDemand;
-            cResult[13] = loading;
-            cResult[14] = onCommandExecuted;
-            cResult[15] = sectionName;
-            cResult[16] = command2;
-            cResult[17] = section;
-            cResult[18] = preSelectedCommand;
-            class P {
-              constructor() {
-                tmp = closure_2;
-                if (tmp) {
-                  tmp2 = closure_5;
-                  if (!tmp2) {
-                    tmp3 = loading;
-                    tmp4 = !loading;
-                    if (tmp4) {
-                      tmp5 = command;
-                      tmp6 = null;
-                      tmp4 = null == command;
-                    }
-                    tmp2 = tmp4;
-                  }
-                  tmp = tmp2;
-                }
-                if (tmp) {
-                  tmp7 = closure_4;
-                  tmp8 = closure_0;
-                  tmp9 = closure_3;
-                  closure_4.current = closure_0(closure_3[26]).AppLauncherBottomSheetExpandReason.COMMAND_VIEW;
-                  tmp10 = null;
-                  if (expandBottomSheet != null) {
-                    tmp11 = expandBottomSheet();
-                  }
-                }
-                return;
-              }
-            }
-            cResult[20] = tmp17;
-            tmp14 = tmp17;
-          }
-        }
-      }
-    }
-  }
-  class P {
-    constructor() {
-      tmp = closure_2;
-      if (tmp) {
-        tmp2 = closure_5;
-        if (!tmp2) {
-          tmp3 = loading;
-          tmp4 = !loading;
-          if (tmp4) {
-            tmp5 = command;
-            tmp6 = null;
-            tmp4 = null == command;
-          }
-          tmp2 = tmp4;
-        }
-        tmp = tmp2;
-      }
-      if (tmp) {
-        tmp7 = closure_4;
-        tmp8 = closure_0;
-        tmp9 = closure_3;
-        closure_4.current = closure_0(closure_3[26]).AppLauncherBottomSheetExpandReason.COMMAND_VIEW;
-        tmp10 = null;
-        if (expandBottomSheet != null) {
-          tmp11 = expandBottomSheet();
-        }
-      }
-      return;
-    }
-  }
-  const items = [command, tmp7, loading, tmp5, bottomSheetExpandReasonRef, expandBottomSheet];
-  cResult[2] = bottomSheetExpandReasonRef;
-  cResult[3] = command;
-  cResult[4] = tmp7;
-  cResult[5] = expandBottomSheet;
-  cResult[6] = loading;
-  cResult[7] = tmp5;
-  cResult[8] = P;
-  cResult[9] = items;
-  tmp10 = items;
-  tmp9 = P;
-}) : (function AppLauncherCommandView(command) {
-  let analyticsLocation;
-  let context;
-  let expandBottomSheet;
-  let hasPermission;
-  let installOnDemand;
+  let isImpersonating;
   let onCommandExecuted;
   let preSelectedCommand;
+  let roleIds;
   let section;
   let sectionDescriptor;
   let sectionName;
+  let userId;
   command = command.command;
   ({ context, section, preSelectedCommand, analyticsLocation, sectionName, expandBottomSheet } = command);
   let loading;
   let bottomSheetExpandReasonRef;
   let closure_5;
-  ({ installOnDemand, onCommandExecuted } = command);
   let tmp = loading;
-  let tmp2 = expandBottomSheet(loading[56])(null != context.channel, "channel should not be null");
-  const tmp3 = expandBottomSheet(loading[57])();
-  let closure_2 = tmp3;
-  let tmp4 = closure_32(context.channel, preSelectedCommand, analyticsLocation, sectionName);
-  loading = tmp4.loading;
-  let command2 = command;
-  ({ sectionDescriptor, hasPermission } = tmp4);
-  if (command == null) {
-    command2 = tmp4.command;
-  }
-  const obj = command(tmp[26]);
-  bottomSheetExpandReasonRef = obj.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
-  let tmp5 = null != command2;
-  if (tmp5) {
-    let options = command2.options;
-    if (options == null) {
-      options = [];
-    }
-    tmp5 = options.length > 0;
-  }
-  closure_5 = tmp5;
-  const items = [command, tmp5, loading, tmp3, bottomSheetExpandReasonRef, expandBottomSheet];
-  const effect = react.useEffect(() => {
-    let tmp = closure_2;
-    if (tmp) {
-      let tmp2 = closure_5;
-      if (!tmp2) {
-        tmp2 = !loading && null == command;
-        const tmp4 = !loading && null == command;
-      }
-      tmp = tmp2;
-    }
-    if (tmp) {
-      bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.COMMAND_VIEW;
-      if (expandBottomSheet != null) {
-        expandBottomSheet();
-      }
-    }
-  }, items);
-  const obj2 = { command: command2, context, section, preSelectedCommand, loading, hasPermissions: null != command || hasPermission, installOnDemand, sectionName, analyticsLocation, onCommandExecuted };
-  const tmp7 = closure_20;
-  const tmp8 = AppLauncherCommandViewInner;
-  if (section == null) {
-    section = sectionDescriptor;
-  }
-  if (preSelectedCommand == null) {
-    preSelectedCommand = null;
-  }
-  return tmp7(tmp8, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppLauncherCommandViewScreen(route) {
-  let analyticsLocation;
-  let command;
-  let context;
-  let expandBottomSheet;
-  let installOnDemand;
-  let onCommandExecuted;
-  let preSelectedCommand;
-  let section;
-  let sectionName;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ command, context, section, preSelectedCommand, analyticsLocation, installOnDemand, sectionName, expandBottomSheet, onCommandExecuted } = route.route.params);
-  let tmp2 = null;
-  if (null != context) {
-    if (cResult[0] === analyticsLocation) {
-      if (cResult[1] === command) {
-        if (cResult[2] === context) {
-          if (cResult[3] === expandBottomSheet) {
-            if (cResult[4] === installOnDemand) {
-              if (cResult[5] === onCommandExecuted) {
-                if (cResult[6] === preSelectedCommand) {
-                  if (cResult[7] === section) {
-                    let tmp3;
-                    if (cResult[8] === sectionName) {
-                      tmp3 = cResult[9];
-                    }
-                    tmp2 = tmp3;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const obj2 = { command, context, section, preSelectedCommand, installOnDemand, sectionName, analyticsLocation, expandBottomSheet, onCommandExecuted };
-    const tmp6 = closure_20(closure_31, obj2);
-    cResult[0] = analyticsLocation;
-    cResult[1] = command;
-    cResult[2] = context;
-    cResult[3] = expandBottomSheet;
-    cResult[4] = installOnDemand;
-    cResult[5] = onCommandExecuted;
-    cResult[6] = preSelectedCommand;
-    cResult[7] = section;
-    cResult[8] = sectionName;
-    cResult[9] = tmp6;
-    tmp3 = tmp6;
-  }
-  return tmp2;
-}) : (function AppLauncherCommandViewScreen(route) {
-  const context = route.route.params.context;
-  let tmp9 = null;
-  if (null != context) {
-    const obj = { command: tmp, context, section: tmp2, preSelectedCommand: tmp3, installOnDemand: tmp5, sectionName: tmp6, analyticsLocation: tmp4, expandBottomSheet: tmp7, onCommandExecuted: tmp8 };
-    tmp9 = closure_20(closure_31, obj);
-  }
-  return tmp9;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreSelectedCommand(channel, commandId, _location, sectionName) {
-  let command;
-  let context;
+  ({ installOnDemand, onCommandExecuted } = command);
+  let tmp2 = expandBottomSheet(loading[54])(null != context.channel, "channel should not be null");
+  const tmp3 = expandBottomSheet(loading[55])();
+  importAll = tmp3;
+  const channel = context.channel;
+  let command2;
   let descriptor;
-  let isImpersonating;
-  let roleIds;
-  let tmp4;
-  let tmp9;
-  let userId;
-  _require = _location;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(28);
-  if (cResult[0] !== channel) {
-    let obj2 = { channel, type: "channel" };
-    cResult[0] = channel;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
+  let closure_4;
+  let tmp4 = importAll;
+  let commandId;
+  const useCommand = require("ApplicationCommandQueryApi").useCommand;
+  const tmp5 = require("ApplicationCommandQueryApi");
+  if (preSelectedCommand != null) {
+    commandId = preSelectedCommand.commandId;
   }
-  const tmp6 = command(tmp2[58]);
-  commandId = undefined;
-  const useCommand = tmp6.useCommand;
-  if (commandId != null) {
-    commandId = commandId.commandId;
-  }
-  const command1 = useCommand(tmp4, commandId);
-  command = command1.command;
+  const command1 = useCommand({ channel, type: "channel" }, commandId);
+  command2 = command1.command;
   const application = command1.application;
-  if (cResult[2] !== channel) {
-    const obj3 = { channel, type: "channel" };
-    cResult[2] = channel;
-    cResult[3] = obj3;
-    tmp9 = obj3;
-  } else {
-    tmp9 = cResult[3];
-  }
-  const tmp10 = closure_11(tmp9, true, true);
-  const tmp11 = closure_12(true, true);
-  let tmp12 = null;
+  const tmp8 = closure_11({ channel, type: "channel" }, true, true);
+  const tmp9 = closure_12(true, true);
+  let tmp10 = null;
   if (null != application) {
-    const result = tmp11.result;
+    const result = tmp9.result;
     descriptor = undefined;
     if (result != null) {
       if (result.sections[application.id] != null) {
-        descriptor = tmp14.descriptor;
+        descriptor = tmp12.descriptor;
       }
     }
     if (descriptor == null) {
-      const result2 = tmp10.result;
+      const result2 = tmp8.result;
       let descriptor1;
       if (result2 != null) {
         descriptor1 = result2.sections[application.id].descriptor;
       }
       descriptor = descriptor1;
     }
-    tmp12 = descriptor;
+    tmp10 = descriptor;
   }
-  descriptor = tmp12;
-  let tmp16 = null != application;
-  if (tmp16) {
-    const result3 = tmp10.result;
-    let tmp17;
+  descriptor = tmp10;
+  let tmp14 = null != application;
+  if (tmp14) {
+    const result3 = tmp8.result;
+    let tmp15;
     if (result3 != null) {
-      tmp17 = result3.sections[application.id];
+      tmp15 = result3.sections[application.id];
     }
-    tmp16 = null != tmp17;
+    tmp14 = null != tmp15;
   }
-  const ref = react.useRef(false);
-  const obj4 = react;
-  if (cResult[4] === _location) {
-    if (cResult[5] === command) {
-      if (cResult[6] === tmp12) {
-        let tmp18;
-        let tmp19;
-        let tmp22;
-        let tmp38;
-        if (cResult[7] === sectionName) {
-          tmp18 = cResult[8];
-          tmp19 = cResult[9];
-        }
-        const effect = obj4.useEffect(tmp18, tmp19);
-        const _Symbol = Symbol;
-        if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-          const items = [tmp(tmp2[36]).ApplicationCommandType.CHAT];
-          cResult[10] = items;
-          tmp22 = items;
-        } else {
-          tmp22 = cResult[10];
-        }
-        const tmpResult = tmp(descriptor[60]);
-        const permissionContext = tmpResult.usePermissionContext(channel, tmp22);
-        if (null != tmp12) {
-          if (null != command) {
-            ({ context, userId, roleIds, isImpersonating } = permissionContext);
-            if (cResult[13] === command) {
-              if (cResult[14] === context) {
-                if (cResult[15] === tmp16) {
-                  if (cResult[16] === isImpersonating) {
-                    if (cResult[17] === permissionContext) {
-                      if (cResult[18] === roleIds) {
-                        if (cResult[19] === tmp12.botId) {
-                          if (cResult[20] === tmp12.permissions) {
-                            let tmp24;
-                            if (cResult[21] === userId) {
-                              tmp24 = cResult[22];
-                            }
-                            const tmp34 = tmp24 === command(descriptor[61]).HasAccessResult.ALLOWED && tmp39;
-                            if (cResult[23] === command) {
-                              if (cResult[24] === tmp12) {
-                                if (cResult[25] === tmp34) {
-                                  let tmp36;
-                                  if (cResult[26] === (tmp11.fetchState.fetching || tmp10.fetchState.fetching)) {
-                                    tmp36 = cResult[27];
-                                  }
-                                  return tmp36;
-                                }
-                              }
-                            }
-                            const obj5 = { command, sectionDescriptor: tmp12, hasPermission: tmp34, loading: tmp11.fetchState.fetching || tmp10.fetchState.fetching };
-                            cResult[23] = command;
-                            cResult[24] = tmp12;
-                            cResult[25] = tmp34;
-                            cResult[26] = tmp11.fetchState.fetching || tmp10.fetchState.fetching;
-                            cResult[27] = obj5;
-                            tmp36 = obj5;
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            let guild_id;
-            if (context != null) {
-              guild_id = context.guild_id;
-            }
-            let allowedForUser = null;
-            if (null != guild_id) {
-              const tmp5Result = command(descriptor[61]);
-              allowedForUser = tmp5Result.computeAllowedForUser(tmp12.permissions, context.guild_id, userId, roleIds, isImpersonating);
-            }
-            let guild_id1;
-            if (context != null) {
-              guild_id1 = context.guild_id;
-            }
-            let allowedForChannel = null;
-            if (null != guild_id1) {
-              const tmp5Result3 = command(descriptor[61]);
-              allowedForChannel = tmp5Result3.computeAllowedForChannel(tmp12.permissions, context, context.guild_id);
-            }
-            const obj6 = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: tmp12.botId, isGuildInstalled: tmp16 };
-            const tmp5Result4 = command(descriptor[61]);
-            const hasAccessResult = tmp5Result4.hasAccess(command, permissionContext, obj6);
-            cResult[13] = command;
-            cResult[14] = context;
-            cResult[15] = tmp16;
-            cResult[16] = isImpersonating;
-            cResult[17] = permissionContext;
-            cResult[18] = roleIds;
-            cResult[19] = tmp12.botId;
-            cResult[20] = tmp12.permissions;
-            cResult[21] = userId;
-            cResult[22] = hasAccessResult;
-            tmp24 = hasAccessResult;
-          }
-        }
-        if (cResult[11] !== (tmp11.fetchState.fetching || tmp10.fetchState.fetching)) {
-          const obj7 = { command: null, sectionDescriptor: null, hasPermission: false, loading: tmp11.fetchState.fetching || tmp10.fetchState.fetching };
-          cResult[11] = tmp11.fetchState.fetching || tmp10.fetchState.fetching;
-          cResult[12] = obj7;
-          tmp38 = obj7;
-        } else {
-          tmp38 = cResult[12];
-        }
-        return tmp38;
-      }
-    }
-  }
-  const fn = function f() {
+  let obj = react;
+  closure_4 = react.useRef(false);
+  const items = [command2, tmp10, analyticsLocation, sectionName];
+  const effect = react.useEffect(() => {
     let obj2;
-    let current = null == command;
-    const tmp = command;
+    let current = null == command2;
+    const tmp = command2;
     if (!current) {
       current = null == descriptor;
     }
@@ -2047,230 +1337,102 @@ let closure_32 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePre
       current = ref.current;
     }
     if (!current) {
-      const obj = { command: tmp, triggerSection: obj2.getCommandTriggerSection(descriptor), location: _location, sectionName };
-      const trackCommandSelected = ApplicationCommandUtils.trackCommandSelected;
-      ApplicationCommandUtils;
-      obj2 = ApplicationCommandUtils;
-      trackCommandSelected(obj);
-      ref.current = true;
-    }
-  };
-  const items1 = [command, tmp12, _location, sectionName];
-  cResult[4] = _location;
-  cResult[5] = command;
-  cResult[6] = tmp12;
-  cResult[7] = sectionName;
-  cResult[8] = fn;
-  cResult[9] = items1;
-  tmp19 = items1;
-  tmp18 = fn;
-}) : (function usePreSelectedCommand(channel, commandId, _location, sectionName) {
-  let command;
-  let context;
-  let descriptor;
-  let hasAccessResult;
-  let isImpersonating;
-  let roleIds;
-  let userId;
-  _require = _location;
-  let tmp = command;
-  let obj = { channel, type: "channel" };
-  commandId = undefined;
-  const useCommand = command(descriptor[58]).useCommand;
-  const tmp3 = command(descriptor[58]);
-  if (commandId != null) {
-    commandId = commandId.commandId;
-  }
-  const command1 = useCommand(obj, commandId);
-  command = command1.command;
-  const application = command1.application;
-  let obj2 = { channel, type: "channel" };
-  const tmp6 = closure_11(obj2, true, true);
-  const tmp7 = closure_12(true, true);
-  let tmp8 = null;
-  if (null != application) {
-    const result = tmp7.result;
-    descriptor = undefined;
-    if (result != null) {
-      if (result.sections[application.id] != null) {
-        descriptor = tmp10.descriptor;
-      }
-    }
-    if (descriptor == null) {
-      const result2 = tmp6.result;
-      let descriptor1;
-      if (result2 != null) {
-        descriptor1 = result2.sections[application.id].descriptor;
-      }
-      descriptor = descriptor1;
-    }
-    tmp8 = descriptor;
-  }
-  descriptor = tmp8;
-  let tmp12 = null != application;
-  if (tmp12) {
-    const result3 = tmp6.result;
-    let tmp13;
-    if (result3 != null) {
-      tmp13 = result3.sections[application.id];
-    }
-    tmp12 = null != tmp13;
-  }
-  const ref = react.useRef(false);
-  const items = [command, tmp8, _location, sectionName];
-  const effect = react.useEffect(() => {
-    let obj2;
-    let current = null == command;
-    const tmp = command;
-    if (!current) {
-      current = null == descriptor;
-    }
-    if (!current) {
-      current = ref.current;
-    }
-    if (!current) {
-      const obj = { command: tmp, triggerSection: obj2.getCommandTriggerSection(descriptor), location: _location, sectionName };
-      const trackCommandSelected = ApplicationCommandUtils.trackCommandSelected;
-      ApplicationCommandUtils;
-      obj2 = ApplicationCommandUtils;
+      const obj = { command: tmp, triggerSection: obj2.getCommandTriggerSection(descriptor), location: analyticsLocation, sectionName };
+      const trackCommandSelected = command(loading[57]).trackCommandSelected;
+      command(loading[57]);
+      obj2 = command(loading[57]);
       trackCommandSelected(obj);
       ref.current = true;
     }
   }, items);
-  const usePermissionContext = require("CommandPermissionContext").usePermissionContext;
+  const usePermissionContext = command(tmp[58]).usePermissionContext;
   const items1 = [];
-  require("CommandPermissionContext");
-  items1[0] = require("Server").ApplicationCommandType.CHAT;
+  command(tmp[58]);
+  items1[0] = command(tmp[34]).ApplicationCommandType.CHAT;
   const permissionContext = usePermissionContext(channel, items1);
-  if (null != tmp8) {
-    if (null != command) {
-      ({ context, userId, roleIds, isImpersonating } = permissionContext);
+  const tmp17 = command;
+  if (null != tmp10) {
+    let obj3;
+    if (null != command2) {
+      ({ context: context2, userId, roleIds, isImpersonating } = permissionContext);
       let guild_id;
       const hasBaseAccessPermissions = permissionContext.hasBaseAccessPermissions;
-      if (context != null) {
-        guild_id = context.guild_id;
+      if (context2 != null) {
+        guild_id = context2.guild_id;
       }
       let allowedForUser = null;
       if (null != guild_id) {
-        const tmpResult = tmp(descriptor[61]);
-        allowedForUser = tmpResult.computeAllowedForUser(tmp8.permissions, context.guild_id, userId, roleIds, isImpersonating);
+        const tmp4Result = tmp4(tmp[59]);
+        allowedForUser = tmp4Result.computeAllowedForUser(tmp10.permissions, context2.guild_id, userId, roleIds, isImpersonating);
       }
       let guild_id1;
-      if (context != null) {
-        guild_id1 = context.guild_id;
+      if (context2 != null) {
+        guild_id1 = context2.guild_id;
       }
       let allowedForChannel = null;
       if (null != guild_id1) {
-        const tmpResult3 = tmp(descriptor[61]);
-        allowedForChannel = tmpResult3.computeAllowedForChannel(tmp8.permissions, context, context.guild_id);
+        const tmp4Result3 = tmp4(tmp[59]);
+        allowedForChannel = tmp4Result3.computeAllowedForChannel(tmp10.permissions, context2, context2.guild_id);
       }
-      const obj3 = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: tmp8.botId, isGuildInstalled: tmp12 };
-      const obj4 = { command, sectionDescriptor: tmp8, hasPermission: hasAccessResult === tmp(descriptor[61]).HasAccessResult.ALLOWED && hasBaseAccessPermissions, loading: tmp7.fetchState.fetching || tmp6.fetchState.fetching };
-      const tmpResult4 = tmp(descriptor[61]);
-      hasAccessResult = tmpResult4.hasAccess(command, permissionContext, obj3);
-      hasAccessResult === tmp(descriptor[61]).HasAccessResult.ALLOWED && hasBaseAccessPermissions;
-      return obj4;
+      let obj2 = { applicationAllowedForUser: allowedForUser, applicationAllowedForChannel: allowedForChannel, commandBotId: tmp10.botId, isGuildInstalled: tmp14 };
+      obj3 = { command: command2, sectionDescriptor: tmp10, hasPermission: hasAccessResult === tmp4(tmp[59]).HasAccessResult.ALLOWED && hasBaseAccessPermissions, loading: tmp9.fetchState.fetching || tmp8.fetchState.fetching };
+      const tmp4Result4 = tmp4(tmp[59]);
+      hasAccessResult = tmp4Result4.hasAccess(command2, permissionContext, obj2);
+      hasAccessResult === tmp4(tmp[59]).HasAccessResult.ALLOWED && hasBaseAccessPermissions;
     }
+    loading = obj3.loading;
+    let command3 = command;
+    ({ sectionDescriptor, hasPermission } = obj3);
+    if (command == null) {
+      command3 = obj3.command;
+    }
+    const tmp17Result = tmp17(tmp[24]);
+    bottomSheetExpandReasonRef = tmp17Result.useRequiredAppLauncherContext().bottomSheetExpandReasonRef;
+    let tmp31 = null != command3;
+    if (tmp31) {
+      let options = command3.options;
+      if (options == null) {
+        options = [];
+      }
+      tmp31 = options.length > 0;
+    }
+    closure_5 = tmp31;
+    const items2 = [command, tmp31, loading, tmp3, bottomSheetExpandReasonRef, expandBottomSheet];
+    const effect1 = obj.useEffect(() => {
+      let tmp = closure_2;
+      if (tmp) {
+        let tmp2 = closure_5;
+        if (!tmp2) {
+          tmp2 = !loading && null == command;
+          const tmp4 = !loading && null == command;
+        }
+        tmp = tmp2;
+      }
+      if (tmp) {
+        bottomSheetExpandReasonRef.current = AppLauncherContext.AppLauncherBottomSheetExpandReason.COMMAND_VIEW;
+        if (expandBottomSheet != null) {
+          expandBottomSheet();
+        }
+      }
+    }, items2);
+    const obj4 = { command: command3, context, section, preSelectedCommand, loading, hasPermissions: null != command || hasPermission, installOnDemand, sectionName, analyticsLocation, onCommandExecuted };
+    const tmp33 = closure_20;
+    const tmp34 = AppLauncherCommandViewInner;
+    if (section == null) {
+      section = sectionDescriptor;
+    }
+    if (preSelectedCommand == null) {
+      preSelectedCommand = null;
+    }
+    return tmp33(tmp34, obj4);
   }
-  const loading = tmp7.fetchState.fetching || tmp6.fetchState.fetching;
-  return { command: null, sectionDescriptor: null, hasPermission: false, loading };
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_33 = ReactCompilerGating.isReactCompilerEnabled() ? (function LoadingState() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { style: { flex: 1, justifyContent: "center", alignItems: "center" }, children: closure_20(metroImportAll, { size: "large" }) };
-    const tmp6 = closure_20(metroImportDefault, obj2);
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function LoadingState() {
+  obj3 = { command: null, sectionDescriptor: null, hasPermission: false, loading: tmp9.fetchState.fetching || tmp8.fetchState.fetching };
+}
+function LoadingState() {
   const obj = { style: { flex: 1, justifyContent: "center", alignItems: "center" }, children: closure_20(metroImportAll, { size: "large" }) };
   return closure_20(metroImportDefault, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFoundState(onPressBack) {
-  let emptyState;
-  let emptyStateContainer;
-  let failureStateButtonPill;
-  let failureStateButtonWrapper;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(13);
-  onPressBack = onPressBack.onPressBack;
-  const tmp4 = closure_23();
-  const obj2 = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = obj2.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NOT_FOUND);
-  ({ emptyStateContainer, emptyState } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t["pX/qb9"]);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl4.t.exOQVY);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp6 = stringResult;
-    tmp7 = stringResult1;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult2 = intl3.string(intl4.t["/g10LC"]);
-    cResult[2] = stringResult2;
-    tmp10 = stringResult2;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] === onPressBack) {
-    if (cResult[4] === tmp4.failureStateButtonPill) {
-      let tmp12;
-      if (cResult[5] === tmp4.failureStateButtonWrapper) {
-        tmp12 = cResult[6];
-      }
-      if (cResult[7] === tmp4.emptyState) {
-        let tmp14;
-        if (cResult[8] === tmp12) {
-          tmp14 = cResult[9];
-        }
-        if (cResult[10] === tmp4.emptyStateContainer) {
-          let tmp18;
-          if (cResult[11] === tmp14) {
-            tmp18 = cResult[12];
-          }
-          return tmp18;
-        }
-        const obj3 = { style: emptyStateContainer, children: tmp14 };
-        const tmp21 = closure_20(metroImportDefault, obj3);
-        cResult[10] = tmp4.emptyStateContainer;
-        cResult[11] = tmp14;
-        cResult[12] = tmp21;
-        tmp18 = tmp21;
-      }
-      const obj4 = { style: emptyState, lightSource: AssetRegistryDefault3, darkSource: AssetRegistryDefault4, title: tmp6, body: tmp7, children: tmp12 };
-      const EmptyState = tmp(1199).EmptyState;
-      const tmp17 = closure_20(EmptyState, obj4);
-      cResult[7] = tmp4.emptyState;
-      cResult[8] = tmp12;
-      cResult[9] = tmp17;
-      tmp14 = tmp17;
-    }
-  }
-  const tmp13 = closure_20(BaseTextButton2.BaseTextButton, { shrink: true, size: "sm", variant: "secondary", onPress: onPressBack, pillStyle: failureStateButtonPill, style: failureStateButtonWrapper, text: tmp10 });
-  cResult[3] = onPressBack;
-  cResult[4] = tmp4.failureStateButtonPill;
-  cResult[5] = tmp4.failureStateButtonWrapper;
-  cResult[6] = tmp13;
-  tmp12 = tmp13;
-}) : (function NotFoundState(onPressBack) {
+}
+function NotFoundState(onPressBack) {
   let BaseTextButton;
   let EmptyState;
   let intl;
@@ -2291,132 +1453,8 @@ let closure_34 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotFou
   BaseTextButton = BaseTextButton2.BaseTextButton;
   intl3 = intl4.intl;
   return closure_20(metroImportDefault, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPermsState(arg0) {
-  let command;
-  let failureStateButtonPill;
-  let failureStateButtonWrapper;
-  let items;
-  let items1;
-  let onPressBack;
-  let tmp6;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(22);
-  ({ onPressBack, command } = arg0);
-  const tmp4 = closure_23();
-  const obj2 = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = obj2.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.COMMAND_NO_PERMISSIONS);
-  const emptyStateContainer = tmp4.emptyStateContainer;
-  if (cResult[0] !== command.displayName) {
-    const obj3 = { variant: "heading-lg/bold", color: "text-default", children: command.displayName };
-    const tmp8 = closure_20(Text_Text.Text, obj3);
-    cResult[0] = command.displayName;
-    cResult[1] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== command.displayDescription) {
-    const obj4 = { variant: "heading-sm/medium", color: "text-default", children: command.displayDescription };
-    const tmp11 = closure_20(Text_Text.Text, obj4);
-    cResult[2] = command.displayDescription;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.commandNameContainer) {
-    if (cResult[5] === tmp6) {
-      let tmp12;
-      let tmp16;
-      let tmp15;
-      let tmp19;
-      if (cResult[6] === tmp9) {
-        tmp12 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      const emptyState = tmp4.emptyState;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1125).intl;
-        const stringResult = intl.string(intl4.t.TzufcR);
-        const intl2 = tmp(1125).intl;
-        const stringResult1 = intl2.string(intl4.t["I/O+A1"]);
-        cResult[8] = stringResult;
-        cResult[9] = stringResult1;
-        tmp16 = stringResult1;
-        tmp15 = stringResult;
-      } else {
-        tmp15 = cResult[8];
-        tmp16 = cResult[9];
-      }
-      const _Symbol2 = Symbol;
-      ({ failureStateButtonPill, failureStateButtonWrapper } = tmp4);
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1125).intl;
-        const stringResult2 = intl3.string(intl4.t["/g10LC"]);
-        cResult[10] = stringResult2;
-        tmp19 = stringResult2;
-      } else {
-        tmp19 = cResult[10];
-      }
-      if (cResult[11] === onPressBack) {
-        if (cResult[12] === tmp4.failureStateButtonPill) {
-          let tmp21;
-          if (cResult[13] === tmp4.failureStateButtonWrapper) {
-            tmp21 = cResult[14];
-          }
-          if (cResult[15] === tmp4.emptyState) {
-            let tmp24;
-            if (cResult[16] === tmp21) {
-              tmp24 = cResult[17];
-            }
-            if (cResult[18] === tmp4.emptyStateContainer) {
-              if (cResult[19] === tmp24) {
-                let tmp28;
-                if (cResult[20] === tmp12) {
-                  tmp28 = cResult[21];
-                }
-                return tmp28;
-              }
-            }
-            const obj5 = { style: emptyStateContainer, children: items };
-            items = [tmp12, tmp24];
-            const tmp31 = closure_21(metroImportDefault, obj5);
-            cResult[18] = tmp4.emptyStateContainer;
-            cResult[19] = tmp24;
-            cResult[20] = tmp12;
-            cResult[21] = tmp31;
-            tmp28 = tmp31;
-          }
-          const obj6 = { style: emptyState, lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: tmp15, body: tmp16, children: tmp21 };
-          const EmptyState = tmp(1199).EmptyState;
-          const tmp27 = closure_20(EmptyState, obj6);
-          cResult[15] = tmp4.emptyState;
-          cResult[16] = tmp21;
-          cResult[17] = tmp27;
-          tmp24 = tmp27;
-        }
-      }
-      const obj7 = { shrink: true, size: "sm", variant: "secondary", onPress: onPressBack, pillStyle: failureStateButtonPill, style: failureStateButtonWrapper, text: tmp19 };
-      const tmp23 = closure_20(BaseTextButton2.BaseTextButton, obj7);
-      cResult[11] = onPressBack;
-      cResult[12] = tmp4.failureStateButtonPill;
-      cResult[13] = tmp4.failureStateButtonWrapper;
-      cResult[14] = tmp23;
-      tmp21 = tmp23;
-    }
-  }
-  const obj8 = { style: tmp4.commandNameContainer, children: items1 };
-  items1 = [tmp6, tmp9];
-  const tmp13 = closure_21(metroImportDefault, obj8);
-  cResult[4] = tmp4.commandNameContainer;
-  cResult[5] = tmp6;
-  cResult[6] = tmp9;
-  cResult[7] = tmp13;
-  tmp12 = tmp13;
-}) : (function NoPermsState(command) {
+}
+function NoPermsState(command) {
   let BaseTextButton;
   let intl;
   let intl2;
@@ -2446,7 +1484,37 @@ let closure_35 = ReactCompilerGating.isReactCompilerEnabled() ? (function NoPerm
   intl3 = intl4.intl;
   items1[1] = closure_20(EmptyState, obj6);
   return closure_21(metroImportDefault, obj2);
-});
+}
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ View: metroImportDefault, ActivityIndicator: metroImportAll, ScrollView: c9 } = react_native);
+({ useContextIndexState: unpackModuleId, useUserIndexState: closure_12 } = ApplicationCommandIndexStore);
+({ AppLauncherOptionAutoFocusType: closure_14, useAppLauncherNavigation: closure_15, DEFAULT_CONTENT_PADDING } = AppLauncherNativeConstants);
+({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = Constants);
+const MediaKeyboardTarget = MediaKeyboardConstants.MediaKeyboardTarget;
+({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, optionsContainer: obj3, requiredOptionsContainer: { marginTop: 24, gap: 24 }, optionalOptionsContainer: {}, optionalOptionsChild: { marginBottom: 24 }, optionalOptionsFirstChild: { marginTop: 12 }, optionalOptionsLastChild: { marginBottom: 12 }, footerContainer: { position: "absolute", left: 0, bottom: 0, right: 0, paddingHorizontal: DEFAULT_CONTENT_PADDING }, submitButton: { flex: 1, overflow: "hidden" }, optionalOptionsSectionTitle: { marginTop: 36 }, optionalOptionList: { marginTop: 12 }, noRequiredOptionsCalloutContainer: obj4, noOptionCalloutContainer: obj5, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start", paddingTop: 30 }, emptyStateContainer: obj6, failureStateButtonWrapper: { marginTop: 24, alignSelf: "center" }, failureStateButtonPill: obj7, commandNameContainer: { alignItems: "center", justifyContent: "center", textAlign: "center" }, linearGradient: obj8 };
+obj2 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+createStyles = createStyles.createStyles;
+obj3 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingBottom: DEFAULT_CONTENT_PADDING, backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+obj4 = { paddingVertical: 16, paddingHorizontal: 12, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, marginTop: 24, borderRadius: nativeDefault.radii.lg };
+obj5 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginTop: 24, borderRadius: nativeDefault.radii.lg };
+obj6 = { paddingTop: AppLauncherCommandViewHeader.EXPANDED_HEADER_TOTAL_CONSUMED_SPACE_IN_PARENT + nativeDefault.space.PX_4, flex: 1 };
+obj7 = { borderRadius: nativeDefault.radii.xxl, paddingHorizontal: 12, paddingVertical: 8 };
+obj8 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };
+let closure_23 = createStyles(obj);
+const __initData = { code: "function AppLauncherCommandViewScreenTsx1(){const{shouldReduceMotion,isPressedDown,withDelay,withTiming,timingStandard,runOnJS,triggerHapticFeedback,HapticFeedbackTypes,isSending}=this.__closure;if(shouldReduceMotion)return{};if(isPressedDown){return{opacity:1,transform:[{translateX:withDelay(100,withTiming(-4,timingStandard,'respect-motion-settings',function(){return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}))}]};}return{opacity:withTiming(isSending.get()?0:1,timingStandard),transform:[{translateX:withTiming(isSending.get()?100:0,timingStandard)}]};}" };
+let closure_25 = { code: "function AppLauncherCommandViewScreenTsx2(){const{runOnJS,triggerHapticFeedback,HapticFeedbackTypes}=this.__closure;return runOnJS(triggerHapticFeedback)(HapticFeedbackTypes.IMPACT_LIGHT);}" };
+let __initData2 = { code: "function AppLauncherCommandViewScreenTsx3(){const{bottomSheetPosition,screenHeight,maxHeight,footerStickyInsetBottom}=this.__closure;const animatedSheetOffset=bottomSheetPosition.get()-screenHeight+maxHeight;return{transform:[{translateY:-animatedSheetOffset-footerStickyInsetBottom}]};}" };
 let result = size.fileFinishedImporting("modules/app_launcher/native/screens/command_view/AppLauncherCommandViewScreen.tsx");
 
-export default tmp8;
+export default function AppLauncherCommandViewScreen(route) {
+  const context = route.route.params.context;
+  let tmp9 = null;
+  if (null != context) {
+    const obj = { command: tmp, context, section: tmp2, preSelectedCommand: tmp3, installOnDemand: tmp5, sectionName: tmp6, analyticsLocation: tmp4, expandBottomSheet: tmp7, onCommandExecuted: tmp8 };
+    tmp9 = closure_20(AppLauncherCommandView, obj);
+  }
+  return tmp9;
+};

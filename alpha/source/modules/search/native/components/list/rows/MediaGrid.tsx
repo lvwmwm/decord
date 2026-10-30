@@ -1,17 +1,17 @@
-// Module ID: 18629
-// Function ID: 18630
+// Module ID: 18688
+// Function ID: 18689
 // Name: MediaGrid
-// Dependencies: [19, 17, 9780, 21, 5005, 558, 576, 18625, 13689, 7280, 18606, 2]
+// Dependencies: [19, 17, 9806, 21, 5009, 18684, 13836, 7288, 18665, 2]
+// Exports: default
 
-// Module 18629 (MediaGrid)
+// Module 18688 (MediaGrid)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13689 */;
-import MediaGridItemDefault from "MediaGridItem" /* 18625 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13836 */;
+import MediaGridItemDefault from "MediaGridItem" /* 18684 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9780 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SearchConstants from "SearchConstants" /* 9806 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let SEARCH_LIST_HORIZONTAL_PADDING;
@@ -21,69 +21,12 @@ let obj2;
 const View = react_native.View;
 ({ SEARCH_LIST_HORIZONTAL_PADDING, MEDIA_NUM_COLUMNS: hasOwnProperty, MEDIA_ITEM_GAP_WIDTH: metroRequire } = SearchConstants);
 const jsx = Fragment.jsx;
-let obj = { container: obj2 };
+const obj = { container: obj2 };
 obj2 = { paddingLeft: SEARCH_LIST_HORIZONTAL_PADDING - 2, paddingRight: SEARCH_LIST_HORIZONTAL_PADDING + 4 };
 let closure_8 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaGrid(media) {
-  let onPress;
-  const tmp = media;
-  const obj = media(onPress[6]);
-  const cResult = obj.c(11);
-  media = media.media;
-  const mediaSize = media.mediaSize;
-  onPress = media.onPress;
-  const animate = media.animate;
-  const tmp4 = closure_8();
-  if (cResult[0] === animate) {
-    if (cResult[1] === media.length) {
-      if (cResult[2] === mediaSize) {
-        let tmp5;
-        if (cResult[3] === onPress) {
-          tmp5 = cResult[4];
-        }
-        if (cResult[5] === media) {
-          let tmp6;
-          if (cResult[6] === tmp5) {
-            tmp6 = cResult[7];
-          }
-          if (cResult[8] === tmp4.container) {
-            let tmp10;
-            if (cResult[9] === tmp6) {
-              tmp10 = cResult[10];
-            }
-            return tmp10;
-          }
-          const tmp13 = <View style={tmp4.container}>{tmp6}</View>;
-          cResult[8] = tmp4.container;
-          cResult[9] = tmp6;
-          cResult[10] = tmp13;
-          tmp10 = tmp13;
-        }
-        const FlashList = tmp(tmp2[9]).FlashList;
-        const tmp9 = <FlashList numColumns={numColumns} data={media} renderItem={tmp5} ItemSeparatorComponent={tmp(onPress[10]).MediaVerticalSeparator} scrollEnabled={false} />;
-        cResult[5] = media;
-        cResult[6] = tmp5;
-        cResult[7] = tmp9;
-        tmp6 = tmp9;
-      }
-    }
-  }
-  const fn = function s(arg0) {
-    let index;
-    let item;
-    ({ item, index } = arg0);
-    MediaGridItemDefault;
-    const obj2 = SearchPlatformUtils;
-    const obj3 = { itemIndex: index, numItems: media.length, numColumns: hasOwnProperty, spacing: metroRequire };
-    return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={obj2.getMediaGridItemStyles(obj3)} />;
-  };
-  cResult[0] = animate;
-  cResult[1] = media.length;
-  cResult[2] = mediaSize;
-  cResult[3] = onPress;
-  cResult[4] = fn;
-  tmp5 = fn;
-}) : (function MediaGrid(media) {
+const result = size.fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
+
+export default function MediaGrid(media) {
   media = media.media;
   const mediaSize = media.mediaSize;
   const onPress = media.onPress;
@@ -99,10 +42,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaGrid(
     const obj3 = { itemIndex: index, numItems: media.length, numColumns: hasOwnProperty, spacing: metroRequire };
     return <tmp animate={animate} size={mediaSize} media={item} onPress={onPress} containerStyle={obj2.getMediaGridItemStyles(obj3)} />;
   }, items);
-  let obj2 = { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[10]).MediaVerticalSeparator, scrollEnabled: false };
-  const FlashList = media(onPress[9]).FlashList;
+  let obj2 = { numColumns, data: media, renderItem: callback, ItemSeparatorComponent: media(onPress[8]).MediaVerticalSeparator, scrollEnabled: false };
+  const FlashList = media(onPress[7]).FlashList;
   return <View style={tmp.container}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/search/native/components/list/rows/MediaGrid.tsx");
-
-export default tmp3;
+};

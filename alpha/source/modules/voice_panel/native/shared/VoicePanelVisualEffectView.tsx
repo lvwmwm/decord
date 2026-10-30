@@ -1,22 +1,16 @@
-// Module ID: 19141
-// Function ID: 19142
+// Module ID: 19244
+// Function ID: 19245
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 1204, 21, 5005, 587, 558, 576, 5289, 5012, 504, 1381, 8950, 2]
+// Dependencies: [19, 17, 1193, 21, 5009, 575, 5591, 504, 5016, 1376, 8983, 2]
 
-// Module 19141 (VoicePanelVisualEffectView)
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import shared from "shared" /* 5012 */;
-import useToken2 from "useToken" /* 5289 */;
-import native from "native" /* 8950 */;
+// Module 19244 (VoicePanelVisualEffectView)
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -36,116 +30,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.modules.mobile.VOICE_PANEL_CONTROLS_BORDER_RADIUS };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_9 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelVisualEffectViewInner(matchAppTheme) {
-  let items1;
-  let items2;
-  let theme;
-  let tmp10;
-  let tmp11;
-  let obj = react2;
-  const cResult = obj.c(18);
-  matchAppTheme = matchAppTheme.matchAppTheme;
-  const tmpResult = useToken2;
-  const token = tmpResult.useToken(nativeDefault.colors.THEME_LOCKED_BLUR_FALLBACK);
-  const useToken = useToken2.useToken;
-  let token1 = token;
-  useToken2;
-  if (undefined !== matchAppTheme && matchAppTheme) {
-    token1 = useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND);
-  }
-  const tmp9 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ThemeStore];
-    const fn = function s() {
-      const obj = shared;
-      return obj.isThemeLight(theme.theme);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp10 = items;
-    tmp11 = fn;
-  } else {
-    [tmp10, tmp11] = cResult;
-  }
-  const tmpResult6 = get_initialized;
-  const stateFromStores = tmpResult6.useStateFromStores(tmp10, tmp11);
-  const tmpResult7 = useToken2;
-  const token2 = tmpResult7.useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER);
-  if (cResult[2] === token2) {
-    if (cResult[3] === stateFromStores) {
-      let tmp15;
-      if (cResult[4] === (undefined !== matchAppTheme && matchAppTheme)) {
-        tmp15 = cResult[5];
-      }
-      if (cResult[6] === "dark") {
-        let tmp18;
-        let tmp21;
-        if (cResult[7] === token1) {
-          tmp18 = cResult[8];
-        }
-        if (cResult[9] !== tmp15) {
-          const obj2 = { backgroundColor: tmp15 };
-          cResult[9] = tmp15;
-          cResult[10] = obj2;
-          tmp21 = obj2;
-        } else {
-          tmp21 = cResult[10];
-        }
-        if (cResult[11] === tmp9.border) {
-          let tmp22;
-          if (cResult[12] === tmp21) {
-            tmp22 = cResult[13];
-          }
-          if (cResult[14] === tmp18) {
-            if (cResult[15] === tmp9.wrapper) {
-              let tmp26;
-              if (cResult[16] === tmp22) {
-                tmp26 = cResult[17];
-              }
-              return tmp26;
-            }
-          }
-          const obj3 = { style: tmp9.wrapper, children: items1 };
-          items1 = [tmp18, tmp22];
-          const tmp29 = metroImportAll(hasOwnProperty, obj3);
-          cResult[14] = tmp18;
-          cResult[15] = tmp9.wrapper;
-          cResult[16] = tmp22;
-          cResult[17] = tmp29;
-          tmp26 = tmp29;
-        }
-        const obj4 = { style: items2 };
-        items2 = [tmp9.border, tmp21];
-        const tmp25 = metroImportDefault(hasOwnProperty, obj4);
-        cResult[11] = tmp9.border;
-        cResult[12] = tmp21;
-        cResult[13] = tmp25;
-        tmp22 = tmp25;
-      }
-      const obj5 = { blurTheme: "dark", android_fallbackColor: token1 };
-      const tmp20 = metroImportDefault(native.BackgroundBlurFill, obj5);
-      cResult[6] = "dark";
-      cResult[7] = token1;
-      cResult[8] = tmp20;
-      tmp18 = tmp20;
-    }
-  }
-  let tmp16;
-  const tmpResult8 = PlatformUtils;
-  if (tmpResult8.isIOS()) {
-    if (stateFromStores) {
-      if (!(undefined !== matchAppTheme && matchAppTheme)) {
-        const obj6 = { light: "transparent", dark: "transparent", highContrastLight: token2, highContrastDark: token2 };
-        tmp16 = React3(obj6);
-      }
-    }
-  }
-  cResult[2] = token2;
-  cResult[3] = stateFromStores;
-  cResult[4] = undefined !== matchAppTheme && matchAppTheme;
-  cResult[5] = tmp16;
-  tmp15 = tmp16;
-}) : (function VoicePanelVisualEffectViewInner(matchAppTheme) {
+const memoResult = react.memo(function VoicePanelVisualEffectViewInner(matchAppTheme) {
   let items2;
   let items3;
   let theme;
@@ -156,22 +41,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let stateFromStores;
   let token1;
   let tmp = flag;
-  let obj = flag(token1[8]);
+  let obj = flag(token1[6]);
   let token = obj.useToken(stateFromStores(token1[5]).colors.THEME_LOCKED_BLUR_FALLBACK);
-  const useToken = flag(token1[8]).useToken;
+  const useToken = flag(token1[6]).useToken;
   const tmp3 = stateFromStores;
-  const tmp5 = flag(token1[8]);
+  const tmp5 = flag(token1[6]);
   if (flag) {
     token = useToken(stateFromStores(token1[5]).colors.MOBILE_FLOATINGBAR_BACKGROUND);
   }
   const tmp6 = closure_9();
   const items = [ThemeStore];
-  const tmpResult = tmp(token1[10]);
+  const tmpResult = tmp(token1[7]);
   stateFromStores = tmpResult.useStateFromStores(items, () => {
-    const obj = flag(token1[9]);
+    const obj = flag(token1[8]);
     return obj.isThemeLight(theme.theme);
   });
-  const tmpResult2 = tmp(token1[8]);
+  const tmpResult2 = tmp(token1[6]);
   token1 = tmpResult2.useToken(tmp3(tmp2[5]).colors.MOBILE_FLOATINGBAR_BACKGROUND_HIGHER);
   const items1 = [stateFromStores, token1, flag];
   const memo = react.useMemo(() => {
@@ -188,12 +73,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return tmp;
   }, items1);
   let obj2 = { style: tmp6.wrapper, children: items2 };
-  items2 = [closure_7(tmp(tmp2[12]).BackgroundBlurFill, { blurTheme: "dark", android_fallbackColor: token }), ];
+  items2 = [closure_7(tmp(tmp2[10]).BackgroundBlurFill, { blurTheme: "dark", android_fallbackColor: token }), ];
   const obj3 = { style: items3 };
   items3 = [tmp6.border, { backgroundColor: memo }];
   items2[1] = closure_7(closure_5, obj3);
   return closure_8(closure_5, obj2);
-}));
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelVisualEffectView.tsx");
 
 export const VoicePanelVisualEffectView = memoResult;

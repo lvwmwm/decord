@@ -1,17 +1,17 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 10940
+// Function ID: 10941
 // Name: conjureVoiceChannelPin
-// Dependencies: [5, 4857, 4937, 1084, 584, 10831, 10160, 2]
+// Dependencies: [5, 4858, 4941, 1072, 572, 10854, 8191, 2]
 // Exports: parseVoiceChannelPinOutcome, pinVoiceChannel, resolveVoiceChannelPin
 
-// Module 10917 (conjureVoiceChannelPin)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10160 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+// Module 10940 (conjureVoiceChannelPin)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 8191 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, c2, c3;
@@ -39,7 +39,7 @@ let obj = function _pinVoiceChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

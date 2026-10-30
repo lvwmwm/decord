@@ -1,37 +1,74 @@
 // Module ID: 16057
 // Function ID: 16058
-// Dependencies: [16058, 16061, 16043, 16065, 16066, 16062]
+// Dependencies: [16058, 16059, 1160, 16060, 16061]
+// Exports: getCalendarPreferenceDataForRegion, getHourCyclesPreferenceDataForLocaleOrRegion, getTimeZonePreferenceForRegion, getWeekDataForRegion
 
 // Module 16057
-import _mod16043 from "module_16043" /* 16043 */;
-import _mod16058 from "module_16058" /* 16058 */;
-import _mod16062 from "module_16062" /* 16062 */;
-import _mod16065 from "module_16065" /* 16065 */;
-import _mod16066 from "module_16066" /* 16066 */;
-import prop from "module_16061" /* 16061 */;
+import _mod1160 from "module_1160" /* 1160 */;
+import calendars2 from "calendars" /* 16058 */;
+import hourCycles from "hourCycles" /* 16059 */;
+import timezones from "timezones" /* 16060 */;
+import weekData2 from "weekData" /* 16061 */;
 
-let tmp2;
-let closure_2 = _mod16058("wks");
-const _Symbol = _mod16043.Symbol;
-if (prop) {
-  tmp2 = _Symbol.for || _mod16043.Symbol;
-  const tmp3 = _Symbol.for || _mod16043.Symbol;
-} else {
-  tmp2 = _Symbol && _mod16043.Symbol.withoutSetter || _mod16065;
-}
-let closure_3 = tmp2;
 
-export default (arg0) => {
-  if (!_mod16066(closure_2, arg0)) {
-    if (_mod16062) {
-      let tmp6;
-      const tmpResult = _mod16066;
-      if (tmpResult(_mod16043.Symbol, arg0)) {
-        tmp6 = tmp(16043).Symbol[arg0];
-      }
-      closure_2[arg0] = tmp6;
-    }
-    tmp6 = closure_3(`Symbol.${arg0}`);
+export function getCalendarPreferenceDataForRegion(region) {
+  let str = null;
+  if (region) {
+    str = region.toUpperCase();
   }
-  return closure_2[arg0];
-};
+  const calendars = calendars2.calendars;
+  if (!str) {
+    str = "";
+  }
+  const arr = calendars[str] || calendars2.calendars["001"];
+  return arr.map((item) => {
+    let str = "gregory";
+    if ("gregorian" !== item) {
+      let str2 = "islamicc";
+      if ("islamic-civil" !== item) {
+        str2 = item;
+      }
+      str = str2;
+    }
+    return str;
+  });
+}
+export function getHourCyclesPreferenceDataForLocaleOrRegion(locale, region) {
+  const formatted = locale.toLowerCase();
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  let v001 = hourCycles.hourCycles[formatted] || tmp2(16059).hourCycles[str];
+  if (!v001) {
+    const concat = "".concat;
+    v001 = tmp2(16059).hourCycles["".concat("", formatted, "-001")];
+  }
+  if (!v001) {
+    v001 = tmp2(16059).hourCycles["001"];
+  }
+  const tmp2Result = _mod1160;
+  return tmp2Result.__spreadArray([], v001, true);
+}
+export function getTimeZonePreferenceForRegion(region) {
+  const formatted = region.toLowerCase();
+  const items = [];
+  if (timezones.timezones[formatted]) {
+    const tmp2Result = _mod1160;
+    return tmp2Result.__spreadArray(items, timezones.timezones[formatted], true);
+  } else {
+    return items;
+  }
+}
+export function getWeekDataForRegion(region) {
+  let str = "";
+  if (region) {
+    str = region.toUpperCase();
+  }
+  const weekData = weekData2.weekData;
+  if (!str) {
+    str = "001";
+  }
+  const tmp3 = weekData[str] || weekData2.weekData["001"];
+  return tmp3;
+}

@@ -1,19 +1,43 @@
 // Module ID: 8846
 // Function ID: 8847
-// Dependencies: [8847, 8849, 5044, 8853, 8844]
+// Dependencies: [17, 81, 50, 106, 65]
 
 // Module 8846
-import _mod8844 from "module_8844" /* 8844 */;
-import _mod8849 from "module_8849" /* 8849 */;
-import _mod8853 from "module_8853" /* 8853 */;
-import DeprecatedStyleSheetPropType from "DeprecatedStyleSheetPropType" /* 8847 */;
-import "module_5044";
-import module_5044_mod from "module_5044" /* 5044 */;
+import processColor from "processColor" /* 50 */;
+import react_native from "react-native" /* 17 */;
+import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
+import DynamicallyInjectedByGestureHandler_mod from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let module_5044;
-let module_8849;
-const obj = { accessible: module_5044.bool, accessibilityLabel: module_5044.node, accessibilityHint: module_5044.string, accessibilityActions: module_5044.arrayOf(module_5044.string), accessibilityIgnoresInvertColors: module_5044.bool, accessibilityRole: module_5044.oneOf(_mod8853.DeprecatedAccessibilityRoles), accessibilityState: module_5044.object, accessibilityValue: module_5044.object, accessibilityLiveRegion: module_5044.oneOf(["none", "polite", "assertive"]), importantForAccessibility: module_5044.oneOf(["auto", "yes", "no", "no-hide-descendants"]), accessibilityViewIsModal: module_5044.bool, accessibilityElementsHidden: module_5044.bool, onAccessibilityAction: module_5044.func, onAccessibilityTap: module_5044.func, onMagicTap: module_5044.func, testID: module_5044.string, nativeID: module_5044.string, onResponderGrant: module_5044.func, onResponderMove: module_5044.func, onResponderReject: module_5044.func, onResponderRelease: module_5044.func, onResponderTerminate: module_5044.func, onResponderTerminationRequest: module_5044.func, onStartShouldSetResponder: module_5044.func, onStartShouldSetResponderCapture: module_5044.func, onMoveShouldSetResponder: module_5044.func, onMoveShouldSetResponderCapture: module_5044.func, hitSlop: _mod8844, onLayout: module_5044.func, pointerEvents: module_5044.oneOf(["box-none", "none", "box-only", "auto"]), style: module_8849, removeClippedSubviews: module_5044.bool, renderToHardwareTextureAndroid: module_5044.bool, shouldRasterizeIOS: module_5044.bool, collapsable: module_5044.bool, needsOffscreenAlphaCompositing: module_5044.bool };
-module_8849 = DeprecatedStyleSheetPropType(_mod8849);
-module_5044 = module_5044_mod;
+let DynamicallyInjectedByGestureHandler;
+let assign;
+let obj2;
+let obj3;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNCSlider", bubblingEventTypes: obj2, directEventTypes: { topRNCSliderSlidingStart: { registrationName: "onRNCSliderSlidingStart" }, topRNCSliderSlidingComplete: { registrationName: "onRNCSliderSlidingComplete" } }, validAttributes: assign(obj3, DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onChange: true, onRNCSliderSlidingStart: true, onRNCSliderSlidingComplete: true, onRNCSliderValueChange: true })) };
+const _Object = Object;
+assign = Object.assign;
+obj2 = { topChange: { phasedRegistrationNames: { captured: "onChangeCapture", bubbled: "onChange" } }, topRNCSliderValueChange: { phasedRegistrationNames: { captured: "onRNCSliderValueChangeCapture", bubbled: "onRNCSliderValueChange" } } };
+let resolveAssetSource = resolveAssetSource_mod;
+if ("default" in resolveAssetSource) {
+  resolveAssetSource = resolveAssetSource.default;
+}
+obj3 = { accessibilityUnits: true, accessibilityIncrements: true, disabled: true, inverted: true, vertical: true, tapToSeek: true, maximumTrackImage: { process: resolveAssetSource }, maximumTrackTintColor: { process: processColor.default }, maximumValue: true, minimumTrackImage: { process: resolveAssetSource }, minimumTrackTintColor: { process: processColor.default }, minimumValue: true, step: true, testID: true, thumbImage: { process: resolveAssetSource }, thumbTintColor: { process: processColor.default }, thumbSize: true, trackImage: { process: resolveAssetSource }, value: true, lowerLimit: true, upperLimit: true };
+({ process: processColor.default });
+resolveAssetSource = resolveAssetSource_mod;
+if ("default" in resolveAssetSource) {
+  resolveAssetSource = resolveAssetSource.default;
+}
+({ process: processColor.default });
+resolveAssetSource = resolveAssetSource_mod;
+if ("default" in resolveAssetSource) {
+  resolveAssetSource = resolveAssetSource.default;
+}
+({ process: processColor.default });
+resolveAssetSource = resolveAssetSource_mod;
+if ("default" in resolveAssetSource) {
+  resolveAssetSource = resolveAssetSource.default;
+}
+DynamicallyInjectedByGestureHandler = DynamicallyInjectedByGestureHandler_mod;
 
-export default obj;
+export { __INTERNAL_VIEW_CONFIG };
+export default module_65.get("RNCSlider", () => obj);

@@ -1,46 +1,22 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 8187
+// Function ID: 8188
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [5274, 5005, 587, 558, 576, 504, 2]
+// Dependencies: [5622, 5009, 575, 504, 2]
+// Exports: useLegacyTextMigrationHighlight
 
-// Module 9004 (useLegacyTextMigrationHighlight)
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import DevSettingsStore from "DevSettingsStore" /* 5274 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8187 (useLegacyTextMigrationHighlight)
+import get_initialized from "get initialized" /* 504 */;
+import nativeDefault from "native" /* 575 */;
+import DevSettingsStore from "DevSettingsStore" /* 5622 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 let obj = { highlight: { borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER } };
 ({ borderWidth: 1, borderColor: nativeDefault.colors.STATUS_DANGER });
 let closure_3 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyTextMigrationHighlight() {
-  let tmp5;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(2);
-  const tmp4 = closure_3();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [DevSettingsStore];
-    const fn = function n() {
-      return DevSettingsStore.get("highlight_mana_text");
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  let highlight = null;
-  const tmpResult = get_initialized;
-  if (tmpResult.useStateFromStores(tmp5, tmp6)) {
-    highlight = tmp4.highlight;
-  }
-  return highlight;
-}) : (function useLegacyTextMigrationHighlight() {
+const result = size.fileFinishedImporting("design/void/LegacyText/native/useLegacyTextMigrationHighlight.tsx");
+
+export function useLegacyTextMigrationHighlight() {
   const items = [DevSettingsStore];
   let highlight = null;
   const tmp = closure_3();
@@ -49,7 +25,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyT
     highlight = tmp.highlight;
   }
   return highlight;
-});
-const result = size.fileFinishedImporting("design/void/LegacyText/native/useLegacyTextMigrationHighlight.tsx");
-
-export const useLegacyTextMigrationHighlight = tmp2;
+}

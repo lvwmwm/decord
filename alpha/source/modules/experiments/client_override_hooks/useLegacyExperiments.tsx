@@ -1,18 +1,15 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11515
+// Function ID: 11516
 // Name: useLegacyExperiments
-// Dependencies: [32, 19, 5227, 5228, 8546, 5232, 8544, 558, 576, 504, 2]
-// Exports: getLegacyExperiments
+// Dependencies: [32, 19, 5233, 5234, 8580, 5238, 8578, 504, 2]
+// Exports: getLegacyExperiments, useLegacyExperiments
 
-// Module 11312 (useLegacyExperiments)
+// Module 11515 (useLegacyExperiments)
 import react from "react" /* 19 */;
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import ExperimentManager from "ExperimentManager" /* 5232 */;
+import ExperimentManager from "ExperimentManager" /* 5238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5227 */;
-import ExperimentConstants from "ExperimentConstants" /* 5228 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ExperimentStore from "ExperimentStore" /* 5233 */;
+import ExperimentConstants from "ExperimentConstants" /* 5234 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -88,73 +85,18 @@ function getLegacyOverridesInfo(stateFromStoresObject1) {
 }
 const useMemo = react.useMemo;
 ({ ExperimentBuckets: metroRequire, ExperimentTypes: metroImportDefault } = ExperimentConstants);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyExperiments() {
-  let tmp12;
-  let tmp15;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ExperimentStore];
-    const fn = function s() {
-      return ExperimentStore.getRegisteredExperiments();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ExperimentStore];
-    const fn2 = function c() {
-      return ExperimentStore.getAllExperimentOverrideDescriptors();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult2 = get_initialized;
-  const stateFromStoresObject1 = tmpResult2.useStateFromStoresObject(tmp8, tmp9);
-  if (cResult[4] !== stateFromStoresObject) {
-    const tmp14 = parseRegisteredExperiments(stateFromStoresObject);
-    cResult[4] = stateFromStoresObject;
-    cResult[5] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] !== stateFromStoresObject1) {
-    const tmp17 = getLegacyOverridesInfo(stateFromStoresObject1);
-    cResult[6] = stateFromStoresObject1;
-    cResult[7] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[7];
-  }
-  if (cResult[8] === tmp12) {
-    let tmp18;
-    if (cResult[9] === tmp15) {
-      tmp18 = cResult[10];
-    }
-    return tmp18;
-  }
-  const obj2 = { experiments: tmp12, overridesInfo: tmp15 };
-  cResult[8] = tmp12;
-  cResult[9] = tmp15;
-  cResult[10] = obj2;
-  tmp18 = obj2;
-}) : (function useLegacyExperiments() {
+const result = size.fileFinishedImporting("modules/experiments/client_override_hooks/useLegacyExperiments.tsx");
+
+export { parseRegisteredExperiments };
+export { getLegacyOverridesInfo };
+export function getLegacyExperiments() {
+  let allExperimentOverrideDescriptors;
+  const registeredExperiments = ExperimentStore.getRegisteredExperiments();
+  const obj = { experiments: parseRegisteredExperiments(registeredExperiments), overridesInfo: getLegacyOverridesInfo(allExperimentOverrideDescriptors) };
+  allExperimentOverrideDescriptors = ExperimentStore.getAllExperimentOverrideDescriptors();
+  return obj;
+}
+export function useLegacyExperiments() {
   let items2;
   let items3;
   let stateFromStoresObject;
@@ -168,16 +110,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLegacyE
   items2 = [stateFromStoresObject];
   items3 = [stateFromStoresObject1];
   return obj3;
-});
-const result = size.fileFinishedImporting("modules/experiments/client_override_hooks/useLegacyExperiments.tsx");
-
-export { parseRegisteredExperiments };
-export { getLegacyOverridesInfo };
-export function getLegacyExperiments() {
-  let allExperimentOverrideDescriptors;
-  const registeredExperiments = ExperimentStore.getRegisteredExperiments();
-  const obj = { experiments: parseRegisteredExperiments(registeredExperiments), overridesInfo: getLegacyOverridesInfo(allExperimentOverrideDescriptors) };
-  allExperimentOverrideDescriptors = ExperimentStore.getAllExperimentOverrideDescriptors();
-  return obj;
 }
-export const useLegacyExperiments = tmp3;

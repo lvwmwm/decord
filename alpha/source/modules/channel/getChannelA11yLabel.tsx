@@ -1,16 +1,16 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9066
+// Function ID: 9067
 // Name: getChannelA11yLabel
-// Dependencies: [4947, 1389, 1084, 1125, 5641, 7262, 5059, 8676, 2]
+// Dependencies: [4951, 1384, 1072, 1114, 5647, 7269, 5063, 8710, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9054 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 5059 */;
-import useChannelName from "useChannelName" /* 5641 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7262 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+// Module 9066 (getChannelA11yLabel)
+import UserUtils from "UserUtils" /* 5063 */;
+import useChannelName from "useChannelName" /* 5647 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7269 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let nick;
@@ -18,8 +18,8 @@ let nick;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const intl20 = tmp(1125);
-const utils = tmp(8676);
+const intl20 = tmp(1114);
+const utils = tmp(8710);
 ({ ChannelTypes: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel/getChannelA11yLabel.tsx");
 
@@ -303,17 +303,17 @@ export default function getChannelA11yLabel(mentionCount) {
   }
   return items4.join(", ");
 };
-export function getStatusLabel(arg0) {
-  if (metroRequire.ONLINE === arg0) {
+export function getStatusLabel(status) {
+  if (metroRequire.ONLINE === status) {
     const obj4 = UserUtils;
     return obj4.humanizeStatus(metroRequire.ONLINE);
-  } else if (metroRequire.IDLE === arg0) {
+  } else if (metroRequire.IDLE === status) {
     const obj3 = UserUtils;
     return obj3.humanizeStatus(metroRequire.IDLE);
-  } else if (metroRequire.DND === arg0) {
+  } else if (metroRequire.DND === status) {
     const obj2 = UserUtils;
     return obj2.humanizeStatus(metroRequire.DND);
-  } else if (metroRequire.INVISIBLE === arg0) {
+  } else if (metroRequire.INVISIBLE === status) {
     const obj = UserUtils;
     return obj.humanizeStatus(metroRequire.INVISIBLE);
   } else {

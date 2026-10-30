@@ -1,60 +1,21 @@
-// Module ID: 19014
-// Function ID: 19015
+// Module ID: 19148
+// Function ID: 19149
 // Name: useControlsLock
-// Dependencies: [19, 558, 576, 10973, 2]
+// Dependencies: [19, 11203, 2]
+// Exports: default
 
-// Module 19014 (useControlsLock)
-import react2 from "react" /* 576 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 10973 */;
+// Module 19148 (useControlsLock)
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11203 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsLock(arg0) {
-  let closure_0 = arg0;
-  const obj = react2;
-  const cResult = obj.c(6);
-  const generateStateLocker = react.useContext(VoicePanelStateContextDefault).generateStateLocker;
-  if (cResult[0] === generateStateLocker) {
-    let tmp2;
-    let tmp5;
-    let tmp4;
-    if (cResult[1] === arg0) {
-      tmp2 = cResult[2];
-    }
-    const first = obj2.useState(tmp2)[0];
-    if (cResult[3] !== first) {
-      const fn2 = function c() {
-        return () => first.unlock();
-      };
-      const items = [first];
-      cResult[3] = first;
-      cResult[4] = fn2;
-      cResult[5] = items;
-      tmp5 = items;
-      tmp4 = fn2;
-    } else {
-      tmp4 = cResult[4];
-      tmp5 = cResult[5];
-    }
-    const layoutEffect = obj2.useLayoutEffect(tmp4, tmp5);
-    return first;
-  }
-  const fn = function n() {
-    return generateStateLocker(closure_0);
-  };
-  cResult[0] = generateStateLocker;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : (function useControlsLock(arg0) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");
+
+export default function useControlsLock(arg0) {
   let closure_0 = arg0;
   const generateStateLocker = react.useContext(VoicePanelStateContextDefault).generateStateLocker;
   const first = react.useState(() => generateStateLocker(closure_0))[0];
   const items = [first];
   const layoutEffect = react.useLayoutEffect(() => () => first.unlock(), items);
   return first;
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");
-
-export default tmp2;
+};

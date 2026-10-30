@@ -1,28 +1,28 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 11291
+// Function ID: 11292
 // Name: UnreadSettingNoticeStore2
-// Dependencies: [502, 4857, 4879, 4908, 6762, 1084, 6763, 1094, 1101, 11, 1402, 504, 11065, 584, 2]
+// Dependencies: [502, 4858, 4880, 4912, 6769, 1072, 6770, 1082, 1090, 11, 1397, 504, 11292, 572, 2]
 
-// Module 11064 (UnreadSettingNoticeStore2)
+// Module 11291 (UnreadSettingNoticeStore2)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 11065 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import notficationSettingsChannelFlagUtils from "notficationSettingsChannelFlagUtils" /* 11292 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
 import size from "module_2" /* 2 */;
 
 let guild;
 
-const f110772 = () => {
+const f98838 = () => {
   let flag = false;
   if (null != closure_16) {
     flag = false;
@@ -57,7 +57,7 @@ function startInterval() {
   }
   if (UserGuildSettingsStore.useNewNotifications) {
     const _setInterval = setInterval;
-    interval = setInterval(f110772, 15 * DurationsDefault.Millis.SECOND);
+    interval = setInterval(f98838, 15 * DurationsDefault.Millis.SECOND);
   }
   return false;
 }
@@ -143,7 +143,7 @@ items[3] = { timeSinceJoin: DurationsDefault.Millis.DAYS_30, sends: 10, viewTime
 let closure_12 = 5 * items[items.length - 1].viewTime;
 ({ timeSinceJoin: DurationsDefault.Millis.DAYS_30, sends: 10, viewTime: 30 * DurationsDefault.Millis.MINUTE });
 const WEEK = DurationsDefault.Millis.WEEK;
-const syncedClientThemes = { channels: {} };
+const authStore3 = { channels: {} };
 const set = new Set();
 let closure_16 = null;
 let closure_17 = 0;
@@ -276,7 +276,7 @@ const obj5 = {
     }
     if (UserGuildSettingsStore.useNewNotifications) {
       const _setInterval = setInterval;
-      interval = setInterval(f110772, 15 * DurationsDefault.Millis.SECOND);
+      interval = setInterval(f98838, 15 * DurationsDefault.Millis.SECOND);
     }
     let closure_0 = Date.now() - WEEK;
     const arr = SnowflakeUtilsDefault;

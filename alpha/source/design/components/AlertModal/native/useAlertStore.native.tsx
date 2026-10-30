@@ -1,19 +1,19 @@
-// Module ID: 5948
-// Function ID: 5949
+// Module ID: 5955
+// Function ID: 5956
 // Name: useAlertStore
-// Dependencies: [32, 570, 1271, 5949, 5951, 2]
+// Dependencies: [32, 560, 1260, 5956, 5958, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 5948 (useAlertStore)
-import react_nativeDefault from "react-native" /* 5951 */;
+// Module 5955 (useAlertStore)
+import react_nativeDefault from "react-native" /* 5958 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import module_570 from "module_570" /* 570 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, importDefault;
 
-const useAlertStore = module_570.create(() => ({ alerts: [] }));
+const useAlertStore = module_560.create(() => ({ alerts: [] }));
 const result = size.fileFinishedImporting("design/components/AlertModal/native/useAlertStore.native.tsx");
 
 export { useAlertStore };
@@ -32,7 +32,7 @@ export function dismissAlerts() {
     arr.push(dismissable);
     return acc;
   }, items);
-  obj = first(1271);
+  obj = first(1260);
   obj.batchUpdates(() => {
     const obj = { alerts: arr4 };
     obj.setState(obj);
@@ -47,23 +47,23 @@ export function dismissAlerts() {
   });
   const tmp4 = 0 === arr4.length && first.length > 0;
   if (tmp4) {
-    arr4(5949)();
+    arr4(5956)();
   }
 }
-export function dismissAlert(key) {
+export function dismissAlert(c6) {
   let obj;
-  _require = key;
+  _require = c6;
   let alerts = obj.getState().alerts;
-  const found = alerts.find((key) => key.key === key);
+  const found = alerts.find((key) => key.key === closure_0);
   if (null != found) {
     let tmp2 = 1 === alerts.length;
     if (tmp2) {
       const first = alerts[0];
-      key = undefined;
+      let key;
       if (first != null) {
         key = first.key;
       }
-      tmp2 = key === key;
+      tmp2 = key === c6;
     }
     obj = require("react-native");
     obj.batchUpdates(() => {
@@ -79,7 +79,7 @@ export function dismissAlert(key) {
       }
     });
     if (tmp2) {
-      found(5949)();
+      found(5956)();
     }
   }
 }

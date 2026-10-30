@@ -1,11 +1,38 @@
 // Module ID: 1910
 // Function ID: 1911
-// Dependencies: [1911]
+// Dependencies: []
 
 // Module 1910
-import _mod1911 from "module_1911" /* 1911 */;
-
-const _default = _mod1911.default;
-_default.default = _default;
-
-export default _default;
+const obj = {
+  locale: "cs",
+  pluralRuleFunction(arg0, arg1) {
+    let tmp2;
+    let tmp3;
+    const str = String(arg0);
+    const parts = str.split(".");
+    [tmp2, tmp3] = parts;
+    let str2 = "other";
+    if (!arg1) {
+      let str3;
+      if (1 != arg0) {
+        if (tmp2 >= 2) {
+          let str4;
+          if (tmp2 <= 4) {
+            str4 = "few";
+          }
+          str3 = str4;
+        }
+        let str5 = "many";
+        if (!tmp3) {
+          str5 = "other";
+        }
+        str4 = str5;
+      } else {
+        str3 = "one";
+      }
+      str2 = str3;
+    }
+    return str2;
+  }
+};
+globalThis.IntlMessageFormat.__addLocaleData(obj);

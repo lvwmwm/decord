@@ -1,12 +1,11 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16858
+// Function ID: 16859
 // Name: BountiesModalTransitionsRefactorExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useIsBountiesModalTransitionsRefactorEnabled
 
-// Module 16804 (BountiesModalTransitionsRefactorExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16858 (BountiesModalTransitionsRefactorExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -14,24 +13,10 @@ let obj = { name: "2026-07-bounties-modal-transitions-refactor", kind: "user", d
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsBountiesModalTransitionsRefactorEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2).enabled;
-}) : (function useIsBountiesModalTransitionsRefactorEnabled(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj).enabled;
-});
 const result = size.fileFinishedImporting("modules/quests/experiments/BountiesModalTransitionsRefactorExperiment.tsx");
 
 export const BountiesModalTransitionsRefactorExperiment = apexExperiment;
-export const useIsBountiesModalTransitionsRefactorEnabled = tmp3;
+export function useIsBountiesModalTransitionsRefactorEnabled(VIDEO_MODAL_MOBILE) {
+  const obj = { location: VIDEO_MODAL_MOBILE };
+  return apexExperiment.useConfig(obj).enabled;
+}

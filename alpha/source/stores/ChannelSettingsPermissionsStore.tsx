@@ -1,20 +1,20 @@
-// Module ID: 18794
-// Function ID: 18795
+// Module ID: 18854
+// Function ID: 18855
 // Name: ChannelSettingsPermissionsStore
-// Dependencies: [2043, 10161, 4857, 1084, 7933, 510, 4942, 11406, 12, 504, 584, 2]
+// Dependencies: [2040, 8192, 4858, 1072, 7939, 510, 4946, 11609, 12, 504, 572, 2]
 
-// Module 18794 (ChannelSettingsPermissionsStore)
+// Module 18854 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7933 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11406 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10161 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7939 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11609 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8192 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let areChannelsLockedResult, closure_20, closure_5;
@@ -100,7 +100,7 @@ function syncChannelUpdates(id) {
           }
           const areChannelsLocked = PermissionUtilsAll.areChannelsLocked;
           PermissionUtilsAll;
-          const obj5 = obj4(11406);
+          const obj5 = obj4(11609);
           let closure_4 = areChannelsLocked(channel, category, obj5.getAppChannelBotUserId(channel));
           return true;
         }

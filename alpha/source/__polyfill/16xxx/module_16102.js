@@ -1,15 +1,27 @@
 // Module ID: 16102
 // Function ID: 16103
-// Dependencies: [16050, 16069, 16059]
+// Dependencies: [16087, 16083, 16103]
 
 // Module 16102
-import _mod16050 from "module_16050" /* 16050 */;
-import _mod16059 from "module_16059" /* 16059 */;
-import module_16069 from "module_16069" /* 16069 */;
+import _mod16083 from "module_16083" /* 16083 */;
+import _mod16087 from "module_16087" /* 16087 */;
 
-let closure_0 = _mod16050(Function.toString);
-if (!module_16069(_mod16059.inspectSource)) {
-  _mod16059.inspectSource = (arg0) => closure_0(arg0);
-}
+const prop = Object.getOwnPropertySymbols && !_mod16087(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod16083;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
+  }
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(16103) && tmp2(16103) < 41;
+    const tmp6 = !Symbol.sham && tmp2(16103) && tmp2(16103) < 41;
+  }
+  return tmp5;
+});
 
-export default _mod16059.inspectSource;
+export default prop;

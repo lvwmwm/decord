@@ -1,55 +1,72 @@
 // Module ID: 10356
 // Function ID: 10357
-// Dependencies: [41, 42, 10352, 10283]
+// Dependencies: [41, 42, 93, 95, 98, 10328]
 
 // Module 10356
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10283 */;
-import NUMBER from "NUMBER" /* 10352 */;
+import _mod10328 from "module_10328" /* 10328 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
-class JPSlashDateFormatParser {
-  constructor() {
-    _classCallCheck(this, JPSlashDateFormatParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class DEMergeDateTimeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, DEMergeDateTimeRefiner);
+    const obj = _getPrototypeOf(DEMergeDateTimeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(DEMergeDateTimeRefiner, fn(_mod10328).default);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
+  key: "patternBetween",
+  value: function patternBetween() {
+    const regExp = new RegExp("^\\s*(T|um|am|,|-)?\\s*$");
     return regExp;
   }
 };
-const items = [
-  entry,
-  {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsingComponents = createParsingComponents.createParsingComponents();
-      const parsed = parseInt(NUMBER.toHankaku(arg1[2]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[3]));
-      if (parsed >= 1) {
-        if (parsed <= 12) {
-          if (parsed1 >= 1) {
-            if (parsed1 <= 31) {
-              parsingComponents.assign("day", parsed1);
-              parsingComponents.assign("month", parsed);
-              if (arg1[1]) {
-                const _parseInt = parseInt;
-                const parsed2 = parseInt(tmp(10352).toHankaku(arg1[1]));
-                parsingComponents.assign("year", findMostLikelyADYear.findMostLikelyADYear(parsed2));
-              } else {
-                parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
-              }
-              return parsingComponents;
-            }
-          }
-          return null;
-        }
-      }
-      return null;
-    }
-  }
-];
+const items = [entry];
 
-export default _createClass(JPSlashDateFormatParser, items);
+export default _createClass(DEMergeDateTimeRefiner, items);

@@ -1,10 +1,10 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 8562
+// Function ID: 8563
 // Name: ChangelogImageUtils
 // Dependencies: [2]
 // Exports: fitChangelogImage, getChangelogImageStillUrl, hasImageSegment, isAnimatedChangelogImage, isChangelogImageUrl, parseChangelogImageSize, splitParagraphAtImages
 
-// Module 8528 (ChangelogImageUtils)
+// Module 8562 (ChangelogImageUtils)
 import size_mod from "module_2" /* 2 */;
 
 function toURL(target) {
@@ -65,9 +65,9 @@ export function parseChangelogImageSize(title) {
     return tmp6;
   }
 }
-export function fitChangelogImage(result1, diff, result) {
-  const bound = Math.max(0, Math.min(1, diff / result1.width, result / result1.height));
-  size = { width: Math.max(1, Math.round(result1.width * bound)), height: Math.max(1, Math.round(result1.height * bound)) };
+export function fitChangelogImage(width, diff, arg2) {
+  const bound = Math.max(0, Math.min(1, diff / width.width, arg2 / width.height));
+  size = { width: Math.max(1, Math.round(width.width * bound)), height: Math.max(1, Math.round(width.height * bound)) };
   return size;
 }
 export function isAnimatedChangelogImage(target) {

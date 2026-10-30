@@ -1,10 +1,10 @@
 // Module ID: 4246
 // Function ID: 4247
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 4246 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/promotions/third_party/macaron", scales: [1], hash: "a7545cdfe95ea5258ea978b753aaaa14", name: "MacaronPhase1.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHkvbWFjYXJvbg==", scales: [1], hash: "b79f7c36b625baa0899643c2a8b07246", name: "zh-TW.messages.b79f7c36b625baa0899643c2a8b07246.compiled.messages", type: "jsona" });

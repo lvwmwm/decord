@@ -1,10 +1,10 @@
-// Module ID: 19800
-// Function ID: 19801
+// Module ID: 19863
+// Function ID: 19864
 // Name: useFetchHighlightedCreatorGuildDetails
-// Dependencies: [5, 32, 19, 7416, 2]
+// Dependencies: [5, 32, 19, 7424, 2]
 // Exports: default
 
-// Module 19800 (useFetchHighlightedCreatorGuildDetails)
+// Module 19863 (useFetchHighlightedCreatorGuildDetails)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -40,7 +40,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -92,7 +92,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
           c4 = 0;
           closure_1(false);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp33) {
         if (0 === c4) {

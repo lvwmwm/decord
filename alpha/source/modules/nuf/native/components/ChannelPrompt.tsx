@@ -1,21 +1,21 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14306
+// Function ID: 14307
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4935, 4879, 21, 5005, 5305, 504, 1503, 6984, 1125, 7471, 6433, 7281, 6943, 1415, 5271, 7067, 5281, 7093, 2]
+// Dependencies: [5, 32, 19, 17, 4939, 4880, 21, 5009, 5581, 504, 1498, 6992, 1114, 7479, 6440, 7286, 6951, 1410, 5619, 7075, 5629, 7101, 2]
 // Exports: default
 
-// Module 14159 (ChannelPrompt)
-import intl5 from "intl" /* 1125 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
+// Module 14306 (ChannelPrompt)
+import intl5 from "intl" /* 1114 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import GuildStore from "GuildStore" /* 4879 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

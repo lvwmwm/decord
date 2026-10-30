@@ -1,81 +1,25 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15170
+// Function ID: 15171
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1084, 21, 5005, 558, 576, 7072, 1125, 2065, 5952, 5952, 2]
+// Dependencies: [19, 1072, 21, 5009, 5959, 7080, 1114, 2062, 5959, 2]
+// Exports: default
 
-// Module 15130 (ProvisionalAccountNoCallAllowed)
+// Module 15170 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl4 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import AlertModal2 from "AlertModal" /* 5952 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7072 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import AlertModal2 from "AlertModal" /* 5959 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ header: { alignSelf: "center" } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProvisionalAccountNoCallAllowed() {
-  let intl3;
-  let obj4;
-  let tmp15;
-  let tmp18;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  const tmp4 = closure_5();
-  if (cResult[0] !== tmp4.header) {
-    const tmp7 = jsx(CircleErrorIcon.CircleErrorIcon, { size: "lg", style: tmp4.header });
-    cResult[0] = tmp4.header;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t["vh+Zpq"]);
-    const intl2 = tmp(1125).intl;
-    const format = intl2.format;
-    const obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
-    const prop = tmp(1125).t["tx08s+"];
-    obj4 = HelpdeskUtilsDefault;
-    const formatResult = format(prop, obj3);
-    cResult[2] = stringResult;
-    cResult[3] = formatResult;
-    tmp9 = formatResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const AlertActions = tmp(5952).AlertActions;
-    ({ variant: "secondary", text: intl3.string(intl4.t["NX+WJN"]) });
-    const AlertActionButton = tmp(5952).AlertActionButton;
-    intl3 = tmp(1125).intl;
-    const tmp17 = <AlertActions>{null}</AlertActions>;
-    cResult[4] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[4];
-  }
-  if (cResult[5] !== tmp5) {
-    const tmp20 = jsx(AlertModal2.AlertModal, { header: tmp5, title: tmp8, content: tmp9, actions: tmp15 });
-    cResult[5] = tmp5;
-    cResult[6] = tmp20;
-    tmp18 = tmp20;
-  } else {
-    tmp18 = cResult[6];
-  }
-  return tmp18;
-}) : (function ProvisionalAccountNoCallAllowed() {
+const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
+
+export default function ProvisionalAccountNoCallAllowed() {
   let intl3;
   let obj4;
   const tmp = closure_5();
@@ -91,7 +35,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Provisiona
   const AlertActionButton = AlertModal2.AlertActionButton;
   intl3 = intl4.intl;
   return <AlertModal header={null} title={intl.string(intl4.t["vh+Zpq"])} content={format(prop, obj3)} actions={null} />;
-});
-const result = size.fileFinishedImporting("modules/provisional_accounts/native/ProvisionalAccountNoCallAllowed.tsx");
-
-export default tmp3;
+};

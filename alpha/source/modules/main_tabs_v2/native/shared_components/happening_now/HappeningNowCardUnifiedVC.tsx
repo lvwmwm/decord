@@ -1,119 +1,28 @@
-// Module ID: 18013
-// Function ID: 18014
+// Module ID: 18076
+// Function ID: 18077
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 4856, 6701, 4947, 21, 558, 576, 18014, 18026, 18027, 18004, 573, 2]
+// Dependencies: [19, 4857, 6708, 4951, 21, 18077, 18089, 18090, 563, 18067, 2]
+// Exports: default, useCallActivityData
 
-// Module 18013 (HappeningNowCardUnifiedVC)
+// Module 18076 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 18004 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18014 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18026 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18027 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 18067 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18077 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18089 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18090 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowCardUnifiedVC(arg0) {
-  let activity;
-  let cardKey;
-  let fullwidth;
-  let guildId;
-  let index;
-  let panelVariant;
-  let stream;
-  let tmp5;
-  let userId;
-  let voiceState;
-  const obj = react2;
-  const cResult = obj.c(21);
-  ({ guildId, index, voiceState, fullwidth, userId, cardKey, panelVariant } = arg0);
-  ({ stream, activity } = closure_7(voiceState.channelId));
-  closure_7(voiceState.channelId);
-  if (null != stream) {
-    if (cResult[0] === fullwidth) {
-      if (cResult[1] === guildId) {
-        if (cResult[2] === index) {
-          if (cResult[3] === (undefined !== panelVariant && panelVariant)) {
-            let tmp13;
-            if (cResult[4] === stream) {
-              tmp13 = cResult[5];
-            }
-            tmp5 = tmp13;
-          }
-        }
-      }
-    }
-    const tmp16 = jsx(HappeningNowCardActivityDefault, { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant: undefined !== panelVariant && panelVariant });
-    cResult[0] = fullwidth;
-    cResult[1] = guildId;
-    cResult[2] = index;
-    cResult[3] = undefined !== panelVariant && panelVariant;
-    cResult[4] = stream;
-    cResult[5] = tmp16;
-    tmp13 = tmp16;
-  } else if (null != activity) {
-    if (cResult[6] === activity) {
-      if (cResult[7] === cardKey) {
-        if (cResult[8] === fullwidth) {
-          if (cResult[9] === guildId) {
-            if (cResult[10] === index) {
-              if (cResult[11] === (undefined !== panelVariant && panelVariant)) {
-                if (cResult[12] === userId) {
-                  let tmp9;
-                  if (cResult[13] === voiceState) {
-                    tmp9 = cResult[14];
-                  }
-                  tmp5 = tmp9;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    const tmp12 = jsx(HappeningNowCardEmbeddedActivityDefault, { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant: undefined !== panelVariant && panelVariant });
-    cResult[6] = activity;
-    cResult[7] = cardKey;
-    cResult[8] = fullwidth;
-    cResult[9] = guildId;
-    cResult[10] = index;
-    cResult[11] = undefined !== panelVariant && panelVariant;
-    cResult[12] = userId;
-    cResult[13] = voiceState;
-    cResult[14] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    if (cResult[15] === fullwidth) {
-      if (cResult[16] === guildId) {
-        if (cResult[17] === index) {
-          if (cResult[18] === (undefined !== panelVariant && panelVariant)) {
-            if (cResult[19] === voiceState) {
-              tmp5 = cResult[20];
-            }
-          }
-        }
-      }
-    }
-    const tmp8 = jsx(HappeningNowCardVoiceDefault, { index, voiceState, fullwidth, guildId, panelVariant: undefined !== panelVariant && panelVariant });
-    cResult[15] = fullwidth;
-    cResult[16] = guildId;
-    cResult[17] = index;
-    cResult[18] = undefined !== panelVariant && panelVariant;
-    cResult[19] = voiceState;
-    cResult[20] = tmp8;
-    tmp5 = tmp8;
-  }
-  return tmp5;
-}) : (function HappeningNowCardUnifiedVC(arg0) {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
+
+export default function HappeningNowCardUnifiedVC(arg0) {
   let activity;
   let cardKey;
   let fullwidth;
@@ -129,86 +38,14 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningN
   if (panelVariant === undefined) {
     panelVariant = false;
   }
-  ({ stream, activity } = closure_7(voiceState.channelId));
-  closure_7(voiceState.channelId);
-  if (null != stream) {
-    tmp5 = jsx(HappeningNowCardActivityDefault, { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
-  } else if (null != activity) {
-    tmp5 = jsx(HappeningNowCardEmbeddedActivityDefault, { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
-  } else {
-    tmp5 = jsx(HappeningNowCardVoiceDefault, { index, voiceState, fullwidth, guildId, panelVariant });
-  }
-  return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCallActivityData(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [EmbeddedActivitiesStore, , ];
-    items[1] = ApplicationStreamingStore;
-    let tmp7 = RelationshipStore;
-    items[2] = RelationshipStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      let friend;
-      if (null == closure_0) {
-        return {};
-      } else {
-        let obj;
-        const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp);
-        if (allApplicationStreamsForChannel.length > 0) {
-          const found = allApplicationStreamsForChannel.find((ownerId) => friend.isFriend(ownerId.ownerId));
-          if (null != found) {
-            return { stream: found };
-          }
-        }
-        const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
-        const tmp7 = findActivityWithMostParticipantsDefault(embeddedActivitiesForChannel);
-        if (null != tmp7) {
-          obj = { activity: tmp7 };
-          const obj3 = { activity: tmp7 };
-        } else if (allApplicationStreamsForChannel.length > 0) {
-          obj = { stream: allApplicationStreamsForChannel[0] };
-          const obj4 = { stream: allApplicationStreamsForChannel[0] };
-        } else {
-          obj = {};
-        }
-        return obj;
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(573);
-  return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : (function useCallActivityData(arg0) {
-  let closure_0;
-  _require = arg0;
-  let obj = require("useStateFromStores");
+  const channelId = voiceState.channelId;
+  const tmp = dependencyMap;
+  let obj = channelId(563);
   const items = [EmbeddedActivitiesStore, ApplicationStreamingStore, RelationshipStore];
-  const items1 = [arg0];
-  return obj.useStateFromStoresObject(items, () => {
+  const items1 = [channelId];
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let friend;
-    if (null == closure_0) {
+    if (null == channelId) {
       return {};
     } else {
       let obj;
@@ -233,9 +70,47 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCallAct
       return obj;
     }
   }, items1);
-});
-let closure_7 = tmp4;
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardUnifiedVC.tsx");
-
-export default tmp3;
-export const useCallActivityData = tmp4;
+  ({ stream, activity } = stateFromStoresObject);
+  if (null != stream) {
+    tmp5 = jsx(HappeningNowCardActivityDefault, { index, userId: stream.ownerId, guildId, stream, fullwidth, panelVariant });
+  } else if (null != activity) {
+    let tmp7 = importDefault;
+    tmp5 = jsx(HappeningNowCardEmbeddedActivityDefault, { index, voiceState, fullwidth, guildId, activity, userId, cardKey, panelVariant });
+  } else {
+    tmp5 = jsx(HappeningNowCardVoiceDefault, { index, voiceState, fullwidth, guildId, panelVariant });
+  }
+  return tmp5;
+};
+export function useCallActivityData(channel_id) {
+  _require = channel_id;
+  const items = [EmbeddedActivitiesStore, ApplicationStreamingStore, RelationshipStore];
+  const items1 = [channel_id];
+  const obj = require("useStateFromStores");
+  return obj.useStateFromStoresObject(items, () => {
+    let friend;
+    if (null == channelId) {
+      return {};
+    } else {
+      let obj;
+      const allApplicationStreamsForChannel = ApplicationStreamingStore.getAllApplicationStreamsForChannel(tmp);
+      if (allApplicationStreamsForChannel.length > 0) {
+        const found = allApplicationStreamsForChannel.find((ownerId) => friend.isFriend(ownerId.ownerId));
+        if (null != found) {
+          return { stream: found };
+        }
+      }
+      const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(tmp);
+      const tmp7 = findActivityWithMostParticipantsDefault(embeddedActivitiesForChannel);
+      if (null != tmp7) {
+        obj = { activity: tmp7 };
+        const obj3 = { activity: tmp7 };
+      } else if (allApplicationStreamsForChannel.length > 0) {
+        obj = { stream: allApplicationStreamsForChannel[0] };
+        const obj4 = { stream: allApplicationStreamsForChannel[0] };
+      } else {
+        obj = {};
+      }
+      return obj;
+    }
+  }, items1);
+}

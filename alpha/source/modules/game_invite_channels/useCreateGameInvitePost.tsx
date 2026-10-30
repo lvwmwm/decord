@@ -1,386 +1,32 @@
-// Module ID: 14186
-// Function ID: 14187
+// Module ID: 14331
+// Function ID: 14332
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 11287, 6557, 7818, 1084, 4864, 558, 576, 7439, 14187, 11450, 504, 9729, 7819, 2]
+// Dependencies: [5, 32, 19, 11490, 6564, 7823, 1072, 4865, 7447, 14332, 504, 11651, 9755, 7824, 2]
+// Exports: useCreateGameInvitePost
 
-// Module 14186 (useCreateGameInvitePost)
-import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7439 */;
-import SlowmodeStore2 from "SlowmodeStore" /* 7818 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11450 */;
+// Module 14331 (useCreateGameInvitePost)
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7447 */;
+import SlowmodeStore2 from "SlowmodeStore" /* 7823 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11651 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11287 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import LocalActivityStore from "LocalActivityStore" /* 11490 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
 import size from "module_2" /* 2 */;
 
 const SlowmodeStore = SlowmodeStore2;
-let c1, c3, tmp10, tmp3, tmp4;
+let c1, c3;
 
 let react = react_mod;
 const SlowmodeType = SlowmodeStore2.SlowmodeType;
 const ActivityActionTypes = Constants.ActivityActionTypes;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGameInvitePost(parentChannel) {
-  let applicationIdsForGame;
-  let appliedTagIds;
-  let first;
-  let noMicTag;
-  let onThreadCreated;
-  let tmp11;
-  let tmp8;
-  let tmp9;
-  let upload;
-  let voiceChatEnabled;
-  let voiceToggleDisabled;
-  const tmp2 = applicationIdsForGame;
-  let obj = parentChannel(applicationIdsForGame[9]);
-  const cResult = obj.c(47);
-  parentChannel = parentChannel.parentChannel;
-  const description = parentChannel.description;
-  ({ appliedTagIds, upload, onThreadCreated } = parentChannel);
-  let obj2 = parentChannel(applicationIdsForGame[10]);
-  const application = obj2.useGameInvitesChannelOfficialApplication(parentChannel.id).application;
-  const obj3 = parentChannel(applicationIdsForGame[11]);
-  applicationIdsForGame = obj3.useApplicationIdsForGame(parentChannel.gameId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp6 = LocalActivityStore;
-    const items = [LocalActivityStore, ];
-    let tmp7 = SelfPresenceStore;
-    items[1] = SelfPresenceStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== applicationIdsForGame) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-    const items1 = [applicationIdsForGame];
-    cResult[1] = applicationIdsForGame;
-    cResult[2] = C;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = C;
-  } else {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-    tmp9 = cResult[3];
-  }
-  const tmpResult = parentChannel(tmp2[13]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-  if (cResult[4] !== parentChannel.availableTags) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-    if (tmp12 == null) {
-      class C {
-        constructor() {
-          tmp = closure_2;
-          obj = closure_2[Symbol.iterator]();
-          while (obj !== undefined) {
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            tmp5 = closure_6;
-            tmp6 = closure_7;
-            tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-            if (null != tmp7) {
-              tmp9 = closure_0;
-              obj2 = closure_0(tmp4[10]);
-              tmp10 = tmp7;
-              if (obj2.canInviteToActivity(tmp8)) {
-                tmp11 = obj;
-                obj.return();
-                return tmp7;
-              }
-            }
-            continue;
-          }
-          return null;
-        }
-      }
-    }
-    cResult[4] = parentChannel.availableTags;
-    cResult[5] = tmp12;
-    tmp11 = tmp12;
-  } else {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-  }
-  const tmpResult2 = parentChannel(tmp2[10]);
-  const gameInviteVoiceChatState = tmpResult2.useGameInviteVoiceChatState(tmp11, appliedTagIds);
-  ({ noMicTag, voiceChatEnabled, voiceToggleDisabled } = gameInviteVoiceChatState);
-  let tmp15;
-  if (null != stateFromStores) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-    if (obj6.canInviteToActivity(stateFromStores)) {
-      class C {
-        constructor() {
-          tmp = closure_2;
-          obj = closure_2[Symbol.iterator]();
-          while (obj !== undefined) {
-            tmp3 = closure_1;
-            tmp4 = closure_2;
-            tmp5 = closure_6;
-            tmp6 = closure_7;
-            tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-            if (null != tmp7) {
-              tmp9 = closure_0;
-              obj2 = closure_0(tmp4[10]);
-              tmp10 = tmp7;
-              if (obj2.canInviteToActivity(tmp8)) {
-                tmp11 = obj;
-                obj.return();
-                return tmp7;
-              }
-            }
-            continue;
-          }
-          return null;
-        }
-      }
-      tmp15 = tmp16;
-    }
-  }
-  if (cResult[8] !== description) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-    cResult[8] = description;
-    cResult[9] = obj7.deriveThreadName(description);
-    const deriveThreadNameResult = obj7.deriveThreadName(description);
-  } else {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-  }
-  if (application != null) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-  }
-  if (cResult[10] === tmp15) {
-    class C {
-      constructor() {
-        tmp = closure_2;
-        obj = closure_2[Symbol.iterator]();
-        while (obj !== undefined) {
-          tmp3 = closure_1;
-          tmp4 = closure_2;
-          tmp5 = closure_6;
-          tmp6 = closure_7;
-          tmp7 = closure_1(closure_2[12])(closure_6, closure_7, tmp2);
-          if (null != tmp7) {
-            tmp9 = closure_0;
-            obj2 = closure_0(tmp4[10]);
-            tmp10 = tmp7;
-            if (obj2.canInviteToActivity(tmp8)) {
-              tmp11 = obj;
-              obj.return();
-              return tmp7;
-            }
-          }
-          continue;
-        }
-        return null;
-      }
-    }
-  }
-  const obj4 = { parentChannel, name: tmp17, appliedTags: appliedTagIds, activityAction: tmp15, applicationId: undefined, voiceChatEnabled, upload, onThreadCreated };
-  cResult[10] = tmp15;
-  cResult[11] = onThreadCreated;
-  cResult[12] = parentChannel;
-  cResult[13] = tmp17;
-  cResult[14] = appliedTagIds;
-  cResult[15] = undefined;
-  cResult[16] = upload;
-  cResult[17] = voiceChatEnabled;
-  cResult[18] = obj4;
-}) : (function useCreateGameInvitePost(parentChannel) {
+const result = size.fileFinishedImporting("modules/game_invite_channels/useCreateGameInvitePost.tsx");
+
+export function useCreateGameInvitePost(parentChannel) {
   let _undefined;
   let _undefined2;
   let c6;
@@ -407,11 +53,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
   const tmp = parentChannel;
   const tmp2 = applicationIdsForGame;
   ({ upload, onThreadCreated } = parentChannel);
-  let obj = parentChannel(applicationIdsForGame[10]);
+  let obj = parentChannel(applicationIdsForGame[8]);
   const application = obj.useGameInvitesChannelOfficialApplication(parentChannel.id).application;
-  let obj2 = parentChannel(applicationIdsForGame[11]);
+  let obj2 = parentChannel(applicationIdsForGame[9]);
   applicationIdsForGame = obj2.useApplicationIdsForGame(parentChannel.gameId);
-  let obj3 = parentChannel(applicationIdsForGame[13]);
+  let obj3 = parentChannel(applicationIdsForGame[10]);
   const items = [c6, c7];
   const items1 = [applicationIdsForGame];
   const stateFromStores = obj3.useStateFromStores(items, () => {
@@ -429,7 +75,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
     }
     return null;
   }, items1);
-  let tmp5 = parentChannel(applicationIdsForGame[10]);
+  let tmp5 = parentChannel(applicationIdsForGame[8]);
   let availableTags = parentChannel.availableTags;
   const useGameInviteVoiceChatState = tmp5.useGameInviteVoiceChatState;
   if (availableTags == null) {
@@ -449,10 +95,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
     }
   }, items2);
   const obj5 = { parentChannel, name: tmpResult4.deriveThreadName(str), appliedTags: appliedTagIds, activityAction: memo, applicationId: id, voiceChatEnabled, upload, onThreadCreated };
-  const useCreateForumPostCommon = tmp(tmp2[14]).useCreateForumPostCommon;
-  tmp(tmp2[14]);
+  const useCreateForumPostCommon = tmp(tmp2[12]).useCreateForumPostCommon;
+  tmp(tmp2[12]);
   id = undefined;
-  tmpResult4 = tmp(tmp2[10]);
+  tmpResult4 = tmp(tmp2[8]);
   if (application != null) {
     id = application.id;
   }
@@ -465,15 +111,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
   react = tmp12;
   const rateLimitPerUser = parentChannel.rateLimitPerUser;
   const items3 = [closure_8];
-  const tmpResult5 = tmp(tmp2[13]);
+  const tmpResult5 = tmp(tmp2[10]);
   const stateFromStores1 = tmpResult5.useStateFromStores(items3, () => SlowmodeStore.getSlowmodeCooldownGuess(parentChannel.id, SlowmodeType.CreateThread));
-  const tmpResult6 = tmp(tmp2[15]);
+  const tmpResult6 = tmp(tmp2[13]);
   const canBypassSlowmode = tmpResult6.useCanBypassSlowmode(parentChannel);
   const tmp16 = createForumPostCommon(obj4.useState(false), 2);
   [tmp17, c6] = tmp16;
   [tmp19, c7] = createForumPostCommon(obj4.useState(false), 2);
   const tmp18 = createForumPostCommon(obj4.useState(false), 2);
-  let tmp20 = !tmp17 && str.trim().length > 0 && str.length <= tmp(tmp2[10]).GAME_INVITE_POST_MESSAGE_MAX_LENGTH;
+  let tmp20 = !tmp17 && str.trim().length > 0 && str.length <= tmp(tmp2[8]).GAME_INVITE_POST_MESSAGE_MAX_LENGTH;
   if (tmp20) {
     tmp20 = !(tmp13 && !canBypassSlowmode && stateFromStores1 > 0);
   }
@@ -491,7 +137,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -537,7 +183,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
           c2 = 0;
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         if (0 === c2) {
           c3 = 3;
@@ -549,7 +195,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateGam
     }
   }), items4);
   return obj6;
-});
-const result = size.fileFinishedImporting("modules/game_invite_channels/useCreateGameInvitePost.tsx");
-
-export const useCreateGameInvitePost = tmp2;
+}

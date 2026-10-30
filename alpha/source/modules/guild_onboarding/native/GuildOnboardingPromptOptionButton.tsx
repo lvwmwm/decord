@@ -1,24 +1,24 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 7290
+// Function ID: 7291
 // Name: GuildOnboardingPromptOptionButton
-// Dependencies: [32, 19, 17, 5006, 6783, 1392, 21, 5086, 5005, 587, 558, 576, 504, 5243, 5284, 7284, 5014, 1125, 5289, 5073, 7287, 1415, 5271, 6968, 7290, 1199, 2]
+// Dependencies: [32, 19, 17, 5010, 6790, 1387, 21, 5090, 5009, 575, 504, 5249, 5632, 7291, 5018, 1114, 5591, 5077, 6974, 7294, 1410, 5619, 7297, 1188, 2]
+// Exports: default
 
-// Module 7283 (GuildOnboardingPromptOptionButton)
+// Module 7290 (GuildOnboardingPromptOptionButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
-import spring from "spring" /* 5284 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import EmojiConstants from "EmojiConstants" /* 1387 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
+import spring from "spring" /* 5632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import EmojiStore from "EmojiStore" /* 6783 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import EmojiStore from "EmojiStore" /* 6790 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -41,1160 +41,22 @@ createStyles = createStyles.createStyles;
 size = { position: "absolute", top: -6, right: -6, width: 20, height: 20, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 rect = { position: "absolute", top: -6, right: 24, paddingVertical: 2, paddingHorizontal: 6, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: 10, display: "flex", alignItems: "center", justifyContent: "center" };
 let closure_12 = createStyles(obj2);
-const __initData = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
-const __initData2 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity_0=showMemberCount?1:0;const opacity_0=withDelay(showMemberCount?400:0,withTiming(rawOpacity_0,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity_0,transform:[{translateX:translateX}]};}" };
+let __initData = { code: "function GuildOnboardingPromptOptionButtonTsx1(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
+let closure_14 = { code: "function GuildOnboardingPromptOptionButtonTsx2(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity=showMemberCount?1:0;const opacity=withDelay(showMemberCount?400:0,withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity,transform:[{translateX:translateX}]};}" };
 let closure_15 = { code: "function GuildOnboardingPromptOptionButtonTsx3(){const{withTiming,selected,SELECTION_TIMING}=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);}" };
 let closure_16 = { code: "function GuildOnboardingPromptOptionButtonTsx4(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
-let closure_17 = { code: "function GuildOnboardingPromptOptionButtonTsx5(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],[\"transparent\",selectedBackgroundColor])};}" };
-let closure_18 = { code: "function GuildOnboardingPromptOptionButtonTsx6(){const{useReducedMotion,scale_0}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale_0.get()}]};}" };
-let closure_19 = { code: "function GuildOnboardingPromptOptionButtonTsx7(){const{selected,withTiming,Easing,useReducedMotion,withSequence,withSpring}=this.__closure;const rawOpacity=selected?1:0;const opacity=withTiming(rawOpacity,{duration:150,easing:Easing.out(Easing.ease)});const rawScale=selected?1:0.7;const scale=useReducedMotion?rawScale:withSequence(withSpring(rawScale*1.2,{stiffness:80,damping:6,mass:0.3}),withSpring(rawScale,{stiffness:80,damping:6,mass:0.3}));return{opacity:opacity,transform:[{scale:scale}]};}" };
-const __initData3 = { code: "function GuildOnboardingPromptOptionButtonTsx8(){const{showMemberCount,withDelay,withTiming,Easing,useReducedMotion}=this.__closure;const rawOpacity_0=showMemberCount?1:0;const opacity_0=withDelay(showMemberCount?400:0,withTiming(rawOpacity_0,{duration:150,easing:Easing.out(Easing.ease)}));const rawTranslate=showMemberCount?0:16;const translateX=useReducedMotion?rawTranslate:withDelay(showMemberCount?400:0,withTiming(rawTranslate,{duration:200,easing:Easing.out(Easing.ease)}));return{opacity:opacity_0,transform:[{translateX:translateX}]};}" };
-const __initData4 = { code: "function GuildOnboardingPromptOptionButtonTsx9(){const{withTiming,selected,SELECTION_TIMING}=this.__closure;return withTiming(selected?1:0,SELECTION_TIMING);}" };
-const __initData5 = { code: "function GuildOnboardingPromptOptionButtonTsx10(){const{withTiming,isNew,SELECTION_TIMING}=this.__closure;return withTiming(isNew?1:0,SELECTION_TIMING);}" };
-const __initData6 = { code: "function GuildOnboardingPromptOptionButtonTsx11(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
-const __initData7 = { code: "function GuildOnboardingPromptOptionButtonTsx12(){const{useReducedMotion,scale_0}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale_0.get()}]};}" };
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOptionButton(option) {
-  let emoji4;
-  let first;
-  let first1;
-  let onSelect;
-  let ref;
-  let tmp10;
-  let tmp13;
-  let tmp14;
-  let tmp33;
-  let tmp34;
-  let useReducedMotion;
-  const tmp2 = option;
-  let tmp3 = onSelect;
-  obj = option(onSelect[11]);
-  const cResult = obj.c(83);
-  option = option.option;
-  const selected = option.selected;
-  onSelect = option.onSelect;
-  const suppressMemberCount = option.suppressMemberCount;
-  const canBeNew = option.canBeNew;
-  const guildId = option.guildId;
-  closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [first1];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  let emoji = option.emoji;
-  let id;
-  const tmp8 = cResult[1];
-  if (emoji != null) {
-    id = emoji.id;
-  }
-  if (tmp8 !== id) {
-    let emoji2 = option.emoji;
-    let id1;
-    if (emoji2 != null) {
-      id1 = emoji2.id;
-    }
-    class B {
-      constructor() {
-        let id;
-        if (option != null) {
-          const emoji = tmp.emoji;
-          if (emoji != null) {
-            id = emoji.id;
-          }
-        }
-        let usableCustomEmojiById = null;
-        if (null != id) {
-          let id1;
-          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-          if (option != null) {
-            const emoji2 = tmp.emoji;
-            if (emoji2 != null) {
-              id1 = emoji2.id;
-            }
-          }
-          usableCustomEmojiById = getUsableCustomEmojiById(id1);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-    let num2 = 1;
-    cResult[1] = id1;
-    let num3 = 2;
-    cResult[2] = B;
-    tmp10 = B;
-  } else {
-    tmp10 = cResult[2];
-  }
-  const tmp2Result = tmp2(tmp3[12]);
-  const stateFromStores = tmp2Result.useStateFromStores(first, tmp10);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let items1 = [useReducedMotion];
-    class B {
-      constructor() {
-        let id;
-        if (option != null) {
-          const emoji = tmp.emoji;
-          if (emoji != null) {
-            id = emoji.id;
-          }
-        }
-        let usableCustomEmojiById = null;
-        if (null != id) {
-          let id1;
-          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-          if (option != null) {
-            const emoji2 = tmp.emoji;
-            if (emoji2 != null) {
-              id1 = emoji2.id;
-            }
-          }
-          usableCustomEmojiById = getUsableCustomEmojiById(id1);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-    let num4 = 3;
-    cResult[3] = items1;
-    cResult[4] = tmp16;
-    tmp14 = tmp16;
-    tmp13 = items1;
-  } else {
-    tmp13 = cResult[3];
-    tmp14 = cResult[4];
-  }
-  const tmp2Result5 = tmp2(tmp3[12]);
-  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp13, tmp14);
-  const tmp2Result6 = tmp2(tmp3[7]);
-  class A {
-    constructor() {
-      let Easing;
-      let items;
-      let num = 0;
-      if (selected) {
-        num = 1;
-      }
-      obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-      const withTiming = timing.withTiming;
-      timing;
-      Easing = ReanimatedRexport.Easing;
-      let num2 = 0.7;
-      const withTimingResult = withTiming(num, obj);
-      if (selected) {
-        num2 = 1;
-      }
-      let withSequenceResult = num2;
-      const obj2 = { opacity: withTimingResult, transform: items };
-      if (!stateFromStores1) {
-        const withSequence = ReanimatedRexport.withSequence;
-        ReanimatedRexport;
-        const tmp2Result3 = spring;
-        const withSpringResult = tmp2Result3.withSpring(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
-        const tmp2Result4 = spring;
-        withSequenceResult = withSequence(withSpringResult, tmp2Result4.withSpring(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
-      }
-      items = [{ scale: withSequenceResult }];
-      return obj2;
-    }
-  }
-  let obj2 = { selected, withTiming: tmp2(tmp3[13]).withTiming, Easing: tmp2(tmp3[7]).Easing, useReducedMotion: stateFromStores1, withSequence: tmp2(tmp3[7]).withSequence, withSpring: tmp2(tmp3[14]).withSpring };
-  A.__closure = obj2;
-  A.__workletHash = 8281627194581;
-  A.__initData = __initData;
-  const animatedStyle = tmp2Result6.useAnimatedStyle(A);
-  const tmp19 = selected(tmp3[15])(guildId);
-  let closure_5 = tmp19;
-  if (cResult[5] === tmp19) {
-    let tmp20;
-    if (cResult[6] === option.roleIds) {
-      tmp20 = cResult[7];
-    }
-    useReducedMotion = tmp20;
-    class B {
-      constructor() {
-        let id;
-        if (option != null) {
-          const emoji = tmp.emoji;
-          if (emoji != null) {
-            id = emoji.id;
-          }
-        }
-        let usableCustomEmojiById = null;
-        if (null != id) {
-          let id1;
-          const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-          if (option != null) {
-            const emoji2 = tmp.emoji;
-            if (emoji2 != null) {
-              id1 = emoji2.id;
-            }
-          }
-          usableCustomEmojiById = getUsableCustomEmojiById(id1);
-        }
-        return usableCustomEmojiById;
-      }
-    }
-    const tmp27 = suppressMemberCount(stateFromStores1.useState(false), 2);
-    first1 = tmp27[0];
-    let closure_8 = tmp27[1];
-    let closure_9 = stateFromStores1.useRef(null);
-    if (cResult[8] === onSelect) {
-      if (cResult[9] === selected) {
-        let tmp31;
-        let tmp30;
-        if (cResult[12] !== first1) {
-          class Z {
-            constructor() {
-              if (closure_7) {
-                tmp = closure_9;
-                tmp2 = globalThis;
-                _setTimeout = setTimeout;
-                num = 3000;
-                closure_9.current = setTimeout(() => {
-                  closure_1_8(false);
-                  ref.current = null;
-                }, 3000);
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(tmp.current);
-                  }
-                };
-              } else {
-                return;
-              }
-            }
-          }
-          let items2 = [first1];
-          class B {
-            constructor() {
-              let id;
-              if (option != null) {
-                const emoji = tmp.emoji;
-                if (emoji != null) {
-                  id = emoji.id;
-                }
-              }
-              let usableCustomEmojiById = null;
-              if (null != id) {
-                let id1;
-                const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                if (option != null) {
-                  const emoji2 = tmp.emoji;
-                  if (emoji2 != null) {
-                    id1 = emoji2.id;
-                  }
-                }
-                usableCustomEmojiById = getUsableCustomEmojiById(id1);
-              }
-              return usableCustomEmojiById;
-            }
-          }
-          cResult[12] = first1;
-          class Y {
-            constructor() {
-              if (first1) {
-                if (!ref.current) {
-                  if (useReducedMotion > 0) {
-                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                    const announce = AccessibilityAnnouncer.announce;
-                    const intl = intl4.intl;
-                    obj = { memberCount: tmp3 };
-                    announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                    tmp2.current = true;
-                  }
-                }
-              }
-              if (!first1) {
-                ref.current = false;
-              }
-            }
-          }
-          cResult[13] = Z;
-          cResult[14] = items2;
-          tmp31 = items2;
-          tmp30 = Z;
-        } else {
-          class Z {
-            constructor() {
-              if (closure_7) {
-                tmp = closure_9;
-                tmp2 = globalThis;
-                _setTimeout = setTimeout;
-                num = 3000;
-                closure_9.current = setTimeout(() => {
-                  closure_1_8(false);
-                  ref.current = null;
-                }, 3000);
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(tmp.current);
-                  }
-                };
-              } else {
-                return;
-              }
-            }
-          }
-          tmp31 = cResult[14];
-        }
-        const effect = obj6.useEffect(tmp30, tmp31);
-        class B {
-          constructor() {
-            let id;
-            if (option != null) {
-              const emoji = tmp.emoji;
-              if (emoji != null) {
-                id = emoji.id;
-              }
-            }
-            let usableCustomEmojiById = null;
-            if (null != id) {
-              let id1;
-              const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-              if (option != null) {
-                const emoji2 = tmp.emoji;
-                if (emoji2 != null) {
-                  id1 = emoji2.id;
-                }
-              }
-              usableCustomEmojiById = getUsableCustomEmojiById(id1);
-            }
-            return usableCustomEmojiById;
-          }
-        }
-        if (cResult[15] === tmp20) {
-          let title;
-          class Z {
-            constructor() {
-              if (closure_7) {
-                tmp = closure_9;
-                tmp2 = globalThis;
-                _setTimeout = setTimeout;
-                num = 3000;
-                closure_9.current = setTimeout(() => {
-                  closure_1_8(false);
-                  ref.current = null;
-                }, 3000);
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(tmp.current);
-                  }
-                };
-              } else {
-                return;
-              }
-            }
-          }
-          const effect1 = obj6.useEffect(tmp34, tmp33);
-          const tmp2Result7 = tmp2(tmp3[7]);
-          class B {
-            constructor() {
-              let id;
-              if (option != null) {
-                const emoji = tmp.emoji;
-                if (emoji != null) {
-                  id = emoji.id;
-                }
-              }
-              let usableCustomEmojiById = null;
-              if (null != id) {
-                let id1;
-                const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                if (option != null) {
-                  const emoji2 = tmp.emoji;
-                  if (emoji2 != null) {
-                    id1 = emoji2.id;
-                  }
-                }
-                usableCustomEmojiById = getUsableCustomEmojiById(id1);
-              }
-              return usableCustomEmojiById;
-            }
-          }
-          let obj3 = { showMemberCount: null, withDelay: tmp2(tmp3[7]).withDelay, withTiming: tmp2(tmp3[13]).withTiming, Easing: tmp2(tmp3[7]).Easing, useReducedMotion: stateFromStores1 };
-          class Y {
-            constructor() {
-              if (first1) {
-                if (!ref.current) {
-                  if (useReducedMotion > 0) {
-                    const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                    const announce = AccessibilityAnnouncer.announce;
-                    const intl = intl4.intl;
-                    obj = { memberCount: tmp3 };
-                    announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                    tmp2.current = true;
-                  }
-                }
-              }
-              if (!first1) {
-                ref.current = false;
-              }
-            }
-          }
-          const useAnimatedStyle = tmp2Result7.useAnimatedStyle;
-          tmp37.__closure = obj3;
-          tmp37.__workletHash = 6536351943221;
-          tmp37.__initData = __initData2;
-          const animatedStyle1 = useAnimatedStyle(tmp37);
-          const tmp2Result8 = tmp2(tmp3[7]);
-          const sharedValue = tmp2Result8.useSharedValue(1);
-          if (cResult[19] !== sharedValue) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            cResult[19] = sharedValue;
-            class B {
-              constructor() {
-                let id;
-                if (option != null) {
-                  const emoji = tmp.emoji;
-                  if (emoji != null) {
-                    id = emoji.id;
-                  }
-                }
-                let usableCustomEmojiById = null;
-                if (null != id) {
-                  let id1;
-                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                  if (option != null) {
-                    const emoji2 = tmp.emoji;
-                    if (emoji2 != null) {
-                      id1 = emoji2.id;
-                    }
-                  }
-                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
-                }
-                return usableCustomEmojiById;
-              }
-            }
-            cResult[20] = tmp41;
-            class Y {
-              constructor() {
-                if (first1) {
-                  if (!ref.current) {
-                    if (useReducedMotion > 0) {
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      const announce = AccessibilityAnnouncer.announce;
-                      const intl = intl4.intl;
-                      obj = { memberCount: tmp3 };
-                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                      tmp2.current = true;
-                    }
-                  }
-                }
-                if (!first1) {
-                  ref.current = false;
-                }
-              }
-            }
-          } else {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-          }
-          if (cResult[21] !== sharedValue) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            cResult[21] = sharedValue;
-            class B {
-              constructor() {
-                let id;
-                if (option != null) {
-                  const emoji = tmp.emoji;
-                  if (emoji != null) {
-                    id = emoji.id;
-                  }
-                }
-                let usableCustomEmojiById = null;
-                if (null != id) {
-                  let id1;
-                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                  if (option != null) {
-                    const emoji2 = tmp.emoji;
-                    if (emoji2 != null) {
-                      id1 = emoji2.id;
-                    }
-                  }
-                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
-                }
-                return usableCustomEmojiById;
-              }
-            }
-            cResult[22] = tmp42;
-            class Y {
-              constructor() {
-                if (first1) {
-                  if (!ref.current) {
-                    if (useReducedMotion > 0) {
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      const announce = AccessibilityAnnouncer.announce;
-                      const intl = intl4.intl;
-                      obj = { memberCount: tmp3 };
-                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                      tmp2.current = true;
-                    }
-                  }
-                }
-                if (!first1) {
-                  ref.current = false;
-                }
-              }
-            }
-          } else {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-          }
-          closure_12 = canBeNew && option.isUnseen;
-          if (option != null) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            if (tmp44 != null) {
-              class Z {
-                constructor() {
-                  if (closure_7) {
-                    tmp = closure_9;
-                    tmp2 = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_9.current = setTimeout(() => {
-                      closure_1_8(false);
-                      ref.current = null;
-                    }, 3000);
-                    return () => {
-                      if (null != ref.current) {
-                        const _clearTimeout = clearTimeout;
-                        clearTimeout(tmp.current);
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-            }
-          }
-          let tmp45 = null != tmp43;
-          if (!tmp45) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            if (option != null) {
-              class Z {
-                constructor() {
-                  if (closure_7) {
-                    tmp = closure_9;
-                    tmp2 = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_9.current = setTimeout(() => {
-                      closure_1_8(false);
-                      ref.current = null;
-                    }, 3000);
-                    return () => {
-                      if (null != ref.current) {
-                        const _clearTimeout = clearTimeout;
-                        clearTimeout(tmp.current);
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              if (tmp47 != null) {
-                class Z {
-                  constructor() {
-                    if (closure_7) {
-                      tmp = closure_9;
-                      tmp2 = globalThis;
-                      _setTimeout = setTimeout;
-                      num = 3000;
-                      closure_9.current = setTimeout(() => {
-                        closure_1_8(false);
-                        ref.current = null;
-                      }, 3000);
-                      return () => {
-                        if (null != ref.current) {
-                          const _clearTimeout = clearTimeout;
-                          clearTimeout(tmp.current);
-                        }
-                      };
-                    } else {
-                      return;
-                    }
-                  }
-                }
-              }
-            }
-            tmp45 = null != tmp46;
-          }
-          const emoji3 = option.emoji;
-          if (cResult[23] === tmp45) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-          }
-          if (tmp45) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            if (tmp49 != null) {
-              class Z {
-                constructor() {
-                  if (closure_7) {
-                    tmp = closure_9;
-                    tmp2 = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_9.current = setTimeout(() => {
-                      closure_1_8(false);
-                      ref.current = null;
-                    }, 3000);
-                    return () => {
-                      if (null != ref.current) {
-                        const _clearTimeout = clearTimeout;
-                        clearTimeout(tmp.current);
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-            }
-            class B {
-              constructor() {
-                let id;
-                if (option != null) {
-                  const emoji = tmp.emoji;
-                  if (emoji != null) {
-                    id = emoji.id;
-                  }
-                }
-                let usableCustomEmojiById = null;
-                if (null != id) {
-                  let id1;
-                  const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                  if (option != null) {
-                    const emoji2 = tmp.emoji;
-                    if (emoji2 != null) {
-                      id1 = emoji2.id;
-                    }
-                  }
-                  usableCustomEmojiById = getUsableCustomEmojiById(id1);
-                }
-                return usableCustomEmojiById;
-              }
-            }
-            class Y {
-              constructor() {
-                if (first1) {
-                  if (!ref.current) {
-                    if (useReducedMotion > 0) {
-                      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                      const announce = AccessibilityAnnouncer.announce;
-                      const intl = intl4.intl;
-                      obj = { memberCount: tmp3 };
-                      announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                      tmp2.current = true;
-                    }
-                  }
-                }
-                if (!first1) {
-                  ref.current = false;
-                }
-              }
-            }
-            if (null != option.description) {
-              class Z {
-                constructor() {
-                  if (closure_7) {
-                    tmp = closure_9;
-                    tmp2 = globalThis;
-                    _setTimeout = setTimeout;
-                    num = 3000;
-                    closure_9.current = setTimeout(() => {
-                      closure_1_8(false);
-                      ref.current = null;
-                    }, 3000);
-                    return () => {
-                      if (null != ref.current) {
-                        const _clearTimeout = clearTimeout;
-                        clearTimeout(tmp.current);
-                      }
-                    };
-                  } else {
-                    return;
-                  }
-                }
-              }
-              if (option.description.length > 0) {
-                class Z {
-                  constructor() {
-                    if (closure_7) {
-                      tmp = closure_9;
-                      tmp2 = globalThis;
-                      _setTimeout = setTimeout;
-                      num = 3000;
-                      closure_9.current = setTimeout(() => {
-                        closure_1_8(false);
-                        ref.current = null;
-                      }, 3000);
-                      return () => {
-                        if (null != ref.current) {
-                          const _clearTimeout = clearTimeout;
-                          clearTimeout(tmp.current);
-                        }
-                      };
-                    } else {
-                      return;
-                    }
-                  }
-                }
-                const formatToPlainString = tmp51.formatToPlainString;
-                let obj4 = { emojiName: null, title: option.title, description: null };
-                class B {
-                  constructor() {
-                    let id;
-                    if (option != null) {
-                      const emoji = tmp.emoji;
-                      if (emoji != null) {
-                        id = emoji.id;
-                      }
-                    }
-                    let usableCustomEmojiById = null;
-                    if (null != id) {
-                      let id1;
-                      const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-                      if (option != null) {
-                        const emoji2 = tmp.emoji;
-                        if (emoji2 != null) {
-                          id1 = emoji2.id;
-                        }
-                      }
-                      usableCustomEmojiById = getUsableCustomEmojiById(id1);
-                    }
-                    return usableCustomEmojiById;
-                  }
-                }
-                class Y {
-                  constructor() {
-                    if (first1) {
-                      if (!ref.current) {
-                        if (useReducedMotion > 0) {
-                          const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                          const announce = AccessibilityAnnouncer.announce;
-                          const intl = intl4.intl;
-                          obj = { memberCount: tmp3 };
-                          announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                          tmp2.current = true;
-                        }
-                      }
-                    }
-                    if (!first1) {
-                      ref.current = false;
-                    }
-                  }
-                }
-                title = formatToPlainString(tmp2(tmp3[17]).t.nSzqkg, obj4);
-              }
-            }
-            let intl = tmp2(tmp3[17]).intl;
-            const obj5 = { emojiName: tmp50, title: option.title };
-            title = intl.formatToPlainString(tmp2(tmp3[17]).t.rBPpAN, obj5);
-          } else {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-            title = option.title;
-          }
-          cResult[23] = tmp45;
-          ({ description: tmp4[24], emoji: emoji4 } = option);
-          if (emoji4 != null) {
-            class Z {
-              constructor() {
-                if (closure_7) {
-                  tmp = closure_9;
-                  tmp2 = globalThis;
-                  _setTimeout = setTimeout;
-                  num = 3000;
-                  closure_9.current = setTimeout(() => {
-                    closure_1_8(false);
-                    ref.current = null;
-                  }, 3000);
-                  return () => {
-                    if (null != ref.current) {
-                      const _clearTimeout = clearTimeout;
-                      clearTimeout(tmp.current);
-                    }
-                  };
-                } else {
-                  return;
-                }
-              }
-            }
-          }
-          class A {
-            constructor() {
-              let Easing;
-              let items;
-              let num = 0;
-              if (selected) {
-                num = 1;
-              }
-              obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
-              const withTiming = timing.withTiming;
-              timing;
-              Easing = ReanimatedRexport.Easing;
-              let num2 = 0.7;
-              const withTimingResult = withTiming(num, obj);
-              if (selected) {
-                num2 = 1;
-              }
-              let withSequenceResult = num2;
-              const obj2 = { opacity: withTimingResult, transform: items };
-              if (!stateFromStores1) {
-                const withSequence = ReanimatedRexport.withSequence;
-                ReanimatedRexport;
-                const tmp2Result3 = spring;
-                const withSpringResult = tmp2Result3.withSpring(1.2 * num2, { stiffness: 80, damping: 6, mass: 0.3 });
-                const tmp2Result4 = spring;
-                withSequenceResult = withSequence(withSpringResult, tmp2Result4.withSpring(num2, { stiffness: 80, damping: 6, mass: 0.3 }));
-              }
-              items = [{ scale: withSequenceResult }];
-              return obj2;
-            }
-          }
-          cResult[25] = undefined;
-          cResult[26] = option.title;
-          cResult[27] = title;
-        }
-        class Y {
-          constructor() {
-            if (first1) {
-              if (!ref.current) {
-                if (useReducedMotion > 0) {
-                  const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                  const announce = AccessibilityAnnouncer.announce;
-                  const intl = intl4.intl;
-                  obj = { memberCount: tmp3 };
-                  announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                  tmp2.current = true;
-                }
-              }
-            }
-            if (!first1) {
-              ref.current = false;
-            }
-          }
-        }
-        const items3 = [first1, tmp20];
-        cResult[15] = tmp20;
-        cResult[16] = first1;
-        cResult[17] = items3;
-        cResult[18] = Y;
-        tmp33 = items3;
-        tmp34 = Y;
-      }
-    }
-    function handleOptionSelect() {
-      onSelect(!selected);
-      const tmp = selected;
-      const tmp3 = suppressMemberCount;
-      if (!tmp3) {
-        closure_8(!tmp);
-      }
-    }
-    cResult[8] = onSelect;
-    cResult[9] = selected;
-    cResult[10] = suppressMemberCount;
-    cResult[11] = handleOptionSelect;
-  }
-  let num6 = 0;
-  if (null != tmp19) {
-    class Z {
-      constructor() {
-        if (closure_7) {
-          tmp = closure_9;
-          tmp2 = globalThis;
-          _setTimeout = setTimeout;
-          num = 3000;
-          closure_9.current = setTimeout(() => {
-            closure_1_8(false);
-            ref.current = null;
-          }, 3000);
-          return () => {
-            if (null != ref.current) {
-              const _clearTimeout = clearTimeout;
-              clearTimeout(tmp.current);
-            }
-          };
-        } else {
-          return;
-        }
-      }
-    }
-    if (null != option.roleIds) {
-      class Z {
-        constructor() {
-          if (closure_7) {
-            tmp = closure_9;
-            tmp2 = globalThis;
-            _setTimeout = setTimeout;
-            num = 3000;
-            closure_9.current = setTimeout(() => {
-              closure_1_8(false);
-              ref.current = null;
-            }, 3000);
-            return () => {
-              if (null != ref.current) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(tmp.current);
-              }
-            };
-          } else {
-            return;
-          }
-        }
-      }
-      const roleIds = option.roleIds;
-      class B {
-        constructor() {
-          let id;
-          if (option != null) {
-            const emoji = tmp.emoji;
-            if (emoji != null) {
-              id = emoji.id;
-            }
-          }
-          let usableCustomEmojiById = null;
-          if (null != id) {
-            let id1;
-            const getUsableCustomEmojiById = EmojiStore.getUsableCustomEmojiById;
-            if (option != null) {
-              const emoji2 = tmp.emoji;
-              if (emoji2 != null) {
-                id1 = emoji2.id;
-              }
-            }
-            usableCustomEmojiById = getUsableCustomEmojiById(id1);
-          }
-          return usableCustomEmojiById;
-        }
-      }
-      class Y {
-        constructor() {
-          if (first1) {
-            if (!ref.current) {
-              if (useReducedMotion > 0) {
-                const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-                const announce = AccessibilityAnnouncer.announce;
-                const intl = intl4.intl;
-                obj = { memberCount: tmp3 };
-                announce(intl.formatToPlainString(intl4.t.iyXfAn, obj), "polite");
-                tmp2.current = true;
-              }
-            }
-          }
-          if (!first1) {
-            ref.current = false;
-          }
-        }
-      }
-      HermesBuiltin.arraySpread(tmp21, roleIds.map((item) => closure_5[item]), 0);
-      const _Math = Math;
-      num6 = HermesBuiltin.apply(max, tmp21, Math);
-    }
-  }
-  cResult[5] = tmp19;
-  cResult[6] = option.roleIds;
-  cResult[7] = num6;
-  tmp20 = num6;
-}) : (function PromptOptionButton(option) {
+let closure_17 = { code: "function GuildOnboardingPromptOptionButtonTsx5(){const{interpolateColor,newProgress,unselectedBorderColor,newBorderColor,selectedProgress,selectedBorderColor,selectedBackgroundColor}=this.__closure;const currentUnselectedBorderColor=interpolateColor(newProgress.get(),[0,1],[unselectedBorderColor,newBorderColor]);return{borderColor:interpolateColor(selectedProgress.get(),[0,1],[currentUnselectedBorderColor,selectedBorderColor]),backgroundColor:interpolateColor(selectedProgress.get(),[0,1],['transparent',selectedBackgroundColor])};}" };
+let closure_18 = { code: "function GuildOnboardingPromptOptionButtonTsx6(){const{useReducedMotion,scale}=this.__closure;return useReducedMotion?{}:{transform:[{scale:scale.get()}]};}" };
+size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
+
+export default function PromptOptionButton(option) {
   let CheckmarkSmallIcon;
   let Text;
   let accessibilityRole;
   let accessibilityState;
   let canBeNew;
+  let closure_13;
   let closure_8;
   let emojiURL;
   let intl;
@@ -1223,7 +85,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   let ref;
   let sharedValue;
   closure_12 = undefined;
-  let closure_13;
+  __initData = undefined;
   let token;
   let token1;
   let token2;
@@ -1260,8 +122,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   let obj2 = option(504);
   let items1 = [num];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => num.useReducedMotion);
-  let obj3 = option(5086);
-  class S {
+  let obj3 = option(5090);
+  class R {
     constructor() {
       let Easing;
       let items;
@@ -1292,12 +154,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  let obj4 = { selected, withTiming: option(5243).withTiming, Easing: option(5086).Easing, useReducedMotion: stateFromStores1, withSequence: option(5086).withSequence, withSpring: option(5284).withSpring };
-  S.__closure = obj4;
-  S.__workletHash = 8205438722579;
-  S.__initData = derivedValue1;
-  const animatedStyle = obj3.useAnimatedStyle(S);
-  const tmp9 = selected(7284)(guildId);
+  let obj4 = { selected, withTiming: option(5249).withTiming, Easing: option(5090).Easing, useReducedMotion: stateFromStores1, withSequence: option(5090).withSequence, withSpring: option(5632).withSpring };
+  R.__closure = obj4;
+  R.__workletHash = 8281627194581;
+  R.__initData = __initData;
+  const animatedStyle = obj3.useAnimatedStyle(R);
+  const tmp9 = selected(7291)(guildId);
   closure_5 = tmp9;
   num = 0;
   if (null != tmp9) {
@@ -1351,7 +213,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
   }, items4);
   const tmp15 = stateFromStores1;
-  const tmp3Result = tmp3(5086);
+  const tmp3Result = tmp3(5090);
   class V {
     constructor() {
       let Easing;
@@ -1370,7 +232,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       obj = { duration: 150, easing: Easing.out(ReanimatedRexport.Easing.ease) };
       const withTiming = timing.withTiming;
       timing;
-      Easing = tmp2(5086).Easing;
+      Easing = tmp2(5090).Easing;
       let num3 = 16;
       const withDelayResult = withDelay(num2, withTiming(num, obj));
       if (first) {
@@ -1388,19 +250,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
         const obj3 = { duration: 200, easing: Easing2.out(ReanimatedRexport.Easing.ease) };
         const withTiming2 = timing.withTiming;
         timing;
-        Easing2 = tmp2(5086).Easing;
+        Easing2 = tmp2(5090).Easing;
         withDelay2Result = withDelay2(num4, withTiming2(num3, obj3));
       }
       items = [{ translateX: withDelay2Result }];
       return obj2;
     }
   }
-  let obj5 = { showMemberCount, withDelay: tmp3(5086).withDelay, withTiming: tmp3(5243).withTiming, Easing: tmp3(5086).Easing, useReducedMotion: stateFromStores1 };
+  let obj5 = { showMemberCount, withDelay: tmp3(5090).withDelay, withTiming: tmp3(5249).withTiming, Easing: tmp3(5090).Easing, useReducedMotion: stateFromStores1 };
   V.__closure = obj5;
-  V.__workletHash = 10755800239871;
-  V.__initData = __initData3;
+  V.__workletHash = 9518487706997;
+  V.__initData = token;
   const animatedStyle1 = tmp3Result.useAnimatedStyle(V);
-  const tmp3Result11 = tmp3(5086);
+  const tmp3Result11 = tmp3(5090);
   sharedValue = tmp3Result11.useSharedValue(1);
   closure_12 = tmp22;
   let id;
@@ -1421,7 +283,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
     tmp24 = null != name;
   }
-  closure_13 = tmp24;
+  __initData = tmp24;
   const items5 = [tmp24, , , ];
   const emoji3 = option.emoji;
   let name1;
@@ -1469,14 +331,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       title = tmp.title;
     }
   }, items5);
-  const tmp3Result12 = tmp3(5289);
-  token = tmp3Result12.useToken(tmp8(587).colors.BORDER_SUBTLE);
-  const tmp3Result13 = tmp3(5289);
-  token1 = tmp3Result13.useToken(tmp8(587).colors.BACKGROUND_BRAND);
-  const tmp3Result14 = tmp3(5289);
-  token2 = tmp3Result14.useToken(tmp8(587).colors.BORDER_STRONG);
-  const tmp3Result15 = tmp3(5289);
-  token3 = tmp3Result15.useToken(tmp8(587).colors.BACKGROUND_BASE_LOWEST);
+  const tmp3Result12 = tmp3(5591);
+  token = tmp3Result12.useToken(tmp8(575).colors.BORDER_SUBTLE);
+  const tmp3Result13 = tmp3(5591);
+  token1 = tmp3Result13.useToken(tmp8(575).colors.BACKGROUND_BRAND);
+  const tmp3Result14 = tmp3(5591);
+  token2 = tmp3Result14.useToken(tmp8(575).colors.BORDER_STRONG);
+  const tmp3Result15 = tmp3(5591);
+  token3 = tmp3Result15.useToken(tmp8(575).colors.BACKGROUND_BASE_LOWEST);
   const fn = function q() {
     num = 0;
     const withTiming = timing.withTiming;
@@ -1486,31 +348,29 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     }
     return withTiming(num, obj);
   };
-  const tmp3Result16 = tmp3(5086);
-  fn.__closure = { withTiming: tmp3(5243).withTiming, selected, SELECTION_TIMING: sharedValue };
-  fn.__workletHash = 12520862943769;
-  fn.__initData = __initData4;
-  ({ withTiming: tmp3(5243).withTiming, selected, SELECTION_TIMING: sharedValue });
+  const tmp3Result16 = tmp3(5090);
+  fn.__closure = { withTiming: tmp3(5249).withTiming, selected, SELECTION_TIMING: sharedValue };
+  fn.__workletHash = 11553377214675;
+  fn.__initData = token1;
+  ({ withTiming: tmp3(5249).withTiming, selected, SELECTION_TIMING: sharedValue });
   derivedValue = tmp3Result16.useDerivedValue(fn);
-  const tmp3Result17 = tmp3(5086);
-  class W {
-    constructor() {
-      num = 0;
-      const withTiming = timing.withTiming;
-      timing;
-      if (closure_12) {
-        num = 1;
-      }
-      return withTiming(num, obj);
+  const fn2 = function z() {
+    num = 0;
+    const withTiming = timing.withTiming;
+    timing;
+    if (closure_12) {
+      num = 1;
     }
-  }
-  W.__closure = { withTiming: tmp3(5243).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
-  W.__workletHash = 6695066984001;
-  W.__initData = __initData5;
-  ({ withTiming: tmp3(5243).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
-  derivedValue1 = tmp3Result17.useDerivedValue(W);
-  const tmp3Result18 = tmp3(5086);
-  class X {
+    return withTiming(num, obj);
+  };
+  const tmp3Result17 = tmp3(5090);
+  fn2.__closure = { withTiming: tmp3(5249).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue };
+  fn2.__workletHash = 9359578148244;
+  fn2.__initData = token2;
+  ({ withTiming: tmp3(5249).withTiming, isNew: canBeNew && option.isUnseen, SELECTION_TIMING: sharedValue });
+  derivedValue1 = tmp3Result17.useDerivedValue(fn2);
+  const tmp3Result18 = tmp3(5090);
+  class W {
     constructor() {
       let items1;
       let items2;
@@ -1527,34 +387,36 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
       return obj2;
     }
   }
-  X.__closure = { interpolateColor: tmp3(5086).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
-  X.__workletHash = 11103701630825;
-  X.__initData = __initData6;
-  ({ interpolateColor: tmp3(5086).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
-  const animatedStyle2 = tmp3Result18.useAnimatedStyle(X);
-  const fn2 = function z() {
-    let items;
-    const tmp = stateFromStores1;
-    if (tmp) {
-      obj = {};
-    } else {
-      obj = { transform: items };
-      items = [{ scale: sharedValue.get() }];
-      const obj2 = { scale: sharedValue.get() };
+  W.__closure = { interpolateColor: tmp3(5090).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 };
+  W.__workletHash = 1340353593596;
+  W.__initData = token3;
+  ({ interpolateColor: tmp3(5090).interpolateColor, newProgress: derivedValue1, unselectedBorderColor: token, newBorderColor: token1, selectedProgress: derivedValue, selectedBorderColor: token2, selectedBackgroundColor: token3 });
+  const animatedStyle2 = tmp3Result18.useAnimatedStyle(W);
+  const tmp3Result19 = tmp3(5090);
+  class K {
+    constructor() {
+      let items;
+      const tmp = stateFromStores1;
+      if (tmp) {
+        obj = {};
+      } else {
+        obj = { transform: items };
+        items = [{ scale: sharedValue.get() }];
+        const obj2 = { scale: sharedValue.get() };
+      }
+      return obj;
     }
-    return obj;
-  };
-  fn2.__closure = { useReducedMotion: stateFromStores1, scale_0: sharedValue };
-  fn2.__workletHash = 15537308682382;
-  fn2.__initData = __initData7;
-  const tmp3Result19 = tmp3(5086);
-  const animatedStyle3 = tmp3Result19.useAnimatedStyle(fn2);
-  const tmp3Result20 = tmp3(5073);
+  }
+  K.__closure = { useReducedMotion: stateFromStores1, scale: sharedValue };
+  K.__workletHash = 11083046243451;
+  K.__initData = derivedValue;
+  const animatedStyle3 = tmp3Result19.useAnimatedStyle(K);
+  const tmp3Result20 = tmp3(5077);
   const checkboxA11yNative = tmp3Result20.useCheckboxA11yNative({ checked: selected });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
   const obj9 = { style: items6, children: items9 };
   items6 = [tmp2.container, animatedStyle3, animatedStyle2];
-  View = tmp8(5086).View;
+  View = tmp8(5090).View;
   let id1;
   const obj10 = {
     activeOpacity: 0.6,
@@ -1594,7 +456,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     accessibilityLabel: memo,
     children: items7
   };
-  const PressableOpacity = tmp3(6968).PressableOpacity;
+  const PressableOpacity = tmp3(6974).PressableOpacity;
   if (option != null) {
     const emoji4 = option.emoji;
     if (emoji4 != null) {
@@ -1618,11 +480,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     ({ optionTextEmoji: obj23.textEmojiStyle, optionImageEmoji: obj23.fastImageStyle } = tmp2);
     emojiURL = undefined;
     const tmp42 = closure_5;
-    tmp8Result = selected(7287);
+    tmp8Result = selected(7294);
     if (null != stateFromStores) {
       const obj13 = { id: null, animated: null, size };
       ({ id: obj25.id, animated: obj25.animated } = stateFromStores);
-      const tmp8Result2 = selected(1415);
+      const tmp8Result2 = selected(1410);
       emojiURL = tmp8Result2.getEmojiURL(obj13);
     }
     str = undefined;
@@ -1641,12 +503,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   const obj14 = { style: tmp2.optionText, children: items8 };
   items8 = [, ];
   const obj15 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: option.title };
-  items8[0] = closure_9(tmp3(5271).Text, obj15);
+  items8[0] = closure_9(tmp3(5619).Text, obj15);
   let tmp47Result = null != option.description && option.description.length > 0;
   const tmp46 = closure_5;
   if (tmp47Result) {
     const obj16 = { variant: "text-xs/medium", color: "text-default", children: option.description };
-    tmp47Result = tmp47(tmp3(5271).Text, obj16);
+    tmp47Result = tmp47(tmp3(5619).Text, obj16);
   }
   items8[1] = tmp47Result;
   items7[1] = ref(tmp46, obj14);
@@ -1655,19 +517,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
   if (num > 0) {
     const obj17 = { accessible: false, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, style: items10, children: closure_9(Text, obj18) };
     items10 = [tmp2.roleCount, animatedStyle1];
-    const View2 = tmp8(5086).View;
-    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1125).t.EgKsZA, obj19) };
-    Text = tmp3(5271).Text;
-    intl = tmp3(1125).intl;
+    const View2 = tmp8(5090).View;
+    obj18 = { variant: "text-xs/semibold", color: "text-overlay-light", children: intl.format(tmp3(1114).t.EgKsZA, obj19) };
+    Text = tmp3(5619).Text;
+    intl = tmp3(1114).intl;
     obj19 = { memberCount: num };
     tmp47Result2 = tmp47(View2, obj17);
   }
   items9[1] = tmp47Result2;
   const obj20 = { style: items11, children: closure_9(CheckmarkSmallIcon, obj21) };
   items11 = [tmp2.checkIcon, animatedStyle];
-  const View3 = tmp8(5086).View;
-  obj21 = { size: "xs", color: selected(587).colors.WHITE };
-  CheckmarkSmallIcon = tmp3(7290).CheckmarkSmallIcon;
+  const View3 = tmp8(5090).View;
+  obj21 = { size: "xs", color: selected(575).colors.WHITE };
+  CheckmarkSmallIcon = tmp3(7297).CheckmarkSmallIcon;
   items9[2] = closure_9(View3, obj20);
   if (canBeNew) {
     canBeNew = !selected;
@@ -1676,16 +538,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PromptOption
     canBeNew = option.isUnseen;
   }
   if (canBeNew) {
-    const obj22 = { color: tmp3(1199).BadgeColors.BRAND, text: intl2.string(tmp3(1125).t.y2b7CA), style: null, textStyle: null };
-    const TextBadge = tmp3(1199).TextBadge;
-    intl2 = tmp3(1125).intl;
+    const obj22 = { color: tmp3(1188).BadgeColors.BRAND, text: intl2.string(tmp3(1114).t.y2b7CA), style: null, textStyle: null };
+    const TextBadge = tmp3(1188).TextBadge;
+    intl2 = tmp3(1114).intl;
     ({ newBadgeWrapper: obj34.style, newBadge: obj34.textStyle } = tmp2);
     canBeNew = tmp47(TextBadge, obj22);
   }
   items9[3] = canBeNew;
   return ref(View, obj9);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingPromptOptionButton.tsx");
-
-export default tmp4;
+};

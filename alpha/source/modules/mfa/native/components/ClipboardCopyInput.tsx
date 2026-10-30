@@ -1,17 +1,17 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17607
+// Function ID: 17608
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 1999, 1084, 21, 5005, 558, 576, 504, 7117, 7193, 7345, 7068, 2]
+// Dependencies: [5, 19, 17, 1994, 1072, 21, 5009, 504, 7125, 7201, 7352, 7076, 2]
+// Exports: default
 
-// Module 17553 (ClipboardCopyInput)
+// Module 17607 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AppStateStore from "AppStateStore" /* 1994 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,232 +21,9 @@ const View = react_native.View;
 const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
 let closure_9 = createStyles.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCopyInput(isValidClipboardCode) {
-  let autoComplete;
-  let autoFocus;
-  let error;
-  let isDisabled;
-  let keyboardType;
-  let label;
-  let maxLength;
-  let onChangeCode;
-  let placeholder;
-  let state;
-  let stateFromStores;
-  let textContentType;
-  let tmp7;
-  let tmp8;
-  const tmp = _require;
-  let tmp2 = stateFromStores;
-  let obj = require("react");
-  const cResult = obj.c(23);
-  ({ label, placeholder, maxLength, onChangeCode, error, textContentType, autoComplete, keyboardType, isDisabled, autoFocus } = isValidClipboardCode);
-  let tmp4 = undefined === autoFocus;
-  isValidClipboardCode = isValidClipboardCode.isValidClipboardCode;
-  if (!tmp4) {
-    tmp4 = autoFocus;
-  }
-  const tmp5 = closure_9();
-  let obj2 = react;
-  _require = react.useRef(null);
-  const ref = react.useRef(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AppStateStore];
-    const fn = function f() {
-      return state.getState();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  const tmpResult = tmp(tmp2[9]);
-  stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  const tmp11 = ref(tmp2[10])(onChangeCode);
-  const tmp12 = ref(tmp2[10])(isValidClipboardCode);
-  let closure_3 = tmp12;
-  if (cResult[2] === stateFromStores) {
-    let tmp13;
-    if (cResult[3] === tmp12) {
-      tmp13 = cResult[4];
-    }
-    if (cResult[5] === stateFromStores) {
-      if (cResult[6] === tmp12) {
-        let tmp14;
-        if (cResult[7] === tmp11) {
-          tmp14 = cResult[8];
-        }
-        const effect = obj2.useEffect(tmp13, tmp14);
-        if (cResult[9] === autoComplete) {
-          if (cResult[10] === tmp4) {
-            if (cResult[11] === error) {
-              if (cResult[12] === isDisabled) {
-                if (cResult[13] === keyboardType) {
-                  if (cResult[14] === label) {
-                    if (cResult[15] === maxLength) {
-                      if (cResult[16] === onChangeCode) {
-                        if (cResult[17] === placeholder) {
-                          let tmp16;
-                          if (cResult[18] === textContentType) {
-                            tmp16 = cResult[19];
-                          }
-                          if (cResult[20] === tmp5.inputContainer) {
-                            let tmp19;
-                            if (cResult[21] === tmp16) {
-                              tmp19 = cResult[22];
-                            }
-                            return tmp19;
-                          }
-                          const tmp22 = <View style={tmp5.inputContainer}>{tmp16}</View>;
-                          cResult[20] = tmp5.inputContainer;
-                          cResult[21] = tmp16;
-                          cResult[22] = tmp22;
-                          tmp19 = tmp22;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        const tmp18 = jsx(tmp(tmp2[13]).TextInput, { ref, autoFocus: tmp4, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, placeholder, clearable: true, textContentType, autoComplete, keyboardType, disabled: isDisabled });
-        cResult[9] = autoComplete;
-        cResult[10] = tmp4;
-        cResult[11] = error;
-        cResult[12] = isDisabled;
-        cResult[13] = keyboardType;
-        cResult[14] = label;
-        cResult[15] = maxLength;
-        cResult[16] = onChangeCode;
-        cResult[17] = placeholder;
-        cResult[18] = textContentType;
-        cResult[19] = tmp18;
-        tmp16 = tmp18;
-      }
-    }
-    const items1 = [stateFromStores, tmp12, tmp11];
-    cResult[5] = stateFromStores;
-    cResult[6] = tmp12;
-    cResult[7] = tmp11;
-    cResult[8] = items1;
-    tmp14 = items1;
-  }
-  const fn2 = function k() {
-    function run() {
-      return closure_0(...arguments);
-    }
-    if (stateFromStores === constants.ACTIVE) {
-      closure_0 = closure_3(function*(arg0, value) {
-        let obj2;
-        let v3;
-        if (c3 === 2) {
-          c3 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            let current;
-            c3 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                current = undefined;
-                const self3 = this;
-                const self4 = this;
-                const promise = new Promise((arg0) => setTimeout(arg0, 500));
-                c2 = 1;
-                c3 = 1;
-                const obj5 = { value: promise, done: false };
-                return obj5;
-              }
-            } else if (1 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj6 = { value, done: true };
-                return obj6;
-              } else {
-                const self = this;
-                const self2 = this;
-                const promise2 = new Promise((arg0) => {
-                  const obj = current(closure_1_2[11]);
-                  return obj.runAfterInteractions(arg0);
-                });
-                c2 = 2;
-                c3 = 1;
-                const obj7 = { value: promise2, done: false };
-                return obj7;
-              }
-            } else if (2 === c2) {
-              if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj8 = { value, done: true };
-                return obj8;
-              } else {
-                c2 = 3;
-                c3 = 1;
-                const obj9 = { value: obj2.getString(), done: false };
-                obj2 = current(stateFromStores[12]);
-                return obj9;
-              }
-            } else if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              let obj = { value, done: true };
-              return obj;
-            } else {
-              current = value.trim();
-              if (current !== current.current) {
-                current.current = current;
-                if (c3(current)) {
-                  current = ref.current;
-                  if (current != null) {
-                    current.setText(current);
-                  }
-                }
-              }
-              c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } catch (tmp26) {
-            c3 = 3;
-            throw tmp26;
-          }
-        }
-      });
-      const tmp2 = run();
-    }
-  };
-  cResult[2] = stateFromStores;
-  cResult[3] = tmp12;
-  cResult[4] = fn2;
-  tmp13 = fn2;
-}) : (function ClipboardCopyInput(arg0) {
+const result = size.fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
+
+export default function ClipboardCopyInput(arg0) {
   let autoComplete;
   let autoFocus;
   let closure_0;
@@ -272,15 +49,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
   let obj = require("get initialized");
   const items = [AppStateStore];
   stateFromStores = obj.useStateFromStores(items, () => state.getState());
-  const tmp4 = ref(stateFromStores[10])(onChangeCode);
-  const tmp5 = ref(stateFromStores[10])(isValidClipboardCode);
+  const tmp4 = ref(stateFromStores[8])(onChangeCode);
+  const tmp5 = ref(stateFromStores[8])(isValidClipboardCode);
   let closure_3 = tmp5;
   const items1 = [stateFromStores, tmp5, tmp4];
   const effect = react.useEffect(() => {
     function run() {
       return obj(...arguments);
     }
-    let obj = function _run2() {
+    let obj = function _run() {
       obj = _asyncToGenerator(async function(arg0, value) {
         let obj2;
         let v3;
@@ -294,7 +71,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -330,7 +107,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 const self = this;
                 const self2 = this;
                 const promise2 = new Promise((arg0) => {
-                  obj = current(closure_1_2[11]);
+                  obj = current(closure_1_2[9]);
                   return obj.runAfterInteractions(arg0);
                 });
                 c2 = 2;
@@ -350,7 +127,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 c2 = 3;
                 c3 = 1;
                 const obj9 = { value: obj2.getString(), done: false };
-                obj2 = closure_2_0(stateFromStores[12]);
+                obj2 = closure_2_0(stateFromStores[10]);
                 return obj9;
               }
             } else if (arg0 === 1) {
@@ -372,7 +149,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
                 }
               }
               c3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp26) {
             c3 = 3;
@@ -387,7 +164,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ClipboardCop
     }
   }, items1);
   return <View style={tmp.inputContainer}>{jsx(require("TextInput/TextInput").TextInput, { ref, autoFocus, autoCorrect: false, autoCapitalize: "none", errorMessage: error, maxLength, onChange: onChangeCode, label, placeholder, clearable: true, textContentType, autoComplete, keyboardType, disabled: isDisabled })}</View>;
-});
-const result = size.fileFinishedImporting("modules/mfa/native/components/ClipboardCopyInput.tsx");
-
-export default tmp2;
+};

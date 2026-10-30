@@ -1,10 +1,10 @@
-// Module ID: 5182
-// Function ID: 5183
+// Module ID: 5188
+// Function ID: 5189
 // Name: OverlayOpacityMultiplier
 // Dependencies: [2]
 // Exports: normalizeOverlayOpacityMultiplier
 
-// Module 5182 (OverlayOpacityMultiplier)
+// Module 5188 (OverlayOpacityMultiplier)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/OverlayOpacityMultiplier.tsx");

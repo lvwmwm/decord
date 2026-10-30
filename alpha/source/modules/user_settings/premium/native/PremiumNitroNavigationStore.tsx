@@ -1,13 +1,13 @@
-// Module ID: 15201
-// Function ID: 15202
+// Module ID: 15241
+// Function ID: 15242
 // Name: PremiumNitroNavigationStore
-// Dependencies: [5200, 2]
+// Dependencies: [5206, 2]
 
-// Module 15201 (PremiumNitroNavigationStore)
-import ZustandStore from "ZustandStore" /* 5200 */;
+// Module 15241 (PremiumNitroNavigationStore)
+import ZustandStore from "ZustandStore" /* 5206 */;
 import size from "module_2" /* 2 */;
 
-const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "r" }));
+const zustandStore = ZustandStore.createZustandStore(() => ({ scrollToSectionId: "getCurrentUser" }));
 const result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");
 
 export default zustandStore;

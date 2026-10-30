@@ -1,18 +1,17 @@
-// Module ID: 13765
-// Function ID: 13766
+// Module ID: 13913
+// Function ID: 13914
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 10180, 21, 5005, 587, 558, 576, 5290, 2]
+// Dependencies: [19, 17, 10205, 21, 5009, 575, 5637, 2]
+// Exports: default
 
-// Module 13765 (ApplicationCommandLoadingItem)
+// Module 13913 (ApplicationCommandLoadingItem)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useFontScale from "useFontScale" /* 5290 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10180 */;
+import nativeDefault from "native" /* 575 */;
+import useFontScale from "useFontScale" /* 5637 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10205 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -31,77 +30,10 @@ let closure_8 = createStyles.createStyles((arg0) => {
   size2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, paddingLeft: 16, width: "25%", marginLeft: "auto", height: v16, borderRadius: v16 };
   return obj;
 });
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationCommandLoadingItem() {
-  let items;
-  let items1;
-  let tmp3;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(14);
-  const obj2 = useFontScale;
-  const tmp2 = closure_8(obj2.useFontScale());
-  if (cResult[0] !== tmp2.applicationCommandLoadingName) {
-    const obj3 = { style: tmp2.applicationCommandLoadingName };
-    const tmp6 = hasOwnProperty(View, obj3);
-    cResult[0] = tmp2.applicationCommandLoadingName;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  if (cResult[2] !== tmp2.applicationCommandLoadingDescription) {
-    const obj4 = { style: tmp2.applicationCommandLoadingDescription };
-    const tmp10 = hasOwnProperty(View, obj4);
-    cResult[2] = tmp2.applicationCommandLoadingDescription;
-    cResult[3] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] === tmp2.applicationCommandLoadingLeftWrapper) {
-    if (cResult[5] === tmp3) {
-      let tmp11;
-      let tmp13;
-      if (cResult[6] === tmp7) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] !== tmp2.applicationCommandLoadingSectionName) {
-        const obj5 = { style: tmp2.applicationCommandLoadingSectionName };
-        const tmp16 = hasOwnProperty(View, obj5);
-        cResult[8] = tmp2.applicationCommandLoadingSectionName;
-        cResult[9] = tmp16;
-        tmp13 = tmp16;
-      } else {
-        tmp13 = cResult[9];
-      }
-      if (cResult[10] === tmp2.applicationCommandLoadingItem) {
-        if (cResult[11] === tmp11) {
-          let tmp17;
-          if (cResult[12] === tmp13) {
-            tmp17 = cResult[13];
-          }
-          return tmp17;
-        }
-      }
-      const obj6 = { style: tmp2.applicationCommandLoadingItem, children: items };
-      items = [tmp11, tmp13];
-      const tmp20 = metroRequire(View, obj6);
-      cResult[10] = tmp2.applicationCommandLoadingItem;
-      cResult[11] = tmp11;
-      cResult[12] = tmp13;
-      cResult[13] = tmp20;
-      tmp17 = tmp20;
-    }
-  }
-  const obj7 = { style: tmp2.applicationCommandLoadingLeftWrapper, children: items1 };
-  items1 = [tmp3, tmp7];
-  const tmp12 = metroRequire(View, obj7);
-  cResult[4] = tmp2.applicationCommandLoadingLeftWrapper;
-  cResult[5] = tmp3;
-  cResult[6] = tmp7;
-  cResult[7] = tmp12;
-  tmp11 = tmp12;
-}) : (function ApplicationCommandLoadingItem() {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
+
+export default function ApplicationCommandLoadingItem() {
   let items;
   let items1;
   const obj = useFontScale;
@@ -117,8 +49,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applicatio
   const obj6 = { style: tmp.applicationCommandLoadingSectionName };
   items1[1] = hasOwnProperty(View, obj6);
   return metroRequire(View, obj2);
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/application_commands/native/ApplicationCommandLoadingItem.tsx");
-
-export default tmp4;
+};

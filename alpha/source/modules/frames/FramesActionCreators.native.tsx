@@ -1,12 +1,12 @@
-// Module ID: 10880
-// Function ID: 10881
+// Module ID: 10903
+// Function ID: 10904
 // Name: FramesActionCreators
-// Dependencies: [5, 5668, 10881, 10882, 5664, 2]
+// Dependencies: [5, 5674, 10904, 10905, 5670, 2]
 
-// Module 10880 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 10882 */;
+// Module 10903 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 10905 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -33,7 +33,7 @@ let obj = function _launchFrameOnNative() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

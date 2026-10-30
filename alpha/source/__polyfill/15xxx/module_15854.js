@@ -1,9 +1,30 @@
 // Module ID: 15854
 // Function ID: 15855
-// Dependencies: [15853]
+// Dependencies: [15855]
 
 // Module 15854
-import _mod15853 from "module_15853" /* 15853 */;
+import _mod15855 from "module_15855" /* 15855 */;
 
 
-export default (arg0, arg1, arg2) => _mod15853(arg0, arg1, ">", arg2);
+export default function(arg0, arg1) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  if (arg0 instanceof _mod15855) {
+    return arg0;
+  } else {
+    try {
+      const self = this;
+      const self2 = this;
+      const tmp5 = new _mod15855(arg0, arg1);
+      return tmp5;
+    } catch (tmp7) {
+      if (flag) {
+        throw tmp7;
+      } else {
+        return null;
+      }
+    }
+  }
+};

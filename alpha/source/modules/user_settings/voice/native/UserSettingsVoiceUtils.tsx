@@ -1,84 +1,21 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11917
+// Function ID: 11918
 // Name: UserSettingsVoiceUtils
-// Dependencies: [2012, 1084, 5889, 11725, 558, 576, 504, 2]
-// Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange
+// Dependencies: [2007, 1072, 5896, 11918, 504, 2]
+// Exports: getSelectedNoiseSuppressionOption, handleAutomaticGainControlChange, handleEchoCancellationChange, handleNoiseSuppressionChange, useSelectedNoiseSuppressionOption
 
-// Module 11724 (UserSettingsVoiceUtils)
-import react from "react" /* 576 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5889 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11725 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11917 (UserSettingsVoiceUtils)
+import get_initialized from "get initialized" /* 504 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 11918 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-let tmp;
-const get_initialized = tmp(504);
 ({ AnalyticsPages: closure_4, AnalyticsSections: hasOwnProperty } = Constants);
 const NoiseSuppressionOpt = { NONE: "NONE", STANDARD: "STANDARD", KRISP: "KRISP" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedNoiseSuppressionOption() {
-  let tmp4;
-  let tmp5;
-  let obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function o() {
-      let tmp4;
-      const noiseSuppression = MediaEngineStore.getNoiseSuppression();
-      const noiseCancellation = MediaEngineStore.getNoiseCancellation();
-      const obj = NoiseCancellationUtils;
-      if (noiseCancellation) {
-        tmp4 = obj.getNoiseCancellationDeferredToSystem(MediaEngineStore) ? tmp3.NONE : tmp3.KRISP;
-      } else {
-        tmp4 = noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
-      }
-      return tmp4;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSelectedNoiseSuppressionOption() {
-  let obj = get_initialized;
-  const items = [MediaEngineStore];
-  return obj.useStateFromStores(items, () => {
-    let tmp4;
-    const noiseSuppression = MediaEngineStore.getNoiseSuppression();
-    const noiseCancellation = MediaEngineStore.getNoiseCancellation();
-    const obj = NoiseCancellationUtils;
-    if (noiseCancellation) {
-      tmp4 = obj.getNoiseCancellationDeferredToSystem(MediaEngineStore) ? tmp3.NONE : tmp3.KRISP;
-    } else {
-      tmp4 = noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
-    }
-    return tmp4;
-  });
-});
-function getSelectedNoiseSuppressionOption(MediaEngineStore) {
-  let tmp4;
-  let obj = MediaEngineStore;
-  if (MediaEngineStore === undefined) {
-    obj = MediaEngineStore;
-  }
-  const noiseSuppression = obj.getNoiseSuppression();
-  const noiseCancellation = obj.getNoiseCancellation();
-  const obj2 = NoiseCancellationUtils;
-  if (noiseCancellation) {
-    tmp4 = obj2.getNoiseCancellationDeferredToSystem(obj) ? tmp3.NONE : tmp3.KRISP;
-  } else {
-    tmp4 = noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
-  }
-  return tmp4;
-}
 let result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceUtils.tsx");
 
 export function handleAutomaticGainControlChange(arg0) {
@@ -104,5 +41,35 @@ export function handleNoiseSuppressionChange(arg0) {
   obj3.setNoiseSuppression(arg0 === STANDARD, obj4);
 }
 export { NoiseSuppressionOpt };
-export { getSelectedNoiseSuppressionOption };
-export const useSelectedNoiseSuppressionOption = tmp3;
+export function getSelectedNoiseSuppressionOption(MediaEngineStore) {
+  let tmp4;
+  let obj = MediaEngineStore;
+  if (MediaEngineStore === undefined) {
+    obj = MediaEngineStore;
+  }
+  const noiseSuppression = obj.getNoiseSuppression();
+  const noiseCancellation = obj.getNoiseCancellation();
+  const obj2 = NoiseCancellationUtils;
+  if (noiseCancellation) {
+    tmp4 = obj2.getNoiseCancellationDeferredToSystem(obj) ? tmp3.NONE : tmp3.KRISP;
+  } else {
+    tmp4 = noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
+  }
+  return tmp4;
+}
+export function useSelectedNoiseSuppressionOption() {
+  let obj = get_initialized;
+  const items = [MediaEngineStore];
+  return obj.useStateFromStores(items, () => {
+    let tmp4;
+    const noiseSuppression = MediaEngineStore.getNoiseSuppression();
+    const noiseCancellation = MediaEngineStore.getNoiseCancellation();
+    const obj = NoiseCancellationUtils;
+    if (noiseCancellation) {
+      tmp4 = obj.getNoiseCancellationDeferredToSystem(MediaEngineStore) ? tmp3.NONE : tmp3.KRISP;
+    } else {
+      tmp4 = noiseSuppression ? tmp3.STANDARD : tmp3.NONE;
+    }
+    return tmp4;
+  });
+}

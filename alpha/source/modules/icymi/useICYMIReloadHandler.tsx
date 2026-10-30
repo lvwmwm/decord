@@ -1,131 +1,23 @@
-// Module ID: 18448
-// Function ID: 18449
+// Module ID: 18507
+// Function ID: 18508
 // Name: useICYMIReloadHandler
-// Dependencies: [5, 19, 558, 576, 16147, 8881, 2]
+// Dependencies: [5, 19, 16187, 8915, 2]
+// Exports: useICYMIReloadHandler
 
-// Module 18448 (useICYMIReloadHandler)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
+// Module 18507 (useICYMIReloadHandler)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c1, c2;
+let c1, c2;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIReloadHandler(arg0) {
-  let closure_0;
-  let tmp2;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const tmp3 = _asyncToGenerator;
-    _require = _asyncToGenerator(async (arg0, value) => {
-      let obj10;
-      let obj3;
-      let obj6;
-      if (c2 === 2) {
-        c2 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          c2 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              const ICYMIAnalytics = tmp(dependencyMap[4]).ICYMIAnalytics;
-              let str = "NoDotShown";
-              const trackFeedShown = ICYMIAnalytics.trackFeedShown;
-              if (tmp) {
-                str = "DotShown";
-              }
-              const obj5 = { variant: str, homeSessionId: "gravity_refresh" };
-              trackFeedShown(obj5);
-              c1 = 1;
-              c2 = 1;
-              const obj7 = { value: obj10.fetchDehydrated({ isReloading: true }), done: false };
-              obj10 = ICYMIActionCreatorsDefault;
-              return obj7;
-            }
-          } else if (1 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              const obj8 = { value, done: true };
-              return obj8;
-            } else {
-              c1 = 2;
-              c2 = 1;
-              const obj9 = { value: obj6.reloadICYMITab(), done: false };
-              obj6 = ICYMIActionCreatorsDefault;
-              return obj9;
-            }
-          } else if (2 === c1) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              const obj11 = { value, done: true };
-              return obj11;
-            } else {
-              c1 = 3;
-              c2 = 1;
-              const obj12 = { value: obj3.getGuildChannelScores(), done: false };
-              obj3 = ICYMIActionCreatorsDefault;
-              return obj12;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
-          } else {
-            const obj = ICYMIActionCreatorsDefault;
-            const recommendedGuilds = obj.getRecommendedGuilds();
-            c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp18) {
-          c2 = 3;
-          throw tmp18;
-        }
-      }
-    });
-    function t0() {
-      return closure_0(...arguments);
-    }
-    cResult[0] = arg0;
-    cResult[1] = t0;
-    tmp2 = t0;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : (function useICYMIReloadHandler(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
+const result = size.fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
+
+export function useICYMIReloadHandler(showDot) {
+  let closure_0 = showDot;
+  const items = [showDot];
   return react.useCallback(_asyncToGenerator(async (arg0, value) => {
+    let closure_0;
     let v3;
     if (c2 === 2) {
       c2 = 3;
@@ -137,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -151,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
             const obj4 = { value, done: true };
             return obj4;
           } else {
-            const ICYMIAnalytics = tmp(c2[4]).ICYMIAnalytics;
+            const ICYMIAnalytics = tmp(c2[2]).ICYMIAnalytics;
             let str = "NoDotShown";
             const trackFeedShown = ICYMIAnalytics.trackFeedShown;
             if (tmp) {
@@ -159,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
             }
             const obj5 = { variant: str, homeSessionId: "gravity_refresh" };
             trackFeedShown(obj5);
-            const obj10 = c1(c2[5]);
+            const obj10 = c1(c2[3]);
             c1 = 1;
             c2 = 1;
             const obj7 = { value: obj10.fetchDehydrated({ isReloading: true }), done: false };
@@ -174,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
             const obj8 = { value, done: true };
             return obj8;
           } else {
-            const obj6 = c1(c2[5]);
+            const obj6 = c1(c2[3]);
             c1 = 2;
             c2 = 1;
             const obj9 = { value: obj6.reloadICYMITab(), done: false };
@@ -189,7 +81,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
             const obj11 = { value, done: true };
             return obj11;
           } else {
-            const obj3 = c1(c2[5]);
+            const obj3 = c1(c2[3]);
             c1 = 3;
             c2 = 1;
             const obj12 = { value: obj3.getGuildChannelScores(), done: false };
@@ -203,10 +95,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
           const obj13 = { value, done: true };
           return obj13;
         } else {
-          const obj = c1(c2[5]);
+          const obj = c1(c2[3]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c2 = 3;
@@ -214,7 +106,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIRelo
       }
     }
   }), items);
-});
-const result = size.fileFinishedImporting("modules/icymi/useICYMIReloadHandler.tsx");
-
-export const useICYMIReloadHandler = tmp2;
+}

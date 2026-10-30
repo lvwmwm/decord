@@ -1,12 +1,12 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14751
+// Function ID: 14752
 // Name: EmbedIFrameConfig
-// Dependencies: [1084, 1383, 2]
+// Dependencies: [1072, 1378, 2]
 // Exports: formatProviderSrc
 
-// Module 14717 (EmbedIFrameConfig)
-import Constants from "Constants" /* 1084 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
+// Module 14751 (EmbedIFrameConfig)
+import Constants from "Constants" /* 1072 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 function dynamicParams(autoMute) {
@@ -39,7 +39,7 @@ let result = size.fileFinishedImporting("modules/chat/EmbedIFrameConfig.tsx");
 
 export const EMBED_IFRAME_SANDBOX = "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts";
 export const SupportedEmbedIFrame = obj;
-export function formatProviderSrc(uri, cResult, arg2) {
+export function formatProviderSrc(uri, provider, arg2) {
   let str = uri;
   const toURLSafe = URLUtilsDefault.toURLSafe;
   URLUtilsDefault;
@@ -49,10 +49,10 @@ export function formatProviderSrc(uri, cResult, arg2) {
   const str2 = toURLSafe(str);
   if (null === str2) {
     return "";
-  } else if (null == obj2[cResult]) {
+  } else if (null == obj2[provider]) {
     return str2.toString();
   } else {
-    if (null != obj2[cResult].stripParams) {
+    if (null != obj2[provider].stripParams) {
       const stripParams = obj.stripParams;
       for (const item10016 of stripParams) {
         let searchParams = str2.searchParams;
@@ -60,14 +60,14 @@ export function formatProviderSrc(uri, cResult, arg2) {
         continue;
       }
     }
-    if (null != obj2[cResult].params) {
+    if (null != obj2[provider].params) {
       for (const key10025 in obj.params) {
         let searchParams4 = str2.searchParams;
         let result = searchParams4.set(key10025, obj.params[key10025]);
         continue;
       }
     }
-    if (null != obj2[cResult].appendParams) {
+    if (null != obj2[provider].appendParams) {
       for (const key10029 in obj.appendParams) {
         let tmp14 = obj.appendParams[key10029];
         for (const item10031 of tmp14) {
@@ -77,8 +77,8 @@ export function formatProviderSrc(uri, cResult, arg2) {
         }
       }
     }
-    if (null != obj2[cResult].dynamicParams) {
-      const dynamicParamsResult = obj2[cResult].dynamicParams(arg2);
+    if (null != obj2[provider].dynamicParams) {
+      const dynamicParamsResult = obj2[provider].dynamicParams(arg2);
       for (const key10043 in dynamicParamsResult) {
         let tmp17 = dynamicParamsResult[key10043];
         if (null == tmp17) {

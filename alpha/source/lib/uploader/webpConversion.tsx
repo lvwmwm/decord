@@ -1,12 +1,12 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8239
+// Function ID: 8240
 // Name: webpConversion
-// Dependencies: [5, 3, 8237, 1263, 2]
+// Dependencies: [5, 3, 8240, 1252, 2]
 // Exports: maybeConvertToWebP
 
-// Module 8236 (webpConversion)
+// Module 8239 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
-import _modDef1263 from "module_1263" /* 1263 */;
+import _modDef1252 from "module_1252" /* 1252 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _shouldConvertToWebP2() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ let obj = function _shouldConvertToWebP2() {
 };
 function hashImageData(data) {
   const uint8Array = new Uint8Array(data.data.buffer);
-  const str = _modDef1263(uint8Array);
+  const str = _modDef1252(uint8Array);
   return str.toString(16);
 }
 obj = function _performWebPConversion() {
@@ -213,7 +213,7 @@ obj = function _performWebPConversion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -472,7 +472,7 @@ obj = function _maybeConvertToWebP() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

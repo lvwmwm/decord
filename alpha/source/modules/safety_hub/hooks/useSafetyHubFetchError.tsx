@@ -1,42 +1,19 @@
-// Module ID: 16532
-// Function ID: 16533
+// Module ID: 16583
+// Function ID: 16584
 // Name: useSafetyHubFetchError
-// Dependencies: [7980, 558, 576, 504, 2]
+// Dependencies: [7986, 504, 2]
+// Exports: useSafetyHubFetchError
 
-// Module 16532 (useSafetyHubFetchError)
-import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 7980 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16583 (useSafetyHubFetchError)
+import get_initialized from "get initialized" /* 504 */;
+import SafetyHubStore from "SafetyHubStore" /* 7986 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafetyHubFetchError() {
-  let fetchError;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SafetyHubStore];
-    const fn = function u() {
-      return fetchError.getFetchError();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSafetyHubFetchError() {
+const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
+
+export function useSafetyHubFetchError() {
   let fetchError;
   const items = [SafetyHubStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => fetchError.getFetchError());
-});
-const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");
-
-export const useSafetyHubFetchError = tmp2;
+}

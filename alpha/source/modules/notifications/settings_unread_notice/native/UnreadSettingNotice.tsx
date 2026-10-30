@@ -1,18 +1,18 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11316
+// Function ID: 11317
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1094, 21, 5005, 587, 558, 576, 11112, 5271, 1125, 11113, 6968, 2]
+// Dependencies: [19, 17, 1082, 21, 5009, 575, 11317, 5619, 1114, 6974, 11318, 2]
+// Exports: default
 
-// Module 11111 (UnreadSettingNotice)
+// Module 11316 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11112 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11113 */;
+import nativeDefault from "native" /* 575 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11317 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11318 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,113 +30,9 @@ obj2 = { display: "flex", flexDirection: "row", paddingVertical: nativeDefault.s
 createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_7 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSettingNoticeConnected(channel) {
-  let intl;
-  let intl2;
-  let items;
-  let tmp12;
-  let tmp16;
-  let tmp17;
-  let tmp5;
-  let tmp9;
-  _require = channel;
-  const obj = require("react");
-  const cResult = obj.c(19);
-  const tmp4 = closure_7();
-  if (cResult[0] !== channel.channel.id) {
-    const obj2 = { id: channel.channel.id };
-    const tmp8 = closure_5(UnreadSettingNoticeImpressionTrackingDefault, obj2);
-    cResult[0] = channel.channel.id;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
-    const Text = tmp(5271).Text;
-    intl = tmp(1125).intl;
-    const tmp11 = closure_5(Text, obj3);
-    cResult[2] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== tmp4.informations) {
-    const obj4 = { style: tmp4.informations, children: tmp9 };
-    const tmp15 = closure_5(View, obj4);
-    cResult[3] = tmp4.informations;
-    cResult[4] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] !== channel) {
-    const fn = function _() {
-      updateChannelUnreadSettingsDefault(channel.channel.guild_id, channel.channel.id, constants.UNREADS_ONLY_MENTIONS);
-      channel.clearUnreadsNotice();
-    };
-    cResult[5] = channel;
-    cResult[6] = fn;
-    tmp16 = fn;
-  } else {
-    tmp16 = cResult[6];
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
-    const Text2 = tmp(5271).Text;
-    intl2 = tmp(1125).intl;
-    const tmp19 = closure_5(Text2, obj5);
-    cResult[7] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  if (cResult[8] === tmp4.inlineTextWithIcon) {
-    let tmp20;
-    if (cResult[9] === tmp16) {
-      tmp20 = cResult[10];
-    }
-    if (cResult[11] === tmp4.actions) {
-      let tmp22;
-      if (cResult[12] === tmp20) {
-        tmp22 = cResult[13];
-      }
-      if (cResult[14] === tmp4.content) {
-        if (cResult[15] === tmp5) {
-          if (cResult[16] === tmp12) {
-            let tmp26;
-            if (cResult[17] === tmp22) {
-              tmp26 = cResult[18];
-            }
-            return tmp26;
-          }
-        }
-      }
-      const obj6 = { style: tmp4.content, children: items };
-      items = [tmp5, tmp12, tmp22];
-      const tmp29 = closure_6(View, obj6);
-      cResult[14] = tmp4.content;
-      cResult[15] = tmp5;
-      cResult[16] = tmp12;
-      cResult[17] = tmp22;
-      cResult[18] = tmp29;
-      tmp26 = tmp29;
-    }
-    const obj7 = { style: tmp4.actions, children: tmp20 };
-    const tmp25 = closure_5(View, obj7);
-    cResult[11] = tmp4.actions;
-    cResult[12] = tmp20;
-    cResult[13] = tmp25;
-    tmp22 = tmp25;
-  }
-  const obj8 = { accessibilityRole: "button", style: tmp4.inlineTextWithIcon, onPress: tmp16, children: tmp17 };
-  const tmp21 = closure_5(require("Pressables").PressableOpacity, obj8);
-  cResult[8] = tmp4.inlineTextWithIcon;
-  cResult[9] = tmp16;
-  cResult[10] = tmp21;
-  tmp20 = tmp21;
-}) : (function UnreadSettingNoticeConnected(channel) {
+const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx");
+
+export default function UnreadSettingNoticeConnected(channel) {
   let PressableOpacity;
   let Text;
   let Text2;
@@ -173,7 +69,4 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnreadSett
   intl2 = require("intl").intl;
   items[2] = closure_5(View, obj5);
   return closure_6(View, obj);
-});
-const result = size.fileFinishedImporting("modules/notifications/settings_unread_notice/native/UnreadSettingNotice.tsx");
-
-export default tmp6;
+};

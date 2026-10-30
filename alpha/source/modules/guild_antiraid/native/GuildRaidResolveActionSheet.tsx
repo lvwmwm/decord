@@ -1,35 +1,31 @@
-// Module ID: 13089
-// Function ID: 13090
+// Module ID: 13240
+// Function ID: 13241
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [32, 19, 17, 1084, 7476, 21, 5005, 587, 558, 576, 1125, 7685, 5247, 5749, 13055, 7482, 7358, 7195, 5271, 8988, 1199, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 7484, 21, 5009, 575, 1114, 7690, 5253, 5755, 13207, 7490, 7360, 6948, 5619, 8169, 1188, 5629, 2]
+// Exports: default
 
-// Module 13089 (GuildRaidResolveActionSheet)
+// Module 13240 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl9 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7195 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
-import Constants2 from "Constants" /* 7476 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7482 */;
-import AutomodFeedback from "AutomodFeedback" /* 7685 */;
-import GuildAntiRaidActionCreators from "GuildAntiRaidActionCreators" /* 13055 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl9 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6948 */;
+import ActionSheet2 from "ActionSheet" /* 7360 */;
+import Constants2 from "Constants" /* 7484 */;
+import AutomodFeedback from "AutomodFeedback" /* 7690 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let dependencyMap, value;
+let closure_2, dependencyMap, raid_alert_id;
 
+let c10;
 let c9;
-let metroImportAll;
 let obj2;
 let obj3;
 let _slicedToArray = _slicedToArray_mod;
@@ -37,342 +33,24 @@ let react = react_mod;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 const SafetyToastType = Constants2.SafetyToastType;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: { paddingVertical: 24, paddingHorizontal: 16, display: "flex", flexDirection: "column", alignItems: "center" }, title: { marginBottom: 8, textAlign: "center" }, subtitle: { marginBottom: 16, textAlign: "center" }, optionContainer: obj2, option: { width: "100%" }, textInputContainer: { paddingLeft: 54, paddingRight: 16, paddingBottom: 16 }, textInput: obj3 };
 obj2 = { borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.xs, display: "flex", flexDirection: "column", marginBottom: 14, width: "100%" };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, width: "100%", padding: 8, borderRadius: nativeDefault.radii.xs };
-let closure_10 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidResolveActionSheet(guildId) {
-  let closure_2;
-  let closure_3;
-  let closure_5;
-  let closure_7;
-  let first;
-  let first1;
-  let first2;
-  let handleTextInputChange;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let items1;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp14;
-  let tmp15;
-  let tmp16;
-  let tmp17;
-  let tmp18;
-  let tmp = guildId;
-  const tmp2 = dependencyMap;
-  let obj = guildId(576);
-  const cResult = obj.c(49);
-  guildId = guildId.guildId;
-  const messageId = guildId.messageId;
-  const tmp4 = closure_10();
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  [first1, closure_5] = first1.useState(first);
-  [first2, closure_7] = first1.useState();
-  if (cResult[1] === first2) {
-    if (cResult[2] === first1) {
-      if (cResult[3] === guildId) {
-        if (cResult[4] === messageId) {
-          if (cResult[5] === tmp4.container) {
-            if (cResult[6] === tmp4.option) {
-              if (cResult[7] === tmp4.optionContainer) {
-                if (cResult[8] === tmp4.subtitle) {
-                  if (cResult[9] === tmp4.textInput) {
-                    if (cResult[10] === tmp4.textInputContainer) {
-                      let tmp33;
-                      let tmp35;
-                      let tmp38;
-                      let tmp40;
-                      if (cResult[11] === tmp4.title) {
-                        tmp10 = cResult[12];
-                        tmp11 = cResult[13];
-                        _slicedToArray = cResult[14];
-                        tmp13 = cResult[15];
-                        tmp14 = cResult[16];
-                        tmp15 = cResult[17];
-                        tmp16 = cResult[18];
-                        tmp17 = cResult[19];
-                      }
-                      const _Symbol3 = Symbol;
-                      if (cResult[32] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl7 = tmp(1125).intl;
-                        const stringResult = intl7.string(tmp(1125).t.Gh3A0O);
-                        cResult[32] = stringResult;
-                        tmp33 = stringResult;
-                      } else {
-                        tmp33 = cResult[32];
-                      }
-                      if (cResult[33] !== tmp13) {
-                        let obj2 = { onPress: tmp13, text: tmp33, size: "md" };
-                        const tmp37 = handleTextInputChange(tmp(5281).Button, obj2);
-                        cResult[33] = tmp13;
-                        cResult[34] = tmp37;
-                        tmp35 = tmp37;
-                      } else {
-                        tmp35 = cResult[34];
-                      }
-                      const _Symbol4 = Symbol;
-                      if (cResult[35] === Symbol.for("react.memo_cache_sentinel")) {
-                        const intl8 = tmp(1125).intl;
-                        const stringResult1 = intl8.string(tmp(1125).t["ETE/oC"]);
-                        cResult[35] = stringResult1;
-                        tmp38 = stringResult1;
-                      } else {
-                        tmp38 = cResult[35];
-                      }
-                      if (cResult[36] !== tmp12) {
-                        let obj3 = { onPress: tmp12, text: tmp38, variant: "secondary", size: "md" };
-                        const tmp42 = handleTextInputChange(tmp(5281).Button, obj3);
-                        cResult[36] = tmp12;
-                        cResult[37] = tmp42;
-                        tmp40 = tmp42;
-                      } else {
-                        tmp40 = cResult[37];
-                      }
-                      if (cResult[38] === tmp10) {
-                        if (cResult[39] === tmp14) {
-                          if (cResult[40] === tmp15) {
-                            if (cResult[41] === tmp16) {
-                              if (cResult[42] === tmp17) {
-                                if (cResult[43] === tmp35) {
-                                  let tmp43;
-                                  if (cResult[44] === tmp40) {
-                                    tmp43 = cResult[45];
-                                  }
-                                  if (cResult[46] === tmp11) {
-                                    let tmp46;
-                                    if (cResult[47] === tmp43) {
-                                      tmp46 = cResult[48];
-                                    }
-                                    return tmp46;
-                                  }
-                                  let obj4 = { children: tmp43 };
-                                  const tmp48 = handleTextInputChange(tmp11, obj4);
-                                  cResult[46] = tmp11;
-                                  cResult[47] = tmp43;
-                                  cResult[48] = tmp48;
-                                  tmp46 = tmp48;
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                      let obj5 = { style: tmp14, children: items1 };
-                      items1 = [tmp15, tmp16, tmp17, tmp35, tmp40];
-                      const tmp45 = closure_9(tmp10, obj5);
-                      cResult[38] = tmp10;
-                      cResult[39] = tmp14;
-                      cResult[40] = tmp15;
-                      cResult[41] = tmp16;
-                      cResult[42] = tmp17;
-                      cResult[43] = tmp35;
-                      cResult[44] = tmp40;
-                      cResult[45] = tmp45;
-                      tmp43 = tmp45;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  let obj6 = { text: intl.string(tmp(1125).t.yeaXw5), value: tmp(7685).RaidResolutionType.LEGITIMATE_ACTIVITY };
-  intl = tmp(1125).intl;
-  const items2 = [obj6, , , ];
-  const obj7 = { text: intl2.string(tmp(1125).t["o++3B8"]), value: tmp(7685).RaidResolutionType.DM_SPAM };
-  intl2 = tmp(1125).intl;
-  items2[1] = obj7;
-  const obj8 = { text: intl3.string(tmp(1125).t.UfHAwZ), value: tmp(7685).RaidResolutionType.JOIN_RAID };
-  intl3 = tmp(1125).intl;
-  items2[2] = obj8;
-  const obj9 = { text: intl4.string(tmp(1125).t.K3UWeR), value: tmp(7685).RaidResolutionType.OTHER };
-  intl4 = tmp(1125).intl;
-  items2[3] = obj9;
-  handleTextInputChange = function handleTextInputChange(Button) {
-    closure_7(Button);
-  };
-  if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleClose() {
-      const obj = messageId(closure_2[12]);
-      obj.hideActionSheet("GuildRaidResolveActionSheet");
-    }
-    cResult[20] = handleClose;
-    tmp18 = handleClose;
-  } else {
-    tmp18 = cResult[20];
-  }
-  _slicedToArray = tmp18;
-  if (cResult[21] === first2) {
-    if (cResult[22] === first1) {
-      if (cResult[23] === guildId) {
-        let tmp19;
-        let tmp22;
-        let tmp24;
-        let tmp27;
-        let tmp29;
-        if (cResult[24] === messageId) {
-          tmp19 = cResult[25];
-        }
-        const ActionSheet = tmp(7358).ActionSheet;
-        const tmp21 = messageId(7195);
-        const container = tmp4.container;
-        const _Symbol = Symbol;
-        const title = tmp4.title;
-        if (cResult[26] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl5 = tmp(1125).intl;
-          const stringResult2 = intl5.string(tmp(1125).t["1zmw/H"]);
-          cResult[26] = stringResult2;
-          tmp22 = stringResult2;
-        } else {
-          tmp22 = cResult[26];
-        }
-        if (cResult[27] !== tmp4.title) {
-          const obj10 = { style: title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: tmp22 };
-          const tmp26 = handleTextInputChange(tmp(5271).Text, obj10);
-          cResult[27] = tmp4.title;
-          cResult[28] = tmp26;
-          tmp24 = tmp26;
-        } else {
-          tmp24 = cResult[28];
-        }
-        const _Symbol2 = Symbol;
-        const subtitle = tmp4.subtitle;
-        if (cResult[29] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl6 = tmp(1125).intl;
-          const stringResult3 = intl6.string(tmp(1125).t.nF79oO);
-          cResult[29] = stringResult3;
-          tmp27 = stringResult3;
-        } else {
-          tmp27 = cResult[29];
-        }
-        if (cResult[30] !== tmp4.subtitle) {
-          const obj11 = { style: subtitle, variant: "text-sm/normal", color: "text-default", children: tmp27 };
-          const tmp31 = handleTextInputChange(tmp(5271).Text, obj11);
-          cResult[30] = tmp4.subtitle;
-          cResult[31] = tmp31;
-          tmp29 = tmp31;
-        } else {
-          tmp29 = cResult[31];
-        }
-        const mapped = items2.map((value) => {
-          let Checkbox;
-          let TextInput;
-          let intl;
-          let items;
-          let obj3;
-          let obj6;
-          value = value.value;
-          guildId = value;
-          const text = value.text;
-          const obj = { style: closure_2.optionContainer, children: items };
-          const obj2 = {
-            style: closure_2.option,
-            onPress() {
-              let closure_0 = guildId;
-              closure_5(first1.includes(guildId) ? ((arr) => arr.filter((item) => item !== closure_1_0)) : ((arg0) => {
-                const items = [];
-                items[HermesBuiltin.arraySpread(items, arg0, 0)] = closure_0;
-                return items;
-              }));
-            },
-            leading: handleTextInputChange(Checkbox, obj3),
-            label: text
-          };
-          const FormRow = guildId(closure_2[19]).FormRow;
-          obj3 = { selected: first1.includes(value) };
-          Checkbox = guildId(closure_2[20]).Checkbox;
-          items = [handleTextInputChange(FormRow, obj2), ];
-          let hasItem = value === guildId(closure_2[11]).RaidResolutionType.OTHER;
-          const obj4 = first1;
-          const tmp = closure_1_9;
-          if (hasItem) {
-            hasItem = obj4.includes(tmp5(tmp6[11]).RaidResolutionType.OTHER);
-          }
-          if (hasItem) {
-            const obj5 = { style: closure_2.textInputContainer, children: handleTextInputChange(TextInput, obj6) };
-            obj6 = { style: closure_2.textInput, autoComplete: "off", value: first2, placeholder: intl.string(guildId(closure_2[10]).t["PAM+JR"]), onChangeText: handleTextInputChange };
-            TextInput = tmp5(tmp6[20]).TextInput;
-            intl = tmp5(tmp6[10]).intl;
-            hasItem = tmp4(tmp2, obj5);
-          }
-          items[1] = hasItem;
-          return tmp(closure_5, obj, value);
-        });
-        cResult[1] = first2;
-        cResult[2] = first1;
-        cResult[3] = guildId;
-        cResult[4] = messageId;
-        cResult[5] = tmp4.container;
-        cResult[6] = tmp4.option;
-        cResult[7] = tmp4.optionContainer;
-        cResult[8] = tmp4.subtitle;
-        cResult[9] = tmp4.textInput;
-        cResult[10] = tmp4.textInputContainer;
-        cResult[11] = tmp4.title;
-        cResult[12] = tmp21;
-        cResult[13] = ActionSheet;
-        cResult[14] = tmp18;
-        cResult[15] = tmp19;
-        cResult[16] = container;
-        cResult[17] = tmp24;
-        cResult[18] = tmp29;
-        cResult[19] = mapped;
-        tmp16 = tmp29;
-        tmp17 = mapped;
-        tmp15 = tmp24;
-        tmp14 = container;
-        tmp13 = tmp19;
-        tmp11 = ActionSheet;
-        tmp10 = tmp21;
-      }
-    }
-  }
-  function handleSubmit() {
-    const obj = { raid_alert_type: AutomodFeedback.RaidAlertType.JOIN_RAID, raid_alert_id: messageId, false_alarm_type: first1.map((item) => item.toString()), false_alarm_other_reason: first2, guild_id: guildId };
-    const obj2 = AppAnalyticsUtils;
-    obj2.trackWithMetadata(AnalyticEvents.GUILD_RAID_FEEDBACK, obj);
-    const handleResolveRaid = GuildAntiRaidActionCreators.handleResolveRaid;
-    GuildAntiRaidActionCreators;
-    const obj3 = AutomodFeedback;
-    handleResolveRaid(guildId, messageId, obj3.getMostImportantRaidResolutionType(first1));
-    closure_3();
-    const obj4 = SafetyToastsActionCreatorsDefault;
-    obj4.showSuccessToast(SafetyToastType.SAFETY_FEEDBACK_SUCCESS);
-  }
-  cResult[21] = first2;
-  cResult[22] = first1;
-  cResult[23] = guildId;
-  cResult[24] = messageId;
-  cResult[25] = handleSubmit;
-  tmp19 = handleSubmit;
-}) : (function GuildRaidResolveActionSheet(arg0) {
+let closure_11 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildRaidResolveActionSheet.tsx");
+
+export default function GuildRaidResolveActionSheet(arg0) {
   let _undefined;
   let _undefined2;
-  let _undefined3;
   let c3;
   let c4;
   let c5;
   let c6;
-  let closure_2;
-  let guild_id;
+  let closure_8;
+  let disabled;
   let intl;
   let intl2;
   let intl3;
@@ -383,23 +61,121 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidRes
   let intl8;
   let items1;
   let obj6;
-  let raid_alert_id;
-  let tmp4;
+  let tmp6;
   ({ guildId: require, messageId: importDefault } = arg0);
+  c3 = undefined;
   _slicedToArray = undefined;
   react = undefined;
-  c5 = undefined;
   c6 = undefined;
-  function handleTextInputChange(arg0) {
-    _undefined3(arg0);
+  disabled = undefined;
+  closure_8 = undefined;
+  function handleTextInputChange(ActionSheet) {
+    _undefined2(ActionSheet);
   }
-  let tmp = closure_10();
+  function handleClose() {
+    obj = require("ActionSheetActionCreators");
+    obj.hideActionSheet("GuildRaidResolveActionSheet");
+  }
+  let obj = function _handleSubmit() {
+    let false_alarm_other_reason;
+    let guild_id;
+    obj = _asyncToGenerator(async (arg0, value) => {
+      let closure_0;
+      let obj6;
+      let v2;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c4 = 2;
+          if (0 === raid_alert_id) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj4 = { value, done: true };
+              return obj4;
+            } else {
+              const tmp47 = disabled;
+              if (!tmp47) {
+                closure_2_8(true);
+                const obj7 = { raid_alert_type: tmp(closure_2[10]).RaidAlertType.JOIN_RAID, raid_alert_id, false_alarm_type: _undefined.map((item) => item.toString()), false_alarm_other_reason, guild_id };
+                const obj5 = tmp(closure_2[12]);
+                obj5.trackWithMetadata(constants.GUILD_RAID_FEEDBACK, obj7);
+                c3 = 2;
+                const handleResolveRaid = tmp(closure_2[13]).handleResolveRaid;
+                const tmp39 = tmp(closure_2[13]);
+                raid_alert_id = 3;
+                c4 = 1;
+                const obj8 = { value: handleResolveRaid(guild_id, raid_alert_id, obj6.getMostImportantRaidResolutionType(_undefined)), done: false };
+                obj6 = tmp(closure_2[10]);
+                return obj8;
+              }
+            }
+          } else if (1 === raid_alert_id) {
+            c3 = 0;
+            closure_128_8(false);
+            throw closure_2;
+          } else {
+            if (2 === raid_alert_id) {
+              c3 = 1;
+              const obj3 = raid_alert_id(closure_2[14]);
+              obj3.showFailedToast();
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c3 = 0;
+              closure_128_8(false);
+              c4 = 3;
+              const obj9 = { value, done: true };
+              return obj9;
+            } else {
+              closure_128_10();
+              obj = raid_alert_id(closure_2[14]);
+              obj.showSuccessToast(constants2.SAFETY_FEEDBACK_SUCCESS);
+              c3 = 1;
+            }
+            c3 = 0;
+            closure_128_8(false);
+          }
+          c4 = 3;
+          return { value: "HermesInternal", done: null };
+        } catch (tmp41) {
+          closure_2 = tmp41;
+          if (0 === c3) {
+            c4 = 3;
+            throw tmp41;
+          } else if (1 === tmp43) {
+            raid_alert_id = 1;
+          } else {
+            raid_alert_id = 2;
+          }
+        }
+      }
+    });
+    return obj(...arguments);
+  };
+  let tmp = obj();
   dependencyMap = tmp;
   const tmp2 = _slicedToArray(react.useState([]), 2);
   [c3, c4] = tmp2;
-  [c5, c6] = _slicedToArray(react.useState(), 2);
   const tmp3 = _slicedToArray(react.useState(), 2);
-  let obj = { text: intl.string(intl9.t.yeaXw5), value: AutomodFeedback.RaidResolutionType.LEGITIMATE_ACTIVITY };
+  [c5, c6] = tmp3;
+  [disabled, closure_8] = react.useState(false);
+  obj = { text: intl.string(intl9.t.yeaXw5), value: AutomodFeedback.RaidResolutionType.LEGITIMATE_ACTIVITY };
   intl = intl9.intl;
   let items = [obj, , , ];
   let obj2 = { text: intl2.string(intl9.t["o++3B8"]), value: AutomodFeedback.RaidResolutionType.DM_SPAM };
@@ -411,18 +187,18 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidRes
   let obj4 = { text: intl4.string(intl9.t.K3UWeR), value: AutomodFeedback.RaidResolutionType.OTHER };
   intl4 = intl9.intl;
   items[3] = obj4;
-  let obj5 = { children: closure_9(tmp4, obj6) };
+  let obj5 = { children: handleClose(tmp6, obj6) };
   const ActionSheet = ActionSheet2.ActionSheet;
   obj6 = { style: tmp.container, children: items1 };
-  tmp4 = KeyboardAwareViewDefault;
-  const obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl5.string(intl9.t["1zmw/H"]) };
+  tmp6 = KeyboardAwareViewDefault;
+  let obj7 = { style: tmp.title, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl5.string(intl9.t["1zmw/H"]) };
   const Text = Text_Text.Text;
   intl5 = intl9.intl;
-  items1 = [closure_8(Text, obj7), , , , ];
-  const obj8 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
+  items1 = [handleTextInputChange(Text, obj7), , , , ];
+  let obj8 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
   const Text2 = Text_Text.Text;
   intl6 = intl9.intl;
-  items1[1] = closure_8(Text2, obj8);
+  items1[1] = handleTextInputChange(Text2, obj8);
   items1[2] = items.map((value) => {
     let Checkbox;
     let TextInput;
@@ -431,9 +207,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidRes
     let obj3;
     let obj6;
     value = value.value;
-    let closure_0 = value;
+    require = value;
     const text = value.text;
-    const obj = { style: closure_2.optionContainer, children: items };
+    obj = { style: closure_2.optionContainer, children: items };
     const obj2 = {
       style: closure_2.option,
       onPress() {
@@ -444,63 +220,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRaidRes
           return items;
         }));
       },
-      leading: closure_1_8(Checkbox, obj3),
+      leading: handleTextInputChange(Checkbox, obj3),
       label: text
     };
-    const FormRow = require("Form").FormRow;
+    const FormRow = require("module_8169").FormRow;
     obj3 = { selected: _undefined.includes(value) };
     Checkbox = require("native").Checkbox;
-    items = [closure_1_8(FormRow, obj2), ];
+    items = [handleTextInputChange(FormRow, obj2), ];
     let hasItem = value === require("AutomodFeedback").RaidResolutionType.OTHER;
     const obj4 = _undefined;
-    const tmp = closure_1_9;
+    const tmp = handleClose;
     if (hasItem) {
-      hasItem = obj4.includes(tmp5(tmp6[11]).RaidResolutionType.OTHER);
+      hasItem = obj4.includes(tmp5(tmp6[10]).RaidResolutionType.OTHER);
     }
     if (hasItem) {
-      const obj5 = { style: closure_2.textInputContainer, children: closure_1_8(TextInput, obj6) };
-      obj6 = { style: closure_2.textInput, autoComplete: "off", value: _undefined2, placeholder: intl.string(require("intl").t["PAM+JR"]), onChangeText: handleTextInputChange };
-      TextInput = tmp5(tmp6[20]).TextInput;
-      intl = tmp5(tmp6[10]).intl;
+      const obj5 = { style: closure_2.textInputContainer, children: handleTextInputChange(TextInput, obj6) };
+      obj6 = { style: closure_2.textInput, autoComplete: "off", value, placeholder: intl.string(require("intl").t["PAM+JR"]), onChangeText: handleTextInputChange };
+      TextInput = tmp5(tmp6[19]).TextInput;
+      intl = tmp5(tmp6[9]).intl;
       hasItem = tmp4(tmp2, obj5);
     }
     items[1] = hasItem;
-    return tmp(_undefined2, obj, value);
+    return tmp(c6, obj, value);
   });
-  const obj9 = {
+  let obj9 = {
     onPress: function handleSubmit() {
-      const obj = { raid_alert_type: AutomodFeedback.RaidAlertType.JOIN_RAID, raid_alert_id: importDefault, false_alarm_type: _undefined.map((item) => item.toString()), false_alarm_other_reason: _undefined2, guild_id: require };
-      const obj2 = AppAnalyticsUtils;
-      obj2.trackWithMetadata(AnalyticEvents.GUILD_RAID_FEEDBACK, obj);
-      const handleResolveRaid = GuildAntiRaidActionCreators.handleResolveRaid;
-      GuildAntiRaidActionCreators;
-      const obj3 = AutomodFeedback;
-      handleResolveRaid(require, importDefault, obj3.getMostImportantRaidResolutionType(_undefined));
-      const obj4 = ActionSheetActionCreatorsDefault;
-      obj4.hideActionSheet("GuildRaidResolveActionSheet");
-      const obj5 = SafetyToastsActionCreatorsDefault;
-      obj5.showSuccessToast(SafetyToastType.SAFETY_FEEDBACK_SUCCESS);
+      return obj(...arguments);
     },
     text: intl7.string(intl9.t.Gh3A0O),
-    size: "md"
+    size: "md",
+    disabled
   };
   const Button = components_Button_Button.Button;
   intl7 = intl9.intl;
-  items1[3] = closure_8(Button, obj9);
-  const obj10 = {
-    onPress: function handleClose() {
-      const obj = require("ActionSheetActionCreators");
-      obj.hideActionSheet("GuildRaidResolveActionSheet");
-    },
-    text: intl8.string(intl9.t["ETE/oC"]),
-    variant: "secondary",
-    size: "md"
-  };
+  items1[3] = handleTextInputChange(Button, obj9);
+  const obj10 = { onPress: handleClose, text: intl8.string(intl9.t["ETE/oC"]), variant: "secondary", size: "md" };
   const Button2 = components_Button_Button.Button;
   intl8 = intl9.intl;
-  items1[4] = closure_8(Button2, obj10);
-  return closure_8(ActionSheet, obj5);
-});
-const result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildRaidResolveActionSheet.tsx");
-
-export default tmp4;
+  items1[4] = handleTextInputChange(Button2, obj10);
+  return handleTextInputChange(ActionSheet, obj5);
+};

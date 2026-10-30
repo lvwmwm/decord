@@ -1,26 +1,23 @@
-// Module ID: 18186
-// Function ID: 18187
+// Module ID: 18246
+// Function ID: 18247
 // Name: UnknownChannel
-// Dependencies: [19, 12046, 6763, 21, 5005, 587, 5701, 1125, 5724, 558, 576, 5641, 10759, 18069, 2]
+// Dependencies: [19, 11027, 6770, 21, 5009, 575, 5707, 1114, 5730, 5647, 10782, 18118, 2]
 
-// Module 18186 (UnknownChannel)
+// Module 18246 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import useChannelNameDefault from "useChannelName" /* 5641 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import useChannelNameDefault from "useChannelName" /* 5647 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5730 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
+import ChannelItemDefault from "ChannelItem" /* 18118 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
-let tmp5;
-const ChannelItemDefault = tmp5(18069);
 function handlePress() {
   let intl;
   const obj = { text: intl.string(intl2.t["/ZjyYE"]), icon: CircleInformationIcon.CircleInformationIcon };
@@ -32,75 +29,10 @@ function handlePress() {
 const CHANNEL_MARGIN_VERTICAL = RedesignChannelListConstants.CHANNEL_MARGIN_VERTICAL;
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
+let obj = { container: { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md } };
+({ marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md });
 let closure_6 = createStyles.createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UnknownChannel(channel) {
-  let tmp10;
-  let tmp7;
-  let tmp8;
-  let obj = channel(576);
-  const cResult = obj.c(13);
-  channel = channel.channel;
-  const selected = channel.selected;
-  const tmp4 = closure_6();
-  const tmp6 = useChannelNameDefault(channel);
-  if (cResult[0] !== channel.id) {
-    const fn = function t() {
-      const obj = openChannelLongPressActionSheet;
-      const result = obj.openChannelLongPressActionSheet(channel.id);
-    };
-    cResult[0] = channel.id;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const container = tmp4.container;
-  if (cResult[2] !== tmp6) {
-    const intl = tmp(1125).intl;
-    const obj2 = { channelName: tmp6 };
-    const formatToPlainStringResult = intl.formatToPlainString(channel(1125).t.yjQ9P8, obj2);
-    cResult[2] = tmp6;
-    cResult[3] = formatToPlainStringResult;
-    tmp8 = formatToPlainStringResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== selected) {
-    const obj3 = { selected };
-    cResult[4] = selected;
-    cResult[5] = obj3;
-    tmp10 = obj3;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] === channel) {
-    if (cResult[7] === tmp7) {
-      if (cResult[8] === selected) {
-        if (cResult[9] === tmp4.container) {
-          if (cResult[10] === tmp8) {
-            let tmp11;
-            if (cResult[11] === tmp10) {
-              tmp11 = cResult[12];
-            }
-            return tmp11;
-          }
-        }
-      }
-    }
-  }
-  const tmp12 = jsx(ChannelItemDefault, { onPress: handlePress, onLongPress: tmp7, style: container, accessible: true, accessibilityLabel: tmp8, accessibilityState: tmp10, channel, selected, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS });
-  cResult[6] = channel;
-  cResult[7] = tmp7;
-  cResult[8] = selected;
-  cResult[9] = tmp4.container;
-  cResult[10] = tmp8;
-  cResult[11] = tmp10;
-  cResult[12] = tmp12;
-  tmp11 = tmp12;
-}) : (function UnknownChannel(channel) {
+const memoResult = react.memo(function UnknownChannel(channel) {
   channel = channel.channel;
   const selected = channel.selected;
   const items = [channel.id];
@@ -111,9 +43,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const result = obj.openChannelLongPressActionSheet(channel.id);
   }, items);
   ChannelItemDefault;
-  const intl = channel(1125).intl;
-  return <tmp4 onPress={handlePress} onLongPress={callback} style={tmp.container} accessible accessibilityLabel={intl.formatToPlainString(channel(1125).t.yjQ9P8, { channelName: tmp2 })} accessibilityState={{ selected }} channel={channel} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
-}));
+  const intl = channel(1114).intl;
+  return <tmp4 onPress={handlePress} onLongPress={callback} style={tmp.container} accessible accessibilityLabel={intl.formatToPlainString(channel(1114).t.yjQ9P8, { channelName: tmp2 })} accessibilityState={{ selected }} channel={channel} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+});
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/UnknownChannel.tsx");
 
 export default memoResult;

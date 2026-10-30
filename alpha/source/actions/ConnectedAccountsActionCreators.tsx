@@ -1,19 +1,19 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7341
+// Function ID: 7342
 // Name: ConnectedAccountsActionCreators
-// Dependencies: [5, 6559, 1084, 3, 1294, 6690, 1264, 7335, 6691, 6734, 1272, 584, 2]
+// Dependencies: [5, 6566, 1072, 3, 1283, 6697, 1253, 7342, 6698, 6741, 1261, 572, 2]
 
-// Module 7334 (ConnectedAccountsActionCreators)
+// Module 7341 (ConnectedAccountsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6690 */;
-import postConnectionCallback from "postConnectionCallback" /* 6691 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import fetchConnectedAccounts from "fetchConnectedAccounts" /* 6697 */;
+import postConnectionCallback from "postConnectionCallback" /* 6698 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
-import Constants from "Constants" /* 1084 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -187,7 +187,7 @@ let obj = {
       if (!ok.ok) {
         const obj3 = { type: "USER_CONNECTIONS_INTEGRATION_JOINING_ERROR", integrationId: tmp3, error: message };
         message = undefined;
-        const dispatch = tmp(584).dispatch;
+        const dispatch = tmp(572).dispatch;
         DispatcherDefault;
         if (!ok.hasErr) {
           message = ok.body.message;
@@ -216,7 +216,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -323,7 +323,7 @@ let obj = {
       } else {
         logger.error("Two-way link: missing authorize location");
       }
-      await "IconComponent";
+      await "HermesInternal";
       return arg1;
     })();
   },

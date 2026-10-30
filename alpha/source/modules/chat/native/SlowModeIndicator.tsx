@@ -1,18 +1,17 @@
-// Module ID: 13550
-// Function ID: 13551
+// Module ID: 13699
+// Function ID: 13700
 // Name: SlowModeIndicator
-// Dependencies: [19, 7818, 21, 5005, 587, 558, 576, 504, 7819, 5701, 11401, 5271, 6968, 2]
+// Dependencies: [19, 7823, 21, 5009, 575, 504, 7824, 5707, 11604, 6974, 5619, 2]
 
-// Module 13550 (SlowModeIndicator)
-import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7819 */;
-import TimerIcon from "TimerIcon" /* 11401 */;
+// Module 13699 (SlowModeIndicator)
+import nativeDefault from "native" /* 575 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7824 */;
+import TimerIcon from "TimerIcon" /* 11604 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 7818 */;
+import SlowmodeStore from "SlowmodeStore" /* 7823 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -22,126 +21,17 @@ let obj2;
 let obj = { container: { alignItems: "center", flexDirection: "row" }, icon: obj2 };
 obj2 = { marginLeft: nativeDefault.space.PX_4 };
 let closure_7 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SlowModeIndicator(channel) {
-  let first;
-  let items1;
-  const tmp = channel;
-  let obj = channel(576);
-  const cResult = obj.c(18);
-  channel = channel.channel;
-  const slowmodeType = channel.slowmodeType;
-  const hasTypingText = channel.hasTypingText;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SlowmodeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channel.id) {
-    let tmp7;
-    let tmp10;
-    if (cResult[2] === slowmodeType) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    const tmpResult3 = tmp(7819);
-    const canBypassSlowmode = tmpResult3.useCanBypassSlowmode(channel);
-    if (hasTypingText) {
-      let tmp13;
-      let tmp14;
-      let tmp17;
-      if (!canBypassSlowmode) {
-        tmp10 = null;
-      }
-      if (cResult[7] !== channel.rateLimitPerUser) {
-        const fn2 = function h() {
-          let obj2;
-          const obj = { text: obj2.getSlowmodeDescription(channel.rateLimitPerUser), icon: TimerIcon.TimerIcon };
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          obj2 = SlowmodeUtils;
-          open("CHANNEL_SLOWMODE_INFO", obj);
-        };
-        cResult[7] = channel.rateLimitPerUser;
-        cResult[8] = fn2;
-        tmp13 = fn2;
-      } else {
-        tmp13 = cResult[8];
-      }
-      if (cResult[9] !== tmp10) {
-        let obj2 = { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: tmp10 };
-        const tmp16 = closure_5(tmp(5271).Text, obj2);
-        cResult[9] = tmp10;
-        cResult[10] = tmp16;
-        tmp14 = tmp16;
-      } else {
-        tmp14 = cResult[10];
-      }
-      if (cResult[11] !== tmp4.icon) {
-        const obj3 = { style: tmp4.icon, size: "xxs" };
-        const tmp19 = closure_5(tmp(11401).TimerIcon, obj3);
-        cResult[11] = tmp4.icon;
-        cResult[12] = tmp19;
-        tmp17 = tmp19;
-      } else {
-        tmp17 = cResult[12];
-      }
-      if (cResult[13] === tmp13) {
-        if (cResult[14] === tmp4.container) {
-          if (cResult[15] === tmp14) {
-            let tmp20;
-            if (cResult[16] === tmp17) {
-              tmp20 = cResult[17];
-            }
-            return tmp20;
-          }
-        }
-      }
-      const obj4 = { onPress: tmp13, style: tmp4.container, children: items1 };
-      items1 = [tmp14, tmp17];
-      const tmp22 = closure_6(tmp(6968).PressableOpacity, obj4);
-      cResult[13] = tmp13;
-      cResult[14] = tmp4.container;
-      cResult[15] = tmp14;
-      cResult[16] = tmp17;
-      cResult[17] = tmp22;
-      tmp20 = tmp22;
-    }
-    if (cResult[4] === canBypassSlowmode) {
-      let tmp11;
-      if (cResult[5] === stateFromStores) {
-        tmp11 = cResult[6];
-      }
-      tmp10 = tmp11;
-    }
-    const tmpResult4 = tmp(7819);
-    const slowmodeIndicatorText = tmpResult4.getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode);
-    cResult[4] = canBypassSlowmode;
-    cResult[5] = stateFromStores;
-    cResult[6] = slowmodeIndicatorText;
-    tmp11 = slowmodeIndicatorText;
-  }
-  const fn = function u() {
-    return SlowmodeStore.getSlowmodeCooldownGuess(channel.id, slowmodeType);
-  };
-  cResult[1] = channel.id;
-  cResult[2] = slowmodeType;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function SlowModeIndicator(channel) {
+const memoResult = react.memo(function SlowModeIndicator(channel) {
   let items3;
   channel = channel.channel;
   const hasTypingText = channel.hasTypingText;
   const slowmodeType = channel.slowmodeType;
   let canBypassSlowmode;
   let tmp = closure_7();
-  let obj = channel(slowmodeType[7]);
+  let obj = channel(slowmodeType[5]);
   const items = [canBypassSlowmode];
   const stateFromStores = obj.useStateFromStores(items, () => SlowmodeStore.getSlowmodeCooldownGuess(channel.id, slowmodeType));
-  let obj2 = channel(slowmodeType[8]);
+  let obj2 = channel(slowmodeType[6]);
   canBypassSlowmode = obj2.useCanBypassSlowmode(channel);
   const items1 = [hasTypingText, canBypassSlowmode, stateFromStores];
   const items2 = [channel.rateLimitPerUser];
@@ -167,12 +57,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     open("CHANNEL_SLOWMODE_INFO", obj);
   }, items2);
   const obj3 = { onPress: callback, style: tmp.container, children: items3 };
-  const PressableOpacity = channel(slowmodeType[12]).PressableOpacity;
-  items3 = [closure_5(channel(slowmodeType[11]).Text, { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: memo }), ];
+  const PressableOpacity = channel(slowmodeType[9]).PressableOpacity;
+  items3 = [closure_5(channel(slowmodeType[10]).Text, { lineClamp: 1, allowFontScaling: false, variant: "text-xs/medium", color: "interactive-text-default", children: memo }), ];
   const obj4 = { style: tmp.icon, size: "xxs" };
-  items3[1] = closure_5(channel(slowmodeType[10]).TimerIcon, obj4);
+  items3[1] = closure_5(channel(slowmodeType[8]).TimerIcon, obj4);
   return closure_6(PressableOpacity, obj3);
-}));
+});
 const result = size.fileFinishedImporting("modules/chat/native/SlowModeIndicator.tsx");
 
 export default memoResult;

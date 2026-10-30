@@ -1,29 +1,30 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 11000
+// Function ID: 11001
 // Name: setUserStatus
-// Dependencies: [5, 7271, 6557, 1084, 5059, 1125, 14221, 4838, 1239, 5013, 1264, 2]
+// Dependencies: [5, 7278, 6564, 1072, 5063, 1114, 11001, 4839, 1228, 5017, 1253, 2]
 // Exports: default
 
-// Module 14220 (setUserStatus)
-import Constants from "Constants" /* 1084 */;
+// Module 11000 (setUserStatus)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7271 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7278 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, next_status, prev_status, statusCreatedAtMs;
+let closure_2, prev_status, statusCreatedAtMs;
 
 let obj = function _setUserStatus() {
   obj = _asyncToGenerator(async (next_status) => {
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
       let c0;
       let c2;
       let closure_1;
       let disableTracking;
       let result;
       let statusExpiresAtMs;
+      let tmp;
       function getStatusUpdateAnnouncement(c0, arg1) {
         obj = value(closure_1_2[4]);
         const humanizeStatusResult = obj.humanizeStatus(c0);
@@ -48,133 +49,67 @@ let obj = function _setUserStatus() {
           return formatToPlainStringResult;
         }
       }
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          let str;
-          let closure_6;
-          let obj9;
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              let obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_2 = tmp4;
-              next_status = undefined;
-              prev_status = undefined;
-              c2 = undefined;
-              c3 = undefined;
-              disableTracking = undefined;
-              ({ nextStatus: c0, prevStatus: closure_1, analyticsContext: c2, durationMillis: c3, disableTracking } = value);
-              if (disableTracking === undefined) {
-                disableTracking = false;
-              }
-              str = undefined;
-              closure_6 = undefined;
-              obj9 = undefined;
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              if (null == prev_status) {
-                prev_status = closure_130_5.getStatus();
-              }
-              str = "0";
-              if (null != c3) {
-                const _Date = Date;
-                const _HermesInternal = HermesInternal;
-                str = "" + Date.now() + c3;
-              }
-              const PreloadedUserSettingsActionCreators = closure_130_0(closure_130_2[7]).PreloadedUserSettingsActionCreators;
-              c3 = 2;
-              c4 = 1;
-              const obj6 = {
-                value: PreloadedUserSettingsActionCreators.updateAsync("status", async (statusCreatedAtMs) => {
-                          const StringValue = value(closure_2[8]).StringValue;
-                          obj = { value };
-                          statusCreatedAtMs.status = StringValue.create(obj);
-                          statusCreatedAtMs.statusExpiresAtMs = statusExpiresAtMs;
-                          const tmp = value;
-                          const tmp2 = closure_2;
-                          if (prev_status === value) {
-                            if (null != statusCreatedAtMs.statusCreatedAtMs) {
-                              statusCreatedAtMs = statusCreatedAtMs.statusCreatedAtMs;
-                            }
-                            statusCreatedAtMs.statusCreatedAtMs = statusCreatedAtMs;
-                          }
-                          const UInt64Value = tmp(tmp2[8]).UInt64Value;
-                          const obj2 = { value: "" + Date.now() };
-                          statusCreatedAtMs = UInt64Value.create(obj2);
-                        }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION),
-                done: false
-              };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            closure_6 = getStatusUpdateAnnouncement(next_status, str);
-            const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
-            AccessibilityAnnouncer.announce(closure_6);
-            const tmp65 = disableTracking;
-            if (!tmp65) {
-              const tmp6 = closure_2;
-              obj = { next_status, prev_status };
-              const merged = Object.assign(closure_130_4.getGlobalStats());
-              obj9 = obj;
-              if (null != c3) {
-                const obj8 = { expire_duration_minutes: result };
-                const merged1 = Object.assign(obj9);
-                result = null;
-                if (null != c3) {
-                  result = c3 / 60000;
-                }
-                obj9 = obj8;
-              }
-              if (null != c2) {
-                obj9 = {};
-                const merged2 = Object.assign(obj9);
-                const merged3 = Object.assign(c2);
-              }
-              let obj4 = closure_130_1(closure_130_2[10]);
-              obj4.track(closure_130_6.USER_STATUS_UPDATED, obj9);
-            }
-            c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp53) {
-          c4 = 3;
-          throw tmp53;
-        }
+      if (null == prev_status) {
+        prev_status = closure_130_5.getStatus();
       }
+      let str = "0";
+      if (null != c3) {
+        const _Date = Date;
+        const _HermesInternal = HermesInternal;
+        str = "" + Date.now() + c3;
+      }
+      const PreloadedUserSettingsActionCreators = closure_130_0(closure_130_2[7]).PreloadedUserSettingsActionCreators;
+      await PreloadedUserSettingsActionCreators.updateAsync("status", async (statusCreatedAtMs) => {
+        const StringValue = value(closure_2[8]).StringValue;
+        obj = { value };
+        statusCreatedAtMs.status = StringValue.create(obj);
+        statusCreatedAtMs.statusExpiresAtMs = statusExpiresAtMs;
+        const tmp = value;
+        const tmp2 = closure_2;
+        if (prev_status === value) {
+          if (null != statusCreatedAtMs.statusCreatedAtMs) {
+            statusCreatedAtMs = statusCreatedAtMs.statusCreatedAtMs;
+          }
+          statusCreatedAtMs.statusCreatedAtMs = statusCreatedAtMs;
+        }
+        const UInt64Value = tmp(tmp2[8]).UInt64Value;
+        const obj2 = { value: "" + Date.now() };
+        statusCreatedAtMs = UInt64Value.create(obj2);
+      }, closure_130_0(closure_130_2[7]).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      let closure_6 = getStatusUpdateAnnouncement(next_status, str);
+      const AccessibilityAnnouncer = closure_130_0(closure_130_2[9]).AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(closure_6);
+      const tmp65 = disableTracking;
+      if (!tmp65) {
+        const tmp6 = closure_2;
+        obj = { next_status, prev_status };
+        const merged = Object.assign(closure_130_4.getGlobalStats());
+        let obj9 = obj;
+        if (null != c3) {
+          const obj8 = { expire_duration_minutes: result };
+          const merged1 = Object.assign(obj9);
+          result = null;
+          if (null != c3) {
+            result = c3 / 60000;
+          }
+          obj9 = obj8;
+        }
+        if (null != c2) {
+          obj9 = {};
+          const merged2 = Object.assign(obj9);
+          const merged3 = Object.assign(c2);
+        }
+        let obj4 = closure_130_1(closure_130_2[10]);
+        obj4.track(closure_130_6.USER_STATUS_UPDATED, obj9);
+      }
+      await "HermesInternal";
+      closure_2 = tmp4;
+      prev_status = tmp;
+      ({ nextStatus: c0, prevStatus: closure_1, analyticsContext: c2, durationMillis: c3, disableTracking } = value);
+      if (disableTracking === undefined) {
+        disableTracking = false;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;

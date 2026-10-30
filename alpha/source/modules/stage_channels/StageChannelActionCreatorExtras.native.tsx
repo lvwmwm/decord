@@ -1,20 +1,20 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 7933
+// Function ID: 7934
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6862, 7928, 6696, 5247, 7930, 2000, 8159, 8162, 15096, 7925, 5187, 6731, 11460, 8708, 8161, 2]
+// Dependencies: [6869, 7934, 6703, 5253, 7936, 1995, 8165, 8168, 15136, 7931, 5193, 6738, 11661, 8742, 8167, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannel, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
-// Module 7927 (StageChannelActionCreatorExtras)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7925 */;
-import useIsOnStartStageScreenStore from "useIsOnStartStageScreenStore" /* 7928 */;
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8161 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
-import VoicePanelStore from "VoicePanelStore" /* 6862 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6696 */;
+// Module 7933 (StageChannelActionCreatorExtras)
+import asyncRequire from "asyncRequire" /* 1995 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7931 */;
+import useIsOnStartStageScreenStore from "useIsOnStartStageScreenStore" /* 7934 */;
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8167 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import VoicePanelStore from "VoicePanelStore" /* 6869 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6703 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/StageChannelAc
 export function openStageChannelSettings(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(7930, dependencyMap.paths), hasOwnProperty, obj2);
+  obj.openLazy(asyncRequire(7936, dependencyMap.paths), hasOwnProperty, obj2);
 }
 export function openEndGuildEventConfirmationModal() {
 
@@ -36,17 +36,17 @@ export function openEndGuildEventConfirmationModal() {
 export function openStageBlockedUsersSheet(channel, onAccept) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel, onAccept };
-  obj.openLazy(asyncRequire(8159, dependencyMap.paths), metroRequire, obj2);
+  obj.openLazy(asyncRequire(8165, dependencyMap.paths), metroRequire, obj2);
 }
 export function openStageSettingsSheet(channelId, onOpenRTCDebugOverlay) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId, onOpenRTCDebugOverlay };
-  obj.openLazy(asyncRequire(8162, dependencyMap.paths), metroImportDefault, obj2);
+  obj.openLazy(asyncRequire(8168, dependencyMap.paths), metroImportDefault, obj2);
 }
 export function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(15096, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(15136, dependencyMap.paths), metroImportAll, obj2);
 }
 export function openStageChannel(isGuildStageVoice) {
   if (isGuildStageVoice.isGuildStageVoice()) {
@@ -60,7 +60,7 @@ export function openStageChannel(isGuildStageVoice) {
     if (!obj3.isModalOpen(voiceChannelKey)) {
       const obj = { channel: isGuildStageVoice };
       const obj4 = ModalActionCreatorsDefault;
-      obj4.pushLazy(tmp3(2000)(11460, tmp4.paths), obj, voiceChannelKey);
+      obj4.pushLazy(tmp3(1995)(11661, tmp4.paths), obj, voiceChannelKey);
     }
   }
 }
@@ -92,7 +92,7 @@ export function navigateToStage(id, arg1) {
     if (!obj3.isModalOpen(voiceChannelKey)) {
       const obj = { channel: id };
       const obj4 = ModalActionCreatorsDefault;
-      obj4.pushLazy(tmp5(2000)(11460, tmp6.paths), obj, voiceChannelKey);
+      obj4.pushLazy(tmp5(1995)(11661, tmp6.paths), obj, voiceChannelKey);
     }
   }
 }

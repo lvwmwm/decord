@@ -1,13 +1,13 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11554
+// Function ID: 11555
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 2043, 4852, 12, 6868, 558, 576, 504, 2]
+// Dependencies: [19, 2040, 4853, 12, 6875, 504, 2]
+// Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11351 (useGetOrFetchApplicationBatched)
-import Timers from "Timers" /* 4852 */;
+// Module 11554 (useGetOrFetchApplicationBatched)
+import Timers from "Timers" /* 4853 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,33 +89,9 @@ const set = new Set();
 obj._pending = set;
 let delayedCall = new Timers.DelayedCall(32, () => obj._flush());
 obj._flushHandler = delayedCall;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestApplication(arg0) {
-  let closure_0;
-  let tmp2;
-  let tmp3;
-  _require = arg0;
-  obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function c() {
-      const tmp2 = null != closure_0 && "" !== tmp;
-      if (tmp2) {
-        obj.request(closure_0);
-      }
-    };
-    const items = [arg0];
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-}) : (function useRequestApplication(arg0) {
+let result = size.fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");
+
+export function useRequestApplication(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
   const effect = react.useEffect(() => {
@@ -124,68 +100,27 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequest
       obj.request(closure_0);
     }
   }, items);
-});
-let closure_6 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetOrFetchApplicationBatched(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  obj = require("react");
-  const cResult = obj.c(4);
-  closure_6(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApplicationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let application = null;
-      if (null != closure_0) {
-        application = null;
-        if ("" !== closure_0) {
-          application = ApplicationStore.getApplication(tmp);
-        }
-      }
-      return application;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useGetOrFetchApplicationBatched(arg0) {
-  let closure_0;
-  _require = arg0;
-  const tmp = closure_6(arg0);
-  const items = [ApplicationStore];
-  const items1 = [arg0];
+}
+export function useGetOrFetchApplicationBatched(applicationId) {
+  _require = applicationId;
+  const items = [applicationId];
+  const effect = react.useEffect(() => {
+    const tmp2 = null != closure_0 && "" !== tmp;
+    if (tmp2) {
+      obj.request(closure_0);
+    }
+  }, items);
   obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
+  const items1 = [ApplicationStore];
+  const items2 = [applicationId];
+  return obj.useStateFromStores(items1, () => {
     let application = null;
-    if (null != closure_0) {
+    if (null != applicationId) {
       application = null;
-      if ("" !== closure_0) {
+      if ("" !== applicationId) {
         application = ApplicationStore.getApplication(tmp);
       }
     }
     return application;
-  }, items1);
-});
-let result = size.fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");
-
-export const useRequestApplication = tmp6;
-export const useGetOrFetchApplicationBatched = tmp7;
+  }, items2);
+}

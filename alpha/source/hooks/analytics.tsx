@@ -1,18 +1,15 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10028
+// Function ID: 10029
 // Name: analytics
-// Dependencies: [19, 558, 1264, 2]
+// Dependencies: [19, 1253, 2]
 // Exports: useAnalyticsContext
 
-// Module 10001 (analytics)
-import AnalyticsUtils from "AnalyticsUtils" /* 1264 */;
+// Module 10028 (analytics)
+import AnalyticsUtils from "AnalyticsUtils" /* 1253 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("hooks/analytics.tsx");
+const result = size.fileFinishedImporting("hooks/analytics.tsx");
 
 export function useAnalyticsContext() {
   return react.useContext(AnalyticsUtils.AnalyticsContext);

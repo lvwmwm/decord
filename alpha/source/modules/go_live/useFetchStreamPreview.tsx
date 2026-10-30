@@ -1,17 +1,17 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 12003
+// Function ID: 12004
 // Name: useFetchStreamPreview
-// Dependencies: [19, 7889, 4857, 4937, 4908, 1095, 558, 576, 504, 7887, 2]
+// Dependencies: [19, 7895, 4858, 4941, 4912, 1083, 504, 7893, 2]
+// Exports: default
 
-// Module 11810 (useFetchStreamPreview)
-import Constants from "Constants" /* 1095 */;
-import StreamActionCreators from "StreamActionCreators" /* 7887 */;
+// Module 12003 (useFetchStreamPreview)
+import Constants from "Constants" /* 1083 */;
+import StreamActionCreators from "StreamActionCreators" /* 7893 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7889 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 7895 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,132 +19,9 @@ let _require, closure_4, dependencyMap;
 
 let react = react_mod;
 const BasicPermissions = Constants.BasicPermissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchStreamPreview(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let first;
-  let stateFromStores;
-  let tmp11;
-  let tmp13;
-  let tmp15;
-  let tmp7;
-  let tmp9;
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(27);
-  let closure_3 = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [stateFromStores];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg1) {
-    const fn = function w() {
-      return ChannelStore.getChannel(closure_1);
-    };
-    cResult[1] = arg1;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PermissionStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== stateFromStores) {
-    const fn2 = function _() {
-      const canBasicChannelResult = null != stateFromStores && PermissionStore.canBasicChannel(BasicPermissions.CONNECT, tmp);
-      return canBasicChannelResult;
-    };
-    cResult[4] = stateFromStores;
-    cResult[5] = fn2;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmpResult3 = tmp(504);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp9, tmp11);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [SelectedChannelStore];
-    cResult[6] = items2;
-    tmp13 = items2;
-  } else {
-    tmp13 = cResult[6];
-  }
-  if (cResult[7] !== arg1) {
-    class C {
-      constructor() {
-        return SelectedChannelStore.getVoiceChannelId() === closure_1;
-      }
-    }
-    cResult[7] = arg1;
-    cResult[8] = C;
-    tmp15 = C;
-  } else {
-    class C {
-      constructor() {
-        return SelectedChannelStore.getVoiceChannelId() === closure_1;
-      }
-    }
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores2 = tmpResult4.useStateFromStores(tmp13, tmp15);
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        return SelectedChannelStore.getVoiceChannelId() === closure_1;
-      }
-    }
-    const items3 = [closure_3];
-    cResult[9] = items3;
-  } else {
-    class C {
-      constructor() {
-        return SelectedChannelStore.getVoiceChannelId() === closure_1;
-      }
-    }
-  }
-  if (cResult[10] === arg1) {
-    class C {
-      constructor() {
-        return SelectedChannelStore.getVoiceChannelId() === closure_1;
-      }
-    }
-  }
-  const fn3 = function y() {
-    let previewURL;
-    let isPreviewLoading = !closure_3;
-    let shouldFetchPreviewResult = isPreviewLoading;
-    if (!closure_3) {
-      shouldFetchPreviewResult = ApplicationStreamPreviewStore.shouldFetchPreview(closure_0, closure_1, closure_2);
-    }
-    const obj = { shouldFetchPreview: shouldFetchPreviewResult, previewUrl: previewURL, isLoading: isPreviewLoading };
-    previewURL = null;
-    if (!closure_3) {
-      previewURL = ApplicationStreamPreviewStore.getPreviewURL(closure_0, closure_1, closure_2);
-    }
-    if (!closure_3) {
-      isPreviewLoading = ApplicationStreamPreviewStore.getIsPreviewLoading(closure_0, closure_1, closure_2);
-    }
-    return obj;
-  };
-  cResult[10] = arg1;
-  cResult[11] = arg0;
-  cResult[12] = null == arg1 || null == arg2;
-  cResult[13] = arg2;
-  cResult[14] = fn3;
-}) : (function useFetchStreamPreview(arg0, arg1, arg2) {
+const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
+
+export default function useFetchStreamPreview(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let closure_2;
@@ -207,8 +84,5 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSt
     }
     return obj5;
   }
-  obj5 = { previewUrl: "Reflect", isLoading: null };
-});
-const result = size.fileFinishedImporting("modules/go_live/useFetchStreamPreview.tsx");
-
-export default tmp2;
+  obj5 = { previewUrl: "flexDirection", isLoading: true };
+};

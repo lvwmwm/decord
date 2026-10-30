@@ -1,45 +1,17 @@
-// Module ID: 11212
-// Function ID: 11213
+// Module ID: 11417
+// Function ID: 11418
 // Name: useCanOpenBadgeDirectoryFromProfile
-// Dependencies: [558, 576, 11211, 11213, 2]
+// Dependencies: [11416, 11418, 2]
+// Exports: useCanOpenBadgeDirectoryFromProfile
 
-// Module 11212 (useCanOpenBadgeDirectoryFromProfile)
-import react from "react" /* 576 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11211 */;
-import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 11213 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11417 (useCanOpenBadgeDirectoryFromProfile)
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11416 */;
+import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 11418 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanOpenBadgeDirectoryFromProfile(location) {
-  let tmp4;
-  let tmp6;
-  const obj = react;
-  const cResult = obj.c(4);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = BadgeManagementExperiment;
-  let isBadgeManagementEnabled = tmpResult.useIsBadgeManagementEnabled(tmp4);
-  if (cResult[2] !== _location) {
-    const obj3 = { location: _location };
-    cResult[2] = _location;
-    cResult[3] = obj3;
-    tmp6 = obj3;
-  } else {
-    tmp6 = cResult[3];
-  }
-  const tmpResult2 = BadgeDirectoryUpdatesExperiment;
-  if (isBadgeManagementEnabled) {
-    isBadgeManagementEnabled = tmpResult2.useIsBadgeDirectoryUpdatesEnabled(tmp6);
-  }
-  return isBadgeManagementEnabled;
-}) : (function useCanOpenBadgeDirectoryFromProfile(location) {
+const result = size.fileFinishedImporting("modules/badges/native/useCanOpenBadgeDirectoryFromProfile.tsx");
+
+export function useCanOpenBadgeDirectoryFromProfile(location) {
   const _location = location.location;
   const obj = BadgeManagementExperiment;
   let isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: _location });
@@ -48,7 +20,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanOpen
     isBadgeManagementEnabled = obj2.useIsBadgeDirectoryUpdatesEnabled({ location: _location });
   }
   return isBadgeManagementEnabled;
-});
-const result = size.fileFinishedImporting("modules/badges/native/useCanOpenBadgeDirectoryFromProfile.tsx");
-
-export const useCanOpenBadgeDirectoryFromProfile = tmp2;
+}

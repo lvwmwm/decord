@@ -1,23 +1,23 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8698
+// Function ID: 8699
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [4857, 4911, 4879, 1389, 1084, 6061, 1385, 1418, 7343, 8665, 1102, 587, 8666, 8561, 2]
+// Dependencies: [4858, 4915, 4880, 1384, 1072, 6068, 1380, 1413, 7350, 8699, 1091, 575, 8700, 8595, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8664 (NativeSearchableSelectActionComponentUtils)
-import nativeDefault from "native" /* 587 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1102 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6061 */;
-import RoleIconUtils from "RoleIconUtils" /* 7343 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8665 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8666 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+// Module 8698 (NativeSearchableSelectActionComponentUtils)
+import nativeDefault from "native" /* 575 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1413 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6068 */;
+import RoleIconUtils from "RoleIconUtils" /* 7350 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8699 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8700 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

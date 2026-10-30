@@ -1,15 +1,15 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 11072
+// Function ID: 11073
 // Name: DebugUploadManager
-// Dependencies: [5, 4857, 3, 17, 6433, 5935, 14256, 7, 14257, 14258, 562, 5194, 14259, 14260, 14261, 14262, 2]
+// Dependencies: [5, 4858, 3, 17, 6440, 5942, 11073, 7, 11074, 11075, 1362, 5200, 11076, 11077, 11078, 11079, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 14255 (DebugUploadManager)
+// Module 11072 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;
@@ -45,7 +45,7 @@ let obj = function _uploadDebugLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           closure_4 = tmp33;
@@ -149,7 +149,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp80;
@@ -308,7 +308,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

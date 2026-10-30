@@ -1,120 +1,31 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9213
+// Function ID: 9214
 // Name: FormComponents
-// Dependencies: [109, 19, 5750, 21, 5005, 587, 558, 576, 7047, 6946, 9201, 1199, 7313, 9202, 9214, 7483, 6426, 9258, 8708, 7869, 504, 9259, 9261, 5271, 1125, 5059, 9262, 14663, 5281, 7473, 14665, 6963, 2]
-// Exports: VoicePanelFormSection
+// Dependencies: [19, 5756, 21, 5009, 575, 6954, 7054, 9214, 1188, 7320, 9215, 9227, 7491, 6433, 9271, 8742, 504, 7875, 9272, 9274, 5619, 1114, 6969, 5629, 7481, 9275, 5063, 9276, 14697, 2]
+// Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9200 (FormComponents)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import UserUtils from "UserUtils" /* 5059 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import NativeViewDefault from "NativeView" /* 6946 */;
-import TableRowGroup3 from "TableRowGroup" /* 7047 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7473 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7869 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9201 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 14663 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 9213 (FormComponents)
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import NativeViewDefault from "NativeView" /* 6954 */;
+import TableRowGroup2 from "TableRowGroup" /* 7054 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7481 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7875 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9214 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let metroImportAll;
-let metroImportDefault;
+let hasOwnProperty;
+let metroRequire;
 let obj2;
 let size;
-let tmp6;
-const GuildTagDefault = tmp6(9262);
-let closure_3 = ["style"];
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: obj2, icon: size, notConnectedAvatar: { opacity: 0.5 }, memberRow: { flexDirection: "row", alignItems: "center", gap: 4 }, trailingContainer: { flexDirection: "row", alignItems: "center", gap: 8 } };
-obj2 = { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round };
-createStyles = createStyles.createStyles;
-size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceBadges(arg0) {
-  let MuteDeafenIcon;
-  let VideoIcon;
-  let items;
-  let muteDeafenIconState;
-  let obj4;
-  let obj6;
-  let videoIconState;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ muteDeafenIconState, videoIconState } = arg0);
-  const tmp4 = closure_9();
-  if (cResult[0] === muteDeafenIconState) {
-    if (cResult[1] === tmp4.icon) {
-      let tmp5;
-      if (cResult[2] === tmp4.iconWrapper) {
-        tmp5 = cResult[3];
-      }
-      if (cResult[4] === tmp4.icon) {
-        if (cResult[5] === tmp4.iconWrapper) {
-          let tmp10;
-          if (cResult[6] === videoIconState) {
-            tmp10 = cResult[7];
-          }
-          if (cResult[8] === tmp4.voiceBadgesContainer) {
-            if (cResult[9] === tmp5) {
-              let tmp15;
-              if (cResult[10] === tmp10) {
-                tmp15 = cResult[11];
-              }
-              return tmp15;
-            }
-          }
-          const obj2 = { style: tmp4.voiceBadgesContainer, children: items };
-          items = [tmp5, tmp10];
-          const tmp18 = metroImportAll(NativeViewDefault, obj2);
-          cResult[8] = tmp4.voiceBadgesContainer;
-          cResult[9] = tmp5;
-          cResult[10] = tmp10;
-          cResult[11] = tmp18;
-          tmp15 = tmp18;
-        }
-      }
-      let tmp11 = null;
-      if (null != videoIconState) {
-        const obj3 = { style: tmp4.iconWrapper, children: metroImportDefault(VideoIcon, obj4) };
-        obj4 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
-        const tmp14 = NativeViewDefault;
-        VideoIcon = tmp(9201).VideoIcon;
-        tmp11 = metroImportDefault(tmp14, obj3);
-      }
-      cResult[4] = tmp4.icon;
-      cResult[5] = tmp4.iconWrapper;
-      cResult[6] = videoIconState;
-      cResult[7] = tmp11;
-      tmp10 = tmp11;
-    }
-  }
-  let tmp6 = null;
-  if (null != muteDeafenIconState) {
-    const obj5 = { style: tmp4.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj6) };
-    obj6 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp4.icon };
-    const tmp9 = NativeViewDefault;
-    MuteDeafenIcon = tmp(9201).MuteDeafenIcon;
-    tmp6 = metroImportDefault(tmp9, obj5);
-  }
-  cResult[0] = muteDeafenIconState;
-  cResult[1] = tmp4.icon;
-  cResult[2] = tmp4.iconWrapper;
-  cResult[3] = tmp6;
-  tmp5 = tmp6;
-}) : (function VoiceBadges(arg0) {
+function VoiceBadges(arg0) {
   let MuteDeafenIcon;
   let VideoIcon;
   let items;
@@ -123,212 +34,56 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceB
   let obj5;
   let videoIconState;
   ({ muteDeafenIconState, videoIconState } = arg0);
-  const tmp = closure_9();
+  const tmp = closure_7();
   let tmp6 = null;
   const obj = { style: tmp.voiceBadgesContainer, children: items };
-  const tmp2 = metroImportAll;
+  const tmp2 = metroRequire;
   const tmp5 = NativeViewDefault;
   if (null != muteDeafenIconState) {
-    const obj2 = { style: tmp.iconWrapper, children: metroImportDefault(MuteDeafenIcon, obj3) };
+    const obj2 = { style: tmp.iconWrapper, children: hasOwnProperty(MuteDeafenIcon, obj3) };
     obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     const tmp3Result = NativeViewDefault;
     MuteDeafenIcon = VoiceStateIcons.MuteDeafenIcon;
-    tmp6 = metroImportDefault(tmp3Result, obj2);
+    tmp6 = hasOwnProperty(tmp3Result, obj2);
   }
   items = [tmp6, ];
   let tmp10 = null;
   if (null != videoIconState) {
-    const obj4 = { style: tmp.iconWrapper, children: metroImportDefault(VideoIcon, obj5) };
+    const obj4 = { style: tmp.iconWrapper, children: hasOwnProperty(VideoIcon, obj5) };
     obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     const tmp3Result2 = NativeViewDefault;
     VideoIcon = VoiceStateIcons.VideoIcon;
-    tmp10 = metroImportDefault(tmp3Result2, obj4);
+    tmp10 = hasOwnProperty(tmp3Result2, obj4);
   }
   items[1] = tmp10;
   return tmp2(tmp5, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowItem(user) {
-  let displayNameStylesFont;
-  let guildId;
-  let nick;
-  let notConnected;
-  let selfStream;
-  let showGameActivity;
-  let showSecureFramesUI;
-  let obj = user(nick[7]);
-  const cResult = obj.c(48);
-  user = user.user;
-  const channelId = user.channelId;
-  ({ selfStream, nick } = user);
-  ({ guildId, notConnected, showSecureFramesUI, showGameActivity } = user);
-  let tmp5 = undefined !== notConnected && notConnected;
-  closure_3 = tmp5;
-  let tmp6 = undefined !== showSecureFramesUI && showSecureFramesUI;
-  let closure_4 = tmp6;
-  let tmp7 = undefined !== showGameActivity && showGameActivity;
-  const tmp4 = undefined !== selfStream && selfStream;
-  let tmp8 = displayNameStylesFont();
-  const memberRow = tmp8;
-  const tmp9 = channelId;
-  const analyticsLocations = channelId(tmp2[12])().analyticsLocations;
-  const tmpResult = user(nick[13]);
-  const muteDeafenIconState = tmpResult.useMuteDeafenIconState(user.id, guildId);
-  const tmpResult6 = user(nick[13]);
-  const videoIconState = tmpResult6.useVideoIconState(user.id, guildId);
-  const id = user.id;
-  if (cResult[0] === channelId) {
-    let tmp12;
-    if (cResult[1] === id) {
-      tmp12 = cResult[2];
-    }
-    const tmpResult7 = user(nick[14]);
-    const isUserSecureFramesVerified = tmpResult7.useIsUserSecureFramesVerified(tmp12);
-    user(nick[15]);
-    if (cResult[3] === guildId) {
-      let tmp15;
-      let tmp17;
-      if (cResult[4] === user.id) {
-        tmp15 = cResult[5];
-      }
-      const tmp16 = tmp9(nick[16])(tmp15);
-      if (cResult[6] !== tmp16) {
-        let obj2 = { displayNameStyles: tmp16 };
-        cResult[6] = tmp16;
-        cResult[7] = obj2;
-        tmp17 = obj2;
-      } else {
-        tmp17 = cResult[7];
-      }
-      const tmpResult9 = user(nick[17]);
-      displayNameStylesFont = tmpResult9.useDisplayNameStylesFont(tmp17);
-      if (cResult[8] === analyticsLocations) {
-        if (cResult[9] === channelId) {
-          let tmp21;
-          let tmp23;
-          const _Symbol = Symbol;
-          let str = "react.memo_cache_sentinel";
-          if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-            let items = [analyticsLocations];
-            cResult[12] = items;
-            tmp21 = items;
-          } else {
-            tmp21 = cResult[12];
-          }
-          if (cResult[13] !== id) {
-            class W {
-              constructor() {
-                const obj = StreamerApplicationSelectors;
-                return obj.getStreamerActivityByUserId(id, PresenceStore);
-              }
-            }
-            cResult[13] = id;
-            cResult[14] = W;
-            tmp23 = W;
-          } else {
-            class W {
-              constructor() {
-                const obj = StreamerApplicationSelectors;
-                return obj.getStreamerActivityByUserId(id, PresenceStore);
-              }
-            }
-          }
-          const tmpResult10 = user(nick[20]);
-          const stateFromStores = tmpResult10.useStateFromStores(tmp21, tmp23);
-          if (tmp9(nick[21])(id, guildId, tmp7)[0] != null) {
-            class W {
-              constructor() {
-                const obj = StreamerApplicationSelectors;
-                return obj.getStreamerActivityByUserId(id, PresenceStore);
-              }
-            }
-          }
-          const gameRecord = tmp9(tmp2[22])(tmp26).gameRecord;
-          if (tmp4) {
-            class W {
-              constructor() {
-                const obj = StreamerApplicationSelectors;
-                return obj.getStreamerActivityByUserId(id, PresenceStore);
-              }
-            }
-          }
-          if (cResult[17] === displayNameStylesFont) {
-            class W {
-              constructor() {
-                const obj = StreamerApplicationSelectors;
-                return obj.getStreamerActivityByUserId(id, PresenceStore);
-              }
-            }
-          }
-          function renderLabel() {
-            let items;
-            let tmp11;
-            let name = nick;
-            if (nick == null) {
-              const obj = UserUtils;
-              name = obj.getName(user);
-            }
-            let str = "text-default";
-            const obj2 = { style: memberRow.memberRow, children: items };
-            const tmp7 = NativeViewDefault;
-            const Text = Text_Text.Text;
-            const tmp5 = metroImportAll;
-            const tmp8 = memberRow;
-            if (closure_3) {
-              str = "text-muted";
-            }
-            const obj3 = { variant: "text-md/semibold", color: str, style: tmp11, children: name };
-            tmp11 = null != displayNameStylesFont;
-            if (tmp11) {
-              tmp11 = { fontFamily: tmp10 };
-              const obj4 = { fontFamily: tmp10 };
-            }
-            items = [metroImportDefault(Text, obj3), , ];
-            const obj5 = { userId: user.id };
-            items[1] = metroImportDefault(GuildTagDefault, obj5);
-            let tmp9Result = null;
-            if (closure_4) {
-              tmp9Result = null;
-              if (isUserSecureFramesVerified) {
-                const obj6 = { size: "xs", style: tmp8.icon };
-                tmp9Result = tmp9(ShieldLockIcon.ShieldLockIcon, obj6);
-              }
-            }
-            items[2] = tmp9Result;
-            return tmp5(tmp7, obj2);
-          }
-          cResult[17] = displayNameStylesFont;
-          cResult[18] = isUserSecureFramesVerified;
-          cResult[19] = nick;
-          cResult[20] = tmp5;
-          cResult[21] = tmp6;
-          cResult[22] = tmp8.icon;
-          cResult[23] = tmp8.memberRow;
-          cResult[24] = user;
-          cResult[25] = renderLabel;
-        }
-      }
-      const fn = function k() {
-        const obj = { userId: id, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
-        showUserProfileActionSheetDefault(obj);
-      };
-      cResult[8] = analyticsLocations;
-      cResult[9] = channelId;
-      cResult[10] = id;
-      cResult[11] = fn;
-    }
-    let obj3 = { userId: user.id, guildId };
-    cResult[3] = guildId;
-    cResult[4] = user.id;
-    cResult[5] = obj3;
-    tmp15 = obj3;
-  }
-  let obj4 = { userId: id, channelId };
-  cResult[0] = channelId;
-  cResult[1] = id;
-  cResult[2] = obj4;
-  tmp12 = obj4;
-}) : (function MemberRowItem(user) {
+}
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: obj2, icon: size, notConnectedAvatar: { opacity: 0.5 }, memberRow: { flexDirection: "row", alignItems: "center", gap: 4 }, trailingContainer: { flexDirection: "row", alignItems: "center", gap: 8 } };
+obj2 = { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round };
+createStyles = createStyles.createStyles;
+size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_7 = createStyles(obj);
+size = size_mod;
+const result = size.fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
+
+export function VoicePanelFormSection(style) {
+  let TableRowGroup;
+  let items;
+  let obj2;
+  style = style.style;
+  const merged = Object.assign(style, Object.assign({ style: 0 }));
+  const obj = { style: items, children: hasOwnProperty(TableRowGroup, obj2) };
+  items = [closure_7().container, style];
+  closure_7();
+  obj2 = {};
+  const tmp3 = NativeViewDefault;
+  TableRowGroup = TableRowGroup2.TableRowGroup;
+  const merged1 = Object.assign(merged);
+  return hasOwnProperty(tmp3, obj);
+}
+export function MemberRowItem(user) {
   let Avatar;
   let guildId;
   let intl;
@@ -361,41 +116,40 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let stateFromStores;
-  let tmp = closure_9();
+  let tmp = closure_7();
   const tmp2 = channelId;
-  const analyticsLocations = channelId(flag[12])().analyticsLocations;
-  let obj = user(flag[13]);
+  const analyticsLocations = channelId(flag[9])().analyticsLocations;
+  let obj = user(flag[10]);
   const muteDeafenIconState = obj.useMuteDeafenIconState(user.id, guildId);
-  let obj2 = user(flag[13]);
+  let obj2 = user(flag[10]);
   const videoIconState = obj2.useVideoIconState(user.id, guildId);
   const id = user.id;
-  const obj3 = user(flag[14]);
+  const obj3 = user(flag[11]);
   const isUserSecureFramesVerified = obj3.useIsUserSecureFramesVerified({ userId: id, channelId });
-  const obj4 = user(flag[15]);
+  const obj4 = user(flag[12]);
   const canRing = obj4.useCanRing(user);
   const obj5 = { userId: user.id, guildId };
-  const tmp9 = channelId(flag[16])(obj5);
-  const obj6 = user(flag[17]);
+  const tmp9 = channelId(flag[13])(obj5);
+  const obj6 = user(flag[14]);
   const displayNameStylesFont = obj6.useDisplayNameStylesFont({ displayNameStyles: tmp9 });
   let items = [id, channelId, analyticsLocations];
-  const callback = stateFromStores.useCallback(() => {
+  const callback = analyticsLocations.useCallback(() => {
     const obj = { userId: id, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations };
     showUserProfileActionSheetDefault(obj);
   }, items);
-  const items1 = [PresenceStore];
-  const obj7 = stateFromStores;
-  const obj8 = user(flag[20]);
-  stateFromStores = obj8.useStateFromStores(items1, () => {
+  const items1 = [id];
+  const obj8 = user(flag[16]);
+  const stateFromStores = obj8.useStateFromStores(items1, () => {
     const obj = StreamerApplicationSelectors;
     return obj.getStreamerActivityByUserId(id, PresenceStore);
   });
-  const first = channelId(flag[21])(id, guildId, flag2)[0];
+  const first = channelId(flag[18])(id, guildId, flag2)[0];
   let application_id;
+  const obj7 = analyticsLocations;
   if (first != null) {
     application_id = first.application_id;
   }
-  const gameRecord = tmp2(tmp3[22])(application_id).gameRecord;
+  const gameRecord = tmp2(tmp3[19])(application_id).gameRecord;
   const items2 = [stateFromStores, flag];
   let tmp16 = true === showRing;
   const memo = obj7.useMemo(() => {
@@ -407,7 +161,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
         const Text = Text_Text.Text;
         const intl2 = intl3.intl;
         const format = intl2.format;
-        const tmp8 = metroImportDefault;
+        const tmp8 = hasOwnProperty;
         if (null != stateFromStores.details) {
           let name;
           if ("" !== stateFromStores.details) {
@@ -429,10 +183,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
   if (tmp16) {
     tmp16 = canRing;
   }
-  const obj9 = { onPress: callback, icon: closure_7(Avatar, obj10), subLabel: memo, trailing: null, label: null };
-  const TableRow = tmp4(tmp3[31]).TableRow;
-  obj10 = { user, guildId, size: user(flag[11]).AvatarSizes.REFRESH_MEDIUM_32, style: notConnectedAvatar };
-  Avatar = tmp4(tmp3[11]).Avatar;
+  const obj9 = { onPress: callback, icon: stateFromStores(Avatar, obj10), subLabel: memo, trailing: null, label: null };
+  const TableRow = tmp4(tmp3[22]).TableRow;
+  obj10 = { user, guildId, size: user(flag[8]).AvatarSizes.REFRESH_MEDIUM_32, style: notConnectedAvatar };
+  Avatar = tmp4(tmp3[8]).Avatar;
   notConnectedAvatar = undefined;
   if (notConnected) {
     notConnectedAvatar = tmp.notConnectedAvatar;
@@ -440,14 +194,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
   if (!tmp16) {
     obj9.trailing = tmp21Result;
     if (nick == null) {
-      const tmp4Result = user(flag[25]);
+      const tmp4Result = user(flag[26]);
       nick = tmp4Result.getName(user);
     }
     let str = "text-default";
     const obj11 = { style: tmp.memberRow, children: items3 };
-    const tmp2Result = tmp2(flag[9]);
-    let Text = tmp4(tmp3[23]).Text;
-    const tmp26 = closure_8;
+    const tmp2Result = tmp2(flag[5]);
+    let Text = tmp4(tmp3[20]).Text;
+    const tmp26 = closure_6;
     if (notConnected) {
       str = "text-muted";
     }
@@ -457,24 +211,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
       tmp28 = { fontFamily: displayNameStylesFont };
       const obj13 = { fontFamily: displayNameStylesFont };
     }
-    items3 = [closure_7(Text, obj12), , ];
+    items3 = [stateFromStores(Text, obj12), , ];
     const obj14 = { userId: user.id };
-    items3[1] = closure_7(tmp2(flag[26]), obj14);
+    items3[1] = stateFromStores(tmp2(flag[27]), obj14);
     let tmp18Result = null;
     if (showSecureFramesUI) {
       tmp18Result = null;
       if (isUserSecureFramesVerified) {
         const obj15 = { size: "xs", style: tmp.icon };
-        tmp18Result = tmp18(tmp4(tmp3[27]).ShieldLockIcon, obj15);
+        tmp18Result = tmp18(tmp4(tmp3[28]).ShieldLockIcon, obj15);
       }
     }
     items3[2] = tmp18Result;
     obj9.label = tmp26(tmp2Result, obj11);
-    return closure_7(TableRow, obj9);
+    return stateFromStores(TableRow, obj9);
   }
   const obj16 = { style: tmp.trailingContainer, children: items4 };
-  const tmp21 = closure_8;
-  const tmp2Result2 = tmp2(flag[9]);
+  const tmp21 = closure_6;
+  const tmp2Result2 = tmp2(flag[5]);
   if (tmp16) {
     const obj17 = {
       size: "sm",
@@ -484,103 +238,24 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberRowIte
           const obj = CallActionCreatorsDefault;
           return obj.ring(channelId, items, "voice_panel_floating_cta");
         },
-      text: intl.string(user(flag[24]).t.bHa9kN)
+      text: intl.string(user(flag[21]).t.bHa9kN)
     };
-    const Button = tmp4(tmp3[28]).Button;
-    intl = tmp4(tmp3[24]).intl;
+    const Button = tmp4(tmp3[23]).Button;
+    intl = tmp4(tmp3[21]).intl;
     tmp18Result3 = tmp18(Button, obj17);
   } else {
     tmp18Result3 = null;
     if (null != muteDeafenIconState || null != videoIconState) {
       const obj18 = { muteDeafenIconState, videoIconState };
-      tmp18Result3 = tmp18(closure_11, obj18);
+      tmp18Result3 = tmp18(VoiceBadges, obj18);
     }
   }
   items4 = [tmp18Result3, ];
   let tmp18Result4 = null;
   if (null != gameRecord) {
     const obj19 = { game: gameRecord, size: 24, fallback: "placeholder" };
-    tmp18Result4 = tmp18(tmp2(tmp3[30]), obj19);
+    tmp18Result4 = tmp18(tmp2(tmp3[25]), obj19);
   }
   items4[1] = tmp18Result4;
   tmp21Result = tmp21(tmp2Result2, obj16);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/voice_panel/native/shared/FormComponents.tsx");
-
-export function VoicePanelFormSection(style) {
-  let TableRowGroup;
-  let items1;
-  let obj6;
-  let tmp14;
-  const tmp = closure_10;
-  if (tmp) {
-    let tmp19;
-    let tmp18;
-    const obj4 = react2;
-    const cResult = obj4.c(11);
-    const tmp15 = require;
-    if (cResult[0] !== style) {
-      const style2 = style.style;
-      const tmp22 = _objectWithoutProperties(style, closure_3);
-      cResult[0] = style;
-      cResult[1] = tmp22;
-      cResult[2] = style2;
-      tmp19 = style2;
-      tmp18 = tmp22;
-    } else {
-      tmp18 = cResult[1];
-      tmp19 = cResult[2];
-    }
-    const tmp24 = closure_9();
-    if (cResult[3] === tmp19) {
-      let tmp25;
-      let tmp26;
-      if (cResult[4] === tmp24.container) {
-        tmp25 = cResult[5];
-      }
-      if (cResult[6] !== tmp18) {
-        const obj2 = {};
-        const TableRowGroup2 = tmp15(7047).TableRowGroup;
-        const merged = Object.assign(tmp18);
-        const tmp31 = metroImportDefault(TableRowGroup2, obj2);
-        cResult[6] = tmp18;
-        cResult[7] = tmp31;
-        tmp26 = tmp31;
-      } else {
-        tmp26 = cResult[7];
-      }
-      if (cResult[8] === tmp25) {
-        let tmp32;
-        if (cResult[9] === tmp26) {
-          tmp32 = cResult[10];
-        }
-        tmp14 = tmp32;
-      }
-      const obj3 = { style: tmp25, children: tmp26 };
-      const tmp35 = metroImportDefault(NativeViewDefault, obj3);
-      cResult[8] = tmp25;
-      cResult[9] = tmp26;
-      cResult[10] = tmp35;
-      tmp32 = tmp35;
-    }
-    const items = [tmp24.container, tmp19];
-    cResult[3] = tmp19;
-    cResult[4] = tmp24.container;
-    cResult[5] = items;
-    tmp25 = items;
-  } else {
-    style = style.style;
-    const merged1 = Object.assign(style, Object.assign({ style: 0 }));
-    const obj5 = { style: items1, children: metroImportDefault(TableRowGroup, obj6) };
-    items1 = [closure_9().container, style];
-    closure_9();
-    obj6 = {};
-    const tmp10 = NativeViewDefault;
-    TableRowGroup = TableRowGroup3.TableRowGroup;
-    const merged2 = Object.assign(merged1);
-    tmp14 = metroImportDefault(tmp10, obj5);
-  }
-  return tmp14;
 }
-export const MemberRowItem = tmp4;

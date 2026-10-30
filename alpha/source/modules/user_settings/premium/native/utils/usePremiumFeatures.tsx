@@ -1,206 +1,37 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9894
+// Function ID: 9895
 // Name: usePremiumFeatures
-// Dependencies: [19, 1391, 2064, 558, 576, 1397, 5704, 1125, 3284, 9870, 2051, 9413, 9872, 9487, 9680, 9874, 9876, 587, 2]
+// Dependencies: [19, 1386, 2061, 1392, 5710, 1114, 3285, 9895, 2048, 9430, 9897, 9506, 9705, 9899, 9901, 575, 2]
+// Exports: default
 
-// Module 9869 (usePremiumFeatures)
-import intl11 from "intl" /* 1125 */;
-import user from "user" /* 1397 */;
-import PremiumUtils from "PremiumUtils" /* 2051 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2064 */;
-import _modDef3284 from "module_3284" /* 3284 */;
-import FriendsIcon from "FriendsIcon" /* 5704 */;
-import ReactionIcon from "ReactionIcon" /* 9413 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9487 */;
-import ScreenStreamIcon from "ScreenStreamIcon" /* 9680 */;
-import UploadIcon from "UploadIcon" /* 9870 */;
-import SuperReactionIcon from "SuperReactionIcon" /* 9872 */;
-import BoostGemIcon from "BoostGemIcon" /* 9874 */;
-import UserSquareIcon from "UserSquareIcon" /* 9876 */;
+// Module 9894 (usePremiumFeatures)
+import intl11 from "intl" /* 1114 */;
+import user from "user" /* 1392 */;
+import PremiumUtils from "PremiumUtils" /* 2048 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2061 */;
+import _modDef3285 from "module_3285" /* 3285 */;
+import FriendsIcon from "FriendsIcon" /* 5710 */;
+import ReactionIcon from "ReactionIcon" /* 9430 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9506 */;
+import ScreenStreamIcon from "ScreenStreamIcon" /* 9705 */;
+import UploadIcon from "UploadIcon" /* 9895 */;
+import SuperReactionIcon from "SuperReactionIcon" /* 9897 */;
+import BoostGemIcon from "BoostGemIcon" /* 9899 */;
+import UserSquareIcon from "UserSquareIcon" /* 9901 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, premiumGroupRoles, premiumTypes;
+let _require, premiumGroupRoles, premiumTypes;
 
 let closure_4;
 let hasOwnProperty;
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_4, PremiumTypes: hasOwnProperty } = PremiumConstants);
 const TOTAL_PREMIUM_GROUP_USERS = PremiumGroupConstants.TOTAL_PREMIUM_GROUP_USERS;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremiumFeatures(TIER_2, arg1, arg2) {
-  let UNSPECIFIED;
-  let closure_1;
-  let formatToPlainString;
-  let intl;
-  let intl10;
-  let intl2;
-  let intl4;
-  let intl5;
-  let intl6;
-  let intl7;
-  let intl8;
-  let intl9;
-  let items;
-  let items1;
-  let items10;
-  let items11;
-  let items12;
-  let items13;
-  let items14;
-  let items15;
-  let items16;
-  let items17;
-  let items18;
-  let items19;
-  let items20;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  let items7;
-  let items8;
-  let items9;
-  let oEudy7;
-  let obj12;
-  let obj14;
-  let obj3;
-  let obj6;
-  let tmpResult;
-  _require = TIER_2;
-  const tmp2 = UNSPECIFIED;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  UNSPECIFIED = arg2;
-  importDefault = tmp4;
-  if (undefined === arg2) {
-    UNSPECIFIED = tmp(tmp2[5]).PremiumSubscriptionGroupRole.UNSPECIFIED;
-  }
-  if (cResult[0] === (undefined !== arg1 && arg1)) {
-    if (cResult[1] === UNSPECIFIED) {
-      let tmp5;
-      if (cResult[2] === TIER_2) {
-        tmp5 = cResult[3];
-      }
-      return tmp5;
-    }
-  }
-  const obj2 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl.formatToPlainString(require("module_3284").gsE005, obj3), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
-  intl = tmp(tmp2[7]).intl;
-  items = [closure_5.TIER_2];
-  items1 = [];
-  obj3 = { totalSeats: TOTAL_PREMIUM_GROUP_USERS };
-  new Set(items);
-  items1[0] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  const items2 = [obj2, , , , , , , , , ];
-  const obj4 = { IconComponent: require("FriendsIcon").FriendsIcon, label: intl2.string(require("module_3284")["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
-  intl2 = tmp(tmp2[7]).intl;
-  items3 = [closure_5.TIER_2];
-  items4 = [];
-  new Set(items3);
-  items4[0] = require("user").PremiumSubscriptionGroupRole.MEMBER;
-  items2[1] = obj4;
-  const obj5 = { IconComponent: require("UploadIcon").UploadIcon, label: formatToPlainString(oEudy7, obj6), premiumTypes: new Set(items5), premiumGroupRoles: items6, availableOnFractional: true };
-  const intl3 = tmp(tmp2[7]).intl;
-  formatToPlainString = intl3.formatToPlainString;
-  obj6 = { uploadSize: tmpResult.getMaxFileSizeForPremiumType(TIER_2, { useSpace: false }) };
-  oEudy7 = tmp(tmp2[7]).t.oEudy7;
-  items5 = [, ];
-  ({ TIER_0: arr6[0], TIER_2: arr6[1] } = closure_5);
-  items6 = [, ];
-  tmpResult = require("PremiumUtils");
-  new Set(items5);
-  items6[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items6[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items2[2] = obj5;
-  const obj7 = { IconComponent: require("ReactionIcon").ReactionIcon, label: intl4.string(require("intl").t.E1NP2x), premiumTypes: new Set(items7), premiumGroupRoles: items8, availableOnFractional: true };
-  intl4 = tmp(tmp2[7]).intl;
-  items7 = [, ];
-  ({ TIER_0: arr8[0], TIER_2: arr8[1] } = closure_5);
-  items8 = [, , ];
-  new Set(items7);
-  items8[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items8[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items8[2] = require("user").PremiumSubscriptionGroupRole.MEMBER;
-  items2[3] = obj7;
-  const obj8 = { IconComponent: require("SuperReactionIcon").SuperReactionIcon, label: intl5.string(require("intl").t["taMwg/"]), premiumTypes: new Set(items9), premiumGroupRoles: items10, availableOnFractional: true };
-  intl5 = tmp(tmp2[7]).intl;
-  items9 = [closure_5.TIER_2];
-  items10 = [, , ];
-  new Set(items9);
-  items10[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items10[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items10[2] = require("user").PremiumSubscriptionGroupRole.MEMBER;
-  items2[4] = obj8;
-  const obj9 = { IconComponent: require("NitroWheelIcon").NitroWheelIcon, label: intl6.string(require("intl").t.oyfAMZ), premiumTypes: new Set(items11), premiumGroupRoles: items12, availableOnFractional: true };
-  intl6 = tmp(tmp2[7]).intl;
-  items11 = [closure_5.TIER_0];
-  items12 = [];
-  new Set(items11);
-  items12[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items2[5] = obj9;
-  const obj10 = { IconComponent: require("ScreenStreamIcon").ScreenStreamIcon, label: intl7.string(require("intl").t.myyAEr), premiumTypes: new Set(items13), premiumGroupRoles: items14, availableOnFractional: true };
-  intl7 = tmp(tmp2[7]).intl;
-  items13 = [closure_5.TIER_2];
-  items14 = [, , ];
-  new Set(items13);
-  items14[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items14[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items14[2] = require("user").PremiumSubscriptionGroupRole.MEMBER;
-  items2[6] = obj10;
-  const obj11 = { IconComponent: require("BoostGemIcon").BoostGemIcon, label: intl8.formatToPlainString(require("module_3284").HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
-  intl8 = tmp(tmp2[7]).intl;
-  items15 = [closure_5.TIER_2];
-  items16 = [];
-  obj12 = { numBoosts };
-  new Set(items15);
-  items16[0] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items2[7] = obj11;
-  const obj13 = { IconComponent: require("BoostGemIcon").BoostGemIcon, label: intl9.formatToPlainString(require("intl").t.DbkNFj, obj14), premiumTypes: new Set(items17), premiumGroupRoles: items18, availableOnFractional: false };
-  intl9 = tmp(tmp2[7]).intl;
-  items17 = [closure_5.TIER_2];
-  items18 = [];
-  obj14 = { numBoosts };
-  new Set(items17);
-  items18[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items2[8] = obj13;
-  const obj15 = { IconComponent: require("UserSquareIcon").UserSquareIcon, label: intl10.string(require("intl").t.vlHicE), premiumTypes: new Set(items19), premiumGroupRoles: items20, availableOnFractional: true };
-  intl10 = tmp(tmp2[7]).intl;
-  items19 = [closure_5.TIER_2];
-  items20 = [, , ];
-  new Set(items19);
-  items20[0] = require("user").PremiumSubscriptionGroupRole.UNSPECIFIED;
-  items20[1] = require("user").PremiumSubscriptionGroupRole.PRIMARY;
-  items20[2] = require("user").PremiumSubscriptionGroupRole.MEMBER;
-  items2[9] = obj15;
-  const found = items2.filter((premiumTypes) => {
-    premiumTypes = premiumTypes.premiumTypes;
-    let hasItem = premiumTypes.has(TIER_2);
-    if (hasItem) {
-      let availableOnFractional = !closure_1;
-      if (closure_1) {
-        availableOnFractional = premiumTypes.availableOnFractional;
-      }
-      hasItem = availableOnFractional;
-    }
-    return hasItem;
-  });
-  const found1 = found.filter((premiumGroupRoles) => {
-    premiumGroupRoles = premiumGroupRoles.premiumGroupRoles;
-    return premiumGroupRoles.includes(UNSPECIFIED);
-  });
-  const mapped = found1.map((item) => {
-    const obj = { color: closure_1(UNSPECIFIED[17]).unsafe_rawColors.WHITE };
-    const merged = Object.assign(item);
-    return obj;
-  });
-  cResult[0] = undefined !== arg1 && arg1;
-  cResult[1] = UNSPECIFIED;
-  cResult[2] = TIER_2;
-  cResult[3] = mapped;
-  tmp5 = mapped;
-}) : (function usePremiumFeatures(arg0) {
+const result = size.fileFinishedImporting("modules/user_settings/premium/native/utils/usePremiumFeatures.tsx");
+
+export default function usePremiumFeatures(arg0) {
   let closure_0;
   _require = arg0;
   let flag = arg1;
@@ -249,7 +80,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     let obj2;
     let obj5;
     let obj6;
-    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3284.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
+    let obj = { IconComponent: FriendsIcon.FriendsIcon, label: intl.formatToPlainString(_modDef3285.gsE005, obj2), premiumTypes: new Set(items), premiumGroupRoles: items1, availableOnFractional: false };
     intl = intl11.intl;
     items = [hasOwnProperty.TIER_2];
     items1 = [];
@@ -257,7 +88,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     new Set(items);
     items1[0] = user.PremiumSubscriptionGroupRole.PRIMARY;
     const items2 = [obj, , , , , , , , , ];
-    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3284["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
+    const obj3 = { IconComponent: FriendsIcon.FriendsIcon, label: intl2.string(_modDef3285["G6K/+s"]), premiumTypes: new Set(items3), premiumGroupRoles: items4, availableOnFractional: false };
     intl2 = intl11.intl;
     items3 = [hasOwnProperty.TIER_2];
     items4 = [];
@@ -312,7 +143,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
     items14[1] = user.PremiumSubscriptionGroupRole.PRIMARY;
     items14[2] = user.PremiumSubscriptionGroupRole.MEMBER;
     items2[6] = obj10;
-    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3284.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
+    const obj11 = { IconComponent: BoostGemIcon.BoostGemIcon, label: intl8.formatToPlainString(_modDef3285.HVCRVf, obj12), premiumTypes: new Set(items15), premiumGroupRoles: items16, availableOnFractional: false };
     intl8 = intl11.intl;
     items15 = [hasOwnProperty.TIER_2];
     items16 = [];
@@ -354,12 +185,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePremium
       return premiumGroupRoles.includes(UNSPECIFIED);
     });
     return found1.map((item) => {
-      const obj = { color: flag(UNSPECIFIED[17]).unsafe_rawColors.WHITE };
+      const obj = { color: flag(UNSPECIFIED[15]).unsafe_rawColors.WHITE };
       const merged = Object.assign(item);
       return obj;
     });
   }, items);
-});
-const result = size.fileFinishedImporting("modules/user_settings/premium/native/utils/usePremiumFeatures.tsx");
-
-export default tmp3;
+};

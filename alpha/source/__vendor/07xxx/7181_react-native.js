@@ -2,28 +2,16 @@
 // Function ID: 7182
 // Name: react-native
 // Dependencies: [17]
+// Exports: conditional
 
 // Module 7181 (react-native)
 import react_native from "react-native" /* 17 */;
 
-let reactNativeVersion;
-let tmp;
-const constants = react_native.Platform.constants;
-if (constants != null) {
-  reactNativeVersion = constants.reactNativeVersion;
-}
-try {
-  let InteractionManager;
-  let major;
-  if (reactNativeVersion != null) {
-    major = reactNativeVersion.major;
-  }
-  if (0 !== major) {
-    InteractionManager = react_native.InteractionManager;
-  }
-  tmp = InteractionManager;
-} catch (err) {
-}
-const InteractionManager_export = tmp;
+let _window;
+let map;
+({ add: _window, multiply: map } = react_native.Animated);
 
-export { InteractionManager_export as InteractionManager };
+export function conditional(closing, progress, progress2) {
+  const tmp = map(closing, progress);
+  return React(tmp, map(closing.interpolate({ inputRange: [0, 1], outputRange: [1, 0] }), progress2));
+}

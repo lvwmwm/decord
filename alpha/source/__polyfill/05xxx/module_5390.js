@@ -1,148 +1,53 @@
 // Module ID: 5390
 // Function ID: 5391
-// Dependencies: [32, 19, 5391, 5402, 5393, 5406, 5377]
-// Exports: useJSResponderHandler
+// Dependencies: [5366, 5381, 5357]
+// Exports: useHoverGesture
 
 // Module 5390
-import SHARED_VALUE_OFFSET from "SHARED_VALUE_OFFSET" /* 5391 */;
-import ComposedGestureName from "ComposedGestureName" /* 5393 */;
-import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5402 */;
-import _mod5406 from "module_5406" /* 5406 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 5357 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5366 */;
+import _mod5381 from "module_5381" /* 5381 */;
 
-const require = globalThis.__r;
-let _require, closure_3, dependencyMap;
-
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroImportDefault;
-let metroRequire;
-function isSupportedGesture(gestures) {
+function transformHoverProps(arg0) {
   const obj = maybeExtractNativeEvent;
-  if (obj.isComposedGesture(gestures)) {
-    gestures = gestures.gestures;
-    return gestures.some(isSupportedGesture);
-  } else {
-    const type = gestures.type;
-    if (ComposedGestureName.SingleGestureName.Tap !== type) {
-      if (ComposedGestureName.SingleGestureName.LongPress !== type) {
-        if (ComposedGestureName.SingleGestureName.Fling !== type) {
-          if (ComposedGestureName.SingleGestureName.Native !== type) {
-            if (ComposedGestureName.SingleGestureName.Hover !== type) {
-              return false;
-            }
-          }
-        }
-      }
-    }
-    return true;
-  }
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
 }
-({ use: c3, useCallback: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useState: metroImportDefault } = react);
-let closure_8 = SHARED_VALUE_OFFSET.SHARED_VALUE_OFFSET + 0.5;
-let closure_10 = { code: "function pnpm_useJSResponderHandlerTs1(sharedValues,id,notify){const{runOnJS}=this.__closure;const listener=runOnJS(notify);for(const sharedValue of sharedValues){sharedValue.addListener(id,listener);}}" };
-let closure_11 = { code: "function pnpm_useJSResponderHandlerTs2(sharedValues,id){for(const sharedValue of sharedValues){sharedValue.removeListener(id);}}" };
+function diffCalculator(arg0, arg1) {
+  let num2;
+  let num = 0;
+  if (arg1) {
+    num = arg0.x - arg1.x;
+  }
+  const obj = { changeX: num, changeY: num2 };
+  num2 = 0;
+  if (arg1) {
+    num2 = arg0.y - arg1.y;
+  }
+  return obj;
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 622993324586;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 11545520927040;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+const items = [["effect", "hoverEffect"]];
+const map = new Map(items);
+let closure_6 = {};
 
-export function useJSResponderHandler(gesture) {
-  let closure_1;
-  let closure_2;
-  let first;
-  _require = gesture;
-  let tmp = closure_3(require("module_5406").JSResponderContext);
-  dependencyMap = tmp;
-  [first, _slicedToArray] = closure_7(0);
-  const tmp4 = closure_6(null);
-  closure_3 = tmp4;
-  if (null === tmp4.current) {
-    closure_8 = tmp6 + 1;
-    tmp4.current = +closure_8;
+export function useHoverGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_6;
   }
-  const items = [gesture];
-  closure_5(() => {
-    let runOnJS;
-    const Reanimated = gesture(closure_1[6]).Reanimated;
-    const obj = gesture(closure_1[2]);
-    const enabledSharedValues = obj.getEnabledSharedValues(Reanimated);
-    if (undefined !== Reanimated) {
-      if (0 !== enabledSharedValues.length) {
-        let tmp = runOnJS;
-        const current = runOnJS.current;
-        if (null !== current) {
-          runOnJS = Reanimated.runOnJS;
-          const fn = function o(arg0, arg1, arg2) {
-            const tmp = runOnJS(arg2);
-            const iter = arg0[Symbol.iterator]();
-            const nextResult = iter.next();
-            while (iter !== undefined) {
-              let addListenerResult = nextResult.addListener(arg1, tmp);
-              continue;
-            }
-          };
-          const obj2 = { runOnJS };
-          fn.__closure = obj2;
-          fn.__workletHash = 3030529712101;
-          fn.__initData = __initData;
-          const fn2 = function l(arg0, arg1) {
-            const iter = arg0[Symbol.iterator]();
-            const nextResult = iter.next();
-            while (iter !== undefined) {
-              let removeListenerResult = nextResult.removeListener(arg1);
-              continue;
-            }
-          };
-          fn2.__closure = {};
-          fn2.__workletHash = 3663767498079;
-          fn2.__initData = __initData2;
-          Reanimated.runOnUI(fn)(enabledSharedValues, current, () => {
-            current((arg0) => arg0 + 1);
-          });
-          return () => {
-            Reanimated.runOnUI(fn2)(enabledSharedValues, current);
-          };
-        }
-      }
-    }
-  }, items);
-  const items1 = [first, gesture];
-  const tmp8 = closure_4(() => {
-    const obj = maybeExtractNativeEvent;
-    let isGestureEnabledResult = obj.isGestureEnabled(gesture);
-    if (isGestureEnabledResult) {
-      let flag;
-      const tmpResult = maybeExtractNativeEvent;
-      if (tmpResult.isComposedGesture(gesture)) {
-        const gestures = tmp3.gestures;
-        flag = gestures.some(isSupportedGesture);
-      } else {
-        const type = tmp3.type;
-        if (ComposedGestureName.SingleGestureName.Tap !== type) {
-          if (ComposedGestureName.SingleGestureName.LongPress !== type) {
-            if (ComposedGestureName.SingleGestureName.Fling !== type) {
-              if (ComposedGestureName.SingleGestureName.Native !== type) {
-                flag = false;
-              }
-            }
-          }
-        }
-        flag = true;
-      }
-      isGestureEnabledResult = flag;
-    }
-    return isGestureEnabledResult;
-  }, items1);
-  closure_4 = tmp8;
-  const items2 = [tmp, tmp8];
-  let handleStartShouldSetResponder = closure_4(() => {
-    if (closure_4()) {
-      const obj = _mod5406;
-      const result = obj.updateResponderEventValue(closure_1, true);
-    }
-    return false;
-  }, items2);
-  if (null == tmp) {
-    handleStartShouldSetResponder = () => false;
-  }
-  return { handleStartShouldSetResponder };
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
+  const obj2 = _mod5381;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
 }

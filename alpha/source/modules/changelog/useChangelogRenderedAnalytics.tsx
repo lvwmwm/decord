@@ -1,229 +1,26 @@
-// Module ID: 13813
-// Function ID: 13814
+// Module ID: 13960
+// Function ID: 13961
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 2066, 6829, 7472, 1084, 558, 576, 13814, 504, 6880, 8525, 1264, 2]
+// Dependencies: [19, 2063, 6836, 7480, 1072, 13961, 504, 6887, 8559, 1253, 2]
+// Exports: default
 
-// Module 13813 (useChangelogRenderedAnalytics)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8525 */;
+// Module 13960 (useChangelogRenderedAnalytics)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8559 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import ReadStateStore_mod from "ReadStateStore" /* 6829 */;
-import ChangelogStore from "ChangelogStore" /* 7472 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import ChangelogStore from "ChangelogStore" /* 7480 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-let ReadStateStore = ReadStateStore_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelogRenderedAnalytics(arg0) {
-  let closure_0;
-  let closure_1;
-  let locale;
-  let ref;
-  let stateFromStores;
-  let stateFromStores2;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(33);
-  const tmp5 = require("useChangelogIdFromChannel")(arg0);
-  const tmp4 = importDefault;
-  importDefault = tmp5;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [locale];
-    const fn = function f() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = tmp(stateFromStores[8]);
-  stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [stateFromStores2];
-    cResult[2] = items1;
-    tmp10 = items1;
-  } else {
-    tmp10 = cResult[2];
-  }
-  if (cResult[3] === tmp5) {
-    let tmp12;
-    let tmp13;
-    let tmp15;
-    let tmp17;
-    let tmp19;
-    let tmp22;
-    let tmp21;
-    let tmp24;
-    if (cResult[4] === stateFromStores) {
-      tmp12 = cResult[5];
-      tmp13 = cResult[6];
-    }
-    const tmpResult3 = tmp(stateFromStores[8]);
-    const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp12, tmp13);
-    if (cResult[7] !== arg0) {
-      const tmp16 = tmp4(stateFromStores[9])(arg0);
-      cResult[7] = arg0;
-      cResult[8] = tmp16;
-      tmp15 = tmp16;
-    } else {
-      tmp15 = cResult[8];
-    }
-    locale = tmp15;
-    if (cResult[9] !== tmp15) {
-      let timestamp = null;
-      if (tmp15) {
-        let _Date = Date;
-        timestamp = Date.now();
-      }
-      cResult[9] = tmp15;
-      cResult[10] = timestamp;
-      tmp17 = timestamp;
-    } else {
-      tmp17 = cResult[10];
-    }
-    ReadStateStore = stateFromStores1.useRef(tmp17);
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [ReadStateStore];
-      cResult[11] = items2;
-      tmp19 = items2;
-    } else {
-      tmp19 = cResult[11];
-    }
-    if (cResult[12] !== arg0) {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-      const items3 = [arg0];
-      cResult[12] = arg0;
-      cResult[13] = R;
-      cResult[14] = items3;
-      tmp22 = items3;
-      tmp21 = R;
-    } else {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-      tmp22 = cResult[14];
-    }
-    const tmpResult4 = tmp(stateFromStores[8]);
-    stateFromStores2 = tmpResult4.useStateFromStores(tmp19, tmp21, tmp22);
-    const ref2 = obj4.useRef(stateFromStores2);
-    if (cResult[15] !== stateFromStores2) {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-      cResult[15] = stateFromStores2;
-      cResult[16] = tmp25;
-      tmp24 = tmp25;
-    } else {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-    }
-    const effect = obj4.useEffect(tmp24);
-    const _Symbol2 = Symbol;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-      cResult[17] = tmp28;
-    } else {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-    }
-    if (cResult[18] !== tmp15) {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-      tmp30[0] = tmp15;
-      cResult[18] = tmp15;
-      cResult[19] = tmp30;
-    } else {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-    }
-    class S {
-      constructor() {
-        let str = closure_1;
-        const getChangelog = ChangelogStore.getChangelog;
-        if (closure_1 == null) {
-          str = "";
-        }
-        return getChangelog(str, stateFromStores);
-      }
-    }
-    if (cResult[20] === tmp5) {
-      class R {
-        constructor() {
-          return ReadStateStore.getUnreadCount(closure_0);
-        }
-      }
-    }
-    class N {
-      constructor() {
-        const tmp = locale && null != closure_1;
-        if (tmp) {
-          const obj = ChangeLogActionCreatorsDefault;
-          const changelog = obj.fetchChangelog(closure_1, stateFromStores, true);
-        }
-      }
-    }
-    const items4 = [tmp5, stateFromStores, tmp15];
-    cResult[20] = tmp5;
-    cResult[21] = tmp15;
-    cResult[22] = stateFromStores;
-    cResult[23] = N;
-    cResult[24] = items4;
-  }
-  class S {
-    constructor() {
-      let str = closure_1;
-      const getChangelog = ChangelogStore.getChangelog;
-      if (closure_1 == null) {
-        str = "";
-      }
-      return getChangelog(str, stateFromStores);
-    }
-  }
-  const items5 = [, stateFromStores];
-  cResult[3] = tmp5;
-  cResult[4] = stateFromStores;
-  cResult[5] = S;
-  cResult[6] = items5;
-  tmp13 = items5;
-  tmp12 = S;
-}) : (function useChangelogRenderedAnalytics(arg0) {
+const result = size.fileFinishedImporting("modules/changelog/useChangelogRenderedAnalytics.tsx");
+
+export default function useChangelogRenderedAnalytics(arg0) {
   let closure_0;
   let closure_1;
   let locale;
@@ -260,7 +57,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelog
   const ref = useRef(timestamp);
   const items3 = [ref];
   const items4 = [arg0];
-  const tmp3Result = tmp3(tmp[8]);
+  const tmp3Result = tmp3(tmp[6]);
   stateFromStores2 = tmp3Result.useStateFromStores(items3, () => ReadStateStore.getUnreadCount(closure_0), items4);
   const ref2 = obj3.useRef(stateFromStores2);
   const effect = obj3.useEffect(() => {
@@ -308,7 +105,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangelog
       }
     };
   }, items8);
-});
-const result = size.fileFinishedImporting("modules/changelog/useChangelogRenderedAnalytics.tsx");
-
-export default tmp2;
+};

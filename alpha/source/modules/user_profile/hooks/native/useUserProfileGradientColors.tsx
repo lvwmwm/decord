@@ -1,99 +1,26 @@
-// Module ID: 8770
-// Function ID: 8771
+// Module ID: 8804
+// Function ID: 8805
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 5006, 558, 576, 504, 5071, 7340, 8760, 2]
+// Dependencies: [19, 5010, 504, 5075, 7347, 8794, 2]
+// Exports: useUserProfileGradientColors
 
-// Module 8770 (useUserProfileGradientColors)
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import native from "native" /* 5071 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7340 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8760 */;
+// Module 8804 (useUserProfileGradientColors)
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8794 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserProfileGradientColors(secondaryColor, secondaryColor2, arg2) {
+let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");
+
+export function useUserProfileGradientColors(primaryColor, secondaryColor, fallbackBackground) {
   let overlay;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function u() {
-      return AccessibilityStore.syncProfileThemeWithUserTheme;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  const tmpResult6 = native;
-  const theme = tmpResult6.useThemeContext().theme;
-  const tmpResult7 = useProfileThemeValues;
-  const profileThemeValues = tmpResult7.useProfileThemeValues(theme);
-  if (stateFromStores) {
-    let prop;
-    if (profileThemeValues != null) {
-      prop = profileThemeValues.overlaySyncedWithUserTheme;
-    }
-    overlay = prop;
-  } else if (profileThemeValues != null) {
-    overlay = profileThemeValues.overlay;
-  }
-  if (cResult[2] === arg2) {
-    if (cResult[3] === secondaryColor) {
-      if (cResult[4] === secondaryColor) {
-        let tmp11;
-        if (cResult[5] === overlay) {
-          tmp11 = cResult[6];
-        }
-        return tmp11;
-      }
-    }
-  }
-  let result = null;
-  if (null != secondaryColor) {
-    result = null;
-    if (null != overlay) {
-      const tmpResult8 = UserProfileGradientUtils;
-      result = tmpResult8.calculateOverlayedColor(secondaryColor, overlay);
-    }
-  }
-  let result1 = null;
-  if (null != secondaryColor) {
-    result1 = null;
-    if (null != overlay) {
-      const tmpResult9 = UserProfileGradientUtils;
-      result1 = tmpResult9.calculateOverlayedColor(secondaryColor, overlay);
-    }
-  }
-  const tmpResult10 = UserProfileGradientUtils;
-  const userProfileGradientContainerColors = tmpResult10.getUserProfileGradientContainerColors(result, result1, arg2);
-  cResult[2] = arg2;
-  cResult[3] = secondaryColor;
-  cResult[4] = secondaryColor;
-  cResult[5] = overlay;
-  cResult[6] = userProfileGradientContainerColors;
-  tmp11 = userProfileGradientContainerColors;
-}) : (function useUserProfileGradientColors(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let closure_2;
-  let overlay;
-  _require = arg0;
-  dependencyMap = arg1;
-  react = arg2;
+  _require = primaryColor;
+  dependencyMap = secondaryColor;
+  react = fallbackBackground;
   let obj = require("get initialized");
   const items = [overlay];
   const stateFromStores = obj.useStateFromStores(items, () => overlay.syncProfileThemeWithUserTheme);
@@ -111,10 +38,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
   } else if (!tmp3) {
     overlay = profileThemeValues.overlay;
   }
-  const items1 = [arg2, arg0, arg1, overlay];
+  const items1 = [fallbackBackground, primaryColor, secondaryColor, overlay];
   return react.useMemo(() => {
     let result = null;
-    if (null != closure_0) {
+    if (null != primaryColor) {
       result = null;
       if (null != overlay) {
         const obj = UserProfileGradientUtils;
@@ -122,7 +49,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
       }
     }
     let result1 = null;
-    if (null != closure_1) {
+    if (null != secondaryColor) {
       result1 = null;
       if (null != overlay) {
         const obj2 = UserProfileGradientUtils;
@@ -130,9 +57,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
       }
     }
     const obj3 = UserProfileGradientUtils;
-    return obj3.getUserProfileGradientContainerColors(result, result1, closure_2);
+    return obj3.getUserProfileGradientContainerColors(result, result1, fallbackBackground);
   }, items1);
-});
-let result = size.fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileGradientColors.tsx");
-
-export const useUserProfileGradientColors = tmp2;
+}

@@ -1,16 +1,16 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7279
+// Function ID: 7280
 // Name: UserGuildSettingsManager
-// Dependencies: [5, 7273, 4857, 1084, 1101, 1294, 7274, 2]
+// Dependencies: [5, 7280, 4858, 1072, 1090, 1283, 7281, 2]
 
-// Module 7272 (UserGuildSettingsManager)
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 7279 (UserGuildSettingsManager)
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7273 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7280 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let body, c3, c4, c6, c7, channel, collapsedCategories, guilds;
@@ -45,7 +45,7 @@ let obj = function _saveUserGuildSettings() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ let obj = function _saveUserGuildSettings() {
             return obj;
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -160,7 +160,7 @@ obj = function _saveUserGuildSettingsBulk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,22 +1,20 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12265
+// Function ID: 12266
 // Name: NoPermsState
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5012, 5242, 12090, 12091, 12015, 11262, 5707, 1125, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5016, 5248, 12266, 12267, 12201, 11467, 5712, 5619, 1114, 2]
+// Exports: default
 
-// Module 12089 (NoPermsState)
+// Module 12265 (NoPermsState)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import shared from "shared" /* 5012 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import shared from "shared" /* 5016 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -27,83 +25,23 @@ const View = react_native.View;
 let obj = { container: obj2, textContainer: { flexShrink: 1 }, image: { width: 64, height: 64 } };
 obj2 = { paddingVertical: 16, paddingHorizontal: 24, gap: 12, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "flex-start", display: "flex", flexDirection: "row" };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyState() {
-  let items;
-  const obj = react2;
-  const cResult = obj.c(10);
-  const tmp4 = closure_6();
-  const obj2 = shared;
-  const tmp5Result = importDefault(obj2.isThemeLight(useThemeDefault()) ? 12090 : 12091);
-  const tmpResult = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmpResult.useLogAppLauncherEmptyStateView(tmp(11262).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
-  if (cResult[0] === tmp5Result) {
-    let tmp9;
-    let tmp12;
-    let tmp14;
-    if (cResult[1] === tmp4.image) {
-      tmp9 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    const textContainer = tmp4.textContainer;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl2.t.uDnXXj);
-      cResult[3] = stringResult;
-      tmp12 = stringResult;
-    } else {
-      tmp12 = cResult[3];
-    }
-    if (cResult[4] !== tmp4.textContainer) {
-      const obj3 = { style: textContainer, variant: "text-sm/medium", color: "text-muted", children: tmp12 };
-      const tmp16 = React3(Text_Text.Text, obj3);
-      cResult[4] = tmp4.textContainer;
-      cResult[5] = tmp16;
-      tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[5];
-    }
-    if (cResult[6] === tmp4.container) {
-      if (cResult[7] === tmp9) {
-        let tmp17;
-        if (cResult[8] === tmp14) {
-          tmp17 = cResult[9];
-        }
-        return tmp17;
-      }
-    }
-    const obj4 = { style: tmp8, children: items };
-    items = [tmp9, tmp14];
-    const tmp20 = hasOwnProperty(View, obj4);
-    cResult[6] = tmp4.container;
-    cResult[7] = tmp9;
-    cResult[8] = tmp14;
-    cResult[9] = tmp20;
-    tmp17 = tmp20;
-  }
-  const obj5 = { style: tmp4.image, resizeMode: "contain", source: tmp5Result };
-  const tmp10 = React3(FastImageDefault, obj5);
-  cResult[0] = tmp5Result;
-  cResult[1] = tmp4.image;
-  cResult[2] = tmp10;
-  tmp9 = tmp10;
-}) : (function EmptyState() {
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
+
+export default function EmptyState() {
   let intl;
   let items;
   const tmp = closure_6();
   const obj = shared;
-  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12090 : 12091);
+  const tmp4Result = importDefault(obj.isThemeLight(useThemeDefault()) ? 12266 : 12267);
   const tmp2Result = AppLauncherNativeUtils;
-  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11262).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
+  const logAppLauncherEmptyStateView = tmp2Result.useLogAppLauncherEmptyStateView(tmp2(11467).AppLauncherEmptyStateType.HOME_NO_PERMISSIONS);
   const obj2 = { style: tmp.container, children: items };
   items = [, ];
   const obj3 = { style: tmp.image, resizeMode: "contain", source: tmp4Result };
   items[0] = React3(FastImageDefault, obj3);
   const obj4 = { style: tmp.textContainer, variant: "text-sm/medium", color: "text-muted", children: intl.string(intl2.t.uDnXXj) };
-  const Text = tmp2(5271).Text;
-  intl = tmp2(1125).intl;
+  const Text = tmp2(5619).Text;
+  intl = tmp2(1114).intl;
   items[1] = React3(Text, obj4);
   return hasOwnProperty(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/NoPermsState.tsx");
-
-export default tmp4;
+};

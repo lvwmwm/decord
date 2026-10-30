@@ -1,11 +1,11 @@
-// Module ID: 6438
-// Function ID: 6439
+// Module ID: 6445
+// Function ID: 6446
 // Name: FileSizeUtils
-// Dependencies: [1125, 2]
+// Dependencies: [1114, 2]
 // Exports: formatKbSize
 
-// Module 6438 (FileSizeUtils)
-import intl3 from "intl" /* 1125 */;
+// Module 6445 (FileSizeUtils)
+import intl3 from "intl" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 function formatSize(available, arg1) {
@@ -67,7 +67,7 @@ let result = size.fileFinishedImporting("utils/FileSizeUtils.tsx");
 export const BYTE_IN_KB = 1024;
 export const KB_IN_MB = 1024;
 export { formatSize };
-export function formatKbSize(bytes, arg1) {
+export function formatKbSize(MAX_STICKER_FILE_SIZE, arg1) {
   let formatToPlainStringResult;
   let tmp = arg1;
   if (arg1 === undefined) {
@@ -78,7 +78,7 @@ export function formatKbSize(bytes, arg1) {
   if (tmp.useKibibytes) {
     num2 = 1024;
   }
-  const result = bytes / num2;
+  const result = MAX_STICKER_FILE_SIZE / num2;
   if (tmp.useKibibytes) {
     num = c2;
   }

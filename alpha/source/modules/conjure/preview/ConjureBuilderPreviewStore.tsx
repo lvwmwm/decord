@@ -1,19 +1,18 @@
-// Module ID: 16209
-// Function ID: 16210
+// Module ID: 16249
+// Function ID: 16250
 // Name: ConjureBuilderPreviewStore
-// Dependencies: [6833, 2024, 504, 584, 2]
+// Dependencies: [6840, 504, 2021, 572, 2]
 
-// Module 16209 (ConjureBuilderPreviewStore)
+// Module 16249 (ConjureBuilderPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 2024 */;
-import FramesStore from "FramesStore" /* 6833 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import FramesStore from "FramesStore" /* 6840 */;
 import size from "module_2" /* 2 */;
 
-const OrientationLockState = Constants.OrientationLockState;
 let applicationId = null;
 let enabled = false;
-let closure_5 = false;
+let closure_6 = false;
 const Store = get_initializedDefault.Store;
 class ConjureBuilderPreviewStore extends Store {
   initialize() {
@@ -32,7 +31,7 @@ class ConjureBuilderPreviewStore extends Store {
     return enabled;
   }
   isBuilderPreviewLandscape() {
-    return closure_5;
+    return closure_6;
   }
 }
 const prototype = ConjureBuilderPreviewStore.prototype;
@@ -42,7 +41,7 @@ const obj = {
       if (null == applicationId) {
         const tmp2 = enabled;
         if (!tmp2) {
-          const tmp3 = closure_5;
+          const tmp3 = closure_6;
           if (!tmp3) {
             return false;
           }
@@ -51,7 +50,7 @@ const obj = {
     }
     applicationId = null;
     enabled = false;
-    closure_5 = false;
+    closure_6 = false;
   },
   CONJURE_BUILDER_PREVIEW_APPLICATION_SET: function handleBuilderPreviewApplicationSet(applicationId) {
     applicationId = applicationId.applicationId;
@@ -67,27 +66,28 @@ const obj = {
   },
   CONJURE_BUILDER_PREVIEW_LANDSCAPE_SET: function handleBuilderPreviewLandscapeSet(landscape) {
     landscape = landscape.landscape;
-    if (closure_5 === landscape) {
+    if (closure_6 === landscape) {
       return false;
     } else {
-      closure_5 = landscape;
+      closure_6 = landscape;
     }
   },
   FRAME_SET_ORIENTATION_LOCK_STATE: function handleFrameSetOrientationLockState(lockState) {
     lockState = lockState.lockState;
     const frameId = lockState.frameId;
-    if (lockState !== OrientationLockState.LANDSCAPE) {
-      if (lockState !== OrientationLockState.PORTRAIT) {
+    if (lockState !== EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE) {
+      if (lockState !== EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT) {
         return false;
       }
     }
     const frame = FramesStore.getFrame(frameId);
     if (null != frame) {
       if (frame.applicationId === applicationId) {
-        if (closure_5 === (lockState === OrientationLockState.LANDSCAPE)) {
+        const tmp5 = lockState === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE;
+        if (closure_6 === tmp5) {
           return false;
         } else {
-          closure_5 = tmp4;
+          closure_6 = tmp5;
         }
       }
     }

@@ -1,18 +1,17 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13365
+// Function ID: 13366
 // Name: Checkpoint2026ForwardPreview
-// Dependencies: [19, 17, 21, 5005, 558, 576, 6076, 6079, 6075, 1898, 5707, 13215, 587, 2]
+// Dependencies: [19, 17, 21, 5009, 6083, 6086, 6082, 1893, 5712, 13366, 575, 2]
+// Exports: default
 
-// Module 13214 (Checkpoint2026ForwardPreview)
+// Module 13365 (Checkpoint2026ForwardPreview)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import react_nativeDefault from "react-native" /* 1898 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6075 */;
+import react_nativeDefault from "react-native" /* 1893 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6082 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,103 +27,9 @@ let obj = { preview: { width: 56, height: 56, alignItems: "center", justifyConte
 obj2 = { transform: items };
 items = [{ translateY: -2 }];
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint2026ForwardPreview(checkpointData) {
-  let arr;
-  let layer;
-  let tmp6;
-  const obj = require("react");
-  const cResult = obj.c(16);
-  checkpointData = checkpointData.checkpointData;
-  const tmp4 = closure_7();
-  _require = tmp4;
-  const character = checkpointData.character;
-  const obj2 = require("CheckpointExperiments");
-  const isCheckpointCardEnabled = obj2.useIsCheckpointCardEnabled("Checkpoint2026ForwardPreview");
-  if (cResult[0] !== checkpointData.cardColorPalette) {
-    const tmpResult = require("CheckpointCardColors");
-    const cardColors = tmpResult.getCardColors(checkpointData.cardColorPalette);
-    cResult[0] = checkpointData.cardColorPalette;
-    cResult[1] = cardColors;
-    tmp6 = cardColors;
-  } else {
-    tmp6 = cResult[1];
-  }
-  const secondaryBackgroundColor = tmp6.secondaryBackgroundColor;
-  if (cResult[2] !== character) {
-    let characterLayerUrls;
-    if (null != character) {
-      const _Math = Math;
-      const tmpResult2 = require("checkpoint/CheckpointMessageComponentUtils");
-      characterLayerUrls = tmpResult2.getCharacterLayerUrls(character, Math.round(56 * react_nativeDefault()));
-    } else {
-      characterLayerUrls = [];
-    }
-    cResult[2] = character;
-    cResult[3] = characterLayerUrls;
-    arr = characterLayerUrls;
-  } else {
-    arr = cResult[3];
-  }
-  let tmp11 = null;
-  if (isCheckpointCardEnabled) {
-    let tmp12;
-    if (cResult[4] !== secondaryBackgroundColor) {
-      const obj3 = { backgroundColor: secondaryBackgroundColor };
-      cResult[4] = secondaryBackgroundColor;
-      cResult[5] = obj3;
-      tmp12 = obj3;
-    } else {
-      tmp12 = cResult[5];
-    }
-    if (cResult[6] === tmp4.preview) {
-      let tmp13;
-      let mapped;
-      if (cResult[7] === tmp12) {
-        tmp13 = cResult[8];
-      }
-      if (cResult[9] === character) {
-        if (cResult[10] === arr) {
-          let tmp14;
-          if (cResult[11] === tmp4.layer) {
-            tmp14 = cResult[12];
-          }
-          if (cResult[13] === tmp13) {
-            let tmp18;
-            if (cResult[14] === tmp14) {
-              tmp18 = cResult[15];
-            }
-            tmp11 = tmp18;
-          }
-          const tmp21 = <closure_5 style={tmp13}>{tmp14}</closure_5>;
-          cResult[13] = tmp13;
-          cResult[14] = tmp14;
-          cResult[15] = tmp21;
-          tmp18 = tmp21;
-        }
-      }
-      if (null != character) {
-        mapped = arr.map((uri) => {
-          const items = [React3.absoluteFill, layer.layer];
-          return jsx(FastImageDefault, { source: { uri }, style: items }, uri);
-        });
-      } else {
-        const ExperimentalCheckpointIcon = tmp(13215).ExperimentalCheckpointIcon;
-        mapped = <ExperimentalCheckpointIcon color={nativeDefault.colors.BLACK} />;
-      }
-      cResult[9] = character;
-      cResult[10] = arr;
-      cResult[11] = tmp4.layer;
-      cResult[12] = mapped;
-      tmp14 = mapped;
-    }
-    let items = [tmp4.preview, tmp12];
-    cResult[6] = tmp4.preview;
-    cResult[7] = tmp12;
-    cResult[8] = items;
-    tmp13 = items;
-  }
-  return tmp11;
-}) : (function Checkpoint2026ForwardPreview(checkpointData) {
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/Checkpoint2026ForwardPreview.tsx");
+
+export default function Checkpoint2026ForwardPreview(checkpointData) {
   let items1;
   let layer;
   let mapped;
@@ -158,18 +63,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkpoint
     const tmp7 = closure_5;
     if (null != character) {
       mapped = memo.map((uri) => {
-        const items = [React3.absoluteFill, layer.layer];
+        const items = [absoluteFill.absoluteFill, layer.layer];
         return jsx(FastImageDefault, { source: { uri }, style: items }, uri);
       });
     } else {
-      const obj5 = { color: character(587).colors.BLACK };
-      const ExperimentalCheckpointIcon = tmp2(13215).ExperimentalCheckpointIcon;
+      const obj5 = { color: character(575).colors.BLACK };
+      const ExperimentalCheckpointIcon = tmp2(13366).ExperimentalCheckpointIcon;
       mapped = tmp6(ExperimentalCheckpointIcon, obj5);
     }
     tmp6Result = tmp6(tmp7, obj3);
   }
   return tmp6Result;
-});
-const result = size.fileFinishedImporting("modules/checkpoint/native/components/Checkpoint2026ForwardPreview.tsx");
-
-export default tmp3;
+};

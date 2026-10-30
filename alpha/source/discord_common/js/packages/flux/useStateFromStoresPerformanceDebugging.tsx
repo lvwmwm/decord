@@ -1,10 +1,10 @@
-// Module ID: 17536
-// Function ID: 17537
+// Module ID: 17590
+// Function ID: 17591
 // Name: useStateFromStoresPerformanceDebugging
 // Dependencies: [32, 4, 510, 2]
 // Exports: getUseStateFromStoresDebuggingEnabled, getUseStateFromStoresExecutionCountWarningThreshold, getUseStateFromStoresExecutionTimeWarningThresholdMs, getUseStateFromStoresExecutionWindowThresholdMs, getUseStateFromStoresHookInfo, getUseStateFromStoresSpecificHookFilter, setUseStateFromStoresDebuggingEnabled, setUseStateFromStoresExecutionCountWarningThreshold, setUseStateFromStoresExecutionTimeWarningThresholdMs, setUseStateFromStoresExecutionWindowThresholdMs, setUseStateFromStoresSpecificHookFilter, trackGetStateFromStoresPerformance
 
-// Module 17536 (useStateFromStoresPerformanceDebugging)
+// Module 17590 (useStateFromStoresPerformanceDebugging)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage2 from "Storage" /* 510 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -181,11 +181,11 @@ export function getUseStateFromStoresDebuggingEnabled() {
   }
   return flag;
 }
-export function setUseStateFromStoresDebuggingEnabled(first1) {
+export function setUseStateFromStoresDebuggingEnabled(arg0) {
   let interval;
-  c8 = first1;
+  c8 = arg0;
   const Storage = Storage2.Storage;
-  const result = Storage.set("useStateFromStoresDebuggingEnabled", first1);
+  const result = Storage.set("useStateFromStoresDebuggingEnabled", arg0);
   if (c8) {
     const _setInterval = setInterval;
     interval = setInterval(flushViolators, c4);

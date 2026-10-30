@@ -1,21 +1,19 @@
-// Module ID: 13685
-// Function ID: 13686
+// Module ID: 13832
+// Function ID: 13833
 // Name: CreateGuild
-// Dependencies: [19, 17, 1389, 1084, 21, 5005, 587, 558, 576, 5304, 6009, 1125, 5271, 13024, 7068, 7355, 5281, 7093, 6015, 2]
+// Dependencies: [19, 17, 1384, 1072, 21, 5009, 575, 5269, 6016, 6022, 5619, 1114, 13175, 7076, 7363, 5629, 7101, 2]
+// Exports: default
 
-// Module 13685 (CreateGuild)
+// Module 13832 (CreateGuild)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import react_native2 from "react-native" /* 6009 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import react_native2 from "react-native" /* 6016 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-let obj1, tmp2, tmp5, tmp6;
 
 let metroImportAll;
 let metroImportDefault;
@@ -26,358 +24,9 @@ const MarketingURLs = Constants.MarketingURLs;
 let obj = { flex: { flex: 1 }, contentContainer: obj2, header: { textAlign: "center" }, description: { lineHeight: 18, textAlign: "center", marginBottom: 24 }, iconUploader: { alignSelf: "center", marginBottom: 4 }, hint: { marginBottom: 8 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingBottom: 16 };
 let closure_9 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(arg0) {
-  let autoFocus;
-  let customButtonLabel;
-  let customDescription;
-  let customTitle;
-  let error;
-  let guild;
-  let isScreenReaderEnabled;
-  let onCreate;
-  let onIconPress;
-  let onNameChange;
-  let onStaffOnlyChange;
-  let submitting;
-  let tmp11;
-  let tmp12;
-  let tmp = isScreenReaderEnabled;
-  let obj = isScreenReaderEnabled(576);
-  const cResult = obj.c(56);
-  ({ guild, onIconPress, onNameChange, onStaffOnlyChange, onCreate, submitting, error, customTitle, customDescription, customButtonLabel, autoFocus } = arg0);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const currentUser = UserStore.getCurrentUser();
-    let isStaffResult;
-    if (currentUser != null) {
-      isStaffResult = currentUser.isStaff();
-    }
-    cResult[0] = isStaffResult;
-    let first = isStaffResult;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(5304);
-  isScreenReaderEnabled = tmpResult.useIsScreenReaderEnabled();
-  const ref = react.useRef(null);
-  const obj4 = react;
-  if (cResult[1] !== isScreenReaderEnabled) {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-    const items = [isScreenReaderEnabled];
-    cResult[1] = isScreenReaderEnabled;
-    cResult[2] = R;
-    cResult[3] = items;
-    tmp12 = items;
-    tmp11 = R;
-  } else {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-    tmp12 = cResult[3];
-  }
-  const effect = obj4.useEffect(tmp11, tmp12);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-    cResult[4] = tmp15;
-  } else {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[5] !== customTitle) {
-    let stringResult;
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-    if (customTitle == null) {
-      class R {
-        constructor() {
-          tmp = closure_0;
-          if (tmp) {
-            tmp2 = closure_1;
-            tmp3 = null;
-            tmp = null != closure_1.current;
-          }
-          if (tmp) {
-            tmp4 = closure_0;
-            tmp5 = closure_2;
-            obj = closure_0(closure_2[10]);
-            obj1 = { ref: null, delay: 100 };
-            tmp6 = closure_1;
-            obj1.ref = closure_1;
-            result = obj.setAccessibilityFocus(obj1);
-          }
-          return;
-        }
-      }
-      stringResult = obj5.string(tmp(1125).t.XioBx6);
-    }
-    cResult[5] = customTitle;
-    cResult[6] = stringResult;
-  } else {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[7] === tmp4.header) {
-    class R {
-      constructor() {
-        tmp = closure_0;
-        if (tmp) {
-          tmp2 = closure_1;
-          tmp3 = null;
-          tmp = null != closure_1.current;
-        }
-        if (tmp) {
-          tmp4 = closure_0;
-          tmp5 = closure_2;
-          obj = closure_0(closure_2[10]);
-          obj1 = { ref: null, delay: 100 };
-          tmp6 = closure_1;
-          obj1.ref = closure_1;
-          result = obj.setAccessibilityFocus(obj1);
-        }
-        return;
-      }
-    }
-    if (cResult[10] !== customDescription) {
-      let stringResult1;
-      class R {
-        constructor() {
-          tmp = closure_0;
-          if (tmp) {
-            tmp2 = closure_1;
-            tmp3 = null;
-            tmp = null != closure_1.current;
-          }
-          if (tmp) {
-            tmp4 = closure_0;
-            tmp5 = closure_2;
-            obj = closure_0(closure_2[10]);
-            obj1 = { ref: null, delay: 100 };
-            tmp6 = closure_1;
-            obj1.ref = closure_1;
-            result = obj.setAccessibilityFocus(obj1);
-          }
-          return;
-        }
-      }
-      if (customDescription == null) {
-        class R {
-          constructor() {
-            tmp = closure_0;
-            if (tmp) {
-              tmp2 = closure_1;
-              tmp3 = null;
-              tmp = null != closure_1.current;
-            }
-            if (tmp) {
-              tmp4 = closure_0;
-              tmp5 = closure_2;
-              obj = closure_0(closure_2[10]);
-              obj1 = { ref: null, delay: 100 };
-              tmp6 = closure_1;
-              obj1.ref = closure_1;
-              result = obj.setAccessibilityFocus(obj1);
-            }
-            return;
-          }
-        }
-        stringResult1 = obj7.string(tmp(1125).t["/k/L/j"]);
-      }
-      cResult[10] = customDescription;
-      cResult[11] = stringResult1;
-    } else {
-      class R {
-        constructor() {
-          tmp = closure_0;
-          if (tmp) {
-            tmp2 = closure_1;
-            tmp3 = null;
-            tmp = null != closure_1.current;
-          }
-          if (tmp) {
-            tmp4 = closure_0;
-            tmp5 = closure_2;
-            obj = closure_0(closure_2[10]);
-            obj1 = { ref: null, delay: 100 };
-            tmp6 = closure_1;
-            obj1.ref = closure_1;
-            result = obj.setAccessibilityFocus(obj1);
-          }
-          return;
-        }
-      }
-    }
-    if (cResult[12] === tmp4.description) {
-      class R {
-        constructor() {
-          tmp = closure_0;
-          if (tmp) {
-            tmp2 = closure_1;
-            tmp3 = null;
-            tmp = null != closure_1.current;
-          }
-          if (tmp) {
-            tmp4 = closure_0;
-            tmp5 = closure_2;
-            obj = closure_0(closure_2[10]);
-            obj1 = { ref: null, delay: 100 };
-            tmp6 = closure_1;
-            obj1.ref = closure_1;
-            result = obj.setAccessibilityFocus(obj1);
-          }
-          return;
-        }
-      }
-      if (cResult[15] === guild.icon) {
-        class R {
-          constructor() {
-            tmp = closure_0;
-            if (tmp) {
-              tmp2 = closure_1;
-              tmp3 = null;
-              tmp = null != closure_1.current;
-            }
-            if (tmp) {
-              tmp4 = closure_0;
-              tmp5 = closure_2;
-              obj = closure_0(closure_2[10]);
-              obj1 = { ref: null, delay: 100 };
-              tmp6 = closure_1;
-              obj1.ref = closure_1;
-              result = obj.setAccessibilityFocus(obj1);
-            }
-            return;
-          }
-        }
-      }
-      let obj2 = { iconBackgroundColor: tmp4.contentContainer.backgroundColor, style: tmp4.iconUploader, onPress: onIconPress, icon: guild.icon };
-      cResult[15] = guild.icon;
-      cResult[16] = onIconPress;
-      cResult[17] = tmp4.contentContainer.backgroundColor;
-      cResult[18] = tmp4.iconUploader;
-      cResult[19] = closure_7(ref(13024), obj2);
-      const tmp27 = closure_7(ref(13024), obj2);
-    }
-    const obj3 = { style: tmp4.description, variant: "text-sm/medium", color: "text-default", children: tmp19 };
-    cResult[12] = tmp4.description;
-    cResult[13] = tmp19;
-    cResult[14] = closure_7(tmp(5271).Text, obj3);
-    const tmp23 = closure_7(tmp(5271).Text, obj3);
-  }
-  const obj6 = { ref, style: tmp4.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp16 };
-  cResult[7] = tmp4.header;
-  cResult[8] = tmp16;
-  cResult[9] = closure_7(tmp(5271).Text, obj6);
-  closure_7(tmp(5271).Text, obj6);
-}) : (function CreateGuild(arg0) {
+let result = size.fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
+
+export default function CreateGuild(arg0) {
   let Stack;
   let autoFocus;
   let customButtonLabel;
@@ -411,7 +60,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
     isStaffResult = currentUser.isStaff();
   }
   const tmp3 = !isStaffResult;
-  let obj2 = isScreenReaderEnabled(5304);
+  let obj2 = isScreenReaderEnabled(5269);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -424,28 +73,28 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(6015).Stack;
+  Stack = isScreenReaderEnabled(6022).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: customTitle };
-  const Text = isScreenReaderEnabled(5271).Text;
+  const Text = isScreenReaderEnabled(5619).Text;
   const tmp10 = ScrollView;
   tmp11 = closure_8;
   if (customTitle == null) {
-    const intl = tmp4(1125).intl;
-    customTitle = intl.string(tmp4(1125).t.XioBx6);
+    const intl = tmp4(1114).intl;
+    customTitle = intl.string(tmp4(1114).t.XioBx6);
   }
   items1 = [closure_7(Text, obj3), , , , , , , ];
   const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: customDescription };
-  const Text2 = tmp4(5271).Text;
+  const Text2 = tmp4(5619).Text;
   if (customDescription == null) {
-    const intl2 = tmp4(1125).intl;
-    customDescription = intl2.string(tmp4(1125).t["/k/L/j"]);
+    const intl2 = tmp4(1114).intl;
+    customDescription = intl2.string(tmp4(1114).t["/k/L/j"]);
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(13024), obj5);
-  const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1125).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(7068).TextInput;
-  intl3 = tmp4(1125).intl;
+  items1[2] = closure_7(ref(13175), obj5);
+  const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1114).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
+  const TextInput = tmp4(7076).TextInput;
+  intl3 = tmp4(1114).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
   if (error != null) {
@@ -457,22 +106,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   let tmp9Result = !tmp3;
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
-    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1125).t.edQ5va) };
-    const TableSwitchRow = tmp4(7355).TableSwitchRow;
-    intl4 = tmp4(1125).intl;
+    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1114).t.edQ5va) };
+    const TableSwitchRow = tmp4(7363).TableSwitchRow;
+    intl4 = tmp4(1114).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
   items1[4] = tmp9Result;
-  const obj8 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1125).t["2bprXx"], obj9) };
-  const Text3 = tmp4(5271).Text;
-  intl5 = tmp4(1125).intl;
+  const obj8 = { style: tmp.hint, variant: "text-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1114).t["2bprXx"], obj9) };
+  const Text3 = tmp4(5619).Text;
+  intl5 = tmp4(1114).intl;
   obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
   items1[5] = closure_7(Text3, obj8);
   const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
-  const Button = tmp4(5281).Button;
+  const Button = tmp4(5629).Button;
   if (customButtonLabel == null) {
-    const intl6 = tmp4(1125).intl;
-    customButtonLabel = intl6.string(tmp4(1125).t["O0p/lS"]);
+    const intl6 = tmp4(1114).intl;
+    customButtonLabel = intl6.string(tmp4(1114).t["O0p/lS"]);
   }
   items1[6] = closure_7(Button, obj10);
   let firstFieldErrorMessage1;
@@ -494,7 +143,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(7093);
+        const tmp12Result = tmp12(7101);
         if (error != null) {
           message2 = error.message;
         }
@@ -505,7 +154,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CreateGuild(
   }
   items1[7] = tmp9Result2;
   return closure_7(tmp10, obj);
-});
-let result = size.fileFinishedImporting("modules/create_guild/native/CreateGuild.tsx");
-
-export default tmp3;
+};

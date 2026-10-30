@@ -1,11 +1,11 @@
-// Module ID: 4958
-// Function ID: 4959
+// Module ID: 4962
+// Function ID: 4963
 // Name: emojiPacksFromServer
-// Dependencies: [4954, 2]
+// Dependencies: [4958, 2]
 // Exports: emojiPacksFromServer
 
-// Module 4958 (emojiPacksFromServer)
-import EmojiTypes from "EmojiTypes" /* 4954 */;
+// Module 4962 (emojiPacksFromServer)
+import EmojiTypes from "EmojiTypes" /* 4958 */;
 import size from "module_2" /* 2 */;
 
 function indexEmojiPacks(arg0) {

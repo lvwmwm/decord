@@ -1,24 +1,22 @@
-// Module ID: 13465
-// Function ID: 13466
+// Module ID: 13615
+// Function ID: 13616
 // Name: EmojiCube
-// Dependencies: [17, 5006, 6054, 21, 13466, 5005, 1382, 587, 558, 576, 504, 1415, 1497, 7287, 2]
+// Dependencies: [17, 5010, 6061, 21, 13616, 5009, 1377, 575, 504, 1410, 1492, 7294, 2]
+// Exports: default
 
-// Module 13465 (EmojiCube)
+// Module 13615 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import CheckpointConstants from "CheckpointConstants" /* 6054 */;
-import EmojiDefault from "Emoji" /* 7287 */;
-import glMatrix from "glMatrix" /* 13466 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import nativeDefault from "native" /* 575 */;
+import CheckpointConstants from "CheckpointConstants" /* 6061 */;
+import EmojiDefault from "Emoji" /* 7294 */;
+import glMatrix from "glMatrix" /* 13616 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+let dependencyMap;
 
 let items2;
 let items3;
@@ -82,8 +80,8 @@ num2 = undefined;
 if (PlatformUtils.isIOS()) {
   num2 = 229.99999999999997;
 }
-obj3 = { transform: items2 };
 let obj4 = { matrix: [0.8322767019271851, -0.37332993745803833, -0.4098050892353058, 0, 0.5543603897094727, 0.560490608215332, 0.6152518391609192, 0, 0, -0.739239513874054, 0.6734426617622375, 0, 0, -73.9239501953125, -32.65573501586914, 1] };
+obj3 = { transform: items2 };
 PlatformUtils = PlatformUtils_mod;
 PlatformUtils.isIOS();
 items2 = [obj4];
@@ -100,153 +98,9 @@ if (PlatformUtils.isIOS()) {
 obj6 = { transform: items4 };
 items4 = [{ matrix: transformMatrixResult1 }];
 let closure_6 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(emoji) {
-  let closure_2;
-  let items1;
-  let src;
-  let tmp12;
-  let tmp4;
-  let tmp5;
-  let useReducedMotion;
-  let tmp2 = dependencyMap;
-  let tmp = emoji;
-  let obj = emoji(576);
-  const cResult = obj.c(27);
-  emoji = emoji.emoji;
-  const style = emoji.style;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AccessibilityStore];
-    const fn = function l() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === emoji.animated) {
-    if (cResult[3] === emoji.id) {
-      let tmp8;
-      let tmp17;
-      if (cResult[4] === stateFromStores) {
-        tmp8 = cResult[5];
-      }
-      importDefault = tmp8;
-      const tmp14 = closure_6();
-      dependencyMap = tmp14;
-      const result = useWindowDimensionsDefault().width / 392;
-      if (cResult[6] !== result) {
-        const obj2 = { transform: items1 };
-        items1 = [{ scale: result }];
-        const obj3 = { scale: result };
-        cResult[6] = result;
-        cResult[7] = obj2;
-        tmp17 = obj2;
-      } else {
-        tmp17 = cResult[7];
-      }
-      if (cResult[8] === style) {
-        if (cResult[9] === tmp14.container) {
-          let tmp18;
-          if (cResult[10] === tmp17) {
-            tmp18 = cResult[11];
-          }
-          if (cResult[12] === tmp14.leftFace) {
-            if (cResult[13] === tmp14.rightFace) {
-              let arr4;
-              if (cResult[14] === tmp14.topFace) {
-                arr4 = cResult[15];
-              }
-              if (cResult[16] === emoji.id) {
-                if (cResult[17] === emoji.name) {
-                  if (cResult[18] === tmp8) {
-                    if (cResult[19] === tmp14.customEmoji) {
-                      if (cResult[20] === tmp14.emoji) {
-                        if (cResult[21] === tmp14.textEmoji) {
-                          let tmp19;
-                          if (cResult[22] === arr4) {
-                            tmp19 = cResult[23];
-                          }
-                          if (cResult[24] === tmp18) {
-                            let tmp21;
-                            if (cResult[25] === tmp19) {
-                              tmp21 = cResult[26];
-                            }
-                            return tmp21;
-                          }
-                          const tmp24 = <View style={tmp18}>{tmp19}</View>;
-                          cResult[24] = tmp18;
-                          cResult[25] = tmp19;
-                          cResult[26] = tmp24;
-                          tmp21 = tmp24;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              const mapped = arr4.map((item, index) => {
-                let items;
-                let str;
-                const obj = { style: items, fastImageStyle: closure_2.customEmoji, textEmojiStyle: closure_2.textEmoji, name: str, src };
-                items = [closure_2.emoji, item];
-                str = "";
-                const tmp = jsx;
-                const tmp2 = EmojiDefault;
-                if (null == emoji.id) {
-                  str = emoji.name;
-                }
-                return tmp(tmp2, obj, index);
-              });
-              cResult[16] = emoji.id;
-              cResult[17] = emoji.name;
-              cResult[18] = tmp8;
-              cResult[19] = tmp14.customEmoji;
-              cResult[20] = tmp14.emoji;
-              cResult[21] = tmp14.textEmoji;
-              cResult[22] = arr4;
-              cResult[23] = mapped;
-              tmp19 = mapped;
-            }
-          }
-          const items2 = [, , ];
-          ({ topFace: arr5[0], leftFace: arr5[1], rightFace: arr5[2] } = tmp14);
-          cResult[12] = tmp14.leftFace;
-          cResult[13] = tmp14.rightFace;
-          cResult[14] = tmp14.topFace;
-          cResult[15] = items2;
-          arr4 = items2;
-        }
-      }
-      const items3 = [tmp14.container, tmp17, style];
-      cResult[8] = style;
-      cResult[9] = tmp14.container;
-      cResult[10] = tmp17;
-      cResult[11] = items3;
-      tmp18 = items3;
-    }
-  }
-  let emojiURL;
-  if (null != emoji.id) {
-    const obj5 = { id: emoji.id, animated: tmp12, size: 48 };
-    tmp12 = !stateFromStores;
-    const getEmojiURL = AvatarUtilsDefault.getEmojiURL;
-    AvatarUtilsDefault;
-    if (!stateFromStores) {
-      tmp12 = true === emoji.animated;
-    }
-    emojiURL = getEmojiURL(obj5);
-  }
-  cResult[2] = emoji.animated;
-  cResult[3] = emoji.id;
-  cResult[4] = stateFromStores;
-  cResult[5] = emojiURL;
-  tmp8 = emojiURL;
-}) : (function EmojiCube(emoji) {
+const result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/emoji/EmojiCube.tsx");
+
+export default function EmojiCube(emoji) {
   let closure_2;
   let items2;
   let tmp6;
@@ -262,8 +116,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   if (null != emoji.id) {
     const obj2 = { id: emoji.id, animated: tmp6, size: 48 };
     tmp6 = !stateFromStores;
-    const getEmojiURL = emojiURL(1415).getEmojiURL;
-    emojiURL(1415);
+    const getEmojiURL = emojiURL(1410).getEmojiURL;
+    emojiURL(1410);
     if (!stateFromStores) {
       tmp6 = true === emoji.animated;
     }
@@ -273,12 +127,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
   dependencyMap = tmp7;
   const items1 = [tmp7.container, , ];
   const obj4 = { transform: items2 };
-  items2 = [{ scale: emojiURL(1497)().width / 392 }];
+  items2 = [{ scale: emojiURL(1492)().width / 392 }];
   items1[1] = obj4;
   items1[2] = style;
   const items3 = [, , ];
   ({ topFace: arr4[0], leftFace: arr4[1], rightFace: arr4[2] } = tmp7);
-  ({ scale: emojiURL(1497)().width / 392 });
+  ({ scale: emojiURL(1492)().width / 392 });
   return <View style={items1}>{items3.map((item, index) => {
     let items;
     let str;
@@ -292,7 +146,4 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiCube(em
     }
     return tmp(tmp2, obj, index);
   })}</View>;
-});
-let result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/emoji/EmojiCube.tsx");
-
-export default tmp6;
+};

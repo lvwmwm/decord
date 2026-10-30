@@ -1,16 +1,12 @@
-// Module ID: 10875
-// Function ID: 10876
+// Module ID: 10898
+// Function ID: 10899
 // Name: conjurePreviewControlLease
-// Dependencies: [19, 558, 576, 2]
-// Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased
+// Dependencies: [19, 2]
+// Exports: acquireConjureControlLease, beginConjureControlOperation, endConjureControlOperation, getConjureControlActiveProjectIds, isConjureControlActive, releaseConjureControlLeases, setConjureControlTuning, subscribeConjureControlReleased, useConjureControlActive, useConjureControlTuning
 
-// Module 10875 (conjurePreviewControlLease)
-import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 10898 (conjurePreviewControlLease)
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require, dependencyMap;
 
 function emit() {
   const items = [...set];
@@ -41,95 +37,18 @@ function subscribeConjureControl(arg0) {
     set.delete(closure_0);
   };
 }
+let react = react_mod;
 const map = new Map();
 let set = new Set();
 let set1 = new Set();
 const map1 = new Map();
 let set2 = new Set();
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlTuning(arg0) {
-  let closure_0;
-  let tmp2;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function t() {
-      const hasItem = null != closure_0 && set2.has(tmp);
-      return hasItem;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return react.useSyncExternalStore(subscribeConjureControl, tmp2, tmp2);
-}) : (function useConjureControlTuning(arg0) {
+let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewControlLease.tsx");
+
+export function acquireConjureControlLease(arg0) {
   let closure_0 = arg0;
-  const items = [arg0];
-  const callback = react.useCallback(() => {
-    const hasItem = null != closure_0 && set2.has(tmp);
-    return hasItem;
-  }, items);
-  return react.useSyncExternalStore(subscribeConjureControl, callback, callback);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureControlActive(arg0) {
-  let closure_0;
-  let tmp2;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function t() {
-      let tmp2 = null != closure_0;
-      if (tmp2) {
-        const value = map.get(tmp);
-        let num;
-        if (value != null) {
-          num = value.holders;
-        }
-        if (num == null) {
-          num = 0;
-        }
-        tmp2 = num > 0;
-      }
-      return tmp2;
-    };
-    let num = 0;
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return react.useSyncExternalStore(subscribeConjureControl, tmp2, tmp2);
-}) : (function useConjureControlActive(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
-  const callback = react.useCallback(() => {
-    let tmp2 = null != closure_0;
-    if (tmp2) {
-      const value = map.get(tmp);
-      let num;
-      if (value != null) {
-        num = value.holders;
-      }
-      if (num == null) {
-        num = 0;
-      }
-      tmp2 = num > 0;
-    }
-    return tmp2;
-  }, items);
-  return react.useSyncExternalStore(subscribeConjureControl, callback, callback);
-});
-function acquireConjureControlLease(arg0) {
-  let timerId;
-  let closure_0 = arg0;
-  let value = timerId.get(arg0);
-  const obj = timerId;
+  let value = map.get(arg0);
+  const obj = map;
   if (value == null) {
     const _Set = Set;
     const self = this;
@@ -138,7 +57,6 @@ function acquireConjureControlLease(arg0) {
     value = obj2;
     set = new Set();
   }
-  dependencyMap = value;
   value.holders = value.holders + 1;
   function release() {
     const tmp = c2;
@@ -164,7 +82,7 @@ function acquireConjureControlLease(arg0) {
   }
   const result = obj.set(arg0, value);
   let c2 = false;
-  timerId = setTimeout(() => {
+  const timerId = setTimeout(() => {
     const tmp = c2;
     if (!tmp) {
       c2 = true;
@@ -191,30 +109,6 @@ function acquireConjureControlLease(arg0) {
   emit();
   return release;
 }
-function endConjureControlOperation(openResult) {
-  const value = map1.get(openResult);
-  const obj = map1;
-  if (null != value) {
-    obj.delete(openResult);
-    const _clearTimeout = clearTimeout;
-    clearTimeout(value.timer);
-    value.release();
-  }
-}
-function isConjureControlActive(openResult) {
-  const value = map.get(openResult);
-  let num;
-  if (value != null) {
-    num = value.holders;
-  }
-  if (num == null) {
-    num = 0;
-  }
-  return num > 0;
-}
-let result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewControlLease.tsx");
-
-export { acquireConjureControlLease };
 export const CONTROL_OPERATION_IDLE_MS = 20000;
 export function beginConjureControlOperation(Stack2) {
   let release;
@@ -373,7 +267,16 @@ export function beginConjureControlOperation(Stack2) {
     const result3 = set(Stack2, obj6);
   }
 }
-export { endConjureControlOperation };
+export function endConjureControlOperation(openResult) {
+  const value = map1.get(openResult);
+  const obj = map1;
+  if (null != value) {
+    obj.delete(openResult);
+    const _clearTimeout = clearTimeout;
+    clearTimeout(value.timer);
+    value.release();
+  }
+}
 export function releaseConjureControlLeases(projectId) {
   set2.delete(projectId);
   const value = map1.get(projectId);
@@ -407,8 +310,26 @@ export function setConjureControlTuning(projectId, arg1) {
     emit();
   }
 }
-export const useConjureControlTuning = tmp7;
-export { isConjureControlActive };
+export function useConjureControlTuning(projectId) {
+  react = projectId;
+  const items = [projectId];
+  const callback = react.useCallback(() => {
+    const hasItem = null != projectId && set2.has(tmp);
+    return hasItem;
+  }, items);
+  return react.useSyncExternalStore(subscribeConjureControl, callback, callback);
+}
+export function isConjureControlActive(openResult) {
+  const value = map.get(openResult);
+  let num;
+  if (value != null) {
+    num = value.holders;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  return num > 0;
+}
 export function getConjureControlActiveProjectIds() {
   const items = [...map.keys()];
   return items;
@@ -421,4 +342,23 @@ export function subscribeConjureControlReleased(arg0) {
     set1.delete(closure_0);
   };
 }
-export const useConjureControlActive = tmp8;
+export function useConjureControlActive(projectId) {
+  react = projectId;
+  const items = [projectId];
+  const callback = react.useCallback(() => {
+    let tmp2 = null != projectId;
+    if (tmp2) {
+      const value = map.get(tmp);
+      let num;
+      if (value != null) {
+        num = value.holders;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      tmp2 = num > 0;
+    }
+    return tmp2;
+  }, items);
+  return react.useSyncExternalStore(subscribeConjureControl, callback, callback);
+}

@@ -1,38 +1,34 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18118
+// Function ID: 18119
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5750, 4947, 1389, 1084, 4864, 6763, 21, 5005, 587, 6765, 13740, 558, 576, 1415, 5707, 18070, 8605, 8561, 504, 1199, 6033, 1111, 18071, 5641, 2]
+// Dependencies: [109, 19, 17, 5756, 4951, 1384, 1072, 4865, 6770, 21, 5009, 575, 6772, 13887, 1410, 5712, 18119, 8639, 8595, 504, 1188, 6040, 18120, 5647, 1100, 2]
 
-// Module 18069 (ChannelItem)
+// Module 18118 (ChannelItem)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import router_utils from "router_utils" /* 1111 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import LegacyTokens from "LegacyTokens" /* 6765 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8561 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8605 */;
-import BaseChannelItem from "BaseChannelItem" /* 13740 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18070 */;
+import nativeDefault from "native" /* 575 */;
+import router_utils from "router_utils" /* 1100 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import LegacyTokens from "LegacyTokens" /* 6772 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8595 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8639 */;
+import BaseChannelItem from "BaseChannelItem" /* 13887 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18119 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
 
 let closure_14;
-let closure_15;
+let map1;
 let obj2;
 let obj3;
 let obj4;
@@ -68,179 +64,18 @@ function getChannelMode(selected) {
   }
   return DEFAULT;
 }
-let closure_3 = ["channel", "subtitle", "hideIcon", "children", "textStyle", "channelInfo", "onPress"];
-let closure_4 = ["channel", "subtitle", "hideIcon", "children", "textStyle", "channelInfo", "onPress"];
-const View = react_native.View;
-const ChannelTypes = Constants.ChannelTypes;
-const Routes = Constants.Routes;
-const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
-const UnreadSetting = ReadStateConstants.UnreadSetting;
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let items = [, ];
-({ GUILD_VOICE: arr[0], GUILD_STAGE_VOICE: arr[1] } = ChannelTypes);
-const set = new Set(items);
-let createStyles = createStyles_mod;
-let obj = { channelIconLive: obj2, dmAvatar: { marginRight: 8 }, avatarStatus: obj3, groupDmAvatar: { width: 20, height: 20, borderRadius: 10, marginRight: 8 }, channelInfoContainer: { paddingStart: 4 }, avatarStatusSelected: obj4 };
-obj2 = { tintColor: nativeDefault.unsafe_rawColors.GREEN_360 };
-createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj4 = { backgroundColor: LegacyTokens.DARK_393C42_LIGHT_DEE0E4 };
-let closure_17 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelIcon(arg0) {
-  let channel;
-  let isChannelLive;
-  let locked;
-  let mode;
-  let selected;
-  const obj = react2;
-  const cResult = obj.c(24);
-  const tmp4 = closure_17();
-  ({ channel, locked, isChannelLive, selected, mode } = arg0);
-  if (channel.type === ChannelTypes.DM) {
-    let tmp29;
-    if (cResult[0] !== channel) {
-      const recipientId = channel.getRecipientId();
-      cResult[0] = channel;
-      cResult[1] = recipientId;
-      tmp29 = recipientId;
-    } else {
-      tmp29 = cResult[1];
-    }
-    if (selected == null) {
-      selected = false;
-    }
-    if (cResult[2] === tmp29) {
-      let tmp32;
-      if (cResult[3] === selected) {
-        tmp32 = cResult[4];
-      }
-      return tmp32;
-    }
-    const obj3 = { userId: tmp29, selected };
-    const tmp35 = syncedClientThemes(closure_20, obj3);
-    cResult[2] = tmp29;
-    cResult[3] = selected;
-    cResult[4] = tmp35;
-    tmp32 = tmp35;
-  } else {
-    let tmp12;
-    let BookCheckIcon;
-    let tmp17;
-    if (channel.type === tmp6.GROUP_DM) {
-      let tmp7;
-      if (cResult[5] !== channel) {
-        ({ id: obj2.id, icon: obj2.icon } = channel);
-        const obj4 = { id: null, icon: null, applicationId: channel.getApplicationId(), size: 20 };
-        const getChannelIconSource = AvatarUtilsDefault.getChannelIconSource;
-        AvatarUtilsDefault;
-        const channelIconSource = getChannelIconSource(obj4);
-        cResult[5] = channel;
-        cResult[6] = channelIconSource;
-        tmp7 = channelIconSource;
-      } else {
-        tmp7 = cResult[6];
-      }
-      if (null != tmp7) {
-        if (cResult[7] === tmp7) {
-          let tmp25;
-          if (cResult[8] === tmp4.groupDmAvatar) {
-            tmp25 = cResult[9];
-          }
-          return tmp25;
-        }
-        const obj5 = { style: tmp4.groupDmAvatar, source: tmp7 };
-        const tmp28 = syncedClientThemes(FastImageDefault, obj5);
-        cResult[7] = tmp7;
-        cResult[8] = tmp4.groupDmAvatar;
-        cResult[9] = tmp28;
-        tmp25 = tmp28;
-      }
-    }
-    if (tmp5) {
-      tmp12 = AssetRegistryDefault;
-      BookCheckIcon = tmp(8605).BookCheckIcon;
-    } else {
-      if (cResult[10] === channel) {
-        if (cResult[11] === locked) {
-          tmp12 = cResult[12];
-        }
-        if (cResult[13] === channel) {
-          if (cResult[14] === locked) {
-            BookCheckIcon = cResult[15];
-          }
-        }
-        const obj6 = { isRulesChannel: false, locked };
-        const tmpResult = utils_ChannelUtils;
-        const channelIconComponent = tmpResult.getChannelIconComponent(channel, obj6);
-        cResult[13] = channel;
-        cResult[14] = locked;
-        cResult[15] = channelIconComponent;
-        BookCheckIcon = channelIconComponent;
-      }
-      const obj7 = { isRulesChannel: false, locked };
-      const tmpResult2 = utils_ChannelUtils;
-      const channelIcon = tmpResult2.getChannelIcon(channel, obj7);
-      cResult[10] = channel;
-      cResult[11] = locked;
-      cResult[12] = channelIcon;
-      tmp12 = channelIcon;
-    }
-    let channelIconLive;
-    if (isChannelLive) {
-      channelIconLive = tmp4.channelIconLive;
-    }
-    if (cResult[16] !== BookCheckIcon) {
-      let obj9;
-      if (null != BookCheckIcon) {
-        obj9 = { IconComponent: BookCheckIcon };
-        const obj8 = { IconComponent: BookCheckIcon };
-      } else {
-        obj9 = {};
-      }
-      cResult[16] = BookCheckIcon;
-      cResult[17] = obj9;
-      tmp17 = obj9;
-    } else {
-      tmp17 = cResult[17];
-    }
-    if (cResult[18] === tmp12) {
-      if (cResult[19] === isChannelLive) {
-        if (cResult[20] === mode) {
-          if (cResult[21] === channelIconLive) {
-            let tmp19;
-            if (cResult[22] === tmp17) {
-              tmp19 = cResult[23];
-            }
-            return tmp19;
-          }
-        }
-      }
-    }
-    const obj10 = { mode, source: tmp12, isChannelLive, style: channelIconLive };
-    const BaseChannelIcon = tmp(13740).BaseChannelIcon;
-    const merged = Object.assign(tmp17);
-    const tmp24 = syncedClientThemes(BaseChannelIcon, obj10);
-    cResult[18] = tmp12;
-    cResult[19] = isChannelLive;
-    cResult[20] = mode;
-    cResult[21] = channelIconLive;
-    cResult[22] = tmp17;
-    cResult[23] = tmp24;
-    tmp19 = tmp24;
-  }
-}) : (function ChannelIcon(arg0) {
+function ChannelIcon(arg0) {
   let channel;
   let channelIconLive;
   let isChannelLive;
   let locked;
   let selected;
-  const tmp = closure_17();
+  const tmp = closure_16();
   ({ channel, locked, isChannelLive, selected } = arg0);
   if (channel.type === ChannelTypes.DM) {
     const obj3 = { userId: channel.getRecipientId(), selected };
-    const tmp24 = syncedClientThemes;
-    const tmp25 = closure_20;
+    const tmp24 = map1;
+    const tmp25 = DMChannelIcon;
     if (selected == null) {
       selected = false;
     }
@@ -259,7 +94,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
       const tmp5 = importDefault;
       if (null != channelIconSource) {
         const obj5 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return syncedClientThemes(tmp5(5707), obj5);
+        return map1(tmp5(5712), obj5);
       }
     }
     if (tmp2) {
@@ -278,8 +113,8 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(13740).BaseChannelIcon;
-    const tmp17 = syncedClientThemes;
+    const BaseChannelIcon = tmp10(13887).BaseChannelIcon;
+    const tmp17 = map1;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;
     }
@@ -292,119 +127,15 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
     const merged = Object.assign(obj10);
     return tmp17(BaseChannelIcon, obj8);
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChannelIcon(userId) {
-  let first;
-  let isMobileOnline;
-  let isVROnline;
-  let status;
-  let tmp10;
-  let tmp12;
-  let tmp13;
-  let tmp7;
-  let tmp8;
-  let obj = userId(576);
-  const cResult = obj.c(18);
-  userId = userId.userId;
-  let avatarStatusSelected = userId.selected;
-  const tmp4 = closure_17();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function l() {
-      return UserStore.getUser(userId);
-    };
-    const items1 = [userId];
-    cResult[1] = userId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = userId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PresenceStore];
-    cResult[4] = items2;
-    tmp10 = items2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] !== userId) {
-    const fn2 = function v() {
-      const obj = { status: PresenceStore.getStatus(userId), isMobileOnline: PresenceStore.isMobileOnline(userId), isVROnline: PresenceStore.isVROnline(userId) };
-      return obj;
-    };
-    const items3 = [userId];
-    cResult[5] = userId;
-    cResult[6] = fn2;
-    cResult[7] = items3;
-    tmp13 = items3;
-    tmp12 = fn2;
-  } else {
-    tmp12 = cResult[6];
-    tmp13 = cResult[7];
-  }
-  const tmpResult2 = userId(504);
-  const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp10, tmp12, tmp13);
-  ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  if (avatarStatusSelected) {
-    avatarStatusSelected = tmp4.avatarStatusSelected;
-  }
-  if (cResult[8] === tmp4.avatarStatus) {
-    let tmp15;
-    if (cResult[9] === avatarStatusSelected) {
-      tmp15 = cResult[10];
-    }
-    if (cResult[11] === isMobileOnline) {
-      if (cResult[12] === isVROnline) {
-        if (cResult[13] === status) {
-          if (cResult[14] === tmp4.dmAvatar) {
-            if (cResult[15] === tmp15) {
-              let tmp16;
-              if (cResult[16] === stateFromStores) {
-                tmp16 = cResult[17];
-              }
-              return tmp16;
-            }
-          }
-        }
-      }
-    }
-    const obj2 = { user: stateFromStores, guildId: "o", size: userId(1199).AvatarSizes.XSMALL_20, style: tmp4.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: tmp15 };
-    const Avatar = tmp(1199).Avatar;
-    const tmp18 = closure_14(Avatar, obj2);
-    cResult[11] = isMobileOnline;
-    cResult[12] = isVROnline;
-    cResult[13] = status;
-    cResult[14] = tmp4.dmAvatar;
-    cResult[15] = tmp15;
-    cResult[16] = stateFromStores;
-    cResult[17] = tmp18;
-    tmp16 = tmp18;
-  }
-  const items4 = [tmp4.avatarStatus, avatarStatusSelected];
-  cResult[8] = tmp4.avatarStatus;
-  cResult[9] = avatarStatusSelected;
-  cResult[10] = items4;
-  tmp15 = items4;
-}) : (function DMChannelIcon(userId) {
+}
+function DMChannelIcon(userId) {
   let isMobileOnline;
   let isVROnline;
   let items4;
   let status;
   userId = userId.userId;
   let avatarStatusSelected = userId.selected;
-  const tmp = closure_17();
+  const tmp = closure_16();
   let obj = userId(504);
   const items = [UserStore];
   const items1 = [userId];
@@ -417,222 +148,34 @@ let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function DMChan
     return obj;
   }, items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  const obj3 = { user: stateFromStores, guildId: "o", size: userId(1199).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: items4 };
-  const Avatar = userId(1199).Avatar;
+  const obj3 = { user: stateFromStores, guildId: "o", size: userId(1188).AvatarSizes.XSMALL_20, style: tmp.dmAvatar, status, isMobileOnline, isVROnline, statusStyle: items4 };
+  const Avatar = userId(1188).Avatar;
   items4 = [tmp.avatarStatus, ];
-  const tmp4 = closure_14;
+  const tmp4 = closure_13;
   if (avatarStatusSelected) {
     avatarStatusSelected = tmp.avatarStatusSelected;
   }
   items4[1] = avatarStatusSelected;
   return tmp4(Avatar, obj3);
-});
-const memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelItem(channel) {
-  let channelInfo;
-  let children;
-  let closure_1;
-  let hideIcon;
-  let isSubscriptionGated;
-  let items;
-  let needSubscriptionToAccess;
-  let onPress;
-  let subtitle;
-  let textStyle;
-  let tmp10;
-  let tmp11;
-  let tmp12;
-  let tmp18;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let type;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(41);
-  const tmp4 = closure_17();
-  if (cResult[0] !== channel) {
-    channel = channel.channel;
-    _require = channel;
-    ({ subtitle, hideIcon, children, textStyle, channelInfo, onPress } = channel);
-    importDefault = onPress;
-    const tmp15 = _objectWithoutProperties(channel, closure_3);
-    cResult[0] = channel;
-    cResult[1] = channel;
-    cResult[2] = channelInfo;
-    cResult[3] = children;
-    cResult[4] = hideIcon;
-    cResult[5] = onPress;
-    cResult[6] = tmp15;
-    cResult[7] = subtitle;
-    cResult[8] = textStyle;
-    tmp12 = textStyle;
-    tmp11 = subtitle;
-    tmp10 = tmp15;
-    tmp8 = hideIcon;
-    tmp7 = children;
-    tmp6 = channelInfo;
-  } else {
-    _require = cResult[1];
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-    tmp8 = cResult[4];
-    importDefault = cResult[5];
-    tmp10 = cResult[6];
-    tmp11 = cResult[7];
-    tmp12 = cResult[8];
-  }
-  ({ isSubscriptionGated, needSubscriptionToAccess } = require("useChannelRoleSubscriptionStatus")(tmp5.id));
-  require("useChannelRoleSubscriptionStatus")(tmp5.id);
-  if (cResult[9] !== channel) {
-    const tmp20 = getChannelMode(channel);
-    cResult[9] = channel;
-    cResult[10] = tmp20;
-    tmp18 = tmp20;
-  } else {
-    tmp18 = cResult[10];
-  }
-  if (cResult[11] === tmp5.guild_id) {
-    if (cResult[12] === tmp5.type) {
-      if (cResult[13] === needSubscriptionToAccess) {
-        let tmp21;
-        let tmp25Result;
-        if (cResult[14] === tmp9) {
-          tmp21 = cResult[15];
-        }
-        if (cResult[16] === tmp6) {
-          if (cResult[17] === isSubscriptionGated) {
-            if (cResult[18] === needSubscriptionToAccess) {
-              let tmp22;
-              let tmp30;
-              if (cResult[19] === tmp4) {
-                tmp22 = cResult[20];
-              }
-              const tmp29 = tmp18 === tmp(needSubscriptionToAccess[13]).ChannelModes.UNREAD_IMPORTANT || tmp18 === tmp(needSubscriptionToAccess[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
-              if (cResult[21] !== tmp5) {
-                const tmpResult = tmp(needSubscriptionToAccess[26]);
-                const channelName = tmpResult.computeChannelName(tmp5, UserStore, RelationshipStore);
-                cResult[21] = tmp5;
-                cResult[22] = channelName;
-                tmp30 = channelName;
-              } else {
-                tmp30 = cResult[22];
-              }
-              if (cResult[23] === tmp18) {
-                if (cResult[24] === tmp11) {
-                  if (cResult[25] === tmp30) {
-                    let tmp34;
-                    if (cResult[26] === tmp12) {
-                      tmp34 = cResult[27];
-                    }
-                    if (cResult[28] === tmp18) {
-                      let tmp37;
-                      if (cResult[29] === channel) {
-                        tmp37 = cResult[30];
-                      }
-                      if (cResult[31] === tmp7) {
-                        if (cResult[32] === tmp21) {
-                          if (cResult[33] === tmp8) {
-                            if (cResult[34] === tmp18) {
-                              if (cResult[35] === tmp10) {
-                                if (cResult[36] === tmp29) {
-                                  if (cResult[37] === tmp34) {
-                                    if (cResult[38] === tmp37) {
-                                      let tmp44;
-                                      if (cResult[39] === tmp22) {
-                                        tmp44 = cResult[40];
-                                      }
-                                      return tmp44;
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          }
-                        }
-                      }
-                      const obj2 = { mode: tmp18, unread: tmp29, hideIcon: tmp8, name: tmp34, icon: tmp37, channelInfo: tmp22, onPress: tmp21, children: tmp7 };
-                      const tmp16Result = require("BaseChannelItem");
-                      const merged = Object.assign(tmp10);
-                      const tmp50 = closure_14(tmp16Result, obj2);
-                      cResult[31] = tmp7;
-                      cResult[32] = tmp21;
-                      cResult[33] = tmp8;
-                      cResult[34] = tmp18;
-                      cResult[35] = tmp10;
-                      cResult[36] = tmp29;
-                      cResult[37] = tmp34;
-                      cResult[38] = tmp37;
-                      cResult[39] = tmp22;
-                      cResult[40] = tmp50;
-                      tmp44 = tmp50;
-                    }
-                    const obj3 = { mode: tmp18 };
-                    const merged1 = Object.assign(channel);
-                    const tmp43 = closure_14(closure_19, obj3);
-                    cResult[28] = tmp18;
-                    cResult[29] = channel;
-                    cResult[30] = tmp43;
-                    tmp37 = tmp43;
-                  }
-                }
-              }
-              const obj4 = { mode: tmp18, name: tmp30, subtitle: tmp11, textStyle: tmp12 };
-              const tmp36 = closure_14(tmp(needSubscriptionToAccess[13]).BaseChannelName, obj4);
-              cResult[23] = tmp18;
-              cResult[24] = tmp11;
-              cResult[25] = tmp30;
-              cResult[26] = tmp12;
-              cResult[27] = tmp36;
-              tmp34 = tmp36;
-            }
-          }
-        }
-        if (null != tmp6) {
-          const obj5 = { style: tmp4.channelInfoContainer, children: items };
-          items = [tmp6, ];
-          let tmp27 = null;
-          const tmp25 = closure_15;
-          const tmp26 = View;
-          if (isSubscriptionGated) {
-            const obj6 = { locked: needSubscriptionToAccess };
-            tmp27 = closure_14(tmp16(tmp2[25]), obj6);
-          }
-          items[1] = tmp27;
-          tmp25Result = tmp25(tmp26, obj5);
-        } else {
-          tmp25Result = null;
-        }
-        cResult[16] = tmp6;
-        cResult[17] = isSubscriptionGated;
-        cResult[18] = needSubscriptionToAccess;
-        cResult[19] = tmp4;
-        cResult[20] = tmp25Result;
-        tmp22 = tmp25Result;
-      }
-    }
-  }
-  function handlePress(arg0) {
-    const tmp = needSubscriptionToAccess;
-    if (tmp) {
-      const tmp3 = type;
-      if (set.has(type.type)) {
-        const obj = router_utils;
-        obj.transitionTo(Routes.CHANNEL(tmp3.guild_id, StaticChannelRoute.ROLE_SUBSCRIPTIONS));
-      }
-    }
-    if (closure_1 != null) {
-      tmp4(arg0);
-    }
-  }
-  cResult[11] = tmp5.guild_id;
-  cResult[12] = tmp5.type;
-  cResult[13] = needSubscriptionToAccess;
-  cResult[14] = tmp9;
-  cResult[15] = handlePress;
-  tmp21 = handlePress;
-}) : (function ChannelItem(channel) {
+}
+let closure_3 = ["channel", "subtitle", "hideIcon", "children", "textStyle", "channelInfo", "onPress"];
+const View = react_native.View;
+const ChannelTypes = Constants.ChannelTypes;
+const Routes = Constants.Routes;
+const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
+const UnreadSetting = ReadStateConstants.UnreadSetting;
+({ jsx: map1, jsxs: closure_14 } = Fragment);
+let items = [, ];
+({ GUILD_VOICE: arr[0], GUILD_STAGE_VOICE: arr[1] } = ChannelTypes);
+const set = new Set(items);
+let createStyles = createStyles_mod;
+let obj = { channelIconLive: obj2, dmAvatar: { marginRight: 8 }, avatarStatus: obj3, groupDmAvatar: { width: 20, height: 20, borderRadius: 10, marginRight: 8 }, channelInfoContainer: { paddingStart: 4 }, avatarStatusSelected: obj4 };
+obj2 = { tintColor: nativeDefault.unsafe_rawColors.GREEN_360 };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj4 = { backgroundColor: LegacyTokens.DARK_393C42_LIGHT_DEE0E4 };
+let closure_16 = createStyles(obj);
+const memoResult = react.memo(function ChannelItem(channel) {
   let BaseChannelName;
   let channelInfo;
   let children;
@@ -648,11 +191,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp8Result;
   channel = channel.channel;
   ({ channelInfo, onPress: importDefault } = channel);
-  let tmp = closure_17();
+  let tmp = closure_16();
   ({ subtitle, hideIcon, children, textStyle } = channel);
   let tmp3 = importDefault;
   const tmp4 = needSubscriptionToAccess;
-  const tmp2 = _objectWithoutProperties(channel, closure_4);
+  const tmp2 = _objectWithoutProperties(channel, closure_3);
   const tmp5 = require("useChannelRoleSubscriptionStatus")(channel.id);
   ({ isSubscriptionGated, needSubscriptionToAccess } = tmp5);
   const tmp6 = getChannelMode(channel);
@@ -660,11 +203,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     let obj = { style: tmp.channelInfoContainer, children: items };
     items = [channelInfo, ];
     let tmp10 = null;
-    const tmp8 = closure_15;
+    const tmp8 = closure_14;
     const tmp9 = View;
     if (isSubscriptionGated) {
       const obj2 = { locked: needSubscriptionToAccess };
-      tmp10 = closure_14(tmp3(tmp4[25]), obj2);
+      tmp10 = closure_13(tmp3(tmp4[22]), obj2);
     }
     items[1] = tmp10;
     tmp8Result = tmp8(tmp9, obj);
@@ -675,8 +218,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     mode: tmp6,
     unread: tmp6 === channel(tmp4[13]).ChannelModes.UNREAD_IMPORTANT || tmp6 === channel(tmp4[13]).ChannelModes.UNREAD_LESS_IMPORTANT,
     hideIcon,
-    name: closure_14(BaseChannelName, obj4),
-    icon: closure_14(closure_19, obj5),
+    name: closure_13(BaseChannelName, obj4),
+    icon: closure_13(ChannelIcon, obj5),
     channelInfo: tmp8Result,
     onPress: function handlePress(arg0) {
       const tmp = needSubscriptionToAccess;
@@ -698,11 +241,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   tmp6 === channel(tmp4[13]).ChannelModes.UNREAD_IMPORTANT || tmp6 === channel(tmp4[13]).ChannelModes.UNREAD_LESS_IMPORTANT;
   BaseChannelName = tmp14(tmp4[13]).BaseChannelName;
   obj5 = { mode: tmp6 };
-  tmp14Result = channel(tmp4[26]);
+  tmp14Result = channel(tmp4[23]);
   const merged = Object.assign(channel);
   const merged1 = Object.assign(tmp2);
-  return closure_14(tmp3Result, obj3);
-}));
+  return closure_13(tmp3Result, obj3);
+});
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ChannelItem.tsx");
 
 export default memoResult;

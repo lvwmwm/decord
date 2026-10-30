@@ -1,15 +1,15 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11947
+// Function ID: 11948
 // Name: trackVoiceCallTransfer
-// Dependencies: [4857, 5752, 5754, 1084, 1264, 2]
+// Dependencies: [4858, 5759, 5761, 1072, 1253, 2]
 // Exports: default
 
-// Module 11754 (trackVoiceCallTransfer)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import SessionsStore from "SessionsStore" /* 5754 */;
+// Module 11947 (trackVoiceCallTransfer)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import SessionsStore from "SessionsStore" /* 5761 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

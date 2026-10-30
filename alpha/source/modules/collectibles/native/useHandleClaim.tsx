@@ -1,123 +1,19 @@
-// Module ID: 14975
-// Function ID: 14976
+// Module ID: 15019
+// Function ID: 15020
 // Name: useHandleClaim
-// Dependencies: [5, 19, 558, 576, 7707, 5247, 14410, 5701, 1125, 2]
+// Dependencies: [5, 19, 7712, 5253, 14443, 5707, 1114, 2]
+// Exports: useHandleClaim
 
-// Module 14975 (useHandleClaim)
-import react2 from "react" /* 576 */;
+// Module 15019 (useHandleClaim)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c4;
+let c4, closure_2;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleClaim(product) {
-  let obj = react2;
-  const cResult = obj.c(5);
-  product = product.product;
-  require = product;
-  let stageCollectibleChangeForEditProfile = product.stageCollectibleChangeForEditProfile;
-  if (cResult[0] === product) {
-    let tmp2;
-    let tmp3;
-    if (cResult[1] === stageCollectibleChangeForEditProfile) {
-      tmp2 = cResult[2];
-    }
-    if (cResult[3] !== tmp2) {
-      let obj2 = { handleClaim: tmp2 };
-      cResult[3] = tmp2;
-      cResult[4] = obj2;
-      tmp3 = obj2;
-    } else {
-      tmp3 = cResult[4];
-    }
-    return tmp3;
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let intl;
-    let obj3;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      let c3;
-      try {
-        c4 = 2;
-        if (0 === stageCollectibleChangeForEditProfile) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            product = tmp;
-            c3 = 1;
-            stageCollectibleChangeForEditProfile = 2;
-            c4 = 1;
-            const obj5 = { value: obj3.claimPremiumCollectiblesProduct(product.skuId), done: false };
-            obj3 = product(dependencyMap[4]);
-            return obj5;
-          }
-        } else {
-          if (1 === tmp4) {
-            c3 = 0;
-            const obj6 = { text: intl.string(product(dependencyMap[8]).t.CKsXk3) };
-            const open = stageCollectibleChangeForEditProfile(dependencyMap[7]).open;
-            const tmp9 = stageCollectibleChangeForEditProfile(dependencyMap[7]);
-            intl = product(dependencyMap[8]).intl;
-            open("collectible shop claim error", obj6);
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c4 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            const obj7 = stageCollectibleChangeForEditProfile(dependencyMap[5]);
-            obj7.hideAllActionSheets();
-            const obj9 = { product, useCategoryImage: true, stageCollectibleChangeForEditProfile };
-            const obj8 = stageCollectibleChangeForEditProfile(dependencyMap[6]);
-            obj8.open(obj9);
-            const obj10 = product(dependencyMap[4]);
-            const collectiblesPurchases = obj10.fetchCollectiblesPurchases();
-            c3 = 0;
-          }
-          c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp18) {
-        let closure_2 = tmp18;
-        if (0 === c3) {
-          c4 = 3;
-          throw tmp18;
-        } else {
-          stageCollectibleChangeForEditProfile = 1;
-        }
-      }
-    }
-  });
-  function t1() {
-    return closure_0(...arguments);
-  }
-  cResult[0] = product;
-  cResult[1] = stageCollectibleChangeForEditProfile;
-  cResult[2] = t1;
-  tmp2 = t1;
-}) : (function useHandleClaim(product) {
+const result = size.fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
+
+export function useHandleClaim(product) {
   let items;
   product = product.product;
   require = product;
@@ -138,7 +34,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -157,16 +53,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
               stageCollectibleChangeForEditProfile = 2;
               c4 = 1;
               const obj5 = { value: obj3.claimPremiumCollectiblesProduct(require.skuId), done: false };
-              obj3 = tmp(closure_2[4]);
+              obj3 = tmp(closure_2[2]);
               return obj5;
             }
           } else {
             if (1 === tmp4) {
               c3 = 0;
-              const obj6 = { text: intl.string(tmp(closure_2[8]).t.CKsXk3) };
-              const open = stageCollectibleChangeForEditProfile(closure_2[7]).open;
-              const tmp9 = stageCollectibleChangeForEditProfile(closure_2[7]);
-              intl = tmp(closure_2[8]).intl;
+              const obj6 = { text: intl.string(tmp(closure_2[6]).t.CKsXk3) };
+              const open = stageCollectibleChangeForEditProfile(closure_2[5]).open;
+              const tmp9 = stageCollectibleChangeForEditProfile(closure_2[5]);
+              intl = tmp(closure_2[6]).intl;
               open("collectible shop claim error", obj6);
             } else if (arg0 === 1) {
               c4 = 3;
@@ -177,17 +73,17 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
               const obj = { value, done: true };
               return obj;
             } else {
-              const obj7 = stageCollectibleChangeForEditProfile(closure_2[5]);
+              const obj7 = stageCollectibleChangeForEditProfile(closure_2[3]);
               obj7.hideAllActionSheets();
               const obj9 = { product: closure_128_0, useCategoryImage: true, stageCollectibleChangeForEditProfile: closure_128_1 };
-              const obj8 = stageCollectibleChangeForEditProfile(closure_2[6]);
+              const obj8 = stageCollectibleChangeForEditProfile(closure_2[4]);
               obj8.open(obj9);
-              const obj10 = tmp(closure_2[4]);
+              const obj10 = tmp(closure_2[2]);
               const collectiblesPurchases = obj10.fetchCollectiblesPurchases();
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           closure_2 = tmp18;
@@ -203,7 +99,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHandleCla
   };
   items = [product, stageCollectibleChangeForEditProfile];
   return obj;
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/useHandleClaim.tsx");
-
-export const useHandleClaim = tmp2;
+}

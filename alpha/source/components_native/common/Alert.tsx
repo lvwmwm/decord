@@ -1,28 +1,26 @@
-// Module ID: 6018
-// Function ID: 6019
+// Module ID: 6025
+// Function ID: 6026
 // Name: Alert
-// Dependencies: [19, 17, 21, 5005, 587, 1199, 5071, 6019, 4852, 6009, 5271, 1125, 5281, 6968, 10693, 558, 576, 1497, 8731, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 1188, 5075, 6026, 4853, 6016, 5619, 1114, 5629, 6974, 10716, 1492, 8765, 2]
 // Exports: getAlertButtonVariant
 
-// Module 6018 (Alert)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import Timers from "Timers" /* 4852 */;
-import native2 from "native" /* 5071 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import CustomMarkupAll from "CustomMarkup" /* 6019 */;
-import Pressables from "Pressables" /* 6968 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8731 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10693 */;
+// Module 6025 (Alert)
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import Timers from "Timers" /* 4853 */;
+import native2 from "native" /* 5075 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import CustomMarkupAll from "CustomMarkup" /* 6026 */;
+import Pressables from "Pressables" /* 6974 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8765 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10716 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -330,9 +328,21 @@ class Alert extends PureComponent {
 const prototype = Alert.prototype;
 Alert.contextType = native2.ThemeContext;
 Alert.defaultProps = { confirmColor: native.ButtonColors.BRAND, autoCloseOnConfirm: true };
-const memo = react.memo;
 ({ confirmColor: native.ButtonColors.BRAND, autoCloseOnConfirm: true });
-function getAlertButtonVariant(confirmColor) {
+const memoResult = react.memo(function AlertConnected(arg0) {
+  size = useWindowDimensionsDefault();
+  const obj = useIsScreenLandscape;
+  const isScreenLandscape = obj.useIsScreenLandscape();
+  const obj2 = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
+  const merged = Object.assign(arg0);
+  return metroImportDefault(Alert, obj2);
+});
+memoResult.Colors = native.ButtonColors;
+let size = size_mod;
+let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
+
+export default memoResult;
+export function getAlertButtonVariant(confirmColor) {
   if (native.ButtonColors.GREEN === confirmColor) {
     return "active";
   } else if (native.ButtonColors.RED === confirmColor) {
@@ -352,45 +362,3 @@ function getAlertButtonVariant(confirmColor) {
     return "secondary";
   }
 }
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AlertConnected(arg0) {
-  const obj = react2;
-  const cResult = obj.c(5);
-  size = useWindowDimensionsDefault();
-  const obj2 = useIsScreenLandscape;
-  const isScreenLandscape = obj2.useIsScreenLandscape();
-  const bound = Math.min(0.9 * Math.min(size.width, size.height), 400);
-  const result = 0.7 * size.height;
-  if (cResult[0] === result) {
-    if (cResult[1] === isScreenLandscape) {
-      if (cResult[2] === arg0) {
-        let tmp5;
-        if (cResult[3] === bound) {
-          tmp5 = cResult[4];
-        }
-        return tmp5;
-      }
-    }
-  }
-  const obj3 = { width: bound, contentHeight: result, isLandscape: isScreenLandscape };
-  const merged = Object.assign(arg0);
-  const tmp7 = metroImportDefault(Alert, obj3);
-  cResult[0] = result;
-  cResult[1] = isScreenLandscape;
-  cResult[2] = arg0;
-  cResult[3] = bound;
-  cResult[4] = tmp7;
-  tmp5 = tmp7;
-}) : (function AlertConnected(arg0) {
-  size = useWindowDimensionsDefault();
-  const obj = useIsScreenLandscape;
-  const isScreenLandscape = obj.useIsScreenLandscape();
-  const obj2 = { width: Math.min(0.9 * Math.min(size.width, size.height), 400), contentHeight: 0.7 * size.height, isLandscape: isScreenLandscape };
-  const merged = Object.assign(arg0);
-  return metroImportDefault(Alert, obj2);
-}));
-memoResult.Colors = native.ButtonColors;
-let size = size_mod;
-let result = size.fileFinishedImporting("components_native/common/Alert.tsx");
-
-export default memoResult;
-export { getAlertButtonVariant };

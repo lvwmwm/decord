@@ -1,31 +1,26 @@
-// Module ID: 11381
-// Function ID: 11382
+// Module ID: 11584
+// Function ID: 11585
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7432, 4857, 4917, 4879, 4908, 1389, 1084, 21, 558, 576, 9103, 6888, 550, 7437, 7313, 504, 7204, 4942, 11382, 9009, 6029, 5059, 1125, 8708, 587, 7205, 10690, 2]
+// Dependencies: [32, 19, 17, 7440, 4858, 4921, 4880, 4912, 1384, 1072, 21, 9116, 6895, 550, 7445, 7320, 504, 7211, 4946, 11585, 9022, 6036, 5063, 1114, 8742, 575, 7212, 10713, 2]
 
-// Module 11381 (GuildChannelUserList)
+// Module 11584 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1125 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
-import GuildUtilsDefault from "GuildUtils" /* 6888 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
-import _mod9103 from "module_9103" /* 9103 */;
+import intl2 from "intl" /* 1114 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7432 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7440 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-const _modDef9103 = _mod9103;
 
 let closure_15;
 let closure_16;
@@ -41,300 +36,63 @@ ChannelMemberStore = ChannelMemberStore_mod;
 ({ RelationshipTypes: closure_15, StatusTypes: closure_16 } = Constants);
 ({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = Fragment);
 let closure_20 = [];
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchableConfig(guildId) {
-  let closure_6;
-  let queryResults;
-  let ref;
-  let str;
-  let tmp16;
-  let tmp7;
-  let obj = guildId(ref[12]);
-  const cResult = obj.c(30);
-  guildId = guildId.guildId;
-  const listRef = guildId.listRef;
-  const searchable = guildId.searchable;
-  const searchableEmptyState = guildId.searchableEmptyState;
-  let obj2 = queryResults;
-  ref = queryResults.useRef(null);
-  const tmp4 = _slicedToArray(queryResults.useState(""), 2);
-  [str, _slicedToArray] = tmp4;
-  [queryResults, closure_6] = queryResults.useState(closure_20);
-  if (cResult[0] !== guildId) {
-    const fn = function l() {
-      let obj2;
-      const tmp = _modDef9103;
-      const items = [_mod9103.AutocompleterResultTypes.USER];
-      const obj = { userFilters: obj2 };
-      obj2 = { guild: guildId, strict: true };
-      const tmp2 = new tmp((arg0, str) => {
-        if ("" === str.trim()) {
-          closure_1_6(closure_2_20);
-        } else {
-          closure_1_6(arg0);
-        }
-      }, items, undefined, obj);
-      return tmp2;
-    };
-    cResult[0] = guildId;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
+const memoResult = react.memo(function GuildChannelUserList(searchable) {
+  let canShowDisplayNameStylesFont;
+  let channelId;
+  let disableBottomSafeZone;
+  let disableStickySections;
+  let disableThemedGradient;
+  let inActionSheet;
+  let insetEnd;
+  let items17;
+  let listActionHeight;
+  let listActionRenderer;
+  let listStyleOverride;
+  let mapped;
+  let obj8;
+  let obj9;
+  let searchableEmptyState;
+  let tmp29;
+  let flag = searchable.searchable;
+  if (flag === undefined) {
+    flag = false;
   }
-  const first1 = tmp3(obj2.useState(tmp7), 1)[0];
-  if (cResult[2] === first1) {
-    let tmp9;
-    let tmp10;
-    let tmp12;
-    if (cResult[3] === searchable) {
-      tmp9 = cResult[4];
-      tmp10 = cResult[5];
-    }
-    const effect = obj2.useEffect(tmp9, tmp10);
-    if (cResult[6] !== str) {
-      const trimmed = str.trim();
-      cResult[6] = str;
-      cResult[7] = trimmed;
-      tmp12 = trimmed;
-    } else {
-      tmp12 = cResult[7];
-    }
-    let closure_8 = tmp14;
-    [tmp16, ChannelMemberStore] = _slicedToArray(obj2.useState(searchable), 2);
-    _slicedToArray(obj2.useState(searchable), 2);
-    if (cResult[8] === "" !== tmp12) {
-      let tmp17;
-      let tmp18;
-      let tmp20;
-      if (cResult[9] === queryResults) {
-        tmp17 = cResult[10];
-        tmp18 = cResult[11];
-      }
-      const effect1 = obj2.useEffect(tmp17, tmp18);
-      if (cResult[12] !== listRef) {
-        const fn2 = function w() {
-          const current = listRef.current;
-          if (current != null) {
-            current.scrollToTop(false);
-          }
-        };
-        cResult[12] = listRef;
-        cResult[13] = fn2;
-        tmp20 = fn2;
-      } else {
-        tmp20 = cResult[13];
-      }
-      if (cResult[14] === listRef) {
-        let tmp21;
-        if (cResult[15] === str) {
-          tmp21 = cResult[16];
-        }
-        const layoutEffect = obj2.useLayoutEffect(tmp20, tmp21);
-        if (cResult[17] === first1) {
-          let tmp23;
-          if (cResult[18] === guildId) {
-            tmp23 = cResult[19];
-          }
-          if (cResult[20] === tmp16) {
-            if (cResult[21] === str) {
-              if (cResult[22] === searchable) {
-                let tmp24;
-                if (cResult[23] === searchableEmptyState) {
-                  tmp24 = cResult[24];
-                }
-                if (cResult[25] === "" !== tmp12) {
-                  if (cResult[26] === tmp23) {
-                    if (cResult[27] === queryResults) {
-                      let tmp27;
-                      if (cResult[28] === tmp24) {
-                        tmp27 = cResult[29];
-                      }
-                      return tmp27;
-                    }
-                  }
-                }
-                const obj3 = { hasQuery: "" !== tmp12, queryResults, onChangeText: tmp23, searchBarRef: ref, searchBarEmptyState: tmp24 };
-                class O {
-                  constructor() {
-                    let closure_0;
-                    if (first.length <= 0) {
-                      const tmp = closure_8;
-                      if (tmp) {
-                        const _setTimeout = setTimeout;
-                        const timeout = setTimeout(() => {
-                          closure_1_9(false);
-                        }, 300);
-                        return () => {
-                          clearTimeout(closure_0);
-                        };
-                      }
-                    }
-                    closure_9(true);
-                  }
-                }
-                cResult[26] = tmp23;
-                cResult[27] = queryResults;
-                cResult[28] = tmp24;
-                cResult[29] = obj3;
-                tmp27 = obj3;
-              }
-            }
-          }
-          let tmp25 = null;
-          if (searchable) {
-            tmp25 = null;
-            if (!tmp16) {
-              let searchableEmptyStateResult;
-              if (searchableEmptyState != null) {
-                searchableEmptyStateResult = searchableEmptyState(str);
-              }
-              tmp25 = searchableEmptyStateResult;
-            }
-          }
-          cResult[20] = tmp16;
-          cResult[21] = str;
-          class O {
-            constructor() {
-              let closure_0;
-              if (first.length <= 0) {
-                const tmp = closure_8;
-                if (tmp) {
-                  const _setTimeout = setTimeout;
-                  const timeout = setTimeout(() => {
-                    closure_1_9(false);
-                  }, 300);
-                  return () => {
-                    clearTimeout(closure_0);
-                  };
-                }
-              }
-              closure_9(true);
-            }
-          }
-          cResult[23] = searchableEmptyState;
-          cResult[24] = tmp25;
-          tmp24 = tmp25;
-        }
-        const fn3 = function k(str) {
-          first1.search(str);
-          _slicedToArray(str);
-          if ("" !== str.trim()) {
-            const obj = GuildUtilsDefault;
-            const members = obj.requestMembers(guildId, str);
-          }
-        };
-        cResult[17] = first1;
-        cResult[18] = guildId;
-        class O {
-          constructor() {
-            let closure_0;
-            if (first.length <= 0) {
-              const tmp = closure_8;
-              if (tmp) {
-                const _setTimeout = setTimeout;
-                const timeout = setTimeout(() => {
-                  closure_1_9(false);
-                }, 300);
-                return () => {
-                  clearTimeout(closure_0);
-                };
-              }
-            }
-            closure_9(true);
-          }
-        }
-        tmp23 = fn3;
-      }
-      let items = [listRef, str];
-      cResult[14] = listRef;
-      class O {
-        constructor() {
-          let closure_0;
-          if (first.length <= 0) {
-            const tmp = closure_8;
-            if (tmp) {
-              const _setTimeout = setTimeout;
-              const timeout = setTimeout(() => {
-                closure_1_9(false);
-              }, 300);
-              return () => {
-                clearTimeout(closure_0);
-              };
-            }
-          }
-          closure_9(true);
-        }
-      }
-      cResult[15] = str;
-      cResult[16] = items;
-      tmp21 = items;
-    }
-    class O {
-      constructor() {
-        let closure_0;
-        if (first.length <= 0) {
-          const tmp = closure_8;
-          if (tmp) {
-            const _setTimeout = setTimeout;
-            const timeout = setTimeout(() => {
-              closure_1_9(false);
-            }, 300);
-            return () => {
-              clearTimeout(closure_0);
-            };
-          }
-        }
-        closure_9(true);
-      }
-    }
-    const items1 = [queryResults, "" !== tmp12];
-    cResult[8] = "" !== tmp12;
-    cResult[9] = queryResults;
-    cResult[10] = O;
-    cResult[11] = items1;
-    tmp18 = items1;
-    tmp17 = O;
+  ({ searchableEmptyState, channelId } = searchable);
+  let guildId = searchable.guildId;
+  const roleId = searchable.roleId;
+  let flag2 = searchable.headerShown;
+  if (flag2 === undefined) {
+    flag2 = true;
   }
-  class E {
-    constructor() {
-      const tmp = searchable;
-      if (tmp) {
-        const searchContext = first1.createSearchContext();
-      } else {
-        _slicedToArray("");
-        first1.clean();
-        const current = ref.current;
-        if (current != null) {
-          current.setText("");
-        }
-      }
-    }
+  const onUserPress = searchable.onUserPress;
+  const onUserLongPress = searchable.onUserLongPress;
+  let flag3 = searchable.opensUserProfileOnUserPress;
+  if (flag3 === undefined) {
+    flag3 = true;
   }
-  const items2 = [searchable, first1];
-  cResult[2] = first1;
-  cResult[3] = searchable;
-  cResult[4] = E;
-  cResult[5] = items2;
-  tmp10 = items2;
-  tmp9 = E;
-}) : (function useSearchableConfig(guildId) {
-  guildId = guildId.guildId;
-  const listRef = guildId.listRef;
-  const searchable = guildId.searchable;
-  const searchableEmptyState = guildId.searchableEmptyState;
-  let str;
-  const ref = str.useRef(null);
-  let tmp2 = ref(str.useState(""), 2);
-  str = tmp2[0];
-  let closure_6 = tmp2[1];
-  const tmp3 = ref(str.useState(closure_20), 2);
-  const queryResults = tmp3[0];
-  let closure_8 = tmp3[1];
-  const first1 = ref(str.useState(() => {
+  const isNameplatedList = searchable.isNameplatedList;
+  ({ canShowDisplayNameStylesFont, disableStickySections, inActionSheet, disableThemedGradient, listStyleOverride, disableBottomSafeZone, insetEnd } = searchable);
+  if (canShowDisplayNameStylesFont === undefined) {
+    canShowDisplayNameStylesFont = false;
+  }
+  let stateFromStoresArray;
+  closure_20 = undefined;
+  let memo3;
+  let tmp2 = onUserPress;
+  let tmp = guildId;
+  const analyticsLocations = guildId(onUserPress[15])().analyticsLocations;
+  let obj = flag3;
+  const ref = flag3.useRef(null);
+  const ref1 = flag3.useRef(null);
+  let tmp5 = onUserLongPress(flag3.useState(""), 2);
+  let str = tmp5[0];
+  let tmp6 = onUserLongPress(flag3.useState(closure_20), 2);
+  const first = tmp6[0];
+  let closure_8 = tmp6[1];
+  const first1 = onUserLongPress(flag3.useState(() => {
     let obj2;
-    const tmp = _modDef9103;
-    const items = [_mod9103.AutocompleterResultTypes.USER];
+    const tmp = guildId(onUserPress[11]);
+    const items = [channelId(onUserPress[11]).AutocompleterResultTypes.USER];
     const obj = { userFilters: obj2 };
     obj2 = { guild: guildId, strict: true };
     const tmp2 = new tmp((arg0, str) => {
@@ -346,27 +104,27 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSea
     }, items, undefined, obj);
     return tmp2;
   }), 1)[0];
-  let items = [searchable, first1];
-  const effect = str.useEffect(() => {
-    const tmp = searchable;
+  let items = [flag, first1];
+  const effect = flag3.useEffect(() => {
+    const tmp = flag;
     if (tmp) {
       const searchContext = first1.createSearchContext();
     } else {
       closure_6("");
       first1.clean();
-      const current = ref.current;
+      const current = ref1.current;
       if (current != null) {
         current.setText("");
       }
     }
   }, items);
-  const tmp7 = "" !== str.trim();
-  let closure_10 = tmp7;
-  const tmp8 = ref(str.useState(searchable), 2);
-  const first2 = tmp8[0];
-  let closure_12 = tmp8[1];
-  const items1 = [queryResults, tmp7];
-  const effect1 = str.useEffect(() => {
+  let tmp10 = "" !== str.trim();
+  let closure_10 = tmp10;
+  let tmp11 = onUserLongPress(flag3.useState(flag), 2);
+  const first2 = tmp11[0];
+  let closure_12 = tmp11[1];
+  const items1 = [first, tmp10];
+  const effect1 = flag3.useEffect(() => {
     let closure_0;
     if (first.length <= 0) {
       const tmp = closure_10;
@@ -382,509 +140,41 @@ let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSea
     }
     closure_12(true);
   }, items1);
-  const items2 = [listRef, str];
-  const layoutEffect = str.useLayoutEffect(() => {
-    const current = listRef.current;
+  const items2 = [ref, str];
+  const layoutEffect = flag3.useLayoutEffect(() => {
+    const current = ref.current;
     if (current != null) {
       current.scrollToTop(false);
     }
   }, items2);
   const items3 = [first1, guildId];
-  const items4 = [searchable, searchableEmptyState, first2, str];
-  const callback = str.useCallback((str) => {
+  const items4 = [flag, searchableEmptyState, first2, str];
+  const callback = flag3.useCallback((str) => {
     first1.search(str);
     closure_6(str);
     if ("" !== str.trim()) {
-      const obj = GuildUtilsDefault;
+      const obj = guildId(onUserPress[12]);
       const members = obj.requestMembers(guildId, str);
     }
   }, items3);
-  let obj = {
-    hasQuery: tmp7,
-    queryResults,
-    onChangeText: callback,
-    searchBarRef: ref,
-    searchBarEmptyState: str.useMemo(() => {
-      let tmp = null;
-      if (searchable) {
-        tmp = null;
-        if (!first2) {
-          let tmp3Result;
-          if (searchableEmptyState != null) {
-            tmp3Result = tmp3(str);
-          }
-          tmp = tmp3Result;
+  let closure_9 = tmp10;
+  const memo = flag3.useMemo(() => {
+    let tmp = null;
+    if (flag) {
+      tmp = null;
+      if (!first2) {
+        let tmp3Result;
+        if (searchableEmptyState != null) {
+          tmp3Result = tmp3(str);
         }
+        tmp = tmp3Result;
       }
-      return tmp;
-    }, items4)
-  };
-  return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildChannelUserList(guildId) {
-  let channelId;
-  let disableBottomSafeZone;
-  let disableStickySections;
-  let disableThemedGradient;
-  let headerShown;
-  let inActionSheet;
-  let insetEnd;
-  let isNameplatedList;
-  let length;
-  let listActionHeight;
-  let listActionRenderer;
-  let listStyleOverride;
-  let onChangeText;
-  let onUserPress;
-  let opensUserProfileOnUserPress;
-  let queryResults;
-  let searchBarEmptyState;
-  let searchBarRef;
-  let searchable;
-  let searchableEmptyState;
-  let stateFromStores1;
-  let tmp40;
-  let tmp41;
-  let tmp = channelId;
-  let tmp2 = onUserPress;
-  let obj = channelId(onUserPress[12]);
-  const cResult = obj.c(96);
-  ({ searchable, searchableEmptyState, channelId } = guildId);
-  guildId = guildId.guildId;
-  const roleId = guildId.roleId;
-  ({ headerShown, onUserPress } = guildId);
-  const onUserLongPress = guildId.onUserLongPress;
-  ({ opensUserProfileOnUserPress, disableStickySections, inActionSheet, disableThemedGradient, listStyleOverride, disableBottomSafeZone, insetEnd, isNameplatedList } = guildId);
-  let canShowDisplayNameStylesFont = guildId.canShowDisplayNameStylesFont;
-  let tmp4 = undefined !== searchable && searchable;
-  let tmp5 = undefined === headerShown || headerShown;
-  let closure_6 = undefined === opensUserProfileOnUserPress || opensUserProfileOnUserPress;
-  canShowDisplayNameStylesFont = undefined !== canShowDisplayNameStylesFont && canShowDisplayNameStylesFont;
-  let tmp6 = guildId;
-  const analyticsLocations = guildId(tmp2[17])().analyticsLocations;
-  let obj2 = isNameplatedList;
-  const ref = isNameplatedList.useRef(null);
-  if (cResult[0] === guildId) {
-    if (cResult[1] === tmp4) {
-      let tmp8;
-      let tmp12;
-      if (cResult[2] === searchableEmptyState) {
-        tmp8 = cResult[3];
-      }
-      let tmp9 = closure_21;
-      let tmp10 = closure_21(tmp8);
-      const hasQuery = tmp10.hasQuery;
-      ({ onChangeText, queryResults, searchBarRef, searchBarEmptyState } = tmp10);
-      let tmp11 = globalThis;
-      const _Symbol = Symbol;
-      let str = "react.memo_cache_sentinel";
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        let tmp13 = hasQuery;
-        const items = [hasQuery];
-        cResult[4] = items;
-        tmp12 = items;
-      } else {
-        tmp12 = cResult[4];
-      }
-      if (cResult[5] === channelId) {
-        let tmp14;
-        let tmp16;
-        let tmp18;
-        let tmp21;
-        let tmp20;
-        let tmp25;
-        if (cResult[6] === guildId) {
-          tmp14 = cResult[7];
-        }
-        const tmpResult = tmp(tmp2[18]);
-        const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp12, tmp14);
-        const groups = stateFromStoresObject.groups;
-        const rows = stateFromStoresObject.rows;
-        const _Symbol2 = Symbol;
-        if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const items1 = [groups];
-          let num5 = 8;
-          cResult[8] = items1;
-          tmp16 = items1;
-        } else {
-          tmp16 = cResult[8];
-        }
-        if (cResult[9] !== channelId) {
-          function te() {
-            if (channelId !== metroImportDefault) {
-              return ChannelStore.getChannel(tmp);
-            }
-          }
-          cResult[9] = channelId;
-          cResult[10] = te;
-          tmp18 = te;
-        } else {
-          tmp18 = cResult[10];
-        }
-        const tmpResult3 = tmp(tmp2[18]);
-        const stateFromStores = tmpResult3.useStateFromStores(tmp16, tmp18);
-        const _Symbol3 = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const items2 = [stateFromStores1];
-          function ae() {
-            return stateFromStores1.getChannelId();
-          }
-          cResult[11] = items2;
-          cResult[12] = ae;
-          tmp21 = ae;
-          tmp20 = items2;
-        } else {
-          tmp20 = cResult[11];
-          tmp21 = cResult[12];
-        }
-        const tmpResult4 = tmp(tmp2[18]);
-        stateFromStores1 = tmpResult4.useStateFromStores(tmp20, tmp21);
-        const tmp24 = tmp6(tmp2[19])();
-        if (cResult[13] !== guildId) {
-          const guild = stateFromStores.getGuild(guildId);
-          let guildVisualOwnerId;
-          if (null != guild) {
-            const obj7 = roleId(tmp2[20]);
-            guildVisualOwnerId = obj7.getGuildVisualOwnerId(guild);
-          }
-          cResult[13] = guildId;
-          cResult[14] = guildVisualOwnerId;
-          tmp25 = guildVisualOwnerId;
-        } else {
-          tmp25 = cResult[14];
-        }
-        let user = tmp25;
-        const ref1 = obj2.useRef(0);
-        const ref2 = obj2.useRef(0);
-        if (cResult[15] === channelId) {
-          if (cResult[16] === guildId) {
-            if (cResult[17] === hasQuery) {
-              let tmp32;
-              if (cResult[18] === tmp24) {
-                tmp32 = cResult[19];
-              }
-              const guildId2 = tmp32.guildId;
-              const channelId2 = tmp32.channelId;
-              const hasQuery2 = tmp32.hasQuery;
-              const listRef = tmp32.listRef;
-              const scrollOffsetRef = tmp32.scrollOffsetRef;
-              const heightRef = tmp32.heightRef;
-              const scaledRowHeight = tmp32.scaledRowHeight;
-              const items3 = [channelId2, guildId2, hasQuery2, scaledRowHeight, heightRef, listRef, scrollOffsetRef];
-              const memo = obj2.useMemo(() => {
-                let ref3;
-                let rowHeight;
-                return guildId(onUserPress[15])(() => {
-                  let tmp = null == ref.current || hasQuery;
-                  if (!tmp) {
-                    tmp = channelId !== canShowDisplayNameStylesFont && null == channel.getChannel(tmp2);
-                    const tmp4 = channelId !== canShowDisplayNameStylesFont && null == channel.getChannel(tmp2);
-                  }
-                  if (!tmp) {
-                    const obj2 = { guildId, channelId, y: ref2.current, height: ref3.current, rowHeight };
-                    const obj = guildId(ref[16]);
-                    const result = obj.subscribeChannelDimensions(obj2);
-                  }
-                }, 50);
-              }, items3);
-              if (cResult[20] !== memo) {
-                class Se {
-                  constructor(nativeEvent) {
-                    ref1.current = nativeEvent.nativeEvent.layout.height;
-                    memo();
-                  }
-                }
-                cResult[20] = memo;
-                cResult[21] = Se;
-              } else {
-                class Se {
-                  constructor(nativeEvent) {
-                    ref1.current = nativeEvent.nativeEvent.layout.height;
-                    memo();
-                  }
-                }
-              }
-              if (cResult[22] !== memo) {
-                class Se {
-                  constructor(nativeEvent) {
-                    ref1.current = nativeEvent.nativeEvent.layout.height;
-                    memo();
-                  }
-                }
-                cResult[22] = memo;
-                cResult[23] = tmp36;
-              } else {
-                class Se {
-                  constructor(nativeEvent) {
-                    ref1.current = nativeEvent.nativeEvent.layout.height;
-                    memo();
-                  }
-                }
-              }
-              if (cResult[24] === stateFromStores) {
-                class Se {
-                  constructor(nativeEvent) {
-                    ref1.current = nativeEvent.nativeEvent.layout.height;
-                    memo();
-                  }
-                }
-                ({ listActionRenderer, listActionHeight } = tmp6(tmp2[21])(tmp38));
-                tmp6(tmp2[21])(tmp38);
-                if (cResult[27] === stateFromStores) {
-                  class Se {
-                    constructor(nativeEvent) {
-                      ref1.current = nativeEvent.nativeEvent.layout.height;
-                      memo();
-                    }
-                  }
-                  const effect = obj2.useEffect(tmp40, tmp41);
-                  const _Symbol4 = Symbol;
-                  if (cResult[31] === Symbol.for("react.memo_cache_sentinel")) {
-                    class Se {
-                      constructor(nativeEvent) {
-                        ref1.current = nativeEvent.nativeEvent.layout.height;
-                        memo();
-                      }
-                    }
-                    const items4 = [rows, user];
-                    class Ce {
-                      constructor() {
-                        if (null != stateFromStores) {
-                          memo();
-                        }
-                      }
-                    }
-                    class Me {
-                      constructor() {
-                        if (null != roleId) {
-                          let obj = channelId(onUserPress[22]);
-                          const tmp4 = guildId;
-                          if (!obj.isEveryoneRoleId(guildId, tmp)) {
-                            let tmp5 = canShowDisplayNameStylesFont;
-                            let tmp6 = null;
-                            if (closure_0 !== canShowDisplayNameStylesFont) {
-                              tmp6 = closure_0;
-                            }
-                            closure_0 = tmp6;
-                            const members = rows.getMembers(tmp4);
-                            const found = members.filter((roles) => {
-                              roles = roles.roles;
-                              const hasItem = roles.includes(roleId) && null != user.getUser(roles.userId);
-                              return hasItem;
-                            });
-                            return found.sort((userId, userId2) => {
-                              user = UserStore.getUser(userId.userId);
-                              const user1 = UserStore.getUser(userId2.userId);
-                              const obj = NicknameUtilsDefault;
-                              let str = obj.getNickname(guildId, closure_0, user);
-                              const tmp5 = guildId;
-                              const tmp6 = closure_0;
-                              if (str == null) {
-                                const tmp3Result = UserUtilsDefault;
-                                str = tmp3Result.getGlobalName(user);
-                              }
-                              const tmp3Result3 = NicknameUtilsDefault;
-                              let str2 = tmp3Result3.getNickname(tmp5, tmp6, user1);
-                              if (str2 == null) {
-                                const tmp3Result4 = UserUtilsDefault;
-                                str2 = tmp3Result4.getGlobalName(user1);
-                              }
-                              if (str == null) {
-                                str = "";
-                              }
-                              const localeCompare = str.localeCompare;
-                              if (str2 == null) {
-                                str2 = "";
-                              }
-                              return localeCompare(str2);
-                            });
-                          }
-                        }
-                        return [];
-                      }
-                    }
-                  } else {
-                    class Se {
-                      constructor(nativeEvent) {
-                        ref1.current = nativeEvent.nativeEvent.layout.height;
-                        memo();
-                      }
-                    }
-                  }
-                  class Ce {
-                    constructor() {
-                      if (null != stateFromStores) {
-                        memo();
-                      }
-                    }
-                  }
-                  class Me {
-                    constructor() {
-                      if (null != roleId) {
-                        let obj = channelId(onUserPress[22]);
-                        const tmp4 = guildId;
-                        if (!obj.isEveryoneRoleId(guildId, tmp)) {
-                          let tmp5 = canShowDisplayNameStylesFont;
-                          let tmp6 = null;
-                          if (closure_0 !== canShowDisplayNameStylesFont) {
-                            tmp6 = closure_0;
-                          }
-                          closure_0 = tmp6;
-                          const members = rows.getMembers(tmp4);
-                          const found = members.filter((roles) => {
-                            roles = roles.roles;
-                            const hasItem = roles.includes(roleId) && null != user.getUser(roles.userId);
-                            return hasItem;
-                          });
-                          return found.sort((userId, userId2) => {
-                            user = UserStore.getUser(userId.userId);
-                            const user1 = UserStore.getUser(userId2.userId);
-                            const obj = NicknameUtilsDefault;
-                            let str = obj.getNickname(guildId, closure_0, user);
-                            const tmp5 = guildId;
-                            const tmp6 = closure_0;
-                            if (str == null) {
-                              const tmp3Result = UserUtilsDefault;
-                              str = tmp3Result.getGlobalName(user);
-                            }
-                            const tmp3Result3 = NicknameUtilsDefault;
-                            let str2 = tmp3Result3.getNickname(tmp5, tmp6, user1);
-                            if (str2 == null) {
-                              const tmp3Result4 = UserUtilsDefault;
-                              str2 = tmp3Result4.getGlobalName(user1);
-                            }
-                            if (str == null) {
-                              str = "";
-                            }
-                            const localeCompare = str.localeCompare;
-                            if (str2 == null) {
-                              str2 = "";
-                            }
-                            return localeCompare(str2);
-                          });
-                        }
-                      }
-                      return [];
-                    }
-                  }
-                  cResult[32] = channelId;
-                  cResult[33] = guildId;
-                  cResult[34] = roleId;
-                  cResult[35] = Me;
-                }
-                class Ce {
-                  constructor() {
-                    if (null != stateFromStores) {
-                      memo();
-                    }
-                  }
-                }
-                tmp42[0] = stateFromStores;
-                tmp42[1] = memo;
-                cResult[27] = stateFromStores;
-                cResult[28] = memo;
-                cResult[29] = Ce;
-                cResult[30] = tmp42;
-                tmp40 = Ce;
-                tmp41 = tmp42;
-              }
-              const obj3 = { channel: stateFromStores, disable: tmp37 };
-              cResult[24] = stateFromStores;
-              cResult[25] = hasQuery || !tmp5;
-              cResult[26] = obj3;
-            }
-          }
-        }
-        let obj4 = { guildId, channelId, hasQuery, listRef: ref, scrollOffsetRef: ref2, heightRef: ref1, scaledRowHeight: tmp24 };
-        cResult[15] = channelId;
-        cResult[16] = guildId;
-        cResult[17] = hasQuery;
-        cResult[18] = tmp24;
-        cResult[19] = obj4;
-        tmp32 = obj4;
-      }
-      let fn = function $() {
-        let tmp3 = null;
-        const getProps = ChannelMemberStore.getProps;
-        const tmp2 = guildId;
-        if (channelId !== metroImportDefault) {
-          tmp3 = channelId;
-        }
-        return getProps(tmp2, tmp3);
-      };
-      cResult[5] = channelId;
-      let num3 = 6;
-      cResult[6] = guildId;
-      let num4 = 7;
-      cResult[7] = fn;
-      tmp14 = fn;
     }
-  }
-  let obj5 = { guildId, listRef: ref, searchable: tmp4, searchableEmptyState };
-  cResult[0] = guildId;
-  cResult[1] = tmp4;
-  cResult[2] = searchableEmptyState;
-  cResult[3] = obj5;
-  tmp8 = obj5;
-}) : (function GuildChannelUserList(searchable) {
-  let canShowDisplayNameStylesFont;
-  let disableBottomSafeZone;
-  let disableStickySections;
-  let disableThemedGradient;
-  let headerShown;
-  let inActionSheet;
-  let insetEnd;
-  let items12;
-  let listActionHeight;
-  let listActionRenderer;
-  let listStyleOverride;
-  let mapped;
-  let obj8;
-  let obj9;
-  let onChangeText;
-  let searchBarEmptyState;
-  let searchBarRef;
-  let searchableEmptyState;
-  let tmp17;
-  let flag = searchable.searchable;
-  if (flag === undefined) {
-    flag = false;
-  }
-  const channelId = searchable.channelId;
-  let guildId = searchable.guildId;
-  const roleId = searchable.roleId;
-  ({ headerShown, searchableEmptyState } = searchable);
-  if (headerShown === undefined) {
-    headerShown = true;
-  }
-  const onUserPress = searchable.onUserPress;
-  const onUserLongPress = searchable.onUserLongPress;
-  let flag2 = searchable.opensUserProfileOnUserPress;
-  if (flag2 === undefined) {
-    flag2 = true;
-  }
-  const isNameplatedList = searchable.isNameplatedList;
-  ({ canShowDisplayNameStylesFont, disableStickySections, inActionSheet, disableThemedGradient, listStyleOverride, disableBottomSafeZone, insetEnd } = searchable);
-  if (canShowDisplayNameStylesFont === undefined) {
-    canShowDisplayNameStylesFont = false;
-  }
-  let stateFromStoresArray;
-  closure_20 = undefined;
-  let memo2;
-  let tmp2 = onUserPress;
-  let tmp = guildId;
-  const analyticsLocations = guildId(onUserPress[17])().analyticsLocations;
-  let obj = flag2;
-  const ref = flag2.useRef(null);
-  let tmp4 = memo2({ guildId, listRef: ref, searchable: flag, searchableEmptyState });
-  const hasQuery = tmp4.hasQuery;
-  const queryResults = tmp4.queryResults;
-  let tmp5 = channelId;
-  ({ onChangeText, searchBarRef, searchBarEmptyState } = tmp4);
-  let obj2 = channelId(onUserPress[18]);
-  const items = [hasQuery];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
+    return tmp;
+  }, items4);
+  let obj2 = channelId(onUserPress[16]);
+  const items5 = [closure_9];
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items5, () => {
     let tmp3 = null;
     const getProps = ChannelMemberStore.getProps;
     const tmp2 = guildId;
@@ -895,19 +185,19 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   });
   const groups = stateFromStoresObject.groups;
   const rows = stateFromStoresObject.rows;
-  const obj3 = channelId(onUserPress[18]);
-  const items1 = [queryResults];
-  const stateFromStores = obj3.useStateFromStores(items1, () => {
+  const obj3 = channelId(onUserPress[16]);
+  const items6 = [first];
+  const stateFromStores = obj3.useStateFromStores(items6, () => {
     if (channelId !== metroImportDefault) {
       return ChannelStore.getChannel(tmp);
     }
   });
-  let obj4 = channelId(onUserPress[18]);
-  const items2 = [stateFromStores];
-  const stateFromStores1 = obj4.useStateFromStores(items2, () => stateFromStores.getChannelId());
-  let tmp9 = guildId(onUserPress[19])();
-  const items3 = [guildId];
-  const memo = flag2.useMemo(() => {
+  let obj4 = channelId(onUserPress[16]);
+  const items7 = [stateFromStores];
+  const stateFromStores1 = obj4.useStateFromStores(items7, () => stateFromStores.getChannelId());
+  const tmp21 = guildId(onUserPress[17])();
+  const items8 = [guildId];
+  const memo1 = flag3.useMemo(() => {
     const guild = GuildStore.getGuild(guildId);
     let guildVisualOwnerId;
     if (null != guild) {
@@ -915,56 +205,56 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       guildVisualOwnerId = obj.getGuildVisualOwnerId(guild);
     }
     return guildVisualOwnerId;
-  }, items3);
-  const ref1 = flag2.useRef(0);
-  const ref2 = flag2.useRef(0);
-  let closure_6 = tmp9;
-  const items4 = [channelId, guildId, hasQuery, tmp9, ref1, ref, ref2];
-  const memo1 = flag2.useMemo(() => {
-    let ref3;
+  }, items8);
+  const ref2 = flag3.useRef(0);
+  const ref3 = flag3.useRef(0);
+  let closure_2 = tmp10;
+  let closure_6 = tmp21;
+  const items9 = [channelId, guildId, tmp10, tmp21, ref2, ref, ref3];
+  const memo2 = flag3.useMemo(() => {
     let rowHeight;
-    return guildId(onUserPress[15])(() => {
-      let tmp = null == ref.current || hasQuery;
+    return guildId(onUserPress[13])(() => {
+      let tmp = null == ref.current || closure_1_2;
       if (!tmp) {
         tmp = channelId !== canShowDisplayNameStylesFont && null == channel.getChannel(tmp2);
         const tmp4 = channelId !== canShowDisplayNameStylesFont && null == channel.getChannel(tmp2);
       }
       if (!tmp) {
         const obj2 = { guildId, channelId, y: ref2.current, height: ref3.current, rowHeight };
-        const obj = guildId(ref[16]);
+        const obj = guildId(ref[14]);
         const result = obj.subscribeChannelDimensions(obj2);
       }
     }, 50);
-  }, items4);
-  const items5 = [memo1];
-  const items6 = [memo1];
-  const callback = flag2.useCallback((nativeEvent) => {
-    ref1.current = nativeEvent.nativeEvent.layout.height;
-    memo1();
-  }, items5);
-  const callback1 = flag2.useCallback((nativeEvent) => {
-    ref2.current = nativeEvent.nativeEvent.contentOffset.y;
-    memo1();
-  }, items6);
-  let obj5 = { channel: stateFromStores, disable: tmp17 };
-  tmp17 = hasQuery;
-  const tmp16 = guildId(onUserPress[21]);
-  if (!hasQuery) {
-    tmp17 = !headerShown;
+  }, items9);
+  const items10 = [memo2];
+  const items11 = [memo2];
+  const callback1 = flag3.useCallback((nativeEvent) => {
+    ref2.current = nativeEvent.nativeEvent.layout.height;
+    memo2();
+  }, items10);
+  const callback2 = flag3.useCallback((nativeEvent) => {
+    ref3.current = nativeEvent.nativeEvent.contentOffset.y;
+    memo2();
+  }, items11);
+  let obj5 = { channel: stateFromStores, disable: tmp29 };
+  tmp29 = tmp10;
+  const tmp28 = guildId(onUserPress[19]);
+  if (!tmp10) {
+    tmp29 = !flag2;
   }
-  const items7 = [stateFromStores, memo1];
-  ({ listActionRenderer, listActionHeight } = tmp16(obj5));
-  tmp16(obj5);
-  const effect = obj.useEffect(() => {
+  const items12 = [stateFromStores, memo2];
+  ({ listActionRenderer, listActionHeight } = tmp28(obj5));
+  tmp28(obj5);
+  const effect2 = obj.useEffect(() => {
     if (null != stateFromStores) {
-      memo1();
+      memo2();
     }
-  }, items7);
-  const items8 = [groups, stateFromStores1];
-  const tmp5Result = tmp5(tmp2[18]);
-  stateFromStoresArray = tmp5Result.useStateFromStoresArray(items8, () => {
+  }, items12);
+  const items13 = [groups, stateFromStores1];
+  const tmp17Result = channelId(tmp2[16]);
+  stateFromStoresArray = tmp17Result.useStateFromStoresArray(items13, () => {
     if (null != roleId) {
-      let obj = channelId(onUserPress[22]);
+      let obj = channelId(onUserPress[20]);
       const tmp4 = guildId;
       if (!obj.isEveryoneRoleId(guildId, tmp)) {
         let tmp5 = canShowDisplayNameStylesFont;
@@ -1009,20 +299,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     return [];
   });
-  let tmp20 = null != roleId;
-  if (tmp20) {
-    const tmp5Result2 = tmp5(tmp2[22]);
-    tmp20 = !tmp5Result2.isEveryoneRoleId(guildId, roleId);
+  let tmp32 = null != roleId;
+  if (tmp32) {
+    const tmp17Result2 = channelId(tmp2[20]);
+    tmp32 = !tmp17Result2.isEveryoneRoleId(guildId, roleId);
   }
-  closure_20 = tmp20;
-  const items9 = [guildId, roleId, tmp20, hasQuery, queryResults];
-  memo2 = obj.useMemo(() => {
+  closure_20 = tmp32;
+  const items14 = [guildId, roleId, tmp32, tmp10, first];
+  memo3 = obj.useMemo(() => {
     const tmp = closure_20;
     if (tmp) {
       let found;
-      const tmp2 = hasQuery;
+      const tmp2 = closure_9;
       if (tmp2) {
-        found = queryResults.filter((record) => {
+        found = first.filter((record) => {
           const member = groups.getMember(guildId, record.record.id);
           let found;
           if (member != null) {
@@ -1036,17 +326,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       return found;
     }
-    found = queryResults;
-  }, items9);
-  const items10 = [groups, memo2, tmp20];
-  const items11 = [tmp20, stateFromStoresArray, memo2, hasQuery, guildId, rows, groups, memo, onUserPress, flag2, channelId, stateFromStores1, onUserLongPress, analyticsLocations, isNameplatedList, canShowDisplayNameStylesFont];
-  const callback2 = obj.useCallback((arg0) => {
+    found = first;
+  }, items14);
+  const items15 = [groups, memo3, tmp32];
+  const items16 = [tmp32, stateFromStoresArray, memo3, tmp10, guildId, rows, groups, memo1, onUserPress, flag3, channelId, stateFromStores1, onUserLongPress, analyticsLocations, isNameplatedList, canShowDisplayNameStylesFont];
+  const callback3 = obj.useCallback((arg0) => {
     let count;
     let intl;
     let obj;
     let obj2;
     let title;
-    if (memo2.length > 0) {
+    if (memo3.length > 0) {
       const element = { type: "section", props: obj };
       obj = { title: intl.string(intl2.t["zkoeq/"]) };
       intl = intl2.intl;
@@ -1058,7 +348,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (null != title) {
           if (0 !== count) {
             let element1;
-            if (tmp3 === ref1.UNKNOWN) {
+            if (tmp3 === ref2.UNKNOWN) {
               element1 = { type: "placeholder" };
             } else {
               element1 = { type: "section", props: obj2 };
@@ -1070,9 +360,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-  }, items10);
-  let tmp23Result = null;
-  const callback3 = obj.useCallback((arg0, arg1) => {
+  }, items15);
+  let tmp35Result = null;
+  const callback4 = obj.useCallback((arg0, arg1) => {
     let closure_1;
     let colorString;
     let colorStrings;
@@ -1090,7 +380,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     guildId = arg1;
     const tmp = closure_20;
     if (tmp) {
-      let tmp2 = hasQuery;
+      let tmp2 = closure_9;
       if (!tmp2) {
         if (arg1 < stateFromStoresArray.length) {
           let tmp5 = stateFromStores1;
@@ -1107,7 +397,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const memberListMember = tmp3.memberListMember;
         ({ guildMember, comparator: comparator2 } = tmp3);
         let obj2 = {
-          type: memo.NONE,
+          type: memo1.NONE,
           user,
           nickname: nick,
           usernameColor: colorString,
@@ -1124,7 +414,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   const tmp2 = closure_20;
                   if (!tmp2) {
                     let sum;
-                    const tmp3 = hasQuery;
+                    const tmp3 = closure_9;
                     if (!tmp3) {
                       let num3 = 0;
                       let num4 = 0;
@@ -1143,7 +433,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
                   }
                   sum = closure_1;
                 }
-                const tmp10 = flag2;
+                const tmp10 = flag3;
                 if (tmp10) {
                   const obj2 = { userId: user.id, channelId: channelId !== metroImportDefault ? channelId : stateFromStores1, roleId: colorRoleId, sourceAnalyticsLocations: analyticsLocations };
                   colorRoleId = undefined;
@@ -1209,7 +499,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         if (null != memberListMember) {
           isOwner = memberListMember.isOwner;
         } else {
-          isOwner = memo === user.id;
+          isOwner = memo1 === user.id;
         }
         fn = undefined;
         if (null != onUserLongPress) {
@@ -1218,7 +508,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const tmp2 = closure_20;
             if (!tmp2) {
               let sum;
-              const tmp3 = hasQuery;
+              const tmp3 = closure_9;
               if (!tmp3) {
                 let num3 = 0;
                 let num4 = 0;
@@ -1246,13 +536,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         return element1;
       }
     }
-    const tmp8 = hasQuery;
+    const tmp8 = closure_9;
     if (tmp8) {
       let num3 = 1;
       let tmp15;
-      const diff = memo2.length - 1;
-      if (arg1 < memo2.length) {
-        tmp15 = memo2[arg1];
+      const diff = memo3.length - 1;
+      if (arg1 < memo3.length) {
+        tmp15 = memo3[arg1];
       }
       if (null != tmp15) {
         const record = tmp15.record;
@@ -1277,53 +567,53 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         }
       }
     }
-  }, items11);
+  }, items16);
   if (flag) {
-    const obj6 = { children: items12 };
-    const obj7 = { style: obj8, children: ref2(tmp5(tmp2[28]).SearchBar, obj9) };
-    obj8 = { marginHorizontal: tmp(tmp2[27]).space.PX_16 };
-    obj9 = { size: "md", onChange: onChangeText, ref: searchBarRef };
-    items12 = [ref2(isNameplatedList, obj7), searchBarEmptyState];
-    tmp23Result = tmp23(tmp24, obj6);
+    const obj6 = { children: items17 };
+    const obj7 = { style: obj8, children: ref3(channelId(tmp2[26]).SearchBar, obj9) };
+    obj8 = { marginHorizontal: tmp(tmp2[25]).space.PX_16 };
+    obj9 = { size: "md", onChange: callback, ref: ref1 };
+    items17 = [ref3(isNameplatedList, obj7), memo];
+    tmp35Result = tmp35(tmp36, obj6);
   }
-  const items13 = [tmp23Result, ];
+  const items18 = [tmp35Result, ];
   const obj10 = { ref, sections: null, getItemProps: null, getSectionProps: null, renderListHeader: null, listHeaderSize: null, onLayout: null, onScroll: null, disableStickySections: null, inActionSheet: null, disableThemedGradient: null, listStyleOverride: null, disableBottomSafeZone: null, insetEnd: null };
-  const tmp28 = ref2;
-  if (tmp20) {
-    let items14;
-    if (!hasQuery) {
-      items14 = [stateFromStoresArray.length];
+  const tmp40 = ref3;
+  if (tmp32) {
+    let items19;
+    if (!tmp10) {
+      items19 = [stateFromStoresArray.length];
     }
-    obj10.sections = items14;
-    obj10.getItemProps = callback3;
-    obj10.getSectionProps = callback2;
+    obj10.sections = items19;
+    obj10.getItemProps = callback4;
+    obj10.getSectionProps = callback3;
     obj10.renderListHeader = listActionRenderer;
     obj10.listHeaderSize = listActionHeight;
-    obj10.onLayout = callback;
-    obj10.onScroll = callback1;
+    obj10.onLayout = callback1;
+    obj10.onScroll = callback2;
     obj10.disableStickySections = disableStickySections;
     obj10.inActionSheet = inActionSheet;
     obj10.disableThemedGradient = disableThemedGradient;
     obj10.listStyleOverride = listStyleOverride;
     obj10.disableBottomSafeZone = disableBottomSafeZone;
     obj10.insetEnd = insetEnd;
-    let str = "guild-channel-user-list";
-    if (hasQuery) {
-      str = "guild-channel-user-list-search-results";
+    let str2 = "guild-channel-user-list";
+    if (tmp10) {
+      str2 = "guild-channel-user-list-search-results";
     }
-    const obj11 = { children: items13 };
-    items13[1] = tmp28(tmp29, obj10, str);
-    return stateFromStoresArray(memo1, obj11);
+    const obj11 = { children: items18 };
+    items18[1] = tmp40(tmp41, obj10, str2);
+    return stateFromStoresArray(memo2, obj11);
   }
-  if (hasQuery) {
-    const items15 = [memo2.length];
-    mapped = items15;
+  if (tmp10) {
+    const items20 = [memo3.length];
+    mapped = items20;
   } else {
     const groups1 = stateFromStoresObject.groups;
     mapped = groups1.map((count) => count.count);
   }
-  items14 = mapped;
-}));
+  items19 = mapped;
+});
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/GuildChannelUserList.tsx");
 
 export default memoResult;

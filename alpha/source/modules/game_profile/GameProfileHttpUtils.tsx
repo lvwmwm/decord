@@ -1,21 +1,21 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9433
+// Function ID: 9434
 // Name: GameProfileHttpUtils
-// Dependencies: [5, 7727, 2066, 9289, 1084, 9417, 584, 6442, 1294, 504, 569, 1101, 9408, 2]
+// Dependencies: [5, 7732, 2063, 9302, 1072, 9434, 572, 6449, 1283, 504, 559, 1090, 9425, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 9416 (GameProfileHttpUtils)
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import StoreUtils from "StoreUtils" /* 6442 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9417 */;
+// Module 9433 (GameProfileHttpUtils)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import StoreUtils from "StoreUtils" /* 6449 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9434 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7727 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import GameProfileStore from "GameProfileStore" /* 9289 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7732 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import GameProfileStore from "GameProfileStore" /* 9302 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _getShopCollection() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _getShopCollection() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           closure_3 = tmp12;
@@ -123,7 +123,7 @@ obj = function _fetchSimilarGames() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -167,11 +167,11 @@ obj = function _fetchSimilarGames() {
             obj = closure_131_1(closure_131_2[6]);
             obj.dispatch(obj7);
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
-        } catch (tmp13) {
+        } catch (tmp17) {
           c5 = 3;
-          throw tmp13;
+          throw tmp17;
         }
       }
     })();
@@ -195,7 +195,7 @@ obj = function _getGameAnnouncements() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -265,7 +265,7 @@ obj = function _getGameAnnouncements() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           closure_6 = tmp21;

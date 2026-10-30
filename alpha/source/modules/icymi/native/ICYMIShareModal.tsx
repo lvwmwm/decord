@@ -1,29 +1,27 @@
-// Module ID: 18463
-// Function ID: 18464
+// Module ID: 18522
+// Function ID: 18523
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4857, 1084, 10684, 5010, 21, 5005, 587, 558, 576, 8942, 1125, 18464, 5701, 5630, 13205, 13217, 5281, 6731, 13184, 1385, 7812, 7624, 1631, 1497, 1381, 13194, 13195, 2]
+// Dependencies: [32, 5, 19, 17, 4858, 1072, 10707, 5014, 21, 5009, 575, 8975, 1114, 18523, 5707, 5602, 13355, 13368, 5629, 6738, 13334, 1380, 7817, 7629, 1626, 1492, 1376, 13344, 13345, 2]
+// Exports: GameShareModal, GuildEventShareModal
 
-// Module 18463 (ICYMIShareModal)
+// Module 18522 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5630 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import ShareEventUtils from "ShareEventUtils" /* 8942 */;
-import UserRowConstants from "UserRowConstants" /* 10684 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 13205 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import ShareEventUtils from "ShareEventUtils" /* 8975 */;
+import UserRowConstants from "UserRowConstants" /* 10707 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 13355 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,458 +29,10 @@ let c1, c2, c5, c6, closure_3;
 
 let closure_12;
 let obj2;
-let tmp9;
+let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp9(13217);
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-const View = react_native.View;
-const AbortCodes = Constants.AbortCodes;
-const UserRowModes = UserRowConstants.UserRowModes;
-const MessageSendLocation = MessageConstants.MessageSendLocation;
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-let obj = { footer: obj2 };
-obj2 = { display: "flex", flexDirection: "row", alignItems: "flex-end", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_13 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventShareModal(event) {
-  const obj = react2;
-  const cResult = obj.c(9);
-  event = event.event;
-  if (cResult[0] === event.guild_id) {
-    let tmp4;
-    let tmp7;
-    let tmp9;
-    if (cResult[1] === event.id) {
-      tmp4 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl3.t["7TVSLK"]);
-      cResult[3] = stringResult;
-      tmp7 = stringResult;
-    } else {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] !== event.channel_id) {
-      let tmp11;
-      if (null != event.channel_id) {
-        tmp11 = { type: "channel", id: event.channel_id };
-        const obj2 = { type: "channel", id: event.channel_id };
-      }
-      cResult[4] = event.channel_id;
-      cResult[5] = tmp11;
-      tmp9 = tmp11;
-    } else {
-      tmp9 = cResult[5];
-    }
-    if (cResult[6] === tmp9) {
-      let tmp12;
-      if (cResult[7] === tmp4) {
-        tmp12 = cResult[8];
-      }
-      return tmp12;
-    }
-    const obj3 = { title: tmp7, originDestinationId: tmp9, linkText: tmp4 };
-    const tmp15 = unpackModuleId(closure_15, obj3);
-    cResult[6] = tmp9;
-    cResult[7] = tmp4;
-    cResult[8] = tmp15;
-    tmp12 = tmp15;
-  }
-  const obj4 = { guildId: event.guild_id, guildEventId: event.id };
-  const tmpResult = ShareEventUtils;
-  const result = tmpResult.SHARE_EVENT_DETAILS_LINK(obj4);
-  cResult[0] = event.guild_id;
-  cResult[1] = event.id;
-  cResult[2] = result;
-  tmp4 = result;
-}) : (function GuildEventShareModal(event) {
-  let intl;
-  let result;
-  let tmp4;
-  event = event.event;
-  const obj3 = { title: intl.string(intl3.t["7TVSLK"]), originDestinationId: tmp4, linkText: result };
-  const obj = ShareEventUtils;
-  const obj2 = { guildId: event.guild_id, guildEventId: event.id };
-  result = obj.SHARE_EVENT_DETAILS_LINK(obj2);
-  intl = intl3.intl;
-  tmp4 = undefined;
-  const tmp2 = unpackModuleId;
-  const tmp3 = closure_15;
-  if (null != event.channel_id) {
-    tmp4 = { type: "channel", id: event.channel_id };
-    const obj4 = { type: "channel", id: event.channel_id };
-  }
-  return tmp2(tmp3, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GameShareModal(content) {
-  let first;
-  let tmp6;
-  const tmp = content;
-  let obj = content(576);
-  const cResult = obj.c(3);
-  content = content.content;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1125).intl;
-    let stringResult = intl.string(tmp(1125).t["59CWHK"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== content) {
-    let obj2 = {
-      title: first,
-      linkText: "",
-      forwardToChannel: function() {
-          return closure_0(...arguments);
-        }
-    };
-    let tmp9 = _asyncToGenerator;
-    let closure_0 = _asyncToGenerator(async (arg0, value) => {
-      let obj6;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        let c4;
-        try {
-          let entry;
-          let closure_1;
-          c6 = 2;
-          if (0 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let closure_2 = tmp;
-              entry = undefined;
-              closure_1 = undefined;
-              c4 = 1;
-              const obj4 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
-              c5 = 2;
-              c6 = 1;
-              const obj5 = { value: obj6.sendMessageWithEmbed(obj4), done: false };
-              obj6 = entry(dependencyMap[15]);
-              return obj5;
-            }
-          } else {
-            if (1 === c5) {
-              let stringResult;
-              c4 = 0;
-              entry = closure_3;
-              const tmp9 = null != entry.body && entry.body.code === constants.CONTENT_INVENTORY_ENTRY_INVALID_PERMISSION;
-              closure_1 = tmp9;
-              const open = ToastActionCreatorsDefault.open;
-              const intl = entry(dependencyMap[14]).intl;
-              const string = intl.string;
-              const t = entry(dependencyMap[14]).t;
-              if (closure_1) {
-                stringResult = string(t.BC5vfD);
-              } else {
-                stringResult = string(t.F8FvUy);
-              }
-              const obj7 = { text: stringResult };
-              open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              c4 = 0;
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp27) {
-          closure_3 = tmp27;
-          if (0 === c4) {
-            c6 = 3;
-            throw tmp27;
-          } else {
-            c5 = 1;
-          }
-        }
-      }
-    });
-    const tmp10 = closure_11(closure_15, obj2);
-    cResult[1] = content;
-    cResult[2] = tmp10;
-    tmp6 = tmp10;
-  } else {
-    tmp6 = cResult[2];
-  }
-  return tmp6;
-}) : (function GameShareModal(content) {
-  let intl;
-  content = content.content;
-  let obj = {
-    title: intl.string(content(1125).t["59CWHK"]),
-    linkText: "",
-    forwardToChannel: function() {
-      return closure_0(...arguments);
-    }
-  };
-  intl = content(1125).intl;
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let obj3;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      let c4;
-      try {
-        let closure_1;
-        let entry;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_2 = tmp;
-            closure_1 = tmp4;
-            entry = undefined;
-            c4 = 1;
-            const obj5 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
-            c5 = 2;
-            c6 = 1;
-            const obj6 = { value: obj3.sendMessageWithEmbed(obj5), done: false };
-            obj3 = entry(dependencyMap[15]);
-            return obj6;
-          }
-        } else {
-          if (1 === c5) {
-            let stringResult;
-            c4 = 0;
-            closure_1 = closure_3;
-            const tmp9 = null != closure_1.body && closure_1.body.code === constants.CONTENT_INVENTORY_ENTRY_INVALID_PERMISSION;
-            entry = tmp9;
-            const open = ToastActionCreatorsDefault.open;
-            const intl = entry(dependencyMap[14]).intl;
-            const string = intl.string;
-            const t = entry(dependencyMap[14]).t;
-            if (entry) {
-              stringResult = string(t.BC5vfD);
-            } else {
-              stringResult = string(t.F8FvUy);
-            }
-            const obj7 = { text: stringResult };
-            open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            c4 = 0;
-          }
-          c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp32) {
-        closure_3 = tmp32;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp32;
-        } else {
-          c5 = 1;
-        }
-      }
-    }
-  });
-  return closure_11(closure_15, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GravityShareFooter(arg0) {
-  let count;
-  let first1;
-  let handleMessageBlur;
-  let handleMessageFocus;
-  let handlePressEmoji;
-  let handleSelectionChange;
-  let isSending;
-  let items;
-  let onSend;
-  let textInputRef;
-  const obj = react2;
-  const cResult = obj.c(29);
-  ({ count, isSending, onSend } = arg0);
-  const tmp4 = closure_13();
-  const tmp5 = _slicedToArray(react.useState(""), 2);
-  const first = tmp5[0];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { includeKeyboardHeight: true };
-    cResult[0] = obj2;
-    first1 = obj2;
-  } else {
-    first1 = cResult[0];
-  }
-  const insets = useSafeAreaInsetsKeyboardAwareDefault(first1).insets;
-  const tmpResult = useShareChatInputActions;
-  const shareChatInputActions = tmpResult.useShareChatInputActions(tmp7);
-  ({ textInputRef, handleSelectionChange, handleMessageFocus, handleMessageBlur, handlePressEmoji } = shareChatInputActions);
-  if (cResult[1] === first) {
-    let tmp11;
-    let tmp12;
-    let tmp15;
-    if (cResult[2] === onSend) {
-      tmp11 = cResult[3];
-    }
-    if (cResult[4] !== count) {
-      let stringResult;
-      if (count <= 1) {
-        const intl2 = tmp(1125).intl;
-        stringResult = intl2.string(tmp(1125).t.TXNS7S);
-      } else {
-        const intl = tmp(1125).intl;
-        const obj3 = { count };
-        stringResult = intl.formatToPlainString(tmp(1125).t.jWtYUm, obj3);
-      }
-      cResult[4] = count;
-      cResult[5] = stringResult;
-      tmp12 = stringResult;
-    } else {
-      tmp12 = cResult[5];
-    }
-    const sum = tmp4.footer.paddingVertical + insets.bottom;
-    if (cResult[6] !== sum) {
-      const obj4 = { paddingBottom: sum };
-      cResult[6] = sum;
-      cResult[7] = obj4;
-      tmp15 = obj4;
-    } else {
-      tmp15 = cResult[7];
-    }
-    if (cResult[8] === tmp4.footer) {
-      let tmp16;
-      if (cResult[9] === tmp15) {
-        tmp16 = cResult[10];
-      }
-      if (0 === count) {
-        return null;
-      } else {
-        if (cResult[11] === handleMessageBlur) {
-          if (cResult[12] === handleMessageFocus) {
-            if (cResult[13] === handlePressEmoji) {
-              if (cResult[14] === handleSelectionChange) {
-                if (cResult[15] === tmp11) {
-                  if (cResult[16] === isSending) {
-                    if (cResult[17] === first) {
-                      let tmp18;
-                      if (cResult[18] === textInputRef) {
-                        tmp18 = cResult[19];
-                      }
-                      let tmp21;
-                      if (!isSending) {
-                        tmp21 = tmp11;
-                      }
-                      if (cResult[20] === isSending) {
-                        if (cResult[21] === tmp12) {
-                          if (cResult[22] === 0 === count) {
-                            let tmp22;
-                            if (cResult[23] === tmp21) {
-                              tmp22 = cResult[24];
-                            }
-                            if (cResult[25] === tmp16) {
-                              if (cResult[26] === tmp22) {
-                                let tmp25;
-                                if (cResult[27] === tmp18) {
-                                  tmp25 = cResult[28];
-                                }
-                                return tmp25;
-                              }
-                            }
-                            const obj5 = { style: tmp16, children: items };
-                            items = [tmp18, tmp22];
-                            const tmp28 = authStore2(View, obj5);
-                            cResult[25] = tmp16;
-                            cResult[26] = tmp22;
-                            cResult[27] = tmp18;
-                            cResult[28] = tmp28;
-                            tmp25 = tmp28;
-                          }
-                        }
-                      }
-                      const obj6 = { variant: "primary", size: "md", text: tmp12, disabled: 0 === count, onPress: tmp21, loading: isSending };
-                      const tmp24 = unpackModuleId(components_Button_Button.Button, obj6);
-                      cResult[20] = isSending;
-                      cResult[21] = tmp12;
-                      cResult[22] = 0 === count;
-                      cResult[23] = tmp21;
-                      cResult[24] = tmp24;
-                      tmp22 = tmp24;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-        const obj7 = { inputRef: textInputRef, text: first, onChange: tmp5[1], onSelectionChange: handleSelectionChange, onFocus: handleMessageFocus, onBlur: handleMessageBlur, onPressEmoji: handlePressEmoji, onSend: tmp11, disabled: isSending };
-        const tmp20 = unpackModuleId(ShareChatInputDefault, obj7);
-        cResult[11] = handleMessageBlur;
-        cResult[12] = handleMessageFocus;
-        cResult[13] = handlePressEmoji;
-        cResult[14] = handleSelectionChange;
-        cResult[15] = tmp11;
-        cResult[16] = isSending;
-        cResult[17] = first;
-        cResult[18] = textInputRef;
-        cResult[19] = tmp20;
-        tmp18 = tmp20;
-      }
-    }
-    const items1 = [tmp4.footer, tmp15];
-    cResult[8] = tmp4.footer;
-    cResult[9] = tmp15;
-    cResult[10] = items1;
-    tmp16 = items1;
-  }
-  const fn = function b() {
-    onSend(first);
-  };
-  cResult[1] = first;
-  cResult[2] = onSend;
-  cResult[3] = fn;
-  tmp11 = fn;
-}) : (function GravityShareFooter(arg0) {
+const ShareChatInputDefault = tmp5(13368);
+function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
   let handleMessageFocus;
@@ -508,12 +58,12 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = tmp7(1125).intl;
-    stringResult = intl2.string(tmp7(1125).t.TXNS7S);
+    const intl2 = tmp7(1114).intl;
+    stringResult = intl2.string(tmp7(1114).t.TXNS7S);
   } else {
-    const intl = tmp7(1125).intl;
+    const intl = tmp7(1114).intl;
     const obj2 = { count };
-    stringResult = intl.formatToPlainString(tmp7(1125).t.jWtYUm, obj2);
+    stringResult = intl.formatToPlainString(tmp7(1114).t.jWtYUm, obj2);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp14Result = null;
@@ -523,7 +73,7 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5281).Button;
+    const Button = tmp7(5629).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -534,492 +84,326 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function Gravit
     tmp14Result = tmp14(tmp15, obj3);
   }
   return tmp14Result;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIShareModal(forwardToChannel) {
-  let first;
-  let first1;
-  let items1;
-  let linkText;
-  let originDestinationId;
-  let title;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  let tmp2 = first1;
-  const tmp = linkText;
-  let obj = linkText(first1[12]);
-  const cResult = obj.c(25);
-  ({ title, originDestinationId, linkText } = forwardToChannel);
-  forwardToChannel = forwardToChannel.forwardToChannel;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  [first1, tmp6] = react.useState(first);
-  let tmp7 = _slicedToArray(react.useState(false), 2);
-  [tmp8, _slicedToArray] = tmp7;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function b() {
-      const arr = forwardToChannel(first1[21]);
-      arr.pop();
-    };
-    let num2 = 1;
-    cResult[1] = fn;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === forwardToChannel) {
-    if (cResult[3] === linkText) {
-      let tmp10;
-      if (cResult[4] === first1) {
-        tmp10 = cResult[5];
-      }
-      let tmp12 = forwardToChannel(tmp2[26])();
-      const height = forwardToChannel(tmp2[27])().height;
-      if (cResult[6] === tmp12.bottom) {
-        let tmp13;
-        let tmp14;
-        let tmp15;
-        if (cResult[7] === height) {
-          tmp13 = cResult[8];
-        }
-        if (cResult[9] !== tmp13) {
-          let obj2 = { height: tmp13 };
-          let num6 = 9;
-          cResult[9] = tmp13;
-          let num7 = 10;
-          cResult[10] = obj2;
-          tmp14 = obj2;
+}
+class ICYMIShareModal {
+  constructor(arg0) {
+    let _undefined;
+    let bottom;
+    let c3;
+    let first;
+    let items1;
+    let originDestinationId;
+    let sum;
+    let title;
+    let tmp2;
+    let tmp4;
+    ({ linkText: require, forwardToChannel: importDefault } = arg0);
+    first = undefined;
+    _slicedToArray = undefined;
+    react = undefined;
+    let obj = function _handleSendForwards() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        let closure_1;
+        let closure_0 = arg0;
+        if (c4 === 2) {
+          c4 = 3;
+          const str = "Generator functions may not be called on executing generators";
+          throw new TypeError("Generator functions may not be called on executing generators");
         } else {
-          tmp14 = cResult[10];
-        }
-        if (cResult[11] !== title) {
-          let tmp16 = closure_11;
-          let obj3 = { title, onClose: tmp9 };
-          const tmp17 = closure_11(forwardToChannel(tmp2[29]), obj3);
-          let num8 = 11;
-          cResult[11] = title;
-          let num9 = 12;
-          cResult[12] = tmp17;
-          tmp15 = tmp17;
-        } else {
-          tmp15 = cResult[12];
-        }
-        const sum = tmp12.bottom + tmp11(tmp2[10]).space.PX_8;
-        const sum1 = sum + tmp11(tmp2[10]).space.PX_96;
-        if (cResult[13] === originDestinationId) {
-          let tmp20;
-          if (cResult[14] === sum1) {
-            tmp20 = cResult[15];
-          }
-          if (cResult[16] === first1.length) {
-            if (cResult[17] === tmp10) {
-              let tmp24;
-              if (cResult[18] === tmp8) {
-                tmp24 = cResult[19];
-              }
-              if (cResult[20] === tmp14) {
-                if (cResult[21] === tmp15) {
-                  if (cResult[22] === tmp20) {
-                    let tmp28;
-                    if (cResult[23] === tmp24) {
-                      tmp28 = cResult[24];
-                    }
-                    return tmp28;
-                  }
-                }
-              }
-              let obj4 = { style: tmp14, children: items1 };
-              items1 = [tmp15, tmp20, tmp24];
-              const tmp31 = closure_12(View, obj4);
-              cResult[20] = tmp14;
-              cResult[21] = tmp15;
-              cResult[22] = tmp20;
-              cResult[23] = tmp24;
-              cResult[24] = tmp31;
-              tmp28 = tmp31;
-            }
-          }
-          let obj5 = { count: first1.length, isSending: tmp8, onSend: tmp10 };
-          const tmp27 = closure_11(closure_14, obj5);
-          let num13 = 16;
-          cResult[16] = first1.length;
-          let num14 = 17;
-          cResult[17] = tmp10;
-          let num15 = 18;
-          cResult[18] = tmp8;
-          cResult[19] = tmp27;
-          tmp24 = tmp27;
-        }
-        let tmp21 = closure_11;
-        let obj6 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp6, originDestination: originDestinationId, insetEnd: sum1, disableGradient: true, disableStickySections: true };
-        const tmp23 = closure_11(forwardToChannel(tmp2[30]), obj6);
-        let num10 = 13;
-        cResult[13] = originDestinationId;
-        let num11 = 14;
-        cResult[14] = sum1;
-        let num12 = 15;
-        cResult[15] = tmp23;
-        tmp20 = tmp23;
-      }
-      let str = "100%";
-      const tmpResult = tmp(tmp2[28]);
-      if (tmpResult.isAndroid()) {
-        str = height + tmp12.bottom;
-      }
-      let num3 = 6;
-      cResult[6] = tmp12.bottom;
-      let num4 = 7;
-      cResult[7] = height;
-      let num5 = 8;
-      cResult[8] = str;
-      tmp13 = str;
-    }
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let closure_1;
-    let closure_2;
-    let v1;
-    closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      const str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else {
-      let tmp7 = value;
-      let tmp8 = arg0;
-      if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          let obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
+          let tmp7 = value;
+          let tmp8 = arg0;
+          if (tmp4 === 3) {
             if (arg0 === 1) {
-              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c4 = 3;
-              let obj3 = { value, done: true };
-              return obj3;
+              let obj2 = { value, done: true };
+              return obj2;
             } else {
-              const flag = true;
-              const tmp20 = c3(true);
-              const tmp21 = globalThis;
-              c3 = 1;
-              c4 = 1;
-              let obj4 = { value: Promise.all(tmp.map(closure_0(first1[22]).getOrResolveChannelIdFromDestinationId)), done: false };
-              return obj4;
+              return { value: "HermesInternal", done: null };
             }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            let obj = { value, done: true };
-            return obj;
           } else {
-            const tmp10 = tmp2;
-            const mapped = value.map((item) => channel.getChannel(item));
-            const found = mapped.filter(closure_0(first1[23]).isNotNullish);
-            const item = found.forEach((() => {
-              closure_0 = c4(function*(arg0, value) {
-                closure_0 = arg0;
-                if (c1 === 2) {
-                  c1 = 3;
-                  throw new TypeError("Generator functions may not be called on executing generators");
-                } else if (tmp2 === 3) {
-                  if (arg0 === 1) {
-                    throw value;
-                  } else if (arg0 === 2) {
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    return { value: "IconComponent", done: "IconComponent" };
-                  }
+            try {
+              let closure_2;
+              c4 = 2;
+              if (0 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  let obj3 = { value, done: true };
+                  return obj3;
                 } else {
-                  try {
-                    c1 = 2;
-                    if (0 === c2) {
-                      if (arg0 === 1) {
-                        c1 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
-                        c1 = 3;
-                        const obj4 = { value, done: true };
-                        return obj4;
-                      } else {
-                        if (null != closure_0) {
-                          let combined;
-                          if (closure_0.trim().length > 0) {
-                            const _HermesInternal = HermesInternal;
-                            combined = "" + str4 + "\n\n" + closure_0;
-                          }
-                          const obj2 = tmp2(closure_3_2[24]);
-                          const parsed = obj2.parse(tmp20, combined);
-                          const tmp7 = tmp2;
-                          const tmp8 = closure_3_2;
-                          if (null == closure_2_1) {
-                            const tmp7Result = tmp7(tmp8[25]);
-                            const obj5 = { location: constants.ICYMI };
-                            c2 = 1;
-                            c1 = 1;
-                            const obj6 = { value: tmp7Result.sendMessage(closure_0.id, parsed, false, obj5), done: false };
-                            return obj6;
-                          } else {
-                            tmp10(closure_0);
-                          }
-                        }
-                        combined = closure_0;
-                      }
-                    } else if (arg0 === 1) {
-                      c1 = 3;
-                      throw value;
-                    } else if (arg0 === 2) {
-                      c1 = 3;
-                      const obj = { value, done: true };
-                      return obj;
-                    }
-                    c1 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
-                  } catch (tmp16) {
-                    c1 = 3;
-                    throw tmp16;
-                  }
+                  closure_2 = tmp;
+                  const flag = true;
+                  const tmp20 = _undefined(true);
+                  const tmp21 = globalThis;
+                  c3 = 1;
+                  c4 = 1;
+                  let obj4 = { value: Promise.all(first.map(closure_0(closure_2[20]).getOrResolveChannelIdFromDestinationId)), done: false };
+                  return obj4;
                 }
-              });
-              return function() {
-                return closure_0(...arguments);
-              };
-            })());
-            const tmp16 = first1;
-            const arr3 = forwardToChannel(first1[21]);
-            arr3.pop();
-            c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp6) {
-          c4 = 3;
-          throw tmp6;
-        }
-      }
-    }
-  });
-  function handleSendForwards() {
-    return closure_0(...arguments);
-  }
-  cResult[2] = forwardToChannel;
-  cResult[3] = linkText;
-  cResult[4] = first1;
-  cResult[5] = handleSendForwards;
-  tmp10 = handleSendForwards;
-}) : (function ICYMIShareModal(arg0) {
-  let _undefined;
-  let bottom;
-  let c3;
-  let first;
-  let items1;
-  let originDestinationId;
-  let sum;
-  let title;
-  let tmp2;
-  let tmp4;
-  ({ linkText: require, forwardToChannel: importDefault } = arg0);
-  first = undefined;
-  _slicedToArray = undefined;
-  react = undefined;
-  let obj = function _handleSendForwards2() {
-    obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_1;
-      let closure_0 = arg0;
-      if (c4 === 2) {
-        c4 = 3;
-        const str = "Generator functions may not be called on executing generators";
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else {
-        let tmp7 = value;
-        let tmp8 = arg0;
-        if (tmp4 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            let obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            let closure_2;
-            c4 = 2;
-            if (0 === c3) {
-              if (arg0 === 1) {
+              } else if (arg0 === 1) {
                 c4 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c4 = 3;
-                let obj3 = { value, done: true };
-                return obj3;
+                obj = { value, done: true };
+                return obj;
               } else {
-                closure_2 = tmp;
-                const flag = true;
-                const tmp20 = _undefined(true);
-                const tmp21 = globalThis;
-                c3 = 1;
-                c4 = 1;
-                let obj4 = { value: Promise.all(first.map(closure_0(closure_2[22]).getOrResolveChannelIdFromDestinationId)), done: false };
-                return obj4;
-              }
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              const tmp10 = tmp2;
-              const mapped = value.map((item) => channel.getChannel(item));
-              const found = mapped.filter(closure_0(closure_2[23]).isNotNullish);
-              const item = found.forEach((() => {
-                closure_0 = c4(function*(arg0, value) {
-                  closure_0 = arg0;
-                  if (c1 === 2) {
-                    c1 = 3;
-                    throw new TypeError("Generator functions may not be called on executing generators");
-                  } else if (tmp2 === 3) {
-                    if (arg0 === 1) {
-                      throw value;
-                    } else if (arg0 === 2) {
-                      const obj3 = { value, done: true };
-                      return obj3;
+                const tmp10 = tmp2;
+                const mapped = value.map((item) => channel.getChannel(item));
+                const found = mapped.filter(closure_0(closure_2[21]).isNotNullish);
+                const item = found.forEach((() => {
+                  closure_0 = c4(function*(arg0, value) {
+                    closure_0 = arg0;
+                    if (c1 === 2) {
+                      c1 = 3;
+                      throw new TypeError("Generator functions may not be called on executing generators");
+                    } else if (tmp2 === 3) {
+                      if (arg0 === 1) {
+                        throw value;
+                      } else if (arg0 === 2) {
+                        const obj3 = { value, done: true };
+                        return obj3;
+                      } else {
+                        return { value: "HermesInternal", done: null };
+                      }
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
-                    }
-                  } else {
-                    try {
-                      c1 = 2;
-                      if (0 === c2) {
-                        if (arg0 === 1) {
+                      try {
+                        c1 = 2;
+                        if (0 === c2) {
+                          if (arg0 === 1) {
+                            c1 = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            c1 = 3;
+                            const obj4 = { value, done: true };
+                            return obj4;
+                          } else {
+                            if (null != closure_0) {
+                              let combined;
+                              if (closure_0.trim().length > 0) {
+                                const _HermesInternal = HermesInternal;
+                                combined = "" + str4 + "\n\n" + closure_0;
+                              }
+                              const obj2 = tmp2(closure_3_2[22]);
+                              const parsed = obj2.parse(tmp20, combined);
+                              const tmp7 = tmp2;
+                              const tmp8 = closure_3_2;
+                              if (null == closure_2_1) {
+                                const tmp7Result = tmp7(tmp8[23]);
+                                const obj5 = { location: constants.ICYMI };
+                                c2 = 1;
+                                c1 = 1;
+                                const obj6 = { value: tmp7Result.sendMessage(closure_0.id, parsed, false, obj5), done: false };
+                                return obj6;
+                              } else {
+                                tmp10(closure_0);
+                              }
+                            }
+                            combined = closure_0;
+                          }
+                        } else if (arg0 === 1) {
                           c1 = 3;
                           throw value;
                         } else if (arg0 === 2) {
                           c1 = 3;
-                          const obj4 = { value, done: true };
-                          return obj4;
-                        } else {
-                          if (null != closure_0) {
-                            let combined;
-                            if (closure_0.trim().length > 0) {
-                              const _HermesInternal = HermesInternal;
-                              combined = "" + str4 + "\n\n" + closure_0;
-                            }
-                            const obj2 = tmp2(closure_3_2[24]);
-                            const parsed = obj2.parse(tmp20, combined);
-                            const tmp7 = tmp2;
-                            const tmp8 = closure_3_2;
-                            if (null == closure_2_1) {
-                              const tmp7Result = tmp7(tmp8[25]);
-                              const obj5 = { location: constants.ICYMI };
-                              c2 = 1;
-                              c1 = 1;
-                              const obj6 = { value: tmp7Result.sendMessage(closure_0.id, parsed, false, obj5), done: false };
-                              return obj6;
-                            } else {
-                              tmp10(closure_0);
-                            }
-                          }
-                          combined = closure_0;
+                          obj = { value, done: true };
+                          return obj;
                         }
-                      } else if (arg0 === 1) {
                         c1 = 3;
-                        throw value;
-                      } else if (arg0 === 2) {
+                        return { value: "HermesInternal", done: null };
+                      } catch (tmp16) {
                         c1 = 3;
-                        obj = { value, done: true };
-                        return obj;
+                        throw tmp16;
                       }
-                      c1 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
-                    } catch (tmp16) {
-                      c1 = 3;
-                      throw tmp16;
                     }
-                  }
-                });
-                return function(arg0) {
-                  return closure_0(...arguments);
-                };
-              })());
-              const tmp16 = closure_2;
-              const arr3 = tmp2(closure_2[21]);
-              arr3.pop();
+                  });
+                  return function(arg0) {
+                    return closure_0(...arguments);
+                  };
+                })());
+                const tmp16 = closure_2;
+                const arr3 = tmp2(closure_2[19]);
+                arr3.pop();
+                c4 = 3;
+                return { value: "HermesInternal", done: null };
+              }
+            } catch (tmp6) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              throw tmp6;
             }
-          } catch (tmp6) {
-            c4 = 3;
-            throw tmp6;
           }
         }
-      }
-    });
-    return obj(...arguments);
-  };
-  ({ title, originDestinationId } = arg0);
-  [first, tmp2] = react.useState([]);
-  const length = first.length;
-  [tmp4, c3] = _slicedToArray(react.useState(false), 2);
-  const tmp3 = _slicedToArray(react.useState(false), 2);
-  const callback = react.useCallback(() => {
-    const arr = require("ModalActionCreators");
-    arr.pop();
-  }, []);
-  const tmp6 = require("useSafeAreaInsets")();
-  react = tmp6;
-  let height = require("useWindowDimensions")().height;
-  const items = [tmp6.bottom, height];
-  obj = {
-    style: react.useMemo(() => {
-      height = "100%";
-      obj = PlatformUtils;
-      if (obj.isAndroid()) {
-        height = height + bottom.bottom;
-      }
-      return { height };
-    }, items),
-    children: items1
-  };
-  items1 = [closure_11(require("SearchableDestinationListHeader"), { title, onClose: callback }), , ];
-  let obj2 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp2, originDestination: originDestinationId, insetEnd: sum + require("native").space.PX_96, disableGradient: true, disableStickySections: true };
-  let tmp7 = require("SearchableDestinationList");
-  sum = tmp6.bottom + require("native").space.PX_8;
-  items1[1] = closure_11(tmp7, obj2);
-  let obj3 = {
-    count: length,
-    isSending: tmp4,
-    onSend: function handleSendForwards(arg0) {
+      });
       return obj(...arguments);
-    }
-  };
-  items1[2] = closure_11(closure_14, obj3);
-  return closure_12(height, obj);
-});
-let closure_15 = tmp5;
+    };
+    ({ title, originDestinationId } = arg0);
+    [first, tmp2] = react.useState([]);
+    const length = first.length;
+    [tmp4, c3] = _slicedToArray(react.useState(false), 2);
+    const tmp3 = _slicedToArray(react.useState(false), 2);
+    const callback = react.useCallback(() => {
+      const arr = require("ModalActionCreators");
+      arr.pop();
+    }, []);
+    const tmp6 = require("useSafeAreaInsets")();
+    react = tmp6;
+    let height = require("useWindowDimensions")().height;
+    const items = [tmp6.bottom, height];
+    obj = {
+      style: react.useMemo(() => {
+        height = "100%";
+        obj = PlatformUtils;
+        if (obj.isAndroid()) {
+          height = height + bottom.bottom;
+        }
+        return { height };
+      }, items),
+      children: items1
+    };
+    items1 = [closure_11(require("SearchableDestinationListHeader"), { title, onClose: callback }), , ];
+    let obj2 = { rowMode: UserRowModes.TOGGLE, onSelectedDestinationChange: tmp2, originDestination: originDestinationId, insetEnd: sum + require("native").space.PX_96, disableGradient: true, disableStickySections: true };
+    let tmp7 = require("SearchableDestinationList");
+    sum = tmp6.bottom + require("native").space.PX_8;
+    items1[1] = closure_11(tmp7, obj2);
+    let obj3 = {
+      count: length,
+      isSending: tmp4,
+      onSend: function handleSendForwards(arg0) {
+        return obj(...arguments);
+      }
+    };
+    items1[2] = closure_11(GravityShareFooter, obj3);
+    return closure_12(height, obj);
+  }
+}
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+const View = react_native.View;
+const AbortCodes = Constants.AbortCodes;
+const UserRowModes = UserRowConstants.UserRowModes;
+const MessageSendLocation = MessageConstants.MessageSendLocation;
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+let obj = { footer: obj2 };
+obj2 = { display: "flex", flexDirection: "row", alignItems: "flex-end", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
+let closure_13 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/icymi/native/ICYMIShareModal.tsx");
 
-export default tmp5;
-export const GuildEventShareModal = tmp3;
-export const GameShareModal = tmp4;
+export default ICYMIShareModal;
+export function GuildEventShareModal(event) {
+  let intl;
+  let result;
+  let tmp4;
+  event = event.event;
+  const obj3 = { title: intl.string(intl3.t["7TVSLK"]), originDestinationId: tmp4, linkText: result };
+  const obj = ShareEventUtils;
+  const obj2 = { guildId: event.guild_id, guildEventId: event.id };
+  result = obj.SHARE_EVENT_DETAILS_LINK(obj2);
+  intl = intl3.intl;
+  tmp4 = undefined;
+  const tmp2 = unpackModuleId;
+  const tmp3 = ICYMIShareModal;
+  if (null != event.channel_id) {
+    tmp4 = { type: "channel", id: event.channel_id };
+    const obj4 = { type: "channel", id: event.channel_id };
+  }
+  return tmp2(tmp3, obj3);
+}
+export function GameShareModal(content) {
+  let intl;
+  content = content.content;
+  let obj = {
+    title: intl.string(content(1114).t["59CWHK"]),
+    linkText: "",
+    forwardToChannel: function() {
+      return closure_0(...arguments);
+    }
+  };
+  intl = content(1114).intl;
+  let closure_0 = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      let c4;
+      try {
+        let closure_1;
+        let entry;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_2 = tmp;
+            closure_1 = tmp4;
+            entry = undefined;
+            c4 = 1;
+            const obj5 = { channel: entry, content: "", entry, whenReady: false, doNotNotifyOnError: true, location: constants2.ICYMI };
+            c5 = 2;
+            c6 = 1;
+            const obj6 = { value: obj3.sendMessageWithEmbed(obj5), done: false };
+            obj3 = entry(dependencyMap[13]);
+            return obj6;
+          }
+        } else {
+          if (1 === c5) {
+            let stringResult;
+            c4 = 0;
+            closure_1 = closure_3;
+            const tmp9 = null != closure_1.body && closure_1.body.code === constants.CONTENT_INVENTORY_ENTRY_INVALID_PERMISSION;
+            entry = tmp9;
+            const open = ToastActionCreatorsDefault.open;
+            const intl = entry(dependencyMap[12]).intl;
+            const string = intl.string;
+            const t = entry(dependencyMap[12]).t;
+            if (entry) {
+              stringResult = string(t.BC5vfD);
+            } else {
+              stringResult = string(t.F8FvUy);
+            }
+            const obj7 = { text: stringResult };
+            open("FORWARD_CONTENT_INVENTORY_ENTRY_ERROR", obj7);
+          } else if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 0;
+            c6 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c4 = 0;
+          }
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp32) {
+        closure_3 = tmp32;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp32;
+        } else {
+          c5 = 1;
+        }
+      }
+    }
+  });
+  return closure_11(ICYMIShareModal, obj);
+}

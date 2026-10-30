@@ -1,13 +1,13 @@
-// Module ID: 16310
-// Function ID: 16311
+// Module ID: 16351
+// Function ID: 16352
 // Name: ICYMIManager
-// Dependencies: [8881, 1101, 2002, 584, 8882, 2]
+// Dependencies: [8915, 1090, 1997, 572, 8916, 2]
 
-// Module 16310 (ICYMIManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8882 */;
-import LifecycleManager from "LifecycleManager" /* 2002 */;
+// Module 16351 (ICYMIManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8915 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8916 */;
+import LifecycleManager from "LifecycleManager" /* 1997 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = null;
@@ -22,7 +22,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f127208 = () => {
+    const f109512 = () => {
       let timeout;
       const obj = ICYMIActionCreatorsDefault;
       const dehydrated = obj.fetchDehydrated({ isInitialLoad: false });
@@ -32,7 +32,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f127208, 15 * tmp(tmp2[1]).Millis.MINUTE);
+      timeout = setTimeout(f109512, 15 * tmp(tmp2[1]).Millis.MINUTE);
     };
     let tmp = dependencyMap;
     let obj = ICYMIExperiment;
@@ -46,10 +46,10 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f127208, 15 * tmp2(1101).Millis.MINUTE);
-      const tmp2Result = tmp2(8881);
+      timeout = setTimeout(f109512, 15 * tmp2(1090).Millis.MINUTE);
+      const tmp2Result = tmp2(8915);
       const guildChannelScores = tmp2Result.getGuildChannelScores();
-      const tmp2Result2 = tmp2(8881);
+      const tmp2Result2 = tmp2(8915);
       const recommendedGuilds = tmp2Result2.getRecommendedGuilds();
     }
   }

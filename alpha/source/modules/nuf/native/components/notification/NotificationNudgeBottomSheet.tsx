@@ -1,21 +1,21 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18543
+// Function ID: 18544
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 13777, 1084, 4854, 21, 5005, 587, 558, 576, 1264, 5247, 13778, 17930, 5271, 1125, 5281, 6754, 5302, 2]
+// Dependencies: [19, 17, 13924, 1072, 4855, 21, 5009, 575, 1253, 5253, 13925, 5267, 17989, 5619, 6761, 5629, 1114, 2]
+// Exports: default
 
-// Module 18484 (NotificationNudgeBottomSheet)
+// Module 18543 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13778 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13925 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13777 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13924 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-let View = react_native.View;
+const View = react_native.View;
 ({ EventActionType: hasOwnProperty, NotificationNudgeAnalyticsAction: metroRequire } = NotificationPermissionConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -41,89 +41,9 @@ obj3 = { marginVertical: nativeDefault.space.PX_24 };
 obj4 = { textAlign: "center", marginTop: nativeDefault.space.PX_8 };
 obj5 = { marginTop: nativeDefault.space.PX_8, width: "100%" };
 let closure_11 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function NotificationNudgeBottomSheet(surface) {
-  let actionLocation;
-  let body;
-  let closure_4;
-  let markAsDismissed;
-  let title;
-  let tmp3;
-  let tmp4;
-  let obj = actionLocation(markAsDismissed[9]);
-  const cResult = obj.c(41);
-  ({ title, body, actionLocation } = surface);
-  surface = surface.surface;
-  markAsDismissed = surface.markAsDismissed;
-  const onHide = surface.onHide;
-  closure_11();
-  if (cResult[0] !== surface) {
-    class S {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    }
-    const items = [surface];
-    cResult[0] = surface;
-    cResult[1] = S;
-    cResult[2] = items;
-    tmp4 = items;
-    tmp3 = S;
-  } else {
-    class S {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    }
-    tmp4 = cResult[2];
-  }
-  const effect = onHide.useEffect(tmp3, tmp4);
-  if (cResult[3] !== onHide) {
-    class S {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    }
-    cResult[3] = onHide;
-    cResult[4] = tmp7;
-  } else {
-    class S {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    }
-  }
-  View = tmp6;
-  if (cResult[5] === actionLocation) {
-    class S {
-      constructor() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { action: metroRequire.IMPRESSION, prompt_type: surface };
-        obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-      }
-    }
-  }
-  const fn = function x() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { action: metroRequire.ACCEPT, prompt_type: surface };
-    obj.track(AnalyticEvents.CONTEXTUAL_REMINDER_ACTION, obj2);
-    markAsDismissed(ContentDismissActionType.USER_DISMISS);
-    const obj3 = NotificationPermissionUtil;
-    const pushNotificationPermission = obj3.requestPushNotificationPermission(hasOwnProperty.ALLOW_TO_REQUEST, actionLocation, View);
-  };
-  cResult[5] = actionLocation;
-  cResult[6] = tmp6;
-  cResult[7] = markAsDismissed;
-  cResult[8] = surface;
-  cResult[9] = fn;
-}) : (function NotificationNudgeBottomSheet(actionLocation) {
+const result = size.fileFinishedImporting("modules/nuf/native/components/notification/NotificationNudgeBottomSheet.tsx");
+
+export default function NotificationNudgeBottomSheet(actionLocation) {
   let ButtonGroup;
   let body;
   let intl;
@@ -172,27 +92,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Notificati
   }, items3);
   let obj = { children: closure_10(callback, obj2) };
   obj2 = { style: tmp.container, children: items4 };
-  let obj3 = { style: tmp.illustration, children: closure_9(actionLocation(markAsDismissed[13]).BellSpotIllustration, { scale: 0.8 }) };
-  BottomSheet = actionLocation(markAsDismissed[18]).BottomSheet;
+  let obj3 = { style: tmp.illustration, children: closure_9(actionLocation(markAsDismissed[12]).BellSpotIllustration, { scale: 0.8 }) };
+  BottomSheet = actionLocation(markAsDismissed[11]).BottomSheet;
   items4 = [closure_9(callback, obj3), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: title };
-  items4[1] = closure_9(actionLocation(markAsDismissed[14]).Text, obj4);
+  items4[1] = closure_9(actionLocation(markAsDismissed[13]).Text, obj4);
   const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: body };
-  items4[2] = closure_9(actionLocation(markAsDismissed[14]).Text, obj5);
+  items4[2] = closure_9(actionLocation(markAsDismissed[13]).Text, obj5);
   const obj6 = { style: tmp.buttonsContainer, children: closure_10(ButtonGroup, obj7) };
   obj7 = { children: items5 };
-  ButtonGroup = actionLocation(markAsDismissed[17]).ButtonGroup;
-  const obj8 = { text: intl.string(actionLocation(markAsDismissed[15]).t["+7MDbQ"]), onPress: callback1 };
-  const Button = actionLocation(markAsDismissed[16]).Button;
-  intl = actionLocation(markAsDismissed[15]).intl;
+  ButtonGroup = actionLocation(markAsDismissed[14]).ButtonGroup;
+  const obj8 = { text: intl.string(actionLocation(markAsDismissed[16]).t["+7MDbQ"]), onPress: callback1 };
+  const Button = actionLocation(markAsDismissed[15]).Button;
+  intl = actionLocation(markAsDismissed[16]).intl;
   items5 = [closure_9(Button, obj8), ];
-  const obj9 = { text: intl2.string(actionLocation(markAsDismissed[15]).t.L5eIZ2), onPress: callback2, variant: "secondary" };
-  const Button2 = actionLocation(markAsDismissed[16]).Button;
-  intl2 = actionLocation(markAsDismissed[15]).intl;
+  const obj9 = { text: intl2.string(actionLocation(markAsDismissed[16]).t.L5eIZ2), onPress: callback2, variant: "secondary" };
+  const Button2 = actionLocation(markAsDismissed[15]).Button;
+  intl2 = actionLocation(markAsDismissed[16]).intl;
   items5[1] = closure_9(Button2, obj9);
   items4[3] = closure_9(callback, obj6);
   return closure_9(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/nuf/native/components/notification/NotificationNudgeBottomSheet.tsx");
-
-export default tmp5;
+};

@@ -1,121 +1,40 @@
-// Module ID: 18843
-// Function ID: 18844
+// Module ID: 18903
+// Function ID: 18904
 // Name: ContextMenuCommandAppScreen
-// Dependencies: [19, 21, 5005, 587, 558, 576, 5630, 7204, 18842, 7210, 2]
+// Dependencies: [19, 21, 5009, 575, 5602, 7211, 18902, 7217, 2]
+// Exports: default
 
-// Module 18843 (ContextMenuCommandAppScreen)
+// Module 18903 (ContextMenuCommandAppScreen)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let section;
-
-let obj2;
 const jsx = Fragment.jsx;
-let obj = { list: obj2 };
-obj2 = { marginHorizontal: nativeDefault.space.PX_16 };
-let closure_5 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMenuCommandAppScreen(route) {
-  let first;
-  let onPressCommand;
-  let tmp6;
-  const tmp = onPressCommand;
-  const obj = section(onPressCommand[5]);
-  const cResult = obj.c(13);
+const obj = { list: { marginHorizontal: nativeDefault.space.PX_16 } };
+({ marginHorizontal: nativeDefault.space.PX_16 });
+let closure_4 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
+
+export default function ContextMenuCommandAppScreen(route) {
   const params = route.route.params;
-  section = params.section;
-  const commands = params.commands;
-  onPressCommand = params.onPressCommand;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { includeKeyboardHeight: true };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const insets = commands(tmp[6])(first).insets;
-  const tmp5 = commands(tmp[7])();
-  if (cResult[1] !== commands.length) {
-    const items = [commands.length];
-    cResult[1] = commands.length;
-    cResult[2] = items;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === commands) {
-    if (cResult[4] === onPressCommand) {
-      let tmp7;
-      if (cResult[5] === section) {
-        tmp7 = cResult[6];
-      }
-      const tmp9 = closure_5();
-      if (cResult[7] === insets.bottom) {
-        if (cResult[8] === tmp5) {
-          if (cResult[9] === tmp6) {
-            if (cResult[10] === tmp7) {
-              let tmp10;
-              if (cResult[11] === tmp9.list) {
-                tmp10 = cResult[12];
-              }
-              return tmp10;
-            }
-          }
-        }
-      }
-      cResult[7] = insets.bottom;
-      cResult[8] = tmp5;
-      cResult[9] = tmp6;
-      cResult[10] = tmp7;
-      cResult[11] = tmp9.list;
-      cResult[12] = jsx(commands(tmp[9]), { style: tmp9.list, sections: tmp6, estimatedListSize: "windowSize", itemSize: tmp5, insetEnd: insets.bottom, renderItem: tmp7 });
-      jsx(commands(tmp[9]), { style: tmp9.list, sections: tmp6, estimatedListSize: "windowSize", itemSize: tmp5, insetEnd: insets.bottom, renderItem: tmp7 });
-      class C {
-        constructor(arg0, arg1) {
-          tmp = commands[arg1];
-          closure_0 = tmp;
-          diff = commands.length - 1;
-          obj = { item: tmp, onPress() { /* body not rendered: F158702 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
-          return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
-        }
-      }
-    }
-  }
-  class C {
-    constructor(arg0, arg1) {
-      tmp = commands[arg1];
-      closure_0 = tmp;
-      diff = commands.length - 1;
-      obj = { item: tmp, onPress() { /* body not rendered: F158702 */ }, section: closure_0, start: 0 === arg1, end: arg1 === diff };
-      return closure_1_4(commands(onPressCommand[8]), obj, tmp.id);
-    }
-  }
-  cResult[3] = commands;
-  cResult[4] = onPressCommand;
-  cResult[5] = section;
-  cResult[6] = C;
-  tmp7 = C;
-}) : (function ContextMenuCommandAppScreen(route) {
-  const params = route.route.params;
-  section = params.section;
+  let section = params.section;
   const commands = params.commands;
   const onPressCommand = params.onPressCommand;
-  const insets = commands(onPressCommand[6])({ includeKeyboardHeight: true }).insets;
+  const insets = section(commands[4])({ includeKeyboardHeight: true }).insets;
   let items = [commands.length];
-  const tmp = commands(onPressCommand[7])();
+  const tmp = section(commands[5])();
   const items1 = [commands, onPressCommand, section];
-  const memo = react.useMemo(() => {
+  const memo = onPressCommand.useMemo(() => {
     const items = [commands.length];
     return items;
   }, items);
-  const callback = react.useCallback((arg0, arg1) => {
+  const callback = onPressCommand.useCallback((arg0, arg1) => {
     let closure_0;
     section = tmp;
     const diff = commands.length - 1;
-    return jsx(commands(onPressCommand[8]), {
+    return jsx(section(commands[6]), {
       item: commands[arg1],
       onPress() {
         return onPressCommand(closure_0);
@@ -125,9 +44,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContextMen
       end: arg1 === diff
     }, commands[arg1].id);
   }, items1);
-  closure_5();
-  return jsx(commands(onPressCommand[9]), { style: closure_5().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: insets.bottom, renderItem: callback });
-});
-const result = size.fileFinishedImporting("modules/application_commands/native/ContextMenuCommandAppScreen.tsx");
-
-export default tmp2;
+  closure_4();
+  return jsx(section(commands[7]), { style: closure_4().list, sections: memo, estimatedListSize: "windowSize", itemSize: tmp, insetEnd: insets.bottom, renderItem: callback });
+};

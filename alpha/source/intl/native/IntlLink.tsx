@@ -1,16 +1,16 @@
-// Module ID: 10895
-// Function ID: 10896
+// Module ID: 10918
+// Function ID: 10919
 // Name: IntlLink
-// Dependencies: [19, 21, 5005, 587, 558, 576, 5019, 5698, 1949, 1199, 2]
+// Dependencies: [19, 21, 5009, 575, 5023, 5704, 1944, 1188, 2]
+// Exports: IntlLink
 
-// Module 10895 (IntlLink)
+// Module 10918 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef1949 from "module_1949" /* 1949 */;
-import LinkingDefault from "Linking" /* 5698 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef1944 from "module_1944" /* 1944 */;
+import LinkingDefault from "Linking" /* 5704 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -24,69 +24,9 @@ let closure_5 = createStyles.createStyles((arg0) => {
   }
   return { link };
 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(target) {
-  let accessibilityRole;
-  let onClick;
-  let str;
-  let tmp5;
-  const tmp = target;
-  let obj = target(576);
-  const cResult = obj.c(7);
-  target = target.target;
-  const children = target.children;
-  const tmp4 = closure_5(react.useContext(target(5019).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  if (typeof target === "string") {
-    let tmp6;
-    if (cResult[0] !== target) {
-      const fn = function s() {
-        const openURL = LinkingDefault.openURL;
-        LinkingDefault;
-        const obj = _modDef1949;
-        return openURL(obj.sanitizeUrl(target));
-      };
-      cResult[0] = target;
-      cResult[1] = fn;
-      tmp6 = fn;
-    } else {
-      tmp6 = cResult[1];
-    }
-    str = "link";
-    tmp5 = tmp6;
-  } else {
-    str = "link";
-    tmp5 = target;
-    if (typeof target === "object") {
-      str = "link";
-      tmp5 = target;
-      if (null != target.onClick) {
-        ({ accessibilityRole, onClick } = target);
-        if (accessibilityRole == null) {
-          accessibilityRole = "link";
-        }
-        str = accessibilityRole;
-        tmp5 = onClick;
-      }
-    }
-  }
-  if (cResult[2] === str) {
-    if (cResult[3] === children) {
-      if (cResult[4] === tmp5) {
-        let tmp7;
-        if (cResult[5] === tmp4.link) {
-          tmp7 = cResult[6];
-        }
-        return tmp7;
-      }
-    }
-  }
-  const tmp8 = jsx(tmp(1199).LegacyText, { accessible: true, accessibilityRole: str, onPress: tmp5, style: tmp4.link, children });
-  cResult[2] = str;
-  cResult[3] = children;
-  cResult[4] = tmp5;
-  cResult[5] = tmp4.link;
-  cResult[6] = tmp8;
-  tmp7 = tmp8;
-}) : (function IntlLink(target) {
+const result = size.fileFinishedImporting("intl/native/IntlLink.tsx");
+
+export function IntlLink(target) {
   let accessibilityRole;
   let fn;
   let onClick;
@@ -94,12 +34,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(5019).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(5023).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef1949;
+      const obj = _modDef1944;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";
@@ -119,8 +59,5 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IntlLink(t
       }
     }
   }
-  return jsx(tmp(1199).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
-});
-const result = size.fileFinishedImporting("intl/native/IntlLink.tsx");
-
-export const IntlLink = tmp2;
+  return jsx(tmp(1188).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+}

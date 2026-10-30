@@ -1,10 +1,10 @@
 // Module ID: 4005
 // Function ID: 4006
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 4005 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zdGFnZV9jaGFubmVscw==", scales: [1], hash: "96f420192dcfadcec4ceeb09e2cee290", name: "hr.messages.96f420192dcfadcec4ceeb09e2cee290.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zdGFnZV9jaGFubmVscw==", scales: [1], hash: "8ce01c6cf9b3f6a20774d3e8d1b1dc7a", name: "hi.messages.8ce01c6cf9b3f6a20774d3e8d1b1dc7a.compiled.messages", type: "jsona" });

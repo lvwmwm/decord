@@ -1,9 +1,9 @@
-// Module ID: 5627
-// Function ID: 5628
+// Module ID: 5599
+// Function ID: 5600
 // Name: VisualEffectViewNativeComponent
 // Dependencies: [26, 65, 2]
 
-// Module 5627 (VisualEffectViewNativeComponent)
+// Module 5599 (VisualEffectViewNativeComponent)
 import _mod26 from "module_26" /* 26 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

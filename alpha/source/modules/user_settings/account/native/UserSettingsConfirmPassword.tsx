@@ -1,25 +1,24 @@
-// Module ID: 7149
-// Function ID: 7150
+// Module ID: 7157
+// Function ID: 7158
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1389, 1084, 21, 5005, 587, 558, 576, 7150, 504, 7151, 6433, 1254, 1125, 7153, 5271, 7067, 7093, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1384, 1072, 21, 5009, 575, 7158, 504, 7159, 6440, 1243, 1114, 7161, 5619, 7075, 7101, 5629, 2]
+// Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7149 (UserSettingsConfirmPassword)
+// Module 7157 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7067 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7150 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7151 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7153 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7075 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7158 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7159 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7161 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,9 +32,9 @@ let obj3;
 let obj4;
 let tmp3;
 let unpackModuleId;
-const intl5 = tmp3(1125);
-const Text_Text = tmp3(5271);
-const components_Button_Button = tmp3(5281);
+const intl5 = tmp3(1114);
+const Text_Text = tmp3(5619);
+const components_Button_Button = tmp3(5629);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -92,7 +91,7 @@ class UserSettingsConfirmPasswordInner {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -124,14 +123,14 @@ class UserSettingsConfirmPasswordInner {
               if (2 === c4) {
                 c3 = 1;
                 const tmp = closure_2;
-                const obj4 = tmp(closure_2[15]);
+                const obj4 = tmp(closure_2[13]);
                 obj4.captureException(tmp);
                 const message = tmp.message;
-                const intl = closure_0(closure_2[16]).intl;
-                if (message !== intl.string(closure_0(closure_2[16]).t.N2yb9a)) {
+                const intl = closure_0(closure_2[14]).intl;
+                if (message !== intl.string(closure_0(closure_2[14]).t.N2yb9a)) {
                   const self3 = this;
                   const self4 = this;
-                  const v6OrEarlierAPIError = new closure_0(closure_2[14]).V6OrEarlierAPIError(tmp);
+                  const v6OrEarlierAPIError = new closure_0(closure_2[12]).V6OrEarlierAPIError(tmp);
                   closure_129_5(v6OrEarlierAPIError);
                 }
                 if (closure_129_2 != null) {
@@ -162,7 +161,7 @@ class UserSettingsConfirmPasswordInner {
                     if (closure_0.status <= 599) {
                       const self = this;
                       const self2 = this;
-                      const v6OrEarlierAPIError1 = new closure_0(closure_2[14]).V6OrEarlierAPIError(closure_0);
+                      const v6OrEarlierAPIError1 = new closure_0(closure_2[12]).V6OrEarlierAPIError(closure_0);
                       closure_129_5(v6OrEarlierAPIError1);
                       if (closure_129_2 != null) {
                         closure_129_2();
@@ -181,7 +180,7 @@ class UserSettingsConfirmPasswordInner {
               c3 = 0;
               closure_129_3(false);
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp67) {
             closure_2 = tmp67;
@@ -255,7 +254,7 @@ class UserSettingsConfirmPasswordInner {
         tmp20Result = null;
         if (null == obj2.getFieldMessage("password")) {
           const obj9 = { style: tmp.hint, children: obj2.message };
-          tmp20Result = tmp20(tmp21(7093), obj9);
+          tmp20Result = tmp20(tmp21(7101), obj9);
         }
       }
       items3[3] = tmp20Result;
@@ -270,30 +269,12 @@ class UserSettingsConfirmPasswordInner {
     return tmp14Result;
   }
 }
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsConfirmPasswordWrapped() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const obj2 = useSettingNavigationRoute;
-  const settingNavigationRoute = obj2.useSettingNavigationRoute();
-  if (cResult[0] !== settingNavigationRoute.params) {
-    const obj3 = {};
-    const merged = Object.assign(settingNavigationRoute.params);
-    const tmp8 = authStore(UserSettingsConfirmPasswordInner, obj3);
-    cResult[0] = settingNavigationRoute.params;
-    cResult[1] = tmp8;
-    tmp3 = tmp8;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function UserSettingsConfirmPasswordWrapped() {
+let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
+
+export default UserSettingsConfirmPasswordInner;
+export function UserSettingsConfirmPasswordWrapped() {
   const obj = useSettingNavigationRoute;
   const obj2 = {};
   const merged = Object.assign(obj.useSettingNavigationRoute().params);
   return authStore(UserSettingsConfirmPasswordInner, obj2);
-});
-let result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsConfirmPassword.tsx");
-
-export default UserSettingsConfirmPasswordInner;
-export const UserSettingsConfirmPasswordWrapped = tmp5;
+}

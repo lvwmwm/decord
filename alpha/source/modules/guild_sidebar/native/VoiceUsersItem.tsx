@@ -1,57 +1,25 @@
-// Module ID: 18067
-// Function ID: 18068
+// Module ID: 18131
+// Function ID: 18132
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 5005, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5009, 2]
+// Exports: default
 
-// Module 18067 (VoiceUsersItem)
+// Module 18131 (VoiceUsersItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsersItem(arg0) {
-  let children;
-  let collapsed;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ collapsed, children } = arg0);
-  const tmp2 = closure_4();
-  if (collapsed) {
-    collapsed = tmp2.voiceStatesCollapsed;
-  }
-  if (cResult[0] === (!collapsed && tmp2.voiceStates)) {
-    let tmp4;
-    if (cResult[1] === collapsed) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === children) {
-      let tmp5;
-      if (cResult[4] === tmp4) {
-        tmp5 = cResult[5];
-      }
-      return tmp5;
-    }
-    const tmp8 = <View style={tmp4}>{children}</View>;
-    cResult[3] = children;
-    cResult[4] = tmp4;
-    cResult[5] = tmp8;
-    tmp5 = tmp8;
-  }
-  const items = [!collapsed && tmp2.voiceStates, collapsed];
-  cResult[0] = !collapsed && tmp2.voiceStates;
-  cResult[1] = collapsed;
-  cResult[2] = items;
-  tmp4 = items;
-}) : (function VoiceUsersItem(collapsed) {
+let closure_2 = createStyles.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });
+const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
+
+export default function VoiceUsersItem(collapsed) {
   let voiceStatesCollapsed = collapsed.collapsed;
   const children = collapsed.children;
-  const tmp = closure_4();
+  const tmp = closure_2();
   let voiceStates = !voiceStatesCollapsed;
   const tmp2 = jsx;
   const tmp3 = View;
@@ -64,7 +32,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceUsersIt
   }
   style[1] = voiceStatesCollapsed;
   return tmp2(tmp3, { style, children });
-});
-const result = size.fileFinishedImporting("modules/guild_sidebar/native/VoiceUsersItem.tsx");
-
-export default tmp3;
+};

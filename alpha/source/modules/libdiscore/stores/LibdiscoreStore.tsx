@@ -1,12 +1,12 @@
-// Module ID: 4880
-// Function ID: 4881
+// Module ID: 4881
+// Function ID: 4882
 // Name: LibdiscoreStore
-// Dependencies: [3, 504, 584, 4881, 2]
+// Dependencies: [3, 504, 572, 4882, 2]
 
-// Module 4880 (LibdiscoreStore)
+// Module 4881 (LibdiscoreStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, map1, set, set2, state;

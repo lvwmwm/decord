@@ -1,10 +1,10 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 11005
+// Function ID: 11006
 // Name: InAppNotificationActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 14225 (InAppNotificationActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 11005 (InAppNotificationActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

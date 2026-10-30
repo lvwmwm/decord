@@ -1,10 +1,10 @@
 // Module ID: 6581
 // Function ID: 6582
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 6581 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "36aa11af17352d73b5ec4f98f307b37b", name: "img_bungie_light", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "dd9ba5b8ac4831db353c60f9d72ff648", name: "img_account_sync_bluesky_light_and_dark", type: "png" });

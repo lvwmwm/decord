@@ -1,107 +1,300 @@
 // Module ID: 686
 // Function ID: 687
-// Dependencies: [687, 693, 1009, 898, 987, 1050, 1054, 1069, 1061, 1082, 1075, 1080, 1072, 878]
+// Dependencies: [687, 688, 691, 692]
+// Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify
 
 // Module 686
-import debugSymbolicatorIntegration from "debugSymbolicatorIntegration" /* 687 */;
-import _mod693 from "module_693" /* 693 */;
-import _mod878 from "module_878" /* 878 */;
-import feedbackAsyncIntegration from "feedbackAsyncIntegration" /* 898 */;
-import SDK_PACKAGE_NAME from "SDK_PACKAGE_NAME" /* 987 */;
-import init from "init" /* 1009 */;
-import ReactNativeClient from "ReactNativeClient" /* 1050 */;
-import _mod1054 from "module_1054" /* 1054 */;
-import reactNativeTracingIntegration from "reactNativeTracingIntegration" /* 1061 */;
-import TouchEventBoundary from "TouchEventBoundary" /* 1069 */;
-import PULL_DOWN_CLOSE_THRESHOLD from "PULL_DOWN_CLOSE_THRESHOLD" /* 1072 */;
-import FeedbackButton from "FeedbackButton" /* 1075 */;
-import FeedbackWidget from "FeedbackWidget" /* 1080 */;
-import _mod1082 from "module_1082" /* 1082 */;
+import _mod687 from "module_687" /* 687 */;
+import _mod691 from "module_691" /* 691 */;
 
-for (const key10013 in debugSymbolicatorIntegration) {
-  exports[key10013] = debugSymbolicatorIntegration[key10013];
-  continue;
+let hasOwnProperty, map;
+
+function addNonEnumerableProperty(arg0, arg1, value) {
+  try {
+    const _Object = Object;
+    const obj = { value, writable: true, configurable: true };
+    Object.defineProperty(arg0, arg1, obj);
+  } catch (err) {
+    const tmp4 = require;
+    if (_mod687.DEBUG_BUILD) {
+      const debug = tmp4(688).debug;
+      const _HermesInternal = HermesInternal;
+      debug.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
+    }
+  }
 }
-const ReactNativeClient_export = ReactNativeClient.ReactNativeClient;
-const init_export = _mod1054.init;
-const TouchEventBoundary_export = TouchEventBoundary.TouchEventBoundary;
-const reactNativeTracingIntegration_export = reactNativeTracingIntegration.reactNativeTracingIntegration;
-const FeedbackButton_export = FeedbackButton.FeedbackButton;
-const FeedbackWidget_export = FeedbackWidget.FeedbackWidget;
+function markFunctionWrapped(arg0, arg1) {
+  try {
+    const prototype = arg1.prototype || {};
+    arg1.prototype = prototype;
+    arg0.prototype = prototype;
+    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
+  } catch (err) {
+  }
+}
+function convertToPlainObject(type) {
+  const obj = _mod691;
+  if (obj.isError(type)) {
+    const error = { message: null, name: null, stack: null };
+    ({ message: obj6.message, name: obj6.name, stack: obj6.stack } = type);
+    if (typeof type === "object") {
+      let obj3;
+      if (null !== type) {
+        const obj2 = {};
+        obj3 = obj2;
+        const keys = Object.keys();
+        if (keys !== undefined) {
+          obj3 = obj2;
+          while (keys[tmp] !== undefined) {
+            let _Object2 = Object;
+            let hasOwnProperty2 = Object.prototype.hasOwnProperty;
+            if (!hasOwnProperty2.call(type, tmp17)) {
+              continue;
+            } else {
+              obj2[tmp17] = type[tmp17];
+              continue;
+            }
+            continue;
+          }
+        }
+      }
+      const merged = Object.assign(obj3);
+      return error;
+    }
+    obj3 = {};
+  } else {
+    const tmp2Result = _mod691;
+    if (tmp2Result.isEvent(type)) {
+      const obj4 = { type: type.type, target: serializeEventTarget(type.target), currentTarget: serializeEventTarget(type.currentTarget) };
+      if (typeof type === "object") {
+        let obj7;
+        if (null !== type) {
+          const obj5 = {};
+          obj7 = obj5;
+          const keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            obj7 = obj5;
+            while (keys1[tmp] !== undefined) {
+              let _Object = Object;
+              hasOwnProperty = Object.prototype.hasOwnProperty;
+              if (!hasOwnProperty.call(type, tmp8)) {
+                continue;
+              } else {
+                obj5[tmp8] = type[tmp8];
+                continue;
+              }
+              continue;
+            }
+          }
+        }
+        const merged1 = Object.assign(obj7);
+        let isInstanceOfResult = typeof globalThis.CustomEvent !== "undefined";
+        if (typeof globalThis.CustomEvent !== "undefined") {
+          const CustomEvent2 = globalThis.CustomEvent;
+          const tmp2Result2 = _mod691;
+          isInstanceOfResult = tmp2Result2.isInstanceOf(type, globalThis.CustomEvent);
+        }
+        if (isInstanceOfResult) {
+          obj4.detail = type.detail;
+        }
+        return obj4;
+      }
+      obj7 = {};
+    } else {
+      return type;
+    }
+  }
+}
+function serializeEventTarget(arg0) {
+  try {
+    let htmlTreeAsStringResult;
+    const obj = _mod691;
+    const tmp2 = require;
+    if (obj.isElement(arg0)) {
+      const tmp2Result = tmp2(692);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
+    } else {
+      const _Object = Object;
+      htmlTreeAsStringResult = toString.call(arg0);
+    }
+    return htmlTreeAsStringResult;
+  } catch (err) {
+    return "<unknown>";
+  }
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export const addBreadcrumb = _mod693.addBreadcrumb;
-export const addIntegration = _mod693.addIntegration;
-export const captureException = _mod693.captureException;
-export const captureEvent = _mod693.captureEvent;
-export const captureFeedback = _mod693.captureFeedback;
-export const captureMessage = _mod693.captureMessage;
-export const Scope = _mod693.Scope;
-export const setContext = _mod693.setContext;
-export const setExtra = _mod693.setExtra;
-export const setExtras = _mod693.setExtras;
-export const setTag = _mod693.setTag;
-export const setTags = _mod693.setTags;
-export const setUser = _mod693.setUser;
-export const startInactiveSpan = _mod693.startInactiveSpan;
-export const startSpan = _mod693.startSpan;
-export const startSpanManual = _mod693.startSpanManual;
-export const getActiveSpan = _mod693.getActiveSpan;
-export const getRootSpan = _mod693.getRootSpan;
-export const withActiveSpan = _mod693.withActiveSpan;
-export const suppressTracing = _mod693.suppressTracing;
-export const spanToJSON = _mod693.spanToJSON;
-export const spanIsSampled = _mod693.spanIsSampled;
-export const setMeasurement = _mod693.setMeasurement;
-export const getCurrentScope = _mod693.getCurrentScope;
-export const getGlobalScope = _mod693.getGlobalScope;
-export const getIsolationScope = _mod693.getIsolationScope;
-export const getClient = _mod693.getClient;
-export const setCurrentClient = _mod693.setCurrentClient;
-export const addEventProcessor = _mod693.addEventProcessor;
-export const lastEventId = _mod693.lastEventId;
-export const ErrorBoundary = init.ErrorBoundary;
-export const withErrorBoundary = init.withErrorBoundary;
-export const createReduxEnhancer = init.createReduxEnhancer;
-export const Profiler = init.Profiler;
-export const useProfiler = init.useProfiler;
-export const withProfiler = init.withProfiler;
-export const logger = feedbackAsyncIntegration.logger;
-export const consoleLoggingIntegration = feedbackAsyncIntegration.consoleLoggingIntegration;
-export const featureFlagsIntegration = feedbackAsyncIntegration.featureFlagsIntegration;
-export const metrics = feedbackAsyncIntegration.metrics;
-export const SDK_NAME = SDK_PACKAGE_NAME.SDK_NAME;
-export const SDK_VERSION = SDK_PACKAGE_NAME.SDK_VERSION;
-export { ReactNativeClient_export as ReactNativeClient };
-export { init_export as init };
-export const wrap = _mod1054.wrap;
-export const nativeCrash = _mod1054.nativeCrash;
-export const flush = _mod1054.flush;
-export const close = _mod1054.close;
-export const withScope = _mod1054.withScope;
-export const crashedLastRun = _mod1054.crashedLastRun;
-export { TouchEventBoundary_export as TouchEventBoundary };
-export const withTouchEventBoundary = TouchEventBoundary.withTouchEventBoundary;
-export { reactNativeTracingIntegration_export as reactNativeTracingIntegration };
-export const getCurrentReactNativeTracingIntegration = reactNativeTracingIntegration.getCurrentReactNativeTracingIntegration;
-export const getReactNativeTracingIntegration = reactNativeTracingIntegration.getReactNativeTracingIntegration;
-export const reactNavigationIntegration = reactNativeTracingIntegration.reactNavigationIntegration;
-export const reactNativeNavigationIntegration = reactNativeTracingIntegration.reactNativeNavigationIntegration;
-export const sentryTraceGesture = reactNativeTracingIntegration.sentryTraceGesture;
-export const TimeToInitialDisplay = reactNativeTracingIntegration.TimeToInitialDisplay;
-export const TimeToFullDisplay = reactNativeTracingIntegration.TimeToFullDisplay;
-export const startTimeToInitialDisplaySpan = reactNativeTracingIntegration.startTimeToInitialDisplaySpan;
-export const startTimeToFullDisplaySpan = reactNativeTracingIntegration.startTimeToFullDisplaySpan;
-export const startIdleNavigationSpan = reactNativeTracingIntegration.startIdleNavigationSpan;
-export const startIdleSpan = reactNativeTracingIntegration.startIdleSpan;
-export const getDefaultIdleNavigationSpanOptions = reactNativeTracingIntegration.getDefaultIdleNavigationSpanOptions;
-export const createTimeToFullDisplay = reactNativeTracingIntegration.createTimeToFullDisplay;
-export const createTimeToInitialDisplay = reactNativeTracingIntegration.createTimeToInitialDisplay;
-export const wrapExpoRouter = reactNativeTracingIntegration.wrapExpoRouter;
-export const Mask = _mod1082.Mask;
-export const Unmask = _mod1082.Unmask;
-export { FeedbackButton_export as FeedbackButton };
-export { FeedbackWidget_export as FeedbackWidget };
-export const showFeedbackWidget = PULL_DOWN_CLOSE_THRESHOLD.showFeedbackWidget;
-export const showFeedbackButton = PULL_DOWN_CLOSE_THRESHOLD.showFeedbackButton;
-export const hideFeedbackButton = PULL_DOWN_CLOSE_THRESHOLD.hideFeedbackButton;
-export const getDataFromUri = _mod878.getDataFromUri;
+export { addNonEnumerableProperty };
+export { convertToPlainObject };
+export function dropUndefinedKeys(obj) {
+  const f78837 = (item) => {
+    obj = closure_1;
+    let closure_0 = item;
+    items = undefined;
+    let obj2;
+    let value = item;
+    let tmp = items;
+    let push = items.push;
+    if (null !== item) {
+      value = item;
+      if (typeof item === "object") {
+        value = obj.get(item);
+        if (undefined === value) {
+          let tmp9 = globalThis;
+          let _Array = Array;
+          if (Array.isArray(item)) {
+            items = [];
+            let result = obj.set(item, items);
+            item = item.forEach(f78837);
+            value = items;
+          } else {
+            let constructor = item.constructor;
+            let _Object = Object;
+            let tmp3 = constructor === Object || undefined === constructor;
+            value = item;
+            if (tmp3) {
+              obj2 = {};
+              let result1 = obj.set(item, obj2);
+              let _Object2 = Object;
+              let keys = Object.keys(item);
+              let item1 = keys.forEach(f78838);
+              value = obj2;
+            }
+          }
+        }
+      }
+    }
+    arr = push(value);
+  };
+  const f78838 = (item) => {
+    let arr = closure_1_0[item];
+    if (undefined !== arr) {
+      let obj2 = closure_1_1;
+      let closure_1 = closure_1_1;
+      let tmp8 = null;
+      let value = arr;
+      let tmp7 = closure_1_3;
+      if (null !== arr) {
+        value = arr;
+        if (typeof arr === "object") {
+          value = obj2.get(arr);
+          if (undefined === value) {
+            let tmp9 = globalThis;
+            let _Array = Array;
+            if (Array.isArray(arr)) {
+              let items = [];
+              let result = obj2.set(arr, items);
+              item = arr.forEach(f78837);
+              value = items;
+            } else {
+              let constructor = arr.constructor;
+              let _Object = Object;
+              let tmp = constructor === Object || undefined === constructor;
+              value = arr;
+              if (tmp) {
+                let obj = {};
+                let result1 = obj2.set(arr, obj);
+                let _Object2 = Object;
+                let keys = Object.keys(arr);
+                let item1 = keys.forEach(f78838);
+                value = obj;
+              }
+            }
+          }
+        }
+      }
+      tmp7[item] = value;
+    }
+  };
+  map = new Map();
+  let closure_0 = obj;
+  let items;
+  obj = undefined;
+  let value = obj;
+  if (null !== obj) {
+    value = obj;
+    if (typeof obj === "object") {
+      value = map.get(obj);
+      if (undefined === value) {
+        const _Array = Array;
+        if (Array.isArray(obj)) {
+          items = [];
+          const result = map.set(obj, items);
+          const item = obj.forEach(f78837);
+          value = items;
+        } else {
+          const constructor = obj.constructor;
+          const _Object = Object;
+          value = obj;
+          const tmp2 = constructor === Object || undefined === constructor;
+          if (tmp2) {
+            obj = {};
+            const result1 = map.set(obj, obj);
+            const _Object2 = Object;
+            const keys = Object.keys(obj);
+            const item1 = keys.forEach(f78838);
+            value = obj;
+          }
+        }
+      }
+    }
+  }
+  return value;
+}
+export function extractExceptionKeysForMessage(arg0) {
+  const keys = Object.keys(convertToPlainObject(arg0));
+  const sorted = keys.sort();
+  let str = "[object has no keys]";
+  if (keys[0]) {
+    str = keys.join(", ");
+  }
+  return str;
+}
+export function fill(arg0, arg1, fn) {
+  if (arg1 in arg0) {
+    if (typeof arg0[arg1] === "function") {
+      const tmp7 = fn(arg0[arg1]);
+      if (typeof tmp7 === "function") {
+        markFunctionWrapped(tmp7, arg0[arg1]);
+      }
+      try {
+        arg0[arg1] = tmp7;
+      } catch (err) {
+        const tmp2 = require;
+        if (_mod687.DEBUG_BUILD) {
+          const debug = tmp2(688).debug;
+          const _HermesInternal = HermesInternal;
+          debug.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
+        }
+      }
+    }
+  }
+}
+export function getOriginalFunction(__sentry_original__) {
+  return __sentry_original__.__sentry_original__;
+}
+export { markFunctionWrapped };
+export function objectify(arg0) {
+  let string;
+  if (null == arg0 === true) {
+    const _String = String;
+    const self3 = this;
+    const self4 = this;
+    string = new String(arg0);
+  } else {
+    const tmp = typeof arg0 === "symbol" || typeof arg0 === "bigint";
+    if (tmp === true) {
+      const _Object = Object;
+      string = Object(arg0);
+    } else {
+      string = arg0;
+      const obj = _mod691;
+      if (obj.isPrimitive(arg0) === true) {
+        const self = this;
+        const self2 = this;
+        string = new arg0.constructor(arg0);
+      }
+    }
+  }
+  return string;
+}

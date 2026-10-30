@@ -1,22 +1,22 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10914
+// Function ID: 10915
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10892, 5663, 1084, 21, 1125, 10890, 4833, 10893, 6057, 8658, 6727, 2065, 10894, 2]
+// Dependencies: [5, 19, 10915, 5669, 1072, 21, 1114, 10913, 4834, 10916, 6064, 8692, 6734, 2062, 10917, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10891 (activityLaunchErrorUtils)
+// Module 10914 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import intl12 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5663 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6057 */;
-import InteractionUtils from "InteractionUtils" /* 8658 */;
-import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10890 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10893 */;
+import Constants from "Constants" /* 1072 */;
+import intl12 from "intl" /* 1114 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5669 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 6064 */;
+import InteractionUtils from "InteractionUtils" /* 8692 */;
+import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 10913 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10892 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10915 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

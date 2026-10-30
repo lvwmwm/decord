@@ -1,89 +1,19 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 15941
+// Function ID: 15942
 // Name: WarningCircle
-// Dependencies: [109, 19, 21, 558, 576, 8017, 2]
+// Dependencies: [19, 21, 8023, 2]
+// Exports: default
 
-// Module 15901 (WarningCircle)
+// Module 15941 (WarningCircle)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8017 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import inlineStyles from "inlineStyles" /* 8023 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_2 = ["width", "height", "color"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningCircle(arg0) {
-  let color;
-  let height;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(12);
-  if (cResult[0] !== arg0) {
-    ({ width, height, color } = arg0);
-    const tmp10 = _objectWithoutProperties(arg0, closure_2);
-    cResult[0] = arg0;
-    cResult[1] = tmp10;
-    cResult[2] = width;
-    cResult[3] = height;
-    cResult[4] = color;
-    tmp7 = color;
-    tmp6 = height;
-    tmp5 = width;
-    tmp4 = tmp10;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-  }
-  let num6 = 20;
-  let num7 = 20;
-  if (undefined !== tmp5) {
-    num7 = tmp5;
-  }
-  if (undefined !== tmp6) {
-    num6 = tmp6;
-  }
-  let str = "currentColor";
-  if (undefined !== tmp7) {
-    str = tmp7;
-  }
-  if (cResult[5] !== str) {
-    const tmp13 = jsx(inlineStyles.Path, { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str });
-    cResult[5] = str;
-    cResult[6] = tmp13;
-    tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[7] === num6) {
-    if (cResult[8] === tmp4) {
-      if (cResult[9] === tmp11) {
-        let tmp14;
-        if (cResult[10] === num7) {
-          tmp14 = cResult[11];
-        }
-        return tmp14;
-      }
-    }
-  }
-  const Svg = tmp(8017).Svg;
-  const merged = Object.assign(tmp4);
-  const tmp16 = <Svg width={num7} height={num6} viewBox="0 0 20 20">{tmp11}</Svg>;
-  cResult[7] = num6;
-  cResult[8] = tmp4;
-  cResult[9] = tmp11;
-  cResult[10] = num7;
-  cResult[11] = tmp16;
-  tmp14 = tmp16;
-}) : (function WarningCircle(width) {
+const result = size.fileFinishedImporting("design/void/WarningCircle/native/WarningCircle.tsx");
+
+export default function WarningCircle(width) {
   let num = width.width;
   if (num === undefined) {
     num = 20;
@@ -100,7 +30,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WarningCir
   const Svg = inlineStyles.Svg;
   const merged1 = Object.assign(merged);
   return <Svg width={num} height={num2} viewBox="0 0 20 20">{jsx(inlineStyles.Path, { d: "M10 0C4.486 0 0 4.486 0 10C0 15.515 4.486 20 10 20C15.514 20 20 15.515 20 10C20 4.486 15.514 0 10 0ZM9 4H11V11H9V4ZM10 15.25C9.31 15.25 8.75 14.691 8.75 14C8.75 13.31 9.31 12.75 10 12.75C10.69 12.75 11.25 13.31 11.25 14C11.25 14.691 10.69 15.25 10 15.25Z", fillRule: "evenodd", clipRule: "evenodd", fill: str })}</Svg>;
-});
-const result = size.fileFinishedImporting("design/void/WarningCircle/native/WarningCircle.tsx");
-
-export default tmp3;
+};

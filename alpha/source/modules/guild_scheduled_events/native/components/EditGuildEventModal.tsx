@@ -1,31 +1,30 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 9008
+// Function ID: 9009
 // Name: EditGuildEventModal
-// Dependencies: [5, 32, 19, 17, 4863, 21, 5005, 587, 558, 576, 1631, 8926, 1894, 8925, 8937, 5014, 1125, 8930, 8979, 8946, 8982, 9050, 9051, 7155, 2]
+// Dependencies: [5, 32, 19, 17, 4864, 21, 5009, 575, 1626, 8959, 8970, 1889, 8958, 5018, 1114, 8963, 9009, 8979, 9012, 9063, 9064, 7163, 2]
 
-// Module 8978 (EditGuildEventModal)
+// Module 9008 (EditGuildEventModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8925 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 8926 */;
-import EntityUtils from "EntityUtils" /* 8930 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8946 */;
-import useGetEventChannelsByType from "useGetEventChannelsByType" /* 8979 */;
-import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 8982 */;
-import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9050 */;
-import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9051 */;
+import nativeDefault from "native" /* 575 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1889 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 8958 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 8959 */;
+import EntityUtils from "EntityUtils" /* 8963 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 8979 */;
+import useGetEventChannelsByType from "useGetEventChannelsByType" /* 9009 */;
+import EditGuildEventWhereDefault from "EditGuildEventWhere" /* 9012 */;
+import EditGuildEventDetailsDefault from "EditGuildEventDetails" /* 9063 */;
+import EditGuildEventPreviewDefault from "EditGuildEventPreview" /* 9064 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c2, constants, obj1, tmp10;
+let c1, c2, constants;
 
 let obj2;
 let obj3;
@@ -39,150 +38,7 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_10 = createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EditGuildEventModal(guild) {
-  let first;
-  let first1;
-  let left;
-  let right;
-  let tmp = guild;
-  let tmp2 = first;
-  let obj = guild(first[9]);
-  const cResult = obj.c(65);
-  guild = guild.guild;
-  const onCloseModal = guild.onCloseModal;
-  const initialGuildEvent = guild.initialGuildEvent;
-  const targetChannel = guild.targetChannel;
-  const tmp4 = closure_10();
-  ({ left, right } = onCloseModal(first[10])());
-  const tmp5 = onCloseModal(first[10])();
-  if (cResult[0] === initialGuildEvent) {
-    let tmp6;
-    let tmp11;
-    let tmp14;
-    if (cResult[1] === targetChannel) {
-      tmp6 = cResult[2];
-    }
-    let obj3 = react;
-    const tmp9 = first1(react.useState(tmp6), 2);
-    first = tmp9[0];
-    let closure_4 = tmp9[1];
-    if (cResult[3] !== initialGuildEvent) {
-      const tmpResult = tmp(tmp2[11]);
-      const isEditingEventResult = tmpResult.isEditingEvent(initialGuildEvent);
-      cResult[3] = initialGuildEvent;
-      cResult[4] = isEditingEventResult;
-      tmp11 = isEditingEventResult;
-    } else {
-      tmp11 = cResult[4];
-    }
-    first1 = tmp8(obj3.useState(tmp11), 1)[0];
-    if (cResult[5] !== first1) {
-      class I {
-        constructor() {
-          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
-          if (closure_5) {
-            items = [, ];
-            items[0] = obj;
-            obj1 = { name: null };
-            tmp = closure_0;
-            tmp2 = closure_3;
-            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
-            items[1] = obj1;
-            items1 = items;
-          } else {
-            items1 = [];
-            items1[0] = obj;
-          }
-          return items1;
-        }
-      }
-      cResult[5] = first1;
-      cResult[6] = I;
-      tmp14 = I;
-    } else {
-      class I {
-        constructor() {
-          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
-          if (closure_5) {
-            items = [, ];
-            items[0] = obj;
-            obj1 = { name: null };
-            tmp = closure_0;
-            tmp2 = closure_3;
-            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
-            items[1] = obj1;
-            items1 = items;
-          } else {
-            items1 = [];
-            items1[0] = obj;
-          }
-          return items1;
-        }
-      }
-    }
-    const first2 = tmp8(obj3.useState(tmp14), 1)[0];
-    if (cResult[7] === guild.id) {
-      class I {
-        constructor() {
-          obj = { name: closure_0(closure_3[11]).EditGuildEventScreens.CHANNEL_SELECTOR };
-          if (closure_5) {
-            items = [, ];
-            items[0] = obj;
-            obj1 = { name: null };
-            tmp = closure_0;
-            tmp2 = closure_3;
-            obj1.name = closure_0(closure_3[11]).EditGuildEventScreens.DETAILS;
-            items[1] = obj1;
-            items1 = items;
-          } else {
-            items1 = [];
-            items1[0] = obj;
-          }
-          return items1;
-        }
-      }
-    }
-    class M {
-      constructor() {
-        tmp = closure_3;
-        obj = closure_2(closure_3[12]);
-        result = obj.dismissGlobalKeyboard();
-        tmp3 = closure_5;
-        if (tmp3) {
-          tmp4 = initialGuildEvent;
-          tmp5 = null;
-          id = undefined;
-          if (initialGuildEvent != null) {
-            id = tmp4.id;
-          }
-          if (null != id) {
-            tmp8 = closure_1;
-            obj3 = closure_1(tmp[13]);
-            tmp9 = closure_3;
-            tmp10 = guild;
-            saveEventResult = obj3.saveEvent(tmp4.id, closure_3, guild.id);
-          }
-          return saveEventResult;
-        }
-        obj2 = closure_1(tmp[13]);
-        saveEventResult = obj2.createGuildEvent(closure_3, guild.id);
-        return;
-      }
-    }
-    cResult[7] = guild.id;
-    cResult[8] = first;
-    cResult[9] = initialGuildEvent;
-    cResult[10] = first1;
-    cResult[11] = M;
-  }
-  const tmpResult2 = tmp(tmp2[11]);
-  const initialGuildEventData = tmpResult2.getInitialGuildEventData(initialGuildEvent, targetChannel);
-  cResult[0] = initialGuildEvent;
-  cResult[1] = targetChannel;
-  cResult[2] = initialGuildEventData;
-  tmp6 = initialGuildEventData;
-}) : (function EditGuildEventModal(guild) {
+const memoResult = react.memo(function EditGuildEventModal(guild) {
   let _undefined;
   let c6;
   let initialGuildEvent;
@@ -190,7 +46,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let onClose;
   let right;
   let tmp8;
-  const f103958 = () => {
+  const f93528 = () => {
     obj = KeyboardManagerUtilsAll;
     const result = obj.dismissGlobalKeyboard();
     const tmp3 = first1;
@@ -215,7 +71,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let guildEvent;
   let first1;
   react = undefined;
-  let obj = function _handleSave2() {
+  let obj = function _handleSave() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       if (c2 === 2) {
@@ -228,7 +84,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -263,20 +119,20 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   id = closure_128_2.id;
                 }
                 if (null != id) {
-                  const AccessibilityAnnouncer2 = tmp3(guildEvent[15]).AccessibilityAnnouncer;
+                  const AccessibilityAnnouncer2 = tmp3(guildEvent[13]).AccessibilityAnnouncer;
                   const announce2 = AccessibilityAnnouncer2.announce;
-                  const intl2 = tmp3(guildEvent[16]).intl;
-                  announce2(intl2.string(tmp3(guildEvent[16]).t["F9On+q"]));
+                  const intl2 = tmp3(guildEvent[14]).intl;
+                  announce2(intl2.string(tmp3(guildEvent[14]).t["F9On+q"]));
                 }
                 closure_128_1();
               }
-              const AccessibilityAnnouncer = tmp3(guildEvent[15]).AccessibilityAnnouncer;
+              const AccessibilityAnnouncer = tmp3(guildEvent[13]).AccessibilityAnnouncer;
               const announce = AccessibilityAnnouncer.announce;
-              const intl = tmp3(guildEvent[16]).intl;
-              announce(intl.string(tmp3(guildEvent[16]).t["5HzXO5"]));
+              const intl = tmp3(guildEvent[14]).intl;
+              announce(intl.string(tmp3(guildEvent[14]).t["5HzXO5"]));
             }
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           c2 = 3;
@@ -290,12 +146,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp = closure_10();
   let tmp2 = require("useSafeAreaInsets")();
   ({ left, right } = tmp2);
-  obj = guild(guildEvent[11]);
+  obj = guild(guildEvent[9]);
   let tmp3 = first1(react.useState(obj.getInitialGuildEventData(initialGuildEvent, targetChannel)), 2);
   guildEvent = tmp3[0];
   let closure_4 = tmp3[1];
   const useState = react.useState;
-  let obj2 = guild(guildEvent[11]);
+  let obj2 = guild(guildEvent[9]);
   first1 = first1(useState(obj2.isEditingEvent(initialGuildEvent)), 1)[0];
   const first2 = first1(react.useState(() => {
     let items1;
@@ -310,7 +166,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     return items1;
   }), 1)[0];
-  [c6, tmp8] = first1(require("LazyAPIPromise")(f103958), 2);
+  [c6, tmp8] = first1(require("LazyAPIPromise")(f93528), 2);
   constants = {
     guild,
     guildEvent,
@@ -370,9 +226,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     },
     fullscreen: true
   };
-  const tmp7 = first1(require("LazyAPIPromise")(f103958), 2);
-  const CHANNEL_SELECTOR = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
-  const CHANNEL_SELECTOR2 = guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  const tmp7 = first1(require("LazyAPIPromise")(f93528), 2);
+  const CHANNEL_SELECTOR = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
+  const CHANNEL_SELECTOR2 = guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR;
   obj3[CHANNEL_SELECTOR] = obj4;
   const obj5 = {
     title: "",
@@ -384,8 +240,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     },
     fullscreen: true
   };
-  const DETAILS = guild(guildEvent[11]).EditGuildEventScreens.DETAILS;
-  const DETAILS2 = guild(guildEvent[11]).EditGuildEventScreens.DETAILS;
+  const DETAILS = guild(guildEvent[9]).EditGuildEventScreens.DETAILS;
+  const DETAILS2 = guild(guildEvent[9]).EditGuildEventScreens.DETAILS;
   obj3[DETAILS] = obj5;
   const obj6 = {
     title: "",
@@ -397,14 +253,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     },
     fullscreen: true
   };
-  const PREVIEW = guild(guildEvent[11]).EditGuildEventScreens.PREVIEW;
-  const PREVIEW2 = guild(guildEvent[11]).EditGuildEventScreens.PREVIEW;
+  const PREVIEW = guild(guildEvent[9]).EditGuildEventScreens.PREVIEW;
+  const PREVIEW2 = guild(guildEvent[9]).EditGuildEventScreens.PREVIEW;
   obj3[PREVIEW] = obj6;
   let items = [tmp.container, { paddingLeft: left, paddingRight: right }];
-  ({ screens: obj3, initialRouteName: guild(guildEvent[11]).EditGuildEventScreens.CHANNEL_SELECTOR, initialRouteStack: first2, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle });
-  const Navigator = guild(guildEvent[23]).Navigator;
+  ({ screens: obj3, initialRouteName: guild(guildEvent[9]).EditGuildEventScreens.CHANNEL_SELECTOR, initialRouteStack: first2, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle });
+  const Navigator = guild(guildEvent[21]).Navigator;
   return <obj style={items}>{null}</obj>;
-}));
+});
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventModal.tsx");
 
 export default memoResult;

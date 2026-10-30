@@ -1,68 +1,22 @@
-// Module ID: 9192
-// Function ID: 9193
+// Module ID: 9205
+// Function ID: 9206
 // Name: useChannelVideoLimit
-// Dependencies: [4879, 5755, 1084, 558, 576, 504, 2]
-// Exports: getChannelVideoLimit
+// Dependencies: [4880, 5762, 1072, 504, 2]
+// Exports: default, getChannelVideoLimit
 
-// Module 9192 (useChannelVideoLimit)
-import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5755 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9205 (useChannelVideoLimit)
+import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelVideoLimit(arg0) {
-  let first;
-  let guildId;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = SortedVoiceStateStore;
-    const items = [SortedVoiceStateStore, GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function h() {
-      let obj;
-      let tmp5;
-      const result = SortedVoiceStateStore.countVoiceStatesForChannel(guildId.id);
-      const guild = GuildStore.getGuild(guildId.getGuildId());
-      const tmp = guildId;
-      if (null == guild) {
-        obj = { reachedLimit: false, limit: -1 };
-      } else if (tmp.type === ChannelTypes.GUILD_STAGE_VOICE) {
-        obj = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
-        const obj2 = { reachedLimit: result > guild.maxStageVideoChannelUsers, limit: guild.maxStageVideoChannelUsers };
-      } else {
-        obj = { reachedLimit: tmp5, limit: guild.maxVideoChannelUsers };
-        tmp5 = guild.maxVideoChannelUsers > 0 && result > guild.maxVideoChannelUsers;
-      }
-      return obj;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresObject(first, tmp7, tmp8);
-}) : (function useChannelVideoLimit(arg0) {
+let result = size.fileFinishedImporting("modules/video_calls/useChannelVideoLimit.tsx");
+
+export default function useChannelVideoLimit(arg0) {
   let guildId;
   _require = arg0;
   let obj = require("get initialized");
@@ -85,10 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     }
     return obj;
   }, items1);
-});
-let result = size.fileFinishedImporting("modules/video_calls/useChannelVideoLimit.tsx");
-
-export default tmp2;
+};
 export function getChannelVideoLimit(channel) {
   let obj;
   let tmp4;

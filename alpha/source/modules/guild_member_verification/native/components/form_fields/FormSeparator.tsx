@@ -1,58 +1,27 @@
-// Module ID: 6952
-// Function ID: 6953
-// Name: form_fields/FormSeparator
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 2]
+// Module ID: 6960
+// Function ID: 6961
+// Name: FormSeparator
+// Dependencies: [19, 17, 21, 5009, 575, 2]
+// Exports: default
 
-// Module 6952 (form_fields/FormSeparator)
+// Module 6960 (FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let obj = { separator: obj2 };
-obj2 = { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 };
-let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormSeparator(style) {
-  const obj = react2;
-  const cResult = obj.c(6);
-  const tmp2 = closure_4();
-  if (cResult[0] === style.style) {
-    let tmp3;
-    if (cResult[1] === tmp2.separator) {
-      tmp3 = cResult[2];
-    }
-    if (cResult[3] === style) {
-      let tmp4;
-      if (cResult[4] === tmp3) {
-        tmp4 = cResult[5];
-      }
-      return tmp4;
-    }
-    const merged = Object.assign(style);
-    const tmp10 = <View style={tmp3} />;
-    cResult[3] = style;
-    cResult[4] = tmp3;
-    cResult[5] = tmp10;
-    tmp4 = tmp10;
-  }
-  const items = [tmp2.separator, style.style];
-  cResult[0] = style.style;
-  cResult[1] = tmp2.separator;
-  cResult[2] = items;
-  tmp3 = items;
-}) : (function FormSeparator(style) {
-  const tmp = closure_4();
+const obj = { separator: { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 } };
+({ borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 });
+let closure_2 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
+
+export default function FormSeparator(style) {
+  const tmp = closure_2();
   const merged = Object.assign(style);
   const items = [tmp.separator, style.style];
   return <View style={items} />;
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/form_fields/FormSeparator.tsx");
-
-export default tmp3;
+};

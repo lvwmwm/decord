@@ -1,114 +1,29 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14623
+// Function ID: 14624
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [109, 19, 5248, 1084, 21, 558, 576, 14589, 6731, 8819, 8820, 2]
+// Dependencies: [19, 5254, 1072, 21, 14622, 6738, 8853, 8854, 2]
+// Exports: default
 
-// Module 14590 (AppStoreOverlayMediaModalWrapper)
+// Module 14623 (AppStoreOverlayMediaModalWrapper)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8819 */;
-import MediaModalDefault from "MediaModal" /* 8820 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import Constants from "Constants" /* 1072 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 8853 */;
+import MediaModalDefault from "MediaModal" /* 8854 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5248 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ActionSheetStore from "ActionSheetStore" /* 5254 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
-
-let closure_3 = ["onCloseCallback"];
 const MEDIA_MODAL_KEY = Constants.MEDIA_MODAL_KEY;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayMediaModalWrapper(onCloseCallback) {
-  let closure_0;
-  let tmp13;
-  let tmp4;
-  let tmp8;
-  let tmp9;
-  const tmp = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] !== onCloseCallback) {
-    _require = onCloseCallback;
-    const tmp7 = _objectWithoutProperties(onCloseCallback, closure_3);
-    cResult[0] = onCloseCallback;
-    cResult[1] = onCloseCallback.onCloseCallback;
-    cResult[2] = tmp7;
-    tmp4 = tmp7;
-  } else {
-    _require = cResult[1];
-    tmp4 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-    const items = [];
-    cResult[3] = M;
-    cResult[4] = items;
-    tmp9 = items;
-    tmp8 = M;
-  } else {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-    tmp9 = cResult[4];
-  }
-  const effect = react.useEffect(tmp8, tmp9);
-  if (cResult[5] !== tmp3) {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-    cResult[5] = tmp3;
-    cResult[6] = tmp12;
-  } else {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-  }
-  if (ActionSheetStore.isOpen()) {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-    MediaModalSheetWrapperDefault;
-    const merged = Object.assign(tmp4);
-    const tmp28 = <tmp24 onCloseCallback={tmp3} />;
-    cResult[7] = tmp3;
-    cResult[8] = tmp4;
-    cResult[9] = tmp28;
-  } else {
-    class M {
-      constructor() {
-        return function() { /* body not rendered: F153977 */ };
-      }
-    }
-    MediaModalDefault;
-    const merged1 = Object.assign(tmp4);
-    const tmp20 = <tmp16 onClose={tmp11} />;
-    cResult[10] = tmp11;
-    cResult[11] = tmp4;
-    cResult[12] = tmp20;
-    tmp13 = tmp20;
-  }
-  return tmp13;
-}) : (function AppStoreOverlayMediaModalWrapper(onCloseCallback) {
+let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayMediaModalWrapper.tsx");
+
+export default function AppStoreOverlayMediaModalWrapper(onCloseCallback) {
   let tmp4Result;
   onCloseCallback = onCloseCallback.onCloseCallback;
   const merged = Object.assign(onCloseCallback, Object.assign({ onCloseCallback: 0 }));
   const effect = react.useEffect(() => () => {
-    const obj = onCloseCallback(closure_1_2[7]);
+    const obj = onCloseCallback(closure_1_2[4]);
     const result = obj.clearMediaModalFooterAction();
   }, []);
   const items = [onCloseCallback];
@@ -131,7 +46,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOv
     tmp4Result = tmp4(tmp5Result2, obj);
   }
   return tmp4Result;
-});
-let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayMediaModalWrapper.tsx");
-
-export default tmp2;
+};

@@ -1,15 +1,15 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11943
+// Function ID: 11944
 // Name: transferToPlayStation
-// Dependencies: [5, 1084, 11751, 11747, 11754, 584, 1294, 11755, 2]
+// Dependencies: [5, 1072, 11944, 11940, 11947, 572, 1283, 11948, 2]
 // Exports: transferToPlayStation
 
-// Module 11750 (transferToPlayStation)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11751 */;
-import ConsoleCommands from "ConsoleCommands" /* 11755 */;
+// Module 11943 (transferToPlayStation)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11944 */;
+import ConsoleCommands from "ConsoleCommands" /* 11948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _transferToPlayStation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ let obj = function _transferToPlayStation() {
           } else {
             closure_132_1(closure_132_2[4])(id.id, closure_0);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c6 = 3;
@@ -139,7 +139,7 @@ obj = function _sendConnectVoiceCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

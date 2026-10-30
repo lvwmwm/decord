@@ -1,13 +1,13 @@
-// Module ID: 11874
-// Function ID: 11875
+// Module ID: 12070
+// Function ID: 12071
 // Name: FramePoolManager
-// Dependencies: [11875, 11877, 11876, 10879, 2]
+// Dependencies: [12071, 12073, 12072, 10902, 2]
 
-// Module 11874 (FramePoolManager)
-import leaveFrame from "leaveFrame" /* 10879 */;
-import FrameStackLevel from "FrameStackLevel" /* 11876 */;
-import FramePoolActionCreators from "FramePoolActionCreators" /* 11877 */;
-import AbstractFramePoolManager from "AbstractFramePoolManager" /* 11875 */;
+// Module 12070 (FramePoolManager)
+import leaveFrame from "leaveFrame" /* 10902 */;
+import FrameStackLevel from "FrameStackLevel" /* 12072 */;
+import FramePoolActionCreators from "FramePoolActionCreators" /* 12073 */;
+import AbstractFramePoolManager from "AbstractFramePoolManager" /* 12071 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,74 +1,35 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 17760
+// Function ID: 17761
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1084, 21, 5005, 558, 576, 5271, 7045, 7044, 7047, 7355, 14536, 6960, 6963, 15773, 11718, 8631, 15772, 6015, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5009, 5619, 7052, 7055, 7054, 7363, 14569, 6968, 6969, 15813, 11911, 8665, 15812, 6022, 2]
+// Exports: default
 
-// Module 17689 (UserSettingsDesignSystemFormPrimitives)
+// Module 17760 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 6960 */;
-import TableRow2 from "TableRow" /* 6963 */;
-import TableRadioRow from "TableRadioRow" /* 7044 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7045 */;
-import TableRowGroup3 from "TableRowGroup" /* 7047 */;
-import TableSwitchRow5 from "TableSwitchRow" /* 7355 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8631 */;
-import VoiceXIcon from "VoiceXIcon" /* 11718 */;
-import TableSliderRow from "TableSliderRow" /* 15772 */;
-import Slider2 from "Slider" /* 15773 */;
+import Constants from "Constants" /* 1072 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 6968 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7052 */;
+import TableRowGroup3 from "TableRowGroup" /* 7054 */;
+import TableRadioRow from "TableRadioRow" /* 7055 */;
+import TableSwitchRow5 from "TableSwitchRow" /* 7363 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8665 */;
+import VoiceXIcon from "VoiceXIcon" /* 11911 */;
+import Checkbox from "Checkbox" /* 14569 */;
+import TableSliderRow from "TableSliderRow" /* 15812 */;
+import Slider2 from "Slider" /* 15813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const Stack_Stack = tmp(6015);
-const Checkbox = tmp(14536);
-const ScrollView = react_native.ScrollView;
-const NOOP = Constants.NOOP;
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
-let closure_9 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 32 } });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Radio() {
-  let items;
-  let items1;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Radio" });
-    const tmp8 = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Select a single option from a short list of multiple options" });
-    cResult[0] = tmp7;
-    cResult[1] = tmp8;
-    tmp4 = tmp7;
-    tmp5 = tmp8;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: items };
-    items = [tmp4, tmp5, ];
-    const obj3 = { title: "Role Colors", hasIcons: false, defaultValue: "color-in-names", onChange: NOOP, children: items1 };
-    const TableRadioGroup = tmp(7045).TableRadioGroup;
-    items1 = [metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
-    items[2] = metroImportDefault(TableRadioGroup, obj3);
-    const tmp14 = metroImportDefault(metroImportAll, obj2);
-    cResult[2] = tmp14;
-    tmp9 = tmp14;
-  } else {
-    tmp9 = cResult[2];
-  }
-  return tmp9;
-}) : (function Radio() {
+function Radio() {
   let items;
   let items1;
   const obj = { children: items };
@@ -78,358 +39,92 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Radio(
   items1 = [metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors in names", value: "color-in-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Show role colors next to names", value: "color-next-to-names" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Don't show role colors", value: "no-color" }), metroRequire(TableRadioRow.TableRadioRow, { label: "Disabled Item", subLabel: "This should not be selectable", value: "option4", disabled: true })];
   items[2] = metroImportDefault(TableRadioGroup, obj2);
   return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSwitchState(arg0) {
+}
+function Switch() {
+  let TableSwitchRow;
+  let c0;
   let closure_129_0;
-  let first;
+  let items;
+  let items1;
+  let obj7;
+  let tmp2;
   let tmp4;
   let tmp6;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp4, closure_129_0] = react.useState(undefined === arg0 || arg0);
-  _slicedToArray(react.useState(undefined === arg0 || arg0), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(arg0) {
-      closure_1_0(arg0);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4) {
-    const obj2 = { value: tmp4, onValueChange: first };
-    cResult[1] = tmp4;
-    cResult[2] = obj2;
-    tmp6 = obj2;
-  } else {
-    tmp6 = cResult[2];
-  }
-  return tmp6;
-}) : (function useSwitchState() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  const tmp = _slicedToArray(react.useState(flag), 2);
-  let closure_0 = tmp[1];
-  const obj = {
-    value: tmp[0],
-    onValueChange: react.useCallback((arg0) => {
-      closure_0(arg0);
-    }, [])
-  };
-  return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Switch() {
-  let TableSwitchRow;
-  let items;
-  let items1;
-  let obj3;
-  let tmp13;
-  let tmp19;
-  let tmp25;
-  let tmp31;
-  let tmp37;
   let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(18);
-  const tmp4 = closure_11();
-  const tmp5 = closure_11(false);
-  const tmp6 = closure_11();
-  const tmp7 = closure_11(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp11 = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Switch" });
-    const tmp12 = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
-    cResult[0] = tmp11;
-    cResult[1] = tmp12;
-    tmp8 = tmp11;
-    tmp9 = tmp12;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  if (cResult[2] !== tmp4) {
-    const obj2 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj3) };
-    const TableRowGroup = tmp(7047).TableRowGroup;
-    obj3 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
-    TableSwitchRow = tmp(7355).TableSwitchRow;
-    const merged = Object.assign(tmp4);
-    const tmp18 = metroRequire(TableRowGroup, obj2);
-    cResult[2] = tmp4;
-    cResult[3] = tmp18;
-    tmp13 = tmp18;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== tmp5) {
-    const obj4 = { label: "When posted as links to chat" };
-    const TableSwitchRow2 = tmp(7355).TableSwitchRow;
-    const merged1 = Object.assign(tmp5);
-    const tmp24 = metroRequire(TableSwitchRow2, obj4);
-    cResult[4] = tmp5;
-    cResult[5] = tmp24;
-    tmp19 = tmp24;
-  } else {
-    tmp19 = cResult[5];
-  }
-  if (cResult[6] !== tmp6) {
-    const obj5 = { label: "When uploaded directly to Discord" };
-    const TableSwitchRow3 = tmp(7355).TableSwitchRow;
-    const merged2 = Object.assign(tmp6);
-    const tmp30 = metroRequire(TableSwitchRow3, obj5);
-    cResult[6] = tmp6;
-    cResult[7] = tmp30;
-    tmp25 = tmp30;
-  } else {
-    tmp25 = cResult[7];
-  }
-  if (cResult[8] !== tmp7) {
-    const obj6 = { label: "With image descriptions" };
-    const TableSwitchRow4 = tmp(7355).TableSwitchRow;
-    const merged3 = Object.assign(tmp7);
-    const tmp36 = metroRequire(TableSwitchRow4, obj6);
-    cResult[8] = tmp7;
-    cResult[9] = tmp36;
-    tmp31 = tmp36;
-  } else {
-    tmp31 = cResult[9];
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { label: "Disabled switch item", subLabel: "This should not be switchable", disabled: true, value: false, onValueChange: NOOP };
-    const tmp40 = metroRequire(TableSwitchRow5.TableSwitchRow, obj7);
-    cResult[10] = tmp40;
-    tmp37 = tmp40;
-  } else {
-    tmp37 = cResult[10];
-  }
-  if (cResult[11] === tmp19) {
-    if (cResult[12] === tmp25) {
-      let tmp41;
-      if (cResult[13] === tmp31) {
-        tmp41 = cResult[14];
-      }
-      if (cResult[15] === tmp13) {
-        let tmp43;
-        if (cResult[16] === tmp41) {
-          tmp43 = cResult[17];
-        }
-        return tmp43;
-      }
-      const obj8 = { children: items };
-      items = [tmp8, tmp9, tmp13, tmp41];
-      const tmp46 = metroImportDefault(metroImportAll, obj8);
-      cResult[15] = tmp13;
-      cResult[16] = tmp41;
-      cResult[17] = tmp46;
-      tmp43 = tmp46;
-    }
-  }
-  const obj9 = { title: "Display images, videos, and lolcats", hasIcons: false, children: items1 };
-  items1 = [tmp19, tmp25, tmp31, tmp37];
-  const tmp42 = metroImportDefault(TableRowGroup3.TableRowGroup, obj9);
-  cResult[11] = tmp19;
-  cResult[12] = tmp25;
-  cResult[13] = tmp31;
-  cResult[14] = tmp42;
-  tmp41 = tmp42;
-}) : (function Switch() {
-  let TableSwitchRow;
-  let items;
-  let items1;
-  let obj3;
-  const tmp = closure_11();
-  const tmp2 = closure_11(false);
-  const obj = { children: items };
+  const f112705 = (arg0) => {
+    _undefined(arg0);
+  };
+  [tmp2, closure_129_0] = _slicedToArray(react.useState(true), 2);
+  const tmp = _slicedToArray(react.useState(true), 2);
+  const obj = { value: tmp2, onValueChange: react.useCallback(f112705, []) };
+  [tmp4, c0] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const obj2 = { value: tmp4, onValueChange: react.useCallback(f112705, []) };
+  [tmp6, c0] = react.useState(true);
+  _slicedToArray(react.useState(true), 2);
+  c0 = undefined;
+  const obj3 = { value: tmp6, onValueChange: react.useCallback(f112705, []) };
+  [tmp8, c0] = react.useState(false);
+  _slicedToArray(react.useState(false), 2);
+  const obj5 = { children: items };
   items = [, , , ];
-  const tmp3 = closure_11();
-  const tmp4 = closure_11(false);
+  const obj4 = { value: tmp8, onValueChange: react.useCallback(f112705, []) };
   items[0] = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Switch" });
   items[1] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
-  const obj2 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj3) };
+  const obj6 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj7) };
   const TableRowGroup = TableRowGroup3.TableRowGroup;
-  obj3 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
+  obj7 = { label: "Show emoji reactions on messages", subLabel: "Show more information in less space" };
   TableSwitchRow = TableSwitchRow5.TableSwitchRow;
-  const merged = Object.assign(tmp);
-  items[2] = metroRequire(TableRowGroup, obj2);
-  const obj4 = { title: "Display images, videos, and lolcats", hasIcons: false, children: items1 };
+  const merged = Object.assign(obj);
+  items[2] = metroRequire(TableRowGroup, obj6);
+  const obj8 = { title: "Display images, videos, and lolcats", hasIcons: false, children: items1 };
   const TableRowGroup2 = TableRowGroup3.TableRowGroup;
-  const obj5 = { label: "When posted as links to chat" };
+  const obj9 = { label: "When posted as links to chat" };
   const TableSwitchRow2 = TableSwitchRow5.TableSwitchRow;
-  const merged1 = Object.assign(tmp2);
-  items1 = [metroRequire(TableSwitchRow2, obj5), , , ];
-  const obj6 = { label: "When uploaded directly to Discord" };
+  const merged1 = Object.assign(obj2);
+  items1 = [metroRequire(TableSwitchRow2, obj9), , , ];
+  const obj10 = { label: "When uploaded directly to Discord" };
   const TableSwitchRow3 = TableSwitchRow5.TableSwitchRow;
-  const merged2 = Object.assign(tmp3);
-  items1[1] = metroRequire(TableSwitchRow3, obj6);
-  const obj7 = { label: "With image descriptions" };
+  const merged2 = Object.assign(obj3);
+  items1[1] = metroRequire(TableSwitchRow3, obj10);
+  const obj11 = { label: "With image descriptions" };
   const TableSwitchRow4 = TableSwitchRow5.TableSwitchRow;
-  const merged3 = Object.assign(tmp4);
-  items1[2] = metroRequire(TableSwitchRow4, obj7);
-  const obj8 = { label: "Disabled switch item", subLabel: "This should not be switchable", disabled: true, value: false, onValueChange: NOOP };
-  items1[3] = metroRequire(TableSwitchRow5.TableSwitchRow, obj8);
-  items[3] = metroImportDefault(TableRowGroup2, obj4);
-  return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckboxState(arg0) {
-  let closure_129_0;
-  let first;
-  let tmp4;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp4, closure_129_0] = react.useState(undefined === arg0 || arg0);
-  _slicedToArray(react.useState(undefined === arg0 || arg0), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(arg0) {
-      closure_1_0(arg0);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4) {
-    const obj2 = { checked: tmp4, onPress: first };
-    cResult[1] = tmp4;
-    cResult[2] = obj2;
-    tmp6 = obj2;
-  } else {
-    tmp6 = cResult[2];
-  }
-  return tmp6;
-}) : (function useCheckboxState() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  const tmp = _slicedToArray(react.useState(flag), 2);
-  let closure_0 = tmp[1];
-  const obj = {
-    checked: tmp[0],
-    onPress: react.useCallback((arg0) => {
-      closure_0(arg0);
-    }, [])
-  };
-  return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineCheckbox(arg0) {
-  let checked;
+  const merged3 = Object.assign(obj4);
+  items1[2] = metroRequire(TableSwitchRow4, obj11);
+  const obj12 = { label: "Disabled switch item", subLabel: "This should not be switchable", disabled: true, value: false, onValueChange: NOOP };
+  items1[3] = metroRequire(TableSwitchRow5.TableSwitchRow, obj12);
+  items[3] = metroImportDefault(TableRowGroup2, obj8);
+  return metroImportDefault(metroImportAll, obj5);
+}
+function InlineCheckbox(startChecked) {
+  let c0;
   let description;
   let label;
-  let onPress;
   let required;
-  let startChecked;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ label, description, required, startChecked } = arg0);
-  let tmp5 = undefined !== startChecked;
-  if (tmp5) {
-    tmp5 = startChecked;
-  }
-  ({ checked, onPress } = closure_13(tmp5));
-  closure_13(tmp5);
-  if (cResult[0] === checked) {
-    if (cResult[1] === description) {
-      if (cResult[2] === label) {
-        if (cResult[3] === onPress) {
-          let tmp7;
-          if (cResult[4] === required) {
-            tmp7 = cResult[5];
-          }
-          return tmp7;
-        }
-      }
-    }
-  }
-  const tmp8 = metroRequire(Checkbox.Checkbox, { label, description, required, checked, onToggle: onPress });
-  cResult[0] = checked;
-  cResult[1] = description;
-  cResult[2] = label;
-  cResult[3] = onPress;
-  cResult[4] = required;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function InlineCheckbox(startChecked) {
-  let checked;
-  let description;
-  let label;
-  let onPress;
-  let required;
+  let tmp2;
   let flag = startChecked.startChecked;
   ({ label, description, required } = startChecked);
   if (flag === undefined) {
     flag = false;
   }
-  ({ checked, onPress } = closure_13(flag));
-  closure_13(flag);
-  return metroRequire(Checkbox.Checkbox, { label, description, required, checked, onToggle });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function InlineCheckboxDemo() {
-  let first;
-  let items;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: items };
-    items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), metroRequire(closure_14, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(closure_14, { label: "Trust google.com links from now on" }), metroRequire(closure_14, { label: "I agree to the Terms of Service", required: true })];
-    const tmp9 = metroImportDefault(metroImportAll, obj2);
-    cResult[0] = tmp9;
-    first = tmp9;
-  } else {
-    first = cResult[0];
+  if (flag === undefined) {
+    flag = true;
   }
-  return first;
-}) : (function InlineCheckboxDemo() {
+  c0 = undefined;
+  [tmp2, c0] = _slicedToArray(react.useState(flag), 2);
+  const tmp = _slicedToArray(react.useState(flag), 2);
+  const onToggle = react.useCallback((arg0) => {
+    _undefined(arg0);
+  }, []);
+  return metroRequire(Checkbox.Checkbox, { label, description, required, checked, onToggle });
+}
+function InlineCheckboxDemo() {
   let items;
   const obj = { children: items };
-  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), metroRequire(closure_14, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(closure_14, { label: "Trust google.com links from now on" }), metroRequire(closure_14, { label: "I agree to the Terms of Service", required: true })];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Inline Checkbox" }), metroRequire(InlineCheckbox, { label: "Checkbox label", description: "This is a description", startChecked: true }), metroRequire(InlineCheckbox, { label: "Trust google.com links from now on" }), metroRequire(InlineCheckbox, { label: "I agree to the Terms of Service", required: true })];
   return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function CheckboxRowDemo() {
-  let items;
-  let items1;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Checkbox" });
-    const tmp8 = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Select one or more options from a short list of options" });
-    cResult[0] = tmp7;
-    cResult[1] = tmp8;
-    tmp4 = tmp7;
-    tmp5 = tmp8;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: items };
-    items = [tmp4, tmp5, ];
-    const obj3 = { title: "Who can send you a friend request?", hasIcons: false, children: items1 };
-    const TableRowGroup = tmp(7047).TableRowGroup;
-    const obj4 = { label: "Everyone", subLabel: "Anyone can send you a friend request", checked: false, onPress: NOOP };
-    items1 = [metroRequire(TableCheckboxRow.TableCheckboxRow, obj4), , ];
-    const obj5 = { label: "Friends of Friends", subLabel: "Anyone who is friends with your friends can send you a friend request", checked: true, onPress: NOOP };
-    items1[1] = metroRequire(TableCheckboxRow.TableCheckboxRow, obj5);
-    const obj6 = { label: "Server Members", subLabel: "Anyone who is in a server with you can send you a friend request", checked: true, onPress: NOOP };
-    items1[2] = metroRequire(TableCheckboxRow.TableCheckboxRow, obj6);
-    items[2] = metroImportDefault(TableRowGroup, obj3);
-    const tmp14 = metroImportDefault(metroImportAll, obj2);
-    cResult[2] = tmp14;
-    tmp9 = tmp14;
-  } else {
-    tmp9 = cResult[2];
-  }
-  return tmp9;
-}) : (function CheckboxRowDemo() {
+}
+function CheckboxRowDemo() {
   let items;
   let items1;
   const obj = { children: items };
@@ -445,39 +140,8 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function Checkb
   items1[2] = metroRequire(TableCheckboxRow.TableCheckboxRow, obj5);
   items[2] = metroImportDefault(TableRowGroup, obj2);
   return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function SliderDemo() {
-  let Slider;
-  let first;
-  let items;
-  let obj4;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp6 = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "Slider" });
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: items };
-    items = [first, ];
-    const obj3 = { start: true, end: true, label: "Volume", subLabel: metroRequire(Slider, obj4) };
-    const TableRow = tmp(6963).TableRow;
-    obj4 = { startIcon: metroRequire(VoiceXIcon.VoiceXIcon, {}), endIcon: metroRequire(VoiceNormalIcon.VoiceNormalIcon, {}), onChange: NOOP, accessibilityLabel: "Volume" };
-    Slider = tmp(15773).Slider;
-    items[1] = metroRequire(TableRow, obj3);
-    const tmp12 = metroImportDefault(metroImportAll, obj2);
-    cResult[1] = tmp12;
-    tmp7 = tmp12;
-  } else {
-    tmp7 = cResult[1];
-  }
-  return tmp7;
-}) : (function SliderDemo() {
+}
+function SliderDemo() {
   let Slider;
   let items;
   let obj3;
@@ -489,49 +153,8 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Slider
   Slider = Slider2.Slider;
   items[1] = metroRequire(TableRow, obj2);
   return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableSliderRowDemo() {
-  let items;
-  let obj4;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = metroRequire(Text_Text.Text, { variant: "heading-lg/bold", children: "TableSliderRow" });
-    const tmp8 = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "A slider setting with its label and current value, for settings tables" });
-    cResult[0] = tmp7;
-    cResult[1] = tmp8;
-    tmp4 = tmp7;
-    tmp5 = tmp8;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { children: items };
-    items = [tmp4, tmp5, ];
-    const obj3 = { hasIcons: false, children: metroRequire(TableSliderRow.TableSliderRow, obj4) };
-    const TableRowGroup = tmp(7047).TableRowGroup;
-    obj4 = {
-      label: "Bitrate",
-      defaultValue: 64,
-      minValue: 8,
-      maxValue: 96,
-      formatValue(arg0) {
-          return "" + Math.round(arg0) + "kbps";
-        }
-    };
-    items[2] = metroRequire(TableRowGroup, obj3);
-    const tmp13 = metroImportDefault(metroImportAll, obj2);
-    cResult[2] = tmp13;
-    tmp9 = tmp13;
-  } else {
-    tmp9 = cResult[2];
-  }
-  return tmp9;
-}) : (function TableSliderRowDemo() {
+}
+function TableSliderRowDemo() {
   let items;
   let obj3;
   const obj = { children: items };
@@ -549,65 +172,20 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableS
   };
   items[2] = metroRequire(TableRowGroup, obj2);
   return metroImportDefault(metroImportAll, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemFormPrimitives() {
-  let items;
-  let obj3;
-  let tmp10;
-  let tmp24;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(8);
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp13 = metroRequire(closure_10, {});
-    const tmp15 = metroRequire(closure_12, {});
-    const tmp17 = metroRequire(closure_16, {});
-    const tmp19 = metroRequire(closure_15, {});
-    const tmp21 = metroRequire(closure_17, {});
-    const tmp23 = metroRequire(closure_18, {});
-    cResult[0] = tmp13;
-    cResult[1] = tmp15;
-    cResult[2] = tmp17;
-    cResult[3] = tmp19;
-    cResult[4] = tmp21;
-    cResult[5] = tmp23;
-    tmp10 = tmp23;
-    tmp5 = tmp13;
-    tmp6 = tmp15;
-    tmp7 = tmp17;
-    tmp8 = tmp19;
-    tmp9 = tmp21;
-  } else {
-    [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10] = cResult;
-  }
-  if (cResult[6] !== tmp4.container) {
-    const obj2 = { children: metroImportDefault(Stack_Stack.Stack, obj3) };
-    obj3 = { spacing: 24, style: tmp4.container, children: items };
-    items = [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10];
-    const tmp28 = metroRequire(ScrollView, obj2);
-    cResult[6] = tmp4.container;
-    cResult[7] = tmp28;
-    tmp24 = tmp28;
-  } else {
-    tmp24 = cResult[7];
-  }
-  return tmp24;
-}) : (function UserSettingsDesignSystemFormPrimitives() {
+}
+const ScrollView = react_native.ScrollView;
+const NOOP = Constants.NOOP;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let closure_9 = createStyles.createStyles({ container: { padding: 16, paddingBottom: 32 } });
+const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemFormPrimitives.tsx");
+
+export default function UserSettingsDesignSystemFormPrimitives() {
   let Stack;
   let items;
   let obj2;
   const obj = { children: metroImportDefault(Stack, obj2) };
   obj2 = { spacing: 24, style: closure_9().container, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroRequire(closure_10, {}), metroRequire(closure_12, {}), metroRequire(closure_16, {}), metroRequire(closure_15, {}), metroRequire(closure_17, {}), metroRequire(closure_18, {})];
+  items = [metroRequire(Radio, {}), metroRequire(Switch, {}), metroRequire(CheckboxRowDemo, {}), metroRequire(InlineCheckboxDemo, {}), metroRequire(SliderDemo, {}), metroRequire(TableSliderRowDemo, {})];
   return metroRequire(ScrollView, obj);
-});
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemFormPrimitives.tsx");
-
-export default tmp3;
+};

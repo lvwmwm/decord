@@ -1,10 +1,10 @@
-// Module ID: 585
-// Function ID: 586
+// Module ID: 573
+// Function ID: 574
 // Name: Constants
-// Dependencies: [586, 2]
+// Dependencies: [574, 2]
 
-// Module 585 (Constants)
-import shims from "shims" /* 586 */;
+// Module 573 (Constants)
+import shims from "shims" /* 574 */;
 import size from "module_2" /* 2 */;
 
 const obj = { NONE: "", DCF: "DCF", EXPERIMENTS: "Experiments", EVENTS: "Events", PREMIUM: "Premium", QUESTS: "Quests", BILLING: "Billing", SHOP: "Shop", STOREFRONT: "Storefront", USERS: "Users", GUILDS: "Guilds", UI: "UI", GAMES: "Games", AUDIO_VIDEO: "Audio / Video", DEVELOPMENT: "Development", BOOSTING: "Boosting" };

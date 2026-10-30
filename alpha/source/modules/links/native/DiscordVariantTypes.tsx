@@ -1,10 +1,10 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18400
+// Function ID: 18401
 // Name: DiscordVariantTypes
-// Dependencies: [587, 2]
+// Dependencies: [575, 2]
 
-// Module 18341 (DiscordVariantTypes)
-import nativeDefault from "native" /* 587 */;
+// Module 18400 (DiscordVariantTypes)
+import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 
 const obj = { production: { scheme: "discord-prod", label: "Discord", color: nativeDefault.unsafe_rawColors.BRAND_500 }, ci: { scheme: "discord-ci", label: "Discord (CI)", color: nativeDefault.unsafe_rawColors.GREEN_360 }, main: { scheme: "discord-main", label: "Discord Main", color: nativeDefault.unsafe_rawColors.BLUE_345 }, beta: { scheme: "discord-beta", label: "Discord Beta", color: nativeDefault.unsafe_rawColors.ORANGE_345 }, dev: { scheme: "discord-dev", label: "Discord Dev", color: nativeDefault.unsafe_rawColors.PRIMARY_400 } };

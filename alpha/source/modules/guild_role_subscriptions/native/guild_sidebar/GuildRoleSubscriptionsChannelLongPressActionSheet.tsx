@@ -1,24 +1,24 @@
-// Module ID: 18149
-// Function ID: 18150
+// Module ID: 18210
+// Function ID: 18211
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4864, 21, 5005, 587, 558, 576, 1199, 14207, 1125, 7308, 18039, 8988, 10937, 7358, 2]
+// Dependencies: [19, 17, 4865, 21, 5009, 575, 7360, 7315, 1188, 14339, 1114, 8169, 18102, 10962, 2]
+// Exports: default
 
-// Module 18149 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 18210 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
-import Form from "Form" /* 8988 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10937 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14207 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18039 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7315 */;
+import ActionSheet2 from "ActionSheet" /* 7360 */;
+import _mod8169 from "module_8169" /* 8169 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 10962 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14339 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18102 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,109 +30,10 @@ const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
 let obj = { headerIcon: size };
 size = { marginRight: 16, tintColor: nativeDefault.colors.CHANNEL_ICON, width: 20, height: 20 };
 let closure_7 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsChannelLongPressActionSheet(guildId) {
-  let first;
-  let intl2;
-  let items;
-  let tmp13;
-  let tmp15;
-  let tmp18;
-  let tmp22;
-  let tmp9;
-  let obj = guildId(576);
-  const cResult = obj.c(14);
-  guildId = guildId.guildId;
-  const onClose = guildId.onClose;
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disableColor: true, source: onClose(14207) };
-    const Icon = tmp(1199).Icon;
-    const tmp8 = closure_5(Icon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.headerIcon) {
-    const obj3 = { style: tmp4.headerIcon, children: first };
-    const tmp12 = closure_5(View, obj3);
-    cResult[1] = tmp4.headerIcon;
-    cResult[2] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(guildId(1125).t["KzCF/6"]);
-    cResult[3] = stringResult;
-    tmp13 = stringResult;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== tmp9) {
-    const obj4 = { leading: tmp9, title: tmp13 };
-    const tmp17 = closure_5(guildId(7308).BottomSheetTitleHeader, obj4);
-    cResult[4] = tmp9;
-    cResult[5] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { source: onClose(18039) };
-    const Icon2 = tmp(1199).Icon;
-    const tmp21 = closure_5(Icon2, obj5);
-    cResult[6] = tmp21;
-    tmp18 = tmp21;
-  } else {
-    tmp18 = cResult[6];
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj6 = { text: intl2.string(guildId(1125).t.WqhZss) };
-    const FormLabel = tmp(8988).FormLabel;
-    intl2 = tmp(1125).intl;
-    const tmp24 = closure_5(FormLabel, obj6);
-    cResult[7] = tmp24;
-    tmp22 = tmp24;
-  } else {
-    tmp22 = cResult[7];
-  }
-  if (cResult[8] === guildId) {
-    let tmp25;
-    if (cResult[9] === onClose) {
-      tmp25 = cResult[10];
-    }
-    if (cResult[11] === tmp15) {
-      let tmp27;
-      if (cResult[12] === tmp25) {
-        tmp27 = cResult[13];
-      }
-      return tmp27;
-    }
-    const obj7 = { children: items };
-    items = [tmp15, tmp25];
-    const tmp29 = closure_6(guildId(7358).ActionSheet, obj7);
-    cResult[11] = tmp15;
-    cResult[12] = tmp25;
-    cResult[13] = tmp29;
-    tmp27 = tmp29;
-  }
-  const obj8 = {
-    leading: tmp18,
-    label: tmp22,
-    onPress() {
-      onClose();
-      const obj = ChannelActionSheetUtils;
-      const result = obj.copyGuildChannelOrThreadLink(guildId, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
-    }
-  };
-  const tmp26 = closure_5(guildId(8988).FormRow, obj8);
-  cResult[8] = guildId;
-  cResult[9] = onClose;
-  cResult[10] = tmp26;
-  tmp25 = tmp26;
-}) : (function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx");
+
+export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) {
   let FormLabel;
   let Icon;
   let Icon2;
@@ -163,16 +64,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSub
       const result = obj.copyGuildChannelOrThreadLink(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const FormRow = Form.FormRow;
+  const FormRow = _mod8169.FormRow;
   obj6 = { source: AssetRegistryDefault2 };
   Icon2 = native.Icon;
   obj7 = { text: intl2.string(intl3.t.WqhZss) };
-  FormLabel = Form.FormLabel;
+  FormLabel = _mod8169.FormLabel;
   intl2 = intl3.intl;
   items[1] = closure_5(FormRow, obj5);
   return closure_6(ActionSheet, obj);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_sidebar/GuildRoleSubscriptionsChannelLongPressActionSheet.tsx");
-
-export default tmp4;
+};

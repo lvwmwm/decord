@@ -1,21 +1,19 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11650
+// Function ID: 11651
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7264, 5754, 1084, 1382, 1402, 11296, 2]
+// Dependencies: [7271, 5761, 1072, 1377, 9718, 1397, 11499, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11449 (getRemoteJoinableActivityPlatform)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 11296 */;
-import ConnectedAppsStore from "ConnectedAppsStore" /* 7264 */;
-import SessionsStore from "SessionsStore" /* 5754 */;
-import Constants from "Constants" /* 1084 */;
+// Module 11650 (getRemoteJoinableActivityPlatform)
+import Constants from "Constants" /* 1072 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 11499 */;
+import ConnectedAppsStore from "ConnectedAppsStore" /* 7271 */;
+import SessionsStore from "SessionsStore" /* 5761 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-({ ActivityFlags: closure_4, ActivityGamePlatforms: hasOwnProperty } = Constants);
+const ActivityFlags = Constants.ActivityFlags;
 const result = size.fileFinishedImporting("modules/activities/utils/getRemoteJoinableActivityPlatform.tsx");
 
 export function getRemoteJoinableActivityPlatform(presenceActivity) {
@@ -30,14 +28,14 @@ export function getRemoteJoinableActivityPlatform(presenceActivity) {
       if (num == null) {
         num = 0;
       }
-      const tmp = constants;
-      if (hasFlag2(num, constants.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
+      const tmp = ActivityFlags;
+      if (hasFlag2(num, ActivityFlags.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
         const remoteApplicationActivity = SessionsStore.getRemoteApplicationActivity(application_id);
         let tmp4 = null;
         if (null != remoteApplicationActivity) {
           tmp4 = null;
-          const tmp12Result = ActivityFlagUtils;
-          if (!tmp12Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
+          const tmp9Result = ActivityFlagUtils;
+          if (!tmp9Result.isContextlessEmbeddedActivity(remoteApplicationActivity)) {
             if (null == remoteApplicationActivity.application_id) {
               let num2 = remoteApplicationActivity.flags;
               const hasFlag = FlagUtils.hasFlag;
@@ -45,23 +43,25 @@ export function getRemoteJoinableActivityPlatform(presenceActivity) {
               if (num2 == null) {
                 num2 = 0;
               }
-              let tmp10 = null;
+              let tmp7 = null;
               if (hasFlag(num2, tmp.SUPPORTS_REMOTE_ACTIVITY_ACTION_JOIN)) {
                 let platform1 = remoteApplicationActivity.platform;
                 if (platform1 == null) {
                   platform1 = null;
                 }
-                tmp10 = platform1;
+                tmp7 = platform1;
               }
-              tmp4 = tmp10;
+              tmp4 = tmp7;
             } else {
               tmp4 = null;
               if (!ConnectedAppsStore.isConnected(remoteApplicationActivity.application_id)) {
                 const platform = remoteApplicationActivity.platform;
-                const tmp12Result5 = utils_PlatformUtils;
-                if (!tmp12Result5.isAndroid()) {
-                  const tmp12Result6 = utils_PlatformUtils;
-                  tmp12Result6.isIOS() && platform === hasOwnProperty.IOS;
+                const tmp9Result5 = utils_PlatformUtils;
+                if (tmp9Result5.isAndroid()) {
+                  platform === tmp9(9718).ActivityGamePlatforms.ANDROID;
+                } else {
+                  const tmp9Result6 = utils_PlatformUtils;
+                  tmp9Result6.isIOS() && platform === tmp9(9718).ActivityGamePlatforms.IOS;
                 }
                 tmp4 = null;
               }

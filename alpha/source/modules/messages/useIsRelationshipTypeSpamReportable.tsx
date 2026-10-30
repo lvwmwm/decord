@@ -1,60 +1,25 @@
-// Module ID: 13985
-// Function ID: 13986
+// Module ID: 14117
+// Function ID: 14118
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4947, 1084, 558, 576, 504, 2]
+// Dependencies: [4951, 1072, 504, 2]
+// Exports: useIsRelationshipTypeSpamReportable
 
-// Module 13985 (useIsRelationshipTypeSpamReportable)
-import Constants from "Constants" /* 1084 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14117 (useIsRelationshipTypeSpamReportable)
+import Constants from "Constants" /* 1072 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRelationshipTypeSpamReportable(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      return RelationshipStore.getRelationshipType(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  return stateFromStores === RelationshipTypes.NONE || stateFromStores === RelationshipTypes.BLOCKED || stateFromStores === RelationshipTypes.PENDING_INCOMING;
-}) : (function useIsRelationshipTypeSpamReportable(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [RelationshipStore];
-  const items1 = [arg0];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.getRelationshipType(closure_0), items1);
-  return stateFromStores === RelationshipTypes.NONE || stateFromStores === RelationshipTypes.BLOCKED || stateFromStores === RelationshipTypes.PENDING_INCOMING;
-});
 const result = size.fileFinishedImporting("modules/messages/useIsRelationshipTypeSpamReportable.tsx");
 
-export const useIsRelationshipTypeSpamReportable = tmp2;
+export function useIsRelationshipTypeSpamReportable(id) {
+  _require = id;
+  const items = [RelationshipStore];
+  const items1 = [id];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.getRelationshipType(id), items1);
+  return stateFromStores === RelationshipTypes.NONE || stateFromStores === RelationshipTypes.BLOCKED || stateFromStores === RelationshipTypes.PENDING_INCOMING;
+}

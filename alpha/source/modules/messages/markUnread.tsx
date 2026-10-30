@@ -1,20 +1,20 @@
-// Module ID: 10947
-// Function ID: 10948
+// Module ID: 10972
+// Function ID: 10973
 // Name: markUnread
-// Dependencies: [5, 4939, 4857, 6049, 6829, 1389, 1084, 3, 11, 8341, 1294, 2]
+// Dependencies: [5, 4943, 4858, 6056, 6836, 1384, 1072, 3, 11, 8194, 1283, 2]
 // Exports: default
 
-// Module 10947 (markUnread)
+// Module 10972 (markUnread)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1084 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8341 */;
+import Constants from "Constants" /* 1072 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import UserStore from "UserStore" /* 1389 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_2, closure_3, closure_4, currentUser, mention_count, messages;
@@ -37,7 +37,7 @@ let obj = function _markUnread() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _markUnread() {
                 post(request);
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === mention_count) {
             if (arg0 === 1) {

@@ -1,13 +1,13 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5073
+// Function ID: 5074
 // Name: isPerModeThemingActive
-// Dependencies: [1204, 1206, 1207, 2]
+// Dependencies: [1193, 1195, 1196, 2]
 // Exports: isPerModeThemingActive
 
-// Module 5069 (isPerModeThemingActive)
-import ThemeConstants from "ThemeConstants" /* 1207 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
+// Module 5073 (isPerModeThemingActive)
+import ThemeConstants from "ThemeConstants" /* 1196 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
 import size from "module_2" /* 2 */;
 
 const SystemThemeState = ThemeConstants.SystemThemeState;

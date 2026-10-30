@@ -1,18 +1,18 @@
-// Module ID: 6550
-// Function ID: 6551
+// Module ID: 6557
+// Function ID: 6558
 // Name: ChannelMessages
-// Dependencies: [1084, 3, 6051, 12, 5238, 11, 6551, 6552, 6553, 6554, 2]
+// Dependencies: [1072, 3, 6058, 12, 5244, 11, 6558, 6559, 6560, 6561, 2]
 // Exports: flatMapChannelMessages
 
-// Module 6550 (ChannelMessages)
+// Module 6557 (ChannelMessages)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import flow_Client from "flow/Client" /* 5238 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6051 */;
-import SortedArrayUtilsAll from "SortedArrayUtils" /* 6552 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6553 */;
-import Constants from "Constants" /* 1084 */;
+import flow_Client from "flow/Client" /* 5244 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6058 */;
+import SortedArrayUtilsAll from "SortedArrayUtils" /* 6559 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6560 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -1183,7 +1183,7 @@ class ChannelMessages {
       if (id === id1) {
         if (null != nonce.nonce) {
           if (value.id === nonce.nonce) {
-            const obj4 = messageRecord1(6051);
+            const obj4 = messageRecord1(6058);
             const messageRecord = obj4.createMessageRecord(nonce);
             if (null != value.interactionData) {
               messageRecord.interactionData = value.interactionData;
@@ -1199,7 +1199,7 @@ class ChannelMessages {
       }
       return self;
     } else {
-      let obj = messageRecord1(6051);
+      let obj = messageRecord1(6058);
       messageRecord1 = obj.createMessageRecord(nonce);
       const lastResult = self.last();
       if (null != lastResult) {
@@ -1216,7 +1216,7 @@ class ChannelMessages {
             if (!_array.some(tmp17)) {
               let mutation;
               let truncateTopResult;
-              const tmp16Result = tmp16(6551);
+              const tmp16Result = tmp16(6558);
               if (tmp16Result.getConfig({ location: "receiveMessage" }).enabled) {
                 mutation = self.mutate((_map) => {
                   let _array;
@@ -1392,7 +1392,7 @@ class ChannelMessages {
           jumpType = jump.jumpType;
         }
         if (jumpType == null) {
-          jumpType = id(5238).JumpType.ANIMATED;
+          jumpType = id(5244).JumpType.ANIMATED;
         }
         let obj2 = { ready: true, loadingMore: false, jumpType, jumpFlash: flag8, jumped: null != jump, jumpedToPresent: flag9, jumpTargetId: messageId, jumpTargetOffset: num, jumpSequenceId: null, jumpReturnTargetId: null, onJumpComplete: null, hasMoreBefore: null, hasMoreAfter: null, cached: null, hasFetched: null, error: false, initialScrollSequenceId: null, suppressRowAnimationSequenceId: null };
         flag8 = undefined;
@@ -1561,7 +1561,7 @@ class ChannelMessages {
     let reversed;
     let sum;
     const self = this;
-    let obj = reversed(6554);
+    let obj = reversed(6561);
     const result = obj.requireSortedDescending(messages);
     const mapped = messages.map((item) => mergeMessage(self, item));
     reversed = mapped.reverse();

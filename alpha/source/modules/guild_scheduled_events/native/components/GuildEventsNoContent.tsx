@@ -1,20 +1,20 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 9075
+// Function ID: 9076
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4937, 1084, 1095, 21, 5005, 587, 6710, 558, 576, 504, 1125, 5271, 9042, 2]
+// Dependencies: [19, 17, 4941, 1072, 1083, 21, 5009, 575, 6717, 504, 5619, 1114, 9055, 2]
+// Exports: default
 
-// Module 9062 (GuildEventsNoContent)
+// Module 9075 (GuildEventsNoContent)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants2 from "Constants" /* 1084 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+import nativeDefault from "native" /* 575 */;
+import Constants2 from "Constants" /* 1072 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1095 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles from "TextStyles" /* 6710 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -35,134 +35,9 @@ obj3 = { textAlign: "center" };
 const DISPLAY_EXTRABOLD = Fonts.DISPLAY_EXTRABOLD;
 const merged = Object.assign(TextStyles(DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24, { marginBottom: 8 }));
 let closure_9 = createStyles(obj);
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsNoContent(guild) {
-  let container;
-  let first;
-  let intl3;
-  let items2;
-  let obj6;
-  let title;
-  let tmp10;
-  let tmp12;
-  let tmp15;
-  let tmp17;
-  let tmp7;
-  let tmp8;
-  let obj = guild(576);
-  const cResult = obj.c(20);
-  guild = guild.guild;
-  const onClose = guild.onClose;
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guild) {
-    const fn = function u() {
-      return PermissionStore.can(metroRequire.MANAGE_ROLES, guild);
-    };
-    const items1 = [guild];
-    cResult[1] = guild;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = guild(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  ({ container, title } = tmp4);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(guild(1125).t["WgZ+3D"]);
-    cResult[4] = stringResult;
-    tmp10 = stringResult;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.title) {
-    const obj2 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp10 };
-    const tmp14 = closure_7(guild(5271).Text, obj2);
-    cResult[5] = tmp4.title;
-    cResult[6] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[6];
-  }
-  const subtitle = tmp4.subtitle;
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(guild(1125).t["v/S/PG"]);
-    cResult[7] = stringResult1;
-    tmp15 = stringResult1;
-  } else {
-    tmp15 = cResult[7];
-  }
-  if (cResult[8] !== tmp4.subtitle) {
-    const obj3 = { style: subtitle, variant: "text-sm/normal", color: "text-default", children: tmp15 };
-    const tmp19 = closure_7(guild(5271).Text, obj3);
-    cResult[8] = tmp4.subtitle;
-    cResult[9] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[9];
-  }
-  if (cResult[10] === stateFromStores) {
-    if (cResult[11] === guild) {
-      if (cResult[12] === onClose) {
-        let tmp20;
-        if (cResult[13] === tmp4.subtitle) {
-          tmp20 = cResult[14];
-        }
-        if (cResult[15] === tmp4.container) {
-          if (cResult[16] === tmp17) {
-            if (cResult[17] === tmp20) {
-              let tmp23;
-              if (cResult[18] === tmp12) {
-                tmp23 = cResult[19];
-              }
-              return tmp23;
-            }
-          }
-        }
-        const obj4 = { style: container, children: items2 };
-        items2 = [tmp12, tmp17, tmp20];
-        const tmp26 = closure_8(View, obj4);
-        cResult[15] = tmp4.container;
-        cResult[16] = tmp17;
-        cResult[17] = tmp20;
-        cResult[18] = tmp12;
-        cResult[19] = tmp26;
-        tmp23 = tmp26;
-      }
-    }
-  }
-  let tmp21 = stateFromStores;
-  if (tmp21) {
-    const obj5 = { style: tmp4.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1125).t["K+DH2o"], obj6) };
-    const Text = tmp(5271).Text;
-    intl3 = tmp(1125).intl;
-    obj6 = {
-      onClick() {
-          onClose();
-          const obj = GuildSettingsActionCreatorsDefault;
-          obj.open(guild.id, GuildSettingsSections.ROLES);
-        }
-    };
-    tmp21 = closure_7(Text, obj5);
-  }
-  cResult[10] = stateFromStores;
-  cResult[11] = guild;
-  cResult[12] = onClose;
-  cResult[13] = tmp4.subtitle;
-  cResult[14] = tmp21;
-  tmp20 = tmp21;
-}) : (function GuildEventsNoContent(guild) {
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx");
+
+export default function GuildEventsNoContent(guild) {
   let intl;
   let intl2;
   let intl3;
@@ -176,21 +51,21 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsN
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(metroRequire.MANAGE_ROLES, guild), items1);
   const obj2 = { style: tmp.container, children: items2 };
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guild(1125).t["WgZ+3D"]) };
-  const Text = guild(5271).Text;
-  intl = guild(1125).intl;
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(guild(1114).t["WgZ+3D"]) };
+  const Text = guild(5619).Text;
+  intl = guild(1114).intl;
   items2 = [closure_7(Text, obj3), , ];
-  const obj4 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl2.string(guild(1125).t["v/S/PG"]) };
-  const Text2 = guild(5271).Text;
-  intl2 = guild(1125).intl;
+  const obj4 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl2.string(guild(1114).t["v/S/PG"]) };
+  const Text2 = guild(5619).Text;
+  intl2 = guild(1114).intl;
   items2[1] = closure_7(Text2, obj4);
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
   if (stateFromStores) {
-    const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1125).t["K+DH2o"], obj6) };
-    const Text3 = tmp2(5271).Text;
-    intl3 = tmp2(1125).intl;
+    const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1114).t["K+DH2o"], obj6) };
+    const Text3 = tmp2(5619).Text;
+    intl3 = tmp2(1114).intl;
     obj6 = {
       onClick() {
           onClose();
@@ -202,7 +77,4 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildEventsN
   }
   items2[2] = stateFromStores;
   return tmp5(tmp6, obj2);
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventsNoContent.tsx");
-
-export default tmp8;
+};

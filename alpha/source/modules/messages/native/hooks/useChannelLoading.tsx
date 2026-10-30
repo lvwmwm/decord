@@ -1,96 +1,20 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11533
+// Function ID: 11534
 // Name: useChannelLoading
-// Dependencies: [32, 19, 558, 576, 11330, 9847, 5301, 2]
+// Dependencies: [32, 19, 11534, 9873, 5589, 2]
+// Exports: default
 
-// Module 11329 (useChannelLoading)
-import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5301 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9847 */;
-import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11330 */;
+// Module 11533 (useChannelLoading)
+import reactDefault from "react" /* 5589 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9873 */;
+import ChannelLatestMessageLoadingStatsManagerDefault from "ChannelLatestMessageLoadingStatsManager" /* 11534 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelLoading(channelId) {
-  let first;
-  let first1;
-  let oldestUnreadMessageId;
-  let tmp = oldestUnreadMessageId;
-  let obj = channelId(oldestUnreadMessageId[3]);
-  const cResult = obj.c(13);
-  channelId = channelId.channelId;
-  const jumpTargetId = channelId.jumpTargetId;
-  oldestUnreadMessageId = channelId.oldestUnreadMessageId;
-  const shouldJumpToOriginalPost = channelId.shouldJumpToOriginalPost;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      const tmp = new jumpTargetId(oldestUnreadMessageId[4])("Messages");
-      return tmp;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  first1 = shouldJumpToOriginalPost(first1.useState(first), 1)[0];
-  if (cResult[1] === channelId) {
-    if (cResult[2] === first1) {
-      if (cResult[3] === jumpTargetId) {
-        if (cResult[4] === oldestUnreadMessageId) {
-          let tmp5;
-          if (cResult[5] === shouldJumpToOriginalPost) {
-            tmp5 = cResult[6];
-          }
-          let closure_5 = tmp5;
-          if (cResult[7] === first1) {
-            let tmp6;
-            if (cResult[8] === tmp5) {
-              tmp6 = cResult[9];
-            }
-            jumpTargetId(tmp[6])(tmp6);
-            class O {
-              constructor() {
-                tmp = closure_5(false);
-                return () => {
-                  first1.cancel();
-                };
-              }
-            }
-            let obj2 = { channelLatestMessageLoadingStatsManager: first1, startOrCancelLatestMessagesLoad: tmp5 };
-            cResult[10] = first1;
-            cResult[11] = tmp5;
-            cResult[12] = obj2;
-          }
-          class O {
-            constructor() {
-              tmp = closure_5(false);
-              return () => {
-                first1.cancel();
-              };
-            }
-          }
-          cResult[7] = first1;
-          cResult[8] = tmp5;
-          cResult[9] = O;
-          tmp6 = O;
-        }
-      }
-    }
-  }
-  function startOrCancelLatestMessagesLoad(first1) {
-    const obj = messages_MessagesUtils;
-    const obj2 = { jumpTargetId, oldestUnreadMessageId, shouldJumpToOriginalPost: shouldJumpToOriginalPost(first1), channelId, tracker: first1 };
-    const result = obj.startOrCancelChannelLatestMessagesLoad(obj2);
-  }
-  cResult[1] = channelId;
-  cResult[2] = first1;
-  cResult[3] = jumpTargetId;
-  cResult[4] = oldestUnreadMessageId;
-  cResult[5] = shouldJumpToOriginalPost;
-  cResult[6] = startOrCancelLatestMessagesLoad;
-  tmp5 = startOrCancelLatestMessagesLoad;
-}) : (function useChannelLoading(arg0) {
+let result = size.fileFinishedImporting("modules/messages/native/hooks/useChannelLoading.tsx");
+
+export default function useChannelLoading(arg0) {
   let channelId;
   let first;
   let jumpTargetId;
@@ -101,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     const tmp = new ChannelLatestMessageLoadingStatsManagerDefault("Messages");
     return tmp;
   }), 1)[0];
-  hooks_useMountEffectDefault(() => {
+  reactDefault(() => {
     const obj = messages_MessagesUtils;
     const obj2 = { jumpTargetId: importDefault, oldestUnreadMessageId: dependencyMap, shouldJumpToOriginalPost: _slicedToArray(false), channelId: require, tracker };
     const result = obj.startOrCancelChannelLatestMessagesLoad(obj2);
@@ -118,7 +42,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannel
     }
   };
   return obj;
-});
-let result = size.fileFinishedImporting("modules/messages/native/hooks/useChannelLoading.tsx");
-
-export default tmp2;
+};

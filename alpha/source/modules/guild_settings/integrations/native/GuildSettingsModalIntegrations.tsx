@@ -1,21 +1,21 @@
-// Module ID: 19602
-// Function ID: 19603
+// Module ID: 19665
+// Function ID: 19666
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 4937, 9043, 1084, 21, 5005, 587, 558, 576, 5289, 1503, 504, 5242, 19531, 8988, 6015, 7047, 6963, 1125, 18701, 18811, 12356, 6561, 5707, 1415, 5012, 5629, 2]
+// Dependencies: [19, 4941, 9056, 1072, 21, 5009, 575, 5591, 1498, 504, 5248, 19594, 8169, 6022, 7054, 6969, 1114, 18760, 18871, 12518, 6568, 5712, 1410, 5016, 5601, 2]
+// Exports: default
 
-// Module 19602 (GuildSettingsModalIntegrations)
-import nativeDefault from "native" /* 587 */;
+// Module 19665 (GuildSettingsModalIntegrations)
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import PermissionStore_mod from "PermissionStore" /* 4937 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9043 */;
-import Constants from "Constants" /* 1084 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, importDefault, navigation;
+let _require, importDefault;
 
 let PlatformTypes;
 let hasOwnProperty;
@@ -24,7 +24,6 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let PermissionStore = PermissionStore_mod;
 ({ GuildSettingsSections: hasOwnProperty, PlatformTypes } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
 let items = [, ];
@@ -35,464 +34,9 @@ obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_16 };
 let closure_10 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsModalIntegrations(contentContainerStyle) {
-  let _undefined;
-  let canManageGuild;
-  let canManageWebhooks;
-  let closure_0;
-  let closure_3;
-  let intl;
-  let items4;
-  let stateFromStores;
-  let tmp10;
-  let tmp13;
-  let tmp15;
-  let tmp17;
-  let tmp18;
-  let tmp8;
-  let tmp9;
-  const tmp = _require;
-  let tmp2 = stateFromStores;
-  let obj = require("react");
-  const cResult = obj.c(41);
-  contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  let obj2 = require("useToken");
-  const token = obj2.useToken(navigation(stateFromStores[6]).modules.mobile.TABLE_ROW_PADDING);
-  const tmp6 = closure_10();
-  _require = tmp6;
-  let obj3 = require("useNavigation");
-  const tmp4 = navigation;
-  navigation = obj3.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [c4];
-    const fn = function c() {
-      return c4.getGuild();
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp9 = fn;
-    tmp10 = items1;
-    tmp8 = items;
-  } else {
-    [tmp8, tmp9, tmp10] = cResult;
-  }
-  const tmpResult = tmp(tmp2[11]);
-  stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9, tmp10);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PermissionStore];
-    cResult[3] = items2;
-    tmp13 = items2;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== stateFromStores) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-    cResult[4] = stateFromStores;
-    cResult[5] = N;
-    tmp15 = N;
-  } else {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-  }
-  const tmpResult4 = tmp(tmp2[11]);
-  const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp13, tmp15);
-  ({ canManageWebhooks, canManageGuild } = stateFromStoresObject);
-  PermissionStore = tmp4(tmp2[12])();
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-    const items3 = [c4];
-    class G {
-      constructor() {
-        return c4.getProps().integrations;
-      }
-    }
-    cResult[6] = items3;
-    cResult[7] = G;
-    tmp18 = G;
-    tmp17 = items3;
-  } else {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-    tmp18 = cResult[7];
-  }
-  const tmpResult5 = tmp(tmp2[11]);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp17, tmp18);
-  if (stateFromStores1 != null) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-  }
-  c4 = tmp20;
-  const useChannelsAllowedToUnlink = tmp(tmp2[13]).useChannelsAllowedToUnlink;
-  tmp(tmp2[13]);
-  if (stateFromStores != null) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-  }
-  const tmp22 = useChannelsAllowedToUnlink(undefined).length > 0;
-  if (canManageGuild) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-    if (undefined != null) {
-      class N {
-        constructor() {
-          let guildPermissionProps;
-          if (null == stateFromStores) {
-            guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-          } else {
-            guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-          }
-          return guildPermissionProps;
-        }
-      }
-    }
-    if (tmp23 == null) {
-      class N {
-        constructor() {
-          let guildPermissionProps;
-          if (null == stateFromStores) {
-            guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-          } else {
-            guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-          }
-          return guildPermissionProps;
-        }
-      }
-    }
-    class G {
-      constructor() {
-        return c4.getProps().integrations;
-      }
-    }
-  }
-  if (null == stateFromStores) {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-  } else {
-    class N {
-      constructor() {
-        let guildPermissionProps;
-        if (null == stateFromStores) {
-          guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-        } else {
-          guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-        }
-        return guildPermissionProps;
-      }
-    }
-    const Form = tmp(tmp2[14]).Form;
-    if (cResult[8] === contentContainerStyle) {
-      class N {
-        constructor() {
-          let guildPermissionProps;
-          if (null == stateFromStores) {
-            guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-          } else {
-            guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-          }
-          return guildPermissionProps;
-        }
-      }
-      const Stack = tmp(tmp2[15]).Stack;
-      if (cResult[11] !== token) {
-        class N {
-          constructor() {
-            let guildPermissionProps;
-            if (null == stateFromStores) {
-              guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-            } else {
-              guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-            }
-            return guildPermissionProps;
-          }
-        }
-        tmp27[0] = token;
-        class G {
-          constructor() {
-            return c4.getProps().integrations;
-          }
-        }
-        cResult[12] = tmp27;
-      } else {
-        class N {
-          constructor() {
-            let guildPermissionProps;
-            if (null == stateFromStores) {
-              guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-            } else {
-              guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-            }
-            return guildPermissionProps;
-          }
-        }
-      }
-      class G {
-        constructor() {
-          return c4.getProps().integrations;
-        }
-      }
-      const TableRowGroup = tmp(tmp2[16]).TableRowGroup;
-      if (cResult[13] === canManageWebhooks) {
-        class N {
-          constructor() {
-            let guildPermissionProps;
-            if (null == stateFromStores) {
-              guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-            } else {
-              guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-            }
-            return guildPermissionProps;
-          }
-        }
-        if (cResult[16] === canManageWebhooks) {
-          class N {
-            constructor() {
-              let guildPermissionProps;
-              if (null == stateFromStores) {
-                guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-              } else {
-                guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-              }
-              return guildPermissionProps;
-            }
-          }
-          if (cResult[19] === navigation) {
-            class N {
-              constructor() {
-                let guildPermissionProps;
-                if (null == stateFromStores) {
-                  guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-                } else {
-                  guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-                }
-                return guildPermissionProps;
-              }
-            }
-            if (canManageGuild) {
-              class N {
-                constructor() {
-                  let guildPermissionProps;
-                  if (null == stateFromStores) {
-                    guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-                  } else {
-                    guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-                  }
-                  return guildPermissionProps;
-                }
-              }
-              canManageGuild = items.map((item) => {
-                let intl;
-                let obj4;
-                let obj5;
-                let obj6;
-                let tmp2Result;
-                const platformType = item;
-                let obj = c4;
-                let someResult;
-                if (c4 != null) {
-                  someResult = obj.some((type) => type.type === platformType);
-                }
-                if (someResult) {
-                  const obj2 = navigation(stateFromStores[22]);
-                  const value = obj2.get(item);
-                  let tmp6Result = null;
-                  const tmp2 = navigation;
-                  if (null != value) {
-                    const obj3 = {
-                      label: value.name,
-                      subLabel: intl.formatToPlainString(platformType(stateFromStores[18]).t.VXU4EU, obj4),
-                      icon: closure_1_6(tmp2Result, obj6),
-                      arrow: true,
-                      onPress() {
-                            const obj = { platformType };
-                            return navigation.push(hasOwnProperty.INTEGRATION_PLATFORM, obj);
-                          }
-                    };
-                    const TableRow = platformType(tmp3[17]).TableRow;
-                    intl = platformType(tmp3[18]).intl;
-                    obj4 = { platformName: value.name };
-                    tmp2Result = tmp2(stateFromStores[23]);
-                    const makeSource = platformType(stateFromStores[24]).makeSource;
-                    platformType(stateFromStores[24]);
-                    const icon = value.icon;
-                    obj6 = { source: makeSource(obj5.isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG), style: platformType.platformIcon };
-                    obj5 = platformType(stateFromStores[25]);
-                    tmp6Result = tmp6(TableRow, obj3, item);
-                  }
-                  return tmp6Result;
-                } else {
-                  return null;
-                }
-              });
-            }
-            if (cResult[22] === TableRowGroup) {
-              class N {
-                constructor() {
-                  let guildPermissionProps;
-                  if (null == stateFromStores) {
-                    guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-                  } else {
-                    guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-                  }
-                  return guildPermissionProps;
-                }
-              }
-            }
-            class G {
-              constructor() {
-                return c4.getProps().integrations;
-              }
-            }
-            let obj4 = { hasIcons: true, children: items4 };
-            items4 = [tmp28, tmp30, tmp32, canManageGuild];
-            cResult[22] = TableRowGroup;
-            cResult[23] = tmp28;
-            cResult[24] = tmp30;
-            cResult[25] = tmp32;
-            cResult[26] = canManageGuild;
-            cResult[27] = closure_7(TableRowGroup, obj4);
-            const tmp35 = closure_7(TableRowGroup, obj4);
-          }
-          class G {
-            constructor() {
-              return c4.getProps().integrations;
-            }
-          }
-          cResult[19] = navigation;
-          cResult[20] = tmp22;
-          cResult[21] = tmp22;
-        }
-        class G {
-          constructor() {
-            return c4.getProps().integrations;
-          }
-        }
-        cResult[16] = canManageWebhooks;
-        cResult[17] = navigation;
-        cResult[18] = canManageWebhooks;
-      }
-      let tmp29 = canManageWebhooks;
-      if (tmp29) {
-        class N {
-          constructor() {
-            let guildPermissionProps;
-            if (null == stateFromStores) {
-              guildPermissionProps = { canManageWebhooks: false, canManageGuild: false };
-            } else {
-              guildPermissionProps = PermissionStore.getGuildPermissionProps(tmp);
-            }
-            return guildPermissionProps;
-          }
-        }
-        let obj5 = {
-          label: obj8.string(tmp(tmp2[18]).t.jp25Id),
-          subLabel: intl.string(tmp(tmp2[18]).t.mKIOkI),
-          icon: closure_6(tmp(tmp2[19]).WebhookIcon, {}),
-          arrow: true,
-          onPress() {
-                  return navigation.push(hasOwnProperty.WEBHOOKS);
-                }
-        };
-        let TableRow = tmp(tmp2[17]).TableRow;
-        class G {
-          constructor() {
-            return c4.getProps().integrations;
-          }
-        }
-        intl = tmp(tmp2[18]).intl;
-        tmp29 = closure_6(TableRow, obj5);
-      }
-      cResult[13] = canManageWebhooks;
-      cResult[14] = navigation;
-      cResult[15] = tmp29;
-    }
-    class G {
-      constructor() {
-        return c4.getProps().integrations;
-      }
-    }
-    tmp25[0] = tmp6.screenContent;
-    tmp25[1] = contentContainerStyle;
-    cResult[8] = contentContainerStyle;
-    cResult[9] = tmp6.screenContent;
-    cResult[10] = tmp25;
-  }
-}) : (function GuildSettingsModalIntegrations(contentContainerStyle) {
+const result = size.fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx");
+
+export default function GuildSettingsModalIntegrations(contentContainerStyle) {
   let Stack;
   let TableRowGroup;
   let canManageGuild;
@@ -549,8 +93,8 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     found = stateFromStores1.filter((type) => items.includes(type.type));
   }
   let id;
-  const useChannelsAllowedToUnlink = tmp(tmp2[13]).useChannelsAllowedToUnlink;
-  tmp(tmp2[13]);
+  const useChannelsAllowedToUnlink = tmp(tmp2[11]).useChannelsAllowedToUnlink;
+  tmp(tmp2[11]);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -576,58 +120,58 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     }
     let obj6 = { style: tmp5.screenContainer, contentContainerStyle: items3, children: closure_6(Stack, obj7) };
     items3 = [tmp5.screenContent, contentContainerStyle];
-    const Form = tmp(tmp2[14]).Form;
+    const Form = tmp(tmp2[12]).Form;
     obj7 = { style: obj8, spacing: tmp3(tmp2[6]).space.PX_24, children: closure_7(TableRowGroup, obj13) };
     obj8 = { paddingHorizontal: token };
-    Stack = tmp(tmp2[15]).Stack;
+    Stack = tmp(tmp2[13]).Stack;
     let tmp16Result = canManageWebhooks;
-    TableRowGroup = tmp(tmp2[16]).TableRowGroup;
+    TableRowGroup = tmp(tmp2[14]).TableRowGroup;
     const tmp15 = closure_8;
     if (canManageWebhooks) {
       const obj9 = {
-        label: intl.string(tmp(tmp2[18]).t.jp25Id),
-        subLabel: intl2.string(tmp(tmp2[18]).t.mKIOkI),
-        icon: closure_6(tmp(tmp2[19]).WebhookIcon, {}),
+        label: intl.string(tmp(tmp2[16]).t.jp25Id),
+        subLabel: intl2.string(tmp(tmp2[16]).t.mKIOkI),
+        icon: closure_6(tmp(tmp2[17]).WebhookIcon, {}),
         arrow: true,
         onPress() {
               return closure_1.push(hasOwnProperty.WEBHOOKS);
             }
       };
-      let TableRow = tmp(tmp2[17]).TableRow;
-      intl = tmp(tmp2[18]).intl;
-      intl2 = tmp(tmp2[18]).intl;
+      let TableRow = tmp(tmp2[15]).TableRow;
+      intl = tmp(tmp2[16]).intl;
+      intl2 = tmp(tmp2[16]).intl;
       tmp16Result = tmp16(TableRow, obj9);
     }
     const items4 = [tmp16Result, , , ];
     if (canManageWebhooks) {
       const obj10 = {
-        label: intl3.string(tmp(tmp2[18]).t.OrV60r),
-        subLabel: intl4.string(tmp(tmp2[18]).t.rQREJl),
-        icon: closure_6(tmp(tmp2[20]).ChannelsFollowedIcon, {}),
+        label: intl3.string(tmp(tmp2[16]).t.OrV60r),
+        subLabel: intl4.string(tmp(tmp2[16]).t.rQREJl),
+        icon: closure_6(tmp(tmp2[18]).ChannelsFollowedIcon, {}),
         arrow: true,
         onPress() {
               return closure_1.push(hasOwnProperty.CHANNELS_FOLLOWED);
             }
       };
-      const TableRow2 = tmp(tmp2[17]).TableRow;
-      intl3 = tmp(tmp2[18]).intl;
-      intl4 = tmp(tmp2[18]).intl;
+      const TableRow2 = tmp(tmp2[15]).TableRow;
+      intl3 = tmp(tmp2[16]).intl;
+      intl4 = tmp(tmp2[16]).intl;
       canManageWebhooks = tmp16(TableRow2, obj10);
     }
     items4[1] = canManageWebhooks;
     if (tmp16Result2) {
       const obj11 = {
-        label: intl5.string(tmp(tmp2[18]).t.tqtDXC),
-        subLabel: intl6.string(tmp(tmp2[18]).t.v8819e),
-        icon: closure_6(tmp(tmp2[21]).RefreshIcon, {}),
+        label: intl5.string(tmp(tmp2[16]).t.tqtDXC),
+        subLabel: intl6.string(tmp(tmp2[16]).t.v8819e),
+        icon: closure_6(tmp(tmp2[19]).RefreshIcon, {}),
         arrow: true,
         onPress() {
               return closure_1.push(hasOwnProperty.LOBBIES_LINKED);
             }
       };
-      const TableRow3 = tmp(tmp2[17]).TableRow;
-      intl5 = tmp(tmp2[18]).intl;
-      intl6 = tmp(tmp2[18]).intl;
+      const TableRow3 = tmp(tmp2[15]).TableRow;
+      intl5 = tmp(tmp2[16]).intl;
+      intl6 = tmp(tmp2[16]).intl;
       tmp16Result2 = tmp16(TableRow3, obj11);
     }
     items4[2] = tmp16Result2;
@@ -645,14 +189,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
           someResult = obj.some((type) => type.type === platformType);
         }
         if (someResult) {
-          const obj2 = closure_1(stateFromStores[22]);
+          const obj2 = closure_1(stateFromStores[20]);
           const value = obj2.get(item);
           let tmp6Result = null;
           const tmp2 = closure_1;
           if (null != value) {
             const obj3 = {
               label: value.name,
-              subLabel: intl.formatToPlainString(platformType(stateFromStores[18]).t.VXU4EU, obj4),
+              subLabel: intl.formatToPlainString(platformType(stateFromStores[16]).t.VXU4EU, obj4),
               icon: closure_1_6(tmp2Result, obj6),
               arrow: true,
               onPress() {
@@ -660,15 +204,15 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
                     return closure_1.push(hasOwnProperty.INTEGRATION_PLATFORM, obj);
                   }
             };
-            const TableRow = platformType(tmp3[17]).TableRow;
-            intl = platformType(tmp3[18]).intl;
+            const TableRow = platformType(tmp3[15]).TableRow;
+            intl = platformType(tmp3[16]).intl;
             obj4 = { platformName: value.name };
-            tmp2Result = tmp2(stateFromStores[23]);
-            const makeSource = platformType(stateFromStores[24]).makeSource;
-            platformType(stateFromStores[24]);
+            tmp2Result = tmp2(stateFromStores[21]);
+            const makeSource = platformType(stateFromStores[22]).makeSource;
+            platformType(stateFromStores[22]);
             const icon = value.icon;
             obj6 = { source: makeSource(obj5.isThemeDark(closure_3) ? icon.darkPNG : icon.lightPNG), style: platformType.platformIcon };
-            obj5 = platformType(stateFromStores[25]);
+            obj5 = platformType(stateFromStores[23]);
             tmp6Result = tmp6(TableRow, obj3, item);
           }
           return tmp6Result;
@@ -680,12 +224,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     const obj12 = { children: items5 };
     obj13 = { hasIcons: true, children: items4 };
     items4[3] = canManageGuild;
-    items5 = [closure_6(Form, obj6), closure_6(tmp(tmp2[26]).NavScrim, {})];
+    items5 = [closure_6(Form, obj6), closure_6(tmp(tmp2[24]).NavScrim, {})];
     tmp14Result = tmp14(tmp15, obj12);
   }
   return tmp12;
-});
-const result = size.fileFinishedImporting("modules/guild_settings/integrations/native/GuildSettingsModalIntegrations.tsx");
-
-export default tmp6;
+};
 export const SUPPORTED_SETTINGS_INTEGRATION_PLATFORMS = items;

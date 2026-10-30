@@ -1,12 +1,12 @@
-// Module ID: 8476
-// Function ID: 8477
-// Dependencies: [2055, 2051, 7399, 2]
+// Module ID: 8510
+// Function ID: 8511
+// Dependencies: [2052, 2048, 7407, 2]
 // Exports: getPriceString
 
-// Module 8476
-import PremiumUtils from "PremiumUtils" /* 2051 */;
-import PriceUtils from "PriceUtils" /* 7399 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2055 */;
+// Module 8510
+import PremiumUtils from "PremiumUtils" /* 2048 */;
+import PriceUtils from "PriceUtils" /* 7407 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2052 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");
@@ -31,7 +31,7 @@ export function getPriceString(hasAnyPremiumGroup, arg1) {
           const tmp2 = require;
           if (tmp) {
             ({ interval, intervalCount } = value);
-            const tmp2Result = tmp2(7399);
+            const tmp2Result = tmp2(7407);
             return tmp2Result.formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;

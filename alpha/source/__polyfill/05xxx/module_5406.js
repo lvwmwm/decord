@@ -1,135 +1,55 @@
 // Module ID: 5406
 // Function ID: 5407
-// Dependencies: [19, 17, 21]
-// Exports: default, isKeyboardDismissingTap, updateResponderEventValue
+// Dependencies: [5366, 5303, 5341]
+// Exports: useComposedGesture
 
 // Module 5406
-import Fragment from "Fragment" /* 21 */;
-import react_mod from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
+let handlerTags;
 
-let closure_9, diff, sum;
 
-let StyleSheet;
-let _window;
-let c2;
-let c3;
-let closure_4;
-let hasOwnProperty;
-let map;
-let react = react_mod;
-({ useCallback: _window, useEffect: map, useMemo: c2, useRef: c3 } = react);
-react = react_mod;
-({ Keyboard: closure_4, StyleSheet, View: hasOwnProperty } = react_native);
-const jsx = Fragment.jsx;
-let c7 = 0;
-let closure_8 = [];
-let c9 = false;
-const context = react.createContext(null);
-const logicalResponder = StyleSheet.create({ logicalResponder: { display: "contents" } });
-
-export default function _default(keyboardShouldPersistTaps) {
-  keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
-  const children = keyboardShouldPersistTaps.children;
-  const tmp = closure_3(false);
-  const isRNGHResponderEvent = tmp;
-  let items = [tmp, keyboardShouldPersistTaps];
-  let tmp2 = closure_2(() => ({ isRNGHResponderEvent, keyboardShouldPersistTaps }), items);
-  isRNGHResponderEvent(() => {
-    sum = sum + 1;
-    if (1 >= sum) {
-      let addListener;
-      if (closure_1_4 != null) {
-        addListener = obj.addListener;
-      }
-      if (null != addListener) {
-        const metrics = obj.metrics;
-        let height;
-        if (metrics != null) {
-          const metricsResult = metrics();
-          if (metricsResult != null) {
-            height = metricsResult.height;
-          }
-        }
-        let tmp5 = null != height;
-        if (tmp5) {
-          tmp5 = height > 0;
-        }
-        function setVisible(endCoordinates) {
-          endCoordinates = endCoordinates.endCoordinates;
-          let height;
-          if (endCoordinates != null) {
-            height = endCoordinates.height;
-          }
-          c9 = null != height && height > 0;
-          const tmp2 = null != height && height > 0;
-        }
-        closure_9 = tmp5;
-        items = [
-          closure_1_4.addListener("keyboardDidShow", setVisible),
-          closure_1_4.addListener("keyboardWillShow", setVisible),
-          closure_1_4.addListener("keyboardDidHide", () => {
-                c9 = false;
-              })
-        ];
-      }
+export function useComposedGesture(type) {
+  const substr = [...arguments].slice();
+  const flatMapResult = substr.flatMap((handlerTags) => {
+    const obj = substr(dependencyMap[0]);
+    if (obj.isComposedGesture(handlerTags)) {
+      handlerTags = handlerTags.handlerTags;
+    } else {
+      handlerTags = [handlerTags.handlerTag];
     }
-    return () => {
-      function unsubscribeFromKeyboardVisibility() {
-        diff = diff - 1;
-        if (0 >= diff) {
-          for (const item10008 of closure_8) {
-            let removeResult = item10008.remove();
-            continue;
-          }
-          closure_8 = [];
-          c9 = false;
-        }
-      }
-      unsubscribeFromKeyboardVisibility();
-    };
-  }, []);
-  const items1 = [keyboardShouldPersistTaps];
-  const tmp4 = keyboardShouldPersistTaps(() => {
-    isRNGHResponderEvent.current = false;
-    return false;
-  }, []);
-  ({
-    collapsable: false,
-    onStartShouldSetResponderCapture: tmp4,
-    onStartShouldSetResponder: keyboardShouldPersistTaps(() => {
-      const current = "handled" === keyboardShouldPersistTaps && isRNGHResponderEvent.current;
-      isRNGHResponderEvent.current = false;
-      return current;
-    }, items1),
-    pointerEvents: "box-none",
-    style: logicalResponder.logicalResponder,
-    children
+    return handlerTags;
   });
-  return <context value={tmp2}>{null}</context>;
-};
-export const JSResponderContext = context;
-export function updateResponderEventValue(isRNGHResponderEvent, current) {
-  isRNGHResponderEvent = undefined;
-  if (isRNGHResponderEvent != null) {
-    isRNGHResponderEvent = isRNGHResponderEvent.isRNGHResponderEvent;
-  }
-  if (isRNGHResponderEvent) {
-    isRNGHResponderEvent.current = current;
-  }
-}
-export function isKeyboardDismissingTap(keyboardShouldPersistTaps) {
-  if (null == keyboardShouldPersistTaps) {
-    return false;
+  let tmp2 = substr;
+  let obj = substr(5366);
+  if (obj.containsDuplicates(flatMapResult)) {
+    const _Error2 = Error;
+    const self3 = this;
+    const self4 = this;
+    const tmp2Result = tmp2(5303);
+    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
+    throw error;
   } else {
-    keyboardShouldPersistTaps = keyboardShouldPersistTaps.keyboardShouldPersistTaps;
-    let tmp = !keyboardShouldPersistTaps;
-    if (keyboardShouldPersistTaps) {
-      tmp = "never" === keyboardShouldPersistTaps;
+    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
+    if (obj2.shouldUseReanimatedDetector) {
+      if (obj2.dispatchesAnimatedEvents) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const tmp2Result2 = tmp2(5303);
+        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
+        throw error1;
+      }
     }
-    if (tmp) {
-      tmp = c9;
+    const Reanimated = tmp2(5341).Reanimated;
+    let composedEventHandler;
+    if (Reanimated != null) {
+      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
     }
-    return tmp;
+    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
+    let animatedEventHandler;
+    if (found.length > 0) {
+      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
+    }
+    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: substr };
+    return obj3;
   }
 }

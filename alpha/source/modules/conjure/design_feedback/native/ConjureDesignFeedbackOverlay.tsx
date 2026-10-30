@@ -1,18 +1,18 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 12074
+// Function ID: 12075
 // Name: ConjureDesignFeedbackOverlay
-// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 5247, 11879, 10854, 10874, 1125, 3864, 5271, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 5253, 12075, 10877, 10897, 1114, 3865, 5619, 2]
+// Exports: default
 
-// Module 11878 (ConjureDesignFeedbackOverlay)
-import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 11879 */;
+// Module 12074 (ConjureDesignFeedbackOverlay)
+import nativeDefault from "native" /* 575 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import ConjureDesignRemarkSheet from "ConjureDesignRemarkSheet" /* 12075 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureDesignRemarkSheetDefault = ConjureDesignRemarkSheet;
@@ -39,250 +39,10 @@ size = { position: "absolute", width: 24, height: 24, borderRadius: nativeDefaul
 rect = { position: "absolute", left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16 };
 obj3 = { textAlign: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_8 };
 let closure_11 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesignFeedbackOverlay(projectId) {
-  let closure_2;
-  let closure_4;
-  let first1;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let tmp17;
-  let tmp18;
-  let tmp20;
-  let tmp21;
-  let obj = projectId(576);
-  const cResult = obj.c(47);
-  projectId = projectId.projectId;
-  const tmp2 = B();
-  let obj2 = react;
-  const tmp3 = first1(react.useState(null), 2);
-  const first = tmp3[0];
-  dependencyMap = tmp3[1];
-  let tmp5 = first1(react.useState(null), 2);
-  first1 = tmp5[0];
-  react = tmp5[1];
-  let tmp7 = first1(react.useState(null), 2);
-  const first2 = tmp7[0];
-  let closure_6 = tmp7[1];
-  const tmp9 = first1(react.useState(false), 2);
-  const first3 = tmp9[0];
-  let closure_8 = tmp9[1];
-  let closure_9 = react.useRef(true);
-  let closure_10 = react.useRef(false);
-  if (cResult[0] !== first2) {
-    const fn = function c() {
-      closure_10.current = null != first2;
-    };
-    const items = [first2];
-    cResult[0] = first2;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp12 = items;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[1];
-    tmp12 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp11, tmp12);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function b() {
-      let ref;
-      closure_9.current = true;
-      return () => {
-        closure_1_9.current = false;
-        if (ref.current) {
-          const obj = first(closure_2[8]);
-          obj.hideActionSheet(projectId(closure_2[9]).CONJURE_DESIGN_REMARK_SHEET_KEY);
-        }
-      };
-    };
-    const items1 = [];
-    cResult[3] = fn2;
-    cResult[4] = items1;
-    tmp15 = items1;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[3];
-    tmp15 = cResult[4];
-  }
-  const effect1 = obj2.useEffect(tmp14, tmp15);
-  if (cResult[5] !== projectId) {
-    const fn3 = function y() {
-      return () => {
-        const obj = projectId(closure_2[10]);
-        const result = obj.inspectConjurePreviewPoint(closure_1_0, projectId(closure_2[11]).CONJURE_INSPECT_CLEAR_POINT);
-      };
-    };
-    const items2 = [projectId];
-    cResult[5] = projectId;
-    cResult[6] = fn3;
-    cResult[7] = items2;
-    tmp18 = items2;
-    tmp17 = fn3;
-  } else {
-    tmp17 = cResult[6];
-    tmp18 = cResult[7];
-  }
-  const effect2 = obj2.useEffect(tmp17, tmp18);
-  if (cResult[8] !== first3) {
-    class R {
-      constructor() {
-        let closure_0;
-        if (first3) {
-          const _setTimeout = setTimeout;
-          const timeout = setTimeout(() => closure_1_8(false), 2000);
-          return () => clearTimeout(closure_0);
-        }
-      }
-    }
-    const items3 = [first3];
-    cResult[8] = first3;
-    cResult[9] = R;
-    cResult[10] = items3;
-    tmp21 = items3;
-    tmp20 = R;
-  } else {
-    class R {
-      constructor() {
-        let closure_0;
-        if (first3) {
-          const _setTimeout = setTimeout;
-          const timeout = setTimeout(() => closure_1_8(false), 2000);
-          return () => clearTimeout(closure_0);
-        }
-      }
-    }
-    tmp21 = cResult[10];
-  }
-  const effect3 = obj2.useEffect(tmp20, tmp21);
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor(nativeEvent) {
-        const layout = nativeEvent.nativeEvent.layout;
-        size = { width: layout.width, height: layout.height };
-        closure_2(size);
-      }
-    }
-    cResult[11] = S;
-  } else {
-    class S {
-      constructor(nativeEvent) {
-        const layout = nativeEvent.nativeEvent.layout;
-        size = { width: layout.width, height: layout.height };
-        closure_2(size);
-      }
-    }
-  }
-  if (cResult[12] !== projectId) {
-    class B {
-      constructor(target) {
-        let obj2;
-        let ref;
-        const tmp = ActionSheetActionCreators;
-        const showActionSheet = tmp.showActionSheet;
-        const obj = { key: ConjureDesignRemarkSheet.CONJURE_DESIGN_REMARK_SHEET_KEY, content: metroImportAll(ConjureDesignRemarkSheetDefault, obj2) };
-        obj2 = {
-          projectId,
-          target,
-          onClose() {
-            if (ref.current) {
-              closure_1_6(null);
-            }
-          }
-        };
-        showActionSheet(obj);
-      }
-    }
-    cResult[12] = projectId;
-    cResult[13] = B;
-  } else {
-    class B {
-      constructor(target) {
-        let obj2;
-        let ref;
-        const tmp = ActionSheetActionCreators;
-        const showActionSheet = tmp.showActionSheet;
-        const obj = { key: ConjureDesignRemarkSheet.CONJURE_DESIGN_REMARK_SHEET_KEY, content: metroImportAll(ConjureDesignRemarkSheetDefault, obj2) };
-        obj2 = {
-          projectId,
-          target,
-          onClose() {
-            if (ref.current) {
-              closure_1_6(null);
-            }
-          }
-        };
-        showActionSheet(obj);
-      }
-    }
-  }
-  B = tmp24;
-  if (cResult[14] === tmp24) {
-    class B {
-      constructor(target) {
-        let obj2;
-        let ref;
-        const tmp = ActionSheetActionCreators;
-        const showActionSheet = tmp.showActionSheet;
-        const obj = { key: ConjureDesignRemarkSheet.CONJURE_DESIGN_REMARK_SHEET_KEY, content: metroImportAll(ConjureDesignRemarkSheetDefault, obj2) };
-        obj2 = {
-          projectId,
-          target,
-          onClose() {
-            if (ref.current) {
-              closure_1_6(null);
-            }
-          }
-        };
-        showActionSheet(obj);
-      }
-    }
-  }
-  class W {
-    constructor(nativeEvent) {
-      let ref;
-      if (null == first1) {
-        if (null == first2) {
-          const point = { x: Math.round(nativeEvent.nativeEvent.locationX), y: Math.round(nativeEvent.nativeEvent.locationY) };
-          const _Math = Math;
-          const _Math2 = Math;
-          let tmp5 = closure_4(point);
-          let tmp6 = closure_8;
-          const tmp7 = closure_8(false);
-          const obj2 = projectId(closure_2[10]);
-          const result = obj2.inspectConjurePreviewPoint(point, point);
-          result.then((status) => {
-            if (ref.current) {
-              closure_4(null);
-              if ("picked" === status.status) {
-                const target = status.target;
-                size = first;
-                let tmp6 = !(null == first || size.width < 1 || size.height < 1);
-                const tmp5 = null == first || size.width < 1 || size.height < 1;
-                if (tmp6) {
-                  tmp6 = target.rect.width >= 0.98 * size.width && target.rect.height >= 0.98 * size.height;
-                }
-                if (!tmp6) {
-                  const obj = { target: status.target, at: point };
-                  closure_6(obj);
-                  B(status.target);
-                }
-              }
-              closure_8(true);
-            }
-          });
-        }
-      }
-    }
-  }
-  cResult[14] = tmp24;
-  cResult[15] = first1;
-  cResult[16] = first2;
-  cResult[17] = projectId;
-  cResult[18] = first;
-  cResult[19] = W;
-}) : (function ConjureDesignFeedbackOverlay(projectId) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/conjure/design_feedback/native/ConjureDesignFeedbackOverlay.tsx");
+
+export default function ConjureDesignFeedbackOverlay(projectId) {
   let closure_2;
   let closure_4;
   let height;
@@ -308,7 +68,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
   let tmp5 = first(react.useState(null), 2);
   const first1 = tmp5[0];
   let closure_6 = tmp5[1];
-  let tmp7 = first(react.useState(false), 2);
+  const tmp7 = first(react.useState(false), 2);
   const first2 = tmp7[0];
   let closure_8 = tmp7[1];
   let closure_9 = react.useRef(true);
@@ -323,15 +83,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
     return () => {
       closure_1_9.current = false;
       if (ref.current) {
-        const obj = size(closure_2[8]);
-        obj.hideActionSheet(projectId(closure_2[9]).CONJURE_DESIGN_REMARK_SHEET_KEY);
+        const obj = size(closure_2[6]);
+        obj.hideActionSheet(projectId(closure_2[7]).CONJURE_DESIGN_REMARK_SHEET_KEY);
       }
     };
   }, []);
   const items1 = [projectId];
   const effect2 = react.useEffect(() => () => {
-    const obj = projectId(closure_2[10]);
-    const result = obj.inspectConjurePreviewPoint(closure_1_0, projectId(closure_2[11]).CONJURE_INSPECT_CLEAR_POINT);
+    const obj = projectId(closure_2[8]);
+    const result = obj.inspectConjurePreviewPoint(closure_1_0, projectId(closure_2[9]).CONJURE_INSPECT_CLEAR_POINT);
   }, items1);
   const items2 = [first2];
   const effect3 = react.useEffect(() => {
@@ -373,21 +133,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
         const point = { x: Math.round(nativeEvent.nativeEvent.locationX), y: Math.round(nativeEvent.nativeEvent.locationY) };
         const _Math = Math;
         const _Math2 = Math;
-        let tmp5 = closure_4(point);
+        const tmp5 = closure_4(point);
         let tmp6 = closure_8;
-        const tmp7 = closure_8(false);
-        const obj2 = projectId(closure_2[10]);
+        closure_8(false);
+        const obj2 = projectId(closure_2[8]);
         const result = obj2.inspectConjurePreviewPoint(point, point);
         result.then((status) => {
           if (ref.current) {
             closure_4(null);
             if ("picked" === status.status) {
               const target = status.target;
-              let tmp6 = !(null == size || size.width < 1 || size.height < 1);
-              const tmp5 = null == size || size.width < 1 || size.height < 1;
-              if (tmp6) {
-                tmp6 = target.rect.width >= 0.98 * size.width && target.rect.height >= 0.98 * size.height;
-              }
+              const tmp6 = !(null == size || size.width < 1 || size.height < 1) && target.rect.width >= 0.98 * size.width && target.rect.height >= 0.98 * size.height;
               if (!tmp6) {
                 const obj = { target: status.target, at: point };
                 closure_6(obj);
@@ -400,9 +156,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
       }
     }
   }, items4);
-  const intl = projectId(1125).intl;
+  const intl = projectId(1114).intl;
   const string = intl.string;
-  const tmp19 = size(3864);
+  const tmp19 = size(3865);
   if (first2) {
     prop = tmp19["URbF/7"];
     tmp21 = tmp18;
@@ -418,8 +174,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
   if (at == null) {
     at = first;
   }
-  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3864)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
-  intl2 = tmp16(1125).intl;
+  let obj = { style: tmp.surface, onLayout: callback, onPress: callback2, accessibilityRole: "button", accessibilityLabel: intl2.string(tmp21(3865)["DesV7/"]), testID: "conjure-design-surface", children: tmp26(first2, obj2) };
+  intl2 = tmp16(1114).intl;
   obj2 = { style: tmp.surface, pointerEvents: "none", children: items6 };
   let tmp24Result = null;
   const tmp25 = closure_6;
@@ -482,12 +238,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureDesig
     tmp24Result2 = tmp24(tmp27, obj6);
   }
   items6[1] = tmp24Result2;
-  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5271).Text, obj8) };
+  const obj7 = { style: tmp.hint, accessibilityLiveRegion: "polite", children: closure_8(projectId(5619).Text, obj8) };
   obj8 = { variant: "text-sm/medium", color: "text-default", style: tmp.hintText, children: stringResult };
   items6[2] = closure_8(first2, obj7);
   return closure_8(tmp25, obj);
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/conjure/design_feedback/native/ConjureDesignFeedbackOverlay.tsx");
-
-export default tmp5;
+};

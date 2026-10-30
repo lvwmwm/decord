@@ -1,12 +1,12 @@
-// Module ID: 6434
-// Function ID: 6435
+// Module ID: 6441
+// Function ID: 6442
 // Name: APIError
-// Dependencies: [1084, 1294, 1125, 2]
+// Dependencies: [1072, 1283, 1114, 2]
 
-// Module 6434 (APIError)
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 6441 (APIError)
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Links = Constants.Links;

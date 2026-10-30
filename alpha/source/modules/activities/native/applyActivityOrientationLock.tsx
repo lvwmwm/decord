@@ -1,26 +1,25 @@
-// Module ID: 18978
-// Function ID: 18979
+// Module ID: 19072
+// Function ID: 19073
 // Name: applyActivityOrientationLock
-// Dependencies: [2024, 14620, 2]
+// Dependencies: [2021, 14653, 2]
 // Exports: default
 
-// Module 18978 (applyActivityOrientationLock)
-import Constants from "Constants" /* 2024 */;
-import applyOrientationLock from "applyOrientationLock" /* 14620 */;
+// Module 19072 (applyActivityOrientationLock)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import applyOrientationLock from "applyOrientationLock" /* 14653 */;
 import size from "module_2" /* 2 */;
 
-const OrientationLockState = Constants.OrientationLockState;
 let result = size.fileFinishedImporting("modules/activities/native/applyActivityOrientationLock.tsx");
 
 export default function applyActivityOrientationLock(arg0) {
-  if (OrientationLockState.UNLOCKED === arg0) {
-    const obj3 = applyOrientationLock;
-    const result = obj3.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
-  } else if (OrientationLockState.PORTRAIT === arg0) {
-    const obj2 = applyOrientationLock;
-    obj2.applyOrientationLock("PORTRAIT");
-  } else if (OrientationLockState.LANDSCAPE === arg0) {
-    const obj = applyOrientationLock;
-    obj.applyOrientationLock("LANDSCAPE");
+  if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED === arg0) {
+    const tmpResult = applyOrientationLock;
+    const result = tmpResult.releaseOrientationLock({ unlockAfterRotatingToPreviousLock: true });
+  } else if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT === arg0) {
+    const tmpResult3 = applyOrientationLock;
+    tmpResult3.applyOrientationLock("PORTRAIT");
+  } else if (EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE === arg0) {
+    const tmpResult4 = applyOrientationLock;
+    tmpResult4.applyOrientationLock("LANDSCAPE");
   }
 };

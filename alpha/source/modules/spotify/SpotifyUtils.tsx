@@ -1,20 +1,20 @@
-// Module ID: 11437
-// Function ID: 11438
+// Module ID: 11638
+// Function ID: 11639
 // Name: SpotifyUtils
-// Dependencies: [5, 2019, 11438, 6558, 8868, 1084, 1101, 6561, 11439, 11440, 2]
+// Dependencies: [5, 2014, 11639, 6565, 8902, 1072, 1090, 6568, 11640, 11641, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11437 (SpotifyUtils)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import PlatformsDefault from "Platforms" /* 6561 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11439 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11440 */;
+// Module 11638 (SpotifyUtils)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import PlatformsDefault from "Platforms" /* 6568 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11640 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11641 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11438 */;
-import SpotifyStore from "SpotifyStore" /* 6558 */;
-import SpotifyConstants from "SpotifyConstants" /* 8868 */;
+import RunningGameStore from "RunningGameStore" /* 2014 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11639 */;
+import SpotifyStore from "SpotifyStore" /* 6565 */;
+import SpotifyConstants from "SpotifyConstants" /* 8902 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ export function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11439);
+        const obj3 = playableComputerDevices(11640);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

@@ -1,23 +1,23 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7713
+// Function ID: 7714
 // Name: CollectiblesCategoryStore
-// Dependencies: [2066, 7709, 1101, 569, 584, 12, 7720, 504, 2]
+// Dependencies: [2063, 7714, 1090, 559, 572, 12, 7725, 504, 2]
 
-// Module 7708 (CollectiblesCategoryStore)
+// Module 7713 (CollectiblesCategoryStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7709 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7714 */;
 import size from "module_2" /* 2 */;
 
 let closure_12, closure_13, closure_14, closure_9;
 
 function updateCategoriesAndProducts(map) {
-  const f101135 = (storeListingId) => {
+  const f91184 = (storeListingId) => {
     const items = [storeListingId.storeListingId, storeListingId];
     return items;
   };
@@ -42,8 +42,8 @@ function updateCategoriesAndProducts(map) {
   closure_9 = map1;
   const obj2 = CollectiblesUtils;
   const productsFromCategories1 = obj2.getProductsFromCategories(closure_14, false);
-  closure_11 = [...new Map(productsFromCategories1.map(f101135)).values()];
-  map2 = new Map(productsFromCategories1.map(f101135));
+  closure_11 = [...new Map(productsFromCategories1.map(f91184)).values()];
+  map2 = new Map(productsFromCategories1.map(f91184));
 }
 function reset() {
   closure_14 = map;
@@ -68,7 +68,7 @@ const React4 = map1;
 let closure_11 = [];
 const authStore2 = {};
 map1 = {};
-const syncedClientThemes = map;
+const authStore3 = map;
 map = new Map();
 let c16 = false;
 let error;

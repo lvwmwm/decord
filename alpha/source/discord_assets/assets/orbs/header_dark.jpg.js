@@ -1,8 +1,8 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17804
+// Function ID: 17805
 // Dependencies: [2]
 
-// Module 17733
+// Module 17804
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/header_dark.jpg.js");

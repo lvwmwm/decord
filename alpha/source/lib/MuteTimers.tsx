@@ -1,10 +1,10 @@
-// Module ID: 4940
-// Function ID: 4941
+// Module ID: 4944
+// Function ID: 4945
 // Name: MuteTimers
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 4940 (MuteTimers)
+// Module 4944 (MuteTimers)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/MuteTimers.tsx");

@@ -1,82 +1,44 @@
-// Module ID: 13996
-// Function ID: 13997
+// Module ID: 14128
+// Function ID: 14129
 // Name: useIsEmptyMessageRequestChat
-// Dependencies: [6049, 558, 576, 504, 11003, 2]
-// Exports: isEmptyLoadedChat
+// Dependencies: [6056, 504, 11233, 2]
+// Exports: isEmptyLoadedChat, useIsEmptyChat, useIsEmptyMessageRequestChat
 
-// Module 13996 (useIsEmptyMessageRequestChat)
-import useIsMessageRequest from "useIsMessageRequest" /* 11003 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 14128 (useIsEmptyMessageRequestChat)
+import MessageStore from "MessageStore" /* 6056 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEmptyChat(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const messages = MessageStore.getMessages(closure_0);
-      const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
-      return ready;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useIsEmptyChat(arg0) {
+const f105618 = () => {
+  const messages = MessageStore.getMessages(id);
+  const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
+  return ready;
+};
+const result = size.fileFinishedImporting("modules/message_request/hooks/useIsEmptyMessageRequestChat.tsx");
+
+export function isEmptyLoadedChat(messages) {
+  const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
+  return ready;
+}
+export function useIsEmptyChat(arg0) {
   let closure_0;
   _require = arg0;
   const items = [MessageStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const messages = MessageStore.getMessages(closure_0);
-    const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
-    return ready;
-  }, items1);
-});
-let closure_3 = tmp2;
-ReactCompilerGating = ReactCompilerGating_mod;
-function isEmptyLoadedChat(messages) {
-  const ready = messages.ready && 0 === messages.length && !messages.hasMoreBefore && !messages.hasMoreAfter;
-  return ready;
+  return obj.useStateFromStores(items, f105618, items1);
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEmptyMessageRequestChat(arg0) {
-  const obj = useIsMessageRequest;
-  const isEitherTypeOfMessageRequest = obj.useIsEitherTypeOfMessageRequest(arg0) && closure_3(arg0);
+export function useIsEmptyMessageRequestChat(id) {
+  const obj = require("useIsMessageRequest");
+  let isEitherTypeOfMessageRequest = obj.useIsEitherTypeOfMessageRequest(id);
+  _require = id;
+  const items = [MessageStore];
+  const items1 = [id];
+  const obj2 = require("get initialized");
+  if (isEitherTypeOfMessageRequest) {
+    isEitherTypeOfMessageRequest = obj2.useStateFromStores(items, f105618, items1);
+  }
   return isEitherTypeOfMessageRequest;
-}) : (function useIsEmptyMessageRequestChat(arg0) {
-  const obj = useIsMessageRequest;
-  const isEitherTypeOfMessageRequest = obj.useIsEitherTypeOfMessageRequest(arg0) && closure_3(arg0);
-  return isEitherTypeOfMessageRequest;
-});
-const result = size.fileFinishedImporting("modules/message_request/hooks/useIsEmptyMessageRequestChat.tsx");
-
-export { isEmptyLoadedChat };
-export const useIsEmptyChat = tmp2;
-export const useIsEmptyMessageRequestChat = tmp3;
+}

@@ -1,14 +1,14 @@
-// Module ID: 7595
-// Function ID: 7596
+// Module ID: 7603
+// Function ID: 7604
 // Name: OrderRecord
-// Dependencies: [1404, 2059, 7596, 7597, 1095, 2]
+// Dependencies: [1399, 2056, 7604, 7605, 1083, 2]
 
-// Module 7595 (OrderRecord)
-import Constants from "Constants" /* 1095 */;
-import InvoiceRecord from "InvoiceRecord" /* 2059 */;
-import Record from "Record" /* 1404 */;
-import CheckoutContextRecord from "CheckoutContextRecord" /* 7596 */;
-import SubscriptionFacetRecord from "SubscriptionFacetRecord" /* 7597 */;
+// Module 7603 (OrderRecord)
+import Constants from "Constants" /* 1083 */;
+import InvoiceRecord from "InvoiceRecord" /* 2056 */;
+import Record from "Record" /* 1399 */;
+import CheckoutContextRecord from "CheckoutContextRecord" /* 7604 */;
+import SubscriptionFacetRecord from "SubscriptionFacetRecord" /* 7605 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet;
@@ -117,6 +117,11 @@ class OrderRecord extends Record {
       subscriptionFacet = null;
     }
     tmp.subscriptionFacet = subscriptionFacet;
+    let promotionsFacet = billingFacetRecord.promotionsFacet;
+    if (promotionsFacet == null) {
+      promotionsFacet = null;
+    }
+    tmp.promotionsFacet = promotionsFacet;
     let prop = billingFacetRecord.checkoutContextRecord;
     if (prop == null) {
       prop = null;
@@ -131,9 +136,10 @@ class OrderRecord extends Record {
   }
   static createFromServer(id) {
     let gifting_facet;
+    let promotions_facet;
     let prop;
     let unsatisfied_constraints;
-    const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: BillingFacetRecord.createFromOrder(id), externalGatewayFacet: prop, giftingFacet: gifting_facet, checkoutContextRecord: CheckoutContextRecord.createFromOrder(id), createdAt: null, unsatisfiedConstraints: unsatisfied_constraints, subscriptionFacet: SubscriptionFacetRecord.createFromServer(id.subscription_facet) };
+    const obj = { id: id.id, status: id.status, revision: id.revision, orderLineItems: id.order_line_items, billingFacetRecord: BillingFacetRecord.createFromOrder(id), externalGatewayFacet: prop, giftingFacet: gifting_facet, checkoutContextRecord: CheckoutContextRecord.createFromOrder(id), createdAt: null, unsatisfiedConstraints: unsatisfied_constraints, subscriptionFacet: SubscriptionFacetRecord.createFromServer(id.subscription_facet), promotionsFacet: promotions_facet };
     prop = id.external_gateway_facet;
     const tmp = OrderRecord;
     if (prop == null) {
@@ -147,6 +153,10 @@ class OrderRecord extends Record {
     if (unsatisfied_constraints == null) {
       unsatisfied_constraints = [];
     }
+    promotions_facet = id.promotions_facet;
+    if (promotions_facet == null) {
+      promotions_facet = null;
+    }
     return new tmp(obj);
   }
   getInvoicePreview() {
@@ -155,6 +165,25 @@ class OrderRecord extends Record {
       invoicePreview = this.billingFacetRecord.invoicePreview;
     }
     return invoicePreview;
+  }
+  getGoogleOfferId() {
+    const promotionsFacet = this.promotionsFacet;
+    let applied_promotions;
+    if (promotionsFacet != null) {
+      applied_promotions = promotionsFacet.applied_promotions;
+    }
+    if (applied_promotions == null) {
+      applied_promotions = [];
+    }
+    const found = applied_promotions.find((google_offer_id) => null != google_offer_id.google_offer_id);
+    let google_offer_id;
+    if (found != null) {
+      google_offer_id = found.google_offer_id;
+    }
+    if (google_offer_id == null) {
+      google_offer_id = null;
+    }
+    return google_offer_id;
   }
   firstUnsatisfiedConstraintReasonCode() {
     let reason_code = null;

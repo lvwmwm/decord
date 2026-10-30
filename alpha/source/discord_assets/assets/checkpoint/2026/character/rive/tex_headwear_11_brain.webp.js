@@ -1,8 +1,8 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13470
+// Function ID: 13471
 // Dependencies: [2]
 
-// Module 13320
+// Module 13470
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_11_brain.webp.js");

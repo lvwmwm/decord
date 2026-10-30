@@ -1,242 +1,28 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17115
+// Function ID: 17116
 // Name: QuestDockBountyBody
-// Dependencies: [19, 6768, 21, 558, 576, 17029, 16975, 16944, 16951, 9672, 1125, 14600, 7856, 9639, 9642, 6775, 7859, 6771, 16798, 16800, 9674, 17047, 9662, 17062, 8014, 15090, 2]
+// Dependencies: [19, 6775, 21, 17083, 17029, 16998, 17005, 9697, 1114, 14633, 7861, 9664, 9667, 6782, 7864, 6778, 16852, 16854, 9699, 17101, 9687, 17116, 8020, 15134, 2]
 
-// Module 17061 (QuestDockBountyBody)
+// Module 17115 (QuestDockBountyBody)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1125 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
-import captureAdUserAction from "captureAdUserAction" /* 9639 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9674 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14600 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16798 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 16800 */;
+import intl2 from "intl" /* 1114 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+import captureAdUserAction from "captureAdUserAction" /* 9664 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9667 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9699 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14633 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 16852 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 16854 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let captureAdUserActionResult, obj1, showModalResult;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockBountyBody() {
-  let getQuestImpressionId;
-  let questDockBounty;
-  let setRestingQuestDockMode;
-  let tmp8;
-  let tmp = questDockBounty;
-  let obj = questDockBounty(getQuestImpressionId[4]);
-  const cResult = obj.c(25);
-  const isRendered = react.useContext(setRestingQuestDockMode(getQuestImpressionId[5])).isRendered;
-  let obj2 = questDockBounty(getQuestImpressionId[6]);
-  questDockBounty = obj2.useQuestDockBounty();
-  let obj3 = questDockBounty(getQuestImpressionId[7]);
-  let isQuestDockExpanded = obj3.useIsQuestDockExpanded();
-  setRestingQuestDockMode = react.useContext(questDockBounty(getQuestImpressionId[8]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj4 = questDockBounty(getQuestImpressionId[9]);
-  getQuestImpressionId = obj4.useGetQuestImpressionId();
-  let num = questDockBounty.videoDurationSeconds;
-  if (num == null) {
-    num = 0;
-  }
-  if (num <= 0) {
-    let first;
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(tmp2[10]).intl;
-      const stringResult = intl.string(tmp(getQuestImpressionId[10]).t.kfks9Y);
-      cResult[0] = stringResult;
-      first = stringResult;
-    } else {
-      first = cResult[0];
-    }
-    tmp8 = first;
-  } else if (cResult[1] !== num) {
-    const getBountyWatchCtaText = tmp(getQuestImpressionId[11]).getBountyWatchCtaText;
-    tmp(getQuestImpressionId[11]);
-    const obj5 = { progressSeconds: 0, targetSeconds: num };
-    const tmpResult2 = tmp(getQuestImpressionId[12]);
-    const bountyWatchCtaText = getBountyWatchCtaText(tmpResult2.getWatchVideoTaskDetailsFromProgress(obj5));
-    cResult[1] = num;
-    cResult[2] = bountyWatchCtaText;
-    tmp8 = bountyWatchCtaText;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] === questDockBounty) {
-    if (cResult[4] === getQuestImpressionId) {
-      let tmp14;
-      if (cResult[5] === setRestingQuestDockMode) {
-        tmp14 = cResult[6];
-      }
-      if (cResult[7] === questDockBounty.cta) {
-        if (cResult[8] === questDockBounty.id) {
-          let tmp15;
-          if (cResult[9] === getQuestImpressionId) {
-            tmp15 = cResult[10];
-          }
-          class E {
-            constructor() {
-              tmp = closure_0(closure_2[20]);
-              obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-              openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-              obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-              result = openAdGameLinkDirectly(obj, obj1);
-              return;
-            }
-          }
-          if (isQuestDockExpanded) {
-            isQuestDockExpanded = isRendered;
-          }
-          if (cResult[11] === !isQuestDockExpanded) {
-            let tmp17;
-            let tmp21;
-            let tmp24;
-            if (cResult[12] === isQuestDockExpanded) {
-              tmp17 = cResult[13];
-            }
-            class E {
-              constructor() {
-                tmp = closure_0(closure_2[20]);
-                obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-                openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-                obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-                result = openAdGameLinkDirectly(obj, obj1);
-                return;
-              }
-            }
-            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              const tmp23 = jsx(setRestingQuestDockMode(getQuestImpressionId[23]), {});
-              class E {
-                constructor() {
-                  tmp = closure_0(closure_2[20]);
-                  obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-                  openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-                  obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-                  result = openAdGameLinkDirectly(obj, obj1);
-                  return;
-                }
-              }
-              cResult[14] = tmp23;
-              tmp21 = tmp23;
-            } else {
-              tmp21 = cResult[14];
-            }
-            let str3 = questDockBounty.productName;
-            if (str3 == null) {
-              str3 = "";
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-              const string = tmp(tmp2[10]).intl.string;
-              class E {
-                constructor() {
-                  tmp = closure_0(closure_2[20]);
-                  obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-                  openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-                  obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-                  result = openAdGameLinkDirectly(obj, obj1);
-                  return;
-                }
-              }
-              cResult[15] = tmp25;
-              tmp24 = tmp25;
-            } else {
-              tmp24 = cResult[15];
-            }
-            if (cResult[16] === questDockBounty.cta.buttonLabel) {
-              let tmp26;
-              if (cResult[17] === tmp15) {
-                tmp26 = cResult[18];
-              }
-              if (cResult[19] === tmp8) {
-                if (cResult[20] === tmp14) {
-                  if (cResult[21] === tmp17) {
-                    if (cResult[22] === str3) {
-                      let tmp29;
-                      if (cResult[23] === tmp26) {
-                        tmp29 = cResult[24];
-                      }
-                      return tmp29;
-                    }
-                  }
-                }
-              }
-              class E {
-                constructor() {
-                  tmp = closure_0(closure_2[20]);
-                  obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-                  openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-                  obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-                  result = openAdGameLinkDirectly(obj, obj1);
-                  return;
-                }
-              }
-              const tmp30 = jsx(setRestingQuestDockMode(getQuestImpressionId[21]), { rewardTile: tmp17, contentBadge: tmp21, title: str3, description: tmp24, ctaText: tmp8, onCtaPress: tmp14, ctaButtonVariant: "primary", secondaryCta: tmp26 });
-              cResult[19] = tmp8;
-              cResult[20] = tmp14;
-              cResult[21] = tmp17;
-              cResult[22] = str3;
-              cResult[23] = tmp26;
-              cResult[24] = tmp30;
-              tmp29 = tmp30;
-            }
-            const IconButton = tmp(tmp2[24]).IconButton;
-            const tmp28 = <IconButton variant="secondary-overlay" size="md" icon={setRestingQuestDockMode(getQuestImpressionId[25])} accessibilityLabel={questDockBounty.cta.buttonLabel} onPress={tmp15} />;
-            cResult[16] = questDockBounty.cta.buttonLabel;
-            cResult[17] = tmp15;
-            cResult[18] = tmp28;
-            tmp26 = tmp28;
-          }
-          const QuestDockBodyRewardTile = tmp(tmp2[21]).QuestDockBodyRewardTile;
-          const tmp19 = <QuestDockBodyRewardTile assetUrl={setRestingQuestDockMode(getQuestImpressionId[22])} isAnimatedAsset paused={!isQuestDockExpanded} withAnimation={isQuestDockExpanded} />;
-          cResult[11] = !isQuestDockExpanded;
-          cResult[12] = isQuestDockExpanded;
-          cResult[13] = tmp19;
-          tmp17 = tmp19;
-        }
-      }
-      class E {
-        constructor() {
-          tmp = closure_0(closure_2[20]);
-          obj = { adContentId: closure_0.id, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, cta: closure_0.cta };
-          openAdGameLinkDirectly = tmp.openAdGameLinkDirectly;
-          obj1 = { content: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, ctaContent: closure_0(closure_2[16]).QuestContentCTA.OPEN_GAME_LINK, impressionId: closure_2(), sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE };
-          result = openAdGameLinkDirectly(obj, obj1);
-          return;
-        }
-      }
-      cResult[7] = questDockBounty.cta;
-      cResult[8] = questDockBounty.id;
-      cResult[9] = getQuestImpressionId;
-      cResult[10] = E;
-      tmp15 = E;
-    }
-  }
-  class I {
-    constructor() {
-      obj = closure_0(closure_2[13]);
-      obj1 = { type: closure_0(closure_2[14]).AdUserActionType.CLICK_INTERNAL, adCreativeType: closure_0(closure_2[15]).AdCreativeType.BOUNTY, adCreativeId: closure_0.id, questContentCTA: closure_0(closure_2[16]).QuestContentCTA.START_BOUNTY, surfaceId: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, impressionId: closure_2() };
-      captureAdUserActionResult = obj.captureAdUserAction(obj1);
-      obj3 = closure_1(closure_2[18]);
-      obj5 = { bountyId: closure_0.id, sourceQuestContent: closure_0(closure_2[17]).QuestContent.QUEST_BAR_MOBILE, variant: closure_0(closure_2[19]).BountiesModalVariant.SINGLE_VIDEO, bounty: closure_0 };
-      showModalResult = obj3.showModal(obj5);
-      tmp3 = setRestingQuestDockMode(QuestDockMode.COLLAPSED);
-      return;
-    }
-  }
-  cResult[3] = questDockBounty;
-  cResult[4] = getQuestImpressionId;
-  cResult[5] = setRestingQuestDockMode;
-  cResult[6] = I;
-  tmp14 = I;
-}) : (function QuestDockBountyBody() {
+const memoResult = react.memo(function QuestDockBountyBody() {
   let IconButton;
   let getQuestImpressionId;
   let intl;
@@ -246,14 +32,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let str;
   let tmp12;
   let tmp = setRestingQuestDockMode;
-  const isRendered = react.useContext(setRestingQuestDockMode(getQuestImpressionId[5])).isRendered;
+  const isRendered = react.useContext(setRestingQuestDockMode(getQuestImpressionId[3])).isRendered;
   const tmp3 = questDockBounty;
-  let obj = questDockBounty(getQuestImpressionId[6]);
+  let obj = questDockBounty(getQuestImpressionId[4]);
   questDockBounty = obj.useQuestDockBounty();
-  let obj2 = questDockBounty(getQuestImpressionId[7]);
+  let obj2 = questDockBounty(getQuestImpressionId[5]);
   let isQuestDockExpanded = obj2.useIsQuestDockExpanded();
-  setRestingQuestDockMode = react.useContext(questDockBounty(getQuestImpressionId[8]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj3 = questDockBounty(getQuestImpressionId[9]);
+  setRestingQuestDockMode = react.useContext(questDockBounty(getQuestImpressionId[6]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  let obj3 = questDockBounty(getQuestImpressionId[7]);
   getQuestImpressionId = obj3.useGetQuestImpressionId();
   const items = [questDockBounty.videoDurationSeconds];
   const items1 = [questDockBounty, getQuestImpressionId, setRestingQuestDockMode];
@@ -293,9 +79,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
     const result = openAdGameLinkDirectly(obj, obj2);
   }, items2);
-  let obj4 = { assetUrl: setRestingQuestDockMode(getQuestImpressionId[22]), isAnimatedAsset: true, paused: tmp12, withAnimation: isQuestDockExpanded };
-  const tmp11 = setRestingQuestDockMode(getQuestImpressionId[21]);
-  const QuestDockBodyRewardTile = questDockBounty(getQuestImpressionId[21]).QuestDockBodyRewardTile;
+  let obj4 = { assetUrl: setRestingQuestDockMode(getQuestImpressionId[20]), isAnimatedAsset: true, paused: tmp12, withAnimation: isQuestDockExpanded };
+  const tmp11 = setRestingQuestDockMode(getQuestImpressionId[19]);
+  const QuestDockBodyRewardTile = questDockBounty(getQuestImpressionId[19]).QuestDockBodyRewardTile;
   tmp12 = !isQuestDockExpanded;
   if (isQuestDockExpanded) {
     tmp12 = !isRendered;
@@ -303,16 +89,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (isQuestDockExpanded) {
     isQuestDockExpanded = isRendered;
   }
-  const obj5 = { rewardTile: jsx(QuestDockBodyRewardTile, obj4), contentBadge: jsx(tmp(getQuestImpressionId[23]), {}), title: str, description: intl.string(tmp3(getQuestImpressionId[10]).t["1uzE2S"]), ctaText: memo, onCtaPress: callback, ctaButtonVariant: "primary", secondaryCta: jsx(IconButton, obj6) };
+  const obj5 = { rewardTile: jsx(QuestDockBodyRewardTile, obj4), contentBadge: jsx(tmp(getQuestImpressionId[21]), {}), title: str, description: intl.string(tmp3(getQuestImpressionId[8]).t["1uzE2S"]), ctaText: memo, onCtaPress: callback, ctaButtonVariant: "primary", secondaryCta: jsx(IconButton, obj6) };
   str = questDockBounty.productName;
   if (str == null) {
     str = "";
   }
-  intl = tmp3(tmp2[10]).intl;
-  obj6 = { variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[25]), accessibilityLabel: questDockBounty.cta.buttonLabel, onPress: callback1 };
-  IconButton = tmp3(tmp2[24]).IconButton;
+  intl = tmp3(tmp2[8]).intl;
+  obj6 = { variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[23]), accessibilityLabel: questDockBounty.cta.buttonLabel, onPress: callback1 };
+  IconButton = tmp3(tmp2[22]).IconButton;
   return jsx(tmp11, obj5);
-}));
+});
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBody.tsx");
 
 export default memoResult;

@@ -1,68 +1,19 @@
-// Module ID: 11589
-// Function ID: 11590
+// Module ID: 11790
+// Function ID: 11791
 // Name: useEmbeddedAppShell
-// Dependencies: [32, 19, 558, 576, 11590, 11593, 2]
+// Dependencies: [32, 19, 11791, 11794, 2]
+// Exports: default
 
-// Module 11589 (useEmbeddedAppShell)
-import getEmbeddedAppShellUrl from "getEmbeddedAppShellUrl" /* 11590 */;
-import createShellHtml from "createShellHtml" /* 11593 */;
+// Module 11790 (useEmbeddedAppShell)
+import getEmbeddedAppShellUrl from "getEmbeddedAppShellUrl" /* 11791 */;
+import createShellHtml from "createShellHtml" /* 11794 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppShell(embeddedAppUrl) {
-  let iframeUrl;
-  let obj = embeddedAppUrl(iframeUrl[3]);
-  const cResult = obj.c(8);
-  embeddedAppUrl = embeddedAppUrl.embeddedAppUrl;
-  iframeUrl = embeddedAppUrl.iframeUrl;
-  const iframeSandboxAttributes = embeddedAppUrl.iframeSandboxAttributes;
-  const iframeCsp = embeddedAppUrl.iframeCsp;
-  const referrerPolicy = embeddedAppUrl.referrerPolicy;
-  const shimVersion = embeddedAppUrl.shimVersion;
-  const shellBridgeSecret = embeddedAppUrl.shellBridgeSecret;
-  if (cResult[0] === embeddedAppUrl) {
-    if (cResult[1] === iframeCsp) {
-      if (cResult[2] === iframeSandboxAttributes) {
-        if (cResult[3] === iframeUrl) {
-          if (cResult[4] === referrerPolicy) {
-            if (cResult[5] === shellBridgeSecret) {
-              let tmp2;
-              if (cResult[6] === shimVersion) {
-                tmp2 = cResult[7];
-              }
-              return iframeSandboxAttributes(iframeCsp.useState(tmp2), 1)[0];
-            }
-          }
-        }
-      }
-    }
-  }
-  const fn = function n() {
-    let obj2;
-    let obj3;
-    let obj4;
-    let tmp2 = null;
-    if (null != iframeUrl) {
-      const obj = { url: obj2.getEmbeddedAppShellUrl(embeddedAppUrl), html: obj3.createShellHtml(obj4) };
-      obj2 = getEmbeddedAppShellUrl;
-      obj4 = { iframeUrl: tmp, iframeSandboxAttributes, iframeCsp, referrerPolicy, shimVersion, shellBridgeSecret };
-      tmp2 = obj;
-      obj3 = createShellHtml;
-    }
-    return tmp2;
-  };
-  cResult[0] = embeddedAppUrl;
-  cResult[1] = iframeCsp;
-  cResult[2] = iframeSandboxAttributes;
-  cResult[3] = iframeUrl;
-  cResult[4] = referrerPolicy;
-  cResult[5] = shellBridgeSecret;
-  cResult[6] = shimVersion;
-  cResult[7] = fn;
-  tmp2 = fn;
-}) : (function useEmbeddedAppShell(arg0) {
+const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/useEmbeddedAppShell.tsx");
+
+export default function useEmbeddedAppShell(arg0) {
   let closure_4;
   let closure_5;
   let closure_6;
@@ -86,7 +37,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedA
     }
     return tmp2;
   }), 1)[0];
-});
-const result = size.fileFinishedImporting("modules/embedded_apps/native/shell/useEmbeddedAppShell.tsx");
-
-export default tmp2;
+};

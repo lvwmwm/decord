@@ -1,319 +1,38 @@
-// Module ID: 8756
-// Function ID: 8757
+// Module ID: 8790
+// Function ID: 8791
 // Name: FramePreviewOverrideFrame
-// Dependencies: [19, 17, 8752, 7364, 21, 5005, 558, 576, 5707, 2]
+// Dependencies: [19, 17, 8786, 7371, 21, 5009, 5712, 2]
+// Exports: default
 
-// Module 8756 (FramePreviewOverrideFrame)
+// Module 8790 (FramePreviewOverrideFrame)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import Constants from "Constants" /* 7364 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import Constants from "Constants" /* 7371 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8752 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8786 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, obj1, overflowBottom, overflowHorizontal, overflowTop;
-
 let StyleSheet;
+let c3;
 let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
 let obj3;
-({ View: closure_4, StyleSheet } = react_native);
-({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: hasOwnProperty, PROFILE_FRAME_Z_INDEX: metroRequire } = ProfileFrameConstants);
-const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
-const jsx = Fragment.jsx;
-let createStyles = createStyles_mod;
-let obj = { container: obj2, layer: obj3 };
-obj2 = { pointerEvents: "none" };
-createStyles = createStyles.createStyles;
-let merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3 = { alignItems: "center", overflow: "hidden" };
-let merged1 = Object.assign(StyleSheet.absoluteFillObject);
-let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverrideProfileFrameLayer(arg0) {
-  let containerHeight;
-  let containerWidth;
-  let layer;
-  let ratio;
-  let uri;
-  let obj = uri(576);
-  const cResult = obj.c(41);
-  ({ layer, uri } = arg0);
-  ({ overflowHorizontal, containerWidth, containerHeight } = arg0);
-  ({ ratio, overflowTop, overflowBottom } = arg0);
-  const tmp3 = closure_9();
-  const sum = containerWidth + 2 * overflowHorizontal;
-  importDefault = sum;
-  const result = ratio * sum;
-  dependencyMap = result;
-  if (cResult[0] === -overflowHorizontal) {
-    if (cResult[1] === -overflowHorizontal) {
-      let tmp9;
-      let tmp11;
-      if (cResult[2] === overflowTop[layer.order]) {
-        tmp9 = cResult[3];
-      }
-      const type = layer.type;
-      if ("staple" === type) {
-        let tmp19;
-        if ("top" === layer.anchor) {
-          tmp19 = -overflowTop;
-        }
-        let tmp20;
-        if ("bottom" === layer.anchor) {
-          tmp20 = -overflowBottom;
-        }
-        if (cResult[4] === tmp9) {
-          if (cResult[5] === tmp19) {
-            let tmp21;
-            if (cResult[6] === tmp20) {
-              tmp21 = cResult[7];
-            }
-            tmp11 = tmp21;
-          }
-        }
-        const obj2 = { top: tmp19, bottom: tmp20 };
-        const merged = Object.assign(tmp9);
-        cResult[4] = tmp9;
-        cResult[5] = tmp19;
-        cResult[6] = tmp20;
-        cResult[7] = obj2;
-        tmp21 = obj2;
-      } else if ("rail" === type) {
-        let str2 = "center";
-        if ("center" !== layer.anchor) {
-          let str3 = "flex-end";
-          if ("top" === layer.anchor) {
-            str3 = "flex-start";
-          }
-          str2 = str3;
-        }
-        if (cResult[8] === tmp9) {
-          let tmp15;
-          if (cResult[9] === str2) {
-            tmp15 = cResult[10];
-          }
-          tmp11 = tmp15;
-        }
-        const obj3 = { justifyContent: str2 };
-        const merged1 = Object.assign(tmp9);
-        cResult[8] = tmp9;
-        cResult[9] = str2;
-        cResult[10] = obj3;
-        tmp15 = obj3;
-      } else {
-        if (cResult[11] === tmp9) {
-          if (cResult[12] === -overflowHorizontal) {
-            tmp11 = cResult[13];
-          }
-        }
-        const obj4 = { left: -overflowHorizontal };
-        const merged2 = Object.assign(tmp9);
-        cResult[11] = tmp9;
-        cResult[12] = -overflowHorizontal;
-        cResult[13] = obj4;
-        tmp11 = obj4;
-      }
-      const tmp25 = true === layer.responsive && "rail" === layer.type && null != containerHeight && containerWidth / containerHeight >= closure_5;
-      if (0 !== result) {
-        if (null != uri) {
-          if (!tmp25) {
-            if ("border" === layer.type) {
-              if (null != containerHeight) {
-                if (0 !== containerHeight) {
-                  const _Math = Math;
-                  const rounded = Math.ceil(containerHeight / result);
-                  if (cResult[14] === tmp11) {
-                    let tmp36;
-                    let tmp37;
-                    if (cResult[15] === tmp3.layer) {
-                      tmp36 = cResult[16];
-                    }
-                    if (cResult[17] === result) {
-                      if (cResult[18] === rounded) {
-                        if (cResult[19] === uri) {
-                          if (cResult[20] === sum) {
-                            tmp37 = cResult[21];
-                          }
-                          if (cResult[26] === tmp36) {
-                            let tmp40;
-                            if (cResult[27] === tmp37) {
-                              tmp40 = cResult[28];
-                            }
-                            return tmp40;
-                          }
-                          class X {
-                            constructor(arg0, arg1) {
-                              size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                              obj1 = { uri };
-                              size.source = obj1;
-                              return jsx(closure_1(closure_2[8]), size, arg1);
-                            }
-                          }
-                          const tmp42 = <closure_4 style={tmp36}>{tmp37}</closure_4>;
-                          cResult[26] = tmp36;
-                          cResult[27] = tmp37;
-                          cResult[28] = tmp42;
-                          tmp40 = tmp42;
-                        }
-                      }
-                    }
-                    if (cResult[22] === result) {
-                      if (cResult[23] === uri) {
-                        let tmp38;
-                        if (cResult[24] === sum) {
-                          tmp38 = cResult[25];
-                        }
-                        const _Array = Array;
-                        const obj6 = { length: null };
-                        class X {
-                          constructor(arg0, arg1) {
-                            size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                            obj1 = { uri };
-                            size.source = obj1;
-                            return jsx(closure_1(closure_2[8]), size, arg1);
-                          }
-                        }
-                        const arr = Array.from(obj6, tmp38);
-                        cResult[17] = result;
-                        cResult[18] = rounded;
-                        cResult[19] = uri;
-                        cResult[20] = sum;
-                        cResult[21] = arr;
-                        tmp37 = arr;
-                      }
-                    }
-                    class X {
-                      constructor(arg0, arg1) {
-                        size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                        obj1 = { uri };
-                        size.source = obj1;
-                        return jsx(closure_1(closure_2[8]), size, arg1);
-                      }
-                    }
-                    cResult[22] = result;
-                    cResult[23] = uri;
-                    cResult[24] = sum;
-                    cResult[25] = X;
-                    tmp38 = X;
-                  }
-                  const items = [tmp3.layer, tmp11];
-                  cResult[14] = tmp11;
-                  cResult[15] = tmp3.layer;
-                  cResult[16] = items;
-                  tmp36 = items;
-                }
-              }
-              return null;
-            } else {
-              if (cResult[29] === tmp11) {
-                let tmp28;
-                let tmp29;
-                if (cResult[30] === tmp3.layer) {
-                  tmp28 = cResult[31];
-                }
-                if (cResult[32] !== uri) {
-                  const obj7 = { uri };
-                  class X {
-                    constructor(arg0, arg1) {
-                      size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                      obj1 = { uri };
-                      size.source = obj1;
-                      return jsx(closure_1(closure_2[8]), size, arg1);
-                    }
-                  }
-                  cResult[33] = obj7;
-                  tmp29 = obj7;
-                } else {
-                  tmp29 = cResult[33];
-                }
-                if (cResult[34] === result) {
-                  if (cResult[35] === tmp29) {
-                    let tmp30;
-                    if (cResult[36] === sum) {
-                      tmp30 = cResult[37];
-                    }
-                    if (cResult[38] === tmp28) {
-                      let tmp33;
-                      if (cResult[39] === tmp30) {
-                        tmp33 = cResult[40];
-                      }
-                      return tmp33;
-                    }
-                    class X {
-                      constructor(arg0, arg1) {
-                        size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                        obj1 = { uri };
-                        size.source = obj1;
-                        return jsx(closure_1(closure_2[8]), size, arg1);
-                      }
-                    }
-                    const tmp35 = <closure_4 style={tmp28}>{tmp30}</closure_4>;
-                    cResult[38] = tmp28;
-                    cResult[39] = tmp30;
-                    cResult[40] = tmp35;
-                    tmp33 = tmp35;
-                  }
-                }
-                class X {
-                  constructor(arg0, arg1) {
-                    size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                    obj1 = { uri };
-                    size.source = obj1;
-                    return jsx(closure_1(closure_2[8]), size, arg1);
-                  }
-                }
-                const tmp32 = jsx(FastImageDefault, { source: tmp29, resizeMode: "cover", width: sum, height: result });
-                cResult[34] = result;
-                cResult[35] = tmp29;
-                cResult[36] = sum;
-                cResult[37] = tmp32;
-                tmp30 = tmp32;
-              }
-              const items1 = [tmp3.layer, ];
-              class X {
-                constructor(arg0, arg1) {
-                  size = { source: null, resizeMode: "cover", width: closure_1, height: closure_2 };
-                  obj1 = { uri };
-                  size.source = obj1;
-                  return jsx(closure_1(closure_2[8]), size, arg1);
-                }
-              }
-              cResult[29] = tmp11;
-              cResult[30] = tmp3.layer;
-              cResult[31] = items1;
-              tmp28 = items1;
-            }
-          }
-        }
-      }
-      return null;
-    }
-  }
-  const rect = { left: tmp6, right: tmp7, zIndex: tmp8 };
-  cResult[0] = -overflowHorizontal;
-  cResult[1] = -overflowHorizontal;
-  cResult[2] = overflowTop[layer.order];
-  cResult[3] = rect;
-  tmp9 = rect;
-}) : (function OverrideProfileFrameLayer(layer) {
+function OverrideProfileFrameLayer(layer) {
   let containerHeight;
   let containerWidth;
   let height;
   let width;
   layer = layer.layer;
   const uri = layer.uri;
-  overflowTop = layer.overflowTop;
-  overflowBottom = layer.overflowBottom;
-  overflowHorizontal = layer.overflowHorizontal;
+  const overflowTop = layer.overflowTop;
+  const overflowBottom = layer.overflowBottom;
+  const overflowHorizontal = layer.overflowHorizontal;
   ({ containerWidth, containerHeight } = layer);
   const ratio = layer.ratio;
-  const tmp = closure_9();
+  const tmp = closure_8();
   const sum = containerWidth + 2 * overflowHorizontal;
   let c5 = sum;
   const result = ratio * sum;
@@ -323,18 +42,18 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overri
   items[3] = overflowTop;
   items[4] = overflowBottom;
   items[5] = overflowHorizontal;
-  const memo = overflowBottom.useMemo(() => {
+  const memo = overflowTop.useMemo(() => {
     let str2;
     let tmp12;
     let tmp14;
-    const rect = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: metroRequire[layer.order] };
+    const rect = { left: -overflowHorizontal, right: -overflowHorizontal, zIndex: hasOwnProperty[layer.order] };
     const type = layer.type;
     if ("staple" === type) {
       const obj = { top: tmp12, bottom: tmp14 };
       const merged = Object.assign(rect);
       tmp12 = undefined;
       if ("top" === layer.anchor) {
-        tmp12 = -metroRequire;
+        tmp12 = -overflowTop;
       }
       tmp14 = undefined;
       if ("bottom" === layer.anchor) {
@@ -367,7 +86,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overri
     tmp5 = null != containerHeight;
   }
   if (tmp5) {
-    tmp5 = containerWidth / containerHeight >= c5;
+    tmp5 = containerWidth / containerHeight >= overflowHorizontal;
   }
   if (0 !== result) {
     if (null != uri) {
@@ -378,267 +97,57 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overri
             if (0 !== containerHeight) {
               let tmp12 = globalThis;
               const _Math = Math;
-              let tmp14 = overflowHorizontal;
+              let tmp14 = overflowBottom;
               const items1 = [tmp.layer, memo];
               const _Array = Array;
               let obj3 = { length: Math.ceil(containerHeight / result) };
-              return <overflowHorizontal style={items1}>{Array.from(obj3, (arg0, arg1) => {
+              return <overflowBottom style={items1}>{Array.from(obj3, (arg0, arg1) => {
                 const obj = { uri };
                 return jsx(FastImageDefault, { source: obj, resizeMode: "cover", width, height }, arg1);
-              })}</overflowHorizontal>;
+              })}</overflowBottom>;
             }
           }
           return null;
         } else {
           const items2 = [tmp.layer, memo];
           size = { source: obj4, resizeMode: "cover", width: sum, height: result };
-          return <overflowHorizontal style={items2}>{null}</overflowHorizontal>;
+          return <overflowBottom style={items2}>{null}</overflowBottom>;
         }
       }
     }
   }
   return null;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePreviewOverrideFrame(override) {
-  let arr;
+}
+({ View: c3, StyleSheet } = react_native);
+({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: closure_4, PROFILE_FRAME_Z_INDEX: hasOwnProperty } = ProfileFrameConstants);
+const UserProfileThemeTypes = Constants.UserProfileThemeTypes;
+let jsx = Fragment.jsx;
+let createStyles = createStyles_mod;
+let obj = { container: obj2, layer: obj3 };
+obj2 = { pointerEvents: "none" };
+createStyles = createStyles.createStyles;
+let merged = Object.assign(StyleSheet.absoluteFillObject);
+obj3 = { alignItems: "center", overflow: "hidden" };
+let merged1 = Object.assign(StyleSheet.absoluteFillObject);
+let closure_8 = createStyles(obj);
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideFrame.tsx");
+
+export default function FramePreviewOverrideFrame(override) {
   let containerHeight;
-  let obj = override(containerHeight[7]);
-  const cResult = obj.c(27);
-  override = override.override;
-  const containerWidth = override.containerWidth;
-  containerHeight = override.containerHeight;
-  const profileThemeType = override.profileThemeType;
-  const frameOrder = override.frameOrder;
-  const filterLayer = override.filterLayer;
-  let tmp2 = closure_9();
-  if (cResult[0] === filterLayer) {
-    if (cResult[1] === frameOrder) {
-      if (cResult[2] === override.layers) {
-        if (cResult[3] === profileThemeType) {
-          arr = cResult[4];
-        }
-        if (0 !== arr.length) {
-          if (0 !== containerWidth) {
-            let tmp5;
-            const result = containerWidth / override.innerWidth;
-            const result1 = override.overflowTop * result;
-            const result2 = override.overflowBottom * result;
-            const result3 = override.overflowHorizontal * result;
-            if (cResult[9] === containerHeight) {
-              if (cResult[10] === containerWidth) {
-                if (cResult[11] === result2) {
-                  if (cResult[12] === result3) {
-                    if (cResult[13] === result1) {
-                      if (cResult[14] === override.layerAssetById) {
-                        if (cResult[15] === arr) {
-                          tmp5 = cResult[16];
-                        }
-                        if (cResult[24] === tmp2.container) {
-                          let tmp8;
-                          if (cResult[25] === tmp5) {
-                            tmp8 = cResult[26];
-                          }
-                          return tmp8;
-                        }
-                        let tmp9 = result3;
-                        const obj2 = { style: tmp17, children: tmp5 };
-                        const tmp11 = result3(frameOrder, obj2);
-                        class O {
-                          constructor(layer) {
-                            let num;
-                            let uri;
-                            const obj = { layer, uri, ratio: num, overflowTop: result1, overflowBottom: result2, overflowHorizontal: result3, containerWidth, containerHeight };
-                            uri = undefined;
-                            const tmp2 = jsx;
-                            const tmp3 = closure_10;
-                            if (override.layerAssetById[layer.id] != null) {
-                              uri = tmp.uri;
-                            }
-                            if (uri == null) {
-                              uri = null;
-                            }
-                            num = undefined;
-                            if (override.layerAssetById[layer.id] != null) {
-                              num = tmp.ratio;
-                            }
-                            if (num == null) {
-                              num = 0;
-                            }
-                            return tmp2(tmp3, obj, layer.id);
-                          }
-                        }
-                        cResult[25] = tmp5;
-                        cResult[26] = tmp11;
-                        tmp8 = tmp11;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            if (cResult[17] === containerHeight) {
-              if (cResult[18] === containerWidth) {
-                if (cResult[19] === result2) {
-                  if (cResult[20] === result3) {
-                    if (cResult[21] === result1) {
-                      let tmp6;
-                      if (cResult[22] === override.layerAssetById) {
-                        tmp6 = cResult[23];
-                      }
-                      const mapped = arr.map(tmp6);
-                      cResult[9] = containerHeight;
-                      cResult[10] = containerWidth;
-                      cResult[11] = result2;
-                      class O {
-                        constructor(layer) {
-                          let num;
-                          let uri;
-                          const obj = { layer, uri, ratio: num, overflowTop: result1, overflowBottom: result2, overflowHorizontal: result3, containerWidth, containerHeight };
-                          uri = undefined;
-                          const tmp2 = jsx;
-                          const tmp3 = closure_10;
-                          if (override.layerAssetById[layer.id] != null) {
-                            uri = tmp.uri;
-                          }
-                          if (uri == null) {
-                            uri = null;
-                          }
-                          num = undefined;
-                          if (override.layerAssetById[layer.id] != null) {
-                            num = tmp.ratio;
-                          }
-                          if (num == null) {
-                            num = 0;
-                          }
-                          return tmp2(tmp3, obj, layer.id);
-                        }
-                      }
-                      cResult[13] = result1;
-                      cResult[14] = override.layerAssetById;
-                      cResult[15] = arr;
-                      cResult[16] = mapped;
-                      tmp5 = mapped;
-                    }
-                  }
-                }
-              }
-            }
-            class O {
-              constructor(layer) {
-                let num;
-                let uri;
-                const obj = { layer, uri, ratio: num, overflowTop: result1, overflowBottom: result2, overflowHorizontal: result3, containerWidth, containerHeight };
-                uri = undefined;
-                const tmp2 = jsx;
-                const tmp3 = closure_10;
-                if (override.layerAssetById[layer.id] != null) {
-                  uri = tmp.uri;
-                }
-                if (uri == null) {
-                  uri = null;
-                }
-                num = undefined;
-                if (override.layerAssetById[layer.id] != null) {
-                  num = tmp.ratio;
-                }
-                if (num == null) {
-                  num = 0;
-                }
-                return tmp2(tmp3, obj, layer.id);
-              }
-            }
-            cResult[17] = containerHeight;
-            cResult[18] = containerWidth;
-            cResult[19] = result2;
-            cResult[20] = result3;
-            cResult[21] = result1;
-            cResult[22] = override.layerAssetById;
-            cResult[23] = O;
-            tmp6 = O;
-          }
-        }
-        return null;
-      }
-    }
-  }
-  if (cResult[5] === filterLayer) {
-    if (cResult[6] === frameOrder) {
-      let tmp3;
-      if (cResult[7] === profileThemeType) {
-        tmp3 = cResult[8];
-      }
-      const layers = override.layers;
-      const found = layers.filter(tmp3);
-      let num = 0;
-      cResult[0] = filterLayer;
-      cResult[1] = frameOrder;
-      cResult[2] = override.layers;
-      class O {
-        constructor(layer) {
-          let num;
-          let uri;
-          const obj = { layer, uri, ratio: num, overflowTop: result1, overflowBottom: result2, overflowHorizontal: result3, containerWidth, containerHeight };
-          uri = undefined;
-          const tmp2 = jsx;
-          const tmp3 = closure_10;
-          if (override.layerAssetById[layer.id] != null) {
-            uri = tmp.uri;
-          }
-          if (uri == null) {
-            uri = null;
-          }
-          num = undefined;
-          if (override.layerAssetById[layer.id] != null) {
-            num = tmp.ratio;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          return tmp2(tmp3, obj, layer.id);
-        }
-      }
-      cResult[3] = profileThemeType;
-      cResult[4] = found;
-      arr = found;
-    }
-  }
-  const fn = function i(order) {
-    let tmp2 = null == frameOrder || tmp === order.order;
-    if (tmp2) {
-      let tmp5 = !(null != filterLayer && !tmp3(order));
-      const tmp4 = null != filterLayer && !tmp3(order);
-      if (tmp5) {
-        let tmp8 = profileThemeType === UserProfileThemeTypes.PREVIEW;
-        if (!tmp8) {
-          tmp8 = "top" === order.anchor && "staple" === order.type;
-          const tmp9 = "top" === order.anchor && "staple" === order.type;
-        }
-        tmp5 = tmp8;
-      }
-      tmp2 = tmp5;
-    }
-    return tmp2;
-  };
-  cResult[5] = filterLayer;
-  cResult[6] = frameOrder;
-  cResult[7] = profileThemeType;
-  cResult[8] = fn;
-  tmp3 = fn;
-}) : (function FramePreviewOverrideFrame(override) {
-  let containerHeight;
+  let overflowBottom;
   let profileThemeType;
   override = override.override;
   const containerWidth = override.containerWidth;
-  ({ containerHeight: dependencyMap, profileThemeType } = override);
+  ({ containerHeight: react, profileThemeType } = override);
   const frameOrder = override.frameOrder;
   const filterLayer = override.filterLayer;
-  overflowTop = undefined;
-  overflowBottom = undefined;
-  overflowHorizontal = undefined;
+  let overflowTop;
+  jsx = undefined;
+  let overflowHorizontal;
   const items = [override.layers, frameOrder, profileThemeType, filterLayer];
-  const tmp = closure_9();
-  const memo = profileThemeType.useMemo(() => {
+  const tmp = overflowHorizontal();
+  const memo = react.useMemo(() => {
     const layers = override.layers;
     return layers.filter((order) => {
       let tmp2 = null == frameOrder || tmp === order.order;
@@ -662,41 +171,33 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function FramePrevi
     if (0 !== containerWidth) {
       const result = containerWidth / override.innerWidth;
       overflowTop = override.overflowTop * result;
-      overflowBottom = override.overflowBottom * result;
+      jsx = override.overflowBottom * result;
       overflowHorizontal = override.overflowHorizontal * result;
-      let tmp3 = overflowHorizontal;
-      let tmp4 = frameOrder;
-      let obj = {
-        style: tmp.container,
-        children: memo.map((layer) => {
-              let num;
-              let uri;
-              const obj = { layer, uri, ratio: num, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight: dependencyMap };
-              uri = undefined;
-              const tmp2 = jsx;
-              const tmp3 = closure_10;
-              if (override.layerAssetById[layer.id] != null) {
-                uri = tmp.uri;
-              }
-              if (uri == null) {
-                uri = null;
-              }
-              num = undefined;
-              if (override.layerAssetById[layer.id] != null) {
-                num = tmp.ratio;
-              }
-              if (num == null) {
-                num = 0;
-              }
-              return tmp2(tmp3, obj, layer.id);
-            })
-      };
-      return overflowHorizontal(frameOrder, obj);
+      let tmp3 = jsx;
+      let tmp4 = profileThemeType;
+      return <profileThemeType style={tmp.container}>{memo.map((layer) => {
+        let num;
+        let uri;
+        const obj = { layer, uri, ratio: num, overflowTop, overflowBottom, overflowHorizontal, containerWidth, containerHeight: react };
+        uri = undefined;
+        const tmp2 = jsx;
+        const tmp3 = OverrideProfileFrameLayer;
+        if (override.layerAssetById[layer.id] != null) {
+          uri = tmp.uri;
+        }
+        if (uri == null) {
+          uri = null;
+        }
+        num = undefined;
+        if (override.layerAssetById[layer.id] != null) {
+          num = tmp.ratio;
+        }
+        if (num == null) {
+          num = 0;
+        }
+        return tmp2(tmp3, obj, layer.id);
+      })}</profileThemeType>;
     }
   }
   return null;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FramePreviewOverrideFrame.tsx");
-
-export default tmp7;
+};

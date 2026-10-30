@@ -1,27 +1,25 @@
-// Module ID: 16248
-// Function ID: 16249
+// Module ID: 16288
+// Function ID: 16289
 // Name: setActivity
-// Dependencies: [32, 109, 5, 2043, 6437, 1084, 16215, 8867, 16208, 9300, 584, 16243, 11296, 11451, 12, 1101, 8679, 1264, 2]
+// Dependencies: [32, 109, 5, 2040, 6444, 1072, 16255, 8901, 16248, 9313, 572, 16283, 5757, 9718, 11499, 11652, 12, 1090, 8713, 1253, 2]
 
-// Module 16248 (setActivity)
-import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
+// Module 16288 (setActivity)
+import OAuth2Scopes from "OAuth2Scopes" /* 8901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import Constants_mod from "Constants" /* 6437 */;
-import Constants_mod2 from "Constants" /* 1084 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16215 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import Constants_mod from "Constants" /* 6444 */;
+import Constants_mod2 from "Constants" /* 1072 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16255 */;
 import size from "module_2" /* 2 */;
 
-let c14, c15, constants;
+let c13, c14, c15, constants;
 
 let RPCCommands;
 let RPC_EMBEDDED_APP_SCOPE;
 let RPC_SCOPE_CONFIG;
 let c10;
-let closure_12;
-let map1;
 let obj3;
 let unpackModuleId;
 let closure_3 = ["buttons"];
@@ -30,8 +28,8 @@ const RPC_LOCAL_SCOPE = Constants.RPC_LOCAL_SCOPE;
 const TransportTypes = Constants.TransportTypes;
 ({ RPC_SCOPE_CONFIG, RPC_EMBEDDED_APP_SCOPE } = Constants);
 Constants = Constants_mod2;
-({ ActivityGamePlatforms: c10, ActivityTypes: unpackModuleId, AnalyticEvents: closure_12, RPCCommands, RPCErrors: map1 } = Constants);
-let closure_14 = ["1402418171662569542"];
+({ AnalyticEvents: c10, RPCCommands, RPCErrors: unpackModuleId } = Constants);
+let closure_12 = ["1402418171662569542"];
 let items = [, , ];
 ({ IPC: arr[0], WEBSOCKET: arr[1], POST_MESSAGE: arr[2] } = TransportTypes);
 let obj = {};
@@ -48,8 +46,6 @@ let obj2 = {
       let DESKTOP;
       let PLAYING;
       let _false;
-      let constants3;
-      let constants4;
       let name2;
       let obj15;
       let result1;
@@ -64,7 +60,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,10 +115,10 @@ let obj2 = {
                 const tmp225Result = applicationId(name2[8]);
                 result = tmp225Result.validateEmbeddedAppFrameOnAnySurface(require);
               }
-              if (c15.includes(require.transport)) {
+              if (c13.includes(require.transport)) {
                 if (null == importDefault) {
                   if (constants.IPC === require.transport) {
-                    const obj4 = { errorCode: constants.INVALID_COMMAND };
+                    const obj4 = { errorCode: constants2.INVALID_COMMAND };
                     const self11 = this;
                     const self12 = this;
                     const tmp201 = new result1(name2[9])(obj4, "nonzero pid required");
@@ -166,12 +162,13 @@ let obj2 = {
                   const type = tmp59.type;
                   PLAYING = type;
                   if (type == null) {
-                    PLAYING = constants2.PLAYING;
+                    PLAYING = tmp225(name2[12]).ActivityTypes.PLAYING;
                   }
+                  const ActivityGamePlatforms = tmp225(name2[13]).ActivityGamePlatforms;
                   if (require.transport === constants.POST_MESSAGE) {
-                    DESKTOP = tmp70.EMBEDDED;
+                    DESKTOP = ActivityGamePlatforms.EMBEDDED;
                   } else {
-                    DESKTOP = tmp70.DESKTOP;
+                    DESKTOP = ActivityGamePlatforms.DESKTOP;
                   }
                   _undefined = tmp46;
                   const getApplication = items1.getApplication;
@@ -194,11 +191,11 @@ let obj2 = {
                   if (party2 != null) {
                     delete party2[tmp211];
                   }
-                  const tmp225Result5 = applicationId(name2[12]);
+                  const tmp225Result5 = applicationId(name2[14]);
                   let isFrameAppResult = null != application;
                   const computeActivityFlags = tmp225Result5.computeActivityFlags;
                   if (isFrameAppResult) {
-                    const tmp225Result6 = applicationId(name2[13]);
+                    const tmp225Result6 = applicationId(name2[15]);
                     isFrameAppResult = tmp225Result6.isFrameApp(application);
                   }
                   if (isFrameAppResult) {
@@ -213,29 +210,29 @@ let obj2 = {
                   secrets = obj11.secrets;
                   const timestamps = obj11.timestamps;
                   if (null != secrets) {
-                    const obj26 = result1(name2[14]);
+                    const obj26 = result1(name2[16]);
                     const values = obj26.values(secrets);
                     const found = values.filter((item) => null != item && "" !== item);
                     if (null != party3) {
                       items = [party3.id];
-                      const obj8 = result1(name2[14]);
+                      const obj8 = result1(name2[16]);
                       if (obj8.intersection(found, items).length > 0) {
-                        const obj12 = { errorCode: constants.INVALID_ACTIVITY_SECRET };
+                        const obj12 = { errorCode: constants2.INVALID_ACTIVITY_SECRET };
                         const self9 = this;
                         const self10 = this;
                         const tmp190 = new result1(name2[9])(obj12, "secrets cannot match the party id");
                         throw tmp190;
                       }
                     }
-                    const obj9 = result1(name2[14]);
+                    const obj9 = result1(name2[16]);
                     if (obj9.uniq(found).length < found.length) {
-                      const obj14 = { errorCode: constants.INVALID_ACTIVITY_SECRET };
+                      const obj14 = { errorCode: constants2.INVALID_ACTIVITY_SECRET };
                       const self7 = this;
                       const self8 = this;
                       const tmp184 = new result1(name2[9])(obj14, "secrets must be unique");
                       throw tmp184;
                     } else if (null != buttons) {
-                      const obj16 = { errorCode: constants.INVALID_ACTIVITY_SECRET };
+                      const obj16 = { errorCode: constants2.INVALID_ACTIVITY_SECRET };
                       const self5 = this;
                       const self6 = this;
                       const tmp178 = new result1(name2[9])(obj16, "secrets cannot currently be sent with buttons");
@@ -251,7 +248,7 @@ let obj2 = {
                     closure_6 = items1[Symbol.iterator]();
                     const nextResult = closure_6.next();
                     while (closure_6 !== undefined) {
-                      constants = 1;
+                      c13 = 1;
                       let str16 = timestamps[nextResult];
                       let tmp94 = null != str16;
                       if (tmp94) {
@@ -261,15 +258,15 @@ let obj2 = {
                       }
                       if (tmp94) {
                         let _Math = Math;
-                        timestamps[nextResult] = Math.floor(str16 * result1(name2[15]).Millis.SECOND);
+                        timestamps[nextResult] = Math.floor(str16 * result1(name2[17]).Millis.SECOND);
                       }
-                      constants = 0;
+                      c13 = 0;
                       continue;
                     }
                   }
                   if (null != assets) {
                     if (null == applicationId) {
-                      const obj17 = { errorCode: constants.INVALID_COMMAND };
+                      const obj17 = { errorCode: constants2.INVALID_COMMAND };
                       const self3 = this;
                       const self4 = this;
                       const tmp172 = new result1(name2[9])(obj17, "No application.");
@@ -280,13 +277,13 @@ let obj2 = {
                       c14 = 2;
                       c15 = 1;
                       const obj18 = { value: obj15.fetchAssetIds(applicationId, items2), done: false };
-                      obj15 = applicationId(name2[16]);
+                      obj15 = applicationId(name2[18]);
                       return obj18;
                     }
                   }
                 }
               } else {
-                const obj19 = { errorCode: constants.INVALID_COMMAND };
+                const obj19 = { errorCode: constants2.INVALID_COMMAND };
                 const _HermesInternal = HermesInternal;
                 const self = this;
                 const self2 = this;
@@ -296,9 +293,9 @@ let obj2 = {
               }
             }
           } else if (1 === c14) {
-            constants = 0;
+            c13 = 0;
             closure_6.return();
-            throw constants3;
+            throw tmp203;
           } else if (arg0 === 1) {
             c15 = 3;
             throw value;
@@ -386,8 +383,8 @@ let obj2 = {
               tmp149.party_max = tmp151;
               obj22.party_id = party3.id;
             }
-            const obj13 = result1(name2[17]);
-            obj13.track(constants3.ACTIVITY_UPDATED, obj22);
+            const obj13 = result1(name2[19]);
+            obj13.track(invite_cover_image.ACTIVITY_UPDATED, obj22);
             c15 = 3;
             const obj23 = { value: obj11, done: true };
             return obj23;
@@ -396,8 +393,7 @@ let obj2 = {
             return { value: null, done: true };
           }
         } catch (tmp203) {
-          constants3 = tmp203;
-          if (0 === constants) {
+          if (0 === c13) {
             c15 = 3;
             throw tmp203;
           } else {

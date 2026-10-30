@@ -1,70 +1,26 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 15828
+// Function ID: 15829
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 558, 576, 1504, 7193, 2]
+// Dependencies: [19, 1499, 7201, 2]
+// Exports: default
 
-// Module 15790 (useFocusRefOnNavigation)
+// Module 15828 (useFocusRefOnNavigation)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap;
+const result = size.fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusRefOnNavigation(inputRef) {
-  let closure_1;
-  let tmp = inputRef;
-  let obj = inputRef(576);
-  const cResult = obj.c(5);
-  inputRef = inputRef.inputRef;
-  const enabled = inputRef.enabled;
-  dependencyMap = tmp4;
-  const tmpResult = tmp(1504);
-  const isFocused = tmpResult.useIsFocused();
-  if (cResult[0] === (undefined === enabled || enabled)) {
-    if (cResult[1] === inputRef) {
-      let tmp6;
-      let tmp7;
-      if (cResult[2] === isFocused) {
-        tmp6 = cResult[3];
-        tmp7 = cResult[4];
-      }
-      const effect = isFocused.useEffect(tmp6, tmp7);
-    }
-  }
-  const fn = function u() {
-    const obj = inputRef(closure_1[4]);
-    const ref = obj.runAfterInteractions(() => {
-      const tmp = closure_1_1 && isFocused;
-      if (tmp) {
-        const current = ref.current;
-        if (current != null) {
-          current.focus();
-        }
-      }
-    });
-    return () => {
-      ref.cancel();
-    };
-  };
-  const items = [undefined === enabled || enabled, inputRef, isFocused];
-  cResult[0] = undefined === enabled || enabled;
-  cResult[1] = inputRef;
-  cResult[2] = isFocused;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp7 = items;
-  tmp6 = fn;
-}) : (function useFocusRefOnNavigation(inputRef) {
+export default function useFocusRefOnNavigation(inputRef) {
   inputRef = inputRef.inputRef;
   let flag = inputRef.enabled;
   if (flag === undefined) {
     flag = true;
   }
-  let obj = inputRef(flag[3]);
+  let obj = inputRef(flag[1]);
   const isFocused = obj.useIsFocused();
   const items = [flag, inputRef, isFocused];
   const effect = isFocused.useEffect(() => {
-    const obj = inputRef(flag[4]);
+    const obj = inputRef(flag[2]);
     const ref = obj.runAfterInteractions(() => {
       const tmp = flag && isFocused;
       if (tmp) {
@@ -78,7 +34,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFocusRe
       ref.cancel();
     };
   }, items);
-});
-const result = size.fileFinishedImporting("design/components/Navigator/native/useFocusRefOnNavigation.tsx");
-
-export default tmp2;
+};

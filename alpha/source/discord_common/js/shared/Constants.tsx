@@ -1,15 +1,16 @@
-// Module ID: 1095
-// Function ID: 1096
+// Module ID: 1083
+// Function ID: 1084
 // Name: Constants
-// Dependencies: [1096, 1093, 2, 1097, 1098, 1099]
+// Dependencies: [1084, 1081, 2, 1085, 1086, 1087, 1088]
 
-// Module 1095 (Constants)
-import generated_ThemeTypes from "generated/ThemeTypes" /* 1097 */;
-import NoopUtils from "NoopUtils" /* 1098 */;
-import GameGenres from "GameGenres" /* 1099 */;
+// Module 1083 (Constants)
+import generated_ThemeTypes from "generated/ThemeTypes" /* 1085 */;
+import EntitlementTypes from "EntitlementTypes" /* 1086 */;
+import NoopUtils from "NoopUtils" /* 1087 */;
+import GameGenres from "GameGenres" /* 1088 */;
 import "BigFlagUtils";
-import BigFlagUtils_mod from "BigFlagUtils" /* 1096 */;
-import PathUtils_mod from "utils/PathUtils" /* 1093 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
+import PathUtils_mod from "utils/PathUtils" /* 1081 */;
 import size from "module_2" /* 2 */;
 
 let BigFlagUtils;
@@ -180,6 +181,7 @@ PathUtils = PathUtils_mod;
 const wrapPathsResult1 = PathUtils.wrapPaths({ INDEX: "/", INDEX_WORD: "/index", INDEX_BUCKET: "/index/:bucketId", CHANGELOGS: "/changelogs/:date", COMMUNITY: "/community", COMPANY: "/company", COMPANY_INFORMATION: "/company-information", CREATORS: "/creators", DOWNLOADS: "/downloads", DOWNLOAD: "/download", GAMING: "/gaming", PRIVACY: "/privacy", TOS: "/tos", TERMS: "/terms", STORE_TERMS: "/store-terms", ACKNOWLEDGEMENTS: "/acknowledgements", LICENSES: "/licenses", PARTNERS: "/partners", HYPESQUAD: "/hypesquad", HYPESQUAD_RIOT: "/hypesquad-riot", BRANDING: "/branding", ERROR_404: "/404", JOBS: "/jobs", JOB: "/jobs/:jobId", STREAMKIT: "/streamkit", SECURITY: "/security", NITRO: "/nitro", DISCOVER: "/servers", QUESTS: "/ads/quests", GUIDELINES: "/guidelines", RICH_PRESENCE: "/rich-presence", VERIFICATION: "/verification", OPEN_SOURCE: "/open-source", WARFRAME: "/warframe", REMOTE_AUTH: "/ra/:remoteAuthFingerprint", SAFETY_LANDING: "/safetycenter", SAFETY_ARTICLE_ROOT: "/safety", SAFETY_ARTICLE: "/safety/:article", NEWSROOM: "/newsroom", INSPIRATION: "/inspiration", MOD_ACADEMY_LANDING: "/moderation", MOD_ACADEMY_EXAM: "/moderation/exam", MOD_ACADEMY_ARTICLE: "/moderation/:article", BLOG: "/blog", BUILD: "/build", DEVELOPERS: "/developers", APP_DIRECTORY: "/application-directory", REFRESH_INDEX: "/new", REFRESH_INDEX_WORD: "/new/index", REFRESH_COMPANY: "/new/company", REFRESH_DOWNLOAD: "/new/download", REFRESH_PRIVACY: "/new/privacy", REFRESH_TERMS: "/new/terms", REFRESH_ACKNOWLEDGEMENTS: "/new/acknowledgements", REFRESH_LICENSES: "/new/licenses", REFRESH_BRANDING: "/new/branding", REFRESH_JOBS: "/new/jobs", REFRESH_JOB: "/new/jobs/:jobId", REFRESH_STREAMKIT: "/new/streamkit", REFRESH_NITRO: "/new/nitro", REFRESH_GUIDELINES: "/new/guidelines", REFRESH_SAFETY_LANDING: "/new/safety", REFRESH_SAFETY_ARTICLE: "/new/safety/:article", COLLEGE: "/college", LEAGUE_CLUBS: "/league-communities", DISCORD_RECRUITING_SCAMS: "/discord-recruitment-scams", DEV_NEWSLETTER_SIGNUP: "/dev-newsletter", LEGACY_DEV_NEWSLETTER: "/newsletter", LEGAL_ARCHIVE: "/archive/", TERMS_MAY_2020: "/archive/terms/may-2020", PRIVACY_JUNE_2020: "/archive/privacy/june-2020", GUIDELINES_MAY_2020: "/archive/guidelines/may-2020", FALL_RELEASE_2023: "/fallrelease", MOBILE_REDESIGN_2023: "/mobile", REFRESH_XBOX_OFFER: "/new/discord-xbox-offer-2019", REFRESH_WHY_DISCORD: "/why-discord-is-different", WHY_DISCORD: "/why-discord", XBOX_OFFER: "/discord-xbox-offer-2020", COLLEGE_BRUINS: "/bruins", COLLEGE_ANTEATERS: "/anteaters", COLLEGE_GAUCHOS: "/gauchos", COLLEGE_BEARS: "/bears", COLLEGE_SLUGS: "/slugs", BACK_TO_SCHOOL_GIVEAWAY_INSTAGRAM: "/terms/back-to-school-2020/instagram", BACK_TO_SCHOOL_GIVEAWAY_TWITTER: "/terms/back-to-school-2020/twitter", SNOWSGIVING_GIVEAWAY_INSTAGRAM: "/terms/snowsgiving-2020/instagram", SNOWSGIVING_GIVEAWAY_TWITTER: "/terms/snowsgiving-2020/twitter" });
 const frozen5 = Object.freeze({ FACEBOOK_URL: "https://www.facebook.com/discord/", INSTAGRAM_URL: "https://www.instagram.com/discord/", YOUTUBE_URL: "https://www.youtube.com/discord/", TIKTOK_URL: "https://www.tiktok.com/@discord" });
 const result = size.fileFinishedImporting("../discord_common/js/shared/Constants.tsx");
+const EntitlementTypes_export = EntitlementTypes.EntitlementTypes;
 const GameGenres_export = GameGenres.GameGenres;
 
 export const ThemeExtends = generated_ThemeTypes.ThemeExtends;
@@ -195,8 +197,7 @@ export const FEEDBACK_DOMAIN = "feedback.discord.com";
 export const DOCS_DOMAIN = "docs.discord.com";
 export const UNSAFE_Colors = frozen;
 export const Fonts = { PRIMARY_NORMAL: "ggsans-Normal, NotoSans-Normal", PRIMARY_NORMAL_ITALIC: "ggsans-NormalItalic, NotoSans-NormalItalic", PRIMARY_MEDIUM: "ggsans-Medium, NotoSans-Medium", PRIMARY_MEDIUM_ITALIC: "ggsans-MediumItalic, NotoSans-MediumItalic", PRIMARY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", PRIMARY_BOLD: "ggsans-Bold, NotoSans-Bold", PRIMARY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", DISPLAY_NORMAL: "ggsans-Normal, NotoSans-Normal", DISPLAY_MEDIUM: "ggsans-Medium, NotoSans-Medium", DISPLAY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", DISPLAY_BOLD: "ggsans-Bold, NotoSans-Bold", DISPLAY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", CODE_NORMAL: "ggmono-Normal, SourceCodePro-Normal", CODE_BOLD: "ggmono-Bold, SourceCodePro-Bold", GINTO_NORD_EXTRA_BOLD: "ABCGintoNord-ExtraBold", GINTO_NORD_EXTRA_BOLD_ITALIC: "ABCGintoNord-ExtraBoldItalic", GINTO_DISCORD_NORD_BOLD: "ABCGintoDiscordNord-Bold", GINTO_DISCORD_NORD_BOLD_ITALIC: "ABCGintoDiscordNord-BoldItalic", GINTO_DISCORD_NORD_BLACK_ITALIC: "ABCGintoDiscordNord-BlackItalic" };
-export const ActivityTypes = { PLAYING: 0, [0]: "PLAYING", STREAMING: 1, [1]: "STREAMING", LISTENING: 2, [2]: "LISTENING", WATCHING: 3, [3]: "WATCHING", CUSTOM_STATUS: 4, [4]: "CUSTOM_STATUS", COMPETING: 5, [5]: "COMPETING", HANG_STATUS: 6, [6]: "HANG_STATUS" };
-export const ActivityGamePlatforms = { DESKTOP: "desktop", XBOX: "xbox", SAMSUNG: "samsung", IOS: "ios", ANDROID: "android", EMBEDDED: "embedded", PS4: "ps4", PS5: "ps5", META_QUEST: "meta_quest" };
+export { EntitlementTypes_export as EntitlementTypes };
 export const ActivityPartyPrivacy = { PRIVATE: 0, [0]: "PRIVATE", PUBLIC: 1, [1]: "PUBLIC" };
 export const StatusTypes = { ONLINE: "online", OFFLINE: "offline", IDLE: "idle", DND: "dnd", INVISIBLE: "invisible", STREAMING: "streaming", UNKNOWN: "unknown" };
 export const ClientTypes = { DESKTOP: "desktop", WEB: "web", MOBILE: "mobile", VR: "vr", UNKNOWN: "unknown" };
@@ -220,8 +221,6 @@ export const PROACTIVE_FULFILLMENT = set5;
 export const PaymentSourceFlags = { NEW: 1, [1]: "NEW", FAILED_ADDRESS: 16, [16]: "FAILED_ADDRESS" };
 export const PaymentStatusTypes = { PENDING: 0, [0]: "PENDING", COMPLETED: 1, [1]: "COMPLETED", FAILED: 2, [2]: "FAILED", REVERSED: 3, [3]: "REVERSED", REFUNDED: 4, [4]: "REFUNDED", CANCELED: 5, [5]: "CANCELED" };
 export const SubscriptionTypes = { PREMIUM: 1, [1]: "PREMIUM", GUILD: 2, [2]: "GUILD", APPLICATION: 3, [3]: "APPLICATION", GAME_SERVER: 4, [4]: "GAME_SERVER", GIFT: 5, [5]: "GIFT" };
-export const InviteTargetTypes = { STREAM: 1, [1]: "STREAM", EMBEDDED_APPLICATION: 2, [2]: "EMBEDDED_APPLICATION", ROLE_SUBSCRIPTIONS_PURCHASE: 3, [3]: "ROLE_SUBSCRIPTIONS_PURCHASE" };
-export const EntitlementTypes = { PURCHASE: 1, [1]: "PURCHASE", PREMIUM_SUBSCRIPTION: 2, [2]: "PREMIUM_SUBSCRIPTION", DEVELOPER_GIFT: 3, [3]: "DEVELOPER_GIFT", TEST_MODE_PURCHASE: 4, [4]: "TEST_MODE_PURCHASE", FREE_PURCHASE: 5, [5]: "FREE_PURCHASE", USER_GIFT: 6, [6]: "USER_GIFT", PREMIUM_PURCHASE: 7, [7]: "PREMIUM_PURCHASE", APPLICATION_SUBSCRIPTION: 8, [8]: "APPLICATION_SUBSCRIPTION", FREE_STAFF_PURCHASE: 9, [9]: "FREE_STAFF_PURCHASE", QUEST_REWARD: 10, [10]: "QUEST_REWARD", FRACTIONAL_REDEMPTION: 11, [11]: "FRACTIONAL_REDEMPTION", VIRTUAL_CURRENCY_REDEMPTION: 12, [12]: "VIRTUAL_CURRENCY_REDEMPTION", PURCHASE_REWARD: 16, [16]: "PURCHASE_REWARD" };
 export const BraintreeErrors = { PAYPAL_POPUP_CLOSED: "PAYPAL_POPUP_CLOSED", VENMO_APP_CANCELED: "VENMO_APP_CANCELED", VENMO_DESKTOP_CANCELED: "VENMO_DESKTOP_CANCELED", VENMO_CANCELED: "VENMO_CANCELED" };
 export const ExternalSKUStrategyTypes = frozen2;
 export const RevenueSurfaces = { DISCOVERY: 0, [0]: "DISCOVERY", CHECKOUT: 1, [1]: "CHECKOUT" };

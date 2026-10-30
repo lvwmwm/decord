@@ -1,18 +1,18 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16410
+// Function ID: 16411
 // Name: HexagonActionCreators
-// Dependencies: [5, 1389, 5030, 3, 1101, 1294, 5032, 584, 2]
+// Dependencies: [5, 1384, 5034, 3, 1090, 1283, 5036, 572, 2]
 // Exports: clearHexagonCampaignAppliedPerks, ensureHexagonCampaignEnrollment, getPendingHexagonCampaignEnrollment, markHexagonCampaignDisplayNameStylesVisited, markHexagonCampaignPerkApplied, saveHexagonCampaignPreviousDisplayNameStyles, saveHexagonCampaignPreviousPerkValues
 
-// Module 16357 (HexagonActionCreators)
+// Module 16410 (HexagonActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5032 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5036 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, c5, c6, closure_3;
@@ -33,7 +33,7 @@ let obj = function _enrollInHexagonCampaign() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ let obj = function _enrollInHexagonCampaign() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -116,7 +116,7 @@ obj = function _enrollAndWaitForHexagonCampaignPerk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -211,7 +211,7 @@ obj = function _enrollAndClearPendingHexagonCampaignEnrollment() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

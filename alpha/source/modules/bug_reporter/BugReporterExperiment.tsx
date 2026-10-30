@@ -1,10 +1,10 @@
-// Module ID: 14265
-// Function ID: 14266
+// Module ID: 11109
+// Function ID: 11110
 // Name: BugReporterExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 14265 (BugReporterExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 11109 (BugReporterExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,19 +1,19 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15488
+// Function ID: 15489
 // Name: GatewaySocketOpCodes
-// Dependencies: [5851, 580, 2010, 11, 2]
+// Dependencies: [5858, 568, 2005, 11, 2]
 
-// Module 15448 (GatewaySocketOpCodes)
+// Module 15488 (GatewaySocketOpCodes)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _mod580 from "module_580" /* 580 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2010 */;
-import RTCRegionStore from "RTCRegionStore" /* 5851 */;
+import _mod568 from "module_568" /* 568 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2005 */;
+import RTCRegionStore from "RTCRegionStore" /* 5858 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, closure_0, dependencyMap, importDefault, subscriptions2;
 
-const EventEmitter = _mod580.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class GatewaySocketOpCodes extends EventEmitter {
   presenceUpdate(status, since, activities, afk) {
     const obj = { status, since, activities, afk };

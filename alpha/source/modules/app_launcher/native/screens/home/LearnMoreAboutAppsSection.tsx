@@ -1,20 +1,23 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12246
+// Function ID: 12247
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 5698, 2065, 1125, 5271, 6968, 12071, 11262, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 575, 5704, 2062, 1114, 12247, 11467, 5619, 6974, 2]
+// Exports: default
 
-// Module 12070 (LearnMoreAboutAppsSection)
+// Module 12246 (LearnMoreAboutAppsSection)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12071 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import Pressables from "Pressables" /* 6974 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11467 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12247 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -22,11 +25,6 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let tmp;
-const intl5 = tmp(1125);
-const Text_Text = tmp(5271);
-const Pressables = tmp(6968);
-const AppLauncherTypes = tmp(11262);
 const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -38,158 +36,9 @@ obj3 = { height: nativeDefault.space.PX_16 };
 obj4 = { borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT, paddingVertical: 12, paddingHorizontal: 16, minHeight: 48, justifyContent: "center", alignItems: "center" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 let closure_8 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LearnMoreAboutAppsSection(visible) {
-  let first;
-  let intl4;
-  let items;
-  let tmp12;
-  let tmp16;
-  let tmp19;
-  let tmp22;
-  let tmp26;
-  let tmp29;
-  let tmp32;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let obj = react2;
-  const cResult = obj.c(26);
-  visible = visible.visible;
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      const openURL = LinkingDefault.openURL;
-      LinkingDefault;
-      const obj = HelpdeskUtilsDefault;
-      openURL(obj.getAppsSupportURL(constants.APPS_LEARN_MORE));
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = intl5.intl;
-    const stringResult = intl.string(intl5.t["kw8/Ec"]);
-    const intl2 = intl5.intl;
-    const stringResult1 = intl2.string(intl5.t.GZoV1O);
-    const intl3 = intl5.intl;
-    const obj2 = { sectionTitle: stringResult, sectionBody: stringResult1 };
-    const formatToPlainStringResult = intl3.formatToPlainString(intl5.t.xx5Sug, obj2);
-    cResult[1] = stringResult1;
-    cResult[2] = stringResult;
-    cResult[3] = formatToPlainStringResult;
-    tmp8 = formatToPlainStringResult;
-    tmp7 = stringResult;
-    tmp6 = stringResult1;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.divider) {
-    const obj3 = { style: tmp4.divider };
-    const tmp15 = metroRequire(View, obj3);
-    cResult[4] = tmp4.divider;
-    cResult[5] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { accessibilityRole: "header", variant: "heading-lg/bold", color: "mobile-text-heading-primary", children: tmp7 };
-    const tmp18 = metroRequire(Text_Text.Text, obj4);
-    cResult[6] = tmp18;
-    tmp16 = tmp18;
-  } else {
-    tmp16 = cResult[6];
-  }
-  if (cResult[7] !== tmp4.body) {
-    const obj5 = { variant: "text-xs/normal", color: "text-default", style: tmp4.body, children: tmp6 };
-    const tmp21 = metroRequire(Text_Text.Text, obj5);
-    cResult[7] = tmp4.body;
-    cResult[8] = tmp21;
-    tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.divider) {
-    const obj6 = { style: tmp4.divider };
-    const tmp25 = metroRequire(View, obj6);
-    cResult[9] = tmp4.divider;
-    cResult[10] = tmp25;
-    tmp22 = tmp25;
-  } else {
-    tmp22 = cResult[10];
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl4.string(intl5.t.Ye51oT) };
-    const Text = Text_Text.Text;
-    intl4 = intl5.intl;
-    const tmp28 = metroRequire(Text, obj7);
-    cResult[11] = tmp28;
-    tmp26 = tmp28;
-  } else {
-    tmp26 = cResult[11];
-  }
-  if (cResult[12] !== tmp4.linkButton) {
-    const obj8 = { style: tmp4.linkButton, onPress: first, accessibilityRole: "link", accessibilityLabel: tmp8, children: tmp26 };
-    const tmp31 = metroRequire(Pressables.PressableHighlight, obj8);
-    cResult[12] = tmp4.linkButton;
-    cResult[13] = tmp31;
-    tmp29 = tmp31;
-  } else {
-    tmp29 = cResult[13];
-  }
-  if (cResult[14] !== tmp4.divider) {
-    const obj9 = { style: tmp4.divider };
-    const tmp35 = metroRequire(View, obj9);
-    cResult[14] = tmp4.divider;
-    cResult[15] = tmp35;
-    tmp32 = tmp35;
-  } else {
-    tmp32 = cResult[15];
-  }
-  if (cResult[16] === tmp4.container) {
-    if (cResult[17] === tmp12) {
-      if (cResult[18] === tmp19) {
-        if (cResult[19] === tmp22) {
-          if (cResult[20] === tmp29) {
-            let tmp36;
-            if (cResult[21] === tmp32) {
-              tmp36 = cResult[22];
-            }
-            if (cResult[23] === tmp36) {
-              let tmp38;
-              if (cResult[24] === visible) {
-                tmp38 = cResult[25];
-              }
-              return tmp38;
-            }
-            const obj10 = { sectionName: AppLauncherTypes.AppLauncherSectionName.NEW_TO_APPS, numItems: 1, numVisibleItems: 1, viewed: visible, children: tmp36 };
-            const tmp41 = TrackSectionHeaderDefault;
-            const tmp42 = metroRequire(tmp41, obj10);
-            cResult[23] = tmp36;
-            cResult[24] = visible;
-            cResult[25] = tmp42;
-            tmp38 = tmp42;
-          }
-        }
-      }
-    }
-  }
-  const obj11 = { style: tmp4.container, children: items };
-  items = [tmp12, tmp16, tmp19, tmp22, tmp29, tmp32];
-  const tmp37 = metroImportDefault(View, obj11);
-  cResult[16] = tmp4.container;
-  cResult[17] = tmp12;
-  cResult[18] = tmp19;
-  cResult[19] = tmp22;
-  cResult[20] = tmp29;
-  cResult[21] = tmp32;
-  cResult[22] = tmp37;
-  tmp36 = tmp37;
-}) : (function LearnMoreAboutAppsSection(visible) {
+const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx");
+
+export default function LearnMoreAboutAppsSection(visible) {
   let Text;
   let intl4;
   let items;
@@ -229,7 +78,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function LearnMoreA
   const obj8 = { style: tmp.divider };
   items[5] = metroRequire(View, obj8);
   return metroRequire(tmp6, obj);
-});
-const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx");
-
-export default tmp5;
+};

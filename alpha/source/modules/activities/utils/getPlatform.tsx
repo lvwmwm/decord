@@ -1,21 +1,21 @@
-// Module ID: 5671
-// Function ID: 5672
+// Module ID: 5677
+// Function ID: 5678
 // Name: getPlatform
-// Dependencies: [1998, 2]
+// Dependencies: [2022, 2]
 // Exports: default
 
-// Module 5671 (getPlatform)
-import Server from "Server" /* 1998 */;
+// Module 5677 (getPlatform)
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2022 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
 
 export default function getPlatform(arg0) {
   if ("android" === arg0) {
-    return Server.EmbeddedActivitySupportedPlatforms.ANDROID;
+    return EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.ANDROID;
   } else if ("ios" === arg0) {
-    return Server.EmbeddedActivitySupportedPlatforms.IOS;
+    return EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.IOS;
   } else {
-    return Server.EmbeddedActivitySupportedPlatforms.WEB;
+    return EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.WEB;
   }
 };

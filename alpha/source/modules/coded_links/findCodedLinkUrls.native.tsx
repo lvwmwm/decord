@@ -1,12 +1,12 @@
-// Module ID: 5742
-// Function ID: 5743
+// Module ID: 5748
+// Function ID: 5749
 // Name: findCodedLinkUrls
-// Dependencies: [5743, 8401, 6020, 15585, 15586, 2]
+// Dependencies: [5749, 8438, 6027, 15625, 15626, 2]
 // Exports: default
 
-// Module 5742 (findCodedLinkUrls)
-import MarkupTypes from "MarkupTypes" /* 6020 */;
-import findCodedLinkUrlsUsingRegexDefault from "findCodedLinkUrlsUsingRegex" /* 15586 */;
+// Module 5748 (findCodedLinkUrls)
+import MarkupTypes from "MarkupTypes" /* 6027 */;
+import findCodedLinkUrlsUsingRegexDefault from "findCodedLinkUrlsUsingRegex" /* 15626 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/coded_links/findCodedLinkUrls.native.tsx");
@@ -14,14 +14,14 @@ const result = size.fileFinishedImporting("modules/coded_links/findCodedLinkUrls
 export default function findCodedLinkUrls(content) {
   let items;
   let tmp = items;
-  const obj = items(15585);
+  const obj = items(15625);
   if (obj.isFindCodedLinksRegexEnabled()) {
     items = findCodedLinkUrlsUsingRegexDefault(content);
   } else {
     items = [];
-    const _default = tmp(5743).default;
+    const _default = tmp(5749).default;
     const parseToASTResult = _default.parseToAST(content, true, { allowLinks: true });
-    const tmpResult = tmp(8401);
+    const tmpResult = tmp(8438);
     tmpResult.walkAst(parseToASTResult, (type) => {
       const tmp = type.type === MarkupTypes.AST_KEY.LINK && typeof type.target === "string" && type.target.length > 0;
       if (tmp) {

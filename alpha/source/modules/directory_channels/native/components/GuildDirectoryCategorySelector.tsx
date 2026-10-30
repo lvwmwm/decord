@@ -1,22 +1,20 @@
-// Module ID: 14169
-// Function ID: 14170
+// Module ID: 14318
+// Function ID: 14319
 // Name: GuildDirectoryCategorySelector
-// Dependencies: [32, 19, 17, 13663, 13656, 21, 5005, 587, 1125, 558, 576, 5289, 683, 504, 13667, 8938, 12315, 14170, 2]
+// Dependencies: [32, 19, 17, 13810, 13803, 21, 5009, 575, 1114, 5591, 671, 504, 8971, 13814, 12476, 14319, 2]
+// Exports: default
 
-// Module 14169 (GuildDirectoryCategorySelector)
+// Module 14318 (GuildDirectoryCategorySelector)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import useToken from "useToken" /* 5289 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13667 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13814 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13663 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13656 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13810 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13803 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,9 +23,7 @@ let c10;
 let c9;
 let metroImportAll;
 let obj2;
-let tmp3;
 let unpackModuleId;
-const _modDef683 = tmp3(683);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 ({ DirectoryEntryCategories: metroImportAll, getHubCategories: c9 } = GuildDirectoryConstants);
@@ -35,156 +31,13 @@ const View = react_native.View;
 let obj = { categoriesListWrapper: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, paddingTop: 12 };
 let closure_12 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGradientColors() {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  if (cResult[0] !== token) {
-    const obj3 = _modDef683(token);
-    const alphaResult = obj3.alpha(0);
-    const hexResult = alphaResult.hex();
-    cResult[0] = token;
-    cResult[1] = hexResult;
-    tmp5 = hexResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === token) {
-    let tmp7;
-    if (cResult[3] === tmp5) {
-      tmp7 = cResult[4];
-    }
-    return tmp7;
-  }
-  const items = [token, tmp5];
-  cResult[2] = token;
-  cResult[3] = tmp5;
-  cResult[4] = items;
-  tmp7 = items;
-}) : (function useGradientColors() {
-  const obj = useToken;
-  const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  const items = [token, ];
-  const obj2 = _modDef683(token);
-  const alphaResult = obj2.alpha(0);
-  items[1] = alphaResult.hex();
-  return items;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCategorySelector(channel) {
-  let allEntriesCount;
-  let arr2;
-  let stateFromStores;
-  let tmp10;
-  let tmp8;
-  let tmp3 = allEntriesCount;
-  let obj = channel(allEntriesCount[10]);
-  const cResult = obj.c(37);
-  channel = channel.channel;
-  const onCategorySelected = channel.onCategorySelected;
-  const categoryCounts = channel.categoryCounts;
-  allEntriesCount = channel.allEntriesCount;
-  closure_12();
-  const tmp6 = _slicedToArray(stateFromStores.useState(0), 2);
-  [r10022, _slicedToArray] = tmp6;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c(nativeEvent) {
-      _slicedToArray(nativeEvent.nativeEvent.layout.width);
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildDirectoryStore];
-    cResult[1] = items;
-    tmp8 = items;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== channel.id) {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-    cResult[2] = channel.id;
-    cResult[3] = G;
-    tmp10 = G;
-  } else {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-  }
-  const tmp2Result = channel(tmp3[13]);
-  stateFromStores = tmp2Result.useStateFromStores(tmp8, tmp10);
-  if (cResult[4] !== channel.id) {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-    tmp12[0] = constants.ALL;
-    const id = channel.id;
-    const intl = tmp2(tmp3[8]).intl;
-    tmp12[1] = intl.string(channel(tmp3[8]).t.hEAa2a);
-    const items1 = [tmp12];
-    HermesBuiltin.arraySpread(items1, closure_9(id), 1);
-    cResult[4] = channel.id;
-    cResult[5] = items1;
-    arr2 = items1;
-  } else {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-  }
-  if (cResult[6] === allEntriesCount) {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-  }
-  if (cResult[10] === allEntriesCount) {
-    class G {
-      constructor() {
-        return GuildDirectoryStore.getCurrentCategoryId(channel.id);
-      }
-    }
-    const mapped = arr2.map(T);
-    cResult[6] = allEntriesCount;
-    cResult[7] = arr2;
-    cResult[8] = categoryCounts;
-    cResult[9] = mapped;
-  }
-  class T {
-    constructor(label) {
-      let tmp3;
-      const obj = { label: label.label, id: String(label.value), count: tmp3, page: null };
-      if (label.value === metroImportAll.ALL) {
-        tmp3 = allEntriesCount;
-      } else if (categoryCounts != null) {
-        tmp3 = tmp[label.value];
-      }
-      return obj;
-    }
-  }
-  cResult[10] = allEntriesCount;
-  cResult[11] = categoryCounts;
-  cResult[12] = T;
-}) : (function GuildDirectoryCategorySelector(channel) {
+const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCategorySelector.tsx");
+
+export default function GuildDirectoryCategorySelector(channel) {
   let _undefined;
   let c4;
   let categoryCounts;
-  let items4;
+  let items5;
   let tmp3;
   channel = channel.channel;
   ({ onCategorySelected: importDefault, categoryCounts } = channel);
@@ -197,7 +50,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
   const callback = stateFromStores.useCallback((nativeEvent) => {
     _undefined(nativeEvent.nativeEvent.layout.width);
   }, []);
-  let obj = channel(allEntriesCount[13]);
+  let obj = channel(allEntriesCount[11]);
   let items = [GuildDirectoryStore];
   stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getCurrentCategoryId(channel.id));
   const items1 = [channel.id];
@@ -229,7 +82,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
     }
     return num;
   }, items3);
-  const obj2 = channel(allEntriesCount[15]);
+  const obj2 = channel(allEntriesCount[12]);
   const obj3 = {
     items: memo1,
     defaultIndex: memo2,
@@ -247,13 +100,13 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirec
     pageWidth: tmp3
   };
   const segmentedControlState = obj2.useSegmentedControlState(obj3);
-  const obj4 = { style: tmp.categoriesListWrapper, onLayout: callback, children: items4 };
-  items4 = [, ];
-  const tmp10 = closure_13();
-  items4[0] = closure_10(channel(allEntriesCount[16]).Tabs, { state: segmentedControlState });
-  items4[1] = closure_10(require("TabsGradient"), { state: segmentedControlState, colors: tmp10 });
-  return closure_11(memo, obj4);
-});
-const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCategorySelector.tsx");
-
-export default tmp4;
+  const obj4 = channel(allEntriesCount[9]);
+  const token = obj4.useToken(require("native").colors.BACKGROUND_BASE_LOW);
+  const items4 = [token, ];
+  const obj5 = require("module_671")(token);
+  const alphaResult = obj5.alpha(0);
+  items4[1] = alphaResult.hex();
+  const obj6 = { style: tmp.categoriesListWrapper, onLayout: callback, children: items5 };
+  items5 = [closure_10(channel(allEntriesCount[14]).Tabs, { state: segmentedControlState }), closure_10(require("TabsGradient"), { state: segmentedControlState, colors: items4 })];
+  return closure_11(memo, obj6);
+};

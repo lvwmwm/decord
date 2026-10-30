@@ -1,9 +1,9 @@
-// Module ID: 2002
-// Function ID: 2003
+// Module ID: 1997
+// Function ID: 1998
 // Name: LifecycleManager
 // Dependencies: [2]
 
-// Module 2002 (LifecycleManager)
+// Module 1997 (LifecycleManager)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/LifecycleManager.tsx");

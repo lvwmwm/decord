@@ -1,57 +1,20 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18110
+// Function ID: 18111
 // Name: useFavoritesGuildCategoryLongPress
-// Dependencies: [19, 1084, 558, 576, 4882, 1125, 18050, 2]
+// Dependencies: [19, 1072, 4883, 1114, 18111, 2]
+// Exports: default
 
-// Module 18049 (useFavoritesGuildCategoryLongPress)
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import FavoritesUtils from "FavoritesUtils" /* 4882 */;
-import openFavoritesGuildCategoryActionSheetDefault from "openFavoritesGuildCategoryActionSheet" /* 18050 */;
+// Module 18110 (useFavoritesGuildCategoryLongPress)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import FavoritesUtils from "FavoritesUtils" /* 4883 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildCategoryLongPress(getGuildId) {
-  let id;
-  let intl;
-  let tmp4;
-  const obj = id(576);
-  const cResult = obj.c(5);
-  if (cResult[0] !== getGuildId) {
-    const tmpResult = id(4882);
-    const isFavoritesGuildIdResult = tmpResult.isFavoritesGuildId(getGuildId.getGuildId()) && getGuildId.type === ChannelTypes.GUILD_CATEGORY;
-    cResult[0] = getGuildId;
-    cResult[1] = isFavoritesGuildIdResult;
-    tmp4 = isFavoritesGuildIdResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  id = getGuildId.id;
-  if (cResult[2] === id) {
-    let tmp7;
-    if (cResult[3] === tmp4) {
-      tmp7 = cResult[4];
-    }
-    return tmp7;
-  }
-  let tmp8 = null;
-  if (tmp4) {
-    const obj2 = {
-      label: intl.string(id(1125).t.Xm41aV),
-      perform() {
-          return openFavoritesGuildCategoryActionSheetDefault(id);
-        }
-    };
-    intl = tmp(1125).intl;
-    tmp8 = obj2;
-  }
-  cResult[2] = id;
-  cResult[3] = tmp4;
-  cResult[4] = tmp8;
-  tmp7 = tmp8;
-}) : (function useFavoritesGuildCategoryLongPress(getGuildId) {
+const result = size.fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryLongPress.tsx");
+
+export default function useFavoritesGuildCategoryLongPress(getGuildId) {
   let obj = FavoritesUtils;
   let isFavoritesGuildIdResult = obj.isFavoritesGuildId(getGuildId.getGuildId());
   if (isFavoritesGuildIdResult) {
@@ -67,7 +30,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
       const obj = {
         label: intl.string(intl2.t.Xm41aV),
         perform() {
-            return id(dependencyMap[6])(closure_1_1);
+            return id(dependencyMap[4])(closure_1_1);
           }
       };
       intl = intl2.intl;
@@ -75,7 +38,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     }
     return tmp;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildCategoryLongPress.tsx");
-
-export default tmp2;
+};

@@ -1,17 +1,17 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14119
+// Function ID: 14120
 // Name: useMessageRequestPreview
-// Dependencies: [5, 6049, 6829, 13988, 1084, 558, 576, 504, 12, 1294, 584, 2]
+// Dependencies: [5, 6056, 6836, 14120, 1072, 504, 12, 1283, 572, 2]
+// Exports: useMessageRequestPreview
 
-// Module 13987 (useMessageRequestPreview)
+// Module 14119 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13988 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 14120 */;
 import size from "module_2" /* 2 */;
 
 let c1, c10, c11, c4, closure_4;
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -70,12 +70,12 @@ let obj = function _loadMessageRequestData() {
           const obj6 = { value, done: true };
           return obj6;
         } else {
-          obj = closure_128_1(closure_128_2[8]);
+          obj = closure_128_1(closure_128_2[6]);
         }
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -156,7 +156,7 @@ obj = function _loadMessageRequestDataHelper() {
           } else {
             if (2 === tmp4) {
               c9 = 1;
-              let obj4 = closure_135_1(closure_135_2[10]);
+              let obj4 = closure_135_1(closure_135_2[8]);
               let obj7 = { type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR", requestedChannelIds: substr };
               let dispatchResult = obj4.dispatch(obj7);
             } else {
@@ -180,7 +180,7 @@ obj = function _loadMessageRequestDataHelper() {
                   return obj8;
                 } else {
                   body = value;
-                  obj = closure_135_1(closure_135_2[10]);
+                  obj = closure_135_1(closure_135_2[8]);
                   let obj9 = { type: "LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_SUCCESS", requestedChannelIds: substr, supplementalData: body.body };
                   let dispatchResult1 = obj.dispatch(obj9);
                   c9 = 1;
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         }
       }
@@ -220,124 +220,15 @@ obj = function _loadMessageRequestDataHelper() {
 const Endpoints = Constants.Endpoints;
 const set = new Set();
 let c9 = null;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestPreview(id, arg1) {
-  let closure_9;
-  let error;
-  let first;
-  let loaded;
-  let message;
-  let timeout;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let tmp9;
-  obj = arg1;
-  let tmp = id;
-  const obj2 = id(576);
-  const cResult = obj2.c(12);
-  id = id.id;
-  if (undefined === arg1) {
-    obj = {};
-  }
-  const enabled = obj.enabled;
-  let tmp4 = undefined === enabled || enabled;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageRequestPreviewStore, MessageStore, ReadStateStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id) {
-    const fn = function n() {
-      const lastMessageIdResult = ReadStateStore.lastMessageId(id);
-      const messageRequestPreview = MessageRequestPreviewStore.getMessageRequestPreview(id);
-      const tmp = id;
-      if (null == messageRequestPreview.message) {
-        if (null != lastMessageIdResult) {
-          const message = MessageStore.getMessage(tmp, lastMessageIdResult);
-          if (null != message) {
-            return { loaded: true, error: false, message };
-          }
-        }
-      }
-      return messageRequestPreview;
-    };
-    const items1 = [id];
-    cResult[1] = id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp10 = items1;
-    tmp9 = fn;
-  } else {
-    tmp9 = cResult[2];
-    tmp10 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp9, tmp10);
-  ({ loaded, message, error } = stateFromStoresObject);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [MessageRequestPreviewStore];
-    cResult[4] = items2;
-    tmp12 = items2;
-  } else {
-    tmp12 = cResult[4];
-  }
-  if (cResult[5] !== id) {
-    const fn2 = function f() {
-      return MessageRequestPreviewStore.shouldLoadMessageRequestPreview(id);
-    };
-    const items3 = [id];
-    cResult[5] = id;
-    cResult[6] = fn2;
-    cResult[7] = items3;
-    tmp15 = items3;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[6];
-    tmp15 = cResult[7];
-  }
-  const tmpResult2 = tmp(504);
-  const stateFromStores = tmpResult2.useStateFromStores(tmp12, tmp14, tmp15);
-  if (tmp4) {
-    tmp4 = !loaded;
-  }
-  if (tmp4) {
-    tmp4 = null == message;
-  }
-  if (tmp4) {
-    tmp4 = stateFromStores;
-  }
-  if (tmp4) {
-    set.add(id);
-    if (null == timeout) {
-      const _setTimeout = setTimeout;
-      timeout = setTimeout(loadMessageRequestData, 0);
-    }
-  }
-  if (cResult[8] === error) {
-    if (cResult[9] === loaded) {
-      let tmp23;
-      if (cResult[10] === message) {
-        tmp23 = cResult[11];
-      }
-      return tmp23;
-    }
-  }
-  const obj3 = { loaded, error, message };
-  cResult[8] = error;
-  cResult[9] = loaded;
-  cResult[10] = message;
-  cResult[11] = obj3;
-  tmp23 = obj3;
-}) : (function useMessageRequestPreview(id) {
+const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestPreview.tsx");
+
+export function useMessageRequestPreview(channel, arg1) {
   let closure_9;
   let error;
   let loaded;
   let message;
   let timeout;
-  id = id.id;
+  const id = channel.id;
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -385,7 +276,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     }
   }
   return { loaded, error, message };
-});
-const result = size.fileFinishedImporting("modules/message_request/hooks/useMessageRequestPreview.tsx");
-
-export const useMessageRequestPreview = tmp3;
+}

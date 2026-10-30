@@ -1,18 +1,18 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 8139
+// Function ID: 8140
 // Name: AppStoreAgeSignalAttestation
-// Dependencies: [5, 1389, 8134, 510, 8135, 1381, 8136, 5760, 2]
+// Dependencies: [5, 1384, 8140, 510, 8141, 1376, 8142, 5767, 2]
 // Exports: getAgeSignalChallenge, getAgeSignalIntegrityToken, getAppStoreAgeSignalAssertion, warmAgeSignalAttestation
 
-// Module 8133 (AppStoreAgeSignalAttestation)
+// Module 8139 (AppStoreAgeSignalAttestation)
 import Storage3 from "Storage" /* 510 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import TimeUtils from "TimeUtils" /* 5760 */;
-import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8134 */;
-import react_nativeDefault from "react-native" /* 8135 */;
-import react_nativeDefault2 from "react-native" /* 8136 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import TimeUtils from "TimeUtils" /* 5767 */;
+import AppStoreAgeSignalActionCreators from "AppStoreAgeSignalActionCreators" /* 8140 */;
+import react_nativeDefault from "react-native" /* 8141 */;
+import react_nativeDefault2 from "react-native" /* 8142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let c0, c4, c8, c9;
@@ -101,7 +101,7 @@ let obj = function _requestIOSChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -126,7 +126,7 @@ let obj = function _requestIOSChallenge() {
         } else if (1 === tmp3) {
           c3 = 0;
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c1 = 3;
           throw value;
@@ -189,7 +189,7 @@ obj = function _registerAttestKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -252,7 +252,7 @@ obj = function _registerAttestKey() {
           return obj;
         }
         c4 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         c4 = 3;
         throw tmp19;
@@ -308,7 +308,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -355,13 +355,13 @@ obj = function _getAppStoreAgeSignalAssertion() {
               }
             }
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp4) {
           c7 = 0;
           closure_134_10(null);
           c9 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } else {
           if (2 === tmp4) {
             if (arg0 === 1) {
@@ -377,7 +377,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
               if (null == _null) {
                 c7 = 0;
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               } else {
                 keyId = closure_2;
                 nonce = _null.nonce;
@@ -406,7 +406,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
               if (null == keyId) {
                 c7 = 0;
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c8 = 5;
                 c9 = 1;
@@ -443,7 +443,7 @@ obj = function _getAppStoreAgeSignalAssertion() {
             if (null == nonce) {
               c7 = 0;
               c9 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             } else {
               let tmp7 = closure_5;
               nonce = nonce.nonce;
@@ -492,8 +492,8 @@ obj = function _requestPlayIntegrityToken() {
         return obj5;
       }
     }
-    await "IconComponent";
-    await "IconComponent";
+    await "HermesInternal";
+    await "HermesInternal";
     return arg1;
   });
   return obj(...arguments);
@@ -511,7 +511,7 @@ obj = function _getAgeSignalChallenge() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -538,13 +538,13 @@ obj = function _getAgeSignalChallenge() {
               return obj5;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === tmp3) {
           c2 = 0;
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c0 = 3;
           throw value;
@@ -592,7 +592,7 @@ obj = function _getAgeSignalIntegrityToken() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -612,7 +612,7 @@ obj = function _getAgeSignalIntegrityToken() {
             return obj4;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c2 = 3;

@@ -1,23 +1,22 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9859
+// Function ID: 9860
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7755, 5644, 1084, 21, 5005, 587, 558, 576, 1503, 504, 9802, 9820, 9805, 5271, 1125, 5295, 9834, 9835, 9837, 7026, 6965, 2]
+// Dependencies: [19, 17, 7760, 5650, 1072, 21, 5009, 575, 1498, 504, 9828, 9846, 9831, 6971, 5619, 1114, 7032, 5582, 9860, 9861, 9863, 2]
 
-// Module 9833 (ConversationListItem)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import ConversationConstants from "ConversationConstants" /* 5644 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9802 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9805 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9820 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9835 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9837 */;
+// Module 9859 (ConversationListItem)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import ConversationConstants from "ConversationConstants" /* 5650 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 9828 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9831 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9846 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9861 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9863 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7755 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7760 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,416 +31,7 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
-({ View: closure_4, StyleSheet } = react_native);
-let closure_6 = ConversationConstants.MOBILE_PREVIEW_MESSAGE_COUNT;
-const VerticalGradient = Constants.VerticalGradient;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const colors = ["black", "black"];
-const colors2 = ["black", "transparent"];
-let createStyles = createStyles_mod;
-let obj = { card: obj2, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: obj3, previewsMask: obj4, previews: obj5, maskColumn: obj6, maskOpaque: { flex: 1 }, maskFade: obj7 };
-obj2 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 };
-createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
-obj4 = { flex: 1, marginTop: nativeDefault.space.PX_8 };
-obj5 = { gap: nativeDefault.space.PX_16 };
-obj6 = {};
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj7 = { height: nativeDefault.space.PX_64 };
-let closure_12 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationListItemBase(conversation) {
-  let first;
-  let items1;
-  let items2;
-  let items3;
-  let obj = conversation(576);
-  const cResult = obj.c(50);
-  conversation = conversation.conversation;
-  const tmp4 = closure_12();
-  let obj2 = conversation(1503);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp7 = ChannelConversationsStore;
-    const items = [ChannelConversationsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === conversation.channelId) {
-    let tmp8;
-    let tmp9;
-    let arr4;
-    if (cResult[2] === conversation.id) {
-      tmp8 = cResult[3];
-      tmp9 = cResult[4];
-    }
-    const tmpResult = conversation(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp8, tmp9);
-    if (cResult[5] !== stateFromStores) {
-      let substr;
-      if (stateFromStores != null) {
-        substr = stateFromStores.slice(0, closure_6);
-      }
-      if (substr == null) {
-        substr = null;
-      }
-      class T {
-        constructor() {
-          const obj = ConversationsActionCreators;
-          const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-          const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-          navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-          const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-          const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-          const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-        }
-      }
-      cResult[6] = substr;
-      arr4 = substr;
-    } else {
-      arr4 = cResult[6];
-    }
-    if (cResult[7] === conversation.channelId) {
-      if (cResult[8] === conversation.guildId) {
-        if (cResult[9] === conversation.id) {
-          if (cResult[10] === conversation.title) {
-            let tmp13;
-            if (cResult[11] === navigation) {
-              tmp13 = cResult[12];
-            }
-            if (cResult[13] === conversation.title) {
-              let tmp16;
-              let tmp19;
-              if (cResult[14] === tmp4.title) {
-                tmp16 = cResult[15];
-              }
-              const timestamp = tmp4.timestamp;
-              if (cResult[16] !== conversation.messageCount) {
-                const intl = tmp(1125).intl;
-                let obj3 = { count: conversation.messageCount };
-                const formatToPlainStringResult = intl.formatToPlainString(conversation(1125).t.poZZGL, obj3);
-                class T {
-                  constructor() {
-                    const obj = ConversationsActionCreators;
-                    const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                    const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                    navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                    const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                    const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                    const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                  }
-                }
-                cResult[16] = conversation.messageCount;
-                cResult[17] = formatToPlainStringResult;
-                tmp19 = formatToPlainStringResult;
-              } else {
-                tmp19 = cResult[17];
-              }
-              if (cResult[18] === tmp4.timestamp) {
-                let tmp21;
-                if (cResult[19] === tmp19) {
-                  tmp21 = cResult[20];
-                }
-                if (cResult[21] === tmp4.headerContainer) {
-                  if (cResult[22] === tmp21) {
-                    let tmp25;
-                    let tmp29;
-                    let tmp34;
-                    if (cResult[23] === tmp16) {
-                      tmp25 = cResult[24];
-                    }
-                    if (cResult[25] !== tmp4.maskOpaque) {
-                      const obj4 = { colors, style: null };
-                      class T {
-                        constructor() {
-                          const obj = ConversationsActionCreators;
-                          const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                          const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                          navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                          const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                          const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                          const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                        }
-                      }
-                      const tmp33 = closure_8(navigation(5295), obj4);
-                      cResult[25] = tmp4.maskOpaque;
-                      cResult[26] = tmp33;
-                      tmp29 = tmp33;
-                    } else {
-                      tmp29 = cResult[26];
-                    }
-                    if (cResult[27] !== tmp4.maskFade) {
-                      const obj5 = { colors: colors2, start: null, end: null, style: tmp4.maskFade };
-                      class T {
-                        constructor() {
-                          const obj = ConversationsActionCreators;
-                          const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                          const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                          navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                          const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                          const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                          const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                        }
-                      }
-                      ({ START: obj8.start, END: obj8.end } = VerticalGradient);
-                      const tmp38 = closure_8(navigation(5295), obj5);
-                      cResult[27] = tmp4.maskFade;
-                      cResult[28] = tmp38;
-                      tmp34 = tmp38;
-                    } else {
-                      tmp34 = cResult[28];
-                    }
-                    if (cResult[29] === tmp4.maskColumn) {
-                      if (cResult[30] === tmp29) {
-                        let tmp39;
-                        let mapped;
-                        if (cResult[31] === tmp34) {
-                          tmp39 = cResult[32];
-                        }
-                        if (cResult[33] === conversation.channelId) {
-                          if (cResult[34] === conversation.guildId) {
-                            let tmp42;
-                            if (cResult[35] === arr4) {
-                              tmp42 = cResult[36];
-                            }
-                            if (cResult[37] === tmp4.previews) {
-                              let tmp47;
-                              if (cResult[38] === tmp42) {
-                                tmp47 = cResult[39];
-                              }
-                              if (cResult[40] === tmp4.previewsMask) {
-                                if (cResult[41] === tmp39) {
-                                  let tmp51;
-                                  if (cResult[42] === tmp47) {
-                                    tmp51 = cResult[43];
-                                  }
-                                  if (cResult[44] === conversation.title) {
-                                    if (cResult[45] === tmp13) {
-                                      if (cResult[46] === tmp4.card) {
-                                        if (cResult[47] === tmp25) {
-                                          let tmp55;
-                                          if (cResult[48] === tmp51) {
-                                            tmp55 = cResult[49];
-                                          }
-                                          return tmp55;
-                                        }
-                                      }
-                                    }
-                                  }
-                                  const obj6 = { style: tmp14, onPress: null, accessibilityLabel: tmp15, children: items1 };
-                                  class T {
-                                    constructor() {
-                                      const obj = ConversationsActionCreators;
-                                      const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                                      const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                                      navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                                      const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                                      const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                                      const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                                    }
-                                  }
-                                  items1 = [tmp25, tmp51];
-                                  const tmp57 = closure_9(conversation(6965).Card, obj6);
-                                  cResult[44] = conversation.title;
-                                  cResult[45] = tmp13;
-                                  cResult[46] = tmp4.card;
-                                  cResult[47] = tmp25;
-                                  cResult[48] = tmp51;
-                                  cResult[49] = tmp57;
-                                  tmp55 = tmp57;
-                                }
-                              }
-                              const obj7 = { style: null, maskElement: tmp39, children: tmp47 };
-                              class T {
-                                constructor() {
-                                  const obj = ConversationsActionCreators;
-                                  const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                                  const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                                  navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                                  const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                                  const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                                  const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                                }
-                              }
-                              const tmp54 = closure_8(navigation(7026), obj7);
-                              cResult[40] = tmp4.previewsMask;
-                              cResult[41] = tmp39;
-                              cResult[42] = tmp47;
-                              cResult[43] = tmp54;
-                              tmp51 = tmp54;
-                            }
-                            const obj9 = { style: null, children: tmp42 };
-                            class T {
-                              constructor() {
-                                const obj = ConversationsActionCreators;
-                                const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                                const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                                navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                                const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                                const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                                const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                              }
-                            }
-                            const tmp50 = closure_8(closure_4, obj9);
-                            cResult[37] = tmp4.previews;
-                            cResult[38] = tmp42;
-                            cResult[39] = tmp50;
-                            tmp47 = tmp50;
-                          }
-                        }
-                        if (null == arr4) {
-                          mapped = closure_8(navigation(9834), {});
-                        } else {
-                          mapped = arr4.map((blocked) => {
-                            if (!blocked.blocked) {
-                              let tmp6Result;
-                              if (!blocked.ignored) {
-                                const obj = { message: blocked, guildId: null, channelId: null };
-                                ({ guildId: obj.guildId, channelId: obj.channelId } = conversation);
-                                tmp6Result = metroImportAll(ConversationPreviewMessageDefault, obj, blocked.id);
-                              }
-                              return tmp6Result;
-                            }
-                            let str = "ignored";
-                            const tmp6 = metroImportAll;
-                            const tmp7 = ConversationPreviewBlockedMessageDefault;
-                            if (blocked.blocked) {
-                              str = "blocked";
-                            }
-                            tmp6Result = tmp6(tmp7, { reason: str }, blocked.id);
-                          });
-                        }
-                        class T {
-                          constructor() {
-                            const obj = ConversationsActionCreators;
-                            const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                            const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                            navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                            const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                            const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                            const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                          }
-                        }
-                        cResult[34] = conversation.guildId;
-                        cResult[35] = arr4;
-                        cResult[36] = mapped;
-                        tmp42 = mapped;
-                      }
-                    }
-                    class T {
-                      constructor() {
-                        const obj = ConversationsActionCreators;
-                        const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                        const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                        navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                        const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                        const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                        const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                      }
-                    }
-                    const obj10 = { style: tmp4.maskColumn, children: items2 };
-                    items2 = [tmp29, tmp34];
-                    const tmp41 = closure_9(closure_4, obj10);
-                    cResult[29] = tmp4.maskColumn;
-                    cResult[30] = tmp29;
-                    cResult[31] = tmp34;
-                    cResult[32] = tmp41;
-                    tmp39 = tmp41;
-                  }
-                }
-                const obj11 = { style: null, children: items3 };
-                class T {
-                  constructor() {
-                    const obj = ConversationsActionCreators;
-                    const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                    const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                    navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                    const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                    const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                    const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                  }
-                }
-                items3 = [tmp16, tmp21];
-                const tmp28 = closure_9(closure_4, obj11);
-                cResult[21] = tmp4.headerContainer;
-                cResult[22] = tmp21;
-                cResult[23] = tmp16;
-                cResult[24] = tmp28;
-                tmp25 = tmp28;
-              }
-              class T {
-                constructor() {
-                  const obj = ConversationsActionCreators;
-                  const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                  const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                  navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                  const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                  const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                  const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-                }
-              }
-              tmp23[3] = timestamp;
-              tmp23[4] = tmp19;
-              const tmp24 = closure_8(conversation(5271).Text, tmp23);
-              cResult[18] = tmp4.timestamp;
-              cResult[19] = tmp19;
-              cResult[20] = tmp24;
-              tmp21 = tmp24;
-            }
-            const obj12 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp4.title, children: null };
-            class T {
-              constructor() {
-                const obj = ConversationsActionCreators;
-                const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-                const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-                navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-                const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-                const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-                const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-              }
-            }
-            const tmp18 = closure_8(conversation(5271).Text, obj12);
-            cResult[13] = conversation.title;
-            cResult[14] = tmp4.title;
-            cResult[15] = tmp18;
-            tmp16 = tmp18;
-          }
-        }
-      }
-    }
-    class T {
-      constructor() {
-        const obj = ConversationsActionCreators;
-        const result = obj.setSelectedConversation(conversation.channelId, conversation.id, { cacheType: "channel", shouldJump: false });
-        const obj2 = { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title };
-        navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, obj2);
-        const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-        const obj3 = { channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false };
-        const result1 = ConversationsAnalytics.trackTopicsUnitClicked(obj3);
-      }
-    }
-    cResult[7] = conversation.channelId;
-    cResult[8] = conversation.guildId;
-    cResult[9] = conversation.id;
-    cResult[10] = conversation.title;
-    cResult[11] = navigation;
-    cResult[12] = T;
-    tmp13 = T;
-  }
-  const fn = function l() {
-    return ChannelConversationsStore.getHydratedMessages(conversation.channelId, conversation.id);
-  };
-  const items4 = [, ];
-  ({ channelId: arr2[0], id: arr2[1] } = conversation);
-  cResult[1] = conversation.channelId;
-  cResult[2] = conversation.id;
-  cResult[3] = fn;
-  cResult[4] = items4;
-  tmp9 = items4;
-  tmp8 = fn;
-}) : (function ConversationListItemBase(conversation) {
+function ConversationListItemBase(conversation) {
   let intl;
   let items4;
   let items5;
@@ -453,9 +43,9 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
   conversation = conversation.conversation;
   let stateFromStores;
   const tmp = closure_12();
-  let obj = conversation(stateFromStores[10]);
+  let obj = conversation(stateFromStores[8]);
   navigation = obj.useNavigation();
-  let obj2 = conversation(stateFromStores[11]);
+  let obj2 = conversation(stateFromStores[9]);
   const items = [ChannelConversationsStore];
   const items1 = [, ];
   ({ channelId: arr2[0], id: arr2[1] } = conversation);
@@ -487,14 +77,14 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
   let tmp6 = closure_9;
   let obj3 = { style: tmp.card, onPress: callback, accessibilityLabel: conversation.title, children: items5 };
   const obj4 = { style: tmp.headerContainer, children: items4 };
-  const Card = conversation(stateFromStores[22]).Card;
+  const Card = conversation(stateFromStores[13]).Card;
   let tmp7 = closure_4;
   items4 = [, ];
   const obj5 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title };
-  items4[0] = closure_8(conversation(stateFromStores[15]).Text, obj5);
-  const obj6 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: intl.formatToPlainString(conversation(stateFromStores[16]).t.poZZGL, obj7) };
-  const Text = conversation(stateFromStores[15]).Text;
-  intl = conversation(stateFromStores[16]).intl;
+  items4[0] = closure_8(conversation(stateFromStores[14]).Text, obj5);
+  const obj6 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: intl.formatToPlainString(conversation(stateFromStores[15]).t.poZZGL, obj7) };
+  const Text = conversation(stateFromStores[14]).Text;
+  intl = conversation(stateFromStores[15]).intl;
   obj7 = { count: conversation.messageCount };
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(closure_4, obj4), ];
@@ -502,7 +92,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
   obj9 = { style: tmp.maskColumn, children: items6 };
   items6 = [, ];
   const obj10 = { colors, style: tmp.maskOpaque };
-  const tmp10 = navigation(stateFromStores[21]);
+  const tmp10 = navigation(stateFromStores[16]);
   items6[0] = closure_8(navigation(stateFromStores[17]), obj10);
   const obj11 = { colors: colors2, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.maskFade };
   items6[1] = closure_8(navigation(stateFromStores[17]), obj11);
@@ -532,57 +122,25 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conver
   }
   items5[1] = closure_8(tmp10, obj8);
   return tmp6(Card, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationListItem(channelId) {
-  let first;
-  const obj = channelId(576);
-  const cResult = obj.c(7);
-  const tmp = channelId;
-  channelId = channelId.channelId;
-  const conversationId = channelId.conversationId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelConversationsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    let tmp6;
-    let tmp7;
-    let tmp9;
-    if (cResult[2] === conversationId) {
-      tmp6 = cResult[3];
-      tmp7 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-    if (cResult[5] !== stateFromStores) {
-      let tmp10 = null;
-      if (null != stateFromStores) {
-        const obj2 = { conversation: stateFromStores };
-        tmp10 = closure_8(closure_13, obj2);
-      }
-      cResult[5] = stateFromStores;
-      cResult[6] = tmp10;
-      tmp9 = tmp10;
-    } else {
-      tmp9 = cResult[6];
-    }
-    return tmp9;
-  }
-  const fn = function l() {
-    return ChannelConversationsStore.getConversation(channelId, conversationId);
-  };
-  const items1 = [channelId, conversationId];
-  cResult[1] = channelId;
-  cResult[2] = conversationId;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : (function ConversationListItem(channelId) {
+}
+({ View: closure_4, StyleSheet } = react_native);
+let closure_6 = ConversationConstants.MOBILE_PREVIEW_MESSAGE_COUNT;
+const VerticalGradient = Constants.VerticalGradient;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+const colors = ["black", "black"];
+const colors2 = ["black", "transparent"];
+let createStyles = createStyles_mod;
+let obj = { card: obj2, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: obj3, previewsMask: obj4, previews: obj5, maskColumn: obj6, maskOpaque: { flex: 1 }, maskFade: obj7 };
+obj2 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 };
+createStyles = createStyles.createStyles;
+obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
+obj4 = { flex: 1, marginTop: nativeDefault.space.PX_8 };
+obj5 = { gap: nativeDefault.space.PX_16 };
+obj6 = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj7 = { height: nativeDefault.space.PX_64 };
+let closure_12 = createStyles(obj);
+const memoResult = react.memo(function ConversationListItem(channelId) {
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
   const items = [ChannelConversationsStore];
@@ -592,10 +150,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp2 = null;
   if (null != stateFromStores) {
     const obj2 = { conversation: stateFromStores };
-    tmp2 = closure_8(closure_13, obj2);
+    tmp2 = closure_8(ConversationListItemBase, obj2);
   }
   return tmp2;
-}));
+});
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationListItem.tsx");
 
 export default memoResult;

@@ -1,31 +1,31 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6856
+// Function ID: 6857
 // Name: ChannelSectionStore
-// Dependencies: [2043, 5227, 6850, 4857, 4879, 4937, 4908, 5036, 1389, 1084, 4864, 1095, 6851, 6852, 6853, 1120, 11, 5940, 504, 1453, 584, 2]
+// Dependencies: [2040, 5233, 6857, 4858, 4880, 4941, 4912, 5040, 1384, 1072, 4865, 1083, 6858, 6859, 6860, 1109, 11, 5947, 504, 1448, 572, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6849 (ChannelSectionStore)
+// Module 6856 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants2 from "Constants" /* 1095 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 5940 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6851 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6852 */;
-import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6853 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ExperimentStore from "ExperimentStore" /* 5227 */;
-import SearchMessageStore from "SearchMessageStore" /* 6850 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants2 from "Constants" /* 1083 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5947 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6858 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6859 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6860 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ExperimentStore from "ExperimentStore" /* 5233 */;
+import SearchMessageStore from "SearchMessageStore" /* 6857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -77,7 +77,7 @@ function toggleSection(c17, arg1) {
   let tmp2 = null;
   if (null != channelId) {
     tmp2 = channelId;
-    if (syncedClientThemes(channelId)) {
+    if (authStore3(channelId)) {
       const guildId = SelectedGuildStore.getGuildId();
       let tmp6 = null;
       if (null != guildId) {
@@ -150,7 +150,7 @@ function handlePermissionsChange() {
 ({ isStaticChannelRoute: closure_14, buildGuildStaticChannelId: closure_15 } = ChannelConstants);
 const Permissions = Constants2.Permissions;
 let c17 = false;
-const authStore4 = false;
+const authStore5 = false;
 const isProfileOpen = true;
 let flag4 = true;
 let flag5 = false;
@@ -211,7 +211,7 @@ class ChannelSectionStore extends PersistedStore {
       let tmp4 = null;
       if (null != arg0) {
         tmp4 = arg0;
-        if (syncedClientThemes(arg0)) {
+        if (authStore3(arg0)) {
           const guildId = SelectedGuildStore.getGuildId();
           let tmp8 = null;
           if (null != guildId) {
@@ -229,7 +229,7 @@ class ChannelSectionStore extends PersistedStore {
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
       if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
-        const tmp11Result = tmp11(6852);
+        const tmp11Result = tmp11(6859);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
           NONE = constants.FRIENDS;
         }
@@ -259,7 +259,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -288,7 +288,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -321,7 +321,7 @@ class ChannelSectionStore extends PersistedStore {
     let tmp = null;
     if (null != channelId) {
       tmp = channelId;
-      if (syncedClientThemes(channelId)) {
+      if (authStore3(channelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -475,7 +475,7 @@ let obj = {
     ({ channelId, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -509,7 +509,7 @@ let obj = {
     ({ sidebarType, details } = arg0);
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId1 = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId1) {
@@ -535,7 +535,7 @@ let obj = {
     ({ parentMessageId, location: _location } = parentChannelId);
     if (null != parentChannelId) {
       tmp = parentChannelId;
-      if (syncedClientThemes(parentChannelId)) {
+      if (authStore3(parentChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {
@@ -554,7 +554,7 @@ let obj = {
     let tmp = null;
     if (null != baseChannelId) {
       tmp = baseChannelId;
-      if (syncedClientThemes(baseChannelId)) {
+      if (authStore3(baseChannelId)) {
         const guildId = SelectedGuildStore.getGuildId();
         let tmp5 = null;
         if (null != guildId) {

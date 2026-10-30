@@ -1,25 +1,25 @@
-// Module ID: 15559
-// Function ID: 15560
+// Module ID: 15599
+// Function ID: 15600
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [5227, 7789, 4861, 4857, 6729, 6882, 4917, 4879, 4947, 1389, 1084, 2031, 5059, 9106, 504, 584, 2]
+// Dependencies: [5233, 7794, 4862, 4858, 6736, 6889, 4921, 4880, 4951, 1384, 1072, 2028, 5063, 9119, 504, 572, 2]
 
-// Module 15559 (PrivateChannelRecipientsInviteStore)
+// Module 15599 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9106 */;
-import ExperimentStore from "ExperimentStore" /* 5227 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ConsentStore from "ConsentStore" /* 6729 */;
-import FrecencyStore from "FrecencyStore" /* 6882 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import StringUtils from "StringUtils" /* 2028 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9119 */;
+import ExperimentStore from "ExperimentStore" /* 5233 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import ConsentStore from "ConsentStore" /* 6736 */;
+import FrecencyStore from "FrecencyStore" /* 6889 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, scoreWithoutFetchingLatest;
@@ -206,7 +206,7 @@ function parseUserResults(results) {
 }
 function handleModalActionSheetOpen(key) {
   let userSearchContext;
-  if (key.key !== syncedClientThemes) {
+  if (key.key !== authStore3) {
     return false;
   } else {
     c15 = true;
@@ -224,7 +224,7 @@ function handleModalActionSheetOpen(key) {
   }
 }
 function handleActionSheetDismiss(key) {
-  if (key.key !== syncedClientThemes) {
+  if (key.key !== authStore3) {
     return false;
   } else {
     if (null != closure_3) {
@@ -251,7 +251,7 @@ const PrivateChannelRecord = ChannelRecord.PrivateChannelRecord;
 let c15 = false;
 let c16 = "";
 let row = 0;
-const authStore4 = [];
+const authStore5 = [];
 const hasFriends = false;
 let c20 = false;
 let set = new Set();

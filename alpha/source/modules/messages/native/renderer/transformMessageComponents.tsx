@@ -1,32 +1,32 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 8686
+// Function ID: 8687
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 6054, 8653, 8540, 1385, 1998, 6053, 1125, 8654, 8661, 8662, 8664, 8667, 8668, 6713, 8206, 8669, 8671, 1102, 8336, 6039, 1402, 6060, 8648, 8647, 1383, 1457, 1101, 5743, 6062, 6079, 8192, 6075, 2]
+// Dependencies: [109, 17, 6061, 8687, 8574, 1380, 1993, 6060, 1114, 8688, 8695, 8696, 8698, 8701, 8702, 6720, 8209, 8703, 8705, 1091, 8393, 6046, 1397, 6067, 8682, 8681, 1378, 1452, 1090, 5749, 6069, 6086, 8373, 6082, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8652 (transformMessageComponents)
+// Module 8686 (transformMessageComponents)
 import react_native from "react-native" /* 17 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
-import CheckpointConstants from "CheckpointConstants" /* 6054 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8648 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 8653 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8668 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
+import CheckpointConstants from "CheckpointConstants" /* 6061 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8682 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 8687 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8702 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import LRUCache from "LRUCache" /* 1457 */;
+import LRUCache from "LRUCache" /* 1452 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault, version;
+let _require, importDefault;
 
 let tmp4;
-const intl6 = tmp4(1125);
-const FlagUtils = tmp4(1402);
-const MediaTypes = tmp4(6060);
-const AgeVerificationUtils = tmp4(6713);
-const sanitizeMediaDimension = tmp4(8647);
-const ExplicitMediaUtils = tmp4(8667);
+const intl6 = tmp4(1114);
+const FlagUtils = tmp4(1397);
+const MediaTypes = tmp4(6067);
+const AgeVerificationUtils = tmp4(6720);
+const sanitizeMediaDimension = tmp4(8681);
+const ExplicitMediaUtils = tmp4(8701);
 function transformToRowGeneratedComponent(message, accessory) {
   let colors;
   let contentType;
@@ -85,7 +85,7 @@ function transformToRowGeneratedComponent(message, accessory) {
   function expensive() {
     if (null != found1) {
       if (0 !== found1.length) {
-        const mapped = arr.map(f102974);
+        const mapped = arr.map(f92840);
         const intl = closure_0(message[8]).intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj = { selections: mapped.join(",") };
@@ -148,7 +148,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     const merged2 = Object.assign(accessory);
     tmpResult31 = tmp(tmp2[9]);
     _require = accessory;
-    const f102974 = (arg0) => found1.options[arg0].label;
+    const f92840 = (arg0) => found1.options[arg0].label;
     tmpResult32 = tmp(tmp2[7]);
     obj5 = { expensive, cheap: tmpResult34.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe2 = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -272,11 +272,11 @@ function transformToRowGeneratedComponent(message, accessory) {
                       if (height > 0) {
                         const obj = MediaFormatTesters;
                         if (obj.isImageContentType(contentType)) {
-                          VISUAL_PLACEHOLDER = tmp(8668).MediaGalleryItemType.IMAGE;
+                          VISUAL_PLACEHOLDER = tmp(8702).MediaGalleryItemType.IMAGE;
                         } else {
                           const tmpResult = MediaFormatTesters;
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(8668).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(8702).MediaGalleryItemType.VIDEO;
                           }
                         }
                       }
@@ -379,8 +379,8 @@ function transformToRowGeneratedComponent(message, accessory) {
                 name = intl2.string(tmp(tmp2[8]).t.GnuJ5u);
               }
               num2 = accessory.size;
-              filesize = require("module_8206").filesize;
-              require("module_8206");
+              filesize = require("module_8209").filesize;
+              require("module_8209");
               if (num2 == null) {
                 num2 = 0;
               }
@@ -431,7 +431,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                     const checkpointData = accessory.checkpointData;
                     let tmp4 = enabledContentHarmTypeFlags;
                     const tmp6 = enabledContentHarmTypeFlags(accessory, shouldObscureSpoiler);
-                    version = checkpointData.version;
+                    const version = checkpointData.version;
                     if (shouldAgeVerify.V2025 === version) {
                       const obj19 = { checkpointData: tmpResult45.transformCheckpoint2025CardToRowGeneratedComponent(checkpointData, message) };
                       const merged10 = Object.assign(tmp6);
@@ -479,7 +479,7 @@ function transformToRowGeneratedComponent(message, accessory) {
     tmpResult52 = tmp(tmp2[9]);
     tmpResult53 = tmp(tmp2[12]);
     _require = accessory;
-    const f102975 = (label) => label.label;
+    const f92841 = (label) => label.label;
     tmpResult54 = tmp(tmp2[7]);
     obj24 = { expensive, cheap: tmpResult56.getSelectPlaceholder(accessory) };
     getAccessibilityLabelOrCheapFallbackUnsafe = tmp(tmp2[20]).getAccessibilityLabelOrCheapFallbackUnsafe;
@@ -505,11 +505,11 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
         if (height > 0) {
           const obj = MediaFormatTesters;
           if (obj.isImageContentType(contentType)) {
-            VISUAL_PLACEHOLDER = tmp(8668).MediaGalleryItemType.IMAGE;
+            VISUAL_PLACEHOLDER = tmp(8702).MediaGalleryItemType.IMAGE;
           } else {
             const tmpResult = MediaFormatTesters;
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8668).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8702).MediaGalleryItemType.VIDEO;
             }
           }
         }
@@ -554,11 +554,11 @@ export default function transformMessageComponents(message, arr) {
   let obj2;
   let obj3;
   const obj = { type: "textDisplayComponent", parserState: obj2.getInitialParserStateFromMessage(message.message, closure_7) };
-  obj2 = obj3(8540);
+  obj2 = obj3(8574);
   obj3 = { markdownConfigs: { textDisplayComponent: obj } };
   const merged = Object.assign(message);
   const mapped = arr.map((item) => transformToRowGeneratedComponent(obj3, item));
-  return mapped.filter(obj3(1385).isNotNullish);
+  return mapped.filter(obj3(1380).isNotNullish);
 };
 export function getUnfurledMediaItemType(arg0) {
   let contentType;

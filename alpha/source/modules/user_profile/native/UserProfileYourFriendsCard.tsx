@@ -1,22 +1,22 @@
-// Module ID: 18772
-// Function ID: 18773
+// Module ID: 18832
+// Function ID: 18833
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7789, 4947, 1389, 1084, 21, 1199, 5005, 558, 576, 504, 14842, 9119, 12, 1385, 5271, 1125, 6963, 2]
+// Dependencies: [32, 19, 17, 7794, 4951, 1384, 1072, 21, 1188, 5009, 504, 14878, 9132, 12, 1380, 6969, 5619, 1114, 2]
+// Exports: default
 
-// Module 18772 (UserProfileYourFriendsCard)
+// Module 18832 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import native from "native" /* 1199 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
+import Constants from "Constants" /* 1072 */;
+import native from "native" /* 1188 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,139 +28,9 @@ const jsx = Fragment.jsx;
 let obj = { direction: native.CutoutDirection.RIGHT, inset: -4 };
 let closure_11 = Object.freeze(obj);
 let closure_12 = createStyles.createStyles({ facepile: { flexDirection: "row", alignItems: "center" }, avatars: { flexDirection: "row" } });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileYourFriendsCard(arg0) {
-  let closure_0;
-  let first;
-  let friendIDs;
-  let gameRelationshipsByType;
-  let stateFromStoresArray;
-  let stateFromStoresArray1;
-  let tmp11;
-  let tmp12;
-  let tmp17;
-  let tmp18;
-  let tmp7;
-  let tmp8;
-  let tmp2 = stateFromStoresArray;
-  let obj = require("react");
-  const cResult = obj.c(27);
-  let tmp4 = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  let obj2 = gameRelationshipsByType;
-  const tmp6 = stateFromStoresArray1(gameRelationshipsByType.useState(first), 2);
-  _require = tmp6[0];
-  let closure_1 = tmp6[1];
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserAffinitiesV2Store];
-    class F {
-      constructor() {
-        userAffinities = userAffinities.getUserAffinities();
-        return userAffinities.map((otherUserId) => otherUserId.otherUserId);
-      }
-    }
-    cResult[1] = items1;
-    cResult[2] = F;
-    tmp8 = F;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp7, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [RelationshipStore];
-    class F {
-      constructor() {
-        userAffinities = userAffinities.getUserAffinities();
-        return userAffinities.map((otherUserId) => otherUserId.otherUserId);
-      }
-    }
-    cResult[3] = items2;
-    cResult[4] = tmp14;
-    tmp12 = tmp14;
-    tmp11 = items2;
-  } else {
-    tmp11 = cResult[3];
-    tmp12 = cResult[4];
-  }
-  const tmpResult3 = require("get initialized");
-  stateFromStoresArray1 = tmpResult3.useStateFromStoresArray(tmp11, tmp12);
-  const tmpResult4 = require("GameRelationshipStoreHooks");
-  gameRelationshipsByType = tmpResult4.useGameRelationshipsByType(RelationshipTypes.FRIEND);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        const obj = closure_0(stateFromStoresArray[14]);
-        const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
-      }
-    }
-    const items3 = [];
-    class F {
-      constructor() {
-        userAffinities = userAffinities.getUserAffinities();
-        return userAffinities.map((otherUserId) => otherUserId.otherUserId);
-      }
-    }
-    cResult[6] = items3;
-    tmp18 = items3;
-    tmp17 = R;
-  } else {
-    class R {
-      constructor() {
-        const obj = closure_0(stateFromStoresArray[14]);
-        const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
-      }
-    }
-    tmp18 = cResult[6];
-  }
-  const effect = obj2.useEffect(tmp17, tmp18);
-  if (cResult[7] === stateFromStoresArray1) {
-    class R {
-      constructor() {
-        const obj = closure_0(stateFromStoresArray[14]);
-        const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
-      }
-    }
-  }
-  const fn = function w() {
-    const obj = _modDef12;
-    const chainResult = obj.chain(stateFromStoresArray);
-    const found = chainResult.filter((item) => stateFromStoresArray1.includes(item));
-    const takeResult = found.take(5);
-    const mapped = takeResult.map(UserStore.getUser);
-    const iter = mapped.filter(GlobalUtils.isNotNullish);
-    const valueResult = iter.value();
-    const tmp4 = UserStore;
-    if (valueResult.length >= 5) {
-      closure_1(valueResult);
-    } else {
-      const tmp2Result = _modDef12;
-      const chainResult1 = tmp2Result.chain(gameRelationshipsByType);
-      const mapped1 = chainResult1.map((id) => id.id);
-      const uniqResult = mapped1.uniq();
-      const takeResult1 = uniqResult.take(5 - valueResult.length);
-      const mapped2 = takeResult1.map(tmp4.getUser);
-      const iter2 = mapped2.filter(GlobalUtils.isNotNullish);
-      const items = [];
-      const valueResult2 = iter2.value();
-      HermesBuiltin.arraySpread(items, valueResult2, HermesBuiltin.arraySpread(items, valueResult, 0));
-      closure_1(items);
-    }
-  };
-  const items4 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
-  cResult[7] = stateFromStoresArray1;
-  cResult[8] = gameRelationshipsByType;
-  cResult[9] = stateFromStoresArray;
-  cResult[10] = fn;
-  cResult[11] = items4;
-}) : (function UserProfileYourFriendsCard(navigateToFriends) {
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileYourFriendsCard.tsx");
+
+export default function UserProfileYourFriendsCard(navigateToFriends) {
   let closure_0;
   let closure_2;
   let friendIDs;
@@ -185,7 +55,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileY
   let obj3 = require("GameRelationshipStoreHooks");
   const gameRelationshipsByType = obj3.useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const obj = closure_0(closure_2[14]);
+    const obj = closure_0(closure_2[12]);
     const userAffinitiesV2 = obj.fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
@@ -243,7 +113,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileY
   intl = require("intl").intl;
   const intl2 = require("intl").intl;
   return <TableRow label={null} accessibilityLabel={intl2.string(require("intl").t.TdEu5X)} onPress={navigateToFriends} trailing={memo} arrow start end />;
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileYourFriendsCard.tsx");
-
-export default tmp2;
+};

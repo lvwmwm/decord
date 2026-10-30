@@ -1,15 +1,13 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8916
+// Function ID: 8917
 // Name: ICYMIExperiment
-// Dependencies: [8520, 1453, 558, 576, 8522, 2]
-// Exports: getICYMIEnabled, icymiEnabled
+// Dependencies: [8554, 1448, 8556, 2]
+// Exports: getICYMIEnabled, icymiEnabled, useICYMIEnabled
 
-// Module 8882 (ICYMIExperiment)
-import react from "react" /* 576 */;
-import useLabFeatureDefault from "useLabFeature" /* 8522 */;
-import LabFeatureStore from "LabFeatureStore" /* 8520 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8916 (ICYMIExperiment)
+import useLabFeatureDefault from "useLabFeature" /* 8556 */;
+import LabFeatureStore from "LabFeatureStore" /* 8554 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -21,47 +19,8 @@ let obj = { name: "2026-04-icymi-staff-only", kind: "user", defaultConfig: { ena
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIEnabled(location) {
-  let tmp3;
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(4);
-  const tmp2 = useLabFeatureDefault(hide_icymi_tab);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  const enabled = apexExperiment.useConfig(tmp3).enabled;
-  if (cResult[2] !== location) {
-    const obj3 = { location };
-    cResult[2] = location;
-    cResult[3] = obj3;
-    tmp4 = obj3;
-  } else {
-    tmp4 = cResult[3];
-  }
-  const config = apexExperiment2.useConfig(tmp4);
-  return !tmp2 && enabled;
-}) : (function useICYMIEnabled(location) {
-  const obj = { location };
-  const obj2 = { location };
-  const tmp = useLabFeatureDefault(hide_icymi_tab);
-  const enabled = apexExperiment.useConfig(obj).enabled;
-  const config = apexExperiment2.useConfig(obj2);
-  return !tmp && enabled;
-});
-function getICYMIEnabled(ICYMIManager) {
-  const value = LabFeatureStore.get(hide_icymi_tab);
-  const obj = { location: ICYMIManager };
-  const tmp2 = !value && apexExperiment.getConfig(obj).enabled;
-  return tmp2;
-}
 ApexExperiment = ApexExperiment_mod;
-let obj3 = { name: "2026-03-icymi-staff-debugging-utility", kind: "user", defaultConfig: { enabled: false }, variations: obj4 };
+const obj3 = { name: "2026-03-icymi-staff-debugging-utility", kind: "user", defaultConfig: { enabled: false }, variations: obj4 };
 obj4 = { 1: null };
 obj4[1] = { enabled: true };
 const apexExperiment1 = ApexExperiment.createApexExperiment(obj3);
@@ -74,8 +33,20 @@ const result = size.fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
 
 export const ICYMI_LAB_FEATURE = "hide_icymi_tab";
 export const ICYMIStaffOnlyExperiment = apexExperiment;
-export const useICYMIEnabled = tmp3;
-export { getICYMIEnabled };
+export function useICYMIEnabled(TabsNavigator) {
+  const obj = { location: TabsNavigator };
+  const obj2 = { location: TabsNavigator };
+  const tmp = useLabFeatureDefault(hide_icymi_tab);
+  const enabled = apexExperiment.useConfig(obj).enabled;
+  const config = apexExperiment2.useConfig(obj2);
+  return !tmp && enabled;
+}
+export function getICYMIEnabled(ICYMIManager) {
+  const value = LabFeatureStore.get(hide_icymi_tab);
+  const obj = { location: ICYMIManager };
+  const tmp2 = !value && apexExperiment.getConfig(obj).enabled;
+  return tmp2;
+}
 export function icymiEnabled(customScores) {
   const value = LabFeatureStore.get(hide_icymi_tab);
   const obj = { location: customScores };

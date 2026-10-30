@@ -1,11 +1,17 @@
 // Module ID: 16116
 // Function ID: 16117
-// Dependencies: [16117, 16124]
+// Dependencies: [16091]
 
 // Module 16116
-import _mod16117 from "module_16117" /* 16117 */;
-import _mod16124 from "module_16124" /* 16124 */;
+import _mod16091 from "module_16091" /* 16091 */;
 
+let fn;
+if (_mod16091) {
+  fn = call.bind(call);
+} else {
+  fn = function() {
+    return call(...arguments);
+  };
+}
 
-export const URL = _mod16117;
-export const URLSearchParams = _mod16124;
+export default fn;

@@ -1,63 +1,20 @@
-// Module ID: 17623
-// Function ID: 17624
+// Module ID: 17694
+// Function ID: 17695
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 558, 576, 17620, 6963, 2]
+// Dependencies: [19, 21, 17691, 6969, 2]
+// Exports: default
 
-// Module 17623 (ScrollBenchmark)
+// Module 17694 (ScrollBenchmark)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 17620 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 17691 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const TableRow2 = tmp(6963);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollBenchmark(subLabel) {
-  let monitoring;
-  let start;
-  const obj = react2;
-  const cResult = obj.c(5);
-  subLabel = subLabel.subLabel;
-  let str = "Records frame times while you scroll the content below.";
-  const onResult = subLabel.onResult;
-  if (undefined !== subLabel) {
-    str = subLabel;
-  }
-  const tmp4 = useFrameMonitorDefault(onResult);
-  ({ monitoring, start } = tmp4);
-  let str2 = "Start scroll monitor";
-  const stop = tmp4.stop;
-  if (monitoring) {
-    str2 = "Stop scroll monitor";
-  }
-  let str3;
-  if (monitoring) {
-    str3 = "danger";
-  }
-  if (monitoring) {
-    start = stop;
-  }
-  if (cResult[0] === str) {
-    if (cResult[1] === str2) {
-      if (cResult[2] === str3) {
-        let tmp5;
-        if (cResult[3] === start) {
-          tmp5 = cResult[4];
-        }
-        return tmp5;
-      }
-    }
-  }
-  const tmp6 = jsx(TableRow2.TableRow, { label: str2, subLabel: str, variant: str3, arrow: true, onPress: start });
-  cResult[0] = str;
-  cResult[1] = str2;
-  cResult[2] = str3;
-  cResult[3] = start;
-  cResult[4] = tmp6;
-  tmp5 = tmp6;
-}) : (function ScrollBenchmark(subLabel) {
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");
+
+export default function ScrollBenchmark(subLabel) {
   let monitoring;
   let start;
   let str3;
@@ -84,7 +41,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScrollBenc
     start = stop;
   }
   return tmp2(TableRow, obj);
-});
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/ScrollBenchmark.tsx");
-
-export default tmp3;
+};

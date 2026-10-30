@@ -1,14 +1,13 @@
-// Module ID: 573
-// Function ID: 574
+// Module ID: 563
+// Function ID: 564
 // Name: useStateFromStores
-// Dependencies: [32, 19, 568, 574, 558, 2]
+// Dependencies: [32, 19, 558, 564, 2]
 // Exports: statesWillNeverBeEqual, useStateFromStoresArray, useStateFromStoresObject
 
-// Module 573 (useStateFromStores)
-import shallowEqual from "shallowEqual" /* 568 */;
+// Module 563 (useStateFromStores)
+import shallowEqual from "shallowEqual" /* 558 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,12 +20,12 @@ let metroRequire;
 function defaultAreStatesEqual(arg0, arg1) {
   return arg0 === arg1;
 }
-function useStateFromStores(items, cResult, items1, isVersionEqual) {
+function useStateFromStores(items, getCurrentUser, items1, isVersionEqual) {
   let closure_3;
   let prevDeps;
   let tmp5;
   _require = items;
-  const getStateFromStores = cResult;
+  const getStateFromStores = getCurrentUser;
   dependencyMap = items1;
   let tmp = isVersionEqual;
   if (isVersionEqual === undefined) {
@@ -38,13 +37,13 @@ function useStateFromStores(items, cResult, items1, isVersionEqual) {
   let closure_6;
   const tmp2 = state(null);
   if (null == tmp2.current) {
-    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: cResult, prevDeps: "Boolean", state: "toCharArray$esjava$1" };
+    const obj = { stores: items, areStatesEqual: tmp, getStateFromStores: getCurrentUser, prevDeps: "Boolean", state: "isArray" };
     tmp2.current = obj;
   }
   current = tmp2.current;
   state = current.state;
   if (null == items1) {
-    const tmp6 = cResult();
+    const tmp6 = getCurrentUser();
     tmp5 = state;
     const tmp7 = null != state && tmp(state, tmp6);
     if (!tmp7) {
@@ -78,19 +77,15 @@ function useStateFromStores(items, cResult, items1, isVersionEqual) {
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ useState: closure_4, useRef: hasOwnProperty, useInsertionEffect: metroRequire } = react);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result2 = size.fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStores.tsx");
+const result = size.fileFinishedImporting("../discord_common/js/packages/flux/useStateFromStores.tsx");
 
 export function statesWillNeverBeEqual() {
   return false;
 }
 export { useStateFromStores };
-export function useStateFromStoresObject(items, cResult, items1) {
-  return useStateFromStores(items, cResult, items1, shallowEqualDefault);
+export function useStateFromStoresObject(items, getLocalSelfMuteDeaf, items1) {
+  return useStateFromStores(items, getLocalSelfMuteDeaf, items1, shallowEqualDefault);
 }
-export function useStateFromStoresArray(items, cResult, items1) {
-  return useStateFromStores(items, cResult, items1, shallowEqual.areArraysShallowEqual);
+export function useStateFromStoresArray(items, getChannelIds, items1) {
+  return useStateFromStores(items, getChannelIds, items1, shallowEqual.areArraysShallowEqual);
 }

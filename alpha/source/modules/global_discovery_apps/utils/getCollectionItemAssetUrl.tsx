@@ -1,13 +1,13 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 12276
+// Function ID: 12277
 // Name: getCollectionItemAssetUrl
-// Dependencies: [1084, 1450, 1415, 2]
+// Dependencies: [1072, 1445, 1410, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 12100 (getCollectionItemAssetUrl)
-import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
+// Module 12276 (getCollectionItemAssetUrl)
+import Constants from "Constants" /* 1072 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1445 */;
 import size from "module_2" /* 2 */;
 
 let c3;

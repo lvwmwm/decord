@@ -1,122 +1,37 @@
-// Module ID: 18785
-// Function ID: 18786
+// Module ID: 18845
+// Function ID: 18846
 // Name: useVoiceChannelApp
-// Dependencies: [4879, 4937, 1084, 558, 576, 504, 6866, 2]
-// Exports: useVoiceChannelApplicationId
+// Dependencies: [4880, 4941, 1072, 504, 6873, 2]
+// Exports: useCanConfigureVoiceChannelApp, useIsVoiceChannelAppEnabled, useVoiceChannelApplicationId
 
-// Module 18785 (useVoiceChannelApp)
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 18845 (useVoiceChannelApp)
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, getGuild;
 
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-({ ChannelTypes: closure_4, GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoiceChannelAppEnabled(guild_id) {
-  let first;
-  let tmp12;
-  let tmp8;
-  _require = guild_id;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
+const f115730 = () => {
   guild_id = undefined;
-  const tmp6 = cResult[1];
+  getGuild = getGuild.getGuild;
   if (guild_id != null) {
     guild_id = guild_id.guild_id;
   }
-  if (tmp6 !== guild_id) {
-    let guild_id1;
-    if (guild_id != null) {
-      guild_id1 = guild_id.guild_id;
-    }
-    const fn = function s() {
-      guild_id = undefined;
-      const getGuild = GuildStore.getGuild;
-      if (guild_id != null) {
-        guild_id = guild_id.guild_id;
-      }
-      return getGuild(guild_id);
-    };
-    cResult[1] = guild_id1;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  let guild_id2;
-  if (guild_id != null) {
-    guild_id2 = guild_id.guild_id;
-  }
-  if (cResult[3] !== guild_id2) {
-    const obj2 = { guildId: guild_id2, location: "VoiceChannelApp" };
-    cResult[3] = guild_id2;
-    cResult[4] = obj2;
-    tmp12 = obj2;
-  } else {
-    tmp12 = cResult[4];
-  }
-  const tmpResult2 = require("ConjureGuildExperiment");
-  const isConjureGuildEnabled = tmpResult2.useIsConjureGuildEnabled(tmp12);
-  if (cResult[5] === guild_id) {
-    let features1;
-    const tmp14 = cResult[6];
-    if (stateFromStores != null) {
-      features1 = stateFromStores.features;
-    }
-    if (tmp14 === features1) {
-      let tmp16;
-      if (cResult[7] === isConjureGuildEnabled) {
-        tmp16 = cResult[8];
-      }
-      return tmp16;
-    }
-  }
-  let tmp17 = null != guild_id && guild_id.type === constants.GUILD_VOICE && isConjureGuildEnabled;
-  if (tmp17) {
-    let hasItem;
-    if (stateFromStores != null) {
-      const features = stateFromStores.features;
-      hasItem = features.has(constants2.INTERNAL_EMPLOYEE_ONLY);
-    }
-    tmp17 = true !== hasItem;
-  }
-  cResult[5] = guild_id;
-  let features2;
-  if (stateFromStores != null) {
-    features2 = stateFromStores.features;
-  }
-  cResult[6] = features2;
-  cResult[7] = isConjureGuildEnabled;
-  cResult[8] = tmp17;
-  tmp16 = tmp17;
-}) : (function useIsVoiceChannelAppEnabled(guild_id) {
+  return getGuild(guild_id);
+};
+({ ChannelTypes: closure_4, GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
+const result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelApp.tsx");
+
+export function useIsVoiceChannelAppEnabled(guild_id) {
   _require = guild_id;
   const items = [GuildStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    guild_id = undefined;
-    const getGuild = GuildStore.getGuild;
-    if (guild_id != null) {
-      guild_id = guild_id.guild_id;
-    }
-    return getGuild(guild_id);
-  });
+  const stateFromStores = obj.useStateFromStores(items, f115730);
   guild_id = undefined;
   const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
   require("ConjureGuildExperiment");
@@ -140,73 +55,82 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVoice
     tmp5 = true !== hasItem;
   }
   return tmp5;
-});
-let closure_7 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanConfigureVoiceChannelApp(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  let stateFromStores = closure_7(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const canResult = null != closure_0 && PermissionStore.can(metroRequire.MANAGE_CHANNELS, tmp);
-      return canResult;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  if (stateFromStores) {
-    stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  }
-  return stateFromStores;
-}) : (function useCanConfigureVoiceChannelApp(arg0) {
-  let closure_0;
-  _require = arg0;
-  let stateFromStores = closure_7(arg0);
-  const items = [PermissionStore];
+}
+export function useVoiceChannelApplicationId(guild_id) {
+  _require = guild_id;
+  const items = [GuildStore];
   const obj = require("get initialized");
-  if (stateFromStores) {
-    stateFromStores = obj.useStateFromStores(items, () => {
-      const canResult = null != closure_0 && PermissionStore.can(metroRequire.MANAGE_CHANNELS, tmp);
-      return canResult;
-    });
+  const stateFromStores = obj.useStateFromStores(items, f115730);
+  guild_id = undefined;
+  const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
+  require("ConjureGuildExperiment");
+  if (guild_id != null) {
+    guild_id = guild_id.guild_id;
   }
-  return stateFromStores;
-});
-function useVoiceChannelApplicationId(application_id) {
-  let tmp = null;
-  if (closure_7(application_id)) {
-    application_id = undefined;
-    if (application_id != null) {
-      application_id = application_id.application_id;
+  let tmp5 = null != guild_id;
+  const isConjureGuildEnabled = useIsConjureGuildEnabled({ guildId: guild_id, location: "VoiceChannelApp" });
+  if (tmp5) {
+    tmp5 = guild_id.type === constants.GUILD_VOICE;
+  }
+  if (tmp5) {
+    tmp5 = isConjureGuildEnabled;
+  }
+  if (tmp5) {
+    let hasItem;
+    if (stateFromStores != null) {
+      const features = stateFromStores.features;
+      hasItem = features.has(constants2.INTERNAL_EMPLOYEE_ONLY);
+    }
+    tmp5 = true !== hasItem;
+  }
+  let tmp9 = null;
+  if (tmp5) {
+    let application_id;
+    if (guild_id != null) {
+      application_id = guild_id.application_id;
     }
     if (application_id == null) {
       application_id = null;
     }
-    tmp = application_id;
+    tmp9 = application_id;
   }
-  return tmp;
+  return tmp9;
 }
-const result1 = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelApp.tsx");
-
-export const useIsVoiceChannelAppEnabled = tmp3;
-export { useVoiceChannelApplicationId };
-export const useCanConfigureVoiceChannelApp = tmp5;
+export function useCanConfigureVoiceChannelApp(channel) {
+  _require = channel;
+  const tmp = _require;
+  const items = [GuildStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f115730);
+  let guild_id;
+  const useIsConjureGuildEnabled = require("ConjureGuildExperiment").useIsConjureGuildEnabled;
+  const tmp4 = require("ConjureGuildExperiment");
+  if (channel != null) {
+    guild_id = channel.guild_id;
+  }
+  let stateFromStores1 = null != channel;
+  const isConjureGuildEnabled = useIsConjureGuildEnabled({ guildId: guild_id, location: "VoiceChannelApp" });
+  if (stateFromStores1) {
+    stateFromStores1 = channel.type === constants.GUILD_VOICE;
+  }
+  if (stateFromStores1) {
+    stateFromStores1 = isConjureGuildEnabled;
+  }
+  if (stateFromStores1) {
+    let hasItem;
+    if (stateFromStores != null) {
+      const features = stateFromStores.features;
+      hasItem = features.has(constants2.INTERNAL_EMPLOYEE_ONLY);
+    }
+    stateFromStores1 = true !== hasItem;
+  }
+  const items1 = [PermissionStore];
+  const tmpResult = tmp(504);
+  if (stateFromStores1) {
+    stateFromStores1 = tmpResult.useStateFromStores(items1, () => {
+      const canResult = null != channel && PermissionStore.can(metroRequire.MANAGE_CHANNELS, tmp);
+      return canResult;
+    });
+  }
+  return stateFromStores1;
+}

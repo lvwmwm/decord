@@ -1,19 +1,18 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7307
+// Function ID: 7308
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5271, 1199, 7302, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 1188, 7308, 2]
+// Exports: default
 
-// Module 7301 (FormArrow)
+// Module 7307 (FormArrow)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7302 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7308 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -24,76 +23,9 @@ const View = react_native.View;
 let obj = { wrapper: { flexDirection: "row", alignItems: "center" }, icon: obj2 };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, marginRight: -8, marginLeft: 8 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormArrow(arg0) {
-  let items;
-  let items1;
-  let items2;
-  let label;
-  let style;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ label, style } = arg0);
-  const tmp4 = closure_6();
-  if (null != label) {
-    let tmp9;
-    if (cResult[0] !== label) {
-      const obj2 = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
-      const tmp11 = React3(Text_Text.Text, obj2);
-      cResult[0] = label;
-      cResult[1] = tmp11;
-      tmp9 = tmp11;
-    } else {
-      tmp9 = cResult[1];
-    }
-    if (cResult[2] === style) {
-      let tmp12;
-      if (cResult[3] === tmp4.icon) {
-        tmp12 = cResult[4];
-      }
-      if (cResult[5] === tmp4.wrapper) {
-        if (cResult[6] === tmp9) {
-          let tmp16;
-          if (cResult[7] === tmp12) {
-            tmp16 = cResult[8];
-          }
-          tmp5 = tmp16;
-        }
-      }
-      const obj3 = { style: tmp4.wrapper, children: items };
-      items = [tmp9, tmp12];
-      const tmp19 = hasOwnProperty(View, obj3);
-      cResult[5] = tmp4.wrapper;
-      cResult[6] = tmp9;
-      cResult[7] = tmp12;
-      cResult[8] = tmp19;
-      tmp16 = tmp19;
-    }
-    const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
-    items1 = [tmp4.icon, style];
-    const Icon2 = tmp(1199).Icon;
-    const tmp15 = React3(Icon2, obj4);
-    cResult[2] = style;
-    cResult[3] = tmp4.icon;
-    cResult[4] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    if (cResult[9] === style) {
-      if (cResult[10] === tmp4.icon) {
-        tmp5 = cResult[11];
-      }
-    }
-    const obj5 = { style: items2, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
-    items2 = [tmp4.icon, style];
-    const Icon = tmp(1199).Icon;
-    const tmp8 = React3(Icon, obj5);
-    cResult[9] = style;
-    cResult[10] = tmp4.icon;
-    cResult[11] = tmp8;
-    tmp5 = tmp8;
-  }
-  return tmp5;
-}) : (function FormArrow(arg0) {
+const result = size.fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
+
+export default function FormArrow(arg0) {
   let items;
   let items1;
   let items2;
@@ -118,7 +50,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormArrow(ar
     tmp6 = React3(Icon, obj);
   }
   return tmp6;
-});
-const result = size.fileFinishedImporting("design/void/Form/native/FormArrow.tsx");
-
-export default tmp4;
+};

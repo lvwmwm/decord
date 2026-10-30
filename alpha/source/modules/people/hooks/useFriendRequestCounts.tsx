@@ -1,45 +1,27 @@
-// Module ID: 18721
-// Function ID: 18722
+// Module ID: 18780
+// Function ID: 18781
 // Name: useFriendRequestCounts
-// Dependencies: [32, 7788, 4947, 558, 576, 504, 2]
-// Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount
+// Dependencies: [32, 7793, 4951, 504, 2]
+// Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 18721 (useFriendRequestCounts)
-import react from "react" /* 576 */;
+// Module 18780 (useFriendRequestCounts)
+import get_initialized from "get initialized" /* 504 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7793 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIncomingFriendRequestCount() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [RelationshipStore, GameRelationshipStore];
-    const fn = function o() {
-      let obj;
-      let obj2;
-      const items = [RelationshipStore, GameRelationshipStore];
-      [obj, obj2] = items;
-      _slicedToArray(items, 2);
-      const pendingCount = obj.getPendingCount();
-      return pendingCount + obj2.getPendingIncomingCount();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIncomingFriendRequestCount() {
+const result = size.fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
+
+export function getIncomingFriendRequestCount(items) {
+  let obj;
+  let obj2;
+  [obj, obj2] = items;
+  _slicedToArray(items, 2);
+  const pendingCount = obj.getPendingCount();
+  return pendingCount + obj2.getPendingIncomingCount();
+}
+export function useIncomingFriendRequestCount() {
   const obj = get_initialized;
   let items = [RelationshipStore, GameRelationshipStore];
   return obj.useStateFromStores(items, () => {
@@ -51,26 +33,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIncomin
     const pendingCount = obj.getPendingCount();
     return pendingCount + obj2.getPendingIncomingCount();
   });
-});
-let closure_5 = tmp2;
-function getIncomingFriendRequestCount(items) {
-  let obj;
-  let obj2;
-  [obj, obj2] = items;
-  _slicedToArray(items, 2);
-  const pendingCount = obj.getPendingCount();
-  return pendingCount + obj2.getPendingIncomingCount();
 }
-const result = size.fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");
-
-export { getIncomingFriendRequestCount };
-export const useIncomingFriendRequestCount = tmp2;
 export function getOutgoingFriendRequestCount(items1) {
   let obj;
   let obj2;
   let tmp = items1;
   if (items1 === undefined) {
-    const items = [closure_5, ];
+    const items = [globalThis.o, ];
     items[1] = globalThis.s;
     tmp = items;
   }

@@ -1,18 +1,18 @@
-// Module ID: 11335
-// Function ID: 11336
+// Module ID: 11538
+// Function ID: 11539
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 4861, 4875, 4857, 4879, 4937, 1084, 7507, 6893, 8901, 8529, 11336, 7407, 5734, 10137, 5643, 7925, 6693, 2]
+// Dependencies: [5, 4862, 4876, 4858, 4880, 4941, 1072, 7515, 6900, 8935, 8563, 11539, 7415, 5740, 10164, 5649, 7931, 6700, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11335 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import GuildRecord from "GuildRecord" /* 4875 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7507 */;
+// Module 11538 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import GuildRecord from "GuildRecord" /* 4876 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7515 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c8, closure_6;
@@ -41,7 +41,7 @@ let obj = function _maybeStartLurking() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -121,7 +121,7 @@ obj = function _handleMessagesTapChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -162,7 +162,7 @@ obj = function _handleMessagesTapChannel() {
             conversationId = undefined;
             v3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else {
           if (1 === v3) {
@@ -193,7 +193,7 @@ obj = function _handleMessagesTapChannel() {
                     closure_130_1(closure_130_3[11])(obj6);
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               if (null != messageId) {
@@ -215,7 +215,7 @@ obj = function _handleMessagesTapChannel() {
                         if (channel.type === closure_130_10.GUILD_STAGE_VOICE) {
                           if (!closure_130_9.can(closure_130_12.CONNECT, channel)) {
                             c4 = 3;
-                            return { value: "IconComponent", done: "IconComponent" };
+                            return { value: "HermesInternal", done: null };
                           }
                         }
                         if (v3 != null) {
@@ -282,7 +282,7 @@ obj = function _handleMessagesTapChannel() {
               return obj17;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (3 === v3) {
             if (arg0 === 1) {
@@ -321,7 +321,7 @@ obj = function _handleMessagesTapChannel() {
               return obj20;
             } else if (value) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -332,7 +332,7 @@ obj = function _handleMessagesTapChannel() {
             return obj21;
           } else if (value) {
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else {
             if (tmp != null) {
               tmp6();

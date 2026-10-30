@@ -1,50 +1,21 @@
-// Module ID: 17779
-// Function ID: 17780
+// Module ID: 17850
+// Function ID: 17851
 // Name: DataAndPrivacySetting
-// Dependencies: [19, 1084, 558, 576, 16651, 16654, 11302, 1125, 14663, 17780, 2]
+// Dependencies: [19, 1072, 16704, 16707, 11505, 1114, 14697, 17851, 2]
 
-// Module 17779 (DataAndPrivacySetting)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import ShieldLockIcon from "ShieldLockIcon" /* 14663 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16651 */;
-import RequestYourDataSetting from "RequestYourDataSetting" /* 16654 */;
+// Module 17850 (DataAndPrivacySetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import ShieldLockIcon from "ShieldLockIcon" /* 14697 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16704 */;
+import RequestYourDataSetting from "RequestYourDataSetting" /* 16707 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavigationAction() {
-  let first;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const obj = ConsentActionCreators;
-      const consents = obj.fetchConsents();
-      const obj2 = RequestYourDataSetting;
-      const harvestStatus = obj2.fetchHarvestStatus();
-      return true;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function usePreNavigationAction() {
-  return react.useCallback(() => {
-    const obj = ConsentActionCreators;
-    const consents = obj.fetchConsents();
-    const obj2 = RequestYourDataSetting;
-    const harvestStatus = obj2.fetchHarvestStatus();
-    return true;
-  }, []);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -58,7 +29,15 @@ let obj = {
       return require("DataAndPrivacyScreen").default;
     }
   },
-  usePreNavigationAction: tmp2
+  usePreNavigationAction() {
+    return react.useCallback(() => {
+      const obj = ConsentActionCreators;
+      const consents = obj.fetchConsents();
+      const obj2 = RequestYourDataSetting;
+      const harvestStatus = obj2.fetchHarvestStatus();
+      return true;
+    }, []);
+  }
 };
 const route = SettingBuilders.createRoute(obj);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DataAndPrivacySetting.tsx");

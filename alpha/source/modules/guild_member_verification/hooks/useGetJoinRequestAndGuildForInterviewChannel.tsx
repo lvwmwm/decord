@@ -1,203 +1,28 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 14156
+// Function ID: 14157
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [32, 19, 4879, 4937, 6904, 5037, 1084, 558, 576, 11, 504, 6903, 2]
+// Dependencies: [32, 19, 4880, 4941, 6911, 5041, 1072, 11, 504, 6910, 2]
+// Exports: default
 
-// Module 14024 (useGetJoinRequestAndGuildForInterviewChannel)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6903 */;
+// Module 14156 (useGetJoinRequestAndGuildForInterviewChannel)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6910 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6904 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6911 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let tmp;
-const get_initialized = tmp(504);
 let _slicedToArray = _slicedToArray_mod;
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetJoinRequestAndGuildForInterviewChannel(id) {
-  let closure_2;
-  let closure_3;
-  let first;
-  let fn;
-  let guild;
-  let items2;
-  let joinRequest;
-  let tmp11;
-  let tmp16;
-  let tmp19;
-  let tmp20;
-  let tmp5;
-  let tmp8;
-  let tmp = require;
-  let obj = react2;
-  const cResult = obj.c(17);
-  [tmp5, require] = _slicedToArray(joinRequest.useState(false), 2);
-  const tmp4 = _slicedToArray(joinRequest.useState(false), 2);
-  [first, dependencyMap] = joinRequest.useState(false);
-  if (cResult[0] !== id) {
-    const obj3 = first(11);
-    const castResult = obj3.cast(id);
-    cResult[0] = id;
-    cResult[1] = castResult;
-    tmp8 = castResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  _slicedToArray = tmp8;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildJoinRequestStore, UserGuildJoinRequestStore, guild, PermissionStore];
-    cResult[2] = items;
-    tmp11 = items;
-  } else {
-    tmp11 = cResult[2];
-  }
-  if (cResult[3] !== tmp8) {
-    class M {
-      constructor() {
-        let canResult;
-        const request = GuildJoinRequestStore.getRequest(closure_3);
-        if (null == request) {
-          return { joinRequest: null, isModmin: false, guild: null };
-        } else {
-          guild = GuildStore.getGuild(request.guildId);
-          if (guild == null) {
-            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
-          }
-          const obj = { joinRequest: request, isModmin: canResult, guild };
-          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
-          return obj;
-        }
-      }
-    }
-    cResult[3] = tmp8;
-    cResult[4] = M;
-    tmp16 = M;
-  } else {
-    class M {
-      constructor() {
-        let canResult;
-        const request = GuildJoinRequestStore.getRequest(closure_3);
-        if (null == request) {
-          return { joinRequest: null, isModmin: false, guild: null };
-        } else {
-          guild = GuildStore.getGuild(request.guildId);
-          if (guild == null) {
-            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
-          }
-          const obj = { joinRequest: request, isModmin: canResult, guild };
-          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
-          return obj;
-        }
-      }
-    }
-  }
-  const tmpResult = get_initialized;
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp11, tmp16);
-  joinRequest = stateFromStoresObject.joinRequest;
-  guild = stateFromStoresObject.guild;
-  if (cResult[5] === first) {
-    class M {
-      constructor() {
-        let canResult;
-        const request = GuildJoinRequestStore.getRequest(closure_3);
-        if (null == request) {
-          return { joinRequest: null, isModmin: false, guild: null };
-        } else {
-          guild = GuildStore.getGuild(request.guildId);
-          if (guild == null) {
-            guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
-          }
-          const obj = { joinRequest: request, isModmin: canResult, guild };
-          canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
-          return obj;
-        }
-      }
-    }
-    const effect = obj2.useEffect(fn, items2);
-    if (cResult[9] === tmp8) {
-      class M {
-        constructor() {
-          let canResult;
-          const request = GuildJoinRequestStore.getRequest(closure_3);
-          if (null == request) {
-            return { joinRequest: null, isModmin: false, guild: null };
-          } else {
-            guild = GuildStore.getGuild(request.guildId);
-            if (guild == null) {
-              guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
-            }
-            const obj = { joinRequest: request, isModmin: canResult, guild };
-            canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
-            return obj;
-          }
-        }
-      }
-      const effect1 = obj2.useEffect(tmp19, tmp20);
-      if (cResult[13] === guild) {
-        class M {
-          constructor() {
-            let canResult;
-            const request = GuildJoinRequestStore.getRequest(closure_3);
-            if (null == request) {
-              return { joinRequest: null, isModmin: false, guild: null };
-            } else {
-              guild = GuildStore.getGuild(request.guildId);
-              if (guild == null) {
-                guild = UserGuildJoinRequestStore.getJoinRequestGuild(request.guildId);
-              }
-              const obj = { joinRequest: request, isModmin: canResult, guild };
-              canResult = null != guild && PermissionStore.can(Permissions.KICK_MEMBERS, guild);
-              return obj;
-            }
-          }
-        }
-      }
-      const obj4 = { loading: tmp5, joinRequest, joinRequestGuild: guild };
-      cResult[13] = guild;
-      cResult[14] = joinRequest;
-      cResult[15] = tmp5;
-      cResult[16] = obj4;
-    }
-    const fn2 = function w() {
-      if (null == joinRequest) {
-        require(true);
-        const obj = GuildJoinRequestActionCreatorsDefault;
-        const joinRequestForInterview = obj.fetchJoinRequestForInterview(closure_3);
-        joinRequestForInterview.finally(() => {
-          closure_1_0(false);
-        });
-      }
-    };
-    const items1 = [joinRequest, tmp8];
-    cResult[9] = tmp8;
-    cResult[10] = joinRequest;
-    cResult[11] = fn2;
-    cResult[12] = items1;
-    tmp19 = fn2;
-    tmp20 = items1;
-  }
-  fn = function b() {
-    const tmp = null != guild || first;
-    if (!tmp) {
-      closure_2(true);
-      const obj = GuildJoinRequestActionCreatorsDefault;
-      const requestToJoinGuilds = obj.fetchRequestToJoinGuilds();
-    }
-  };
-  items2 = [guild, first];
-  cResult[5] = first;
-  cResult[6] = guild;
-  cResult[7] = fn;
-  cResult[8] = items2;
-}) : (function useGetJoinRequestAndGuildForInterviewChannel(id) {
+const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx");
+
+export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
   let closure_2;
   let first;
   let joinRequest;
@@ -249,7 +74,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetJoin
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestAndGuildForInterviewChannel.tsx");
-
-export default tmp2;
+};

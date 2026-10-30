@@ -1,19 +1,19 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15681
+// Function ID: 15682
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 4857, 15590, 21, 3, 6731, 558, 576, 8889, 504, 7471, 1105, 15642, 2]
+// Dependencies: [5, 32, 19, 4858, 15630, 21, 3, 6738, 8923, 504, 7479, 1094, 15682, 2]
+// Exports: default
 
-// Module 15641 (ShareScreenModal)
+// Module 15681 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelTypes from "ChannelTypes" /* 1105 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15590 */;
+import ChannelTypes from "ChannelTypes" /* 1094 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15630 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -25,393 +25,11 @@ function onClose() {
 let react = react_mod;
 const SHARE_SCREEN_MODAL_KEY = ShareScreenConstants.SHARE_SCREEN_MODAL_KEY;
 const jsx = Fragment.jsx;
+let closure_9 = new LoggerDefault("ShareScreenModal");
 const tmp2 = new LoggerDefault("ShareScreenModal");
-let closure_9 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScreenModal(shareId) {
-  let attachmentManifest;
-  let channelId;
-  let closure_5;
-  let stateFromStores;
-  let text;
-  let tmp6;
-  let tmp = channelId;
-  let obj = channelId(attachmentManifest[9]);
-  const cResult = obj.c(20);
-  ({ text, channelId } = shareId);
-  shareId = shareId.shareId;
-  attachmentManifest = shareId.attachmentManifest;
-  let obj2 = react;
-  const tmp4 = stateFromStores;
-  [tmp6, _asyncToGenerator] = stateFromStores(react.useState(null), 2);
-  const tmp5 = stateFromStores(react.useState(null), 2);
-  if (cResult[0] === attachmentManifest) {
-    let tmp7;
-    let tmp8;
-    let tmp11;
-    let tmp13;
-    if (cResult[1] === shareId) {
-      tmp7 = cResult[2];
-      tmp8 = cResult[3];
-    }
-    const effect = obj2.useEffect(tmp7, tmp8);
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ChannelStore];
-      cResult[4] = items;
-      tmp11 = items;
-    } else {
-      tmp11 = cResult[4];
-    }
-    if (cResult[5] !== channelId) {
-      const fn2 = function v() {
-        return ChannelStore.getChannel(channelId);
-      };
-      cResult[5] = channelId;
-      cResult[6] = fn2;
-      tmp13 = fn2;
-    } else {
-      tmp13 = cResult[6];
-    }
-    const tmpResult = tmp(attachmentManifest[11]);
-    stateFromStores = tmpResult.useStateFromStores(tmp11, tmp13);
-    react = tmp4(obj2.useState(null), 2)[1];
-    tmp4(obj2.useState(null), 2);
-    if (cResult[7] === channelId) {
-      let tmp17;
-      let tmp18;
-      let tmp22;
-      if (cResult[8] === stateFromStores) {
-        tmp17 = cResult[9];
-        tmp18 = cResult[10];
-      }
-      const effect1 = obj2.useEffect(tmp17, tmp18);
-      let tmp20 = stateFromStores;
-      if (stateFromStores == null) {
-        tmp20 = tmp16;
-      }
-      if (cResult[11] === tmp6) {
-        if (cResult[12] === channelId) {
-          if (cResult[13] === tmp20) {
-            let tmp21;
-            let tmp26;
-            if (cResult[14] === text) {
-              tmp21 = cResult[15];
-            }
-            if (cResult[18] !== tmp21) {
-              const tmp30 = jsx(shareId(attachmentManifest[14]), { sharedContent: tmp21, onClose });
-              cResult[18] = tmp21;
-              cResult[19] = tmp30;
-              tmp26 = tmp30;
-            } else {
-              tmp26 = cResult[19];
-            }
-            return tmp26;
-          }
-        }
-      }
-      if (cResult[16] !== tmp6) {
-        let items1 = tmp6;
-        if (tmp6 == null) {
-          items1 = [];
-        }
-        cResult[16] = tmp6;
-        cResult[17] = items1;
-        tmp22 = items1;
-      } else {
-        tmp22 = cResult[17];
-      }
-      let obj4 = { text, attachments: tmp22 };
-      if (null != tmp20) {
-        if (tmp20.type === tmp(attachmentManifest[13]).ChannelTypes.DM) {
-          let isArray = tmp20;
-          if (isArray) {
-            isArray = "recipients" in tmp20;
-          }
-          if (isArray) {
-            const _Array = Array;
-            isArray = Array.isArray(tmp20.recipients);
-          }
-          if (isArray) {
-            obj4.targetUserId = tmp20.recipients[0];
-          } else {
-            const tmp24 = tmp20 && "recipient" in tmp20 && "id" in tmp20.recipient;
-            if (tmp24) {
-              const recipient = tmp20.recipient;
-              let id;
-              if (recipient != null) {
-                id = recipient.id;
-              }
-              obj4.targetUserId = id;
-            }
-          }
-        } else {
-          obj4.targetChannelId = channelId;
-        }
-      }
-      cResult[11] = tmp6;
-      cResult[12] = channelId;
-      class R {
-        constructor() {
-          let logger;
-          function fetchChannel() {
-            return closure_0(...arguments);
-          }
-          let closure_0 = _asyncToGenerator(async (arg0, value) => {
-            let obj2;
-            let v3;
-            if (c5 === 2) {
-              c5 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                return { value: "IconComponent", done: "IconComponent" };
-              }
-            } else {
-              let c3;
-              try {
-                let closure_1;
-                c5 = 2;
-                if (0 === c4) {
-                  if (arg0 === 1) {
-                    c5 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c5 = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    closure_0 = undefined;
-                    closure_1 = undefined;
-                    if (null != closure_0) {
-                      if (null == c4) {
-                        c3 = 1;
-                        c4 = 2;
-                        c5 = 1;
-                        const obj5 = { value: obj2.fetchChannel(tmp17), done: false };
-                        obj2 = shareId(attachmentManifest[12]);
-                        return obj5;
-                      }
-                    }
-                  }
-                } else if (1 === c4) {
-                  c3 = 0;
-                  closure_1 = closure_2;
-                  logger.error("Error fetching channel:", closure_1);
-                } else if (arg0 === 1) {
-                  c5 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 0;
-                  c5 = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                } else {
-                  closure_0 = value;
-                  c5(closure_0);
-                  c3 = 0;
-                }
-                c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
-              } catch (tmp21) {
-                closure_2 = tmp21;
-                if (0 === c3) {
-                  c5 = 3;
-                  throw tmp21;
-                } else {
-                  c4 = 1;
-                }
-              }
-            }
-          });
-          const tmp = fetchChannel();
-        }
-      }
-      cResult[13] = tmp20;
-      cResult[14] = text;
-      cResult[15] = obj4;
-      tmp21 = obj4;
-    }
-    class R {
-      constructor() {
-        let logger;
-        function fetchChannel() {
-          return closure_0(...arguments);
-        }
-        let closure_0 = _asyncToGenerator(async (arg0, value) => {
-          let obj2;
-          let v3;
-          if (c5 === 2) {
-            c5 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } else {
-            let c3;
-            try {
-              let closure_1;
-              c5 = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  c5 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c5 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  closure_0 = undefined;
-                  closure_1 = undefined;
-                  if (null != closure_0) {
-                    if (null == c4) {
-                      c3 = 1;
-                      c4 = 2;
-                      c5 = 1;
-                      const obj5 = { value: obj2.fetchChannel(tmp17), done: false };
-                      obj2 = shareId(attachmentManifest[12]);
-                      return obj5;
-                    }
-                  }
-                }
-              } else if (1 === c4) {
-                c3 = 0;
-                closure_1 = closure_2;
-                logger.error("Error fetching channel:", closure_1);
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 0;
-                c5 = 3;
-                const obj = { value, done: true };
-                return obj;
-              } else {
-                closure_0 = value;
-                c5(closure_0);
-                c3 = 0;
-              }
-              c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            } catch (tmp21) {
-              closure_2 = tmp21;
-              if (0 === c3) {
-                c5 = 3;
-                throw tmp21;
-              } else {
-                c4 = 1;
-              }
-            }
-          }
-        });
-        const tmp = fetchChannel();
-      }
-    }
-    const items2 = [channelId, stateFromStores];
-    cResult[7] = channelId;
-    cResult[8] = stateFromStores;
-    cResult[9] = R;
-    cResult[10] = items2;
-    tmp18 = items2;
-    tmp17 = R;
-  }
-  const fn = function u() {
-    let logger;
-    function fetchAttachments() {
-      return closure_0(...arguments);
-    }
-    let closure_0 = _asyncToGenerator(async (arg0, value) => {
-      let obj2;
-      let v0;
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        let c3;
-        try {
-          let closure_1;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_0 = undefined;
-              closure_1 = undefined;
-              if (undefined !== closure_1) {
-                if (undefined !== closure_2) {
-                  c3 = 1;
-                  c4 = 2;
-                  c5 = 1;
-                  const obj5 = { value: obj2.sharedAttachments(tmp26, tmp17), done: false };
-                  obj2 = shareId(attachmentManifest[10]);
-                  return obj5;
-                }
-              }
-            }
-          } else if (1 === c4) {
-            c3 = 0;
-            closure_1 = closure_2;
-            logger.error("Error fetching attachments:", closure_1);
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
-            const obj = { value, done: true };
-            return obj;
-          } else {
-            closure_0 = value;
-            c3(closure_0);
-            c3 = 0;
-          }
-          c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        } catch (tmp20) {
-          closure_2 = tmp20;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp20;
-          } else {
-            c4 = 1;
-          }
-        }
-      }
-    });
-    const tmp = fetchAttachments();
-  };
-  const items3 = [shareId, attachmentManifest];
-  cResult[0] = attachmentManifest;
-  cResult[1] = shareId;
-  cResult[2] = fn;
-  cResult[3] = items3;
-  tmp8 = items3;
-  tmp7 = fn;
-}) : (function ShareScreenModal(text) {
+const result = size.fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
+
+export default function ShareScreenModal(text) {
   let closure_5;
   text = text.text;
   require = text;
@@ -430,7 +48,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
     function fetchAttachments() {
       return obj(...arguments);
     }
-    let obj = function _fetchAttachments2() {
+    let obj = function _fetchAttachments() {
       let logger;
       obj = _asyncToGenerator(async (arg0, value) => {
         let obj2;
@@ -445,7 +63,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -469,7 +87,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
                     c4 = 2;
                     c5 = 1;
                     const obj5 = { value: obj2.sharedAttachments(tmp17, tmp18), done: false };
-                    obj2 = channelId(shareId[10]);
+                    obj2 = channelId(shareId[8]);
                     return obj5;
                   }
                 }
@@ -492,7 +110,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {
@@ -520,7 +138,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
     function fetchChannel() {
       return obj(...arguments);
     }
-    let obj = function _fetchChannel2() {
+    let obj = function _fetchChannel() {
       let logger;
       obj = _asyncToGenerator(async (arg0, value) => {
         let obj2;
@@ -534,7 +152,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -559,7 +177,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
                     c4 = 2;
                     c5 = 1;
                     const obj5 = { value: obj2.fetchChannel(tmp17), done: false };
-                    obj2 = channelId(shareId[12]);
+                    obj2 = channelId(shareId[10]);
                     return obj5;
                   }
                 }
@@ -582,7 +200,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {
@@ -638,8 +256,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
     return obj;
   }, items3);
   let obj3 = { sharedContent: memo, onClose };
-  return first1(channelId(tmp4[14]), obj3);
-});
-const result = size.fileFinishedImporting("modules/share/native/ShareScreenModal.tsx");
-
-export default tmp3;
+  return first1(channelId(tmp4[12]), obj3);
+};

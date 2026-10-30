@@ -1,21 +1,18 @@
-// Module ID: 17379
-// Function ID: 17380
+// Module ID: 17433
+// Function ID: 17434
 // Name: UpcomingServerEventNotificationSetting
-// Dependencies: [8387, 558, 17380, 11302, 1125, 4833, 17381, 2]
+// Dependencies: [8424, 17434, 11505, 1114, 4834, 17435, 2]
 
-// Module 17379 (UpcomingServerEventNotificationSetting)
-import intl2 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17380 */;
-import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17381 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17433 (UpcomingServerEventNotificationSetting)
+import intl2 from "intl" /* 1114 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import UpcomingServerEventExperiment from "UpcomingServerEventExperiment" /* 17434 */;
+import UpcomingServerEventNotificationUtils from "UpcomingServerEventNotificationUtils" /* 17435 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -34,6 +31,6 @@ let obj = {
   }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/UpcomingServerEventNotificationSetting.tsx");
 
 export default toggle;

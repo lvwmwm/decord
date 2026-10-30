@@ -1,21 +1,21 @@
-// Module ID: 2037
-// Function ID: 2038
+// Module ID: 2034
+// Function ID: 2035
 // Name: DetectableGameStore
-// Dependencies: [2022, 1084, 1372, 1101, 2038, 1381, 2040, 504, 11, 1385, 1998, 1264, 584, 2]
+// Dependencies: [2017, 1072, 1361, 1090, 2035, 1376, 2037, 504, 11, 1380, 1993, 1253, 572, 2]
 
-// Module 2037 (DetectableGameStore)
+// Module 2034 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ApplicationConstants from "ApplicationConstants" /* 1372 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import CachedEntriesMapDefault from "CachedEntriesMap" /* 2038 */;
-import GameDetectionTypes from "GameDetectionTypes" /* 2040 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ApplicationConstants from "ApplicationConstants" /* 1361 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ApplicationRecord from "ApplicationRecord" /* 2017 */;
+import CachedEntriesMapDefault from "CachedEntriesMap" /* 2035 */;
+import GameDetectionTypes from "GameDetectionTypes" /* 2037 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -115,7 +115,7 @@ let closure_14 = null;
 let c15 = false;
 etag = "";
 let blocklistExecutables = [];
-const authStore4 = [];
+const authStore5 = [];
 const map2 = new Map();
 const HOUR = DurationsDefault.Millis.HOUR;
 const set = new Set();
@@ -165,11 +165,11 @@ class DetectableGameStore extends PersistedStore {
   }
   getState() {
     let obj3;
-    const f92015 = (source) => source.source;
+    const f82797 = (source) => source.source;
     const obj = PlatformUtils;
     if (obj.isDesktop()) {
-      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f92015) };
-      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f92015) };
+      obj3 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f82797) };
+      const obj2 = { detectableGamesEtag: etag, detectableGames: closure_7.values(), blocklistEtag: etag, blocklistExecutables, blocklistPatterns: closure_18.map(f82797) };
     } else {
       obj3 = { detectableGamesEtag: "", detectableGames: [], blocklistEtag: "", blocklistExecutables: [], blocklistPatterns: [] };
     }

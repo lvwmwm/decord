@@ -1,123 +1,21 @@
-// Module ID: 11139
-// Function ID: 11140
+// Module ID: 11344
+// Function ID: 11345
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 7723, 11128, 558, 576, 504, 1125, 6431, 2]
+// Dependencies: [32, 7728, 11333, 504, 1114, 6438, 2]
+// Exports: default
 
-// Module 11139 (useGiftCodeErrorMessage)
+// Module 11344 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
-import GiftCodeStore from "GiftCodeStore" /* 11128 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
+import GiftCodeStore from "GiftCodeStore" /* 11333 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCodeErrorMessage(arg0, id) {
-  let closure_0;
-  let first;
-  let first1;
-  let tmp13;
-  let tmp18;
-  let tmp6;
-  let tmp9;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(11);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GiftCodeStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      const items = [GiftCodeStore.get(closure_0), GiftCodeStore.getError(closure_0)];
-      return items;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  first1 = _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp6), 2)[0];
-  _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp6), 2);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [CollectiblesPurchaseStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  let skuId;
-  const tmp11 = cResult[4];
-  if (first1 != null) {
-    skuId = first1.skuId;
-  }
-  if (tmp11 !== skuId) {
-    let skuId1;
-    if (first1 != null) {
-      skuId1 = first1.skuId;
-    }
-    class S {
-      constructor() {
-        let skuId;
-        const getPurchase = CollectiblesPurchaseStore.getPurchase;
-        if (first1 != null) {
-          skuId = first1.skuId;
-        }
-        return getPurchase(skuId);
-      }
-    }
-    cResult[4] = skuId1;
-    cResult[5] = S;
-    tmp13 = S;
-  } else {
-    tmp13 = cResult[5];
-  }
-  let userId;
-  const tmpResult2 = require("get initialized");
-  const stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp13);
-  if (first1 != null) {
-    userId = first1.userId;
-  }
-  id = undefined;
-  if (id != null) {
-    id = id.id;
-  }
-  if (userId === id) {
-    const _Symbol = Symbol;
-    class S {
-      constructor() {
-        let skuId;
-        const getPurchase = CollectiblesPurchaseStore.getPurchase;
-        if (first1 != null) {
-          skuId = first1.skuId;
-        }
-        return getPurchase(skuId);
-      }
-    }
-    tmp18 = tmp20;
-  } else {
-    if (first1 != null) {
-      const isClaimed = first1.isClaimed;
-    }
-    class S {
-      constructor() {
-        let skuId;
-        const getPurchase = CollectiblesPurchaseStore.getPurchase;
-        if (first1 != null) {
-          skuId = first1.skuId;
-        }
-        return getPurchase(skuId);
-      }
-    }
-  }
-  return tmp18;
-}) : (function useGiftCodeErrorMessage(arg0, id) {
+const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");
+
+export default function useGiftCodeErrorMessage(arg0, id) {
   let closure_0;
   let first;
   let stringResult;
@@ -148,19 +46,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCod
     id = id.id;
   }
   if (userId === id) {
-    const intl3 = tmp(tmp2[6]).intl;
-    stringResult = intl3.string(tmp(tmp2[6]).t.JZxgJX);
+    const intl3 = tmp(tmp2[4]).intl;
+    stringResult = intl3.string(tmp(tmp2[4]).t.JZxgJX);
   } else {
     let isClaimed;
     if (first != null) {
       isClaimed = first.isClaimed;
     }
     if (isClaimed) {
-      const intl2 = tmp(tmp2[6]).intl;
-      stringResult = intl2.string(tmp(tmp2[6]).t.ilcBeX);
+      const intl2 = tmp(tmp2[4]).intl;
+      stringResult = intl2.string(tmp(tmp2[4]).t.ilcBeX);
     } else if (null != stateFromStores) {
-      const intl = tmp(tmp2[6]).intl;
-      stringResult = intl.string(tmp(tmp2[6]).t.mdLtb5);
+      const intl = tmp(tmp2[4]).intl;
+      stringResult = intl.string(tmp(tmp2[4]).t.mdLtb5);
     } else {
       stringResult = null;
       if (null != tmp3[1]) {
@@ -170,7 +68,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftCod
     }
   }
   return stringResult;
-});
-const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");
-
-export default tmp2;
+};

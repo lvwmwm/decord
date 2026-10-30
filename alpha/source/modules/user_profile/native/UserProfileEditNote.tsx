@@ -1,186 +1,31 @@
-// Module ID: 14835
-// Function ID: 14836
+// Module ID: 14870
+// Function ID: 14871
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 1084, 21, 5005, 558, 576, 1503, 14831, 14836, 6984, 11164, 7544, 1125, 5271, 7240, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5009, 1498, 14866, 14871, 6992, 11370, 7552, 1114, 5619, 7247, 2]
+// Exports: default
 
-// Module 14835 (UserProfileEditNote)
+// Module 14870 (UserProfileEditNote)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import NoteActionCreatorsDefault from "NoteActionCreators" /* 14836 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+import Constants from "Constants" /* 1072 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import NoteActionCreatorsDefault from "NoteActionCreators" /* 14871 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let navigation, setOptionsResult;
+let navigation;
 
 let metroImportAll;
 let metroImportDefault;
-let _slicedToArray = _slicedToArray_mod;
 const ScrollView = react_native.ScrollView;
 const NOTE_MAX_LENGTH = Constants.NOTE_MAX_LENGTH;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let ref = createStyles.createStyles({ contentContainer: { paddingVertical: 24, paddingHorizontal: 16, gap: 8 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileEditNote(userId) {
-  let closure_3;
-  let closure_7;
-  let first;
-  let loading;
-  let note;
-  let onClose;
-  let tmp = userId;
-  let obj = userId(onClose[7]);
-  const cResult = obj.c(24);
-  userId = userId.userId;
-  const onSave = userId.onSave;
-  onClose = userId.onClose;
-  const shouldFocusInput = userId.shouldFocusInput;
-  _slicedToArray = tmp4;
-  ref();
-  const tmpResult = tmp(onClose[8]);
-  navigation = tmpResult.useNavigation();
-  ({ loading, note } = onSave(onClose[9])(userId));
-  let str = note;
-  const useState = navigation.useState;
-  onSave(onClose[9])(userId);
-  if (note == null) {
-    str = "";
-  }
-  [first, closure_7] = useState(str);
-  if (cResult[0] === onSave) {
-    if (cResult[1] === userId) {
-      let tmp10;
-      let tmp13;
-      let tmp12;
-      if (cResult[2] === first) {
-        tmp10 = cResult[3];
-      }
-      let closure_8 = tmp10;
-      ref = obj3.useRef(null);
-      if (cResult[4] !== (undefined !== shouldFocusInput && shouldFocusInput)) {
-        class H {
-          constructor() {
-            const tmp = closure_3;
-            if (tmp) {
-              const current = ref.current;
-              if (current != null) {
-                current.focus();
-              }
-            }
-          }
-        }
-        const items = [undefined !== shouldFocusInput && shouldFocusInput];
-        cResult[4] = undefined !== shouldFocusInput && shouldFocusInput;
-        cResult[5] = H;
-        class K {
-          constructor() {
-            obj = { headerLeft: null, headerRight: null };
-            setOptions = closure_4.setOptions;
-            obj2 = closure_0(closure_2[11]);
-            obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-              const promise = new Promise(function() { /* body not rendered: F163838 */ });
-              return promise;
-            });
-            obj.headerRight = function headerRight() {
-              let intl;
-              let str;
-              const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F163839 */ } };
-              const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
-              intl = userId(onClose[14]).intl;
-              str = note;
-              const tmp = closure_7;
-              if (note == null) {
-                str = "";
-              }
-              return tmp(HeaderActionButton, obj);
-            };
-            setOptionsResult = setOptions(obj);
-            return;
-          }
-        }
-        cResult[6] = items;
-        tmp13 = items;
-        tmp12 = H;
-      } else {
-        class H {
-          constructor() {
-            const tmp = closure_3;
-            if (tmp) {
-              const current = ref.current;
-              if (current != null) {
-                current.focus();
-              }
-            }
-          }
-        }
-        tmp13 = cResult[6];
-      }
-      const effect = obj3.useEffect(tmp12, tmp13);
-      if (cResult[7] === navigation) {
-        class H {
-          constructor() {
-            const tmp = closure_3;
-            if (tmp) {
-              const current = ref.current;
-              if (current != null) {
-                current.focus();
-              }
-            }
-          }
-        }
-      }
-      class K {
-        constructor() {
-          obj = { headerLeft: null, headerRight: null };
-          setOptions = closure_4.setOptions;
-          obj2 = closure_0(closure_2[11]);
-          obj.headerLeft = obj2.getHeaderConditionalBackButton(() => {
-            const promise = new Promise(function() { /* body not rendered: F163838 */ });
-            return promise;
-          });
-          obj.headerRight = function headerRight() {
-            let intl;
-            let str;
-            const obj = { text: intl.string(userId(onClose[14]).t["R3BPH+"]), disabled: str === first, onPress() { /* body not rendered: F163839 */ } };
-            const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
-            intl = userId(onClose[14]).intl;
-            str = note;
-            const tmp = closure_7;
-            if (note == null) {
-              str = "";
-            }
-            return tmp(HeaderActionButton, obj);
-          };
-          setOptionsResult = setOptions(obj);
-          return;
-        }
-      }
-      const items1 = [navigation, note, first, onClose, tmp10];
-      cResult[7] = navigation;
-      cResult[8] = note;
-      cResult[9] = onClose;
-      cResult[10] = tmp10;
-      cResult[11] = first;
-      cResult[12] = K;
-      cResult[13] = items1;
-    }
-  }
-  const fn = function v() {
-    const obj = NoteActionCreatorsDefault;
-    obj.updateNote(userId, first);
-    if (onSave != null) {
-      onSave();
-    }
-  };
-  cResult[0] = onSave;
-  cResult[1] = userId;
-  cResult[2] = first;
-  cResult[3] = fn;
-  tmp10 = fn;
-}) : (function UserProfileEditNote(userId) {
+let closure_9 = createStyles.createStyles({ contentContainer: { paddingVertical: 24, paddingHorizontal: 16, gap: 8 } });
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNote.tsx");
+
+export default function UserProfileEditNote(userId) {
   let first;
   let intl;
   let intl3;
@@ -196,11 +41,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   let maxLength;
   let closure_7;
   let callback;
-  ref = undefined;
+  let ref;
   let tmp = ref();
-  let obj = userId(onClose[8]);
+  let obj = userId(onClose[6]);
   navigation = obj.useNavigation();
-  const tmp5 = onSave(onClose[9])(userId);
+  const tmp5 = onSave(onClose[7])(userId);
   const note = tmp5.note;
   let obj2 = navigation;
   let str = note;
@@ -239,7 +84,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         const promise = new Promise((arg0) => {
           let closure_0 = arg0;
           let str = closure_5;
-          let tmp = closure_1_1(closure_1_2[12]);
+          let tmp = closure_1_1(closure_1_2[10]);
           if (closure_5 == null) {
             str = "";
           }
@@ -270,7 +115,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
         let intl;
         let str;
         const obj = {
-          text: intl.string(userId(onClose[14]).t["R3BPH+"]),
+          text: intl.string(userId(onClose[12]).t["R3BPH+"]),
           disabled: str === first,
           onPress() {
             closure_1_8();
@@ -279,8 +124,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
             }
           }
         };
-        const HeaderActionButton = userId(onClose[13]).HeaderActionButton;
-        intl = userId(onClose[14]).intl;
+        const HeaderActionButton = userId(onClose[11]).HeaderActionButton;
+        intl = userId(onClose[12]).intl;
         str = note;
         const tmp = closure_7;
         if (note == null) {
@@ -294,15 +139,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
     setOptions(obj);
   }, items2);
   const obj3 = { contentContainerStyle: tmp.contentContainer, keyboardShouldPersistTaps: "always", children: items3 };
-  const obj4 = { variant: "text-sm/semibold", children: intl.string(userId(onClose[14]).t["mQKv+v"]) };
-  const Text = tmp2(tmp3[15]).Text;
-  intl = tmp2(tmp3[14]).intl;
+  const obj4 = { variant: "text-sm/semibold", children: intl.string(userId(onClose[12]).t["mQKv+v"]) };
+  const Text = tmp2(tmp3[13]).Text;
+  intl = tmp2(tmp3[12]).intl;
   items3 = [closure_7(Text, obj4), ];
-  const obj5 = { ref, value: maxLength, onChange: tmp6[1], maxLength, autoCorrect: false, autoCapitalize: "none", placeholder: stringResult, accessibilityLabel: intl3.string(userId(onClose[14]).t["mQKv+v"]) };
-  const TextArea = tmp2(tmp3[16]).TextArea;
-  const intl2 = tmp2(tmp3[14]).intl;
+  const obj5 = { ref, value: maxLength, onChange: tmp6[1], maxLength, autoCorrect: false, autoCapitalize: "none", placeholder: stringResult, accessibilityLabel: intl3.string(userId(onClose[12]).t["mQKv+v"]) };
+  const TextArea = tmp2(tmp3[14]).TextArea;
+  const intl2 = tmp2(tmp3[12]).intl;
   const string = intl2.string;
-  const t = tmp2(tmp3[14]).t;
+  const t = tmp2(tmp3[12]).t;
   const tmp13 = callback;
   const tmp14 = note;
   const tmp15 = closure_7;
@@ -311,10 +156,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
   } else {
     stringResult = string(t.tRZR6T);
   }
-  intl3 = tmp2(tmp3[14]).intl;
+  intl3 = tmp2(tmp3[12]).intl;
   items3[1] = tmp15(TextArea, obj5);
   return tmp13(tmp14, obj3);
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditNote.tsx");
-
-export default tmp3;
+};

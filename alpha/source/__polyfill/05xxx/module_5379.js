@@ -1,53 +1,25 @@
 // Module ID: 5379
 // Function ID: 5380
-// Dependencies: [19, 5358, 5369, 5380, 5381, 5382, 5383]
-// Exports: useDetectorUpdater
+// Dependencies: [5380, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393]
 
 // Module 5379
-import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 5369 */;
-import needsToReattach from "needsToReattach" /* 5380 */;
-import dropHandlers from "dropHandlers" /* 5381 */;
-import attachHandlers from "attachHandlers" /* 5382 */;
+import _mod5380 from "module_5380" /* 5380 */;
+import _mod5386 from "module_5386" /* 5386 */;
+import _mod5387 from "module_5387" /* 5387 */;
+import _mod5388 from "module_5388" /* 5388 */;
+import _mod5389 from "module_5389" /* 5389 */;
+import _mod5390 from "module_5390" /* 5390 */;
+import _mod5391 from "module_5391" /* 5391 */;
+import _mod5392 from "module_5392" /* 5392 */;
+import _mod5393 from "module_5393" /* 5393 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
 
-react.useCallback;
-
-export function useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers) {
-  let gestureConfig;
-  _require = current;
-  const preparedGesture = current2;
-  dependencyMap = gesturesToAttach;
-  const webEventHandlersRef = webEventHandlers;
-  let obj = require("ALLOWED_PROPS");
-  const forceRender = obj.useForceRender();
-  const items = [forceRender, gesture, gesturesToAttach, current2, current, webEventHandlers];
-  return gesture((arg0) => {
-    const tmp3 = react_nativeDefault(current.viewRef);
-    if (tmp3 === current.previousViewTag) {
-      const obj = needsToReattach;
-      const tmp5 = require;
-      const tmp6 = preparedGesture;
-      const tmp7 = gesturesToAttach;
-      if (!obj.needsToReattach(preparedGesture, gesturesToAttach)) {
-        const tmp8 = arg0;
-        if (!tmp8) {
-          const tmp5Result = tmp5(5383);
-          tmp5Result.updateHandlers(tmp6, gestureConfig, tmp7);
-        }
-      }
-    }
-    const obj3 = dropHandlers;
-    obj3.dropHandlers(preparedGesture);
-    const obj2 = { preparedGesture, gestureConfig, gesturesToAttach, webEventHandlersRef, viewTag: tmp3 };
-    const obj4 = attachHandlers;
-    obj4.attachHandlers(obj2);
-    if (tmp3 !== current.previousViewTag) {
-      current.previousViewTag = tmp3;
-      current.forceRebuildReanimatedEvent = true;
-      forceRender();
-    }
-  }, items);
-}
+export const useTapGesture = _mod5380.useTapGesture;
+export const useFlingGesture = _mod5386.useFlingGesture;
+export const useLongPressGesture = _mod5387.useLongPressGesture;
+export const usePinchGesture = _mod5388.usePinchGesture;
+export const useRotationGesture = _mod5389.useRotationGesture;
+export const useHoverGesture = _mod5390.useHoverGesture;
+export const useManualGesture = _mod5391.useManualGesture;
+export const useNativeGesture = _mod5392.useNativeGesture;
+export const usePanGesture = _mod5393.usePanGesture;

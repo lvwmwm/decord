@@ -1,69 +1,25 @@
-// Module ID: 19003
-// Function ID: 19004
+// Module ID: 19097
+// Function ID: 19098
 // Name: FramePanelContainer
-// Dependencies: [19, 6833, 6834, 21, 558, 576, 504, 11598, 19004, 19006, 2]
+// Dependencies: [19, 6840, 6841, 21, 504, 11799, 19098, 19100, 2]
 
-// Module 19003 (FramePanelContainer)
-import react2 from "react" /* 576 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import WakeLockDefault from "WakeLock" /* 11598 */;
-import FramePanelControllerDefault from "FramePanelController" /* 19004 */;
-import FramePanelUIDefault from "FramePanelUI" /* 19006 */;
+// Module 19097 (FramePanelContainer)
+import get_initialized from "get initialized" /* 504 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import WakeLockDefault from "WakeLock" /* 11799 */;
+import FramePanelControllerDefault from "FramePanelController" /* 19098 */;
+import FramePanelUIDefault from "FramePanelUI" /* 19100 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6833 */;
+import FramesStore from "FramesStore" /* 6840 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const get_initialized = tmp(504);
 const isLaunched = FramesConstants.isLaunched;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-const FrameActivities = "FrameActivities";
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function FramePanelContainer() {
-  let items1;
-  let mainFrame;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    const fn = function o() {
-      return isLaunched(mainFrame.getMainFrame());
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let tmp9 = null;
-    if (stateFromStores) {
-      const obj2 = { children: items1 };
-      const obj3 = { wakeLockKey: FrameActivities };
-      items1 = [hasOwnProperty(WakeLockDefault, obj3), ];
-      const obj4 = { children: hasOwnProperty(FramePanelUIDefault, {}) };
-      const tmp15 = FramePanelControllerDefault;
-      items1[1] = hasOwnProperty(tmp15, obj4);
-      tmp9 = metroImportDefault(metroRequire, obj2);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp9;
-    tmp8 = tmp9;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function FramePanelContainer() {
+const memoResult = react.memo(function FramePanelContainer() {
   let items1;
   let mainFrame;
   const items = [FramesStore];
@@ -71,15 +27,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj = get_initialized;
   if (obj.useStateFromStores(items, () => isLaunched(mainFrame.getMainFrame()))) {
     const obj2 = { children: items1 };
-    const obj3 = { wakeLockKey: FrameActivities };
-    items1 = [hasOwnProperty(WakeLockDefault, obj3), ];
-    const obj4 = { children: hasOwnProperty(FramePanelUIDefault, {}) };
-    const tmp8 = FramePanelControllerDefault;
-    items1[1] = hasOwnProperty(tmp8, obj4);
+    items1 = [hasOwnProperty(WakeLockDefault, { wakeLockKey: "FrameActivities" }), ];
+    const obj3 = { children: hasOwnProperty(FramePanelUIDefault, {}) };
+    const tmp7 = FramePanelControllerDefault;
+    items1[1] = hasOwnProperty(tmp7, obj3);
     tmp2 = metroImportDefault(metroRequire, obj2);
   }
   return tmp2;
-}));
+});
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");
 
 export default memoResult;

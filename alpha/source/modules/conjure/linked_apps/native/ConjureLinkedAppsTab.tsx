@@ -1,203 +1,26 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12468
+// Function ID: 12469
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 21, 558, 576, 5952, 1125, 3864, 5247, 12308, 6963, 12303, 7047, 5271, 6015, 587, 2]
+// Dependencies: [19, 21, 5959, 1114, 3865, 5253, 12469, 6022, 575, 7054, 6969, 12464, 5619, 2]
+// Exports: default
 
-// Module 12307 (ConjureLinkedAppsTab)
-import nativeDefault from "native" /* 587 */;
-import _modDef3864 from "module_3864" /* 3864 */;
+// Module 12468 (ConjureLinkedAppsTab)
+import nativeDefault from "native" /* 575 */;
+import _modDef3865 from "module_3865" /* 3865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require, build, dependencyMap, importDefault;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const ConjureLinkedAppSheet = "ConjureLinkedAppSheet";
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinkedAppsTab(linkedApps) {
-  let callers;
-  let failed;
-  let intl2;
-  let items;
-  let names;
-  let remove;
-  let setBuild;
-  let tmp4;
-  let tmp = names;
-  const tmp2 = remove;
-  let obj = names(remove[3]);
-  const cResult = obj.c(21);
-  linkedApps = linkedApps.linkedApps;
-  ({ callers, names } = linkedApps);
-  ({ failed, setBuild } = linkedApps);
-  remove = linkedApps.remove;
-  if (cResult[0] !== remove) {
-    function confirmRemove(arg0, name) {
-      let intl;
-      let intl2;
-      let intl3;
-      let obj2;
-      let obj3;
-      let closure_0 = arg0;
-      const tmp = names(remove[4]);
-      const showConfirmModal = tmp.showConfirmModal;
-      const obj = {
-        key: "ConjureRemoveLinkedApp-" + arg0,
-        title: intl.formatToPlainString(setBuild(remove[6]).zSfIvv, obj2),
-        content: intl2.formatToPlainString(setBuild(remove[6])["7TX+mR"], obj3),
-        confirmText: intl3.string(setBuild(remove[6]).vDZEGQ),
-        variant: "destructive",
-        onConfirm() {
-          return remove(closure_0);
-        }
-      };
-      intl = names(remove[5]).intl;
-      obj2 = { name };
-      intl2 = names(remove[5]).intl;
-      obj3 = { name };
-      intl3 = names(remove[5]).intl;
-      showConfirmModal(obj);
-    }
-    cResult[0] = remove;
-    cResult[1] = confirmRemove;
-    tmp4 = confirmRemove;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let closure_3 = tmp4;
-  if (cResult[2] === tmp4) {
-    if (cResult[3] === names) {
-      let tmp5;
-      let tmp7;
-      let tmp10;
-      if (cResult[4] === setBuild) {
-        tmp5 = cResult[5];
-      }
-      let closure_4 = tmp5;
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        let intl = tmp(tmp2[5]).intl;
-        const stringResult = intl.string(setBuild(tmp2[6])["6c2rjv"]);
-        cResult[6] = stringResult;
-        tmp7 = stringResult;
-      } else {
-        tmp7 = cResult[6];
-      }
-      if (cResult[7] === callers) {
-        if (cResult[8] === names) {
-          let tmp13;
-          let tmp16;
-          if (cResult[9] === tmp5) {
-            tmp10 = cResult[10];
-          }
-          if (cResult[14] !== tmp10) {
-            let obj2 = { description: tmp7, hasIcons: false, children: tmp10 };
-            const tmp15 = closure_3(tmp(tmp2[11]).TableRowGroup, obj2);
-            cResult[14] = tmp10;
-            cResult[15] = tmp15;
-            tmp13 = tmp15;
-          } else {
-            tmp13 = cResult[15];
-          }
-          if (cResult[16] !== failed) {
-            let tmp17 = null;
-            if (failed) {
-              let obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(setBuild(tmp2[6]).dIEOrl) };
-              const Text = tmp(tmp2[12]).Text;
-              intl2 = tmp(tmp2[5]).intl;
-              tmp17 = closure_3(Text, obj3);
-            }
-            cResult[16] = failed;
-            cResult[17] = tmp17;
-            tmp16 = tmp17;
-          } else {
-            tmp16 = cResult[17];
-          }
-          if (cResult[18] === tmp13) {
-            let tmp20;
-            if (cResult[19] === tmp16) {
-              tmp20 = cResult[20];
-            }
-            return tmp20;
-          }
-          const obj4 = { spacing: setBuild(tmp2[14]).space.PX_8, children: items };
-          const Stack = tmp(tmp2[13]).Stack;
-          items = [tmp13, tmp16];
-          const tmp23 = closure_4(Stack, obj4);
-          cResult[18] = tmp13;
-          cResult[19] = tmp16;
-          cResult[20] = tmp23;
-          tmp20 = tmp23;
-        }
-      }
-      if (cResult[11] === names) {
-        let tmp11;
-        if (cResult[12] === tmp5) {
-          tmp11 = cResult[13];
-        }
-        const mapped = callers.map(tmp11);
-        cResult[7] = callers;
-        cResult[8] = names;
-        cResult[9] = tmp5;
-        cResult[10] = mapped;
-        tmp10 = mapped;
-      }
-      const fn = function x(build) {
-        let TrailingText;
-        let obj2;
-        let obj3;
-        names = build;
-        const obj = {
-          label: names[build.project_id],
-          trailing: closure_3(TrailingText, obj2),
-          arrow: true,
-          onPress() {
-            return closure_4(build);
-          }
-        };
-        const TableRow = names(remove[9]).TableRow;
-        obj2 = { text: obj3.linkedAppBuildLabel(build.build) };
-        TrailingText = names(remove[9]).TableRow.TrailingText;
-        obj3 = names(remove[10]);
-        return closure_3(TableRow, obj, build.project_id);
-      };
-      cResult[11] = names;
-      cResult[12] = tmp5;
-      cResult[13] = fn;
-      tmp11 = fn;
-    }
-  }
-  function openSheet(project_id) {
-    let obj2;
-    project_id = project_id.project_id;
-    let closure_1 = tmp;
-    const build = project_id.build;
-    const obj = { content: closure_3(setBuild(remove[8]), obj2), key: sheetKey, stackingBehavior: "stack" };
-    const showActionSheet = names(remove[7]).showActionSheet;
-    obj2 = {
-      sheetKey,
-      title: project_id[project_id],
-      value: build,
-      onPick(arg0) {
-        return setBuild(project_id, arg0);
-      },
-      onRemove() {
-        return closure_3(project_id, closure_1);
-      }
-    };
-    names(remove[7]);
-    showActionSheet(obj);
-  }
-  cResult[2] = tmp4;
-  cResult[3] = names;
-  cResult[4] = setBuild;
-  cResult[5] = openSheet;
-  tmp5 = openSheet;
-}) : (function ConjureLinkedAppsTab(linkedApps) {
+const result = size.fileFinishedImporting("modules/conjure/linked_apps/native/ConjureLinkedAppsTab.tsx");
+
+export default function ConjureLinkedAppsTab(linkedApps) {
   let _undefined;
   let _undefined2;
   let c0;
@@ -218,7 +41,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinke
   let obj = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack = require("Stack/Stack").Stack;
   let obj2 = {
-    description: intl.string(_modDef3864["6c2rjv"]),
+    description: intl.string(_modDef3865["6c2rjv"]),
     hasIcons: false,
     children: callers.map((build) => {
       let TrailingText;
@@ -235,8 +58,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinke
           let tmp = build[project_id];
           let closure_1 = tmp;
           build = build.build;
-          let obj = { content: closure_1_3(closure_1_1(_undefined2[8]), obj2), key: sheetKey, stackingBehavior: "stack" };
-          const showActionSheet = build(_undefined2[7]).showActionSheet;
+          let obj = { content: closure_1_3(closure_1_1(_undefined2[6]), obj2), key: sheetKey, stackingBehavior: "stack" };
+          const showActionSheet = build(_undefined2[5]).showActionSheet;
           obj2 = {
             sheetKey,
             title: tmp,
@@ -250,34 +73,34 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinke
               let intl3;
               let obj2;
               let obj3;
-              const tmp = project_id(_undefined2[4]);
+              const tmp = project_id(_undefined2[2]);
               const showConfirmModal = tmp.showConfirmModal;
               const obj = {
                 key: "ConjureRemoveLinkedApp-" + project_id,
-                title: intl.formatToPlainString(closure_3_1(_undefined2[6]).zSfIvv, obj2),
-                content: intl2.formatToPlainString(closure_3_1(_undefined2[6])["7TX+mR"], obj3),
-                confirmText: intl3.string(closure_3_1(_undefined2[6]).vDZEGQ),
+                title: intl.formatToPlainString(closure_3_1(_undefined2[4]).zSfIvv, obj2),
+                content: intl2.formatToPlainString(closure_3_1(_undefined2[4])["7TX+mR"], obj3),
+                confirmText: intl3.string(closure_3_1(_undefined2[4]).vDZEGQ),
                 variant: "destructive",
                 onConfirm() {
                   return closure_2_2(closure_0);
                 }
               };
-              intl = project_id(_undefined2[5]).intl;
+              intl = project_id(_undefined2[3]).intl;
               obj2 = { name };
-              intl2 = project_id(_undefined2[5]).intl;
+              intl2 = project_id(_undefined2[3]).intl;
               obj3 = { name };
-              intl3 = project_id(_undefined2[5]).intl;
+              intl3 = project_id(_undefined2[3]).intl;
               showConfirmModal(obj);
             }
           };
-          build(_undefined2[7]);
+          build(_undefined2[5]);
           showActionSheet(obj);
         }
       };
-      const TableRow = c0(c2[9]).TableRow;
+      const TableRow = c0(c2[10]).TableRow;
       obj2 = { text: obj3.linkedAppBuildLabel(build.build) };
-      TrailingText = c0(c2[9]).TableRow.TrailingText;
-      obj3 = c0(c2[10]);
+      TrailingText = c0(c2[10]).TableRow.TrailingText;
+      obj3 = c0(c2[11]);
       return closure_1_3(TableRow, obj, build.project_id);
     })
   };
@@ -287,14 +110,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureLinke
   let tmp5Result = null;
   const tmp5 = closure_3;
   if (failed) {
-    let obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef3864.dIEOrl) };
-    const Text = tmp2(5271).Text;
-    intl2 = tmp2(1125).intl;
+    let obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef3865.dIEOrl) };
+    const Text = tmp2(5619).Text;
+    intl2 = tmp2(1114).intl;
     tmp5Result = tmp5(Text, obj3);
   }
   items[1] = tmp5Result;
   return tmp(Stack, obj);
-});
-const result = size.fileFinishedImporting("modules/conjure/linked_apps/native/ConjureLinkedAppsTab.tsx");
-
-export default tmp4;
+};

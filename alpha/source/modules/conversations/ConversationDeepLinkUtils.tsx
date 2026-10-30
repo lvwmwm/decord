@@ -1,14 +1,14 @@
-// Module ID: 10138
-// Function ID: 10139
+// Module ID: 10165
+// Function ID: 10166
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6919, 7758, 5644, 9802, 5643, 11, 10139, 2]
+// Dependencies: [5, 6926, 7763, 5650, 9828, 5649, 11, 10166, 2]
 // Exports: consumeConversationFocusParam
 
-// Module 10138 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5644 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6919 */;
+// Module 10165 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5650 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6926 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7758 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7763 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -33,7 +33,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -57,7 +57,7 @@ let obj = function _resolveConversationFocusLink() {
             conversation = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -165,7 +165,7 @@ export function consumeConversationFocusParam(state) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -213,7 +213,7 @@ export function consumeConversationFocusParam(state) {
                       const conversationFocus = obj.requestConversationFocus();
                     }
                     guildId = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp16) {
                   guildId = 3;

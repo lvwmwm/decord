@@ -1,308 +1,20 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 13963
+// Function ID: 13964
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1389, 21, 558, 576, 1503, 13817, 504, 5701, 1125, 13818, 5745, 13824, 2]
+// Dependencies: [5, 19, 1384, 21, 1498, 13964, 504, 13965, 5707, 1114, 5751, 13971, 2]
 
-// Module 13816 (ChatInputGuardMessageRequest)
+// Module 13963 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13824 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-let c1, dependencyMap, id, importDefault, navigation;
+let c1, closure_1, dependencyMap, id, importDefault;
 
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ChatInputGuardMessageRequest(channel) {
-  let acceptMessageRequest;
-  let first;
-  let isAcceptLoading;
-  let isOptimisticAccepted;
-  let isOptimisticRejected;
-  let isRejectLoading;
-  let isUserProfileLoading;
-  let tmp10;
-  let tmp11;
-  let tmp8;
-  const tmp = channel;
-  const tmp2 = acceptMessageRequest;
-  let obj = channel(acceptMessageRequest[5]);
-  const cResult = obj.c(29);
-  channel = channel.channel;
-  let obj2 = channel(acceptMessageRequest[6]);
-  navigation = obj2.useNavigation();
-  let obj3 = channel(acceptMessageRequest[7]);
-  const isMessageRequestRestrictedViewer = obj3.useIsMessageRequestRestrictedViewer();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function c() {
-      return UserStore.getUser(channel.getRecipientId());
-    };
-    cResult[1] = channel;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[8]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    function handleRequestError() {
-      let intl;
-      const obj = { text: intl.string(channel(acceptMessageRequest[10]).t["EDYbS+"]), variant: "critical" };
-      const open = navigation(acceptMessageRequest[9]).open;
-      navigation(acceptMessageRequest[9]);
-      intl = channel(acceptMessageRequest[10]).intl;
-      open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
-    }
-    cResult[3] = handleRequestError;
-    tmp10 = handleRequestError;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== navigation) {
-    function handleRejectSuccess() {
-      navigation.pop();
-    }
-    cResult[4] = navigation;
-    cResult[5] = handleRejectSuccess;
-    tmp11 = handleRejectSuccess;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] === tmp11) {
-    let tmp12;
-    if (cResult[7] === stateFromStores) {
-      tmp12 = cResult[8];
-    }
-    const tmpResult2 = tmp(tmp2[11]);
-    const messageRequestActions = tmpResult2.useMessageRequestActions(tmp12);
-    acceptMessageRequest = messageRequestActions.acceptMessageRequest;
-    const rejectMessageRequest = messageRequestActions.rejectMessageRequest;
-    ({ isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
-    if (cResult[9] === acceptMessageRequest) {
-      let tmp15;
-      if (cResult[10] === channel.id) {
-        tmp15 = cResult[11];
-      }
-      if (cResult[12] === channel.id) {
-        let tmp17;
-        let tmp19;
-        let tmp21;
-        let tmp23;
-        let tmp25;
-        if (cResult[13] === rejectMessageRequest) {
-          tmp17 = cResult[14];
-        }
-        const _Symbol = Symbol;
-        if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-          let intl = tmp(tmp2[10]).intl;
-          const stringResult = intl.string(tmp(tmp2[10]).t["e/eQVB"]);
-          cResult[15] = stringResult;
-          tmp19 = stringResult;
-        } else {
-          tmp19 = cResult[15];
-        }
-        if (cResult[16] !== isMessageRequestRestrictedViewer) {
-          const intl2 = tmp(tmp2[10]).intl;
-          const string = intl2.string;
-          const t = tmp(tmp2[10]).t;
-          const stringResult1 = string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI);
-          cResult[16] = isMessageRequestRestrictedViewer;
-          cResult[17] = stringResult1;
-          tmp21 = stringResult1;
-        } else {
-          tmp21 = cResult[17];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(tmp2[10]).intl;
-          const stringResult2 = intl3.string(tmp(tmp2[10]).t.Kz8Pwr);
-          cResult[18] = stringResult2;
-          tmp23 = stringResult2;
-        } else {
-          tmp23 = cResult[18];
-        }
-        if (!isAcceptLoading) {
-          isAcceptLoading = isUserProfileLoading;
-        }
-        if (!isAcceptLoading) {
-          isAcceptLoading = isOptimisticAccepted;
-        }
-        if (cResult[19] !== isMessageRequestRestrictedViewer) {
-          const intl4 = tmp(tmp2[10]).intl;
-          const string2 = intl4.string;
-          const t2 = tmp(tmp2[10]).t;
-          const string2Result = string2(isMessageRequestRestrictedViewer ? t2.BVN4pL : t2.B2nygW);
-          cResult[19] = isMessageRequestRestrictedViewer;
-          cResult[20] = string2Result;
-          tmp25 = string2Result;
-        } else {
-          tmp25 = cResult[20];
-        }
-        if (!isRejectLoading) {
-          isRejectLoading = isOptimisticRejected;
-        }
-        if (cResult[21] === (isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected)) {
-          if (cResult[22] === tmp15) {
-            if (cResult[23] === tmp17) {
-              if (cResult[24] === isAcceptLoading) {
-                if (cResult[25] === tmp25) {
-                  if (cResult[26] === isRejectLoading) {
-                    let tmp27;
-                    if (cResult[27] === tmp21) {
-                      tmp27 = cResult[28];
-                    }
-                    return tmp27;
-                  }
-                }
-              }
-            }
-          }
-        }
-        const tmp30 = jsx(navigation(tmp2[13]), { type: "button-action", message: tmp19, subtext: tmp21, buttonPrimaryText: tmp23, buttonPrimaryOnPress: tmp15, buttonPrimaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonPrimaryLoading: isAcceptLoading, buttonSecondaryText: tmp25, buttonSecondaryOnPress: tmp17, buttonSecondaryDisabled: isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected, buttonSecondaryLoading: isRejectLoading });
-        cResult[21] = isAcceptLoading || isRejectLoading || isUserProfileLoading || isOptimisticAccepted || isOptimisticRejected;
-        cResult[22] = tmp15;
-        cResult[23] = tmp17;
-        cResult[24] = isAcceptLoading;
-        cResult[25] = tmp25;
-        cResult[26] = isRejectLoading;
-        cResult[27] = tmp21;
-        cResult[28] = tmp30;
-        tmp27 = tmp30;
-      }
-      let closure_0 = rejectMessageRequest(function*(arg0, value) {
-        closure_0 = arg0;
-        if (c1 === 2) {
-          c1 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj2 = { value, done: true };
-            return obj2;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            c1 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c1 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                const obj3 = { value, done: true };
-                return obj3;
-              } else {
-                closure_0.stopPropagation();
-                c2 = 1;
-                c1 = 1;
-                const obj4 = { value: rejectMessageRequest(closure_0.id), done: false };
-                return obj4;
-              }
-            } else if (arg0 === 1) {
-              c1 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c1 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              c1 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } catch (tmp8) {
-            c1 = 3;
-            throw tmp8;
-          }
-        }
-      });
-      function onRejectClick() {
-        return closure_0(...arguments);
-      }
-      cResult[12] = channel.id;
-      cResult[13] = rejectMessageRequest;
-      cResult[14] = onRejectClick;
-      tmp17 = onRejectClick;
-    }
-    closure_0 = rejectMessageRequest(function*(arg0, value) {
-      let v1;
-      closure_0 = arg0;
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          c3 = 2;
-          if (0 === c2) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let closure_1 = tmp3;
-              closure_0.stopPropagation();
-              c2 = 1;
-              c3 = 1;
-              const obj4 = { value: c2(closure_0.id), done: false };
-              return obj4;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            const obj = closure_0(acceptMessageRequest[12]);
-            obj.transitionToChannel(closure_0.id, { navigationReplace: true });
-            c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp13) {
-          c3 = 3;
-          throw tmp13;
-        }
-      }
-    });
-    function onAcceptClick() {
-      return closure_0(...arguments);
-    }
-    cResult[9] = acceptMessageRequest;
-    cResult[10] = channel.id;
-    cResult[11] = onAcceptClick;
-    tmp15 = onAcceptClick;
-  }
-  let obj5 = { user: stateFromStores, onError: tmp10, onRejectSuccess: tmp11 };
-  cResult[6] = tmp11;
-  cResult[7] = stateFromStores;
-  cResult[8] = obj5;
-  tmp12 = obj5;
-}) : (function ChatInputGuardMessageRequest(channel) {
+const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   let _undefined;
   let c2;
   let c3;
@@ -320,7 +32,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = channel.channel;
   dependencyMap = undefined;
   c3 = undefined;
-  let obj = function _onAcceptClick2() {
+  let obj = function _onAcceptClick() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       id = arg0;
@@ -334,7 +46,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -363,10 +75,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             const obj5 = { value, done: true };
             return obj5;
           } else {
-            obj = id(c2[12]);
+            obj = id(c2[10]);
             obj.transitionToChannel(closure_129_0.id, { navigationReplace: true });
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -376,7 +88,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     });
     return obj(...arguments);
   };
-  obj = function _onRejectClick2() {
+  obj = function _onRejectClick() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       id = arg0;
@@ -390,7 +102,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -419,7 +131,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -431,22 +143,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1503);
+  obj = channel(1498);
   importDefault = obj.useNavigation();
-  let obj2 = channel(13817);
+  let obj2 = channel(13964);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(13818);
+  let obj4 = channel(13965);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
       let intl;
-      obj = { text: intl.string(channel(c2[10]).t["EDYbS+"]), variant: "critical" };
-      const open = closure_1(c2[9]).open;
-      closure_1(c2[9]);
-      intl = channel(c2[10]).intl;
+      obj = { text: intl.string(channel(c2[9]).t["EDYbS+"]), variant: "critical" };
+      const open = closure_1(c2[8]).open;
+      closure_1(c2[8]);
+      intl = channel(c2[9]).intl;
       open("MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", obj);
     },
     onRejectSuccess: function handleRejectSuccess() {
@@ -457,9 +169,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1125).t["e/eQVB"]),
+    message: intl.string(tmp(1114).t["e/eQVB"]),
     subtext: string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI),
-    buttonPrimaryText: intl3.string(tmp(1125).t.Kz8Pwr),
+    buttonPrimaryText: intl3.string(tmp(1114).t.Kz8Pwr),
     buttonPrimaryOnPress: function onAcceptClick(arg0) {
       return obj(...arguments);
     },
@@ -473,11 +185,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     buttonSecondaryLoading: isRejectLoading
   };
   const tmp8 = ChatInputGuardDefault;
-  intl = tmp(1125).intl;
-  const intl2 = tmp(1125).intl;
+  intl = tmp(1114).intl;
+  const intl2 = tmp(1114).intl;
   string = intl2.string;
-  t = tmp(1125).t;
-  intl3 = tmp(1125).intl;
+  t = tmp(1114).t;
+  intl3 = tmp(1114).intl;
   const tmp7 = obj;
   if (!isAcceptLoading) {
     isAcceptLoading = isUserProfileLoading;
@@ -485,14 +197,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  const intl4 = tmp(1125).intl;
+  const intl4 = tmp(1114).intl;
   string2 = intl4.string;
-  t2 = tmp(1125).t;
+  t2 = tmp(1114).t;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }
   return tmp7(tmp8, obj6);
-}));
+});
 const result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardMessageRequest.tsx");
 
 export default memoResult;

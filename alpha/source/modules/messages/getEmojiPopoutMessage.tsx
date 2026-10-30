@@ -1,15 +1,15 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10039
+// Function ID: 10040
 // Name: getEmojiPopoutMessage
-// Dependencies: [6944, 1084, 1125, 4151, 2065, 2]
+// Dependencies: [6952, 1072, 1114, 4152, 2062, 2]
 // Exports: getEmojiPopoutData
 
-// Module 10012 (getEmojiPopoutMessage)
-import Constants from "Constants" /* 1084 */;
-import intl12 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import _modDef4151 from "module_4151" /* 4151 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6944 */;
+// Module 10039 (getEmojiPopoutMessage)
+import Constants from "Constants" /* 1072 */;
+import intl12 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import _modDef4152 from "module_4152" /* 4152 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 6952 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
@@ -49,7 +49,7 @@ export function getEmojiPopoutData(sourceType) {
     const intl11 = intl12.intl;
     format = intl11.format;
     obj3 = { helpdeskArticle: obj9.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = _modDef4151["/jdd/7"];
+    prop = _modDef4152["/jdd/7"];
     obj9 = HelpdeskUtilsDefault;
     return obj2;
   } else {
@@ -81,8 +81,8 @@ export function getEmojiPopoutData(sourceType) {
           }
           if (isPremium2) {
             if (isDiscoverable2) {
-              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1125).t.riu2R5), description: null };
-              intl10 = tmp7(1125).intl;
+              const obj5 = { type: obj.JOIN_GUILD, text: intl10.string(tmp7(1114).t.riu2R5), description: null };
+              intl10 = tmp7(1114).intl;
               obj7 = obj5;
             }
             const obj6 = { emojiDescription: formatToPlainStringResult, analyticsType: CROSS_SERVER };
@@ -90,8 +90,8 @@ export function getEmojiPopoutData(sourceType) {
             return obj6;
           }
           if (!isPremium2) {
-            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1125).t["gl/XHJ"]), description: null };
-            intl9 = tmp7(1125).intl;
+            obj7 = { type: obj.GET_PREMIUM, text: intl9.string(tmp7(1114).t["gl/XHJ"]), description: null };
+            intl9 = tmp7(1114).intl;
           }
           obj7 = { type: obj.UNAVAILABLE, text: null, description: null };
           const obj8 = { type: obj.UNAVAILABLE, text: null, description: null };
@@ -216,11 +216,11 @@ export function getEmojiPopoutData(sourceType) {
     } else {
       const intl = intl12.intl;
       if (isDiscoverable3) {
-        formatToPlainStringResult = intl.string(tmp3(1125).t.FJ6Z01);
+        formatToPlainStringResult = intl.string(tmp3(1114).t.FJ6Z01);
         tmp7 = tmp3;
       } else {
         obj = { openPremiumSettings: onOpenPremiumSettings };
-        formatToPlainStringResult = intl.format(tmp3(1125).t.U6vLcA, obj);
+        formatToPlainStringResult = intl.format(tmp3(1114).t.U6vLcA, obj);
         tmp7 = tmp3;
       }
     }

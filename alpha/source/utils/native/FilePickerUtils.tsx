@@ -1,11 +1,11 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 11080
+// Function ID: 11081
 // Name: FilePickerUtils
-// Dependencies: [5, 1084, 12361, 1381, 5947, 1125, 5749, 2]
+// Dependencies: [5, 1072, 11081, 1376, 5954, 1114, 5755, 2]
 // Exports: handleDocumentSelection
 
-// Module 12360 (FilePickerUtils)
-import Constants from "Constants" /* 1084 */;
+// Module 11080 (FilePickerUtils)
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -67,7 +67,7 @@ let obj = function _handleDocumentSelection() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ let obj = function _handleDocumentSelection() {
               closure_4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -144,7 +144,7 @@ let obj = function _handleDocumentSelection() {
             if (obj4.isErrorWithCode(code)) {
               if (code.code === closure_130_0(closure_130_2[2]).errorCodes.OPERATION_CANCELED) {
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             }
             const _JSON = JSON;
@@ -160,7 +160,7 @@ let obj = function _handleDocumentSelection() {
             intl4 = closure_130_0(closure_130_2[5]).intl;
             show2(obj12);
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

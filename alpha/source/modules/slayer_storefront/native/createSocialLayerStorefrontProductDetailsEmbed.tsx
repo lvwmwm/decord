@@ -1,153 +1,26 @@
-// Module ID: 11322
-// Function ID: 11323
+// Module ID: 11525
+// Function ID: 11526
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 2043, 6883, 7867, 8329, 1125, 11323, 7395, 7390, 3734, 558, 576, 5741, 11324, 1385, 504, 7317, 2]
-// Exports: createSocialLayerStorefrontProductDetailsEmbed
+// Dependencies: [19, 2040, 6890, 7872, 8386, 1114, 11526, 7403, 7398, 3735, 5747, 11527, 504, 1380, 7324, 2]
+// Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedApplications
 
-// Module 11322 (createSocialLayerStorefrontProductDetailsEmbed)
-import intl4 from "intl" /* 1125 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7317 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7390 */;
-import StorefrontUtils from "StorefrontUtils" /* 7395 */;
-import Constants from "Constants" /* 7867 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11323 */;
+// Module 11525 (createSocialLayerStorefrontProductDetailsEmbed)
+import intl4 from "intl" /* 1114 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7398 */;
+import StorefrontUtils from "StorefrontUtils" /* 7403 */;
+import Constants from "Constants" /* 7872 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8386 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11526 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import SKUStore from "SKUStore" /* 6883 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import SKUStore from "SKUStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, arr;
 
 const InviteTypes = Constants.InviteTypes;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(arr) {
-  let closure_0;
-  let tmp10;
-  let tmp11;
-  let tmp4;
-  let tmp8;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(7);
-  const tmp = _require;
-  if (cResult[0] !== arr) {
-    let tmp6;
-    let tmp5 = globalThis;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function n(arr, arg1) {
-        let code;
-        let type;
-        const iter = arg1.codedLinks[Symbol.iterator]();
-        const nextResult = iter.next();
-        while (iter !== undefined) {
-          ({ type, code } = nextResult);
-          let tmp3 = closure_0;
-          let tmp4 = dependencyMap;
-          if (type === closure_0(dependencyMap[12]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-            let tmp3Result = tmp3(tmp4[13]);
-            let result = tmp3Result.parseStorefrontCodedLink(code);
-            let tmp8 = result;
-            let tmp9 = null != result;
-            if (tmp9) {
-              tmp9 = 1 === tmp8.skuIds.length;
-            }
-            if (tmp9) {
-              arr = arr.push(tmp8.skuIds[0]);
-            }
-          }
-          continue;
-        }
-        return arr;
-      };
-      cResult[2] = fn;
-      tmp6 = fn;
-    } else {
-      tmp6 = cResult[2];
-    }
-    const reduced = arr.reduce(tmp6, []);
-    cResult[0] = arr;
-    cResult[1] = reduced;
-    tmp4 = reduced;
-  } else {
-    tmp4 = cResult[1];
-  }
-  _require = tmp4;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp9 = SKUStore;
-    let items = [SKUStore];
-    cResult[3] = items;
-    tmp8 = items;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] !== tmp4) {
-    const fn2 = function s() {
-      const f150712 = (applicationId) => applicationId.applicationId;
-      const mapped = closure_0.map((item) => closure_1_5.get(item));
-      const found = mapped.filter(GlobalUtils.isNotNullish);
-      const items = [...new Set(found.map(f150712))];
-      new Set(found.map(f150712));
-      return items;
-    };
-    const items1 = [tmp4];
-    cResult[4] = tmp4;
-    cResult[5] = fn2;
-    cResult[6] = items1;
-    tmp11 = items1;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[5];
-    tmp11 = cResult[6];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp8, tmp10, tmp11);
-  useGetOrFetchApplicationsDefault(stateFromStoresArray);
-}) : (function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(arg0) {
-  let closure_0;
-  _require = arg0;
-  let items = [arg0];
-  const memo = react.useMemo(() => closure_0.reduce((arr, item) => {
-    let code;
-    let type;
-    const iter = item.codedLinks[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      ({ type, code } = nextResult);
-      let tmp3 = closure_1_0;
-      let tmp4 = closure_1_2;
-      if (type === closure_1_0(closure_1_2[12]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-        let tmp3Result = tmp3(tmp4[13]);
-        let result = tmp3Result.parseStorefrontCodedLink(code);
-        let tmp8 = result;
-        let tmp9 = null != result;
-        if (tmp9) {
-          tmp9 = 1 === tmp8.skuIds.length;
-        }
-        if (tmp9) {
-          arr = arr.push(tmp8.skuIds[0]);
-        }
-      }
-      continue;
-    }
-    return arr;
-  }, []), items);
-  const items1 = [SKUStore];
-  const items2 = [memo];
-  const obj = require("get initialized");
-  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f150715 = (applicationId) => applicationId.applicationId;
-    const mapped = memo.map((item) => closure_1_5.get(item));
-    const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f150715))];
-    new Set(found.map(f150715));
-    return items;
-  }, items2);
-  let tmp3 = memo(7317)(stateFromStoresArray);
-});
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
 export function createSocialLayerStorefrontProductDetailsEmbed(theme) {
@@ -203,13 +76,13 @@ export function createSocialLayerStorefrontProductDetailsEmbed(theme) {
             }
             const obj3 = { headerText: name, headerColor: colors.headerColor, titleText: value.name, titleColor: colors.titleColor, subtitle: intl2.string(intl4.t.V91tvy), subtitleColor: colors.subtitleColor, thumbnailUrl: str1, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, acceptLabelText: stringResult, acceptLabelColor: prop, acceptLabelBackgroundColor: result1 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
             const merged = Object.assign(baseColors);
-            intl2 = tmp12(1125).intl;
-            const intl3 = tmp12(1125).intl;
+            intl2 = tmp12(1114).intl;
+            const intl3 = tmp12(1114).intl;
             const string = intl3.string;
             if (result1) {
-              stringResult = string(tmp12(1125).t.boqtTA);
+              stringResult = string(tmp12(1114).t.boqtTA);
             } else {
-              stringResult = string(tmp(3734).BKf0MM);
+              stringResult = string(tmp(3735).BKf0MM);
             }
             prop = undefined;
             if (result1) {
@@ -227,4 +100,44 @@ export function createSocialLayerStorefrontProductDetailsEmbed(theme) {
   ({ resolvingGradientEnd: obj7.resolvingGradientEnd, resolvingGradientStart: obj7.resolvingGradientStart } = colors);
   return obj6;
 }
-export const useFetchSocialLayerStorefrontProductDetailsEmbedApplications = tmp2;
+export function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(stateFromStores) {
+  _require = stateFromStores;
+  let items = [stateFromStores];
+  const memo = react.useMemo(() => stateFromStores.reduce((arr, item) => {
+    let code;
+    let type;
+    const iter = item.codedLinks[Symbol.iterator]();
+    const nextResult = iter.next();
+    while (iter !== undefined) {
+      ({ type, code } = nextResult);
+      let tmp3 = stateFromStores;
+      let tmp4 = closure_1_2;
+      if (type === stateFromStores(closure_1_2[10]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
+        let tmp3Result = tmp3(tmp4[11]);
+        let result = tmp3Result.parseStorefrontCodedLink(code);
+        let tmp8 = result;
+        let tmp9 = null != result;
+        if (tmp9) {
+          tmp9 = 1 === tmp8.skuIds.length;
+        }
+        if (tmp9) {
+          arr = arr.push(tmp8.skuIds[0]);
+        }
+      }
+      continue;
+    }
+    return arr;
+  }, []), items);
+  const items1 = [SKUStore];
+  const items2 = [memo];
+  const obj = require("get initialized");
+  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
+    const f126159 = (applicationId) => applicationId.applicationId;
+    const mapped = memo.map((item) => closure_1_5.get(item));
+    const found = mapped.filter(GlobalUtils.isNotNullish);
+    const items = [...new Set(found.map(f126159))];
+    new Set(found.map(f126159));
+    return items;
+  }, items2);
+  let tmp3 = memo(7324)(stateFromStoresArray);
+}

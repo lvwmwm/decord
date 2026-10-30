@@ -1,74 +1,21 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11964
+// Function ID: 11965
 // Name: useDeafStates
-// Dependencies: [502, 2012, 5668, 558, 576, 504, 2]
-// Exports: getDeafStates
+// Dependencies: [502, 2007, 5674, 504, 2]
+// Exports: default, getDeafStates
 
-// Module 11771 (useDeafStates)
+// Module 11964 (useDeafStates)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeafStates(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [VoiceStateStore, MediaEngineStore, AuthenticationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let flag;
-      const tmp = VoiceStateStore;
-      if (VoiceStateStore !== undefined) {
-        if (MediaEngineStore !== undefined) {
-          if (AuthenticationStore !== undefined) {
-            let voiceState = null;
-            if (null != closure_0) {
-              const getVoiceState = tmp.getVoiceState;
-              const guildId = obj.getGuildId();
-              voiceState = getVoiceState(guildId, obj3.getId());
-            }
-            const obj4 = { selfDeaf: MediaEngineStore.isSelfDeaf(), deaf: flag };
-            flag = undefined;
-            if (voiceState != null) {
-              flag = voiceState.deaf;
-            }
-            if (flag == null) {
-              flag = false;
-            }
-            return obj4;
-          }
-        }
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStoresObject(first, tmp8, tmp9);
-}) : (function useDeafStates(arg0) {
+const result = size.fileFinishedImporting("modules/video_calls/useDeafStates.tsx");
+
+export default function useDeafStates(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -99,19 +46,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDeafSta
       }
     }
   }, items1);
-});
-function getDeafStates(channel, VoiceStateStore, MediaEngineStore, AuthenticationStore) {
+};
+export function getDeafStates(channel, arg1, arg2, callback3) {
   let flag;
-  let tmp = VoiceStateStore;
-  if (VoiceStateStore === undefined) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
     tmp = VoiceStateStore;
   }
-  let obj = MediaEngineStore;
-  if (MediaEngineStore === undefined) {
+  let obj = arg2;
+  if (arg2 === undefined) {
     obj = MediaEngineStore;
   }
-  let obj2 = AuthenticationStore;
-  if (AuthenticationStore === undefined) {
+  let obj2 = callback3;
+  if (callback3 === undefined) {
     obj2 = AuthenticationStore;
   }
   let voiceState = null;
@@ -130,7 +77,3 @@ function getDeafStates(channel, VoiceStateStore, MediaEngineStore, Authenticatio
   }
   return obj3;
 }
-const result = size.fileFinishedImporting("modules/video_calls/useDeafStates.tsx");
-
-export default tmp2;
-export { getDeafStates };

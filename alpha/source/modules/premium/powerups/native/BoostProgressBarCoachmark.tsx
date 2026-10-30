@@ -1,19 +1,18 @@
-// Module ID: 18110
-// Function ID: 18111
+// Module ID: 18171
+// Function ID: 18172
 // Name: BoostProgressBarCoachmark
-// Dependencies: [19, 17, 4854, 21, 5005, 558, 576, 9042, 1125, 2568, 5136, 9906, 2]
+// Dependencies: [19, 17, 4855, 21, 5009, 9055, 1114, 2569, 5142, 9933, 2]
+// Exports: default
 
-// Module 18110 (BoostProgressBarCoachmark)
+// Module 18171 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1125 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import BoostThisServerRive from "BoostThisServerRive" /* 5136 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+import intl4 from "intl" /* 1114 */;
+import _modDef2569 from "module_2569" /* 2569 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -22,96 +21,9 @@ const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
 let closure_7 = createStyles.createStyles({ riveContainer: { width: 120, height: 80, alignSelf: "center" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgressBarCoachmark(guild) {
-  let riveContainer;
-  let tmp5;
-  let obj = guild(576);
-  const cResult = obj.c(14);
-  guild = guild.guild;
-  const markAsDismissed = guild.markAsDismissed;
-  const targetRef = guild.targetRef;
-  const tmp4 = closure_7();
-  dependencyMap = tmp4;
-  if (cResult[0] !== markAsDismissed) {
-    const fn = function c() {
-      markAsDismissed(ContentDismissActionType.USER_DISMISS);
-    };
-    cResult[0] = markAsDismissed;
-    cResult[1] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === guild.id) {
-    let tmp6;
-    let tmp9;
-    let tmp8;
-    let tmp13;
-    let tmp14;
-    if (cResult[3] === markAsDismissed) {
-      tmp6 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(markAsDismissed(2568).uwV2dH);
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(markAsDismissed(2568).MIwlcR);
-      cResult[5] = stringResult;
-      cResult[6] = stringResult1;
-      tmp9 = stringResult1;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[5];
-      tmp9 = cResult[6];
-    }
-    if (cResult[7] !== tmp4.riveContainer) {
-      const fn3 = function _() {
-        return <View style={riveContainer.riveContainer}>{jsx(BoostThisServerRive.BoostThisServerRive, { stateMachine: "State Machine 1" })}</View>;
-      };
-      cResult[7] = tmp4.riveContainer;
-      cResult[8] = fn3;
-      tmp13 = fn3;
-    } else {
-      tmp13 = cResult[8];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1125).intl;
-      const stringResult2 = intl3.string(guild(1125).t["0CJWP2"]);
-      cResult[9] = stringResult2;
-      tmp14 = stringResult2;
-    } else {
-      tmp14 = cResult[9];
-    }
-    if (cResult[10] === tmp6) {
-      if (cResult[11] === tmp5) {
-        let tmp16;
-        if (cResult[12] === tmp13) {
-          tmp16 = cResult[13];
-        }
-        const tmpResult = guild(9906);
-        const coachmark = tmpResult.useCoachmark(targetRef, tmp16);
-        return null;
-      }
-    }
-    const obj2 = { title: tmp8, description: tmp9, visible: true, position: "bottom", offsetY: 8, onDismiss: tmp5, renderImgComponent: tmp13, buttonLabel: tmp14, buttonVariant: "primary", onButtonPress: tmp6 };
-    cResult[10] = tmp6;
-    cResult[11] = tmp5;
-    cResult[12] = tmp13;
-    cResult[13] = obj2;
-    tmp16 = obj2;
-  }
-  const fn2 = function p() {
-    markAsDismissed(ContentDismissActionType.TAKE_ACTION);
-    const obj = GuildSettingsActionCreatorsDefault;
-    obj.saveGuild(guild.id, { premiumProgressBarEnabled: true });
-  };
-  cResult[2] = guild.id;
-  cResult[3] = markAsDismissed;
-  cResult[4] = fn2;
-  tmp6 = fn2;
-}) : (function BoostProgressBarCoachmark(guild) {
+const result = size.fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
+
+export default function BoostProgressBarCoachmark(guild) {
   let closure_2;
   guild = guild.guild;
   const markAsDismissed = guild.markAsDismissed;
@@ -136,14 +48,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     let intl3;
     let riveContainer;
     const obj = {
-      title: intl.string(_modDef2568.uwV2dH),
-      description: intl2.string(_modDef2568.MIwlcR),
+      title: intl.string(_modDef2569.uwV2dH),
+      description: intl2.string(_modDef2569.MIwlcR),
       visible: true,
       position: "bottom",
       offsetY: 8,
       onDismiss,
       renderImgComponent() {
-        return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[10]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
+        return <callback1 style={riveContainer.riveContainer}>{jsx(guild(riveContainer[8]).BoostThisServerRive, { stateMachine: "State Machine 1" })}</callback1>;
       },
       buttonLabel: intl3.string(intl4.t["0CJWP2"]),
       buttonVariant: "primary",
@@ -154,10 +66,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BoostProgr
     intl3 = intl4.intl;
     return obj;
   }, items2);
-  let obj = guild(9906);
+  let obj = guild(9933);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/BoostProgressBarCoachmark.tsx");
-
-export default tmp2;
+};

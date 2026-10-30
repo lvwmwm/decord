@@ -1,36 +1,21 @@
-// Module ID: 16361
-// Function ID: 16362
+// Module ID: 16414
+// Function ID: 16415
 // Name: UserProfilePremiumTryItOutMobileRefreshExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useTryItOutMobileRefreshConfig
 
-// Module 16361 (UserProfilePremiumTryItOutMobileRefreshExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16414 (UserProfilePremiumTryItOutMobileRefreshExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { name: "2026-09-user-profile-premium-try-it-out-mobile-refresh", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null, 2: { enabled: true, shuffleButtonLocation: "header" } };
 obj2[2] = { enabled: true, shuffleButtonLocation: "inline" };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTryItOutMobileRefreshConfig(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2);
-}) : (function useTryItOutMobileRefreshConfig(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj);
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfilePremiumTryItOutMobileRefreshExperiment.tsx");
 
-export const useTryItOutMobileRefreshConfig = tmp2;
+export function useTryItOutMobileRefreshConfig(DisplayNameStylesFlywheelMobileActionSheet) {
+  const obj = { location: DisplayNameStylesFlywheelMobileActionSheet };
+  return closure_0.useConfig(obj);
+}

@@ -1,17 +1,17 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11659
+// Function ID: 11660
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2043, 4857, 4908, 1389, 4856, 2024, 5666, 4926, 11459, 11502, 11501, 5667, 11512, 8919, 12984, 11488, 2]
+// Dependencies: [5, 2040, 4858, 4912, 1384, 4857, 2019, 5672, 4930, 11660, 11702, 11701, 5673, 11712, 8952, 13135, 11688, 2]
 // Exports: default
 
-// Module 11458 (handleJoinEmbeddedActivity)
-import Constants from "Constants" /* 2024 */;
+// Module 11659 (handleJoinEmbeddedActivity)
+import Constants from "Constants" /* 2019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserStore from "UserStore" /* 1389 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4856 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserStore from "UserStore" /* 1384 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4857 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

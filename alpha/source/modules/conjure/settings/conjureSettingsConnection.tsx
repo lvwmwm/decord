@@ -1,16 +1,16 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 10945
+// Function ID: 10946
 // Name: conjureSettingsConnection
-// Dependencies: [5, 10826, 584, 10852, 10906, 569, 10923, 2]
+// Dependencies: [5, 10849, 572, 10875, 10929, 559, 10946, 2]
 // Exports: requestProjectRebuild, retryFailedOverlayProjectSettings, submitProjectSettings
 
-// Module 10922 (conjureSettingsConnection)
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10852 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10906 */;
+// Module 10945 (conjureSettingsConnection)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 10875 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 10826 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 10849 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2, closure_5, closure_6, importDefault, rebuild_required, secrets, set, values;
@@ -42,7 +42,7 @@ let obj = function _fetchProjectSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ let obj = function _fetchProjectSettings() {
               obj.dispatch(obj11);
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp46) {
           c8 = 3;
@@ -168,7 +168,7 @@ obj = function _fetchWithRetry() {
       closure_1.retries = 0;
       const backoff = closure_1.backoff;
       backoff.succeed();
-      await "IconComponent";
+      await "HermesInternal";
       closure_1.inFlight = false;
       if (closure_1.retries >= 5) {
         const obj6 = { type: "CONJURE_SETTINGS_LOAD_STATE_SET", projectId, state: "failed" };
@@ -239,7 +239,7 @@ obj = function _submitProjectSettings() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -393,7 +393,7 @@ export function requestProjectRebuild(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -431,7 +431,7 @@ export function requestProjectRebuild(arg0) {
               c3 = 0;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           closure_2 = tmp8;

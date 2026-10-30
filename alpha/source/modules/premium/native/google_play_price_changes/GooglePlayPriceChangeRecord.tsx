@@ -1,10 +1,10 @@
-// Module ID: 2058
-// Function ID: 2059
+// Module ID: 2055
+// Function ID: 2056
 // Name: GooglePlayPriceChangeRecord
-// Dependencies: [1404, 2]
+// Dependencies: [1399, 2]
 
-// Module 2058 (GooglePlayPriceChangeRecord)
-import Record from "Record" /* 1404 */;
+// Module 2055 (GooglePlayPriceChangeRecord)
+import Record from "Record" /* 1399 */;
 import size from "module_2" /* 2 */;
 
 const GooglePlayPriceChangeMode = { PRICE_CHANGE_MODE_UNSPECIFIED: "PRICE_CHANGE_MODE_UNSPECIFIED", PRICE_DECREASE: "PRICE_DECREASE", PRICE_INCREASE: "PRICE_INCREASE", OPT_OUT_PRICE_INCREASE: "OPT_OUT_PRICE_INCREASE" };

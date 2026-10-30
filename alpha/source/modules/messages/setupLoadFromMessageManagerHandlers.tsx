@@ -1,13 +1,13 @@
-// Module ID: 19407
-// Function ID: 19408
+// Module ID: 19470
+// Function ID: 19471
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [6849, 4908, 1101, 2]
+// Dependencies: [6856, 4912, 1090, 2]
 // Exports: default
 
-// Module 19407 (setupLoadFromMessageManagerHandlers)
-import DurationsDefault from "Durations" /* 1101 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6849 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+// Module 19470 (setupLoadFromMessageManagerHandlers)
+import DurationsDefault from "Durations" /* 1090 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6856 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, set;

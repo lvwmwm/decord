@@ -1,22 +1,21 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9445
+// Function ID: 9446
 // Name: WishlistItemCardBase
-// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 5701, 9429, 5071, 8769, 5289, 9431, 1125, 1385, 9253, 8625, 2]
+// Dependencies: [19, 17, 21, 575, 5009, 5707, 9446, 5075, 8803, 5591, 9448, 1114, 1380, 9266, 8659, 9469, 2]
+// Exports: default
 
-// Module 9428 (WishlistItemCardBase)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import native from "native" /* 5071 */;
-import useToken from "useToken" /* 5289 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import useUserProfileColors from "useUserProfileColors" /* 8769 */;
-import useWishlistHooks from "useWishlistHooks" /* 9431 */;
+// Module 9445 (WishlistItemCardBase)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import native from "native" /* 5075 */;
+import useToken from "useToken" /* 5591 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import useUserProfileColors from "useUserProfileColors" /* 8803 */;
+import IndicatorDot from "IndicatorDot" /* 9469 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -29,64 +28,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
-({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
-let createStyles = createStyles_mod;
-let obj = { card: obj2, overlayContainer: obj3, previewWrap: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" }, dimmedPreview: { opacity: 0.5 }, sourceIcon: obj4, lockBadge: obj5 };
-obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_MUTED, justifyContent: "center", alignItems: "center", overflow: "hidden" };
-createStyles = createStyles.createStyles;
-obj3 = { justifyContent: "center", alignItems: "center", zIndex: 2, shadowOpacity: 0.5, shadowRadius: 6, elevation: 6 };
-const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj4 = { zIndex: 1 };
-const merged1 = Object.assign(rect);
-obj5 = { zIndex: 2, width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
-const merged2 = Object.assign(rect);
-let closure_8 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceIcon(toastText) {
-  let tmp5;
-  let tmp6;
-  let obj = toastText(576);
-  const cResult = obj.c(6);
-  const tmp = toastText;
-  toastText = toastText.toastText;
-  const tmp4 = closure_8();
-  if (cResult[0] !== toastText) {
-    function onPress() {
-      const obj = ToastActionCreatorsDefault;
-      const obj2 = { text: toastText };
-      obj.open("WISHLIST_SOURCE_ICON", obj2);
-    }
-    cResult[0] = toastText;
-    cResult[1] = onPress;
-    tmp5 = onPress;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-    const HeartIcon = tmp(9429).HeartIcon;
-    const tmp9 = closure_5(HeartIcon, obj2);
-    cResult[2] = tmp9;
-    tmp6 = tmp9;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] === tmp5) {
-    let tmp10;
-    if (cResult[4] === tmp4.sourceIcon) {
-      tmp10 = cResult[5];
-    }
-    return tmp10;
-  }
-  const obj3 = { style: tmp4.sourceIcon, onPress: tmp5, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp6 };
-  const tmp11 = closure_5(closure_3, obj3);
-  cResult[3] = tmp5;
-  cResult[4] = tmp4.sourceIcon;
-  cResult[5] = tmp11;
-  tmp10 = tmp11;
-}) : (function SourceIcon(toastText) {
+let obj6;
+function SourceIcon(toastText) {
   let HeartIcon;
   let obj2;
   toastText = toastText.toastText;
@@ -103,318 +46,42 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SourceI
     children: closure_5(HeartIcon, obj2)
   };
   obj2 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  HeartIcon = toastText(9429).HeartIcon;
+  HeartIcon = toastText(9446).HeartIcon;
   return closure_5(closure_3, obj);
-});
-let obj6 = { OWNED: "owned", LOCKED: "locked" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItemCardBase(source) {
+}
+({ Pressable: c3, View: closure_4, StyleSheet } = react_native);
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
+const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
+let createStyles = createStyles_mod;
+let obj = { card: obj2, overlayContainer: obj3, previewWrap: { width: "100%", height: "100%", justifyContent: "center", alignItems: "center" }, dimmedPreview: { opacity: 0.5 }, sourceIcon: obj4, newContentDot: obj5, lockBadge: obj6 };
+obj2 = { borderWidth: 1, borderRadius: nativeDefault.radii.lg, borderColor: nativeDefault.colors.BORDER_MUTED, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+createStyles = createStyles.createStyles;
+obj3 = { justifyContent: "center", alignItems: "center", zIndex: 2, shadowOpacity: 0.5, shadowRadius: 6, elevation: 6 };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj4 = { zIndex: 1 };
+const merged1 = Object.assign(rect);
+obj5 = { zIndex: 2 };
+const merged2 = Object.assign(rect);
+obj6 = { zIndex: 2, width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, alignItems: "center", justifyContent: "center" };
+const merged3 = Object.assign(rect);
+let closure_8 = createStyles(obj);
+let obj7 = { OWNED: "owned", LOCKED: "locked" };
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/wishlists/native/WishlistItemCardBase.tsx");
+
+export default function WishlistItemCardBase(arg0) {
   let CheckmarkLargeBoldIcon;
   let LockIcon;
   let accessibilityHidden;
   let accessibilityLabel;
-  let items;
+  let isNew;
   let obj11;
-  let obj13;
+  let obj5;
+  let obj9;
   let onPress;
   let overlay;
   let primaryColor;
   let recipientName;
-  let renderPreview;
-  let secondaryColor;
-  let theme;
-  const obj = react2;
-  const cResult = obj.c(54);
-  ({ onPress, accessibilityLabel, renderPreview, size, overlay, accessibilityHidden, recipientName } = source);
-  let num = 170;
-  source = source.source;
-  if (undefined !== size) {
-    num = size;
-  }
-  const tmp4 = closure_8();
-  const tmpResult = native;
-  const themeContext = tmpResult.useThemeContext();
-  ({ theme, primaryColor, secondaryColor } = themeContext);
-  if (cResult[0] === primaryColor) {
-    if (cResult[1] === secondaryColor) {
-      let tmp6;
-      let tmp10;
-      let tmp11;
-      if (cResult[2] === theme) {
-        tmp6 = cResult[3];
-      }
-      const tmpResult3 = useUserProfileColors;
-      const containerBackground = tmpResult3.useUserProfileColors(tmp6).containerBackground;
-      const tmpResult4 = useToken;
-      let token = tmpResult4.useToken(nativeDefault.colors.BG_SURFACE_RAISED);
-      if (null != primaryColor) {
-        token = containerBackground;
-      }
-      if (cResult[4] !== token) {
-        const obj2 = { backgroundColor: token };
-        cResult[4] = token;
-        cResult[5] = obj2;
-        tmp10 = obj2;
-      } else {
-        tmp10 = cResult[5];
-      }
-      if (cResult[6] !== num) {
-        let obj3;
-        if (typeof num === "object") {
-          const size1 = { width: null, height: null };
-          ({ width: obj7.width, height: obj7.height } = num);
-          obj3 = size1;
-        } else {
-          obj3 = { width: num, aspectRatio: 1 };
-        }
-        cResult[6] = num;
-        cResult[7] = obj3;
-        tmp11 = obj3;
-      } else {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp4.card) {
-        if (cResult[9] === tmp10) {
-          let tmp12;
-          let stringResult;
-          if (cResult[10] === tmp11) {
-            tmp12 = cResult[11];
-          }
-          const tmp13 = source === useWishlistHooks.WishlistItemSource.WISHLIST;
-          if (cResult[12] === accessibilityLabel) {
-            if (cResult[13] === tmp13) {
-              if (cResult[14] === overlay) {
-                let obj9;
-                let tmp14;
-                if (cResult[15] === recipientName) {
-                  obj9 = cResult[16];
-                  tmp14 = cResult[17];
-                }
-                const joined = obj9.join(", ");
-                if (cResult[18] === tmp4.previewWrap) {
-                  let tmp23;
-                  let tmp24;
-                  if (cResult[19] === (overlay === obj6.OWNED && tmp4.dimmedPreview)) {
-                    tmp23 = cResult[20];
-                  }
-                  if (cResult[21] !== renderPreview) {
-                    const renderPreviewResult = renderPreview();
-                    cResult[21] = renderPreview;
-                    cResult[22] = renderPreviewResult;
-                    tmp24 = renderPreviewResult;
-                  } else {
-                    tmp24 = cResult[22];
-                  }
-                  if (cResult[23] === tmp23) {
-                    let tmp26;
-                    if (cResult[24] === tmp24) {
-                      tmp26 = cResult[25];
-                    }
-                    if (cResult[26] === overlay) {
-                      let tmp30;
-                      if (cResult[27] === tmp4.overlayContainer) {
-                        tmp30 = cResult[28];
-                      }
-                      if (cResult[29] === overlay) {
-                        let tmp34;
-                        if (cResult[30] === tmp4.lockBadge) {
-                          tmp34 = cResult[31];
-                        }
-                        if (cResult[32] === tmp13) {
-                          let tmp38;
-                          if (cResult[33] === tmp14) {
-                            tmp38 = cResult[34];
-                          }
-                          if (cResult[35] === tmp26) {
-                            if (cResult[36] === tmp30) {
-                              if (cResult[37] === tmp34) {
-                                let tmp42;
-                                if (cResult[38] === tmp38) {
-                                  tmp42 = cResult[39];
-                                }
-                                if (null == onPress) {
-                                  let tmp52;
-                                  if ("" !== joined) {
-                                    tmp52 = joined;
-                                  }
-                                  let str4 = "auto";
-                                  if (accessibilityHidden) {
-                                    str4 = "no-hide-descendants";
-                                  }
-                                  if (cResult[40] === accessibilityHidden) {
-                                    if (cResult[41] === tmp12) {
-                                      if (cResult[42] === tmp42) {
-                                        if (cResult[43] === ("" !== joined || undefined)) {
-                                          if (cResult[44] === tmp52) {
-                                            let tmp53;
-                                            if (cResult[45] === str4) {
-                                              tmp53 = cResult[46];
-                                            }
-                                            return tmp53;
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                  const obj4 = { style: tmp12, accessible: "" !== joined || undefined, accessibilityLabel: tmp52, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str4, children: tmp42 };
-                                  const tmp56 = hasOwnProperty(React3, obj4);
-                                  cResult[40] = accessibilityHidden;
-                                  cResult[41] = tmp12;
-                                  cResult[42] = tmp42;
-                                  cResult[43] = "" !== joined || undefined;
-                                  cResult[44] = tmp52;
-                                  cResult[45] = str4;
-                                  cResult[46] = tmp56;
-                                  tmp53 = tmp56;
-                                } else {
-                                  let str2 = "auto";
-                                  if (accessibilityHidden) {
-                                    str2 = "no-hide-descendants";
-                                  }
-                                  if (cResult[47] === accessibilityHidden) {
-                                    if (cResult[48] === tmp12) {
-                                      if (cResult[49] === joined) {
-                                        if (cResult[50] === tmp42) {
-                                          if (cResult[51] === onPress) {
-                                            let tmp46;
-                                            if (cResult[52] === str2) {
-                                              tmp46 = cResult[53];
-                                            }
-                                            return tmp46;
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                  const obj5 = { accessibilityRole: "button", accessibilityLabel: joined, style: tmp12, onPress, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str2, children: tmp42 };
-                                  const tmp49 = hasOwnProperty(_false, obj5);
-                                  cResult[47] = accessibilityHidden;
-                                  cResult[48] = tmp12;
-                                  cResult[49] = joined;
-                                  cResult[50] = tmp42;
-                                  cResult[51] = onPress;
-                                  cResult[52] = str2;
-                                  cResult[53] = tmp49;
-                                  tmp46 = tmp49;
-                                }
-                              }
-                            }
-                          }
-                          obj6 = { children: items };
-                          items = [tmp26, tmp30, tmp34, tmp38];
-                          const tmp45 = metroImportDefault(metroRequire, obj6);
-                          cResult[35] = tmp26;
-                          cResult[36] = tmp30;
-                          cResult[37] = tmp34;
-                          cResult[38] = tmp38;
-                          cResult[39] = tmp45;
-                          tmp42 = tmp45;
-                        }
-                        let tmp39 = tmp13;
-                        if (tmp39) {
-                          const obj8 = { toastText: tmp14 };
-                          tmp39 = hasOwnProperty(closure_9, obj8);
-                        }
-                        cResult[32] = tmp13;
-                        cResult[33] = tmp14;
-                        cResult[34] = tmp39;
-                        tmp38 = tmp39;
-                      }
-                      let tmp35 = overlay === tmp21.LOCKED;
-                      if (tmp35) {
-                        const obj10 = { style: tmp4.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj11) };
-                        obj11 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-                        LockIcon = tmp(8625).LockIcon;
-                        tmp35 = hasOwnProperty(React3, obj10);
-                      }
-                      cResult[29] = overlay;
-                      cResult[30] = tmp4.lockBadge;
-                      cResult[31] = tmp35;
-                      tmp34 = tmp35;
-                    }
-                    let tmp31 = overlay === tmp21.OWNED;
-                    if (tmp31) {
-                      const obj12 = { style: tmp4.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj13) };
-                      obj13 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-                      CheckmarkLargeBoldIcon = tmp(9253).CheckmarkLargeBoldIcon;
-                      tmp31 = hasOwnProperty(React3, obj12);
-                    }
-                    cResult[26] = overlay;
-                    cResult[27] = tmp4.overlayContainer;
-                    cResult[28] = tmp31;
-                    tmp30 = tmp31;
-                  }
-                  const obj14 = { style: tmp23, "aria-hidden": true, children: tmp24 };
-                  const tmp29 = hasOwnProperty(React3, obj14);
-                  cResult[23] = tmp23;
-                  cResult[24] = tmp24;
-                  cResult[25] = tmp29;
-                  tmp26 = tmp29;
-                }
-                const items1 = [tmp4.previewWrap, overlay === obj6.OWNED && tmp4.dimmedPreview];
-                cResult[18] = tmp4.previewWrap;
-                cResult[19] = overlay === obj6.OWNED && tmp4.dimmedPreview;
-                cResult[20] = items1;
-                tmp23 = items1;
-              }
-            }
-          }
-          const intl = tmp(1125).intl;
-          const obj15 = { username: recipientName };
-          const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, obj15);
-          const items2 = [accessibilityLabel, , ];
-          if (obj6.OWNED === overlay) {
-            const intl3 = tmp(1125).intl;
-            stringResult = intl3.string(tmp(1125).t["6cfuDj"]);
-          } else {
-            stringResult = null;
-            if (tmp16.LOCKED === overlay) {
-              const intl2 = tmp(1125).intl;
-              stringResult = intl2.string(tmp(1125).t.wu4gyV);
-            }
-          }
-          items2[1] = stringResult;
-          let tmp18 = null;
-          if (tmp13) {
-            tmp18 = formatToPlainStringResult;
-          }
-          items2[2] = tmp18;
-          const found = items2.filter(tmp(1385).isNotNullish);
-          cResult[12] = accessibilityLabel;
-          cResult[13] = tmp13;
-          cResult[14] = overlay;
-          cResult[15] = recipientName;
-          cResult[16] = found;
-          cResult[17] = formatToPlainStringResult;
-          tmp14 = formatToPlainStringResult;
-          obj9 = found;
-        }
-      }
-      const items3 = [tmp4.card, tmp10, tmp11];
-      cResult[8] = tmp4.card;
-      cResult[9] = tmp10;
-      cResult[10] = tmp11;
-      cResult[11] = items3;
-      tmp12 = items3;
-    }
-  }
-  const obj16 = { theme, primaryColor, secondaryColor };
-  cResult[0] = primaryColor;
-  cResult[1] = secondaryColor;
-  cResult[2] = theme;
-  cResult[3] = obj16;
-  tmp6 = obj16;
-}) : (function WishlistItemCardBase(recipientName) {
-  let CheckmarkLargeBoldIcon;
-  let LockIcon;
-  let accessibilityHidden;
-  let accessibilityLabel;
-  let obj10;
-  let obj5;
-  let obj8;
-  let onPress;
-  let overlay;
-  let primaryColor;
   let renderPreview;
   let secondaryColor;
   let source;
@@ -422,14 +89,16 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
   let str3;
   let stringResult;
   let theme;
-  let tmp23;
-  ({ onPress, size } = recipientName);
-  ({ accessibilityLabel, renderPreview, source } = recipientName);
+  let tmp24;
+  ({ onPress, size } = arg0);
+  ({ accessibilityLabel, renderPreview, source } = arg0);
   if (size === undefined) {
     size = 170;
   }
-  ({ overlay, accessibilityHidden } = recipientName);
-  recipientName = recipientName.recipientName;
+  ({ overlay, accessibilityHidden, isNew, recipientName } = arg0);
+  if (isNew === undefined) {
+    isNew = false;
+  }
   const tmp = closure_8();
   const obj = native;
   const themeContext = obj.useThemeContext();
@@ -450,86 +119,93 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function WishlistItem
     obj5 = { width: size, aspectRatio: 1 };
   }
   items[2] = obj5;
-  const WISHLIST = tmp2(9431).WishlistItemSource.WISHLIST;
-  const intl = tmp2(1125).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(intl4.t.p3RmJF, { username: recipientName });
+  const WISHLIST = tmp2(9448).WishlistItemSource.WISHLIST;
+  const intl = tmp2(1114).intl;
+  const formatToPlainStringResult = intl.formatToPlainString(intl5.t.p3RmJF, { username: recipientName });
   const items1 = [accessibilityLabel, , ];
-  if (obj6.OWNED === overlay) {
-    const intl3 = tmp2(1125).intl;
-    stringResult = intl3.string(tmp2(1125).t["6cfuDj"]);
+  if (obj7.OWNED === overlay) {
+    const intl3 = tmp2(1114).intl;
+    stringResult = intl3.string(tmp2(1114).t["6cfuDj"]);
   } else {
     stringResult = null;
-    if (obj6.LOCKED === overlay) {
-      const intl2 = tmp2(1125).intl;
-      stringResult = intl2.string(tmp2(1125).t.wu4gyV);
+    if (obj7.LOCKED === overlay) {
+      const intl2 = tmp2(1114).intl;
+      stringResult = intl2.string(tmp2(1114).t.wu4gyV);
     }
   }
-  let tmp15Result4 = source === WISHLIST;
+  let tmp16Result4 = source === WISHLIST;
   items1[1] = stringResult;
   let tmp11 = null;
-  if (tmp15Result4) {
+  if (tmp16Result4) {
     tmp11 = formatToPlainStringResult;
   }
   items1[2] = tmp11;
-  const found = items1.filter(tmp2(1385).isNotNullish);
+  const found = items1.filter(tmp2(1380).isNotNullish);
   const joined = found.join(", ");
+  let formatToPlainStringResult1 = joined;
+  if (isNew) {
+    const intl4 = tmp2(1114).intl;
+    const obj6 = { label: joined };
+    formatToPlainStringResult1 = intl4.formatToPlainString(tmp2(1114).t.s9RZ1r, obj6);
+  }
   const items2 = [tmp.previewWrap, ];
   let dimmedPreview = overlay === tmp8.OWNED;
-  const tmp13 = metroImportDefault;
-  const tmp14 = metroRequire;
+  const tmp14 = metroImportDefault;
+  const tmp15 = metroRequire;
   if (dimmedPreview) {
     dimmedPreview = tmp.dimmedPreview;
   }
-  obj6 = { style: items2, "aria-hidden": true, children: renderPreview() };
+  obj7 = { style: items2, "aria-hidden": true, children: renderPreview() };
   items2[1] = dimmedPreview;
-  const items3 = [hasOwnProperty(React3, obj6), , , ];
-  let tmp15Result = overlay === tmp8.OWNED;
-  if (tmp15Result) {
-    const obj7 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj8) };
-    obj8 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
-    CheckmarkLargeBoldIcon = tmp2(9253).CheckmarkLargeBoldIcon;
-    tmp15Result = tmp15(tmp16, obj7);
+  const items3 = [hasOwnProperty(React3, obj7), , , , ];
+  let tmp16Result = overlay === tmp8.OWNED;
+  if (tmp16Result) {
+    const obj8 = { style: tmp.overlayContainer, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(CheckmarkLargeBoldIcon, obj9) };
+    obj9 = { color: nativeDefault.colors.WHITE, size: "custom", style: { width: 40, height: 40 } };
+    CheckmarkLargeBoldIcon = tmp2(9266).CheckmarkLargeBoldIcon;
+    tmp16Result = tmp16(tmp17, obj8);
   }
-  items3[1] = tmp15Result;
-  let tmp15Result3 = overlay === tmp8.LOCKED;
-  if (tmp15Result3) {
-    const obj9 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj10) };
-    obj10 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
-    LockIcon = tmp2(8625).LockIcon;
-    tmp15Result3 = tmp15(tmp16, obj9);
+  items3[1] = tmp16Result;
+  let tmp16Result3 = overlay === tmp8.LOCKED;
+  if (tmp16Result3) {
+    const obj10 = { style: tmp.lockBadge, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(LockIcon, obj11) };
+    obj11 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, size: "custom", style: { width: 18, height: 18 } };
+    LockIcon = tmp2(8659).LockIcon;
+    tmp16Result3 = tmp16(tmp17, obj10);
   }
-  items3[2] = tmp15Result3;
-  if (tmp15Result4) {
-    const obj11 = { toastText: formatToPlainStringResult };
-    tmp15Result4 = tmp15(closure_9, obj11);
+  items3[2] = tmp16Result3;
+  if (tmp16Result4) {
+    const obj12 = { toastText: formatToPlainStringResult };
+    tmp16Result4 = tmp16(SourceIcon, obj12);
   }
-  items3[3] = tmp15Result4;
-  const tmp13Result = tmp13(tmp14, { children: items3 });
+  items3[3] = tmp16Result4;
+  if (isNew) {
+    const obj13 = { style: tmp.newContentDot, pointerEvents: "none", children: hasOwnProperty(IndicatorDot.IndicatorDot, {}) };
+    isNew = tmp16(tmp17, obj13);
+  }
+  items3[4] = isNew;
+  const tmp14Result = tmp14(tmp15, { children: items3 });
   if (null == onPress) {
-    const obj12 = { style: items, accessible: "" !== joined || undefined, accessibilityLabel: tmp23, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str3, children: tmp13Result };
-    tmp23 = undefined;
-    if ("" !== joined) {
-      tmp23 = joined;
+    const obj14 = { style: items, accessible: "" !== formatToPlainStringResult1 || undefined, accessibilityLabel: tmp24, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str3, children: tmp14Result };
+    tmp24 = undefined;
+    if ("" !== formatToPlainStringResult1) {
+      tmp24 = formatToPlainStringResult1;
     }
     str3 = "auto";
     if (accessibilityHidden) {
       str3 = "no-hide-descendants";
     }
-    return hasOwnProperty(React3, obj12);
+    return hasOwnProperty(React3, obj14);
   } else {
-    const obj13 = { accessibilityRole: "button", accessibilityLabel: joined, style: items, onPress, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str, children: tmp13Result };
+    const obj15 = { accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult1, style: items, onPress, accessibilityElementsHidden: accessibilityHidden, importantForAccessibility: str, children: tmp14Result };
     str = "auto";
-    const tmp21 = _false;
+    const tmp22 = _false;
     if (accessibilityHidden) {
       str = "no-hide-descendants";
     }
-    return hasOwnProperty(tmp21, obj13);
+    return hasOwnProperty(tmp22, obj15);
   }
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/wishlists/native/WishlistItemCardBase.tsx");
-
-export default tmp9;
+};
 export const DEFAULT_ITEM_SIZE = 170;
 export const CARD_TOP_RIGHT_OVERLAY_POSITION = rect;
-export const WishlistItemCardOverlay = obj6;
+export const WishlistItemCardOverlay = obj7;

@@ -1,54 +1,17 @@
-// Module ID: 7134
-// Function ID: 7135
+// Module ID: 7142
+// Function ID: 7143
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [558, 7135, 576, 2]
-// Exports: useTypeConsolidationTextTransform
+// Dependencies: [7143, 2]
+// Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
 
-// Module 7134 (useTypeConsolidationTextTransform)
-import react from "react" /* 576 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7135 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 7142 (useTypeConsolidationTextTransform)
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7143 */;
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTypeConsolidationEyebrow(arg0, variant) {
-  let obj4;
-  const obj = react;
-  const cResult = obj.c(3);
-  const obj2 = ManaTypeConsolidationExperiment;
-  const manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment(arg0);
-  if (cResult[0] === variant) {
-    let tmp3;
-    if (cResult[1] === manaTypeConsolidationExperiment) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  if (manaTypeConsolidationExperiment) {
-    obj4 = { variant: "experimental/body-sm/medium", style };
-    const obj3 = { variant: "experimental/body-sm/medium", style };
-  } else {
-    obj4 = { variant, style: "a" };
-  }
-  cResult[0] = variant;
-  cResult[1] = manaTypeConsolidationExperiment;
-  cResult[2] = obj4;
-  tmp3 = obj4;
-}) : (function useTypeConsolidationEyebrow(arg0, variant) {
-  let obj3;
-  const obj = ManaTypeConsolidationExperiment;
-  if (obj.useManaTypeConsolidationExperiment(arg0)) {
-    obj3 = { variant: "experimental/body-sm/medium", style };
-    const obj2 = { variant: "experimental/body-sm/medium", style };
-  } else {
-    obj3 = { variant, style: "a" };
-  }
-  return obj3;
-});
-function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
+const result = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
+
+export function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
   let tmp;
   const obj = ManaTypeConsolidationExperiment;
   if (obj.useManaTypeConsolidationExperiment(AcceptGuildTemplate)) {
@@ -56,7 +19,14 @@ function useTypeConsolidationTextTransform(AcceptGuildTemplate) {
   }
   return tmp;
 }
-const result1 = size.fileFinishedImporting("modules/design/useTypeConsolidationTextTransform.tsx");
-
-export { useTypeConsolidationTextTransform };
-export const useTypeConsolidationEyebrow = tmp3;
+export function useTypeConsolidationEyebrow(BountiesScrollRecapFooter, variant) {
+  let obj3;
+  const obj = ManaTypeConsolidationExperiment;
+  if (obj.useManaTypeConsolidationExperiment(BountiesScrollRecapFooter)) {
+    obj3 = { variant: "experimental/body-sm/medium", style };
+    const obj2 = { variant: "experimental/body-sm/medium", style };
+  } else {
+    obj3 = { variant, style: "Array" };
+  }
+  return obj3;
+}

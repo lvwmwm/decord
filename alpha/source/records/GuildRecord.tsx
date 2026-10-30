@@ -1,16 +1,16 @@
-// Module ID: 4875
-// Function ID: 4876
+// Module ID: 4876
+// Function ID: 4877
 // Name: GuildRecord
-// Dependencies: [4872, 1084, 1415, 2031, 11, 4876, 2]
+// Dependencies: [4873, 1072, 1410, 2028, 11, 4877, 2]
 // Exports: getGuildAcronym, getGuildEveryoneRoleId, getGuildIconSource, getGuildIconURL, isGuildLurker, isGuildNSFW, isGuildOwner, isGuildOwnerWithRequiredMfaLevel, updateGameApplications, updateJoinedAt
 
-// Module 4875 (GuildRecord)
+// Module 4876 (GuildRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import StringUtils from "StringUtils" /* 2031 */;
-import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4876 */;
-import PlainRecord from "PlainRecord" /* 4872 */;
-import Constants from "Constants" /* 1084 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import StringUtils from "StringUtils" /* 2028 */;
+import ServerNSFWLevelExperiment from "ServerNSFWLevelExperiment" /* 4877 */;
+import PlainRecord from "PlainRecord" /* 4873 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -49,11 +49,10 @@ export function getGuildIconURL(id, size) {
   const obj2 = { id: id.id, size, icon: id.icon, canAnimate: flag, lossless: flag2 };
   return obj.getGuildIconURL(obj2);
 }
-export function getGuildIconSource(arg0, size, hasItem) {
+export function getGuildIconSource(arg0, size, flag) {
   let closure_0 = arg0;
   importDefault = size;
-  let flag = hasItem;
-  if (hasItem === undefined) {
+  if (flag === undefined) {
     flag = false;
   }
   let obj = AvatarUtilsDefault;

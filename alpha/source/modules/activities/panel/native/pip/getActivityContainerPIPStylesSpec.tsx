@@ -1,16 +1,15 @@
-// Module ID: 18985
-// Function ID: 18986
+// Module ID: 19079
+// Function ID: 19080
 // Name: getActivityContainerPIPStylesSpec
-// Dependencies: [2024, 5646, 12057, 2]
+// Dependencies: [5652, 2021, 12233, 2]
 // Exports: default
 
-// Module 18985 (getActivityContainerPIPStylesSpec)
-import Constants from "Constants" /* 2024 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5646 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12057 */;
+// Module 19079 (getActivityContainerPIPStylesSpec)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5652 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12233 */;
 import size from "module_2" /* 2 */;
 
-const OrientationLockState = Constants.OrientationLockState;
 const LANDSCAPE_ACTIVITY_ASPECT_RATIO = ActivityPanelConstants.LANDSCAPE_ACTIVITY_ASPECT_RATIO;
 const fn = function t(isLandscape) {
   let height;
@@ -25,9 +24,9 @@ const fn = function t(isLandscape) {
   ({ pipWidth, pipHeight, pipOrientationLockState } = isLandscape);
   isLandscape = isLandscape.isLandscape;
   if (pipOrientationLockState == null) {
-    pipOrientationLockState = OrientationLockState.UNLOCKED;
+    pipOrientationLockState = EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED;
   }
-  if (pipOrientationLockState === OrientationLockState.PORTRAIT) {
+  if (pipOrientationLockState === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT) {
     const result = pipWidth * LANDSCAPE_ACTIVITY_ASPECT_RATIO;
     marginTop = -1 * roundToNearestPixelDefault(result / 2);
     marginLeft = 0;
@@ -44,10 +43,10 @@ const fn = function t(isLandscape) {
   }
   return { width, height, shouldHorizontallyCenter, shouldVerticallyCenter, marginLeft, marginTop };
 };
-fn.__closure = { OrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault };
-fn.__workletHash = 7141745103186;
-fn.__initData = { code: "function getActivityContainerPipStylesSpec_getActivityContainerPIPStylesSpecTsx1({pipWidth:pipWidth,pipHeight:pipHeight,pipOrientationLockState:pipOrientationLockState,isLandscape:isLandscape}){const{OrientationLockState,LANDSCAPE_ACTIVITY_ASPECT_RATIO,roundToNearestPixel}=this.__closure;const nonNullPipOrientationLockState=pipOrientationLockState!==null&&pipOrientationLockState!==void 0?pipOrientationLockState:OrientationLockState.UNLOCKED;const shouldUsePortraitAspectRatio=nonNullPipOrientationLockState===OrientationLockState.PORTRAIT||nonNullPipOrientationLockState===OrientationLockState.UNLOCKED&&!isLandscape;let width=pipWidth;let height=pipHeight;let shouldHorizontallyCenter=false;let shouldVerticallyCenter=false;let marginLeft=0;let marginTop=0;if(shouldUsePortraitAspectRatio){width=pipWidth;height=width*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldVerticallyCenter=true;marginTop=roundToNearestPixel(height/2)*-1;}else{height=pipHeight;width=height*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldHorizontallyCenter=true;marginLeft=roundToNearestPixel(width/2)*-1;}return{width:width,height:height,shouldHorizontallyCenter:shouldHorizontallyCenter,shouldVerticallyCenter:shouldVerticallyCenter,marginLeft:marginLeft,marginTop:marginTop};}" };
-({ OrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault });
+fn.__closure = { EmbeddedActivityOrientationLockState: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault };
+fn.__workletHash = 5930488590770;
+fn.__initData = { code: "function getActivityContainerPipStylesSpec_getActivityContainerPIPStylesSpecTsx1({pipWidth:pipWidth,pipHeight:pipHeight,pipOrientationLockState:pipOrientationLockState,isLandscape:isLandscape}){const{EmbeddedActivityOrientationLockState,LANDSCAPE_ACTIVITY_ASPECT_RATIO,roundToNearestPixel}=this.__closure;const nonNullPipOrientationLockState=pipOrientationLockState!==null&&pipOrientationLockState!==void 0?pipOrientationLockState:EmbeddedActivityOrientationLockState.UNLOCKED;const shouldUsePortraitAspectRatio=nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.PORTRAIT||nonNullPipOrientationLockState===EmbeddedActivityOrientationLockState.UNLOCKED&&!isLandscape;let width=pipWidth;let height=pipHeight;let shouldHorizontallyCenter=false;let shouldVerticallyCenter=false;let marginLeft=0;let marginTop=0;if(shouldUsePortraitAspectRatio){width=pipWidth;height=width*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldVerticallyCenter=true;marginTop=roundToNearestPixel(height/2)*-1;}else{height=pipHeight;width=height*LANDSCAPE_ACTIVITY_ASPECT_RATIO;shouldHorizontallyCenter=true;marginLeft=roundToNearestPixel(width/2)*-1;}return{width:width,height:height,shouldHorizontallyCenter:shouldHorizontallyCenter,shouldVerticallyCenter:shouldVerticallyCenter,marginLeft:marginLeft,marginTop:marginTop};}" };
+({ EmbeddedActivityOrientationLockState: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState, LANDSCAPE_ACTIVITY_ASPECT_RATIO, roundToNearestPixel: roundToNearestPixelDefault });
 let result = size.fileFinishedImporting("modules/activities/panel/native/pip/getActivityContainerPIPStylesSpec.tsx");
 
 export default fn;

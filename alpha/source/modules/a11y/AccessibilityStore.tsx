@@ -1,21 +1,21 @@
-// Module ID: 5006
-// Function ID: 5007
+// Module ID: 5010
+// Function ID: 5011
 // Name: AccessibilityStore
-// Dependencies: [109, 5007, 1205, 1204, 1243, 1084, 5010, 5011, 4833, 504, 510, 5012, 584, 2]
+// Dependencies: [109, 5011, 1194, 1193, 1232, 1072, 5014, 5015, 4834, 504, 510, 5016, 572, 2]
 
-// Module 5006 (AccessibilityStore)
+// Module 5010 (AccessibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage7 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5011 */;
-import shared from "shared" /* 5012 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5015 */;
+import shared from "shared" /* 5016 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import GameModeStore from "GameModeStore" /* 5007 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1205 */;
-import ThemeStore from "ThemeStore" /* 1204 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import Constants from "Constants" /* 1084 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
+import GameModeStore from "GameModeStore" /* 5011 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1194 */;
+import ThemeStore from "ThemeStore" /* 1193 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import Constants from "Constants" /* 1072 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

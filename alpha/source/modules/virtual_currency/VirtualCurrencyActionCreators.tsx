@@ -1,16 +1,16 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9534
+// Function ID: 9535
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 6883, 1084, 3, 584, 1294, 6433, 9516, 1254, 2]
+// Dependencies: [5, 6890, 1072, 3, 572, 1283, 6440, 9535, 1243, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9515 (VirtualCurrencyActionCreators)
+// Module 9534 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 6883 */;
+import SKUStore from "SKUStore" /* 6890 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2, skuId;
@@ -42,7 +42,7 @@ let obj = function _fetchVirtualCurrencyBalance() {
     const obj7 = { type: "VIRTUAL_CURRENCY_BALANCE_FETCH_FAIL", error: billingError };
     const obj5 = closure_129_1(closure_129_2[4]);
     obj5.dispatch(obj7);
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     const balance = closure_0.body.balance;
     const obj9 = { type: "VIRTUAL_CURRENCY_BALANCE_FETCH_SUCCESS", balance };
     obj = closure_129_1(closure_129_2[4]);
@@ -75,7 +75,7 @@ obj = function _fetchVirtualCurrencyTotalRedeemed() {
     const obj7 = { type: "VIRTUAL_CURRENCY_TOTAL_REDEEMED_FETCH_FAIL", error: billingError };
     const obj5 = closure_129_1(closure_129_2[4]);
     obj5.dispatch(obj7);
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     const total_redeemed = closure_0.body.total_redeemed;
     const obj9 = { type: "VIRTUAL_CURRENCY_TOTAL_REDEEMED_FETCH_SUCCESS", totalRedeemed: total_redeemed };
     obj = closure_129_1(closure_129_2[4]);
@@ -104,7 +104,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -143,7 +143,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               billingError = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -205,7 +205,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               tmp62(billingError);
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;

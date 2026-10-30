@@ -1,18 +1,18 @@
-// Module ID: 19580
-// Function ID: 19581
+// Module ID: 19643
+// Function ID: 19644
 // Name: ExemptionActionSheet
-// Dependencies: [32, 19, 17, 21, 5005, 587, 558, 576, 7204, 6886, 5247, 6960, 1125, 8971, 7308, 7205, 7210, 5302, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 7211, 6893, 6968, 5267, 7315, 9001, 1114, 5253, 7212, 7217, 2]
+// Exports: default
 
-// Module 19580 (ExemptionActionSheet)
+// Module 19643 (ExemptionActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6886 */;
+import nativeDefault from "native" /* 575 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,169 +30,9 @@ obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptionActionSheet(getId) {
-  let getSearchText;
-  let initialSelected;
-  let items;
-  let listId;
-  let searchPlaceholder;
-  let title;
-  let tmp11;
-  let tmp4;
-  let obj = initialSelected(getSearchText[7]);
-  const cResult = obj.c(39);
-  ({ title, searchPlaceholder, listId, items, initialSelected } = getId);
-  getId = getId.getId;
-  getSearchText = getId.getSearchText;
-  const renderLabel = getId.renderLabel;
-  const renderIcon = getId.renderIcon;
-  const onSave = getId.onSave;
-  let tmp2 = closure_8();
-  let tmp3 = getId(getSearchText[8])();
-  if (cResult[0] !== initialSelected) {
-    class S {
-      constructor() {
-        set = new Set(initialSelected);
-        return set;
-      }
-    }
-    cResult[0] = initialSelected;
-    cResult[1] = S;
-    tmp4 = S;
-  } else {
-    class S {
-      constructor() {
-        set = new Set(initialSelected);
-        return set;
-      }
-    }
-  }
-  const tmp5 = renderLabel(renderIcon.useState(tmp4), 2);
-  const first = tmp5[0];
-  let closure_7 = tmp5[1];
-  let str = renderLabel(renderIcon.useState(""), 2)[0];
-  renderLabel(renderIcon.useState(""), 2);
-  if ("" !== str) {
-    class S {
-      constructor() {
-        set = new Set(initialSelected);
-        return set;
-      }
-    }
-    closure_8 = str.toLowerCase();
-    const found = items.filter((item) => {
-      const tmp = fuzzysearchDefault;
-      const str = getSearchText(item);
-      return tmp(closure_8, str.toLowerCase());
-    });
-    cResult[2] = getSearchText;
-    cResult[3] = items;
-    cResult[4] = str;
-    cResult[5] = found;
-  }
-  items = tmp8;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class M {
-      constructor(arg0) {
-        closure_0 = getId;
-        tmp = closure_7((items) => {
-          set = new Set(items);
-          const tmp = closure_0;
-          if (!set.delete(closure_0)) {
-            set.add(tmp);
-          }
-          return set;
-        });
-        return;
-      }
-    }
-    cResult[6] = M;
-    tmp11 = M;
-  } else {
-    class M {
-      constructor(arg0) {
-        closure_0 = getId;
-        tmp = closure_7((items) => {
-          set = new Set(items);
-          const tmp = closure_0;
-          if (!set.delete(closure_0)) {
-            set.add(tmp);
-          }
-          return set;
-        });
-        return;
-      }
-    }
-  }
-  M = tmp11;
-  if (cResult[7] === onSave) {
-    class M {
-      constructor(arg0) {
-        closure_0 = getId;
-        tmp = closure_7((items) => {
-          set = new Set(items);
-          const tmp = closure_0;
-          if (!set.delete(closure_0)) {
-            set.add(tmp);
-          }
-          return set;
-        });
-        return;
-      }
-    }
-    if (cResult[10] === getId) {
-      class M {
-        constructor(arg0) {
-          closure_0 = getId;
-          tmp = closure_7((items) => {
-            set = new Set(items);
-            const tmp = closure_0;
-            if (!set.delete(closure_0)) {
-              set.add(tmp);
-            }
-            return set;
-          });
-          return;
-        }
-      }
-    }
-    class V {
-      constructor(arg0, arg1) {
-        tmp = closure_9[arg1];
-        tmp2 = getId(tmp);
-        closure_0 = tmp2;
-        tmp3 = closure_6;
-        obj = { start: 0 === arg1, end: arg1 === closure_9.length - 1, icon: null, label: null, labelLineClamp: 1, checked: null, onPress: null };
-        tmp4 = undefined;
-        TableCheckboxRow = initialSelected(getSearchText[11]).TableCheckboxRow;
-        if (renderIcon != null) {
-          tmp4 = renderIcon(tmp);
-        }
-        obj.icon = tmp4;
-        obj.label = renderLabel(tmp);
-        obj.checked = closure_6.has(tmp2);
-        obj.onPress = function onPress() {
-          return M(closure_0);
-        };
-        return tmp3(TableCheckboxRow, obj, tmp2);
-      }
-    }
-    cResult[10] = getId;
-    cResult[11] = renderIcon;
-    cResult[12] = renderLabel;
-    cResult[13] = first;
-    cResult[14] = items;
-    cResult[15] = V;
-  }
-  function handleDone() {
-    const obj = ActionSheetActionCreatorsDefault;
-    obj.hideActionSheet();
-    onSave(first);
-  }
-  cResult[7] = onSave;
-  cResult[8] = first;
-  cResult[9] = handleDone;
-}) : (function ExemptionActionSheet(getSearchText) {
+const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptionActionSheet.tsx");
+
+export default function ExemptionActionSheet(getSearchText) {
   let ActionSheetHeaderPressableText;
   let BottomSheetTitleHeader;
   let getId;
@@ -267,7 +107,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptionAct
       }
     };
     tmp4 = undefined;
-    const TableCheckboxRow = items(getId[11]).TableCheckboxRow;
+    const TableCheckboxRow = items(getId[8]).TableCheckboxRow;
     const tmp3 = onSave;
     if (renderIcon != null) {
       tmp4 = renderIcon(tmp);
@@ -275,9 +115,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptionAct
     return tmp3(TableCheckboxRow, obj, tmp2);
   }, items2);
   let obj = { scrollable: true, startExpanded: true, header: onSave(BottomSheetTitleHeader, obj2), children: items3 };
-  BottomSheet = items(getId[17]).BottomSheet;
+  BottomSheet = items(getId[9]).BottomSheet;
   obj2 = { title, trailing: onSave(ActionSheetHeaderPressableText, obj3) };
-  BottomSheetTitleHeader = items(getId[14]).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = items(getId[10]).BottomSheetTitleHeader;
   obj3 = {
     label: intl.string(items(getId[12]).t.i4jeWR),
     onPress: function handleDone() {
@@ -286,16 +126,13 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExemptionAct
       onSave(first);
     }
   };
-  ActionSheetHeaderPressableText = items(getId[13]).ActionSheetHeaderPressableText;
+  ActionSheetHeaderPressableText = items(getId[11]).ActionSheetHeaderPressableText;
   intl = items(getId[12]).intl;
   items3 = [, ];
-  const obj4 = { style: tmp.search, children: onSave(items(getId[15]).SearchBar, { size: "md", onChange: tmp7, placeholder: searchPlaceholder }) };
+  const obj4 = { style: tmp.search, children: onSave(items(getId[14]).SearchBar, { size: "md", onChange: tmp7, placeholder: searchPlaceholder }) };
   items3[0] = onSave(renderIcon, obj4);
   const obj5 = { inActionSheet: true, keyboardShouldPersistTaps: "handled", style: tmp.list, listId, estimatedListSize: "windowSize", itemSize: tmp2, sections: items4, renderItem: callback1 };
   items4 = [memo.length];
   items3[1] = onSave(require("FastestList"), obj5);
   return first(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/guild_automod/native/components/ExemptionActionSheet.tsx");
-
-export default tmp4;
+};

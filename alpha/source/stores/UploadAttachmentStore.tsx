@@ -1,16 +1,16 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8200
+// Function ID: 8201
 // Name: UploadAttachmentStore
-// Dependencies: [7689, 1084, 5946, 1125, 12, 8198, 8207, 1264, 504, 584, 2]
+// Dependencies: [7694, 1072, 5953, 1114, 12, 8201, 8210, 1253, 504, 572, 2]
 
-// Module 8347 (UploadAttachmentStore)
+// Module 8200 (UploadAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import DraftStore from "DraftStore" /* 7689 */;
-import CloudUpload from "CloudUpload" /* 8198 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8207 */;
-import Constants from "Constants" /* 1084 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import DraftStore from "DraftStore" /* 7694 */;
+import CloudUpload from "CloudUpload" /* 8201 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8210 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

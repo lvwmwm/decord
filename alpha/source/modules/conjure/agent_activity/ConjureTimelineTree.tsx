@@ -1,12 +1,12 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12552
+// Function ID: 12553
 // Name: ConjureTimelineTree
-// Dependencies: [32, 3864, 1125, 2]
+// Dependencies: [32, 3865, 1114, 2]
 // Exports: currentStep, describeNode, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 12400 (ConjureTimelineTree)
-import intl2 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
+// Module 12552 (ConjureTimelineTree)
+import intl2 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -593,7 +593,7 @@ function isTurnWorkFrame(task_id) {
   }
   return tmp;
 }
-let obj = { healthcheck_failed: _modDef3864.iwOTgo, preview_ready: _modDef3864.okkgSB, working: _modDef3864.t8skVB, error: _modDef3864.avt0ax, error_service_unavailable: _modDef3864.yreXyD, error_rate_limited: _modDef3864.d8lNBq, error_timeout: _modDef3864.t1R7Rt };
+let obj = { healthcheck_failed: _modDef3865.iwOTgo, preview_ready: _modDef3865.okkgSB, working: _modDef3865.t8skVB, error: _modDef3865.avt0ax, error_service_unavailable: _modDef3865.yreXyD, error_rate_limited: _modDef3865.d8lNBq, error_timeout: _modDef3865.t1R7Rt };
 const weakMap = new WeakMap();
 const weakMap1 = new WeakMap();
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureTimelineTree.tsx");
@@ -611,14 +611,14 @@ export function describeNode(currentStepResult) {
   const intl = intl2.intl;
   const string = intl.string;
   if (t8skVB == null) {
-    t8skVB = _modDef3864.t8skVB;
+    t8skVB = _modDef3865.t8skVB;
   }
   return string(t8skVB);
 }
 export { buildTimelineTree };
-export function currentStep(productId) {
+export function currentStep(steps) {
   let tmp;
-  const iter = productId[Symbol.iterator]();
+  const iter = steps[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp5 = null == tmp;
@@ -751,18 +751,18 @@ export function turnSegments(steps, arg1) {
   }
   return items5;
 }
-export function turnLifecycle(arr, turnActive) {
+export function turnLifecycle(memo1, turnActive) {
   let index;
   let obj2;
   let obj5;
   turnActive = turnActive.turnActive;
-  const found = arr.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
+  const found = memo1.filter((hasWork) => hasWork.hasWork || hasWork.hasTodos);
   const atResult = found.at(-1);
   let index1;
   if (atResult != null) {
     index1 = atResult.index;
   }
-  const atResult1 = arr.at(-1);
+  const atResult1 = memo1.at(-1);
   if (atResult1 != null) {
     index = atResult1.index;
   }

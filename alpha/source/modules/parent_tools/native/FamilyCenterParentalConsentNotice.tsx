@@ -1,16 +1,16 @@
-// Module ID: 16669
-// Function ID: 16670
+// Module ID: 16722
+// Function ID: 16723
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5005, 587, 558, 576, 16661, 16662, 5698, 5271, 1125, 2536, 16670, 2]
+// Dependencies: [19, 21, 5009, 575, 16714, 16715, 5704, 5619, 16723, 1114, 2537, 2]
+// Exports: default
 
-// Module 16669 (FamilyCenterParentalConsentNotice)
+// Module 16722 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16670 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16723 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,93 +18,16 @@ let _require, importDefault;
 
 let obj2;
 const jsx = Fragment.jsx;
-let c5 = "https://support.discord.com/hc/articles/14155060633623";
 let obj = { container: obj2, link: { textDecorationLine: "underline" } };
 obj2 = { marginTop: nativeDefault.space.PX_16 };
-let closure_6 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalConsentNotice() {
-  let link;
-  let onPress;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  const tmp4 = closure_6();
-  _require = tmp4;
-  const obj2 = require("useIsParentalConsentBannerActive");
-  const isParentalConsentBannerActive = obj2.useIsParentalConsentBannerActive();
-  const obj3 = require("useParentalConsentWarning");
-  const parentalConsentWarning = obj3.useParentalConsentWarning();
-  let daysRemaining;
-  if (parentalConsentWarning != null) {
-    daysRemaining = parentalConsentWarning.daysRemaining;
-  }
-  if (daysRemaining == null) {
-    daysRemaining = null;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
-      const obj = first(dependencyMap[8]);
-      obj.openURL(closure_1_5);
-    };
-    cResult[0] = fn;
-    onPress = fn;
-  } else {
-    onPress = cResult[0];
-  }
-  if (isParentalConsentBannerActive) {
-    if (null != daysRemaining) {
-      if (daysRemaining >= 0) {
-        let tmp9;
-        let formatResult;
-        if (cResult[1] !== tmp4.link) {
-          function learnMoreHook(children, arg1) {
-            return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
-          }
-          cResult[1] = tmp4.link;
-          cResult[2] = learnMoreHook;
-          tmp9 = learnMoreHook;
-        } else {
-          tmp9 = cResult[2];
-        }
-        if (cResult[3] === daysRemaining) {
-          let tmp10;
-          if (cResult[4] === tmp9) {
-            tmp10 = cResult[5];
-          }
-          if (cResult[6] === tmp4.container) {
-            let tmp14;
-            if (cResult[7] === tmp10) {
-              tmp14 = cResult[8];
-            }
-            return tmp14;
-          }
-          const tmp17 = jsx(onPress(16670), { style: tmp4.container, text: tmp10 });
-          cResult[6] = tmp4.container;
-          cResult[7] = tmp10;
-          cResult[8] = tmp17;
-          tmp14 = tmp17;
-        }
-        if (0 === daysRemaining) {
-          const intl2 = tmp(1125).intl;
-          const obj5 = { learnMoreHook: tmp9 };
-          formatResult = intl2.format(onPress(2536).S5kmfO, obj5);
-        } else {
-          const intl = tmp(1125).intl;
-          const obj6 = { count: daysRemaining, learnMoreHook: tmp9 };
-          formatResult = intl.format(onPress(2536)["5jm+T3"], obj6);
-        }
-        cResult[3] = daysRemaining;
-        cResult[4] = tmp9;
-        cResult[5] = formatResult;
-        tmp10 = formatResult;
-      }
-    }
-  }
-  return null;
-}) : (function FamilyCenterParentalConsentNotice() {
+let closure_5 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
+
+export default function FamilyCenterParentalConsentNotice() {
   let formatResult;
   let link;
   let onPress;
-  const tmp = closure_6();
+  const tmp = closure_5();
   _require = tmp;
   let obj = require("useIsParentalConsentBannerActive");
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
@@ -118,8 +41,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     daysRemaining = null;
   }
   importDefault = react.useCallback(() => {
-    const obj = onPress(dependencyMap[8]);
-    obj.openURL(closure_1_5);
+    const obj = onPress(dependencyMap[6]);
+    obj.openURL("https://support.discord.com/hc/articles/14155060633623");
   }, []);
   if (isParentalConsentBannerActive) {
     if (null != daysRemaining) {
@@ -131,20 +54,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
         const tmp10 = FamilyCenterInlineWarningNoticeDefault;
         const tmp8 = jsx;
         if (0 === daysRemaining) {
-          const intl2 = tmp2(1125).intl;
+          const intl2 = tmp2(1114).intl;
           const obj4 = { learnMoreHook };
-          formatResult = intl2.format(tmp9(2536).S5kmfO, obj4);
+          formatResult = intl2.format(tmp9(2537).S5kmfO, obj4);
         } else {
-          const intl = tmp2(1125).intl;
+          const intl = tmp2(1114).intl;
           const obj5 = { count: daysRemaining, learnMoreHook };
-          formatResult = intl.format(tmp9(2536)["5jm+T3"], obj5);
+          formatResult = intl.format(tmp9(2537)["5jm+T3"], obj5);
         }
         return tmp8(tmp10, obj3);
       }
     }
   }
   return null;
-});
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalConsentNotice.tsx");
-
-export default tmp2;
+};

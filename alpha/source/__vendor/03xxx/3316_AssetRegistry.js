@@ -1,0 +1,10 @@
+// Module ID: 3316
+// Function ID: 3317
+// Name: AssetRegistry
+// Dependencies: [1120]
+
+// Module 3316 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1120 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/premium_group", scales: [1], hash: "a827ca98424181d0e78ce7a2bceb4125", name: "PremiumGroup.compiled.messages", type: "jsona" });

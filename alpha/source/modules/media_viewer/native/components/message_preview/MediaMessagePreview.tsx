@@ -1,31 +1,32 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14741
+// Function ID: 14742
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 7444, 6850, 4857, 6049, 8887, 1084, 21, 8188, 8668, 5005, 558, 576, 8824, 9838, 587, 504, 11088, 1125, 11, 10074, 5745, 14709, 10140, 9847, 8340, 10134, 5334, 13127, 2]
+// Dependencies: [32, 19, 17, 7452, 6857, 4858, 6056, 8921, 1072, 21, 8369, 8702, 5009, 8858, 9864, 5090, 575, 14742, 504, 11126, 1114, 11, 14743, 10167, 9873, 8397, 10161, 5298, 13277, 10101, 5751, 2]
+// Exports: default
 
-// Module 14708 (MediaMessagePreview)
+// Module 14741 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
-import RowGeneratorDefault from "RowGenerator" /* 8188 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8668 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 9847 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 10074 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10140 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 14709 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import RowGeneratorDefault from "RowGenerator" /* 8369 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8702 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 9873 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 10101 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10167 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 14743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7444 */;
-import SearchMessageStore from "SearchMessageStore" /* 6850 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8887 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7452 */;
+import SearchMessageStore from "SearchMessageStore" /* 6857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let rowGenerator;
@@ -35,129 +36,7 @@ let closure_15;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-let react = react_mod;
-({ findNodeHandle: hasOwnProperty, ScrollView: metroRequire } = react_native);
-let ThemeTypes = Constants.ThemeTypes;
-({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
-let obj = new RowGeneratorDefault();
-let obj2 = { renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderEmbeds: false, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: false, renderReactions: true, renderAttachments: false, renderReplies: false, renderThreadEmbeds: false, renderPolls: false, renderForumPostActions: false, forcedTheme: ThemeTypes.DARK, forceHideSimpleEmbedContent: true };
-obj.setOptions(obj2);
-let createStyles = createStyles_mod;
-let closure_17 = createStyles.createStyles({ dummyLayout: { position: "absolute", top: 0, left: -9999, width: "100%", opacity: 0 } });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function MeasureMessage(message) {
-  let items;
-  let onMeasureTruncated;
-  let tmp = onMeasureTruncated;
-  const obj = message(onMeasureTruncated[14]);
-  const cResult = obj.c(16);
-  message = message.message;
-  const onMeasure = message.onMeasure;
-  onMeasureTruncated = message.onMeasureTruncated;
-  const disableReactionCreates = message.disableReactionCreates;
-  const tmp3 = closure_17();
-  const dummyLayout = tmp3;
-  const obj2 = message(onMeasureTruncated[15]);
-  const result = 0.5 * obj2.useMediaViewerDimensions().height;
-  let closure_5 = result;
-  if (cResult[0] === disableReactionCreates) {
-    if (cResult[1] === result) {
-      if (cResult[2] === message) {
-        if (cResult[3] === onMeasure) {
-          if (cResult[4] === onMeasureTruncated) {
-            let tmp5;
-            let tmp6;
-            let tmp7;
-            let tmp14;
-            if (cResult[5] === tmp3.dummyLayout) {
-              tmp5 = cResult[6];
-            }
-            if (cResult[7] !== tmp5) {
-              const obj3 = { full: tmp5(false), truncated: tmp5(true) };
-              cResult[7] = tmp5;
-              cResult[8] = obj3;
-              tmp6 = obj3;
-            } else {
-              tmp6 = cResult[8];
-            }
-            if (cResult[9] !== tmp6.full) {
-              const obj4 = {};
-              const tmp10 = onMeasure(tmp[16]);
-              const merged = Object.assign(tmp6.full);
-              const tmp13 = closure_13(tmp10, obj4);
-              cResult[9] = tmp6.full;
-              cResult[10] = tmp13;
-              tmp7 = tmp13;
-            } else {
-              tmp7 = cResult[10];
-            }
-            if (cResult[11] !== tmp6.truncated) {
-              const obj5 = {};
-              const tmp17 = onMeasure(tmp[16]);
-              const merged1 = Object.assign(tmp6.truncated);
-              const tmp20 = closure_13(tmp17, obj5);
-              cResult[11] = tmp6.truncated;
-              cResult[12] = tmp20;
-              tmp14 = tmp20;
-            } else {
-              tmp14 = cResult[12];
-            }
-            if (cResult[13] === tmp7) {
-              let tmp21;
-              if (cResult[14] === tmp14) {
-                tmp21 = cResult[15];
-              }
-              return tmp21;
-            }
-            const obj6 = { children: items };
-            items = [tmp7, tmp14];
-            const tmp24 = closure_15(closure_14, obj6);
-            cResult[13] = tmp7;
-            cResult[14] = tmp14;
-            cResult[15] = tmp24;
-            tmp21 = tmp24;
-          }
-        }
-      }
-    }
-  }
-  function generateChatItemProps(arg0) {
-    let closure_0;
-    message = arg0;
-    return {
-      onLayout(nativeEvent) {
-        const bound = Math.min(nativeEvent.nativeEvent.layout.height, closure_5);
-        if (0 !== bound) {
-          const tmp2 = closure_0;
-          if (tmp2) {
-            onMeasureTruncated(bound);
-          } else {
-            onMeasure(bound);
-          }
-        }
-      },
-      modifyRow(arg0) {
-        arg0.canAddNewReactions = !disableReactionCreates;
-        arg0.contextType = RowGeneratorTypes.MessageContextType.MEDIA_VIEWER;
-        const tmp = closure_0;
-        if (tmp) {
-          arg0.truncation = { numberOfLines: 3, expandable: false, seeMoreLabel: "" };
-        }
-      },
-      rowGenerator,
-      message,
-      style: dummyLayout.dummyLayout
-    };
-  }
-  cResult[0] = disableReactionCreates;
-  cResult[1] = result;
-  cResult[2] = message;
-  cResult[3] = onMeasure;
-  cResult[4] = onMeasureTruncated;
-  cResult[5] = tmp3.dummyLayout;
-  cResult[6] = generateChatItemProps;
-  tmp5 = generateChatItemProps;
-}) : (function MeasureMessage(message) {
+function MeasureMessage(message) {
   let closure_4;
   let items1;
   message = message.message;
@@ -166,7 +45,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Measur
   const disableReactionCreates = message.disableReactionCreates;
   let tmp = closure_17();
   react = tmp;
-  let obj = message(onMeasureTruncated[15]);
+  let obj = message(onMeasureTruncated[13]);
   const result = 0.5 * obj.useMediaViewerDimensions().height;
   let c5 = result;
   const items = [disableReactionCreates, result, message, onMeasureTruncated, onMeasure, tmp.dummyLayout];
@@ -200,203 +79,124 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Measur
   }, items);
   let obj2 = { children: items1 };
   const obj3 = {};
-  const tmp4 = onMeasure(onMeasureTruncated[16]);
+  const tmp4 = onMeasure(onMeasureTruncated[14]);
   const merged = Object.assign(memo.full);
   items1 = [closure_13(tmp4, obj3), ];
   const obj4 = {};
-  const tmp6 = onMeasure(onMeasureTruncated[16]);
+  const tmp6 = onMeasure(onMeasureTruncated[14]);
   const merged1 = Object.assign(memo.truncated);
   items1[1] = closure_13(tmp6, obj4);
   return closure_15(closure_14, obj2);
-});
+}
+function MeasureMessageAfterEntrance(entranceAnimationDriver) {
+  let first;
+  let tmp5;
+  entranceAnimationDriver = entranceAnimationDriver.entranceAnimationDriver;
+  let tmp = null;
+  const merged = Object.assign(entranceAnimationDriver, Object.assign({ entranceAnimationDriver: 0 }));
+  [first, tmp5] = react.useState(false);
+  let closure_1 = tmp5;
+  let obj = entranceAnimationDriver(5090);
+  const fn = function l() {
+    return entranceAnimationDriver.get() >= 1;
+  };
+  fn.__closure = { entranceAnimationDriver };
+  fn.__workletHash = 9185320143951;
+  fn.__initData = __initData;
+  const fn2 = function s(arg0) {
+    const tmp = arg0;
+    if (tmp) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(closure_1)(true);
+    }
+  };
+  fn2.__closure = { runOnJS: entranceAnimationDriver(5090).runOnJS, setHasEntranceFinished: tmp5 };
+  fn2.__workletHash = 16173671243775;
+  fn2.__initData = __initData2;
+  ({ runOnJS: entranceAnimationDriver(5090).runOnJS, setHasEntranceFinished: tmp5 });
+  const animatedReaction = obj.useAnimatedReaction(fn, fn2);
+  if (first) {
+    const obj3 = {};
+    const merged1 = Object.assign(merged);
+    tmp = closure_13(MeasureMessage, obj3);
+  }
+  return tmp;
+}
+let react = react_mod;
+({ findNodeHandle: hasOwnProperty, ScrollView: metroRequire } = react_native);
+let ThemeTypes = Constants.ThemeTypes;
+({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = Fragment);
+let obj = new RowGeneratorDefault();
+let obj2 = { renderCodedLinks: false, renderGiftCode: false, renderActivityInstanceEmbed: false, renderActivityInviteEmbed: false, renderComponents: false, renderEmbeds: false, ignoreMentioned: true, inlineAttachmentMedia: false, inlineEmbedMedia: false, renderReactions: true, renderAttachments: false, renderReplies: false, renderThreadEmbeds: false, renderPolls: false, renderForumPostActions: false, forcedTheme: ThemeTypes.DARK, forceHideSimpleEmbedContent: true };
+obj.setOptions(obj2);
+let createStyles = createStyles_mod;
+let closure_17 = createStyles.createStyles({ dummyLayout: { position: "absolute", top: 0, left: -9999, width: "100%", opacity: 0 } });
+const __initData = { code: "function MediaMessagePreviewTsx1(){const{entranceAnimationDriver}=this.__closure;return entranceAnimationDriver.get()>=1;}" };
+const __initData2 = { code: "function MediaMessagePreviewTsx2(isFinished){const{runOnJS,setHasEntranceFinished}=this.__closure;if(isFinished){runOnJS(setHasEntranceFinished)(true);}}" };
 createStyles = createStyles_mod;
 let obj3 = { reactionBackgroundColor: nativeDefault.colors.REACTION_BACKGROUND_DEFAULT, reactionBorderColor: nativeDefault.colors.REACTION_BORDER_DEFAULT, reactionTextColor: nativeDefault.colors.REACTION_TEXT_DEFAULT, activeReactionBackgroundColor: nativeDefault.colors.REACTION_BACKGROUND_REACTED_DEFAULT, activeReactionBorderColor: nativeDefault.colors.REACTION_BORDER_REACTED_DEFAULT, activeReactionTextColor: nativeDefault.colors.REACTION_TEXT_REACTED_DEFAULT };
-let closure_19 = createStyles.createNativeStyleProperties(obj3);
+let closure_22 = createStyles.createNativeStyleProperties(obj3);
 createStyles = createStyles_mod;
 let obj4 = { editedColor: nativeDefault.colors.TEXT_MUTED, seeMoreLabelColor: nativeDefault.colors.TEXT_DEFAULT };
-let closure_20 = createStyles.createNativeStyleProperties(obj4);
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessagePreview(channelId) {
-  let animationDriver;
-  let disableReactionCreates;
-  let first;
-  let flingDownRef;
-  let flingUpRef;
-  let full;
-  let onClose;
-  let onMeasureCollapsedHeight;
-  let onMeasureFullHeight;
-  let tmp13;
-  let tmp14;
-  let tmp6;
-  let tmp = channelId;
-  let tmp2 = onClose;
-  let obj = channelId(onClose[14]);
-  const cResult = obj.c(72);
-  channelId = channelId.channelId;
-  const messageId = channelId.messageId;
-  onClose = channelId.onClose;
-  const onTapMessage = channelId.onTapMessage;
-  ({ onMeasureFullHeight, onMeasureCollapsedHeight, full } = channelId);
-  const canExpand = channelId.canExpand;
-  const setScrollViewIsAtTop = channelId.setScrollViewIsAtTop;
-  ({ flingUpRef, flingDownRef, animationDriver } = channelId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = disableReactionCreates;
-    const items = [disableReactionCreates];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    class R {
-      constructor() {
-        let channel;
-        if (null != channelId) {
-          channel = ChannelStore.getChannel(tmp);
-        }
-        return channel;
-      }
-    }
-    cResult[1] = channelId;
-    cResult[2] = R;
-    tmp6 = R;
-  } else {
-    class R {
-      constructor() {
-        let channel;
-        if (null != channelId) {
-          channel = ChannelStore.getChannel(tmp);
-        }
-        return channel;
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[18]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  disableReactionCreates = messageId(tmp2[19])(stateFromStores).disableReactionCreates;
-  [r10052, MessageStore] = onTapMessage(full.useState(false), 2);
-  const tmp8 = onTapMessage(full.useState(false), 2);
-  [r10057, MessagePreviewStore] = onTapMessage(full.useState(false), 2);
-  const tmp9 = onTapMessage(full.useState(false), 2);
-  const ref = full.useRef(null);
-  const tmp11 = onTapMessage(full.useState(null), 2);
-  const first1 = tmp11[0];
-  let closure_14 = tmp11[1];
-  const obj3 = full;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
-      constructor() {
-        closure_14(hasOwnProperty(ref.current));
-      }
-    }
-    const items1 = [];
-    cResult[3] = G;
-    cResult[4] = items1;
-    tmp14 = items1;
-    tmp13 = G;
-  } else {
-    class G {
-      constructor() {
-        closure_14(hasOwnProperty(ref.current));
-      }
-    }
-    tmp14 = cResult[4];
-  }
-  const effect = obj3.useEffect(tmp13, tmp14);
-  const tmp16 = closure_19(ref.ONYX);
-  const reactionsTheme = tmp16;
-  const tmp17 = closure_20(ref.ONYX);
-  const editedColor = tmp17.editedColor;
-  const seeMoreLabelColor = tmp17.seeMoreLabelColor;
-  if (cResult[5] === animationDriver) {
-    class G {
-      constructor() {
-        closure_14(hasOwnProperty(ref.current));
-      }
-    }
-  }
-  function ne(message) {
-    let intl;
-    message.canAddNewReactions = !disableReactionCreates;
-    message.contextType = RowGeneratorTypes.MessageContextType.MEDIA_VIEWER;
-    message.reactTag = first1;
-    message.canAddNewReactions = !disableReactionCreates;
-    message.message.feedbackColor = undefined;
-    message.message.editedColor = editedColor;
-    message.reactionsTheme = reactionsTheme;
-    const tmp3 = full;
-    if (!tmp3) {
-      const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: " " + intl.string(intl2.t["7qbp3B"]), seeMoreLabelColor, outAnimationDuration: Math.min(0.25 * animationDriver.get(), 0.1), outAnimation: "fade" };
-      intl = tmp(1125).intl;
-      const _HermesInternal = HermesInternal;
-      const _Math = Math;
-      message.truncation = obj;
-    }
-  }
-  cResult[5] = animationDriver;
-  cResult[6] = first1;
-  cResult[7] = disableReactionCreates;
-  cResult[8] = editedColor;
-  cResult[9] = full;
-  cResult[10] = tmp16;
-  cResult[11] = seeMoreLabelColor;
-  cResult[12] = ne;
-}) : (function MediaMessagePreview(channelId) {
+let closure_23 = createStyles.createNativeStyleProperties(obj4);
+let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreview.tsx");
+
+export default function MediaMessagePreview(channelId) {
   let c12;
   let closure_16;
   let closure_5;
   let closure_6;
   let flingUpRef;
+  let full;
   let items9;
-  let obj4;
+  let obj5;
   let onMeasureCollapsedHeight;
   let onMeasureFullHeight;
-  let tmp6;
+  let tmp7;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   const onClose = channelId.onClose;
   const onTapMessage = channelId.onTapMessage;
-  const full = channelId.full;
+  ({ onMeasureFullHeight, onMeasureCollapsedHeight, full } = channelId);
   ({ canExpand: closure_5, setScrollViewIsAtTop: closure_6, flingUpRef } = channelId);
   const flingDownRef = channelId.flingDownRef;
   const animationDriver = channelId.animationDriver;
   ThemeTypes = undefined;
-  let seeMoreLabelColor;
-  let stateFromStores1;
+  closure_22 = undefined;
   let tmp2 = onClose;
-  ({ onMeasureFullHeight, onMeasureCollapsedHeight } = channelId);
+  const entranceAnimationDriver = channelId.entranceAnimationDriver;
   let tmp = channelId;
-  let obj = channelId(onClose[18]);
+  let obj = channelId(onClose[17]);
+  const isMediaViewerEntranceJankFixEnabled = obj.useIsMediaViewerEntranceJankFixEnabled();
+  let obj2 = channelId(onClose[18]);
   const items = [animationDriver];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  const stateFromStores = obj2.useStateFromStores(items, () => {
     let channel;
     if (null != channelId) {
       channel = ChannelStore.getChannel(tmp);
     }
     return channel;
   });
-  const tmp4 = messageId;
+  let tmp5 = messageId;
   const disableReactionCreates = messageId(onClose[19])(stateFromStores).disableReactionCreates;
-  let tmp5 = onTapMessage(full.useState(false), 2);
-  [tmp6, c12] = tmp5;
-  let tmp7 = onTapMessage(full.useState(false), 2);
-  let closure_13 = tmp7[1];
-  const first = tmp7[0];
+  const tmp6 = onTapMessage(full.useState(false), 2);
+  [tmp7, c12] = tmp6;
+  const tmp8 = onTapMessage(full.useState(false), 2);
+  let closure_13 = tmp8[1];
+  const first = tmp8[0];
   const ref = full.useRef(null);
-  const tmp10 = onTapMessage(full.useState(null), 2);
-  const first1 = tmp10[0];
-  rowGenerator = tmp10[1];
+  const tmp11 = onTapMessage(full.useState(null), 2);
+  const first1 = tmp11[0];
+  rowGenerator = tmp11[1];
   const effect = full.useEffect(() => {
     closure_16(hasOwnProperty(ref.current));
   }, []);
-  const tmp13 = seeMoreLabelColor(ThemeTypes.ONYX);
-  const reactionsTheme = tmp13;
-  const tmp14 = stateFromStores1(ThemeTypes.ONYX);
-  const editedColor = tmp14.editedColor;
-  seeMoreLabelColor = tmp14.seeMoreLabelColor;
-  const items1 = [first1, disableReactionCreates, editedColor, seeMoreLabelColor, tmp13, full, animationDriver];
+  const tmp14 = closure_22(ThemeTypes.ONYX);
+  const reactionsTheme = tmp14;
+  const tmp15 = closure_23(ThemeTypes.ONYX);
+  const editedColor = tmp15.editedColor;
+  const seeMoreLabelColor = tmp15.seeMoreLabelColor;
+  const items1 = [first1, disableReactionCreates, editedColor, seeMoreLabelColor, tmp14, full, animationDriver];
   const callback = full.useCallback((message) => {
     let intl;
     message.canAddNewReactions = !disableReactionCreates;
@@ -409,16 +209,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
     const tmp3 = full;
     if (!tmp3) {
       const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: " " + intl.string(intl2.t["7qbp3B"]), seeMoreLabelColor, outAnimationDuration: Math.min(0.25 * animationDriver.get(), 0.1), outAnimation: "fade" };
-      intl = tmp(1125).intl;
+      intl = tmp(1114).intl;
       const _HermesInternal = HermesInternal;
       const _Math = Math;
       message.truncation = obj;
     }
   }, items1);
-  let obj2 = channelId(onClose[18]);
   const items2 = [flingDownRef, stateFromStores, disableReactionCreates, flingUpRef];
   const items3 = [channelId, messageId];
-  stateFromStores1 = obj2.useStateFromStores(items2, () => {
+  const obj3 = channelId(onClose[18]);
+  const stateFromStores1 = obj3.useStateFromStores(items2, () => {
     if (null != channelId) {
       if (null != messageId) {
         let message = MessageStore.getMessage(tmp, tmp2);
@@ -442,9 +242,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
       }
     }
   }, items3);
-  const tmp17 = onTapMessage(full.useState(0), 2);
-  const first2 = tmp17[0];
-  let closure_22 = tmp17[1];
+  const tmp18 = onTapMessage(full.useState(0), 2);
+  const first2 = tmp18[0];
+  closure_22 = tmp18[1];
   const items4 = [full, first2];
   const callback1 = full.useCallback((arg0, arg1) => {
     closure_22(arg1);
@@ -489,7 +289,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8340).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8397).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);
@@ -499,15 +299,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
     const tmp = null != url && "" !== url;
     if (tmp) {
       const obj = { urlString: url };
-      messageId(onClose[28])(obj);
+      messageId(onClose[26])(obj);
     }
   }, []);
-  let tmp27Result = null;
+  let tmp28Result = null;
   if (null != stateFromStores1) {
-    tmp27Result = null;
+    tmp28Result = null;
     if (null != stateFromStores) {
-      const obj3 = { gesture: tmp25, children: first1(closure_6, obj4) };
-      obj4 = {
+      const obj4 = { gesture: tmp26, children: first1(closure_6, obj5) };
+      obj5 = {
         scrollEventThrottle: 16,
         onScroll(nativeEvent) {
               closure_6(nativeEvent.nativeEvent.contentOffset.y <= 0);
@@ -515,11 +315,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
         onLayout: callback2,
         onContentSizeChange: callback1,
         showsVerticalScrollIndicator: full,
-        bounces: tmp6,
+        bounces: tmp7,
         children: items9
       };
-      const GestureDetector = tmp(tmp2[29]).GestureDetector;
-      const obj5 = {
+      const GestureDetector = tmp(tmp2[27]).GestureDetector;
+      const obj6 = {
         ref,
         onLongPressLink: callback6,
         onLongPressMessage: callback3,
@@ -543,7 +343,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
                   channel = channel.getChannel(arg1);
                   if (null != channel) {
                     const obj2 = { source, navigationReplace: false };
-                    const obj = channelId(onClose[23]);
+                    const obj = channelId(onClose[30]);
                     obj.transitionToThread(channel, obj2);
                   }
                 },
@@ -556,25 +356,28 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MediaMessage
             },
         inverted: false
       };
-      items9 = [closure_13(tmp4(tmp2[30]), obj5), ];
-      const obj6 = { rowGenerator, modifyRow: callback, message: stateFromStores1 };
-      items9[1] = closure_13(tmp4(tmp2[16]), obj6);
-      const items10 = [closure_13(GestureDetector, obj3), ];
-      let tmp29Result = null;
-      const tmp27 = first1;
-      const tmp28 = ref;
-      const tmp29 = closure_13;
+      items9 = [closure_13(tmp5(tmp2[28]), obj6), ];
+      const obj7 = { rowGenerator, modifyRow: callback, message: stateFromStores1 };
+      items9[1] = closure_13(tmp5(tmp2[14]), obj7);
+      const items10 = [closure_13(GestureDetector, obj4), ];
+      let tmp33 = null;
+      const tmp28 = first1;
+      const tmp29 = ref;
       if (first) {
-        const obj7 = { disableReactionCreates, message: stateFromStores1, onMeasure: onMeasureFullHeight, onMeasureTruncated: onMeasureCollapsedHeight };
-        tmp29Result = tmp29(editedColor, obj7);
+        let tmp30Result;
+        if (isMediaViewerEntranceJankFixEnabled) {
+          const obj8 = { entranceAnimationDriver, disableReactionCreates, message: stateFromStores1, onMeasure: onMeasureFullHeight, onMeasureTruncated: onMeasureCollapsedHeight };
+          tmp30Result = tmp30(first2, obj8);
+        } else {
+          const obj9 = { disableReactionCreates, message: stateFromStores1, onMeasure: onMeasureFullHeight, onMeasureTruncated: onMeasureCollapsedHeight };
+          tmp30Result = tmp30(editedColor, obj9);
+        }
+        tmp33 = tmp30Result;
       }
-      const obj8 = { children: items10 };
-      items10[1] = tmp29Result;
-      tmp27Result = tmp27(tmp28, obj8);
+      const obj10 = { children: items10 };
+      items10[1] = tmp33;
+      tmp28Result = tmp28(tmp29, obj10);
     }
   }
-  return tmp27Result;
-});
-let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreview.tsx");
-
-export default tmp5;
+  return tmp28Result;
+};

@@ -1,79 +1,24 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7394
+// Function ID: 7395
 // Name: useIsNewMember
-// Dependencies: [4910, 4917, 4923, 1402, 1101, 558, 576, 504, 2]
-// Exports: getIsNewMember
+// Dependencies: [4914, 4921, 4927, 1397, 1090, 504, 2]
+// Exports: default, getIsNewMember
 
-// Module 7386 (useIsNewMember)
-import DurationsDefault from "Durations" /* 1101 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4923 */;
-import ImpersonateStore from "ImpersonateStore" /* 4910 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7394 (useIsNewMember)
+import DurationsDefault from "Durations" /* 1090 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4927 */;
+import ImpersonateStore from "ImpersonateStore" /* 4914 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNewMember(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMemberStore, ];
-    items[1] = ImpersonateStore;
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let flag = true;
-      if (!ImpersonateStore.isFullServerPreview(closure_0)) {
-        const selfMember = obj.getSelfMember(tmp);
-        flag = false;
-        if (null != selfMember) {
-          const selfMemberJoinedAt = obj.getSelfMemberJoinedAt(tmp);
-          let tmp4 = null != selfMemberJoinedAt;
-          if (tmp4) {
-            let num = selfMember.flags;
-            const hasFlag = FlagUtils.hasFlag;
-            FlagUtils;
-            if (num == null) {
-              num = 0;
-            }
-            let tmp10 = !hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-            hasFlag(num, GuildMemberFlags.COMPLETED_HOME_ACTIONS);
-            if (tmp10) {
-              const _Date = Date;
-              const timestamp = Date.now();
-              const diff = timestamp - selfMemberJoinedAt.getTime();
-              tmp10 = diff < DurationsDefault.Millis.WEEK;
-            }
-            tmp4 = tmp10;
-          }
-          flag = tmp4;
-        }
-      }
-      return flag;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useIsNewMember(arg0) {
+const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
+
+export default function useIsNewMember(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -108,10 +53,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsNewMe
     }
     return flag;
   });
-});
-const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
-
-export default tmp2;
+};
 export function getIsNewMember(id) {
   let flag = true;
   if (!ImpersonateStore.isFullServerPreview(id)) {

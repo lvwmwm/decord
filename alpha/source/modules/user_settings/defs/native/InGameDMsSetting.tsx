@@ -1,98 +1,49 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17875
+// Function ID: 17876
 // Name: InGameDMsSetting
-// Dependencies: [19, 8387, 558, 4833, 1208, 576, 1125, 11302, 2]
+// Dependencies: [19, 8424, 4834, 1197, 1114, 11505, 2]
 
-// Module 17804 (InGameDMsSetting)
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
+// Module 17875 (InGameDMsSetting)
+import intl4 from "intl" /* 1114 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInGameDMsSettingValue() {
-  const SlayerSDKReceiveDMsInGame = UserSettings.SlayerSDKReceiveDMsInGame;
-  let SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = SlayerSDKReceiveDMsInGame.useSetting();
-  if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
-    SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
-  }
-  return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
-}) : (function useInGameDMsSettingValue() {
-  const SlayerSDKReceiveDMsInGame = UserSettings.SlayerSDKReceiveDMsInGame;
-  let SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = SlayerSDKReceiveDMsInGame.useSetting();
-  if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
-    SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
-  }
-  return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInGameDMsSettingOptions() {
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: intl.string(intl4.t.JIFnN9) };
-    intl = tmp(1125).intl;
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: intl2.string(intl4.t.rRdsk1) };
-    intl2 = tmp(1125).intl;
-    cResult[1] = obj3;
-    tmp5 = obj3;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [first, tmp5, ];
-    const obj4 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: intl3.string(intl4.t.AolKwN) };
-    intl3 = tmp(1125).intl;
-    items[2] = obj4;
-    cResult[2] = items;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[2];
-  }
-  return tmp6;
-}) : (function useInGameDMsSettingOptions() {
-  return react.useMemo(() => {
-    let intl;
-    let intl2;
-    let intl3;
-    const obj = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: intl.string(intl4.t.JIFnN9) };
-    intl = intl4.intl;
-    const items = [obj, , ];
-    const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: intl2.string(intl4.t.rRdsk1) };
-    intl2 = intl4.intl;
-    items[1] = obj2;
-    const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: intl3.string(intl4.t.AolKwN) };
-    intl3 = intl4.intl;
-    items[2] = obj3;
-    return items;
-  }, []);
-});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t["ms+Tme"]);
   },
   parent: MobileUserSettings.CONNECTED_GAMES,
-  useOptions: tmp3,
-  useValue: tmp2,
+  useOptions: function useInGameDMsSettingOptions() {
+    return react.useMemo(() => {
+      let intl;
+      let intl2;
+      let intl3;
+      const obj = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL, label: intl.string(intl4.t.JIFnN9) };
+      intl = intl4.intl;
+      const items = [obj, , ];
+      const obj2 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME, label: intl2.string(intl4.t.rRdsk1) };
+      intl2 = intl4.intl;
+      items[1] = obj2;
+      const obj3 = { value: preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE, label: intl3.string(intl4.t.AolKwN) };
+      intl3 = intl4.intl;
+      items[2] = obj3;
+      return items;
+    }, []);
+  },
+  useValue: function useInGameDMsSettingValue() {
+    const SlayerSDKReceiveDMsInGame = UserSettings.SlayerSDKReceiveDMsInGame;
+    let SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = SlayerSDKReceiveDMsInGame.useSetting();
+    if (SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL === preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET) {
+      SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL = preloaded_user_settings.SlayerSDKReceiveInGameDMs.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
+    }
+    return SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL;
+  },
   onValueChange: function onInGameDMsSettingValueChange(arg0) {
     const SlayerSDKReceiveDMsInGame = UserSettings.SlayerSDKReceiveDMsInGame;
     SlayerSDKReceiveDMsInGame.updateSetting(Number(arg0));

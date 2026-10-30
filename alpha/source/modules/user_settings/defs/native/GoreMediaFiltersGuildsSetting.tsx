@@ -1,74 +1,34 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16682
+// Function ID: 16683
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [8387, 558, 8179, 16613, 576, 16621, 8645, 7458, 16622, 1125, 1208, 11302, 2]
+// Dependencies: [8424, 8360, 16666, 16674, 8679, 7466, 16675, 1114, 1197, 11505, 2]
 
-// Module 16629 (GoreMediaFiltersGuildsSetting)
-import react from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7458 */;
-import useUserIsTeen from "useUserIsTeen" /* 8179 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16613 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16621 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16622 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 16682 (GoreMediaFiltersGuildsSetting)
+import intl4 from "intl" /* 1114 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7466 */;
+import useUserIsTeen from "useUserIsTeen" /* 8360 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8679 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16666 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16674 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16675 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const ExplicitMediaRedactionUtils = tmp(8645);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {
-  const obj = useUserIsTeen;
-  let userIsTeen = obj.useUserIsTeen();
-  const obj2 = useParentalControlSettings;
-  if (!userIsTeen) {
-    userIsTeen = obj2.useIsParentallyControlled();
-  }
-  return userIsTeen;
-}) : (function useIsDisabled() {
-  const obj = useUserIsTeen;
-  let userIsTeen = obj.useUserIsTeen();
-  const obj2 = useParentalControlSettings;
-  if (!userIsTeen) {
-    userIsTeen = obj2.useIsParentallyControlled();
-  }
-  return userIsTeen;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-function getTitle() {
-  const intl = intl4.intl;
-  return intl.string(intl4.t["FP+a42"]);
-}
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGoreContentGuildsSettingValue() {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = useExplicitContentSettingsOrDefault;
-  const goreContentGuilds = obj2.useGoreContentSettingOrDefault().goreContentGuilds;
-  if (cResult[0] !== goreContentGuilds) {
-    const tmpResult = ExplicitMediaRedactionUtils;
-    const tmp5 = tmpResult.redactionSettingToRenderedString(goreContentGuilds)();
-    cResult[0] = goreContentGuilds;
-    cResult[1] = tmp5;
-    tmp4 = tmp5;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useGoreContentGuildsSettingValue() {
-  const obj = useExplicitContentSettingsOrDefault;
-  const goreContentGuilds = obj.useGoreContentSettingOrDefault().goreContentGuilds;
-  const obj2 = ExplicitMediaRedactionUtils;
-  return obj2.redactionSettingToRenderedString(goreContentGuilds)();
-});
 let obj = {
-  useTitle: getTitle,
+  useTitle: function getTitle() {
+    const intl = intl4.intl;
+    return intl.string(intl4.t["FP+a42"]);
+  },
   parent: MobileUserSettings.SENSITIVE_CONTENT_FILTERS,
-  useTrailing: tmp3,
+  useTrailing: function useGoreContentGuildsSettingValue() {
+    const obj = useExplicitContentSettingsOrDefault;
+    const goreContentGuilds = obj.useGoreContentSettingOrDefault().goreContentGuilds;
+    const obj2 = ExplicitMediaRedactionUtils;
+    return obj2.redactionSettingToRenderedString(goreContentGuilds)();
+  },
   onPress: function onGoreContentGuildsOnPress() {
     let intl;
     let intl2;
@@ -93,7 +53,15 @@ let obj = {
     items = [preloaded_user_settings.ExplicitContentRedaction.BLOCK];
     const result = handleSensitiveMediaFilterPress(obj2);
   },
-  useIsDisabled: tmp2,
+  useIsDisabled() {
+    const obj = useUserIsTeen;
+    let userIsTeen = obj.useUserIsTeen();
+    const obj2 = useParentalControlSettings;
+    if (!userIsTeen) {
+      userIsTeen = obj2.useIsParentallyControlled();
+    }
+    return userIsTeen;
+  },
   useSearchTerms() {
     const intl = intl4.intl;
     const items = [intl.string(intl4.t["N/oRI+"]), , ];

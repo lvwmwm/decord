@@ -1,26 +1,26 @@
-// Module ID: 11306
-// Function ID: 11307
+// Module ID: 11509
+// Function ID: 11510
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 4857, 1084, 5010, 584, 1294, 7812, 7624, 5749, 7471, 2]
+// Dependencies: [5, 4858, 1072, 5014, 572, 1283, 7817, 7629, 5755, 5757, 7479, 2]
 
-// Module 11306 (ActivitiesActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
+// Module 11509 (ActivitiesActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let _asyncToGenerator = _asyncToGenerator_mod;
-({ Endpoints: hasOwnProperty, ActivityTypes: metroRequire, AnalyticEvents: metroImportDefault, LoggingInviteTypes: metroImportAll } = Constants);
+({ Endpoints: hasOwnProperty, AnalyticEvents: metroRequire, LoggingInviteTypes: metroImportDefault } = Constants);
 const MessageSendLocation = MessageConstants.MessageSendLocation;
 let obj = {
   updateActivity(applicationId) {
@@ -85,17 +85,18 @@ let obj = {
     if (null == channel) {
       return Promise.resolve(null);
     } else {
-      let tmp7 = importDefault;
+      let tmp8 = channel;
       const parse = require("MessageParser").parse;
       require("MessageParser");
-      const tmp8 = channel;
+      const tmp7 = importDefault;
       if (content == null) {
         content = "";
       }
       const parsed = parse(channel, content);
-      const tmp7Result = tmp7(tmp8[7]);
       let obj = { activityAction: obj2, location: MessageSendLocation.ACTIVITY_SHARE };
+      const tmp3 = MessageSendLocation;
       obj2 = { type, activity, targetUserId };
+      const tmp7Result = tmp7(tmp8[7]);
       const sendMessageResult = tmp7Result.sendMessage(channel.id, parsed, false, obj);
       return sendMessageResult.then((body) => {
         let APPLICATION;
@@ -104,27 +105,27 @@ let obj = {
         let type;
         const obj = { location: importDefault, invite_type: APPLICATION, application_id, guild_id: channel.getGuildId(), channel_id: channel.id, message_id: id };
         const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
-        const INVITE_SENT = metroImportDefault.INVITE_SENT;
+        const INVITE_SENT = metroRequire.INVITE_SENT;
         AppAnalyticsUtilsDefault;
         if (activity != null) {
-          type = tmp2.type;
+          type = tmp3.type;
         }
-        if (type === metroRequire.LISTENING) {
-          APPLICATION = metroImportAll.SPOTIFY;
+        if (type === ActivityTypes.ActivityTypes.LISTENING) {
+          APPLICATION = metroImportDefault.SPOTIFY;
         } else {
-          APPLICATION = metroImportAll.APPLICATION;
+          APPLICATION = metroImportDefault.APPLICATION;
         }
         application_id = undefined;
         if (activity != null) {
-          application_id = tmp2.application_id;
+          application_id = tmp3.application_id;
         }
         id = null;
-        const tmp7 = channel;
+        const tmp8 = channel;
         if (null != body) {
           id = body.body.id;
         }
         trackWithMetadata(INVITE_SENT, obj);
-        return Promise.resolve(tmp7);
+        return Promise.resolve(tmp8);
       }, (arg0) => Promise.reject(arg0));
     }
   },

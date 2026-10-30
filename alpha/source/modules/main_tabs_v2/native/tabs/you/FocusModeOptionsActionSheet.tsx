@@ -1,20 +1,24 @@
-// Module ID: 18338
-// Function ID: 18339
+// Module ID: 18397
+// Function ID: 18398
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1101, 1125, 558, 576, 14219, 6963, 7358, 7047, 2]
+// Dependencies: [19, 21, 1090, 1114, 10999, 7360, 7054, 6969, 2]
+// Exports: default
 
-// Module 18338 (FocusModeOptionsActionSheet)
-import DurationsDefault from "Durations" /* 1101 */;
-import intl5 from "intl" /* 1125 */;
+// Module 18397 (FocusModeOptionsActionSheet)
+import DurationsDefault from "Durations" /* 1090 */;
+import intl5 from "intl" /* 1114 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let duration;
 
 let c2;
 let c3;
+function label() {
+  const intl = intl5.intl;
+  return intl.string(intl5.t["755t4q"]);
+}
 ({ jsx: c2, jsxs: c3 } = Fragment);
 let obj = {
   duration: 30 * DurationsDefault.Millis.MINUTE,
@@ -48,14 +52,7 @@ let obj4 = {
   }
 };
 items[3] = obj4;
-let obj5 = {
-  duration: DurationsDefault.Millis.DAY,
-  label() {
-    const intl = intl5.intl;
-    return intl.string(intl5.t["755t4q"]);
-  }
-};
-items[4] = obj5;
+items[4] = { duration: DurationsDefault.Millis.DAY, label };
 const obj6 = {
   duration: "Array",
   label() {
@@ -64,119 +61,37 @@ const obj6 = {
   }
 };
 items[5] = obj6;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeOptionsActionSheet(onSelect) {
-  let first;
-  let intl2;
-  let intl3;
-  let intl4;
-  let obj4;
-  let obj = onSelect(576);
-  const cResult = obj.c(9);
-  onSelect = onSelect.onSelect;
-  const obj2 = onSelect(14219);
-  const focusModeEnabled = obj2.useFocusModeEnabled();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(onSelect(1125).t["sNX1E+"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === focusModeEnabled) {
-    let tmp7;
-    let tmp10;
-    if (cResult[2] === onSelect) {
-      tmp7 = cResult[3];
-    }
-    if (cResult[4] !== onSelect) {
-      const mapped = items.map((duration) => {
-        duration = duration.duration;
-        const label = duration.label;
-        const obj = {
-          accessibilityLabel: label(),
-          accessibilityHint: label(),
-          onPress() {
-            onSelect(true, duration);
-          },
-          trailing: null,
-          label: label()
-        };
-        const TableRow = onSelect(dependencyMap[7]).TableRow;
-        return closure_1_2(TableRow, obj, "" + duration);
-      });
-      cResult[4] = onSelect;
-      cResult[5] = mapped;
-      tmp10 = mapped;
-    } else {
-      tmp10 = cResult[5];
-    }
-    if (cResult[6] === tmp7) {
-      let tmp13;
-      if (cResult[7] === tmp10) {
-        tmp13 = cResult[8];
-      }
-      return tmp13;
-    }
-    const obj3 = { children: closure_3(onSelect(7047).TableRowGroup, obj4) };
-    const ActionSheet = tmp(7358).ActionSheet;
-    obj4 = { title: first, hasIcons: false, children: items };
-    items = [tmp7, tmp10];
-    const tmp16 = closure_2(ActionSheet, obj3);
-    cResult[6] = tmp7;
-    cResult[7] = tmp10;
-    cResult[8] = tmp16;
-    tmp13 = tmp16;
-  }
-  let tmp8 = null;
-  if (focusModeEnabled) {
-    const obj5 = {
-      accessibilityLabel: intl2.string(onSelect(1125).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1125).t.rk35Gm),
-      onPress() {
-          onSelect(false, undefined);
-        },
-      trailing: null,
-      label: intl4.string(onSelect(1125).t.rk35Gm)
-    };
-    let TableRow = tmp(6963).TableRow;
-    intl2 = tmp(1125).intl;
-    intl3 = tmp(1125).intl;
-    intl4 = tmp(1125).intl;
-    tmp8 = closure_2(TableRow, obj5);
-  }
-  cResult[1] = focusModeEnabled;
-  cResult[2] = onSelect;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (function FocusModeOptionsActionSheet(onSelect) {
+({ duration: DurationsDefault.Millis.DAY, label });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
+
+export default function FocusModeOptionsActionSheet(onSelect) {
   let intl;
   let intl2;
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(14219);
+  let obj = onSelect(10999);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(7358).ActionSheet;
-  const obj2 = { title: intl.string(onSelect(1125).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(7047).TableRowGroup;
-  intl = onSelect(1125).intl;
+  const ActionSheet = onSelect(7360).ActionSheet;
+  const obj2 = { title: intl.string(onSelect(1114).t["sNX1E+"]), hasIcons: false, children: items };
+  const TableRowGroup = onSelect(7054).TableRowGroup;
+  intl = onSelect(1114).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
   if (focusModeEnabled) {
     const obj3 = {
-      accessibilityLabel: intl2.string(onSelect(1125).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1125).t.rk35Gm),
+      accessibilityLabel: intl2.string(onSelect(1114).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1114).t.rk35Gm),
       onPress() {
           onSelect(false, undefined);
         },
       trailing: null,
-      label: intl4.string(onSelect(1125).t.rk35Gm)
+      label: intl4.string(onSelect(1114).t.rk35Gm)
     };
-    let TableRow = tmp(6963).TableRow;
-    intl2 = tmp(1125).intl;
-    intl3 = tmp(1125).intl;
-    intl4 = tmp(1125).intl;
+    let TableRow = tmp(6969).TableRow;
+    intl2 = tmp(1114).intl;
+    intl3 = tmp(1114).intl;
+    intl4 = tmp(1114).intl;
     tmp4Result = tmp4(TableRow, obj3);
   }
   items = [tmp4Result, ];
@@ -197,7 +112,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FocusModeO
     return closure_1_2(TableRow, obj, "" + duration);
   });
   return closure_2(ActionSheet, obj4);
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/FocusModeOptionsActionSheet.tsx");
-
-export default tmp4;
+};

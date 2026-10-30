@@ -1,13 +1,13 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8445
+// Function ID: 8446
 // Name: PrivateChannelIntegrationSystemMessageUtils
-// Dependencies: [1084, 1125, 2065, 2]
+// Dependencies: [1072, 1114, 2062, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8408 (PrivateChannelIntegrationSystemMessageUtils)
-import intl3 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import Constants from "Constants" /* 1084 */;
+// Module 8445 (PrivateChannelIntegrationSystemMessageUtils)
+import intl3 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;

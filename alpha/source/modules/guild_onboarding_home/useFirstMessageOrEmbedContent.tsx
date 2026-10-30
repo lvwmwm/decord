@@ -1,10 +1,10 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 18592
+// Function ID: 18593
 // Name: useFirstMessageOrEmbedContent
 // Dependencies: [2]
 // Exports: default
 
-// Module 18532 (useFirstMessageOrEmbedContent)
+// Module 18592 (useFirstMessageOrEmbedContent)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/useFirstMessageOrEmbedContent.tsx");

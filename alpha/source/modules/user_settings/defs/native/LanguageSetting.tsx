@@ -1,76 +1,20 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17342
+// Function ID: 17343
 // Name: LanguageSetting
-// Dependencies: [2066, 1084, 558, 576, 504, 1125, 11302, 9577, 17289, 2]
+// Dependencies: [2063, 1072, 504, 1114, 11505, 9600, 17343, 2]
 
-// Module 17288 (LanguageSetting)
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import LanguageIcon from "LanguageIcon" /* 9577 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17342 (LanguageSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import LanguageIcon from "LanguageIcon" /* 9600 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLanguageSettingTrailing() {
-  let locale;
-  let stateFromStores;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = stateFromStores(576);
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function l() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = stateFromStores(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const tmpResult2 = stateFromStores(1125);
-    const availableLocales = tmpResult2.getAvailableLocales();
-    const found = availableLocales.find((value) => value.value === stateFromStores);
-    let stringResult = null;
-    if (null != found) {
-      const intl = tmp(1125).intl;
-      stringResult = intl.string(found.localizedName);
-    }
-    cResult[2] = stateFromStores;
-    cResult[3] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function useLanguageSettingTrailing() {
-  let closure_0;
-  let locale;
-  const items = [LocaleStore];
-  const obj = require("get initialized");
-  const tmp = _require;
-  _require = obj.useStateFromStores(items, () => locale.locale);
-  const obj2 = require("intl");
-  const availableLocales = obj2.getAvailableLocales();
-  const found = availableLocales.find((value) => value.value === closure_0);
-  let stringResult = null;
-  if (null != found) {
-    const intl = tmp(1125).intl;
-    stringResult = intl.string(found.localizedName);
-  }
-  return stringResult;
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -78,7 +22,23 @@ let obj = {
   },
   parent: null,
   IconComponent: LanguageIcon.LanguageIcon,
-  useTrailing: tmp2,
+  useTrailing: function useLanguageSettingTrailing() {
+    let closure_0;
+    let locale;
+    const items = [LocaleStore];
+    const obj = require("get initialized");
+    const tmp = _require;
+    _require = obj.useStateFromStores(items, () => locale.locale);
+    const obj2 = require("intl");
+    const availableLocales = obj2.getAvailableLocales();
+    const found = availableLocales.find((value) => value.value === closure_0);
+    let stringResult = null;
+    if (null != found) {
+      const intl = tmp(1114).intl;
+      stringResult = intl.string(found.localizedName);
+    }
+    return stringResult;
+  },
   screen: {
     route: UserSettingsSections.LANGUAGE,
     getComponent() {

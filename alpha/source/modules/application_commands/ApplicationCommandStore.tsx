@@ -1,15 +1,15 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8338
+// Function ID: 8339
 // Name: ApplicationCommandStore
-// Dependencies: [32, 6849, 4908, 7688, 504, 584, 2]
+// Dependencies: [32, 6856, 4912, 7693, 504, 572, 2]
 
-// Module 8361 (ApplicationCommandStore)
+// Module 8338 (ApplicationCommandStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7693 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6849 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6856 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, currentSidebarChannelId;
@@ -159,7 +159,7 @@ function handleUpdateOptionStates(changedOptionStates) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "IconComponent" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "HermesInternal" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

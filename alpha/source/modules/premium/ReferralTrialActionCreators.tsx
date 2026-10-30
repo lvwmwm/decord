@@ -1,19 +1,19 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7626
+// Function ID: 7627
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7622, 1403, 4908, 1084, 1294, 569, 1101, 584, 1254, 7624, 2]
+// Dependencies: [5, 7627, 1398, 4912, 1072, 1283, 559, 1090, 572, 1243, 7629, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7621 (ReferralTrialActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 7626 (ReferralTrialActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7622 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import Constants from "Constants" /* 1084 */;
-import Backoff from "Backoff" /* 569 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7627 */;
+import UserRecord from "UserRecord" /* 1398 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import Constants from "Constants" /* 1072 */;
+import Backoff from "Backoff" /* 559 */;
 import size from "module_2" /* 2 */;
 
 let limit, userTrialOffer, userTrialOffers;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -277,7 +277,7 @@ obj = function _createReferralTrial() {
         obj7.sendClydeError(currentlySelectedChannelId, tmp40.body.code);
       }
     }
-    closure_0 = await "IconComponent";
+    closure_0 = await "HermesInternal";
     let fromServer = null;
     if (null != closure_0.body) {
       fromServer = closure_130_4.createFromServer(closure_0.body);
@@ -308,7 +308,7 @@ obj = function _resolveReferralTrialOffer() {
       const obj7 = { type: "BILLING_REFERRAL_RESOLVE_FAIL", userTrialOfferId };
       const obj5 = closure_131_1(closure_131_2[8]);
       obj5.dispatch(obj7);
-      userTrialOffer = await "IconComponent";
+      userTrialOffer = await "HermesInternal";
       let fromServer = null;
       if (null != userTrialOffer.body) {
         fromServer = closure_131_4.createFromServer(userTrialOffer.body);

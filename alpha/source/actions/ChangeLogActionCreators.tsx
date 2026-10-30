@@ -1,15 +1,15 @@
-// Module ID: 8525
-// Function ID: 8526
+// Module ID: 8559
+// Function ID: 8560
 // Name: ChangeLogActionCreators
-// Dependencies: [5, 7472, 4907, 584, 4833, 1294, 2]
+// Dependencies: [5, 7480, 4911, 572, 4834, 1283, 2]
 
-// Module 8525 (ChangeLogActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import ChangelogConstants from "ChangelogConstants" /* 4907 */;
+// Module 8559 (ChangeLogActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import ChangelogConstants from "ChangelogConstants" /* 4911 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7472 */;
+import ChangelogStore from "ChangelogStore" /* 7480 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, changelog;
@@ -51,9 +51,9 @@ let obj = {
     date = new Date();
     return get(obj);
   },
-  fetchChangelog(arg0, stateFromStores, arg2) {
+  fetchChangelog(arg0, locale, arg2) {
     let closure_0 = arg0;
-    let closure_1 = stateFromStores;
+    let closure_1 = locale;
     let flag = arg2;
     if (arg2 === undefined) {
       flag = false;

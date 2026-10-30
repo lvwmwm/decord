@@ -1,13 +1,13 @@
-// Module ID: 6881
-// Function ID: 6882
+// Module ID: 6888
+// Function ID: 6889
 // Name: getThreadAutoArchiveTimeOnce
-// Dependencies: [6829, 1101, 11, 2]
+// Dependencies: [6836, 1090, 11, 2]
 // Exports: default, getThreadLastActivityTime
 
-// Module 6881 (getThreadAutoArchiveTimeOnce)
+// Module 6888 (getThreadAutoArchiveTimeOnce)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");

@@ -1,297 +1,32 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9214
+// Function ID: 9215
 // Name: VoiceStateIcons
-// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 9202, 9204, 9206, 9208, 9210, 1385, 1199, 8017, 9212, 9213, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 9215, 9217, 9219, 9221, 9223, 1380, 1188, 8023, 9225, 9226, 2]
 
-// Module 9201 (VoiceStateIcons)
+// Module 9214 (VoiceStateIcons)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import inlineStyles from "inlineStyles" /* 8017 */;
-import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9202 */;
-import HeadphonesDenyIcon2 from "HeadphonesDenyIcon" /* 9204 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9206 */;
-import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9208 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9210 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9212 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9213 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import inlineStyles from "inlineStyles" /* 8023 */;
+import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9215 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9219 */;
+import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9221 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9223 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9225 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9226 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
 
-let metroImportAll;
-let metroImportDefault;
+let closure_4;
+let hasOwnProperty;
 let obj2;
 let obj3;
-let closure_3 = ["size", "style"];
-let closure_4 = ["state"];
-const StyleSheet = react_native.StyleSheet;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "r" } };
-obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-createStyles = createStyles.createStyles;
-obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
-let closure_9 = createStyles(obj);
-const memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MuteDeafenIcon(arg0) {
-  let alwaysWhite;
-  let items;
-  let items1;
-  let state;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ style, state, alwaysWhite } = arg0);
-  const tmp5 = closure_9();
-  if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
-    let redTint = null;
-    if (!(undefined !== alwaysWhite && alwaysWhite)) {
-      redTint = tmp5.redTint;
-    }
-    if (cResult[0] === style) {
-      let tmp21;
-      if (cResult[1] === redTint) {
-        tmp21 = cResult[2];
-      }
-      return tmp21;
-    }
-    const obj2 = { style: items, size: "xs" };
-    items = [style, redTint];
-    const tmp23 = metroImportDefault(HeadphonesDenyIcon2.HeadphonesDenyIcon, obj2);
-    cResult[0] = style;
-    cResult[1] = redTint;
-    cResult[2] = tmp23;
-    tmp21 = tmp23;
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED === state) {
-    let tmp17;
-    if (cResult[3] !== style) {
-      const obj3 = { style, size: "xs" };
-      const tmp19 = metroImportDefault(HeadphonesSlashIcon.HeadphonesSlashIcon, obj3);
-      cResult[3] = style;
-      cResult[4] = tmp19;
-      tmp17 = tmp19;
-    } else {
-      tmp17 = cResult[4];
-    }
-    return tmp17;
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
-    let redTint1 = null;
-    if (!(undefined !== alwaysWhite && alwaysWhite)) {
-      redTint1 = tmp5.redTint;
-    }
-    if (cResult[5] === style) {
-      let tmp14;
-      if (cResult[6] === redTint1) {
-        tmp14 = cResult[7];
-      }
-      return tmp14;
-    }
-    const obj4 = { style: items1, size: "xs" };
-    items1 = [style, redTint1];
-    const tmp16 = metroImportDefault(MicrophoneDenyIcon2.MicrophoneDenyIcon, obj4);
-    cResult[5] = style;
-    cResult[6] = redTint1;
-    cResult[7] = tmp16;
-    tmp14 = tmp16;
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_LOCAL === state) {
-    let tmp10;
-    if (cResult[8] !== style) {
-      const obj5 = { style, size: "xs" };
-      const tmp12 = metroImportDefault(MicrophoneDenyIcon2.MicrophoneDenyIcon, obj5);
-      cResult[8] = style;
-      cResult[9] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[9];
-    }
-    return tmp10;
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED === state) {
-    let tmp7;
-    if (cResult[10] !== style) {
-      const obj6 = { style, size: "xs" };
-      const tmp9 = metroImportDefault(MicrophoneSlashIcon.MicrophoneSlashIcon, obj6);
-      cResult[10] = style;
-      cResult[11] = tmp9;
-      tmp7 = tmp9;
-    } else {
-      tmp7 = cResult[11];
-    }
-    return tmp7;
-  } else {
-    const tmpResult = GlobalUtils;
-    tmpResult.assertNever(state);
-  }
-}) : (function MuteDeafenIcon(arg0) {
-  let alwaysWhite;
-  let state;
-  let style;
-  ({ style, state, alwaysWhite } = arg0);
-  if (alwaysWhite === undefined) {
-    alwaysWhite = false;
-  }
-  const tmp = closure_9();
-  if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
-    const items = [style, ];
-    let redTint = null;
-    const HeadphonesDenyIcon = tmp2(9204).HeadphonesDenyIcon;
-    const tmp10 = metroImportDefault;
-    if (!alwaysWhite) {
-      redTint = tmp.redTint;
-    }
-    const obj = { style: items, size: "xs" };
-    items[1] = redTint;
-    return tmp10(HeadphonesDenyIcon, obj);
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED === state) {
-    const obj2 = { style, size: "xs" };
-    return metroImportDefault(HeadphonesSlashIcon.HeadphonesSlashIcon, obj2);
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
-    const items1 = [style, ];
-    let redTint1 = null;
-    const MicrophoneDenyIcon = tmp2(9208).MicrophoneDenyIcon;
-    const tmp7 = metroImportDefault;
-    if (!alwaysWhite) {
-      redTint1 = tmp.redTint;
-    }
-    const obj3 = { style: items1, size: "xs" };
-    items1[1] = redTint1;
-    return tmp7(MicrophoneDenyIcon, obj3);
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_LOCAL === state) {
-    const obj4 = { style, size: "xs" };
-    return metroImportDefault(MicrophoneDenyIcon2.MicrophoneDenyIcon, obj4);
-  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED === state) {
-    const obj5 = { style, size: "xs" };
-    return metroImportDefault(MicrophoneSlashIcon.MicrophoneSlashIcon, obj5);
-  } else {
-    const tmp2Result = GlobalUtils;
-    tmp2Result.assertNever(state);
-  }
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoDisabledSvgIcon(arg0) {
-  let MEDIUM;
-  let items;
-  let style;
-  let tmp10;
-  let tmp12;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(22);
-  if (cResult[0] !== arg0) {
-    ({ size, style } = arg0);
-    const tmp8 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = tmp8;
-    cResult[2] = style;
-    cResult[3] = size;
-    MEDIUM = size;
-    tmp5 = style;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    MEDIUM = cResult[3];
-  }
-  if (undefined === MEDIUM) {
-    MEDIUM = tmp(1199).IconSizes.MEDIUM;
-  }
-  const tmp9 = closure_9();
-  if (cResult[4] !== MEDIUM) {
-    const tmpResult = native;
-    const iconStyle = tmpResult.getIconStyle(MEDIUM);
-    cResult[4] = MEDIUM;
-    cResult[5] = iconStyle;
-    tmp10 = iconStyle;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] !== tmp5) {
-    const flattenResult = StyleSheet.flatten(tmp5);
-    cResult[6] = tmp5;
-    cResult[7] = flattenResult;
-    tmp12 = flattenResult;
-  } else {
-    tmp12 = cResult[7];
-  }
-  let tintColor;
-  if (tmp12 != null) {
-    tintColor = tmp12.tintColor;
-  }
-  if (tintColor == null) {
-    tintColor = tmp9.defaultTint.tintColor;
-  }
-  if (cResult[8] === tmp12) {
-    let tmp16;
-    let tmp18;
-    let tmp17;
-    let tmp22;
-    if (cResult[9] === tmp10) {
-      tmp16 = cResult[10];
-    }
-    if (cResult[11] !== tintColor) {
-      const obj2 = { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor };
-      const tmp20 = metroImportDefault(inlineStyles.Path, obj2);
-      const obj3 = { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor };
-      const tmp21 = metroImportDefault(inlineStyles.Path, obj3);
-      cResult[11] = tintColor;
-      cResult[12] = tmp20;
-      cResult[13] = tmp21;
-      tmp18 = tmp21;
-      tmp17 = tmp20;
-    } else {
-      tmp17 = cResult[12];
-      tmp18 = cResult[13];
-    }
-    if (cResult[14] !== tmp9.redTint.tintColor) {
-      const obj4 = { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp9.redTint.tintColor };
-      const tmp24 = metroImportDefault(inlineStyles.Path, obj4);
-      cResult[14] = tmp9.redTint.tintColor;
-      cResult[15] = tmp24;
-      tmp22 = tmp24;
-    } else {
-      tmp22 = cResult[15];
-    }
-    if (cResult[16] === tmp4) {
-      if (cResult[17] === tmp16) {
-        if (cResult[18] === tmp17) {
-          if (cResult[19] === tmp18) {
-            let tmp25;
-            if (cResult[20] === tmp22) {
-              tmp25 = cResult[21];
-            }
-            return tmp25;
-          }
-        }
-      }
-    }
-    const obj5 = { style: tmp16, viewBox: "0 0 24 24", children: items };
-    const tmp28 = inlineStylesDefault;
-    const merged = Object.assign(tmp4);
-    items = [tmp17, tmp18, tmp22];
-    const tmp32 = metroImportAll(tmp28, obj5);
-    cResult[16] = tmp4;
-    cResult[17] = tmp16;
-    cResult[18] = tmp17;
-    cResult[19] = tmp18;
-    cResult[20] = tmp22;
-    cResult[21] = tmp32;
-    tmp25 = tmp32;
-  }
-  const items1 = [tmp10, tmp12];
-  cResult[8] = tmp12;
-  cResult[9] = tmp10;
-  cResult[10] = items1;
-  tmp16 = items1;
-}) : (function VideoDisabledSvgIcon(size) {
+function VideoDisabledSvgIcon(size) {
   let items;
   let items1;
   let MEDIUM = size.size;
@@ -300,7 +35,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoD
   }
   const style = size.style;
   const merged = Object.assign(size, Object.assign({ size: 0, style: 0 }));
-  const tmp4 = closure_9();
+  const tmp4 = closure_6();
   const obj = native;
   const iconStyle = obj.getIconStyle(MEDIUM);
   const flattenResult = StyleSheet.flatten(style);
@@ -315,115 +50,90 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoD
   const tmp10 = inlineStylesDefault;
   const merged1 = Object.assign(merged);
   items = [iconStyle, flattenResult];
-  items1 = [metroImportDefault(inlineStyles.Path, { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor }), metroImportDefault(inlineStyles.Path, { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor }), ];
+  items1 = [React3(inlineStyles.Path, { d: "M8.48485 19H13C15.2091 19 17 17.2091 17 15L19.563 17.0504C20.5451 17.8361 22 17.1368 22 15.8791V8.12094C22 7.35968 21.467 6.80301 20.8285 6.65636L8.48485 19Z", fill: tintColor }), React3(inlineStyles.Path, { d: "M14.9873 5.52783C14.4019 5.192 13.7233 5 13 5H6C3.79086 5 2 6.79086 2 9V15C2 15.9811 2.35325 16.8798 2.93949 17.5757L14.9873 5.52783Z", fill: tintColor }), ];
   const obj3 = { d: "M21.2785 2.70712C20.888 2.31659 20.2549 2.31659 19.8643 2.70711L2.70711 19.8643C2.31658 20.2549 2.31658 20.888 2.70711 21.2785L2.72146 21.2929C3.11199 21.6834 3.74515 21.6834 4.13567 21.2929L21.2929 4.13568C21.6834 3.74515 21.6834 3.11199 21.2929 2.72147L21.2785 2.70712Z", fill: tmp4.redTint.tintColor };
-  items1[2] = metroImportDefault(inlineStyles.Path, obj3);
-  return metroImportAll(tmp10, obj2);
+  items1[2] = React3(inlineStyles.Path, obj3);
+  return hasOwnProperty(tmp10, obj2);
+}
+const StyleSheet = react_native.StyleSheet;
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "getCurrentUser" } };
+obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
+createStyles = createStyles.createStyles;
+obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let closure_6 = createStyles(obj);
+const memoResult = react.memo(function MuteDeafenIcon(arg0) {
+  let alwaysWhite;
+  let state;
+  let style;
+  ({ style, state, alwaysWhite } = arg0);
+  if (alwaysWhite === undefined) {
+    alwaysWhite = false;
+  }
+  const tmp = closure_6();
+  if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED_SERVER === state) {
+    const items = [style, ];
+    let redTint = null;
+    const HeadphonesDenyIcon = tmp2(9217).HeadphonesDenyIcon;
+    const tmp10 = React3;
+    if (!alwaysWhite) {
+      redTint = tmp.redTint;
+    }
+    const obj = { style: items, size: "xs" };
+    items[1] = redTint;
+    return tmp10(HeadphonesDenyIcon, obj);
+  } else if (VoiceStateIconUtils.MuteDeafenIconState.DEAFENED === state) {
+    const obj2 = { style, size: "xs" };
+    return React3(HeadphonesSlashIcon.HeadphonesSlashIcon, obj2);
+  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_SERVER === state) {
+    const items1 = [style, ];
+    let redTint1 = null;
+    const MicrophoneDenyIcon = tmp2(9221).MicrophoneDenyIcon;
+    const tmp7 = React3;
+    if (!alwaysWhite) {
+      redTint1 = tmp.redTint;
+    }
+    const obj3 = { style: items1, size: "xs" };
+    items1[1] = redTint1;
+    return tmp7(MicrophoneDenyIcon, obj3);
+  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED_LOCAL === state) {
+    const obj4 = { style, size: "xs" };
+    return React3(MicrophoneDenyIcon2.MicrophoneDenyIcon, obj4);
+  } else if (VoiceStateIconUtils.MuteDeafenIconState.MUTED === state) {
+    const obj5 = { style, size: "xs" };
+    return React3(MicrophoneSlashIcon.MicrophoneSlashIcon, obj5);
+  } else {
+    const tmp2Result = GlobalUtils;
+    tmp2Result.assertNever(state);
+  }
 });
-const memo2 = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoIcon(state) {
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(13);
-  if (cResult[0] !== state) {
-    state = state.state;
-    const tmp8 = _objectWithoutProperties(state, closure_4);
-    cResult[0] = state;
-    cResult[1] = tmp8;
-    cResult[2] = state;
-    tmp5 = state;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const tmp9 = closure_9();
-  if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === tmp5) {
-    if (cResult[3] === tmp4.style) {
-      let tmp25;
-      if (cResult[4] === tmp9.noTint) {
-        tmp25 = cResult[5];
-      }
-      if (cResult[6] === tmp4) {
-        let tmp26;
-        if (cResult[7] === tmp25) {
-          tmp26 = cResult[8];
-        }
-        return tmp26;
-      }
-      const obj2 = { source: AssetRegistryDefault, style: tmp25 };
-      const Icon2 = tmp(1199).Icon;
-      const merged = Object.assign(tmp4);
-      const tmp32 = metroImportDefault(Icon2, obj2);
-      cResult[6] = tmp4;
-      cResult[7] = tmp25;
-      cResult[8] = tmp32;
-      tmp26 = tmp32;
-    }
-    const items = [tmp4.style, tmp9.noTint];
-    cResult[3] = tmp4.style;
-    cResult[4] = tmp9.noTint;
-    cResult[5] = items;
-    tmp25 = items;
-  } else if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL === tmp5) {
-    let tmp18;
-    if (cResult[9] !== tmp4) {
-      const obj3 = {};
-      const merged1 = Object.assign(tmp4);
-      const tmp24 = metroImportDefault(closure_10, obj3);
-      cResult[9] = tmp4;
-      cResult[10] = tmp24;
-      tmp18 = tmp24;
-    } else {
-      tmp18 = cResult[10];
-    }
-    return tmp18;
-  } else if (VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE === tmp5) {
-    let tmp11;
-    if (cResult[11] !== tmp4) {
-      const obj4 = { source: AssetRegistryDefault2 };
-      const Icon = tmp(1199).Icon;
-      const merged2 = Object.assign(tmp4);
-      const tmp17 = metroImportDefault(Icon, obj4);
-      cResult[11] = tmp4;
-      cResult[12] = tmp17;
-      tmp11 = tmp17;
-    } else {
-      tmp11 = cResult[12];
-    }
-    return tmp11;
-  } else {
-    const tmpResult = GlobalUtils;
-    tmpResult.assertNever(tmp5);
-  }
-}) : (function VideoIcon(state) {
+const memoResult1 = react.memo(function VideoIcon(state) {
   let items;
   state = state.state;
   const merged = Object.assign(state, Object.assign({ state: 0 }));
-  const tmp2 = closure_9();
+  const tmp2 = closure_6();
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = { source: AssetRegistryDefault, style: items };
-    const Icon2 = tmp3(1199).Icon;
+    const Icon2 = tmp3(1188).Icon;
     const merged1 = Object.assign(merged);
     items = [merged.style, tmp2.noTint];
-    return metroImportDefault(Icon2, obj);
+    return React3(Icon2, obj);
   } else if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     const obj2 = {};
     const merged2 = Object.assign(merged);
-    return metroImportDefault(closure_10, obj2);
+    return React3(VideoDisabledSvgIcon, obj2);
   } else if (VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = { source: AssetRegistryDefault2 };
-    const Icon = tmp3(1199).Icon;
+    const Icon = tmp3(1188).Icon;
     const merged3 = Object.assign(merged);
-    return metroImportDefault(Icon, obj3);
+    return React3(Icon, obj3);
   } else {
     const tmp3Result = GlobalUtils;
     tmp3Result.assertNever(state);
   }
-}));
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoiceStateIcons.tsx");
 
 export const MuteDeafenIcon = memoResult;
-export const VideoIcon = memo2Result;
+export const VideoIcon = memoResult1;

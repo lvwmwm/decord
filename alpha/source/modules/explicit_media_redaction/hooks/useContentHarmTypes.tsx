@@ -1,231 +1,28 @@
-// Module ID: 13107
-// Function ID: 13108
+// Module ID: 11062
+// Function ID: 11063
 // Name: useContentHarmTypes
-// Dependencies: [19, 1243, 4857, 4947, 1389, 558, 576, 7449, 504, 7457, 7453, 2]
+// Dependencies: [19, 1232, 4858, 4951, 1384, 7457, 504, 7465, 7461, 2]
+// Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 13107 (useContentHarmTypes)
-import react2 from "react" /* 576 */;
+// Module 11062 (useContentHarmTypes)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7457 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp;
-const ObscuredMediaUtils = tmp(7449);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHarmTypesBitmaskForChannelAndAuthorId(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let currentUser;
-  let first;
-  let stateFromStores2;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  const tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(18);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = tmp(7449);
-    const eligibleHarmTypesConfigsForContext = tmpResult.getEligibleHarmTypesConfigsForContext();
-    cResult[0] = eligibleHarmTypesConfigsForContext;
-    first = eligibleHarmTypesConfigsForContext;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserStore];
-    const fn = function p() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[1] = items;
-    cResult[2] = fn;
-    tmp6 = fn;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores = tmpResult4.useStateFromStores(tmp5, tmp6);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [stateFromStores2, RelationshipStore];
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === arg1) {
-    let tmp12;
-    let tmp16;
-    let tmp15;
-    let tmp14;
-    let arr6;
-    if (cResult[5] === arg0) {
-      tmp12 = cResult[6];
-    }
-    const tmpResult5 = tmp(504);
-    const stateFromStores1 = tmpResult5.useStateFromStores(tmp9, tmp12);
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [stateFromStores1];
-      const fn2 = function b() {
-        let settings;
-        return first.reduce((acc, harmType) => {
-          const obj = {};
-          const merged = Object.assign(acc);
-          obj[harmType.harmType] = harmType.getProtoUserSettings(settings.settings);
-          return obj;
-        }, {});
-      };
-      const items3 = [first];
-      cResult[7] = items2;
-      cResult[8] = fn2;
-      cResult[9] = items3;
-      tmp16 = items3;
-      tmp15 = fn2;
-      tmp14 = items2;
-    } else {
-      tmp14 = cResult[7];
-      tmp15 = cResult[8];
-      tmp16 = cResult[9];
-    }
-    const tmpResult6 = tmp(504);
-    stateFromStores2 = tmpResult6.useStateFromStores(tmp14, tmp15, tmp16, tmp(7457).areSettingsEqual);
-    if (null != stateFromStores1) {
-      let tmp26;
-      let id;
-      if (stateFromStores != null) {
-        id = stateFromStores.id;
-      }
-      if (arg1 !== id) {
-        if (null != stateFromStores) {
-          let tmp29;
-          if (cResult[12] === stateFromStores1) {
-            let tmp28;
-            if (cResult[13] === stateFromStores2) {
-              tmp28 = cResult[14];
-            }
-            arr6 = tmp28;
-          }
-          const _Symbol3 = Symbol;
-          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            class B {
-              constructor(arg0) {
-                return null != arg0;
-              }
-            }
-            cResult[15] = B;
-            tmp29 = B;
-          } else {
-            class B {
-              constructor(arg0) {
-                return null != arg0;
-              }
-            }
-          }
-          const mapped = first.map((harmType) => {
-            let tmp3 = null;
-            if (null != stateFromStores1) {
-              tmp3 = harmType.getUserSettingsWithDefaults(tmp)[tmp2];
-            }
-            harmType = null;
-            const obj = ObscuredMediaUtils;
-            if (obj.shouldRedactForSettingValue(tmp3)) {
-              harmType = harmType.harmType;
-            }
-            return harmType;
-          });
-          const found = mapped.filter(tmp29);
-          cResult[12] = stateFromStores1;
-          cResult[13] = stateFromStores2;
-          cResult[14] = found;
-          tmp28 = found;
-        }
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
-          constructor(arg0) {
-            return null != arg0;
-          }
-        }
-        cResult[11] = tmp27;
-        tmp26 = tmp27;
-      } else {
-        class B {
-          constructor(arg0) {
-            return null != arg0;
-          }
-        }
-      }
-      arr6 = tmp26;
-    } else {
-      class B {
-        constructor(arg0) {
-          return null != arg0;
-        }
-      }
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class B {
-          constructor(arg0) {
-            return null != arg0;
-          }
-        }
-        cResult[10] = tmp24;
-        arr6 = tmp24;
-      } else {
-        class B {
-          constructor(arg0) {
-            return null != arg0;
-          }
-        }
-      }
-    }
-    if (0 === arr6.length) {
-      class B {
-        constructor(arg0) {
-          return null != arg0;
-        }
-      }
-    } else {
-      class B {
-        constructor(arg0) {
-          return null != arg0;
-        }
-      }
-    }
-    return tmp31;
-  }
-  class T {
-    constructor() {
-      const items = [ChannelStore, RelationshipStore];
-      const obj = ObscuredMediaUtils;
-      return obj.getChannelTypeById(closure_0, closure_1, items);
-    }
-  }
-  cResult[4] = arg1;
-  cResult[5] = arg0;
-  cResult[6] = T;
-  tmp12 = T;
-}) : (function useEnabledHarmTypesBitmaskForChannelAndAuthorId(arg0, arg1) {
+function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
   let NONE;
-  let closure_0;
-  let closure_1;
   let currentUser;
   let stateFromStores1;
   let stateFromStores2;
-  _require = arg0;
-  dependencyMap = arg1;
+  _require = channelId;
+  dependencyMap = authorId;
   let tmp = _require;
   let tmp2 = dependencyMap;
   let obj = require("ObscuredMediaUtils");
@@ -238,7 +35,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
   stateFromStores1 = obj3.useStateFromStores(items1, () => {
     const items = [ChannelStore, RelationshipStore];
     const obj = ObscuredMediaUtils;
-    return obj.getChannelTypeById(closure_0, closure_1, items);
+    return obj.getChannelTypeById(channelId, authorId, items);
   });
   const items2 = [stateFromStores];
   const items3 = [eligibleHarmTypesConfigsForContext];
@@ -252,12 +49,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
       return obj;
     }, {});
   }, items3, require("SensitiveMediaRedactionSettingUtils").areSettingsEqual);
-  const items4 = [stateFromStores1, eligibleHarmTypesConfigsForContext, stateFromStores2, arg1, stateFromStores];
+  const items4 = [stateFromStores1, eligibleHarmTypesConfigsForContext, stateFromStores2, authorId, stateFromStores];
   const memo = eligibleHarmTypesConfigsForContext.useMemo(() => {
     if (null != stateFromStores1) {
       const tmp2 = stateFromStores;
       let id;
-      const tmp = closure_1;
+      const tmp = authorId;
       if (stateFromStores != null) {
         id = tmp2.id;
       }
@@ -269,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
               tmp3 = harmType.getUserSettingsWithDefaults(tmp)[tmp2];
             }
             harmType = null;
-            const obj = closure_0(closure_1[7]);
+            const obj = channelId(authorId[5]);
             if (obj.shouldRedactForSettingValue(tmp3)) {
               harmType = harmType.harmType;
             }
@@ -282,45 +79,23 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHa
     }
   }, items4);
   if (0 === memo.length) {
-    NONE = tmp(7453).ContentHarmTypeBitMask.NONE;
+    NONE = tmp(7461).ContentHarmTypeBitMask.NONE;
   } else {
-    const tmpResult = tmp(7449);
+    const tmpResult = tmp(7457);
     NONE = tmpResult.contentHarmTypesToFlags(memo);
   }
   return NONE;
-});
-let closure_7 = tmp2;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnabledHarmTypesBitmaskForMessage(message) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== message) {
-    let obj2;
-    if (null == message) {
-      obj2 = {};
-    } else {
-      const tmpResult = ObscuredMediaUtils;
-      obj2 = tmpResult.getChannelIdAndAuthorIdFromMessage(message);
-    }
-    cResult[0] = message;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return closure_7(tmp4.channelId, tmp4.authorId);
-}) : (function useEnabledHarmTypesBitmaskForMessage(message) {
+}
+const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useContentHarmTypes.tsx");
+
+export { useEnabledHarmTypesBitmaskForChannelAndAuthorId };
+export function useEnabledHarmTypesBitmaskForMessage(stateFromStores) {
   let obj2;
-  if (null == message) {
+  if (null == stateFromStores) {
     obj2 = {};
   } else {
     const obj = ObscuredMediaUtils;
-    obj2 = obj.getChannelIdAndAuthorIdFromMessage(message);
+    obj2 = obj.getChannelIdAndAuthorIdFromMessage(stateFromStores);
   }
-  return closure_7(obj2.channelId, obj2.authorId);
-});
-const result = size.fileFinishedImporting("modules/explicit_media_redaction/hooks/useContentHarmTypes.tsx");
-
-export const useEnabledHarmTypesBitmaskForChannelAndAuthorId = tmp2;
-export const useEnabledHarmTypesBitmaskForMessage = tmp3;
+  return useEnabledHarmTypesBitmaskForChannelAndAuthorId(obj2.channelId, obj2.authorId);
+}

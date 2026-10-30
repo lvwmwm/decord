@@ -1,10 +1,10 @@
-// Module ID: 5245
-// Function ID: 5246
+// Module ID: 5251
+// Function ID: 5252
 // Name: reanimated/AccessibilityPreferencesSharedValue
-// Dependencies: [5086, 2]
+// Dependencies: [5090, 2]
 
-// Module 5245 (reanimated/AccessibilityPreferencesSharedValue)
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
+// Module 5251 (reanimated/AccessibilityPreferencesSharedValue)
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
 import size from "module_2" /* 2 */;
 
 const mutable = ReanimatedRexport.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });

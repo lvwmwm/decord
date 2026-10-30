@@ -1,46 +1,31 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5062
+// Function ID: 5063
 // Name: DcfNewUserCooldownExperiment
-// Dependencies: [1453, 1101, 558, 576, 2]
-// Exports: getDcfNewUserCooldown
+// Dependencies: [1448, 1090, 2]
+// Exports: getDcfNewUserCooldown, useDcfNewUserCooldown
 
-// Module 5058 (DcfNewUserCooldownExperiment)
-import react from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 5062 (DcfNewUserCooldownExperiment)
+import DurationsDefault from "Durations" /* 1090 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 let obj3;
-let obj = { name: "2026-08-dcf-new-user-cooldown", kind: "user", defaultConfig: obj2, variations: obj3 };
-obj2 = { newUserCooldownMs: DurationsDefault.Millis.DAY };
 const createApexExperiment = ApexExperiment.createApexExperiment;
-obj3 = { 1: null, 2: { newUserCooldownMs: 2 * DurationsDefault.Millis.DAY }, 3: null };
+const obj = { name: "2026-08-dcf-new-user-cooldown", kind: "user", defaultConfig: { newUserCooldownMs: DurationsDefault.Millis.DAY }, variations: obj3 };
+obj3 = { 1: null, 2: null, 3: null };
+({ newUserCooldownMs: DurationsDefault.Millis.DAY });
+obj3[1] = { newUserCooldownMs: 2 * DurationsDefault.Millis.DAY };
 ({ newUserCooldownMs: 2 * DurationsDefault.Millis.DAY });
 obj3[2] = { newUserCooldownMs: 3 * DurationsDefault.Millis.DAY };
 ({ newUserCooldownMs: 3 * DurationsDefault.Millis.DAY });
 obj3[3] = { newUserCooldownMs: 7 * DurationsDefault.Millis.DAY };
 ({ newUserCooldownMs: 7 * DurationsDefault.Millis.DAY });
-let closure_2 = createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDcfNewUserCooldown() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "useDcfNewUserCooldown" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  return closure_2.useConfig(first).newUserCooldownMs;
-}) : (function useDcfNewUserCooldown() {
-  return closure_2.useConfig({ location: "useDcfNewUserCooldown" }).newUserCooldownMs;
-});
+let closure_0 = createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/dismissible_content/DcfNewUserCooldownExperiment.tsx");
 
-export const useDcfNewUserCooldown = tmp3;
+export function useDcfNewUserCooldown() {
+  return closure_0.useConfig({ location: "useDcfNewUserCooldown" }).newUserCooldownMs;
+}
 export function getDcfNewUserCooldown() {
-  return closure_2.getConfig({ location: "getDcfNewUserCooldown" }).newUserCooldownMs;
+  return closure_0.getConfig({ location: "getDcfNewUserCooldown" }).newUserCooldownMs;
 }

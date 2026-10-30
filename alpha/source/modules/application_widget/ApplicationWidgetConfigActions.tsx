@@ -1,18 +1,18 @@
-// Module ID: 10900
-// Function ID: 10901
+// Module ID: 10923
+// Function ID: 10924
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 10901, 1084, 5133, 569, 1101, 584, 1294, 1254, 2]
+// Dependencies: [5, 10924, 1072, 5139, 559, 1090, 572, 1283, 1243, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 10900 (ApplicationWidgetConfigActions)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5133 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10901 */;
+// Module 10923 (ApplicationWidgetConfigActions)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5139 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10924 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Backoff from "Backoff" /* 569 */;
-import Dispatcher from "Dispatcher" /* 584 */;
+import Backoff from "Backoff" /* 559 */;
+import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationWidgetConfigStore = ApplicationWidgetConfigStore2;
@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

@@ -1,13 +1,13 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15852
+// Function ID: 15853
 // Name: supportsWindowsLoopbackCapture
-// Dependencies: [1381, 15814, 4819, 2]
+// Dependencies: [1376, 15853, 4820, 2]
 // Exports: default
 
-// Module 15813 (supportsWindowsLoopbackCapture)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
-import _modDef15814 from "module_15814" /* 15814 */;
+// Module 15852 (supportsWindowsLoopbackCapture)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
+import _modDef15853 from "module_15853" /* 15853 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_engine/supportsWindowsLoopbackCapture.tsx");
@@ -16,8 +16,8 @@ export default function supportsWindowsLoopbackCapture() {
   const obj = PlatformUtils;
   let isWindowsResult = obj.isWindows();
   if (isWindowsResult) {
-    const satisfies = _modDef15814.satisfies;
-    _modDef15814;
+    const satisfies = _modDef15853.satisfies;
+    _modDef15853;
     const tmp5 = DiscordNativeDefault;
     let release;
     if (tmp5 != null) {

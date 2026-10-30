@@ -1,85 +1,38 @@
 // Module ID: 1847
 // Function ID: 1848
-// Dependencies: [1656]
-// Exports: useAnimatedKeyboardHandler, useFocusedInputLayoutHandler
+// Dependencies: [32, 19, 17, 1641]
+// Exports: useWindowDimensions
 
 // Module 1847
-import _mod1656 from "module_1656" /* 1656 */;
+import react_native from "react-native" /* 17 */;
+import KeyboardControllerNative from "KeyboardControllerNative" /* 1641 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-const __initData = { code: "function pnpm_reanimatedNativeTs1(event){const{handlers,context}=this.__closure;const{onKeyboardMoveStart:onKeyboardMoveStart,onKeyboardMove:onKeyboardMove,onKeyboardMoveEnd:onKeyboardMoveEnd,onKeyboardMoveInteractive:onKeyboardMoveInteractive}=handlers;if(onKeyboardMoveStart&&event.eventName.endsWith(\"onKeyboardMoveStart\")){onKeyboardMoveStart(event,context);}if(onKeyboardMove&&event.eventName.endsWith(\"onKeyboardMove\")){onKeyboardMove(event,context);}if(onKeyboardMoveEnd&&event.eventName.endsWith(\"onKeyboardMoveEnd\")){onKeyboardMoveEnd(event,context);}if(onKeyboardMoveInteractive&&event.eventName.endsWith(\"onKeyboardMoveInteractive\")){onKeyboardMoveInteractive(event,context);}}" };
-const __initData2 = { code: "function pnpm_reanimatedNativeTs2(event){const{handlers,context}=this.__closure;const{onFocusedInputLayoutChanged:onFocusedInputLayoutChanged}=handlers;if(onFocusedInputLayoutChanged&&event.eventName.endsWith(\"onFocusedInputLayoutChanged\")){onFocusedInputLayoutChanged(event,context);}}" };
+let c3;
+let closure_4;
+({ useEffect: c3, useState: closure_4 } = react);
+const Dimensions = react_native.Dimensions;
+const size = Dimensions.get("window");
+let closure_5 = { width: size.width, height: size.height };
+let WindowDimensionsEvents = KeyboardControllerNative.WindowDimensionsEvents;
+WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+  closure_5 = arg0;
+});
 
-export const useAnimatedKeyboardHandler = (handlers, items10) => {
-  let closure_0 = handlers;
-  const obj = _mod1656;
-  const handler = obj.useHandler(handlers, items10);
-  const context = handler.context;
-  const doDependenciesDiffer = handler.doDependenciesDiffer;
-  const fn = function v(eventName) {
-    let onKeyboardMove;
-    let onKeyboardMoveEnd;
-    let onKeyboardMoveInteractive;
-    let onKeyboardMoveStart;
-    ({ onKeyboardMoveStart, onKeyboardMove, onKeyboardMoveEnd, onKeyboardMoveInteractive } = closure_0);
-    let endsWithResult = onKeyboardMoveStart;
-    if (endsWithResult) {
-      eventName = eventName.eventName;
-      endsWithResult = eventName.endsWith("onKeyboardMoveStart");
-    }
-    if (endsWithResult) {
-      onKeyboardMoveStart(eventName, context);
-    }
-    let endsWithResult1 = onKeyboardMove;
-    if (endsWithResult1) {
-      const eventName2 = eventName.eventName;
-      endsWithResult1 = eventName2.endsWith("onKeyboardMove");
-    }
-    if (endsWithResult1) {
-      onKeyboardMove(eventName, context);
-    }
-    let endsWithResult2 = onKeyboardMoveEnd;
-    if (endsWithResult2) {
-      const eventName3 = eventName.eventName;
-      endsWithResult2 = eventName3.endsWith("onKeyboardMoveEnd");
-    }
-    if (endsWithResult2) {
-      onKeyboardMoveEnd(eventName, context);
-    }
-    let endsWithResult3 = onKeyboardMoveInteractive;
-    if (endsWithResult3) {
-      const eventName4 = eventName.eventName;
-      endsWithResult3 = eventName4.endsWith("onKeyboardMoveInteractive");
-    }
-    if (endsWithResult3) {
-      const result = onKeyboardMoveInteractive(eventName, context);
-    }
-  };
-  fn.__closure = { handlers, context };
-  fn.__workletHash = 6092807753388;
-  fn.__initData = __initData;
-  const obj2 = _mod1656;
-  return obj2.useEvent(fn, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], doDependenciesDiffer);
-};
-export const useFocusedInputLayoutHandler = (handlers, items10) => {
-  let closure_0 = handlers;
-  const obj = _mod1656;
-  const handler = obj.useHandler(handlers, items10);
-  const context = handler.context;
-  const doDependenciesDiffer = handler.doDependenciesDiffer;
-  const fn = function v(eventName) {
-    const onFocusedInputLayoutChanged = closure_0.onFocusedInputLayoutChanged;
-    let endsWithResult = onFocusedInputLayoutChanged;
-    if (endsWithResult) {
-      eventName = eventName.eventName;
-      endsWithResult = eventName.endsWith("onFocusedInputLayoutChanged");
-    }
-    if (endsWithResult) {
-      const result = onFocusedInputLayoutChanged(eventName, context);
-    }
-  };
-  fn.__closure = { handlers, context };
-  fn.__workletHash = 9976853307145;
-  fn.__initData = __initData2;
-  const obj2 = _mod1656;
-  return obj2.useEvent(fn, ["onFocusedInputLayoutChanged"], doDependenciesDiffer);
+export const useWindowDimensions = () => {
+  let closure_0;
+  let first;
+  [first, closure_0] = closure_4(closure_5);
+  closure_3(() => {
+    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
+    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
+      closure_0(arg0);
+    });
+    closure_0(closure_1_5);
+    return () => {
+      closure_0.remove();
+    };
+  }, []);
+  return first;
 };

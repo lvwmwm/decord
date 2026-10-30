@@ -1,32 +1,32 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8854
+// Function ID: 8855
 // Name: MediaModal
-// Dependencies: [19, 17, 8821, 1999, 1084, 21, 8792, 8822, 8794, 504, 1381, 8797, 8800, 8827, 8829, 8830, 1894, 8860, 5249, 5250, 5247, 8862, 2000, 14693, 8795, 14711, 14713, 14718, 14722, 14723, 2]
+// Dependencies: [19, 17, 8855, 1994, 1072, 21, 8826, 8856, 8828, 504, 1376, 8831, 8834, 8861, 8863, 8864, 1889, 8894, 5255, 5256, 5253, 8896, 1995, 14726, 8829, 14745, 14747, 14752, 14756, 14757, 2]
 // Exports: default
 
-// Module 8820 (MediaModal)
+// Module 8854 (MediaModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import HapticUtils from "HapticUtils" /* 5249 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5250 */;
-import useVideoControls from "useVideoControls" /* 8794 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8797 */;
-import MediaModalPortal from "MediaModalPortal" /* 8800 */;
-import MediaModalTiktok from "MediaModalTiktok" /* 8827 */;
-import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 8829 */;
-import common_Video from "common/Video" /* 8830 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 14693 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 14711 */;
-import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 14713 */;
-import MediaModalVideoDefault from "MediaModalVideo" /* 14718 */;
-import MediaModalImageDefault from "MediaModalImage" /* 14722 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import HapticUtils from "HapticUtils" /* 5255 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5256 */;
+import useVideoControls from "useVideoControls" /* 8828 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8831 */;
+import MediaModalPortal from "MediaModalPortal" /* 8834 */;
+import MediaModalTiktok from "MediaModalTiktok" /* 8861 */;
+import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 8863 */;
+import common_Video from "common/Video" /* 8864 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 14726 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 14745 */;
+import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 14747 */;
+import MediaModalVideoDefault from "MediaModalVideo" /* 14752 */;
+import MediaModalImageDefault from "MediaModalImage" /* 14756 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppFreezeStore from "AppFreezeStore" /* 8821 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
+import AppFreezeStore from "AppFreezeStore" /* 8855 */;
+import AppStateStore from "AppStateStore" /* 1994 */;
 import size_mod from "module_2" /* 2 */;
 
 const MediaModalPortalDefault = MediaModalPortal;
@@ -152,7 +152,7 @@ export default function MediaModal(initialIndex) {
         portalControls = tmpResult5.createWebFileVideoControls();
       } else {
         const tmpResult6 = common_Video;
-        portalControls = tmpResult6.createVideoControls(tmp(8794).setPausedState);
+        portalControls = tmpResult6.createVideoControls(tmp(8828).setPausedState);
       }
       tmp5.current[combined] = portalControls;
       return portalControls;
@@ -210,11 +210,11 @@ export default function MediaModal(initialIndex) {
         const result = tmp2Result.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         const obj2 = { source: selectedMediaSource, disableDownload, shareable: tmp };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(8862, tmp3.paths), "MediaShareActionSheet", obj2);
+        obj3.openLazy(asyncRequire(8896, tmp3.paths), "MediaShareActionSheet", obj2);
       }
     }
   }, items5);
-  const callback4 = flag2.useCallback((onClose, overlayEnabled) => jsx(MediaModalOverlayDefault, { syncer: mediaViewerSyncer, getVideoControls: callback1, onClose, shareable: flag2, disableDownload, disableMediaOverlayButton, disableMediaOverlayFooter, contextName, contextIcon, overlayEnabled, onIndexChange }), items6);
+  const callback4 = flag2.useCallback((onClose, overlayEnabled, entranceAnimationDriver) => jsx(MediaModalOverlayDefault, { entranceAnimationDriver, syncer: mediaViewerSyncer, getVideoControls: callback1, onClose, shareable: flag2, disableDownload, disableMediaOverlayButton, disableMediaOverlayFooter, contextName, contextIcon, overlayEnabled, onIndexChange }), items6);
   const obj4 = num(onCloseCallback[24]);
   const mediaPlayerMutedStore = obj4.useMediaPlayerMutedStore((isMuted) => isMuted.isMuted);
   const items7 = [callback1, callback2, mediaPlayerMutedStore, videoStateStore];

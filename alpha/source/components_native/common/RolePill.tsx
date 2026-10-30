@@ -1,23 +1,19 @@
-// Module ID: 10781
-// Function ID: 10782
+// Module ID: 10804
+// Function ID: 10805
 // Name: RolePill
-// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 4833, 7342, 7345, 5700, 7359, 7361, 5271, 6968, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 575, 4834, 7349, 7352, 5706, 6974, 7366, 7368, 5619, 2]
+// Exports: default
 
-// Module 10781 (RolePill)
+// Module 10804 (RolePill)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import ClipboardUtils from "ClipboardUtils" /* 7345 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7359 */;
-import RoleIconDefault from "RoleIcon" /* 7361 */;
+import nativeDefault from "native" /* 575 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import ClipboardUtils from "ClipboardUtils" /* 7352 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
-
-let importDefault;
 
 let closure_4;
 let hasOwnProperty;
@@ -38,192 +34,10 @@ obj3 = { flexDirection: "row", alignItems: "center", paddingHorizontal: 8, paddi
 size = { marginRight: 8, borderRadius: nativeDefault.radii.sm, height: 12, width: 12, backgroundColor: nativeDefault.colors.ICON_MUTED };
 size1 = { marginRight: 8, borderRadius: nativeDefault.radii.sm, height: 12, width: 12 };
 let closure_8 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(role) {
-  let closure_1;
-  let color;
-  let disableInteraction;
-  let guildId;
-  let items;
-  let obj6;
-  let tmp23;
-  let tmp24;
-  let tmp30;
-  let obj = role(576);
-  const cResult = obj.c(30);
-  role = role.role;
-  ({ guildId, color, disableInteraction } = role);
-  const DeveloperMode = role(4833).DeveloperMode;
-  const setting = DeveloperMode.useSetting();
-  if (cResult[0] === guildId) {
-    let tmp5;
-    let guild_connections;
-    if (cResult[1] === role.id) {
-      tmp5 = cResult[2];
-    }
-    const tmpResult = role(7342);
-    const roleIconProps = tmpResult.useRoleIconProps(tmp5);
-    if (cResult[3] !== role.name) {
-      let name = role.name;
-      importDefault = name;
-      if (role.name.length > closure_5) {
-        const name1 = role.name;
-        const _HermesInternal = HermesInternal;
-        const combined = "" + name1.slice(0, tmp8) + "...";
-        importDefault = combined;
-        name = combined;
-      }
-      cResult[3] = role.name;
-      cResult[4] = name;
-    } else {
-      importDefault = cResult[4];
-    }
-    if (color == null) {
-      color = role.colorString;
-    }
-    const tags = role.tags;
-    if (tags != null) {
-      guild_connections = tags.guild_connections;
-    }
-    if (cResult[5] === tmp7) {
-      let tmp12;
-      let tmp18Result;
-      if (cResult[6] === role.id) {
-        tmp12 = cResult[7];
-      }
-      const tmp14 = closure_8();
-      let tmp15 = !setting;
-      if (setting) {
-        tmp15 = disableInteraction;
-      }
-      if (cResult[8] === color) {
-        if (cResult[9] === guildId) {
-          if (cResult[10] === role.id) {
-            if (cResult[11] === tmp14.bubble) {
-              if (cResult[12] === tmp14.verifiedContainer) {
-                let tmp17;
-                if (cResult[13] === undefined !== guild_connections) {
-                  tmp17 = cResult[14];
-                }
-                if (cResult[15] === roleIconProps) {
-                  let tmp25;
-                  let tmp34;
-                  if (cResult[16] === tmp14.roleIcon) {
-                    tmp25 = cResult[17];
-                  }
-                  if (cResult[18] !== tmp7) {
-                    let obj2 = { variant: "text-xs/semibold", color: "interactive-text-active", children: tmp7 };
-                    const tmp36 = closure_6(role(5271).Text, obj2);
-                    cResult[18] = tmp7;
-                    cResult[19] = tmp36;
-                    tmp34 = tmp36;
-                  } else {
-                    tmp34 = cResult[19];
-                  }
-                  if (cResult[20] === tmp14.pill) {
-                    if (cResult[21] === tmp17) {
-                      if (cResult[22] === tmp25) {
-                        let tmp37;
-                        if (cResult[23] === tmp34) {
-                          tmp37 = cResult[24];
-                        }
-                        if (cResult[25] === tmp12) {
-                          if (cResult[26] === tmp14.container) {
-                            if (cResult[27] === tmp15) {
-                              let tmp41;
-                              if (cResult[28] === tmp37) {
-                                tmp41 = cResult[29];
-                              }
-                              return tmp41;
-                            }
-                          }
-                        }
-                        const obj3 = { disabled: tmp15, style: tmp14.container, onPress: tmp12, accessible: false, children: tmp37 };
-                        const tmp43 = closure_6(role(6968).PressableHighlight, obj3);
-                        cResult[25] = tmp12;
-                        cResult[26] = tmp14.container;
-                        cResult[27] = tmp15;
-                        cResult[28] = tmp37;
-                        cResult[29] = tmp43;
-                        tmp41 = tmp43;
-                      }
-                    }
-                  }
-                  const obj4 = { style: tmp14.pill, children: items };
-                  items = [tmp17, tmp25, tmp34];
-                  const tmp40 = closure_7(View, obj4);
-                  cResult[20] = tmp14.pill;
-                  cResult[21] = tmp17;
-                  cResult[22] = tmp25;
-                  cResult[23] = tmp34;
-                  cResult[24] = tmp40;
-                  tmp37 = tmp40;
-                }
-                let tmp26 = null;
-                if (null != roleIconProps) {
-                  const obj5 = { style: tmp14.roleIcon, children: closure_6(tmp30, obj6) };
-                  obj6 = {};
-                  tmp30 = RoleIconDefault;
-                  const merged = Object.assign(roleIconProps);
-                  tmp26 = closure_6(View, obj5);
-                }
-                cResult[15] = roleIconProps;
-                cResult[16] = tmp14.roleIcon;
-                cResult[17] = tmp26;
-                tmp25 = tmp26;
-              }
-            }
-          }
-        }
-      }
-      if (undefined !== guild_connections) {
-        const obj7 = { style: tmp14.verifiedContainer, roleId: role.id, guildId: tmp23, roleColor: tmp24, size: 14, displayRoleIcon: false };
-        tmp23 = guildId;
-        const tmp22 = VerifiedRoleIconDefault;
-        if (guildId == null) {
-          tmp23 = closure_4;
-        }
-        tmp18Result = tmp18(tmp22, obj7);
-        tmp24 = color;
-      } else {
-        let obj9;
-        const items1 = [tmp14.bubble, ];
-        const tmp19 = View;
-        if (null != color) {
-          obj9 = { backgroundColor: color };
-          const obj8 = { backgroundColor: color };
-        } else {
-          obj9 = {};
-        }
-        const obj10 = { style: items1 };
-        items1[1] = obj9;
-        tmp18Result = tmp18(tmp19, obj10);
-      }
-      cResult[8] = color;
-      cResult[9] = guildId;
-      cResult[10] = role.id;
-      cResult[11] = tmp14.bubble;
-      cResult[12] = tmp14.verifiedContainer;
-      cResult[13] = undefined !== guild_connections;
-      cResult[14] = tmp18Result;
-      tmp17 = tmp18Result;
-    }
-    function handlePress() {
-      const obj = ClipboardUtils;
-      obj.copy(role.id);
-      const obj2 = ToastUtils;
-      obj2.roleIdCopied(closure_1);
-    }
-    cResult[5] = tmp7;
-    cResult[6] = role.id;
-    cResult[7] = handlePress;
-    tmp12 = handlePress;
-  }
-  const obj11 = { guildId, roleId: role.id, size: 12 };
-  cResult[0] = guildId;
-  cResult[1] = role.id;
-  cResult[2] = obj11;
-  tmp5 = obj11;
-}) : (function RolePill(role) {
+size = size_mod;
+const result = size.fileFinishedImporting("components_native/common/RolePill.tsx");
+
+export default function RolePill(role) {
   let color;
   let guildId;
   let items1;
@@ -235,9 +49,9 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   role = role.role;
   ({ guildId, color } = role);
   const disableInteraction = role.disableInteraction;
-  const DeveloperMode = role(4833).DeveloperMode;
+  const DeveloperMode = role(4834).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7342);
+  let obj = role(7349);
   let obj2 = { guildId, roleId: role.id, size: 12 };
   const roleIconProps = obj.useRoleIconProps(obj2);
   let name = role.name;
@@ -258,7 +72,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   }
   const tmp9 = closure_8();
   let tmp11 = !setting;
-  const PressableHighlight = tmp(6968).PressableHighlight;
+  const PressableHighlight = tmp(6974).PressableHighlight;
   if (setting) {
     tmp11 = disableInteraction;
   }
@@ -278,7 +92,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   tmp12 = closure_7;
   if (undefined !== guild_connections) {
     const obj5 = { style: tmp9.verifiedContainer, roleId: role.id, guildId, roleColor: color, size: 14, displayRoleIcon: false };
-    const tmp16 = combined(7359);
+    const tmp16 = combined(7366);
     if (guildId == null) {
       guildId = closure_4;
     }
@@ -301,15 +115,11 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolePill(r
   if (null != roleIconProps) {
     const obj9 = { style: tmp9.roleIcon, children: closure_6(tmp19, obj10) };
     obj10 = {};
-    tmp19 = combined(7361);
+    tmp19 = combined(7368);
     const merged = Object.assign(roleIconProps);
     tmp10Result2 = tmp10(tmp13, obj9);
   }
   items1[1] = tmp10Result2;
-  items1[2] = closure_6(role(5271).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(5619).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   return closure_6(PressableHighlight, obj3);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("components_native/common/RolePill.tsx");
-
-export default tmp6;
+};

@@ -6,7 +6,5 @@
 // Module 1614 (react)
 import react from "react" /* 19 */;
 
-const context = react.createContext("ltr");
-context.displayName = "LocaleDirContext";
 
-export const LocaleDirContext = context;
+export const ServerContext = react.createContext(undefined);

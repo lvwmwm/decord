@@ -1,21 +1,19 @@
-// Module ID: 12427
-// Function ID: 12428
+// Module ID: 12581
+// Function ID: 12582
 // Name: conjureTipDismissals
-// Dependencies: [19, 510, 558, 576, 2]
-// Exports: dismissConjureTip
+// Dependencies: [19, 510, 2]
+// Exports: dismissConjureTip, useConjureTipDismissalsVersion
 
-// Module 12427 (conjureTipDismissals)
+// Module 12581 (conjureTipDismissals)
 import Storage5 from "Storage" /* 510 */;
-import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let set2, set3;
 
-function isConjureTipDismissed(dismissal, arg1, id) {
-  let tmp = id;
-  if (id === undefined) {
+function isConjureTipDismissed(dismissal, arg1, id1) {
+  let tmp = id1;
+  if (id1 === undefined) {
     tmp = null;
   }
   dismissal = dismissal.dismissal;
@@ -104,23 +102,6 @@ const conjureTipDismissals = "conjureTipDismissals";
 const set = new Set();
 const set1 = new Set();
 let closure_6 = 0;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTipDismissalsVersion() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n() {
-      return closure_1_6;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return react.useSyncExternalStore(subscribe, first);
-}) : (function useConjureTipDismissalsVersion() {
-  return react.useSyncExternalStore(subscribe, () => closure_1_6);
-});
 let result = size.fileFinishedImporting("modules/conjure/tips/conjureTipDismissals.tsx");
 
 export { isConjureTipDismissed };
@@ -206,4 +187,6 @@ export function dismissConjureTip(tip, arg1, ideasIntroAnchorId) {
     }
   }
 }
-export const useConjureTipDismissalsVersion = tmp4;
+export function useConjureTipDismissalsVersion() {
+  return react.useSyncExternalStore(subscribe, () => closure_1_6);
+}

@@ -1,114 +1,20 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 12558
+// Function ID: 12559
 // Name: useConjureManualAppBuildRequest
-// Dependencies: [32, 19, 558, 576, 1125, 3864, 12407, 2]
+// Dependencies: [32, 19, 1114, 3865, 12559, 2]
+// Exports: default
 
-// Module 12406 (useConjureManualAppBuildRequest)
-import intl2 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12407 */;
+// Module 12558 (useConjureManualAppBuildRequest)
+import intl2 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ConjureAppBuildRequest from "ConjureAppBuildRequest" /* 12559 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+const result = size.fileFinishedImporting("modules/conjure/app_build_request/useConjureManualAppBuildRequest.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureManualAppBuildRequest(projectId) {
-  let first;
-  let ref;
-  let tmp3;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  _require = projectId;
-  let obj = require("react");
-  const cResult = obj.c(8);
-  [tmp3, importDefault] = first(react.useState(null), 2);
-  first(react.useState(null), 2);
-  dependencyMap = react.useRef(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(current) {
-      ref.current = current;
-      importDefault(current);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  projectId = undefined;
-  if (tmp3 != null) {
-    projectId = tmp3.projectId;
-  }
-  let tmp6 = null;
-  if (projectId === projectId) {
-    tmp6 = tmp3;
-  }
-  if (cResult[1] !== projectId) {
-    const fn2 = function q(str, clearComposer) {
-      let intl;
-      let obj2;
-      let trimmed;
-      const obj = { projectId, request: obj2, clearComposer };
-      obj2 = { id: "manual:" + projectId + ":" + Date.now(), summary: intl.string(_modDef3864["o2++BO"]), prompt: trimmed.slice(0, ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH) };
-      intl = intl2.intl;
-      trimmed = str.trim();
-      return first(obj);
-    };
-    cResult[1] = projectId;
-    cResult[2] = fn2;
-    tmp7 = fn2;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function v() {
-      return first(null);
-    };
-    cResult[3] = fn3;
-    tmp8 = fn3;
-  } else {
-    tmp8 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn4 = function j(arg0) {
-      const current = ref.current;
-      let id;
-      if (current != null) {
-        id = current.request.id;
-      }
-      if (id === arg0) {
-        current.clearComposer();
-        first(null);
-      }
-    };
-    cResult[4] = fn4;
-    tmp9 = fn4;
-  } else {
-    tmp9 = cResult[4];
-  }
-  let request;
-  if (tmp6 != null) {
-    request = tmp6.request;
-  }
-  if (request == null) {
-    request = null;
-  }
-  if (cResult[5] === tmp7) {
-    let tmp11;
-    if (cResult[6] === request) {
-      tmp11 = cResult[7];
-    }
-    return tmp11;
-  }
-  let obj2 = { request, open: tmp7, close: tmp8, sent: tmp9 };
-  cResult[5] = tmp7;
-  cResult[6] = request;
-  cResult[7] = obj2;
-  tmp11 = obj2;
-}) : (function useConjureManualAppBuildRequest(projectId) {
+export default function useConjureManualAppBuildRequest(projectId) {
   let callback;
   let tmp2;
   let obj = react;
@@ -134,7 +40,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     let obj2;
     let trimmed;
     const obj = { projectId, request: obj2, clearComposer };
-    obj2 = { id: "manual:" + projectId + ":" + Date.now(), summary: intl.string(_modDef3864["o2++BO"]), prompt: trimmed.slice(0, ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH) };
+    obj2 = { id: "manual:" + projectId + ":" + Date.now(), summary: intl.string(_modDef3865["o2++BO"]), prompt: trimmed.slice(0, ConjureAppBuildRequest.CONJURE_APP_BUILD_PROMPT_MAX_LENGTH) };
     intl = intl2.intl;
     trimmed = str.trim();
     return callback(obj);
@@ -160,7 +66,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
     request = null;
   }
   return { request, open, close, sent };
-});
-const result = size.fileFinishedImporting("modules/conjure/app_build_request/useConjureManualAppBuildRequest.tsx");
-
-export default tmp2;
+};

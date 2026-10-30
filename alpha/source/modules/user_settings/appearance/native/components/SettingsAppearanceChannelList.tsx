@@ -1,22 +1,24 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17212
+// Function ID: 17213
 // Name: SettingsAppearanceChannelList
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 17159, 17160, 17161, 1125, 17167, 7280, 17170, 5086, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 17213, 17214, 17215, 5090, 1114, 17221, 7288, 17224, 2]
+// Exports: default
 
-// Module 17158 (SettingsAppearanceChannelList)
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5086 */;
-import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17159 */;
-import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17160 */;
-import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17161 */;
-import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17167 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17170 */;
+// Module 17212 (SettingsAppearanceChannelList)
+import nativeDefault from "native" /* 575 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
+import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17213 */;
+import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17214 */;
+import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17215 */;
+import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17221 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17224 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
+
+let item;
 
 let StyleSheet;
 let closure_4;
@@ -34,165 +36,9 @@ let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { flex: 1, marginTop: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xl, width: "100%", borderWidth: 1, shadowColor: "#000000" };
 let merged1 = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
 let closure_7 = createStyles(obj);
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListPreview(arg0) {
-  let animatedStyles;
-  let data;
-  let isNitroLocked;
-  let items;
-  let obj7;
-  let themeIndex;
-  let themes;
-  let tmp16;
-  let tmp5;
-  let useGradientBackground;
-  let obj = animatedStyles(576);
-  const cResult = obj.c(25);
-  ({ themes, themeIndex, animatedStyles } = arg0);
-  ({ data, useGradientBackground, isNitroLocked } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] !== animatedStyles) {
-    const fn = function n(item) {
-      item = item.item;
-      const kind = item.kind;
-      if ("channel-row" === kind) {
-        const obj2 = { animatedStyles };
-        const tmp21 = SettingsAppearanceChannelRowItemDefault;
-        const merged = Object.assign(item);
-        return hasOwnProperty(tmp21, obj2);
-      } else if ("messages-header" === kind) {
-        const obj3 = { animatedStyles };
-        const tmp13 = SettingsAppearanceMessagesHeaderItemDefault;
-        const merged1 = Object.assign(item);
-        return hasOwnProperty(tmp13, obj3);
-      } else if ("activity-cards" === kind) {
-        const obj = { animatedStyles };
-        const tmp5 = SettingsAppearanceActivityCardsItemDefault;
-        const merged2 = Object.assign(item);
-        return hasOwnProperty(tmp5, obj);
-      } else {
-        return null;
-      }
-    };
-    cResult[0] = animatedStyles;
-    cResult[1] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === animatedStyles.borderNormal) {
-    if (cResult[3] === tmp4.channelPreviewCardContainer) {
-      let tmp7;
-      let tmp9;
-      if (cResult[4] === (!useGradientBackground && animatedStyles.bgSurfaceHigh)) {
-        tmp7 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1125).intl;
-        const stringResult = intl.string(animatedStyles(1125).t.iGxm3x);
-        cResult[6] = stringResult;
-        tmp9 = stringResult;
-      } else {
-        tmp9 = cResult[6];
-      }
-      if (cResult[7] === tmp4.channelPreviewGradient) {
-        if (cResult[8] === themeIndex) {
-          if (cResult[9] === themes) {
-            let tmp11;
-            let tmp17;
-            let tmp19;
-            if (cResult[10] === useGradientBackground) {
-              tmp11 = cResult[11];
-            }
-            const _Symbol2 = Symbol;
-            if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-              let obj2 = { paddingVertical: nativeDefault.space.PX_16 };
-              cResult[12] = obj2;
-              tmp17 = obj2;
-            } else {
-              tmp17 = cResult[12];
-            }
-            const _Symbol3 = Symbol;
-            if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-              const fn2 = function f(id) {
-                return id.id;
-              };
-              cResult[13] = fn2;
-              tmp19 = fn2;
-            } else {
-              tmp19 = cResult[13];
-            }
-            if (cResult[14] === data) {
-              let tmp20;
-              if (cResult[15] === tmp5) {
-                tmp20 = cResult[16];
-              }
-              if (cResult[17] === isNitroLocked) {
-                let tmp24;
-                if (cResult[18] === themes[themeIndex]) {
-                  tmp24 = cResult[19];
-                }
-                if (cResult[20] === tmp24) {
-                  if (cResult[21] === tmp7) {
-                    if (cResult[22] === tmp11) {
-                      let tmp28;
-                      if (cResult[23] === tmp20) {
-                        tmp28 = cResult[24];
-                      }
-                      return tmp28;
-                    }
-                  }
-                }
-                let obj3 = { style: tmp7, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp9, children: items };
-                items = [tmp11, tmp20, tmp24];
-                const tmp31 = closure_6(ReanimatedRexportDefault.View, obj3);
-                cResult[20] = tmp24;
-                cResult[21] = tmp7;
-                cResult[22] = tmp11;
-                cResult[23] = tmp20;
-                cResult[24] = tmp31;
-                tmp28 = tmp31;
-              }
-              const obj4 = { visible: isNitroLocked, theme: themes[themeIndex] };
-              const tmp27 = closure_5(SettingsAppearanceChannelListPreviewNitroUpsellDefault, obj4);
-              cResult[17] = isNitroLocked;
-              cResult[18] = themes[themeIndex];
-              cResult[19] = tmp27;
-              tmp24 = tmp27;
-            }
-            let tmp21 = closure_5;
-            const obj5 = { contentContainerStyle: tmp17, data, renderItem: tmp5, keyExtractor: tmp19, showsVerticalScrollIndicator: false, importantForAccessibility: "no-hide-descendants" };
-            const tmp22 = closure_5(animatedStyles(7280).FlashList, obj5);
-            cResult[14] = data;
-            cResult[15] = tmp5;
-            cResult[16] = tmp22;
-            tmp20 = tmp22;
-          }
-        }
-      }
-      let tmp12 = null;
-      if (useGradientBackground) {
-        let tmp13 = closure_5;
-        const obj6 = { style: tmp4.channelPreviewGradient, children: closure_5(tmp16, obj7) };
-        obj7 = { themes, themeIndex, isDimmed: false, backgroundToken: nativeDefault.colors.BACKGROUND_BASE_LOW };
-        tmp16 = SettingsAppearanceGradientBackgroundDefault;
-        tmp12 = closure_5(closure_4, obj6);
-      }
-      cResult[7] = tmp4.channelPreviewGradient;
-      cResult[8] = themeIndex;
-      cResult[9] = themes;
-      cResult[10] = useGradientBackground;
-      cResult[11] = tmp12;
-      tmp11 = tmp12;
-    }
-  }
-  const items1 = [tmp4.channelPreviewCardContainer, animatedStyles.borderNormal, tmp6];
-  cResult[2] = animatedStyles.borderNormal;
-  cResult[3] = tmp4.channelPreviewCardContainer;
-  cResult[4] = !useGradientBackground && animatedStyles.bgSurfaceHigh;
-  cResult[5] = items1;
-  tmp7 = items1;
-}) : (function ChannelListPreview(useGradientBackground) {
+const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelList.tsx");
+
+export default function ChannelListPreview(useGradientBackground) {
   let animatedStyles;
   let data;
   let intl;
@@ -238,14 +84,14 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListP
   if (!useGradientBackground) {
     bgSurfaceHigh = animatedStyles.bgSurfaceHigh;
   }
-  let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: intl.string(animatedStyles(1125).t.iGxm3x), children: items2 };
+  let obj = { style: items1, accessible: true, accessibilityRole: "image", accessibilityLabel: intl.string(animatedStyles(1114).t.iGxm3x), children: items2 };
   items1[2] = bgSurfaceHigh;
-  intl = animatedStyles(1125).intl;
+  intl = animatedStyles(1114).intl;
   let tmp7 = null;
   const tmp6 = animatedStyles;
   if (useGradientBackground) {
     let obj2 = { style: tmp.channelPreviewGradient, children: closure_5(tmp4Result, obj3) };
-    obj3 = { themes, themeIndex, isDimmed: false, backgroundToken: tmp4(587).colors.BACKGROUND_BASE_LOW };
+    obj3 = { themes, themeIndex, isDimmed: false, backgroundToken: tmp4(575).colors.BACKGROUND_BASE_LOW };
     tmp4Result = SettingsAppearanceGradientBackgroundDefault;
     tmp7 = closure_5(closure_4, obj2);
   }
@@ -261,12 +107,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelListP
     importantForAccessibility: "no-hide-descendants"
   };
   obj5 = { paddingVertical: nativeDefault.space.PX_16 };
-  const FlashList = tmp6(7280).FlashList;
+  const FlashList = tmp6(7288).FlashList;
   items2[1] = closure_5(FlashList, obj4);
   const obj6 = { visible: isNitroLocked, theme: themes[themeIndex] };
   items2[2] = closure_5(SettingsAppearanceChannelListPreviewNitroUpsellDefault, obj6);
   return tmp3(View, obj);
-});
-const result = size.fileFinishedImporting("modules/user_settings/appearance/native/components/SettingsAppearanceChannelList.tsx");
-
-export default tmp7;
+};

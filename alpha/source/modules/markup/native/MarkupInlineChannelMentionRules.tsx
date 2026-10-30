@@ -1,14 +1,14 @@
-// Module ID: 12054
-// Function ID: 12055
+// Module ID: 11037
+// Function ID: 11038
 // Name: MarkupInlineChannelMentionRules
-// Dependencies: [19, 21, 8529, 1199, 1385, 2]
+// Dependencies: [19, 21, 8563, 1188, 1380, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 12054 (MarkupInlineChannelMentionRules)
+// Module 11037 (MarkupInlineChannelMentionRules)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1199 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8529 */;
+import native from "native" /* 1188 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8563 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

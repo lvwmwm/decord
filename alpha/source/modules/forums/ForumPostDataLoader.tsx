@@ -1,19 +1,18 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 7469
+// Function ID: 7470
 // Name: ForumPostDataLoader
-// Dependencies: [5, 4857, 7462, 7444, 7465, 1084, 12, 11, 558, 576, 504, 1294, 584, 2]
-// Exports: preloadForumThreads
+// Dependencies: [5, 4858, 7470, 7452, 7473, 1072, 12, 11, 504, 1283, 572, 2]
+// Exports: preloadForumThreads, useFirstForumPostMessage, useMostRecentForumMessage
 
-// Module 7461 (ForumPostDataLoader)
+// Module 7469 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1084 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7462 */;
+import Constants from "Constants" /* 1072 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7470 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7444 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7465 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7452 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7473 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +37,7 @@ let obj = function _loadForumPostData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -59,7 +58,7 @@ let obj = function _loadForumPostData() {
               c3 = 0;
               c11 = null;
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === tmp4) {
@@ -110,7 +109,7 @@ obj = function _loadForumPostDataForChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -139,7 +138,7 @@ obj = function _loadForumPostDataForChannelId() {
               postResult = closure_2_10;
               closure_2_10.finishRequesting(closure_0, nextBatch);
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             } else {
               channel = channel.getChannel(tmp44);
               guild_id = undefined;
@@ -151,7 +150,7 @@ obj = function _loadForumPostDataForChannelId() {
                 postResult = closure_2_10;
                 closure_2_10.finishRequesting(closure_0, nextBatch);
                 c6 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               } else {
                 const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: Endpoints.FORUM_POSTS(closure_0), body: obj4, rejectWithError: true };
@@ -185,7 +184,7 @@ obj = function _loadForumPostDataForChannelId() {
           } else {
             threads = value.body.threads;
             const obj7 = { type: "LOAD_FORUM_POSTS", guildId: guild_id, threads };
-            obj = closure_130_1(closure_130_2[12]);
+            obj = closure_130_1(closure_130_2[10]);
             obj.dispatch(obj7);
             c4 = 1;
           }
@@ -193,7 +192,7 @@ obj = function _loadForumPostDataForChannelId() {
           postResult = closure_0;
           closure_130_10.finishRequesting(closure_0, nextBatch);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp37) {
         closure_3 = tmp37;
@@ -297,214 +296,21 @@ class RequestQueue {
 }
 const prototype2 = RequestQueue.prototype;
 obj = Object.create(RequestQueue.prototype);
-let obj2 = Object.create(DefaultDict.prototype);
-obj2._set = {};
-obj2._defaultValueFunc = _defaultValueFunc;
-obj.requested = obj2;
+let obj3 = Object.create(DefaultDict.prototype);
+obj3._set = {};
+obj3._defaultValueFunc = _defaultValueFunc;
+obj.requested = obj3;
 let c11 = null;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstForumPostMessage(id, arg1) {
-  let allowArchived;
-  let closure_11;
-  let enabled;
-  let first;
-  let firstMessage;
-  let loaded;
-  let obj3;
-  let timeout;
-  let tmp10;
-  let tmp12;
-  let tmp8;
-  _require = id;
-  obj = arg1;
-  const obj2 = require("react");
-  const cResult = obj2.c(9);
-  if (undefined === arg1) {
-    obj = {};
-  }
-  ({ enabled, allowArchived } = obj);
-  const tmp5 = undefined !== allowArchived && allowArchived;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ForumPostMessagesStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function n() {
-      return ForumPostMessagesStore.getMessage(id.id);
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-  ({ loaded, firstMessage } = stateFromStoresObject);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ChannelStore];
-    cResult[3] = items1;
-    tmp10 = items1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== id.parent_id) {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-    cResult[4] = id.parent_id;
-    cResult[5] = M;
-    tmp12 = M;
-  } else {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores = tmpResult2.useStateFromStores(tmp10, tmp12);
-  let tmp14 = tmp4;
-  if (tmp14) {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-    tmp14 = null != stateFromStores;
-  }
-  if (tmp14) {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-    if (tmp15) {
-      class M {
-        constructor() {
-          return ChannelStore.getChannel(id.parent_id);
-        }
-      }
-    }
-    tmp14 = tmp15;
-  }
-  if (tmp14) {
-    let c1;
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-    if (tmp5) {
-      class M {
-        constructor() {
-          return ChannelStore.getChannel(id.parent_id);
-        }
-      }
-      arr6[0] = tmp16;
-      c1 = false;
-      const item = arr6.forEach((item) => {
-        const message = ForumPostMessagesStore.getMessage(item);
-        const tmp3 = !message.loaded && null == tmp2;
-        if (tmp3) {
-          obj.request(channel.id, item);
-          c1 = true;
-        }
-      });
-      let tmp24 = c1;
-      if (tmp24) {
-        class M {
-          constructor() {
-            return ChannelStore.getChannel(id.parent_id);
-          }
-        }
-        tmp24 = null == timeout;
-      }
-      if (tmp24) {
-        class M {
-          constructor() {
-            return ChannelStore.getChannel(id.parent_id);
-          }
-        }
-        timeout = setTimeout(loadForumPostData, 0);
-      }
-    } else {
-      class M {
-        constructor() {
-          return ChannelStore.getChannel(id.parent_id);
-        }
-      }
-      let closure_1 = tmp16;
-      if (!obj.hasRequested(stateFromStores.id, tmp16)) {
-        class M {
-          constructor() {
-            return ChannelStore.getChannel(id.parent_id);
-          }
-        }
-        const arr3 = computeThreadIdsSnapshot(stateFromStores.id);
-        const findIndexResult = arr3.findIndex((item) => item === id);
-        const substr = arr3.slice(findIndexResult, findIndexResult + 5);
-        const found = substr.filter((item) => !obj.hasRequested(stateFromStores.id, item));
-        c1 = false;
-        const item1 = found.forEach((item) => {
-          const message = ForumPostMessagesStore.getMessage(item);
-          const tmp3 = !message.loaded && null == tmp2;
-          if (tmp3) {
-            obj.request(channel.id, item);
-            c1 = true;
-          }
-        });
-        let tmp20 = c1;
-        if (tmp20) {
-          class M {
-            constructor() {
-              return ChannelStore.getChannel(id.parent_id);
-            }
-          }
-          tmp20 = null == timeout;
-        }
-        if (tmp20) {
-          class M {
-            constructor() {
-              return ChannelStore.getChannel(id.parent_id);
-            }
-          }
-          timeout = setTimeout(loadForumPostData, 0);
-        }
-      }
-    }
-  }
-  if (undefined === enabled || enabled) {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-  }
-  if (cResult[6] === loaded) {
-    class M {
-      constructor() {
-        return ChannelStore.getChannel(id.parent_id);
-      }
-    }
-    return obj3;
-  }
-  obj3 = { loaded, firstMessage: null };
-  cResult[6] = loaded;
-  cResult[7] = null;
-  cResult[8] = obj3;
-}) : (function useFirstForumPostMessage(id) {
+const result = size.fileFinishedImporting("modules/forums/ForumPostDataLoader.tsx");
+
+export const BATCH_SIZE = 10;
+export function useFirstForumPostMessage(stateFromStores, arg1) {
   let closure_11;
   let firstMessage;
   let loaded;
   let timeout;
   let tmp22;
-  _require = id;
+  _require = stateFromStores;
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -519,11 +325,11 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstFo
   }
   const items = [ForumPostMessagesStore];
   const obj2 = require("get initialized");
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => ForumPostMessagesStore.getMessage(id.id));
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => ForumPostMessagesStore.getMessage(stateFromStores.id));
   ({ loaded, firstMessage } = stateFromStoresObject);
   const items1 = [ChannelStore];
   const obj3 = require("get initialized");
-  const stateFromStores = obj3.useStateFromStores(items1, () => ChannelStore.getChannel(id.parent_id));
+  stateFromStores = obj3.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
   let tmp3 = flag && null != stateFromStores;
   if (tmp3) {
     tmp3 = !loaded && null == firstMessage;
@@ -531,7 +337,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstFo
   }
   if (tmp3) {
     let c1;
-    id = id.id;
+    const id = stateFromStores.id;
     if (flag2) {
       const items2 = [id];
       c1 = false;
@@ -575,62 +381,15 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFirstFo
     tmp22 = firstMessage;
   }
   return obj4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMostRecentForumMessage(arg0, id) {
-  let first;
-  let loaded;
-  let message;
-  let tmp6;
-  _require = id;
-  obj = require("react");
-  const cResult = obj.c(6);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ForumPostRecentMessageStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function o() {
-      return ForumPostRecentMessageStore.getMessageState(id.id);
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6);
-  ({ loaded, message } = stateFromStoresObject);
-  if (cResult[3] === loaded) {
-    let tmp8;
-    if (cResult[4] === message) {
-      tmp8 = cResult[5];
-    }
-    return tmp8;
-  }
-  const obj2 = { loaded, mostRecentMessage: message };
-  cResult[3] = loaded;
-  cResult[4] = message;
-  cResult[5] = obj2;
-  tmp8 = obj2;
-}) : (function useMostRecentForumMessage(arg0, arg1) {
+}
+export function useMostRecentForumMessage(arg0, arg1) {
   let id;
   _require = arg1;
   const items = [ForumPostRecentMessageStore];
   obj = require("get initialized");
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ForumPostRecentMessageStore.getMessageState(id.id));
   return { loaded: stateFromStoresObject.loaded, mostRecentMessage: stateFromStoresObject.message };
-});
-const result = size.fileFinishedImporting("modules/forums/ForumPostDataLoader.tsx");
-
-export const BATCH_SIZE = 10;
-export const useFirstForumPostMessage = tmp4;
-export const useMostRecentForumMessage = tmp5;
+}
 export function preloadForumThreads(channel) {
   let closure_11;
   let timeout;

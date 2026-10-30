@@ -1,27 +1,27 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15108
+// Function ID: 15109
 // Name: createMediaPostPreviewEmbedContent
-// Dependencies: [17, 5274, 4857, 4879, 5036, 1389, 11124, 6037, 5643, 1125, 8373, 8375, 587, 6039, 15065, 8645, 6713, 6038, 2]
+// Dependencies: [17, 5622, 4858, 4880, 5040, 1384, 11329, 6044, 5649, 1114, 8410, 8412, 575, 6046, 15109, 8679, 6720, 6045, 2]
 // Exports: default
 
-// Module 15064 (createMediaPostPreviewEmbedContent)
-import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1125 */;
-import LinkUtils from "LinkUtils" /* 5643 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6037 */;
-import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6038 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8373 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8375 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8645 */;
-import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11124 */;
+// Module 15108 (createMediaPostPreviewEmbedContent)
+import nativeDefault from "native" /* 575 */;
+import intl7 from "intl" /* 1114 */;
+import LinkUtils from "LinkUtils" /* 5649 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6044 */;
+import MediaPostThumbnailUtils from "MediaPostThumbnailUtils" /* 6045 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8410 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8412 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8679 */;
+import MediaPostEmbedStore2 from "MediaPostEmbedStore" /* 11329 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5274 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import UserStore from "UserStore" /* 1389 */;
+import DevSettingsStore from "DevSettingsStore" /* 5622 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const MediaPostEmbedStore = MediaPostEmbedStore2;
@@ -84,10 +84,10 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
               if (null != user) {
                 const tmpResult9 = useAuthorWithProcessedColor;
                 const userAuthorWithProcessedColor = tmpResult9.getUserAuthorWithProcessedColor(user, mediaPostEmbedCommonData.postThread);
-                const intl6 = tmp(1125).intl;
+                const intl6 = tmp(1114).intl;
                 const formatToParts = intl6.formatToParts;
                 const obj3 = { username: mediaPostEmbedCommonData.authorName, usernameOnClick: formatUsernameOnClickDefault(obj4), channelName: mediaPostEmbedCommonData.channelName };
-                const mCytFr = tmp(1125).t.mCytFr;
+                const mCytFr = tmp(1114).t.mCytFr;
                 obj4 = { userId: user.id, message, author: userAuthorWithProcessedColor, roleStyle, messageChannelId: mediaPostEmbedCommonData.threadId };
                 formatToPartsResult = formatToParts(mCytFr, obj3);
               }
@@ -109,7 +109,7 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 mediaPostEmbedCommonData.coverImage = "" + mediaPostEmbedCommonData.coverImage + "?format=webp";
               }
               if (mediaPostEmbedCommonData.shouldShowBlurredThumbnailImage) {
-                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15065)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
+                const obj5 = { blurredCoverImage: _false.resolveAssetSource(tmp10(15109)).uri, footer: formatToPartsResult, ctaButtonColor: tmp11 };
                 const merged = Object.assign(mediaPostEmbedCommonData);
                 return obj5;
               } else {
@@ -134,13 +134,13 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                     str9 = "";
                     str10 = "";
                     if (true === mediaPostEmbedCommonData.shouldSpoiler) {
-                      const intl4 = tmp(1125).intl;
+                      const intl4 = tmp(1114).intl;
                       const str11 = intl4.string(intl7.t["F+x38C"]);
                       str10 = str11.toUpperCase();
                     }
                     if (value) {
-                      const intl5 = tmp(1125).intl;
-                      str9 = intl5.string(tmp(1125).t.SpxcUR);
+                      const intl5 = tmp(1114).intl;
+                      str9 = intl5.string(tmp(1114).t.SpxcUR);
                     }
                     obj8 = obj6;
                     tmpResult14 = MediaPostThumbnailUtils;
@@ -152,20 +152,20 @@ export default function createMediaPostPreviewEmbedContent(message, roleStyle, u
                 str6 = "";
                 str7 = "";
                 if (true === mediaPostEmbedCommonData.shouldSpoiler) {
-                  const intl2 = tmp(1125).intl;
+                  const intl2 = tmp(1114).intl;
                   const str8 = intl2.string(intl7.t["F+x38C"]);
                   str7 = str8.toUpperCase();
                 }
                 if (value) {
-                  const intl3 = tmp(1125).intl;
-                  str6 = intl3.string(tmp(1125).t.SpxcUR);
+                  const intl3 = tmp(1114).intl;
+                  str6 = intl3.string(tmp(1114).t.SpxcUR);
                 }
               }
             }
           }
-          const intl = tmp(1125).intl;
+          const intl = tmp(1114).intl;
           const obj9 = { guildName: mediaPostEmbedCommonData.guildName };
-          formatToPartsResult = intl.formatToParts(tmp(1125).t.p4VdWJ, obj9);
+          formatToPartsResult = intl.formatToParts(tmp(1114).t.p4VdWJ, obj9);
         }
       }
     }

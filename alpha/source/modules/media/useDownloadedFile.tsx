@@ -1,12 +1,12 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11582
+// Function ID: 11583
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1125, 6438, 6026, 2]
+// Dependencies: [5, 32, 19, 1114, 6445, 6033, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11379 (useDownloadedFile)
-import intl2 from "intl" /* 1125 */;
-import FileSizeUtils from "FileSizeUtils" /* 6438 */;
+// Module 11582 (useDownloadedFile)
+import intl2 from "intl" /* 1114 */;
+import FileSizeUtils from "FileSizeUtils" /* 6445 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -17,13 +17,13 @@ let c0, c8, c9, closure_3, closure_4;
 let c5 = "utf-8";
 const result = size.fileFinishedImporting("modules/media/useDownloadedFile.tsx");
 
-export function getBytesLeftNotice(bytesLeft) {
+export function getBytesLeftNotice(MAX_STICKER_FILE_SIZE) {
   let obj2;
   let str = "";
-  if (bytesLeft > 0) {
+  if (MAX_STICKER_FILE_SIZE > 0) {
     const intl = intl2.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj = { formattedBytes: obj2.formatKbSize(bytesLeft) };
+    const obj = { formattedBytes: obj2.formatKbSize(MAX_STICKER_FILE_SIZE) };
     const prop = intl2.t["1+gGcK"];
     const _HermesInternal = HermesInternal;
     obj2 = FileSizeUtils;
@@ -95,7 +95,7 @@ export function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;

@@ -1,76 +1,27 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7426
+// Function ID: 7427
 // Name: GuildProductsEligibility
-// Dependencies: [4879, 1084, 558, 576, 504, 2]
-// Exports: isGuildEligibleForGuildProducts
+// Dependencies: [4880, 1072, 504, 2]
+// Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 7418 (GuildProductsEligibility)
-import Constants from "Constants" /* 1084 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7426 (GuildProductsEligibility)
+import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const GuildFeatures = Constants.GuildFeatures;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEligibleForGuildProducts(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = GuildStore;
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      if (null == closure_0) {
-        return false;
-      } else {
-        const guild = GuildStore.getGuild(tmp);
-        let tmp4 = null != guild;
-        if (tmp4) {
-          const features = guild.features;
-          let hasItem = features.has(GuildFeatures.COMMUNITY);
-          const tmp5 = GuildFeatures;
-          if (!hasItem) {
-            const features2 = guild.features;
-            hasItem = features2.has(tmp5.GUILD_PRODUCTS);
-          }
-          tmp4 = hasItem;
-        }
-        return tmp4;
-      }
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useGuildEligibleForGuildProducts(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
+
+export function useGuildEligibleForGuildProducts(id) {
+  _require = id;
   const items = [GuildStore];
-  const items1 = [arg0];
+  const items1 = [id];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    if (null == closure_0) {
+    if (null == id) {
       return false;
     } else {
       const guild = GuildStore.getGuild(tmp);
@@ -88,10 +39,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEl
       return tmp4;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/guild_products/GuildProductsEligibility.tsx");
-
-export const useGuildEligibleForGuildProducts = tmp2;
+}
 export function isGuildEligibleForGuildProducts(id) {
   if (null == id) {
     return false;

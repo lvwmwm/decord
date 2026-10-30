@@ -1,48 +1,32 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15519
+// Function ID: 15520
 // Name: PrivateChannelHidingExperiment
-// Dependencies: [1453, 558, 576, 2, 15480]
-// Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled
+// Dependencies: [1448, 2, 15520]
+// Exports: isChannelMetadataIntegrityCheckEnabled, isChannelMetadataObfuscationEnabled, useIsChannelMetadataObfuscationEnabled
 
-// Module 15479 (PrivateChannelHidingExperiment)
-import react from "react" /* 576 */;
-import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 15480 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15519 (PrivateChannelHidingExperiment)
+import PrivateChannelHidingExperimentCache from "PrivateChannelHidingExperimentCache" /* 15520 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { name: "2026-02-private-channel-hiding", kind: "user", defaultConfig: { enableObfuscation: false, enableIntegrityCheck: false }, variations: obj2 };
 obj2 = { 1: null, 2: { enableObfuscation: true, enableIntegrityCheck: false }, 3: { enableObfuscation: true, enableIntegrityCheck: true } };
 obj2[3] = { enableObfuscation: false, enableIntegrityCheck: false };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsChannelMetadataObfuscationEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enableObfuscation;
-}) : (function useIsChannelMetadataObfuscationEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enableObfuscation;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/gateway/PrivateChannelHidingExperiment.tsx");
 
 export const getCachedPrivateChannelObfuscation = PrivateChannelHidingExperimentCache.getCachedPrivateChannelObfuscation;
 export const PRIVATE_CHANNEL_OBFUSCATION_KEY = PrivateChannelHidingExperimentCache.PRIVATE_CHANNEL_OBFUSCATION_KEY;
-export function isChannelMetadataObfuscationEnabled(dependencyMap) {
-  const obj = { location: dependencyMap };
-  return closure_2.getConfig(obj).enableObfuscation;
+export function isChannelMetadataObfuscationEnabled(GatewaySocket) {
+  const obj = { location: GatewaySocket };
+  return closure_0.getConfig(obj).enableObfuscation;
 }
-export const useIsChannelMetadataObfuscationEnabled = tmp2;
+export function useIsChannelMetadataObfuscationEnabled(App) {
+  const obj = { location: App };
+  return closure_0.useConfig(obj).enableObfuscation;
+}
 export function isChannelMetadataIntegrityCheckEnabled(scheduleIntegrityCheck) {
   const obj = { location: scheduleIntegrityCheck };
-  return closure_2.getConfig(obj).enableIntegrityCheck;
+  return closure_0.getConfig(obj).enableIntegrityCheck;
 }

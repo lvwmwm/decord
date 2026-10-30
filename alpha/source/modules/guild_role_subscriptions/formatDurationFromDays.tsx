@@ -1,11 +1,11 @@
-// Module ID: 19758
-// Function ID: 19759
+// Module ID: 19821
+// Function ID: 19822
 // Name: formatDurationFromDays
-// Dependencies: [1125, 2]
+// Dependencies: [1114, 2]
 // Exports: default
 
-// Module 19758 (formatDurationFromDays)
-import intl3 from "intl" /* 1125 */;
+// Module 19821 (formatDurationFromDays)
+import intl3 from "intl" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/formatDurationFromDays.tsx");

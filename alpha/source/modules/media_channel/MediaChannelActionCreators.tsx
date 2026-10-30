@@ -1,13 +1,13 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 10956
+// Function ID: 10957
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1084, 584, 1294, 6433, 2]
+// Dependencies: [5, 1072, 572, 1283, 6440, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 10931 (MediaChannelActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 10956 (MediaChannelActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ let obj = function _fetchMediaPostEmbed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let obj = function _fetchMediaPostEmbed() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;
@@ -110,7 +110,7 @@ obj = function _unfurlEmbedUrl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -153,11 +153,11 @@ obj = function _unfurlEmbedUrl() {
             c6 = 3;
             return { value: value.body, done: true };
           }
-        } catch (tmp14) {
-          closure_3 = tmp14;
+        } catch (tmp18) {
+          closure_3 = tmp18;
           if (0 === c4) {
             c6 = 3;
-            throw tmp14;
+            throw tmp18;
           } else {
             c5 = 1;
           }

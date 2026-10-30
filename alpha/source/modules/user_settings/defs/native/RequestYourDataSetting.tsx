@@ -1,111 +1,40 @@
-// Module ID: 16654
-// Function ID: 16655
+// Module ID: 16707
+// Function ID: 16708
 // Name: RequestYourDataSetting
-// Dependencies: [17, 1389, 8387, 1084, 21, 1266, 7138, 1271, 558, 576, 504, 4920, 16655, 1125, 2047, 11302, 16657, 2]
-// Exports: fetchHarvestStatus
+// Dependencies: [17, 1384, 8424, 1072, 21, 1255, 7146, 1260, 504, 4924, 16708, 1114, 2044, 11505, 16710, 2]
+// Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 16654 (RequestYourDataSetting)
+// Module 16707 (RequestYourDataSetting)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import react_native2 from "react-native" /* 1271 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import _slicedToArray from "_slicedToArray" /* 4920 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7138 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import HarvesterUtils from "HarvesterUtils" /* 16655 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import module_1266 from "module_1266" /* 1266 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import intl3 from "intl" /* 1114 */;
+import react_native2 from "react-native" /* 1260 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import _slicedToArray from "_slicedToArray" /* 4924 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7146 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import module_1255 from "module_1255" /* 1255 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let UserSettingsSections;
 let hasOwnProperty;
-const ActivityIndicator = react_native.ActivityIndicator;
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-({ REQUEST_DATA_LIMIT_DAYS: hasOwnProperty, UserSettingsSections } = Constants);
-const jsx = Fragment.jsx;
-let closure_7 = module_1266.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHarvestRequestDisabled() {
-  let currentUser;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function n() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function l(harvestRequest) {
-      return harvestRequest.harvestRequest;
-    };
-    cResult[2] = fn2;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmp10 = closure_7(tmp8, _slicedToArray.shallow);
-  const tmp9 = closure_7;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn3 = function c(isRequesting) {
-      return isRequesting.isRequesting;
-    };
-    cResult[3] = fn3;
-    tmp11 = fn3;
-  } else {
-    tmp11 = cResult[3];
-  }
-  const tmp9Result = tmp9(tmp11, _slicedToArray.shallow);
-  let tmp13 = null == stateFromStores;
-  if (!tmp13) {
-    if (cResult[4] === tmp10) {
-      if (cResult[5] === tmp9Result) {
-        let tmp14;
-        if (cResult[6] === stateFromStores) {
-          tmp14 = cResult[7];
-        }
-        tmp13 = tmp14;
-      }
-    }
-    let harvestDisabledResult = tmp9Result;
-    if (!harvestDisabledResult) {
-      const tmpResult2 = HarvesterUtils;
-      harvestDisabledResult = tmpResult2.harvestDisabled(tmp10, stateFromStores);
-    }
-    cResult[4] = tmp10;
-    cResult[5] = tmp9Result;
-    cResult[6] = stateFromStores;
-    cResult[7] = harvestDisabledResult;
-    tmp14 = harvestDisabledResult;
-  }
-  return tmp13;
-}) : (function useIsHarvestRequestDisabled() {
-  let currentUser;
+let tmp;
+const HarvesterUtils = tmp(16708);
+const f110235 = () => currentUser.getCurrentUser();
+const f110236 = (harvestRequest) => harvestRequest.harvestRequest;
+const f110237 = (isRequesting) => isRequesting.isRequesting;
+function useIsHarvestRequestDisabled() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp4 = closure_7((harvestRequest) => harvestRequest.harvestRequest, _slicedToArray.shallow);
-  let harvestDisabledResult = closure_7((isRequesting) => isRequesting.isRequesting, _slicedToArray.shallow);
+  const stateFromStores = obj.useStateFromStores(items, f110235);
+  const tmp4 = closure_7(f110236, _slicedToArray.shallow);
+  let harvestDisabledResult = closure_7(f110237, _slicedToArray.shallow);
   let tmp6 = null == stateFromStores;
   if (!tmp6) {
     if (!harvestDisabledResult) {
@@ -115,192 +44,75 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsHarvest
     tmp6 = harvestDisabledResult;
   }
   return tmp6;
-});
-let closure_8 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHarvestRequest() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(harvestRequest) {
-      return harvestRequest.harvestRequest;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_7(first, _slicedToArray.shallow);
-}) : (function useHarvestRequest() {
-  return closure_7((harvestRequest) => harvestRequest.harvestRequest, _slicedToArray.shallow);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsRequestingHarvestState() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t(isRequesting) {
-      return isRequesting.isRequesting;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_7(first, _slicedToArray.shallow);
-}) : (function useIsRequestingHarvestState() {
-  return closure_7((isRequesting) => isRequesting.isRequesting, _slicedToArray.shallow);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHarvestRequestSettingTrailing() {
-  let tmp3;
-  const obj = react;
-  const cResult = obj.c(2);
-  const tmp2 = closure_10();
-  if (cResult[0] !== tmp2) {
-    let tmp4 = null;
-    if (tmp2) {
-      tmp4 = <ActivityIndicator />;
-    }
-    cResult[0] = tmp2;
-    cResult[1] = tmp4;
-    tmp3 = tmp4;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function useHarvestRequestSettingTrailing() {
-  let tmp = null;
-  if (closure_10()) {
-    tmp = <ActivityIndicator />;
-  }
-  return tmp;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequestYourDataSettingDescription() {
-  const obj = react;
-  const cResult = obj.c(4);
-  const tmp4 = closure_9();
-  const currentUser = UserStore.getCurrentUser();
-  if (null == currentUser) {
-    return null;
-  } else if (currentUser.isStaff()) {
-    let first;
-    const _Symbol3 = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const stringResult = intl2.string(intl3.t.ZPQLH2);
-      cResult[0] = stringResult;
-      first = stringResult;
-    } else {
-      first = cResult[0];
-    }
-    return first;
-  } else if (null == tmp4) {
-    return null;
-  } else {
-    let tmp6;
-    let tmp5;
-    if (cResult[1] !== tmp4.created_at) {
-      const _Symbol = Symbol;
-      const forResult = Symbol.for("react.early_return_sentinel");
-      const obj3 = _modDef2047(tmp4.created_at);
-      const addResult = obj3.add(hasOwnProperty, "days");
-      let tmp11 = null;
-      let formatToPlainStringResult;
-      if (!addResult.isBefore(_modDef2047())) {
-        const intl = tmp(1125).intl;
-        const formatToPlainString = intl.formatToPlainString;
-        const obj2 = { date: addResult.format("MMMM Do YYYY") };
-        const RNDlV9 = tmp(1125).t.RNDlV9;
-        formatToPlainStringResult = formatToPlainString(RNDlV9, obj2);
-        tmp11 = forResult;
-      }
-      cResult[1] = tmp4.created_at;
-      cResult[2] = formatToPlainStringResult;
-      cResult[3] = tmp11;
-      tmp6 = tmp11;
-      tmp5 = formatToPlainStringResult;
-    } else {
-      tmp5 = cResult[2];
-      tmp6 = cResult[3];
-    }
-    const _Symbol2 = Symbol;
-    if (tmp6 !== Symbol.for("react.early_return_sentinel")) {
-      tmp5 = tmp6;
-    }
-    return tmp5;
-  }
-}) : (function useRequestYourDataSettingDescription() {
-  const tmp = closure_9();
-  const currentUser = UserStore.getCurrentUser();
-  if (null == currentUser) {
-    return null;
-  } else if (currentUser.isStaff()) {
-    const intl2 = intl3.intl;
-    return intl2.string(intl3.t.ZPQLH2);
-  } else if (null == tmp) {
-    return null;
-  } else {
-    const obj3 = _modDef2047(tmp.created_at);
-    const addResult = obj3.add(hasOwnProperty, "days");
-    let formatToPlainStringResult = null;
-    if (!addResult.isBefore(_modDef2047())) {
-      const intl = intl3.intl;
-      const formatToPlainString = intl.formatToPlainString;
-      const obj = { date: addResult.format("MMMM Do YYYY") };
-      const RNDlV9 = intl3.t.RNDlV9;
-      formatToPlainStringResult = formatToPlainString(RNDlV9, obj);
-    }
-    return formatToPlainStringResult;
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreNavigationAction() {
-  let tmp3;
-  const obj = react;
-  const cResult = obj.c(2);
-  const tmp2 = closure_8();
-  let closure_0 = tmp2;
-  if (cResult[0] !== tmp2) {
-    const fn = function t(fn) {
-      let flag = !closure_0;
-      if (flag) {
-        fn();
-        flag = true;
-      }
-      return flag;
-    };
-    cResult[0] = tmp2;
-    cResult[1] = fn;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function usePreNavigationAction() {
-  let closure_0 = closure_8();
-  return (fn) => {
-    let flag = !closure_0;
-    if (flag) {
-      fn();
-      flag = true;
-    }
-    return flag;
-  };
-});
+}
+const ActivityIndicator = react_native.ActivityIndicator;
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
+({ REQUEST_DATA_LIMIT_DAYS: hasOwnProperty, UserSettingsSections } = Constants);
+const jsx = Fragment.jsx;
+let closure_7 = module_1255.createWithEqualityFn(() => ({ isRequesting: false, harvestRequest: null }));
 let obj = {
   useTitle() {
     const intl = intl3.intl;
     return intl.string(intl3.t.XAHCgJ);
   },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  useTrailing: tmp4,
-  useDescription: tmp5,
-  useIsDisabled: tmp3,
-  usePreNavigationAction: tmp6,
+  useTrailing: function useHarvestRequestSettingTrailing() {
+    let tmp = null;
+    if (closure_7((isRequesting) => isRequesting.isRequesting, _slicedToArray.shallow)) {
+      tmp = <ActivityIndicator />;
+    }
+    return tmp;
+  },
+  useDescription: function useRequestYourDataSettingDescription() {
+    const tmp3 = closure_7((harvestRequest) => harvestRequest.harvestRequest, _slicedToArray.shallow);
+    const currentUser = UserStore.getCurrentUser();
+    if (null == currentUser) {
+      return null;
+    } else if (currentUser.isStaff()) {
+      const intl2 = tmp(1114).intl;
+      return intl2.string(intl3.t.ZPQLH2);
+    } else if (null == tmp3) {
+      return null;
+    } else {
+      const obj3 = _modDef2044(tmp3.created_at);
+      const addResult = obj3.add(hasOwnProperty, "days");
+      let formatToPlainStringResult = null;
+      if (!addResult.isBefore(_modDef2044())) {
+        const intl = tmp(1114).intl;
+        const formatToPlainString = intl.formatToPlainString;
+        const obj = { date: addResult.format("MMMM Do YYYY") };
+        const RNDlV9 = tmp(1114).t.RNDlV9;
+        formatToPlainStringResult = formatToPlainString(RNDlV9, obj);
+      }
+      return formatToPlainStringResult;
+    }
+  },
+  useIsDisabled: useIsHarvestRequestDisabled,
+  usePreNavigationAction() {
+    let currentUser;
+    const items = [UserStore];
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, f110235);
+    const tmp4 = closure_7(f110236, _slicedToArray.shallow);
+    let harvestDisabledResult = closure_7(f110237, _slicedToArray.shallow);
+    let tmp6 = null == stateFromStores;
+    if (!tmp6) {
+      if (!harvestDisabledResult) {
+        const tmpResult = HarvesterUtils;
+        harvestDisabledResult = tmpResult.harvestDisabled(tmp4, stateFromStores);
+      }
+      tmp6 = harvestDisabledResult;
+    }
+    harvestDisabledResult = tmp6;
+    return (fn) => {
+      let flag = !harvestDisabledResult;
+      if (flag) {
+        fn();
+        flag = true;
+      }
+      return flag;
+    };
+  },
   screen: {
     route: UserSettingsSections.REQUEST_DATA,
     getComponent() {
@@ -328,4 +140,4 @@ export function fetchHarvestStatus() {
     obj.batchUpdates(() => state.setState({ isRequesting: false }));
   });
 }
-export const useIsHarvestRequestDisabled = tmp3;
+export { useIsHarvestRequestDisabled };

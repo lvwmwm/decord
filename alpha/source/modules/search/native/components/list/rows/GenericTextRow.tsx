@@ -1,18 +1,15 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18700
+// Function ID: 18701
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 5005, 558, 576, 5271, 18594, 2]
+// Dependencies: [5, 19, 17, 21, 5009, 5619, 18653, 2]
 
-// Module 18641 (GenericTextRow)
+// Module 18700 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import SearchListRow2 from "SearchListRow" /* 18594 */;
+import SearchListRow2 from "SearchListRow" /* 18653 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -20,136 +17,7 @@ let c0, c1;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ title: { flexDirection: "row" }, container: { padding: 10 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GenericTextRow(text) {
-  let accessibilityActions;
-  let icon;
-  let onAccessibilityAction;
-  let onPress;
-  let trailing;
-  const tmp2 = dependencyMap;
-  let obj = react2;
-  const cResult = obj.c(18);
-  text = text.text;
-  ({ icon, onPress } = text);
-  ({ trailing, accessibilityActions, onAccessibilityAction } = text);
-  const tmp4 = closure_6();
-  if (cResult[0] === onPress) {
-    let tmp5;
-    if (cResult[1] === text) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === tmp4.container) {
-      let tmp6;
-      if (cResult[4] === text) {
-        tmp6 = cResult[5];
-      }
-      if (cResult[6] === tmp4.title) {
-        let tmp9;
-        let tmp13;
-        if (cResult[7] === tmp6) {
-          tmp9 = cResult[8];
-        }
-        if (cResult[9] !== icon) {
-          const tmp15 = null != icon && <icon size="sm" color="mobile-text-heading-primary" />;
-          cResult[9] = icon;
-          cResult[10] = tmp15;
-          tmp13 = tmp15;
-        } else {
-          tmp13 = cResult[10];
-        }
-        if (cResult[11] === accessibilityActions) {
-          if (cResult[12] === tmp5) {
-            if (cResult[13] === tmp9) {
-              if (cResult[14] === onAccessibilityAction) {
-                if (cResult[15] === tmp13) {
-                  let tmp17;
-                  if (cResult[16] === trailing) {
-                    tmp17 = cResult[17];
-                  }
-                  return tmp17;
-                }
-              }
-            }
-          }
-        }
-        const tmp19 = jsx(SearchListRow2.SearchListRow, { icon: tmp13, label: tmp9, onPress: tmp5, trailing, accessibilityActions, onAccessibilityAction });
-        cResult[11] = accessibilityActions;
-        cResult[12] = tmp5;
-        cResult[13] = tmp9;
-        cResult[14] = onAccessibilityAction;
-        cResult[15] = tmp13;
-        cResult[16] = trailing;
-        cResult[17] = tmp19;
-        tmp17 = tmp19;
-      }
-      const tmp12 = <View style={tmp4.title}>{tmp6}</View>;
-      cResult[6] = tmp4.title;
-      cResult[7] = tmp6;
-      cResult[8] = tmp12;
-      tmp9 = tmp12;
-    }
-    const tmp8 = jsx(Text_Text.Text, { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp4.container, children: text });
-    cResult[3] = tmp4.container;
-    cResult[4] = text;
-    cResult[5] = tmp8;
-    tmp6 = tmp8;
-  }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let v1;
-    if (c0 === 2) {
-      c0 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        c0 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c0 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c0 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            c1 = 1;
-            c0 = 1;
-            const obj4 = { value: c1(c0), done: false };
-            return obj4;
-          }
-        } else if (arg0 === 1) {
-          c0 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c0 = 3;
-          const obj = { value, done: true };
-          return obj;
-        } else {
-          c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp6) {
-        c0 = 3;
-        throw tmp6;
-      }
-    }
-  });
-  function t1() {
-    return closure_0(...arguments);
-  }
-  cResult[0] = onPress;
-  cResult[1] = text;
-  cResult[2] = t1;
-  tmp5 = t1;
-}) : (function GenericTextRow(text) {
+const memoResult = react.memo(function GenericTextRow(text) {
   let accessibilityActions;
   let icon;
   let onAccessibilityAction;
@@ -171,7 +39,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -199,7 +67,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c0 = 3;
@@ -215,7 +83,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     icon1 = tmp3(icon, { size: "sm", color: "mobile-text-heading-primary" });
   }
   return jsx(SearchListRow, { icon: icon1, label, onPress: onPress1, trailing, accessibilityActions, onAccessibilityAction });
-}));
+});
 const result = size.fileFinishedImporting("modules/search/native/components/list/rows/GenericTextRow.tsx");
 
 export default memoResult;

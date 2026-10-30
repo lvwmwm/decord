@@ -1,60 +1,23 @@
-// Module ID: 14056
-// Function ID: 14057
+// Module ID: 14204
+// Function ID: 14205
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [1084, 21, 558, 576, 1125, 2065, 7047, 7355, 2]
+// Dependencies: [1072, 21, 7054, 1114, 2062, 7363, 2]
+// Exports: default
 
-// Module 14056 (RedesignContactSyncDiscoverabilityFooter)
+// Module 14204 (RedesignContactSyncDiscoverabilityFooter)
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import TableRowGroup2 from "TableRowGroup" /* 7047 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7355 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import TableRowGroup2 from "TableRowGroup" /* 7054 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7363 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignContactSyncDiscoverabilityFooter(arg0) {
-  let discoverabilityEnabled;
-  let first;
-  let obj3;
-  let onValueChanged;
-  const obj = react;
-  const cResult = obj.c(5);
-  ({ discoverabilityEnabled, onValueChanged } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const format = intl.format;
-    const obj2 = { helpdeskUrl: obj3.getArticleURL(HelpdeskArticles.CONTACT_SYNC) };
-    const zopgpe = tmp(1125).t.zopgpe;
-    obj3 = HelpdeskUtilsDefault;
-    const formatResult = format(zopgpe, obj2);
-    cResult[0] = formatResult;
-    first = formatResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult = intl2.string(intl3.t.a5QL24);
-    cResult[1] = stringResult;
-  }
-  if (cResult[2] === discoverabilityEnabled) {
-    let tmp10;
-    if (cResult[3] === onValueChanged) {
-      tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const TableRowGroup = tmp(7047).TableRowGroup;
-  const tmp11 = <TableRowGroup hasIcons={false} helperText={first}>{null}</TableRowGroup>;
-  cResult[2] = discoverabilityEnabled;
-  cResult[3] = onValueChanged;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function RedesignContactSyncDiscoverabilityFooter(arg0) {
+const result = size.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncDiscoverabilityFooter.tsx");
+
+export default function RedesignContactSyncDiscoverabilityFooter(arg0) {
   let discoverabilityEnabled;
   let intl2;
   let obj3;
@@ -70,7 +33,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignCo
   const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
   intl2 = intl3.intl;
   return <TableRowGroup hasIcons={false} helperText={format(zopgpe, obj2)}>{null}</TableRowGroup>;
-});
-const result = size.fileFinishedImporting("modules/contact_sync/native/components/RedesignContactSyncDiscoverabilityFooter.tsx");
-
-export default tmp2;
+};

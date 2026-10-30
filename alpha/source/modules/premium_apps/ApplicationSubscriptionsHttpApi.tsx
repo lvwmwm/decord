@@ -1,13 +1,13 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11704
+// Function ID: 11705
 // Name: ApplicationSubscriptionsHttpApi
-// Dependencies: [5, 1084, 1294, 584, 6434, 2]
+// Dependencies: [5, 1072, 1283, 572, 6441, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 11504 (ApplicationSubscriptionsHttpApi)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import APIErrorDefault from "APIError" /* 6434 */;
+// Module 11704 (ApplicationSubscriptionsHttpApi)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import APIErrorDefault from "APIError" /* 6441 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,13 +49,13 @@ obj = function _getSubscriptionGroupForSubscriptionPlan() {
   obj = _asyncToGenerator(async (arg0) => {
     let c1;
     let c2;
-    let obj7;
+    let obj4;
     let closure_0 = arg0;
     const HTTP = require("HTTPUtils").HTTP;
-    const obj4 = { url: Endpoints.SUBSCRIPTION_PLAN_GROUP_LISTING(closure_0), rejectWithError: obj7.rejectWithMigratedError() };
+    const obj5 = { url: Endpoints.SUBSCRIPTION_PLAN_GROUP_LISTING(closure_0), rejectWithError: obj4.rejectWithMigratedError() };
     const get = HTTP.get;
-    obj7 = require("HTTPUtils");
-    await get(obj4);
+    obj4 = require("HTTPUtils");
+    await get(obj5);
     return arg1.body;
   });
   return obj(...arguments);

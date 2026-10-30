@@ -1,16 +1,16 @@
-// Module ID: 4947
-// Function ID: 4948
+// Module ID: 4951
+// Function ID: 4952
 // Name: RelationshipStore
-// Dependencies: [32, 4948, 1389, 1084, 584, 504, 4925, 2]
+// Dependencies: [32, 4952, 1384, 1072, 572, 504, 4929, 2]
 
-// Module 4947 (RelationshipStore)
+// Module 4951 (RelationshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4925 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4929 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4948 */;
-import UserStore from "UserStore" /* 1389 */;
+import MessageRecord from "MessageRecord" /* 4952 */;
+import UserStore from "UserStore" /* 1384 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_16;
@@ -110,10 +110,10 @@ let set1 = new Set();
 const set2 = new Set();
 let obj12 = {};
 let closure_15 = 0;
-const authStore3 = {};
+const authStore4 = {};
 let closure_17 = 0;
 let size = 0;
-let closure_20 = { friends: "toCharArray$esjava$1", blocked: "Symbol", ignored: "ix", blockedOrIgnored: "min" };
+let closure_20 = { friends: "Array", blocked: "Path", ignored: "y", blockedOrIgnored: "HermesInternal" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = get_initializedDefault.Store;

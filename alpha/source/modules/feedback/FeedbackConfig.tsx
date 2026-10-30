@@ -1,13 +1,13 @@
-// Module ID: 19331
-// Function ID: 19332
+// Module ID: 19394
+// Function ID: 19395
 // Name: FeedbackConfig
-// Dependencies: [5752, 10111, 7368, 19332, 2]
+// Dependencies: [5759, 10138, 7375, 19395, 2]
 
-// Module 19331 (FeedbackConfig)
-import HotspotStore from "HotspotStore" /* 7368 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19332 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import Constants from "Constants" /* 10111 */;
+// Module 19394 (FeedbackConfig)
+import HotspotStore from "HotspotStore" /* 7375 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 19395 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import Constants from "Constants" /* 10138 */;
 import size from "module_2" /* 2 */;
 
 let FeedbackGroup;

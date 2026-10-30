@@ -1,159 +1,26 @@
-// Module ID: 16492
-// Function ID: 16493
+// Module ID: 16543
+// Function ID: 16544
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 2066, 16484, 16330, 16487, 16331, 558, 576, 504, 16493, 16486, 551, 2]
+// Dependencies: [32, 19, 2063, 16535, 16383, 16538, 16384, 504, 16544, 16537, 551, 2]
+// Exports: useSettingSearchResults
 
-// Module 16492 (useSettingSearchResults)
+// Module 16543 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16486 */;
-import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 16493 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16537 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 16544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16484 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 16330 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import react from "react" /* 19 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16535 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 16383 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, scoredSearchResults, setting;
+let scoredSearchResults, setting;
 
-let react = react_mod;
 let closure_8 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingSearchResults() {
-  let closure_4;
-  let locale;
-  let tmp15;
-  let tmp17;
-  let tmp19;
-  let tmp20;
-  let tmp23;
-  let tmp24;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function o() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const self = this;
-    const self2 = this;
-    const tmp10 = UserSettingSearchManagerDefault;
-    const tmpResult2 = tmp(16486);
-    const tmp102 = new tmp10(tmpResult2.getSettingSearchableTitles(), stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp102;
-    tmp8 = tmp102;
-  } else {
-    tmp8 = cResult[3];
-  }
-  _require = tmp8;
-  [tmp15, importDefault] = react.useState(closure_8);
-  _slicedToArray(react.useState(closure_8), 2);
-  [tmp17, dependencyMap] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  const tmp18 = _slicedToArray(react.useState(10), 2);
-  [tmp19, _slicedToArray] = tmp18;
-  const obj4 = react;
-  if (cResult[4] !== tmp8) {
-    const tmp22 = debounceDefault((arg0) => {
-      scoredSearchResults = SettingBlocklistStore.getField("blocklist");
-      scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
-      const found = scoredSearchResults.filter((setting) => {
-        setting = setting.setting;
-        const obj = closure_2_1(closure_2_2[5]);
-        let tmp3 = !obj.isBlocked(setting, closure_0);
-        obj.isBlocked(setting, closure_0);
-        const tmp = closure_2_2;
-        if (tmp3) {
-          tmp3 = !scoredSearchResults(tmp[6]).SETTING_RENDERER_CONFIG[setting].unsearchable;
-        }
-        return tmp3;
-      });
-      let tmp = importDefault(found);
-      _slicedToArray(Math.max(Math.min(found.length, 10), 5));
-      let tmp3 = dependencyMap(false);
-    }, 350);
-    cResult[4] = tmp8;
-    cResult[5] = tmp22;
-    tmp20 = tmp22;
-  } else {
-    tmp20 = cResult[5];
-  }
-  react = tmp20;
-  if (cResult[6] !== tmp20) {
-    const fn2 = function x() {
-      const obj = {
-        equalityFn(arg0, arg1) {
-          return arg0 === arg1;
-        },
-        fireImmediately: true
-      };
-      let closure_0 = UserSettingSearchStore.subscribe((query) => {
-        const str = query.query;
-        return str.trim();
-      }, (arg0) => {
-        if ("" === arg0) {
-          const cancel = closure_1_4.cancel;
-          if (cancel != null) {
-            cancel();
-          }
-          closure_1_1(closure_2_8);
-          closure_1_2(false);
-        } else {
-          closure_1_2(true);
-          closure_1_4(arg0);
-        }
-      }, obj);
-      return () => {
-        closure_0();
-        const cancel = closure_4.cancel;
-        if (cancel != null) {
-          cancel();
-        }
-      };
-    };
-    const items1 = [tmp20];
-    cResult[6] = tmp20;
-    cResult[7] = fn2;
-    cResult[8] = items1;
-    tmp24 = items1;
-    tmp23 = fn2;
-  } else {
-    tmp23 = cResult[7];
-    tmp24 = cResult[8];
-  }
-  const effect = obj4.useEffect(tmp23, tmp24);
-  if (cResult[9] === tmp17) {
-    if (cResult[10] === tmp19) {
-      let tmp26;
-      if (cResult[11] === tmp15) {
-        tmp26 = cResult[12];
-      }
-      return tmp26;
-    }
-  }
-  const obj2 = { settings: tmp15, isLoading: tmp17, placeholderCount: tmp19 };
-  cResult[9] = tmp17;
-  cResult[10] = tmp19;
-  cResult[11] = tmp15;
-  cResult[12] = obj2;
-  tmp26 = obj2;
-}) : (function useSettingSearchResults() {
+const result = size.fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
+
+export function useSettingSearchResults() {
   let closure_2;
   let closure_3;
   let closure_4;
@@ -228,7 +95,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSettingSe
     };
   }, items3);
   return { settings, isLoading, placeholderCount };
-});
-const result = size.fileFinishedImporting("modules/settings/native/search/hooks/useSettingSearchResults.tsx");
-
-export const useSettingSearchResults = tmp2;
+}

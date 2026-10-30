@@ -1,31 +1,30 @@
-// Module ID: 13662
-// Function ID: 13663
+// Module ID: 13809
+// Function ID: 13810
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 13663, 13661, 21, 5005, 587, 558, 576, 504, 6943, 13664, 6963, 1125, 8938, 5271, 9182, 1631, 5281, 1503, 6945, 13669, 7280, 13660, 2]
+// Dependencies: [32, 19, 17, 13810, 13808, 21, 5009, 575, 504, 6969, 6951, 13811, 8971, 1114, 5619, 9195, 1626, 5629, 1498, 6953, 13816, 13807, 7288, 2]
+// Exports: default
 
-// Module 13662 (GuildDirectoryCreateOrAdd)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import GuildIconDefault from "GuildIcon" /* 6943 */;
-import TableRow2 from "TableRow" /* 6963 */;
-import SegmentedControlState from "SegmentedControlState" /* 8938 */;
-import SegmentedControl from "SegmentedControl" /* 9182 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13661 */;
+// Module 13809 (GuildDirectoryCreateOrAdd)
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import GuildIconDefault from "GuildIcon" /* 6951 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import SegmentedControlState from "SegmentedControlState" /* 8971 */;
+import SegmentedControl from "SegmentedControl" /* 9195 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13663 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13810 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, arr, navigation, obj1, tmp2, tmp3;
+let _require, navigation;
 
 let c10;
 let c9;
@@ -34,325 +33,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let react = react_mod;
-({ View: hasOwnProperty, ActivityIndicator: metroRequire } = react_native);
-const GuildDirectoryCreate = directory_channels_GuildDirectoryConstants.GuildDirectoryCreate;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { loadingContainer: { flex: 1, alignItems: "center", justifyContent: "center" }, container: { flex: 1 }, guildIcon: obj2, header: { padding: 16, alignItems: "center", justifyContent: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, footerSafeAreaContainer: obj3, footerContainer: { paddingHorizontal: 16, height: 110, justifyContent: "center" }, footerTitle: { alignSelf: "center", textAlign: "center", marginBottom: 16 }, segmentedControl: obj4 };
-obj2 = { borderRadius: nativeDefault.radii.sm };
-createStyles = createStyles.createStyles;
-obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
-obj4 = { paddingHorizontal: nativeDefault.space.PX_12, width: "100%", marginTop: 18 };
-let closure_11 = createStyles(obj);
-let memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryEntryEditRow(guild) {
-  let end;
-  let first;
-  let start;
-  const obj = guild(576);
-  const cResult = obj.c(15);
-  guild = guild.guild;
-  const directoryChannelId = guild.directoryChannelId;
-  ({ start, end } = guild);
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildDirectoryStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === directoryChannelId) {
-    let tmp7;
-    if (cResult[2] === guild.id) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = guild(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-    if (cResult[4] === guild) {
-      let tmp9;
-      let tmp13;
-      if (cResult[5] === tmp4.guildIcon) {
-        tmp9 = cResult[6];
-      }
-      if (cResult[7] !== stateFromStores) {
-        const obj2 = { entry: stateFromStores };
-        const tmp16 = closure_9(directoryChannelId(13664), obj2);
-        cResult[7] = stateFromStores;
-        cResult[8] = tmp16;
-        tmp13 = tmp16;
-      } else {
-        tmp13 = cResult[8];
-      }
-      if (cResult[9] === end) {
-        if (cResult[10] === guild.name) {
-          if (cResult[11] === start) {
-            if (cResult[12] === tmp9) {
-              let tmp17;
-              if (cResult[13] === tmp13) {
-                tmp17 = cResult[14];
-              }
-              return tmp17;
-            }
-          }
-        }
-      }
-      const obj3 = { label: guild.name, icon: tmp9, trailing: tmp13, start, end };
-      const tmp19 = closure_9(guild(6963).TableRow, obj3);
-      cResult[9] = end;
-      cResult[10] = guild.name;
-      cResult[11] = start;
-      cResult[12] = tmp9;
-      cResult[13] = tmp13;
-      cResult[14] = tmp19;
-      tmp17 = tmp19;
-    }
-    const obj4 = { style: tmp4.guildIcon, guild };
-    const tmp12 = closure_9(directoryChannelId(6943), obj4);
-    cResult[4] = guild;
-    cResult[5] = tmp4.guildIcon;
-    cResult[6] = tmp12;
-    tmp9 = tmp12;
-  }
-  const fn = function o() {
-    return GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id);
-  };
-  cResult[1] = directoryChannelId;
-  cResult[2] = guild.id;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function GuildDirectoryEntryEditRow(guild) {
-  let end;
-  let obj3;
-  let start;
-  guild = guild.guild;
-  const directoryChannelId = guild.directoryChannelId;
-  ({ start, end } = guild);
-  const items = [GuildDirectoryStore];
-  const tmp = closure_11();
-  const obj = guild(504);
-  const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6943), obj3), trailing: closure_9(directoryChannelId(13664), { entry: stateFromStores }), start, end };
-  const TableRow = guild(6963).TableRow;
-  obj3 = { style: tmp.guildIcon, guild };
-  return closure_9(TableRow, obj2);
-}));
-const memo2 = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryEntryAddRow(guild) {
-  let end;
-  let start;
-  const obj = react2;
-  const cResult = obj.c(13);
-  guild = guild.guild;
-  const handleItemPress = guild.handleItemPress;
-  ({ start, end } = guild);
-  const tmp4 = closure_11();
-  if (cResult[0] === guild) {
-    let tmp5;
-    if (cResult[1] === handleItemPress) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === guild) {
-      let tmp6;
-      let tmp11;
-      if (cResult[4] === tmp4.guildIcon) {
-        tmp6 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp13 = React4(TableRow2.TableRow.Arrow, {});
-        cResult[6] = tmp13;
-        tmp11 = tmp13;
-      } else {
-        tmp11 = cResult[6];
-      }
-      if (cResult[7] === end) {
-        if (cResult[8] === guild.name) {
-          if (cResult[9] === start) {
-            if (cResult[10] === tmp5) {
-              let tmp14;
-              if (cResult[11] === tmp6) {
-                tmp14 = cResult[12];
-              }
-              return tmp14;
-            }
-          }
-        }
-      }
-      const obj2 = { onPress: tmp5, label: guild.name, icon: tmp6, trailing: tmp11, start, end };
-      const tmp16 = React4(TableRow2.TableRow, obj2);
-      cResult[7] = end;
-      cResult[8] = guild.name;
-      cResult[9] = start;
-      cResult[10] = tmp5;
-      cResult[11] = tmp6;
-      cResult[12] = tmp16;
-      tmp14 = tmp16;
-    }
-    const obj3 = { style: tmp4.guildIcon, guild };
-    const tmp9 = React4(GuildIconDefault, obj3);
-    cResult[3] = guild;
-    cResult[4] = tmp4.guildIcon;
-    cResult[5] = tmp9;
-    tmp6 = tmp9;
-  }
-  const fn = function n() {
-    return handleItemPress(guild);
-  };
-  cResult[0] = guild;
-  cResult[1] = handleItemPress;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : (function GuildDirectoryEntryAddRow(guild) {
-  let end;
-  let obj2;
-  let start;
-  guild = guild.guild;
-  const handleItemPress = guild.handleItemPress;
-  ({ start, end } = guild);
-  const obj = {
-    onPress() {
-      return handleItemPress(guild);
-    },
-    label: guild.name,
-    icon: React4(GuildIconDefault, obj2),
-    trailing: React4(TableRow2.TableRow.Arrow, {}),
-    start,
-    end
-  };
-  const tmp = closure_11();
-  const TableRow = TableRow2.TableRow;
-  obj2 = { style: tmp.guildIcon, guild };
-  return React4(TableRow, obj);
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAddHeader(arg0) {
-  let directoryGuildName;
-  let first;
-  let header;
-  let items1;
-  let setTabIndex;
-  let tabIndex;
-  let title;
-  const obj = react2;
-  const cResult = obj.c(22);
-  ({ directoryGuildName, tabIndex, setTabIndex } = arg0);
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const items = [intl.string(intl5.t.FTe8HS), ];
-    const intl2 = tmp(1125).intl;
-    items[1] = intl2.string(intl5.t.epOumr);
-    const mapped = items.map((id) => ({ id, label: id, page: null }));
-    cResult[0] = mapped;
-    first = mapped;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === setTabIndex) {
-    let tmp7;
-    let tmp9;
-    if (cResult[2] === tabIndex) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = SegmentedControlState;
-    const segmentedControlState = tmpResult.useSegmentedControlState(tmp7);
-    ({ header, title } = tmp4);
-    if (cResult[4] !== directoryGuildName) {
-      const intl3 = tmp(1125).intl;
-      const obj2 = { guildName: directoryGuildName };
-      const formatResult = intl3.format(intl5.t["9SKJdF"], obj2);
-      cResult[4] = directoryGuildName;
-      cResult[5] = formatResult;
-      tmp9 = formatResult;
-    } else {
-      tmp9 = cResult[5];
-    }
-    if (cResult[6] === tmp4.title) {
-      let tmp11;
-      let tmp14;
-      let tmp16;
-      let tmp19;
-      if (cResult[7] === tmp9) {
-        tmp11 = cResult[8];
-      }
-      const _Symbol = Symbol;
-      const description = tmp4.description;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(1125).intl;
-        const stringResult = intl4.string(intl5.t.pYFZ9p);
-        cResult[9] = stringResult;
-        tmp14 = stringResult;
-      } else {
-        tmp14 = cResult[9];
-      }
-      if (cResult[10] !== tmp4.description) {
-        const obj3 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp14 };
-        const tmp18 = React4(Text_Text.Text, obj3);
-        cResult[10] = tmp4.description;
-        cResult[11] = tmp18;
-        tmp16 = tmp18;
-      } else {
-        tmp16 = cResult[11];
-      }
-      if (cResult[12] !== segmentedControlState) {
-        const obj4 = { state: segmentedControlState };
-        const tmp21 = React4(SegmentedControl.SegmentedControl, obj4);
-        cResult[12] = segmentedControlState;
-        cResult[13] = tmp21;
-        tmp19 = tmp21;
-      } else {
-        tmp19 = cResult[13];
-      }
-      if (cResult[14] === tmp4.segmentedControl) {
-        let tmp22;
-        if (cResult[15] === tmp19) {
-          tmp22 = cResult[16];
-        }
-        if (cResult[17] === tmp4.header) {
-          if (cResult[18] === tmp22) {
-            if (cResult[19] === tmp11) {
-              let tmp26;
-              if (cResult[20] === tmp16) {
-                tmp26 = cResult[21];
-              }
-              return tmp26;
-            }
-          }
-        }
-        const obj5 = { style: header, children: items1 };
-        items1 = [tmp11, tmp16, tmp22];
-        const tmp29 = authStore(hasOwnProperty, obj5);
-        cResult[17] = tmp4.header;
-        cResult[18] = tmp22;
-        cResult[19] = tmp11;
-        cResult[20] = tmp16;
-        cResult[21] = tmp29;
-        tmp26 = tmp29;
-      }
-      const obj6 = { style: tmp4.segmentedControl, children: tmp19 };
-      const tmp25 = React4(hasOwnProperty, obj6);
-      cResult[14] = tmp4.segmentedControl;
-      cResult[15] = tmp19;
-      cResult[16] = tmp25;
-      tmp22 = tmp25;
-    }
-    const obj7 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp9 };
-    const tmp13 = React4(Text_Text.Text, obj7);
-    cResult[6] = tmp4.title;
-    cResult[7] = tmp9;
-    cResult[8] = tmp13;
-    tmp11 = tmp13;
-  }
-  const obj8 = { pageWidth: 0, defaultIndex: tabIndex, onSetActiveIndex: setTabIndex, items: first };
-  cResult[1] = setTabIndex;
-  cResult[2] = tabIndex;
-  cResult[3] = obj8;
-  tmp7 = obj8;
-}) : (function GuildDirectoryCreateOrAddHeader(arg0) {
+function GuildDirectoryCreateOrAddHeader(arg0) {
   let directoryGuildName;
   let intl3;
   let intl4;
@@ -382,108 +63,8 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   const obj5 = { style: tmp.segmentedControl, children: React4(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
   items1[2] = React4(hasOwnProperty, obj5);
   return authStore(hasOwnProperty, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
-  let footerContainer;
-  let footerTitle;
-  let items;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(18);
-  handleFooterPress = handleFooterPress.handleFooterPress;
-  const tmp4 = closure_11();
-  const bottom = useSafeAreaInsetsDefault().bottom;
-  if (cResult[0] !== bottom) {
-    const obj2 = { paddingBottom: bottom };
-    cResult[0] = bottom;
-    cResult[1] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.footerSafeAreaContainer) {
-    let tmp6;
-    let tmp8;
-    let tmp10;
-    let tmp13;
-    let tmp15;
-    if (cResult[3] === tmp5) {
-      tmp6 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    ({ footerContainer, footerTitle } = tmp4);
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl5.t.pgCZRP);
-      cResult[5] = stringResult;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[5];
-    }
-    if (cResult[6] !== tmp4.footerTitle) {
-      const obj3 = { style: footerTitle, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp8 };
-      const tmp12 = React4(Text_Text.Text, obj3);
-      cResult[6] = tmp4.footerTitle;
-      cResult[7] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[7];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(intl5.t.WqJbLi);
-      cResult[8] = stringResult1;
-      tmp13 = stringResult1;
-    } else {
-      tmp13 = cResult[8];
-    }
-    if (cResult[9] !== handleFooterPress) {
-      const obj4 = { variant: "secondary", text: tmp13, onPress: handleFooterPress };
-      const tmp17 = React4(components_Button_Button.Button, obj4);
-      cResult[9] = handleFooterPress;
-      cResult[10] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[10];
-    }
-    if (cResult[11] === tmp4.footerContainer) {
-      if (cResult[12] === tmp10) {
-        let tmp18;
-        if (cResult[13] === tmp15) {
-          tmp18 = cResult[14];
-        }
-        if (cResult[15] === tmp6) {
-          let tmp22;
-          if (cResult[16] === tmp18) {
-            tmp22 = cResult[17];
-          }
-          return tmp22;
-        }
-        const obj5 = { style: tmp6, children: tmp18 };
-        const tmp25 = React4(hasOwnProperty, obj5);
-        cResult[15] = tmp6;
-        cResult[16] = tmp18;
-        cResult[17] = tmp25;
-        tmp22 = tmp25;
-      }
-    }
-    const obj6 = { style: footerContainer, children: items };
-    items = [tmp10, tmp15];
-    const tmp21 = authStore(hasOwnProperty, obj6);
-    cResult[11] = tmp4.footerContainer;
-    cResult[12] = tmp10;
-    cResult[13] = tmp15;
-    cResult[14] = tmp21;
-    tmp18 = tmp21;
-  }
-  const items1 = [tmp4.footerSafeAreaContainer, tmp5];
-  cResult[2] = tmp4.footerSafeAreaContainer;
-  cResult[3] = tmp5;
-  cResult[4] = items1;
-  tmp6 = items1;
-}) : (function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
+}
+function GuildDirectoryCreateOrAddFooter(handleFooterPress) {
   let intl;
   let intl2;
   let items;
@@ -504,154 +85,78 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildD
   intl2 = intl5.intl;
   items1[1] = React4(Button, obj5);
   return React4(hasOwnProperty, obj);
+}
+({ View: hasOwnProperty, ActivityIndicator: metroRequire } = react_native);
+const GuildDirectoryCreate = directory_channels_GuildDirectoryConstants.GuildDirectoryCreate;
+({ jsx: c9, jsxs: c10 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { loadingContainer: { flex: 1, alignItems: "center", justifyContent: "center" }, container: { flex: 1 }, guildIcon: obj2, header: { padding: 16, alignItems: "center", justifyContent: "center" }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, footerSafeAreaContainer: obj3, footerContainer: { paddingHorizontal: 16, height: 110, justifyContent: "center" }, footerTitle: { alignSelf: "center", textAlign: "center", marginBottom: 16 }, segmentedControl: obj4 };
+obj2 = { borderRadius: nativeDefault.radii.sm };
+createStyles = createStyles.createStyles;
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
+obj4 = { paddingHorizontal: nativeDefault.space.PX_12, width: "100%", marginTop: 18 };
+let closure_11 = createStyles(obj);
+let closure_12 = react.memo(function GuildDirectoryEntryEditRow(guild) {
+  let end;
+  let obj3;
+  let start;
+  guild = guild.guild;
+  const directoryChannelId = guild.directoryChannelId;
+  ({ start, end } = guild);
+  const items = [GuildDirectoryStore];
+  const tmp = closure_11();
+  const obj = guild(504);
+  const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(6951), obj3), trailing: closure_9(directoryChannelId(13811), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6969).TableRow;
+  obj3 = { style: tmp.guildIcon, guild };
+  return closure_9(TableRow, obj2);
 });
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirectoryCreateOrAdd(cResult) {
-  let addedGuilds;
-  let availableGuilds;
-  let current;
-  let loading;
-  let ref;
-  let setTabIndex;
-  let tabIndex;
-  let tmp8;
-  _require = cResult;
-  let obj = require("react");
-  cResult = obj.c(27);
-  closure_11();
-  let obj2 = require("useNavigation");
-  navigation = obj2.useNavigation();
-  let obj3 = react;
-  ref = react.useRef(cResult);
-  let tmp6 = navigation;
-  const tmp7 = navigation(ref[21])(ref);
-  if (cResult[0] !== cResult) {
-    const fn = function s() {
-      ref.current = current;
-    };
-    cResult[0] = cResult;
-    cResult[1] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-  }
-  const effect = obj3.useEffect(tmp8);
-  ({ addedGuilds, availableGuilds, loading } = tmp6(ref[22])(tmp7.directoryGuildId, tmp7.directoryChannelId));
-  const tmp10 = tmp6(ref[22])(tmp7.directoryGuildId, tmp7.directoryChannelId);
-  const bottom = tmp6(tmp[18])().bottom;
-  const tmp11 = tabIndex(obj3.useState(0), 2);
-  tabIndex = tmp11[0];
-  react = tmp11[1];
-  if (0 === tabIndex) {
-    addedGuilds = availableGuilds;
-  }
-  if (cResult[2] !== navigation) {
-    class A {
-      constructor() {
-        obj = {
-          directoryGuildName: closure_2.current.directoryGuildName,
-          onHubGuildInfoSet(name, icon, template) {
-                  let obj2;
-                  const obj = { createGuild: obj2, directoryChannelId: ref.current.directoryChannelId, directoryGuildName: ref.current.directoryGuildName };
-                  obj2 = { name, icon, template };
-                  navigation.push(constants.DESCRIPTION, obj);
-                }
-        };
-        arr = closure_1.push(GuildDirectoryCreate.TEMPLATES, obj);
-        return;
-      }
-    }
-    cResult[2] = navigation;
-    cResult[3] = A;
-  } else {
-    class A {
-      constructor() {
-        obj = {
-          directoryGuildName: closure_2.current.directoryGuildName,
-          onHubGuildInfoSet(name, icon, template) {
-                  let obj2;
-                  const obj = { createGuild: obj2, directoryChannelId: ref.current.directoryChannelId, directoryGuildName: ref.current.directoryGuildName };
-                  obj2 = { name, icon, template };
-                  navigation.push(constants.DESCRIPTION, obj);
-                }
-        };
-        arr = closure_1.push(GuildDirectoryCreate.TEMPLATES, obj);
-        return;
-      }
-    }
-  }
-  if (cResult[4] === addedGuilds.length) {
-    class A {
-      constructor() {
-        obj = {
-          directoryGuildName: closure_2.current.directoryGuildName,
-          onHubGuildInfoSet(name, icon, template) {
-                  let obj2;
-                  const obj = { createGuild: obj2, directoryChannelId: ref.current.directoryChannelId, directoryGuildName: ref.current.directoryGuildName };
-                  obj2 = { name, icon, template };
-                  navigation.push(constants.DESCRIPTION, obj);
-                }
-        };
-        arr = closure_1.push(GuildDirectoryCreate.TEMPLATES, obj);
-        return;
-      }
-    }
-  }
-  class B {
-    constructor(arg0) {
-      index = cResult.index;
-      obj = { guild: cResult.item, start: 0 === index, end: index === availableGuilds.length - 1 };
-      if (1 === closure_3) {
-        tmp7 = jsx;
-        tmp8 = closure_12;
-        obj1 = {};
-        tmp9 = obj1;
-        tmp10 = obj;
-        merged = Object.assign(obj);
-        tmp12 = closure_2;
-        obj1.directoryChannelId = closure_2.current.directoryChannelId;
-        tmp6 = jsx(closure_12, obj1);
-      } else {
-        tmp = jsx;
-        tmp2 = closure_13;
-        obj4 = {};
-        tmp3 = obj4;
-        tmp4 = obj;
-        merged1 = Object.assign(obj);
-        obj4.handleItemPress = function handleItemPress(guild) {
-          const obj = { guild, directoryChannelId: ref.current.directoryChannelId, directoryGuildName: ref.current.directoryGuildName };
-          navigation.push(constants.DESCRIPTION, obj);
-        };
-        tmp6 = jsx(closure_13, obj4);
-      }
-      return tmp6;
-    }
-  }
-  cResult[4] = addedGuilds.length;
-  cResult[5] = navigation;
-  cResult[6] = tabIndex;
-  cResult[7] = B;
-}) : (function GuildDirectoryCreateOrAdd(cResult) {
+let closure_13 = react.memo(function GuildDirectoryEntryAddRow(guild) {
+  let end;
+  let obj2;
+  let start;
+  guild = guild.guild;
+  const handleItemPress = guild.handleItemPress;
+  ({ start, end } = guild);
+  const obj = {
+    onPress() {
+      return handleItemPress(guild);
+    },
+    label: guild.name,
+    icon: React4(GuildIconDefault, obj2),
+    trailing: React4(TableRow2.TableRow.Arrow, {}),
+    start,
+    end
+  };
+  const tmp = closure_11();
+  const TableRow = TableRow2.TableRow;
+  obj2 = { style: tmp.guildIcon, guild };
+  return React4(TableRow, obj);
+});
+const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");
+
+export default function GuildDirectoryCreateOrAdd(set) {
   let addedGuilds;
   let current;
   let items4;
   let obj4;
   let ref;
   let tmp15Result;
-  _require = cResult;
+  _require = set;
   const tmp = closure_11();
   let obj = require("useNavigation");
   navigation = obj.useNavigation();
-  ref = addedGuilds.useRef(cResult);
-  let tmp6 = navigation(ref[21])(ref);
+  ref = addedGuilds.useRef(set);
+  let tmp6 = navigation(ref[19])(ref);
   const effect = addedGuilds.useEffect(() => {
     ref.current = current;
   });
-  const tmp8 = navigation(ref[22])(tmp6.directoryGuildId, tmp6.directoryChannelId);
+  const tmp8 = navigation(ref[20])(tmp6.directoryGuildId, tmp6.directoryChannelId);
   const availableGuilds = tmp8.availableGuilds;
   addedGuilds = tmp8.addedGuilds;
   const loading = tmp8.loading;
-  const bottom = navigation(ref[18])().bottom;
+  const bottom = navigation(ref[16])().bottom;
   const tmp9 = availableGuilds(addedGuilds.useState(0), 2);
   const tabIndex = tmp9[0];
   const setTabIndex = tmp9[1];
@@ -695,7 +200,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   [][0] = bottom;
   const callback2 = addedGuilds.useCallback(() => {
     const obj = { directoryGuildName: ref.current.directoryGuildName, tabIndex, setTabIndex };
-    return React4(closure_14, obj);
+    return React4(GuildDirectoryCreateOrAddHeader, obj);
   }, items3);
   if (loading) {
     let obj2 = { style: tmp.loadingContainer, children: closure_9(tabIndex, {}) };
@@ -703,7 +208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
   } else {
     let obj3 = { children: closure_10(bottom, obj4) };
     obj4 = { style: tmp.container, children: items4 };
-    const GuildDirectoryAddModalScreen = tmp2(tmp3[24]).GuildDirectoryAddModalScreen;
+    const GuildDirectoryAddModalScreen = tmp2(tmp3[21]).GuildDirectoryAddModalScreen;
     const obj5 = {
       data: memo,
       keyExtractor(id) {
@@ -713,13 +218,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildDirecto
       renderItem: callback1,
       contentContainerStyle: tmp14
     };
-    items4 = [closure_9(tmp2(tmp3[23]).FlashList, obj5), ];
+    items4 = [closure_9(tmp2(tmp3[22]).FlashList, obj5), ];
     const obj6 = { handleFooterPress: callback };
-    items4[1] = closure_9(closure_15, obj6);
+    items4[1] = closure_9(GuildDirectoryCreateOrAddFooter, obj6);
     tmp15Result = tmp15(GuildDirectoryAddModalScreen, obj3);
   }
   return tmp15Result;
-});
-const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryCreateOrAdd.tsx");
-
-export default tmp6;
+};

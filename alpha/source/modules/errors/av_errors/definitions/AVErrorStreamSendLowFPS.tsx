@@ -1,19 +1,19 @@
-// Module ID: 19927
-// Function ID: 19928
+// Module ID: 19990
+// Function ID: 19991
 // Name: AVErrorStreamSendLowFPS
-// Dependencies: [6830, 6701, 7872, 1084, 1101, 6704, 19924, 5916, 5935, 19921, 2]
+// Dependencies: [6837, 6708, 7878, 1072, 1090, 6711, 19987, 5923, 5942, 19984, 2]
 
-// Module 19927 (AVErrorStreamSendLowFPS)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5916 */;
-import AVError from "AVError" /* 5935 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
-import AVErrorContext from "AVErrorContext" /* 19921 */;
-import AVErrorUtils from "AVErrorUtils" /* 19924 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
+// Module 19990 (AVErrorStreamSendLowFPS)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5923 */;
+import AVError from "AVError" /* 5942 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
+import AVErrorContext from "AVErrorContext" /* 19984 */;
+import AVErrorUtils from "AVErrorUtils" /* 19987 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
 import size from "module_2" /* 2 */;
 
 const ApplicationStreamStates = Constants.ApplicationStreamStates;

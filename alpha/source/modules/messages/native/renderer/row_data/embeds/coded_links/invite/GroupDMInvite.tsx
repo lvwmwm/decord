@@ -1,17 +1,17 @@
-// Module ID: 15030
-// Function ID: 15031
+// Module ID: 15074
+// Function ID: 15075
 // Name: GroupDMInvite
-// Dependencies: [4857, 4947, 1389, 7867, 8329, 10071, 1125, 14809, 1418, 5641, 2]
+// Dependencies: [4858, 4951, 1384, 7872, 8386, 10098, 1114, 14844, 1413, 5647, 2]
 // Exports: createGroupDMInvite
 
-// Module 15030 (GroupDMInvite)
-import intl7 from "intl" /* 1125 */;
-import Constants from "Constants" /* 7867 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8329 */;
-import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10071 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
+// Module 15074 (GroupDMInvite)
+import intl7 from "intl" /* 1114 */;
+import Constants from "Constants" /* 7872 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8386 */;
+import getChannelAndRecipientsFromInviteDefault from "getChannelAndRecipientsFromInvite" /* 10098 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const InviteTypes = Constants.InviteTypes;
@@ -56,9 +56,9 @@ export function createGroupDMInvite(invite, arg1, theme) {
     str = string(t["3p3/BK"]);
     tmp8 = tmp7;
   }
-  const intl2 = tmp8(1125).intl;
+  const intl2 = tmp8(1114).intl;
   const string2 = intl2.string;
-  const t2 = tmp8(1125).t;
+  const t2 = tmp8(1114).t;
   if (flag) {
     string2(t2.cEnaWx);
   } else {
@@ -66,25 +66,25 @@ export function createGroupDMInvite(invite, arg1, theme) {
   }
   let formatToPlainStringResult;
   if (recipients_.length > 0) {
-    const intl3 = tmp8(1125).intl;
+    const intl3 = tmp8(1114).intl;
     const obj = { count: recipients_.length };
-    formatToPlainStringResult = intl3.formatToPlainString(tmp8(1125).t.zRl6XR, obj);
+    formatToPlainStringResult = intl3.formatToPlainString(tmp8(1114).t.zRl6XR, obj);
   }
   let channelIconSource = null;
   if (null != channel) {
-    const tmp8Result = tmp8(14809);
+    const tmp8Result = tmp8(14844);
     channelIconSource = tmp8Result.getChannelIconSource(channel);
   }
   let uri = null;
   if (null != channelIconSource) {
-    const tmp8Result4 = tmp8(1418);
+    const tmp8Result4 = tmp8(1413);
     uri = tmp8Result4.ensureAvatarSource(channelIconSource).uri;
   }
   let channelName = null;
   if (flag) {
     channelName = null;
     if (null != channel) {
-      const tmp8Result5 = tmp8(5641);
+      const tmp8Result5 = tmp8(5647);
       channelName = tmp8Result5.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }
@@ -101,17 +101,17 @@ export function createGroupDMInvite(invite, arg1, theme) {
     channelName = mapped.join(", ");
   }
   if (!channelName) {
-    const intl4 = tmp8(1125).intl;
-    channelName = intl4.string(tmp8(1125).t.LJpTRF);
+    const intl4 = tmp8(1114).intl;
+    channelName = intl4.string(tmp8(1114).t.LJpTRF);
   }
   if (flag) {
     ({ acceptLabelDisabledColor: acceptLabelGreenColor, acceptLabelDisabledBackgroundColor: acceptLabelGreenBackgroundColor } = colors);
-    const intl6 = tmp8(1125).intl;
-    stringResult = intl6.string(tmp8(1125).t.cEnaWx);
+    const intl6 = tmp8(1114).intl;
+    stringResult = intl6.string(tmp8(1114).t.cEnaWx);
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl5 = tmp8(1125).intl;
-    stringResult = intl5.string(tmp8(1125).t.XpeFYr);
+    const intl5 = tmp8(1114).intl;
+    stringResult = intl5.string(tmp8(1114).t.XpeFYr);
   }
   const obj2 = { headerText: formatted, headerColor: colors.headerColor, acceptLabelText: stringResult, onlineText: undefined, memberText: formatToPlainStringResult, channelIcon: undefined, titleText: channelName, titleColor: colors.titleColor, thumbnailUrl: tmp21, thumbnailText: undefined, subtitle: "", subtitleColor: undefined, acceptLabelBackgroundColor: acceptLabelGreenBackgroundColor, acceptLabelBorderColor: undefined, acceptLabelColor: acceptLabelGreenColor, embedCanBeTapped: true, canBeAccepted: !flag, channelName: channelName1, type: GROUP_DM };
   const merged = Object.assign(baseColors);
@@ -127,7 +127,7 @@ export function createGroupDMInvite(invite, arg1, theme) {
   if (flag) {
     channelName1 = channelName;
     if (null != channel) {
-      const tmp8Result6 = tmp8(5641);
+      const tmp8Result6 = tmp8(5647);
       channelName1 = tmp8Result6.computeChannelName(channel, UserStore, RelationshipStore);
     }
   }

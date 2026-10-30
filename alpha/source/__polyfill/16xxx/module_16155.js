@@ -1,34 +1,26 @@
 // Module ID: 16155
 // Function ID: 16156
-// Dependencies: []
-// Exports: getReactNativeDimensionsWithDimensions
+// Dependencies: [16156, 16160, 16163]
 
 // Module 16155
+import _mod16156 from "module_16156" /* 16156 */;
+import _mod16160 from "module_16160" /* 16160 */;
+import _mod16163 from "module_16163" /* 16163 */;
 
-export function getReactNativeDimensionsWithDimensions(value, value2) {
-  try {
-    let obj = {};
-    let obj2 = {};
-    if (value) {
-      const _Math = Math;
-      const _Math2 = Math;
-      ({ scale: obj3.screenScale, fontScale: obj3.screenFontScale } = value);
-      obj = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-      const obj5 = { screenWidth: Math.ceil(value.width), screenHeight: Math.ceil(value.height), screenScale: null, screenFontScale: null };
-    }
-    const tmp3 = value2;
-    if (tmp3) {
-      const _Math3 = Math;
-      const _Math4 = Math;
-      ({ scale: obj4.windowScale, fontScale: obj4.windowFontScale } = value2);
-      obj2 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-      const obj9 = { windowWidth: Math.ceil(value2.width), windowHeight: Math.ceil(value2.height), windowScale: null, windowFontScale: null };
-    }
-    const obj10 = {};
-    const merged = Object.assign(obj);
-    const merged1 = Object.assign(obj2);
-    return obj10;
-  } catch (err) {
-    return null;
-  }
-}
+const obj = {};
+const _URL = _mod16156.URL;
+_URL.install(obj);
+const _URLSearchParams = _mod16156.URLSearchParams;
+_URLSearchParams.install(obj);
+({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+
+export const parseURL = _mod16160.parseURL;
+export const basicURLParse = _mod16160.basicURLParse;
+export const serializeURL = _mod16160.serializeURL;
+export const serializeHost = _mod16160.serializeHost;
+export const serializeInteger = _mod16160.serializeInteger;
+export const serializeURLOrigin = _mod16160.serializeURLOrigin;
+export const setTheUsername = _mod16160.setTheUsername;
+export const setThePassword = _mod16160.setThePassword;
+export const cannotHaveAUsernamePasswordPort = _mod16160.cannotHaveAUsernamePasswordPort;
+export const percentDecode = _mod16163.percentDecode;

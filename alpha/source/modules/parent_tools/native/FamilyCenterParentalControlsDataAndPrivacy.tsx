@@ -1,106 +1,26 @@
-// Module ID: 16729
-// Function ID: 16730
+// Module ID: 16783
+// Function ID: 16784
 // Name: FamilyCenterParentalControlsDataAndPrivacy
-// Dependencies: [19, 1084, 8387, 21, 558, 576, 1125, 2536, 2065, 11302, 16482, 2]
+// Dependencies: [19, 1072, 8424, 21, 1114, 2537, 2062, 11505, 16533, 2]
+// Exports: default
 
-// Module 16729 (FamilyCenterParentalControlsDataAndPrivacy)
+// Module 16783 (FamilyCenterParentalControlsDataAndPrivacy)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import _modDef2536 from "module_2536" /* 2536 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
-import SettingLayoutDefault from "SettingLayout" /* 16482 */;
+import Constants from "Constants" /* 1072 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import _modDef2537 from "module_2537" /* 2537 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
+import SettingLayoutDefault from "SettingLayout" /* 16533 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterParentalControlsDataAndPrivacy() {
-  let Imp6Ns;
-  let Z5yJZy;
-  let cnCK6b;
-  let first;
-  let format;
-  let format2;
-  let format3;
-  let format4;
-  let items;
-  let items2;
-  let items3;
-  let items4;
-  let obj10;
-  let obj12;
-  let obj13;
-  let obj3;
-  let obj4;
-  let obj6;
-  let obj7;
-  let obj9;
-  let tmp11;
-  let tmp9;
-  let v6mK5Pz;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { settings: items, subLabel: format(Z5yJZy, obj3) };
-    items = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_STATISTICS];
-    const intl = tmp(1125).intl;
-    format = intl.format;
-    obj3 = { helpdeskArticle: obj4.getArticleURL(HelpdeskArticles.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2536.Z5yJZy;
-    const items1 = [obj2, , , ];
-    obj4 = HelpdeskUtilsDefault;
-    const obj5 = { settings: items2, subLabel: format2(Imp6Ns, obj6) };
-    items2 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_PERSONALIZATION];
-    const intl2 = tmp(1125).intl;
-    format2 = intl2.format;
-    obj6 = { helpdeskArticle: obj7.getArticleURL(HelpdeskArticles.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2536.Imp6Ns;
-    items1[1] = obj5;
-    obj7 = HelpdeskUtilsDefault;
-    const obj8 = { settings: items3, subLabel: format3(cnCK6b, obj9) };
-    items3 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS];
-    const intl3 = tmp(1125).intl;
-    format3 = intl3.format;
-    obj9 = { helpdeskArticle: obj10.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2536.cnCK6b;
-    items1[2] = obj8;
-    obj10 = HelpdeskUtilsDefault;
-    const obj11 = { settings: items4, subLabel: format4(v6mK5Pz, obj12) };
-    items4 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS_3P];
-    const intl4 = tmp(1125).intl;
-    format4 = intl4.format;
-    obj12 = { helpdeskArticle: obj13.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2536["6mK5Pz"];
-    items1[3] = obj11;
-    cResult[0] = items1;
-    first = items1;
-    obj13 = HelpdeskUtilsDefault;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj14 = { sections: first };
-    const tmpResult = SettingBuilders;
-    const list = tmpResult.createList(obj14);
-    cResult[1] = list;
-    tmp9 = list;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp14 = jsx(SettingLayoutDefault, { node: tmp9 });
-    cResult[2] = tmp14;
-    tmp11 = tmp14;
-  } else {
-    tmp11 = cResult[2];
-  }
-  return tmp11;
-}) : (function FamilyCenterParentalControlsDataAndPrivacy() {
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx");
+
+export default function FamilyCenterParentalControlsDataAndPrivacy() {
   const memo = react.useMemo(() => {
     let Imp6Ns;
     let Z5yJZy;
@@ -124,34 +44,34 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     let v6mK5Pz;
     const obj = { settings: items, subLabel: format(Z5yJZy, obj2) };
     items = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_STATISTICS];
-    const intl = memo(dependencyMap[6]).intl;
+    const intl = memo(dependencyMap[4]).intl;
     format = intl.format;
     obj2 = { helpdeskArticle: obj3.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
-    Z5yJZy = _modDef2536.Z5yJZy;
+    Z5yJZy = _modDef2537.Z5yJZy;
     const items1 = [obj, , , ];
     obj3 = HelpdeskUtilsDefault;
     const obj4 = { settings: items2, subLabel: format2(Imp6Ns, obj5) };
     items2 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_PERSONALIZATION];
-    const intl2 = memo(dependencyMap[6]).intl;
+    const intl2 = memo(dependencyMap[4]).intl;
     format2 = intl2.format;
     obj5 = { helpdeskArticle: obj6.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
-    Imp6Ns = _modDef2536.Imp6Ns;
+    Imp6Ns = _modDef2537.Imp6Ns;
     items1[1] = obj4;
     obj6 = HelpdeskUtilsDefault;
     const obj7 = { settings: items3, subLabel: format3(cnCK6b, obj8) };
     items3 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS];
-    const intl3 = memo(dependencyMap[6]).intl;
+    const intl3 = memo(dependencyMap[4]).intl;
     format3 = intl3.format;
     obj8 = { helpdeskArticle: obj9.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    cnCK6b = _modDef2536.cnCK6b;
+    cnCK6b = _modDef2537.cnCK6b;
     items1[2] = obj7;
     obj9 = HelpdeskUtilsDefault;
     const obj10 = { settings: items4, subLabel: format4(v6mK5Pz, obj11) };
     items4 = [MobileUserSettings.PARENTAL_CONTROLS_DATA_USAGE_QUESTS_3P];
-    const intl4 = memo(dependencyMap[6]).intl;
+    const intl4 = memo(dependencyMap[4]).intl;
     format4 = intl4.format;
     obj11 = { helpdeskArticle: obj12.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
-    v6mK5Pz = _modDef2536["6mK5Pz"];
+    v6mK5Pz = _modDef2537["6mK5Pz"];
     items1[3] = obj10;
     obj12 = HelpdeskUtilsDefault;
     return items1;
@@ -163,7 +83,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCent
     return obj.createList(obj2);
   }, items);
   return jsx(SettingLayoutDefault, { node });
-});
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterParentalControlsDataAndPrivacy.tsx");
-
-export default tmp2;
+};

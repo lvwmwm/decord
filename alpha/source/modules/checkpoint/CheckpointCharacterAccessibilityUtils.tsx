@@ -1,14 +1,14 @@
-// Module ID: 6421
-// Function ID: 6422
+// Module ID: 6428
+// Function ID: 6429
 // Name: CheckpointCharacterAccessibilityUtils
-// Dependencies: [6422, 6424, 6099, 1125, 3090, 2]
+// Dependencies: [6429, 6431, 6106, 1114, 3091, 2]
 // Exports: getCheckpointCharacterAccessibilityLabel
 
-// Module 6421 (CheckpointCharacterAccessibilityUtils)
-import _modDef3090 from "module_3090" /* 3090 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6099 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6422 */;
-import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6424 */;
+// Module 6428 (CheckpointCharacterAccessibilityUtils)
+import _modDef3091 from "module_3091" /* 3091 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6106 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6429 */;
+import CheckpointTraitOptionNames from "CheckpointTraitOptionNames" /* 6431 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
         } else if (CheckpointCustomizationUtils.CheckpointCustomizationOption.OUTFIT_COLOR === item) {
           const tmpResult5 = CheckpointCharacterTraits;
           if (tmpResult5.getOutfitDefaultOptionId(tmp3) !== tmp3) {
-            tmp6 = tmp(6424).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
+            tmp6 = tmp(6431).CHECKPOINT_OUTFIT_TO_COLOR_NAME[tmp3];
           }
         } else {
           tmp6 = tmp7[tmp3];
@@ -53,19 +53,19 @@ export function getCheckpointCharacterAccessibilityLabel(character) {
     }
     if (null != tmp4) {
       const push = items.push;
-      const intl = tmp(1125).intl;
+      const intl = tmp(1114).intl;
       const formatToPlainString = intl.formatToPlainString;
       const obj = { category: tmpResult6.getCustomizationOptionName(item), name: intl2.string(tmp4) };
-      const prop = _modDef3090["Z+HdIo"];
+      const prop = _modDef3091["Z+HdIo"];
       tmpResult6 = CheckpointCustomizationUtils;
-      intl2 = tmp(1125).intl;
+      intl2 = tmp(1114).intl;
       push(formatToPlainString(prop, obj));
     }
   });
   let intl = require("intl").intl;
   let formatToPlainString = intl.formatToPlainString;
   let obj = { traits: listFormat.format(items) };
-  const mQNR4x = items(3090).mQNR4x;
+  const mQNR4x = items(3091).mQNR4x;
   listFormat = new Intl.ListFormat(require("intl").intl.currentLocale, { type: "conjunction" });
   return formatToPlainString(mQNR4x, obj);
 }

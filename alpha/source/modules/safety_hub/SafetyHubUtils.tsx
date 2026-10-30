@@ -1,21 +1,20 @@
-// Module ID: 7955
-// Function ID: 7956
+// Module ID: 7961
+// Function ID: 7962
 // Name: SafetyHubUtils
-// Dependencies: [502, 7956, 1084, 2047, 6039, 1125, 7957, 1101, 11, 558, 576, 504, 2]
-// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps
+// Dependencies: [502, 7962, 1072, 2044, 6046, 1114, 7963, 1090, 11, 504, 2]
+// Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7955 (SafetyHubUtils)
+// Module 7961 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import react from "react" /* 576 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import intl5 from "intl" /* 1125 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6039 */;
-import SafetyHubModels from "SafetyHubModels" /* 7957 */;
+import get_initialized from "get initialized" /* 504 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import intl5 from "intl" /* 1114 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6046 */;
+import SafetyHubModels from "SafetyHubModels" /* 7963 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7956 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7962 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,8 +22,6 @@ let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const get_initialized = tmp(504);
 function parseMessageEmbedForProps(fields) {
   let _parseFloat;
   let num;
@@ -62,37 +59,11 @@ function parseMessageEmbedForProps(fields) {
 ({ AbortCodes: metroImportDefault, MessageAttachmentFlags: metroImportAll } = Constants);
 const result = 182 * DurationsDefault.Millis.DAY;
 let c10 = result;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSuspendedUser() {
-  let suspendedUserToken;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AuthenticationStore];
-    const fn = function s() {
-      return suspendedUserToken.getSuspendedUserToken();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return null != tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useIsSuspendedUser() {
-  let suspendedUserToken;
-  const items = [AuthenticationStore];
-  const obj = get_initialized;
-  return null != obj.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
-});
 const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef2047();
-  return obj.to(_modDef2047(timestamp));
+  const obj = _modDef2044();
+  return obj.to(_modDef2044(timestamp));
 }
 export function getSpoilerFlagsForAttachment(filename) {
   let num;
@@ -214,7 +185,12 @@ export function getClassificationAccountStatusExpiration(classification) {
     return null;
   }
 }
-export const useIsSuspendedUser = tmp5;
+export function useIsSuspendedUser() {
+  let suspendedUserToken;
+  const items = [AuthenticationStore];
+  const obj = get_initialized;
+  return null != obj.useStateFromStores(items, () => suspendedUserToken.getSuspendedUserToken());
+}
 export function isCurrentUserSuspended() {
   return null != AuthenticationStore.getSuspendedUserToken();
 }

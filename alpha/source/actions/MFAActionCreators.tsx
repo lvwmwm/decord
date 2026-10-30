@@ -1,13 +1,13 @@
-// Module ID: 16559
-// Function ID: 16560
+// Module ID: 16610
+// Function ID: 16611
 // Name: MFAActionCreators
-// Dependencies: [15551, 1084, 1294, 584, 2]
+// Dependencies: [15591, 1072, 1283, 572, 2]
 
-// Module 16559 (MFAActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import MFAStore from "MFAStore" /* 15551 */;
+// Module 16610 (MFAActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import MFAStore from "MFAStore" /* 15591 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let obj = {
     const post = HTTP.post;
     obj2 = HTTPUtils;
     const postResult = post(obj);
-    postResult.then((body) => {
+    return postResult.then((body) => {
       const token = body.body.token;
       const obj = DispatcherDefault;
       return obj.dispatch({ type: "MFA_DISABLE_SUCCESS", token });

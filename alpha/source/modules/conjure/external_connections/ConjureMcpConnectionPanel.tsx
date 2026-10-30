@@ -1,17 +1,16 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12480
+// Function ID: 12481
 // Name: ConjureMcpConnectionPanel
-// Dependencies: [32, 5, 19, 558, 576, 12319, 2]
+// Dependencies: [32, 5, 19, 12481, 2]
+// Exports: useMcpConnectionPanel
 
-// Module 12318 (ConjureMcpConnectionPanel)
+// Module 12480 (ConjureMcpConnectionPanel)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c3, c4;
+let c3, c4;
 
 let _slicedToArray = _slicedToArray_mod;
 let closure_5 = {
@@ -55,7 +54,7 @@ class McpConnectionPanel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -97,7 +96,7 @@ class McpConnectionPanel {
             c2 = 0;
             if (closure_129_1.isStale(c1)) {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             } else {
               connection = null;
               const update2 = closure_129_1.update;
@@ -138,7 +137,7 @@ class McpConnectionPanel {
               closure_129_1.armTimer(connection);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp48) {
           if (0 === c2) {
@@ -190,107 +189,23 @@ class McpConnectionPanel {
   }
 }
 const prototype = McpConnectionPanel.prototype;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMcpConnectionPanel(arg0) {
-  let closure_0;
-  let first;
-  let ref;
-  let timers;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { connection: null, loading: true, failed: false };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmp3 = _slicedToArray(react.useState(first), 2);
-  [tmp4, dependencyMap] = tmp3;
-  _slicedToArray = react.useRef(null);
-  const obj3 = react;
-  if (cResult[1] !== arg0) {
-    let fn = function l() {
-      if (typeof McpConnectionPanel === "function") {
-        const fn = (regenerate) => {
-          const obj = merged(dependencyMap[5]);
-          const obj2 = { regenerate };
-          return obj.fetchProjectMcpConnection(merged, obj2);
-        };
-        const merged = Object.assign({ state: null, generation: 0, timer: null, disposed: false });
-        merged[0] = { connection: null, loading: true, failed: false };
-        merged.fetchConnection = fn;
-        merged.onChange = tmp2;
-        merged.timers = timers;
-        ref.current = merged;
-        const mintResult = merged.mint(false);
-        mintResult.catch(() => {
+const result = size.fileFinishedImporting("modules/conjure/external_connections/ConjureMcpConnectionPanel.tsx");
 
-        });
-        return () => {
-          merged.dispose();
-          if (ref.current === merged) {
-            tmp2.current = null;
-          }
-        };
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    };
-    const items = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-  }
-  const effect = obj3.useEffect(tmp5, tmp6);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function h(dependencyMap) {
-      const current = ref.current;
-      if (current != null) {
-        const mintResult = current.mint(dependencyMap);
-        mintResult.catch(() => {
-
-        });
-      }
-    };
-    cResult[4] = fn2;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[4];
-  }
-  if (cResult[5] !== tmp4) {
-    const obj4 = { mint: tmp8 };
-    let merged = Object.assign(tmp4);
-    cResult[5] = tmp4;
-    cResult[6] = obj4;
-    tmp9 = obj4;
-  } else {
-    tmp9 = cResult[6];
-  }
-  return tmp9;
-}) : (function useMcpConnectionPanel(arg0) {
+export const MCP_CONNECTION_MIN_REFETCH_MS = 15000;
+export { McpConnectionPanel };
+export function useMcpConnectionPanel(projectId) {
   let ref;
   let timers;
   let tmp2;
-  let closure_0 = arg0;
+  let closure_0 = projectId;
   [tmp2, dependencyMap] = _slicedToArray(react.useState({ connection: null, loading: true, failed: false }), 2);
   const tmp = _slicedToArray(react.useState({ connection: null, loading: true, failed: false }), 2);
   _slicedToArray = react.useRef(null);
-  const items = [arg0];
+  const items = [projectId];
   const effect = react.useEffect(() => {
     if (typeof McpConnectionPanel === "function") {
       const fn = (regenerate) => {
-        const obj = merged(dependencyMap[5]);
+        const obj = merged(dependencyMap[3]);
         const obj2 = { regenerate };
         return obj.fetchProjectMcpConnection(merged, obj2);
       };
@@ -327,9 +242,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMcpConn
   };
   let merged = Object.assign(tmp2);
   return obj;
-});
-const result = size.fileFinishedImporting("modules/conjure/external_connections/ConjureMcpConnectionPanel.tsx");
-
-export const MCP_CONNECTION_MIN_REFETCH_MS = 15000;
-export { McpConnectionPanel };
-export const useMcpConnectionPanel = tmp2;
+}

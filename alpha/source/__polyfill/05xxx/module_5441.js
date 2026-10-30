@@ -1,17 +1,14 @@
 // Module ID: 5441
 // Function ID: 5442
-// Dependencies: [5442, 5393]
-// Exports: useCompetingGestures
+// Dependencies: []
+// Exports: clamp
 
 // Module 5441
-import ComposedGestureName from "ComposedGestureName" /* 5393 */;
-import _mod5442 from "module_5442" /* 5442 */;
+const fn = function n(arg0, arg1, arg2) {
+  return Math.min(Math.max(arg1, arg0), arg2);
+};
+fn.__closure = {};
+fn.__workletHash = 4405247003092;
+fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
 
-
-export function useCompetingGestures() {
-  const items = [...arguments];
-  const useComposedGesture = _mod5442.useComposedGesture;
-  _mod5442;
-  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
-  return useComposedGesture.apply(items1);
-}
+export const clamp = fn;

@@ -1,25 +1,23 @@
-// Module ID: 18011
-// Function ID: 18012
+// Module ID: 18074
+// Function ID: 18075
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 17163, 1084, 21, 5005, 587, 1264, 12983, 2000, 18012, 18013, 18014, 17164, 8627, 1199, 18023, 558, 576, 5641, 1125, 6029, 2]
+// Dependencies: [19, 17, 17217, 1072, 21, 5009, 575, 1253, 13134, 1995, 18075, 18076, 18077, 17218, 8661, 1188, 18086, 5647, 1114, 6036, 2]
 
-// Module 18011 (HappeningNowCardLiveStage)
+// Module 18074 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl13 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import useChannelNameDefault from "useChannelName" /* 5641 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
-import HappeningNowCard from "HappeningNowCard" /* 17164 */;
-import useLiveStageData from "useLiveStageData" /* 18012 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl13 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import useChannelNameDefault from "useChannelName" /* 5647 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+import HappeningNowCard from "HappeningNowCard" /* 17218 */;
+import useLiveStageData from "useLiveStageData" /* 18075 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17163 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17217 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let HAPPENING_NOW_CONTENT_HEIGHT;
@@ -31,6 +29,76 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
+class HappeningNowLiveStageContent {
+  constructor(renderingContext) {
+    let LISTENING;
+    let ON_STAGE;
+    let ON_STAGE2;
+    let friends;
+    let guildId;
+    let items1;
+    let speakers;
+    let stage;
+    let streamingUser;
+    let tmp10Result;
+    ({ stage, streamingUser, guildId } = renderingContext);
+    renderingContext = renderingContext.renderingContext;
+    const tmp = closure_9();
+    const obj = useLiveStageData;
+    const liveStageData = obj.useLiveStageData(stage);
+    ({ speakers, friends } = liveStageData);
+    const tmp5 = useChannelNameDefault(liveStageData.channel);
+    if ("guild" === renderingContext) {
+      if (speakers.length > 0) {
+        const tmp14 = getUsersSubtitle;
+        if (null != streamingUser) {
+          const items = [streamingUser];
+          speakers = items;
+        }
+        const obj2 = { users: speakers, action: ON_STAGE2, guildId };
+        if (null != streamingUser) {
+          ON_STAGE2 = constants2.SHARING;
+        } else {
+          ON_STAGE2 = constants2.ON_STAGE;
+        }
+        tmp10Result = tmp14(obj2);
+      }
+      const obj3 = { style: tmp.content, children: items1 };
+      const obj4 = { lineClamp: 3, children: stage.topic };
+      items1 = [metroImportDefault(HappeningNowCard.HappeningNowCardHeader, obj4), ];
+      const obj5 = { lineClamp: 1, children: tmp10Result };
+      items1[1] = metroImportDefault(HappeningNowCard.HappeningNowCardSubtitle, obj5);
+      return metroImportAll(View, obj3);
+    }
+    if (friends.length > 0) {
+      const obj6 = { users: friends, action: LISTENING, guildId };
+      const tmp10 = getUsersSubtitle;
+      if (null != streamingUser) {
+        LISTENING = constants2.WATCHING;
+      } else {
+        LISTENING = constants2.LISTENING;
+      }
+      tmp10Result = tmp10(obj6);
+    } else {
+      tmp10Result = tmp5;
+      if (speakers.length > 0) {
+        let tmp7 = speakers;
+        const tmp21 = getUsersSubtitle;
+        if (null != streamingUser) {
+          const items2 = [streamingUser];
+          tmp7 = items2;
+        }
+        const obj7 = { users: tmp7, action: ON_STAGE, guildId };
+        if (null != streamingUser) {
+          ON_STAGE = constants2.SHARING;
+        } else {
+          ON_STAGE = constants2.ON_STAGE;
+        }
+        tmp10Result = tmp21(obj7);
+      }
+    }
+  }
+}
 function getUsersSubtitle(arg0) {
   let action;
   let guildId;
@@ -148,7 +216,8 @@ obj2 = { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, backgroundColor: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { height: HAPPENING_NOW_CONTENT_HEIGHT, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_800, borderRadius: nativeDefault.radii.sm, justifyContent: "center", alignItems: "center" };
 obj4 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
-let closure_9 = createStyles(obj);
+const React4 = createStyles(obj);
+const unpackModuleId = { LISTENING: 0, [0]: "LISTENING", WATCHING: 1, [1]: "WATCHING", ON_STAGE: 2, [2]: "ON_STAGE", SHARING: 3, [3]: "SHARING" };
 const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
   let HappeningNowAvatarStack;
   let audienceCount;
@@ -181,7 +250,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(12983, dependencyMap.paths);
+    const promise = asyncRequire(13134, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });
@@ -226,7 +295,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     items2 = [closure_8(View, obj5), ];
     const obj10 = { stage, renderingContext, guildId: tmp12 };
     tmp12 = undefined;
-    const tmp11 = closure_10;
+    const tmp11 = HappeningNowLiveStageContent;
     if ("guild" === renderingContext) {
       tmp12 = guild_id;
     }
@@ -235,219 +304,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
   }
   return tmp16Result;
 });
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function HappeningNowLiveStageContent(renderingContext) {
-  let ON_STAGE;
-  let ON_STAGE2;
-  let friends;
-  let guildId;
-  let items1;
-  let speakers;
-  let stage;
-  let streamingUser;
-  let tmp14;
-  const obj = react2;
-  const cResult = obj.c(20);
-  ({ stage, streamingUser, guildId } = renderingContext);
-  renderingContext = renderingContext.renderingContext;
-  const tmp4 = closure_9();
-  const obj2 = useLiveStageData;
-  const liveStageData = obj2.useLiveStageData(stage);
-  ({ speakers, friends } = liveStageData);
-  const tmp6 = useChannelNameDefault(liveStageData.channel);
-  if ("guild" === renderingContext) {
-    let tmp28;
-    let tmp31;
-    if (speakers.length > 0) {
-      if (cResult[0] === guildId) {
-        if (cResult[1] === speakers) {
-          let tmp21;
-          if (cResult[2] === streamingUser) {
-            tmp21 = cResult[3];
-          }
-          tmp14 = tmp21;
-        }
-      }
-      let tmp24 = speakers;
-      const tmp22 = getUsersSubtitle;
-      if (null != streamingUser) {
-        const items = [streamingUser];
-        tmp24 = items;
-      }
-      const obj3 = { users: tmp24, action: ON_STAGE2, guildId };
-      if (null != streamingUser) {
-        ON_STAGE2 = constants2.SHARING;
-      } else {
-        ON_STAGE2 = constants2.ON_STAGE;
-      }
-      const tmp22Result = tmp22(obj3);
-      cResult[0] = guildId;
-      cResult[1] = speakers;
-      cResult[2] = streamingUser;
-      cResult[3] = tmp22Result;
-      tmp21 = tmp22Result;
-    }
-    if (cResult[12] !== stage.topic) {
-      const obj4 = { lineClamp: 3, children: stage.topic };
-      const tmp30 = metroImportDefault(HappeningNowCard.HappeningNowCardHeader, obj4);
-      cResult[12] = stage.topic;
-      cResult[13] = tmp30;
-      tmp28 = tmp30;
-    } else {
-      tmp28 = cResult[13];
-    }
-    if (cResult[14] !== tmp14) {
-      const obj5 = { lineClamp: 1, children: tmp14 };
-      const tmp33 = metroImportDefault(HappeningNowCard.HappeningNowCardSubtitle, obj5);
-      cResult[14] = tmp14;
-      cResult[15] = tmp33;
-      tmp31 = tmp33;
-    } else {
-      tmp31 = cResult[15];
-    }
-    if (cResult[16] === tmp4.content) {
-      if (cResult[17] === tmp28) {
-        let tmp34;
-        if (cResult[18] === tmp31) {
-          tmp34 = cResult[19];
-        }
-        return tmp34;
-      }
-    }
-    const obj6 = { style: tmp4.content, children: items1 };
-    items1 = [tmp28, tmp31];
-    const tmp37 = metroImportAll(View, obj6);
-    cResult[16] = tmp4.content;
-    cResult[17] = tmp28;
-    cResult[18] = tmp31;
-    cResult[19] = tmp37;
-    tmp34 = tmp37;
-  }
-  if (friends.length > 0) {
-    let LISTENING;
-    if (null != streamingUser) {
-      LISTENING = constants2.WATCHING;
-    } else {
-      LISTENING = constants2.LISTENING;
-    }
-    if (cResult[4] === friends) {
-      if (cResult[5] === guildId) {
-        let tmp18;
-        if (cResult[6] === LISTENING) {
-          tmp18 = cResult[7];
-        }
-        tmp14 = tmp18;
-      }
-    }
-    const obj7 = { users: friends, action: LISTENING, guildId };
-    const tmp20 = getUsersSubtitle(obj7);
-    cResult[4] = friends;
-    cResult[5] = guildId;
-    cResult[6] = LISTENING;
-    cResult[7] = tmp20;
-    tmp18 = tmp20;
-  } else {
-    tmp14 = tmp6;
-    if (speakers.length > 0) {
-      if (cResult[8] === guildId) {
-        if (cResult[9] === speakers) {
-          let tmp7;
-          if (cResult[10] === streamingUser) {
-            tmp7 = cResult[11];
-          }
-          tmp14 = tmp7;
-        }
-      }
-      let tmp10 = speakers;
-      const tmp8 = getUsersSubtitle;
-      if (null != streamingUser) {
-        const items2 = [streamingUser];
-        tmp10 = items2;
-      }
-      const obj8 = { users: tmp10, action: ON_STAGE, guildId };
-      if (null != streamingUser) {
-        ON_STAGE = constants2.SHARING;
-      } else {
-        ON_STAGE = constants2.ON_STAGE;
-      }
-      const tmp8Result = tmp8(obj8);
-      cResult[8] = guildId;
-      cResult[9] = speakers;
-      cResult[10] = streamingUser;
-      cResult[11] = tmp8Result;
-      tmp7 = tmp8Result;
-    }
-  }
-}) : (function HappeningNowLiveStageContent(renderingContext) {
-  let LISTENING;
-  let ON_STAGE;
-  let ON_STAGE2;
-  let friends;
-  let guildId;
-  let items1;
-  let speakers;
-  let stage;
-  let streamingUser;
-  let tmp10Result;
-  ({ stage, streamingUser, guildId } = renderingContext);
-  renderingContext = renderingContext.renderingContext;
-  const tmp = closure_9();
-  const obj = useLiveStageData;
-  const liveStageData = obj.useLiveStageData(stage);
-  ({ speakers, friends } = liveStageData);
-  const tmp5 = useChannelNameDefault(liveStageData.channel);
-  if ("guild" === renderingContext) {
-    if (speakers.length > 0) {
-      const tmp14 = getUsersSubtitle;
-      if (null != streamingUser) {
-        const items = [streamingUser];
-        speakers = items;
-      }
-      const obj2 = { users: speakers, action: ON_STAGE2, guildId };
-      if (null != streamingUser) {
-        ON_STAGE2 = constants2.SHARING;
-      } else {
-        ON_STAGE2 = constants2.ON_STAGE;
-      }
-      tmp10Result = tmp14(obj2);
-    }
-    const obj3 = { style: tmp.content, children: items1 };
-    const obj4 = { lineClamp: 3, children: stage.topic };
-    items1 = [metroImportDefault(HappeningNowCard.HappeningNowCardHeader, obj4), ];
-    const obj5 = { lineClamp: 1, children: tmp10Result };
-    items1[1] = metroImportDefault(HappeningNowCard.HappeningNowCardSubtitle, obj5);
-    return metroImportAll(View, obj3);
-  }
-  if (friends.length > 0) {
-    const obj6 = { users: friends, action: LISTENING, guildId };
-    const tmp10 = getUsersSubtitle;
-    if (null != streamingUser) {
-      LISTENING = constants2.WATCHING;
-    } else {
-      LISTENING = constants2.LISTENING;
-    }
-    tmp10Result = tmp10(obj6);
-  } else {
-    tmp10Result = tmp5;
-    if (speakers.length > 0) {
-      let tmp7 = speakers;
-      const tmp21 = getUsersSubtitle;
-      if (null != streamingUser) {
-        const items2 = [streamingUser];
-        tmp7 = items2;
-      }
-      const obj7 = { users: tmp7, action: ON_STAGE, guildId };
-      if (null != streamingUser) {
-        ON_STAGE = constants2.SHARING;
-      } else {
-        ON_STAGE = constants2.ON_STAGE;
-      }
-      tmp10Result = tmp21(obj7);
-    }
-  }
-});
-let closure_10 = tmp6;
-const constants2 = { LISTENING: 0, [0]: "LISTENING", WATCHING: 1, [1]: "WATCHING", ON_STAGE: 2, [2]: "ON_STAGE", SHARING: 3, [3]: "SHARING" };
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardLiveStage.tsx");
 
 export default memoResult;
-export const HappeningNowLiveStageContent = tmp6;
+export { HappeningNowLiveStageContent };

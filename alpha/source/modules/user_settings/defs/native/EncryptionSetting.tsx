@@ -1,85 +1,41 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17830
+// Function ID: 17831
 // Name: EncryptionSetting
-// Dependencies: [5770, 8387, 1084, 558, 576, 504, 17760, 1125, 11302, 17761, 2]
+// Dependencies: [5777, 8424, 1072, 504, 17831, 1114, 11505, 17832, 2]
 
-// Module 17759 (EncryptionSetting)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 17760 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5770 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17830 (EncryptionSetting)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import useSecureFramesVerifiedUsers from "useSecureFramesVerifiedUsers" /* 17831 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5777 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-let tmp;
-const get_initialized = tmp(504);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesPersistentCodesValue() {
-  let persistentCodesEnabled;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SecureFramesPersistedStore];
-    const fn = function s() {
-      return persistentCodesEnabled.getPersistentCodesEnabled();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSecureFramesPersistentCodesValue() {
-  let persistentCodesEnabled;
-  const items = [SecureFramesPersistedStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFramesEncryptionDescription() {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = useSecureFramesVerifiedUsers;
-  const secureFramesVerifiedUserIds = obj2.useSecureFramesVerifiedUserIds();
-  if (cResult[0] !== secureFramesVerifiedUserIds.length) {
-    const intl = tmp(1125).intl;
-    const obj3 = { count: secureFramesVerifiedUserIds.length };
-    const formatToPlainStringResult = intl.formatToPlainString(intl2.t["6vrePS"], obj3);
-    cResult[0] = secureFramesVerifiedUserIds.length;
-    cResult[1] = formatToPlainStringResult;
-    tmp4 = formatToPlainStringResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function useSecureFramesEncryptionDescription() {
-  const obj = useSecureFramesVerifiedUsers;
-  const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
-  const intl = intl2.intl;
-  const obj2 = { count: secureFramesVerifiedUserIds.length };
-  return intl.formatToPlainString(intl2.t["6vrePS"], obj2);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.x8U2eC);
   },
-  useDescription: tmp3,
+  useDescription: function useSecureFramesEncryptionDescription() {
+    const obj = useSecureFramesVerifiedUsers;
+    const secureFramesVerifiedUserIds = obj.useSecureFramesVerifiedUserIds();
+    const intl = intl2.intl;
+    const obj2 = { count: secureFramesVerifiedUserIds.length };
+    return intl.formatToPlainString(intl2.t["6vrePS"], obj2);
+  },
   parent: MobileUserSettings.DATA_AND_PRIVACY,
-  usePredicate: tmp2,
+  usePredicate: function useSecureFramesPersistentCodesValue() {
+    let persistentCodesEnabled;
+    const items = [SecureFramesPersistedStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => persistentCodesEnabled.getPersistentCodesEnabled());
+  },
   screen: {
     route: UserSettingsSections.SECURE_FRAMES,
     getComponent() {

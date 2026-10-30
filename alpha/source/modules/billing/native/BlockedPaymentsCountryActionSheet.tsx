@@ -1,37 +1,21 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11338
+// Function ID: 11339
 // Name: BlockedPaymentsCountryActionSheet
-// Dependencies: [19, 21, 558, 576, 5302, 11134, 2]
+// Dependencies: [19, 21, 5267, 11339, 2]
+// Exports: default
 
-// Module 11133 (BlockedPaymentsCountryActionSheet)
+// Module 11338 (BlockedPaymentsCountryActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
 
-let tmp;
-const Sheet_BottomSheet = tmp(5302);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedPaymentsCountryActionSheet() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    BottomSheet = Sheet_BottomSheet.BottomSheet;
-    const tmp7 = <BottomSheet>{null}</BottomSheet>;
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function BlockedPaymentsCountryActionSheet() {
-  BottomSheet = Sheet_BottomSheet.BottomSheet;
-  return <BottomSheet>{null}</BottomSheet>;
-});
 const result = size.fileFinishedImporting("modules/billing/native/BlockedPaymentsCountryActionSheet.tsx");
 
-export default tmp3;
+export default function BlockedPaymentsCountryActionSheet() {
+  BottomSheet = Sheet_BottomSheet.BottomSheet;
+  return <BottomSheet>{null}</BottomSheet>;
+};

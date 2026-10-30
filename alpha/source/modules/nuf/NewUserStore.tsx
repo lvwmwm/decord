@@ -1,11 +1,11 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6927
+// Function ID: 6928
 // Name: NewUserStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 6920 (NewUserStore)
+// Module 6927 (NewUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let type = null;

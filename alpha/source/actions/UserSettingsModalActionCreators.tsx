@@ -1,10 +1,10 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7155
+// Function ID: 7156
 // Name: UserSettingsModalActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 
-// Module 7147 (UserSettingsModalActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 7155 (UserSettingsModalActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

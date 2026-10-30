@@ -1,34 +1,49 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 11048
+// Function ID: 11049
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 4861, 4857, 4947, 6762, 1389, 1084, 21, 7275, 7270, 5641, 8988, 1125, 14242, 7549, 558, 576, 504, 6984, 7155, 2]
+// Dependencies: [19, 4862, 4858, 4951, 6769, 1384, 1072, 21, 7282, 7277, 5647, 8169, 1114, 11049, 7557, 504, 6992, 7163, 2]
 
-// Module 14241 (InAppNotificationSettingsModal)
-import intl4 from "intl" /* 1125 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import useChannelName from "useChannelName" /* 5641 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6984 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7270 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7275 */;
-import openUserSettings from "openUserSettings" /* 7549 */;
-import Form2 from "Form" /* 8988 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 14242 */;
+// Module 11048 (InAppNotificationSettingsModal)
+import intl4 from "intl" /* 1114 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import useChannelName from "useChannelName" /* 5647 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 6992 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7277 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7282 */;
+import openUserSettings from "openUserSettings" /* 7557 */;
+import _mod8169 from "module_8169" /* 8169 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 11049 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let _require;
 
 let c10;
 let c9;
 let closure_12;
 let unpackModuleId;
+function ConnectedInAppNotificationSettingsScreen(channel) {
+  channel = channel.channel;
+  const obj = channel(504);
+  const items = [UserGuildSettingsStore];
+  const obj2 = {
+    channel,
+    isMuted: obj.useStateFromStores(items, () => {
+      let isChannelMutedResult;
+      if (null != channel) {
+        if (isMultiUserDM(channel.type)) {
+          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
+        }
+      }
+      return isChannelMutedResult;
+    })
+  };
+  return closure_11(InAppNotificationSettingsScreen, obj2);
+}
 const isMultiUserDM = ChannelRecord.isMultiUserDM;
 ({ ChannelTypes: c9, UserSettingsSections: c10 } = Constants);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -36,7 +51,7 @@ const PureComponent = react.PureComponent;
 class InAppNotificationSettingsScreen extends PureComponent {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    const require = applyArgumentsResult;
+    require = applyArgumentsResult;
     applyArgumentsResult.handleGroupDMMute = function handleGroupDMMute() {
       let NotificationLabel;
       let channel;
@@ -71,9 +86,9 @@ class InAppNotificationSettingsScreen extends PureComponent {
       const obj = useChannelName;
       const channelName = obj.computeChannelName(channel, UserStore, RelationshipStore);
       const obj2 = { children: unpackModuleId(FormSwitchRow, obj3) };
-      const FormSection = Form2.FormSection;
+      const FormSection = _mod8169.FormSection;
       obj3 = { label: intl.format(intl4.t["u/rEuc"], obj4), value: tmp2, onValueChange: tmp.handleGroupDMMute };
-      FormSwitchRow = Form2.FormSwitchRow;
+      FormSwitchRow = _mod8169.FormSwitchRow;
       intl = intl4.intl;
       obj4 = { name: channelName };
       return unpackModuleId(FormSection, obj2);
@@ -117,145 +132,24 @@ class InAppNotificationSettingsScreen extends PureComponent {
     let items;
     let obj3;
     const obj = { children: items };
-    const Form = Form2.Form;
+    const Form = _mod8169.Form;
     items = [this.renderChannelNotificationSettings(), , ];
     const obj2 = { title: intl.string(intl4.t.clE4PU), children: unpackModuleId(FormRow, obj3) };
-    const FormSection = Form2.FormSection;
+    const FormSection = _mod8169.FormSection;
     intl = intl4.intl;
-    obj3 = { label: intl2.string(intl4.t.cHMaba), onPress: this.handleOpenUserSettings, trailing: unpackModuleId(Form2.FormRow.Arrow, {}) };
-    FormRow = Form2.FormRow;
+    obj3 = { label: intl2.string(intl4.t.cHMaba), onPress: this.handleOpenUserSettings, trailing: unpackModuleId(_mod8169.FormRow.Arrow, {}) };
+    FormRow = _mod8169.FormRow;
     intl2 = intl4.intl;
     items[1] = unpackModuleId(FormSection, obj2);
     const obj4 = { children: intl3.string(intl4.t.avgbp1) };
-    const FormHint = Form2.FormHint;
+    const FormHint = _mod8169.FormHint;
     intl3 = intl4.intl;
     items[2] = unpackModuleId(FormHint, obj4);
     return authStore2(Form, obj);
   }
 }
 const prototype = InAppNotificationSettingsScreen.prototype;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedInAppNotificationSettingsScreen(channel) {
-  let first;
-  let tmp6;
-  const obj = channel(576);
-  const cResult = obj.c(6);
-  const tmp = channel;
-  channel = channel.channel;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserGuildSettingsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function o() {
-      let isChannelMutedResult;
-      if (null != channel) {
-        if (isMultiUserDM(channel.type)) {
-          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
-        }
-      }
-      return isChannelMutedResult;
-    };
-    cResult[1] = channel;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] === channel) {
-    let tmp8;
-    if (cResult[4] === stateFromStores) {
-      tmp8 = cResult[5];
-    }
-    return tmp8;
-  }
-  const tmp9 = closure_11(InAppNotificationSettingsScreen, { channel, isMuted: stateFromStores });
-  cResult[3] = channel;
-  cResult[4] = stateFromStores;
-  cResult[5] = tmp9;
-  tmp8 = tmp9;
-}) : (function ConnectedInAppNotificationSettingsScreen(channel) {
-  channel = channel.channel;
-  const obj = channel(504);
-  const items = [UserGuildSettingsStore];
-  const obj2 = {
-    channel,
-    isMuted: obj.useStateFromStores(items, () => {
-      let isChannelMutedResult;
-      if (null != channel) {
-        if (isMultiUserDM(channel.type)) {
-          isChannelMutedResult = UserGuildSettingsStore.isChannelMuted(obj.getGuildId(), obj.id);
-        }
-      }
-      return isChannelMutedResult;
-    })
-  };
-  return closure_11(InAppNotificationSettingsScreen, obj2);
-});
-const memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function InAppNotificationSettingsModal(arg0) {
-  let channelId;
-  let closure_0;
-  let obj4;
-  let onClose;
-  let tmpResult;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  ({ channelId, onClose } = arg0);
-  if (cResult[0] === channelId) {
-    let tmp4;
-    let tmp5;
-    if (cResult[1] === onClose) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] !== tmp4) {
-      const obj2 = { screens: tmp4, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" };
-      const tmp7 = closure_11(require("Navigator").Navigator, obj2);
-      cResult[3] = tmp4;
-      cResult[4] = tmp7;
-      tmp5 = tmp7;
-    } else {
-      tmp5 = cResult[4];
-    }
-    return tmp5;
-  }
-  _require = ChannelStore.getChannel(channelId);
-  const obj3 = { IN_APP_NOTIFICATION_SETTINGS: obj4 };
-  obj4 = {
-    headerTitle() {
-      let channelName;
-      let intl;
-      const obj = { title: intl.string(channelId(closure_2_2[12]).t.h850Ss), subtitle: channelName };
-      const NavigatorHeader = channelId(closure_2_2[18]).NavigatorHeader;
-      intl = channelId(closure_2_2[12]).intl;
-      channelName = null;
-      const tmp2 = closure_2_11;
-      const tmp3 = channelId;
-      const tmp4 = closure_2_2;
-      if (null != channel) {
-        const tmp3Result = tmp3(tmp4[10]);
-        channelName = tmp3Result.computeChannelName(tmp, closure_2_8, closure_2_6, true);
-      }
-      return tmp2(NavigatorHeader, obj);
-    },
-    headerLeft: tmpResult.getHeaderCloseButton(onClose),
-    render() {
-      const obj = { channel };
-      return closure_2_11(closure_2_14, obj);
-    }
-  };
-  cResult[0] = channelId;
-  cResult[1] = onClose;
-  cResult[2] = obj3;
-  tmp4 = obj3;
-  tmpResult = require("NavigatorHeader");
-}) : (function InAppNotificationSettingsModal(channelId) {
+const memoResult = react.memo(function InAppNotificationSettingsModal(channelId) {
   channelId = channelId.channelId;
   const onClose = channelId.onClose;
   const items = [channelId, onClose];
@@ -269,7 +163,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         let channelName;
         let intl;
         const obj = { title: intl.string(channelId(closure_2_2[12]).t.h850Ss), subtitle: channelName };
-        const NavigatorHeader = channelId(closure_2_2[18]).NavigatorHeader;
+        const NavigatorHeader = channelId(closure_2_2[16]).NavigatorHeader;
         intl = channelId(closure_2_2[12]).intl;
         channelName = null;
         const tmp2 = closure_2_11;
@@ -290,8 +184,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj3 = NavigatorHeader2;
     return obj;
   }, items);
-  return closure_11(channelId(7155).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
-}));
+  return closure_11(channelId(7163).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+});
 let result = size.fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 
 export default memoResult;

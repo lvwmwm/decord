@@ -1,92 +1,21 @@
-// Module ID: 14317
-// Function ID: 14318
+// Module ID: 14347
+// Function ID: 14348
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1389, 10761, 558, 576, 11007, 504, 11006, 2]
+// Dependencies: [1384, 10784, 11237, 504, 11236, 2]
+// Exports: useInappropriateConversationsTiers
 
-// Module 14317 (useInappropriateConversationsTiers)
+// Module 14347 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10761 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11006 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11007 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10784 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11236 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11237 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappropriateConversationsTiers(id) {
-  let currentUser;
-  let first;
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "context-menu-item" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = SelfModInappropriateConversationExperiment;
-  const isEligibleForInappropriateConversationWarning = tmpResult.useIsEligibleForInappropriateConversationWarning(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    class I {
-      constructor() {
-        return closure_1_2.getCurrentUser();
-      }
-    }
-    cResult[1] = items;
-    cResult[2] = I;
-    tmp7 = I;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const tmpResult3 = get_initialized;
-  const stateFromStores = tmpResult3.useStateFromStores(tmp6, tmp7);
-  const tmpResult4 = useInappropriateConversationBannerForChannel;
-  const inappropriateConversationBannerForChannel = tmpResult4.useInappropriateConversationBannerForChannel(id.id, "context-menu-item");
-  let isStaffResult;
-  if (stateFromStores != null) {
-    isStaffResult = stateFromStores.isStaff();
-  }
-  if (true === isStaffResult) {
-    if (isEligibleForInappropriateConversationWarning) {
-      if (id.isDM()) {
-        let type;
-        if (inappropriateConversationBannerForChannel != null) {
-          type = inappropriateConversationBannerForChannel.type;
-        }
-        let type1;
-        class I {
-          constructor() {
-            return closure_1_2.getCurrentUser();
-          }
-        }
-        const INAPPROPRIATE_CONVERSATION_TIER_1 = SafetyWarningTypes.INAPPROPRIATE_CONVERSATION_TIER_1;
-        if (inappropriateConversationBannerForChannel != null) {
-          type1 = inappropriateConversationBannerForChannel.type;
-        }
-        if (cResult[3] === type === INAPPROPRIATE_CONVERSATION_TIER_1) {
-          let tmp16;
-          if (cResult[4] === type1 === tmp12.INAPPROPRIATE_CONVERSATION_TIER_2) {
-            tmp16 = cResult[5];
-          }
-          return tmp16;
-        }
-        const obj3 = { isTier1: type === INAPPROPRIATE_CONVERSATION_TIER_1, isTier2: type1 === tmp12.INAPPROPRIATE_CONVERSATION_TIER_2 };
-        cResult[3] = type === INAPPROPRIATE_CONVERSATION_TIER_1;
-        cResult[4] = type1 === tmp12.INAPPROPRIATE_CONVERSATION_TIER_2;
-        cResult[5] = obj3;
-        tmp16 = obj3;
-      }
-    }
-  }
-  return null;
-}) : (function useInappropriateConversationsTiers(id) {
+const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
+
+export function useInappropriateConversationsTiers(channel) {
   let currentUser;
   let tmp6;
   let type1;
@@ -96,7 +25,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappro
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj4 = useInappropriateConversationBannerForChannel;
-  const inappropriateConversationBannerForChannel = obj4.useInappropriateConversationBannerForChannel(id.id, "context-menu-item");
+  const inappropriateConversationBannerForChannel = obj4.useInappropriateConversationBannerForChannel(channel.id, "context-menu-item");
   let isStaffResult;
   if (stateFromStores != null) {
     isStaffResult = stateFromStores.isStaff();
@@ -106,7 +35,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappro
     tmp4 = null;
     if (isEligibleForInappropriateConversationWarning) {
       tmp4 = null;
-      if (id.isDM()) {
+      if (channel.isDM()) {
         let type;
         if (inappropriateConversationBannerForChannel != null) {
           type = inappropriateConversationBannerForChannel.type;
@@ -122,7 +51,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInappro
     }
   }
   return tmp4;
-});
-const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");
-
-export const useInappropriateConversationsTiers = tmp2;
+}

@@ -1,19 +1,19 @@
-// Module ID: 6831
-// Function ID: 6832
+// Module ID: 6838
+// Function ID: 6839
 // Name: ConjureProjectStore
-// Dependencies: [32, 1389, 6832, 504, 584, 2]
+// Dependencies: [32, 1384, 6839, 504, 572, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6831 (ConjureProjectStore)
+// Module 6838 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-function isProjectOwner(stateFromStores) {
-  const owner_user_id = stateFromStores.owner_user_id;
+function isProjectOwner(item10010) {
+  const owner_user_id = item10010.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -37,6 +37,8 @@ let c13 = false;
 let obj = null;
 const set1 = new Set();
 const map4 = new Map();
+const map5 = new Map();
+let closure_18 = [];
 let success = "unattempted";
 const Store = get_initializedDefault.Store;
 class ConjureProjectStore extends Store {
@@ -63,7 +65,7 @@ class ConjureProjectStore extends Store {
     }
     return value;
   }
-  findProjectByApplicationId(applicationId) {
+  findProjectByApplicationId(prop) {
     const values = map.values();
     for (const item10009 of values) {
       obj.return();
@@ -86,6 +88,13 @@ class ConjureProjectStore extends Store {
       continue;
     }
     return items;
+  }
+  getViewOnlyProjects(arg0) {
+    let value = map5.get(arg0);
+    if (value == null) {
+      value = closure_18;
+    }
+    return value;
   }
   getIntegrationStatus(arg0) {
     let value = map1.get(arg0);
@@ -150,11 +159,13 @@ obj = {
             if (0 === map3.size) {
               if (0 === set.size) {
                 if (0 === set1.size) {
-                  if (null == obj) {
-                    if (null == maxProjects) {
-                      const tmp10 = c13;
-                      if (!tmp10) {
-                        return false;
+                  if (0 === map5.size) {
+                    if (null == obj) {
+                      if (null == maxProjects) {
+                        const tmp11 = c13;
+                        if (!tmp11) {
+                          return false;
+                        }
                       }
                     }
                   }
@@ -173,6 +184,7 @@ obj = {
     set.clear();
     set1.clear();
     map4.clear();
+    map5.clear();
     obj = null;
     c11 = false;
     success = "unattempted";
@@ -213,7 +225,8 @@ obj = {
       }
     }
     ({ projects, guildId } = arg0);
-    set = new Set(projects.map((id) => id.id));
+    const found = projects.filter((view_only) => true !== view_only.view_only);
+    set = new Set(found.map((id) => id.id));
     let tmp2 = map[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let tmp4 = _slicedToArray;
@@ -240,13 +253,14 @@ obj = {
       }
       continue;
     }
-    for (const item10044 of projects) {
-      let result = map.set(item10044.id, item10044);
+    for (const item10047 of found) {
+      let result = map.set(item10047.id, item10047);
       continue;
     }
     if (null != guildId) {
       set1.add(guildId);
       const result1 = map4.set(guildId, "success");
+      const result2 = map5.set(guildId, projects.filter((view_only) => true === view_only.view_only));
     }
     pruneProjectScopedState();
     c11 = true;

@@ -1,146 +1,51 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9257
+// Function ID: 9258
 // Name: useIsSecureFramesKeyInconsistent
-// Dependencies: [19, 5752, 7872, 558, 576, 9233, 504, 2]
+// Dependencies: [19, 5759, 7878, 504, 9246, 2]
+// Exports: useAlertIfSecureFramesKeyInconsistent, useIsSecureFramesKeyInconsistent
 
-// Module 9244 (useIsSecureFramesKeyInconsistent)
-import SecureFramesUtils from "SecureFramesUtils" /* 9233 */;
+// Module 9257 (useIsSecureFramesKeyInconsistent)
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
 import size from "module_2" /* 2 */;
 
-let clearTimeoutResult, num, tmp6;
+let result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSecureFramesKeyInconsistent(userId) {
-  let first;
-  let tmp7;
-  let obj = userId(576);
-  const cResult = obj.c(3);
-  const tmp = userId;
+export function useIsSecureFramesKeyInconsistent(userId) {
   userId = userId.userId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [RTCConnectionStore, StreamRTCConnectionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== userId) {
-    const fn = function c() {
-      const items = [RTCConnectionStore, StreamRTCConnectionStore];
-      const obj = SecureFramesUtils;
-      return obj.getIsSecureFramesKeyInconsistent(userId, items);
-    };
-    cResult[1] = userId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7);
-}) : (function useIsSecureFramesKeyInconsistent(userId) {
-  userId = userId.userId;
-  let obj = userId(504);
-  let items = [RTCConnectionStore, StreamRTCConnectionStore];
+  const items = [RTCConnectionStore, StreamRTCConnectionStore];
+  const obj = userId(504);
   return obj.useStateFromStores(items, () => {
-    const items = [RTCConnectionStore, StreamRTCConnectionStore];
-    const obj = SecureFramesUtils;
+    const items = [onAlertOpen, stateFromStores];
+    const obj = channelId(userId[4]);
     return obj.getIsSecureFramesKeyInconsistent(userId, items);
   });
-});
-let ref = tmp2;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSecureFramesKeyInconsistent(channelId) {
-  let tmp2;
-  let userId;
-  let obj = channelId(userId[4]);
-  const cResult = obj.c(9);
-  channelId = channelId.channelId;
-  userId = channelId.userId;
-  const nickname = channelId.nickname;
-  const onAlertOpen = channelId.onAlertOpen;
-  if (cResult[0] !== userId) {
-    let obj2 = { userId };
-    cResult[0] = userId;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  const tmp3 = ref(tmp2);
-  let closure_4 = tmp3;
-  ref = nickname.useRef(null);
-  const obj3 = nickname;
-  if (cResult[2] === channelId) {
-    if (cResult[3] === tmp3) {
-      if (cResult[4] === nickname) {
-        if (cResult[5] === onAlertOpen) {
-          let tmp4;
-          let tmp5;
-          if (cResult[6] === userId) {
-            tmp4 = cResult[7];
-            tmp5 = cResult[8];
-          }
-          const effect = obj3.useEffect(tmp4, tmp5);
-        }
-      }
-    }
-  }
-  class S {
-    constructor() {
-      tmp = closure_4;
-      if (tmp) {
-        tmp2 = closure_5;
-        tmp3 = null;
-        if (null == closure_5.current) {
-          tmp6 = globalThis;
-          _setTimeout = setTimeout;
-          num = 1000;
-          tmp2.current = setTimeout(function() { /* body not rendered: F149067 */ }, 1000);
-          tmp4 = tmp2;
-        }
-        current = tmp4.current;
-        return function() { /* body not rendered: F149068 */ };
-      }
-      tmp4 = closure_5;
-      clearTimeoutResult = clearTimeout(closure_5.current);
-      closure_5.current = null;
-      return;
-    }
-  }
-  const items = [channelId, tmp3, nickname, onAlertOpen, userId];
-  cResult[2] = channelId;
-  cResult[3] = tmp3;
-  cResult[4] = nickname;
-  cResult[5] = onAlertOpen;
-  cResult[6] = userId;
-  cResult[7] = S;
-  cResult[8] = items;
-  tmp5 = items;
-  tmp4 = S;
-}) : (function useAlertIfSecureFramesKeyInconsistent(channelId) {
+}
+export function useAlertIfSecureFramesKeyInconsistent(channelId) {
   channelId = channelId.channelId;
   const userId = channelId.userId;
   const nickname = channelId.nickname;
   const onAlertOpen = channelId.onAlertOpen;
-  ref = undefined;
-  let tmp = ref({ userId });
-  let closure_4 = tmp;
-  ref = nickname.useRef(null);
-  const items = [channelId, tmp, nickname, onAlertOpen, userId];
+  let stateFromStores;
+  let obj = channelId(userId[3]);
+  let items = [onAlertOpen, stateFromStores];
+  stateFromStores = obj.useStateFromStores(items, () => {
+    const items = [onAlertOpen, stateFromStores];
+    const obj = channelId(userId[4]);
+    return obj.getIsSecureFramesKeyInconsistent(userId, items);
+  });
+  const ref = nickname.useRef(null);
+  const items1 = [channelId, stateFromStores, nickname, onAlertOpen, userId];
   const effect = nickname.useEffect(() => {
-    const tmp = closure_4;
+    const tmp = stateFromStores;
     if (tmp) {
       let tmp4;
       if (null == ref.current) {
         const _setTimeout = setTimeout;
         ref.current = setTimeout(() => {
           onAlertOpen();
-          const obj = channelId(userId[5]);
+          const obj = channelId(userId[4]);
           const obj2 = { userId, channelId: current, nickname };
           const result = obj.showSecureFramesKeyInconsistentAlert(obj2);
         }, 1000);
@@ -154,9 +59,5 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAlertIfSe
     tmp4 = ref;
     clearTimeout(ref.current);
     ref.current = null;
-  }, items);
-});
-let result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesKeyInconsistent.tsx");
-
-export const useIsSecureFramesKeyInconsistent = tmp2;
-export const useAlertIfSecureFramesKeyInconsistent = tmp3;
+  }, items1);
+}

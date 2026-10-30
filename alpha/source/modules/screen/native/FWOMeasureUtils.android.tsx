@@ -1,10 +1,10 @@
-// Module ID: 9831
-// Function ID: 9832
+// Module ID: 9857
+// Function ID: 9858
 // Name: FWOMeasureUtils
 // Dependencies: [2]
 // Exports: measureInWindowForFWO
 
-// Module 9831 (FWOMeasureUtils)
+// Module 9857 (FWOMeasureUtils)
 import size from "module_2" /* 2 */;
 
 function measureInWindowForFWO() {

@@ -1,18 +1,15 @@
-// Module ID: 9991
-// Function ID: 9992
+// Module ID: 10018
+// Function ID: 10019
 // Name: PortalKeyboardModalContext
-// Dependencies: [19, 558, 2]
+// Dependencies: [19, 2]
 // Exports: useIsPortalKeyboardInModal
 
-// Module 9991 (PortalKeyboardModalContext)
+// Module 10018 (PortalKeyboardModalContext)
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const context = react.createContext(false);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
+const result = size.fileFinishedImporting("modules/keyboard/native/PortalKeyboardModalContext.tsx");
 
 export const PortalKeyboardInModalContext = context;
 export function useIsPortalKeyboardInModal() {

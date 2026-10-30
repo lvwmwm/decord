@@ -1,19 +1,18 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 6991
+// Function ID: 6992
 // Name: ChangeEmailStore
-// Dependencies: [570, 1271, 558, 576, 2]
-// Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken
+// Dependencies: [560, 1260, 2]
+// Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 6983 (ChangeEmailStore)
-import react_native from "react-native" /* 1271 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 6991 (ChangeEmailStore)
+import react_native from "react-native" /* 1260 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require, dependencyMap, errors;
 
-const f99070 = () => state.setState((errors) => {
+const f89548 = () => state.setState((errors) => {
   let obj2;
   const obj = { errors: obj2 };
   obj2 = {};
@@ -22,55 +21,20 @@ const f99070 = () => state.setState((errors) => {
   return obj;
 });
 let closure_2 = { errors: null, emailToken: null };
-const useChangeEmailStore = module_570.create(() => closure_2);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEmailError(arg0) {
+const useChangeEmailStore = module_560.create(() => closure_2);
+const result = size.fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
+
+export const ChangeEmailFields = { EMAIL: "email", EMAIL_TOKEN: "email_token", PASSWORD: "password" };
+export { useChangeEmailStore };
+export function setChangeEmailError(arg0, arg1) {
   let closure_0;
-  let tmp2;
-  let tmp4;
+  let closure_1;
   _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] !== arg0) {
-    const fn = function n(errors) {
-      errors = errors.errors;
-      let tmp;
-      if (errors != null) {
-        tmp = errors[closure_0];
-      }
-      return tmp;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  const tmp3 = obj(tmp2);
-  if (cResult[2] !== arg0) {
-    const fn2 = function l(arg0) {
-      let closure_1 = arg0;
-      const obj = react_native;
-      obj.batchUpdates(f99070);
-    };
-    cResult[2] = arg0;
-    cResult[3] = fn2;
-    tmp4 = fn2;
-  } else {
-    tmp4 = cResult[3];
-  }
-  if (cResult[4] === tmp3) {
-    let tmp5;
-    if (cResult[5] === tmp4) {
-      tmp5 = cResult[6];
-    }
-    return tmp5;
-  }
-  const items = [tmp3, tmp4];
-  cResult[4] = tmp3;
-  cResult[5] = tmp4;
-  cResult[6] = items;
-  tmp5 = items;
-}) : (function useChangeEmailError(arg0) {
+  dependencyMap = arg1;
+  const obj = require("react-native");
+  obj.batchUpdates(f89548);
+}
+export function useChangeEmailError(arg0) {
   let obj;
   let closure_0 = arg0;
   const items = [
@@ -86,25 +50,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChangeEma
       let state;
       let closure_1 = arg0;
       let obj = react_native;
-      obj.batchUpdates(f99070);
+      obj.batchUpdates(f89548);
     }
   ];
   return items;
-});
-function setChangeEmailError(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  _require = arg0;
-  dependencyMap = arg1;
-  const obj = require("react-native");
-  obj.batchUpdates(f99070);
 }
-const result = size.fileFinishedImporting("modules/verification/ChangeEmailStore.tsx");
-
-export const ChangeEmailFields = { EMAIL: "email", EMAIL_TOKEN: "email_token", PASSWORD: "password" };
-export { useChangeEmailStore };
-export { setChangeEmailError };
-export const useChangeEmailError = tmp3;
 export function setEmailToken(emailToken) {
   _require = emailToken;
   let obj = require("react-native");

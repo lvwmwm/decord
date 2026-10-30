@@ -1,16 +1,16 @@
-// Module ID: 19403
-// Function ID: 19404
+// Module ID: 19466
+// Function ID: 19467
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 11121, 11122, 1084, 504, 1101, 11414, 11415, 2]
+// Dependencies: [5, 11326, 11327, 1072, 504, 1090, 11617, 11618, 2]
 
-// Module 19403 (useGameOrganizationInviteFetch)
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
-import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11414 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11415 */;
+// Module 19466 (useGameOrganizationInviteFetch)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11327 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11617 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11121 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11326 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c1 = 3;

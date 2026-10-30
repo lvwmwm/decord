@@ -1,10 +1,10 @@
 // Module ID: 9207
 // Function ID: 9208
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 9207 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "841d46455ae53fb7e7901a2d793c8d1a", name: "HeadphonesSlashIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [2, 3], hash: "6ac82e47fbd4ea8331f749e0f8f68b4b", name: "voice_bar_bluetooth", type: "png" });

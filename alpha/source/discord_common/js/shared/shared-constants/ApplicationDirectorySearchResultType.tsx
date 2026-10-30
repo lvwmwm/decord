@@ -1,9 +1,9 @@
-// Module ID: 12084
-// Function ID: 12085
+// Module ID: 12260
+// Function ID: 12261
 // Name: ApplicationDirectorySearchResultType
 // Dependencies: [2]
 
-// Module 12084 (ApplicationDirectorySearchResultType)
+// Module 12260 (ApplicationDirectorySearchResultType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectorySearchResultType.tsx");

@@ -1,31 +1,25 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 19925
+// Function ID: 19926
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 109, 5, 19, 19822, 17071, 1084, 21, 558, 576, 17078, 17093, 5700, 1125, 1272, 5749, 19832, 19818, 19839, 2]
+// Dependencies: [32, 5, 19, 19885, 17125, 1072, 21, 17132, 17147, 5706, 1114, 1261, 5755, 19895, 19881, 19896, 2]
 
-// Module 19862 (GuildRoleSubscriptionGroupSetupModal)
+// Module 19925 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17093 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19822 */;
+import Constants from "Constants" /* 1072 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17147 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19885 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import react_mod from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import react from "react" /* 19 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17125 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c4, c6, closure_10, dependencyMap, importAll, state;
+let c4, c6, constants, dependencyMap, importAll, state;
 
-let c10;
-let unpackModuleId;
-function createGroupFromStore() {
-  return obj(...arguments);
-}
+let c9;
+let metroImportAll;
 let obj = function _createGroupFromStore() {
   obj = _asyncToGenerator(async (arg0, value, arg2, arg3) => {
     let closure_0 = arg0;
@@ -42,7 +36,7 @@ let obj = function _createGroupFromStore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -59,7 +53,7 @@ let obj = function _createGroupFromStore() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_4 = tmp3;
+            let closure_4 = tmp3;
             closure_1 = closure_2;
             closure_2 = closure_3;
             id = undefined;
@@ -108,7 +102,7 @@ let obj = function _createGroupFromStore() {
           return obj;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         c6 = 3;
         throw tmp12;
@@ -117,528 +111,211 @@ let obj = function _createGroupFromStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = ["editStateId"];
-let _slicedToArray = _slicedToArray_mod;
-let _asyncToGenerator = _asyncToGenerator_mod;
-let react = react_mod;
-const useRoleTierEditStore = RoleTierEditStore.useRoleTierEditStore;
-({ GuildRoleSubscriptionsTierScenes: c10, GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY: unpackModuleId } = GuildRoleSubscriptionsConstants);
-const AnalyticEvents = Constants.AnalyticEvents;
-const jsx = Fragment.jsx;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionGroupSetupModal(editStateId) {
-  let closure_7;
-  let createSubscriptionGroupListing;
-  let first1;
-  let handleCreateOrUpdateFromEditState;
-  let tmp4;
-  let tmp5;
-  let updateSubscriptionsSettings;
-  const tmp = _require;
-  const tmp2 = dependencyMap;
-  obj = require("react");
-  const cResult = obj.c(29);
-  if (cResult[0] !== editStateId) {
+class GuildRoleSubscriptionGroupSetupModal {
+  constructor(editStateId) {
+    let RoleSubscriptionSettingsDisabledContextProvider;
+    let _undefined;
+    let c2;
+    let c3;
+    let c5;
+    let closure_4;
+    let closure_7;
+    let error;
+    let obj6;
+    let obj7;
+    let tmp13;
     editStateId = editStateId.editStateId;
-    const tmp8 = first1(editStateId, createSubscriptionGroupListing);
-    _require = tmp8;
-    cResult[0] = editStateId;
-    cResult[1] = editStateId;
-    cResult[2] = tmp8;
-    tmp5 = tmp8;
-    tmp4 = editStateId;
-  } else {
-    tmp4 = cResult[1];
-    _require = cResult[2];
-  }
-  let guildId = tmp5.guildId;
-  let obj2 = handleCreateOrUpdateFromEditState;
-  const tmp9 = updateSubscriptionsSettings(handleCreateOrUpdateFromEditState.useState(), 2);
-  const first = tmp9[0];
-  dependencyMap = tmp9[1];
-  const tmpResult = tmp(17078);
-  createSubscriptionGroupListing = tmpResult.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-  const tmpResult2 = tmp(17078);
-  const updateSubscriptionsSettings1 = tmpResult2.useUpdateSubscriptionsSettings();
-  updateSubscriptionsSettings = updateSubscriptionsSettings1.updateSubscriptionsSettings;
-  let error = updateSubscriptionsSettings1.error;
-  const tmp12 = updateSubscriptionsSettings(handleCreateOrUpdateFromEditState.useState(tmp4), 2);
-  first1 = tmp12[0];
-  _asyncToGenerator = tmp12[1];
-  let obj5 = first(17093);
-  const createOrUpdateListingFromEditState = obj5.useCreateOrUpdateListingFromEditState();
-  handleCreateOrUpdateFromEditState = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
-  if (error == null) {
-    error = createOrUpdateListingFromEditState.error;
-  }
-  if (cResult[3] === createSubscriptionGroupListing) {
-    if (cResult[4] === first1) {
-      if (cResult[5] === error) {
-        let id;
-        const tmp15 = cResult[6];
-        if (first != null) {
-          id = first.id;
+    const merged = Object.assign(editStateId, Object.assign({ editStateId: 0 }));
+    importAll = undefined;
+    dependencyMap = undefined;
+    _slicedToArray = undefined;
+    c5 = undefined;
+    editStateId = undefined;
+    closure_7 = undefined;
+    error = undefined;
+    let memo;
+    obj = function _handleCreateGroupAndTier() {
+      obj = _asyncToGenerator(async (arg0, value) => {
+        function createGroupFromStore() {
+          return closure_1_12(...arguments);
         }
-        if (tmp15 === id) {
-          if (cResult[7] === guildId) {
-            if (cResult[8] === handleCreateOrUpdateFromEditState) {
-              if (cResult[9] === tmp5) {
-                let tmp17;
-                let tmp19;
-                let tmp18;
-                let tmp22;
-                let tmp24;
-                let tmp25;
-                if (cResult[10] === updateSubscriptionsSettings) {
-                  tmp17 = cResult[11];
-                }
-                if (cResult[12] !== error) {
-                  const fn = function x() {
-                    obj = error;
-                    if (null != error) {
-                      const presentError = ToastUtils.presentError;
-                      ToastUtils;
-                      let anyErrorMessage = obj.getAnyErrorMessage();
-                      if (anyErrorMessage == null) {
-                        const intl = tmp(1125).intl;
-                        anyErrorMessage = intl.string(tmp(1125).t.R0RpRX);
-                      }
-                      presentError(anyErrorMessage);
-                    }
-                  };
-                  const items = [error];
-                  cResult[12] = error;
-                  cResult[13] = fn;
-                  cResult[14] = items;
-                  tmp19 = items;
-                  tmp18 = fn;
-                } else {
-                  tmp18 = cResult[13];
-                  tmp19 = cResult[14];
-                }
-                const effect = obj2.useEffect(tmp18, tmp19);
-                const _Symbol = Symbol;
-                if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                  const items1 = [, , , , , , ];
-                  ({ GATING: arr2[0], GROUP: arr2[1], DETAILS: arr2[2], CHANNEL_BENEFITS: arr2[3], INTANGIBLE_BENEFITS: arr2[4], DESIGN: arr2[5] } = closure_10);
-                  let obj3 = { scene: closure_10.CONFIRMATION, extraProps: { isForGroupSetupModal: true } };
-                  items1[6] = obj3;
-                  cResult[15] = items1;
-                  tmp22 = items1;
-                } else {
-                  tmp22 = cResult[15];
-                }
-                closure_10 = tmp22;
-                const _Symbol2 = Symbol;
-                if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-                  let obj4 = { impressionName: tmp(1272).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING };
-                  cResult[16] = obj4;
-                  tmp24 = obj4;
-                } else {
-                  tmp24 = cResult[16];
-                }
-                const _Symbol3 = Symbol;
-                if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-                  let obj6 = {};
-                  obj6[closure_10.GATING] = tmp24;
-                  let obj7 = { impressionName: tmp(1272).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP };
-                  const DETAILS = closure_10.DETAILS;
-                  obj6[DETAILS] = obj7;
-                  cResult[17] = obj6;
-                  tmp25 = obj6;
-                } else {
-                  tmp25 = cResult[17];
-                }
-                const _Symbol4 = Symbol;
-                if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                  class X {
-                    constructor(arg0) {
-                      closure_0 = arg0;
-                      const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-                      obj = AppAnalyticsUtilsDefault;
-                      const obj2 = { setup_modal_step: findIndexResult + 1 };
-                      obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-                    }
-                  }
-                  cResult[18] = X;
-                } else {
-                  class X {
-                    constructor(arg0) {
-                      closure_0 = arg0;
-                      const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-                      obj = AppAnalyticsUtilsDefault;
-                      const obj2 = { setup_modal_step: findIndexResult + 1 };
-                      obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-                    }
-                  }
-                }
-                if (cResult[19] === tmp17) {
-                  class X {
-                    constructor(arg0) {
-                      closure_0 = arg0;
-                      const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-                      obj = AppAnalyticsUtilsDefault;
-                      const obj2 = { setup_modal_step: findIndexResult + 1 };
-                      obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-                    }
-                  }
-                  if (cResult[22] === guildId) {
-                    class X {
-                      constructor(arg0) {
-                        closure_0 = arg0;
-                        const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-                        obj = AppAnalyticsUtilsDefault;
-                        const obj2 = { setup_modal_step: findIndexResult + 1 };
-                        obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-                      }
-                    }
-                    if (cResult[25] === first1) {
-                      class X {
-                        constructor(arg0) {
-                          closure_0 = arg0;
-                          const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-                          obj = AppAnalyticsUtilsDefault;
-                          const obj2 = { setup_modal_step: findIndexResult + 1 };
-                          obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-                        }
-                      }
-                    }
-                    let tmp42 = jsx(tmp(19839).EditStateContextProvider, { guildId, editStateId: first1, groupListingId: null, children: tmp37 });
-                    cResult[25] = first1;
-                    cResult[26] = guildId;
-                    cResult[27] = tmp37;
-                    cResult[28] = tmp42;
-                  }
-                  const tmp39 = jsx(tmp(19818).RoleSubscriptionSettingsDisabledContextProvider, { guildId, children: tmp28 });
-                  cResult[22] = guildId;
-                  cResult[23] = tmp28;
-                  cResult[24] = tmp39;
-                }
-                const obj10 = { modalKey, onDone: tmp17, steps: tmp22, onClose: tmp27, stepScreenPropsMap: tmp25 };
-                guildId(19832);
-                const merged = Object.assign(tmp5);
-                const tmp36 = <tmp31 modalKey={modalKey} onDone={tmp17} steps={tmp22} onClose={tmp27} stepScreenPropsMap={tmp25} />;
-                cResult[19] = tmp17;
-                cResult[20] = tmp5;
-                cResult[21] = tmp36;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  _require = _asyncToGenerator(async (arg0, value) => {
-    let anyErrorMessage;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        let groupListingId;
-        let id;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_3 = tmp;
-            groupListingId = undefined;
-            id = undefined;
-            if (id != null) {
-              id = id.id;
-            }
-            if (id == null) {
-              c4 = 1;
-              c5 = 1;
-              const obj4 = { value: createGroupFromStore(guildId, c4, c5, closure_3), done: false };
-              return obj4;
-            }
-          }
-        } else {
-          if (1 === tmp5) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              id = value;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else if (value) {
-            id.onClose();
-          }
+        if (c5 === 2) {
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-        groupListingId = id;
-        if (null != groupListingId) {
-          if (null != anyErrorMessage) {
-            const presentError = groupListingId(closure_2_3[12]).presentError;
-            const tmp42 = groupListingId(closure_2_3[12]);
-            anyErrorMessage = anyErrorMessage.getAnyErrorMessage();
-            guildId = anyErrorMessage;
-            if (anyErrorMessage == null) {
-              const intl = groupListingId(closure_2_3[13]).intl;
-              guildId = intl.string(groupListingId(closure_2_3[13]).t.ZUEGFn);
-            }
-            presentError(guildId);
-          }
-          const obj6 = {
-            guildId,
-            editStateId,
-            groupListingId,
-            onBeforeDispatchNewListing(id) {
-                    return closure_1_7(id.id);
-                  }
-          };
-          c4 = 2;
-          c5 = 1;
-          const obj7 = { value: handleCreateOrUpdateFromEditState(obj6), done: false };
-          return obj7;
-        }
-      } catch (tmp34) {
-        c5 = 3;
-        throw tmp34;
-      }
-    }
-  });
-  cResult[3] = createSubscriptionGroupListing;
-  cResult[4] = first1;
-  cResult[5] = error;
-  if (first != null) {
-    class X {
-      constructor(arg0) {
-        closure_0 = arg0;
-        const findIndexResult = closure_10.findIndex((item) => item === closure_0);
-        obj = AppAnalyticsUtilsDefault;
-        const obj2 = { setup_modal_step: findIndexResult + 1 };
-        obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-      }
-    }
-  }
-  function handleCreateGroupAndTier() {
-    return closure_0(...arguments);
-  }
-  cResult[6] = undefined;
-  cResult[7] = guildId;
-  cResult[8] = handleCreateOrUpdateFromEditState;
-  cResult[9] = tmp5;
-  cResult[10] = updateSubscriptionsSettings;
-  cResult[11] = handleCreateGroupAndTier;
-  tmp17 = handleCreateGroupAndTier;
-}) : (function GuildRoleSubscriptionGroupSetupModal(editStateId) {
-  let _undefined;
-  let c2;
-  let c3;
-  let c5;
-  let closure_7;
-  let closure_8;
-  let error;
-  editStateId = editStateId.editStateId;
-  const merged = Object.assign(editStateId, Object.assign({ editStateId: 0 }));
-  importAll = undefined;
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  editStateId = undefined;
-  closure_7 = undefined;
-  react = undefined;
-  error = undefined;
-  let memo;
-  obj = function _handleCreateGroupAndTier2() {
-    obj = _asyncToGenerator(async (arg0, value) => {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          let closure_3;
-          let groupListingId;
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              closure_3 = tmp4;
-              let closure_2 = tmp;
-              groupListingId = undefined;
-              id = undefined;
-              if (id != null) {
-                id = id.id;
-              }
-              if (id == null) {
-                c4 = 1;
-                c5 = 1;
-                const obj4 = { value: closure_1_14(guildId, closure_2_4, closure_2_5, _undefined), done: false };
-                return obj4;
-              }
-            }
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            const obj2 = { value, done: true };
+            return obj2;
           } else {
-            if (1 === c4) {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            let closure_3;
+            let groupListingId;
+            c5 = 2;
+            if (0 === c4) {
               if (arg0 === 1) {
                 c5 = 3;
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 3;
-                const obj5 = { value, done: true };
-                return obj5;
+                const obj3 = { value, done: true };
+                return obj3;
               } else {
-                id = value;
+                closure_3 = tmp4;
+                let closure_2 = tmp;
+                groupListingId = undefined;
+                id = undefined;
+                if (id != null) {
+                  id = id.id;
+                }
+                if (id == null) {
+                  c4 = 1;
+                  c5 = 1;
+                  const obj4 = { value: createGroupFromStore(guildId, closure_2_4, closure_2_5, _undefined), done: false };
+                  return obj4;
+                }
               }
-            } else if (arg0 === 1) {
+            } else {
+              if (1 === c4) {
+                if (arg0 === 1) {
+                  c5 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c5 = 3;
+                  const obj5 = { value, done: true };
+                  return obj5;
+                } else {
+                  id = value;
+                }
+              } else if (arg0 === 1) {
+                c5 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c5 = 3;
+                obj = { value, done: true };
+                return obj;
+              } else if (value) {
+                closure_131_0.onClose();
+              }
               c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else if (value) {
-              closure_131_0.onClose();
+              return { value: "HermesInternal", done: null };
             }
+            groupListingId = id;
+            if (null != groupListingId) {
+              if (null != closure_131_9) {
+                const presentError = id(closure_3[9]).presentError;
+                const tmp40 = id(closure_3[9]);
+                const anyErrorMessage = closure_131_9.getAnyErrorMessage();
+                let closure_1 = anyErrorMessage;
+                if (anyErrorMessage == null) {
+                  const intl = id(closure_3[10]).intl;
+                  closure_1 = intl.string(id(closure_3[10]).t.ZUEGFn);
+                }
+                presentError(closure_1);
+              }
+              const obj6 = {
+                guildId: closure_131_1,
+                editStateId: closure_131_6,
+                groupListingId,
+                onBeforeDispatchNewListing(id) {
+                        return closure_1_7(id.id);
+                      }
+              };
+              c4 = 2;
+              c5 = 1;
+              const obj7 = { value: closure_131_8(obj6), done: false };
+              return obj7;
+            }
+          } catch (tmp32) {
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            throw tmp32;
           }
-          groupListingId = id;
-          if (null != groupListingId) {
-            if (null != closure_131_9) {
-              const presentError = id(closure_3[12]).presentError;
-              const tmp41 = id(closure_3[12]);
-              const anyErrorMessage = closure_131_9.getAnyErrorMessage();
-              let closure_1 = anyErrorMessage;
-              if (anyErrorMessage == null) {
-                const intl = id(closure_3[13]).intl;
-                closure_1 = intl.string(id(closure_3[13]).t.ZUEGFn);
-              }
-              presentError(closure_1);
-            }
-            const obj6 = {
-              guildId: closure_131_1,
-              editStateId: closure_131_6,
-              groupListingId,
-              onBeforeDispatchNewListing(id) {
-                      return closure_1_7(id.id);
-                    }
-            };
-            c4 = 2;
-            c5 = 1;
-            const obj7 = { value: closure_131_8(obj6), done: false };
-            return obj7;
-          }
-        } catch (tmp33) {
-          c5 = 3;
-          throw tmp33;
         }
-      }
-    });
-    return obj(...arguments);
-  };
-  const guildId = merged.guildId;
-  obj = react;
-  [c2, c3] = _slicedToArray(react.useState(), 2);
-  const tmp3 = merged;
-  const tmp4 = dependencyMap;
-  const tmp2 = _slicedToArray(react.useState(), 2);
-  let obj2 = merged(17078);
-  closure_4 = obj2.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-  let obj3 = merged(17078);
-  const updateSubscriptionsSettings = obj3.useUpdateSubscriptionsSettings();
-  ({ updateSubscriptionsSettings: c5, error } = updateSubscriptionsSettings);
-  [editStateId, closure_7] = react.useState(editStateId);
-  let obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
-  const createOrUpdateListingFromEditState = obj4.useCreateOrUpdateListingFromEditState();
-  react = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
-  if (error == null) {
-    error = createOrUpdateListingFromEditState.error;
-  }
-  let items = [error];
-  const effect = obj.useEffect(() => {
-    obj = error;
-    if (null != error) {
-      const presentError = ToastUtils.presentError;
-      ToastUtils;
-      let anyErrorMessage = obj.getAnyErrorMessage();
-      if (anyErrorMessage == null) {
-        const intl = tmp(1125).intl;
-        anyErrorMessage = intl.string(tmp(1125).t.R0RpRX);
-      }
-      presentError(anyErrorMessage);
-    }
-  }, items);
-  memo = obj.useMemo(() => {
-    const items = [, , , , , , ];
-    ({ GATING: arr[0], GROUP: arr[1], DETAILS: arr[2], CHANNEL_BENEFITS: arr[3], INTANGIBLE_BENEFITS: arr[4], DESIGN: arr[5] } = obj);
-    items[6] = { scene: obj.CONFIRMATION, extraProps: { isForGroupSetupModal: true } };
-    return items;
-  }, []);
-  const items1 = [memo];
-  const memo1 = obj.useMemo(() => {
-    obj = {};
-    obj[obj.GATING] = { impressionName: merged(c3[14]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING };
-    ({ impressionName: merged(c3[14]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING });
-    obj[obj.DETAILS] = { impressionName: merged(c3[14]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP };
-    ({ impressionName: merged(c3[14]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP });
-    return obj;
-  }, []);
-  const callback = obj.useCallback((arg0) => {
-    let closure_0 = arg0;
-    const findIndexResult = memo.findIndex((item) => item === closure_0);
-    obj = AppAnalyticsUtilsDefault;
-    const obj2 = { setup_modal_step: findIndexResult + 1 };
-    obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
-  }, items1);
-  const EditStateContextProvider = tmp3(19839).EditStateContextProvider;
-  let obj6 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = tmp3(19818).RoleSubscriptionSettingsDisabledContextProvider;
-  let obj7 = {
-    modalKey: memo,
-    onDone: function handleCreateGroupAndTier() {
+      });
       return obj(...arguments);
-    },
-    steps: memo,
-    onClose: callback,
-    stepScreenPropsMap: memo1
-  };
-  guildId(19832);
-  const merged1 = Object.assign(merged);
-  return <EditStateContextProvider guildId={guildId} editStateId={editStateId} groupListingId={null}>{null}</EditStateContextProvider>;
-});
-tmp3.modalConfig = { closable: false };
+    };
+    const guildId = merged.guildId;
+    obj = editStateId;
+    [c2, c3] = _slicedToArray(editStateId.useState(), 2);
+    const tmp3 = merged;
+    const tmp4 = dependencyMap;
+    const tmp2 = _slicedToArray(editStateId.useState(), 2);
+    let obj2 = merged(17132);
+    _slicedToArray = obj2.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
+    let obj3 = merged(17132);
+    const updateSubscriptionsSettings = obj3.useUpdateSubscriptionsSettings();
+    ({ updateSubscriptionsSettings: c5, error } = updateSubscriptionsSettings);
+    [editStateId, closure_7] = editStateId.useState(editStateId);
+    let obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
+    const createOrUpdateListingFromEditState = obj4.useCreateOrUpdateListingFromEditState();
+    constants = createOrUpdateListingFromEditState.handleCreateOrUpdateFromEditState;
+    if (error == null) {
+      error = createOrUpdateListingFromEditState.error;
+    }
+    let items = [error];
+    const effect = obj.useEffect(() => {
+      obj = error;
+      if (null != error) {
+        const presentError = ToastUtils.presentError;
+        ToastUtils;
+        let anyErrorMessage = obj.getAnyErrorMessage();
+        if (anyErrorMessage == null) {
+          const intl = tmp(1114).intl;
+          anyErrorMessage = intl.string(tmp(1114).t.R0RpRX);
+        }
+        presentError(anyErrorMessage);
+      }
+    }, items);
+    memo = obj.useMemo(() => {
+      const items = [, , , , , , ];
+      ({ GATING: arr[0], GROUP: arr[1], DETAILS: arr[2], CHANNEL_BENEFITS: arr[3], INTANGIBLE_BENEFITS: arr[4], DESIGN: arr[5] } = constants);
+      items[6] = { scene: constants.CONFIRMATION, extraProps: { isForGroupSetupModal: true } };
+      return items;
+    }, []);
+    const items1 = [memo];
+    const memo1 = obj.useMemo(() => {
+      obj = {};
+      obj[constants.GATING] = { impressionName: merged(c3[11]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING };
+      ({ impressionName: merged(c3[11]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_LANDING });
+      obj[constants.DETAILS] = { impressionName: merged(c3[11]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP };
+      ({ impressionName: merged(c3[11]).ImpressionNames.ROLE_SUBSCRIPTION_INITIAL_SETUP_MODAL_TIER_STEP });
+      return obj;
+    }, []);
+    const callback = obj.useCallback((arg0) => {
+      let closure_0 = arg0;
+      const findIndexResult = memo.findIndex((item) => item === closure_0);
+      obj = AppAnalyticsUtilsDefault;
+      const obj2 = { setup_modal_step: findIndexResult + 1 };
+      obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
+    }, items1);
+    let obj5 = { guildId, editStateId, groupListingId: null, children: memo(RoleSubscriptionSettingsDisabledContextProvider, obj6) };
+    const EditStateContextProvider = tmp3(19895).EditStateContextProvider;
+    obj6 = { guildId, children: memo(tmp13, obj7) };
+    RoleSubscriptionSettingsDisabledContextProvider = tmp3(19881).RoleSubscriptionSettingsDisabledContextProvider;
+    obj7 = {
+      modalKey: error,
+      onDone: function handleCreateGroupAndTier() {
+        return obj(...arguments);
+      },
+      steps: memo,
+      onClose: callback,
+      stepScreenPropsMap: memo1
+    };
+    tmp13 = guildId(19896);
+    const merged1 = Object.assign(merged);
+    return memo(EditStateContextProvider, obj5);
+  }
+}
+let _slicedToArray = _slicedToArray_mod;
+const useRoleTierEditStore = RoleTierEditStore.useRoleTierEditStore;
+({ GuildRoleSubscriptionsTierScenes: metroImportAll, GUILD_ROLE_SUBSCRIPTION_GROUP_SETUP_KEY: c9 } = GuildRoleSubscriptionsConstants);
+const AnalyticEvents = Constants.AnalyticEvents;
+const jsx = Fragment.jsx;
+GuildRoleSubscriptionGroupSetupModal.modalConfig = { closable: false };
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionGroupSetupModal.tsx");
 
-export default tmp3;
+export default GuildRoleSubscriptionGroupSetupModal;

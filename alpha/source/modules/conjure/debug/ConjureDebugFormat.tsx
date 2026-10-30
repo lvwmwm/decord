@@ -1,10 +1,10 @@
-// Module ID: 12827
-// Function ID: 12828
+// Module ID: 12978
+// Function ID: 12979
 // Name: ConjureDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 12827 (ConjureDebugFormat)
+// Module 12978 (ConjureDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/debug/ConjureDebugFormat.tsx");
@@ -19,15 +19,15 @@ export function debugLogEnv(source) {
   }
   str2 = source;
 }
-export function formatBytes(r2_bytes) {
-  if (Number.isFinite(r2_bytes)) {
-    if (r2_bytes >= 0) {
-      if (r2_bytes < 1024) {
+export function formatBytes(looseBytes) {
+  if (Number.isFinite(looseBytes)) {
+    if (looseBytes >= 0) {
+      if (looseBytes < 1024) {
         const _Math4 = Math;
         const _HermesInternal4 = HermesInternal;
-        return "" + Math.round(r2_bytes) + " B";
+        return "" + Math.round(looseBytes) + " B";
       } else {
-        const result = r2_bytes / 1024;
+        const result = looseBytes / 1024;
         if (result < 1024) {
           let rounded;
           if (100 <= result) {

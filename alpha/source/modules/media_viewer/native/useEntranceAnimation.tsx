@@ -1,17 +1,17 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14761
+// Function ID: 14762
 // Name: useEntranceAnimation
-// Dependencies: [32, 19, 1199, 570, 1271, 558, 576, 5243, 5086, 2]
+// Dependencies: [32, 19, 1188, 560, 1260, 5249, 5090, 2]
+// Exports: useEntranceAnimation
 
-// Module 14727 (useEntranceAnimation)
-import native from "native" /* 1199 */;
-import react_native from "react-native" /* 1271 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
+// Module 14761 (useEntranceAnimation)
+import native from "native" /* 1188 */;
+import react_native from "react-native" /* 1260 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,186 +24,56 @@ function setUseEntranceAnimationState(arg0) {
   obj.batchUpdates(() => obj2.setState(closure_0));
 }
 let obj = { duration: 300, easing: native.STANDARD_EASING };
-let obj2 = module_570.create(() => ({ isComplete: false }));
+let obj2 = module_560.create(() => ({ isComplete: false }));
 let closure_7 = { code: "function useEntranceAnimationTsx1(){const{runOnJS,setUseEntranceAnimationState}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});}" };
-const __initData = { code: "function useEntranceAnimationTsx2(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
-let closure_9 = { code: "function useEntranceAnimationTsx3(){const{runOnJS,setUseEntranceAnimationState}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});}" };
-let closure_10 = { code: "function useEntranceAnimationTsx4(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEntranceAnimation(arg0) {
-  let closure_0;
-  let tmp3;
-  let tmp5;
-  _require = arg0;
-  obj = require("react");
-  const cResult = obj.c(9);
-  const tmp2 = incrementLoads(react.useState(0), 2);
-  [tmp3, dependencyMap] = tmp2;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let fn = function l() {
-      dependencyMap((arg0) => arg0 + 1);
-    };
-    cResult[0] = fn;
-    incrementLoads = fn;
-  } else {
-    incrementLoads = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn2 = function p() {
-      let state;
-      obj = react_native;
-      obj.batchUpdates(() => state.setState({ isComplete: false }));
-      const fn = function t() {
-        obj = closure_1_0(closure_1_1[8]);
-        obj.runOnJS(closure_1_6)({ isComplete: true });
-      };
-      set = closure_0.set;
-      obj2 = timing;
-      fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState };
-      fn.__workletHash = 7427534745615;
-      fn.__initData = __initData;
-      ({ runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState });
-      const result = set(obj2.withTiming(1, obj, "respect-motion-settings", fn));
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn2;
-    tmp5 = fn2;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] !== arg0) {
-    class J {
-      constructor() {
-        let state;
-        const tmp = closure_0;
-        if (1 !== closure_0.get()) {
-          obj = react_native;
-          obj.batchUpdates(() => state.setState({ isComplete: false }));
-          set = tmp.set;
-          const fn = function t() {
-            obj = closure_0(dependencyMap[8]);
-            obj.runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-            obj2 = closure_0(dependencyMap[8]);
-            obj2.runOnJS(incrementLoads)();
-          };
-          const tmp7 = timing;
-          obj2 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
-          const withTiming = tmp7.withTiming;
-          fn.__closure = obj2;
-          fn.__workletHash = 9904090637386;
-          fn.__initData = __initData2;
-          const result = set(withTiming(1, obj, "respect-motion-settings", fn));
-        } else {
-          incrementLoads();
-        }
-      }
-    }
-    cResult[3] = arg0;
-    cResult[4] = J;
-  } else {
-    class J {
-      constructor() {
-        let state;
-        const tmp = closure_0;
-        if (1 !== closure_0.get()) {
-          obj = react_native;
-          obj.batchUpdates(() => state.setState({ isComplete: false }));
-          set = tmp.set;
-          const fn = function t() {
-            obj = closure_0(dependencyMap[8]);
-            obj.runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-            obj2 = closure_0(dependencyMap[8]);
-            obj2.runOnJS(incrementLoads)();
-          };
-          const tmp7 = timing;
-          obj2 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
-          const withTiming = tmp7.withTiming;
-          fn.__closure = obj2;
-          fn.__workletHash = 9904090637386;
-          fn.__initData = __initData2;
-          const result = set(withTiming(1, obj, "respect-motion-settings", fn));
-        } else {
-          incrementLoads();
-        }
-      }
-    }
-  }
-  if (cResult[5] === tmp6) {
-    class J {
-      constructor() {
-        let state;
-        const tmp = closure_0;
-        if (1 !== closure_0.get()) {
-          obj = react_native;
-          obj.batchUpdates(() => state.setState({ isComplete: false }));
-          set = tmp.set;
-          const fn = function t() {
-            obj = closure_0(dependencyMap[8]);
-            obj.runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-            obj2 = closure_0(dependencyMap[8]);
-            obj2.runOnJS(incrementLoads)();
-          };
-          const tmp7 = timing;
-          obj2 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
-          const withTiming = tmp7.withTiming;
-          fn.__closure = obj2;
-          fn.__workletHash = 9904090637386;
-          fn.__initData = __initData2;
-          const result = set(withTiming(1, obj, "respect-motion-settings", fn));
-        } else {
-          incrementLoads();
-        }
-      }
-    }
-  }
-  obj2 = { loads: tmp3, handleLoadStart: tmp5, handleError: tmp6, handleLoad: tmp6 };
-  cResult[5] = tmp6;
-  cResult[6] = tmp3;
-  cResult[7] = tmp5;
-  cResult[8] = obj2;
-}) : (function useEntranceAnimation(arg0) {
+let closure_8 = { code: "function useEntranceAnimationTsx2(){const{runOnJS,setUseEntranceAnimationState,incrementLoads}=this.__closure;runOnJS(setUseEntranceAnimationState)({isComplete:true});runOnJS(incrementLoads)();}" };
+let result = size.fileFinishedImporting("modules/media_viewer/native/useEntranceAnimation.tsx");
+
+export const useEntranceAnimationState = obj2;
+export function useEntranceAnimation(entranceAnimationDriver) {
+  let incrementLoads;
   let tmp2;
-  let closure_0 = arg0;
   let tmp = incrementLoads(react.useState(0), 2);
   [tmp2, dependencyMap] = tmp;
   incrementLoads = react.useCallback(() => {
     dependencyMap((arg0) => arg0 + 1);
   }, []);
-  const items = [arg0];
-  const items1 = [incrementLoads, arg0];
+  const items = [entranceAnimationDriver];
+  const items1 = [incrementLoads, entranceAnimationDriver];
   const handleLoadStart = react.useCallback(() => {
     let state;
     obj = react_native;
     obj.batchUpdates(() => state.setState({ isComplete: false }));
     const fn = function t() {
-      obj = closure_1_0(closure_1_1[8]);
+      obj = entranceAnimationDriver(closure_1_1[6]);
       obj.runOnJS(closure_1_6)({ isComplete: true });
     };
-    set = closure_0.set;
+    set = entranceAnimationDriver.set;
     obj2 = timing;
     fn.__closure = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState };
-    fn.__workletHash = 6216271233933;
+    fn.__workletHash = 7427534745615;
     fn.__initData = __initData;
     ({ runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState });
     const result = set(obj2.withTiming(1, obj, "respect-motion-settings", fn));
   }, items);
   const handleError = react.useCallback(() => {
     let state;
-    const tmp = closure_0;
-    if (1 !== closure_0.get()) {
+    const tmp = entranceAnimationDriver;
+    if (1 !== entranceAnimationDriver.get()) {
       obj = react_native;
       obj.batchUpdates(() => state.setState({ isComplete: false }));
       set = tmp.set;
       const fn = function t() {
-        obj = closure_0(dependencyMap[8]);
+        obj = entranceAnimationDriver(dependencyMap[6]);
         obj.runOnJS(setUseEntranceAnimationState)({ isComplete: true });
-        obj2 = closure_0(dependencyMap[8]);
+        obj2 = entranceAnimationDriver(dependencyMap[6]);
         obj2.runOnJS(incrementLoads)();
       };
       const tmp7 = timing;
       obj2 = { runOnJS: ReanimatedRexport.runOnJS, setUseEntranceAnimationState, incrementLoads };
       const withTiming = tmp7.withTiming;
       fn.__closure = obj2;
-      fn.__workletHash = 5072314086348;
+      fn.__workletHash = 9904090637386;
       fn.__initData = __initData2;
       const result = set(withTiming(1, obj, "respect-motion-settings", fn));
     } else {
@@ -211,8 +81,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEntranc
     }
   }, items1);
   return { loads, handleLoadStart, handleError, handleLoad: handleError };
-});
-let result = size.fileFinishedImporting("modules/media_viewer/native/useEntranceAnimation.tsx");
-
-export const useEntranceAnimationState = obj2;
-export const useEntranceAnimation = tmp3;
+}

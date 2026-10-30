@@ -1,28 +1,28 @@
-// Module ID: 14074
-// Function ID: 14075
+// Module ID: 14222
+// Function ID: 14223
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1389, 14047, 21, 5005, 5305, 587, 558, 576, 1503, 1125, 5271, 14046, 7199, 7200, 573, 7193, 38, 7233, 7149, 2]
+// Dependencies: [5, 32, 19, 17, 1384, 14195, 21, 5009, 5581, 575, 1498, 5619, 1114, 7206, 7207, 14194, 563, 7201, 38, 7240, 7157, 2]
+// Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 14074 (AddPhoneScreens)
+// Module 14222 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7193 */;
-import AddPhoneDefault from "AddPhone" /* 7199 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7200 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14046 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14047 */;
+import nativeDefault from "native" /* 575 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7201 */;
+import AddPhoneDefault from "AddPhone" /* 7206 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7207 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14194 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const PhoneActionCreatorsDefault = PhoneActionCreators;
-let _require, c3, c4, currentUser, importDefault, navigation, nextPromise;
+let _require, c3, c4, closure_1, currentUser, importDefault, navigation;
 
 let c10;
 let c9;
@@ -37,105 +37,9 @@ obj2 = { paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32 };
 let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScreen() {
-  let first;
-  let header;
-  let items;
-  let title;
-  let tmp11;
-  let tmp13;
-  let tmp8;
-  let obj = navigation(576);
-  const cResult = obj.c(16);
-  const obj2 = navigation(1503);
-  navigation = obj2.useNavigation();
-  const tmp5 = closure_11();
-  ({ header, title } = tmp5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(navigation(1125).t.Xgb497);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp5.title) {
-    const obj3 = { style: title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp10 = closure_9(navigation(5271).Text, obj3);
-    cResult[1] = tmp5.title;
-    cResult[2] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const subtitle = tmp5.subtitle;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(navigation(1125).t.qFmzyo);
-    cResult[3] = stringResult1;
-    tmp11 = stringResult1;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] !== tmp5.subtitle) {
-    const obj4 = { style: subtitle, variant: "text-sm/medium", color: "text-default", children: tmp11 };
-    const tmp15 = closure_9(navigation(5271).Text, obj4);
-    cResult[4] = tmp5.subtitle;
-    cResult[5] = tmp15;
-    tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[5];
-  }
-  if (cResult[6] === tmp5.header) {
-    if (cResult[7] === tmp8) {
-      let tmp16;
-      if (cResult[8] === tmp13) {
-        tmp16 = cResult[9];
-      }
-      if (cResult[10] !== navigation) {
-        class P {
-          constructor(arg0) {
-            obj = closure_0(closure_2[15]);
-            return obj.submitPhone(arg0, closure_0);
-          }
-        }
-        cResult[10] = navigation;
-        cResult[11] = P;
-      } else {
-        class P {
-          constructor(arg0) {
-            obj = closure_0(closure_2[15]);
-            return obj.submitPhone(arg0, closure_0);
-          }
-        }
-      }
-      if (cResult[12] === tmp16) {
-        class P {
-          constructor(arg0) {
-            obj = closure_0(closure_2[15]);
-            return obj.submitPhone(arg0, closure_0);
-          }
-        }
-      }
-      const obj5 = { style: tmp5.container, reason: navigation(7200).ChangePhoneReason.CONTACT_SYNC, header: tmp16, onComplete: tmp18 };
-      const tmp22 = AddPhoneDefault;
-      cResult[12] = tmp16;
-      cResult[13] = tmp5.container;
-      cResult[14] = tmp18;
-      cResult[15] = closure_9(tmp22, obj5);
-      const tmp23 = closure_9(tmp22, obj5);
-    }
-  }
-  const obj6 = { style: header, children: items };
-  items = [tmp8, tmp13];
-  const tmp17 = closure_10(View, obj6);
-  cResult[6] = tmp5.header;
-  cResult[7] = tmp8;
-  cResult[8] = tmp13;
-  cResult[9] = tmp17;
-  tmp16 = tmp17;
-}) : (function AddPhoneScreen() {
+let result = size.fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
+
+export function AddPhoneScreen() {
   let closure_0;
   let intl;
   let intl2;
@@ -165,235 +69,11 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AddPhoneScre
   tmp2 = closure_10(View, obj2);
   const tmp3 = AddPhoneDefault;
   return closure_9(tmp3, obj5);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneScreen() {
-  let require;
-  let tmp10;
-  let tmp11;
-  let tmp6;
-  let tmp8;
-  const tmp = require;
-  let obj = require("react");
-  const cResult = obj.c(18);
-  const tmp4 = closure_11();
-  let obj2 = react;
-  [tmp6, require] = _slicedToArray(react.useState(false), 2);
-  const tmp5 = _slicedToArray(react.useState(false), 2);
-  [tmp8, importDefault] = _slicedToArray(react.useState(), 2);
-  const tmp7 = _slicedToArray(react.useState(), 2);
-  let phone = useContactSyncModalStore().phone;
-  let obj3 = require("useNavigation");
-  navigation = obj3.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function h() {
-      currentUser = currentUser.getCurrentUser();
-      let phone;
-      if (currentUser != null) {
-        phone = currentUser.phone;
-      }
-      return phone;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp11 = fn;
-    tmp10 = items;
-  } else {
-    [tmp10, tmp11] = cResult;
-  }
-  const tmpResult = tmp(navigation[18]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
-  if (cResult[2] === navigation) {
-    let tmp14;
-    if (cResult[3] === stateFromStores) {
-      tmp14 = cResult[4];
-    }
-    if (cResult[5] === navigation) {
-      if (cResult[6] === phone) {
-        let tmp15;
-        let tmp17;
-        if (cResult[7] === stateFromStores) {
-          tmp15 = cResult[8];
-        }
-        const effect = obj2.useEffect(tmp14, tmp15);
-        const _Symbol = Symbol;
-        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          _require = stateFromStores(function*(arg0, value) {
-            let closure_1;
-            let obj6;
-            closure_0 = arg0;
-            if (c4 === 2) {
-              c4 = 3;
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "IconComponent", done: "IconComponent" };
-              }
-            } else {
-              try {
-                let codeIntercepted;
-                let addedPhone;
-                let error;
-                c4 = 2;
-                if (0 === c3) {
-                  if (arg0 === 1) {
-                    c4 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c4 = 3;
-                    const obj3 = { value, done: true };
-                    return obj3;
-                  } else {
-                    let closure_2 = tmp4;
-                    closure_0 = undefined;
-                    codeIntercepted = undefined;
-                    addedPhone = undefined;
-                    error = undefined;
-                    closure_0(true);
-                    tmp(undefined);
-                    c3 = 1;
-                    c4 = 1;
-                    const obj4 = { value: obj6.verifyPhone(closure_0), done: false };
-                    obj6 = closure_0(navigation[15]);
-                    return obj4;
-                  }
-                } else if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                } else {
-                  closure_0 = value;
-                  codeIntercepted = closure_0.codeIntercepted;
-                  addedPhone = closure_0.addedPhone;
-                  error = closure_0.error;
-                  tmp(error);
-                  const tmp6 = addedPhone && codeIntercepted;
-                  if (!tmp6) {
-                    closure_0(false);
-                  }
-                  c4 = 3;
-                  const obj = { value: codeIntercepted, done: true };
-                  return obj;
-                }
-              } catch (tmp11) {
-                c4 = 3;
-                throw tmp11;
-              }
-            }
-          });
-          function handleCodeEntered() {
-            return closure_0(...arguments);
-          }
-          cResult[9] = handleCodeEntered;
-          tmp17 = handleCodeEntered;
-        } else {
-          tmp17 = cResult[9];
-        }
-        require("module_38")(null != phone, "Phone shouldn't be null when trying to verify the code");
-        const tmp19 = importDefault;
-        if (cResult[10] !== navigation) {
-          class R {
-            constructor(arg0) {
-              const obj = ContactSyncModalActionCreators;
-              const result = obj.verifyPhoneWithPassword(arg0, navigation);
-            }
-          }
-          cResult[10] = navigation;
-          cResult[11] = R;
-        } else {
-          class R {
-            constructor(arg0) {
-              const obj = ContactSyncModalActionCreators;
-              const result = obj.verifyPhoneWithPassword(arg0, navigation);
-            }
-          }
-        }
-        if (cResult[12] === tmp8) {
-          class R {
-            constructor(arg0) {
-              const obj = ContactSyncModalActionCreators;
-              const result = obj.verifyPhoneWithPassword(arg0, navigation);
-            }
-          }
-        }
-        let obj4 = { phone, loading: tmp6, error: tmp8, backgroundStyle: tmp4.redesignContainer, disableKeyboardAvoidingView: true, onCodeEnteredIntercept: tmp17, onVerified: tmp22 };
-        cResult[12] = tmp8;
-        cResult[13] = tmp6;
-        cResult[14] = phone;
-        cResult[15] = tmp4.redesignContainer;
-        cResult[16] = tmp22;
-        cResult[17] = closure_9(tmp19(navigation[21]), obj4);
-        const tmp24 = closure_9(tmp19(navigation[21]), obj4);
-        class N {
-          constructor() {
-            closure_0 = null;
-            if (null != closure_3) {
-              tmp2 = closure_0;
-              tmp3 = closure_2;
-              obj = closure_0(closure_2[15]);
-              tmp4 = closure_2;
-              result = obj.handlePhoneVerificationComplete(tmp, closure_2);
-              nextPromise = result.then(() => {
-                const obj = RunAfterInteractionsUtils;
-                closure_0 = obj.runAfterInteractions(function() { /* body not rendered: F163679 */ });
-              });
-            }
-            return () => {
-              const obj = closure_0;
-              if (closure_0 != null) {
-                obj.cancel();
-              }
-            };
-          }
-        }
-      }
-    }
-    const items1 = [navigation, phone, stateFromStores];
-    cResult[5] = navigation;
-    cResult[6] = phone;
-    cResult[7] = stateFromStores;
-    cResult[8] = items1;
-    tmp15 = items1;
-  }
-  class N {
-    constructor() {
-      closure_0 = null;
-      if (null != closure_3) {
-        tmp2 = closure_0;
-        tmp3 = closure_2;
-        obj = closure_0(closure_2[15]);
-        tmp4 = closure_2;
-        result = obj.handlePhoneVerificationComplete(tmp, closure_2);
-        nextPromise = result.then(() => {
-          const obj = RunAfterInteractionsUtils;
-          closure_0 = obj.runAfterInteractions(function() { /* body not rendered: F163679 */ });
-        });
-      }
-      return () => {
-        const obj = closure_0;
-        if (closure_0 != null) {
-          obj.cancel();
-        }
-      };
-    }
-  }
-  cResult[2] = navigation;
-  cResult[3] = stateFromStores;
-  cResult[4] = N;
-  tmp14 = N;
-}) : (function VerifyPhoneScreen() {
+}
+export function VerifyPhoneScreen() {
   let require;
   let tmp3;
-  let obj = function _handleCodeEntered2() {
+  let obj = function _handleCodeEntered() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let obj3;
       let closure_0 = arg0;
@@ -407,7 +87,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -520,135 +200,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPhoneS
     }
   };
   return closure_9(require("VerifyPhone"), obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPasswordScreen() {
-  let phoneToken;
-  let require;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const tmp = require;
-  let obj = require("react");
-  const cResult = obj.c(14);
-  [tmp5, require] = _slicedToArray(react.useState(false), 2);
-  const tmp4 = _slicedToArray(react.useState(false), 2);
-  const obj3 = require("useNavigation");
-  navigation = obj3.useNavigation();
-  const tmp7 = closure_11();
-  phoneToken = useContactSyncModalStore().phoneToken;
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function l() {
-      currentUser = currentUser.getCurrentUser();
-      let phone;
-      if (currentUser != null) {
-        phone = currentUser.phone;
-      }
-      return phone;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp8 = items;
-    tmp9 = fn;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  const tmpResult = tmp(phoneToken[18]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  if (cResult[2] === navigation) {
-    let tmp12;
-    let tmp13;
-    let tmp18;
-    let tmp19;
-    let tmp20;
-    if (cResult[3] === stateFromStores) {
-      tmp12 = cResult[4];
-      tmp13 = cResult[5];
-    }
-    const effect = obj2.useEffect(tmp12, tmp13);
-    navigation(phoneToken[20])(null != phoneToken, "Phone token shouldn't be null when trying to verify the password");
-    const tmp15 = navigation;
-    if (cResult[6] !== phoneToken) {
-      const fn3 = function x(password) {
-        _require(true);
-        const obj = PhoneActionCreatorsDefault;
-        return obj.addPhone(phoneToken, password, PhoneActionCreators.ChangePhoneReason.CONTACT_SYNC);
-      };
-      cResult[6] = phoneToken;
-      cResult[7] = fn3;
-      tmp18 = fn3;
-    } else {
-      tmp18 = cResult[7];
-    }
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class E {
-        constructor() {
-          return _require(false);
-        }
-      }
-      class T {
-        constructor() {
-
-        }
-      }
-      cResult[8] = E;
-      cResult[9] = T;
-      tmp19 = E;
-      tmp20 = T;
-    } else {
-      class E {
-        constructor() {
-          return _require(false);
-        }
-      }
-      class T {
-        constructor() {
-
-        }
-      }
-    }
-    if (cResult[10] === tmp5) {
-      class E {
-        constructor() {
-          return _require(false);
-        }
-      }
-    }
-    const obj4 = { hideUnverifiedBanner: true, parentLoading: tmp5, style: tmp7.redesignContainer, onSubmit: tmp18, onError: tmp19, onSuccess: tmp20 };
-    cResult[10] = tmp5;
-    cResult[11] = tmp7.redesignContainer;
-    cResult[12] = tmp18;
-    cResult[13] = closure_9(tmp15(phoneToken[22]), obj4);
-    const tmp23 = closure_9(tmp15(phoneToken[22]), obj4);
-  }
-  const fn2 = function _() {
-    const require = null;
-    if (null != stateFromStores) {
-      let obj = require("ContactSyncModalActionCreators");
-      const result = obj.handlePhoneVerificationComplete(tmp, navigation);
-      result.then(() => {
-        const obj = RunAfterInteractionsUtils;
-        closure_0 = obj.runAfterInteractions(() => closure_1_0(false));
-      });
-    }
-    return () => {
-      const obj = closure_0;
-      if (closure_0 != null) {
-        obj.cancel();
-      }
-    };
-  };
-  const items1 = [navigation, stateFromStores];
-  cResult[2] = navigation;
-  cResult[3] = stateFromStores;
-  cResult[4] = fn2;
-  cResult[5] = items1;
-  tmp13 = items1;
-  tmp12 = fn2;
-}) : (function VerifyPasswordScreen() {
+}
+export function VerifyPasswordScreen() {
   let first;
   let phoneToken;
   [first, _require] = react.useState(false);
@@ -684,7 +237,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPasswo
       }
     };
   }, items1);
-  navigation(phoneToken[20])(null != phoneToken, "Phone token shouldn't be null when trying to verify the password");
+  navigation(phoneToken[18])(null != phoneToken, "Phone token shouldn't be null when trying to verify the password");
   const obj3 = {
     hideUnverifiedBanner: true,
     parentLoading: first,
@@ -701,10 +254,5 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function VerifyPasswo
 
     }
   };
-  return closure_9(navigation(phoneToken[22]), obj3);
-});
-let result = size.fileFinishedImporting("modules/contact_sync/native/components/AddPhoneScreens.tsx");
-
-export const AddPhoneScreen = tmp4;
-export const VerifyPhoneScreen = tmp5;
-export const VerifyPasswordScreen = tmp6;
+  return closure_9(navigation(phoneToken[20]), obj3);
+}

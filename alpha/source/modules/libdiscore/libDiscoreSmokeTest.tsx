@@ -1,15 +1,15 @@
-// Module ID: 20017
-// Function ID: 20018
+// Module ID: 20080
+// Function ID: 20081
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 1084, 3, 566, 562, 559, 1264, 2]
+// Dependencies: [5, 1072, 3, 1366, 1362, 4884, 1253, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 20017 (libDiscoreSmokeTest)
+// Module 20080 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
-import initLibdiscore from "initLibdiscore" /* 566 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import initLibdiscore from "initLibdiscore" /* 1366 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4884 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _libDiscoreSmokeTest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _libDiscoreSmokeTest() {
           c6 = true;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {

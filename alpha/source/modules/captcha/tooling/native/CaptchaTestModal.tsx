@@ -1,23 +1,20 @@
-// Module ID: 17564
-// Function ID: 17565
+// Module ID: 17618
+// Function ID: 17619
 // Name: CaptchaTestModal
-// Dependencies: [5, 32, 19, 17, 21, 5005, 587, 17565, 17566, 5701, 5271, 1199, 7281, 5281, 6731, 6984, 558, 576, 1125, 7155, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5009, 575, 17619, 17620, 5707, 5619, 1188, 7286, 5629, 6738, 6992, 7163, 1114, 2]
+// Exports: default
 
-// Module 17564 (CaptchaTestModal)
+// Module 17618 (CaptchaTestModal)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import Navigator2 from "Navigator" /* 7155 */;
-import CaptchaTestUtils from "CaptchaTestUtils" /* 17565 */;
-import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17566 */;
+import nativeDefault from "native" /* 575 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import CaptchaTestUtils from "CaptchaTestUtils" /* 17619 */;
+import CaptchaTestActionCreators from "CaptchaTestActionCreators" /* 17620 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,13 +28,6 @@ let obj4;
 let obj5;
 let obj6;
 let obj8;
-function closeModal() {
-  const arr = closure_1_1(closure_1_2[14]);
-  return arr.pop();
-}
-function render() {
-  return closure_1_7(closure_1_14, {});
-}
 function CaptchaTestScreen(arg0) {
   let items;
   let items1;
@@ -61,7 +51,7 @@ function CaptchaTestScreen(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -114,7 +104,7 @@ function CaptchaTestScreen(arg0) {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp22) {
             closure_3 = tmp22;
             if (0 === c4) {
@@ -214,45 +204,9 @@ createStyles = createStyles_mod;
 let obj7 = { headerStyle: obj8 };
 obj8 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let closure_15 = createStyles.createStyles(obj7);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaTestModal() {
-  let tmp5;
-  let tmp7;
-  let tmp9;
-  let tmpResult;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const tmp4 = closure_15();
-  if (cResult[0] !== tmp4) {
-    const obj2 = {};
-    const TEST_CAPTCHA = constants.TEST_CAPTCHA;
-    const obj3 = { headerStyle: tmp4.headerStyle, headerTitle: "Captcha Test Tool", headerLeft: tmpResult.getHeaderCloseButton(closeModal), render };
-    obj2[TEST_CAPTCHA] = obj3;
-    cResult[0] = tmp4;
-    cResult[1] = obj2;
-    tmp5 = obj2;
-    tmpResult = NavigatorHeader;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl2.t["13/7kX"]);
-    cResult[2] = stringResult;
-    tmp7 = stringResult;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== tmp5) {
-    const obj4 = { screens: tmp5, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: tmp7 };
-    const tmp12 = metroImportDefault(Navigator2.Navigator, obj4);
-    cResult[3] = tmp5;
-    cResult[4] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[4];
-  }
-  return tmp9;
-}) : (function CaptchaTestModal() {
+const result = size.fileFinishedImporting("modules/captcha/tooling/native/CaptchaTestModal.tsx");
+
+export default function CaptchaTestModal() {
   let headerStyle;
   let intl;
   const tmp = closure_15();
@@ -262,7 +216,17 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaTestM
     let obj3;
     const obj = {};
     const TEST_CAPTCHA = constants.TEST_CAPTCHA;
-    const obj2 = { headerStyle: headerStyle.headerStyle, headerTitle: "Captcha Test Tool", headerLeft: obj3.getHeaderCloseButton(closeModal), render };
+    const obj2 = {
+      headerStyle: headerStyle.headerStyle,
+      headerTitle: "Captcha Test Tool",
+      headerLeft: obj3.getHeaderCloseButton(function closeModal() {
+        const arr = closure_1_1(closure_1_2[14]);
+        return arr.pop();
+      }),
+      render() {
+        return closure_1_7(closure_1_14, {});
+      }
+    };
     obj[TEST_CAPTCHA] = obj2;
     obj3 = NavigatorHeader;
     return obj;
@@ -271,7 +235,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaTestM
   const Navigator = require("Navigator").Navigator;
   intl = require("intl").intl;
   return closure_7(Navigator, obj);
-});
-const result = size.fileFinishedImporting("modules/captcha/tooling/native/CaptchaTestModal.tsx");
-
-export default tmp5;
+};

@@ -1,74 +1,23 @@
-// Module ID: 8934
-// Function ID: 8935
+// Module ID: 8967
+// Function ID: 8968
 // Name: useEventException
-// Dependencies: [6842, 558, 576, 504, 2]
-// Exports: getEventException
+// Dependencies: [6849, 504, 2]
+// Exports: default, getEventException
 
-// Module 8934 (useEventException)
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8967 (useEventException)
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f103777 = (event_exception_id) => event_exception_id.event_exception_id === constants;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventException(arg0, arg1) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg1;
-  const obj = require("react");
-  const cResult = obj.c(6);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildScheduledEventStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg1) {
-    const fn = function o() {
-      const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(closure_0);
-      let prop;
-      if (guildScheduledEvent != null) {
-        prop = guildScheduledEvent.guild_scheduled_event_exceptions;
-      }
-      if (prop == null) {
-        prop = [];
-      }
-      return prop;
-    };
-    cResult[1] = arg1;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp6);
-  if (cResult[3] === stateFromStoresArray) {
-    let tmp7;
-    if (cResult[4] === arg0) {
-      tmp7 = cResult[5];
-    }
-    return tmp7;
-  }
-  _require = arg0;
-  let found;
-  if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f103777);
-  }
-  cResult[3] = stateFromStoresArray;
-  cResult[4] = arg0;
-  cResult[5] = found;
-  tmp7 = found;
-}) : (function useEventException(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
+
+export default function useEventException(arg0, arg1) {
   let closure_0;
   _require = arg1;
-  const items = [GuildScheduledEventStore];
-  const obj = require("get initialized");
+  let obj = require("get initialized");
+  let items = [GuildScheduledEventStore];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
     const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(closure_0);
     let prop;
@@ -83,13 +32,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEventExce
   _require = arg0;
   let found;
   if (stateFromStoresArray != null) {
-    found = stateFromStoresArray.find(f103777);
+    found = stateFromStoresArray.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);
   }
   return found;
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
-
-export default tmp2;
+};
 export function getEventException(recurrenceId, eventId) {
   const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(eventId);
   let prop;
@@ -102,7 +48,7 @@ export function getEventException(recurrenceId, eventId) {
   let closure_0 = recurrenceId;
   let found;
   if (prop != null) {
-    found = prop.find(f103777);
+    found = prop.find((event_exception_id) => event_exception_id.event_exception_id === closure_0);
   }
   return found;
 }

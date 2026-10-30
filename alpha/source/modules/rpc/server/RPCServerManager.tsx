@@ -1,39 +1,39 @@
-// Module ID: 16205
-// Function ID: 16206
+// Module ID: 16245
+// Function ID: 16246
 // Name: RPCServerManager
-// Dependencies: [32, 7834, 4857, 4917, 4879, 2012, 5750, 5752, 4947, 4908, 1389, 5668, 6437, 1084, 2024, 6834, 5756, 1381, 584, 1264, 16206, 504, 1385, 11575, 11576, 9293, 7494, 16212, 16214, 9298, 11574, 7856, 2]
+// Dependencies: [32, 7839, 4858, 4921, 4880, 2007, 5756, 5759, 4951, 4912, 1384, 5674, 6444, 1072, 2019, 6841, 5763, 1376, 572, 1253, 16246, 504, 1380, 11776, 11777, 9306, 7502, 16252, 16254, 9311, 11775, 7861, 2]
 
-// Module 16205 (RPCServerManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import Constants2 from "Constants" /* 2024 */;
-import Constants3 from "Constants" /* 5756 */;
-import Constants4 from "Constants" /* 6437 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import frameDeepLinks from "frameDeepLinks" /* 7494 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
-import transformUserDefault from "transformUser" /* 9298 */;
-import RPCHelpers from "RPCHelpers" /* 11574 */;
-import transformMessage from "transformMessage" /* 11575 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 11576 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16206 */;
-import useThermalState from "useThermalState" /* 16212 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16214 */;
+// Module 16245 (RPCServerManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import Constants2 from "Constants" /* 2019 */;
+import Constants3 from "Constants" /* 5763 */;
+import Constants4 from "Constants" /* 6444 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import frameDeepLinks from "frameDeepLinks" /* 7502 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
+import transformUserDefault from "transformUser" /* 9311 */;
+import RPCHelpers from "RPCHelpers" /* 11775 */;
+import transformMessage from "transformMessage" /* 11776 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 11777 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16246 */;
+import useThermalState from "useThermalState" /* 16252 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16254 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import QuestStore from "QuestStore" /* 7834 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import UserStore from "UserStore" /* 1389 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import Constants from "Constants" /* 1084 */;
+import QuestStore from "QuestStore" /* 7839 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserStore from "UserStore" /* 1384 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let set;

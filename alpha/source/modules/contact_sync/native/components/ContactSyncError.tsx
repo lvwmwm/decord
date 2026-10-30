@@ -1,15 +1,15 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14213
+// Function ID: 14214
 // Name: ContactSyncError
-// Dependencies: [19, 21, 5005, 558, 576, 5086, 5243, 5271, 2]
+// Dependencies: [19, 21, 5009, 5090, 5249, 5619, 2]
+// Exports: default
 
-// Module 14065 (ContactSyncError)
+// Module 14213 (ContactSyncError)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,72 +18,9 @@ let _require;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ container: { justifyContent: "center" }, error: { paddingHorizontal: 16, textAlign: "center" } });
 const __initData = { code: "function ContactSyncErrorTsx1(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
-const __initData2 = { code: "function ContactSyncErrorTsx2(){const{withTiming,hasError,ERROR_HEIGHT}=this.__closure;return{height:withTiming(hasError?ERROR_HEIGHT:0)};}" };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyncError(arg0) {
-  let closure_0;
-  let error;
-  let style;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(10);
-  ({ style, error } = arg0);
-  const tmp4 = closure_4();
-  _require = tmp5;
-  const fn = function s() {
-    let num = 0;
-    const withTiming = timing.withTiming;
-    timing;
-    if (closure_0) {
-      num = 44;
-    }
-    const obj = { height: withTiming(num) };
-    return obj;
-  };
-  const tmpResult = tmp(5086);
-  fn.__closure = { withTiming: tmp(5243).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
-  fn.__workletHash = 14558247431913;
-  fn.__initData = __initData;
-  ({ withTiming: tmp(5243).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
-  const animatedStyle = tmpResult.useAnimatedStyle(fn);
-  if (cResult[0] === animatedStyle) {
-    if (cResult[1] === style) {
-      let tmp7;
-      if (cResult[2] === tmp4.container) {
-        tmp7 = cResult[3];
-      }
-      if (cResult[4] === error) {
-        let tmp8;
-        if (cResult[5] === tmp4.error) {
-          tmp8 = cResult[6];
-        }
-        if (cResult[7] === tmp7) {
-          let tmp11;
-          if (cResult[8] === tmp8) {
-            tmp11 = cResult[9];
-          }
-          return tmp11;
-        }
-        const tmp14 = jsx(ReanimatedRexportDefault.View, { style: tmp7, children: tmp8 });
-        cResult[7] = tmp7;
-        cResult[8] = tmp8;
-        cResult[9] = tmp14;
-        tmp11 = tmp14;
-      }
-      const tmp10 = jsx(tmp(5271).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
-      let num = 4;
-      cResult[4] = error;
-      cResult[5] = tmp4.error;
-      cResult[6] = tmp10;
-      tmp8 = tmp10;
-    }
-  }
-  const items = [tmp4.container, style, animatedStyle];
-  cResult[0] = animatedStyle;
-  cResult[1] = style;
-  cResult[2] = tmp4.container;
-  cResult[3] = items;
-  tmp7 = items;
-}) : (function ContactSyncError(error) {
+const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
+
+export default function ContactSyncError(error) {
   let closure_0;
   error = error.error;
   const style = error.style;
@@ -101,14 +38,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyn
     return obj;
   };
   fn.__closure = { withTiming: require("timing").withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
-  fn.__workletHash = 16862151134186;
-  fn.__initData = __initData2;
+  fn.__workletHash = 14558247431913;
+  fn.__initData = __initData;
   ({ withTiming: require("timing").withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
   const animatedStyle = obj.useAnimatedStyle(fn);
   const items = [tmp.container, style, animatedStyle];
   const View = ReanimatedRexportDefault.View;
   return <View style={items}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncError.tsx");
-
-export default tmp3;
+};

@@ -1,18 +1,18 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15607
+// Function ID: 15608
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 5188, 558, 576, 2]
+// Dependencies: [32, 19, 5194, 2]
+// Exports: useIsUserSettingsOpen
 
-// Module 15567 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+// Module 15607 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f125910 = (name) => {
+const f108448 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f125910 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f125910);
+      someResult = routes.some(f108448);
     }
     tmp = someResult;
   }
@@ -43,61 +43,16 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f125910);
+      someResult = routes.some(f108448);
     }
     tmp2 = someResult;
   }
   return tmp2;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSettingsOpen() {
-  let closure_0;
-  let first;
-  let tmp4;
-  let tmp5;
-  let obj = require("react");
-  const cResult = obj.c(2);
-  [first, _require] = react.useState(isUserSettingsOpen);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s() {
-      let rootNavigationRef;
-      let obj = rootNavigationRef(dependencyMap[2]);
-      rootNavigationRef = obj.getRootNavigationRef();
-      if (null != rootNavigationRef) {
-        function handleStateChange() {
-          const obj = rootNavigationRef;
-          if (null != rootNavigationRef) {
-            const rootState = obj.getRootState();
-            let routes1;
-            if (rootState != null) {
-              routes1 = rootState.routes;
-            }
-            let someResult = null != routes1;
-            if (someResult) {
-              const routes = rootState.routes;
-              someResult = routes.some(f125910);
-            }
-            rootNavigationRef(someResult);
-          }
-        }
-        rootNavigationRef.addListener("state", handleStateChange);
-        return () => {
-          rootNavigationRef.removeListener("state", handleStateChange);
-        };
-      }
-    };
-    const items = [];
-    cResult[0] = fn;
-    cResult[1] = items;
-    tmp4 = fn;
-    tmp5 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-  return first;
-}) : (function useIsUserSettingsOpen() {
-  let require;
+const result = size.fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
+
+export { isUserSettingsOpen };
+export function useIsUserSettingsOpen() {
   let tmp2;
   let tmp = _slicedToArray(react.useState(isUserSettingsOpen), 2);
   [tmp2, require] = tmp;
@@ -113,12 +68,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f125910);
+          someResult = routes.some(f108448);
         }
-        _require(someResult);
+        require(someResult);
       }
     }
-    let obj = require("RootNavigationRef");
+    let obj = RootNavigationRef;
     const rootNavigationRef = obj.getRootNavigationRef();
     if (null != rootNavigationRef) {
       rootNavigationRef.addListener("state", handleStateChange);
@@ -128,8 +83,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserSet
     }
   }, []);
   return tmp2;
-});
-const result = size.fileFinishedImporting("modules/user_settings/core/isUserSettingsOpen.native.tsx");
-
-export { isUserSettingsOpen };
-export const useIsUserSettingsOpen = tmp2;
+}

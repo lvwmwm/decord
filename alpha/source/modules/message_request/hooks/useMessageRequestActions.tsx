@@ -1,19 +1,19 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13965
+// Function ID: 13966
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7760, 13819, 1084, 13820, 10941, 6433, 10021, 8716, 1264, 13822, 4833, 8163, 2]
+// Dependencies: [5, 32, 19, 7765, 13966, 1072, 13967, 10966, 6440, 10048, 8750, 1253, 13969, 4834, 8344, 2]
 // Exports: useMessageRequestActions
 
-// Module 13818 (useMessageRequestActions)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import ReportModals from "ReportModals" /* 8163 */;
+// Module 13965 (useMessageRequestActions)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import ReportModals from "ReportModals" /* 8344 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7760 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13819 */;
+import UserProfileStore from "UserProfileStore" /* 7765 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13966 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c8;
@@ -75,7 +75,7 @@ export function useMessageRequestActions(user) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ export function useMessageRequestActions(user) {
           c4(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -173,7 +173,7 @@ export function useMessageRequestActions(user) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -236,7 +236,7 @@ export function useMessageRequestActions(user) {
           c5(false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp39) {
         closure_3 = tmp39;
         if (0 === c4) {
@@ -268,7 +268,7 @@ export function useMessageRequestActions(user) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -315,7 +315,7 @@ export function useMessageRequestActions(user) {
               }
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp4) {
           c6 = 0;
@@ -374,7 +374,7 @@ export function useMessageRequestActions(user) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -406,7 +406,7 @@ export function useMessageRequestActions(user) {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -459,7 +459,7 @@ export function useMessageRequestActions(user) {
                         return obj;
                       } else {
                         c1 = 3;
-                        return { value: "IconComponent", done: "IconComponent" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp16) {
                       c1 = 3;
@@ -487,7 +487,7 @@ export function useMessageRequestActions(user) {
                 }
               }
               v3 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp4) {
             c4 = 0;
@@ -569,7 +569,7 @@ export function useMessageRequestActions(user) {
   const markAsNotSpam = obj.useCallback((channel, arg1, arg2) => {
     let closure_1 = arg1;
     let closure_2 = arg2;
-    function onConfirm_0(setting, is_dont_show_again_checked) {
+    function onConfirm(setting, is_dont_show_again_checked) {
       const tmp = is_dont_show_again_checked;
       if (tmp) {
         const NonSpamRetrainingOptIn = UserSettings.NonSpamRetrainingOptIn;
@@ -595,8 +595,8 @@ export function useMessageRequestActions(user) {
     if (null == setting) {
       let obj = {
         channel,
-        onConfirm: onConfirm_0,
-        onCancel: function onCancel_0() {
+        onConfirm,
+        onCancel() {
             const obj = AnalyticsUtilsDefault;
             const obj2 = { action: metroImportDefault.DISMISS_HAM_CONFIRMATION_PROMPT, channel_id: channel.id };
             obj.track(AnalyticEvents.MESSAGE_REQUEST_ACTION, obj2);
@@ -605,7 +605,7 @@ export function useMessageRequestActions(user) {
       const tmpResult = tmp(tmp2[12]);
       let result = tmpResult.onMarkAsNotSpamConfirmationModal(obj);
     } else {
-      onConfirm_0(setting);
+      onConfirm(setting);
     }
   }, items4);
   if (tmp) {

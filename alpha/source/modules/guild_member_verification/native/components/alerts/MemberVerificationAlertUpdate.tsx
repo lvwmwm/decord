@@ -1,21 +1,20 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7252
+// Function ID: 7253
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1084, 21, 5005, 558, 576, 1125, 5698, 5707, 7246, 5271, 6018, 2]
+// Dependencies: [19, 1072, 21, 5009, 6025, 1114, 5704, 5712, 7253, 5619, 2]
+// Exports: default
 
-// Module 7245 (MemberVerificationAlertUpdate)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import AlertDefault from "Alert" /* 6018 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7246 */;
+// Module 7252 (MemberVerificationAlertUpdate)
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import AlertDefault from "Alert" /* 6025 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7253 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -23,107 +22,9 @@ let hasOwnProperty;
 const DownloadLinks = Constants.DownloadLinks;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ headerImage: { marginLeft: "auto", marginRight: "auto", marginTop: 8 }, header: { marginTop: 24, textAlign: "center" }, text: { marginVertical: 8, lineHeight: 18, textAlign: "center" } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerificationAlertUpdate(onClose) {
-  let items;
-  let tmp10;
-  let tmp15;
-  let tmp17;
-  let tmp20;
-  let tmp22;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(16);
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl5.t.b8siyY);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl5.t["ETE/oC"]);
-    const fn = function x() {
-      const obj = LinkingDefault;
-      return obj.openURL(constants.IOS);
-    };
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    cResult[2] = fn;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-    tmp7 = fn;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  onClose = onClose.onClose;
-  if (cResult[3] !== tmp4.headerImage) {
-    const obj2 = { source: AssetRegistryDefault, style: tmp4.headerImage };
-    const tmp13 = FastImageDefault;
-    const tmp14 = React3(tmp13, obj2);
-    cResult[3] = tmp4.headerImage;
-    cResult[4] = tmp14;
-    tmp10 = tmp14;
-  } else {
-    tmp10 = cResult[4];
-  }
-  const header = tmp4.header;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult2 = intl3.string(intl5.t.kkjNHU);
-    cResult[5] = stringResult2;
-    tmp15 = stringResult2;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] !== tmp4.header) {
-    const obj3 = { style: header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = React3(Text_Text.Text, obj3);
-    cResult[6] = tmp4.header;
-    cResult[7] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  const text = tmp4.text;
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl4 = tmp(1125).intl;
-    const stringResult3 = intl4.string(intl5.t.gnkqzQ);
-    cResult[8] = stringResult3;
-    tmp20 = stringResult3;
-  } else {
-    tmp20 = cResult[8];
-  }
-  if (cResult[9] !== tmp4.text) {
-    const obj4 = { style: text, variant: "text-sm/medium", color: "text-default", children: tmp20 };
-    const tmp24 = React3(Text_Text.Text, obj4);
-    cResult[9] = tmp4.text;
-    cResult[10] = tmp24;
-    tmp22 = tmp24;
-  } else {
-    tmp22 = cResult[10];
-  }
-  if (cResult[11] === onClose) {
-    if (cResult[12] === tmp22) {
-      if (cResult[13] === tmp10) {
-        let tmp25;
-        if (cResult[14] === tmp17) {
-          tmp25 = cResult[15];
-        }
-        return tmp25;
-      }
-    }
-  }
-  const obj5 = { confirmText: tmp5, cancelText: tmp6, onConfirm: tmp7, onCancel: onClose, children: items };
-  const tmp26 = AlertDefault;
-  const merged = Object.assign(onClose);
-  items = [tmp10, tmp17, tmp22];
-  const tmp28 = hasOwnProperty(tmp26, obj5);
-  cResult[11] = onClose;
-  cResult[12] = tmp22;
-  cResult[13] = tmp10;
-  cResult[14] = tmp17;
-  cResult[15] = tmp28;
-  tmp25 = tmp28;
-}) : (function MemberVerificationAlertUpdate(onClose) {
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
+
+export default function MemberVerificationAlertUpdate(onClose) {
   let intl;
   let intl2;
   let intl3;
@@ -156,7 +57,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
   intl4 = intl5.intl;
   items[2] = React3(Text2, obj4);
   return hasOwnProperty(tmp2, obj);
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/alerts/MemberVerificationAlertUpdate.tsx");
-
-export default tmp4;
+};

@@ -1,66 +1,34 @@
-// Module ID: 6076
-// Function ID: 6077
+// Module ID: 6083
+// Function ID: 6084
 // Name: CheckpointExperiments
-// Dependencies: [1453, 558, 576, 2]
-// Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled
+// Dependencies: [1448, 2]
+// Exports: getIsCheckpointCardEnabled, getIsCheckpointEnabled, useIsCheckpointCardEnabled, useIsCheckpointEnabled
 
-// Module 6076 (CheckpointExperiments)
-import react from "react" /* 576 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 6083 (CheckpointExperiments)
+import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let ApexExperiment = ApexExperiment_mod;
 let obj = { name: "2026-09-build-a-bear", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCheckpointEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsCheckpointEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 ApexExperiment = ApexExperiment_mod;
-let obj2 = { name: "2026-09-build-a-bear-cards", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let closure_3 = ApexExperiment.createApexExperiment(obj2);
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCheckpointCardEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_3.useConfig(tmp2).enabled;
-}) : (function useIsCheckpointCardEnabled(location) {
-  const obj = { location };
-  return closure_3.useConfig(obj).enabled;
-});
+const obj2 = { name: "2026-09-build-a-bear-cards", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
+let closure_1 = ApexExperiment.createApexExperiment(obj2);
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperiments.tsx");
 
-export const useIsCheckpointEnabled = tmp2;
+export function useIsCheckpointEnabled(CheckpointProfileEntrypoint) {
+  const obj = { location: CheckpointProfileEntrypoint };
+  return closure_0.useConfig(obj).enabled;
+}
 export function getIsCheckpointEnabled(getCheckpointClickable) {
   const obj = { location: getCheckpointClickable };
-  return closure_2.getConfig(obj).enabled;
+  return closure_0.getConfig(obj).enabled;
 }
-export const useIsCheckpointCardEnabled = tmp3;
+export function useIsCheckpointCardEnabled(Checkpoint2026ForwardPreview) {
+  const obj = { location: Checkpoint2026ForwardPreview };
+  return closure_1.useConfig(obj).enabled;
+}
 export function getIsCheckpointCardEnabled(transformCheckpoint2026CardComponent) {
   const obj = { location: transformCheckpoint2026CardComponent };
-  return closure_3.getConfig(obj).enabled;
+  return closure_1.getConfig(obj).enabled;
 }

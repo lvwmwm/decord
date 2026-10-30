@@ -1,41 +1,74 @@
 // Module ID: 1799
 // Function ID: 1800
-// Dependencies: [1800, 1804, 1805, 1809, 1810, 1811, 1812, 1806, 1813, 1814, 1803, 1815, 1801, 1818, 1819, 1808, 1820]
+// Dependencies: [19, 1695, 1676]
+// Exports: useAnimatedKeyboard
 
 // Module 1799
-import _mod1800 from "module_1800" /* 1800 */;
-import _mod1801 from "module_1801" /* 1801 */;
-import react from "react" /* 1803 */;
-import _mod1804 from "module_1804" /* 1804 */;
-import _mod1805 from "module_1805" /* 1805 */;
-import _mod1806 from "module_1806" /* 1806 */;
-import _mod1808 from "module_1808" /* 1808 */;
-import _mod1809 from "module_1809" /* 1809 */;
-import _mod1810 from "module_1810" /* 1810 */;
-import _mod1811 from "module_1811" /* 1811 */;
-import _mod1812 from "module_1812" /* 1812 */;
-import _mod1813 from "module_1813" /* 1813 */;
-import _mod1814 from "module_1814" /* 1814 */;
-import react2 from "react" /* 1815 */;
-import _mod1818 from "module_1818" /* 1818 */;
-import _mod1819 from "module_1819" /* 1819 */;
-import react3 from "react" /* 1820 */;
+import react from "react" /* 19 */;
 
+let dependencyMap;
 
-export const useAnimatedGestureHandler = _mod1800.useAnimatedGestureHandler;
-export const useAnimatedKeyboard = _mod1804.useAnimatedKeyboard;
-export const useAnimatedProps = _mod1805.useAnimatedProps;
-export const useAnimatedReaction = _mod1809.useAnimatedReaction;
-export const useAnimatedRef = _mod1810.useAnimatedRef;
-export const useAnimatedScrollHandler = _mod1811.useAnimatedScrollHandler;
-export const useAnimatedSensor = _mod1812.useAnimatedSensor;
-export const useAnimatedStyle = _mod1806.useAnimatedStyle;
-export const useComposedEventHandler = _mod1813.useComposedEventHandler;
-export const useDerivedValue = _mod1814.useDerivedValue;
-export const useEvent = react.useEvent;
-export const useFrameCallback = react2.useFrameCallback;
-export const useHandler = _mod1801.useHandler;
-export const useReducedMotion = _mod1818.useReducedMotion;
-export const useScrollViewOffset = _mod1819.useScrollViewOffset;
-export const useSharedValue = _mod1808.useSharedValue;
-export const useWorkletCallback = react3.useWorkletCallback;
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
+let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
+
+export function useAnimatedKeyboard() {
+  let obj3;
+  let obj4;
+  let ref;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = { isStatusBarTranslucentAndroid: "color", isNavigationBarTranslucentAndroid: "Error" };
+  }
+  let ref2;
+  let obj2;
+  const tmp = ref2(null);
+  dependencyMap = tmp;
+  const tmp2 = ref2(-1);
+  let closure_2 = tmp2;
+  const tmp3 = ref2(false);
+  ref2 = tmp3;
+  if (null === tmp.current) {
+    obj2 = { state: obj3.makeMutable(obj(1676).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
+    obj3 = obj(1695);
+    let fn = function c(value, value2) {
+      obj2.state.value = value;
+      obj2.height.value = value2;
+    };
+    const obj6 = { keyboardEventData: obj2 };
+    fn.__closure = obj6;
+    fn.__workletHash = 4393537867728;
+    fn.__initData = obj2;
+    obj4 = obj(1695);
+    const obj5 = obj(1695);
+    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
+    tmp.current = obj2;
+    tmp3.current = true;
+  }
+  closure_2(() => {
+    if (false === ref2.current) {
+      if (null !== ref.current) {
+        const current = ref.current;
+        obj = obj(ref[1]);
+        const fn = function u(value, value2) {
+          current.state.value = value;
+          current.height.value = value2;
+        };
+        obj2 = { _keyboardEventData: current };
+        fn.__closure = obj2;
+        fn.__workletHash = 5041909921996;
+        fn.__initData = __initData;
+        ref.current = obj.subscribeForKeyboardEvents(fn, current);
+        tmp.current = true;
+      }
+    }
+    return () => {
+      obj = obj(closure_1[1]);
+      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
+      ref2.current = false;
+    };
+  }, []);
+  return tmp.current;
+}

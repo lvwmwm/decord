@@ -1,43 +1,19 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13255
+// Function ID: 13256
 // Name: useUserIsConsideredAdult
-// Dependencies: [1389, 558, 576, 504, 2]
+// Dependencies: [1384, 504, 2]
+// Exports: default
 
-// Module 13104 (useUserIsConsideredAdult)
-import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13255 (useUserIsConsideredAdult)
+import get_initialized from "get initialized" /* 504 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
 
-let tmp;
-const get_initialized = tmp(504);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserIsConsideredAdult() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      currentUser = currentUser.getCurrentUser();
-      let nsfwAllowed;
-      if (currentUser != null) {
-        nsfwAllowed = currentUser.nsfwAllowed;
-      }
-      return nsfwAllowed;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useUserIsConsideredAdult() {
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserIsConsideredAdult.tsx");
+
+export default function useUserIsConsideredAdult() {
   const items = [UserStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {
@@ -48,7 +24,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserIsC
     }
     return nsfwAllowed;
   });
-});
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserIsConsideredAdult.tsx");
-
-export default tmp2;
+};

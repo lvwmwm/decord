@@ -1,12 +1,12 @@
-// Module ID: 4903
-// Function ID: 4904
+// Module ID: 4907
+// Function ID: 4908
 // Name: TryLoad
-// Dependencies: [5, 3, 584, 2]
+// Dependencies: [5, 3, 572, 2]
 // Exports: tryLoad, tryLoadAsync, tryLoadOrResetCacheGateway, tryLoadOrResetCacheGatewayAsync
 
-// Module 4903 (TryLoad)
+// Module 4907 (TryLoad)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _tryLoadAsync() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -99,7 +99,7 @@ obj = function _tryLoadOrResetCacheGatewayAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

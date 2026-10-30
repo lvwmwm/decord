@@ -1,16 +1,16 @@
-// Module ID: 12055
-// Function ID: 12056
+// Module ID: 11038
+// Function ID: 11039
 // Name: Timestamp
-// Dependencies: [19, 21, 5005, 587, 558, 576, 12056, 5701, 1199, 2]
+// Dependencies: [19, 21, 5009, 575, 11039, 1188, 5707, 2]
+// Exports: default
 
-// Module 12055 (Timestamp)
+// Module 11038 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 12056 */;
+import nativeDefault from "native" /* 575 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11039 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -18,53 +18,15 @@ const jsx = Fragment.jsx;
 let obj = { timestamp: obj2 };
 obj2 = { color: nativeDefault.colors.TEXT_DEFAULT, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(node) {
-  let tmp6;
-  let obj = node(576);
-  const cResult = obj.c(6);
-  const tmp = node;
-  node = node.node;
-  const style = node.style;
-  const tmp4 = closure_4();
-  const tmp5 = useFormattedTimestampDefault(node);
-  let timestamp = tmp4.timestamp;
-  if (timestamp == null) {
-    timestamp = style;
-  }
-  if (cResult[0] !== node.full) {
-    const fn = function o() {
-      const obj = ToastActionCreatorsDefault;
-      const obj2 = { text: node.full };
-      obj.open("TIMESTAMP", obj2);
-    };
-    cResult[0] = node.full;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp5) {
-    if (cResult[3] === timestamp) {
-      let tmp7;
-      if (cResult[4] === tmp6) {
-        tmp7 = cResult[5];
-      }
-      return tmp7;
-    }
-  }
-  const tmp8 = jsx(tmp(1199).LegacyText, { style: timestamp, onPress: tmp6, children: tmp5 });
-  cResult[2] = tmp5;
-  cResult[3] = timestamp;
-  cResult[4] = tmp6;
-  cResult[5] = tmp8;
-  tmp7 = tmp8;
-}) : (function Timestamp(node) {
+const result = size.fileFinishedImporting("modules/markup/Timestamp.native.tsx");
+
+export default function Timestamp(node) {
   node = node.node;
   const style = node.style;
   let timestamp = closure_4().timestamp;
   const tmp = closure_4();
   const tmp2 = useFormattedTimestampDefault(node);
-  const LegacyText = node(1199).LegacyText;
+  const LegacyText = node(1188).LegacyText;
   const tmp3 = jsx;
   if (timestamp == null) {
     timestamp = style;
@@ -79,7 +41,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Timestamp(no
     children: tmp2
   };
   return tmp3(LegacyText, obj);
-});
-const result = size.fileFinishedImporting("modules/markup/Timestamp.native.tsx");
-
-export default tmp3;
+};

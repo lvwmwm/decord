@@ -1,15 +1,15 @@
-// Module ID: 13427
-// Function ID: 13428
+// Module ID: 13577
+// Function ID: 13578
 // Name: CheckpointCharacterRiveTraits
-// Dependencies: [13261, 6334, 6363, 6392, 6102, 6162, 2]
+// Dependencies: [13411, 6341, 6370, 6399, 6109, 6169, 2]
 
-// Module 13427 (CheckpointCharacterRiveTraits)
-import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6102 */;
-import CheckpointCharacterOutfit from "CheckpointCharacterOutfit" /* 6162 */;
-import CheckpointCharacterHat from "CheckpointCharacterHat" /* 6334 */;
-import CheckpointCharacterWearable from "CheckpointCharacterWearable" /* 6363 */;
-import CheckpointCharacterAura from "CheckpointCharacterAura" /* 6392 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13261 */;
+// Module 13577 (CheckpointCharacterRiveTraits)
+import CheckpointCharacterBase from "CheckpointCharacterBase" /* 6109 */;
+import CheckpointCharacterOutfit from "CheckpointCharacterOutfit" /* 6169 */;
+import CheckpointCharacterHat from "CheckpointCharacterHat" /* 6341 */;
+import CheckpointCharacterWearable from "CheckpointCharacterWearable" /* 6370 */;
+import CheckpointCharacterAura from "CheckpointCharacterAura" /* 6399 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13411 */;
 import size from "module_2" /* 2 */;
 
 let obj101;

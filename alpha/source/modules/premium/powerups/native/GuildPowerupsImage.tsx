@@ -1,80 +1,24 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 14047
+// Function ID: 14048
 // Name: GuildPowerupsImage
-// Dependencies: [5006, 21, 5005, 558, 576, 504, 1382, 9464, 5707, 2]
+// Dependencies: [5010, 21, 5009, 504, 1377, 9483, 5712, 2]
+// Exports: default
 
-// Module 13913 (GuildPowerupsImage)
+// Module 14047 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9464 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import APNGDecorationNativeComponentDefault from "APNGDecorationNativeComponent" /* 9483 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles({ image: { width: "75%", height: "100%", alignSelf: "center", resizeMode: "contain" } });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPowerupsImage(arg0) {
-  let imageUrl;
-  let isAnimated;
-  let style;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let useReducedMotion;
-  const obj = react;
-  const cResult = obj.c(8);
-  ({ imageUrl, isAnimated, style } = arg0);
-  const tmp5 = closure_5();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [AccessibilityStore];
-    const fn = function n() {
-      return useReducedMotion.useReducedMotion;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (cResult[2] === imageUrl) {
-    if (cResult[3] === (undefined === isAnimated || isAnimated)) {
-      if (cResult[4] === style) {
-        if (cResult[5] === tmp5.image) {
-          if (cResult[6] === stateFromStores) {
-            tmp10 = cResult[7];
-          }
-          return tmp10;
-        }
-      }
-    }
-  }
-  const tmpResult2 = utils_PlatformUtils;
-  if (tmpResult2.isAndroid()) {
-    if (undefined === isAnimated || isAnimated) {
-      let tmp13;
-      if (!stateFromStores) {
-        const items1 = [tmp5.image, style];
-        tmp13 = jsx(APNGDecorationNativeComponentDefault, { style: items1, url: imageUrl });
-      }
-      cResult[2] = imageUrl;
-      cResult[3] = undefined === isAnimated || isAnimated;
-      cResult[4] = style;
-      cResult[5] = tmp5.image;
-      cResult[6] = stateFromStores;
-      cResult[7] = tmp13;
-      tmp10 = tmp13;
-    }
-  }
-  const items2 = [tmp5.image, style];
-  tmp13 = jsx(FastImageDefault, { style: items2, source: { uri: imageUrl } });
-}) : (function GuildPowerupsImage(style) {
+const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
+
+export default function GuildPowerupsImage(style) {
   let imageUrl;
   let isAnimated;
   let useReducedMotion;
@@ -100,7 +44,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildPower
   }
   const items2 = [tmp.image, style];
   tmp6 = jsx(FastImageDefault, { style: items2, source: { uri: imageUrl } });
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/native/GuildPowerupsImage.tsx");
-
-export default tmp2;
+};

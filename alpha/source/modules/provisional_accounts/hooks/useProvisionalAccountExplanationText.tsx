@@ -1,70 +1,23 @@
-// Module ID: 14020
-// Function ID: 14021
+// Module ID: 14152
+// Function ID: 14153
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1084, 558, 576, 14021, 1125, 2065, 2]
+// Dependencies: [19, 1072, 14153, 1114, 2062, 2]
+// Exports: useProvisionalAccountExplanationText
 
-// Module 14020 (useProvisionalAccountExplanationText)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 14021 */;
+// Module 14152 (useProvisionalAccountExplanationText)
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 14153 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisionalAccountExplanationText(renderApplicationName) {
-  let tmp4Result;
-  let tmp4Result2;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(4);
-  renderApplicationName = renderApplicationName.renderApplicationName;
-  const tmp5 = useProvisionalAccountApplicationDefault(renderApplicationName.userId);
-  let closure_1 = tmp5;
-  if (null != tmp5) {
-    if (cResult[0] === tmp5) {
-      let tmp10;
-      if (cResult[1] === renderApplicationName) {
-        tmp10 = cResult[2];
-      }
-      tmp6 = tmp10;
-    }
-    const intl2 = tmp(1125).intl;
-    const format2 = intl2.format;
-    const obj2 = {
-      helpdeskArticle: tmp4Result.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS),
-      applicationName() {
-          return renderApplicationName(closure_1);
-        }
-    };
-    const rSUACb = tmp(1125).t.rSUACb;
-    tmp4Result = HelpdeskUtilsDefault;
-    const format2Result = format2(rSUACb, obj2);
-    cResult[0] = tmp5;
-    cResult[1] = renderApplicationName;
-    cResult[2] = format2Result;
-    tmp10 = format2Result;
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const format = intl.format;
-      const obj3 = { helpdeskArticle: tmp4Result2.getArticleURL(HelpdeskArticles.SLAYER_PROVISIONAL_ACCOUNTS) };
-      const prop = tmp(1125).t["q+N8L6"];
-      tmp4Result2 = HelpdeskUtilsDefault;
-      const formatResult = format(prop, obj3);
-      cResult[3] = formatResult;
-      tmp6 = formatResult;
-    } else {
-      tmp6 = cResult[3];
-    }
-  }
-  return tmp6;
-}) : (function useProvisionalAccountExplanationText(renderApplicationName) {
+const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");
+
+export function useProvisionalAccountExplanationText(renderApplicationName) {
   let closure_1;
   renderApplicationName = renderApplicationName.renderApplicationName;
   const tmp = useProvisionalAccountApplicationDefault(renderApplicationName.userId);
@@ -96,7 +49,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProvisi
     }
     return formatResult;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountExplanationText.tsx");
-
-export const useProvisionalAccountExplanationText = tmp2;
+}

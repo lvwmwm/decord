@@ -1,15 +1,15 @@
-// Module ID: 5218
-// Function ID: 5219
+// Module ID: 5224
+// Function ID: 5225
 // Name: GuildPowerupsStore
-// Dependencies: [32, 4879, 5219, 1084, 504, 584, 2]
+// Dependencies: [32, 4880, 5225, 1072, 504, 572, 2]
 
-// Module 5218 (GuildPowerupsStore)
+// Module 5224 (GuildPowerupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5219 */;
-import Constants from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5225 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let sku_id;

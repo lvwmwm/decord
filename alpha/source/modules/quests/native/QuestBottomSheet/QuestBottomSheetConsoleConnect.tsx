@@ -1,100 +1,40 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17067
+// Function ID: 17068
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [109, 19, 17, 1084, 21, 587, 5005, 9636, 9672, 9674, 5247, 7549, 16973, 2000, 9639, 9642, 6775, 7859, 6771, 9675, 558, 576, 6963, 1125, 6974, 7047, 9548, 9328, 6965, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 5009, 9661, 9697, 9699, 5253, 7557, 17027, 1995, 9664, 9667, 6782, 7864, 6778, 9700, 7054, 6969, 9567, 1114, 9342, 2]
 // Exports: default
 
-// Module 17013 (QuestBottomSheetConsoleConnect)
+// Module 17067 (QuestBottomSheetConsoleConnect)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import TableRow3 from "TableRow" /* 6963 */;
-import TableRowGroup2 from "TableRowGroup" /* 7047 */;
-import openUserSettings from "openUserSettings" /* 7549 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 9328 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9548 */;
-import captureAdUserAction3 from "captureAdUserAction" /* 9639 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9674 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9675 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import TableRow3 from "TableRow" /* 6969 */;
+import TableRowGroup2 from "TableRowGroup" /* 7054 */;
+import openUserSettings from "openUserSettings" /* 7557 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9342 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9567 */;
+import captureAdUserAction3 from "captureAdUserAction" /* 9664 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9667 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9699 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9700 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let importDefault;
-
 let Fragment;
+let closure_4;
+let hasOwnProperty;
 let jsxs;
-let metroImportAll;
-let metroImportDefault;
 let metroRequire;
 let obj2;
-let closure_3 = ["onPress"];
-const View = react_native.View;
-({ PlatformTypes: metroRequire, UserSettingsSections: metroImportDefault } = Constants);
-Fragment = Fragment_mod;
-({ jsx: metroImportAll, jsxs, Fragment } = Fragment);
-const PLATFORM_XBOX = nativeDefault.unsafe_rawColors.PLATFORM_XBOX;
-const PLATFORM_PLAYSTATION = nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION;
-let obj = { platformButtonsContainer: obj2, platformButton: { flex: 1, display: "flex", justifyContent: "center", alignItems: "center" } };
-obj2 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_16, justifyContent: "space-between" };
-const styles = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NonInlineConsoleConnection(arg0) {
-  let consoles;
-  let onConsoleSelect;
-  let tmp5;
-  let obj = onConsoleSelect(576);
-  const cResult = obj.c(7);
-  const tmp = onConsoleSelect;
-  ({ consoles, onConsoleSelect } = arg0);
-  if (cResult[0] === consoles) {
-    let tmp4;
-    let tmp7;
-    if (cResult[1] === onConsoleSelect) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[5] !== tmp4) {
-      const obj2 = { hasIcons: true, children: tmp4 };
-      const tmp9 = closure_8(tmp(7047).TableRowGroup, obj2);
-      cResult[5] = tmp4;
-      cResult[6] = tmp9;
-      tmp7 = tmp9;
-    } else {
-      tmp7 = cResult[6];
-    }
-    return tmp7;
-  }
-  if (cResult[3] !== onConsoleSelect) {
-    const fn = function o(type) {
-      const obj = { onPress: onConsoleSelect };
-      const merged = Object.assign(type);
-      return metroImportAll(closure_10, obj, type.type);
-    };
-    cResult[3] = onConsoleSelect;
-    cResult[4] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[4];
-  }
-  const mapped = consoles.map(tmp5);
-  cResult[0] = consoles;
-  cResult[1] = onConsoleSelect;
-  cResult[2] = mapped;
-  tmp4 = mapped;
-}) : (function NonInlineConsoleConnection(arg0) {
+function NonInlineConsoleConnection(arg0) {
   let consoles;
   let onPress;
   ({ consoles, onConsoleSelect: require } = arg0);
@@ -103,169 +43,13 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function NonInli
     children: consoles.map((type) => {
       const obj = { onPress: require };
       const merged = Object.assign(type);
-      return metroImportAll(closure_10, obj, type.type);
+      return metroRequire(ConsoleRow, obj, type.type);
     })
   };
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  return closure_8(TableRowGroup, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConsoleRow(onPress) {
-  const obj = react2;
-  const cResult = obj.c(23);
-  if (cResult[0] !== onPress) {
-    onPress = onPress.onPress;
-    importDefault = onPress;
-    const tmp8 = _objectWithoutProperties(onPress, closure_3);
-    let closure_0 = tmp8;
-    cResult[0] = onPress;
-    cResult[1] = tmp8;
-    cResult[2] = onPress;
-  } else {
-    closure_0 = cResult[1];
-    importDefault = cResult[2];
-  }
-  const type = tmp4.type;
-  if (metroRequire.PLAYSTATION === type) {
-    let tmp26;
-    let tmp25;
-    const _Symbol2 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp28 = metroImportAll(PlaystationNeutralIcon.PlaystationNeutralIcon, {});
-      const intl3 = tmp(1125).intl;
-      const stringResult = intl3.string(intl5.t.JafL6p);
-      cResult[3] = tmp28;
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-      cResult[4] = stringResult;
-      tmp26 = stringResult;
-      tmp25 = tmp28;
-    } else {
-      tmp25 = cResult[3];
-      tmp26 = cResult[4];
-    }
-    if (cResult[5] !== tmp4.account) {
-      let stringResult1;
-      if (null != tmp4.account) {
-        const intl4 = tmp(1125).intl;
-        stringResult1 = intl4.string(tmp(1125).t["u30/ut"]);
-      }
-      cResult[5] = tmp4.account;
-      cResult[6] = stringResult1;
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-    }
-    if (cResult[7] === tmp4) {
-      let tmp33;
-      if (cResult[8] === tmp5) {
-        tmp33 = cResult[9];
-      }
-      if (cResult[10] === tmp30) {
-        let tmp34;
-        if (cResult[11] === tmp33) {
-          tmp34 = cResult[12];
-        }
-        return tmp34;
-      }
-      const obj2 = { arrow: true, icon: tmp25, label: tmp26, subLabel: tmp30, onPress: null };
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-      const tmp36 = metroImportAll(TableRow3.TableRow, obj2);
-      cResult[10] = tmp30;
-      cResult[11] = tmp33;
-      cResult[12] = tmp36;
-      tmp34 = tmp36;
-    }
-    class T {
-      constructor() {
-        return closure_1(closure_0);
-      }
-    }
-    cResult[7] = tmp4;
-    cResult[8] = tmp5;
-    cResult[9] = T;
-    tmp33 = T;
-  } else if (tmp9.XBOX === type) {
-    let tmp13;
-    let tmp12;
-    const _Symbol = Symbol;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = metroImportAll(XboxNeutralIcon.XboxNeutralIcon, {});
-      const intl = tmp(1125).intl;
-      const stringResult2 = intl.string(intl5.t.Nfvo72);
-      cResult[13] = tmp15;
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-      cResult[14] = stringResult2;
-      tmp13 = stringResult2;
-      tmp12 = tmp15;
-    } else {
-      tmp12 = cResult[13];
-      tmp13 = cResult[14];
-    }
-    if (cResult[15] !== tmp4.account) {
-      let stringResult3;
-      if (null != tmp4.account) {
-        const intl2 = tmp(1125).intl;
-        stringResult3 = intl2.string(tmp(1125).t["u30/ut"]);
-      }
-      cResult[15] = tmp4.account;
-      cResult[16] = stringResult3;
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-    }
-    if (cResult[17] === tmp4) {
-      let tmp20;
-      if (cResult[18] === tmp5) {
-        tmp20 = cResult[19];
-      }
-      if (cResult[20] === tmp17) {
-        let tmp21;
-        if (cResult[21] === tmp20) {
-          tmp21 = cResult[22];
-        }
-        return tmp21;
-      }
-      const obj3 = { arrow: true, icon: tmp12, label: tmp13, subLabel: tmp17, onPress: null };
-      class T {
-        constructor() {
-          return closure_1(closure_0);
-        }
-      }
-      const tmp23 = metroImportAll(TableRow3.TableRow, obj3);
-      cResult[20] = tmp17;
-      cResult[21] = tmp20;
-      cResult[22] = tmp23;
-      tmp21 = tmp23;
-    }
-    class T {
-      constructor() {
-        return closure_1(closure_0);
-      }
-    }
-    cResult[17] = tmp4;
-    cResult[18] = tmp5;
-    cResult[19] = A;
-    tmp20 = A;
-  } else {
-    return null;
-  }
-}) : (function ConsoleRow(onPress) {
+  return closure_6(TableRowGroup, obj);
+}
+function ConsoleRow(onPress) {
   let intl;
   let intl3;
   let stringResult;
@@ -273,10 +57,10 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consol
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
   const type = merged.type;
-  if (metroRequire.PLAYSTATION === type) {
+  if (constants.PLAYSTATION === type) {
     const obj2 = {
       arrow: true,
-      icon: metroImportAll(PlaystationNeutralIcon.PlaystationNeutralIcon, {}),
+      icon: metroRequire(PlaystationNeutralIcon.PlaystationNeutralIcon, {}),
       label: intl3.string(intl5.t.JafL6p),
       subLabel: stringResult,
       onPress() {
@@ -286,16 +70,16 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consol
     const TableRow2 = TableRow3.TableRow;
     intl3 = intl5.intl;
     stringResult = undefined;
-    const tmp7 = metroImportAll;
+    const tmp7 = metroRequire;
     if (null != merged.account) {
-      const intl4 = tmp8(1125).intl;
-      stringResult = intl4.string(tmp8(1125).t["u30/ut"]);
+      const intl4 = tmp8(1114).intl;
+      stringResult = intl4.string(tmp8(1114).t["u30/ut"]);
     }
     return tmp7(TableRow2, obj2);
   } else if (tmp2.XBOX === type) {
     const obj = {
       arrow: true,
-      icon: metroImportAll(XboxNeutralIcon.XboxNeutralIcon, {}),
+      icon: metroRequire(XboxNeutralIcon.XboxNeutralIcon, {}),
       label: intl.string(intl5.t.Nfvo72),
       subLabel: stringResult1,
       onPress() {
@@ -305,19 +89,26 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Consol
     const TableRow = TableRow3.TableRow;
     intl = intl5.intl;
     stringResult1 = undefined;
-    const tmp3 = metroImportAll;
+    const tmp3 = metroRequire;
     if (null != merged.account) {
-      const intl2 = tmp4(1125).intl;
-      stringResult1 = intl2.string(tmp4(1125).t["u30/ut"]);
+      const intl2 = tmp4(1114).intl;
+      stringResult1 = intl2.string(tmp4(1114).t["u30/ut"]);
     }
     return tmp3(TableRow, obj);
   } else {
     return null;
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result2 = size.fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetConsoleConnect.tsx");
+}
+const View = react_native.View;
+({ PlatformTypes: closure_4, UserSettingsSections: hasOwnProperty } = Constants);
+Fragment = Fragment_mod;
+({ jsx: metroRequire, jsxs, Fragment } = Fragment);
+const PLATFORM_XBOX = nativeDefault.unsafe_rawColors.PLATFORM_XBOX;
+const PLATFORM_PLAYSTATION = nativeDefault.unsafe_rawColors.PLATFORM_PLAYSTATION;
+let obj = { platformButtonsContainer: obj2, platformButton: { flex: 1, display: "flex", justifyContent: "center", alignItems: "center" } };
+obj2 = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_16, justifyContent: "space-between" };
+const styles = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetConsoleConnect.tsx");
 
 export default function QuestBottomSheetConsoleConnect(quest) {
   let initialStep;
@@ -327,15 +118,15 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   function openQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, initialStep: importDefault, sourceQuestContent: dependencyMap };
-    obj.openLazy(asyncRequire(16973, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(17027, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
-  let obj = quest(9636);
+  let obj = quest(9661);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;
-  let obj2 = quest(9672);
+  let obj2 = quest(9697);
   let closure_4 = obj2.useGetQuestImpressionId();
   const items = [quest, xboxAndPlaystationAccounts];
   let obj3 = {
-    consoles: openQuestBottomSheet.useMemo(() => {
+    consoles: xboxAndPlaystationAccounts.useMemo(() => {
       let obj = QuestPlatformUtils;
       const supportedConsolesResult = obj.supportedConsoles(quest);
       return supportedConsolesResult.map((type) => {
@@ -352,7 +143,7 @@ export default function QuestBottomSheetConsoleConnect(quest) {
         captureAdUserAction(obj);
         const obj2 = ActionSheetActionCreatorsDefault;
         obj2.hideActionSheet();
-        const obj4 = { screen: metroImportDefault.CONNECTIONS };
+        const obj4 = { screen: hasOwnProperty.CONNECTIONS };
         const obj3 = openUserSettings;
         obj3.openUserSettings(obj4);
       } else {
@@ -365,5 +156,5 @@ export default function QuestBottomSheetConsoleConnect(quest) {
       }
     }
   };
-  return closure_8(closure_9, obj3);
+  return closure_6(NonInlineConsoleConnection, obj3);
 };

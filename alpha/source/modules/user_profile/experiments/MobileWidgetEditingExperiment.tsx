@@ -1,36 +1,21 @@
-// Module ID: 16353
-// Function ID: 16354
+// Module ID: 16406
+// Function ID: 16407
 // Name: MobileWidgetEditingExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useIsMobileWidgetEditingEnabled
 
-// Module 16353 (MobileWidgetEditingExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16406 (MobileWidgetEditingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj = { name: "2026-10-mobile-widget-editing", kind: "user", defaultConfig: { enabled: false }, variations: obj2 };
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileWidgetEditingEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsMobileWidgetEditingEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/MobileWidgetEditingExperiment.tsx");
 
-export const useIsMobileWidgetEditingEnabled = tmp2;
+export function useIsMobileWidgetEditingEnabled(ProfileCustomizationSettingScreen) {
+  const obj = { location: ProfileCustomizationSettingScreen };
+  return closure_0.useConfig(obj).enabled;
+}

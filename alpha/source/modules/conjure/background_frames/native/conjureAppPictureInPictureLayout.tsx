@@ -1,15 +1,14 @@
-// Module ID: 18970
-// Function ID: 18971
+// Module ID: 19064
+// Function ID: 19065
 // Name: conjureAppPictureInPictureLayout
-// Dependencies: [2024, 10975, 2]
+// Dependencies: [11205, 2021, 2]
 // Exports: getCloseTargetCenter, getPictureInPictureBounds, getPictureInPictureSize, getSnappedPosition, getStackedPosition, isOverCloseTarget
 
-// Module 18970 (conjureAppPictureInPictureLayout)
-import Constants from "Constants" /* 2024 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 10975 */;
+// Module 19064 (conjureAppPictureInPictureLayout)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11205 */;
 import size_mod from "module_2" /* 2 */;
 
-const OrientationLockState = Constants.OrientationLockState;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;
 function clamp(arg0, arg1, arg2) {
   return Math.min(Math.max(arg0, arg1), arg2);
@@ -24,16 +23,17 @@ function getPictureInPictureSize(windowWidth, stateFromStores) {
   size = { width: rounded, height: round(result) };
   const _Math = Math;
   round = Math.round;
-  if (stateFromStores === OrientationLockState.LANDSCAPE) {
+  if (stateFromStores === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE) {
     result = 9 * rounded / 16;
   } else {
     result = 16 * rounded / 9;
   }
   return size;
 }
-getPictureInPictureSize.__closure = { PICTURE_IN_PICTURE_WIDTH_RATIO: 0.3, OrientationLockState };
-getPictureInPictureSize.__workletHash = 17003003333267;
-getPictureInPictureSize.__initData = { code: "function getPictureInPictureSize_conjureAppPictureInPictureLayoutTsx2(windowWidth,orientationLock){const{PICTURE_IN_PICTURE_WIDTH_RATIO,OrientationLockState}=this.__closure;const width=Math.round(windowWidth*PICTURE_IN_PICTURE_WIDTH_RATIO);const height=Math.round(orientationLock===OrientationLockState.LANDSCAPE?width*9/16:width*16/9);return{width:width,height:height};}" };
+let obj = { PICTURE_IN_PICTURE_WIDTH_RATIO: 0.3, EmbeddedActivityOrientationLockState: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState };
+getPictureInPictureSize.__closure = obj;
+getPictureInPictureSize.__workletHash = 3721909897491;
+getPictureInPictureSize.__initData = { code: "function getPictureInPictureSize_conjureAppPictureInPictureLayoutTsx2(windowWidth,orientationLock){const{PICTURE_IN_PICTURE_WIDTH_RATIO,EmbeddedActivityOrientationLockState}=this.__closure;const width=Math.round(windowWidth*PICTURE_IN_PICTURE_WIDTH_RATIO);const height=Math.round(orientationLock===EmbeddedActivityOrientationLockState.LANDSCAPE?width*9/16:width*16/9);return{width:width,height:height};}" };
 function getPictureInPictureBounds(arg0) {
   let bottomAvoidance;
   let safeArea;
@@ -116,9 +116,9 @@ function getCloseTargetCenter(width, height, bottom) {
 getCloseTargetCenter.__closure = { PIP_WINDOW_OFFSET, CLOSE_TARGET_BOTTOM_INSET: 24, CLOSE_TARGET_SIZE: 56 };
 getCloseTargetCenter.__workletHash = 5981604100180;
 getCloseTargetCenter.__initData = { code: "function getCloseTargetCenter_conjureAppPictureInPictureLayoutTsx7(windowWidth,windowHeight,safeArea){const{PIP_WINDOW_OFFSET,CLOSE_TARGET_BOTTOM_INSET,CLOSE_TARGET_SIZE}=this.__closure;return{x:windowWidth/2,y:windowHeight-Math.max(safeArea.bottom,PIP_WINDOW_OFFSET)-CLOSE_TARGET_BOTTOM_INSET-CLOSE_TARGET_SIZE/2};}" };
-function isOverCloseTarget(point2, closeTargetCenter) {
-  const diff = point2.x - closeTargetCenter.x;
-  const diff1 = point2.y - closeTargetCenter.y;
+function isOverCloseTarget(point2, arg1) {
+  const diff = point2.x - arg1.x;
+  const diff1 = point2.y - arg1.y;
   return diff * diff + diff1 * diff1 <= 4096;
 }
 isOverCloseTarget.__closure = { CLOSE_TARGET_HIT_RADIUS: 64 };

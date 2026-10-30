@@ -1,56 +1,25 @@
-// Module ID: 18539
-// Function ID: 18540
+// Module ID: 18598
+// Function ID: 18599
 // Name: useSubscribeToGuildMemberUpdates
-// Dependencies: [19, 558, 576, 7437, 2]
+// Dependencies: [19, 7445, 2]
+// Exports: useSubscribeToGuildMemberUpdates
 
-// Module 18539 (useSubscribeToGuildMemberUpdates)
-import GuildSubscriptionsActionCreatorsAll from "GuildSubscriptionsActionCreators" /* 7437 */;
+// Module 18598 (useSubscribeToGuildMemberUpdates)
+import GuildSubscriptionsActionCreatorsAll from "GuildSubscriptionsActionCreators" /* 7445 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/useSubscribeToGuildMemberUpdates.tsx");
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribeToGuildMemberUpdates(arg0) {
-  let closure_0;
-  let tmp2;
-  let tmp3;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function b() {
-      let obj = GuildSubscriptionsActionCreatorsAll;
-      let result = obj.subscribeToMemberUpdates(closure_0);
-      return () => {
-        const obj = GuildSubscriptionsActionCreatorsAll;
-        const result = obj.unsubscribeFromMemberUpdates(closure_1_0);
-      };
-    };
-    const items = [arg0];
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-}) : (function useSubscribeToGuildMemberUpdates(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
+export function useSubscribeToGuildMemberUpdates(guildId) {
+  let closure_0 = guildId;
+  const items = [guildId];
   const effect = react.useEffect(() => {
     let obj = GuildSubscriptionsActionCreatorsAll;
-    let result = obj.subscribeToMemberUpdates(closure_0);
+    let result = obj.subscribeToMemberUpdates(guildId);
     return () => {
-      const obj = GuildSubscriptionsActionCreatorsAll;
+      const obj = closure_0(dependencyMap[1]);
       const result = obj.unsubscribeFromMemberUpdates(closure_1_0);
     };
   }, items);
-});
-let result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/useSubscribeToGuildMemberUpdates.tsx");
-
-export const useSubscribeToGuildMemberUpdates = tmp2;
+}

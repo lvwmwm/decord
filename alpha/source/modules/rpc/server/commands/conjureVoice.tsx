@@ -1,13 +1,13 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16307
+// Function ID: 16308
 // Name: conjureVoice
-// Dependencies: [6437, 1084, 16215, 16206, 2]
+// Dependencies: [6444, 1072, 16255, 16246, 2]
 
-// Module 16267 (conjureVoice)
-import Constants2 from "Constants" /* 1084 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16206 */;
-import Constants from "Constants" /* 6437 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16215 */;
+// Module 16307 (conjureVoice)
+import Constants2 from "Constants" /* 1072 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16246 */;
+import Constants from "Constants" /* 6444 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16255 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

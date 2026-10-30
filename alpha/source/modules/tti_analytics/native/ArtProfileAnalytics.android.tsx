@@ -1,13 +1,13 @@
-// Module ID: 7806
-// Function ID: 7807
+// Module ID: 7811
+// Function ID: 7812
 // Name: ArtProfileAnalytics
-// Dependencies: [32, 5, 1084, 7803, 4852, 1264, 2]
+// Dependencies: [32, 5, 1072, 7808, 4853, 1253, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7806 (ArtProfileAnalytics)
-import Constants from "Constants" /* 1084 */;
-import Timers from "Timers" /* 4852 */;
-import react_nativeDefault from "react-native" /* 7803 */;
+// Module 7811 (ArtProfileAnalytics)
+import Constants from "Constants" /* 1072 */;
+import Timers from "Timers" /* 4853 */;
+import react_nativeDefault from "react-native" /* 7808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ let obj = function _trackAndroidArtProfileSnapshotAsync() {
             const obj6 = closure_131_1(closure_131_2[5]);
             obj6.track(closure_131_5.ANDROID_ART_PROFILE_SNAPSHOT, obj5, { logEventProperties: true });
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c5 = 3;

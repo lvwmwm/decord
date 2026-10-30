@@ -1,142 +1,23 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 15691
+// Function ID: 15692
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 558, 576, 15652, 7308, 1125, 7354, 5247, 7275, 15653, 7358, 2]
+// Dependencies: [19, 21, 15692, 7360, 7315, 7362, 1114, 5253, 7282, 15693, 2]
+// Exports: default
 
-// Module 15651 (NsfwGateGuildSettingsActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7275 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 15653 */;
+// Module 15691 (NsfwGateGuildSettingsActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7282 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 15693 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuildSettingsActionSheet(guild) {
-  let items;
-  let tmp11;
-  let tmp14;
-  let tmp17;
-  let tmp19;
-  let tmp4;
-  let tmp6;
-  let tmp9;
-  let obj = guild(576);
-  const cResult = obj.c(20);
-  guild = guild.guild;
-  if (cResult[0] !== guild) {
-    let obj2 = { guild };
-    cResult[0] = guild;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = guild(15652);
-  const messageRequestPrivacyOption = tmpResult.useMessageRequestPrivacyOption(tmp4);
-  if (cResult[2] !== guild.name) {
-    const obj3 = { title: guild.name };
-    const tmp8 = closure_3(guild(7308).BottomSheetTitleHeader, obj3);
-    cResult[2] = guild.name;
-    cResult[3] = tmp8;
-    tmp6 = tmp8;
-  } else {
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(guild(1125).t.h850Ss);
-    cResult[4] = stringResult;
-    tmp9 = stringResult;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== guild.id) {
-    const obj4 = {
-      label: tmp9,
-      onPress() {
-          const obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet();
-          const obj2 = NotificationSettingsModalActionCreatorsDefault;
-          obj2.open(guild.id);
-        }
-    };
-    const tmp13 = closure_3(guild(7354).ActionSheetRow, obj4);
-    cResult[5] = guild.id;
-    cResult[6] = tmp13;
-    tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[7] !== guild) {
-    const obj5 = { guild };
-    const tmp16 = closure_3(guild(15653).RestrictedGuildPrivacyOption, obj5);
-    cResult[7] = guild;
-    cResult[8] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[8];
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(guild(1125).t.J2TBi3);
-    cResult[9] = stringResult1;
-    tmp17 = stringResult1;
-  } else {
-    tmp17 = cResult[9];
-  }
-  if (cResult[10] !== guild) {
-    const obj6 = {
-      variant: "danger",
-      label: tmp17,
-      onPress() {
-          const obj = GuildActionSheetActions;
-          return obj.handleLeaveServer(guild);
-        }
-    };
-    const tmp21 = closure_3(guild(7354).ActionSheetRow, obj6);
-    cResult[10] = guild;
-    cResult[11] = tmp21;
-    tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[11];
-  }
-  if (cResult[12] === messageRequestPrivacyOption) {
-    if (cResult[13] === tmp11) {
-      if (cResult[14] === tmp14) {
-        let tmp22;
-        if (cResult[15] === tmp19) {
-          tmp22 = cResult[16];
-        }
-        if (cResult[17] === tmp6) {
-          let tmp24;
-          if (cResult[18] === tmp22) {
-            tmp24 = cResult[19];
-          }
-          return tmp24;
-        }
-        const obj7 = { header: tmp6, children: tmp22 };
-        const tmp26 = closure_3(guild(7358).ActionSheet, obj7);
-        cResult[17] = tmp6;
-        cResult[18] = tmp22;
-        cResult[19] = tmp26;
-        tmp24 = tmp26;
-      }
-    }
-  }
-  const obj8 = { hasIcons: false, children: items };
-  items = [tmp11, tmp14, messageRequestPrivacyOption, tmp19];
-  const tmp23 = closure_4(guild(7354).ActionSheetRow.Group, obj8);
-  cResult[12] = messageRequestPrivacyOption;
-  cResult[13] = tmp11;
-  cResult[14] = tmp14;
-  cResult[15] = tmp19;
-  cResult[16] = tmp23;
-  tmp22 = tmp23;
-}) : (function NsfwGateGuildSettingsActionSheet(guild) {
+const result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuildSettingsActionSheet.tsx");
+
+export default function NsfwGateGuildSettingsActionSheet(guild) {
   let Group;
   let intl;
   let intl2;
@@ -144,15 +25,15 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
   let obj3;
   let obj4;
   guild = guild.guild;
-  let obj = guild(15652);
+  let obj = guild(15692);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
-  let obj2 = { header: closure_3(guild(7308).BottomSheetTitleHeader, obj3), children: closure_4(Group, obj4) };
-  const ActionSheet = guild(7358).ActionSheet;
+  let obj2 = { header: closure_3(guild(7315).BottomSheetTitleHeader, obj3), children: closure_4(Group, obj4) };
+  const ActionSheet = guild(7360).ActionSheet;
   obj3 = { title: guild.name };
   obj4 = { hasIcons: false, children: items };
-  Group = guild(7354).ActionSheetRow.Group;
+  Group = guild(7362).ActionSheetRow.Group;
   const obj5 = {
-    label: intl.string(guild(1125).t.h850Ss),
+    label: intl.string(guild(1114).t.h850Ss),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
@@ -160,22 +41,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NsfwGateGuil
       obj2.open(guild.id);
     }
   };
-  const ActionSheetRow = guild(7354).ActionSheetRow;
-  intl = guild(1125).intl;
-  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(15653).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
+  const ActionSheetRow = guild(7362).ActionSheetRow;
+  intl = guild(1114).intl;
+  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(15693).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
   const obj6 = {
     variant: "danger",
-    label: intl2.string(guild(1125).t.J2TBi3),
+    label: intl2.string(guild(1114).t.J2TBi3),
     onPress() {
       const obj = GuildActionSheetActions;
       return obj.handleLeaveServer(guild);
     }
   };
-  const ActionSheetRow2 = guild(7354).ActionSheetRow;
-  intl2 = guild(1125).intl;
+  const ActionSheetRow2 = guild(7362).ActionSheetRow;
+  intl2 = guild(1114).intl;
   items[3] = closure_3(ActionSheetRow2, obj6);
   return closure_3(ActionSheet, obj2);
-});
-const result = size.fileFinishedImporting("modules/age_gate/native/components/NsfwGateGuildSettingsActionSheet.tsx");
-
-export default tmp4;
+};

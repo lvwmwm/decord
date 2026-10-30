@@ -1,15 +1,15 @@
-// Module ID: 1632
-// Function ID: 1633
+// Module ID: 1627
+// Function ID: 1628
 // Name: SafeAreaStore
-// Dependencies: [1633, 570, 2]
+// Dependencies: [1628, 560, 2]
 
-// Module 1632 (SafeAreaStore)
-import SafeAreaConstants from "SafeAreaConstants" /* 1633 */;
-import module_570 from "module_570" /* 570 */;
+// Module 1627 (SafeAreaStore)
+import SafeAreaConstants from "SafeAreaConstants" /* 1628 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 ({ safeAreaInsets: SafeAreaConstants.INITIAL_SAFE_AREA_INSETS });
-const obj2 = module_570.create(() => {
+const obj2 = module_560.create(() => {
   const share = { byAppEntry: obj2 };
   return share;
 });

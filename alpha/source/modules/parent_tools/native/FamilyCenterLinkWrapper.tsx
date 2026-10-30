@@ -1,73 +1,32 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 16770
+// Function ID: 16771
 // Name: FamilyCenterLinkWrapper
-// Dependencies: [19, 21, 5005, 587, 558, 576, 7313, 8708, 6968, 2]
+// Dependencies: [19, 21, 5009, 575, 7320, 6974, 8742, 2]
+// Exports: default
 
-// Module 16718 (FamilyCenterLinkWrapper)
+// Module 16770 (FamilyCenterLinkWrapper)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
+import nativeDefault from "native" /* 575 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 const jsx = Fragment.jsx;
-let obj = { container: obj2 };
-obj2 = { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 };
+let obj = { container: { display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 } };
+({ display: "flex", flexDirection: "row", alignItems: "center", paddingTop: 14, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12 });
 let closure_4 = createStyles.createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenterLinkRowWrapper(userId) {
-  let analyticsLocations;
-  let obj = userId(576);
-  const cResult = obj.c(7);
-  const tmp = userId;
-  userId = userId.userId;
-  const children = userId.children;
-  const tmp4 = closure_4();
-  analyticsLocations = analyticsLocations(7313)().analyticsLocations;
-  if (undefined === userId) {
-    return null;
-  } else {
-    if (cResult[0] === analyticsLocations) {
-      let tmp5;
-      if (cResult[1] === userId) {
-        tmp5 = cResult[2];
-      }
-      if (cResult[3] === children) {
-        if (cResult[4] === tmp5) {
-          let tmp6;
-          if (cResult[5] === tmp4.container) {
-            tmp6 = cResult[6];
-          }
-          return tmp6;
-        }
-      }
-      const tmp8 = jsx(tmp(6968).PressableOpacity, { style: tmp4.container, onPress: tmp5, children });
-      cResult[3] = children;
-      cResult[4] = tmp5;
-      cResult[5] = tmp4.container;
-      cResult[6] = tmp8;
-      tmp6 = tmp8;
-    }
-    function handlePress() {
-      const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };
-      showUserProfileActionSheetDefault(obj);
-    }
-    cResult[0] = analyticsLocations;
-    cResult[1] = userId;
-    cResult[2] = handlePress;
-    tmp5 = handlePress;
-  }
-}) : (function FamilyCenterLinkRowWrapper(userId) {
+const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkWrapper.tsx");
+
+export default function FamilyCenterLinkRowWrapper(userId) {
   userId = userId.userId;
   let analyticsLocations;
   const children = userId.children;
   const tmp = closure_4();
-  analyticsLocations = analyticsLocations(7313)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7320)().analyticsLocations;
   let tmp3 = null;
   if (undefined !== userId) {
-    tmp3 = jsx(userId(6968).PressableOpacity, {
+    tmp3 = jsx(userId(6974).PressableOpacity, {
       style: tmp.container,
       onPress: function handlePress() {
           const obj = { userId, disableCalls: true, disableMessage: true, sourceAnalyticsLocations: analyticsLocations };
@@ -77,7 +36,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FamilyCenter
     });
   }
   return tmp3;
-});
-const result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterLinkWrapper.tsx");
-
-export default tmp3;
+};

@@ -1,10 +1,10 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10929
+// Function ID: 10930
 // Name: conjureWorkerFetch
-// Dependencies: [5, 10905, 2]
+// Dependencies: [5, 10928, 2]
 // Exports: fetchConjureWorker
 
-// Module 10906 (conjureWorkerFetch)
+// Module 10929 (conjureWorkerFetch)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let obj = function _fetchConjureWorker() {
         let obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ let obj = function _fetchConjureWorker() {
             };
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else {
           let closure_4;

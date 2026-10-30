@@ -1,60 +1,24 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 17126
+// Function ID: 17127
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [4960, 17071, 558, 576, 504, 2]
-// Exports: getUserRoleSubscriptionRelationship
+// Dependencies: [4964, 17125, 504, 2]
+// Exports: default, getUserRoleSubscriptionRelationship
 
-// Module 17072 (useUserRoleSubscriptionRelationship)
-import react from "react" /* 576 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4960 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17126 (useUserRoleSubscriptionRelationship)
+import get_initialized from "get initialized" /* 504 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17125 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4964 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const f130454 = (item) => {
+const f111545 = (item) => {
   if (userSubscriptionRoles.getUserSubscriptionRoles(item).size > 0) {
     c1 = true;
   }
 };
 const constants = GuildRoleSubscriptionsConstants.UserGuildRoleSubscriptionRelationship;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleSubscriptionRelationship() {
-  let tmp4;
-  let tmp5;
-  let tmp2 = dependencyMap;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SubscriptionRoleStore];
-    const fn = function o() {
-      let IN_SUBSCRIPTION_SERVER;
-      let obj;
-      const items = [SubscriptionRoleStore];
-      [obj] = items;
-      const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
-      let c1 = false;
-      const item = guildIdsWithPurchasableRoles.forEach(f130454);
-      const tmp2 = c1;
-      if (tmp2) {
-        IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
-      } else if (0 === guildIdsWithPurchasableRoles.size) {
-        IN_SUBSCRIPTION_SERVER = constants.NONE;
-      } else {
-        IN_SUBSCRIPTION_SERVER = constants.IN_SUBSCRIPTION_SERVER;
-      }
-      return IN_SUBSCRIPTION_SERVER;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useUserRoleSubscriptionRelationship() {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
+
+export default function useUserRoleSubscriptionRelationship() {
   const obj = get_initialized;
   let items = [SubscriptionRoleStore];
   return obj.useStateFromStores(items, () => {
@@ -64,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleS
     [obj] = items;
     const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
     let c1 = false;
-    const item = guildIdsWithPurchasableRoles.forEach(f130454);
+    const item = guildIdsWithPurchasableRoles.forEach(f111545);
     const tmp2 = c1;
     if (tmp2) {
       IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -75,8 +39,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserRoleS
     }
     return IN_SUBSCRIPTION_SERVER;
   });
-});
-function getUserRoleSubscriptionRelationship() {
+};
+export function getUserRoleSubscriptionRelationship() {
   let IN_SUBSCRIPTION_SERVER;
   let obj;
   let tmp = arg0;
@@ -87,7 +51,7 @@ function getUserRoleSubscriptionRelationship() {
   [obj] = tmp;
   const guildIdsWithPurchasableRoles = obj.getGuildIdsWithPurchasableRoles();
   let c1 = false;
-  const item = guildIdsWithPurchasableRoles.forEach(f130454);
+  const item = guildIdsWithPurchasableRoles.forEach(f111545);
   const tmp4 = c1;
   if (tmp4) {
     IN_SUBSCRIPTION_SERVER = constants.SUBSCRIBED;
@@ -98,7 +62,3 @@ function getUserRoleSubscriptionRelationship() {
   }
   return IN_SUBSCRIPTION_SERVER;
 }
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");
-
-export default tmp2;
-export { getUserRoleSubscriptionRelationship };

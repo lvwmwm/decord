@@ -1,28 +1,25 @@
-// Module ID: 7341
-// Function ID: 7342
+// Module ID: 7348
+// Function ID: 7349
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 4917, 4911, 1084, 21, 5005, 587, 558, 576, 7342, 4833, 7344, 7345, 5700, 1125, 7343, 7350, 7359, 5271, 7361, 6968, 7362, 504, 7363, 2]
+// Dependencies: [19, 17, 4921, 4915, 1072, 21, 5009, 575, 7349, 4834, 7351, 7352, 5706, 1114, 7350, 7357, 7366, 5619, 7368, 6974, 504, 7369, 7370, 2]
+// Exports: default
 
-// Module 7341 (UserProfileRolesCard)
+// Module 7348 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import ClipboardUtils from "ClipboardUtils" /* 7345 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7359 */;
-import RoleIconDefault from "RoleIcon" /* 7361 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7362 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import ClipboardUtils from "ClipboardUtils" /* 7352 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7366 */;
+import RoleIconDefault from "RoleIcon" /* 7368 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7369 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import Constants from "Constants" /* 1084 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
-
-let arr1, customIconSrc, dependencyMap, intl2, obj1, push, roleIconData, tmpResult1;
 
 let c10;
 let c9;
@@ -31,52 +28,9 @@ let metroImportDefault;
 let obj2;
 let size;
 let unpackModuleId;
-const View = react_native.View;
-({ DEFAULT_ROLE_COLOR_HEX: metroImportDefault, MAX_VISUAL_ROLE_LENGTH: metroImportAll } = Constants);
-({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
-let c12 = 12;
-let createStyles = createStyles_mod;
-let obj = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" }, role: obj2, roleDot: size };
-obj2 = { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.sm };
-createStyles = createStyles.createStyles;
-size = { borderRadius: nativeDefault.radii.round, height: 12, width: 12 };
-let closure_13 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleDot(color) {
-  let items;
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(5);
+function RoleDot(color) {
   color = color.color;
-  const tmp2 = closure_13();
-  if (color == null) {
-    color = metroImportDefault;
-  }
-  if (cResult[0] !== color) {
-    const obj2 = { backgroundColor: color };
-    cResult[0] = color;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  if (cResult[2] === tmp2.roleDot) {
-    let tmp4;
-    if (cResult[3] === tmp3) {
-      tmp4 = cResult[4];
-    }
-    return tmp4;
-  }
-  const obj3 = { style: items };
-  items = [tmp2.roleDot, tmp3];
-  const tmp5 = React4(View, obj3);
-  cResult[2] = tmp2.roleDot;
-  cResult[3] = tmp3;
-  cResult[4] = tmp5;
-  tmp4 = tmp5;
-}) : (function RoleDot(color) {
-  color = color.color;
-  const style = [closure_13().roleDot, ];
+  const style = [closure_12().roleDot, ];
   const tmp = React4;
   const tmp2 = View;
   if (color == null) {
@@ -84,401 +38,109 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleDo
   }
   style[1] = { backgroundColor: color };
   return tmp(tmp2, { style });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleItem(role) {
-  let tmp5;
-  let tmp = role;
-  let tmp2 = dependencyMap;
-  let obj = role(576);
-  const cResult = obj.c(30);
-  role = role.role;
-  const guildId = role.guildId;
-  let colorString = role.color;
-  let tmp4 = closure_13();
-  if (cResult[0] !== role.name) {
+}
+class RoleItem {
+  constructor(role) {
+    let intl;
+    let tmp11Result;
+    let tmp14;
+    let tmp2;
+    role = role.role;
+    const guildId = role.guildId;
     let name;
+    let colorString;
+    let roleIconProps;
+    let closure_5;
+    let tmp = closure_12();
     if (role.name.length <= closure_8) {
       name = role.name;
     } else {
       const name1 = role.name;
+      const tmp3 = globalThis;
       const _HermesInternal = HermesInternal;
-      name = "" + name1.slice(0, tmp6) + "...";
+      name = "" + name1.slice(0, tmp2) + "...";
     }
-    cResult[0] = role.name;
-    cResult[1] = name;
-    tmp5 = name;
-  } else {
-    tmp5 = cResult[1];
-  }
-  dependencyMap = tmp5;
-  if (colorString == null) {
-    colorString = role.colorString;
-  }
-  if (cResult[2] === guildId) {
-    let tmp8;
-    if (cResult[3] === role.id) {
-      tmp8 = cResult[4];
+    if (colorString == null) {
+      colorString = role.colorString;
     }
-    let tmpResult = tmp(7342);
-    const roleIconProps = tmpResult.useRoleIconProps(tmp8);
+    let tmp4 = role;
+    const tmp5 = name;
+    let obj = role(name[8]);
+    let obj2 = { guildId, roleId: role.id, size: 12 };
+    roleIconProps = obj.useRoleIconProps(obj2);
     const tags = role.tags;
     let guild_connections;
     if (tags != null) {
       guild_connections = tags.guild_connections;
     }
-    let tmp11 = undefined !== guild_connections;
-    let closure_5 = tmp11;
-    const DeveloperMode = tmp(4833).DeveloperMode;
-    const setting = DeveloperMode.useSetting();
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { location: "RoleItem" };
-      let obj3 = { autoTrackExposure: false };
-      cResult[5] = obj2;
-      cResult[6] = obj3;
-    }
-    const tmp17 = guildId(7344);
-    if (cResult[7] === tmp5) {
-      if (cResult[10] === tmp5) {
-        if (cResult[11] === role) {
-          if (cResult[12] === roleIconProps) {
-            let tmp20 = cResult[13];
-          }
-          class T {
-            constructor() {
-              obj = { label: null, onPress: null };
-              tmp = role;
-              tmp2 = closure_2;
-              intl = role(closure_2[15]).intl;
-              obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-              obj.onPress = function onPress() {
-                const obj = role(closure_2[13]);
-                obj.copy(customIconSrc.id);
-                const obj2 = role(closure_2[14]);
-                obj2.roleIdCopied(closure_1_2);
-              };
-              items = [];
-              items[0] = obj;
-              if (null != closure_4) {
-                tmpResult = tmp(tmp2[16]);
-                tmp5 = customIconSrc;
-                roleIconData = tmpResult.getRoleIconData(customIconSrc);
-                if (roleIconData == null) {
-                  roleIconData = {};
-                }
-                customIconSrc = roleIconData.customIconSrc;
-                if (null != customIconSrc) {
-                  obj1 = { label: null, onPress: null };
-                  push = items.push;
-                  intl2 = tmp(tmp2[15]).intl;
-                  obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-                  obj1.onPress = function onPress() {
-                    const obj = ClipboardUtils;
-                    obj.copy(customIconSrc);
-                    const obj2 = ToastUtils;
-                    const result = obj2.presentCopiedToClipboard();
-                  };
-                  arr1 = push(obj1);
-                }
-              }
-              tmpResult1 = tmp(tmp2[17]);
-              result = tmpResult1.showSimpleActionSheet({ key: "RoleItem", options: items, hasIcons: false });
-              return;
-            }
-          }
-          function renderContent() {
-            let tmp3Result;
-            let tmp8;
-            const tmp = unpackModuleId;
-            const tmp2 = authStore;
-            if (closure_5) {
-              const obj2 = { roleId: role.id, guildId, roleColor: colorString, size, displayRoleIcon: false };
-              colorString = undefined;
-              const tmp11 = VerifiedRoleIconDefault;
-              if (role != null) {
-                colorString = role.colorString;
-              }
-              tmp3Result = tmp3(tmp11, obj2);
-              tmp8 = tmp3;
-            } else {
-              const obj = { color: colorString };
-              tmp3Result = tmp3(closure_14, obj);
-              tmp8 = tmp3;
-            }
-            children = [tmp3Result, , ];
-            const obj3 = { variant: "text-xs/medium", children };
-            children[1] = tmp8(Text_Text.Text, obj3);
-            let tmp8Result = null;
-            if (null != roleIconProps) {
-              const obj4 = {};
-              const tmp20 = RoleIconDefault;
-              const merged = Object.assign(tmp17);
-              tmp8Result = tmp8(tmp20, obj4);
-            }
-            children[2] = tmp8Result;
-            return tmp(tmp2, { children });
-          }
-          cResult[14] = guildId;
-          cResult[15] = tmp5;
-          cResult[16] = role.colorString;
-          cResult[17] = role.id;
-          cResult[18] = colorString;
-          cResult[19] = roleIconProps;
-          cResult[20] = tmp11;
-          class E {
-            constructor() {
-              const obj = ClipboardUtils;
-              obj.copy(role.id);
-              const obj2 = ToastUtils;
-              obj2.roleIdCopied(children);
-            }
-          }
+    function renderContent() {
+      let tmp3Result;
+      let tmp8;
+      const tmp = unpackModuleId;
+      const tmp2 = authStore;
+      if (closure_5) {
+        const obj2 = { roleId: role.id, guildId, roleColor: colorString, size: 12, displayRoleIcon: false };
+        colorString = undefined;
+        const tmp11 = VerifiedRoleIconDefault;
+        if (role != null) {
+          colorString = role.colorString;
         }
-      }
-      class T {
-        constructor() {
-          obj = { label: null, onPress: null };
-          tmp = role;
-          tmp2 = closure_2;
-          intl = role(closure_2[15]).intl;
-          obj.label = intl.string(role(closure_2[15]).t.sMsaLg);
-          obj.onPress = function onPress() {
-            const obj = role(closure_2[13]);
-            obj.copy(customIconSrc.id);
-            const obj2 = role(closure_2[14]);
-            obj2.roleIdCopied(closure_1_2);
-          };
-          items = [];
-          items[0] = obj;
-          if (null != closure_4) {
-            tmpResult = tmp(tmp2[16]);
-            tmp5 = customIconSrc;
-            roleIconData = tmpResult.getRoleIconData(customIconSrc);
-            if (roleIconData == null) {
-              roleIconData = {};
-            }
-            customIconSrc = roleIconData.customIconSrc;
-            if (null != customIconSrc) {
-              obj1 = { label: null, onPress: null };
-              push = items.push;
-              intl2 = tmp(tmp2[15]).intl;
-              obj1.label = intl2.string(tmp(tmp2[15]).t["8xHmxo"]);
-              obj1.onPress = function onPress() {
-                const obj = ClipboardUtils;
-                obj.copy(customIconSrc);
-                const obj2 = ToastUtils;
-                const result = obj2.presentCopiedToClipboard();
-              };
-              arr1 = push(obj1);
-            }
-          }
-          tmpResult1 = tmp(tmp2[17]);
-          result = tmpResult1.showSimpleActionSheet({ key: "RoleItem", options: items, hasIcons: false });
-          return;
-        }
-      }
-      cResult[10] = tmp5;
-      cResult[11] = role;
-      cResult[12] = roleIconProps;
-      cResult[13] = T;
-      tmp20 = T;
-    }
-    class E {
-      constructor() {
-        const obj = ClipboardUtils;
-        obj.copy(role.id);
-        const obj2 = ToastUtils;
-        obj2.roleIdCopied(children);
-      }
-    }
-    cResult[7] = tmp5;
-    cResult[8] = role.id;
-    cResult[9] = E;
-  }
-  let obj4 = { guildId, roleId: role.id, size };
-  cResult[2] = guildId;
-  cResult[3] = role.id;
-  cResult[4] = obj4;
-  tmp8 = obj4;
-}) : (function RoleItem(role) {
-  let intl;
-  let tmp11Result;
-  let tmp14;
-  let tmp2;
-  role = role.role;
-  const guildId = role.guildId;
-  let name;
-  let colorString;
-  let roleIconProps;
-  let closure_5;
-  let tmp = closure_13();
-  if (role.name.length <= closure_8) {
-    name = role.name;
-  } else {
-    const name1 = role.name;
-    const tmp3 = globalThis;
-    const _HermesInternal = HermesInternal;
-    name = "" + name1.slice(0, tmp2) + "...";
-  }
-  if (colorString == null) {
-    colorString = role.colorString;
-  }
-  let tmp4 = role;
-  const tmp5 = name;
-  let obj = role(name[10]);
-  let obj2 = { guildId, roleId: role.id, size };
-  roleIconProps = obj.useRoleIconProps(obj2);
-  const tags = role.tags;
-  let guild_connections;
-  if (tags != null) {
-    guild_connections = tags.guild_connections;
-  }
-  function renderContent() {
-    let tmp3Result;
-    let tmp8;
-    const tmp = unpackModuleId;
-    const tmp2 = authStore;
-    if (closure_5) {
-      const obj2 = { roleId: role.id, guildId, roleColor: colorString, size, displayRoleIcon: false };
-      colorString = undefined;
-      const tmp11 = VerifiedRoleIconDefault;
-      if (role != null) {
-        colorString = role.colorString;
-      }
-      tmp3Result = tmp3(tmp11, obj2);
-      tmp8 = tmp3;
-    } else {
-      const obj = { color: colorString };
-      tmp3Result = tmp3(closure_14, obj);
-      tmp8 = tmp3;
-    }
-    const children = [tmp3Result, , ];
-    const obj3 = { variant: "text-xs/medium", children: name };
-    children[1] = tmp8(Text_Text.Text, obj3);
-    let tmp8Result = null;
-    if (null != roleIconProps) {
-      const obj4 = {};
-      const tmp20 = RoleIconDefault;
-      const merged = Object.assign(tmp17);
-      tmp8Result = tmp8(tmp20, obj4);
-    }
-    children[2] = tmp8Result;
-    return tmp(tmp2, { children });
-  }
-  closure_5 = undefined !== guild_connections;
-  const DeveloperMode = tmp4(tmp5[11]).DeveloperMode;
-  const setting = DeveloperMode.useSetting();
-  let obj3 = guildId(tmp5[12]);
-  let items = [role.id, name];
-  const tidaWebformEnabled = obj3.useExperiment({ location: "RoleItem" }, { autoTrackExposure: false }).tidaWebformEnabled;
-  const items1 = [role, name, roleIconProps];
-  const callback = colorString.useCallback(() => {
-    const obj = ClipboardUtils;
-    obj.copy(role.id);
-    const obj2 = ToastUtils;
-    obj2.roleIdCopied(name);
-  }, items);
-  let tmp11 = closure_9;
-  if (setting) {
-    let obj4 = { onPress: callback, onLongPress: tmp14, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint: intl.string(tmp4(tmp5[15]).t.sMsaLg), style: tmp.role, children: renderContent() };
-    tmp14 = undefined;
-    const PressableHighlight = tmp4(tmp5[21]).PressableHighlight;
-    if (setting) {
-      if (tidaWebformEnabled) {
-        tmp14 = tmp10;
-      }
-    }
-    intl = tmp4(tmp5[15]).intl;
-    tmp11Result = tmp11(PressableHighlight, obj4);
-  } else {
-    const obj5 = { style: tmp.role, children: renderContent() };
-    tmp11Result = tmp11(roleIconProps, obj5);
-  }
-  return tmp11Result;
-});
-let closure_15 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolesList(guildMemberRoleIds) {
-  let first;
-  let obj = guildMemberRoleIds(576);
-  const cResult = obj.c(13);
-  const tmp = guildMemberRoleIds;
-  guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
-  const guildId = guildMemberRoleIds.guildId;
-  const tmp4 = closure_13();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildRoleStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === guildId) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === guildMemberRoleIds) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStoresArray = tmpResult.useStateFromStoresArray(first, tmp7, tmp8);
-    if (0 === stateFromStoresArray.length) {
-      return null;
-    } else {
-      let tmp10;
-      if (cResult[5] === guildId) {
-        let tmp9;
-        if (cResult[6] === stateFromStoresArray) {
-          tmp9 = cResult[7];
-        }
-        if (cResult[10] === tmp4.roleContainer) {
-          let tmp12;
-          if (cResult[11] === tmp9) {
-            tmp12 = cResult[12];
-          }
-          return tmp12;
-        }
-        const obj2 = { style: tmp17, children: tmp9 };
-        const tmp15 = closure_9(View, obj2);
-        cResult[10] = tmp4.roleContainer;
-        cResult[11] = tmp9;
-        cResult[12] = tmp15;
-        tmp12 = tmp15;
-      }
-      if (cResult[8] !== guildId) {
-        const fn2 = function f(role) {
-          const obj = { role, guildId };
-          return React4(closure_15, obj, role.id);
-        };
-        cResult[8] = guildId;
-        cResult[9] = fn2;
-        tmp10 = fn2;
+        tmp3Result = tmp3(tmp11, obj2);
+        tmp8 = tmp3;
       } else {
-        tmp10 = cResult[9];
+        const obj = { color: colorString };
+        tmp3Result = tmp3(RoleDot, obj);
+        tmp8 = tmp3;
       }
-      const mapped = stateFromStoresArray.map(tmp10);
-      cResult[5] = guildId;
-      cResult[6] = stateFromStoresArray;
-      cResult[7] = mapped;
-      tmp9 = mapped;
+      const children = [tmp3Result, , ];
+      const obj3 = { variant: "text-xs/medium", children: name };
+      children[1] = tmp8(Text_Text.Text, obj3);
+      let tmp8Result = null;
+      if (null != roleIconProps) {
+        const obj4 = {};
+        const tmp19 = RoleIconDefault;
+        const merged = Object.assign(tmp16);
+        tmp8Result = tmp8(tmp19, obj4);
+      }
+      children[2] = tmp8Result;
+      return tmp(tmp2, { children });
     }
+    closure_5 = undefined !== guild_connections;
+    const DeveloperMode = tmp4(tmp5[9]).DeveloperMode;
+    const setting = DeveloperMode.useSetting();
+    let obj3 = guildId(tmp5[10]);
+    let items = [role.id, name];
+    const tidaWebformEnabled = obj3.useExperiment({ location: "RoleItem" }, { autoTrackExposure: false }).tidaWebformEnabled;
+    const items1 = [role, name, roleIconProps];
+    const callback = colorString.useCallback(() => {
+      const obj = ClipboardUtils;
+      obj.copy(role.id);
+      const obj2 = ToastUtils;
+      obj2.roleIdCopied(name);
+    }, items);
+    let tmp11 = closure_9;
+    if (setting) {
+      let obj4 = { onPress: callback, onLongPress: tmp14, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint: intl.string(tmp4(tmp5[13]).t.sMsaLg), style: tmp.role, children: renderContent() };
+      tmp14 = undefined;
+      const PressableHighlight = tmp4(tmp5[19]).PressableHighlight;
+      if (setting) {
+        if (tidaWebformEnabled) {
+          tmp14 = tmp10;
+        }
+      }
+      intl = tmp4(tmp5[13]).intl;
+      tmp11Result = tmp11(PressableHighlight, obj4);
+    } else {
+      const obj5 = { style: tmp.role, children: renderContent() };
+      tmp11Result = tmp11(roleIconProps, obj5);
+    }
+    return tmp11Result;
   }
-  const fn = function s() {
-    const manyRoles = GuildRoleStore.getManyRoles(guildId, guildMemberRoleIds);
-    return manyRoles.sort(UserProfileRoleUtils.sortRolesByVerification);
-  };
-  const items1 = [guildMemberRoleIds, guildId];
-  cResult[1] = guildId;
-  cResult[2] = guildMemberRoleIds;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function RolesList(guildMemberRoleIds) {
+}
+function RolesList(guildMemberRoleIds) {
   guildMemberRoleIds = guildMemberRoleIds.guildMemberRoleIds;
   const guildId = guildMemberRoleIds.guildId;
-  const tmp = closure_13();
+  const tmp = closure_12();
   let obj = guildMemberRoleIds(504);
   const items = [GuildRoleStore];
   const items1 = [guildMemberRoleIds, guildId];
@@ -492,112 +154,26 @@ let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function RolesL
       style: tmp.roleContainer,
       children: stateFromStoresArray.map((role) => {
           const obj = { role, guildId };
-          return React4(closure_15, obj, role.id);
+          return React4(RoleItem, obj, role.id);
         })
     };
     tmp2 = closure_9(View, obj2);
   }
   return tmp2;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileRolesCard(userId) {
-  let first;
-  const obj = userId(576);
-  const cResult = obj.c(14);
-  userId = userId.userId;
-  const guildId = userId.guildId;
-  const style = userId.style;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMemberStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === guildId) {
-    let tmp6;
-    let tmp7;
-    let arr3;
-    if (cResult[2] === userId) {
-      tmp6 = cResult[3];
-      tmp7 = cResult[4];
-    }
-    const tmpResult = userId(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-    let roles;
-    const tmp9 = cResult[5];
-    if (stateFromStores != null) {
-      roles = stateFromStores.roles;
-    }
-    if (tmp9 !== roles) {
-      let roles1;
-      if (stateFromStores != null) {
-        roles1 = stateFromStores.roles;
-      }
-      if (roles1 == null) {
-        roles1 = [];
-      }
-      let roles2;
-      if (stateFromStores != null) {
-        roles2 = stateFromStores.roles;
-      }
-      cResult[5] = roles2;
-      cResult[6] = roles1;
-      arr3 = roles1;
-    } else {
-      arr3 = cResult[6];
-    }
-    let tmp13 = null;
-    if (0 !== arr3.length) {
-      let tmp14;
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(1125).intl;
-        const stringResult = intl.string(userId(1125).t["LPJmL/"]);
-        cResult[7] = stringResult;
-        tmp14 = stringResult;
-      } else {
-        tmp14 = cResult[7];
-      }
-      if (cResult[8] === guildId) {
-        let tmp16;
-        if (cResult[9] === arr3) {
-          tmp16 = cResult[10];
-        }
-        if (cResult[11] === style) {
-          let tmp20;
-          if (cResult[12] === tmp16) {
-            tmp20 = cResult[13];
-          }
-          tmp13 = tmp20;
-        }
-        const obj2 = { title: tmp14, style, children: tmp16 };
-        const tmp23 = closure_9(guildId(7363), obj2);
-        cResult[11] = style;
-        cResult[12] = tmp16;
-        cResult[13] = tmp23;
-        tmp20 = tmp23;
-      }
-      const obj3 = { guildId, guildMemberRoleIds: arr3 };
-      const tmp19 = closure_9(closure_16, obj3);
-      cResult[8] = guildId;
-      cResult[9] = arr3;
-      cResult[10] = tmp19;
-      tmp16 = tmp19;
-    }
-    return tmp13;
-  }
-  const fn = function n() {
-    return GuildMemberStore.getMember(guildId, userId);
-  };
-  const items1 = [userId, guildId];
-  cResult[1] = guildId;
-  cResult[2] = userId;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp7 = items1;
-  tmp6 = fn;
-}) : (function UserProfileRolesCard(userId) {
+}
+const View = react_native.View;
+({ DEFAULT_ROLE_COLOR_HEX: metroImportDefault, MAX_VISUAL_ROLE_LENGTH: metroImportAll } = Constants);
+({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" }, role: obj2, roleDot: size };
+obj2 = { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.sm };
+createStyles = createStyles.createStyles;
+size = { borderRadius: nativeDefault.radii.round, height: 12, width: 12 };
+const authStore2 = createStyles(obj);
+size = size_mod;
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
+
+export default function UserProfileRolesCard(userId) {
   let intl;
   let obj3;
   userId = userId.userId;
@@ -616,16 +192,12 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileR
   }
   let tmp4 = null;
   if (0 !== roles.length) {
-    const obj2 = { title: intl.string(userId(1125).t["LPJmL/"]), style, children: closure_9(closure_16, obj3) };
-    const tmp7 = guildId(7363);
-    intl = tmp(1125).intl;
+    const obj2 = { title: intl.string(userId(1114).t["LPJmL/"]), style, children: closure_9(RolesList, obj3) };
+    const tmp7 = guildId(7370);
+    intl = tmp(1114).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);
   }
   return tmp4;
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileRolesCard.tsx");
-
-export default tmp6;
-export const RoleItem = tmp5;
+};
+export { RoleItem };

@@ -1,52 +1,28 @@
 // Module ID: 1541
 // Function ID: 1542
-// Dependencies: [19, 1542, 1550, 1551]
-// Exports: createNavigatorFactory
+// Dependencies: [19, 1529, 1542]
+// Exports: useNavigation
 
 // Module 1541
+import react2 from "react" /* 1529 */;
+import react3 from "react" /* 1542 */;
 import react from "react" /* 19 */;
 
 
-export function createNavigatorFactory(NativeStackNavigator) {
-  let Navigator = NativeStackNavigator;
-  let str = NativeStackNavigator.displayName;
-  if (str == null) {
-    str = NativeStackNavigator.name;
-  }
-  if (str == null) {
-    str = "Navigator";
-  }
-  return function createNavigator(config) {
-    Navigator = config;
-    if (null != config) {
-      const obj2 = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group, config };
-      const createComponentForStaticNavigation = Navigator(str[1]).createComponentForStaticNavigation;
-      Navigator(str[1]);
-      Navigator = createComponentForStaticNavigation(obj2, Navigator);
-      return {
-        config,
-        with: (IMAGE_ONLY_ANSWERS) => {
-            config = IMAGE_ONLY_ANSWERS;
-            class WithComponent {
-              constructor() {
-                return <IMAGE_ONLY_ANSWERS Navigator={Navigator} />;
-              }
-            }
-            WithComponent.displayName = "" + Navigator + "With";
-            return {
-              config,
-              getComponent() {
-                return WithComponent;
-              }
-            };
-          },
-        getComponent() {
-            return Navigator;
-          }
-      };
-    } else {
-      const obj = { Navigator, Screen: Navigator(str[2]).Screen, Group: Navigator(str[3]).Group };
-      return obj;
+export function useNavigation() {
+  const context = react.useContext(react2.NavigationContainerRefContext);
+  let context1 = react.useContext(react3.NavigationContext);
+  if (undefined === context1) {
+    if (undefined === context) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
+      throw error;
     }
-  };
+  }
+  if (context1 == null) {
+    context1 = context;
+  }
+  return context1;
 }

@@ -1,30 +1,29 @@
-// Module ID: 12034
-// Function ID: 12035
+// Module ID: 12220
+// Function ID: 12221
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5274, 2066, 1369, 6869, 12035, 12036, 12031, 12037, 12038, 1084, 584, 569, 1294, 12032, 1381, 12039, 12040, 12041, 2]
+// Dependencies: [5, 5622, 2063, 1358, 6876, 12221, 12222, 12217, 12223, 12224, 1072, 572, 559, 1283, 12218, 1376, 12225, 12226, 12227, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 12034 (ApplicationDirectoryActionCreators)
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6869 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12031 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12036 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12037 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12038 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12040 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12041 */;
+// Module 12220 (ApplicationDirectoryActionCreators)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6876 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12217 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12222 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12223 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12224 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12226 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12227 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5274 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1369 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12035 */;
+import DevSettingsStore from "DevSettingsStore" /* 5622 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1358 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12221 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
-let applicationId, query;
 
 let obj = function _getEmbedApplication() {
   let applicationFetchState;
@@ -43,7 +42,7 @@ let obj = function _getEmbedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -130,7 +129,7 @@ let obj = function _getEmbedApplication() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -149,123 +148,73 @@ obj = function _getApplication() {
   obj = _asyncToGenerator(async (applicationId) => {
     let closure_3;
     let closure_4;
+    let closure_5;
     let closure_1 = arg1;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
+      let obj5;
       let obj9;
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c7) {
         if (arg0 === 1) {
+          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c8 = 3;
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          const _Date = Date;
+          closure_2 = Date.now();
+          let applicationFetchState = closure_132_6.getApplicationFetchState(applicationId);
+          let applicationLastFetchTime = closure_132_6.getApplicationLastFetchTime(applicationId);
+          const dontRefetchMs = obj5.dontRefetchMs;
+          const noCache = obj5.noCache;
+          if (applicationFetchState !== closure_132_7.FETCHING) {
+            if (null != applicationLastFetchTime) {
+              closure_2 = dontRefetchMs;
+            }
+            const obj8 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION", applicationId };
+            const obj6 = closure_132_1(closure_132_2[11]);
+            obj6.dispatch(obj8);
+            c6 = 1;
+            const HTTP = closure_132_0(closure_132_2[13]).HTTP;
+            const request = { url: closure_132_17.APPLICATION_DIRECTORY_APPLICATION(applicationId), query: obj9, rejectWithError: true };
+            const get = HTTP.get;
+            c7 = 3;
+            c8 = 1;
+            obj9 = { locale: closure_132_5.locale, nocache: noCache };
+            const obj10 = { value: get(request), done: false };
+            return obj10;
+          }
         }
+      } else if (2 === c7) {
+        c6 = 0;
+        const obj11 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE", applicationId, isInvalidApplication: true };
+        const obj4 = closure_132_1(closure_132_2[11]);
+        obj4.dispatch(obj11);
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
       } else {
-        try {
-          let applicationLastFetchTime;
-          let applicationFetchState;
-          let obj5;
-          let dontRefetchMs;
-          let noCache;
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              applicationLastFetchTime = tmp;
-              applicationFetchState = tmp4;
-              obj5 = closure_1;
-              if (closure_1 === undefined) {
-                obj5 = {};
-              }
-              closure_2 = undefined;
-              applicationFetchState = undefined;
-              applicationLastFetchTime = undefined;
-              dontRefetchMs = undefined;
-              noCache = undefined;
-              body = undefined;
-              c7 = 1;
-              c8 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else {
-            if (1 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                const _Date = Date;
-                closure_2 = Date.now();
-                applicationFetchState = closure_132_6.getApplicationFetchState(applicationId);
-                applicationLastFetchTime = closure_132_6.getApplicationLastFetchTime(applicationId);
-                dontRefetchMs = obj5.dontRefetchMs;
-                noCache = obj5.noCache;
-                if (applicationFetchState !== closure_132_7.FETCHING) {
-                  if (null != applicationLastFetchTime) {
-                    closure_2 = dontRefetchMs;
-                    if (dontRefetchMs == null) {
-                      closure_2 = closure_132_18;
-                    }
-                  }
-                  const obj8 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION", applicationId };
-                  const obj6 = closure_132_1(closure_132_2[11]);
-                  obj6.dispatch(obj8);
-                  c6 = 1;
-                  const HTTP = closure_132_0(closure_132_2[13]).HTTP;
-                  const request = { url: closure_132_17.APPLICATION_DIRECTORY_APPLICATION(applicationId), query: obj9, rejectWithError: true };
-                  const get = HTTP.get;
-                  c7 = 3;
-                  c8 = 1;
-                  obj9 = { locale: closure_132_5.locale, nocache: noCache };
-                  const obj10 = { value: get(request), done: false };
-                  return obj10;
-                }
-              }
-            } else if (2 === c7) {
-              c6 = 0;
-              const obj11 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE", applicationId, isInvalidApplication: true };
-              const obj4 = closure_132_1(closure_132_2[11]);
-              obj4.dispatch(obj11);
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 0;
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              body = value;
-              const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS", application: body.body };
-              obj = closure_132_1(closure_132_2[11]);
-              obj.dispatch(obj13);
-              c6 = 0;
-            }
-            c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp41) {
-          closure_5 = tmp41;
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp41;
-          } else {
-            c7 = 2;
-          }
-        }
+        body = value;
+        const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS", application: body.body };
+        obj = closure_132_1(closure_132_2[11]);
+        obj.dispatch(obj13);
+        c6 = 0;
       }
+      await "HermesInternal";
+      applicationLastFetchTime = tmp;
+      applicationFetchState = tmp4;
+      obj5 = closure_1;
+      if (closure_1 === undefined) {
+        obj5 = {};
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -287,7 +236,7 @@ obj = function _getCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -331,7 +280,7 @@ obj = function _getCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;
@@ -342,6 +291,7 @@ obj = function _getCategories() {
 };
 obj = function _getSimilarApplications() {
   obj = _asyncToGenerator(async (applicationId) => {
+    let closure_3;
     let closure_5;
     let c7 = 0;
     let c8 = 0;
@@ -351,115 +301,67 @@ obj = function _getSimilarApplications() {
       let c1;
       let c2;
       let obj10;
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c7) {
         if (arg0 === 1) {
+          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c8 = 3;
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          page = c2;
+          if (c2 == null) {
+            page = {};
+          }
+          page = page.page;
+          const _Date = Date;
+          closure_4 = Date.now();
+          const obj7 = { applicationId, guildId: page };
+          const fetchState = closure_132_13.getFetchState(obj7);
+          const obj8 = { applicationId, guildId: page };
+          const similarApplications = closure_132_13.getSimilarApplications(obj8);
+          lastFetchTimeMs = similarApplications;
+          if (similarApplications == null) {
+            lastFetchTimeMs = {};
+          }
+          lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
+          if (fetchState !== closure_132_14.FETCHING) {
+            const obj9 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS", applicationId, guildId: page, page };
+            const obj6 = closure_132_1(closure_132_2[11]);
+            obj6.dispatch(obj9);
+            c6 = 1;
+            const HTTP = closure_132_0(closure_132_2[13]).HTTP;
+            const request = { url: closure_132_17.APPLICATION_DIRECTORY_SIMILAR(applicationId), query: obj10, rejectWithError: true };
+            const get = HTTP.get;
+            c7 = 3;
+            c8 = 1;
+            obj10 = { guild_id: page, page, locale: closure_132_5.locale };
+            const obj11 = { value: get(request), done: false };
+            return obj11;
+          }
         }
+      } else if (2 === c7) {
+        c6 = 0;
+        const obj12 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE", applicationId, guildId: page, page };
+        const obj2 = closure_132_1(closure_132_2[11]);
+        obj2.dispatch(obj12);
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
       } else {
-        let fetchState;
-        try {
-          let closure_7;
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp4;
-              applicationId = undefined;
-              c2 = undefined;
-              ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
-              page = undefined;
-              closure_4 = undefined;
-              fetchState = undefined;
-              lastFetchTimeMs = undefined;
-              closure_7 = undefined;
-              c7 = 1;
-              c8 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else {
-            if (1 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                page = c2;
-                if (c2 == null) {
-                  page = {};
-                }
-                page = page.page;
-                const _Date = Date;
-                closure_4 = Date.now();
-                const obj7 = { applicationId, guildId: page };
-                fetchState = closure_132_13.getFetchState(obj7);
-                const obj8 = { applicationId, guildId: page };
-                const similarApplications = closure_132_13.getSimilarApplications(obj8);
-                lastFetchTimeMs = similarApplications;
-                if (similarApplications == null) {
-                  lastFetchTimeMs = {};
-                }
-                lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
-                if (fetchState !== closure_132_14.FETCHING) {
-                  const obj9 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS", applicationId, guildId: page, page };
-                  const obj6 = closure_132_1(closure_132_2[11]);
-                  obj6.dispatch(obj9);
-                  c6 = 1;
-                  const HTTP = closure_132_0(closure_132_2[13]).HTTP;
-                  const request = { url: closure_132_17.APPLICATION_DIRECTORY_SIMILAR(applicationId), query: obj10, rejectWithError: true };
-                  const get = HTTP.get;
-                  c7 = 3;
-                  c8 = 1;
-                  obj10 = { guild_id: page, page, locale: closure_132_5.locale };
-                  const obj11 = { value: get(request), done: false };
-                  return obj11;
-                }
-              }
-            } else if (2 === c7) {
-              c6 = 0;
-              const obj12 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE", applicationId, guildId: page, page };
-              const obj2 = closure_132_1(closure_132_2[11]);
-              obj2.dispatch(obj12);
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 0;
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_7 = value;
-              const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS", applicationId, guildId: page, similarApplications: closure_7.body.applications, loadId: closure_7.body.load_id, page, totalPages: closure_7.body.num_pages };
-              const obj14 = closure_132_1(closure_132_2[11]);
-              obj14.dispatch(obj13);
-              c6 = 0;
-            }
-            c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp51) {
-          fetchState = tmp51;
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp51;
-          } else {
-            c7 = 2;
-          }
-        }
+        let closure_7 = value;
+        const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS", applicationId, guildId: page, similarApplications: closure_7.body.applications, loadId: closure_7.body.load_id, page, totalPages: closure_7.body.num_pages };
+        const obj14 = closure_132_1(closure_132_2[11]);
+        obj14.dispatch(obj13);
+        c6 = 0;
       }
+      await "HermesInternal";
+      ({ applicationId: c0, guildId: c1, options: c2 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -468,167 +370,105 @@ obj = function _getSimilarApplications() {
 };
 obj = function _search() {
   obj = _asyncToGenerator(async (query) => {
+    let closure_3;
     let closure_4;
+    let closure_5;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
+      let APP_DIRECTORY;
       let c0;
       let c1;
       let c2;
       let c3;
+      let categoryId;
+      let closure_12;
+      let excludeAppsWithCustomInstallUrl;
+      let excludeNonEmbeddedApps;
+      let integrationType;
+      let minUserInstallCommandCount;
       let obj10;
       let obj15;
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      let page;
+      let pageSize;
+      if (1 === c7) {
         if (arg0 === 1) {
+          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c8 = 3;
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          closure_1 = c2;
+          if (c2 == null) {
+            closure_1 = {};
+          }
+          page = tmp.page;
+          pageSize = tmp.pageSize;
+          categoryId = tmp.categoryId;
+          integrationType = tmp.integrationType;
+          minUserInstallCommandCount = tmp.minUserInstallCommandCount;
+          excludeAppsWithCustomInstallUrl = tmp.excludeAppsWithCustomInstallUrl;
+          excludeNonEmbeddedApps = tmp.excludeNonEmbeddedApps;
+          closure_12 = tmp.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
+          const source = tmp.source;
+          if (undefined === source) {
+            APP_DIRECTORY = closure_132_0(closure_132_2[14]).SearchAppsRequestSource.APP_DIRECTORY;
+          } else {
+            APP_DIRECTORY = source;
+          }
+          const _Date = Date;
+          let closure_15 = Date.now();
+          const obj7 = { query, guildId, page, pageSize, categoryId, integrationType };
+          const fetchState = closure_132_11.getFetchState(obj7);
+          const obj8 = { query, guildId, page, pageSize, categoryId, integrationType };
+          const searchResults = closure_132_11.getSearchResults(obj8);
+          lastFetchTimeMs = searchResults;
+          if (searchResults == null) {
+            lastFetchTimeMs = {};
+          }
+          lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
+          if (fetchState !== closure_132_12.FETCHING) {
+            const obj9 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH", query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
+            const obj6 = closure_132_1(closure_132_2[11]);
+            obj6.dispatch(obj9);
+            c6 = 1;
+            const HTTP = closure_132_0(closure_132_2[13]).HTTP;
+            const request = { url: closure_132_17.APPLICATION_DIRECTORY_SEARCH, query: obj10, rejectWithError: true };
+            c7 = 3;
+            c8 = 1;
+            obj10 = { query, guild_id: guildId, page, page_size: pageSize, category_id: categoryId, locale: closure_132_5.locale, integration_type: integrationType, min_user_install_command_count: minUserInstallCommandCount, exclude_apps_with_custom_install_url: excludeAppsWithCustomInstallUrl, exclude_non_embedded_apps: excludeNonEmbeddedApps, exclude_embedded_apps_without_primary_entry_point_app_command: closure_12, source: APP_DIRECTORY };
+            const obj11 = { value: HTTP.get(request), done: false };
+            return obj11;
+          }
         }
+      } else if (2 === c7) {
+        c6 = 0;
+        const obj12 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE", query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
+        const obj2 = closure_132_1(closure_132_2[11]);
+        obj2.dispatch(obj12);
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
       } else {
-        try {
-          let guildId;
-          let tmp;
-          let page;
-          let pageSize;
-          let categoryId;
-          let integrationType;
-          let minUserInstallCommandCount;
-          let excludeAppsWithCustomInstallUrl;
-          let excludeNonEmbeddedApps;
-          let closure_12;
-          let source;
-          let APP_DIRECTORY;
-          let fetchState;
-          let closure_18;
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp4;
-              query = undefined;
-              guildId = undefined;
-              c2 = undefined;
-              c3 = undefined;
-              ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
-              tmp = undefined;
-              page = undefined;
-              pageSize = undefined;
-              categoryId = undefined;
-              integrationType = undefined;
-              minUserInstallCommandCount = undefined;
-              excludeAppsWithCustomInstallUrl = undefined;
-              excludeNonEmbeddedApps = undefined;
-              closure_12 = undefined;
-              source = undefined;
-              APP_DIRECTORY = undefined;
-              let closure_15;
-              fetchState = undefined;
-              lastFetchTimeMs = undefined;
-              closure_18 = undefined;
-              c7 = 1;
-              c8 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else {
-            if (1 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                closure_1 = c2;
-                if (c2 == null) {
-                  closure_1 = {};
-                }
-                tmp = closure_1;
-                page = tmp.page;
-                pageSize = tmp.pageSize;
-                categoryId = tmp.categoryId;
-                integrationType = tmp.integrationType;
-                minUserInstallCommandCount = tmp.minUserInstallCommandCount;
-                excludeAppsWithCustomInstallUrl = tmp.excludeAppsWithCustomInstallUrl;
-                excludeNonEmbeddedApps = tmp.excludeNonEmbeddedApps;
-                closure_12 = tmp.excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand;
-                source = tmp.source;
-                if (undefined === source) {
-                  APP_DIRECTORY = closure_132_0(closure_132_2[14]).SearchAppsRequestSource.APP_DIRECTORY;
-                } else {
-                  APP_DIRECTORY = source;
-                }
-                const _Date = Date;
-                closure_15 = Date.now();
-                const obj7 = { query, guildId, page, pageSize, categoryId, integrationType };
-                fetchState = closure_132_11.getFetchState(obj7);
-                const obj8 = { query, guildId, page, pageSize, categoryId, integrationType };
-                const searchResults = closure_132_11.getSearchResults(obj8);
-                lastFetchTimeMs = searchResults;
-                if (searchResults == null) {
-                  lastFetchTimeMs = {};
-                }
-                lastFetchTimeMs = lastFetchTimeMs.lastFetchTimeMs;
-                if (fetchState !== closure_132_12.FETCHING) {
-                  const obj9 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH", query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
-                  const obj6 = closure_132_1(closure_132_2[11]);
-                  obj6.dispatch(obj9);
-                  c6 = 1;
-                  const HTTP = closure_132_0(closure_132_2[13]).HTTP;
-                  const request = { url: closure_132_17.APPLICATION_DIRECTORY_SEARCH, query: obj10, rejectWithError: true };
-                  c7 = 3;
-                  c8 = 1;
-                  obj10 = { query, guild_id: guildId, page, page_size: pageSize, category_id: categoryId, locale: closure_132_5.locale, integration_type: integrationType, min_user_install_command_count: minUserInstallCommandCount, exclude_apps_with_custom_install_url: excludeAppsWithCustomInstallUrl, exclude_non_embedded_apps: excludeNonEmbeddedApps, exclude_embedded_apps_without_primary_entry_point_app_command: closure_12, source: APP_DIRECTORY };
-                  const obj11 = { value: HTTP.get(request), done: false };
-                  return obj11;
-                }
-              }
-            } else if (2 === c7) {
-              c6 = 0;
-              const obj12 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH_FAILURE", query, guildId, page, pageSize, categoryId, integrationType, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
-              const obj2 = closure_132_1(closure_132_2[11]);
-              obj2.dispatch(obj12);
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 0;
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_18 = value;
-              const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS", query, guildId, page, pageSize, categoryId, integrationType, result: obj15, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
-              obj15 = { results: closure_18.body.results, countsByCategory: closure_18.body.counts_by_category, totalCount: closure_18.body.result_count, totalPages: closure_18.body.num_pages, type: closure_18.body.type, loadId: closure_18.body.load_id };
-              const obj14 = closure_132_1(closure_132_2[11]);
-              obj14.dispatch(obj13);
-              if (c3 != null) {
-                tmp130(closure_18.body.result_count);
-              }
-              c6 = 0;
-            }
-            c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp100) {
-          closure_5 = tmp100;
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp100;
-          } else {
-            c7 = 2;
-          }
+        let closure_18 = value;
+        const obj13 = { type: "APPLICATION_DIRECTORY_FETCH_SEARCH_SUCCESS", query, guildId, page, pageSize, categoryId, integrationType, result: obj15, minUserInstallCommandCount, excludeAppsWithCustomInstallUrl, excludeNonEmbeddedApps, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: closure_12, source: APP_DIRECTORY };
+        obj15 = { results: closure_18.body.results, countsByCategory: closure_18.body.counts_by_category, totalCount: closure_18.body.result_count, totalPages: closure_18.body.num_pages, type: closure_18.body.type, loadId: closure_18.body.load_id };
+        const obj14 = closure_132_1(closure_132_2[11]);
+        obj14.dispatch(obj13);
+        if (c3 != null) {
+          tmp130(closure_18.body.result_count);
         }
+        c6 = 0;
       }
+      await "HermesInternal";
+      ({ query: c0, guildId: c1, options: c2, onSuccessCallback: c3 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -637,140 +477,87 @@ obj = function _search() {
 };
 obj = function _fetchCollections() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let ACTIVE;
+    let APPLICATION_DIRECTORY;
     let WEB;
+    let closure_1;
     let obj12;
     let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === c5) {
       if (arg0 === 1) {
+        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c6 = 3;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      let c4;
-      try {
-        let closure_2;
-        let APPLICATION_DIRECTORY;
-        let ACTIVE;
-        let fetchState;
-        let cache;
-        let body;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+        let closure_2 = closure_130_4.get("disable_app_collections_cache");
+        const _Date = Date;
+        let closure_3 = Date.now();
+        const obj8 = { surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
+        const fetchState = closure_130_9.getFetchState(obj8);
+        const obj9 = { surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
+        const lastFetchTimeMs = closure_130_9.getLastFetchTimeMs(obj9);
+        if (fetchState !== closure_130_10.FETCHING) {
+          const tmp26 = !closure_2 && ACTIVE === closure_130_0(closure_130_2[18]).ApplicationCollectionActiveState.ACTIVE;
+          const cache = tmp26;
+          const obj11 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS", surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
+          const obj6 = closure_130_1(closure_130_2[11]);
+          obj6.dispatch(obj11);
+          let c4 = 1;
+          const HTTP = closure_130_0(closure_130_2[13]).HTTP;
+          const request = { url: closure_130_17.APPLICATION_DIRECTORY_COLLECTIONS, query: obj12, rejectWithError: true };
+          obj12 = { surface: APPLICATION_DIRECTORY, active_state: ACTIVE, platform: WEB, locale: closure_130_5.locale, cache };
+          const get = HTTP.get;
+          const obj10 = closure_130_0(closure_130_2[15]);
+          if (obj10.isAndroid()) {
+            WEB = tmp52(tmp53[16]).ApplicationCollectionPlatforms.ANDROID;
           } else {
-            closure_2 = tmp;
-            let closure_1 = tmp4;
-            APPLICATION_DIRECTORY = undefined;
-            ACTIVE = undefined;
-            let obj5 = closure_0;
-            if (closure_0 === undefined) {
-              obj5 = {};
-            }
-            APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
-            ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
-            closure_2 = undefined;
-            let closure_3;
-            fetchState = undefined;
-            let lastFetchTimeMs;
-            cache = undefined;
-            body = undefined;
-            c5 = 1;
-            c6 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else {
-          if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
+            const tmp52Result = closure_130_0(closure_130_2[15]);
+            const isIOSResult = tmp52Result.isIOS();
+            const ApplicationCollectionPlatforms = closure_130_0(closure_130_2[16]).ApplicationCollectionPlatforms;
+            if (isIOSResult) {
+              WEB = ApplicationCollectionPlatforms.IOS;
             } else {
-              closure_2 = closure_130_4.get("disable_app_collections_cache");
-              const _Date = Date;
-              closure_3 = Date.now();
-              const obj8 = { surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
-              fetchState = closure_130_9.getFetchState(obj8);
-              const obj9 = { surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
-              lastFetchTimeMs = closure_130_9.getLastFetchTimeMs(obj9);
-              if (fetchState !== closure_130_10.FETCHING) {
-                const tmp26 = !closure_2 && ACTIVE === closure_130_0(closure_130_2[18]).ApplicationCollectionActiveState.ACTIVE;
-                cache = tmp26;
-                const obj11 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS", surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
-                const obj6 = closure_130_1(closure_130_2[11]);
-                obj6.dispatch(obj11);
-                c4 = 1;
-                const HTTP = closure_130_0(closure_130_2[13]).HTTP;
-                const request = { url: closure_130_17.APPLICATION_DIRECTORY_COLLECTIONS, query: obj12, rejectWithError: true };
-                obj12 = { surface: APPLICATION_DIRECTORY, active_state: ACTIVE, platform: WEB, locale: closure_130_5.locale, cache };
-                const get = HTTP.get;
-                const obj10 = closure_130_0(closure_130_2[15]);
-                if (obj10.isAndroid()) {
-                  WEB = tmp52(tmp53[16]).ApplicationCollectionPlatforms.ANDROID;
-                } else {
-                  const tmp52Result = closure_130_0(closure_130_2[15]);
-                  const isIOSResult = tmp52Result.isIOS();
-                  const ApplicationCollectionPlatforms = closure_130_0(closure_130_2[16]).ApplicationCollectionPlatforms;
-                  if (isIOSResult) {
-                    WEB = ApplicationCollectionPlatforms.IOS;
-                  } else {
-                    WEB = ApplicationCollectionPlatforms.WEB;
-                  }
-                }
-                c5 = 3;
-                c6 = 1;
-                const obj13 = { value: get(request), done: false };
-                return obj13;
-              }
+              WEB = ApplicationCollectionPlatforms.WEB;
             }
-          } else if (2 === c5) {
-            c4 = 0;
-            const obj14 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE", surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
-            const obj4 = closure_130_1(closure_130_2[11]);
-            obj4.dispatch(obj14);
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj15 = { value, done: true };
-            return obj15;
-          } else {
-            body = value;
-            const obj16 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS", collections: body.body, surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
-            obj = closure_130_1(closure_130_2[11]);
-            obj.dispatch(obj16);
-            c4 = 0;
           }
-          c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp66) {
-        closure_3 = tmp66;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp66;
-        } else {
-          c5 = 2;
+          c5 = 3;
+          c6 = 1;
+          const obj13 = { value: get(request), done: false };
+          return obj13;
         }
       }
+    } else if (2 === c5) {
+      c4 = 0;
+      const obj14 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE", surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
+      const obj4 = closure_130_1(closure_130_2[11]);
+      obj4.dispatch(obj14);
+    } else if (arg0 === 1) {
+      c6 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c6 = 3;
+      const obj15 = { value, done: true };
+      return obj15;
+    } else {
+      const body = value;
+      const obj16 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS", collections: body.body, surface: APPLICATION_DIRECTORY, activeState: ACTIVE };
+      obj = closure_130_1(closure_130_2[11]);
+      obj.dispatch(obj16);
+      c4 = 0;
     }
+    await "HermesInternal";
+    closure_2 = tmp;
+    let obj5 = closure_0;
+    if (closure_0 === undefined) {
+      obj5 = {};
+    }
+    APPLICATION_DIRECTORY = obj5.surface ?? ApplicationCollectionSurface.ApplicationCollectionSurface.APPLICATION_DIRECTORY;
+    ACTIVE = obj5.activeState ?? ApplicationCollectionActiveState.ApplicationCollectionActiveState.ACTIVE;
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -789,7 +576,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -867,7 +654,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;

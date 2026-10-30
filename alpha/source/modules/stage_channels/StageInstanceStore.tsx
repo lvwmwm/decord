@@ -1,12 +1,12 @@
-// Module ID: 4862
-// Function ID: 4863
+// Module ID: 4863
+// Function ID: 4864
 // Name: StageInstanceStore
-// Dependencies: [4863, 504, 584, 2]
+// Dependencies: [4864, 504, 572, 2]
 
-// Module 4862 (StageInstanceStore)
+// Module 4863 (StageInstanceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2;
@@ -37,8 +37,8 @@ class StageInstanceStore extends Store {
       return closure_2[id];
     }
   }
-  isLive(first1) {
-    return null != this.getStageInstanceByChannel(first1);
+  isLive(id) {
+    return null != this.getStageInstanceByChannel(id);
   }
   isPublic(id) {
     const stageInstanceByChannel = this.getStageInstanceByChannel(id);

@@ -1,23 +1,22 @@
-// Module ID: 14287
-// Function ID: 14288
+// Module ID: 11149
+// Function ID: 11150
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5005, 587, 1631, 5014, 1894, 5247, 8970, 2000, 1125, 6993, 9765, 1381, 6984, 6968, 5271, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 1626, 5018, 1889, 5253, 9000, 1995, 1114, 6999, 9791, 1376, 6992, 7552, 7054, 6969, 5619, 2]
 
-// Module 14287 (MessageRemindersCustomDurationModal)
+// Module 11149 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import HeaderShared from "HeaderShared" /* 9765 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1889 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7552 */;
+import HeaderShared from "HeaderShared" /* 9791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -25,18 +24,18 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let obj5;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { modal: obj2, headerLeftContainer: obj3, headerRightContainer: obj4, container: { paddingHorizontal: 16, paddingTop: 24, gap: 24 }, formHeader: { marginBottom: 8 }, inputContainer: obj5, error: { marginTop: 8 } };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+let obj = { modal: obj2, headerLeftContainer: obj3, headerRightContainer: obj4, container: { paddingHorizontal: 16, paddingTop: 24, gap: 24 }, error: { marginTop: 8 } };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { paddingRight: nativeDefault.space.PX_16 };
-obj5 = { paddingHorizontal: 16, paddingVertical: 12, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT };
 let closure_9 = createStyles(obj);
 const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onClose) {
+  let TableRow;
+  let TableRow2;
   let closure_7;
   let first;
   let getError;
@@ -46,8 +45,9 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
   let intl4;
   let items1;
   let items2;
-  let items3;
   let num;
+  let obj10;
+  let obj8;
   let tmp11Result;
   onClose = onClose.onClose;
   const createReminder = onClose.createReminder;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(8970, dependencyMap.paths);
+    const tmp4 = asyncRequire(9000, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;
@@ -103,7 +103,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
   const tmp = handleSubmitDueDate();
   let tmp2 = createReminder;
   let obj = getError;
-  const top = createReminder(1631)().top;
+  const top = createReminder(1626)().top;
   [first, closure_7] = getError.useState(defaultValue);
   let error;
   if (getError != null) {
@@ -127,79 +127,63 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       return metroImportDefault(HeaderShared.GenericHeaderTitle, obj);
     },
     headerTitleAlign: "center",
-    headerStatusBarHeight: num + tmp2(587).space.PX_8,
+    headerStatusBarHeight: num + tmp2(575).space.PX_8,
     headerLeft: tmp11Result.getHeaderCloseButton(onClose),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null,
     headerRight() {
-      let Text;
       let intl;
-      let obj2;
-      const obj = { accessibilityRole: "button", disabled: null != error, onPress, children: metroImportDefault(Text, obj2) };
-      const PressableOpacity = Pressables.PressableOpacity;
-      let str = "control-brand-foreground";
-      Text = Text_Text.Text;
-      if (null != error) {
-        str = "text-muted";
-      }
-      obj2 = { variant: "text-md/semibold", color: str, children: intl.string(intl5.t["R3BPH+"]) };
-      intl = tmp2(1125).intl;
-      return metroImportDefault(PressableOpacity, obj);
+      const obj = { text: intl.string(intl5.t["R3BPH+"]), onPress, disabled: null != error };
+      const HeaderActionButton = HeaderActionButton2.HeaderActionButton;
+      intl = intl5.intl;
+      return metroImportDefault(HeaderActionButton, obj);
     }
   };
-  const Header = onClose(6993).Header;
+  const Header = onClose(6999).Header;
   num = 0;
-  const obj5 = onClose(1381);
+  const obj5 = onClose(1376);
   if (!obj5.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  tmp11Result = onClose(6984);
+  tmp11Result = onClose(6992);
   items1 = [closure_7(Header, obj3), ];
-  const obj6 = { style: tmp.container, children: items3 };
-  const obj7 = { children: items2 };
-  const obj8 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl.string(onClose(1125).t.pSZKvM) };
-  let Text = tmp11(5271).Text;
-  intl = tmp11(1125).intl;
-  items2 = [closure_7(Text, obj8), ];
-  const obj9 = {
-    accessibilityRole: "button",
-    accessibilityLabel: intl2.string(onClose(1125).t.pSZKvM),
+  const obj6 = { style: tmp.container, children: items2 };
+  const obj7 = { title: intl.string(onClose(1114).t.pSZKvM), hasIcons: false, children: closure_7(TableRow, obj8) };
+  const TableRowGroup = tmp11(7054).TableRowGroup;
+  intl = tmp11(1114).intl;
+  obj8 = {
+    label: formatResult,
+    accessibilityLabel: intl2.string(onClose(1114).t.pSZKvM),
     accessibilityValue: { text: formatResult },
     onPress() {
       handleOpenDatePicker("date");
-    },
-    style: tmp.inputContainer,
-    children: closure_7(onClose(5271).Text, { variant: "text-md/medium", children: formatResult })
+    }
   };
-  let PressableOpacity = tmp11(6968).PressableOpacity;
-  intl2 = tmp11(1125).intl;
-  items2[1] = closure_7(PressableOpacity, obj9);
-  items3 = [error(first, obj7), ];
-  const obj10 = { style: tmp.formHeader, variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(onClose(1125).t.GOmEb8) };
-  const Text2 = tmp11(5271).Text;
-  intl3 = tmp11(1125).intl;
-  const items4 = [closure_7(Text2, obj10), , ];
-  const obj11 = {
-    accessibilityRole: "button",
-    accessibilityLabel: intl4.string(onClose(1125).t.GOmEb8),
+  TableRow = tmp11(6969).TableRow;
+  intl2 = tmp11(1114).intl;
+  items2 = [closure_7(TableRowGroup, obj7), ];
+  const obj9 = { title: intl3.string(onClose(1114).t.GOmEb8), hasIcons: false, children: closure_7(TableRow2, obj10) };
+  const TableRowGroup2 = tmp11(7054).TableRowGroup;
+  intl3 = tmp11(1114).intl;
+  obj10 = {
+    label: formatResult1,
+    accessibilityLabel: intl4.string(onClose(1114).t.GOmEb8),
     accessibilityValue: { text: formatResult1 },
     onPress() {
       handleOpenDatePicker("time");
-    },
-    style: tmp.inputContainer,
-    children: closure_7(onClose(5271).Text, { variant: "text-md/medium", children: formatResult1 })
+    }
   };
-  const PressableOpacity2 = tmp11(6968).PressableOpacity;
-  intl4 = tmp11(1125).intl;
-  items4[1] = closure_7(PressableOpacity2, obj11);
+  TableRow2 = tmp11(6969).TableRow;
+  intl4 = tmp11(1114).intl;
+  const items3 = [closure_7(TableRowGroup2, obj9), ];
   let tmp10Result = null != error;
   if (tmp10Result) {
-    const obj12 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5271).Text, obj12);
+    const obj11 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
+    tmp10Result = tmp10(tmp11(5619).Text, obj11);
   }
-  items4[2] = tmp10Result;
-  items3[1] = error(first, { children: items4 });
+  items3[1] = tmp10Result;
+  items2[1] = error(first, { children: items3 });
   items1[1] = error(first, obj6);
   return error(first, obj2);
 });

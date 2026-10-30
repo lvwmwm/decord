@@ -1,58 +1,34 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17384
+// Function ID: 17385
 // Name: VideoUploadQualitySetting
-// Dependencies: [1206, 8387, 558, 576, 504, 17329, 4833, 1125, 11302, 2]
+// Dependencies: [1195, 8424, 504, 17383, 4834, 1114, 11505, 2]
 
-// Module 17330 (VideoUploadQualitySetting)
-import react from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1206 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import UserSettingsText from "UserSettingsText" /* 17329 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17384 (VideoUploadQualitySetting)
+import get_initialized from "get initialized" /* 504 */;
+import intl4 from "intl" /* 1114 */;
+import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1195 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import UserSettingsText from "UserSettingsText" /* 17383 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const UnsyncedUserSettingsStore = UnsyncedUserSettingsStore2;
 
-let tmp;
-const get_initialized = tmp(504);
 const VideoQualitySettings = UnsyncedUserSettingsStore2.VideoQualitySettings;
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVideoUploadQualitySettingValue() {
-  let tmp4;
-  let tmp5;
-  let videoUploadQuality;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UnsyncedUserSettingsStore];
-    const fn = function o() {
-      return videoUploadQuality.videoUploadQuality;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useVideoUploadQualitySettingValue() {
-  let videoUploadQuality;
-  const items = [UnsyncedUserSettingsStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
-});
 let obj = {
   useTitle() {
     const intl = intl4.intl;
     return intl.string(intl4.t.PXq9f1);
   },
   parent: MobileUserSettings.CHAT,
-  useValue: tmp2,
+  useValue: function useVideoUploadQualitySettingValue() {
+    let videoUploadQuality;
+    const items = [UnsyncedUserSettingsStore];
+    const obj = get_initialized;
+    return obj.useStateFromStores(items, () => videoUploadQuality.videoUploadQuality);
+  },
   onValueChange: function onVideoUploadQualitySettingValueChange(videoUploadQuality) {
     let ViewImageDescriptions;
     const obj = { videoUploadQuality, viewImageDescriptions: ViewImageDescriptions.getSetting(), lowQualityImageMode: null, dataSavingMode: null };

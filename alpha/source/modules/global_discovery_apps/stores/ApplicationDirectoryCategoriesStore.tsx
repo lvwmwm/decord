@@ -1,11 +1,11 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12221
+// Function ID: 12222
 // Name: ApplicationDirectoryCategoriesStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 12035 (ApplicationDirectoryCategoriesStore)
+// Module 12221 (ApplicationDirectoryCategoriesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let categories = [];

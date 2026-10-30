@@ -1,9 +1,9 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10952
+// Function ID: 10953
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 10929 (ConjureWebSocket)
+// Module 10952 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -15,11 +15,12 @@ class ConjureWebSocket {
     let closure_1;
     let closure_2;
     let closure_3;
+    let closure_4;
     let obj3;
     let templateId;
     let url;
     const self = this;
-    ({ url, templateId, onEvent: closure_1, onClose: closure_2, onError: closure_3 } = ticket);
+    ({ url, templateId, onEvent: closure_1, onPong: closure_2, onClose: closure_3, onError: closure_4 } = ticket);
     let webSocket;
     ticket = ticket.ticket;
     this.close();
@@ -39,27 +40,31 @@ class ConjureWebSocket {
     this.socket = webSocket;
     const listener = webSocket.addEventListener("message", (event) => {
       if (self.socket === webSocket) {
-        try {
-          const _JSON = JSON;
-          const parsed = JSON.parse(event.data);
-          if ("hello" === parsed.type) {
-            tmp.supportsPublishOptions = true === parsed.publish_options;
+        if ("pong" !== event.data) {
+          try {
+            const _JSON = JSON;
+            const parsed = JSON.parse(event.data);
+            if ("hello" === parsed.type) {
+              tmp.supportsPublishOptions = true === parsed.publish_options;
+            }
+            closure_1(parsed);
+          } catch (err) {
           }
-          closure_1(parsed);
-        } catch (err) {
+        } else if (closure_2 != null) {
+          closure_2();
         }
       }
     });
     const listener1 = webSocket.addEventListener("error", (event) => {
       if (self.socket === webSocket) {
-        if (closure_3 != null) {
+        if (closure_4 != null) {
           tmp(event);
         }
       }
     });
     const listener2 = webSocket.addEventListener("close", () => {
       if (self.socket === webSocket) {
-        if (closure_2 != null) {
+        if (closure_3 != null) {
           tmp();
         }
       }
@@ -324,6 +329,19 @@ class ConjureWebSocket {
     }
     const error = new Error("WebSocket not open");
     throw error;
+  }
+  sendPing() {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        try {
+          const socket = self.socket;
+          socket.send("ping");
+        } catch (err) {
+        }
+      }
+    }
   }
   sendLoadHistory(olderHistoryCursor) {
     const self = this;

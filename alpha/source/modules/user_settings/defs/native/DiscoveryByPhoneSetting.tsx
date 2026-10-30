@@ -1,45 +1,20 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16696
+// Function ID: 16697
 // Name: DiscoveryByPhoneSetting
-// Dependencies: [8387, 1084, 1125, 558, 576, 4833, 1402, 14054, 11302, 2]
+// Dependencies: [8424, 1072, 1114, 4834, 1397, 14202, 11505, 2]
 
-// Module 16643 (DiscoveryByPhoneSetting)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14054 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 16696 (DiscoveryByPhoneSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 14202 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const FlagUtils = tmp(1402);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendDiscoveryFlags = Constants.FriendDiscoveryFlags;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoveryByPhoneSettingValue() {
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
-  const setting = FriendDiscoverySettings.useSetting();
-  if (cResult[0] !== setting) {
-    const tmpResult = FlagUtils;
-    const hasFlagResult = tmpResult.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
-    cResult[0] = setting;
-    cResult[1] = hasFlagResult;
-    tmp5 = hasFlagResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function useDiscoveryByPhoneSettingValue() {
-  const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
-  const setting = FriendDiscoverySettings.useSetting();
-  const obj = FlagUtils;
-  return obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -50,7 +25,12 @@ let obj = {
     const intl = intl2.intl;
     return intl.string(intl2.t.X7pIKN);
   },
-  useValue: tmp2,
+  useValue: function useDiscoveryByPhoneSettingValue() {
+    const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
+    const setting = FriendDiscoverySettings.useSetting();
+    const obj = FlagUtils;
+    return obj.hasFlag(setting, FriendDiscoveryFlags.FIND_BY_PHONE);
+  },
   onValueChange: function onDiscoveryByPhoneSettingValueChange(phone) {
     const FriendDiscoverySettings = UserSettings.FriendDiscoverySettings;
     const setting = FriendDiscoverySettings.getSetting();

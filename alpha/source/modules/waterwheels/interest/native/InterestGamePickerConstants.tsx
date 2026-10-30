@@ -1,10 +1,10 @@
-// Module ID: 19445
-// Function ID: 19446
+// Module ID: 19508
+// Function ID: 19509
 // Name: InterestGamePickerConstants
-// Dependencies: [587, 2]
+// Dependencies: [575, 2]
 
-// Module 19445 (InterestGamePickerConstants)
-import nativeDefault from "native" /* 587 */;
+// Module 19508 (InterestGamePickerConstants)
+import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 
 const PX_12 = nativeDefault.space.PX_12;

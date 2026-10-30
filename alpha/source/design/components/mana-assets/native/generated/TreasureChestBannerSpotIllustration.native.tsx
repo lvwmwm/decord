@@ -1,96 +1,30 @@
-// Module ID: 15348
-// Function ID: 15349
+// Module ID: 15388
+// Function ID: 15389
 // Name: TreasureChestBannerSpotIllustration
-// Dependencies: [19, 21, 15349, 15350, 15351, 558, 576, 7055, 5707, 2]
+// Dependencies: [19, 21, 15389, 15390, 15391, 7063, 5712, 2]
+// Exports: TreasureChestBannerSpotIllustration
 
-// Module 15348 (TreasureChestBannerSpotIllustration)
+// Module 15388 (TreasureChestBannerSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import react_native from "react-native" /* 7055 */;
-import _modDef15349 from "module_15349" /* 15349 */;
-import _modDef15350 from "module_15350" /* 15350 */;
-import _modDef15351 from "module_15351" /* 15351 */;
+import react_native from "react-native" /* 7063 */;
+import _modDef15389 from "module_15389" /* 15389 */;
+import _modDef15390 from "module_15390" /* 15390 */;
+import _modDef15391 from "module_15391" /* 15391 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15349 };
+let obj2 = { uri: _modDef15389 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15350 };
+let obj3 = { uri: _modDef15390 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15351 };
-({ uri: _modDef15351 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TreasureChestBannerSpotIllustration(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let height;
-  let resizeMode;
-  let scale;
-  let width;
-  obj = react2;
-  const cResult = obj.c(12);
-  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 1;
-  if (undefined !== scale) {
-    num = scale;
-  }
-  if (cResult[0] === height) {
-    if (cResult[1] === num) {
-      let tmp4;
-      let tmp7;
-      let tmp10;
-      if (cResult[2] === width) {
-        tmp4 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = react_native;
-        const assetSource = tmpResult.getAssetSource(obj);
-        cResult[4] = assetSource;
-        tmp7 = assetSource;
-      } else {
-        tmp7 = cResult[4];
-      }
-      if (cResult[5] !== resizeMode) {
-        const tmpResult3 = react_native;
-        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
-        cResult[5] = resizeMode;
-        cResult[6] = assetResizeMode;
-        tmp10 = assetResizeMode;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === accessibilityLabel) {
-        if (cResult[8] === accessible) {
-          if (cResult[9] === tmp4) {
-            let tmp12;
-            if (cResult[10] === tmp10) {
-              tmp12 = cResult[11];
-            }
-            return tmp12;
-          }
-        }
-      }
-      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
-      cResult[7] = accessibilityLabel;
-      cResult[8] = accessible;
-      cResult[9] = tmp4;
-      cResult[10] = tmp10;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-  }
-  const tmpResult4 = react_native;
-  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 173, intrinsicHeight: 138 });
-  cResult[0] = height;
-  cResult[1] = num;
-  cResult[2] = width;
-  cResult[3] = assetSizeStyle;
-  tmp4 = assetSizeStyle;
-}) : (function TreasureChestBannerSpotIllustration(width) {
+obj[3] = { uri: _modDef15391 };
+({ uri: _modDef15391 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
+
+export function TreasureChestBannerSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -110,12 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function TreasureCh
     return obj.getAssetSizeStyle(size);
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
-  height(num[8]);
-  obj2 = width(num[7]);
-  obj3 = width(num[7]);
+  height(num[6]);
+  obj2 = width(num[5]);
+  obj3 = width(num[5]);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestBannerSpotIllustration.native.tsx");
-
-export const TreasureChestBannerSpotIllustration = tmp2;
+}

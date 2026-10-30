@@ -1,20 +1,19 @@
-// Module ID: 9337
-// Function ID: 9338
+// Module ID: 9351
+// Function ID: 9352
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2020, 4859, 5738, 1084, 9309, 504, 1101, 8903, 7466, 558, 576, 2]
-// Exports: hasGameProfileDiscordWebsite, preloadGameProfileInvite
+// Dependencies: [5, 19, 2015, 4860, 5744, 1072, 9323, 504, 1090, 8937, 7474, 2]
+// Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 9337 (useGameProfileInvite)
-import DurationsDefault from "Durations" /* 1101 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
+// Module 9351 (useGameProfileInvite)
+import DurationsDefault from "Durations" /* 1090 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8937 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2020 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4859 */;
-import InviteStore from "InviteStore" /* 5738 */;
-import Constants from "Constants" /* 1084 */;
+import GameStore from "GameStore" /* 2015 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4860 */;
+import InviteStore from "InviteStore" /* 5744 */;
+import Constants from "Constants" /* 1072 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +21,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f104998 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f94238 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -97,7 +96,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -137,7 +136,7 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
         throw error;
       }
       c4 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp19) {
       c4 = 3;
       throw tmp19;
@@ -145,170 +144,13 @@ let closure_9 = _asyncToGenerator(async function(arg0, value) {
   }
 });
 let closure_10 = createFetchStore(InviteStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameProfileInvite(websites, cResult) {
-  let data;
-  let tmp14;
-  let tmp18;
-  let tmp21;
-  let tmp22;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  _require = cResult;
-  const tmp = _require;
-  const obj = require("react");
-  cResult = obj.c(15);
-  const ref = react.useRef(cResult);
-  const tmp2 = data;
-  if (cResult[0] !== cResult) {
-    const fn = function u() {
-      ref.current = current;
-    };
-    const items = [cResult];
-    cResult[0] = cResult;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp5 = items;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-  if (cResult[3] !== websites) {
-    let found;
-    if (websites != null) {
-      websites = websites.websites;
-      if (websites != null) {
-        found = websites.find(f104998);
-      }
-    }
-    let arr;
-    if (found != null) {
-      const str = found.url;
-      const parts = str.split("/");
-      arr = parts.pop();
-    }
-    let tmp11 = null;
-    if (null != arr) {
-      tmp11 = null;
-      if ("" !== arr) {
-        tmp11 = arr;
-      }
-    }
-    cResult[3] = websites;
-    cResult[4] = tmp11;
-    tmp7 = tmp11;
-  } else {
-    tmp7 = cResult[4];
-  }
-  const tmp12 = closure_10(tmp7);
-  data = tmp12.data;
-  let isLoading = tmp12.isLoading;
-  let tmp13 = null != tmp7;
-  const error = tmp12.error;
-  if (tmp13) {
-    tmp13 = null == data;
-  }
-  if (tmp13) {
-    if (!isLoading) {
-      isLoading = null == error;
-    }
-    tmp13 = isLoading;
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildMembershipStore];
-    cResult[5] = items1;
-    tmp14 = items1;
-  } else {
-    tmp14 = cResult[5];
-  }
-  let id;
-  const tmp16 = cResult[6];
-  if (data != null) {
-    let guild = data.guild;
-    if (guild != null) {
-      id = guild.id;
-    }
-  }
-  if (tmp16 !== id) {
-    let id1;
-    if (data != null) {
-      let guild2 = data.guild;
-      if (guild2 != null) {
-        id1 = guild2.id;
-      }
-    }
-    const fn2 = function p() {
-      let id;
-      if (data != null) {
-        const guild = tmp.guild;
-        if (guild != null) {
-          id = guild.id;
-        }
-      }
-      let isMemberResult = null != id;
-      if (isMemberResult) {
-        let id1;
-        const isMember = GuildMembershipStore.isMember;
-        if (data != null) {
-          const guild2 = tmp.guild;
-          if (guild2 != null) {
-            id1 = guild2.id;
-          }
-        }
-        isMemberResult = isMember(id1);
-      }
-      return isMemberResult;
-    };
-    cResult[6] = id1;
-    cResult[7] = fn2;
-    tmp18 = fn2;
-  } else {
-    tmp18 = cResult[7];
-  }
-  const tmpResult = tmp(tmp2[7]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp14, tmp18);
-  if (cResult[8] !== data) {
-    const fn3 = function _() {
-      if (null != data) {
-        current = ref.current;
-        if (current != null) {
-          current(tmp);
-        }
-      }
-    };
-    const items2 = [data];
-    cResult[8] = data;
-    cResult[9] = fn3;
-    cResult[10] = items2;
-    tmp22 = items2;
-    tmp21 = fn3;
-  } else {
-    tmp21 = cResult[9];
-    tmp22 = cResult[10];
-  }
-  const effect1 = obj2.useEffect(tmp21, tmp22);
-  if (cResult[11] === data) {
-    if (cResult[12] === stateFromStores) {
-      let tmp24;
-      if (cResult[13] === tmp13) {
-        tmp24 = cResult[14];
-      }
-      return tmp24;
-    }
-  }
-  const obj3 = { invite: data, isMember: stateFromStores, isResolving: tmp13 };
-  cResult[11] = data;
-  cResult[12] = stateFromStores;
-  cResult[13] = tmp13;
-  cResult[14] = obj3;
-  tmp24 = obj3;
-}) : (function useGameProfileInvite(websites, cResult) {
+const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileInvite.tsx");
+
+export default function useGameProfileInvite(websites, set) {
   let tmp8;
-  _require = cResult;
-  const ref = react.useRef(cResult);
-  const items = [cResult];
+  _require = set;
+  const ref = react.useRef(set);
+  const items = [set];
   const effect = react.useEffect(() => {
     ref.current = current;
   }, items);
@@ -317,7 +159,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f104998);
+      found = websites.find(f94238);
     }
   }
   let arr;
@@ -379,10 +221,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGamePro
     tmp8 = isLoading;
   }
   return obj3;
-});
-const result = size.fileFinishedImporting("modules/game_profile/hooks/useGameProfileInvite.tsx");
-
-export default tmp6;
+};
 export function hasGameProfileDiscordWebsite(game) {
   let flag;
   if (game != null) {
@@ -408,7 +247,7 @@ export function preloadGameProfileInvite(arg0) {
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f104998);
+        found = websites.find(f94238);
       }
     }
     let arr;

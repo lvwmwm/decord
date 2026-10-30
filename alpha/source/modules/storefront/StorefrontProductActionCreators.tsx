@@ -1,145 +1,97 @@
-// Module ID: 8748
-// Function ID: 8749
+// Module ID: 8782
+// Function ID: 8783
 // Name: StorefrontProductActionCreators
-// Dependencies: [5, 2066, 8749, 7727, 1084, 8750, 584, 6442, 6434, 2]
+// Dependencies: [5, 2063, 8783, 7732, 1072, 8784, 572, 6449, 6441, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8748 (StorefrontProductActionCreators)
-import Constants from "Constants" /* 1084 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8750 */;
+// Module 8782 (StorefrontProductActionCreators)
+import Constants from "Constants" /* 1072 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8784 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8749 */;
-import StorefrontProductRecord from "StorefrontProductRecord" /* 7727 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8783 */;
+import StorefrontProductRecord from "StorefrontProductRecord" /* 7732 */;
 import size from "module_2" /* 2 */;
-
-let c5, c6;
 
 let obj = function _maybeFetchProductsWithSkus() {
   obj = _asyncToGenerator(async function(arg0, value) {
+    let body;
     let c0;
+    let closure_1;
     let ignoreCache;
+    let length;
     let obj6;
     let obj8;
     let products;
     let tmp25;
     let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === tmp4) {
       if (arg0 === 1) {
+        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c6 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        length = c0.filter((item) => {
+          let shouldRefetchEntryResult = Boolean(item);
+          if (shouldRefetchEntryResult) {
+            obj = { fetchState: closure_1_5.getFetchState(item), fetchedAt: closure_1_5.getFetchedAt(item), needsPricing: true, hasPricingCoverage: closure_1_5.hasPricingCoverage(item) };
+            const shouldRefetchEntry = closure_1_0(length[5]).shouldRefetchEntry;
+            closure_1_0(length[5]);
+            shouldRefetchEntryResult = shouldRefetchEntry(obj);
+          }
+          return shouldRefetchEntryResult;
+        });
+        if (0 !== length.length) {
+          let c4 = 1;
+          const obj7 = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH", productIds: length };
+          const obj4 = closure_130_1(closure_130_2[6]);
+          obj4.dispatch(obj7);
+          const request = { url: closure_130_7.STOREFRONT_PRODUCTS_WITH_SKUS, query: obj8, rejectWithError: true };
+          obj8 = { product_ids: length, locale: closure_130_4.locale, with_bundled_skus: true, include_google_sku_ids: true, ignore_cache: ignoreCache };
+          let c5 = 3;
+          c6 = 1;
+          const obj9 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
+          obj6 = closure_130_0(closure_130_2[7]);
+          return obj9;
+        }
       }
+    } else if (2 === tmp4) {
+      c4 = 0;
+      let closure_4 = body;
+      const obj10 = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_FAILURE", productIds: length, apiError: tmp25 };
+      const dispatch2 = closure_130_1(closure_130_2[6]).dispatch;
+      const self = this;
+      const self2 = this;
+      const tmp20 = closure_130_1(closure_130_2[6]);
+      tmp25 = new closure_130_1(closure_130_2[8])(closure_4);
+      dispatch2(obj10);
+    } else if (arg0 === 1) {
+      c6 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c6 = 3;
+      const obj11 = { value, done: true };
+      return obj11;
     } else {
-      let c4;
-      let body;
-      try {
-        let length;
-        c6 = 2;
-        const tmp4 = c5;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            length = tmp;
-            let closure_1 = tmp4;
-            c0 = undefined;
-            ignoreCache = undefined;
-            ({ productIds: c0, ignoreCache } = closure_0);
-            if (ignoreCache === undefined) {
-              ignoreCache = false;
-            }
-            length = undefined;
-            body = undefined;
-            c5 = 1;
-            c6 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              length = c0.filter((item) => {
-                let shouldRefetchEntryResult = Boolean(item);
-                if (shouldRefetchEntryResult) {
-                  obj = { fetchState: closure_1_5.getFetchState(item), fetchedAt: closure_1_5.getFetchedAt(item), needsPricing: true, hasPricingCoverage: closure_1_5.hasPricingCoverage(item) };
-                  const shouldRefetchEntry = closure_1_0(length[5]).shouldRefetchEntry;
-                  closure_1_0(length[5]);
-                  shouldRefetchEntryResult = shouldRefetchEntry(obj);
-                }
-                return shouldRefetchEntryResult;
-              });
-              if (0 !== length.length) {
-                c4 = 1;
-                const obj7 = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH", productIds: length };
-                const obj4 = closure_130_1(closure_130_2[6]);
-                obj4.dispatch(obj7);
-                const request = { url: closure_130_7.STOREFRONT_PRODUCTS_WITH_SKUS, query: obj8, rejectWithError: true };
-                obj8 = { product_ids: length, locale: closure_130_4.locale, with_bundled_skus: true, include_google_sku_ids: true, ignore_cache: ignoreCache };
-                c5 = 3;
-                c6 = 1;
-                const obj9 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
-                obj6 = closure_130_0(closure_130_2[7]);
-                return obj9;
-              }
-            }
-          } else if (2 === tmp4) {
-            c4 = 0;
-            let closure_4 = body;
-            const obj10 = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_FAILURE", productIds: length, apiError: tmp25 };
-            const dispatch2 = closure_130_1(closure_130_2[6]).dispatch;
-            const self = this;
-            const self2 = this;
-            const tmp20 = closure_130_1(closure_130_2[6]);
-            tmp25 = new closure_130_1(closure_130_2[8])(closure_4);
-            dispatch2(obj10);
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
-          } else {
-            body = value;
-            obj = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_SUCCESS", productIds: length, products: products.map(closure_130_6.fromServer) };
-            products = body.body.products;
-            const dispatch = closure_130_1(closure_130_2[6]).dispatch;
-            const tmp9 = closure_130_1(closure_130_2[6]);
-            dispatch(obj);
-            c4 = 0;
-          }
-          c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp41) {
-        body = tmp41;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp41;
-        } else {
-          c5 = 2;
-        }
-      }
+      body = value;
+      obj = { type: "STOREFRONT_PRODUCTS_WITH_SKUS_FETCH_SUCCESS", productIds: length, products: products.map(closure_130_6.fromServer) };
+      products = body.body.products;
+      const dispatch = closure_130_1(closure_130_2[6]).dispatch;
+      const tmp9 = closure_130_1(closure_130_2[6]);
+      dispatch(obj);
+      c4 = 0;
     }
+    await "HermesInternal";
+    length = tmp;
+    ({ productIds: c0, ignoreCache } = closure_0);
+    if (ignoreCache === undefined) {
+      ignoreCache = false;
+    }
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -170,119 +122,74 @@ function shouldFetchProductBySku(item10006) {
 }
 obj = function _maybeFetchProductsBySkuIds() {
   obj = _asyncToGenerator(async function(arg0, value) {
+    let body;
     let c0;
+    let closure_1;
     let ignoreCache;
+    let length;
     let obj6;
     let obj8;
     let products;
     let tmp25;
     let closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === c5) {
       if (arg0 === 1) {
+        let c6 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        c6 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        length = c0.filter(closure_130_9);
+        if (0 !== length.length) {
+          let c4 = 1;
+          const obj7 = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH", skuIds: length };
+          const obj4 = closure_130_1(closure_130_2[6]);
+          obj4.dispatch(obj7);
+          const request = { url: closure_130_7.STOREFRONT_PRODUCTS_BY_SKU_IDS, query: obj8, rejectWithError: true };
+          obj8 = { sku_ids: length, locale: closure_130_4.locale, with_bundled_skus: true, include_google_sku_ids: true, ignore_cache: ignoreCache };
+          c5 = 3;
+          c6 = 1;
+          const obj9 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
+          obj6 = closure_130_0(closure_130_2[7]);
+          return obj9;
+        }
       }
+    } else if (2 === c5) {
+      c4 = 0;
+      let closure_4 = body;
+      const obj10 = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_FAILURE", skuIds: length, apiError: tmp25 };
+      const dispatch2 = closure_130_1(closure_130_2[6]).dispatch;
+      const self = this;
+      const self2 = this;
+      const tmp20 = closure_130_1(closure_130_2[6]);
+      tmp25 = new closure_130_1(closure_130_2[8])(closure_4);
+      dispatch2(obj10);
+    } else if (arg0 === 1) {
+      c6 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
+      c6 = 3;
+      const obj11 = { value, done: true };
+      return obj11;
     } else {
-      let c4;
-      let body;
-      try {
-        let length;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            length = tmp;
-            let closure_1 = tmp4;
-            c0 = undefined;
-            ignoreCache = undefined;
-            ({ skuIds: c0, ignoreCache } = closure_0);
-            if (ignoreCache === undefined) {
-              ignoreCache = false;
-            }
-            length = undefined;
-            body = undefined;
-            c5 = 1;
-            c6 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else {
-          if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              length = c0.filter(closure_130_9);
-              if (0 !== length.length) {
-                c4 = 1;
-                const obj7 = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH", skuIds: length };
-                const obj4 = closure_130_1(closure_130_2[6]);
-                obj4.dispatch(obj7);
-                const request = { url: closure_130_7.STOREFRONT_PRODUCTS_BY_SKU_IDS, query: obj8, rejectWithError: true };
-                obj8 = { sku_ids: length, locale: closure_130_4.locale, with_bundled_skus: true, include_google_sku_ids: true, ignore_cache: ignoreCache };
-                c5 = 3;
-                c6 = 1;
-                const obj9 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
-                obj6 = closure_130_0(closure_130_2[7]);
-                return obj9;
-              }
-            }
-          } else if (2 === c5) {
-            c4 = 0;
-            let closure_4 = body;
-            const obj10 = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_FAILURE", skuIds: length, apiError: tmp25 };
-            const dispatch2 = closure_130_1(closure_130_2[6]).dispatch;
-            const self = this;
-            const self2 = this;
-            const tmp20 = closure_130_1(closure_130_2[6]);
-            tmp25 = new closure_130_1(closure_130_2[8])(closure_4);
-            dispatch2(obj10);
-          } else if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
-          } else {
-            body = value;
-            obj = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_SUCCESS", skuIds: length, products: products.map(closure_130_6.fromServer) };
-            products = body.body.products;
-            const dispatch = closure_130_1(closure_130_2[6]).dispatch;
-            const tmp9 = closure_130_1(closure_130_2[6]);
-            dispatch(obj);
-            c4 = 0;
-          }
-          c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp41) {
-        body = tmp41;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp41;
-        } else {
-          c5 = 2;
-        }
-      }
+      body = value;
+      obj = { type: "STOREFRONT_PRODUCTS_BY_SKU_IDS_FETCH_SUCCESS", skuIds: length, products: products.map(closure_130_6.fromServer) };
+      products = body.body.products;
+      const dispatch = closure_130_1(closure_130_2[6]).dispatch;
+      const tmp9 = closure_130_1(closure_130_2[6]);
+      dispatch(obj);
+      c4 = 0;
     }
+    await "HermesInternal";
+    length = tmp;
+    ({ skuIds: c0, ignoreCache } = closure_0);
+    if (ignoreCache === undefined) {
+      ignoreCache = false;
+    }
+    return "flexDirection";
   });
   return obj(...arguments);
 };

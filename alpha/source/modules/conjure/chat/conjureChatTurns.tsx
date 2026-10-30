@@ -1,12 +1,12 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 10832
+// Function ID: 10833
 // Name: conjureChatTurns
-// Dependencies: [10810, 10811, 2]
+// Dependencies: [10833, 10834, 2]
 // Exports: findTurnSegment, hasOpenTurn, isOutsideTurn, isSegmentOfTurn, isStrandedSegment, replaceAt, resolveTurnIndex, stoppable, turnIdOfSegment, turnSettled
 
-// Module 10809 (conjureChatTurns)
-import conjureStepTimeline from "conjureStepTimeline" /* 10810 */;
-import conjureChatHistory from "conjureChatHistory" /* 10811 */;
+// Module 10832 (conjureChatTurns)
+import conjureStepTimeline from "conjureStepTimeline" /* 10833 */;
+import conjureChatHistory from "conjureChatHistory" /* 10834 */;
 import size from "module_2" /* 2 */;
 
 function findOpenTurn(messages) {
@@ -137,7 +137,7 @@ export function turnIdOfSegment(message) {
     const tmp = require;
     if (id.startsWith(conjureChatHistory.TURN_ENTRY_PREFIX)) {
       const id1 = message.id;
-      turn_id = id1.slice(tmp(10811).TURN_ENTRY_PREFIX.length);
+      turn_id = id1.slice(tmp(10834).TURN_ENTRY_PREFIX.length);
     }
   }
   return turn_id;

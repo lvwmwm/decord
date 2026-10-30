@@ -1,165 +1,36 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15126
+// Function ID: 15127
 // Name: InAppReportsBlockUserElement
-// Dependencies: [19, 4857, 4947, 1084, 21, 558, 576, 504, 6029, 5749, 7474, 7482, 1125, 9836, 15080, 2]
+// Dependencies: [19, 4858, 4951, 1072, 21, 504, 6036, 5755, 7482, 7490, 15124, 1114, 9862, 2]
+// Exports: default
 
-// Module 15082 (InAppReportsBlockUserElement)
+// Module 15126 (InAppReportsBlockUserElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7474 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7482 */;
+import Constants from "Constants" /* 1072 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7490 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserElement(user) {
-  let first;
-  let reportId;
-  let tmp11;
-  let tmp12;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  let obj = user(reportId[6]);
-  const cResult = obj.c(28);
-  user = user.user;
-  const channelId = user.channelId;
-  reportId = user.reportId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== user.id) {
-    const fn = function u() {
-      return RelationshipStore.isBlocked(user.id);
-    };
-    cResult[1] = user.id;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== user) {
-    const items1 = [user];
-    cResult[3] = user;
-    cResult[4] = items1;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[4];
-  }
-  const tmpResult = user(reportId[7]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [ChannelStore];
-    cResult[5] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[5];
-  }
-  if (cResult[6] !== channelId) {
-    const fn2 = function h() {
-      return ChannelStore.getChannel(channelId);
-    };
-    const items3 = [channelId];
-    cResult[6] = channelId;
-    cResult[7] = fn2;
-    cResult[8] = items3;
-    tmp12 = items3;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[7];
-    tmp12 = cResult[8];
-  }
-  const tmpResult2 = user(reportId[7]);
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
-  let guild_id;
-  const tmp14 = cResult[9];
-  if (stateFromStores1 != null) {
-    guild_id = stateFromStores1.guild_id;
-  }
-  if (tmp14 === guild_id) {
-    let id;
-    const tmp16 = cResult[10];
-    if (stateFromStores1 != null) {
-      id = stateFromStores1.id;
-    }
-    if (tmp16 === id) {
-      if (cResult[13] === channelId) {
-        if (cResult[14] === reportId) {
-          class U {
-            constructor() {
-              const obj = AppAnalyticsUtilsDefault;
-              const obj2 = { other_user_id: user.id, report_id: reportId };
-              obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
-              const obj3 = RelationshipActionCreatorsDefault;
-              obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
-              const obj4 = SafetyToastsActionCreatorsDefault;
-              const result = obj4.showBlockSuccessToast(user.id, channelId);
-            }
-          }
-          return null;
-        }
-      }
-      class U {
-        constructor() {
-          const obj = AppAnalyticsUtilsDefault;
-          const obj2 = { other_user_id: user.id, report_id: reportId };
-          obj.trackWithMetadata(AnalyticEvents.IAR_BLOCK_USER_BUTTON_CLICKED, obj2);
-          const obj3 = RelationshipActionCreatorsDefault;
-          obj3.blockUser(user.id, { location: "ReportMenuBlockUser-iOS" }, channelId);
-          const obj4 = SafetyToastsActionCreatorsDefault;
-          const result = obj4.showBlockSuccessToast(user.id, channelId);
-        }
-      }
-      cResult[13] = channelId;
-      cResult[14] = reportId;
-      cResult[15] = user.id;
-      cResult[16] = U;
-    }
-  }
-  let guild_id1;
-  const getName = channelId(reportId[8]).getName;
-  channelId(reportId[8]);
-  if (stateFromStores1 != null) {
-    guild_id1 = stateFromStores1.guild_id;
-  }
-  let id1;
-  if (stateFromStores1 != null) {
-    id1 = stateFromStores1.id;
-  }
-  const name = getName(guild_id1, id1, user);
-  let guild_id2;
-  if (stateFromStores1 != null) {
-    guild_id2 = stateFromStores1.guild_id;
-  }
-  cResult[9] = guild_id2;
-  let id2;
-  if (stateFromStores1 != null) {
-    id2 = stateFromStores1.id;
-  }
-  cResult[10] = id2;
-  cResult[11] = user;
-  cResult[12] = name;
-}) : (function BlockUserElement(user) {
+let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
+
+export default function BlockUserElement(user) {
   user = user.user;
   const channelId = user.channelId;
   const reportId = user.reportId;
   const tmp = user;
   const tmp2 = reportId;
-  let obj = user(reportId[7]);
+  let obj = user(reportId[5]);
   const items = [RelationshipStore];
   const items1 = [user];
   const stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.isBlocked(user.id), items1);
-  let obj2 = user(reportId[7]);
+  let obj2 = user(reportId[5]);
   const items2 = [ChannelStore];
   const items3 = [channelId];
   const stateFromStores1 = obj2.useStateFromStores(items2, () => ChannelStore.getChannel(channelId), items3);
@@ -180,16 +51,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockUserEle
   const items5 = [user, reportId, channelId];
   let tmp7 = null;
   if (null != user) {
-    channelId(tmp2[14]);
-    const intl = tmp(tmp2[12]).intl;
+    channelId(tmp2[10]);
+    const intl = tmp(tmp2[11]).intl;
     let obj4 = { username: memo };
-    const intl2 = tmp(tmp2[12]).intl;
+    const intl2 = tmp(tmp2[11]).intl;
     const obj5 = { username: memo };
-    const intl3 = tmp(tmp2[12]).intl;
-    tmp7 = <tmp10 title={intl.formatToPlainString(tmp(tmp2[12]).t["Q1o/f3"], obj4)} disabledTitle={intl2.formatToPlainString(tmp(tmp2[12]).t["kA0S/d"], obj5)} description={intl3.string(tmp(tmp2[12]).t.G08MKu)} disabled={stateFromStores} variant="danger" onPress={tmp6} icon={null} />;
+    const intl3 = tmp(tmp2[11]).intl;
+    tmp7 = <tmp10 title={intl.formatToPlainString(tmp(tmp2[11]).t["Q1o/f3"], obj4)} disabledTitle={intl2.formatToPlainString(tmp(tmp2[11]).t["kA0S/d"], obj5)} description={intl3.string(tmp(tmp2[11]).t.G08MKu)} disabled={stateFromStores} variant="danger" onPress={tmp6} icon={null} />;
   }
   return tmp7;
-});
-let result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsBlockUserElement.tsx");
-
-export default tmp2;
+};

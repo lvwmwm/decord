@@ -1,16 +1,16 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10188
+// Function ID: 10189
 // Name: CloudUploader
-// Dependencies: [5, 1084, 5010, 3, 10164, 10165, 1125, 10169, 10170, 8230, 10171, 10172, 8198, 8200, 1445, 12, 2]
+// Dependencies: [5, 1072, 5014, 3, 10189, 10190, 1114, 10194, 10195, 8233, 10196, 10197, 8201, 8203, 1440, 12, 2]
 
-// Module 10163 (CloudUploader)
+// Module 10188 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import UploadPlatform from "UploadPlatform" /* 8200 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import UploadPlatform from "UploadPlatform" /* 8203 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
-import UploaderBase from "UploaderBase" /* 10164 */;
+import Constants from "Constants" /* 1072 */;
+import UploaderBase from "UploaderBase" /* 10189 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;
@@ -53,7 +53,7 @@ class CloudUploader extends UploaderBase {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -93,7 +93,7 @@ class CloudUploader extends UploaderBase {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -134,7 +134,7 @@ class CloudUploader extends UploaderBase {
                         obj.endBackgroundTask(_aborted);
                       }
                       c2 = 3;
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp12) {
                     c2 = 3;
@@ -284,7 +284,7 @@ class CloudUploader extends UploaderBase {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -391,12 +391,12 @@ class CloudUploader extends UploaderBase {
               } else {
                 c3 = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             }
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp57) {
           closure_2 = tmp57;
           if (0 === c3) {
@@ -437,7 +437,7 @@ class CloudUploader extends UploaderBase {
     let mediaEventSubscriptions = this.mediaEventSubscriptions;
     const id = this._file.id;
     set = mediaEventSubscriptions.set;
-    const obj = self(1445);
+    const obj = self(1440);
     let result = set(id, obj.onCompressionProgress((uri) => {
       uri = uri.uri;
       const uploadItems = self.uploadItems;

@@ -1,15 +1,15 @@
-// Module ID: 7705
-// Function ID: 7706
+// Module ID: 7710
+// Function ID: 7711
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 7706, 7704, 1084, 7707, 584, 1294, 1264, 4839, 1208, 1245, 2]
+// Dependencies: [5, 7711, 7709, 1072, 7712, 572, 1283, 1253, 4840, 1197, 1234, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7705 (FamilyCenterActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
+// Module 7710 (FamilyCenterActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7706 */;
-import Constants from "Constants" /* 1084 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7711 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ let obj = function _maybeFetchCollectiblesForInvoices() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -111,7 +111,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ obj = function _maybeFetchCollectiblesForGifts() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -183,7 +183,7 @@ obj = function _updateLinkForUserId() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -224,7 +224,7 @@ obj = function _updateLinkForUserId() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c2 = 3;
@@ -253,7 +253,7 @@ obj = function _removeLinkForUserId() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -295,7 +295,7 @@ obj = function _removeLinkForUserId() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c1 = 3;
@@ -319,7 +319,7 @@ obj = function _getLinkCodeForCurrentUser() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -362,7 +362,7 @@ obj = function _getLinkCodeForCurrentUser() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp4) {
         c0 = 3;
@@ -384,7 +384,7 @@ obj = function _shareIarWithParents() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -414,7 +414,7 @@ obj = function _shareIarWithParents() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -428,14 +428,22 @@ let _asyncToGenerator = _asyncToGenerator_mod;
 const FamilyCenterAction = FamilyCenterConstants.FamilyCenterAction;
 ({ AnalyticEvents: metroRequire, Endpoints: metroImportDefault } = Constants);
 obj = {
-  initialPageLoad() {
+  initialPageLoad(arg0) {
+    obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
+    }
+    let flag = obj.showLoading;
+    if (flag === undefined) {
+      flag = true;
+    }
     return (async (arg0, value) => {
       let actions;
       let gifts;
       let guilds;
       let invoices;
       let monthlyPurchases;
-      let obj18;
+      let obj15;
       let range_start_id;
       let spendingLimit;
       let topGuildActivities;
@@ -452,7 +460,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c14;
@@ -483,13 +491,16 @@ obj = {
               users = undefined;
               age_group = undefined;
               obj9 = undefined;
-              const obj16 = DispatcherDefault;
-              obj16.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
+              const tmp106 = flag;
+              if (tmp106) {
+                const obj13 = actions(users[5]);
+                obj13.dispatch({ type: "FAMILY_CENTER_FETCH_START" });
+              }
               c14 = 1;
-              const HTTP = require("HTTPUtils").HTTP;
-              const obj5 = { url: constants.FAMILY_CENTER_TEEN_ACTIVITY_ME, rejectWithError: obj18.rejectWithMigratedError() };
+              const HTTP = totals(users[6]).HTTP;
+              const obj5 = { url: totalSpendCurrency.FAMILY_CENTER_TEEN_ACTIVITY_ME, rejectWithError: obj15.rejectWithMigratedError() };
               const get = HTTP.get;
-              obj18 = require("HTTPUtils");
+              obj15 = totals(users[6]);
               c15 = 2;
               c16 = 1;
               const obj7 = { value: get(obj5), done: false };
@@ -497,7 +508,7 @@ obj = {
             }
           } else if (1 === c15) {
             c14 = 0;
-            const obj12 = closure_141_1(closure_141_2[5]);
+            const obj12 = actions(users[5]);
             obj12.dispatch({ type: "FAMILY_CENTER_INITIAL_LOAD_FAILURE" });
             c16 = 3;
             return { value: null, done: true };
@@ -622,7 +633,7 @@ obj = {
                 if (tmp46) {
                   c15 = 3;
                   c16 = 1;
-                  const obj10 = { value: closure_141_8(obj9.invoices), done: false };
+                  const obj10 = { value: spendingLimit(obj9.invoices), done: false };
                   return obj10;
                 }
               }
@@ -644,31 +655,31 @@ obj = {
                 obj = { value, done: true };
                 return obj;
               }
-              const obj13 = { type: "FAMILY_CENTER_INITIAL_LOAD", familyCenterTeenActivity: obj9, linkedUsers: linked_users, users, ageGroup: age_group };
-              const obj4 = closure_141_1(closure_141_2[5]);
-              obj4.dispatch(obj13);
+              const obj14 = { type: "FAMILY_CENTER_INITIAL_LOAD", familyCenterTeenActivity: obj9, linkedUsers: linked_users, users, ageGroup: age_group };
+              const obj4 = actions(users[5]);
+              obj4.dispatch(obj14);
               const tmp64 = null != body.restricted_schedule && null != obj9.teenId;
               if (tmp64) {
-                const obj14 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: obj9.teenId, restrictedSchedule: body.restricted_schedule };
-                const obj6 = closure_141_1(closure_141_2[5]);
-                obj6.dispatch(obj14);
+                const obj16 = { type: "USER_RESTRICTED_SCHEDULE_UPDATE", userId: obj9.teenId, restrictedSchedule: body.restricted_schedule };
+                const obj6 = actions(users[5]);
+                obj6.dispatch(obj16);
               }
               c16 = 3;
-              const obj15 = { value: obj9, done: true };
-              return obj15;
+              const obj17 = { value: obj9, done: true };
+              return obj17;
             }
             const tmp51 = null != obj9.gifts && obj9.gifts.length > 0;
             if (tmp51) {
               c15 = 4;
               c16 = 1;
-              const obj17 = { value: closure_141_10(obj9.gifts), done: false };
-              return obj17;
+              const obj18 = { value: invoices(obj9.gifts), done: false };
+              return obj18;
             }
           }
-        } catch (tmp87) {
+        } catch (tmp94) {
           if (0 === c14) {
             c16 = 3;
-            throw tmp87;
+            throw tmp94;
           } else {
             c15 = 1;
           }
@@ -765,7 +776,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c11;
@@ -1059,7 +1070,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1111,7 +1122,7 @@ obj = {
             obj.dispatch(obj7);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp27) {
           c3 = 3;
           throw tmp27;

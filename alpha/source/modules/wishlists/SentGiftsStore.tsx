@@ -1,11 +1,11 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14402
+// Function ID: 14403
 // Name: SentGiftsStore
-// Dependencies: [32, 504, 584, 2]
+// Dependencies: [32, 504, 572, 2]
 
-// Module 14369 (SentGiftsStore)
+// Module 14402 (SentGiftsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

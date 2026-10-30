@@ -1,18 +1,17 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9029
+// Function ID: 9030
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 2043, 1084, 504, 1101, 1385, 6868, 558, 576, 2]
+// Dependencies: [5, 19, 2040, 1072, 504, 1090, 1380, 6875, 2]
+// Exports: useGuildEmbeddedApplications
 
-// Module 9016 (useGuildEmbeddedApplications)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
+// Module 9029 (useGuildEmbeddedApplications)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6875 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +61,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -91,7 +90,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
         return obj;
       }
       c3 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp10) {
       c3 = 3;
       throw tmp10;
@@ -99,59 +98,10 @@ let closure_3 = _asyncToGenerator(async (arg0, value, arg2) => {
   }
 });
 let closure_6 = createFetchStore(ApplicationStore, obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEmbeddedApplications(arg0, arg1, arg2) {
-  const obj = react2;
-  const cResult = obj.c(6);
-  const tmp2 = closure_6(arg0, arg1, arg2);
-  const data = tmp2.data;
-  const error = tmp2.error;
-  const isLoading = tmp2.isLoading;
-  const refetch = tmp2.refetch;
-  let closure_4 = react.useRef(false);
-  const obj2 = react;
-  if (cResult[0] === data) {
-    if (cResult[1] === error) {
-      if (cResult[2] === isLoading) {
-        let tmp3;
-        let tmp4;
-        if (cResult[3] === refetch) {
-          tmp3 = cResult[4];
-          tmp4 = cResult[5];
-        }
-        const effect = obj2.useEffect(tmp3, tmp4);
-        return tmp2;
-      }
-    }
-  }
-  const fn = function s() {
-    if (null != data) {
-      ref.current = true;
-    } else {
-      let current = ref.current;
-      const tmp = ref;
-      if (current) {
-        current = !isLoading;
-      }
-      if (current) {
-        current = null == error;
-      }
-      if (current) {
-        tmp.current = false;
-        refetch();
-      }
-    }
-  };
-  const items = [data, isLoading, error, refetch];
-  cResult[0] = data;
-  cResult[1] = error;
-  cResult[2] = isLoading;
-  cResult[3] = refetch;
-  cResult[4] = fn;
-  cResult[5] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (function useGuildEmbeddedApplications(arg0, arg1, arg2) {
-  let tmp = closure_6(arg0, arg1, arg2);
+const result = size.fileFinishedImporting("modules/applications/useGuildEmbeddedApplications.tsx");
+
+export function useGuildEmbeddedApplications(APP_CHANNEL, guildId, channelId) {
+  let tmp = closure_6(APP_CHANNEL, guildId, channelId);
   const data = tmp.data;
   const error = tmp.error;
   const isLoading = tmp.isLoading;
@@ -177,7 +127,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildEm
     }
   }, items);
   return tmp;
-});
-const result = size.fileFinishedImporting("modules/applications/useGuildEmbeddedApplications.tsx");
-
-export const useGuildEmbeddedApplications = tmp5;
+}

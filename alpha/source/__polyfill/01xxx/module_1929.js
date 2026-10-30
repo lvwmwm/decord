@@ -4,28 +4,59 @@
 
 // Module 1929
 const obj = {
-  locale: "nl",
+  locale: "ru",
   pluralRuleFunction(arg0, arg1) {
-    let str2 = "other";
+    let arr;
+    let str6;
+    let tmp2;
     const str = String(arg0);
-    const tmp = str.split(".")[1];
+    const parts = str.split(".");
+    [arr, tmp2] = parts;
+    const substr = arr.slice(-1);
+    const substr1 = arr.slice(-2);
+    let str2 = "other";
     if (!arg1) {
-      let str3 = "other";
-      if (1 == arg0) {
-        str3 = "other";
-        if (!tmp) {
+      let str3;
+      let str5;
+      if (!tmp2) {
+        if (1 == substr) {
           str3 = "one";
         }
+        str2 = str3;
       }
-      str2 = str3;
+      if (!tmp2) {
+        if (substr >= 2) {
+          if (substr <= 4) {
+            str5 = "few";
+            if (substr1 >= 12) {
+              str5 = "few";
+            }
+          }
+          str3 = str5;
+        }
+      }
+      if (tmp2) {
+        if (!tmp2) {
+          if (substr >= 5) {
+            str5 = str6;
+          }
+        }
+        str6 = "other";
+        if (!tmp2) {
+          str6 = "other";
+          if (substr1 >= 11) {
+            str6 = "other";
+          }
+        }
+      }
+      str6 = "many";
     }
     return str2;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-AW", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BE", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-BQ", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-CW", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SR", parentLocale: "nl" });
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "nl-SX", parentLocale: "nl" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-BY", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KG", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-KZ", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-MD", parentLocale: "ru" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "ru-UA", parentLocale: "ru" });

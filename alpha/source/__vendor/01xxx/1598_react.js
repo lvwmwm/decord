@@ -1,23 +1,21 @@
 // Module ID: 1598
 // Function ID: 1599
 // Name: react
-// Dependencies: [19, 1573]
-// Exports: usePreventRemoveContext
+// Dependencies: [19]
 
 // Module 1598 (react)
-import react2 from "react" /* 1573 */;
 import react from "react" /* 19 */;
 
-
-export function usePreventRemoveContext() {
-  const context = react.useContext(react2.PreventRemoveContext);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the prevent remove context. Is your component inside NavigationContent?");
+const obj = {};
+const createContext = react.createContext;
+Object.defineProperty(obj, "options", {
+  get: () => {
+    const error = new Error("Couldn't find a LinkingContext context.");
     throw error;
-  } else {
-    return context;
-  }
-}
+  },
+  set: undefined
+});
+const context = createContext(obj);
+context.displayName = "LinkingContext";
+
+export const LinkingContext = context;

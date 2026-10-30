@@ -1,12 +1,12 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12178
+// Function ID: 12179
 // Name: refreshApplicationWidget
-// Dependencies: [5, 1084, 5133, 1294, 2]
+// Dependencies: [5, 1072, 5139, 1283, 2]
 // Exports: refreshApplicationWidget
 
-// Module 11990 (refreshApplicationWidget)
-import Constants from "Constants" /* 1084 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 5133 */;
+// Module 12178 (refreshApplicationWidget)
+import Constants from "Constants" /* 1072 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 5139 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ export function refreshApplicationWidget(play) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

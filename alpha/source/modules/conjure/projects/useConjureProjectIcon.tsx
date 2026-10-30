@@ -1,77 +1,17 @@
-// Module ID: 12265
-// Function ID: 12266
+// Module ID: 12428
+// Function ID: 12429
 // Name: useConjureProjectIcon
-// Dependencies: [558, 576, 6868, 1415, 2]
-// Exports: conjureProjectIconMetrics
+// Dependencies: [6875, 1410, 2]
+// Exports: conjureProjectIconMetrics, default
 
-// Module 12265 (useConjureProjectIcon)
-import react from "react" /* 576 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12428 (useConjureProjectIcon)
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6875 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const ApplicationActionCreators = tmp(6868);
-function conjureProjectIconMetrics(arg0) {
-  const obj = { glyphSize: Math.round(0.6 * arg0), radius: arg0 / 4 };
-  return obj;
-}
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectIcon(preview_application_id, size) {
-  const obj = react;
-  const cResult = obj.c(9);
-  let application_id = preview_application_id.preview_application_id;
-  if (application_id == null) {
-    application_id = preview_application_id.application_id;
-  }
-  const tmpResult = ApplicationActionCreators;
-  const data = tmpResult.useApplication(application_id).data;
-  if (cResult[0] === data) {
-    if (cResult[1] === application_id) {
-      let tmp4;
-      let tmp8;
-      if (cResult[2] === size) {
-        tmp4 = cResult[3];
-      }
-      if (cResult[4] !== size) {
-        const obj2 = { glyphSize: Math.round(0.6 * size), radius: size / 4 };
-        const _Math = Math;
-        cResult[4] = size;
-        cResult[5] = obj2;
-        tmp8 = obj2;
-      } else {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === tmp4) {
-        let tmp10;
-        if (cResult[7] === tmp8) {
-          tmp10 = cResult[8];
-        }
-        return tmp10;
-      }
-      const obj4 = { url: tmp4 };
-      const merged = Object.assign(tmp8);
-      cResult[6] = tmp4;
-      cResult[7] = tmp8;
-      cResult[8] = obj4;
-      tmp10 = obj4;
-    }
-  }
-  let icon;
-  if (data != null) {
-    icon = data.icon;
-  }
-  let applicationIconURL;
-  if (null != icon) {
-    const obj5 = { id: application_id, icon: data.icon, size };
-    const obj3 = AvatarUtilsDefault;
-    applicationIconURL = obj3.getApplicationIconURL(obj5);
-  }
-  cResult[0] = data;
-  cResult[1] = application_id;
-  cResult[2] = size;
-  cResult[3] = applicationIconURL;
-  tmp4 = applicationIconURL;
-}) : (function useConjureProjectIcon(preview_application_id, size) {
+const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectIcon.tsx");
+
+export default function useConjureProjectIcon(preview_application_id, size) {
   let application_id = preview_application_id.preview_application_id;
   if (application_id == null) {
     application_id = preview_application_id.application_id;
@@ -92,8 +32,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   const obj5 = { glyphSize: Math.round(0.6 * size), radius: size / 4 };
   const merged = Object.assign(obj5);
   return obj4;
-});
-const result = size.fileFinishedImporting("modules/conjure/projects/useConjureProjectIcon.tsx");
-
-export default tmp2;
-export { conjureProjectIconMetrics };
+};
+export function conjureProjectIconMetrics(arg0) {
+  const obj = { glyphSize: Math.round(0.6 * arg0), radius: arg0 / 4 };
+  return obj;
+}

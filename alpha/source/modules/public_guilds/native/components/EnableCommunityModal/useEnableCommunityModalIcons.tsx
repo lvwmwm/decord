@@ -1,18 +1,17 @@
-// Module ID: 19712
-// Function ID: 19713
+// Module ID: 19775
+// Function ID: 19776
 // Name: useEnableCommunityModalIcons
-// Dependencies: [32, 19, 1095, 5012, 19713, 19714, 19715, 19719, 19720, 8170, 558, 576, 5242, 2]
+// Dependencies: [32, 19, 1083, 5016, 19776, 19777, 19778, 19782, 19783, 8351, 5248, 2]
+// Exports: default
 
-// Module 19712 (useEnableCommunityModalIcons)
-import Constants from "Constants" /* 1095 */;
-import useThemeDefault from "useTheme" /* 5242 */;
+// Module 19775 (useEnableCommunityModalIcons)
+import Constants from "Constants" /* 1083 */;
+import useThemeDefault from "useTheme" /* 5248 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
 
 const ThemeTypes = Constants.ThemeTypes;
 class EnableCommunityModalIcons {
@@ -29,9 +28,9 @@ Object.defineProperty(prototype, "safetyCheck", {
     let tmpResult;
     const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      tmpResult = tmp(19713);
+      tmpResult = tmp(19776);
     } else {
-      tmpResult = tmp(19714);
+      tmpResult = tmp(19777);
     }
     return tmpResult;
   },
@@ -49,9 +48,9 @@ Object.defineProperty(prototype, "finishingTouches", {
     let tmpResult;
     const obj = require("shared");
     if (obj.isThemeDark(this.theme)) {
-      tmpResult = tmp(19719);
+      tmpResult = tmp(19782);
     } else {
-      tmpResult = tmp(19720);
+      tmpResult = tmp(19783);
     }
     return tmpResult;
   },
@@ -63,32 +62,9 @@ Object.defineProperty(prototype, "close", {
   },
   set: undefined
 });
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnableCommunityModalIcons() {
-  let closure_0;
-  let tmp3;
-  const obj = require("react");
-  const cResult = obj.c(2);
-  const tmp2 = useThemeDefault();
-  _require = tmp2;
-  if (cResult[0] !== tmp2) {
-    const fn = function o() {
-      if (typeof EnableCommunityModalIcons === "function") {
-        const merged = Object.assign({ theme: null });
-        merged[0] = ThemeTypes.LIGHT;
-        merged.theme = tmp;
-        return merged;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    };
-    cResult[0] = tmp2;
-    cResult[1] = fn;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return _slicedToArray(react.useState(tmp3), 1)[0];
-}) : (function useEnableCommunityModalIcons() {
+const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
+
+export default function useEnableCommunityModalIcons() {
   let closure_0 = useThemeDefault();
   return _slicedToArray(react.useState(() => {
     if (typeof EnableCommunityModalIcons === "function") {
@@ -100,7 +76,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnableCom
       throw new TypeError("Trying to call a non-function");
     }
   }), 1)[0];
-});
-const result = size.fileFinishedImporting("modules/public_guilds/native/components/EnableCommunityModal/useEnableCommunityModalIcons.tsx");
-
-export default tmp2;
+};

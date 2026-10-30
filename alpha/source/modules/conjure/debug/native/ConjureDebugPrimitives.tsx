@@ -1,21 +1,20 @@
-// Module ID: 12829
-// Function ID: 12830
+// Module ID: 12980
+// Function ID: 12981
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5271, 1125, 3864, 12827, 5281, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 1114, 3865, 12978, 5629, 2]
+// Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 12829 (ConjureDebugPrimitives)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 12827 */;
+// Module 12980 (ConjureDebugPrimitives)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 12978 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -28,12 +27,10 @@ let obj4;
 let obj5;
 let obj6;
 let obj7;
-let obj8;
-let obj9;
 ({ ActivityIndicator: c3, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { toolbar: obj2, toolbarStatus: { flex: 1 }, section: obj3, statRow: obj4, statRowHead: obj5, statLabel: { flexShrink: 1 }, statValue: { flexShrink: 1, textAlign: "right" }, statGroup: obj6, statValueGroup: { flexShrink: 1, justifyContent: "flex-end" }, meterTrack: obj7, meterFill: obj8, meterFillCritical: obj9 };
+let obj = { toolbar: obj2, toolbarStatus: { flex: 1 }, section: obj3, statRow: obj4, statRowHead: obj5, statLabel: { flexShrink: 1 }, statValue: { flexShrink: 1, textAlign: "right" }, statGroup: obj6, statValueGroup: { flexShrink: 1, justifyContent: "flex-end" }, meterTrack: obj7, meterFill: { height: "100%", backgroundColor: nativeDefault.colors.TEXT_BRAND }, meterFillCritical: { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL } };
 obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_8 };
@@ -41,105 +38,12 @@ obj4 = { gap: nativeDefault.space.PX_4 };
 obj5 = { flexDirection: "row", alignItems: "baseline", justifyContent: "space-between", gap: nativeDefault.space.PX_12 };
 obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 obj7 = { height: 4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, overflow: "hidden" };
-obj8 = { height: "100%", backgroundColor: nativeDefault.colors.TEXT_BRAND };
-obj9 = { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL };
+({ height: "100%", backgroundColor: nativeDefault.colors.TEXT_BRAND });
+({ backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL });
 let closure_7 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapshotToolbar(arg0) {
-  let INVO50;
-  let fetchState;
-  let formatToPlainString;
-  let generatedAt;
-  let intl2;
-  let items;
-  let obj7;
-  let onRefresh;
-  let tmp9;
-  let tmpResult;
-  const obj = react2;
-  const cResult = obj.c(13);
-  ({ generatedAt, fetchState, onRefresh } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] === fetchState) {
-    let tmp6;
-    if (cResult[1] === generatedAt) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] === tmp4.toolbarStatus) {
-      let tmp14;
-      let tmp19;
-      let tmp22;
-      if (cResult[4] === tmp6) {
-        tmp14 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(1125).intl;
-        const stringResult = intl3.string(_modDef3864.oKEgiu);
-        cResult[6] = stringResult;
-        tmp19 = stringResult;
-      } else {
-        tmp19 = cResult[6];
-      }
-      if (cResult[7] !== onRefresh) {
-        const obj2 = { variant: "secondary", size: "sm", text: tmp19, onPress: onRefresh };
-        const tmp24 = hasOwnProperty(components_Button_Button.Button, obj2);
-        cResult[7] = onRefresh;
-        cResult[8] = tmp24;
-        tmp22 = tmp24;
-      } else {
-        tmp22 = cResult[8];
-      }
-      if (cResult[9] === tmp4.toolbar) {
-        if (cResult[10] === tmp14) {
-          let tmp25;
-          if (cResult[11] === tmp22) {
-            tmp25 = cResult[12];
-          }
-          return tmp25;
-        }
-      }
-      const obj3 = { style: tmp5, children: items };
-      items = [tmp14, tmp22];
-      const tmp28 = metroRequire(React3, obj3);
-      cResult[9] = tmp4.toolbar;
-      cResult[10] = tmp14;
-      cResult[11] = tmp22;
-      cResult[12] = tmp28;
-      tmp25 = tmp28;
-    }
-    const obj4 = { style: tmp4.toolbarStatus, children: tmp6 };
-    const tmp17 = hasOwnProperty(React3, obj4);
-    cResult[3] = tmp4.toolbarStatus;
-    cResult[4] = tmp6;
-    cResult[5] = tmp17;
-    tmp14 = tmp17;
-  }
-  if ("loading" === fetchState) {
-    tmp9 = hasOwnProperty(_false, { size: "small" });
-  } else if ("failed" === fetchState) {
-    const obj5 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3864.ZVByPX) };
-    const Text2 = tmp(5271).Text;
-    intl2 = tmp(1125).intl;
-    tmp9 = hasOwnProperty(Text2, obj5);
-  } else {
-    tmp9 = null;
-    if (null != generatedAt) {
-      const obj6 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj7) };
-      const Text = tmp(5271).Text;
-      const intl = tmp(1125).intl;
-      formatToPlainString = intl.formatToPlainString;
-      obj7 = { time: tmpResult.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3864.INVO50;
-      tmpResult = ConjureDebugFormat;
-      tmp9 = hasOwnProperty(Text, obj6);
-    }
-  }
-  cResult[0] = fetchState;
-  cResult[1] = generatedAt;
-  cResult[2] = tmp9;
-  tmp6 = tmp9;
-}) : (function DebugSnapshotToolbar(onRefresh) {
+const result = size.fileFinishedImporting("modules/conjure/debug/native/ConjureDebugPrimitives.tsx");
+
+export function DebugSnapshotToolbar(onRefresh) {
   let INVO50;
   let fetchState;
   let formatToPlainString;
@@ -159,7 +63,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
   if ("loading" === fetchState) {
     tmp4Result = tmp4(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3864.ZVByPX) };
+    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3865.ZVByPX) };
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     tmp4Result = tmp4(Text2, obj3);
@@ -171,55 +75,19 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSnapsho
       const intl = intl4.intl;
       formatToPlainString = intl.formatToPlainString;
       obj6 = { time: obj5.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3864.INVO50;
+      INVO50 = _modDef3865.INVO50;
       obj5 = ConjureDebugFormat;
       tmp4Result = tmp4(Text, obj4);
     }
   }
   items = [hasOwnProperty(React3, obj2), ];
-  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3864.oKEgiu), onPress: onRefresh };
+  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3865.oKEgiu), onPress: onRefresh };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items[1] = hasOwnProperty(Button, obj7);
   return tmp2(React3, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSection(arg0) {
-  let children;
-  let items;
-  let title;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ title, children } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] !== title) {
-    const obj2 = { variant: "text-xs/semibold", color: "text-muted", children: title };
-    const tmp7 = hasOwnProperty(Text_Text.Text, obj2);
-    cResult[0] = title;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === children) {
-    if (cResult[3] === tmp4.section) {
-      let tmp8;
-      if (cResult[4] === tmp5) {
-        tmp8 = cResult[5];
-      }
-      return tmp8;
-    }
-  }
-  const obj3 = { style: tmp4.section, children: items };
-  items = [tmp5, children];
-  const tmp9 = metroRequire(React3, obj3);
-  cResult[2] = children;
-  cResult[3] = tmp4.section;
-  cResult[4] = tmp5;
-  cResult[5] = tmp9;
-  tmp8 = tmp9;
-}) : (function DebugSection(arg0) {
+}
+export function DebugSection(arg0) {
   let children;
   let items;
   let title;
@@ -227,175 +95,11 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugSection
   const obj = { style: closure_7().section, children: items };
   items = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-muted", children: title }), children];
   return metroRequire(React3, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugNote(children) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  children = children.children;
-  if (cResult[0] !== children) {
-    const obj2 = { variant: "text-sm/normal", color: "text-muted", children };
-    const tmp6 = hasOwnProperty(Text_Text.Text, obj2);
-    cResult[0] = children;
-    cResult[1] = tmp6;
-    tmp4 = tmp6;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function DebugNote(children) {
+}
+export function DebugNote(children) {
   return hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: children.children });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugStatRow(arg0) {
-  let critical;
-  let hint;
-  let icon;
-  let items;
-  let items1;
-  let items2;
-  let items4;
-  let label;
-  let state;
-  let value;
-  const obj = react2;
-  const cResult = obj.c(30);
-  ({ label, value, hint, critical, icon, state } = arg0);
-  const tmp4 = undefined !== critical && critical;
-  const tmp5 = closure_7();
-  if (cResult[0] === tmp5.statGroup) {
-    let tmp6;
-    let tmp7;
-    if (cResult[1] === tmp5.statLabel) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] !== label) {
-      const obj2 = { variant: "text-sm/normal", color: "text-muted", children: label };
-      const tmp9 = hasOwnProperty(Text_Text.Text, obj2);
-      cResult[3] = label;
-      cResult[4] = tmp9;
-      tmp7 = tmp9;
-    } else {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] === icon) {
-      if (cResult[6] === tmp6) {
-        let tmp10;
-        if (cResult[7] === tmp7) {
-          tmp10 = cResult[8];
-        }
-        if (cResult[9] === tmp5.statGroup) {
-          let tmp14;
-          if (cResult[10] === tmp5.statValueGroup) {
-            tmp14 = cResult[11];
-          }
-          let str = "text-default";
-          if (tmp4) {
-            str = "text-feedback-critical";
-          }
-          if (cResult[12] === tmp5.statValue) {
-            if (cResult[13] === str) {
-              let tmp15;
-              if (cResult[14] === value) {
-                tmp15 = cResult[15];
-              }
-              if (cResult[16] === state) {
-                if (cResult[17] === tmp14) {
-                  let tmp18;
-                  if (cResult[18] === tmp15) {
-                    tmp18 = cResult[19];
-                  }
-                  if (cResult[20] === tmp5.statRowHead) {
-                    if (cResult[21] === tmp10) {
-                      let tmp22;
-                      let tmp26;
-                      if (cResult[22] === tmp18) {
-                        tmp22 = cResult[23];
-                      }
-                      if (cResult[24] !== hint) {
-                        let tmp27 = null;
-                        if (null != hint) {
-                          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: hint };
-                          tmp27 = hasOwnProperty(tmp(5271).Text, obj3);
-                        }
-                        cResult[24] = hint;
-                        cResult[25] = tmp27;
-                        tmp26 = tmp27;
-                      } else {
-                        tmp26 = cResult[25];
-                      }
-                      if (cResult[26] === tmp5.statRow) {
-                        if (cResult[27] === tmp26) {
-                          let tmp29;
-                          if (cResult[28] === tmp22) {
-                            tmp29 = cResult[29];
-                          }
-                          return tmp29;
-                        }
-                      }
-                      const obj4 = { style: tmp5.statRow, children: items };
-                      items = [tmp22, tmp26];
-                      const tmp32 = metroRequire(React3, obj4);
-                      cResult[26] = tmp5.statRow;
-                      cResult[27] = tmp26;
-                      cResult[28] = tmp22;
-                      cResult[29] = tmp32;
-                      tmp29 = tmp32;
-                    }
-                  }
-                  const obj5 = { style: tmp5.statRowHead, children: items1 };
-                  items1 = [tmp10, tmp18];
-                  const tmp25 = metroRequire(React3, obj5);
-                  cResult[20] = tmp5.statRowHead;
-                  cResult[21] = tmp10;
-                  cResult[22] = tmp18;
-                  cResult[23] = tmp25;
-                  tmp22 = tmp25;
-                }
-              }
-              const obj6 = { style: tmp14, children: items2 };
-              items2 = [state, tmp15];
-              const tmp21 = metroRequire(React3, obj6);
-              cResult[16] = state;
-              cResult[17] = tmp14;
-              cResult[18] = tmp15;
-              cResult[19] = tmp21;
-              tmp18 = tmp21;
-            }
-          }
-          const obj7 = { variant: "text-sm/medium", color: str, style: tmp5.statValue, children: value };
-          const tmp17 = hasOwnProperty(Text_Text.Text, obj7);
-          cResult[12] = tmp5.statValue;
-          cResult[13] = str;
-          cResult[14] = value;
-          cResult[15] = tmp17;
-          tmp15 = tmp17;
-        }
-        const items3 = [, ];
-        ({ statValueGroup: arr3[0], statGroup: arr3[1] } = tmp5);
-        cResult[9] = tmp5.statGroup;
-        cResult[10] = tmp5.statValueGroup;
-        cResult[11] = items3;
-        tmp14 = items3;
-      }
-    }
-    const obj8 = { style: tmp6, children: items4 };
-    items4 = [icon, tmp7];
-    const tmp13 = metroRequire(React3, obj8);
-    cResult[5] = icon;
-    cResult[6] = tmp6;
-    cResult[7] = tmp7;
-    cResult[8] = tmp13;
-    tmp10 = tmp13;
-  }
-  const items5 = [, ];
-  ({ statLabel: arr[0], statGroup: arr[1] } = tmp5);
-  cResult[0] = tmp5.statGroup;
-  cResult[1] = tmp5.statLabel;
-  cResult[2] = items5;
-  tmp6 = items5;
-}) : (function DebugStatRow(arg0) {
+}
+export function DebugStatRow(arg0) {
   let critical;
   let hint;
   let icon;
@@ -442,179 +146,8 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugStatRow
   }
   items5[1] = tmp4Result;
   return metroRequire(React3, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugMeter(arg0) {
-  let formatValue;
-  let items;
-  let items1;
-  let items2;
-  let label;
-  let max;
-  let used;
-  const obj = react2;
-  const cResult = obj.c(35);
-  ({ label, used, max, formatValue } = arg0);
-  const tmp4 = closure_7();
-  let num = 0;
-  if (max > 0) {
-    const _Math = Math;
-    const _Math2 = Math;
-    num = Math.min(1, Math.max(0, used / max));
-  }
-  let meterFillCritical = num >= 0.9;
-  if (cResult[0] === formatValue) {
-    let tmp6;
-    if (cResult[1] === used) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] === formatValue) {
-      let tmp8;
-      let tmp12;
-      let tmp13;
-      if (cResult[4] === max) {
-        tmp8 = cResult[5];
-      }
-      const _HermesInternal = HermesInternal;
-      const combined = "" + tmp6 + " / " + tmp8;
-      if (cResult[6] !== combined) {
-        const obj2 = { text: combined };
-        cResult[6] = combined;
-        cResult[7] = obj2;
-        tmp12 = obj2;
-      } else {
-        tmp12 = cResult[7];
-      }
-      if (cResult[8] !== label) {
-        const obj3 = { variant: "text-sm/normal", color: "text-muted", children: label };
-        const tmp15 = hasOwnProperty(Text_Text.Text, obj3);
-        cResult[8] = label;
-        cResult[9] = tmp15;
-        tmp13 = tmp15;
-      } else {
-        tmp13 = cResult[9];
-      }
-      if (cResult[10] === tmp4.statLabel) {
-        let tmp16;
-        if (cResult[11] === tmp13) {
-          tmp16 = cResult[12];
-        }
-        let str3 = "text-default";
-        if (meterFillCritical) {
-          str3 = "text-feedback-critical";
-        }
-        if (cResult[13] === str3) {
-          let tmp20;
-          if (cResult[14] === combined) {
-            tmp20 = cResult[15];
-          }
-          if (cResult[16] === tmp4.statRowHead) {
-            if (cResult[17] === tmp16) {
-              let tmp23;
-              let tmp28;
-              if (cResult[18] === tmp20) {
-                tmp23 = cResult[19];
-              }
-              if (meterFillCritical) {
-                meterFillCritical = tmp4.meterFillCritical;
-              }
-              const text = `${100 * num}%`;
-              if (cResult[20] !== `${100 * num}%`) {
-                const obj4 = { width: text };
-                cResult[20] = text;
-                cResult[21] = obj4;
-                tmp28 = obj4;
-              } else {
-                tmp28 = cResult[21];
-              }
-              if (cResult[22] === tmp4.meterFill) {
-                if (cResult[23] === tmp28) {
-                  let tmp29;
-                  if (cResult[24] === meterFillCritical) {
-                    tmp29 = cResult[25];
-                  }
-                  if (cResult[26] === tmp4.meterTrack) {
-                    let tmp33;
-                    if (cResult[27] === tmp29) {
-                      tmp33 = cResult[28];
-                    }
-                    if (cResult[29] === label) {
-                      if (cResult[30] === tmp4.statRow) {
-                        if (cResult[31] === tmp33) {
-                          if (cResult[32] === tmp12) {
-                            let tmp37;
-                            if (cResult[33] === tmp23) {
-                              tmp37 = cResult[34];
-                            }
-                            return tmp37;
-                          }
-                        }
-                      }
-                    }
-                    const obj5 = { style: tmp4.statRow, accessibilityRole: "progressbar", accessibilityLabel: label, accessibilityValue: tmp12, children: items };
-                    items = [tmp23, tmp33];
-                    const tmp40 = metroRequire(React3, obj5);
-                    cResult[29] = label;
-                    cResult[30] = tmp4.statRow;
-                    cResult[31] = tmp33;
-                    cResult[32] = tmp12;
-                    cResult[33] = tmp23;
-                    cResult[34] = tmp40;
-                    tmp37 = tmp40;
-                  }
-                  const obj6 = { style: tmp4.meterTrack, children: tmp29 };
-                  const tmp36 = hasOwnProperty(React3, obj6);
-                  cResult[26] = tmp4.meterTrack;
-                  cResult[27] = tmp29;
-                  cResult[28] = tmp36;
-                  tmp33 = tmp36;
-                }
-              }
-              const obj7 = { style: items1 };
-              items1 = [tmp4.meterFill, meterFillCritical, tmp28];
-              const tmp32 = hasOwnProperty(React3, obj7);
-              cResult[22] = tmp4.meterFill;
-              cResult[23] = tmp28;
-              cResult[24] = meterFillCritical;
-              cResult[25] = tmp32;
-              tmp29 = tmp32;
-            }
-          }
-          const obj8 = { style: tmp4.statRowHead, children: items2 };
-          items2 = [tmp16, tmp20];
-          const tmp26 = metroRequire(React3, obj8);
-          cResult[16] = tmp4.statRowHead;
-          cResult[17] = tmp16;
-          cResult[18] = tmp20;
-          cResult[19] = tmp26;
-          tmp23 = tmp26;
-        }
-        const obj9 = { variant: "text-sm/medium", color: str3, children: combined };
-        const tmp22 = hasOwnProperty(Text_Text.Text, obj9);
-        cResult[13] = str3;
-        cResult[14] = combined;
-        cResult[15] = tmp22;
-        tmp20 = tmp22;
-      }
-      const obj10 = { style: tmp4.statLabel, children: tmp13 };
-      const tmp19 = hasOwnProperty(React3, obj10);
-      cResult[10] = tmp4.statLabel;
-      cResult[11] = tmp13;
-      cResult[12] = tmp19;
-      tmp16 = tmp19;
-    }
-    const formatValueResult = formatValue(max);
-    cResult[3] = formatValue;
-    cResult[4] = max;
-    cResult[5] = formatValueResult;
-    tmp8 = formatValueResult;
-  }
-  const formatValueResult1 = formatValue(used);
-  cResult[0] = formatValue;
-  cResult[1] = used;
-  cResult[2] = formatValueResult1;
-  tmp6 = formatValueResult1;
-}) : (function DebugMeter(arg0) {
+}
+export function DebugMeter(arg0) {
   let formatValue;
   let items;
   let items1;
@@ -655,11 +188,4 @@ let tmp10 = ReactCompilerGating.isReactCompilerEnabled() ? (function DebugMeter(
   items2[2] = obj5;
   items1[1] = hasOwnProperty(React3, obj4);
   return metroRequire(React3, obj);
-});
-const result = size.fileFinishedImporting("modules/conjure/debug/native/ConjureDebugPrimitives.tsx");
-
-export const DebugSnapshotToolbar = tmp6;
-export const DebugSection = tmp7;
-export const DebugNote = tmp8;
-export const DebugStatRow = tmp9;
-export const DebugMeter = tmp10;
+}

@@ -1,36 +1,34 @@
-// Module ID: 13077
-// Function ID: 13078
+// Module ID: 13228
+// Function ID: 13229
 // Name: conjureServerAppRemoval
-// Dependencies: [5, 19, 2043, 4935, 4917, 4879, 4937, 4947, 1389, 1084, 10843, 5641, 558, 576, 504, 12, 6889, 7405, 6868, 2]
-// Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp
+// Dependencies: [5, 19, 2040, 4939, 4921, 4880, 4941, 4951, 1384, 1072, 10866, 5647, 504, 12, 6896, 7413, 6875, 2]
+// Exports: conjureDeleteAppChannelItems, conjureKickAppItems, loadConjureServerApp, useConjureServerApp
 
-// Module 13077 (conjureServerAppRemoval)
-import Constants from "Constants" /* 1084 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4935 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6868 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
-import ConjureUtils from "ConjureUtils" /* 7405 */;
-import conjureAppInServer from "conjureAppInServer" /* 10843 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+// Module 13228 (conjureServerAppRemoval)
+import Constants from "Constants" /* 1072 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4939 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6875 */;
+import ConjureUtils from "ConjureUtils" /* 7413 */;
+import conjureAppInServer from "conjureAppInServer" /* 10866 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f118408 = (id) => {
+const f103918 = (id) => {
   obj = { key: "channel:" + id.id, kind: "channel", label: "#" + id.name };
   return obj;
 };
-const f118409 = () => {
+const f103919 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -71,15 +69,15 @@ function readConjureServerApp(arg0, arg1) {
         if (null == found) {
           items = [];
         } else {
-          obj = guild(10843);
+          obj = guild(10866);
           items = obj.findConjureAppChannels(guild.id, found.id);
         }
         let canRemoveConjureBotResult = null != found;
         if (canRemoveConjureBotResult) {
           let bot = application.bot;
           let id;
-          const canRemoveConjureBot = guild(10843).canRemoveConjureBot;
-          guild(10843);
+          const canRemoveConjureBot = guild(10866).canRemoveConjureBot;
+          guild(10866);
           if (bot != null) {
             id = bot.id;
           }
@@ -88,8 +86,8 @@ function readConjureServerApp(arg0, arg1) {
         if (canRemoveConjureBotResult) {
           const bot2 = found.bot;
           let id1;
-          const canRemoveConjureBot2 = guild(10843).canRemoveConjureBot;
-          guild(10843);
+          const canRemoveConjureBot2 = guild(10866).canRemoveConjureBot;
+          guild(10866);
           if (bot2 != null) {
             id1 = bot2.id;
           }
@@ -189,8 +187,8 @@ let obj = function _loadConjureServerApp() {
         if (null != conjureProjectId) {
           c4 = 2;
           c5 = 1;
-          const obj6 = { value: all(arr.map(closure_131_21)), done: false };
-          arr = closure_131_19(closure_0);
+          const obj6 = { value: all(arr.map(closure_131_20)), done: false };
+          arr = closure_131_18(closure_0);
           return obj6;
         }
       }
@@ -228,7 +226,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f118409);
+    application.catch(f103919);
   }
 }
 function loadMissingApplication() {
@@ -247,7 +245,7 @@ obj = function _loadMissingApplication() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -285,7 +283,7 @@ obj = function _loadMissingApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp6) {
         c1 = 3;
         throw tmp6;
@@ -294,195 +292,23 @@ obj = function _loadMissingApplication() {
   });
   return obj(...arguments);
 };
-let _asyncToGenerator = _asyncToGenerator_mod;
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 const Permissions = Constants.Permissions;
 let c14 = " (Preview)";
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureServerApp(arg0, arg1) {
-  let closure_0;
-  let first;
-  let items5;
+const result = size.fileFinishedImporting("modules/conjure/projects/conjureServerAppRemoval.tsx");
+
+export { conjureApplicationIdForBot };
+export { readConjureServerApp };
+export function useConjureServerApp(guildId, applicationId) {
   let stateFromStores;
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  _require = arg0;
-  let closure_1 = arg1;
-  const tmp = _require;
-  let tmp2 = stateFromStores;
-  obj = require("react");
-  const cResult = obj.c(16);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApplicationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg1) {
-    const fn = function j() {
-      let tmp2 = null != closure_1;
-      if (tmp2) {
-        const application = ApplicationStore.getApplication(tmp);
-        let conjureProjectId;
-        if (application != null) {
-          conjureProjectId = application.conjureProjectId;
-        }
-        tmp2 = null != conjureProjectId;
-      }
-      return tmp2;
-    };
-    const items1 = [arg1];
-    cResult[1] = arg1;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(tmp2[14]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] !== arg1) {
-    class S {
-      constructor() {
-        if (null != closure_1) {
-          const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-          if (!tmp2) {
-            const obj2 = ApplicationActionCreators;
-            const application = obj2.fetchApplication(tmp);
-            application.catch(f118409);
-          }
-        }
-      }
-    }
-    const items2 = [arg1];
-    cResult[4] = arg1;
-    cResult[5] = S;
-    cResult[6] = items2;
-    tmp10 = items2;
-    tmp9 = S;
-  } else {
-    class S {
-      constructor() {
-        if (null != closure_1) {
-          const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-          if (!tmp2) {
-            const obj2 = ApplicationActionCreators;
-            const application = obj2.fetchApplication(tmp);
-            application.catch(f118409);
-          }
-        }
-      }
-    }
-    tmp10 = cResult[6];
-  }
-  const effect = react.useEffect(tmp9, tmp10);
-  const obj3 = react;
-  if (cResult[7] === arg0) {
-    class S {
-      constructor() {
-        if (null != closure_1) {
-          const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-          if (!tmp2) {
-            const obj2 = ApplicationActionCreators;
-            const application = obj2.fetchApplication(tmp);
-            application.catch(f118409);
-          }
-        }
-      }
-    }
-    const effect1 = obj3.useEffect(M, items5);
-    closure_18(arg0, arg1);
-    const _Symbol = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor() {
-          if (null != closure_1) {
-            const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-            if (!tmp2) {
-              const obj2 = ApplicationActionCreators;
-              const application = obj2.fetchApplication(tmp);
-              application.catch(f118409);
-            }
-          }
-        }
-      }
-      const items3 = [ApplicationStore, GuildStore, GuildChannelStore, GuildMemberStore, PermissionStore, UserStore, RelationshipStore];
-      cResult[11] = items3;
-    } else {
-      class S {
-        constructor() {
-          if (null != closure_1) {
-            const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-            if (!tmp2) {
-              const obj2 = ApplicationActionCreators;
-              const application = obj2.fetchApplication(tmp);
-              application.catch(f118409);
-            }
-          }
-        }
-      }
-    }
-    if (cResult[12] === arg1) {
-      class S {
-        constructor() {
-          if (null != closure_1) {
-            const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
-            if (!tmp2) {
-              const obj2 = ApplicationActionCreators;
-              const application = obj2.fetchApplication(tmp);
-              application.catch(f118409);
-            }
-          }
-        }
-      }
-      const tmpResult2 = tmp(tmp2[14]);
-      return tmpResult2.useStateFromStores(tmp15, tmp22, tmp23, tmp(tmp2[15]).isEqual);
-    }
-    const fn2 = function y() {
-      return readConjureServerApp(closure_0, closure_1);
-    };
-    const items4 = [arg0, arg1];
-    cResult[12] = arg1;
-    cResult[13] = arg0;
-    cResult[14] = fn2;
-    cResult[15] = items4;
-  }
-  class M {
-    constructor() {
-      if (null != closure_0) {
-        const tmp2 = stateFromStores;
-        if (tmp2) {
-          const tmp4 = appChannelApplicationIds(tmp);
-          for (const item10010 of tmp4) {
-            let tmp8 = fetchMissingApplication(item10010);
-            continue;
-          }
-        }
-      }
-    }
-  }
-  items5 = [arg0, stateFromStores];
-  cResult[7] = arg0;
-  cResult[8] = stateFromStores;
-  cResult[9] = M;
-  cResult[10] = items5;
-}) : (function useConjureServerApp(arg0, arg1) {
-  let closure_0;
-  let stateFromStores;
-  _require = arg0;
-  let closure_1 = arg1;
-  const items = [ApplicationStore];
-  const items1 = [arg1];
+  _require = guildId;
   obj = require("get initialized");
+  const items = [ApplicationStore];
+  const items1 = [applicationId];
   stateFromStores = obj.useStateFromStores(items, () => {
-    let tmp2 = null != closure_1;
+    let tmp2 = null != applicationId;
     if (tmp2) {
-      const application = ApplicationStore.getApplication(tmp);
+      application = ApplicationStore.getApplication(tmp);
       let conjureProjectId;
       if (application != null) {
         conjureProjectId = application.conjureProjectId;
@@ -491,20 +317,20 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
     }
     return tmp2;
   }, items1);
-  const items2 = [arg1];
+  const items2 = [applicationId];
   const effect = react.useEffect(() => {
-    if (null != closure_1) {
-      const tmp2 = null != ApplicationStore.getApplication(closure_1) || ApplicationStore.isFetchingApplication(closure_1);
+    if (null != applicationId) {
+      const tmp2 = null != ApplicationStore.getApplication(applicationId) || ApplicationStore.isFetchingApplication(applicationId);
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
-        const application = obj2.fetchApplication(tmp);
-        application.catch(f118409);
+        application = obj2.fetchApplication(tmp);
+        application.catch(f103919);
       }
     }
   }, items2);
-  const items3 = [arg0, stateFromStores];
+  const items3 = [guildId, stateFromStores];
   const effect1 = react.useEffect(() => {
-    if (null != closure_0) {
+    if (null != guildId) {
       const tmp2 = stateFromStores;
       if (tmp2) {
         const tmp4 = appChannelApplicationIds(tmp);
@@ -515,276 +341,15 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureSe
       }
     }
   }, items3);
-  let tmp4 = closure_18(arg0, arg1);
+  _require = guildId;
+  let closure_1 = applicationId;
   let obj2 = require("get initialized");
-  const items4 = [ApplicationStore, GuildStore, GuildChannelStore, GuildMemberStore, PermissionStore, UserStore, RelationshipStore];
-  const items5 = [arg0, arg1];
-  return obj2.useStateFromStores(items4, () => readConjureServerApp(closure_0, closure_1), items5, require("module_12").isEqual);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureBotMembers(arg0, arg1) {
-  let closure_0;
-  let closure_3;
-  let first;
-  let stateFromStores;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  let closure_1 = arg1;
-  const tmp = _require;
-  let tmp2 = stateFromStores;
-  obj = require("react");
-  const cResult = obj.c(16);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = ApplicationStore;
-    const items = [ApplicationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg1) {
-    const fn = function c() {
-      let application = null;
-      if (null != closure_1) {
-        application = ApplicationStore.getApplication(tmp);
-      }
-      let conjureProjectId;
-      if (application != null) {
-        conjureProjectId = application.conjureProjectId;
-      }
-      if (null == conjureProjectId) {
-        return null;
-      } else {
-        const bot = application.bot;
-        let username;
-        if (bot != null) {
-          username = bot.username;
-        }
-        if (username == null) {
-          username = application.name;
-        }
-        let str = username;
-        if (username.endsWith(c14)) {
-          str = username.slice(0, -10);
-        }
-        return str.toLowerCase();
-      }
-    };
-    const items1 = [arg1];
-    cResult[1] = arg1;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(tmp2[14]);
-  stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === arg0) {
-    let tmp9;
-    let tmp10;
-    if (cResult[5] === stateFromStores) {
-      tmp9 = cResult[6];
-      tmp10 = cResult[7];
-    }
-    const effect = react.useEffect(tmp9, tmp10);
-    const _Symbol = Symbol;
-    const obj3 = react;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [GuildMemberStore, UserStore, ApplicationStore];
-      class I {
-        constructor() {
-          if (null != closure_0) {
-            tmp2 = closure_2;
-            if (null != closure_2) {
-              tmp3 = closure_8;
-              memberIds = closure_8.getMemberIds(tmp);
-              found = memberIds.filter((item) => {
-                user = user.getUser(item);
-                let bot;
-                if (user != null) {
-                  bot = user.bot;
-                }
-                let startsWithResult = true === bot;
-                if (startsWithResult) {
-                  const str = user.username;
-                  const formatted = str.toLowerCase();
-                  startsWithResult = formatted.startsWith(stateFromStores);
-                }
-                return startsWithResult;
-              });
-              tmp4 = conjureApplicationIdForBot;
-              mapped = found.map(conjureApplicationIdForBot);
-              found1 = mapped.filter((item) => null == application.getApplication(item));
-            }
-            return [];
-          }
-          return;
-        }
-      }
-      cResult[8] = items2;
-    }
-    if (cResult[9] === arg0) {
-      let tmp25;
-      let tmp24;
-      const useStateFromStores = tmp(tmp2[14]).useStateFromStores;
-      const tmpResult2 = tmp(tmp2[14]);
-      class I {
-        constructor() {
-          if (null != closure_0) {
-            tmp2 = closure_2;
-            if (null != closure_2) {
-              tmp3 = closure_8;
-              memberIds = closure_8.getMemberIds(tmp);
-              found = memberIds.filter((item) => {
-                user = user.getUser(item);
-                let bot;
-                if (user != null) {
-                  bot = user.bot;
-                }
-                let startsWithResult = true === bot;
-                if (startsWithResult) {
-                  const str = user.username;
-                  const formatted = str.toLowerCase();
-                  startsWithResult = formatted.startsWith(stateFromStores);
-                }
-                return startsWithResult;
-              });
-              tmp4 = conjureApplicationIdForBot;
-              mapped = found.map(conjureApplicationIdForBot);
-              found1 = mapped.filter((item) => null == application.getApplication(item));
-            }
-            return [];
-          }
-          return;
-        }
-      }
-      _asyncToGenerator = tmp23;
-      if (cResult[13] !== tmp23) {
-        class M {
-          constructor() {
-            const tmp2 = _asyncToGenerator[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = fetchMissingApplication(tmp3);
-              continue;
-            }
-          }
-        }
-        const items3 = [tmp23];
-        cResult[13] = tmp23;
-        cResult[14] = M;
-        class I {
-          constructor() {
-            if (null != closure_0) {
-              tmp2 = closure_2;
-              if (null != closure_2) {
-                tmp3 = closure_8;
-                memberIds = closure_8.getMemberIds(tmp);
-                found = memberIds.filter((item) => {
-                  user = user.getUser(item);
-                  let bot;
-                  if (user != null) {
-                    bot = user.bot;
-                  }
-                  let startsWithResult = true === bot;
-                  if (startsWithResult) {
-                    const str = user.username;
-                    const formatted = str.toLowerCase();
-                    startsWithResult = formatted.startsWith(stateFromStores);
-                  }
-                  return startsWithResult;
-                });
-                tmp4 = conjureApplicationIdForBot;
-                mapped = found.map(conjureApplicationIdForBot);
-                found1 = mapped.filter((item) => null == application.getApplication(item));
-              }
-              return [];
-            }
-            return;
-          }
-        }
-        cResult[15] = items3;
-        tmp25 = items3;
-        tmp24 = M;
-      } else {
-        class M {
-          constructor() {
-            const tmp2 = _asyncToGenerator[Symbol.iterator]();
-            while (tmp2 !== undefined) {
-              let tmp5 = fetchMissingApplication(tmp3);
-              continue;
-            }
-          }
-        }
-        tmp25 = cResult[15];
-      }
-      const effect1 = obj3.useEffect(tmp24, tmp25);
-    }
-    class I {
-      constructor() {
-        if (null != closure_0) {
-          tmp2 = closure_2;
-          if (null != closure_2) {
-            tmp3 = closure_8;
-            memberIds = closure_8.getMemberIds(tmp);
-            found = memberIds.filter((item) => {
-              user = user.getUser(item);
-              let bot;
-              if (user != null) {
-                bot = user.bot;
-              }
-              let startsWithResult = true === bot;
-              if (startsWithResult) {
-                const str = user.username;
-                const formatted = str.toLowerCase();
-                startsWithResult = formatted.startsWith(stateFromStores);
-              }
-              return startsWithResult;
-            });
-            tmp4 = conjureApplicationIdForBot;
-            mapped = found.map(conjureApplicationIdForBot);
-            found1 = mapped.filter((item) => null == application.getApplication(item));
-          }
-          return [];
-        }
-        return;
-      }
-    }
-    const items4 = [arg0, stateFromStores];
-    cResult[9] = arg0;
-    cResult[10] = stateFromStores;
-    cResult[11] = I;
-    cResult[12] = items4;
-  }
-  const fn2 = function v() {
-    const tmp2 = null != closure_0 && null != stateFromStores;
-    if (tmp2) {
-      obj = GuildActionCreatorsDefault;
-      const members = obj.requestMembers(tmp, stateFromStores, 10, false);
-    }
-  };
-  const items5 = [arg0, stateFromStores];
-  cResult[4] = arg0;
-  cResult[5] = stateFromStores;
-  cResult[6] = fn2;
-  cResult[7] = items5;
-  tmp10 = items5;
-  tmp9 = fn2;
-}) : (function useConjureBotMembers(arg0, arg1) {
-  let closure_0;
-  let stateFromStores;
-  _require = arg0;
-  let closure_1 = arg1;
-  obj = require("get initialized");
-  const items = [ApplicationStore];
-  const items1 = [arg1];
-  stateFromStores = obj.useStateFromStores(items, () => {
-    let application = null;
+  const items4 = [ApplicationStore];
+  const items5 = [applicationId];
+  const stateFromStores1 = obj2.useStateFromStores(items4, () => {
+    application = null;
     if (null != closure_1) {
-      application = ApplicationStore.getApplication(tmp);
+      application = application.getApplication(tmp);
     }
     let conjureProjectId;
     if (application != null) {
@@ -802,28 +367,27 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
         username = application.name;
       }
       let str = username;
-      if (username.endsWith(c14)) {
+      if (username.endsWith(closure_2_14)) {
         str = username.slice(0, -10);
       }
       return str.toLowerCase();
     }
-  }, items1);
-  const items2 = [arg0, stateFromStores];
-  const effect = react.useEffect(() => {
-    const tmp2 = null != closure_0 && null != stateFromStores;
+  }, items5);
+  const items6 = [guildId, stateFromStores1];
+  const effect2 = react.useEffect(() => {
+    const tmp2 = null != closure_0 && null != stateFromStores1;
     if (tmp2) {
-      obj = GuildActionCreatorsDefault;
-      const members = obj.requestMembers(tmp, stateFromStores, 10, false);
+      obj = applicationId(stateFromStores[14]);
+      const members = obj.requestMembers(tmp, stateFromStores1, 10, false);
     }
-  }, items2);
-  const items3 = [GuildMemberStore, UserStore, ApplicationStore];
-  const items4 = [arg0, stateFromStores];
-  const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items3, () => {
-    let application;
+  }, items6);
+  const items7 = [GuildMemberStore, UserStore, ApplicationStore];
+  const items8 = [guildId, stateFromStores1];
+  const obj3 = require("get initialized");
+  const stateFromStores2 = obj3.useStateFromStores(items7, () => {
     if (null != closure_0) {
-      if (null != stateFromStores) {
-        const memberIds = GuildMemberStore.getMemberIds(tmp);
+      if (null != stateFromStores1) {
+        memberIds = memberIds.getMemberIds(tmp);
         const found = memberIds.filter((item) => {
           user = user.getUser(item);
           let bot;
@@ -834,7 +398,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
           if (startsWithResult) {
             const str = user.username;
             const formatted = str.toLowerCase();
-            startsWithResult = formatted.startsWith(stateFromStores);
+            startsWithResult = formatted.startsWith(stateFromStores1);
           }
           return startsWithResult;
         });
@@ -843,27 +407,26 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCon
       }
       return [];
     }
-  }, items4, require("module_12").isEqual);
-  const items5 = [stateFromStores1];
-  const effect1 = react.useEffect(() => {
-    const tmp2 = stateFromStores1[Symbol.iterator]();
+  }, items8, require("module_12").isEqual);
+  const items9 = [stateFromStores2];
+  const effect3 = react.useEffect(() => {
+    const tmp2 = stateFromStores2[Symbol.iterator]();
     while (tmp2 !== undefined) {
       let tmp5 = fetchMissingApplication(tmp3);
       continue;
     }
-  }, items5);
-});
-const result = size.fileFinishedImporting("modules/conjure/projects/conjureServerAppRemoval.tsx");
-
-export { conjureApplicationIdForBot };
-export { readConjureServerApp };
-export const useConjureServerApp = tmp2;
+  }, items9);
+  const items10 = [ApplicationStore, GuildStore, GuildChannelStore, GuildMemberStore, PermissionStore, UserStore, RelationshipStore];
+  const items11 = [guildId, applicationId];
+  const obj4 = require("get initialized");
+  return obj4.useStateFromStores(items10, () => readConjureServerApp(guildId, applicationId), items11, require("module_12").isEqual);
+}
 export function loadConjureServerApp() {
   return obj(...arguments);
 }
 export function conjureKickAppItems(rest) {
   const channels = rest.channels;
-  const items = [...channels.map(f118408)];
+  const items = [...channels.map(f103918)];
   if (rest.targetIsPreview) {
     obj = { key: "main-app", kind: "app", label: rest.appName };
     const obj2 = { key: "main-app", kind: "app", label: rest.appName };
@@ -877,7 +440,7 @@ export function conjureDeleteAppChannelItems(rest, channelId) {
   let closure_0 = channelId;
   const channels = rest.channels;
   const found = channels.filter((id) => id.id !== channelId);
-  const items = [...found.map(f118408), obj, obj2];
+  const items = [...found.map(f103918), obj, obj2];
   obj = { key: "main-app", kind: "app", label: rest.appName };
   return items;
 }

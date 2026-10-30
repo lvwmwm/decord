@@ -1,33 +1,12 @@
 // Module ID: 1609
 // Function ID: 1610
 // Name: react
-// Dependencies: [19, 17]
-// Exports: useBackButton
+// Dependencies: [19]
 
 // Module 1609 (react)
-import react_native from "react-native" /* 17 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 
-let react = react_mod;
-const BackHandler = react_native.BackHandler;
+const context = react.createContext("ltr");
+context.displayName = "LocaleDirContext";
 
-export function useBackButton(ref) {
-  react = ref;
-  const items = [ref];
-  const effect = react.useEffect(() => {
-    ref = BackHandler.addEventListener("hardwareBackPress", () => {
-      const current = ref.current;
-      let tmp = null != current;
-      if (tmp) {
-        let flag = current.canGoBack();
-        if (flag) {
-          current.goBack();
-          flag = true;
-        }
-        tmp = flag;
-      }
-      return tmp;
-    });
-    return () => ref.remove();
-  }, items);
-}
+export const LocaleDirContext = context;

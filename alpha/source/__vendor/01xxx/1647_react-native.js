@@ -1,11 +1,14 @@
 // Module ID: 1647
 // Function ID: 1648
 // Name: react-native
-// Dependencies: [17]
+// Dependencies: [17, 65]
 
 // Module 1647 (react-native)
 import react_native from "react-native" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "ClippingScrollViewDecoratorView", validAttributes: { contentInsetBottom: true, contentInsetTop: true, applyWorkaroundForContentInsetHitTestBug: true } };
 
-export default TurboModuleRegistry.get("KeyboardController");
+export default module_65.get("ClippingScrollViewDecoratorView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

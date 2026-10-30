@@ -1,12 +1,12 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8388
+// Function ID: 8389
 // Name: renderer/EmbedUtils
-// Dependencies: [17, 1084, 2]
+// Dependencies: [17, 1072, 2]
 // Exports: getAssetUriForEmbed, isWebviewVideo
 
-// Module 8331 (renderer/EmbedUtils)
+// Module 8388 (renderer/EmbedUtils)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

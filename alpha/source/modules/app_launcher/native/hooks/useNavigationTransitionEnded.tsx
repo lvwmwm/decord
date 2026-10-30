@@ -1,57 +1,20 @@
-// Module ID: 12104
-// Function ID: 12105
+// Module ID: 12280
+// Function ID: 12281
 // Name: useNavigationTransitionEnded
-// Dependencies: [32, 19, 1502, 558, 576, 1504, 2]
+// Dependencies: [32, 19, 1497, 1499, 2]
+// Exports: default
 
-// Module 12104 (useNavigationTransitionEnded)
-import react2 from "react" /* 576 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1502 */;
-import Link from "Link" /* 1504 */;
+// Module 12280 (useNavigationTransitionEnded)
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1497 */;
+import Link from "Link" /* 1499 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const useAppLauncherNavigation = AppLauncherNativeConstants.useAppLauncherNavigation;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigationTransitionEnded() {
-  const obj = react2;
-  const cResult = obj.c(4);
-  const tmp2 = _slicedToArray(react.useState(false), 2);
-  let closure_0 = tmp4;
-  const first = tmp2[0];
-  const tmp5 = useAppLauncherNavigation();
-  let closure_1 = tmp5;
-  const obj3 = Link;
-  const route = obj3.useRoute();
-  const obj2 = react;
-  if (cResult[0] === tmp5) {
-    let tmp7;
-    let tmp8;
-    if (cResult[1] === route) {
-      tmp7 = cResult[2];
-      tmp8 = cResult[3];
-    }
-    const effect = obj2.useEffect(tmp7, tmp8);
-    return first;
-  }
-  const fn = function u() {
-    let key;
-    let state;
-    return state.addListener("transitionEnd", () => {
-      state = state.getState();
-      if (state.routes[state.index].key === key.key) {
-        closure_1_0(true);
-      }
-    });
-  };
-  const items = [tmp5, route, tmp2[1]];
-  cResult[0] = tmp5;
-  cResult[1] = route;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp8 = items;
-  tmp7 = fn;
-}) : (function useNavigationTransitionEnded() {
+const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
+
+export default function useNavigationTransitionEnded() {
   let first;
   let tmp3;
   [first, tmp3] = react.useState(false);
@@ -72,7 +35,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigatio
     });
   }, items);
   return first;
-});
-const result = size.fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
-
-export default tmp2;
+};

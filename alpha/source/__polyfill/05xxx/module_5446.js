@@ -1,114 +1,90 @@
 // Module ID: 5446
 // Function ID: 5447
-// Dependencies: [5339, 5340]
+// Dependencies: [19, 38, 5274]
+// Exports: usePropsValidator
 
 // Module 5446
-import tagMessage from "tagMessage" /* 5339 */;
-import State from "State" /* 5340 */;
+import react from "react" /* 19 */;
+import _modDef38 from "module_38" /* 38 */;
 
-const require = globalThis.__r;
+const useMemo = react.useMemo;
 
-let fn2;
-let fn3;
-let fn4;
-const setGestureState = function t(arg0, arg1) {
-  const _globalThis = globalThis;
-  if (globalThis._setGestureStateSync) {
-    _globalThis._setGestureStateSync(arg0, arg1);
-  } else if (_globalThis._setGestureStateAsync) {
-    const _globalThis2 = globalThis;
-    const result = globalThis._setGestureStateAsync(arg0, arg1);
-  } else {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const obj = tagMessage;
-    const error = new Error(obj.tagMessage("Failed to set gesture state"));
-    throw error;
-  }
-};
-let obj = { tagMessage: require("tagMessage").tagMessage };
-setGestureState.__closure = obj;
-setGestureState.__workletHash = 727405139747;
-setGestureState.__initData = { code: "function pnpm_gestureStateManagerTs1(handlerTag,state){const{tagMessage}=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}}" };
-const obj2 = { activate: fn2, fail: fn3, deactivate: fn4 };
-fn2 = function _(arg0) {
-  const ACTIVE = State.State.ACTIVE;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, ACTIVE);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, ACTIVE);
+export const usePropsValidator = (index) => {
+  index = index.index;
+  const snapPoints = index.snapPoints;
+  const enableDynamicSizing = index.enableDynamicSizing;
+  const topInset = index.topInset;
+  const bottomInset = index.bottomInset;
+  let items = [index, snapPoints, topInset, bottomInset, enableDynamicSizing];
+  topInset(() => {
+    let items;
+    if (snapPoints) {
+      let value = obj;
+      if ("get" in snapPoints) {
+        value = obj.get();
+      }
+      items = value;
     } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const tmpResult = tagMessage;
-      const error = new Error(tmpResult.tagMessage("Failed to set gesture state"));
-      throw error;
+      items = [];
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-fn2.__closure = { setGestureState, State: require("State").State };
-fn2.__workletHash = 14928129771754;
-fn2.__initData = { code: "function activate_Pnpm_gestureStateManagerTs2(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.ACTIVE);}" };
-fn3 = function n(arg0) {
-  const FAILED = State.State.FAILED;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, FAILED);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, FAILED);
-    } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const tmpResult = tagMessage;
-      const error = new Error(tmpResult.tagMessage("Failed to set gesture state"));
-      throw error;
+    let tmp2 = importDefault;
+    let tmp3 = dependencyMap;
+    let tmp5 = items;
+    let tmp4 = _modDef38;
+    if (!items) {
+      tmp5 = enableDynamicSizing;
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-({ setGestureState, State: require("State").State });
-fn3.__closure = { setGestureState, State: require("State").State };
-fn3.__workletHash = 1703030189599;
-fn3.__initData = { code: "function fail_Pnpm_gestureStateManagerTs3(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.FAILED);}" };
-fn4 = function s(arg0) {
-  const END = State.State.END;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, END);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, END);
-    } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const tmpResult = tagMessage;
-      const error = new Error(tmpResult.tagMessage("Failed to set gesture state"));
-      throw error;
+    tmp4(tmp5, "'snapPoints' was not provided! please provide at least one snap point.");
+    const mapped = items.map((item) => {
+      let parsed = item;
+      if (typeof item !== "number") {
+        const _Number = Number;
+        parsed = Number.parseInt(item.replace("%", ""), 10);
+      }
+      let tmp4 = parsed > 0;
+      const tmp2 = enableDynamicSizing;
+      const tmp3 = snapPoints(enableDynamicSizing[1]);
+      if (!tmp4) {
+        tmp4 = parsed === index(tmp2[2]).INITIAL_SNAP_POINT;
+      }
+      tmp3(tmp4, "Snap point '" + item + "' is invalid. if you want to allow user to close the sheet, Please use 'enablePanDownToClose' prop.");
+    });
+    let tmp9 = "value" in items;
+    const tmp2Result = _modDef38;
+    if (!tmp9) {
+      tmp9 = items.length > 0;
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
+    if (!tmp9) {
+      tmp9 = enableDynamicSizing;
+    }
+    tmp2Result(tmp9, "'snapPoints' was provided with no points! please provide at least one snap point.");
+    let tmp13 = typeof index === "number";
+    const tmp2Result5 = _modDef38;
+    if (typeof index !== "number") {
+      tmp13 = undefined === tmp12;
+    }
+    tmp2Result5(tmp13, "'index' was provided but with wrong type ! expected type is a number.");
+    let tmp16 = enableDynamicSizing;
+    const tmp2Result6 = _modDef38;
+    if (!enableDynamicSizing) {
+      tmp16 = typeof tmp12 !== "number";
+    }
+    if (!tmp16) {
+      tmp16 = tmp12 >= -1 && tmp12 <= items.length - 1;
+      const tmp17 = tmp12 >= -1 && tmp12 <= items.length - 1;
+    }
+    tmp2Result6(tmp16, `'index' was provided but out of the provided snap points range! expected value to be between -1, ${arr.length - 1}`);
+    let tmp20 = typeof topInset === "number";
+    const tmp2Result7 = _modDef38;
+    if (typeof topInset !== "number") {
+      tmp20 = undefined === topInset;
+    }
+    tmp2Result7(tmp20, "'topInset' was provided but with wrong type ! expected type is a number.");
+    let tmp23 = typeof bottomInset === "number";
+    const tmp2Result8 = _modDef38;
+    if (typeof bottomInset !== "number") {
+      tmp23 = undefined === bottomInset;
+    }
+    tmp2Result8(tmp23, "'bottomInset' was provided but with wrong type ! expected type is a number.");
+  }, items);
 };
-({ setGestureState, State: require("State").State });
-fn4.__closure = { setGestureState, State: require("State").State };
-fn4.__workletHash = 5511283927342;
-fn4.__initData = { code: "function deactivate_Pnpm_gestureStateManagerTs4(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.END);}" };
-({ setGestureState, State: require("State").State });
-
-export const GestureStateManager = obj2;

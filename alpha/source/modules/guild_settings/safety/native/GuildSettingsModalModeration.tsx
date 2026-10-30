@@ -1,29 +1,26 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19606
+// Function ID: 19607
 // Name: GuildSettingsModalModeration
-// Dependencies: [19, 4937, 9043, 1084, 21, 5005, 587, 558, 576, 8179, 9042, 1125, 2065, 7355, 7047, 5071, 6984, 7544, 7045, 16633, 7044, 5271, 8988, 6015, 5629, 1503, 504, 2]
+// Dependencies: [19, 4941, 9056, 1072, 21, 5009, 575, 8360, 9055, 7054, 1114, 2062, 7363, 5075, 6992, 7552, 7052, 16686, 7055, 5619, 8169, 6022, 5601, 1498, 504, 2]
+// Exports: default
 
-// Module 19543 (GuildSettingsModalModeration)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import native from "native" /* 5071 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import TableRadioRow2 from "TableRadioRow" /* 7044 */;
-import TableRowGroup2 from "TableRowGroup" /* 7047 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7355 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7544 */;
-import useUserIsTeen from "useUserIsTeen" /* 8179 */;
-import Form2 from "Form" /* 8988 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9042 */;
+// Module 19606 (GuildSettingsModalModeration)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import native from "native" /* 5075 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import TableRadioRow2 from "TableRadioRow" /* 7055 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7552 */;
+import _mod8169 from "module_8169" /* 8169 */;
+import useUserIsTeen from "useUserIsTeen" /* 8360 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9055 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9043 */;
-import Constants from "Constants" /* 1084 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9056 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -38,109 +35,9 @@ let obj2;
 let tmp2;
 let tmp5;
 let unpackModuleId;
-const Text_Text = tmp2(5271);
-const NavScrim = tmp5(5629);
-({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, Permissions: metroImportAll, GuildNSFWContentLevel: c9 } = Constants);
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
-let obj = { stack: obj2 };
-obj2 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
-createStyles.createLegacyClassComponentStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsOwnerConfiguredContentLevel(guild) {
-  let first;
-  let obj4;
-  let obj = react2;
-  const cResult = obj.c(10);
-  guild = guild.guild;
-  let DEFAULT = guild.nsfwLevel;
-  if (DEFAULT == null) {
-    DEFAULT = constants4.DEFAULT;
-  }
-  let DEFAULT2 = guild.ownerConfiguredContentLevel;
-  if (DEFAULT2 == null) {
-    DEFAULT2 = constants4.DEFAULT;
-  }
-  let tmp8 = DEFAULT === constants4.AGE_RESTRICTED;
-  const tmpResult = useUserIsTeen;
-  const userIsTeen = tmpResult.useUserIsTeen();
-  if (tmp8) {
-    tmp8 = DEFAULT2 !== tmp7.AGE_RESTRICTED;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(arg0) {
-      const obj = GuildSettingsActionCreatorsDefault;
-      const obj2 = { ownerConfiguredContentLevel: arg0 ? constants4.AGE_RESTRICTED : constants4.DEFAULT };
-      obj.updateGuild(obj2);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (userIsTeen) {
-    return null;
-  } else {
-    let tmp10;
-    let tmp12;
-    let tmp16;
-    const _Symbol = Symbol;
-    if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl4.t.YJlvBM);
-      cResult[1] = stringResult;
-      tmp10 = stringResult;
-    } else {
-      tmp10 = cResult[1];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const format = intl2.format;
-      let obj2 = { helpArticleLink: obj4.getArticleURL(metroImportDefault.NSFW_SERVER_AGE_RESTRICTION) };
-      const iyQQ62 = tmp(1125).t.iyQQ62;
-      obj4 = HelpdeskUtilsDefault;
-      const formatResult = format(iyQQ62, obj2);
-      cResult[2] = formatResult;
-      tmp12 = formatResult;
-    } else {
-      tmp12 = cResult[2];
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1125).intl;
-      const stringResult1 = intl3.string(intl4.t.N9xEJF);
-      cResult[3] = stringResult1;
-      tmp16 = stringResult1;
-    } else {
-      tmp16 = cResult[3];
-    }
-    if (cResult[4] === tmp8) {
-      let tmp19;
-      if (cResult[5] === DEFAULT2 === constants4.AGE_RESTRICTED) {
-        tmp19 = cResult[6];
-      }
-      if (cResult[7] === tmp12) {
-        let tmp22;
-        if (cResult[8] === tmp19) {
-          tmp22 = cResult[9];
-        }
-        return tmp22;
-      }
-      const obj3 = { title: tmp10, hasIcons: false, description: tmp12, children: tmp19 };
-      const tmp24 = authStore(TableRowGroup2.TableRowGroup, obj3, "filter-section");
-      cResult[7] = tmp12;
-      cResult[8] = tmp19;
-      cResult[9] = tmp24;
-      tmp22 = tmp24;
-    }
-    const obj5 = { label: tmp16, value: DEFAULT2 === constants4.AGE_RESTRICTED, onValueChange: first, disabled: tmp8 };
-    const tmp21 = authStore(TableSwitchRow2.TableSwitchRow, obj5);
-    cResult[4] = tmp8;
-    cResult[5] = DEFAULT2 === constants4.AGE_RESTRICTED;
-    cResult[6] = tmp21;
-    tmp19 = tmp21;
-  }
-}) : (function GuildSettingsOwnerConfiguredContentLevel(guild) {
+const NavScrim = tmp5(5601);
+const Text_Text = tmp2(5619);
+function GuildSettingsOwnerConfiguredContentLevel(guild) {
   let TableSwitchRow;
   let format;
   let intl;
@@ -167,20 +64,25 @@ let closure_14 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildS
   let tmp9 = null;
   if (!userIsTeen) {
     let obj2 = { title: intl.string(intl4.t.YJlvBM), hasIcons: false, description: format(iyQQ62, obj3), children: authStore(TableSwitchRow, obj5) };
-    const TableRowGroup = tmp3(7047).TableRowGroup;
-    intl = tmp3(1125).intl;
-    const intl2 = tmp3(1125).intl;
+    const TableRowGroup = tmp3(7054).TableRowGroup;
+    intl = tmp3(1114).intl;
+    const intl2 = tmp3(1114).intl;
     format = intl2.format;
     obj3 = { helpArticleLink: obj4.getArticleURL(metroImportDefault.NSFW_SERVER_AGE_RESTRICTION) };
-    iyQQ62 = tmp3(1125).t.iyQQ62;
+    iyQQ62 = tmp3(1114).t.iyQQ62;
     obj4 = HelpdeskUtilsDefault;
     obj5 = { label: intl3.string(intl4.t.N9xEJF), value: DEFAULT2 === constants4.AGE_RESTRICTED, onValueChange: tmp8, disabled: tmp7 };
-    TableSwitchRow = tmp3(7355).TableSwitchRow;
-    intl3 = tmp3(1125).intl;
+    TableSwitchRow = tmp3(7363).TableSwitchRow;
+    intl3 = tmp3(1114).intl;
     tmp9 = authStore(TableRowGroup, obj2, "filter-section");
   }
   return tmp9;
-});
+}
+({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, Permissions: metroImportAll, GuildNSFWContentLevel: c9 } = Constants);
+({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+let obj = { stack: obj2 };
+obj2 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
+createStyles.createLegacyClassComponentStyles(obj);
 const PureComponent = react.PureComponent;
 class GuildSettingsModalModeration extends PureComponent {
   constructor() {
@@ -214,7 +116,7 @@ class GuildSettingsModalModeration extends PureComponent {
       }
       let obj = { headerLeft: fn, headerRight: fn2 };
       if (submitting) {
-        fn2 = () => closure_1_10(self(dependencyMap[16]).HeaderSubmittingIndicator, {});
+        fn2 = () => closure_1_10(self(dependencyMap[14]).HeaderSubmittingIndicator, {});
       } else if (hasChanges) {
         fn2 = () => {
           let intl;
@@ -235,8 +137,8 @@ class GuildSettingsModalModeration extends PureComponent {
     const guild = this.props.guild;
     let obj = {
       hasIcons: false,
-      title: intl.string(self(1125).t.DpRdYK),
-      description: intl2.format(self(1125).t.iuRk2j, {}),
+      title: intl.string(self(1114).t.DpRdYK),
+      description: intl2.format(self(1114).t.iuRk2j, {}),
       value: guild.verificationLevel,
       onChange(verificationLevel) {
         return self.handleVerificationLevelChange(verificationLevel);
@@ -268,10 +170,10 @@ class GuildSettingsModalModeration extends PureComponent {
         return authStore(TableRadioRow, obj, "level-" + value);
       })
     };
-    const TableRadioGroup = self(7045).TableRadioGroup;
-    intl = self(1125).intl;
-    intl2 = self(1125).intl;
-    let obj2 = self(16633);
+    const TableRadioGroup = self(7052).TableRadioGroup;
+    intl = self(1114).intl;
+    intl2 = self(1114).intl;
+    let obj2 = self(16686);
     const features = guild.features;
     verificationLevelOptions = obj2.generateVerificationLevelOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "level-section");
@@ -287,7 +189,7 @@ class GuildSettingsModalModeration extends PureComponent {
     const guild = this.props.guild;
     let obj = {
       hasIcons: false,
-      title: intl.string(self(1125).t.bPgfJz),
+      title: intl.string(self(1114).t.bPgfJz),
       description: format(BI4ukC, obj2),
       value: guild.explicitContentFilter,
       onChange(explicitContentFilter) {
@@ -311,15 +213,15 @@ class GuildSettingsModalModeration extends PureComponent {
         return tmp(TableRadioRow, obj, "filter-" + value);
       })
     };
-    const TableRadioGroup = self(7045).TableRadioGroup;
-    intl = self(1125).intl;
-    const intl2 = self(1125).intl;
+    const TableRadioGroup = self(7052).TableRadioGroup;
+    intl = self(1114).intl;
+    const intl2 = self(1114).intl;
     format = intl2.format;
     obj2 = { helpdeskArticle: obj3.getArticleURL(constants2.SAFE_DIRECT_MESSAGING) };
-    BI4ukC = self(1125).t.BI4ukC;
+    BI4ukC = self(1114).t.BI4ukC;
     const features = guild.features;
     obj3 = HelpdeskUtilsDefault;
-    const obj4 = self(16633);
+    const obj4 = self(16686);
     contentFilterOptions = obj4.generateContentFilterOptions(features.has(constants.COMMUNITY));
     return closure_10(TableRadioGroup, obj, "filter-section");
   }
@@ -337,14 +239,14 @@ class GuildSettingsModalModeration extends PureComponent {
     const obj = { contentContainerStyle: items, children: unpackModuleId(Stack, obj2) };
     items = [{ paddingTop: 16 }, this.props.contentContainerStyle];
     const tmp = closure_13(this.context);
-    const Form = Form2.Form;
+    const Form = _mod8169.Form;
     obj2 = { style: tmp.stack, spacing: nativeDefault.space.PX_24, children: items1 };
     Stack = Stack_Stack.Stack;
     items1 = [this.renderVerificationLevelSection(), this.renderExplicitContentFilter(), ];
     const tmp3 = authStore2;
     if (canManageGuild) {
       const obj3 = { guild, hasChanges };
-      canManageGuild = tmp4(closure_14, obj3);
+      canManageGuild = tmp4(GuildSettingsOwnerConfiguredContentLevel, obj3);
     }
     const obj4 = { children: items2 };
     items1[2] = canManageGuild;
@@ -370,92 +272,14 @@ class GuildSettingsModalModeration extends PureComponent {
 }
 const prototype = GuildSettingsModalModeration.prototype;
 GuildSettingsModalModeration.contextType = native.ThemeContext;
-ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGuildSettingsModalModeration(contentContainerStyle) {
-  let guild;
-  let hasChanges;
-  let submitting;
-  let tmp11;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const obj = guild(576);
-  const cResult = obj.c(12);
-  contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  const obj2 = guild(1503);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildSettingsStore];
-    const fn = function s() {
-      props = props.getProps();
-      return { guild: props.guild, submitting: props.submitting, hasChanges: props.hasChanges };
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = guild(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp5, tmp6);
-  guild = stateFromStoresObject.guild;
-  ({ submitting, hasChanges } = stateFromStoresObject);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PermissionStore];
-    cResult[2] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== guild) {
-    class S {
-      constructor() {
-        return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
-      }
-    }
-    cResult[3] = guild;
-    cResult[4] = S;
-    tmp11 = S;
-  } else {
-    class S {
-      constructor() {
-        return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
-      }
-    }
-  }
-  const tmpResult2 = guild(504);
-  const stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp11);
-  if (cResult[5] === stateFromStores) {
-    class S {
-      constructor() {
-        return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
-      }
-    }
-  }
-  let tmp13 = null;
-  if (null != guild) {
-    class S {
-      constructor() {
-        return PermissionStore.can(metroImportAll.MANAGE_GUILD, guild);
-      }
-    }
-    const obj3 = { navigation, guild, submitting, hasChanges, canManageGuild: stateFromStores, contentContainerStyle };
-    tmp13 = closure_10(GuildSettingsModalModeration, obj3);
-  }
-  cResult[5] = stateFromStores;
-  cResult[6] = contentContainerStyle;
-  cResult[7] = guild;
-  cResult[8] = hasChanges;
-  cResult[9] = navigation;
-  cResult[10] = submitting;
-  cResult[11] = tmp13;
-}) : (function ConnectedGuildSettingsModalModeration(contentContainerStyle) {
+const result = size.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalModeration.tsx");
+
+export default function ConnectedGuildSettingsModalModeration(contentContainerStyle) {
   let hasChanges;
   let submitting;
   let guild;
   contentContainerStyle = contentContainerStyle.contentContainerStyle;
-  const obj = guild(1503);
+  const obj = guild(1498);
   navigation = obj.useNavigation();
   const items = [GuildSettingsStore];
   const obj2 = guild(504);
@@ -473,7 +297,4 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedGuildSe
     tmp5 = closure_10(GuildSettingsModalModeration, obj3);
   }
   return tmp5;
-});
-const result = size.fileFinishedImporting("modules/guild_settings/safety/native/GuildSettingsModalModeration.tsx");
-
-export default tmp5;
+};

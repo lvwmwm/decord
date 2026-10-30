@@ -1,65 +1,23 @@
-// Module ID: 8393
-// Function ID: 8394
+// Module ID: 8430
+// Function ID: 8431
 // Name: useIsCallActive
-// Dependencies: [6556, 6830, 5670, 558, 576, 504, 2]
-// Exports: checkIsCallActive
+// Dependencies: [6563, 6837, 5676, 504, 2]
+// Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8393 (useIsCallActive)
-import CallConstants from "CallConstants" /* 5670 */;
-import CallStore from "CallStore" /* 6556 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6830 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8430 (useIsCallActive)
+import CallConstants from "CallConstants" /* 5676 */;
+import CallStore from "CallStore" /* 6563 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6837 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f102651 = (type) => type.type === constants.USER && !type.ringing;
+const f92574 = (type) => type.type === constants.USER && !type.ringing;
 const ParticipantTypes = CallConstants.ParticipantTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCallActive(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  dependencyMap = arg1;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CallStore, ChannelRTCStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  const fn = function u() {
-    let isCallActiveResult = CallStore.isCallActive(closure_0, closure_1);
-    const tmp = closure_0;
-    if (isCallActiveResult) {
-      const participants = ChannelRTCStore.getParticipants(tmp);
-      isCallActiveResult = participants.some(f102651);
-    }
-    return isCallActiveResult;
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useIsCallActive(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
+
+export default function useIsCallActive(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -72,90 +30,36 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCallAct
     const tmp = closure_0;
     if (isCallActiveResult) {
       const participants = ChannelRTCStore.getParticipants(tmp);
-      isCallActiveResult = participants.some(f102651);
+      isCallActiveResult = participants.some(f92574);
     }
     return isCallActiveResult;
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-function checkIsCallActive(channelId, id) {
+};
+export function checkIsCallActive(channelId, id) {
   let isCallActiveResult = CallStore.isCallActive(channelId, id);
   if (isCallActiveResult) {
     const participants = ChannelRTCStore.getParticipants(channelId);
-    isCallActiveResult = participants.some(f102651);
+    isCallActiveResult = participants.some(f92574);
   }
   return isCallActiveResult;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCallActiveNullable(arg0, arg1) {
-  let closure_0;
+export function useIsCallActiveNullable(id, arg1) {
   let closure_1;
-  let first;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CallStore, ];
-    items[1] = ChannelRTCStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  const fn = function u() {
-    let tmp2 = null != closure_0;
-    if (tmp2) {
-      let isCallActiveResult = CallStore.isCallActive(tmp, closure_1);
-      if (isCallActiveResult) {
-        const participants = ChannelRTCStore.getParticipants(tmp);
-        isCallActiveResult = participants.some(f102651);
-      }
-      tmp2 = isCallActiveResult;
-    }
-    return tmp2;
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useIsCallActiveNullable(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  _require = arg0;
+  _require = id;
   dependencyMap = arg1;
   const items = [CallStore, ChannelRTCStore];
-  const items1 = [arg0, arg1];
+  const items1 = [id, arg1];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
-    let tmp2 = null != closure_0;
+    let tmp2 = null != id;
     if (tmp2) {
       let isCallActiveResult = CallStore.isCallActive(tmp, closure_1);
       if (isCallActiveResult) {
         const participants = ChannelRTCStore.getParticipants(tmp);
-        isCallActiveResult = participants.some(f102651);
+        isCallActiveResult = participants.some(f92574);
       }
       tmp2 = isCallActiveResult;
     }
     return tmp2;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");
-
-export default tmp2;
-export { checkIsCallActive };
-export const useIsCallActiveNullable = tmp3;
+}

@@ -1,25 +1,25 @@
-// Module ID: 5700
-// Function ID: 5701
+// Module ID: 5706
+// Function ID: 5707
 // Name: ToastUtils
-// Dependencies: [1084, 5701, 1125, 5704, 5710, 5712, 5714, 5716, 5718, 5720, 5722, 1415, 5724, 5727, 1278, 5729, 2]
+// Dependencies: [1072, 5707, 1114, 5710, 5716, 5718, 5720, 5722, 5724, 5726, 5728, 1410, 5730, 5733, 1267, 5735, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 5700 (ToastUtils)
-import Constants from "Constants" /* 1084 */;
-import intl7 from "intl" /* 1125 */;
-import v1 from "v1" /* 1278 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import FriendsIcon from "FriendsIcon" /* 5704 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 5712 */;
-import UserMinusIcon from "UserMinusIcon" /* 5714 */;
-import LinkIcon from "LinkIcon" /* 5716 */;
-import SendMessageIcon from "SendMessageIcon" /* 5718 */;
-import CopyIcon from "CopyIcon" /* 5720 */;
-import DownloadIcon from "DownloadIcon" /* 5722 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5724 */;
-import TrashIcon from "TrashIcon" /* 5727 */;
-import ClockIcon from "ClockIcon" /* 5729 */;
+// Module 5706 (ToastUtils)
+import Constants from "Constants" /* 1072 */;
+import intl7 from "intl" /* 1114 */;
+import v1 from "v1" /* 1267 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import FriendsIcon from "FriendsIcon" /* 5710 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 5718 */;
+import UserMinusIcon from "UserMinusIcon" /* 5720 */;
+import LinkIcon from "LinkIcon" /* 5722 */;
+import SendMessageIcon from "SendMessageIcon" /* 5724 */;
+import CopyIcon from "CopyIcon" /* 5726 */;
+import DownloadIcon from "DownloadIcon" /* 5728 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5730 */;
+import TrashIcon from "TrashIcon" /* 5733 */;
+import ClockIcon from "ClockIcon" /* 5735 */;
 import size from "module_2" /* 2 */;
 
 const VerificationCriteria = Constants.VerificationCriteria;
@@ -33,22 +33,22 @@ export function presentAddedFriendToast() {
   intl = intl7.intl;
   open("TOAST_ADD_FRIEND", obj);
 }
-export function presentFriendRequestAcceptedToast(username) {
+export function presentFriendRequestAcceptedToast(dependencyMap) {
   let stringResult;
   let tmp3;
   const open = ToastActionCreatorsDefault.open;
   ToastActionCreatorsDefault;
-  if (null == username) {
+  if (null == dependencyMap) {
     const intl2 = intl7.intl;
     stringResult = intl2.string(intl7.t.UhJna5);
     tmp3 = require;
   } else {
     tmp3 = require;
     const intl = intl7.intl;
-    const obj = { username: username.username };
+    const obj = { username: dependencyMap.username };
     stringResult = intl.formatToPlainString(intl7.t.b3eoD4, obj);
   }
-  const obj2 = { text: stringResult, icon: tmp3(5710).UserPlusIcon, iconColor: "status-positive" };
+  const obj2 = { text: stringResult, icon: tmp3(5716).UserPlusIcon, iconColor: "status-positive" };
   open("TOAST_FRIEND_REQUEST_ACCEPTED", obj2);
 }
 export function presentGameFriendRequestAcceptedToast() {
@@ -412,10 +412,10 @@ export function showTransferOwnershipSuccess() {
   intl = intl7.intl;
   open("TRANSFER_OWNERSHIP_SUCCESS", obj);
 }
-export function showSafetySuccess(IAR_SHARE_WITH_PARENT_SUCCESS, safetyToastTypeContent) {
+export function showSafetySuccess(BLOCK_SUCCESS, safetyToastTypeContent) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text: safetyToastTypeContent, variant: "success" };
-  obj.open(IAR_SHARE_WITH_PARENT_SUCCESS, obj2);
+  obj.open(BLOCK_SUCCESS, obj2);
 }
 export function showVerificationSent() {
   let intl;

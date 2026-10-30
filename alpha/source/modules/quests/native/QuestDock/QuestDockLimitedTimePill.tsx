@@ -1,19 +1,17 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17116
+// Function ID: 17117
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 11401, 1125, 5271, 2]
+// Dependencies: [19, 17, 21, 575, 5009, 11604, 5619, 1114, 2]
 
-// Module 17062 (QuestDockLimitedTimePill)
+// Module 17116 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import TimerIcon2 from "TimerIcon" /* 11401 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import TimerIcon2 from "TimerIcon" /* 11604 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,57 +23,7 @@ const NEUTRAL_79 = nativeDefault.unsafe_rawColors.NEUTRAL_79;
 let obj = { pill: obj2, text: { textTransform: "uppercase" } };
 obj2 = { alignItems: "center", alignSelf: "flex-start", backgroundColor: NEUTRAL_79, borderRadius: nativeDefault.radii.round, flexDirection: "row", gap: nativeDefault.space.PX_4, paddingHorizontal: 6, paddingVertical: 2 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockLimitedTimePill() {
-  let first;
-  let items;
-  let tmp11;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  const tmp4 = closure_6();
-  const pill = tmp4.pill;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const TimerIcon = tmp(11401).TimerIcon;
-    const tmp8 = React3(TimerIcon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  const text = tmp4.text;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl2.t["h/uBCR"]);
-    cResult[1] = stringResult;
-    tmp9 = stringResult;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.text) {
-    const obj3 = { variant: "text-xs/bold", color: "text-overlay-light", style: text, children: tmp9 };
-    const tmp13 = React3(Text_Text.Text, obj3);
-    cResult[2] = tmp4.text;
-    cResult[3] = tmp13;
-    tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[3];
-  }
-  if (cResult[4] === tmp4.pill) {
-    let tmp14;
-    if (cResult[5] === tmp11) {
-      tmp14 = cResult[6];
-    }
-    return tmp14;
-  }
-  const obj4 = { style: pill, accessible: true, accessibilityRole: "text", children: items };
-  items = [first, tmp11];
-  const tmp15 = hasOwnProperty(View, obj4);
-  cResult[4] = tmp4.pill;
-  cResult[5] = tmp11;
-  cResult[6] = tmp15;
-  tmp14 = tmp15;
-}) : (function QuestDockLimitedTimePill() {
+const memoResult = react.memo(function QuestDockLimitedTimePill() {
   let intl;
   let items;
   const tmp = closure_6();
@@ -88,7 +36,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   intl = intl2.intl;
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockLimitedTimePill.tsx");
 
 export default memoResult;

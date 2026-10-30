@@ -1,25 +1,17 @@
 // Module ID: 16084
 // Function ID: 16085
-// Dependencies: [16050, 16071, 16085, 16095, 16096]
+// Dependencies: [16083]
 
 // Module 16084
-import _mod16050 from "module_16050" /* 16050 */;
-import _mod16071 from "module_16071" /* 16071 */;
-import f2 from "f" /* 16085 */;
-import _mod16095 from "module_16095" /* 16095 */;
-import _mod16096 from "module_16096" /* 16096 */;
+import _mod16083 from "module_16083" /* 16083 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod16095(arg0));
-  const f = _mod16096.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
+
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod16083, arg0, obj);
+  } catch (err) {
+    _mod16083[arg0] = value;
   }
-  return tmp2;
-}
-let closure_2 = _mod16050([].concat);
-_mod16071("Reflect", "ownKeys") || ownKeys;
-
-export default _mod16071("Reflect", "ownKeys") || ownKeys;
+  return value;
+};

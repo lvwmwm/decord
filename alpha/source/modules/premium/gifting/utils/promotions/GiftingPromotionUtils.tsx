@@ -1,102 +1,26 @@
-// Module ID: 10557
-// Function ID: 10558
+// Module ID: 10583
+// Function ID: 10584
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9583, 1391, 558, 576, 504, 10558, 10562, 10563, 5035, 4841, 2]
-// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useIsPlanEligibleForGiftingPromotion
+// Dependencies: [32, 19, 9606, 1386, 504, 10584, 10588, 10589, 5039, 4842, 2]
+// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10557 (GiftingPromotionUtils)
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5035 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10562 */;
-import MarketingComponentType from "MarketingComponentType" /* 10563 */;
+// Module 10583 (GiftingPromotionUtils)
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5039 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10588 */;
+import MarketingComponentType from "MarketingComponentType" /* 10589 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9583 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import PromotionsStore from "PromotionsStore" /* 9606 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
 const SubscriptionPlans = PremiumConstants.SubscriptionPlans;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchClaimableGiftingPromotionRewardSkuIds() {
-  let closure_0;
-  let fetchPurchasesError;
-  let hasPreviouslyFetched;
-  let purchases;
-  let stateFromStoresArray;
-  let tmp6;
-  let tmp7;
-  let tmp = _require;
-  const tmp2 = stateFromStoresArray;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  const tmp4 = purchases(hasPreviouslyFetched.useState(), 2);
-  _require = tmp4[1];
-  const first = tmp4[0];
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [fetchPurchasesError];
-    const fn = function l() {
-      return fetchPurchasesError.getGiftPromotionRewardSkuIds();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = tmp(tmp2[6]);
-  stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp6, tmp7);
-  const tmpResult2 = tmp(tmp2[7]);
-  const fetchPurchases = tmpResult2.useFetchPurchases();
-  purchases = fetchPurchases.purchases;
-  hasPreviouslyFetched = fetchPurchases.hasPreviouslyFetched;
-  fetchPurchasesError = fetchPurchases.fetchPurchasesError;
-  const ref = obj2.useRef(false);
-  if (cResult[2] === fetchPurchasesError) {
-    if (cResult[3] === hasPreviouslyFetched) {
-      if (cResult[4] === purchases) {
-        let tmp11;
-        let tmp12;
-        if (cResult[5] === stateFromStoresArray) {
-          tmp11 = cResult[6];
-          tmp12 = cResult[7];
-        }
-        const effect = obj2.useEffect(tmp11, tmp12);
-        return first;
-      }
-    }
-  }
-  const fn2 = function h() {
-    const tmp = hasPreviouslyFetched;
-    if (tmp) {
-      if (!ref.current) {
-        const arr = stateFromStoresArray;
-        if (stateFromStoresArray.length > 0) {
-          let found;
-          if (null == fetchPurchasesError) {
-            found = arr.filter((item) => null == purchases.get(item));
-          } else {
-            found = [];
-          }
-          closure_0(found);
-          tmp2.current = true;
-        }
-      }
-    }
-  };
-  const items1 = [stateFromStoresArray, purchases, hasPreviouslyFetched, fetchPurchasesError];
-  cResult[2] = fetchPurchasesError;
-  cResult[3] = hasPreviouslyFetched;
-  cResult[4] = purchases;
-  cResult[5] = stateFromStoresArray;
-  cResult[6] = fn2;
-  cResult[7] = items1;
-  tmp12 = items1;
-  tmp11 = fn2;
-}) : (function useFetchClaimableGiftingPromotionRewardSkuIds() {
+let result = size.fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
+
+export function useFetchClaimableGiftingPromotionRewardSkuIds() {
   let closure_0;
   let fetchPurchasesError;
   let hasPreviouslyFetched;
@@ -134,9 +58,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchClai
     }
   }, items1);
   return first;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
+}
+export function getRewardAssetIdMap(arr) {
+  map = new Map();
+  const item = arr.forEach((skuId) => map.set(skuId.skuId, skuId.assetId));
+  return map;
+}
+export function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
   const items = [, , ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
@@ -150,23 +78,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldSho
     tmp3 = arg2.length >= 1;
   }
   return arg1 && hasItem && tmp3;
-}) : (function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
-  const items = [, , ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
-  id = undefined;
-  const includes = items.includes;
-  if (id != null) {
-    id = id.id;
-  }
-  let tmp3 = null != arg2;
-  const hasItem = includes(id);
-  if (tmp3) {
-    tmp3 = arg2.length >= 1;
-  }
-  return arg1 && hasItem && tmp3;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
+}
+export function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
   const items = [, , ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
@@ -186,28 +99,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldAut
     tmp3 = arg1;
   }
   return tmp3;
-}) : (function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
-  const items = [, , ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
-  id = undefined;
-  const includes = items.includes;
-  if (id != null) {
-    id = id.id;
-  }
-  let tmp3 = null != arg2;
-  const hasItem = includes(id);
-  if (tmp3) {
-    tmp3 = 1 === arg2.length;
-  }
-  if (tmp3) {
-    tmp3 = hasItem;
-  }
-  if (tmp3) {
-    tmp3 = arg1;
-  }
-  return tmp3;
-});
-function useIsPlanEligibleForGiftingPromotion(id) {
+}
+export function useIsPlanEligibleForGiftingPromotion(id) {
   const items = [, , ];
   ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
@@ -217,17 +110,6 @@ function useIsPlanEligibleForGiftingPromotion(id) {
   }
   return includes(id);
 }
-let result = size.fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
-
-export const useFetchClaimableGiftingPromotionRewardSkuIds = tmp2;
-export function getRewardAssetIdMap(arr) {
-  map = new Map();
-  const item = arr.forEach((skuId) => map.set(skuId.skuId, skuId.assetId));
-  return map;
-}
-export const useShouldShowSelectFreeSkuStep = tmp3;
-export const useShouldAutoSelectGiftingPromotionReward = tmp4;
-export { useIsPlanEligibleForGiftingPromotion };
 export function createGradientStyle(gradient, arg1) {
   if (null != gradient) {
     let joined;
@@ -318,10 +200,10 @@ export function shouldShowGiftPromotionReminderNotice() {
       let tmp5 = null != id;
       if (tmp5) {
         const tmpResult = DismissibleContentUnsafeUtils;
-        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4841).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4842).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
           const tmpResult2 = DismissibleContentUnsafeUtils;
-          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4841).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4842).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
       }

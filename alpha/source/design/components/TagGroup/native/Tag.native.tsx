@@ -1,19 +1,18 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12494
+// Function ID: 12495
 // Name: Tag
-// Dependencies: [19, 17, 21, 5005, 12330, 587, 558, 576, 12333, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 12492, 575, 12495, 5619, 2]
+// Exports: Tag
 
-// Module 12332 (Tag)
+// Module 12494 (Tag)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import TagGroupTypes from "TagGroupTypes" /* 12330 */;
-import TagGraphic from "TagGraphic" /* 12333 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import TagGroupTypes from "TagGroupTypes" /* 12492 */;
+import TagGraphic from "TagGraphic" /* 12495 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,86 +36,9 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
   ({ flexShrink: 1, color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT });
   return obj;
 });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tag(variant) {
-  let inline;
-  let item;
-  let items;
-  const obj = react2;
-  const cResult = obj.c(16);
-  ({ item, size, inline } = variant);
-  const tmp4 = closure_6(size, variant.variant);
-  if (inline) {
-    inline = tmp4.inline;
-  }
-  if (cResult[0] === tmp4.tag) {
-    let tmp5;
-    if (cResult[1] === inline) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === item.icon) {
-      let tmp6;
-      let tmp9;
-      if (cResult[4] === size) {
-        tmp6 = cResult[5];
-      }
-      if (cResult[6] !== size) {
-        const tmpResult = TagGroupTypes;
-        const tagTextVariant = tmpResult.getTagTextVariant(size);
-        cResult[6] = size;
-        cResult[7] = tagTextVariant;
-        tmp9 = tagTextVariant;
-      } else {
-        tmp9 = cResult[7];
-      }
-      if (cResult[8] === item.label) {
-        if (cResult[9] === tmp4.label) {
-          let tmp11;
-          if (cResult[10] === tmp9) {
-            tmp11 = cResult[11];
-          }
-          if (cResult[12] === tmp5) {
-            if (cResult[13] === tmp6) {
-              let tmp14;
-              if (cResult[14] === tmp11) {
-                tmp14 = cResult[15];
-              }
-              return tmp14;
-            }
-          }
-          const obj2 = { style: tmp5, children: items };
-          items = [tmp6, tmp11];
-          const tmp17 = hasOwnProperty(View, obj2);
-          cResult[12] = tmp5;
-          cResult[13] = tmp6;
-          cResult[14] = tmp11;
-          cResult[15] = tmp17;
-          tmp14 = tmp17;
-        }
-      }
-      const obj3 = { color: "none", variant: tmp9, style: tmp4.label, lineClamp: 1, children: item.label };
-      const tmp13 = React3(Text_Text.Text, obj3);
-      cResult[8] = item.label;
-      cResult[9] = tmp4.label;
-      cResult[10] = tmp9;
-      cResult[11] = tmp13;
-      tmp11 = tmp13;
-    }
-    let tmp7 = null;
-    if (null != item.icon) {
-      const obj4 = { graphic: item.icon, size };
-      tmp7 = React3(tmp(12333).TagGraphic, obj4);
-    }
-    cResult[3] = item.icon;
-    cResult[4] = size;
-    cResult[5] = tmp7;
-    tmp6 = tmp7;
-  }
-  const items1 = [tmp4.tag, inline];
-  cResult[0] = tmp4.tag;
-  cResult[1] = inline;
-  cResult[2] = items1;
-  tmp5 = items1;
-}) : (function Tag(variant) {
+const result = size.fileFinishedImporting("design/components/TagGroup/native/Tag.native.tsx");
+
+export function Tag(variant) {
   let inline;
   let item;
   let items1;
@@ -142,7 +64,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Tag(variant)
   obj4 = TagGroupTypes;
   items1[1] = React3(Text, obj3);
   return tmp2(tmp3, obj);
-});
-const result = size.fileFinishedImporting("design/components/TagGroup/native/Tag.native.tsx");
-
-export const Tag = tmp4;
+}

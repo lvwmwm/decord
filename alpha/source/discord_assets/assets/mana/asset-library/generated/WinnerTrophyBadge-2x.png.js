@@ -1,8 +1,8 @@
-// Module ID: 10752
-// Function ID: 10753
+// Module ID: 10775
+// Function ID: 10776
 // Dependencies: [2]
 
-// Module 10752
+// Module 10775
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WinnerTrophyBadge-2x.png.js");

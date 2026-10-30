@@ -1,14 +1,14 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13399
+// Function ID: 13400
 // Name: CheckpointStatsUtils
-// Dependencies: [1403, 1125, 4871, 11, 2]
-// Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
+// Dependencies: [1398, 1114, 4872, 11, 2]
+// Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 13249 (CheckpointStatsUtils)
+// Module 13399 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl from "intl" /* 1125 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
-import UserRecord from "UserRecord" /* 1403 */;
+import intl from "intl" /* 1114 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
+import UserRecord from "UserRecord" /* 1398 */;
 import size from "module_2" /* 2 */;
 
 let game, guild;
@@ -33,6 +33,9 @@ export function getCheckpointTopPercent(prop) {
 export function formatCheckpointCompactNumber(stateFromStores1) {
   const numberFormat = new Intl.NumberFormat(intl.intl.currentLocale, { notation: "compact", compactDisplay: "long" });
   return numberFormat.format(stateFromStores1);
+}
+export function getCheckpointOdysseyCopies(stateFromStores1) {
+  return stateFromStores1 / 87765;
 }
 export function formatCheckpointPeakHour(stateFromStores1) {
   if (null == stateFromStores1) {
@@ -66,7 +69,7 @@ export function formatCheckpointPeakHour(stateFromStores1) {
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1125).intl.currentLocale, tmp2);
+    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1114).intl.currentLocale, tmp2);
     const str2 = dateTimeFormat1.format(date);
     const obj2 = { value: str2.replace(re6, ""), label: str2 };
     return obj2;

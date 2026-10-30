@@ -1,10 +1,10 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14501
+// Function ID: 14502
 // Name: conjureFrameSound
 // Dependencies: [2]
 // Exports: showsFrameSoundToggle
 
-// Module 14469 (conjureFrameSound)
+// Module 14501 (conjureFrameSound)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/background_frames/conjureFrameSound.tsx");

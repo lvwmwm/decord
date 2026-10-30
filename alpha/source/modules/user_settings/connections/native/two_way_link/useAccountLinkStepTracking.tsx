@@ -1,91 +1,28 @@
-// Module ID: 14550
-// Function ID: 14551
+// Module ID: 14583
+// Function ID: 14584
 // Name: useAccountLinkStepTracking
-// Dependencies: [19, 1084, 1264, 558, 576, 2]
+// Dependencies: [19, 1072, 1253, 2]
+// Exports: useAccountLinkStepTracking
 
-// Module 14550 (useAccountLinkStepTracking)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14583 (useAccountLinkStepTracking)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let index;
 
+let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountLinkStepTracking(arg0, location_stack) {
-  let closure_0;
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
+
+export function useAccountLinkStepTracking(CRUNCHYROLL, locationStack) {
   let ref;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  dependencyMap = react.useRef(null);
-  const obj2 = react;
-  if (cResult[0] === location_stack) {
-    let tmp2;
-    if (cResult[1] === arg0) {
-      tmp2 = cResult[2];
-    }
-    if (cResult[3] === location_stack) {
-      let tmp3;
-      let tmp4;
-      if (cResult[4] === arg0) {
-        tmp3 = cResult[5];
-        tmp4 = cResult[6];
-      }
-      const effect = obj2.useEffect(tmp3, tmp4);
-      return tmp2;
-    }
-    const fn2 = function o() {
-      let tmp2;
-      let tmp4;
-      const items = ["landing"];
-      const obj = { location_stack, previous_step: tmp4, current_step: items[0], platform_type: tmp2 };
-      tmp4 = undefined;
-      const track = AnalyticsUtilsDefault.track;
-      const ACCOUNT_LINK_STEP = AnalyticEvents.ACCOUNT_LINK_STEP;
-      AnalyticsUtilsDefault;
-      tmp2 = closure_0;
-      if (null != ref.current) {
-        tmp4 = items[tmp.current];
-      }
-      track(ACCOUNT_LINK_STEP, obj);
-      ref.current = 0;
-    };
-    let items = [location_stack, arg0];
-    cResult[3] = location_stack;
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    cResult[6] = items;
-    tmp4 = items;
-    tmp3 = fn2;
-  }
-  const fn = function c(index) {
-    let tmp8;
-    if (null != index) {
-      index = index.index;
-      const obj = { location_stack: tmp3, previous_step: tmp8, current_step: index.routeNames[index], platform_type: tmp2 };
-      tmp8 = undefined;
-      const track = AnalyticsUtilsDefault.track;
-      const ACCOUNT_LINK_STEP = AnalyticEvents.ACCOUNT_LINK_STEP;
-      AnalyticsUtilsDefault;
-      if (null != ref.current) {
-        tmp8 = index.routeNames[tmp.current];
-      }
-      track(ACCOUNT_LINK_STEP, obj);
-      ref.current = index;
-    }
-  };
-  cResult[0] = location_stack;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp2 = fn;
-}) : (function useAccountLinkStepTracking(arg0, location_stack) {
-  let closure_0 = arg0;
-  const ref = react.useRef(null);
-  let items = [location_stack, arg0];
-  const items1 = [location_stack, arg0];
+  let closure_0 = CRUNCHYROLL;
+  const location_stack = locationStack;
+  react = react.useRef(null);
+  let items = [locationStack, CRUNCHYROLL];
+  const items1 = [locationStack, CRUNCHYROLL];
   const callback = react.useCallback((index) => {
     let tmp8;
     if (null != index) {
@@ -111,7 +48,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountLi
     const track = AnalyticsUtilsDefault.track;
     const ACCOUNT_LINK_STEP = AnalyticEvents.ACCOUNT_LINK_STEP;
     AnalyticsUtilsDefault;
-    tmp2 = closure_0;
+    tmp2 = CRUNCHYROLL;
     if (null != ref.current) {
       tmp4 = items[tmp.current];
     }
@@ -119,7 +56,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountLi
     ref.current = 0;
   }, items1);
   return callback;
-});
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/useAccountLinkStepTracking.tsx");
-
-export const useAccountLinkStepTracking = tmp2;
+}

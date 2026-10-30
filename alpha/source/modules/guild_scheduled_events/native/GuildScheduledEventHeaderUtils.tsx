@@ -1,16 +1,16 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9192
+// Function ID: 9193
 // Name: GuildScheduledEventHeaderUtils
-// Dependencies: [6842, 4863, 8927, 587, 9180, 1125, 8969, 9181, 2]
+// Dependencies: [6849, 4864, 8960, 575, 9193, 1114, 8188, 9194, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9179 (GuildScheduledEventHeaderUtils)
-import nativeDefault from "native" /* 587 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
-import ScheduleUtils from "ScheduleUtils" /* 8927 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9180 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9181 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
+// Module 9192 (GuildScheduledEventHeaderUtils)
+import nativeDefault from "native" /* 575 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import ScheduleUtils from "ScheduleUtils" /* 8960 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9193 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9194 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,30 +49,30 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
   const ICON_SUBTLE = nativeDefault.colors.ICON_SUBTLE;
   let tmp8Result = AssetRegistryDefault;
   if (tmp4) {
-    const intl4 = tmp(1125).intl;
-    let stringResult = intl4.string(tmp(1125).t["X2K3/4"]);
+    const intl4 = tmp(1114).intl;
+    let stringResult = intl4.string(tmp(1114).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8969);
+      tmp8Result = tmp8(8188);
     }
     let entity_type;
     if (event != null) {
       entity_type = event.entity_type;
     }
     if (entity_type === constants.EXTERNAL) {
-      const intl5 = tmp(1125).intl;
-      stringResult = intl5.string(tmp(1125).t.TxqPQR);
+      const intl5 = tmp(1114).intl;
+      stringResult = intl5.string(tmp(1114).t.TxqPQR);
     }
-    ICON_FEEDBACK_CRITICAL = tmp8(587).colors.ICON_FEEDBACK_POSITIVE;
+    ICON_FEEDBACK_CRITICAL = tmp8(575).colors.ICON_FEEDBACK_POSITIVE;
     stringResult1 = stringResult;
     tmp8Result3 = tmp8Result;
   } else if (tmp7) {
-    tmp8Result3 = tmp8(9181);
+    tmp8Result3 = tmp8(9194);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result3 = tmp8(9181);
-    const intl3 = tmp(1125).intl;
-    stringResult1 = intl3.string(tmp(1125).t.WINqKV);
+    tmp8Result3 = tmp8(9194);
+    const intl3 = tmp(1114).intl;
+    stringResult1 = intl3.string(tmp(1114).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else {
     tmp8Result3 = tmp8Result;
@@ -82,12 +82,12 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
       let formatToPlainStringResult;
       const tmp8Result4 = AssetRegistryDefault2;
       if (diffMinutes > 0) {
-        const intl2 = tmp(1125).intl;
+        const intl2 = tmp(1114).intl;
         const obj2 = { minutes: diffMinutes };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t.PQlCWk, obj2);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp(1114).t.PQlCWk, obj2);
       } else {
-        const intl = tmp(1125).intl;
-        formatToPlainStringResult = intl.string(tmp(1125).t.WINqKV);
+        const intl = tmp(1114).intl;
+        formatToPlainStringResult = intl.string(tmp(1114).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
       tmp8Result3 = tmp8Result4;
@@ -95,10 +95,10 @@ export function getGuildScheduledEventHeaderProps(eventTimeData) {
     }
   }
   if (isCanceled) {
-    ICON_FEEDBACK_CRITICAL = tmp8(587).colors.ICON_FEEDBACK_CRITICAL;
+    ICON_FEEDBACK_CRITICAL = tmp8(575).colors.ICON_FEEDBACK_CRITICAL;
   }
   const obj3 = { icon: tmp8Result3, text: stringResult1, color: internal.resolveSemanticColor(theme, ICON_FEEDBACK_CRITICAL), shouldChangeTextColor: tmp17 };
-  internal = tmp8(587).internal;
+  internal = tmp8(575).internal;
   tmp17 = !tmp7;
   if (tmp17) {
     if (!tmp4) {

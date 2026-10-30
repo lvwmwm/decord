@@ -1,19 +1,18 @@
-// Module ID: 9808
-// Function ID: 9809
+// Module ID: 9834
+// Function ID: 9835
 // Name: ConversationNavigator
-// Dependencies: [32, 19, 9803, 21, 9809, 558, 576, 7155, 9819, 9820, 9821, 587, 9832, 9842, 5188, 9802, 2]
-// Exports: openConversationNavigator
+// Dependencies: [32, 19, 9829, 21, 9835, 7163, 9845, 9846, 9847, 575, 9858, 9868, 5194, 9828, 2]
+// Exports: default, openConversationNavigator
 
-// Module 9808 (ConversationNavigator)
-import nativeDefault from "native" /* 587 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import useSelectedConversationDefault from "useSelectedConversation" /* 9819 */;
+// Module 9834 (ConversationNavigator)
+import nativeDefault from "native" /* 575 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import useSelectedConversationDefault from "useSelectedConversation" /* 9845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9803 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9829 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9809 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import NativeStackView from "NativeStackView" /* 9835 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,203 +21,12 @@ let _require;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const ConversationsActionCreators = tmp(9802);
+const ConversationsActionCreators = tmp(9828);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = NativeStackView.createNativeStackNavigator();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationNavigator(route) {
-  let LIST;
-  let channelId;
-  let closure_0;
-  let guildId;
-  let items;
-  let tmp6;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(22);
-  ({ channelId, guildId } = route.route.params);
-  let obj2 = require("Navigator");
-  const accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
-  const tmp5 = useSelectedConversationDefault(channelId);
-  _require = tmp5;
-  if (cResult[0] !== tmp5) {
-    const fn = function u() {
-      let tmp = null;
-      if (SelectedConversationStore.consumeFocusRequest()) {
-        let tmp3 = null;
-        const tmp2 = closure_0;
-        if (null != closure_0) {
-          const obj = { conversationId: null, title: null };
-          ({ id: obj.conversationId, title: obj.title } = tmp2);
-          tmp3 = obj;
-        }
-        tmp = tmp3;
-      }
-      return tmp;
-    };
-    cResult[0] = tmp5;
-    cResult[1] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-  }
-  const first = _slicedToArray(react.useState(tmp6), 1)[0];
-  if (null != first) {
-    LIST = tmp(9820).ConversationNavigatorScreens.FOCUS;
-  } else {
-    LIST = tmp(9820).ConversationNavigatorScreens.LIST;
-  }
-  if (cResult[2] === channelId) {
-    let tmp8;
-    let tmp11;
-    let tmp10;
-    let tmp12;
-    if (cResult[3] === guildId) {
-      tmp8 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function f(arg0) {
-        let route;
-        ({ route, navigation } = arg0);
-        const obj = closure_0(dependencyMap[10]);
-        const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-        return obj.conversationNavigatorListHeaderOptions(route, navigation, obj2);
-      };
-      const fn3 = function h() {
-        return closure_0(dependencyMap[12]).default;
-      };
-      cResult[5] = fn2;
-      cResult[6] = fn3;
-      tmp11 = fn3;
-      tmp10 = fn2;
-    } else {
-      tmp10 = cResult[5];
-      tmp11 = cResult[6];
-    }
-    if (cResult[7] !== tmp8) {
-      const Screen = closure_8.Screen;
-      const obj3 = { initialParams: tmp8, name: tmp(9820).ConversationNavigatorScreens.LIST, options: tmp10, getComponent: tmp11 };
-      const tmp15 = closure_6(Screen, obj3);
-      cResult[7] = tmp8;
-      cResult[8] = tmp15;
-      tmp12 = tmp15;
-    } else {
-      tmp12 = cResult[8];
-    }
-    if (cResult[9] === channelId) {
-      if (cResult[10] === guildId) {
-        let tmp16;
-        let tmp23;
-        let tmp22;
-        if (cResult[11] === first) {
-          tmp16 = cResult[12];
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          class T {
-            constructor(arg0) {
-              let route;
-              ({ route, navigation } = arg0);
-              const obj = closure_0(dependencyMap[10]);
-              const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-              return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-            }
-          }
-          const fn4 = function b() {
-            return closure_0(dependencyMap[13]).default;
-          };
-          cResult[13] = T;
-          cResult[14] = fn4;
-          tmp23 = fn4;
-          tmp22 = T;
-        } else {
-          class T {
-            constructor(arg0) {
-              let route;
-              ({ route, navigation } = arg0);
-              const obj = closure_0(dependencyMap[10]);
-              const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-              return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-            }
-          }
-          tmp23 = cResult[14];
-        }
-        if (cResult[15] !== tmp16) {
-          class T {
-            constructor(arg0) {
-              let route;
-              ({ route, navigation } = arg0);
-              const obj = closure_0(dependencyMap[10]);
-              const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-              return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-            }
-          }
-          const Screen2 = closure_8.Screen;
-          const obj4 = { name: tmp(9820).ConversationNavigatorScreens.FOCUS, initialParams: tmp16, options: tmp22, getComponent: tmp23 };
-          cResult[15] = tmp16;
-          cResult[16] = closure_6(Screen2, obj4);
-          const tmp26 = closure_6(Screen2, obj4);
-        } else {
-          class T {
-            constructor(arg0) {
-              let route;
-              ({ route, navigation } = arg0);
-              const obj = closure_0(dependencyMap[10]);
-              const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-              return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-            }
-          }
-        }
-        if (cResult[17] === accessibilityNativeStackOptions) {
-          class T {
-            constructor(arg0) {
-              let route;
-              ({ route, navigation } = arg0);
-              const obj = closure_0(dependencyMap[10]);
-              const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-              return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-            }
-          }
-        }
-        const obj5 = { id: "conversation-navigator", screenOptions: accessibilityNativeStackOptions, initialRouteName: LIST, children: items };
-        items = [tmp12, tmp24];
-        cResult[17] = accessibilityNativeStackOptions;
-        cResult[18] = tmp24;
-        cResult[19] = LIST;
-        cResult[20] = tmp12;
-        cResult[21] = closure_7(closure_8.Navigator, obj5);
-        const tmp30 = closure_7(closure_8.Navigator, obj5);
-      }
-    }
-    let tmp17;
-    if (null != first) {
-      class T {
-        constructor(arg0) {
-          let route;
-          ({ route, navigation } = arg0);
-          const obj = closure_0(dependencyMap[10]);
-          const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
-          return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
-        }
-      }
-      tmp18[0] = channelId;
-      tmp18[1] = guildId;
-      const merged = Object.assign(first);
-      tmp17 = tmp18;
-    }
-    cResult[9] = channelId;
-    cResult[10] = guildId;
-    cResult[11] = first;
-    cResult[12] = tmp17;
-    tmp16 = tmp17;
-  }
-  const obj6 = { channelId, guildId };
-  cResult[2] = channelId;
-  cResult[3] = guildId;
-  cResult[4] = obj6;
-  tmp8 = obj6;
-}) : (function ConversationNavigator(route) {
+let Navigator = NativeStackView.createNativeStackNavigator();
+const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");
+
+export default function ConversationNavigator(route) {
   let LIST;
   let channelId;
   let closure_0;
@@ -247,42 +55,42 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
     return tmp;
   }), 1)[0];
   let obj2 = { id: "conversation-navigator", screenOptions: accessibilityNativeStackOptions, initialRouteName: LIST, children: items };
-  const Navigator = closure_8.Navigator;
+  Navigator = Navigator.Navigator;
   const tmp5 = closure_7;
   if (null != first) {
-    LIST = tmp(9820).ConversationNavigatorScreens.FOCUS;
+    LIST = tmp(9846).ConversationNavigatorScreens.FOCUS;
   } else {
-    LIST = tmp(9820).ConversationNavigatorScreens.LIST;
+    LIST = tmp(9846).ConversationNavigatorScreens.LIST;
   }
   items = [, ];
   const obj3 = {
     initialParams: { channelId, guildId },
-    name: tmp(9820).ConversationNavigatorScreens.LIST,
+    name: tmp(9846).ConversationNavigatorScreens.LIST,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
-      const obj = closure_0(dependencyMap[10]);
+      const obj = closure_0(dependencyMap[8]);
       const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
       return obj.conversationNavigatorListHeaderOptions(route, navigation, obj2);
     },
     getComponent() {
-      return closure_0(dependencyMap[12]).default;
+      return closure_0(dependencyMap[10]).default;
     }
   };
-  items[0] = closure_6(closure_8.Screen, obj3);
+  items[0] = closure_6(Navigator.Screen, obj3);
   const Screen = tmp6.Screen;
   const obj4 = {
-    name: tmp(9820).ConversationNavigatorScreens.FOCUS,
+    name: tmp(9846).ConversationNavigatorScreens.FOCUS,
     initialParams: tmp8,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);
-      const obj = closure_0(dependencyMap[10]);
+      const obj = closure_0(dependencyMap[8]);
       const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
       return obj.conversationNavigatorFocusHeaderOptions(route, navigation, obj2);
     },
     getComponent() {
-      return closure_0(dependencyMap[13]).default;
+      return closure_0(dependencyMap[11]).default;
     }
   };
   tmp8 = undefined;
@@ -294,10 +102,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversation
   }
   items[1] = tmp7(Screen, obj4);
   return tmp5(Navigator, obj2);
-});
-const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");
-
-export default tmp3;
+};
 export function openConversationNavigator(focusSelectedConversation) {
   let channelId;
   let guildId;

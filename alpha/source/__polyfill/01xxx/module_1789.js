@@ -1,18 +1,23 @@
 // Module ID: 1789
 // Function ID: 1790
-// Dependencies: [32, 41, 42, 93, 95, 98, 1726]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 1654, 1759, 1695]
 
 // Module 1789
-import BaseAnimationBuilder from "BaseAnimationBuilder" /* 1726 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import Fragment from "Fragment" /* 21 */;
+import react_native from "react-native" /* 1759 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c2 from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
+import react_mod from "react" /* 19 */;
+import module_1654 from "module_1654" /* 1654 */;
 
-let size;
-
+let Component;
+let createContext;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,58 +33,98 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_5 = { code: "function pnpm_LinearTransitionTs1(values){const{delayFunction,delay,animation,config,callback}=this.__closure;return{initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight},animations:{originX:delayFunction(delay,animation(values.targetOriginX,config)),originY:delayFunction(delay,animation(values.targetOriginY,config)),width:delayFunction(delay,animation(values.targetWidth,config)),height:delayFunction(delay,animation(values.targetHeight,config))},callback:callback};}" };
-class LinearTransition {
+function SkipEntering(children) {
+  const tmp = metroImportDefault(children.shouldSkip);
+  let closure_0 = tmp;
+  const tmp2 = metroImportDefault(children.itemKey);
+  if (children.itemKey !== tmp2.current) {
+    ({ shouldSkip: tmp.current, itemKey: tmp2.current } = children);
+  }
+  const items = [tmp, children.itemKey];
+  metroRequire(() => {
+    closure_0.current = false;
+  }, items);
+  return jsx(closure_10 ? context : context.Provider, { value: tmp, children: children.children });
+}
+let react = react_mod;
+({ Children: hasOwnProperty, useEffect: metroRequire, useRef: metroImportDefault, Component, createContext } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+let closure_10 = module_1654.isReact19();
+const context = createContext(null);
+class LayoutAnimationConfig {
   constructor() {
     let constructResult;
     const self = this;
-    const items = [...arguments];
-    let closure_0;
-    _classCallCheck(this, LinearTransition);
-    const items1 = [...items];
-    let tmp2 = _getPrototypeOf;
-    let obj = _getPrototypeOf(LinearTransition);
-    const tmp3 = c2;
+    _classCallCheck(this, LayoutAnimationConfig);
+    const obj = _getPrototypeOf(LayoutAnimationConfig);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, items1);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.build = () => {
-      const delayFunction = closure_0.getDelayFunction();
-      const tmp2 = LinearTransition(closure_0.getAnimationAndConfig(), 2);
-      const first = tmp2[0];
-      let closure_2 = tmp4;
-      const callbackV = closure_0.callbackV;
-      const delay = closure_0.getDelay();
-      const fn = function t(originX) {
-        const obj = { initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight }, animations: size, callback: callbackV };
-        size = { originX: delayFunction(delay, first(originX.targetOriginX, closure_2)), originY: delayFunction(delay, first(originX.targetOriginY, closure_2)), width: delayFunction(delay, first(originX.targetWidth, closure_2)), height: delayFunction(delay, first(originX.targetHeight, closure_2)) };
-        return obj;
-      };
-      fn.__closure = { delayFunction, delay, animation: first, config: tmp2[1], callback: callbackV };
-      fn.__workletHash = 16224579837767;
-      fn.__initData = __initData;
-      return fn;
-    };
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(LinearTransition, BaseAnimationBuilder.ComplexAnimationBuilder);
+_inherits(LayoutAnimationConfig, Component);
 const entry = {
-  key: "createInstance",
-  value: function createInstance() {
-    const tmp = LinearTransition();
-    return tmp;
+  key: "getMaybeWrappedChildren",
+  value: function getMaybeWrappedChildren() {
+    const self = this;
+    const arr = closure_1_5;
+    if (closure_1_5.count(this.props.children) > 1) {
+      let children;
+      if (self.props.skipExiting) {
+        children = arr.map(self.props.children, (children) => <LayoutAnimationConfig itemKey={self.props.itemKey} skipExiting>{arg0}</LayoutAnimationConfig>);
+      }
+      return children;
+    }
+    children = self.props.children;
   }
 };
-let items = [entry];
-const importDefaultResultResult = _createClass(LinearTransition, null, items);
-importDefaultResultResult.presetName = "LinearTransition";
-const LinearTransition_export = importDefaultResultResult;
+let items = [
+  entry,
+  {
+    key: "setShouldAnimateExiting",
+    value: function setShouldAnimateExiting() {
+      const self = this;
+      if (1 === hasOwnProperty.count(this.props.children)) {
+        const obj = react_native;
+        const findNodeHandleResult = obj.findNodeHandle(self);
+        const tmp = require;
+        if (findNodeHandleResult) {
+          const tmpResult = tmp(1695);
+          const result = tmpResult.setShouldAnimateExitingForTag(findNodeHandleResult, !self.props.skipExiting);
+        }
+      }
+    }
+  },
+  {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      const self = this;
+      if (undefined !== this.props.skipExiting) {
+        const result = self.setShouldAnimateExiting();
+      }
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      const self = this;
+      const maybeWrappedChildren = this.getMaybeWrappedChildren();
+      let tmp2 = maybeWrappedChildren;
+      if (undefined !== this.props.skipEntering) {
+        tmp2 = <SkipEntering itemKey={self.props.itemKey} shouldSkip={self.props.skipEntering}>{maybeWrappedChildren}</SkipEntering>;
+      }
+      return tmp2;
+    }
+  }
+];
+const LayoutAnimationConfig_export = _createClass(LayoutAnimationConfig, items);
 
-export { LinearTransition_export as LinearTransition };
-export const Layout = importDefaultResultResult;
+export const SkipEnteringContext = context;
+export { LayoutAnimationConfig_export as LayoutAnimationConfig };

@@ -1,25 +1,25 @@
-// Module ID: 6727
-// Function ID: 6728
+// Module ID: 6734
+// Function ID: 6735
 // Name: AuthenticationActionCreators
-// Dependencies: [5, 6728, 502, 6729, 1084, 6730, 3, 5011, 584, 5188, 1111, 6731, 6734, 1272, 1294, 6433, 6735, 6736, 510, 1110, 2]
+// Dependencies: [5, 6735, 502, 6736, 1072, 6737, 3, 5015, 572, 5194, 1100, 6738, 6741, 1261, 1283, 6440, 6742, 6743, 510, 1099, 2]
 
-// Module 6727 (AuthenticationActionCreators)
+// Module 6734 (AuthenticationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import TokenManagerAll from "TokenManager" /* 1110 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5011 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6433 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6728 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import TokenManagerAll from "TokenManager" /* 1099 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5015 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6440 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6735 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConsentStore from "ConsentStore" /* 6729 */;
-import Constants from "Constants" /* 1084 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6730 */;
+import ConsentStore from "ConsentStore" /* 6736 */;
+import Constants from "Constants" /* 1072 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,17 +32,17 @@ let closure_14;
 let closure_15;
 let map1;
 let unpackModuleId;
-const f98327 = (error) => {
+const f88914 = (error) => {
   logger.error("Error while dispatching LOGOUT", error);
   if (DiscordErrors != null) {
     DiscordErrors.softCrash(error);
   }
   throw error;
 };
-function handleLogout(source, Routes) {
+function handleLogout(source, CHANNELResult) {
   let items;
-  let DEFAULT_LOGGED_OUT = Routes;
-  if (Routes === undefined) {
+  let DEFAULT_LOGGED_OUT = CHANNELResult;
+  if (CHANNELResult === undefined) {
     DEFAULT_LOGGED_OUT = map1.DEFAULT_LOGGED_OUT;
   }
   obj = CrossPlatformNativeUtilsDefault;
@@ -52,7 +52,7 @@ function handleLogout(source, Routes) {
   const merged = Object.assign(undefined);
   const tmp2Result = DispatcherDefault;
   const dispatchResult = tmp2Result.dispatch(obj2);
-  dispatchResult.catch(f98327);
+  dispatchResult.catch(f88914);
   if (null != DEFAULT_LOGGED_OUT) {
     const obj8 = RootNavigationRef;
     const rootNavigationRef = obj8.getRootNavigationRef();
@@ -65,7 +65,7 @@ function handleLogout(source, Routes) {
       rootNavigationRef.reset(obj3);
     } else {
       const obj4 = { source };
-      const tmp12Result = tmp12(1111);
+      const tmp12Result = tmp12(1100);
       tmp12Result.transitionTo(DEFAULT_LOGGED_OUT, obj4);
     }
   }
@@ -168,7 +168,7 @@ let obj2 = {
             const merged = Object.assign({ isSwitchingAccount: true });
             const tmp21Result = DispatcherDefault;
             const dispatchResult = tmp21Result.dispatch(obj2);
-            dispatchResult.catch(f98327);
+            dispatchResult.catch(f88914);
           }
           const body3 = body.body;
           let suspended_user_token1;
@@ -234,7 +234,7 @@ let obj2 = {
     ({ isMultiAccount: require, loginInstanceId } = arg0);
     ({ code, ticket, source, giftCodeSKUId, mfaType } = arg0);
     let tmp = dependencyMap;
-    const tmp2 = self(6734);
+    const tmp2 = self(6741);
     const request = { url: closure_9.LOGIN_MFA(mfaType), body, retries: 2, oldFormErrors: true, trackedActionData: obj2, rejectWithError: true };
     const post = tmp2.post;
     body = { code, ticket, login_source: source, gift_code_sku_id: giftCodeSKUId, login_instance_id: loginInstanceId };
@@ -295,7 +295,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -395,7 +395,7 @@ let obj2 = {
               } else {
                 credential = 0;
                 c5 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } else if (arg0 === 1) {
               c5 = 3;
@@ -431,9 +431,9 @@ let obj2 = {
     let self = this;
     isMultiAccount = isMultiAccount.isMultiAccount;
     ({ ticket, credential, source, giftCodeSKUId } = isMultiAccount);
-    obj = self(6734);
+    obj = self(6741);
     const request = { url: closure_9.WEBAUTHN_CONDITIONAL_UI_LOGIN, body: { credential, ticket, source, giftCodeSKUId }, retries: 1, trackedActionData: obj2, rejectWithError: true };
-    obj2 = { event: isMultiAccount(1272).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
+    obj2 = { event: isMultiAccount(1261).NetworkActionNames.USER_LOGIN_PASSWORDLESS };
     const postResult = obj.post(request);
     nextPromise = postResult.then((body) => {
       let required_actions;
@@ -513,7 +513,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -623,7 +623,7 @@ let obj2 = {
     const merged = Object.assign(arg0);
     const tmpResult = DispatcherDefault;
     const dispatchResult = tmpResult.dispatch(obj2);
-    dispatchResult.catch(f98327);
+    dispatchResult.catch(f88914);
   },
   logout(TTI_test, LOGIN) {
     let Storage;
@@ -640,7 +640,7 @@ let obj2 = {
     }
     importAll = arg2;
     let tmp2 = dependencyMap;
-    const tmp3 = DEFAULT_LOGGED_OUT(6734);
+    const tmp3 = DEFAULT_LOGGED_OUT(6741);
     const request = { url: closure_9.LOGOUT, body, oldFormErrors: true, trackedActionData: { event: require("discord_common/AnalyticsUtils").NetworkActionNames.USER_LOGOUT, properties: { logout_source: TTI_test } }, rejectWithError: tmp4Result.rejectWithMigratedError() };
     body = { provider: closure_15(), token: Storage.get(closure_10), voip_provider, voip_token: Storage2.get(closure_11) };
     const post = tmp3.post;
@@ -660,7 +660,7 @@ let obj2 = {
       obj5 = { authorization: str };
     }
     const merged = Object.assign(tmp5);
-    tmp4Result = tmp4(1294);
+    tmp4Result = tmp4(1283);
     const postResult = post(request);
     return postResult.finally(() => {
       const tmp2 = null != closure_2 && tmp !== AuthenticationStore.getId();
@@ -686,7 +686,7 @@ let obj2 = {
     const merged = Object.assign(obj2);
     const tmp3Result = DispatcherDefault;
     const dispatchResult = tmp3Result.dispatch(obj4);
-    dispatchResult.catch(f98327);
+    dispatchResult.catch(f88914);
     const loginTokenResult = this.loginToken(token, true);
     return loginTokenResult.then(() => {
       const tmp = token === AuthenticationStore.getToken();
@@ -780,7 +780,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -950,7 +950,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,16 +1,16 @@
-// Module ID: 2066
-// Function ID: 2067
+// Module ID: 2063
+// Function ID: 2064
 // Name: LocaleStore
-// Dependencies: [5, 2067, 1243, 4819, 1125, 504, 584, 2]
+// Dependencies: [5, 2064, 1232, 4820, 1114, 504, 572, 2]
 
-// Module 2066 (LocaleStore)
+// Module 2063 (LocaleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl from "intl" /* 1125 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2067 */;
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl from "intl" /* 1114 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2064 */;
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -30,7 +30,7 @@ let obj = function _getSystemLocale() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

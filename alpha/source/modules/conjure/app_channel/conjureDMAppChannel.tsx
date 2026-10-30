@@ -1,16 +1,15 @@
-// Module ID: 6865
-// Function ID: 6866
+// Module ID: 6872
+// Function ID: 6873
 // Name: conjureDMAppChannel
-// Dependencies: [2043, 4879, 1389, 1084, 558, 576, 504, 6866, 6868, 6870, 2]
-// Exports: isDMAppChannel
+// Dependencies: [2040, 4880, 1384, 1072, 504, 6873, 6875, 6877, 2]
+// Exports: isDMAppChannel, useDMAppChannelApplicationId
 
-// Module 6865 (conjureDMAppChannel)
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6866 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 6872 (conjureDMAppChannel)
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6873 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,103 +19,20 @@ let hasOwnProperty;
 let metroRequire;
 ({ ApplicationFlags: hasOwnProperty, ChannelTypes: metroRequire } = Constants);
 const DMAppChannel = "DMAppChannel";
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMAppChannelApplicationId(arg0) {
-  let first;
-  let systemDM;
-  let tmp10;
-  let tmp14;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      let type;
-      if (systemDM != null) {
-        type = obj.type;
-      }
-      if (type === metroRequire.DM) {
-        if (!systemDM.isSystemDM()) {
-          const user = UserStore.getUser(obj.getRecipientId());
-          let bot;
-          if (user != null) {
-            bot = user.bot;
-          }
-          let id = null;
-          if (true === bot) {
-            id = user.id;
-          }
-          return id;
-        }
-      }
-      return null;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] !== (null != stateFromStores)) {
-    const obj2 = { autoTrackExposure: null != stateFromStores };
-    cResult[4] = null != stateFromStores;
-    cResult[5] = obj2;
-    tmp10 = obj2;
-  } else {
-    tmp10 = cResult[5];
-  }
-  const tmpResult4 = require("ConjureGuildExperiment");
-  const hasConjureGuild = tmpResult4.useHasConjureGuild(DMAppChannel, tmp10);
-  let tmp13 = null;
-  const useApplication = require("ApplicationActionCreators").useApplication;
-  require("ApplicationActionCreators");
-  if (hasConjureGuild) {
-    tmp13 = stateFromStores;
-  }
-  const data = useApplication(tmp13).data;
-  if (cResult[6] !== data) {
-    let id = null;
-    if (null != data) {
-      id = null;
-      const tmpResult6 = require("ApplicationFlagUtils");
-      if (tmpResult6.hasApplicationFlag(data, constants.DM_OPENS_ACTIVITY)) {
-        id = data.id;
-      }
-    }
-    cResult[6] = data;
-    cResult[7] = id;
-    tmp14 = id;
-  } else {
-    tmp14 = cResult[7];
-  }
-  return tmp14;
-}) : (function useDMAppChannelApplicationId(arg0) {
-  let systemDM;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/conjure/app_channel/conjureDMAppChannel.tsx");
+
+export function useDMAppChannelApplicationId(stateFromStores) {
+  _require = stateFromStores;
   const obj = require("get initialized");
   const items = [UserStore];
-  const items1 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => {
+  const items1 = [stateFromStores];
+  stateFromStores = obj.useStateFromStores(items, () => {
     let type;
-    if (systemDM != null) {
+    if (stateFromStores != null) {
       type = obj.type;
     }
     if (type === metroRequire.DM) {
-      if (!systemDM.isSystemDM()) {
+      if (!stateFromStores.isSystemDM()) {
         const user = UserStore.getUser(obj.getRecipientId());
         let bot;
         if (user != null) {
@@ -145,16 +61,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDMAppCh
   let id = null;
   if (null != data) {
     id = null;
-    const tmpResult = tmp(6870);
+    const tmpResult = tmp(6877);
     if (tmpResult.hasApplicationFlag(data, constants.DM_OPENS_ACTIVITY)) {
       id = data.id;
     }
   }
   return id;
-});
-const result = size.fileFinishedImporting("modules/conjure/app_channel/conjureDMAppChannel.tsx");
-
-export const useDMAppChannelApplicationId = tmp3;
+}
 export function isDMAppChannel(channel) {
   if (channel.type === metroRequire.DM) {
     if (!channel.isSystemDM()) {
@@ -174,7 +87,7 @@ export function isDMAppChannel(channel) {
             id = user.id;
           }
           const application = getApplication(id);
-          const tmp8Result = tmp8(6870);
+          const tmp8Result = tmp8(6877);
           return tmp8Result.hasApplicationFlag(application, hasOwnProperty.DM_OPENS_ACTIVITY);
         }
       }

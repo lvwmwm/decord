@@ -1,22 +1,21 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17092
+// Function ID: 17093
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1095, 21, 5005, 558, 576, 16975, 16944, 16963, 6771, 7859, 5242, 5012, 16943, 1125, 5271, 17039, 17040, 5707, 17003, 17041, 2]
+// Dependencies: [19, 17, 1083, 21, 5009, 17029, 16998, 17017, 6778, 7864, 5248, 5016, 16997, 17093, 5619, 1114, 5712, 17097, 17098, 17057, 2]
 
-// Module 17038 (QuestDockUnenrolledHeader)
+// Module 17092 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1095 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7859 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 16963 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17003 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17041 */;
+import Constants from "Constants" /* 1083 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7864 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17017 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17057 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17093 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -25,135 +24,7 @@ const View = react_native.View;
 const ThemeTypes = Constants.ThemeTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ primaryContent: { alignItems: "center", flexDirection: "row" }, wreathImage: { height: 35, marginRight: 4, width: 35 }, logo: { marginTop: 2 }, getRewardLabel: { opacity: 0.7 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockUnenrolledHeader() {
-  let LIGHT;
-  let items;
-  let questCreative;
-  let tmp11;
-  let tmp14;
-  let tmp16;
-  let tmp7;
-  let tmp8Result;
-  let obj = questCreative(576);
-  const cResult = obj.c(21);
-  let obj2 = questCreative(16975);
-  const questDockQuest = obj2.useQuestDockQuest();
-  const obj3 = questCreative(16975);
-  questCreative = obj3.useQuestCreative(questDockQuest);
-  const obj4 = questCreative(16944);
-  const actionSheetPressHandler = obj4.useActionSheetPressHandler(questCreative);
-  if (cResult[0] !== questCreative) {
-    const fn = function t() {
-      const obj2 = { creative: questCreative, isTargetedDisclosure: true, trackingCtx: { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_OPEN_DISCLOSURE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE } };
-      const obj = QuestDisclosureModalActionCreatorsDefault;
-      ({ content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.CONTEXT_MENU_OPEN_DISCLOSURE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE });
-      obj.showModal(obj2);
-    };
-    cResult[0] = questCreative;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const tmp9 = useThemeDefault();
-  const tmpResult = questCreative(5012);
-  if (tmpResult.isThemeDark(tmp9)) {
-    LIGHT = tmp10.DARK;
-    tmp11 = tmp10;
-  } else {
-    LIGHT = tmp10.LIGHT;
-    tmp11 = tmp10;
-  }
-  const tmp12 = closure_8();
-  const tmpResult2 = questCreative(16943);
-  const questGameLogotypeAssetUrl = tmpResult2.useQuestGameLogotypeAssetUrl(questDockQuest);
-  const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
-  const getRewardLabel = tmp12.getRewardLabel;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(questCreative(1125).t["3mgEQf"]);
-    cResult[2] = stringResult;
-    tmp14 = stringResult;
-  } else {
-    tmp14 = cResult[2];
-  }
-  if (cResult[3] !== tmp12.getRewardLabel) {
-    const obj5 = { style: getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: tmp14 };
-    const tmp18 = closure_6(questCreative(5271).Text, obj5);
-    cResult[3] = tmp12.getRewardLabel;
-    cResult[4] = tmp18;
-    tmp16 = tmp18;
-  } else {
-    tmp16 = cResult[4];
-  }
-  if (LIGHT === tmp11.DARK) {
-    tmp8Result = tmp8(17039);
-  } else {
-    tmp8Result = tmp8(17040);
-  }
-  if (cResult[5] === tmp12.wreathImage) {
-    let tmp20;
-    if (cResult[6] === tmp8Result) {
-      tmp20 = cResult[7];
-    }
-    if (cResult[8] === questGameLogotypeAssetUrl) {
-      let tmp22;
-      if (cResult[9] === tmp12.logo) {
-        tmp22 = cResult[10];
-      }
-      if (cResult[11] === tmp12.primaryContent) {
-        if (cResult[12] === tmp20) {
-          let tmp25;
-          if (cResult[13] === tmp22) {
-            tmp25 = cResult[14];
-          }
-          if (cResult[15] === tmp7) {
-            if (cResult[16] === actionSheetPressHandler) {
-              if (cResult[17] === questBarHeroBlurhash) {
-                if (cResult[18] === tmp16) {
-                  let tmp29;
-                  if (cResult[19] === tmp25) {
-                    tmp29 = cResult[20];
-                  }
-                  return tmp29;
-                }
-              }
-            }
-          }
-          const obj6 = { blurHash: questBarHeroBlurhash, collapsedContent: tmp16, withPressableDisclosure: true, onDisclosurePress: tmp7, onSubmenuPress: actionSheetPressHandler, children: tmp25 };
-          const tmp31 = closure_6(QuestDockBackgroundBlurHeaderDefault, obj6);
-          cResult[15] = tmp7;
-          cResult[16] = actionSheetPressHandler;
-          cResult[17] = questBarHeroBlurhash;
-          cResult[18] = tmp16;
-          cResult[19] = tmp25;
-          cResult[20] = tmp31;
-          tmp29 = tmp31;
-        }
-      }
-      const obj7 = { style: tmp12.primaryContent, children: items };
-      items = [tmp20, tmp22];
-      const tmp28 = closure_7(View, obj7);
-      cResult[11] = tmp12.primaryContent;
-      cResult[12] = tmp20;
-      cResult[13] = tmp22;
-      cResult[14] = tmp28;
-      tmp25 = tmp28;
-    }
-    const obj8 = { assetUrl: questGameLogotypeAssetUrl, height: 36, maxWidth: 120, style: tmp12.logo };
-    const tmp24 = closure_6(QuestGameLogotypeDefault, obj8);
-    cResult[8] = questGameLogotypeAssetUrl;
-    cResult[9] = tmp12.logo;
-    cResult[10] = tmp24;
-    tmp22 = tmp24;
-  }
-  const obj9 = { source: tmp8Result, resizeMode: "contain", style: tmp12.wreathImage };
-  const tmp21 = closure_6(FastImageDefault, obj9);
-  cResult[5] = tmp12.wreathImage;
-  cResult[6] = tmp8Result;
-  cResult[7] = tmp21;
-  tmp20 = tmp21;
-}) : (function QuestDockUnenrolledHeader() {
+const memoResult = react.memo(function QuestDockUnenrolledHeader() {
   let LIGHT;
   let Text;
   let intl;
@@ -165,11 +36,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp15;
   let tmp16;
   let tmp7Result4;
-  let obj = questCreative(16975);
+  let obj = questCreative(17029);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(16975);
+  let obj2 = questCreative(17029);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(16944);
+  const obj3 = questCreative(16998);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -179,7 +50,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj.showModal(obj2);
   }, items);
   const tmp8 = useThemeDefault();
-  const obj4 = questCreative(5012);
+  const obj4 = questCreative(5016);
   if (obj4.isThemeDark(tmp8)) {
     LIGHT = tmp9.DARK;
     tmp10 = tmp9;
@@ -188,22 +59,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp10 = tmp9;
   }
   const tmp11 = closure_8();
-  const tmpResult = questCreative(16943);
+  const tmpResult = questCreative(16997);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
   const obj5 = { blurHash: questBarHeroBlurhash, collapsedContent: closure_6(Text, obj6), withPressableDisclosure: true, onDisclosurePress: callback, onSubmenuPress: actionSheetPressHandler, children: tmp15(tmp16, obj7) };
-  obj6 = { style: tmp11.getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1125).t["3mgEQf"]) };
-  Text = tmp(5271).Text;
-  intl = tmp(1125).intl;
+  obj6 = { style: tmp11.getRewardLabel, variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1114).t["3mgEQf"]) };
+  Text = tmp(5619).Text;
+  intl = tmp(1114).intl;
   obj7 = { style: tmp11.primaryContent, children: items1 };
   tmp15 = closure_7;
   tmp16 = View;
   const tmp7Result3 = FastImageDefault;
   if (LIGHT === tmp10.DARK) {
-    tmp7Result4 = tmp7(17039);
+    tmp7Result4 = tmp7(17097);
   } else {
-    tmp7Result4 = tmp7(17040);
+    tmp7Result4 = tmp7(17098);
   }
   items1 = [, ];
   const obj8 = { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage };
@@ -211,7 +82,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj9 = { assetUrl: questGameLogotypeAssetUrl, height: 36, maxWidth: 120, style: tmp11.logo };
   items1[1] = closure_6(QuestGameLogotypeDefault, obj9);
   return closure_6(tmp7Result, obj5);
-}));
+});
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockUnenrolledHeader.tsx");
 
 export default memoResult;

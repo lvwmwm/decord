@@ -1,12 +1,11 @@
-// Module ID: 17383
-// Function ID: 17384
+// Module ID: 17437
+// Function ID: 17438
 // Name: SummaryReminderNotificationExperiment
-// Dependencies: [1453, 558, 576, 2]
+// Dependencies: [1448, 2]
+// Exports: useSummaryReminderNotificationExperiment
 
-// Module 17383 (SummaryReminderNotificationExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17437 (SummaryReminderNotificationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -14,24 +13,10 @@ let obj = { kind: "user", name: "2026-10-summary-reminder-notif-re-revival", def
 obj2 = { 1: null, 2: { showSettingsToggle: true } };
 obj2[2] = { showSettingsToggle: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSummaryReminderNotificationExperiment(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2);
-}) : (function useSummaryReminderNotificationExperiment(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj);
-});
 const result = size.fileFinishedImporting("modules/notifications/summary_reminder/SummaryReminderNotificationExperiment.tsx");
 
 export default apexExperiment;
-export const useSummaryReminderNotificationExperiment = tmp3;
+export function useSummaryReminderNotificationExperiment(tabsV2Settings) {
+  const obj = { location: tabsV2Settings };
+  return apexExperiment.useConfig(obj);
+}

@@ -1,13 +1,13 @@
-// Module ID: 8736
-// Function ID: 8737
+// Module ID: 8770
+// Function ID: 8771
 // Name: FileManagerUtils
-// Dependencies: [5, 3, 1161, 1381, 2]
+// Dependencies: [5, 3, 1150, 1376, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8736 (FileManagerUtils)
+// Module 8770 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 1161 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import react_nativeDefault from "react-native" /* 1150 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _readFile() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -148,9 +148,9 @@ let tmp2 = new LoggerDefault("FileManagerUtils");
 let closure_4 = tmp2;
 const result = size.fileFinishedImporting("utils/FileManagerUtils.native.tsx");
 
-export function writeFile(cache, combined2, value, utf8) {
+export function writeFile(cache, combined2, value, base64) {
   obj = react_nativeDefault;
-  const writeFileResult = obj.writeFile(cache, combined2, value, utf8);
+  const writeFileResult = obj.writeFile(cache, combined2, value, base64);
   return writeFileResult.then((result) => {
     let combined = result;
     obj = PlatformUtils;

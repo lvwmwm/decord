@@ -1,20 +1,20 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16745
+// Function ID: 16746
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1389, 7703, 21, 5005, 587, 573, 5247, 16693, 2000, 16694, 9077, 1125, 2536, 5271, 1199, 6943, 2]
+// Dependencies: [19, 17, 1384, 7708, 21, 5009, 575, 563, 5253, 16746, 1995, 16747, 9090, 1114, 2537, 5619, 1188, 6951, 2]
 // Exports: default
 
-// Module 16692 (FamilyCenterTopActivity)
+// Module 16745 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import GuildIcon from "GuildIcon" /* 6943 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import GuildIcon from "GuildIcon" /* 6951 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
+import UserStore from "UserStore" /* 1384 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(16693, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(16746, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;
@@ -86,7 +86,7 @@ export default function FamilyCenterTopActivity() {
               user = user.getUser(user_id.user_id);
               let tmp2 = null;
               if (null != user) {
-                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "Array" };
+                const obj = { user, size: closure_0(stateFromStores1[16]).AvatarSizes.SMALL, guildId: "r" };
                 const Avatar = closure_0(stateFromStores1[16]).Avatar;
                 tmp2 = closure_1_7(Avatar, obj, user.id);
               }

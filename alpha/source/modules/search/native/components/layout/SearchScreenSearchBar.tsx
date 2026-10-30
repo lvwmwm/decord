@@ -1,270 +1,30 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18637
+// Function ID: 18638
 // Name: SearchScreenSearchBar
-// Dependencies: [19, 17, 21, 5005, 558, 576, 5178, 7087, 1894, 18579, 18581, 18586, 2]
+// Dependencies: [19, 17, 21, 5009, 5184, 7095, 1889, 18638, 18640, 18645, 2]
 
-// Module 18578 (SearchScreenSearchBar)
+// Module 18637 (SearchScreenSearchBar)
 import react_native from "react-native" /* 17 */;
-import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1894 */;
-import mergeProps from "mergeProps" /* 5178 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7087 */;
-import SearchBarDefault from "SearchBar" /* 18579 */;
-import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 18581 */;
+import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1889 */;
+import mergeProps from "mergeProps" /* 5184 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7095 */;
+import SearchBarDefault from "SearchBar" /* 18638 */;
+import SearchFilterSuggestionsDefault from "SearchFilterSuggestions" /* 18640 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault, tmp2;
+let dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const SearchFilterButtonDefault = tmp8(18586);
+const SearchFilterButtonDefault = tmp8(18645);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchScreenSearchBar(arg0) {
-  let backButton;
-  let items;
-  let ref;
-  let ref1;
-  let searchContext;
-  let tmp6;
-  let obj = ref1(576);
-  const cResult = obj.c(33);
-  ({ searchContext, backButton, ref } = arg0);
-  const tmp4 = closure_7();
-  let obj2 = react;
-  const tmp = ref1;
-  ref1 = react.useRef(null);
-  if (cResult[0] !== ref) {
-    const tmpResult = tmp(5178);
-    const mergeRefsResult = tmpResult.mergeRefs(ref, ref1);
-    cResult[0] = ref;
-    cResult[1] = mergeRefsResult;
-    tmp6 = mergeRefsResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  importDefault = obj2.useRef(false);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function b() {
-      const obj = useKeyboardIsOpen;
-      ref.current = obj.getKeyboardIsOpen();
-      const obj2 = KeyboardManagerUtils;
-      const result = obj2.dismissGlobalKeyboard();
-    };
-    cResult[2] = fn;
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor(arg0) {
-        current = arg0;
-        if (current) {
-          tmp = closure_1;
-          current = closure_1.current;
-        }
-        if (current) {
-          tmp2 = globalThis;
-          _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => {
-            const current = ref.current;
-            if (current != null) {
-              current.focus();
-            }
-          });
-        }
-        return;
-      }
-    }
-    cResult[3] = R;
-  } else {
-    class R {
-      constructor(arg0) {
-        current = arg0;
-        if (current) {
-          tmp = closure_1;
-          current = closure_1.current;
-        }
-        if (current) {
-          tmp2 = globalThis;
-          _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => {
-            const current = ref.current;
-            if (current != null) {
-              current.focus();
-            }
-          });
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[4] === tmp4.header) {
-    class R {
-      constructor(arg0) {
-        current = arg0;
-        if (current) {
-          tmp = closure_1;
-          current = closure_1.current;
-        }
-        if (current) {
-          tmp2 = globalThis;
-          _requestAnimationFrame = requestAnimationFrame;
-          animationFrame = requestAnimationFrame(() => {
-            const current = ref.current;
-            if (current != null) {
-              current.focus();
-            }
-          });
-        }
-        return;
-      }
-    }
-    if (cResult[7] === tmp6) {
-      class R {
-        constructor(arg0) {
-          current = arg0;
-          if (current) {
-            tmp = closure_1;
-            current = closure_1.current;
-          }
-          if (current) {
-            tmp2 = globalThis;
-            _requestAnimationFrame = requestAnimationFrame;
-            animationFrame = requestAnimationFrame(() => {
-              const current = ref.current;
-              if (current != null) {
-                current.focus();
-              }
-            });
-          }
-          return;
-        }
-      }
-      if (cResult[10] === tmp4.suggestions) {
-        class R {
-          constructor(arg0) {
-            current = arg0;
-            if (current) {
-              tmp = closure_1;
-              current = closure_1.current;
-            }
-            if (current) {
-              tmp2 = globalThis;
-              _requestAnimationFrame = requestAnimationFrame;
-              animationFrame = requestAnimationFrame(() => {
-                const current = ref.current;
-                if (current != null) {
-                  current.focus();
-                }
-              });
-            }
-            return;
-          }
-        }
-        if (cResult[13] === searchContext) {
-          class R {
-            constructor(arg0) {
-              current = arg0;
-              if (current) {
-                tmp = closure_1;
-                current = closure_1.current;
-              }
-              if (current) {
-                tmp2 = globalThis;
-                _requestAnimationFrame = requestAnimationFrame;
-                animationFrame = requestAnimationFrame(() => {
-                  const current = ref.current;
-                  if (current != null) {
-                    current.focus();
-                  }
-                });
-              }
-              return;
-            }
-          }
-          if (cResult[16] === tmp4.suggestionsAnchor) {
-            class R {
-              constructor(arg0) {
-                current = arg0;
-                if (current) {
-                  tmp = closure_1;
-                  current = closure_1.current;
-                }
-                if (current) {
-                  tmp2 = globalThis;
-                  _requestAnimationFrame = requestAnimationFrame;
-                  animationFrame = requestAnimationFrame(() => {
-                    const current = ref.current;
-                    if (current != null) {
-                      current.focus();
-                    }
-                  });
-                }
-                return;
-              }
-            }
-            if (cResult[19] === tmp4.headerSearch) {
-              class R {
-                constructor(arg0) {
-                  current = arg0;
-                  if (current) {
-                    tmp = closure_1;
-                    current = closure_1.current;
-                  }
-                  if (current) {
-                    tmp2 = globalThis;
-                    _requestAnimationFrame = requestAnimationFrame;
-                    animationFrame = requestAnimationFrame(() => {
-                      const current = ref.current;
-                      if (current != null) {
-                        current.focus();
-                      }
-                    });
-                  }
-                  return;
-                }
-              }
-            }
-            const obj3 = { style: tmp4.headerSearch, children: items };
-            items = [tmp11, tmp21];
-            cResult[19] = tmp4.headerSearch;
-            cResult[20] = tmp21;
-            cResult[21] = tmp11;
-            cResult[22] = closure_6(View, obj3);
-            const tmp28 = closure_6(View, obj3);
-          }
-          const obj4 = { style: tmp4.suggestionsAnchor, children: tmp17 };
-          cResult[16] = tmp4.suggestionsAnchor;
-          cResult[17] = tmp17;
-          cResult[18] = closure_5(View, obj4);
-          const tmp24 = closure_5(View, obj4);
-        }
-        const obj5 = { searchContext, containerStyle: tmp16 };
-        cResult[13] = searchContext;
-        cResult[14] = tmp16;
-        cResult[15] = closure_5(SearchFilterSuggestionsDefault, obj5);
-        const tmp20 = closure_5(SearchFilterSuggestionsDefault, obj5);
-      }
-      const items1 = [tmp4.suggestions, null != backButton && tmp4.suggestionsWithBackButton];
-      cResult[10] = tmp4.suggestions;
-      cResult[11] = null != backButton && tmp4.suggestionsWithBackButton;
-      cResult[12] = items1;
-    }
-    const obj6 = { ref: tmp6, searchContext };
-    cResult[7] = tmp6;
-    cResult[8] = searchContext;
-    cResult[9] = closure_5(SearchBarDefault, obj6);
-    const tmp14 = closure_5(SearchBarDefault, obj6);
-  }
-  const items2 = [tmp4.header, null != backButton && tmp4.headerWithBackButton];
-  cResult[4] = tmp4.header;
-  cResult[5] = null != backButton && tmp4.headerWithBackButton;
-  cResult[6] = items2;
-}) : (function SearchScreenSearchBar(arg0) {
+const memoResult = react.memo(function SearchScreenSearchBar(arg0) {
   let backButton;
   let closure_1;
   let items2;
@@ -325,7 +85,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const obj5 = { style: tmp.headerControlsRight, children: closure_5(SearchFilterButtonDefault, { searchContext, onOpen: callback, onClose: callback1 }) };
   items2[2] = closure_5(View, obj5);
   return closure_6(View, obj);
-}));
+});
 let result = size.fileFinishedImporting("modules/search/native/components/layout/SearchScreenSearchBar.tsx");
 
 export default memoResult;

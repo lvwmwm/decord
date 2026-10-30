@@ -1,25 +1,25 @@
-// Module ID: 18582
-// Function ID: 18583
+// Module ID: 18641
+// Function ID: 18642
 // Name: SearchFilterUtils
-// Dependencies: [9780, 9779, 1084, 1125, 12268, 10490, 15580, 8620, 9083, 18583, 12226, 12247, 13697, 13714, 13689, 5247, 8970, 2000, 13710, 2]
+// Dependencies: [9806, 9805, 1072, 1114, 12431, 10515, 15620, 8654, 9096, 18642, 12382, 12408, 13844, 13861, 13836, 5253, 9000, 1995, 13857, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 18582 (SearchFilterUtils)
-import intl10 from "intl" /* 1125 */;
-import AtIcon from "AtIcon" /* 8620 */;
-import CalendarIcon from "CalendarIcon" /* 9083 */;
-import TrackingConstants from "TrackingConstants" /* 9779 */;
-import AttachmentIcon from "AttachmentIcon" /* 10490 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12226 */;
-import RobotIcon from "RobotIcon" /* 12247 */;
-import UserIcon from "UserIcon" /* 12268 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13689 */;
-import SearchTokens from "SearchTokens" /* 13697 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13714 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15580 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 18583 */;
-import SearchConstants from "SearchConstants" /* 9780 */;
-import Constants from "Constants" /* 1084 */;
+// Module 18641 (SearchFilterUtils)
+import intl10 from "intl" /* 1114 */;
+import AtIcon from "AtIcon" /* 8654 */;
+import CalendarIcon from "CalendarIcon" /* 9096 */;
+import TrackingConstants from "TrackingConstants" /* 9805 */;
+import AttachmentIcon from "AttachmentIcon" /* 10515 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12382 */;
+import RobotIcon from "RobotIcon" /* 12408 */;
+import UserIcon from "UserIcon" /* 12431 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13836 */;
+import SearchTokens from "SearchTokens" /* 13844 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13861 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15620 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 18642 */;
+import SearchConstants from "SearchConstants" /* 9806 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const SearchPlatformUtilsDefault = SearchPlatformUtils;
@@ -35,7 +35,7 @@ const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
 ({ SEARCH_DATE_FORMAT: metroRequire, SearchTokenTypes: metroImportDefault, SearchTypes: metroImportAll } = Constants);
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterUtils.tsx");
 
-export function getSearchTokenLabel(searchContext, item) {
+export function getSearchTokenLabel(type, item) {
   if (metroImportDefault.FILTER_FROM === item) {
     const intl9 = intl10.intl;
     return intl9.string(intl10.t["6iuVMn"]);
@@ -47,7 +47,7 @@ export function getSearchTokenLabel(searchContext, item) {
     return intl7.string(intl10.t.CMKzQx);
   } else if (metroImportDefault.FILTER_IN === item) {
     let stringResult;
-    if (searchContext.type === metroImportAll.DMS) {
+    if (type.type === metroImportAll.DMS) {
       const intl6 = intl10.intl;
       stringResult = intl6.string(intl10.t["8Fmo42"]);
     } else {
@@ -76,29 +76,29 @@ export function getSearchTokenLabel(searchContext, item) {
     throw error;
   }
 }
-export function getSearchTokenSubLabel(cResult) {
-  if (metroImportDefault.FILTER_FROM === cResult) {
+export function getSearchTokenSubLabel(searchTokenType) {
+  if (metroImportDefault.FILTER_FROM === searchTokenType) {
     const intl8 = intl10.intl;
     return intl8.string(intl10.t.kkGlww);
-  } else if (metroImportDefault.FILTER_HAS === cResult) {
+  } else if (metroImportDefault.FILTER_HAS === searchTokenType) {
     const intl7 = intl10.intl;
     return intl7.string(intl10.t.gUfZa2);
-  } else if (metroImportDefault.FILTER_IN === cResult) {
+  } else if (metroImportDefault.FILTER_IN === searchTokenType) {
     const intl6 = intl10.intl;
     return intl6.string(intl10.t.qDUdlT);
-  } else if (metroImportDefault.FILTER_MENTIONS === cResult) {
+  } else if (metroImportDefault.FILTER_MENTIONS === searchTokenType) {
     const intl5 = intl10.intl;
     return intl5.string(intl10.t.ILtwK5);
-  } else if (metroImportDefault.FILTER_ON === cResult) {
+  } else if (metroImportDefault.FILTER_ON === searchTokenType) {
     const intl4 = intl10.intl;
     return intl4.string(intl10.t.t8bWvr);
-  } else if (metroImportDefault.FILTER_BEFORE === cResult) {
+  } else if (metroImportDefault.FILTER_BEFORE === searchTokenType) {
     const intl3 = intl10.intl;
     return intl3.string(intl10.t.YEN3uU);
-  } else if (metroImportDefault.FILTER_AFTER === cResult) {
+  } else if (metroImportDefault.FILTER_AFTER === searchTokenType) {
     const intl2 = intl10.intl;
     return intl2.string(intl10.t.hwbB7s);
-  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === cResult) {
+  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === searchTokenType) {
     const intl = intl10.intl;
     return intl.string(intl10.t.tJPdhZ);
   } else {
@@ -106,38 +106,38 @@ export function getSearchTokenSubLabel(cResult) {
     const _HermesInternal = HermesInternal;
     const self = this;
     const self2 = this;
-    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + cResult);
+    const error = new Error("[getSearchTokenSubLabel] Unhandled search token type: " + searchTokenType);
     throw error;
   }
 }
-export function getSearchTokenIcon(cResult) {
-  if (metroImportDefault.FILTER_FROM === cResult) {
+export function getSearchTokenIcon(searchTokenType) {
+  if (metroImportDefault.FILTER_FROM === searchTokenType) {
     return UserIcon.UserIcon;
-  } else if (metroImportDefault.FILTER_HAS === cResult) {
+  } else if (metroImportDefault.FILTER_HAS === searchTokenType) {
     return AttachmentIcon.AttachmentIcon;
-  } else if (metroImportDefault.FILTER_IN === cResult) {
+  } else if (metroImportDefault.FILTER_IN === searchTokenType) {
     return ChannelListMagnifyingGlassIcon.ChannelListMagnifyingGlassIcon;
-  } else if (metroImportDefault.FILTER_MENTIONS === cResult) {
+  } else if (metroImportDefault.FILTER_MENTIONS === searchTokenType) {
     return AtIcon.AtIcon;
-  } else if (metroImportDefault.FILTER_ON === cResult) {
+  } else if (metroImportDefault.FILTER_ON === searchTokenType) {
     return CalendarIcon.CalendarIcon;
-  } else if (metroImportDefault.FILTER_BEFORE === cResult) {
+  } else if (metroImportDefault.FILTER_BEFORE === searchTokenType) {
     return CalendarMinusIcon.CalendarMinusIcon;
-  } else if (metroImportDefault.FILTER_AFTER === cResult) {
+  } else if (metroImportDefault.FILTER_AFTER === searchTokenType) {
     return CalendarPlusIcon.CalendarPlusIcon;
-  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === cResult) {
+  } else if (metroImportDefault.FILTER_AUTHOR_TYPE === searchTokenType) {
     return RobotIcon.RobotIcon;
   } else {
     const _Error = Error;
     const _HermesInternal = HermesInternal;
     const self = this;
     const self2 = this;
-    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + cResult);
+    const error = new Error("[getSearchTokenIcon] Unhandled search token type: " + searchTokenType);
     throw error;
   }
 }
-export function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
-  let closure_0 = searchContext;
+export function getSearchTokenPressHandler(arg0, token, CONTEXT_MENU) {
+  let closure_0 = arg0;
   let closure_1 = token;
   let closure_2 = CONTEXT_MENU;
   let tmp = constants;
@@ -203,7 +203,7 @@ export function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
                     const initialMessages = obj4.fetchInitialMessages(searchContext);
                   }
                 };
-                obj.openLazy(searchContext(paths[17])(paths[16], paths.paths), "DatePicker", obj2);
+                obj.openLazy(closure_2_0(paths[17])(paths[16], paths.paths), "DatePicker", obj2);
               });
             };
           }
@@ -212,7 +212,7 @@ export function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
     }
   }
   return () => {
-    let closure_0 = closure_1;
+    closure_0 = closure_1;
     closure_1 = CONTEXT_MENU;
     let obj = SearchPlatformActionCreatorsDefault;
     obj.updateSearchQuery(closure_0, (saveDraftTextInputValue) => {
@@ -227,7 +227,7 @@ export function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
       let tmp6 = token(CONTEXT_MENU[12])[searchTokenType];
       const tmp4 = token;
       if (null == tmp6) {
-        const obj2 = searchContext(CONTEXT_MENU[12]);
+        const obj2 = closure_2_0(CONTEXT_MENU[12]);
         const result1 = obj2.rebuildSearchTokenConfigs();
         tmp6 = tmp4(tmp5[12])[str];
       }
@@ -247,7 +247,7 @@ export function getSearchTokenPressHandler(searchContext, token, CONTEXT_MENU) {
 export function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(13697));
+  const keys = Object.keys(items(13844));
   const item = keys.forEach(function(token) {
     const obj = SearchTokens;
     if (obj.isSearchFilterTokenType(token)) {

@@ -1,13 +1,13 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 7883
+// Function ID: 7884
 // Name: GameAnalyticsUtils
-// Dependencies: [2037, 7878, 1381, 2]
+// Dependencies: [2034, 7884, 1376, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 7877 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7878 */;
-import DetectableGameStore from "DetectableGameStore" /* 2037 */;
+// Module 7883 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7884 */;
+import DetectableGameStore from "DetectableGameStore" /* 2034 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
@@ -32,7 +32,7 @@ export function getRunningGameAnalytics(streamApplication) {
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "guildId", gameId: "ix", exe: "alignItems", distributor: "diversity", sku: "ix", gameMetadata: "defineProperty", rawExePath: "guildId" };
+    return { gameName: "r", gameId: "applicationId", exe: "flags", distributor: "e", sku: "Array", gameMetadata: "isArray", rawExePath: "TypeError" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

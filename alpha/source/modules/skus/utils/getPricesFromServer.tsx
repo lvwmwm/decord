@@ -1,11 +1,11 @@
-// Module ID: 2048
-// Function ID: 2049
+// Module ID: 2045
+// Function ID: 2046
 // Name: getPricesFromServer
-// Dependencies: [2049, 2]
+// Dependencies: [2046, 2]
 // Exports: default
 
-// Module 2048 (getPricesFromServer)
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2049 */;
+// Module 2045 (getPricesFromServer)
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2046 */;
 import size from "module_2" /* 2 */;
 
 const getPriceFromServer = SubscriptionPlanRecord.getPriceFromServer;

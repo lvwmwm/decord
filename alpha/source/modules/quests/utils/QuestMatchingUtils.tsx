@@ -1,20 +1,20 @@
-// Module ID: 14602
-// Function ID: 14603
+// Module ID: 14635
+// Function ID: 14636
 // Name: QuestMatchingUtils
-// Dependencies: [32, 2043, 11288, 6768, 1084, 2024, 7856, 7840, 7854, 14187, 2]
+// Dependencies: [32, 2040, 11491, 6775, 2019, 9718, 7861, 7845, 7859, 14332, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 14602 (QuestMatchingUtils)
-import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 2024 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7840 */;
-import utils_QuestUtils from "utils/QuestUtils" /* 7854 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7856 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 14187 */;
+// Module 14635 (QuestMatchingUtils)
+import Constants from "Constants" /* 2019 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7845 */;
+import utils_QuestUtils from "utils/QuestUtils" /* 7859 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7861 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 14332 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11288 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11491 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
 import size from "module_2" /* 2 */;
 
 let userStatus;
@@ -25,25 +25,25 @@ let metroRequire;
 function questMatchesActivity(application_id, id) {
   let tmp = null != application_id;
   if (tmp) {
-    const tmp3 = application_id.application_id === closure_10 || application_id.platform === ActivityGamePlatforms.XBOX;
+    const tmp3 = application_id.application_id === closure_9 || application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.XBOX;
     if (!tmp3) {
-      let tmp8;
-      const tmp7 = application_id.platform === ActivityGamePlatforms.PS4 || application_id.platform === tmp6.PS5;
-      if (!tmp7) {
-        tmp8 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
-        if (!tmp8) {
-          let tmp11 = null != application_id.application_id;
-          if (tmp11) {
+      let tmp10;
+      const tmp9 = application_id.platform === ActivityGamePlatforms.ActivityGamePlatforms.PLAYSTATION_4 || application_id.platform === tmp7(9718).ActivityGamePlatforms.PLAYSTATION_5;
+      if (!tmp9) {
+        tmp10 = null != id && id.id === metroImportDefault && application_id.application_id === metroImportAll;
+        if (!tmp10) {
+          let tmp13 = null != application_id.application_id;
+          if (tmp13) {
             application_id = application_id.application_id;
-            const obj = QuestTaskUtils;
-            const allApplicationIds = obj.getAllApplicationIds(id);
-            tmp11 = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
+            const tmp7Result = QuestTaskUtils;
+            const allApplicationIds = tmp7Result.getAllApplicationIds(id);
+            tmp13 = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
             null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
           }
-          tmp8 = tmp11;
+          tmp10 = tmp13;
         }
       }
-      tmp = tmp8;
+      tmp = tmp10;
     }
     const str = application_id.name;
     const formatted = str.toLowerCase();
@@ -59,7 +59,7 @@ function questMatchesActivity(application_id, id) {
       }
       flag = tmp21;
     }
-    tmp8 = flag;
+    tmp10 = flag;
   }
   return tmp;
 }
@@ -88,8 +88,7 @@ function questMatchesApplicationId(arg0, quest) {
   return tmp;
 }
 ({ DISCORD_APPLICATION_ID: metroRequire, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: metroImportDefault, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: metroImportAll } = QuestConstants);
-const ActivityGamePlatforms = Constants.ActivityGamePlatforms;
-let closure_10 = Constants2.XBOX_ACTIVITY_APPLICATION_ID;
+let closure_9 = Constants.XBOX_ACTIVITY_APPLICATION_ID;
 const result = size.fileFinishedImporting("modules/quests/utils/QuestMatchingUtils.tsx");
 
 export { questMatchesActivity };

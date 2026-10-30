@@ -1,165 +1,64 @@
-// Module ID: 19076
-// Function ID: 19077
+// Module ID: 19183
+// Function ID: 19184
 // Name: useVoiceChannelAppSurface
-// Dependencies: [6833, 18563, 558, 18785, 576, 12987, 504, 18572, 2]
+// Dependencies: [6840, 18622, 18845, 504, 13138, 18631, 2]
+// Exports: useCurrentVoiceChannelApplicationId, useVoiceChannelAppAvailable, useVoiceChannelAppOpen, useVoiceChannelAppVisible
 
-// Module 19076 (useVoiceChannelAppSurface)
-import voiceChannelAppSession from "voiceChannelAppSession" /* 12987 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18572 */;
-import useVoiceChannelApp from "useVoiceChannelApp" /* 18785 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18563 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 19183 (useVoiceChannelAppSurface)
+import voiceChannelAppSession from "voiceChannelAppSession" /* 13138 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18631 */;
+import useVoiceChannelApp from "useVoiceChannelApp" /* 18845 */;
+import FramesStore from "FramesStore" /* 6840 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 18622 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelAppAvailable(arg0, arg1) {
-  let tmp = arg1;
+const result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppSurface.tsx");
+
+export function useVoiceChannelAppAvailable(channel, inCall) {
+  let tmp = inCall;
   useVoiceChannelApp;
-  if (arg1) {
+  if (inCall) {
     tmp = null != tmp3;
   }
   return tmp;
-}) : (function useVoiceChannelAppAvailable(arg0, arg1) {
-  let tmp = arg1;
-  useVoiceChannelApp;
-  if (arg1) {
-    tmp = null != tmp3;
-  }
-  return tmp;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelAppOpen(id, arg1) {
-  let first;
-  _require = id;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(5);
-  const obj2 = require("useVoiceChannelApp");
-  const voiceChannelApplicationId = obj2.useVoiceChannelApplicationId(id);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === voiceChannelApplicationId) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === id.id) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    let stateFromStores = arg1;
-    const tmpResult = tmp(504);
-    if (arg1) {
-      stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-    }
-    return stateFromStores;
-  }
-  const fn = function p() {
-    const hasVoiceChannelAppSession = voiceChannelAppSession.hasVoiceChannelAppSession;
-    const getFramesForSurface = FramesStore.getFramesForSurface;
-    voiceChannelAppSession;
-    const obj = voiceChannelAppSession;
-    return hasVoiceChannelAppSession(getFramesForSurface(obj.voiceChannelAppSurface(id.id)), voiceChannelApplicationId);
-  };
-  const items1 = [id.id, voiceChannelApplicationId];
-  cResult[1] = voiceChannelApplicationId;
-  cResult[2] = id.id;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useVoiceChannelAppOpen(id, arg1) {
-  _require = id;
-  let stateFromStores = arg1;
+}
+export function useVoiceChannelAppOpen(channel, inCall) {
+  _require = channel;
+  let stateFromStores = inCall;
   let obj = require("useVoiceChannelApp");
-  const voiceChannelApplicationId = obj.useVoiceChannelApplicationId(id);
+  const voiceChannelApplicationId = obj.useVoiceChannelApplicationId(channel);
   const items = [FramesStore];
-  const items1 = [id.id, voiceChannelApplicationId];
+  const items1 = [channel.id, voiceChannelApplicationId];
   const obj2 = require("get initialized");
-  if (arg1) {
+  if (inCall) {
     stateFromStores = obj2.useStateFromStores(items, () => {
       const hasVoiceChannelAppSession = voiceChannelAppSession.hasVoiceChannelAppSession;
       const getFramesForSurface = FramesStore.getFramesForSurface;
       voiceChannelAppSession;
       const obj = voiceChannelAppSession;
-      return hasVoiceChannelAppSession(getFramesForSurface(obj.voiceChannelAppSurface(id.id)), voiceChannelApplicationId);
+      return hasVoiceChannelAppSession(getFramesForSurface(obj.voiceChannelAppSurface(channel.id)), voiceChannelApplicationId);
     }, items1);
   }
   return stateFromStores;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoiceChannelAppVisible(id) {
-  let first;
-  _require = id;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  const obj2 = require("useVoiceChannelApp");
-  const voiceChannelApplicationId = obj2.useVoiceChannelApplicationId(id);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [VoiceChannelAppStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === voiceChannelApplicationId) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === id.id) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  const fn = function c() {
-    return VoiceChannelAppStore.isAppVisible(id.id, null != voiceChannelApplicationId);
-  };
-  const items1 = [id.id, voiceChannelApplicationId];
-  cResult[1] = voiceChannelApplicationId;
-  cResult[2] = id.id;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useVoiceChannelAppVisible(id) {
-  _require = id;
+}
+export function useVoiceChannelAppVisible(channel) {
+  _require = channel;
   const obj = require("useVoiceChannelApp");
-  const voiceChannelApplicationId = obj.useVoiceChannelApplicationId(id);
+  const voiceChannelApplicationId = obj.useVoiceChannelApplicationId(channel);
   const items = [VoiceChannelAppStore];
-  const items1 = [id.id, voiceChannelApplicationId];
+  const items1 = [channel.id, voiceChannelApplicationId];
   const obj2 = require("get initialized");
-  return obj2.useStateFromStores(items, () => VoiceChannelAppStore.isAppVisible(id.id, null != voiceChannelApplicationId), items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentVoiceChannelApplicationId(application_id, arg1) {
+  return obj2.useStateFromStores(items, () => VoiceChannelAppStore.isAppVisible(channel.id, null != voiceChannelApplicationId), items1);
+}
+export function useCurrentVoiceChannelApplicationId(channel, arg1) {
   let voiceChannelApplicationId = null;
   const obj = useVoiceChannelApp;
   if (arg1) {
-    voiceChannelApplicationId = obj.useVoiceChannelApplicationId(application_id);
+    voiceChannelApplicationId = obj.useVoiceChannelApplicationId(channel);
   }
-  useChannelAppFrameTeardownDefault(application_id);
+  useChannelAppFrameTeardownDefault(channel);
   return voiceChannelApplicationId;
-}) : (function useCurrentVoiceChannelApplicationId(application_id, arg1) {
-  let voiceChannelApplicationId = null;
-  const obj = useVoiceChannelApp;
-  if (arg1) {
-    voiceChannelApplicationId = obj.useVoiceChannelApplicationId(application_id);
-  }
-  useChannelAppFrameTeardownDefault(application_id);
-  return voiceChannelApplicationId;
-});
-const result = size.fileFinishedImporting("modules/voice_channel_apps/useVoiceChannelAppSurface.tsx");
-
-export const useVoiceChannelAppAvailable = tmp2;
-export const useVoiceChannelAppOpen = tmp3;
-export const useVoiceChannelAppVisible = tmp4;
-export const useCurrentVoiceChannelApplicationId = tmp5;
+}

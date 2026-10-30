@@ -1,20 +1,18 @@
-// Module ID: 17705
-// Function ID: 17706
+// Module ID: 17776
+// Function ID: 17777
 // Name: useShopAllCatalogPages
-// Dependencies: [32, 19, 9540, 7709, 1084, 558, 576, 9542, 504, 569, 7707, 2]
+// Dependencies: [32, 19, 9559, 7714, 1072, 9561, 504, 559, 7712, 2]
+// Exports: default
 
-// Module 17705 (useShopAllCatalogPages)
+// Module 17776 (useShopAllCatalogPages)
 import get_initializedDefault from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1084 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9542 */;
+import Constants from "Constants" /* 1072 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9561 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore_mod from "StorefrontCollectionStore" /* 9540 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7709 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9559 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7714 */;
 import size from "module_2" /* 2 */;
-
-let current, ref;
 
 function getCategoryForCollection(id) {
   let value = weakMap.get(id);
@@ -26,350 +24,24 @@ function getCategoryForCollection(id) {
   }
   return value;
 }
-let StorefrontCollectionStore = StorefrontCollectionStore_mod;
 let closure_7 = Constants.COLLECTIBLES_APPLICATION_ID;
 const weakMap = new WeakMap();
 const weakSet = new WeakSet();
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCatalogPages(pageSize) {
-  let closure_5;
-  let first;
-  let noCache;
-  let tmp20;
-  let tmp21;
-  let tmp = pageSize;
-  let tmp2 = noCache;
-  let obj = pageSize(noCache[6]);
-  const cResult = obj.c(53);
-  pageSize = pageSize.pageSize;
-  const includeUnpublished = pageSize.includeUnpublished;
-  noCache = pageSize.noCache;
-  const enabled = pageSize.enabled;
-  let obj2 = first;
-  let tmp4 = enabled(first.useState(3 * pageSize), 2);
-  first = tmp4[0];
-  StorefrontCollectionStore = tmp4[1];
-  const rounded = Math.ceil(first / pageSize);
-  if (cResult[0] === includeUnpublished) {
-    if (cResult[1] === noCache) {
-      if (cResult[2] === pageSize) {
-        let obj3;
-        let tmp8;
-        let tmp10;
-        let tmp13;
-        let tmp12;
-        let tmp19;
-        if (cResult[9] !== arr) {
-          const mapped = arr.map(tmp(tmp2[7]).getCollectionPageKey);
-          cResult[9] = arr;
-          cResult[10] = mapped;
-          obj3 = mapped;
-        } else {
-          obj3 = cResult[10];
-        }
-        if (cResult[11] !== arr[0]) {
-          const tmpResult = tmp(tmp2[7]);
-          const collectionListKey = tmpResult.getCollectionListKey(arr[0]);
-          cResult[11] = arr[0];
-          cResult[12] = collectionListKey;
-          tmp8 = collectionListKey;
-        } else {
-          tmp8 = cResult[12];
-        }
-        const applicationId = tmp8;
-        const _Symbol = Symbol;
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          const items = [StorefrontCollectionStore];
-          cResult[13] = items;
-          tmp10 = items;
-        } else {
-          tmp10 = cResult[13];
-        }
-        if (cResult[14] !== obj3) {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-          const items1 = [obj3];
-          cResult[14] = obj3;
-          cResult[15] = O;
-          cResult[16] = items1;
-          tmp13 = items1;
-          tmp12 = O;
-        } else {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-          tmp13 = cResult[16];
-        }
-        const tmpResult3 = tmp(tmp2[8]);
-        const stateFromStoresObject = tmpResult3.useStateFromStoresObject(tmp10, tmp12, tmp13);
-        const findIndexResult = obj3.findIndex((item) => null == stateFromStoresObject[item]);
-        if (-1 !== findIndexResult) {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-        }
-        let c9 = tmp17;
-        if (-1 !== findIndexResult) {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-        }
-        let c10 = tmp18;
-        const _Symbol2 = Symbol;
-        if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-          const items2 = [StorefrontCollectionStore];
-          cResult[17] = items2;
-          tmp19 = items2;
-        } else {
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-        }
-        if (cResult[18] === tmp8) {
-          let tmp31;
-          let tmp30;
-          class O {
-            constructor() {
-              const obj = {};
-              for (const item10006 of obj3) {
-                obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                continue;
-              }
-              return obj;
-            }
-          }
-          const tmpResult4 = tmp(tmp2[8]);
-          const stateFromStoresObject1 = tmpResult4.useStateFromStoresObject(tmp19, tmp20, tmp21);
-          const nextPageFetchState = stateFromStoresObject1.nextPageFetchState;
-          const total = stateFromStoresObject1.total;
-          let tmp24 = null == total;
-          if (!tmp24) {
-            class O {
-              constructor() {
-                const obj = {};
-                for (const item10006 of obj3) {
-                  obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                  continue;
-                }
-                return obj;
-              }
-            }
-            tmp24 = findIndexResult * pageSize < total;
-          }
-          let closure_12 = tmp24;
-          const _Symbol3 = Symbol;
-          if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-            class O {
-              constructor() {
-                const obj = {};
-                for (const item10006 of obj3) {
-                  obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                  continue;
-                }
-                return obj;
-              }
-            }
-            const self = this;
-            const self2 = this;
-            cResult[22] = new includeUnpublished(tmp2[9])(1000, 30000);
-            const tmp27 = new includeUnpublished(tmp2[9])(1000, 30000);
-          } else {
-            class O {
-              constructor() {
-                const obj = {};
-                for (const item10006 of obj3) {
-                  obj[item10006] = StorefrontCollectionStore.getCollectionPageIds(item10006);
-                  continue;
-                }
-                return obj;
-              }
-            }
-          }
-          let closure_13 = tmp26;
-          ref = obj2.useRef(tmp17);
-          const _Symbol4 = Symbol;
-          if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-            class H {
-              constructor() {
-                if (null != ref.current) {
-                  const obj = StorefrontCollectionActionCreators;
-                  const result = obj.maybeFetchCollectionsForApplicationPage(tmp.current, { retryAfterError: true });
-                }
-              }
-            }
-            cResult[23] = H;
-          } else {
-            class H {
-              constructor() {
-                if (null != ref.current) {
-                  const obj = StorefrontCollectionActionCreators;
-                  const result = obj.maybeFetchCollectionsForApplicationPage(tmp.current, { retryAfterError: true });
-                }
-              }
-            }
-          }
-          H = tmp29;
-          const _Symbol5 = Symbol;
-          if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-            class V {
-              constructor() {
-                return () => closure_1_13.cancel();
-              }
-            }
-            const items3 = [tmp26];
-            cResult[24] = V;
-            cResult[25] = items3;
-            tmp31 = items3;
-            tmp30 = V;
-          } else {
-            class V {
-              constructor() {
-                return () => closure_1_13.cancel();
-              }
-            }
-            tmp31 = cResult[25];
-          }
-          const effect = obj2.useEffect(tmp30, tmp31);
-          if (cResult[26] === enabled) {
-            class V {
-              constructor() {
-                return () => closure_1_13.cancel();
-              }
-            }
-          }
-          class Y {
-            constructor() {
-              ref.current = current;
-              const tmp2 = enabled && null != tmp && closure_12;
-              if (tmp2) {
-                if ("error" === nextPageFetchState) {
-                  const obj2 = closure_13;
-                  if (!closure_13.pending) {
-                    obj2.fail(H);
-                  }
-                } else if (null == tmp4) {
-                  closure_13.succeed();
-                  const obj = StorefrontCollectionActionCreators;
-                  const result = obj.maybeFetchCollectionsForApplicationPage(tmp);
-                }
-              }
-            }
-          }
-          class T {
-            constructor() {
-              let collectionPageFetchState;
-              if (null != c10) {
-                collectionPageFetchState = StorefrontCollectionStore.getCollectionPageFetchState(tmp);
-              }
-              const obj = { nextPageFetchState: collectionPageFetchState, total: StorefrontCollectionStore.getCollectionListTotal(applicationId) };
-              return obj;
-            }
-          }
-          tmp35[0] = enabled;
-          tmp35[1] = undefined;
-          tmp35[2] = tmp24;
-          tmp35[3] = nextPageFetchState;
-          tmp35[4] = tmp26;
-          tmp35[5] = tmp29;
-          cResult[26] = enabled;
-          cResult[27] = tmp24;
-          cResult[28] = undefined;
-          cResult[29] = nextPageFetchState;
-          cResult[30] = Y;
-          cResult[31] = tmp35;
-        }
-        class T {
-          constructor() {
-            let collectionPageFetchState;
-            if (null != c10) {
-              collectionPageFetchState = StorefrontCollectionStore.getCollectionPageFetchState(tmp);
-            }
-            const obj = { nextPageFetchState: collectionPageFetchState, total: StorefrontCollectionStore.getCollectionListTotal(applicationId) };
-            return obj;
-          }
-        }
-        const items4 = [undefined, tmp8];
-        cResult[18] = tmp8;
-        cResult[19] = undefined;
-        cResult[20] = T;
-        cResult[21] = items4;
-        tmp20 = T;
-        tmp21 = items4;
-      }
-    }
-  }
-  if (cResult[5] === includeUnpublished) {
-    class V {
-      constructor() {
-        return () => closure_1_13.cancel();
-      }
-    }
-  }
-  const fn = function f(arg0, arg1) {
-    return { applicationId, offset: arg1 * pageSize, limit: pageSize, useShopOrdering: true, includeUnpublishedProducts: includeUnpublished, includeUnpublishedCollections: includeUnpublished, ignoreCache: noCache };
-  };
-  cResult[5] = includeUnpublished;
-  cResult[6] = noCache;
-  cResult[7] = pageSize;
-  cResult[8] = fn;
-}) : (function useShopAllCatalogPages(pageSize) {
+let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useShopAllCatalogPages.tsx");
+
+export default function useShopAllCatalogPages(pageSize) {
   let callback1;
   pageSize = pageSize.pageSize;
   const includeUnpublished = pageSize.includeUnpublished;
   const noCache = pageSize.noCache;
   let enabled = pageSize.enabled;
   let first;
-  current = undefined;
+  let current;
   let closure_12;
   let nextPageFetchState;
   let closure_14;
   let memo2;
-  ref = undefined;
+  let ref;
   let callback;
   let memo3;
   let stateFromStoresObject2;
@@ -390,12 +62,12 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
   const memo1 = first.useMemo(() => memo.map(StorefrontCollectionActionCreators.getCollectionPageKey), items1);
   let tmp5 = pageSize;
   const tmp6 = noCache;
-  const obj3 = pageSize(noCache[7]);
+  const obj3 = pageSize(noCache[5]);
   const collectionListKey = obj3.getCollectionListKey(memo[0]);
   let tmp8 = closure_5;
   const items2 = [closure_5];
   const items3 = [memo1];
-  const obj4 = pageSize(noCache[8]);
+  const obj4 = pageSize(noCache[6]);
   const stateFromStoresObject = obj4.useStateFromStoresObject(items2, () => {
     const obj = {};
     for (const item10006 of memo1) {
@@ -418,7 +90,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
   closure_12 = tmp13;
   const items4 = [tmp8];
   const items5 = [tmp13, collectionListKey];
-  const tmp5Result = tmp5(tmp6[8]);
+  const tmp5Result = tmp5(tmp6[6]);
   const stateFromStoresObject1 = tmp5Result.useStateFromStoresObject(items4, () => {
     let collectionPageFetchState;
     if (null != closure_12) {
@@ -438,7 +110,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
   }
   closure_14 = tmp15;
   memo2 = obj.useMemo(() => {
-    const tmp = new includeUnpublished(noCache[9])(1000, 30000);
+    const tmp = new includeUnpublished(noCache[7])(1000, 30000);
     return tmp;
   }, []);
   ref = obj.useRef(tmp12);
@@ -488,7 +160,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
   }, items8);
   const items9 = [tmp8];
   const items10 = [memo3];
-  const tmp5Result2 = tmp5(tmp6[8]);
+  const tmp5Result2 = tmp5(tmp6[6]);
   stateFromStoresObject2 = tmp5Result2.useStateFromStoresObject(items9, () => {
     const obj = {};
     for (const item10006 of memo3) {
@@ -513,7 +185,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
         for (const item10005 of found) {
           let addResult = set.add(item10005);
           let products = item10005.products;
-          let item = products.forEach(pageSize(noCache[10]).seedCollectiblesProductFromStandaloneLoad);
+          let item = products.forEach(pageSize(noCache[8]).seedCollectiblesProductFromStandaloneLoad);
           continue;
         }
       });
@@ -534,7 +206,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShopAllCa
     enabled = tmp15;
   }
   return obj2;
-});
-let result = size.fileFinishedImporting("modules/collectibles/native/hooks/useShopAllCatalogPages.tsx");
-
-export default tmp4;
+};

@@ -1,17 +1,14 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17259
+// Function ID: 17260
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1407, 5030, 1409, 558, 576, 16366, 5033, 2]
+// Dependencies: [19, 1402, 5034, 1404, 5037, 2]
+// Exports: useVisibleFontOrder
 
-// Module 17205 (DisplayNameStylesFontOrder)
-import react2 from "react" /* 576 */;
-import DisplayNameFont from "DisplayNameFont" /* 1409 */;
-import HexagonCampaignPerkAvailability from "HexagonCampaignPerkAvailability" /* 5033 */;
-import DisplayNameStylesFlywheelExperiment from "DisplayNameStylesFlywheelExperiment" /* 16366 */;
+// Module 17259 (DisplayNameStylesFontOrder)
+import DisplayNameFont from "DisplayNameFont" /* 1404 */;
 import react from "react" /* 19 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1407 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1402 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
 import size from "module_2" /* 2 */;
 
 let FLYWHEEL_FONTS;
@@ -22,49 +19,9 @@ let hasOwnProperty;
 ({ HexagonCampaignPerk: closure_4, HexagonCampaignPerkAvailability: hasOwnProperty } = HexagonCampaignConstants);
 let items = [DisplayNameFont.DisplayNameFont.DEFAULT, DisplayNameFont.DisplayNameFont.ZILLA_SLAB, DisplayNameFont.DisplayNameFont.CHERRY_BOMB, DisplayNameFont.DisplayNameFont.CHICLE, DisplayNameFont.DisplayNameFont.MUSEO_MODERNO, DisplayNameFont.DisplayNameFont.NEO_CASTEL, DisplayNameFont.DisplayNameFont.PIXELIFY, DisplayNameFont.DisplayNameFont.SINISTRE];
 const items1 = [...FLYWHEEL_FONTS];
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleFontOrder(arg0) {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(5);
-  if (cResult[0] !== arg0) {
-    let obj2 = arg0;
-    if (undefined === arg0) {
-      obj2 = {};
-    }
-    cResult[0] = arg0;
-    cResult[1] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const includeCampaignFonts = tmp5.includeCampaignFonts;
-  let tmp6 = undefined !== includeCampaignFonts && includeCampaignFonts;
-  const tmp2Result = DisplayNameStylesFlywheelExperiment;
-  const isDisplayNameStylesFlywheelSettersEnabled = tmp2Result.useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
-  HexagonCampaignPerkAvailability;
-  if (tmp6) {
-    tmp6 = tmp9 !== hasOwnProperty.HIDDEN;
-  }
-  const tmp11 = isDisplayNameStylesFlywheelSettersEnabled ? items1 : items;
-  if (cResult[2] === tmp11) {
-    let tmp12;
-    if (cResult[3] === tmp6) {
-      tmp12 = cResult[4];
-    }
-    return tmp12;
-  }
-  let tmp13 = tmp11;
-  if (tmp6) {
-    items = [];
-    HermesBuiltin.arraySpread(items, _false, HermesBuiltin.arraySpread(items, tmp11, 0));
-    tmp13 = items;
-  }
-  cResult[2] = tmp11;
-  cResult[3] = tmp6;
-  cResult[4] = tmp13;
-  tmp12 = tmp13;
-}) : (function useVisibleFontOrder() {
-  let tmp3;
+const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
+
+export function useVisibleFontOrder(arg0) {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -73,26 +30,22 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisible
   if (flag === undefined) {
     flag = false;
   }
-  let isDisplayNameStylesFlywheelSettersEnabled;
   flag = undefined;
-  const obj2 = isDisplayNameStylesFlywheelSettersEnabled(flag[6]);
-  isDisplayNameStylesFlywheelSettersEnabled = obj2.useIsDisplayNameStylesFlywheelSettersEnabled("font-order");
-  let tmp2 = isDisplayNameStylesFlywheelSettersEnabled(flag[7]);
+  flag(5037);
   if (flag) {
-    flag = tmp3 !== constants.HIDDEN;
+    let tmp3 = constants;
+    flag = tmp2 !== constants.HIDDEN;
   }
-  items = [isDisplayNameStylesFlywheelSettersEnabled, flag];
+  let items = [flag];
   return react.useMemo(() => {
-    const tmp2 = isDisplayNameStylesFlywheelSettersEnabled ? items1 : items;
-    let tmp3 = tmp2;
+    let tmp3;
     if (flag) {
-      items = [];
-      HermesBuiltin.arraySpread(items, _false, HermesBuiltin.arraySpread(items, tmp2, 0));
+      const items = [];
+      HermesBuiltin.arraySpread(items, _false, HermesBuiltin.arraySpread(items, items1, 0));
       tmp3 = items;
+    } else {
+      tmp3 = tmp2;
     }
     return tmp3;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
-
-export const useVisibleFontOrder = tmp4;
+}

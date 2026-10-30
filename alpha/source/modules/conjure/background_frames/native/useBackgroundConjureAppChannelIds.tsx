@@ -1,14 +1,13 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18768
+// Function ID: 18769
 // Name: useBackgroundConjureAppChannelIds
-// Dependencies: [18566, 6836, 558, 504, 2]
+// Dependencies: [18625, 6843, 504, 2]
 // Exports: default
 
-// Module 18709 (useBackgroundConjureAppChannelIds)
+// Module 18768 (useBackgroundConjureAppChannelIds)
 import get_initialized from "get initialized" /* 504 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18566 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6843 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18625 */;
 import size from "module_2" /* 2 */;
 
 function getChannelIds() {
@@ -18,9 +17,7 @@ function getChannelIds() {
   const found = mapped.filter((item) => null != item);
   return found.sort();
 }
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/conjure/background_frames/native/useBackgroundConjureAppChannelIds.tsx");
+const result = size.fileFinishedImporting("modules/conjure/background_frames/native/useBackgroundConjureAppChannelIds.tsx");
 
 export default function useBackgroundConjureAppChannelIds() {
   const obj = get_initialized;

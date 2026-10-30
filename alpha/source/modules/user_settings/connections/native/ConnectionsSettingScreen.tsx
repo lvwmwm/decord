@@ -1,77 +1,26 @@
-// Module ID: 16755
-// Function ID: 16756
+// Module ID: 16809
+// Function ID: 16810
 // Name: ConnectionsSettingScreen
-// Dependencies: [19, 21, 5247, 16756, 2000, 558, 576, 1503, 7150, 9765, 1125, 16757, 2]
+// Dependencies: [19, 21, 5253, 16810, 1995, 1498, 7158, 9791, 1114, 16811, 2]
 
-// Module 16755 (ConnectionsSettingScreen)
+// Module 16809 (ConnectionsSettingScreen)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function onPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(16756, dependencyMap.paths), "AddConnection");
+  obj.openLazy(asyncRequire(16810, dependencyMap.paths), "AddConnection");
 }
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectionsSettingScreen() {
+const memoResult = react.memo(function ConnectionsSettingScreen() {
   let stackNavigation;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  let obj = stackNavigation(576);
-  const cResult = obj.c(5);
-  const obj2 = stackNavigation(1503);
-  const tmp = stackNavigation;
-  stackNavigation = obj2.useStackNavigation();
-  const obj3 = stackNavigation(7150);
-  const params = obj3.useSettingNavigationRoute().params;
-  let selectedPlatformType;
-  if (params != null) {
-    selectedPlatformType = params.selectedPlatformType;
-  }
-  if (cResult[0] !== stackNavigation) {
-    const fn = function s() {
-      let obj = {
-        headerRight(arg0) {
-          let intl;
-          const obj = { onPress, label: intl.string(stackNavigation(closure_1_2[10]).t.OYkgVk) };
-          const HeaderTextButton = stackNavigation(closure_1_2[9]).HeaderTextButton;
-          const merged = Object.assign(arg0);
-          intl = stackNavigation(closure_1_2[10]).intl;
-          return closure_1_4(HeaderTextButton, obj);
-        }
-      };
-      stackNavigation.setOptions(obj);
-    };
-    const items = [stackNavigation];
-    cResult[0] = stackNavigation;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp7 = items;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[1];
-    tmp7 = cResult[2];
-  }
-  const layoutEffect = react.useLayoutEffect(tmp6, tmp7);
-  if (cResult[3] !== selectedPlatformType) {
-    const tmp11 = jsx(tmp(16757).UserSettingsConnections, { selectedPlatformType });
-    cResult[3] = selectedPlatformType;
-    cResult[4] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[4];
-  }
-  return tmp9;
-}) : (function ConnectionsSettingScreen() {
-  let stackNavigation;
-  let obj = stackNavigation(1503);
+  let obj = stackNavigation(1498);
   const tmp = stackNavigation;
   stackNavigation = obj.useStackNavigation();
-  const obj2 = stackNavigation(7150);
+  const obj2 = stackNavigation(7158);
   const params = obj2.useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
@@ -82,17 +31,17 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let obj = {
       headerRight(arg0) {
         let intl;
-        const obj = { onPress, label: intl.string(stackNavigation(closure_1_2[10]).t.OYkgVk) };
-        const HeaderTextButton = stackNavigation(closure_1_2[9]).HeaderTextButton;
+        const obj = { onPress, label: intl.string(stackNavigation(closure_1_2[8]).t.OYkgVk) };
+        const HeaderTextButton = stackNavigation(closure_1_2[7]).HeaderTextButton;
         const merged = Object.assign(arg0);
-        intl = stackNavigation(closure_1_2[10]).intl;
+        intl = stackNavigation(closure_1_2[8]).intl;
         return closure_1_4(HeaderTextButton, obj);
       }
     };
     stackNavigation.setOptions(obj);
   }, items);
-  return jsx(tmp(16757).UserSettingsConnections, { selectedPlatformType });
-}));
+  return jsx(tmp(16811).UserSettingsConnections, { selectedPlatformType });
+});
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 
 export default memoResult;

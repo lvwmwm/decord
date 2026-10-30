@@ -1,84 +1,72 @@
 // Module ID: 1809
 // Function ID: 1810
-// Dependencies: [19, 1808, 1659, 1700]
-// Exports: useAnimatedReaction
+// Dependencies: [19, 1654, 1695, 1723]
+// Exports: useDerivedValue
 
 // Module 1809
+import startMapper from "startMapper" /* 1695 */;
 import react from "react" /* 19 */;
-import startMapper from "startMapper" /* 1700 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap;
+let _require;
 
-let useEffect = react.useEffect;
-let closure_3 = { code: "function pnpm_useAnimatedReactionTs1(){const{prepare,react,previous}=this.__closure;const input=prepare();react(input,previous.value);previous.value=input;}" };
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+let closure_4 = { code: "function pnpm_useDerivedValueTs1(){const{sharedValue,updater}=this.__closure;sharedValue.value=updater();}" };
 
-export function useAnimatedReaction(fn, fn2, items) {
-  let previous;
-  let react;
+export function useDerivedValue(fn, items) {
   _require = fn;
-  dependencyMap = fn2;
-  let obj = require("module_1808");
-  useEffect = obj.useSharedValue(null);
+  const tmp2 = closure_3(null);
   let __closure = fn.__closure;
   const _Object = Object;
-  const tmp2 = _require;
   if (__closure == null) {
     __closure = {};
   }
   let values2 = values(__closure);
-  const tmp2Result = tmp2(1659);
-  let tmp4 = tmp2Result.shouldBeUseWeb() && !values2.length;
+  let obj2 = require("module_1654");
+  let tmp5 = obj2.shouldBeUseWeb() && !values2.length;
   let arr2 = items;
-  if (tmp4) {
+  if (tmp5) {
     let length;
     if (arr2 != null) {
       length = arr2.length;
     }
-    tmp4 = length;
+    tmp5 = length;
   }
-  if (tmp4) {
+  if (tmp5) {
     values2 = arr2;
   }
   if (undefined === arr2) {
-    let __closure1 = fn.__closure;
-    const _Object2 = Object;
-    const values3 = Object.values;
-    if (__closure1 == null) {
-      __closure1 = {};
-    }
-    items = [, ];
-    let __closure2 = fn2.__closure;
-    const _Object3 = Object;
-    const values6 = Object.values;
-    const arraySpreadResult = HermesBuiltin.arraySpread(items, values3(__closure1), 0);
-    if (__closure2 == null) {
-      __closure2 = {};
-    }
-    const arraySpreadResult2 = HermesBuiltin.arraySpread(items, values6(__closure2), arraySpreadResult);
-    items[arraySpreadResult2] = fn.__workletHash;
-    items[arraySpreadResult2 + 1] = fn2.__workletHash;
+    items = [];
+    items[HermesBuiltin.arraySpread(items, values2, 0)] = fn.__workletHash;
     arr2 = items;
   } else {
-    arr2.push(fn.__workletHash, fn2.__workletHash);
+    arr2.push(fn.__workletHash);
   }
-  useEffect(() => {
+  if (null === tmp2.current) {
+    const makeMutable = require("startMapper").makeMutable;
+    require("startMapper");
+    const tmp3Result2 = require("module_1723");
+    tmp2.current = makeMutable(tmp3Result2.initialUpdaterRun(fn));
+  }
+  const current = tmp2.current;
+  current(() => {
     let closure_0;
-    let value;
     const fn = function t() {
-      const tmp = closure_0();
-      react(tmp, value.value);
-      value.value = tmp;
+      current.value = closure_0();
     };
-    let obj = { prepare, react, previous };
+    let obj = { sharedValue: current, updater };
     fn.__closure = obj;
-    fn.__workletHash = 3026350450260;
-    fn.__initData = values2;
-    const obj2 = prepare(react[3]);
-    prepare = obj2.startMapper(fn, values2);
+    fn.__workletHash = 1316501239615;
+    fn.__initData = __initData;
+    const items = [current];
+    const obj2 = updater(values2[2]);
+    updater = obj2.startMapper(fn, values2, items);
     return () => {
       const obj = startMapper;
       obj.stopMapper(closure_0);
     };
   }, arr2);
+  return current;
 }

@@ -1,99 +1,21 @@
-// Module ID: 11105
-// Function ID: 11106
+// Module ID: 11124
+// Function ID: 11125
 // Name: useFavoritesGuildChannelActions
-// Dependencies: [502, 4917, 4860, 558, 576, 4882, 504, 10789, 2]
+// Dependencies: [502, 4921, 4861, 4883, 504, 10812, 2]
+// Exports: default
 
-// Module 11105 (useFavoritesGuildChannelActions)
+// Module 11124 (useFavoritesGuildChannelActions)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import FavoriteStore from "FavoriteStore" /* 4860 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import FavoriteStore from "FavoriteStore" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavoritesGuildChannelActions(channelId) {
-  let stateFromStores1;
-  let tmp11;
-  let tmp14;
-  let tmp6;
-  let tmp8;
-  _require = channelId;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] !== channelId) {
-    const tmpResult = tmp(4882);
-    const isFavoritableChannelResult = tmpResult.isFavoritableChannel(channelId);
-    cResult[0] = channelId;
-    cResult[1] = isFavoritableChannelResult;
-    stateFromStores1 = isFavoritableChannelResult;
-  } else {
-    stateFromStores1 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FavoriteStore];
-    cResult[2] = items;
-    tmp6 = items;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== channelId.id) {
-    const fn = function c() {
-      return FavoriteStore.isFavorite(channelId.id);
-    };
-    cResult[3] = channelId.id;
-    cResult[4] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[4];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores = tmpResult4.useStateFromStores(tmp6, tmp8);
-  const tmpResult5 = tmp(10789);
-  const isFavoritesGuildSelected = tmpResult5.useIsFavoritesGuildSelected();
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildMemberStore, AuthenticationStore];
-    cResult[5] = items1;
-    tmp11 = items1;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] !== channelId.guild_id) {
-    const fn2 = function _() {
-      const isMemberResult = null == channelId.guild_id || GuildMemberStore.isMember(tmp.guild_id, AuthenticationStore.getId());
-      return isMemberResult;
-    };
-    cResult[6] = channelId.guild_id;
-    cResult[7] = fn2;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[7];
-  }
-  const tmpResult6 = tmp(504);
-  if (stateFromStores1) {
-    stateFromStores1 = tmpResult6.useStateFromStores(tmp11, tmp14);
-  }
-  if (cResult[8] === stateFromStores1) {
-    if (cResult[9] === channelId.id) {
-      if (cResult[10] === stateFromStores) {
-        let tmp15;
-        if (cResult[11] === isFavoritesGuildSelected) {
-          tmp15 = cResult[12];
-        }
-        return tmp15;
-      }
-    }
-  }
-  const obj2 = { canFavoriteChannel: stateFromStores1, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id };
-  cResult[8] = stateFromStores1;
-  cResult[9] = channelId.id;
-  cResult[10] = stateFromStores;
-  cResult[11] = isFavoritesGuildSelected;
-  cResult[12] = obj2;
-  tmp15 = obj2;
-}) : (function useFavoritesGuildChannelActions(channelId) {
+const result = size.fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildChannelActions.tsx");
+
+export default function useFavoritesGuildChannelActions(channelId) {
   _require = channelId;
   const obj = require("FavoritesUtils");
   let isFavoritableChannelResult = obj.isFavoritableChannel(channelId);
@@ -111,7 +33,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
     });
   }
   return { canFavoriteChannel: isFavoritableChannelResult, isChannelInFavorites: stateFromStores, isFavoritesGuild: isFavoritesGuildSelected, channelId: channelId.id };
-});
-const result = size.fileFinishedImporting("modules/favorites/native/action/useFavoritesGuildChannelActions.tsx");
-
-export default tmp2;
+};

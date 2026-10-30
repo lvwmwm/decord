@@ -1,18 +1,15 @@
-// Module ID: 10962
-// Function ID: 10963
+// Module ID: 10987
+// Function ID: 10988
 // Name: VoiceChatModalContext
-// Dependencies: [19, 558, 2]
+// Dependencies: [19, 2]
 // Exports: useVoiceChatNavigationContext
 
-// Module 10962 (VoiceChatModalContext)
+// Module 10987 (VoiceChatModalContext)
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const context = react.createContext(null);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/voice_chat/native/VoiceChatModalContext.tsx");
+const result = size.fileFinishedImporting("modules/voice_chat/native/VoiceChatModalContext.tsx");
 
 export const VoiceChatNavigationContext = context;
 export function useVoiceChatNavigationContext() {

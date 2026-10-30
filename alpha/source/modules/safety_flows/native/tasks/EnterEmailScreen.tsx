@@ -1,78 +1,25 @@
-// Module ID: 19959
-// Function ID: 19960
+// Module ID: 20022
+// Function ID: 20023
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 558, 576, 1503, 1125, 2834, 19951, 6015, 7068, 19960, 2]
+// Dependencies: [32, 19, 21, 1498, 20023, 1114, 2835, 20014, 6022, 7076, 2]
+// Exports: default
 
-// Module 19959 (EnterEmailScreen)
+// Module 20022 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2834 from "module_2834" /* 2834 */;
-import types from "types" /* 19951 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 19960 */;
+import _modDef2835 from "module_2835" /* 2835 */;
+import types from "types" /* 20014 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 20023 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, navigation;
+let _require;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmailScreen() {
-  let first;
-  let tmp13;
-  let tmp14;
-  let tmp7;
-  let tmp8;
-  let tmp9;
-  const obj = navigation(576);
-  const cResult = obj.c(9);
-  const obj2 = navigation(1503);
-  navigation = obj2.useNavigation();
-  [first, tmp7] = react.useState("");
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2834.bFbsV6);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(_modDef2834.RRBNpv);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp8 = stringResult;
-    tmp9 = stringResult1;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  if (cResult[2] !== navigation) {
-    const fn = function o() {
-      navigation.push(types.SafetyFlowScreens.VERIFY_EMAIL);
-    };
-    cResult[2] = navigation;
-    cResult[3] = fn;
-    tmp13 = fn;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== first) {
-    const Stack = tmp(6015).Stack;
-    const tmp16 = <Stack>{null}</Stack>;
-    cResult[4] = first;
-    cResult[5] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[5];
-  }
-  if (cResult[6] === tmp13) {
-    let tmp17;
-    if (cResult[7] === tmp14) {
-      tmp17 = cResult[8];
-    }
-    return tmp17;
-  }
-  const tmp18 = jsx(SafetyFlowTaskScreenDefault, { title: tmp8, action: tmp9, onAction: tmp13, children: tmp14 });
-  cResult[6] = tmp13;
-  cResult[7] = tmp14;
-  cResult[8] = tmp18;
-  tmp17 = tmp18;
-}) : (function EnterEmailScreen() {
+const result = size.fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
+
+export default function EnterEmailScreen() {
   let closure_0;
   let tmp2;
   let tmp3;
@@ -84,10 +31,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   const intl = require("intl").intl;
   const intl2 = require("intl").intl;
   const Stack = require("Stack/Stack").Stack;
-  return <tmp4 title={intl.string(_modDef2834.bFbsV6)} action={intl2.string(_modDef2834.RRBNpv)} onAction={function onAction() {
+  return <tmp4 title={intl.string(_modDef2835.bFbsV6)} action={intl2.string(_modDef2835.RRBNpv)} onAction={function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
   }}>{null}</tmp4>;
-});
-const result = size.fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
-
-export default tmp2;
+};

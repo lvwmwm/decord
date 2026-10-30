@@ -1,18 +1,18 @@
-// Module ID: 13512
-// Function ID: 13513
+// Module ID: 13662
+// Function ID: 13663
 // Name: CustomThemeMobileActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
-// Module 13512 (CustomThemeMobileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 13662 (CustomThemeMobileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/native/CustomThemeMobileActionCreators.tsx");
 
-export function updateCustomTheme(customThemeSettings, first1) {
+export function updateCustomTheme(customThemeSettings, customThemeBaseTheme) {
   const obj = DispatcherDefault;
-  const obj2 = { type: "UPDATE_CUSTOM_THEME", customTheme: customThemeSettings, theme: first1 };
+  const obj2 = { type: "UPDATE_CUSTOM_THEME", customTheme: customThemeSettings, theme: customThemeBaseTheme };
   obj.dispatch(obj2);
 }
 export function resetCustomTheme() {

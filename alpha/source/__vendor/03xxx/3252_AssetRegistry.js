@@ -1,0 +1,10 @@
+// Module ID: 3252
+// Function ID: 3253
+// Name: AssetRegistry
+// Dependencies: [1120]
+
+// Module 3252 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1120 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/application_account_linking", scales: [1], hash: "8af8b04078c3684bfbd85a033c2876aa", name: "ApplicationAccountLinking.compiled.messages", type: "jsona" });

@@ -1,179 +1,177 @@
 // Module ID: 1611
 // Function ID: 1612
-// Dependencies: [19, 17, 1506, 1612]
-// Exports: useLinking
+// Dependencies: [19, 17, 1501, 1598, 1520, 1612]
+// Exports: useLinkProps
 
 // Module 1611
-import _toArray from "_toArray" /* 1612 */;
-import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
+import BaseNavigationContainer from "BaseNavigationContainer" /* 1501 */;
+import useLatestCallbackDefault from "useLatestCallback" /* 1520 */;
+import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require;
+let set;
 
-let Platform;
-let c3;
-({ Linking: c3, Platform } = react_native);
-
-export function useLinking(ref, enabled) {
-  _require = ref;
-  let flag = enabled.enabled;
-  if (flag === undefined) {
-    flag = true;
+let tmp2;
+const react2 = tmp2(1598);
+const react3 = tmp2(1612);
+function clone(screen, arg1, get) {
+  let keys = arg1;
+  if (arg1 === undefined) {
+    keys = closure_4;
   }
-  const prefixes = enabled.prefixes;
-  const filter = enabled.filter;
-  const config = enabled.config;
-  let current = enabled.getInitialURL;
-  if (current === undefined) {
-    current = function f() {
-      const f145095 = (arg0) => {
-        const timerId = setTimeout(arg0, 150);
-      };
-      const items = [filter.getInitialURL(), new Promise(f145095)];
-      new Promise(f145095);
-      return race(items);
-    };
-  }
-  let fn2 = enabled.subscribe;
-  if (fn2 === undefined) {
-    fn2 = function l(arg0) {
-      let closure_0 = arg0;
-      callback = function callback(event) {
-        return closure_0(event.url);
-      };
-      let closure_2 = filter.addEventListener("url", callback);
-      const removeEventListener = filter.removeEventListener;
-      let bindResult;
-      const tmp = filter;
-      if (removeEventListener != null) {
-        bindResult = removeEventListener.bind(tmp);
+  if (typeof screen === "object") {
+    if (null != screen) {
+      let value;
+      if (get != null) {
+        value = get.get(screen);
       }
-      return () => {
-        let remove;
-        if (closure_2 != null) {
-          remove = obj.remove;
-        }
-        if (remove) {
-          closure_2.remove();
-        } else if (bindResult != null) {
-          tmp2("url", callback);
-        }
-      };
-    };
-  }
-  let getStateFromPath = enabled.getStateFromPath;
-  if (getStateFromPath === undefined) {
-    let tmp = _require;
-    let tmp2 = flag;
-    getStateFromPath = require("BaseNavigationContainer").getStateFromPath;
-  }
-  let getActionFromState = enabled.getActionFromState;
-  if (getActionFromState === undefined) {
-    let tmp4 = flag;
-    getActionFromState = require("BaseNavigationContainer").getActionFromState;
-  }
-  let obj = require("BaseNavigationContainer");
-  let items = [flag, obj.useNavigationIndependentTree()];
-  const effect = prefixes.useEffect(() => {
-
-  }, items);
-  ref = prefixes.useRef(flag);
-  const ref2 = prefixes.useRef(prefixes);
-  const ref3 = prefixes.useRef(filter);
-  const ref4 = prefixes.useRef(config);
-  const ref5 = prefixes.useRef(current);
-  const ref6 = prefixes.useRef(getStateFromPath);
-  let closure_15 = prefixes.useRef(getActionFromState);
-  const effect1 = prefixes.useEffect(() => {
-    ref.current = flag;
-    ref2.current = prefixes;
-    ref3.current = filter;
-    ref4.current = config;
-    ref5.current = current;
-    ref6.current = getStateFromPath;
-    closure_15.current = getActionFromState;
-  });
-  let callback = prefixes.useCallback((AUTO_DISMISS) => {
-    const tmp = AUTO_DISMISS;
-    if (tmp) {
-      if (!ref3.current) {
-        const obj2 = _toArray;
-        const extractPathFromURLResult = obj2.extractPathFromURL(ref2.current, AUTO_DISMISS);
-        if (undefined !== extractPathFromURLResult) {
-          try {
-            return ref6.current(extractPathFromURLResult, ref4.current);
-          } catch (tmp8) {
-            const _console = console;
-            console.error(tmp8);
-          }
-        }
-      }
-    }
-  }, []);
-  const items1 = [callback];
-  const items2 = [flag, callback, ref, fn2];
-  const getInitialState = prefixes.useCallback(() => {
-    if (ref.current) {
-      const tmp = ref5;
-      const currentResult = ref5.current();
-      let tmp2 = null;
-      if (null != currentResult) {
-        if (typeof currentResult !== "string") {
-          return currentResult.then((result) => callback(result));
-        }
-      }
-      let closure_0 = callback(currentResult);
-    }
-    const obj = {
-      then(fn) {
-        let tmp2;
-        if (fn) {
-          tmp2 = fn(tmp);
-        } else {
-          tmp2 = tmp;
-        }
-        return resolve(tmp2);
-      },
-      catch: () => obj
-    };
-    return obj;
-  }, items1);
-  const effect2 = prefixes.useEffect(() => fn2((arg0) => {
-    const tmp = flag;
-    if (tmp) {
-      let tmp4;
-      current = ref.current;
-      if (current) {
-        tmp4 = callback(arg0);
-      }
-      if (current) {
-        if (tmp4) {
-          const currentResult = ref3.current(tmp4, ref2.current);
-          if (undefined !== currentResult) {
-            try {
-              current.dispatch(currentResult);
-            } catch (tmp11) {
-              let message = tmp11;
-              const _console = console;
-              if (typeof tmp11 === "object") {
-                message = tmp11;
-                if (null != tmp11) {
-                  message = tmp11;
-                  if ("message" in tmp11) {
-                    message = tmp11.message;
+      if (value) {
+        return value;
+      } else {
+        const _Array = Array;
+        const isArray = Array.isArray(screen);
+        const tmp6 = closure_5;
+        if (keys === closure_5) {
+          if ("screen" in screen) {
+            if (typeof screen.screen !== "string") {
+              if ("state" in screen) {
+                if (typeof screen.state === "object") {
+                  if (null != screen.state) {
+                    if ("routes" in screen.state) {
+                      const _Array2 = Array;
+                    }
                   }
                 }
               }
-              const _HermesInternal = HermesInternal;
-              warn("An error occurred when trying to handle the link '" + arg0 + "': " + message);
+              return screen;
             }
-          } else {
-            current.resetRoot(tmp4);
           }
         }
+        let tmp8;
+        if (keys === tmp6) {
+          const obj = {};
+          const merged = Object.assign(screen);
+          tmp8 = obj;
+        }
+        let tmp12 = tmp8;
+        let weakMap = get;
+        if (get == null) {
+          const _WeakMap = WeakMap;
+          const self2 = this;
+          const self = this;
+          weakMap = new WeakMap();
+        }
+        let tmp13 = tmp12;
+        set = weakMap.set;
+        if (tmp12 == null) {
+          tmp13 = screen;
+        }
+        const result = set(screen, tmp13);
+        if (isArray) {
+          keys = screen.keys();
+        }
+        const iter = keys[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp23;
+          let _Reflect = Reflect;
+          let tmp19 = nextResult;
+          let value2 = Reflect.get(screen, nextResult);
+          let tmp21 = value2;
+          let tmp22 = clone;
+          if ("params" === nextResult) {
+            tmp23 = closure_5;
+          } else {
+            tmp23 = closure_4;
+          }
+          let tmp22Result = tmp22(value2, tmp23, weakMap);
+          if (tmp22Result !== tmp21) {
+            if (tmp12 == null) {
+              let obj2;
+              if (isArray) {
+                let items = [];
+                let arraySpreadResult = HermesBuiltin.arraySpread(items, screen, 0);
+                obj2 = items;
+              } else {
+                obj2 = {};
+                let merged1 = Object.assign(screen);
+              }
+              tmp12 = obj2;
+            }
+            let result1 = weakMap.set(screen, tmp12);
+            let _Object = Object;
+            let obj3 = {};
+            obj3[tmp19] = tmp27;
+            let merged2 = Object.assign(tmp12, obj3);
+          }
+          continue;
+        }
+        if (tmp12 == null) {
+          tmp12 = screen;
+        }
+        return tmp12;
       }
     }
-  }), items2);
-  return { getInitialState };
+  }
+  return screen;
+}
+const Platform = react_native.Platform;
+let closure_4 = ["payload", "params", "state", "routes"];
+let closure_5 = ["params", "state"];
+
+export function useLinkProps(arg0) {
+  ({ screen: require, params: importDefault, action: dependencyMap } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ screen: 0, params: 0, action: 0 }));
+  const tmp2 = require;
+  const tmp3 = dependencyMap;
+  const context = merged.useContext(BaseNavigationContainer.NavigationContainerRefContext);
+  let context1 = merged.useContext(BaseNavigationContainer.NavigationHelpersContext);
+  if (context1 == null) {
+    context1 = context;
+  }
+  if (null == context1) {
+    let tmp8 = globalThis;
+    let _Error = Error;
+    let self = this;
+    let self2 = this;
+    let error = new Error("Couldn't find a navigation object. Is your component inside NavigationContainer?");
+    throw error;
+  } else {
+    const options = obj.useContext(react2.LinkingContext).options;
+    const items = [merged.href, , , ];
+    const tmp12 = useLatestCallbackDefault(function(preventDefault) {
+      let tmp8;
+      if (preventDefault != null) {
+        preventDefault.preventDefault();
+      }
+      if (null != dependencyMap) {
+        tmp8 = clone(tmp2);
+      } else if (null == require) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("Couldn't find a screen to navigate to. Make sure to provide a screen name.");
+        throw error;
+      } else {
+        const CommonActions = BaseNavigationContainer.CommonActions;
+        tmp8 = clone(CommonActions.navigate(tmp3, importDefault));
+      }
+      context1.dispatch(tmp8);
+    });
+    const tmp2Result = react3;
+    items[1] = tmp2Result.useDeepStableValue(undefined);
+    let getPathFromState;
+    const useMemo = obj.useMemo;
+    if (options != null) {
+      getPathFromState = options.getPathFromState;
+    }
+    items[2] = getPathFromState;
+    let config;
+    if (options != null) {
+      config = options.config;
+    }
+    items[3] = config;
+    const obj2 = { href: useMemo(() => merged.href, items), role: "link", onPress: tmp12 };
+    return obj2;
+  }
 }

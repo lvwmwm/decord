@@ -1,13 +1,13 @@
-// Module ID: 15575
-// Function ID: 15576
+// Module ID: 15615
+// Function ID: 15616
 // Name: VoiceStateAnalytics
-// Dependencies: [5668, 5755, 5756, 12, 2]
+// Dependencies: [5674, 5762, 5763, 12, 2]
 
-// Module 15575 (VoiceStateAnalytics)
+// Module 15615 (VoiceStateAnalytics)
 import _mod12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 5756 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5755 */;
+import Constants from "Constants" /* 5763 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
 import size from "module_2" /* 2 */;
 
 let set;

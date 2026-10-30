@@ -1,22 +1,20 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 8181
+// Function ID: 8182
 // Name: FormText
-// Dependencies: [19, 21, 5005, 6765, 587, 558, 576, 1199, 2]
+// Dependencies: [19, 21, 5009, 6772, 575, 1188, 2]
+// Exports: default
 
-// Module 8998 (FormText)
+// Module 8181 (FormText)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import LegacyTokens from "LegacyTokens" /* 6765 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import LegacyTokens from "LegacyTokens" /* 6772 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
-let tmp;
-const native = tmp(1199);
 const jsx = Fragment.jsx;
 let closure_3 = createStyles.createStyles((arg0) => {
   let num2;
@@ -41,53 +39,9 @@ obj3 = { color: nativeDefault.unsafe_rawColors.RED_400 };
 ({ color: nativeDefault.unsafe_rawColors.YELLOW_300 });
 ({ color: nativeDefault.unsafe_rawColors.BLUE_345 });
 ({ color: nativeDefault.unsafe_rawColors.WHITE });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormText(arg0) {
-  let children;
-  let color;
-  let ref;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(8);
-  ({ children, size, color, style, ref } = arg0);
-  let str = "medium";
-  const tmp4 = closure_3;
-  if (undefined !== size) {
-    str = size;
-  }
-  const tmp4Result = tmp4(str);
-  if (color == null) {
-    color = tmp4Result.primary;
-  }
-  if (cResult[0] === style) {
-    if (cResult[1] === tmp4Result.text) {
-      let tmp6;
-      if (cResult[2] === color) {
-        tmp6 = cResult[3];
-      }
-      if (cResult[4] === children) {
-        if (cResult[5] === ref) {
-          let tmp7;
-          if (cResult[6] === tmp6) {
-            tmp7 = cResult[7];
-          }
-          return tmp7;
-        }
-      }
-      const tmp9 = jsx(native.LegacyText, { ref, style: tmp6, children });
-      cResult[4] = children;
-      cResult[5] = ref;
-      cResult[6] = tmp6;
-      cResult[7] = tmp9;
-      tmp7 = tmp9;
-    }
-  }
-  const items = [tmp4Result.text, color, style];
-  cResult[0] = style;
-  cResult[1] = tmp4Result.text;
-  cResult[2] = color;
-  cResult[3] = items;
-  tmp6 = items;
-}) : (function FormText(size) {
+const result = size.fileFinishedImporting("design/void/Form/native/FormText.tsx");
+
+export default function FormText(size) {
   let items;
   let ref;
   let style;
@@ -109,8 +63,5 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function FormText(a
   items[1] = primary;
   items[2] = style;
   return tmp2(LegacyText, obj);
-});
-const result = size.fileFinishedImporting("design/void/Form/native/FormText.tsx");
-
-export default tmp3;
+};
 export const FormTextColors = obj;

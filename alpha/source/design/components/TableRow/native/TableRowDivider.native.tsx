@@ -1,18 +1,17 @@
-// Module ID: 6958
-// Function ID: 6959
+// Module ID: 6966
+// Function ID: 6967
 // Name: TableRowDivider
-// Dependencies: [19, 17, 6959, 21, 5005, 587, 558, 576, 5289, 2]
+// Dependencies: [19, 17, 6967, 21, 5009, 575, 5591, 2]
+// Exports: TableRowDivider
 
-// Module 6958 (TableRowDivider)
+// Module 6966 (TableRowDivider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import TableRowConstants from "TableRowConstants" /* 6959 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
+import TableRowConstants from "TableRowConstants" /* 6967 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -30,35 +29,9 @@ let closure_6 = createStyles.createStyles((arg0, arg1) => {
   ({ height: TABLE_DIVIDER_WIDTH, backgroundColor: nativeDefault.colors.BORDER_SUBTLE });
   return obj2;
 });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowDivider(adjustSpacingForIcon) {
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(5);
-  adjustSpacingForIcon = adjustSpacingForIcon.adjustSpacingForIcon;
-  const tmp4 = undefined !== adjustSpacingForIcon && adjustSpacingForIcon;
-  const tmpResult = useToken;
-  const tmp5 = closure_6(tmp4, tmpResult.useToken(nativeDefault.modules.mobile.TABLE_ROW_DIVIDER_PADDING));
-  if (cResult[0] !== tmp5.divider) {
-    const tmp9 = <View style={tmp5.divider} />;
-    cResult[0] = tmp5.divider;
-    cResult[1] = tmp9;
-    tmp6 = tmp9;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === tmp5.container) {
-    let tmp10;
-    if (cResult[3] === tmp6) {
-      tmp10 = cResult[4];
-    }
-    return tmp10;
-  }
-  const tmp11 = <View style={tmp5.container}>{tmp6}</View>;
-  cResult[2] = tmp5.container;
-  cResult[3] = tmp6;
-  cResult[4] = tmp11;
-  tmp10 = tmp11;
-}) : (function TableRowDivider(adjustSpacingForIcon) {
+const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowDivider.native.tsx");
+
+export function TableRowDivider(adjustSpacingForIcon) {
   let flag = adjustSpacingForIcon.adjustSpacingForIcon;
   if (flag === undefined) {
     flag = false;
@@ -66,7 +39,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TableRowDi
   const obj = useToken;
   const tmp = closure_6(flag, obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_DIVIDER_PADDING));
   return <View style={tmp.container}>{null}</View>;
-});
-const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowDivider.native.tsx");
-
-export const TableRowDivider = tmp3;
+}

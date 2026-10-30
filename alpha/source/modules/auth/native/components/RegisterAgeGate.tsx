@@ -1,27 +1,27 @@
-// Module ID: 17910
-// Function ID: 17911
+// Module ID: 17969
+// Function ID: 17970
 // Name: RegisterAgeGate
-// Dependencies: [32, 19, 17, 6729, 17874, 17875, 1084, 21, 5005, 587, 2047, 17911, 558, 576, 5071, 1503, 17871, 504, 7110, 17873, 17891, 38, 1125, 8950, 7069, 17912, 5281, 7093, 7125, 5012, 8972, 2]
+// Dependencies: [32, 19, 17, 6736, 17933, 17934, 1072, 21, 5009, 575, 2044, 17970, 5075, 1498, 17930, 504, 7118, 17950, 17932, 38, 7133, 1114, 7077, 8983, 17971, 5629, 7101, 9002, 5016, 2]
+// Exports: default
 
-// Module 17910 (RegisterAgeGate)
+// Module 17969 (RegisterAgeGate)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17873 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6729 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17874 */;
-import RegistrationConstants from "RegistrationConstants" /* 17875 */;
+import ConsentStore from "ConsentStore" /* 6736 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17933 */;
+import RegistrationConstants from "RegistrationConstants" /* 17934 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import module_2047_mod from "module_2047" /* 2047 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
+import module_2044_mod from "module_2044" /* 2044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, navigation;
+let _require;
 
 let c10;
 let c9;
@@ -39,261 +39,18 @@ const AuthStates = Constants.AuthStates;
 let obj = { inputGroup: { marginTop: 24, marginBottom: 24 }, flexGrow: { flexGrow: 1 }, button: { flexGrow: 0, marginBottom: 4, marginTop: 16, flexDirection: "column" }, datePickerButton: obj2, page: { flex: 1 } };
 obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 let closure_15 = createStyles.createStyles(obj);
-let module_2047 = module_2047_mod;
-module_2047 = module_2047.utc();
-let closure_17 = module_2047.toDate();
-module_2047 = module_2047.clone();
-const endOfResult = module_2047.endOf("year");
+let module_2044 = module_2044_mod;
+module_2044 = module_2044.utc();
+let closure_17 = module_2044.toDate();
+module_2044 = module_2044.clone();
+const endOfResult = module_2044.endOf("year");
 const maximumDate = endOfResult.toDate();
-module_2047 = module_2047.clone();
-const subtractResult = module_2047.subtract(100, "years");
+module_2044 = module_2044.clone();
+const subtractResult = module_2044.subtract(100, "years");
 const minimumDate = subtractResult.toDate();
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeGate() {
-  let authenticationConsentRequired;
-  let closure_3;
-  let closure_5;
-  let first;
-  let first1;
-  let first2;
-  let tmp14;
-  let tmp24;
-  let tmp27;
-  let tmp28;
-  let tmp32;
-  let tmp34;
-  let tmp38;
-  let tmp39;
-  let obj = navigation(first1[13]);
-  const cResult = obj.c(78);
-  let tmp4 = closure_15();
-  let obj2 = navigation(first1[14]);
-  const theme = obj2.useThemeContext().theme;
-  let obj3 = navigation(first1[15]);
-  const tmp = navigation;
-  navigation = obj3.useNavigation();
-  const context = first2.useContext(navigation(first1[16]).TrackRegistrationContext);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const birthday = closure_8.getState().registrationOptions.birthday;
-    let tmp10 = null;
-    if (null != birthday) {
-      tmp10 = null;
-      if (context(first1[11])(birthday)) {
-        tmp10 = birthday;
-      }
-    }
-    cResult[0] = tmp10;
-    first = tmp10;
-  } else {
-    first = cResult[0];
-  }
-  [first1, _slicedToArray] = first2.useState(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const consent = closure_8.getState().registrationOptions.consent;
-    cResult[1] = null != consent && consent;
-    tmp14 = tmp17;
-  } else {
-    tmp14 = cResult[1];
-  }
-  [first2, closure_5] = first2.useState(tmp14);
-  if (cResult[2] !== first1) {
-    let toDateResult;
-    if (first1 != null) {
-      toDateResult = first1.toDate();
-    }
-    cResult[2] = first1;
-    cResult[3] = toDateResult;
-  }
-  [r10081, ConsentStore] = first2.useState(false);
-  _slicedToArray(first2.useState(false), 2);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class J {
-      constructor(submitting) {
-        return submitting.submitting;
-      }
-    }
-    cResult[4] = J;
-    tmp24 = J;
-  } else {
-    class J {
-      constructor(submitting) {
-        return submitting.submitting;
-      }
-    }
-  }
-  closure_8(tmp24);
-  const tmp25 = closure_8;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class J {
-      constructor(submitting) {
-        return submitting.submitting;
-      }
-    }
-    const items = [ConsentStore];
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-    cResult[5] = items;
-    cResult[6] = H;
-    tmp28 = H;
-    tmp27 = items;
-  } else {
-    class J {
-      constructor(submitting) {
-        return submitting.submitting;
-      }
-    }
-    tmp28 = cResult[6];
-  }
-  const tmpResult = tmp(first1[17]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp27, tmp28);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    cResult[7] = Z;
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-  } else {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  const tmp25Result = tmp25(tmp30);
-  if (cResult[8] !== tmp25Result) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    const tmp33 = context(first1[18])("consent", tmp25Result);
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-    cResult[8] = tmp25Result;
-    cResult[9] = tmp33;
-    tmp32 = tmp33;
-  } else {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  if (tmp32 == null) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    const previousRegistrationTransitionStep = obj7.getPreviousRegistrationTransitionStep(AuthStates.AGE_GATE);
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-    cResult[10] = previousRegistrationTransitionStep;
-    tmp34 = previousRegistrationTransitionStep;
-  } else {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  context(first1[20])(tmp34);
-  if (cResult[11] !== context) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    const items1 = [context];
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-    cResult[11] = context;
-    cResult[12] = items1;
-    cResult[13] = tmp40;
-    tmp39 = tmp40;
-    tmp38 = items1;
-  } else {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    tmp39 = cResult[13];
-  }
-  const effect = obj4.useEffect(tmp39, tmp38);
-  if (cResult[14] !== first1) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-    cResult[14] = first1;
-    class H {
-      constructor() {
-        return ConsentStore.getAuthenticationConsentRequired();
-      }
-    }
-    cResult[15] = tmp43;
-  } else {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  if (cResult[16] === first1) {
-    class Z {
-      constructor(errors) {
-        return errors.errors;
-      }
-    }
-  }
-  function handleSubmit() {
-    let tmp4;
-    _modDef38(null != first1, "birthday was not null");
-    const obj = { birthday: first1, consent: tmp4 };
-    tmp4 = first2;
-    const tmp3 = metroImportDefault;
-    if (!first2) {
-      tmp4 = !stateFromStores;
-    }
-    tmp3(obj);
-    const obj2 = { step: constants.AGE_GATE, actionType: constants2.SUBMITTED };
-    context(obj2);
-    const obj3 = RegistrationStepsUtils;
-    const result = obj3.handleRegistrationSubmit(AuthStates.AGE_GATE, navigation, context);
-  }
-  cResult[16] = first1;
-  cResult[17] = first2;
-  cResult[18] = stateFromStores;
-  cResult[19] = navigation;
-  cResult[20] = context;
-  cResult[21] = handleSubmit;
-}) : (function RegisterAgeGate() {
+let result = size.fileFinishedImporting("modules/auth/native/components/RegisterAgeGate.tsx");
+
+export default function RegisterAgeGate() {
   let Button;
   let Input;
   let InputButton;
@@ -327,7 +84,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   let obj3 = first1;
   const context = first1.useContext(require("Auth").TrackRegistrationContext);
   const useState = first1.useState;
-  birthday = closure_8.getState().registrationOptions.birthday;
+  birthday = state.getState().registrationOptions.birthday;
   let tmp5 = null;
   if (null != birthday) {
     tmp5 = null;
@@ -354,15 +111,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   [tmp14, ConsentStore] = _slicedToArray(obj3.useState(false), 2);
   _slicedToArray(obj3.useState(false), 2);
   const items1 = [ConsentStore];
-  const obj4Result = closure_8((submitting) => submitting.submitting);
+  const obj4Result = state((submitting) => submitting.submitting);
   const tmp2Result = require("get initialized");
   const stateFromStores = tmp2Result.useStateFromStores(items1, () => ConsentStore.getAuthenticationConsentRequired());
-  const obj4Result2 = closure_8((errors) => errors.errors);
-  let message = context(tmp3[18])("consent", obj4Result2);
+  const obj4Result2 = state((errors) => errors.errors);
+  let message = context(tmp3[16])("consent", obj4Result2);
   if (message == null) {
     message = obj4Result2.message;
   }
-  const tmp18Result = context(tmp3[20]);
+  const tmp18Result = context(tmp3[17]);
   const tmp2Result3 = require("RegistrationStepsUtils");
   tmp18Result(tmp2Result3.getPreviousRegistrationTransitionStep(AuthStates.AGE_GATE));
   const items2 = [context];
@@ -374,19 +131,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   const obj5 = { style: tmp.page, children: closure_13(tmp18Result4, obj6) };
   obj6 = { headerText: intl.string(require("intl").t.NgL2GX), contentStyle: tmp.flexGrow, children: items3 };
   const tmp23 = !tmp22;
-  tmp18Result4 = context(tmp3[28]);
-  intl = tmp2(tmp3[22]).intl;
+  tmp18Result4 = context(tmp3[20]);
+  intl = tmp2(tmp3[21]).intl;
   const obj7 = { style: tmp.inputGroup, children: closure_12(Input, obj8) };
   obj8 = { label: intl2.string(require("intl").t.xNpFJ6), errorMessage: stringResult, children: closure_12(InputButton, obj9) };
-  Input = tmp2(tmp3[24]).Input;
-  intl2 = tmp2(tmp3[22]).intl;
+  Input = tmp2(tmp3[22]).Input;
+  intl2 = tmp2(tmp3[21]).intl;
   stringResult = null;
   const tmp25 = closure_14;
   if (!tmp22) {
     stringResult = null;
     if (null != birthday) {
-      const intl3 = tmp2(tmp3[22]).intl;
-      stringResult = intl3.string(tmp2(tmp3[22]).t.udnqh6);
+      const intl3 = tmp2(tmp3[21]).intl;
+      stringResult = intl3.string(tmp2(tmp3[21]).t.udnqh6);
     }
   }
   let formatResult;
@@ -396,15 +153,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   }
   obj9 = {
     value: formatResult,
-    text: module_2047.format("L"),
+    text: module_2044.format("L"),
     onPress() {
       return ConsentStore(true);
     },
     accessibilityLabel: intl4.string(require("intl").t.xNpFJ6),
     accessibilityHint: intl5.string(require("intl").t["hZaF/O"])
   };
-  intl4 = tmp2(tmp3[22]).intl;
-  intl5 = tmp2(tmp3[22]).intl;
+  intl4 = tmp2(tmp3[21]).intl;
+  intl5 = tmp2(tmp3[21]).intl;
   items3 = [closure_12(closure_5, obj7), , , ];
   const obj10 = {
     consentRequired: Boolean(stateFromStores),
@@ -413,7 +170,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
       return closure_5((arg0) => !arg0);
     }
   };
-  const tmp18Result5 = context(tmp3[25]);
+  const tmp18Result5 = context(tmp3[24]);
   items3[1] = closure_12(tmp18Result5, obj10);
   const obj11 = { style: tmp.button, children: closure_12(Button, obj12) };
   obj12 = {
@@ -437,15 +194,15 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
     },
     text: intl6.string(require("intl").t["825cFy"])
   };
-  Button = tmp2(tmp3[26]).Button;
-  intl6 = tmp2(tmp3[22]).intl;
+  Button = tmp2(tmp3[25]).Button;
+  intl6 = tmp2(tmp3[21]).intl;
   items3[2] = closure_12(closure_5, obj11);
   let tmp26Result = null;
   if (null != message) {
     tmp26Result = null;
     if ("" !== message) {
       const obj13 = { children: message };
-      tmp26Result = tmp26(tmp18(tmp3[27]), obj13);
+      tmp26Result = tmp26(tmp18(tmp3[26]), obj13);
     }
   }
   items3[3] = tmp26Result;
@@ -461,18 +218,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
     minimumDate,
     onConfirm(arg0) {
       ConsentStore(false);
-      closure_3(module_2047(arg0));
+      closure_3(module_2044(arg0));
     },
     onDateChange(date1) {
-      closure_3(module_2047(date1));
+      closure_3(module_2044(date1));
     },
     onCancel() {
       return ConsentStore(false);
     },
     buttonColor: tmp.datePickerButton.color
   };
-  const tmp18Result6 = context(tmp3[30]);
-  intl7 = tmp2(tmp3[22]).intl;
+  const tmp18Result6 = context(tmp3[27]);
+  intl7 = tmp2(tmp3[21]).intl;
   str3 = "dark";
   const tmp2Result4 = require("shared");
   if (tmp2Result4.isThemeLight(theme)) {
@@ -485,7 +242,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RegisterAgeG
   const obj15 = { children: items4 };
   items4[1] = closure_12(tmp18Result6, obj14);
   return closure_13(tmp25, obj15);
-});
-let result = size.fileFinishedImporting("modules/auth/native/components/RegisterAgeGate.tsx");
-
-export default tmp5;
+};

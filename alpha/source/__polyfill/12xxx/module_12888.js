@@ -1,42 +1,14 @@
 // Module ID: 12888
 // Function ID: 12889
-// Dependencies: [12860]
-// Exports: handleCallbackErrors
+// Dependencies: [12889, 12890, 12891, 12892, 12893]
 
 // Module 12888
-import _mod12860 from "module_12860" /* 12860 */;
+import _mod12889 from "module_12889" /* 12889 */;
+import tokenize from "tokenize" /* 12890 */;
+import _mod12891 from "module_12891" /* 12891 */;
+import _mod12892 from "module_12892" /* 12892 */;
+import tokenize2 from "tokenize" /* 12893 */;
 
+({ "font-face": _mod12889, import: tokenize, media: _mod12891, page: _mod12892, supports: tokenize2 });
 
-export function handleCallbackErrors(fn, fn2) {
-  function maybeHandlePromiseRejection(promise, fn2, fn) {
-    let closure_0 = fn2;
-    let closure_1 = fn;
-    const obj = _mod12860;
-    if (obj.isThenable(promise)) {
-      return promise.then((result) => {
-        closure_1();
-        return result;
-      }, (arg0) => {
-        closure_0(arg0);
-        closure_1();
-        throw arg0;
-      });
-    } else {
-      fn();
-      return promise;
-    }
-  }
-  fn = arg2;
-  if (arg2 === undefined) {
-    fn = function t() {
-
-    };
-  }
-  try {
-    return maybeHandlePromiseRejection(fn(), fn2, fn);
-  } catch (tmp2) {
-    fn2(tmp2);
-    fn();
-    throw tmp2;
-  }
-}
+export default { "font-face": _mod12889, import: tokenize, media: _mod12891, page: _mod12892, supports: tokenize2 };

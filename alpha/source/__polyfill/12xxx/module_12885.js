@@ -1,29 +1,12 @@
 // Module ID: 12885
 // Function ID: 12886
-// Dependencies: [12880]
-// Exports: hasTracingEnabled
+// Dependencies: [12883, 12886, 12887]
 
 // Module 12885
-import _mod12880 from "module_12880" /* 12880 */;
+import defaultRecognizer from "defaultRecognizer" /* 12883 */;
+import _mod12886 from "module_12886" /* 12886 */;
+import tokenize from "tokenize" /* 12887 */;
 
+({ getNode: defaultRecognizer, expression: _mod12886, var: tokenize });
 
-export function hasTracingEnabled(tracesSampler) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
-    }
-  }
-  let tmp = tracesSampler;
-  const obj = _mod12880;
-  const client = obj.getClient();
-  if (!tracesSampler) {
-    tmp = client && client.getOptions();
-    client && client.getOptions();
-  }
-  let tmp3 = tmp;
-  if (tmp3) {
-    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
-    tmp3 = enableTracing;
-  }
-  return tmp3;
-}
+export default { getNode: defaultRecognizer, expression: _mod12886, var: tokenize };

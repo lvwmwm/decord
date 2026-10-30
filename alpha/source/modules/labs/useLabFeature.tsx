@@ -1,56 +1,23 @@
-// Module ID: 8522
-// Function ID: 8523
+// Module ID: 8556
+// Function ID: 8557
 // Name: useLabFeature
-// Dependencies: [8520, 558, 576, 504, 2]
+// Dependencies: [8554, 504, 2]
+// Exports: default
 
-// Module 8522 (useLabFeature)
-import LabFeatureStore from "LabFeatureStore" /* 8520 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8556 (useLabFeature)
+import LabFeatureStore from "LabFeatureStore" /* 8554 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLabFeature(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LabFeatureStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return LabFeatureStore.get(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useLabFeature(arg0) {
+const result = size.fileFinishedImporting("modules/labs/useLabFeature.tsx");
+
+export default function useLabFeature(arg0) {
   let closure_0;
   _require = arg0;
   const items = [LabFeatureStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => LabFeatureStore.get(closure_0), items1);
-});
-const result = size.fileFinishedImporting("modules/labs/useLabFeature.tsx");
-
-export default tmp2;
+};

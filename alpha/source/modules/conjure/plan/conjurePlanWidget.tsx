@@ -1,22 +1,21 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12695
+// Function ID: 12696
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2066, 6831, 11891, 12544, 12545, 11852, 558, 576, 12290, 504, 2]
+// Dependencies: [32, 19, 2063, 6838, 12079, 12696, 12697, 12045, 12453, 504, 2]
+// Exports: useConjurePlanWidget
 
-// Module 12543 (conjurePlanWidget)
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 11852 */;
-import _mod11891 from "module_11891" /* 11891 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12544 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12545 */;
+// Module 12695 (conjurePlanWidget)
+import _mod12079 from "module_12079" /* 12079 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12696 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12697 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6838 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_5, dependencyMap, map;
+let _require, map;
 
 function withImageAssets(value_type) {
   let tmp = value_type;
@@ -65,7 +64,7 @@ function previewSurface(components) {
   }
   return { layout: components.layout, components: obj };
 }
-function sampleValues(widget_config, sample_data, arg2) {
+function sampleValues(surfaces, sample_data, arg2) {
   let first;
   let tmp8;
   function dataBindings(surfaces) {
@@ -106,7 +105,7 @@ function sampleValues(widget_config, sample_data, arg2) {
   const obj2 = {};
   sample_data = sample_data.sample_data;
   let _Object = Object;
-  const obj = dataBindings(widget_config);
+  const obj = dataBindings(surfaces);
   if (sample_data == null) {
     sample_data = {};
   }
@@ -120,19 +119,19 @@ function sampleValues(widget_config, sample_data, arg2) {
       let _String = String;
       let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod11891.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod12079.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod11891.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod12079.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod11891.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod12079.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }
@@ -145,284 +144,32 @@ function previewAsset(key) {
   size = { width: v256, height: v256, content_type: "image/png", is_animated: false };
   return obj;
 }
-function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, arg2, stateFromStores) {
-  let keys;
-  let obj3;
-  let tmp6;
-  let tmp7;
-  let closure_0 = arg2;
-  const obj = {};
-  const entries = Object.entries(widget_config.surfaces);
-  const tmp2 = entries[Symbol.iterator]();
-  while (tmp2 !== undefined) {
-    let tmp5 = _slicedToArray(tmp3, 2);
-    [tmp6, tmp7] = tmp5;
-    if (null != tmp7) {
-      obj[tmp6] = previewSurface(tmp8);
-    }
-    continue;
-  }
-  const applicationWidgetSurfaceConfigsSchema = _mod11891.applicationWidgetSurfaceConfigsSchema;
-  const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
-  if (safeParseResult.success) {
-    const data = safeParseResult.data;
-    let tmp15 = null;
-    if (null != data[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP]) {
-      tmp15 = null;
-      if (null != data[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_BOTTOM]) {
-        const obj2 = { locale: stateFromStores, surfaceConfigs: data, isLoading: false, hasIdentity: true, resolutionContext: obj3 };
-        const _Object = Object;
-        obj3 = {
-          data: sampleValues(widget_config, widget_preview, arg2),
-          applicationAssets: keys.map(previewAsset),
-          getApplicationAssetUrl(arg0) {
-                  let str = closure_0[arg0.key];
-                  if (str == null) {
-                    str = "";
-                  }
-                  return str;
-                },
-          localizedStrings
-        };
-        keys = Object.keys(arg2);
-        tmp15 = obj2;
-      }
-    }
-    return tmp15;
-  } else {
-    return null;
-  }
-}
-const localizedStrings = [];
+let ConjureProjectStore = ConjureProjectStore_mod;
+let closure_6 = [];
 let closure_7 = {};
 let closure_8 = {};
 let c9 = 256;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureWidgetImageSrcs(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let closure_2;
-  _require = arg0;
-  dependencyMap = arg1;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  [, _slicedToArray] = react.useState(closure_7);
-  const obj2 = react;
-  if (cResult[0] === arg1) {
-    let tmp4;
-    let tmp5;
-    if (cResult[1] === arg0) {
-      tmp4 = cResult[2];
-      tmp5 = cResult[3];
-    }
-    const effect = obj2.useEffect(tmp4, tmp5);
-    return tmp3;
-  }
-  const fn = function o() {
-    let obj = closure_1;
-    let _Object = Object;
-    if (closure_1 == null) {
-      obj = {};
-    }
-    const entries1 = entries(obj);
-    if (0 !== entries1.length) {
-      let c0 = false;
-      const allPromises = Promise.all(entries1.map((item) => {
-        const tmp = closure_2(item, 2);
-        _true = tmp[0];
-        const tmp2 = tmp[1];
-        const obj = _true(closure_1[10]);
-        const attachmentUrl = obj.getAttachmentUrl(c0, tmp2.id);
-        return attachmentUrl.then((result) => {
-          const items = [closure_0, result];
-          return items;
-        }, () => null);
-      }));
-      allPromises.then((arr) => {
-        const tmp = c0;
-        if (!tmp) {
-          const _Object = Object;
-          closure_2(Object.fromEntries(arr.filter((item) => null != item)));
-        }
-      }, () => {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanWidget.tsx");
 
-      });
-      return () => {
-        let c0 = true;
-      };
-    }
-  };
-  let items = [arg0, arg1];
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp5 = items;
-  tmp4 = fn;
-}) : (function useConjureWidgetImageSrcs(arg0, arg1) {
-  let closure_2;
-  let first;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  [first, _slicedToArray] = react.useState(closure_7);
-  let items = [arg0, arg1];
-  const effect = react.useEffect(() => {
-    let _true;
-    let obj = closure_1;
-    let _Object = Object;
-    if (closure_1 == null) {
-      obj = {};
-    }
-    const entries1 = entries(obj);
-    if (0 !== entries1.length) {
-      let c0 = false;
-      const allPromises = Promise.all(entries1.map((item) => {
-        let tmp;
-        [, tmp] = item;
-        const obj = _true(closure_1[10]);
-        const attachmentUrl = obj.getAttachmentUrl(c0, tmp.id);
-        return attachmentUrl.then((result) => {
-          const items = [closure_1_0, result];
-          return items;
-        }, () => null);
-      }));
-      allPromises.then((arr) => {
-        const tmp = c0;
-        if (!tmp) {
-          const _Object = Object;
-          closure_2(Object.fromEntries(arr.filter((item) => null != item)));
-        }
-      }, () => {
-
-      });
-      return () => {
-        let c0 = true;
-      };
-    }
-  }, items);
-  return first;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePlanWidget(arg0, arg1) {
-  let closure_0;
-  let locale;
-  let tmp10;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let widget_config;
-  let widget_preview;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(13);
-  ({ widget_config, widget_preview } = arg1);
-  if (undefined === widget_preview) {
-    widget_preview = closure_8;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function u() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ConjureProjectStore];
-    cResult[2] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== arg0) {
-    const fn2 = function j() {
-      const project = ConjureProjectStore.getProject(closure_0);
-      let prop;
-      if (project != null) {
-        prop = project.preview_application_id;
-      }
-      if (prop == null) {
-        let application_id;
-        if (project != null) {
-          application_id = project.application_id;
-        }
-        prop = application_id;
-      }
-      if (prop == null) {
-        prop = null;
-      }
-      return prop;
-    };
-    cResult[3] = arg0;
-    cResult[4] = fn2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp10);
-  const tmp12 = closure_15(arg0, widget_preview.images);
-  if (cResult[5] === widget_config) {
-    if (cResult[6] === tmp12) {
-      if (cResult[7] === stateFromStores) {
-        let tmp13;
-        if (cResult[8] === widget_preview) {
-          tmp13 = cResult[9];
-        }
-        if (cResult[10] === stateFromStores1) {
-          let tmp20;
-          if (cResult[11] === tmp13) {
-            tmp20 = cResult[12];
-          }
-          return tmp20;
-        }
-        let tmp22 = null;
-        if (null != stateFromStores1) {
-          tmp22 = null;
-          if (null != tmp13) {
-            tmp22 = { applicationId: stateFromStores1, rendererProps: tmp13 };
-            const obj2 = { applicationId: stateFromStores1, rendererProps: tmp13 };
-          }
-        }
-        cResult[10] = stateFromStores1;
-        cResult[11] = tmp13;
-        cResult[12] = tmp22;
-        tmp20 = tmp22;
-      }
-    }
-  }
-  let tmp14 = null;
-  if (null != widget_config) {
-    tmp14 = buildConjurePlanWidgetRendererProps(widget_config, widget_preview, tmp12, stateFromStores);
-  }
-  cResult[5] = widget_config;
-  cResult[6] = tmp12;
-  cResult[7] = stateFromStores;
-  cResult[8] = widget_preview;
-  cResult[9] = tmp14;
-  tmp13 = tmp14;
-}) : (function useConjurePlanWidget(arg0, widget_config) {
-  let closure_0;
+export function useConjurePlanWidget(projectId, proposal) {
+  let c2;
+  let closure_5;
   let stateFromStores1;
-  _require = arg0;
-  widget_config = widget_config.widget_config;
-  let widget_preview = widget_config.widget_preview;
+  let tmp4;
+  _require = projectId;
+  const widget_config = proposal.widget_config;
+  let widget_preview = proposal.widget_preview;
   if (undefined === widget_preview) {
     widget_preview = closure_8;
   }
   let obj = require("get initialized");
-  const items = [stateFromStores1];
+  let items = [stateFromStores1];
   const stateFromStores = obj.useStateFromStores(items, () => stateFromStores1.locale);
-  const items1 = [closure_5];
-  const obj2 = require("get initialized");
+  let obj2 = require("get initialized");
+  const items1 = [ConjureProjectStore];
   stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    const project = ConjureProjectStore.getProject(closure_0);
+    const project = ConjureProjectStore.getProject(projectId);
     let prop;
     if (project != null) {
       prop = project.preview_application_id;
@@ -439,17 +186,109 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
     }
     return prop;
   });
-  const tmp3 = closure_15(arg0, widget_preview.images);
-  closure_5 = tmp3;
-  const items2 = [widget_config, widget_preview, tmp3, stateFromStores];
+  const images = widget_preview.images;
+  _require = projectId;
+  c2 = undefined;
+  let tmp3 = widget_preview(stateFromStores.useState(closure_7), 2);
+  [tmp4, c2] = tmp3;
+  const items2 = [projectId, images];
+  const effect = stateFromStores.useEffect(() => {
+    let _true;
+    let obj = images;
+    let _Object = Object;
+    if (images == null) {
+      obj = {};
+    }
+    const entries1 = entries(obj);
+    if (0 !== entries1.length) {
+      let c0 = false;
+      const allPromises = Promise.all(entries1.map((item) => {
+        let tmp;
+        [, tmp] = item;
+        const obj = _true(images[8]);
+        const attachmentUrl = obj.getAttachmentUrl(c0, tmp.id);
+        return attachmentUrl.then((result) => {
+          const items = [closure_1_0, result];
+          return items;
+        }, () => null);
+      }));
+      allPromises.then((arr) => {
+        const tmp = c0;
+        if (!tmp) {
+          const _Object = Object;
+          c2(Object.fromEntries(arr.filter((item) => null != item)));
+        }
+      }, () => {
+
+      });
+      return () => {
+        let c0 = true;
+      };
+    }
+  }, items2);
+  ConjureProjectStore = tmp4;
+  const items3 = [widget_config, widget_preview, tmp4, stateFromStores];
   const memo = stateFromStores.useMemo(() => {
+    let localizedStrings;
+    function buildConjurePlanWidgetRendererProps(widget_config, widget_preview, arg2, stateFromStores) {
+      let keys;
+      let obj3;
+      let tmp6;
+      let tmp7;
+      let closure_0 = arg2;
+      const obj = {};
+      const entries = Object.entries(widget_config.surfaces);
+      const tmp2 = entries[Symbol.iterator]();
+      while (tmp2 !== undefined) {
+        let tmp5 = widget_preview(tmp3, 2);
+        [tmp6, tmp7] = tmp5;
+        if (null != tmp7) {
+          obj[tmp6] = closure_1_11(tmp8);
+        }
+        continue;
+      }
+      const applicationWidgetSurfaceConfigsSchema = projectId(widget_config[4]).applicationWidgetSurfaceConfigsSchema;
+      const safeParseResult = applicationWidgetSurfaceConfigsSchema.safeParse(obj);
+      if (safeParseResult.success) {
+        const data = safeParseResult.data;
+        let tmp15 = null;
+        if (null != data[projectId(undefined, widget_config[7]).ApplicationWidgetConfigSurface.WIDGET_TOP]) {
+          tmp15 = null;
+          if (null != data[projectId(undefined, widget_config[7]).ApplicationWidgetConfigSurface.WIDGET_BOTTOM]) {
+            const obj2 = { locale: stateFromStores, surfaceConfigs: data, isLoading: false, hasIdentity: true, resolutionContext: obj3 };
+            const _Object = Object;
+            obj3 = {
+              data: closure_1_12(widget_config, widget_preview, arg2),
+              applicationAssets: keys.map(closure_1_13),
+              getApplicationAssetUrl(arg0) {
+                      let str = closure_0[arg0.key];
+                      if (str == null) {
+                        str = "";
+                      }
+                      return str;
+                    },
+              localizedStrings
+            };
+            keys = Object.keys(arg2);
+            tmp15 = obj2;
+          }
+        }
+        return tmp15;
+      } else {
+        return null;
+      }
+    }
     let tmp2 = null;
     if (null != widget_config) {
-      tmp2 = buildConjurePlanWidgetRendererProps(tmp, widget_preview, closure_5, stateFromStores);
+      const tmp3 = widget_preview;
+      let tmp4 = ConjureProjectStore;
+      let tmp5 = stateFromStores;
+      const tmp6 = tmp;
+      tmp2 = buildConjurePlanWidgetRendererProps(tmp, widget_preview, ConjureProjectStore, stateFromStores);
     }
     return tmp2;
-  }, items2);
-  const items3 = [stateFromStores1, memo];
+  }, items3);
+  const items4 = [stateFromStores1, memo];
   return stateFromStores.useMemo(() => {
     let tmp2 = null;
     if (null != stateFromStores1) {
@@ -460,9 +299,5 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePl
       }
     }
     return tmp2;
-  }, items3);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanWidget.tsx");
-
-export const useConjurePlanWidget = tmp2;
+  }, items4);
+}

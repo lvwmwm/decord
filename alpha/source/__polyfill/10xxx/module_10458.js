@@ -1,11 +1,10 @@
 // Module ID: 10458
 // Function ID: 10459
-// Dependencies: [41, 42, 93, 95, 98, 10451, 10284, 10285, 10289]
+// Dependencies: [41, 42, 93, 95, 98, 10451, 10310, 10314]
 
 // Module 10458
-import EmptyDuration from "EmptyDuration" /* 10284 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10285 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10289 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10310 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10314 */;
 import _mod10451 from "module_10451" /* 10451 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
@@ -28,32 +27,29 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod10451.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod10451.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
-class ENTimeUnitAgoFormatParser {
-  constructor(strictMode) {
+class ESTimeUnitWithinFormatParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    _classCallCheck(this, ESTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(ESTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+    const regExp = new RegExp("(?:en|por|durante|de|dentro de)\\s*(" + _mod10451.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    return regExp;
   }
 };
 const items = [
@@ -62,11 +58,10 @@ const items = [
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
       const parseDurationResult = _mod10451.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
       const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(ESTimeUnitWithinFormatParser, items);

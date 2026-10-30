@@ -1,34 +1,34 @@
-// Module ID: 5734
-// Function ID: 5735
+// Module ID: 5740
+// Function ID: 5741
 // Name: parseURL
-// Dependencies: [32, 1084, 1086, 5644, 5735, 5736, 1491, 1949, 1386, 5737, 5741, 14683, 6431, 15587, 1383, 5643, 11, 9696, 7574, 1628, 1381, 9243, 1264, 1277, 15588, 2]
+// Dependencies: [32, 1072, 1074, 5650, 5741, 5742, 1486, 1944, 1381, 5743, 5747, 14716, 6438, 15627, 1378, 5649, 11, 9722, 7582, 1623, 1376, 9256, 1253, 1266, 15628, 2]
 // Exports: default
 
-// Module 5734 (parseURL)
+// Module 5740 (parseURL)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import urlParseDefault from "urlParse" /* 1386 */;
-import _modDef1491 from "module_1491" /* 1491 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import _modDef1949 from "module_1949" /* 1949 */;
-import LinkUtils from "LinkUtils" /* 5643 */;
-import ConversationConstants from "ConversationConstants" /* 5644 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5735 */;
-import findCodedLinks from "findCodedLinks" /* 5737 */;
-import CodedLink from "CodedLink" /* 5741 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6431 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7574 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9243 */;
-import Authorize from "Authorize" /* 9696 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14683 */;
-import QRLoginUtils from "QRLoginUtils" /* 15587 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15588 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import urlParseDefault from "urlParse" /* 1381 */;
+import _modDef1486 from "module_1486" /* 1486 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
+import _modDef1944 from "module_1944" /* 1944 */;
+import LinkUtils from "LinkUtils" /* 5649 */;
+import ConversationConstants from "ConversationConstants" /* 5650 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5741 */;
+import findCodedLinks from "findCodedLinks" /* 5743 */;
+import CodedLink from "CodedLink" /* 5747 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6438 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7582 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9256 */;
+import Authorize from "Authorize" /* 9722 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14716 */;
+import QRLoginUtils from "QRLoginUtils" /* 15627 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 1084 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import PaymentConstants from "PaymentConstants" /* 5736 */;
+import Constants from "Constants" /* 1072 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import PaymentConstants from "PaymentConstants" /* 5742 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -45,7 +45,7 @@ function parseQuery(arg0) {
     const tmp2 = importDefault;
     const _Object = Object;
     const _Object2 = Object;
-    const obj = _modDef1491;
+    const obj = _modDef1486;
     const entries = Object.entries(obj.parse(arg0));
     return fromEntries(entries.map((item) => {
       let tmp;
@@ -133,7 +133,7 @@ export default function parseURL(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = _modDef1949;
+  let obj = _modDef1944;
   const sanitizeUrlResult = obj.sanitizeUrl(arg0);
   if (null == sanitizeUrlResult) {
     const obj3 = { payload: obj4 };
@@ -322,8 +322,8 @@ export default function parseURL(arg0) {
             }
             if (null != pathname.match(re28)) {
               let str5 = query;
-              const parse = _modDef1491.parse;
-              _modDef1491;
+              const parse = _modDef1486.parse;
+              _modDef1486;
               if (query == null) {
                 str5 = "";
               }
@@ -341,8 +341,8 @@ export default function parseURL(arg0) {
             if (null != pathname.match(re27)) {
               let obj43;
               let str27 = query;
-              const parse2 = _modDef1491.parse;
-              _modDef1491;
+              const parse2 = _modDef1486.parse;
+              _modDef1486;
               if (query == null) {
                 str27 = "";
               }
@@ -778,7 +778,7 @@ export default function parseURL(arg0) {
                   const MOBILE_WEB_HANDOFF_FAILURE = constants.MOBILE_WEB_HANDOFF_FAILURE;
                   AnalyticsUtilsDefault;
                   const obj93 = { fingerprint: fingerprint3 };
-                  tmp84Result = tmp84(1277);
+                  tmp84Result = tmp84(1266);
                   track(MOBILE_WEB_HANDOFF_FAILURE, obj92, obj93);
                   const _Error = Error;
                   const self = this;

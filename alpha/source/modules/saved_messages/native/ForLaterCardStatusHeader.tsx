@@ -1,23 +1,21 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 11156
+// Function ID: 11157
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 5005, 587, 558, 576, 5271, 2]
+// Dependencies: [17, 21, 5009, 575, 5619, 2]
+// Exports: ForLaterCardStatusHeader
 
-// Module 14292 (ForLaterCardStatusHeader)
+// Module 11156 (ForLaterCardStatusHeader)
 import react_native from "react-native" /* 17 */;
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let obj3;
-let tmp;
-const Text_Text = tmp(5271);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
@@ -26,97 +24,9 @@ obj2 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefa
 createStyles = createStyles.createStyles;
 obj3 = { padding: 6, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT };
 let closure_6 = createStyles(obj);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCardStatusHeader(arg0) {
-  let IconComponent;
-  let actions;
-  let isCritical;
-  let items;
-  let label;
-  let lineClamp;
-  const obj = react;
-  const cResult = obj.c(19);
-  ({ IconComponent, label, isCritical, lineClamp, actions } = arg0);
-  const tmp5 = closure_6();
-  const colors = nativeDefault.colors;
-  const tmp6 = undefined !== isCritical && isCritical ? colors.TEXT_FEEDBACK_CRITICAL : colors.INTERACTIVE_TEXT_DEFAULT;
-  if (cResult[0] === IconComponent) {
-    let tmp7;
-    if (cResult[1] === tmp6) {
-      tmp7 = cResult[2];
-    }
-    if (cResult[3] === tmp5.icon) {
-      let tmp9;
-      if (cResult[4] === tmp7) {
-        tmp9 = cResult[5];
-      }
-      let str = "mobile-text-heading-primary";
-      if (undefined !== isCritical && isCritical) {
-        str = "text-feedback-critical";
-      }
-      if (cResult[6] === label) {
-        if (cResult[7] === lineClamp) {
-          if (cResult[8] === tmp5.label) {
-            let tmp13;
-            if (cResult[9] === str) {
-              tmp13 = cResult[10];
-            }
-            if (cResult[11] === actions) {
-              let tmp16;
-              if (cResult[12] === tmp5.actionsContainer) {
-                tmp16 = cResult[13];
-              }
-              if (cResult[14] === tmp5.container) {
-                if (cResult[15] === tmp9) {
-                  if (cResult[16] === tmp13) {
-                    let tmp20;
-                    if (cResult[17] === tmp16) {
-                      tmp20 = cResult[18];
-                    }
-                    return tmp20;
-                  }
-                }
-              }
-              const obj2 = { style: tmp5.container, children: items };
-              items = [tmp9, tmp13, tmp16];
-              const tmp23 = hasOwnProperty(View, obj2);
-              cResult[14] = tmp5.container;
-              cResult[15] = tmp9;
-              cResult[16] = tmp13;
-              cResult[17] = tmp16;
-              cResult[18] = tmp23;
-              tmp20 = tmp23;
-            }
-            const obj3 = { style: tmp5.actionsContainer, children: actions };
-            const tmp19 = React3(View, obj3);
-            cResult[11] = actions;
-            cResult[12] = tmp5.actionsContainer;
-            cResult[13] = tmp19;
-            tmp16 = tmp19;
-          }
-        }
-      }
-      const obj4 = { variant: "text-md/semibold", color: str, style: tmp5.label, lineClamp, children: label };
-      const tmp15 = React3(Text_Text.Text, obj4);
-      cResult[6] = label;
-      cResult[7] = lineClamp;
-      cResult[8] = tmp5.label;
-      cResult[9] = str;
-      cResult[10] = tmp15;
-      tmp13 = tmp15;
-    }
-    const obj5 = { style: tmp5.icon, children: tmp7 };
-    const tmp12 = React3(View, obj5);
-    cResult[3] = tmp5.icon;
-    cResult[4] = tmp7;
-    cResult[5] = tmp12;
-    tmp9 = tmp12;
-  }
-  const tmp8 = React3(IconComponent, { size: "xxs", color: tmp6 });
-  cResult[0] = IconComponent;
-  cResult[1] = tmp6;
-  cResult[2] = tmp8;
-  tmp7 = tmp8;
-}) : (function ForLaterCardStatusHeader(isCritical) {
+const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardStatusHeader.tsx");
+
+export function ForLaterCardStatusHeader(isCritical) {
   let INTERACTIVE_TEXT_DEFAULT;
   let IconComponent;
   let actions;
@@ -150,7 +60,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForLaterCa
   const obj4 = { style: tmp.actionsContainer, children: actions };
   items[2] = React3(View, obj4);
   return tmp2(View, obj);
-});
-const result = size.fileFinishedImporting("modules/saved_messages/native/ForLaterCardStatusHeader.tsx");
-
-export const ForLaterCardStatusHeader = tmp4;
+}

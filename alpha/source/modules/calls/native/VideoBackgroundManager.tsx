@@ -1,11 +1,11 @@
-// Module ID: 8781
-// Function ID: 8782
+// Module ID: 8815
+// Function ID: 8816
 // Name: VideoBackgroundManager
-// Dependencies: [4908, 7274, 2]
+// Dependencies: [4912, 7281, 2]
 
-// Module 8781 (VideoBackgroundManager)
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+// Module 8815 (VideoBackgroundManager)
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 class VideoBackgroundManager extends AutomaticLifecycleManager {

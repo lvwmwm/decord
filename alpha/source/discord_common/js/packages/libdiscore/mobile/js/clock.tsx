@@ -1,11 +1,11 @@
-// Module ID: 565
-// Function ID: 566
+// Module ID: 1365
+// Function ID: 1366
 // Name: clock
-// Dependencies: [564, 2]
+// Dependencies: [1364, 2]
 // Exports: monotonicNowMs
 
-// Module 565 (clock)
-import global_types from "global_types" /* 564 */;
+// Module 1365 (clock)
+import global_types from "global_types" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdiscore/mobile/js/clock.tsx");

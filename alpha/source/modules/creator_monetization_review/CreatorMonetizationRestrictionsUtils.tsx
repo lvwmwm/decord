@@ -1,14 +1,14 @@
-// Module ID: 4929
-// Function ID: 4930
+// Module ID: 4933
+// Function ID: 4934
 // Name: CreatorMonetizationRestrictionsUtils
-// Dependencies: [4930, 4879, 4931, 1084, 2]
+// Dependencies: [4934, 4880, 4935, 1072, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4929 (CreatorMonetizationRestrictionsUtils)
-import Constants from "Constants" /* 1084 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4930 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4931 */;
-import GuildStore from "GuildStore" /* 4879 */;
+// Module 4933 (CreatorMonetizationRestrictionsUtils)
+import Constants from "Constants" /* 1072 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4934 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4935 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 const GuildRoleSubscriptionsStore = GuildRoleSubscriptionsStore2;
@@ -46,8 +46,8 @@ export function shouldHideGuildPurchaseEntryPoints(guildId) {
     return flag;
   }
 }
-export function isRestrictedFromUpdatingCreatorMonetizationSettings(restrictions) {
-  const hasItem = null != restrictions && restrictions.includes(constants.SETTINGS_READ_ONLY);
+export function isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray) {
+  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.SETTINGS_READ_ONLY);
   return hasItem;
 }
 export function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
@@ -74,7 +74,7 @@ export function shouldRestrictUpdatingCreatorMonetizationSettings(id) {
     return flag;
   }
 }
-export function isRestrictedFromMonetizationReapplication(restrictions) {
-  const hasItem = null != restrictions && restrictions.includes(constants.REAPPLICATION_DISABLED);
+export function isRestrictedFromMonetizationReapplication(stateFromStoresArray) {
+  const hasItem = null != stateFromStoresArray && stateFromStoresArray.includes(constants.REAPPLICATION_DISABLED);
   return hasItem;
 }

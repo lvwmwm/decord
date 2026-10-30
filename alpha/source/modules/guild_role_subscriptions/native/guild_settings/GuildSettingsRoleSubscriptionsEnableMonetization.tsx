@@ -1,69 +1,21 @@
-// Module ID: 19812
-// Function ID: 19813
+// Module ID: 19875
+// Function ID: 19876
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 4879, 21, 558, 576, 504, 19748, 18501, 1125, 2]
+// Dependencies: [19, 4880, 21, 504, 19811, 18560, 1114, 2]
+// Exports: default
 
-// Module 19812 (GuildSettingsRoleSubscriptionsEnableMonetization)
+// Module 19875 (GuildSettingsRoleSubscriptionsEnableMonetization)
 import Fragment from "Fragment" /* 21 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 18501 */;
-import PlaceholderDefault from "Placeholder" /* 19748 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 18560 */;
+import PlaceholderDefault from "Placeholder" /* 19811 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSubscriptionEnableMonetization(guildId) {
-  let first;
-  let tmp6;
-  let tmp7;
-  const obj = guildId(576);
-  const cResult = obj.c(5);
-  guildId = guildId.guildId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function s() {
-      return GuildStore.getGuild(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = guildId(504);
-  if (null == tmpResult.useStateFromStores(first, tmp6)) {
-    let tmp12;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp15 = jsx(PlaceholderDefault, {});
-      cResult[3] = tmp15;
-      tmp12 = tmp15;
-    } else {
-      tmp12 = cResult[3];
-    }
-    tmp7 = tmp12;
-  } else {
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      UnavailableNoticeDefault;
-      const intl = tmp(1125).intl;
-      const intl2 = tmp(1125).intl;
-      const tmp11 = <tmp10 brightTitle title={intl.string(guildId(1125).t.KeeWp0)} description={intl2.string(guildId(1125).t["tJLG+L"])} />;
-      cResult[4] = tmp11;
-      tmp7 = tmp11;
-    } else {
-      tmp7 = cResult[4];
-    }
-  }
-  return tmp7;
-}) : (function GuildSubscriptionEnableMonetization(guildId) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEnableMonetization.tsx");
+
+export default function GuildSubscriptionEnableMonetization(guildId) {
   let tmp5;
   guildId = guildId.guildId;
   const items = [GuildStore];
@@ -72,12 +24,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSubsc
     tmp5 = jsx(PlaceholderDefault, {});
   } else {
     UnavailableNoticeDefault;
-    const intl = tmp(1125).intl;
-    const intl2 = tmp(1125).intl;
-    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1125).t.KeeWp0)} description={intl2.string(guildId(1125).t["tJLG+L"])} />;
+    const intl = tmp(1114).intl;
+    const intl2 = tmp(1114).intl;
+    tmp5 = <tmp8 brightTitle title={intl.string(guildId(1114).t.KeeWp0)} description={intl2.string(guildId(1114).t["tJLG+L"])} />;
   }
   return tmp5;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsEnableMonetization.tsx");
-
-export default tmp3;
+};

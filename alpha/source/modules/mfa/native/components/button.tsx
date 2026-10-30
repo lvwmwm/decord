@@ -1,38 +1,20 @@
-// Module ID: 17547
-// Function ID: 17548
+// Module ID: 17604
+// Function ID: 17605
 // Name: button
-// Dependencies: [19, 21, 558, 576, 5281, 2]
+// Dependencies: [19, 21, 5629, 2]
+// Exports: default
 
-// Module 17547 (button)
+// Module 17604 (button)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const components_Button_Button = tmp(5281);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MFAButton(arg0) {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const Button = components_Button_Button.Button;
-    const merged = Object.assign(arg0);
-    const tmp9 = <Button size="lg" />;
-    cResult[0] = arg0;
-    cResult[1] = tmp9;
-    tmp4 = tmp9;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function MFAButton(arg0) {
+const result = size.fileFinishedImporting("modules/mfa/native/components/button.tsx");
+
+export default function MFAButton(arg0) {
   const Button = components_Button_Button.Button;
   const merged = Object.assign(arg0);
   return <Button size="lg" />;
-});
-const result = size.fileFinishedImporting("modules/mfa/native/components/button.tsx");
-
-export default tmp3;
+};

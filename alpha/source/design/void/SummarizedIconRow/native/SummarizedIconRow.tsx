@@ -1,24 +1,32 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15936
+// Function ID: 15937
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 2]
+// Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 15896 (SummarizedIconRow)
+// Module 15936 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
+import Text_Text from "Text/Text" /* 5619 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let obj4;
 let obj5;
-let tmp;
-const Text_Text = tmp(5271);
+function OverflowSquircle(arg0) {
+  let overflow;
+  let style;
+  ({ overflow, style } = arg0);
+  const tmp = closure_4();
+  const items = [tmp.overflowSquircleWrap, style];
+  ({ variant: "text-xs/medium", children: "+" + overflow });
+  const Text = Text_Text.Text;
+  return <View style={items}>{null}</View>;
+}
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -30,418 +38,9 @@ obj4 = { margin: 2, paddingHorizontal: 8, height: 32, alignItems: "center", just
 obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: 17 };
 ({ backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 2, paddingHorizontal: 8, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 15 });
 let closure_4 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowSquircle(style) {
-  const obj = react2;
-  const cResult = obj.c(11);
-  style = style.style;
-  const overflow = style.overflow;
-  const tmp4 = closure_4();
-  if (cResult[0] === style) {
-    let tmp5;
-    let tmp8;
-    if (cResult[1] === tmp4.overflowSquircleWrap) {
-      tmp5 = cResult[2];
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "+" + overflow;
-    if (cResult[3] !== combined) {
-      const tmp10 = jsx(Text_Text.Text, { variant: "text-xs/medium", children: combined });
-      cResult[3] = combined;
-      cResult[4] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp4.overflowSquircle) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp5) {
-        let tmp15;
-        if (cResult[9] === tmp11) {
-          tmp15 = cResult[10];
-        }
-        return tmp15;
-      }
-      const tmp18 = <View style={tmp5}>{tmp11}</View>;
-      cResult[8] = tmp5;
-      cResult[9] = tmp11;
-      cResult[10] = tmp18;
-      tmp15 = tmp18;
-    }
-    const tmp14 = <View style={tmp4.overflowSquircle}>{tmp8}</View>;
-    cResult[5] = tmp4.overflowSquircle;
-    cResult[6] = tmp8;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  }
-  const items = [tmp4.overflowSquircleWrap, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.overflowSquircleWrap;
-  cResult[2] = items;
-  tmp5 = items;
-}) : (function OverflowSquircle(arg0) {
-  let overflow;
-  let style;
-  ({ overflow, style } = arg0);
-  const tmp = closure_4();
-  const items = [tmp.overflowSquircleWrap, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
-  const Text = Text_Text.Text;
-  return <View style={items}>{null}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowText(style) {
-  const obj = react2;
-  const cResult = obj.c(8);
-  style = style.style;
-  const overflow = style.overflow;
-  const tmp4 = closure_4();
-  if (cResult[0] === style) {
-    let tmp5;
-    let tmp8;
-    if (cResult[1] === tmp4.overflowTextOnly) {
-      tmp5 = cResult[2];
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "+" + overflow;
-    if (cResult[3] !== combined) {
-      const tmp10 = jsx(Text_Text.Text, { variant: "text-xs/medium", children: combined });
-      cResult[3] = combined;
-      cResult[4] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-    const tmp14 = <View style={tmp5}>{tmp8}</View>;
-    cResult[5] = tmp5;
-    cResult[6] = tmp8;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  }
-  const items = [tmp4.overflowTextOnly, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.overflowTextOnly;
-  cResult[2] = items;
-  tmp5 = items;
-}) : (function OverflowText(arg0) {
-  let overflow;
-  let style;
-  ({ overflow, style } = arg0);
-  const items = [closure_4().overflowTextOnly, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
-  const Text = Text_Text.Text;
-  return <View style={items}>{null}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowTextSmall(style) {
-  const obj = react2;
-  const cResult = obj.c(8);
-  style = style.style;
-  const overflow = style.overflow;
-  const tmp4 = closure_4();
-  if (cResult[0] === style) {
-    let tmp5;
-    let tmp8;
-    if (cResult[1] === tmp4.overflowTextOnly) {
-      tmp5 = cResult[2];
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "+" + overflow;
-    if (cResult[3] !== combined) {
-      const tmp10 = jsx(Text_Text.Text, { variant: "text-xxs/medium", children: combined });
-      cResult[3] = combined;
-      cResult[4] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
-    }
-    const tmp14 = <View style={tmp5}>{tmp8}</View>;
-    cResult[5] = tmp5;
-    cResult[6] = tmp8;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  }
-  const items = [tmp4.overflowTextOnly, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.overflowTextOnly;
-  cResult[2] = items;
-  tmp5 = items;
-}) : (function OverflowTextSmall(arg0) {
-  let overflow;
-  let style;
-  ({ overflow, style } = arg0);
-  const items = [closure_4().overflowTextOnly, style];
-  ({ variant: "text-xxs/medium", children: "+" + overflow });
-  const Text = Text_Text.Text;
-  return <View style={items}>{null}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function OverflowCircle(style) {
-  const obj = react2;
-  const cResult = obj.c(11);
-  style = style.style;
-  const overflow = style.overflow;
-  const tmp4 = closure_4();
-  if (cResult[0] === style) {
-    let tmp5;
-    let tmp8;
-    if (cResult[1] === tmp4.overflowCircleWrap) {
-      tmp5 = cResult[2];
-    }
-    const _HermesInternal = HermesInternal;
-    const combined = "+" + overflow;
-    if (cResult[3] !== combined) {
-      const tmp10 = jsx(Text_Text.Text, { variant: "text-xs/medium", children: combined });
-      cResult[3] = combined;
-      cResult[4] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp4.overflowCircle) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp5) {
-        let tmp15;
-        if (cResult[9] === tmp11) {
-          tmp15 = cResult[10];
-        }
-        return tmp15;
-      }
-      const tmp18 = <View style={tmp5}>{tmp11}</View>;
-      cResult[8] = tmp5;
-      cResult[9] = tmp11;
-      cResult[10] = tmp18;
-      tmp15 = tmp18;
-    }
-    const tmp14 = <View style={tmp4.overflowCircle}>{tmp8}</View>;
-    cResult[5] = tmp4.overflowCircle;
-    cResult[6] = tmp8;
-    cResult[7] = tmp14;
-    tmp11 = tmp14;
-  }
-  const items = [tmp4.overflowCircleWrap, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.overflowCircleWrap;
-  cResult[2] = items;
-  tmp5 = items;
-}) : (function OverflowCircle(arg0) {
-  let overflow;
-  let style;
-  ({ overflow, style } = arg0);
-  const tmp = closure_4();
-  const items = [tmp.overflowCircleWrap, style];
-  ({ variant: "text-xs/medium", children: "+" + overflow });
-  const Text = Text_Text.Text;
-  return <View style={items}>{null}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummarizedIconRow(offsetAmount) {
-  let items;
-  let max;
-  let overflowComponent;
-  let renderItem;
-  let style;
-  let obj = items(renderItem[6]);
-  const cResult = obj.c(28);
-  items = offsetAmount.items;
-  ({ max, renderItem } = offsetAmount);
-  offsetAmount = offsetAmount.offsetAmount;
-  const iconWrapperStyle = offsetAmount.iconWrapperStyle;
-  const overflowStyle = offsetAmount.overflowStyle;
-  ({ style, overflowComponent } = offsetAmount);
-  let num = 8;
-  if (undefined !== max) {
-    num = max;
-  }
-  if (undefined === overflowComponent) {
-    overflowComponent = num;
-  }
-  const tmp2 = overflowStyle();
-  const iconWrapper = tmp2;
-  const bound = Math.max(items.length - num, 0);
-  if (cResult[0] === iconWrapperStyle) {
-    if (cResult[1] === items.length) {
-      if (cResult[2] === num) {
-        if (cResult[3] === offsetAmount) {
-          if (cResult[4] === renderItem) {
-            let tmp4;
-            if (cResult[5] === tmp2.iconWrapper) {
-              tmp4 = cResult[6];
-            }
-            let closure_9 = tmp4;
-            if (cResult[7] === style) {
-              let tmp5;
-              let tmp7;
-              if (cResult[8] === tmp2.container) {
-                tmp5 = cResult[9];
-              }
-              if (cResult[10] === overflowComponent) {
-                if (cResult[11] === items) {
-                  if (cResult[12] === num) {
-                    if (cResult[13] === offsetAmount) {
-                      if (cResult[14] === bound) {
-                        if (cResult[15] === overflowStyle) {
-                          if (cResult[16] === tmp4) {
-                            tmp7 = cResult[17];
-                          }
-                          if (cResult[25] === tmp5) {
-                            let tmp10;
-                            if (cResult[26] === tmp7) {
-                              tmp10 = cResult[27];
-                            }
-                            return tmp10;
-                          }
-                          class I {
-                            constructor(arg0, arg1) {
-                              if (arg1 < num) {
-                                if (arg1 === tmp - 1) {
-                                  let tmp5;
-                                  if (bound > 0) {
-                                    items = [{ marginLeft: offsetAmount }, overflowStyle];
-                                    tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
-                                    const obj2 = { marginLeft: offsetAmount };
-                                  }
-                                  return tmp5;
-                                }
-                                tmp5 = closure_9(arg0, arg1);
-                              }
-                            }
-                          }
-                          let obj2 = { style: tmp5, children: tmp7 };
-                          const tmp12 = iconWrapperStyle(offsetAmount, obj2);
-                          cResult[25] = tmp5;
-                          cResult[26] = tmp7;
-                          cResult[27] = tmp12;
-                          tmp10 = tmp12;
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-              if (cResult[18] === overflowComponent) {
-                if (cResult[19] === num) {
-                  if (cResult[20] === offsetAmount) {
-                    if (cResult[21] === bound) {
-                      if (cResult[22] === overflowStyle) {
-                        let tmp8;
-                        if (cResult[23] === tmp4) {
-                          tmp8 = cResult[24];
-                        }
-                        const mapped = items.map(tmp8);
-                        class I {
-                          constructor(arg0, arg1) {
-                            if (arg1 < num) {
-                              if (arg1 === tmp - 1) {
-                                let tmp5;
-                                if (bound > 0) {
-                                  items = [{ marginLeft: offsetAmount }, overflowStyle];
-                                  tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
-                                  const obj2 = { marginLeft: offsetAmount };
-                                }
-                                return tmp5;
-                              }
-                              tmp5 = closure_9(arg0, arg1);
-                            }
-                          }
-                        }
-                        cResult[11] = items;
-                        cResult[12] = num;
-                        cResult[13] = offsetAmount;
-                        cResult[14] = bound;
-                        cResult[15] = overflowStyle;
-                        cResult[16] = tmp4;
-                        cResult[17] = mapped;
-                        tmp7 = mapped;
-                      }
-                    }
-                  }
-                }
-              }
-              class I {
-                constructor(arg0, arg1) {
-                  if (arg1 < num) {
-                    if (arg1 === tmp - 1) {
-                      let tmp5;
-                      if (bound > 0) {
-                        items = [{ marginLeft: offsetAmount }, overflowStyle];
-                        tmp5 = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
-                        const obj2 = { marginLeft: offsetAmount };
-                      }
-                      return tmp5;
-                    }
-                    tmp5 = closure_9(arg0, arg1);
-                  }
-                }
-              }
-              cResult[18] = overflowComponent;
-              cResult[19] = num;
-              cResult[20] = offsetAmount;
-              cResult[21] = bound;
-              cResult[22] = overflowStyle;
-              cResult[23] = tmp4;
-              cResult[24] = I;
-              tmp8 = I;
-            }
-            tmp6[0] = tmp2.container;
-            tmp6[1] = style;
-            cResult[7] = style;
-            cResult[8] = tmp2.container;
-            cResult[9] = tmp6;
-            tmp5 = tmp6;
-          }
-        }
-      }
-    }
-  }
-  function renderListItem(arg0, arg1) {
-    let tmp4Result = null;
-    if (arg0) {
-      let obj;
-      items = [iconWrapper.iconWrapper, iconWrapperStyle, ];
-      const tmp4 = jsx;
-      const tmp5 = View;
-      if (0 !== arg1) {
-        obj = { marginLeft: offsetAmount };
-        const obj2 = { marginLeft: offsetAmount };
-      } else {
-        obj = {};
-      }
-      items[2] = obj;
-      const obj3 = { style: items, children: renderItem(arg0, arg1 === tmp) };
-      tmp4Result = tmp4(tmp5, obj3, arg1);
-    }
-    return tmp4Result;
-  }
-  cResult[0] = iconWrapperStyle;
-  cResult[1] = items.length;
-  cResult[2] = num;
-  cResult[3] = offsetAmount;
-  cResult[4] = renderItem;
-  cResult[5] = tmp2.iconWrapper;
-  cResult[6] = renderListItem;
-  tmp4 = renderListItem;
-}) : (function SummarizedIconRow(max) {
+const result = size.fileFinishedImporting("design/void/SummarizedIconRow/native/SummarizedIconRow.tsx");
+
+export default function SummarizedIconRow(max) {
   let marginLeft;
   let overflowComponent;
   let style;
@@ -450,9 +49,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummarizedIc
   if (num === undefined) {
     num = 8;
   }
-  ({ renderItem: View, offsetAmount: jsx, iconWrapperStyle: closure_4, overflowStyle: closure_5, overflowComponent, style } = max);
+  ({ renderItem: View, offsetAmount: jsx, iconWrapperStyle: closure_4, overflowStyle: OverflowSquircle, overflowComponent, style } = max);
   if (overflowComponent === undefined) {
-    overflowComponent = closure_5;
+    overflowComponent = OverflowSquircle;
   }
   let tmp = closure_4();
   const iconWrapper = tmp;
@@ -464,7 +63,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummarizedIc
       let tmp8Result;
       if (index === tmp - 1) {
         if (closure_8 > 0) {
-          items = [{ marginLeft: jsx }, closure_5];
+          items = [{ marginLeft: jsx }, OverflowSquircle];
           tmp8Result = <overflowComponent key={arg1} style={items} overflow={tmp2 + 1} />;
           const obj3 = { marginLeft: jsx };
         }
@@ -489,10 +88,32 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SummarizedIc
       }
     }
   })}</View>;
-});
-const result = size.fileFinishedImporting("design/void/SummarizedIconRow/native/SummarizedIconRow.tsx");
-
-export default tmp7;
-export const OverflowText = tmp4;
-export const OverflowTextSmall = tmp5;
-export const OverflowCircle = tmp6;
+};
+export function OverflowText(arg0) {
+  let overflow;
+  let style;
+  ({ overflow, style } = arg0);
+  const items = [closure_4().overflowTextOnly, style];
+  ({ variant: "text-xs/medium", children: "+" + overflow });
+  const Text = Text_Text.Text;
+  return <View style={items}>{null}</View>;
+}
+export function OverflowTextSmall(arg0) {
+  let overflow;
+  let style;
+  ({ overflow, style } = arg0);
+  const items = [closure_4().overflowTextOnly, style];
+  ({ variant: "text-xxs/medium", children: "+" + overflow });
+  const Text = Text_Text.Text;
+  return <View style={items}>{null}</View>;
+}
+export function OverflowCircle(arg0) {
+  let overflow;
+  let style;
+  ({ overflow, style } = arg0);
+  const tmp = closure_4();
+  const items = [tmp.overflowCircleWrap, style];
+  ({ variant: "text-xs/medium", children: "+" + overflow });
+  const Text = Text_Text.Text;
+  return <View style={items}>{null}</View>;
+}

@@ -1,28 +1,17 @@
 // Module ID: 1562
 // Function ID: 1563
 // Dependencies: []
+// Exports: isArrayEqual
 
 // Module 1562
 
-export default (str, str2) => {
-  if (typeof str === "string") {
-    if (typeof str2 === "string") {
-      if ("" === str2) {
-        const items = [str];
-        return items;
-      } else {
-        let items2;
-        const index = str.indexOf(str2);
-        if (-1 === index) {
-          const items1 = [str];
-          items2 = items1;
-        } else {
-          items2 = [str.slice(0, index), str.slice(index + str2.length)];
-        }
-        return items2;
-      }
-    }
+export function isArrayEqual(arr, arg1) {
+  const f81443 = (item, index) => Object.is(item, closure_0[index]);
+  let closure_0 = arg1;
+  let tmp = arr === arg1;
+  if (!tmp) {
+    tmp = arr.length === arg1.length && arr.every(f81443);
+    arr.length === arg1.length && arr.every(f81443);
   }
-  const typeError = new TypeError("Expected the arguments to be of type `string`");
-  throw typeError;
-};
+  return tmp;
+}

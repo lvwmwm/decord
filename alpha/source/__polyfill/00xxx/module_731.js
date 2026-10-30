@@ -1,32 +1,53 @@
 // Module ID: 731
 // Function ID: 732
-// Dependencies: [724]
-// Exports: hasSpansEnabled
+// Dependencies: [691]
+// Exports: handleCallbackErrors
 
 // Module 731
-import _mod724 from "module_724" /* 724 */;
+import _mod691 from "module_691" /* 691 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function hasSpansEnabled(options) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
+export function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn, fn22) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    let closure_2 = fn2;
+    const obj = _mod691;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        closure_2(result);
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
+    } else {
+      fn();
+      fn2(promise);
+      return promise;
     }
   }
-  let tmp = options;
-  if (!tmp) {
-    const obj = _mod724;
-    const client = obj.getClient();
-    options = undefined;
-    if (client != null) {
-      options = client.getOptions();
-    }
-    tmp = options;
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
   }
-  let tmp6 = !tmp;
-  if (tmp) {
-    tmp6 = null == tmp.tracesSampleRate && !tmp.tracesSampler;
+  fn2 = arg3;
+  if (arg3 === undefined) {
+    fn2 = function o() {
+
+    };
   }
-  return !tmp6;
+  try {
+    const tmp2 = fn();
+    return maybeHandlePromiseRejection(tmp2, fn2, fn, fn2);
+  } catch (tmp7) {
+    fn2(tmp7);
+    fn();
+    throw tmp7;
+  }
 }

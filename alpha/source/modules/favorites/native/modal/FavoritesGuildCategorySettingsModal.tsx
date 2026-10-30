@@ -1,22 +1,22 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18114
+// Function ID: 18115
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 4860, 4870, 21, 5005, 587, 558, 576, 1503, 504, 4882, 10788, 9765, 1125, 5946, 1199, 7068, 5727, 7047, 6963, 6015, 10095, 10096, 2]
+// Dependencies: [32, 19, 17, 4861, 4871, 21, 5009, 575, 1498, 504, 4883, 10811, 9791, 1114, 5953, 1188, 6022, 7076, 7054, 6969, 5733, 10121, 10123, 2]
+// Exports: default
 
-// Module 18053 (FavoritesGuildCategorySettingsModal)
+// Module 18114 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import FavoritesConstants from "FavoritesConstants" /* 4870 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10788 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import FavoritesConstants from "FavoritesConstants" /* 4871 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10811 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore_mod from "FavoriteStore" /* 4860 */;
+import FavoriteStore from "FavoriteStore" /* 4861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -25,180 +25,7 @@ let c9;
 let metroImportAll;
 let obj2;
 let obj3;
-let ScrollView = react_native.ScrollView;
-let FavoriteStore = FavoriteStore_mod;
-let maxLength = FavoritesConstants.MAX_FAVORITE_CATEGORY_NAME_LENGTH;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, content: obj3 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_16 };
-let closure_10 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCategorySettings(categoryId) {
-  let closure_5;
-  let closure_6;
-  let first;
-  let ref;
-  let tmp10;
-  let tmp11;
-  let tmp15;
-  let tmp16;
-  let tmp17;
-  let tmp18;
-  let tmp8;
-  let tmp = categoryId;
-  let obj = categoryId(navigation[9]);
-  const cResult = obj.c(50);
-  categoryId = categoryId.categoryId;
-  const onGoBack = categoryId.onGoBack;
-  closure_10();
-  let obj2 = categoryId(navigation[10]);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FavoriteStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== categoryId) {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-    cResult[1] = categoryId;
-    cResult[2] = C;
-    tmp8 = C;
-  } else {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-  }
-  const tmpResult = tmp(navigation[11]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-    const items1 = [FavoriteStore];
-    cResult[3] = items1;
-    tmp10 = items1;
-  } else {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-  }
-  if (cResult[4] !== categoryId) {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-    cResult[4] = categoryId;
-    cResult[5] = tmp12;
-    tmp11 = tmp12;
-  } else {
-    class C {
-      constructor() {
-        str = closure_6.getNickname(categoryId);
-        if (str == null) {
-          str = "";
-        }
-        return str;
-      }
-    }
-  }
-  const tmpResult3 = tmp(navigation[11]);
-  const stateFromStores1 = tmpResult3.useStateFromStores(tmp10, tmp11);
-  [tmp15, tmp16] = stateFromStores(stateFromStores1.useState(stateFromStores), 2);
-  ScrollView = tmp16;
-  stateFromStores(stateFromStores1.useState(stateFromStores), 2);
-  const obj5 = stateFromStores1;
-  if (cResult[6] !== stateFromStores) {
-    class E {
-      constructor() {
-        tmp = closure_5(closure_3);
-        return;
-      }
-    }
-    const items2 = [stateFromStores];
-    cResult[6] = stateFromStores;
-    cResult[7] = E;
-    cResult[8] = items2;
-    tmp18 = items2;
-    tmp17 = E;
-  } else {
-    class E {
-      constructor() {
-        tmp = closure_5(closure_3);
-        return;
-      }
-    }
-    tmp18 = cResult[8];
-  }
-  const effect = obj5.useEffect(tmp17, tmp18);
-  if (cResult[9] !== tmp15) {
-    class E {
-      constructor() {
-        tmp = closure_5(closure_3);
-        return;
-      }
-    }
-    cResult[9] = tmp15;
-    cResult[10] = tmp21;
-  } else {
-    class E {
-      constructor() {
-        tmp = closure_5(closure_3);
-        return;
-      }
-    }
-  }
-  FavoriteStore = tmp20;
-  if (cResult[11] === tmp15) {
-    class E {
-      constructor() {
-        tmp = closure_5(closure_3);
-        return;
-      }
-    }
-  }
-  const tmpResult4 = tmp(navigation[12]);
-  cResult[11] = tmp15;
-  cResult[12] = stateFromStores;
-  cResult[13] = tmp20;
-  cResult[14] = tmpResult4.isFavoritesGuildCategoryNameValid(tmp15) && tmp20 !== stateFromStores;
-  tmpResult4.isFavoritesGuildCategoryNameValid(tmp15) && tmp20 !== stateFromStores;
-}) : (function FavoritesGuildCategorySettings(categoryId) {
+function FavoritesGuildCategorySettings(categoryId) {
   let Stack;
   let TableRow;
   let _undefined;
@@ -217,9 +44,9 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
   let trimmed;
   let callback1;
   let tmp = callback1();
-  let obj = categoryId(navigation[10]);
+  let obj = categoryId(navigation[8]);
   navigation = obj.useNavigation();
-  let obj2 = categoryId(navigation[11]);
+  let obj2 = categoryId(navigation[9]);
   const items = [trimmed];
   const stateFromStores = obj2.useStateFromStores(items, () => {
     let str = FavoriteStore.getNickname(categoryId);
@@ -229,7 +56,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     return str;
   });
   const items1 = [trimmed];
-  const obj3 = categoryId(navigation[11]);
+  const obj3 = categoryId(navigation[9]);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => null != FavoriteStore.getCategoryRecord(categoryId));
   [str, tmp8] = stateFromStores(stateFromStores1.useState(stateFromStores), 2);
   let c5 = tmp8;
@@ -239,7 +66,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     _undefined(stateFromStores);
   }, items2);
   trimmed = str.trim();
-  const obj5 = categoryId(navigation[12]);
+  const obj5 = categoryId(navigation[10]);
   const tmp11 = obj5.isFavoritesGuildCategoryNameValid(str) && trimmed !== stateFromStores;
   maxLength = tmp11;
   const ref = obj4.useRef(false);
@@ -272,10 +99,10 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     let obj = {
       headerRight(arg0) {
         let intl;
-        const obj = { label: intl.string(categoryId(navigation[15]).t["R3BPH+"]), onPress, disabled: !closure_1_7 };
-        const HeaderTextButton = categoryId(navigation[14]).HeaderTextButton;
+        const obj = { label: intl.string(categoryId(navigation[13]).t["R3BPH+"]), onPress, disabled: !closure_1_7 };
+        const HeaderTextButton = categoryId(navigation[12]).HeaderTextButton;
         const merged = Object.assign(arg0);
-        intl = categoryId(navigation[15]).intl;
+        intl = categoryId(navigation[13]).intl;
         return ref(HeaderTextButton, obj);
       }
     };
@@ -296,7 +123,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
       confirmColor: native.ButtonColors.RED,
       cancelText: intl4.string(intl5.t["ETE/oC"]),
       onConfirm() {
-        const obj = categoryId(navigation[13]);
+        const obj = categoryId(navigation[11]);
         const result = obj.removeFavoriteCategory(closure_1_0);
         callback();
       }
@@ -311,74 +138,45 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function Favori
     show(obj);
   }, items7);
   obj7 = { spacing: onGoBack(navigation[7]).space.PX_24, children: items8 };
-  Stack = tmp2(tmp3[22]).Stack;
-  const obj8 = { label: intl.string(categoryId(navigation[15]).t.OCAkGP), placeholder: intl2.string(categoryId(navigation[15]).t.eTVbtx), value: str, onChange: tmp8, maxLength, clearable: true };
-  const TextInput = tmp2(tmp3[18]).TextInput;
-  intl = tmp2(tmp3[15]).intl;
-  intl2 = tmp2(tmp3[15]).intl;
+  Stack = tmp2(tmp3[16]).Stack;
+  const obj8 = { label: intl.string(categoryId(navigation[13]).t.OCAkGP), placeholder: intl2.string(categoryId(navigation[13]).t.eTVbtx), value: str, onChange: tmp8, maxLength, clearable: true };
+  const TextInput = tmp2(tmp3[17]).TextInput;
+  intl = tmp2(tmp3[13]).intl;
+  intl2 = tmp2(tmp3[13]).intl;
   items8 = [ref(TextInput, obj8), ];
   const obj9 = { hasIcons: true, children: ref(TableRow, obj10) };
-  const TableRowGroup = tmp2(tmp3[20]).TableRowGroup;
-  obj10 = { variant: "danger", icon: ref(categoryId(navigation[19]).TrashIcon, { color: "text-feedback-critical" }), label: intl3.string(categoryId(navigation[15]).t.ifbXnL), onPress: callback2 };
-  TableRow = tmp2(tmp3[21]).TableRow;
-  intl3 = tmp2(tmp3[15]).intl;
+  const TableRowGroup = tmp2(tmp3[18]).TableRowGroup;
+  obj10 = { variant: "danger", icon: ref(categoryId(navigation[20]).TrashIcon, { color: "text-feedback-critical" }), label: intl3.string(categoryId(navigation[13]).t.ifbXnL), onPress: callback2 };
+  TableRow = tmp2(tmp3[19]).TableRow;
+  intl3 = tmp2(tmp3[13]).intl;
   items8[1] = ref(TableRowGroup, obj9);
   return ref(c5, obj6);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildCategorySettingsModal(categoryId) {
-  let first;
-  let onGoBack;
-  let obj = categoryId(576);
-  const cResult = obj.c(4);
-  categoryId = categoryId.categoryId;
-  const tmp4 = onGoBack;
-  onGoBack = onGoBack(10095)().onGoBack;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(categoryId(1125).t["/uELTj"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === categoryId) {
-    let tmp7;
-    if (cResult[2] === onGoBack) {
-      tmp7 = cResult[3];
-    }
-    return tmp7;
-  }
-  const obj2 = {
-    screenKey: "favoritesGuildCategorySettings",
-    title: first,
-    render() {
-      const obj = { categoryId, onGoBack };
-      return metroImportAll(closure_11, obj);
-    }
-  };
-  const tmp8 = closure_8(tmp4(10096), obj2);
-  cResult[1] = categoryId;
-  cResult[2] = onGoBack;
-  cResult[3] = tmp8;
-  tmp7 = tmp8;
-}) : (function FavoritesGuildCategorySettingsModal(categoryId) {
+}
+const ScrollView = react_native.ScrollView;
+let maxLength = FavoritesConstants.MAX_FAVORITE_CATEGORY_NAME_LENGTH;
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, content: obj3 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_16 };
+let closure_10 = createStyles(obj);
+let result = size.fileFinishedImporting("modules/favorites/native/modal/FavoritesGuildCategorySettingsModal.tsx");
+
+export default function FavoritesGuildCategorySettingsModal(categoryId) {
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10095)().onGoBack;
+  onGoBack = onGoBack(10121)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
-    title: intl.string(categoryId(1125).t["/uELTj"]),
+    title: intl.string(categoryId(1114).t["/uELTj"]),
     render() {
       const obj = { categoryId, onGoBack };
-      return metroImportAll(closure_11, obj);
+      return metroImportAll(FavoritesGuildCategorySettings, obj);
     }
   };
-  const tmp = onGoBack(10096);
-  intl = categoryId(1125).intl;
+  const tmp = onGoBack(10123);
+  intl = categoryId(1114).intl;
   return closure_8(tmp, obj);
-});
-let result = size.fileFinishedImporting("modules/favorites/native/modal/FavoritesGuildCategorySettingsModal.tsx");
-
-export default tmp4;
+};

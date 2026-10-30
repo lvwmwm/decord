@@ -1,12 +1,12 @@
-// Module ID: 8462
-// Function ID: 8463
+// Module ID: 8496
+// Function ID: 8497
 // Name: isCrosspost
-// Dependencies: [1084, 1402, 2]
+// Dependencies: [1072, 1397, 2]
 // Exports: default
 
-// Module 8462 (isCrosspost)
-import FlagUtils from "FlagUtils" /* 1402 */;
-import Constants from "Constants" /* 1084 */;
+// Module 8496 (isCrosspost)
+import FlagUtils from "FlagUtils" /* 1397 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;

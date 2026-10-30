@@ -3,8 +3,5 @@
 // Dependencies: []
 
 // Module 5050
-const fn = Array.isArray || ((arg0) => {
-  return "[object Array]" == toString.call(arg0);
-});
 
-export default fn;
+export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";

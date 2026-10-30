@@ -1,210 +1,51 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7403
+// Function ID: 7404
 // Name: StorefrontUtils
-// Dependencies: [19, 2066, 1389, 7396, 1084, 1391, 12, 7397, 1382, 1402, 558, 576, 504, 7398, 7399, 2051, 7402, 2]
-// Exports: getPromoCodeFromClaimResponse, isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer
+// Dependencies: [19, 2063, 1384, 7404, 1072, 1386, 12, 7405, 1377, 1397, 504, 7406, 7407, 2048, 7410, 2]
+// Exports: getPromoCodeFromClaimResponse, isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 7395 (StorefrontUtils)
+// Module 7403 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
-import react2 from "react" /* 576 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
-import StorefrontTypes from "StorefrontTypes" /* 7397 */;
-import SlayerStorefrontPriceUtils from "SlayerStorefrontPriceUtils" /* 7398 */;
-import PriceUtils from "PriceUtils" /* 7399 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7402 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
+import StorefrontTypes from "StorefrontTypes" /* 7405 */;
+import SlayerStorefrontPriceUtils from "SlayerStorefrontPriceUtils" /* 7406 */;
+import PriceUtils from "PriceUtils" /* 7407 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7410 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import UserStore from "UserStore" /* 1389 */;
-import SKUPricesStore from "SKUPricesStore" /* 7396 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import UserStore from "UserStore" /* 1384 */;
+import SKUPricesStore from "SKUPricesStore" /* 7404 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, user_price;
+let _require, getPricesForSkuId, user_price;
 
 let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-let tmp;
 let unpackModuleId;
-const get_initialized = tmp(504);
-function formatSKUPrice(arg0, stateFromStores) {
-  let discountPercent;
-  let discountedPrice;
-  let formatPercentResult;
-  let formatPriceResult1;
-  let formatPriceResult2;
-  let normalPrice;
+const f90277 = () => locale.locale;
+function useSKUPrice(sku) {
+  sku = sku.sku;
+  let DEFAULT = sku.priceSetAssignmentPurchaseType;
+  if (DEFAULT === undefined) {
+    let tmp = constants;
+    DEFAULT = constants.DEFAULT;
+  }
   let userPrice;
-  ({ normalPrice, discountedPrice, discountPercent, userPrice } = arg0);
-  let formatPriceResult = null;
-  if (null != normalPrice) {
-    const obj = PriceUtils;
-    formatPriceResult = obj.formatPrice(normalPrice.amount, normalPrice.currency);
-  }
-  const obj2 = { normalPrice: formatPriceResult, discountedPrice: formatPriceResult1, discountPercent: formatPercentResult, userPrice: formatPriceResult2 };
-  formatPriceResult1 = null;
-  if (null != discountedPrice) {
-    const obj3 = PriceUtils;
-    formatPriceResult1 = obj3.formatPrice(discountedPrice.amount, discountedPrice.currency);
-  }
-  formatPercentResult = null;
-  if (null != discountPercent) {
-    const obj4 = PriceUtils;
-    formatPercentResult = obj4.formatPercent(stateFromStores, -discountPercent / 100);
-  }
-  formatPriceResult2 = null;
-  if (null != userPrice) {
-    const obj5 = PriceUtils;
-    formatPriceResult2 = obj5.formatPrice(userPrice.amount, userPrice.currency);
-  }
-  return obj2;
-}
-({ CurrencyCodes: metroImportDefault, PriceSetAssignmentPurchaseTypes: metroImportAll, PriceTypes: c9, SKUFlags: c10, SKUProductLines: unpackModuleId } = Constants);
-const PremiumTypes = PremiumConstants.PremiumTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolvedUserPrice(sku) {
-  let first;
-  let isOrbPrice;
-  let priceSetAssignmentPurchaseType;
-  let tmp11;
-  let tmp14;
-  let tmp8;
-  const obj = sku(576);
-  const cResult = obj.c(15);
-  sku = sku.sku;
-  ({ priceSetAssignmentPurchaseType, isOrbPrice } = sku);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SKUPricesStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  let id;
-  const tmp6 = cResult[1];
-  if (sku != null) {
-    id = sku.id;
-  }
-  if (tmp6 !== id) {
-    let id1;
-    if (sku != null) {
-      id1 = sku.id;
-    }
-    const fn = function s() {
-      let id;
-      const getPricesForSkuId = SKUPricesStore.getPricesForSkuId;
-      if (sku != null) {
-        id = sku.id;
-      }
-      if (id == null) {
-        id = null;
-      }
-      return getPricesForSkuId(id);
-    };
-    cResult[1] = id1;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = sku(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  if (cResult[3] !== priceSetAssignmentPurchaseType) {
-    let SELF_PURCHASE;
-    if (null == priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
-    } else if (constants2.DEFAULT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
-    } else if (tmp12.GIFT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.GIFT;
-    } else {
-      SELF_PURCHASE = tmp(7397).StorefrontPurchaseType.SELF_PURCHASE;
-    }
-    cResult[3] = priceSetAssignmentPurchaseType;
-    cResult[4] = SELF_PURCHASE;
-    tmp11 = SELF_PURCHASE;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (null != sku) {
-    if (null != stateFromStores) {
-      let tmp15 = stateFromStores[tmp11];
-      if (tmp15 == null) {
-        tmp15 = stateFromStores[tmp(undefined, 7397).StorefrontPurchaseType.SELF_PURCHASE];
-      }
-      if (cResult[8] === isOrbPrice) {
-        let tmp18;
-        let userPrice;
-        const tmp16 = cResult[9];
-        if (tmp15 != null) {
-          userPrice = tmp15.userPrice;
-        }
-        if (tmp16 === userPrice) {
-          tmp18 = cResult[10];
-        }
-        if (cResult[11] === tmp15) {
-          if (cResult[12] === tmp11) {
-            let tmp21;
-            if (cResult[13] === tmp18) {
-              tmp21 = cResult[14];
-            }
-            tmp14 = tmp21;
-          }
-        }
-        const obj2 = { userPrice: tmp18, pricesForPurchaseType: tmp15, purchaseType: tmp11, storeHasPrice: true };
-        cResult[11] = tmp15;
-        cResult[12] = tmp11;
-        cResult[13] = tmp18;
-        cResult[14] = obj2;
-        tmp21 = obj2;
-      }
-      let found;
-      if (tmp15 != null) {
-        const userPrice1 = tmp15.userPrice;
-        if (userPrice1 != null) {
-          found = userPrice1.find((currency) => {
-            currency = currency.currency;
-            const DISCORD_ORB = metroImportDefault.DISCORD_ORB;
-            return isOrbPrice ? currency === DISCORD_ORB : currency !== DISCORD_ORB;
-          });
-        }
-      }
-      cResult[8] = isOrbPrice;
-      let userPrice2;
-      if (tmp15 != null) {
-        userPrice2 = tmp15.userPrice;
-      }
-      cResult[9] = userPrice2;
-      cResult[10] = found;
-      tmp18 = found;
-    }
-    return tmp14;
-  }
-  if (cResult[5] === tmp11) {
-    if (cResult[6] === null != stateFromStores) {
-      tmp14 = cResult[7];
-    }
-  }
-  const obj3 = { userPrice: "r", pricesForPurchaseType: "application", purchaseType: tmp11, storeHasPrice: null != stateFromStores };
-  cResult[5] = tmp11;
-  cResult[6] = null != stateFromStores;
-  cResult[7] = obj3;
-  tmp14 = obj3;
-}) : (function useResolvedUserPrice(sku) {
-  sku = sku.sku;
-  const priceSetAssignmentPurchaseType = sku.priceSetAssignmentPurchaseType;
-  const isOrbPrice = sku.isOrbPrice;
-  const obj = sku(isOrbPrice[12]);
-  const items = [SKUPricesStore];
+  let pricesForPurchaseType;
+  let stateFromStoresArray;
+  let c2 = false;
+  let obj = sku(userPrice[10]);
+  const items = [stateFromStoresArray];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let id;
-    const getPricesForSkuId = SKUPricesStore.getPricesForSkuId;
+    getPricesForSkuId = getPricesForSkuId.getPricesForSkuId;
     if (sku != null) {
       id = sku.id;
     }
@@ -213,475 +54,57 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRes
     }
     return getPricesForSkuId(id);
   });
-  const items1 = [sku, stateFromStores, priceSetAssignmentPurchaseType, isOrbPrice];
-  return stateFromStores.useMemo(() => {
+  const items1 = [sku, stateFromStores, DEFAULT, false];
+  const memo = pricesForPurchaseType.useMemo(() => {
     let SELF_PURCHASE;
+    let tmp3;
     let tmp4;
-    if (null == priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-      tmp4 = require;
-    } else if (metroImportAll.DEFAULT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-      tmp4 = require;
-    } else if (tmp14.GIFT === priceSetAssignmentPurchaseType) {
-      SELF_PURCHASE = StorefrontTypes.StorefrontPurchaseType.GIFT;
-      tmp4 = require;
+    if (null == DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
+    } else if (constants.DEFAULT === DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
+    } else if (tmp14.GIFT === DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.GIFT;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
     } else {
-      SELF_PURCHASE = StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-      tmp4 = require;
+      tmp3 = storeHasPrice;
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp4 = sku;
     }
     if (null != sku) {
       if (null != stateFromStores) {
         let tmp12 = tmp11[SELF_PURCHASE];
         if (tmp12 == null) {
-          tmp12 = tmp11[tmp4(undefined, 7397).StorefrontPurchaseType.SELF_PURCHASE];
+          tmp12 = tmp11[tmp4(undefined, tmp3[7]).StorefrontPurchaseType.SELF_PURCHASE];
         }
         let found;
         if (tmp12 != null) {
-          const userPrice = tmp12.userPrice;
+          userPrice = tmp12.userPrice;
           if (userPrice != null) {
             found = userPrice.find((currency) => {
               currency = currency.currency;
               const DISCORD_ORB = constants.DISCORD_ORB;
-              return isOrbPrice ? currency === DISCORD_ORB : currency !== DISCORD_ORB;
+              return closure_1_2 ? currency === DISCORD_ORB : currency !== DISCORD_ORB;
             });
           }
         }
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "application", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "__closure", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(sku) {
-  let currentUser;
-  let pricesForPurchaseType;
-  let purchaseType;
-  let userPrice;
-  const tmp = sku;
-  const tmp2 = dependencyMap;
-  const obj = sku(576);
-  const cResult = obj.c(29);
-  sku = sku.sku;
-  let DEFAULT = sku.priceSetAssignmentPurchaseType;
-  if (undefined === DEFAULT) {
-    DEFAULT = constants2.DEFAULT;
-  }
-  if (cResult[0] === DEFAULT) {
-    let tmp5;
-    let tmp9;
-    let tmp14;
-    let tmp17;
-    let tmp16;
-    if (cResult[1] === sku) {
-      tmp5 = cResult[2];
-    }
-    const tmp7 = closure_13(tmp5);
-    ({ userPrice, pricesForPurchaseType, purchaseType } = tmp7);
-    const _Symbol = Symbol;
-    const storeHasPrice = tmp7.storeHasPrice;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [SKUPricesStore];
-      cResult[3] = items;
-      tmp9 = items;
-    } else {
-      tmp9 = cResult[3];
-    }
-    let id;
-    const tmp11 = cResult[4];
-    if (sku != null) {
-      id = sku.id;
-    }
-    if (tmp11 !== id) {
-      let id1;
-      if (sku != null) {
-        id1 = sku.id;
-      }
-      const fn = function v() {
-        let id;
-        const getRewardsForSkuId = SKUPricesStore.getRewardsForSkuId;
-        if (sku != null) {
-          id = sku.id;
-        }
-        let rewardsForSkuId = getRewardsForSkuId(id);
-        if (rewardsForSkuId == null) {
-          rewardsForSkuId = [];
-        }
-        return rewardsForSkuId;
-      };
-      cResult[4] = id1;
-      cResult[5] = fn;
-      tmp14 = fn;
-    } else {
-      tmp14 = cResult[5];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp9, tmp14);
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const items1 = [UserStore];
-      class U {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[6] = items1;
-      cResult[7] = U;
-      tmp17 = U;
-      tmp16 = items1;
-    } else {
-      tmp16 = cResult[6];
-      tmp17 = cResult[7];
-    }
-    const tmpResult2 = tmp(504);
-    const stateFromStores = tmpResult2.useStateFromStores(tmp16, tmp17);
-    if (null != sku) {
-      if (storeHasPrice) {
-        let tmp28;
-        if (cResult[15] === purchaseType) {
-          let tmp27;
-          if (cResult[16] === stateFromStoresArray) {
-            tmp27 = cResult[17];
-          }
-          let tmp30 = null;
-          if (null != tmp27) {
-            tmp30 = tmp27[purchaseType];
-          }
-          class U {
-            constructor() {
-              return currentUser.getCurrentUser();
-            }
-          }
-          let amount = null;
-          if (null != tmp30) {
-            amount = null;
-            if (tmp30.amount > 0) {
-              amount = tmp30.amount;
-            }
-          }
-          if (cResult[20] === tmp30) {
-            if (pricesForPurchaseType != null) {
-              const prices = pricesForPurchaseType.prices;
-            }
-            class U {
-              constructor() {
-                return currentUser.getCurrentUser();
-              }
-            }
-          }
-          let tmp35 = userPrice;
-          if (null != tmp30) {
-            if (pricesForPurchaseType != null) {
-              class U {
-                constructor() {
-                  return currentUser.getCurrentUser();
-                }
-              }
-            }
-            tmp35 = tmp36;
-          }
-          cResult[20] = tmp30;
-          let prices1;
-          if (pricesForPurchaseType != null) {
-            prices1 = pricesForPurchaseType.prices;
-          }
-          cResult[21] = prices1;
-          cResult[22] = userPrice;
-          cResult[23] = tmp35;
-        }
-        if (cResult[18] !== purchaseType) {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-          cResult[18] = purchaseType;
-          class U {
-            constructor() {
-              return currentUser.getCurrentUser();
-            }
-          }
-          cResult[19] = D;
-          tmp28 = D;
-        } else {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-        }
-        const found = stateFromStoresArray.find(tmp28);
-        class U {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        cResult[15] = purchaseType;
-        cResult[16] = stateFromStoresArray;
-        cResult[17] = found;
-        tmp27 = found;
-      } else {
-        let price;
-        class D {
-          constructor(arg0) {
-            if (null == arg0[purchaseType]) {
-              return false;
-            } else {
-              const type = tmp.type;
-              if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                return true;
-              } else {
-                if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                  }
-                }
-                return false;
-              }
-            }
-          }
-        }
-        if (stateFromStores != null) {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-        }
-        class U {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        if (sku.productLine === constants5.SOCIAL_LAYER_GAME_ITEM) {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-          price = obj5.getPrice(sku, DEFAULT);
-        } else {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-          const getPrice = sku.getPrice;
-          if (stateFromStores != null) {
-            class D {
-              constructor(arg0) {
-                if (null == arg0[purchaseType]) {
-                  return false;
-                } else {
-                  const type = tmp.type;
-                  if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                    return true;
-                  } else {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                      if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                        const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                      }
-                    }
-                    return false;
-                  }
-                }
-              }
-            }
-          }
-          class U {
-            constructor() {
-              return currentUser.getCurrentUser();
-            }
-          }
-        }
-        if (stateFromStores != null) {
-          class D {
-            constructor(arg0) {
-              if (null == arg0[purchaseType]) {
-                return false;
-              } else {
-                const type = tmp.type;
-                if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                  return true;
-                } else {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                    if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                      const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                    }
-                  }
-                  return false;
-                }
-              }
-            }
-          }
-        }
-        cResult[9] = undefined;
-        cResult[10] = DEFAULT;
-        cResult[11] = sku;
-        cResult[12] = price;
-      }
-    } else {
-      class D {
-        constructor(arg0) {
-          if (null == arg0[purchaseType]) {
-            return false;
-          } else {
-            const type = tmp.type;
-            if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-              return true;
-            } else {
-              if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                  const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                }
-              }
-              return false;
-            }
-          }
-        }
-      }
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class D {
-          constructor(arg0) {
-            if (null == arg0[purchaseType]) {
-              return false;
-            } else {
-              const type = tmp.type;
-              if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                return true;
-              } else {
-                if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                  }
-                }
-                return false;
-              }
-            }
-          }
-        }
-        cResult[8] = tmp21;
-        class U {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-      } else {
-        class D {
-          constructor(arg0) {
-            if (null == arg0[purchaseType]) {
-              return false;
-            } else {
-              const type = tmp.type;
-              if (StorefrontTypes.StorefrontPromotionRewardType.DISCOUNT === type) {
-                return true;
-              } else {
-                if (StorefrontTypes.StorefrontPromotionRewardType.FIXED_PRICE !== type) {
-                  if (StorefrontTypes.StorefrontPromotionRewardType.ACTION !== type) {
-                    const BENEFIT = tmp2(7397).StorefrontPromotionRewardType.BENEFIT;
-                  }
-                }
-                return false;
-              }
-            }
-          }
-        }
-      }
-    }
-    return tmp20;
-  }
-  const obj2 = { sku, priceSetAssignmentPurchaseType: DEFAULT, isOrbPrice: false };
-  cResult[0] = DEFAULT;
-  cResult[1] = sku;
-  cResult[2] = obj2;
-  tmp5 = obj2;
-}) : (function useSKUPrice(sku) {
-  sku = sku.sku;
-  let DEFAULT = sku.priceSetAssignmentPurchaseType;
-  if (DEFAULT === undefined) {
-    let tmp = constants2;
-    DEFAULT = constants2.DEFAULT;
-  }
-  let stateFromStoresArray;
-  const tmp2 = closure_13({ sku, priceSetAssignmentPurchaseType: DEFAULT, isOrbPrice: false });
-  const userPrice = tmp2.userPrice;
-  const pricesForPurchaseType = tmp2.pricesForPurchaseType;
-  const purchaseType = tmp2.purchaseType;
-  const storeHasPrice = tmp2.storeHasPrice;
-  let obj = sku(userPrice[12]);
-  const items = [stateFromStoresArray];
-  stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
+  userPrice = memo.userPrice;
+  pricesForPurchaseType = memo.pricesForPurchaseType;
+  const purchaseType = memo.purchaseType;
+  const storeHasPrice = memo.storeHasPrice;
+  let obj2 = sku(userPrice[10]);
+  const items2 = [stateFromStoresArray];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
     let id;
     const getRewardsForSkuId = SKUPricesStore.getRewardsForSkuId;
     if (sku != null) {
@@ -693,21 +116,21 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
     }
     return rewardsForSkuId;
   });
-  let obj2 = sku(userPrice[12]);
-  const items1 = [storeHasPrice];
-  const stateFromStores = obj2.useStateFromStores(items1, () => storeHasPrice.getCurrentUser());
-  const items2 = [sku, DEFAULT, , , , , , ];
+  const obj3 = sku(userPrice[10]);
+  const items3 = [storeHasPrice];
+  const stateFromStores1 = obj3.useStateFromStores(items3, () => storeHasPrice.getCurrentUser());
+  const items4 = [sku, DEFAULT, , , , , , ];
   let premiumType;
   const useMemo = pricesForPurchaseType.useMemo;
-  if (stateFromStores != null) {
-    premiumType = stateFromStores.premiumType;
+  if (stateFromStores1 != null) {
+    premiumType = stateFromStores1.premiumType;
   }
-  items2[2] = premiumType;
-  items2[3] = storeHasPrice;
-  items2[4] = userPrice;
-  items2[5] = pricesForPurchaseType;
-  items2[6] = purchaseType;
-  items2[7] = stateFromStoresArray;
+  items4[2] = premiumType;
+  items4[3] = storeHasPrice;
+  items4[4] = userPrice;
+  items4[5] = pricesForPurchaseType;
+  items4[6] = purchaseType;
+  items4[7] = stateFromStoresArray;
   return useMemo(() => {
     let tmp20;
     const tmp = sku;
@@ -786,8 +209,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
         } else {
           let premiumType;
           const getPrice = tmp.getPrice;
-          if (stateFromStores != null) {
-            premiumType = stateFromStores.premiumType;
+          if (stateFromStores1 != null) {
+            premiumType = stateFromStores1.premiumType;
           }
           price = getPrice(premiumType);
         }
@@ -797,247 +220,42 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUPrice(
         return { normalPrice: price, discountedPrice: null, discountPercent: null, userPrice: price };
       }
     }
-  }, items2);
-});
-let closure_14 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormattedSKUPrice(arg0) {
-  let priceSetAssignmentPurchaseType;
-  let sku;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ sku, priceSetAssignmentPurchaseType } = arg0);
-  if (undefined === priceSetAssignmentPurchaseType) {
-    priceSetAssignmentPurchaseType = metroImportAll.DEFAULT;
-  }
-  if (cResult[0] === priceSetAssignmentPurchaseType) {
-    let tmp3;
-    if (cResult[1] === sku) {
-      tmp3 = cResult[2];
-    }
-    return closure_15(closure_14(tmp3));
-  }
-  const obj2 = { sku, priceSetAssignmentPurchaseType };
-  cResult[0] = priceSetAssignmentPurchaseType;
-  cResult[1] = sku;
-  cResult[2] = obj2;
-  tmp3 = obj2;
-}) : (function useFormattedSKUPrice(priceSetAssignmentPurchaseType) {
-  priceSetAssignmentPurchaseType = priceSetAssignmentPurchaseType.priceSetAssignmentPurchaseType;
-  const sku = priceSetAssignmentPurchaseType.sku;
-  if (priceSetAssignmentPurchaseType === undefined) {
-    priceSetAssignmentPurchaseType = metroImportAll.DEFAULT;
-  }
-  return closure_15(closure_14({ sku, priceSetAssignmentPurchaseType }));
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatSKUPrice(arg0) {
-  let locale;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function u() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === stateFromStores) {
-    let tmp8;
-    if (cResult[3] === arg0) {
-      tmp8 = cResult[4];
-    }
-    return tmp8;
-  }
-  const tmp9 = formatSKUPrice(arg0, stateFromStores);
-  cResult[2] = stateFromStores;
-  cResult[3] = arg0;
-  cResult[4] = tmp9;
-  tmp8 = tmp9;
-}) : (function useFormatSKUPrice(arg0) {
-  let closure_0;
-  let locale;
-  _require = arg0;
-  const items = [LocaleStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  const items1 = [arg0, stateFromStores];
-  return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
-});
-let closure_15 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSKUOrbPrice(arg0) {
-  let currentUser;
-  let priceSetAssignmentPurchaseType;
-  let sku;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ sku, priceSetAssignmentPurchaseType } = arg0);
-  if (undefined === priceSetAssignmentPurchaseType) {
-    priceSetAssignmentPurchaseType = metroImportAll.DEFAULT;
-  }
-  if (cResult[0] === priceSetAssignmentPurchaseType) {
-    let tmp5;
-    let tmp11;
-    let tmp10;
-    let tmp14;
-    if (cResult[1] === sku) {
-      tmp5 = cResult[2];
-    }
-    const tmp7 = closure_13(tmp5);
-    let userPrice = tmp7.userPrice;
-    const _Symbol = Symbol;
-    const storeHasPrice = tmp7.storeHasPrice;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [UserStore];
-      class S {
-        constructor() {
-          return closure_1_5.getCurrentUser();
-        }
-      }
-      cResult[3] = items;
-      cResult[4] = S;
-      tmp11 = S;
-      tmp10 = items;
-    } else {
-      tmp10 = cResult[3];
-      tmp11 = cResult[4];
-    }
-    const tmpResult = get_initialized;
-    const stateFromStores = tmpResult.useStateFromStores(tmp10, tmp11);
-    if (cResult[5] !== stateFromStores) {
-      PremiumUtilsDefault;
-      class S {
-        constructor() {
-          return closure_1_5.getCurrentUser();
-        }
-      }
-      cResult[5] = stateFromStores;
-      cResult[6] = tmp18;
-      tmp14 = tmp18;
-    } else {
-      tmp14 = cResult[6];
-    }
-    let tmp20 = null;
-    if (null != sku) {
-      if (storeHasPrice) {
-        if (userPrice == null) {
-          userPrice = null;
-        }
-        tmp20 = userPrice;
-      } else {
-        if (cResult[7] === tmp14) {
-          let tmp21;
-          let tmp23;
-          if (cResult[8] === sku.prices) {
-            tmp21 = cResult[9];
-          }
-          if (cResult[10] !== tmp21) {
-            if (null != tmp21) {
-              ({ amount: obj5.amount, currency: obj5.currency } = tmp21);
-              class S {
-                constructor() {
-                  return closure_1_5.getCurrentUser();
-                }
-              }
-            }
-            class S {
-              constructor() {
-                return closure_1_5.getCurrentUser();
-              }
-            }
-            cResult[11] = null;
-            tmp23 = tmp24;
-          } else {
-            tmp23 = cResult[11];
-          }
-          tmp20 = tmp23;
-        }
-        const tmpResult2 = OrbCheckoutUtils;
-        const orbPriceFromPrices = tmpResult2.getOrbPriceFromPrices(sku.prices, tmp14);
-        class S {
-          constructor() {
-            return closure_1_5.getCurrentUser();
-          }
-        }
-        cResult[7] = tmp14;
-        cResult[8] = sku.prices;
-        cResult[9] = orbPriceFromPrices;
-        tmp21 = orbPriceFromPrices;
-      }
-    }
-    return tmp20;
-  }
-  const obj3 = { sku, priceSetAssignmentPurchaseType, isOrbPrice: true };
-  cResult[0] = priceSetAssignmentPurchaseType;
-  cResult[1] = sku;
-  cResult[2] = obj3;
-  tmp5 = obj3;
-}) : (function useSKUOrbPrice(sku) {
-  let currentUser;
-  sku = sku.sku;
-  let DEFAULT = sku.priceSetAssignmentPurchaseType;
-  if (DEFAULT === undefined) {
-    const tmp = constants2;
-    DEFAULT = constants2.DEFAULT;
-  }
-  let tmp2 = closure_13({ sku, priceSetAssignmentPurchaseType: DEFAULT, isOrbPrice: true });
-  const userPrice = tmp2.userPrice;
-  const storeHasPrice = tmp2.storeHasPrice;
-  let obj = sku(storeHasPrice[12]);
-  const items = [UserStore];
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const items1 = [stateFromStores];
-  const memo = stateFromStores.useMemo(() => {
-    const obj = PremiumUtilsDefault;
-    return obj.isPremium(stateFromStores, PremiumTypes.TIER_2);
-  }, items1);
-  const items2 = [sku, memo, storeHasPrice, userPrice];
-  return stateFromStores.useMemo(() => {
-    if (null == sku) {
-      return null;
-    } else {
-      const tmp2 = storeHasPrice;
-      if (tmp2) {
-        let tmp8 = userPrice;
-        if (userPrice == null) {
-          tmp8 = null;
-        }
-        return tmp8;
-      } else {
-        const obj = OrbCheckoutUtils;
-        const orbPriceFromPrices = obj.getOrbPriceFromPrices(tmp.prices, memo);
-        let tmp7 = null;
-        if (null != orbPriceFromPrices) {
-          const obj3 = { amount: null, currency: null };
-          ({ amount: obj2.amount, currency: obj2.currency } = orbPriceFromPrices);
-          tmp7 = obj3;
-        }
-        return tmp7;
-      }
-    }
-  }, items2);
-});
-function transformPriceSetAssignmentToStorefrontPurchaseType(arg0) {
-  if (null == arg0) {
-    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-  } else if (metroImportAll.DEFAULT === arg0) {
-    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-  } else if (tmp9.GIFT === arg0) {
-    return StorefrontTypes.StorefrontPurchaseType.GIFT;
-  } else {
-    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
-  }
+  }, items4);
 }
+function formatSKUPrice(arg0, stateFromStores) {
+  let discountPercent;
+  let discountedPrice;
+  let formatPercentResult;
+  let formatPriceResult1;
+  let formatPriceResult2;
+  let normalPrice;
+  let userPrice;
+  ({ normalPrice, discountedPrice, discountPercent, userPrice } = arg0);
+  let formatPriceResult = null;
+  if (null != normalPrice) {
+    const obj = PriceUtils;
+    formatPriceResult = obj.formatPrice(normalPrice.amount, normalPrice.currency);
+  }
+  const obj2 = { normalPrice: formatPriceResult, discountedPrice: formatPriceResult1, discountPercent: formatPercentResult, userPrice: formatPriceResult2 };
+  formatPriceResult1 = null;
+  if (null != discountedPrice) {
+    const obj3 = PriceUtils;
+    formatPriceResult1 = obj3.formatPrice(discountedPrice.amount, discountedPrice.currency);
+  }
+  formatPercentResult = null;
+  if (null != discountPercent) {
+    const obj4 = PriceUtils;
+    formatPercentResult = obj4.formatPercent(stateFromStores, -discountPercent / 100);
+  }
+  formatPriceResult2 = null;
+  if (null != userPrice) {
+    const obj5 = PriceUtils;
+    formatPriceResult2 = obj5.formatPrice(userPrice.amount, userPrice.currency);
+  }
+  return obj2;
+}
+({ CurrencyCodes: metroImportDefault, PriceSetAssignmentPurchaseTypes: metroImportAll, PriceTypes: c9, SKUFlags: c10, SKUProductLines: unpackModuleId } = Constants);
+const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/storefront/StorefrontUtils.tsx");
 
 export function transformStorefrontPricesServer(storefront_pricing) {
@@ -1053,12 +271,12 @@ export function transformStorefrontPricesServer(storefront_pricing) {
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f100041 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f90269 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f100041),
+          userPrice: user_price.map(f90269),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f100041));
+            return obj.mapValues(arg0, (arr) => arr.map(f90269));
           })
         };
         user_price = user_price.user_price;
@@ -1080,7 +298,17 @@ export function transformStorefrontPricesServer(storefront_pricing) {
   obj5 = _modDef12;
   return obj;
 }
-export { transformPriceSetAssignmentToStorefrontPurchaseType };
+export function transformPriceSetAssignmentToStorefrontPurchaseType(arg0) {
+  if (null == arg0) {
+    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
+  } else if (metroImportAll.DEFAULT === arg0) {
+    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
+  } else if (tmp9.GIFT === arg0) {
+    return StorefrontTypes.StorefrontPurchaseType.GIFT;
+  } else {
+    return StorefrontTypes.StorefrontPurchaseType.SELF_PURCHASE;
+  }
+}
 export function isSlayerSkuAvailableOnThisPlatform(sku) {
   if (null != sku) {
     if (sku.productLine === unpackModuleId.SOCIAL_LAYER_GAME_ITEM) {
@@ -1095,14 +323,14 @@ export function isSlayerSkuAvailableOnThisPlatform(sku) {
       const obj = utils_PlatformUtils;
       if (obj.isIOS()) {
         const tmpResult = FlagUtils;
-        hasFlagResult = tmpResult.hasFlag(num, constants4.AVAILABLE_ON_IOS);
+        hasFlagResult = tmpResult.hasFlag(num, constants3.AVAILABLE_ON_IOS);
       } else {
         const tmpResult3 = utils_PlatformUtils;
         const isAndroidResult = tmpResult3.isAndroid();
         hasFlagResult = !isAndroidResult;
         if (isAndroidResult) {
           const tmpResult4 = FlagUtils;
-          hasFlagResult = tmpResult4.hasFlag(num, constants4.AVAILABLE_ON_ANDROID);
+          hasFlagResult = tmpResult4.hasFlag(num, constants3.AVAILABLE_ON_ANDROID);
         }
       }
       return hasFlagResult;
@@ -1110,11 +338,137 @@ export function isSlayerSkuAvailableOnThisPlatform(sku) {
   }
   return false;
 }
-export const useSKUPrice = tmp3;
-export const useFormattedSKUPrice = tmp4;
-export const useFormatSKUPrice = tmp5;
+export { useSKUPrice };
+export function useFormattedSKUPrice(priceSetAssignmentPurchaseType) {
+  let closure_0;
+  let locale;
+  let DEFAULT = priceSetAssignmentPurchaseType.priceSetAssignmentPurchaseType;
+  const sku = priceSetAssignmentPurchaseType.sku;
+  if (DEFAULT === undefined) {
+    DEFAULT = constants.DEFAULT;
+  }
+  const tmp2 = useSKUPrice({ sku, priceSetAssignmentPurchaseType: DEFAULT });
+  _require = tmp2;
+  const items = [LocaleStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f90277);
+  const items1 = [tmp2, stateFromStores];
+  return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
+}
+export function useFormatSKUPrice(arg0) {
+  let closure_0;
+  _require = arg0;
+  const items = [LocaleStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, f90277);
+  const items1 = [arg0, stateFromStores];
+  return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
+}
 export { formatSKUPrice };
-export const useSKUOrbPrice = tmp6;
+export function useSKUOrbPrice(sku) {
+  let currentUser;
+  sku = sku.sku;
+  let DEFAULT = sku.priceSetAssignmentPurchaseType;
+  if (DEFAULT === undefined) {
+    const tmp = constants;
+    DEFAULT = constants.DEFAULT;
+  }
+  let storeHasPrice;
+  let stateFromStores1;
+  let c2 = true;
+  let obj = sku(storeHasPrice[10]);
+  const items = [SKUPricesStore];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let id;
+    getPricesForSkuId = getPricesForSkuId.getPricesForSkuId;
+    if (sku != null) {
+      id = sku.id;
+    }
+    if (id == null) {
+      id = null;
+    }
+    return getPricesForSkuId(id);
+  });
+  const items1 = [sku, stateFromStores, DEFAULT, true];
+  const memo = stateFromStores1.useMemo(() => {
+    let SELF_PURCHASE;
+    let tmp3;
+    let tmp4;
+    if (null == DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
+    } else if (constants.DEFAULT === DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
+    } else if (tmp14.GIFT === DEFAULT) {
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.GIFT;
+      tmp3 = storeHasPrice;
+      tmp4 = sku;
+    } else {
+      tmp3 = storeHasPrice;
+      SELF_PURCHASE = sku(storeHasPrice[7]).StorefrontPurchaseType.SELF_PURCHASE;
+      tmp4 = sku;
+    }
+    if (null != sku) {
+      if (null != stateFromStores) {
+        let tmp12 = tmp11[SELF_PURCHASE];
+        if (tmp12 == null) {
+          tmp12 = tmp11[tmp4(undefined, tmp3[7]).StorefrontPurchaseType.SELF_PURCHASE];
+        }
+        let found;
+        if (tmp12 != null) {
+          userPrice = tmp12.userPrice;
+          if (userPrice != null) {
+            found = userPrice.find((currency) => {
+              currency = currency.currency;
+              const DISCORD_ORB = constants.DISCORD_ORB;
+              return closure_1_2 ? currency === DISCORD_ORB : currency !== DISCORD_ORB;
+            });
+          }
+        }
+        return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
+      }
+    }
+    return { userPrice: "r", pricesForPurchaseType: "__closure", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+  }, items1);
+  let userPrice = memo.userPrice;
+  storeHasPrice = memo.storeHasPrice;
+  const obj2 = sku(storeHasPrice[10]);
+  const items2 = [UserStore];
+  stateFromStores1 = obj2.useStateFromStores(items2, () => currentUser.getCurrentUser());
+  const items3 = [stateFromStores1];
+  const memo1 = stateFromStores1.useMemo(() => {
+    const obj = PremiumUtilsDefault;
+    return obj.isPremium(stateFromStores1, PremiumTypes.TIER_2);
+  }, items3);
+  const items4 = [sku, memo1, storeHasPrice, userPrice];
+  return stateFromStores1.useMemo(() => {
+    if (null == sku) {
+      return null;
+    } else {
+      const tmp2 = storeHasPrice;
+      if (tmp2) {
+        let tmp8 = userPrice;
+        if (userPrice == null) {
+          tmp8 = null;
+        }
+        return tmp8;
+      } else {
+        const obj = OrbCheckoutUtils;
+        const orbPriceFromPrices = obj.getOrbPriceFromPrices(tmp.prices, memo1);
+        let tmp7 = null;
+        if (null != orbPriceFromPrices) {
+          const obj3 = { amount: null, currency: null };
+          ({ amount: obj2.amount, currency: obj2.currency } = orbPriceFromPrices);
+          tmp7 = obj3;
+        }
+        return tmp7;
+      }
+    }
+  }, items4);
+}
 export function getPromoCodeFromClaimResponse(arg0) {
   const iter = arg0.redemptions[Symbol.iterator]();
   while (iter !== undefined) {

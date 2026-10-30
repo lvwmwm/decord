@@ -1,70 +1,19 @@
-// Module ID: 9286
-// Function ID: 9287
+// Module ID: 9299
+// Function ID: 9300
 // Name: useResolveGame
-// Dependencies: [19, 558, 576, 7317, 7466, 2]
+// Dependencies: [19, 7324, 7474, 2]
+// Exports: default
 
-// Module 9286 (useResolveGame)
-import react2 from "react" /* 576 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7317 */;
+// Module 9299 (useResolveGame)
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7324 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useGame = tmp(7466);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolveGame(arg0) {
-  let applicationId;
-  let data;
-  let gameId;
-  let isLoading;
-  const obj = react2;
-  const cResult = obj.c(6);
-  ({ applicationId, gameId } = arg0);
-  let tmp5;
-  const useGetOrFetchApplication = useGetOrFetchApplications.useGetOrFetchApplication;
-  useGetOrFetchApplications;
-  if (null == gameId) {
-    tmp5 = applicationId;
-  }
-  const getOrFetchApplication = useGetOrFetchApplication(tmp5);
-  let tmp6 = gameId;
-  if (null == gameId) {
-    tmp6 = null;
-    if (null != getOrFetchApplication) {
-      let tmp7;
-      if (cResult[0] !== getOrFetchApplication) {
-        const canonicalGameId = getOrFetchApplication.getCanonicalGameId();
-        cResult[0] = getOrFetchApplication;
-        cResult[1] = canonicalGameId;
-        tmp7 = canonicalGameId;
-      } else {
-        tmp7 = cResult[1];
-      }
-      tmp6 = tmp7;
-    }
-  }
-  const tmpResult = useGame;
-  const game = tmpResult.useGame(tmp6);
-  ({ data, isLoading } = game);
-  if (data == null) {
-    data = null;
-  }
-  if (cResult[2] === tmp6) {
-    if (cResult[3] === data) {
-      let tmp11;
-      if (cResult[4] === (null == gameId && null != applicationId && null == getOrFetchApplication || isLoading)) {
-        tmp11 = cResult[5];
-      }
-      return tmp11;
-    }
-  }
-  const obj2 = { gameId: tmp6, gameRecord: data, isLoading: null == gameId && null != applicationId && null == getOrFetchApplication || isLoading };
-  cResult[2] = tmp6;
-  cResult[3] = data;
-  cResult[4] = null == gameId && null != applicationId && null == getOrFetchApplication || isLoading;
-  cResult[5] = obj2;
-  tmp11 = obj2;
-}) : (function useResolveGame(arg0) {
+const useGame = tmp(7474);
+const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
+
+export default function useResolveGame(arg0) {
   let applicationId;
   let gameId;
   let isLoading;
@@ -100,7 +49,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useResolve
     data = null;
   }
   return obj;
-});
-const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
-
-export default tmp2;
+};

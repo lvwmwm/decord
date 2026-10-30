@@ -1,125 +1,135 @@
 // Module ID: 5483
 // Function ID: 5484
-// Dependencies: [1656, 5310, 5323]
-// Exports: useAnimatedSnapPoints
+// Dependencies: [109, 19, 21, 5282, 5275, 5484, 1651, 5271, 5298, 5485]
+// Exports: createBottomSheetScrollableComponent
 
 // Module 5483
-import DEFAULT_HANDLE_HEIGHT from "DEFAULT_HANDLE_HEIGHT" /* 5310 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod1651 from "module_1651" /* 1651 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5271 */;
+import _mod5275 from "module_5275" /* 5275 */;
+import react2 from "react" /* 5282 */;
+import react3 from "react" /* 5484 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import react_mod from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _Math, _require, arr1, dependencyMap, diff, flag, items2, items3, iter, iter2, iter3, iter4, length, mapped, min, sorted, str, sum, tmp, tmp2, tmp3, tmp4, tmp8, value, value1, value4;
+let overScrollMode;
 
-let __initData = { code: "function pnpm_useAnimatedSnapPointsTs1(){const{containerHeight,INITIAL_CONTAINER_HEIGHT,INITIAL_SNAP_POINT,snapPoints,normalizeSnapPoint,enableDynamicSizing,handleHeight,INITIAL_HANDLE_HEIGHT,contentHeight,maxDynamicContentSize,dynamicSnapPointIndex}=this.__closure;const isContainerLayoutReady=containerHeight.value!==INITIAL_CONTAINER_HEIGHT;if(!isContainerLayoutReady){return[INITIAL_SNAP_POINT];}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];let _normalizedSnapPoints=_snapPoints.map(function(snapPoint){return normalizeSnapPoint(snapPoint,containerHeight.value);});if(!enableDynamicSizing){return _normalizedSnapPoints;}if(handleHeight.value===INITIAL_HANDLE_HEIGHT){return[INITIAL_SNAP_POINT];}if(contentHeight.value===INITIAL_CONTAINER_HEIGHT){return[INITIAL_SNAP_POINT];}const dynamicSnapPoint=containerHeight.value-Math.min(contentHeight.value+handleHeight.value,maxDynamicContentSize!==undefined?maxDynamicContentSize:containerHeight.value);if(!_normalizedSnapPoints.includes(dynamicSnapPoint)){_normalizedSnapPoints.push(dynamicSnapPoint);}_normalizedSnapPoints=_normalizedSnapPoints.sort(function(a,b){return b-a;});dynamicSnapPointIndex.value=_normalizedSnapPoints.indexOf(dynamicSnapPoint);return _normalizedSnapPoints;}" };
-let __initData2 = { code: "function pnpm_useAnimatedSnapPointsTs2(){const{enableDynamicSizing,snapPoints}=this.__closure;if(enableDynamicSizing){return true;}const _snapPoints=snapPoints?'value'in snapPoints?snapPoints.value:snapPoints:[];if(_snapPoints.length&&_snapPoints.find(function(snapPoint){return typeof snapPoint==='string';})){return true;}return false;}" };
+let closure_4;
+let hasOwnProperty;
+let metroImportDefault;
+let metroRequire;
+let closure_2 = ["focusHook", "scrollEventsHandlersHook", "enableFooterMarginAdjustment", "overScrollMode", "keyboardDismissMode", "showsVerticalScrollIndicator", "contentContainerStyle", "refreshing", "onRefresh", "progressViewOffset", "refreshControl", "preserveScrollMomentum", "onScroll", "onScrollBeginDrag", "onScrollEndDrag", "lockableScrollableContentOffsetY", "onContentSizeChange"];
+let react = react_mod;
+({ forwardRef: closure_4, useContext: hasOwnProperty, useImperativeHandle: metroRequire, useMemo: metroImportDefault } = react);
+react = react_mod;
+const jsx = Fragment.jsx;
+let closure_9 = { code: "function pnpm_createBottomSheetScrollableComponentTsx1(){const{preserveScrollMomentum,SCROLLABLE_DECELERATION_RATE_MAPPER,animatedScrollableState,showsVerticalScrollIndicator,SCROLLABLE_STATE}=this.__closure;return{...(preserveScrollMomentum?{}:{decelerationRate:SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value]}),showsVerticalScrollIndicator:showsVerticalScrollIndicator?animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED:showsVerticalScrollIndicator};}" };
 
-export const useAnimatedSnapPoints = (snapPoints, containerHeight, contentHeight, handleHeight, arg4, enableDynamicSizing, maxDynamicContentSize) => {
-  _require = snapPoints;
-  dependencyMap = containerHeight;
-  __initData = contentHeight;
-  __initData2 = handleHeight;
-  let closure_4 = enableDynamicSizing;
-  let closure_5 = maxDynamicContentSize;
-  let obj = require("module_1656");
-  const sharedValue = obj.useSharedValue(-1);
-  const obj2 = require("module_1656");
-  class P {
-    constructor() {
-      iter = closure_1;
-      tmp = closure_0;
-      tmp2 = closure_1;
-      if (closure_1.value === closure_0(closure_1[1]).INITIAL_CONTAINER_HEIGHT) {
-        items = [];
-        items[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
-        return items;
-      } else {
-        iter3 = closure_0;
-        if (iter3) {
-          str = "value";
-          value = iter3;
-          if ("value" in iter3) {
-            value = iter3.value;
-          }
-          items1 = value;
-        } else {
-          items1 = [];
-        }
-        mapped = items1.map(function() { /* body not rendered: F146579 */ });
-        tmp3 = closure_4;
-        if (tmp3) {
-          iter2 = closure_3;
-          if (closure_3.value === tmp(tmp2[1]).INITIAL_HANDLE_HEIGHT) {
-            items2 = [];
-            items2[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
-            return items2;
-          } else {
-            iter4 = closure_2;
-            if (closure_2.value === tmp(tmp2[1]).INITIAL_CONTAINER_HEIGHT) {
-              items3 = [];
-              items3[0] = tmp(tmp2[1]).INITIAL_SNAP_POINT;
-              return items3;
-            } else {
-              tmp4 = globalThis;
-              value4 = closure_5;
-              value1 = iter.value;
-              _Math = Math;
-              min = Math.min;
-              sum = iter4.value + iter2.value;
-              if (undefined === closure_5) {
-                value4 = iter.value;
-              }
-              diff = value1 - min(sum, value4);
-              if (!mapped.includes(diff)) {
-                arr1 = mapped.push(diff);
-              }
-              sorted = mapped.sort(function() { /* body not rendered: F146580 */ });
-              tmp8 = closure_6;
-              closure_6.value = sorted.indexOf(diff);
-              return sorted;
-            }
-          }
-        } else {
-          return mapped;
-        }
+export function createBottomSheetScrollableComponent(SCROLLVIEW, animatedComponent) {
+  let closure_0 = SCROLLVIEW;
+  const ScrollableComponent = animatedComponent;
+  return closure_4((overScrollMode, arg1) => {
+    let closure_129_2;
+    let contentContainerStyle;
+    let enableFooterMarginAdjustment;
+    let focusHook;
+    let lockableScrollableContentOffsetY;
+    let onRefresh;
+    let onScroll;
+    let onScrollBeginDrag;
+    let onScrollEndDrag;
+    let preserveScrollMomentum;
+    let progressViewOffset;
+    let refreshControl;
+    let refreshing;
+    let scrollEventsHandlersHook;
+    let scrollHandler;
+    let scrollableContentOffsetY;
+    ({ focusHook, scrollEventsHandlersHook, enableFooterMarginAdjustment } = overScrollMode);
+    let tmp = undefined !== enableFooterMarginAdjustment && enableFooterMarginAdjustment;
+    overScrollMode = overScrollMode.overScrollMode;
+    let str = "never";
+    if (undefined !== overScrollMode) {
+      str = overScrollMode;
+    }
+    const keyboardDismissMode = overScrollMode.keyboardDismissMode;
+    let str2 = "interactive";
+    if (undefined !== keyboardDismissMode) {
+      str2 = keyboardDismissMode;
+    }
+    const showsVerticalScrollIndicator = overScrollMode.showsVerticalScrollIndicator;
+    const tmp2 = undefined === showsVerticalScrollIndicator || showsVerticalScrollIndicator;
+    let closure_0 = tmp2;
+    ({ onRefresh, preserveScrollMomentum } = overScrollMode);
+    ({ onScroll, onContentSizeChange: closure_129_2 } = overScrollMode);
+    ({ contentContainerStyle, refreshing, progressViewOffset, refreshControl, onScrollBeginDrag, onScrollEndDrag, lockableScrollableContentOffsetY } = overScrollMode);
+    const tmp3 = _objectWithoutProperties(overScrollMode, closure_2);
+    let tmp6 = hasOwnProperty(react2.BottomSheetDraggableContext);
+    let closure_3 = tmp6;
+    let obj = _mod5275;
+    const scrollHandler1 = obj.useScrollHandler(scrollEventsHandlersHook, onScroll, onScrollBeginDrag, onScrollEndDrag, lockableScrollableContentOffsetY);
+    const scrollableRef = scrollHandler1.scrollableRef;
+    ({ scrollableContentOffsetY, scrollHandler } = scrollHandler1);
+    let obj2 = _mod5275;
+    const bottomSheetInternal = obj2.useBottomSheetInternal();
+    const animatedScrollableState = bottomSheetInternal.animatedScrollableState;
+    const enableContentPanningGesture = bottomSheetInternal.enableContentPanningGesture;
+    const obj3 = react3;
+    const setContentSize = obj3.useBottomSheetContentSizeSetter().setContentSize;
+    if (!tmp6) {
+      if (enableContentPanningGesture) {
+        throw "'Scrollable' cannot be used out of the BottomSheet!";
       }
     }
-  }
-  P.__closure = { containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue };
-  P.__workletHash = 15015207820492;
-  P.__initData = __initData;
-  let items = [snapPoints, containerHeight, handleHeight, contentHeight, arg4, enableDynamicSizing, maxDynamicContentSize, sharedValue];
-  ({ containerHeight, INITIAL_CONTAINER_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_CONTAINER_HEIGHT, INITIAL_SNAP_POINT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_SNAP_POINT, snapPoints, normalizeSnapPoint: require("normalizeSnapPoint").normalizeSnapPoint, enableDynamicSizing, handleHeight, INITIAL_HANDLE_HEIGHT: require("DEFAULT_HANDLE_HEIGHT").INITIAL_HANDLE_HEIGHT, contentHeight, maxDynamicContentSize, dynamicSnapPointIndex: sharedValue });
-  const derivedValue = obj2.useDerivedValue(P, items);
-  const obj4 = require("module_1656");
-  class N {
-    constructor() {
-      tmp = closure_4;
-      if (tmp) {
-        flag = true;
-        return true;
-      } else {
-        iter = closure_0;
-        if (iter) {
-          str = "value";
-          value = iter;
-          if ("value" in iter) {
-            value = iter.value;
-          }
-          items = value;
+    const tmp4Result = _mod1651;
+    class J {
+      constructor() {
+        let obj;
+        let tmp6;
+        const tmp = preserveScrollMomentum;
+        if (tmp) {
+          obj = {};
         } else {
-          items = [];
+          obj = { decelerationRate: SCROLLVIEW(ScrollableComponent[7]).SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value] };
         }
-        length = items.length;
-        tmp2 = !length;
-        if (length) {
-          tmp2 = !items.find(function() { /* body not rendered: F146581 */ });
-        }
-        return !tmp2;
+        const obj2 = { showsVerticalScrollIndicator: tmp6 };
+        const merged = Object.assign(obj);
+        tmp6 = closure_0 && animatedScrollableState.value === SCROLLVIEW(ScrollableComponent[7]).SCROLLABLE_STATE.UNLOCKED;
+        return obj2;
       }
     }
-  }
-  N.__closure = { enableDynamicSizing, snapPoints };
-  N.__workletHash = 4816362093278;
-  N.__initData = __initData2;
-  let items1 = [derivedValue, sharedValue, obj4.useDerivedValue(N)];
-  return items1;
-};
+    J.__closure = { preserveScrollMomentum, SCROLLABLE_DECELERATION_RATE_MAPPER: GESTURE_SOURCE.SCROLLABLE_DECELERATION_RATE_MAPPER, animatedScrollableState, showsVerticalScrollIndicator: tmp2, SCROLLABLE_STATE: GESTURE_SOURCE.SCROLLABLE_STATE };
+    J.__workletHash = 1780437272380;
+    J.__initData = __initData;
+    const items = [animatedScrollableState, tmp2, preserveScrollMomentum];
+    const items1 = [tmp6];
+    ({ preserveScrollMomentum, SCROLLABLE_DECELERATION_RATE_MAPPER: GESTURE_SOURCE.SCROLLABLE_DECELERATION_RATE_MAPPER, animatedScrollableState, showsVerticalScrollIndicator: tmp2, SCROLLABLE_STATE: GESTURE_SOURCE.SCROLLABLE_STATE });
+    const animatedProps = tmp4Result.useAnimatedProps(J, items);
+    const tmp10 = metroImportDefault(() => {
+      let result1;
+      if (closure_3) {
+        const Gesture = SCROLLVIEW(ScrollableComponent[8]).Gesture;
+        const NativeResult = Gesture.Native();
+        const result = NativeResult.simultaneousWithExternalGesture(tmp);
+        result1 = result.shouldCancelWhenOutside(false);
+      }
+      return result1;
+    }, items1);
+    const tmp4Result4 = _mod5275;
+    const stableCallback = tmp4Result4.useStableCallback((arg0, arg1) => {
+      setContentSize(arg1);
+      if (closure_1_2) {
+        tmp2(arg0, arg1);
+      }
+    });
+    const tmp4Result5 = _mod5275;
+    const bottomSheetContentContainerStyle = tmp4Result5.useBottomSheetContentContainerStyle(tmp, contentContainerStyle);
+    metroRequire(arg1, () => scrollableRef.current);
+    const tmp4Result6 = _mod5275;
+    const scrollableSetter = tmp4Result6.useScrollableSetter(scrollableRef, closure_0, scrollableContentOffsetY, undefined !== onRefresh, focusHook);
+    const ScrollableContainer = tmp4(5485).ScrollableContainer;
+    let merged = Object.assign(tmp3);
+    return <ScrollableContainer ref={scrollableRef} nativeGesture={tmp10} animatedProps={animatedProps} overScrollMode={str} keyboardDismissMode={str2} refreshing={refreshing} scrollEventThrottle={16} progressViewOffset={progressViewOffset} contentContainerStyle={bottomSheetContentContainerStyle} onRefresh={onRefresh} onScroll={scrollHandler} onContentSizeChange={stableCallback} setContentSize={setContentSize} ScrollableComponent={ScrollableComponent} refreshControl={refreshControl} />;
+  });
+}

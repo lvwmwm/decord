@@ -1,10 +1,10 @@
 // Module ID: 9987
 // Function ID: 9988
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 9987 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 80, height: 64, scales: [2, 3], hash: "5f09a79d208de30c6568041c7b77048f", name: "img_search_empty_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_identity/images", width: 303, height: 198, scales: [2, 3], hash: "af6f5b1f2e3f6f41820436ec96e0f065", name: "guild_identity_education_light", type: "png" });

@@ -1,20 +1,20 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13865
+// Function ID: 13866
 // Name: SearchPeopleTabStore
-// Dependencies: [4857, 6882, 12, 13719, 10686, 1125, 504, 584, 2]
+// Dependencies: [4858, 6889, 12, 13866, 10709, 1114, 504, 572, 2]
 
-// Module 13718 (SearchPeopleTabStore)
+// Module 13865 (SearchPeopleTabStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1125 */;
-import useUserListData from "useUserListData" /* 10686 */;
-import NewMessageUserList from "NewMessageUserList" /* 13719 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import FrecencyStore from "FrecencyStore" /* 6882 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1114 */;
+import useUserListData from "useUserListData" /* 10709 */;
+import NewMessageUserList from "NewMessageUserList" /* 13866 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import FrecencyStore from "FrecencyStore" /* 6889 */;
 import size from "module_2" /* 2 */;
 
-let results, title;
+let title;
 
 let closure_5 = [];
 class PeopleSearchManager {
@@ -54,7 +54,7 @@ class PeopleSearchManager {
         const obj2 = _modDef12;
         const chainResult = obj2.chain(ChannelStore.getMutablePrivateChannels());
         const values = chainResult.values();
-        const found = values.filter(trimmed1(13719).filterGroupDMs);
+        const found = values.filter(trimmed1(13866).filterGroupDMs);
         const mapped = found.map((id) => {
           const items = [id, , ];
           const obj = NewMessageUserList;
@@ -98,7 +98,7 @@ class PeopleSearchManager {
       arr3 = result;
       if ("" !== self.searchQueryString) {
         const obj3 = { title: intl.string(intl2.t.qGlQrW), items: self.groupDMs };
-        intl = tmp2(1125).intl;
+        intl = tmp2(1114).intl;
         const findIndexResult = result.findIndex((title) => {
           title = title.title;
           const intl = intl2.intl;
@@ -141,7 +141,7 @@ class SearchPeopleTabStoreImpl extends Store {
   }
   getResults(arg0) {
     const value = map.get(arg0);
-    results = undefined;
+    let results;
     if (value != null) {
       results = value.getResults();
     }

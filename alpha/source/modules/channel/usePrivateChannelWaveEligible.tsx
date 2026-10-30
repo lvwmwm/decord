@@ -1,307 +1,25 @@
-// Module ID: 17979
-// Function ID: 17980
+// Module ID: 18040
+// Function ID: 18041
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [6049, 4947, 4864, 1084, 558, 576, 504, 11, 4830, 2047, 11001, 2]
+// Dependencies: [6056, 4951, 4865, 1072, 504, 11, 4831, 2044, 11231, 2]
+// Exports: usePrivateChannelWaveEligible
 
-// Module 17979 (usePrivateChannelWaveEligible)
-import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Constants from "Constants" /* 1084 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18040 (usePrivateChannelWaveEligible)
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let _require;
 
 const ChannelFlags = ChannelConstants.ChannelFlags;
 const MessageTypes = Constants.MessageTypes;
-let c7 = 1814400000;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivateChannelWaveEligible(isDM, arg1) {
-  let closure_1;
-  let tmp4;
-  const _require = isDM;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(21);
-  if (cResult[0] !== isDM) {
-    let tmp5 = isDM.isDM() && !isDM.isSystemDM();
-    if (tmp5) {
-      const rawRecipients = isDM.rawRecipients;
-      tmp5 = !rawRecipients.some((bot) => bot.bot);
-    }
-    cResult[0] = isDM;
-    cResult[1] = tmp5;
-    tmp4 = tmp5;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === isDM) {
-    let tmp6;
-    let tmp9;
-    let tmp11;
-    let tmp13;
-    let tmp14;
-    let tmp17;
-    let tmp18;
-    let tmp23;
-    let tmp24;
-    if (cResult[3] === tmp4) {
-      tmp6 = cResult[4];
-    }
-    importDefault = tmp6;
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [RelationshipStore];
-      cResult[5] = items;
-      tmp9 = items;
-    } else {
-      tmp9 = cResult[5];
-    }
-    if (cResult[6] !== tmp6) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      cResult[6] = tmp6;
-      cResult[7] = F;
-      tmp11 = F;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(tmp9, tmp11);
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      const items1 = [RelationshipStore];
-      cResult[8] = items1;
-      tmp13 = items1;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    if (cResult[9] !== tmp6) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      cResult[9] = tmp6;
-      cResult[10] = tmp15;
-      tmp14 = tmp15;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    const _Symbol3 = Symbol;
-    const tmpResult6 = tmp(504);
-    const stateFromStores1 = tmpResult6.useStateFromStores(tmp13, tmp14);
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      const items2 = [MessageStore];
-      cResult[11] = items2;
-      tmp17 = items2;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    if (cResult[12] !== isDM.id) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      cResult[12] = isDM.id;
-      cResult[13] = tmp19;
-      tmp18 = tmp19;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    const tmpResult7 = tmp(504);
-    const stateFromStores2 = tmpResult7.useStateFromStores(tmp17, tmp18);
-    if (cResult[14] !== isDM) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      cResult[14] = isDM;
-      cResult[15] = isDM.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-      const hasFlagResult = isDM.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-      const items3 = [MessageStore];
-      cResult[16] = items3;
-      tmp23 = items3;
-    } else {
-      class F {
-        constructor() {
-          const isFriendResult = null != closure_1 && RelationshipStore.isFriend(tmp);
-          return isFriendResult;
-        }
-      }
-    }
-    if (cResult[17] !== isDM.id) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-      cResult[17] = isDM.id;
-      cResult[18] = T;
-      tmp24 = T;
-    } else {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    const tmpResult8 = tmp(504);
-    const stateFromStores3 = tmpResult8.useStateFromStores(tmp23, tmp24);
-    if (cResult[19] !== isDM.id) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-      const obj6 = SnowflakeUtilsDefault;
-      const extractTimestampResult = obj6.extractTimestamp(isDM.id);
-      const isWithinInterval = tmp(4830).isWithinInterval;
-      tmp(4830);
-      const tmp29 = _modDef2047();
-      cResult[19] = isDM.id;
-      cResult[20] = isWithinInterval(tmp29, _modDef2047(extractTimestampResult), c7);
-      const isWithinIntervalResult = isWithinInterval(tmp29, _modDef2047(extractTimestampResult), c7);
-    } else {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    const tmpResult10 = tmp(11001);
-    const strangerDangerWarning = tmpResult10.useStrangerDangerWarning(isDM.id);
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-      if (!tmp21) {
-        class T {
-          constructor() {
-            return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-          }
-        }
-      }
-      tmp4 = tmp21;
-    }
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-    }
-    if (tmp4) {
-      class T {
-        constructor() {
-          return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-        }
-      }
-      tmp4 = null == strangerDangerWarning;
-    }
-    return tmp4;
-  }
-  if (tmp4) {
-    class T {
-      constructor() {
-        return MessageStore.hasCurrentUserSentWaveBlockingMessage(isDM.id);
-      }
-    }
-  }
-  cResult[2] = isDM;
-  cResult[3] = tmp4;
-  cResult[4] = null;
-  tmp6 = tmp7;
-}) : (function usePrivateChannelWaveEligible(isDM, arg1) {
-  const _require = isDM;
+const result = size.fileFinishedImporting("modules/channel/usePrivateChannelWaveEligible.tsx");
+
+export function usePrivateChannelWaveEligible(isDM, arg1) {
+  _require = isDM;
   let tmp = isDM.isDM() && !isDM.isSystemDM();
   if (tmp) {
     const rawRecipients = isDM.rawRecipients;
@@ -346,8 +64,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
   const extractTimestampResult = obj5.extractTimestamp(isDM.id);
   const isWithinInterval = require("DateUtils").isWithinInterval;
   require("DateUtils");
-  const tmp10 = recipientId(2047)();
-  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(2047)(extractTimestampResult), c7);
+  const tmp10 = recipientId(2044)();
+  const isWithinIntervalResult = isWithinInterval(tmp10, recipientId(2044)(extractTimestampResult), 1814400000);
   const obj6 = require("useStrangerDangerWarning");
   const strangerDangerWarning = obj6.useStrangerDangerWarning(isDM.id);
   if (tmp) {
@@ -375,7 +93,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePrivate
     tmp = null == strangerDangerWarning;
   }
   return tmp;
-});
-const result = size.fileFinishedImporting("modules/channel/usePrivateChannelWaveEligible.tsx");
-
-export const usePrivateChannelWaveEligible = tmp2;
+}

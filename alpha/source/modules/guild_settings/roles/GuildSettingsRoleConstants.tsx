@@ -1,16 +1,16 @@
-// Module ID: 19650
-// Function ID: 19651
+// Module ID: 19713
+// Function ID: 19714
 // Name: GuildSettingsRoleConstants
-// Dependencies: [19651, 1084, 19653, 1096, 4942, 586, 1125, 2]
+// Dependencies: [19714, 1072, 19716, 1084, 4946, 574, 1114, 2]
 
-// Module 19650 (GuildSettingsRoleConstants)
-import intl5 from "intl" /* 1125 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19651 */;
-import Constants from "Constants" /* 1084 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19653 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1096 */;
-import shims_mod from "shims" /* 586 */;
+// Module 19713 (GuildSettingsRoleConstants)
+import intl5 from "intl" /* 1114 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19714 */;
+import Constants from "Constants" /* 1072 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19716 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
+import shims_mod from "shims" /* 574 */;
 import size from "module_2" /* 2 */;
 
 let DEFAULT_GRADIENT_ROLE_COLORS;

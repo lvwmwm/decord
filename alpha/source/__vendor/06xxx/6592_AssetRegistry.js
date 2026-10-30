@@ -1,10 +1,10 @@
 // Module ID: 6592
 // Function ID: 6593
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 6592 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "2eb4a3a7eee9d2c37d6ab83a1bbe761d", name: "img_account_sync_steam_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "353a91a70e129c6496d346cd0dd42f3d", name: "img_account_sync_skype_white", type: "png" });

@@ -1,89 +1,34 @@
-// Module ID: 7613
-// Function ID: 7614
+// Module ID: 7618
+// Function ID: 7619
 // Name: useInterval
-// Dependencies: [19, 558, 576, 38, 2]
+// Dependencies: [19, 38, 2]
+// Exports: default
 
-// Module 7613 (useInterval)
+// Module 7618 (useInterval)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
+let c2;
 let c3;
-let closure_4;
-({ useEffect: c3, useRef: closure_4 } = react);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterval(current, arg1) {
-  let closure_2;
-  let tmp2;
-  let tmp3;
-  let tmp6;
-  let tmp7;
-  _require = current;
+({ useEffect: c2, useRef: c3 } = react);
+const result = size.fileFinishedImporting("hooks/useInterval.tsx");
+
+export default function useInterval(current, arg1) {
+  let ref;
   let closure_1 = arg1;
-  const obj = require("react");
-  const cResult = obj.c(6);
-  dependencyMap = closure_4(current);
-  const ref = closure_4(null);
-  if (cResult[0] !== current) {
-    const fn = function c() {
-      closure_2.current = current;
-    };
-    const items = [current];
-    cResult[0] = current;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  ref(tmp2, tmp3);
-  const tmp4 = ref;
-  if (cResult[3] !== arg1) {
-    const fn2 = function f() {
-      let ref2;
-      if (null !== closure_1) {
-        const _setInterval = setInterval;
-        ref.current = setInterval(function tick() {
-          closure_1(ref[3])(null != ref.current, "Missing callback");
-          ref.current();
-        }, tmp);
-        return () => clearInterval(ref2.current);
-      } else if (null !== ref.current) {
-        const _clearInterval = clearInterval;
-        clearInterval(ref.current);
-        ref.current = null;
-      }
-    };
-    const items1 = [arg1];
-    cResult[3] = arg1;
-    cResult[4] = fn2;
-    cResult[5] = items1;
-    tmp7 = items1;
-    tmp6 = fn2;
-  } else {
-    tmp6 = cResult[4];
-    tmp7 = cResult[5];
-  }
-  tmp4(tmp6, tmp7);
-}) : (function useInterval(current, arg1) {
-  let closure_1 = arg1;
-  let closure_2 = closure_4(current);
-  const ref = closure_4(null);
+  let closure_2 = ref(current);
+  ref = ref(null);
   const items = [current];
-  const tmp = ref(() => {
+  const tmp = closure_2(() => {
     closure_2.current = current;
   }, items);
   const items1 = [arg1];
-  ref(() => {
+  closure_2(() => {
     let ref2;
     if (null !== closure_1) {
       const _setInterval = setInterval;
       ref.current = setInterval(function tick() {
-        closure_1(ref[3])(null != ref.current, "Missing callback");
+        current(closure_1[1])(null != ref.current, "Missing callback");
         ref.current();
       }, tmp);
       return () => clearInterval(ref2.current);
@@ -93,7 +38,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterval(
       ref.current = null;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("hooks/useInterval.tsx");
-
-export default tmp3;
+};

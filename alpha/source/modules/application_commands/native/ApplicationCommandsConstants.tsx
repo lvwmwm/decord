@@ -1,10 +1,10 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10205
+// Function ID: 10206
 // Name: ApplicationCommandsConstants
-// Dependencies: [1381, 2]
+// Dependencies: [1376, 2]
 
-// Module 10180 (ApplicationCommandsConstants)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+// Module 10205 (ApplicationCommandsConstants)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let num = 56;

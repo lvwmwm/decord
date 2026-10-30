@@ -1,23 +1,21 @@
-// Module ID: 6708
-// Function ID: 6709
+// Module ID: 6715
+// Function ID: 6716
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 4879, 6709, 1084, 21, 5005, 6710, 587, 558, 576, 1125, 1199, 5271, 6018, 2]
+// Dependencies: [19, 4880, 6716, 1072, 21, 5009, 6717, 575, 1114, 6025, 1188, 5619, 2]
+// Exports: default
 
-// Module 6708 (GuildLimitedAccessInfoAlert)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl4 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import AlertDefault from "Alert" /* 6018 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6709 */;
+// Module 6715 (GuildLimitedAccessInfoAlert)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AlertDefault from "Alert" /* 6025 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6716 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles from "TextStyles" /* 6710 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -32,88 +30,9 @@ obj2 = { textAlign: "center", marginVertical: 12 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_BOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));
 let closure_7 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimitedAccessInfoAlert(arg0) {
-  let first;
-  let guildId;
-  let items;
-  let onClose;
-  let tmp13;
-  let tmp15;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(13);
-  ({ guildId, onClose } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const obj2 = { helpdeskArticle };
-    const formatResult = intl.format(intl4.t.ZqkXsC, obj2);
-    cResult[0] = formatResult;
-    first = formatResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const guild = GuildStore.getGuild(guildId);
-    if (null != guild) {
-      const intl2 = tmp(1125).intl;
-      const obj3 = { guildName: guild.name, helpdeskArticle };
-      first = intl2.format(tmp(1125).t.jn0Xyx, obj3);
-    }
-    cResult[1] = guildId;
-    cResult[2] = first;
-    tmp8 = first;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const header = tmp4.header;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult = intl3.string(intl4.t.kJwpBW);
-    cResult[3] = stringResult;
-    tmp13 = stringResult;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.header) {
-    const obj4 = { style: header, children: tmp13 };
-    const tmp17 = hasOwnProperty(native.LegacyText, obj4);
-    cResult[4] = tmp4.header;
-    cResult[5] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[5];
-  }
-  if (cResult[6] === tmp8) {
-    let tmp18;
-    if (cResult[7] === tmp4.text) {
-      tmp18 = cResult[8];
-    }
-    if (cResult[9] === onClose) {
-      if (cResult[10] === tmp15) {
-        let tmp20;
-        if (cResult[11] === tmp18) {
-          tmp20 = cResult[12];
-        }
-        return tmp20;
-      }
-    }
-    const obj5 = { onClose, children: items };
-    items = [tmp15, tmp18];
-    const tmp23 = metroRequire(AlertDefault, obj5);
-    cResult[9] = onClose;
-    cResult[10] = tmp15;
-    cResult[11] = tmp18;
-    cResult[12] = tmp23;
-    tmp20 = tmp23;
-  }
-  const obj6 = { style: tmp4.text, variant: "text-md/medium", children: tmp8 };
-  const tmp19 = hasOwnProperty(Text_Text.Text, obj6);
-  cResult[6] = tmp8;
-  cResult[7] = tmp4.text;
-  cResult[8] = tmp19;
-  tmp18 = tmp19;
-}) : (function GuildLimitedAccessInfoAlert(arg0) {
+const result = size.fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
+
+export default function GuildLimitedAccessInfoAlert(arg0) {
   let guildId;
   let intl3;
   let items;
@@ -127,20 +46,17 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildLimit
   let formatResult1 = formatResult;
   const tmp4 = helpdeskArticle;
   if (null != guild) {
-    const intl2 = tmp2(1125).intl;
+    const intl2 = tmp2(1114).intl;
     const obj2 = { guildName: guild.name, helpdeskArticle: tmp4 };
-    formatResult1 = intl2.format(tmp2(1125).t.jn0Xyx, obj2);
+    formatResult1 = intl2.format(tmp2(1114).t.jn0Xyx, obj2);
   }
   const obj3 = { onClose, children: items };
   const obj4 = { style: tmp.header, children: intl3.string(intl4.t.kJwpBW) };
   const tmp8 = AlertDefault;
-  const LegacyText = tmp2(1199).LegacyText;
-  intl3 = tmp2(1125).intl;
+  const LegacyText = tmp2(1188).LegacyText;
+  intl3 = tmp2(1114).intl;
   items = [hasOwnProperty(LegacyText, obj4), ];
   const obj5 = { style: tmp.text, variant: "text-md/medium", children: formatResult1 };
   items[1] = hasOwnProperty(Text_Text.Text, obj5);
   return metroRequire(tmp8, obj3);
-});
-const result = size.fileFinishedImporting("modules/guild_limited_access/native/GuildLimitedAccessInfoAlert.tsx");
-
-export default tmp7;
+};

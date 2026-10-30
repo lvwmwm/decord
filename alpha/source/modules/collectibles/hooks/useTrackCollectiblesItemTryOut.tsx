@@ -1,21 +1,21 @@
-// Module ID: 8692
-// Function ID: 8693
+// Module ID: 8726
+// Function ID: 8727
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 7708, 1084, 1391, 1993, 558, 576, 573, 1264, 7720, 2]
+// Dependencies: [19, 7713, 1072, 1386, 1988, 563, 1253, 7725, 2]
+// Exports: default
 
-// Module 8692 (useTrackCollectiblesItemTryOut)
+// Module 8726 (useTrackCollectiblesItemTryOut)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7708 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7713 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, type;
 
 let AnalyticsPremiumFeatureNames;
 let metroRequire;
@@ -23,56 +23,9 @@ const useCallback = react.useCallback;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ AnalyticsPremiumFeatureNames, AnalyticsPremiumFeatureTiers: metroRequire } = PremiumConstants);
 let obj = { [CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION]: AnalyticsPremiumFeatureNames.AVATAR_DECORATION, [CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT]: AnalyticsPremiumFeatureNames.PROFILE_EFFECT, [CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME]: undefined, [CollectiblesItemType.CollectiblesItemType.NAMEPLATE]: undefined, [CollectiblesItemType.CollectiblesItemType.NONE]: undefined, [CollectiblesItemType.CollectiblesItemType.BUNDLE]: undefined, [CollectiblesItemType.CollectiblesItemType.VARIANTS_GROUP]: undefined, [CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU]: undefined };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackCollectiblesItemTryOut(location_stack) {
-  let products;
-  let tmp4;
-  let tmp5;
-  _require = location_stack;
-  obj = require("react");
-  const cResult = obj.c(5);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [CollectiblesCategoryStore];
-    const fn = function c() {
-      return products.products;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(573);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === location_stack) {
-    let tmp8;
-    if (cResult[3] === stateFromStores) {
-      tmp8 = cResult[4];
-    }
-    return tmp8;
-  }
-  const fn2 = function _(type) {
-    let name;
-    let obj2;
-    type = type.type;
-    const value = stateFromStores.get(type.skuId);
-    obj = { feature_name: obj[type], feature_tier: obj2.isPremiumCollectiblesProduct(value) ? metroRequire.FREE : metroRequire.PREMIUM_STANDARD, feature_selection: name, location_stack };
-    const track = AnalyticsUtilsDefault.track;
-    const PREMIUM_FEATURE_TRY_OUT = AnalyticEvents.PREMIUM_FEATURE_TRY_OUT;
-    AnalyticsUtilsDefault;
-    name = undefined;
-    obj2 = CollectiblesUtils;
-    if (value != null) {
-      name = value.name;
-    }
-    track(PREMIUM_FEATURE_TRY_OUT, obj);
-  };
-  cResult[2] = location_stack;
-  cResult[3] = stateFromStores;
-  cResult[4] = fn2;
-  tmp8 = fn2;
-}) : (function useTrackCollectiblesItemTryOut(location_stack) {
+const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackCollectiblesItemTryOut.tsx");
+
+export default function useTrackCollectiblesItemTryOut(location_stack) {
   let products;
   _require = location_stack;
   obj = require("useStateFromStores");
@@ -95,7 +48,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTrackCo
     }
     track(PREMIUM_FEATURE_TRY_OUT, obj);
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/collectibles/hooks/useTrackCollectiblesItemTryOut.tsx");
-
-export default tmp3;
+};

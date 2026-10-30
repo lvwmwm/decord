@@ -1,32 +1,32 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9056
+// Function ID: 9057
 // Name: GuildSettingsStore
-// Dependencies: [4872, 9022, 4861, 4875, 8905, 1403, 4879, 1389, 1084, 9044, 8461, 11, 9045, 1294, 584, 9046, 4871, 9047, 2047, 9048, 504, 12, 510, 2]
+// Dependencies: [4873, 9035, 4862, 4876, 8193, 1398, 4880, 1384, 1072, 9057, 8495, 11, 9058, 1283, 572, 9059, 4872, 9060, 2044, 9061, 504, 12, 510, 2]
 
-// Module 9043 (GuildSettingsStore)
+// Module 9056 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
-import PlainRecord from "PlainRecord" /* 4872 */;
-import GuildRecord from "GuildRecord" /* 4875 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9044 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9045 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9046 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9047 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9048 */;
-import GuildProfileStore from "GuildProfileStore" /* 9022 */;
-import InviteRecord from "InviteRecord" /* 8905 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8461 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
+import PlainRecord from "PlainRecord" /* 4873 */;
+import GuildRecord from "GuildRecord" /* 4876 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9057 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 9058 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 9059 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 9060 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 9061 */;
+import GuildProfileStore from "GuildProfileStore" /* 9035 */;
+import InviteRecord from "InviteRecord" /* 8193 */;
+import UserRecord from "UserRecord" /* 1398 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8495 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, c52, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -118,7 +118,7 @@ function _createInvite(code) {
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   created_at = code.created_at;
   ({ flags: obj.flags, roles: obj.roles } = code);
-  tmp7 = _modDef2047;
+  tmp7 = _modDef2044;
   const tmp4 = new tmp(obj);
   return tmp4;
 }
@@ -251,7 +251,7 @@ class GuildSettingsStore extends Store {
   }
   showPublicSuccessModal() {
     const Storage = Storage2.Storage;
-    return !Storage.get(results);
+    return !Storage.get(closure_28);
   }
   getGuild() {
     return guild;

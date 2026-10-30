@@ -1,10 +1,10 @@
-// Module ID: 7829
-// Function ID: 7830
+// Module ID: 7834
+// Function ID: 7835
 // Name: InteractionObserverUtils
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 7829 (InteractionObserverUtils)
+// Module 7834 (InteractionObserverUtils)
 import size from "module_2" /* 2 */;
 
 let set;
@@ -44,7 +44,7 @@ export function getIntersectionObserver(current) {
   }
   return value;
 }
-export function watch(current2, current, arg2) {
+export function watch(current2, current, current22) {
   weakMap = weakMap1.get(current2);
   const obj = weakMap1;
   if (weakMap == null) {
@@ -56,7 +56,7 @@ export function watch(current2, current, arg2) {
   if (!weakMap.has(current)) {
     current2.observe(current);
   }
-  const result = weakMap.set(current, arg2);
+  const result = weakMap.set(current, current2);
   const result1 = obj.set(current2, weakMap);
 }
 export function unwatch(current2, current) {

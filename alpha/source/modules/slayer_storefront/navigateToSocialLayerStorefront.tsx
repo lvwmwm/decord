@@ -1,17 +1,17 @@
-// Module ID: 15230
-// Function ID: 15231
+// Module ID: 15269
+// Function ID: 15270
 // Name: navigateToSocialLayerStorefront
-// Dependencies: [5, 4879, 7392, 1084, 10624, 7390, 1111, 7507, 8903, 2]
+// Dependencies: [5, 4880, 7400, 1072, 10650, 7398, 1100, 7515, 8937, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 15230 (navigateToSocialLayerStorefront)
-import router_utils from "router_utils" /* 1111 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7390 */;
-import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10624 */;
+// Module 15269 (navigateToSocialLayerStorefront)
+import router_utils from "router_utils" /* 1100 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7398 */;
+import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 10650 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7392 */;
-import Constants from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7400 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -40,7 +40,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
             joinedAt = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else {
           if (1 === c3) {
@@ -121,7 +121,7 @@ let obj = function _navigateToSocialLayerStorefrontWithGuildPreview() {
                 }
               } else {
                 c4 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (2 === c3) {

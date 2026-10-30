@@ -1,27 +1,28 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15558
+// Function ID: 15559
 // Name: BlockedUserUtils
-// Dependencies: [4947, 1385, 2]
+// Dependencies: [4951, 1380, 2]
 // Exports: filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, hasBlockedOrIgnoredUserIds
 
-// Module 15518 (BlockedUserUtils)
-import RelationshipStore from "RelationshipStore" /* 4947 */;
+// Module 15558 (BlockedUserUtils)
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 let id;
 
 const result = size.fileFinishedImporting("modules/blocking/BlockedUserUtils.tsx");
 
-export function filterOutBlockedOrIgnoredUsers(mapped, stateFromStores1) {
+export function filterOutBlockedOrIgnoredUsers(mapped, arg1) {
+  let closure_0 = arg1;
   const found = mapped.filter((item) => {
-    const obj = stateFromStores1(dependencyMap[1]);
+    const obj = closure_0(dependencyMap[1]);
     return obj.isNotNullish(item);
   });
   return found.filter((id) => {
     let hasItem;
     id = id.id;
-    const obj = stateFromStores1;
-    if (null != stateFromStores1) {
+    const obj = closure_0;
+    if (null != closure_0) {
       hasItem = obj.has(id);
     } else {
       hasItem = RelationshipStore.isBlockedOrIgnored(id);

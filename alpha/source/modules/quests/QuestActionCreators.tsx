@@ -1,34 +1,34 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9662
+// Function ID: 9663
 // Name: QuestActionCreators
-// Dependencies: [5, 7831, 9638, 6760, 5928, 6759, 7834, 7836, 6768, 1084, 6771, 1294, 584, 6434, 1125, 7842, 1254, 6734, 1272, 9639, 9642, 6775, 9643, 7830, 7914, 7921, 9644, 7629, 7853, 9645, 5054, 9646, 9647, 9648, 9664, 7832, 9665, 1264, 7807, 9666, 9650, 1101, 9667, 2]
+// Dependencies: [5, 7836, 9663, 6767, 5935, 6766, 7839, 7841, 6775, 1072, 6778, 1283, 572, 6441, 1114, 7847, 1243, 6741, 1261, 9664, 9667, 6782, 9668, 7835, 7920, 7927, 9669, 7634, 7858, 9670, 5058, 9671, 9672, 9673, 9689, 7837, 9690, 1253, 7812, 9691, 9675, 1090, 9692, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9637 (QuestActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
-import QuestTypes from "QuestTypes" /* 6771 */;
-import AdCreativeType from "AdCreativeType" /* 6775 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7629 */;
-import QuestDataUtils from "QuestDataUtils" /* 7830 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7836 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9638 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9639 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9642 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9643 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9644 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9666 */;
+// Module 9662 (QuestActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
+import QuestTypes from "QuestTypes" /* 6778 */;
+import AdCreativeType from "AdCreativeType" /* 6782 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7634 */;
+import QuestDataUtils from "QuestDataUtils" /* 7835 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7841 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9663 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9664 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9667 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9668 */;
+import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9669 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9691 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7831 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6760 */;
-import NetworkStore from "NetworkStore" /* 5928 */;
-import SortedGuildStore from "SortedGuildStore" /* 6759 */;
-import QuestStore from "QuestStore" /* 7834 */;
-import Constants from "Constants" /* 1084 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7836 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6767 */;
+import NetworkStore from "NetworkStore" /* 5935 */;
+import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import QuestStore from "QuestStore" /* 7839 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let _null, bounty, content, enabled, noFillAdContentId, playable, quest, stack_trace, text, userStatus;
@@ -54,7 +54,7 @@ let obj = function _manuallyStartConsoleQuest() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -84,7 +84,7 @@ let obj = function _manuallyStartConsoleQuest() {
             message = undefined;
             c7 = 1;
             c8 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c7) {
           if (arg0 === 1) {
@@ -194,7 +194,7 @@ obj = function _manualStopConsoleQuest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -209,7 +209,7 @@ obj = function _manualStopConsoleQuest() {
             return obj3;
           } else {
             const HTTP = HTTPUtils.HTTP;
-            const obj4 = { url: syncedClientThemes.QUEST_ON_CONSOLE_STOP(closure_0), rejectWithError: false };
+            const obj4 = { url: authStore3.QUEST_ON_CONSOLE_STOP(closure_0), rejectWithError: false };
             const post = HTTP.post;
             c2 = 1;
             c1 = 1;
@@ -225,7 +225,7 @@ obj = function _manualStopConsoleQuest() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;
@@ -247,7 +247,7 @@ obj = function _resetRecentQuestCompletions() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -277,7 +277,7 @@ obj = function _resetRecentQuestCompletions() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = 3;
@@ -302,7 +302,7 @@ obj = function _fetchCurrentQuests() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let tmp26;
@@ -423,7 +423,7 @@ obj = function _fetchCurrentQuests() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp26) {
         if (0 === c4) {
           c6 = 3;
@@ -438,11 +438,14 @@ obj = function _fetchCurrentQuests() {
 };
 obj = function _sendHeartbeat() {
   obj = _asyncToGenerator(async function(arg0, value) {
+    let _var;
     let c0;
     let c1;
     let c2;
     let c4;
     let c5;
+    let closure_3;
+    let executable_fingerprint;
     let obj2;
     let obj6;
     let obj7;
@@ -450,126 +453,57 @@ obj = function _sendHeartbeat() {
     let terminal;
     let tmp26;
     let closure_0 = arg0;
-    if (c7 === 2) {
-      c7 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      let executable_fingerprint;
-      try {
-        let questId;
-        let _var;
-        let application_id;
-        let executable_path;
-        let body;
-        c7 = 2;
-        if (0 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp4;
-            questId = undefined;
-            _var = undefined;
-            application_id = undefined;
-            terminal = undefined;
-            executable_path = undefined;
-            executable_fingerprint = undefined;
-            ({ questId: c0, streamKey: c1, applicationId: c2, terminal } = closure_0);
-            const tmp59 = closure_0;
-            if (terminal === undefined) {
-              terminal = false;
-            }
-            ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
-            body = undefined;
-            c6 = 1;
-            c7 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else if (1 === c6) {
-          if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c7 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            executable_fingerprint = 1;
-            const request = { url: closure_131_14.QUESTS_HEARTBEAT(questId), body: obj6, trackedActionData: obj7, rejectWithError: false };
-            const post = closure_131_1(closure_131_2[17]).post;
-            const tmp44 = closure_131_1(closure_131_2[17]);
-            obj6 = { stream_key: _var, application_id, terminal, executable_path, executable_fingerprint };
-            obj7 = { event: closure_131_0(closure_131_2[18]).NetworkActionNames.QUEST_HEARTBEAT, properties: obj8 };
-            obj8 = { quest_id: questId, application_id, terminal, is_overlay: false, stack_trace: _var, is_playtime_eligible: true };
-            const _Error = Error;
-            const self3 = this;
-            const self4 = this;
-            const error = new Error();
-            const stack = error.stack;
-            _var = stack;
-            if (stack == null) {
-              _var = "";
-            }
-            c6 = 3;
-            c7 = 1;
-            const obj9 = { value: post(request), done: false };
-            return obj9;
-          }
-        } else {
-          if (2 === c6) {
-            executable_fingerprint = 0;
-            let closure_7 = closure_4;
-            const obj10 = { type: "QUESTS_SEND_HEARTBEAT_FAILURE", error: tmp26, questId, streamKey: _var };
-            const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
-            const self = this;
-            const self2 = this;
-            const tmp22 = closure_131_1(closure_131_2[12]);
-            tmp26 = new closure_131_1(closure_131_2[13])(closure_7);
-            dispatch2(obj10);
-          } else if (arg0 === 1) {
-            c7 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            executable_fingerprint = 0;
-            c7 = 3;
-            const obj11 = { value, done: true };
-            return obj11;
-          } else {
-            body = value;
-            obj = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: obj2.questUserStatusFromServer(body.body), questId, streamKey: _var };
-            const dispatch = closure_131_1(closure_131_2[12]).dispatch;
-            const tmp9 = closure_131_1(closure_131_2[12]);
-            obj2 = closure_131_0(closure_131_2[15]);
-            dispatch(obj);
-            executable_fingerprint = 0;
-          }
-          c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp32) {
-        closure_4 = tmp32;
-        if (0 === executable_fingerprint) {
-          c7 = 3;
-          throw tmp32;
-        } else {
-          c6 = 2;
-        }
-      }
+    const request = { url: closure_131_14.QUESTS_HEARTBEAT(questId), body: obj6, trackedActionData: obj7, rejectWithError: false };
+    const post = closure_131_1(closure_131_2[17]).post;
+    const tmp44 = closure_131_1(closure_131_2[17]);
+    obj6 = { stream_key: _var, application_id, terminal, executable_path, executable_fingerprint };
+    obj7 = { event: closure_131_0(closure_131_2[18]).NetworkActionNames.QUEST_HEARTBEAT, properties: obj8 };
+    obj8 = { quest_id: questId, application_id, terminal, is_overlay: false, stack_trace: _var, is_playtime_eligible: true };
+    const _Error = Error;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error();
+    const stack = error.stack;
+    _var = stack;
+    if (stack == null) {
+      _var = "";
     }
+    await post(request);
+    if (2 === c6) {
+      executable_fingerprint = 0;
+      let closure_7 = closure_4;
+      const obj10 = { type: "QUESTS_SEND_HEARTBEAT_FAILURE", error: tmp26, questId, streamKey: _var };
+      const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
+      const self = this;
+      const self2 = this;
+      const tmp22 = closure_131_1(closure_131_2[12]);
+      tmp26 = new closure_131_1(closure_131_2[13])(closure_7);
+      dispatch2(obj10);
+    } else if (arg0 === 1) {
+      let c7 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      executable_fingerprint = 0;
+      c7 = 3;
+      const obj11 = { value, done: true };
+      return obj11;
+    } else {
+      const body = value;
+      obj = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: obj2.questUserStatusFromServer(body.body), questId, streamKey: _var };
+      const dispatch = closure_131_1(closure_131_2[12]).dispatch;
+      const tmp9 = closure_131_1(closure_131_2[12]);
+      obj2 = closure_131_0(closure_131_2[15]);
+      dispatch(obj);
+      executable_fingerprint = 0;
+    }
+    await "HermesInternal";
+    ({ questId: c0, streamKey: c1, applicationId: c2, terminal } = closure_0);
+    const tmp59 = closure_0;
+    if (terminal === undefined) {
+      terminal = false;
+    }
+    ({ executablePath: c4, executableFingerprint: c5 } = tmp59);
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -594,7 +528,7 @@ obj = function _enrollInQuest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -710,7 +644,7 @@ obj = function _trackClaimQuestReward() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -786,7 +720,7 @@ obj = function _performClaimQuestReward() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -897,7 +831,7 @@ obj = function _fetchQuestRewardCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -954,7 +888,7 @@ obj = function _fetchQuestRewardCode() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp36) {
           closure_3 = tmp36;
           if (0 === c4) {
@@ -989,7 +923,7 @@ obj = function _dismissQuestContent() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -1019,7 +953,7 @@ obj = function _dismissQuestContent() {
                 const obj7 = QuestDataUtils;
                 const adTrafficMetadataSealed = obj7.getAdTrafficMetadataSealed(tmp60, tmp59);
                 const HTTP = HTTPUtils.HTTP;
-                const request = { url: syncedClientThemes.QUESTS_DISMISS_CONTENT(quest_id, content), body: obj6, rejectWithError: false };
+                const request = { url: authStore3.QUESTS_DISMISS_CONTENT(quest_id, content), body: obj6, rejectWithError: false };
                 const post = HTTP.post;
                 obj6 = { traffic_metadata_sealed: tmp40 };
                 const obj10 = QuestDataUtils;
@@ -1068,7 +1002,7 @@ obj = function _dismissQuestContent() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp41) {
         closure_4 = tmp41;
         if (0 === c5) {
@@ -1084,106 +1018,55 @@ obj = function _dismissQuestContent() {
 };
 obj = function _completeQuestPreview() {
   obj = _asyncToGenerator(async (questId) => {
+    let closure_4;
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async function(arg0, value) {
+      let num7;
       let obj2;
       let obj6;
       let tmp24;
-      if (c7 === 2) {
+      const HTTP = closure_131_0(closure_131_2[11]).HTTP;
+      const request = { url: closure_131_14.QUESTS_PREVIEW_COMPLETE(questId), body: obj6, rejectWithError: false };
+      const post = HTTP.post;
+      obj6 = { percent: num7 };
+      await post(request);
+      if (2 === c6) {
+        c5 = 0;
+        closure_3 = closure_4;
+        const obj8 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: tmp24, questId };
+        const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
+        const self = this;
+        const self2 = this;
+        closure_131_1(closure_131_2[12]);
+        tmp24 = new closure_131_1(closure_131_2[13])(closure_3);
+        dispatch2(obj8);
+      } else if (arg0 === 1) {
         c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 0;
+        c7 = 3;
+        return { value, done: true };
       } else {
-        try {
-          let num7;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              closure_3 = tmp;
-              body = tmp4;
-              num7 = closure_1;
-              if (closure_1 === undefined) {
-                num7 = 1;
-              }
-              body = undefined;
-              c6 = 1;
-              c7 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              c5 = 1;
-              const HTTP = closure_131_0(closure_131_2[11]).HTTP;
-              const request = { url: closure_131_14.QUESTS_PREVIEW_COMPLETE(questId), body: obj6, rejectWithError: false };
-              const post = HTTP.post;
-              c6 = 3;
-              c7 = 1;
-              obj6 = { percent: num7 };
-              const obj7 = { value: post(request), done: false };
-              return obj7;
-            }
-          } else {
-            if (2 === c6) {
-              c5 = 0;
-              closure_3 = closure_4;
-              const obj8 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: tmp24, questId };
-              const dispatch2 = closure_131_1(closure_131_2[12]).dispatch;
-              const self = this;
-              const self2 = this;
-              closure_131_1(closure_131_2[12]);
-              tmp24 = new closure_131_1(closure_131_2[13])(closure_3);
-              dispatch2(obj8);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              body = value;
-              obj = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: obj2.questUserStatusFromServer(body.body) };
-              const dispatch = closure_131_1(closure_131_2[12]).dispatch;
-              closure_131_1(closure_131_2[12]);
-              obj2 = closure_131_0(closure_131_2[15]);
-              dispatch(obj);
-              c5 = 0;
-            }
-            c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp29) {
-          closure_4 = tmp29;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp29;
-          } else {
-            c6 = 2;
-          }
-        }
+        body = value;
+        obj = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: obj2.questUserStatusFromServer(body.body) };
+        const dispatch = closure_131_1(closure_131_2[12]).dispatch;
+        closure_131_1(closure_131_2[12]);
+        obj2 = closure_131_0(closure_131_2[15]);
+        dispatch(obj);
+        c5 = 0;
       }
+      await "HermesInternal";
+      closure_3 = tmp;
+      body = tmp4;
+      num7 = closure_1;
+      if (closure_1 === undefined) {
+        num7 = 1;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -1207,7 +1090,7 @@ obj = function _resetQuestPreviewStatus() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1259,7 +1142,7 @@ obj = function _resetQuestPreviewStatus() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -1292,7 +1175,7 @@ obj = function _resetQuestDismissibilityStatus() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1346,7 +1229,7 @@ obj = function _resetQuestDismissibilityStatus() {
               c4 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           closure_3 = tmp28;
@@ -1375,7 +1258,7 @@ obj = function _fetchClaimedQuests() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -1436,7 +1319,7 @@ obj = function _fetchClaimedQuests() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp30) {
         closure_2 = tmp30;
         if (0 === c3) {
@@ -1475,7 +1358,7 @@ obj = function _fetchQuestToDeliver() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1775,10 +1658,10 @@ obj = function _fetchQuestToDeliver() {
               }
               c7 = 0;
               c9 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
             c9 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp208) {
           enabled = tmp208;
@@ -1815,7 +1698,7 @@ obj = function _fetchEarnedQuestToDeliver() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1963,7 +1846,7 @@ obj = function _fetchEarnedQuestToDeliver() {
             c7 = 0;
           }
           c9 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           closure_6 = tmp31;
           if (0 === c7) {
@@ -1995,7 +1878,7 @@ obj = function _updateVideoProgress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2036,7 +1919,7 @@ obj = function _updateVideoProgress() {
             return { value, done: true };
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c3 = 3;
@@ -2050,108 +1933,69 @@ obj = function _updateVideoProgress() {
 obj = function _fetchVideoTranscript() {
   obj = _asyncToGenerator(async (arg0) => {
     let closure_2;
+    let closure_4;
     const user = arg0;
     let closure_1 = arg1;
     let c6 = 0;
     let c7 = 0;
     let c5 = 0;
     const iter = (async (arg0, value) => {
-      if (c7 === 2) {
-        c7 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      let flag;
+      let questAsset;
+      if (1 === c6) {
         if (arg0 === 1) {
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c7 = 3;
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          const obj15 = closure_131_0(closure_131_2[40]);
+          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[40]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
+          if (null != questAsset) {
+            const state = closure_131_10.getState();
+            const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
+            state.setTranscriptAsset(obj4);
+            c5 = 1;
+            const HTTP = closure_131_0(closure_131_2[11]).HTTP;
+            c6 = 3;
+            c7 = 1;
+            const obj5 = { url: questAsset.url, rejectWithError: true };
+            const obj6 = { value: HTTP.get(obj5), done: false };
+            return obj6;
+          } else {
+            const state1 = closure_131_10.getState();
+            const obj7 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
+            state1.setTranscriptAsset(obj7);
+          }
         }
+      } else if (2 === c6) {
+        c5 = 0;
+        const state2 = closure_131_10.getState();
+        const obj8 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
+        state2.setTranscriptAsset(obj8);
+      } else if (arg0 === 1) {
+        c7 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c5 = 0;
+        c7 = 3;
+        return { value, done: true };
       } else {
-        try {
-          let questAsset;
-          let flag;
-          c7 = 2;
-          if (0 === c6) {
-            if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              text = tmp;
-              questAsset = tmp4;
-              flag = closure_1;
-              if (closure_1 === undefined) {
-                flag = false;
-              }
-              questAsset = undefined;
-              text = undefined;
-              c6 = 1;
-              c7 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else {
-            if (1 === c6) {
-              if (arg0 === 1) {
-                c7 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c7 = 3;
-                return { value, done: true };
-              } else {
-                const obj15 = closure_131_0(closure_131_2[40]);
-                questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[40]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
-                if (null != questAsset) {
-                  const state = closure_131_10.getState();
-                  const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
-                  state.setTranscriptAsset(obj4);
-                  c5 = 1;
-                  const HTTP = closure_131_0(closure_131_2[11]).HTTP;
-                  c6 = 3;
-                  c7 = 1;
-                  const obj5 = { url: questAsset.url, rejectWithError: true };
-                  const obj6 = { value: HTTP.get(obj5), done: false };
-                  return obj6;
-                } else {
-                  const state1 = closure_131_10.getState();
-                  const obj7 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
-                  state1.setTranscriptAsset(obj7);
-                }
-              }
-            } else if (2 === c6) {
-              c5 = 0;
-              const state2 = closure_131_10.getState();
-              const obj8 = { questId: user.id, fetchStatus: closure_131_11.FAILURE };
-              state2.setTranscriptAsset(obj8);
-            } else if (arg0 === 1) {
-              c7 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c7 = 3;
-              return { value, done: true };
-            } else {
-              text = value;
-              const state3 = closure_131_10.getState();
-              const obj10 = { questId: user.id, fetchStatus: closure_131_11.SUCCESS, text: text.text, url: questAsset.url };
-              state3.setTranscriptAsset(obj10);
-              c5 = 0;
-            }
-            c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp38) {
-          closure_4 = tmp38;
-          if (0 === c5) {
-            c7 = 3;
-            throw tmp38;
-          } else {
-            c6 = 2;
-          }
-        }
+        text = value;
+        const state3 = closure_131_10.getState();
+        const obj10 = { questId: user.id, fetchStatus: closure_131_11.SUCCESS, text: text.text, url: questAsset.url };
+        state3.setTranscriptAsset(obj10);
+        c5 = 0;
       }
+      await "HermesInternal";
+      text = tmp;
+      questAsset = tmp4;
+      flag = closure_1;
+      if (closure_1 === undefined) {
+        flag = false;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -2173,7 +2017,7 @@ obj = function _fetchQuest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2237,7 +2081,7 @@ obj = function _fetchQuestPreview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2294,7 +2138,7 @@ obj = function _fetchQuestPreview() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp36) {
           closure_3 = tmp36;
           if (0 === c4) {
@@ -2336,7 +2180,7 @@ obj = function _fetchQuestHomeHero() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -2564,7 +2408,7 @@ obj = function _fetchQuestHomeHero() {
           c5 = 0;
         }
         c7 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp96) {
         closure_4 = tmp96;
         if (0 === c5) {
@@ -2602,7 +2446,7 @@ obj = function _fetchQuestHomeHeroPreview() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -2766,7 +2610,7 @@ obj = function _fetchQuestHomeHeroPreview() {
           dispatch2(obj10);
           c6 = 0;
           c8 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp69) {
         questHomeHero = tmp69;
@@ -2850,9 +2694,9 @@ export function overrideQuestForPlacement(placement, questId) {
   const obj2 = { type: "QUESTS_PREVIEW_OVERRIDE", placement, questId };
   obj.dispatch(obj2);
 }
-export function selectTaskPlatform(questId, platform) {
+export function selectTaskPlatform(id, platform) {
   obj = DispatcherDefault;
-  const obj2 = { type: "QUESTS_SELECT_TASK_PLATFORM", questId, platform };
+  const obj2 = { type: "QUESTS_SELECT_TASK_PLATFORM", questId: id, platform };
   obj.dispatch(obj2);
 }
 export function questsVisibleMobileMessagesChanged(payload) {

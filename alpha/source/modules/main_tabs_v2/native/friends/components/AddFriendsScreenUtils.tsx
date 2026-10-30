@@ -1,153 +1,112 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 18045
+// Function ID: 18046
 // Name: AddFriendsScreenUtils
-// Dependencies: [5, 4857, 1084, 5010, 10697, 7471, 5700, 1125, 13624, 7624, 7474, 2]
+// Dependencies: [5, 4858, 1072, 5014, 10720, 7479, 5706, 1114, 13772, 7629, 7482, 2]
 // Exports: acceptIncomingRequest, addContactSuggestion, dismissIncomingRequest, sendWave
 
-// Module 17984 (AddFriendsScreenUtils)
-import Constants from "Constants" /* 1084 */;
-import MessageConstants from "MessageConstants" /* 5010 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7474 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10697 */;
+// Module 18045 (AddFriendsScreenUtils)
+import Constants from "Constants" /* 1072 */;
+import MessageConstants from "MessageConstants" /* 5014 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10720 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
-let channelId, closure_4, closure_5;
+let channelId;
 
 let obj = function _sendWave() {
   obj = _asyncToGenerator(async (recipientIds, arg1, source) => {
+    let closure_4;
+    let closure_5;
     let closure_1 = arg1;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     const iter = (async (arg0, value) => {
+      let flag;
       let obj11;
-      if (c8 === 2) {
-        c8 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
+      if (1 === c7) {
         if (arg0 === 1) {
+          c8 = 3;
           throw value;
         } else if (arg0 === 2) {
+          c8 = 3;
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        try {
-          let flag;
-          c8 = 2;
-          if (0 === c7) {
-            if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c8 = 3;
-              return { value, done: true };
-            } else {
-              closure_4 = tmp;
-              channelId = tmp4;
-              source = undefined;
-              flag = closure_1;
-              if (closure_1 === undefined) {
-                flag = true;
-              }
-              channelId = undefined;
-              c7 = 1;
+          channelId = closure_132_4.getDMFromUserId(recipientIds);
+          if (null == channelId) {
+            c6 = 1;
+            c7 = 4;
+            c8 = 1;
+            const obj5 = { value: obj11.getDMChannel(recipientIds), done: false };
+            obj11 = closure_132_1(closure_132_2[5]);
+            return obj5;
+          } else {
+            c6 = 2;
+            if (null != channelId) {
+              const obj7 = { channelId, source };
+              const obj6 = closure_132_0(closure_132_2[8]);
+              obj6.trackWaveCtaClicked(obj7);
+              c7 = 5;
               c8 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else {
-            if (1 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                channelId = closure_132_4.getDMFromUserId(recipientIds);
-                if (null == channelId) {
-                  c6 = 1;
-                  c7 = 4;
-                  c8 = 1;
-                  const obj5 = { value: obj11.getDMChannel(recipientIds), done: false };
-                  obj11 = closure_132_1(closure_132_2[5]);
-                  return obj5;
-                } else {
-                  c6 = 2;
-                  if (null != channelId) {
-                    const obj7 = { channelId, source };
-                    const obj6 = closure_132_0(closure_132_2[8]);
-                    obj6.trackWaveCtaClicked(obj7);
-                    c7 = 5;
-                    c8 = 1;
-                    const obj8 = closure_132_1(closure_132_2[9]);
-                    const obj9 = { location: closure_132_6.SEND_WAVE };
-                    const obj10 = { value: obj8.sendStickers(channelId, ["749054660769218631"], "", obj9), done: false };
-                    return obj10;
-                  } else {
-                    c6 = 0;
-                  }
-                }
-              }
-            } else if (2 === c7) {
-              c6 = 0;
-              const presentError2 = closure_132_0(closure_132_2[6]).presentError;
-              closure_132_0(closure_132_2[6]);
-              const intl2 = closure_132_0(closure_132_2[7]).intl;
-              presentError2(intl2.string(closure_132_0(closure_132_2[7]).t.iufib1));
-              c8 = 3;
-              return { value: undefined, done: true };
-            } else if (3 === c7) {
-              c6 = 0;
-              const presentError = closure_132_0(closure_132_2[6]).presentError;
-              closure_132_0(closure_132_2[6]);
-              const intl = closure_132_0(closure_132_2[7]).intl;
-              presentError(intl.string(closure_132_0(closure_132_2[7]).t.iufib1));
-            } else if (4 === c7) {
-              if (arg0 === 1) {
-                c8 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c6 = 0;
-                c8 = 3;
-                return { value, done: true };
-              } else {
-                channelId = value;
-                c6 = 0;
-              }
-            } else if (arg0 === 1) {
-              c8 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 0;
-              c8 = 3;
-              return { value, done: true };
+              const obj8 = closure_132_1(closure_132_2[9]);
+              const obj9 = { location: closure_132_6.SEND_WAVE };
+              const obj10 = { value: obj8.sendStickers(channelId, ["749054660769218631"], "", obj9), done: false };
+              return obj10;
             } else {
-              const tmp6 = flag;
-              if (tmp6) {
-                const obj15 = { recipientIds };
-                obj = closure_132_1(closure_132_2[5]);
-                obj.openPrivateChannel(obj15);
-              }
+              c6 = 0;
             }
-            c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
           }
-        } catch (tmp55) {
-          closure_5 = tmp55;
-          if (0 === c6) {
-            c8 = 3;
-            throw tmp55;
-          } else if (1 === tmp57) {
-            c7 = 2;
-          } else {
-            c7 = 3;
-          }
+        }
+      } else if (2 === c7) {
+        c6 = 0;
+        const presentError2 = closure_132_0(closure_132_2[6]).presentError;
+        closure_132_0(closure_132_2[6]);
+        const intl2 = closure_132_0(closure_132_2[7]).intl;
+        presentError2(intl2.string(closure_132_0(closure_132_2[7]).t.iufib1));
+        c8 = 3;
+        return { value: undefined, done: true };
+      } else if (3 === c7) {
+        c6 = 0;
+        const presentError = closure_132_0(closure_132_2[6]).presentError;
+        closure_132_0(closure_132_2[6]);
+        const intl = closure_132_0(closure_132_2[7]).intl;
+        presentError(intl.string(closure_132_0(closure_132_2[7]).t.iufib1));
+      } else if (4 === c7) {
+        if (arg0 === 1) {
+          c8 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 0;
+          c8 = 3;
+          return { value, done: true };
+        } else {
+          channelId = value;
+          c6 = 0;
+        }
+      } else if (arg0 === 1) {
+        c8 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c6 = 0;
+        c8 = 3;
+        return { value, done: true };
+      } else {
+        const tmp6 = flag;
+        if (tmp6) {
+          const obj15 = { recipientIds };
+          obj = closure_132_1(closure_132_2[5]);
+          obj.openPrivateChannel(obj15);
         }
       }
+      await "HermesInternal";
+      channelId = tmp4;
+      flag = closure_1;
+      if (closure_1 === undefined) {
+        flag = true;
+      }
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -179,7 +138,7 @@ export function sendWave() {
 }
 export function addContactSuggestion(user) {
   let obj3;
-  const obj2 = { userId: user.id, context: obj3, type: "IconComponent", fromFriendSuggestion: null };
+  const obj2 = { userId: user.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
   obj3 = { location: AnalyticsSections.FRIENDS_ADD_FRIENDS_MODAL };
   obj = RelationshipActionCreatorsDefault;
   obj.addRelationship(obj2);

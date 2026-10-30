@@ -1,34 +1,24 @@
-// Module ID: 17795
-// Function ID: 17796
+// Module ID: 17866
+// Function ID: 17867
 // Name: useShouldDisableMessageRequestSettings
-// Dependencies: [558, 6713, 5682, 5689, 2]
+// Dependencies: [6720, 5688, 5695, 2]
+// Exports: useShouldDisableMessageRequestSettings
 
-// Module 17795 (useShouldDisableMessageRequestSettings)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5689 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17866 (useShouldDisableMessageRequestSettings)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5695 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDisableMessageRequestSettings() {
-  const obj = AgeVerificationUtils;
-  let isVerifiedTeen = obj.useIsVerifiedTeen();
-  const useIsSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault;
-  RegionalFeatureConfigUtils;
-  if (isVerifiedTeen) {
-    isVerifiedTeen = useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
-  }
-  return isVerifiedTeen;
-}) : (function useShouldDisableMessageRequestSettings() {
-  const obj = AgeVerificationUtils;
-  let isVerifiedTeen = obj.useIsVerifiedTeen();
-  const useIsSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault;
-  RegionalFeatureConfigUtils;
-  if (isVerifiedTeen) {
-    isVerifiedTeen = useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
-  }
-  return isVerifiedTeen;
-});
 const result = size.fileFinishedImporting("modules/message_request/hooks/useShouldDisableMessageRequestSettings.tsx");
 
-export const useShouldDisableMessageRequestSettings = tmp2;
+export function useShouldDisableMessageRequestSettings() {
+  const obj = AgeVerificationUtils;
+  let isVerifiedTeen = obj.useIsVerifiedTeen();
+  const useIsSettingTeenByDefault = RegionalFeatureConfigUtils.useIsSettingTeenByDefault;
+  RegionalFeatureConfigUtils;
+  if (isVerifiedTeen) {
+    isVerifiedTeen = useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.MESSAGE_REQUEST_RESTRICTIONS);
+  }
+  return isVerifiedTeen;
+}

@@ -1,82 +1,19 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15283
+// Function ID: 15284
 // Name: useReferralIncentiveEligibility
-// Dependencies: [2056, 558, 576, 8482, 15240, 504, 2]
+// Dependencies: [2053, 8516, 15280, 504, 2]
+// Exports: useReferralIncentiveEligibility
 
-// Module 15243 (useReferralIncentiveEligibility)
+// Module 15283 (useReferralIncentiveEligibility)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8482 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15240 */;
-import SubscriptionStore from "SubscriptionStore" /* 2056 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8516 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15280 */;
+import SubscriptionStore from "SubscriptionStore" /* 2053 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferralIncentiveEligibility(preventFetch) {
-  let premiumTypeSubscription;
-  let referralRewardType;
-  let tmp7;
-  let tmp8;
-  let useAltReferralCardArt;
-  const obj = react;
-  const cResult = obj.c(6);
-  preventFetch = preventFetch.preventFetch;
-  let tmp4 = undefined === preventFetch;
-  const _location = preventFetch.location;
-  if (!tmp4) {
-    tmp4 = preventFetch;
-  }
-  const tmpResult = useIsEligibleSenderForReferralProgram;
-  const isEligibleSenderForReferralProgram = tmpResult.useIsEligibleSenderForReferralProgram(tmp4);
-  const tmpResult3 = PremiumReferralIncentivesExperiment;
-  const premiumReferralIncentivesVariant = tmpResult3.usePremiumReferralIncentivesVariant(_location);
-  ({ referralRewardType, useAltReferralCardArt } = premiumReferralIncentivesVariant);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SubscriptionStore];
-    const fn = function s() {
-      return premiumTypeSubscription.getPremiumTypeSubscription();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp7 = items;
-    tmp8 = fn;
-  } else {
-    [tmp7, tmp8] = cResult;
-  }
-  const tmpResult4 = get_initialized;
-  const stateFromStores = tmpResult4.useStateFromStores(tmp7, tmp8);
-  let tmp13 = true === isEligibleSenderForReferralProgram;
-  const tmp11 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
-  const tmp12 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
-  let tmp14 = tmp13 && referralRewardType === tmp(15240).ReferralRewardType.ORBS;
-  if (tmp13) {
-    tmp13 = referralRewardType === tmp(15240).ReferralRewardType.DISCOUNT;
-  }
-  if (tmp13) {
-    tmp13 = tmp11;
-  }
-  if (tmp13) {
-    tmp13 = tmp12;
-  }
-  if (!tmp14) {
-    tmp14 = tmp13;
-  }
-  if (cResult[2] === referralRewardType) {
-    if (cResult[3] === tmp14) {
-      let tmp15;
-      if (cResult[4] === useAltReferralCardArt) {
-        tmp15 = cResult[5];
-      }
-      return tmp15;
-    }
-  }
-  const obj2 = { isEligibleForIncentive: tmp14, referralRewardType, useAltReferralCardArt };
-  cResult[2] = referralRewardType;
-  cResult[3] = tmp14;
-  cResult[4] = useAltReferralCardArt;
-  cResult[5] = obj2;
-  tmp15 = obj2;
-}) : (function useReferralIncentiveEligibility(preventFetch) {
+const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralIncentiveEligibility.tsx");
+
+export function useReferralIncentiveEligibility(preventFetch) {
   let premiumTypeSubscription;
   let referralRewardType;
   let useAltReferralCardArt;
@@ -96,9 +33,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferra
   let tmp8 = true === isEligibleSenderForReferralProgram;
   const tmp6 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
   const tmp7 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
-  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(15240).ReferralRewardType.ORBS;
+  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(15280).ReferralRewardType.ORBS;
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(15240).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(15280).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;
@@ -110,7 +47,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReferra
     isEligibleForIncentive = tmp8;
   }
   return { isEligibleForIncentive, referralRewardType, useAltReferralCardArt };
-});
-const result = size.fileFinishedImporting("modules/premium/referral_program/hooks/useReferralIncentiveEligibility.tsx");
-
-export const useReferralIncentiveEligibility = tmp2;
+}

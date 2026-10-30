@@ -1,83 +1,53 @@
-// Module ID: 8637
-// Function ID: 8638
+// Module ID: 8671
+// Function ID: 8672
 // Name: useGameMentionData
-// Dependencies: [2020, 8638, 1389, 8640, 558, 576, 504, 568, 2]
-// Exports: getGameMentionData
+// Dependencies: [2015, 8672, 1384, 8674, 504, 558, 2]
+// Exports: getGameMentionData, useGameMentionData
 
-// Module 8637 (useGameMentionData)
-import shallowEqualDefault from "shallowEqual" /* 568 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 8640 */;
-import GameStore from "GameStore" /* 2020 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8638 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8671 (useGameMentionData)
+import shallowEqualDefault from "shallowEqual" /* 558 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 8674 */;
+import GameStore from "GameStore" /* 2015 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8672 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMentionData(gameId) {
-  let first;
-  let tmp8;
-  let tmp9;
-  _require = gameId;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp5 = GameStore;
-    const items = [GameStore, , ];
-    items[1] = GameAutocompleteStore;
-    items[2] = UserStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== gameId) {
-    const fn = function c() {
-      let icon;
-      let media;
-      let tmp5;
-      const currentUser = UserStore.getCurrentUser();
-      const game = GameStore.getGame(gameId);
-      const gameById = GameAutocompleteStore.getGameById(gameId);
-      if (null != game) {
-        let nsfwAllowed;
-        const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
-        useGameProfileObscured;
-        if (currentUser != null) {
-          nsfwAllowed = currentUser.nsfwAllowed;
-        }
-        if (!isGameProfileObscured(game, nsfwAllowed)) {
-          const obj3 = { gameId, gameName: null, gameIcon: icon };
-          ({ name: obj2.gameName, media } = game);
-          icon = undefined;
-          if (media != null) {
-            icon = media.icon;
-          }
-          tmp5 = obj3;
-        }
-      } else if (null != gameById) {
-        const obj = { gameId, gameName: null, gameIcon: null };
-        ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
-        tmp5 = obj;
+const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
+
+export function getGameMentionData(gameId) {
+  let icon;
+  let media;
+  let tmp4;
+  const currentUser = UserStore.getCurrentUser();
+  const game = GameStore.getGame(gameId);
+  const gameById = GameAutocompleteStore.getGameById(gameId);
+  if (null != game) {
+    let nsfwAllowed;
+    const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
+    useGameProfileObscured;
+    if (currentUser != null) {
+      nsfwAllowed = currentUser.nsfwAllowed;
+    }
+    if (!isGameProfileObscured(game, nsfwAllowed)) {
+      const obj3 = { gameId, gameName: null, gameIcon: icon };
+      ({ name: obj2.gameName, media } = game);
+      icon = undefined;
+      if (media != null) {
+        icon = media.icon;
       }
-      return tmp5;
-    };
-    const items1 = [gameId];
-    cResult[1] = gameId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp9 = items1;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
+      tmp4 = obj3;
+    }
+  } else if (null != gameById) {
+    const obj = { gameId, gameName: null, gameIcon: null };
+    ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
+    tmp4 = obj;
   }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp8, tmp9, shallowEqualDefault);
-}) : (function useGameMentionData(gameId) {
+  return tmp4;
+}
+export function useGameMentionData(gameId) {
   _require = gameId;
   let obj = require("get initialized");
   const items = [GameStore, GameAutocompleteStore, UserStore];
@@ -112,37 +82,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameMen
     }
     return tmp5;
   }, items1, shallowEqualDefault);
-});
-const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
-
-export function getGameMentionData(gameId) {
-  let icon;
-  let media;
-  let tmp4;
-  const currentUser = UserStore.getCurrentUser();
-  const game = GameStore.getGame(gameId);
-  const gameById = GameAutocompleteStore.getGameById(gameId);
-  if (null != game) {
-    let nsfwAllowed;
-    const isGameProfileObscured = useGameProfileObscured.isGameProfileObscured;
-    useGameProfileObscured;
-    if (currentUser != null) {
-      nsfwAllowed = currentUser.nsfwAllowed;
-    }
-    if (!isGameProfileObscured(game, nsfwAllowed)) {
-      const obj3 = { gameId, gameName: null, gameIcon: icon };
-      ({ name: obj2.gameName, media } = game);
-      icon = undefined;
-      if (media != null) {
-        icon = media.icon;
-      }
-      tmp4 = obj3;
-    }
-  } else if (null != gameById) {
-    const obj = { gameId, gameName: null, gameIcon: null };
-    ({ name: obj.gameName, icon: obj.gameIcon } = gameById);
-    tmp4 = obj;
-  }
-  return tmp4;
 }
-export const useGameMentionData = tmp2;

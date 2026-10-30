@@ -1,42 +1,29 @@
-// Module ID: 18658
-// Function ID: 18659
+// Module ID: 18717
+// Function ID: 18718
 // Name: useSearchHostSurface
-// Dependencies: [18600, 558, 1504, 5289, 587, 2]
+// Dependencies: [18659, 1499, 5591, 575, 2]
+// Exports: useSearchHostSurfaceColor
 
-// Module 18658 (useSearchHostSurface)
-import nativeDefault from "native" /* 587 */;
-import Link from "Link" /* 1504 */;
-import useToken2 from "useToken" /* 5289 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18600 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18717 (useSearchHostSurface)
+import nativeDefault from "native" /* 575 */;
+import Link from "Link" /* 1499 */;
+import useToken2 from "useToken" /* 5591 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18659 */;
 import size from "module_2" /* 2 */;
 
 const SearchNavigatorScreens = SearchNavigatorConstants.SearchNavigatorScreens;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSearchHostSurfaceColor() {
-  let MOBILE_ACTIONSHEET_BACKGROUND;
-  const obj = Link;
-  const route = obj.useRoute();
-  const useToken = useToken2.useToken;
-  useToken2;
-  if (route.name === SearchNavigatorScreens.SEARCH_TABS) {
-    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.BACKGROUND_BASE_LOW;
-  } else {
-    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
-  }
-  return useToken(MOBILE_ACTIONSHEET_BACKGROUND);
-}) : (function useSearchHostSurfaceColor() {
-  let MOBILE_ACTIONSHEET_BACKGROUND;
-  const obj = Link;
-  const route = obj.useRoute();
-  const useToken = useToken2.useToken;
-  useToken2;
-  if (route.name === SearchNavigatorScreens.SEARCH_TABS) {
-    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.BACKGROUND_BASE_LOW;
-  } else {
-    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
-  }
-  return useToken(MOBILE_ACTIONSHEET_BACKGROUND);
-});
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/useSearchHostSurface.tsx");
 
-export const useSearchHostSurfaceColor = tmp2;
+export function useSearchHostSurfaceColor() {
+  let MOBILE_ACTIONSHEET_BACKGROUND;
+  const obj = Link;
+  const route = obj.useRoute();
+  const useToken = useToken2.useToken;
+  useToken2;
+  if (route.name === SearchNavigatorScreens.SEARCH_TABS) {
+    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.BACKGROUND_BASE_LOW;
+  } else {
+    MOBILE_ACTIONSHEET_BACKGROUND = nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND;
+  }
+  return useToken(MOBILE_ACTIONSHEET_BACKGROUND);
+}

@@ -1,10 +1,10 @@
 // Module ID: 15162
 // Function ID: 15163
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 15162 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 33, scales: [2, 3], hash: "68d0a7491ea9de9245e6ac89adfb6384", name: "img_tier_0_error_mobile", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 16, height: 16, scales: [2, 3], hash: "e75d6cb3291053e29f69fac93519aa0b", name: "spectator", type: "png" });

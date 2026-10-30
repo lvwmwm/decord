@@ -1,11 +1,11 @@
-// Module ID: 10825
-// Function ID: 10826
+// Module ID: 10848
+// Function ID: 10849
 // Name: ConjureRemixStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 10825 (ConjureRemixStore)
+// Module 10848 (ConjureRemixStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

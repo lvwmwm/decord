@@ -1,74 +1,25 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14215
+// Function ID: 14216
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 5005, 587, 558, 576, 1125, 9765, 2]
+// Dependencies: [19, 21, 5009, 575, 1114, 9791, 2]
+// Exports: default
 
-// Module 14067 (SkipHeaderButton)
+// Module 14215 (SkipHeaderButton)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import HeaderShared from "HeaderShared" /* 9765 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import HeaderShared from "HeaderShared" /* 9791 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let obj2;
 const jsx = Fragment.jsx;
-let obj = { button: obj2, insideNavigatorButton: { paddingRight: 16 } };
-obj2 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+let obj = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, insideNavigatorButton: { paddingRight: 16 } };
+({ color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT });
 let closure_3 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipHeaderButton(label) {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(9);
-  const tmp4 = closure_3();
-  if (cResult[0] !== label.label) {
-    label = label.label;
-    if (label == null) {
-      const intl = tmp(1125).intl;
-      label = intl.string(tmp(1125).t["5Wxrcd"]);
-    }
-    cResult[0] = label.label;
-    cResult[1] = label;
-    tmp5 = label;
-  } else {
-    tmp5 = cResult[1];
-  }
-  let prop;
-  if (label.insideNavigator) {
-    prop = tmp4.insideNavigatorButton;
-  }
-  if (cResult[2] === tmp4.button) {
-    let tmp8;
-    if (cResult[3] === prop) {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === tmp5) {
-      if (cResult[6] === label) {
-        let tmp9;
-        if (cResult[7] === tmp8) {
-          tmp9 = cResult[8];
-        }
-        return tmp9;
-      }
-    }
-    const HeaderTextButton = tmp(9765).HeaderTextButton;
-    const merged = Object.assign(label);
-    const tmp14 = <HeaderTextButton labelStyle={tmp8} label={tmp5} accessibilityLabel={tmp5} />;
-    cResult[5] = tmp5;
-    cResult[6] = label;
-    cResult[7] = tmp8;
-    cResult[8] = tmp14;
-    tmp9 = tmp14;
-  }
-  const items = [tmp4.button, prop];
-  cResult[2] = tmp4.button;
-  cResult[3] = prop;
-  cResult[4] = items;
-  tmp8 = items;
-}) : (function SkipHeaderButton(label) {
+const result = size.fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
+
+export default function SkipHeaderButton(label) {
   let items;
   const tmp = closure_3();
   label = label.label;
@@ -87,7 +38,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function SkipHeader
   }
   items[1] = prop;
   return tmp4(HeaderTextButton, obj);
-});
-const result = size.fileFinishedImporting("modules/nuf/native/components/SkipHeaderButton.tsx");
-
-export default tmp3;
+};

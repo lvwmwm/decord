@@ -1,9 +1,9 @@
-// Module ID: 1409
-// Function ID: 1410
+// Module ID: 1404
+// Function ID: 1405
 // Name: DisplayNameFont
 // Dependencies: [2]
 
-// Module 1409 (DisplayNameFont)
+// Module 1404 (DisplayNameFont)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameFont.tsx");

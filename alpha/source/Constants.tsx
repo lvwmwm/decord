@@ -1,26 +1,26 @@
-// Module ID: 1084
-// Function ID: 1085
+// Module ID: 1072
+// Function ID: 1073
 // Name: Constants
-// Dependencies: [16, 1085, 1094, 1095, 1100, 1093, 1101, 1102, 1096, 1103, 2, 1104, 1105, 1106, 1107, 1108]
+// Dependencies: [16, 1073, 1082, 1083, 1089, 1081, 1090, 1091, 1084, 1092, 2, 1093, 1094, 1095, 1096, 1097]
 // Exports: MARKDOWN_SPOILER_WRAPPER, YOUTUBE_EMBED_URL, YOUTUBE_PREVIEW_URL
 
-// Module 1084 (Constants)
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import MessageTypes from "MessageTypes" /* 1100 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import ApplicationDistributors from "ApplicationDistributors" /* 1103 */;
-import ConstantsIOS2 from "ConstantsIOS" /* 1104 */;
-import ChannelTypes from "ChannelTypes" /* 1105 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1106 */;
-import MessageReferenceTypes from "MessageReferenceTypes" /* 1107 */;
-import SKUFlags from "SKUFlags" /* 1108 */;
+// Module 1072 (Constants)
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import MessageTypes from "MessageTypes" /* 1089 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import ApplicationDistributors from "ApplicationDistributors" /* 1092 */;
+import ConstantsIOS2 from "ConstantsIOS" /* 1093 */;
+import ChannelTypes from "ChannelTypes" /* 1094 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1095 */;
+import MessageReferenceTypes from "MessageReferenceTypes" /* 1096 */;
+import SKUFlags from "SKUFlags" /* 1097 */;
 import checkEnv from "checkEnv" /* 16 */;
-import RouteConstants from "RouteConstants" /* 1085 */;
-import Constants_mod from "Constants" /* 1095 */;
-import PathUtils from "utils/PathUtils" /* 1093 */;
-import ColorUtils from "utils/ColorUtils" /* 1102 */;
+import RouteConstants from "RouteConstants" /* 1073 */;
+import Constants_mod from "Constants" /* 1083 */;
+import PathUtils from "utils/PathUtils" /* 1081 */;
+import ColorUtils from "utils/ColorUtils" /* 1091 */;
 import "BigFlagUtils";
-import BigFlagUtils_mod from "BigFlagUtils" /* 1096 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
 import size from "module_2" /* 2 */;
 import "Constants";
 
@@ -218,8 +218,8 @@ const obj2 = {
   GUILD_ROLE_MEMBERS(id, id2) {
     return "/guilds/" + id + "/roles/" + id2 + "/members";
   },
-  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, roleId) {
-    return "/guilds/" + guildId + "/roles/" + roleId + "/connections/eligibility";
+  GUILD_ROLE_CONNECTIONS_ELIGIBILITY(guildId, id) {
+    return "/guilds/" + guildId + "/roles/" + id + "/connections/eligibility";
   },
   GUILD_ROLE_CONNECTIONS_ASSIGN(arg0, arg1) {
     return "/guilds/" + arg0 + "/roles/" + arg1 + "/connections/assign";

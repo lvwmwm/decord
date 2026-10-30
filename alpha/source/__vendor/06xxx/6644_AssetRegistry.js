@@ -1,10 +1,10 @@
 // Module ID: 6644
 // Function ID: 6645
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 6644 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "5de31cd2c9db12c0dfd39e4c1dd0eb1f", name: "img_roblox_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "8e2bbfe1d3e4356ba435a2b178386105", name: "img_account_sync_epic_light", type: "svg" });

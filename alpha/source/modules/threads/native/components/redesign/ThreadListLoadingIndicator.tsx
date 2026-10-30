@@ -1,37 +1,20 @@
-// Module ID: 18686
-// Function ID: 18687
+// Module ID: 18745
+// Function ID: 18746
 // Name: ThreadListLoadingIndicator
-// Dependencies: [19, 21, 5005, 558, 576, 11533, 2]
+// Dependencies: [19, 21, 5009, 11732, 2]
 
-// Module 18686 (ThreadListLoadingIndicator)
+// Module 18745 (ThreadListLoadingIndicator)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 11533 */;
+import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 11732 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles({ spinner: { width: 32, height: 32 } });
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ThreadListLoadingIndicator() {
-  let tmp4;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const tmp3 = closure_4();
-  if (cResult[0] !== tmp3.spinner) {
-    const tmp7 = jsx(MessageLoadingSpinnerDefault, { style: tmp3.spinner, animate: true });
-    cResult[0] = tmp3.spinner;
-    cResult[1] = tmp7;
-    tmp4 = tmp7;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function ThreadListLoadingIndicator() {
-  return jsx(MessageLoadingSpinnerDefault, { style: closure_4().spinner, animate: true });
-}));
+let closure_3 = createStyles.createStyles({ spinner: { width: 32, height: 32 } });
+const memoResult = react.memo(function ThreadListLoadingIndicator() {
+  return jsx(MessageLoadingSpinnerDefault, { style: closure_3().spinner, animate: true });
+});
 const result = size.fileFinishedImporting("modules/threads/native/components/redesign/ThreadListLoadingIndicator.tsx");
 
 export default memoResult;

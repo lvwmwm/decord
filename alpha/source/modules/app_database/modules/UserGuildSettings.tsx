@@ -1,14 +1,14 @@
-// Module ID: 7658
-// Function ID: 7659
+// Module ID: 7663
+// Function ID: 7664
 // Name: UserGuildSettings
-// Dependencies: [5, 6762, 3, 4883, 12, 2]
+// Dependencies: [5, 6769, 3, 4887, 12, 2]
 
-// Module 7658 (UserGuildSettings)
+// Module 7663 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4883 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4887 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -45,7 +45,7 @@ class UserGuildSettings {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

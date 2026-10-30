@@ -1,13 +1,13 @@
-// Module ID: 19953
-// Function ID: 19954
+// Module ID: 20016
+// Function ID: 20017
 // Name: SafetyFlowsActionCreators
-// Dependencies: [5, 1084, 6734, 1272, 6434, 2]
+// Dependencies: [5, 1072, 6741, 1261, 6441, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 19953 (SafetyFlowsActionCreators)
-import Constants from "Constants" /* 1084 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+// Module 20016 (SafetyFlowsActionCreators)
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ obj = function _resendVerificationCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

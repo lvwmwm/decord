@@ -1,14 +1,14 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17461
+// Function ID: 17462
 // Name: SupportUtils
-// Dependencies: [5, 2066, 1380, 4962, 5698, 2065, 2]
+// Dependencies: [5, 2063, 1375, 4966, 5704, 2062, 2]
 // Exports: emailSupport
 
-// Module 17407 (SupportUtils)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import LinkingDefault from "Linking" /* 5698 */;
+// Module 17461 (SupportUtils)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import LinkingDefault from "Linking" /* 5704 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, constants;
@@ -40,7 +40,7 @@ let obj = function _emailSupport() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ let obj = function _emailSupport() {
         } else {
           openURL(value);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c3 = 3;

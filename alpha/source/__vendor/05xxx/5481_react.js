@@ -1,38 +1,24 @@
 // Module ID: 5481
 // Function ID: 5482
 // Name: react
-// Dependencies: [19]
-// Exports: useStableCallback
+// Dependencies: [19, 5271]
+// Exports: useBottomSheetTimingConfigs
 
 // Module 5481 (react)
 import react from "react" /* 19 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5271 */;
 
-let current;
+const useMemo = react.useMemo;
 
-let _window;
-let c2;
-let c3;
-let map;
-({ useCallback: _window, useEffect: map, useLayoutEffect: c2, useRef: c3 } = react);
-
-export function useStableCallback(arg0) {
-  const _window = arg0;
-  map = _false(undefined);
-  React2(() => {
-    ref.current = current;
-  });
-  const tmp2 = map(() => () => {
-    ref.current = undefined;
-  }, []);
-  return React(() => {
-    const items = [...arguments];
-    current = ref.current;
-    let applyResult;
-    if (current != null) {
-      const items1 = [];
-      HermesBuiltin.arraySpread(items1, items, 0);
-      applyResult = HermesBuiltin.apply(current, items1, tmp2);
-    }
-    return applyResult;
-  }, []);
-}
+export const useBottomSheetTimingConfigs = (arg0) => {
+  const easing = arg0;
+  const items = [, , ];
+  ({ duration: arr[0], easing: arr[1], reduceMotion: arr[2] } = arg0);
+  return useMemo(() => {
+    let ANIMATION_DURATION;
+    const ANIMATION_EASING = easing.easing || GESTURE_SOURCE.ANIMATION_EASING;
+    const obj = { easing: ANIMATION_EASING, duration: ANIMATION_DURATION, reduceMotion: easing.reduceMotion };
+    ANIMATION_DURATION = tmp.duration || GESTURE_SOURCE.ANIMATION_DURATION;
+    return obj;
+  }, items);
+};

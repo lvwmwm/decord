@@ -1,44 +1,17 @@
-// Module ID: 14274
-// Function ID: 14275
+// Module ID: 11136
+// Function ID: 11137
 // Name: useRefreshSavedMessages
-// Dependencies: [19, 558, 576, 14275, 2]
+// Dependencies: [19, 11137, 2]
+// Exports: default
 
-// Module 14274 (useRefreshSavedMessages)
-import SavedMessagesActions from "SavedMessagesActions" /* 14275 */;
+// Module 11136 (useRefreshSavedMessages)
+import SavedMessagesActions from "SavedMessagesActions" /* 11137 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshSavedMessages(arg0) {
-  let closure_0;
-  let tmp3;
-  let tmp4;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  _require = tmp2;
-  if (cResult[0] !== (undefined === arg0 || arg0)) {
-    const fn = function f() {
-      const tmp = closure_0;
-      if (tmp) {
-        const obj = SavedMessagesActions;
-        const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
-      }
-    };
-    const items = [tmp2];
-    cResult[0] = undefined === arg0 || arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp4 = items;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const effect = react.useEffect(tmp3, tmp4);
-}) : (function useRefreshSavedMessages() {
+export default function useRefreshSavedMessages() {
   let flag = arg0;
   if (arg0 === undefined) {
     flag = true;
@@ -51,7 +24,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefresh
       const andUpdateSavedMessages = obj.fetchAndUpdateSavedMessages();
     }
   }, items);
-});
-const result = size.fileFinishedImporting("modules/saved_messages/useRefreshSavedMessages.tsx");
-
-export default tmp2;
+};

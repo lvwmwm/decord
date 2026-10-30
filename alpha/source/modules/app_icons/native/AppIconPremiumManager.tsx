@@ -1,19 +1,19 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 19337
+// Function ID: 19338
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1389, 9931, 1084, 5030, 3, 9932, 7274, 1381, 15261, 5033, 14523, 1264, 2]
+// Dependencies: [5, 1384, 9958, 1072, 5034, 3, 9959, 7281, 1376, 15301, 5037, 14556, 1253, 2]
 
-// Module 19274 (AppIconPremiumManager)
+// Module 19337 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
-import AppIconTypes from "AppIconTypes" /* 9932 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
+import AppIconTypes from "AppIconTypes" /* 9959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
-import AppIconConstants from "AppIconConstants" /* 9931 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import UserStore from "UserStore" /* 1384 */;
+import AppIconConstants from "AppIconConstants" /* 9958 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ class AppIconPremiumManager extends AutomaticLifecycleManager {
               }
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp62) {
           c6 = 3;

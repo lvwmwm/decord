@@ -1,35 +1,34 @@
-// Module ID: 19749
-// Function ID: 19750
+// Module ID: 19812
+// Function ID: 19813
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 17071, 1084, 19750, 21, 5005, 587, 558, 576, 12228, 1125, 19751, 5271, 19752, 1503, 5247, 19754, 2000, 19754, 8988, 5281, 1199, 7072, 19760, 19773, 19798, 19801, 19806, 19807, 1504, 1272, 6016, 5305, 19748, 5700, 19808, 7281, 2]
+// Dependencies: [32, 19, 17, 17125, 1072, 19813, 21, 5009, 575, 12384, 1114, 19814, 5619, 19815, 1498, 5253, 19817, 1995, 19817, 8169, 5629, 1188, 7080, 19823, 19836, 19861, 19864, 19869, 19870, 1499, 6023, 1261, 5581, 19811, 5706, 7286, 19871, 2]
+// Exports: default
 
-// Module 19749 (GuildSettingsRoleSubscriptionWelcomeView)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12228 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19750 */;
-import WarningNoticeDefault from "WarningNotice" /* 19751 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 19754 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 19760 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19773 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19798 */;
+// Module 19812 (GuildSettingsRoleSubscriptionWelcomeView)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12384 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17125 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 19813 */;
+import WarningNoticeDefault from "WarningNotice" /* 19814 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 19817 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 19823 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 19836 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 19861 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importAll, importDefault, measureResult, navigation;
+let _require, importAll, importDefault, navigation, type;
 
 let closure_12;
 let map1;
@@ -38,236 +37,7 @@ let metroRequire;
 let obj2;
 let size;
 let unpackModuleId;
-function StartEarningButton(isTermsAccepted) {
-  let acceptTermsCheckboxText;
-  let eligibility;
-  let eligibleForMonetization;
-  let error;
-  let guildId;
-  let intl;
-  let intl2;
-  let items2;
-  let items4;
-  let loading;
-  let style;
-  let submitAcceptTermsRequest;
-  let tmp11Result2;
-  let tmp17;
-  isTermsAccepted = isTermsAccepted.isTermsAccepted;
-  ({ setTermsAccepted: importDefault, eligibleForMonetization, eligibility } = isTermsAccepted);
-  let flag = isTermsAccepted.isFab;
-  ({ guildId, acceptTermsCheckboxText, style } = isTermsAccepted);
-  if (flag === undefined) {
-    flag = false;
-  }
-  submitAcceptTermsRequest = undefined;
-  const tmp = closure_14();
-  let tmp2 = importDefault;
-  const tmp4 = require("useCreatorMonetizationAcceptTerms")(guildId);
-  ({ error, loading, submitAcceptTermsRequest } = tmp4);
-  const canSubmitAcceptance = tmp4.canSubmitAcceptance;
-  let obj = isTermsAccepted(submitAcceptTermsRequest[16]);
-  navigation = obj.useNavigation();
-  const items = [submitAcceptTermsRequest];
-  const items1 = [eligibility, navigation];
-  const callback = react.useCallback(() => submitAcceptTermsRequest(), items);
-  const callback1 = react.useCallback(() => {
-    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-    ActionSheetActionCreatorsDefault;
-    const obj = {
-      eligibility,
-      onRequireModeratorMFAClick() {
-        navigation.push(constants.SECURITY);
-      }
-    };
-    const tmp2 = asyncRequire(19754, dependencyMap.paths);
-    return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
-  }, items1);
-  const obj2 = {
-    style: tmp.tos,
-    leading: closure_11(isTermsAccepted(submitAcceptTermsRequest[21]).FormRow.Checkbox, { selected: isTermsAccepted }),
-    label: closure_11(isTermsAccepted(submitAcceptTermsRequest[14]).Text, { variant: "text-xs/normal", color: "text-default", children: acceptTermsCheckboxText }),
-    onPress() {
-      return importDefault(!isTermsAccepted);
-    }
-  };
-  const FormRow = isTermsAccepted(submitAcceptTermsRequest[21]).FormRow;
-  let tmp13 = eligibleForMonetization;
-  const obj3 = { style, children: items2 };
-  const tmp10 = closure_11(FormRow, obj2);
-  if (eligibleForMonetization) {
-    tmp13 = true === flag && !isTermsAccepted || true !== flag;
-  }
-  if (tmp13) {
-    tmp13 = tmp10;
-  }
-  items2 = [tmp13, ];
-  const obj4 = { style: null, children: null };
-  if (eligibleForMonetization) {
-    obj4.style = tmp.startEarningButton;
-    const obj5 = { loading, disabled: tmp17, text: intl2.string(isTermsAccepted(submitAcceptTermsRequest[12]).t.NL5ZNS), onPress: callback };
-    tmp17 = !isTermsAccepted;
-    const Button2 = tmp5(tmp3[22]).Button;
-    if (isTermsAccepted) {
-      tmp17 = !canSubmitAcceptance;
-    }
-    if (!tmp17) {
-      tmp17 = !eligibleForMonetization;
-    }
-    intl2 = tmp5(tmp3[12]).intl;
-    obj4.children = closure_11(Button2, obj5);
-    const items3 = [closure_11(closure_6, obj4), ];
-    let tmp11Result = null != error;
-    if (tmp11Result) {
-      const obj6 = { children: items4 };
-      items4 = [closure_11(isTermsAccepted(submitAcceptTermsRequest[23]).Spacer, { size: 12 }), ];
-      const obj7 = { children: error.getAnyErrorMessage() };
-      const tmp2Result = tmp2(submitAcceptTermsRequest[11]);
-      items4[1] = closure_11(tmp2Result, obj7);
-      tmp11Result = tmp11(tmp16, obj6);
-    }
-    const obj8 = { children: items3 };
-    items3[1] = tmp11Result;
-    tmp11Result2 = tmp11(tmp16, obj8);
-  } else {
-    obj4.style = tmp.startEarningButton;
-    const obj9 = { loading, text: intl.string(isTermsAccepted(submitAcceptTermsRequest[12]).t.NL5ZNS), icon: closure_11(isTermsAccepted(submitAcceptTermsRequest[24]).CircleErrorIcon, { size: "sm", color: "control-primary-text-default" }), onPress: callback1 };
-    const Button = tmp5(tmp3[22]).Button;
-    intl = tmp5(tmp3[12]).intl;
-    obj4.children = closure_11(Button, obj9);
-    tmp11Result2 = tmp9(tmp12, obj4);
-  }
-  items2[1] = tmp11Result2;
-  return closure_12(closure_6, obj3);
-}
-let react = react_mod;
-({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
-const creatorPortalUrl = GuildRoleSubscriptionsConstants.CREATOR_REVENUE_PORTAL_URL;
-const GuildSettingsSections = Constants.GuildSettingsSections;
-const constants = CreatorMonetizationEligibilityConstants.CreatorMonetizationOnboardingMarketingSection;
-({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { alignItems: "center", paddingTop: 24 }, subtitle: { marginTop: 8 }, tos: obj2, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: size, sectionTitle: { marginTop: 36, marginBottom: 10 }, sectionFooter: { marginTop: 36 }, statusNoticeContainer: { marginHorizontal: 0, marginTop: 14 } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, marginTop: 10 };
-createStyles = createStyles.createStyles;
-size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-let closure_14 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationStatusNotice(isApplicationPending) {
-  let createEnableRequest;
-  let items1;
-  let obj5;
-  let reapplyNoticeText;
-  let requestRejectedNoticeText;
-  let resubmissionError;
-  let resubmittingEnableRequest;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(19);
-  ({ style, resubmittingEnableRequest, resubmissionError, createEnableRequest, requestRejectedNoticeText, reapplyNoticeText } = isApplicationPending);
-  isApplicationPending = isApplicationPending.isApplicationPending;
-  const tmp4 = closure_14();
-  if (null != resubmissionError) {
-    if (cResult[0] === style) {
-      let tmp17;
-      let tmp18;
-      let tmp20;
-      if (cResult[1] === tmp4.statusNoticeContainer) {
-        tmp17 = cResult[2];
-      }
-      if (cResult[3] !== resubmissionError) {
-        const anyErrorMessage = resubmissionError.getAnyErrorMessage();
-        cResult[3] = resubmissionError;
-        cResult[4] = anyErrorMessage;
-        tmp18 = anyErrorMessage;
-      } else {
-        tmp18 = cResult[4];
-      }
-      if (cResult[5] !== tmp18) {
-        const obj2 = { children: tmp18 };
-        const tmp23 = unpackModuleId(ErrorBlockDefault, obj2);
-        cResult[5] = tmp18;
-        cResult[6] = tmp23;
-        tmp20 = tmp23;
-      } else {
-        tmp20 = cResult[6];
-      }
-      if (cResult[7] === tmp17) {
-        let tmp24;
-        if (cResult[8] === tmp20) {
-          tmp24 = cResult[9];
-        }
-        return tmp24;
-      }
-      const obj3 = { style: tmp17, children: tmp20 };
-      const tmp27 = unpackModuleId(metroRequire, obj3);
-      cResult[7] = tmp17;
-      cResult[8] = tmp20;
-      cResult[9] = tmp27;
-      tmp24 = tmp27;
-    }
-    const items = [tmp4.statusNoticeContainer, style];
-    cResult[0] = style;
-    cResult[1] = tmp4.statusNoticeContainer;
-    cResult[2] = items;
-    tmp17 = items;
-  } else {
-    if (isApplicationPending) {
-      let tmp10;
-      const _Symbol2 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(1125).intl;
-        const stringResult = intl2.string(intl5.t.OrkTBn);
-        cResult[10] = stringResult;
-        tmp10 = stringResult;
-      } else {
-        tmp10 = cResult[10];
-      }
-      requestRejectedNoticeText = tmp10;
-    } else if (null == requestRejectedNoticeText) {
-      requestRejectedNoticeText = null;
-      if (null != reapplyNoticeText) {
-        const _Symbol = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl = tmp(1125).intl;
-          const stringResult1 = intl.string(intl5.t["YKw/NQ"]);
-          cResult[11] = stringResult1;
-        }
-        requestRejectedNoticeText = reapplyNoticeText;
-      }
-    }
-    if (cResult[12] === createEnableRequest) {
-      if (cResult[13] === tmp5) {
-        if (cResult[14] === requestRejectedNoticeText) {
-          if (cResult[15] === resubmittingEnableRequest) {
-            if (cResult[16] === style) {
-              let tmp12;
-              if (cResult[17] === tmp4) {
-                tmp12 = cResult[18];
-              }
-              return tmp12;
-            }
-          }
-        }
-      }
-    }
-    let tmp13 = null;
-    if (null != requestRejectedNoticeText) {
-      const obj4 = { style: items1, children: unpackModuleId(WarningNoticeDefault, obj5) };
-      items1 = [tmp4.statusNoticeContainer, style];
-      obj5 = { notice: requestRejectedNoticeText, ctaLabel: tmp5, onClick: createEnableRequest, submitting: resubmittingEnableRequest };
-      tmp13 = unpackModuleId(metroRequire, obj4);
-    }
-    cResult[12] = createEnableRequest;
-    cResult[13] = tmp5;
-    cResult[14] = requestRejectedNoticeText;
-    cResult[15] = resubmittingEnableRequest;
-    cResult[16] = style;
-    cResult[17] = tmp4;
-    cResult[18] = tmp13;
-    tmp12 = tmp13;
-  }
-}) : (function ApplicationStatusNotice(arg0) {
+function ApplicationStatusNotice(arg0) {
   let createEnableRequest;
   let isApplicationPending;
   let items;
@@ -311,516 +81,211 @@ let closure_15 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applic
     }
     return tmp7;
   }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionContainer(arg0) {
-  let children;
-  let footer;
-  let items;
-  let onLayout;
-  let title;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(15);
-  ({ title, children, footer, onLayout } = arg0);
-  const tmp4 = closure_14();
-  if (cResult[0] !== tmp4.divider) {
-    const obj2 = { style: tmp4.divider };
-    const tmp8 = unpackModuleId(metroRequire, obj2);
-    cResult[0] = tmp4.divider;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.sectionTitle) {
-    let tmp9;
-    if (cResult[3] === title) {
-      tmp9 = cResult[4];
+}
+class SectionContainer {
+  constructor(footer) {
+    let children;
+    let items;
+    let onLayout;
+    let title;
+    footer = footer.footer;
+    ({ title, children, onLayout } = footer);
+    const tmp = closure_14();
+    const obj = { onLayout, style: tmp.container, children: items };
+    items = [, , , ];
+    const obj2 = { style: tmp.divider };
+    items[0] = unpackModuleId(metroRequire, obj2);
+    const obj3 = { style: tmp.sectionTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: title };
+    items[1] = unpackModuleId(Text_Text.Text, obj3);
+    items[2] = children;
+    let tmp4Result = null != footer;
+    const tmp2 = authStore2;
+    const tmp3 = metroRequire;
+    const tmp4 = unpackModuleId;
+    if (tmp4Result) {
+      const obj4 = { style: tmp.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
+      tmp4Result = tmp4(Text_Text.Text, obj4);
     }
-    if (cResult[5] === footer) {
-      let tmp11;
-      if (cResult[6] === tmp4.sectionFooter) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === children) {
-        if (cResult[9] === onLayout) {
-          if (cResult[10] === tmp4.container) {
-            if (cResult[11] === tmp5) {
-              if (cResult[12] === tmp9) {
-                let tmp15;
-                if (cResult[13] === tmp11) {
-                  tmp15 = cResult[14];
-                }
-                return tmp15;
-              }
-            }
-          }
-        }
-      }
-      const obj3 = { onLayout, style: tmp4.container, children: items };
-      items = [tmp5, tmp9, children, tmp11];
-      const tmp18 = authStore2(metroRequire, obj3);
-      cResult[8] = children;
-      cResult[9] = onLayout;
-      cResult[10] = tmp4.container;
-      cResult[11] = tmp5;
-      cResult[12] = tmp9;
-      cResult[13] = tmp11;
-      cResult[14] = tmp18;
-      tmp15 = tmp18;
-    }
-    let tmp13 = null != footer;
-    if (tmp13) {
-      const obj4 = { style: tmp4.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-      tmp13 = unpackModuleId(tmp(5271).Text, obj4);
-    }
-    cResult[5] = footer;
-    cResult[6] = tmp4.sectionFooter;
-    cResult[7] = tmp13;
-    tmp11 = tmp13;
+    items[3] = tmp4Result;
+    return tmp2(tmp3, obj);
   }
-  const obj5 = { style: tmp4.sectionTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: title };
-  const tmp10 = unpackModuleId(Text_Text.Text, obj5);
-  cResult[2] = tmp4.sectionTitle;
-  cResult[3] = title;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function SectionContainer(footer) {
-  let children;
-  let items;
-  let onLayout;
-  let title;
-  footer = footer.footer;
-  ({ title, children, onLayout } = footer);
-  const tmp = closure_14();
-  const obj = { onLayout, style: tmp.container, children: items };
-  items = [, , , ];
-  const obj2 = { style: tmp.divider };
-  items[0] = unpackModuleId(metroRequire, obj2);
-  const obj3 = { style: tmp.sectionTitle, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: title };
-  items[1] = unpackModuleId(Text_Text.Text, obj3);
-  items[2] = children;
-  let tmp4Result = null != footer;
-  const tmp2 = authStore2;
-  const tmp3 = metroRequire;
-  const tmp4 = unpackModuleId;
-  if (tmp4Result) {
-    const obj4 = { style: tmp.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
-    tmp4Result = tmp4(Text_Text.Text, obj4);
-  }
-  items[3] = tmp4Result;
-  return tmp2(tmp3, obj);
-});
-let closure_16 = tmp5;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function MarketingSections(arg0) {
-  let closure_0;
-  let closure_1;
-  let items;
-  let onHowItWorksLayoutChange;
-  let onboardingMarketing;
-  let tmp13;
-  let tmp18;
-  let tmp20;
-  let tmp4;
-  let tmp5;
-  let tmp9;
-  let obj = require("react");
-  const cResult = obj.c(16);
-  ({ onboardingMarketing, onHowItWorksLayoutChange } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1125).intl;
-    const stringResult = intl.string(require("intl").t.R9rNIk);
-    const intl2 = tmp(1125).intl;
-    let obj2 = { creatorPortalUrl };
-    const formatResult = intl2.format(require("intl").t.oxW30N, obj2);
-    cResult[0] = stringResult;
-    cResult[1] = formatResult;
-    tmp4 = stringResult;
-    tmp5 = formatResult;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp12 = closure_11(HowItWorksSectionDefault, {});
-    cResult[2] = tmp12;
-    tmp9 = tmp12;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== onHowItWorksLayoutChange) {
-    const obj3 = { title: tmp4, footer: tmp5, onLayout: onHowItWorksLayoutChange, children: tmp9 };
-    const tmp17 = closure_11(closure_16, obj3, constants.HOW_IT_WORKS);
-    cResult[3] = onHowItWorksLayoutChange;
-    cResult[4] = tmp17;
-    tmp13 = tmp17;
-  } else {
-    tmp13 = cResult[4];
-  }
-  _require = tmp13;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult1 = intl3.string(require("intl").t["1QHJaW"]);
-    cResult[5] = stringResult1;
-    tmp18 = stringResult1;
-  } else {
-    tmp18 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj4 = { title: tmp18, children: closure_11(CreatorBenefitsSectionDefault, {}) };
-    const tmp25 = closure_11(closure_16, obj4, constants.BENEFITS);
-    cResult[6] = tmp25;
-    tmp20 = tmp25;
-  } else {
-    tmp20 = cResult[6];
-  }
-  importDefault = tmp20;
-  let sections;
-  if (onboardingMarketing != null) {
-    sections = onboardingMarketing.sections;
-  }
-  if (null == sections) {
-    let tmp34;
-    if (cResult[7] !== tmp13) {
-      const obj5 = { children: items };
-      items = [tmp13, tmp20];
-      const tmp37 = closure_12(closure_13, obj5);
-      cResult[7] = tmp13;
-      cResult[8] = tmp37;
-      tmp34 = tmp37;
-    } else {
-      tmp34 = cResult[8];
-    }
-    return tmp34;
-  } else {
-    let tmp28;
-    if (cResult[9] === tmp13) {
-      let tmp27;
-      let tmp30;
-      if (cResult[10] === onboardingMarketing.sections) {
-        tmp27 = cResult[11];
-      }
-      if (cResult[14] !== tmp27) {
-        const obj6 = { children: tmp27 };
-        const tmp33 = closure_11(closure_13, obj6);
-        cResult[14] = tmp27;
-        cResult[15] = tmp33;
-        tmp30 = tmp33;
-      } else {
-        tmp30 = cResult[15];
-      }
-      return tmp30;
-    }
-    if (cResult[12] !== tmp13) {
-      const fn = function v(type) {
-        let intl;
-        let obj2;
-        type = type.type;
-        if (constants.HOW_IT_WORKS === type) {
-          return closure_0;
-        } else if (constants.BENEFITS === type) {
-          return closure_1;
-        } else if (constants.OTHER_CREATORS === type) {
-          const obj = { title: intl.string(intl5.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
-          intl = intl5.intl;
-          obj2 = { highlightedCreators: type.creators };
-          return unpackModuleId(closure_16, obj, constants.OTHER_CREATORS);
-        }
-      };
-      cResult[12] = tmp13;
-      cResult[13] = fn;
-      tmp28 = fn;
-    } else {
-      tmp28 = cResult[13];
-    }
-    const sections1 = onboardingMarketing.sections;
-    const mapped = sections1.map(tmp28);
-    cResult[9] = tmp13;
-    cResult[10] = onboardingMarketing.sections;
-    cResult[11] = mapped;
-    tmp27 = mapped;
-  }
-}) : (function MarketingSections(onboardingMarketing) {
-  let closure_0;
-  let closure_1;
+}
+function StartEarningButton(isTermsAccepted) {
+  let acceptTermsCheckboxText;
+  let eligibility;
+  let eligibleForMonetization;
+  let error;
+  let guildId;
   let intl;
   let intl2;
-  let intl3;
-  let items;
-  let obj2;
-  let onHowItWorksLayoutChange;
-  let sections1;
-  let tmpResult;
-  onboardingMarketing = onboardingMarketing.onboardingMarketing;
-  _require = undefined;
-  let obj = { title: intl.string(require("intl").t.R9rNIk), footer: intl2.format(require("intl").t.oxW30N, obj2), onLayout: onHowItWorksLayoutChange, children: closure_11(HowItWorksSectionDefault, {}) };
-  onHowItWorksLayoutChange = onboardingMarketing.onHowItWorksLayoutChange;
-  intl = require("intl").intl;
-  intl2 = require("intl").intl;
-  obj2 = { creatorPortalUrl };
-  const tmp2 = closure_11(closure_16, obj, constants.HOW_IT_WORKS);
-  _require = tmp2;
-  const obj3 = { title: intl3.string(require("intl").t["1QHJaW"]), children: closure_11(CreatorBenefitsSectionDefault, {}) };
-  intl3 = require("intl").intl;
-  const tmp3 = closure_11(closure_16, obj3, constants.BENEFITS);
-  importDefault = tmp3;
-  let sections;
-  const tmp = closure_11;
-  if (onboardingMarketing != null) {
-    sections = onboardingMarketing.sections;
+  let items2;
+  let items4;
+  let loading;
+  let style;
+  let submitAcceptTermsRequest;
+  let tmp11Result2;
+  let tmp17;
+  isTermsAccepted = isTermsAccepted.isTermsAccepted;
+  ({ setTermsAccepted: importDefault, eligibleForMonetization, eligibility } = isTermsAccepted);
+  let flag = isTermsAccepted.isFab;
+  ({ guildId, acceptTermsCheckboxText, style } = isTermsAccepted);
+  if (flag === undefined) {
+    flag = false;
   }
-  if (null == sections) {
-    const obj4 = { children: items };
-    items = [tmp2, tmp3];
-    tmpResult = closure_12(closure_13, obj4);
-  } else {
-    const obj5 = {
-      children: sections1.map((type) => {
-          let intl;
-          let obj2;
-          type = type.type;
-          if (constants.HOW_IT_WORKS === type) {
-            return closure_0;
-          } else if (constants.BENEFITS === type) {
-            return closure_1;
-          } else if (constants.OTHER_CREATORS === type) {
-            const obj = { title: intl.string(intl5.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
-            intl = intl5.intl;
-            obj2 = { highlightedCreators: type.creators };
-            return unpackModuleId(closure_16, obj, constants.OTHER_CREATORS);
-          }
-        })
-    };
-    sections1 = onboardingMarketing.sections;
-    tmpResult = tmp(closure_13, obj5);
-  }
-  return tmpResult;
-});
-let closure_18 = tmp6;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
-  let acceptTermsCheckboxText;
-  let closure_5;
-  let eligibility;
-  let eligibilityError;
-  let eligibilityLoading;
-  let eligibleForMonetization;
-  let first;
-  let isGuildOwner;
-  let ref;
-  let refreshEligibility;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let wasRejectedInV1;
-  const tmp = refreshEligibility;
-  const tmp2 = ref;
-  const obj = refreshEligibility(ref[10]);
-  const cResult = obj.c(59);
-  guild = guild.guild;
-  closure_14();
-  const obj2 = refreshEligibility(ref[16]);
-  navigation = obj2.useNavigation();
-  const tmp7 = require("useOnboardingMonetizationEnableFlow")(guild);
-  ({ isGuildOwner, eligibility, refreshEligibility } = tmp7);
-  ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1, eligibilityLoading, eligibilityError } = tmp7);
-  const obj3 = refreshEligibility(ref[29]);
-  const creatorMonetizationIneligibleReasons = obj3.useCreatorMonetizationIneligibleReasons(eligibility);
-  require("useCreatorMonetizationOnboardingMarketing")(guild.id);
-  [r10045, r10046] = first(react.useState(false), 2);
-  first(react.useState(false), 2);
-  importDefault = react.useRef(true);
-  if (cResult[0] !== refreshEligibility) {
-    const fn = function c() {
-      if (!ref.current) {
-        refreshEligibility();
+  submitAcceptTermsRequest = undefined;
+  const tmp = closure_14();
+  let tmp2 = importDefault;
+  const tmp4 = require("useCreatorMonetizationAcceptTerms")(guildId);
+  ({ error, loading, submitAcceptTermsRequest } = tmp4);
+  const canSubmitAcceptance = tmp4.canSubmitAcceptance;
+  let obj = isTermsAccepted(submitAcceptTermsRequest[14]);
+  navigation = obj.useNavigation();
+  const items = [submitAcceptTermsRequest];
+  const items1 = [eligibility, navigation];
+  const callback = react.useCallback(() => submitAcceptTermsRequest(), items);
+  const callback1 = react.useCallback(() => {
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    ActionSheetActionCreatorsDefault;
+    const obj = {
+      eligibility,
+      onRequireModeratorMFAClick() {
+        navigation.push(constants.SECURITY);
       }
     };
-    cResult[0] = refreshEligibility;
-    cResult[1] = fn;
-    tmp12 = fn;
-  } else {
-    tmp12 = cResult[1];
-  }
-  const tmpResult = tmp(tmp2[31]);
-  const focusEffect = tmpResult.useFocusEffect(tmp12);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function u() {
-      if (ref.current) {
-        tmp.current = false;
-      }
-    };
-    const items = [];
-    cResult[2] = fn2;
-    cResult[3] = items;
-    tmp15 = items;
-    tmp14 = fn2;
-  } else {
-    tmp14 = cResult[2];
-    tmp15 = cResult[3];
-  }
-  const effect = obj4.useEffect(tmp14, tmp15);
-  if (cResult[4] === eligibleForMonetization) {
-    if (cResult[5] === guild.id) {
-      if (cResult[6] === creatorMonetizationIneligibleReasons) {
-        let tmp17;
-        let tmp20;
-        let tmp29;
-        if (cResult[7] === isGuildOwner) {
-          tmp17 = cResult[8];
-        }
-        if (cResult[9] !== (null == guild.id || null == eligibility)) {
-          const obj5 = { disableTrack: null == guild.id || null == eligibility };
-          cResult[9] = null == guild.id || null == eligibility;
-          cResult[10] = obj5;
-          tmp20 = obj5;
-        } else {
-          tmp20 = cResult[10];
-        }
-        require("useTrackImpression")(tmp17, tmp20);
-        [r10109, importAll] = first(react.useState(false), 2);
-        first(react.useState(false), 2);
-        ref = obj4.useRef(null);
-        const tmp10Result2 = first(react.useState(), 2);
-        first = tmp10Result2[0];
-        react = tmp10Result2[1];
-        const _Symbol = Symbol;
-        if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-          cResult[11] = U;
-        } else {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-        }
-        if (cResult[12] !== first) {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-          cResult[12] = first;
-          cResult[13] = tmp28;
-        } else {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-        }
-        if (!eligibilityLoading) {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-        }
-        const _Symbol2 = Symbol;
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-          const tmp30 = closure_11(require("Placeholder"), {});
-          cResult[14] = tmp30;
-          tmp29 = tmp30;
-        } else {
-          class U {
-            constructor(arg0) {
-              closure_0 = guild.nativeEvent.layout.y;
-              if (closure_3 != null) {
-                current = closure_3.current;
-                if (current != null) {
-                  measureResult = current.measure((arg0, arg1, arg2, arg3, arg4, arg5) => {
-                    const diff = arg5 - NavigatorConstants.STATUS_BAR_HEIGHT;
-                    closure_5(closure_0 + (diff - NavigatorConstants.NAV_BAR_HEIGHT));
-                  });
-                }
-              }
-              return;
-            }
-          }
-        }
-        return tmp29;
-      }
+    const tmp2 = asyncRequire(19817, dependencyMap.paths);
+    return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
+  }, items1);
+  const obj2 = {
+    style: tmp.tos,
+    leading: closure_11(isTermsAccepted(submitAcceptTermsRequest[19]).FormRow.Checkbox, { selected: isTermsAccepted }),
+    label: closure_11(isTermsAccepted(submitAcceptTermsRequest[12]).Text, { variant: "text-xs/normal", color: "text-default", children: acceptTermsCheckboxText }),
+    onPress() {
+      return importDefault(!isTermsAccepted);
     }
+  };
+  const FormRow = isTermsAccepted(submitAcceptTermsRequest[19]).FormRow;
+  let tmp13 = eligibleForMonetization;
+  const obj3 = { style, children: items2 };
+  const tmp10 = closure_11(FormRow, obj2);
+  if (eligibleForMonetization) {
+    tmp13 = true === flag && !isTermsAccepted || true !== flag;
   }
-  const obj6 = { type: tmp(tmp2[32]).ImpressionTypes.PANE, name: tmp(tmp2[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
-  cResult[4] = eligibleForMonetization;
-  cResult[5] = guild.id;
-  cResult[6] = creatorMonetizationIneligibleReasons;
-  cResult[7] = isGuildOwner;
-  cResult[8] = obj6;
-  tmp17 = obj6;
-}) : (function GuildSettingsRoleSubscriptionWelcomeView(guild) {
+  if (tmp13) {
+    tmp13 = tmp10;
+  }
+  items2 = [tmp13, ];
+  const obj4 = { style: null, children: null };
+  if (eligibleForMonetization) {
+    obj4.style = tmp.startEarningButton;
+    const obj5 = { loading, disabled: tmp17, text: intl2.string(isTermsAccepted(submitAcceptTermsRequest[10]).t.NL5ZNS), onPress: callback };
+    tmp17 = !isTermsAccepted;
+    const Button2 = tmp5(tmp3[20]).Button;
+    if (isTermsAccepted) {
+      tmp17 = !canSubmitAcceptance;
+    }
+    if (!tmp17) {
+      tmp17 = !eligibleForMonetization;
+    }
+    intl2 = tmp5(tmp3[10]).intl;
+    obj4.children = closure_11(Button2, obj5);
+    const items3 = [closure_11(closure_6, obj4), ];
+    let tmp11Result = null != error;
+    if (tmp11Result) {
+      const obj6 = { children: items4 };
+      items4 = [closure_11(isTermsAccepted(submitAcceptTermsRequest[21]).Spacer, { size: 12 }), ];
+      const obj7 = { children: error.getAnyErrorMessage() };
+      const tmp2Result = tmp2(submitAcceptTermsRequest[9]);
+      items4[1] = closure_11(tmp2Result, obj7);
+      tmp11Result = tmp11(tmp16, obj6);
+    }
+    const obj8 = { children: items3 };
+    items3[1] = tmp11Result;
+    tmp11Result2 = tmp11(tmp16, obj8);
+  } else {
+    obj4.style = tmp.startEarningButton;
+    const obj9 = { loading, text: intl.string(isTermsAccepted(submitAcceptTermsRequest[10]).t.NL5ZNS), icon: closure_11(isTermsAccepted(submitAcceptTermsRequest[22]).CircleErrorIcon, { size: "sm", color: "control-primary-text-default" }), onPress: callback1 };
+    const Button = tmp5(tmp3[20]).Button;
+    intl = tmp5(tmp3[10]).intl;
+    obj4.children = closure_11(Button, obj9);
+    tmp11Result2 = tmp9(tmp12, obj4);
+  }
+  items2[1] = tmp11Result2;
+  return closure_12(closure_6, obj3);
+}
+class MarketingSections {
+  constructor(onboardingMarketing) {
+    let closure_0;
+    let closure_1;
+    let intl;
+    let intl2;
+    let intl3;
+    let items;
+    let obj2;
+    let onHowItWorksLayoutChange;
+    let sections1;
+    let tmpResult;
+    onboardingMarketing = onboardingMarketing.onboardingMarketing;
+    _require = undefined;
+    let obj = { title: intl.string(require("intl").t.R9rNIk), footer: intl2.format(require("intl").t.oxW30N, obj2), onLayout: onHowItWorksLayoutChange, children: closure_11(HowItWorksSectionDefault, {}) };
+    onHowItWorksLayoutChange = onboardingMarketing.onHowItWorksLayoutChange;
+    intl = require("intl").intl;
+    intl2 = require("intl").intl;
+    obj2 = { creatorPortalUrl };
+    const tmp2 = closure_11(SectionContainer, obj, constants.HOW_IT_WORKS);
+    _require = tmp2;
+    const obj3 = { title: intl3.string(require("intl").t["1QHJaW"]), children: closure_11(CreatorBenefitsSectionDefault, {}) };
+    intl3 = require("intl").intl;
+    const tmp3 = closure_11(SectionContainer, obj3, constants.BENEFITS);
+    importDefault = tmp3;
+    let sections;
+    const tmp = closure_11;
+    if (onboardingMarketing != null) {
+      sections = onboardingMarketing.sections;
+    }
+    if (null == sections) {
+      const obj4 = { children: items };
+      items = [tmp2, tmp3];
+      tmpResult = closure_12(closure_13, obj4);
+    } else {
+      const obj5 = {
+        children: sections1.map((type) => {
+            let intl;
+            let obj2;
+            type = type.type;
+            if (constants.HOW_IT_WORKS === type) {
+              return closure_0;
+            } else if (constants.BENEFITS === type) {
+              return closure_1;
+            } else if (constants.OTHER_CREATORS === type) {
+              const obj = { title: intl.string(intl5.t["tJp+QV"]), children: unpackModuleId(CreatorHighlightSectionDefault, obj2) };
+              intl = intl5.intl;
+              obj2 = { highlightedCreators: type.creators };
+              return unpackModuleId(SectionContainer, obj, constants.OTHER_CREATORS);
+            }
+          })
+      };
+      sections1 = onboardingMarketing.sections;
+      tmpResult = tmp(closure_13, obj5);
+    }
+    return tmpResult;
+  }
+}
+let react = react_mod;
+({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
+const metroImportAll = GuildRoleSubscriptionsConstants.CREATOR_REVENUE_PORTAL_URL;
+const GuildSettingsSections = Constants.GuildSettingsSections;
+const authStore = CreatorMonetizationEligibilityConstants.CreatorMonetizationOnboardingMarketingSection;
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: { flex: 1 }, contentContainer: { flex: 1, padding: 24 }, heroImage: { alignItems: "center", paddingTop: 24 }, subtitle: { marginTop: 8 }, tos: obj2, startEarningButton: { marginTop: 12 }, startEarningButtonContainer: { marginTop: 14 }, startEarningFabContainer: { marginHorizontal: 24 }, divider: size, sectionTitle: { marginTop: 36, marginBottom: 10 }, sectionFooter: { marginTop: 36 }, statusNoticeContainer: { marginHorizontal: 0, marginTop: 14 } };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.sm, marginTop: 10 };
+createStyles = createStyles.createStyles;
+size = { width: "100%", height: 0.8, marginTop: 36, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+const authStore3 = createStyles(obj);
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/GuildSettingsRoleSubscriptionWelcomeView.tsx");
+
+export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
   let MarketStallSpotIllustration;
   let _undefined;
   let acceptTermsCheckboxText;
@@ -855,21 +320,21 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
   react = undefined;
   const tmp = closure_14();
   const tmp2 = refreshEligibility;
-  const obj = refreshEligibility(ref1[16]);
+  const obj = refreshEligibility(ref1[14]);
   navigation = obj.useNavigation();
-  const tmp5 = ref(ref1[28])(guild);
+  const tmp5 = ref(ref1[26])(guild);
   ({ eligibility, refreshEligibility } = tmp5);
   ({ eligibleForMonetization, acceptTermsCheckboxText, wasRejectedInV1, isGuildOwner, eligibilityLoading, eligibilityError } = tmp5);
-  const obj2 = refreshEligibility(ref1[29]);
+  const obj2 = refreshEligibility(ref1[27]);
   const creatorMonetizationIneligibleReasons = obj2.useCreatorMonetizationIneligibleReasons(eligibility);
-  ({ isLoading, creatorMonetizationOnboardingMarketing } = ref(ref1[30])(guild.id));
-  ref(ref1[30])(guild.id);
+  ({ isLoading, creatorMonetizationOnboardingMarketing } = ref(ref1[28])(guild.id));
+  ref(ref1[28])(guild.id);
   [tmp10, tmp11] = first(react.useState(false), 2);
   first(react.useState(false), 2);
   const tmp4 = ref;
   ref = react.useRef(true);
   const items = [ref, refreshEligibility];
-  const obj4 = refreshEligibility(ref1[31]);
+  const obj4 = refreshEligibility(ref1[29]);
   const focusEffect = obj4.useFocusEffect(react.useCallback(() => {
     if (!ref.current) {
       refreshEligibility();
@@ -880,8 +345,8 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       tmp.current = false;
     }
   }, []);
-  const obj5 = { type: refreshEligibility(ref1[32]).ImpressionTypes.PANE, name: refreshEligibility(ref1[32]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
-  const tmp15 = ref(ref1[33]);
+  const obj5 = { type: refreshEligibility(ref1[31]).ImpressionTypes.PANE, name: refreshEligibility(ref1[31]).ImpressionNames.ENABLE_CREATOR_MONETIZATION_ACCEPT_TERMS_LANDING, properties: { guild_id: guild.id, is_owner: isGuildOwner, is_eligible: eligibleForMonetization, ineligible_reasons: creatorMonetizationIneligibleReasons } };
+  const tmp15 = ref(ref1[30]);
   const tmp16 = null == guild.id || null == eligibility;
   tmp15(obj5, { disableTrack: tmp16 });
   [tmp19, tmp20] = first(react.useState(false), 2);
@@ -914,40 +379,40 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         if (null != eligibilityError) {
           const presentFailedToast = require("ToastUtils").presentFailedToast;
           require("ToastUtils");
-          const intl = tmp2(tmp3[12]).intl;
-          presentFailedToast(intl.string(tmp2(ref1[12]).t.R0RpRX));
+          const intl = tmp2(tmp3[10]).intl;
+          presentFailedToast(intl.string(tmp2(ref1[10]).t.R0RpRX));
           navigation.pop();
         }
         const obj6 = { bottom: true, style: tmp.container, children: items5 };
         const obj7 = { onScroll: tmp26, scrollEventThrottle: 36, children: closure_12(closure_6, obj8) };
         obj8 = { style: tmp.container, children: items3 };
         const obj9 = { style: tmp.heroImage, children: closure_11(MarketStallSpotIllustration, obj10) };
-        const SafeAreaPaddingView = tmp2(tmp3[38]).SafeAreaPaddingView;
-        obj10 = { width: 240, accessible: true, accessibilityLabel: intl2.string(tmp2(ref1[12]).t.Af4klP) };
-        MarketStallSpotIllustration = tmp2(tmp3[37]).MarketStallSpotIllustration;
-        intl2 = tmp2(tmp3[12]).intl;
+        const SafeAreaPaddingView = tmp2(tmp3[35]).SafeAreaPaddingView;
+        obj10 = { width: 240, accessible: true, accessibilityLabel: intl2.string(tmp2(ref1[10]).t.Af4klP) };
+        MarketStallSpotIllustration = tmp2(tmp3[36]).MarketStallSpotIllustration;
+        intl2 = tmp2(tmp3[10]).intl;
         items3 = [closure_11(closure_6, obj9), ];
         const obj11 = { ref: ref1, style: tmp.contentContainer, collapsable: false, children: items4 };
-        const obj12 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(ref1[12]).t.QYqDQ0) };
-        const Text = tmp2(tmp3[14]).Text;
-        intl3 = tmp2(tmp3[12]).intl;
+        const obj12 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(ref1[10]).t.QYqDQ0) };
+        const Text = tmp2(tmp3[12]).Text;
+        intl3 = tmp2(tmp3[10]).intl;
         items4 = [closure_11(Text, obj12), , , ];
-        const obj13 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl4.string(tmp2(ref1[12]).t["41wkMc"]) };
-        const Text2 = tmp2(tmp3[14]).Text;
-        intl4 = tmp2(tmp3[12]).intl;
+        const obj13 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl4.string(tmp2(ref1[10]).t["41wkMc"]) };
+        const Text2 = tmp2(tmp3[12]).Text;
+        intl4 = tmp2(tmp3[10]).intl;
         items4[1] = closure_11(Text2, obj13);
         const tmp33 = closure_7;
         if (wasRejectedInV1) {
           const obj14 = { style: tmp.statusNoticeContainer };
           const merged = Object.assign(tmp5);
-          tmp32Result = tmp32(closure_15, obj14);
+          tmp32Result = tmp32(ApplicationStatusNotice, obj14);
         } else {
           const obj15 = { style: tmp.startEarningButtonContainer, guildId: guild.id, isTermsAccepted: tmp10, setTermsAccepted: tmp11, eligibleForMonetization, eligibility, acceptTermsCheckboxText };
           tmp32Result = tmp32(StartEarningButton, obj15);
         }
         items4[2] = tmp32Result;
         const obj16 = { onboardingMarketing: creatorMonetizationOnboardingMarketing, onHowItWorksLayoutChange: callback };
-        items4[3] = closure_11(closure_18, obj16);
+        items4[3] = closure_11(MarketingSections, obj16);
         items3[1] = closure_12(closure_6, obj11);
         items5 = [closure_11(tmp33, obj7), ];
         if (tmp32Result2) {
@@ -966,11 +431,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
       return tmp31Result;
     }
   }
-  tmp31Result = closure_11(tmp4(tmp3[35]), {});
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/welcome/GuildSettingsRoleSubscriptionWelcomeView.tsx");
-
-export default tmp7;
-export const SectionContainer = tmp5;
-export const MarketingSections = tmp6;
+  tmp31Result = closure_11(tmp4(tmp3[33]), {});
+};
+export { SectionContainer };
+export { MarketingSections };

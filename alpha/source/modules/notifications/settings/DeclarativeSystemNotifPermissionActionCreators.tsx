@@ -1,20 +1,20 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 17908
+// Function ID: 17909
 // Name: DeclarativeSystemNotifPermissionActionCreators
-// Dependencies: [17838, 17839, 584, 17840, 2]
+// Dependencies: [17909, 17910, 572, 17911, 2]
 // Exports: refreshSystemNotifPermissionsAsync
 
-// Module 17837 (DeclarativeSystemNotifPermissionActionCreators)
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17839 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17840 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17838 */;
+// Module 17908 (DeclarativeSystemNotifPermissionActionCreators)
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17910 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17911 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17909 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const DispatcherDefault = tmp(584);
+const DispatcherDefault = tmp(572);
 let result = size.fileFinishedImporting("modules/notifications/settings/DeclarativeSystemNotifPermissionActionCreators.tsx");
 
-export function refreshSystemNotifPermissionsAsync(notification_settings_screen) {
+export function refreshSystemNotifPermissionsAsync(app_state_active) {
   const obj = DeclarativeSystemNotifPermissionHelpersDefault;
   const result = obj.refreshSystemNotifPermissions();
   if (null != result) {
@@ -22,6 +22,6 @@ export function refreshSystemNotifPermissionsAsync(notification_settings_screen)
     const tmpResult = DispatcherDefault;
     tmpResult.dispatch(result);
     const obj3 = DeclarativeSystemNotifPermissionAnalytics;
-    const result1 = obj3.trackSystemNotifSettingsReenabled(disabledSettings, result.disabledSettings, notification_settings_screen);
+    const result1 = obj3.trackSystemNotifSettingsReenabled(disabledSettings, result.disabledSettings, app_state_active);
   }
 }

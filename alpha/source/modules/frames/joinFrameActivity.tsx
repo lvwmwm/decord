@@ -1,19 +1,19 @@
-// Module ID: 12985
-// Function ID: 12986
+// Module ID: 13136
+// Function ID: 13137
 // Name: joinFrameActivity
-// Dependencies: [5, 2043, 4857, 5668, 6834, 1084, 2024, 584, 11493, 11451, 5664, 11494, 10896, 1125, 11512, 12986, 11306, 10891, 6434, 12987, 9291, 7471, 11440, 2]
+// Dependencies: [5, 2040, 4858, 5674, 6841, 1072, 2019, 572, 11693, 11652, 5670, 11694, 10919, 1114, 11712, 13137, 11509, 10914, 6441, 13138, 9304, 7479, 11641, 2]
 // Exports: default
 
-// Module 12985 (joinFrameActivity)
-import Constants2 from "Constants" /* 2024 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11440 */;
+// Module 13136 (joinFrameActivity)
+import Constants2 from "Constants" /* 2019 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11641 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import Constants from "Constants" /* 1084 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c7, channel, closure_7, messageId, preferredChannelId, session_id, session_id2, set, voiceStateForSession;
@@ -46,7 +46,7 @@ let obj = function _joinFrameActivity() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c8;
@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -476,7 +476,7 @@ obj = function _getVoiceChannelAppChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -566,7 +566,7 @@ obj = function _getActivityChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -593,7 +593,7 @@ obj = function _getActivityChannelId() {
         } else if (1 === c3) {
           c4 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

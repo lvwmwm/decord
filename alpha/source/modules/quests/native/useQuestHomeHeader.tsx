@@ -1,26 +1,25 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16849
+// Function ID: 16850
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 6768, 1084, 1086, 21, 5005, 587, 558, 576, 14642, 1125, 5271, 9513, 5247, 14427, 2000, 1264, 7338, 7707, 14416, 16796, 8015, 12619, 1503, 14683, 2]
+// Dependencies: [19, 17, 6775, 1072, 1074, 21, 5009, 575, 14676, 5619, 1114, 9532, 5253, 14460, 1995, 1253, 7345, 7712, 14449, 16850, 8021, 12768, 1498, 14716, 2]
+// Exports: default
 
-// Module 16795 (useQuestHomeHeader)
+// Module 16849 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import intl3 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import QuestConstants from "QuestConstants" /* 6768 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
-import QuestsIcon from "QuestsIcon" /* 14642 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import intl3 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import QuestConstants from "QuestConstants" /* 6775 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import QuestsIcon from "QuestsIcon" /* 14676 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -29,6 +28,18 @@ let c9;
 let metroImportAll;
 let obj2;
 let obj3;
+function QuestHomeHeaderTitle() {
+  let intl;
+  let items;
+  const tmp = closure_10();
+  const obj = { style: tmp.headerTitleContainer, children: items };
+  items = [metroImportAll(QuestsIcon.QuestsIcon, { size: "md", color: "icon-strong" }), ];
+  const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: intl.string(intl3.t.JALI2K) };
+  const Heading = Text_Text.Heading;
+  intl = intl3.intl;
+  items[1] = metroImportAll(Heading, obj2);
+  return React4(View, obj);
+}
 function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let constants2;
   let items;
@@ -37,7 +48,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_10();
-  let obj = balance(9513);
+  let obj = balance(9532);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: items };
@@ -45,7 +56,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp7 = View;
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(14416).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(14449).BalanceWidgetPillButton, obj3);
   }
   items = [isVirtualCurrencyEnabled, ];
   let obj4 = {};
@@ -77,11 +88,11 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(16796, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(16850, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
-  let obj = { icon: closure_8(setSelectedSortMethod(tmp3[23]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[11]).t.UdhTtk), scaleAmountInPx: 4 };
-  const BaseIconButton = setSelectedSortMethod(tmp3[22]).BaseIconButton;
-  intl = setSelectedSortMethod(tmp3[11]).intl;
+  let obj = { icon: closure_8(setSelectedSortMethod(tmp3[21]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[10]).t.UdhTtk), scaleAmountInPx: 4 };
+  const BaseIconButton = setSelectedSortMethod(tmp3[20]).BaseIconButton;
+  intl = setSelectedSortMethod(tmp3[10]).intl;
   return closure_8(BaseIconButton, obj);
 }
 const View = react_native.View;
@@ -95,129 +106,16 @@ obj2 = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: n
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestHomeHeaderTitle() {
-  let first;
-  let items;
-  let tmp10;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(7);
-  const tmp4 = closure_10();
-  const headerTitleContainer = tmp4.headerTitleContainer;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = metroImportAll(QuestsIcon.QuestsIcon, { size: "md", color: "icon-strong" });
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  const headerTitle = tmp4.headerTitle;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl3.t.JALI2K);
-    cResult[1] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.headerTitle) {
-    const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: headerTitle, children: tmp8 };
-    const tmp12 = metroImportAll(Text_Text.Heading, obj2);
-    cResult[2] = tmp4.headerTitle;
-    cResult[3] = tmp12;
-    tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4.headerTitleContainer) {
-    let tmp13;
-    if (cResult[5] === tmp10) {
-      tmp13 = cResult[6];
-    }
-    return tmp13;
-  }
-  const obj3 = { style: headerTitleContainer, children: items };
-  items = [first, tmp10];
-  const tmp14 = React4(View, obj3);
-  cResult[4] = tmp4.headerTitleContainer;
-  cResult[5] = tmp10;
-  cResult[6] = tmp14;
-  tmp13 = tmp14;
-}) : (function QuestHomeHeaderTitle() {
-  let intl;
-  let items;
-  const tmp = closure_10();
-  const obj = { style: tmp.headerTitleContainer, children: items };
-  items = [metroImportAll(QuestsIcon.QuestsIcon, { size: "md", color: "icon-strong" }), ];
-  const obj2 = { variant: "redesign/heading-18/bold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: intl.string(intl3.t.JALI2K) };
-  const Heading = Text_Text.Heading;
-  intl = intl3.intl;
-  items[1] = metroImportAll(Heading, obj2);
-  return React4(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHomeHeader(setSelectedSortMethod) {
-  let selectedFilters;
-  let obj = setSelectedSortMethod(selectedFilters[9]);
-  const cResult = obj.c(8);
-  setSelectedSortMethod = setSelectedSortMethod.setSelectedSortMethod;
-  const setSelectedFilters = setSelectedSortMethod.setSelectedFilters;
-  selectedFilters = setSelectedSortMethod.selectedFilters;
-  const selectedSortMethod = setSelectedSortMethod.selectedSortMethod;
-  const obj2 = setSelectedSortMethod(selectedFilters[24]);
-  navigation = obj2.useNavigation();
-  const obj3 = setSelectedSortMethod(selectedFilters[25]);
-  const enabled = obj3.useVirtualCurrencyMobileEnabled().enabled;
-  if (cResult[0] === enabled) {
-    if (cResult[1] === navigation) {
-      if (cResult[2] === selectedFilters) {
-        if (cResult[3] === selectedSortMethod) {
-          if (cResult[4] === setSelectedFilters) {
-            let tmp3;
-            let tmp4;
-            if (cResult[5] === setSelectedSortMethod) {
-              tmp3 = cResult[6];
-              tmp4 = cResult[7];
-            }
-            const layoutEffect = selectedSortMethod.useLayoutEffect(tmp3, tmp4);
-          }
-        }
-      }
-    }
-  }
-  const fn = function l() {
-    let isVirtualCurrencyEnabled;
-    let obj = {
-      headerTitle() {
-        return closure_1_8(closure_1_11, {});
-      },
-      headerRight() {
-        const obj = { isVirtualCurrencyEnabled, setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod };
-        return closure_2_8(QuestHomeHeaderRight, obj);
-      }
-    };
-    navigation.setOptions(obj);
-  };
-  const items = [navigation, enabled, setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod];
-  cResult[0] = enabled;
-  cResult[1] = navigation;
-  cResult[2] = selectedFilters;
-  cResult[3] = selectedSortMethod;
-  cResult[4] = setSelectedFilters;
-  cResult[5] = setSelectedSortMethod;
-  cResult[6] = fn;
-  cResult[7] = items;
-  tmp4 = items;
-  tmp3 = fn;
-}) : (function useQuestHomeHeader(setSelectedSortMethod) {
+let result = size.fileFinishedImporting("modules/quests/native/useQuestHomeHeader.tsx");
+
+export default function useQuestHomeHeader(setSelectedSortMethod) {
   setSelectedSortMethod = setSelectedSortMethod.setSelectedSortMethod;
   const setSelectedFilters = setSelectedSortMethod.setSelectedFilters;
   const selectedFilters = setSelectedSortMethod.selectedFilters;
   const selectedSortMethod = setSelectedSortMethod.selectedSortMethod;
-  let obj = setSelectedSortMethod(selectedFilters[24]);
+  let obj = setSelectedSortMethod(selectedFilters[22]);
   navigation = obj.useNavigation();
-  const obj2 = setSelectedSortMethod(selectedFilters[25]);
+  const obj2 = setSelectedSortMethod(selectedFilters[23]);
   const enabled = obj2.useVirtualCurrencyMobileEnabled().enabled;
   const items = [navigation, enabled, setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod];
   const layoutEffect = selectedSortMethod.useLayoutEffect(() => {
@@ -233,7 +131,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useQuestHome
     };
     navigation.setOptions(obj);
   }, items);
-});
-let result = size.fileFinishedImporting("modules/quests/native/useQuestHomeHeader.tsx");
-
-export default tmp4;
+};

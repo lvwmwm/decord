@@ -1,37 +1,19 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13341
+// Function ID: 13342
 // Name: ForwardingIcon
-// Dependencies: [21, 558, 576, 13192, 2]
+// Dependencies: [21, 13342, 2]
+// Exports: default
 
-// Module 13191 (ForwardingIcon)
+// Module 13341 (ForwardingIcon)
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ArrowAngleRightUpIcon2 from "ArrowAngleRightUpIcon" /* 13342 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const ArrowAngleRightUpIcon2 = tmp(13192);
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForwardingIcon(arg0) {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const ArrowAngleRightUpIcon = ArrowAngleRightUpIcon2.ArrowAngleRightUpIcon;
-    const merged = Object.assign(arg0);
-    const tmp9 = <ArrowAngleRightUpIcon />;
-    cResult[0] = arg0;
-    cResult[1] = tmp9;
-    tmp4 = tmp9;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function ForwardingIcon(arg0) {
+const result = size.fileFinishedImporting("modules/forwarding/native/ForwardingIcon.tsx");
+
+export default function ForwardingIcon(arg0) {
   const ArrowAngleRightUpIcon = ArrowAngleRightUpIcon2.ArrowAngleRightUpIcon;
   const merged = Object.assign(arg0);
   return <ArrowAngleRightUpIcon />;
-});
-const result = size.fileFinishedImporting("modules/forwarding/native/ForwardingIcon.tsx");
-
-export default tmp2;
+};

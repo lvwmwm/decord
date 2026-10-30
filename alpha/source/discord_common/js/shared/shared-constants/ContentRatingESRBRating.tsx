@@ -1,9 +1,9 @@
-// Module ID: 5654
-// Function ID: 5655
+// Module ID: 5660
+// Function ID: 5661
 // Name: ContentRatingESRBRating
 // Dependencies: [2]
 
-// Module 5654 (ContentRatingESRBRating)
+// Module 5660 (ContentRatingESRBRating)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5, 6]), IS_ADULT_ONLY: new Set([5]) };

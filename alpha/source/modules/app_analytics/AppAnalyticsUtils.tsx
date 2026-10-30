@@ -1,37 +1,36 @@
-// Module ID: 5749
-// Function ID: 5750
+// Module ID: 5755
+// Function ID: 5756
 // Name: AppAnalyticsUtils
-// Dependencies: [4861, 502, 4857, 4935, 5231, 4917, 4911, 4879, 2012, 4937, 5750, 5752, 4947, 4908, 5036, 5668, 1084, 4864, 4942, 1096, 15577, 1264, 12, 2]
+// Dependencies: [4862, 502, 4858, 4939, 5237, 4921, 4915, 4880, 2007, 4941, 5756, 5759, 4951, 4912, 5040, 5674, 1072, 4865, 4946, 1084, 15617, 1253, 12, 5757, 2]
 // Exports: collectChannelAnalyticsMetadataFromId, collectStaticChannelRouteAnalyticsMetadata, collectVoiceAnalyticsMetadata, getCustomStatusMetadata, getRecipientFriendCounts, getVoiceStateMetadata, trackWithMetadata
 
-// Module 5749 (AppAnalyticsUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
+// Module 5755 (AppAnalyticsUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4935 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import VoiceStateStore from "VoiceStateStore" /* 5668 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4939 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import VoiceStateStore from "VoiceStateStore" /* 5674 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_22;
 let closure_23;
 let closure_24;
-let closure_25;
 let metroImportAll;
 let metroImportDefault;
 function collectGuildAnalyticsMetadata(guildId) {
@@ -138,7 +137,7 @@ function collectChannelAnalyticsMetadata(channel) {
     return obj4;
   }
 }
-function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, hasItem) {
+function trackWithMetadata(IAR_MODAL_OPEN, fileSizeLimitEventProperties, hasItem) {
   let obj = fileSizeLimitEventProperties;
   if (fileSizeLimitEventProperties === undefined) {
     obj = {};
@@ -148,7 +147,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, 
     flag = false;
   }
   const obj2 = AnalyticsUtilsDefault;
-  if (!obj2.isThrottled(TEXT_AREA_CTA_CLICKED)) {
+  if (!obj2.isThrottled(IAR_MODAL_OPEN)) {
     let guild_id;
     let channel_id;
     let tmp12;
@@ -201,7 +200,7 @@ function trackWithMetadata(TEXT_AREA_CTA_CLICKED, fileSizeLimitEventProperties, 
         const merged2 = Object.assign(tmp23);
         const obj5 = { flush: flag };
         const tmpResult = AnalyticsUtilsDefault;
-        tmpResult.track(TEXT_AREA_CTA_CLICKED, obj3, obj5);
+        tmpResult.track(IAR_MODAL_OPEN, obj3, obj5);
       }
     }
     tmp23 = collectChannelAnalyticsMetadata(channel);
@@ -227,7 +226,7 @@ const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: metroImportDefault, GUILD_VOCAL_CHANNELS_KEY: metroImportAll } = GuildChannelStore);
 GuildChannelStore = GuildChannelStore_mod;
-({ GuildFeatures: closure_22, AnalyticsLocations: closure_23, Permissions: closure_24, ActivityTypes: closure_25 } = Constants);
+({ GuildFeatures: closure_22, AnalyticsLocations: closure_23, Permissions: closure_24 } = Constants);
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const result = size.fileFinishedImporting("modules/app_analytics/AppAnalyticsUtils.tsx");
 
@@ -278,7 +277,7 @@ export function collectVoiceAnalyticsMetadata(id) {
         }
       });
       const merged = Object.assign(obj3);
-      const obj4 = id(15577);
+      const obj4 = id(15617);
       const merged1 = Object.assign(obj4.getVoiceAnalyticsMetadataAdditional());
       return obj;
     }
@@ -303,7 +302,7 @@ export function getCustomStatusMetadata(arg0, arg1) {
   let tmp = obj(12);
   const tmpResult = tmp(VoiceStateStore.getVoiceStates(arg0));
   const item = tmpResult.forEach((channelId) => {
-    const tmp = channelId.channelId === closure_0 && null != PresenceStore.findActivity(channelId.userId, (type) => type.type === constants.CUSTOM_STATUS);
+    const tmp = channelId.channelId === closure_0 && null != PresenceStore.findActivity(channelId.userId, (type) => type.type === closure_1_0(closure_1_3[23]).ActivityTypes.CUSTOM_STATUS);
     if (tmp) {
       obj.custom_status_count = obj.custom_status_count + 1;
     }

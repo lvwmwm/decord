@@ -1,24 +1,24 @@
-// Module ID: 8696
-// Function ID: 8697
+// Module ID: 8730
+// Function ID: 8731
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1389, 1084, 1391, 1120, 5012, 1125, 1264, 8697, 7812, 584, 7143, 1294, 7139, 6433, 2]
+// Dependencies: [5, 1384, 1072, 1386, 1109, 5016, 1114, 1253, 8731, 7817, 572, 7151, 1283, 7147, 6440, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8696 (UserProfileActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import intl3 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import shared from "shared" /* 5012 */;
-import InlineUploaderDefault from "InlineUploader" /* 7139 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7143 */;
-import MessageParserDefault from "MessageParser" /* 7812 */;
-import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8697 */;
+// Module 8730 (UserProfileActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import intl3 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import shared from "shared" /* 5016 */;
+import InlineUploaderDefault from "InlineUploader" /* 7147 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7151 */;
+import MessageParserDefault from "MessageParser" /* 7817 */;
+import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8731 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, errors, guildId, value2;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (1 === c8) {

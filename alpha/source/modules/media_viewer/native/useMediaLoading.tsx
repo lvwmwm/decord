@@ -1,249 +1,18 @@
-// Module ID: 14719
-// Function ID: 14720
+// Module ID: 14753
+// Function ID: 14754
 // Name: useMediaLoading
-// Dependencies: [32, 19, 558, 576, 7118, 2]
+// Dependencies: [32, 19, 7126, 2]
+// Exports: default
 
-// Module 14719 (useMediaLoading)
-import react2 from "react" /* 576 */;
-import hooks_useStableCallbackDefault from "hooks/useStableCallback" /* 7118 */;
+// Module 14753 (useMediaLoading)
+import reactDefault from "react" /* 7126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaLoading(onLoad) {
-  let closure_129_3;
-  let closure_129_4;
-  let closure_129_5;
-  let first;
-  let tmp10;
-  let tmp11;
-  let tmp13;
-  let tmp20;
-  let tmp4;
-  let tmp6;
-  let tmp8;
-  let tmp = dependencyMap;
-  const obj = react2;
-  const cResult = obj.c(19);
-  onLoad = onLoad.onLoad;
-  const onError = onLoad.onError;
-  const onLoadingVisible = onLoad.onLoadingVisible;
-  let tmp3 = _slicedToArray(react.useState(false), 2);
-  [tmp4, closure_129_3] = tmp3;
-  [tmp6, closure_129_4] = _slicedToArray(react.useState(false), 2);
-  const tmp5 = _slicedToArray(react.useState(false), 2);
-  [tmp8, closure_129_5] = _slicedToArray(react.useState(0), 2);
-  const tmp7 = _slicedToArray(react.useState(0), 2);
-  let closure_6 = react.useRef("idle");
-  let closure_7 = react.useRef(null);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o() {
-      if (null != ref2.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(ref2.current);
-        ref2.current = null;
-      }
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor() {
-        return first;
-      }
-    }
-    const items = [first];
-    cResult[1] = V;
-    cResult[2] = items;
-    tmp11 = items;
-    tmp10 = V;
-  } else {
-    class V {
-      constructor() {
-        return first;
-      }
-    }
-    tmp11 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp10, tmp11);
-  if (cResult[3] !== onLoadingVisible) {
-    class P {
-      constructor() {
-        let tmp;
-        if (onLoadingVisible != null) {
-          tmp = onLoadingVisible();
-        }
-        return tmp;
-      }
-    }
-    let num2 = 3;
-    cResult[3] = onLoadingVisible;
-    cResult[4] = P;
-    tmp13 = P;
-  } else {
-    class P {
-      constructor() {
-        let tmp;
-        if (onLoadingVisible != null) {
-          tmp = onLoadingVisible();
-        }
-        return tmp;
-      }
-    }
-  }
-  const tmp14 = hooks_useStableCallbackDefault(tmp13);
-  let closure_9 = tmp14;
-  if (cResult[5] !== tmp14) {
-    class P {
-      constructor() {
-        let tmp;
-        if (onLoadingVisible != null) {
-          tmp = onLoadingVisible();
-        }
-        return tmp;
-      }
-    }
-    cResult[5] = tmp14;
-    cResult[6] = tmp16;
-  } else {
-    class P {
-      constructor() {
-        let tmp;
-        if (onLoadingVisible != null) {
-          tmp = onLoadingVisible();
-        }
-        return tmp;
-      }
-    }
-  }
-  if (cResult[7] !== onLoad) {
-    class I {
-      constructor() {
-        const tmp2 = "loaded" !== ref.current && "error" !== tmp.current;
-        if (tmp2) {
-          first();
-          ref.current = "loaded";
-          closure_1_4(false);
-          if (onLoad != null) {
-            onLoad();
-          }
-        }
-      }
-    }
-    cResult[7] = onLoad;
-    cResult[8] = I;
-  } else {
-    class I {
-      constructor() {
-        const tmp2 = "loaded" !== ref.current && "error" !== tmp.current;
-        if (tmp2) {
-          first();
-          ref.current = "loaded";
-          closure_1_4(false);
-          if (onLoad != null) {
-            onLoad();
-          }
-        }
-      }
-    }
-  }
-  if (cResult[9] !== onError) {
-    class I {
-      constructor() {
-        const tmp2 = "loaded" !== ref.current && "error" !== tmp.current;
-        if (tmp2) {
-          first();
-          ref.current = "loaded";
-          closure_1_4(false);
-          if (onLoad != null) {
-            onLoad();
-          }
-        }
-      }
-    }
-    cResult[9] = onError;
-    cResult[10] = tmp19;
-  } else {
-    class I {
-      constructor() {
-        const tmp2 = "loaded" !== ref.current && "error" !== tmp.current;
-        if (tmp2) {
-          first();
-          ref.current = "loaded";
-          closure_1_4(false);
-          if (onLoad != null) {
-            onLoad();
-          }
-        }
-      }
-    }
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class A {
-      constructor(arg0, arg1) {
-        const tmp = "loaded" !== ref.current && "error" !== ref.current;
-        if (tmp) {
-          let num2 = 0;
-          const tmp3 = closure_1_5;
-          if (arg1 > 0) {
-            const _Math = Math;
-            const _Math2 = Math;
-            num2 = Math.max(0, Math.min(100, 100 * arg0 / arg1));
-          }
-          tmp3(num2);
-        }
-      }
-    }
-    cResult[11] = A;
-    tmp20 = A;
-  } else {
-    class A {
-      constructor(arg0, arg1) {
-        const tmp = "loaded" !== ref.current && "error" !== ref.current;
-        if (tmp) {
-          let num2 = 0;
-          const tmp3 = closure_1_5;
-          if (arg1 > 0) {
-            const _Math = Math;
-            const _Math2 = Math;
-            num2 = Math.max(0, Math.min(100, 100 * arg0 / arg1));
-          }
-          tmp3(num2);
-        }
-      }
-    }
-  }
-  if (cResult[12] === tmp18) {
-    class A {
-      constructor(arg0, arg1) {
-        const tmp = "loaded" !== ref.current && "error" !== ref.current;
-        if (tmp) {
-          let num2 = 0;
-          const tmp3 = closure_1_5;
-          if (arg1 > 0) {
-            const _Math = Math;
-            const _Math2 = Math;
-            num2 = Math.max(0, Math.min(100, 100 * arg0 / arg1));
-          }
-          tmp3(num2);
-        }
-      }
-    }
-  }
-  const obj3 = { hasError: tmp4, isLoadingVisible: tmp6, progress: tmp8, handleLoadStart: tmp15, handleLoad: tmp17, handleError: tmp18, handleProgress: tmp20 };
-  cResult[12] = tmp18;
-  cResult[13] = tmp17;
-  cResult[14] = tmp15;
-  cResult[15] = tmp4;
-  cResult[16] = tmp6;
-  cResult[17] = tmp8;
-  cResult[18] = obj3;
-}) : (function useMediaLoading(onLoad) {
+const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaLoading.tsx");
+
+export default function useMediaLoading(onLoad) {
   let c3;
   let closure_4;
   let closure_5;
@@ -274,7 +43,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaLoad
   }, []);
   const items = [callback];
   const effect = react.useEffect(() => callback, items);
-  const tmp9 = hooks_useStableCallbackDefault(() => {
+  const tmp9 = reactDefault(() => {
     let tmp;
     if (onLoadingVisible != null) {
       tmp = onLoadingVisible();
@@ -337,7 +106,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMediaLoad
   items2 = [callback, onLoad];
   items3 = [callback, onError];
   return obj;
-});
-const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaLoading.tsx");
-
-export default tmp2;
+};

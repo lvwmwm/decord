@@ -1,12 +1,12 @@
-// Module ID: 15432
-// Function ID: 15433
+// Module ID: 15471
+// Function ID: 15472
 // Name: SequencedLottieAnimationView
-// Dependencies: [109, 19, 17, 21, 5266, 2]
+// Dependencies: [109, 19, 17, 21, 5614, 2]
 
-// Module 15432 (SequencedLottieAnimationView)
+// Module 15471 (SequencedLottieAnimationView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import LottieViewDefault from "LottieView" /* 5266 */;
+import LottieViewDefault from "LottieView" /* 5614 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

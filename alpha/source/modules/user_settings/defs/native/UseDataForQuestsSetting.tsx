@@ -1,22 +1,19 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17838
+// Function ID: 17839
 // Name: UseDataForQuestsSetting
-// Dependencies: [8387, 558, 17768, 16613, 4833, 11302, 1125, 17769, 2]
+// Dependencies: [8424, 17839, 16666, 4834, 11505, 1114, 17840, 2]
 
-// Module 17767 (UseDataForQuestsSetting)
-import intl2 from "intl" /* 1125 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16613 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 17768 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 17769 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11302 */;
+// Module 17838 (UseDataForQuestsSetting)
+import intl2 from "intl" /* 1114 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16666 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 17839 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 17840 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisabled() {
+function useIsDisabled() {
   const obj = useAdPersonalizationTogglesDisabled;
   let adPersonalizationTogglesDisabled = obj.useAdPersonalizationTogglesDisabled();
   const obj2 = useParentalControlSettings;
@@ -24,25 +21,16 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDisab
     adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
   }
   return adPersonalizationTogglesDisabled;
-}) : (function useIsDisabled() {
-  const obj = useAdPersonalizationTogglesDisabled;
-  let adPersonalizationTogglesDisabled = obj.useAdPersonalizationTogglesDisabled();
-  const obj2 = useParentalControlSettings;
-  if (!adPersonalizationTogglesDisabled) {
-    adPersonalizationTogglesDisabled = obj2.useIsParentallyControlled();
-  }
-  return adPersonalizationTogglesDisabled;
-});
-function onDataToSupportQuestsSettingValueChange(arg0) {
-  const DropsOptedOut = UserSettings.DropsOptedOut;
-  DropsOptedOut.updateSetting(!arg0);
 }
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
 function useDataToSupportQuestsSettingValue() {
   const DropsOptedOut = UserSettings.DropsOptedOut;
   return !DropsOptedOut.useSetting();
 }
+function onDataToSupportQuestsSettingValueChange(arg0) {
+  const DropsOptedOut = UserSettings.DropsOptedOut;
+  DropsOptedOut.updateSetting(!arg0);
+}
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let SettingBuilders = SettingBuilders_mod;
 let obj = {
   useTitle() {
@@ -56,7 +44,7 @@ let obj = {
   },
   useValue: useDataToSupportQuestsSettingValue,
   onValueChange: onDataToSupportQuestsSettingValueChange,
-  useIsDisabled: tmp2
+  useIsDisabled
 };
 const toggle = SettingBuilders.createToggle(obj);
 SettingBuilders = SettingBuilders_mod;
@@ -69,10 +57,10 @@ let obj2 = {
   usePredicate: AdTopicOptOutClientExperiment.useIsAdTopicOptOutClientEnabled,
   useValue: useDataToSupportQuestsSettingValue,
   onValueChange: onDataToSupportQuestsSettingValueChange,
-  useIsDisabled: tmp2
+  useIsDisabled
 };
 const toggle1 = SettingBuilders.createToggle(obj2);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataForQuestsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/UseDataForQuestsSetting.tsx");
 
 export default toggle;
 export const UseDataForQuestsSponsoredContentSetting = toggle1;

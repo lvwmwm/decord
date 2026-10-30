@@ -1,54 +1,22 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9091
+// Function ID: 9092
 // Name: LiveStageNotificationsUtils
-// Dependencies: [5231, 4937, 1095, 558, 576, 504, 2]
+// Dependencies: [5237, 4941, 1083, 504, 2]
+// Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 9078 (LiveStageNotificationsUtils)
-import Constants from "Constants" /* 1095 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 9091 (LiveStageNotificationsUtils)
+import Constants from "Constants" /* 1083 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSendStageStartNotification(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const canResult = null != closure_0 && PermissionStore.can(Permissions.MENTION_EVERYONE, tmp);
-      return canResult;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useCanSendStageStartNotification(arg0) {
+const result = size.fileFinishedImporting("modules/stage_channels/LiveStageNotificationsUtils.tsx");
+
+export function useCanSendStageStartNotification(arg0) {
   let closure_0;
   _require = arg0;
   const items = [PermissionStore];
@@ -58,49 +26,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanSend
     const canResult = null != closure_0 && PermissionStore.can(Permissions.MENTION_EVERYONE, tmp);
     return canResult;
   }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultSendStartStageNotificationToggle(guild_id) {
-  let first;
-  let tmp7;
-  let tmp8;
-  const obj = guild_id(576);
-  const cResult = obj.c(4);
-  const tmp = guild_id;
-  guild_id = undefined;
-  if (guild_id != null) {
-    guild_id = guild_id.guild_id;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMemberCountStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guild_id) {
-    const fn = function u() {
-      return GuildMemberCountStore.getMemberCount(guild_id);
-    };
-    const items1 = [guild_id];
-    cResult[1] = guild_id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  let tmp10 = null == guild_id;
-  if (!tmp10) {
-    tmp10 = !(null == stateFromStores || stateFromStores > 50000);
-    const tmp11 = null == stateFromStores || stateFromStores > 50000;
-  }
-  return tmp10;
-}) : (function useDefaultSendStartStageNotificationToggle(guild_id) {
+}
+export function useDefaultSendStartStageNotificationToggle(guild_id) {
   guild_id = undefined;
   if (guild_id != null) {
     guild_id = guild_id.guild_id;
@@ -115,8 +42,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDefaultSe
     const tmp4 = null == stateFromStores || stateFromStores > 50000;
   }
   return tmp3;
-});
-const result = size.fileFinishedImporting("modules/stage_channels/LiveStageNotificationsUtils.tsx");
-
-export const useCanSendStageStartNotification = tmp2;
-export const useDefaultSendStartStageNotificationToggle = tmp3;
+}

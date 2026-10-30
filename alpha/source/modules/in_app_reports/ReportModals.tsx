@@ -1,20 +1,20 @@
-// Module ID: 8163
-// Function ID: 8164
+// Module ID: 8344
+// Function ID: 8345
 // Name: ReportModals
-// Dependencies: [5, 4862, 4948, 1403, 1084, 8164, 8165, 8167, 4871, 5749, 2]
+// Dependencies: [5, 4863, 4952, 1398, 1072, 8345, 8346, 8348, 4872, 5755, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8163 (ReportModals)
-import Constants from "Constants" /* 1084 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5749 */;
-import MenuTypes from "MenuTypes" /* 8164 */;
-import showReportModal2 from "showReportModal" /* 8165 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8167 */;
+// Module 8344 (ReportModals)
+import Constants from "Constants" /* 1072 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5755 */;
+import MenuTypes from "MenuTypes" /* 8345 */;
+import showReportModal2 from "showReportModal" /* 8346 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8348 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 4862 */;
-import MessageRecord from "MessageRecord" /* 4948 */;
-import UserRecord from "UserRecord" /* 1403 */;
+import StageInstanceStore from "StageInstanceStore" /* 4863 */;
+import MessageRecord from "MessageRecord" /* 4952 */;
+import UserRecord from "UserRecord" /* 1398 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, record;
@@ -35,7 +35,7 @@ let obj = function _submitHamReportForFirstDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _submitHamReportForFirstDM() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           if (0 === c4) {
@@ -108,7 +108,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           if (0 === c5) {
@@ -372,7 +372,7 @@ export function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "Reflect" });
+  const merged = Object.assign({ message_id: "color", channel_id: "Error" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

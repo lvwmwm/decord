@@ -1,22 +1,21 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10704
+// Function ID: 10705
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5059, 7206, 1199, 5271, 7078, 7083, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 7091, 1114, 5063, 7213, 1188, 5619, 7086, 2]
+// Exports: default
 
-// Module 10681 (SelectedUserField)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl6 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import CircleXIcon from "CircleXIcon" /* 7078 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7083 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7206 */;
+// Module 10704 (SelectedUserField)
+import nativeDefault from "native" /* 575 */;
+import intl6 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import CircleXIcon from "CircleXIcon" /* 7086 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7091 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7213 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,182 +38,9 @@ obj4 = { marginRight: nativeDefault.space.PX_8 };
 obj5 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.lg, paddingVertical: 6, paddingHorizontal: 6 };
 obj6 = { alignItems: "center", justifyContent: "center", minWidth: 44, minHeight: 44, paddingRight: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_8 };
 let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUserField(arg0) {
-  let formatToPlainString;
-  let intl4;
-  let items;
-  let items1;
-  let items2;
-  let obj12;
-  let obj6;
-  let obj8;
-  let obj9;
-  let onPress;
-  let selectedUser;
-  let setSelectedUser;
-  let v0Vb9FQ;
-  const obj = react2;
-  const cResult = obj.c(28);
-  ({ selectedUser, onPress, setSelectedUser } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] === tmp4.opener) {
-    let tmp6;
-    let tmp7;
-    let tmp14;
-    let tmp19;
-    if (cResult[1] === (null != selectedUser && tmp4.openerWithClearButton)) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] !== selectedUser) {
-      let combined;
-      if (null != selectedUser) {
-        const intl3 = tmp(1125).intl;
-        const _HermesInternal2 = HermesInternal;
-        const stringResult = intl3.string(intl6.t.xFn72s);
-        const obj2 = UserUtilsDefault;
-        combined = "" + stringResult + ", " + obj2.getName(selectedUser);
-      } else {
-        const intl = tmp(1125).intl;
-        const stringResult1 = intl.string(intl6.t.xFn72s);
-        const intl2 = tmp(1125).intl;
-        const _HermesInternal = HermesInternal;
-        combined = "" + stringResult1 + ", " + intl2.string(tmp(1125).t.R0vK0N);
-      }
-      cResult[3] = selectedUser;
-      cResult[4] = combined;
-      tmp7 = combined;
-    } else {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] !== tmp4.searchIcon) {
-      const obj3 = { style: tmp4.searchIcon, size: "xs", color: "interactive-text-default" };
-      const tmp16 = hasOwnProperty(MagnifyingGlassIcon.MagnifyingGlassIcon, obj3);
-      cResult[5] = tmp4.searchIcon;
-      cResult[6] = tmp16;
-      tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[6];
-    }
-    if (cResult[7] === selectedUser) {
-      if (cResult[8] === tmp4.userPill) {
-        let tmp17;
-        if (cResult[9] === tmp4.userPillText) {
-          tmp17 = cResult[10];
-        }
-        if (cResult[11] === onPress) {
-          if (cResult[12] === tmp6) {
-            if (cResult[13] === tmp7) {
-              if (cResult[14] === tmp14) {
-                let tmp24;
-                if (cResult[15] === tmp17) {
-                  tmp24 = cResult[16];
-                }
-                if (cResult[17] === selectedUser) {
-                  if (cResult[18] === setSelectedUser) {
-                    let tmp28;
-                    if (cResult[19] === tmp4.clearButton) {
-                      tmp28 = cResult[20];
-                    }
-                    if (cResult[21] === tmp4.content) {
-                      if (cResult[22] === tmp24) {
-                        let tmp34;
-                        if (cResult[23] === tmp28) {
-                          tmp34 = cResult[24];
-                        }
-                        if (cResult[25] === tmp4.container) {
-                          let tmp39;
-                          if (cResult[26] === tmp34) {
-                            tmp39 = cResult[27];
-                          }
-                          return tmp39;
-                        }
-                        const obj4 = { style: tmp4.container, children: tmp34 };
-                        const tmp42 = hasOwnProperty(React3, obj4);
-                        cResult[25] = tmp4.container;
-                        cResult[26] = tmp34;
-                        cResult[27] = tmp42;
-                        tmp39 = tmp42;
-                      }
-                    }
-                    const obj5 = { children: metroRequire(React3, obj6) };
-                    obj6 = { style: tmp4.content, children: items };
-                    items = [tmp24, tmp28];
-                    const InputFieldContainer = tmp(7083).InputFieldContainer;
-                    const tmp38 = hasOwnProperty(InputFieldContainer, obj5);
-                    cResult[21] = tmp4.content;
-                    cResult[22] = tmp24;
-                    cResult[23] = tmp28;
-                    cResult[24] = tmp38;
-                    tmp34 = tmp38;
-                  }
-                }
-                let tmp29 = null;
-                if (null != selectedUser) {
-                  const obj7 = {
-                    style: tmp4.clearButton,
-                    onPress() {
-                                      return setSelectedUser(undefined);
-                                    },
-                    accessibilityRole: "button",
-                    accessibilityLabel: formatToPlainString(v0Vb9FQ, obj9),
-                    children: hasOwnProperty(CircleXIcon.CircleXIcon, { size: "xs" })
-                  };
-                  const intl5 = tmp(1125).intl;
-                  formatToPlainString = intl5.formatToPlainString;
-                  obj9 = { text: obj12.getName(selectedUser) };
-                  v0Vb9FQ = tmp(1125).t["0Vb9FQ"];
-                  obj12 = UserUtilsDefault;
-                  tmp29 = hasOwnProperty(_false, obj7);
-                }
-                cResult[17] = selectedUser;
-                cResult[18] = setSelectedUser;
-                cResult[19] = tmp4.clearButton;
-                cResult[20] = tmp29;
-                tmp28 = tmp29;
-              }
-            }
-          }
-        }
-        const obj10 = { style: tmp6, onPress, accessibilityRole: "button", accessibilityLabel: tmp7, children: items1 };
-        items1 = [tmp14, tmp17];
-        const tmp27 = metroRequire(_false, obj10);
-        cResult[11] = onPress;
-        cResult[12] = tmp6;
-        cResult[13] = tmp7;
-        cResult[14] = tmp14;
-        cResult[15] = tmp17;
-        cResult[16] = tmp27;
-        tmp24 = tmp27;
-      }
-    }
-    if (null != selectedUser) {
-      const obj11 = { style: tmp4.userPill, children: items2 };
-      const obj13 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
-      const Avatar = tmp(1199).Avatar;
-      items2 = [hasOwnProperty(Avatar, obj13), ];
-      const obj14 = { variant: "text-md/medium", style: tmp4.userPillText, children: obj8.getName(selectedUser) };
-      const Text2 = tmp(5271).Text;
-      obj8 = UserUtilsDefault;
-      items2[1] = hasOwnProperty(Text2, obj14);
-      tmp19 = metroRequire(React3, obj11);
-    } else {
-      const obj15 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp4.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-      const Text = tmp(5271).Text;
-      intl4 = tmp(1125).intl;
-      tmp19 = hasOwnProperty(Text, obj15);
-    }
-    cResult[7] = selectedUser;
-    cResult[8] = tmp4.userPill;
-    cResult[9] = tmp4.userPillText;
-    cResult[10] = tmp19;
-    tmp17 = tmp19;
-  }
-  const items3 = [tmp4.opener, null != selectedUser && tmp4.openerWithClearButton];
-  cResult[0] = tmp4.opener;
-  cResult[1] = null != selectedUser && tmp4.openerWithClearButton;
-  cResult[2] = items3;
-  tmp6 = items3;
-}) : (function SelectedUserField(onPress) {
+const result = size.fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
+
+export default function SelectedUserField(onPress) {
   let InputFieldContainer;
   let closure_129_0;
   let combined;
@@ -244,17 +70,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
   const obj3 = { style: items, onPress, accessibilityRole: "button", accessibilityLabel: combined, children: items1 };
   items[1] = openerWithClearButton;
   if (null != selectedUser) {
-    const intl3 = tmp4(1125).intl;
+    const intl3 = tmp4(1114).intl;
     const _HermesInternal2 = HermesInternal;
     const stringResult = intl3.string(intl6.t.xFn72s);
     const obj4 = UserUtilsDefault;
     combined = "" + stringResult + ", " + obj4.getName(selectedUser);
   } else {
-    const intl = tmp4(1125).intl;
+    const intl = tmp4(1114).intl;
     const stringResult1 = intl.string(intl6.t.xFn72s);
-    const intl2 = tmp4(1125).intl;
+    const intl2 = tmp4(1114).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1125).t.R0vK0N);
+    combined = "" + stringResult1 + ", " + intl2.string(tmp4(1114).t.R0vK0N);
   }
   items1 = [, ];
   const obj5 = { style: tmp.searchIcon, size: "xs", color: "interactive-text-default" };
@@ -262,17 +88,17 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
   if (null != selectedUser) {
     const obj6 = { style: tmp.userPill, children: items2 };
     const obj7 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
-    const Avatar = tmp4(1199).Avatar;
+    const Avatar = tmp4(1188).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
     const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5271).Text;
+    const Text2 = tmp4(5619).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
     const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5271).Text;
-    intl4 = tmp4(1125).intl;
+    const Text = tmp4(5619).Text;
+    intl4 = tmp4(1114).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }
   items1[1] = tmp2Result1;
@@ -288,17 +114,14 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SelectedUser
       accessibilityLabel: formatToPlainString(v0Vb9FQ, obj12),
       children: hasOwnProperty(CircleXIcon.CircleXIcon, { size: "xs" })
     };
-    const intl5 = tmp4(1125).intl;
+    const intl5 = tmp4(1114).intl;
     formatToPlainString = intl5.formatToPlainString;
     obj12 = { text: obj13.getName(selectedUser) };
-    v0Vb9FQ = tmp4(1125).t["0Vb9FQ"];
+    v0Vb9FQ = tmp4(1114).t["0Vb9FQ"];
     obj13 = UserUtilsDefault;
     tmp2Result = tmp2(tmp7, obj11);
   }
   items3[1] = tmp2Result;
   obj14 = { children: metroRequire(React3, obj2) };
   return hasOwnProperty(React3, obj);
-});
-const result = size.fileFinishedImporting("modules/checkout/native/gifting/SelectedUserField.tsx");
-
-export default tmp6;
+};

@@ -1,99 +1,53 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14975
+// Function ID: 14976
 // Name: HideFriendRequestNotesUtils
-// Dependencies: [4947, 558, 4833, 8179, 576, 504, 2]
+// Dependencies: [4951, 4834, 8360, 504, 2]
+// Exports: useFriendRequestNote, useHideFriendRequestNotes
 
-// Module 14931 (HideFriendRequestNotesUtils)
-import UserSettings from "UserSettings" /* 4833 */;
-import useUserIsTeen from "useUserIsTeen" /* 8179 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 14975 (HideFriendRequestNotesUtils)
+import UserSettings from "UserSettings" /* 4834 */;
+import useUserIsTeen from "useUserIsTeen" /* 8360 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHideFriendRequestNotes() {
-  const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
-  const setting = HideFriendRequestNotes.useSetting();
-  const obj = useUserIsTeen;
-  let userIsTeen = obj.useUserIsTeen();
-  if (null != setting) {
-    userIsTeen = setting;
-  }
-  return userIsTeen;
-}) : (function useHideFriendRequestNotes() {
-  const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
-  const setting = HideFriendRequestNotes.useSetting();
-  const obj = useUserIsTeen;
-  let userIsTeen = obj.useUserIsTeen();
-  if (null != setting) {
-    userIsTeen = setting;
-  }
-  return userIsTeen;
-});
-let closure_3 = tmp2;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestNote(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  const tmp4 = closure_3();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return RelationshipStore.getNote(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  let tmp9 = null;
-  if (!tmp4) {
-    tmp9 = null;
-    if (null != stateFromStores) {
-      tmp9 = null;
-      if ("" !== stateFromStores) {
-        tmp9 = stateFromStores;
-      }
-    }
-  }
-  return tmp9;
-}) : (function useFriendRequestNote(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [RelationshipStore];
-  const tmp = closure_3();
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => RelationshipStore.getNote(closure_0));
-  let tmp3 = null;
-  if (!tmp) {
-    tmp3 = null;
-    if (null != stateFromStores) {
-      tmp3 = null;
-      if ("" !== stateFromStores) {
-        tmp3 = stateFromStores;
-      }
-    }
-  }
-  return tmp3;
-});
 const result = size.fileFinishedImporting("modules/people/HideFriendRequestNotesUtils.tsx");
 
-export const useHideFriendRequestNotes = tmp2;
-export const useFriendRequestNote = tmp3;
+export function useHideFriendRequestNotes() {
+  const HideFriendRequestNotes = UserSettings.HideFriendRequestNotes;
+  const setting = HideFriendRequestNotes.useSetting();
+  const obj = useUserIsTeen;
+  let userIsTeen = obj.useUserIsTeen();
+  if (null != setting) {
+    userIsTeen = setting;
+  }
+  return userIsTeen;
+}
+export function useFriendRequestNote(arg0) {
+  let closure_0;
+  _require = arg0;
+  const HideFriendRequestNotes = require("UserSettings").HideFriendRequestNotes;
+  const setting = HideFriendRequestNotes.useSetting();
+  const obj = require("useUserIsTeen");
+  let userIsTeen = obj.useUserIsTeen();
+  const tmp = _require;
+  if (null != setting) {
+    userIsTeen = setting;
+  }
+  const items = [RelationshipStore];
+  const tmpResult = tmp(504);
+  const stateFromStores = tmpResult.useStateFromStores(items, () => RelationshipStore.getNote(closure_0));
+  let tmp6 = null;
+  if (!userIsTeen) {
+    tmp6 = null;
+    if (null != stateFromStores) {
+      tmp6 = null;
+      if ("" !== stateFromStores) {
+        tmp6 = stateFromStores;
+      }
+    }
+  }
+  return tmp6;
+}

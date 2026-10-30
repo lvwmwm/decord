@@ -1,56 +1,23 @@
-// Module ID: 18289
-// Function ID: 18290
+// Module ID: 18348
+// Function ID: 18349
 // Name: useGuildsBarGuildMediaState
-// Dependencies: [15517, 558, 576, 504, 2]
+// Dependencies: [15557, 504, 2]
+// Exports: default
 
-// Module 18289 (useGuildsBarGuildMediaState)
-import GuildMediaStateStore from "GuildMediaStateStore" /* 15517 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18348 (useGuildsBarGuildMediaState)
+import GuildMediaStateStore from "GuildMediaStateStore" /* 15557 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBarGuildMediaState(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMediaStateStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      return GuildMediaStateStore.getGuildMediaState(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useGuildsBarGuildMediaState(arg0) {
+const result = size.fileFinishedImporting("modules/guilds_bar/useGuildsBarGuildMediaState.tsx");
+
+export default function useGuildsBarGuildMediaState(arg0) {
   let closure_0;
   _require = arg0;
   const items = [GuildMediaStateStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => GuildMediaStateStore.getGuildMediaState(closure_0), items1);
-});
-const result = size.fileFinishedImporting("modules/guilds_bar/useGuildsBarGuildMediaState.tsx");
-
-export default tmp2;
+};

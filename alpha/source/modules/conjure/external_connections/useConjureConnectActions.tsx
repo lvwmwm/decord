@@ -1,158 +1,25 @@
-// Module ID: 12349
-// Function ID: 12350
+// Module ID: 12511
+// Function ID: 12512
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 558, 576, 12320, 12319, 8897, 1125, 3864, 2]
+// Dependencies: [5, 32, 19, 12482, 12481, 8931, 1114, 3865, 2]
+// Exports: useConjureConnectActions
 
-// Module 12349 (useConjureConnectActions)
-import conjureExternalConnections from "conjureExternalConnections" /* 12320 */;
+// Module 12511 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 12482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c2, c3;
+let c2, c3;
 
 const set = new Set();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureConnectActions(arg0, arg1) {
-  let closure_0;
-  let first;
-  let tmp3;
-  _require = arg0;
-  let closure_1 = arg1;
-  let obj = require("react");
-  const cResult = obj.c(7);
-  const tmp2 = first(react.useState(set), 2);
-  [tmp3, dependencyMap] = tmp2;
-  const ref = react.useRef(set);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function s(arg0) {
-      const obj = conjureExternalConnections;
-      ref.current = obj.endExternalAuthorization(ref.current, arg0);
-      dependencyMap(ref.current);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    let tmp5;
-    if (cResult[2] === arg0) {
-      tmp5 = cResult[3];
-    }
-    if (cResult[4] === tmp5) {
-      let tmp6;
-      if (cResult[5] === tmp3) {
-        tmp6 = cResult[6];
-      }
-      return tmp6;
-    }
-    let obj2 = { pending: tmp3, connect: tmp5 };
-    cResult[4] = tmp5;
-    cResult[5] = tmp3;
-    cResult[6] = obj2;
-    tmp6 = obj2;
-  }
-  const fn2 = function v(type) {
-    function startAuthorization() {
-      return closure_0(...arguments);
-    }
-    if (null != type) {
-      let obj = type(dependencyMap[5]);
-      const result = obj.beginExternalAuthorization(ref.current, type.type);
-      const tmp7 = ref;
-      if (null != result) {
-        tmp7.current = result;
-        let tmp = dependencyMap;
-        dependencyMap(result);
-        const tmp3 = ref;
-        type = ref(function*(arg0, value) {
-          let obj5;
-          if (c3 === 2) {
-            c3 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } else {
-            try {
-              let tmp;
-              c3 = 2;
-              if (0 === c2) {
-                if (arg0 === 1) {
-                  c3 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 3;
-                  const obj4 = { value, done: true };
-                  return obj4;
-                } else {
-                  closure_1 = tmp4;
-                  tmp = undefined;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj6 = { value: obj5.requestExternalAuthorizeUrl(tmp, tmp.type), done: false };
-                  obj5 = tmp(dependencyMap[6]);
-                  return obj6;
-                }
-              } else if (arg0 === 1) {
-                c3 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c3 = 3;
-                const obj7 = { value, done: true };
-                return obj7;
-              } else {
-                tmp = value;
-                first(tmp.type);
-                if ("url" !== tmp.type) {
-                  let stringResult;
-                  const obj3 = tmp(dependencyMap[5]);
-                  const tmp13 = closure_2_1;
-                  if ("setup" === obj3.externalAuthErrorCopy(tmp.error)) {
-                    const intl2 = tmp(dependencyMap[8]).intl;
-                    stringResult = intl2.string(closure_3_1(dependencyMap[9])["jCQ/1B"]);
-                  } else {
-                    const intl = tmp(dependencyMap[8]).intl;
-                    stringResult = intl.string(closure_3_1(dependencyMap[9]).POxkSh);
-                  }
-                  tmp13(stringResult);
-                } else {
-                  const obj8 = { href: tmp.url, trusted: false };
-                  const obj = tmp(dependencyMap[7]);
-                  obj.handleClick(obj8);
-                }
-                c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
-              }
-            } catch (tmp33) {
-              c3 = 3;
-              throw tmp33;
-            }
-          }
-        });
-        const promise = startAuthorization();
-        promise.catch(() => first(type.type));
-      }
-    }
-  };
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn2;
-  tmp5 = fn2;
-}) : (function useConjureConnectActions(arg0, arg1) {
+let result = size.fileFinishedImporting("modules/conjure/external_connections/useConjureConnectActions.tsx");
+
+export function useConjureConnectActions(projectId, presentError) {
   let callback;
   let tmp2;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
+  let closure_1 = presentError;
   let tmp = callback(react.useState(set), 2);
   [tmp2, dependencyMap] = tmp;
   const ref = react.useRef(set);
@@ -161,15 +28,17 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
     ref.current = obj.endExternalAuthorization(ref.current, arg0);
     dependencyMap(ref.current);
   }, []);
-  const items = [arg1, arg0, callback];
+  const items = [presentError, projectId, callback];
   let obj = {
     pending: tmp2,
     connect: react.useCallback((type) => {
       function startAuthorization() {
         return obj(...arguments);
       }
-      let obj = function _startAuthorization2() {
+      projectId = type;
+      let obj = function _startAuthorization() {
         obj = _asyncToGenerator(async (arg0, value) => {
+          let closure_0;
           let obj5;
           if (c3 === 2) {
             c3 = 3;
@@ -181,10 +50,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
+              let closure_1;
               let tmp;
               c3 = 2;
               if (0 === c2) {
@@ -201,7 +71,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                   c2 = 1;
                   c3 = 1;
                   const obj6 = { value: obj5.requestExternalAuthorizeUrl(tmp, type.type), done: false };
-                  obj5 = type(closure_2_2[6]);
+                  obj5 = type(closure_2_2[4]);
                   return obj6;
                 }
               } else if (arg0 === 1) {
@@ -216,23 +86,23 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
                 closure_1_4(closure_129_0.type);
                 if ("url" !== tmp.type) {
                   let stringResult;
-                  const obj3 = type(closure_2_2[5]);
+                  const obj3 = type(closure_2_2[3]);
                   const tmp13 = closure_1;
                   if ("setup" === obj3.externalAuthErrorCopy(tmp.error)) {
-                    const intl2 = type(closure_2_2[8]).intl;
-                    stringResult = intl2.string(closure_2_1(closure_2_2[9])["jCQ/1B"]);
+                    const intl2 = type(closure_2_2[6]).intl;
+                    stringResult = intl2.string(closure_2_1(closure_2_2[7])["jCQ/1B"]);
                   } else {
-                    const intl = type(closure_2_2[8]).intl;
-                    stringResult = intl.string(closure_2_1(closure_2_2[9]).POxkSh);
+                    const intl = type(closure_2_2[6]).intl;
+                    stringResult = intl.string(closure_2_1(closure_2_2[7]).POxkSh);
                   }
                   tmp13(stringResult);
                 } else {
                   const obj8 = { href: tmp.url, trusted: false };
-                  obj = type(closure_2_2[7]);
+                  obj = type(closure_2_2[5]);
                   obj.handleClick(obj8);
                 }
                 c3 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp33) {
               c3 = 3;
@@ -242,9 +112,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
         });
         return obj(...arguments);
       };
-      if (null != type) {
-        let tmp = type;
-        obj = type(dependencyMap[5]);
+      if (null != projectId) {
+        let tmp = projectId;
+        obj = projectId(dependencyMap[3]);
         const tmp3 = ref;
         const result = obj.beginExternalAuthorization(ref.current, type.type);
         if (null != result) {
@@ -257,7 +127,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureCo
     }, items)
   };
   return obj;
-});
-let result = size.fileFinishedImporting("modules/conjure/external_connections/useConjureConnectActions.tsx");
-
-export const useConjureConnectActions = tmp3;
+}

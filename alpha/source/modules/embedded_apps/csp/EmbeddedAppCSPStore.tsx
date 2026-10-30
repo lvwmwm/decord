@@ -1,11 +1,11 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 10909
+// Function ID: 10910
 // Name: EmbeddedAppCSPStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 10886 (EmbeddedAppCSPStore)
+// Module 10909 (EmbeddedAppCSPStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();

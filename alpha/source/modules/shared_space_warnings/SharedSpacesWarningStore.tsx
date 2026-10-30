@@ -1,13 +1,13 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15580
+// Function ID: 15581
 // Name: SharedSpacesWarningStore
-// Dependencies: [1101, 570, 5201, 7838, 2]
+// Dependencies: [1090, 560, 5207, 7843, 2]
 // Exports: dequeueBlockWarning, gdmBlockedWarningInCooldown, getChannelDismissTimestamp, getGlobalDismissTimestamp, getUserDismissTimestamp, isBlockedWarningQueued, queueBlockWarning, setDismissalTimeForChannel, setDismissalTimeForUser, setDismissalTimeForUsers, userBlockedWarningInCooldown, voiceBlockedWarningInCooldownForUsers
 
-// Module 15540 (SharedSpacesWarningStore)
-import DurationsDefault from "Durations" /* 1101 */;
-import module_570 from "module_570" /* 570 */;
-import combine_mod from "combine" /* 5201 */;
+// Module 15580 (SharedSpacesWarningStore)
+import DurationsDefault from "Durations" /* 1090 */;
+import module_560 from "module_560" /* 560 */;
+import combine_mod from "combine" /* 5207 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let closure_2 = 3 * DurationsDefault.Millis.DAY;
 let closure_3 = 2 * DurationsDefault.Millis.DAY;
 const HOUR = DurationsDefault.Millis.HOUR;
-const create = module_570.create;
+const create = module_560.create;
 let combine = combine_mod;
 let obj = { name: "shared-spaces-warning-storage", storage: combine.createJSONStorage(() => require("LocalStorageWrapper")) };
 const persist = combine.persist;

@@ -1,105 +1,22 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12540
+// Function ID: 12541
 // Name: useConjureRemixNotice
-// Dependencies: [19, 10825, 558, 576, 504, 10921, 1125, 3864, 2]
+// Dependencies: [19, 10848, 504, 10944, 1114, 3865, 2]
+// Exports: default, useConjureRemixStartedAt
 
-// Module 12391 (useConjureRemixNotice)
-import _modDef3864 from "module_3864" /* 3864 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 10921 */;
+// Module 12540 (useConjureRemixNotice)
+import _modDef3865 from "module_3865" /* 3865 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 10944 */;
 import react from "react" /* 19 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 10825 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 10848 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRemixNotice(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp8;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(13);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureRemixStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return ConjureRemixStore.getFailure(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] !== arg0) {
-    const fn2 = function l() {
-      const obj = conjureRemixConnection;
-      return obj.sendRetryRemix(closure_0);
-    };
-    cResult[3] = arg0;
-    cResult[4] = fn2;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[4];
-  }
-  let tmp9 = null;
-  if (null != stateFromStores) {
-    let tmp10;
-    let tmp13;
-    let tmp16;
-    if (cResult[5] !== stateFromStores) {
-      const intl = tmp(1125).intl;
-      const obj2 = { reason: stateFromStores };
-      const formatResult = intl.format(_modDef3864.Up6Ssw, obj2);
-      cResult[5] = stateFromStores;
-      cResult[6] = formatResult;
-      tmp10 = formatResult;
-    } else {
-      tmp10 = cResult[6];
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const stringResult = intl2.string(_modDef3864["ywA+ET"]);
-      cResult[7] = stringResult;
-      tmp13 = stringResult;
-    } else {
-      tmp13 = cResult[7];
-    }
-    if (cResult[8] !== tmp8) {
-      const obj3 = { text: tmp13, onClick: tmp8 };
-      cResult[8] = tmp8;
-      cResult[9] = obj3;
-      tmp16 = obj3;
-    } else {
-      tmp16 = cResult[9];
-    }
-    if (cResult[10] === tmp10) {
-      let tmp17;
-      if (cResult[11] === tmp16) {
-        tmp17 = cResult[12];
-      }
-      tmp9 = tmp17;
-    }
-    const obj4 = { message: tmp10, retry: tmp16 };
-    cResult[10] = tmp10;
-    cResult[11] = tmp16;
-    cResult[12] = obj4;
-    tmp17 = obj4;
-  }
-  return tmp9;
-}) : (function useConjureRemixNotice(arg0) {
+const result = size.fileFinishedImporting("modules/conjure/remix/useConjureRemixNotice.tsx");
+
+export default function useConjureRemixNotice(arg0) {
   let closure_0;
   let intl;
   let intl2;
@@ -112,57 +29,19 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjure
   [][0] = arg0;
   let tmp5 = null;
   if (null != stateFromStores) {
-    const obj2 = { message: intl.format(_modDef3864.Up6Ssw, obj3), retry: obj4 };
-    intl = tmp(1125).intl;
+    const obj2 = { message: intl.format(_modDef3865.Up6Ssw, obj3), retry: obj4 };
+    intl = tmp(1114).intl;
     obj3 = { reason: stateFromStores };
-    obj4 = { text: intl2.string(_modDef3864["ywA+ET"]), onClick: tmp4 };
-    intl2 = tmp(1125).intl;
+    obj4 = { text: intl2.string(_modDef3865["ywA+ET"]), onClick: tmp4 };
+    intl2 = tmp(1114).intl;
     tmp5 = obj2;
   }
   return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRemixStartedAt(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureRemixStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return ConjureRemixStore.getSetupStartedAt(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useConjureRemixStartedAt(arg0) {
-  let closure_0;
-  _require = arg0;
+};
+export function useConjureRemixStartedAt(projectId) {
+  _require = projectId;
   const items = [ConjureRemixStore];
-  const items1 = [arg0];
+  const items1 = [projectId];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => ConjureRemixStore.getSetupStartedAt(closure_0), items1);
-});
-const result = size.fileFinishedImporting("modules/conjure/remix/useConjureRemixNotice.tsx");
-
-export default tmp2;
-export const useConjureRemixStartedAt = tmp3;
+  return obj.useStateFromStores(items, () => ConjureRemixStore.getSetupStartedAt(projectId), items1);
+}

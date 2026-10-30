@@ -1,17 +1,16 @@
-// Module ID: 18659
-// Function ID: 18660
+// Module ID: 18718
+// Function ID: 18719
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 587, 5005, 558, 576, 18658, 11172, 15379, 5249, 1125, 4119, 2]
+// Dependencies: [19, 17, 21, 575, 5009, 18717, 11377, 15419, 5255, 1114, 4120, 2]
 
-// Module 18659 (SmartSearchExpandButton)
-import nativeDefault from "native" /* 587 */;
-import _modDef4119 from "module_4119" /* 4119 */;
-import HapticUtils from "HapticUtils" /* 5249 */;
+// Module 18718 (SmartSearchExpandButton)
+import nativeDefault from "native" /* 575 */;
+import _modDef4120 from "module_4120" /* 4120 */;
+import HapticUtils from "HapticUtils" /* 5255 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,106 +29,7 @@ let closure_10 = createStyles.createStyles((backgroundColor) => {
   const merged = Object.assign(hasOwnProperty.absoluteFillObject);
   return obj;
 });
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearchExpandButton(arg0) {
-  let ChevronSmallUpIcon;
-  let block;
-  let isCollapsed;
-  let items;
-  let onPress;
-  let pill;
-  let tmp10;
-  let tmp14;
-  let tmp5;
-  let tmp6;
-  let obj = onPress(576);
-  const cResult = obj.c(17);
-  ({ isCollapsed, onPress } = arg0);
-  const obj2 = onPress(18658);
-  const tmp4 = closure_10(obj2.useSearchHostSurfaceColor());
-  if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(11172).ChevronSmallDownIcon;
-  } else {
-    ChevronSmallUpIcon = tmp(15379).ChevronSmallUpIcon;
-  }
-  if (cResult[0] !== onPress) {
-    const fn = function l() {
-      const obj = HapticUtils;
-      const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
-      onPress();
-    };
-    cResult[0] = onPress;
-    cResult[1] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-  }
-  ({ block, pill } = tmp4);
-  if (cResult[2] !== isCollapsed) {
-    const intl = tmp(1125).intl;
-    const string = intl.string;
-    const tmp8 = _modDef4119;
-    const stringResult = string(isCollapsed ? tmp8.NuTbB9 : tmp8.FKLBbW);
-    cResult[2] = isCollapsed;
-    cResult[3] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.surface) {
-    const obj3 = { style: tmp4.surface, pointerEvents: "none" };
-    const tmp13 = closure_7(closure_6, obj3);
-    cResult[4] = tmp4.surface;
-    cResult[5] = tmp13;
-    tmp10 = tmp13;
-  } else {
-    tmp10 = cResult[5];
-  }
-  if (cResult[6] !== ChevronSmallUpIcon) {
-    const obj4 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    const tmp17 = closure_7(ChevronSmallUpIcon, obj4);
-    cResult[6] = ChevronSmallUpIcon;
-    cResult[7] = tmp17;
-    tmp14 = tmp17;
-  } else {
-    tmp14 = cResult[7];
-  }
-  if (cResult[8] === tmp5) {
-    if (cResult[9] === tmp4.pill) {
-      if (cResult[10] === tmp6) {
-        if (cResult[11] === tmp10) {
-          let tmp18;
-          if (cResult[12] === tmp14) {
-            tmp18 = cResult[13];
-          }
-          if (cResult[14] === tmp4.block) {
-            let tmp20;
-            if (cResult[15] === tmp18) {
-              tmp20 = cResult[16];
-            }
-            return tmp20;
-          }
-          const obj5 = { style: block, hitSlop: rect, children: tmp18 };
-          const tmp24 = closure_7(closure_6, obj5);
-          cResult[14] = tmp4.block;
-          cResult[15] = tmp18;
-          cResult[16] = tmp24;
-          tmp20 = tmp24;
-        }
-      }
-    }
-  }
-  const obj6 = { style: pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: tmp6, onPress: tmp5, children: items };
-  items = [tmp10, tmp14];
-  const tmp19 = closure_8(closure_4, obj6);
-  cResult[8] = tmp5;
-  cResult[9] = tmp4.pill;
-  cResult[10] = tmp6;
-  cResult[11] = tmp10;
-  cResult[12] = tmp14;
-  cResult[13] = tmp19;
-  tmp18 = tmp19;
-}) : (function SmartSearchExpandButton(arg0) {
+const memoResult = react.memo(function SmartSearchExpandButton(arg0) {
   let ChevronSmallUpIcon;
   let FKLBbW;
   let callback;
@@ -142,12 +42,12 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp7;
   let tmp8;
   ({ isCollapsed, onPress } = arg0);
-  let obj = onPress(18658);
+  let obj = onPress(18717);
   const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(11172).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11377).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(15379).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(15419).ChevronSmallUpIcon;
   }
   const items = [onPress];
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };
@@ -157,9 +57,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onPress();
   }, items);
-  const intl = tmp(1125).intl;
+  const intl = tmp(1114).intl;
   string = intl.string;
-  const tmp10 = _modDef4119;
+  const tmp10 = _modDef4120;
   tmp7 = closure_8;
   tmp8 = closure_4;
   if (isCollapsed) {
@@ -172,10 +72,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   items1 = [, ];
   const obj4 = { style: tmp3.surface, pointerEvents: "none" };
   items1[0] = closure_7(closure_6, obj4);
-  const obj5 = { size: "sm", color: tmp11(587).colors.INTERACTIVE_ICON_DEFAULT };
+  const obj5 = { size: "sm", color: tmp11(575).colors.INTERACTIVE_ICON_DEFAULT };
   items1[1] = closure_7(ChevronSmallUpIcon, obj5);
   return closure_7(closure_6, obj2);
-}));
+});
 let result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchExpandButton.tsx");
 
 export default memoResult;

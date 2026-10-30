@@ -1,13 +1,13 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13146
+// Function ID: 13147
 // Name: gameOrganizationAccountLinkStatus
-// Dependencies: [2043, 7263, 7316, 558, 576, 504, 2]
+// Dependencies: [2040, 7270, 7323, 504, 2]
+// Exports: useGameOrganizationAccountLinkStatus
 
-// Module 12995 (gameOrganizationAccountLinkStatus)
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7263 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7316 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13146 (gameOrganizationAccountLinkStatus)
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7270 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7323 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,57 +56,19 @@ function getGameOrganizationAccountLinkStatus(id, ApplicationStore, AuthorizedAp
   }
 }
 const FetchState = AuthorizedAppsStore2.FetchState;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGameOrganizationAccountLinkStatus(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApplicationStore, AuthorizedAppsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      let str = "loading";
-      if (null != closure_0) {
-        str = getGameOrganizationAccountLinkStatus(tmp, ApplicationStore, AuthorizedAppsStore);
-      }
-      return str;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useGameOrganizationAccountLinkStatus(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/game_organization_invites/gameOrganizationAccountLinkStatus.tsx");
+
+export { getGameOrganizationAccountLinkStatus };
+export function useGameOrganizationAccountLinkStatus(id) {
+  _require = id;
   const items = [ApplicationStore, AuthorizedAppsStore];
-  const items1 = [arg0];
+  const items1 = [id];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
     let str = "loading";
-    if (null != closure_0) {
+    if (null != id) {
       str = getGameOrganizationAccountLinkStatus(tmp, ApplicationStore, AuthorizedAppsStore);
     }
     return str;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/game_organization_invites/gameOrganizationAccountLinkStatus.tsx");
-
-export { getGameOrganizationAccountLinkStatus };
-export const useGameOrganizationAccountLinkStatus = tmp2;
+}

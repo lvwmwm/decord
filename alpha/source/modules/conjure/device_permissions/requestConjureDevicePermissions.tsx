@@ -1,17 +1,17 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10932
+// Function ID: 10933
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2043, 6833, 10910, 6834, 1101, 10911, 5760, 10912, 584, 2]
+// Dependencies: [5, 2040, 6840, 10933, 6841, 1090, 10934, 5767, 10935, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 10909 (requestConjureDevicePermissions)
-import DurationsDefault from "Durations" /* 1101 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 10911 */;
+// Module 10932 (requestConjureDevicePermissions)
+import DurationsDefault from "Durations" /* 1090 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 10934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10910 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import FramesStore from "FramesStore" /* 6840 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 10933 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -47,7 +47,7 @@ let obj = function _requestConjureDevicePermissions() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ let obj = function _requestConjureDevicePermissions() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -162,7 +162,7 @@ let obj = function _requestConjureDevicePermissions() {
             };
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

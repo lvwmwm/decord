@@ -1,18 +1,17 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10221
+// Function ID: 10222
 // Name: EmojiPicker
-// Dependencies: [19, 17, 1084, 1392, 21, 5005, 587, 1264, 558, 576, 5086, 9895, 7313, 7338, 9901, 10195, 1125, 7205, 9919, 10002, 5002, 5295, 10024, 2]
+// Dependencies: [19, 17, 1072, 1387, 21, 5009, 575, 1253, 5090, 9922, 7320, 7345, 9928, 10220, 7212, 1114, 9946, 10029, 5582, 5006, 10051, 2]
 
-// Module 10196 (EmojiPicker)
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
+// Module 10221 (EmojiPicker)
+import nativeDefault from "native" /* 575 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import EmojiConstants from "EmojiConstants" /* 1387 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -37,215 +36,7 @@ obj3 = { color: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT
 obj4 = { height: nativeDefault.space.PX_8 + 1, bottom: undefined, top: -1 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiPicker(arg0) {
-  let bottomSheetIndex;
-  let bottomSheetRef;
-  let channel;
-  let container;
-  let handleTextChange;
-  let header;
-  let inPortalKeyboard;
-  let onBackspace;
-  let onPressEmoji;
-  let safeAreaBottomKeyboardAware;
-  let safeAreaStyle;
-  let searchQueryRef;
-  let searchResults;
-  let suggestedEmojis;
-  let obj = channel(handleTextChange[9]);
-  const cResult = obj.c(60);
-  ({ bottomSheetRef, bottomSheetIndex, channel } = arg0);
-  ({ onPressEmoji, onBackspace, inPortalKeyboard, suggestedEmojis } = arg0);
-  const tmp4 = closure_11();
-  if (cResult[0] === channel.guild_id) {
-    let tmp5;
-    let tmp6;
-    let tmp9;
-    let tmp18;
-    let tmp24;
-    if (cResult[1] === channel.id) {
-      tmp5 = cResult[2];
-      tmp6 = cResult[3];
-    }
-    let obj2 = react;
-    const effect = react.useEffect(tmp5, tmp6);
-    const tmpResult = channel(handleTextChange[10]);
-    const sharedValue = tmpResult.useSharedValue(0);
-    if (cResult[4] !== suggestedEmojis) {
-      const obj3 = { suggestedEmojis };
-      cResult[4] = suggestedEmojis;
-      cResult[5] = obj3;
-      tmp9 = obj3;
-    } else {
-      tmp9 = cResult[5];
-    }
-    const tmpResult2 = channel(handleTextChange[11]);
-    const emojiCategories = tmpResult2.useEmojiCategories(EmojiIntention.CHAT, channel, tmp9);
-    const ref = obj2.useRef(null);
-    const ref1 = obj2.useRef(null);
-    const tmp16 = ref1(handleTextChange[12]);
-    const analyticsLocations = tmp16(ref1(tmp2[13]).EMOJI_PICKER).analyticsLocations;
-    const tmp17 = ref1(handleTextChange[14])(channel, sharedValue, EmojiIntention.CHAT);
-    handleTextChange = tmp17.handleTextChange;
-    ({ searchQueryRef, searchResults } = tmp17);
-    const tmp10 = EmojiIntention;
-    if (cResult[6] !== channel) {
-      const fn2 = function x() {
-        const obj = AnalyticsUtilsDefault;
-        const obj2 = { type: metroRequire.EMOJI_SEARCH, channel_id: channel.id, guild_id: channel.guild_id };
-        obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
-      };
-      cResult[6] = channel;
-      cResult[7] = fn2;
-      tmp18 = fn2;
-    } else {
-      tmp18 = cResult[7];
-    }
-    if (cResult[8] !== handleTextChange) {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-      cResult[8] = handleTextChange;
-      cResult[9] = M;
-    } else {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-      cResult[10] = tmp22;
-    } else {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-    }
-    ({ safeAreaStyle, safeAreaBottomKeyboardAware } = ref1(handleTextChange[15])(tmp21));
-    const _Symbol2 = Symbol;
-    ({ container, header } = tmp4);
-    ref1(handleTextChange[15])(tmp21);
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-      const stringResult = obj6.string(channel(handleTextChange[16]).t.KgK5qg);
-      cResult[11] = stringResult;
-      tmp24 = stringResult;
-    } else {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-    }
-    if (cResult[12] === tmp18) {
-      class M {
-        constructor() {
-          const current = ref1.current;
-          if (current != null) {
-            current.setText("");
-          }
-          handleTextChange("");
-        }
-      }
-      if (cResult[15] === tmp4.header) {
-        class M {
-          constructor() {
-            const current = ref1.current;
-            if (current != null) {
-              current.setText("");
-            }
-            handleTextChange("");
-          }
-        }
-        if (cResult[18] === bottomSheetIndex) {
-          class M {
-            constructor() {
-              const current = ref1.current;
-              if (current != null) {
-                current.setText("");
-              }
-              handleTextChange("");
-            }
-          }
-        }
-        const obj4 = { bottomSheetIndex, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: searchResults, onPressEmoji, onLongPressEmoji: channel(handleTextChange[19]).openEmojiActionSheet, channel, emojiPickerIntention: tmp10.CHAT, insetBottom: safeAreaBottomKeyboardAware, inPortalKeyboard, searchQueryRef };
-        const tmp15Result = ref1(handleTextChange[18]);
-        cResult[18] = bottomSheetIndex;
-        cResult[19] = emojiCategories;
-        cResult[20] = sharedValue;
-        cResult[21] = channel;
-        cResult[22] = inPortalKeyboard;
-        cResult[23] = onPressEmoji;
-        cResult[24] = safeAreaBottomKeyboardAware;
-        cResult[25] = searchQueryRef;
-        cResult[26] = searchResults;
-        cResult[27] = closure_9(tmp15Result, obj4);
-        const tmp36 = closure_9(tmp15Result, obj4);
-      }
-      const obj5 = { style: header, children: tmp26 };
-      cResult[15] = tmp4.header;
-      cResult[16] = tmp26;
-      cResult[17] = closure_9(closure_4, obj5);
-      const tmp32 = closure_9(closure_4, obj5);
-    }
-    const obj7 = { ref: ref1, size: "md", placeholder: tmp24, onChange: handleTextChange, onFocus: tmp18, round: true };
-    cResult[12] = tmp18;
-    cResult[13] = handleTextChange;
-    cResult[14] = closure_9(channel(handleTextChange[17]).SearchBar, obj7);
-    const tmp28 = closure_9(channel(handleTextChange[17]).SearchBar, obj7);
-  }
-  const fn = function n() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { type: metroRequire.EMOJI, channel_id: channel.id, guild_id: channel.guild_id };
-    obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
-  };
-  const items = [, ];
-  ({ id: arr[0], guild_id: arr[1] } = channel);
-  cResult[0] = channel.guild_id;
-  cResult[1] = channel.id;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp6 = items;
-  tmp5 = fn;
-}) : (function EmojiPicker(inPortalKeyboard) {
+const memoResult = react.memo(function EmojiPicker(inPortalKeyboard) {
   let SearchBar;
   let bottomSheetIndex;
   let bottomSheetRef;
@@ -273,15 +64,15 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj2 = { type: metroRequire.EMOJI, channel_id: channel.id, guild_id: channel.guild_id };
     obj.track(hasOwnProperty.CHAT_INPUT_COMPONENT_VIEWED, obj2);
   }, items);
-  let obj = channel(handleTextChange[10]);
+  let obj = channel(handleTextChange[8]);
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = channel(handleTextChange[11]);
+  let obj2 = channel(handleTextChange[9]);
   const emojiCategories = obj2.useEmojiCategories(EmojiIntention.CHAT, channel, { suggestedEmojis });
   const ref = react.useRef(null);
   const ref1 = react.useRef(null);
-  const tmp7 = ref1(handleTextChange[12]);
-  const analyticsLocations = tmp7(ref1(handleTextChange[13]).EMOJI_PICKER).analyticsLocations;
-  const tmp8 = ref1(handleTextChange[14])(channel, sharedValue, EmojiIntention.CHAT);
+  const tmp7 = ref1(handleTextChange[10]);
+  const analyticsLocations = tmp7(ref1(handleTextChange[11]).EMOJI_PICKER).analyticsLocations;
+  const tmp8 = ref1(handleTextChange[12])(channel, sharedValue, EmojiIntention.CHAT);
   handleTextChange = tmp8.handleTextChange;
   const items1 = [channel];
   const searchQueryRef = tmp8.searchQueryRef;
@@ -298,33 +89,33 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
     handleTextChange("");
   }, items2);
-  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = ref1(handleTextChange[15])({ hasCategories: true }));
+  ({ safeAreaStyle, safeAreaBottomKeyboardAware } = ref1(handleTextChange[13])({ hasCategories: true }));
   const obj3 = { value: analyticsLocations, children: closure_10(closure_4, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.header, children: closure_9(SearchBar, obj6) };
-  ref1(handleTextChange[15])({ hasCategories: true });
-  const AnalyticsLocationProvider = channel(handleTextChange[12]).AnalyticsLocationProvider;
-  obj6 = { ref: ref1, size: "md", placeholder: intl.string(channel(handleTextChange[16]).t.KgK5qg), onChange: handleTextChange, onFocus: callback, round: true };
-  SearchBar = channel(handleTextChange[17]).SearchBar;
-  intl = channel(handleTextChange[16]).intl;
+  ref1(handleTextChange[13])({ hasCategories: true });
+  const AnalyticsLocationProvider = channel(handleTextChange[10]).AnalyticsLocationProvider;
+  obj6 = { ref: ref1, size: "md", placeholder: intl.string(channel(handleTextChange[15]).t.KgK5qg), onChange: handleTextChange, onFocus: callback, round: true };
+  SearchBar = channel(handleTextChange[14]).SearchBar;
+  intl = channel(handleTextChange[15]).intl;
   items3 = [closure_9(closure_4, obj5), , ];
   const obj7 = { style: tmp.list, children: items4 };
-  const obj8 = { bottomSheetIndex, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: tmp8.searchResults, onPressEmoji, onLongPressEmoji: channel(handleTextChange[19]).openEmojiActionSheet, channel, emojiPickerIntention: EmojiIntention.CHAT, insetBottom: safeAreaBottomKeyboardAware, inPortalKeyboard, searchQueryRef };
-  const tmp12 = ref1(handleTextChange[18]);
+  const obj8 = { bottomSheetIndex, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, emojis: tmp8.searchResults, onPressEmoji, onLongPressEmoji: channel(handleTextChange[17]).openEmojiActionSheet, channel, emojiPickerIntention: EmojiIntention.CHAT, insetBottom: safeAreaBottomKeyboardAware, inPortalKeyboard, searchQueryRef };
+  const tmp12 = ref1(handleTextChange[16]);
   items4 = [closure_9(tmp12, obj8), ];
   const obj9 = { style: tmp.headerGradient, start: constants3.START, end: constants3.END, colors: items5 };
   items5 = [, ];
-  const tmp13 = ref1(handleTextChange[21]);
-  const obj10 = channel(handleTextChange[20]);
+  const tmp13 = ref1(handleTextChange[18]);
+  const obj10 = channel(handleTextChange[19]);
   items5[0] = obj10.hexOpacityToRgba(tmp.headerGradientColor.color, 100);
-  const obj11 = channel(handleTextChange[20]);
+  const obj11 = channel(handleTextChange[19]);
   items5[1] = obj11.hexOpacityToRgba(tmp.headerGradientColor.color, 0);
   items4[1] = closure_9(tmp13, obj9);
   items3[1] = closure_10(closure_4, obj7);
   const obj12 = { bottomSheetRef, bottomSheetIndex, style: safeAreaStyle, emojiPickerListRef: ref, categories: emojiCategories, categoryIndexActive: sharedValue, onBackspace, inPortalKeyboard, isSearching: null != tmp8.searchResults, onClearSearch: callback1 };
-  items3[2] = closure_9(ref1(handleTextChange[22]), obj12);
+  items3[2] = closure_9(ref1(handleTextChange[20]), obj12);
   return closure_9(AnalyticsLocationProvider, obj3);
-}));
+});
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/EmojiPicker.tsx");
 
 export default memoResult;

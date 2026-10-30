@@ -1,13 +1,13 @@
-// Module ID: 19932
-// Function ID: 19933
+// Module ID: 19995
+// Function ID: 19996
 // Name: AVErrorScreenshareOSError
-// Dependencies: [1381, 5935, 19921, 6704, 2]
+// Dependencies: [1376, 5942, 19984, 6711, 2]
 
-// Module 19932 (AVErrorScreenshareOSError)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import AVError from "AVError" /* 5935 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
-import AVErrorContext from "AVErrorContext" /* 19921 */;
+// Module 19995 (AVErrorScreenshareOSError)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import AVError from "AVError" /* 5942 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
+import AVErrorContext from "AVErrorContext" /* 19984 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = BigInt(-3821);

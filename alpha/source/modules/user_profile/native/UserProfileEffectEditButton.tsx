@@ -1,20 +1,20 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16445
+// Function ID: 16446
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 7364, 9453, 1095, 21, 5005, 587, 8695, 11144, 5247, 16394, 2000, 1125, 16373, 6940, 5707, 14346, 9456, 1199, 14991, 2]
+// Dependencies: [19, 17, 7371, 9472, 1083, 21, 5009, 575, 8729, 11349, 5253, 16446, 1995, 1114, 16425, 6947, 5712, 14379, 9475, 1188, 15035, 2]
 // Exports: default
 
-// Module 16393 (UserProfileEffectEditButton)
+// Module 16445 (UserProfileEffectEditButton)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1095 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Constants2 from "Constants" /* 7364 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9453 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Constants2 from "Constants" /* 7371 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9472 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -93,7 +93,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const callback = userProfileEffect.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut };
-    obj.openLazy(asyncRequire(16394, dependencyMap.paths), "Profile Effect", obj2);
+    obj.openLazy(asyncRequire(16446, dependencyMap.paths), "Profile Effect", obj2);
   }, items);
   if (product != null) {
     name = product.name;

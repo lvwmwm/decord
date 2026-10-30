@@ -1,9 +1,9 @@
-// Module ID: 2061
-// Function ID: 2062
+// Module ID: 2058
+// Function ID: 2059
 // Name: BillingConstants
 // Dependencies: [2]
 
-// Module 2061 (BillingConstants)
+// Module 2058 (BillingConstants)
 import size from "module_2" /* 2 */;
 
 let items;

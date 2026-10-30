@@ -1,98 +1,21 @@
-// Module ID: 17187
-// Function ID: 17188
+// Module ID: 17241
+// Function ID: 17242
 // Name: useLatestChannelMessage
-// Dependencies: [32, 19, 15524, 558, 576, 504, 17188, 2]
+// Dependencies: [32, 19, 15564, 504, 17242, 2]
+// Exports: default
 
-// Module 17187 (useLatestChannelMessage)
+// Module 17241 (useLatestChannelMessage)
 import react from "react" /* 19 */;
-import MessagePreviewManagerDefault from "MessagePreviewManager" /* 17188 */;
+import MessagePreviewManagerDefault from "MessagePreviewManager" /* 17242 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 15524 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 15564 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let _slicedToArray = _slicedToArray_mod;
 const useEffect = react.useEffect;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLatestChannelMessage(guild_id, arg1) {
-  let closure_0;
-  let closure_3;
-  let first;
-  let id;
-  let tmp = _require;
-  let tmp2 = id;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  _require = tmp4;
-  guild_id = guild_id.guild_id;
-  id = guild_id.id;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [MessagePreviewStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === id) {
-    if (cResult[2] === (undefined !== arg1 && arg1)) {
-      let tmp7;
-      if (cResult[3] === guild_id) {
-        tmp7 = cResult[4];
-      }
-      const tmpResult = tmp(tmp2[5]);
-      const tmp11 = _slicedToArray(tmpResult.useStateFromStoresArray(first, tmp7), 2)[1];
-      _slicedToArray = tmp11;
-      if (cResult[5] === id) {
-        let tmp12;
-        let tmp13;
-        if (cResult[6] === tmp11) {
-          tmp12 = cResult[7];
-          tmp13 = cResult[8];
-        }
-        useEffect(tmp12, tmp13);
-        return tmp10;
-      }
-      class L {
-        constructor() {
-          let tmp2 = null == id;
-          const tmp = id;
-          if (!tmp2) {
-            tmp2 = closure_3;
-          }
-          if (!tmp2) {
-            const obj = MessagePreviewManagerDefault;
-            obj.addWant(tmp);
-          }
-        }
-      }
-      let items1 = [id, tmp11];
-      cResult[5] = id;
-      cResult[6] = tmp11;
-      cResult[7] = L;
-      cResult[8] = items1;
-      tmp13 = items1;
-      tmp12 = L;
-    }
-  }
-  const fn = function c() {
-    let items1;
-    const tmp = closure_0;
-    if (tmp) {
-      const items = [null, true];
-      items1 = items;
-    } else {
-      items1 = [MessagePreviewStore.message(guild_id, id), MessagePreviewStore.isLatest(guild_id, id)];
-    }
-    return items1;
-  };
-  cResult[1] = id;
-  cResult[2] = undefined !== arg1 && arg1;
-  cResult[3] = guild_id;
-  cResult[4] = fn;
-  tmp7 = fn;
-}) : (function useLatestChannelMessage(arg0) {
+const result = size.fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
+
+export default function useLatestChannelMessage(arg0) {
   let c1;
   let closure_3;
   let first;
@@ -105,7 +28,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLatestCha
   c1 = undefined;
   id = undefined;
   ({ guild_id: c1, id } = arg0);
-  let obj = flag(id[5]);
+  let obj = flag(id[3]);
   let items = [MessagePreviewStore];
   [first, tmp3] = obj.useStateFromStoresArray(items, () => {
     let items1;
@@ -132,7 +55,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLatestCha
     }
   }, items1);
   return first;
-});
-const result = size.fileFinishedImporting("modules/message_previews/useLatestChannelMessage.tsx");
-
-export default tmp2;
+};

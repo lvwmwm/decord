@@ -1,14 +1,14 @@
-// Module ID: 7256
-// Function ID: 7257
+// Module ID: 7263
+// Function ID: 7264
 // Name: GuildOnboardingPromptsConstants
-// Dependencies: [32, 109, 1084, 1354, 1125, 2031, 2]
+// Dependencies: [32, 109, 1072, 1343, 1114, 2028, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 7256 (GuildOnboardingPromptsConstants)
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import _modDef1354 from "module_1354" /* 1354 */;
-import StringUtils from "StringUtils" /* 2031 */;
+// Module 7263 (GuildOnboardingPromptsConstants)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import StringUtils from "StringUtils" /* 2028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ function validateOnboardingConnection(connection_type) {
     if (obj3.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID is required for application connections");
     }
-    const tmp9Result = tmp9(2031);
+    const tmp9Result = tmp9(2028);
     if (!tmp9Result.isNullOrEmpty(connection_type.provider_id)) {
       items.push("Platform ID not allowed for application connections");
     }
@@ -57,7 +57,7 @@ function validateOnboardingConnection(connection_type) {
     } else if (!closure_11.includes(connection_type.provider_id)) {
       items.push("Invalid platform ID");
     }
-    const tmp3Result = tmp3(2031);
+    const tmp3Result = tmp3(2028);
     if (!tmp3Result.isNullOrEmpty(connection_type.application_id)) {
       items.push("Application ID not allowed for platform connections");
     }
@@ -94,7 +94,7 @@ export const MAX_DEFAULT_CHANNEL_IDS = 25;
 export const MAX_NUMBER_OF_ONBOARDING_CONNECTIONS = 10;
 export const MAX_CONNECTION_DESCRIPTION_LENGTH = 100;
 export const MAX_NUMBER_OF_ONBOARDING_PROMPTS_IN_ONBOARDING = 4;
-export const NUM_DEFAULT_CHATTABLE_CHANNELS_MIN = 1;
+export const NUM_DEFAULT_CHATTABLE_CHANNELS_MIN = 0;
 export const ONBOARDING_PROMPT_TYPE_SWITCH_THRESHOLD = 13;
 export const GuildOnboardingTab = { CUSTOMIZE: 0, [0]: "CUSTOMIZE", BROWSE: 1, [1]: "BROWSE" };
 export { OnboardingPromptType };
@@ -114,7 +114,7 @@ export function isDefaultPrompt(options) {
     const id2 = options.id;
     const tmp7 = _objectWithoutProperties(obj, closure_3);
     const tmp9 = _objectWithoutProperties(options, closure_4);
-    return _modDef1354(tmp7, tmp9);
+    return _modDef1343(tmp7, tmp9);
   }
 }
 export function getDefaultPrompt() {

@@ -1,67 +1,20 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8767
+// Function ID: 8768
 // Name: useFramePreviewOverrideFrame
-// Dependencies: [19, 7715, 8734, 558, 576, 1993, 2]
+// Dependencies: [19, 7720, 8768, 1988, 2]
+// Exports: default
 
-// Module 8733 (useFramePreviewOverrideFrame)
-import react2 from "react" /* 576 */;
-import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8734 */;
+// Module 8767 (useFramePreviewOverrideFrame)
+import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
+import FramePreviewOverrideStore from "FramePreviewOverrideStore" /* 8768 */;
 import react from "react" /* 19 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7715 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7720 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const CollectiblesItemType = tmp(1993);
 let closure_4 = FramePreviewOverrideStore.useFramePreviewOverrideStore;
-let c5 = "frame-preview-override";
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFramePreviewOverrideFrame() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(8);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(override) {
-      return override.override;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmp5 = closure_4(first);
-  let tmp6 = null;
-  if (null != tmp5) {
-    if (cResult[1] === tmp5.frameKey) {
-      if (cResult[2] === tmp5.innerWidth) {
-        if (cResult[3] === tmp5.layers) {
-          if (cResult[4] === tmp5.overflowBottom) {
-            if (cResult[5] === tmp5.overflowHorizontal) {
-              let tmp7;
-              if (cResult[6] === tmp5.overflowTop) {
-                tmp7 = cResult[7];
-              }
-              tmp6 = tmp7;
-            }
-          }
-        }
-      }
-    }
-    ({ frameKey: obj2.label, layers: obj2.layers, innerWidth: obj2.innerWidth, overflowTop: obj2.overflowTop, overflowBottom: obj2.overflowBottom, overflowHorizontal: obj2.overflowHorizontal } = tmp5);
-    const self = this;
-    const self2 = this;
-    const obj3 = { type: CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME, skuId, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
-    const tmp11 = new ProfileFrameRecord(obj3);
-    cResult[1] = tmp5.frameKey;
-    cResult[2] = tmp5.innerWidth;
-    cResult[3] = tmp5.layers;
-    cResult[4] = tmp5.overflowBottom;
-    cResult[5] = tmp5.overflowHorizontal;
-    cResult[6] = tmp5.overflowTop;
-    cResult[7] = tmp11;
-    tmp7 = tmp11;
-  }
-  return tmp6;
-}) : (function useFramePreviewOverrideFrame() {
+const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useFramePreviewOverrideFrame.native.tsx");
+
+export default function useFramePreviewOverrideFrame() {
   let tmp = closure_4((override) => override.override);
   let closure_0 = tmp;
   const items = [tmp];
@@ -69,7 +22,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFramePrev
     let tmp2 = null;
     const tmp = closure_0;
     if (null != closure_0) {
-      const obj = { type: CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME, skuId, label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
+      const obj = { type: CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME, skuId: "frame-preview-override", label: null, layers: null, innerWidth: null, overflowTop: null, overflowBottom: null, overflowHorizontal: null };
       ({ frameKey: obj.label, layers: obj.layers, innerWidth: obj.innerWidth, overflowTop: obj.overflowTop, overflowBottom: obj.overflowBottom, overflowHorizontal: obj.overflowHorizontal } = tmp);
       const self = this;
       const self2 = this;
@@ -77,7 +30,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFramePrev
     }
     return tmp2;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useFramePreviewOverrideFrame.native.tsx");
-
-export default tmp2;
+};

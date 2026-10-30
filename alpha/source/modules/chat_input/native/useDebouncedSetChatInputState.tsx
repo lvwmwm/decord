@@ -1,96 +1,16 @@
-// Module ID: 13758
-// Function ID: 13759
-// Name: useDebouncedSetChatInputState
-// Dependencies: [19, 558, 576, 2]
+// Module ID: 13905
+// Function ID: 13906
+// Name: react
+// Dependencies: [19, 2]
+// Exports: default
 
-// Module 13758 (useDebouncedSetChatInputState)
-import react2 from "react" /* 576 */;
+// Module 13905 (react)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebouncedSetChatInputState(arg0, arg1) {
-  let first;
-  let tmp3;
-  let tmp4;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const obj = react2;
-  const cResult = obj.c(11);
-  let closure_2 = react.useRef(null);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
-      if (null != ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
-        ref.current = null;
-      }
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function o() {
-      return first;
-    };
-    const items = [first];
-    cResult[1] = fn2;
-    cResult[2] = items;
-    tmp4 = items;
-    tmp3 = fn2;
-  } else {
-    tmp3 = cResult[1];
-    tmp4 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp3, tmp4);
-  if (cResult[3] === arg1) {
-    let tmp6;
-    let tmp7;
-    if (cResult[4] === arg0) {
-      tmp6 = cResult[5];
-    }
-    if (cResult[6] !== arg0) {
-      const fn3 = function _(arg0) {
-        first();
-        closure_0(arg0);
-      };
-      cResult[6] = arg0;
-      cResult[7] = fn3;
-      tmp7 = fn3;
-    } else {
-      tmp7 = cResult[7];
-    }
-    if (cResult[8] === tmp6) {
-      let tmp8;
-      if (cResult[9] === tmp7) {
-        tmp8 = cResult[10];
-      }
-      return tmp8;
-    }
-    const obj3 = { setData: tmp6, setDataImmediate: tmp7 };
-    cResult[8] = tmp6;
-    cResult[9] = tmp7;
-    cResult[10] = obj3;
-    tmp8 = obj3;
-  }
-  class S {
-    constructor(arg0) {
-      closure_0 = arg0;
-      tmp = closure_3();
-      closure_2.current = setTimeout(() => {
-        const tmp = focused(function() { /* body not rendered: F163619 */ });
-      }, closure_1);
-      return;
-    }
-  }
-  cResult[3] = arg1;
-  cResult[4] = arg0;
-  cResult[5] = S;
-  tmp6 = S;
-}) : (function useDebouncedSetChatInputState(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/chat_input/native/useDebouncedSetChatInputState.tsx");
+
+export default function useDebouncedSetChatInputState(arg0, arg1) {
   let items1;
   let items2;
   let closure_0 = arg0;
@@ -136,7 +56,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDebounced
   items1 = [callback, arg0, arg1];
   items2 = [callback, arg0];
   return obj;
-});
-const result = size.fileFinishedImporting("modules/chat_input/native/useDebouncedSetChatInputState.tsx");
-
-export default tmp2;
+};

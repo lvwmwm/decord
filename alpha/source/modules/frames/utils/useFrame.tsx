@@ -1,56 +1,23 @@
-// Module ID: 18559
-// Function ID: 18560
+// Module ID: 18618
+// Function ID: 18619
 // Name: useFrame
-// Dependencies: [6833, 558, 576, 504, 2]
+// Dependencies: [6840, 504, 2]
+// Exports: default
 
-// Module 18559 (useFrame)
-import FramesStore from "FramesStore" /* 6833 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 18618 (useFrame)
+import FramesStore from "FramesStore" /* 6840 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrame(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return FramesStore.getFrame(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useFrame(arg0) {
+const result = size.fileFinishedImporting("modules/frames/utils/useFrame.tsx");
+
+export default function useFrame(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FramesStore];
   const items1 = [arg0];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => FramesStore.getFrame(closure_0), items1);
-});
-const result = size.fileFinishedImporting("modules/frames/utils/useFrame.tsx");
-
-export default tmp2;
+};

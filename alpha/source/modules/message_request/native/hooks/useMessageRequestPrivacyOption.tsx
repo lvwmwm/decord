@@ -1,186 +1,27 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15692
+// Function ID: 15693
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 558, 576, 4833, 7151, 1125, 7354, 13821, 2]
+// Dependencies: [19, 21, 4834, 7159, 7362, 1114, 13968, 2]
+// Exports: useMessageRequestPrivacyOption
 
-// Module 15652 (useMessageRequestPrivacyOption)
+// Module 15692 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7151 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13821 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7159 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 13968 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let addResult, deleteResult, updateSettingResult;
-
 let tmp;
-const UserSettings = tmp(4833);
-const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestRestrictedGuildPrivacyOption(guild) {
-  let id;
-  let tmp = id;
-  let obj = id(576);
-  const cResult = obj.c(14);
-  guild = guild.guild;
-  id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4833).MessageRequestRestrictedGuildIds;
-  const setting = MessageRequestRestrictedGuildIds.useSetting();
-  if (cResult[0] === id) {
-    let tmp4;
-    if (cResult[1] === setting) {
-      tmp4 = cResult[2];
-    }
-    const RestrictedGuildIds = tmp(4833).RestrictedGuildIds;
-    const setting1 = RestrictedGuildIds.useSetting();
-    if (cResult[3] === guild.id) {
-      let tmp6;
-      let tmp11;
-      let tmp10;
-      if (cResult[4] === setting1) {
-        tmp6 = cResult[5];
-      }
-      if (cResult[6] !== id) {
-        class S {
-          constructor(arg0) {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = closure_0(closure_2[5]);
-            sanitizedMessageRequestRestrictedGuilds = obj.getSanitizedMessageRequestRestrictedGuilds();
-            tmp3 = guild;
-            if (tmp3) {
-              tmp6 = id;
-              deleteResult = sanitizedMessageRequestRestrictedGuilds.delete(id);
-            } else {
-              tmp4 = id;
-              addResult = sanitizedMessageRequestRestrictedGuilds.add(id);
-            }
-            MessageRequestRestrictedGuildIds = tmp(tmp2[4]).MessageRequestRestrictedGuildIds;
-            updateSettingResult = MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-            return;
-          }
-        }
-        cResult[6] = id;
-        cResult[7] = S;
-      } else {
-        class S {
-          constructor(arg0) {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = closure_0(closure_2[5]);
-            sanitizedMessageRequestRestrictedGuilds = obj.getSanitizedMessageRequestRestrictedGuilds();
-            tmp3 = guild;
-            if (tmp3) {
-              tmp6 = id;
-              deleteResult = sanitizedMessageRequestRestrictedGuilds.delete(id);
-            } else {
-              tmp4 = id;
-              addResult = sanitizedMessageRequestRestrictedGuilds.add(id);
-            }
-            MessageRequestRestrictedGuildIds = tmp(tmp2[4]).MessageRequestRestrictedGuildIds;
-            updateSettingResult = MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-            return;
-          }
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        class S {
-          constructor(arg0) {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = closure_0(closure_2[5]);
-            sanitizedMessageRequestRestrictedGuilds = obj.getSanitizedMessageRequestRestrictedGuilds();
-            tmp3 = guild;
-            if (tmp3) {
-              tmp6 = id;
-              deleteResult = sanitizedMessageRequestRestrictedGuilds.delete(id);
-            } else {
-              tmp4 = id;
-              addResult = sanitizedMessageRequestRestrictedGuilds.add(id);
-            }
-            MessageRequestRestrictedGuildIds = tmp(tmp2[4]).MessageRequestRestrictedGuildIds;
-            updateSettingResult = MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-            return;
-          }
-        }
-        const stringResult = obj4.string(tmp(1125).t["7UgSGP"]);
-        const intl = tmp(1125).intl;
-        const stringResult1 = intl.string(tmp(1125).t.INRaYb);
-        cResult[8] = stringResult;
-        cResult[9] = stringResult1;
-        tmp11 = stringResult1;
-        tmp10 = stringResult;
-      } else {
-        class S {
-          constructor(arg0) {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = closure_0(closure_2[5]);
-            sanitizedMessageRequestRestrictedGuilds = obj.getSanitizedMessageRequestRestrictedGuilds();
-            tmp3 = guild;
-            if (tmp3) {
-              tmp6 = id;
-              deleteResult = sanitizedMessageRequestRestrictedGuilds.delete(id);
-            } else {
-              tmp4 = id;
-              addResult = sanitizedMessageRequestRestrictedGuilds.add(id);
-            }
-            MessageRequestRestrictedGuildIds = tmp(tmp2[4]).MessageRequestRestrictedGuildIds;
-            updateSettingResult = MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-            return;
-          }
-        }
-        tmp11 = cResult[9];
-      }
-      if (cResult[10] === tmp8) {
-        class S {
-          constructor(arg0) {
-            tmp = closure_0;
-            tmp2 = closure_2;
-            obj = closure_0(closure_2[5]);
-            sanitizedMessageRequestRestrictedGuilds = obj.getSanitizedMessageRequestRestrictedGuilds();
-            tmp3 = guild;
-            if (tmp3) {
-              tmp6 = id;
-              deleteResult = sanitizedMessageRequestRestrictedGuilds.delete(id);
-            } else {
-              tmp4 = id;
-              addResult = sanitizedMessageRequestRestrictedGuilds.add(id);
-            }
-            MessageRequestRestrictedGuildIds = tmp(tmp2[4]).MessageRequestRestrictedGuildIds;
-            updateSettingResult = MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
-            return;
-          }
-        }
-      }
-      cResult[10] = tmp8;
-      cResult[11] = tmp6;
-      cResult[12] = !tmp6 && !tmp4;
-      cResult[13] = jsx(tmp(7354).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
-      const tmp17 = jsx(tmp(7354).ActionSheetSwitchRow, { label: tmp10, subLabel: tmp11, value: !tmp6 && !tmp4, onValueChange: tmp8, disabled: tmp6 });
-    }
-    const hasItem = setting1.includes(guild.id);
-    cResult[3] = guild.id;
-    cResult[4] = setting1;
-    cResult[5] = hasItem;
-    tmp6 = hasItem;
-  }
-  const hasItem1 = setting.includes(id);
-  cResult[0] = id;
-  cResult[1] = setting;
-  cResult[2] = hasItem1;
-  tmp4 = hasItem1;
-}) : (function MessageRequestRestrictedGuildPrivacyOption(guild) {
+const UserSettings = tmp(4834);
+function MessageRequestRestrictedGuildPrivacyOption(guild) {
   let intl;
   let intl2;
   guild = guild.guild;
   const id = guild.id;
-  let MessageRequestRestrictedGuildIds = id(4833).MessageRequestRestrictedGuildIds;
+  let MessageRequestRestrictedGuildIds = id(4834).MessageRequestRestrictedGuildIds;
   const setting = MessageRequestRestrictedGuildIds.useSetting();
   const hasItem = setting.includes(id);
-  const RestrictedGuildIds = id(4833).RestrictedGuildIds;
+  const RestrictedGuildIds = id(4834).RestrictedGuildIds;
   const setting1 = RestrictedGuildIds.useSetting();
   const hasItem1 = setting1.includes(guild.id);
   const items = [id];
@@ -196,41 +37,20 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Message
     const MessageRequestRestrictedGuildIds = UserSettings.MessageRequestRestrictedGuildIds;
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
-  let obj = { label: intl.string(id(1125).t["7UgSGP"]), subLabel: intl2.string(id(1125).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(7354).ActionSheetSwitchRow;
-  intl = id(1125).intl;
-  intl2 = id(1125).intl;
+  let obj = { label: intl.string(id(1114).t["7UgSGP"]), subLabel: intl2.string(id(1114).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
+  const ActionSheetSwitchRow = id(7362).ActionSheetSwitchRow;
+  intl = id(1114).intl;
+  intl2 = id(1114).intl;
   return jsx(ActionSheetSwitchRow, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestPrivacyOption(guild) {
-  const obj = react2;
-  const cResult = obj.c(3);
-  guild = guild.guild;
-  const tmp2 = useIsStricterMessageRequestsDefault();
-  if (cResult[0] === guild) {
-    let tmp3;
-    if (cResult[1] === tmp2) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  let tmp4 = null;
-  if (!tmp2) {
-    tmp4 = <closure_5 guild={guild} />;
-  }
-  cResult[0] = guild;
-  cResult[1] = tmp2;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function useMessageRequestPrivacyOption(guild) {
+}
+const jsx = Fragment.jsx;
+const result = size.fileFinishedImporting("modules/message_request/native/hooks/useMessageRequestPrivacyOption.tsx");
+
+export function useMessageRequestPrivacyOption(guild) {
   guild = guild.guild;
   let tmp = null;
   if (!useIsStricterMessageRequestsDefault()) {
-    tmp = <closure_5 guild={guild} />;
+    tmp = <MessageRequestRestrictedGuildPrivacyOption guild={guild} />;
   }
   return tmp;
-});
-const result = size.fileFinishedImporting("modules/message_request/native/hooks/useMessageRequestPrivacyOption.tsx");
-
-export const useMessageRequestPrivacyOption = tmp2;
+}

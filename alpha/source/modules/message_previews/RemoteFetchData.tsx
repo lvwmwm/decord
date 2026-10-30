@@ -1,9 +1,9 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17243
+// Function ID: 17244
 // Name: RemoteFetchData
 // Dependencies: [5, 2]
 
-// Module 17189 (RemoteFetchData)
+// Module 17243 (RemoteFetchData)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -107,7 +107,7 @@ class RemoteFetchData {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

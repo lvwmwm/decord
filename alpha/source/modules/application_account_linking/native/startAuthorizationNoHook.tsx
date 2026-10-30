@@ -1,13 +1,13 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11655
+// Function ID: 11656
 // Name: startAuthorizationNoHook
-// Dependencies: [5, 1084, 7316, 5698, 1264, 2]
+// Dependencies: [5, 1072, 7323, 5704, 1253, 2]
 // Exports: startAuthorizationNoHook
 
-// Module 11454 (startAuthorizationNoHook)
-import Constants from "Constants" /* 1084 */;
-import LinkingDefault from "Linking" /* 5698 */;
-import useAuthorizationApp from "useAuthorizationApp" /* 7316 */;
+// Module 11655 (startAuthorizationNoHook)
+import Constants from "Constants" /* 1072 */;
+import LinkingDefault from "Linking" /* 5704 */;
+import useAuthorizationApp from "useAuthorizationApp" /* 7323 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _startAuthorizationNoHook() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ let obj = function _startAuthorizationNoHook() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp20) {
           closure_4 = tmp20;
           if (0 === c5) {

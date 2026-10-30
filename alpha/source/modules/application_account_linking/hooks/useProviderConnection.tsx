@@ -1,14 +1,14 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 7340
+// Function ID: 7341
 // Name: useProviderConnection
-// Dependencies: [5, 19, 6559, 504, 7334, 2]
+// Dependencies: [5, 19, 6566, 504, 7341, 2]
 // Exports: useProviderConnection
 
-// Module 7333 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7334 */;
+// Module 7340 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7341 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,14 +16,14 @@ let _require, c3, c6, closure_0;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
-export function useProviderConnection(arg0) {
+export function useProviderConnection(provider_id) {
   let fetching;
-  _require = arg0;
+  _require = provider_id;
   let obj = require("get initialized");
   const items = [ConnectedAccountsStore];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
-    if (null != closure_0) {
+    if (null != provider_id) {
       account = ConnectedAccountsStore.getAccount(null, tmp);
     }
     return account;
@@ -48,7 +48,7 @@ export function useProviderConnection(arg0) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -126,11 +126,11 @@ export function useProviderConnection(arg0) {
       }
     }
   });
-  const items2 = [arg0];
+  const items2 = [provider_id];
   let obj3 = {
     loading: stateFromStores1,
     hasConnection: tmp3,
-    canConnect: null != arg0,
+    canConnect: null != provider_id,
     startConnection: useCallback(function() {
       return closure_0(...arguments);
     }, items2),

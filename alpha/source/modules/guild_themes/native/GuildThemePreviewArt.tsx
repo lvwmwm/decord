@@ -1,173 +1,36 @@
-// Module ID: 18106
-// Function ID: 18107
+// Module ID: 18167
+// Function ID: 18168
 // Name: GuildThemePreviewArt
-// Dependencies: [19, 17, 21, 5005, 587, 5184, 558, 576, 18107, 5242, 5295, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5190, 18168, 5248, 5582, 2]
+// Exports: default
 
-// Module 18106 (GuildThemePreviewArt)
+// Module 18167 (GuildThemePreviewArt)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import GuildThemePresets from "GuildThemePresets" /* 5184 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18107 */;
+import nativeDefault from "native" /* 575 */;
+import GuildThemePresets from "GuildThemePresets" /* 5190 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18168 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let obj2;
-let tmp6;
-const LinearGradientDefault = tmp6(5295);
-const f133916 = (hex) => hex.hex;
-const f133917 = (stop) => stop.stop / 100;
+let tmp2;
+const LinearGradientDefault = tmp2(5582);
+function PreviewOverlay() {
+  return <View pointerEvents="none" style={closure_6().previewOverlay}>{jsx(GuildThemePreviewOverlayDefault, {})}</View>;
+}
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { previewArt: obj2, previewOverlay: { position: "absolute", top: 7.314, left: 7.461, width: 259.862, height: 154.514 } };
 obj2 = { position: "relative", width: 256, aspectRatio: 1.5705521472392638, overflow: "hidden", borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_6 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_7 = ReactCompilerGating.isReactCompilerEnabled() ? (function PreviewOverlay() {
-  let first;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(3);
-  const tmp3 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = jsx(GuildThemePreviewOverlayDefault, {});
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp3.previewOverlay) {
-    const tmp11 = <View pointerEvents="none" style={tmp3.previewOverlay}>{first}</View>;
-    cResult[1] = tmp3.previewOverlay;
-    cResult[2] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  return tmp8;
-}) : (function PreviewOverlay() {
-  return <View pointerEvents="none" style={closure_6().previewOverlay}>{jsx(GuildThemePreviewOverlayDefault, {})}</View>;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePreviewArt(arg0) {
-  let colors;
-  let colors1;
-  let items1;
-  let num2;
-  let style;
-  let themeSettings;
-  const obj = react2;
-  const cResult = obj.c(15);
-  ({ themeSettings, style } = arg0);
-  const tmp5 = closure_6();
-  const tmp7 = useThemeDefault();
-  if (cResult[0] === tmp7) {
-    let tmp8;
-    if (cResult[1] === themeSettings) {
-      tmp8 = cResult[2];
-    }
-    if (cResult[3] === style) {
-      let tmp15;
-      let tmp21;
-      if (cResult[4] === tmp5.previewArt) {
-        tmp15 = cResult[5];
-      }
-      if (null == tmp8) {
-        let tmp25;
-        let tmp29;
-        const _Symbol = Symbol;
-        if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp28 = <closure_7 />;
-          cResult[6] = tmp28;
-          tmp25 = tmp28;
-        } else {
-          tmp25 = cResult[6];
-        }
-        if (cResult[7] !== tmp15) {
-          const tmp32 = <View style={tmp15}>{tmp25}</View>;
-          cResult[7] = tmp15;
-          cResult[8] = tmp32;
-          tmp29 = tmp32;
-        } else {
-          tmp29 = cResult[8];
-        }
-        tmp21 = tmp29;
-      } else {
-        let tmp17;
-        const _Symbol2 = Symbol;
-        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp20 = <closure_7 />;
-          cResult[9] = tmp20;
-          tmp17 = tmp20;
-        } else {
-          tmp17 = cResult[9];
-        }
-        if (cResult[10] === tmp8.angle) {
-          if (cResult[11] === tmp8.colors) {
-            if (cResult[12] === tmp8.locations) {
-              if (cResult[13] === tmp15) {
-                tmp21 = cResult[14];
-              }
-            }
-          }
-        }
-        ({ colors: obj7.colors, locations: obj7.locations, angle: obj7.angle } = tmp8);
-        const tmp23 = jsx(LinearGradientDefault, { colors: null, locations: null, useAngle: true, angle: null, style: tmp15, children: tmp17 });
-        cResult[10] = tmp8.angle;
-        cResult[11] = tmp8.colors;
-        cResult[12] = tmp8.locations;
-        cResult[13] = tmp15;
-        cResult[14] = tmp23;
-        tmp21 = tmp23;
-      }
-      return tmp21;
-    }
-    const items = [tmp5.previewArt, style];
-    cResult[3] = style;
-    cResult[4] = tmp5.previewArt;
-    cResult[5] = items;
-    tmp15 = items;
-  }
-  let tmp9 = null;
-  if (null != themeSettings) {
-    const customUserThemeSettings = themeSettings.customUserThemeSettings;
-    if (null != customUserThemeSettings) {
-      const first = customUserThemeSettings.colors[0];
-      if (null != first) {
-        const obj4 = { colors: items1, angle: num2 };
-        items1 = [];
-        const tmp2Result = GuildThemePresets;
-        HermesBuiltin.arraySpread(items1, tmp2Result.getSingleColorGuildThemeGradientColors(first, tmp7), 0);
-        num2 = customUserThemeSettings.gradientAngle;
-        if (num2 == null) {
-          num2 = 0;
-        }
-        tmp9 = obj4;
-      }
-    }
-    const tmp2Result3 = GuildThemePresets;
-    const guildThemePreset = tmp2Result3.getGuildThemePreset(themeSettings.presetId);
-    tmp9 = null;
-    if (null != guildThemePreset) {
-      const tmp2Result4 = GuildThemePresets;
-      const guildThemePresetAppearance = tmp2Result4.getGuildThemePresetAppearance(guildThemePreset, tmp7);
-      const obj5 = { colors: colors.map(f133916), locations: colors1.map(f133917), angle: guildThemePresetAppearance.angle };
-      colors = guildThemePresetAppearance.colors;
-      colors1 = guildThemePresetAppearance.colors;
-      tmp9 = obj5;
-    }
-  }
-  cResult[0] = tmp7;
-  cResult[1] = themeSettings;
-  cResult[2] = tmp9;
-  tmp8 = tmp9;
-}) : (function GuildThemePreviewArt(themeSettings) {
+const result = size.fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
+
+export default function GuildThemePreviewArt(themeSettings) {
   let closure_1;
   let tmp9;
   themeSettings = themeSettings.themeSettings;
@@ -190,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePr
       if (null != customUserThemeSettings) {
         const first = customUserThemeSettings.colors[0];
         if (null != first) {
-          const obj2 = { colors: items, angle: num2 };
+          const obj3 = { colors: items, angle: num2 };
           items = [];
           const obj5 = GuildThemePresets;
           HermesBuiltin.arraySpread(items, obj5.getSingleColorGuildThemeGradientColors(first, closure_1), 0);
@@ -198,20 +61,19 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePr
           if (num2 == null) {
             num2 = 0;
           }
-          tmp4 = obj2;
+          tmp4 = obj3;
         }
       }
       const obj = GuildThemePresets;
       const guildThemePreset = obj.getGuildThemePreset(tmp2.presetId);
       tmp4 = null;
-      const tmp6 = require;
       if (null != guildThemePreset) {
-        const tmp6Result = tmp6(5184);
-        const guildThemePresetAppearance = tmp6Result.getGuildThemePresetAppearance(guildThemePreset, tmp3);
-        const obj3 = { colors: colors.map(f133916), locations: colors1.map(f133917), angle: guildThemePresetAppearance.angle };
+        const obj2 = GuildThemePresets;
+        const guildThemePresetAppearance = obj2.getGuildThemePresetAppearance(guildThemePreset, tmp3);
+        const obj4 = { colors: colors.map((hex) => hex.hex), locations: colors1.map((stop) => stop.stop / 100), angle: guildThemePresetAppearance.angle };
         colors = guildThemePresetAppearance.colors;
         colors1 = guildThemePresetAppearance.colors;
-        tmp4 = obj3;
+        tmp4 = obj4;
       }
     }
     return tmp4;
@@ -220,14 +82,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildThemePr
   if (null == memo) {
     tmp9 = <View style={items1}>{null}</View>;
   } else {
-    let tmp6 = jsx;
     let obj = { colors: null, locations: null, useAngle: true, angle: null, style: items1, children: null };
     ({ colors: obj.colors, locations: obj.locations, angle: obj.angle } = memo);
     LinearGradientDefault;
     tmp9 = <tmp2Result colors={null} locations={null} useAngle angle={null} style={items1}>{null}</tmp2Result>;
   }
   return tmp9;
-});
-const result = size.fileFinishedImporting("modules/guild_themes/native/GuildThemePreviewArt.tsx");
-
-export default tmp2;
+};

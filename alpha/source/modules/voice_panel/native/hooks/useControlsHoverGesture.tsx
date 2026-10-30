@@ -1,96 +1,33 @@
-// Module ID: 19018
-// Function ID: 19019
+// Module ID: 19150
+// Function ID: 19151
 // Name: useControlsHoverGesture
-// Dependencies: [19, 10974, 10972, 558, 576, 10973, 5086, 5334, 2]
+// Dependencies: [19, 11204, 11202, 11203, 5090, 5298, 2]
+// Exports: default
 
-// Module 19018 (useControlsHoverGesture)
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+// Module 19150 (useControlsHoverGesture)
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
-let c6 = 500;
-const __initData = { code: "function useControlsHoverGestureTsx1(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get()){return;}if(mode.get()!==VoicePanelModes.PANEL){return;}const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS){return;}lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
-let closure_8 = { code: "function useControlsHoverGestureTsx2(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControlsHoverGesture() {
-  let connected;
+let closure_6 = { code: "function useControlsHoverGestureTsx1(){const{connected,mode,VoicePanelModes,controlsSpecs,VoicePanelControlsModes,runOnJS,showControls,lastIdleRefreshMillis,IDLE_REFRESH_DEBOUNCE_MILLIS,refreshIdleTimeout}=this.__closure;if(!connected.get())return;if(mode.get()!==VoicePanelModes.PANEL)return;const controlsHidden=controlsSpecs.get().mode===VoicePanelControlsModes.HIDDEN;if(controlsHidden){runOnJS(showControls)();return;}const currentTimeMillis=Date.now();if(currentTimeMillis-lastIdleRefreshMillis.get()<IDLE_REFRESH_DEBOUNCE_MILLIS)return;lastIdleRefreshMillis.set(currentTimeMillis);refreshIdleTimeout();}" };
+let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsHoverGesture.tsx");
+
+export default function useControlsHoverGesture() {
   let controlsSpecs;
   let mode;
   let refreshIdleTimeout;
-  let obj = connected(mode[4]);
-  const cResult = obj.c(7);
-  const context = refreshIdleTimeout.useContext(controlsSpecs(mode[5]));
-  connected = context.connected;
-  controlsSpecs = context.controlsSpecs;
-  mode = context.mode;
-  refreshIdleTimeout = context.refreshIdleTimeout;
-  const showControls = context.showControls;
-  let obj2 = connected(mode[6]);
-  const sharedValue = obj2.useSharedValue(0);
-  if (cResult[0] === connected) {
-    if (cResult[1] === controlsSpecs) {
-      if (cResult[2] === sharedValue) {
-        if (cResult[3] === mode) {
-          if (cResult[4] === refreshIdleTimeout) {
-            let tmp6;
-            if (cResult[5] === showControls) {
-              tmp6 = cResult[6];
-            }
-            return tmp6;
-          }
-        }
-      }
-    }
-  }
-  const Gesture = tmp(tmp2[7]).Gesture;
-  const fn = function u() {
-    if (connected.get()) {
-      if (mode.get() === VoicePanelModes.PANEL) {
-        if (controlsSpecs.get().mode === VoicePanelControlsModes.HIDDEN) {
-          const obj2 = ReanimatedRexport;
-          obj2.runOnJS(showControls)();
-        } else {
-          const _Date = Date;
-          const timestamp = Date.now();
-          const obj = sharedValue;
-          if (timestamp - sharedValue.get() >= c6) {
-            const result = obj.set(timestamp);
-            refreshIdleTimeout();
-          }
-        }
-      }
-    }
-  };
-  const HoverResult = Gesture.Hover();
-  fn.__closure = { connected, mode, VoicePanelModes: showControls, controlsSpecs, VoicePanelControlsModes: sharedValue, runOnJS: connected(mode[6]).runOnJS, showControls, lastIdleRefreshMillis: sharedValue, IDLE_REFRESH_DEBOUNCE_MILLIS, refreshIdleTimeout };
-  fn.__workletHash = 2418652715362;
-  fn.__initData = __initData;
-  ({ connected, mode, VoicePanelModes: showControls, controlsSpecs, VoicePanelControlsModes: sharedValue, runOnJS: connected(mode[6]).runOnJS, showControls, lastIdleRefreshMillis: sharedValue, IDLE_REFRESH_DEBOUNCE_MILLIS, refreshIdleTimeout });
-  const onUpdateResult = HoverResult.onUpdate(fn);
-  cResult[0] = connected;
-  cResult[1] = controlsSpecs;
-  cResult[2] = sharedValue;
-  cResult[3] = mode;
-  cResult[4] = refreshIdleTimeout;
-  cResult[5] = showControls;
-  cResult[6] = onUpdateResult;
-  tmp6 = onUpdateResult;
-}) : (function useControlsHoverGesture() {
-  let controlsSpecs;
-  let mode;
-  let refreshIdleTimeout;
-  const context = refreshIdleTimeout.useContext(controlsSpecs(mode[5]));
+  const context = refreshIdleTimeout.useContext(controlsSpecs(mode[3]));
   const connected = context.connected;
   controlsSpecs = context.controlsSpecs;
   mode = context.mode;
   refreshIdleTimeout = context.refreshIdleTimeout;
   const showControls = context.showControls;
-  let obj = connected(mode[6]);
+  let obj = connected(mode[4]);
   const sharedValue = obj.useSharedValue(0);
   const items = [connected, mode, controlsSpecs, sharedValue, refreshIdleTimeout, showControls];
   return refreshIdleTimeout.useMemo(() => {
@@ -99,13 +36,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControl
       if (closure_1_0.get()) {
         if (closure_1_2.get() === showControls.PANEL) {
           if (controlsSpecs.get().mode === sharedValue.HIDDEN) {
-            const obj2 = connected(mode[6]);
+            const obj2 = connected(mode[4]);
             obj2.runOnJS(closure_1_4)();
           } else {
             const _Date = Date;
             const timestamp = Date.now();
             const obj = closure_1_5;
-            if (timestamp - closure_1_5.get() >= IDLE_REFRESH_DEBOUNCE_MILLIS) {
+            if (timestamp - closure_1_5.get() >= 500) {
               const result = obj.set(timestamp);
               refreshIdleTimeout();
             }
@@ -114,13 +51,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useControl
       }
     };
     const HoverResult = Gesture.Hover();
-    let obj = { connected, mode, VoicePanelModes, controlsSpecs, VoicePanelControlsModes, runOnJS: ReanimatedRexport.runOnJS, showControls, lastIdleRefreshMillis: sharedValue, IDLE_REFRESH_DEBOUNCE_MILLIS, refreshIdleTimeout };
+    let obj = { connected, mode, VoicePanelModes, controlsSpecs, VoicePanelControlsModes, runOnJS: ReanimatedRexport.runOnJS, showControls, lastIdleRefreshMillis: sharedValue, IDLE_REFRESH_DEBOUNCE_MILLIS: 500, refreshIdleTimeout };
     fn.__closure = obj;
-    fn.__workletHash = 10684316595239;
+    fn.__workletHash = 15224942407492;
     fn.__initData = __initData;
     return HoverResult.onUpdate(fn);
   }, items);
-});
-let result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useControlsHoverGesture.tsx");
-
-export default tmp2;
+};

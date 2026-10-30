@@ -1,20 +1,20 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14155
+// Function ID: 14156
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 4937, 1389, 1084, 21, 5005, 587, 558, 576, 14024, 504, 14025, 6943, 5271, 1125, 5039, 6754, 5281, 2]
+// Dependencies: [19, 17, 4941, 1384, 1072, 21, 5009, 575, 14156, 504, 14157, 6951, 5619, 1114, 5043, 6761, 5629, 2]
+// Exports: default
 
-// Module 14023 (ChatBeginningRowJoinApplication)
+// Module 14155 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5039 */;
-import Text_Text from "Text/Text" /* 5271 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5043 */;
+import Text_Text from "Text/Text" /* 5619 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import UserStore from "UserStore" /* 1389 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,94 +34,9 @@ obj2 = { width: "100%", marginTop: 12, display: "flex", flexDirection: "column",
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE, height: 1, border: "none", marginVertical: 16 };
 let closure_10 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginningRowJoinRequest(channelId) {
-  let approveRequest;
-  let closure_0;
-  let first;
-  let joinRequest;
-  let joinRequestGuild;
-  let rejectRequest;
-  let tmp10;
-  let tmp14;
-  let tmp16;
-  let obj = require("react");
-  const cResult = obj.c(32);
-  channelId = channelId.channelId;
-  _require = closure_10();
-  const tmp4 = closure_10();
-  const tmp5 = joinRequest(joinRequestGuild[10])(channelId);
-  joinRequest = tmp5.joinRequest;
-  joinRequestGuild = tmp5.joinRequestGuild;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  let userId;
-  const tmp8 = cResult[1];
-  if (joinRequest != null) {
-    userId = joinRequest.userId;
-  }
-  if (tmp8 !== userId) {
-    let userId1;
-    if (joinRequest != null) {
-      userId1 = joinRequest.userId;
-    }
-    const fn = function f() {
-      let userId;
-      const getUser = UserStore.getUser;
-      if (joinRequest != null) {
-        userId = joinRequest.userId;
-      }
-      return getUser(userId);
-    };
-    cResult[1] = userId1;
-    cResult[2] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp10);
-  const tmpResult3 = require("useJoinRequestButtonActions");
-  const joinRequestButtonActions = tmpResult3.useJoinRequestButtonActions(joinRequest, channelId);
-  ({ approveRequest, rejectRequest } = joinRequestButtonActions);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [PermissionStore];
-    cResult[3] = items1;
-    tmp14 = items1;
-  } else {
-    tmp14 = cResult[3];
-  }
-  if (cResult[4] !== joinRequestGuild) {
-    class I {
-      constructor() {
-        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
-      }
-    }
-    cResult[4] = joinRequestGuild;
-    cResult[5] = I;
-    tmp16 = I;
-  } else {
-    class I {
-      constructor() {
-        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
-      }
-    }
-  }
-  const tmpResult4 = require("get initialized");
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp14, tmp16);
-  if (null != joinRequest) {
-    class I {
-      constructor() {
-        return PermissionStore.can(Permissions.KICK_MEMBERS, joinRequestGuild);
-      }
-    }
-  }
-  return null;
-}) : (function ChatBeginningRowJoinRequest(channelId) {
+const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/ChatBeginningRowJoinApplication.tsx");
+
+export default function ChatBeginningRowJoinRequest(channelId) {
   let approveRequest;
   let closure_0;
   let intl;
@@ -137,7 +52,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginnin
   let joinRequestGuild;
   const tmp = closure_10();
   _require = tmp;
-  const tmp4 = joinRequest(joinRequestGuild[10])(channelId);
+  const tmp4 = joinRequest(joinRequestGuild[8])(channelId);
   const tmp2 = joinRequest;
   joinRequest = tmp4.joinRequest;
   joinRequestGuild = tmp4.joinRequestGuild;
@@ -167,7 +82,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginnin
       if (tmp10Result) {
         const obj5 = { style: tmp.guildInfoRow, children: items2 };
         const obj6 = { guild: joinRequestGuild, size: require("GuildIcon").GuildIconSizes.XXSMALL };
-        const tmp2Result = tmp2(joinRequestGuild[13]);
+        const tmp2Result = tmp2(joinRequestGuild[11]);
         items2 = [closure_7(tmp2Result, obj6), ];
         const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
         items2[1] = closure_7(require("Text/Text").Text, obj7);
@@ -177,14 +92,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginnin
       let tmp16 = null != stateFromStores;
       if (tmp16) {
         const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.format(require("intl").t.jDV3i6, obj9) };
-        const Text = tmp5(tmp3[14]).Text;
-        intl = tmp5(tmp3[15]).intl;
+        const Text = tmp5(tmp3[12]).Text;
+        intl = tmp5(tmp3[13]).intl;
         obj9 = { username: stateFromStores.globalName };
         tmp16 = closure_7(Text, obj8);
       }
       items3[1] = tmp16;
       const formResponses = joinRequest.formResponses;
-      const found = formResponses.filter((field_type) => field_type.field_type !== closure_0(joinRequestGuild[16]).VerificationFormFieldTypes.TERMS);
+      const found = formResponses.filter((field_type) => field_type.field_type !== closure_0(joinRequestGuild[14]).VerificationFormFieldTypes.TERMS);
       items3[2] = found.map((field_type, index) => {
         let items;
         if (field_type.field_type === MemberVerificationTypes.VerificationFormFieldTypes.MULTIPLE_CHOICE) {
@@ -206,18 +121,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginnin
       });
       const items4 = [closure_8(View, obj4), ];
       if (stateFromStores1) {
-        stateFromStores1 = joinRequest.applicationStatus === tmp5(tmp3[16]).GuildJoinRequestApplicationStatuses.SUBMITTED;
+        stateFromStores1 = joinRequest.applicationStatus === tmp5(tmp3[14]).GuildJoinRequestApplicationStatuses.SUBMITTED;
       }
       if (stateFromStores1) {
         const obj10 = { direction: "horizontal", align: "center", children: items5 };
-        const ButtonGroup = tmp5(tmp3[17]).ButtonGroup;
+        const ButtonGroup = tmp5(tmp3[15]).ButtonGroup;
         const obj11 = { grow: true, size: "md", variant: "primary", onPress: approveRequest, text: intl2.string(require("intl").t.BzjDQJ) };
-        const Button = tmp5(tmp3[18]).Button;
-        intl2 = tmp5(tmp3[15]).intl;
+        const Button = tmp5(tmp3[16]).Button;
+        intl2 = tmp5(tmp3[13]).intl;
         items5 = [closure_7(Button, obj11), ];
         const obj12 = { grow: true, size: "md", variant: "destructive", onPress: rejectRequest, text: intl3.string(require("intl").t.hDtbsz) };
-        const Button2 = tmp5(tmp3[18]).Button;
-        intl3 = tmp5(tmp3[15]).intl;
+        const Button2 = tmp5(tmp3[16]).Button;
+        intl3 = tmp5(tmp3[13]).intl;
         items5[1] = closure_7(Button2, obj12);
         stateFromStores1 = tmp10(ButtonGroup, obj10);
       }
@@ -227,7 +142,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatBeginnin
     }
   }
   return tmp10Result2;
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/ChatBeginningRowJoinApplication.tsx");
-
-export default tmp5;
+};

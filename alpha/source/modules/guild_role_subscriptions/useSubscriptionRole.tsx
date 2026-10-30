@@ -1,61 +1,24 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17149
+// Function ID: 17150
 // Name: useSubscriptionRole
-// Dependencies: [4911, 558, 576, 17078, 504, 2]
+// Dependencies: [4915, 17132, 504, 2]
+// Exports: default
 
-// Module 17095 (useSubscriptionRole)
-import GuildRoleStore from "GuildRoleStore" /* 4911 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 17149 (useSubscriptionRole)
+import GuildRoleStore from "GuildRoleStore" /* 4915 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscriptionRole(arg0, arg1) {
-  let closure_0;
-  let first;
-  let subscriptionListing;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const obj2 = require("GuildRoleSubscriptionsHooks");
-  const tmp2 = subscriptionListing;
-  subscriptionListing = obj2.useSubscriptionListing(arg1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildRoleStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    if (cResult[2] === subscriptionListing) {
-      tmp7 = cResult[3];
-    }
-    const tmpResult = tmp(tmp2[4]);
-    return tmpResult.useStateFromStores(first, tmp7);
-  }
-  const fn = function l() {
-    let role;
-    if (null != closure_0) {
-      if (null != subscriptionListing) {
-        role = GuildRoleStore.getRole(tmp, tmp3.role_id);
-      }
-    }
-    return role;
-  };
-  cResult[1] = arg0;
-  cResult[2] = subscriptionListing;
-  cResult[3] = fn;
-  tmp7 = fn;
-}) : (function useSubscriptionRole(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useSubscriptionRole.tsx");
+
+export default function useSubscriptionRole(arg0, editStateId) {
   let closure_0;
   let closure_1;
   _require = arg0;
   const obj = require("GuildRoleSubscriptionsHooks");
-  dependencyMap = obj.useSubscriptionListing(arg1);
+  dependencyMap = obj.useSubscriptionListing(editStateId);
   const items = [GuildRoleStore];
   const obj2 = require("get initialized");
   return obj2.useStateFromStores(items, () => {
@@ -67,7 +30,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscript
     }
     return role;
   });
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/useSubscriptionRole.tsx");
-
-export default tmp2;
+};

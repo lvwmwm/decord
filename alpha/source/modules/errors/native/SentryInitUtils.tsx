@@ -1,23 +1,23 @@
-// Module ID: 1255
-// Function ID: 1256
+// Module ID: 1244
+// Function ID: 1245
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1084, 1095, 686, 3, 1256, 1111, 1264, 15881, 6527, 6532, 1374, 1254, 1380, 6528, 1381, 4962, 1628, 1375, 1367, 558, 2]
+// Dependencies: [5, 17, 1072, 1083, 674, 3, 1245, 1100, 1253, 15920, 6534, 6539, 1369, 1243, 1375, 6535, 1376, 4966, 1623, 1370, 1356, 15921, 2]
 // Exports: initSentry
 
-// Module 1255 (SentryInitUtils)
+// Module 1244 (SentryInitUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants2 from "Constants" /* 1095 */;
-import router_utils from "router_utils" /* 1111 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1256 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import react_nativeAll from "react-native" /* 1380 */;
-import MetricEvents from "MetricEvents" /* 6532 */;
+import Constants2 from "Constants" /* 1083 */;
+import router_utils from "router_utils" /* 1100 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1245 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import react_nativeAll from "react-native" /* 1375 */;
+import MetricEvents from "MetricEvents" /* 6539 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
-import registerSpanErrorInstrumentation_mod from "module_686" /* 686 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1374 */;
+import Constants from "Constants" /* 1072 */;
+import registerSpanErrorInstrumentation_mod from "module_674" /* 674 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f160879 = (arg0, arg1) => {
+      const f133953 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -49,7 +49,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,10 +70,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f160879);
+              items[1] = new Promise(f133953);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f160879);
+              const promise = new Promise(f133953);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -106,7 +106,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp18) {
           c3 = 3;
           throw tmp18;
@@ -565,12 +565,12 @@ function trackCrash(event, hint, arg2) {
     tmp40 = 0 !== event_id2.length;
   }
   if (tmp40) {
-    const tmp26Result = tmp26(1254);
+    const tmp26Result = tmp26(1243);
     tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp12(15881).AppCrashedReasons;
+  const AppCrashedReasons = tmp12(15920).AppCrashedReasons;
   const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  const tmp27Result = tmp27(6527);
+  const tmp27Result = tmp27(6534);
   const increment = tmp27Result.increment;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: items };
   items = ["reason:" + tmp42, ];
@@ -654,8 +654,8 @@ export function initSentry() {
           nextPromise.catch((error) => {
             logger.warn("Failed to replay pending crash report", error);
           });
-          const init = require("module_686").init;
-          require("module_686");
+          const init = require("module_674").init;
+          require("module_674");
           let str2 = "ios";
           const tmp17Result14 = require("PlatformUtils");
           if (tmp17Result14.isAndroid()) {
@@ -665,13 +665,13 @@ export function initSentry() {
             tunnel: `/error-reporting-proxy/${str2}`,
             autoInitializeNativeSdk: false,
             beforeSend,
-            dist: "35320300000000",
+            dist: "35320400000000",
             dsn: SentryStaffDsn,
             environment: ReleaseChannel,
             tracesSampleRate: 0,
             sampleRate: 1,
             ignoreErrors,
-            release: "discord_android@353.3.0-2+353203",
+            release: "discord_android@353.4.0-2+353204",
             tracePropagationTargets: items,
             integrations: items1,
             beforeBreadcrumb(data) {
@@ -695,7 +695,7 @@ export function initSentry() {
           };
           items = [PRIMARY_DOMAIN];
           items1 = [registerSpanErrorInstrumentation, , ];
-          const tmp17Result15 = require("module_686");
+          const tmp17Result15 = require("module_674");
           items1[1] = tmp17Result15.featureFlagsIntegration();
           const obj5 = {
             shouldCreateSpanForRequest(arg0) {
@@ -703,20 +703,20 @@ export function initSentry() {
                   return !closure_1_9.some((item) => null != closure_0.match(item));
                 }
           };
-          const tmp17Result16 = require("module_686");
+          const tmp17Result16 = require("module_674");
           items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
           init(obj3);
-          const tmp17Result17 = require("module_686");
-          tmp17Result17.setTag("buildNumber", "35320300000000");
-          const tmp17Result18 = require("module_686");
+          const tmp17Result17 = require("module_674");
+          tmp17Result17.setTag("buildNumber", "35320400000000");
+          const tmp17Result18 = require("module_674");
           tmp17Result18.setTag("appVersion", constants.Version);
           const _HermesInternal = HermesInternal;
-          const tmp17Result19 = require("module_686");
+          const tmp17Result19 = require("module_674");
           tmp17Result19.setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
           const tmp17Result20 = require("ReactCompilerGating");
           if (tmp17Result20.isReactCompilerBuild()) {
-            const setTag = require("module_686").setTag;
-            require("module_686");
+            const setTag = require("module_674").setTag;
+            require("module_674");
             let str9 = "unoptimized";
             const tmp17Result22 = require("ReactCompilerGating");
             if (tmp17Result22.isReactCompilerEnabled()) {

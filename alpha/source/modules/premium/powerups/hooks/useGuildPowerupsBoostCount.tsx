@@ -1,139 +1,32 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8460
+// Function ID: 8461
 // Name: useGuildPowerupsBoostCount
-// Dependencies: [19, 8427, 4879, 5218, 5237, 558, 576, 504, 2]
-// Exports: getGuildPowerupsBoostCount
+// Dependencies: [19, 8461, 4880, 5224, 5243, 504, 2]
+// Exports: default, getGuildPowerupsBoostCount
 
-// Module 8426 (useGuildPowerupsBoostCount)
-import GameServerExperiment from "GameServerExperiment" /* 5237 */;
+// Module 8460 (useGuildPowerupsBoostCount)
+import GameServerExperiment from "GameServerExperiment" /* 5243 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8427 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5218 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameServerStore from "GameServerStore" /* 8461 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5224 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAppliedBoostCount(arg0) {
-  let closure_0;
-  let first;
-  let tmp11;
-  let tmp14;
-  let tmp15;
-  let tmp7;
-  let tmp9;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(12);
-  const items = [GuildStore];
-  const obj2 = require("get initialized");
-  let num = obj2.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
-    let prop;
-    if (guild != null) {
-      prop = guild.premiumSubscriberCount;
-    }
-    return prop;
-  });
-  if (num == null) {
-    num = 0;
-  }
-  const tmpResult = require("GameServerExperiment");
-  const gameServerEnabled = tmpResult.useGameServerEnabled(arg0, "GuildPowerupsBoostCount");
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [GuildPowerupsStore];
-    cResult[0] = items1;
-    first = items1;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      const stateForGuild = GuildPowerupsStore.getStateForGuild(closure_0);
-      let appliedBoosts;
-      if (stateForGuild != null) {
-        appliedBoosts = stateForGuild.appliedBoosts;
-      }
-      return appliedBoosts;
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult3 = require("get initialized");
-  const stateFromStores = tmpResult3.useStateFromStores(first, tmp7);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [GameServerStore];
-    cResult[3] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== arg0) {
-    const fn2 = function b() {
-      const stateForGuild = GameServerStore.getStateForGuild(closure_0);
-      let appliedBoosts;
-      if (stateForGuild != null) {
-        appliedBoosts = stateForGuild.appliedBoosts;
-      }
-      return appliedBoosts;
-    };
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[5];
-  }
-  const tmpResult4 = require("get initialized");
-  let num8 = tmpResult4.useStateFromStores(tmp9, tmp11);
-  if (null != stateFromStores) {
-    if (gameServerEnabled) {
-      return tmp14;
-    }
-    if (num8 == null) {
-      num8 = 0;
-    }
-    const sum = stateFromStores + num8;
-    const _Math = Math;
-    const bound = Math.max(0, num - sum);
-    if (cResult[8] === num) {
-      if (cResult[9] === sum) {
-        if (cResult[10] === bound) {
-          tmp14 = cResult[11];
-        }
-      }
-    }
-    const obj3 = { available: bound, spent: sum, total: num, isLoading: false };
-    cResult[8] = num;
-    cResult[9] = sum;
-    cResult[10] = bound;
-    cResult[11] = obj3;
-    tmp14 = obj3;
-  }
-  if (cResult[6] !== num) {
-    const obj4 = { available: 0, spent: 0, total: num, isLoading: true };
-    cResult[6] = num;
-    cResult[7] = obj4;
-    tmp15 = obj4;
-  } else {
-    tmp15 = cResult[7];
-  }
-  tmp14 = tmp15;
-}) : (function useGuildAppliedBoostCount(arg0) {
-  let closure_0;
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
+
+export default function useGuildAppliedBoostCount(guildId) {
   let num;
   let stateFromStores1;
-  _require = arg0;
+  _require = guildId;
   const tmp = _require;
   const tmp2 = num;
   let obj = require("get initialized");
   const items = [stateFromStores1];
   num = obj.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(closure_0);
+    const guild = GuildStore.getGuild(guildId);
     let prop;
     if (guild != null) {
       prop = guild.premiumSubscriberCount;
@@ -144,11 +37,11 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAppl
     num = 0;
   }
   const tmpResult = tmp(tmp2[4]);
-  const gameServerEnabled = tmpResult.useGameServerEnabled(arg0, "GuildPowerupsBoostCount");
+  const gameServerEnabled = tmpResult.useGameServerEnabled(guildId, "GuildPowerupsBoostCount");
   const items1 = [GuildPowerupsStore];
-  const tmpResult3 = tmp(tmp2[7]);
+  const tmpResult3 = tmp(tmp2[5]);
   const stateFromStores = tmpResult3.useStateFromStores(items1, () => {
-    const stateForGuild = GuildPowerupsStore.getStateForGuild(closure_0);
+    const stateForGuild = GuildPowerupsStore.getStateForGuild(guildId);
     let appliedBoosts;
     if (stateForGuild != null) {
       appliedBoosts = stateForGuild.appliedBoosts;
@@ -156,9 +49,9 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAppl
     return appliedBoosts;
   });
   const items2 = [stateFromStores];
-  const tmpResult4 = tmp(tmp2[7]);
+  const tmpResult4 = tmp(tmp2[5]);
   stateFromStores1 = tmpResult4.useStateFromStores(items2, () => {
-    const stateForGuild = GameServerStore.getStateForGuild(closure_0);
+    const stateForGuild = GameServerStore.getStateForGuild(guildId);
     let appliedBoosts;
     if (stateForGuild != null) {
       appliedBoosts = stateForGuild.appliedBoosts;
@@ -179,10 +72,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildAppl
     }
     return { available: 0, spent: 0, total: num, isLoading: true };
   }, items3);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");
-
-export default tmp2;
+};
 export function getGuildPowerupsBoostCount(id) {
   let num2;
   const guild = GuildStore.getGuild(id);

@@ -1,26 +1,26 @@
-// Module ID: 7430
-// Function ID: 7431
+// Module ID: 7438
+// Function ID: 7439
 // Name: ThreadMemberListStore
-// Dependencies: [32, 4857, 4917, 7431, 5750, 6557, 1389, 1084, 12, 11, 4942, 5059, 1385, 504, 584, 2]
+// Dependencies: [32, 4858, 4921, 7439, 5756, 6564, 1384, 1072, 12, 11, 4946, 5063, 1380, 504, 572, 2]
 
-// Module 7430 (ThreadMemberListStore)
+// Module 7438 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7431 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7439 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let closure_13, set, subscribedThreadIds, version;
+let closure_13, set, subscribedThreadIds;
 
 let closure_12;
 let unpackModuleId;
@@ -374,7 +374,7 @@ class ThreadMemberListStore extends Store {
     });
   }
   getMemberListVersion(arg0) {
-    version = undefined;
+    let version;
     if (closure_13[arg0] != null) {
       version = tmp.version;
     }

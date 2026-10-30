@@ -1,11 +1,11 @@
-// Module ID: 13698
-// Function ID: 13699
+// Module ID: 13845
+// Function ID: 13846
 // Name: SearchRecentMessageStore
-// Dependencies: [6051, 504, 584, 2]
+// Dependencies: [6058, 504, 572, 2]
 
-// Module 13698 (SearchRecentMessageStore)
+// Module 13845 (SearchRecentMessageStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let _true, messages, set;

@@ -1,40 +1,21 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9927
+// Function ID: 9928
 // Name: useEmojiHotrail
-// Dependencies: [19, 6786, 558, 576, 2]
-// Exports: getEmojiHotrail
+// Dependencies: [19, 6793, 2]
+// Exports: default, getEmojiHotrail
 
-// Module 9900 (useEmojiHotrail)
-import react2 from "react" /* 576 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6786 */;
-import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9927 (useEmojiHotrail)
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6793 */;
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
+let react = react_mod;
 const EMOJI_ROW_SIZE = EmojiPickerConstants.EMOJI_ROW_SIZE;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiHotrail(arg0) {
-  let newlyAddedEmojis;
-  let rowSize;
-  let tmp2;
-  let topEmojis;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    ({ topEmojis, newlyAddedEmojis, rowSize } = arg0);
-    if (rowSize === undefined) {
-      rowSize = EMOJI_ROW_SIZE;
-    }
-    const substr = topEmojis.slice(0, rowSize - newlyAddedEmojis.length);
-    const obj2 = { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
-    cResult[0] = arg0;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return tmp2;
-}) : (function useEmojiHotrail(arg0) {
-  let closure_0 = arg0;
+const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
+
+export default function useEmojiHotrail(arg0) {
+  let closure_0;
+  react = arg0;
   const items = [arg0];
   return react.useMemo(() => {
     let newlyAddedEmojis;
@@ -48,8 +29,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiHotr
     const obj = { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
     return obj;
   }, items);
-});
-function getEmojiHotrail(arg0) {
+};
+export function getEmojiHotrail(arg0) {
   let newlyAddedEmojis;
   let rowSize;
   let topEmojis;
@@ -61,7 +42,3 @@ function getEmojiHotrail(arg0) {
   const obj = { visibleTopEmojis: substr, visibleNewlyAddedEmojis: newlyAddedEmojis, allEmojis: substr.concat(newlyAddedEmojis) };
   return obj;
 }
-const result = size.fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
-
-export default tmp2;
-export { getEmojiHotrail };

@@ -1,62 +1,21 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11876
+// Function ID: 11877
 // Name: useHasVideoPermission
-// Dependencies: [4879, 4937, 558, 576, 6711, 504, 2]
-// Exports: getVideoPermission
+// Dependencies: [4880, 4941, 504, 6718, 2]
+// Exports: default, getVideoPermission
 
-// Module 11683 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6711 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11876 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6718 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasVideoPermission(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore, ];
-    items[1] = PermissionStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      let tmp = null != closure_0;
-      if (tmp) {
-        let isPrivateResult = obj.isPrivate();
-        if (!isPrivateResult) {
-          const obj2 = StreamPermissionUtils;
-          isPrivateResult = obj2.canStreamInChannel(obj, GuildStore, PermissionStore, false);
-        }
-        tmp = isPrivateResult;
-      }
-      return tmp;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useHasVideoPermission(arg0) {
+const result = size.fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
+
+export default function useHasVideoPermission(arg0) {
   let closure_0;
   _require = arg0;
   const obj = require("get initialized");
@@ -74,10 +33,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasVide
     }
     return tmp;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
-
-export default tmp2;
+};
 export function getVideoPermission(channel) {
   let isPrivateResult = channel.isPrivate();
   if (!isPrivateResult) {

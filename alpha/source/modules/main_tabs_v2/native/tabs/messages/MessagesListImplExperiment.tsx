@@ -1,10 +1,10 @@
-// Module ID: 17987
-// Function ID: 17988
+// Module ID: 18048
+// Function ID: 18049
 // Name: MessagesListImplExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 17987 (MessagesListImplExperiment)
-import ApexExperiment_mod from "ApexExperiment" /* 1453 */;
+// Module 18048 (MessagesListImplExperiment)
+import ApexExperiment_mod from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

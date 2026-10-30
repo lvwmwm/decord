@@ -1,17 +1,17 @@
-// Module ID: 10829
-// Function ID: 10830
+// Module ID: 10852
+// Function ID: 10853
 // Name: conjureChatConnection
-// Dependencies: [584, 10812, 1125, 3864, 10830, 10831, 10832, 2]
+// Dependencies: [572, 10835, 1114, 3865, 10853, 10854, 10855, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
-// Module 10829 (conjureChatConnection)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import conjureAgentReaction from "conjureAgentReaction" /* 10812 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 10830 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 10832 */;
+// Module 10852 (conjureChatConnection)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 10835 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 10853 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 10855 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -94,13 +94,13 @@ let obj = {
   }
 };
 let obj2 = {
-  reaction(setting, arg1) {
-    const projectId = arg1.projectId;
+  reaction(message_id, projectId) {
+    projectId = projectId.projectId;
     const obj = conjureAgentReaction;
-    const result = obj.agentReactionFromStep(setting);
-    const tmp3 = null != setting.message_id && null != result;
+    const result = obj.agentReactionFromStep(message_id);
+    const tmp3 = null != message_id.message_id && null != result;
     if (tmp3) {
-      obj3 = { type: "CONJURE_CHAT_MESSAGE_REACTION", projectId, id: setting.message_id, reaction: result };
+      obj3 = { type: "CONJURE_CHAT_MESSAGE_REACTION", projectId, id: message_id.message_id, reaction: result };
       const obj2 = DispatcherDefault;
       obj2.dispatch(obj3);
     }
@@ -119,7 +119,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef3864["913RMa"]);
+      const stringResult = intl.string(_modDef3865["913RMa"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -127,10 +127,10 @@ let obj2 = {
       }
       obj3 = { type: "CONJURE_CHAT_STEP_APPEND", projectId, step: obj4 };
       obj4 = { type: "step", kind: "terminal_error", message: stringResult };
-      const tmp13Result = tmp13(584);
+      const tmp13Result = tmp13(572);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10830).trackConjureErrored;
+      const trackConjureErrored = tmp11(10853).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -220,7 +220,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef3864["0+RUWx"]);
+      const stringResult = intl.string(_modDef3865["0+RUWx"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -228,10 +228,10 @@ let obj2 = {
       }
       obj3 = { type: "CONJURE_CHAT_STEP_APPEND", projectId, step: obj4 };
       obj4 = { type: "step", kind: "terminal_error", message: stringResult };
-      const tmp13Result = tmp13(584);
+      const tmp13Result = tmp13(572);
       tmp13Result.dispatch(obj3);
       const obj6 = { message: stringResult };
-      const trackConjureErrored = tmp11(10830).trackConjureErrored;
+      const trackConjureErrored = tmp11(10853).trackConjureErrored;
       ConjureAnalytics;
       const merged = Object.assign(tmp);
       trackConjureErrored(projectId, obj6);
@@ -266,11 +266,12 @@ let obj2 = {
       obj.dispatch(obj2);
     }
   },
-  clarification(onKept, arg1) {
-    let tmp = null != onKept.clarification;
+  clarification(onSubmit, arg1) {
+    let obj2;
+    let tmp = null != onSubmit.clarification;
     const projectId = arg1.projectId;
     if (tmp) {
-      const questions = onKept.clarification.questions;
+      const questions = onSubmit.clarification.questions;
       let num;
       if (questions != null) {
         num = questions.length;
@@ -281,10 +282,18 @@ let obj2 = {
       tmp = num > 0;
     }
     if (tmp) {
-      const obj2 = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: onKept.turn_id, patch: obj3 };
-      obj3 = { clarification: onKept.clarification };
-      const obj = DispatcherDefault;
-      obj.dispatch(obj2);
+      const obj = { type: "CONJURE_CHAT_TURN_PATCH", projectId, turnId: onSubmit.turn_id, patch: obj2 };
+      obj2 = { clarification: onSubmit.clarification };
+      const dispatch = DispatcherDefault.dispatch;
+      DispatcherDefault;
+      if (null != onSubmit.ts) {
+        obj4 = { clarificationAt: onSubmit.ts };
+        obj3 = { clarificationAt: onSubmit.ts };
+      } else {
+        obj4 = {};
+      }
+      const merged = Object.assign(obj4);
+      dispatch(obj);
     }
   },
   attachment(c2, arg1) {

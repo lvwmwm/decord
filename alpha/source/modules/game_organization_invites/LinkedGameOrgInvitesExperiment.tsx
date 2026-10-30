@@ -1,13 +1,11 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11587
+// Function ID: 11588
 // Name: LinkedGameOrgInvitesExperiment
-// Dependencies: [1453, 558, 576, 2]
-// Exports: getLinkedGameOrgInvitesEnabled
+// Dependencies: [1448, 2]
+// Exports: getLinkedGameOrgInvitesEnabled, useLinkedGameOrgInvitesEnabled
 
-// Module 11384 (LinkedGameOrgInvitesExperiment)
-import react from "react" /* 576 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11587 (LinkedGameOrgInvitesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -15,27 +13,13 @@ let obj = { kind: "user", name: "2026-09-linked-game-org-invites-dev", defaultCo
 obj2 = { 1: null };
 obj2[1] = { enabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLinkedGameOrgInvitesEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return apexExperiment.useConfig(tmp2).enabled;
-}) : (function useLinkedGameOrgInvitesEnabled(location) {
-  const obj = { location };
-  return apexExperiment.useConfig(obj).enabled;
-});
 const result = size.fileFinishedImporting("modules/game_organization_invites/LinkedGameOrgInvitesExperiment.tsx");
 
 export const LinkedGameOrgInvitesExperiment = apexExperiment;
-export const useLinkedGameOrgInvitesEnabled = tmp3;
+export function useLinkedGameOrgInvitesEnabled(location) {
+  const obj = { location };
+  return apexExperiment.useConfig(obj).enabled;
+}
 export function getLinkedGameOrgInvitesEnabled(MessageCodedLinkManager) {
   const obj = { location: MessageCodedLinkManager };
   return apexExperiment.getConfig(obj).enabled;

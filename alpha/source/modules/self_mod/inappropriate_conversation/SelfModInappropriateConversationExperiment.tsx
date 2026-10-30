@@ -1,41 +1,24 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11237
+// Function ID: 11238
 // Name: SelfModInappropriateConversationExperiment
-// Dependencies: [1454, 558, 576, 2]
-// Exports: isEligibleForInappropriateConversationWarning
+// Dependencies: [1449, 2]
+// Exports: isEligibleForInappropriateConversationWarning, useIsEligibleForInappropriateConversationWarning
 
-// Module 11007 (SelfModInappropriateConversationExperiment)
-import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11237 (SelfModInappropriateConversationExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-inappropriate-conversations-prescan", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let tmp2 = apex_ApexExperimentDefault(obj);
-let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForInappropriateConversationWarning(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsEligibleForInappropriateConversationWarning(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj).enabled;
-});
+const tmp2 = apex_ApexExperimentDefault(obj);
+let closure_0 = tmp2;
 const result = size.fileFinishedImporting("modules/self_mod/inappropriate_conversation/SelfModInappropriateConversationExperiment.tsx");
 
 export const InappropriateConversationExperiment = tmp2;
 export function isEligibleForInappropriateConversationWarning(location) {
   const obj = { location: location.location };
-  return closure_2.getConfig(obj).enabled;
+  return closure_0.getConfig(obj).enabled;
 }
-export const useIsEligibleForInappropriateConversationWarning = tmp3;
+export function useIsEligibleForInappropriateConversationWarning(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj).enabled;
+}

@@ -1,99 +1,22 @@
-// Module ID: 11853
-// Function ID: 11854
+// Module ID: 12046
+// Function ID: 12047
 // Name: conjureTraceRequests
-// Dependencies: [19, 558, 576, 2]
-// Exports: hasConjureTraceRequest, requestConjureTrace, takeConjureTraceRequest
+// Dependencies: [19, 2]
+// Exports: hasConjureTraceRequest, requestConjureTrace, takeConjureTraceRequest, useConjureTraceRequests
 
-// Module 11853 (conjureTraceRequests)
+// Module 12046 (conjureTraceRequests)
 import react_mod from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _null, _require, dependencyMap;
+let _null;
 
 let react = react_mod;
 const set = new Set();
-let c4 = null;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureTraceRequests(arg0, cResult) {
-  let closure_0;
-  let closure_2;
-  let current;
-  let tmp2;
-  let tmp4;
-  let tmp5;
-  _require = arg0;
-  dependencyMap = cResult;
-  const obj = require("react");
-  cResult = obj.c(5);
-  react = react.useRef(cResult);
-  if (cResult[0] !== cResult) {
-    const fn = function s() {
-      closure_2.current = current;
-    };
-    cResult[0] = cResult;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  const layoutEffect = obj2.useLayoutEffect(tmp2);
-  if (cResult[2] !== arg0) {
-    const fn2 = function o() {
-      let listener;
-      let ref;
-      if (null != listener) {
-        listener = function listener(arg0) {
-          if (arg0 === listener) {
-            ref.current();
-          }
-        };
-        set.add(listener);
-        return () => {
-          set.delete(listener);
-        };
-      }
-    };
-    const items = [arg0];
-    cResult[2] = arg0;
-    cResult[3] = fn2;
-    cResult[4] = items;
-    tmp5 = items;
-    tmp4 = fn2;
-  } else {
-    tmp4 = cResult[3];
-    tmp5 = cResult[4];
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-}) : (function useConjureTraceRequests(arg0, cResult) {
-  let closure_2;
-  let closure_0 = arg0;
-  const current = cResult;
-  react = react.useRef(cResult);
-  const layoutEffect = react.useLayoutEffect(() => {
-    closure_2.current = current;
-  });
-  const items = [arg0];
-  const effect = react.useEffect(() => {
-    let listener;
-    let ref;
-    if (null != listener) {
-      listener = function listener(arg0) {
-        if (arg0 === listener) {
-          ref.current();
-        }
-      };
-      set.add(listener);
-      return () => {
-        set.delete(listener);
-      };
-    }
-  }, items);
-});
+let c2 = null;
 const result = size.fileFinishedImporting("modules/conjure/debug/conjureTraceRequests.tsx");
 
 export function requestConjureTrace(projectId, traceId) {
-  let c4 = { projectId, traceId };
+  let c2 = { projectId, traceId };
   const items = [...set];
   for (const item10012 of items) {
     let item10012Result = item10012(projectId);
@@ -116,4 +39,27 @@ export function takeConjureTraceRequest(projectId) {
   }
   return null;
 }
-export const useConjureTraceRequests = tmp3;
+export function useConjureTraceRequests(projectId, callback1) {
+  react = projectId;
+  const current = callback1;
+  let closure_2 = react.useRef(callback1);
+  const layoutEffect = react.useLayoutEffect(() => {
+    closure_2.current = current;
+  });
+  const items = [projectId];
+  const effect = react.useEffect(() => {
+    let listener;
+    let ref;
+    if (null != listener) {
+      listener = function listener(arg0) {
+        if (arg0 === listener) {
+          ref.current();
+        }
+      };
+      current.add(listener);
+      return () => {
+        set.delete(listener);
+      };
+    }
+  }, items);
+}

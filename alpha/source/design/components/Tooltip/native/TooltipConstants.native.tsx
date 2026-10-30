@@ -1,11 +1,11 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9938
+// Function ID: 9939
 // Name: TooltipConstants
-// Dependencies: [5284, 2]
+// Dependencies: [5632, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 9911 (TooltipConstants)
-import spring from "spring" /* 5284 */;
+// Module 9938 (TooltipConstants)
+import spring from "spring" /* 5632 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ export function tooltipEnterExitAnimation(position) {
   } else {
     num = -8;
   }
-  const fn = function o(value, fn2) {
+  const fn = function o(targetHeight, fn2) {
     let items1;
     let tmpResult;
     const withSpring = spring.withSpring;
@@ -41,7 +41,7 @@ export function tooltipEnterExitAnimation(position) {
       items1 = [{ translateY: withSpringResult }];
       const obj = { translateY: withSpringResult };
     }
-    const obj3 = { transform: items1, opacity: tmpResult.withSpring(value, tmp4, "respect-motion-settings", fn2) };
+    const obj3 = { transform: items1, opacity: tmpResult.withSpring(targetHeight, tmp4, "respect-motion-settings", fn2) };
     tmpResult = spring;
     return obj3;
   };

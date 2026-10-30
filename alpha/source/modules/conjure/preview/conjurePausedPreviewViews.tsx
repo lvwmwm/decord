@@ -1,67 +1,54 @@
-// Module ID: 10897
-// Function ID: 10898
+// Module ID: 10920
+// Function ID: 10921
 // Name: conjurePausedPreviewViews
-// Dependencies: [19, 558, 576, 2]
-// Exports: isConjurePausedPreviewMounted, registerConjurePausedPreview
+// Dependencies: [19, 2]
+// Exports: isConjurePausedPreviewMounted, registerConjurePausedPreview, useConjurePausedPreviewView
 
-// Module 10897 (conjurePausedPreviewViews)
-import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10920 (conjurePausedPreviewViews)
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, set;
+let set;
 
+let react = react_mod;
 const map = new Map();
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePausedPreviewView(arg0) {
-  let tmp2;
-  let tmp3;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function s() {
-      if (null != closure_0) {
-        closure_0 = tmp;
-        set = map.set;
-        let num = map.get(tmp);
-        if (num == null) {
-          num = 0;
-        }
-        const result = set(tmp, num + 1);
-        let c1 = true;
-        return () => {
-          const tmp = c1;
-          if (tmp) {
-            c1 = false;
-            let num = map.get(closure_0);
-            if (num == null) {
-              num = 1;
-            }
-            const diff = num - 1;
-            if (0 < diff) {
-              const result = obj.set(tmp2, diff);
-            } else {
-              map.delete(closure_0);
-            }
-          }
-        };
-      }
-    };
-    const items = [arg0];
-    let num = 0;
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
+let result = size.fileFinishedImporting("modules/conjure/preview/conjurePausedPreviewViews.tsx");
+
+export function isConjurePausedPreviewMounted(projectId) {
+  let num = map.get(projectId);
+  if (num == null) {
+    num = 0;
   }
-  const layoutEffect = react.useLayoutEffect(tmp2, tmp3);
-}) : (function useConjurePausedPreviewView(arg0) {
+  return num > 0;
+}
+export function registerConjurePausedPreview(arg0) {
+  let c1;
   let closure_0 = arg0;
+  set = map.set;
+  let num = map.get(arg0);
+  if (num == null) {
+    num = 0;
+  }
+  const result = set(arg0, num + 1);
+  return () => {
+    const tmp = c1;
+    if (tmp) {
+      c1 = false;
+      let num = map.get(closure_0);
+      if (num == null) {
+        num = 1;
+      }
+      const diff = num - 1;
+      if (0 < diff) {
+        const result = obj.set(tmp2, diff);
+      } else {
+        map.delete(closure_0);
+      }
+    }
+  };
+}
+export function useConjurePausedPreviewView(arg0) {
+  react = arg0;
   const items = [arg0];
   const layoutEffect = react.useLayoutEffect(() => {
     let tmp = closure_0;
@@ -93,41 +80,4 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePa
       };
     }
   }, items);
-});
-function registerConjurePausedPreview(arg0) {
-  let closure_0 = arg0;
-  set = map.set;
-  let num = map.get(arg0);
-  if (num == null) {
-    num = 0;
-  }
-  const result = set(arg0, num + 1);
-  let c1 = true;
-  return () => {
-    const tmp = c1;
-    if (tmp) {
-      c1 = false;
-      let num = map.get(closure_0);
-      if (num == null) {
-        num = 1;
-      }
-      const diff = num - 1;
-      if (0 < diff) {
-        const result = obj.set(tmp2, diff);
-      } else {
-        map.delete(closure_0);
-      }
-    }
-  };
 }
-let result = size.fileFinishedImporting("modules/conjure/preview/conjurePausedPreviewViews.tsx");
-
-export function isConjurePausedPreviewMounted(projectId) {
-  let num = map.get(projectId);
-  if (num == null) {
-    num = 0;
-  }
-  return num > 0;
-}
-export { registerConjurePausedPreview };
-export const useConjurePausedPreviewView = tmp3;

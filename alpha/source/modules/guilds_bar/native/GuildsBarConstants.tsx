@@ -1,18 +1,15 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18302
+// Function ID: 18303
 // Name: GuildsBarConstants
-// Dependencies: [558, 5289, 587, 2]
+// Dependencies: [5591, 575, 2]
 // Exports: useGuildWrapperSize
 
-// Module 18243 (GuildsBarConstants)
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 18302 (GuildsBarConstants)
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
+const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 
 export const GUILD_ITEM_SIZE = 48;
 export const GUILD_LIST_WIDTH = 72;

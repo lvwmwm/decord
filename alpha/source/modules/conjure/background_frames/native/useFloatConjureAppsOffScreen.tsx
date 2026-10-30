@@ -1,14 +1,14 @@
-// Module ID: 18974
-// Function ID: 18975
+// Module ID: 19068
+// Function ID: 19069
 // Name: useFloatConjureAppsOffScreen
-// Dependencies: [19, 18489, 18566, 558, 576, 504, 6836, 2]
+// Dependencies: [19, 18548, 18625, 504, 6843, 2]
+// Exports: default
 
-// Module 18974 (useFloatConjureAppsOffScreen)
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6836 */;
-import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18566 */;
+// Module 19068 (useFloatConjureAppsOffScreen)
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6843 */;
+import conjureAppPictureInPictureFrames from "conjureAppPictureInPictureFrames" /* 18625 */;
 import react from "react" /* 19 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18489 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18548 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,69 +19,9 @@ function getFloatableFrameIds() {
   const floatableFrames = obj.getFloatableFrames();
   return floatableFrames.map((id) => id.id);
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFloatConjureAppsOffScreen() {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function o(channelId) {
-      return channelId.channelId;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  let tmp5 = VisibleChannelScreenStore(first);
-  _require = tmp5;
-  const tmpResult = require("get initialized");
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp(18566).FLOATING_APP_STORES, getFloatableFrameIds);
-  if (cResult[1] !== tmp5) {
-    const fn2 = function c() {
-      const obj = conjureAppPictureInPictureFrames;
-      const floatableFrames = obj.getFloatableFrames();
-      for (const item10012 of floatableFrames) {
-        let tmp2 = item10012;
-        if (getChannelIdForEmbeddedSurfaceDefault(item10012.surface) === closure_0) {
-          let obj3 = conjureAppPictureInPictureFrames;
-          let result = obj3.exitConjureAppPictureInPicture(tmp2.id);
-        } else {
-          let obj2 = conjureAppPictureInPictureFrames;
-          let result1 = obj2.enterConjureAppPictureInPicture(tmp2.id);
-        }
-        continue;
-      }
-      const obj4 = conjureAppPictureInPictureFrames;
-      const strandedFloatingFrames = obj4.getStrandedFloatingFrames();
-      for (const item10050 of strandedFloatingFrames) {
-        let obj5 = conjureAppPictureInPictureFrames;
-        let result2 = obj5.exitConjureAppPictureInPicture(item10050.id);
-        continue;
-      }
-    };
-    cResult[1] = tmp5;
-    cResult[2] = fn2;
-    tmp7 = fn2;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] === stateFromStoresArray) {
-    let tmp8;
-    if (cResult[4] === tmp5) {
-      tmp8 = cResult[5];
-    }
-    let tmp9 = react;
-    const effect = react.useEffect(tmp7, tmp8);
-  }
-  const items = [stateFromStoresArray, tmp5];
-  cResult[3] = stateFromStoresArray;
-  cResult[4] = tmp5;
-  cResult[5] = items;
-  tmp8 = items;
-}) : (function useFloatConjureAppsOffScreen() {
+let result = size.fileFinishedImporting("modules/conjure/background_frames/native/useFloatConjureAppsOffScreen.tsx");
+
+export default function useFloatConjureAppsOffScreen() {
   let closure_0;
   const tmp = VisibleChannelScreenStore((channelId) => channelId.channelId);
   _require = tmp;
@@ -109,7 +49,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFloatConj
       continue;
     }
   }, items);
-});
-let result = size.fileFinishedImporting("modules/conjure/background_frames/native/useFloatConjureAppsOffScreen.tsx");
-
-export default tmp2;
+};

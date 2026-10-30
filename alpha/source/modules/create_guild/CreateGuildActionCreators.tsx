@@ -1,12 +1,12 @@
-// Module ID: 13671
-// Function ID: 13672
+// Module ID: 13818
+// Function ID: 13819
 // Name: create_guild/CreateGuildActionCreators
-// Dependencies: [5, 1084, 6734, 1272, 6433, 2]
+// Dependencies: [5, 1072, 6741, 1261, 6440, 2]
 
-// Module 13671 (create_guild/CreateGuildActionCreators)
-import Constants from "Constants" /* 1084 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+// Module 13818 (create_guild/CreateGuildActionCreators)
+import Constants from "Constants" /* 1072 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGuildFromTemplate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

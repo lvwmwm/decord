@@ -1,63 +1,22 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17416
+// Function ID: 17417
 // Name: AndroidNotificationLightsSetting
-// Dependencies: [17349, 8387, 558, 576, 1381, 17351, 1125, 11302, 16196, 17355, 2]
+// Dependencies: [17403, 8424, 1376, 17405, 1114, 11505, 16236, 17409, 2]
 
-// Module 17362 (AndroidNotificationLightsSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16196 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17351 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17355 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17349 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11302 */;
+// Module 17416 (AndroidNotificationLightsSetting)
+import intl2 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16236 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17405 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17409 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17403 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let setAndroidNotificationLightsEnabled;
 ({ useAndroidNotificationLightsEnabled: c2, setAndroidNotificationLightsEnabled } = AndroidNotificationSettingsStore);
-const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasAndroidNotificationLightsSetting() {
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  const tmp4 = React2();
-  if (cResult[0] !== tmp4) {
-    const tmpResult = PlatformUtils;
-    let tmp7 = !tmpResult.isIOS();
-    tmpResult.isIOS();
-    if (tmp7) {
-      const tmpResult2 = SettingsNotificationUtils;
-      tmp7 = !tmpResult2.hasAndroidNotificationChannels();
-    }
-    if (tmp7) {
-      tmp7 = null != tmp4;
-    }
-    cResult[0] = tmp4;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function useHasAndroidNotificationLightsSetting() {
-  const tmp = React2();
-  const obj = PlatformUtils;
-  let tmp5 = !obj.isIOS();
-  obj.isIOS();
-  if (tmp5) {
-    const tmp2Result = SettingsNotificationUtils;
-    tmp5 = !tmp2Result.hasAndroidNotificationChannels();
-  }
-  if (tmp5) {
-    tmp5 = null != tmp;
-  }
-  return tmp5;
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
@@ -72,19 +31,28 @@ let obj = {
   },
   onValueChange: setAndroidNotificationLightsEnabled
 };
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
+const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let SettingBuilders = SettingBuilders_mod;
 const createToggle = SettingBuilders.createToggle;
 const obj2 = {
   parent: MobileUserSettings.NOTIFICATIONS,
   usePredicate() {
-    let tmp = closure_3();
-    const obj = notifications_NotificationSettingsUtils;
-    if (tmp) {
-      tmp = !obj.useIsDeclarativeSettingsUIAvailable("AndroidNotificationLightsSetting");
+    const tmp = React2();
+    const obj = PlatformUtils;
+    let tmp5 = !obj.isIOS();
+    obj.isIOS();
+    if (tmp5) {
+      const tmp2Result = SettingsNotificationUtils;
+      tmp5 = !tmp2Result.hasAndroidNotificationChannels();
     }
-    return tmp;
+    if (tmp5) {
+      tmp5 = null != tmp;
+    }
+    const tmp2Result2 = notifications_NotificationSettingsUtils;
+    if (tmp5) {
+      tmp5 = !tmp2Result2.useIsDeclarativeSettingsUIAvailable("AndroidNotificationLightsSetting");
+    }
+    return tmp5;
   }
 };
 const merged = Object.assign(obj);
@@ -94,17 +62,27 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {
-    let isDeclarativeSettingsUIAvailable = closure_3();
-    const obj = notifications_NotificationSettingsUtils;
+    const tmp = React2();
+    const obj = PlatformUtils;
+    let isDeclarativeSettingsUIAvailable = !obj.isIOS();
+    obj.isIOS();
     if (isDeclarativeSettingsUIAvailable) {
-      isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("RedesignAndroidNotificationLightsSetting");
+      const tmp2Result = SettingsNotificationUtils;
+      isDeclarativeSettingsUIAvailable = !tmp2Result.hasAndroidNotificationChannels();
+    }
+    if (isDeclarativeSettingsUIAvailable) {
+      isDeclarativeSettingsUIAvailable = null != tmp;
+    }
+    const tmp2Result2 = notifications_NotificationSettingsUtils;
+    if (isDeclarativeSettingsUIAvailable) {
+      isDeclarativeSettingsUIAvailable = tmp2Result2.useIsDeclarativeSettingsUIAvailable("RedesignAndroidNotificationLightsSetting");
     }
     return isDeclarativeSettingsUIAvailable;
   }
 };
 const merged1 = Object.assign(obj);
 const toggle2 = createToggle2(obj3);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationLightsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/AndroidNotificationLightsSetting.tsx");
 
 export default toggle;
 export const RedesignAndroidNotificationLightsSetting = toggle2;

@@ -1,52 +1,29 @@
-// Module ID: 17403
-// Function ID: 17404
+// Module ID: 17457
+// Function ID: 17458
 // Name: IcymiTabSetting
-// Dependencies: [8387, 558, 8522, 8882, 8881, 17404, 576, 11302, 1125, 2]
+// Dependencies: [8424, 8556, 8916, 8915, 17458, 11505, 1114, 2]
 
-// Module 17403 (IcymiTabSetting)
-import react from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useLabFeatureDefault from "useLabFeature" /* 8522 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8881 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 8882 */;
-import LabFeatureActions from "LabFeatureActions" /* 17404 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+// Module 17457 (IcymiTabSetting)
+import intl2 from "intl" /* 1114 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import useLabFeatureDefault from "useLabFeature" /* 8556 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8915 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 8916 */;
+import LabFeatureActions from "LabFeatureActions" /* 17458 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIPredicate() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "settings" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
-  return ICYMIStaffOnlyExperiment.useConfig(first).enabled;
-}) : (function useICYMIPredicate() {
-  const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
-  return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
-});
-function useICYMISettingValue() {
-  const tmp = useLabFeatureDefault;
-  return tmp(ICYMIExperiment.ICYMI_LAB_FEATURE);
-}
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.D4clKq);
   },
   parent: MobileUserSettings.ADVANCED,
-  useValue: useICYMISettingValue,
+  useValue: function useICYMISettingValue() {
+    const tmp = useLabFeatureDefault;
+    return tmp(ICYMIExperiment.ICYMI_LAB_FEATURE);
+  },
   onValueChange: function onICYMISettingValueChange(enabled) {
     let str = "show";
     const itemInteracted = ICYMIActionCreatorsDefault.itemInteracted;
@@ -61,9 +38,12 @@ let obj = {
     const obj2 = LabFeatureActions;
     obj2.toggleLabFeature(ICYMIExperiment.ICYMI_LAB_FEATURE, obj);
   },
-  usePredicate: tmp3
+  usePredicate: function useICYMIPredicate() {
+    const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
+    return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
+  }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/IcymiTabSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/IcymiTabSetting.tsx");
 
 export default toggle;

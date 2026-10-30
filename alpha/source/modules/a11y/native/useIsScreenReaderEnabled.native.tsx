@@ -1,13 +1,12 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5269
+// Function ID: 5270
 // Name: useIsScreenReaderEnabled
-// Dependencies: [17, 510, 570, 1271, 558, 2]
+// Dependencies: [17, 510, 560, 1260, 2]
 // Exports: addScreenReaderEnabledListener, getIsScreenReaderEnabled, useIsScreenReaderEnabled
 
-// Module 5304 (useIsScreenReaderEnabled)
+// Module 5269 (useIsScreenReaderEnabled)
 import react_native from "react-native" /* 17 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +17,7 @@ function SCREEN_READER_ENABLED_GETTER(screenReaderEnabled) {
   return screenReaderEnabled.screenReaderEnabled;
 }
 let screenReaderEnabled = "screenReaderEnabled";
-let closure_5 = module_570.create((arg0) => {
+let closure_5 = module_560.create((arg0) => {
   _require = arg0;
   function updateScreenReaderEnabled(event) {
     closure_0 = event;
@@ -58,9 +57,7 @@ let closure_5 = module_570.create((arg0) => {
   }
   return { screenReaderEnabled };
 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
+let result = size.fileFinishedImporting("modules/a11y/native/useIsScreenReaderEnabled.native.tsx");
 
 export function addScreenReaderEnabledListener(arg0) {
   let closure_0 = arg0;

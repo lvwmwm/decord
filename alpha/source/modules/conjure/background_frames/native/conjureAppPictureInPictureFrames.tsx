@@ -1,31 +1,30 @@
-// Module ID: 18566
-// Function ID: 18567
+// Module ID: 18625
+// Function ID: 18626
 // Name: conjureAppPictureInPictureFrames
-// Dependencies: [2043, 6833, 1206, 6831, 6834, 18565, 18562, 14332, 558, 504, 14314, 5701, 1125, 3864, 10880, 2]
+// Dependencies: [2040, 6840, 1195, 6838, 6841, 18624, 18621, 14362, 504, 14344, 5707, 1114, 3865, 10903, 2]
 // Exports: enterConjureAppPictureInPicture, exitConjureAppPictureInPicture, getFloatableFrames, getStrandedFloatingFrames, useConjureAppPictureInPictureFrameIds
 
-// Module 18566 (conjureAppPictureInPictureFrames)
+// Module 18625 (conjureAppPictureInPictureFrames)
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 10880 */;
-import closeFrameDefault from "closeFrame" /* 14314 */;
-import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 18562 */;
-import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 18565 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import FramesConstants from "FramesConstants" /* 6834 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import intl2 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10903 */;
+import closeFrameDefault from "closeFrame" /* 14344 */;
+import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 18621 */;
+import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 18624 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import FramesStore from "FramesStore" /* 6840 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import FramesConstants from "FramesConstants" /* 6841 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const frameRunsInBackgroundDefault = tmp(14332);
-const f136183 = (id) => id.id;
+const frameRunsInBackgroundDefault = tmp(14362);
+const f114949 = (id) => id.id;
 function canFloat(id) {
   let tmp3 = isConjureAppChannelFrameDefault(id);
   if (tmp3) {
@@ -75,7 +74,7 @@ function isConjureAppPictureInPictureFrame(frame) {
 function getConjureAppPictureInPictureFrameIds() {
   const allFrames = FramesStore.getAllFrames();
   const found = allFrames.filter(isConjureAppPictureInPictureFrame);
-  return found.map(f136183);
+  return found.map(f114949);
 }
 function closeToMakeRoom(frameId) {
   let intl;
@@ -96,7 +95,7 @@ function closeToMakeRoom(frameId) {
   }
   closeFrameDefault(frameId);
   if (null != tmp3) {
-    const obj = { text: intl.formatToPlainString(_modDef3864.jmMirO, obj2) };
+    const obj = { text: intl.formatToPlainString(_modDef3865.jmMirO, obj2) };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -106,9 +105,7 @@ function closeToMakeRoom(frameId) {
 }
 ({ asLaunched: metroRequire, FrameLayoutModes: metroImportDefault } = FramesConstants);
 const items = [FramesStore, UnsyncedUserSettingsStore, ConjureProjectStore];
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/conjure/background_frames/native/conjureAppPictureInPictureFrames.tsx");
+let result = size.fileFinishedImporting("modules/conjure/background_frames/native/conjureAppPictureInPictureFrames.tsx");
 
 export const FLOATING_APP_STORES = items;
 export function getFloatableFrames() {
@@ -164,7 +161,7 @@ export function enterConjureAppPictureInPicture(id) {
       tmp3 = !obj2.isBuilderPreviewFrame(frame);
     }
     if (tmp3) {
-      tmp3 = tmp22(14332)(frame, UnsyncedUserSettingsStore);
+      tmp3 = tmp22(14362)(frame, UnsyncedUserSettingsStore);
     }
     if (tmp3) {
       const mainFrame = obj.getMainFrame();
@@ -175,13 +172,13 @@ export function enterConjureAppPictureInPicture(id) {
       tmp3 = id !== frame.id;
     }
     if (tmp3) {
-      let tmp7 = tmp22(18565)(frame);
+      let tmp7 = tmp22(18624)(frame);
       if (tmp7) {
         const obj3 = conjureBackgroundFrameRules;
         tmp7 = !obj3.isBuilderPreviewFrame(frame);
       }
       if (tmp7) {
-        tmp7 = tmp22(14332)(frame, UnsyncedUserSettingsStore);
+        tmp7 = tmp22(14362)(frame, UnsyncedUserSettingsStore);
       }
       if (tmp7) {
         const mainFrame1 = obj.getMainFrame();
@@ -202,7 +199,7 @@ export function enterConjureAppPictureInPicture(id) {
       if (!tmp7) {
         const allFrames = obj.getAllFrames();
         const found = allFrames.filter(isConjureAppPictureInPictureFrame);
-        const mapped = found.map(f136183);
+        const mapped = found.map(f114949);
         const _Math = Math;
         const substr = mapped.slice(0, Math.max(0, mapped.length - 2 + 1));
         const item = substr.forEach(closeToMakeRoom);

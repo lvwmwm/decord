@@ -1,119 +1,25 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17159
+// Function ID: 17160
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 558, 576, 10021, 10023, 17106, 2]
+// Dependencies: [19, 17, 21, 10048, 10050, 17160, 2]
+// Exports: default
 
-// Module 17105 (GuildRoleSubscriptionEmojiGallery)
+// Module 17159 (GuildRoleSubscriptionEmojiGallery)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import chunkDefault from "chunk" /* 10021 */;
-import LayoutUtils from "LayoutUtils" /* 10023 */;
-import EmojiIconDefault from "EmojiIcon" /* 17106 */;
+import chunkDefault from "chunk" /* 10048 */;
+import LayoutUtils from "LayoutUtils" /* 10050 */;
+import EmojiIconDefault from "EmojiIcon" /* 17160 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
-
-let obj1;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGallery(maxPerRow) {
-  let emojiIds;
-  let guildId;
-  let tmp8;
-  const obj = guildId(576);
-  const cResult = obj.c(16);
-  const tmp = guildId;
-  ({ emojiIds, guildId } = maxPerRow);
-  maxPerRow = maxPerRow.maxPerRow;
-  let num = 9;
-  if (undefined !== maxPerRow) {
-    num = maxPerRow;
-  }
-  if (cResult[0] === emojiIds) {
-    if (cResult[1] === guildId) {
-      let tmp4;
-      let tmp5;
-      let num2;
-      let tmp6;
-      if (cResult[2] === num) {
-        tmp4 = cResult[3];
-        tmp5 = cResult[4];
-        num2 = cResult[5];
-        tmp6 = cResult[6];
-      }
-      if (cResult[9] === tmp4) {
-        if (cResult[10] === num2) {
-          let tmp10;
-          if (cResult[11] === tmp6) {
-            tmp10 = cResult[12];
-          }
-          if (cResult[13] === tmp5) {
-            let tmp13;
-            if (cResult[14] === tmp10) {
-              tmp13 = cResult[15];
-            }
-            return tmp13;
-          }
-          const tmp15 = <tmp5>{tmp10}</tmp5>;
-          cResult[13] = tmp5;
-          cResult[14] = tmp10;
-          cResult[15] = tmp15;
-          tmp13 = tmp15;
-        }
-      }
-      const tmp12 = <tmp4 gap={num2}>{tmp6}</tmp4>;
-      cResult[9] = tmp4;
-      cResult[10] = num2;
-      cResult[11] = tmp6;
-      cResult[12] = tmp12;
-      tmp10 = tmp12;
-    }
-  }
-  const arr = chunkDefault(emojiIds, num);
-  let GappedList = tmp(10023).GappedList;
-  if (cResult[7] !== guildId) {
-    class I {
-      constructor(arg0, arg1) {
-        obj = { style: { flexDirection: "row" }, children: null };
-        obj1 = { gap: 16, children: null };
-        GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(function() { /* body not rendered: F155858 */ });
-        obj.children = jsx(GappedList, obj1);
-        return jsx(View, obj, arg1);
-      }
-    }
-    cResult[7] = guildId;
-    cResult[8] = I;
-    tmp8 = I;
-  } else {
-    class I {
-      constructor(arg0, arg1) {
-        obj = { style: { flexDirection: "row" }, children: null };
-        obj1 = { gap: 16, children: null };
-        GappedList = closure_0(closure_2[6]).GappedList;
-        obj1.children = maxPerRow.map(function() { /* body not rendered: F155858 */ });
-        obj.children = jsx(GappedList, obj1);
-        return jsx(View, obj, arg1);
-      }
-    }
-  }
-  const mapped = arr.map(tmp8);
-  cResult[0] = emojiIds;
-  cResult[1] = guildId;
-  cResult[2] = num;
-  cResult[3] = GappedList;
-  cResult[4] = View;
-  cResult[5] = 8;
-  cResult[6] = mapped;
-  tmp6 = mapped;
-  num2 = 8;
-  tmp5 = tmp7;
-  tmp4 = GappedList;
-}) : (function EmojiGallery(emojiIds) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionEmojiGallery.tsx");
+
+export default function EmojiGallery(emojiIds) {
   let arr;
   let maxPerRow;
-  let require;
   ({ guildId: require, maxPerRow } = emojiIds);
   emojiIds = emojiIds.emojiIds;
   if (maxPerRow === undefined) {
@@ -131,7 +37,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmojiGalle
   arr = chunkDefault(emojiIds, maxPerRow);
   let GappedList = LayoutUtils.GappedList;
   return <View>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/listing_elements/GuildRoleSubscriptionEmojiGallery.tsx");
-
-export default tmp3;
+};

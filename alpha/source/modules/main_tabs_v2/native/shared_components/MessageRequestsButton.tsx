@@ -1,149 +1,41 @@
-// Module ID: 17969
-// Function ID: 17970
+// Module ID: 18030
+// Function ID: 18031
 // Name: MessageRequestsButton
-// Dependencies: [109, 19, 17, 6843, 6844, 21, 5005, 558, 576, 504, 17970, 5281, 1125, 8014, 14471, 9156, 2]
+// Dependencies: [19, 17, 6850, 6851, 21, 5009, 504, 18031, 5629, 1114, 8020, 14503, 9169, 2]
+// Exports: default
 
-// Module 17969 (MessageRequestsButton)
+// Module 18030 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import IconButton2 from "IconButton" /* 8014 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9156 */;
-import IconActionButtonDefault from "IconActionButton" /* 14471 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import intl4 from "intl" /* 1114 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9169 */;
+import IconActionButton from "IconActionButton" /* 14503 */;
+import _mod18031 from "module_18031" /* 18031 */;
 import react from "react" /* 19 */;
-import MessageRequestStore from "MessageRequestStore" /* 6843 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6844 */;
+import MessageRequestStore from "MessageRequestStore" /* 6850 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6851 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let c10;
-let c9;
-let tmp;
-const _mod17970 = tmp(17970);
-let closure_3 = ["alternateVariant"];
-const View = react_native.View;
-({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = createStyles.createStyles({ buttonContainer: { position: "relative" } });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessageRequestCounts() {
-  let messageRequestsCount;
-  let spamChannelsCount;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageRequestStore];
-    const fn = function n() {
-      return messageRequestsCount.getMessageRequestsCount();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [SpamMessageRequestStore];
-    const fn2 = function c() {
-      return spamChannelsCount.getSpamChannelsCount();
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult2 = get_initialized;
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  if (cResult[4] === stateFromStores) {
-    let tmp12;
-    if (cResult[5] === stateFromStores1) {
-      tmp12 = cResult[6];
-    }
-    return tmp12;
-  }
-  const obj2 = { requestCount: stateFromStores, spamCount: stateFromStores1 };
-  cResult[4] = stateFromStores;
-  cResult[5] = stateFromStores1;
-  cResult[6] = obj2;
-  tmp12 = obj2;
-}) : (function useMessageRequestCounts() {
-  let items;
-  let items1;
-  let messageRequestsCount;
-  let obj2;
-  let obj3;
-  let spamChannelsCount;
-  const obj = { requestCount: obj2.useStateFromStores(items, () => messageRequestsCount.getMessageRequestsCount()), spamCount: obj3.useStateFromStores(items1, () => spamChannelsCount.getSpamChannelsCount()) };
-  items = [MessageRequestStore];
-  items1 = [SpamMessageRequestStore];
-  obj2 = get_initialized;
-  obj3 = get_initialized;
-  return obj;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestAnimation(color) {
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(5);
+const IconActionButtonDefault = IconActionButton;
+
+let metroImportAll;
+let metroImportDefault;
+const f113258 = () => messageRequestsCount.getMessageRequestsCount();
+const f113259 = () => spamChannelsCount.getSpamChannelsCount();
+function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
-  const requestCount = closure_12().requestCount;
-  const obj2 = react;
-  if (cResult[0] !== requestCount) {
-    const fn = function n() {
-      if (requestCount > 0) {
-        if (ref != null) {
-          const current = ref.current;
-          if (current != null) {
-            current.play();
-          }
-        }
-      }
-    };
-    const items = [requestCount];
-    cResult[0] = requestCount;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp5, tmp6);
-  if (cResult[3] !== color) {
-    const obj3 = { ref, color, size: "sm", autoPlay: true };
-    const tmp10 = React4(_mod17970.MessageRequestLottie, obj3);
-    cResult[3] = color;
-    cResult[4] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[4];
-  }
-  return tmp8;
-}) : (function MessageRequestAnimation(color) {
-  color = color.color;
-  const ref = react.useRef(null);
-  const requestCount = closure_12().requestCount;
-  const items = [requestCount];
+  const items = [MessageRequestStore];
+  const obj = get_initialized;
+  const stateFromStores = obj.useStateFromStores(items, f113258);
+  const items1 = [SpamMessageRequestStore];
+  const obj2 = get_initialized;
+  const stateFromStores1 = obj2.useStateFromStores(items1, f113259);
+  const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
-    if (requestCount > 0) {
+    if (stateFromStores > 0) {
       if (ref != null) {
         const current = ref.current;
         if (current != null) {
@@ -151,205 +43,76 @@ const IconComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function M
         }
       }
     }
-  }, items);
-  return React4(_mod17970.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestsButton(alternateVariant) {
-  let intl2;
-  let intl3;
-  let items;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(21);
-  if (cResult[0] !== alternateVariant) {
-    alternateVariant = alternateVariant.alternateVariant;
-    const tmp8 = _objectWithoutProperties(alternateVariant, closure_3);
-    cResult[0] = alternateVariant;
-    cResult[1] = tmp8;
-    cResult[2] = alternateVariant;
-    tmp5 = alternateVariant;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const tmp9 = undefined !== tmp5 && tmp5;
-  const tmp10 = closure_11();
-  const tmp11 = closure_12();
-  if (0 === tmp11.requestCount) {
-    if (0 === tmp11.spamCount) {
-      return null;
-    }
-  }
-  if (tmp9) {
-    let tmp27;
-    let tmp36;
-    if (cResult[3] !== tmp11.requestCount) {
-      let str1;
-      if (tmp11.requestCount > 0) {
-        str1 = str.toString();
-      }
-      cResult[3] = tmp11.requestCount;
-      cResult[4] = str1;
-      tmp27 = str1;
-    } else {
-      tmp27 = cResult[4];
-    }
-    if (cResult[5] === tmp4) {
-      let tmp29;
-      let tmp42;
-      if (cResult[6] === tmp27) {
-        tmp29 = cResult[7];
-      }
-      if (cResult[8] !== tmp11.requestCount) {
-        const tmp43 = str > 0 && React4(tmp(14471).ButtonBadge, { badgePosition: "right" });
-        cResult[8] = tmp11.requestCount;
-        cResult[9] = tmp43;
-        tmp42 = tmp43;
-      } else {
-        tmp42 = cResult[9];
-      }
-      if (cResult[10] === tmp10.buttonContainer) {
-        if (cResult[11] === tmp29) {
-          let tmp45;
-          if (cResult[12] === tmp42) {
-            tmp45 = cResult[13];
-          }
-          return tmp45;
-        }
-      }
-      const obj2 = { style: tmp10.buttonContainer, collapsable: false, children: items };
-      items = [tmp29, tmp42];
-      const tmp48 = authStore(View, obj2);
-      cResult[10] = tmp10.buttonContainer;
-      cResult[11] = tmp29;
-      cResult[12] = tmp42;
-      cResult[13] = tmp48;
-      tmp45 = tmp48;
-    }
-    if (null != tmp27) {
-      const obj3 = { icon: React4(IconComponent, {}), variant: "secondary", text: tmp27, size: "sm", accessibilityLabel: intl3.string(intl4.t.e7GWjQ) };
-      const Button = tmp(5281).Button;
-      intl3 = tmp(1125).intl;
-      const merged = Object.assign(tmp4);
-      tmp36 = React4(Button, obj3);
-    } else {
-      const obj4 = { variant: "secondary", size: "sm", icon: React4(IconComponent, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const IconButton = tmp(8014).IconButton;
-      intl2 = tmp(1125).intl;
-      const merged1 = Object.assign(tmp4);
-      tmp36 = React4(IconButton, obj4);
-    }
-    cResult[5] = tmp4;
-    cResult[6] = tmp27;
-    cResult[7] = tmp36;
-    tmp29 = tmp36;
-  } else {
-    let tmp13;
-    let tmp15;
-    const _Symbol = Symbol;
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl4.t.e7GWjQ);
-      cResult[14] = stringResult;
-      tmp13 = stringResult;
-    } else {
-      tmp13 = cResult[14];
-    }
-    if (cResult[15] !== tmp11.requestCount) {
-      let str3;
-      if (tmp11.requestCount > 0) {
-        str3 = str.toString();
-      }
-      cResult[15] = tmp11.requestCount;
-      cResult[16] = str3;
-      tmp15 = str3;
-    } else {
-      tmp15 = cResult[16];
-    }
-    if (cResult[17] === tmp4) {
-      if (cResult[18] === tmp15) {
-        let tmp18;
-        if (cResult[19] === tmp11.requestCount > 0) {
-          tmp18 = cResult[20];
-        }
-        return tmp18;
-      }
-    }
-    const obj5 = { source: AssetRegistryDefault, IconComponent, accessibilityLabel: tmp13, buttonText: tmp15, badge: tmp11.requestCount > 0, badgePosition: "right" };
-    const tmp21 = IconActionButtonDefault;
-    const merged2 = Object.assign(tmp4);
-    const tmp26 = React4(tmp21, obj5);
-    cResult[17] = tmp4;
-    cResult[18] = tmp15;
-    cResult[19] = tmp11.requestCount > 0;
-    cResult[20] = tmp26;
-    tmp18 = tmp26;
-  }
-}) : (function MessageRequestsButton(alternateVariant) {
+  }, items2);
+  return metroImportDefault(_mod18031.MessageRequestLottie, { ref, color, size: "sm", autoPlay: true });
+}
+const View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let closure_9 = createStyles.createStyles({ buttonContainer: { position: "relative" } });
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MessageRequestsButton.tsx");
+
+export default function MessageRequestsButton(alternateVariant) {
   let intl;
   let intl2;
   let intl3;
-  let items;
+  let items2;
+  let messageRequestsCount;
+  let spamChannelsCount;
   let str2;
   let flag = alternateVariant.alternateVariant;
   if (flag === undefined) {
     flag = false;
   }
   const merged = Object.assign(alternateVariant, Object.assign({ alternateVariant: 0 }));
-  const tmp2 = closure_11();
-  const tmp3 = closure_12();
-  if (0 === tmp3.requestCount) {
-    if (0 === tmp3.spamCount) {
+  const items = [MessageRequestStore];
+  const tmp2 = closure_9();
+  const obj = get_initialized;
+  const str = obj.useStateFromStores(items, f113258);
+  const items1 = [SpamMessageRequestStore];
+  const obj2 = get_initialized;
+  if (0 === str) {
+    if (0 === obj2.useStateFromStores(items1, f113259)) {
       return null;
     }
   }
   if (flag) {
-    let tmp24;
-    let tmp26;
-    let tmp27;
+    let tmp21;
+    let tmp16;
     let str1;
-    if (tmp3.requestCount > 0) {
+    if (str > 0) {
       str1 = str.toString();
     }
-    const obj2 = { style: tmp2.buttonContainer, collapsable: false, children: items };
-    const tmp15 = authStore;
-    const tmp16 = View;
+    const obj3 = { style: tmp2.buttonContainer, collapsable: false, children: items2 };
+    const tmp14 = metroImportAll;
+    const tmp15 = View;
     if (null != str1) {
-      const obj3 = { icon: React4(IconComponent, {}), variant: "secondary", text: str1, size: "sm", accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
-      const Button = components_Button_Button.Button;
-      intl2 = intl4.intl;
+      const obj4 = { icon: metroImportDefault(MessageRequestAnimation, {}), variant: "secondary", text: str1, size: "sm", accessibilityLabel: intl3.string(intl4.t.e7GWjQ) };
+      const Button = tmp3(5629).Button;
+      intl3 = tmp3(1114).intl;
       const merged1 = Object.assign(merged);
-      tmp24 = React4(Button, obj3);
-      tmp26 = require;
-      tmp27 = React4;
+      tmp21 = metroImportDefault(Button, obj4);
+      tmp16 = metroImportDefault;
     } else {
-      tmp27 = React4;
-      tmp26 = require;
-      const obj4 = { variant: "secondary", size: "sm", icon: React4(IconComponent, {}), accessibilityLabel: intl3.string(intl4.t.e7GWjQ) };
-      const IconButton = IconButton2.IconButton;
-      intl3 = intl4.intl;
+      tmp16 = metroImportDefault;
+      const obj5 = { variant: "secondary", size: "sm", icon: metroImportDefault(MessageRequestAnimation, {}), accessibilityLabel: intl2.string(intl4.t.e7GWjQ) };
+      const IconButton = tmp3(8020).IconButton;
+      intl2 = tmp3(1114).intl;
       const merged2 = Object.assign(merged);
-      tmp24 = React4(IconButton, obj4);
+      tmp21 = metroImportDefault(IconButton, obj5);
     }
-    items = [tmp24, tmp3.requestCount > 0 && tmp27(tmp26(14471).ButtonBadge, { badgePosition: "right" })];
-    tmp3.requestCount > 0 && tmp27(tmp26(14471).ButtonBadge, { badgePosition: "right" });
-    return tmp15(tmp16, obj2);
+    items2 = [tmp21, str > 0 && tmp16(IconActionButton.ButtonBadge, { badgePosition: "right" })];
+    str > 0 && tmp16(IconActionButton.ButtonBadge, { badgePosition: "right" });
+    return tmp14(tmp15, obj3);
   } else {
-    const obj = { source: AssetRegistryDefault, IconComponent, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: tmp3.requestCount > 0, badgePosition: "right" };
+    const obj6 = { source: AssetRegistryDefault, IconComponent: MessageRequestAnimation, accessibilityLabel: intl.string(intl4.t.e7GWjQ), buttonText: str2, badge: str > 0, badgePosition: "right" };
     const tmp7 = IconActionButtonDefault;
-    intl = intl4.intl;
+    intl = tmp3(1114).intl;
     str2 = undefined;
-    const tmp4 = React4;
-    if (tmp3.requestCount > 0) {
+    const tmp5 = metroImportDefault;
+    if (str > 0) {
       str2 = str.toString();
     }
     const merged3 = Object.assign(merged);
-    return tmp4(tmp7, obj);
+    return tmp5(tmp7, obj6);
   }
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MessageRequestsButton.tsx");
-
-export default tmp3;
+};

@@ -1,41 +1,24 @@
-// Module ID: 19434
-// Function ID: 19435
+// Module ID: 19497
+// Function ID: 19498
 // Name: SafetyFlowsExperiment
-// Dependencies: [1454, 558, 576, 2]
-// Exports: isEligibleForSafetyFlowsExperiment
+// Dependencies: [1449, 2]
+// Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 19434 (SafetyFlowsExperiment)
-import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19497 (SafetyFlowsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };
-let tmp2 = apex_ApexExperimentDefault(obj);
-let closure_2 = tmp2;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsEligibleForSafetyFlowsExperiment(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsEligibleForSafetyFlowsExperiment(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj).enabled;
-});
+const tmp2 = apex_ApexExperimentDefault(obj);
+let closure_0 = tmp2;
 const result = size.fileFinishedImporting("modules/safety_flows/SafetyFlowsExperiment.tsx");
 
 export default tmp2;
 export function isEligibleForSafetyFlowsExperiment(location) {
   const obj = { location: location.location };
-  return closure_2.getConfig(obj).enabled;
+  return closure_0.getConfig(obj).enabled;
 }
-export const useIsEligibleForSafetyFlowsExperiment = tmp3;
+export function useIsEligibleForSafetyFlowsExperiment(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj).enabled;
+}

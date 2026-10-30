@@ -1,21 +1,19 @@
-// Module ID: 19069
-// Function ID: 19070
+// Module ID: 19176
+// Function ID: 19177
 // Name: useSpeakerTooltips
-// Dependencies: [32, 19, 19067, 10972, 4854, 21, 19070, 19034, 11666, 10973, 5086, 7555, 19014, 1125, 4841, 19072, 558, 576, 9906, 2]
+// Dependencies: [32, 19, 19174, 11202, 4855, 21, 19177, 19114, 11822, 11203, 5090, 7563, 19148, 1114, 4842, 19179, 9933, 2]
 // Exports: default
 
-// Module 19069 (useSpeakerTooltips)
+// Module 19176 (useSpeakerTooltips)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
-import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19072 */;
+import intl3 from "intl" /* 1114 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
+import VoicePanelConsoleFacepile from "VoicePanelConsoleFacepile" /* 19179 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19067 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19174 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,8 +22,7 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const dismissible_content = tmp(4841);
-const useCoachmark = tmp(9906);
+const dismissible_content = tmp(4842);
 let _slicedToArray = _slicedToArray_mod;
 ({ setVoiceUpsellDismissed: hasOwnProperty, useConsoleVoiceUpsellStore: metroRequire } = ConsoleVoiceUpsellStore);
 let VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
@@ -33,74 +30,9 @@ const ContentDismissActionType = DismissibleContentConstants.ContentDismissActio
 const jsx = Fragment.jsx;
 let __initData = { code: "function useSpeakerTooltipsTsx1(){const{controlsSpecs}=this.__closure;return controlsSpecs.get().mode;}" };
 const __initData2 = { code: "function useSpeakerTooltipsTsx2(currentControlsMode,previous){const{runOnJS,setIsShowingControls,VoicePanelControlsModes}=this.__closure;if(currentControlsMode===previous)return;runOnJS(setIsShowingControls)(currentControlsMode===VoicePanelControlsModes.FLOATING_DEFAULT);}" };
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoachmarkHelper(arg0, arg1, arg2) {
-  let tmp4;
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  let tmp = require;
-  let obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] !== arg1) {
-    const fn = function l() {
-      const obj = visible;
-      if (visible.visible) {
-        obj.onDismiss();
-      }
-    };
-    cResult[0] = arg1;
-    cResult[1] = fn;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let closure_2 = tmp4;
-  if (cResult[2] === arg2) {
-    let tmp5;
-    let tmp6;
-    if (cResult[3] === tmp4) {
-      tmp5 = cResult[4];
-      tmp6 = cResult[5];
-    }
-    const effect = react.useEffect(tmp5, tmp6);
-    const tmpResult = useCoachmark;
-    const coachmark = tmpResult.useCoachmark(arg0, arg1);
-  }
-  const fn2 = function u() {
-    const tmp = closure_1;
-    if (!tmp) {
-      closure_2();
-    }
-  };
-  const items = [arg2, tmp4];
-  cResult[2] = arg2;
-  cResult[3] = tmp4;
-  cResult[4] = fn2;
-  cResult[5] = items;
-  tmp6 = items;
-  tmp5 = fn2;
-}) : (function useCoachmarkHelper(arg0, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
-  const items = [arg1];
-  const callback = react.useCallback(() => {
-    const obj = visible;
-    if (visible.visible) {
-      obj.onDismiss();
-    }
-  }, items);
-  const items1 = [arg2, callback];
-  const effect = react.useEffect(() => {
-    const tmp = closure_1;
-    if (!tmp) {
-      callback();
-    }
-  }, items1);
-  let obj = useCoachmark;
-  const coachmark = obj.useCoachmark(arg0, arg1);
-});
 const result = size.fileFinishedImporting("modules/voice_panel/native/hooks/useSpeakerTooltips.tsx");
 
-export default function useSpeakerTooltips(arg0, arg1) {
+export default function useSpeakerTooltips(targetRef, arg1) {
   let closure_1;
   let closure_10;
   let closure_3;
@@ -108,6 +40,18 @@ export default function useSpeakerTooltips(arg0, arg1) {
   let controlsSpecs;
   let first1;
   let voiceUpsellDismissed;
+  const f116756 = () => {
+    const obj = memo2;
+    if (memo2.visible) {
+      obj.onDismiss();
+    }
+  };
+  const f116757 = () => {
+    const tmp = first;
+    if (!tmp) {
+      callback1();
+    }
+  };
   let tmp = arg1;
   let first = arg1;
   let tmp3 = voiceUpsellDismissed;
@@ -123,29 +67,26 @@ export default function useSpeakerTooltips(arg0, arg1) {
   controlsSpecs = controlsSpecs.useContext(require("VoicePanelStateContext")).controlsSpecs;
   const tmp9 = _slicedToArray(controlsSpecs.useState(true), 2);
   let closure_5 = tmp11;
-  const tmp6 = first;
   first = tmp9[0];
-  const fn = function f() {
+  const fn = function v() {
     return controlsSpecs.get().mode;
   };
   fn.__closure = { controlsSpecs };
   fn.__workletHash = 13952338295275;
   fn.__initData = __initData;
-  const obj3 = first(voiceUpsellDismissed[10]);
-  const tmp8 = _slicedToArray;
-  class S {
-    constructor(arg0, arg1) {
-      if (arg0 !== arg1) {
-        const obj = ReanimatedRexport;
-        obj.runOnJS(closure_5)(arg0 === VoicePanelControlsModes.FLOATING_DEFAULT);
-      }
+  const fn2 = function b(arg0, arg1) {
+    if (arg0 !== arg1) {
+      const obj = ReanimatedRexport;
+      obj.runOnJS(closure_5)(arg0 === VoicePanelControlsModes.FLOATING_DEFAULT);
     }
-  }
-  S.__closure = { runOnJS: first(voiceUpsellDismissed[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes };
-  S.__workletHash = 5084069556209;
-  S.__initData = __initData2;
+  };
+  const obj3 = first(voiceUpsellDismissed[10]);
+  fn2.__closure = { runOnJS: first(voiceUpsellDismissed[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes };
+  fn2.__workletHash = 5084069556209;
+  fn2.__initData = __initData2;
   ({ runOnJS: first(voiceUpsellDismissed[10]).runOnJS, setIsShowingControls: tmp9[1], VoicePanelControlsModes });
-  const animatedReaction = obj3.useAnimatedReaction(fn, S);
+  const animatedReaction = obj3.useAnimatedReaction(fn, fn2);
+  const tmp8 = _slicedToArray;
   if (arg1) {
     tmp = isVoicePanelFullscreen;
   }
@@ -155,7 +96,7 @@ export default function useSpeakerTooltips(arg0, arg1) {
   first = tmp;
   const items = [tmp, tmp5];
   const memo = obj2.useMemo(() => first ? closure_3 : [], items);
-  const tmp6Result = tmp6(tmp3[11]);
+  const tmp6Result = first(tmp3[11]);
   const tmp8Result = tmp8(tmp6Result.useSelectedDismissibleContent(memo), 2);
   first1 = tmp8Result[0];
   VoicePanelControlsModes = tmp16;
@@ -237,6 +178,18 @@ export default function useSpeakerTooltips(arg0, arg1) {
       closure_8.unlock();
     }
   }, items3);
-  closure_12(arg0, memo1, tmp);
-  closure_12(arg0, memo2, tmp);
+  first = tmp;
+  const items4 = [memo1];
+  const callback = obj2.useCallback(f116756, items4);
+  const items5 = [tmp, callback];
+  const effect1 = obj2.useEffect(f116757, items5);
+  const tmp6Result3 = first(tmp3[16]);
+  const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
+  first = tmp;
+  const items6 = [memo2];
+  const callback1 = obj2.useCallback(f116756, items6);
+  const items7 = [tmp, callback1];
+  const effect2 = obj2.useEffect(f116757, items7);
+  const tmp6Result4 = first(tmp3[16]);
+  const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

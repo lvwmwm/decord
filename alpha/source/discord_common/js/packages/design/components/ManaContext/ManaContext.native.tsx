@@ -1,43 +1,22 @@
-// Module ID: 5130
-// Function ID: 5131
+// Module ID: 5136
+// Function ID: 5137
 // Name: ManaContext
-// Dependencies: [19, 21, 558, 576, 2]
+// Dependencies: [19, 21, 2]
+// Exports: ManaContextProvider, useManaContext
 
-// Module 5130 (ManaContext)
+// Module 5136 (ManaContext)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let obj = {};
+const obj = {};
 const context = react.createContext(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (() => react.useContext(context)) : (() => react.useContext(context));
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaContextProvider(arg0) {
-  let children;
-  let value;
-  obj = react2;
-  const cResult = obj.c(3);
-  ({ children, value } = arg0);
-  if (value == null) {
-    value = obj;
-  }
-  if (cResult[0] === children) {
-    let tmp2;
-    if (cResult[1] === value) {
-      tmp2 = cResult[2];
-    }
-    return tmp2;
-  }
-  const tmp3 = <context.Provider value={value}>{children}</context.Provider>;
-  cResult[0] = children;
-  cResult[1] = value;
-  cResult[2] = tmp3;
-  tmp2 = tmp3;
-}) : (function ManaContextProvider(value) {
+const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ManaContext/ManaContext.native.tsx");
+
+export const ManaContext = context;
+export const useManaContext = () => react.useContext(context);
+export function ManaContextProvider(value) {
   value = value.value;
   const children = value.children;
   const Provider = context.Provider;
@@ -46,9 +25,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ManaContex
     value = obj;
   }
   return tmp(Provider, { value, children });
-});
-const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/ManaContext/ManaContext.native.tsx");
-
-export const ManaContext = context;
-export const useManaContext = tmp3;
-export const ManaContextProvider = tmp4;
+}

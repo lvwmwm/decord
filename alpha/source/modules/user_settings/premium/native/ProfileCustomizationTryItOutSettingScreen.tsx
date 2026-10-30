@@ -1,23 +1,23 @@
-// Module ID: 17697
-// Function ID: 17698
+// Module ID: 17768
+// Function ID: 17769
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1389, 1084, 1391, 21, 5005, 587, 558, 576, 7313, 7338, 504, 10559, 8688, 8716, 7720, 17205, 17206, 8696, 1406, 1264, 16335, 2]
+// Dependencies: [19, 17, 1384, 1072, 1386, 21, 5009, 575, 7320, 7345, 504, 10585, 8722, 8750, 7725, 17259, 17260, 8730, 1401, 1253, 16388, 2]
+// Exports: default
 
-// Module 17697 (ProfileCustomizationTryItOutSettingScreen)
+// Module 17768 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1406 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8696 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8716 */;
+import nativeDefault from "native" /* 575 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1401 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8730 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8750 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -36,106 +36,9 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_11 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCustomizationTryItOutSettingScreen() {
-  let analyticsLocations;
-  let categories;
-  let currentUser;
-  let sourceAnalyticsLocations;
-  let stateFromStores;
-  let tmp13;
-  let tmp15;
-  let tmp16;
-  let tmp8;
-  let tmp9;
-  const tmp = sourceAnalyticsLocations;
-  let obj = sourceAnalyticsLocations(categories[9]);
-  const cResult = obj.c(30);
-  closure_11();
-  const tmp6 = stateFromStores(categories[10]);
-  ({ analyticsLocations, sourceAnalyticsLocations } = tmp6(stateFromStores(categories[11]).USER_SETTINGS_TRY_OUT_PREMIUM));
-  tmp6(stateFromStores(categories[11]).USER_SETTINGS_TRY_OUT_PREMIUM);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function o() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp8 = items;
-    tmp9 = fn;
-  } else {
-    [tmp8, tmp9] = cResult;
-  }
-  const tmpResult = tmp(categories[12]);
-  stateFromStores = tmpResult.useStateFromStores(tmp8, tmp9);
-  categories = tmp5(tmp2[13])().categories;
-  stateFromStores(categories[13])();
-  if (cResult[2] !== analyticsLocations) {
-    let obj2 = { isTryItOut: true, analyticsLocations };
-    cResult[2] = analyticsLocations;
-    cResult[3] = obj2;
-    tmp13 = obj2;
-  } else {
-    tmp13 = cResult[3];
-  }
-  const tmp14 = stateFromStores(categories[14])(tmp13);
-  const pendingAvatarDecoration = tmp14.pendingAvatarDecoration;
-  const setPendingAvatarDecoration = tmp14.setPendingAvatarDecoration;
-  if (cResult[4] !== stateFromStores) {
-    class L {
-      constructor() {
-        if (null != stateFromStores) {
-          const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
-        }
-      }
-    }
-    const items1 = [stateFromStores];
-    cResult[4] = stateFromStores;
-    cResult[5] = L;
-    cResult[6] = items1;
-    tmp16 = items1;
-    tmp15 = L;
-  } else {
-    class L {
-      constructor() {
-        if (null != stateFromStores) {
-          const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
-        }
-      }
-    }
-    tmp16 = cResult[6];
-  }
-  const effect = pendingAvatarDecoration.useEffect(tmp15, tmp16);
-  if (cResult[7] === categories) {
-    class L {
-      constructor() {
-        if (null != stateFromStores) {
-          const tmp3 = maybeFetchUserProfileDefault;
-          tmp3(stateFromStores.id, stateFromStores.getAvatarURL(undefined, 80), {});
-        }
-      }
-    }
-  }
-  class M {
-    constructor() {
-      if (undefined === pendingAvatarDecoration) {
-        const obj = CollectiblesUtils;
-        const avatarDecorationsFromCategories = obj.getAvatarDecorationsFromCategories(categories);
-        const _Math = Math;
-        const _Math2 = Math;
-        setPendingAvatarDecoration(avatarDecorationsFromCategories[Math.floor(Math, Math.random(Math) * avatarDecorationsFromCategories.length)]);
-      }
-    }
-  }
-  const items2 = [pendingAvatarDecoration, setPendingAvatarDecoration, categories];
-  cResult[7] = categories;
-  cResult[8] = pendingAvatarDecoration;
-  cResult[9] = setPendingAvatarDecoration;
-  cResult[10] = M;
-  cResult[11] = items2;
-}) : (function ProfileCustomizationTryItOutSettingScreen() {
+let result = size.fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
+
+export default function ProfileCustomizationTryItOutSettingScreen() {
   let analyticsLocations;
   let categories;
   let sourceAnalyticsLocations;
@@ -143,16 +46,16 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
   let visibleEffectOrder;
   const tmp = closure_11();
   let tmp3 = categories;
-  const tmp4 = stateFromStores(categories[10]);
-  ({ analyticsLocations, sourceAnalyticsLocations } = tmp4(stateFromStores(categories[11]).USER_SETTINGS_TRY_OUT_PREMIUM));
-  tmp4(stateFromStores(categories[11]).USER_SETTINGS_TRY_OUT_PREMIUM);
-  let obj = sourceAnalyticsLocations(categories[12]);
+  const tmp4 = stateFromStores(categories[8]);
+  ({ analyticsLocations, sourceAnalyticsLocations } = tmp4(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM));
+  tmp4(stateFromStores(categories[9]).USER_SETTINGS_TRY_OUT_PREMIUM);
+  let obj = sourceAnalyticsLocations(categories[10]);
   const items = [visibleEffectOrder];
   stateFromStores = obj.useStateFromStores(items, () => visibleEffectOrder.getCurrentUser());
-  const tmp8 = stateFromStores(categories[13])();
+  const tmp8 = stateFromStores(categories[11])();
   categories = tmp8.categories;
   const isFetching = tmp8.isFetching;
-  const tmp9 = stateFromStores(categories[14])({ isTryItOut: true, analyticsLocations });
+  const tmp9 = stateFromStores(categories[12])({ isTryItOut: true, analyticsLocations });
   const pendingAvatarDecoration = tmp9.pendingAvatarDecoration;
   const setPendingAvatarDecoration = tmp9.setPendingAvatarDecoration;
   const items1 = [stateFromStores];
@@ -172,9 +75,9 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
       setPendingAvatarDecoration(avatarDecorationsFromCategories[Math.floor(Math, Math.random(Math) * avatarDecorationsFromCategories.length)]);
     }
   }, items2);
-  let obj2 = sourceAnalyticsLocations(categories[17]);
+  let obj2 = sourceAnalyticsLocations(categories[15]);
   const visibleFontOrder = obj2.useVisibleFontOrder();
-  let obj3 = sourceAnalyticsLocations(categories[18]);
+  let obj3 = sourceAnalyticsLocations(categories[16]);
   visibleEffectOrder = obj3.useVisibleEffectOrder();
   const items3 = [visibleFontOrder, visibleEffectOrder];
   const effect2 = pendingAvatarDecoration.useEffect(() => {
@@ -198,13 +101,10 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileCusto
     if (isFetching) {
       tmp19 = <setPendingAvatarDecoration style={tmp.activityIndicator}><visibleFontOrder animating size="large" /></setPendingAvatarDecoration>;
     } else {
-      const AnalyticsLocationProvider = tmp6(tmp3[10]).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp6(tmp3[8]).AnalyticsLocationProvider;
       tmp19 = <AnalyticsLocationProvider value={analyticsLocations}>{null}</AnalyticsLocationProvider>;
     }
     tmp16 = tmp19;
   }
   return tmp16;
-});
-let result = size.fileFinishedImporting("modules/user_settings/premium/native/ProfileCustomizationTryItOutSettingScreen.tsx");
-
-export default tmp6;
+};

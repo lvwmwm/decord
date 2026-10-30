@@ -1,9 +1,9 @@
-// Module ID: 6790
-// Function ID: 6791
+// Module ID: 6797
+// Function ID: 6798
 // Name: LazyPromiseInitializer
 // Dependencies: [2]
 
-// Module 6790 (LazyPromiseInitializer)
+// Module 6797 (LazyPromiseInitializer)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");

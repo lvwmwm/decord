@@ -1,17 +1,16 @@
-// Module ID: 8694
-// Function ID: 8695
+// Module ID: 8728
+// Function ID: 8729
 // Name: GuildTagUtils
-// Dependencies: [4917, 4879, 1389, 8328, 1084, 558, 576, 504, 4943, 2]
-// Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag
+// Dependencies: [4921, 4880, 1384, 8385, 1072, 504, 4947, 2]
+// Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8694 (GuildTagUtils)
-import Constants from "Constants" /* 1084 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4943 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import GuildTagConstants from "GuildTagConstants" /* 8328 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8728 (GuildTagUtils)
+import Constants from "Constants" /* 1072 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4947 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import GuildTagConstants from "GuildTagConstants" /* 8385 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,82 +21,55 @@ let hasOwnProperty;
 let metroRequire;
 ({ GuildTagBadgeMediaProxySizes, GuildTagBadgeMediaProxySizesMobile: hasOwnProperty, GuildTagBadgeSize: metroRequire } = GuildTagConstants);
 const GuildFeatures = Constants.GuildFeatures;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPrimaryGuild(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function n() {
-      return GuildStore.getGuild(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (null == arg0) {
-    return arg0;
-  } else if (null == stateFromStores) {
-    return stateFromStores;
-  } else {
-    const profile2 = stateFromStores.profile;
-    let tag;
-    if (profile2 != null) {
-      tag = profile2.tag;
-    }
-    const profile = stateFromStores.profile;
-    let badge;
+let result = size.fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
+
+export function guildHasTag(guild) {
+  let tag;
+  if (guild != null) {
+    const profile = guild.profile;
     if (profile != null) {
-      badge = profile.badge;
+      tag = profile.tag;
     }
-    if (cResult[4] === stateFromStores.id) {
-      if (cResult[5] === tag) {
-        let tmp11;
-        if (cResult[6] === badge) {
-          tmp11 = cResult[7];
-        }
-        return tmp11;
-      }
-    }
-    const obj2 = { identityGuildId: stateFromStores.id, identityEnabled: true, tag, badge };
-    cResult[4] = stateFromStores.id;
-    cResult[5] = tag;
-    cResult[6] = badge;
-    cResult[7] = obj2;
-    tmp11 = obj2;
   }
-}) : (function useUserPrimaryGuild(arg0) {
+  return null != tag;
+}
+export function guildSupportsTags(guild) {
+  const features = guild.features;
+  return features.has(GuildFeatures.GUILD_TAGS);
+}
+export function getGuildTagBadgeUrl(guildId, badge, SIZE_12) {
+  metroRequire = SIZE_12;
+  if (SIZE_12 === undefined) {
+    metroRequire = metroRequire.SIZE_12;
+  }
+  if (null != badge) {
+    const _window = window;
+    if (null != CDN_HOST) {
+      const _HermesInternal = HermesInternal;
+      return "https://" + CDN_HOST + "/clan-badges/" + guildId + "/" + badge + ".png?size=" + hasOwnProperty[metroRequire];
+    }
+  }
+}
+export function getUserPrimaryGuild(primaryGuild) {
+  if (null != primaryGuild) {
+    if (primaryGuild.identityEnabled) {
+      const obj = { guildId: null, tag: null, badge: null };
+      ({ identityGuildId: obj.guildId, tag: obj.tag, badge: obj.badge } = primaryGuild);
+    }
+    return {};
+  }
+}
+export function useUserPrimaryGuild(pendingPrimaryGuildId) {
   let badge;
-  let closure_0;
   let profile;
   let tag;
-  let tmp = arg0;
-  _require = arg0;
+  let tmp = pendingPrimaryGuildId;
+  _require = pendingPrimaryGuildId;
   const items = [GuildStore];
-  const items1 = [arg0];
+  const items1 = [pendingPrimaryGuildId];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(closure_0), items1);
-  if (null != arg0) {
+  const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(pendingPrimaryGuildId), items1);
+  if (null != pendingPrimaryGuildId) {
     let tmp3 = stateFromStores;
     if (null != stateFromStores) {
       const obj3 = { identityGuildId: null, identityEnabled: true, tag, badge };
@@ -116,132 +88,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPrima
     tmp = tmp3;
   }
   return tmp;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-function getUserPrimaryGuild(primaryGuild) {
-  if (null != primaryGuild) {
-    if (primaryGuild.identityEnabled) {
-      const obj = { guildId: null, tag: null, badge: null };
-      ({ identityGuildId: obj.guildId, tag: obj.tag, badge: obj.badge } = primaryGuild);
-    }
-    return {};
-  }
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldDisplayGuildTag(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let first;
-  let items3;
-  let obj2;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  _require = arg0;
-  dependencyMap = arg1;
-  const tmp = _require;
-  const tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(9);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class G {
-      constructor() {
-        return closure_4.getUser(closure_0);
-      }
-    }
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = G;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = G;
-  } else {
-    class G {
-      constructor() {
-        return closure_4.getUser(closure_0);
-      }
-    }
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class G {
-      constructor() {
-        return closure_4.getUser(closure_0);
-      }
-    }
-    const items2 = [GuildMemberStore];
-    cResult[4] = items2;
-    tmp9 = items2;
-  } else {
-    class G {
-      constructor() {
-        return closure_4.getUser(closure_0);
-      }
-    }
-  }
-  if (cResult[5] === arg1) {
-    class G {
-      constructor() {
-        return closure_4.getUser(closure_0);
-      }
-    }
-    let tmp10 = arg2;
-    const tmpResult2 = tmp(504);
-    const stateFromStores1 = tmpResult2.useStateFromStores(tmp9, S, items3);
-    if (undefined === arg2) {
-      class G {
-        constructor() {
-          return closure_4.getUser(closure_0);
-        }
-      }
-      if (stateFromStores != null) {
-        class G {
-          constructor() {
-            return closure_4.getUser(closure_0);
-          }
-        }
-      }
-      tmp10 = tmp12;
-    }
-    if (null != tmp10) {
-      class G {
-        constructor() {
-          return closure_4.getUser(closure_0);
-        }
-      }
-      return null != obj2.guildId && null != obj2.tag && !stateFromStores1;
-    }
-    obj2 = {};
-  }
-  class S {
-    constructor() {
-      if (null != closure_1) {
-        if (null != closure_0) {
-          tmp3 = closure_2;
-          tmp5 = closure_0;
-          tmp6 = closure_1;
-          member = closure_2.getMember(tmp, tmp2);
-          obj = closure_0(closure_1[8]);
-          return obj.hasAutomodQuarantinedProfile(member);
-        }
-      }
-      return null;
-    }
-  }
-  items3 = [arg1, arg0];
-  cResult[5] = arg1;
-  cResult[6] = arg0;
-  cResult[7] = S;
-  cResult[8] = items3;
-}) : (function useShouldDisplayGuildTag(arg0, arg1, arg2) {
+export function useShouldDisplayGuildTag(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -281,39 +129,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldD
     return null != obj6.guildId && null != obj6.tag && !stateFromStores1;
   }
   obj6 = {};
-});
-let result = size.fileFinishedImporting("modules/guild_tag/GuildTagUtils.tsx");
-
-export function guildHasTag(guild) {
-  let tag;
-  if (guild != null) {
-    const profile = guild.profile;
-    if (profile != null) {
-      tag = profile.tag;
-    }
-  }
-  return null != tag;
 }
-export function guildSupportsTags(guild) {
-  const features = guild.features;
-  return features.has(GuildFeatures.GUILD_TAGS);
-}
-export function getGuildTagBadgeUrl(guildId, badge, SIZE_12) {
-  metroRequire = SIZE_12;
-  if (SIZE_12 === undefined) {
-    metroRequire = metroRequire.SIZE_12;
-  }
-  if (null != badge) {
-    const _window = window;
-    if (null != CDN_HOST) {
-      const _HermesInternal = HermesInternal;
-      return "https://" + CDN_HOST + "/clan-badges/" + guildId + "/" + badge + ".png?size=" + hasOwnProperty[metroRequire];
-    }
-  }
-}
-export { getUserPrimaryGuild };
-export const useUserPrimaryGuild = tmp3;
-export const useShouldDisplayGuildTag = tmp4;
 export function shouldDisplayGuildTag(id2, guildId1, arg2) {
   let tmp = arg2;
   const user = UserStore.getUser(id2);

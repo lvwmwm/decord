@@ -1,15 +1,15 @@
-// Module ID: 5260
-// Function ID: 5261
+// Module ID: 5266
+// Function ID: 5267
 // Name: getDeviceSpecificString
-// Dependencies: [1125, 1628, 2]
+// Dependencies: [1114, 1623, 2]
 // Exports: getDeviceSpecificString
 
-// Module 5260 (getDeviceSpecificString)
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
+// Module 5266 (getDeviceSpecificString)
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl2 = tmp(1125);
+const intl2 = tmp(1114);
 const result = size.fileFinishedImporting("modules/intl/overrides/getDeviceSpecificString.tsx");
 
 export function getDeviceSpecificString(arg0, _2Yp7dF) {

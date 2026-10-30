@@ -1,18 +1,17 @@
-// Module ID: 12014
-// Function ID: 12015
+// Module ID: 12200
+// Function ID: 12201
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12015, 5707, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 12201, 5712, 2]
+// Exports: default
 
-// Module 12014 (ApplicationsImage)
+// Module 12200 (ApplicationsImage)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12015 */;
+import nativeDefault from "native" /* 575 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12201 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,133 +35,10 @@ obj4 = { left: nativeDefault.space.PX_32, transform: items1 };
 items1 = [{ rotate: "15deg" }];
 size = { borderRadius: nativeDefault.radii.sm, width: 36, height: 36 };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ApplicationsImage(arg0) {
-  let firstApplication;
-  let items;
-  let secondApplication;
-  let tmp5;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(25);
-  ({ firstApplication, secondApplication } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] !== firstApplication) {
-    let appLauncherIconSource = null;
-    if (null != firstApplication) {
-      const tmpResult = AppLauncherNativeUtils;
-      appLauncherIconSource = tmpResult.getAppLauncherIconSource(firstApplication);
-    }
-    cResult[0] = firstApplication;
-    cResult[1] = appLauncherIconSource;
-    tmp5 = appLauncherIconSource;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== secondApplication) {
-    let appLauncherIconSource1 = null;
-    if (null != secondApplication) {
-      const tmpResult2 = AppLauncherNativeUtils;
-      appLauncherIconSource1 = tmpResult2.getAppLauncherIconSource(secondApplication);
-    }
-    cResult[2] = secondApplication;
-    cResult[3] = appLauncherIconSource1;
-    tmp7 = appLauncherIconSource1;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] === tmp5) {
-    let tmp9;
-    if (cResult[5] === tmp4.appIcon) {
-      tmp9 = cResult[6];
-    }
-    if (cResult[7] === tmp7) {
-      let tmp13;
-      if (cResult[8] === tmp4.appIcon) {
-        tmp13 = cResult[9];
-      }
-      if (cResult[10] === tmp4.appIconContainer) {
-        let tmp18;
-        if (cResult[11] === tmp4.appIconLeftContainer) {
-          tmp18 = cResult[12];
-        }
-        if (cResult[13] === tmp13) {
-          let tmp19;
-          if (cResult[14] === tmp18) {
-            tmp19 = cResult[15];
-          }
-          if (cResult[16] === tmp4.appIconContainer) {
-            let tmp23;
-            if (cResult[17] === tmp4.appIconRightContainer) {
-              tmp23 = cResult[18];
-            }
-            if (cResult[19] === tmp9) {
-              let tmp24;
-              if (cResult[20] === tmp23) {
-                tmp24 = cResult[21];
-              }
-              if (cResult[22] === tmp19) {
-                let tmp28;
-                if (cResult[23] === tmp24) {
-                  tmp28 = cResult[24];
-                }
-                return tmp28;
-              }
-              const obj2 = { children: items };
-              items = [tmp19, tmp24];
-              const tmp31 = metroRequire(hasOwnProperty, obj2);
-              cResult[22] = tmp19;
-              cResult[23] = tmp24;
-              cResult[24] = tmp31;
-              tmp28 = tmp31;
-            }
-            const obj3 = { style: tmp23, children: tmp9 };
-            const tmp27 = React3(View, obj3);
-            cResult[19] = tmp9;
-            cResult[20] = tmp23;
-            cResult[21] = tmp27;
-            tmp24 = tmp27;
-          }
-          const items1 = [, ];
-          ({ appIconContainer: arr2[0], appIconRightContainer: arr2[1] } = tmp4);
-          cResult[16] = tmp4.appIconContainer;
-          cResult[17] = tmp4.appIconRightContainer;
-          cResult[18] = items1;
-          tmp23 = items1;
-        }
-        const obj4 = { style: tmp18, children: tmp13 };
-        const tmp22 = React3(View, obj4);
-        cResult[13] = tmp13;
-        cResult[14] = tmp18;
-        cResult[15] = tmp22;
-        tmp19 = tmp22;
-      }
-      const items2 = [, ];
-      ({ appIconContainer: arr[0], appIconLeftContainer: arr[1] } = tmp4);
-      cResult[10] = tmp4.appIconContainer;
-      cResult[11] = tmp4.appIconLeftContainer;
-      cResult[12] = items2;
-      tmp18 = items2;
-    }
-    let tmp15 = null != tmp7;
-    if (tmp15) {
-      const obj5 = { style: tmp4.appIcon, source: tmp7 };
-      tmp15 = React3(FastImageDefault, obj5);
-    }
-    cResult[7] = tmp7;
-    cResult[8] = tmp4.appIcon;
-    cResult[9] = tmp15;
-    tmp13 = tmp15;
-  }
-  let tmp10 = null != tmp5;
-  if (tmp10) {
-    const obj6 = { style: tmp4.appIcon, source: tmp5 };
-    tmp10 = React3(FastImageDefault, obj6);
-  }
-  cResult[4] = tmp5;
-  cResult[5] = tmp4.appIcon;
-  cResult[6] = tmp10;
-  tmp9 = tmp10;
-}) : (function ApplicationsImage(arg0) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ApplicationsImage.tsx");
+
+export default function ApplicationsImage(arg0) {
   let firstApplication;
   let items;
   let items1;
@@ -200,9 +76,5 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Applications
   ({ appIconContainer: arr3[0], appIconRightContainer: arr3[1] } = tmp);
   items1[1] = React3(View, obj7);
   return metroRequire(hasOwnProperty, obj5);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ApplicationsImage.tsx");
-
-export default tmp5;
+};
 export const APP_ICON_SIZE = 36;

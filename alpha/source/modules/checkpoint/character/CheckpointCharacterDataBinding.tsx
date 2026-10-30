@@ -1,13 +1,13 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13576
+// Function ID: 13577
 // Name: CheckpointCharacterDataBinding
-// Dependencies: [6423, 6099, 13427, 13260, 2]
+// Dependencies: [6430, 6106, 13577, 13410, 2]
 // Exports: getCheckpointCharacterDataBinding
 
-// Module 13426 (CheckpointCharacterDataBinding)
-import CheckpointNavigation from "CheckpointNavigation" /* 6423 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13260 */;
-import CheckpointCharacterRiveTraits from "CheckpointCharacterRiveTraits" /* 13427 */;
+// Module 13576 (CheckpointCharacterDataBinding)
+import CheckpointNavigation from "CheckpointNavigation" /* 6430 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13410 */;
+import CheckpointCharacterRiveTraits from "CheckpointCharacterRiveTraits" /* 13577 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -41,10 +41,10 @@ export function getCheckpointCharacterDataBinding(traits) {
   dependencyMap = undefined;
   const tmp2 = dependencyMap;
   traits = traits.traits;
-  obj = textureScale(6099);
+  obj = textureScale(6106);
   const characterFromTraits = obj.getCharacterFromTraits(traits);
   ({ base, shoes, outfit, face, hat, wearable, aura } = characterFromTraits);
-  const tmp4 = textureScale(13427).CHECKPOINT_OUTFIT_OPTION_TO_RIVE_OUTFIT[outfit];
+  const tmp4 = textureScale(13577).CHECKPOINT_OUTFIT_OPTION_TO_RIVE_OUTFIT[outfit];
   dependencyMap = tmp4;
   obj2 = {};
   const item = obj2.forEach((item) => {
@@ -63,7 +63,7 @@ export function getCheckpointCharacterDataBinding(traits) {
     obj = CheckpointCharacterTextureUtils;
     obj2[combined] = obj.getCheckpointCharacterTextureUrl(CHECKPOINT_CHARACTER_BLANK_TEXTURE.name, textureScale);
   });
-  const obj3 = { device: layout, mobileLift: num, chapterID: closure_3[stage], faceID: face, shoesID: shoes, headwearID: textureScale(13427).CHECKPOINT_HAT_OPTION_TO_HEADWEAR_RIVE_ID[hat], wearableID: textureScale(13427).CHECKPOINT_WEARABLE_OPTION_TO_WEARABLE_RIVE_ID[wearable], outfitID: num5, auraImage: tmpResult.getCheckpointCharacterTextureUrl(textureScale(13427).CHECKPOINT_AURA_OPTION_TO_AURA_RIVE_TEXTURE[aura].name, textureScale), baseColorImage: tmpResult2.getCheckpointCharacterTextureUrl(textureScale(13427).CHECKPOINT_BASE_OPTION_TO_BASE_RIVE_TEXTURE[base].name, textureScale) };
+  const obj3 = { device: layout, mobileLift: num, chapterID: closure_3[stage], faceID: face, shoesID: shoes, headwearID: textureScale(13577).CHECKPOINT_HAT_OPTION_TO_HEADWEAR_RIVE_ID[hat], wearableID: textureScale(13577).CHECKPOINT_WEARABLE_OPTION_TO_WEARABLE_RIVE_ID[wearable], outfitID: num5, auraImage: tmpResult.getCheckpointCharacterTextureUrl(textureScale(13577).CHECKPOINT_AURA_OPTION_TO_AURA_RIVE_TEXTURE[aura].name, textureScale), baseColorImage: tmpResult2.getCheckpointCharacterTextureUrl(textureScale(13577).CHECKPOINT_BASE_OPTION_TO_BASE_RIVE_TEXTURE[base].name, textureScale) };
   num = 0;
   if ("MobilePortrait" === layout) {
     let num2 = 30;
@@ -80,11 +80,11 @@ export function getCheckpointCharacterDataBinding(traits) {
   if (num5 == null) {
     num5 = 0;
   }
-  tmpResult = textureScale(13260);
-  tmpResult2 = textureScale(13260);
+  tmpResult = textureScale(13410);
+  tmpResult2 = textureScale(13410);
   if ("MobilePortrait" === layout) {
     let tmp8;
-    if (stage === textureScale(6423).CheckpointCharacterStage.INTRODUCTION) {
+    if (stage === textureScale(6430).CheckpointCharacterStage.INTRODUCTION) {
       tmp8 = obj2;
     }
     const merged = Object.assign(tmp8);

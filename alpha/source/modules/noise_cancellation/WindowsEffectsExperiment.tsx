@@ -1,13 +1,12 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11920
+// Function ID: 11921
 // Name: WindowsEffectsExperiment
-// Dependencies: [1258, 1453, 558, 576, 504, 2]
-// Exports: getWindowsAudioEffectsExperimentConfig
+// Dependencies: [1247, 1448, 504, 2]
+// Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 11727 (WindowsEffectsExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11920 (WindowsEffectsExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj3;
@@ -19,39 +18,13 @@ const obj4 = { preferSystemEffects: true };
 const merged = Object.assign(obj);
 obj3[1] = obj4;
 const config = createApexExperiment(obj2);
-function getWindowsAudioEffectsExperimentConfig(location) {
+const result = size.fileFinishedImporting("modules/noise_cancellation/WindowsEffectsExperiment.tsx");
+
+export function getWindowsAudioEffectsExperimentConfig(location) {
   const obj = { location: location.location };
   return config.getConfig(obj);
 }
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindowsAudioEffectsExperimentConfig(location) {
-  let _location;
-  let first;
-  let tmp6;
-  let obj = _location(576);
-  const cResult = obj.c(3);
-  const tmp = _location;
-  _location = location.location;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApexExperimentStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== _location) {
-    const fn = function f() {
-      const obj = { location: _location };
-      return config.getConfig(obj);
-    };
-    cResult[1] = _location;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useWindowsAudioEffectsExperimentConfig(location) {
+export function useWindowsAudioEffectsExperimentConfig(location) {
   location = location.location;
   let obj = location(504);
   const items = [ApexExperimentStore];
@@ -59,8 +32,4 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useWindows
     const obj = { location };
     return config.getConfig(obj);
   });
-});
-const result = size.fileFinishedImporting("modules/noise_cancellation/WindowsEffectsExperiment.tsx");
-
-export { getWindowsAudioEffectsExperimentConfig };
-export const useWindowsAudioEffectsExperimentConfig = tmp4;
+}

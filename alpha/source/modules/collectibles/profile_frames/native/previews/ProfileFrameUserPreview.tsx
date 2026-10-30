@@ -1,89 +1,20 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11471
+// Function ID: 11472
 // Name: ProfileFrameUserPreview
-// Dependencies: [109, 19, 21, 558, 576, 1125, 11149, 2]
+// Dependencies: [19, 21, 11356, 1114, 2]
+// Exports: default
 
-// Module 11266 (ProfileFrameUserPreview)
+// Module 11471 (ProfileFrameUserPreview)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11149 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import intl3 from "intl" /* 1114 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11356 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = ["profileFrame", "avatarDecorationOverride", "profileEffectOverride"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFrameUserPreview(arg0) {
-  let avatarDecorationOverride;
-  let profileEffectOverride;
-  let profileFrame;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(13);
-  if (cResult[0] !== arg0) {
-    ({ profileFrame, avatarDecorationOverride, profileEffectOverride } = arg0);
-    const tmp10 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = avatarDecorationOverride;
-    cResult[2] = profileEffectOverride;
-    cResult[3] = profileFrame;
-    cResult[4] = tmp10;
-    tmp7 = tmp10;
-    tmp6 = profileFrame;
-    tmp5 = profileEffectOverride;
-    tmp4 = avatarDecorationOverride;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-  }
-  if (cResult[5] !== tmp6) {
-    let formatToPlainStringResult;
-    if (null != tmp6) {
-      const intl2 = tmp(1125).intl;
-      const obj2 = { a11y_text: tmp6.label };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1125).t["DT/PwH"], obj2);
-    } else {
-      const intl = tmp(1125).intl;
-      formatToPlainStringResult = intl.string(tmp(1125).t.vQx51z);
-    }
-    cResult[5] = tmp6;
-    cResult[6] = formatToPlainStringResult;
-    tmp11 = formatToPlainStringResult;
-  } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[7] === tmp4) {
-    if (cResult[8] === tmp5) {
-      if (cResult[9] === tmp6) {
-        if (cResult[10] === tmp7) {
-          let tmp14;
-          if (cResult[11] === tmp11) {
-            tmp14 = cResult[12];
-          }
-          return tmp14;
-        }
-      }
-    }
-  }
-  UserProfilePreviewDefault;
-  const merged = Object.assign(tmp7);
-  const tmp17 = <tmp15 profileFrameOverride={tmp6} avatarDecorationOverride={tmp4} profileEffectOverride={tmp5} accessibilityLabel={tmp11} />;
-  cResult[7] = tmp4;
-  cResult[8] = tmp5;
-  cResult[9] = tmp6;
-  cResult[10] = tmp7;
-  cResult[11] = tmp11;
-  cResult[12] = tmp17;
-  tmp14 = tmp17;
-}) : (function ProfileFrameUserPreview(profileFrame) {
+const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");
+
+export default function ProfileFrameUserPreview(profileFrame) {
   let avatarDecorationOverride;
   let formatToPlainStringResult;
   let profileEffectOverride;
@@ -103,7 +34,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProfileFra
   }
   const merged1 = Object.assign(merged);
   return tmp2(tmp4, obj);
-});
-const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/previews/ProfileFrameUserPreview.tsx");
-
-export default tmp3;
+};

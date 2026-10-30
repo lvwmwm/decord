@@ -1,43 +1,19 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17490
+// Function ID: 17491
 // Name: ShareLogsButton
-// Dependencies: [19, 21, 558, 576, 6968, 1125, 8888, 7, 14692, 2]
+// Dependencies: [19, 21, 6974, 1114, 8922, 7, 14725, 2]
 
-// Module 17436 (ShareLogsButton)
+// Module 17490 (ShareLogsButton)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 8888 */;
+import intl2 from "intl" /* 1114 */;
+import Pressables from "Pressables" /* 6974 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 8922 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const intl2 = tmp(1125);
-const Pressables = tmp(6968);
 const jsx = Fragment.jsx;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ShareLogsButton() {
-  let first;
-  let obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const PressableOpacity = Pressables.PressableOpacity;
-    const intl = intl2.intl;
-    const tmp6 = <PressableOpacity accessibilityLabel={intl.string(intl2.t["Aw+09z"])} onPress={function onPress() {
-      let obj2;
-      const obj = { message: obj2.stringify() };
-      const showShareActionSheet = showShareActionSheet2.showShareActionSheet;
-      showShareActionSheet2;
-      obj2 = LogAggregator;
-      return showShareActionSheet(obj, "Debug Logs");
-    }}>{null}</PressableOpacity>;
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function ShareLogsButton() {
+const memoResult = react.memo(function ShareLogsButton() {
   const PressableOpacity = Pressables.PressableOpacity;
   const intl = intl2.intl;
   return <PressableOpacity accessibilityLabel={intl.string(intl2.t["Aw+09z"])} onPress={function onPress() {
@@ -48,7 +24,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     obj2 = LogAggregator;
     return showShareActionSheet(obj, "Debug Logs");
   }}>{null}</PressableOpacity>;
-}));
+});
 const result = size.fileFinishedImporting("modules/debug/native/ShareLogsButton.tsx");
 
 export default memoResult;

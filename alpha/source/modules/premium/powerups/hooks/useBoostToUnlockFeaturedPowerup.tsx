@@ -1,21 +1,21 @@
-// Module ID: 13896
-// Function ID: 13897
+// Module ID: 14030
+// Function ID: 14031
 // Name: useBoostToUnlockFeaturedPowerup
-// Dependencies: [32, 19, 4879, 5218, 5219, 1084, 5222, 558, 576, 504, 8426, 2]
+// Dependencies: [32, 19, 4880, 5224, 5225, 1072, 5228, 504, 8460, 2]
+// Exports: default
 
-// Module 13896 (useBoostToUnlockFeaturedPowerup)
-import Constants from "Constants" /* 1084 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5219 */;
-import Powerups from "Powerups" /* 5222 */;
+// Module 14030 (useBoostToUnlockFeaturedPowerup)
+import Constants from "Constants" /* 1072 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5225 */;
+import Powerups from "Powerups" /* 5228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5218 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5224 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, tmp3;
+let _require;
 
 let closure_7 = GuildPowerupsConstants.GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS;
 const GuildFeatures = Constants.GuildFeatures;
@@ -33,145 +33,9 @@ items[5] = { skuId: Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshol
 ({ skuId: Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID, threshold: 1 });
 items[6] = { skuId: Powerups.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 };
 ({ skuId: Powerups.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, threshold: 1 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostToUnlockFeaturedPowerup(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  let unlockedPowerups;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(12);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [GuildPowerupsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    class E {
-      constructor() {
-        return closure_6.getStateForGuild(closure_0);
-      }
-    }
-    cResult[1] = arg0;
-    cResult[2] = E;
-    tmp6 = E;
-  } else {
-    class E {
-      constructor() {
-        return closure_6.getStateForGuild(closure_0);
-      }
-    }
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  const available = unlockedPowerups(8426)(arg0).available;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class E {
-      constructor() {
-        return closure_6.getStateForGuild(closure_0);
-      }
-    }
-    const items1 = [GuildStore];
-    cResult[3] = items1;
-    tmp8 = items1;
-  } else {
-    class E {
-      constructor() {
-        return closure_6.getStateForGuild(closure_0);
-      }
-    }
-  }
-  if (cResult[4] !== arg0) {
-    class U {
-      constructor() {
-        guild = closure_5.getGuild(closure_0);
-        hasItem = undefined;
-        if (guild != null) {
-          features = guild.features;
-          tmp3 = GuildFeatures;
-          hasItem = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
-        }
-        return true === hasItem;
-      }
-    }
-    cResult[4] = arg0;
-    cResult[5] = U;
-    tmp9 = U;
-  } else {
-    class U {
-      constructor() {
-        guild = closure_5.getGuild(closure_0);
-        hasItem = undefined;
-        if (guild != null) {
-          features = guild.features;
-          tmp3 = GuildFeatures;
-          hasItem = features.has(GuildFeatures.PREMIUM_TIER_3_OVERRIDE);
-        }
-        return true === hasItem;
-      }
-    }
-  }
-  const tmpResult2 = require("get initialized");
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        return Math.random();
-      }
-    }
-    cResult[6] = R;
-  } else {
-    class R {
-      constructor() {
-        return Math.random();
-      }
-    }
-  }
-  if (null != stateFromStores) {
-    class R {
-      constructor() {
-        return Math.random();
-      }
-    }
-    unlockedPowerups = stateFromStores.unlockedPowerups;
-    if (cResult[7] === tmp12) {
-      class R {
-        constructor() {
-          return Math.random();
-        }
-      }
-    }
-    const items2 = [];
-    const iter = items[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      class R {
-        constructor() {
-          return Math.random();
-        }
-      }
-      let threshold = nextResult.threshold;
-      let tmp21 = tmp12[tmp19];
-      if (null != tmp21) {
-        class R {
-          constructor() {
-            return Math.random();
-          }
-        }
-      }
-      continue;
-    }
-    cResult[7] = tmp12;
-    cResult[8] = available;
-    cResult[9] = stateFromStores1;
-    cResult[10] = unlockedPowerups;
-    cResult[11] = items2;
-  }
-}) : (function useBoostToUnlockFeaturedPowerup(arg0) {
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useBoostToUnlockFeaturedPowerup.tsx");
+
+export default function useBoostToUnlockFeaturedPowerup(arg0) {
   let available;
   let closure_0;
   let first;
@@ -179,7 +43,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostTo
   items = [GuildPowerupsStore];
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
-  available = stateFromStores(available[10])(arg0).available;
+  available = stateFromStores(available[8])(arg0).available;
   const items1 = [GuildStore];
   const obj2 = require("get initialized");
   const stateFromStores1 = obj2.useStateFromStores(items1, () => {
@@ -232,7 +96,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBoostTo
       }
     }
   }, items2);
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useBoostToUnlockFeaturedPowerup.tsx");
-
-export default tmp2;
+};

@@ -1,72 +1,29 @@
-// Module ID: 15106
-// Function ID: 15107
+// Module ID: 15146
+// Function ID: 15147
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 558, 576, 1125, 15107, 15108, 15099, 1894, 6693, 2]
+// Dependencies: [19, 21, 15147, 1114, 15148, 15139, 1889, 6700, 2]
+// Exports: default
 
-// Module 15106 (NUFVoiceChannelsTemplate)
+// Module 15146 (NUFVoiceChannelsTemplate)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1894 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 15099 */;
-import NUFTemplateDefault from "NUFTemplate" /* 15107 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15108 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1889 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6700 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 15139 */;
+import NUFTemplateDefault from "NUFTemplate" /* 15147 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15148 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFVoiceChannelsTemplate(channel) {
-  let tmp10;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let obj = channel(576);
-  const cResult = obj.c(5);
-  channel = channel.channel;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(channel(1125).t.w5HAll);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(channel(1125).t.Ww4hhq);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp4 = stringResult;
-    tmp5 = stringResult1;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl3 = tmp(1125).intl;
-    const stringResult2 = intl3.string(channel(1125).t.eIi3Om);
-    cResult[2] = stringResult2;
-    tmp8 = stringResult2;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== channel.id) {
-    NUFTemplateDefault;
-    const tmp14 = <tmp13 title={tmp4} description={tmp5} imageSrc={AssetRegistryDefault} CTALabel={tmp8} onCTAPress={function onCTAPress() {
-      const obj = NUFChannelsManagerDefault;
-      const result = obj.handleVoiceChannelsOnboard();
-      const obj2 = KeyboardManagerUtilsAll;
-      const result1 = obj2.dismissGlobalKeyboard();
-      const obj3 = SelectedChannelActionCreatorsDefault;
-      const voiceChannel = obj3.selectVoiceChannel(channel.id);
-    }} />;
-    cResult[3] = channel.id;
-    cResult[4] = tmp14;
-    tmp10 = tmp14;
-  } else {
-    tmp10 = cResult[4];
-  }
-  return tmp10;
-}) : (function NUFVoiceChannelsTemplate(channel) {
+let result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFVoiceChannelsTemplate.tsx");
+
+export default function NUFVoiceChannelsTemplate(channel) {
   channel = channel.channel;
   NUFTemplateDefault;
-  const intl = channel(1125).intl;
-  const intl2 = channel(1125).intl;
-  const intl3 = channel(1125).intl;
-  return <tmp title={intl.string(channel(1125).t.w5HAll)} description={intl2.string(channel(1125).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1125).t.eIi3Om)} onCTAPress={function onCTAPress() {
+  const intl = channel(1114).intl;
+  const intl2 = channel(1114).intl;
+  const intl3 = channel(1114).intl;
+  return <tmp title={intl.string(channel(1114).t.w5HAll)} description={intl2.string(channel(1114).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1114).t.eIi3Om)} onCTAPress={function onCTAPress() {
     const obj = NUFChannelsManagerDefault;
     const result = obj.handleVoiceChannelsOnboard();
     const obj2 = KeyboardManagerUtilsAll;
@@ -74,7 +31,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFVoiceCh
     const obj3 = SelectedChannelActionCreatorsDefault;
     const voiceChannel = obj3.selectVoiceChannel(channel.id);
   }} />;
-});
-let result = size.fileFinishedImporting("modules/nuf_channels/native/components/NUFVoiceChannelsTemplate.tsx");
-
-export default tmp3;
+};

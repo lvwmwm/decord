@@ -1,32 +1,17 @@
 // Module ID: 1655
 // Function ID: 1656
 // Name: react-native
-// Dependencies: [17]
-// Exports: controlEdgeToEdgeValues, isEdgeToEdge
+// Dependencies: [1656, 1657]
 
 // Module 1655 (react-native)
-import react_native from "react-native" /* 17 */;
+import react_native from "react-native" /* 1656 */;
+import LogLevel from "LogLevel" /* 1657 */;
 
-
-export const controlEdgeToEdgeValues = (arg0) => {
-
-};
-export const isEdgeToEdge = () => {
-  const TurboModuleRegistry = react_native.TurboModuleRegistry;
-  let tmp2 = null != TurboModuleRegistry.get("RNEdgeToEdge");
-  const tmp = react_native;
-  if (!tmp2) {
-    const TurboModuleRegistry2 = tmp.TurboModuleRegistry;
-    const value = TurboModuleRegistry2.get("DeviceInfo");
-    let getConstants;
-    if (null != value) {
-      getConstants = value.getConstants;
-    }
-    let isEdgeToEdge;
-    if (null != getConstants) {
-      isEdgeToEdge = getConstants.call(value).isEdgeToEdge;
-    }
-    tmp2 = true === isEdgeToEdge;
-  }
-  return tmp2;
-};
+for (const key10013 in react_native) {
+  exports[key10013] = react_native[key10013];
+  continue;
+}
+for (const key10017 in LogLevel) {
+  exports[key10017] = LogLevel[key10017];
+  continue;
+}

@@ -1,24 +1,23 @@
-// Module ID: 5035
-// Function ID: 5036
+// Module ID: 5039
+// Function ID: 5040
 // Name: DismissibleContentUnsafeUtils
-// Dependencies: [5, 1243, 5036, 1101, 5057, 4848, 4842, 11, 4840, 558, 576, 504, 4838, 2]
-// Exports: UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed
+// Dependencies: [5, 1232, 5040, 1090, 5061, 4849, 4843, 11, 4841, 504, 4839, 2]
+// Exports: UNSAFE_isSnowflakeBoundDismissibleContentDismissed, UNSAFE_markDismissibleContentAsDismissed, UNSAFE_markSingleUseGuildDismissibleContentAsDismissed, UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed, UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed, useIsDismissibleContentDismissed_UNSAFE
 
-// Module 5035 (DismissibleContentUnsafeUtils)
+// Module 5039 (DismissibleContentUnsafeUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4840 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4842 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4848 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5057 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4841 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4843 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4849 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5061 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c4, c5, closure_5;
+let _require, c4, closure_5;
 
 class UNSAFE_isDismissibleContentDismissed {
   constructor(GDM_INVITE_REMINDER, arg1) {
@@ -115,81 +114,46 @@ class UNSAFE_isDismissibleContentDismissed {
 }
 let obj = function _UNSAFE_markDismissibleContentAsDismissed() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_2;
+    let closure_3;
     let obj4;
+    let obj6;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    if (1 === c4) {
       if (arg0 === 1) {
+        let c5 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        let obj6;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            obj6 = closure_1;
-            if (closure_1 === undefined) {
-              obj6 = {};
-            }
-            c4 = 1;
-            c5 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else {
-          if (1 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            } else if (!closure_131_6(closure_0, { bypassNewUserCheck: true })) {
-              const obj3 = closure_131_0(closure_131_2[6]);
-              const result = obj3.markDismissibleContentAsDismissedPreProcessing(closure_0, obj6);
-              c4 = 2;
-              c5 = 1;
-              const obj8 = { value: obj4.addDismissedContent(closure_0), done: false };
-              obj4 = closure_131_0(closure_131_2[12]);
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            obj = closure_131_0(closure_131_2[6]);
-            const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
-          }
-          c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp23) {
         c5 = 3;
-        throw tmp23;
+        const obj7 = { value, done: true };
+        return obj7;
+      } else if (!closure_131_6(closure_0, { bypassNewUserCheck: true })) {
+        const obj3 = closure_131_0(closure_131_2[6]);
+        const result = obj3.markDismissibleContentAsDismissedPreProcessing(closure_0, obj6);
+        c4 = 2;
+        c5 = 1;
+        const obj8 = { value: obj4.addDismissedContent(closure_0), done: false };
+        obj4 = closure_131_0(closure_131_2[10]);
+        return obj8;
       }
+    } else if (arg0 === 1) {
+      c5 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c5 = 3;
+      const obj9 = { value, done: true };
+      return obj9;
+    } else {
+      obj = closure_131_0(closure_131_2[6]);
+      const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
     }
+    await "HermesInternal";
+    obj6 = closure_1;
+    if (closure_1 === undefined) {
+      obj6 = {};
+    }
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -209,7 +173,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -232,7 +196,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
             }
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -262,7 +226,7 @@ obj = function _UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, obj6);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         c6 = 3;
@@ -288,7 +252,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -326,7 +290,7 @@ obj = function _UNSAFE_markTimeRecurringGuildDismissibleContentAsDismissed() {
           obj = closure_132_0(closure_132_2[6]);
           const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, closure_1);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c6 = 3;
@@ -353,7 +317,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -392,7 +356,7 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
             obj = closure_133_0(closure_133_2[6]);
             const result1 = obj.markDismissibleContentAsDismissedPostProcessing(closure_0, snowflakeId);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c7 = 3;
@@ -403,91 +367,42 @@ obj = function _UNSAFE_markSnowflakeBoundGuildDismissibleContentAsDismissed() {
   });
   return obj(...arguments);
 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsDismissibleContentDismissed_UNSAFE(arg0, arg1) {
-  let closure_0;
-  let tmp4;
-  let tmp5;
-  _require = arg0;
-  obj = require("react");
-  const cResult = obj.c(6);
-  const tmp = _require;
-  if (cResult[0] !== arg1) {
-    let obj2 = arg1;
-    if (undefined === arg1) {
-      obj2 = {};
-    }
-    cResult[0] = arg1;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  let closure_1 = tmp4;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserSettingsProtoStore, SelectedGuildStore];
-    cResult[2] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === arg0) {
-    let tmp8;
-    if (cResult[4] === tmp4) {
-      tmp8 = cResult[5];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(tmp5, tmp8);
-  }
-  class A {
-    constructor() {
-      return UNSAFE_isDismissibleContentDismissed(closure_0, closure_1);
-    }
-  }
-  cResult[3] = arg0;
-  cResult[4] = tmp4;
-  cResult[5] = A;
-  tmp8 = A;
-}) : (function useIsDismissibleContentDismissed_UNSAFE(arg0) {
-  let closure_0;
-  _require = arg0;
+let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentUnsafeUtils.tsx");
+
+export { UNSAFE_isDismissibleContentDismissed };
+export function useIsDismissibleContentDismissed_UNSAFE(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, arg1) {
+  _require = APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER;
   obj = arg1;
   if (arg1 === undefined) {
     obj = {};
   }
   const items = [UserSettingsProtoStore, SelectedGuildStore];
   const obj2 = require("get initialized");
-  return obj2.useStateFromStores(items, () => UNSAFE_isDismissibleContentDismissed(closure_0, obj));
-});
-class UNSAFE_isSnowflakeBoundDismissibleContentDismissed {
-  constructor(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE, promotionId) {
-    obj = NewUserDismissibleContentRegistry;
-    if (obj.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE)) {
-      return { isDismissed: true, lastDismissedSnowflakeId: null };
-    } else {
-      const userContent = UserSettingsProtoStore.settings.userContent;
-      let prop;
-      if (userContent != null) {
-        if (userContent.recurringDismissibleContentStates[PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE] != null) {
-          prop = tmp5.lastDismissedObjectId;
-        }
-      }
-      let tmp6 = null != prop;
-      if (tmp6) {
-        const obj2 = SnowflakeUtilsDefault;
-        tmp6 = 1 !== obj2.compare(promotionId, prop);
-      }
-      return { isDismissed: tmp6, lastDismissedSnowflakeId: prop };
-    }
-  }
+  return obj2.useStateFromStores(items, () => UNSAFE_isDismissibleContentDismissed(APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER, obj));
 }
-let result = size.fileFinishedImporting("modules/dismissible_content/DismissibleContentUnsafeUtils.tsx");
-
-export { UNSAFE_isDismissibleContentDismissed };
-export const useIsDismissibleContentDismissed_UNSAFE = tmp2;
 export function UNSAFE_markDismissibleContentAsDismissed() {
   return obj(...arguments);
 }
-export { UNSAFE_isSnowflakeBoundDismissibleContentDismissed };
+export function UNSAFE_isSnowflakeBoundDismissibleContentDismissed(GIFTING_PROMOTION_REMINDER, id) {
+  obj = NewUserDismissibleContentRegistry;
+  if (obj.disableNewUserDismissibleContent(GIFTING_PROMOTION_REMINDER)) {
+    return { isDismissed: true, lastDismissedSnowflakeId: null };
+  } else {
+    const userContent = UserSettingsProtoStore.settings.userContent;
+    let prop;
+    if (userContent != null) {
+      if (userContent.recurringDismissibleContentStates[GIFTING_PROMOTION_REMINDER] != null) {
+        prop = tmp5.lastDismissedObjectId;
+      }
+    }
+    let tmp6 = null != prop;
+    if (tmp6) {
+      const obj2 = SnowflakeUtilsDefault;
+      tmp6 = 1 !== obj2.compare(id, prop);
+    }
+    return { isDismissed: tmp6, lastDismissedSnowflakeId: prop };
+  }
+}
 export function UNSAFE_markSingleUseGuildDismissibleContentAsDismissed() {
   return obj(...arguments);
 }

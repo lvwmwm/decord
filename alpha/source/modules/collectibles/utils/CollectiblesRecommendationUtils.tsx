@@ -1,19 +1,19 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 15030
+// Function ID: 15031
 // Name: CollectiblesRecommendationUtils
 // Dependencies: [2]
 // Exports: reorderCollectiblesByRecommendation
 
-// Module 14986 (CollectiblesRecommendationUtils)
+// Module 15030 (CollectiblesRecommendationUtils)
 import size from "module_2" /* 2 */;
 
 let map;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesRecommendationUtils.tsx");
 
-export function reorderCollectiblesByRecommendation(items, arr) {
+export function reorderCollectiblesByRecommendation(items, arg1) {
   if (items.length > 1) {
-    if (0 !== arr.length) {
+    if (0 !== arg1.length) {
       const _Map = Map;
       const self = this;
       const self2 = this;
@@ -22,13 +22,13 @@ export function reorderCollectiblesByRecommendation(items, arr) {
         return items;
       }));
       items = [];
-      const iter = arr[Symbol.iterator]();
+      const iter = arg1[Symbol.iterator]();
       const nextResult = iter.next();
       while (iter !== undefined) {
         let tmp4 = nextResult;
         let value = map.get(nextResult);
         if (null != value) {
-          arr = items.push(tmp6);
+          let arr = items.push(tmp6);
           let deleteResult = map.delete(tmp4);
         }
         continue;

@@ -1,96 +1,29 @@
-// Module ID: 17967
-// Function ID: 17968
+// Module ID: 18028
+// Function ID: 18029
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1084, 558, 576, 5290, 1631, 17968, 17971, 17982, 587, 2]
+// Dependencies: [109, 19, 1072, 5637, 1626, 18029, 18032, 18043, 575, 2]
+// Exports: default
 
-// Module 17967 (useMessagesSpecs)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import useFontScale from "useFontScale" /* 5290 */;
-import MessagesHeader from "MessagesHeader" /* 17968 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 17971 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17982 */;
+// Module 18028 (useMessagesSpecs)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import MessagesHeader from "MessagesHeader" /* 18029 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18032 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18043 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp5;
-const nativeDefault = tmp5(587);
 let closure_3 = ["height"];
-let closure_4 = ["height"];
 const DM_WIDTH = Constants.DM_WIDTH;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessagesSpecs() {
-  let tmp10;
-  let tmp15;
-  let tmp7;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(13);
-  const obj2 = useFontScale;
-  const fontScale = obj2.useFontScale();
-  const top = useSafeAreaInsetsDefault().top;
-  const obj3 = MessagesHeader;
-  const messagesHeaderHeight = obj3.getMessagesHeaderHeight(fontScale);
-  if (cResult[0] !== fontScale) {
-    const tmpResult = MessagesItemChannel;
-    const messagesItemChannelSizes = tmpResult.getMessagesItemChannelSizes(fontScale);
-    cResult[0] = fontScale;
-    cResult[1] = messagesItemChannelSizes;
-    tmp7 = messagesItemChannelSizes;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== tmp7) {
-    const height = tmp7.height;
-    const tmp13 = _objectWithoutProperties(tmp7, closure_3);
-    cResult[2] = tmp7;
-    cResult[3] = height;
-    cResult[4] = tmp13;
-    tmp10 = tmp13;
-    tmp9 = height;
-  } else {
-    tmp9 = cResult[3];
-    tmp10 = cResult[4];
-  }
-  const sum = top + messagesHeaderHeight;
-  if (cResult[5] !== fontScale) {
-    const tmpResult2 = MessagesItemSuggestedFriend;
-    const messagesItemSuggestedFriendHeight = tmpResult2.getMessagesItemSuggestedFriendHeight(fontScale);
-    cResult[5] = fontScale;
-    cResult[6] = messagesItemSuggestedFriendHeight;
-    tmp15 = messagesItemSuggestedFriendHeight;
-  } else {
-    tmp15 = cResult[6];
-  }
-  if (cResult[7] === messagesHeaderHeight) {
-    if (cResult[8] === tmp9) {
-      if (cResult[9] === tmp10) {
-        if (cResult[10] === sum) {
-          let tmp17;
-          if (cResult[11] === tmp15) {
-            tmp17 = cResult[12];
-          }
-          return tmp17;
-        }
-      }
-    }
-  }
-  const obj4 = { headerSize: messagesHeaderHeight, listTop: sum, listLeft: DM_WIDTH, listItemHeight: tmp9, listItemSizes: tmp10, listItemSuggestedFriendHeight: tmp15, scrollIndicatorInsetEnd: nativeDefault.space.PX_4 };
-  cResult[7] = messagesHeaderHeight;
-  cResult[8] = tmp9;
-  cResult[9] = tmp10;
-  cResult[10] = sum;
-  cResult[11] = tmp15;
-  cResult[12] = obj4;
-  tmp17 = obj4;
-}) : (function useMessagesSpecs() {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
+
+export default function useMessagesSpecs() {
   let fontScale;
   let top;
-  let obj = fontScale(5290);
+  let obj = fontScale(5637);
   fontScale = obj.useFontScale();
-  top = top(1631)().top;
+  top = top(1626)().top;
   const items = [fontScale, top];
   return react.useMemo(() => {
     let obj4;
@@ -98,11 +31,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMessage
     const messagesHeaderHeight = obj.getMessagesHeaderHeight(fontScale);
     const obj2 = MessagesItemChannel;
     const messagesItemChannelSizes = obj2.getMessagesItemChannelSizes(fontScale);
-    const obj3 = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: DM_WIDTH, listItemHeight: messagesItemChannelSizes.height, listItemSizes: _objectWithoutProperties(messagesItemChannelSizes, closure_4), listItemSuggestedFriendHeight: obj4.getMessagesItemSuggestedFriendHeight(fontScale), scrollIndicatorInsetEnd: nativeDefault.space.PX_4 };
+    const obj3 = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: DM_WIDTH, listItemHeight: messagesItemChannelSizes.height, listItemSizes: _objectWithoutProperties(messagesItemChannelSizes, closure_3), listItemSuggestedFriendHeight: obj4.getMessagesItemSuggestedFriendHeight(fontScale), scrollIndicatorInsetEnd: nativeDefault.space.PX_4 };
     obj4 = MessagesItemSuggestedFriend;
     return obj3;
   }, items);
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
-
-export default tmp2;
+};

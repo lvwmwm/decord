@@ -1,102 +1,32 @@
-// Module ID: 13552
-// Function ID: 13553
+// Module ID: 13701
+// Function ID: 13702
 // Name: RefreshChatInputCoachmark
-// Dependencies: [109, 32, 19, 4854, 558, 576, 4841, 7555, 1125, 5164, 9906, 2]
+// Dependencies: [32, 19, 4855, 7563, 4842, 1114, 5170, 9933, 2]
+// Exports: default, useRefreshChatInputCoachmark
 
-// Module 13552 (RefreshChatInputCoachmark)
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5164 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 13701 (RefreshChatInputCoachmark)
+import intl3 from "intl" /* 1114 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5170 */;
+import useCoachmark from "useCoachmark" /* 9933 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-let tmp;
-const useCoachmark = tmp(9906);
-let closure_2 = ["buttonRef"];
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefreshChatInputCoachmark(disabled) {
-  let closure_0;
-  let tmp12;
-  let tmp13;
-  let tmp4;
-  let tmp8;
-  let tmp9;
-  const obj = require("react");
-  const cResult = obj.c(10);
-  disabled = disabled.disabled;
-  if (cResult[0] !== disabled) {
-    let items;
-    if (disabled) {
-      items = [];
-    } else {
-      items = [tmp(4841).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
-    }
-    cResult[0] = disabled;
-    cResult[1] = items;
-    tmp4 = items;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmpResult = require("useSelectedDismissibleContent");
-  const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(tmp4), 2);
-  _require = tmp7;
-  const first = tmp5[0];
-  const MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK = tmp(4841).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(require("intl").t.eqI1WA);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(require("intl").t.nxO3NK);
-    cResult[2] = stringResult;
-    cResult[3] = stringResult1;
-    tmp9 = stringResult1;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] !== tmp5[1]) {
-    const fn = function _() {
-      closure_0(ContentDismissActionType.USER_DISMISS);
-    };
-    cResult[4] = tmp5[1];
-    cResult[5] = fn;
-    tmp12 = fn;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { type: "rive", rive: require("OmnibuttonCoachmarkRive").OmnibuttonCoachmarkRive, aspectRatio: "16/9" };
-    cResult[6] = obj2;
-    tmp13 = obj2;
-  } else {
-    tmp13 = cResult[6];
-  }
-  if (cResult[7] === first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK) {
-    let tmp15;
-    if (cResult[8] === tmp12) {
-      tmp15 = cResult[9];
-    }
-    let tmp16 = null;
-    if (first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK) {
-      tmp16 = tmp15;
-    }
-    return tmp16;
-  }
-  const obj3 = { title: tmp8, description: tmp9, position: "top", offsetY: 4, visible: first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK, onDismiss: tmp12, graphic: tmp13 };
-  cResult[7] = first === MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
-  cResult[8] = tmp12;
-  cResult[9] = obj3;
-  tmp15 = obj3;
-}) : (function useRefreshChatInputCoachmark(disabled) {
+const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
+
+export default function RefreshChatInputCoachmark(buttonRef) {
+  buttonRef = buttonRef.buttonRef;
+  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
+  const obj = useCoachmark;
+  const coachmark = obj.useCoachmark(buttonRef, merged);
+  return null;
+};
+export function useRefreshChatInputCoachmark(disabled) {
   let closure_0;
   let items;
   let visible;
@@ -108,7 +38,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefresh
   if (disabled) {
     items = [];
   } else {
-    items = [tmp(4841).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(4842).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
   const tmp4 = _slicedToArray(useSelectedDismissibleContent(items), 2);
   _require = tmp5;
@@ -138,36 +68,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRefresh
     }, items1);
   }
   return memo;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RefreshChatInputCoachmark(buttonRef) {
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(3);
-  if (cResult[0] !== buttonRef) {
-    buttonRef = buttonRef.buttonRef;
-    const tmp8 = _objectWithoutProperties(buttonRef, closure_2);
-    cResult[0] = buttonRef;
-    cResult[1] = buttonRef;
-    cResult[2] = tmp8;
-    tmp5 = tmp8;
-    tmp4 = buttonRef;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const tmpResult = useCoachmark;
-  const coachmark = tmpResult.useCoachmark(tmp4, tmp5);
-  return null;
-}) : (function RefreshChatInputCoachmark(buttonRef) {
-  buttonRef = buttonRef.buttonRef;
-  const merged = Object.assign(buttonRef, Object.assign({ buttonRef: 0 }));
-  const obj = useCoachmark;
-  const coachmark = obj.useCoachmark(buttonRef, merged);
-  return null;
-});
-const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
-
-export default tmp3;
-export const useRefreshChatInputCoachmark = tmp2;
+}

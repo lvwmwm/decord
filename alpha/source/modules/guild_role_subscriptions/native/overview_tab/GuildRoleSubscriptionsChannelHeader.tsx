@@ -1,20 +1,18 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14521
+// Function ID: 14522
 // Name: GuildRoleSubscriptionsChannelHeader
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1199, 14207, 5271, 1125, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 1188, 14339, 5619, 1114, 2]
 
-// Module 14488 (GuildRoleSubscriptionsChannelHeader)
+// Module 14521 (GuildRoleSubscriptionsChannelHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14207 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,46 +23,7 @@ const View = react_native.View;
 let obj = { header: obj2 };
 obj2 = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 let closure_6 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildRoleSubscriptionsChannelHeader() {
-  let first;
-  let intl;
-  let items;
-  let tmp12;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(4);
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, disableColor: true };
-    const Icon = tmp(1199).Icon;
-    const tmp8 = React3(Icon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { variant: "heading-lg/extrabold", color: "interactive-text-active", children: intl.string(intl2.t["KzCF/6"]) };
-    const Text = tmp(5271).Text;
-    intl = tmp(1125).intl;
-    const tmp11 = React3(Text, obj3);
-    cResult[1] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.header) {
-    const obj4 = { style: tmp4.header, children: items };
-    items = [first, tmp9];
-    const tmp15 = hasOwnProperty(View, obj4);
-    cResult[2] = tmp4.header;
-    cResult[3] = tmp15;
-    tmp12 = tmp15;
-  } else {
-    tmp12 = cResult[3];
-  }
-  return tmp12;
-}) : (function GuildRoleSubscriptionsChannelHeader() {
+const memoResult = react.memo(function GuildRoleSubscriptionsChannelHeader() {
   let intl;
   let items;
   const obj = { style: closure_6().header, children: items };
@@ -76,7 +35,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   intl = intl2.intl;
   items[1] = React3(Text, obj3);
   return hasOwnProperty(View, obj);
-}));
+});
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/overview_tab/GuildRoleSubscriptionsChannelHeader.tsx");
 
 export default memoResult;

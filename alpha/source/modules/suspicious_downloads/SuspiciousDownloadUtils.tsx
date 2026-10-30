@@ -1,29 +1,29 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8703
+// Function ID: 8704
 // Name: SuspiciousDownloadUtils
-// Dependencies: [8670, 1383, 2]
+// Dependencies: [8704, 1378, 2]
 // Exports: isSuspiciousDownload
 
-// Module 8669 (SuspiciousDownloadUtils)
-import URLUtilsDefault from "URLUtils" /* 1383 */;
-import _modDef8670 from "module_8670" /* 8670 */;
+// Module 8703 (SuspiciousDownloadUtils)
+import URLUtilsDefault from "URLUtils" /* 1378 */;
+import _modDef8704 from "module_8704" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 let regExp;
 let regExp1;
 let regExp2;
-const set = new Set(_modDef8670);
+const set = new Set(_modDef8704);
 let obj = { "github.com": regExp, "bitbucket.org": regExp1, "gitlab.com": regExp2 };
 regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 regExp1 = new RegExp("/downloads\\S*/[^/]*");
 regExp2 = new RegExp("/downloads\\S*/[^/]*");
 const result = size.fileFinishedImporting("modules/suspicious_downloads/SuspiciousDownloadUtils.tsx");
 
-export function isSuspiciousDownload(url) {
+export function isSuspiciousDownload(localUri) {
   let hostname;
   let pathname;
   obj = URLUtilsDefault;
-  let toURLSafeResult = obj.toURLSafe(url);
+  let toURLSafeResult = obj.toURLSafe(localUri);
   if (toURLSafeResult == null) {
     toURLSafeResult = {};
   }

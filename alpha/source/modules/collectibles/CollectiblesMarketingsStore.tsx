@@ -1,11 +1,11 @@
-// Module ID: 5673
-// Function ID: 5674
+// Module ID: 5679
+// Function ID: 5680
 // Name: CollectiblesMarketingsStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 5673 (CollectiblesMarketingsStore)
+// Module 5679 (CollectiblesMarketingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;

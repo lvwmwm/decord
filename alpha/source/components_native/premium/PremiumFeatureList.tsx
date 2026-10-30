@@ -1,18 +1,18 @@
-// Module ID: 9888
-// Function ID: 9889
+// Module ID: 9915
+// Function ID: 9916
 // Name: PremiumFeatureList
-// Dependencies: [19, 17, 1084, 21, 5005, 6710, 587, 558, 576, 8988, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 6717, 575, 8169, 2]
+// Exports: default
 
-// Module 9888 (PremiumFeatureList)
+// Module 9915 (PremiumFeatureList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import Form from "Form" /* 8988 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import _mod8169 from "module_8169" /* 8169 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles from "TextStyles" /* 6710 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,130 +30,9 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStyles(Fonts.PRIMARY_NORMAL, nativeDefault.colors.TEXT_DEFAULT, 14));
 obj3 = { marginEnd: nativeDefault.space.PX_16 };
 let closure_6 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatureList(iconStyle) {
-  let features;
-  let separator;
-  let style;
-  let tmp3;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let obj = separator(iconStyle[8]);
-  const cResult = obj.c(21);
-  ({ features, style, separator } = iconStyle);
-  iconStyle = iconStyle.iconStyle;
-  const labelStyle = iconStyle.labelStyle;
-  const rowStyle = iconStyle.rowStyle;
-  const tmp2 = closure_6();
-  let closure_4 = tmp2;
-  if (cResult[0] === features) {
-    if (cResult[1] === iconStyle) {
-      if (cResult[2] === labelStyle) {
-        if (cResult[3] === rowStyle) {
-          if (cResult[4] === separator) {
-            if (cResult[5] === style) {
-              if (cResult[6] === tmp2) {
-                tmp3 = cResult[7];
-                tmp4 = cResult[8];
-                tmp5 = cResult[9];
-              }
-              if (cResult[17] === tmp3) {
-                if (cResult[18] === tmp4) {
-                  let tmp10;
-                  if (cResult[19] === tmp5) {
-                    tmp10 = cResult[20];
-                  }
-                  return tmp10;
-                }
-              }
-              let obj2 = { style: tmp4, children: tmp5 };
-              const tmp12 = closure_4(tmp3, obj2);
-              cResult[17] = tmp3;
-              cResult[18] = tmp4;
-              cResult[19] = tmp5;
-              cResult[20] = tmp12;
-              tmp10 = tmp12;
-            }
-          }
-        }
-      }
-    }
-  }
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function w(hidden) {
-      return !hidden.hidden;
-    };
-    cResult[10] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[10];
-  }
-  const found = features.filter(tmp6);
-  if (cResult[11] === iconStyle) {
-    if (cResult[12] === labelStyle) {
-      if (cResult[13] === rowStyle) {
-        if (cResult[14] === separator) {
-          let tmp8;
-          if (cResult[15] === tmp2) {
-            tmp8 = cResult[16];
-          }
-          const mapped = found.map(tmp8);
-          cResult[0] = features;
-          cResult[1] = iconStyle;
-          cResult[2] = labelStyle;
-          cResult[3] = rowStyle;
-          cResult[4] = separator;
-          cResult[5] = style;
-          cResult[6] = tmp2;
-          cResult[7] = rowStyle;
-          cResult[8] = style;
-          cResult[9] = mapped;
-          tmp5 = mapped;
-          tmp4 = style;
-          tmp3 = tmp7;
-        }
-      }
-    }
-  }
-  const fn2 = function x(color, arg1) {
-    let items;
-    let items1;
-    let items2;
-    let items3;
-    let obj3;
-    const obj = { style: items, children: items2 };
-    items = [closure_4.item, rowStyle];
-    const obj2 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: React3(color.IconComponent, obj3) };
-    obj3 = { size: "md", color: color.color, style: items1 };
-    items1 = [closure_4.iconMargin, iconStyle];
-    const Fragment = react.Fragment;
-    items2 = [React3(View, obj2), ];
-    const obj4 = { numberOfLines: 2, style: items3, text: color.label };
-    items3 = [closure_4.label, labelStyle];
-    items2[1] = React3(Form.FormRow.Label, obj4);
-    const children = [hasOwnProperty(View, obj, arg1), ];
-    let tmp3 = null;
-    const tmp = hasOwnProperty;
-    if (null != separator) {
-      tmp3 = null;
-      if ("" !== separator) {
-        tmp3 = null;
-        if (color.renderSeparatorBelow) {
-          tmp3 = tmp2;
-        }
-      }
-    }
-    children[1] = tmp3;
-    return tmp(Fragment, { children }, arg1);
-  };
-  cResult[11] = iconStyle;
-  cResult[12] = labelStyle;
-  cResult[13] = rowStyle;
-  cResult[14] = separator;
-  cResult[15] = tmp2;
-  cResult[16] = fn2;
-  tmp8 = fn2;
-}) : (function PremiumFeatureList(style) {
+const result = size.fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
+
+export default function PremiumFeatureList(style) {
   let features;
   ({ features, separator: require, iconStyle: dependencyMap, labelStyle: react, rowStyle: View } = style);
   style = style.style;
@@ -176,7 +55,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
       items2 = [React3(View, obj2), ];
       const obj4 = { numberOfLines: 2, style: items3, text: color.label };
       items3 = [closure_4.label, react];
-      items2[1] = React3(Form.FormRow.Label, obj4);
+      items2[1] = React3(_mod8169.FormRow.Label, obj4);
       const children = [hasOwnProperty(View, obj, index), ];
       let tmp3 = null;
       const tmp = hasOwnProperty;
@@ -194,7 +73,4 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumFeatu
     })
   };
   return closure_4(View, obj);
-});
-const result = size.fileFinishedImporting("components_native/premium/PremiumFeatureList.tsx");
-
-export default tmp6;
+};

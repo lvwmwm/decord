@@ -1,93 +1,21 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11963
+// Function ID: 11964
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 2012, 558, 576, 504, 5889, 2]
+// Dependencies: [19, 2007, 504, 5896, 2]
+// Exports: default
 
-// Module 11770 (useMuteAwareLocalVolume)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5889 */;
+// Module 11963 (useMuteAwareLocalVolume)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5896 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMuteAwareLocalVolume(arg0, arg1) {
-  let closure_0;
-  let first;
-  _require = arg0;
-  let closure_1 = arg1;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(10);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    let num = 0;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    let tmp6;
-    if (cResult[2] === arg0) {
-      tmp6 = cResult[3];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-    if (cResult[4] === arg1) {
-      let tmp8;
-      if (cResult[5] === arg0) {
-        tmp8 = cResult[6];
-      }
-      if (cResult[7] === stateFromStores) {
-        let tmp9;
-        if (cResult[8] === tmp8) {
-          tmp9 = cResult[9];
-        }
-        return tmp9;
-      }
-      let obj2 = { effectiveVolume: stateFromStores, handleVolumeChange: tmp8 };
-      cResult[7] = stateFromStores;
-      cResult[8] = tmp8;
-      cResult[9] = obj2;
-      tmp9 = obj2;
-    }
-    const fn2 = function s(arg0) {
-      if (null != closure_0) {
-        const isLocalMuteResult = arg0 > 0 && MediaEngineStore.isLocalMute(tmp, closure_1);
-        if (isLocalMuteResult) {
-          const obj = AudioActionCreatorsDefault;
-          obj.toggleLocalMute(closure_0, closure_1);
-        }
-        const obj2 = AudioActionCreatorsDefault;
-        obj2.setLocalVolume(closure_0, arg0, closure_1);
-      }
-    };
-    cResult[4] = arg1;
-    cResult[5] = arg0;
-    cResult[6] = fn2;
-    tmp8 = fn2;
-  }
-  const fn = function c() {
-    let num = 0;
-    if (null != closure_0) {
-      num = 0;
-      const obj = MediaEngineStore;
-      const tmp2 = closure_1;
-      if (!MediaEngineStore.isLocalMute(closure_0, closure_1)) {
-        num = obj.getLocalVolume(tmp, tmp2);
-      }
-    }
-    return num;
-  };
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = fn;
-  tmp6 = fn;
-}) : (function useMuteAwareLocalVolume(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/media_engine/useMuteAwareLocalVolume.tsx");
+
+export default function useMuteAwareLocalVolume(arg0, arg1) {
   let closure_0;
   let items;
   let items1;
@@ -123,7 +51,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMuteAware
   items = [MediaEngineStore];
   items1 = [arg0, arg1];
   return obj;
-});
-const result = size.fileFinishedImporting("modules/media_engine/useMuteAwareLocalVolume.tsx");
-
-export default tmp2;
+};

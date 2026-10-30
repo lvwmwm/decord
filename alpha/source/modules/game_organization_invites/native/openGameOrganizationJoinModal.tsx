@@ -1,15 +1,15 @@
-// Module ID: 12996
-// Function ID: 12997
+// Module ID: 13147
+// Function ID: 13148
 // Name: openGameOrganizationJoinModal
-// Dependencies: [11121, 11122, 12997, 6731, 12999, 2000, 2]
+// Dependencies: [11326, 11327, 13148, 6738, 13150, 1995, 2]
 // Exports: default
 
-// Module 12996 (openGameOrganizationJoinModal)
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
-import useGameOrganizationCharacterEligibilityFetch2 from "useGameOrganizationCharacterEligibilityFetch" /* 12997 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11121 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11122 */;
+// Module 13147 (openGameOrganizationJoinModal)
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
+import useGameOrganizationCharacterEligibilityFetch2 from "useGameOrganizationCharacterEligibilityFetch" /* 13148 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11326 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11327 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -31,5 +31,5 @@ export default function openGameOrganizationJoinModal(code) {
   }
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code };
-  obj.pushLazy(asyncRequire(12999, dependencyMap.paths), obj2);
+  obj.pushLazy(asyncRequire(13150, dependencyMap.paths), obj2);
 };

@@ -1,20 +1,20 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13348
+// Function ID: 13349
 // Name: ChannelTabsStore
-// Dependencies: [32, 4908, 5036, 4864, 13201, 1382, 504, 584, 2]
+// Dependencies: [32, 4912, 5040, 4865, 13349, 1377, 504, 572, 2]
 
-// Module 13200 (ChannelTabsStore)
+// Module 13348 (ChannelTabsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import TabsExperimentDefault from "TabsExperiment" /* 13201 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import TabsExperimentDefault from "TabsExperiment" /* 13349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
 import size from "module_2" /* 2 */;
 
-const f118913 = (id) => id.id === activeTabId;
+const f104197 = (id) => id.id === activeTabId;
 function handleChannelDelete(channel) {
   let found;
   channel = channel.channel;
@@ -26,7 +26,7 @@ function handleChannelDelete(channel) {
   }
   if (enabled) {
     let tmp3 = channel;
-    const obj2 = channel(1382);
+    const obj2 = channel(1377);
     enabled = obj2.isDesktop();
   }
   if (enabled) {
@@ -46,7 +46,7 @@ function handleChannelDelete(channel) {
         enabled2 = obj3.getConfig({ location: "ChannelTabsStore" }).enabled;
       }
       if (enabled2) {
-        const obj4 = channel(1382);
+        const obj4 = channel(1377);
         enabled2 = obj4.isDesktop();
       }
       let tmp10 = !enabled2;
@@ -165,6 +165,22 @@ class ChannelTabsStore extends PersistedStore {
       enabled = tabs.length >= 1;
     }
     return enabled;
+  }
+  getTabForChannel(id) {
+    let closure_0 = id;
+    let found = tabs.find((kind) => "channel" === kind.kind && kind.channelId === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
+  }
+  getTabForRoute(path) {
+    let closure_0 = path;
+    let found = tabs.find((kind) => "route" === kind.kind && kind.routePath === closure_0);
+    if (found == null) {
+      found = null;
+    }
+    return found;
   }
   isAtMaxTabs() {
     return tabs.length >= 25;
@@ -345,7 +361,7 @@ let obj = {
   },
   CHANNEL_TABS_BACK: function handleTabHistoryBack() {
     let closure_7;
-    const found = tabs.find(f118913);
+    const found = tabs.find(f104197);
     flag = false;
     if (null != found) {
       const sum = found.index + -1;
@@ -371,7 +387,7 @@ let obj = {
   },
   CHANNEL_TABS_FORWARD: function handleTabHistoryForward() {
     let closure_7;
-    const found = tabs.find(f118913);
+    const found = tabs.find(f104197);
     flag = false;
     if (null != found) {
       const sum = found.index + 1;
@@ -453,7 +469,7 @@ let obj = {
       enabled = obj.getConfig({ location: "ChannelTabsStore" }).enabled;
     }
     if (enabled) {
-      const obj2 = obj3(1382);
+      const obj2 = obj3(1377);
       enabled = obj2.isDesktop();
     }
     if (enabled) {
@@ -462,7 +478,7 @@ let obj = {
       if (0 === tabs.length) {
         const obj4 = { id: String(+closure_9), pinned: false, entries: items, index: 0 };
         const _String2 = String;
-        closure_9 = tmp17 + 1;
+        closure_9 = tmp24 + 1;
         let merged = Object.assign(obj3);
         items = [obj3];
         const items1 = [obj4];
@@ -472,23 +488,40 @@ let obj = {
         return false;
       } else {
         const found = tabs.find((id) => id.id === id);
-        if (null != found) {
+        let tmp8 = null != found;
+        if (tmp8) {
+          tmp8 = "route" !== found.kind || found.routePath !== routePath;
+        }
+        if (tmp8) {
+          let tmp10;
           if (found.pinned) {
-            if (tabs.length >= 25) {
-              return false;
+            const found1 = tabs.find((kind) => {
+              let tmp2;
+              if ("channel" === obj3.kind) {
+                tmp2 = "channel" === kind.kind && kind.channelId === obj3.channelId;
+              } else {
+                tmp2 = "route" === kind.kind && kind.routePath === tmp.routePath;
+              }
+              return tmp2;
+            });
+            if (null == found1) {
+              if (tabs.length < 25) {
+                const obj5 = { id: String(+closure_9), pinned: false, entries: items2, index: 0 };
+                const _String = String;
+                closure_9 = tmp16 + 1;
+                const merged1 = Object.assign(obj3);
+                items2 = [obj3];
+                const items3 = [];
+                items3[HermesBuiltin.arraySpread(items3, tabs, 0)] = obj5;
+                tabs = items3;
+                id = obj5.id;
+              }
             } else {
-              const obj5 = { id: String(+closure_9), pinned: false, entries: items2, index: 0 };
-              const _String = String;
-              closure_9 = tmp9 + 1;
-              const merged1 = Object.assign(obj3);
-              items2 = [obj3];
-              const items3 = [];
-              items3[HermesBuiltin.arraySpread(items3, tabs, 0)] = obj5;
-              tabs = items3;
-              id = obj5.id;
+              id = found1.id;
             }
+            tmp10 = flag2;
           } else {
-            tabs = arr.map((id) => {
+            tabs = tabs.map((id) => {
               let diff;
               if (id.id !== activeTabId) {
                 return id;
@@ -504,8 +537,9 @@ let obj = {
               }
             });
           }
+          tmp8 = tmp10;
         }
-        return false;
+        return tmp8;
       }
     } else {
       return false;
@@ -521,11 +555,12 @@ let obj = {
     let obj3;
     let enabled = flag;
     if (enabled) {
+      let tmp2 = importDefault;
       let obj = TabsExperimentDefault;
       enabled = obj.getConfig({ location: "ChannelTabsStore" }).enabled;
     }
     if (enabled) {
-      const obj2 = obj3(1382);
+      const obj2 = obj3(1377);
       enabled = obj2.isDesktop();
     }
     if (enabled) {
@@ -539,7 +574,7 @@ let obj = {
           if (0 === tabs.length) {
             const obj4 = { id: String(+closure_9), pinned: false, entries: items, index: 0 };
             const _String2 = String;
-            closure_9 = tmp18 + 1;
+            closure_9 = tmp25 + 1;
             let merged = Object.assign(obj3);
             items = [obj3];
             const items1 = [obj4];
@@ -549,23 +584,40 @@ let obj = {
             return false;
           } else {
             const found = tabs.find((id) => id.id === id);
-            if (null != found) {
+            let tmp9 = null != found;
+            if (tmp9) {
+              tmp9 = "channel" !== found.kind || found.channelId !== channelId;
+            }
+            if (tmp9) {
+              let tmp11;
               if (found.pinned) {
-                if (tabs.length >= 25) {
-                  return false;
+                const found1 = tabs.find((kind) => {
+                  let tmp2;
+                  if ("channel" === obj3.kind) {
+                    tmp2 = "channel" === kind.kind && kind.channelId === obj3.channelId;
+                  } else {
+                    tmp2 = "route" === kind.kind && kind.routePath === tmp.routePath;
+                  }
+                  return tmp2;
+                });
+                if (null == found1) {
+                  if (tabs.length < 25) {
+                    const obj5 = { id: String(+closure_9), pinned: false, entries: items2, index: 0 };
+                    const _String = String;
+                    closure_9 = tmp17 + 1;
+                    const merged1 = Object.assign(obj3);
+                    items2 = [obj3];
+                    const items3 = [];
+                    items3[HermesBuiltin.arraySpread(items3, tabs, 0)] = obj5;
+                    tabs = items3;
+                    id = obj5.id;
+                  }
                 } else {
-                  const obj5 = { id: String(+closure_9), pinned: false, entries: items2, index: 0 };
-                  const _String = String;
-                  closure_9 = tmp10 + 1;
-                  const merged1 = Object.assign(obj3);
-                  items2 = [obj3];
-                  const items3 = [];
-                  items3[HermesBuiltin.arraySpread(items3, tabs, 0)] = obj5;
-                  tabs = items3;
-                  id = obj5.id;
+                  id = found1.id;
                 }
+                tmp11 = flag2;
               } else {
-                tabs = arr.map((id) => {
+                tabs = tabs.map((id) => {
                   let diff;
                   if (id.id !== activeTabId) {
                     return id;
@@ -581,8 +633,9 @@ let obj = {
                   }
                 });
               }
+              tmp9 = tmp11;
             }
-            return false;
+            return tmp9;
           }
         }
       }

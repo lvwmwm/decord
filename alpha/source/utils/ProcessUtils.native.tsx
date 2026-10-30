@@ -1,11 +1,11 @@
-// Module ID: 1375
-// Function ID: 1376
+// Module ID: 1370
+// Function ID: 1371
 // Name: ProcessUtils
-// Dependencies: [17, 1376, 2]
+// Dependencies: [17, 1371, 2]
 
-// Module 1375 (ProcessUtils)
+// Module 1370 (ProcessUtils)
 import react_native from "react-native" /* 17 */;
-import ProcessUtilsBase from "ProcessUtilsBase" /* 1376 */;
+import ProcessUtilsBase from "ProcessUtilsBase" /* 1371 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

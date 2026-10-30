@@ -1,70 +1,22 @@
-// Module ID: 9686
-// Function ID: 9687
+// Module ID: 9711
+// Function ID: 9712
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 558, 576, 9685, 7134, 1125, 5271, 2]
+// Dependencies: [19, 21, 9710, 7142, 5619, 1114, 2]
+// Exports: TwoWayLinkStepHeader
 
-// Module 9686 (TwoWayLinkStepHeader)
+// Module 9711 (TwoWayLinkStepHeader)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7134 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9685 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7142 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9710 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLinkStepHeader(arg0) {
-  let idx;
-  let total;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ idx, total } = arg0);
-  const obj2 = TwoWayLinkStyles;
-  const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
-  const obj3 = useTypeConsolidationTextTransform;
-  const typeConsolidationEyebrow = obj3.useTypeConsolidationEyebrow("TwoWayLinkStepHeader", "text-xs/bold");
-  if (cResult[0] === typeConsolidationEyebrow.style) {
-    let tmp7;
-    if (cResult[1] === twoWayLinkStyles.stepHeader) {
-      tmp7 = cResult[2];
-    }
-    if (cResult[3] === idx) {
-      let tmp8;
-      if (cResult[4] === total) {
-        tmp8 = cResult[5];
-      }
-      if (cResult[6] === typeConsolidationEyebrow.variant) {
-        if (cResult[7] === tmp7) {
-          let tmp10;
-          if (cResult[8] === tmp8) {
-            tmp10 = cResult[9];
-          }
-          return tmp10;
-        }
-      }
-      const tmp12 = jsx(Text_Text.Text, { variant: tmp6, color: "text-default", style: tmp7, children: tmp8 });
-      cResult[6] = typeConsolidationEyebrow.variant;
-      cResult[7] = tmp7;
-      cResult[8] = tmp8;
-      cResult[9] = tmp12;
-      tmp10 = tmp12;
-    }
-    const intl = tmp(1125).intl;
-    const obj5 = { number: idx, total };
-    const formatResult = intl.format(intl2.t.fHz6eR, obj5);
-    cResult[3] = idx;
-    cResult[4] = total;
-    cResult[5] = formatResult;
-    tmp8 = formatResult;
-  }
-  const items = [twoWayLinkStyles.stepHeader, typeConsolidationEyebrow.style];
-  cResult[0] = typeConsolidationEyebrow.style;
-  cResult[1] = twoWayLinkStyles.stepHeader;
-  cResult[2] = items;
-  tmp7 = items;
-}) : (function TwoWayLinkStepHeader(arg0) {
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStepHeader.tsx");
+
+export function TwoWayLinkStepHeader(arg0) {
   let idx;
   let total;
   ({ idx, total } = arg0);
@@ -76,7 +28,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function TwoWayLink
   const Text = Text_Text.Text;
   const intl = intl2.intl;
   return <Text variant={typeConsolidationEyebrow.variant} color="text-default" style={items}>{intl.format(intl2.t.fHz6eR, { number: idx, total })}</Text>;
-});
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/TwoWayLinkStepHeader.tsx");
-
-export const TwoWayLinkStepHeader = tmp3;
+}

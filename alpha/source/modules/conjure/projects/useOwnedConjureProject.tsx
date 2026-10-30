@@ -1,75 +1,20 @@
-// Module ID: 13995
-// Function ID: 13996
+// Module ID: 14127
+// Function ID: 14128
 // Name: useOwnedConjureProject
-// Dependencies: [6831, 558, 576, 11988, 504, 2]
+// Dependencies: [6838, 12176, 504, 2]
+// Exports: default
 
-// Module 13995 (useOwnedConjureProject)
-import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 11988 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14127 (useOwnedConjureProject)
+import useIsOwnedConjureApplicationDefault from "useIsOwnedConjureApplication" /* 12176 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnedConjureProject(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  _require = arg0;
-  const tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  const tmp4 = useIsOwnedConjureApplicationDefault(arg0, arg1);
-  importDefault = tmp4;
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === tmp4) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-    if (cResult[5] === tmp4) {
-      let tmp10;
-      if (cResult[6] === stateFromStores) {
-        tmp10 = cResult[7];
-      }
-      return tmp10;
-    }
-    const obj2 = { isOwned: tmp4, project: stateFromStores };
-    cResult[5] = tmp4;
-    cResult[6] = stateFromStores;
-    cResult[7] = obj2;
-    tmp10 = obj2;
-  }
-  const fn = function c() {
-    let result = null;
-    if (true === closure_1) {
-      result = null;
-      if (null != closure_0) {
-        result = ConjureProjectStore.findProjectByApplicationId(tmp2);
-      }
-    }
-    return result;
-  };
-  const items1 = [tmp4, arg0];
-  cResult[1] = arg0;
-  cResult[2] = tmp4;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useOwnedConjureProject(arg0, arg1) {
+let result = size.fileFinishedImporting("modules/conjure/projects/useOwnedConjureProject.tsx");
+
+export default function useOwnedConjureProject(arg0, arg1) {
   let closure_0;
   let closure_1;
   _require = arg0;
@@ -92,7 +37,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOwnedConj
     }, items1)
   };
   return obj2;
-});
-let result = size.fileFinishedImporting("modules/conjure/projects/useOwnedConjureProject.tsx");
-
-export default tmp2;
+};

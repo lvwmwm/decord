@@ -1,19 +1,19 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14805
+// Function ID: 14806
 // Name: ContentInventoryActivityStore
-// Dependencies: [5750, 8864, 1084, 8672, 8676, 8884, 8869, 8865, 12, 504, 584, 2]
+// Dependencies: [5756, 8898, 8706, 8710, 8918, 5757, 8903, 8899, 12, 504, 572, 2]
 
-// Module 14770 (ContentInventoryActivityStore)
+// Module 14805 (ContentInventoryActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8672 */;
-import utils from "utils" /* 8676 */;
-import matchUtils from "matchUtils" /* 8865 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8869 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8864 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8706 */;
+import utils from "utils" /* 8710 */;
+import matchUtils from "matchUtils" /* 8899 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8903 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8898 */;
 import size from "module_2" /* 2 */;
 
 let _require;
@@ -23,39 +23,35 @@ function entryToKey(content) {
 }
 function getMatchingActivity(author_type) {
   _require = author_type;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("utils");
+  const tmp = _require;
   let tmp3 = null;
+  const obj = require("utils");
   if (!obj.isEntryExpired(author_type)) {
+    let tmpResult = tmp(8710);
     let found;
-    const tmpResult = tmp(8676);
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8884).ContentInventoryAuthorType.USER) {
-        let tmp5 = PresenceStore;
+      if (author_type.author_type === tmp(8918).ContentInventoryAuthorType.USER) {
         const activities = PresenceStore.getActivities(author_type.author_id);
         found = activities.find((type) => {
           let result;
-          const tmp = ActivityTypes;
-          if (type.type === ActivityTypes.PLAYING) {
-            const obj = ContentInventoryTypes;
-            const tmp2 = require;
-            const tmp4 = author_type;
-            if (obj.isApplicationEntry(author_type)) {
-              const tmp2Result = tmp2(8865);
-              result = tmp2Result.isMatchingApplicationActivity(tmp4, type);
+          if (type.type === ActivityTypes.ActivityTypes.PLAYING) {
+            const tmp3 = author_type;
+            const tmpResult = ContentInventoryTypes;
+            if (tmpResult.isApplicationEntry(author_type)) {
+              const tmpResult4 = matchUtils;
+              result = tmpResult4.isMatchingApplicationActivity(tmp3, type);
             }
             return result;
           }
-          let tmp5 = type.type !== tmp.LISTENING;
-          if (!tmp5) {
-            const obj2 = ContentInventoryTypes;
-            tmp5 = !obj2.isListenedSessionEntry(author_type);
+          let tmp4 = type.type !== tmp(5757).ActivityTypes.LISTENING;
+          if (!tmp4) {
+            const tmpResult5 = ContentInventoryTypes;
+            tmp4 = !tmpResult5.isListenedSessionEntry(author_type);
           }
-          result = !tmp5;
+          result = !tmp4;
           if (result) {
-            const obj3 = matchUtils;
-            result = obj3.isMatchingListeningActivity(author_type, type);
+            const tmpResult6 = matchUtils;
+            result = tmpResult6.isMatchingListeningActivity(author_type, type);
           }
         });
       }
@@ -139,7 +135,6 @@ function handlePresenceUpdates() {
   }
   return flag;
 }
-const ActivityTypes = Constants.ActivityTypes;
 let items = [ContentInventoryEntryType.ContentInventoryEntryType.LISTENED_SESSION];
 let set = new Set(items);
 const map = new Map();

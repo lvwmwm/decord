@@ -1,115 +1,24 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10123
+// Function ID: 10124
 // Name: ModalStackNavigator
-// Dependencies: [109, 19, 21, 9809, 558, 576, 7155, 9765, 10097, 1381, 2]
+// Dependencies: [19, 21, 9835, 7163, 9791, 10124, 1376, 2]
 
-// Module 10096 (ModalStackNavigator)
+// Module 10123 (ModalStackNavigator)
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Navigator2 from "Navigator" /* 7155 */;
-import HeaderShared from "HeaderShared" /* 9765 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10097 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import Navigator2 from "Navigator" /* 7163 */;
+import HeaderShared from "HeaderShared" /* 9791 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10124 */;
 import react from "react" /* 19 */;
-import NativeStackView from "NativeStackView" /* 9809 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import NativeStackView from "NativeStackView" /* 9835 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let dependencyMap;
 
-let closure_3 = ["children"];
 const jsx = Fragment.jsx;
 let Navigator = NativeStackView.createNativeStackNavigator();
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function ModalStackNavigator(titleIcon) {
-  let accessibilityNativeStackOptions;
-  let screenKey;
-  let title;
-  let obj = title(accessibilityNativeStackOptions[5]);
-  const cResult = obj.c(13);
-  ({ screenKey, title } = titleIcon);
-  titleIcon = titleIcon.titleIcon;
-  const render = titleIcon.render;
-  let obj2 = title(accessibilityNativeStackOptions[6]);
-  accessibilityNativeStackOptions = obj2.useAccessibilityNativeStackOptions();
-  if (cResult[0] === accessibilityNativeStackOptions) {
-    let tmp3;
-    let tmp4;
-    if (cResult[1] === titleIcon) {
-      tmp3 = cResult[2];
-    }
-    if (cResult[3] !== title) {
-      const fn2 = function v() {
-        let str;
-        const obj = { title, orientation: str };
-        str = undefined;
-        const obj2 = PlatformUtils;
-        if (obj2.isIOS()) {
-          str = "portrait";
-        }
-        return obj;
-      };
-      cResult[3] = title;
-      cResult[4] = fn2;
-      tmp4 = fn2;
-    } else {
-      tmp4 = cResult[4];
-    }
-    if (cResult[5] === render) {
-      if (cResult[6] === screenKey) {
-        let tmp5;
-        if (cResult[7] === tmp4) {
-          tmp5 = cResult[8];
-        }
-        if (cResult[9] === screenKey) {
-          if (cResult[10] === tmp3) {
-            let tmp9;
-            if (cResult[11] === tmp5) {
-              tmp9 = cResult[12];
-            }
-            return tmp9;
-          }
-        }
-        const tmp12 = <closure_6.Navigator initialRouteName={screenKey} screenOptions={tmp3}>{tmp5}</closure_6.Navigator>;
-        cResult[9] = screenKey;
-        cResult[10] = tmp3;
-        cResult[11] = tmp5;
-        cResult[12] = tmp12;
-        tmp9 = tmp12;
-      }
-    }
-    const tmp8 = <closure_6.Screen name={screenKey} options={tmp4}>{render}</closure_6.Screen>;
-    cResult[5] = render;
-    cResult[6] = screenKey;
-    cResult[7] = tmp4;
-    cResult[8] = tmp8;
-    tmp5 = tmp8;
-  }
-  const fn = function s(navigation) {
-    let icon;
-    let obj2;
-    const obj = {
-      headerTitle(children) {
-        children = children.children;
-        const tmp = _objectWithoutProperties(children, closure_2_3);
-        const GenericHeaderTitle = title(accessibilityNativeStackOptions[7]).GenericHeaderTitle;
-        const merged = Object.assign(tmp);
-        return <GenericHeaderTitle title={children} icon={icon} />;
-      },
-      headerLeft: obj2.getRenderModalCloseImage(navigation),
-      headerTitleAlign: "center"
-    };
-    navigation = navigation.navigation;
-    obj2 = HeaderShared;
-    let merged = Object.assign(accessibilityNativeStackOptions);
-    const merged1 = Object.assign(getNavigationModalPresentationDefault());
-    return obj;
-  };
-  cResult[0] = accessibilityNativeStackOptions;
-  cResult[1] = titleIcon;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : (function ModalStackNavigator(render) {
+const memoResult = react.memo(function ModalStackNavigator(render) {
   let closure_2;
   let screenKey;
   let title;
@@ -138,7 +47,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let merged1 = Object.assign(getNavigationModalPresentationDefault());
     return obj;
   }}>{null}</Navigator>;
-}));
+});
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/ModalStackNavigator.tsx");
 
 export default memoResult;

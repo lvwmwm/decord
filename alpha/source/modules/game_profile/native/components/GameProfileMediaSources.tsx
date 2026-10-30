@@ -1,13 +1,13 @@
-// Module ID: 9347
-// Function ID: 9348
+// Module ID: 9361
+// Function ID: 9362
 // Name: GameProfileMediaSources
-// Dependencies: [1450, 6442, 2035, 2]
+// Dependencies: [1445, 6449, 2032, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 9347 (GameProfileMediaSources)
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2035 */;
-import StoreUtils from "StoreUtils" /* 6442 */;
+// Module 9361 (GameProfileMediaSources)
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1445 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2032 */;
+import StoreUtils from "StoreUtils" /* 6449 */;
 import size_mod from "module_2" /* 2 */;
 
 let map;
@@ -64,7 +64,7 @@ export function buildMediaEntries(game) {
   }
   return items;
 }
-export function buildMediaViewerSources(arr2, cResult, dimensions) {
+export function buildMediaViewerSources(memo1, memo, dimensions) {
   map = dimensions;
   if (dimensions === undefined) {
     const _Map = Map;
@@ -72,7 +72,7 @@ export function buildMediaViewerSources(arr2, cResult, dimensions) {
     const self2 = this;
     map = new Map();
   }
-  return arr2.map((uri, mediaIndex) => {
+  return memo1.map((uri, mediaIndex) => {
     let height;
     let originalUrl;
     let tmp4;
@@ -81,12 +81,12 @@ export function buildMediaViewerSources(arr2, cResult, dimensions) {
       value = map.get(uri.originalUrl);
     }
     if (null == value) {
-      height = cResult.height;
-      tmp4 = cResult;
+      height = memo.height;
+      tmp4 = memo;
     } else {
       const _Math = Math;
-      tmp4 = cResult;
-      height = Math.round(cResult.width * value.height / value.width);
+      tmp4 = memo;
+      height = Math.round(memo.width * value.height / value.width);
     }
     const obj = { uri: uri.originalUrl, videoURI: originalUrl, mediaIndex, thumbnail: { width: tmp4.width, height, uri: uri.previewUrl }, accessoryType: "embed", disableDownload: true };
     originalUrl = undefined;

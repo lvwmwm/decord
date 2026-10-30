@@ -1,14 +1,14 @@
-// Module ID: 16260
-// Function ID: 16261
+// Module ID: 16300
+// Function ID: 16301
 // Name: userProfile
-// Dependencies: [5, 5248, 1389, 8708, 8710, 2]
+// Dependencies: [5, 5254, 1384, 8742, 8744, 2]
 // Exports: isAnyUserProfileOpen, openUserProfile
 
-// Module 16260 (userProfile)
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8708 */;
+// Module 16300 (userProfile)
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5248 */;
-import UserStore from "UserStore" /* 1389 */;
+import ActionSheetStore from "ActionSheetStore" /* 5254 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, key;
@@ -42,7 +42,7 @@ export function openUserProfile(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -93,7 +93,7 @@ export function openUserProfile(arg0) {
               return obj;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
           if (null == authStore.getUser(closure_128_0)) {
             closure_128_2();

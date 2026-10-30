@@ -1,22 +1,22 @@
-// Module ID: 13616
-// Function ID: 13617
+// Module ID: 13764
+// Function ID: 13765
 // Name: VoiceMessageUtils
-// Dependencies: [5, 2012, 13526, 13527, 1084, 3, 13617, 206, 12, 5777, 1264, 5249, 1381, 2]
+// Dependencies: [5, 2007, 13675, 13676, 1072, 3, 13765, 206, 12, 5784, 1253, 5255, 1376, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 13616 (VoiceMessageUtils)
+// Module 13764 (VoiceMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import HapticUtils from "HapticUtils" /* 5249 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 13617 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import HapticUtils from "HapticUtils" /* 5255 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5784 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 13765 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13526 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13527 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13675 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13676 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f119681 = (item) => Math.min(item, closure_1_13);
+const f104695 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -51,7 +51,7 @@ let obj = function _startAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -109,7 +109,7 @@ let obj = function _startAudioRecording() {
             if (recordingId !== closure_0) {
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             } else {
               closure_130_9(constants.STARTED);
               recordingId = closure_130_10;
@@ -117,7 +117,7 @@ let obj = function _startAudioRecording() {
               closure_130_10(Date.now());
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           }
         }
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f119681);
+  const mapped1 = arr3.map(f104695);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -185,7 +185,7 @@ obj = function _endAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -256,7 +256,7 @@ obj = function _stopAndCacheAudioRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -290,7 +290,7 @@ obj = function _stopAndCacheAudioRecording() {
           closure_129_23();
           closure_129_7(closure_0);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp14) {
         c3 = 3;
@@ -309,7 +309,7 @@ let closure_20 = tmp4;
 let closure_21 = module_12.throttle((arg0) => {
   state = unpackModuleId.getState();
   if (null != state.startTimeMillis) {
-    hasOwnProperty(map1 * ((arg0 - syncedClientThemes) / (closure_15 - syncedClientThemes)));
+    hasOwnProperty(map1 * ((arg0 - authStore3) / (closure_15 - authStore3)));
     let tmp8 = null == state.savedVoiceMessageUploadData;
     if (tmp8) {
       const _performance = performance;
@@ -324,10 +324,10 @@ let result = size.fileFinishedImporting("modules/voice_messages/native/VoiceMess
 
 export function generateBase64EncodedWaveform(arg0) {
   let arr = arg0;
-  if (arg0.length > authStore3) {
+  if (arg0.length > authStore4) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f119681);
+  const mapped = arr.map(f104695);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

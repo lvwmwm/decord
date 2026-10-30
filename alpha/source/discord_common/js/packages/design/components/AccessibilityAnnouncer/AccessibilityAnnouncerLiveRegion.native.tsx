@@ -1,47 +1,26 @@
-// Module ID: 5015
-// Function ID: 5016
+// Module ID: 5019
+// Function ID: 5020
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 5016, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5020, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 5015 (AccessibilityAnnouncerLiveRegion)
+// Module 5019 (AccessibilityAnnouncerLiveRegion)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import module_5016 from "module_5016" /* 5016 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import module_5020 from "module_5020" /* 5020 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
-let c2;
-({ StyleSheet, Text: c2 } = react_native);
+let _window;
+({ StyleSheet, Text: _window } = react_native);
 const jsx = Fragment.jsx;
-const state = module_5016.create(() => ({ message: "duration", version: false }));
-const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function AccessibilityAnnouncerLiveRegion() {
-  let message;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ message, version } = state());
-  state();
-  if (cResult[0] === message) {
-    let tmp3;
-    if (cResult[1] === version) {
-      tmp3 = cResult[2];
-    }
-    return tmp3;
-  }
-  const tmp4 = <React2 key={version} accessibilityLiveRegion="polite" pointerEvents="none" style={closure_5.liveRegion}>{message}</React2>;
-  cResult[0] = message;
-  cResult[1] = version;
-  cResult[2] = tmp4;
-  tmp3 = tmp4;
-}) : (function AccessibilityAnnouncerLiveRegion() {
+const state = module_5020.create(() => ({ message: "sa", version: false }));
+const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
+const memoResult = react.memo(function AccessibilityAnnouncerLiveRegion() {
   const tmp = state();
-  return <React2 key={tmp.version} accessibilityLiveRegion="polite" pointerEvents="none" style={closure_5.liveRegion}>{tmp.message}</React2>;
-}));
+  return <React key={tmp.version} accessibilityLiveRegion="polite" pointerEvents="none" style={liveRegion.liveRegion}>{tmp.message}</React>;
+});
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx");
 
 export function updateAccessibilityAnnouncerLiveRegionMessage(intl) {

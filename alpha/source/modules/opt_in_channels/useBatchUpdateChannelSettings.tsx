@@ -1,155 +1,25 @@
-// Module ID: 11345
-// Function ID: 11346
+// Module ID: 11548
+// Function ID: 11549
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 7273, 6762, 1084, 584, 558, 576, 504, 7269, 11346, 11343, 2]
+// Dependencies: [19, 7280, 6769, 1072, 572, 504, 7276, 11549, 11546, 2]
+// Exports: default
 
-// Module 11345 (useBatchUpdateChannelSettings)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7269 */;
+// Module 11548 (useBatchUpdateChannelSettings)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7276 */;
 import react from "react" /* 19 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7273 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7280 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set;
 
 const AnalyticsSections = Constants.AnalyticsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUpdateChannelSettings(guildId) {
-  let channelOptedIn;
-  let collapsed;
-  let first;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  _require = guildId;
-  const tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(12);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserGuildSettingsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    const fn = function u() {
-      return UserGuildSettingsStore.getPendingChannelUpdates(guildId);
-    };
-    cResult[1] = guildId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  if (cResult[3] !== guildId) {
-    const fn2 = function h() {
-      let obj = DispatcherDefault;
-      let obj2 = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId };
-      obj.dispatch(obj2);
-      return () => {
-        const obj = stateFromStores(dependencyMap[4]);
-        const obj2 = { type: "CLEAR_PENDING_CHANNEL_AND_ROLE_UPDATES", guildId };
-        obj.dispatch(obj2);
-      };
-    };
-    let items1 = [guildId];
-    cResult[3] = guildId;
-    cResult[4] = fn2;
-    cResult[5] = items1;
-    tmp9 = items1;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[4];
-    tmp9 = cResult[5];
-  }
-  let obj3 = react;
-  const effect = react.useEffect(tmp8, tmp9);
-  if (cResult[6] === stateFromStores) {
-    let tmp11;
-    let tmp12;
-    let tmp14;
-    let tmp15;
-    if (cResult[7] === guildId) {
-      tmp11 = cResult[8];
-      tmp12 = cResult[9];
-    }
-    const effect1 = obj3.useEffect(tmp11, tmp12);
-    const _Symbol = Symbol;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn3 = function _(guildId, channelId, id) {
-        let set1;
-        const isChannelOptedInResult = channelOptedIn.isChannelOptedIn(guildId, channelId);
-        const isCollapsedResult = !isChannelOptedInResult && collapsed.isCollapsed(id) && null != id;
-        if (isCollapsedResult) {
-          const obj = guildId(dependencyMap[9]);
-          obj.categoryExpand(id);
-        }
-        const obj2 = guildId(dependencyMap[10]);
-        if (obj2.hasNotSetUpChannelOptIn(guildId)) {
-          if (channelId === id) {
-            const _Set2 = Set;
-            const items = [channelId];
-            const self3 = this;
-            const self4 = this;
-            const obj3 = { include: set };
-            const optIntoAllChannelsForExistingMember2 = guildId(dependencyMap[10]).optIntoAllChannelsForExistingMember;
-            guildId(dependencyMap[10]);
-            set = new Set(items);
-            const result = optIntoAllChannelsForExistingMember2(guildId, obj3);
-          } else {
-            const _Set = Set;
-            const items1 = [channelId];
-            const self = this;
-            const self2 = this;
-            const obj4 = { exclude: set1 };
-            const optIntoAllChannelsForExistingMember = guildId(dependencyMap[10]).optIntoAllChannelsForExistingMember;
-            guildId(dependencyMap[10]);
-            set1 = new Set(items1);
-            const result1 = optIntoAllChannelsForExistingMember(guildId, obj4);
-          }
-        } else {
-          const obj5 = { section: constants.CHANNEL_BROWSER };
-          const tmp8Result4 = guildId(dependencyMap[8]);
-          const result2 = tmp8Result4.updateOptInChannelsImmediate(guildId, channelId, !isChannelOptedInResult, obj5);
-        }
-      };
-      cResult[10] = fn3;
-      tmp14 = fn3;
-    } else {
-      tmp14 = cResult[10];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { onChannelClick: tmp14 };
-      cResult[11] = obj2;
-      tmp15 = obj2;
-    } else {
-      tmp15 = cResult[11];
-    }
-    return tmp15;
-  }
-  class C {
-    constructor() {
-      if (null != stateFromStores) {
-        const obj = OptInChannelsActionCreators;
-        const result = obj.updateOptInChannelsBatched(guildId, tmp);
-      }
-    }
-  }
-  const items2 = [guildId, stateFromStores];
-  cResult[6] = stateFromStores;
-  cResult[7] = guildId;
-  cResult[8] = C;
-  cResult[9] = items2;
-  tmp12 = items2;
-  tmp11 = C;
-}) : (function useBatchUpdateChannelSettings(guildId) {
+let result = size.fileFinishedImporting("modules/opt_in_channels/useBatchUpdateChannelSettings.tsx");
+
+export default function useBatchUpdateChannelSettings(guildId) {
   let channelOptedIn;
   let collapsed;
   _require = guildId;
@@ -180,10 +50,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUp
       const isChannelOptedInResult = channelOptedIn.isChannelOptedIn(guildId, channelId);
       const isCollapsedResult = !isChannelOptedInResult && collapsed.isCollapsed(id) && null != id;
       if (isCollapsedResult) {
-        const obj = guildId(dependencyMap[9]);
+        const obj = guildId(dependencyMap[7]);
         obj.categoryExpand(id);
       }
-      const obj2 = guildId(dependencyMap[10]);
+      const obj2 = guildId(dependencyMap[8]);
       if (obj2.hasNotSetUpChannelOptIn(guildId)) {
         if (channelId === id) {
           const _Set2 = Set;
@@ -191,8 +61,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUp
           const self3 = this;
           const self4 = this;
           const obj3 = { include: set };
-          const optIntoAllChannelsForExistingMember2 = guildId(dependencyMap[10]).optIntoAllChannelsForExistingMember;
-          guildId(dependencyMap[10]);
+          const optIntoAllChannelsForExistingMember2 = guildId(dependencyMap[8]).optIntoAllChannelsForExistingMember;
+          guildId(dependencyMap[8]);
           set = new Set(items);
           const result = optIntoAllChannelsForExistingMember2(guildId, obj3);
         } else {
@@ -201,20 +71,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBatchUp
           const self = this;
           const self2 = this;
           const obj4 = { exclude: set1 };
-          const optIntoAllChannelsForExistingMember = guildId(dependencyMap[10]).optIntoAllChannelsForExistingMember;
-          guildId(dependencyMap[10]);
+          const optIntoAllChannelsForExistingMember = guildId(dependencyMap[8]).optIntoAllChannelsForExistingMember;
+          guildId(dependencyMap[8]);
           set1 = new Set(items1);
           const result1 = optIntoAllChannelsForExistingMember(guildId, obj4);
         }
       } else {
         const obj5 = { section: constants.CHANNEL_BROWSER };
-        const tmp8Result4 = guildId(dependencyMap[8]);
+        const tmp8Result4 = guildId(dependencyMap[6]);
         const result2 = tmp8Result4.updateOptInChannelsImmediate(guildId, channelId, !isChannelOptedInResult, obj5);
       }
     }, [])
   };
   return obj2;
-});
-let result = size.fileFinishedImporting("modules/opt_in_channels/useBatchUpdateChannelSettings.tsx");
-
-export default tmp2;
+};

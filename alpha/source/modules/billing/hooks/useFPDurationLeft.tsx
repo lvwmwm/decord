@@ -1,18 +1,16 @@
-// Module ID: 15267
-// Function ID: 15268
+// Module ID: 15307
+// Function ID: 15308
 // Name: useFPDurationLeft
-// Dependencies: [558, 576, 1125, 7612, 4830, 1254, 2]
+// Dependencies: [1114, 7617, 4831, 1243, 2]
+// Exports: default
 
-// Module 15267 (useFPDurationLeft)
-import react from "react" /* 576 */;
-import intl from "intl" /* 1125 */;
-import DateUtils from "DateUtils" /* 4830 */;
-import useCountdownDefault from "useCountdown" /* 7612 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 15307 (useFPDurationLeft)
+import intl from "intl" /* 1114 */;
+import useCountdownDefault from "useCountdown" /* 7617 */;
 import size from "module_2" /* 2 */;
 
-let tmp10;
-const SentryUtilsDefault = tmp10(1254);
+let tmp16;
+const SentryUtilsDefault = tmp16(1243);
 function roundFPCountdownUnits(arg0) {
   let num7;
   const time = {};
@@ -72,47 +70,9 @@ function roundFPCountdownUnits(arg0) {
   }
 }
 const CountDownMessageTypes = { SHORT_TIME_LEFT: 0, [0]: "SHORT_TIME_LEFT", LONG_TIME_LEFT: 1, [1]: "LONG_TIME_LEFT", ENDS_IN: 2, [2]: "ENDS_IN", SHORT_TIME: 3, [3]: "SHORT_TIME", CREDITS_ENDS_IN: 4, [4]: "CREDITS_ENDS_IN" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFPDurationLeft(toDate, arg1) {
-  let time4;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (obj.SHORT_TIME_LEFT === arg1) {
-    const time = { days: intl.t["/wnvqA"], hours: intl.t.Jsq0XN, minutes: intl.t["SBd+Bs"] };
-    time4 = time;
-  } else if (obj.LONG_TIME_LEFT === arg1) {
-    const time1 = { days: intl.t.UD5nn5, hours: intl.t.Hg8Fee, minutes: intl.t.XSbQZZ };
-    time4 = time1;
-  } else if (obj.ENDS_IN === arg1) {
-    const time2 = { days: intl.t.rLqNad, hours: intl.t.d1LvCA, minutes: intl.t.Z2LX7K };
-    time4 = time2;
-  } else if (obj.CREDITS_ENDS_IN === arg1) {
-    const time3 = { days: intl.t.xQ3zuN, hours: intl.t.SFU7QN, minutes: intl.t.Y4FNdL };
-    time4 = time3;
-  } else if (obj.SHORT_TIME === arg1) {
-    time4 = { days: intl.t.fYmirx, hours: intl.t["C3RO+g"], minutes: intl.t.r77oHc };
-  } else {
-    const _Error = Error;
-    const _HermesInternal = HermesInternal;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Unknown messageType (" + arg1 + ") when rendering time left");
-    throw error;
-  }
-  if (cResult[0] !== toDate) {
-    cResult[0] = toDate;
-    cResult[1] = toDate.toDate();
-    const toDateResult = toDate.toDate();
-  }
-  let str3 = "";
-  try {
-    const tmpResult = DateUtils;
-    str3 = tmpResult.unitsAsStrings(tmp11, time4);
-  } catch (err) {
-    const tmp10Result = SentryUtilsDefault;
-    tmp10Result.captureMessage("Error trying to format string for fractional nitro duration pill");
-  }
-  return str3;
-}) : (function useFPDurationLeft(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/billing/hooks/useFPDurationLeft.tsx");
+
+export default function useFPDurationLeft(arg0, arg1) {
   let time4;
   let tmp7;
   if (obj.SHORT_TIME_LEFT === arg1) {
@@ -145,16 +105,13 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFPDurat
   useCountdownDefault;
   let str3 = "";
   try {
-    const tmp7Result = tmp7(4830);
+    const tmp7Result = tmp7(4831);
     str3 = tmp7Result.unitsAsStrings(tmp18, time4);
   } catch (err) {
     const tmp16Result = SentryUtilsDefault;
     tmp16Result.captureMessage("Error trying to format string for fractional nitro duration pill");
   }
   return str3;
-});
-const result = size.fileFinishedImporting("modules/billing/hooks/useFPDurationLeft.tsx");
-
-export default tmp2;
+};
 export { CountDownMessageTypes };
 export { roundFPCountdownUnits };

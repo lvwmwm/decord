@@ -1,91 +1,35 @@
-// Module ID: 18414
-// Function ID: 18415
+// Module ID: 18473
+// Function ID: 18474
 // Name: ICYMIContext
-// Dependencies: [19, 21, 558, 576, 1497, 587, 2]
+// Dependencies: [19, 21, 1492, 575, 2]
+// Exports: ICYMIContextProvider, useICYMIContextConstructor
 
-// Module 18414 (ICYMIContext)
+// Module 18473 (ICYMIContext)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
+import nativeDefault from "native" /* 575 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
+let c2;
 let createContext;
-({ useMemo: c3, createContext } = react);
+({ useMemo: c2, createContext } = react);
 const jsx = Fragment.jsx;
 const context = createContext({ width: 0, margin: 0, inset: 0 });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIContextConstructor() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const bound = Math.min(useWindowDimensionsDefault().width, 480);
-  const PX_16 = nativeDefault.space.PX_16;
-  if (cResult[0] !== bound) {
-    const obj2 = { width: bound, margin: PX_16, inset: PX_16 + 38 };
-    cResult[0] = bound;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function useICYMIContextConstructor() {
-  const bound = Math.min(useWindowDimensionsDefault().width, 480);
-  const PX_16 = nativeDefault.space.PX_16;
-  return { width: bound, margin: PX_16, inset: PX_16 + 38 };
-});
-let closure_6 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ICYMIContextProvider(children) {
-  let inset;
-  let margin;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(7);
-  children = children.children;
-  ({ width, margin, inset } = closure_6());
-  closure_6();
-  if (cResult[0] === inset) {
-    if (cResult[1] === margin) {
-      let tmp3;
-      if (cResult[2] === width) {
-        tmp3 = cResult[3];
-      }
-      if (cResult[4] === children) {
-        let tmp4;
-        if (cResult[5] === tmp3) {
-          tmp4 = cResult[6];
-        }
-        return tmp4;
-      }
-      const tmp7 = <context.Provider value={tmp3}>{children}</context.Provider>;
-      cResult[4] = children;
-      cResult[5] = tmp3;
-      cResult[6] = tmp7;
-      tmp4 = tmp7;
-    }
-  }
-  const obj3 = { width, margin, inset };
-  cResult[0] = inset;
-  cResult[1] = margin;
-  cResult[2] = width;
-  cResult[3] = obj3;
-  tmp3 = obj3;
-}) : (function ICYMIContextProvider(children) {
-  children = children.children;
-  const tmp = closure_6();
-  const width = tmp.width;
-  const margin = tmp.margin;
-  const inset = tmp.inset;
-  const items = [width, margin, inset];
-  return <context.Provider value={_false(() => ({ width, margin, inset }), items)}>{children}</context.Provider>;
-});
 const result = size.fileFinishedImporting("modules/icymi/native/ICYMIContext.tsx");
 
 export const ICYMIContext = context;
-export const useICYMIContextConstructor = tmp4;
-export const ICYMIContextProvider = tmp5;
+export function useICYMIContextConstructor() {
+  const bound = Math.min(useWindowDimensionsDefault().width, 480);
+  const PX_16 = nativeDefault.space.PX_16;
+  return { width: bound, margin: PX_16, inset: PX_16 + 38 };
+}
+export function ICYMIContextProvider(children) {
+  children = children.children;
+  const bound = Math.min(useWindowDimensionsDefault().width, 480);
+  const PX_16 = nativeDefault.space.PX_16;
+  const sum = PX_16 + 38;
+  let c2 = sum;
+  const items = [bound, PX_16, sum];
+  return <context.Provider value={React2(() => ({ width: bound, margin: PX_16, inset }), items)}>{children}</context.Provider>;
+}

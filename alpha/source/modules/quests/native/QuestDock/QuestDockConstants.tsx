@@ -1,10 +1,10 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 17001
+// Function ID: 17002
 // Name: QuestDockConstants
-// Dependencies: [587, 2]
+// Dependencies: [575, 2]
 
-// Module 16947 (QuestDockConstants)
-import nativeDefault from "native" /* 587 */;
+// Module 17001 (QuestDockConstants)
+import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;

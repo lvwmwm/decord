@@ -1,21 +1,22 @@
-// Module ID: 2018
-// Function ID: 2019
+// Module ID: 2013
+// Function ID: 2014
 // Name: ClipsStore
-// Dependencies: [5, 2019, 502, 8203, 1084, 5852, 4819, 15796, 1402, 15797, 15799, 504, 584, 2]
+// Dependencies: [5, 2014, 502, 8206, 1072, 5859, 4820, 15834, 1397, 15835, 15837, 15838, 504, 572, 2]
 
-// Module 2018 (ClipsStore)
+// Module 2013 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15797 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15799 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15835 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15837 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
+import RunningGameStore from "RunningGameStore" /* 2014 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8203 */;
-import Constants from "Constants" /* 1084 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5852 */;
+import ClipsConstants from "ClipsConstants" /* 8206 */;
+import Constants from "Constants" /* 1072 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5859 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -45,7 +46,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -115,7 +116,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_41.emitChange();
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -303,7 +304,7 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_34 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "Reflect", showPovClipsInGallery: true };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: true };
 obj = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -347,6 +348,17 @@ class ClipsStoreClass extends DeviceSettingsStore {
   }
   getSettings() {
     return obj.clipsSettings;
+  }
+  getEnableAutoclipping() {
+    enabled = obj.clipsSettings.enableAutoclipping;
+    if (enabled == null) {
+      const AutoclippingDefaultOverrideExperiment = AutoclippingDefaultOverrideExperiment2.AutoclippingDefaultOverrideExperiment;
+      enabled = AutoclippingDefaultOverrideExperiment.getConfig({ location: "getAutoclippingDefault" }).enabled;
+    }
+    return enabled;
+  }
+  hasUserSetAutoclippingSettings() {
+    return null != obj.clipsSettings.enableAutoclipping;
   }
   getLastClipsSession() {
     return c25;
@@ -619,18 +631,7 @@ let items = [
     const merged1 = Object.assign(clipsSettings.clipsSettings);
     return obj;
   },
-  (clipsSettings) => {
-    let obj2;
-    let tmp = clipsSettings;
-    if (false === clipsSettings.clipsSettings.enableAutoclipping) {
-      obj = { clipsSettings: obj2 };
-      const merged = Object.assign(clipsSettings);
-      obj2 = { clipsEnabled: false };
-      const merged1 = Object.assign(clipsSettings.clipsSettings);
-      tmp = obj;
-    }
-    return tmp;
-  },
+  (arg0) => arg0,
   (clipsSettings) => {
     let obj2;
     let obj3;

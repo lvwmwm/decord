@@ -1,25 +1,22 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18358
+// Function ID: 18359
 // Name: GuildsBarDirectMessage
-// Dependencies: [19, 502, 6556, 4857, 6873, 4947, 1389, 1084, 21, 5005, 587, 558, 576, 18255, 504, 9054, 1125, 18258, 5745, 10759, 18300, 10756, 1199, 5707, 2]
+// Dependencies: [19, 502, 6563, 4858, 6880, 4951, 1384, 1072, 21, 5009, 575, 18314, 504, 9066, 1114, 18317, 5751, 10782, 18359, 10779, 1188, 5712, 2]
 
-// Module 18299 (GuildsBarDirectMessage)
+// Module 18358 (GuildsBarDirectMessage)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9054 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9066 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6556 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6873 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CallStore from "CallStore" /* 6563 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6880 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -28,289 +25,7 @@ const jsx = Fragment.jsx;
 let obj = { dm: size };
 size = { width: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE, height: nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE };
 let closure_12 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsBarDirectMessage(channelId) {
-  let badge;
-  let channel;
-  let cutouts;
-  let dmRecipient;
-  let first;
-  let label;
-  let tmp11;
-  let tmp7;
-  let tmp9;
-  const tmp = channelId;
-  let obj = channelId(channel[12]);
-  const cResult = obj.c(32);
-  channelId = channelId.channelId;
-  const tmp4 = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { disableSelectedColor: true, disableBGColor: true };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(channel[13]);
-  tmpResult.useGuildsBarAnimatedWrapperStyles(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let tmp8 = GuildReadStateStore;
-    const items = [GuildReadStateStore];
-    cResult[1] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] !== channelId) {
-    class I {
-      constructor() {
-        return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-      }
-    }
-    cResult[2] = channelId;
-    cResult[3] = I;
-    tmp9 = I;
-  } else {
-    class I {
-      constructor() {
-        return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-      }
-    }
-  }
-  const tmpResult3 = tmp(channel[14]);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp7, tmp9);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class I {
-      constructor() {
-        return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-      }
-    }
-    const items1 = [ChannelStore, , , , ];
-    items1[1] = UserStore;
-    items1[2] = RelationshipStore;
-    items1[3] = CallStore;
-    items1[4] = AuthenticationStore;
-    cResult[4] = items1;
-    tmp11 = items1;
-  } else {
-    class I {
-      constructor() {
-        return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-      }
-    }
-  }
-  if (cResult[5] === channelId) {
-    class I {
-      constructor() {
-        return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-      }
-    }
-    const tmpResult4 = tmp(channel[14]);
-    const stateFromStoresObject = tmpResult4.useStateFromStoresObject(tmp11, R);
-    channel = stateFromStoresObject.channel;
-    ({ dmRecipient, label } = stateFromStoresObject);
-    if (cResult[8] !== stateFromStores) {
-      class I {
-        constructor() {
-          return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-        }
-      }
-      tmp18[0] = stateFromStores;
-      cResult[8] = stateFromStores;
-      cResult[9] = tmp18;
-    } else {
-      class I {
-        constructor() {
-          return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-        }
-      }
-    }
-    ({ badge, cutouts } = stateFromStores(channel[17])(tmp17));
-    stateFromStores(channel[17])(tmp17);
-    if (cResult[10] === channel) {
-      let tmp36;
-      class I {
-        constructor() {
-          return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-        }
-      }
-      if (cResult[13] !== channel) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-        tmp27[0] = function onPress() {
-          if (null != channel) {
-            const obj = transitionToChannel;
-            obj.transitionToChannel(tmp.id);
-          }
-        };
-        tmp27[1] = function onLongPress() {
-          if (null != channel) {
-            const obj = openChannelLongPressActionSheet;
-            const result = obj.openChannelLongPressActionSheet(tmp.id);
-          }
-        };
-        cResult[13] = channel;
-        cResult[14] = tmp27;
-      } else {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      if (cResult[15] !== channel) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-        if (channel != null) {
-          class I {
-            constructor() {
-              return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-            }
-          }
-        }
-        cResult[15] = channel;
-        cResult[16] = undefined;
-      } else {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      if (cResult[17] !== channel) {
-        let tmp32;
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-        if (null != channel) {
-          class I {
-            constructor() {
-              return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-            }
-          }
-          tmp32 = jsx(stateFromStores(channel[20]), { channel });
-        }
-        cResult[17] = channel;
-        cResult[18] = tmp32;
-      } else {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      if (cResult[19] === channel) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      if (channel != null) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      if (undefined) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-        stateFromStores(channel[21]);
-        tmp36 = <tmp19Result channel={channel} size={tmp(tmp2[22]).AvatarSizes.LARGE_48} pileSizeOverride={tmp(tmp2[22]).AvatarSizes.REFRESH_MEDIUM_32} animate />;
-      } else {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-        if (null != tmp21) {
-          class I {
-            constructor() {
-              return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-            }
-          }
-          tmp36 = jsx(tmp19(tmp2[23]), { style: tmp4.dm, source: tmp21 });
-        }
-      }
-      cResult[19] = channel;
-      cResult[20] = tmp21;
-      cResult[21] = tmp4;
-      cResult[22] = tmp36;
-    }
-    if (channel != null) {
-      class I {
-        constructor() {
-          return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-        }
-      }
-    }
-    let tmp24;
-    if (tmp24) {
-      class I {
-        constructor() {
-          return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-        }
-      }
-      if (dmRecipient != null) {
-        class I {
-          constructor() {
-            return GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count;
-          }
-        }
-      }
-      tmp24 = tmp25;
-    }
-    cResult[10] = channel;
-    cResult[11] = dmRecipient;
-    cResult[12] = tmp24;
-  }
-  class R {
-    constructor() {
-      let stringResult;
-      channel = ChannelStore.getChannel(channelId);
-      let type;
-      if (channel != null) {
-        type = channel.type;
-      }
-      let user;
-      if (type === ChannelTypes.DM) {
-        user = UserStore.getUser(channel.getRecipientId());
-      }
-      const call = CallStore.getCall(tmp);
-      const id = AuthenticationStore.getId();
-      let hasItem = null != call && null != id;
-      const obj2 = CallStore;
-      if (hasItem) {
-        const ringing = call.ringing;
-        hasItem = ringing.includes(id);
-      }
-      const obj = { channel, dmRecipient: user, label: stringResult };
-      const tmp8 = obj2.isCallActive(channelId) && !hasItem;
-      if (null != channel) {
-        const obj3 = { channel, unread: stateFromStores > 0, mentionCount: stateFromStores, isIncomingCall: hasItem, isOngoingCall: tmp8 };
-        stringResult = getChannelA11yLabelDefault(obj3);
-      } else {
-        const intl = intl2.intl;
-        stringResult = intl.string(intl2.t.zLZPmk);
-      }
-      return obj;
-    }
-  }
-  cResult[5] = channelId;
-  cResult[6] = stateFromStores;
-  cResult[7] = R;
-}) : (function GuildsBarDirectMessage(channelId) {
+const memoResult = react.memo(function GuildsBarDirectMessage(channelId) {
   let badge;
   let cutouts;
   let tmp11Result2;
@@ -318,12 +33,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let channel;
   let tmp2 = channelId;
   const tmp = closure_12();
-  let obj = channelId(channel[13]);
+  let obj = channelId(channel[11]);
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
-  let obj2 = channelId(channel[14]);
+  let obj2 = channelId(channel[12]);
   const items = [GuildReadStateStore];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildReadStateStore.getMentionCountForPrivateChannel(channelId).count);
-  let obj3 = channelId(channel[14]);
+  let obj3 = channelId(channel[12]);
   const items1 = [ChannelStore, UserStore, RelationshipStore, CallStore, AuthenticationStore];
   const stateFromStoresObject = obj3.useStateFromStoresObject(items1, () => {
     let stringResult;
@@ -358,7 +73,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   channel = stateFromStoresObject.channel;
   const dmRecipient = stateFromStoresObject.dmRecipient;
   const label = stateFromStoresObject.label;
-  let tmp8 = stateFromStores(channel[17])({ mentionCount: stateFromStores });
+  let tmp8 = stateFromStores(channel[15])({ mentionCount: stateFromStores });
   const items2 = [channel, dmRecipient];
   ({ badge, cutouts } = tmp8);
   const memo = dmRecipient.useMemo(() => {
@@ -383,13 +98,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     let obj = {
       onPress() {
         if (null != closure_1_2) {
-          const obj = channelId(channel[18]);
+          const obj = channelId(channel[16]);
           obj.transitionToChannel(tmp.id);
         }
       },
       onLongPress() {
         if (null != closure_1_2) {
-          const obj = channelId(channel[19]);
+          const obj = channelId(channel[17]);
           const result = obj.openChannelLongPressActionSheet(tmp.id);
         }
       }
@@ -397,32 +112,32 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return obj;
   }, items3);
   let isMultiUserDMResult;
-  stateFromStores(channel[13]);
+  stateFromStores(channel[11]);
   if (channel != null) {
     isMultiUserDMResult = channel.isMultiUserDM();
   }
   let tmp11Result = null;
   if (null != channel) {
     const obj5 = { channel };
-    tmp11Result = tmp11(tmp7(tmp3[20]), obj5);
+    tmp11Result = tmp11(tmp7(tmp3[18]), obj5);
   }
   let isMultiUserDMResult1;
   if (channel != null) {
     isMultiUserDMResult1 = channel.isMultiUserDM();
   }
   if (isMultiUserDMResult1) {
-    const obj6 = { channel, size: tmp2(channel[22]).AvatarSizes.LARGE_48, pileSizeOverride: tmp2(channel[22]).AvatarSizes.REFRESH_MEDIUM_32, animate: true };
-    const tmp7Result = stateFromStores(channel[21]);
+    const obj6 = { channel, size: tmp2(channel[20]).AvatarSizes.LARGE_48, pileSizeOverride: tmp2(channel[20]).AvatarSizes.REFRESH_MEDIUM_32, animate: true };
+    const tmp7Result = stateFromStores(channel[19]);
     tmp11Result2 = tmp11(tmp7Result, obj6);
   } else {
     tmp11Result2 = null;
     if (null != memo) {
       const obj7 = { style: tmp.dm, source: memo };
-      tmp11Result2 = tmp11(tmp7(tmp3[23]), obj7);
+      tmp11Result2 = tmp11(tmp7(tmp3[21]), obj7);
     }
   }
   return <tmp12 selected={false} circle={!isMultiUserDMResult} unread styles={guildsBarAnimatedWrapperStyles} label={label} overState="Boolean" config={memo1} cutouts={cutouts} externalChildren={badge} expandedChildren={tmp11Result}>{tmp11Result2}</tmp12>;
-}));
+});
 size = size_mod;
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarDirectMessage.tsx");
 

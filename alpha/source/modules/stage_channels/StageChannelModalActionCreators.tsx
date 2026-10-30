@@ -1,18 +1,18 @@
-// Module ID: 7936
-// Function ID: 7937
+// Module ID: 7942
+// Function ID: 7943
 // Name: StageChannelModalActionCreators
-// Dependencies: [5, 6701, 4857, 4879, 4937, 4908, 4865, 7927, 7495, 6889, 7937, 6693, 6704, 7887, 7938, 2]
+// Dependencies: [5, 6708, 4858, 4880, 4941, 4912, 4866, 7933, 7503, 6896, 7943, 6700, 6711, 7893, 7944, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 7936 (StageChannelModalActionCreators)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6693 */;
-import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7927 */;
+// Module 7942 (StageChannelModalActionCreators)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6700 */;
+import StageChannelActionCreatorExtrasAll from "StageChannelActionCreatorExtras" /* 7933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ let obj = function _connectOrLurkStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -77,7 +77,7 @@ let obj = function _connectOrLurkStage() {
             value2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -170,7 +170,7 @@ function connectToStage(channel, flag) {
       let num = obj2.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       const tmp7 = importAll;
       if (num) {
-        const tmp7Result = tmp7(7927);
+        const tmp7Result = tmp7(7933);
         const result = tmp7Result.openStageBlockedUsersSheet(channel, () => {
           connectAndOpen(channel, true);
         });
@@ -219,14 +219,14 @@ function connectAndOpen(channel, flag, flag2, arg3) {
     result = obj.shouldShowVoiceChannelChangeConfirmation(channel);
   }
   if (result) {
-    const obj2 = flag2(7927);
+    const obj2 = flag2(7933);
     result = obj2.showChannelChangeConfirmationAlert(channel, () => {
       connectAndOpen(channel, flag, flag2, true);
     });
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      const obj3 = flag2(7927);
+      const obj3 = flag2(7933);
       obj3.navigateToStage(channel, voiceChannelId);
     }
   }

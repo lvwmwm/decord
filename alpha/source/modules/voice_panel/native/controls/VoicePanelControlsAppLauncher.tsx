@@ -1,17 +1,16 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19284
+// Function ID: 19285
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 4857, 10972, 1084, 21, 5005, 558, 576, 9774, 10973, 8799, 504, 38, 13630, 1120, 11261, 11262, 5086, 12042, 13631, 1125, 2]
+// Dependencies: [19, 4858, 11202, 1072, 21, 5009, 9800, 11203, 8833, 504, 38, 13778, 1109, 11466, 11467, 5090, 12231, 13779, 1114, 2]
 
-// Module 19181 (VoicePanelControlsAppLauncher)
-import Constants from "Constants" /* 1084 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
+// Module 19284 (VoicePanelControlsAppLauncher)
+import Constants from "Constants" /* 1072 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10972 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11202 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -29,169 +28,8 @@ let obj = { container: { width: "100%", paddingTop: CONTROLS_DRAWER_HEADER_SIZE 
 let closure_10 = createStyles.createStyles(obj);
 const __initData = { code: "function VoicePanelControlsAppLauncherTsx1(){const{gestureSpecs}=this.__closure;return gestureSpecs.get().active;}" };
 const __initData2 = { code: "function VoicePanelControlsAppLauncherTsx2(){const{gestureSpecs}=this.__closure;return gestureSpecs.get().isDrawer;}" };
-const __initData3 = { code: "function VoicePanelControlsAppLauncherTsx3(){const{isGestureActive,isGestureDrawerMode,windowDimensions,safeArea}=this.__closure;const height=isGestureActive.get()||!isGestureDrawerMode.get()?windowDimensions.height-safeArea.top:\"100%\";return{height:height};}" };
-const __initData4 = { code: "function VoicePanelControlsAppLauncherTsx4(){const{gestureSpecs}=this.__closure;return gestureSpecs.get().active;}" };
-const __initData5 = { code: "function VoicePanelControlsAppLauncherTsx5(){const{gestureSpecs}=this.__closure;return gestureSpecs.get().isDrawer;}" };
-const __initData6 = { code: "function VoicePanelControlsAppLauncherTsx6(){const{isGestureActive,isGestureDrawerMode,windowDimensions,safeArea}=this.__closure;const height=isGestureActive.get()||!isGestureDrawerMode.get()?windowDimensions.height-safeArea.top:'100%';return{height:height};}" };
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelControlsAppLauncher(gestureSpecs) {
-  let channelId;
-  let first;
-  let safeArea;
-  let setControlsMode;
-  let styles;
-  let tmp11;
-  let windowDimensions;
-  let obj = gestureSpecs(channelId[7]);
-  const cResult = obj.c(27);
-  gestureSpecs = gestureSpecs.gestureSpecs;
-  const tmp4 = closure_10();
-  const obj2 = gestureSpecs(channelId[8]);
-  const gradientTop = obj2.useGradientTop();
-  const context = react.useContext(setControlsMode(channelId[9]));
-  const tmp6 = setControlsMode;
-  setControlsMode = context.setControlsMode;
-  channelId = context.channelId;
-  ({ safeArea, windowDimensions } = context);
-  const tmp8 = setControlsMode(channelId[10])(windowDimensions);
-  react = tmp8;
-  const rect = setControlsMode(channelId[10])(safeArea);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [rect];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function l() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[2];
-  }
-  const tmpResult = gestureSpecs(channelId[11]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp11);
-  tmp6(channelId[12])(null != stateFromStores, "channel should not be null");
-  if (cResult[3] === rect.left) {
-    if (cResult[4] === rect.right) {
-      let tmp17;
-      if (cResult[7] !== setControlsMode) {
-        class G {
-          constructor() {
-            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-            ComponentDispatch.dispatch(ComponentActions.SELECT_ACTIVITY);
-            const obj = { mode: hasOwnProperty.HIDDEN };
-            setControlsMode(obj);
-          }
-        }
-        cResult[7] = setControlsMode;
-        cResult[8] = G;
-      } else {
-        class G {
-          constructor() {
-            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-            ComponentDispatch.dispatch(ComponentActions.SELECT_ACTIVITY);
-            const obj = { mode: hasOwnProperty.HIDDEN };
-            setControlsMode(obj);
-          }
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class G {
-          constructor() {
-            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-            ComponentDispatch.dispatch(ComponentActions.SELECT_ACTIVITY);
-            const obj = { mode: hasOwnProperty.HIDDEN };
-            setControlsMode(obj);
-          }
-        }
-        cResult[9] = tmp18;
-        tmp17 = tmp18;
-      } else {
-        class G {
-          constructor() {
-            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-            ComponentDispatch.dispatch(ComponentActions.SELECT_ACTIVITY);
-            const obj = { mode: hasOwnProperty.HIDDEN };
-            setControlsMode(obj);
-          }
-        }
-      }
-      const tmpResult7 = gestureSpecs(channelId[15]);
-      const appLauncherChatInputRefDummy = tmpResult7.useAppLauncherChatInputRefDummy(tmp17);
-      const VOICE = tmp(tmp2[16]).AppLauncherEntrypoint.VOICE;
-      react.useRef(gestureSpecs(channelId[15]).AppLauncherKeyboardCloseReason.DISMISSED);
-      react.useRef(undefined);
-      const tmpResult8 = gestureSpecs(channelId[17]);
-      const sharedValue = tmpResult8.useSharedValue(0);
-      const tmpResult9 = gestureSpecs(channelId[17]);
-      const sharedValue1 = tmpResult9.useSharedValue(0);
-      const tmpResult10 = gestureSpecs(channelId[17]);
-      class O {
-        constructor() {
-          return gestureSpecs.get().active;
-        }
-      }
-      const obj4 = { gestureSpecs };
-      O.__closure = obj4;
-      O.__workletHash = 1130089519653;
-      O.__initData = __initData;
-      const derivedValue = tmpResult10.useDerivedValue(O);
-      const tmpResult11 = gestureSpecs(channelId[17]);
-      class N {
-        constructor() {
-          return gestureSpecs.get().isDrawer;
-        }
-      }
-      const obj6 = { gestureSpecs };
-      N.__closure = obj6;
-      N.__workletHash = 13970291088135;
-      N.__initData = __initData2;
-      const derivedValue1 = tmpResult11.useDerivedValue(N);
-      const tmpResult12 = gestureSpecs(channelId[17]);
-      class F {
-        constructor() {
-          let height;
-          if (derivedValue.get()) {
-            height = styles.height - rect.top;
-          } else {
-            height = "100%";
-          }
-          return { height };
-        }
-      }
-      const obj7 = { isGestureActive: derivedValue, isGestureDrawerMode: derivedValue1, windowDimensions: tmp8, safeArea: rect };
-      F.__closure = obj7;
-      F.__workletHash = 14526970665433;
-      F.__initData = __initData3;
-      const animatedStyle = tmpResult12.useAnimatedStyle(F);
-      if (cResult[10] === animatedStyle) {
-        class G {
-          constructor() {
-            const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-            ComponentDispatch.dispatch(ComponentActions.SELECT_ACTIVITY);
-            const obj = { mode: hasOwnProperty.HIDDEN };
-            setControlsMode(obj);
-          }
-        }
-      }
-      const items1 = [tmp4.container, gradientTop, animatedStyle];
-      cResult[10] = animatedStyle;
-      cResult[11] = gradientTop;
-      cResult[12] = tmp4.container;
-      cResult[13] = items1;
-    }
-  }
-  const controlsDrawerOpenWidth = obj5.getControlsDrawerOpenWidth(tmp8.width, rect.left, rect.right);
-  cResult[3] = rect.left;
-  cResult[4] = rect.right;
-  cResult[5] = tmp8.width;
-  cResult[6] = controlsDrawerOpenWidth;
-}) : (function VoicePanelControlsAppLauncher(gestureSpecs) {
+const __initData3 = { code: "function VoicePanelControlsAppLauncherTsx3(){const{isGestureActive,isGestureDrawerMode,windowDimensions,safeArea}=this.__closure;const height=isGestureActive.get()||!isGestureDrawerMode.get()?windowDimensions.height-safeArea.top:'100%';return{height:height};}" };
+const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpecs) {
   let View;
   let c2;
   let intl;
@@ -207,20 +45,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   react = undefined;
   let derivedValue1;
   const tmp = closure_10();
-  let obj = gestureSpecs(9774);
+  let obj = gestureSpecs(9800);
   const gradientTop = obj.useGradientTop();
-  const context = react.useContext(setControlsMode(10973));
+  const context = react.useContext(setControlsMode(11203));
   setControlsMode = context.setControlsMode;
   ({ channelId: c2, safeArea, windowDimensions } = context);
-  const tmp4 = setControlsMode(8799)(windowDimensions);
+  const tmp4 = setControlsMode(8833)(windowDimensions);
   react = tmp4;
-  const rect = setControlsMode(8799)(safeArea);
+  const rect = setControlsMode(8833)(safeArea);
   const items = [rect];
   const obj2 = gestureSpecs(504);
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c2));
   setControlsMode(38)(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = gestureSpecs(13630);
+  const obj3 = gestureSpecs(13778);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp4.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -228,34 +66,34 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = gestureSpecs(11261);
+  const obj4 = gestureSpecs(11466);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = gestureSpecs(11262).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(gestureSpecs(11261).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = gestureSpecs(11467).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(gestureSpecs(11466).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
-  const obj5 = gestureSpecs(5086);
+  const obj5 = gestureSpecs(5090);
   const sharedValue = obj5.useSharedValue(0);
-  const obj6 = gestureSpecs(5086);
+  const obj6 = gestureSpecs(5090);
   const sharedValue1 = obj6.useSharedValue(0);
-  const fn = function x() {
+  const fn = function y() {
     return gestureSpecs.get().active;
   };
   fn.__closure = { gestureSpecs };
-  fn.__workletHash = 5978423252544;
-  fn.__initData = __initData4;
-  const obj7 = gestureSpecs(5086);
+  fn.__workletHash = 1130089519653;
+  fn.__initData = __initData;
+  const obj7 = gestureSpecs(5090);
   const derivedValue = obj7.useDerivedValue(fn);
-  const obj8 = gestureSpecs(5086);
+  const obj8 = gestureSpecs(5090);
   class E {
     constructor() {
       return gestureSpecs.get().isDrawer;
     }
   }
   E.__closure = { gestureSpecs };
-  E.__workletHash = 1602221389280;
-  E.__initData = __initData5;
+  E.__workletHash = 13970291088135;
+  E.__initData = __initData2;
   derivedValue1 = obj8.useDerivedValue(E);
-  const obj9 = gestureSpecs(5086);
+  const obj9 = gestureSpecs(5090);
   class L {
     constructor() {
       let height;
@@ -268,22 +106,22 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     }
   }
   L.__closure = { isGestureActive: derivedValue, isGestureDrawerMode: derivedValue1, windowDimensions: tmp4, safeArea: rect };
-  L.__workletHash = 14640910836060;
-  L.__initData = __initData6;
+  L.__workletHash = 3671157204025;
+  L.__initData = __initData3;
   const obj10 = { children: closure_8(View, obj11) };
   const animatedStyle = obj9.useAnimatedStyle(L);
   obj11 = { style: items2, children: items3 };
   items2 = [tmp.container, gradientTop, animatedStyle];
-  View = setControlsMode(5086).View;
+  View = setControlsMode(5090).View;
   items3 = [, ];
   const obj12 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
-  items3[0] = closure_7(setControlsMode(12042), obj12);
-  const obj13 = { title: intl.string(gestureSpecs(1125).t.shUONg), disablePill: true };
-  const tmp17 = setControlsMode(13631);
-  intl = gestureSpecs(1125).intl;
+  items3[0] = closure_7(setControlsMode(12231), obj12);
+  const obj13 = { title: intl.string(gestureSpecs(1114).t.shUONg), disablePill: true };
+  const tmp17 = setControlsMode(13779);
+  intl = gestureSpecs(1114).intl;
   items3[1] = closure_7(tmp17, obj13);
   return closure_7(closure_9, obj10);
-}));
+});
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsAppLauncher.tsx");
 
 export default memoResult;

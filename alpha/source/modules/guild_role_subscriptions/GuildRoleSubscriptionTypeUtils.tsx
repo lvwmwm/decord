@@ -1,15 +1,15 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17151
+// Function ID: 17152
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [17071, 1391, 1095, 1125, 7399, 2]
+// Dependencies: [17125, 1386, 1083, 1114, 7407, 2]
 // Exports: formatMonthlyPriceLabel, formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 17097 (GuildRoleSubscriptionTypeUtils)
-import Constants from "Constants" /* 1095 */;
-import intl5 from "intl" /* 1125 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import PriceUtils from "PriceUtils" /* 7399 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17071 */;
+// Module 17151 (GuildRoleSubscriptionTypeUtils)
+import Constants from "Constants" /* 1083 */;
+import intl5 from "intl" /* 1114 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import PriceUtils from "PriceUtils" /* 7407 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17125 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
@@ -35,32 +35,32 @@ export function formatPlanInterval(first3) {
   const intl = intl5.intl;
   const format = intl.format;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    cuSp8Q = tmp(1125).t["3rUmPQ"];
+    cuSp8Q = tmp(1114).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = tmp(1125).t.zuN545;
+    cuSp8Q = tmp(1114).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = tmp(1125).t.cuSp8Q;
+    cuSp8Q = tmp(1114).t.cuSp8Q;
   }
   return format(cuSp8Q, { count });
 }
-export function formatMonthlyPriceLabel(price_tier) {
+export function formatMonthlyPriceLabel(first1) {
   let cuSp8Q;
   let format;
   let obj2;
   const intl = intl5.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj = { price: obj2.formatPrice(price_tier, CurrencyCodes.USD), interval: format(cuSp8Q, { count: 1 }) };
+  const obj = { price: obj2.formatPrice(first1, CurrencyCodes.USD), interval: format(cuSp8Q, { count: 1 }) };
   const CgmBaG = intl5.t.CgmBaG;
   const MONTH = SubscriptionIntervalTypes.MONTH;
   obj2 = PriceUtils;
   const intl2 = intl5.intl;
   format = intl2.format;
   if (SubscriptionIntervalTypes.DAY === MONTH) {
-    cuSp8Q = tmp(1125).t["3rUmPQ"];
+    cuSp8Q = tmp(1114).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === MONTH) {
-    cuSp8Q = tmp(1125).t.zuN545;
+    cuSp8Q = tmp(1114).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === MONTH) {
-    cuSp8Q = tmp(1125).t.cuSp8Q;
+    cuSp8Q = tmp(1114).t.cuSp8Q;
   }
   return formatToPlainString(CgmBaG, obj);
 }

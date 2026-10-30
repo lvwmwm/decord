@@ -1,49 +1,17 @@
-// Module ID: 19437
-// Function ID: 19438
+// Module ID: 19500
+// Function ID: 19501
 // Name: InterestPickerExperiment
-// Dependencies: [19, 1453, 558, 576, 2]
-// Exports: isInterestPickerExperimentEnabled
+// Dependencies: [19, 1448, 2]
+// Exports: isInterestPickerExperimentEnabled, useInterestPickerGameList
 
-// Module 19437 (InterestPickerExperiment)
-import react2 from "react" /* 576 */;
-import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19500 (InterestPickerExperiment)
+import react_mod from "react" /* 19 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
+let react = react_mod;
 let obj = { name: "2026-10-interest-picker", kind: "user", defaultConfig: { enabled: false, gameList: "popular" }, variations: { 0: { enabled: false, gameList: "popular" }, 1: { enabled: true, gameList: "popular" }, 2: { enabled: true, gameList: "trending" }, 3: { enabled: true, gameList: "mobile" } } };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInterestPickerGameList(location) {
-  let gameList;
-  const obj = react2;
-  const cResult = obj.c(2);
-  try {
-    let tmp3;
-    if (cResult[0] !== location) {
-      const obj2 = { location };
-      const config = apexExperiment.getConfig(obj2, { autoTrackExposure: false });
-      tmp3 = config;
-      cResult[0] = location;
-      cResult[1] = config;
-    } else {
-      tmp3 = cResult[1];
-    }
-    gameList = tmp3.gameList;
-  } catch (err) {
-    gameList = null;
-  }
-  return gameList;
-}) : (function useInterestPickerGameList(_location) {
-  const items = [_location];
-  return react.useMemo(() => {
-    try {
-      const obj = { location: _location };
-      return apexExperiment.getConfig(obj, { autoTrackExposure: false }).gameList;
-    } catch (err) {
-      return null;
-    }
-  }, items);
-});
 const result = size.fileFinishedImporting("modules/waterwheels/interest/InterestPickerExperiment.tsx");
 
 export const InterestPickerExperiment = apexExperiment;
@@ -55,4 +23,16 @@ export function isInterestPickerExperimentEnabled(nuf_interest_picker_step) {
     return false;
   }
 }
-export const useInterestPickerGameList = tmp3;
+export function useInterestPickerGameList(InterestPickerStep) {
+  let _location;
+  react = InterestPickerStep;
+  const items = [InterestPickerStep];
+  return react.useMemo(() => {
+    try {
+      const obj = { location: _location };
+      return apexExperiment.getConfig(obj, { autoTrackExposure: false }).gameList;
+    } catch (err) {
+      return null;
+    }
+  }, items);
+}

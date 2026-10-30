@@ -1,181 +1,88 @@
-// Module ID: 7468
-// Function ID: 7469
+// Module ID: 7476
+// Function ID: 7477
 // Name: subscribeGuildMembers
-// Dependencies: [19, 6747, 1389, 558, 576, 12, 1254, 7437, 2]
+// Dependencies: [19, 6754, 12, 1243, 7445, 2]
+// Exports: useEnsureHydratedGuildUsers, useSubscribeGuildMembers
 
-// Module 7468 (subscribeGuildMembers)
-import _modDef12 from "module_12" /* 12 */;
+// Module 7476 (subscribeGuildMembers)
 import react from "react" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6747 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 6754 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, importDefault;
-
-let c6 = false;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscribeGuildMembers(arg0, arg1) {
-  let closure_0;
-  _require = arg0;
-  let closure_1 = arg1;
-  let obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === arg1) {
-    let tmp2;
-    let tmp3;
-    if (cResult[1] === arg0) {
-      tmp2 = cResult[2];
-      tmp3 = cResult[3];
-    }
-    const effect = react.useEffect(tmp2, tmp3);
-  }
-  const fn = function l() {
-    let reason;
-    let arr = _modDef12;
-    let item = arr.forEach(closure_0, (userIds, guildId) => {
-      let obj3;
-      const tmp = !c6 && userIds.length > 50;
-      if (tmp) {
-        c6 = true;
-        const obj2 = { extra: obj3 };
-        obj3 = { count: userIds.length, guildId, reason };
-        const obj = reason(dependencyMap[6]);
-        obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
-      }
-      const obj4 = closure_0(dependencyMap[7]);
-      obj4.subscribeMembers(guildId, userIds);
-    });
-    return () => {
-      const arr = reason(dependencyMap[5]);
-      const item = arr.forEach(closure_1_0, (userIds, guildId) => {
-        const obj = closure_1_0(closure_1_2[7]);
-        return obj.unsubscribeMembers(guildId, userIds);
-      });
-    };
-  };
-  const items = [arg0, arg1];
-  cResult[0] = arg1;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  cResult[3] = items;
-  tmp3 = items;
-  tmp2 = fn;
-}) : (function useSubscribeGuildMembers(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const items = [arg0, arg1];
-  const effect = react.useEffect(() => {
-    let reason;
-    let arr = _modDef12;
-    let item = arr.forEach(closure_0, (userIds, guildId) => {
-      let obj3;
-      const tmp = !c6 && userIds.length > 50;
-      if (tmp) {
-        c6 = true;
-        const obj2 = { extra: obj3 };
-        obj3 = { count: userIds.length, guildId, reason };
-        const obj = reason(dependencyMap[6]);
-        obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
-      }
-      const obj4 = closure_0(dependencyMap[7]);
-      obj4.subscribeMembers(guildId, userIds);
-    });
-    return () => {
-      const arr = reason(dependencyMap[5]);
-      const item = arr.forEach(closure_1_0, (userIds, guildId) => {
-        const obj = closure_1_0(closure_1_2[7]);
-        return obj.unsubscribeMembers(guildId, userIds);
-      });
-    };
-  }, items);
-});
-let closure_7 = tmp2;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEnsureHydratedGuildUsers(arg0, arg1) {
-  let closure_0;
-  let closure_1;
-  let first;
-  let user;
-  _require = arg0;
-  importDefault = arg1;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  if (0 !== arg1.length) {
-    if (cResult[1] === arg0) {
-      let tmp4;
-      if (cResult[2] === arg1) {
-        tmp4 = cResult[3];
-      }
-      first = tmp4;
-    }
-    const obj2 = {};
-    obj2[arg0] = arg1;
-    cResult[1] = arg0;
-    cResult[2] = arg1;
-    cResult[3] = obj2;
-    tmp4 = obj2;
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj3 = {};
-      cResult[0] = obj3;
-      first = obj3;
-    } else {
-      first = cResult[0];
-    }
-  }
-  if (cResult[4] === arg0) {
-    let tmp5;
-    let tmp6;
-    if (cResult[5] === arg1) {
-      tmp5 = cResult[6];
-      tmp6 = cResult[7];
-    }
-    const effect = react.useEffect(tmp5, tmp6);
-    closure_7(first, "useEnsureHydratedGuildUsers");
-  }
-  class M {
-    constructor() {
-      item = closure_1.forEach(function() { /* body not rendered: F147701 */ });
-      return;
-    }
-  }
-  const items = [arg0, arg1];
-  cResult[4] = arg0;
-  cResult[5] = arg1;
-  cResult[6] = M;
-  cResult[7] = items;
-  tmp6 = items;
-  tmp5 = M;
-}) : (function useEnsureHydratedGuildUsers(arg0, arg1) {
-  let user;
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  const items = [arg0, arg1];
-  const items1 = [arg0, arg1];
-  const memo = react.useMemo(() => {
-    let obj;
-    if (0 === closure_1.length) {
-      obj = {};
-    } else {
-      obj = {};
-      obj[closure_0] = tmp;
-    }
-    return obj;
-  }, items);
-  const effect = react.useEffect(() => {
-    const item = closure_1.forEach((item) => {
-      if (null == user.getUser(item)) {
-        const member = GuildMemberRequesterStore.requestMember(closure_1_0, item);
-      }
-    });
-  }, items1);
-  closure_7(memo, "useEnsureHydratedGuildUsers");
-});
+let c5 = false;
 const result = size.fileFinishedImporting("lib/guild/subscribeGuildMembers.tsx");
 
 export const MAX_GUILD_MEMBER_SUBSCRIPTIONS = 50;
-export const useSubscribeGuildMembers = tmp2;
-export const useEnsureHydratedGuildUsers = tmp3;
+export function useSubscribeGuildMembers(memo, AddMembersActionSheet) {
+  let closure_0 = memo;
+  let closure_1 = AddMembersActionSheet;
+  const items = [memo, AddMembersActionSheet];
+  const effect = react.useEffect(() => {
+    let reason;
+    let arr = useEnsureHydratedGuildUsers(dependencyMap[2]);
+    let item = arr.forEach(memo, (userIds, guildId) => {
+      let obj3;
+      const tmp = !c5 && userIds.length > 50;
+      if (tmp) {
+        c5 = true;
+        const obj2 = { extra: obj3 };
+        obj3 = { count: userIds.length, guildId, reason };
+        const obj = useEnsureHydratedGuildUsers(closure_2_2[3]);
+        obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
+      }
+      const obj4 = memo(closure_2_2[4]);
+      obj4.subscribeMembers(guildId, userIds);
+    });
+    return () => {
+      const arr = useEnsureHydratedGuildUsers(closure_2_2[2]);
+      const item = arr.forEach(memo, (userIds, guildId) => {
+        const obj = closure_1_0(closure_1_2[4]);
+        return obj.unsubscribeMembers(guildId, userIds);
+      });
+    };
+  }, items);
+}
+export function useEnsureHydratedGuildUsers(guild_id, items1) {
+  let closure_0 = guild_id;
+  const items = [guild_id, items1];
+  const memo = react.useMemo(() => {
+    let obj;
+    if (0 === items1.length) {
+      obj = {};
+    } else {
+      obj = {};
+      obj[guild_id] = tmp;
+    }
+    return obj;
+  }, items);
+  items1 = [guild_id, items1];
+  const effect = react.useEffect(() => {
+    const item = items1.forEach((item) => GuildMemberRequesterStore.requestMember(guild_id, item));
+  }, items1);
+  const useEnsureHydratedGuildUsers = "useEnsureHydratedGuildUsers";
+  const items2 = [memo, "useEnsureHydratedGuildUsers"];
+  const effect1 = react.useEffect(() => {
+    let reason;
+    let arr = useEnsureHydratedGuildUsers(dependencyMap[2]);
+    let item = arr.forEach(memo, (userIds, guildId) => {
+      let obj3;
+      const tmp = !c5 && userIds.length > 50;
+      if (tmp) {
+        c5 = true;
+        const obj2 = { extra: obj3 };
+        obj3 = { count: userIds.length, guildId, reason };
+        const obj = useEnsureHydratedGuildUsers(closure_2_2[3]);
+        obj.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", obj2);
+      }
+      const obj4 = memo(closure_2_2[4]);
+      obj4.subscribeMembers(guildId, userIds);
+    });
+    return () => {
+      const arr = useEnsureHydratedGuildUsers(closure_2_2[2]);
+      const item = arr.forEach(memo, (userIds, guildId) => {
+        const obj = closure_1_0(closure_1_2[4]);
+        return obj.unsubscribeMembers(guildId, userIds);
+      });
+    };
+  }, items2);
+}

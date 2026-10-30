@@ -1,12 +1,12 @@
-// Module ID: 10841
-// Function ID: 10842
+// Module ID: 10864
+// Function ID: 10865
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [5664, 6832, 2]
+// Dependencies: [5670, 6839, 2]
 // Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 10841 (conjurePreviewFrameSurfaces)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
+// Module 10864 (conjurePreviewFrameSurfaces)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
 import size from "module_2" /* 2 */;
 
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };
@@ -47,10 +47,10 @@ export function previewFrameSurfaceOptions(previewSupportedSurfaces) {
   }
   return mapped;
 }
-export function resolvePreviewFrameSurface(first1, cResult) {
+export function resolvePreviewFrameSurface(first1, memo) {
   let tmp = first1;
   if (null == first1) {
-    let APP_CHANNEL = cResult[0];
+    let APP_CHANNEL = memo[0];
     if (APP_CHANNEL == null) {
       APP_CHANNEL = EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL;
     }

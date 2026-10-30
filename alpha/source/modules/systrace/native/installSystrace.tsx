@@ -1,13 +1,13 @@
-// Module ID: 16137
-// Function ID: 16138
+// Module ID: 16177
+// Function ID: 16178
 // Name: installSystrace
-// Dependencies: [17, 1381, 16138, 2]
+// Dependencies: [17, 1376, 16178, 2]
 // Exports: installSystrace
 
-// Module 16137 (installSystrace)
+// Module 16177 (installSystrace)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import react_native2 from "react-native" /* 16138 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import react_native2 from "react-native" /* 16178 */;
 import size from "module_2" /* 2 */;
 
 const Systrace = react_native.Systrace;

@@ -1,10 +1,10 @@
-// Module ID: 1456
-// Function ID: 1457
+// Module ID: 1451
+// Function ID: 1452
 // Name: apex/ApexTypes
-// Dependencies: [2, 1261]
+// Dependencies: [2, 1250]
 
-// Module 1456 (apex/ApexTypes)
-import ApexTypes from "ApexTypes" /* 1261 */;
+// Module 1451 (apex/ApexTypes)
+import ApexTypes from "ApexTypes" /* 1250 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/experiments/apex/ApexTypes.tsx");

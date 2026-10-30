@@ -1,66 +1,28 @@
-// Module ID: 6907
-// Function ID: 6908
+// Module ID: 6914
+// Function ID: 6915
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [5037, 558, 576, 504, 2]
+// Dependencies: [5041, 504, 2]
+// Exports: useCurrentUserGuildJoinRequest
 
-// Module 6907 (useCurrentUserGuildJoinRequest)
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 6914 (useCurrentUserGuildJoinRequest)
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentUserGuildJoinRequest(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserGuildJoinRequestStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function s() {
-      let request = null;
-      if (null != closure_0) {
-        request = UserGuildJoinRequestStore.getRequest(tmp);
-      }
-      return request;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useCurrentUserGuildJoinRequest(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useCurrentUserGuildJoinRequest.tsx");
+
+export function useCurrentUserGuildJoinRequest(guildId) {
+  _require = guildId;
   const items = [UserGuildJoinRequestStore];
-  const items1 = [arg0];
+  const items1 = [guildId];
   const obj = require("get initialized");
   return obj.useStateFromStores(items, () => {
     let request = null;
-    if (null != closure_0) {
+    if (null != guildId) {
       request = UserGuildJoinRequestStore.getRequest(tmp);
     }
     return request;
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useCurrentUserGuildJoinRequest.tsx");
-
-export const useCurrentUserGuildJoinRequest = tmp2;
+}

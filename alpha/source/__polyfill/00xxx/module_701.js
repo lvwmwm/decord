@@ -1,50 +1,197 @@
 // Module ID: 701
 // Function ID: 702
-// Dependencies: [697, 702]
-// Exports: getGlobalSingleton, getMainCarrier, getSentryCarrier
+// Dependencies: [32, 688, 687]
+// Exports: dsnToString, extractOrgIdFromClient, extractOrgIdFromDsnHost, makeDsn
 
 // Module 701
-import _mod697 from "module_697" /* 697 */;
-import SDK_VERSION3 from "SDK_VERSION" /* 702 */;
+import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 688 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
+function dsnFromString(arg0) {
+  let closure_0 = arg0;
+  const match = re4.exec(arg0);
+  if (match) {
+    const tmp5 = _slicedToArray(match.slice(1), 6);
+    let str = tmp5[1];
+    let str3 = "";
+    const first = tmp5[0];
+    if (undefined !== tmp5[2]) {
+      str3 = tmp7;
+    }
+    let str4 = "";
+    if (undefined !== tmp5[3]) {
+      str4 = tmp8;
+    }
+    let str5 = "";
+    if (undefined !== tmp5[4]) {
+      str5 = tmp9;
+    }
+    let str6 = "";
+    if (undefined !== tmp5[5]) {
+      str6 = tmp10;
+    }
+    const parts = str6.split("/");
+    let str8 = str6;
+    let str9 = "";
+    if (parts.length > 1) {
+      const substr = parts.slice(0, -1);
+      str9 = substr.join("/");
+      str8 = parts.pop();
+    }
+    let first1 = str8;
+    if (first1) {
+      const match1 = str8.match(/^\d+/);
+      first1 = str8;
+      if (match1) {
+        first1 = match1[0];
+      }
+    }
+    const url = { protocol: first, publicKey: str, pass: str3, host: str4, port: str5, path: str9, projectId: first1 };
+    if (!str) {
+      str = "";
+    }
+    if (!str3) {
+      str3 = "";
+    }
+    if (!str5) {
+      str5 = "";
+    }
+    if (!str9) {
+      str9 = "";
+    }
+    return url;
+  } else {
+    const obj = CONSOLE_LEVELS;
+    obj.consoleSandbox(() => {
+      console.error("Invalid Sentry Dsn: " + closure_0);
+    });
+  }
+}
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const re3 = /^o(\d+)\./;
+const re4 = /^(?:(\w+):)\/\/(?:(\w+)(?::(\w+)?)?@)((?:\[[:.%\w]+\]|[\w.-]+))(?::(\d+))?\/(.+)/;
 
-export function getGlobalSingleton(arg0, fn) {
-  let GLOBAL_OBJ = arg2;
-  if (arg2 === undefined) {
-    GLOBAL_OBJ = _mod697.GLOBAL_OBJ;
+export { dsnFromString };
+export function dsnToString(arg0) {
+  let host;
+  let pass;
+  let path;
+  let port;
+  let projectId;
+  let protocol;
+  let publicKey;
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
   }
-  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
-  GLOBAL_OBJ.__SENTRY__ = tmp3;
-  const SDK_VERSION = SDK_VERSION3.SDK_VERSION;
-  const tmp4 = tmp3[SDK_VERSION3.SDK_VERSION] || {};
-  tmp3[SDK_VERSION] = tmp4;
-  let tmp5 = tmp4[arg0];
-  if (!tmp5) {
-    const tmp7 = fn();
-    tmp4[arg0] = tmp7;
-    tmp5 = tmp7;
+  ({ host, path, pass, port, projectId, protocol, publicKey } = arg0);
+  let str = "";
+  if (flag) {
+    str = "";
+    if (pass) {
+      const _HermesInternal = HermesInternal;
+      str = ":" + pass;
+    }
   }
-  return tmp5;
+  let str3 = "";
+  if (port) {
+    const _HermesInternal2 = HermesInternal;
+    str3 = ":" + port;
+  }
+  let combined = path;
+  if (combined) {
+    const _HermesInternal3 = HermesInternal;
+    combined = "" + path + "/";
+  }
+  return "" + protocol + "://" + publicKey + str + "@" + host + str3 + "/" + combined + projectId;
 }
-export function getMainCarrier() {
-  const GLOBAL_OBJ = _mod697.GLOBAL_OBJ;
-  const tmp3 = GLOBAL_OBJ.__SENTRY__ || {};
-  GLOBAL_OBJ.__SENTRY__ = tmp3;
-  tmp3.version = tmp3.version || SDK_VERSION3.SDK_VERSION;
-  tmp3.version || SDK_VERSION3.SDK_VERSION;
-  const SDK_VERSION = tmp(702).SDK_VERSION;
-  tmp3[SDK_VERSION] = tmp3[SDK_VERSION3.SDK_VERSION] || {};
-  tmp3[SDK_VERSION3.SDK_VERSION] || {};
-  return _mod697.GLOBAL_OBJ;
+export function extractOrgIdFromClient(client) {
+  let StringResult;
+  const options = client.getOptions();
+  const str = (client.getDsn() || {}).host;
+  if (options.orgId) {
+    const _String = String;
+    StringResult = String(options.orgId);
+  } else if (str) {
+    const match = str.match(re3);
+    let tmp7;
+    if (match != null) {
+      tmp7 = match[1];
+    }
+    StringResult = tmp7;
+  }
+  return StringResult;
 }
-export function getSentryCarrier(__SENTRY__) {
-  const tmp = __SENTRY__.__SENTRY__ || {};
-  __SENTRY__.__SENTRY__ = tmp;
-  const SDK_VERSION = tmp.version || SDK_VERSION3.SDK_VERSION;
-  tmp.version = SDK_VERSION;
-  const SDK_VERSION2 = SDK_VERSION3.SDK_VERSION;
-  const tmp4 = tmp[SDK_VERSION3.SDK_VERSION] || {};
-  tmp[SDK_VERSION2] = tmp4;
-  return tmp4;
+export function extractOrgIdFromDsnHost(str) {
+  const match = str.match(re3);
+  let tmp2;
+  if (match != null) {
+    tmp2 = match[1];
+  }
+  return tmp2;
+}
+export function makeDsn(protocol) {
+  let port;
+  let projectId;
+  let url;
+  if (typeof protocol === "string") {
+    url = dsnFromString(protocol);
+  } else {
+    url = { protocol: protocol.protocol, publicKey: protocol.publicKey || "", pass: protocol.pass || "", host: protocol.host, port: protocol.port || "", path: protocol.path || "", projectId: protocol.projectId };
+  }
+  if (url) {
+    let flag = true;
+    if (url(687).DEBUG_BUILD) {
+      ({ port, projectId, protocol } = url);
+      const items = ["protocol", "publicKey", "host", "projectId"];
+      let found = items.find((item) => {
+        let flag = !url[item];
+        if (flag) {
+          const debug = CONSOLE_LEVELS.debug;
+          const _HermesInternal = HermesInternal;
+          debug.error("Invalid Sentry Dsn: " + item + " missing");
+          flag = true;
+        }
+        return flag;
+      });
+      if (!found) {
+        let num;
+        if (projectId.match(/^\d+$/)) {
+          let num2;
+          const tmp7 = "http" === protocol || "https" === protocol;
+          if (tmp7) {
+            let num3 = port;
+            if (num3) {
+              const _isNaN = isNaN;
+              const _parseInt = parseInt;
+              num3 = isNaN(parseInt(port, 10));
+            }
+            if (num3) {
+              const debug3 = tmp2(688).debug;
+              const _HermesInternal3 = HermesInternal;
+              debug3.error("Invalid Sentry Dsn: Invalid port " + port);
+              num3 = 1;
+            }
+            num2 = num3;
+          } else {
+            const debug2 = tmp2(688).debug;
+            const _HermesInternal2 = HermesInternal;
+            debug2.error("Invalid Sentry Dsn: Invalid protocol " + protocol);
+            num2 = 1;
+          }
+          num = num2;
+        } else {
+          let debug = tmp2(688).debug;
+          let _HermesInternal = HermesInternal;
+          debug.error("Invalid Sentry Dsn: Invalid projectId " + projectId);
+          num = 1;
+        }
+        found = num;
+      }
+      flag = !found;
+    }
+    if (flag) {
+      return url;
+    }
+  }
 }

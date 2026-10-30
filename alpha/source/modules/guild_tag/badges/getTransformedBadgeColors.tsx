@@ -1,11 +1,11 @@
-// Module ID: 15662
-// Function ID: 15663
+// Module ID: 15702
+// Function ID: 15703
 // Name: getTransformedBadgeColors
-// Dependencies: [683, 2]
+// Dependencies: [671, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 15662 (getTransformedBadgeColors)
-import _modDef683 from "module_683" /* 683 */;
+// Module 15702 (getTransformedBadgeColors)
+import _modDef671 from "module_671" /* 671 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");
@@ -19,8 +19,8 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
   let secondaryLuminanceWeights;
   let secondaryTintColor;
   let secondaryTintLuminances;
-  const f126154 = () => "#000000";
-  const f126155 = (item, index) => {
+  const f108598 = () => "#000000";
+  const f108599 = (item, index) => {
     const luminanceResult = obj4.luminance((item * secondaryLuminanceWeights[index].base + closure_2 * secondaryLuminanceWeights[index].tint) / (secondaryLuminanceWeights[index].base + secondaryLuminanceWeights[index].tint));
     return luminanceResult.hex();
   };
@@ -28,14 +28,14 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
   if (null != primaryTintColor) {
     let mapped;
     primaryLuminanceWeights = primaryLuminanceWeights.primaryLuminanceWeights;
-    const obj = _modDef683;
+    const obj = _modDef671;
     const tmp = importDefault;
     if (obj.valid(primaryTintColor)) {
-      const obj2 = tmp(683)(primaryTintColor);
+      const obj2 = tmp(671)(primaryTintColor);
       let closure_2 = obj2.luminance();
-      mapped = primaryTintLuminances.map(f126155);
+      mapped = primaryTintLuminances.map(f108599);
     } else {
-      mapped = primaryTintLuminances.map(f126154);
+      mapped = primaryTintLuminances.map(f108598);
     }
     primaryColorsTransformed = mapped;
   }
@@ -43,14 +43,14 @@ export function getTransformedBadgeColors(primaryLuminanceWeights) {
   if (tmp4) {
     if (null != secondaryTintColor) {
       let mapped1;
-      const obj3 = _modDef683;
+      const obj3 = _modDef671;
       const tmp6 = importDefault;
       if (obj3.valid(secondaryTintColor)) {
-        const obj4 = tmp6(683)(secondaryTintColor);
+        const obj4 = tmp6(671)(secondaryTintColor);
         closure_2 = obj4.luminance();
-        mapped1 = secondaryTintLuminances.map(f126155);
+        mapped1 = secondaryTintLuminances.map(f108599);
       } else {
-        mapped1 = secondaryTintLuminances.map(f126154);
+        mapped1 = secondaryTintLuminances.map(f108598);
       }
       secondaryBaseColors = mapped1;
     }

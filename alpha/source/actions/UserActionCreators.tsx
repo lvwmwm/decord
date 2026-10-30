@@ -1,21 +1,21 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 8744
+// Function ID: 8745
 // Name: UserActionCreators
-// Dependencies: [5, 1403, 1389, 1084, 1085, 3, 1294, 584, 6734, 1358, 38, 6433, 2]
+// Dependencies: [5, 1398, 1384, 1072, 1073, 3, 1283, 572, 6741, 1347, 38, 6440, 2]
 // Exports: acceptAgreements, fetchCurrentUser, fetchMutualFriends, fetchProfile, getUser, insertStaticUser, setFlag
 
-// Module 8710 (UserActionCreators)
+// Module 8744 (UserActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import RouteConstants from "RouteConstants" /* 1085 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import AnalyticsSchema from "AnalyticsSchema" /* 1358 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6734 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import RouteConstants from "RouteConstants" /* 1073 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1347 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6741 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1403 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserRecord from "UserRecord" /* 1398 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,7 +47,7 @@ let obj = function _fetchProfile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _fetchProfile() {
               closure_12 = undefined;
               join_request_id = 1;
               signal = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === join_request_id) {
             if (arg0 === 1) {
@@ -169,7 +169,7 @@ let obj = function _fetchProfile() {
             }
             connections_role_id = 0;
             signal = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp87) {
           closure_5 = tmp87;
@@ -203,7 +203,7 @@ obj = function _fetchMutualFriends() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -261,7 +261,7 @@ obj = function _fetchMutualFriends() {
             obj.dispatch(obj11);
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           closure_4 = tmp29;

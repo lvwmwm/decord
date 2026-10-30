@@ -1,18 +1,18 @@
-// Module ID: 14581
-// Function ID: 14582
+// Module ID: 14614
+// Function ID: 14615
 // Name: AppStoreOverlayBottomSheet
-// Dependencies: [32, 19, 21, 5005, 558, 576, 1497, 8699, 5300, 7850, 5694, 14578, 14582, 5619, 5306, 5302, 2]
+// Dependencies: [32, 19, 21, 5009, 1492, 8733, 5588, 7855, 5700, 14611, 14615, 5267, 5590, 5270, 2]
+// Exports: default
 
-// Module 14581 (AppStoreOverlayBottomSheet)
-import openURLDefault from "openURL" /* 5694 */;
-import AnalyticsActions from "AnalyticsActions" /* 7850 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14578 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14582 */;
+// Module 14614 (AppStoreOverlayBottomSheet)
+import openURLDefault from "openURL" /* 5700 */;
+import AnalyticsActions from "AnalyticsActions" /* 7855 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14611 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14615 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -21,142 +21,9 @@ let hasOwnProperty;
 let metroRequire;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ headerBar: { zIndex: 1 }, bodyContainer: { flex: 1, minHeight: 0 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayBottomSheet(metadata) {
-  let bottomSheetClose;
-  let bottomSheetRef;
-  let onDismiss;
-  let onOpen;
-  let onOverlaySurfaceClick;
-  let tmp10;
-  let tmp7;
-  let tmp8;
-  let trackOverlayCarouselScroll;
-  const tmp = metadata;
-  let obj = metadata(onDismiss[5]);
-  const cResult = obj.c(38);
-  metadata = metadata.metadata;
-  ({ trackOverlayCarouselScroll, onOverlaySurfaceClick, onOpen } = metadata);
-  const tmp2 = onDismiss;
-  onDismiss = metadata.onDismiss;
-  const onInstallPress = metadata.onInstallPress;
-  closure_7();
-  const height = onOpen(onDismiss[6])().height;
-  const tmp5 = onInstallPress(react.useState(0), 2);
-  [r10029, react] = tmp5;
-  const obj3 = metadata(onDismiss[7]);
-  const bottomSheetRef1 = obj3.useBottomSheetRef();
-  ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
-  const ref = react.useRef(null);
-  if (cResult[0] !== onOpen) {
-    const fn = function c() {
-      ref.current = Date.now();
-      onOpen();
-    };
-    const items = [onOpen];
-    cResult[0] = onOpen;
-    let num = 1;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp8 = items;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-    tmp8 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp7, tmp8);
-  const ref2 = obj2.useRef(false);
-  if (cResult[3] !== onDismiss) {
-    class D {
-      constructor() {
-        if (!ref2.current) {
-          tmp.current = true;
-          const current = ref.current;
-          let num = 0;
-          const tmp3 = onDismiss;
-          if (null != current) {
-            const _Date = Date;
-            num = Date.now() - current;
-          }
-          tmp3(num);
-        }
-      }
-    }
-    cResult[3] = onDismiss;
-    cResult[4] = D;
-    tmp10 = D;
-  } else {
-    class D {
-      constructor() {
-        if (!ref2.current) {
-          tmp.current = true;
-          const current = ref.current;
-          let num = 0;
-          const tmp3 = onDismiss;
-          if (null != current) {
-            const _Date = Date;
-            num = Date.now() - current;
-          }
-          tmp3(num);
-        }
-      }
-    }
-  }
-  const tmpResult = tmp(tmp2[8]);
-  const unmountEffect = tmpResult.useUnmountEffect(tmp10);
-  if (cResult[5] === metadata.storeUrl) {
-    class D {
-      constructor() {
-        if (!ref2.current) {
-          tmp.current = true;
-          const current = ref.current;
-          let num = 0;
-          const tmp3 = onDismiss;
-          if (null != current) {
-            const _Date = Date;
-            num = Date.now() - current;
-          }
-          tmp3(num);
-        }
-      }
-    }
-    if (cResult[8] === metadata.appId) {
-      class D {
-        constructor() {
-          if (!ref2.current) {
-            tmp.current = true;
-            const current = ref.current;
-            let num = 0;
-            const tmp3 = onDismiss;
-            if (null != current) {
-              const _Date = Date;
-              num = Date.now() - current;
-            }
-            tmp3(num);
-          }
-        }
-      }
-    }
-    const fn2 = function w() {
-      onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.RATING_STAT);
-      const obj = AppStoreOverlayContent;
-      obj.openAppStoreReviews(metadata.storeUrl, metadata.platform, metadata.appId);
-    };
-    cResult[8] = metadata.appId;
-    cResult[9] = metadata.platform;
-    cResult[10] = metadata.storeUrl;
-    cResult[11] = onInstallPress;
-    cResult[12] = fn2;
-  }
-  class U {
-    constructor() {
-      onInstallPress(AnalyticsActions.AppStoreOverlaySurfaces.MAIN_CTA);
-      openURLDefault(metadata.storeUrl);
-    }
-  }
-  cResult[5] = metadata.storeUrl;
-  cResult[6] = onInstallPress;
-  cResult[7] = U;
-}) : (function AppStoreOverlayBottomSheet(metadata) {
+const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayBottomSheet.tsx");
+
+export default function AppStoreOverlayBottomSheet(metadata) {
   let bottomSheetClose;
   let bottomSheetRef;
   let items5;
@@ -170,11 +37,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
   let ref2;
   ({ trackOverlayCarouselScroll, onOverlaySurfaceClick } = metadata);
   const tmp = ref2();
-  const height = onOpen(onDismiss[6])().height;
+  const height = onOpen(onDismiss[4])().height;
   const tmp2 = onInstallPress(first.useState(0), 2);
   first = tmp2[0];
   let closure_5 = tmp2[1];
-  let obj = metadata(onDismiss[7]);
+  let obj = metadata(onDismiss[5]);
   const bottomSheetRef1 = obj.useBottomSheetRef();
   ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef1);
   const ref = first.useRef(null);
@@ -198,7 +65,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
       tmp3(num);
     }
   }, items1);
-  const obj2 = metadata(onDismiss[8]);
+  const obj2 = metadata(onDismiss[6]);
   const unmountEffect = obj2.useUnmountEffect(callback);
   const items2 = [metadata.storeUrl, onInstallPress];
   const callback1 = first.useCallback(() => {
@@ -221,16 +88,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
     const obj = { paddingBottom: first + AppStoreOverlayBody.APP_STORE_OVERLAY_FOOTER_GRADIENT_HEIGHT };
     return obj;
   }, items4);
-  const obj3 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, startHeight: height * metadata(onDismiss[12]).APP_STORE_OVERLAY_HEIGHT_RATIO, onDismiss: callback, footer: closure_5(metadata(onDismiss[12]).AppStoreOverlayFooter, { onInstallPress: callback1, onLayout: callback3 }), children: items5 };
-  BottomSheet = metadata(onDismiss[15]).BottomSheet;
+  const obj3 = { ref: bottomSheetRef, scrollable: true, handleDisabled: true, startHeight: height * metadata(onDismiss[10]).APP_STORE_OVERLAY_HEIGHT_RATIO, onDismiss: callback, footer: closure_5(metadata(onDismiss[10]).AppStoreOverlayFooter, { onInstallPress: callback1, onLayout: callback3 }), children: items5 };
+  BottomSheet = metadata(onDismiss[11]).BottomSheet;
   items5 = [, ];
   const obj4 = { variant: "overlay", style: tmp.headerBar, onPress: bottomSheetClose };
-  items5[0] = closure_5(metadata(onDismiss[13]).ActionSheetHeaderBar, obj4);
-  const obj5 = { style: tmp.bodyContainer, contentContainerStyle: memo, children: closure_5(metadata(onDismiss[12]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1, onCarouselScroll: trackOverlayCarouselScroll, onOverlaySurfaceClick }) };
-  const BottomSheetScrollView = metadata(onDismiss[14]).BottomSheetScrollView;
+  items5[0] = closure_5(metadata(onDismiss[12]).ActionSheetHeaderBar, obj4);
+  const obj5 = { style: tmp.bodyContainer, contentContainerStyle: memo, children: closure_5(metadata(onDismiss[10]).AppStoreOverlayBody, { metadata, onOpenReviews: callback2, onMediaGetGamePress: callback1, onCarouselScroll: trackOverlayCarouselScroll, onOverlaySurfaceClick }) };
+  const BottomSheetScrollView = metadata(onDismiss[13]).BottomSheetScrollView;
   items5[1] = closure_5(BottomSheetScrollView, obj5);
   return ref(BottomSheet, obj3);
-});
-const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayBottomSheet.tsx");
-
-export default tmp3;
+};

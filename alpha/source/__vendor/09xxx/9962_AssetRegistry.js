@@ -1,10 +1,10 @@
 // Module ID: 9962
 // Function ID: 9963
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 9962 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 77.5, height: 72, scales: [2, 3], hash: "215c6cf6cc2b74cad508b12b0e602266", name: "empty", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MidnightPrismIcon", width: 60, height: 60, scales: [2, 3], hash: "44efb56cf36c8202533bcbc557ebf8e5", name: "MidnightPrismIcon", type: "png" });

@@ -1,38 +1,26 @@
-// Module ID: 14240
-// Function ID: 14241
+// Module ID: 11047
+// Function ID: 11048
 // Name: InAppNotificationContext
-// Dependencies: [19, 558, 2]
+// Dependencies: [19, 2]
+// Exports: useInAppNotificationContext
 
-// Module 14240 (InAppNotificationContext)
+// Module 11047 (InAppNotificationContext)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let context = react.createContext(undefined);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppNotificationContext() {
-  context = react.useContext(context);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");
-    throw error;
-  } else {
-    return context;
-  }
-}) : (function useInAppNotificationContext() {
-  context = react.useContext(context);
-  if (null == context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");
-    throw error;
-  } else {
-    return context;
-  }
-});
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/InAppNotificationContext.tsx");
 
 export const InAppNotificationContext = context;
-export const useInAppNotificationContext = tmp3;
+export function useInAppNotificationContext() {
+  context = react.useContext(context);
+  if (null == context) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("useInAppNotificationContext must be used within provider of InAppNotificationContext");
+    throw error;
+  } else {
+    return context;
+  }
+}

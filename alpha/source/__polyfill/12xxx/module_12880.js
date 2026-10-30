@@ -1,93 +1,39 @@
 // Module ID: 12880
 // Function ID: 12881
-// Dependencies: [12871, 12872, 12854, 12874, 12859]
-// Exports: getClient, getCurrentScope, getGlobalScope, getIsolationScope, getTraceContextFromScope, withIsolationScope, withScope
+// Dependencies: [12881, 12888, 12894, 12839]
 
 // Module 12880
-import _mod12854 from "module_12854" /* 12854 */;
-import _mod12859 from "module_12859" /* 12859 */;
-import _mod12871 from "module_12871" /* 12871 */;
-import _mod12872 from "module_12872" /* 12872 */;
-import _mod12874 from "module_12874" /* 12874 */;
+import _mod12839 from "module_12839" /* 12839 */;
+import _mod12881 from "module_12881" /* 12881 */;
+import _mod12888 from "module_12888" /* 12888 */;
+import _mod12894 from "module_12894" /* 12894 */;
 
+let obj2;
+const obj = { parseContext: obj2, scope: _mod12881, atrule: _mod12888, pseudo: _mod12894, node: _mod12839 };
+obj2 = {
+  default: "StyleSheet",
+  stylesheet: "StyleSheet",
+  atrule: "Atrule",
+  atrulePrelude(atrule) {
+    let StringResult = null;
+    const AtrulePrelude = this.AtrulePrelude;
+    if (atrule.atrule) {
+      const _String = String;
+      StringResult = String(atrule.atrule);
+    }
+    return AtrulePrelude(StringResult);
+  },
+  mediaQueryList: "MediaQueryList",
+  mediaQuery: "MediaQuery",
+  rule: "Rule",
+  selectorList: "SelectorList",
+  selector: "Selector",
+  block() {
+    return this.Block(true);
+  },
+  declarationList: "DeclarationList",
+  declaration: "Declaration",
+  value: "Value"
+};
 
-export function getClient() {
-  const obj = _mod12871;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12872;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  const currentScope = asyncContextStrategy.getCurrentScope();
-  return currentScope.getClient();
-}
-export function getCurrentScope() {
-  const obj = _mod12871;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12872;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getCurrentScope();
-}
-export function getGlobalScope() {
-  const obj = _mod12854;
-  return obj.getGlobalSingleton("globalScope", () => {
-    const scope = new _mod12874.Scope();
-    return scope;
-  });
-}
-export function getIsolationScope() {
-  const obj = _mod12871;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12872;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  return asyncContextStrategy.getIsolationScope();
-}
-export function getTraceContextFromScope(getPropagationContext) {
-  let parentSpanId;
-  let spanId;
-  let traceId;
-  const propagationContext = getPropagationContext.getPropagationContext();
-  ({ traceId, spanId, parentSpanId } = propagationContext);
-  const obj = _mod12859;
-  return obj.dropUndefinedKeys({ trace_id, span_id, parent_span_id });
-}
-export function withIsolationScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12871;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12872;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let result;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      result = asyncContextStrategy.withSetIsolationScope(tmp2, tmp3);
-    } else {
-      result = asyncContextStrategy.withIsolationScope(tmp3);
-    }
-    return result;
-  } else {
-    return asyncContextStrategy.withIsolationScope(items[0]);
-  }
-}
-export function withScope() {
-  let tmp2;
-  let tmp3;
-  const items = [...arguments];
-  const obj = _mod12871;
-  const mainCarrier = obj.getMainCarrier();
-  const obj2 = _mod12872;
-  const asyncContextStrategy = obj2.getAsyncContextStrategy(mainCarrier);
-  if (2 === items.length) {
-    let withSetScopeResult;
-    [tmp2, tmp3] = items;
-    if (tmp2) {
-      withSetScopeResult = asyncContextStrategy.withSetScope(tmp2, tmp3);
-    } else {
-      withSetScopeResult = asyncContextStrategy.withScope(tmp3);
-    }
-    return withSetScopeResult;
-  } else {
-    return asyncContextStrategy.withScope(items[0]);
-  }
-}
+export default obj;

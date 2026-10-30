@@ -1,28 +1,28 @@
-// Module ID: 14919
-// Function ID: 14920
+// Module ID: 14962
+// Function ID: 14963
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5006, 9432, 9433, 1389, 7760, 8712, 5303, 21, 5005, 587, 5086, 5243, 558, 576, 504, 1631, 7313, 7338, 14750, 14917, 14903, 9439, 8720, 11169, 1125, 5306, 7047, 7355, 7228, 14367, 8014, 5727, 2]
+// Dependencies: [32, 19, 17, 5010, 9449, 9450, 1384, 7765, 8746, 5268, 21, 5009, 575, 5090, 5249, 504, 1626, 7320, 7345, 14785, 14940, 14875, 9456, 8754, 11375, 1114, 5270, 7054, 7363, 7235, 14400, 8020, 5733, 2]
+// Exports: default
 
-// Module 14919 (EditWishlistActionSheet)
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
-import Constants from "Constants" /* 8712 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8720 */;
-import WishlistRecord from "WishlistRecord" /* 9433 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9439 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 14917 */;
+// Module 14962 (EditWishlistActionSheet)
+import nativeDefault from "native" /* 575 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
+import Constants from "Constants" /* 8746 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8754 */;
+import WishlistRecord from "WishlistRecord" /* 9450 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9456 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 14940 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import WishlistStore from "WishlistStore" /* 9432 */;
-import UserStore from "UserStore" /* 1389 */;
-import UserProfileStore from "UserProfileStore" /* 7760 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import WishlistStore from "WishlistStore" /* 9449 */;
+import UserStore from "UserStore" /* 1384 */;
+import UserProfileStore from "UserProfileStore" /* 7765 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -75,432 +75,9 @@ let obj5 = { withTiming: timing.withTiming };
 exitingAnimation.__closure = obj5;
 exitingAnimation.__workletHash = 17293915965800;
 exitingAnimation.__initData = { code: "function exitingAnimation_EditWishlistActionSheetTsx1(_values){const{withTiming}=this.__closure;return{animations:{opacity:withTiming(0,{duration:150}),transform:[{scale:withTiming(0.8,{duration:150})}]},initialValues:{opacity:1,transform:[{scale:1}]}};}" };
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlistActionSheet(wishlistId) {
-  let closure_3;
-  let closure_5;
-  let closure_9;
-  let first;
-  let itemWrapper;
-  let rowWidth;
-  let stateFromStores2;
-  let tmp12;
-  let tmp16;
-  let tmp18;
-  let tmp20;
-  let tmp21;
-  let tmp24;
-  let tmp25;
-  let tmp29;
-  let tmp31;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let tmp = wishlistId;
-  let tmp2 = dependencyMap;
-  let obj = wishlistId(576);
-  const cResult = obj.c(53);
-  wishlistId = wishlistId.wishlistId;
-  const analyticsContext = wishlistId.analyticsContext;
-  const analyticsLocations = wishlistId.analyticsLocations;
-  const tmp4 = closure_16();
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [stateFromStores2];
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[0] = items;
-    cResult[1] = W;
-    tmp6 = W;
-    tmp5 = items;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(504);
-  _slicedToArray = tmpResult.useStateFromStores(tmp5, tmp6);
-  let tmp8 = analyticsContext;
-  const bottom = analyticsContext(1631)().bottom;
-  if (cResult[2] !== analyticsLocations) {
-    let items1 = analyticsLocations;
-    if (analyticsLocations == null) {
-      items1 = [];
-    }
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[2] = analyticsLocations;
-    cResult[3] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[3];
-  }
-  const tmp8Result = tmp8(7313);
-  const analyticsLocations2 = tmp8Result(tmp9, tmp8(7338).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-    const tmp13 = ACTION_SHEET_MAX_WIDTH;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[4] = obj2;
-    tmp12 = obj2;
-  } else {
-    tmp12 = cResult[4];
-  }
-  ({ cardWidth: closure_5, rowWidth } = tmp8(14750)(tmp12));
-  tmp8(14750)(tmp12);
-  if (null != rowWidth) {
-    let obj3 = { width: rowWidth };
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [first];
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[5] = items2;
-    tmp16 = items2;
-  } else {
-    tmp16 = cResult[5];
-  }
-  if (cResult[6] !== wishlistId) {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-    cResult[6] = wishlistId;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[7] = V;
-    tmp18 = V;
-  } else {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores = tmpResult4.useStateFromStores(tmp16, tmp18);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-    const items3 = [first];
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[8] = items3;
-    tmp20 = items3;
-  } else {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-  }
-  if (cResult[9] !== wishlistId) {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-    cResult[9] = wishlistId;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[10] = tmp22;
-    tmp21 = tmp22;
-  } else {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-  }
-  const tmpResult5 = tmp(504);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp20, tmp21);
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-    const items4 = [UserStore, ];
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    items4[1] = UserProfileStore;
-    cResult[11] = items4;
-    tmp24 = items4;
-  } else {
-    class V {
-      constructor() {
-        return WishlistStore.getWishlist(wishlistId);
-      }
-    }
-  }
-  if (cResult[12] !== wishlistId) {
-    class X {
-      constructor() {
-        const currentUser = UserStore.getCurrentUser();
-        let wishlistSettings = null;
-        if (null != currentUser) {
-          wishlistSettings = UserProfileStore.getWishlistSettings(currentUser.id, wishlistId);
-        }
-        return wishlistSettings;
-      }
-    }
-    cResult[12] = wishlistId;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[13] = X;
-    tmp25 = X;
-  } else {
-    class X {
-      constructor() {
-        const currentUser = UserStore.getCurrentUser();
-        let wishlistSettings = null;
-        if (null != currentUser) {
-          wishlistSettings = UserProfileStore.getWishlistSettings(currentUser.id, wishlistId);
-        }
-        return wishlistSettings;
-      }
-    }
-  }
-  const tmpResult6 = tmp(504);
-  stateFromStores2 = tmpResult6.useStateFromStores(tmp24, tmp25);
-  [first, getWishlistProductLines] = analyticsLocations2.useState(true);
-  const obj8 = analyticsLocations2;
-  if (cResult[14] !== stateFromStores2) {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-    cResult[14] = stateFromStores2;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[15] = K;
-    tmp29 = K;
-  } else {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  if (stateFromStores2 != null) {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  if (cResult[16] !== undefined) {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-    tmp32[0] = undefined;
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    cResult[17] = tmp32;
-    tmp31 = tmp32;
-  } else {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  const effect = obj8.useEffect(tmp29, tmp31);
-  const tmp34 = cResult[18];
-  if (stateFromStores != null) {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  if (tmp34 !== undefined) {
-    let found;
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-    if (stateFromStores != null) {
-      class K {
-        constructor() {
-          let visibility;
-          if (stateFromStores2 != null) {
-            visibility = tmp.visibility;
-          }
-          if (null != visibility) {
-            closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-          }
-        }
-      }
-      found = arr6.filter((item) => {
-        const obj = wishlistId(itemWrapper[23]);
-        return obj.isEligibleWishlistItemOnMobile(item, { isWishlistOwner: true });
-      });
-    }
-    if (found == null) {
-      class K {
-        constructor() {
-          let visibility;
-          if (stateFromStores2 != null) {
-            visibility = tmp.visibility;
-          }
-          if (null != visibility) {
-            closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-          }
-        }
-      }
-    }
-    class W {
-      constructor() {
-        return stateFromStores2.useReducedMotion;
-      }
-    }
-    if (stateFromStores != null) {
-      class K {
-        constructor() {
-          let visibility;
-          if (stateFromStores2 != null) {
-            visibility = tmp.visibility;
-          }
-          if (null != visibility) {
-            closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-          }
-        }
-      }
-    }
-    cResult[18] = tmp37;
-    cResult[19] = found;
-  } else {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  if (cResult[20] === analyticsContext) {
-    class K {
-      constructor() {
-        let visibility;
-        if (stateFromStores2 != null) {
-          visibility = tmp.visibility;
-        }
-        if (null != visibility) {
-          closure_9(stateFromStores2.visibility === WishlistVisibility2.WishlistVisibility.PUBLIC);
-        }
-      }
-    }
-  }
-  function si() {
-    let tmp9;
-    const WishlistVisibility = WishlistVisibility2.WishlistVisibility;
-    const tmp2 = first ? WishlistVisibility.PRIVATE : WishlistVisibility.PUBLIC;
-    closure_9(!first);
-    const obj = WishlistActionCreatorsDefault;
-    const result = obj.updateWishlistVisibility(wishlistId, tmp2);
-    const obj2 = { analyticsLocations: analyticsLocations2, wishlistId, action: first ? constants.WISHLIST_TOGGLE_PRIVATE : constants.WISHLIST_TOGGLE_PUBLIC, productLines: tmp9 };
-    const trackUserProfileWishlistAction = UserProfileAnalyticsUtils.trackUserProfileWishlistAction;
-    UserProfileAnalyticsUtils;
-    const merged = Object.assign(analyticsContext);
-    tmp9 = undefined;
-    if (null != stateFromStores) {
-      tmp9 = getWishlistProductLines(tmp8);
-    }
-    const result1 = trackUserProfileWishlistAction(obj2);
-  }
-  cResult[20] = analyticsContext;
-  cResult[21] = analyticsLocations2;
-  cResult[22] = first;
-  cResult[23] = stateFromStores;
-  cResult[24] = wishlistId;
-  cResult[25] = si;
-}) : (function EditWishlistActionSheet(wishlistId) {
+let result = size.fileFinishedImporting("modules/user_profile/native/EditWishlistActionSheet.tsx");
+
+export default function EditWishlistActionSheet(wishlistId) {
   let TableRowGroup;
   let TableSwitchRow;
   let c5;
@@ -534,14 +111,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
   let items = [stateFromStores2];
   _slicedToArray = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
   const tmp4 = analyticsContext;
-  const bottom = analyticsContext(1631)().bottom;
-  let tmp5 = analyticsContext(7313);
+  const bottom = analyticsContext(1626)().bottom;
+  let tmp5 = analyticsContext(7320);
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = tmp5(analyticsLocations1, tmp4(7338).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = tmp5(analyticsLocations1, tmp4(7345).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp6 = tmp4(14750)(obj2);
+  let tmp6 = tmp4(14785)(obj2);
   ({ cardWidth: c5, rowWidth } = tmp6);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
@@ -585,7 +162,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
     if (stateFromStores != null) {
       const items = stateFromStores.items;
       found = items.filter((item) => {
-        const obj = wishlistId(itemWrapper[23]);
+        const obj = wishlistId(itemWrapper[21]);
         return obj.isEligibleWishlistItemOnMobile(item, { isWishlistOwner: true });
       });
     }
@@ -617,19 +194,19 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
     const obj = WishlistActionCreatorsDefault;
     const result = obj.removeSkuFromWishlist(wishlistId, skuId, analyticsLocations);
   }, items7);
-  let obj4 = { scrollable: true, startExpanded: true, title: intl.string(tmp2(1125).t["OEgx/4"]), children: null };
-  const tmp4Result = tmp4(11169);
-  intl = tmp2(1125).intl;
+  let obj4 = { scrollable: true, startExpanded: true, title: intl.string(tmp2(1114).t["OEgx/4"]), children: null };
+  const tmp4Result = tmp4(11375);
+  intl = tmp2(1114).intl;
   let obj5 = { contentContainerStyle: { paddingBottom: bottom }, children: null };
   let obj6 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.toggleRow, children: closure_14(TableRowGroup, obj9) };
-  const BottomSheetScrollView = tmp2(5306).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp2(5270).BottomSheetScrollView;
   obj9 = { hasIcons: false, children: closure_14(TableSwitchRow, obj10) };
-  TableRowGroup = tmp2(7047).TableRowGroup;
-  obj10 = { label: intl2.string(tmp2(1125).t.b2nFyA), subLabel: intl3.string(tmp2(1125).t.dw58pE), value, onValueChange: callback };
-  TableSwitchRow = tmp2(7355).TableSwitchRow;
-  intl2 = tmp2(1125).intl;
-  intl3 = tmp2(1125).intl;
+  TableRowGroup = tmp2(7054).TableRowGroup;
+  obj10 = { label: intl2.string(tmp2(1114).t.b2nFyA), subLabel: intl3.string(tmp2(1114).t.dw58pE), value, onValueChange: callback };
+  TableSwitchRow = tmp2(7363).TableSwitchRow;
+  intl2 = tmp2(1114).intl;
+  intl3 = tmp2(1114).intl;
   const items8 = [closure_14(stateFromStores, obj8), ];
   const tmp18 = closure_15;
   if (stateFromStores1) {
@@ -661,7 +238,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
             const obj = { style: itemWrapper.itemWrapper, exiting: tmp8, layout: tmp9, children: items };
             tmp8 = undefined;
             const tmp2 = closure_1_15;
-            const tmp5 = analyticsContext(itemWrapper[31]);
+            const tmp5 = analyticsContext(itemWrapper[29]);
             const tmp6 = itemWrapper;
             if (!closure_3) {
               tmp8 = exitingAnimation;
@@ -672,7 +249,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
             }
             const obj3 = { sku: null, isOwned: null, size, accessibilityHidden: true };
             ({ sku: obj2.sku, isOwned: obj2.isOwned } = sku);
-            items = [closure_1_14(analyticsContext(itemWrapper[32]), obj3), ];
+            items = [closure_1_14(analyticsContext(itemWrapper[30]), obj3), ];
             const obj4 = { style: tmp6.deleteButton, children: closure_1_14(IconButton, obj5) };
             obj5 = {
               variant: "primary-overlay",
@@ -683,18 +260,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
                 },
               accessibilityLabel: combined
             };
-            IconButton = wishlistId(tmp4[33]).IconButton;
+            IconButton = wishlistId(tmp4[31]).IconButton;
             obj6 = { size: "sm", color: analyticsContext(itemWrapper[12]).colors.ICON_FEEDBACK_CRITICAL };
-            TrashIcon = wishlistId(tmp4[34]).TrashIcon;
+            TrashIcon = wishlistId(tmp4[32]).TrashIcon;
             const isOwned = sku.isOwned;
-            const intl = wishlistId(tmp4[27]).intl;
+            const intl = wishlistId(tmp4[25]).intl;
             const obj11 = { productName: sku.skuName };
-            const formatToPlainStringResult = intl.formatToPlainString(wishlistId(itemWrapper[27]).t["IBBF8/"], obj11);
+            const formatToPlainStringResult = intl.formatToPlainString(wishlistId(itemWrapper[25]).t["IBBF8/"], obj11);
             const tmp12 = stateFromStores;
             if (isOwned) {
-              const intl2 = tmp13(tmp4[27]).intl;
+              const intl2 = tmp13(tmp4[25]).intl;
               const _HermesInternal = HermesInternal;
-              combined = "" + formatToPlainStringResult + ", " + intl2.string(tmp13(tmp4[27]).t["6cfuDj"]);
+              combined = "" + formatToPlainStringResult + ", " + intl2.string(tmp13(tmp4[25]).t["6cfuDj"]);
             } else {
               combined = formatToPlainStringResult;
             }
@@ -707,7 +284,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditWishlist
     items9 = [tmp.itemsContainer, tmp7];
     tmp16Result = tmp16(tmp19, obj12);
   }
-});
-let result = size.fileFinishedImporting("modules/user_profile/native/EditWishlistActionSheet.tsx");
-
-export default tmp5;
+};

@@ -1,48 +1,22 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 9553
+// Function ID: 9554
 // Name: OneDayFractionalNitroExperiment
-// Dependencies: [1453, 558, 576, 9535, 2]
+// Dependencies: [1448, 9554, 2]
+// Exports: useOneDayFractionalNitroEnabled
 
-// Module 9534 (OneDayFractionalNitroExperiment)
-import react from "react" /* 576 */;
-import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9535 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9553 (OneDayFractionalNitroExperiment)
+import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9554 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-04-one-day-fractional-nitro", kind: "user", defaultConfig: false, variations: { 1: true } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOneDayFractionalNitroEnabled(location) {
-  let tmp3;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp3 = obj2;
-  } else {
-    tmp3 = cResult[1];
-  }
-  const tmp4 = PremiumGroupExperimentDefault(tmp3);
-  if (cResult[2] !== location) {
-    const obj3 = { location };
-    cResult[2] = location;
-    cResult[3] = obj3;
-    tmp5 = obj3;
-  } else {
-    tmp5 = cResult[3];
-  }
-  const tmp6 = apexExperiment.useConfig(tmp5) && !tmp4;
-  return tmp6;
-}) : (function useOneDayFractionalNitroEnabled(location) {
-  const obj = { location };
-  const obj2 = { location };
-  const tmp = PremiumGroupExperimentDefault(obj);
-  const tmp2 = apexExperiment.useConfig(obj2) && !tmp;
-  return tmp2;
-});
 const result = size.fileFinishedImporting("modules/collectibles/experiments/OneDayFractionalNitroExperiment.tsx");
 
 export default apexExperiment;
-export const useOneDayFractionalNitroEnabled = tmp3;
+export function useOneDayFractionalNitroEnabled(product_card) {
+  const obj = { location: product_card };
+  const obj2 = { location: product_card };
+  const tmp = PremiumGroupExperimentDefault(obj);
+  const tmp2 = apexExperiment.useConfig(obj2) && !tmp;
+  return tmp2;
+}

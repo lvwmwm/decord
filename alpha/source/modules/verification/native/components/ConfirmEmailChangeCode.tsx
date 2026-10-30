@@ -1,158 +1,26 @@
-// Module ID: 7065
-// Function ID: 7066
+// Module ID: 7073
+// Function ID: 7074
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6983, 21, 558, 576, 1503, 1104, 7063, 1125, 7066, 2]
+// Dependencies: [5, 19, 6991, 21, 1498, 1093, 7074, 7071, 1114, 2]
+// Exports: default
 
-// Module 7065 (ConfirmEmailChangeCode)
+// Module 7073 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6983 */;
+import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6991 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c0, navigation;
+let closure_0, navigation;
 
 const setEmailToken = ChangeEmailStore.setEmailToken;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmailChangeCode(isChangeEmail) {
-  let tmp = isChangeEmail;
-  let tmp2 = dependencyMap;
-  let obj = isChangeEmail(576);
-  const cResult = obj.c(9);
+const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
+
+export default function ConfirmEmailChangeCode(isChangeEmail) {
   isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj2 = isChangeEmail(1503);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === isChangeEmail) {
-    let tmp5;
-    let tmp7;
-    let tmp11;
-    let tmp10;
-    let tmp9;
-    let tmp15;
-    if (cResult[1] === navigation) {
-      tmp5 = cResult[2];
-    }
-    const tmp6 = globalThis;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      let closure_0 = _asyncToGenerator(async (arg0) => {
-        let c1;
-        closure_0 = arg0;
-        const obj3 = closure_0(c2[8]);
-        await obj3.confirmEmailChange(closure_0);
-        return arg1;
-      });
-      function t2() {
-        return closure_0(...arguments);
-      }
-      cResult[3] = t2;
-      tmp7 = t2;
-    } else {
-      tmp7 = cResult[3];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      closure_0 = _asyncToGenerator(async (arg0, value) => {
-        let v3;
-        if (c0 === 2) {
-          c0 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            c0 = 2;
-            if (0 === c1) {
-              if (arg0 === 1) {
-                c0 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c0 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                c1 = 1;
-                const obj2 = c0(closure_1_2[8]);
-                c0 = 1;
-                const obj5 = { value: obj2.sendConfirmationCode(), done: false };
-                return obj5;
-              }
-            } else if (arg0 === 1) {
-              c0 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c0 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              c0 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } catch (tmp6) {
-            c0 = 3;
-            throw tmp6;
-          }
-        }
-      });
-      function t3() {
-        return closure_0(...arguments);
-      }
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(tmp(1125).t["2x/2Uo"]);
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(tmp(1125).t.PDTjLN);
-      cResult[4] = t3;
-      cResult[5] = stringResult;
-      cResult[6] = stringResult1;
-      tmp11 = stringResult1;
-      tmp10 = stringResult;
-      tmp9 = t3;
-    } else {
-      tmp9 = cResult[4];
-      tmp10 = cResult[5];
-      tmp11 = cResult[6];
-    }
-    if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(7066), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
-      cResult[7] = tmp5;
-      cResult[8] = tmp18;
-      tmp15 = tmp18;
-    } else {
-      tmp15 = cResult[8];
-    }
-    return tmp15;
-  }
-  const fn = function c(arg0) {
-    let tmp = arg0;
-    const tmp2 = setEmailToken;
-    if (arg0 == null) {
-      tmp = null;
-    }
-    tmp2(tmp);
-    const push = navigation.push;
-    const VerificationModalScenes = ConstantsIOS.VerificationModalScenes;
-    if (isChangeEmail) {
-      push(VerificationModalScenes.CHANGE_EMAIL_COLLECT_REASONS);
-    } else {
-      push(VerificationModalScenes.ENTER_EMAIL);
-    }
-  };
-  cResult[0] = isChangeEmail;
-  cResult[1] = navigation;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : (function ConfirmEmailChangeCode(isChangeEmail) {
-  isChangeEmail = isChangeEmail.isChangeEmail;
-  let obj = isChangeEmail(1503);
+  let obj = isChangeEmail(1498);
   navigation = obj.useNavigation();
   const items = [isChangeEmail, navigation];
   const callback = react.useCallback((arg0) => {
@@ -170,16 +38,16 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(7066);
+  navigation(7074);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
-    const obj3 = closure_0(c2[8]);
+    const obj3 = closure_0(c2[7]);
     await obj3.confirmEmailChange(closure_0);
     return arg1;
   });
-  const intl = isChangeEmail(1125).intl;
-  const intl2 = isChangeEmail(1125).intl;
+  const intl = isChangeEmail(1114).intl;
+  const intl2 = isChangeEmail(1114).intl;
   return <tmp3 onFormSubmit={function() {
     return closure_0(...arguments);
   }} onSuccess={callback} onResend={_asyncToGenerator(async (arg0, value) => {
@@ -194,7 +62,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -209,7 +77,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
             return obj4;
           } else {
             c1 = 1;
-            const obj2 = isChangeEmail(dependencyMap[8]);
+            const obj2 = isChangeEmail(dependencyMap[7]);
             isChangeEmail = 1;
             const obj5 = { value: obj2.sendConfirmationCode(), done: false };
             return obj5;
@@ -223,15 +91,12 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         isChangeEmail = 3;
         throw tmp6;
       }
     }
-  })} headerText={intl.string(isChangeEmail(1125).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1125).t.PDTjLN)} />;
-});
-const result = size.fileFinishedImporting("modules/verification/native/components/ConfirmEmailChangeCode.tsx");
-
-export default tmp2;
+  })} headerText={intl.string(isChangeEmail(1114).t["2x/2Uo"])} confirmButtonText={intl2.string(isChangeEmail(1114).t.PDTjLN)} />;
+};

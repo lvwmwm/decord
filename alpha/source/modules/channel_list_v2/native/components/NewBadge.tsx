@@ -1,25 +1,24 @@
-// Module ID: 13647
-// Function ID: 13648
+// Module ID: 13794
+// Function ID: 13795
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5005, 1381, 587, 5012, 558, 576, 9775, 5242, 1125, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 1376, 575, 5016, 9801, 5248, 5619, 1114, 2]
+// Exports: default
 
-// Module 13647 (NewBadge)
+// Module 13794 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9775 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9801 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5012);
+const shared = tmp(5016);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {
@@ -35,63 +34,17 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
     let MOBILE_TOAST_BACKGROUND_DEFAULT;
     const tmp4 = arg0;
     if (!tmp4) {
-      MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(587).colors.BACKGROUND_BRAND;
+      MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(575).colors.BACKGROUND_BRAND;
     }
     obj3.backgroundColor = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj2.base = obj3;
     return obj2;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(587).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(575).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
-  let base;
-  let first;
-  let str;
-  let text;
-  const obj = react2;
-  const cResult = obj.c(7);
-  const tmp4 = useIsUsingClientThemeDefault();
-  const tmp5 = useThemeDefault();
-  const tmp6 = closure_5(tmp4, tmp5);
-  ({ base, text } = tmp6);
-  const obj2 = shared;
-  if (obj2.isThemeLight(tmp5)) {
-    str = "text-overlay-light";
-  } else {
-    str = "text-brand";
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl2.t.y2b7CA);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === tmp6.text) {
-    let tmp9;
-    if (cResult[2] === str) {
-      tmp9 = cResult[3];
-    }
-    if (cResult[4] === tmp6.base) {
-      let tmp11;
-      if (cResult[5] === tmp9) {
-        tmp11 = cResult[6];
-      }
-      return tmp11;
-    }
-    const tmp14 = <View style={base}>{tmp9}</View>;
-    cResult[4] = tmp6.base;
-    cResult[5] = tmp9;
-    cResult[6] = tmp14;
-    tmp11 = tmp14;
-  }
-  const tmp10 = jsx(Text_Text.Text, { variant: "text-xxs/bold", style: text, color: str, children: first });
-  cResult[1] = tmp6.text;
-  cResult[2] = str;
-  cResult[3] = tmp10;
-  tmp9 = tmp10;
-}) : (function NewBadge() {
+const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
+
+export default function NewBadge() {
   let intl;
   let str;
   const tmp2 = useIsUsingClientThemeDefault();
@@ -105,9 +58,6 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1125).intl;
+  intl = tmp7(1114).intl;
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
-});
-const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
-
-export default tmp3;
+};

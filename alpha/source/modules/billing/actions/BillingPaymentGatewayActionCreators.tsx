@@ -1,22 +1,22 @@
-// Module ID: 6534
-// Function ID: 6535
+// Module ID: 6541
+// Function ID: 6542
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1084, 1095, 3, 1294, 1125, 6523, 6535, 584, 38, 6536, 6537, 4828, 6433, 2]
+// Dependencies: [5, 1072, 1083, 3, 1283, 1114, 6530, 6542, 572, 38, 6543, 6544, 4829, 6440, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6534 (BillingPaymentGatewayActionCreators)
+// Module 6541 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import intl2 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6523 */;
-import react from "react" /* 6535 */;
-import StripeActionCreators from "StripeActionCreators" /* 6536 */;
-import StripeUtilsAll from "StripeUtils" /* 6537 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import intl2 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6530 */;
+import react from "react" /* 6542 */;
+import StripeActionCreators from "StripeActionCreators" /* 6543 */;
+import StripeUtilsAll from "StripeUtils" /* 6544 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 1084 */;
-import Constants_mod2 from "Constants" /* 1095 */;
+import Constants_mod from "Constants" /* 1072 */;
+import Constants_mod2 from "Constants" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, closure_5, closure_8, postal_code, returnUrl;
@@ -68,7 +68,7 @@ obj = function _createCardToken() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -166,7 +166,7 @@ obj = function _confirmEPS() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -298,7 +298,7 @@ obj = function _confirmPrzelewy() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -506,7 +506,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -531,7 +531,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "Reflect", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -600,7 +600,7 @@ obj = function _confirmPaymentElementSource() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp121;
@@ -693,7 +693,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -766,8 +766,8 @@ obj = function _confirmPaymentElementSource() {
                         if (closure_11 == null) {
                           _undefined = undefined;
                         }
-                        tmp121 = { setupIntent: _undefined, error: "a" };
-                        const obj8 = { setupIntent: _undefined, error: "a" };
+                        tmp121 = { setupIntent: _undefined, error: "Array" };
+                        const obj8 = { setupIntent: _undefined, error: "Array" };
                         if (shouldRecreateSetupIntentForPaymentElement(tmp121.error)) {
                           if (c3 !== closure_137_10.PAYMENT_REQUEST) {
                             c12 = 7;
@@ -963,7 +963,7 @@ obj = function _confirmCardPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1094,7 +1094,7 @@ obj = function _createStripePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1217,7 +1217,7 @@ obj = function _createAdyenPrepaidPaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1290,7 +1290,7 @@ obj = function _createAdyenVaultablePaymentSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1319,7 +1319,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {
@@ -1455,7 +1455,7 @@ obj = function _createStripePaymentSourceToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1651,7 +1651,7 @@ obj = function _paymentIntentSucceeded() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

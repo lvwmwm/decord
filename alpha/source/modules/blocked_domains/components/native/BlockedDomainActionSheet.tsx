@@ -1,23 +1,22 @@
-// Module ID: 14685
-// Function ID: 14686
+// Module ID: 14718
+// Function ID: 14719
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 5005, 587, 558, 576, 7051, 1125, 5271, 6015, 14686, 5281, 5247, 5302, 2]
+// Dependencies: [19, 21, 5009, 575, 5267, 6022, 7059, 5619, 1114, 14719, 5629, 5253, 2]
+// Exports: default
 
-// Module 14685 (BlockedDomainActionSheet)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7051 */;
-import URLCallout from "URLCallout" /* 14686 */;
+// Module 14718 (BlockedDomainActionSheet)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7059 */;
+import URLCallout from "URLCallout" /* 14719 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -29,126 +28,9 @@ let obj2;
 let obj = { container: obj2, title: { textAlign: "center" }, warningMessage: { textAlign: "center" } };
 obj2 = { padding: nativeDefault.space.PX_16 };
 let closure_5 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomainActionSheet(url) {
-  let first;
-  let intl3;
-  let items;
-  let items1;
-  let obj7;
-  let tmp10;
-  let tmp13;
-  let tmp15;
-  let tmp8;
-  let obj = react2;
-  const cResult = obj.c(17);
-  url = url.url;
-  const tmp4 = closure_5();
-  const container = tmp4.container;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp7 = _false(TrafficConeSpotIllustration.TrafficConeSpotIllustration, {});
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  const title = tmp4.title;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t["2B3wj8"]);
-    cResult[1] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.title) {
-    const obj2 = { style: title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: tmp8 };
-    const tmp12 = _false(Text_Text.Text, obj2);
-    cResult[2] = tmp4.title;
-    cResult[3] = tmp12;
-    tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[3];
-  }
-  const warningMessage = tmp4.warningMessage;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const formatResult = intl2.format(intl4.t.jnHyYU, {});
-    cResult[4] = formatResult;
-    tmp13 = formatResult;
-  } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.warningMessage) {
-    const obj3 = { style: warningMessage, variant: "text-md/medium", children: tmp13 };
-    const tmp17 = _false(Text_Text.Text, obj3);
-    cResult[5] = tmp4.warningMessage;
-    cResult[6] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[6];
-  }
-  if (cResult[7] === tmp10) {
-    let tmp18;
-    let tmp20;
-    let tmp23;
-    if (cResult[8] === tmp15) {
-      tmp18 = cResult[9];
-    }
-    if (cResult[10] !== url) {
-      const obj4 = { url };
-      const tmp22 = _false(URLCallout.URLCallout, obj4);
-      cResult[10] = url;
-      cResult[11] = tmp22;
-      tmp20 = tmp22;
-    } else {
-      tmp20 = cResult[11];
-    }
-    const _Symbol = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = {
-        grow: true,
-        text: intl3.string(intl4.t["/g10LC"]),
-        onPress() {
-              const obj = ActionSheetActionCreatorsDefault;
-              return obj.hideActionSheet();
-            }
-      };
-      const Button = tmp(5281).Button;
-      intl3 = tmp(1125).intl;
-      const tmp25 = _false(Button, obj5);
-      cResult[12] = tmp25;
-      tmp23 = tmp25;
-    } else {
-      tmp23 = cResult[12];
-    }
-    if (cResult[13] === tmp4.container) {
-      if (cResult[14] === tmp20) {
-        let tmp26;
-        if (cResult[15] === tmp18) {
-          tmp26 = cResult[16];
-        }
-        return tmp26;
-      }
-    }
-    const obj6 = { startExpanded: true, children: React3(Stack_Stack.Stack, obj7) };
-    BottomSheet = tmp(5302).BottomSheet;
-    obj7 = { spacing: 16, justify: "center", align: "center", style: container, children: items };
-    items = [tmp18, tmp20, tmp23];
-    const tmp29 = _false(BottomSheet, obj6);
-    cResult[13] = tmp4.container;
-    cResult[14] = tmp20;
-    cResult[15] = tmp18;
-    cResult[16] = tmp29;
-    tmp26 = tmp29;
-  }
-  const obj8 = { spacing: 8, justify: "center", align: "center", children: items1 };
-  items1 = [first, tmp10, tmp15];
-  const tmp19 = React3(Stack_Stack.Stack, obj8);
-  cResult[7] = tmp10;
-  cResult[8] = tmp15;
-  cResult[9] = tmp19;
-  tmp18 = tmp19;
-}) : (function BlockedDomainActionSheet(url) {
+const result = size.fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
+
+export default function BlockedDomainActionSheet(url) {
   let Stack;
   let intl;
   let intl2;
@@ -186,7 +68,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BlockedDomai
   intl3 = intl4.intl;
   items1[2] = _false(Button, obj6);
   return _false(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/blocked_domains/components/native/BlockedDomainActionSheet.tsx");
-
-export default tmp4;
+};

@@ -1,31 +1,31 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10855
+// Function ID: 10856
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6829, 1389, 10833, 6831, 1084, 6763, 584, 1294, 10834, 5760, 10836, 569, 10831, 10837, 10839, 10842, 10840, 5664, 6832, 6868, 8710, 10843, 2]
+// Dependencies: [109, 5, 6836, 1384, 10856, 6838, 1072, 6770, 572, 1283, 10857, 5767, 10859, 559, 10854, 10860, 10862, 10865, 10863, 5670, 6839, 6875, 8744, 10866, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refreshConjureInstallState, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 10832 (ConjureActionCreators)
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6868 */;
-import UserActionCreators from "UserActionCreators" /* 8710 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10837 */;
-import conjurePreviewTicket from "conjurePreviewTicket" /* 10839 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 10840 */;
-import createProxyTicket from "createProxyTicket" /* 10842 */;
-import conjureAppInServer from "conjureAppInServer" /* 10843 */;
+// Module 10855 (ConjureActionCreators)
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6875 */;
+import UserActionCreators from "UserActionCreators" /* 8744 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 10860 */;
+import conjurePreviewTicket from "conjurePreviewTicket" /* 10862 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 10863 */;
+import createProxyTicket from "createProxyTicket" /* 10865 */;
+import conjureAppInServer from "conjureAppInServer" /* 10866 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import UserStore from "UserStore" /* 1389 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10833 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import UserStore from "UserStore" /* 1384 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 10856 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
 import size from "module_2" /* 2 */;
 
 let GUILD_COLLABORATION, c2, c8, closure_14, closure_15, closure_28, closure_35, projectsFetchState, resourceIds;
@@ -57,7 +57,7 @@ let obj = function _listProjects() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -149,7 +149,7 @@ let obj = function _listProjects() {
             }
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp48) {
           if (0 === c4) {
             c6 = 3;
@@ -175,7 +175,7 @@ obj = function _forgetMissingProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -222,7 +222,7 @@ obj = function _forgetMissingProjects() {
               }
             }
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (1 === tmp4) {
           c5 = 0;
@@ -358,7 +358,7 @@ obj = function _fetchMissingConjureProjectNow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -404,7 +404,7 @@ obj = function _fetchMissingConjureProjectNow() {
             dispatch(obj);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           c4 = 3;
           throw tmp24;
@@ -430,7 +430,7 @@ obj = function _drainMissingProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -471,7 +471,7 @@ obj = function _drainMissingProjects() {
                 let succeedResult = closure_132_22.succeed();
               }
               c8 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             } else {
               let c6 = 1;
               c1 = tmp12;
@@ -527,7 +527,7 @@ obj = function _fetchProjectLimit() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -604,11 +604,11 @@ obj = function _fetchProjectLimit() {
           }
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
-      } catch (tmp21) {
+        return { value: "HermesInternal", done: null };
+      } catch (tmp22) {
         if (0 === c3) {
           c5 = 3;
-          throw tmp21;
+          throw tmp22;
         } else {
           c4 = 1;
         }
@@ -713,7 +713,7 @@ obj = function _postProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -826,7 +826,7 @@ obj = function _fetchConjureApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -865,7 +865,7 @@ obj = function _fetchConjureApplication() {
             obj.dispatch(obj7);
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp17) {
         c4 = 3;
@@ -888,7 +888,7 @@ obj = function _refreshPreviewApplication() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -923,7 +923,7 @@ obj = function _refreshPreviewApplication() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;
@@ -971,7 +971,7 @@ obj = function _fetchApplicationChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -1044,7 +1044,7 @@ obj = function _deleteProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

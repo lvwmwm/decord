@@ -1,10 +1,10 @@
 // Module ID: 12322
 // Function ID: 12323
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 12322 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "6572d140954790b36ebb034e8accf006", name: "UndoIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 141, height: 128, scales: [2, 3], hash: "2d906861c73988d1392c3f207cda799f", name: "empty_quick_switcher", type: "png" });

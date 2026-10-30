@@ -1,23 +1,23 @@
-// Module ID: 7136
-// Function ID: 7137
+// Module ID: 7144
+// Function ID: 7145
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1389, 6983, 1084, 21, 5005, 587, 558, 576, 1503, 504, 1104, 7137, 1264, 1125, 5271, 7067, 5281, 2]
+// Dependencies: [5, 32, 19, 17, 1384, 6991, 1072, 21, 5009, 575, 1498, 504, 1093, 7145, 1253, 5619, 1114, 7075, 5629, 2]
+// Exports: default
 
-// Module 7136 (EnterEmail)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
+// Module 7144 (EnterEmail)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6983 */;
+import UserStore from "UserStore" /* 1384 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6991 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let arr, c1, c2, navigation;
+let c1, c2, navigation;
 
 let c10;
 let closure_12;
@@ -35,165 +35,9 @@ const AnalyticEvents = Constants.AnalyticEvents;
 let obj = { background: obj2, container: { paddingVertical: 12, paddingHorizontal: 16 }, title: { textAlign: "center" }, prompt: { marginTop: 8, lineHeight: 18, textAlign: "center" }, input: { marginTop: 24, marginBottom: 16 } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let closure_16 = createStyles.createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail(isChangeEmail) {
-  let closure_5;
-  let currentUser;
-  let emailToken;
-  let first;
-  let stateFromStores;
-  let tmp13;
-  let tmp6;
-  let tmp7;
-  let tmp = isChangeEmail;
-  const tmp2 = stateFromStores;
-  let obj = isChangeEmail(stateFromStores[11]);
-  const cResult = obj.c(43);
-  isChangeEmail = isChangeEmail.isChangeEmail;
-  const changeEmailReason = isChangeEmail.changeEmailReason;
-  let tmp4 = closure_16();
-  let obj2 = isChangeEmail(stateFromStores[12]);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function b() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = tmp(tmp2[13]);
-  stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  [first] = emailToken.useState("");
-  [r10048, tmp13] = _slicedToArray(closure_10(constants.EMAIL), 2);
-  const tmp12 = _slicedToArray(closure_10(constants.EMAIL), 2);
-  _slicedToArray = tmp13;
-  emailToken = closure_11().emailToken;
-  if (cResult[2] !== navigation) {
-    class V {
-      constructor(arg0) {
-        closure_0 = isChangeEmail;
-        routes = closure_2.getState().routes;
-        return routes.findIndex((name) => name.name === closure_0);
-      }
-    }
-    cResult[2] = navigation;
-    cResult[3] = V;
-  } else {
-    class V {
-      constructor(arg0) {
-        closure_0 = isChangeEmail;
-        routes = closure_2.getState().routes;
-        return routes.findIndex((name) => name.name === closure_0);
-      }
-    }
-  }
-  V = tmp14;
-  if (cResult[4] === changeEmailReason) {
-    class V {
-      constructor(arg0) {
-        closure_0 = isChangeEmail;
-        routes = closure_2.getState().routes;
-        return routes.findIndex((name) => name.name === closure_0);
-      }
-    }
-  }
-  class D {
-    constructor() {
-      push = closure_2.push;
-      obj = { onSubmit: null, onSuccess: null, hideUnverifiedBanner: true };
-      VERIFY_PASSWORD = isChangeEmail(closure_3[14]).VerificationModalScenes.VERIFY_PASSWORD;
-      closure_0 = closure_4(function*(arg0, value) {
-        let obj2;
-        if (c1 === 2) {
-          c1 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
-          if (arg0 === 1) {
-            throw value;
-          } else if (arg0 === 2) {
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            let tmp4;
-            c1 = 2;
-            if (0 === c2) {
-              if (arg0 === 1) {
-                c1 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c1 = 3;
-                const obj4 = { value, done: true };
-                return obj4;
-              } else {
-                tmp4 = null;
-                if (null != closure_1_3) {
-                  closure_1_5(null);
-                  const user = { email, password: tmp17, emailToken };
-                  c2 = 1;
-                  c1 = 1;
-                  const obj5 = { value: obj2.saveEmail(user, c2, closure_1_7), done: false };
-                  obj2 = navigation(stateFromStores[15]);
-                  return obj5;
-                }
-              }
-            } else if (arg0 === 1) {
-              c1 = 3;
-              throw value;
-            } else {
-              tmp4 = value;
-              if (arg0 === 2) {
-                c1 = 3;
-                const obj = { value, done: true };
-                return obj;
-              }
-            }
-            c1 = 3;
-            const obj6 = { value: tmp4, done: true };
-            return obj6;
-          } catch (tmp13) {
-            c1 = 3;
-            throw tmp13;
-          }
-        }
-      });
-      obj.onSubmit = function onSubmit() {
-        return closure_0(...arguments);
-      };
-      obj.onSuccess = function onSuccess() {
-        const tmp = closure_0;
-        if (tmp) {
-          const obj3 = { change_email_reason_enum };
-          const obj2 = changeEmailReason(stateFromStores[16]);
-          obj2.track(constants.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, obj3);
-          const obj4 = navigation(stateFromStores[15]);
-          const result = obj4.finishChangeEmailFlow(closure_1_2, first);
-        } else {
-          const obj = navigation(stateFromStores[15]);
-          const result1 = obj.finishVerifyEmailFlow(closure_1_2, closure_1_7);
-        }
-      };
-      arr = push(VERIFY_PASSWORD, obj);
-      return;
-    }
-  }
-  cResult[4] = changeEmailReason;
-  cResult[5] = first;
-  cResult[6] = emailToken;
-  cResult[7] = tmp14;
-  cResult[8] = isChangeEmail;
-  cResult[9] = navigation;
-  cResult[10] = tmp13;
-  cResult[11] = stateFromStores;
-  cResult[12] = D;
-}) : (function EnterEmail(isChangeEmail) {
+let result = size.fileFinishedImporting("modules/verification/native/components/EnterEmail.tsx");
+
+export default function EnterEmail(isChangeEmail) {
   let closure_5;
   let currentUser;
   let first1;
@@ -216,9 +60,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
   let emailToken;
   let tmp = closure_16();
   const tmp2 = isChangeEmail;
-  let obj = isChangeEmail(stateFromStores[12]);
+  let obj = isChangeEmail(stateFromStores[10]);
   navigation = obj.useNavigation();
-  let obj2 = isChangeEmail(stateFromStores[13]);
+  let obj2 = isChangeEmail(stateFromStores[11]);
   const items = [UserStore];
   stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
   [value, tmp8] = emailToken.useState("");
@@ -243,18 +87,18 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
         const tmp = closure_0;
         if (tmp) {
           const obj3 = { change_email_reason_enum };
-          const obj2 = changeEmailReason(stateFromStores[16]);
+          const obj2 = changeEmailReason(stateFromStores[14]);
           obj2.track(constants.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, obj3);
-          const obj4 = navigation(stateFromStores[15]);
+          const obj4 = navigation(stateFromStores[13]);
           const result = obj4.finishChangeEmailFlow(closure_1_2, closure_1_4);
         } else {
-          const obj = navigation(stateFromStores[15]);
+          const obj = navigation(stateFromStores[13]);
           const result1 = obj.finishVerifyEmailFlow(closure_1_2, callback);
         }
       },
       hideUnverifiedBanner: true
     };
-    const VERIFY_PASSWORD = isChangeEmail(stateFromStores[14]).VerificationModalScenes.VERIFY_PASSWORD;
+    const VERIFY_PASSWORD = isChangeEmail(stateFromStores[12]).VerificationModalScenes.VERIFY_PASSWORD;
     let closure_0 = first(function*(arg0, value) {
       let obj2;
       if (c1 === 2) {
@@ -267,7 +111,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -289,7 +133,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
                 c2 = 1;
                 c1 = 1;
                 const obj5 = { value: obj2.saveEmail(user, c2, callback), done: false };
-                obj2 = navigation(stateFromStores[15]);
+                obj2 = navigation(stateFromStores[13]);
                 return obj5;
               }
             }
@@ -321,41 +165,38 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnterEmail
     obj4 = { style: tmp.container, children: items3 };
     tmp17 = closure_15;
     let obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stringResult };
-    const Text = tmp2(tmp3[18]).Text;
+    const Text = tmp2(tmp3[15]).Text;
     const tmp16 = closure_8;
     tmp18 = callback;
     if (null != stateFromStores.email) {
-      const intl2 = tmp2(tmp3[17]).intl;
-      stringResult = intl2.string(tmp2(tmp3[17]).t.Vm8akB);
+      const intl2 = tmp2(tmp3[16]).intl;
+      stringResult = intl2.string(tmp2(tmp3[16]).t.Vm8akB);
     } else {
-      const intl = tmp2(tmp3[17]).intl;
-      stringResult = intl.string(tmp2(tmp3[17]).t["CDTD/K"]);
+      const intl = tmp2(tmp3[16]).intl;
+      stringResult = intl.string(tmp2(tmp3[16]).t["CDTD/K"]);
     }
     items3 = [tmp15(Text, obj5), , , ];
     let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult };
-    const Text2 = tmp2(tmp3[18]).Text;
+    const Text2 = tmp2(tmp3[15]).Text;
     if (null != stateFromStores.email) {
-      const intl4 = tmp2(tmp3[17]).intl;
+      const intl4 = tmp2(tmp3[16]).intl;
       const obj7 = { email: stateFromStores.email };
-      formatToPlainStringResult = intl4.formatToPlainString(tmp2(tmp3[17]).t.Z7CaI7, obj7);
+      formatToPlainStringResult = intl4.formatToPlainString(tmp2(tmp3[16]).t.Z7CaI7, obj7);
     } else {
-      const intl3 = tmp2(tmp3[17]).intl;
-      formatToPlainStringResult = intl3.string(tmp2(tmp3[17]).t.YXXMxK);
+      const intl3 = tmp2(tmp3[16]).intl;
+      formatToPlainStringResult = intl3.string(tmp2(tmp3[16]).t.YXXMxK);
     }
     items3[1] = closure_14(Text2, obj6);
-    const obj8 = { style: tmp.input, label: intl5.string(tmp2(stateFromStores[17]).t["w/qqKK"]), textContentType: "emailAddress", keyboardType: "email-address", value, onChangeText: tmp8, onSubmitEditing: callback1, placeholder: intl6.string(tmp2(stateFromStores[17]).t.dI4d4S), returnKeyType: "done", autoCapitalize: "none", error: first1, autoFocus: true };
-    const tmp22 = changeEmailReason(stateFromStores[19]);
-    intl5 = tmp2(tmp3[17]).intl;
-    intl6 = tmp2(tmp3[17]).intl;
+    const obj8 = { style: tmp.input, label: intl5.string(tmp2(stateFromStores[16]).t["w/qqKK"]), textContentType: "emailAddress", keyboardType: "email-address", value, onChangeText: tmp8, onSubmitEditing: callback1, placeholder: intl6.string(tmp2(stateFromStores[16]).t.dI4d4S), returnKeyType: "done", autoCapitalize: "none", error: first1, autoFocus: true };
+    const tmp22 = changeEmailReason(stateFromStores[17]);
+    intl5 = tmp2(tmp3[16]).intl;
+    intl6 = tmp2(tmp3[16]).intl;
     items3[2] = closure_14(tmp22, obj8);
-    const obj9 = { text: intl7.string(tmp2(stateFromStores[17]).t.Vm8akB), onPress: callback1, disabled: "" === value || value === stateFromStores.email };
-    const Button = tmp2(tmp3[20]).Button;
-    intl7 = tmp2(tmp3[17]).intl;
+    const obj9 = { text: intl7.string(tmp2(stateFromStores[16]).t.Vm8akB), onPress: callback1, disabled: "" === value || value === stateFromStores.email };
+    const Button = tmp2(tmp3[18]).Button;
+    intl7 = tmp2(tmp3[16]).intl;
     items3[3] = closure_14(Button, obj9);
     tmp15Result = tmp15(tmp16, obj3);
   }
   return tmp15Result;
-});
-let result = size.fileFinishedImporting("modules/verification/native/components/EnterEmail.tsx");
-
-export default tmp5;
+};

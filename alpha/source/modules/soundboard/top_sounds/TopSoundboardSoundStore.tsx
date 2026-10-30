@@ -1,11 +1,11 @@
-// Module ID: 6047
-// Function ID: 6048
+// Module ID: 6054
+// Function ID: 6055
 // Name: TopSoundboardSoundStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 6047 (TopSoundboardSoundStore)
+// Module 6054 (TopSoundboardSoundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2;

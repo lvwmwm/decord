@@ -1,20 +1,20 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8336
+// Function ID: 8337
 // Name: ApplicationCommandActionCreators
-// Dependencies: [502, 8360, 1084, 38, 5672, 584, 1294, 7688, 11, 6058, 2]
+// Dependencies: [502, 8337, 1072, 38, 5678, 572, 1283, 7693, 11, 6065, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 8359 (ApplicationCommandActionCreators)
+// Module 8336 (ApplicationCommandActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
-import InteractionTypes from "InteractionTypes" /* 6058 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7688 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
+import InteractionTypes from "InteractionTypes" /* 6065 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7693 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8360 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8337 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

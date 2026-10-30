@@ -1,26 +1,11 @@
 // Module ID: 1634
 // Function ID: 1635
-// Dependencies: [1635, 1638, 1640, 1642]
+// Dependencies: [65]
 
 // Module 1634
-import _mod1635 from "module_1635" /* 1635 */;
-import SafeAreaView from "SafeAreaView" /* 1638 */;
-import react_native from "react-native" /* 1640 */;
-import _mod1642 from "module_1642" /* 1642 */;
+import module_65 from "module_65" /* 65 */;
 
-for (const key10013 in _mod1635) {
-  exports[key10013] = _mod1635[key10013];
-  continue;
-}
-for (const key10017 in SafeAreaView) {
-  exports[key10017] = SafeAreaView[key10017];
-  continue;
-}
-for (const key10021 in react_native) {
-  exports[key10021] = react_native[key10021];
-  continue;
-}
-for (const key10025 in _mod1642) {
-  exports[key10025] = _mod1642[key10025];
-  continue;
-}
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNCSafeAreaView", validAttributes: { mode: true, edges: true } };
+
+export default module_65.get("RNCSafeAreaView", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

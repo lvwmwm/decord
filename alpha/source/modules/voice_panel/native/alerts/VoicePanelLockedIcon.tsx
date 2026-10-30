@@ -1,59 +1,31 @@
-// Module ID: 19148
-// Function ID: 19149
+// Module ID: 19251
+// Function ID: 19252
 // Name: VoicePanelLockedIcon
-// Dependencies: [19, 21, 5005, 587, 558, 576, 1199, 19149, 6946, 2]
+// Dependencies: [19, 21, 5009, 575, 6954, 1188, 19252, 2]
+// Exports: default
 
-// Module 19148 (VoicePanelLockedIcon)
+// Module 19251 (VoicePanelLockedIcon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import NativeViewDefault from "NativeView" /* 6946 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19149 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import NativeViewDefault from "NativeView" /* 6954 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19252 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 const jsx = Fragment.jsx;
-let obj = { container: size, icon: {} };
+const obj = { container: size, icon: {} };
 size = { alignItems: "center", justifyContent: "center", alignSelf: "center", width: 64, height: 64, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round };
 let closure_4 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelLockedIcon() {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const tmp4 = closure_4();
-  if (cResult[0] !== tmp4.icon) {
-    const Icon = tmp(1199).Icon;
-    const tmp8 = <Icon style={tmp4.icon} source={AssetRegistryDefault} size={native.IconSizes.LARGE} />;
-    cResult[0] = tmp4.icon;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.container) {
-    let tmp9;
-    if (cResult[3] === tmp5) {
-      tmp9 = cResult[4];
-    }
-    return tmp9;
-  }
-  const tmp10 = jsx(NativeViewDefault, { style: tmp4.container, children: tmp5 });
-  cResult[2] = tmp4.container;
-  cResult[3] = tmp5;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function VoicePanelLockedIcon() {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
+
+export default function VoicePanelLockedIcon() {
   const tmp = closure_4();
   ({ style: tmp.icon, source: AssetRegistryDefault, size: native.IconSizes.LARGE });
   NativeViewDefault;
   const Icon = native.Icon;
   return <tmp2 style={tmp.container}>{null}</tmp2>;
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/voice_panel/native/alerts/VoicePanelLockedIcon.tsx");
-
-export default tmp3;
+};

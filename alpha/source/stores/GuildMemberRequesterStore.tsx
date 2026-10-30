@@ -1,20 +1,20 @@
-// Module ID: 6747
-// Function ID: 6748
+// Module ID: 6754
+// Function ID: 6755
 // Name: GuildMemberRequesterStore
-// Dependencies: [4857, 4917, 4908, 6748, 584, 4925, 1100, 504, 2]
+// Dependencies: [4858, 4921, 4912, 6755, 572, 4929, 1089, 504, 2]
 
-// Module 6747 (GuildMemberRequesterStore)
+// Module 6754 (GuildMemberRequesterStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageTypes from "MessageTypes" /* 1100 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4925 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6748 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import MessageTypes from "MessageTypes" /* 1089 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4929 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 6755 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
-const f38951 = (arg0, userIds) => {
+const f38659 = (arg0, userIds) => {
   let items;
   const obj2 = { type: "GUILD_MEMBERS_REQUEST", guildIds: items, userIds };
   items = [arg0];
@@ -107,8 +107,8 @@ function handleLoadSearchResults(arg0) {
     return false;
   }
 }
-const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38951);
-new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38951);
+const metroRequire = new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38659);
+new GuildMemberRequesterDefault(GuildMemberStore.isMember, f38659);
 const Store = get_initializedDefault.Store;
 class GuildMemberRequesterStore extends Store {
   initialize() {

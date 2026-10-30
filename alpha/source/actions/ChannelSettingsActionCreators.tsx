@@ -1,17 +1,17 @@
-// Module ID: 10160
-// Function ID: 10161
+// Module ID: 8191
+// Function ID: 8192
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 10161, 4857, 1084, 584, 5188, 8341, 1294, 7484, 2]
+// Dependencies: [5, 8192, 4858, 1072, 572, 5194, 8194, 1283, 7492, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 10160 (ChannelSettingsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
+// Module 8191 (ChannelSettingsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 10161 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8192 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let application_id, auto_archive_duration, default_auto_archive_duration, default_forum_layout, default_sort_order, default_tag_setting, default_thread_rate_limit_per_user, permission_overwrites, position, rate_limit_per_user, rtc_region, theme_color, user, user_limit, video_quality_mode;
@@ -138,7 +138,7 @@ let obj = function _saveChannel() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ let obj = function _saveChannel() {
               channel = undefined;
               topic = 1;
               bitrate = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === topic) {
             if (arg0 === 1) {
@@ -317,7 +317,7 @@ obj = function _deleteChannel() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -374,7 +374,7 @@ obj = function _deleteChannel() {
           }
           closure_130_8();
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         c4 = 3;

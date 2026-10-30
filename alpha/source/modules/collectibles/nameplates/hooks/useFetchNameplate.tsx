@@ -1,67 +1,21 @@
-// Module ID: 16402
-// Function ID: 16403
+// Module ID: 16454
+// Function ID: 16455
 // Name: useFetchNameplate
-// Dependencies: [558, 576, 11144, 1993, 1990, 2]
+// Dependencies: [11349, 1988, 1985, 2]
+// Exports: useFetchNameplate
 
-// Module 16402 (useFetchNameplate)
-import react from "react" /* 576 */;
-import utils from "utils" /* 1990 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11144 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 16454 (useFetchNameplate)
+import utils from "utils" /* 1985 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1988 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11349 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchNameplate(arg0) {
-  let isFetching;
-  let product;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(7);
-  const obj2 = useFetchCollectiblesProduct;
-  const fetchCollectiblesProduct = obj2.useFetchCollectiblesProduct(arg0);
-  ({ product, isFetching } = fetchCollectiblesProduct);
-  let type;
-  if (product != null) {
-    const first = product.items[0];
-    if (first != null) {
-      type = first.type;
-    }
-  }
-  let first1;
-  if (type === CollectiblesItemType.CollectiblesItemType.NAMEPLATE) {
-    first1 = product.items[0];
-  }
-  if (cResult[0] !== first1) {
-    const tmpResult = utils;
-    const nameplateData = tmpResult.getNameplateData(first1);
-    cResult[0] = first1;
-    cResult[1] = nameplateData;
-    tmp8 = nameplateData;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] === isFetching) {
-    if (cResult[3] === tmp8) {
-      if (cResult[4] === first1) {
-        let tmp10;
-        if (cResult[5] === product) {
-          tmp10 = cResult[6];
-        }
-        return tmp10;
-      }
-    }
-  }
-  const obj3 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: tmp8, isFetching };
-  cResult[2] = isFetching;
-  cResult[3] = tmp8;
-  cResult[4] = first1;
-  cResult[5] = product;
-  cResult[6] = obj3;
-  tmp10 = obj3;
-}) : (function useFetchNameplate(arg0) {
+const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
+
+export function useFetchNameplate(skuId) {
   let tmpResult;
   const obj = useFetchCollectiblesProduct;
-  const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(arg0);
+  const fetchCollectiblesProduct = obj.useFetchCollectiblesProduct(skuId);
   const product = fetchCollectiblesProduct.product;
   let type;
   const isFetching = fetchCollectiblesProduct.isFetching;
@@ -78,7 +32,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFetchNa
   const obj2 = { nameplateProduct: product, nameplateRecord: first1, nameplateData: tmpResult.getNameplateData(first1), isFetching };
   tmpResult = utils;
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useFetchNameplate.tsx");
-
-export const useFetchNameplate = tmp2;
+}

@@ -1,30 +1,30 @@
-// Module ID: 19892
-// Function ID: 19893
+// Module ID: 19955
+// Function ID: 19956
 // Name: clips/ClipsManager
-// Dependencies: [5, 5771, 502, 4857, 2012, 5752, 7872, 2018, 8203, 1084, 6702, 5756, 7274, 15132, 5777, 6704, 1264, 4833, 584, 4819, 1381, 15131, 2]
+// Dependencies: [5, 5778, 502, 4858, 2007, 5759, 7878, 2013, 8206, 1072, 6709, 5763, 7281, 15172, 5784, 6711, 1253, 4834, 572, 4820, 1376, 15171, 2]
 
-// Module 19892 (clips/ClipsManager)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import Constants2 from "Constants" /* 5756 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5771 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5777 */;
-import Constants3 from "Constants" /* 6702 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
-import ClipsExperiment from "ClipsExperiment" /* 15132 */;
+// Module 19955 (clips/ClipsManager)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import Constants2 from "Constants" /* 5763 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5778 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5784 */;
+import Constants3 from "Constants" /* 6709 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
+import ClipsExperiment from "ClipsExperiment" /* 15172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
-import ClipsStore from "ClipsStore" /* 2018 */;
-import ClipsConstants from "ClipsConstants" /* 8203 */;
-import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
+import ClipsStore from "ClipsStore" /* 2013 */;
+import ClipsConstants from "ClipsConstants" /* 8206 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -38,7 +38,7 @@ let closure_17;
 let closure_18;
 let map1;
 let tmp;
-const isClipsEnabled = tmp(15131);
+const isClipsEnabled = tmp(15171);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_12, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: map1, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_14, ClipsHardwareClassification: closure_15, CLIP_RUNTIME: closure_16 } = ClipsConstants);
 ({ AnalyticEvents: closure_17, RTCConnectionStates: closure_18 } = Constants);
@@ -207,7 +207,7 @@ class ClipsManager extends AutomaticLifecycleManager {
       if (tmpResult.areClipsAvailable()) {
         const clipsFromStorage = self.loadClipsFromStorage();
         self.maybeStartNtpClock();
-        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj3.getHardwareClassificationForDecoupled() && obj3.getHardwareClassificationVersion() === syncedClientThemes;
+        const tmp7 = null != ClipsStore.getHardwareClassification() && null != obj3.getHardwareClassificationForDecoupled() && obj3.getHardwareClassificationVersion() === authStore3;
         if (!tmp7) {
           const result1 = self.classifyHardwareAndTrack();
           result1.then((classification) => {
@@ -268,7 +268,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

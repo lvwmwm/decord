@@ -1,28 +1,28 @@
-// Module ID: 5189
-// Function ID: 5190
+// Module ID: 5195
+// Function ID: 5196
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 5040, 4908, 1084, 3, 5190, 1111, 5041, 5054, 5193, 2]
+// Dependencies: [32, 502, 5044, 4912, 1072, 3, 5196, 1100, 5045, 5058, 5199, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 5189 (getInitialNavigationState)
+// Module 5195 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1111 */;
-import matchPathCompat from "matchPathCompat" /* 5041 */;
-import RouteUtils from "RouteUtils" /* 5054 */;
-import useChatLayout from "useChatLayout" /* 5190 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5193 */;
+import router_utils from "router_utils" /* 1100 */;
+import matchPathCompat from "matchPathCompat" /* 5045 */;
+import RouteUtils from "RouteUtils" /* 5058 */;
+import useChatLayout from "useChatLayout" /* 5196 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5199 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 5040 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import Constants from "Constants" /* 1084 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 5044 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let routes;
 
 let metroImportDefault;
 let metroRequire;
-function getInitialGuildState(id, channelId, flag, flag2) {
+function getInitialGuildState(guildId, channelId, flag, flag2) {
   let items1;
   let items3;
   let items5;
@@ -38,7 +38,7 @@ function getInitialGuildState(id, channelId, flag, flag2) {
     flag = false;
   }
   if (channelId == null) {
-    channelId = SelectedChannelStore.getChannelId(id);
+    channelId = SelectedChannelStore.getChannelId(guildId);
   }
   const obj = useChatLayout;
   const isChatLockedOpen = obj.getChatLayout().isChatLockedOpen;
@@ -55,8 +55,8 @@ function getInitialGuildState(id, channelId, flag, flag2) {
           const items2 = [obj3, ];
           const obj7 = { name: "channel", params: obj8 };
           const obj2 = { index: 0, routes: items3 };
-          obj6 = { guildId: id, channelId };
-          obj8 = { guildId: id, channelId };
+          obj6 = { guildId, channelId };
+          obj8 = { guildId, channelId };
           items2[1] = obj7;
           const obj9 = { name: "main", state: obj10 };
           items3 = [obj9];
@@ -74,7 +74,7 @@ function getInitialGuildState(id, channelId, flag, flag2) {
   obj13 = { routes: items5, index: 0 };
   items5 = [];
   const obj11 = { index: 0, routes: items7 };
-  const obj14 = { name: "guilds", params: { guildId: id, channelId, drawerOpen: flag } };
+  const obj14 = { name: "guilds", params: { guildId, channelId, drawerOpen: flag } };
   items5[0] = obj14;
   const items6 = [obj12];
   const obj15 = { name: "main", state: obj16 };
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(5054).RouteParam;
+      const RouteParam3 = tmp(5058).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(5054).RouteParam;
+      RouteParam4 = tmp(5058).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {

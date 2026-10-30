@@ -1,19 +1,19 @@
-// Module ID: 8199
-// Function ID: 8200
+// Module ID: 8202
+// Function ID: 8203
 // Name: Upload
-// Dependencies: [580, 8200, 8201, 12, 8205, 1278, 2]
+// Dependencies: [568, 8203, 8204, 12, 8208, 1267, 2]
 // Exports: isResolvedUpload
 
-// Module 8199 (Upload)
+// Module 8202 (Upload)
 import _modDef12 from "module_12" /* 12 */;
-import _mod580 from "module_580" /* 580 */;
-import v1 from "v1" /* 1278 */;
-import UploadPlatform from "UploadPlatform" /* 8200 */;
-import UploadUtils from "UploadUtils" /* 8201 */;
-import FileUtilsAll from "FileUtils" /* 8205 */;
+import _mod568 from "module_568" /* 568 */;
+import v1 from "v1" /* 1267 */;
+import UploadPlatform from "UploadPlatform" /* 8203 */;
+import UploadUtils from "UploadUtils" /* 8204 */;
+import FileUtilsAll from "FileUtils" /* 8208 */;
 import size from "module_2" /* 2 */;
 
-const EventEmitter = _mod580.EventEmitter;
+const EventEmitter = _mod568.EventEmitter;
 class Upload extends EventEmitter {
   constructor(item) {
     const tmp4 = new Upload(tmp3, tmp2, tmp);

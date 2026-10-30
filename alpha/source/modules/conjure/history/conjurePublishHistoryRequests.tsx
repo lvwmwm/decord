@@ -1,11 +1,11 @@
-// Module ID: 12340
-// Function ID: 12341
+// Module ID: 12502
+// Function ID: 12503
 // Name: conjurePublishHistoryRequests
-// Dependencies: [5, 10906, 2]
+// Dependencies: [5, 10929, 2]
 // Exports: fetchPublishHistory, fetchPublishHistoryNotes
 
-// Module 12340 (conjurePublishHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 10906 */;
+// Module 12502 (conjurePublishHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ obj = function _fetchPublishHistoryNotes() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

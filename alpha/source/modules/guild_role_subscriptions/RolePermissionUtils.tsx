@@ -1,13 +1,13 @@
-// Module ID: 4928
-// Function ID: 4929
+// Module ID: 4932
+// Function ID: 4933
 // Name: RolePermissionUtils
-// Dependencies: [4912, 1084, 1096, 2]
+// Dependencies: [4916, 1072, 1084, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 4928 (RolePermissionUtils)
-import Constants from "Constants" /* 1084 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4912 */;
+// Module 4932 (RolePermissionUtils)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4916 */;
 import size from "module_2" /* 2 */;
 
 const hasPermission = GuildRoleRecord.hasPermission;
@@ -27,7 +27,7 @@ export function isChannelAccessDeniedBy(isGuildVocal, deny) {
     if (!hasItem) {
       let isGuildVocalResult = isGuildVocal.isGuildVocal();
       if (isGuildVocalResult) {
-        const tmp2Result = tmp2(1096);
+        const tmp2Result = tmp2(1084);
         isGuildVocalResult = tmp2Result.has(deny.deny, tmp4.CONNECT);
       }
       hasItem = isGuildVocalResult;
@@ -48,7 +48,7 @@ export function isChannelAccessGrantedBy(isGuildVocal, deny) {
       if (!hasItem1) {
         let isGuildVocalResult = isGuildVocal.isGuildVocal();
         if (isGuildVocalResult) {
-          const tmp4Result = tmp4(1096);
+          const tmp4Result = tmp4(1084);
           isGuildVocalResult = tmp4Result.has(deny.deny, tmp6.CONNECT);
         }
         hasItem1 = isGuildVocalResult;
@@ -65,7 +65,7 @@ export function isChannelAccessGrantedBy(isGuildVocal, deny) {
         const isGuildVocalResult1 = isGuildVocal.isGuildVocal();
         let hasItem = !isGuildVocalResult1;
         if (isGuildVocalResult1) {
-          const tmp10Result = tmp10(1096);
+          const tmp10Result = tmp10(1084);
           hasItem = tmp10Result.has(deny.allow, tmp12.CONNECT);
         }
         hasItem2 = hasItem;

@@ -1,14 +1,14 @@
-// Module ID: 13636
-// Function ID: 13637
+// Module ID: 7393
+// Function ID: 7394
 // Name: GuildOnboardingHomeTypes
-// Dependencies: [4857, 1084, 1385, 4942, 2]
+// Dependencies: [4858, 1072, 1380, 4946, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 13636 (GuildOnboardingHomeTypes)
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import Constants from "Constants" /* 1084 */;
+// Module 7393 (GuildOnboardingHomeTypes)
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,10 +48,10 @@ function resourceChannelFromServer(channelId) {
   }
   return obj;
 }
-function isSettingsEmpty(welcomeMessage) {
-  let tmp = null == welcomeMessage;
+function isSettingsEmpty(settings) {
+  let tmp = null == settings;
   if (!tmp) {
-    welcomeMessage = welcomeMessage.welcomeMessage;
+    const welcomeMessage = settings.welcomeMessage;
     let tmp2 = null == welcomeMessage;
     if (!tmp2) {
       let tmp4 = !(null != welcomeMessage.message && welcomeMessage.message.length > 0);
@@ -64,11 +64,11 @@ function isSettingsEmpty(welcomeMessage) {
     }
     let tmp6 = tmp2;
     if (tmp6) {
-      let tmp8 = !(null != welcomeMessage.newMemberActions && welcomeMessage.newMemberActions.length > 0);
-      const tmp7 = null != welcomeMessage.newMemberActions && welcomeMessage.newMemberActions.length > 0;
+      let tmp8 = !(null != settings.newMemberActions && settings.newMemberActions.length > 0);
+      const tmp7 = null != settings.newMemberActions && settings.newMemberActions.length > 0;
       if (tmp8) {
-        tmp8 = !(null != welcomeMessage.resourceChannels && welcomeMessage.resourceChannels.length > 0);
-        const tmp9 = null != welcomeMessage.resourceChannels && welcomeMessage.resourceChannels.length > 0;
+        tmp8 = !(null != settings.resourceChannels && settings.resourceChannels.length > 0);
+        const tmp9 = null != settings.resourceChannels && settings.resourceChannels.length > 0;
       }
       tmp6 = tmp8;
     }
@@ -83,7 +83,6 @@ export const WELCOME_MESSAGE_MIN_LENGTH = 7;
 export const WELCOME_MESSAGE_MAX_LENGTH = 300;
 export const NEW_MEMBER_ACTION_TITLE_MIN_LENGTH = 7;
 export const NEW_MEMBER_ACTION_TITLE_MAX_LENGTH = 60;
-export const NEW_MEMBER_ACTION_MIN = 3;
 export const NEW_MEMBER_ACTION_MAX = 5;
 export const RESOURCE_CHANNEL_TITLE_MIN_LENGTH = 1;
 export const RESOURCE_CHANNEL_TITLE_MAX_LENGTH = 30;
@@ -268,20 +267,15 @@ export function isSettingsValid(welcomeMessage) {
         if (null != authorIds) {
           if (0 !== welcomeMessage.welcomeMessage.authorIds.length) {
             if (null != welcomeMessage.newMemberActions) {
-              if (welcomeMessage.newMemberActions.length >= 3) {
-                if (null != welcomeMessage.newMemberActions) {
-                  const newMemberActions = welcomeMessage.newMemberActions;
-                  for (const item10012 of newMemberActions) {
-                    let channel = ChannelStore.getChannel(item10012.channelId);
-                    obj.return();
-                    let flag = false;
-                    return false;
-                  }
-                }
-                return true;
+              const newMemberActions = welcomeMessage.newMemberActions;
+              for (const item10012 of newMemberActions) {
+                let channel = ChannelStore.getChannel(item10012.channelId);
+                obj.return();
+                let flag = false;
+                return false;
               }
             }
-            return false;
+            return true;
           }
         }
         return false;

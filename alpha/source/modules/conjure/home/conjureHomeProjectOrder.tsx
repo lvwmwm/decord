@@ -1,10 +1,10 @@
-// Module ID: 14630
-// Function ID: 14631
+// Module ID: 14663
+// Function ID: 14664
 // Name: conjureHomeProjectOrder
 // Dependencies: [11, 2]
 // Exports: sortConjureProjectsByActivity
 
-// Module 14630 (conjureHomeProjectOrder)
+// Module 14663 (conjureHomeProjectOrder)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

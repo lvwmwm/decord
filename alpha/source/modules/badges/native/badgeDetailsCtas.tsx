@@ -1,28 +1,31 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11441
+// Function ID: 11442
 // Name: badgeDetailsCtas
-// Dependencies: [1084, 1086, 8713, 1125, 5694, 7549, 7707, 7338, 9633, 6773, 9628, 10513, 2]
+// Dependencies: [1072, 1074, 5194, 1499, 8747, 1114, 5700, 7557, 7712, 7345, 9658, 6780, 9653, 10538, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 11236 (badgeDetailsCtas)
-import Constants from "Constants" /* 1084 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import intl2 from "intl" /* 1125 */;
-import openURLDefault from "openURL" /* 5694 */;
-import QuestContent from "QuestContent" /* 6773 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
-import openUserSettings from "openUserSettings" /* 7549 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7707 */;
-import BadgeId from "BadgeId" /* 8713 */;
-import QuestsEligibility from "QuestsEligibility" /* 9628 */;
-import QuestUtils from "QuestUtils" /* 9633 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10513 */;
+// Module 11441 (badgeDetailsCtas)
+import Constants from "Constants" /* 1072 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import intl2 from "intl" /* 1114 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import openURLDefault from "openURL" /* 5700 */;
+import QuestContent from "QuestContent" /* 6780 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7712 */;
+import BadgeId from "BadgeId" /* 8747 */;
+import QuestsEligibility from "QuestsEligibility" /* 9653 */;
+import QuestUtils from "QuestUtils" /* 9658 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10538 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let obj4;
 let obj5;
+let tmp;
+const Link = tmp(1499);
+const openUserSettings = tmp(7557);
 const UserSettingsSections = Constants.UserSettingsSections;
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 let obj = { [BadgeId.BadgeId.STAFF]: obj2, [BadgeId.BadgeId.PREMIUM_TENURE]: obj3, [BadgeId.BadgeId.GUILD_BOOSTER]: obj4, [BadgeId.BadgeId.ORB_PROFILE]: obj5 };
@@ -54,9 +57,46 @@ obj3 = {
     return stringResult;
   },
   ctaAction() {
-    obj = openUserSettings;
-    const obj2 = { screen: UserSettingsSections.PREMIUM };
-    return obj.openUserSettings(obj2, undefined, { pop: false });
+    let routes1;
+    let tmp = require;
+    obj = RootNavigationRef;
+    const rootNavigationRef = obj.getRootNavigationRef();
+    let flag = false;
+    if (null != rootNavigationRef) {
+      flag = false;
+      if (rootNavigationRef.isReady()) {
+        const rootState = rootNavigationRef.getRootState();
+        const routes = rootState.routes;
+        const findLastIndexResult = routes.findLastIndex((name) => {
+          let tmp = "settings" === name.name;
+          if (tmp) {
+            obj = Link;
+            tmp = obj.getFocusedRouteNameFromRoute(name) === constants.PREMIUM;
+          }
+          return tmp;
+        });
+        let flag2 = -1 !== findLastIndexResult;
+        if (flag2) {
+          flag2 = true;
+          if (findLastIndexResult !== rootState.index) {
+            const dispatch = rootNavigationRef.dispatch;
+            const CommonActions = Link.CommonActions;
+            const reset = CommonActions.reset;
+            const obj2 = { routes: routes1.slice(0, findLastIndexResult + 1), index: findLastIndexResult };
+            const merged = Object.assign(rootState);
+            routes1 = rootState.routes;
+            dispatch(reset(obj2));
+            flag2 = true;
+          }
+        }
+        flag = flag2;
+      }
+    }
+    if (!flag) {
+      const obj3 = { screen: UserSettingsSections.PREMIUM };
+      const tmpResult = openUserSettings;
+      tmpResult.openUserSettings(obj3, undefined, { pop: false });
+    }
   }
 };
 obj4 = {

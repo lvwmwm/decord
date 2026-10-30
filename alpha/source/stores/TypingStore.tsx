@@ -1,17 +1,17 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 13679
+// Function ID: 13680
 // Name: TypingStore
-// Dependencies: [502, 4857, 7818, 1084, 1101, 7383, 1294, 584, 504, 2]
+// Dependencies: [502, 4858, 7823, 1072, 1090, 7390, 1283, 572, 504, 2]
 
-// Module 13530 (TypingStore)
+// Module 13679 (TypingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
-import SlowmodeStore from "SlowmodeStore" /* 7818 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import SlowmodeStore from "SlowmodeStore" /* 7823 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_10, closure_11, closure_12;
@@ -148,12 +148,12 @@ class TypingStore extends Store {
     }
     return tmp;
   }
-  isTyping(id, id2) {
-    let tmp = closure_10[id];
+  isTyping(isStage, id) {
+    let tmp = closure_10[isStage];
     if (tmp == null) {
       tmp = closure_13;
     }
-    return null != tmp[id2];
+    return null != tmp[id];
   }
   getCustomTypingIndicatorConfig(arg0) {
     let tmp = closure_12[arg0];
@@ -176,7 +176,7 @@ let obj = {
     const id = AuthenticationStore.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(7383).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(7390).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let num3;

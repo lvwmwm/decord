@@ -1,75 +1,21 @@
-// Module ID: 10646
-// Function ID: 10647
+// Module ID: 10672
+// Function ID: 10673
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 558, 576, 6731, 6984, 7155, 5271, 1125, 2]
+// Dependencies: [19, 17, 21, 7163, 6992, 6738, 5619, 1114, 2]
+// Exports: default
 
-// Module 10646 (UnsupportedFeatureModal)
+// Module 10672 (UnsupportedFeatureModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6731 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6738 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UnsupportedFeatureModal(arg0) {
-  let onDismiss;
-  let title;
-  let tmp4;
-  let tmp5;
-  const obj = onDismiss(576);
-  const cResult = obj.c(7);
-  ({ title, onDismiss } = arg0);
-  if (cResult[0] !== onDismiss) {
-    function handleClose() {
-      const arr = ModalActionCreatorsDefault;
-      arr.pop();
-      if (onDismiss != null) {
-        onDismiss();
-      }
-    }
-    cResult[0] = onDismiss;
-    cResult[1] = handleClose;
-    tmp4 = handleClose;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] !== tmp4) {
-    const tmpResult = onDismiss(6984);
-    const headerCloseButton = tmpResult.getHeaderCloseButton(tmp4);
-    cResult[2] = tmp4;
-    cResult[3] = headerCloseButton;
-    tmp5 = headerCloseButton;
-  } else {
-    tmp5 = cResult[3];
-  }
-  if (cResult[4] === tmp5) {
-    let tmp7;
-    if (cResult[5] === title) {
-      tmp7 = cResult[6];
-    }
-    return tmp7;
-  }
-  const obj3 = {
-    Unsupported: {
-      title,
-      headerLeft: tmp5,
-      render() {
-        let intl;
-        ({ variant: "text-lg/normal", color: "text-default", children: intl.string(onDismiss(dependencyMap[9]).t.I22zuX) });
-        const Text = onDismiss(dependencyMap[8]).Text;
-        intl = onDismiss(dependencyMap[9]).intl;
-        return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
-      }
-    }
-  };
-  const tmp8 = jsx(onDismiss(7155).Navigator, { initialRouteName: "Unsupported", screens: obj3 });
-  cResult[4] = tmp5;
-  cResult[5] = title;
-  cResult[6] = tmp8;
-  tmp7 = tmp8;
-}) : (function UnsupportedFeatureModal(onDismiss) {
+const result = size.fileFinishedImporting("modules/billing/native/UnsupportedFeatureModal.tsx");
+
+export default function UnsupportedFeatureModal(onDismiss) {
   let obj3;
   let obj4;
   onDismiss = onDismiss.onDismiss;
@@ -85,16 +31,13 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Unsupporte
     }),
     render() {
       let intl;
-      ({ variant: "text-lg/normal", color: "text-default", children: intl.string(onDismiss(dependencyMap[9]).t.I22zuX) });
-      const Text = onDismiss(dependencyMap[8]).Text;
-      intl = onDismiss(dependencyMap[9]).intl;
+      ({ variant: "text-lg/normal", color: "text-default", children: intl.string(onDismiss(dependencyMap[7]).t.I22zuX) });
+      const Text = onDismiss(dependencyMap[6]).Text;
+      intl = onDismiss(dependencyMap[7]).intl;
       return <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 24 }}>{null}</View>;
     }
   };
-  const Navigator = onDismiss(7155).Navigator;
-  obj4 = onDismiss(6984);
+  const Navigator = onDismiss(7163).Navigator;
+  obj4 = onDismiss(6992);
   return <Navigator initialRouteName="Unsupported" screens={obj2} />;
-});
-const result = size.fileFinishedImporting("modules/billing/native/UnsupportedFeatureModal.tsx");
-
-export default tmp3;
+};

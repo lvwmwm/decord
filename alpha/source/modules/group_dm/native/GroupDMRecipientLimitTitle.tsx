@@ -1,23 +1,22 @@
-// Module ID: 18728
-// Function ID: 18729
+// Module ID: 18787
+// Function ID: 18788
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1084, 21, 5005, 587, 1381, 558, 576, 11387, 5289, 1125, 5271, 9487, 12186, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 575, 1376, 11590, 5591, 1114, 5619, 9506, 12345, 2]
+// Exports: default
 
-// Module 18728 (GroupDMRecipientLimitTitle)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useToken from "useToken" /* 5289 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11387 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12186 */;
+// Module 18787 (GroupDMRecipientLimitTitle)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import useToken from "useToken" /* 5591 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11590 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12345 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -40,177 +39,9 @@ if (PlatformUtils.isAndroid()) {
   tmp6 = items;
 }
 let closure_9 = createStyles(obj);
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRecipientLimitTitle(arg0) {
-  let items;
-  let items1;
-  let memberCount;
-  let recipientLimit;
-  let str2;
-  let title;
-  const obj = react2;
-  const cResult = obj.c(30);
-  ({ title, memberCount, recipientLimit } = arg0);
-  const tmp4 = closure_9();
-  const obj2 = GroupDMNitroUpsellModel;
-  const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
-  const obj3 = useToken;
-  const token = obj3.useToken(nativeDefault.modules.mobile.HEADER_TITLE_TEXT_STYLE);
-  const obj4 = useToken;
-  const token1 = obj4.useToken(nativeDefault.colors.PREMIUM_NITRO_PINK_TEXT);
-  const obj5 = useToken;
-  const token2 = obj5.useToken(nativeDefault.colors.TEXT_SUBTLE);
-  let str = "text-subtle";
-  if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
-      str = "premium-nitro-pink-text";
-    }
-    str2 = str;
-  } else {
-    str2 = str;
-    if (memberCount >= recipientLimit) {
-      str2 = "text-feedback-critical";
-    }
-  }
-  if (cResult[0] === memberCount) {
-    let tmp13;
-    if (cResult[1] === recipientLimit) {
-      tmp13 = cResult[2];
-    }
-    if (cResult[3] === tmp4.title) {
-      if (cResult[4] === title) {
-        let tmp15;
-        if (cResult[5] === token) {
-          tmp15 = cResult[6];
-        }
-        if (cResult[7] === ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS)) {
-          if (cResult[8] === memberCount > MAX_GROUP_DM_PARTICIPANTS) {
-            if (cResult[9] === token1) {
-              if (cResult[10] === tmp4.nitroWheelIcon) {
-                let tmp18;
-                if (cResult[11] === token2) {
-                  tmp18 = cResult[12];
-                }
-                if (cResult[13] === tmp4.subtitle) {
-                  if (cResult[14] === str2) {
-                    let tmp22;
-                    if (cResult[15] === tmp13) {
-                      tmp22 = cResult[16];
-                    }
-                    if (cResult[17] === tmp4.subtitleRow) {
-                      if (cResult[18] === tmp18) {
-                        let tmp25;
-                        if (cResult[19] === tmp22) {
-                          tmp25 = cResult[20];
-                        }
-                        if (cResult[21] === tmp15) {
-                          let tmp29;
-                          if (cResult[22] === tmp25) {
-                            tmp29 = cResult[23];
-                          }
-                          if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-                            let tmp39;
-                            const _HermesInternal = HermesInternal;
-                            const combined = "" + title + ", " + tmp13;
-                            const _Symbol = Symbol;
-                            if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                              const rect = { top: nativeDefault.space.PX_8, bottom: nativeDefault.space.PX_8, left: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16 };
-                              cResult[24] = rect;
-                              tmp39 = rect;
-                            } else {
-                              tmp39 = cResult[24];
-                            }
-                            if (cResult[25] === tmp29) {
-                              let tmp40;
-                              if (cResult[26] === combined) {
-                                tmp40 = cResult[27];
-                              }
-                              return tmp40;
-                            }
-                            const obj6 = { accessible: true, accessibilityRole: "button", accessibilityLabel: combined, hitSlop: tmp39, onPress: openGroupDMNitroCapInfoActionSheetDefault, children: tmp29 };
-                            const tmp43 = metroRequire(_false, obj6);
-                            cResult[25] = tmp29;
-                            cResult[26] = combined;
-                            cResult[27] = tmp43;
-                            tmp40 = tmp43;
-                          } else {
-                            let tmp33;
-                            if (cResult[28] !== tmp29) {
-                              const obj7 = { accessible: true, accessibilityRole: "header", children: tmp29 };
-                              const tmp36 = metroRequire(React3, obj7);
-                              cResult[28] = tmp29;
-                              cResult[29] = tmp36;
-                              tmp33 = tmp36;
-                            } else {
-                              tmp33 = cResult[29];
-                            }
-                            return tmp33;
-                          }
-                        }
-                        const obj8 = { children: items };
-                        items = [tmp15, tmp25];
-                        const tmp32 = metroImportDefault(metroImportAll, obj8);
-                        cResult[21] = tmp15;
-                        cResult[22] = tmp25;
-                        cResult[23] = tmp32;
-                        tmp29 = tmp32;
-                      }
-                    }
-                    const obj9 = { style: tmp4.subtitleRow, children: items1 };
-                    items1 = [tmp18, tmp22];
-                    const tmp28 = metroImportDefault(React3, obj9);
-                    cResult[17] = tmp4.subtitleRow;
-                    cResult[18] = tmp18;
-                    cResult[19] = tmp22;
-                    cResult[20] = tmp28;
-                    tmp25 = tmp28;
-                  }
-                }
-                const obj10 = { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp4.subtitle, maxFontSizeMultiplier: 2, children: tmp13 };
-                const tmp24 = metroRequire(Text_Text.Text, obj10);
-                cResult[13] = tmp4.subtitle;
-                cResult[14] = str2;
-                cResult[15] = tmp13;
-                cResult[16] = tmp24;
-                tmp22 = tmp24;
-              }
-            }
-          }
-        }
-        let tmp20Result = null;
-        if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-          let tmp21 = token2;
-          const NitroWheelIcon = tmp(9487).NitroWheelIcon;
-          const tmp20 = metroRequire;
-          if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
-            tmp21 = token1;
-          }
-          const obj11 = { size: "xxs", color: tmp21, style: tmp4.nitroWheelIcon, accessible: false };
-          tmp20Result = tmp20(NitroWheelIcon, obj11);
-        }
-        cResult[7] = "entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS;
-        cResult[8] = memberCount > MAX_GROUP_DM_PARTICIPANTS;
-        cResult[9] = token1;
-        cResult[10] = tmp4.nitroWheelIcon;
-        cResult[11] = token2;
-        cResult[12] = tmp20Result;
-        tmp18 = tmp20Result;
-      }
-    }
-    const obj12 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp4.title, maxFontSizeMultiplier: 2, children: title };
-    const tmp17 = metroRequire(Text_Text.Text, obj12);
-    cResult[3] = tmp4.title;
-    cResult[4] = title;
-    cResult[5] = token;
-    cResult[6] = tmp17;
-    tmp15 = tmp17;
-  }
-  const intl = tmp(1125).intl;
-  const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
-  cResult[0] = memberCount;
-  cResult[1] = recipientLimit;
-  cResult[2] = formatToPlainStringResult;
-  tmp13 = formatToPlainStringResult;
-}) : (function GroupDMRecipientLimitTitle(arg0) {
+const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMRecipientLimitTitle.tsx");
+
+export default function GroupDMRecipientLimitTitle(arg0) {
   let items1;
   let memberCount;
   let recipientLimit;
@@ -240,7 +71,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
       str2 = "text-feedback-critical";
     }
   }
-  const intl = tmp2(1125).intl;
+  const intl = tmp2(1114).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   const items = [, ];
   const obj5 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp.title, maxFontSizeMultiplier: 2, children: title };
@@ -249,7 +80,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9487).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9506).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }
@@ -272,7 +103,4 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMRec
     tmp15Result2 = tmp15(tmp16, obj11);
   }
   return tmp15Result2;
-});
-const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMRecipientLimitTitle.tsx");
-
-export default tmp7;
+};

@@ -1,257 +1,24 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13959
+// Function ID: 13960
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 2043, 7263, 558, 576, 504, 7319, 6868, 2]
+// Dependencies: [19, 2040, 7270, 504, 7326, 6875, 2]
+// Exports: default
 
-// Module 13812 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 13959 (useRequiredLinkedLobbyApplicationAuthorization)
 import react from "react" /* 19 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6868 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7263 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7319 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6875 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7270 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7326 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;
 
 const useEffect = react.useEffect;
 const FetchState = AuthorizedAppsStore2.FetchState;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredLinkedLobbyApplicationAuthorization(require_application_authorization) {
-  let application_id;
-  let first;
-  let stateFromStores;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp16;
-  let tmp8;
-  let tmp = application_id;
-  let tmp2 = stateFromStores;
-  let obj = application_id(stateFromStores[4]);
-  const cResult = obj.c(34);
-  let prop;
-  if (require_application_authorization != null) {
-    prop = require_application_authorization.require_application_authorization;
-  }
-  application_id = null;
-  if (prop) {
-    application_id = require_application_authorization.application_id;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [AuthorizedAppsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== application_id) {
-    const fn = function c() {
-      const obj = { authorizationsFetchState: AuthorizedAppsStore.getFetchState(), applicationOAuth2Token: AuthorizedAppsStore.getNewestTokenForApplication(application_id) };
-      return obj;
-    };
-    cResult[1] = application_id;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = tmp(tmp2[5]);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-  const authorizationsFetchState = stateFromStoresObject.authorizationsFetchState;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [ApplicationStore];
-    cResult[3] = items1;
-    tmp10 = items1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== application_id) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    cResult[4] = application_id;
-    cResult[5] = F;
-    tmp12 = F;
-  } else {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  const tmpResult4 = tmp(tmp2[5]);
-  stateFromStores = tmpResult4.useStateFromStores(tmp10, tmp12);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    const items2 = [ApplicationStore];
-    cResult[6] = items2;
-    tmp14 = items2;
-  } else {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  const tmp15 = cResult[7];
-  if (stateFromStores != null) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  if (tmp15 !== undefined) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    if (stateFromStores != null) {
-      class F {
-        constructor() {
-          return ApplicationStore.getApplication(application_id);
-        }
-      }
-    }
-    const fn2 = function f() {
-      let parentId;
-      const getApplication = ApplicationStore.getApplication;
-      if (stateFromStores != null) {
-        parentId = stateFromStores.parentId;
-      }
-      return getApplication(parentId);
-    };
-    cResult[7] = tmp17;
-    cResult[8] = fn2;
-    tmp16 = fn2;
-  } else {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  const tmpResult5 = tmp(tmp2[5]);
-  const stateFromStores1 = tmpResult5.useStateFromStores(tmp14, tmp16);
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    const items3 = [AuthorizedAppsStore];
-    cResult[9] = items3;
-  } else {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  const tmp20 = cResult[10];
-  if (stateFromStores != null) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  if (tmp20 !== undefined) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    if (stateFromStores != null) {
-      class F {
-        constructor() {
-          return ApplicationStore.getApplication(application_id);
-        }
-      }
-    }
-    class T {
-      constructor() {
-        let parentId;
-        const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
-        if (stateFromStores != null) {
-          parentId = stateFromStores.parentId;
-        }
-        return getNewestTokenForApplication(parentId);
-      }
-    }
-    cResult[10] = tmp22;
-    cResult[11] = T;
-  } else {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-  }
-  tmp(tmp2[5]);
-  if (cResult[12] === authorizationsFetchState) {
-    class F {
-      constructor() {
-        return ApplicationStore.getApplication(application_id);
-      }
-    }
-    class T {
-      constructor() {
-        let parentId;
-        const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
-        if (stateFromStores != null) {
-          parentId = stateFromStores.parentId;
-        }
-        return getNewestTokenForApplication(parentId);
-      }
-    }
-    if (cResult[16] === stateFromStores) {
-      class F {
-        constructor() {
-          return ApplicationStore.getApplication(application_id);
-        }
-      }
-    }
-    const fn4 = function z() {
-      let tmp2 = null != application_id;
-      const tmp = application_id;
-      if (tmp2) {
-        tmp2 = null == stateFromStores;
-      }
-      if (tmp2) {
-        tmp2 = authorizationsFetchState === FetchState.FETCHED;
-      }
-      if (tmp2) {
-        const items = [tmp];
-        const obj = ApplicationActionCreatorsDefault;
-        const applications = obj.fetchApplications(items, false);
-      }
-    };
-    cResult[16] = stateFromStores;
-    cResult[17] = authorizationsFetchState;
-    cResult[18] = application_id;
-    cResult[19] = fn4;
-  }
-  const fn3 = function y() {
-    const tmp = null != application_id && authorizationsFetchState === FetchState.NOT_FETCHED;
-    if (tmp) {
-      const obj = AuthorizedAppsActionCreatorsDefault;
-      const response = obj.fetch();
-    }
-  };
-  const items4 = [authorizationsFetchState, application_id];
-  cResult[12] = authorizationsFetchState;
-  cResult[13] = application_id;
-  cResult[14] = fn3;
-  cResult[15] = items4;
-}) : (function useRequiredLinkedLobbyApplicationAuthorization(require_application_authorization) {
+const result = size.fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
+
+export default function useRequiredLinkedLobbyApplicationAuthorization(require_application_authorization) {
   let stateFromStores;
   let tmp17;
   let prop;
@@ -262,7 +29,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredL
   if (prop) {
     application_id = require_application_authorization.application_id;
   }
-  let obj = application_id(stateFromStores[5]);
+  let obj = application_id(stateFromStores[3]);
   let items = [AuthorizedAppsStore];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const obj = { authorizationsFetchState: AuthorizedAppsStore.getFetchState(), applicationOAuth2Token: AuthorizedAppsStore.getNewestTokenForApplication(application_id) };
@@ -271,10 +38,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredL
   const authorizationsFetchState = stateFromStoresObject.authorizationsFetchState;
   const applicationOAuth2Token = stateFromStoresObject.applicationOAuth2Token;
   const items1 = [ApplicationStore];
-  const obj2 = application_id(stateFromStores[5]);
+  const obj2 = application_id(stateFromStores[3]);
   stateFromStores = obj2.useStateFromStores(items1, () => ApplicationStore.getApplication(application_id));
   const items2 = [ApplicationStore];
-  const obj3 = application_id(stateFromStores[5]);
+  const obj3 = application_id(stateFromStores[3]);
   let stateFromStores1 = obj3.useStateFromStores(items2, () => {
     let parentId;
     const getApplication = ApplicationStore.getApplication;
@@ -285,7 +52,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredL
   });
   const items3 = [AuthorizedAppsStore];
   const items4 = [authorizationsFetchState, application_id];
-  const obj4 = application_id(stateFromStores[5]);
+  const obj4 = application_id(stateFromStores[3]);
   const stateFromStores2 = obj4.useStateFromStores(items3, () => {
     let parentId;
     const getNewestTokenForApplication = AuthorizedAppsStore.getNewestTokenForApplication;
@@ -348,7 +115,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useRequiredL
     tmp17 = tmp18;
   }
   return obj5;
-});
-const result = size.fileFinishedImporting("modules/channel/hooks/useRequiredLinkedLobbyApplicationAuthorization.tsx");
-
-export default tmp2;
+};

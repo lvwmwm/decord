@@ -1,16 +1,16 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6875
+// Function ID: 6876
 // Name: ApplicationActionCreators
-// Dependencies: [5, 6869, 2022, 2043, 1084, 584, 1294, 504, 558, 576, 2]
+// Dependencies: [5, 6876, 2017, 2040, 1072, 572, 1283, 504, 2]
+// Exports: useApplicationWithLoggedOutContext
 
-// Module 6868 (ApplicationActionCreators)
+// Module 6875 (ApplicationActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6869 */;
-import ApplicationRecord from "ApplicationRecord" /* 2022 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import Constants from "Constants" /* 1084 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 6876 */;
+import ApplicationRecord from "ApplicationRecord" /* 2017 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import Constants from "Constants" /* 1072 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ let obj = function _fetchApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ let obj = function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -249,7 +249,7 @@ obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -338,7 +338,7 @@ obj = {
             obj11.dispatch(obj10);
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           closure_2 = tmp26;
           if (0 === c3) {
@@ -393,68 +393,12 @@ let obj2 = {
   }
 };
 const fetchStore = get_initialized.createFetchStore(ApplicationStore, obj2);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplicationWithLoggedOutContext(arg0) {
-  let closure_0;
-  let error;
-  let first;
-  let isLoading;
-  _require = arg0;
-  let tmp = _require;
-  obj = require("react");
-  const cResult = obj.c(9);
-  const tmp4 = fetchStore(arg0);
-  const data = tmp4.data;
-  ({ isLoading, error } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApplicationDirectoryApplicationsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === data) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-    if (cResult[5] === stateFromStores) {
-      if (cResult[6] === isLoading) {
-        let tmp11;
-        if (cResult[7] === error) {
-          tmp11 = cResult[8];
-        }
-        return tmp11;
-      }
-    }
-    const obj2 = { app: stateFromStores, isLoading, error };
-    cResult[5] = stateFromStores;
-    cResult[6] = isLoading;
-    cResult[7] = error;
-    cResult[8] = obj2;
-    tmp11 = obj2;
-  }
-  const fn = function p() {
-    const tmp = data;
-    if (null == data) {
-      const application = ApplicationDirectoryApplicationsStore.getApplication(closure_0);
-      if (null != application) {
-        return ApplicationRecord.createFromServer(application);
-      }
-    }
-    return tmp;
-  };
-  const items1 = [arg0, data];
-  cResult[1] = arg0;
-  cResult[2] = data;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useApplicationWithLoggedOutContext(arg0) {
+let result = size.fileFinishedImporting("modules/applications/ApplicationActionCreators.tsx");
+
+export default obj;
+export { fetchApplication };
+export const useApplication = fetchStore;
+export function useApplicationWithLoggedOutContext(arg0) {
   let closure_0;
   let isLoading;
   let items;
@@ -483,10 +427,4 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useApplica
   items1 = [arg0, data];
   obj2 = require("get initialized");
   return obj;
-});
-let result = size.fileFinishedImporting("modules/applications/ApplicationActionCreators.tsx");
-
-export default obj;
-export { fetchApplication };
-export const useApplication = fetchStore;
-export const useApplicationWithLoggedOutContext = tmp5;
+}

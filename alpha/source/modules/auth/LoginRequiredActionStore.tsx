@@ -1,11 +1,11 @@
-// Module ID: 4850
-// Function ID: 4851
+// Module ID: 4851
+// Function ID: 4852
 // Name: LoginRequiredActionStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 4850 (LoginRequiredActionStore)
+// Module 4851 (LoginRequiredActionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_0;

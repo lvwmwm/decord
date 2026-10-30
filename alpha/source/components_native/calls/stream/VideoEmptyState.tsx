@@ -1,39 +1,33 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11722
+// Function ID: 11723
 // Name: VideoEmptyState
-// Dependencies: [109, 19, 17, 4857, 1084, 21, 5005, 587, 558, 576, 11522, 1199, 1125, 5935, 504, 7887, 6704, 5300, 5271, 5281, 2]
+// Dependencies: [19, 17, 4858, 1072, 21, 5009, 575, 11723, 1188, 1114, 5942, 504, 5588, 7893, 6711, 5619, 5629, 2]
+// Exports: default
 
-// Module 11521 (VideoEmptyState)
+// Module 11722 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import useMountEffectDefault from "useMountEffect" /* 5300 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6704 */;
-import StreamActionCreators from "StreamActionCreators" /* 7887 */;
-import CouchSpotIllustration from "CouchSpotIllustration" /* 11522 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import useMountEffectDefault from "useMountEffect" /* 5588 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6711 */;
+import StreamActionCreators from "StreamActionCreators" /* 7893 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let importDefault;
 
-let c9;
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
+let metroRequire;
 let obj3;
 let obj4;
 let obj5;
-let closure_3 = ["type", "style", "avError", "removeSplashImage", "removeCloseButton", "stream"];
 const View = react_native.View;
 const Fonts = Constants.Fonts;
-({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
 const VideoEmptyTypes = { NONE: "NONE", STREAM_ENDED: "STREAM_ENDED", STREAM_FAILED: "STREAM_FAILED" };
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, placeholderImage: obj4, placeholderText: obj5, buttonWrapper: { marginTop: 16, alignSelf: "center" } };
@@ -41,251 +35,10 @@ obj3 = { alignItems: "center", justifyContent: "center", backgroundColor: native
 createStyles = createStyles.createStyles;
 obj4 = { marginBottom: nativeDefault.space.PX_8, width: "100%", maxWidth: 288, maxHeight: 162, aspectRatio: 1.7777777777777777, flexShrink: 1, minHeight: 0 };
 obj5 = { color: nativeDefault.unsafe_rawColors.WHITE, fontFamily: Fonts.PRIMARY_SEMIBOLD, fontSize: 16, lineHeight: 20, textAlign: "center" };
-let closure_11 = createStyles(obj2);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmptyState(arg0) {
-  let Button;
-  let avError;
-  let channelId;
-  let closure_0;
-  let closure_2;
-  let intl;
-  let intl2;
-  let obj3;
-  let obj5;
-  let removeCloseButton;
-  let removeSplashImage;
-  let stateFromStores;
-  let stream;
-  let style;
-  let tmp10;
-  let tmp31;
-  let tmp4;
-  let tmp6;
-  let tmp9;
-  let type;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(39);
-  if (cResult[0] !== arg0) {
-    ({ type, style, avError, removeSplashImage } = arg0);
-    _require = removeSplashImage;
-    ({ removeCloseButton, stream } = arg0);
-    importDefault = stream;
-    const tmp13 = _objectWithoutProperties(arg0, stateFromStores);
-    cResult[0] = arg0;
-    cResult[1] = avError;
-    cResult[2] = tmp13;
-    cResult[3] = removeCloseButton;
-    cResult[4] = removeSplashImage;
-    cResult[5] = stream;
-    cResult[6] = style;
-    cResult[7] = type;
-    tmp10 = type;
-    tmp9 = style;
-    tmp6 = removeCloseButton;
-    tmp4 = avError;
-  } else {
-    tmp4 = cResult[1];
-    tmp6 = cResult[3];
-    _require = cResult[4];
-    importDefault = cResult[5];
-    tmp9 = cResult[6];
-    tmp10 = cResult[7];
-  }
-  const tmp14 = closure_11();
-  dependencyMap = tmp14;
-  if (cResult[8] === tmp7) {
-    if (cResult[9] === tmp14.placeholderImage) {
-      let tmp15;
-      let tmp16;
-      let errorCode;
-      let tmp26;
-      let tmp29;
-      let tmp28;
-      if (cResult[10] === tmp14.placeholderText) {
-        tmp15 = cResult[11];
-      }
-      if (cResult[12] !== tmp14.placeholderText) {
-        function renderBodyStreamFailed() {
-          let intl;
-          const obj = { style: closure_2.placeholderText, children: intl.string(intl5.t.rSlOep) };
-          const LegacyText = native.LegacyText;
-          intl = intl5.intl;
-          return metroImportDefault(LegacyText, obj);
-        }
-        cResult[12] = tmp14.placeholderText;
-        cResult[13] = renderBodyStreamFailed;
-        tmp16 = renderBodyStreamFailed;
-      } else {
-        tmp16 = cResult[13];
-      }
-      if (obj.STREAM_ENDED === tmp10) {
-        if (cResult[14] !== tmp15) {
-          const tmp15Result = tmp15();
-          cResult[14] = tmp15;
-          cResult[15] = tmp15Result;
-        }
-      } else if (obj.STREAM_FAILED === tmp10) {
-        if (cResult[16] !== tmp16) {
-          const tmp16Result = tmp16();
-          cResult[16] = tmp16;
-          cResult[17] = tmp16Result;
-        }
-      }
-      if (null != tmp4) {
-        const tmpResult = tmp(5935);
-        errorCode = tmpResult.getErrorInfo(tmp4).errorCode;
-      } else {
-        errorCode = null;
-        if (tmp10 === obj.STREAM_FAILED) {
-          const tmpResult3 = tmp(5935);
-          errorCode = tmpResult3.getErrorInfo(tmp(5935).AVError.STREAM_FAILED_TO_START).errorCode;
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-        let items = [ChannelStore];
-        cResult[18] = items;
-        tmp26 = items;
-      } else {
-        tmp26 = cResult[18];
-      }
-      if (cResult[19] !== tmp8.channelId) {
-        class N {
-          constructor() {
-            return ChannelStore.getChannel(channelId.channelId);
-          }
-        }
-        const items1 = [tmp8.channelId];
-        cResult[19] = tmp8.channelId;
-        cResult[20] = N;
-        cResult[21] = items1;
-        tmp29 = items1;
-        tmp28 = N;
-      } else {
-        class N {
-          constructor() {
-            return ChannelStore.getChannel(channelId.channelId);
-          }
-        }
-        tmp29 = cResult[21];
-      }
-      const tmpResult4 = tmp(504);
-      stateFromStores = tmpResult4.useStateFromStores(tmp26, tmp28, tmp29);
-      if (cResult[22] === stateFromStores) {
-        class N {
-          constructor() {
-            return ChannelStore.getChannel(channelId.channelId);
-          }
-        }
-        useMountEffectDefault(tmp31);
-        const tmp34 = View;
-        if (cResult[25] === tmp9) {
-          class N {
-            constructor() {
-              return ChannelStore.getChannel(channelId.channelId);
-            }
-          }
-          let tmp36 = null != errorCode;
-          if (tmp36) {
-            class N {
-              constructor() {
-                return ChannelStore.getChannel(channelId.channelId);
-              }
-            }
-            let obj2 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl.formatToPlainString(tmp(1125).t.ejOT95, obj3) };
-            const Text = tmp(5271).Text;
-            intl = tmp(1125).intl;
-            obj3 = { errorCode };
-            tmp36 = closure_7(Text, obj2);
-          }
-          if (cResult[28] === tmp6) {
-            class N {
-              constructor() {
-                return ChannelStore.getChannel(channelId.channelId);
-              }
-            }
-          }
-          let tmp38 = !tmp6;
-          if (tmp38) {
-            class N {
-              constructor() {
-                return ChannelStore.getChannel(channelId.channelId);
-              }
-            }
-            const obj4 = { style: tmp14.buttonWrapper, children: closure_7(Button, obj5) };
-            obj5 = {
-              variant: "secondary",
-              size: "md",
-              shrink: true,
-              grow: false,
-              text: intl2.string(tmp(1125).t["4EGMWL"]),
-              onPress() {
-                          const stopStream = StreamActionCreators.stopStream;
-                          StreamActionCreators;
-                          const obj = StreamKeyUtils;
-                          stopStream(obj.encodeStreamKey(channelId));
-                        }
-            };
-            Button = tmp(5281).Button;
-            intl2 = tmp(1125).intl;
-            tmp38 = closure_7(tmp34, obj4);
-          }
-          cResult[28] = tmp6;
-          cResult[29] = tmp8;
-          cResult[30] = tmp14.buttonWrapper;
-          cResult[31] = tmp38;
-        }
-        const items2 = [tmp14.container, tmp9];
-        cResult[25] = tmp9;
-        cResult[26] = tmp14.container;
-        cResult[27] = items2;
-      }
-      class W {
-        constructor() {
-          let isGuildStageVoiceResult;
-          const obj = stateFromStores;
-          if (stateFromStores != null) {
-            isGuildStageVoiceResult = obj.isGuildStageVoice();
-          }
-          if (isGuildStageVoiceResult) {
-            const stopStream = StreamActionCreators.stopStream;
-            StreamActionCreators;
-            const obj2 = StreamKeyUtils;
-            stopStream(obj2.encodeStreamKey(channelId));
-          }
-        }
-      }
-      cResult[22] = stateFromStores;
-      cResult[23] = tmp8;
-      cResult[24] = W;
-      tmp31 = W;
-    }
-  }
-  function renderBodyStreamEnded() {
-    let intl;
-    let items;
-    let tmp3 = !closure_0;
-    const tmp = React4;
-    const tmp2 = metroImportAll;
-    if (!closure_0) {
-      const obj = { style: closure_2.placeholderImage, children: metroImportDefault(CouchSpotIllustration.CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
-      tmp3 = metroImportDefault(View, obj);
-    }
-    const obj2 = { children: items };
-    items = [tmp3, ];
-    const obj3 = { style: closure_2.placeholderText, children: intl.formatToMarkdownString(intl5.t["1Ww0Hi"], {}) };
-    const LegacyText = native.LegacyText;
-    intl = intl5.intl;
-    items[1] = metroImportDefault(LegacyText, obj3);
-    return tmp(tmp2, obj2);
-  }
-  cResult[8] = tmp7;
-  cResult[10] = tmp14.placeholderText;
-  cResult[11] = renderBodyStreamEnded;
-  tmp15 = renderBodyStreamEnded;
-}) : (function VideoEmptyState(style) {
+let closure_9 = createStyles(obj2);
+const result = size.fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
+
+export default function VideoEmptyState(style) {
   let Button;
   let avError;
   let closure_1;
@@ -309,38 +62,38 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
   style = style.style;
   const merged = Object.assign(style, Object.assign({ type: 0, style: 0, avError: 0, removeSplashImage: 0, removeCloseButton: 0, stream: 0 }));
   importDefault = undefined;
-  const tmp2 = closure_11();
+  const tmp2 = closure_9();
   if (obj.STREAM_ENDED === type) {
     let tmp10 = !removeSplashImage;
-    const tmp8 = closure_9;
-    const tmp9 = closure_8;
+    const tmp8 = closure_7;
+    const tmp9 = closure_6;
     if (!removeSplashImage) {
-      let obj2 = { style: tmp2.placeholderImage, children: closure_7(stream(11522).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
-      tmp10 = closure_7(View, obj2);
+      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(11723).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      tmp10 = closure_5(View, obj2);
     }
     const obj3 = { children: items };
     items = [tmp10, ];
-    const obj4 = { style: tmp2.placeholderText, children: intl2.formatToMarkdownString(stream(1125).t["1Ww0Hi"], {}) };
-    const LegacyText2 = stream(1199).LegacyText;
-    intl2 = stream(1125).intl;
-    items[1] = closure_7(LegacyText2, obj4);
+    const obj4 = { style: tmp2.placeholderText, children: intl2.formatToMarkdownString(stream(1114).t["1Ww0Hi"], {}) };
+    const LegacyText2 = stream(1188).LegacyText;
+    intl2 = stream(1114).intl;
+    items[1] = closure_5(LegacyText2, obj4);
     tmp8Result = tmp8(tmp9, obj3);
   } else if (obj.STREAM_FAILED === type) {
-    obj = { style: tmp2.placeholderText, children: intl.string(stream(1125).t.rSlOep) };
-    const LegacyText = stream(1199).LegacyText;
-    intl = stream(1125).intl;
-    tmp8Result = closure_7(LegacyText, obj);
+    obj = { style: tmp2.placeholderText, children: intl.string(stream(1114).t.rSlOep) };
+    const LegacyText = stream(1188).LegacyText;
+    intl = stream(1114).intl;
+    tmp8Result = closure_5(LegacyText, obj);
   } else if (obj.NONE === type) {
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(5935);
+    const obj6 = stream(5942);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(5935);
-      errorCode = obj5.getErrorInfo(stream(5935).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(5942);
+      errorCode = obj5.getErrorInfo(stream(5942).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -365,24 +118,24 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
   items3 = [tmp2.container, style];
   items4 = [tmp8Result, , ];
   let tmp29 = null != errorCode;
-  const tmp26 = closure_9;
+  const tmp26 = closure_7;
   if (tmp29) {
-    const obj9 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1125).t.ejOT95, obj10) };
-    const Text = tmp23(5271).Text;
-    intl3 = tmp23(1125).intl;
+    const obj9 = { variant: "text-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1114).t.ejOT95, obj10) };
+    const Text = tmp23(5619).Text;
+    intl3 = tmp23(1114).intl;
     obj10 = { errorCode };
-    tmp29 = closure_7(Text, obj9);
+    tmp29 = closure_5(Text, obj9);
   }
   items4[1] = tmp29;
   let tmp31 = !removeCloseButton;
   if (tmp31) {
-    const obj11 = { style: tmp2.buttonWrapper, children: closure_7(Button, obj12) };
+    const obj11 = { style: tmp2.buttonWrapper, children: closure_5(Button, obj12) };
     obj12 = {
       variant: "secondary",
       size: "md",
       shrink: true,
       grow: false,
-      text: intl4.string(stream(1125).t["4EGMWL"]),
+      text: intl4.string(stream(1114).t["4EGMWL"]),
       onPress() {
           const stopStream = StreamActionCreators.stopStream;
           StreamActionCreators;
@@ -390,14 +143,11 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function VideoEmpty
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp23(5281).Button;
-    intl4 = tmp23(1125).intl;
-    tmp31 = closure_7(tmp27, obj11);
+    Button = tmp23(5629).Button;
+    intl4 = tmp23(1114).intl;
+    tmp31 = closure_5(tmp27, obj11);
   }
   items4[2] = tmp31;
   return tmp26(View, obj8);
-});
-const result = size.fileFinishedImporting("components_native/calls/stream/VideoEmptyState.tsx");
-
-export default tmp5;
+};
 export { VideoEmptyTypes };

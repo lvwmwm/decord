@@ -6,5 +6,7 @@
 // Module 1535 (react)
 import react from "react" /* 19 */;
 
+const context = react.createContext(undefined);
+context.displayName = "ThemeContext";
 
-export const ConsumedParamsContext = react.createContext(undefined);
+export const ThemeContext = context;

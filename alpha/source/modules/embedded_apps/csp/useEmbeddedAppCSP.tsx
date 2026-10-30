@@ -1,22 +1,21 @@
-// Module ID: 10888
-// Function ID: 10889
+// Module ID: 10911
+// Function ID: 10912
 // Name: useEmbeddedAppCSP
-// Dependencies: [5, 10886, 504, 10889, 558, 576, 10887, 5661, 2]
+// Dependencies: [5, 10909, 504, 10912, 10910, 5667, 2]
+// Exports: default
 
-// Module 10888 (useEmbeddedAppCSP)
-import react from "react" /* 576 */;
-import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10887 */;
-import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10889 */;
+// Module 10911 (useEmbeddedAppCSP)
+import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 10910 */;
+import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 10912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10886 */;
+import EmbeddedAppCSPStore from "EmbeddedAppCSPStore" /* 10909 */;
 import get_initialized from "get initialized" /* 504 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
 let tmp;
-const getURLForApplication = tmp(5661);
+const getURLForApplication = tmp(5667);
 let obj = {
   getQueryId(arg0) {
     let combined = null;
@@ -51,7 +50,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -80,7 +79,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;
@@ -88,90 +87,18 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
   }
 });
 const fetchStore = createFetchStore(EmbeddedAppCSPStore, obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbeddedAppCSP(embeddedAppUrl) {
-  let data;
-  let error;
-  const obj = react;
-  const cResult = obj.c(10);
-  const obj2 = EmbeddedAppFramePolicyExperiment;
-  const isEmbeddedAppFramePolicyEnabled = obj2.useIsEmbeddedAppFramePolicyEnabled("useEmbeddedAppCSP");
-  if (cResult[0] === isEmbeddedAppFramePolicyEnabled) {
-    let tmp5;
-    let tmp11;
-    if (cResult[1] === embeddedAppUrl) {
-      tmp5 = cResult[2];
-    }
-    ({ data, error } = fetchStore(tmp5));
-    fetchStore(tmp5);
-    if (isEmbeddedAppFramePolicyEnabled) {
-      let tmp13;
-      if (null == tmp5) {
-        let tmp17;
-        const _Symbol2 = Symbol;
-        if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-          const obj3 = { status: "developer-served" };
-          cResult[4] = obj3;
-          tmp17 = obj3;
-        } else {
-          tmp17 = cResult[4];
-        }
-        tmp13 = tmp17;
-      } else if (null != data) {
-        if (cResult[5] === data) {
-          let tmp15;
-          if (cResult[6] === tmp5) {
-            tmp15 = cResult[7];
-          }
-          tmp13 = tmp15;
-        }
-        const obj4 = { status: "ready", policy: data, routerOrigin: tmp5 };
-        cResult[5] = data;
-        cResult[6] = tmp5;
-        cResult[7] = obj4;
-        tmp15 = obj4;
-      } else if (cResult[8] !== error) {
-        const tmp14 = null != error ? { status: "failed" } : { status: "loading" };
-        cResult[8] = error;
-        cResult[9] = tmp14;
-        tmp13 = tmp14;
-      } else {
-        tmp13 = cResult[9];
-      }
-      tmp11 = tmp13;
-    } else {
-      const _Symbol = Symbol;
-      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj5 = { status: "not-enforced" };
-        cResult[3] = obj5;
-        tmp11 = obj5;
-      } else {
-        tmp11 = cResult[3];
-      }
-    }
-    return tmp11;
-  }
-  let applicationRouterOrigin = null;
-  if (isEmbeddedAppFramePolicyEnabled) {
-    applicationRouterOrigin = null;
-    if (null != embeddedAppUrl) {
-      const tmpResult = getURLForApplication;
-      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(embeddedAppUrl);
-    }
-  }
-  cResult[0] = isEmbeddedAppFramePolicyEnabled;
-  cResult[1] = embeddedAppUrl;
-  cResult[2] = applicationRouterOrigin;
-  tmp5 = applicationRouterOrigin;
-}) : (function useEmbeddedAppCSP(embeddedAppUrl) {
+const result = size.fileFinishedImporting("modules/embedded_apps/csp/useEmbeddedAppCSP.tsx");
+
+export default function useEmbeddedAppCSP(assetURL) {
   let obj4;
   const obj = EmbeddedAppFramePolicyExperiment;
   const isEmbeddedAppFramePolicyEnabled = obj.useIsEmbeddedAppFramePolicyEnabled("useEmbeddedAppCSP");
   let applicationRouterOrigin = null;
   if (isEmbeddedAppFramePolicyEnabled) {
     applicationRouterOrigin = null;
-    if (null != embeddedAppUrl) {
+    if (null != assetURL) {
       const tmpResult = getURLForApplication;
-      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(embeddedAppUrl);
+      applicationRouterOrigin = tmpResult.getApplicationRouterOrigin(assetURL);
     }
   }
   const data = fetchStore(applicationRouterOrigin).data;
@@ -191,8 +118,5 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmbedde
     obj4 = { status: "not-enforced" };
   }
   return obj4;
-});
-const result = size.fileFinishedImporting("modules/embedded_apps/csp/useEmbeddedAppCSP.tsx");
-
-export default tmp6;
+};
 export const useEmbeddedAppCSPPolicy = fetchStore;

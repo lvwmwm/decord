@@ -1,39 +1,38 @@
-// Module ID: 17651
-// Function ID: 17652
+// Module ID: 17722
+// Function ID: 17723
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 5036, 1389, 1084, 21, 558, 576, 6963, 7547, 504, 1631, 5271, 5707, 1415, 7047, 1199, 7355, 6960, 7045, 7044, 6971, 15911, 15908, 15909, 15910, 8990, 6015, 5295, 2]
+// Dependencies: [32, 19, 17, 5040, 1384, 1072, 21, 6969, 7555, 504, 1626, 6022, 7054, 5619, 5712, 1410, 1188, 7363, 6968, 7052, 7055, 6977, 15951, 15948, 15949, 15950, 8171, 5582, 2]
+// Exports: default
 
-// Module 17651 (UserSettingsDesignSystemTableRow)
+// Module 17722 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import native from "native" /* 1199 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1631 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import TableCheckboxRow3 from "TableCheckboxRow" /* 6960 */;
-import TableRow16 from "TableRow" /* 6963 */;
-import TableRowIcon5 from "TableRowIcon" /* 6971 */;
-import TableRadioRow5 from "TableRadioRow" /* 7044 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 7045 */;
-import TableRowGroup5 from "TableRowGroup" /* 7047 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7355 */;
-import SettingsIcon from "SettingsIcon" /* 7547 */;
-import RowButton3 from "RowButton" /* 8990 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15908 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15909 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15910 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15911 */;
+import native from "native" /* 1188 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1626 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import TableCheckboxRow3 from "TableCheckboxRow" /* 6968 */;
+import TableRow16 from "TableRow" /* 6969 */;
+import TableRowIcon5 from "TableRowIcon" /* 6977 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7052 */;
+import TableRowGroup5 from "TableRowGroup" /* 7054 */;
+import TableRadioRow5 from "TableRadioRow" /* 7055 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7363 */;
+import SettingsIcon from "SettingsIcon" /* 7555 */;
+import RowButton3 from "RowButton" /* 8171 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15948 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15949 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15950 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,29 +43,7 @@ let closure_12;
 let hasOwnProperty;
 let metroRequire;
 let unpackModuleId;
-({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
-({ NOOP: c9, StatusTypes: c10 } = Constants);
-({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MyTableRow() {
-  let Icon;
-  let first;
-  let obj3;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { label: "Notifications", onPress, icon: unpackModuleId(Icon, obj3) };
-    const TableRow = tmp(6963).TableRow;
-    obj3 = { IconComponent: SettingsIcon.SettingsIcon };
-    Icon = tmp(6963).TableRow.Icon;
-    const tmp7 = unpackModuleId(TableRow, obj2);
-    cResult[0] = tmp7;
-    first = tmp7;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function MyTableRow() {
+function MyTableRow() {
   let Icon;
   let obj2;
   const obj = { label: "Notifications", onPress, icon: unpackModuleId(Icon, obj2) };
@@ -74,357 +51,13 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function MyTabl
   obj2 = { IconComponent: SettingsIcon.SettingsIcon };
   Icon = TableRow16.TableRow.Icon;
   return unpackModuleId(TableRow, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemTableRow() {
-  let Icon2;
-  let Icon3;
-  let Icon6;
-  let currentUser;
-  let items1;
-  let items2;
-  let obj12;
-  let obj14;
-  let obj18;
-  let obj5;
-  let obj7;
-  let tmp11Result2;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(71);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function h() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const guildId = SelectedGuildStore.getGuildId();
-    cResult[2] = guildId;
-    tmp8 = guildId;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const rect = useSafeAreaInsetsDefault();
-  [r10045, require] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  [r10050, importDefault] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function _(arg0) {
-      require(arg0);
-    };
-    cResult[3] = fn2;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    class B {
-      constructor(arg0) {
-        importDefault(arg0);
-      }
-    }
-    cResult[4] = B;
-  } else {
-    class B {
-      constructor(arg0) {
-        importDefault(arg0);
-      }
-    }
-  }
-  if (cResult[5] === rect.bottom) {
-    let tmp16;
-    let tmp19;
-    let tmp18;
-    let tmp24;
-    let tmp26;
-    let tmp28;
-    let tmp30;
-    let tmp33;
-    let tmp32;
-    let tmp36;
-    let tmp38;
-    let tmp41;
-    class B {
-      constructor(arg0) {
-        importDefault(arg0);
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj2 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon = tmp(6963).TableRow.Icon;
-      const tmp17 = closure_11(Icon, obj2);
-      cResult[8] = tmp17;
-      tmp16 = tmp17;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj3 = { onPress, icon: tmp16, label: "Boost your Server", subLabel: "Unlock perks for the entire community", trailing: closure_11(TableRow16.TableRow.Arrow, {}) };
-      const TableRow = tmp(6963).TableRow;
-      const tmp21 = closure_11(TableRow, obj3);
-      const tmp23 = closure_11(closure_13, {});
-      cResult[9] = tmp21;
-      cResult[10] = tmp23;
-      tmp19 = tmp23;
-      tmp18 = tmp21;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      tmp19 = cResult[10];
-    }
-    const _Symbol3 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj4 = { icon: closure_11(Icon2, obj5), label: "Add a Friend" };
-      const TableRow2 = tmp(6963).TableRow;
-      obj5 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon2 = tmp(6963).TableRow.Icon;
-      const tmp25 = closure_11(TableRow2, obj4);
-      cResult[11] = tmp25;
-      tmp24 = tmp25;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol4 = Symbol;
-    if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj6 = { icon: closure_11(Icon3, obj7), label: "A really long label that takes up all of the space and then some", subLabel: "A really long sublabel that takes up all of the space and then some" };
-      const TableRow3 = tmp(6963).TableRow;
-      obj7 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon3 = tmp(6963).TableRow.Icon;
-      const tmp27 = closure_11(TableRow3, obj6);
-      cResult[12] = tmp27;
-      tmp26 = tmp27;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol5 = Symbol;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj8 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon4 = tmp(6963).TableRow.Icon;
-      const tmp29 = closure_11(Icon4, obj8);
-      cResult[13] = tmp29;
-      tmp28 = tmp29;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol6 = Symbol;
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj9 = { icon: tmp28, label: "A really long label, but next to an arrow, that takes up all of the space and then some", subLabel: "A really long sublabel, but next to an arrow, that takes up all of the space and then some", trailing: closure_11(TableRow16.TableRow.Arrow, {}) };
-      const TableRow4 = tmp(6963).TableRow;
-      const tmp31 = closure_11(TableRow4, obj9);
-      cResult[14] = tmp31;
-      tmp30 = tmp31;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol7 = Symbol;
-    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj10 = { IconComponent: SettingsIcon.SettingsIcon };
-      const Icon5 = tmp(6963).TableRow.Icon;
-      const tmp34 = closure_11(Icon5, obj10);
-      const tmp35 = closure_11(Text_Text.Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" });
-      cResult[15] = tmp34;
-      cResult[16] = tmp35;
-      tmp33 = tmp35;
-      tmp32 = tmp34;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      tmp33 = cResult[16];
-    }
-    const _Symbol8 = Symbol;
-    if (cResult[17] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      cResult[17] = tmp37;
-      tmp36 = tmp37;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol9 = Symbol;
-    if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj11 = { style: { flexShrink: 0, height: 24, width: 24, marginEnd: 8 }, source: obj12, resizeMode: "contain" };
-      obj12 = { uri: tmp11Result2.getEmojiURL({ id: "801497159479722084", animated: false, size: 24 }) };
-      const tmp11Result = FastImageDefault;
-      tmp11Result2 = AvatarUtilsDefault;
-      const tmp40 = closure_11(tmp11Result, obj11);
-      cResult[18] = tmp40;
-      tmp38 = tmp40;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol10 = Symbol;
-    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj13 = { icon: tmp32, label: tmp33, subLabel: closure_12(closure_5, obj14) };
-      obj14 = { style: tmp36, children: items1 };
-      items1 = [tmp38, ];
-      const TableRow5 = tmp(6963).TableRow;
-      const obj15 = { variant: "text-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" };
-      items1[1] = closure_11(Text_Text.Text, obj15);
-      const tmp44 = closure_11(TableRow5, obj13);
-      cResult[19] = tmp44;
-      tmp41 = tmp44;
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const _Symbol11 = Symbol;
-    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj16 = { hasIcons: true, children: items2 };
-      items2 = [tmp18, tmp19, tmp24, tmp26, tmp30, tmp41, ];
-      const TableRowGroup = tmp(7047).TableRowGroup;
-      const obj17 = { icon: closure_11(Icon6, obj18), label: "A disabled row", subLabel: "you cant do anything with this", disabled: true };
-      const TableRow6 = tmp(6963).TableRow;
-      obj18 = { IconComponent: SettingsIcon.SettingsIcon };
-      Icon6 = tmp(6963).TableRow.Icon;
-      items2[6] = closure_11(TableRow6, obj17);
-      cResult[20] = closure_12(TableRowGroup, obj16);
-      const tmp47 = closure_12(TableRowGroup, obj16);
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    if (cResult[21] !== stateFromStores) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-      const obj19 = { user: stateFromStores, guildId: tmp8, status: constants.ONLINE, size: native.AvatarSizes.REFRESH_MEDIUM_32 };
-      const Avatar = tmp(1199).Avatar;
-      cResult[21] = stateFromStores;
-      cResult[22] = closure_11(Avatar, obj19);
-      const tmp50 = closure_11(Avatar, obj19);
-    } else {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    if (cResult[23] === stateFromStores.globalName) {
-      class B {
-        constructor(arg0) {
-          importDefault(arg0);
-        }
-      }
-    }
-    const obj20 = { label: null, subLabel: null, icon: tmp48 };
-    ({ globalName: obj23.label, username: obj23.subLabel } = stateFromStores);
-    cResult[23] = stateFromStores.globalName;
-    cResult[24] = stateFromStores.username;
-    cResult[25] = tmp48;
-    cResult[26] = closure_11(TableRow16.TableRow, obj20);
-    const tmp53 = closure_11(TableRow16.TableRow, obj20);
-  }
-  const obj21 = { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 };
-  cResult[5] = rect.bottom;
-  cResult[6] = rect.top;
-  cResult[7] = obj21;
-}) : (function UserSettingsDesignSystemTableRow() {
+}
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+({ NOOP: c9, StatusTypes: c10 } = Constants);
+({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
+const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTableRow.tsx");
+
+export default function UserSettingsDesignSystemTableRow() {
   let Avatar;
   let Icon;
   let Icon10;
@@ -518,7 +151,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   const TableRow = TableRow16.TableRow;
   obj6 = { IconComponent: SettingsIcon.SettingsIcon };
   Icon = TableRow16.TableRow.Icon;
-  items1 = [closure_11(TableRow, obj5), closure_11(closure_13, {}), , , , , ];
+  items1 = [closure_11(TableRow, obj5), closure_11(MyTableRow, {}), , , , , ];
   const obj7 = { icon: closure_11(Icon2, obj8), label: "Add a Friend" };
   const TableRow2 = TableRow16.TableRow;
   obj8 = { IconComponent: SettingsIcon.SettingsIcon };
@@ -678,7 +311,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   items9[3] = closure_11(tmp10, obj67);
   items3[6] = closure_12(Stack2, obj63);
   return closure_11(closure_6, obj2);
-});
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemTableRow.tsx");
-
-export default tmp5;
+};

@@ -1,182 +1,29 @@
-// Module ID: 10519
-// Function ID: 10520
+// Module ID: 10544
+// Function ID: 10545
 // Name: useGiftOptionsSyncDebounce
-// Dependencies: [19, 558, 576, 12, 5636, 2]
+// Dependencies: [19, 5607, 12, 2]
+// Exports: default
 
-// Module 10519 (useGiftOptionsSyncDebounce)
+// Module 10544 (useGiftOptionsSyncDebounce)
 import _modDef12 from "module_12" /* 12 */;
-import useInitialValueDefault from "useInitialValue" /* 5636 */;
+import reactDefault from "react" /* 5607 */;
 import react_mod from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let dependencyMap, importDefault;
 
 let react = react_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftOptionsSyncDebounce(arg0) {
+const result = size.fileFinishedImporting("modules/payments/native/hooks/useGiftOptionsSyncDebounce.tsx");
+
+export default function useGiftOptionsSyncDebounce(arg0) {
   let closure_0;
   let closure_1;
-  let first;
-  let obj3;
   let ref;
-  let ref2;
-  let tmp10;
-  let tmp11;
-  let tmp12;
-  let tmp13;
-  let tmp4;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(16);
-  importDefault = react.useRef(null);
+  importDefault = arg0;
   dependencyMap = react.useRef(null);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  react = obj2.useRef(first);
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const obj = _modDef12;
-      return obj.debounce(() => {
-        closure_1_2.current = ref.current;
-        closure_1_0((arg0) => arg0 + 1);
-      }, 500);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[2];
-  }
-  const tmp5 = useInitialValueDefault(tmp4);
-  let closure_4 = tmp5;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function v(arg0) {
-      const current = ref2.current;
-      ref2.current = [];
-      for (const item10008 of current) {
-        let item10008Result = item10008(arg0);
-        continue;
-      }
-    };
-    cResult[3] = fn2;
-    tmp6 = fn2;
-  } else {
-    tmp6 = cResult[3];
-  }
-  let closure_5 = tmp6;
-  if (cResult[4] !== tmp5) {
-    const fn3 = function y() {
-      return () => {
-        closure_1_4.cancel();
-        closure_1_5(false);
-      };
-    };
-    const items1 = [tmp5, tmp6];
-    cResult[4] = tmp5;
-    cResult[5] = fn3;
-    cResult[6] = items1;
-    tmp8 = items1;
-    tmp7 = fn3;
-  } else {
-    tmp7 = cResult[5];
-    tmp8 = cResult[6];
-  }
-  const effect = obj2.useEffect(tmp7, tmp8);
-  if (cResult[7] !== tmp5) {
-    const fn4 = function h(current) {
-      closure_1.current = current;
-      let flag = ref.current !== current;
-      if (flag) {
-        closure_4();
-        flag = true;
-      }
-      return flag;
-    };
-    cResult[7] = tmp5;
-    cResult[8] = fn4;
-    tmp10 = fn4;
-  } else {
-    tmp10 = cResult[8];
-  }
-  if (cResult[9] !== tmp5) {
-    const fn5 = function p(current) {
-      closure_4.cancel();
-      ref.current = current;
-    };
-    cResult[9] = tmp5;
-    cResult[10] = fn5;
-    tmp11 = fn5;
-  } else {
-    tmp11 = cResult[10];
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        const promise = new Promise((arg0) => {
-          const current = ref.current;
-          return current.push(arg0);
-        });
-        return promise;
-      }
-    }
-    cResult[11] = R;
-    tmp12 = R;
-  } else {
-    class R {
-      constructor() {
-        const promise = new Promise((arg0) => {
-          const current = ref.current;
-          return current.push(arg0);
-        });
-        return promise;
-      }
-    }
-  }
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class C {
-      constructor() {
-        return ref2.current.length > 0;
-      }
-    }
-    cResult[12] = C;
-    tmp13 = C;
-  } else {
-    class C {
-      constructor() {
-        return ref2.current.length > 0;
-      }
-    }
-  }
-  if (cResult[13] === tmp11) {
-    class C {
-      constructor() {
-        return ref2.current.length > 0;
-      }
-    }
-    return obj3;
-  }
-  obj3 = { waitForPause: tmp10, flush: tmp11, waitForSync: tmp12, resolveSyncs: tmp6, isAwaitingSync: tmp13 };
-  cResult[13] = tmp11;
-  cResult[14] = tmp10;
-  cResult[15] = obj3;
-}) : (function useGiftOptionsSyncDebounce(arg0) {
-  let closure_1;
-  let ref;
-  let ref2;
-  let closure_0 = arg0;
-  importDefault = react.useRef(null);
-  dependencyMap = react.useRef(null);
-  react = react.useRef([]);
-  const tmp = useInitialValueDefault(() => {
+  react = react.useRef(null);
+  const ref2 = react.useRef([]);
+  const tmp = reactDefault(() => {
     const obj = _modDef12;
     return obj.debounce(() => {
       closure_1_2.current = ref.current;
@@ -221,7 +68,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftOpt
   }, []);
   let obj = { waitForPause: callback1, flush: callback2, waitForSync: callback3, resolveSyncs, isAwaitingSync: react.useCallback(() => ref2.current.length > 0, []) };
   return obj;
-});
-const result = size.fileFinishedImporting("modules/payments/native/hooks/useGiftOptionsSyncDebounce.tsx");
-
-export default tmp2;
+};

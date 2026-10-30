@@ -1,10 +1,10 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 10941
+// Function ID: 10942
 // Name: ConjurePublishTypes
 // Dependencies: [2]
 // Exports: canPublish, isConjureLive
 
-// Module 10918 (ConjurePublishTypes)
+// Module 10941 (ConjurePublishTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/ConjurePublishTypes.tsx");
@@ -15,4 +15,4 @@ export function isConjureLive(publishState) {
 export function canPublish(publishState) {
   return "nothing_built" !== publishState && "live_auto_synced" !== publishState;
 }
-export const CONJURE_PUBLISH_PROGRESS_STAGES = ["preparing", "approval", "setup", "build", "deploy", "discord", "activating"];
+export const CONJURE_PUBLISH_PROGRESS_STAGES = ["preparing", "approval", "approved_by_grant", "setup", "build", "deploy", "discord", "activating"];

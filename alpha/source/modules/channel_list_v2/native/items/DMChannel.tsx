@@ -1,23 +1,22 @@
-// Module ID: 18185
-// Function ID: 18186
+// Module ID: 18245
+// Function ID: 18246
 // Name: DMChannel
-// Dependencies: [19, 6829, 6762, 12046, 6763, 21, 5005, 587, 558, 576, 10759, 5745, 504, 17973, 9054, 18069, 2]
+// Dependencies: [19, 6836, 6769, 11027, 6770, 21, 5009, 575, 10782, 5751, 504, 18034, 18118, 9066, 2]
 
-// Module 18185 (DMChannel)
+// Module 18245 (DMChannel)
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import transitionToChannel from "transitionToChannel" /* 5745 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9054 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 17973 */;
-import ChannelItemDefault from "ChannelItem" /* 18069 */;
+import nativeDefault from "native" /* 575 */;
+import transitionToChannel from "transitionToChannel" /* 5751 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9066 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 18034 */;
+import ChannelItemDefault from "ChannelItem" /* 18118 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -27,127 +26,7 @@ const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
 let closure_8 = createStyles.createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function DMChannel(channel) {
-  let hasUnread;
-  let isIncomingCall;
-  let isOngoingCall;
-  let mentionCount;
-  let tmp10;
-  let tmp12;
-  let tmp13;
-  let tmp14;
-  let tmp7;
-  let tmp9;
-  let obj = channel(576);
-  const cResult = obj.c(31);
-  channel = channel.channel;
-  closure_8();
-  if (cResult[0] !== channel.id) {
-    const fn = function s() {
-      const obj = openChannelLongPressActionSheet;
-      const result = obj.openChannelLongPressActionSheet(channel.id);
-    };
-    cResult[0] = channel.id;
-    cResult[1] = fn;
-  }
-  if (cResult[2] !== channel.id) {
-    const fn2 = function _() {
-      const obj = transitionToChannel;
-      obj.transitionToChannel(channel.id);
-    };
-    cResult[2] = channel.id;
-    cResult[3] = fn2;
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ReadStateStore];
-    cResult[4] = items;
-    tmp7 = items;
-  } else {
-    tmp7 = cResult[4];
-  }
-  if (cResult[5] !== channel.id) {
-    class L {
-      constructor() {
-        const obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id) };
-        return obj;
-      }
-    }
-    const items1 = [channel.id];
-    cResult[5] = channel.id;
-    cResult[6] = L;
-    cResult[7] = items1;
-    tmp10 = items1;
-    tmp9 = L;
-  } else {
-    class L {
-      constructor() {
-        const obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id) };
-        return obj;
-      }
-    }
-    tmp10 = cResult[7];
-  }
-  const tmpResult = channel(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp7, tmp9, tmp10);
-  ({ hasUnread, mentionCount } = stateFromStoresObject);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        const obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id) };
-        return obj;
-      }
-    }
-    const items2 = [UserGuildSettingsStore];
-    cResult[8] = items2;
-    tmp12 = items2;
-  } else {
-    class L {
-      constructor() {
-        const obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id) };
-        return obj;
-      }
-    }
-  }
-  if (cResult[9] !== channel) {
-    class U {
-      constructor() {
-        return UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id);
-      }
-    }
-    const items3 = [channel];
-    cResult[9] = channel;
-    cResult[10] = U;
-    cResult[11] = items3;
-    tmp14 = items3;
-    tmp13 = U;
-  } else {
-    class U {
-      constructor() {
-        return UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id);
-      }
-    }
-    tmp14 = cResult[11];
-  }
-  const tmpResult2 = channel(504);
-  const stateFromStores = tmpResult2.useStateFromStores(tmp12, tmp13, tmp14);
-  ({ isIncomingCall, isOngoingCall } = useCallA11yStateDefault(channel.id));
-  useCallA11yStateDefault(channel.id);
-  if (cResult[12] === channel) {
-    class U {
-      constructor() {
-        return UserGuildSettingsStore.isChannelMuted(channel.getGuildId(), channel.id);
-      }
-    }
-  }
-  cResult[12] = channel;
-  cResult[13] = hasUnread;
-  cResult[14] = isIncomingCall;
-  cResult[15] = isOngoingCall;
-  cResult[16] = mentionCount;
-  cResult[17] = getChannelA11yLabelDefault({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
-  getChannelA11yLabelDefault({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall });
-}) : (function DMChannel(channel) {
+const memoResult = react.memo(function DMChannel(channel) {
   let hasUnread;
   let isIncomingCall;
   let isOngoingCall;
@@ -181,7 +60,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   useCallA11yStateDefault(channel.id);
   ChannelItemDefault;
   return <tmp7 onPress={callback1} onLongPress={callback} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={getChannelA11yLabelDefault({ channel, unread: hasUnread, mentionCount, isIncomingCall, isOngoingCall })} accessibilityState={{ selected }} channel={channel} selected={selected} unread={hasUnread} resolvedUnreadSetting={UnreadSetting.ALL_MESSAGES} mentionCount={mentionCount} muted={stateFromStores} />;
-}));
+});
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/DMChannel.tsx");
 
 export default memoResult;

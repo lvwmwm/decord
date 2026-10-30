@@ -1,29 +1,29 @@
-// Module ID: 19671
-// Function ID: 19672
+// Module ID: 19734
+// Function ID: 19735
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 19651, 19653, 19650, 1095, 21, 5005, 587, 558, 576, 5242, 6028, 1125, 19672, 8188, 7308, 5247, 9838, 4914, 8374, 14304, 5271, 2568, 5302, 2]
+// Dependencies: [17, 19714, 19716, 19713, 1083, 21, 5009, 575, 5248, 6035, 19735, 1114, 8369, 5267, 7315, 5253, 9864, 4918, 8411, 11168, 5619, 2569, 2]
+// Exports: default
 
-// Module 19671 (EnhancedRoleColorsSelectStyleModal)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1095 */;
-import intl6 from "intl" /* 1125 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4914 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6028 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
-import RowGeneratorDefault from "RowGenerator" /* 8188 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8374 */;
-import _modDef14304 from "module_14304" /* 14304 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19650 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19651 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19653 */;
-import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19672 */;
+// Module 19734 (EnhancedRoleColorsSelectStyleModal)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1083 */;
+import intl6 from "intl" /* 1114 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 4918 */;
+import useThemeDefault from "useTheme" /* 5248 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6035 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7315 */;
+import RowGeneratorDefault from "RowGenerator" /* 8369 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8411 */;
+import _modDef11168 from "module_11168" /* 11168 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19713 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19714 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19716 */;
+import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19735 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,8 +35,8 @@ let c9;
 let closure_4;
 let tmp;
 let tmp4;
-const _modDef2568 = tmp(2568);
-const Text_Text = tmp4(5271);
+const _modDef2569 = tmp(2569);
+const Text_Text = tmp4(5619);
 ({ Pressable: c3, View: closure_4 } = react_native);
 const RoleColorsStyle = GuildSettingsRolesStore.RoleColorsStyle;
 const HOLOGRAPHIC_ROLE_COLORS = EnhancedRoleColorConstants.HOLOGRAPHIC_ROLE_COLORS;
@@ -53,223 +53,24 @@ let closure_11 = createStyles.createStyles((arg0) => {
   ({ width: 400, flex: 1, marginStart: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_8, alignSelf: "flex-start" });
   const tmp3 = ThemeTypes;
   if (arg0 === ThemeTypes.LIGHT) {
-    BACKGROUND_SURFACE_HIGH = tmp(587).colors.BACKGROUND_BASE_LOW;
+    BACKGROUND_SURFACE_HIGH = tmp(575).colors.BACKGROUND_BASE_LOW;
   } else {
-    BACKGROUND_SURFACE_HIGH = tmp(587).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH = tmp(575).colors.BACKGROUND_SURFACE_HIGH;
   }
   ({ width: "100%", textAlign: "center", backgroundColor: BACKGROUND_SURFACE_HIGH, paddingVertical: nativeDefault.space.PX_8 });
   if (arg0 === tmp3.LIGHT) {
-    BACKGROUND_SURFACE_HIGH2 = tmp(587).colors.BACKGROUND_BASE_LOW;
+    BACKGROUND_SURFACE_HIGH2 = tmp(575).colors.BACKGROUND_BASE_LOW;
   } else {
-    BACKGROUND_SURFACE_HIGH2 = tmp(587).colors.BACKGROUND_SURFACE_HIGH;
+    BACKGROUND_SURFACE_HIGH2 = tmp(575).colors.BACKGROUND_SURFACE_HIGH;
   }
   ({ backgroundColor: BACKGROUND_SURFACE_HIGH2, padding: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.sm });
   ({ borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BRAND });
   return obj;
 });
-tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColorsSelectStyleModal(roleStyle) {
-  let Text2;
-  let VpEDJc;
-  let button;
-  let first;
-  let format;
-  let guildId;
-  let intl2;
-  let intl4;
-  let intl5;
-  let items;
-  let items1;
-  let items2;
-  let obj5;
-  let obj8;
-  let obj9;
-  let role;
-  let tmp10;
-  let tmp13;
-  const tmp = roleStyle;
-  let obj = roleStyle(576);
-  const cResult = obj.c(24);
-  roleStyle = roleStyle.roleStyle;
-  const onStyleChanged = roleStyle.onStyleChanged;
-  let tmp4 = onStyleChanged;
-  ({ guildId, role } = roleStyle);
-  const tmp5 = closure_11(onStyleChanged(5242)());
-  dependencyMap = tmp5;
-  let obj2 = roleStyle(6028);
-  const hasEnhancedRoleColorsForRole = obj2.useHasEnhancedRoleColorsForRole(guildId, role);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1125).intl;
-    const stringResult = intl.string(tmp(1125).t.Mi9Kbe);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(19672);
-  const guildSettingsRoleExampleMessage = tmpResult.useGuildSettingsRoleExampleMessage(first);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const self = this;
-    const self2 = this;
-    const tmp11 = new tmp4(8188)();
-    cResult[1] = tmp11;
-    tmp10 = tmp11;
-  } else {
-    tmp10 = cResult[1];
-  }
-  const rowGenerator = tmp10;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { title: intl2.string(tmp(1125).t["9wVJRB"]) };
-    const BottomSheetTitleHeader = tmp(7308).BottomSheetTitleHeader;
-    intl2 = tmp(1125).intl;
-    const tmp15 = closure_9(BottomSheetTitleHeader, obj3);
-    cResult[2] = tmp15;
-    tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[2];
-  }
-  if (cResult[3] === hasEnhancedRoleColorsForRole) {
-    if (cResult[4] === guildSettingsRoleExampleMessage) {
-      if (cResult[5] === onStyleChanged) {
-        if (cResult[6] === roleStyle) {
-          if (cResult[7] === tmp5.button) {
-            if (cResult[8] === tmp5.disabled) {
-              if (cResult[9] === tmp5.message) {
-                if (cResult[10] === tmp5.selected) {
-                  let tmp18;
-                  if (cResult[11] === tmp5.text) {
-                    tmp18 = cResult[12];
-                  }
-                  if (cResult[13] === tmp5.stylesContainer) {
-                    let tmp20;
-                    if (cResult[14] === tmp18) {
-                      tmp20 = cResult[15];
-                    }
-                    if (cResult[16] === hasEnhancedRoleColorsForRole) {
-                      if (cResult[17] === tmp5.upsellContainer) {
-                        let tmp24;
-                        if (cResult[18] === tmp5.upsellText) {
-                          tmp24 = cResult[19];
-                        }
-                        if (cResult[20] === tmp5.container) {
-                          if (cResult[21] === tmp20) {
-                            let tmp30;
-                            if (cResult[22] === tmp24) {
-                              tmp30 = cResult[23];
-                            }
-                            return tmp30;
-                          }
-                        }
-                        const obj4 = { header: tmp13, children: closure_10(guildSettingsRoleExampleMessage, obj5) };
-                        obj5 = { style: tmp16, children: items };
-                        items = [tmp20, tmp24];
-                        BottomSheet = tmp(5302).BottomSheet;
-                        const tmp34 = closure_9(BottomSheet, obj4);
-                        cResult[20] = tmp5.container;
-                        cResult[21] = tmp20;
-                        cResult[22] = tmp24;
-                        cResult[23] = tmp34;
-                        tmp30 = tmp34;
-                      }
-                    }
-                    let tmp25 = !hasEnhancedRoleColorsForRole;
-                    if (tmp25) {
-                      const obj6 = { style: tmp5.upsellContainer, children: items2 };
-                      const obj7 = { style: tmp5.upsellText, variant: "text-sm/semibold", children: format(VpEDJc, obj8) };
-                      let Text = tmp(5271).Text;
-                      const intl3 = tmp(1125).intl;
-                      format = intl3.format;
-                      obj8 = { magical: closure_9(Text2, obj9) };
-                      VpEDJc = tmp4(2568).VpEDJc;
-                      obj9 = { gradientColors: items1, variant: "text-sm/semibold", children: intl4.string(tmp4(2568)["+/IHLl"]) };
-                      items1 = [, , ];
-                      ({ primary_color: arr[0], secondary_color: arr[1], tertiary_color: arr[2] } = HOLOGRAPHIC_ROLE_COLORS);
-                      Text2 = tmp(5271).Text;
-                      intl4 = tmp(1125).intl;
-                      items2 = [closure_9(Text, obj7), ];
-                      const obj10 = { style: tmp5.upsellText, variant: "text-sm/normal", children: intl5.string(tmp4(2568).FJZeZF) };
-                      const Text3 = tmp(5271).Text;
-                      intl5 = tmp(1125).intl;
-                      items2[1] = closure_9(Text3, obj10);
-                      tmp25 = closure_10(guildSettingsRoleExampleMessage, obj6);
-                    }
-                    cResult[16] = hasEnhancedRoleColorsForRole;
-                    cResult[17] = tmp5.upsellContainer;
-                    cResult[18] = tmp5.upsellText;
-                    cResult[19] = tmp25;
-                    tmp24 = tmp25;
-                  }
-                  const obj11 = { style: tmp17, children: tmp18 };
-                  const tmp23 = closure_9(guildSettingsRoleExampleMessage, obj11);
-                  cResult[13] = tmp5.stylesContainer;
-                  cResult[14] = tmp18;
-                  cResult[15] = tmp23;
-                  tmp20 = tmp23;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  const mapped = STYLE_CONFIGS.map((id) => {
-    let intl;
-    let items1;
-    const items = [button.button, , ];
-    let selected = id === id.id;
-    const tmp3 = closure_1_10;
-    const tmp4 = hasEnhancedRoleColorsForRole;
-    if (selected) {
-      selected = tmp5.selected;
-    }
-    items[1] = selected;
-    let obj = {
-      style: items,
-      disabled: tmp,
-      onPress() {
-        onStyleChanged(id.id);
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-      },
-      children: items1
-    };
-    const tmp6 = !hasEnhancedRoleColorsForRole && id.id !== rowGenerator.SOLID && button.disabled;
-    items[2] = tmp6;
-    let obj2 = {
-      style: tmp5.message,
-      pointerEvents: "none",
-      message: guildSettingsRoleExampleMessage,
-      rowGenerator,
-      modifyRow(message) {
-        message.message.roleColor = undefined;
-        const obj = EnhancedRoleColorUtils;
-        const result = obj.extractColorStringsFromServerColors(id.colors);
-        message = message.message;
-        const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
-        message.roleColors = obj2.processColorStrings(result);
-        message.message.shouldShowRoleOnName = true;
-        message.message.avatarURL = _modDef14304;
-      }
-    };
-    items1 = [closure_1_9(onStyleChanged(button[17]), obj2), ];
-    const obj3 = { style: button.text, variant: "text-sm/normal", children: intl.string(id.labelString) };
-    const Text = roleStyle(button[21]).Text;
-    intl = roleStyle(button[12]).intl;
-    items1[1] = closure_1_9(Text, obj3);
-    return tmp3(tmp4, obj, id.id);
-  });
-  cResult[3] = hasEnhancedRoleColorsForRole;
-  cResult[4] = guildSettingsRoleExampleMessage;
-  cResult[5] = onStyleChanged;
-  cResult[6] = roleStyle;
-  cResult[7] = tmp5.button;
-  cResult[8] = tmp5.disabled;
-  cResult[9] = tmp5.message;
-  cResult[10] = tmp5.selected;
-  cResult[11] = tmp5.text;
-  cResult[12] = mapped;
-  tmp18 = mapped;
-}) : (function EnhancedRoleColorsSelectStyleModal(arg0) {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/premium/powerups/native/EnhancedRoleColorsSelectStyleModal.tsx");
+
+export default function EnhancedRoleColorsSelectStyleModal(arg0) {
   let BottomSheetTitleHeader;
   let Text2;
   let VpEDJc;
@@ -346,7 +147,7 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
           const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
           message.roleColors = obj2.processColorStrings(result);
           message.message.shouldShowRoleOnName = true;
-          message.message.avatarURL = _modDef14304;
+          message.message.avatarURL = _modDef11168;
         }
       };
       items1 = [closure_1_9(require("ChatItem"), obj2), ];
@@ -366,14 +167,14 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
     const intl3 = intl6.intl;
     format = intl3.format;
     obj8 = { magical: closure_9(Text2, obj9) };
-    VpEDJc = _modDef2568.VpEDJc;
-    obj9 = { gradientColors: items1, variant: "text-sm/semibold", children: intl4.string(_modDef2568["+/IHLl"]) };
+    VpEDJc = _modDef2569.VpEDJc;
+    obj9 = { gradientColors: items1, variant: "text-sm/semibold", children: intl4.string(_modDef2569["+/IHLl"]) };
     items1 = [, , ];
     ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
     Text2 = Text_Text.Text;
     intl4 = intl6.intl;
     items2 = [closure_9(Text, obj7), ];
-    const obj10 = { style: tmp3.upsellText, variant: "text-sm/normal", children: intl5.string(_modDef2568.FJZeZF) };
+    const obj10 = { style: tmp3.upsellText, variant: "text-sm/normal", children: intl5.string(_modDef2569.FJZeZF) };
     const Text3 = Text_Text.Text;
     intl5 = intl6.intl;
     items2[1] = closure_9(Text3, obj10);
@@ -381,8 +182,4 @@ tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function EnhancedRoleColo
   }
   items[1] = tmp9Result;
   return closure_9(BottomSheet, obj2);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/premium/powerups/native/EnhancedRoleColorsSelectStyleModal.tsx");
-
-export default tmp4;
+};

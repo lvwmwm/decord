@@ -1,23 +1,22 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 13368
+// Function ID: 13369
 // Name: ShareChatInput
-// Dependencies: [32, 19, 17, 1084, 21, 5005, 587, 1381, 558, 576, 9728, 1125, 8994, 9413, 6968, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5009, 575, 1376, 9754, 8177, 1114, 6974, 9430, 2]
+// Exports: default
 
-// Module 13217 (ShareChatInput)
+// Module 13368 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl4 from "intl" /* 1125 */;
-import Pressables from "Pressables" /* 6968 */;
-import ReactionIcon from "ReactionIcon" /* 9413 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9728 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1114 */;
+import Pressables from "Pressables" /* 6974 */;
+import ReactionIcon from "ReactionIcon" /* 9430 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 9754 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let PX_8;
@@ -27,8 +26,8 @@ let num;
 let obj2;
 let obj3;
 let obj4;
-let tmp6;
-const FormInputDefault = tmp6(8994);
+let tmp2;
+const FormInputDefault = tmp2(8177);
 const View = react_native.View;
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -47,140 +46,9 @@ if (PlatformUtils.isAndroid()) {
 ({ paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8, alignSelf: "flex-end" });
 ({ borderColor: nativeDefault.colors.MOBILE_CHATINPUT_BORDER_ACTIVE });
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareChatInput(onBlur) {
-  let closure_129_2;
-  let disabled;
-  let inputRef;
-  let onChange;
-  let onFocus;
-  let onPressEmoji;
-  let onSelectionChange;
-  let onSend;
-  let text;
-  let tmp10;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(32);
-  ({ text, inputRef, onChange, onSelectionChange, onFocus } = onBlur);
-  onBlur = onBlur.onBlur;
-  ({ onPressEmoji, onSend, disabled } = onBlur);
-  const tmp5 = closure_8();
-  const tmp7 = useMessageMaxLengthDefault();
-  [tmp9, closure_129_2] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[0] !== onFocus) {
-    const fn = function c() {
-      closure_1_2(true);
-      onFocus();
-    };
-    cResult[0] = onFocus;
-    cResult[1] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[1];
-  }
-  if (cResult[2] !== onBlur) {
-    class L {
-      constructor() {
-        closure_1_2(false);
-        onBlur();
-      }
-    }
-    cResult[2] = onBlur;
-    cResult[3] = L;
-  } else {
-    class L {
-      constructor() {
-        closure_1_2(false);
-        onBlur();
-      }
-    }
-  }
-  if (tmp9) {
-    class L {
-      constructor() {
-        closure_1_2(false);
-        onBlur();
-      }
-    }
-  }
-  if (cResult[4] === tmp5.container) {
-    let tmp13;
-    let tmp15;
-    class L {
-      constructor() {
-        closure_1_2(false);
-        onBlur();
-      }
-    }
-    const _Symbol = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
-        constructor() {
-          closure_1_2(false);
-          onBlur();
-        }
-      }
-      const stringResult = obj2.string(intl4.t.ZroO3G);
-      cResult[7] = stringResult;
-      tmp13 = stringResult;
-    } else {
-      class L {
-        constructor() {
-          closure_1_2(false);
-          onBlur();
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    const color = tmp5.inputPlaceholder.color;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      class L {
-        constructor() {
-          closure_1_2(false);
-          onBlur();
-        }
-      }
-      const stringResult1 = obj3.string(intl4.t["/+MXmw"]);
-      cResult[8] = stringResult1;
-      tmp15 = stringResult1;
-    } else {
-      class L {
-        constructor() {
-          closure_1_2(false);
-          onBlur();
-        }
-      }
-    }
-    if (cResult[9] === tmp11) {
-      class L {
-        constructor() {
-          closure_1_2(false);
-          onBlur();
-        }
-      }
-    }
-    const obj4 = { ref: inputRef, maxLength: tmp7, placeholder: tmp13, placeholderTextColor: color, accessibilityLabel: tmp15, onSubmitEditing: onSend, onSelectionChange, style: tmp5.chatInput, value: text, onChange, onFocus: tmp10, onBlur: tmp11, multiline: true, showBorder: false, showTopContainer: false, textAlignVertical: "center", inputTextStyle: tmp5.chatText, editable: !(undefined !== disabled && disabled) };
-    cResult[9] = tmp11;
-    cResult[10] = tmp10;
-    cResult[11] = inputRef;
-    cResult[12] = tmp7;
-    cResult[13] = onChange;
-    cResult[14] = onSelectionChange;
-    cResult[15] = onSend;
-    cResult[16] = tmp5.chatInput;
-    cResult[17] = tmp5.chatText;
-    cResult[18] = tmp5.inputPlaceholder.color;
-    cResult[19] = !(undefined !== disabled && disabled);
-    cResult[20] = text;
-    cResult[21] = metroRequire(FormInputDefault, obj4);
-    const tmp20 = metroRequire(FormInputDefault, obj4);
-  }
-  const items = [tmp5.container, tmp9];
-  cResult[4] = tmp5.container;
-  cResult[5] = tmp9;
-  cResult[6] = items;
-}) : (function ShareChatInput(onFocus) {
+const result = size.fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
+
+export default function ShareChatInput(onFocus) {
   let c2;
   let focused;
   let inputRef;
@@ -233,7 +101,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareChatInp
   intl3 = intl4.intl;
   items3[1] = metroRequire(PressableOpacity, obj3);
   return tmp8(tmp9, obj);
-});
-const result = size.fileFinishedImporting("modules/share/native/ShareChatInput.tsx");
-
-export default tmp4;
+};

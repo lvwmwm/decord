@@ -1,15 +1,15 @@
-// Module ID: 15737
-// Function ID: 15738
+// Module ID: 15777
+// Function ID: 15778
 // Name: MenuGroup
-// Dependencies: [19, 17, 21, 5005, 587, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 2]
 // Exports: MenuGroup
 
-// Module 15737 (MenuGroup)
-import nativeDefault from "native" /* 587 */;
+// Module 15777 (MenuGroup)
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -39,14 +39,14 @@ export function MenuGroup(ref) {
   }
   items = [tmp4, ];
   const Children = ref.Children;
-  items[1] = Children.map(children, (label, arg1) => {
-    let cloneElementResult = label;
+  items[1] = Children.map(children, (icon, arg1) => {
+    let cloneElementResult = icon;
     if (0 === arg1) {
-      cloneElementResult = label;
+      cloneElementResult = icon;
       const obj = react;
-      if (react.isValidElement(label)) {
+      if (react.isValidElement(icon)) {
         const obj2 = { ref };
-        cloneElementResult = obj.cloneElement(label, obj2);
+        cloneElementResult = obj.cloneElement(icon, obj2);
       }
     }
     return cloneElementResult;

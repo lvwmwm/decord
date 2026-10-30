@@ -1,11 +1,11 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9820
+// Function ID: 9821
 // Name: AnalyticsFeedItemSeenActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: flushAnalyticsFeedItems, markAnalyticsFeedItemSeen, markAnalyticsFeedItemUnseen
 
-// Module 9794 (AnalyticsFeedItemSeenActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 9820 (AnalyticsFeedItemSeenActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/AnalyticsFeedItemSeenActionCreators.tsx");

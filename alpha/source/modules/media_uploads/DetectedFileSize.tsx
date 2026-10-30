@@ -1,10 +1,10 @@
-// Module ID: 8234
-// Function ID: 8235
+// Module ID: 8237
+// Function ID: 8238
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: getDetectedFileSize
 
-// Module 8234 (_asyncToGenerator)
+// Module 8237 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let obj = function _getDetectedFileSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

@@ -1,59 +1,19 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12297
+// Function ID: 12298
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [558, 576, 11498, 12122, 11489, 2]
+// Dependencies: [11698, 12298, 11689, 2]
+// Exports: default
 
-// Module 12121 (useShowTryItOutButtonInAppLauncher)
-import react from "react" /* 576 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11489 */;
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11498 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12122 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 12297 (useShowTryItOutButtonInAppLauncher)
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 11698 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12298 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowTryItOutButtonInAppLauncher(arg0) {
-  let application;
-  let botUserId;
-  let context;
-  const obj = react;
-  const cResult = obj.c(4);
-  ({ context, application, botUserId } = arg0);
-  if (cResult[0] === application.id) {
-    if (cResult[1] === botUserId) {
-      let tmp4;
-      if (cResult[2] === context) {
-        tmp4 = cResult[3];
-      }
-      const tmpResult = getPrimaryAppCommand;
-      let isPrimaryAppCommandUsableInAppDM = tmpResult.useIsPrimaryAppCommandUsableInAppDM(tmp4);
-      let channel;
-      const tmp7 = useIsAppDMDefault;
-      if ("channel" === context.type) {
-        channel = context.channel;
-      }
-      const tmp7Result = tmp7(channel);
-      const tmpResult2 = canLaunchContextlessFrame;
-      const result = tmpResult2.canLaunchContextlessFrame(application);
-      let tmp11 = !result;
-      if (tmp11) {
-        if (isPrimaryAppCommandUsableInAppDM) {
-          isPrimaryAppCommandUsableInAppDM = null != botUserId;
-        }
-        if (isPrimaryAppCommandUsableInAppDM) {
-          isPrimaryAppCommandUsableInAppDM = !tmp7Result;
-        }
-        tmp11 = isPrimaryAppCommandUsableInAppDM;
-      }
-      return tmp11;
-    }
-  }
-  const obj2 = { context, applicationId: application.id, botUserId };
-  cResult[0] = application.id;
-  cResult[1] = botUserId;
-  cResult[2] = context;
-  cResult[3] = obj2;
-  tmp4 = obj2;
-}) : (function useShowTryItOutButtonInAppLauncher(arg0) {
+let tmp;
+const canLaunchContextlessFrame = tmp(11689);
+let result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
+
+export default function useShowTryItOutButtonInAppLauncher(arg0) {
   let application;
   let botUserId;
   let context;
@@ -80,7 +40,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShowTry
     tmp8 = isPrimaryAppCommandUsableInAppDM;
   }
   return tmp8;
-});
-let result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
-
-export default tmp2;
+};

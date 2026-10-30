@@ -1,96 +1,30 @@
-// Module ID: 15249
-// Function ID: 15250
+// Module ID: 15289
+// Function ID: 15290
 // Name: FistBumpSpotIllustration
-// Dependencies: [19, 21, 15250, 15251, 15252, 558, 576, 7055, 5707, 2]
+// Dependencies: [19, 21, 15290, 15291, 15292, 7063, 5712, 2]
+// Exports: FistBumpSpotIllustration
 
-// Module 15249 (FistBumpSpotIllustration)
+// Module 15289 (FistBumpSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import react_native from "react-native" /* 7055 */;
-import _modDef15250 from "module_15250" /* 15250 */;
-import _modDef15251 from "module_15251" /* 15251 */;
-import _modDef15252 from "module_15252" /* 15252 */;
+import react_native from "react-native" /* 7063 */;
+import _modDef15290 from "module_15290" /* 15290 */;
+import _modDef15291 from "module_15291" /* 15291 */;
+import _modDef15292 from "module_15292" /* 15292 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15250 };
+let obj2 = { uri: _modDef15290 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15251 };
+let obj3 = { uri: _modDef15291 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15252 };
-({ uri: _modDef15252 });
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FistBumpSpotIllustration(arg0) {
-  let accessibilityLabel;
-  let accessible;
-  let height;
-  let resizeMode;
-  let scale;
-  let width;
-  obj = react2;
-  const cResult = obj.c(12);
-  ({ accessible, accessibilityLabel, resizeMode, width, height, scale } = arg0);
-  let num = 1;
-  if (undefined !== scale) {
-    num = scale;
-  }
-  if (cResult[0] === height) {
-    if (cResult[1] === num) {
-      let tmp4;
-      let tmp7;
-      let tmp10;
-      if (cResult[2] === width) {
-        tmp4 = cResult[3];
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmpResult = react_native;
-        const assetSource = tmpResult.getAssetSource(obj);
-        cResult[4] = assetSource;
-        tmp7 = assetSource;
-      } else {
-        tmp7 = cResult[4];
-      }
-      if (cResult[5] !== resizeMode) {
-        const tmpResult3 = react_native;
-        const assetResizeMode = tmpResult3.getAssetResizeMode(resizeMode);
-        cResult[5] = resizeMode;
-        cResult[6] = assetResizeMode;
-        tmp10 = assetResizeMode;
-      } else {
-        tmp10 = cResult[6];
-      }
-      if (cResult[7] === accessibilityLabel) {
-        if (cResult[8] === accessible) {
-          if (cResult[9] === tmp4) {
-            let tmp12;
-            if (cResult[10] === tmp10) {
-              tmp12 = cResult[11];
-            }
-            return tmp12;
-          }
-        }
-      }
-      const tmp15 = jsx(FastImageDefault, { fadeDuration: 0, source: tmp7, style: tmp4, accessible, accessibilityLabel, resizeMode: tmp10 });
-      cResult[7] = accessibilityLabel;
-      cResult[8] = accessible;
-      cResult[9] = tmp4;
-      cResult[10] = tmp10;
-      cResult[11] = tmp15;
-      tmp12 = tmp15;
-    }
-  }
-  const tmpResult4 = react_native;
-  const assetSizeStyle = tmpResult4.getAssetSizeStyle({ width, height, scale: num, intrinsicWidth: 288, intrinsicHeight: 162 });
-  cResult[0] = height;
-  cResult[1] = num;
-  cResult[2] = width;
-  cResult[3] = assetSizeStyle;
-  tmp4 = assetSizeStyle;
-}) : (function FistBumpSpotIllustration(width) {
+obj[3] = { uri: _modDef15292 };
+({ uri: _modDef15292 });
+let size = size_mod;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FistBumpSpotIllustration.native.tsx");
+
+export function FistBumpSpotIllustration(width) {
   let accessibilityLabel;
   let accessible;
   let obj2;
@@ -110,12 +44,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function FistBumpSp
     return obj.getAssetSizeStyle(size);
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode: obj3.getAssetResizeMode(resizeMode) };
-  height(num[8]);
-  obj2 = width(num[7]);
-  obj3 = width(num[7]);
+  height(num[6]);
+  obj2 = width(num[5]);
+  obj3 = width(num[5]);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={obj3.getAssetResizeMode(resizeMode)} />;
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/FistBumpSpotIllustration.native.tsx");
-
-export const FistBumpSpotIllustration = tmp2;
+}

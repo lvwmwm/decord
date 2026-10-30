@@ -1,13 +1,13 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6841
+// Function ID: 6842
 // Name: FramesConstants
-// Dependencies: [1084, 5664, 38, 2]
+// Dependencies: [1072, 5670, 38, 2]
 // Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameLaunchChannelId, getFrameLaunchParams, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 6834 (FramesConstants)
+// Module 6841 (FramesConstants)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1084 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
+import Constants from "Constants" /* 1072 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

@@ -1,286 +1,25 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 9095
+// Function ID: 9096
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6842, 21, 5005, 558, 576, 504, 8925, 5247, 1125, 5271, 5952, 2]
+// Dependencies: [5, 19, 6849, 21, 5009, 504, 8958, 5253, 5959, 1114, 5619, 2]
+// Exports: default
 
-// Module 9082 (DeleteEventAlert)
+// Module 9095 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
-import intl7 from "intl" /* 1125 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6842 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6849 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let c1, c2;
 
-let jsx = Fragment.jsx;
+const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ contentText: { textAlign: "center" } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventAlert(eventId) {
-  let closure_5;
-  let first;
-  let recurrenceId;
-  let tmp7;
-  let tmp = eventId;
-  let obj = eventId(recurrenceId[6]);
-  const cResult = obj.c(32);
-  eventId = eventId.eventId;
-  const guildId = eventId.guildId;
-  recurrenceId = eventId.recurrenceId;
-  const eventException = eventId.eventException;
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [closure_4];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== eventId) {
-    const fn = function s() {
-      return GuildScheduledEventStore.getGuildScheduledEvent(eventId);
-    };
-    cResult[1] = eventId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = tmp(recurrenceId[7]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  let recurrence_rule;
-  if (stateFromStores != null) {
-    recurrence_rule = stateFromStores.recurrence_rule;
-  }
-  closure_4 = tmp10;
-  jsx = tmp11;
-  if (cResult[3] === eventException) {
-    if (cResult[4] === eventId) {
-      if (cResult[5] === guildId) {
-        if (cResult[6] === null != recurrenceId) {
-          let tmp12;
-          if (cResult[7] === recurrenceId) {
-            tmp12 = cResult[8];
-          }
-          if (cResult[9] === null != recurrenceId) {
-            let tmp13;
-            let tmp14;
-            let tmp16;
-            if (cResult[10] === null != recurrence_rule) {
-              tmp13 = cResult[11];
-            }
-            if (cResult[12] !== tmp13) {
-              const tmp13Result = tmp13();
-              cResult[12] = tmp13;
-              cResult[13] = tmp13Result;
-              tmp14 = tmp13Result;
-            } else {
-              tmp14 = cResult[13];
-            }
-            const _Symbol = Symbol;
-            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-              let intl = tmp(tmp2[10]).intl;
-              let stringResult = intl.string(tmp(tmp2[10]).t.v2GWNQ);
-              cResult[14] = stringResult;
-              tmp16 = stringResult;
-            } else {
-              tmp16 = cResult[14];
-            }
-            if (cResult[15] === null != recurrenceId) {
-              if (cResult[16] === null != recurrence_rule) {
-                let tmp18;
-                let tmp21;
-                if (cResult[17] === tmp4) {
-                  tmp18 = cResult[18];
-                }
-                if (cResult[19] === null != recurrenceId) {
-                  if (cResult[20] === null != recurrence_rule) {
-                    tmp21 = cResult[21];
-                  }
-                  if (cResult[22] === tmp12) {
-                    let tmp23;
-                    let tmp26;
-                    let tmp29;
-                    if (cResult[23] === tmp21) {
-                      tmp23 = cResult[24];
-                    }
-                    const _Symbol2 = Symbol;
-                    if (cResult[25] === Symbol.for("react.memo_cache_sentinel")) {
-                      const AlertActionButton = tmp(tmp2[12]).AlertActionButton;
-                      const intl5 = tmp(tmp2[10]).intl;
-                      const tmp28 = <AlertActionButton key="cancel" variant="secondary" text={intl5.string(tmp(recurrenceId[10]).t.oEAioF)} />;
-                      cResult[25] = tmp28;
-                      tmp26 = tmp28;
-                    } else {
-                      tmp26 = cResult[25];
-                    }
-                    if (cResult[26] !== tmp23) {
-                      const items1 = [tmp23, tmp26];
-                      cResult[26] = tmp23;
-                      cResult[27] = items1;
-                      tmp29 = items1;
-                    } else {
-                      tmp29 = cResult[27];
-                    }
-                    if (cResult[28] === tmp29) {
-                      if (cResult[29] === tmp14) {
-                        let tmp30;
-                        if (cResult[30] === tmp18) {
-                          tmp30 = cResult[31];
-                        }
-                        return tmp30;
-                      }
-                    }
-                    const tmp32 = jsx(tmp(recurrenceId[12]).AlertModal, { title: tmp14, content: tmp16, extraContent: tmp18, actions: tmp29 });
-                    cResult[28] = tmp29;
-                    cResult[29] = tmp14;
-                    cResult[30] = tmp18;
-                    cResult[31] = tmp32;
-                    tmp30 = tmp32;
-                  }
-                  const tmp25 = jsx(tmp(recurrenceId[12]).AlertActionButton, { variant: "destructive", onPress: tmp12, text: tmp21 }, "delete");
-                  cResult[22] = tmp12;
-                  cResult[23] = tmp21;
-                  cResult[24] = tmp25;
-                  tmp23 = tmp25;
-                }
-                if (null != recurrence_rule) {
-                  let stringResult1;
-                  if (null == recurrenceId) {
-                    const intl3 = tmp(tmp2[10]).intl;
-                    stringResult1 = intl3.string(tmp(tmp2[10]).t["8ZsNv5"]);
-                  }
-                  cResult[19] = null != recurrenceId;
-                  cResult[20] = null != recurrence_rule;
-                  cResult[21] = stringResult1;
-                  tmp21 = stringResult1;
-                }
-                const intl4 = tmp(tmp2[10]).intl;
-                stringResult1 = intl4.string(tmp(tmp2[10]).t.B9sJLX);
-              }
-            }
-            let tmp19 = null;
-            if (null != recurrence_rule) {
-              tmp19 = null;
-              if (null == recurrenceId) {
-                const Text = tmp(tmp2[11]).Text;
-                let intl2 = tmp(tmp2[10]).intl;
-                tmp19 = <Text variant="text-md/medium" color="text-default" style={tmp4.contentText}>{intl2.format(tmp(tmp2[10]).t.ZcpcyO, {})}</Text>;
-              }
-            }
-            cResult[15] = null != recurrenceId;
-            cResult[16] = null != recurrence_rule;
-            cResult[17] = tmp4;
-            cResult[18] = tmp19;
-            tmp18 = tmp19;
-          }
-          function getHeaderText() {
-            let stringResult;
-            const tmp = closure_5;
-            if (tmp) {
-              const intl2 = intl7.intl;
-              stringResult = intl2.string(intl7.t.tqClly);
-            } else {
-              const intl = intl7.intl;
-              const string = intl.string;
-              const t = intl7.t;
-              if (closure_4) {
-                stringResult = string(t.wr33rW);
-              } else {
-                stringResult = string(t.B9sJLX);
-              }
-            }
-            return stringResult;
-          }
-          cResult[9] = null != recurrenceId;
-          cResult[10] = null != recurrence_rule;
-          cResult[11] = getHeaderText;
-          tmp13 = getHeaderText;
-        }
-      }
-    }
-  }
-  let closure_0 = eventException(function*(arg0, value) {
-    if (c2 === 2) {
-      c2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        c2 = 2;
-        if (0 === c1) {
-          if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_0 = tmp;
-            const obj8 = guildId(recurrenceId[8]);
-            if (closure_1_5) {
-              c1 = 2;
-              c2 = 1;
-              const obj5 = { value: obj8.deleteRecurrence(c1, closure_0, c2, eventException), done: false };
-              return obj5;
-            } else {
-              c1 = 1;
-              c2 = 1;
-              const obj6 = { value: obj8.deleteGuildEvent(closure_0, c1), done: false };
-              return obj6;
-            }
-          }
-        } else {
-          if (1 === tmp4) {
-            if (arg0 === 1) {
-              c2 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c2 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
-            }
-          } else if (arg0 === 1) {
-            c2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c2 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          const obj2 = guildId(recurrenceId[9]);
-          obj2.hideActionSheet();
-          c2 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } catch (tmp16) {
-        c2 = 3;
-        throw tmp16;
-      }
-    }
-  });
-  function handleConfirmClick() {
-    return closure_0(...arguments);
-  }
-  cResult[3] = eventException;
-  cResult[4] = eventId;
-  cResult[5] = guildId;
-  cResult[6] = null != recurrenceId;
-  cResult[7] = recurrenceId;
-  cResult[8] = handleConfirmClick;
-  tmp12 = handleConfirmClick;
-}) : (function DeleteEventAlert(eventException) {
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
+
+export default function DeleteEventAlert(eventException) {
   let intl2;
   let intl3;
   let intl6;
@@ -290,7 +29,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
   ({ eventId: require, guildId: importDefault, recurrenceId } = eventException);
   eventException = eventException.eventException;
   let closure_4;
-  let obj = function _handleConfirmClick2() {
+  let obj = function _handleConfirmClick() {
     obj = _asyncToGenerator(async (arg0, value) => {
       let v1;
       if (c2 === 2) {
@@ -303,7 +42,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -318,7 +57,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
               return obj4;
             } else {
               let closure_0 = tmp3;
-              const obj8 = c1(c2[8]);
+              const obj8 = c1(c2[6]);
               if (closure_2_4) {
                 c1 = 2;
                 c2 = 1;
@@ -349,10 +88,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
               obj = { value, done: true };
               return obj;
             }
-            const obj2 = c1(c2[9]);
+            const obj2 = c1(c2[7]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c2 = 3;
@@ -373,10 +112,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
     recurrence_rule = stateFromStores.recurrence_rule;
   }
   closure_4 = tmp7;
-  const AlertModal = tmp2(tmp3[12]).AlertModal;
-  const intl = tmp2(tmp3[10]).intl;
+  const AlertModal = tmp2(tmp3[8]).AlertModal;
+  const intl = tmp2(tmp3[9]).intl;
   const string = intl.string;
-  const t = tmp2(tmp3[10]).t;
+  const t = tmp2(tmp3[9]).t;
   if (null != recurrenceId) {
     stringResult = string(t.tqClly);
   } else if (null != recurrence_rule) {
@@ -384,15 +123,15 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
   } else {
     stringResult = string(t.B9sJLX);
   }
-  let obj2 = { title: stringResult, content: intl2.string(tmp2(tmp3[10]).t.v2GWNQ), extraContent: tmp8Result, actions: null };
-  intl2 = tmp2(tmp3[10]).intl;
+  let obj2 = { title: stringResult, content: intl2.string(tmp2(tmp3[9]).t.v2GWNQ), extraContent: tmp8Result, actions: null };
+  intl2 = tmp2(tmp3[9]).intl;
   tmp8Result = null;
   if (null != recurrence_rule) {
     tmp8Result = null;
     if (null == recurrenceId) {
-      let obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.contentText, children: intl3.format(tmp2(tmp3[10]).t.ZcpcyO, {}) };
-      const Text = tmp2(tmp3[11]).Text;
-      intl3 = tmp2(tmp3[10]).intl;
+      let obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.contentText, children: intl3.format(tmp2(tmp3[9]).t.ZcpcyO, {}) };
+      const Text = tmp2(tmp3[10]).Text;
+      intl3 = tmp2(tmp3[9]).intl;
       tmp8Result = tmp8(Text, obj3);
     }
   }
@@ -406,21 +145,18 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function DeleteEventA
   if (null != recurrence_rule) {
     let stringResult1;
     if (null == recurrenceId) {
-      const intl4 = tmp2(tmp3[10]).intl;
-      stringResult1 = intl4.string(tmp2(tmp3[10]).t["8ZsNv5"]);
+      const intl4 = tmp2(tmp3[9]).intl;
+      stringResult1 = intl4.string(tmp2(tmp3[9]).t["8ZsNv5"]);
     }
     obj4.text = stringResult1;
     const items1 = [tmp8(tmp11, obj4, "delete"), ];
-    let obj5 = { variant: "secondary", text: intl6.string(tmp2(tmp3[10]).t.oEAioF) };
-    const AlertActionButton = tmp2(tmp3[12]).AlertActionButton;
-    intl6 = tmp2(tmp3[10]).intl;
+    let obj5 = { variant: "secondary", text: intl6.string(tmp2(tmp3[9]).t.oEAioF) };
+    const AlertActionButton = tmp2(tmp3[8]).AlertActionButton;
+    intl6 = tmp2(tmp3[9]).intl;
     items1[1] = obj(AlertActionButton, obj5, "cancel");
     obj2.actions = items1;
     return obj(AlertModal, obj2);
   }
-  const intl5 = tmp2(tmp3[10]).intl;
-  stringResult1 = intl5.string(tmp2(tmp3[10]).t.B9sJLX);
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
-
-export default tmp3;
+  const intl5 = tmp2(tmp3[9]).intl;
+  stringResult1 = intl5.string(tmp2(tmp3[9]).t.B9sJLX);
+};

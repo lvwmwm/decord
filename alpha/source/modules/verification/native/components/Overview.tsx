@@ -1,19 +1,19 @@
-// Module ID: 19521
-// Function ID: 19522
+// Module ID: 19584
+// Function ID: 19585
 // Name: Overview
-// Dependencies: [19, 17, 4851, 1389, 1084, 21, 5005, 587, 2065, 558, 576, 7057, 504, 1503, 6010, 5281, 1125, 19247, 1294, 7138, 1504, 5271, 17407, 2]
+// Dependencies: [19, 17, 4852, 1384, 1072, 21, 5009, 575, 2062, 504, 7065, 1498, 6017, 5629, 1114, 19312, 1283, 7146, 1499, 5619, 17461, 2]
+// Exports: default
 
-// Module 19521 (Overview)
+// Module 19584 (Overview)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4851 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4852 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2065 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2062 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,245 +40,9 @@ obj3 = { marginTop: 20, fontSize: 17, textAlign: "center", color: nativeDefault.
 obj4 = { marginTop: 4, marginBottom: 20, fontSize: 14, textAlign: "center", color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_13 = createStyles(obj);
 const helpCenterURL = HelpdeskUtils.getArticleURL(HelpdeskArticles.VERIFICATION_FAQ);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
-  let closure_0;
-  let constants2;
-  let container;
-  let containerInner;
-  let intl3;
-  let items2;
-  let items3;
-  let stateFromStores;
-  let title;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp = _require;
-  const tmp2 = navigation;
-  let obj = require("react");
-  const cResult = obj.c(30);
-  let tmp4 = closure_13();
-  _require = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserRequiredActionStore];
-    const fn = function c() {
-      action = action.getAction();
-      const obj = stateFromStores(navigation[11]);
-      return obj.getVerificationTypes(action);
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp6 = fn;
-    tmp5 = items;
-    tmp7 = items1;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  const tmpResult = tmp(tmp2[12]);
-  stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6, tmp7, stateFromStores(tmp2[11]).areVerificationTypesEqual);
-  const tmpResult2 = tmp(tmp2[13]);
-  navigation = tmpResult2.useNavigation();
-  const tmp11 = stateFromStores(tmp2[14]);
-  tmp11(tmp(tmp2[14]).BackPressHandler.minimize);
-  if (cResult[3] === navigation) {
-    if (cResult[4] === tmp4.verificationType) {
-      let tmp13;
-      let tmp14;
-      let tmp16;
-      let tmp19;
-      let tmp22;
-      let tmp25;
-      if (cResult[5] === stateFromStores) {
-        tmp13 = cResult[6];
-      }
-      const _Symbol = Symbol;
-      ({ container, containerInner, title } = tmp4);
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        let intl = tmp(tmp2[16]).intl;
-        const stringResult = intl.string(tmp(tmp2[16]).t.Iz0kDg);
-        cResult[7] = stringResult;
-        tmp14 = stringResult;
-      } else {
-        tmp14 = cResult[7];
-      }
-      if (cResult[8] !== tmp4.title) {
-        let obj2 = { variant: "heading-lg/semibold", style: title, accessibilityRole: "header", children: tmp14 };
-        const tmp18 = closure_10(tmp(tmp2[21]).Text, obj2);
-        cResult[8] = tmp4.title;
-        cResult[9] = tmp18;
-        tmp16 = tmp18;
-      } else {
-        tmp16 = cResult[9];
-      }
-      const _Symbol2 = Symbol;
-      const body = tmp4.body;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl2 = tmp(tmp2[16]).intl;
-        let obj3 = { helpCenterURL };
-        const formatResult = intl2.format(tmp(tmp2[16]).t["0rqMV5"], obj3);
-        cResult[10] = formatResult;
-        tmp19 = formatResult;
-      } else {
-        tmp19 = cResult[10];
-      }
-      if (cResult[11] !== tmp4.body) {
-        let obj4 = { variant: "text-sm/medium", style: body, children: tmp19 };
-        const tmp24 = closure_10(tmp(tmp2[21]).Text, obj4);
-        cResult[11] = tmp4.body;
-        cResult[12] = tmp24;
-        tmp22 = tmp24;
-      } else {
-        tmp22 = cResult[12];
-      }
-      const blocks = tmp4.blocks;
-      if (cResult[13] !== tmp13) {
-        const tmp13Result = tmp13();
-        cResult[13] = tmp13;
-        cResult[14] = tmp13Result;
-        tmp25 = tmp13Result;
-      } else {
-        tmp25 = cResult[14];
-      }
-      if (cResult[15] === tmp4.blocks) {
-        let tmp27;
-        if (cResult[16] === tmp25) {
-          tmp27 = cResult[17];
-        }
-        if (cResult[18] === tmp4.containerInner) {
-          if (cResult[19] === tmp22) {
-            if (cResult[20] === tmp27) {
-              let tmp31;
-              let tmp35;
-              let tmp38;
-              if (cResult[21] === tmp16) {
-                tmp31 = cResult[22];
-              }
-              const _Symbol3 = Symbol;
-              if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-                const obj5 = { variant: "secondary", text: intl3.string(tmp(tmp2[16]).t["Yl/Riu"]), onPress: tmp(tmp2[22]).emailSupport };
-                let Button = tmp(tmp2[15]).Button;
-                intl3 = tmp(tmp2[16]).intl;
-                const tmp37 = closure_10(Button, obj5);
-                cResult[23] = tmp37;
-                tmp35 = tmp37;
-              } else {
-                tmp35 = cResult[23];
-              }
-              if (cResult[24] !== tmp4.button) {
-                const obj6 = { style: tmp4.button, accessibilityRole: "link", children: tmp35 };
-                const tmp41 = closure_10(View, obj6);
-                cResult[24] = tmp4.button;
-                cResult[25] = tmp41;
-                tmp38 = tmp41;
-              } else {
-                tmp38 = cResult[25];
-              }
-              if (cResult[26] === tmp4.container) {
-                if (cResult[27] === tmp31) {
-                  let tmp42;
-                  if (cResult[28] === tmp38) {
-                    tmp42 = cResult[29];
-                  }
-                  return tmp42;
-                }
-              }
-              const obj7 = { style: container, children: items2 };
-              items2 = [tmp31, tmp38];
-              const tmp45 = closure_12(View, obj7);
-              cResult[26] = tmp4.container;
-              cResult[27] = tmp31;
-              cResult[28] = tmp38;
-              cResult[29] = tmp45;
-              tmp42 = tmp45;
-            }
-          }
-        }
-        const obj8 = { style: containerInner, children: items3 };
-        items3 = [tmp16, tmp22, tmp27];
-        const tmp34 = closure_12(View, obj8);
-        cResult[18] = tmp4.containerInner;
-        cResult[19] = tmp22;
-        cResult[20] = tmp27;
-        cResult[21] = tmp16;
-        cResult[22] = tmp34;
-        tmp31 = tmp34;
-      }
-      const obj9 = { style: blocks, children: tmp25 };
-      const tmp30 = closure_10(View, obj9);
-      cResult[15] = tmp4.blocks;
-      cResult[16] = tmp25;
-      cResult[17] = tmp30;
-      tmp27 = tmp30;
-    }
-  }
-  const fn2 = function b() {
-    let obj = {
-      children: stateFromStores.map((item) => {
-        let Button2;
-        let intl;
-        let obj3;
-        let obj4;
-        let tmp4;
-        if (item === constants.CAPTCHA) {
-          const tmp = closure_1_10;
-          let obj = {
-            text: intl.string(closure_1_0(navigation[16]).t["3413d0"]),
-            onPress() {
-                let obj = closure_1_1(closure_1_2[17]);
-                const showCaptchaResult = obj.showCaptcha();
-                showCaptchaResult.then((captcha_key) => {
-                  let obj;
-                  const HTTP = item(closure_1_2[18]).HTTP;
-                  const request = { url: constants.CAPTCHA, body: obj, oldFormErrors: true, rejectWithError: true };
-                  obj = { captcha_key };
-                  HTTP.post(request);
-                });
-              },
-            grow: true
-          };
-          const Button = closure_1_0(navigation[15]).Button;
-          intl = closure_1_0(navigation[16]).intl;
-          tmp4 = closure_1_10(Button, obj, item);
-        } else {
-          const obj2 = { style: item.verificationType, children: closure_1_10(Button2, obj3) };
-          obj3 = {
-            text: obj4.getButtonTitle(item),
-            onPress() {
-                let ADD_PHONE = constants.ADD_PHONE;
-                const tmp4 = item !== constants2.EMAIL_OR_PHONE && item !== constants2.EMAIL && item !== constants2.REVERIFY_EMAIL;
-                if (!tmp4) {
-                  const obj = item(navigation[19]);
-                  obj.accountDetailsInit();
-                  currentUser = currentUser.getCurrentUser();
-                  let email;
-                  if (currentUser != null) {
-                    email = currentUser.email;
-                  }
-                  ADD_PHONE = null != email ? tmp.RESEND_EMAIL : tmp.ENTER_EMAIL;
-                }
-                const dispatch = closure_2_2.dispatch;
-                const StackActions = item(navigation[20]).StackActions;
-                dispatch(StackActions.push(ADD_PHONE));
-              },
-            grow: true
-          };
-          Button2 = closure_1_0(navigation[15]).Button;
-          obj4 = stateFromStores(navigation[11]);
-          tmp4 = closure_1_10(closure_1_4, obj2, item);
-        }
-        return tmp4;
-      })
-    };
-    return authStore(unpackModuleId, obj);
-  };
-  cResult[3] = navigation;
-  cResult[4] = tmp4.verificationType;
-  cResult[5] = stateFromStores;
-  cResult[6] = fn2;
-  tmp13 = fn2;
-}) : (function Overview() {
+const result = size.fileFinishedImporting("modules/verification/native/components/Overview.tsx");
+
+export default function Overview() {
   let Button;
   let closure_0;
   let constants2;
@@ -296,12 +60,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
   const items = [UserRequiredActionStore];
   stateFromStores = obj.useStateFromStores(items, () => {
     action = action.getAction();
-    const obj = stateFromStores(navigation[11]);
+    const obj = stateFromStores(navigation[10]);
     return obj.getVerificationTypes(action);
-  }, [], stateFromStores(navigation[11]).areVerificationTypesEqual);
+  }, [], stateFromStores(navigation[10]).areVerificationTypesEqual);
   let obj2 = require("useNavigation");
   navigation = obj2.useNavigation();
-  let tmp4 = stateFromStores(navigation[14]);
+  let tmp4 = stateFromStores(navigation[12]);
   tmp4(require("useBackPressHandler").BackPressHandler.minimize);
   const items1 = [navigation, stateFromStores, tmp.verificationType];
   let obj3 = { style: tmp.container, children: items3 };
@@ -317,13 +81,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
         if (item === constants.CAPTCHA) {
           const tmp = closure_1_10;
           let obj = {
-            text: intl.string(closure_1_0(navigation[16]).t["3413d0"]),
+            text: intl.string(closure_1_0(navigation[14]).t["3413d0"]),
             onPress() {
-                let obj = closure_1_1(closure_1_2[17]);
+                let obj = closure_1_1(closure_1_2[15]);
                 const showCaptchaResult = obj.showCaptcha();
                 showCaptchaResult.then((captcha_key) => {
                   let obj;
-                  const HTTP = item(closure_1_2[18]).HTTP;
+                  const HTTP = item(closure_1_2[16]).HTTP;
                   const request = { url: constants.CAPTCHA, body: obj, oldFormErrors: true, rejectWithError: true };
                   obj = { captcha_key };
                   HTTP.post(request);
@@ -331,8 +95,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
               },
             grow: true
           };
-          const Button = closure_1_0(navigation[15]).Button;
-          intl = closure_1_0(navigation[16]).intl;
+          const Button = closure_1_0(navigation[13]).Button;
+          intl = closure_1_0(navigation[14]).intl;
           tmp4 = closure_1_10(Button, obj, item);
         } else {
           const obj2 = { style: item.verificationType, children: closure_1_10(Button2, obj3) };
@@ -342,7 +106,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
                 let ADD_PHONE = constants.ADD_PHONE;
                 const tmp4 = item !== constants2.EMAIL_OR_PHONE && item !== constants2.EMAIL && item !== constants2.REVERIFY_EMAIL;
                 if (!tmp4) {
-                  const obj = item(navigation[19]);
+                  const obj = item(navigation[17]);
                   obj.accountDetailsInit();
                   currentUser = currentUser.getCurrentUser();
                   let email;
@@ -352,13 +116,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
                   ADD_PHONE = null != email ? tmp.RESEND_EMAIL : tmp.ENTER_EMAIL;
                 }
                 const dispatch = closure_2_2.dispatch;
-                const StackActions = item(navigation[20]).StackActions;
+                const StackActions = item(navigation[18]).StackActions;
                 dispatch(StackActions.push(ADD_PHONE));
               },
             grow: true
           };
-          Button2 = closure_1_0(navigation[15]).Button;
-          obj4 = stateFromStores(navigation[11]);
+          Button2 = closure_1_0(navigation[13]).Button;
+          obj4 = stateFromStores(navigation[10]);
           tmp4 = closure_1_10(closure_1_4, obj2, item);
         }
         return tmp4;
@@ -384,7 +148,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function Overview() {
   intl3 = require("intl").intl;
   items3[1] = closure_10(View, obj9);
   return closure_12(View, obj3);
-});
-const result = size.fileFinishedImporting("modules/verification/native/components/Overview.tsx");
-
-export default tmp5;
+};

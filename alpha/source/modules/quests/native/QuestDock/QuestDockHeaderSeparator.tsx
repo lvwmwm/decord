@@ -1,41 +1,25 @@
-// Module ID: 17044
-// Function ID: 17045
+// Module ID: 17096
+// Function ID: 17097
 // Name: QuestDockHeaderSeparator
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 2]
 
-// Module 17044 (QuestDockHeaderSeparator)
+// Module 17096 (QuestDockHeaderSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
+import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 const View = react_native.View;
 const jsx = Fragment.jsx;
-let obj = { separator: size };
+const obj = { separator: size };
 size = { backgroundColor: nativeDefault.colors.TEXT_DEFAULT, opacity: 0.2, height: 18, width: 1.5 };
-let closure_4 = createStyles.createStyles(obj);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function QuestDockHeaderSeparator() {
-  let tmp3;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const tmp2 = closure_4();
-  if (cResult[0] !== tmp2.separator) {
-    const tmp6 = <View style={tmp2.separator} />;
-    cResult[0] = tmp2.separator;
-    cResult[1] = tmp6;
-    tmp3 = tmp6;
-  } else {
-    tmp3 = cResult[1];
-  }
-  return tmp3;
-}) : (function QuestDockHeaderSeparator() {
-  return <View style={closure_4().separator} />;
-}));
+let closure_2 = createStyles.createStyles(obj);
+const memoResult = react.memo(function QuestDockHeaderSeparator() {
+  return <View style={closure_2().separator} />;
+});
 size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockHeaderSeparator.tsx");
 

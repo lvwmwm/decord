@@ -1,28 +1,28 @@
-// Module ID: 18948
-// Function ID: 18949
+// Module ID: 19041
+// Function ID: 19042
 // Name: AppComponents
-// Dependencies: [21, 11997, 1381, 5187, 18481, 18887, 5202, 18906, 14210, 15777, 5952, 18949, 5015, 18956, 18966, 18975, 19003, 19012, 19191, 2]
+// Dependencies: [21, 12183, 1376, 5193, 18540, 18947, 5208, 18966, 10989, 15815, 5959, 19042, 5019, 19050, 19060, 19069, 19097, 19106, 19285, 2]
 
-// Module 18948 (AppComponents)
-import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5015 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import PortalKeyboard from "PortalKeyboard" /* 5202 */;
-import AlertModal from "AlertModal" /* 5952 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 11997 */;
-import common_NotificationsDefault from "common/Notifications" /* 14210 */;
-import ContextMenuContainer from "ContextMenuContainer" /* 15777 */;
-import MainShared from "MainShared" /* 18887 */;
-import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18906 */;
-import FramePoolDefault from "FramePool" /* 18949 */;
-import ExternalPipViewDefault from "ExternalPipView" /* 18956 */;
-import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 18966 */;
-import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 18975 */;
-import FramePanelContainerDefault from "FramePanelContainer" /* 19003 */;
-import VoicePanelContainerDefault from "VoicePanelContainer" /* 19012 */;
-import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19191 */;
+// Module 19041 (AppComponents)
+import AccessibilityAnnouncerLiveRegion from "AccessibilityAnnouncerLiveRegion" /* 5019 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
+import PortalKeyboard from "PortalKeyboard" /* 5208 */;
+import AlertModal from "AlertModal" /* 5959 */;
+import NotificationsDefault from "Notifications" /* 10989 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12183 */;
+import ContextMenuContainer from "ContextMenuContainer" /* 15815 */;
+import MainShared from "MainShared" /* 18947 */;
+import MainViewTooltipActionSheetsV2Default from "MainViewTooltipActionSheetsV2" /* 18966 */;
+import FramePoolDefault from "FramePool" /* 19042 */;
+import ExternalPipViewDefault from "ExternalPipView" /* 19050 */;
+import ConjureAppPictureInPicturesDefault from "ConjureAppPictureInPictures" /* 19060 */;
+import ActivityPanelContainerDefault from "ActivityPanelContainer" /* 19069 */;
+import FramePanelContainerDefault from "FramePanelContainer" /* 19097 */;
+import VoicePanelContainerDefault from "VoicePanelContainer" /* 19106 */;
+import MediaPlaybackPanelContainerDefault from "MediaPlaybackPanelContainer" /* 19285 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
-import AppFreezer_mod from "AppFreezer" /* 18481 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+import AppFreezer_mod from "AppFreezer" /* 18540 */;
 import size from "module_2" /* 2 */;
 
 let Fragment;
@@ -41,7 +41,7 @@ PlatformUtils.isIOS() ? (() => {
   return tmp;
 }) : (() => closure_2);
 let AppFreezer = AppFreezer_mod;
-const items = [jsx(MainShared.PictureInPictureGlobalContainer, {}), jsx(MainShared.BurstReactionAnimationContainer, {}), jsx(MainShared.MenuContainer, {}), jsx(PortalKeyboard.PortalKeyboardHost, {}), <tmp3 />, jsx(MainShared.ActionSheetContainer, { appEntryKey: "main" }), jsx(MainShared.Alerts, {}), jsx(MainShared.SoundPlayer, {}), jsx(MainViewTooltipActionSheetsV2Default, {}), jsx(common_NotificationsDefault, {}), jsx(ContextMenuContainer.ContextMenuContainer, {}), jsx(AlertModal.AlertModalContainer, {}), jsx(MainShared.ToastContainer, {})];
+const items = [jsx(MainShared.PictureInPictureGlobalContainer, {}), jsx(MainShared.BurstReactionAnimationContainer, {}), jsx(MainShared.MenuContainer, {}), jsx(PortalKeyboard.PortalKeyboardHost, {}), <tmp3 />, jsx(MainShared.ActionSheetContainer, { appEntryKey: "main" }), jsx(MainShared.Alerts, {}), jsx(MainShared.SoundPlayer, {}), jsx(MainViewTooltipActionSheetsV2Default, {}), jsx(NotificationsDefault, {}), jsx(ContextMenuContainer.ContextMenuContainer, {}), jsx(AlertModal.AlertModalContainer, {}), jsx(MainShared.ToastContainer, {})];
 const items1 = [, ];
 const jsxsResult = <AppFreezer lockKeys={["external-pip"]}>{items}</AppFreezer>;
 items1[0] = jsx(FramePoolDefault, {});

@@ -1,23 +1,19 @@
-// Module ID: 19244
-// Function ID: 19245
+// Module ID: 19305
+// Function ID: 19306
 // Name: captcha/CaptchaUtils
-// Dependencies: [5248, 6533, 558, 576, 504, 5247, 19245, 2000, 6525, 2]
+// Dependencies: [5254, 6540, 504, 5253, 19306, 1995, 6532, 2]
 
-// Module 19244 (captcha/CaptchaUtils)
-import react from "react" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6525 */;
-import CaptchaConstants from "CaptchaConstants" /* 6533 */;
-import ActionSheetStore from "ActionSheetStore" /* 5248 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 19305 (captcha/CaptchaUtils)
+import get_initialized from "get initialized" /* 504 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6532 */;
+import CaptchaConstants from "CaptchaConstants" /* 6540 */;
+import ActionSheetStore from "ActionSheetStore" /* 5254 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let ReactCompilerGating;
-let tmp;
-const get_initialized = tmp(504);
 const CAPTCHA_MODAL_KEY = CaptchaConstants.CAPTCHA_MODAL_KEY;
 let obj = {
   showCaptcha(options, arg1) {
@@ -45,7 +41,7 @@ let obj = {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = require("asyncRequire")(19245, dependencyMap.paths);
+    const tmp2 = require("asyncRequire")(19306, dependencyMap.paths);
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options);
     openLazy(tmp2, CAPTCHA_MODAL_KEY, obj2);
@@ -70,9 +66,9 @@ let obj = {
       let closure_1;
       let closure_0 = arg0;
       sitekey = arg1;
-      let tmp = sitekey(captchaService[5]);
+      let tmp = sitekey(captchaService[3]);
       const openLazy = tmp.openLazy;
-      const tmp2 = obj(captchaService[7])(captchaService[6], captchaService.paths);
+      const tmp2 = obj(captchaService[5])(captchaService[4], captchaService.paths);
       obj = {
         sitekey,
         captchaService,
@@ -96,7 +92,7 @@ let obj = {
           }
         },
         close() {
-          obj = closure_1(captchaService[5]);
+          obj = closure_1(captchaService[3]);
           return obj.hideActionSheet(closure_1_4);
         }
       };
@@ -106,34 +102,13 @@ let obj = {
     });
     return promise;
   },
-  useIsCaptchaModalOpen: ReactCompilerGating.isReactCompilerEnabled() ? (function useIsCaptchaModalOpen() {
-    let key;
-    let tmp4;
-    let tmp5;
-    const obj = react;
-    const cResult = obj.c(2);
-    if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ActionSheetStore];
-      const fn = function s() {
-        return key.getKey() === CAPTCHA_MODAL_KEY;
-      };
-      cResult[0] = items;
-      cResult[1] = fn;
-      tmp4 = items;
-      tmp5 = fn;
-    } else {
-      [tmp4, tmp5] = cResult;
-    }
-    const tmpResult = get_initialized;
-    return tmpResult.useStateFromStores(tmp4, tmp5);
-  }) : (function useIsCaptchaModalOpen() {
+  useIsCaptchaModalOpen() {
     let key;
     const items = [ActionSheetStore];
     const obj = get_initialized;
     return obj.useStateFromStores(items, () => key.getKey() === CAPTCHA_MODAL_KEY);
-  })
+  }
 };
-ReactCompilerGating = ReactCompilerGating_mod;
 const result = size.fileFinishedImporting("modules/captcha/CaptchaUtils.native.tsx");
 
 export default obj;

@@ -1,26 +1,26 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16876
+// Function ID: 16877
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 16802, 21, 1382, 9650, 587, 5086, 5295, 683, 5005, 16828, 558, 576, 16829, 5289, 5243, 5246, 16812, 16830, 16842, 5707, 1125, 16843, 16845, 16846, 14417, 2]
+// Dependencies: [32, 19, 17, 16856, 21, 1377, 9675, 575, 5090, 5582, 671, 5009, 16877, 16878, 5591, 5249, 5252, 16866, 16879, 16891, 5712, 1114, 16892, 16894, 16896, 14450, 2]
+// Exports: BountyVideo
 
-// Module 16827 (BountyVideo)
-import nativeDefault from "native" /* 587 */;
-import timing from "timing" /* 5243 */;
-import timingPresets from "timingPresets" /* 5246 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import AssetUtils from "AssetUtils" /* 9650 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 16828 */;
-import pickBountyVideoRendition from "pickBountyVideoRendition" /* 16829 */;
+// Module 16876 (BountyVideo)
+import nativeDefault from "native" /* 575 */;
+import timing from "timing" /* 5249 */;
+import timingPresets from "timingPresets" /* 5252 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import AssetUtils from "AssetUtils" /* 9675 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 16877 */;
+import pickBountyVideoRendition from "pickBountyVideoRendition" /* 16878 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BountiesModalConstants from "BountiesModalConstants" /* 16802 */;
+import BountiesModalConstants from "BountiesModalConstants" /* 16856 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import module_683_mod from "module_683" /* 683 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import module_671_mod from "module_671" /* 671 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -46,13 +46,13 @@ const lg = nativeDefault.radii.lg;
 const LinearGradient = ReanimatedRexport.createAnimatedComponent(LinearGradientDefault);
 const start = { x: 0, y: 0 };
 const end = { x: 0, y: 1 };
-let module_683 = module_683_mod;
+let module_671 = module_671_mod;
 let items = [, ];
-const importDefaultResult1Result = module_683(nativeDefault.unsafe_rawColors.PLUM_23);
+const importDefaultResult1Result = module_671(nativeDefault.unsafe_rawColors.PLUM_23);
 const alphaResult = importDefaultResult1Result.alpha(0.4);
 items[0] = alphaResult.hex();
-module_683 = module_683_mod;
-const importDefaultResult2Result = module_683(nativeDefault.unsafe_rawColors.PLUM_23);
+module_671 = module_671_mod;
+const importDefaultResult2Result = module_671(nativeDefault.unsafe_rawColors.PLUM_23);
 const alphaResult1 = importDefaultResult2Result.alpha(0);
 items[1] = alphaResult1.hex();
 let closure_21 = createStyles.createStyles(() => {
@@ -74,640 +74,12 @@ let closure_21 = createStyles.createStyles(() => {
 });
 const __initData = { code: "function BountyVideoTsx1(){const{posterOpacity}=this.__closure;return{opacity:posterOpacity.get()};}" };
 const __initData2 = { code: "function BountyVideoTsx2(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
-const __initData3 = { code: "function BountyVideoTsx3(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekScale,videoEndPeekTargetScale,getBountyVideoEndPeekClipHeight,width,height,VIDEO_CONTAINER_BORDER_RADIUS}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress_0=videoEndPeekProgress.get();const scale=getBountyVideoEndPeekScale(progress_0,videoEndPeekTargetScale);const clipHeight=getBountyVideoEndPeekClipHeight(progress_0,width,height);const centerPivotCompensation=clipHeight*(1-scale)/2;return{position:\"absolute\",top:0,left:0,width:width,height:clipHeight,overflow:\"hidden\",borderRadius:VIDEO_CONTAINER_BORDER_RADIUS,transform:[{translateY:-centerPivotCompensation},{scale:scale}]};}" };
-const __initData4 = { code: "function BountyVideoTsx4(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekClipHeight,width,height}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress_1=videoEndPeekProgress.get();const clipHeight_0=getBountyVideoEndPeekClipHeight(progress_1,width,height);return{width:width,height:height,transform:[{translateY:(clipHeight_0-height)/2}]};}" };
-const __initData5 = { code: "function BountyVideoTsx5(){const{posterOpacity}=this.__closure;return{opacity:posterOpacity.get()};}" };
-const __initData6 = { code: "function BountyVideoTsx6(){const{isScrollingInBoundsSharedValue,withTiming,isActive,timingStandard}=this.__closure;var _isScrollingInBoundsS;const isScrollingInBounds=((_isScrollingInBoundsS=isScrollingInBoundsSharedValue)===null||_isScrollingInBoundsS===void 0?void 0:_isScrollingInBoundsS.get())===true;return{opacity:withTiming(isActive&&!isScrollingInBounds?1:0,timingStandard)};}" };
-const __initData7 = { code: "function BountyVideoTsx7(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekScale,videoEndPeekTargetScale,getBountyVideoEndPeekClipHeight,width,height,VIDEO_CONTAINER_BORDER_RADIUS}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress_0=videoEndPeekProgress.get();const scale=getBountyVideoEndPeekScale(progress_0,videoEndPeekTargetScale);const clipHeight=getBountyVideoEndPeekClipHeight(progress_0,width,height);const centerPivotCompensation=clipHeight*(1-scale)/2;return{position:'absolute',top:0,left:0,width:width,height:clipHeight,overflow:'hidden',borderRadius:VIDEO_CONTAINER_BORDER_RADIUS,transform:[{translateY:-centerPivotCompensation},{scale:scale}]};}" };
-const __initData8 = { code: "function BountyVideoTsx8(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekClipHeight,width,height}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress_1=videoEndPeekProgress.get();const clipHeight_0=getBountyVideoEndPeekClipHeight(progress_1,width,height);return{width:width,height:height,transform:[{translateY:(clipHeight_0-height)/2}]};}" };
-const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVideo(height) {
-  let balanceWidgetPillResetKey;
-  let bounty;
-  let closure_12;
-  let closure_6;
-  let closure_7;
-  let closure_9;
-  let handleVideoEnd;
-  let handleVideoError;
-  let handleVideoPaused;
-  let handleVideoProgress;
-  let handleVideoResumed;
-  let initialProgress;
-  let isActive;
-  let isCompleted;
-  let isCtaVisible;
-  let isEndCardVisible;
-  let isProgressBarVisible;
-  let isRecapPageRevealed;
-  let isScrollIndicatorEnabled;
-  let isScrollingInBoundsSharedValue;
-  let normalizedProgress;
-  let obj6;
-  let onBuffer;
-  let onFirstFrame;
-  let onLoadStart;
-  let onPlayerStateChange;
-  let onVideoTracks;
-  let orbsBalance;
-  let playerRef;
-  let ref;
-  let renderEndCard;
-  let repeat;
-  let rewardRemainingSeconds;
-  let rewardTotalSeconds;
-  let shouldLoadHls;
-  let sourceQuestContent;
-  let tmp33;
-  let tmp34;
-  let tmp37;
-  let videoHls;
-  let videoRenditions;
-  let width;
-  let tmp = handleVideoProgress;
-  let tmp2 = onFirstFrame;
-  let obj = handleVideoProgress(onFirstFrame[14]);
-  const cResult = obj.c(111);
-  ({ bounty, sourceQuestContent, isCompleted, isCtaVisible, isEndCardVisible, isScrollIndicatorEnabled, isProgressBarVisible, orbsBalance, handleVideoEnd, handleVideoProgress } = height);
-  ({ handleVideoPaused, handleVideoResumed, handleVideoError } = height);
-  ({ onLoadStart, onBuffer, onFirstFrame } = height);
-  ({ onVideoTracks, rewardRemainingSeconds, rewardTotalSeconds, normalizedProgress, initialProgress, repeat, isActive, isRecapPageRevealed, isScrollingInBoundsSharedValue } = height);
-  ({ renderEndCard, playerRef, onPlayerStateChange, balanceWidgetPillResetKey, shouldLoadHls, width } = height);
-  height = height.height;
-  const softDownloadCapsEnabled = height.softDownloadCapsEnabled;
-  let tmp4 = undefined !== isScrollIndicatorEnabled && isScrollIndicatorEnabled;
-  let tmp5 = undefined !== isActive && isActive;
-  StyleSheet = tmp5;
-  let tmp8 = undefined !== softDownloadCapsEnabled && softDownloadCapsEnabled;
-  const tmp6 = undefined !== isRecapPageRevealed && isRecapPageRevealed;
-  let tmp9 = closure_21();
-  if (tmp8) {
-    tmp8 = !tmp5;
-  }
-  let obj2 = width;
-  [r10056, closure_7] = isScrollingInBoundsSharedValue(width.useState(false), 2);
-  isScrollingInBoundsSharedValue(width.useState(false), 2);
-  const tmp12 = isScrollingInBoundsSharedValue(width.useState(false), 2);
-  const first = tmp12[0];
-  getBountyVideoEndPeekClipHeight = tmp14;
-  getBountyVideoEndPeekScale = width.useRef(null);
-  const tmpResult = tmp(tmp2[8]);
-  const sharedValue = tmpResult.useSharedValue(1);
-  ({ videoHls, videoRenditions } = bounty);
-  const tmp10 = isScrollingInBoundsSharedValue;
-  if (cResult[0] === videoHls) {
-    let tmp15;
-    if (cResult[1] === videoRenditions) {
-      tmp15 = cResult[2];
-    }
-    if (null != tmp15) {
-      videoHls = tmp15.url;
-    }
-    if (cResult[3] === height) {
-      if (cResult[4] === videoHls) {
-        let tmp29;
-        let tmp30;
-        const tmpResult9 = tmp(tmp2[16]);
-        const token = tmpResult9.useToken(handleVideoError(tmp2[7]).colors.TEXT_DEFAULT);
-        const _HermesInternal = HermesInternal;
-        const combined = "" + bounty.id + ":" + tmp7 + ":" + videoHls;
-        const tmp10Result = tmp10(obj2.useState(combined), 2);
-        if (tmp10Result[0] !== combined) {
-          tmp10Result[1](combined);
-          tmp12[1](false);
-          let result = sharedValue.set(1);
-        }
-        const _Symbol = Symbol;
-        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          class Fe {
-            constructor() {
-              return () => {
-                if (null != ref.current) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
-                  ref.current = null;
-                }
-              };
-            }
-          }
-          cResult[7] = Fe;
-          tmp29 = Fe;
-        } else {
-          class Fe {
-            constructor() {
-              return () => {
-                if (null != ref.current) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
-                  ref.current = null;
-                }
-              };
-            }
-          }
-        }
-        if (cResult[8] !== combined) {
-          class Fe {
-            constructor() {
-              return () => {
-                if (null != ref.current) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
-                  ref.current = null;
-                }
-              };
-            }
-          }
-          tmp31[0] = combined;
-          cResult[8] = combined;
-          cResult[9] = tmp31;
-          tmp30 = tmp31;
-        } else {
-          class Fe {
-            constructor() {
-              return () => {
-                if (null != ref.current) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
-                  ref.current = null;
-                }
-              };
-            }
-          }
-        }
-        const effect = obj2.useEffect(tmp29, tmp30);
-        if (cResult[10] === first) {
-          let tmp36;
-          class Fe {
-            constructor() {
-              return () => {
-                if (null != ref.current) {
-                  const _clearTimeout = clearTimeout;
-                  clearTimeout(ref.current);
-                  ref.current = null;
-                }
-              };
-            }
-          }
-          const effect1 = obj2.useEffect(tmp33, tmp34);
-          const _Symbol2 = Symbol;
-          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            class Fe {
-              constructor() {
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(ref.current);
-                    ref.current = null;
-                  }
-                };
-              }
-            }
-            cResult[14] = tmp37;
-            tmp36 = tmp37;
-          } else {
-            class Fe {
-              constructor() {
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(ref.current);
-                    ref.current = null;
-                  }
-                };
-              }
-            }
-          }
-          tmp37 = tmp36;
-          if (cResult[15] !== onFirstFrame) {
-            class Fe {
-              constructor() {
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(ref.current);
-                    ref.current = null;
-                  }
-                };
-              }
-            }
-            cResult[15] = onFirstFrame;
-            cResult[16] = tmp39;
-          } else {
-            class Fe {
-              constructor() {
-                return () => {
-                  if (null != ref.current) {
-                    const _clearTimeout = clearTimeout;
-                    clearTimeout(ref.current);
-                    ref.current = null;
-                  }
-                };
-              }
-            }
-          }
-          if (cResult[17] !== handleVideoError) {
-            class Qe {
-              constructor(arg0) {
-                tmp37();
-                if (handleVideoError != null) {
-                  tmp2(arg0);
-                }
-              }
-            }
-            cResult[17] = handleVideoError;
-            cResult[18] = Qe;
-          } else {
-            class Qe {
-              constructor(arg0) {
-                tmp37();
-                if (handleVideoError != null) {
-                  tmp2(arg0);
-                }
-              }
-            }
-          }
-          if (cResult[19] !== handleVideoProgress) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-            cResult[19] = handleVideoProgress;
-            cResult[20] = Ke;
-          } else {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-          }
-          const tmpResult10 = tmp(tmp2[8]);
-          class Je {
-            constructor() {
-              const obj = { opacity: sharedValue.get() };
-              return obj;
-            }
-          }
-          let obj3 = { posterOpacity: sharedValue };
-          Je.__closure = obj3;
-          Je.__workletHash = 4975136521719;
-          Je.__initData = __initData;
-          const animatedStyle = tmpResult10.useAnimatedStyle(Je);
-          tmp(tmp2[8]);
-          class Ze {
-            constructor() {
-              let value;
-              const obj = isScrollingInBoundsSharedValue;
-              if (isScrollingInBoundsSharedValue != null) {
-                value = obj.get();
-              }
-              num = 0;
-              const withTiming = timing.withTiming;
-              timing;
-              if (closure_6) {
-                num = 0;
-                if (true !== value) {
-                  num = 1;
-                }
-              }
-              const obj2 = { opacity: withTiming(num, timingPresets.timingStandard) };
-              return obj2;
-            }
-          }
-          const obj4 = { isScrollingInBoundsSharedValue, withTiming: tmp(tmp2[17]).withTiming, isActive: tmp5, timingStandard: tmp(tmp2[18]).timingStandard };
-          class He {
-            constructor() {
-              const tmp = first;
-              if (tmp) {
-                set = sharedValue.set;
-                const obj = timing;
-                const result = set(obj.withTiming(0, timingPresets.timingFast));
-              }
-            }
-          }
-          Ze.__closure = obj4;
-          Ze.__workletHash = 12676706441349;
-          Ze.__initData = __initData2;
-          tmp45(Ze);
-          const tmpResult12 = tmp(tmp2[19]);
-          const bountyVideoEndAppStoreContext = tmpResult12.useBountyVideoEndAppStoreContext();
-          let tmp49;
-          if (tmp5) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-            if (bountyVideoEndAppStoreContext != null) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            tmp49 = tmp50;
-          }
-          let closure_13 = tmp49;
-          if (bountyVideoEndAppStoreContext != null) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-          }
-          if (undefined == null) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-          }
-          let c14 = tmp51;
-          function et() {
-            const obj = closure_13;
-            if (null == closure_13) {
-              return metroRequire.absoluteFillObject;
-            } else {
-              const value = obj.get();
-              const tmp5 = ref(value, c14);
-              const tmp9 = c9(value, width, height);
-              size = { position: "absolute", top: 0, left: 0, width, height: tmp9, overflow: "hidden", borderRadius: lg, transform: items };
-              items = [{ translateY: -tmp9 * (1 - tmp5) / 2 }, ];
-              const obj2 = { translateY: -tmp9 * (1 - tmp5) / 2 };
-              const obj3 = { scale: tmp5 };
-              items[1] = obj3;
-              return size;
-            }
-          }
-          size = { videoEndPeekProgress: tmp49, StyleSheet, getBountyVideoEndPeekScale, videoEndPeekTargetScale: undefined, getBountyVideoEndPeekClipHeight, width, height, VIDEO_CONTAINER_BORDER_RADIUS: lg };
-          et.__closure = size;
-          et.__workletHash = 6241135979205;
-          et.__initData = __initData3;
-          const tmpResult13 = tmp(tmp2[8]);
-          const animatedStyle1 = tmpResult13.useAnimatedStyle(et);
-          function tt() {
-            const obj = closure_13;
-            if (null == closure_13) {
-              return metroRequire.absoluteFillObject;
-            } else {
-              size = { width, height, transform: items };
-              items = [{ translateY: (c9(obj.get(), width, height) - height) / 2 }];
-              const obj2 = { translateY: (c9(obj.get(), width, height) - height) / 2 };
-              return size;
-            }
-          }
-          const size1 = { videoEndPeekProgress: tmp49, StyleSheet, getBountyVideoEndPeekClipHeight, width, height };
-          tt.__closure = size1;
-          tt.__workletHash = 2736417945524;
-          tt.__initData = __initData4;
-          const tmpResult14 = tmp(tmp2[8]);
-          const animatedStyle2 = tmpResult14.useAnimatedStyle(tt);
-          const tmp52 = StyleSheet;
-          if (isCtaVisible) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-          }
-          if (true === tmp5) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-            if (bountyVideoEndAppStoreContext != null) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            if (true === tmp61) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-          }
-          if (tmp4) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-            if (bountyVideoEndAppStoreContext != null) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            tmp4 = true !== tmp62;
-          }
-          if (cResult[21] === tmp8) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-          }
-          let tmp65Result = null;
-          if (undefined === shouldLoadHls || shouldLoadHls) {
-            class Ke {
-              constructor(currentTime) {
-                if (currentTime.currentTime > 0) {
-                  closure_7(true);
-                }
-                handleVideoProgress(currentTime);
-              }
-            }
-            const obj5 = { ref: playerRef, source: obj6, automaticallyWaitsToMinimizeStalling: false, maxBitRate: undefined, bufferConfig: tmp67, preferredForwardBufferDuration: undefined, initialProgress, isFullscreen: false, externallyPaused: null, style: tmp52.absoluteFillObject, contentInsets: null, onProgress: tmp41, onEnd: handleVideoEnd, onPausePlayback: handleVideoPaused, onResumePlayback: handleVideoResumed, onError: tmp40, onLoadStart, onBuffer, onReadyForDisplay: tmp38, onVideoTracks, hideControls: isEndCardVisible, showSkipButtons: false, repeat, bufferingSpinnerPlacement: "center", onPlayerStateChange };
-            obj6 = { uri: videoHls };
-            const AdVideoPlayer = tmp(tmp2[20]).AdVideoPlayer;
-            if (tmp8) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            class Je {
-              constructor() {
-                const obj = { opacity: sharedValue.get() };
-                return obj;
-              }
-            }
-            if (tmp8) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            if (tmp8) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            const tmp69 = !tmp5;
-            if (tmp5) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            if (!tmp69) {
-              class Ke {
-                constructor(currentTime) {
-                  if (currentTime.currentTime > 0) {
-                    closure_7(true);
-                  }
-                  handleVideoProgress(currentTime);
-                }
-              }
-            }
-            class Ze {
-              constructor() {
-                let value;
-                const obj = isScrollingInBoundsSharedValue;
-                if (isScrollingInBoundsSharedValue != null) {
-                  value = obj.get();
-                }
-                num = 0;
-                const withTiming = timing.withTiming;
-                timing;
-                if (closure_6) {
-                  num = 0;
-                  if (true !== value) {
-                    num = 1;
-                  }
-                }
-                const obj2 = { opacity: withTiming(num, timingPresets.timingStandard) };
-                return obj2;
-              }
-            }
-            class He {
-              constructor() {
-                const tmp = first;
-                if (tmp) {
-                  set = sharedValue.set;
-                  const obj = timing;
-                  const result = set(obj.withTiming(0, timingPresets.timingFast));
-                }
-              }
-            }
-            tmp65Result = tmp65(AdVideoPlayer, obj5);
-          }
-          cResult[21] = tmp8;
-          cResult[22] = tmp38;
-          cResult[23] = handleVideoEnd;
-          cResult[24] = tmp40;
-          cResult[25] = handleVideoPaused;
-          cResult[26] = tmp41;
-          cResult[27] = handleVideoResumed;
-          cResult[28] = videoHls;
-          cResult[29] = initialProgress;
-          cResult[30] = tmp5;
-          cResult[31] = isEndCardVisible;
-          cResult[32] = tmp6;
-          cResult[33] = onBuffer;
-          cResult[34] = onLoadStart;
-          cResult[35] = onPlayerStateChange;
-          cResult[36] = onVideoTracks;
-          cResult[37] = playerRef;
-          cResult[38] = repeat;
-          cResult[39] = undefined === shouldLoadHls || shouldLoadHls;
-          cResult[40] = tmp65Result;
-        }
-        class He {
-          constructor() {
-            const tmp = first;
-            if (tmp) {
-              set = sharedValue.set;
-              const obj = timing;
-              const result = set(obj.withTiming(0, timingPresets.timingFast));
-            }
-          }
-        }
-        items = [first, sharedValue];
-        cResult[10] = first;
-        cResult[11] = sharedValue;
-        cResult[12] = He;
-        cResult[13] = items;
-        tmp33 = He;
-        tmp34 = items;
-      }
-    }
-    const size2 = { assetUrl: videoHls, width, height };
-    const tmpResult15 = tmp(tmp2[6]);
-    const scaledFirstFrameImageUrl = tmpResult15.getScaledFirstFrameImageUrl(size2);
-    num = 3;
-    cResult[4] = videoHls;
-    cResult[5] = width;
-    cResult[6] = scaledFirstFrameImageUrl;
-  }
-  const tmpResult16 = tmp(tmp2[15]);
-  const result1 = tmpResult16.pickBountyVideoRenditionWithFallback({ videoHls, videoRenditions }, tmp(tmp2[15]).BOUNTY_MOBILE_MODAL_RENDITION_PICK);
-  cResult[0] = videoHls;
-  cResult[1] = videoRenditions;
-  cResult[2] = result1;
-  tmp15 = result1;
-}) : (function BountyVideo(handleVideoProgress) {
+const __initData3 = { code: "function BountyVideoTsx3(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekScale,videoEndPeekTargetScale,getBountyVideoEndPeekClipHeight,width,height,VIDEO_CONTAINER_BORDER_RADIUS}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress=videoEndPeekProgress.get();const scale=getBountyVideoEndPeekScale(progress,videoEndPeekTargetScale);const clipHeight=getBountyVideoEndPeekClipHeight(progress,width,height);const centerPivotCompensation=clipHeight*(1-scale)/2;return{position:'absolute',top:0,left:0,width:width,height:clipHeight,overflow:'hidden',borderRadius:VIDEO_CONTAINER_BORDER_RADIUS,transform:[{translateY:-centerPivotCompensation},{scale:scale}]};}" };
+const __initData4 = { code: "function BountyVideoTsx4(){const{videoEndPeekProgress,StyleSheet,getBountyVideoEndPeekClipHeight,width,height}=this.__closure;if(videoEndPeekProgress==null){return StyleSheet.absoluteFillObject;}const progress=videoEndPeekProgress.get();const clipHeight=getBountyVideoEndPeekClipHeight(progress,width,height);return{width:width,height:height,transform:[{translateY:(clipHeight-height)/2}]};}" };
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
+
+export function BountyVideo(handleVideoProgress) {
   let View2;
   let _undefined;
   let balanceWidgetPillResetKey;
@@ -831,7 +203,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
     const obj = AssetUtils;
     return obj.getScaledFirstFrameImageUrl(size);
   }, items1);
-  const obj4 = handleVideoProgress(onFirstFrame[16]);
+  const obj4 = handleVideoProgress(onFirstFrame[14]);
   const token = obj4.useToken(handleVideoError(onFirstFrame[7]).colors.TEXT_DEFAULT);
   const combined = "" + bounty.id + ":" + shouldLoadHls + ":" + memo;
   const tmp14 = isActive(isScrollingInBoundsSharedValue.useState(combined), 2);
@@ -901,8 +273,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
     }
   }
   Te.__closure = { posterOpacity: sharedValue };
-  Te.__workletHash = 10695366069875;
-  Te.__initData = __initData5;
+  Te.__workletHash = 4975136521719;
+  Te.__initData = __initData;
   const animatedStyle = tmp7Result.useAnimatedStyle(Te);
   const tmp7Result5 = handleVideoProgress(onFirstFrame[8]);
   class Ae {
@@ -925,12 +297,12 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
       return obj2;
     }
   }
-  let obj3 = { isScrollingInBoundsSharedValue, withTiming: tmp7(tmp8[17]).withTiming, isActive, timingStandard: tmp7(tmp8[18]).timingStandard };
+  let obj3 = { isScrollingInBoundsSharedValue, withTiming: tmp7(tmp8[15]).withTiming, isActive, timingStandard: tmp7(tmp8[16]).timingStandard };
   Ae.__closure = obj3;
-  Ae.__workletHash = 804749945089;
-  Ae.__initData = __initData6;
+  Ae.__workletHash = 12676706441349;
+  Ae.__initData = __initData2;
   const animatedStyle1 = tmp7Result5.useAnimatedStyle(Ae);
-  const tmp7Result6 = handleVideoProgress(onFirstFrame[19]);
+  const tmp7Result6 = handleVideoProgress(onFirstFrame[17]);
   const bountyVideoEndAppStoreContext = tmp7Result6.useBountyVideoEndAppStoreContext();
   let tmp27;
   if (isActive) {
@@ -969,8 +341,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
   }
   size = { videoEndPeekProgress: tmp27, StyleSheet: height, getBountyVideoEndPeekScale, videoEndPeekTargetScale: num, getBountyVideoEndPeekClipHeight, width, height, VIDEO_CONTAINER_BORDER_RADIUS: videoEndPeekProgress };
   Ie.__closure = size;
-  Ie.__workletHash = 11435474180417;
-  Ie.__initData = __initData7;
+  Ie.__workletHash = 15166247334410;
+  Ie.__initData = __initData3;
   const animatedStyle2 = tmp7Result7.useAnimatedStyle(Ie);
   const tmp7Result8 = handleVideoProgress(onFirstFrame[8]);
   class Fe {
@@ -987,8 +359,8 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
     }
   }
   Fe.__closure = { videoEndPeekProgress: tmp27, StyleSheet: height, getBountyVideoEndPeekClipHeight, width, height };
-  Fe.__workletHash = 8683364100408;
-  Fe.__initData = __initData8;
+  Fe.__workletHash = 2490405119892;
+  Fe.__initData = __initData4;
   let prop1 = null;
   const animatedStyle3 = tmp7Result8.useAnimatedStyle(Fe);
   if (true === isActive) {
@@ -1020,17 +392,17 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
     const obj8 = { ref: playerRef, source: obj9, automaticallyWaitsToMinimizeStalling: false, maxBitRate: prop3, bufferConfig: prop4, preferredForwardBufferDuration: prop5, initialProgress, isFullscreen: false, externallyPaused: tmp43, style: height.absoluteFillObject, contentInsets, onProgress: callback3, onEnd: handleVideoEnd, onPausePlayback: handleVideoPaused, onResumePlayback: handleVideoResumed, onError: callback2, onLoadStart, onBuffer, onReadyForDisplay: callback1, onVideoTracks, hideControls: isEndCardVisible, showSkipButtons: false, repeat, bufferingSpinnerPlacement: "center", onPlayerStateChange };
     prop3 = undefined;
     obj9 = { uri: memo };
-    const AdVideoPlayer = tmp7(tmp8[20]).AdVideoPlayer;
+    const AdVideoPlayer = tmp7(tmp8[18]).AdVideoPlayer;
     if (flag2) {
-      prop3 = tmp7(tmp8[21]).SOFT_CAP_PRELOAD_MAX_BITRATE;
+      prop3 = tmp7(tmp8[19]).SOFT_CAP_PRELOAD_MAX_BITRATE;
     }
     prop4 = undefined;
     if (flag2) {
-      prop4 = tmp7(tmp8[21]).SOFT_CAP_PRELOAD_BUFFER_CONFIG;
+      prop4 = tmp7(tmp8[19]).SOFT_CAP_PRELOAD_BUFFER_CONFIG;
     }
     prop5 = undefined;
     if (flag2) {
-      prop5 = tmp7(tmp8[21]).SOFT_CAP_PRELOAD_FORWARD_BUFFER_SEC;
+      prop5 = tmp7(tmp8[19]).SOFT_CAP_PRELOAD_FORWARD_BUFFER_SEC;
     }
     tmp43 = !isActive;
     if (isActive) {
@@ -1048,7 +420,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
     const View3 = tmp11(tmp8[8]).View;
     const obj11 = { style: height.absoluteFillObject, source: obj12, resizeMode: "cover" };
     obj12 = { uri: memo1 };
-    items9 = [sharedValue(handleVideoError(tmp8[22]), obj11), ];
+    items9 = [sharedValue(handleVideoError(tmp8[20]), obj11), ];
     let tmp37Result3 = !first;
     if (tmp37Result3) {
       const obj13 = { animating: true, size: "small", color: token };
@@ -1072,14 +444,14 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
   items7[3] = renderEndCardResult;
   let tmp37Result5 = null;
   if (null != prop1) {
-    const obj16 = { accessibilityRole: "button", accessibilityLabel: intl.string(handleVideoProgress(onFirstFrame[23]).t.dcl9MQ), onPress: prop1, style: height.absoluteFillObject };
-    intl = tmp7(tmp8[23]).intl;
+    const obj16 = { accessibilityRole: "button", accessibilityLabel: intl.string(handleVideoProgress(onFirstFrame[21]).t.dcl9MQ), onPress: prop1, style: height.absoluteFillObject };
+    intl = tmp7(tmp8[21]).intl;
     tmp37Result5 = tmp37(first, obj16);
   }
   items7[4] = tmp37Result5;
   if (isScrollIndicatorEnabled) {
     const obj17 = { opacityStyle: animatedStyle1, enabled: isActive, isEndCardVisible };
-    const tmp11Result = handleVideoError(onFirstFrame[24]);
+    const tmp11Result = handleVideoError(onFirstFrame[22]);
     if (isActive) {
       isActive = tmp3;
     }
@@ -1090,7 +462,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
   items12 = [height.absoluteFillObject, animatedStyle1];
   const View4 = tmp11(tmp8[8]).View;
   obj19 = { bounty, visible: isCtaVisible, sourceQuestContent };
-  tmp11Result2 = handleVideoError(onFirstFrame[25]);
+  tmp11Result2 = handleVideoError(onFirstFrame[23]);
   if (isCtaVisible) {
     isCtaVisible = !isEndCardVisible;
   }
@@ -1105,11 +477,7 @@ const tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BountyVide
   const obj22 = { style: items16, children: items17 };
   items16 = [tmp.leftRow, animatedStyle1];
   const View6 = tmp11(tmp8[8]).View;
-  items17 = [sharedValue(handleVideoError(tmp8[26]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), sharedValue(tmp7(tmp8[27]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
+  items17 = [sharedValue(handleVideoError(tmp8[24]), { isCompleted, totalSeconds: rewardTotalSeconds, remainingSeconds: rewardRemainingSeconds }), sharedValue(tmp7(tmp8[25]).BalanceWidgetPill, { balance: orbsBalance }, balanceWidgetPillResetKey)];
   items15[1] = videoHls(View6, obj22);
   return videoHls(tmp36, obj20);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountyVideo.tsx");
-
-export const BountyVideo = tmp7;
+}

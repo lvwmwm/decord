@@ -1,29 +1,30 @@
-// Module ID: 2024
-// Function ID: 2025
+// Module ID: 2019
+// Function ID: 2020
 // Name: Constants
-// Dependencies: [1084, 2025, 1998, 2, 2026]
+// Dependencies: [1072, 2020, 1993, 2021, 2022, 2, 2023]
 // Exports: getAppIntentScheme
 
-// Module 2024 (Constants)
-import Constants2 from "Constants" /* 1084 */;
-import Server from "Server" /* 1998 */;
-import ActivityApplications from "ActivityApplications" /* 2026 */;
-import Constants from "Constants" /* 2025 */;
+// Module 2019 (Constants)
+import Constants2 from "Constants" /* 1072 */;
+import Server from "Server" /* 1993 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2022 */;
+import ActivityApplications from "ActivityApplications" /* 2023 */;
+import Constants from "Constants" /* 2020 */;
 import size from "module_2" /* 2 */;
 
 let ActivityIntent;
 let ActivityLayoutMode;
 let items3;
 const ChannelTypes = Constants2.ChannelTypes;
-const OrientationLockState = Constants.OrientationLockState;
 const items = ["1037680572660727838", "235088799074484224", "1007373802981822582", "1067803140071620628", "1194351737264406548", "1245041113882955918", "1245040907732910201", "1245040436427489471", "1208090049871351890", "1235205910863806484", "1227719606223765687"];
 const items1 = ["1247266306231898122", "1257458870390099989", "1276239071764680926"];
 const items2 = ["755600276941176913", "880218832743055411", "1050941315912835122", "880218394199220334"];
 ({ ActivityIntent, ActivityLayoutMode } = Constants);
 const set = new Set(items2);
 const obj = { label_type: Server.EmbeddedActivityLabelTypes.NONE, release_phase: "", label_from: null, label_until: null, omit_badge_from_surfaces: [] };
-const obj2 = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: OrientationLockState.UNLOCKED, tablet_default_orientation_lock_state: OrientationLockState.UNLOCKED, supported_platforms: items3, client_platform_config: { [Server.EmbeddedActivitySupportedPlatforms.WEB]: obj, [Server.EmbeddedActivitySupportedPlatforms.IOS]: obj, [Server.EmbeddedActivitySupportedPlatforms.ANDROID]: obj }, has_csp_exception: false, displays_advertisements: false, blocked_locales: [], supported_locales: [] };
-items3 = [Server.EmbeddedActivitySupportedPlatforms.WEB];
+const obj2 = { application_id: "", requires_age_gate: false, legacy_responsive_aspect_ratio: false, default_orientation_lock_state: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED, tablet_default_orientation_lock_state: EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED, supported_platforms: items3, client_platform_config: { [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.WEB]: obj, [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.IOS]: obj, [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.ANDROID]: obj }, has_csp_exception: false, displays_advertisements: false, blocked_locales: [], supported_locales: [] };
+items3 = [EmbeddedActivitySupportedPlatforms.EmbeddedActivitySupportedPlatforms.WEB];
 const items4 = [, , , ];
 ({ GUILD_TEXT: arr5[0], DM: arr5[1], GROUP_DM: arr5[2], GUILD_SPACE: arr5[3] } = ChannelTypes);
 const items5 = [];
@@ -86,7 +87,6 @@ export const ActivityFeedbackReasons = { ADS: "ADS", FAILED_LOAD: "FAILED_LOAD",
 export const ActivityTooltipName = { BETRAYAL_MARKETING_TOOLTIP: "BETRAYAL_MARKETING_TOOLTIP", FISHINGTON_MARKETING_TOOLTIP: "FISHINGTON_MARKETING_TOOLTIP", POKER_MARKETING_TOOLTIP: "POKER_MARKETING_TOOLTIP", YOUTUBE_MARKETING_TOOLTIP: "YOUTUBE_MARKETING_TOOLTIP" };
 export { ActivityIntent };
 export { ActivityLayoutMode };
-export { OrientationLockState };
 export const APPLICATIONS_WITH_ALLOWED_POPUPS = set;
 export const ActivityScreenOrientation = { UNHANDLED: -1, [-1]: "UNHANDLED", PORTRAIT: 0, [0]: "PORTRAIT", LANDSCAPE: 1, [1]: "LANDSCAPE" };
 export const DEFAULT_EMBEDDED_ACTIVITY_CONFIG = obj2;

@@ -1,42 +1,56 @@
 // Module ID: 8320
 // Function ID: 8321
-// Dependencies: [8268]
+// Dependencies: [8288]
 
 // Module 8320
-const require = globalThis.__r;
+import _modDef8288 from "module_8288" /* 8288 */;
 
-let closure_2 = [6, 7, 99];
-
-export default {
-  get(buffer, Compression, arg2) {
-    let prop = Compression;
-    if (prop) {
-      const hasItem = undefined === Compression.Compression || closure_2.includes(Compression.Compression.value);
-      prop = hasItem;
+let obj = {
+  read(getUint8, sum) {
+    let obj4;
+    let obj5;
+    let str2;
+    let sum5;
+    const obj = _modDef8288;
+    const byteAt = obj.getByteAt(getUint8, sum);
+    let num = 0;
+    if (16 & byteAt) {
+      num = 1;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat;
+    let str = "No";
+    const obj2 = { value: num, description: str2 };
+    str2 = "No";
+    if (16 & byteAt) {
+      str2 = "Yes";
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormat.value;
+    let num2 = 0;
+    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
+    if (2 & byteAt) {
+      num2 = 1;
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength;
+    obj4 = { value: num2, description: str };
+    if (2 & byteAt) {
+      str = "Yes";
     }
-    if (prop) {
-      prop = Compression.JPEGInterchangeFormatLength.value;
-    }
-    if (prop) {
-      Compression.type = "image/jpeg";
-      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
-      buffer = buffer.buffer;
-      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
-      let obj = require("module_8268");
-      obj.deferInit(Compression, "base64", function() {
-        const obj = require("module_8268");
-        return obj.getBase64Image(this.image);
-      });
-    }
-    return Compression;
+    sum = sum + c2;
+    const tmpResult = _modDef8288;
+    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
+    const tmpResult6 = _modDef8288;
+    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
+    const tmpResult7 = _modDef8288;
+    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
+    const sum3 = sum + c3;
+    obj5 = { value: sum2, description: `${tmp9}px` };
+    const tmpResult8 = _modDef8288;
+    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
+    const tmpResult9 = _modDef8288;
+    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
+    const tmpResult10 = _modDef8288;
+    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
+    return obj3;
   }
 };
+let c2 = 4;
+let c3 = 7;
+
+export default obj;

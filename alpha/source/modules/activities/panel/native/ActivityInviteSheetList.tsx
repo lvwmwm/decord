@@ -1,24 +1,23 @@
-// Module ID: 18993
-// Function ID: 18994
+// Module ID: 19087
+// Function ID: 19088
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1084, 21, 5005, 6710, 587, 558, 576, 1125, 1199, 5247, 5188, 6968, 5271, 18994, 5630, 7280, 2]
+// Dependencies: [19, 1072, 21, 5009, 6717, 575, 1188, 1114, 6974, 5253, 5194, 5619, 19088, 5602, 7288, 2]
+// Exports: default
 
-// Module 18993 (ActivityInviteSheetList)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 18994 */;
+// Module 19087 (ActivityInviteSheetList)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19088 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles_mod from "TextStyles" /* 6710 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles_mod from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -32,122 +31,7 @@ function keyExtractor(item) {
 function getItemType(type) {
   return type.type;
 }
-const Fonts = Constants.Fonts;
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { emptyTitle: obj2, emptyBody: obj3, goToFriendsLink: { textAlign: "center" } };
-obj2 = { textTransform: "none", lineHeight: 24 };
-createStyles = createStyles.createStyles;
-let TextStyles = TextStyles_mod;
-const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
-obj3 = { lineHeight: 20, fontWeight: "600" };
-TextStyles = TextStyles_mod;
-const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
-let closure_7 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsEmptyComponent() {
-  let items;
-  let obj3;
-  let tmp5;
-  let tmp6;
-  let obj = react2;
-  const cResult = obj.c(14);
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl5.t.dz4UlO);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl5.t.MBQBI7);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  if (cResult[2] === tmp4.emptyBody) {
-    let tmp9;
-    let tmp11;
-    let tmp13;
-    let tmp12;
-    let tmp15;
-    let tmp17;
-    if (cResult[3] === tmp4.emptyTitle) {
-      tmp9 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function p() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        const obj2 = RootNavigationRef;
-        const rootNavigationRef = obj2.getRootNavigationRef();
-        if (null != rootNavigationRef) {
-          const obj3 = { screen: "add-friends", params: { sourcePage: "Instant Invite Empty State" } };
-          rootNavigationRef.navigate("friends", obj3);
-        }
-      };
-      cResult[5] = fn;
-      tmp11 = fn;
-    } else {
-      tmp11 = cResult[5];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1125).intl;
-      const stringResult2 = intl3.string(intl5.t.a7FVbE);
-      const rect = { top: 8, left: 8, bottom: 8, right: 8 };
-      cResult[6] = stringResult2;
-      cResult[7] = rect;
-      tmp13 = rect;
-      tmp12 = stringResult2;
-    } else {
-      tmp12 = cResult[6];
-      tmp13 = cResult[7];
-    }
-    const _Symbol3 = Symbol;
-    const goToFriendsLink = tmp4.goToFriendsLink;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1125).intl;
-      const stringResult3 = intl4.string(intl5.t.a7FVbE);
-      cResult[8] = stringResult3;
-      tmp15 = stringResult3;
-    } else {
-      tmp15 = cResult[8];
-    }
-    if (cResult[9] !== tmp4.goToFriendsLink) {
-      let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6968).PressableOpacity;
-      obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
-      const tmp19 = React3(PressableOpacity, obj2);
-      cResult[9] = tmp4.goToFriendsLink;
-      cResult[10] = tmp19;
-      tmp17 = tmp19;
-    } else {
-      tmp17 = cResult[10];
-    }
-    if (cResult[11] === tmp9) {
-      let tmp20;
-      if (cResult[12] === tmp17) {
-        tmp20 = cResult[13];
-      }
-      return tmp20;
-    }
-    const obj4 = { children: items };
-    items = [tmp9, tmp17];
-    const tmp23 = metroRequire(hasOwnProperty, obj4);
-    cResult[11] = tmp9;
-    cResult[12] = tmp17;
-    cResult[13] = tmp23;
-    tmp20 = tmp23;
-  }
-  const obj5 = { title: tmp5, body: tmp6, titleStyle: tmp4.emptyTitle, bodyStyle: tmp4.emptyBody };
-  const tmp10 = React3(native.RefreshEmptyState, obj5);
-  cResult[2] = tmp4.emptyBody;
-  cResult[3] = tmp4.emptyTitle;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function FriendsEmptyComponent() {
+function FriendsEmptyComponent() {
   let Text;
   let intl;
   let intl2;
@@ -186,95 +70,22 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
   intl4 = intl5.intl;
   items[1] = React3(PressableOpacity, obj4);
   return metroRequire(hasOwnProperty, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInviteSheetList(data) {
-  let getSendState;
-  let tmp = data;
-  let obj = data(getSendState[7]);
-  const cResult = obj.c(15);
-  data = data.data;
-  const error = data.error;
-  getSendState = data.getSendState;
-  const isSubmitting = data.isSubmitting;
-  const onInviteSent = data.onInviteSent;
-  const onPressAvatar = data.onPressAvatar;
-  if (cResult[0] === data.length) {
-    if (cResult[1] === error) {
-      if (cResult[2] === getSendState) {
-        if (cResult[3] === isSubmitting) {
-          if (cResult[4] === onInviteSent) {
-            let tmp4;
-            let tmp6;
-            let tmp8;
-            let tmp10;
-            if (cResult[5] === onPressAvatar) {
-              tmp4 = cResult[6];
-            }
-            const _Symbol = Symbol;
-            if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj2 = { isKeyboardAwareOnAndroid: false };
-              cResult[7] = obj2;
-              tmp6 = obj2;
-            } else {
-              tmp6 = cResult[7];
-            }
-            const _Symbol2 = Symbol;
-            const insets = error(tmp2[15])(tmp6).insets;
-            if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-              const obj3 = { disabled: true };
-              cResult[8] = obj3;
-              tmp8 = obj3;
-            } else {
-              tmp8 = cResult[8];
-            }
-            const sum = insets.bottom + tmp7(tmp2[5]).space.PX_16;
-            if (cResult[9] !== sum) {
-              const obj4 = { paddingBottom: sum, paddingHorizontal: error(getSendState[5]).space.PX_12 };
-              cResult[9] = sum;
-              cResult[10] = obj4;
-              tmp10 = obj4;
-            } else {
-              tmp10 = cResult[10];
-            }
-            if (cResult[11] === data) {
-              if (cResult[12] === tmp4) {
-                let tmp11;
-                if (cResult[13] === tmp10) {
-                  tmp11 = cResult[14];
-                }
-                return tmp11;
-              }
-            }
-            const obj5 = { maintainVisibleContentPosition: tmp8, contentContainerStyle: tmp10, bounces: false, renderItem: tmp4, data, keyExtractor, getItemType, keyboardShouldPersistTaps: "always", ListEmptyComponent };
-            const tmp16 = onInviteSent(tmp(getSendState[16]).BottomSheetFlashList, obj5);
-            cResult[11] = data;
-            cResult[12] = tmp4;
-            cResult[13] = tmp10;
-            cResult[14] = tmp16;
-            tmp11 = tmp16;
-          }
-        }
-      }
-    }
-  }
-  const fn = function n(arg0) {
-    let index;
-    let item;
-    ({ item, index } = arg0);
-    const obj = { start: 0 === index, end: index === data.length - 1, row: item, onPressAvatar, onInviteSent, isSubmitting, error, sendState: getSendState(item) };
-    const tmp = ActivityInviteSheetRowDefault;
-    return React3(tmp, obj);
-  };
-  cResult[0] = data.length;
-  cResult[1] = error;
-  cResult[2] = getSendState;
-  cResult[3] = isSubmitting;
-  cResult[4] = onInviteSent;
-  cResult[5] = onPressAvatar;
-  cResult[6] = fn;
-  tmp4 = fn;
-}) : (function ActivityInviteSheetList(data) {
+}
+const Fonts = Constants.Fonts;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { emptyTitle: obj2, emptyBody: obj3, goToFriendsLink: { textAlign: "center" } };
+obj2 = { textTransform: "none", lineHeight: 24 };
+createStyles = createStyles.createStyles;
+let TextStyles = TextStyles_mod;
+const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+obj3 = { lineHeight: 20, fontWeight: "600" };
+TextStyles = TextStyles_mod;
+const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
+let closure_7 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetList.tsx");
+
+export default function ActivityInviteSheetList(data) {
   let obj2;
   data = data.data;
   const error = data.error;
@@ -291,12 +102,9 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityInvi
     const tmp = ActivityInviteSheetRowDefault;
     return React3(tmp, obj);
   }, items);
-  const insets = error(getSendState[15])({ isKeyboardAwareOnAndroid: false }).insets;
-  let obj = { maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, getItemType, keyboardShouldPersistTaps: "always", ListEmptyComponent };
+  const insets = error(getSendState[13])({ isKeyboardAwareOnAndroid: false }).insets;
+  let obj = { maintainVisibleContentPosition: { disabled: true }, contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, getItemType, keyboardShouldPersistTaps: "always", ListEmptyComponent: FriendsEmptyComponent };
   obj2 = { paddingBottom: insets.bottom + error(getSendState[5]).space.PX_16, paddingHorizontal: error(getSendState[5]).space.PX_12 };
-  const BottomSheetFlashList = data(getSendState[16]).BottomSheetFlashList;
+  const BottomSheetFlashList = data(getSendState[14]).BottomSheetFlashList;
   return onInviteSent(BottomSheetFlashList, obj);
-});
-const result = size.fileFinishedImporting("modules/activities/panel/native/ActivityInviteSheetList.tsx");
-
-export default tmp8;
+};

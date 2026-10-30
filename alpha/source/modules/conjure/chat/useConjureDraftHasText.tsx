@@ -1,82 +1,29 @@
-// Module ID: 12405
-// Function ID: 12406
+// Module ID: 12557
+// Function ID: 12558
 // Name: useConjureDraftHasText
-// Dependencies: [32, 19, 12396, 558, 576, 2]
+// Dependencies: [32, 19, 12546, 2]
+// Exports: default
 
-// Module 12405 (useConjureDraftHasText)
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 12557 (useConjureDraftHasText)
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12396 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12546 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let _slicedToArray = _slicedToArray_mod;
+const result = size.fileFinishedImporting("modules/conjure/chat/useConjureDraftHasText.tsx");
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDraftHasText(arg0) {
+export default function useConjureDraftHasText(arg0) {
   let closure_0;
   let tmp2;
-  let tmp4;
-  let tmp5;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(8);
-  if (cResult[0] !== arg0) {
-    const fn = function n() {
-      const str = ConjureComposerDraftStore.getDraft(closure_0);
-      return "" !== str.trim();
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  [tmp4, tmp5] = react.useState(tmp2);
-  _slicedToArray(react.useState(tmp2), 2);
-  const tmp8 = _slicedToArray(react.useState(arg0), 2)[0] !== arg0;
-  if (cResult[2] === tmp4) {
-    if (cResult[3] === arg0) {
-      let tmp9;
-      let tmp14;
-      if (cResult[4] === tmp8) {
-        tmp9 = cResult[5];
-      }
-      if (tmp8) {
-        tmp7(arg0);
-        tmp5(tmp9);
-      }
-      if (cResult[6] !== tmp9) {
-        const items = [tmp9, tmp5];
-        cResult[6] = tmp9;
-        cResult[7] = items;
-        tmp14 = items;
-      } else {
-        tmp14 = cResult[7];
-      }
-      return tmp14;
-    }
-  }
-  let tmp10 = tmp4;
-  if (tmp8) {
-    let str = ConjureComposerDraftStore.getDraft(arg0);
-    tmp10 = "" !== str.trim();
-  }
-  cResult[2] = tmp4;
-  cResult[3] = arg0;
-  cResult[4] = tmp8;
-  cResult[5] = tmp10;
-  tmp9 = tmp10;
-}) : (function useConjureDraftHasText(arg0) {
-  let tmp2;
   let tmp3;
-  const f116334 = () => {
+  const f102331 = () => {
     const str = ConjureComposerDraftStore.getDraft(closure_0);
     return "" !== str.trim();
   };
-  let closure_0 = arg0;
-  [tmp2, tmp3] = react.useState(f116334);
-  _slicedToArray(react.useState(f116334), 2);
+  _slicedToArray = arg0;
+  [tmp2, tmp3] = react.useState(f102331);
+  _slicedToArray(react.useState(f102331), 2);
   const tmp4 = _slicedToArray(react.useState(arg0), 2);
   const tmp5 = tmp4[1];
   if (tmp4[0] !== arg0) {
@@ -89,7 +36,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureDr
   }
   const items = [tmp2, tmp3];
   return items;
-});
-const result = size.fileFinishedImporting("modules/conjure/chat/useConjureDraftHasText.tsx");
-
-export default tmp2;
+};

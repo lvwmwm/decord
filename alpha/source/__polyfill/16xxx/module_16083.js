@@ -1,27 +1,85 @@
 // Module ID: 16083
 // Function ID: 16084
-// Dependencies: [16084, 16097, 16045, 16066]
+// Dependencies: []
 
 // Module 16083
-import _mod16066 from "module_16066" /* 16066 */;
-import _mod16084 from "module_16084" /* 16084 */;
-import defineProperty2 from "defineProperty2" /* 16097 */;
-
-
-export default (arg0, arg1, arg2) => {
-  let num;
-  const arr = _mod16084(arg1);
-  const f = defineProperty2.f;
-  for (let num = 0; num < arr.length; num = num + 1) {
-    let tmp2 = arr[num];
-    let tmp3 = require;
-    let tmp5 = _mod16066(arg0, tmp2);
-    if (!tmp5) {
-      let tmp7 = arg2 && tmp3(16066)(arg2, tmp2);
-      tmp5 = tmp7;
-    }
-    if (!tmp5) {
-      let fResult = f(arg0, tmp2, tmp(arg1, tmp2));
-    }
+let _globalThis = typeof globalThis === "object";
+if (typeof globalThis === "object") {
+  _globalThis = globalThis;
+}
+let tmp = _globalThis;
+if (tmp) {
+  const _Math = Math;
+  tmp = _globalThis.Math === Math;
+}
+if (tmp) {
+  tmp = _globalThis;
+}
+if (!tmp) {
+  const _window = window;
+  let _window2 = typeof window === "object";
+  if (typeof window === "object") {
+    _window2 = window;
   }
-};
+  let tmp2 = _window2;
+  if (tmp2) {
+    const _Math2 = Math;
+    tmp2 = _window2.Math === Math;
+  }
+  if (tmp2) {
+    tmp2 = _window2;
+  }
+  tmp = tmp2;
+}
+if (!tmp) {
+  const _self = self;
+  let _self2 = typeof self === "object";
+  if (typeof self === "object") {
+    _self2 = self;
+  }
+  let tmp3 = _self2;
+  if (tmp3) {
+    const _Math3 = Math;
+    tmp3 = _self2.Math === Math;
+  }
+  if (tmp3) {
+    tmp3 = _self2;
+  }
+  tmp = tmp3;
+}
+if (!tmp) {
+  let tmp5 = typeof global === "object";
+  if (typeof global === "object") {
+    tmp5 = global;
+  }
+  let tmp6 = tmp5;
+  if (tmp6) {
+    const _Math4 = Math;
+    tmp6 = tmp5.Math === Math;
+  }
+  if (tmp6) {
+    tmp6 = tmp5;
+  }
+  tmp = tmp6;
+}
+if (!tmp) {
+  let self = typeof this === "object";
+  if (typeof this === "object") {
+    self = this;
+  }
+  let tmp7 = self;
+  if (tmp7) {
+    const _Math5 = Math;
+    tmp7 = self.Math === Math;
+  }
+  if (tmp7) {
+    tmp7 = self;
+  }
+  tmp = tmp7;
+}
+if (!tmp) {
+  const _Function = Function;
+  tmp = Function("return this")();
+}
+
+export default tmp;

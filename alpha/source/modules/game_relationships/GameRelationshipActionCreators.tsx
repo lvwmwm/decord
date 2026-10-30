@@ -1,18 +1,16 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 10721
+// Function ID: 10722
 // Name: GameRelationshipActionCreators
-// Dependencies: [5, 1084, 6433, 5946, 1125, 1294, 5012, 2]
+// Dependencies: [5, 1072, 6440, 5953, 1114, 1283, 5016, 2]
 
-// Module 10698 (GameRelationshipActionCreators)
-import intl3 from "intl" /* 1125 */;
-import shared from "shared" /* 5012 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6433 */;
+// Module 10721 (GameRelationshipActionCreators)
+import intl3 from "intl" /* 1114 */;
+import shared from "shared" /* 5016 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6440 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
-
-let c5, c6, closure_3;
 
 let closure_4;
 let hasOwnProperty;
@@ -25,8 +23,8 @@ function showRequestFailedAlert(arg0) {
   AlertActionCreatorsDefault;
   intl = intl3.intl;
   if (null == anyErrorMessage) {
-    const intl2 = tmp(1125).intl;
-    anyErrorMessage = intl2.string(tmp(1125).t.fEptJP);
+    const intl2 = tmp(1114).intl;
+    anyErrorMessage = intl2.string(tmp(1114).t.fEptJP);
   }
   show(obj);
 }
@@ -39,170 +37,57 @@ let obj = function _deleteGameRelationship() {
     let c1;
     let c2;
     let closure_0 = arg0;
-    if (c6 === 2) {
+    const HTTP = closure_130_0(closure_130_2[5]).HTTP;
+    const obj5 = { url: closure_130_4.USER_GAME_RELATIONSHIP(c0, c1), oldFormErrors: true, rejectWithError: false };
+    const del = HTTP.del;
+    let delResult = del(obj5);
+    await delResult;
+    if (2 === c5) {
+      delResult = closure_3;
+      let c4 = 0;
+      closure_130_6(closure_3);
+    } else if (arg0 === 1) {
+      let c6 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 0;
       c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
+      obj = { value, done: true };
+      return obj;
     } else {
-      let c4;
-      try {
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            ({ userId: c0, applicationId: c1, onSuccess: c2 } = closure_0);
-            c5 = 1;
-            c6 = 1;
-            return { value: "Reflect", done: null };
-          }
-        } else {
-          let delResult;
-          if (1 === c5) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              c4 = 1;
-              const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-              const obj5 = { url: closure_130_4.USER_GAME_RELATIONSHIP(c0, c1), oldFormErrors: true, rejectWithError: false };
-              const del = HTTP.del;
-              delResult = del(obj5);
-              c5 = 3;
-              c6 = 1;
-              const obj6 = { value: delResult, done: false };
-              return obj6;
-            }
-          } else {
-            if (2 === c5) {
-              delResult = closure_3;
-              c4 = 0;
-              closure_130_6(closure_3);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 0;
-              c6 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              tmp();
-              c4 = 0;
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        }
-      } catch (tmp21) {
-        closure_3 = tmp21;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp21;
-        } else {
-          c5 = 2;
-        }
-      }
+      tmp();
+      c4 = 0;
     }
+    await "HermesInternal";
+    let closure_2 = tmp;
+    ({ userId: c0, applicationId: c1, onSuccess: c2 } = closure_0);
+    return "flexDirection";
   });
   return obj(...arguments);
 };
 obj = function _removeGameFriend() {
   obj = _asyncToGenerator(async (userId) => {
+    let applicationId;
+    let closure_2;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
       let c0;
       let c1;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
+      const obj5 = {
+        userId,
+        applicationId,
+        onSuccess() {
+          const AccessibilityAnnouncer = userId(closure_1_2[6]).AccessibilityAnnouncer;
+          const announce = AccessibilityAnnouncer.announce;
+          const intl = userId(closure_1_2[4]).intl;
+          announce(intl.string(userId(closure_1_2[4]).t.zRf8cO));
         }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              let closure_1 = tmp;
-              userId = undefined;
-              applicationId = undefined;
-              ({ userId: c0, applicationId: c1 } = closure_0);
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = {
-                userId,
-                applicationId,
-                onSuccess() {
-                          const AccessibilityAnnouncer = userId(closure_1_2[6]).AccessibilityAnnouncer;
-                          const announce = AccessibilityAnnouncer.announce;
-                          const intl = userId(closure_1_2[4]).intl;
-                          announce(intl.string(userId(closure_1_2[4]).t.zRf8cO));
-                        }
-              };
-              const obj6 = { value: closure_130_7(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp11) {
-          c4 = 3;
-          throw tmp11;
-        }
-      }
+      };
+      await closure_130_7(obj5);
+      await "HermesInternal";
+      ({ userId: c0, applicationId: c1 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -211,80 +96,27 @@ obj = function _removeGameFriend() {
 };
 obj = function _cancelGameFriendRequest() {
   obj = _asyncToGenerator(async (userId) => {
+    let applicationId;
+    let closure_2;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
+    const iter = (async (arg0) => {
       let c0;
       let c1;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
+      const obj5 = {
+        userId,
+        applicationId,
+        onSuccess() {
+          const AccessibilityAnnouncer = userId(closure_1_2[6]).AccessibilityAnnouncer;
+          const announce = AccessibilityAnnouncer.announce;
+          const intl = userId(closure_1_2[4]).intl;
+          announce(intl.string(userId(closure_1_2[4]).t.XMf21q));
         }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              let closure_1 = tmp;
-              userId = undefined;
-              applicationId = undefined;
-              ({ userId: c0, applicationId: c1 } = closure_0);
-              c3 = 1;
-              c4 = 1;
-              return { value: "Reflect", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = {
-                userId,
-                applicationId,
-                onSuccess() {
-                          const AccessibilityAnnouncer = userId(closure_1_2[6]).AccessibilityAnnouncer;
-                          const announce = AccessibilityAnnouncer.announce;
-                          const intl = userId(closure_1_2[4]).intl;
-                          announce(intl.string(userId(closure_1_2[4]).t.XMf21q));
-                        }
-              };
-              const obj6 = { value: closure_130_7(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp11) {
-          c4 = 3;
-          throw tmp11;
-        }
-      }
+      };
+      await closure_130_7(obj5);
+      await "HermesInternal";
+      ({ userId: c0, applicationId: c1 } = closure_0);
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -304,7 +136,7 @@ obj = {
     }
     ({ userId, applicationId } = arg0);
     const FRIEND = constants.FRIEND;
-    const HTTP = onSuccess(1294).HTTP;
+    const HTTP = onSuccess(1283).HTTP;
     const request = { url: closure_4.USER_GAME_RELATIONSHIP(userId, applicationId), body: { type: FRIEND }, oldFormErrors: true, rejectWithError: false };
     const putResult = HTTP.put(request);
     const nextPromise = putResult.then(() => {

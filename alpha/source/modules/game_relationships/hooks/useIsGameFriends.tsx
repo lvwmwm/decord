@@ -1,64 +1,29 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14941
+// Function ID: 14942
 // Name: useIsGameFriends
-// Dependencies: [32, 7788, 1084, 558, 576, 504, 6753, 2]
+// Dependencies: [32, 7793, 1072, 504, 6760, 2]
+// Exports: useIsGameFriends
 
-// Module 14900 (useIsGameFriends)
-import Constants from "Constants" /* 1084 */;
+// Module 14941 (useIsGameFriends)
+import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7788 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7793 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsGameFriends(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [GameRelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
-      const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
-      return items;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  return _slicedToArray(tmpResult.useStateFromStores(first, tmp6, tmp7, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-}) : (function useIsGameFriends(arg0) {
-  let closure_0;
-  _require = arg0;
+const result = size.fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
+
+export function useIsGameFriends(id) {
+  _require = id;
   let items = [GameRelationshipStore];
-  const items1 = [arg0];
+  const items1 = [id];
   const obj = require("get initialized");
   return _slicedToArray(obj.useStateFromStores(items, () => {
-    const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(closure_0, RelationshipTypes.FRIEND);
+    const gameRelationshipsForUserByType = GameRelationshipStore.getGameRelationshipsForUserByType(id, RelationshipTypes.FRIEND);
     const items = [gameRelationshipsForUserByType.length > 0, GameRelationshipStore.getGameRelationshipsVersion()];
     return items;
   }, items1, require("SecondaryIndexMapUtils").isVersionEqual), 1)[0];
-});
-const result = size.fileFinishedImporting("modules/game_relationships/hooks/useIsGameFriends.tsx");
-
-export const useIsGameFriends = tmp2;
+}

@@ -1,45 +1,44 @@
-// Module ID: 10695
-// Function ID: 10696
+// Module ID: 10718
+// Function ID: 10719
 // Name: UserRow
-// Dependencies: [19, 17, 5006, 2043, 7792, 4857, 5750, 4947, 10684, 1084, 21, 1382, 5005, 587, 7471, 38, 10696, 10697, 5700, 10698, 7474, 7793, 558, 576, 504, 1199, 5271, 5059, 10702, 7313, 6840, 1125, 10724, 10725, 6979, 5281, 2032, 9786, 8601, 8708, 2000, 8747, 10727, 9874, 6028, 8374, 6426, 9258, 10729, 9170, 10737, 9262, 10738, 6960, 10754, 6963, 2]
+// Dependencies: [19, 17, 5010, 2040, 7797, 4858, 5756, 4951, 10707, 1072, 21, 1377, 5009, 575, 7479, 38, 10719, 10720, 5706, 10721, 7482, 7798, 504, 1188, 5619, 5063, 10725, 7320, 6847, 1114, 10747, 10748, 6987, 5629, 2029, 9812, 8635, 8742, 1995, 8781, 10750, 9899, 6035, 8411, 6433, 9271, 10752, 9183, 10760, 9276, 10761, 6968, 10777, 6969, 2]
 
-// Module 10695 (UserRow)
+// Module 10718 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import nativeDefault from "native" /* 587 */;
-import intl14 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import utils_StringUtils from "utils/StringUtils" /* 2032 */;
-import UserUtils from "UserUtils" /* 5059 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6979 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7471 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7474 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7793 */;
-import ChatIcon from "ChatIcon" /* 8601 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9786 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9874 */;
-import UserRowConstants from "UserRowConstants" /* 10684 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10697 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10698 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10702 */;
-import ActionButtonDefault from "ActionButton" /* 10724 */;
-import XLargeIcon from "XLargeIcon" /* 10725 */;
-import CrownIcon2 from "CrownIcon" /* 10727 */;
+import nativeDefault from "native" /* 575 */;
+import intl14 from "intl" /* 1114 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import utils_StringUtils from "utils/StringUtils" /* 2029 */;
+import UserUtils from "UserUtils" /* 5063 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import ToastUtils from "ToastUtils" /* 5706 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 6987 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7479 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7482 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7798 */;
+import ChatIcon from "ChatIcon" /* 8635 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 9812 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9899 */;
+import UserRowConstants from "UserRowConstants" /* 10707 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10720 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10721 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10725 */;
+import ActionButtonDefault from "ActionButton" /* 10747 */;
+import XLargeIcon from "XLargeIcon" /* 10748 */;
+import CrownIcon2 from "CrownIcon" /* 10750 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7792 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import Constants from "Constants" /* 1084 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7797 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1382 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1377 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -53,185 +52,8 @@ let map1;
 let obj3;
 let obj4;
 let tmp2;
-const native = tmp2(1199);
-const View = react_native.View;
-const UserRowModes = UserRowConstants.UserRowModes;
-({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
-let obj;
-if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "r" };
-}
-let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
-let createStyles = createStyles_mod;
-let closure_19 = createStyles.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
-createStyles = createStyles_mod;
-let obj2 = { activityText: obj3, gameContainer: obj4, gameIcon: { width: 14, height: 14 } };
-obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
-createStyles = createStyles.createStyles;
-obj4 = { flexDirection: "row", gap: 4, cornerRadius: nativeDefault.radii.xs };
-let closure_20 = createStyles(obj2);
-const Friends_v2 = "Friends_v2";
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRowSubLabel(isGameRelationship) {
-  let animate;
-  let applicationId;
-  let first;
-  let guildId;
-  let items1;
-  let tmp15;
-  let tmp7;
-  let type;
-  let user;
-  obj = applicationId(576);
-  const cResult = obj.c(28);
-  ({ user, type, animate, guildId, applicationId } = isGameRelationship);
-  isGameRelationship = isGameRelationship.isGameRelationship;
-  const tmp4 = closure_20();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ApplicationStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== applicationId) {
-    const fn = function s() {
-      return ApplicationStore.getApplication(applicationId);
-    };
-    cResult[1] = applicationId;
-    cResult[2] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const tmpResult = applicationId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7);
-  if (type !== constants.PENDING_INCOMING) {
-    if (type !== constants.SUGGESTION) {
-      let tmp9;
-      if (type !== constants.PENDING_OUTGOING) {
-        if (cResult[23] === animate) {
-          if (cResult[24] === guildId) {
-            if (cResult[25] === tmp4.activityText) {
-              if (cResult[26] === user.id) {
-                tmp9 = cResult[27];
-              }
-            }
-          }
-        }
-        const obj2 = { userId: user.id, guildId, textStyle: tmp4.activityText, animate };
-        const tmp12 = closure_14(ActivityStatusDefault, obj2);
-        cResult[23] = animate;
-        cResult[24] = guildId;
-        cResult[25] = tmp4.activityText;
-        cResult[26] = user.id;
-        cResult[27] = tmp12;
-        tmp9 = tmp12;
-      }
-      return tmp9;
-    }
-  }
-  if (isGameRelationship) {
-    let tmp27;
-    if (null == stateFromStores) {
-      let tmp31;
-      if (cResult[3] !== tmp4.gameIcon) {
-        const obj3 = { style: tmp4.gameIcon };
-        const tmp34 = closure_14(View, obj3);
-        cResult[3] = tmp4.gameIcon;
-        cResult[4] = tmp34;
-        tmp31 = tmp34;
-      } else {
-        tmp31 = cResult[4];
-      }
-      tmp27 = tmp31;
-    } else {
-      let tmp19;
-      let tmp20;
-      if (cResult[5] !== stateFromStores) {
-        let str = stateFromStores.getIconURL(16);
-        if (str == null) {
-          str = "";
-        }
-        cResult[5] = stateFromStores;
-        cResult[6] = str;
-        tmp19 = str;
-      } else {
-        tmp19 = cResult[6];
-      }
-      if (cResult[7] !== tmp19) {
-        const obj4 = { uri: tmp19 };
-        cResult[7] = tmp19;
-        cResult[8] = obj4;
-        tmp20 = obj4;
-      } else {
-        tmp20 = cResult[8];
-      }
-      if (cResult[9] === stateFromStores.id) {
-        if (cResult[10] === tmp4.gameIcon) {
-          let tmp21;
-          let tmp24;
-          if (cResult[11] === tmp20) {
-            tmp21 = cResult[12];
-          }
-          if (cResult[13] !== stateFromStores.name) {
-            const obj5 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
-            const tmp26 = closure_14(applicationId(5271).Text, obj5);
-            cResult[13] = stateFromStores.name;
-            cResult[14] = tmp26;
-            tmp24 = tmp26;
-          } else {
-            tmp24 = cResult[14];
-          }
-          if (cResult[15] === tmp4.gameContainer) {
-            if (cResult[16] === tmp21) {
-              if (cResult[17] === tmp24) {
-                tmp27 = cResult[18];
-              }
-            }
-          }
-          const obj6 = { style: tmp4.gameContainer, children: items1 };
-          items1 = [tmp21, tmp24];
-          const tmp30 = closure_15(View, obj6);
-          cResult[15] = tmp4.gameContainer;
-          cResult[16] = tmp21;
-          cResult[17] = tmp24;
-          cResult[18] = tmp30;
-          tmp27 = tmp30;
-        }
-      }
-      const obj7 = { style: tmp4.gameIcon, resizeMode: "contain", source: tmp20, disableColor: true };
-      const tmp23 = closure_14(applicationId(1199).Icon, obj7, stateFromStores.id);
-      cResult[9] = stateFromStores.id;
-      cResult[10] = tmp4.gameIcon;
-      cResult[11] = tmp20;
-      cResult[12] = tmp23;
-      tmp21 = tmp23;
-    }
-    tmp15 = tmp27;
-  } else {
-    let tmp13;
-    if (cResult[19] !== user) {
-      const tmpResult2 = applicationId(5059);
-      const userTag = tmpResult2.getUserTag(user);
-      cResult[19] = user;
-      cResult[20] = userTag;
-      tmp13 = userTag;
-    } else {
-      tmp13 = cResult[20];
-    }
-    if (cResult[21] !== tmp13) {
-      const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp13 };
-      const tmp17 = closure_14(applicationId(5271).Text, obj8);
-      cResult[21] = tmp13;
-      cResult[22] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[22];
-    }
-  }
-  tmp9 = tmp15;
-}) : (function UserRowSubLabel(arg0) {
+const native = tmp2(1188);
+function UserRowSubLabel(arg0) {
   let animate;
   let guildId;
   let isGameRelationship;
@@ -265,7 +87,7 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1199).Icon;
+      const Icon = tmp2(1188).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -281,12 +103,30 @@ let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserRo
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5271).Text;
+    const Text = tmp2(5619).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
   tmp7 = tmp9;
-});
+}
+const View = react_native.View;
+const UserRowModes = UserRowConstants.UserRowModes;
+({ RelationshipTypes: closure_12, StatusTypes: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
+let obj;
+if (PlatformUtils.isIOS()) {
+  obj = { lineHeight: "getCurrentUser" };
+}
+let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
+let createStyles = createStyles_mod;
+let closure_19 = createStyles.createStyles({ avatar: { flexShrink: 0, flexGrow: 0 }, actions: { flexDirection: "row" }, action: { marginLeft: 12, alignSelf: "center" }, buttonWrapper: { marginLeft: 8 }, labelContainer: { flexDirection: "row", alignItems: "center" }, roleDot: { marginRight: 4, paddingTop: 0 }, usernameLabelContainer: { display: "flex", flexDirection: "row", alignItems: "center", gap: 4 }, usernameLabel: { display: "flex", flexShrink: 1 } });
+createStyles = createStyles_mod;
+let obj2 = { activityText: obj3, gameContainer: obj4, gameIcon: { width: 14, height: 14 } };
+obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
+createStyles = createStyles.createStyles;
+obj4 = { flexDirection: "row", gap: 4, cornerRadius: nativeDefault.radii.xs };
+let closure_20 = createStyles(obj2);
+const Friends_v2 = "Friends_v2";
 const memoResult = react.memo(function UserRow(type) {
   let accessibilityActions;
   let applicationId;
@@ -352,14 +192,14 @@ const memoResult = react.memo(function UserRow(type) {
   let closure_17 = tmp3;
   let tmp4 = user;
   let tmp5 = NONE;
-  const analyticsLocations = user(NONE[29])().analyticsLocations;
+  const analyticsLocations = user(NONE[27])().analyticsLocations;
   let tmp6 = type;
-  obj = type(NONE[24]);
+  obj = type(NONE[22]);
   let items = [onPress];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ useReducedMotion: onPress.useReducedMotion, roleStyle: onPress.roleStyle }));
   useReducedMotion = stateFromStoresObject.useReducedMotion;
   const roleStyle = stateFromStoresObject.roleStyle;
-  let obj2 = type(NONE[24]);
+  let obj2 = type(NONE[22]);
   let items1 = [usernameColor];
   const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
     obj = { isMobileOnline: PresenceStore.isMobileOnline(user.id), isVROnline: PresenceStore.isVROnline(user.id), status: PresenceStore.getStatus(user.id) };
@@ -368,7 +208,7 @@ const memoResult = react.memo(function UserRow(type) {
   const isMobileOnline = stateFromStoresObject1.isMobileOnline;
   const isVROnline = stateFromStoresObject1.isVROnline;
   const status = stateFromStoresObject1.status;
-  let obj3 = type(NONE[24]);
+  let obj3 = type(NONE[22]);
   let items2 = [premiumSince];
   stateFromStores = obj3.useStateFromStores(items2, () => {
     let tmp = stateFromStores;
@@ -381,10 +221,10 @@ const memoResult = react.memo(function UserRow(type) {
     }
     return tmp;
   });
-  let obj4 = type(NONE[24]);
+  let obj4 = type(NONE[22]);
   const items3 = [handleMessage];
   const stateFromStores1 = obj4.useStateFromStores(items3, () => FriendSuggestionStore.getSuggestion(user.id));
-  let obj5 = type(NONE[30]);
+  let obj5 = type(NONE[28]);
   const avatarDecoration = obj5.useAvatarDecoration(user, guildId);
   let obj6 = flag2;
   const items4 = [user, onPress];
@@ -453,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "a" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;
@@ -501,7 +341,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj10 = { name: obj22.getName(user) };
         prop1 = intl14.t["C9Xe6+"];
         obj22 = UserUtilsDefault;
-        items1 = [syncedClientThemes(tmp32, obj9), ];
+        items1 = [authStore3(tmp32, obj9), ];
         const obj11 = {
           styles: closure_17.action,
           IconComponent: CheckmarkLargeIcon.CheckmarkLargeIcon,
@@ -534,7 +374,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj13 = { name: obj25.getName(user) };
         v6p0yBo1 = intl14.t["6p0yBo"];
         obj25 = UserUtilsDefault;
-        items1[1] = syncedClientThemes(tmp34, obj11);
+        items1[1] = authStore3(tmp34, obj11);
         tmp9 = applicationId(View, obj7);
       } else if (trailing.PENDING_OUTGOING === type) {
         const push2 = items.push;
@@ -545,7 +385,7 @@ const memoResult = react.memo(function UserRow(type) {
         JFJ8Cg = intl14.t.JFJ8Cg;
         obj8 = UserUtilsDefault;
         push2(obj14);
-        const obj17 = { style: closure_17.actions, children: syncedClientThemes(tmp19, obj19) };
+        const obj17 = { style: closure_17.actions, children: authStore3(tmp19, obj19) };
         obj19 = {
           styles: closure_17.action,
           IconComponent: XLargeIcon.XLargeIcon,
@@ -574,7 +414,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj20 = { name: obj12.getName(user) };
         JFJ8Cg2 = intl14.t.JFJ8Cg;
         obj12 = UserUtilsDefault;
-        tmp9 = syncedClientThemes(View, obj17);
+        tmp9 = authStore3(View, obj17);
       } else if (trailing.SUGGESTION === type) {
         obj = { name: analyticsLocations.ACCEPT_SUGGESTION, label: intl.string(intl14.t["ed99+i"]) };
         let tmp = analyticsLocations;
@@ -585,8 +425,8 @@ const memoResult = react.memo(function UserRow(type) {
         const obj21 = { name: analyticsLocations.IGNORE_SUGGESTION, label: intl2.string(intl14.t["Tw3a/R"]) };
         intl2 = intl14.intl;
         push(obj, obj21);
-        const obj23 = { style: closure_17.actions, children: syncedClientThemes(View, obj24) };
-        obj24 = { style: closure_17.buttonWrapper, children: syncedClientThemes(Button, obj26) };
+        const obj23 = { style: closure_17.actions, children: authStore3(View, obj24) };
+        obj24 = { style: closure_17.buttonWrapper, children: authStore3(Button, obj26) };
         obj26 = {
           variant: "secondary",
           size: "sm",
@@ -594,7 +434,7 @@ const memoResult = react.memo(function UserRow(type) {
           onPress() {
                 let obj3;
                 const current = closure_1_26.current;
-                const obj2 = { userId: current.id, context: obj3, type: "IconComponent", fromFriendSuggestion: null };
+                const obj2 = { userId: current.id, context: obj3, type: "HermesInternal", fromFriendSuggestion: null };
                 obj3 = { location: isMobileOnline };
                 obj = user(NONE[20]);
                 obj.addRelationship(obj2);
@@ -605,7 +445,7 @@ const memoResult = react.memo(function UserRow(type) {
         Button = components_Button_Button.Button;
         truncateText = utils_StringUtils.truncateText;
         intl3 = intl14.intl;
-        tmp9 = syncedClientThemes(View, obj23);
+        tmp9 = authStore3(View, obj23);
       } else {
         const FRIEND = tmp37.FRIEND;
         const push4 = items.push;
@@ -656,7 +496,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj35 = { name: obj37.getName(user) };
         Q75ddl2 = intl14.t.Q75ddl;
         obj37 = UserUtilsDefault;
-        items2 = [syncedClientThemes(tmp48, obj34), ];
+        items2 = [authStore3(tmp48, obj34), ];
         const obj36 = {
           styles: closure_17.action,
           IconComponent: ChatIcon.ChatIcon,
@@ -676,7 +516,7 @@ const memoResult = react.memo(function UserRow(type) {
         obj38 = { name: obj40.getName(user) };
         zFfSFQ2 = intl14.t.zFfSFQ;
         obj40 = UserUtilsDefault;
-        items2[1] = syncedClientThemes(tmp49, obj36);
+        items2[1] = authStore3(tmp49, obj36);
         tmp9 = applicationId(View, obj32);
       }
       return { accessibilityActions: items, actions: tmp9 };
@@ -737,7 +577,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (analyticsLocations.DECLINE !== actionName) {
         if (analyticsLocations.CANCEL !== actionName) {
           if (analyticsLocations.ACCEPT_SUGGESTION === actionName) {
-            const obj4 = { userId: user.id, context: obj7, type: "IconComponent", fromFriendSuggestion: null };
+            const obj4 = { userId: user.id, context: obj7, type: "HermesInternal", fromFriendSuggestion: null };
             obj7 = { location: Friends_v2 };
             const obj2 = RelationshipActionCreatorsDefault;
             obj2.addRelationship(obj4);
@@ -768,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8708, dependencyMap.paths);
+      const promise = asyncRequire(8742, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -777,7 +617,7 @@ const memoResult = react.memo(function UserRow(type) {
       tmp(user);
     }
   }, items8);
-  let obj7 = type(NONE[41]);
+  let obj7 = type(NONE[39]);
   const nameplate = obj7.useNameplate({ user, guildId });
   const items9 = [usernameColor, roleStyle];
   const memo1 = flag2.useMemo(() => {
@@ -798,7 +638,7 @@ const memoResult = react.memo(function UserRow(type) {
     obj = { style: closure_17.avatar, user, guildId, status: tmp4, isMobileOnline, isVROnline, size: native.AvatarSizes.REFRESH_MEDIUM_32, avatarDecoration, autoStatusCutout: true };
     tmp4 = null;
     const Avatar = native.Avatar;
-    const tmp = syncedClientThemes;
+    const tmp = authStore3;
     if (map1.OFFLINE !== status) {
       tmp4 = status;
     }
@@ -839,18 +679,18 @@ const memoResult = react.memo(function UserRow(type) {
     if (undefined === label) {
       let tmp5 = null;
       const tmp = closure_15;
-      const tmp2 = authStore3;
+      const tmp2 = authStore4;
       if (flag3) {
         obj = { size: "xs", color: nativeDefault.colors.TEXT_FEEDBACK_WARNING };
         const CrownIcon = CrownIcon2.CrownIcon;
-        tmp5 = syncedClientThemes(CrownIcon, obj);
+        tmp5 = authStore3(CrownIcon, obj);
       }
       const items = [tmp5, ];
       let tmp11 = null;
       if (null != premiumSince) {
         const obj2 = { size: "xs", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
         const BoostGemIcon = BoostGemIcon2.BoostGemIcon;
-        tmp11 = syncedClientThemes(BoostGemIcon, obj2);
+        tmp11 = authStore3(BoostGemIcon, obj2);
       }
       const obj3 = { children: items };
       items[1] = tmp11;
@@ -862,7 +702,7 @@ const memoResult = react.memo(function UserRow(type) {
     let tmp = subLabel;
     if (undefined === subLabel) {
       obj = { user, type, animate: !useReducedMotion, isGameRelationship: flag4, guildId, applicationId };
-      tmp = syncedClientThemes(closure_22, obj);
+      tmp = authStore3(UserRowSubLabel, obj);
     }
     return tmp;
   }, items13);
@@ -881,8 +721,8 @@ const memoResult = react.memo(function UserRow(type) {
     }
     return tmp;
   }, items14);
-  let tmp25 = tmp4(tmp5[44])(guildId, user.id);
-  const tmp6Result = tmp6(tmp5[45]);
+  let tmp25 = tmp4(tmp5[42])(guildId, user.id);
+  const tmp6Result = tmp6(tmp5[43]);
   const processColorStringsArray = tmp6Result.useProcessColorStringsArray(roleColors);
   if (tmp25) {
     tmp25 = "username" === roleStyle;
@@ -891,17 +731,17 @@ const memoResult = react.memo(function UserRow(type) {
     tmp25 = processColorStringsArray.length > 1;
   }
   let obj8 = { userId: user.id, guildId };
-  const tmp26 = tmp4(tmp5[46])(obj8);
-  const tmp6Result4 = tmp6(tmp5[47]);
+  const tmp26 = tmp4(tmp5[44])(obj8);
+  const tmp6Result4 = tmp6(tmp5[45]);
   const displayNameStylesFont = tmp6Result4.useDisplayNameStylesFont({ displayNameStyles: tmp26 });
-  const tmp6Result5 = tmp6(tmp5[27]);
+  const tmp6Result5 = tmp6(tmp5[25]);
   const humanizeStatusResult = tmp6Result5.humanizeStatus(status, { isMobile: isMobileOnline, isVR: isVROnline });
   let formatToPlainStringResult;
   if (typeof memo3 === "string") {
     if (null != humanizeStatusResult) {
-      let intl = tmp6(tmp5[31]).intl;
+      let intl = tmp6(tmp5[29]).intl;
       let obj9 = { label: memo3, status: humanizeStatusResult };
-      formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[31]).t["/6mw10"], obj9);
+      formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[29]).t["/6mw10"], obj9);
     }
   }
   let obj10 = { lineClamp: 1, variant: "text-md/semibold" };
@@ -914,7 +754,7 @@ const memoResult = react.memo(function UserRow(type) {
       if (null == guildId) {
         let obj12 = { userId: user.id, userName: memo3, style: items15, defaultColor: "mobile-text-heading-primary", accessibilityLabel: formatToPlainStringResult };
         items15 = [tmp3.usernameLabel, memo1];
-        const tmp4Result = tmp4(tmp5[48]);
+        const tmp4Result = tmp4(tmp5[46]);
         const merged1 = Object.assign(obj10);
         tmp32Result6 = label(tmp4Result, obj12);
         tmp32 = label;
@@ -922,18 +762,18 @@ const memoResult = react.memo(function UserRow(type) {
       const items16 = [tmp32Result6, memo4, , ];
       if (user.bot) {
         let obj13 = { verified: user.isVerifiedBot(), type: tmp6Result6.getBotTagTypeFromUser(user) };
-        const tmp4Result2 = tmp4(tmp5[49]);
-        tmp6Result6 = tmp6(tmp5[50]);
+        const tmp4Result2 = tmp4(tmp5[47]);
+        tmp6Result6 = tmp6(tmp5[48]);
         tmp32Result = tmp32(tmp4Result2, obj13);
       } else {
         let obj14 = { userId: user.id };
-        tmp32Result = tmp32(tmp4(tmp5[51]), obj14);
+        tmp32Result = tmp32(tmp4(tmp5[49]), obj14);
       }
       items16[2] = tmp32Result;
       let tmp32Result4 = null != guildId;
       if (tmp32Result4) {
         let obj15 = { guildId, userId: user.id };
-        tmp32Result4 = tmp32(tmp4(tmp5[52]), obj15);
+        tmp32Result4 = tmp32(tmp4(tmp5[50]), obj15);
       }
       items16[3] = tmp32Result4;
       obj11.children = items16;
@@ -946,7 +786,7 @@ const memoResult = react.memo(function UserRow(type) {
       let tmp30Result2 = tmp30Result;
       if (!tmp45) {
         let obj16 = { style: tmp3.labelContainer, children: items17 };
-        const RoleDot = tmp6(tmp5[25]).RoleDot;
+        const RoleDot = tmp6(tmp5[23]).RoleDot;
         if (usernameColor == null) {
           usernameColor = null;
         }
@@ -969,20 +809,20 @@ const memoResult = react.memo(function UserRow(type) {
       }
       if (NONE === guildId.TOGGLE) {
         let obj19 = { checked: flag };
-        const TableCheckboxRow = tmp6(tmp5[53]).TableCheckboxRow;
+        const TableCheckboxRow = tmp6(tmp5[51]).TableCheckboxRow;
         const merged3 = Object.assign(obj18);
         tmp32Result5 = tmp32(TableCheckboxRow, obj19);
       } else {
         if (null != nameplate) {
           if (flag5) {
             let obj20 = { trailing: memo6, nameplate };
-            const UserNameplateRow = tmp6(tmp5[54]).UserNameplateRow;
+            const UserNameplateRow = tmp6(tmp5[52]).UserNameplateRow;
             const merged4 = Object.assign(obj18);
             tmp32Result5 = tmp32(UserNameplateRow, obj20);
           }
         }
         let obj21 = { trailing: memo6 };
-        const TableRow = tmp6(tmp5[55]).TableRow;
+        const TableRow = tmp6(tmp5[53]).TableRow;
         const merged5 = Object.assign(obj18);
         tmp32Result5 = tmp32(TableRow, obj21);
       }
@@ -991,7 +831,7 @@ const memoResult = react.memo(function UserRow(type) {
   }
   tmp32 = label;
   let tmp33;
-  const Text = tmp6(tmp5[26]).Text;
+  const Text = tmp6(tmp5[24]).Text;
   if (tmp25) {
     tmp33 = processColorStringsArray;
   }

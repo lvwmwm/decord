@@ -1,14 +1,12 @@
-// Module ID: 8691
-// Function ID: 8692
+// Module ID: 8725
+// Function ID: 8726
 // Name: BioMaxLengthExperiment
-// Dependencies: [1084, 1453, 558, 576, 2]
-// Exports: getBioMaxLength
+// Dependencies: [1072, 1448, 2]
+// Exports: getBioMaxLength, useBioMaxLength
 
-// Module 8691 (BioMaxLengthExperiment)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import ApexExperiment from "ApexExperiment" /* 1453 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 8725 (BioMaxLengthExperiment)
+import Constants from "Constants" /* 1072 */;
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let BIO_MAX_LENGTH;
@@ -17,29 +15,14 @@ let obj2;
 ({ BIO_MAX_LENGTH, BIO_MAX_LENGTH_INCREASED } = Constants);
 let obj = { name: "2026-08-user-bio-max-length", kind: "user", defaultConfig: { maxLength: BIO_MAX_LENGTH }, variations: obj2 };
 obj2 = { 0: { maxLength: BIO_MAX_LENGTH }, 1: { maxLength: BIO_MAX_LENGTH_INCREASED } };
-let closure_2 = ApexExperiment.createApexExperiment(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBioMaxLength(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).maxLength;
-}) : (function useBioMaxLength(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj).maxLength;
-});
+let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/user_profile/experiments/BioMaxLengthExperiment.tsx");
 
-export const useBioMaxLength = tmp3;
+export function useBioMaxLength(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj).maxLength;
+}
 export function getBioMaxLength(location) {
   const obj = { location: location.location };
-  return closure_2.getConfig(obj).maxLength;
+  return closure_0.getConfig(obj).maxLength;
 }

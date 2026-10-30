@@ -1,146 +1,19 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14952
+// Function ID: 14953
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 558, 576, 14913, 14914, 7317, 1385, 6561, 2]
+// Dependencies: [19, 14953, 14954, 7324, 1380, 6568, 2]
+// Exports: default
 
-// Module 14912 (useVisibleUserProfileConnectionsAndAppIdentities)
-import PlatformsDefault from "Platforms" /* 6561 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 14913 */;
-import useUserProfileConnectionsDefault from "useUserProfileConnections" /* 14914 */;
+// Module 14952 (useVisibleUserProfileConnectionsAndAppIdentities)
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let importDefault;
 
-let tmp4;
-const useGetOrFetchApplicationsDefault = tmp4(7317);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
-  let closure_1;
-  let tmp11;
-  let tmp15;
-  let tmp18;
-  let tmp19;
-  let tmp5;
-  let obj = require("react");
-  const cResult = obj.c(20);
-  const prop = useConnectionFilteredAppIdentitiesDefault(arg0).filteredAppIdentities;
-  const arr2 = useUserProfileConnectionsDefault(arg0);
-  const tmp = _require;
-  if (cResult[0] !== prop) {
-    let mapped;
-    const _Set = Set;
-    if (prop != null) {
-      mapped = prop.map((application_id) => application_id.application_id);
-    }
-    if (mapped == null) {
-      mapped = [];
-    }
-    const self2 = this;
-    const self = this;
-    const _Set1 = new _Set(mapped);
-    cResult[0] = prop;
-    cResult[1] = _Set1;
-    tmp5 = _Set1;
-  } else {
-    tmp5 = cResult[1];
-  }
-  _require = tmp5;
-  if (cResult[2] !== tmp5) {
-    const items = [];
-    HermesBuiltin.arraySpread(items, tmp5, 0);
-    cResult[2] = tmp5;
-    cResult[3] = items;
-    tmp11 = items;
-  } else {
-    tmp11 = cResult[3];
-  }
-  const arr5 = useGetOrFetchApplicationsDefault(tmp11);
-  if (cResult[4] !== arr5) {
-    const found = arr5.filter(tmp(1385).isNotNullish);
-    cResult[4] = arr5;
-    cResult[5] = found;
-    tmp15 = found;
-  } else {
-    tmp15 = cResult[5];
-  }
-  importDefault = tmp15;
-  if (cResult[6] === tmp15) {
-    let tmp17;
-    let tmp22;
-    if (cResult[7] === prop) {
-      tmp17 = cResult[8];
-    }
-    if (cResult[12] === tmp5) {
-      let tmp21;
-      if (cResult[13] === arr2) {
-        tmp21 = cResult[14];
-      }
-      if (cResult[17] === tmp17) {
-        let tmp24;
-        if (cResult[18] === tmp21) {
-          tmp24 = cResult[19];
-        }
-        return tmp24;
-      }
-      const obj2 = { appIdentities: tmp17, connections: tmp21 };
-      cResult[17] = tmp17;
-      cResult[18] = tmp21;
-      cResult[19] = obj2;
-      tmp24 = obj2;
-    }
-    if (cResult[15] !== tmp5) {
-      const fn3 = function h(type) {
-        const obj = PlatformsDefault;
-        const value = obj.get(type.type);
-        let migrationData;
-        if (value != null) {
-          migrationData = value.migrationData;
-        }
-        const tmp3 = null == migrationData || !set.has(value.migrationData.replacedBy);
-        return tmp3;
-      };
-      cResult[15] = tmp5;
-      cResult[16] = fn3;
-      tmp22 = fn3;
-    } else {
-      tmp22 = cResult[16];
-    }
-    const found1 = arr2.filter(tmp22);
-    cResult[12] = tmp5;
-    cResult[13] = arr2;
-    cResult[14] = found1;
-    tmp21 = found1;
-  }
-  if (cResult[9] !== tmp15) {
-    const fn = function _(identity) {
-      let closure_0 = identity;
-      const obj = { identity, application: closure_1.find((id) => id.id === application_id.application_id) };
-      return obj;
-    };
-    cResult[9] = tmp15;
-    cResult[10] = fn;
-    tmp18 = fn;
-  } else {
-    tmp18 = cResult[10];
-  }
-  if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function y(application) {
-      return null != application.application;
-    };
-    cResult[11] = fn2;
-    tmp19 = fn2;
-  } else {
-    tmp19 = cResult[11];
-  }
-  const mapped1 = prop.map(tmp18);
-  const found2 = mapped1.filter(tmp19);
-  cResult[6] = tmp15;
-  cResult[7] = prop;
-  cResult[8] = found2;
-  tmp17 = found2;
-}) : (function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
+const result = size.fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
+
+export default function useVisibleUserProfileConnectionsAndAppIdentities(arg0) {
   let closure_1;
   let found;
   let items2;
@@ -167,7 +40,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
   const tmp4 = require("useGetOrFetchApplications");
   HermesBuiltin.arraySpread(items1, memo, 0);
   const tmp4Result = tmp4(items1);
-  found = tmp4Result.filter(filteredAppIdentities(memo[6]).isNotNullish);
+  found = tmp4Result.filter(filteredAppIdentities(memo[4]).isNotNullish);
   let obj = {
     appIdentities: found.useMemo(() => {
       const mapped = filteredAppIdentities.map((identity) => {
@@ -178,7 +51,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
       return mapped.filter((application) => null != application.application);
     }, items2),
     connections: found.useMemo(() => closure_1.filter((type) => {
-      const obj = closure_1(memo[7]);
+      const obj = closure_1(memo[5]);
       const value = obj.get(type.type);
       let migrationData;
       if (value != null) {
@@ -191,7 +64,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVisibleUs
   items2 = [filteredAppIdentities, found];
   items3 = [tmp2, memo];
   return obj;
-});
-const result = size.fileFinishedImporting("modules/user_profile/hooks/useVisibleUserProfileConnectionsAndAppIdentities.tsx");
-
-export default tmp2;
+};

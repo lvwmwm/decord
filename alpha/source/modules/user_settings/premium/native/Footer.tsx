@@ -1,22 +1,21 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15337
+// Function ID: 15338
 // Name: Footer
-// Dependencies: [19, 17, 21, 5005, 558, 576, 15298, 7338, 5271, 1125, 5281, 5707, 15299, 2]
+// Dependencies: [19, 17, 21, 5009, 15338, 7345, 5619, 1114, 5629, 5712, 15339, 2]
+// Exports: default
 
-// Module 15297 (Footer)
+// Module 15337 (Footer)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15298 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15299 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15338 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15339 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,97 +24,9 @@ let metroRequire;
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "center", width: "100%" }, footerText: { marginBottom: 24 }, button: { marginBottom: 40 }, easterEggSpacing: { position: "absolute", top: 40 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0) {
-  let buttonText;
-  let intl;
-  let items;
-  let items1;
-  let obj7;
-  let openPayment;
-  let showSubscribeButton;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(15);
-  ({ style, showSubscribeButton } = arg0);
-  const tmp4 = closure_7();
-  const tmp6 = useOpenPremiumMarketingPaymentDefault;
-  ({ openPayment, buttonText } = tmp6(AnalyticsLocationDefault.PREMIUM_MARKETING_FOOTER));
-  tmp6(AnalyticsLocationDefault.PREMIUM_MARKETING_FOOTER);
-  if (cResult[0] === style) {
-    let tmp8;
-    if (cResult[1] === tmp4.container) {
-      tmp8 = cResult[2];
-    }
-    if (cResult[3] === buttonText) {
-      if (cResult[4] === openPayment) {
-        if (cResult[5] === showSubscribeButton) {
-          if (cResult[6] === tmp4.button) {
-            let tmp9;
-            let tmp16;
-            if (cResult[7] === tmp4.footerText) {
-              tmp9 = cResult[8];
-            }
-            let easterEggSpacing = null;
-            if (!showSubscribeButton) {
-              easterEggSpacing = tmp4.easterEggSpacing;
-            }
-            if (cResult[9] !== easterEggSpacing) {
-              const obj2 = { style: easterEggSpacing, source: AssetRegistryDefault };
-              const tmp5Result = FastImageDefault;
-              const tmp19 = React3(tmp5Result, obj2);
-              cResult[9] = easterEggSpacing;
-              cResult[10] = tmp19;
-              tmp16 = tmp19;
-            } else {
-              tmp16 = cResult[10];
-            }
-            if (cResult[11] === tmp8) {
-              if (cResult[12] === tmp9) {
-                let tmp20;
-                if (cResult[13] === tmp16) {
-                  tmp20 = cResult[14];
-                }
-                return tmp20;
-              }
-            }
-            const obj3 = { style: tmp8, children: items };
-            items = [tmp9, tmp16];
-            const tmp23 = metroRequire(View, obj3);
-            cResult[11] = tmp8;
-            cResult[12] = tmp9;
-            cResult[13] = tmp16;
-            cResult[14] = tmp23;
-            tmp20 = tmp23;
-          }
-        }
-      }
-    }
-    let tmp10 = showSubscribeButton;
-    if (tmp10) {
-      const obj4 = { children: items1 };
-      const obj5 = { style: tmp4.footerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["2bSPbq"]) };
-      const Text = tmp(5271).Text;
-      intl = tmp(1125).intl;
-      items1 = [React3(Text, obj5), ];
-      const obj6 = { style: tmp4.button, children: React3(components_Button_Button.Button, obj7) };
-      obj7 = { text: buttonText, variant: "primary", size: "lg", onPress: openPayment, grow: true };
-      items1[1] = React3(View, obj6);
-      tmp10 = metroRequire(hasOwnProperty, obj4);
-    }
-    cResult[3] = buttonText;
-    cResult[4] = openPayment;
-    cResult[5] = showSubscribeButton;
-    cResult[6] = tmp4.button;
-    cResult[7] = tmp4.footerText;
-    cResult[8] = tmp10;
-    tmp9 = tmp10;
-  }
-  const items2 = [tmp4.container, style];
-  cResult[0] = style;
-  cResult[1] = tmp4.container;
-  cResult[2] = items2;
-  tmp8 = items2;
-}) : (function Footer(showSubscribeButton) {
+const result = size.fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
+
+export default function Footer(showSubscribeButton) {
   let intl;
   let items;
   let items1;
@@ -150,7 +61,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Footer(arg0)
   const obj6 = { style: easterEggSpacing, source: AssetRegistryDefault };
   items2[1] = tmp14(tmp2Result, obj6);
   return metroRequire(View, obj);
-});
-const result = size.fileFinishedImporting("modules/user_settings/premium/native/Footer.tsx");
-
-export default tmp4;
+};

@@ -1,10 +1,10 @@
 // Module ID: 17139
 // Function ID: 17140
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 17139 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45bf3d60b04cc6fd9a97d07a70a73cd6", name: "ThemeMidnightIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 87, height: 87, scales: [2, 3], hash: "d299e9311da17e9393089ebfa8d667b1", name: "resubscribed_alert_header", type: "png" });

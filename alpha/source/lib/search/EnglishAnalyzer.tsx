@@ -1,19 +1,17 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18711
+// Function ID: 18712
 // Name: EnglishAnalyzer
-// Dependencies: [12, 18653, 18655, 2]
+// Dependencies: [12, 18712, 18714, 2]
 // Exports: analyze, createASTHighlighter
 
-// Module 18652 (EnglishAnalyzer)
+// Module 18711 (EnglishAnalyzer)
 import _modDef12 from "module_12" /* 12 */;
-import snowballStemmer from "snowballStemmer" /* 18653 */;
+import snowballStemmer from "snowballStemmer" /* 18712 */;
+import Search from "Search" /* 18714 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let importDefault;
-
-function stripPossessive(item) {
-  return item.replace(/('|\u2019|\uFF07)(s|S)$/, "");
+function stripPossessive(item10009) {
+  return item10009.replace(/('|\u2019|\uFF07)(s|S)$/, "");
 }
 function lowercase(str) {
   return str.toLowerCase();
@@ -24,12 +22,12 @@ function isStopWord(arg0) {
 function isBlank(arg0) {
   return 0 === arg0.length;
 }
-function shouldHighlight(item, set, arg2) {
+function shouldHighlight(item10009, set, arg2) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
-  const tmp = lowercase(stripPossessive(item));
+  const tmp = lowercase(stripPossessive(item10009));
   if (isBlank(tmp)) {
     return false;
   } else if (isStopWord(tmp)) {
@@ -52,9 +50,9 @@ function shouldHighlight(item, set, arg2) {
     }
   }
 }
-function highlightAST(content, arg1, arg2) {
-  let closure_0 = arg1;
-  let closure_1 = arg2;
+function highlightAST(content, c0, c1) {
+  let closure_0 = c0;
+  let closure_1 = c1;
   if (Array.isArray(content)) {
     const item = content.forEach((item) => {
       highlightAST(item, closure_0, closure_1);
@@ -69,45 +67,89 @@ function highlightAST(content, arg1, arg2) {
   } else {
     if (typeof content.content === "string") {
       if ("codeBlock" !== content.type) {
-        const items1 = [];
-        content = "";
-        const str3 = content.content;
-        const parts = str3.split(/(\W+)/g);
-        const item2 = parts.forEach((content) => {
-          if (shouldHighlight(content, closure_0, closure_1)) {
-            if (content.length > 0) {
-              const obj = { type: "text", content };
-              items1.push(obj);
+        const obj = { words: c0, supportPartialMatches: c1 };
+        const arr = splitHighlights(content.content, obj);
+        if (null != arr) {
+          const mapped = arr.map((text) => {
+            let type = "text";
+            const content = text.text;
+            if (text.highlight) {
+              type = "highlight";
             }
-            const obj2 = { type: "highlight", content };
-            items1.push(obj2);
-            content = "";
-          } else {
-            content = arr + content;
-          }
-        });
-        if (items1.length > 0) {
-          if (content.length > 0) {
-            let obj = { type: "text", content };
-            const arr = items1.push(obj);
-          }
+            return { type, content };
+          });
           if ("text" === content.type) {
-            content.content = items1;
+            content.content = mapped;
           } else {
-            let obj2 = { type: "text", content: items1 };
-            const items2 = [obj2];
-            content.content = items2;
+            const items1 = [{ type: "text", content: mapped }];
+            const obj2 = { type: "text", content: mapped };
+            content.content = items1;
           }
         }
       }
     }
     if (null != content.content) {
-      highlightAST(content.content, arg1, arg2);
+      highlightAST(content.content, c0, c1);
     }
   }
   return content;
 }
-let set = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
+function createHighlightMatcher(str, flag) {
+  let iter;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let tmp3 = str.length >= Search.SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH && str.length <= tmp(18714).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
+  const obj = { words: new Set(iter.value()), supportPartialMatches: tmp3 };
+  const tmp4 = _modDef12;
+  const tmp4Result = tmp4(str.split(/\W+/));
+  const mapped = tmp4Result.map(stripPossessive);
+  const rejectResult = mapped.reject(isBlank);
+  const mapped1 = rejectResult.map(lowercase);
+  const rejectResult1 = mapped1.reject(isStopWord);
+  iter = rejectResult1.map(snowballStemmer.snowballStem);
+  new Set(iter.value());
+  if (tmp3) {
+    tmp3 = flag;
+  }
+  return obj;
+}
+function splitHighlights(content, words) {
+  words = words.words;
+  if (0 === words.size) {
+    return null;
+  } else {
+    const items = [];
+    let str = "";
+    const parts = content.split(/(\W+)/g);
+    for (const item10009 of parts) {
+      let tmp3 = item10009;
+      if (shouldHighlight(item10009, words, tmp)) {
+        if (``.length > 0) {
+          let obj = { text: str, highlight: false };
+          let arr = items.push(obj);
+        }
+        let obj2 = { text: tmp3, highlight: true };
+        let arr4 = items.push(obj2);
+        str = "";
+      } else {
+        str = `${tmp3}`;
+      }
+      continue;
+    }
+    let tmp11 = null;
+    if (0 !== items.length) {
+      tmp11 = items;
+      if (str.length > 0) {
+        const obj3 = { text: str, highlight: false };
+        items.push(obj3);
+        tmp11 = items;
+      }
+    }
+    return tmp11;
+  }
+}
+const set = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 const result = size.fileFinishedImporting("lib/search/EnglishAnalyzer.tsx");
 
 export function analyze(str) {
@@ -122,33 +164,20 @@ export function analyze(str) {
 }
 export { shouldHighlight };
 export { highlightAST };
-export function createASTHighlighter(str) {
-  let closure_1;
-  let flag = arg1;
-  if (arg1 === undefined) {
+export { createHighlightMatcher };
+export { splitHighlights };
+export function createASTHighlighter(arg0, flag) {
+  let c0;
+  let c1;
+  if (flag === undefined) {
     flag = false;
   }
-  set = undefined;
-  let tmp = flag;
-  let tmp2 = set;
-  let tmp3 = str.length >= flag(set[2]).SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH && str.length <= tmp(tmp2[2]).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
-  importDefault = tmp3;
-  const tmp4 = require("module_12");
-  const tmp4Result = tmp4(str.split(/\W+/));
-  const mapped = tmp4Result.map(stripPossessive);
-  const rejectResult = mapped.reject(isBlank);
-  const mapped1 = rejectResult.map(lowercase);
-  const rejectResult1 = mapped1.reject(isStopWord);
-  const iter = rejectResult1.map(tmp(tmp2[1]).snowballStem);
-  set = new Set(iter.value());
-  return (arg0) => {
-    let tmp3 = closure_1;
-    const tmp = highlightAST;
-    const tmp2 = set;
-    if (closure_1) {
-      tmp3 = flag;
-    }
-    tmp(arg0, tmp2, tmp3);
-    return arg0;
+  c0 = undefined;
+  c1 = undefined;
+  ({ words: c0, supportPartialMatches: c1 } = createHighlightMatcher(arg0, flag));
+  const tmp = createHighlightMatcher(arg0, flag);
+  return (content) => {
+    highlightAST(content, c0, c1);
+    return content;
   };
 }

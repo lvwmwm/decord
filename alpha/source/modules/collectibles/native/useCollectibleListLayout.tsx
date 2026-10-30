@@ -1,59 +1,30 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 15033
+// Function ID: 15034
 // Name: useCollectibleListLayout
-// Dependencies: [32, 19, 558, 576, 2]
+// Dependencies: [32, 19, 2]
+// Exports: default
 
-// Module 14989 (useCollectibleListLayout)
-import react2 from "react" /* 576 */;
+// Module 15033 (useCollectibleListLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let c3;
-let closure_4;
-({ useCallback: c3, useState: closure_4 } = react);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCollectibleListLayout() {
-  let closure_129_0;
-  let first;
-  let tmp3;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(3);
-  [tmp3, closure_129_0] = React3(0);
-  _slicedToArray(React3(0), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l(nativeEvent) {
-      closure_1_0((nativeEvent.nativeEvent.layout.width - 64) / 3);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp3) {
-    const obj2 = { size: tmp3, onLayout: first };
-    cResult[1] = tmp3;
-    cResult[2] = obj2;
-    tmp5 = obj2;
-  } else {
-    tmp5 = cResult[2];
-  }
-  return tmp5;
-}) : (function useCollectibleListLayout() {
-  const tmp = _slicedToArray(React3(0), 2);
+let c2;
+let map;
+({ useCallback: map, useState: c2 } = react);
+const result = size.fileFinishedImporting("modules/collectibles/native/useCollectibleListLayout.tsx");
+
+export default function useCollectibleListLayout() {
+  const tmp = _slicedToArray(React2(0), 2);
   let closure_0 = tmp[1];
   const obj = {
     size: tmp[0],
-    onLayout: _false((nativeEvent) => {
+    onLayout: map((nativeEvent) => {
       closure_0((nativeEvent.nativeEvent.layout.width - 64) / 3);
     }, [])
   };
   return obj;
-});
-const result = size.fileFinishedImporting("modules/collectibles/native/useCollectibleListLayout.tsx");
-
-export default tmp3;
+};
 export const GUTTER_SIZE = 16;
 export const ROW_SIZE = 3;
 export const COLLECTIBLE_ROW_HEIGHT = 114;

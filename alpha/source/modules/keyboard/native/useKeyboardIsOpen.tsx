@@ -1,58 +1,23 @@
-// Module ID: 7087
-// Function ID: 7088
+// Module ID: 7095
+// Function ID: 7096
 // Name: useKeyboardIsOpen
-// Dependencies: [1499, 1500, 1501, 1629, 558, 576, 2]
-// Exports: getKeyboardIsOpen, subscribeToKeyboardIsOpen
+// Dependencies: [1494, 1495, 1496, 1624, 2]
+// Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 7087 (useKeyboardIsOpen)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1500 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1501 */;
-import KeyboardTypes from "KeyboardTypes" /* 1629 */;
-import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1499 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7095 (useKeyboardIsOpen)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1495 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1496 */;
+import KeyboardTypes from "KeyboardTypes" /* 1624 */;
+import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1494 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
 let closure_4 = {};
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardIsOpen(arg0) {
-  let closure_0;
-  let tmp = arg0;
-  let tmp3 = dependencyMap;
-  let tmp2 = _require;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  if (undefined === arg0) {
-    tmp = closure_4;
-  }
-  const includeCustomKeyboard = tmp.includeCustomKeyboard;
-  _require = tmp5;
-  const tmp2Result = tmp2(1500);
-  const appEntryKey = tmp2Result.useAppEntryKey();
-  if (cResult[0] === appEntryKey) {
-    let tmp7;
-    if (cResult[1] === (undefined !== includeCustomKeyboard && includeCustomKeyboard)) {
-      tmp7 = cResult[2];
-    }
-    return appEntryKey(1501)(tmp7);
-  }
-  const fn = function o(arg0) {
-    let tmp2;
-    const systemKeyboardOpen = tmp.systemKeyboardOpen;
-    if (closure_0) {
-      tmp2 = systemKeyboardOpen || tmp.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-      const tmp3 = systemKeyboardOpen || tmp.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-    } else {
-      tmp2 = systemKeyboardOpen;
-    }
-    return tmp2;
-  };
-  cResult[0] = appEntryKey;
-  cResult[1] = undefined !== includeCustomKeyboard && includeCustomKeyboard;
-  cResult[2] = fn;
-  tmp7 = fn;
-}) : (function useKeyboardIsOpen() {
+const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
+
+export default function useKeyboardIsOpen() {
   let closure_1;
   let tmp = arg0;
   if (arg0 === undefined) {
@@ -62,7 +27,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
   if (flag === undefined) {
     flag = false;
   }
-  const obj = flag(1500);
+  const obj = flag(1495);
   importDefault = obj.useAppEntryKey();
   return KeyboardUIStoreDefault((arg0) => {
     let tmp2;
@@ -75,35 +40,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useKeyboardI
     }
     return tmp2;
   });
-});
-function getKeyboardIsOpen(arg0) {
-  let tmp6;
-  let tmp = arg0;
-  if (arg0 === undefined) {
-    tmp = closure_4;
-  }
-  let flag = tmp.includeCustomKeyboard;
-  if (flag === undefined) {
-    flag = false;
-  }
-  let DEFAULT_APP_ENTRY_KEY = tmp.appEntryKey;
-  if (DEFAULT_APP_ENTRY_KEY === undefined) {
-    DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
-  }
-  const obj = KeyboardUIStoreDefault;
-  const tmp5 = obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
-  const systemKeyboardOpen = tmp5.systemKeyboardOpen;
-  if (flag) {
-    tmp6 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-    const tmp7 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
-  } else {
-    tmp6 = systemKeyboardOpen;
-  }
-  return tmp6;
-}
-const result = size.fileFinishedImporting("modules/keyboard/native/useKeyboardIsOpen.tsx");
-
-export default tmp2;
+};
 export function subscribeToKeyboardIsOpen(arg0) {
   let closure_0;
   _require = arg0;
@@ -143,4 +80,28 @@ export function subscribeToKeyboardIsOpen(arg0) {
     return tmp(tmp6);
   }, DEFAULT_APP_ENTRY_KEY);
 }
-export { getKeyboardIsOpen };
+export function getKeyboardIsOpen(arg0) {
+  let tmp6;
+  let tmp = arg0;
+  if (arg0 === undefined) {
+    tmp = closure_4;
+  }
+  let flag = tmp.includeCustomKeyboard;
+  if (flag === undefined) {
+    flag = false;
+  }
+  let DEFAULT_APP_ENTRY_KEY = tmp.appEntryKey;
+  if (DEFAULT_APP_ENTRY_KEY === undefined) {
+    DEFAULT_APP_ENTRY_KEY = AppEntryKeyContext.DEFAULT_APP_ENTRY_KEY;
+  }
+  const obj = KeyboardUIStoreDefault;
+  const tmp5 = obj.getState().byAppEntry[DEFAULT_APP_ENTRY_KEY];
+  const systemKeyboardOpen = tmp5.systemKeyboardOpen;
+  if (flag) {
+    tmp6 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
+    const tmp7 = systemKeyboardOpen || tmp5.keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM;
+  } else {
+    tmp6 = systemKeyboardOpen;
+  }
+  return tmp6;
+}

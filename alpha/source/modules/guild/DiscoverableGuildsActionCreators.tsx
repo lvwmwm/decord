@@ -1,15 +1,15 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9595
+// Function ID: 9596
 // Name: DiscoverableGuildsActionCreators
-// Dependencies: [5, 9571, 1084, 584, 1294, 2]
+// Dependencies: [5, 9594, 1072, 572, 1283, 2]
 // Exports: fetchDiscoverableGuilds
 
-// Module 9572 (DiscoverableGuildsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 9595 (DiscoverableGuildsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9571 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9594 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4, set, staleGuildIds;
@@ -28,7 +28,7 @@ let obj = function _requestGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -93,7 +93,7 @@ let obj = function _requestGuilds() {
           obj.dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp23) {
         closure_4 = tmp23;
@@ -125,7 +125,7 @@ obj = function _fetchDiscoverableGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -198,7 +198,7 @@ obj = function _fetchDiscoverableGuilds() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           c8 = 0;

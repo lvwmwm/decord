@@ -1,65 +1,21 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9380
+// Function ID: 9381
 // Name: OpenCriticRatingCircle
-// Dependencies: [21, 558, 576, 8017, 2]
+// Dependencies: [21, 8023, 2]
+// Exports: default
 
-// Module 9366 (OpenCriticRatingCircle)
+// Module 9380 (OpenCriticRatingCircle)
 import Fragment from "Fragment" /* 21 */;
-import react from "react" /* 576 */;
-import inlineStylesDefault from "inlineStyles" /* 8017 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import inlineStyles from "inlineStyles" /* 8023 */;
 import size_mod from "module_2" /* 2 */;
 
-let tmp;
-const inlineStyles = tmp(8017);
+const inlineStylesDefault = inlineStyles;
+
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenCriticRatingCircle(rating) {
-  let strokeColor;
-  const obj = react;
-  const cResult = obj.c(10);
-  ({ strokeColor, size } = rating);
-  const result = size / 2;
-  const result1 = (size - 4) / 2;
-  const result2 = 2 * Math.PI * result1;
-  const diff = 1 - Math.min(Math.max(rating.rating, 0), 100) / 100;
-  const result3 = result2 * diff;
-  const combined = "rotate(" + 360 * diff / 2 + " " + result + " " + result + ")";
-  if (cResult[0] === result) {
-    if (cResult[1] === result2) {
-      if (cResult[2] === result1) {
-        if (cResult[3] === strokeColor) {
-          if (cResult[4] === result3) {
-            let tmp10;
-            if (cResult[5] === combined) {
-              tmp10 = cResult[6];
-            }
-            if (cResult[7] === size) {
-              let tmp12;
-              if (cResult[8] === tmp10) {
-                tmp12 = cResult[9];
-              }
-              return tmp12;
-            }
-            const tmp15 = jsx(inlineStylesDefault, { width: size, height: size, children: tmp10 });
-            cResult[7] = size;
-            cResult[8] = tmp10;
-            cResult[9] = tmp15;
-            tmp12 = tmp15;
-          }
-        }
-      }
-    }
-  }
-  const tmp11 = jsx(inlineStyles.Circle, { transform: combined, cx: result, cy: result, r: result1, stroke: strokeColor, strokeWidth: 2, fill: "none", strokeDasharray: result2, strokeDashoffset: result3 });
-  cResult[0] = result;
-  cResult[1] = result2;
-  cResult[2] = result1;
-  cResult[3] = strokeColor;
-  cResult[4] = result3;
-  cResult[5] = combined;
-  cResult[6] = tmp11;
-  tmp10 = tmp11;
-}) : (function OpenCriticRatingCircle(size) {
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
+
+export default function OpenCriticRatingCircle(size) {
   let diff;
   size = size.size;
   const result = size / 2;
@@ -72,8 +28,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function OpenCritic
   inlineStylesDefault;
   const Circle = inlineStyles.Circle;
   return <tmp5 width={size} height={size}>{null}</tmp5>;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/game_profile/native/components/OpenCriticRatingCircle.tsx");
-
-export default tmp2;
+};

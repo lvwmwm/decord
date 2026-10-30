@@ -1,13 +1,13 @@
-// Module ID: 1085
-// Function ID: 1086
+// Module ID: 1073
+// Function ID: 1074
 // Name: RouteConstants
-// Dependencies: [1086, 1091, 1092, 1093, 2]
+// Dependencies: [1074, 1079, 1080, 1081, 2]
 
-// Module 1085 (RouteConstants)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1086 */;
-import ConferenceModeConstants from "ConferenceModeConstants" /* 1091 */;
-import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1092 */;
-import PathUtils from "utils/PathUtils" /* 1093 */;
+// Module 1073 (RouteConstants)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1079 */;
+import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1080 */;
+import PathUtils from "utils/PathUtils" /* 1081 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -491,9 +491,6 @@ const obj = {
   },
   COLLECTIBLES_SHOP_COLLECTION_DETAIL(arg0) {
     return "/shop/collection/" + arg0;
-  },
-  COLLECTIBLES_SHOP_PRODUCT_DETAIL(arg0) {
-    return "/shop/product/" + arg0;
   },
   NITRO_HOME: "/store",
   ACCOUNT_STANDING: "/account-standing",

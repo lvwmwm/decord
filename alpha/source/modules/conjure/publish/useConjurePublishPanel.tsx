@@ -1,20 +1,20 @@
-// Module ID: 12253
-// Function ID: 12254
+// Module ID: 12414
+// Function ID: 12415
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 4879, 4937, 6831, 1084, 6832, 3864, 12254, 12255, 12257, 10918, 12258, 1125, 504, 9009, 10832, 2]
+// Dependencies: [5, 32, 19, 4880, 4941, 6838, 1072, 6839, 3865, 12415, 12416, 12418, 10941, 12419, 1114, 504, 9022, 10855, 2]
 // Exports: default
 
-// Module 12253 (useConjurePublishPanel)
-import _modDef3864 from "module_3864" /* 3864 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9009 */;
+// Module 12414 (useConjurePublishPanel)
+import _modDef3865 from "module_3865" /* 3865 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore_mod from "PermissionStore" /* 4937 */;
-import Constants from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore_mod from "PermissionStore" /* 4941 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,15 +26,15 @@ let _slicedToArray = _slicedToArray_mod;
 let PermissionStore = PermissionStore_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: c9, Permissions: c10 } = Constants);
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3864.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3865.UnoAgo];
 let items1 = [items, , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3864["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3865["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3864.gXY1x1];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3865.gXY1x1];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3864.Q9ruoM];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3865.Q9ruoM];
 items1[3] = items4;
-let obj = { screen_capture: _modDef3864["8/7kE7"], connect_user_to_voice: _modDef3864.uvDWXa };
+let obj = { screen_capture: _modDef3865["8/7kE7"], connect_user_to_voice: _modDef3865.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {
@@ -75,7 +75,7 @@ export default function useConjurePublishPanel(id, guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;

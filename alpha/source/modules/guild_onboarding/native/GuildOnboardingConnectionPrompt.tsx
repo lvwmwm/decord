@@ -1,33 +1,33 @@
-// Module ID: 7310
-// Function ID: 7311
+// Module ID: 7317
+// Function ID: 7318
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 6935, 7263, 6559, 4879, 7255, 7256, 7252, 1084, 21, 5005, 5305, 587, 558, 576, 1503, 1631, 504, 7261, 1264, 5749, 7254, 5271, 1125, 7281, 7311, 7338, 5281, 2]
+// Dependencies: [19, 17, 6942, 7270, 6566, 4880, 7262, 7263, 7259, 1072, 21, 5009, 5581, 575, 1498, 1626, 504, 7268, 1253, 5755, 7261, 7286, 5619, 1114, 7318, 7345, 5629, 2]
+// Exports: default
 
-// Module 7310 (GuildOnboardingConnectionPrompt)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7252 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7254 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7256 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7261 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7311 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7338 */;
+// Module 7317 (GuildOnboardingConnectionPrompt)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7259 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7261 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7263 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7268 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7318 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7345 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6935 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7263 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7255 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6942 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7270 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7262 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let navigation, num, obj1, ref, tmp11, tmp6, tmp7, tmp8, trackResult;
+let navigation;
 
 let closure_14;
 let closure_15;
@@ -58,393 +58,9 @@ obj7 = { marginTop: nativeDefault.space.PX_8 };
 obj8 = { display: "flex", flexDirection: "column", justifyContent: "flex-end", alignItems: "center", bottom: 0, paddingBottom: nativeDefault.space.PX_8, position: "absolute", width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj9 = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_16 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboardingConnectionPrompt(guildId) {
-  let first;
-  let isLastStep;
-  let stateFromStores3;
-  let stateFromStores4;
-  let tmp10;
-  let tmp12;
-  let tmp13;
-  let tmp15;
-  let tmp16;
-  let tmp19;
-  let tmp20;
-  let tmp22;
-  let tmp23;
-  let tmp25;
-  let tmp26;
-  let tmp27;
-  let tmp = guildId;
-  const tmp2 = isLastStep;
-  let obj = guildId(isLastStep[15]);
-  const cResult = obj.c(98);
-  guildId = guildId.guildId;
-  const onComplete = guildId.onComplete;
-  isLastStep = guildId.isLastStep;
-  const tmp4 = closure_16();
-  let obj2 = guildId(isLastStep[16]);
-  navigation = obj2.useNavigation();
-  const sum = 64 + onComplete(isLastStep[17])().bottom;
-  const sum1 = sum + onComplete(isLastStep[13]).space.PX_8;
-  ref = navigation.useRef(false);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp9 = stateFromStores4;
-    const items = [stateFromStores4];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId) {
-    class P {
-      constructor() {
-        return closure_10.getOnboardingConnections(guildId);
-      }
-    }
-    cResult[1] = guildId;
-    cResult[2] = P;
-    tmp10 = P;
-  } else {
-    class P {
-      constructor() {
-        return closure_10.getOnboardingConnections(guildId);
-      }
-    }
-  }
-  let tmpResult = tmp(tmp2[18]);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp10);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor() {
-        return closure_10.getOnboardingConnections(guildId);
-      }
-    }
-    const items1 = [stateFromStores4];
-    cResult[3] = items1;
-    tmp12 = items1;
-  } else {
-    class P {
-      constructor() {
-        return closure_10.getOnboardingConnections(guildId);
-      }
-    }
-  }
-  if (cResult[4] !== guildId) {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-    cResult[4] = guildId;
-    cResult[5] = L;
-    tmp13 = L;
-  } else {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-  }
-  const tmpResult6 = tmp(tmp2[18]);
-  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp12, tmp13);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-    const items2 = [stateFromStores3];
-    cResult[6] = items2;
-    tmp15 = items2;
-  } else {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-  }
-  if (cResult[7] !== guildId) {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-    cResult[7] = guildId;
-    cResult[8] = tmp17;
-    tmp16 = tmp17;
-  } else {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-  }
-  const tmpResult7 = tmp(tmp2[18]);
-  const stateFromStores1 = tmpResult7.useStateFromStores(tmp15, tmp16);
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-    const items3 = [stateFromStoresArray];
-    cResult[9] = items3;
-    tmp19 = items3;
-  } else {
-    class L {
-      constructor() {
-        return closure_10.getOnboardingPromptsForOnboarding(guildId);
-      }
-    }
-  }
-  if (cResult[10] !== guildId) {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-    cResult[10] = guildId;
-    cResult[11] = U;
-    tmp20 = U;
-  } else {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-  }
-  const tmpResult8 = tmp(tmp2[18]);
-  const stateFromStores2 = tmpResult8.useStateFromStores(tmp19, tmp20);
-  if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-    const items4 = [stateFromStores4];
-    class M {
-      constructor() {
-        return closure_10.isLoading();
-      }
-    }
-    cResult[12] = M;
-    cResult[13] = items4;
-    tmp23 = items4;
-    tmp22 = M;
-  } else {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-    tmp23 = cResult[13];
-  }
-  const tmpResult9 = tmp(tmp2[18]);
-  stateFromStores3 = tmpResult9.useStateFromStores(tmp23, tmp22);
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-    const items5 = [stateFromStores1, ];
-    class M {
-      constructor() {
-        return closure_10.isLoading();
-      }
-    }
-    items5[1] = stateFromStores2;
-    cResult[14] = items5;
-    tmp25 = items5;
-  } else {
-    class U {
-      constructor() {
-        return closure_6.getRulesPrompt(guildId);
-      }
-    }
-  }
-  if (cResult[15] !== stateFromStores) {
-    class H {
-      constructor() {
-        tmp = closure_5;
-        iter = closure_5[Symbol.iterator]();
-        nextResult = iter.next();
-        while (iter !== undefined) {
-          tmp3 = nextResult;
-          connection_type = nextResult.connection_type;
-          if (OnboardingConnectionType.APPLICATION === connection_type) {
-            tmp12 = closure_7;
-            tmp13 = nextResult;
-            if (null != closure_7.getNewestTokenForApplication(tmp3.application_id)) {
-              tmp14 = iter;
-              iter.return();
-              flag2 = true;
-              return true;
-            }
-          } else if (tmp4.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-            tmp5 = nextResult;
-            if (null != tmp3.provider_id) {
-              tmp6 = closure_8;
-              tmp7 = nextResult;
-              account = closure_8.getAccount(null, tmp3.provider_id);
-              if (null != account) {
-                tmp10 = account;
-                if (!tmp9.revoked) {
-                  tmp11 = iter;
-                  iter.return();
-                  flag = true;
-                  return true;
-                }
-              }
-            }
-          }
-          continue;
-        }
-        return false;
-      }
-    }
-    const items6 = [stateFromStores];
-    class M {
-      constructor() {
-        return closure_10.isLoading();
-      }
-    }
-    cResult[15] = stateFromStores;
-    cResult[16] = H;
-    cResult[17] = items6;
-    tmp27 = items6;
-    tmp26 = H;
-  } else {
-    class H {
-      constructor() {
-        tmp = closure_5;
-        iter = closure_5[Symbol.iterator]();
-        nextResult = iter.next();
-        while (iter !== undefined) {
-          tmp3 = nextResult;
-          connection_type = nextResult.connection_type;
-          if (OnboardingConnectionType.APPLICATION === connection_type) {
-            tmp12 = closure_7;
-            tmp13 = nextResult;
-            if (null != closure_7.getNewestTokenForApplication(tmp3.application_id)) {
-              tmp14 = iter;
-              iter.return();
-              flag2 = true;
-              return true;
-            }
-          } else if (tmp4.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-            tmp5 = nextResult;
-            if (null != tmp3.provider_id) {
-              tmp6 = closure_8;
-              tmp7 = nextResult;
-              account = closure_8.getAccount(null, tmp3.provider_id);
-              if (null != account) {
-                tmp10 = account;
-                if (!tmp9.revoked) {
-                  tmp11 = iter;
-                  iter.return();
-                  flag = true;
-                  return true;
-                }
-              }
-            }
-          }
-          continue;
-        }
-        return false;
-      }
-    }
-    tmp27 = cResult[17];
-  }
-  const tmpResult10 = tmp(tmp2[18]);
-  stateFromStores4 = tmpResult10.useStateFromStores(tmp25, tmp26, tmp27);
-  if (cResult[18] === guildId) {
-    class H {
-      constructor() {
-        tmp = closure_5;
-        iter = closure_5[Symbol.iterator]();
-        nextResult = iter.next();
-        while (iter !== undefined) {
-          tmp3 = nextResult;
-          connection_type = nextResult.connection_type;
-          if (OnboardingConnectionType.APPLICATION === connection_type) {
-            tmp12 = closure_7;
-            tmp13 = nextResult;
-            if (null != closure_7.getNewestTokenForApplication(tmp3.application_id)) {
-              tmp14 = iter;
-              iter.return();
-              flag2 = true;
-              return true;
-            }
-          } else if (tmp4.PROVIDER_CONNECTED_ACCOUNT === connection_type) {
-            tmp5 = nextResult;
-            if (null != tmp3.provider_id) {
-              tmp6 = closure_8;
-              tmp7 = nextResult;
-              account = closure_8.getAccount(null, tmp3.provider_id);
-              if (null != account) {
-                tmp10 = account;
-                if (!tmp9.revoked) {
-                  tmp11 = iter;
-                  iter.return();
-                  flag = true;
-                  return true;
-                }
-              }
-            }
-          }
-          continue;
-        }
-        return false;
-      }
-    }
-  }
-  class Z {
-    constructor() {
-      tmp = closure_9;
-      if (!tmp) {
-        tmp2 = closure_5;
-        num = 0;
-        if (0 !== closure_5.length) {
-          if (!closure_4.current) {
-            tmp3 = closure_0;
-            tmp4 = closure_2;
-            obj = closure_0(closure_2[19]);
-            providerConnectionState = obj.getProviderConnectionState(tmp2);
-            obj2 = closure_0(closure_2[19]);
-            applicationConnectionState = obj2.getApplicationConnectionState(tmp2);
-            tmp7 = closure_1;
-            tmp8 = closure_1(closure_2[20]);
-            tmp9 = AnalyticEvents;
-            obj1 = {};
-            track = tmp8.track;
-            GUILD_ONBOARDING_STEP_VIEWED = AnalyticEvents.GUILD_ONBOARDING_STEP_VIEWED;
-            obj4 = closure_0(closure_2[21]);
-            tmp10 = guildId;
-            tmp11 = obj1;
-            merged = Object.assign(obj4.collectGuildAnalyticsMetadata(guildId));
-            obj1.step = closure_0(closure_2[22]).CONNECTIONS_STEP;
-            flag = false;
-            obj1.required = false;
-            ({ connected: obj3.provider_connections_connected, notConnected: obj3.provider_connections_not_connected } = providerConnectionState);
-            ({ connected: obj3.application_connections_connected, notConnected: obj3.application_connections_not_connected } = applicationConnectionState);
-            trackResult = track(GUILD_ONBOARDING_STEP_VIEWED, obj1);
-            flag2 = true;
-            tmp14.current = true;
-          }
-        }
-      }
-      return;
-    }
-  }
-  const items7 = [guildId, stateFromStores3, stateFromStores];
-  cResult[18] = guildId;
-  cResult[19] = stateFromStores3;
-  cResult[20] = stateFromStores;
-  cResult[21] = Z;
-  cResult[22] = items7;
-}) : (function GuildOnboardingConnectionPrompt(guildId) {
+const result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
+
+export default function GuildOnboardingConnectionPrompt(guildId) {
   let Button;
   let Text3;
   let combined;
@@ -469,30 +85,30 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
   let tmp = closure_16();
   const tmp2 = guildId;
   let tmp3 = isLastStep;
-  let obj = guildId(isLastStep[16]);
+  let obj = guildId(isLastStep[14]);
   navigation = obj.useNavigation();
-  const bottom = onComplete(isLastStep[17])().bottom;
+  const bottom = onComplete(isLastStep[15])().bottom;
   const sum = 64 + bottom;
   const sum1 = sum + onComplete(isLastStep[13]).space.PX_8;
-  ref = navigation.useRef(false);
-  let obj2 = guildId(isLastStep[18]);
+  const ref = navigation.useRef(false);
+  let obj2 = guildId(isLastStep[16]);
   const items = [stateFromStores4];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildOnboardingPromptsStore.getOnboardingConnections(guildId));
-  const obj3 = guildId(isLastStep[18]);
+  const obj3 = guildId(isLastStep[16]);
   const items1 = [stateFromStores4];
   const stateFromStoresArray = obj3.useStateFromStoresArray(items1, () => GuildOnboardingPromptsStore.getOnboardingPromptsForOnboarding(guildId));
-  let obj4 = guildId(isLastStep[18]);
+  let obj4 = guildId(isLastStep[16]);
   const items2 = [stateFromStores3];
   const stateFromStores1 = obj4.useStateFromStores(items2, () => GuildStore.getGuild(guildId));
-  let obj5 = guildId(isLastStep[18]);
+  let obj5 = guildId(isLastStep[16]);
   const items3 = [stateFromStoresArray];
   const stateFromStores2 = obj5.useStateFromStores(items3, () => MemberVerificationFormStore.getRulesPrompt(guildId));
   const items4 = [stateFromStores4];
-  const obj6 = guildId(isLastStep[18]);
+  const obj6 = guildId(isLastStep[16]);
   stateFromStores3 = obj6.useStateFromStores(items4, () => stateFromStores4.isLoading());
   const items5 = [stateFromStores1, stateFromStores2];
   const items6 = [stateFromStores];
-  const obj7 = guildId(isLastStep[18]);
+  const obj7 = guildId(isLastStep[16]);
   stateFromStores4 = obj7.useStateFromStores(items5, () => {
     const iter = stateFromStores[Symbol.iterator]();
     const nextResult = iter.next();
@@ -577,13 +193,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
   const obj8 = { top: true, style: items9, children: null };
   items9 = [, ];
   ({ flex: arr12[0], container: arr12[1] } = tmp);
-  const SafeAreaPaddingView = guildId(isLastStep[25]).SafeAreaPaddingView;
+  const SafeAreaPaddingView = guildId(isLastStep[21]).SafeAreaPaddingView;
   if (stateFromStores3) {
     const obj9 = { style: items10, children: tmp13(Text3, obj10) };
     items10 = [tmp.flex, { justifyContent: "center", alignItems: "center" }];
-    obj10 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[24]).t.ZTNur7) };
-    Text3 = tmp2(tmp3[23]).Text;
-    intl4 = tmp2(tmp3[24]).intl;
+    obj10 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[23]).t.ZTNur7) };
+    Text3 = tmp2(tmp3[22]).Text;
+    intl4 = tmp2(tmp3[23]).intl;
     obj8.children = tmp13(ref, obj9);
     tmp19 = obj8;
   } else {
@@ -596,13 +212,13 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     items11[1] = obj13;
     let tmp14 = closure_15;
     const obj14 = { style: tmp.header, children: items12 };
-    const obj15 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(tmp3[24]).t.eDVMrA) };
-    const Text = tmp2(tmp3[23]).Text;
-    intl = tmp2(tmp3[24]).intl;
+    const obj15 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(tmp3[23]).t.eDVMrA) };
+    const Text = tmp2(tmp3[22]).Text;
+    intl = tmp2(tmp3[23]).intl;
     items12 = [tmp13(Text, obj15), ];
-    const obj16 = { style: tmp.description, variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[24]).t.BozOXu) };
-    const Text2 = tmp2(tmp3[23]).Text;
-    intl2 = tmp2(tmp3[24]).intl;
+    const obj16 = { style: tmp.description, variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[23]).t.BozOXu) };
+    const Text2 = tmp2(tmp3[22]).Text;
+    intl2 = tmp2(tmp3[23]).intl;
     items12[1] = tmp13(Text2, obj16);
     items13 = [closure_15(ref, obj14), ];
     const obj17 = {
@@ -610,7 +226,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
       children: stateFromStores.map((connection, index) => {
           const obj = { connection, guildId, location: AnalyticsLocationDefault.GUILD_ONBOARDING };
           const tmp = ConnectionCardDefault;
-          return syncedClientThemes(tmp, obj, index);
+          return authStore3(tmp, obj, index);
         })
     };
     items13[1] = tmp13(ref, obj17);
@@ -620,16 +236,16 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     ({ footer: arr17[0], footerContent: arr17[1] } = tmp);
     const obj19 = { paddingBottom: bottom };
     items15[2] = obj19;
-    Button = tmp2(tmp3[28]).Button;
+    Button = tmp2(tmp3[26]).Button;
     if (stateFromStores4) {
       str = "primary";
     } else {
       str = "secondary";
     }
     obj20 = { variant: str, size: "md", text: combined, onPress: callback, grow: true };
-    const intl3 = tmp2(tmp3[24]).intl;
+    const intl3 = tmp2(tmp3[23]).intl;
     const string = intl3.string;
-    const t = tmp2(tmp3[24]).t;
+    const t = tmp2(tmp3[23]).t;
     if (isLastStep) {
       const _HermesInternal = HermesInternal;
       combined = "" + string(t["8SuVoE"]) + " \u{1F389}";
@@ -643,7 +259,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildOnboard
     tmp19 = obj8;
   }
   return tmp13(SafeAreaPaddingView, tmp19);
-});
-const result = size.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConnectionPrompt.tsx");
-
-export default tmp5;
+};

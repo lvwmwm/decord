@@ -1,25 +1,25 @@
-// Module ID: 15244
-// Function ID: 15245
+// Module ID: 15284
+// Function ID: 15285
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1389, 7620, 1084, 21, 5005, 587, 504, 15245, 38, 1385, 10687, 15246, 1125, 5014, 15247, 7313, 7338, 1264, 7621, 5247, 15248, 2000, 5700, 7308, 5271, 5707, 15253, 15254, 10688, 6940, 5281, 5302, 9030, 10690, 2]
+// Dependencies: [5, 32, 19, 17, 1384, 7625, 1072, 21, 5009, 575, 504, 15285, 38, 1380, 10710, 15286, 1114, 5018, 15287, 7320, 7345, 1253, 7626, 5253, 15288, 1995, 5706, 7315, 5619, 5712, 15293, 15294, 10711, 6947, 5629, 5267, 9043, 10713, 2]
 // Exports: default
 
-// Module 15244 (ReferralProgramShareActionSheet)
+// Module 15284 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl8 from "intl" /* 1125 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5014 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10687 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15247 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl8 from "intl" /* 1114 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5018 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10710 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15287 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7620 */;
+import UserStore from "UserStore" /* 1384 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7625 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, closure_2, trialCreationResult, v3;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           if (0 === c3) {

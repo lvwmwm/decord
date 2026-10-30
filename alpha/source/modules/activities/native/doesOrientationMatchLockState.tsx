@@ -1,28 +1,27 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11757
+// Function ID: 11758
 // Name: doesOrientationMatchLockState
-// Dependencies: [2024, 2]
+// Dependencies: [2021, 2]
 // Exports: default
 
-// Module 11556 (doesOrientationMatchLockState)
-import Constants from "Constants" /* 2024 */;
+// Module 11757 (doesOrientationMatchLockState)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2021 */;
 import size from "module_2" /* 2 */;
 
-const OrientationLockState = Constants.OrientationLockState;
 const result = size.fileFinishedImporting("modules/activities/native/doesOrientationMatchLockState.tsx");
 
 export default function doesOrientationMatchLockState(arg0, arg1) {
-  let tmp = null == arg1 || arg1 === OrientationLockState.UNLOCKED;
-  let tmp3 = arg0;
+  let tmp = null == arg1 || arg1 === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.UNLOCKED;
+  let tmp4 = arg0;
   if (!tmp) {
-    tmp = !tmp3 && arg1 === OrientationLockState.PORTRAIT;
-    const tmp4 = !tmp3 && arg1 === OrientationLockState.PORTRAIT;
+    tmp = !tmp4 && arg1 === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT;
+    const tmp5 = !tmp4 && arg1 === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.PORTRAIT;
   }
   if (!tmp) {
-    if (tmp3) {
-      tmp3 = arg1 === OrientationLockState.LANDSCAPE;
+    if (tmp4) {
+      tmp4 = arg1 === EmbeddedActivityOrientationLockState.EmbeddedActivityOrientationLockState.LANDSCAPE;
     }
-    tmp = tmp3;
+    tmp = tmp4;
   }
   return tmp;
 };

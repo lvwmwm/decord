@@ -1,32 +1,32 @@
-// Module ID: 12246
-// Function ID: 12247
+// Module ID: 12407
+// Function ID: 12408
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6831, 21, 9546, 8631, 6832, 12247, 12249, 12251, 11027, 5005, 587, 5701, 5247, 558, 576, 11857, 504, 12253, 6010, 5617, 8635, 8636, 1125, 3864, 7358, 12259, 12264, 7068, 7240, 5271, 6943, 12268, 5281, 7355, 5641, 2]
+// Dependencies: [5, 19, 17, 6838, 21, 9565, 8665, 6839, 12408, 12410, 12412, 11255, 5009, 575, 5707, 5253, 12400, 504, 12414, 6017, 5586, 8669, 8670, 1114, 3865, 7360, 12420, 12425, 7076, 7247, 5619, 6951, 12431, 5629, 7363, 5647, 2]
 // Exports: default
 
-// Module 12246 (ConjurePublishSheet)
+// Module 12407 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5247 */;
-import useChannelNameDefault from "useChannelName" /* 5641 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6832 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7355 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8631 */;
-import ScreenIcon from "ScreenIcon" /* 9546 */;
-import ShieldIcon from "ShieldIcon" /* 11027 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11857 */;
-import RobotIcon from "RobotIcon" /* 12247 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12249 */;
-import BadgeIcon from "BadgeIcon" /* 12251 */;
+import nativeDefault from "native" /* 575 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useChannelNameDefault from "useChannelName" /* 5647 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6839 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7363 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8665 */;
+import AppsIcon2 from "AppsIcon" /* 8670 */;
+import ScreenIcon from "ScreenIcon" /* 9565 */;
+import ShieldIcon from "ShieldIcon" /* 11255 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12400 */;
+import RobotIcon from "RobotIcon" /* 12408 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12410 */;
+import BadgeIcon from "BadgeIcon" /* 12412 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6831 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6838 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -44,11 +44,8 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-let tmp;
 let tmp2;
-const intl10 = tmp2(1125);
-const Text_Text = tmp(5271);
-const AppsIcon2 = tmp(8636);
+const intl10 = tmp2(1114);
 function showCriticalToast(text) {
   obj = ToastActionCreatorsDefault;
   obj2 = { text, variant: "critical" };
@@ -57,6 +54,36 @@ function showCriticalToast(text) {
 function hidePublishSheet() {
   obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet(ConjurePublishSheet_str);
+}
+function ConjurePublishSheet(projectId) {
+  let closure_1;
+  let entryPoint;
+  let publishOptions;
+  projectId = projectId.projectId;
+  ({ publishOptions, entryPoint } = projectId);
+  let tmp = useConjurePublishActionDefault(projectId, publishOptions);
+  obj = projectId(504);
+  const items = [ConjureProjectStore];
+  const items1 = [projectId];
+  const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
+  importDefault = tmp3;
+  const items2 = [tmp3];
+  const effect = react.useEffect(() => {
+    const tmp = closure_1;
+    if (tmp) {
+      obj = ActionSheetActionCreatorsDefault;
+      obj.hideActionSheet(ConjurePublishSheet_str);
+    }
+  }, items2);
+  let tmp5 = null;
+  if (null != tmp) {
+    tmp5 = null;
+    if (null != stateFromStores) {
+      obj2 = { project: stateFromStores, publish: tmp, entryPoint };
+      tmp5 = closure_7(PublishSheetBody, obj2);
+    }
+  }
+  return tmp5;
 }
 function PublishSheetBody(entryPoint) {
   let UserIcon;
@@ -113,7 +140,7 @@ function PublishSheetBody(entryPoint) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -140,12 +167,12 @@ function PublishSheetBody(entryPoint) {
             closure_128_3.current = false;
             throw closure_2;
           } else if (2 === c1) {
-            const intl = tmp(closure_2[25]).intl;
-            closure_1_14(intl.string(c1(closure_2[26]).Fi7boI));
+            const intl = tmp(closure_2[23]).intl;
+            closure_1_14(intl.string(c1(closure_2[24]).Fi7boI));
             c3 = 0;
             closure_128_3.current = false;
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -172,11 +199,11 @@ function PublishSheetBody(entryPoint) {
               }
             } else {
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp32) {
           closure_2 = tmp32;
           if (0 === c3) {
@@ -194,12 +221,12 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12253)(project, publish);
+  const tmp4 = entryPoint(12414)(project, publish);
   dependencyMap = tmp4;
-  entryPoint(6010)(() => true, tmp4.saving);
+  entryPoint(6017)(() => true, tmp4.saving);
   obj = react;
   let closure_3 = react.useRef(false);
-  const context = react.useContext(entryPoint(5617));
+  const context = react.useContext(entryPoint(5586));
   let transitionState;
   if (context != null) {
     transitionState = context.transitionState;
@@ -224,24 +251,24 @@ function PublishSheetBody(entryPoint) {
     isPrivate = appChannelsPrivate.isPrivate;
   }
   if (true === isPrivate) {
-    AppsIcon = publish(8635).AppsLockIcon;
+    AppsIcon = publish(8669).AppsLockIcon;
     tmp12 = publish;
   } else {
     let tmp11 = publish;
-    AppsIcon = publish(8636).AppsIcon;
+    AppsIcon = publish(8670).AppsIcon;
     tmp12 = publish;
   }
   if (initial) {
     const initialChannelNames = tmp4.initialChannelNames;
     mapped = initialChannelNames.map((label) => {
       obj = { icon: AppsIcon, label };
-      return metroImportDefault(closure_20, obj, "channel:" + label);
+      return metroImportDefault(ContentRow, obj, "channel:" + label);
     });
   } else {
     const channels = tmp4.channels;
     mapped = channels.map((channel) => {
       obj = { channel };
-      return obj(closure_1_22, obj, channel.id);
+      return obj(ChannelRow, obj, channel.id);
     });
   }
   const items1 = [
@@ -249,13 +276,13 @@ function PublishSheetBody(entryPoint) {
     ...components.map((label) => {
       const surface = label.surface;
       obj = { icon: obj2[surface], label: label.label };
-      return obj(closure_1_20, obj, surface);
+      return obj(ContentRow, obj, surface);
     })
   ];
   components = tmp4.components;
-  obj2 = { startExpanded: editable, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl.string(tmp2(3864).NEPcoi), children: tmp16(tmp17, obj3) };
-  const ActionSheet = tmp12(7358).ActionSheet;
-  intl = tmp12(1125).intl;
+  obj2 = { startExpanded: editable, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl.string(tmp2(3865).NEPcoi), children: tmp16(tmp17, obj3) };
+  const ActionSheet = tmp12(7360).ActionSheet;
+  intl = tmp12(1114).intl;
   obj3 = { style: tmp.content, children: items2 };
   if (editable) {
     let obj4 = {
@@ -272,98 +299,98 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(12259).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(12420).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
-    tmp15Result = tmp15(tmp2(12264), obj5);
+    tmp15Result = tmp15(tmp2(12425), obj5);
   }
   items2 = [tmp15Result, , , , , , ];
   if (editable) {
-    const obj6 = { label: intl2.string(entryPoint(3864).knevPu), value: null, onChange: null, maxLength: tmp12(6832).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-    const TextInput = tmp12(7068).TextInput;
-    intl2 = tmp12(1125).intl;
+    const obj6 = { label: intl2.string(entryPoint(3865).knevPu), value: null, onChange: null, maxLength: tmp12(6839).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+    const TextInput = tmp12(7076).TextInput;
+    intl2 = tmp12(1114).intl;
     ({ name: obj9.value, setName: obj9.onChange } = tmp4);
     ({ saving: obj9.disabled, nameError } = tmp4);
     const obj7 = { children: items3 };
     items3 = [tmp15(TextInput, obj6), ];
-    const obj8 = { label: intl3.string(entryPoint(3864).ynaGa1), placeholder: intl4.string(entryPoint(3864)["I+3UTL"]), value: null, onChange: null, maxLength: tmp12(6832).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
-    const TextArea = tmp12(7240).TextArea;
-    intl3 = tmp12(1125).intl;
-    intl4 = tmp12(1125).intl;
+    const obj8 = { label: intl3.string(entryPoint(3865).ynaGa1), placeholder: intl4.string(entryPoint(3865)["I+3UTL"]), value: null, onChange: null, maxLength: tmp12(6839).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
+    const TextArea = tmp12(7247).TextArea;
+    intl3 = tmp12(1114).intl;
+    intl4 = tmp12(1114).intl;
     ({ description: obj11.value, setDescription: obj11.onChange } = identity);
     items3[1] = obj(TextArea, obj8);
     tmp16Result = tmp16(closure_8, obj7);
   } else {
     const obj10 = { style: tmp.nameGroup, children: items4 };
     const obj12 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, children: tmp4.displayName };
-    items4 = [tmp15(tmp12(5271).Text, obj12), ];
+    items4 = [tmp15(tmp12(5619).Text, obj12), ];
     let tmp15Result6 = null;
     if ("" !== tmp4.description) {
       const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
-      tmp15Result6 = tmp15(tmp12(5271).Text, obj13);
+      tmp15Result6 = tmp15(tmp12(5619).Text, obj13);
     }
     items4[1] = tmp15Result6;
     tmp16Result = tmp16(tmp17, obj10);
   }
   items2[1] = tmp16Result;
-  const obj14 = { title: intl5.string(entryPoint(3864).BqNMms), rows: items1 };
-  intl5 = tmp12(1125).intl;
-  items2[2] = obj(closure_19, obj14);
+  const obj14 = { title: intl5.string(entryPoint(3865).BqNMms), rows: items1 };
+  intl5 = tmp12(1114).intl;
+  items2[2] = obj(RowSection, obj14);
   let tmp15Result7 = null;
-  const tmp22 = closure_19;
+  const tmp22 = RowSection;
   if (null != appChannelsPrivate) {
     const obj15 = { channelCount: tmp4.initialChannelNames.length, appChannelsPrivate, disabled: tmp4.saving };
-    tmp15Result7 = tmp15(closure_21, obj15);
+    tmp15Result7 = tmp15(AppChannelsPrivateSection, obj15);
   }
   items2[3] = tmp15Result7;
   const obj16 = {
-    title: intl6.string(entryPoint(3864).LnqeFd),
+    title: intl6.string(entryPoint(3865).LnqeFd),
     following: items1.length > 0 && null == appChannelsPrivate,
     rows: devicePermissions.map((item) => {
       let intl;
-      obj = { icon: closure_1_11[item], label: intl.string(publish(closure_2[20]).CONJURE_PUBLISH_PERMISSION_LABELS[item]) };
-      intl = publish(closure_2[25]).intl;
-      return obj(closure_1_20, obj, item);
+      obj = { icon: closure_1_11[item], label: intl.string(publish(closure_2[18]).CONJURE_PUBLISH_PERMISSION_LABELS[item]) };
+      intl = publish(closure_2[23]).intl;
+      return obj(ContentRow, obj, item);
     })
   };
-  intl6 = tmp12(1125).intl;
+  intl6 = tmp12(1114).intl;
   devicePermissions = tmp4.devicePermissions;
   items2[4] = obj(tmp22, obj16);
   let tmp16Result2 = null;
   if (null != sharing) {
     let tmp15Result8;
-    const obj17 = { title: intl7.string(entryPoint(3864).esTM8y) };
-    intl7 = tmp12(1125).intl;
-    const items5 = [tmp15(closure_18, obj17), ];
+    const obj17 = { title: intl7.string(entryPoint(3865).esTM8y) };
+    intl7 = tmp12(1114).intl;
+    const items5 = [tmp15(SectionTitle, obj17), ];
     const obj18 = { style: tmp.sharingRow, children: items6 };
     if (null != sharing.guild) {
-      const obj19 = { guild: sharing.guild, size: tmp12(6943).GuildIconSizes.SMALL_36 };
-      const tmp2Result = entryPoint(6943);
+      const obj19 = { guild: sharing.guild, size: tmp12(6951).GuildIconSizes.SMALL_36 };
+      const tmp2Result = entryPoint(6951);
       tmp15Result8 = tmp15(tmp2Result, obj19);
     } else {
       const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
-      obj21 = { size: "xs", color: entryPoint(587).colors.ICON_DEFAULT };
-      UserIcon = tmp12(12268).UserIcon;
+      obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
+      UserIcon = tmp12(12431).UserIcon;
       tmp15Result8 = tmp15(tmp17, obj20);
     }
     items6 = [tmp15Result8, ];
     const guild = sharing.guild;
     let name;
     const obj22 = { style: tmp.rowText, children: items7 };
-    const Text = tmp12(5271).Text;
+    const Text = tmp12(5619).Text;
     if (guild != null) {
       name = guild.name;
     }
     if (name == null) {
-      const intl8 = tmp12(1125).intl;
-      name = intl8.string(tmp2(3864)["37xgkF"]);
+      const intl8 = tmp12(1114).intl;
+      name = intl8.string(tmp2(3865)["37xgkF"]);
     }
     const obj23 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: name };
     items7 = [tmp15(Text, obj23), ];
     let tmp15Result9 = null;
     if (null != sharing.caption) {
       const obj24 = { variant: "text-xs/normal", color: "text-subtle", children: sharing.caption };
-      tmp15Result9 = tmp15(tmp12(5271).Text, obj24);
+      tmp15Result9 = tmp15(tmp12(5619).Text, obj24);
     }
     const obj25 = { children: items5 };
     items7[1] = tmp15Result9;
@@ -376,13 +403,13 @@ function PublishSheetBody(entryPoint) {
   const obj26 = { style: tmp.footer, children: items8 };
   if (null != tmp4.note) {
     const obj27 = { variant: "text-sm/normal", color: "text-subtle", children: tmp4.note };
-    tmp15Result10 = tmp15(tmp12(5271).Text, obj27);
+    tmp15Result10 = tmp15(tmp12(5619).Text, obj27);
   }
   items8 = [tmp15Result10, ];
   const obj28 = { style: tmp.actions, children: items9 };
-  const obj55 = { variant: "secondary", size: "md", grow: true, text: intl9.string(tmp12(1125).t["ETE/oC"]), disabled: tmp4.saving, onPress: hidePublishSheet };
-  const Button = tmp12(5281).Button;
-  intl9 = tmp12(1125).intl;
+  const obj55 = { variant: "secondary", size: "md", grow: true, text: intl9.string(tmp12(1114).t["ETE/oC"]), disabled: tmp4.saving, onPress: hidePublishSheet };
+  const Button = tmp12(5629).Button;
+  intl9 = tmp12(1114).intl;
   items9 = [tmp15(Button, obj55), ];
   const obj56 = {
     variant: "primary",
@@ -396,7 +423,7 @@ function PublishSheetBody(entryPoint) {
     }
   };
   disabled = publish.disabled;
-  const Button2 = tmp12(5281).Button;
+  const Button2 = tmp12(5629).Button;
   if (!disabled) {
     disabled = null != tmp4.nameError;
   }
@@ -404,6 +431,75 @@ function PublishSheetBody(entryPoint) {
   items8[1] = closure_9(closure_5, obj28);
   items2[6] = closure_9(closure_5, obj26);
   return obj(ActionSheet, obj2);
+}
+function SectionTitle(title) {
+  title = title.title;
+  obj = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_13().sectionTitle, children: title };
+  return metroImportDefault(Text_Text.Text, obj);
+}
+function RowSection(title) {
+  let following;
+  let items;
+  let rows;
+  ({ rows, following } = title);
+  title = title.title;
+  if (following === undefined) {
+    following = false;
+  }
+  let tmp3Result = null;
+  if (0 !== rows.length) {
+    const tmp3 = React4;
+    const tmp4 = View;
+    if (following) {
+      following = tmp.followingSection;
+    }
+    obj = { style: following, children: items };
+    obj2 = { title };
+    items = [metroImportDefault(SectionTitle, obj2), rows];
+    tmp3Result = tmp3(tmp4, obj);
+  }
+  return tmp3Result;
+}
+function ContentRow(arg0) {
+  let icon;
+  let items;
+  let label;
+  ({ icon, label } = arg0);
+  obj = { style: closure_13().row, children: items };
+  items = [, ];
+  obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
+  items[0] = metroImportDefault(icon, obj2);
+  items[1] = metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-strong", lineClamp: 1, children: label });
+  return React4(View, obj);
+}
+function AppChannelsPrivateSection(appChannelsPrivate) {
+  let channelCount;
+  let disabled;
+  let intl;
+  appChannelsPrivate = appChannelsPrivate.appChannelsPrivate;
+  const isPrivate = appChannelsPrivate.isPrivate;
+  ({ channelCount, disabled } = appChannelsPrivate);
+  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
+  let str = "text-muted";
+  const Text = Text_Text.Text;
+  if (isPrivate) {
+    str = "text-default";
+  }
+  obj = { start: true, end: true, label: metroImportDefault(Text, obj2), value: isPrivate, disabled, onValueChange: appChannelsPrivate.setPrivate };
+  obj2 = { variant: "text-md/medium", color: str, children: intl.formatToPlainString(_modDef3865.Td1mlg, { count: channelCount }) };
+  intl = intl10.intl;
+  return metroImportDefault(TableSwitchRow, obj);
+}
+function ChannelRow(channel) {
+  let str;
+  obj = { icon: AppsIcon2.AppsIcon, label: str };
+  str = useChannelNameDefault(channel.channel);
+  const tmp = metroImportDefault;
+  const tmp2 = ContentRow;
+  if (str == null) {
+    str = "";
+  }
+  return tmp(tmp2, obj);
 }
 let react = react_mod;
 const View = react_native.View;
@@ -428,398 +524,10 @@ obj10 = { padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.s
 obj11 = { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 obj12 = { flexDirection: "row", gap: nativeDefault.space.PX_8 };
 let closure_13 = createStyles(obj3);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePublishSheet(projectId) {
-  let closure_1;
-  let first;
-  let tmp11;
-  let tmp12;
-  let tmp7;
-  let tmp8;
-  let tmp = projectId;
-  obj = projectId(576);
-  const cResult = obj.c(11);
-  projectId = projectId.projectId;
-  const entryPoint = projectId.entryPoint;
-  const tmp4 = useConjurePublishActionDefault(projectId, projectId.publishOptions);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ConjureProjectStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== projectId) {
-    const fn = function s() {
-      return ConjureProjectStore.getProject(projectId);
-    };
-    const items1 = [projectId];
-    cResult[1] = projectId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp7, tmp8);
-  importDefault = tmp10;
-  if (cResult[4] !== (null == tmp4 || null == stateFromStores)) {
-    class C {
-      constructor() {
-        const tmp = closure_1;
-        if (tmp) {
-          obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(ConjurePublishSheet_str);
-        }
-      }
-    }
-    const items2 = [null == tmp4 || null == stateFromStores];
-    cResult[4] = null == tmp4 || null == stateFromStores;
-    cResult[5] = C;
-    cResult[6] = items2;
-    tmp12 = items2;
-    tmp11 = C;
-  } else {
-    class C {
-      constructor() {
-        const tmp = closure_1;
-        if (tmp) {
-          obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(ConjurePublishSheet_str);
-        }
-      }
-    }
-    tmp12 = cResult[6];
-  }
-  const effect = react.useEffect(tmp11, tmp12);
-  if (cResult[7] === entryPoint) {
-    class C {
-      constructor() {
-        const tmp = closure_1;
-        if (tmp) {
-          obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(ConjurePublishSheet_str);
-        }
-      }
-    }
-  }
-  let tmp14 = null;
-  if (null != tmp4) {
-    class C {
-      constructor() {
-        const tmp = closure_1;
-        if (tmp) {
-          obj = ActionSheetActionCreatorsDefault;
-          obj.hideActionSheet(ConjurePublishSheet_str);
-        }
-      }
-    }
-    if (null != stateFromStores) {
-      class C {
-        constructor() {
-          const tmp = closure_1;
-          if (tmp) {
-            obj = ActionSheetActionCreatorsDefault;
-            obj.hideActionSheet(ConjurePublishSheet_str);
-          }
-        }
-      }
-      obj2 = { project: stateFromStores, publish: tmp4, entryPoint };
-      tmp14 = closure_7(PublishSheetBody, obj2);
-    }
-  }
-  cResult[7] = entryPoint;
-  cResult[8] = stateFromStores;
-  cResult[9] = tmp4;
-  cResult[10] = tmp14;
-}) : (function ConjurePublishSheet(projectId) {
-  let closure_1;
-  let entryPoint;
-  let publishOptions;
-  projectId = projectId.projectId;
-  ({ publishOptions, entryPoint } = projectId);
-  let tmp = useConjurePublishActionDefault(projectId, publishOptions);
-  obj = projectId(504);
-  const items = [ConjureProjectStore];
-  const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  importDefault = tmp3;
-  const items2 = [tmp3];
-  const effect = react.useEffect(() => {
-    const tmp = closure_1;
-    if (tmp) {
-      obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet(ConjurePublishSheet_str);
-    }
-  }, items2);
-  let tmp5 = null;
-  if (null != tmp) {
-    tmp5 = null;
-    if (null != stateFromStores) {
-      obj2 = { project: stateFromStores, publish: tmp, entryPoint };
-      tmp5 = closure_7(PublishSheetBody, obj2);
-    }
-  }
-  return tmp5;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function SectionTitle(title) {
-  obj = react2;
-  const cResult = obj.c(3);
-  title = title.title;
-  const tmp4 = closure_13();
-  if (cResult[0] === tmp4.sectionTitle) {
-    let tmp5;
-    if (cResult[1] === title) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  obj2 = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: tmp4.sectionTitle, children: title };
-  const tmp6 = metroImportDefault(Text_Text.Text, obj2);
-  cResult[0] = tmp4.sectionTitle;
-  cResult[1] = title;
-  cResult[2] = tmp6;
-  tmp5 = tmp6;
-}) : (function SectionTitle(title) {
-  title = title.title;
-  obj = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_13().sectionTitle, children: title };
-  return metroImportDefault(Text_Text.Text, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function RowSection(arg0) {
-  let following;
-  let items;
-  let rows;
-  let title;
-  obj = react2;
-  const cResult = obj.c(6);
-  ({ title, rows, following } = arg0);
-  let followingSection = undefined !== following && following;
-  if (0 === rows.length) {
-    return null;
-  } else {
-    let tmp3;
-    if (followingSection) {
-      followingSection = tmp2.followingSection;
-    }
-    if (cResult[0] !== title) {
-      obj2 = { title };
-      const tmp6 = metroImportDefault(closure_18, obj2);
-      cResult[0] = title;
-      cResult[1] = tmp6;
-      tmp3 = tmp6;
-    } else {
-      tmp3 = cResult[1];
-    }
-    if (cResult[2] === rows) {
-      if (cResult[3] === followingSection) {
-        let tmp7;
-        if (cResult[4] === tmp3) {
-          tmp7 = cResult[5];
-        }
-        return tmp7;
-      }
-    }
-    const obj3 = { style: followingSection, children: items };
-    items = [tmp3, rows];
-    const tmp10 = React4(View, obj3);
-    cResult[2] = rows;
-    cResult[3] = followingSection;
-    cResult[4] = tmp3;
-    cResult[5] = tmp10;
-    tmp7 = tmp10;
-  }
-}) : (function RowSection(title) {
-  let following;
-  let items;
-  let rows;
-  ({ rows, following } = title);
-  title = title.title;
-  if (following === undefined) {
-    following = false;
-  }
-  let tmp3Result = null;
-  if (0 !== rows.length) {
-    const tmp3 = React4;
-    const tmp4 = View;
-    if (following) {
-      following = tmp.followingSection;
-    }
-    obj = { style: following, children: items };
-    obj2 = { title };
-    items = [metroImportDefault(closure_18, obj2), rows];
-    tmp3Result = tmp3(tmp4, obj);
-  }
-  return tmp3Result;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContentRow(arg0) {
-  let icon;
-  let items;
-  let label;
-  let tmp5;
-  let tmp9;
-  obj = react2;
-  const cResult = obj.c(8);
-  ({ icon, label } = arg0);
-  const tmp4 = closure_13();
-  if (cResult[0] !== icon) {
-    obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const tmp8 = metroImportDefault(icon, obj2);
-    cResult[0] = icon;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== label) {
-    const obj3 = { variant: "text-md/semibold", color: "text-strong", lineClamp: 1, children: label };
-    const tmp11 = metroImportDefault(Text_Text.Text, obj3);
-    cResult[2] = label;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  if (cResult[4] === tmp4.row) {
-    if (cResult[5] === tmp5) {
-      let tmp12;
-      if (cResult[6] === tmp9) {
-        tmp12 = cResult[7];
-      }
-      return tmp12;
-    }
-  }
-  const obj4 = { style: tmp4.row, children: items };
-  items = [tmp5, tmp9];
-  const tmp13 = React4(View, obj4);
-  cResult[4] = tmp4.row;
-  cResult[5] = tmp5;
-  cResult[6] = tmp9;
-  cResult[7] = tmp13;
-  tmp12 = tmp13;
-}) : (function ContentRow(arg0) {
-  let icon;
-  let items;
-  let label;
-  ({ icon, label } = arg0);
-  obj = { style: closure_13().row, children: items };
-  items = [, ];
-  obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-  items[0] = metroImportDefault(icon, obj2);
-  items[1] = metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-strong", lineClamp: 1, children: label });
-  return React4(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_21 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppChannelsPrivateSection(arg0) {
-  let appChannelsPrivate;
-  let channelCount;
-  let disabled;
-  let tmp4;
-  obj = react2;
-  const cResult = obj.c(10);
-  ({ channelCount, appChannelsPrivate, disabled } = arg0);
-  const isPrivate = appChannelsPrivate.isPrivate;
-  let str = "text-muted";
-  if (isPrivate) {
-    str = "text-default";
-  }
-  if (cResult[0] !== channelCount) {
-    const intl = tmp(1125).intl;
-    obj2 = { count: channelCount };
-    const formatToPlainStringResult = intl.formatToPlainString(_modDef3864.Td1mlg, obj2);
-    cResult[0] = channelCount;
-    cResult[1] = formatToPlainStringResult;
-    tmp4 = formatToPlainStringResult;
-  } else {
-    tmp4 = cResult[1];
-  }
-  if (cResult[2] === str) {
-    let tmp7;
-    if (cResult[3] === tmp4) {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] === appChannelsPrivate.setPrivate) {
-      if (cResult[6] === disabled) {
-        if (cResult[7] === isPrivate) {
-          let tmp9;
-          if (cResult[8] === tmp7) {
-            tmp9 = cResult[9];
-          }
-          return tmp9;
-        }
-      }
-    }
-    const obj3 = { start: true, end: true, label: tmp7, value: isPrivate, disabled, onValueChange: appChannelsPrivate.setPrivate };
-    const tmp11 = metroImportDefault(TableSwitchRow2.TableSwitchRow, obj3);
-    cResult[5] = appChannelsPrivate.setPrivate;
-    cResult[6] = disabled;
-    cResult[7] = isPrivate;
-    cResult[8] = tmp7;
-    cResult[9] = tmp11;
-    tmp9 = tmp11;
-  }
-  const tmp8 = metroImportDefault(Text_Text.Text, { variant: "text-md/medium", color: str, children: tmp4 });
-  cResult[2] = str;
-  cResult[3] = tmp4;
-  cResult[4] = tmp8;
-  tmp7 = tmp8;
-}) : (function AppChannelsPrivateSection(appChannelsPrivate) {
-  let channelCount;
-  let disabled;
-  let intl;
-  appChannelsPrivate = appChannelsPrivate.appChannelsPrivate;
-  const isPrivate = appChannelsPrivate.isPrivate;
-  ({ channelCount, disabled } = appChannelsPrivate);
-  const TableSwitchRow = TableSwitchRow2.TableSwitchRow;
-  let str = "text-muted";
-  const Text = Text_Text.Text;
-  if (isPrivate) {
-    str = "text-default";
-  }
-  obj = { start: true, end: true, label: metroImportDefault(Text, obj2), value: isPrivate, disabled, onValueChange: appChannelsPrivate.setPrivate };
-  obj2 = { variant: "text-md/medium", color: str, children: intl.formatToPlainString(_modDef3864.Td1mlg, { count: channelCount }) };
-  intl = intl10.intl;
-  return metroImportDefault(TableSwitchRow, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_22 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelRow(channel) {
-  let tmp4;
-  obj = react2;
-  const cResult = obj.c(2);
-  let str = useChannelNameDefault(channel.channel);
-  if (str == null) {
-    str = "";
-  }
-  if (cResult[0] !== str) {
-    obj2 = { icon: AppsIcon2.AppsIcon, label: str };
-    const tmp7 = metroImportDefault(closure_20, obj2);
-    cResult[0] = str;
-    cResult[1] = tmp7;
-    tmp4 = tmp7;
-  } else {
-    tmp4 = cResult[1];
-  }
-  return tmp4;
-}) : (function ChannelRow(channel) {
-  let str;
-  obj = { icon: AppsIcon2.AppsIcon, label: str };
-  str = useChannelNameDefault(channel.channel);
-  const tmp = metroImportDefault;
-  const tmp2 = closure_20;
-  if (str == null) {
-    str = "";
-  }
-  return tmp(tmp2, obj);
-});
 const result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishSheet.tsx");
 
 export default function showConjurePublishSheet(arg0) {
-  obj = { key: ConjurePublishSheet_str, content: metroImportDefault(closure_16, obj2) };
+  obj = { key: ConjurePublishSheet_str, content: metroImportDefault(ConjurePublishSheet, obj2) };
   const showActionSheet = ActionSheetActionCreators.showActionSheet;
   obj2 = {};
   ActionSheetActionCreators;

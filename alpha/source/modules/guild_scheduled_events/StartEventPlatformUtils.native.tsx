@@ -1,19 +1,19 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9085
+// Function ID: 9086
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 4857, 5752, 5036, 4863, 1084, 38, 7936, 7931, 6693, 1111, 2]
+// Dependencies: [5, 4858, 5759, 5040, 4864, 1072, 38, 7942, 7937, 6700, 1100, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 9072 (StartEventPlatformUtils)
+// Module 9085 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1084 */;
-import router_utils from "router_utils" /* 1111 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4863 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7936 */;
+import Constants from "Constants" /* 1072 */;
+import router_utils from "router_utils" /* 1100 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4864 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === c4) {

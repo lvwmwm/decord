@@ -1,11 +1,11 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12542
+// Function ID: 12543
 // Name: conjureQueuedMessage
-// Dependencies: [10829, 2]
-// Exports: queuedMessageActionHandler
+// Dependencies: [10852, 2]
+// Exports: queuedMessageActionHandler, queuedUserMessages
 
-// Module 12455 (conjureQueuedMessage)
-import conjureChatConnection from "conjureChatConnection" /* 10829 */;
+// Module 12542 (conjureQueuedMessage)
+import conjureChatConnection from "conjureChatConnection" /* 10852 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureQueuedMessage.tsx");
@@ -24,4 +24,7 @@ export function queuedMessageActionHandler(projectId, message, stateFromStores) 
       }
     }
   }
+}
+export function queuedUserMessages(stateFromStores) {
+  return stateFromStores.filter((role) => "user" === role.role && "queued" === role.disposition);
 }

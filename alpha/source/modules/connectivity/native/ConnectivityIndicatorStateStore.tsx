@@ -1,19 +1,19 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15534
+// Function ID: 15535
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [7643, 502, 6049, 4908, 1999, 1084, 3, 15495, 504, 1481, 584, 2]
+// Dependencies: [7648, 502, 6056, 4912, 1994, 1072, 3, 15535, 504, 1476, 572, 2]
 
-// Module 15494 (ConnectivityIndicatorStateStore)
+// Module 15534 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import NetworkUtilsDefault from "NetworkUtils" /* 1481 */;
-import CacheStore from "CacheStore" /* 7643 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import NetworkUtilsDefault from "NetworkUtils" /* 1476 */;
+import CacheStore from "CacheStore" /* 7648 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import AppStateStore from "AppStateStore" /* 1999 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import AppStateStore from "AppStateStore" /* 1994 */;
 import size from "module_2" /* 2 */;
 
 let c16, closure_13, delayMs;
@@ -60,7 +60,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj4 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp24 };
             if (CacheStore.hasCache()) {
-              const obj16 = state(15495);
+              const obj16 = state(15535);
               let num2 = obj16.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -85,7 +85,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj8 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp19 };
             if (CacheStore.hasCache()) {
-              const obj11 = state(15495);
+              const obj11 = state(15535);
               let num = obj11.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

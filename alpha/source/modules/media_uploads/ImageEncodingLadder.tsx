@@ -1,10 +1,10 @@
-// Module ID: 8222
-// Function ID: 8223
+// Module ID: 8225
+// Function ID: 8226
 // Name: ImageEncodingLadder
-// Dependencies: [1084, 2]
+// Dependencies: [1072, 2]
 
-// Module 8222 (ImageEncodingLadder)
-import Constants from "Constants" /* 1084 */;
+// Module 8225 (ImageEncodingLadder)
+import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
 function getAdaptiveImageCompressionQuality(size, ADAPTIVE_COMPRESSION_CONFIG) {

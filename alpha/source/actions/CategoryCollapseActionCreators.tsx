@@ -1,11 +1,11 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11549
+// Function ID: 11550
 // Name: CategoryCollapseActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 11346 (CategoryCollapseActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 11549 (CategoryCollapseActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/CategoryCollapseActionCreators.tsx");

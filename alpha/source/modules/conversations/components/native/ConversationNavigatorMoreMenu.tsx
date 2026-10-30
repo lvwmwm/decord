@@ -1,151 +1,36 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9848
+// Function ID: 9849
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [109, 19, 17, 21, 5005, 587, 558, 576, 1125, 9823, 9802, 9805, 5700, 9825, 8014, 9710, 9827, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 1114, 9849, 9828, 9831, 5706, 9851, 9853, 8020, 9736, 2]
+// Exports: default
 
-// Module 9822 (ConversationNavigatorMoreMenu)
+// Module 9848 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import IconButton2 from "IconButton" /* 8014 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9710 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9802 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9805 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9823 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9825 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import IconButton2 from "IconButton" /* 8020 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9736 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 9849 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 9851 */;
+import react_mod from "react" /* 19 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-let closure_2 = ["ref"];
+let react = react_mod;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12 };
-let closure_7 = createStyles.createStyles(obj);
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConversationNavigatorMoreMenu(channelId) {
-  let conversationId;
-  let first;
-  let tmp = channelId;
-  let obj = channelId(conversationId[7]);
-  const cResult = obj.c(16);
-  channelId = channelId.channelId;
-  conversationId = channelId.conversationId;
-  const tmp4 = closure_7();
-  const container = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(tmp2[8]).intl;
-    const stringResult = intl.string(tmp(conversationId[8]).t["7iRs51"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === channelId) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === conversationId) {
-      tmp7 = cResult[3];
-    }
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(tmp2[8]).intl;
-      const stringResult1 = intl2.string(tmp(conversationId[8]).t.uNGhdg);
-      cResult[4] = stringResult1;
-      tmp8 = stringResult1;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === channelId) {
-      let tmp10;
-      if (cResult[6] === conversationId) {
-        tmp10 = cResult[7];
-      }
-      if (cResult[8] === tmp7) {
-        let tmp11;
-        let tmp12;
-        if (cResult[9] === tmp10) {
-          tmp11 = cResult[10];
-        }
-        if (cResult[11] !== tmp4.container) {
-          const fn = function y(ref) {
-            let intl;
-            ({ size: "sm", variant: "tertiary", accessibilityLabel: intl.string(intl3.t["6Ic4Ev"]), icon: jsx(MoreHorizontalIcon.MoreHorizontalIcon, { size: "sm" }) });
-            const tmp = _objectWithoutProperties(ref, container);
-            const IconButton = IconButton2.IconButton;
-            const merged = Object.assign(tmp);
-            intl = intl3.intl;
-            return <View style={container.container} ref={arg0.ref}>{null}</View>;
-          };
-          cResult[11] = tmp4.container;
-          cResult[12] = fn;
-          tmp12 = fn;
-        } else {
-          tmp12 = cResult[12];
-        }
-        if (cResult[13] === tmp11) {
-          let tmp13;
-          if (cResult[14] === tmp12) {
-            tmp13 = cResult[15];
-          }
-          return tmp13;
-        }
-        const tmp15 = jsx(tmp(conversationId[16]).ContextMenu, { items: tmp11, children: tmp12 });
-        cResult[13] = tmp11;
-        cResult[14] = tmp12;
-        cResult[15] = tmp15;
-        tmp13 = tmp15;
-      }
-      const items = [tmp7, tmp10];
-      cResult[8] = tmp7;
-      cResult[9] = tmp10;
-      cResult[10] = items;
-      tmp11 = items;
-    }
-    let obj3 = {
-      label: tmp8,
-      IconComponent: tmp(conversationId[13]).ThumbsDownIcon,
-      action() {
-          const obj = ConversationsActionCreators;
-          const result = obj.setConversationFeedbackRating(channelId, conversationId, "down");
-          const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-          const obj2 = { channelId, conversationId, isThumbsUp: false, isFocusMode: true };
-          ConversationsAnalytics.trackThumbsClicked(obj2);
-          const obj3 = ToastUtils;
-          obj3.presentFeedbackSent();
-        }
-    };
-    cResult[5] = channelId;
-    cResult[6] = conversationId;
-    cResult[7] = obj3;
-    tmp10 = obj3;
-  }
-  const obj4 = {
-    label: first,
-    IconComponent: tmp(conversationId[9]).ThumbsUpIcon,
-    action() {
-      const obj = ConversationsActionCreators;
-      const result = obj.setConversationFeedbackRating(channelId, conversationId, "up");
-      const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
-      const obj2 = { channelId, conversationId, isThumbsUp: true, isFocusMode: true };
-      ConversationsAnalytics.trackThumbsClicked(obj2);
-      const obj3 = ToastUtils;
-      obj3.presentFeedbackSent();
-    }
-  };
-  cResult[1] = channelId;
-  cResult[2] = conversationId;
-  cResult[3] = obj4;
-  tmp7 = obj4;
-}) : (function ConversationNavigatorMoreMenu(channelId) {
+let closure_5 = createStyles.createStyles(obj);
+let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorMoreMenu.tsx");
+
+export default function ConversationNavigatorMoreMenu(channelId) {
+  let container;
   channelId = channelId.channelId;
   const conversationId = channelId.conversationId;
-  const container = closure_7();
+  react = closure_5();
   let items = [channelId, conversationId];
   const memo = react.useMemo(() => {
     let intl;
@@ -154,12 +39,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
       label: intl.string(intl3.t["7iRs51"]),
       IconComponent: ThumbsUpIcon.ThumbsUpIcon,
       action() {
-        const obj = channelId(conversationId[10]);
+        const obj = channelId(conversationId[7]);
         const result = obj.setConversationFeedbackRating(channelId, conversationId, "up");
-        const ConversationsAnalytics = channelId(conversationId[11]).ConversationsAnalytics;
+        const ConversationsAnalytics = channelId(conversationId[8]).ConversationsAnalytics;
         const obj2 = { channelId, conversationId, isThumbsUp: true, isFocusMode: true };
         ConversationsAnalytics.trackThumbsClicked(obj2);
-        const obj3 = channelId(conversationId[12]);
+        const obj3 = channelId(conversationId[9]);
         obj3.presentFeedbackSent();
       }
     };
@@ -169,12 +54,12 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
       label: intl2.string(intl3.t.uNGhdg),
       IconComponent: ThumbsDownIcon.ThumbsDownIcon,
       action() {
-        const obj = channelId(conversationId[10]);
+        const obj = channelId(conversationId[7]);
         const result = obj.setConversationFeedbackRating(channelId, conversationId, "down");
-        const ConversationsAnalytics = channelId(conversationId[11]).ConversationsAnalytics;
+        const ConversationsAnalytics = channelId(conversationId[8]).ConversationsAnalytics;
         const obj2 = { channelId, conversationId, isThumbsUp: false, isFocusMode: true };
         ConversationsAnalytics.trackThumbsClicked(obj2);
-        const obj3 = channelId(conversationId[12]);
+        const obj3 = channelId(conversationId[9]);
         obj3.presentFeedbackSent();
       }
     };
@@ -182,7 +67,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
     items[1] = obj2;
     return items;
   }, items);
-  return jsx(channelId(conversationId[16]).ContextMenu, {
+  return jsx(channelId(conversationId[11]).ContextMenu, {
     items: memo,
     children(ref) {
       let intl;
@@ -194,7 +79,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conversati
       return <View style={container.container} ref={arg0.ref}>{null}</View>;
     }
   });
-});
-let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorMoreMenu.tsx");
-
-export default tmp2;
+};

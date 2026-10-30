@@ -1,15 +1,17 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6925
+// Function ID: 6926
 // Name: SpellcheckUtils
-// Dependencies: [5, 6919, 4819, 1381, 6921, 2]
+// Dependencies: [5, 6926, 4820, 1376, 6928, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 6918 (SpellcheckUtils)
-import DiscordNativeDefault from "DiscordNative" /* 4819 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6919 */;
+// Module 6925 (SpellcheckUtils)
+import DiscordNativeDefault from "DiscordNative" /* 4820 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6926 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
+
+let c4, c5;
 
 let obj = function _setEnabled() {
   let value;
@@ -26,7 +28,7 @@ let obj = function _setEnabled() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -56,7 +58,7 @@ let obj = function _setEnabled() {
               closure_1.enabled = enabled;
             }
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = 3;
@@ -81,7 +83,7 @@ obj = function _setLearnedWords() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -115,7 +117,7 @@ obj = function _setLearnedWords() {
             learnedWords.setLearnedWords(closure_0);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c3 = 3;
@@ -126,77 +128,258 @@ obj = function _setLearnedWords() {
   return obj(...arguments);
 };
 obj = function _isMisspelled() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c4;
-    let c5;
-    let closure_3;
+  obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
-    let closure_1 = arg1;
-    let misspelled = tmp;
-    let flag = closure_1;
-    if (closure_1 === undefined) {
-      flag = false;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let misspelled;
+        let flag;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp4;
+            misspelled = tmp;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = false;
+            }
+            misspelled = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: closure_131_5, done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          misspelled = value;
+          const isMisspelledResult = null != misspelled && misspelled.isMisspelled(closure_0, flag);
+          c5 = 3;
+          obj = { value: isMisspelledResult, done: true };
+          return obj;
+        }
+      } catch (tmp15) {
+        c5 = 3;
+        throw tmp15;
+      }
     }
-    await "Reflect";
-    misspelled = await closure_131_5;
-    const isMisspelledResult = null != misspelled && misspelled.isMisspelled(closure_0, flag);
-    return isMisspelledResult;
   });
   return obj(...arguments);
 };
 obj = function _getCorrections() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c5;
-    let c6;
-    let closure_4;
-    let items;
+  obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
-    let closure_1 = arg1;
+    let closure_1 = value;
     let closure_2 = arg2;
-    let correctionsForMisspelling = tmp;
-    let flag = closure_1;
-    if (closure_1 === undefined) {
-      flag = false;
-    }
-    let num10 = closure_2;
-    if (closure_2 === undefined) {
-      num10 = 5;
-    }
-    await "Reflect";
-    correctionsForMisspelling = await closure_132_5;
-    if (null == correctionsForMisspelling) {
-      items = [];
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      correctionsForMisspelling = correctionsForMisspelling.getCorrectionsForMisspelling(closure_0, flag);
-      items = correctionsForMisspelling.slice(0, num10);
+      try {
+        let correctionsForMisspelling;
+        let num10;
+        let flag;
+        c6 = 2;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_4 = tmp4;
+            correctionsForMisspelling = tmp;
+            num10 = undefined;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = false;
+            }
+            num10 = closure_2;
+            if (closure_2 === undefined) {
+              num10 = 5;
+            }
+            correctionsForMisspelling = undefined;
+            c5 = 1;
+            c6 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            c5 = 2;
+            c6 = 1;
+            const obj5 = { value: closure_132_5, done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          let items;
+          correctionsForMisspelling = value;
+          if (null == correctionsForMisspelling) {
+            items = [];
+          } else {
+            correctionsForMisspelling = correctionsForMisspelling.getCorrectionsForMisspelling(closure_0, flag);
+            items = correctionsForMisspelling.slice(0, num10);
+          }
+          c6 = 3;
+          obj = { value: items, done: true };
+          return obj;
+        }
+      } catch (tmp15) {
+        c6 = 3;
+        throw tmp15;
+      }
     }
-    return items;
   });
   return obj(...arguments);
 };
 obj = function _getCachedMisspelling() {
-  obj = _asyncToGenerator(async () => {
-    let c3;
-    let c4;
+  obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
     let corrections;
     let closure_0 = arg0;
-    let cachedMisspelling2 = tmp4;
-    let cachedMisspelling = tmp;
-    let num11 = closure_0;
-    if (closure_0 === undefined) {
-      num11 = 5;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let cachedMisspelling2;
+        let cachedMisspelling;
+        let num11;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            cachedMisspelling2 = tmp4;
+            cachedMisspelling = tmp;
+            num11 = closure_0;
+            if (closure_0 === undefined) {
+              num11 = 5;
+            }
+            cachedMisspelling = undefined;
+            cachedMisspelling2 = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            c3 = 2;
+            c4 = 1;
+            const obj5 = { value: closure_130_5, done: false };
+            return obj5;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          cachedMisspelling = value;
+          if (null == cachedMisspelling) {
+            const obj7 = { misspelledWord: "", corrections: [] };
+            c4 = 3;
+            const obj8 = { value: obj7, done: true };
+            return obj8;
+          } else {
+            cachedMisspelling2 = cachedMisspelling.getCachedMisspelling();
+            obj = { misspelledWord: cachedMisspelling2.misspelledWord, corrections: corrections.slice(0, num11) };
+            corrections = cachedMisspelling2.corrections;
+            c4 = 3;
+            const obj9 = { value: obj, done: true };
+            return obj9;
+          }
+        }
+      } catch (tmp11) {
+        c4 = 3;
+        throw tmp11;
+      }
     }
-    await "Reflect";
-    cachedMisspelling = await closure_130_5;
-    if (null == cachedMisspelling) {
-      const obj7 = { misspelledWord: "", corrections: [] };
-      return obj7;
-    }
-    cachedMisspelling2 = cachedMisspelling.getCachedMisspelling();
-    obj = { misspelledWord: cachedMisspelling2.misspelledWord, corrections: corrections.slice(0, num11) };
-    corrections = cachedMisspelling2.corrections;
-    return obj;
   });
   return obj(...arguments);
 };
@@ -215,7 +398,7 @@ obj = function _replaceWithCorrection() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -249,7 +432,7 @@ obj = function _replaceWithCorrection() {
             tmp.replaceMisspelling(closure_0);
           }
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp13) {
         c3 = 3;

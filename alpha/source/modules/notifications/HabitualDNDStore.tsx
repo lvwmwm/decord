@@ -1,18 +1,18 @@
-// Module ID: 15527
-// Function ID: 15528
+// Module ID: 15567
+// Function ID: 15568
 // Name: HabitualDNDStore
-// Dependencies: [6557, 1084, 1101, 4833, 584, 504, 2]
+// Dependencies: [6564, 1072, 1090, 4834, 572, 504, 2]
 
-// Module 15527 (HabitualDNDStore)
+// Module 15567 (HabitualDNDStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
 import size from "module_2" /* 2 */;
 
-const f125858 = (item) => {
+const f108401 = (item) => {
   const timestamp = Date.now();
   return item < timestamp - 3 * DurationsDefault.Millis.DAY;
 };
@@ -60,7 +60,7 @@ let obj = {
           return item > timestamp - 5 * DurationsDefault.Millis.DAY;
         });
         sessionStartsWithDND = found;
-        const someResult = found.length >= 4 && sessionStartsWithDND.some(f125858);
+        const someResult = found.length >= 4 && sessionStartsWithDND.some(f108401);
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
@@ -73,8 +73,8 @@ let obj = {
     sessionStartsWithDND = [];
   },
   HABITUAL_DND_CLEAR: function handleDNDClear() {
-    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f125858);
-    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f125858);
+    c6 = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108401);
+    const someResult = sessionStartsWithDND.length >= 4 && sessionStartsWithDND.some(f108401);
     sessionStartsWithDND = [];
   }
 };

@@ -1,17 +1,16 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 18475
+// Function ID: 18476
 // Name: ICYMIStoreUtils
-// Dependencies: [5, 6049, 6829, 8863, 1084, 18417, 8880, 8876, 7266, 2000, 1084, 11, 8881, 558, 576, 504, 2]
-// Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates
+// Dependencies: [5, 6056, 6836, 8897, 1072, 18476, 8914, 8910, 7273, 1995, 1072, 11, 8915, 504, 2]
+// Exports: getViewableFeedItemsArray, hydrateNextPage, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 18416 (ICYMIStoreUtils)
-import Constants from "Constants" /* 1084 */;
-import ICYMIItemTypes from "ICYMIItemTypes" /* 18417 */;
+// Module 18475 (ICYMIStoreUtils)
+import Constants from "Constants" /* 1072 */;
+import ICYMIItemTypes from "ICYMIItemTypes" /* 18476 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 6049 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import ICYMIStore from "ICYMIStore" /* 8863 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import MessageStore from "MessageStore" /* 6056 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import ICYMIStore from "ICYMIStore" /* 8897 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +28,7 @@ let obj = function _hydrateNextPage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -65,7 +64,7 @@ let obj = function _hydrateNextPage() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         c0 = 3;
@@ -93,7 +92,7 @@ obj = function _regenerateFeedAndClearReadStates() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -218,7 +217,7 @@ obj = function _regenerateFeedAndClearReadStates() {
           obj = closure_130_1(closure_130_2[12]);
           const recommendedGuilds = obj.getRecommendedGuilds();
           c4 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp35) {
         c4 = 3;
@@ -229,187 +228,6 @@ obj = function _regenerateFeedAndClearReadStates() {
   return obj(...arguments);
 };
 const ChannelTypes = Constants.ChannelTypes;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGravityMessage(arg0) {
-  let channelId;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const tmp = _require;
-  obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore, ICYMIStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function l() {
-      let message = MessageStore.getMessage(channelId.getChannelId(), channelId.id);
-      if (message == null) {
-        const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
-        let message1;
-        if (hydratedItem != null) {
-          message1 = hydratedItem.message;
-        }
-        message = message1;
-      }
-      if (message == null) {
-        message = tmp;
-      }
-      return message;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useGravityMessage(arg0) {
-  let channelId;
-  _require = arg0;
-  const items = [MessageStore, ICYMIStore];
-  const items1 = [arg0];
-  obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    let message = MessageStore.getMessage(channelId.getChannelId(), channelId.id);
-    if (message == null) {
-      const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
-      let message1;
-      if (hydratedItem != null) {
-        message1 = hydratedItem.message;
-      }
-      message = message1;
-    }
-    if (message == null) {
-      message = tmp;
-    }
-    return message;
-  }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGravityMessageItem(id) {
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = id;
-  obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ICYMIStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function n() {
-      return ICYMIStore.getHydratedItem(id.id);
-    };
-    const items1 = [id.id];
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useGravityMessageItem(id) {
-  _require = id;
-  const items = [ICYMIStore];
-  const items1 = [id.id];
-  obj = require("get initialized");
-  return obj.useStateFromStores(items, () => ICYMIStore.getHydratedItem(id.id), items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useICYMIMessage(arg0, arg1) {
-  let closure_0;
-  let first;
-  _require = arg0;
-  let closure_1 = arg1;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MessageStore, ];
-    items[1] = ICYMIStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg0) {
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === arg1) {
-      tmp7 = cResult[3];
-      tmp8 = cResult[4];
-    }
-    const tmpResult = tmp(504);
-    return tmpResult.useStateFromStores(first, tmp7, tmp8);
-  }
-  const fn = function o() {
-    let tmp2 = null;
-    if (null != closure_1) {
-      let message = MessageStore.getMessage(closure_0, tmp);
-      if (message == null) {
-        const hydratedItem = ICYMIStore.getHydratedItem(tmp);
-        let message1;
-        if (hydratedItem != null) {
-          message1 = hydratedItem.message;
-        }
-        message = message1;
-      }
-      tmp2 = message;
-    }
-    return tmp2;
-  };
-  const items1 = [arg0, arg1];
-  cResult[1] = arg0;
-  cResult[2] = arg1;
-  cResult[3] = fn;
-  cResult[4] = items1;
-  tmp8 = items1;
-  tmp7 = fn;
-}) : (function useICYMIMessage(arg0, arg1) {
-  let closure_0;
-  _require = arg0;
-  let closure_1 = arg1;
-  const items = [MessageStore, ICYMIStore];
-  const items1 = [arg0, arg1];
-  obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    let tmp2 = null;
-    if (null != closure_1) {
-      let message = MessageStore.getMessage(closure_0, tmp);
-      if (message == null) {
-        const hydratedItem = ICYMIStore.getHydratedItem(tmp);
-        let message1;
-        if (hydratedItem != null) {
-          message1 = hydratedItem.message;
-        }
-        message = message1;
-      }
-      tmp2 = message;
-    }
-    return tmp2;
-  }, items1);
-});
 const result = size.fileFinishedImporting("modules/icymi/ICYMIStoreUtils.tsx");
 
 export function getViewableFeedItemsArray(viewableItems) {
@@ -452,6 +270,54 @@ export function hydrateNextPage() {
 export function regenerateFeedAndClearReadStates() {
   return obj(...arguments);
 }
-export const useGravityMessage = tmp2;
-export const useGravityMessageItem = tmp3;
-export const useICYMIMessage = tmp4;
+export function useGravityMessage(message) {
+  _require = message;
+  const items = [MessageStore, ICYMIStore];
+  const items1 = [message];
+  obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    message = MessageStore.getMessage(message.getChannelId(), message.id);
+    if (message == null) {
+      const hydratedItem = ICYMIStore.getHydratedItem(tmp.id);
+      let message1;
+      if (hydratedItem != null) {
+        message1 = hydratedItem.message;
+      }
+      message = message1;
+    }
+    if (message == null) {
+      message = tmp;
+    }
+    return message;
+  }, items1);
+}
+export function useGravityMessageItem(id) {
+  _require = id;
+  const items = [ICYMIStore];
+  const items1 = [id.id];
+  obj = require("get initialized");
+  return obj.useStateFromStores(items, () => ICYMIStore.getHydratedItem(id.id), items1);
+}
+export function useICYMIMessage(id, reply_message_id) {
+  _require = id;
+  let closure_1 = reply_message_id;
+  const items = [MessageStore, ICYMIStore];
+  const items1 = [id, reply_message_id];
+  obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    let tmp2 = null;
+    if (null != reply_message_id) {
+      let message = MessageStore.getMessage(id, tmp);
+      if (message == null) {
+        const hydratedItem = ICYMIStore.getHydratedItem(tmp);
+        let message1;
+        if (hydratedItem != null) {
+          message1 = hydratedItem.message;
+        }
+        message = message1;
+      }
+      tmp2 = message;
+    }
+    return tmp2;
+  }, items1);
+}

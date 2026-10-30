@@ -1,305 +1,26 @@
-// Module ID: 18673
-// Function ID: 18674
+// Module ID: 18732
+// Function ID: 18733
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6850, 13703, 9779, 21, 13710, 558, 576, 13696, 504, 18662, 18674, 13689, 18675, 18676, 13694, 18595, 18607, 2]
-// Exports: trackMessageItemPress
+// Dependencies: [19, 6857, 13850, 9805, 21, 13857, 504, 13843, 18721, 18733, 13836, 18734, 18735, 13841, 18654, 18666, 2]
+// Exports: default, trackMessageItemPress
 
-// Module 18673 (BaseMessagesScreen)
+// Module 18732 (BaseMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9779 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13689 */;
-import SearchUtils from "SearchUtils" /* 13696 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13710 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18675 */;
+import TrackingConstants from "TrackingConstants" /* 9805 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13836 */;
+import SearchUtils from "SearchUtils" /* 13843 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13857 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 18734 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6850 */;
-import SearchQueryStore from "SearchQueryStore" /* 13703 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import SearchMessageStore from "SearchMessageStore" /* 6857 */;
+import SearchQueryStore from "SearchQueryStore" /* 13850 */;
 import size from "module_2" /* 2 */;
 
 const constants = TrackingConstants.SearchResultContentEntityTypes;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessagesScreen(tab) {
-  let ItemSeparatorComponent;
-  let contentContainerStyle;
-  let data;
-  let documentsIndexed;
-  let errorText;
-  let first;
-  let hasError;
-  let isErrorToast;
-  let isFirstPageLoading;
-  let isFocused;
-  let keywordResultCount;
-  let numColumns;
-  let searchContext;
-  let searchResultsQuery;
-  let smartSearchStatus;
-  let viewabilityConfigCallbackPairs;
-  let tmp = searchContext;
-  let obj = searchContext(isFocused[7]);
-  const cResult = obj.c(46);
-  ({ data, searchContext } = tab);
-  tab = tab.tab;
-  isFocused = tab.isFocused;
-  ({ isFirstPageLoading, contentContainerStyle, ItemSeparatorComponent, numColumns, keywordResultCount, smartSearchStatus, viewabilityConfigCallbackPairs } = tab);
-  const isNextPageLoading = tab.isNextPageLoading;
-  if (!isFirstPageLoading) {
-    isFirstPageLoading = isNextPageLoading;
-  }
-  if (keywordResultCount == null) {
-    keywordResultCount = data.length;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [hasError, ];
-    items[1] = keywordResultCount;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === searchContext) {
-    let tmp8;
-    if (cResult[2] === tab) {
-      tmp8 = cResult[3];
-    }
-    const tmpResult = tmp(isFocused[9]);
-    const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp8);
-    ({ searchResultsQuery, documentsIndexed } = stateFromStoresObject);
-    if (cResult[4] === searchContext) {
-      if (cResult[5] === keywordResultCount > 0) {
-        let tmp12;
-        if (cResult[6] === tab) {
-          tmp12 = cResult[7];
-        }
-        const tmpResult3 = tmp(isFocused[10]);
-        const messageSearchErrorScreen = tmpResult3.useMessageSearchErrorScreen(tmp12);
-        hasError = messageSearchErrorScreen.hasError;
-        ({ errorText, isErrorToast } = messageSearchErrorScreen);
-        const showErrorToast = messageSearchErrorScreen.showErrorToast;
-        const isErrorFullscreen = messageSearchErrorScreen.isErrorFullscreen;
-        const tmpResult4 = tmp(isFocused[11]);
-        const searchFetchPendingManager = tmpResult4.useSearchFetchPendingManager(searchContext);
-        if (cResult[8] === hasError) {
-          if (cResult[9] === isFocused) {
-            if (cResult[10] === isFirstPageLoading) {
-              if (cResult[11] === keywordResultCount) {
-                if (cResult[12] === searchContext) {
-                  if (cResult[13] === searchFetchPendingManager) {
-                    if (cResult[16] === isFocused) {
-                      if (cResult[17] === isFirstPageLoading) {
-                        if (cResult[18] === searchContext) {
-                          if (cResult[19] === searchFetchPendingManager) {
-                            let tmp16;
-                            let tmp17;
-                            if (cResult[20] === tab) {
-                              tmp16 = cResult[21];
-                              tmp17 = cResult[22];
-                            }
-                            const effect = isFirstPageLoading.useEffect(tmp16, tmp17);
-                            const obj6 = isFirstPageLoading;
-                            if (cResult[23] === isErrorToast) {
-                              if (cResult[24] === isFocused) {
-                                if (cResult[25] === isFirstPageLoading) {
-                                  let tmp19;
-                                  let tmp20;
-                                  if (cResult[26] === showErrorToast) {
-                                    tmp19 = cResult[27];
-                                    tmp20 = cResult[28];
-                                  }
-                                  const effect1 = obj6.useEffect(tmp20, tmp19);
-                                  if (tmp10) {
-                                    if (null != documentsIndexed) {
-                                      if (documentsIndexed > 0) {
-                                        let obj2 = { searchContext: null, documentsIndexed, tab };
-                                        class V {
-                                          constructor() {
-                                            const tmp = isErrorToast && !isFirstPageLoading && isFocused;
-                                            if (tmp) {
-                                              showErrorToast();
-                                            }
-                                          }
-                                        }
-                                        cResult[29] = documentsIndexed;
-                                        cResult[30] = searchContext;
-                                        cResult[31] = tab;
-                                        const tmp26 = showErrorToast(tab(isFocused[13]), obj2);
-                                        class Q {
-                                          constructor() {
-                                            if (0 !== keywordResultCount) {
-                                              const tmp17 = isFirstPageLoading;
-                                              if (tmp17) {
-                                                searchFetchPendingManager.add(tab);
-                                              } else {
-                                                const tmp = isFocused;
-                                                if (tmp) {
-                                                  const tmp5 = hasError;
-                                                  if (tmp5) {
-                                                    searchFetchPendingManager.add(tab);
-                                                  } else {
-                                                    const obj = SearchPlatformUtilsDefault;
-                                                    const nextMessages = obj.fetchNextMessages(searchContext, tab);
-                                                  }
-                                                } else {
-                                                  searchFetchPendingManager.add(tab);
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                  class V {
-                                    constructor() {
-                                      const tmp = isErrorToast && !isFirstPageLoading && isFocused;
-                                      if (tmp) {
-                                        showErrorToast();
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                            class V {
-                              constructor() {
-                                const tmp = isErrorToast && !isFirstPageLoading && isFocused;
-                                if (tmp) {
-                                  showErrorToast();
-                                }
-                              }
-                            }
-                            const items1 = [isErrorToast, isFirstPageLoading, isFocused, showErrorToast];
-                            cResult[23] = isErrorToast;
-                            cResult[24] = isFocused;
-                            class Q {
-                              constructor() {
-                                if (0 !== keywordResultCount) {
-                                  const tmp17 = isFirstPageLoading;
-                                  if (tmp17) {
-                                    searchFetchPendingManager.add(tab);
-                                  } else {
-                                    const tmp = isFocused;
-                                    if (tmp) {
-                                      const tmp5 = hasError;
-                                      if (tmp5) {
-                                        searchFetchPendingManager.add(tab);
-                                      } else {
-                                        const obj = SearchPlatformUtilsDefault;
-                                        const nextMessages = obj.fetchNextMessages(searchContext, tab);
-                                      }
-                                    } else {
-                                      searchFetchPendingManager.add(tab);
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                            cResult[26] = showErrorToast;
-                            cResult[27] = items1;
-                            cResult[28] = V;
-                            tmp20 = V;
-                            tmp19 = items1;
-                          }
-                        }
-                      }
-                    }
-                    const fn2 = function z() {
-                      const tmp = isFocused && !isFirstPageLoading;
-                      if (tmp) {
-                        searchFetchPendingManager.flush(searchContext, tab);
-                      }
-                    };
-                    const items2 = [, isFirstPageLoading, searchContext, searchFetchPendingManager, tab];
-                    cResult[16] = isFocused;
-                    cResult[17] = isFirstPageLoading;
-                    cResult[18] = searchContext;
-                    class Q {
-                      constructor() {
-                        if (0 !== keywordResultCount) {
-                          const tmp17 = isFirstPageLoading;
-                          if (tmp17) {
-                            searchFetchPendingManager.add(tab);
-                          } else {
-                            const tmp = isFocused;
-                            if (tmp) {
-                              const tmp5 = hasError;
-                              if (tmp5) {
-                                searchFetchPendingManager.add(tab);
-                              } else {
-                                const obj = SearchPlatformUtilsDefault;
-                                const nextMessages = obj.fetchNextMessages(searchContext, tab);
-                              }
-                            } else {
-                              searchFetchPendingManager.add(tab);
-                            }
-                          }
-                        }
-                      }
-                    }
-                    cResult[19] = searchFetchPendingManager;
-                    cResult[20] = tab;
-                    cResult[21] = fn2;
-                    cResult[22] = items2;
-                    tmp17 = items2;
-                    tmp16 = fn2;
-                  }
-                }
-              }
-            }
-          }
-        }
-        class Q {
-          constructor() {
-            if (0 !== keywordResultCount) {
-              const tmp17 = isFirstPageLoading;
-              if (tmp17) {
-                searchFetchPendingManager.add(tab);
-              } else {
-                const tmp = isFocused;
-                if (tmp) {
-                  const tmp5 = hasError;
-                  if (tmp5) {
-                    searchFetchPendingManager.add(tab);
-                  } else {
-                    const obj = SearchPlatformUtilsDefault;
-                    const nextMessages = obj.fetchNextMessages(searchContext, tab);
-                  }
-                } else {
-                  searchFetchPendingManager.add(tab);
-                }
-              }
-            }
-          }
-        }
-        cResult[8] = hasError;
-        cResult[9] = isFocused;
-        cResult[10] = isFirstPageLoading;
-        cResult[11] = keywordResultCount;
-        cResult[12] = searchContext;
-        cResult[13] = searchFetchPendingManager;
-        cResult[14] = tab;
-        cResult[15] = Q;
-      }
-    }
-    const obj3 = { searchContext, tab, hasListItems: keywordResultCount > 0 };
-    cResult[4] = searchContext;
-    cResult[6] = tab;
-    cResult[7] = obj3;
-    tmp12 = obj3;
-  }
-  const fn = function l() {
-    const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
-    const obj = SearchUtils;
-    const searchTabFetchId = obj.getSearchTabFetchId(searchContext, tab, searchResultsQuery);
-    const obj2 = { searchResultsQuery, isIndexing: SearchMessageStore.getIsIndexing(searchTabFetchId), isHistoricalIndexing: SearchMessageStore.getIsHistoricalIndexing(searchTabFetchId), documentsIndexed: SearchMessageStore.getDocumentsIndexed(searchTabFetchId) };
-    return obj2;
-  };
-  cResult[1] = searchContext;
-  cResult[2] = tab;
-  cResult[3] = fn;
-  tmp8 = fn;
-}) : (function BaseMessagesScreen(tab) {
+let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
+
+export default function BaseMessagesScreen(tab) {
   let ItemSeparatorComponent;
   let contentContainerStyle;
   let data;
@@ -337,7 +58,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
     keywordResultCount = data.length;
   }
   let tmp = searchContext;
-  let obj = searchContext(isFocused[9]);
+  let obj = searchContext(isFocused[6]);
   const items = [isHistoricalIndexing, keywordResultCount];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     const searchResultsQuery = SearchQueryStore.getSearchResultsQuery(searchContext);
@@ -349,14 +70,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   isHistoricalIndexing = stateFromStoresObject.isHistoricalIndexing;
   documentsIndexed = stateFromStoresObject.documentsIndexed;
   ({ searchResultsQuery, isIndexing } = stateFromStoresObject);
-  let obj2 = searchContext(isFocused[10]);
+  let obj2 = searchContext(isFocused[8]);
   const obj3 = { searchContext, tab, hasListItems: keywordResultCount > 0 };
   const messageSearchErrorScreen = obj2.useMessageSearchErrorScreen(obj3);
   hasError = messageSearchErrorScreen.hasError;
   isErrorToast = messageSearchErrorScreen.isErrorToast;
   showErrorToast = messageSearchErrorScreen.showErrorToast;
   ({ errorText, isErrorFullscreen } = messageSearchErrorScreen);
-  const obj4 = searchContext(isFocused[11]);
+  const obj4 = searchContext(isFocused[9]);
   searchFetchPendingManager = obj4.useSearchFetchPendingManager(searchContext);
   const items1 = [keywordResultCount, isFirstPageLoading, isFocused, hasError, searchContext, tab, searchFetchPendingManager];
   const items2 = [isFocused, isFirstPageLoading, searchContext, searchFetchPendingManager, tab];
@@ -398,26 +119,23 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseMessag
   if (isIndexing) {
     let tmp17 = tab;
     const obj5 = { searchContext };
-    return hasError(tab(isFocused[14]), obj5);
+    return hasError(tab(isFocused[12]), obj5);
   } else {
-    const tmp10 = smartSearchStatus === tmp(isFocused[15]).SmartSearchStatus.LOADING || smartSearchStatus === tmp(isFocused[15]).SmartSearchStatus.LOADED;
+    const tmp10 = smartSearchStatus === tmp(isFocused[13]).SmartSearchStatus.LOADING || smartSearchStatus === tmp(isFocused[13]).SmartSearchStatus.LOADED;
     if (isErrorFullscreen) {
       if (!isFirstPageLoading) {
         let tmp13;
         if (!tmp10) {
           const obj6 = { text: errorText };
-          tmp13 = hasError(tab(tmp2[16]), obj6);
+          tmp13 = hasError(tab(tmp2[14]), obj6);
         }
         return tmp13;
       }
     }
     const obj7 = { contentContainerStyle, data, onEndReached: callback, ListHeaderComponent: tmp9, ItemSeparatorComponent, numColumns, viewabilityConfigCallbackPairs, scrollToTopKey: searchResultsQuery };
-    tmp13 = hasError(tab(tmp2[17]), obj7);
+    tmp13 = hasError(tab(tmp2[15]), obj7);
   }
-});
-let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");
-
-export default tmp2;
+};
 export function trackMessageItemPress(messageId) {
   let channelId;
   let id;

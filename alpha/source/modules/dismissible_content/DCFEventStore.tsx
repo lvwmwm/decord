@@ -1,11 +1,11 @@
-// Module ID: 4843
-// Function ID: 4844
+// Module ID: 4844
+// Function ID: 4845
 // Name: DCFEventStore
-// Dependencies: [504, 584, 2]
+// Dependencies: [504, 572, 2]
 
-// Module 4843 (DCFEventStore)
+// Module 4844 (DCFEventStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const DCFEventTypes = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };

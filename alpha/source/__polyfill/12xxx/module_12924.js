@@ -1,82 +1,140 @@
 // Module ID: 12924
 // Function ID: 12925
-// Dependencies: [12849, 12852, 12881, 12867, 12880, 12901, 12871, 12872, 12858, 12889, 12866, 12865, 12853]
-// Exports: getTraceData
+// Dependencies: []
+// Exports: parse
 
 // Module 12924
-import _mod12858 from "module_12858" /* 12858 */;
-import _mod12865 from "module_12865" /* 12865 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 12866 */;
-import _mod12871 from "module_12871" /* 12871 */;
-import _mod12872 from "module_12872" /* 12872 */;
-import _mod12880 from "module_12880" /* 12880 */;
-import _mod12889 from "module_12889" /* 12889 */;
-import _mod12901 from "module_12901" /* 12901 */;
-import registerSpanErrorInstrumentation from "module_12849" /* 12849 */;
-import "module_12852";
-import DEBUG_BUILD from "module_12881" /* 12881 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 12867 */;
+new Set([9, 10, 12, 13, 32]);
+let closure_1 = "0".charCodeAt(0);
+let closure_2 = "9".charCodeAt(0);
 
-
-export function getTraceData() {
-  let sampled;
-  let spanId;
-  let traceId;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  const obj2 = _mod12880;
-  const client = obj2.getClient();
-  const obj3 = _mod12901;
-  if (obj3.isEnabled()) {
-    if (client) {
-      const tmpResult = _mod12871;
-      const mainCarrier = tmpResult.getMainCarrier();
-      const tmpResult8 = _mod12872;
-      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
-      if (asyncContextStrategy.getTraceData) {
-        return asyncContextStrategy.getTraceData(obj);
-      } else {
-        let spanToTraceHeaderResult;
-        let dynamicSamplingContextFromSpan;
-        let obj5;
-        const tmpResult9 = _mod12880;
-        const currentScope = tmpResult9.getCurrentScope();
-        let span = obj.span;
-        if (!span) {
-          const tmpResult10 = _mod12858;
-          span = tmpResult10.getActiveSpan();
-        }
-        if (span) {
-          const tmpResult11 = _mod12858;
-          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
-        } else {
-          const propagationContext = currentScope.getPropagationContext();
-          ({ traceId, sampled, spanId } = propagationContext);
-          const tmpResult12 = _mod12865;
-          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
-        }
-        const tmpResult13 = _mod12889;
-        if (span) {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
-        } else {
-          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
-        }
-        const tmpResult14 = BAGGAGE_HEADER_NAME;
-        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
-        const TRACEPARENT_REGEXP = tmp(12865).TRACEPARENT_REGEXP;
-        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
-          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
-        } else {
-          const logger = tmp(12853).logger;
-          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
-          obj5 = {};
-        }
-        return obj5;
+export function parse(str) {
+  str = str.trim();
+  const str2 = str.toLowerCase();
+  if ("even" === str2) {
+    return [2, 0];
+  } else if ("odd" === str2) {
+    return [2, 1];
+  } else {
+    let num2;
+    let sum1 = 0;
+    if ("-" === str2.charAt(sum1)) {
+      sum1 = sum1 + 1;
+      num2 = -1;
+    } else {
+      let tmp = sum1;
+      let num = 1;
+      num2 = 1;
+      if ("+" === str2.charAt(sum1)) {
+        sum1 = sum1 + 1;
+        num2 = 1;
       }
     }
+    function readNumber() {
+      let num = 0;
+      const tmp = sum1;
+      if (sum1 < str2.length) {
+        num = 0;
+        if (str2.charCodeAt(sum1) >= closure_1) {
+          let num3 = 0;
+          num = 0;
+          if (str2.charCodeAt(sum1) <= closure_2) {
+            const sum = 10 * num3 + (str2.charCodeAt(sum1) - closure_1);
+            sum1 = sum1 + 1;
+            num = sum;
+            while (sum1 < str2.length) {
+              num = sum;
+              if (obj2.charCodeAt(sum1) < tmp7) {
+                break;
+              } else {
+                num3 = sum;
+                num = sum;
+                if (obj2.charCodeAt(sum1) > closure_2) {
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+      let tmp14 = null;
+      if (sum1 !== tmp) {
+        tmp14 = num;
+      }
+      return tmp14;
+    }
+    const number = readNumber();
+    let tmp6 = sum1 < str2.length;
+    if (tmp6) {
+      const tmp7 = sum1;
+      tmp6 = "n" === str2.charAt(sum1);
+    }
+    let tmp8 = number;
+    let tmp9 = num2;
+    let num3 = 0;
+    if (tmp6) {
+      let sum = sum1 + 1;
+      sum1 = sum;
+      let tmp12 = null;
+      let num5 = 1;
+      if (null != number) {
+        num5 = number;
+      }
+      if (sum < str2.length) {
+        let tmp13 = str2;
+        let tmp14 = sum1;
+        if (str2.has(str2.charCodeAt(sum1))) {
+          sum1 = sum1 + 1;
+          while (sum1 < str2.length) {
+            if (!str2.has(str2.charCodeAt(sum1))) {
+              break;
+            }
+          }
+        }
+      }
+      let num6 = 0;
+      let num7 = 0;
+      if (sum1 < str2.length) {
+        let num8;
+        if ("-" === str2.charAt(sum1)) {
+          sum1 = sum1 + 1;
+          num8 = -1;
+        } else {
+          num8 = 1;
+          if ("+" === str2.charAt(sum1)) {
+            sum1 = sum1 + 1;
+            num8 = 1;
+          }
+        }
+        if (sum1 < str2.length) {
+          if (str2.has(str2.charCodeAt(sum1))) {
+            const sum2 = sum1 + 1;
+            sum1 = sum2;
+            while (sum2 < str2.length) {
+              if (!str2.has(str2.charCodeAt(sum1))) {
+                break;
+              }
+            }
+          }
+        }
+        num6 = readNumber();
+        num7 = num8;
+      }
+      num3 = num2 * num5;
+      tmp8 = num6;
+      tmp9 = num7;
+    }
+    if (null !== tmp8) {
+      if (sum1 >= str2.length) {
+        const items = [num3, tmp9 * tmp8];
+        return items;
+      }
+    }
+    const _Error = Error;
+    const concat = "n-th rule couldn't be parsed ('".concat;
+    const self = this;
+    const self2 = this;
+    const error = new Error("n-th rule couldn't be parsed ('".concat(str2, "')"));
+    throw error;
   }
-  return {};
 }

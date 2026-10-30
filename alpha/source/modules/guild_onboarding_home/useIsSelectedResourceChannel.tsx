@@ -1,17 +1,17 @@
-// Module ID: 10984
-// Function ID: 10985
+// Module ID: 11214
+// Function ID: 11215
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6849, 4857, 4908, 1084, 4864, 558, 576, 1402, 10985, 573, 7384, 2]
+// Dependencies: [6856, 4858, 4912, 1072, 4865, 563, 1397, 11215, 7391, 2]
+// Exports: default
 
-// Module 10984 (useIsSelectedResourceChannel)
-import Constants from "Constants" /* 1084 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 10985 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6849 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11214 (useIsSelectedResourceChannel)
+import Constants from "Constants" /* 1072 */;
+import FlagUtils from "FlagUtils" /* 1397 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 11215 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6856 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -19,51 +19,9 @@ let _require;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const ChannelFlags = ChannelConstants.ChannelFlags;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSelectedResourceChannel(arg0) {
-  let closure_0;
-  let first;
-  let tmp8;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore, , ];
-    items[1] = SelectedChannelStore;
-    items[2] = ChannelSectionStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      const channel = ChannelStore.getChannel(closure_0);
-      if (null != channel) {
-        const obj = FlagUtils;
-        if (obj.hasFlag(channel.flags, ChannelFlags.IS_GUILD_RESOURCE_CHANNEL)) {
-          if (isSelectedFromHomeChannelDefault(channel, SelectedChannelStore, ChannelSectionStore)) {
-            return channel.guild_id;
-          }
-        }
-      }
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const tmpResult = require("useStateFromStores");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp8);
-  let tmp11 = stateFromStores;
-  const useCanSeeOnboardingHome = require("OnboardingHomeUtils").useCanSeeOnboardingHome;
-  require("OnboardingHomeUtils");
-  if (stateFromStores == null) {
-    tmp11 = EMPTY_STRING_SNOWFLAKE_ID;
-  }
-  const tmp12 = null != stateFromStores && useCanSeeOnboardingHome(tmp11);
-  return tmp12;
-}) : (function useIsSelectedResourceChannel(arg0) {
+const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsSelectedResourceChannel.tsx");
+
+export default function useIsSelectedResourceChannel(arg0) {
   let closure_0;
   _require = arg0;
   let obj = require("useStateFromStores");
@@ -87,7 +45,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsSelecte
   }
   const tmp4 = null != stateFromStores && useCanSeeOnboardingHome(tmp3);
   return tmp4;
-});
-const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsSelectedResourceChannel.tsx");
-
-export default tmp2;
+};

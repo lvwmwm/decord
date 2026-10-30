@@ -1,22 +1,21 @@
-// Module ID: 14560
-// Function ID: 14561
+// Module ID: 14593
+// Function ID: 14594
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5005, 558, 576, 9685, 14545, 5707, 1125, 5271, 5281, 7281, 2]
+// Dependencies: [19, 17, 21, 5009, 9710, 14578, 5712, 5619, 1114, 7286, 5629, 2]
+// Exports: PlayStationLinkSuccess
 
-// Module 14560 (PlayStationLinkSuccess)
+// Module 14593 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import intl4 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9685 */;
-import _modDef14545 from "module_14545" /* 14545 */;
+import intl4 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9710 */;
+import _modDef14578 from "module_14578" /* 14578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -24,160 +23,9 @@ let metroRequire;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStationLinkSuccess(onClose) {
-  let container;
-  let content;
-  let first;
-  let footerButton;
-  let footerContainer;
-  let items;
-  let items1;
-  let tmp12;
-  let tmp14;
-  let tmp17;
-  let tmp19;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(27);
-  onClose = onClose.onClose;
-  const tmp4 = closure_7();
-  const obj2 = TwoWayLinkStyles;
-  const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { uri: _modDef14545 };
-    cResult[0] = obj3;
-    first = obj3;
-  } else {
-    first = cResult[0];
-  }
-  ({ container, content } = twoWayLinkStyles);
-  if (cResult[1] !== tmp4.image) {
-    const obj4 = { source: first, style: tmp4.image };
-    const tmp11 = hasOwnProperty(FastImageDefault, obj4);
-    cResult[1] = tmp4.image;
-    cResult[2] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[2];
-  }
-  const title = twoWayLinkStyles.title;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.e6SOl0);
-    cResult[3] = stringResult;
-    tmp12 = stringResult;
-  } else {
-    tmp12 = cResult[3];
-  }
-  if (cResult[4] !== twoWayLinkStyles.title) {
-    const obj5 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: title, children: tmp12 };
-    const tmp16 = hasOwnProperty(Text_Text.Text, obj5);
-    cResult[4] = twoWayLinkStyles.title;
-    cResult[5] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[5];
-  }
-  const body = twoWayLinkStyles.body;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl4.t.QjAZAQ);
-    cResult[6] = stringResult1;
-    tmp17 = stringResult1;
-  } else {
-    tmp17 = cResult[6];
-  }
-  if (cResult[7] !== twoWayLinkStyles.body) {
-    const obj6 = { variant: "text-md/normal", color: "text-default", style: body, children: tmp17 };
-    const tmp21 = hasOwnProperty(Text_Text.Text, obj6);
-    cResult[7] = twoWayLinkStyles.body;
-    cResult[8] = tmp21;
-    tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[8];
-  }
-  if (cResult[9] === twoWayLinkStyles.content) {
-    if (cResult[10] === tmp19) {
-      if (cResult[11] === tmp8) {
-        let tmp22;
-        let tmp24;
-        let tmp26;
-        if (cResult[12] === tmp14) {
-          tmp22 = cResult[13];
-        }
-        const _Symbol = Symbol;
-        ({ footerContainer, footerButton } = twoWayLinkStyles);
-        if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-          const intl3 = tmp(1125).intl;
-          const stringResult2 = intl3.string(intl4.t.i4jeWR);
-          cResult[14] = stringResult2;
-          tmp24 = stringResult2;
-        } else {
-          tmp24 = cResult[14];
-        }
-        if (cResult[15] !== onClose) {
-          const obj7 = { size: "md", text: tmp24, onPress: onClose };
-          const tmp28 = hasOwnProperty(components_Button_Button.Button, obj7);
-          cResult[15] = onClose;
-          cResult[16] = tmp28;
-          tmp26 = tmp28;
-        } else {
-          tmp26 = cResult[16];
-        }
-        if (cResult[17] === twoWayLinkStyles.footerButton) {
-          let tmp29;
-          if (cResult[18] === tmp26) {
-            tmp29 = cResult[19];
-          }
-          if (cResult[20] === twoWayLinkStyles.footerContainer) {
-            let tmp33;
-            if (cResult[21] === tmp29) {
-              tmp33 = cResult[22];
-            }
-            if (cResult[23] === twoWayLinkStyles.container) {
-              if (cResult[24] === tmp22) {
-                let tmp36;
-                if (cResult[25] === tmp33) {
-                  tmp36 = cResult[26];
-                }
-                return tmp36;
-              }
-            }
-            const obj8 = { style: container, children: items };
-            items = [tmp22, tmp33];
-            const tmp39 = metroRequire(View, obj8);
-            cResult[23] = twoWayLinkStyles.container;
-            cResult[24] = tmp22;
-            cResult[25] = tmp33;
-            cResult[26] = tmp39;
-            tmp36 = tmp39;
-          }
-          const obj9 = { bottom: true, style: footerContainer, children: tmp29 };
-          const tmp35 = hasOwnProperty(common_SafeAreaView.SafeAreaPaddingView, obj9);
-          cResult[20] = twoWayLinkStyles.footerContainer;
-          cResult[21] = tmp29;
-          cResult[22] = tmp35;
-          tmp33 = tmp35;
-        }
-        const obj10 = { style: footerButton, children: tmp26 };
-        const tmp32 = hasOwnProperty(View, obj10);
-        cResult[17] = twoWayLinkStyles.footerButton;
-        cResult[18] = tmp26;
-        cResult[19] = tmp32;
-        tmp29 = tmp32;
-      }
-    }
-  }
-  const obj11 = { style: content, children: items1 };
-  items1 = [tmp8, tmp14, tmp19];
-  const tmp23 = metroRequire(View, obj11);
-  cResult[9] = twoWayLinkStyles.content;
-  cResult[10] = tmp19;
-  cResult[11] = tmp8;
-  cResult[12] = tmp14;
-  cResult[13] = tmp23;
-  tmp22 = tmp23;
-}) : (function PlayStationLinkSuccess(onClose) {
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
+
+export function PlayStationLinkSuccess(onClose) {
   let Button;
   let intl;
   let intl2;
@@ -193,7 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14545 };
+    const obj = { uri: _modDef14578 };
     return obj;
   }, []);
   items = [, , ];
@@ -216,7 +64,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlayStatio
   intl3 = intl4.intl;
   items1[1] = hasOwnProperty(SafeAreaPaddingView, obj7);
   return metroRequire(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkSuccess.tsx");
-
-export const PlayStationLinkSuccess = tmp3;
+}

@@ -1,14 +1,13 @@
-// Module ID: 10714
-// Function ID: 10715
+// Module ID: 10737
+// Function ID: 10738
 // Name: conjurePresenceActivity
-// Dependencies: [1084, 2]
+// Dependencies: [5757, 2]
 // Exports: isConjurePresenceActivity
 
-// Module 10714 (conjurePresenceActivity)
-import Constants from "Constants" /* 1084 */;
+// Module 10737 (conjurePresenceActivity)
+import ActivityTypes from "ActivityTypes" /* 5757 */;
 import size from "module_2" /* 2 */;
 
-const ActivityTypes = Constants.ActivityTypes;
 const Conjuring = "Conjuring";
 const result = size.fileFinishedImporting("modules/conjure/presence/conjurePresenceActivity.tsx");
 
@@ -19,5 +18,6 @@ export function isConjurePresenceActivity(activity) {
   if (activity != null) {
     type = activity.type;
   }
-  return type === ActivityTypes.PLAYING && activity.name === Conjuring && null == activity.application_id;
+  const tmp2 = type === ActivityTypes.ActivityTypes.PLAYING && activity.name === Conjuring && null == activity.application_id;
+  return tmp2;
 }

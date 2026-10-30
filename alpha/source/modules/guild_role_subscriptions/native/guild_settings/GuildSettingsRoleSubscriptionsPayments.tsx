@@ -1,40 +1,23 @@
-// Module ID: 19866
-// Function ID: 19867
+// Module ID: 19929
+// Function ID: 19930
 // Name: GuildSettingsRoleSubscriptionsPayments
-// Dependencies: [19, 21, 558, 576, 18501, 1125, 2]
+// Dependencies: [19, 21, 18560, 1114, 2]
+// Exports: default
 
-// Module 19866 (GuildSettingsRoleSubscriptionsPayments)
+// Module 19929 (GuildSettingsRoleSubscriptionsPayments)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 18501 */;
+import intl3 from "intl" /* 1114 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 18560 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSettingsRoleSubscriptionPayments() {
-  let first;
-  const obj = react2;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    UnavailableNoticeDefault;
-    const intl = tmp(1125).intl;
-    const intl2 = tmp(1125).intl;
-    const tmp8 = <tmp7 title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  return first;
-}) : (function GuildSettingsRoleSubscriptionPayments(arg0) {
+const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
+
+export default function GuildSettingsRoleSubscriptionPayments(arg0) {
   const merged = Object.assign(arg0, Object.assign({ ref: 0 }));
   UnavailableNoticeDefault;
   const intl = intl3.intl;
   const intl2 = intl3.intl;
   return <tmp2 title={intl.string(intl3.t.qAMb9K)} description={intl2.string(intl3.t.pRuzXJ)} brightTitle />;
-});
-const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/guild_settings/GuildSettingsRoleSubscriptionsPayments.tsx");
-
-export default tmp3;
+};

@@ -1,16 +1,15 @@
-// Module ID: 18591
-// Function ID: 18592
+// Module ID: 18650
+// Function ID: 18651
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 18592, 1125, 4119, 5271, 18593, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 18651, 5619, 1114, 4120, 18652, 2]
 
-// Module 18591 (SuggestedSearchList)
+// Module 18650 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18593 */;
+import nativeDefault from "native" /* 575 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18652 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -21,137 +20,7 @@ const View = react_native.View;
 let obj = { text: obj2 };
 obj2 = { marginBottom: nativeDefault.space.PX_4, marginHorizontal: nativeDefault.space.PX_16 };
 let closure_6 = createStyles.createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedSearchList(smartSearchQuery) {
-  let source;
-  let suggestedSearches;
-  let tmp6;
-  let topMargin;
-  let obj = smartSearchQuery(suggestedSearches[6]);
-  const cResult = obj.c(21);
-  smartSearchQuery = smartSearchQuery.smartSearchQuery;
-  ({ topMargin, source } = smartSearchQuery);
-  const tmp4 = undefined !== topMargin && topMargin;
-  const tmp5 = closure_6();
-  if (cResult[0] !== source) {
-    const obj2 = { source, trackShown: true };
-    cResult[0] = source;
-    cResult[1] = obj2;
-    tmp6 = obj2;
-  } else {
-    tmp6 = cResult[1];
-  }
-  const tmpResult = smartSearchQuery(suggestedSearches[7]);
-  suggestedSearches = tmpResult.useSuggestedSearches(smartSearchQuery, tmp6).suggestedSearches;
-  if (0 === suggestedSearches.length) {
-    return null;
-  } else {
-    let tmp8;
-    let num3 = 0;
-    if (tmp4) {
-      num3 = source(tmp2[4]).space.PX_16;
-    }
-    if (cResult[2] !== num3) {
-      const obj3 = { marginTop: num3 };
-      cResult[2] = num3;
-      cResult[3] = obj3;
-      tmp8 = obj3;
-    } else {
-      tmp8 = cResult[3];
-    }
-    if (cResult[4] === tmp5.text) {
-      let tmp9;
-      let tmp11;
-      let tmp17;
-      if (cResult[5] === tmp8) {
-        tmp9 = cResult[6];
-      }
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(tmp2[8]).intl;
-        const stringResult = intl.string(source(suggestedSearches[9]).bzswFC);
-        cResult[7] = stringResult;
-        tmp11 = stringResult;
-      } else {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] !== tmp9) {
-        const obj4 = { variant: "text-sm/semibold", color: "interactive-text-default", style: tmp9, children: tmp11 };
-        cResult[8] = tmp9;
-        cResult[9] = closure_4(smartSearchQuery(suggestedSearches[10]).Text, obj4);
-        closure_4(smartSearchQuery(suggestedSearches[10]).Text, obj4);
-        class Q {
-          constructor(arg0, arg1) {
-            obj = { suggestedSearch: smartSearchQuery, smartSearchQuery, suggestionSource: source, index: arg1, numSuggestedSearches: suggestedSearches.length };
-            return jsx(closure_1(closure_2[11]), obj, smartSearchQuery.suggestionId);
-          }
-        }
-      }
-      if (cResult[10] === smartSearchQuery) {
-        if (cResult[11] === source) {
-          if (cResult[12] === suggestedSearches) {
-            tmp17 = cResult[13];
-          }
-          if (cResult[18] === tmp14) {
-            let tmp20;
-            if (cResult[19] === tmp17) {
-              tmp20 = cResult[20];
-            }
-            return tmp20;
-          }
-          const items = [, ];
-          items[0] = tmp14;
-          items[1] = tmp17;
-          class Q {
-            constructor(arg0, arg1) {
-              obj = { suggestedSearch: smartSearchQuery, smartSearchQuery, suggestionSource: source, index: arg1, numSuggestedSearches: suggestedSearches.length };
-              return jsx(closure_1(closure_2[11]), obj, smartSearchQuery.suggestionId);
-            }
-          }
-          cResult[18] = tmp14;
-          cResult[19] = tmp17;
-          cResult[20] = tmp23;
-          tmp20 = tmp23;
-        }
-      }
-      if (cResult[14] === smartSearchQuery) {
-        if (cResult[15] === source) {
-          let tmp18;
-          if (cResult[16] === suggestedSearches.length) {
-            tmp18 = cResult[17];
-          }
-          const mapped = suggestedSearches.map(tmp18);
-          cResult[10] = smartSearchQuery;
-          cResult[11] = source;
-          cResult[12] = suggestedSearches;
-          class Q {
-            constructor(arg0, arg1) {
-              obj = { suggestedSearch: smartSearchQuery, smartSearchQuery, suggestionSource: source, index: arg1, numSuggestedSearches: suggestedSearches.length };
-              return jsx(closure_1(closure_2[11]), obj, smartSearchQuery.suggestionId);
-            }
-          }
-          tmp17 = mapped;
-        }
-      }
-      class Q {
-        constructor(arg0, arg1) {
-          obj = { suggestedSearch: smartSearchQuery, smartSearchQuery, suggestionSource: source, index: arg1, numSuggestedSearches: suggestedSearches.length };
-          return jsx(closure_1(closure_2[11]), obj, smartSearchQuery.suggestionId);
-        }
-      }
-      cResult[14] = smartSearchQuery;
-      cResult[15] = source;
-      cResult[16] = suggestedSearches.length;
-      cResult[17] = Q;
-      tmp18 = Q;
-    }
-    const items1 = [tmp5.text, tmp8];
-    cResult[4] = tmp5.text;
-    cResult[5] = tmp8;
-    cResult[6] = items1;
-    tmp9 = items1;
-  }
-}) : (function SuggestedSearchList(smartSearchQuery) {
+const memoResult = react.memo(function SuggestedSearchList(smartSearchQuery) {
   let intl;
   let items1;
   smartSearchQuery = smartSearchQuery.smartSearchQuery;
@@ -162,13 +31,13 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const source = smartSearchQuery.source;
   let suggestedSearches;
   const tmp = closure_6();
-  let obj = smartSearchQuery(suggestedSearches[7]);
+  let obj = smartSearchQuery(suggestedSearches[5]);
   suggestedSearches = obj.useSuggestedSearches(smartSearchQuery, { source, trackShown: true }).suggestedSearches;
   let tmp7Result = null;
   if (0 !== suggestedSearches.length) {
     const items = [tmp.text, ];
     let num = 0;
-    const Text = tmp2(tmp3[10]).Text;
+    const Text = tmp2(tmp3[6]).Text;
     const tmp7 = closure_5;
     const tmp8 = View;
     const tmp9 = closure_4;
@@ -178,8 +47,8 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj2 = { children: items1 };
     const obj4 = { marginTop: num };
     items[1] = obj4;
-    const obj3 = { variant: "text-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[9]).bzswFC) };
-    intl = tmp2(tmp3[8]).intl;
+    const obj3 = { variant: "text-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[8]).bzswFC) };
+    intl = tmp2(tmp3[7]).intl;
     items1 = [
       tmp9(Text, obj3),
       suggestedSearches.map((suggestedSearch, index) => {
@@ -190,7 +59,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp7Result = tmp7(tmp8, obj2);
   }
   return tmp7Result;
-}));
+});
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SuggestedSearchList.tsx");
 
 export default memoResult;

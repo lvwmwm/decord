@@ -1,70 +1,26 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17707
+// Function ID: 17708
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 558, 576, 5289, 587, 7047, 5272, 6963, 5271, 6015, 2]
+// Dependencies: [19, 17, 21, 5591, 575, 6022, 7054, 5620, 6969, 5619, 2]
+// Exports: default
 
-// Module 17636 (UserSettingsDesignSystemText)
+// Module 17707 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import TableRow2 from "TableRow" /* 6963 */;
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
+import TextVariants from "TextVariants" /* 5620 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import TableRowGroup2 from "TableRowGroup" /* 7054 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const TextVariants = tmp(5272);
-const Stack_Stack = tmp(6015);
-const TableRowGroup2 = tmp(7047);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsDesignSystemText() {
-  let tmp10;
-  let tmp6;
-  let tmp7;
-  let tmp = require;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = useToken;
-  const token = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
-  if (cResult[0] !== token) {
-    const obj3 = { paddingHorizontal: token };
-    cResult[0] = token;
-    cResult[1] = obj3;
-    tmp6 = obj3;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const TableRowGroup = TableRowGroup2.TableRowGroup;
-    const TEXT_VARIANT = TextVariants.TEXT_VARIANT;
-    const tmp9 = <TableRowGroup title="Text Variants" hasIcons={false}>{TEXT_VARIANT.map((variant) => {
-      let tmp = null;
-      if ("code" !== variant) {
-        const TableRow = TableRow2.TableRow;
-        tmp = <TableRow key={arg0} label={null} />;
-      }
-      return tmp;
-    })}</TableRowGroup>;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== tmp6) {
-    ({ spacing: nativeDefault.space.PX_24, style: tmp6, children: tmp7 });
-    const Stack = Stack_Stack.Stack;
-    const tmp13 = <ScrollView>{null}</ScrollView>;
-    cResult[3] = tmp6;
-    cResult[4] = tmp13;
-    tmp10 = tmp13;
-  } else {
-    tmp10 = cResult[4];
-  }
-  return tmp10;
-}) : (function UserSettingsDesignSystemText() {
+const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemText.tsx");
+
+export default function UserSettingsDesignSystemText() {
   let TEXT_VARIANT;
   const obj = useToken;
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
@@ -85,7 +41,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettin
   const TableRowGroup = TableRowGroup2.TableRowGroup;
   TEXT_VARIANT = TextVariants.TEXT_VARIANT;
   return <ScrollView>{null}</ScrollView>;
-});
-const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemText.tsx");
-
-export default tmp3;
+};

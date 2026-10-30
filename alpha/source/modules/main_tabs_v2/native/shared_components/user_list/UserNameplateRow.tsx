@@ -1,175 +1,33 @@
-// Module ID: 10754
-// Function ID: 10755
+// Module ID: 10777
+// Function ID: 10778
 // Name: UserNameplateRow
-// Dependencies: [32, 109, 19, 21, 5005, 587, 558, 576, 6964, 5289, 9473, 6963, 6965, 6958, 2]
+// Dependencies: [32, 19, 21, 5009, 575, 6970, 5591, 6971, 9492, 6969, 6966, 2]
+// Exports: UserNameplateRow
 
-// Module 10754 (UserNameplateRow)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 5289 */;
-import TableRowDivider from "TableRowDivider" /* 6958 */;
-import react3 from "react" /* 6964 */;
-import NameplateDefault from "Nameplate" /* 9473 */;
+// Module 10777 (UserNameplateRow)
+import nativeDefault from "native" /* 575 */;
+import useToken from "useToken" /* 5591 */;
+import TableRowDivider from "TableRowDivider" /* 6966 */;
+import react2 from "react" /* 6970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let tmp, tmp2Result;
-
-let c9;
-let metroImportAll;
+let hasOwnProperty;
 let metroImportDefault;
+let metroRequire;
 let obj2;
-let closure_3 = ["label", "subLabel", "icon", "trailing", "arrow", "onPress", "onPressIn", "onPressOut", "disabled", "start", "end", "labelLineClamp", "subLabelLineClamp", "variant", "draggable", "dragHandlePressableProps", "nameplate", "isPreviewRow"];
-({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
-let obj = { card: obj2 };
+let tmp11;
+const NameplateDefault = tmp11(9492);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+const obj = { card: obj2 };
 obj2 = { padding: 0, paddingRight: nativeDefault.space.PX_40, overflow: "hidden" };
-let closure_10 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNameplateRow(onPressOut) {
-  let arrow;
-  let closure_129_2;
-  let disabled;
-  let dragHandlePressableProps;
-  let draggable;
-  let end;
-  let icon;
-  let isPreviewRow;
-  let label;
-  let labelLineClamp;
-  let nameplate;
-  let onPress;
-  let onPressIn;
-  let start;
-  let subLabel;
-  let subLabelLineClamp;
-  let tmp12;
-  let tmp16;
-  let tmp21;
-  let tmp33;
-  let trailing;
-  let variant;
-  const tmp2 = dependencyMap;
-  const obj = react2;
-  const cResult = obj.c(57);
-  if (cResult[0] !== onPressOut) {
-    ({ label, subLabel, icon, trailing, arrow, onPress, onPressIn } = onPressOut);
-    let closure_0 = onPressIn;
-    onPressOut = onPressOut.onPressOut;
-    let closure_1 = onPressOut;
-    ({ disabled, start, end, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps, nameplate, isPreviewRow } = onPressOut);
-    cResult[0] = onPressOut;
-    cResult[1] = arrow;
-    cResult[2] = _objectWithoutProperties(onPressOut, closure_3);
-    cResult[3] = dragHandlePressableProps;
-    cResult[4] = draggable;
-    cResult[5] = end;
-    cResult[6] = icon;
-    cResult[7] = label;
-    cResult[8] = labelLineClamp;
-    cResult[9] = nameplate;
-    cResult[10] = onPress;
-    cResult[11] = onPressIn;
-    cResult[12] = onPressOut;
-    cResult[13] = start;
-    cResult[14] = subLabel;
-    cResult[15] = subLabelLineClamp;
-    cResult[16] = disabled;
-    cResult[17] = variant;
-    cResult[18] = isPreviewRow;
-    cResult[19] = trailing;
-    tmp21 = isPreviewRow;
-    tmp16 = start;
-    tmp12 = nameplate;
-    const tmp25 = _objectWithoutProperties(onPressOut, closure_3);
-  } else {
-    tmp12 = cResult[9];
-    closure_0 = cResult[11];
-    closure_1 = cResult[12];
-    tmp16 = cResult[13];
-    tmp21 = cResult[18];
-  }
-  closure_10();
-  const context = react.useContext(tmp(6964).TableRowGroupContext);
-  let tmp30 = !context;
-  if (tmp30) {
-    tmp30 = true === tmp16;
-  }
-  [tmp33, closure_129_2] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[20] !== tmp14) {
-    class H {
-      constructor(arg0) {
-        tmp = closure_2(true);
-        if (closure_0 != null) {
-          tmp3 = onPressOut;
-          tmp2Result = tmp2(onPressOut);
-        }
-        return;
-      }
-    }
-    cResult[20] = tmp14;
-    cResult[21] = H;
-  } else {
-    class H {
-      constructor(arg0) {
-        tmp = closure_2(true);
-        if (closure_0 != null) {
-          tmp3 = onPressOut;
-          tmp2Result = tmp2(onPressOut);
-        }
-        return;
-      }
-    }
-  }
-  if (cResult[22] !== tmp15) {
-    class Q {
-      constructor(arg0) {
-        tmp = closure_2(false);
-        if (closure_1 != null) {
-          tmp3 = onPressOut;
-          tmp2Result = tmp2(onPressOut);
-        }
-        return;
-      }
-    }
-    cResult[22] = tmp15;
-    cResult[23] = Q;
-  } else {
-    class Q {
-      constructor(arg0) {
-        tmp = closure_2(false);
-        if (closure_1 != null) {
-          tmp3 = onPressOut;
-          tmp2Result = tmp2(onPressOut);
-        }
-        return;
-      }
-    }
-  }
-  const tmpResult = useToken;
-  const token = tmpResult.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
-  if (cResult[24] === tmp33) {
-    class Q {
-      constructor(arg0) {
-        tmp = closure_2(false);
-        if (closure_1 != null) {
-          tmp3 = onPressOut;
-          tmp2Result = tmp2(onPressOut);
-        }
-        return;
-      }
-    }
-  }
-  cResult[24] = tmp33;
-  cResult[25] = undefined !== tmp21 && tmp21;
-  cResult[26] = tmp12;
-  cResult[27] = metroImportDefault(NameplateDefault, { nameplate: tmp12, isPressed: tmp33, invertPressOpacity: true, fullOpacity: undefined !== tmp21 && tmp21, animate: undefined !== tmp21 && tmp21 });
-  metroImportDefault(NameplateDefault, { nameplate: tmp12, isPressed: tmp33, invertPressOpacity: true, fullOpacity: undefined !== tmp21 && tmp21, animate: undefined !== tmp21 && tmp21 });
-}) : (function UserNameplateRow(onPressOut) {
+let closure_8 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserNameplateRow.tsx");
+
+export function UserNameplateRow(onPressOut) {
   let arrow;
   let closure_2;
   let dragHandlePressableProps;
@@ -208,8 +66,8 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNamepl
   }
   const merged = Object.assign(onPressOut, Object.assign({ label: 0, subLabel: 0, icon: 0, trailing: 0, arrow: 0, onPress: 0, onPressIn: 0, onPressOut: 0, disabled: 0, start: 0, end: 0, labelLineClamp: 0, subLabelLineClamp: 0, variant: 0, draggable: 0, dragHandlePressableProps: 0, nameplate: 0, isPreviewRow: 0 }));
   closure_2 = undefined;
-  const tmp2 = closure_10();
-  const context = react.useContext(react3.TableRowGroupContext);
+  const tmp2 = closure_8();
+  const context = react.useContext(react2.TableRowGroupContext);
   [first, closure_2] = react.useState(false);
   const items = [onPressIn];
   const items1 = [onPressOut];
@@ -229,15 +87,15 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNamepl
   const token = tmp3Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
   const obj2 = { shadow: "none", border: "none", radius: token, start: tmp14, end: !context && true === end, onPress, onPressIn: callback, onPressOut: callback1, disabled: flag, style: tmp2.card, children: items2 };
   tmp14 = !context;
-  const Card = tmp3(6965).Card;
+  const Card = tmp3(6971).Card;
   if (!context) {
     tmp14 = true === start;
   }
   const merged1 = Object.assign(merged);
-  items2 = [metroImportDefault(NameplateDefault, { nameplate, isPressed: first, invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), ];
-  const TableRowInner = tmp3(6963).TableRowInner;
-  items2[1] = metroImportDefault(TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps });
-  const tmp13Result = metroImportAll(Card, obj2);
+  items2 = [hasOwnProperty(NameplateDefault, { nameplate, isPressed: first, invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), ];
+  const TableRowInner = tmp3(6969).TableRowInner;
+  items2[1] = hasOwnProperty(TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps });
+  const tmp13Result = metroRequire(Card, obj2);
   let tmp13Result2 = tmp13Result;
   if (!context) {
     tmp13Result2 = tmp13Result;
@@ -245,12 +103,9 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserNamepl
       const obj3 = { children: items3 };
       items3 = [tmp13Result, ];
       const obj4 = { adjustSpacingForIcon: null != icon };
-      items3[1] = metroImportDefault(TableRowDivider.TableRowDivider, obj4);
-      tmp13Result2 = tmp13(React4, obj3);
+      items3[1] = hasOwnProperty(TableRowDivider.TableRowDivider, obj4);
+      tmp13Result2 = tmp13(metroImportDefault, obj3);
     }
   }
   return tmp13Result2;
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserNameplateRow.tsx");
-
-export const UserNameplateRow = tmp3;
+}

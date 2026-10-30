@@ -1,29 +1,28 @@
-// Module ID: 19273
-// Function ID: 19274
+// Module ID: 19336
+// Function ID: 19337
 // Name: AppAnalyticsManager
-// Dependencies: [2019, 2012, 5752, 6557, 6743, 5755, 1084, 1101, 7274, 4852, 5749, 18718, 7878, 2]
+// Dependencies: [2014, 2007, 5759, 6564, 6750, 5762, 1072, 1090, 7281, 4853, 5755, 5757, 18777, 7884, 2]
 
-// Module 19273 (AppAnalyticsManager)
-import DurationsDefault from "Durations" /* 1101 */;
-import Timers from "Timers" /* 4852 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5749 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7878 */;
-import getGamePlatformDefault from "getGamePlatform" /* 18718 */;
-import RunningGameStore from "RunningGameStore" /* 2019 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
-import SpeakingStore from "SpeakingStore" /* 6743 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5755 */;
-import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+// Module 19336 (AppAnalyticsManager)
+import Constants from "Constants" /* 1072 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import Timers from "Timers" /* 4853 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5755 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 7884 */;
+import getGamePlatformDefault from "getGamePlatform" /* 18777 */;
+import RunningGameStore from "RunningGameStore" /* 2014 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
+import SpeakingStore from "SpeakingStore" /* 6750 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5762 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
-let c10;
-let c9;
-({ AnalyticEvents: c9, ActivityTypes: c10 } = Constants);
+const AnalyticEvents = Constants.AnalyticEvents;
 const MINUTE = DurationsDefault.Millis.MINUTE;
 class AppAnalyticsManager extends AutomaticLifecycleManager {
   constructor() {
@@ -91,7 +90,7 @@ class AppAnalyticsManager extends AutomaticLifecycleManager {
       const guildId = RTCConnectionStore.getGuildId();
       const obj = { mode: MediaEngineStore.getMode(), priority: SpeakingStore.isCurrentUserPrioritySpeaking(), channel: channelId, server: guildId, channel_id: channelId, guild_id: guildId, rtc_connection_id: RTCConnectionStore.getRTCConnectionId(), media_session_id: RTCConnectionStore.getMediaSessionId(), voice_state_count: SortedVoiceStateStore.countVoiceStatesForChannel(self._voiceChannelId) };
       const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
-      const START_SPEAKING = constants.START_SPEAKING;
+      const START_SPEAKING = AnalyticEvents.START_SPEAKING;
       AppAnalyticsUtils;
       const merged = Object.assign(self.getGameMetadata());
       const merged1 = Object.assign(RTCConnectionStore.getPacketStats());
@@ -107,7 +106,7 @@ class AppAnalyticsManager extends AutomaticLifecycleManager {
         const guildId = RTCConnectionStore.getGuildId();
         const obj2 = { mute: obj.isMute(), anyone_priority: SpeakingStore.isAnyonePrioritySpeaking(), channel: channelId, server: guildId, channel_id: channelId, guild_id: guildId, rtc_connection_id: RTCConnectionStore.getRTCConnectionId(), media_session_id: RTCConnectionStore.getMediaSessionId(), voice_state_count: SortedVoiceStateStore.countVoiceStatesForChannel(self._voiceChannelId) };
         const trackWithMetadata = AppAnalyticsUtils.trackWithMetadata;
-        const START_LISTENING = constants.START_LISTENING;
+        const START_LISTENING = AnalyticEvents.START_LISTENING;
         AppAnalyticsUtils;
         const merged = Object.assign(self.getGameMetadata());
         trackWithMetadata(START_LISTENING, obj2);
@@ -126,7 +125,7 @@ class AppAnalyticsManager extends AutomaticLifecycleManager {
     let name;
     let sku;
     let subgameMetadata;
-    const findActivityResult = SelfPresenceStore.findActivity((type) => type.type === constants.PLAYING);
+    const findActivityResult = SelfPresenceStore.findActivity((type) => type.type === ActivityTypes.ActivityTypes.PLAYING);
     const currentGameForAnalytics = RunningGameStore.getCurrentGameForAnalytics();
     const obj = { game_platform: getGamePlatformDefault(findActivityResult), game_name: name, game_exe_name: exeName, game_id: application_id, game_distributor: distributor, game_distributor_game_id: sku, game_metadata: subgameMetadata };
     name = null;

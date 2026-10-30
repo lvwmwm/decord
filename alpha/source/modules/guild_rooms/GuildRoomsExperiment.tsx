@@ -1,13 +1,12 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7929
+// Function ID: 7930
 // Name: GuildRoomsExperiment
-// Dependencies: [4917, 5225, 558, 576, 504, 2]
-// Exports: getGuildRoomsConfig
+// Dependencies: [4921, 5231, 504, 2]
+// Exports: getGuildRoomsConfig, useGuildRoomsExperiment
 
-// Module 7923 (GuildRoomsExperiment)
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import createExperiment from "module_5225" /* 5225 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 7929 (GuildRoomsExperiment)
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import createExperiment from "module_5231" /* 5231 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,40 +16,15 @@ let items;
 let obj = { kind: "guild", id: "2026-06_guild_rooms", label: "Guild Rooms", defaultConfig: { enabled: false, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: false }, treatments: items };
 items = [{ id: 1, label: "Enable Guild Rooms in this guild", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 2, label: "Enable Guild Rooms without Interactions", config: { enabled: true, interactionsEnabled: false, multipleRoomsEnabled: false, posturesEnabled: true } }, { id: 3, label: "Enable Guild Rooms with Room Variants", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }, { id: 4, label: "Enable Guild Rooms without Postures", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: false, posturesEnabled: false } }, { id: 5, label: "Enable Guild Rooms with Room 2 Default and Selector", config: { enabled: true, interactionsEnabled: true, multipleRoomsEnabled: true, posturesEnabled: true } }];
 let closure_3 = createExperiment.createExperiment(obj);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoomsExperiment(guildId, disable) {
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = guildId;
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(7);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildMemberStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== guildId.guildId) {
-    const fn = function u() {
-      const tmp2 = null != guildId.guildId && !GuildMemberStore.isCurrentUserGuest(tmp.guildId);
-      return tmp2;
-    };
-    const items1 = [guildId.guildId];
-    cResult[1] = guildId.guildId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
+const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
+
+export const GUILD_ROOMS_EXPERIMENT_ID = "2026-06_guild_rooms";
+export function getGuildRoomsConfig(guildId, disable) {
   let flag;
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
+  const getCurrentConfig = closure_3.getCurrentConfig;
+  const obj = { autoTrackExposure: true, disable: flag };
+  const merged = Object.assign(disable);
+  flag = undefined;
   if (disable != null) {
     flag = disable.disable;
   }
@@ -58,22 +32,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoom
     flag = false;
   }
   if (!flag) {
-    flag = !stateFromStores;
+    guildId = guildId.guildId;
+    flag = !(null != guildId && !GuildMemberStore.isCurrentUserGuest(guildId));
+    const tmp3 = null != guildId && !GuildMemberStore.isCurrentUserGuest(guildId);
   }
-  if (cResult[4] === disable) {
-    let tmp9;
-    if (cResult[5] === flag) {
-      tmp9 = cResult[6];
-    }
-    return closure_3.useExperiment(guildId, tmp9);
-  }
-  const obj2 = { autoTrackExposure: true, disable: flag };
-  const merged = Object.assign(disable);
-  cResult[4] = disable;
-  cResult[5] = flag;
-  cResult[6] = obj2;
-  tmp9 = obj2;
-}) : (function useGuildRoomsExperiment(guildId, disable) {
+  return getCurrentConfig(guildId, obj);
+}
+export function useGuildRoomsExperiment(guildId, disable) {
   let flag;
   _require = guildId;
   const items = [GuildMemberStore];
@@ -98,27 +63,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildRoom
     flag = !stateFromStores;
   }
   return useExperiment(guildId, obj2);
-});
-const result = size.fileFinishedImporting("modules/guild_rooms/GuildRoomsExperiment.tsx");
-
-export const GUILD_ROOMS_EXPERIMENT_ID = "2026-06_guild_rooms";
-export function getGuildRoomsConfig(guildId, disable) {
-  let flag;
-  const getCurrentConfig = closure_3.getCurrentConfig;
-  const obj = { autoTrackExposure: true, disable: flag };
-  const merged = Object.assign(disable);
-  flag = undefined;
-  if (disable != null) {
-    flag = disable.disable;
-  }
-  if (flag == null) {
-    flag = false;
-  }
-  if (!flag) {
-    guildId = guildId.guildId;
-    flag = !(null != guildId && !GuildMemberStore.isCurrentUserGuest(guildId));
-    const tmp3 = null != guildId && !GuildMemberStore.isCurrentUserGuest(guildId);
-  }
-  return getCurrentConfig(guildId, obj);
 }
-export const useGuildRoomsExperiment = tmp2;

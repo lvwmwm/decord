@@ -1,15 +1,15 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 14704
+// Function ID: 14705
 // Name: VoicePanelSpoilerAlert
-// Dependencies: [19, 21, 558, 576, 5952, 6889, 6693, 1125, 5952, 2]
+// Dependencies: [19, 21, 5959, 5959, 1114, 6896, 6700, 2]
+// Exports: default
 
-// Module 14671 (VoicePanelSpoilerAlert)
-import intl5 from "intl" /* 1125 */;
-import AlertModal2 from "AlertModal" /* 5952 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+// Module 14704 (VoicePanelSpoilerAlert)
+import intl5 from "intl" /* 1114 */;
+import AlertModal2 from "AlertModal" /* 5959 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -17,128 +17,11 @@ let dependencyMap;
 let c3;
 let closure_4;
 let tmp;
-const SelectedChannelActionCreatorsDefault = tmp(6693);
+const SelectedChannelActionCreatorsDefault = tmp(6700);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanelSpoilerAlert(channelId) {
-  let dismissModalCallback;
-  let items;
-  let obj6;
-  let tmp = channelId;
-  let obj = channelId(dismissModalCallback[3]);
-  const cResult = obj.c(17);
-  channelId = channelId.channelId;
-  const onConnect = channelId.onConnect;
-  const obj2 = channelId(dismissModalCallback[4]);
-  dismissModalCallback = obj2.useDismissModalCallback();
-  if (cResult[0] === channelId) {
-    if (cResult[1] === onConnect) {
-      let tmp5;
-      let tmp6;
-      let tmp9;
-      let tmp8;
-      let tmp12;
-      let tmp14;
-      let tmp17;
-      let tmp19;
-      if (cResult[2] === dismissModalCallback) {
-        tmp5 = cResult[3];
-      }
-      if (cResult[4] !== dismissModalCallback) {
-        function handleDisagree() {
-          dismissModalCallback();
-        }
-        cResult[4] = dismissModalCallback;
-        cResult[5] = handleDisagree;
-        tmp6 = handleDisagree;
-      } else {
-        tmp6 = cResult[5];
-      }
-      const _Symbol = Symbol;
-      if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl = tmp(tmp2[7]).intl;
-        const stringResult = intl.string(tmp(dismissModalCallback[7]).t["q38/ae"]);
-        const intl2 = tmp(tmp2[7]).intl;
-        const stringResult1 = intl2.string(tmp(dismissModalCallback[7]).t["2fDWXK"]);
-        cResult[6] = stringResult;
-        cResult[7] = stringResult1;
-        tmp9 = stringResult1;
-        tmp8 = stringResult;
-      } else {
-        tmp8 = cResult[6];
-        tmp9 = cResult[7];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl3 = tmp(tmp2[7]).intl;
-        const stringResult2 = intl3.string(tmp(dismissModalCallback[7]).t.p89ACt);
-        cResult[8] = stringResult2;
-        tmp12 = stringResult2;
-      } else {
-        tmp12 = cResult[8];
-      }
-      if (cResult[9] !== tmp5) {
-        const obj3 = { variant: "primary", onPress: tmp5, text: tmp12 };
-        const tmp16 = closure_3(tmp(dismissModalCallback[8]).AlertActionButton, obj3, "confirm");
-        cResult[9] = tmp5;
-        cResult[10] = tmp16;
-        tmp14 = tmp16;
-      } else {
-        tmp14 = cResult[10];
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        const intl4 = tmp(tmp2[7]).intl;
-        const stringResult3 = intl4.string(tmp(dismissModalCallback[7]).t["/g10LC"]);
-        cResult[11] = stringResult3;
-        tmp17 = stringResult3;
-      } else {
-        tmp17 = cResult[11];
-      }
-      if (cResult[12] !== tmp6) {
-        const obj4 = { variant: "secondary", onPress: tmp6, text: tmp17 };
-        const tmp21 = closure_3(tmp(dismissModalCallback[8]).AlertActionButton, obj4, "cancel");
-        cResult[12] = tmp6;
-        cResult[13] = tmp21;
-        tmp19 = tmp21;
-      } else {
-        tmp19 = cResult[13];
-      }
-      if (cResult[14] === tmp14) {
-        let tmp22;
-        if (cResult[15] === tmp19) {
-          tmp22 = cResult[16];
-        }
-        return tmp22;
-      }
-      const obj5 = { title: tmp8, content: tmp9, actions: closure_4(tmp(dismissModalCallback[4]).AlertActions, obj6) };
-      const AlertModal = tmp(tmp2[8]).AlertModal;
-      obj6 = { children: items };
-      items = [tmp14, tmp19];
-      const tmp25 = closure_3(AlertModal, obj5);
-      cResult[14] = tmp14;
-      cResult[15] = tmp19;
-      cResult[16] = tmp25;
-      tmp22 = tmp25;
-    }
-  }
-  function handleAgree() {
-    const obj = GuildActionCreatorsDefault;
-    obj.spoilerAgree(channelId);
-    const tmp3 = channelId;
-    if (null != onConnect) {
-      onConnect();
-    } else {
-      const tmpResult = SelectedChannelActionCreatorsDefault;
-      const voiceChannel = tmpResult.selectVoiceChannel(tmp3);
-    }
-    dismissModalCallback();
-  }
-  cResult[0] = channelId;
-  cResult[1] = onConnect;
-  cResult[2] = dismissModalCallback;
-  cResult[3] = handleAgree;
-  tmp5 = handleAgree;
-}) : (function VoicePanelSpoilerAlert(arg0) {
+const result = size.fileFinishedImporting("modules/spoiler_channels/native/VoicePanelSpoilerAlert.tsx");
+
+export default function VoicePanelSpoilerAlert(arg0) {
   let AlertActions;
   let closure_2;
   let intl;
@@ -186,8 +69,5 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoicePanel
   intl4 = intl5.intl;
   items[1] = closure_3(AlertActionButton2, obj5, "cancel");
   return closure_3(AlertModal, obj2);
-});
-const result = size.fileFinishedImporting("modules/spoiler_channels/native/VoicePanelSpoilerAlert.tsx");
-
-export default tmp4;
+};
 export const VOICE_PANEL_SPOILER_KEY = "voice-panel-spoiler";

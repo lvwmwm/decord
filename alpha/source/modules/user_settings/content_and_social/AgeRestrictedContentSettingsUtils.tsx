@@ -1,62 +1,37 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7383
+// Function ID: 7384
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1389, 558, 576, 4833, 6713, 7377, 5682, 6718, 2]
-// Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults
+// Dependencies: [1384, 4834, 6720, 7384, 5688, 6725, 2]
+// Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 7376 (AgeRestrictedContentSettingsUtils)
-import react from "react" /* 576 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6713 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6718 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7377 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 7383 (AgeRestrictedContentSettingsUtils)
+import UserSettings from "UserSettings" /* 4834 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6720 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6725 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7384 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsfwCommandsOrDefault() {
-  const obj = react;
-  const cResult = obj.c(5);
-  const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
-  const setting = ViewNsfwCommands.useSetting();
-  const obj2 = AgeVerificationUtils;
-  const isAgeVerified = obj2.useIsAgeVerified();
-  const obj3 = useNSFWAllowed;
-  const nSFWAllowed = obj3.useNSFWAllowed();
-  const obj4 = RegionalFeatureConfigUtils;
-  const isFeatureAgeGated = obj4.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
-  if (cResult[0] === isFeatureAgeGated) {
-    if (cResult[1] === setting) {
-      if (cResult[2] === isAgeVerified) {
-        let tmp6;
-        if (cResult[3] === nSFWAllowed) {
-          tmp6 = cResult[4];
-        }
-        return tmp6;
-      }
-    }
-  }
-  let tmp8 = !(isFeatureAgeGated && !isAgeVerified);
-  if (tmp8) {
-    let tmp9 = false !== nSFWAllowed;
-    if (tmp9) {
-      let flag2 = setting;
-      if (setting == null) {
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");
+
+export function resolveNsfwTogglesWithDefaults(arg0, arg1, arg2, arg3) {
+  let tmp3 = !(arg1 && !arg3);
+  const tmp = arg1 && !arg3;
+  if (tmp3) {
+    let tmp5 = false !== arg2;
+    if (tmp5) {
+      let flag2 = arg0;
+      if (arg0 == null) {
         flag2 = false;
       }
-      tmp9 = flag2;
+      tmp5 = flag2;
     }
-    tmp8 = tmp9;
+    tmp3 = tmp5;
   }
-  cResult[0] = isFeatureAgeGated;
-  cResult[1] = setting;
-  cResult[2] = isAgeVerified;
-  cResult[3] = nSFWAllowed;
-  cResult[4] = tmp8;
-  tmp6 = tmp8;
-}) : (function useViewNsfwCommandsOrDefault() {
+  return tmp3;
+}
+export function useViewNsfwCommandsOrDefault() {
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;
   let flag = ViewNsfwCommands.useSetting();
   const obj = AgeVerificationUtils;
@@ -77,49 +52,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsf
     tmp4 = tmp5;
   }
   return tmp4;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsfwGuildsOrDefault() {
-  const obj = react;
-  const cResult = obj.c(5);
-  const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
-  const setting = ViewNsfwGuilds.useSetting();
-  const obj2 = AgeVerificationUtils;
-  const isAgeVerified = obj2.useIsAgeVerified();
-  const obj3 = useNSFWAllowed;
-  const nSFWAllowed = obj3.useNSFWAllowed();
-  const obj4 = RegionalFeatureConfigUtils;
-  const isFeatureAgeGated = obj4.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.COMMANDS_TOGGLE);
-  if (cResult[0] === isFeatureAgeGated) {
-    if (cResult[1] === setting) {
-      if (cResult[2] === isAgeVerified) {
-        let tmp6;
-        if (cResult[3] === nSFWAllowed) {
-          tmp6 = cResult[4];
-        }
-        return tmp6;
-      }
-    }
-  }
-  let tmp8 = !(isFeatureAgeGated && !isAgeVerified);
-  if (tmp8) {
-    let tmp9 = false !== nSFWAllowed;
-    if (tmp9) {
-      let flag2 = setting;
-      if (setting == null) {
-        flag2 = false;
-      }
-      tmp9 = flag2;
-    }
-    tmp8 = tmp9;
-  }
-  cResult[0] = isFeatureAgeGated;
-  cResult[1] = setting;
-  cResult[2] = isAgeVerified;
-  cResult[3] = nSFWAllowed;
-  cResult[4] = tmp8;
-  tmp6 = tmp8;
-}) : (function useViewNsfwGuildsOrDefault() {
+}
+export function useViewNsfwGuildsOrDefault() {
   const ViewNsfwGuilds = UserSettings.ViewNsfwGuilds;
   let flag = ViewNsfwGuilds.useSetting();
   const obj = AgeVerificationUtils;
@@ -140,28 +74,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useViewNsfwG
     tmp4 = tmp5;
   }
   return tmp4;
-});
-function resolveNsfwTogglesWithDefaults(arg0, arg1, arg2, arg3) {
-  let tmp3 = !(arg1 && !arg3);
-  const tmp = arg1 && !arg3;
-  if (tmp3) {
-    let tmp5 = false !== arg2;
-    if (tmp5) {
-      let flag2 = arg0;
-      if (arg0 == null) {
-        flag2 = false;
-      }
-      tmp5 = flag2;
-    }
-    tmp3 = tmp5;
-  }
-  return tmp3;
 }
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");
-
-export { resolveNsfwTogglesWithDefaults };
-export const useViewNsfwCommandsOrDefault = tmp2;
-export const useViewNsfwGuildsOrDefault = tmp3;
 export function getViewNsfwCommandsOrDefault() {
   let nsfwAllowed;
   const ViewNsfwCommands = UserSettings.ViewNsfwCommands;

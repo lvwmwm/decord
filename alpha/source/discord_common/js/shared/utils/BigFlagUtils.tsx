@@ -1,10 +1,10 @@
-// Module ID: 1096
-// Function ID: 1097
+// Module ID: 1084
+// Function ID: 1085
 // Name: BigFlagUtils
 // Dependencies: [32, 14, 2]
 // Exports: add, combine, flagNameOf, getBrandedFlag, has, hasAny, remove
 
-// Module 1096 (BigFlagUtils)
+// Module 1084 (BigFlagUtils)
 import _modDef14 from "module_14" /* 14 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;

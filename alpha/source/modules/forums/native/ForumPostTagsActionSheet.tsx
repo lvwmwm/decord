@@ -1,22 +1,22 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11120
+// Function ID: 11121
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 7440, 21, 5005, 558, 576, 1125, 7442, 9793, 5247, 7308, 11099, 5281, 7358, 2]
+// Dependencies: [32, 19, 17, 7448, 21, 5009, 1114, 7450, 7360, 7315, 11121, 5629, 9819, 5253, 2]
+// Exports: default
 
-// Module 11098 (ForumPostTagsActionSheet)
+// Module 11120 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ForumConstants from "ForumConstants" /* 7440 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9793 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 11099 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ForumConstants from "ForumConstants" /* 7448 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9819 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 11121 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let onPress, set;
+let set;
 
 let metroImportAll;
 let metroImportDefault;
@@ -24,206 +24,9 @@ const View = react_native.View;
 const MAX_FORUM_POST_TAGS = ForumConstants.MAX_FORUM_POST_TAGS;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let closure_9 = createStyles.createStyles({ tagsContainer: { display: "flex", flexDirection: "row", flexWrap: "wrap" }, saveButton: { marginTop: 8, marginHorizontal: 16, marginBottom: 16 }, subtitle: { marginTop: 4 } });
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTagsActionSheet(thread) {
-  let canManageThread;
-  let first;
-  let onClose;
-  let onSave;
-  let tags;
-  let title;
-  let tmp5;
-  let tmp9;
-  let tmp = thread;
-  let tmp2 = onClose;
-  let obj = thread(onClose[7]);
-  const cResult = obj.c(42);
-  thread = thread.thread;
-  ({ canManageThread, onSave } = thread);
-  ({ title, tags, onClose } = thread);
-  let tmp4 = undefined === canManageThread;
-  const parentChannel = thread.parentChannel;
-  if (!tmp4) {
-    tmp4 = canManageThread;
-  }
-  canManageThread = tmp4;
-  if (cResult[0] !== title) {
-    let stringResult = title;
-    if (undefined === title) {
-      const intl = tmp(tmp2[8]).intl;
-      stringResult = intl.string(tmp(tmp2[8]).t["436ZFw"]);
-    }
-    cResult[0] = title;
-    cResult[1] = stringResult;
-    tmp5 = stringResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmp7 = closure_9();
-  const tmpResult = tmp(tmp2[9]);
-  let appliedTags = tmpResult.useAppliedTags(thread);
-  if (null != tags) {
-    appliedTags = tags;
-  }
-  if (cResult[2] !== appliedTags) {
-    let _Set = Set;
-    let self = this;
-    let self2 = this;
-    set = new Set(appliedTags);
-    cResult[2] = appliedTags;
-    cResult[3] = set;
-    tmp9 = set;
-  } else {
-    tmp9 = cResult[3];
-  }
-  const tmp14 = canManageThread(first.useState(tmp9), 2);
-  first = tmp14[0];
-  let closure_5 = tmp14[1];
-  let closure_6 = tmp16;
-  const tmpResult2 = tmp(tmp2[9]);
-  const visibleForumTags = tmpResult2.useVisibleForumTags(parentChannel);
-  if (cResult[4] === first.size >= closure_6) {
-    let tmp18;
-    if (cResult[5] === first) {
-      tmp18 = cResult[6];
-    }
-    onPress = tmp18;
-    if (cResult[7] === onSave) {
-      if (cResult[8] === first) {
-        let tmp23;
-        if (cResult[11] !== onClose) {
-          class E {
-            constructor() {
-              let tmp;
-              if (onClose != null) {
-                tmp = onClose();
-              }
-              return tmp;
-            }
-          }
-          cResult[11] = onClose;
-          cResult[12] = E;
-        } else {
-          class E {
-            constructor() {
-              let tmp;
-              if (onClose != null) {
-                tmp = onClose();
-              }
-              return tmp;
-            }
-          }
-        }
-        const _Symbol = Symbol;
-        if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-          class E {
-            constructor() {
-              let tmp;
-              if (onClose != null) {
-                tmp = onClose();
-              }
-              return tmp;
-            }
-          }
-          const stringResult1 = obj4.string(tmp(tmp2[8]).t["+HS9+m"]);
-          cResult[13] = stringResult1;
-          tmp23 = stringResult1;
-        } else {
-          class E {
-            constructor() {
-              let tmp;
-              if (onClose != null) {
-                tmp = onClose();
-              }
-              return tmp;
-            }
-          }
-        }
-        if (cResult[14] === tmp7.subtitle) {
-          class E {
-            constructor() {
-              let tmp;
-              if (onClose != null) {
-                tmp = onClose();
-              }
-              return tmp;
-            }
-          }
-          if (cResult[17] === first.size >= closure_6) {
-            class E {
-              constructor() {
-                let tmp;
-                if (onClose != null) {
-                  tmp = onClose();
-                }
-                return tmp;
-              }
-            }
-          }
-          if (cResult[23] === first.size >= closure_6) {
-            class E {
-              constructor() {
-                let tmp;
-                if (onClose != null) {
-                  tmp = onClose();
-                }
-                return tmp;
-              }
-            }
-          }
-          class X {
-            constructor(tag) {
-              let tmp4;
-              const hasItem = first.has(tag);
-              const obj = { tag, disabled: tmp4, onPress, selected: hasItem };
-              tmp4 = !canManageThread;
-              const tmp2 = metroImportDefault;
-              const tmp3 = AvailableForumTagDefault;
-              if (canManageThread) {
-                tmp4 = closure_6 && !hasItem;
-              }
-              return tmp2(tmp3, obj, tag.id);
-            }
-          }
-          cResult[23] = first.size >= closure_6;
-          cResult[24] = tmp4;
-          cResult[25] = first;
-          cResult[26] = tmp18;
-          cResult[27] = X;
-        }
-        let obj2 = { title: tmp5, subtitle: tmp23, subtitleStyle: tmp7.subtitle };
-        cResult[14] = tmp7.subtitle;
-        cResult[15] = tmp5;
-        cResult[16] = onPress(tmp(tmp2[12]).BottomSheetTitleHeader, obj2);
-        const tmp27 = onPress(tmp(tmp2[12]).BottomSheetTitleHeader, obj2);
-      }
-    }
-    cResult[7] = onSave;
-    cResult[8] = first;
-    cResult[9] = thread;
-    cResult[10] = tmp20;
-  }
-  function toggleTag(arg0) {
-    if (null != arg0) {
-      const _Set = Set;
-      const self = this;
-      const self2 = this;
-      set = new Set(first);
-      if (set.has(arg0)) {
-        set.delete(arg0);
-      } else {
-        const tmp4 = closure_6;
-        if (!tmp4) {
-          set.add(arg0);
-        }
-      }
-      closure_5(set);
-    }
-  }
-  cResult[4] = first.size >= closure_6;
-  cResult[5] = first;
-  cResult[6] = toggleTag;
-  tmp18 = toggleTag;
-}) : (function ForumPostTagsActionSheet(thread) {
+const result = size.fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
+
+export default function ForumPostTagsActionSheet(thread) {
   let BottomSheetTitleHeader;
   let Button;
   let closure_5;
@@ -245,8 +48,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   if (title === undefined) {
     let tmp = thread;
     let tmp2 = dependencyMap;
-    const intl = thread(1125).intl;
-    title = intl.string(thread(1125).t["436ZFw"]);
+    const intl = thread(1114).intl;
+    title = intl.string(thread(1114).t["436ZFw"]);
   }
   ({ tags, onClose: _slicedToArray } = thread);
   first = undefined;
@@ -272,7 +75,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(7442);
+  let obj = thread(7450);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -282,7 +85,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(7442);
+  const tmp4Result = tmp4(7450);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {
@@ -295,10 +98,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
     header: toggleTag(BottomSheetTitleHeader, obj3),
     children: items
   };
-  const ActionSheet = tmp4(7358).ActionSheet;
-  obj3 = { title, subtitle: intl2.string(tmp4(1125).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
-  BottomSheetTitleHeader = tmp4(7308).BottomSheetTitleHeader;
-  intl2 = tmp4(1125).intl;
+  const ActionSheet = tmp4(7360).ActionSheet;
+  obj3 = { title, subtitle: intl2.string(tmp4(1114).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
+  BottomSheetTitleHeader = tmp4(7315).BottomSheetTitleHeader;
+  intl2 = tmp4(1114).intl;
   items = [, ];
   const obj4 = {
     style: tmp3.tagsContainer,
@@ -318,7 +121,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
   items[0] = toggleTag(closure_5, obj4);
   const obj5 = { style: tmp3.saveButton, children: toggleTag(Button, obj6) };
   obj6 = {
-    text: intl3.string(tmp4(1125).t["R3BPH+"]),
+    text: intl3.string(tmp4(1114).t["R3BPH+"]),
     onPress: function handleSave() {
       Array.from(first);
       if (null != dependencyMap) {
@@ -333,11 +136,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForumPostTag
       obj2.hideActionSheet();
     }
   };
-  Button = tmp4(5281).Button;
-  intl3 = tmp4(1125).intl;
+  Button = tmp4(5629).Button;
+  intl3 = tmp4(1114).intl;
   items[1] = toggleTag(closure_5, obj5);
   return closure_8(ActionSheet, obj2);
-});
-const result = size.fileFinishedImporting("modules/forums/native/ForumPostTagsActionSheet.tsx");
-
-export default tmp3;
+};

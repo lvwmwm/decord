@@ -1,12 +1,12 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12180
+// Function ID: 12181
 // Name: applicationWidgetRefreshOutcome
-// Dependencies: [1125, 3252, 2]
+// Dependencies: [1114, 3253, 2]
 // Exports: default
 
-// Module 11992 (applicationWidgetRefreshOutcome)
-import intl7 from "intl" /* 1125 */;
-import _modDef3252 from "module_3252" /* 3252 */;
+// Module 12180 (applicationWidgetRefreshOutcome)
+import intl7 from "intl" /* 1114 */;
+import _modDef3253 from "module_3253" /* 3253 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_widget/applicationWidgetRefreshOutcome.tsx");
@@ -19,27 +19,27 @@ export default function applicationWidgetRefreshOutcome(arg0) {
   let intl5;
   let intl6;
   if ("dispatched" === arg0) {
-    const obj2 = { text: intl6.string(_modDef3252["um/5Kc"]), ok: true };
+    const obj2 = { text: intl6.string(_modDef3253["um/5Kc"]), ok: true };
     intl6 = intl7.intl;
     return obj2;
   } else if ("rate_limited" === arg0) {
-    const obj3 = { text: intl5.string(_modDef3252.T1n7hc), ok: false };
+    const obj3 = { text: intl5.string(_modDef3253.T1n7hc), ok: false };
     intl5 = intl7.intl;
     return obj3;
   } else if ("unauthorized" === arg0) {
-    const obj4 = { text: intl4.string(_modDef3252["30UxZU"]), ok: false };
+    const obj4 = { text: intl4.string(_modDef3253["30UxZU"]), ok: false };
     intl4 = intl7.intl;
     return obj4;
   } else if ("no_widget_config" === arg0) {
-    const obj5 = { text: intl3.string(_modDef3252["1UFWet"]), ok: false };
+    const obj5 = { text: intl3.string(_modDef3253["1UFWet"]), ok: false };
     intl3 = intl7.intl;
     return obj5;
   } else if ("undeliverable" === arg0) {
-    const obj6 = { text: intl2.string(_modDef3252.ypKX9A), ok: false };
+    const obj6 = { text: intl2.string(_modDef3253.ypKX9A), ok: false };
     intl2 = intl7.intl;
     return obj6;
   } else {
-    const obj = { text: intl.string(_modDef3252.BLKD4B), ok: false };
+    const obj = { text: intl.string(_modDef3253.BLKD4B), ok: false };
     intl = intl7.intl;
     return obj;
   }

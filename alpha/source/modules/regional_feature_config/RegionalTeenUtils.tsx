@@ -1,71 +1,28 @@
-// Module ID: 13786
-// Function ID: 13787
+// Module ID: 13933
+// Function ID: 13934
 // Name: RegionalTeenUtils
-// Dependencies: [19, 5683, 5686, 558, 576, 504, 10941, 8179, 2]
-// Exports: useIsTeenInStrictCountry
+// Dependencies: [19, 5689, 5692, 504, 10966, 8360, 2]
+// Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 13786 (RegionalTeenUtils)
-import react2 from "react" /* 576 */;
-import CountryCodes from "CountryCodes" /* 5686 */;
-import useUserIsTeen from "useUserIsTeen" /* 8179 */;
-import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10941 */;
+// Module 13933 (RegionalTeenUtils)
+import CountryCodes from "CountryCodes" /* 5692 */;
+import MessageRequestActionCreators from "MessageRequestActionCreators" /* 10966 */;
 import react from "react" /* 19 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5683 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5689 */;
 import size from "module_2" /* 2 */;
 
 let userCountryCode;
 
+const f105209 = () => userCountryCode.getUserCountryCode();
 let items = ["GB", "AU", ...CountryCodes.CountryCodesSets.EU_COUNTRIES];
 const set = new Set(items);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCountryCode() {
+const result = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
+
+export function useUserCountryCode() {
   let stateFromStores;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  let obj = stateFromStores(576);
-  const cResult = obj.c(5);
-  const tmp = stateFromStores;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RegionalFeatureConfigStore];
-    const fn = function u() {
-      return userCountryCode.getUserCountryCode();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    const fn2 = function l() {
-      if (null == stateFromStores) {
-        const obj = MessageRequestActionCreators;
-        userCountryCode = obj.fetchUserCountryCode();
-      }
-    };
-    const items1 = [stateFromStores];
-    cResult[2] = stateFromStores;
-    cResult[3] = fn2;
-    cResult[4] = items1;
-    tmp9 = items1;
-    tmp8 = fn2;
-  } else {
-    tmp8 = cResult[3];
-    tmp9 = cResult[4];
-  }
-  const effect = react.useEffect(tmp8, tmp9);
-  return stateFromStores;
-}) : (function useUserCountryCode() {
-  let stateFromStores;
-  let obj = stateFromStores(504);
   const items = [RegionalFeatureConfigStore];
-  stateFromStores = obj.useStateFromStores(items, () => userCountryCode.getUserCountryCode());
+  const obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, f105209);
   const items1 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
@@ -74,43 +31,37 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCou
     }
   }, items1);
   return stateFromStores;
-});
-let closure_5 = tmp3;
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsTeenInCountrySet(has) {
-  const obj = react2;
-  const cResult = obj.c(4);
-  const tmp2 = closure_5();
-  const obj2 = useUserIsTeen;
-  const userIsTeen = obj2.useUserIsTeen();
-  if (cResult[0] === has) {
-    if (cResult[1] === tmp2) {
-      let tmp4;
-      if (cResult[2] === userIsTeen) {
-        tmp4 = cResult[3];
-      }
-      return tmp4;
+}
+export function useIsTeenInCountrySet(set) {
+  let stateFromStores;
+  const items = [RegionalFeatureConfigStore];
+  const obj = stateFromStores(504);
+  stateFromStores = obj.useStateFromStores(items, f105209);
+  const items1 = [stateFromStores];
+  const effect = react.useEffect(() => {
+    if (null == stateFromStores) {
+      const obj = MessageRequestActionCreators;
+      userCountryCode = obj.fetchUserCountryCode();
     }
-  }
-  const hasItem = userIsTeen && null != tmp2 && has.has(tmp2.alpha2);
-  cResult[0] = has;
-  cResult[1] = tmp2;
-  cResult[2] = userIsTeen;
-  cResult[3] = hasItem;
-  tmp4 = hasItem;
-}) : (function useIsTeenInCountrySet(has) {
-  const tmp = closure_5();
-  const obj = useUserIsTeen;
-  const userIsTeen = obj.useUserIsTeen() && null != tmp && has.has(tmp.alpha2);
+  }, items1);
+  const obj2 = stateFromStores(8360);
+  const userIsTeen = obj2.useUserIsTeen() && null != stateFromStores && set.has(stateFromStores.alpha2);
   return userIsTeen;
-});
-let closure_6 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
-
-export const useUserCountryCode = tmp3;
-export const useIsTeenInCountrySet = tmp4;
+}
 export function useIsTeenInStrictCountry() {
-  return closure_6(set);
+  let stateFromStores;
+  let obj = set;
+  const items = [RegionalFeatureConfigStore];
+  const obj2 = stateFromStores(504);
+  stateFromStores = obj2.useStateFromStores(items, f105209);
+  const items1 = [stateFromStores];
+  const effect = react.useEffect(() => {
+    if (null == stateFromStores) {
+      const obj = MessageRequestActionCreators;
+      userCountryCode = obj.fetchUserCountryCode();
+    }
+  }, items1);
+  const obj3 = stateFromStores(8360);
+  const userIsTeen = obj3.useUserIsTeen() && null != stateFromStores && obj.has(stateFromStores.alpha2);
+  return userIsTeen;
 }

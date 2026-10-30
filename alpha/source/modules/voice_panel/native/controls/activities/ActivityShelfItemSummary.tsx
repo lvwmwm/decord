@@ -1,22 +1,23 @@
-// Module ID: 19100
-// Function ID: 19101
+// Module ID: 19206
+// Function ID: 19207
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5005, 587, 5002, 558, 576, 19101, 11362, 1199, 5293, 5271, 5299, 5086, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 5006, 19207, 11565, 1188, 5640, 5619, 5090, 5642, 2]
+// Exports: default
 
-// Module 19100 (ActivityShelfItemSummary)
+// Module 19206 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 5086 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ButtonPill from "ButtonPill" /* 5293 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19101 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5090 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ButtonPill from "ButtonPill" /* 5640 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11565 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19207 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ColorUtils_mod from "ColorUtils" /* 5002 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import ColorUtils_mod from "ColorUtils" /* 5006 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -24,12 +25,16 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp;
 let tmp2;
-let tmp4;
-const native = tmp(1199);
-const ButtonEllipsis = tmp2(5299);
-const UserSummaryItemDefault = tmp4(11362);
+const ButtonEllipsis = tmp2(5642);
+function ParticipantsSummary(arg0) {
+  let applicationId;
+  let channelId;
+  ({ applicationId, channelId } = arg0);
+  const obj = { users: useActivityUsersDefault(applicationId, channelId), max: 5, avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32, withPlusCount: true, style: { marginBottom: 8 }, cutout: { inset: -8 } };
+  const tmp2 = UserSummaryItemDefault;
+  return hasOwnProperty(tmp2, obj);
+}
 let View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -39,150 +44,9 @@ createStyles = createStyles.createStyles;
 ColorUtils = ColorUtils_mod;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_7 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function ParticipantsSummary(arg0) {
-  let applicationId;
-  let channelId;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(4);
-  ({ applicationId, channelId } = arg0);
-  const tmp5 = useActivityUsersDefault(applicationId, channelId);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { marginBottom: 8 };
-    const obj3 = { inset: -8 };
-    cResult[0] = obj2;
-    cResult[1] = obj3;
-    tmp6 = obj2;
-    tmp7 = obj3;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  if (cResult[2] !== tmp5) {
-    const obj4 = { users: tmp5, max: 5, avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32, withPlusCount: true, style: tmp6, cutout: tmp7 };
-    const tmp4Result = UserSummaryItemDefault;
-    const tmp11 = hasOwnProperty(tmp4Result, obj4);
-    cResult[2] = tmp5;
-    cResult[3] = tmp11;
-    tmp8 = tmp11;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function ParticipantsSummary(arg0) {
-  let applicationId;
-  let channelId;
-  ({ applicationId, channelId } = arg0);
-  const obj = { users: useActivityUsersDefault(applicationId, channelId), max: 5, avatarSize: native.AvatarSizes.REFRESH_MEDIUM_32, withPlusCount: true, style: { marginBottom: 8 }, cutout: { inset: -8 } };
-  const tmp2 = UserSummaryItemDefault;
-  return hasOwnProperty(tmp2, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShelfItemSummary(arg0) {
-  let applicationId;
-  let applicationName;
-  let channelId;
-  let items;
-  let items1;
-  let submitting;
-  const obj = react2;
-  const cResult = obj.c(22);
-  ({ channelId, applicationId, applicationName, submitting } = arg0);
-  const tmp5 = closure_7();
-  const tmpResult = ButtonPill;
-  const tmp6 = _slicedToArray(tmpResult.useLoadingStyles(undefined !== submitting && submitting, "md"), 2)[1];
-  const tmp7 = undefined !== submitting && submitting ? tmp5.loadingTextColor : tmp5.overlayActivityNameText;
-  if (cResult[0] === applicationName) {
-    let tmp8;
-    if (cResult[1] === tmp7) {
-      tmp8 = cResult[2];
-    }
-    if (cResult[3] === tmp6) {
-      let tmp10;
-      let tmp11;
-      if (cResult[4] === tmp5.ellipsis) {
-        tmp10 = cResult[5];
-      }
-      if (cResult[6] !== (undefined !== submitting && submitting)) {
-        const tmp12 = tmp4 && hasOwnProperty(tmp(5299).Ellipsis, { variant: "active", size: "md" });
-        cResult[6] = undefined !== submitting && submitting;
-        cResult[7] = tmp12;
-        tmp11 = tmp12;
-      } else {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp10) {
-        let tmp14;
-        if (cResult[9] === tmp11) {
-          tmp14 = cResult[10];
-        }
-        if (cResult[11] === tmp5.overlayActivityName) {
-          if (cResult[12] === tmp8) {
-            let tmp18;
-            if (cResult[13] === tmp14) {
-              tmp18 = cResult[14];
-            }
-            if (cResult[15] === applicationId) {
-              let tmp22;
-              if (cResult[16] === channelId) {
-                tmp22 = cResult[17];
-              }
-              if (cResult[18] === tmp5.ongoingActivityContainer) {
-                if (cResult[19] === tmp18) {
-                  let tmp26;
-                  if (cResult[20] === tmp22) {
-                    tmp26 = cResult[21];
-                  }
-                  return tmp26;
-                }
-              }
-              const obj2 = { style: tmp5.ongoingActivityContainer, children: items };
-              items = [tmp18, tmp22];
-              const tmp29 = metroRequire(View, obj2);
-              cResult[18] = tmp5.ongoingActivityContainer;
-              cResult[19] = tmp18;
-              cResult[20] = tmp22;
-              cResult[21] = tmp29;
-              tmp26 = tmp29;
-            }
-            const obj3 = { channelId, applicationId };
-            const tmp25 = hasOwnProperty(closure_8, obj3);
-            cResult[15] = applicationId;
-            cResult[16] = channelId;
-            cResult[17] = tmp25;
-            tmp22 = tmp25;
-          }
-        }
-        const obj4 = { style: tmp5.overlayActivityName, children: items1 };
-        items1 = [tmp8, tmp14];
-        const tmp21 = metroRequire(View, obj4);
-        cResult[11] = tmp5.overlayActivityName;
-        cResult[12] = tmp8;
-        cResult[13] = tmp14;
-        cResult[14] = tmp21;
-        tmp18 = tmp21;
-      }
-      const obj5 = { style: tmp10, children: tmp11 };
-      const tmp17 = hasOwnProperty(ReanimatedRexportDefault.View, obj5);
-      cResult[8] = tmp10;
-      cResult[9] = tmp11;
-      cResult[10] = tmp17;
-      tmp14 = tmp17;
-    }
-    const items2 = [tmp5.ellipsis, tmp6];
-    cResult[3] = tmp6;
-    cResult[4] = tmp5.ellipsis;
-    cResult[5] = items2;
-    tmp10 = items2;
-  }
-  const tmp9 = hasOwnProperty(Text_Text.Text, { variant: "text-md/semibold", style: tmp7, lineClamp: 2, children: applicationName });
-  cResult[0] = applicationName;
-  cResult[1] = tmp7;
-  cResult[2] = tmp9;
-  tmp8 = tmp9;
-}) : (function ActivityShelfItemSummary(submitting) {
+const result = size.fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx");
+
+export default function ActivityShelfItemSummary(submitting) {
   let applicationId;
   let applicationName;
   let channelId;
@@ -210,9 +74,6 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ActivityShel
     tmp8Result = tmp8(ButtonEllipsis.Ellipsis, { variant: "active", size: "md" });
   }
   items[1] = hasOwnProperty(View, obj5);
-  items2 = [metroRequire(View, obj3), hasOwnProperty(closure_8, { channelId, applicationId })];
+  items2 = [metroRequire(View, obj3), hasOwnProperty(ParticipantsSummary, { channelId, applicationId })];
   return metroRequire(View, obj2);
-});
-const result = size.fileFinishedImporting("modules/voice_panel/native/controls/activities/ActivityShelfItemSummary.tsx");
-
-export default tmp5;
+};

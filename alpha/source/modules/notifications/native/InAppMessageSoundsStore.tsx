@@ -1,43 +1,23 @@
-// Module ID: 14229
-// Function ID: 14230
+// Module ID: 11010
+// Function ID: 11011
 // Name: InAppMessageSoundsStore
-// Dependencies: [510, 1266, 558, 576, 4920, 2]
-// Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled
+// Dependencies: [510, 1255, 4924, 2]
+// Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 14229 (InAppMessageSoundsStore)
+// Module 11010 (InAppMessageSoundsStore)
 import Storage2 from "Storage" /* 510 */;
-import react from "react" /* 576 */;
-import module_1266 from "module_1266" /* 1266 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import _slicedToArray from "_slicedToArray" /* 4924 */;
+import module_1255 from "module_1255" /* 1255 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const _slicedToArray = tmp(4920);
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";
-let closure_3 = module_1266.createWithEqualityFn(() => {
+let closure_3 = module_1255.createWithEqualityFn(() => {
   const Storage = Storage2.Storage;
   let isEnabled = Storage.get(InAppMessageSoundsEnabled);
   if (isEnabled == null) {
     isEnabled = true;
   }
   return { isEnabled };
-});
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInAppMessageSoundsEnabled() {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function n(isEnabled) {
-      return isEnabled.isEnabled;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  return closure_3(first, _slicedToArray.shallow);
-}) : (function useInAppMessageSoundsEnabled() {
-  return closure_3((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
 });
 let result = size.fileFinishedImporting("modules/notifications/native/InAppMessageSoundsStore.tsx");
 
@@ -50,4 +30,6 @@ export function setInAppMessageSoundsEnabled(isEnabled) {
   const obj = { isEnabled };
   closure_3.setState(obj);
 }
-export const useInAppMessageSoundsEnabled = tmp2;
+export function useInAppMessageSoundsEnabled() {
+  return closure_3((isEnabled) => isEnabled.isEnabled, _slicedToArray.shallow);
+}

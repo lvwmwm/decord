@@ -1,21 +1,20 @@
-// Module ID: 15552
-// Function ID: 15553
+// Module ID: 15592
+// Function ID: 15593
 // Name: NowPlayingStore
-// Dependencies: [7789, 5750, 1389, 1084, 15553, 504, 584, 2]
+// Dependencies: [7794, 5756, 1384, 5757, 15593, 504, 572, 2]
 
-// Module 15552 (NowPlayingStore)
+// Module 15592 (NowPlayingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 15553 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import UserStore from "UserStore" /* 1389 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import getApplicationIdForActivityDefault from "getApplicationIdForActivity" /* 15593 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let closure_6, timestamps;
 
-const f125896 = (item) => {
+const f108434 = (item) => {
   const tmp = false !== closure_2_9(item) || closure_0;
   closure_0 = tmp;
 };
@@ -28,7 +27,7 @@ function _handlePresenceUpdate(user) {
   if (null == user) {
     return false;
   } else {
-    const found = activities.filter((type) => type.type !== constants.CUSTOM_STATUS);
+    const found = activities.filter((type) => type.type !== user(dependencyMap[3]).ActivityTypes.CUSTOM_STATUS);
     if (0 === found.length) {
       let id = user.id;
       let tmp3 = obj3;
@@ -154,7 +153,6 @@ function handleUserAffinitiesV2StoreUpdate() {
   closure_6 = !obj.shouldFetch();
   return flag;
 }
-const ActivityTypes = Constants.ActivityTypes;
 let c6 = false;
 let obj7 = {};
 let obj18 = {};
@@ -203,14 +201,14 @@ let obj = {
     let item = guilds.forEach((presences) => {
       presences = presences.presences;
       let closure_0 = false;
-      const item = presences.forEach(f125896);
+      const item = presences.forEach(f108434);
       const tmp2 = closure_0;
       if (tmp2) {
         c0 = true;
       }
     });
     let c0 = false;
-    const item1 = presences.forEach(f125896);
+    const item1 = presences.forEach(f108434);
     const tmp3 = c0;
     if (tmp3) {
       c0 = true;
@@ -228,7 +226,7 @@ let obj = {
   PRESENCES_REPLACE: function handlePresencesReplace(presences) {
     presences = presences.presences;
     let c0 = false;
-    const item = presences.forEach(f125896);
+    const item = presences.forEach(f108434);
     return c0;
   }
 };

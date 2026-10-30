@@ -1,52 +1,21 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14361
+// Function ID: 14362
 // Name: useFrameRunsInBackground
-// Dependencies: [1206, 6833, 558, 576, 14332, 504, 2]
+// Dependencies: [1195, 6840, 504, 14362, 2]
+// Exports: default
 
-// Module 14331 (useFrameRunsInBackground)
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 14332 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1206 */;
-import FramesStore from "FramesStore" /* 6833 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14361 (useFrameRunsInBackground)
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 14362 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1195 */;
+import FramesStore from "FramesStore" /* 6840 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameRunsInBackground(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FramesStore, UnsyncedUserSettingsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const tmp = frameRunsInBackgroundDefault;
-      return tmp(FramesStore.getFrame(closure_0), UnsyncedUserSettingsStore);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useFrameRunsInBackground(arg0) {
+const result = size.fileFinishedImporting("modules/frames/useFrameRunsInBackground.tsx");
+
+export default function useFrameRunsInBackground(arg0) {
   let closure_0;
   _require = arg0;
   const items = [FramesStore, UnsyncedUserSettingsStore];
@@ -56,7 +25,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFrameRu
     const tmp = frameRunsInBackgroundDefault;
     return tmp(FramesStore.getFrame(closure_0), UnsyncedUserSettingsStore);
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/frames/useFrameRunsInBackground.tsx");
-
-export default tmp2;
+};

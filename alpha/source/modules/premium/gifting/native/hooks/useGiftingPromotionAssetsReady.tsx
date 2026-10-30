@@ -1,83 +1,31 @@
-// Module ID: 18942
-// Function ID: 18943
+// Module ID: 19002
+// Function ID: 19003
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [32, 19, 558, 576, 10577, 1899, 2]
+// Dependencies: [32, 19, 10603, 1894, 2]
+// Exports: default
 
-// Module 18942 (useGiftingPromotionAssetsReady)
-import react2 from "react" /* 576 */;
-import react_nativeDefault from "react-native" /* 1899 */;
+// Module 19002 (useGiftingPromotionAssetsReady)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let c0;
 
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoachmarkAssetReady(arg0) {
-  let themeAndReducedMotionAwareAssetUrl;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let obj = themeAndReducedMotionAwareAssetUrl(576);
-  const cResult = obj.c(3);
-  let obj2 = themeAndReducedMotionAwareAssetUrl(10577);
-  themeAndReducedMotionAwareAssetUrl = obj2.useThemeAndReducedMotionAwareAssetUrl(arg0);
-  let tmp3 = _slicedToArray(react.useState(null), 2);
-  [tmp4, importDefault] = tmp3;
-  const obj3 = react;
-  if (cResult[0] !== themeAndReducedMotionAwareAssetUrl) {
-    const fn = function u() {
-      let tmp;
-      if (null != c0) {
-        c0 = true;
-        let tmp3 = dependencyMap;
-        const obj2 = { uri: tmp };
-        const obj = react_nativeDefault;
-        const preloadResult = obj.preload(obj2);
-        preloadResult.then((result) => {
-          const tmp = c0;
-          if (tmp) {
-            let tmp4 = null;
-            const tmp3 = importDefault;
-            if (result) {
-              tmp4 = themeAndReducedMotionAwareAssetUrl;
-            }
-            tmp3(tmp4);
-          }
-        });
-        return () => {
-          c0 = false;
-        };
-      }
-    };
-    const items = [themeAndReducedMotionAwareAssetUrl];
-    cResult[0] = themeAndReducedMotionAwareAssetUrl;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp6 = items;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[1];
-    tmp6 = cResult[2];
-  }
-  const effect = obj3.useEffect(tmp5, tmp6);
-  return null == themeAndReducedMotionAwareAssetUrl || tmp4 === themeAndReducedMotionAwareAssetUrl;
-}) : (function useCoachmarkAssetReady(arg0) {
+const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");
+
+export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let closure_1;
   let first;
+  let first1;
   let themeAndReducedMotionAwareAssetUrl;
-  let obj = themeAndReducedMotionAwareAssetUrl(10577);
-  themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(arg0);
-  [first, closure_1] = react.useState(null);
-  const items = [themeAndReducedMotionAwareAssetUrl];
-  const effect = react.useEffect(() => {
+  let themeAndReducedMotionAwareAssetUrl1;
+  const f116211 = () => {
     let tmp;
     if (null != c0) {
       c0 = true;
-      let tmp3 = dependencyMap;
+      let tmp3 = closure_1_2;
       const obj2 = { uri: tmp };
-      const obj = closure_1(dependencyMap[5]);
+      const obj = closure_1(closure_1_2[3]);
       const preloadResult = obj.preload(obj2);
       preloadResult.then((result) => {
         const tmp = c0;
@@ -85,7 +33,7 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoac
           let tmp4 = null;
           const tmp3 = closure_1;
           if (result) {
-            tmp4 = themeAndReducedMotionAwareAssetUrl;
+            tmp4 = themeAndReducedMotionAwareAssetUrl1;
           }
           tmp3(tmp4);
         }
@@ -94,48 +42,31 @@ let closure_5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCoac
         c0 = false;
       };
     }
-  }, items);
-  return null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGiftingPromotionAssetsReady(asset, asset2) {
-  const obj = react2;
-  const cResult = obj.c(3);
+  };
   asset = undefined;
   if (asset != null) {
     asset = asset.asset;
   }
-  const tmp2Result = closure_5(asset);
+  const tmp2 = themeAndReducedMotionAwareAssetUrl;
+  let tmp3 = dependencyMap;
+  let obj = themeAndReducedMotionAwareAssetUrl(10603);
+  themeAndReducedMotionAwareAssetUrl = obj.useThemeAndReducedMotionAwareAssetUrl(asset);
+  let obj2 = react;
+  [first, closure_1] = react.useState(null);
+  const items = [themeAndReducedMotionAwareAssetUrl];
+  const effect = react.useEffect(f116211, items);
   let asset1;
+  const obj3 = { isGiftCoachmarkAssetReady: null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl, isGiftReminderAssetReady: null == themeAndReducedMotionAwareAssetUrl1 || first1 === themeAndReducedMotionAwareAssetUrl1 };
+  const tmp5 = _slicedToArray;
   if (asset2 != null) {
     asset1 = asset2.asset;
   }
-  const tmp2Result2 = closure_5(asset1);
-  if (cResult[0] === tmp2Result) {
-    let tmp7;
-    if (cResult[1] === tmp2Result2) {
-      tmp7 = cResult[2];
-    }
-    return tmp7;
-  }
-  const obj2 = { isGiftCoachmarkAssetReady: tmp2Result, isGiftReminderAssetReady: tmp2Result2 };
-  cResult[0] = tmp2Result;
-  cResult[1] = tmp2Result2;
-  cResult[2] = obj2;
-  tmp7 = obj2;
-}) : (function useGiftingPromotionAssetsReady(asset, asset2) {
-  let asset1;
-  asset = undefined;
-  if (asset != null) {
-    asset = asset.asset;
-  }
-  const obj = { isGiftCoachmarkAssetReady: closure_5(asset), isGiftReminderAssetReady: closure_5(asset1) };
-  asset1 = undefined;
-  if (asset2 != null) {
-    asset1 = asset2.asset;
-  }
-  return obj;
-});
-const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");
-
-export default tmp2;
+  const tmp2Result = tmp2(10603);
+  themeAndReducedMotionAwareAssetUrl1 = tmp2Result.useThemeAndReducedMotionAwareAssetUrl(asset1);
+  const tmp5Result = tmp5(obj2.useState(null), 2);
+  closure_1 = tmp5Result[1];
+  const items1 = [themeAndReducedMotionAwareAssetUrl1];
+  first1 = tmp5Result[0];
+  const effect1 = obj2.useEffect(f116211, items1);
+  return obj3;
+};

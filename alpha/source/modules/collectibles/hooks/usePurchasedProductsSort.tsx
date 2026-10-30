@@ -1,130 +1,26 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 16925
+// Function ID: 16926
 // Name: usePurchasedProductsSort
-// Dependencies: [32, 19, 7723, 1993, 7719, 558, 576, 573, 2]
+// Dependencies: [19, 7728, 1988, 7724, 563, 2]
+// Exports: usePurchasedProductsSort
 
-// Module 16871 (usePurchasedProductsSort)
+// Module 16925 (usePurchasedProductsSort)
 import react from "react" /* 19 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1993 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useMemo = react.useMemo;
-let closure_5 = { NOT_PURCHASED: 0, [0]: "NOT_PURCHASED", PARTIAL_OWNED_BUNDLE: 1, [1]: "PARTIAL_OWNED_BUNDLE", PURCHASED: 2, [2]: "PURCHASED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePurchasedProductsSort(arg0) {
-  let closure_0;
-  let purchases;
-  let tmp15;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const tmp3 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(9);
-  const tmp2 = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [CollectiblesPurchaseStore];
-    const fn = function o() {
-      return purchases.purchases;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = fn;
-    tmp5 = items;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmp2Result = tmp2(573);
-  const stateFromStores = tmp2Result.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] !== stateFromStores) {
-    const items1 = [];
-    HermesBuiltin.arraySpread(items1, stateFromStores, 0);
-    const mapped = items1.map((item) => _slicedToArray(item, 1)[0]);
-    cResult[2] = stateFromStores;
-    cResult[3] = mapped;
-    tmp9 = mapped;
-  } else {
-    tmp9 = cResult[3];
-  }
-  _require = tmp9;
-  if (cResult[4] === arg0) {
-    let tmp14;
-    if (cResult[5] === tmp9) {
-      tmp14 = cResult[6];
-    }
-    return tmp14;
-  }
-  if (cResult[7] !== tmp9) {
-    const fn2 = function l(type, type2) {
-      let NOT_PURCHASED;
-      let tmp4;
-      if (type.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
-        let PARTIAL_OWNED_BUNDLE;
-        const items = type.items;
-        if (items.some((skuId) => obj.includes(skuId.skuId))) {
-          NOT_PURCHASED = constants.PARTIAL_OWNED_BUNDLE;
-          tmp4 = constants;
-        }
-        if (type2.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
-          const items2 = type2.items;
-          if (items2.some((skuId) => obj.includes(skuId.skuId))) {
-            PARTIAL_OWNED_BUNDLE = tmp4.PARTIAL_OWNED_BUNDLE;
-          }
-          return NOT_PURCHASED - PARTIAL_OWNED_BUNDLE;
-        }
-        const tmpResult = CollectiblesProductUtils;
-        if (tmpResult.getIsVariantProduct(type2)) {
-          const variants2 = type2.variants;
-          PARTIAL_OWNED_BUNDLE = variants2.every((skuId) => obj.includes(skuId.skuId)) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
-        } else {
-          PARTIAL_OWNED_BUNDLE = obj.includes(type2.skuId) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
-        }
-      }
-      const tmpResult2 = CollectiblesProductUtils;
-      if (tmpResult2.getIsVariantProduct(type)) {
-        let NOT_PURCHASED2;
-        let tmp6;
-        const variants = type.variants;
-        if (variants.every((skuId) => obj.includes(skuId.skuId))) {
-          NOT_PURCHASED2 = tmp5.PURCHASED;
-          tmp6 = tmp5;
-        } else {
-          NOT_PURCHASED2 = tmp5.NOT_PURCHASED;
-          tmp6 = tmp5;
-        }
-        tmp4 = tmp6;
-        NOT_PURCHASED = NOT_PURCHASED2;
-      } else if (closure_0.includes(type.skuId)) {
-        NOT_PURCHASED = tmp3.PURCHASED;
-        tmp4 = tmp3;
-      } else {
-        NOT_PURCHASED = tmp3.NOT_PURCHASED;
-        tmp4 = tmp3;
-      }
-    };
-    cResult[7] = tmp9;
-    cResult[8] = fn2;
-    tmp15 = fn2;
-  } else {
-    tmp15 = cResult[8];
-  }
-  let items2 = [...arg0];
-  const sorted = items2.sort(tmp15);
-  cResult[4] = arg0;
-  cResult[5] = tmp9;
-  cResult[6] = sorted;
-  tmp14 = sorted;
-}) : (function usePurchasedProductsSort(arg0) {
-  let args;
+let useMemo = react.useMemo;
+let closure_4 = { NOT_PURCHASED: 0, [0]: "NOT_PURCHASED", PARTIAL_OWNED_BUNDLE: 1, [1]: "PARTIAL_OWNED_BUNDLE", PURCHASED: 2, [2]: "PURCHASED" };
+const result = size.fileFinishedImporting("modules/collectibles/hooks/usePurchasedProductsSort.tsx");
+
+export function usePurchasedProductsSort(memo) {
+  let closure_2;
   let purchases;
   let stateFromStores;
-  _require = arg0;
+  _require = memo;
   let obj = require("useStateFromStores");
   let items = [CollectiblesPurchaseStore];
   stateFromStores = obj.useStateFromStores(items, () => purchases.purchases);
@@ -137,43 +33,45 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePurchased
       return tmp;
     });
   }, items1);
-  let closure_2 = tmp2;
-  let items2 = [arg0, tmp2];
+  useMemo = tmp2;
+  let items2 = [memo, tmp2];
   return useMemo(() => {
     let items = [...closure_0];
     return items.sort((type, type2) => {
       let NOT_PURCHASED;
       let tmp4;
+      const f110765 = (skuId) => obj.includes(skuId.skuId);
+      const f110766 = (skuId) => obj.includes(skuId.skuId);
       const obj = closure_1_2;
       let closure_0 = closure_1_2;
-      if (type.type === closure_0(stateFromStores[3]).CollectiblesItemType.BUNDLE) {
+      if (type.type === closure_0(stateFromStores[2]).CollectiblesItemType.BUNDLE) {
         let PARTIAL_OWNED_BUNDLE;
         const items = type.items;
-        if (items.some((skuId) => obj.includes(skuId.skuId))) {
+        if (items.some(f110765)) {
           NOT_PURCHASED = constants.PARTIAL_OWNED_BUNDLE;
           tmp4 = constants;
         }
-        if (type2.type === closure_0(stateFromStores[3]).CollectiblesItemType.BUNDLE) {
+        if (type2.type === closure_0(stateFromStores[2]).CollectiblesItemType.BUNDLE) {
           const items2 = type2.items;
-          if (items2.some((skuId) => obj.includes(skuId.skuId))) {
+          if (items2.some(f110765)) {
             PARTIAL_OWNED_BUNDLE = tmp4.PARTIAL_OWNED_BUNDLE;
           }
           return NOT_PURCHASED - PARTIAL_OWNED_BUNDLE;
         }
-        const tmpResult = closure_0(stateFromStores[4]);
+        const tmpResult = closure_0(stateFromStores[3]);
         if (tmpResult.getIsVariantProduct(type2)) {
           const variants2 = type2.variants;
-          PARTIAL_OWNED_BUNDLE = variants2.every((skuId) => obj.includes(skuId.skuId)) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
+          PARTIAL_OWNED_BUNDLE = variants2.every(f110766) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
         } else {
           PARTIAL_OWNED_BUNDLE = obj.includes(type2.skuId) ? tmp4.PURCHASED : tmp4.NOT_PURCHASED;
         }
       }
-      const tmpResult2 = closure_0(stateFromStores[4]);
+      const tmpResult2 = closure_0(stateFromStores[3]);
       if (tmpResult2.getIsVariantProduct(type)) {
         let NOT_PURCHASED2;
         let tmp6;
         const variants = type.variants;
-        if (variants.every((skuId) => obj.includes(skuId.skuId))) {
+        if (variants.every(f110766)) {
           NOT_PURCHASED2 = tmp5.PURCHASED;
           tmp6 = tmp5;
         } else {
@@ -191,7 +89,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePurchased
       }
     });
   }, items2);
-});
-const result = size.fileFinishedImporting("modules/collectibles/hooks/usePurchasedProductsSort.tsx");
-
-export const usePurchasedProductsSort = tmp2;
+}

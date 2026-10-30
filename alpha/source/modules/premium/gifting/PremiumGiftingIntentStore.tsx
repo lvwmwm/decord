@@ -1,27 +1,27 @@
-// Module ID: 8503
-// Function ID: 8504
+// Module ID: 8537
+// Function ID: 8538
 // Name: PremiumGiftingIntentStore
-// Dependencies: [5227, 1258, 7789, 1243, 6729, 4947, 1084, 8504, 4833, 8505, 12, 504, 584, 2]
+// Dependencies: [5233, 1247, 7794, 1232, 6736, 4951, 1072, 8538, 4834, 8539, 12, 504, 572, 2]
 
-// Module 8503 (PremiumGiftingIntentStore)
+// Module 8537 (PremiumGiftingIntentStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import FriendAnniversaryUtils from "FriendAnniversaryUtils" /* 8504 */;
-import FriendAnniversaryGate from "FriendAnniversaryGate" /* 8505 */;
-import ExperimentStore from "ExperimentStore" /* 5227 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7789 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1243 */;
-import ConsentStore from "ConsentStore" /* 6729 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import FriendAnniversaryUtils from "FriendAnniversaryUtils" /* 8538 */;
+import FriendAnniversaryGate from "FriendAnniversaryGate" /* 8539 */;
+import ExperimentStore from "ExperimentStore" /* 5233 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7794 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1232 */;
+import ConsentStore from "ConsentStore" /* 6736 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_10, closure_14, set2;
 
-const f102767 = (userId) => {
+const f92653 = (userId) => {
   const userAffinity = UserAffinitiesV2Store.getUserAffinity(userId);
   let dmProbability;
   if (userAffinity != null) {
@@ -40,7 +40,7 @@ function getCurrentTime() {
 function categorizeTopAffinityFriendAnniversaries() {
   const flag = false;
   const obj = FriendAnniversaryUtils;
-  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f102767, flag);
+  const result = obj.categorizeFriendAnniversariesByAffinity(closure_11, f92653, flag);
   ({ highestAffinity: set, highAffinity: set1 } = result);
 }
 function updateFriendAnniversaries() {
@@ -105,9 +105,9 @@ function generateFriendAnniversaries(c15) {
   new Set();
   new Set();
   closure_14 = {};
-  const obj2 = set2(8505);
+  const obj2 = set2(8539);
   if (obj2.getFriendAnniversaryGateConfig({ location: "PremiumGiftingIntentStore generateFriendAnniversaries" }).enabled) {
-    const EnableFriendAnniversaryNotifications = tmp3(4833).EnableFriendAnniversaryNotifications;
+    const EnableFriendAnniversaryNotifications = tmp3(4834).EnableFriendAnniversaryNotifications;
     if (EnableFriendAnniversaryNotifications.getSetting()) {
       let closure_15 = c15;
       const friendIDs = RelationshipStore.getFriendIDs();
@@ -136,8 +136,8 @@ function generateFriendAnniversaries(c15) {
             }
           });
           const sorted = obj.sort((arg0, arg1) => UserAffinitiesV2Store.compareByDmProbability(arg0, arg1));
-          const tmp3Result = set2(8504);
-          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f102767, true);
+          const tmp3Result = set2(8538);
+          const result = tmp3Result.categorizeFriendAnniversariesByAffinity(obj, f92653, true);
           ({ highestAffinity: set, highAffinity: set1 } = result);
         }
       }
@@ -151,7 +151,7 @@ const authStore = { messageGiftIntentLastShownMap: {}, lastShownFriendsListGiftI
 let closure_11 = [];
 let set = new Set();
 let set1 = new Set();
-const syncedClientThemes = {};
+const authStore3 = {};
 let c15 = null;
 let c16 = null;
 let c17 = null;

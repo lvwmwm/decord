@@ -1,26 +1,26 @@
-// Module ID: 17604
-// Function ID: 17605
+// Module ID: 17675
+// Function ID: 17676
 // Name: SlayerStorefrontDevTools
-// Dependencies: [32, 5, 19, 17, 1389, 6883, 7582, 1084, 21, 5005, 587, 1294, 558, 576, 5630, 504, 10624, 1381, 10623, 9864, 7068, 7047, 6963, 6015, 2]
+// Dependencies: [32, 5, 19, 17, 1384, 6890, 7590, 1072, 21, 5009, 575, 1283, 5602, 504, 10650, 1376, 10649, 9890, 6022, 7054, 7076, 6969, 2]
+// Exports: default
 
-// Module 17604 (SlayerStorefrontDevTools)
-import nativeDefault from "native" /* 587 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 9864 */;
+// Module 17675 (SlayerStorefrontDevTools)
+import nativeDefault from "native" /* 575 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 9890 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import SKUStore from "SKUStore" /* 6883 */;
-import IAPStore from "IAPStore" /* 7582 */;
-import Constants from "Constants" /* 1084 */;
+import UserStore from "UserStore" /* 1384 */;
+import SKUStore from "SKUStore" /* 6890 */;
+import IAPStore from "IAPStore" /* 7590 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c4, c5, c8, c9;
+let c4, c5, c8, c9;
 
 let closure_12;
 let closure_14;
@@ -30,9 +30,6 @@ let metroRequire;
 let obj2;
 let obj3;
 let unpackModuleId;
-function describeStorefrontSkuFailure() {
-  return obj(...arguments);
-}
 let obj = function _describeStorefrontSkuFailure() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
@@ -47,7 +44,7 @@ let obj = function _describeStorefrontSkuFailure() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -73,7 +70,7 @@ let obj = function _describeStorefrontSkuFailure() {
             length = undefined;
             c7 = 1;
             const result = unpackModuleId.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_BY_APPLICATION_ID(closure_0, closure_1);
-            const HTTP = require("HTTPUtils").HTTP;
+            const HTTP = HTTPUtils.HTTP;
             const obj5 = { url: result, rejectWithError: false };
             c8 = 2;
             c9 = 1;
@@ -134,7 +131,6 @@ let obj = function _describeStorefrontSkuFailure() {
   return obj(...arguments);
 };
 let _asyncToGenerator = _asyncToGenerator_mod;
-let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
 ({ Endpoints: unpackModuleId, PriceSetAssignmentPurchaseTypes: closure_12 } = Constants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
@@ -144,656 +140,9 @@ obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHoriz
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_12 };
 let closure_15 = createStyles(obj);
-const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStorefrontDevTools() {
-  let arr;
-  let arr2;
-  let closure_5;
-  let closure_6;
-  let currentUser;
-  let first;
-  let ready;
-  let str;
-  let str2;
-  let tmp12;
-  let tmp14;
-  let tmp17;
-  let tmp19;
-  let tmp20;
-  let tmp21;
-  let tmp25;
-  let tmp26;
-  let tmp27;
-  let tmp30;
-  let tmp31;
-  let tmp34;
-  let tmp = arr;
-  let tmp2 = dependencyMap;
-  obj = arr(576);
-  const cResult = obj.c(74);
-  const tmp4 = closure_15();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { includeKeyboardHeight: true };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  let obj3 = react;
-  const insets = arr2(5630)(first).insets;
-  [str, r10032] = _slicedToArray(react.useState(""), 2);
-  const tmp8 = _slicedToArray(react.useState(""), 2);
-  [str2, r10037] = _slicedToArray(react.useState(""), 2);
-  const tmp9 = _slicedToArray(react.useState(""), 2);
-  if (cResult[1] !== str) {
-    const trimmed = str.trim();
-    cResult[1] = str;
-    cResult[2] = trimmed;
-    arr = trimmed;
-  } else {
-    arr = cResult[2];
-  }
-  if (cResult[3] !== str2) {
-    const trimmed1 = str2.trim();
-    cResult[3] = str2;
-    cResult[4] = trimmed1;
-    arr2 = trimmed1;
-  } else {
-    arr2 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SKUStore];
-    cResult[5] = items;
-    tmp12 = items;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] !== arr) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    cResult[6] = arr;
-    cResult[7] = K;
-    tmp14 = K;
-  } else {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(tmp12, tmp14);
-  [tmp17, dependencyMap] = _slicedToArray(obj3.useState(false), 2);
-  _slicedToArray(obj3.useState(false), 2);
-  [tmp19, _slicedToArray] = _slicedToArray(obj3.useState(null), 2);
-  _slicedToArray(obj3.useState(null), 2);
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items1 = [UserStore];
-    class O {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[8] = items1;
-    cResult[9] = O;
-    tmp21 = O;
-    tmp20 = items1;
-  } else {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp21 = cResult[9];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp20, tmp21);
-  let tmp23;
-  if (stateFromStores != null) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    if (tmp24 != null) {
-      class K {
-        constructor() {
-          let value;
-          if (arr.length > 0) {
-            value = SKUStore.get(tmp);
-          }
-          return value;
-        }
-      }
-      tmp23 = tmp24[constants.DEFAULT];
-    }
-  }
-  if (tmp23 == null) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  react = tmp23;
-  if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items2 = [IAPStore];
-    class O {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[10] = items2;
-    tmp25 = items2;
-  } else {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-  }
-  if (cResult[11] !== tmp23) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items3 = [tmp23];
-    class O {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[11] = tmp23;
-    cResult[12] = tmp28;
-    cResult[13] = items3;
-    tmp27 = items3;
-    tmp26 = tmp28;
-  } else {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp27 = cResult[13];
-  }
-  const tmpResult5 = tmp(504);
-  const stateFromStores2 = tmpResult5.useStateFromStores(tmp25, tmp26, tmp27);
-  if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    const items4 = [IAPStore];
-    class O {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    cResult[14] = items4;
-    cResult[15] = tmp32;
-    tmp31 = tmp32;
-    tmp30 = items4;
-  } else {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    tmp31 = cResult[15];
-  }
-  const tmpResult6 = tmp(504);
-  const stateFromStores3 = tmpResult6.useStateFromStores(tmp30, tmp31);
-  if (cResult[16] === arr2) {
-    class K {
-      constructor() {
-        let value;
-        if (arr.length > 0) {
-          value = SKUStore.get(tmp);
-        }
-        return value;
-      }
-    }
-    if (cResult[19] !== tmp34) {
-      class K {
-        constructor() {
-          let value;
-          if (arr.length > 0) {
-            value = SKUStore.get(tmp);
-          }
-          return value;
-        }
-      }
-      cResult[19] = tmp34;
-      class O {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      cResult[20] = tmp36;
-    } else {
-      class K {
-        constructor() {
-          let value;
-          if (arr.length > 0) {
-            value = SKUStore.get(tmp);
-          }
-          return value;
-        }
-      }
-    }
-    class O {
-      constructor() {
-        return currentUser.getCurrentUser();
-      }
-    }
-    if (cResult[23] === stateFromStores1) {
-      let combined;
-      class K {
-        constructor() {
-          let value;
-          if (arr.length > 0) {
-            value = SKUStore.get(tmp);
-          }
-          return value;
-        }
-      }
-      const first1 = tmp7(obj3.useState(null), 2)[0];
-      _slicedToArray(obj3.useState(null), 2);
-      class O {
-        constructor() {
-          return currentUser.getCurrentUser();
-        }
-      }
-      if (cResult[26] !== tmp23) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        cResult[26] = tmp23;
-        class O {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        cResult[27] = tmp41;
-      } else {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (arr.length > 0 && arr2.length > 0) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (null == tmp19) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        if (!tmp17) {
-          class K {
-            constructor() {
-              let value;
-              if (arr.length > 0) {
-                value = SKUStore.get(tmp);
-              }
-              return value;
-            }
-          }
-        }
-      } else {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        combined = "Fetch failed: " + tmp19;
-      }
-      const sum = tmp6(587).space.PX_16 + insets.bottom;
-      if (cResult[32] !== sum) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        tmp47[0] = arr2(587).space.PX_16;
-        tmp47[1] = sum;
-        class O {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        cResult[32] = sum;
-        cResult[33] = tmp47;
-      } else {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (cResult[34] !== str2) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        let obj4 = { label: "Application ID", value: str2, onChange: null, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" };
-        class O {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        cResult[34] = str2;
-        cResult[35] = closure_13(tmp(7068).TextInput, obj4);
-        const tmp49 = closure_13(tmp(7068).TextInput, obj4);
-      } else {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-      }
-      if (cResult[36] === tmp4.inputRow) {
-        class K {
-          constructor() {
-            let value;
-            if (arr.length > 0) {
-              value = SKUStore.get(tmp);
-            }
-            return value;
-          }
-        }
-        if (cResult[39] !== str) {
-          class K {
-            constructor() {
-              let value;
-              if (arr.length > 0) {
-                value = SKUStore.get(tmp);
-              }
-              return value;
-            }
-          }
-          let obj5 = { label: "SKU ID", value: str, onChange: null, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" };
-          class O {
-            constructor() {
-              return currentUser.getCurrentUser();
-            }
-          }
-          cResult[39] = str;
-          cResult[40] = closure_13(tmp(7068).TextInput, obj5);
-          const tmp55 = closure_13(tmp(7068).TextInput, obj5);
-        } else {
-          class K {
-            constructor() {
-              let value;
-              if (arr.length > 0) {
-                value = SKUStore.get(tmp);
-              }
-              return value;
-            }
-          }
-        }
-        if (cResult[41] === tmp4.inputRow) {
-          class K {
-            constructor() {
-              let value;
-              if (arr.length > 0) {
-                value = SKUStore.get(tmp);
-              }
-              return value;
-            }
-          }
-          if (cResult[44] === combined) {
-            class K {
-              constructor() {
-                let value;
-                if (arr.length > 0) {
-                  value = SKUStore.get(tmp);
-                }
-                return value;
-              }
-            }
-          }
-          class O {
-            constructor() {
-              return currentUser.getCurrentUser();
-            }
-          }
-          tmp61[1] = combined;
-          const items5 = [tmp50, tmp56];
-          tmp61[3] = items5;
-          cResult[44] = combined;
-          cResult[45] = tmp50;
-          cResult[46] = tmp56;
-          cResult[47] = closure_14(tmp(7047).TableRowGroup, tmp61);
-          const tmp62 = closure_14(tmp(7047).TableRowGroup, tmp61);
-        }
-        class O {
-          constructor() {
-            return currentUser.getCurrentUser();
-          }
-        }
-        let obj6 = { style: tmp4.inputRow, children: tmp54 };
-        cResult[41] = tmp4.inputRow;
-        cResult[42] = tmp54;
-        cResult[43] = closure_13(closure_7, obj6);
-        const tmp58 = closure_13(closure_7, obj6);
-      }
-      let obj7 = { style: tmp4.inputRow, children: tmp48 };
-      cResult[36] = tmp4.inputRow;
-      cResult[37] = tmp48;
-      cResult[38] = closure_13(closure_7, obj7);
-      const tmp53 = closure_13(closure_7, obj7);
-    }
-    function se() {
-      const tmp = tmp34((skuId) => {
-        let tmp2;
-        obj = { skuId, recipient: tmp2 };
-        const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = arr(dependencyMap[18]).openSocialLayerStorefrontProductGiftPurchaseSuccessModal;
-        arr(dependencyMap[18]);
-        const result = openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj);
-        tmp2 = stateFromStores1;
-      });
-    }
-    cResult[23] = stateFromStores1;
-    cResult[24] = tmp34;
-    cResult[25] = se;
-  }
-  _require = stateFromStores1(function*(arg0, value) {
-    let closure_2;
-    let closure_3;
-    let obj5;
-    closure_0 = arg0;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "IconComponent", done: "IconComponent" };
-      }
-    } else {
-      try {
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            const tmp19 = 0 !== closure_0.length && 0 !== closure_1.length;
-            if (tmp19) {
-              tmp(null);
-              tmp2(true);
-              const obj4 = { withGoogleSkuIds: obj5.isAndroid() };
-              const fetchSocialLayerStorefrontSkuForApplication = closure_0(dependencyMap[16]).fetchSocialLayerStorefrontSkuForApplication;
-              const tmp27 = closure_0(dependencyMap[16]);
-              obj5 = closure_0(dependencyMap[17]);
-              c4 = 1;
-              c5 = 1;
-              const obj6 = { value: fetchSocialLayerStorefrontSkuForApplication(closure_1, closure_0, obj4), done: false };
-              return obj6;
-            }
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
-          } else {
-            tmp2(false);
-            if (null != SKUStore.get(closure_0)) {
-              closure_0(closure_0);
-            } else {
-              closure_1 = tmp;
-              c4 = 2;
-              c5 = 1;
-              const obj8 = { value: describeStorefrontSkuFailure(closure_1, closure_0), done: false };
-              return obj8;
-            }
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          closure_1(value);
-        }
-        c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
-      } catch (tmp30) {
-        c5 = 3;
-        throw tmp30;
-      }
-    }
-  });
-  function t12() {
-    return closure_0(...arguments);
-  }
-  cResult[16] = arr2;
-  cResult[17] = arr;
-  cResult[18] = t12;
-  tmp34 = t12;
-}) : (function SlayerStorefrontDevTools() {
+let result = size.fileFinishedImporting("modules/slayer_storefront/native/devtools/SlayerStorefrontDevTools.tsx");
+
+export default function SlayerStorefrontDevTools() {
   let Stack;
   let TableRow;
   let closure_12;
@@ -818,7 +167,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   let tmp2 = trimmed1;
   const tmp3 = stateFromStores;
   obj = first1;
-  const insets = trimmed1(stateFromStores[14])({ includeKeyboardHeight: true }).insets;
+  const insets = trimmed1(stateFromStores[12])({ includeKeyboardHeight: true }).insets;
   const tmp4 = first;
   const tmp5 = first(first1.useState(""), 2);
   [str, tmp6] = tmp5;
@@ -826,7 +175,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   const tmp7 = first(first1.useState(""), 2);
   const trimmed = str.trim();
   trimmed1 = str2.trim();
-  let obj2 = trimmed(stateFromStores[15]);
+  let obj2 = trimmed(stateFromStores[13]);
   let items = [stateFromStores2];
   stateFromStores = obj2.useStateFromStores(items, () => {
     let value;
@@ -841,7 +190,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   const tmp13 = first(first1.useState(null), 2);
   first1 = tmp13[0];
   let closure_6 = tmp13[1];
-  let obj3 = trimmed(stateFromStores[15]);
+  let obj3 = trimmed(stateFromStores[13]);
   const items1 = [c8];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => currentUser.getCurrentUser());
   let tmp16;
@@ -857,7 +206,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   c8 = tmp16;
   const items2 = [stateFromStores3];
   const items3 = [tmp16];
-  const tmp9Result = trimmed(tmp3[15]);
+  const tmp9Result = trimmed(tmp3[13]);
   stateFromStores2 = tmp9Result.useStateFromStores(items2, () => {
     let product = null;
     if (null != c8) {
@@ -866,24 +215,27 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
     return product;
   }, items3);
   const items4 = [stateFromStores3];
-  const tmp9Result3 = trimmed(tmp3[15]);
+  const tmp9Result3 = trimmed(tmp3[13]);
   stateFromStores3 = tmp9Result3.useStateFromStores(items4, () => stateFromStores3.isReady());
   const useCallback = obj.useCallback;
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let obj5;
     let v2;
+    function describeStorefrontSkuFailure() {
+      return closure_1_16(...arguments);
+    }
     closure_0 = arg0;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -897,23 +249,23 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
-            const tmp19 = 0 !== closure_0.length && 0 !== closure_1.length;
-            if (tmp19) {
+            let closure_3 = tmp4;
+            let closure_2 = tmp;
+            const tmp18 = 0 !== closure_0.length && 0 !== closure_1.length;
+            if (tmp18) {
               closure_1_6(null);
               c4(true);
               const obj4 = { withGoogleSkuIds: obj5.isAndroid() };
-              const fetchSocialLayerStorefrontSkuForApplication = closure_0(stateFromStores[16]).fetchSocialLayerStorefrontSkuForApplication;
-              const tmp27 = closure_0(stateFromStores[16]);
-              obj5 = closure_0(stateFromStores[17]);
+              const fetchSocialLayerStorefrontSkuForApplication = closure_0(stateFromStores[14]).fetchSocialLayerStorefrontSkuForApplication;
+              const tmp26 = closure_0(stateFromStores[14]);
+              obj5 = closure_0(stateFromStores[15]);
               c4 = 1;
               c5 = 1;
               const obj6 = { value: fetchSocialLayerStorefrontSkuForApplication(closure_1, closure_0, obj4), done: false };
               return obj6;
             }
           }
-        } else if (1 === tmp5) {
+        } else if (1 === c4) {
           if (arg0 === 1) {
             c5 = 3;
             throw value;
@@ -944,10 +296,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
           closure_1(value);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
-      } catch (tmp30) {
+        return { value: "HermesInternal", done: null };
+      } catch (tmp29) {
         c5 = 3;
-        throw tmp30;
+        throw tmp29;
       }
     }
   });
@@ -959,7 +311,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   const items7 = [callback];
   const callback1 = obj.useCallback(() => {
     callback((skuId) => {
-      obj = trimmed(stateFromStores[18]);
+      obj = trimmed(stateFromStores[16]);
       const obj2 = { skuId };
       const result = obj.openSocialLayerStorefrontProductDetailsModal(obj2);
     });
@@ -967,7 +319,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   const items8 = [callback, stateFromStores1];
   const callback2 = obj.useCallback(() => {
     callback((skuId) => {
-      obj = trimmed(stateFromStores[18]);
+      obj = trimmed(stateFromStores[16]);
       const obj2 = { skuId };
       const result = obj.openSocialLayerStorefrontProductSelfPurchaseSuccessModal(obj2);
     });
@@ -976,8 +328,8 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
     const tmp = callback((skuId) => {
       let tmp2;
       obj = { skuId, recipient: tmp2 };
-      const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = trimmed(stateFromStores[18]).openSocialLayerStorefrontProductGiftPurchaseSuccessModal;
-      trimmed(stateFromStores[18]);
+      const openSocialLayerStorefrontProductGiftPurchaseSuccessModal = trimmed(stateFromStores[16]).openSocialLayerStorefrontProductGiftPurchaseSuccessModal;
+      trimmed(stateFromStores[16]);
       const result = openSocialLayerStorefrontProductGiftPurchaseSuccessModal(obj);
       tmp2 = stateFromStores1;
     });
@@ -1036,7 +388,6 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
     tmp28 = first;
   }
   const items10 = [first1, first, stateFromStores, tmp27, tmp16, stateFromStores2, stateFromStores3];
-  const tmp30 = closure_13;
   let obj4 = { style: tmp.wrap, contentContainerStyle: obj5, children: tmp32(Stack, obj11) };
   obj5 = { paddingVertical: tmp2(tmp3[10]).space.PX_16, paddingBottom: tmp2(tmp3[10]).space.PX_16 + insets.bottom };
   const memo = obj.useMemo(() => {
@@ -1082,22 +433,22 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
     }
     return str12;
   }, items10);
-  Stack = tmp9(tmp3[23]).Stack;
+  Stack = tmp9(tmp3[18]).Stack;
   let obj6 = { title: "SKU", description: memo, hasIcons: false, children: items11 };
   let obj7 = { style: tmp.inputRow, children: closure_13(tmp9(tmp3[20]).TextInput, { label: "Application ID", value: str2, onChange: tmp8, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" }) };
-  const TableRowGroup = tmp9(tmp3[21]).TableRowGroup;
+  const TableRowGroup = tmp9(tmp3[19]).TableRowGroup;
   items11 = [closure_13(stateFromStores1, obj7), ];
   let obj8 = { style: tmp.inputRow, children: closure_13(tmp9(tmp3[20]).TextInput, { label: "SKU ID", value: str, onChange: tmp6, placeholder: "1234567890123456789", autoCapitalize: "none", autoCorrect: false, keyboardType: "number-pad" }) };
   items11[1] = closure_13(stateFromStores1, obj8);
   const items12 = [closure_14(TableRowGroup, obj6), , ];
-  const tmp9Result4 = trimmed(tmp3[17]);
+  const tmp9Result4 = trimmed(tmp3[15]);
   let isAndroidResult = tmp9Result4.isAndroid();
   const tmp31 = closure_6;
   if (isAndroidResult) {
-    const TableRowGroup2 = tmp9(tmp3[21]).TableRowGroup;
+    const TableRowGroup2 = tmp9(tmp3[19]).TableRowGroup;
     let str3 = "needs a fetched SKU with a DEFAULT googleSkuId";
-    const obj9 = { title: "Pricing", description: tmp25, hasIcons: false, children: tmp30(TableRow, obj10) };
-    TableRow = tmp9(tmp3[22]).TableRow;
+    const obj9 = { title: "Pricing", description: tmp25, hasIcons: false, children: closure_13(TableRow, obj10) };
+    TableRow = tmp9(tmp3[21]).TableRow;
     if (null != tmp16) {
       let _HermesInternal = HermesInternal;
       str3 = "play id " + tmp16;
@@ -1106,10 +457,10 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
     isAndroidResult = tmp30(TableRowGroup2, obj9);
   }
   items12[1] = isAndroidResult;
-  const TableRowGroup3 = tmp9(tmp3[21]).TableRowGroup;
-  const items13 = [tmp30(tmp9(tmp3[22]).TableRow, { label: "Product details", subLabel: "The PDP, as opened from a gift-code embed", onPress: callback1, disabled: tmp28, arrow: true }), tmp30(tmp9(tmp3[22]).TableRow, { label: "Purchase success (self)", subLabel: "Redeem / link-account screen shown after buying", onPress: callback2, disabled: tmp28, arrow: true }), ];
+  const TableRowGroup3 = tmp9(tmp3[19]).TableRowGroup;
+  const items13 = [tmp30(tmp9(tmp3[21]).TableRow, { label: "Product details", subLabel: "The PDP, as opened from a gift-code embed", onPress: callback1, disabled: tmp28, arrow: true }), tmp30(tmp9(tmp3[21]).TableRow, { label: "Purchase success (self)", subLabel: "Redeem / link-account screen shown after buying", onPress: callback2, disabled: tmp28, arrow: true }), ];
   let str5;
-  const TableRow2 = tmp9(tmp3[22]).TableRow;
+  const TableRow2 = tmp9(tmp3[21]).TableRow;
   if (stateFromStores1 != null) {
     str5 = stateFromStores1.username;
   }
@@ -1119,10 +470,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SlayerStor
   obj11 = { spacing: 16, children: items12 };
   const obj12 = { title: "Modals", hasIcons: false, children: items13 };
   const obj13 = { label: "Purchase success (gift)", subLabel: "Recipient: " + str5 + " (self)", onPress: callback3, disabled: tmp28, arrow: true };
-  items13[2] = tmp30(TableRow2, obj13);
+  items13[2] = closure_13(TableRow2, obj13);
   items12[2] = closure_14(TableRowGroup3, obj12);
-  return tmp30(tmp31, obj4);
-});
-let result = size.fileFinishedImporting("modules/slayer_storefront/native/devtools/SlayerStorefrontDevTools.tsx");
-
-export default tmp6;
+  return closure_13(tmp31, obj4);
+};

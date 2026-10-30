@@ -1,23 +1,23 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15598
+// Function ID: 15599
 // Name: PrivateChannelReadStateStore
-// Dependencies: [4861, 4857, 6829, 4908, 7382, 2039, 504, 584, 2]
+// Dependencies: [4862, 4858, 6836, 4912, 7389, 2036, 504, 572, 2]
 
-// Module 15558 (PrivateChannelReadStateStore)
+// Module 15598 (PrivateChannelReadStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import FunctionUtils from "FunctionUtils" /* 2039 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7382 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import FunctionUtils from "FunctionUtils" /* 2036 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7389 */;
 import size from "module_2" /* 2 */;
 
-const f125903 = (item) => mentionCount.getMentionCount(item) > 0;
+const f108441 = (item) => mentionCount.getMentionCount(item) > 0;
 function rebuildUnreads() {
   const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-  found = privateChannelIds.filter(f125903);
+  found = privateChannelIds.filter(f108441);
   if (found.length > 20) {
     found.length = 20;
   }
@@ -35,7 +35,7 @@ function rebuildUnreads() {
 }
 function handleConnectionOpen() {
   const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-  found = privateChannelIds.filter(f125903);
+  found = privateChannelIds.filter(f108441);
   if (found.length > 20) {
     found.length = 20;
   }
@@ -57,7 +57,7 @@ function handleGenericUpdate(channelId) {
   const tmp2 = null == channel || !isPrivate(channel.type);
   if (tmp4) {
     const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-    found = privateChannelIds.filter(f125903);
+    found = privateChannelIds.filter(f108441);
     if (found.length > 20) {
       found.length = 20;
     }
@@ -100,7 +100,7 @@ let obj = {
     const tmp2 = null == channel || !isPrivate(channel.type);
     if (tmp4) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-      found = privateChannelIds.filter(f125903);
+      found = privateChannelIds.filter(f108441);
       if (found.length > 20) {
         found.length = 20;
       }
@@ -122,7 +122,7 @@ let obj = {
     let hasItem = set.has(channel.channel.id);
     if (hasItem) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-      found = privateChannelIds.filter(f125903);
+      found = privateChannelIds.filter(f108441);
       if (found.length > 20) {
         found.length = 20;
       }
@@ -146,7 +146,7 @@ let obj = {
     const tmp2 = null == channel || !isPrivate(channel.type);
     if (tmp4) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-      found = privateChannelIds.filter(f125903);
+      found = privateChannelIds.filter(f108441);
       if (found.length > 20) {
         found.length = 20;
       }
@@ -171,7 +171,7 @@ let obj = {
     const tmp2 = null == channel || !isPrivate(channel.type);
     if (tmp4) {
       const privateChannelIds = PrivateChannelSortStore.getPrivateChannelIds();
-      found = privateChannelIds.filter(f125903);
+      found = privateChannelIds.filter(f108441);
       if (found.length > 20) {
         found.length = 20;
       }

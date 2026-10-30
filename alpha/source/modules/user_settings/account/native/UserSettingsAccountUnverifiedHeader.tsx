@@ -1,21 +1,19 @@
-// Module ID: 7153
-// Function ID: 7154
+// Module ID: 7161
+// Function ID: 7162
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1389, 21, 5005, 587, 6981, 1125, 558, 576, 504, 5271, 6968, 2]
+// Dependencies: [19, 1384, 21, 5009, 575, 6989, 1114, 504, 6974, 5619, 2]
+// Exports: default
 
-// Module 7153 (UserSettingsAccountUnverifiedHeader)
+// Module 7161 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6981 */;
+import nativeDefault from "native" /* 575 */;
+import intl5 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 6989 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -26,22 +24,22 @@ function handleOpenEmailVerification() {
   const obj = EmailVerificationModalActionCreatorsDefault;
   obj.open();
 }
-function getBannerText(stateFromStores) {
+function getBannerText(currentUser) {
   let intl;
   let intl2;
   let intl3;
   let intl4;
   let tmp = null;
-  if (null != stateFromStores) {
+  if (null != currentUser) {
     let tmp4;
-    if (null == stateFromStores.email) {
+    if (null == currentUser.email) {
       const obj2 = { title: intl3.string(intl5.t["/yqgqs"]), button: intl4.string(intl5.t.ydw5nX) };
       intl3 = intl5.intl;
       intl4 = intl5.intl;
       tmp4 = obj2;
     } else {
       tmp4 = null;
-      if (!stateFromStores.verified) {
+      if (!currentUser.verified) {
         const obj = { title: intl.string(intl5.t["3sWbf3"]), button: intl2.string(intl5.t["13ofGu"]) };
         intl = intl5.intl;
         intl2 = intl5.intl;
@@ -59,83 +57,9 @@ obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.RED_400, height: 36, al
 createStyles = createStyles.createStyles;
 obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.WHITE, borderRadius: nativeDefault.radii.xs, paddingHorizontal: 8, paddingVertical: 4 };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettingsAccountUnverifiedHeader() {
-  let currentUser;
-  let items1;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(14);
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function u() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  if (cResult[2] !== stateFromStores) {
-    const tmp11 = getBannerText(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
-  }
-  let tmp12 = null;
-  if (null != tmp9) {
-    if (cResult[4] === tmp9.title) {
-      let tmp13;
-      if (cResult[5] === tmp4.accountWarningText) {
-        tmp13 = cResult[6];
-      }
-      if (cResult[7] === tmp9.button) {
-        let tmp16;
-        if (cResult[8] === tmp4.accountWarningButton) {
-          tmp16 = cResult[9];
-        }
-        if (cResult[10] === tmp4.accountWarning) {
-          if (cResult[11] === tmp13) {
-            let tmp19;
-            if (cResult[12] === tmp16) {
-              tmp19 = cResult[13];
-            }
-            tmp12 = tmp19;
-          }
-        }
-        const obj2 = { accessibilityRole: "button", style: tmp4.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-        items1 = [tmp13, tmp16];
-        const tmp22 = hasOwnProperty(Pressables.PressableOpacity, obj2);
-        cResult[10] = tmp4.accountWarning;
-        cResult[11] = tmp13;
-        cResult[12] = tmp16;
-        cResult[13] = tmp22;
-        tmp19 = tmp22;
-      }
-      const obj3 = { style: tmp4.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp9.button };
-      const tmp18 = React3(Text_Text.Text, obj3);
-      cResult[7] = tmp9.button;
-      cResult[8] = tmp4.accountWarningButton;
-      cResult[9] = tmp18;
-      tmp16 = tmp18;
-    }
-    const obj4 = { style: tmp4.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp9.title };
-    const tmp15 = React3(Text_Text.Text, obj4);
-    cResult[4] = tmp9.title;
-    cResult[5] = tmp4.accountWarningText;
-    cResult[6] = tmp15;
-    tmp13 = tmp15;
-  }
-  return tmp12;
-}) : (function UserSettingsAccountUnverifiedHeader() {
+const result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountUnverifiedHeader.tsx");
+
+export default function UserSettingsAccountUnverifiedHeader() {
   let currentUser;
   let items1;
   const tmp = closure_6();
@@ -145,7 +69,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(6968).PressableOpacity;
+    const PressableOpacity = tmp2(6974).PressableOpacity;
     const obj3 = { style: tmp.accountWarningText, variant: "text-xs/bold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };
@@ -153,8 +77,5 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserSettings
     tmp5 = hasOwnProperty(PressableOpacity, obj2);
   }
   return tmp5;
-});
-const result = size.fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountUnverifiedHeader.tsx");
-
-export default tmp5;
+};
 export { getBannerText };

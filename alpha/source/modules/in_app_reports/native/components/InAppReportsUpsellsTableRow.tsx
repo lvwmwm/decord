@@ -1,69 +1,19 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15124
+// Function ID: 15125
 // Name: InAppReportsUpsellsTableRow
-// Dependencies: [19, 21, 558, 576, 6963, 2]
+// Dependencies: [19, 21, 6969, 2]
+// Exports: default
 
-// Module 15080 (InAppReportsUpsellsTableRow)
+// Module 15124 (InAppReportsUpsellsTableRow)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
+import TableRow2 from "TableRow" /* 6969 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const TableRow2 = tmp(6963);
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppReportsUpsellsTableRow(description) {
-  let disabled;
-  let disabledTitle;
-  let icon;
-  let onPress;
-  let title;
-  let variant;
-  const obj = react2;
-  const cResult = obj.c(7);
-  ({ title, disabledTitle, variant, disabled, onPress, icon } = description);
-  let str = "default";
-  description = description.description;
-  if (undefined !== variant) {
-    str = variant;
-  }
-  let tmp4 = title;
-  if (disabled) {
-    tmp4 = title;
-    if (null != disabledTitle) {
-      tmp4 = disabledTitle;
-    }
-  }
-  let tmp6 = null;
-  if (!disabled) {
-    tmp6 = description;
-  }
-  if (cResult[0] === disabled) {
-    if (cResult[1] === icon) {
-      if (cResult[2] === onPress) {
-        if (cResult[3] === tmp4) {
-          if (cResult[4] === tmp6) {
-            let tmp7;
-            if (cResult[5] === str) {
-              tmp7 = cResult[6];
-            }
-            return tmp7;
-          }
-        }
-      }
-    }
-  }
-  const tmp8 = jsx(TableRow2.TableRow, { label: tmp4, subLabel: tmp6, onPress, icon, disabled, variant: str });
-  cResult[0] = disabled;
-  cResult[1] = icon;
-  cResult[2] = onPress;
-  cResult[3] = tmp4;
-  cResult[4] = tmp6;
-  cResult[5] = str;
-  cResult[6] = tmp8;
-  tmp7 = tmp8;
-}) : (function InAppReportsUpsellsTableRow(description) {
+const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
+
+export default function InAppReportsUpsellsTableRow(description) {
   let disabledTitle;
   let icon;
   let onPress;
@@ -92,7 +42,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function InAppRepor
     tmp4 = description;
   }
   return tmp(TableRow, obj);
-});
-const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsUpsellsTableRow.tsx");
-
-export default tmp3;
+};

@@ -1,22 +1,22 @@
-// Module ID: 8342
-// Function ID: 8343
+// Module ID: 8195
+// Function ID: 8196
 // Name: ArchivedThreadsStore
-// Dependencies: [32, 4861, 4857, 6829, 4939, 4866, 8343, 12, 4868, 11, 7464, 504, 584, 2]
+// Dependencies: [32, 4862, 4858, 6836, 4943, 4867, 8196, 12, 4869, 11, 7472, 504, 572, 2]
 
-// Module 8342 (ArchivedThreadsStore)
+// Module 8195 (ArchivedThreadsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelRecord from "ChannelRecord" /* 4861 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4866 */;
-import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4868 */;
-import ForumUtils from "ForumUtils" /* 7464 */;
-import Tracking from "Tracking" /* 8343 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import ChannelRecord from "ChannelRecord" /* 4862 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4867 */;
+import ThreadSearchTagSetting from "ThreadSearchTagSetting" /* 4869 */;
+import ForumUtils from "ForumUtils" /* 7472 */;
+import Tracking from "Tracking" /* 8196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
 import size from "module_2" /* 2 */;
 
 let appliedTags;
@@ -58,7 +58,7 @@ function resortListState(value) {
     let id;
     let tmp3 = sortOrder;
     let tmp4 = dependencyMap;
-    if (sortOrder === sortOrder(4866).ThreadSortOrder.LATEST_ACTIVITY) {
+    if (sortOrder === sortOrder(4867).ThreadSortOrder.LATEST_ACTIVITY) {
       const tmp5 = ReadStateStore;
       id = ReadStateStore.lastMessageId(channel.id);
     } else {
@@ -84,7 +84,7 @@ function resortListState(value) {
         if (true !== someResult) {
           return false;
         }
-      } else if (tmp21(4868).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
+      } else if (tmp21(4869).ThreadSearchTagSetting.MATCH_ALL === tmp20) {
         const values = obj.values();
         const iter = values[Symbol.iterator]();
         const nextResult = iter.next();

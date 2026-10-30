@@ -1,11 +1,11 @@
-// Module ID: 5021
-// Function ID: 5022
+// Module ID: 5025
+// Function ID: 5026
 // Name: ThemeUtils
-// Dependencies: [588, 2]
+// Dependencies: [576, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 5021 (ThemeUtils)
-import ThemeTypes from "ThemeTypes" /* 588 */;
+// Module 5025 (ThemeUtils)
+import ThemeTypes from "ThemeTypes" /* 576 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/utils/ThemeUtils.tsx");

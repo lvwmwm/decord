@@ -1,25 +1,25 @@
-// Module ID: 19456
-// Function ID: 19457
+// Module ID: 19519
+// Function ID: 19520
 // Name: NotificationsManager
-// Dependencies: [5, 4939, 502, 4857, 6762, 13776, 1084, 7926, 13777, 5247, 19457, 2000, 1272, 2047, 7949, 13779, 14216, 1264, 1381, 7274, 17350, 1104, 2]
+// Dependencies: [5, 4943, 502, 4858, 6769, 13923, 1072, 7932, 13924, 5253, 19520, 1995, 1261, 2044, 7955, 13926, 10996, 1253, 1376, 7281, 17404, 1093, 2]
 
-// Module 19456 (NotificationsManager)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7926 */;
-import react_nativeDefault from "react-native" /* 7949 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13776 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13779 */;
+// Module 19519 (NotificationsManager)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7932 */;
+import react_nativeDefault from "react-native" /* 7955 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 13923 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13926 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4939 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4943 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import Constants from "Constants" /* 1084 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13777 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import Constants from "Constants" /* 1072 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13924 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 const PushNotificationPermissionStore = PushNotificationPermissionStore2;
@@ -36,7 +36,7 @@ function haveNotSeenPromptSince(arg0, arg1) {
   if (!tmp2) {
     let tmp4;
     if (items.includes(arg0)) {
-      obj = _modDef2047();
+      obj = _modDef2044();
       tmp4 = obj.diff(tmp, "days") >= 1;
     }
     tmp2 = tmp4;
@@ -60,7 +60,7 @@ let obj = function _shouldShowPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ obj = function _shouldShowReactivationPrompt() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -180,8 +180,8 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(19457, dependencyMap.paths);
-    openLazy(tmp3, syncedClientThemes, obj2);
+    const tmp3 = asyncRequire(19520, dependencyMap.paths);
+    openLazy(tmp3, authStore3, obj2);
   }, arg2);
 }
 function _logNotificationPermissionStatus() {
@@ -202,7 +202,7 @@ obj = function _logNotificationPermissionStatus2() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -248,7 +248,7 @@ obj = function _logNotificationPermissionStatus2() {
           }
           track(NOTIFICATION_PERMISSION_STATUS, obj7);
           c3 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c3 = 3;
@@ -302,7 +302,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             return obj;
           } else {
             c2 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c2 = 3;
@@ -371,7 +371,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -392,7 +392,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
             } else {
               let tmp5;
@@ -422,7 +422,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (arg0 === 1) {
                 c4 = 3;
@@ -466,7 +466,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -485,7 +485,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "Reflect", done: null };
+                return { value: "flexDirection", done: true };
               }
             } else {
               let tmp5;
@@ -516,7 +516,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                     }
                   }
                   c5 = 3;
-                  return { value: "IconComponent", done: "IconComponent" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else if (2 === c4) {
                 if (arg0 === 1) {
@@ -561,97 +561,63 @@ class NotificationsManager extends AutomaticLifecycleManager {
       return closure_0(...arguments);
     };
     _asyncToGenerator(async (arg0) => {
+      let closure_1;
+      let closure_2;
       let constants2;
       let constants3;
       let relationship = arg0;
       let c3 = 0;
       let c4 = 0;
       const iter = (async (arg0, value) => {
-        if (c4 === 2) {
-          c4 = 3;
-          throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp3 === 3) {
+        let tmp5;
+        if (1 === c3) {
           if (arg0 === 1) {
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
+            c4 = 3;
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } else {
-          try {
-            c4 = 2;
-            if (0 === c3) {
-              if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else if (arg0 === 2) {
-                c4 = 3;
-                return { value, done: true };
-              } else {
-                closure_2 = tmp4;
-                closure_1 = tmp;
-                relationship = undefined;
-                relationship = relationship.relationship;
-                c3 = 1;
-                c4 = 1;
-                return { value: "Reflect", done: null };
-              }
-            } else {
-              let tmp5;
-              if (1 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  return { value, done: true };
-                } else {
-                  tmp5 = relationship.type === constants2.PENDING_OUTGOING;
-                  if (tmp5) {
-                    c3 = 2;
-                    c4 = 1;
-                    const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
-                    return obj5;
-                  }
-                }
-              } else if (2 === c3) {
-                if (arg0 === 1) {
-                  c4 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 3;
-                  return { value, done: true };
-                } else {
-                  tmp5 = value;
-                  if (!tmp5) {
-                    c3 = 3;
-                    c4 = 1;
-                    const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
-                    return obj7;
-                  }
-                }
-              } else if (arg0 === 1) {
-                c4 = 3;
-                throw value;
-              } else {
-                tmp5 = value;
-                if (arg0 === 2) {
-                  c4 = 3;
-                  return { value, done: true };
-                }
-              }
-              if (tmp5) {
-                closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
-              }
-              c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+            tmp5 = relationship.type === constants2.PENDING_OUTGOING;
+            if (tmp5) {
+              c3 = 2;
+              c4 = 1;
+              const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
+              return obj5;
             }
-          } catch (tmp18) {
+          }
+        } else if (2 === c3) {
+          if (arg0 === 1) {
             c4 = 3;
-            throw tmp18;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            tmp5 = value;
+            if (!tmp5) {
+              c3 = 3;
+              c4 = 1;
+              const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
+              return obj7;
+            }
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else {
+          tmp5 = value;
+          if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
           }
         }
+        if (tmp5) {
+          closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
+        }
+        await "HermesInternal";
+        relationship = relationship.relationship;
+        return "flexDirection";
       })();
       iter.next();
       return iter;
@@ -671,7 +637,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -693,7 +659,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else {
             if (1 === c3) {
@@ -735,7 +701,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 return obj;
               }
               c4 = 3;
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
             if (state === closure_0(closure_2[21]).AppStates.ACTIVE) {
               c3 = 3;
@@ -766,7 +732,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -800,7 +766,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
             obj = tmp(c2[15]);
             const result = obj.updateNotificationAuthorizationStatus(tmp);
             c3 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = 3;

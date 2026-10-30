@@ -1,19 +1,18 @@
-// Module ID: 12431
-// Function ID: 12432
+// Module ID: 12585
+// Function ID: 12586
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 5005, 587, 5271, 558, 576, 8014, 6991, 1125, 12432, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 12586, 8020, 7048, 1114, 2]
+// Exports: default
 
-// Module 12431 (ConjureTipHint)
+// Module 12585 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12432 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12586 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,92 +28,9 @@ obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.spac
 createStyles = createStyles.createStyles;
 obj3 = { height: Text_Text.TextStyleSheet["text-sm/normal"].lineHeight, justifyContent: "center" };
 let closure_7 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHint(arg0) {
-  let IconButton;
-  let XSmallIcon;
-  let children;
-  let icon;
-  let intl;
-  let items;
-  let obj6;
-  let obj7;
-  let onDismiss;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(15);
-  ({ icon, onDismiss, children } = arg0);
-  const tmp4 = closure_7();
-  if (cResult[0] !== children) {
-    const obj2 = { variant: textsmnormal, color: "text-muted", children };
-    const tmp8 = React3(Text_Text.Text, obj2);
-    cResult[0] = children;
-    cResult[1] = tmp8;
-    tmp5 = tmp8;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] === tmp4.text) {
-    let tmp9;
-    if (cResult[3] === tmp5) {
-      tmp9 = cResult[4];
-    }
-    if (cResult[5] === onDismiss) {
-      let tmp11;
-      if (cResult[6] === tmp4.dismiss) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp4.line) {
-        if (cResult[9] === tmp9) {
-          let tmp16;
-          if (cResult[10] === tmp11) {
-            tmp16 = cResult[11];
-          }
-          if (cResult[12] === icon) {
-            let tmp20;
-            if (cResult[13] === tmp16) {
-              tmp20 = cResult[14];
-            }
-            return tmp20;
-          }
-          const obj3 = { icon, tone: "muted", firstLine: textsmnormal, children: tmp16 };
-          const tmp24 = React3(ConjureTipGutterRowDefault, obj3);
-          cResult[12] = icon;
-          cResult[13] = tmp16;
-          cResult[14] = tmp24;
-          tmp20 = tmp24;
-        }
-      }
-      const obj4 = { style: tmp4.line, children: items };
-      items = [tmp9, tmp11];
-      const tmp19 = hasOwnProperty(View, obj4);
-      cResult[8] = tmp4.line;
-      cResult[9] = tmp9;
-      cResult[10] = tmp11;
-      cResult[11] = tmp19;
-      tmp16 = tmp19;
-    }
-    let tmp12 = null;
-    if (null != onDismiss) {
-      const obj5 = { style: tmp4.dismiss, children: React3(IconButton, obj6) };
-      obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-      IconButton = tmp(8014).IconButton;
-      obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      XSmallIcon = tmp(6991).XSmallIcon;
-      intl = tmp(1125).intl;
-      tmp12 = React3(View, obj5);
-    }
-    cResult[5] = onDismiss;
-    cResult[6] = tmp4.dismiss;
-    cResult[7] = tmp12;
-    tmp11 = tmp12;
-  }
-  const obj8 = { style: tmp4.text, children: tmp5 };
-  const tmp10 = React3(View, obj8);
-  cResult[2] = tmp4.text;
-  cResult[3] = tmp5;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function ConjureTipHint(onDismiss) {
+const result = size.fileFinishedImporting("modules/conjure/tips/native/ConjureTipHint.tsx");
+
+export default function ConjureTipHint(onDismiss) {
   let IconButton;
   let XSmallIcon;
   let children;
@@ -140,15 +56,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureTipHi
   if (null != onDismiss) {
     const obj5 = { style: tmp.dismiss, children: React3(IconButton, obj6) };
     obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp8(8014).IconButton;
+    IconButton = tmp8(8020).IconButton;
     obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(6991).XSmallIcon;
-    intl = tmp8(1125).intl;
+    XSmallIcon = tmp8(7048).XSmallIcon;
+    intl = tmp8(1114).intl;
     tmp2Result = tmp2(tmp7, obj5);
   }
   items[1] = tmp2Result;
   return React3(tmp5, obj);
-});
-const result = size.fileFinishedImporting("modules/conjure/tips/native/ConjureTipHint.tsx");
-
-export default tmp5;
+};

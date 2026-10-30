@@ -1,17 +1,17 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7272
+// Function ID: 7273
 // Name: useFlattenedChannels
-// Dependencies: [4857, 12, 1385, 558, 576, 504, 2]
+// Dependencies: [4858, 12, 1380, 504, 2]
+// Exports: useFlattenedChannels
 
-// Module 7265 (useFlattenedChannels)
+// Module 7272 (useFlattenedChannels)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1385 */;
-import ChannelStore_mod from "ChannelStore" /* 4857 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GlobalUtils from "GlobalUtils" /* 1380 */;
+import ChannelStore_mod from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, position;
+let _require, importDefault, position;
 
 function getFlattenedChannels(guildId, set, found, flag) {
   let channel;
@@ -93,45 +93,10 @@ function getFlattenedChannels(guildId, set, found, flag) {
   return sortByResult;
 }
 let ChannelStore = ChannelStore_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFlattenedChannels(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_2;
-  let first;
-  _require = arg0;
-  let closure_1 = arg1;
-  const obj = require("react");
-  const cResult = obj.c(5);
-  dependencyMap = tmp4;
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === arg1) {
-    if (cResult[2] === arg0) {
-      let tmp7;
-      if (cResult[3] === (undefined !== arg2 && arg2)) {
-        tmp7 = cResult[4];
-      }
-      const tmpResult = tmp(504);
-      return tmpResult.useStateFromStoresArray(first, tmp7);
-    }
-  }
-  const fn = function u() {
-    let channel;
-    const arr = Array.from(closure_1);
-    const mapped = arr.map((item) => channel.getChannel(item));
-    return getFlattenedChannels(closure_0, closure_1, mapped.filter(GlobalUtils.isNotNullish), closure_2);
-  };
-  cResult[1] = arg1;
-  cResult[2] = arg0;
-  cResult[3] = undefined !== arg2 && arg2;
-  cResult[4] = fn;
-  tmp7 = fn;
-}) : (function useFlattenedChannels(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
+
+export { getFlattenedChannels };
+export function useFlattenedChannels(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -147,8 +112,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFlatten
     const mapped = arr.map((item) => channel.getChannel(item));
     return getFlattenedChannels(closure_0, closure_1, mapped.filter(GlobalUtils.isNotNullish), flag);
   });
-});
-const result = size.fileFinishedImporting("modules/guild_onboarding/useFlattenedChannels.tsx");
-
-export { getFlattenedChannels };
-export const useFlattenedChannels = tmp2;
+}

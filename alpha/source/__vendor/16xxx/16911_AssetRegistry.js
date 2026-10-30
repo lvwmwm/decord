@@ -1,0 +1,10 @@
+// Module ID: 16911
+// Function ID: 16912
+// Name: AssetRegistry
+// Dependencies: [1120]
+
+// Module 16911 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1120 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 375, height: 229, scales: [1, 2, 3], hash: "33688e5a17ba6d5d12db0d817e82285c", name: "empty_quest_home", type: "png" });

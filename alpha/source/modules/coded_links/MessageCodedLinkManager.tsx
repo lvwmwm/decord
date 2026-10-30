@@ -1,17 +1,17 @@
-// Module ID: 19395
-// Function ID: 19396
+// Module ID: 19458
+// Function ID: 19459
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 7625, 4857, 5738, 1095, 5737, 5741, 19396, 8903, 7485, 11384, 19403, 13014, 19404, 12034, 7274, 19407, 2]
+// Dependencies: [5, 7630, 4858, 5744, 1083, 5743, 5747, 19459, 8937, 7493, 11587, 19466, 13166, 19467, 12220, 7281, 19470, 2]
 
-// Module 19395 (MessageCodedLinkManager)
-import Constants from "Constants" /* 1095 */;
-import findCodedLinksDefault from "findCodedLinks" /* 5737 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19407 */;
+// Module 19458 (MessageCodedLinkManager)
+import Constants from "Constants" /* 1083 */;
+import findCodedLinksDefault from "findCodedLinks" /* 5743 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19470 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7625 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import InviteStore from "InviteStore" /* 5738 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7630 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import InviteStore from "InviteStore" /* 5744 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1, c2;
@@ -20,7 +20,7 @@ let tmp;
 let tmp2;
 let tmp3;
 function resolveMessageCodedLinks(content) {
-  const f140917 = (item) => {
+  const f117580 = (item) => {
     let code;
     let type;
     ({ type, code } = item);
@@ -39,7 +39,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -71,7 +71,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -93,7 +93,7 @@ function resolveMessageCodedLinks(content) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -125,7 +125,7 @@ function resolveMessageCodedLinks(content) {
               return obj;
             }
             c0 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp9) {
             c0 = 3;
             throw tmp9;
@@ -166,7 +166,7 @@ function resolveMessageCodedLinks(content) {
                                                 const obj2 = { value, done: true };
                                                 return obj2;
                                               } else {
-                                                return { value: "IconComponent", done: "IconComponent" };
+                                                return { value: "HermesInternal", done: null };
                                               }
                                             } else {
                                               try {
@@ -198,7 +198,7 @@ function resolveMessageCodedLinks(content) {
                                                   const promise = c1(c2[12])(closure_128_0);
                                                   promise.catch(closure_1_6);
                                                   c2 = 3;
-                                                  return { value: "IconComponent", done: "IconComponent" };
+                                                  return { value: "HermesInternal", done: null };
                                                 }
                                               } catch (tmp13) {
                                                 c2 = 3;
@@ -253,7 +253,7 @@ function resolveMessageCodedLinks(content) {
     tmp2 = 0 !== arr.length;
   }
   if (tmp2) {
-    let item = arr.forEach(f140917);
+    let item = arr.forEach(f117580);
   }
   const message_snapshots = content.message_snapshots;
   if (message_snapshots != null) {
@@ -264,7 +264,7 @@ function resolveMessageCodedLinks(content) {
         tmp = 0 !== arr.length;
       }
       if (tmp) {
-        const item = arr.forEach(f140917);
+        const item = arr.forEach(f117580);
       }
     });
   }

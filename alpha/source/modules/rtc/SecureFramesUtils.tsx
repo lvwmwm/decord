@@ -1,33 +1,33 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9246
+// Function ID: 9247
 // Name: SecureFramesUtils
-// Dependencies: [32, 5, 502, 2012, 5752, 7872, 1389, 5770, 9234, 1084, 2065, 9235, 9236, 9218, 9237, 1125, 5059, 2047, 1101, 38, 206, 1294, 1254, 5946, 6029, 2]
+// Dependencies: [32, 5, 502, 2007, 5759, 7878, 1384, 5777, 9247, 1072, 2062, 9248, 9249, 9231, 9250, 1114, 5063, 2044, 1090, 38, 206, 1283, 1243, 5953, 6036, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9233 (SecureFramesUtils)
+// Module 9246 (SecureFramesUtils)
 import _modDef38 from "module_38" /* 38 */;
 import byteLengthDefault from "byteLength" /* 206 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import intl15 from "intl" /* 1125 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5946 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
-import _mod9218 from "module_9218" /* 9218 */;
-import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9235 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9236 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9237 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import intl15 from "intl" /* 1114 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5953 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
+import _mod9231 from "module_9231" /* 9231 */;
+import SecureFramesActionCreatorsDefault from "SecureFramesActionCreators" /* 9248 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9249 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9250 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5752 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7872 */;
-import UserStore from "UserStore" /* 1389 */;
-import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5770 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9234 */;
-import Constants from "Constants" /* 1084 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5759 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7878 */;
+import UserStore from "UserStore" /* 1384 */;
+import SecureFramesPersistedStore from "SecureFramesPersistedStore" /* 5777 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9247 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,7 +82,7 @@ obj = function _isPublicKeyMatch() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ obj = function _uploadCurrentUserPublicKey() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ obj = function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(key_version);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           closure_3 = tmp22;
@@ -254,7 +254,7 @@ obj = function _ensureCurrentUserPublicKey() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _ensureCurrentUserPublicKey() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -309,7 +309,7 @@ obj = function _isCurrentUserPublicKeyMatch() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -478,8 +478,8 @@ export function deleteVerification(userId, arg1, isOtherUserKeyPersistent) {
     const _Uint8Array = Uint8Array;
     const self = this;
     const self2 = this;
-    const serializeKey = _mod9218.serializeKey;
-    _mod9218;
+    const serializeKey = _mod9231.serializeKey;
+    _mod9231;
     const uint8Array = new Uint8Array(arg1);
     const serializeKeyResult = serializeKey(uint8Array);
     const obj2 = SecureFramesActionCreatorsDefault;
@@ -534,42 +534,42 @@ export function deleteUserPersistentVerifications(userId) {
   let result = openSecureFramesUpdateConfirmation(obj2);
 }
 export function getSecureFramesUserVerifiedTimestamp(timestamp) {
-  const tmp3 = _modDef2047(timestamp);
-  obj = _modDef2047();
+  const tmp3 = _modDef2044(timestamp);
+  obj = _modDef2044();
   const diffResult = obj.diff(tmp3, "s");
   if (diffResult > 12 * DurationsDefault.Seconds.DAYS_30) {
     const _Math6 = Math;
-    const rounded = Math.round(diffResult / (12 * tmp(1101).Seconds.DAYS_30));
+    const rounded = Math.round(diffResult / (12 * tmp(1090).Seconds.DAYS_30));
     const intl7 = intl15.intl;
     const obj2 = { count: rounded };
     return intl7.formatToPlainString(intl15.t.F1wqkD, obj2);
   } else if (diffResult > DurationsDefault.Seconds.DAYS_30) {
     const _Math5 = Math;
-    const rounded1 = Math.round(diffResult / tmp(1101).Seconds.DAYS_30);
+    const rounded1 = Math.round(diffResult / tmp(1090).Seconds.DAYS_30);
     const intl6 = intl15.intl;
     const obj3 = { count: rounded1 };
     return intl6.formatToPlainString(intl15.t["iT+b+2"], obj3);
   } else if (diffResult > 7 * DurationsDefault.Seconds.DAY) {
     const _Math4 = Math;
-    const rounded2 = Math.round(diffResult / (7 * tmp(1101).Seconds.DAY));
+    const rounded2 = Math.round(diffResult / (7 * tmp(1090).Seconds.DAY));
     const intl5 = intl15.intl;
     const obj4 = { count: rounded2 };
     return intl5.formatToPlainString(intl15.t.dLurKZ, obj4);
   } else if (diffResult > DurationsDefault.Seconds.DAY) {
     const _Math3 = Math;
-    const rounded3 = Math.round(diffResult / tmp(1101).Seconds.DAY);
+    const rounded3 = Math.round(diffResult / tmp(1090).Seconds.DAY);
     const intl4 = intl15.intl;
     const obj5 = { count: rounded3 };
     return intl4.formatToPlainString(intl15.t.LE8a2H, obj5);
   } else if (diffResult > DurationsDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded4 = Math.round(diffResult / tmp(1101).Seconds.HOUR);
+    const rounded4 = Math.round(diffResult / tmp(1090).Seconds.HOUR);
     const intl3 = intl15.intl;
     const obj6 = { count: rounded4 };
     return intl3.formatToPlainString(intl15.t.KULxVS, obj6);
   } else if (diffResult > DurationsDefault.Seconds.MINUTE) {
     const _Math = Math;
-    const rounded5 = Math.round(diffResult / tmp(1101).Seconds.MINUTE);
+    const rounded5 = Math.round(diffResult / tmp(1090).Seconds.MINUTE);
     const intl2 = intl15.intl;
     const obj7 = { count: rounded5 };
     return intl2.formatToPlainString(intl15.t.ws6rWq, obj7);
@@ -580,52 +580,52 @@ export function getSecureFramesUserVerifiedTimestamp(timestamp) {
   }
 }
 export function getUserVerificationDeeplink(userId, arg1) {
-  const FEATUREResult = syncedClientThemes.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
+  const FEATUREResult = authStore3.FEATURE(map1.DAVE_PROTOCOL_VERIFICATION);
   return "" + protocol + "//" + location.host + FEATUREResult + "?userId=" + userId + "&fingerprint=" + encodeURIComponent(arg1);
 }
-export function getUserVerifyStateText(CURRENT_USER_DISCONNECTED, name) {
-  if (unpackModuleId.OTHER_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
+export function getUserVerifyStateText(memo, name) {
+  if (unpackModuleId.OTHER_USER_DISCONNECTED === memo) {
     const intl13 = intl15.intl;
     const items = [intl13.string(intl15.t.ZBHDM9), ];
     const intl14 = intl15.intl;
     const obj2 = { username: name };
     items[1] = intl14.format(intl15.t["+rIdOd"], obj2);
     return items;
-  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.CURRENT_USER_DISCONNECTED === memo) {
     const intl11 = intl15.intl;
     const items1 = [intl11.string(intl15.t["5ICxE6"]), ];
     const intl12 = intl15.intl;
     items1[1] = intl12.string(intl15.t["v1eXp/"]);
     return items1;
-  } else if (unpackModuleId.UNABLE_TO_VERIFY === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.UNABLE_TO_VERIFY === memo) {
     const intl9 = intl15.intl;
     const items2 = [intl9.string(intl15.t["+no/a7"]), ];
     const intl10 = intl15.intl;
     const obj3 = { username: name };
     items2[1] = intl10.format(intl15.t.Mft7iJ, obj3);
     return items2;
-  } else if (unpackModuleId.FINGERPRINT_MISMATCH === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.FINGERPRINT_MISMATCH === memo) {
     const intl7 = intl15.intl;
     const items3 = [intl7.string(intl15.t.HTJ76H), ];
     const intl8 = intl15.intl;
     const obj4 = { username: name };
     items3[1] = intl8.format(intl15.t.tc6aAc, obj4);
     return items3;
-  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.OTHER_USER_ALREADY_VERIFIED === memo) {
     const intl5 = intl15.intl;
     const items4 = [intl5.string(intl15.t["9lw+J+"]), ];
     const intl6 = intl15.intl;
     const obj5 = { username: name };
     items4[1] = intl6.format(intl15.t.TvBS1w, obj5);
     return items4;
-  } else if (unpackModuleId.MATCH === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.MATCH === memo) {
     const intl3 = intl15.intl;
     const items5 = [intl3.string(intl15.t["xyE+Dn"]), ];
     const intl4 = intl15.intl;
     const obj6 = { username: name };
     items5[1] = intl4.format(intl15.t.znsPl5, obj6);
     return items5;
-  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === CURRENT_USER_DISCONNECTED) {
+  } else if (unpackModuleId.OTHER_USER_INCONSISTENT_KEYS === memo) {
     const intl = intl15.intl;
     const items6 = [intl.string(intl15.t.im1uUi), ];
     const intl2 = intl15.intl;

@@ -1,92 +1,20 @@
-// Module ID: 11031
-// Function ID: 11032
+// Module ID: 11259
+// Function ID: 11260
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1389, 21, 558, 576, 504, 5059, 1125, 10948, 7047, 6963, 2]
+// Dependencies: [19, 1384, 21, 504, 5063, 7054, 6969, 1114, 10973, 2]
+// Exports: default
 
-// Module 11031 (LikelyAtoMoreTipsModalActionItems)
+// Module 11259 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
-import UserUtilsDefault from "UserUtils" /* 5059 */;
+import UserUtilsDefault from "UserUtils" /* 5063 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoMoreTipsModalActionItems(senderId) {
-  let first;
-  let tmp12;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  const obj = senderId(576);
-  const cResult = obj.c(13);
-  senderId = senderId.senderId;
-  const handleMutePressed = senderId.handleMutePressed;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== senderId) {
-    const fn = function l() {
-      return UserStore.getUser(senderId);
-    };
-    const items1 = [senderId];
-    cResult[1] = senderId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = senderId(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] !== stateFromStores) {
-    const obj3 = UserUtilsDefault;
-    const name = obj3.getName(stateFromStores);
-    cResult[4] = stateFromStores;
-    cResult[5] = name;
-    tmp9 = name;
-  } else {
-    tmp9 = cResult[5];
-  }
-  if (cResult[6] !== tmp9) {
-    const intl = tmp(1125).intl;
-    const obj2 = { username: tmp9 };
-    const formatToPlainStringResult = intl.formatToPlainString(senderId(1125).t["F/ID+9"], obj2);
-    cResult[6] = tmp9;
-    cResult[7] = formatToPlainStringResult;
-    tmp12 = formatToPlainStringResult;
-  } else {
-    tmp12 = cResult[7];
-  }
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult = intl2.string(senderId(1125).t.w2ve0t);
-    cResult[8] = stringResult;
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp18 = jsx(senderId(10948).BellSlashIcon, {});
-    cResult[9] = tmp18;
-  }
-  if (cResult[10] === handleMutePressed) {
-    let tmp19;
-    if (cResult[11] === tmp12) {
-      tmp19 = cResult[12];
-    }
-    return tmp19;
-  }
-  const TableRowGroup = tmp(7047).TableRowGroup;
-  const tmp20 = <TableRowGroup hasIcons>{null}</TableRowGroup>;
-  cResult[10] = handleMutePressed;
-  cResult[11] = tmp12;
-  cResult[12] = tmp20;
-  tmp19 = tmp20;
-}) : (function LikelyAtoMoreTipsModalActionItems(senderId) {
+const result = size.fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoMoreTipsModalActionItems.tsx");
+
+export default function LikelyAtoMoreTipsModalActionItems(senderId) {
   let intl;
   let intl2;
   senderId = senderId.senderId;
@@ -100,13 +28,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function LikelyAtoM
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(7047).TableRowGroup;
-  ({ label: intl.formatToPlainString(senderId(1125).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1125).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(6963).TableRow;
-  intl = senderId(1125).intl;
-  intl2 = senderId(1125).intl;
+  const TableRowGroup = senderId(7054).TableRowGroup;
+  ({ label: intl.formatToPlainString(senderId(1114).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1114).t.w2ve0t), onPress: handleMutePressed, icon: null });
+  const TableRow = senderId(6969).TableRow;
+  intl = senderId(1114).intl;
+  intl2 = senderId(1114).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;
-});
-const result = size.fileFinishedImporting("modules/ato_alerts/native/components/LikelyAtoMoreTipsModalActionItems.tsx");
-
-export default tmp2;
+};

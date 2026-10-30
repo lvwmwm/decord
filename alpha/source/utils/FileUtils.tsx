@@ -1,19 +1,19 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8208
+// Function ID: 8209
 // Name: FileUtils
-// Dependencies: [4879, 1389, 1084, 1391, 12, 8206, 2051, 8201, 6438, 1125, 2]
+// Dependencies: [4880, 1384, 1072, 1386, 12, 8209, 2048, 8204, 6445, 1114, 2]
 // Exports: classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 8205 (FileUtils)
+// Module 8208 (FileUtils)
 import _modDef12 from "module_12" /* 12 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
-import FileSizeUtils from "FileSizeUtils" /* 6438 */;
-import UploadUtils from "UploadUtils" /* 8201 */;
-import _modDef8206 from "module_8206" /* 8206 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
+import FileSizeUtils from "FileSizeUtils" /* 6445 */;
+import UploadUtils from "UploadUtils" /* 8204 */;
+import _modDef8209 from "module_8209" /* 8209 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let reType;
@@ -21,8 +21,8 @@ let reType;
 let GuildFeatures;
 let hasOwnProperty;
 let tmp;
-const intl2 = tmp(1125);
-const PremiumUtils = tmp(2051);
+const intl2 = tmp(1114);
+const PremiumUtils = tmp(2048);
 function getUploadFileSizeSum(arg0) {
   let num = 0;
   const tmp = arg0[Symbol.iterator]();
@@ -97,11 +97,11 @@ export function classifyFile(file) {
   }
   return str3;
 }
-export function classifyFileName(fileName, arg1) {
+export function classifyFileName(str, arg1) {
   let closure_1 = arg1;
-  let str;
-  if (fileName != null) {
-    str = fileName.toLowerCase();
+  str = undefined;
+  if (str != null) {
+    str = str.toLowerCase();
   }
   if (str == null) {
     str = "";
@@ -128,9 +128,9 @@ export function classifyFileName(fileName, arg1) {
   }
   return str2;
 }
-export function sizeString(size) {
-  const obj = _modDef8206;
-  return obj.filesize(size);
+export function sizeString(currentSize) {
+  const obj = _modDef8209;
+  return obj.filesize(currentSize);
 }
 export function maxFileSize(guildId) {
   const currentUser = UserStore.getCurrentUser();

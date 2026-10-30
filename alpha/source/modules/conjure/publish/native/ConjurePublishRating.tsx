@@ -1,25 +1,24 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12735
+// Function ID: 12736
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 5006, 21, 5005, 587, 558, 576, 5086, 5243, 5284, 5285, 10015, 10013, 12586, 6968, 504, 11886, 5271, 5247, 12587, 2000, 12587, 1125, 3864, 2]
+// Dependencies: [32, 19, 17, 5010, 21, 5009, 575, 5090, 5249, 5632, 5633, 10042, 10040, 6974, 12736, 504, 12066, 5619, 5253, 12737, 1995, 12737, 1114, 3865, 2]
 // Exports: default
 
-// Module 12585 (ConjurePublishRating)
+// Module 12735 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import spring from "spring" /* 5284 */;
-import springPresets from "springPresets" /* 5285 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12587 */;
+import nativeDefault from "native" /* 575 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import spring from "spring" /* 5632 */;
+import springPresets from "springPresets" /* 5633 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12737 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -29,186 +28,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let obj4;
-let react = react_mod;
-let View = react_native.View;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { row: obj2, stars: { flexDirection: "row" }, star: obj3, thanks: obj4 };
-obj2 = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
-createStyles = createStyles.createStyles;
-obj3 = { padding: nativeDefault.space.PX_4 };
-obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-let closure_9 = createStyles(obj);
-const __initData = { code: "function ConjurePublishRatingTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
-const __initData2 = { code: "function ConjurePublishRatingTsx2(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(rating) {
-  let closure_2;
-  let picked;
-  let reducedMotion;
-  let tmp = rating;
-  let obj = rating(576);
-  const cResult = obj.c(20);
-  rating = rating.rating;
-  ({ picked, reducedMotion } = rating);
-  const onPress = rating.onPress;
-  const tmp4 = closure_9();
-  dependencyMap = tmp5;
-  const tmpResult = tmp(5086);
-  const sharedValue = tmpResult.useSharedValue(1);
-  if (cResult[0] === (null != picked && rating <= picked)) {
-    if (cResult[1] === rating) {
-      if (cResult[2] === reducedMotion) {
-        let tmp7;
-        let tmp8;
-        let StarOutlineIcon;
-        let tmp13;
-        let ICON_MUTED;
-        let tmp17;
-        if (cResult[3] === sharedValue) {
-          tmp7 = cResult[4];
-          tmp8 = cResult[5];
-        }
-        const effect = react.useEffect(tmp7, tmp8);
-        const tmpResult3 = tmp(5086);
-        class I {
-          constructor() {
-            let items;
-            const obj = { transform: items };
-            items = [{ scale: sharedValue.get() }];
-            ({ scale: sharedValue.get() });
-            return obj;
-          }
-        }
-        let obj2 = { scale: sharedValue };
-        I.__closure = obj2;
-        I.__workletHash = 8453054615454;
-        I.__initData = __initData;
-        const animatedStyle = tmpResult3.useAnimatedStyle(I);
-        if (null != picked && rating <= picked) {
-          StarOutlineIcon = tmp(10015).StarIcon;
-        } else {
-          StarOutlineIcon = tmp(10013).StarOutlineIcon;
-        }
-        const star = tmp4.star;
-        if (cResult[6] !== rating) {
-          const tmpResult4 = tmp(12586);
-          let result = tmpResult4.conjurePublishRatingOptionLabel(rating);
-          cResult[6] = rating;
-          class I {
-            constructor() {
-              let items;
-              const obj = { transform: items };
-              items = [{ scale: sharedValue.get() }];
-              ({ scale: sharedValue.get() });
-              return obj;
-            }
-          }
-          cResult[7] = result;
-          tmp13 = result;
-        } else {
-          tmp13 = cResult[7];
-        }
-        const colors = reducedMotion(587).colors;
-        if (null != picked && rating <= picked) {
-          ICON_MUTED = colors.ICON_BRAND;
-          tmp17 = tmp16;
-        } else {
-          ICON_MUTED = colors.ICON_MUTED;
-          tmp17 = tmp16;
-        }
-        if (cResult[8] === StarOutlineIcon) {
-          let tmp18;
-          if (cResult[9] === ICON_MUTED) {
-            tmp18 = cResult[10];
-          }
-          if (cResult[11] === animatedStyle) {
-            let tmp21;
-            if (cResult[12] === tmp18) {
-              tmp21 = cResult[13];
-            }
-            if (cResult[14] === onPress) {
-              if (cResult[15] === tmp4.star) {
-                if (cResult[16] === tmp13) {
-                  if (cResult[17] === null != picked) {
-                    let tmp24;
-                    if (cResult[18] === tmp21) {
-                      tmp24 = cResult[19];
-                    }
-                    return tmp24;
-                  }
-                }
-              }
-            }
-            const obj3 = { style: null, accessibilityRole: "button", accessibilityLabel: tmp13, disabled: null != picked, hitSlop: tmp17(587).space.PX_8, onPress, children: tmp21 };
-            class I {
-              constructor() {
-                let items;
-                const obj = { transform: items };
-                items = [{ scale: sharedValue.get() }];
-                ({ scale: sharedValue.get() });
-                return obj;
-              }
-            }
-            const PressableOpacity = tmp(6968).PressableOpacity;
-            const tmp26 = closure_7(PressableOpacity, obj3);
-            cResult[14] = onPress;
-            cResult[15] = tmp4.star;
-            cResult[16] = tmp13;
-            cResult[17] = null != picked;
-            cResult[18] = tmp21;
-            cResult[19] = tmp26;
-            tmp24 = tmp26;
-          }
-          const obj4 = { style: null, children: tmp18 };
-          class I {
-            constructor() {
-              let items;
-              const obj = { transform: items };
-              items = [{ scale: sharedValue.get() }];
-              ({ scale: sharedValue.get() });
-              return obj;
-            }
-          }
-          const tmp23 = closure_7(tmp17(5086).View, obj4);
-          cResult[11] = animatedStyle;
-          cResult[12] = tmp18;
-          cResult[13] = tmp23;
-          tmp21 = tmp23;
-        }
-        const obj5 = { size: "sm", color: ICON_MUTED };
-        const tmp20 = closure_7(StarOutlineIcon, obj5);
-        cResult[8] = StarOutlineIcon;
-        cResult[9] = ICON_MUTED;
-        cResult[10] = tmp20;
-        tmp18 = tmp20;
-      }
-    }
-  }
-  const fn = function n() {
-    const tmp = closure_2 && !reducedMotion;
-    if (tmp) {
-      set = sharedValue.set;
-      const withDelay = ReanimatedRexport.withDelay;
-      const result = 30 * rating;
-      ReanimatedRexport;
-      const withSequence = ReanimatedRexport.withSequence;
-      ReanimatedRexport;
-      const obj = timing;
-      const withTimingResult = obj.withTiming(1.35, { duration: 140 });
-      const obj2 = spring;
-      const result1 = set(withDelay(result, withSequence(withTimingResult, obj2.withSpring(1, springPresets.springUnclampedBounce))));
-    }
-  };
-  let items = [tmp5, rating, reducedMotion, sharedValue];
-  cResult[0] = null != picked && rating <= picked;
-  cResult[1] = rating;
-  cResult[2] = reducedMotion;
-  cResult[3] = sharedValue;
-  cResult[4] = fn;
-  cResult[5] = items;
-  tmp8 = items;
-  tmp7 = fn;
-}) : (function Star(rating) {
+function Star(rating) {
   let StarOutlineIcon;
   let closure_2;
   let obj4;
@@ -227,7 +47,7 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
     tmp2 = rating <= picked;
   }
   dependencyMap = tmp2;
-  let obj = rating(5086);
+  let obj = rating(5090);
   sharedValue = obj.useSharedValue(1);
   let items = [tmp2, rating, reducedMotion, sharedValue];
   const effect = react.useEffect(() => {
@@ -245,8 +65,8 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
       const result1 = set(withDelay(result, withSequence(withTimingResult, obj2.withSpring(1, springPresets.springUnclampedBounce))));
     }
   }, items);
-  let obj2 = rating(5086);
-  const fn = function f() {
+  let obj2 = rating(5090);
+  const fn = function x() {
     let items;
     const obj = { transform: items };
     items = [{ scale: sharedValue.get() }];
@@ -254,23 +74,34 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Star(r
     return obj;
   };
   fn.__closure = { scale: sharedValue };
-  fn.__workletHash = 10098165815389;
-  fn.__initData = __initData2;
+  fn.__workletHash = 8453054615454;
+  fn.__initData = __initData;
   const animatedStyle = obj2.useAnimatedStyle(fn);
   if (tmp2) {
-    StarOutlineIcon = tmp3(10015).StarIcon;
+    StarOutlineIcon = tmp3(10042).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(10013).StarOutlineIcon;
+    StarOutlineIcon = tmp3(10040).StarOutlineIcon;
   }
-  const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(587).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(6968).PressableOpacity;
-  tmp3Result = rating(12586);
+  const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(575).space.PX_8, onPress, children: closure_7(View, obj4) };
+  const PressableOpacity = tmp3(6974).PressableOpacity;
+  tmp3Result = rating(12736);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
-  View = reducedMotion(5086).View;
-  const colors = reducedMotion(587).colors;
+  View = reducedMotion(5090).View;
+  const colors = reducedMotion(575).colors;
   obj5 = { size: "sm", color: tmp2 ? colors.ICON_BRAND : colors.ICON_MUTED };
   return closure_7(PressableOpacity, obj3);
-});
+}
+let react = react_mod;
+let View = react_native.View;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { row: obj2, stars: { flexDirection: "row" }, star: obj3, thanks: obj4 };
+obj2 = { flexDirection: "row", alignItems: "center", flexWrap: "wrap", gap: nativeDefault.space.PX_8 };
+createStyles = createStyles.createStyles;
+obj3 = { padding: nativeDefault.space.PX_4 };
+obj4 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+let closure_9 = createStyles(obj);
+const __initData = { code: "function ConjurePublishRatingTsx1(){const{scale}=this.__closure;return{transform:[{scale:scale.get()}]};}" };
 let result = size.fileFinishedImporting("modules/conjure/publish/native/ConjurePublishRating.tsx");
 
 export default function ConjurePublishRating(arg0) {
@@ -293,12 +124,12 @@ export default function ConjurePublishRating(arg0) {
   let tmp = closure_9();
   let tmp2 = rating;
   let tmp3 = stateFromStores;
-  let obj = rating(stateFromStores[15]);
+  let obj = rating(stateFromStores[14]);
   const conjurePublishRating = obj.useConjurePublishRating({ projectId, turnId, cta, status });
   rating = conjurePublishRating.rating;
   const rate = conjurePublishRating.rate;
   const items = [AccessibilityStore];
-  const obj2 = rating(stateFromStores[17]);
+  const obj2 = rating(stateFromStores[15]);
   stateFromStores = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const tmp6 = first(react.useState(null), 2);
   first = tmp6[0];
@@ -320,20 +151,20 @@ export default function ConjurePublishRating(arg0) {
     if (null == first) {
       const obj3 = { style: tmp.thanks, accessibilityLiveRegion: "polite", children: items2 };
       const obj4 = { size: "xs", color: rate(tmp3[6]).colors.ICON_BRAND };
-      const SparklesIcon = tmp2(tmp3[18]).SparklesIcon;
+      const SparklesIcon = tmp2(tmp3[16]).SparklesIcon;
       items2 = [closure_7(SparklesIcon, obj4), ];
       const obj5 = { variant: "text-xs/medium", color: "text-muted", children: tmp2Result.conjurePublishRatingThanks(rating) };
-      const Text2 = tmp2(tmp3[19]).Text;
-      tmp2Result = tmp2(tmp3[15]);
+      const Text2 = tmp2(tmp3[17]).Text;
+      tmp2Result = tmp2(tmp3[14]);
       items2[1] = closure_7(Text2, obj5);
       obj6 = obj3;
     }
     return tmp9(View, obj6);
   }
   obj6 = { style: tmp.row, children: items3 };
-  const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(rate(tmp3[25]).mTV326) };
-  const Text = tmp2(tmp3[19]).Text;
-  intl = tmp2(tmp3[24]).intl;
+  const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(rate(tmp3[23]).mTV326) };
+  const Text = tmp2(tmp3[17]).Text;
+  intl = tmp2(tmp3[22]).intl;
   items3 = [closure_7(Text, obj7), ];
   const obj8 = {
     style: tmp.stars,
@@ -351,13 +182,13 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(12587, dependencyMap.paths);
+            const tmp7 = asyncRequire(12737, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }
       };
       tmp3 = first;
-      let tmp2 = closure_1_12;
+      let tmp2 = Star;
       const tmp = closure_1_7;
       if (first == null) {
         tmp3 = closure_0;
@@ -365,6 +196,6 @@ export default function ConjurePublishRating(arg0) {
       return tmp(tmp2, obj, rating);
     })
   };
-  prop = tmp2(tmp3[15]).CONJURE_PUBLISH_RATINGS;
+  prop = tmp2(tmp3[14]).CONJURE_PUBLISH_RATINGS;
   items3[1] = closure_7(View, obj8);
 };

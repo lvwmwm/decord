@@ -1,12 +1,12 @@
-// Module ID: 7691
-// Function ID: 7692
+// Module ID: 7696
+// Function ID: 7697
 // Name: IntegrationPermissionUtils
-// Dependencies: [32, 1998, 5672, 2]
+// Dependencies: [32, 1993, 5678, 2]
 // Exports: commandName, commandPermissionChannels, commandPermissionMembersRoles, keyPermissions, toPermissionKey
 
-// Module 7691 (IntegrationPermissionUtils)
-import Server from "Server" /* 1998 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5672 */;
+// Module 7696 (IntegrationPermissionUtils)
+import Server from "Server" /* 1993 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5678 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

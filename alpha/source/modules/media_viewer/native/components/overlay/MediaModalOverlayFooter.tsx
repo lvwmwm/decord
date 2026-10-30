@@ -1,21 +1,21 @@
-// Module ID: 14706
-// Function ID: 14707
+// Module ID: 14739
+// Function ID: 14740
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5005, 587, 5086, 11328, 5243, 1199, 14707, 5334, 5087, 7281, 5619, 14708, 14698, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 575, 5090, 11532, 5249, 1188, 14740, 5298, 5091, 7286, 5590, 14741, 14731, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 14706 (MediaModalOverlayFooter)
+// Module 14739 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import timing from "timing" /* 5243 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11328 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
+import timing from "timing" /* 5249 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let __initData4, __initData5, set, set2, set3;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "__packager_asset" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
+let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "__closure" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "getCurrentUser" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
 obj2 = { width: 40, backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_600 };
 let closure_8 = createStyles.createStyles(obj);
 let c9 = -1;
@@ -448,7 +448,7 @@ export function MediaModalOverlayFooter(channelId) {
   const items14 = [full(tmp45, obj15), sliderElement, ];
   const obj17 = { onLayout: callback5, style: animatedStyle, children: items15 };
   const obj18 = { style: tmp.messagePreviewContainer, children: full(overlayEnabled(num[15]), obj19) };
-  obj19 = { channelId: channelId.channelId, messageId: channelId.messageId, onClose: channelId.onClose, onTapMessage: callback2, onMeasureFullHeight: callback3, onMeasureCollapsedHeight: callback4, full, canExpand: first2 > first1, setScrollViewIsAtTop: tmp36, flingUpRef: ref, flingDownRef: ref1, animationDriver: sharedValue2 };
+  obj19 = { channelId: channelId.channelId, messageId: channelId.messageId, onClose: channelId.onClose, onTapMessage: callback2, onMeasureFullHeight: callback3, onMeasureCollapsedHeight: callback4, full, canExpand: first2 > first1, setScrollViewIsAtTop: tmp36, flingUpRef: ref, flingDownRef: ref1, animationDriver: sharedValue2, entranceAnimationDriver: channelId.entranceAnimationDriver };
   const tmp46 = overlayEnabled(num[12]);
   items15 = [full(sharedValue1, obj18), ];
   if (tmp42Result) {

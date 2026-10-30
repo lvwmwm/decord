@@ -1,84 +1,24 @@
-// Module ID: 9259
-// Function ID: 9260
+// Module ID: 9272
+// Function ID: 9273
 // Name: usePlayingGameActivities
-// Dependencies: [19, 502, 5750, 6557, 558, 576, 504, 9260, 2]
+// Dependencies: [19, 502, 5756, 6564, 504, 9273, 2]
+// Exports: default
 
-// Module 9259 (usePlayingGameActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9260 */;
+// Module 9272 (usePlayingGameActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9273 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5750 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6557 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PresenceStore from "PresenceStore" /* 5756 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6564 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault;
+let _require;
 
 let closure_7 = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayingGameActivities(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let closure_2;
-  let first;
-  _require = arg0;
-  importDefault = arg1;
-  let tmp2 = dependencyMap;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(7);
-  const tmp4 = undefined === arg2 || arg2;
-  dependencyMap = tmp4;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelfPresenceStore, PresenceStore, ];
-    items[2] = AuthenticationStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === tmp4) {
-    if (cResult[2] === arg1) {
-      let tmp9;
-      let tmp10;
-      if (cResult[3] === arg0) {
-        tmp9 = cResult[4];
-      }
-      const tmpResult = tmp(504);
-      const stateFromStores = tmpResult.useStateFromStores(first, tmp9);
-      if (cResult[5] !== stateFromStores) {
-        const found = stateFromStores.filter(isPlayingGameActivityDefault);
-        cResult[5] = stateFromStores;
-        cResult[6] = found;
-        tmp10 = found;
-      } else {
-        tmp10 = cResult[6];
-      }
-      return tmp10;
-    }
-  }
-  const fn = function f() {
-    let tmp2;
-    const tmp = closure_2;
-    if (tmp) {
-      let activities;
-      if (AuthenticationStore.getId() === closure_0) {
-        activities = SelfPresenceStore.getActivities();
-      } else {
-        activities = PresenceStore.getActivities(tmp4, closure_1);
-      }
-      tmp2 = activities;
-    } else {
-      tmp2 = closure_7;
-    }
-    return tmp2;
-  };
-  cResult[1] = tmp4;
-  cResult[2] = arg1;
-  cResult[3] = arg0;
-  cResult[4] = fn;
-  tmp9 = fn;
-}) : (function usePlayingGameActivities(arg0, arg1) {
+const result = size.fileFinishedImporting("modules/activities/hooks/usePlayingGameActivities.tsx");
+
+export default function usePlayingGameActivities(arg0, arg1) {
   let closure_0;
   _require = arg0;
   let closure_1 = arg1;
@@ -106,7 +46,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePlayingGa
   });
   const items1 = [stateFromStores];
   return stateFromStores.useMemo(() => stateFromStores.filter(isPlayingGameActivityDefault), items1);
-});
-const result = size.fileFinishedImporting("modules/activities/hooks/usePlayingGameActivities.tsx");
-
-export default tmp2;
+};

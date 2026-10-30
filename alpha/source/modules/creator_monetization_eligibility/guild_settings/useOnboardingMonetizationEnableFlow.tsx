@@ -1,479 +1,27 @@
-// Module ID: 19801
-// Function ID: 19802
+// Module ID: 19864
+// Function ID: 19865
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 4875, 1389, 1084, 558, 576, 7421, 573, 19802, 19803, 19804, 7413, 1125, 2065, 19805, 2]
+// Dependencies: [19, 4876, 1384, 1072, 7429, 563, 19865, 19866, 19867, 7421, 1114, 2062, 19868, 2]
+// Exports: default
 
-// Module 19801 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 4875 */;
+// Module 19864 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 4876 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, tmp4;
+let _require, dependencyMap;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ GuildFeatures: metroRequire, HelpdeskArticles: metroImportDefault, MarketingURLs: metroImportAll } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardingMonetizationEnableFlow(features) {
-  let closure_2;
-  let createEnableRequest;
-  let error;
-  let error2;
-  let isApplicationRejected;
-  let loading;
-  let loading2;
-  let refresh;
-  let requestCooldownDuration;
-  let submittedRequest;
-  let tmp13;
-  let tmp17;
-  let tmp19;
-  let tmp21Result2;
-  let tmp28;
-  let tmp7;
-  _require = features;
-  let tmp = _require;
-  const tmp2 = dependencyMap;
-  const obj = require("react");
-  const cResult = obj.c(40);
-  const obj2 = require("CreatorMonetizationEligibilityExperimentUtils");
-  let isExpeditedOnboardingGuild = obj2.useIsExpeditedOnboardingGuild(features);
-  let features1;
-  const first = cResult[0];
-  if (features != null) {
-    features1 = features.features;
-  }
-  if (first !== features1) {
-    let hasItem;
-    if (features != null) {
-      features = features.features;
-      hasItem = features.has(constants.CREATOR_MONETIZABLE_PROVISIONAL);
-    }
-    let features3;
-    if (features != null) {
-      features3 = features.features;
-    }
-    cResult[0] = features3;
-    cResult[1] = hasItem;
-    tmp7 = hasItem;
-  } else {
-    tmp7 = cResult[1];
-  }
-  let features4;
-  const tmp11 = cResult[2];
-  if (features != null) {
-    features4 = features.features;
-  }
-  if (tmp11 !== features4) {
-    let hasItem1;
-    if (features != null) {
-      const features2 = features.features;
-      hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
-    }
-    let features5;
-    if (features != null) {
-      features5 = features.features;
-    }
-    cResult[2] = features5;
-    cResult[3] = hasItem1;
-    tmp13 = hasItem1;
-  } else {
-    tmp13 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    cResult[4] = items;
-    tmp17 = items;
-  } else {
-    tmp17 = cResult[4];
-  }
-  if (cResult[5] !== features) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-    cResult[5] = features;
-    cResult[6] = T;
-    tmp19 = T;
-  } else {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  const tmpResult = tmp(573);
-  const stateFromStores = tmpResult.useStateFromStores(tmp17, tmp19);
-  const tmp22 = refresh(19802);
-  if (features != null) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  ({ error, loading, createEnableRequest, submittedRequest } = tmp22(undefined));
-  tmp22(undefined);
-  const tmp21Result = refresh(19803);
-  if (features != null) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  const tmp21ResultResult = tmp21Result(undefined);
-  ({ loading: loading2, error: error2, refresh } = tmp21ResultResult);
-  const eligibility = tmp21ResultResult.eligibility;
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(19804)(eligibility));
-  refresh(19804)(eligibility);
-  const tmp27 = cResult[7];
-  if (features != null) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  if (tmp27 !== undefined) {
-    let hasItem2;
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-    if (features != null) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      hasItem2 = obj4.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
-    }
-    let tmp31 = true === hasItem2;
-    if (!tmp31) {
-      let hasItem3;
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      if (features != null) {
-        class T {
-          constructor() {
-            tmp3 = null != closure_0;
-            if (tmp3) {
-              tmp4 = isGuildOwner;
-              tmp3 = isGuildOwner(tmp2, tmp);
-            }
-            return tmp3;
-          }
-        }
-        hasItem3 = obj5.has(constants.CREATOR_MONETIZABLE_DISABLED);
-      }
-      tmp31 = true === hasItem3;
-    }
-    if (features != null) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-    }
-    cResult[7] = undefined;
-    cResult[8] = tmp31;
-    tmp28 = tmp31;
-  } else {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  const useIsMonetizationReapplicationDisabled = tmp(7413).useIsMonetizationReapplicationDisabled;
-  tmp(7413);
-  if (features != null) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  const isMonetizationReapplicationDisabled = useIsMonetizationReapplicationDisabled(undefined).isMonetizationReapplicationDisabled;
-  if (!submittedRequest) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-    if (eligibility != null) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-    }
-  }
-  if (eligibility != null) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-    const format = tmp39.format;
-    const obj3 = { faqUrl: tmp21Result2.getArticleURL(constants2.CREATOR_FAQ) };
-    const aJUdOi = tmp(1125).t.aJUdOi;
-    tmp21Result2 = refresh(2065);
-    cResult[9] = format(aJUdOi, obj3);
-    const formatResult = format(aJUdOi, obj3);
-  } else {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-  if (isApplicationRejected) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-    let tmp45 = isExpeditedOnboardingGuild && stateFromStores;
-    if (tmp45) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      tmp45 = false === tmp13;
-    }
-    dependencyMap = tmp45;
-    if (isExpeditedOnboardingGuild) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      isExpeditedOnboardingGuild = false === tmp7;
-    }
-    let tmp46 = isExpeditedOnboardingGuild;
-    if (tmp46) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      tmp46 = tmp28;
-    }
-    const _Symbol = Symbol;
-    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      const creatorMonetizationAcceptTermsCheckboxText = obj8.getCreatorMonetizationAcceptTermsCheckboxText();
-      cResult[14] = creatorMonetizationAcceptTermsCheckboxText;
-    } else {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-    }
-    if (cResult[15] === true === undefined) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-    }
-    let formatResult1;
-    if (isApplicationRejected) {
-      class T {
-        constructor() {
-          tmp3 = null != closure_0;
-          if (tmp3) {
-            tmp4 = isGuildOwner;
-            tmp3 = isGuildOwner(tmp2, tmp);
-          }
-          return tmp3;
-        }
-      }
-      if (true === undefined) {
-        class T {
-          constructor() {
-            tmp3 = null != closure_0;
-            if (tmp3) {
-              tmp4 = isGuildOwner;
-              tmp3 = isGuildOwner(tmp2, tmp);
-            }
-            return tmp3;
-          }
-        }
-        if (stateFromStores) {
-          class T {
-            constructor() {
-              tmp3 = null != closure_0;
-              if (tmp3) {
-                tmp4 = isGuildOwner;
-                tmp3 = isGuildOwner(tmp2, tmp);
-              }
-              return tmp3;
-            }
-          }
-          formatResult1 = obj9.format(tmp(1125).t.wbVIUB, {});
-        }
-      }
-    }
-    cResult[15] = true === undefined;
-    cResult[16] = isApplicationRejected;
-    cResult[17] = stateFromStores;
-    cResult[18] = formatResult1;
-  }
-  const tmp42 = isApplicationRejected && null != requestCooldownDuration;
-  if (tmp42) {
-    class T {
-      constructor() {
-        tmp3 = null != closure_0;
-        if (tmp3) {
-          tmp4 = isGuildOwner;
-          tmp3 = isGuildOwner(tmp2, tmp);
-        }
-        return tmp3;
-      }
-    }
-  }
-}) : (function useOnboardingMonetizationEnableFlow(features) {
+const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
+
+export default function useOnboardingMonetizationEnableFlow(features) {
   let canApply;
   let closure_2;
   let createEnableRequest;
@@ -503,29 +51,29 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     const hasItem1 = features2.has(constants.CREATOR_MONETIZABLE);
   }
   const items = [UserStore];
-  const tmpResult = tmp(573);
+  const tmpResult = tmp(563);
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     const tmp3 = null != features && isGuildOwner(tmp2, tmp);
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(19802);
+  const tmp10 = refresh(19865);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(19803);
+  const tmp9Result = refresh(19866);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(19804)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(19867)(eligibility));
   let hasItem2;
-  refresh(19804)(eligibility);
+  refresh(19867)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -540,8 +88,8 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
     tmp19 = true === hasItem3;
   }
   let id2;
-  const useIsMonetizationReapplicationDisabled = tmp(7413).useIsMonetizationReapplicationDisabled;
-  tmp(7413);
+  const useIsMonetizationReapplicationDisabled = tmp(7421).useIsMonetizationReapplicationDisabled;
+  tmp(7421);
   if (features != null) {
     id2 = features.id;
   }
@@ -557,22 +105,22 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   if (eligibility != null) {
     canApply = eligibility.canApply;
   }
-  const intl = tmp(1125).intl;
-  const aJUdOi = tmp(1125).t.aJUdOi;
-  const tmp9Result3 = refresh(2065);
+  const intl = tmp(1114).intl;
+  const aJUdOi = tmp(1114).t.aJUdOi;
+  const tmp9Result3 = refresh(2062);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (isMonetizationReapplicationDisabled) {
       let formatResult;
       if (true === hasItem) {
-        const intl4 = tmp(1125).intl;
+        const intl4 = tmp(1114).intl;
         const obj2 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl4.format(tmp(1125).t["0o1Q+t"], obj2);
+        formatResult = intl4.format(tmp(1114).t["0o1Q+t"], obj2);
       } else {
-        const intl3 = tmp(1125).intl;
+        const intl3 = tmp(1114).intl;
         const obj3 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl3.format(tmp(1125).t.b6h59n, obj3);
+        formatResult = intl3.format(tmp(1114).t.b6h59n, obj3);
       }
       formatResult2 = formatResult;
     }
@@ -581,13 +129,13 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(19805);
+    const tmpResult4 = tmp(19868);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
         if (stateFromStores) {
-          const intl5 = tmp(1125).intl;
-          formatResult1 = intl5.format(tmp(1125).t.wbVIUB, {});
+          const intl5 = tmp(1114).intl;
+          formatResult1 = intl5.format(tmp(1114).t.wbVIUB, {});
         }
       }
     }
@@ -609,14 +157,11 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnboardin
   }
   const tmp28 = isApplicationRejected && null != requestCooldownDuration;
   if (tmp28) {
-    const intl2 = tmp(1125).intl;
+    const intl2 = tmp(1114).intl;
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
-    const TvX207 = tmp(1125).t.TvX207;
-    tmp9Result4 = refresh(2065);
+    const TvX207 = tmp(1114).t.TvX207;
+    tmp9Result4 = refresh(2062);
     formatResult2 = format(TvX207, obj5);
   }
-});
-const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useOnboardingMonetizationEnableFlow.tsx");
-
-export default tmp3;
+};

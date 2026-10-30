@@ -1,15 +1,14 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 10870
+// Function ID: 10871
 // Name: ConjureHostApproval
-// Dependencies: [19, 504, 584, 10831, 558, 576, 10848, 2]
-// Exports: answerHostApproval, removeAllowedHost
+// Dependencies: [19, 504, 572, 10854, 10871, 2]
+// Exports: answerHostApproval, removeAllowedHost, useConjureAllowedHosts, useConjureHostApprovals, useConjureRequireHostApprovalSetting
 
-// Module 10847 (ConjureHostApproval)
+// Module 10870 (ConjureHostApproval)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 10831 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 10854 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +45,7 @@ let obj = {
     if (value == null) {
       value = closure_4;
     }
-    const f110199 = (id) => id.id;
+    const f98087 = (id) => id.id;
     let flag = !(value.length === asks.length && value.every((item, index) => {
       const tmp = o(item);
       return tmp === o(allowedHosts[index]);
@@ -110,193 +109,6 @@ let obj2 = {
     obj.dispatch(obj2);
   }
 };
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureHostApprovals(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [hostAccessStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      return hostAccessStore.getApprovals(closure_0);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useConjureHostApprovals(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [hostAccessStore];
-  const items1 = [arg0];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => hostAccessStore.getApprovals(closure_0), items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureAllowedHosts(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  let tmp7;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [hostAccessStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const access = hostAccessStore.getAccess(closure_0);
-      let requireApproval;
-      if (access != null) {
-        requireApproval = access.requireApproval;
-      }
-      let allowedHosts = null;
-      if (true === requireApproval) {
-        allowedHosts = access.allowedHosts;
-      }
-      return allowedHosts;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6, tmp7);
-}) : (function useConjureAllowedHosts(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [hostAccessStore];
-  const items1 = [arg0];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => {
-    const access = hostAccessStore.getAccess(closure_0);
-    let requireApproval;
-    if (access != null) {
-      requireApproval = access.requireApproval;
-    }
-    let allowedHosts = null;
-    if (true === requireApproval) {
-      allowedHosts = access.allowedHosts;
-    }
-    return allowedHosts;
-  }, items1);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureRequireHostApprovalSetting(arg0) {
-  let first;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [hostAccessStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function o() {
-      const access = hostAccessStore.getAccess(closure_0);
-      let requireApproval;
-      if (access != null) {
-        requireApproval = access.requireApproval;
-      }
-      if (requireApproval == null) {
-        requireApproval = null;
-      }
-      return requireApproval;
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  if (cResult[4] !== arg0) {
-    const fn2 = function p(projectId) {
-      closure_0 = projectId;
-      let obj = conjureProjectSockets;
-      return obj.sendOnConjureSocket(closure_0, "host approval setting", (sendHostAccess) => {
-        const obj = { type: "set_host_access", require_approval };
-        return sendHostAccess.sendHostAccess(obj);
-      });
-    };
-    cResult[4] = arg0;
-    cResult[5] = fn2;
-    tmp9 = fn2;
-  } else {
-    tmp9 = cResult[5];
-  }
-  const tmpResult2 = require("useToggleDraft");
-  return tmpResult2.useToggleDraft(stateFromStores, tmp9);
-}) : (function useConjureRequireHostApprovalSetting(arg0) {
-  _require = arg0;
-  let obj = require("get initialized");
-  const items = [hostAccessStore];
-  const items1 = [arg0];
-  const items2 = [arg0];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const access = hostAccessStore.getAccess(closure_0);
-    let requireApproval;
-    if (access != null) {
-      requireApproval = access.requireApproval;
-    }
-    if (requireApproval == null) {
-      requireApproval = null;
-    }
-    return requireApproval;
-  }, items1);
-  const callback = react.useCallback((projectId) => {
-    closure_0 = projectId;
-    let obj = conjureProjectSockets;
-    return obj.sendOnConjureSocket(closure_0, "host approval setting", (sendHostAccess) => {
-      const obj = { type: "set_host_access", require_approval };
-      return sendHostAccess.sendHostAccess(obj);
-    });
-  }, items2);
-  const obj2 = require("useToggleDraft");
-  return obj2.useToggleDraft(stateFromStores, callback);
-});
 let result = size.fileFinishedImporting("modules/conjure/host_approval/ConjureHostApproval.tsx");
 
 export const ConjureHostAccessStore = hostAccessStore;
@@ -324,6 +136,56 @@ export function removeAllowedHost(projectId, arg1) {
     return sendHostAccess.sendHostAccess(obj);
   });
 }
-export const useConjureHostApprovals = tmp5;
-export const useConjureAllowedHosts = tmp6;
-export const useConjureRequireHostApprovalSetting = tmp7;
+export function useConjureHostApprovals(projectId) {
+  _require = projectId;
+  const items = [hostAccessStore];
+  const items1 = [projectId];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => hostAccessStore.getApprovals(projectId), items1);
+}
+export function useConjureAllowedHosts(projectId) {
+  _require = projectId;
+  const items = [hostAccessStore];
+  const items1 = [projectId];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const access = hostAccessStore.getAccess(projectId);
+    let requireApproval;
+    if (access != null) {
+      requireApproval = access.requireApproval;
+    }
+    let allowedHosts = null;
+    if (true === requireApproval) {
+      allowedHosts = access.allowedHosts;
+    }
+    return allowedHosts;
+  }, items1);
+}
+export function useConjureRequireHostApprovalSetting(arg0) {
+  _require = arg0;
+  let obj = require("get initialized");
+  const items = [hostAccessStore];
+  const items1 = [arg0];
+  const items2 = [arg0];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    const access = hostAccessStore.getAccess(closure_0);
+    let requireApproval;
+    if (access != null) {
+      requireApproval = access.requireApproval;
+    }
+    if (requireApproval == null) {
+      requireApproval = null;
+    }
+    return requireApproval;
+  }, items1);
+  const callback = react.useCallback((projectId) => {
+    closure_0 = projectId;
+    let obj = conjureProjectSockets;
+    return obj.sendOnConjureSocket(closure_0, "host approval setting", (sendHostAccess) => {
+      const obj = { type: "set_host_access", require_approval };
+      return sendHostAccess.sendHostAccess(obj);
+    });
+  }, items2);
+  const obj2 = require("useToggleDraft");
+  return obj2.useToggleDraft(stateFromStores, callback);
+}

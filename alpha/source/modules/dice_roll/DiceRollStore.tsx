@@ -1,38 +1,21 @@
-// Module ID: 13525
-// Function ID: 13526
+// Module ID: 13674
+// Function ID: 13675
 // Name: DiceRollStore
-// Dependencies: [570, 558, 576, 2]
+// Dependencies: [560, 2]
+// Exports: useDiceRollState
 
-// Module 13525 (DiceRollStore)
-import react from "react" /* 576 */;
-import module_570 from "module_570" /* 570 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13674 (DiceRollStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const INITIAL_STATE = { channelId: null, rolling: false, dismissing: false, diceCount: 1, diceSides: 6, results: null };
-const obj2 = module_570.create(() => obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiceRollState(arg0) {
-  let tmp2;
-  let closure_0 = arg0;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== arg0) {
-    const fn = function t(channelId) {
-      let tmp = null;
-      if (channelId.channelId === closure_0) {
-        tmp = channelId;
-      }
-      return tmp;
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return obj2(tmp2);
-}) : (function useDiceRollState(arg0) {
-  let closure_0 = arg0;
+const obj2 = module_560.create(() => obj);
+const result = size.fileFinishedImporting("modules/dice_roll/DiceRollStore.tsx");
+
+export default obj2;
+export { INITIAL_STATE };
+export function useDiceRollState(channelId) {
+  let closure_0 = channelId;
   return obj2((channelId) => {
     let tmp = null;
     if (channelId.channelId === closure_0) {
@@ -40,9 +23,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiceRol
     }
     return tmp;
   });
-});
-const result = size.fileFinishedImporting("modules/dice_roll/DiceRollStore.tsx");
-
-export default obj2;
-export { INITIAL_STATE };
-export const useDiceRollState = tmp3;
+}

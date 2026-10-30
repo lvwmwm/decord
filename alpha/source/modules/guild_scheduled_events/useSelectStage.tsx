@@ -1,213 +1,27 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9191
+// Function ID: 9192
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 4857, 4908, 558, 576, 504, 7936, 2]
+// Dependencies: [5, 32, 19, 4858, 4912, 504, 7942, 2]
+// Exports: default
 
-// Module 9178 (useSelectStage)
+// Module 9191 (useSelectStage)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 let c3, c6, channel;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectStage() {
-  let closure_2;
-  let first;
-  let items3;
-  let stateFromStores;
-  let tmp11;
-  let tmp12;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let voiceChannelId;
-  const tmp = stateFromStores;
-  let obj = stateFromStores(first[6]);
-  const cResult = obj.c(11);
-  const tmp2 = first;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SelectedChannelStore];
-    const fn = function s() {
-      return voiceChannelId.getVoiceChannelId();
-    };
-    const items1 = [];
-    cResult[0] = items;
-    cResult[1] = fn;
-    cResult[2] = items1;
-    tmp4 = items;
-    tmp5 = fn;
-    tmp6 = items1;
-  } else {
-    [tmp4, tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(tmp2[7]);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5, tmp6);
-  let obj3 = react;
-  [first, _asyncToGenerator] = react.useState(stateFromStores);
-  if (cResult[3] !== stateFromStores) {
-    class S {
-      constructor() {
-        closure_0 = setTimeout(() => {
-          closure_1_2(closure_0);
-        }, 500);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      }
-    }
-    const items2 = [stateFromStores];
-    cResult[3] = stateFromStores;
-    cResult[4] = S;
-    cResult[5] = items2;
-    tmp12 = items2;
-    tmp11 = S;
-  } else {
-    class S {
-      constructor() {
-        closure_0 = setTimeout(() => {
-          closure_1_2(closure_0);
-        }, 500);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      }
-    }
-    tmp12 = cResult[5];
-  }
-  const effect = obj3.useEffect(tmp11, tmp12);
-  if (cResult[6] !== first) {
-    class S {
-      constructor() {
-        closure_0 = setTimeout(() => {
-          closure_1_2(closure_0);
-        }, 500);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      }
-    }
-    let closure_0 = _asyncToGenerator(async (arg0, value) => {
-      let obj2;
-      closure_0 = arg0;
-      let closure_1 = value;
-      if (c6 === 2) {
-        c6 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "IconComponent", done: "IconComponent" };
-        }
-      } else {
-        let c5;
-        try {
-          c6 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c6 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
-            } else {
-              c5 = 1;
-              const tmp25 = closure_0;
-              if (closure_1 === closure_1) {
-                channel = channel.getChannel(tmp26);
-                if (null != channel) {
-                  const obj4 = closure_0(first[8]);
-                  obj4.navigateToStage(channel);
-                  c5 = 0;
-                  c6 = 3;
-                  const obj6 = { value: undefined, done: true };
-                  return obj6;
-                }
-              }
-              tmp(closure_1);
-              c3 = 2;
-              c6 = 1;
-              const obj7 = { value: obj2.connectOrLurkStage(tmp25, closure_1), done: false };
-              obj2 = closure_0(first[8]);
-              return obj7;
-            }
-          } else {
-            if (1 === tmp4) {
-              c5 = 0;
-              tmp(null);
-            } else if (arg0 === 1) {
-              c6 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 0;
-              c6 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              c5 = 0;
-            }
-            c6 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
-          }
-        } catch (tmp18) {
-          let closure_4 = tmp18;
-          if (0 === c5) {
-            c6 = 3;
-            throw tmp18;
-          } else {
-            c3 = 1;
-          }
-        }
-      }
-    });
-    function t5() {
-      return closure_0(...arguments);
-    }
-    cResult[6] = first;
-    cResult[7] = t5;
-  } else {
-    class S {
-      constructor() {
-        closure_0 = setTimeout(() => {
-          closure_1_2(closure_0);
-        }, 500);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      }
-    }
-  }
-  if (cResult[8] === tmp14) {
-    class S {
-      constructor() {
-        closure_0 = setTimeout(() => {
-          closure_1_2(closure_0);
-        }, 500);
-        return () => {
-          clearTimeout(closure_0);
-        };
-      }
-    }
-    return items3;
-  }
-  items3 = [first, tmp14];
-  cResult[8] = tmp14;
-  cResult[9] = first;
-  cResult[10] = items3;
-}) : (function useSelectStage() {
+const result = size.fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
+
+export default function useSelectStage() {
   let closure_2;
   let first;
   let stateFromStores;
   let voiceChannelId;
-  let obj = stateFromStores(first[7]);
+  let obj = stateFromStores(first[5]);
   const items = [SelectedChannelStore];
   stateFromStores = obj.useStateFromStores(items, () => voiceChannelId.getVoiceChannelId(), []);
   [first, _asyncToGenerator] = react.useState(stateFromStores);
@@ -236,7 +50,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -256,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
             if (closure_1 === closure_1) {
               channel = channel.getChannel(tmp26);
               if (null != channel) {
-                const obj4 = closure_0(first[8]);
+                const obj4 = closure_0(first[6]);
                 obj4.navigateToStage(channel);
                 c5 = 0;
                 c6 = 3;
@@ -268,7 +82,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
             c3 = 2;
             c6 = 1;
             const obj7 = { value: obj2.connectOrLurkStage(tmp25, closure_1), done: false };
-            obj2 = closure_0(first[8]);
+            obj2 = closure_0(first[6]);
             return obj7;
           }
         } else {
@@ -287,7 +101,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
             c5 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         let closure_4 = tmp18;
@@ -308,7 +122,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectSta
     }, items2)
   ];
   return items3;
-});
-const result = size.fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");
-
-export default tmp2;
+};

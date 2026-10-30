@@ -1,10 +1,10 @@
 // Module ID: 1433
 // Function ID: 1434
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 1433 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/provisional_account_avatars", width: 320, height: 320, scales: [1], hash: "76a844d17fcdbbb8dd91d3757efd431a", name: "default_provisional_avatar_2", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/group_dms", width: 96, height: 96, scales: [1], hash: "9cab0a5ea6447291fc5ceaa40f998701", name: "icon1", type: "png" });

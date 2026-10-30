@@ -1,66 +1,64 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 9934
+// Function ID: 9935
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 558, 576, 1278, 5635, 9908, 1497, 9913, 2]
-// Exports: useTooltipHelper
+// Dependencies: [32, 5, 19, 21, 3, 1267, 5608, 9935, 1492, 9940, 2]
+// Exports: useTooltip, useTooltipHelper
 
-// Module 9907 (useTooltip)
+// Module 9934 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1497 */;
-import AnimatedTooltip2 from "AnimatedTooltip" /* 9908 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import AnimatedTooltip2 from "AnimatedTooltip" /* 9935 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, importDefault, surfaceRef;
+let _require, closure_2, dependencyMap, importDefault, ref2, surfaceRef;
 
 const jsx = Fragment.jsx;
 let tmp2 = new LoggerDefault("useTooltip.native");
 const logger = tmp2;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(arg0, arg1) {
-  let closure_1;
-  let closure_2;
-  let context;
-  let first;
-  let ref;
-  const obj = ref(576);
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = ref(1278);
-    const v4Result = tmpResult.v4();
-    cResult[0] = v4Result;
-    first = v4Result;
-  } else {
-    first = cResult[0];
+const result = size.fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
+
+export function useTooltip(ref, memo) {
+  let obj = react;
+  const tmp2 = dependencyMap;
+  const useRef = react.useRef;
+  const tmp = _require;
+  const obj2 = require("v1");
+  ref = useRef(obj2.v4());
+  _require = memo;
+  const context = react.useContext(require("LayerContext").LayerContext);
+  if (null == context) {
+    logger.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
   }
-  ref = context.useRef(first);
-  const tmp7 = closure_8(arg1);
-  importDefault = arg0;
-  dependencyMap = tmp7;
-  context = undefined;
-  const tmp8 = useWindowDimensionsDefault();
+  let items = [context, memo];
+  const callback = obj.useCallback((arg0, targetMeasurements, surfaceMeasurements) => {
+    const AnimatedTooltip = AnimatedTooltip2.AnimatedTooltip;
+    const merged = Object.assign(memo);
+    context.add(arg0, <AnimatedTooltip targetMeasurements={arg1} surfaceMeasurements={arg2} />);
+  }, items);
+  let closure_1 = ref;
+  const tmp8 = context(1492)();
   let closure_3 = tmp8;
-  let closure_4 = context.useRef(tmp8);
-  context = context.useContext(tmp(5635).LayerContext);
-  let closure_6 = context.useRef(null);
-  const items = [context, ref];
-  const effect = context.useEffect(() => {
+  let closure_4 = obj.useRef(tmp8);
+  const context1 = obj.useContext(tmp(5608).LayerContext);
+  let closure_6 = obj.useRef(null);
+  const items1 = [context1, ref];
+  const effect = obj.useEffect(() => {
     let current;
     current = current.current;
     return () => {
       if (null != current) {
-        context.remove(tmp);
+        context1.remove(tmp);
       }
       ref.current = null;
     };
-  }, items);
-  const items1 = [context.surfaceRef, arg0, ref, tmp7];
-  const callback = context.useCallback((arg0) => {
+  }, items1);
+  const items2 = [context1.surfaceRef, ref, ref, callback];
+  const callback1 = obj.useCallback((arg0) => {
     function measureHelper(current) {
       return obj(...arguments);
     }
@@ -81,7 +79,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -100,10 +98,10 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   closure_3 = undefined;
                   closure_4 = undefined;
                   c4 = 1;
-                  const obj5 = closure_2_0(closure_2_2[11]);
+                  const obj5 = closure_2_0(closure_2_2[9]);
                   const measurements = obj5.getMeasurements(surfaceRef.surfaceRef, closure_2_0);
                   const items = [measurements, ];
-                  const obj6 = closure_2_0(closure_2_2[11]);
+                  const obj6 = closure_2_0(closure_2_2[9]);
                   items[1] = obj6.getMeasurements(closure_1, closure_2_0);
                   surfaceRef = 2;
                   ref2 = 1;
@@ -132,7 +130,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -148,200 +146,27 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useTooltip(a
       });
       return obj(...arguments);
     };
-    obj = ref(closure_2[7]);
+    obj = ref(callback[5]);
     ref2.current = obj.v4();
     return measureHelper(ref2.current);
-  }, items1);
-  const items2 = [context, tmp8, callback, ref];
-  const effect1 = context.useEffect(() => {
+  }, items2);
+  const items3 = [context1, tmp8, callback1, ref];
+  const effect1 = obj.useEffect(() => {
     if (ref.current !== closure_3) {
       if (null != ref.current) {
-        context.remove(tmp4.current);
+        context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    callback(ref.current !== closure_3);
-  }, items2);
-  return callback;
-}) : (function useTooltip(arg0, arg1) {
-  let context;
-  let ref;
-  const useRef = context.useRef;
-  let obj = ref(1278);
-  useRef(obj.v4());
-  const tmp2 = closure_8(arg1);
-  importDefault = arg0;
-  dependencyMap = tmp2;
-  context = undefined;
-  const tmp3 = useWindowDimensionsDefault();
-  let closure_3 = tmp3;
-  ref = context.useRef(tmp3);
-  context = context.useContext(ref(5635).LayerContext);
-  let ref2 = context.useRef(null);
-  let items = [context, ref];
-  const effect = context.useEffect(() => {
-    let current;
-    current = current.current;
-    return () => {
-      if (null != current) {
-        context.remove(tmp);
-      }
-      ref.current = null;
-    };
-  }, items);
-  const items1 = [context.surfaceRef, arg0, ref, tmp2];
-  const callback = context.useCallback((arg0) => {
-    function measureHelper(current) {
-      return obj(...arguments);
-    }
-    let closure_0 = arg0;
-    let obj = function _measureHelper() {
-      obj = _asyncToGenerator(async (arg0) => {
-        ref = arg0;
-        let c5 = 0;
-        let c6 = 0;
-        let c4 = 0;
-        return (async (arg0, value) => {
-          if (ref2 === 2) {
-            ref2 = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              return { value, done: true };
-            } else {
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } else {
-            try {
-              let closure_4;
-              ref2 = 2;
-              if (0 === surfaceRef) {
-                if (arg0 === 1) {
-                  ref2 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  ref2 = 3;
-                  return { value, done: true };
-                } else {
-                  closure_1 = undefined;
-                  closure_2 = undefined;
-                  closure_3 = undefined;
-                  closure_4 = undefined;
-                  c4 = 1;
-                  const obj5 = closure_2_0(closure_2_2[11]);
-                  const measurements = obj5.getMeasurements(surfaceRef.surfaceRef, closure_2_0);
-                  const items = [measurements, ];
-                  const obj6 = closure_2_0(closure_2_2[11]);
-                  items[1] = obj6.getMeasurements(closure_1, closure_2_0);
-                  surfaceRef = 2;
-                  ref2 = 1;
-                  const obj4 = { value: Promise.all(items), done: false };
-                  return obj4;
-                }
-              } else {
-                if (1 === surfaceRef) {
-                  c4 = 0;
-                } else if (arg0 === 1) {
-                  ref2 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  ref2 = 3;
-                  return { value, done: true };
-                } else {
-                  closure_1 = value;
-                  closure_2 = closure_2_3(closure_1, 2);
-                  closure_3 = closure_2[0];
-                  closure_4 = closure_2[1];
-                  const tmp9 = null != ref.current && ref2.current === ref;
-                  if (tmp9) {
-                    closure_2(ref.current, closure_4, closure_3);
-                  }
-                  c4 = 0;
-                }
-                ref2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
-              }
-            } catch (tmp18) {
-              closure_3 = tmp18;
-              if (0 === c4) {
-                ref2 = 3;
-                throw tmp18;
-              } else {
-                surfaceRef = 1;
-              }
-            }
-          }
-        })();
-      });
-      return obj(...arguments);
-    };
-    obj = ref(closure_2[7]);
-    ref2.current = obj.v4();
-    return measureHelper(ref2.current);
-  }, items1);
-  const items2 = [context, tmp3, callback, ref];
-  const effect1 = context.useEffect(() => {
-    if (ref.current !== closure_3) {
-      if (null != ref.current) {
-        context.remove(tmp4.current);
-      }
-      tmp.current = tmp2;
-    }
-    callback(ref.current !== closure_3);
-  }, items2);
-  return callback;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAddTooltip(arg0) {
-  let closure_0;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const context = react.useContext(require("LayerContext").LayerContext);
-  if (null == context) {
-    logger.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
-  }
-  if (cResult[0] === context) {
-    let tmp5;
-    if (cResult[1] === arg0) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  const fn = function n(arg0, targetMeasurements, surfaceMeasurements) {
-    const AnimatedTooltip = AnimatedTooltip2.AnimatedTooltip;
-    const merged = Object.assign(closure_0);
-    context.add(arg0, <AnimatedTooltip targetMeasurements={arg1} surfaceMeasurements={arg2} />);
-  };
-  cResult[0] = context;
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp5 = fn;
-}) : (function useAddTooltip(arg0) {
-  let closure_0;
-  _require = arg0;
-  const context = react.useContext(require("LayerContext").LayerContext);
-  const obj = react;
-  if (null == context) {
-    logger.warn("Tooltip called with no layer context. It will not show without a LayerScope.");
-  }
-  const items = [context, arg0];
-  return obj.useCallback((arg0, targetMeasurements, surfaceMeasurements) => {
-    const AnimatedTooltip = AnimatedTooltip2.AnimatedTooltip;
-    const merged = Object.assign(closure_0);
-    context.add(arg0, <AnimatedTooltip targetMeasurements={arg1} surfaceMeasurements={arg2} />);
-  }, items);
-});
-function useTooltipHelper(ref, arg1, arg2) {
-  let closure_1;
-  let closure_2;
+    callback1(ref.current !== closure_3);
+  }, items3);
+  return callback1;
+}
+export function useTooltipHelper(ref, targetRef, callback) {
   let context;
   _require = ref;
-  importDefault = arg1;
-  dependencyMap = arg2;
+  importDefault = targetRef;
+  dependencyMap = callback;
   const tmp = useWindowDimensionsDefault();
   let closure_3 = tmp;
   let closure_4 = context.useRef(tmp);
@@ -353,13 +178,13 @@ function useTooltipHelper(ref, arg1, arg2) {
     current = current.current;
     return () => {
       if (null != current) {
-        context.remove(tmp);
+        context1.remove(tmp);
       }
       ref.current = null;
     };
   }, items);
-  const items1 = [context.surfaceRef, arg1, ref, arg2];
-  const callback = context.useCallback((arg0) => {
+  const items1 = [context.surfaceRef, targetRef, ref, callback];
+  callback = context.useCallback((arg0) => {
     function measureHelper(current) {
       return obj(...arguments);
     }
@@ -380,7 +205,7 @@ function useTooltipHelper(ref, arg1, arg2) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -399,10 +224,10 @@ function useTooltipHelper(ref, arg1, arg2) {
                   closure_3 = undefined;
                   closure_4 = undefined;
                   c4 = 1;
-                  const obj5 = closure_2_0(closure_2_2[11]);
+                  const obj5 = closure_2_0(closure_2_2[9]);
                   const measurements = obj5.getMeasurements(surfaceRef.surfaceRef, closure_2_0);
                   const items = [measurements, ];
-                  const obj6 = closure_2_0(closure_2_2[11]);
+                  const obj6 = closure_2_0(closure_2_2[9]);
                   items[1] = obj6.getMeasurements(closure_1, closure_2_0);
                   surfaceRef = 2;
                   ref2 = 1;
@@ -431,7 +256,7 @@ function useTooltipHelper(ref, arg1, arg2) {
                   c4 = 0;
                 }
                 ref2 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               closure_3 = tmp18;
@@ -447,7 +272,7 @@ function useTooltipHelper(ref, arg1, arg2) {
       });
       return obj(...arguments);
     };
-    obj = ref(closure_2[7]);
+    obj = ref(callback[5]);
     ref2.current = obj.v4();
     return measureHelper(ref2.current);
   }, items1);
@@ -455,15 +280,11 @@ function useTooltipHelper(ref, arg1, arg2) {
   const effect1 = context.useEffect(() => {
     if (ref.current !== closure_3) {
       if (null != ref.current) {
-        context.remove(tmp4.current);
+        context1.remove(tmp4.current);
       }
       tmp.current = tmp2;
     }
-    callback(ref.current !== closure_3);
+    callback1(ref.current !== closure_3);
   }, items2);
   return callback;
 }
-const result = size.fileFinishedImporting("design/components/Tooltip/native/useTooltip.native.tsx");
-
-export const useTooltip = tmp3;
-export { useTooltipHelper };

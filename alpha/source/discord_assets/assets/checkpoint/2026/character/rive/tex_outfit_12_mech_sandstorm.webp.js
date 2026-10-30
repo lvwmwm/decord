@@ -1,8 +1,8 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13532
+// Function ID: 13533
 // Dependencies: [2]
 
-// Module 13382
+// Module 13532
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_12_mech_sandstorm.webp.js");

@@ -1,23 +1,22 @@
-// Module ID: 11425
-// Function ID: 11426
+// Module ID: 11626
+// Function ID: 11627
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 8460, 5707, 1199, 11426, 1125, 5271, 5302, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5267, 5712, 8494, 1188, 11627, 5619, 1114, 2]
+// Exports: default
 
-// Module 11425 (PublicGuildAnnouncementProfile)
+// Module 11626 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8460 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11426 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8494 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11627 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -30,147 +29,10 @@ const View = react_native.View;
 let obj = { content: { padding: 16 }, avatar: size, nameWrapper: { flexDirection: "row", alignItems: "center" }, headerText: { marginLeft: 8 }, description: { marginTop: 8 } };
 size = { borderRadius: nativeDefault.radii.lg, height: 80, width: 80, marginVertical: 16 };
 let closure_6 = createStyles.createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildAnnouncementProfile() {
-  let avatar;
-  let content;
-  let first;
-  let items;
-  let items1;
-  let obj8;
-  let tmp11;
-  let tmp15;
-  let tmp17;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(22);
-  const tmp4 = closure_6();
-  ({ content, avatar } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = PublicGuildsUtils;
-    const publicSystemMessageAvatar = tmpResult.getPublicSystemMessageAvatar();
-    cResult[0] = publicSystemMessageAvatar;
-    first = publicSystemMessageAvatar;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.avatar) {
-    const obj2 = { style: avatar, source: first };
-    const tmp10 = React3(FastImageDefault, obj2);
-    cResult[1] = tmp4.avatar;
-    cResult[2] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const nameWrapper = tmp4.nameWrapper;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { source: AssetRegistryDefault, disableColor: true };
-    const Icon = tmp(1199).Icon;
-    const tmp14 = React3(Icon, obj3);
-    cResult[3] = tmp14;
-    tmp11 = tmp14;
-  } else {
-    tmp11 = cResult[3];
-  }
-  const headerText = tmp4.headerText;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.xfAlNx);
-    cResult[4] = stringResult;
-    tmp15 = stringResult;
-  } else {
-    tmp15 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.headerText) {
-    const obj4 = { style: headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: tmp15 };
-    const tmp19 = React3(Text_Text.Text, obj4);
-    cResult[5] = tmp4.headerText;
-    cResult[6] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[6];
-  }
-  if (cResult[7] === tmp4.nameWrapper) {
-    let tmp20;
-    let tmp22;
-    let tmp24;
-    let tmp27;
-    let tmp29;
-    if (cResult[8] === tmp17) {
-      tmp20 = cResult[9];
-    }
-    const _Symbol = Symbol;
-    const description = tmp4.description;
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(1125).intl;
-      const stringResult1 = intl2.string(intl4.t.BUZ0sl);
-      cResult[10] = stringResult1;
-      tmp22 = stringResult1;
-    } else {
-      tmp22 = cResult[10];
-    }
-    if (cResult[11] !== tmp4.description) {
-      const obj5 = { style: description, variant: "text-sm/medium", color: "text-default", children: tmp22 };
-      const tmp26 = React3(Text_Text.Text, obj5);
-      cResult[11] = tmp4.description;
-      cResult[12] = tmp26;
-      tmp24 = tmp26;
-    } else {
-      tmp24 = cResult[12];
-    }
-    const _Symbol2 = Symbol;
-    const description2 = tmp4.description;
-    if (cResult[13] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1125).intl;
-      const stringResult2 = intl3.string(intl4.t.w5beJH);
-      cResult[13] = stringResult2;
-      tmp27 = stringResult2;
-    } else {
-      tmp27 = cResult[13];
-    }
-    if (cResult[14] !== tmp4.description) {
-      const obj6 = { style: description2, variant: "text-sm/medium", color: "text-default", children: tmp27 };
-      const tmp31 = React3(Text_Text.Text, obj6);
-      cResult[14] = tmp4.description;
-      cResult[15] = tmp31;
-      tmp29 = tmp31;
-    } else {
-      tmp29 = cResult[15];
-    }
-    if (cResult[16] === tmp4.content) {
-      if (cResult[17] === tmp24) {
-        if (cResult[18] === tmp29) {
-          if (cResult[19] === tmp7) {
-            let tmp32;
-            if (cResult[20] === tmp20) {
-              tmp32 = cResult[21];
-            }
-            return tmp32;
-          }
-        }
-      }
-    }
-    const obj7 = { startExpanded: true, children: hasOwnProperty(View, obj8) };
-    obj8 = { style: content, children: items };
-    items = [tmp7, tmp20, tmp24, tmp29];
-    BottomSheet = tmp(5302).BottomSheet;
-    const tmp36 = React3(BottomSheet, obj7);
-    cResult[16] = tmp4.content;
-    cResult[17] = tmp24;
-    cResult[18] = tmp29;
-    cResult[19] = tmp7;
-    cResult[20] = tmp20;
-    cResult[21] = tmp36;
-    tmp32 = tmp36;
-  }
-  const obj9 = { style: nameWrapper, children: items1 };
-  items1 = [tmp11, tmp17];
-  const tmp21 = hasOwnProperty(View, obj9);
-  cResult[7] = tmp4.nameWrapper;
-  cResult[8] = tmp17;
-  cResult[9] = tmp21;
-  tmp20 = tmp21;
-}) : (function PublicGuildAnnouncementProfile() {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/public_guilds/native/components/PublicGuildAnnouncementProfile.tsx");
+
+export default function PublicGuildAnnouncementProfile() {
   let intl;
   let intl2;
   let intl3;
@@ -204,8 +66,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function PublicGuildA
   intl3 = intl4.intl;
   items[3] = React3(Text3, obj9);
   return React3(BottomSheet, obj);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/public_guilds/native/components/PublicGuildAnnouncementProfile.tsx");
-
-export default tmp4;
+};

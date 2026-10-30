@@ -1,15 +1,15 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 10746
+// Function ID: 10747
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 5005, 4833, 1415, 9413, 7287, 2]
+// Dependencies: [19, 21, 5009, 4834, 1410, 9430, 7294, 2]
 // Exports: default
 
-// Module 10723 (ActivityEmoji)
+// Module 10746 (ActivityEmoji)
 import Fragment from "Fragment" /* 21 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import EmojiDefault from "Emoji" /* 7287 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import EmojiDefault from "Emoji" /* 7294 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -33,7 +33,7 @@ export default function ActivityEmoji(emoji) {
   }
   importDefault = undefined;
   const tmp = closure_5();
-  const AnimateEmoji = emoji(4833).AnimateEmoji;
+  const AnimateEmoji = emoji(4834).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   const _Boolean = Boolean;
@@ -57,7 +57,7 @@ export default function ActivityEmoji(emoji) {
   if (null != emoji) {
     let tmp11;
     if (null == emoji) {
-      tmp11 = jsx(tmp2(9413).ReactionIcon, { style, size: "sm" });
+      tmp11 = jsx(tmp2(9430).ReactionIcon, { style, size: "sm" });
     } else {
       const items1 = [style, ];
       const size1 = { width: size, height: size };

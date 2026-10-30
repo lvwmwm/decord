@@ -1,24 +1,21 @@
-// Module ID: 19145
-// Function ID: 19146
+// Module ID: 19248
+// Function ID: 19249
 // Name: VoicePanelAnimatedButtonWrapper
-// Dependencies: [19, 17, 10974, 21, 5005, 587, 5086, 558, 576, 19014, 1381, 5284, 5243, 2]
+// Dependencies: [19, 17, 11204, 21, 5009, 575, 5090, 19148, 1376, 5632, 5249, 2]
+// Exports: default
 
-// Module 19145 (VoicePanelAnimatedButtonWrapper)
+// Module 19248 (VoicePanelAnimatedButtonWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import timing from "timing" /* 5243 */;
-import spring from "spring" /* 5284 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10974 */;
+import nativeDefault from "native" /* 575 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import timing from "timing" /* 5249 */;
+import spring from "spring" /* 5632 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11204 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 5086 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5090 */;
 import size_mod from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let importDefault, obj1, obj8, obj9;
 
 let obj2;
 const Pressable = react_native.Pressable;
@@ -28,272 +25,12 @@ let obj = { pressableWrapper: obj2 };
 obj2 = { justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.modules.button.BORDER_RADIUS_LG };
 let closure_6 = createStyles.createStyles(obj);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(Pressable);
-const __initData = { code: "function VoicePanelAnimatedButtonWrapperTsx1(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
-let closure_9 = { code: "function VoicePanelAnimatedButtonWrapperTsx2(values_0){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values_0.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values_0.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
-let closure_10 = { code: "function VoicePanelAnimatedButtonWrapperTsx3(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
-let closure_11 = { code: "function VoicePanelAnimatedButtonWrapperTsx4(values_0){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values_0.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values_0.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedButtonWrapper(arg0) {
-  let accessibilityHint;
-  let accessibilityLabel;
-  let children;
-  let closure_1;
-  let disabled;
-  let height;
-  let onLongPress;
-  let onPress;
-  let onPressIn;
-  let onPressOut;
-  let pressed;
-  let props;
-  let sharedValue;
-  let style;
-  let width;
-  let obj = pressed(sharedValue[8]);
-  const cResult = obj.c(33);
-  ({ props, onPress, onLongPress, onPressIn, onPressOut, accessibilityLabel, accessibilityHint, style, children, pressed, disabled } = arg0);
-  let obj2 = pressed(sharedValue[6]);
-  if (pressed == null) {
-    pressed = obj2.useSharedValue(false);
-  }
-  const tmp4 = require("useControlsLock")();
-  importDefault = tmp4;
-  const tmp5 = closure_6();
-  if (cResult[0] === tmp4) {
-    if (cResult[1] === onPressIn) {
-      let tmp6;
-      if (cResult[2] === pressed) {
-        tmp6 = cResult[3];
-      }
-      if (cResult[4] === tmp4) {
-        if (cResult[5] === onPressOut) {
-          let tmp8;
-          if (cResult[6] === pressed) {
-            tmp8 = cResult[7];
-          }
-          if (cResult[8] === tmp6) {
-            ({ width, height } = props);
-            const tmpResult = pressed(sharedValue[6]);
-            sharedValue = tmpResult.useSharedValue(0);
-            const tmpResult3 = pressed(sharedValue[10]);
-            if (!tmpResult3.isAndroid()) {
-              if (cResult[11] !== sharedValue) {
-                class W {
-                  constructor(arg0) {
-                    result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-                    obj = { initialValues: null, animations: null };
-                    obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-                    items = [];
-                    items[0] = { scale: 0.5 };
-                    obj1.transform = items;
-                    obj.initialValues = obj1;
-                    obj8 = { originX: null, opacity: null, transform: null };
-                    obj4 = closure_0(closure_2[11]);
-                    obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-                    obj5 = closure_0(closure_2[12]);
-                    obj8.opacity = obj5.withTiming(1, { duration: 100 });
-                    obj9 = { scale: null };
-                    obj7 = closure_0(closure_2[11]);
-                    obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-                    items1 = [];
-                    items1[0] = obj9;
-                    obj8.transform = items1;
-                    obj.animations = obj8;
-                    return obj;
-                  }
-                }
-                let obj3 = { offsetFromCenter: sharedValue, withSpring: pressed(sharedValue[11]).withSpring, MODE_CHANGE_PHYSICS, withTiming: pressed(sharedValue[12]).withTiming };
-                W.__closure = obj3;
-                W.__workletHash = 16238937246135;
-                W.__initData = __initData;
-                cResult[11] = sharedValue;
-                cResult[12] = W;
-              } else {
-                class W {
-                  constructor(arg0) {
-                    result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-                    obj = { initialValues: null, animations: null };
-                    obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-                    items = [];
-                    items[0] = { scale: 0.5 };
-                    obj1.transform = items;
-                    obj.initialValues = obj1;
-                    obj8 = { originX: null, opacity: null, transform: null };
-                    obj4 = closure_0(closure_2[11]);
-                    obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-                    obj5 = closure_0(closure_2[12]);
-                    obj8.opacity = obj5.withTiming(1, { duration: 100 });
-                    obj9 = { scale: null };
-                    obj7 = closure_0(closure_2[11]);
-                    obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-                    items1 = [];
-                    items1[0] = obj9;
-                    obj8.transform = items1;
-                    obj.animations = obj8;
-                    return obj;
-                  }
-                }
-              }
-            }
-            const tmpResult4 = pressed(sharedValue[10]);
-            if (!tmpResult4.isAndroid()) {
-              class W {
-                constructor(arg0) {
-                  result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-                  obj = { initialValues: null, animations: null };
-                  obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-                  items = [];
-                  items[0] = { scale: 0.5 };
-                  obj1.transform = items;
-                  obj.initialValues = obj1;
-                  obj8 = { originX: null, opacity: null, transform: null };
-                  obj4 = closure_0(closure_2[11]);
-                  obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-                  obj5 = closure_0(closure_2[12]);
-                  obj8.opacity = obj5.withTiming(1, { duration: 100 });
-                  obj9 = { scale: null };
-                  obj7 = closure_0(closure_2[11]);
-                  obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-                  items1 = [];
-                  items1[0] = obj9;
-                  obj8.transform = items1;
-                  obj.animations = obj8;
-                  return obj;
-                }
-              }
-            }
-            if (cResult[15] === height) {
-              class W {
-                constructor(arg0) {
-                  result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-                  obj = { initialValues: null, animations: null };
-                  obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-                  items = [];
-                  items[0] = { scale: 0.5 };
-                  obj1.transform = items;
-                  obj.initialValues = obj1;
-                  obj8 = { originX: null, opacity: null, transform: null };
-                  obj4 = closure_0(closure_2[11]);
-                  obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-                  obj5 = closure_0(closure_2[12]);
-                  obj8.opacity = obj5.withTiming(1, { duration: 100 });
-                  obj9 = { scale: null };
-                  obj7 = closure_0(closure_2[11]);
-                  obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-                  items1 = [];
-                  items1[0] = obj9;
-                  obj8.transform = items1;
-                  obj.animations = obj8;
-                  return obj;
-                }
-              }
-              if (cResult[18] === style) {
-                class W {
-                  constructor(arg0) {
-                    result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-                    obj = { initialValues: null, animations: null };
-                    obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-                    items = [];
-                    items[0] = { scale: 0.5 };
-                    obj1.transform = items;
-                    obj.initialValues = obj1;
-                    obj8 = { originX: null, opacity: null, transform: null };
-                    obj4 = closure_0(closure_2[11]);
-                    obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-                    obj5 = closure_0(closure_2[12]);
-                    obj8.opacity = obj5.withTiming(1, { duration: 100 });
-                    obj9 = { scale: null };
-                    obj7 = closure_0(closure_2[11]);
-                    obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-                    items1 = [];
-                    items1[0] = obj9;
-                    obj8.transform = items1;
-                    obj.animations = obj8;
-                    return obj;
-                  }
-                }
-              }
-              let items = [tmp5.pressableWrapper, tmp18, style];
-              cResult[18] = style;
-              cResult[19] = tmp5.pressableWrapper;
-              cResult[20] = tmp18;
-              cResult[21] = items;
-            }
-            size = { width, height };
-            cResult[15] = height;
-            cResult[16] = width;
-            cResult[17] = size;
-          }
-          let obj4 = { onPressIn: tmp6, onPressOut: tmp8 };
-          cResult[8] = tmp6;
-          cResult[9] = tmp8;
-          cResult[10] = obj4;
-        }
-      }
-      if (onPressOut == null) {
-        class W {
-          constructor(arg0) {
-            result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-            obj = { initialValues: null, animations: null };
-            obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-            items = [];
-            items[0] = { scale: 0.5 };
-            obj1.transform = items;
-            obj.initialValues = obj1;
-            obj8 = { originX: null, opacity: null, transform: null };
-            obj4 = closure_0(closure_2[11]);
-            obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-            obj5 = closure_0(closure_2[12]);
-            obj8.opacity = obj5.withTiming(1, { duration: 100 });
-            obj9 = { scale: null };
-            obj7 = closure_0(closure_2[11]);
-            obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-            items1 = [];
-            items1[0] = obj9;
-            obj8.transform = items1;
-            obj.animations = obj8;
-            return obj;
-          }
-        }
-      }
-      cResult[4] = tmp4;
-      cResult[5] = onPressOut;
-      cResult[6] = pressed;
-      cResult[7] = onPressOut;
-      tmp8 = tmp9;
-    }
-  }
-  if (onPressIn == null) {
-    class W {
-      constructor(arg0) {
-        result = closure_2.set(arg0.windowWidth / 2 - arg0.targetGlobalOriginX - arg0.targetWidth / 2);
-        obj = { initialValues: null, animations: null };
-        obj1 = { originX: arg0.targetOriginX + closure_2.get(), opacity: 0, transform: null };
-        items = [];
-        items[0] = { scale: 0.5 };
-        obj1.transform = items;
-        obj.initialValues = obj1;
-        obj8 = { originX: null, opacity: null, transform: null };
-        obj4 = closure_0(closure_2[11]);
-        obj8.originX = obj4.withSpring(arg0.targetOriginX, MODE_CHANGE_PHYSICS);
-        obj5 = closure_0(closure_2[12]);
-        obj8.opacity = obj5.withTiming(1, { duration: 100 });
-        obj9 = { scale: null };
-        obj7 = closure_0(closure_2[11]);
-        obj9.scale = obj7.withSpring(1, MODE_CHANGE_PHYSICS);
-        items1 = [];
-        items1[0] = obj9;
-        obj8.transform = items1;
-        obj.animations = obj8;
-        return obj;
-      }
-    }
-  }
-  cResult[0] = tmp4;
-  cResult[1] = onPressIn;
-  cResult[2] = pressed;
-  cResult[3] = onPressIn;
-  tmp6 = tmp7;
-}) : (function AnimatedButtonWrapper(onPressOut) {
+let closure_8 = { code: "function VoicePanelAnimatedButtonWrapperTsx1(values){const{offsetFromCenter,withSpring,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;offsetFromCenter.set(values.windowWidth/2-values.targetGlobalOriginX-values.targetWidth/2);return{initialValues:{originX:values.targetOriginX+offsetFromCenter.get(),opacity:0,transform:[{scale:0.5}]},animations:{originX:withSpring(values.targetOriginX,MODE_CHANGE_PHYSICS),opacity:withTiming(1,{duration:100}),transform:[{scale:withSpring(1,MODE_CHANGE_PHYSICS)}]}};}" };
+let closure_9 = { code: "function VoicePanelAnimatedButtonWrapperTsx2(values){const{withSpring,offsetFromCenter,MODE_CHANGE_PHYSICS,withTiming}=this.__closure;return{initialValues:{originX:values.currentOriginX,opacity:1,transform:[{scale:1}]},animations:{originX:withSpring(values.currentOriginX+offsetFromCenter.get(),MODE_CHANGE_PHYSICS),opacity:withTiming(0,{duration:100}),transform:[{scale:withSpring(0.5,MODE_CHANGE_PHYSICS)}]}};}" };
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx");
+
+export default function AnimatedButtonWrapper(onPressOut) {
   let accessibilityHint;
   let accessibilityLabel;
   let children;
@@ -318,7 +55,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedBu
   if (pressed == null) {
     pressed = obj.useSharedValue(false);
   }
-  const tmp3 = onPressOut(style[9])();
+  const tmp3 = onPressOut(style[7])();
   closure_4 = tmp3;
   const tmp4 = width();
   jsx = tmp4;
@@ -359,21 +96,21 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedBu
         let obj4;
         let obj5;
         let obj7;
-        const result = sharedValue.set(windowWidth.windowWidth / 2 - windowWidth.targetGlobalOriginX - windowWidth.targetWidth / 2);
+        const result = __initData.set(windowWidth.windowWidth / 2 - windowWidth.targetGlobalOriginX - windowWidth.targetWidth / 2);
         const obj = { initialValues: obj2, animations: obj3 };
-        obj2 = { originX: windowWidth.targetOriginX + sharedValue.get(), opacity: 0, transform: items };
+        obj2 = { originX: windowWidth.targetOriginX + __initData.get(), opacity: 0, transform: items };
         items = [{ scale: 0.5 }];
         obj3 = { originX: obj4.withSpring(windowWidth.targetOriginX, closure_4), opacity: obj5.withTiming(1, { duration: 100 }), transform: items1 };
-        obj4 = onPressIn(style[11]);
-        obj5 = onPressIn(style[12]);
+        obj4 = onPressIn(style[9]);
+        obj5 = onPressIn(style[10]);
         const obj6 = { scale: obj7.withSpring(1, closure_4) };
         items1 = [obj6];
-        obj7 = onPressIn(style[11]);
+        obj7 = onPressIn(style[9]);
         return obj;
       };
       let obj2 = { offsetFromCenter: sharedValue, withSpring: spring.withSpring, MODE_CHANGE_PHYSICS, withTiming: timing.withTiming };
       fn.__closure = obj2;
-      fn.__workletHash = 6215568626677;
+      fn.__workletHash = 16238937246135;
       fn.__initData = __initData;
       return fn;
     }
@@ -393,17 +130,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedBu
         const obj = { initialValues: obj2, animations: obj3 };
         obj2 = { originX: currentOriginX.currentOriginX, opacity: 1, transform: items };
         items = [{ scale: 1 }];
-        obj3 = { originX: obj4.withSpring(currentOriginX.currentOriginX + sharedValue.get(), closure_4), opacity: obj5.withTiming(0, { duration: 100 }), transform: items1 };
-        obj4 = onPressIn(style[11]);
-        obj5 = onPressIn(style[12]);
+        obj3 = { originX: obj4.withSpring(currentOriginX.currentOriginX + __initData.get(), closure_4), opacity: obj5.withTiming(0, { duration: 100 }), transform: items1 };
+        obj4 = onPressIn(style[9]);
+        obj5 = onPressIn(style[10]);
         const obj6 = { scale: obj7.withSpring(0.5, closure_4) };
         items1 = [obj6];
-        obj7 = onPressIn(style[11]);
+        obj7 = onPressIn(style[9]);
         return obj;
       };
       let obj2 = { withSpring: spring.withSpring, offsetFromCenter: sharedValue, MODE_CHANGE_PHYSICS, withTiming: timing.withTiming };
       fn.__closure = obj2;
-      fn.__workletHash = 7809254653734;
+      fn.__workletHash = 17504057367727;
       fn.__initData = __initData2;
       return fn;
     }
@@ -417,8 +154,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function AnimatedBu
   }, items3);
   const merged = Object.assign(memo);
   return <height entering={memo1} exiting={memo2} onPress={onPress} onLongPress={onLongPress} disabled={disabled} accessibilityRole="button" accessibilityLabel={accessibilityLabel} accessibilityHint={accessibilityHint} style={memo3}>{children}</height>;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelAnimatedButtonWrapper.tsx");
-
-export default tmp2;
+};

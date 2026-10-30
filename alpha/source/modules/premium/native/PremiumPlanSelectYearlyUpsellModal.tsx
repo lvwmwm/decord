@@ -1,25 +1,25 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15400
+// Function ID: 15401
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2066, 7582, 15347, 1391, 1095, 21, 5005, 6710, 6765, 558, 576, 7577, 504, 1901, 5707, 15361, 1199, 1125, 5281, 6018, 2051, 2]
+// Dependencies: [32, 19, 17, 2063, 7590, 15387, 1386, 1083, 21, 5009, 6717, 6772, 7585, 504, 1896, 6025, 5712, 15401, 1188, 1114, 2048, 5629, 2]
+// Exports: default
 
-// Module 15360 (PremiumPlanSelectYearlyUpsellModal)
+// Module 15400 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1095 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import AlertDefault from "Alert" /* 6018 */;
-import TextStylesDefault from "TextStyles" /* 6710 */;
-import LegacyTokens from "LegacyTokens" /* 6765 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15347 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15361 */;
+import Constants from "Constants" /* 1083 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import AlertDefault from "Alert" /* 6025 */;
+import TextStylesDefault from "TextStyles" /* 6717 */;
+import LegacyTokens from "LegacyTokens" /* 6772 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15387 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15401 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import IAPStore from "IAPStore" /* 7582 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import IAPStore from "IAPStore" /* 7590 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -40,198 +40,9 @@ createStyles = createStyles.createStyles;
 const merged = Object.assign(TextStylesDefault(Fonts.DISPLAY_EXTRABOLD, undefined, 24));
 obj3 = { alignSelf: "center", textAlign: "center", paddingBottom: 32, color: LegacyTokens.DARK_WHITE_500_LIGHT_BLACK_500 };
 let closure_12 = createStyles(obj);
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanSelectYearlyUpsellModal(continueWithDefault) {
-  let closure_4;
-  let continueWithUpsell;
-  let first;
-  let locale;
-  let onClose;
-  let orderPriceString;
-  let productId;
-  let tmp10;
-  let tmp11;
-  let tmp14;
-  let tmp = productId;
-  const obj = productId(continueWithDefault[13]);
-  const cResult = obj.c(43);
-  ({ onClose, productId } = continueWithDefault);
-  ({ orderPriceString, continueWithUpsell } = continueWithDefault);
-  continueWithDefault = continueWithDefault.continueWithDefault;
-  const tmp4 = closure_12();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p(isPurchasing) {
-      return isPurchasing.isPurchasing;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  usePremiumPlanSelectStore(first);
-  const tmp8 = _slicedToArray(react.useState(null), 2);
-  [r10034, _slicedToArray] = tmp8;
-  const tmpResult = tmp(continueWithDefault[14]);
-  const premiumBundledItemsFromProductId = tmpResult.getPremiumBundledItemsFromProductId(productId);
-  const obj2 = react;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [LocaleStore];
-    class I {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    cResult[1] = items;
-    cResult[2] = I;
-    tmp11 = I;
-    tmp10 = items;
-  } else {
-    tmp10 = cResult[1];
-    tmp11 = cResult[2];
-  }
-  const tmpResult3 = tmp(continueWithDefault[15]);
-  const stateFromStores = tmpResult3.useStateFromStores(tmp10, tmp11);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [IAPStore];
-    class I {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    cResult[3] = items1;
-    tmp14 = items1;
-  } else {
-    tmp14 = cResult[3];
-  }
-  if (cResult[4] !== productId) {
-    class Y {
-      constructor() {
-        const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-        return items;
-      }
-    }
-    cResult[4] = productId;
-    class I {
-      constructor() {
-        return locale.locale;
-      }
-    }
-    cResult[5] = Y;
-  } else {
-    class Y {
-      constructor() {
-        const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-        return items;
-      }
-    }
-  }
-  const tmpResult4 = tmp(continueWithDefault[15]);
-  const first1 = tmp7(tmpResult4.useStateFromStoresArray(tmp14, tmp16), 2)[0];
-  const premiumTier = premiumBundledItemsFromProductId.premiumTier;
-  _slicedToArray(tmpResult4.useStateFromStoresArray(tmp14, tmp16), 2);
-  if (orderPriceString == null) {
-    class Y {
-      constructor() {
-        const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-        return items;
-      }
-    }
-    if (first1 != null) {
-      class Y {
-        constructor() {
-          const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-          return items;
-        }
-      }
-    }
-    orderPriceString = tmp19;
-  }
-  react = tmp20;
-  if (cResult[6] === continueWithDefault) {
-    class Y {
-      constructor() {
-        const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-        return items;
-      }
-    }
-    const effect = obj2.useEffect(K);
-    if (null == premiumTier || null == orderPriceString) {
-      class Y {
-        constructor() {
-          const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-          return items;
-        }
-      }
-    } else {
-      class Y {
-        constructor() {
-          const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-          return items;
-        }
-      }
-      class I {
-        constructor() {
-          return locale.locale;
-        }
-      }
-      const container = tmp4.container;
-      if (cResult[9] !== tmp4.image) {
-        class Y {
-          constructor() {
-            const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-            return items;
-          }
-        }
-        const obj3 = { style: null, source: continueWithUpsell(continueWithDefault[18]) };
-        class I {
-          constructor() {
-            return locale.locale;
-          }
-        }
-        const tmp26 = continueWithUpsell(continueWithDefault[17]);
-        cResult[9] = tmp4.image;
-        cResult[10] = closure_10(tmp26, obj3);
-        const tmp27 = closure_10(tmp26, obj3);
-      } else {
-        class Y {
-          constructor() {
-            const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-            return items;
-          }
-        }
-      }
-      const LegacyText = tmp(tmp2[19]).LegacyText;
-      const description = tmp4.description;
-      const intl = tmp(tmp2[20]).intl;
-      const obj4 = { discountPercentage: tmp23 };
-      const formatResult = intl.format(tmp(continueWithDefault[20]).t["7chOVL"], obj4);
-      if (cResult[11] === LegacyText) {
-        class Y {
-          constructor() {
-            const items = [IAPStore.getProduct(productId), IAPStore.isBusy()];
-            return items;
-          }
-        }
-      }
-      const obj5 = { style: description, children: formatResult };
-      cResult[11] = LegacyText;
-      cResult[12] = tmp4.description;
-      cResult[13] = formatResult;
-      cResult[14] = closure_10(LegacyText, obj5);
-      const tmp31 = closure_10(LegacyText, obj5);
-    }
-  }
-  class K {
-    constructor() {
-      const tmp = closure_4;
-      if (tmp) {
-        continueWithDefault();
-      }
-    }
-  }
-  cResult[6] = continueWithDefault;
-  cResult[7] = null == premiumTier || null == orderPriceString;
-  cResult[8] = K;
-}) : (function PremiumPlanSelectYearlyUpsellModal(arg0) {
+const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");
+
+export default function PremiumPlanSelectYearlyUpsellModal(arg0) {
   let Button;
   let Button2;
   let Button3;
@@ -266,7 +77,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7577);
+  const obj2 = productId(7585);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);
@@ -297,7 +108,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   if (null == premiumTier || null == orderPriceString) {
     return null;
   } else {
-    const tmp5Result = productId(1901);
+    const tmp5Result = productId(1896);
     const formatPercentResult = tmp5Result.formatPercent(stateFromStores, closure_9 / 100);
     const obj5 = { onClose, noDefaultButtons: true, children: closure_11(View, obj6) };
     obj6 = { style: tmp.container, children: items2 };
@@ -306,22 +117,22 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
     const tmp22 = FastImageDefault;
     items2 = [closure_10(tmp22, obj7), , , , , ];
     const obj8 = { style: tmp.header, accessibilityRole: "header", children: format(LQCVfK, obj9) };
-    const LegacyText = tmp5(1199).LegacyText;
-    const intl = tmp5(1125).intl;
+    const LegacyText = tmp5(1188).LegacyText;
+    const intl = tmp5(1114).intl;
     format = intl.format;
     obj9 = { discountPercentage: formatPercentResult, planName: tmp5Result2.getPremiumTypeDisplayName(premiumTier) };
-    LQCVfK = tmp5(1125).t.LQCVfK;
-    tmp5Result2 = productId(2051);
+    LQCVfK = tmp5(1114).t.LQCVfK;
+    tmp5Result2 = productId(2048);
     items2[1] = closure_10(LegacyText, obj8);
-    const obj10 = { style: tmp.description, children: intl2.format(productId(1125).t["7chOVL"], obj11) };
-    const LegacyText2 = tmp5(1199).LegacyText;
-    intl2 = tmp5(1125).intl;
+    const obj10 = { style: tmp.description, children: intl2.format(productId(1114).t["7chOVL"], obj11) };
+    const LegacyText2 = tmp5(1188).LegacyText;
+    intl2 = tmp5(1114).intl;
     obj11 = { discountPercentage: formatPercentResult };
     items2[2] = closure_10(LegacyText2, obj10);
     const obj12 = { style: tmp.upsellButton, children: closure_10(Button, obj13) };
     obj13 = {
       variant: "active",
-      text: intl3.formatToPlainString(productId(1125).t.Qvq6GE, obj14),
+      text: intl3.formatToPlainString(productId(1114).t.Qvq6GE, obj14),
       onPress() {
           _undefined("upsell");
           importDefault();
@@ -329,14 +140,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5281).Button;
-    intl3 = tmp5(1125).intl;
+    Button = tmp5(5629).Button;
+    intl3 = tmp5(1114).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
     const obj15 = { style: tmp.continueButton, children: closure_10(Button2, obj16) };
     obj16 = {
       variant: "secondary",
-      text: intl4.string(productId(1125).t.YwEyQM),
+      text: intl4.string(productId(1114).t.YwEyQM),
       onPress() {
           _undefined("default");
           dependencyMap();
@@ -344,17 +155,14 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5281).Button;
-    intl4 = tmp5(1125).intl;
+    Button2 = tmp5(5629).Button;
+    intl4 = tmp5(1114).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
-    obj18 = { variant: "tertiary", text: intl5.string(productId(1125).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5281).Button;
-    intl5 = tmp5(1125).intl;
+    obj18 = { variant: "tertiary", text: intl5.string(productId(1114).t.cpT0Cq), onPress: onClose };
+    Button3 = tmp5(5629).Button;
+    intl5 = tmp5(1114).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);
   }
-});
-const result = size.fileFinishedImporting("modules/premium/native/PremiumPlanSelectYearlyUpsellModal.tsx");
-
-export default tmp5;
+};

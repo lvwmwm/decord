@@ -1,14 +1,14 @@
-// Module ID: 6716
-// Function ID: 6717
+// Module ID: 6723
+// Function ID: 6724
 // Name: AgeVerificationAnalyticsUtils
-// Dependencies: [4857, 1084, 1264, 2, 6717]
+// Dependencies: [4858, 1072, 1253, 2, 6724]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 6716 (AgeVerificationAnalyticsUtils)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 6717 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+// Module 6723 (AgeVerificationAnalyticsUtils)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NsfwSpaceWarningModalType from "NsfwSpaceWarningModalType" /* 6724 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -26,9 +26,9 @@ export function trackAgeVerificationModalViewed(memo, EXPRESSIVE_PRIMARY, entryP
   const obj2 = { modal_session_id: memo, modal_version: EXPRESSIVE_PRIMARY, entry_point: entryPoint };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_VIEWED, obj2);
 }
-export function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_PRIMARY, METHOD_SELECT, GOOGLE_WALLET) {
+export function trackAgeVerificationModalClicked(modalSessionId, EXPRESSIVE_V2, METHOD_SELECT, GOOGLE_WALLET) {
   const obj = AnalyticsUtilsDefault;
-  const obj2 = { modal_session_id: modalSessionId, modal_version: EXPRESSIVE_PRIMARY, cta: METHOD_SELECT, method: GOOGLE_WALLET };
+  const obj2 = { modal_session_id: modalSessionId, modal_version: EXPRESSIVE_V2, cta: METHOD_SELECT, method: GOOGLE_WALLET };
   obj.track(AnalyticEvents.AGE_VERIFICATION_MODAL_CLICKED, obj2);
 }
 export function trackAgeVerificationDmClicked(CONNECT_TO_TEEN, channelId) {

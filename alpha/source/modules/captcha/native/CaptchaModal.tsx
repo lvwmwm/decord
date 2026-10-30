@@ -1,25 +1,25 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 19306
+// Function ID: 19307
 // Name: CaptchaModal
-// Dependencies: [19, 17, 17874, 17875, 21, 5005, 558, 576, 7097, 1504, 19246, 6525, 19247, 17882, 19250, 1125, 5271, 5281, 5302, 6015, 2]
+// Dependencies: [19, 17, 17933, 17934, 21, 5009, 7105, 1499, 19307, 5267, 6022, 19308, 5619, 1114, 5629, 6532, 19312, 17941, 2]
+// Exports: default
 
-// Module 19245 (CaptchaModal)
-import intl4 from "intl" /* 1125 */;
-import Link from "Link" /* 1504 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6525 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17874 */;
-import RegistrationUtils from "RegistrationUtils" /* 17882 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 19247 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 19250 */;
+// Module 19306 (CaptchaModal)
+import intl4 from "intl" /* 1114 */;
+import Link from "Link" /* 1499 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6532 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17933 */;
+import RegistrationUtils from "RegistrationUtils" /* 17941 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 19308 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 19312 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 17875 */;
+import RegistrationConstants from "RegistrationConstants" /* 17934 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet, navigation;
@@ -42,141 +42,9 @@ let closure_11 = createStyles.createStyles((arg0) => {
   }
   return { contentContainer: { alignItems: "center", paddingVertical: 8, paddingHorizontal: num }, description: { paddingBottom: 12, paddingTop: 4 } };
 });
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaModal(onCaptchaVerify) {
-  let bodyText;
-  let close;
-  let headerText;
-  let rqdata;
-  let tmp = close;
-  let obj = onCaptchaVerify(close[7]);
-  const cResult = obj.c(36);
-  onCaptchaVerify = onCaptchaVerify.onCaptchaVerify;
-  const onReject = onCaptchaVerify.onReject;
-  close = onCaptchaVerify.close;
-  const sitekey = onCaptchaVerify.sitekey;
-  const captchaService = onCaptchaVerify.captchaService;
-  ({ headerText, bodyText, rqdata } = onCaptchaVerify);
-  const rqtoken = onCaptchaVerify.rqtoken;
-  const userflow = onCaptchaVerify.userflow;
-  let tmp4 = closure_11(onReject(close[8])());
-  let obj2 = onCaptchaVerify(close[9]);
-  navigation = obj2.useNavigation();
-  let state = navigation.getState();
-  let name;
-  const tmp3 = onReject;
-  if (state != null) {
-    let first = state.routes[0];
-    if (first != null) {
-      name = first.name;
-    }
-  }
-  let str = "Guild Join Captcha";
-  if ("auth" === name) {
-    str = "Guild Join Captcha";
-    if (rqtoken()) {
-      str = "User Registration Captcha";
-    }
-  }
-  if (cResult[0] === str) {
-    let tmp9;
-    let tmp13;
-    let tmp12;
-    if (cResult[1] === onReject) {
-      tmp9 = cResult[2];
-    }
-    const tmp10 = tmp3(tmp[10])(tmp9);
-    let closure_9 = tmp10;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      class B {
-        constructor() {
-          captchaService.dismiss();
-        }
-      }
-      const items = [];
-      cResult[3] = B;
-      cResult[4] = items;
-      tmp13 = items;
-      tmp12 = B;
-    } else {
-      class B {
-        constructor() {
-          captchaService.dismiss();
-        }
-      }
-      tmp13 = cResult[4];
-    }
-    const effect = sitekey.useEffect(tmp12, tmp13);
-    if (cResult[5] === captchaService) {
-      class B {
-        constructor() {
-          captchaService.dismiss();
-        }
-      }
-    }
-    function handleShowCaptcha() {
-      const tmp = closure_9();
-      close();
-      let obj = SharedCaptchaUtils;
-      const result = obj.emitCaptchaDistributionMetric(userflow);
-      let obj2 = CaptchaUtilsDefault;
-      const showCaptchaResult = obj2.showCaptcha(captchaService, sitekey, rqdata);
-      const nextPromise = showCaptchaResult.then((result) => {
-        const obj = state;
-        state = state.getState();
-        let name;
-        if (state != null) {
-          const first = state.routes[0];
-          if (first != null) {
-            name = first.name;
-          }
-        }
-        const tmp4 = "auth" === name && rqtoken();
-        if (tmp4) {
-          const obj3 = { step: userflow.CAPTCHA, actionType: navigation.SUBMITTED };
-          const obj2 = onCaptchaVerify(close[13]);
-          obj2.trackRegTransition(obj3);
-        }
-        closure_1_0(result, closure_1_6);
-        const state1 = obj.getState();
-        let name1;
-        if (state1 != null) {
-          const first1 = state1.routes[0];
-          if (first1 != null) {
-            name1 = first1.name;
-          }
-        }
-        const tmp15 = "auth" === name1 && rqtoken();
-        if (tmp15) {
-          const obj5 = { step: userflow.CAPTCHA, actionType: navigation.SUCCESS };
-          const obj4 = onCaptchaVerify(close[13]);
-          obj4.trackRegTransition(obj5);
-        }
-      });
-      nextPromise.catch((error) => {
-        if (onReject != null) {
-          tmp(error);
-        }
-      });
-    }
-    cResult[5] = captchaService;
-    cResult[6] = close;
-    cResult[7] = navigation;
-    cResult[8] = tmp10;
-    cResult[9] = onCaptchaVerify;
-    cResult[10] = onReject;
-    cResult[11] = rqdata;
-    cResult[12] = rqtoken;
-    cResult[13] = sitekey;
-    cResult[14] = userflow;
-    cResult[15] = handleShowCaptcha;
-  }
-  let obj3 = { onReject, analyticsType: str };
-  cResult[0] = str;
-  cResult[1] = onReject;
-  cResult[2] = obj3;
-  tmp9 = obj3;
-}) : (function CaptchaModal(arg0) {
+let result = size.fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
+
+export default function CaptchaModal(arg0) {
   let bodyText;
   let closure_4;
   let closure_5;
@@ -188,7 +56,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let tmp = dependencyMap;
-  const tmp2 = closure_11(onReject(7097)());
+  const tmp2 = closure_11(onReject(7105)());
   let obj = Link;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -210,7 +78,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     }
     return str;
   }, items);
-  let closure_9 = onReject(19246)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(19307)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);
@@ -221,15 +89,15 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
   const Text = Text_Text.Text;
   const tmp9 = closure_5;
   if (headerText == null) {
-    const intl = tmp3(1125).intl;
-    headerText = intl.string(tmp3(1125).t.FpoiHe);
+    const intl = tmp3(1114).intl;
+    headerText = intl.string(tmp3(1114).t.FpoiHe);
   }
   const items2 = [tmp7(Text, { variant: "heading-xl/bold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
-  const Text2 = tmp3(5271).Text;
+  const Text2 = tmp3(5619).Text;
   if (bodyText == null) {
-    const intl2 = tmp3(1125).intl;
-    bodyText = intl2.string(tmp3(1125).t["/CidxO"]);
+    const intl2 = tmp3(1114).intl;
+    bodyText = intl2.string(tmp3(1114).t["/CidxO"]);
   }
   let obj4 = { startHeight: 900, startExpanded: true, children: tmp8(Stack, obj2) };
   let obj5 = { children: items2 };
@@ -284,11 +152,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function CaptchaMod
     },
     text: intl3.string(intl4.t["cY+Oob"])
   };
-  const Button = tmp3(5281).Button;
-  intl3 = tmp3(1125).intl;
+  const Button = tmp3(5629).Button;
+  intl3 = tmp3(1114).intl;
   items1[2] = closure_9(Button, obj6);
   return closure_9(BottomSheet, obj4);
-});
-let result = size.fileFinishedImporting("modules/captcha/native/CaptchaModal.tsx");
-
-export default tmp5;
+};

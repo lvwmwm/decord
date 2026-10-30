@@ -1,23 +1,23 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18309
+// Function ID: 18310
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 6759, 18251, 21, 5005, 5906, 5630, 5247, 18252, 2000, 587, 6015, 7068, 1125, 7047, 6963, 1102, 16344, 6984, 558, 576, 504, 18249, 7155, 2]
+// Dependencies: [32, 19, 17, 6766, 18310, 21, 5009, 5913, 5602, 5253, 18311, 1995, 575, 6022, 7076, 1114, 7054, 6969, 1091, 16397, 6992, 504, 18308, 7163, 2]
+// Exports: default
 
-// Module 18250 (GuildsBarFolderSettingsModal)
-import intl5 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5906 */;
-import NavigatorHeader from "NavigatorHeader" /* 6984 */;
-import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 18249 */;
+// Module 18309 (GuildsBarFolderSettingsModal)
+import intl5 from "intl" /* 1114 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5913 */;
+import NavigatorHeader from "NavigatorHeader" /* 6992 */;
+import GuildsBarFolderSettingsModalActionCreators from "GuildsBarFolderSettingsModalActionCreators" /* 18308 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedGuildStore from "SortedGuildStore" /* 6759 */;
-import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 18251 */;
+import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import GuildsBarConstants from "guilds_bar/GuildsBarConstants" /* 18310 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let closure_2;
@@ -28,11 +28,6 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let unpackModuleId;
-function render() {
-  obj = {};
-  const merged = Object.assign(obj);
-  return closure_2_10(closure_2_13, obj);
-}
 function GuildFolderSettingsScene(color) {
   let Stack;
   let int2hexResult;
@@ -54,43 +49,43 @@ function GuildFolderSettingsScene(color) {
   let tmp3 = dependencyMap;
   const tmp2 = onColorChange;
   const items = [color, onColorChange];
-  const insets = onColorChange(5630)().insets;
+  const insets = onColorChange(5602)().insets;
   let obj = { style: tmp.scrollView, keyboardShouldPersistTaps: "always", contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, contentContainerStyle: obj2, children: tmp7(Stack, obj3) };
-  obj2 = { padding: onColorChange(587).space.PX_16, paddingBottom: 38 + insets.bottom };
+  obj2 = { padding: onColorChange(575).space.PX_16, paddingBottom: 38 + insets.bottom };
   const callback = react.useCallback(() => {
     hasOwnProperty.dismiss();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let tmp4 = color;
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(18252, dependencyMap.paths);
+    const tmp3 = asyncRequire(18311, dependencyMap.paths);
     if (color == null) {
       tmp4 = metroImportAll;
     }
     const obj = { color: tmp4, defaultColor: metroImportAll, onSelect: onColorChange };
     openLazy(tmp3, "RoleColorPicker", obj);
   }, items);
-  obj3 = { spacing: onColorChange(587).space.PX_16, children: items1 };
-  Stack = color(6015).Stack;
-  const obj4 = { label: intl.string(color(1125).t.tGRbjA), placeholder: intl2.string(color(1125).t.xV9hVh), value: name, onChange: onNameChange, maxLength: 32, autoFocus: true, clearable: true };
-  const TextInput = color(7068).TextInput;
-  intl = color(1125).intl;
-  intl2 = color(1125).intl;
+  obj3 = { spacing: onColorChange(575).space.PX_16, children: items1 };
+  Stack = color(6022).Stack;
+  const obj4 = { label: intl.string(color(1114).t.tGRbjA), placeholder: intl2.string(color(1114).t.xV9hVh), value: name, onChange: onNameChange, maxLength: 32, autoFocus: true, clearable: true };
+  const TextInput = color(7076).TextInput;
+  intl = color(1114).intl;
+  intl2 = color(1114).intl;
   items1 = [closure_10(TextInput, obj4), ];
-  const TableRowGroup = color(7047).TableRowGroup;
-  const obj5 = { label: intl3.string(color(1125).t.xpurRF), subLabel: int2hexResult, onPress: callback, arrow: true, trailing: closure_10(tmp2Result, obj7) };
-  const TableRow = color(6963).TableRow;
-  intl3 = color(1125).intl;
+  const TableRowGroup = color(7054).TableRowGroup;
+  const obj5 = { label: intl3.string(color(1114).t.xpurRF), subLabel: int2hexResult, onPress: callback, arrow: true, trailing: closure_10(tmp2Result, obj7) };
+  const TableRow = color(6969).TableRow;
+  intl3 = color(1114).intl;
   const tmp6 = closure_6;
   tmp7 = closure_11;
   if (null != color) {
-    const tmp8Result = color(1102);
+    const tmp8Result = color(1091);
     int2hexResult = tmp8Result.int2hex(color);
   } else {
-    const intl4 = tmp8(1125).intl;
-    int2hexResult = intl4.string(tmp8(1125).t.bBvAEH);
+    const intl4 = tmp8(1114).intl;
+    int2hexResult = intl4.string(tmp8(1114).t.bBvAEH);
   }
   let tmp11 = color;
-  tmp2Result = tmp2(16344);
+  tmp2Result = tmp2(16397);
   if (color == null) {
     tmp11 = closure_8;
   }
@@ -105,177 +100,9 @@ let react = react_mod;
 ({ jsx: c10, jsxs: unpackModuleId } = Fragment);
 let closure_12 = createStyles.createStyles({ scrollView: { flex: 1 }, colorBlock: { marginHorizontal: 0, marginVertical: 0, minWidth: 24, height: 24, borderRadius: 3 } });
 let c14 = "Folder Settings";
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolderSettingsModal(folderId) {
-  let closure_4;
-  let first;
-  let first2;
-  let headerTextButton;
-  let initialFolderColor;
-  let initialFolderName;
-  let intl;
-  let tmp6;
-  let tmp7;
-  let tmpResult2;
-  const tmp = folderId;
-  let obj = folderId(576);
-  const cResult = obj.c(18);
-  folderId = folderId.folderId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SortedGuildStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== folderId) {
-    const fn = function s() {
-      let folderColor;
-      let tmp3;
-      const guildFolderById = SortedGuildStore.getGuildFolderById(folderId);
-      let folderName;
-      if (guildFolderById != null) {
-        folderName = guildFolderById.folderName;
-      }
-      let str = "";
-      if (null != folderName) {
-        str = guildFolderById.folderName;
-      }
-      const obj = { initialFolderName: str, initialFolderColor: tmp3(folderColor) };
-      folderColor = undefined;
-      tmp3 = React4;
-      if (guildFolderById != null) {
-        folderColor = guildFolderById.folderColor;
-      }
-      return obj;
-    };
-    const items1 = [folderId];
-    cResult[1] = folderId;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(first, tmp6, tmp7);
-  ({ initialFolderName, initialFolderColor } = stateFromStoresObject);
-  const tmp9 = first2(react.useState(initialFolderName), 2);
-  const first1 = tmp9[0];
-  dependencyMap = tmp9[1];
-  const tmp11 = first2(react.useState(initialFolderColor), 2);
-  first2 = tmp11[0];
-  react = tmp11[1];
-  if (cResult[4] === first2) {
-    if (cResult[5] === folderId) {
-      let tmp14;
-      let tmp15;
-      if (cResult[6] === first1) {
-        tmp14 = cResult[7];
-      }
-      const _Symbol = Symbol;
-      if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-        const fn3 = function j() {
-          const obj = folderId(closure_2[24]);
-          const result = obj.hideGuildsBarFolderModal();
-        };
-        cResult[8] = fn3;
-        tmp15 = fn3;
-      } else {
-        tmp15 = cResult[8];
-      }
-      const _Symbol2 = Symbol;
-      if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-        class L {
-          constructor(arg0) {
-            return closure_2(arg0);
-          }
-        }
-        cResult[9] = L;
-      } else {
-        class L {
-          constructor(arg0) {
-            return closure_2(arg0);
-          }
-        }
-      }
-      const _Symbol3 = Symbol;
-      if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-        class P {
-          constructor(arg0) {
-            return closure_4(React4(arg0));
-          }
-        }
-        cResult[10] = P;
-      } else {
-        class P {
-          constructor(arg0) {
-            return closure_4(React4(arg0));
-          }
-        }
-      }
-      if (cResult[11] === first2) {
-        class P {
-          constructor(arg0) {
-            return closure_4(React4(arg0));
-          }
-        }
-      }
-      const obj3 = { render, title: intl.string(tmp(1125).t.Dx7im5), headerLeft: tmpResult2.getHeaderCloseButton(tmp15), headerRight: headerTextButton };
-      intl = tmp(1125).intl;
-      const tmp19 = c14;
-      tmpResult2 = tmp(6984);
-      if (first1 !== initialFolderName || first2 !== initialFolderColor) {
-        class P {
-          constructor(arg0) {
-            return closure_4(React4(arg0));
-          }
-        }
-        const getHeaderTextButton = tmp21.getHeaderTextButton;
-        const intl2 = tmp(1125).intl;
-        headerTextButton = getHeaderTextButton(intl2.string(tmp(1125).t["R3BPH+"]), tmp14);
-      } else {
-        class P {
-          constructor(arg0) {
-            return closure_4(React4(arg0));
-          }
-        }
-      }
-      const obj4 = {};
-      obj4[tmp19] = obj3;
-      cResult[11] = first2;
-      cResult[12] = tmp14;
-      cResult[13] = first1;
-      cResult[14] = first1 !== initialFolderName || first2 !== initialFolderColor;
-      cResult[15] = obj4;
-    }
-  }
-  const fn2 = function f() {
-    let closure_0 = folderId;
-    let closure_1 = first1;
-    closure_2 = first2;
-    const saveGuildFolders = UserSettingsActionCreators.saveGuildFolders;
-    UserSettingsActionCreators;
-    const guildFolders = SortedGuildStore.getGuildFolders();
-    saveGuildFolders(guildFolders.map((folderId) => {
-      let tmp = folderId;
-      if (folderId.folderId === closure_0) {
-        const obj = { folderName, folderColor };
-        const merged = Object.assign(folderId);
-        tmp = obj;
-      }
-      return tmp;
-    }));
-    const obj = GuildsBarFolderSettingsModalActionCreators;
-    const result = obj.hideGuildsBarFolderModal();
-  };
-  cResult[4] = first2;
-  cResult[5] = folderId;
-  cResult[6] = first1;
-  cResult[7] = fn2;
-  tmp14 = fn2;
-}) : (function GuildFolderSettingsModal(folderId) {
+let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
+
+export default function GuildFolderSettingsModal(folderId) {
   let closure_4;
   let initialFolderColor;
   let initialFolderName;
@@ -339,7 +166,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
     const result = obj.hideGuildsBarFolderModal();
   }, items2);
   callback1 = obj2.useCallback(() => {
-    const obj = folderId(closure_2[24]);
+    const obj = folderId(closure_2[22]);
     const result = obj.hideGuildsBarFolderModal();
   }, []);
   const items3 = [first1, name, name !== initialFolderName || first1 !== initialFolderColor, callback, callback1];
@@ -357,7 +184,16 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
         return closure_1_4(closure_2_9(dependencyMap));
       }
     };
-    const obj2 = { render, title: intl.string(intl5.t.Dx7im5), headerLeft: obj3.getHeaderCloseButton(callback1), headerRight: fn };
+    const obj2 = {
+      render() {
+        obj = {};
+        const merged = Object.assign(obj);
+        return closure_2_10(closure_2_13, obj);
+      },
+      title: intl.string(intl5.t.Dx7im5),
+      headerLeft: obj3.getHeaderCloseButton(callback1),
+      headerRight: fn
+    };
     intl = intl5.intl;
     obj3 = NavigatorHeader;
     const tmp = callback;
@@ -365,16 +201,13 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildFolde
     if (closure_5) {
       const getHeaderTextButton = NavigatorHeader.getHeaderTextButton;
       NavigatorHeader;
-      const intl2 = tmp3(1125).intl;
-      fn = getHeaderTextButton(intl2.string(tmp3(1125).t["R3BPH+"]), tmp);
+      const intl2 = tmp3(1114).intl;
+      fn = getHeaderTextButton(intl2.string(tmp3(1114).t["R3BPH+"]), tmp);
     } else {
       fn = () => null;
     }
     return { [tmp2]: obj2 };
   }, items3);
   let obj3 = { screens: memo, initialRouteName };
-  return closure_10(tmp(7155).Navigator, obj3);
-});
-let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFolderSettingsModal.tsx");
-
-export default tmp5;
+  return closure_10(tmp(7163).Navigator, obj3);
+};

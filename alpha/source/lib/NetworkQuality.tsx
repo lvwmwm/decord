@@ -1,12 +1,12 @@
-// Module ID: 5927
-// Function ID: 5928
+// Module ID: 5934
+// Function ID: 5935
 // Name: NetworkQuality
-// Dependencies: [5928, 1084, 5760, 2]
+// Dependencies: [5935, 1072, 5767, 2]
 
-// Module 5927 (NetworkQuality)
-import TimeUtils from "TimeUtils" /* 5760 */;
-import NetworkStore from "NetworkStore" /* 5928 */;
-import Constants from "Constants" /* 1084 */;
+// Module 5934 (NetworkQuality)
+import TimeUtils from "TimeUtils" /* 5767 */;
+import NetworkStore from "NetworkStore" /* 5935 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;

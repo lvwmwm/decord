@@ -1,21 +1,20 @@
-// Module ID: 1125
-// Function ID: 1126
+// Module ID: 1114
+// Function ID: 1115
 // Name: intl
-// Dependencies: [19, 1084, 21, 1126, 1127, 1164, 1199, 10895, 558, 2, 15928, 15933]
+// Dependencies: [19, 1072, 21, 1115, 1116, 1153, 1188, 10918, 2, 15968, 15973]
 // Exports: getSystemLocale, useSyncMessages
 
-// Module 1125 (intl)
+// Module 1114 (intl)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import react_native from "react-native" /* 1126 */;
-import native from "native" /* 1199 */;
-import IntlLink from "IntlLink" /* 10895 */;
-import defaultMessageProxy from "defaultMessageProxy" /* 15928 */;
-import _modDef15933 from "module_15933" /* 15933 */;
+import Constants from "Constants" /* 1072 */;
+import react_native from "react-native" /* 1115 */;
+import native from "native" /* 1188 */;
+import IntlLink from "IntlLink" /* 10918 */;
+import defaultMessageProxy from "defaultMessageProxy" /* 15968 */;
+import _modDef15973 from "module_15973" /* 15973 */;
 import react from "react" /* 19 */;
-import util from "intl/util" /* 1127 */;
-import module_1164 from "module_1164" /* 1164 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import util from "intl/util" /* 1116 */;
+import module_1153 from "module_1153" /* 1153 */;
 import size from "module_2" /* 2 */;
 
 const Fonts = Constants.Fonts;
@@ -61,14 +60,12 @@ const obj2 = {
     return jsx(IntlLink.IntlLink, { target: tmp, children }, arg1);
   }
 };
-const reactFormatter = module_1164.makeReactFormatter(obj2);
+const reactFormatter = module_1153.makeReactFormatter(obj2);
 const obj3 = { initialLocale: normalizedLocale, defaultLocale: "en-US" };
-const intlManager = new module_1164.IntlManager(obj3);
-const obj4 = { format: reactFormatter, formatToPlainString: module_1164.stringFormatter, formatToMarkdownString: module_1164.markdownFormatter, formatToParts: module_1164.astFormatter };
+const intlManager = new module_1153.IntlManager(obj3);
+const obj4 = { format: reactFormatter, formatToPlainString: module_1153.stringFormatter, formatToMarkdownString: module_1153.markdownFormatter, formatToParts: module_1153.astFormatter };
 const withFormattersResult = intlManager.withFormatters(obj4);
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating = ReactCompilerGating.isReactCompilerEnabled();
-const result1 = size.fileFinishedImporting("intl/index.native.tsx");
+const result = size.fileFinishedImporting("intl/index.native.tsx");
 
 export const intl = withFormattersResult;
 export { getSystemLocale };
@@ -79,6 +76,6 @@ export function useSyncMessages(arg0) {
   return obj.useSyncMessages(arg0, withFormattersResult);
 }
 export const t = defaultMessageProxy._defaultMessages;
-export const international = _modDef15933;
+export const international = _modDef15973;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

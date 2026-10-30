@@ -1,73 +1,21 @@
-// Module ID: 17624
-// Function ID: 17625
+// Module ID: 17695
+// Function ID: 17696
 // Name: MountMeasure
-// Dependencies: [19, 17, 21, 558, 576, 5300, 2]
+// Dependencies: [19, 17, 21, 5588, 2]
+// Exports: default
 
-// Module 17624 (MountMeasure)
+// Module 17695 (MountMeasure)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
+import useMountEffect from "useMountEffect" /* 5588 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const useMountEffect = tmp(5300);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MountMeasure(batchKey) {
-  let children;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(10);
-  batchKey = batchKey.batchKey;
-  const onMeasure = batchKey.onMeasure;
-  const onCancel = batchKey.onCancel;
-  ({ style, children } = batchKey);
-  if (cResult[0] === batchKey) {
-    let tmp4;
-    if (cResult[1] === onCancel) {
-      tmp4 = cResult[2];
-    }
-    const tmpResult = useMountEffect;
-    const unmountEffect = tmpResult.useUnmountEffect(tmp4);
-    if (cResult[3] === batchKey) {
-      let tmp6;
-      if (cResult[4] === onMeasure) {
-        tmp6 = cResult[5];
-      }
-      if (cResult[6] === children) {
-        if (cResult[7] === style) {
-          let tmp7;
-          if (cResult[8] === tmp6) {
-            tmp7 = cResult[9];
-          }
-          return tmp7;
-        }
-      }
-      const tmp10 = <View style={style} onLayout={tmp6}>{children}</View>;
-      cResult[6] = children;
-      cResult[7] = style;
-      cResult[8] = tmp6;
-      cResult[9] = tmp10;
-      tmp7 = tmp10;
-    }
-    const fn2 = function s() {
-      return onMeasure(batchKey);
-    };
-    cResult[3] = batchKey;
-    cResult[4] = onMeasure;
-    cResult[5] = fn2;
-    tmp6 = fn2;
-  }
-  const fn = function u() {
-    return onCancel(batchKey);
-  };
-  cResult[0] = batchKey;
-  cResult[1] = onCancel;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : (function MountMeasure(arg0) {
+const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/MountMeasure.tsx");
+
+export default function MountMeasure(arg0) {
   let children;
   let closure_129_0;
   let closure_129_1;
@@ -80,7 +28,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MountMeasu
   return <View style={style} onLayout={function onLayout() {
     return closure_1_1(closure_1_0);
   }}>{children}</View>;
-});
-const result = size.fileFinishedImporting("modules/devtools/native/components/screens/performance/MountMeasure.tsx");
-
-export default tmp3;
+};

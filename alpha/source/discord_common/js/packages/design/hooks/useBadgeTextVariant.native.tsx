@@ -1,46 +1,29 @@
-// Module ID: 5072
-// Function ID: 5073
+// Module ID: 5076
+// Function ID: 5077
 // Name: useBadgeTextVariant
-// Dependencies: [558, 5022, 2]
+// Dependencies: [5026, 2]
+// Exports: useBadgeTextVariant
 
-// Module 5072 (useBadgeTextVariant)
-import ThemeContext from "ThemeContext" /* 5022 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 5076 (useBadgeTextVariant)
+import ThemeContext from "ThemeContext" /* 5026 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadgeTextVariant() {
-  const obj = ThemeContext;
-  const themeContext = obj.useThemeContext();
-  let enabledExperiments;
-  if (themeContext != null) {
-    enabledExperiments = themeContext.enabledExperiments;
-  }
-  let hasItem;
-  if (enabledExperiments != null) {
-    hasItem = enabledExperiments.includes("mana-type-consolidation");
-  }
-  let str2 = "eyebrow";
-  if (true === hasItem) {
-    str2 = "experimental/body-xs/semibold";
-  }
-  return str2;
-}) : (function useBadgeTextVariant() {
-  const obj = ThemeContext;
-  const themeContext = obj.useThemeContext();
-  let enabledExperiments;
-  if (themeContext != null) {
-    enabledExperiments = themeContext.enabledExperiments;
-  }
-  let hasItem;
-  if (enabledExperiments != null) {
-    hasItem = enabledExperiments.includes("mana-type-consolidation");
-  }
-  let str2 = "eyebrow";
-  if (true === hasItem) {
-    str2 = "experimental/body-xs/semibold";
-  }
-  return str2;
-});
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/hooks/useBadgeTextVariant.native.tsx");
 
-export const useBadgeTextVariant = tmp2;
+export function useBadgeTextVariant() {
+  const obj = ThemeContext;
+  const themeContext = obj.useThemeContext();
+  let enabledExperiments;
+  if (themeContext != null) {
+    enabledExperiments = themeContext.enabledExperiments;
+  }
+  let hasItem;
+  if (enabledExperiments != null) {
+    hasItem = enabledExperiments.includes("mana-type-consolidation");
+  }
+  let str2 = "eyebrow";
+  if (true === hasItem) {
+    str2 = "experimental/body-xs/semibold";
+  }
+  return str2;
+}

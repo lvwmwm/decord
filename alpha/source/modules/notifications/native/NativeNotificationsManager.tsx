@@ -1,17 +1,17 @@
-// Module ID: 19894
-// Function ID: 19895
+// Module ID: 19957
+// Function ID: 19958
 // Name: NativeNotificationsManager
-// Dependencies: [5, 6873, 1084, 3, 7274, 1381, 10866, 10869, 8736, 1264, 2]
+// Dependencies: [5, 6880, 1072, 3, 7281, 1376, 10889, 10892, 8770, 1253, 2]
 
-// Module 19894 (NativeNotificationsManager)
+// Module 19957 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1084 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import PushNotificationDefault from "PushNotification" /* 10866 */;
-import react_nativeDefault from "react-native" /* 10869 */;
+import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import PushNotificationDefault from "PushNotification" /* 10889 */;
+import react_nativeDefault from "react-native" /* 10892 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6873 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6880 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c7, c8, closure_0, closure_3, map;
@@ -48,7 +48,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp72;
@@ -103,7 +103,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "IconComponent", done: "IconComponent" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -230,7 +230,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
                   if (null == PUSH_NOTIFICATION_RECEIVED) {
                     c6 = 0;
                     c8 = 3;
-                    return { value: "IconComponent", done: "IconComponent" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     const _Map = Map;
                     const self = this;
@@ -349,7 +349,7 @@ class NativeNotificationsManager extends AutomaticLifecycleManager {
               return obj13;
             }
             c8 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           if (0 === c6) {

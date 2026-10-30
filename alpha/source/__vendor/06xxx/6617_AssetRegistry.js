@@ -1,10 +1,10 @@
 // Module ID: 6617
 // Function ID: 6618
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 6617 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "3aff35dbf63c31bb9e5c01dc80563b2f", name: "img_account_sync_spotify_white", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "99749051c874e2c29d0c8fc118b6ecf2", name: "img_account_sync_x_white", type: "png" });

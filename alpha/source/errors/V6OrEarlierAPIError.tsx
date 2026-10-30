@@ -1,12 +1,12 @@
-// Module ID: 4829
-// Function ID: 4830
+// Module ID: 4830
+// Function ID: 4831
 // Name: errors/V6OrEarlierAPIError
-// Dependencies: [1084, 1294, 1125, 2]
+// Dependencies: [1072, 1283, 1114, 2]
 
-// Module 4829 (errors/V6OrEarlierAPIError)
-import Constants from "Constants" /* 1084 */;
-import intl3 from "intl" /* 1125 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 4830 (errors/V6OrEarlierAPIError)
+import Constants from "Constants" /* 1072 */;
+import intl3 from "intl" /* 1114 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Links = Constants.Links;

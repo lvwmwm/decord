@@ -1,17 +1,15 @@
-// Module ID: 19144
-// Function ID: 19145
+// Module ID: 19247
+// Function ID: 19248
 // Name: VoicePanelStyles
-// Dependencies: [5005, 587, 558, 576, 8799, 2]
+// Dependencies: [5009, 575, 8833, 2]
+// Exports: useVoicePanelButtonStyles
 
-// Module 19144 (VoicePanelStyles)
-import react from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 19247 (VoicePanelStyles)
+import nativeDefault from "native" /* 575 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8833 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const useStateFromSharedValue = tmp(8799);
 let closure_3 = createStyles.createStyles((arg0) => {
   let colors;
   let colors2;
@@ -22,28 +20,12 @@ let closure_3 = createStyles.createStyles((arg0) => {
   ({ color: nativeDefault.colors.ICON_MUTED });
   ({ color: nativeDefault.unsafe_rawColors.RED_400 });
   ({ color: nativeDefault.colors.BLACK });
-  colors2 = tmp(587).colors;
+  colors2 = tmp(575).colors;
   return obj;
-});
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useVoicePanelButtonStyles(arg0) {
-  let first;
-  const obj = react;
-  const cResult = obj.c(1);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c(drawerMode) {
-      return drawerMode.drawerMode;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = useStateFromSharedValue;
-  return closure_3(tmpResult.useDerivedStateFromSharedValue(arg0, first));
-}) : (function useVoicePanelButtonStyles(arg0) {
-  const obj = useStateFromSharedValue;
-  return closure_3(obj.useDerivedStateFromSharedValue(arg0, (drawerMode) => drawerMode.drawerMode));
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/buttons/VoicePanelStyles.tsx");
 
-export const useVoicePanelButtonStyles = tmp2;
+export function useVoicePanelButtonStyles(wrapperSpecs) {
+  const obj = useStateFromSharedValue;
+  return closure_3(obj.useDerivedStateFromSharedValue(wrapperSpecs, (drawerMode) => drawerMode.drawerMode));
+}

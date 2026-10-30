@@ -1,22 +1,21 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12346
+// Function ID: 12347
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11389, 21, 5005, 587, 558, 576, 5247, 1125, 5271, 5281, 5302, 2]
+// Dependencies: [19, 17, 11592, 21, 5009, 575, 5253, 5267, 5619, 1114, 5629, 2]
+// Exports: default
 
-// Module 12187 (GroupDMNitroCapInfoActionSheet)
+// Module 12346 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5302 */;
-import GroupDMConstants from "GroupDMConstants" /* 11389 */;
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5267 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import GroupDMConstants from "GroupDMConstants" /* 11592 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -38,111 +37,9 @@ obj3 = { marginTop: nativeDefault.space.PX_8, textAlign: "center" };
 obj4 = { marginTop: nativeDefault.space.PX_4, textAlign: "center" };
 obj5 = { width: "100%", marginTop: nativeDefault.space.PX_24 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitroCapInfoActionSheet() {
-  let container;
-  let first;
-  let intl3;
-  let items;
-  let obj8;
-  let title;
-  let tmp11;
-  let tmp14;
-  let tmp17;
-  let tmp20;
-  let tmp6;
-  let tmp8;
-  let obj = react2;
-  const cResult = obj.c(15);
-  const tmp4 = closure_8();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function t() {
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet();
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  ({ container, title } = tmp4);
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t.u1ilug);
-    cResult[1] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== tmp4.title) {
-    const obj2 = { style: title, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: tmp6 };
-    const tmp10 = metroRequire(Text_Text.Text, obj2);
-    cResult[2] = tmp4.title;
-    cResult[3] = tmp10;
-    tmp8 = tmp10;
-  } else {
-    tmp8 = cResult[3];
-  }
-  const body = tmp4.body;
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const obj3 = { number };
-    const formatToPlainStringResult = intl2.formatToPlainString(intl4.t["mr27w/"], obj3);
-    cResult[4] = formatToPlainStringResult;
-    tmp11 = formatToPlainStringResult;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] !== tmp4.body) {
-    const obj4 = { style: body, variant: "text-md/medium", color: "text-muted", children: tmp11 };
-    const tmp16 = metroRequire(Text_Text.Text, obj4);
-    cResult[5] = tmp4.body;
-    cResult[6] = tmp16;
-    tmp14 = tmp16;
-  } else {
-    tmp14 = cResult[6];
-  }
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { text: intl3.string(intl4.t.cpT0Cq), variant: "secondary", onPress: first, grow: true };
-    const Button = tmp(5281).Button;
-    intl3 = tmp(1125).intl;
-    const tmp19 = metroRequire(Button, obj5);
-    cResult[7] = tmp19;
-    tmp17 = tmp19;
-  } else {
-    tmp17 = cResult[7];
-  }
-  if (cResult[8] !== tmp4.button) {
-    const obj6 = { style: tmp4.button, children: tmp17 };
-    const tmp23 = metroRequire(View, obj6);
-    cResult[8] = tmp4.button;
-    cResult[9] = tmp23;
-    tmp20 = tmp23;
-  } else {
-    tmp20 = cResult[9];
-  }
-  if (cResult[10] === tmp4.container) {
-    if (cResult[11] === tmp8) {
-      if (cResult[12] === tmp14) {
-        let tmp24;
-        if (cResult[13] === tmp20) {
-          tmp24 = cResult[14];
-        }
-        return tmp24;
-      }
-    }
-  }
-  const obj7 = { showGradient: true, children: metroImportDefault(View, obj8) };
-  obj8 = { style: container, children: items };
-  items = [tmp8, tmp14, tmp20];
-  BottomSheet = tmp(5302).BottomSheet;
-  const tmp25 = metroRequire(BottomSheet, obj7);
-  cResult[10] = tmp4.container;
-  cResult[11] = tmp8;
-  cResult[12] = tmp14;
-  cResult[13] = tmp20;
-  cResult[14] = tmp25;
-  tmp24 = tmp25;
-}) : (function GroupDMNitroCapInfoActionSheet() {
+const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroCapInfoActionSheet.tsx");
+
+export default function GroupDMNitroCapInfoActionSheet() {
   let Button;
   let intl;
   let intl2;
@@ -174,7 +71,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GroupDMNitro
   intl3 = intl4.intl;
   items[2] = metroRequire(View, obj6);
   return metroRequire(BottomSheet, obj);
-});
-const result = size.fileFinishedImporting("modules/group_dm/native/GroupDMNitroCapInfoActionSheet.tsx");
-
-export default tmp4;
+};

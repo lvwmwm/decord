@@ -1,46 +1,47 @@
-// Module ID: 9586
-// Function ID: 9587
+// Module ID: 9609
+// Function ID: 9610
 // Name: premium_marketing_component_properties
-// Dependencies: [32, 1209, 9587, 9591, 9592, 9593, 9594, 9595, 9597, 9599, 9600, 9601, 9602, 9603, 9604, 9605, 9606, 9607, 9608, 9609, 9610, 9611, 9612, 9613, 9614, 9615, 9616, 9617, 9618, 9619, 9620, 2]
+// Dependencies: [32, 1198, 9610, 9614, 9615, 9616, 9617, 9618, 9620, 9622, 9623, 9624, 9625, 9626, 9627, 9628, 9629, 9630, 9631, 9632, 9633, 9634, 9635, 9636, 9637, 9638, 9639, 9640, 9641, 9642, 9643, 9644, 2]
 
-// Module 9586 (premium_marketing_component_properties)
-import _mod1209 from "module_1209" /* 1209 */;
-import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9587 */;
-import premium_tab from "premium_tab" /* 9591 */;
-import marketing_page_banner from "marketing_page_banner" /* 9592 */;
-import payment_modal_banner from "payment_modal_banner" /* 9593 */;
-import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9594 */;
-import gift_icon from "gift_icon" /* 9595 */;
-import gift_icon_coachmark from "gift_icon_coachmark" /* 9597 */;
-import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9599 */;
-import gift_customization_banner from "gift_customization_banner" /* 9600 */;
-import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9601 */;
-import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9602 */;
-import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9603 */;
-import premium_tab_tooltip from "premium_tab_tooltip" /* 9604 */;
-import premium_tab_popover from "premium_tab_popover" /* 9605 */;
-import nagbar2 from "nagbar" /* 9606 */;
-import plan_select_card_banner from "plan_select_card_banner" /* 9607 */;
-import billing_settings_banner from "billing_settings_banner" /* 9608 */;
-import shop_nagbar from "shop_nagbar" /* 9609 */;
-import admin_editor_test_component from "admin_editor_test_component" /* 9610 */;
-import guild_header_coachmark from "guild_header_coachmark" /* 9611 */;
-import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9612 */;
-import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9613 */;
-import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9614 */;
-import shop_tab_tooltip from "shop_tab_tooltip" /* 9615 */;
-import premium_home_perk_card from "premium_home_perk_card" /* 9616 */;
-import marketing_page_bento_box from "marketing_page_bento_box" /* 9617 */;
-import outbound_promotion_popover from "outbound_promotion_popover" /* 9618 */;
-import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9619 */;
-import shop_coachmark from "shop_coachmark" /* 9620 */;
+// Module 9609 (premium_marketing_component_properties)
+import _mod1198 from "module_1198" /* 1198 */;
+import announcement_modal_variant_1_properties from "announcement_modal_variant_1_properties" /* 9610 */;
+import premium_tab from "premium_tab" /* 9614 */;
+import marketing_page_banner from "marketing_page_banner" /* 9615 */;
+import payment_modal_banner from "payment_modal_banner" /* 9616 */;
+import mobile_bottom_sheet from "mobile_bottom_sheet" /* 9617 */;
+import gift_icon from "gift_icon" /* 9618 */;
+import gift_icon_coachmark from "gift_icon_coachmark" /* 9620 */;
+import gift_plan_selection_card_banner from "gift_plan_selection_card_banner" /* 9622 */;
+import gift_customization_banner from "gift_customization_banner" /* 9623 */;
+import billing_settings_nitro_gift_banner from "billing_settings_nitro_gift_banner" /* 9624 */;
+import gift_reminder_nagbar from "gift_reminder_nagbar" /* 9625 */;
+import gift_reminder_coachmark from "gift_reminder_coachmark" /* 9626 */;
+import premium_tab_tooltip from "premium_tab_tooltip" /* 9627 */;
+import premium_tab_popover from "premium_tab_popover" /* 9628 */;
+import nagbar2 from "nagbar" /* 9629 */;
+import plan_select_card_banner from "plan_select_card_banner" /* 9630 */;
+import billing_settings_banner from "billing_settings_banner" /* 9631 */;
+import shop_nagbar from "shop_nagbar" /* 9632 */;
+import admin_editor_test_component from "admin_editor_test_component" /* 9633 */;
+import guild_header_coachmark from "guild_header_coachmark" /* 9634 */;
+import guild_boost_checkout_banner from "guild_boost_checkout_banner" /* 9635 */;
+import guild_boost_marketing_page_banner from "guild_boost_marketing_page_banner" /* 9636 */;
+import guild_boost_tab_banner from "guild_boost_tab_banner" /* 9637 */;
+import shop_tab_tooltip from "shop_tab_tooltip" /* 9638 */;
+import premium_home_perk_card from "premium_home_perk_card" /* 9639 */;
+import marketing_page_bento_box from "marketing_page_bento_box" /* 9640 */;
+import outbound_promotion_popover from "outbound_promotion_popover" /* 9641 */;
+import outbound_promotion_claim_modal_card from "outbound_promotion_claim_modal_card" /* 9642 */;
+import shop_coachmark from "shop_coachmark" /* 9643 */;
+import nitro_perk_card from "nitro_perk_card" /* 9644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let internalBinaryWrite, internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
-const MessageType = _mod1209.MessageType;
+const MessageType = _mod1198.MessageType;
 class PremiumMarketingComponentProperties$Type extends MessageType {
   constructor() {
     const items = [
@@ -288,39 +289,48 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
           return require("outbound_promotion_popover").OutboundPromotionPopover;
         }
       },
+      {
+        no: 31,
+        name: "outbound_promotion_claim_modal_card",
+        kind: "message",
+        oneof: "properties",
+        T() {
+          return require("outbound_promotion_claim_modal_card").OutboundPromotionClaimModalCard;
+        }
+      },
     ,
     ,
     ,
 
     ];
-    const obj = { no: 31, name: "outbound_promotion_claim_modal_card", kind: "message", oneof: "properties", T };
+    const obj = { no: 32, name: "shop_coachmark", kind: "message", oneof: "properties", T };
     class T {
       constructor() {
-        return require("outbound_promotion_claim_modal_card").OutboundPromotionClaimModalCard;
+        return require("shop_coachmark").ShopCoachmark;
       }
     }
-    items[28] = obj;
-    items[29] = {
-      no: 32,
-      name: "shop_coachmark",
+    items[29] = obj;
+    items[30] = {
+      no: 33,
+      name: "nitro_perk_card",
       kind: "message",
       oneof: "properties",
       T() {
-        return require("shop_coachmark").ShopCoachmark;
+        return require("nitro_perk_card").NitroPerkCard;
       }
     };
-    items[30] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
-    items[31] = { no: 18, name: "is_default_base", kind: "scalar", T: 8 };
+    items[31] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
+    items[32] = { no: 18, name: "is_default_base", kind: "scalar", T: 8 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.PremiumMarketingComponentProperties", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
+    const obj = { properties: { oneofKind: "getCurrentUser" }, contentIdentifier: "", isDefaultBase: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1209.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1198.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1209;
+      const tmpResult = _mod1198;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -339,14 +349,14 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
   }
   internalBinaryWrite(properties, tag, writeUnknownFields) {
     if ("placeholder" === properties.properties.oneofKind) {
-      const tagResult = tag.tag(1, _mod1209.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1198.WireType.LengthDelimited);
       tagResult.string(properties.properties.placeholder);
     }
     if ("announcementModalVariant1" === properties.properties.oneofKind) {
       const AnnouncementModalVariant1Properties = announcement_modal_variant_1_properties.AnnouncementModalVariant1Properties;
       internalBinaryWrite = AnnouncementModalVariant1Properties.internalBinaryWrite;
       const announcementModalVariant1 = properties.properties.announcementModalVariant1;
-      const tagResult1 = tag.tag(2, _mod1209.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1198.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(announcementModalVariant1, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -354,7 +364,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PremiumTab = premium_tab.PremiumTab;
       internalBinaryWrite2 = PremiumTab.internalBinaryWrite;
       const premiumTab = properties.properties.premiumTab;
-      const tagResult2 = tag.tag(4, _mod1209.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(4, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(premiumTab, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -362,7 +372,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const MarketingPageBanner = marketing_page_banner.MarketingPageBanner;
       internalBinaryWrite3 = MarketingPageBanner.internalBinaryWrite;
       const marketingPageBanner = properties.properties.marketingPageBanner;
-      const tagResult3 = tag.tag(5, _mod1209.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(5, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(marketingPageBanner, tagResult3.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -370,7 +380,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PaymentModalBanner = payment_modal_banner.PaymentModalBanner;
       internalBinaryWrite4 = PaymentModalBanner.internalBinaryWrite;
       const paymentModalBanner = properties.properties.paymentModalBanner;
-      const tagResult4 = tag.tag(6, _mod1209.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(6, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(paymentModalBanner, tagResult4.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -378,7 +388,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const MobileBottomSheet = mobile_bottom_sheet.MobileBottomSheet;
       internalBinaryWrite5 = MobileBottomSheet.internalBinaryWrite;
       const mobileBottomSheet = properties.properties.mobileBottomSheet;
-      const tagResult5 = tag.tag(7, _mod1209.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(7, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(mobileBottomSheet, tagResult5.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
@@ -386,7 +396,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftIcon = gift_icon.GiftIcon;
       internalBinaryWrite6 = GiftIcon.internalBinaryWrite;
       const giftIcon = properties.properties.giftIcon;
-      const tagResult6 = tag.tag(8, _mod1209.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(8, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(giftIcon, tagResult6.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
@@ -394,7 +404,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftIconCoachmark = gift_icon_coachmark.GiftIconCoachmark;
       internalBinaryWrite7 = GiftIconCoachmark.internalBinaryWrite;
       const giftIconCoachmark = properties.properties.giftIconCoachmark;
-      const tagResult7 = tag.tag(9, _mod1209.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(9, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite7Result = internalBinaryWrite7(giftIconCoachmark, tagResult7.fork(), writeUnknownFields);
       const joined6 = internalBinaryWrite7Result.join();
     }
@@ -402,7 +412,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftPlanSelectionCardBanner = gift_plan_selection_card_banner.GiftPlanSelectionCardBanner;
       internalBinaryWrite8 = GiftPlanSelectionCardBanner.internalBinaryWrite;
       const giftPlanSelectionCardBanner = properties.properties.giftPlanSelectionCardBanner;
-      const tagResult8 = tag.tag(10, _mod1209.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(10, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite8Result = internalBinaryWrite8(giftPlanSelectionCardBanner, tagResult8.fork(), writeUnknownFields);
       const joined7 = internalBinaryWrite8Result.join();
     }
@@ -410,7 +420,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftCustomizationBanner = gift_customization_banner.GiftCustomizationBanner;
       internalBinaryWrite9 = GiftCustomizationBanner.internalBinaryWrite;
       const giftCustomizationBanner = properties.properties.giftCustomizationBanner;
-      const tagResult9 = tag.tag(11, _mod1209.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(11, _mod1198.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(giftCustomizationBanner, tagResult9.fork(), writeUnknownFields);
       const joined8 = internalBinaryWrite9Result.join();
     }
@@ -418,7 +428,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const BillingSettingsNitroGiftBanner = billing_settings_nitro_gift_banner.BillingSettingsNitroGiftBanner;
       internalBinaryWrite10 = BillingSettingsNitroGiftBanner.internalBinaryWrite;
       const billingSettingsNitroGiftBanner = properties.properties.billingSettingsNitroGiftBanner;
-      const tagResult10 = tag.tag(12, _mod1209.WireType.LengthDelimited);
+      const tagResult10 = tag.tag(12, _mod1198.WireType.LengthDelimited);
       const result = internalBinaryWrite10(billingSettingsNitroGiftBanner, tagResult10.fork(), writeUnknownFields);
       const joined9 = result.join();
     }
@@ -426,7 +436,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftReminderNagbar = gift_reminder_nagbar.GiftReminderNagbar;
       const internalBinaryWrite11 = GiftReminderNagbar.internalBinaryWrite;
       const giftReminderNagbar = properties.properties.giftReminderNagbar;
-      const tagResult11 = tag.tag(13, _mod1209.WireType.LengthDelimited);
+      const tagResult11 = tag.tag(13, _mod1198.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(giftReminderNagbar, tagResult11.fork(), writeUnknownFields);
       const joined10 = result1.join();
     }
@@ -434,7 +444,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GiftReminderCoachmark = gift_reminder_coachmark.GiftReminderCoachmark;
       const internalBinaryWrite12 = GiftReminderCoachmark.internalBinaryWrite;
       const giftReminderCoachmark = properties.properties.giftReminderCoachmark;
-      const tagResult12 = tag.tag(14, _mod1209.WireType.LengthDelimited);
+      const tagResult12 = tag.tag(14, _mod1198.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(giftReminderCoachmark, tagResult12.fork(), writeUnknownFields);
       const joined11 = result2.join();
     }
@@ -442,7 +452,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PremiumTabTooltip = premium_tab_tooltip.PremiumTabTooltip;
       const internalBinaryWrite13 = PremiumTabTooltip.internalBinaryWrite;
       const premiumTabTooltip = properties.properties.premiumTabTooltip;
-      const tagResult13 = tag.tag(15, _mod1209.WireType.LengthDelimited);
+      const tagResult13 = tag.tag(15, _mod1198.WireType.LengthDelimited);
       const result3 = internalBinaryWrite13(premiumTabTooltip, tagResult13.fork(), writeUnknownFields);
       const joined12 = result3.join();
     }
@@ -450,7 +460,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PremiumTabPopover = premium_tab_popover.PremiumTabPopover;
       const internalBinaryWrite14 = PremiumTabPopover.internalBinaryWrite;
       const premiumTabPopover = properties.properties.premiumTabPopover;
-      const tagResult14 = tag.tag(16, _mod1209.WireType.LengthDelimited);
+      const tagResult14 = tag.tag(16, _mod1198.WireType.LengthDelimited);
       const result4 = internalBinaryWrite14(premiumTabPopover, tagResult14.fork(), writeUnknownFields);
       const joined13 = result4.join();
     }
@@ -458,7 +468,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const Nagbar = nagbar2.Nagbar;
       const internalBinaryWrite15 = Nagbar.internalBinaryWrite;
       const nagbar = properties.properties.nagbar;
-      const tagResult15 = tag.tag(17, _mod1209.WireType.LengthDelimited);
+      const tagResult15 = tag.tag(17, _mod1198.WireType.LengthDelimited);
       const result5 = internalBinaryWrite15(nagbar, tagResult15.fork(), writeUnknownFields);
       const joined14 = result5.join();
     }
@@ -466,7 +476,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PlanSelectCardBanner = plan_select_card_banner.PlanSelectCardBanner;
       const internalBinaryWrite16 = PlanSelectCardBanner.internalBinaryWrite;
       const planSelectCardBanner = properties.properties.planSelectCardBanner;
-      const tagResult16 = tag.tag(19, _mod1209.WireType.LengthDelimited);
+      const tagResult16 = tag.tag(19, _mod1198.WireType.LengthDelimited);
       const result6 = internalBinaryWrite16(planSelectCardBanner, tagResult16.fork(), writeUnknownFields);
       const joined15 = result6.join();
     }
@@ -474,7 +484,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const BillingSettingsBanner = billing_settings_banner.BillingSettingsBanner;
       const internalBinaryWrite17 = BillingSettingsBanner.internalBinaryWrite;
       const billingSettingsBanner = properties.properties.billingSettingsBanner;
-      const tagResult17 = tag.tag(20, _mod1209.WireType.LengthDelimited);
+      const tagResult17 = tag.tag(20, _mod1198.WireType.LengthDelimited);
       const result7 = internalBinaryWrite17(billingSettingsBanner, tagResult17.fork(), writeUnknownFields);
       const joined16 = result7.join();
     }
@@ -482,7 +492,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const ShopNagbar = shop_nagbar.ShopNagbar;
       const internalBinaryWrite18 = ShopNagbar.internalBinaryWrite;
       const shopNagbar = properties.properties.shopNagbar;
-      const tagResult18 = tag.tag(21, _mod1209.WireType.LengthDelimited);
+      const tagResult18 = tag.tag(21, _mod1198.WireType.LengthDelimited);
       const result8 = internalBinaryWrite18(shopNagbar, tagResult18.fork(), writeUnknownFields);
       const joined17 = result8.join();
     }
@@ -490,7 +500,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const AdminEditorTestComponent = admin_editor_test_component.AdminEditorTestComponent;
       const internalBinaryWrite19 = AdminEditorTestComponent.internalBinaryWrite;
       const adminEditorTestComponent = properties.properties.adminEditorTestComponent;
-      const tagResult19 = tag.tag(22, _mod1209.WireType.LengthDelimited);
+      const tagResult19 = tag.tag(22, _mod1198.WireType.LengthDelimited);
       const result9 = internalBinaryWrite19(adminEditorTestComponent, tagResult19.fork(), writeUnknownFields);
       const joined18 = result9.join();
     }
@@ -498,7 +508,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GuildHeaderCoachmark = guild_header_coachmark.GuildHeaderCoachmark;
       const internalBinaryWrite20 = GuildHeaderCoachmark.internalBinaryWrite;
       const guildHeaderCoachmark = properties.properties.guildHeaderCoachmark;
-      const tagResult20 = tag.tag(23, _mod1209.WireType.LengthDelimited);
+      const tagResult20 = tag.tag(23, _mod1198.WireType.LengthDelimited);
       const result10 = internalBinaryWrite20(guildHeaderCoachmark, tagResult20.fork(), writeUnknownFields);
       const joined19 = result10.join();
     }
@@ -506,7 +516,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GuildBoostCheckoutBanner = guild_boost_checkout_banner.GuildBoostCheckoutBanner;
       const internalBinaryWrite21 = GuildBoostCheckoutBanner.internalBinaryWrite;
       const guildBoostCheckoutBanner = properties.properties.guildBoostCheckoutBanner;
-      const tagResult21 = tag.tag(24, _mod1209.WireType.LengthDelimited);
+      const tagResult21 = tag.tag(24, _mod1198.WireType.LengthDelimited);
       const result11 = internalBinaryWrite21(guildBoostCheckoutBanner, tagResult21.fork(), writeUnknownFields);
       const joined20 = result11.join();
     }
@@ -514,7 +524,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GuildBoostMarketingPageBanner = guild_boost_marketing_page_banner.GuildBoostMarketingPageBanner;
       const internalBinaryWrite22 = GuildBoostMarketingPageBanner.internalBinaryWrite;
       const guildBoostMarketingPageBanner = properties.properties.guildBoostMarketingPageBanner;
-      const tagResult22 = tag.tag(25, _mod1209.WireType.LengthDelimited);
+      const tagResult22 = tag.tag(25, _mod1198.WireType.LengthDelimited);
       const result12 = internalBinaryWrite22(guildBoostMarketingPageBanner, tagResult22.fork(), writeUnknownFields);
       const joined21 = result12.join();
     }
@@ -522,7 +532,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const GuildBoostTabBanner = guild_boost_tab_banner.GuildBoostTabBanner;
       const internalBinaryWrite23 = GuildBoostTabBanner.internalBinaryWrite;
       const guildBoostTabBanner = properties.properties.guildBoostTabBanner;
-      const tagResult23 = tag.tag(26, _mod1209.WireType.LengthDelimited);
+      const tagResult23 = tag.tag(26, _mod1198.WireType.LengthDelimited);
       const result13 = internalBinaryWrite23(guildBoostTabBanner, tagResult23.fork(), writeUnknownFields);
       const joined22 = result13.join();
     }
@@ -530,7 +540,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const ShopTabTooltip = shop_tab_tooltip.ShopTabTooltip;
       const internalBinaryWrite24 = ShopTabTooltip.internalBinaryWrite;
       const shopTabTooltip = properties.properties.shopTabTooltip;
-      const tagResult24 = tag.tag(27, _mod1209.WireType.LengthDelimited);
+      const tagResult24 = tag.tag(27, _mod1198.WireType.LengthDelimited);
       const result14 = internalBinaryWrite24(shopTabTooltip, tagResult24.fork(), writeUnknownFields);
       const joined23 = result14.join();
     }
@@ -538,7 +548,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const PremiumHomePerkCard = premium_home_perk_card.PremiumHomePerkCard;
       const internalBinaryWrite25 = PremiumHomePerkCard.internalBinaryWrite;
       const premiumHomeRewardsPerkCard = properties.properties.premiumHomeRewardsPerkCard;
-      const tagResult25 = tag.tag(28, _mod1209.WireType.LengthDelimited);
+      const tagResult25 = tag.tag(28, _mod1198.WireType.LengthDelimited);
       const result15 = internalBinaryWrite25(premiumHomeRewardsPerkCard, tagResult25.fork(), writeUnknownFields);
       const joined24 = result15.join();
     }
@@ -546,7 +556,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const MarketingPageBentoBox = marketing_page_bento_box.MarketingPageBentoBox;
       const internalBinaryWrite26 = MarketingPageBentoBox.internalBinaryWrite;
       const marketingPageRewardsBentoBox = properties.properties.marketingPageRewardsBentoBox;
-      const tagResult26 = tag.tag(29, _mod1209.WireType.LengthDelimited);
+      const tagResult26 = tag.tag(29, _mod1198.WireType.LengthDelimited);
       const result16 = internalBinaryWrite26(marketingPageRewardsBentoBox, tagResult26.fork(), writeUnknownFields);
       const joined25 = result16.join();
     }
@@ -554,7 +564,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const OutboundPromotionPopover = outbound_promotion_popover.OutboundPromotionPopover;
       const internalBinaryWrite27 = OutboundPromotionPopover.internalBinaryWrite;
       const outboundPromotionPopover = properties.properties.outboundPromotionPopover;
-      const tagResult27 = tag.tag(30, _mod1209.WireType.LengthDelimited);
+      const tagResult27 = tag.tag(30, _mod1198.WireType.LengthDelimited);
       const result17 = internalBinaryWrite27(outboundPromotionPopover, tagResult27.fork(), writeUnknownFields);
       const joined26 = result17.join();
     }
@@ -562,7 +572,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const OutboundPromotionClaimModalCard = outbound_promotion_claim_modal_card.OutboundPromotionClaimModalCard;
       const internalBinaryWrite28 = OutboundPromotionClaimModalCard.internalBinaryWrite;
       const outboundPromotionClaimModalCard = properties.properties.outboundPromotionClaimModalCard;
-      const tagResult28 = tag.tag(31, _mod1209.WireType.LengthDelimited);
+      const tagResult28 = tag.tag(31, _mod1198.WireType.LengthDelimited);
       const result18 = internalBinaryWrite28(outboundPromotionClaimModalCard, tagResult28.fork(), writeUnknownFields);
       const joined27 = result18.join();
     }
@@ -570,22 +580,30 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       const ShopCoachmark = shop_coachmark.ShopCoachmark;
       const internalBinaryWrite29 = ShopCoachmark.internalBinaryWrite;
       const shopCoachmark = properties.properties.shopCoachmark;
-      const tagResult29 = tag.tag(32, _mod1209.WireType.LengthDelimited);
+      const tagResult29 = tag.tag(32, _mod1198.WireType.LengthDelimited);
       const result19 = internalBinaryWrite29(shopCoachmark, tagResult29.fork(), writeUnknownFields);
       const joined28 = result19.join();
     }
+    if ("nitroPerkCard" === properties.properties.oneofKind) {
+      const NitroPerkCard = nitro_perk_card.NitroPerkCard;
+      const internalBinaryWrite30 = NitroPerkCard.internalBinaryWrite;
+      const nitroPerkCard = properties.properties.nitroPerkCard;
+      const tagResult30 = tag.tag(33, _mod1198.WireType.LengthDelimited);
+      const result20 = internalBinaryWrite30(nitroPerkCard, tagResult30.fork(), writeUnknownFields);
+      const joined29 = result20.join();
+    }
     if ("" !== properties.contentIdentifier) {
-      const tagResult30 = tag.tag(3, _mod1209.WireType.LengthDelimited);
-      tagResult30.string(properties.contentIdentifier);
+      const tagResult31 = tag.tag(3, _mod1198.WireType.LengthDelimited);
+      tagResult31.string(properties.contentIdentifier);
     }
     if (false !== properties.isDefaultBase) {
-      const tagResult31 = tag.tag(18, _mod1209.WireType.Varint);
-      tagResult31.bool(properties.isDefaultBase);
+      const tagResult32 = tag.tag(18, _mod1198.WireType.Varint);
+      tagResult32.bool(properties.isDefaultBase);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1209.UnknownFieldHandler.onWrite;
+        onWrite = _mod1198.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, properties, tag);

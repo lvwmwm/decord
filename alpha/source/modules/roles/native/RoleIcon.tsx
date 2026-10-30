@@ -1,120 +1,26 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 7368
+// Function ID: 7369
 // Name: RoleIcon
-// Dependencies: [19, 21, 1381, 558, 576, 5707, 5271, 2]
+// Dependencies: [19, 21, 1376, 5712, 5619, 2]
+// Exports: default
 
-// Module 7361 (RoleIcon)
+// Module 7368 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5707 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FastImageDefault from "FastImage" /* 5712 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size_mod from "module_2" /* 2 */;
 
-let tmp;
-const Text_Text = tmp(5271);
 const jsx = Fragment.jsx;
 let num = 0.9375;
 if (PlatformUtils.isAndroid()) {
   num = 0.8125;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(arg0) {
-  let src;
-  let tmp4;
-  let unicodeEmoji;
-  const obj = react2;
-  const cResult = obj.c(19);
-  ({ src, unicodeEmoji, size } = arg0);
-  num = 20;
-  if (undefined !== size) {
-    num = size;
-  }
-  if (cResult[0] !== num) {
-    const size1 = { height: num, width: num };
-    cResult[0] = num;
-    cResult[1] = size1;
-    tmp4 = size1;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const result = num * num;
-  if (cResult[2] === num) {
-    let tmp6;
-    if (cResult[3] === result) {
-      tmp6 = cResult[4];
-    }
-    if (cResult[5] === tmp4) {
-      let tmp7;
-      let tmp13;
-      if (cResult[6] === tmp6) {
-        tmp7 = cResult[7];
-      }
-      if (null != src) {
-        let tmp14;
-        if (cResult[8] !== src) {
-          const obj2 = { uri: src };
-          cResult[8] = src;
-          cResult[9] = obj2;
-          tmp14 = obj2;
-        } else {
-          tmp14 = cResult[9];
-        }
-        if (cResult[10] === tmp7.roleIcon) {
-          let tmp15;
-          if (cResult[11] === tmp14) {
-            tmp15 = cResult[12];
-          }
-          tmp13 = tmp15;
-        }
-        const tmp18 = jsx(FastImageDefault, { resizeMode: "contain", source: tmp14, style: tmp7.roleIcon });
-        cResult[10] = tmp7.roleIcon;
-        cResult[11] = tmp14;
-        cResult[12] = tmp18;
-        tmp15 = tmp18;
-      } else {
-        tmp13 = null;
-        if (null != unicodeEmoji) {
-          if (cResult[13] === tmp7.roleIcon) {
-            let tmp9;
-            if (cResult[14] === tmp7.unicodeEmojiRoleIcon) {
-              tmp9 = cResult[15];
-            }
-            if (cResult[16] === tmp9) {
-              let tmp10;
-              if (cResult[17] === unicodeEmoji.surrogates) {
-                tmp10 = cResult[18];
-              }
-              tmp13 = tmp10;
-            }
-            const tmp12 = jsx(Text_Text.Text, { allowFontScaling: false, color: "none", style: tmp9, variant: "text-lg/normal", children: unicodeEmoji.surrogates });
-            cResult[16] = tmp9;
-            cResult[17] = unicodeEmoji.surrogates;
-            cResult[18] = tmp12;
-            tmp10 = tmp12;
-          }
-          const items = [, ];
-          ({ roleIcon: arr[0], unicodeEmojiRoleIcon: arr[1] } = tmp7);
-          cResult[13] = tmp7.roleIcon;
-          cResult[14] = tmp7.unicodeEmojiRoleIcon;
-          cResult[15] = items;
-          tmp9 = items;
-        }
-      }
-      return tmp13;
-    }
-    const obj5 = { roleIcon: tmp4, unicodeEmojiRoleIcon: tmp6 };
-    cResult[5] = tmp4;
-    cResult[6] = tmp6;
-    cResult[7] = obj5;
-    tmp7 = obj5;
-  }
-  const obj6 = { fontFamily: "System", fontSize: result, lineHeight: "ix", textAlign: "useEffect", width: num, marginBottom: "duration" };
-  cResult[2] = num;
-  cResult[3] = result;
-  cResult[4] = obj6;
-  tmp6 = obj6;
-}) : (function RoleIcon(arg0) {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/roles/native/RoleIcon.tsx");
+
+export default function RoleIcon(arg0) {
   let src;
   let tmp;
   let unicodeEmoji;
@@ -123,7 +29,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "ix", textAlign: "useEffect", width: size, marginBottom: "duration" };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "id", textAlign: "<string:4268818845>", width: size, marginBottom: "PX_16" };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });
@@ -135,8 +41,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RoleIcon(a
     }
   }
   return tmp;
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/roles/native/RoleIcon.tsx");
-
-export default tmp3;
+};

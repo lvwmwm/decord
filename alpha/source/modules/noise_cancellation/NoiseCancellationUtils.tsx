@@ -1,19 +1,18 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11918
+// Function ID: 11919
 // Name: NoiseCancellationUtils
-// Dependencies: [2012, 11726, 558, 576, 504, 2]
-// Exports: getNoiseCancellationDeferredToSystem
+// Dependencies: [2007, 11919, 504, 2]
+// Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 11725 (NoiseCancellationUtils)
-import react from "react" /* 576 */;
-import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 11726 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11918 (NoiseCancellationUtils)
+import get_initialized from "get initialized" /* 504 */;
+import getEffectiveNoiseCancellationDefault from "getEffectiveNoiseCancellation" /* 11919 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-function getNoiseCancellationDeferredToSystem(MediaEngineStore) {
+const result = size.fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
+
+export function getNoiseCancellationDeferredToSystem(MediaEngineStore) {
   let obj = MediaEngineStore;
   if (MediaEngineStore === undefined) {
     obj = MediaEngineStore;
@@ -21,35 +20,11 @@ function getNoiseCancellationDeferredToSystem(MediaEngineStore) {
   const systemMicrophoneMode = obj.getSystemMicrophoneMode();
   return !getEffectiveNoiseCancellationDefault(true, systemMicrophoneMode);
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNoiseCancellationDeferredToSystem() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function n() {
-      systemMicrophoneMode = systemMicrophoneMode.getSystemMicrophoneMode();
-      return !getEffectiveNoiseCancellationDefault(true, systemMicrophoneMode);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useNoiseCancellationDeferredToSystem() {
+export function useNoiseCancellationDeferredToSystem() {
   const items = [MediaEngineStore];
   const obj = get_initialized;
   return obj.useStateFromStores(items, () => {
     systemMicrophoneMode = systemMicrophoneMode.getSystemMicrophoneMode();
     return !getEffectiveNoiseCancellationDefault(true, systemMicrophoneMode);
   });
-});
-const result = size.fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");
-
-export { getNoiseCancellationDeferredToSystem };
-export const useNoiseCancellationDeferredToSystem = tmp2;
+}

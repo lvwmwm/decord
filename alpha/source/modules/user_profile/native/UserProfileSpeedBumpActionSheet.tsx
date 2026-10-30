@@ -1,31 +1,30 @@
-// Module ID: 8711
-// Function ID: 8712
+// Module ID: 8745
+// Function ID: 8746
 // Name: UserProfileSpeedBumpActionSheet
-// Dependencies: [32, 19, 17, 4857, 4917, 1389, 8712, 1084, 21, 5005, 587, 8714, 1125, 558, 576, 7047, 6963, 1199, 5012, 5242, 504, 8715, 7338, 7313, 8719, 8728, 1264, 8710, 8708, 8729, 7122, 5271, 6029, 5281, 6968, 4833, 5302, 5306, 2]
+// Dependencies: [32, 19, 17, 4858, 4921, 1384, 8746, 1072, 21, 5009, 575, 8748, 1114, 7054, 6969, 1188, 5016, 5248, 504, 8749, 7320, 7345, 8753, 8762, 1253, 8744, 8742, 5267, 5270, 8763, 7130, 5619, 6036, 5629, 6974, 4834, 2]
 
-// Module 8711 (UserProfileSpeedBumpActionSheet)
+// Module 8745 (UserProfileSpeedBumpActionSheet)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import native from "native" /* 1199 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import TableRow2 from "TableRow" /* 6963 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
-import UserActionCreators from "UserActionCreators" /* 8710 */;
-import Constants2 from "Constants" /* 8712 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8714 */;
+import nativeDefault from "native" /* 575 */;
+import native from "native" /* 1188 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import TableRow2 from "TableRow" /* 6969 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import UserActionCreators from "UserActionCreators" /* 8744 */;
+import Constants2 from "Constants" /* 8746 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let BottomSheet, constants, tmp3;
+let BottomSheet;
 
 let c10;
 let closure_12;
@@ -37,6 +36,38 @@ let obj5;
 let obj6;
 let rect;
 let unpackModuleId;
+function InformationTable(speedBumpType) {
+  let intl;
+  let stringResult;
+  let items;
+  let obj = { icon: AssetRegistryDefault, text: intl.string(items(1114).t.kcuWva) };
+  speedBumpType = speedBumpType.speedBumpType;
+  intl = items(1114).intl;
+  items = [obj, ];
+  let obj2 = { icon: AssetRegistryDefault, text: stringResult };
+  if ("block" === speedBumpType) {
+    const intl3 = tmp2(1114).intl;
+    stringResult = intl3.string(tmp2(1114).t.QxrDY1);
+  } else {
+    const intl2 = tmp2(1114).intl;
+    stringResult = intl2.string(tmp2(1114).t.W6fjkS);
+  }
+  items[1] = obj2;
+  const obj3 = {
+    hasIcons: true,
+    children: items.map((icon, index) => {
+      let Icon;
+      let obj2;
+      const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
+      const TableRow = TableRow2.TableRow;
+      obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
+      Icon = native.Icon;
+      return authStore2(TableRow, obj, index);
+    })
+  };
+  const TableRowGroup = tmp2(7054).TableRowGroup;
+  return closure_12(TableRowGroup, obj3);
+}
 const View = react_native.View;
 let UserProfileAnalyticsTypes = Constants2.UserProfileAnalyticsTypes;
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = Constants);
@@ -51,340 +82,7 @@ obj5 = { position: "relative", alignSelf: "center", marginTop: nativeDefault.spa
 rect = { position: "absolute", bottom: -8, right: -8, padding: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round };
 obj6 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 let closure_14 = createStyles(obj);
-function SPEEDBUMP_ROWS(arg0) {
-
-}
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_16 = ReactCompilerGating.isReactCompilerEnabled() ? (function InformationTable(speedBumpType) {
-  let flag;
-  let intl;
-  let items;
-  let stringResult;
-  let tmp4;
-  let tmp5;
-  let obj = items(576);
-  const cResult = obj.c(8);
-  speedBumpType = speedBumpType.speedBumpType;
-  if (cResult[0] !== speedBumpType) {
-    if (typeof SPEEDBUMP_ROWS === "function") {
-      let obj2 = { icon: AssetRegistryDefault, text: intl.string(items(1125).t.kcuWva) };
-      intl = tmp(1125).intl;
-      items = [obj2, ];
-      const obj3 = { icon: AssetRegistryDefault, text: stringResult };
-      if ("block" === speedBumpType) {
-        const intl3 = tmp(1125).intl;
-        stringResult = intl3.string(tmp(1125).t.QxrDY1);
-      } else {
-        const intl2 = tmp(1125).intl;
-        stringResult = intl2.string(tmp(1125).t.W6fjkS);
-      }
-      items[1] = obj3;
-      const TableRowGroup = tmp(7047).TableRowGroup;
-      const mapped = items.map((icon, index) => {
-        let Icon;
-        let obj2;
-        const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
-        const TableRow = TableRow2.TableRow;
-        obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
-        Icon = native.Icon;
-        return authStore2(TableRow, obj, index);
-      });
-      cResult[0] = speedBumpType;
-      cResult[1] = TableRowGroup;
-      cResult[2] = true;
-      cResult[3] = mapped;
-      tmp5 = mapped;
-      flag = true;
-      tmp4 = TableRowGroup;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  } else {
-    tmp4 = cResult[1];
-    flag = cResult[2];
-    tmp5 = cResult[3];
-  }
-  if (cResult[4] === tmp4) {
-    if (cResult[5] === flag) {
-      let tmp10;
-      if (cResult[6] === tmp5) {
-        tmp10 = cResult[7];
-      }
-      return tmp10;
-    }
-  }
-  const tmp11 = closure_12(tmp4, { hasIcons: flag, children: tmp5 });
-  cResult[4] = tmp4;
-  cResult[5] = flag;
-  cResult[6] = tmp5;
-  cResult[7] = tmp11;
-  tmp10 = tmp11;
-}) : (function InformationTable(arg0) {
-  let intl;
-  let stringResult;
-  let items;
-  if (typeof SPEEDBUMP_ROWS === "function") {
-    let obj = { icon: AssetRegistryDefault, text: intl.string(items(1125).t.kcuWva) };
-    intl = items(1125).intl;
-    items = [obj, ];
-    let obj2 = { icon: AssetRegistryDefault, text: stringResult };
-    if ("block" === tmp) {
-      const intl3 = tmp4(1125).intl;
-      stringResult = intl3.string(tmp4(1125).t.QxrDY1);
-    } else {
-      const intl2 = tmp4(1125).intl;
-      stringResult = intl2.string(tmp4(1125).t.W6fjkS);
-    }
-    items[1] = obj2;
-    const obj3 = {
-      hasIcons: true,
-      children: items.map((icon, index) => {
-          let Icon;
-          let obj2;
-          const obj = { start: 0 === index, end: items.length === index, icon: authStore2(Icon, obj2), label: icon.text };
-          const TableRow = TableRow2.TableRow;
-          obj2 = { size: native.Icon.Sizes.MEDIUM, source: icon.icon };
-          Icon = native.Icon;
-          return authStore2(TableRow, obj, index);
-        })
-    };
-    const TableRowGroup = tmp4(7047).TableRowGroup;
-    return closure_12(TableRowGroup, obj3);
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileSpeedBumpActionSheet(userId) {
-  let closure_9;
-  let localUser;
-  let messageId;
-  let onClose;
-  let openedAt;
-  let roleId;
-  let sessionId;
-  let sourceAnalyticsLocations;
-  let speedBumpType;
-  let stateFromStores2;
-  let tmp11;
-  let tmp16;
-  let tmp17;
-  let tmp18;
-  let tmp22;
-  let tmp5;
-  let tmp9;
-  let obj = userId(onClose[14]);
-  const cResult = obj.c(113);
-  userId = userId.userId;
-  const channelId = userId.channelId;
-  ({ messageId, localUser, roleId, sessionId, onClose } = userId);
-  const location = userId.location;
-  const navigationReplace = userId.navigationReplace;
-  ({ openedAt, sourceAnalyticsLocations, speedBumpType } = userId);
-  if (cResult[0] !== sourceAnalyticsLocations) {
-    let items = sourceAnalyticsLocations;
-    if (undefined === sourceAnalyticsLocations) {
-      items = [];
-    }
-    cResult[0] = sourceAnalyticsLocations;
-    cResult[1] = items;
-    tmp5 = items;
-  } else {
-    tmp5 = cResult[1];
-  }
-  let tmp6 = closure_14();
-  const tmp2Result = userId(onClose[18]);
-  tmp2Result.isThemeLight(channelId(onClose[19])());
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [stateFromStores2];
-    cResult[2] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== userId) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    cResult[3] = userId;
-    cResult[4] = D;
-    tmp11 = D;
-  } else {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-  }
-  const tmp2Result4 = userId(onClose[20]);
-  const stateFromStores = tmp2Result4.useStateFromStores(tmp9, tmp11);
-  let tmp13 = stateFromStores;
-  if (stateFromStores == null) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    if (localUser != null) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    if (tmp14 === userId) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    tmp13 = tmp15;
-  }
-  let c6 = tmp13;
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    const items2 = [c6];
-    cResult[5] = items2;
-    tmp16 = items2;
-  } else {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-  }
-  if (cResult[6] !== channelId) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    const items3 = [channelId];
-    cResult[6] = channelId;
-    cResult[7] = tmp19;
-    cResult[8] = items3;
-    tmp18 = items3;
-    tmp17 = tmp19;
-  } else {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    tmp18 = cResult[8];
-  }
-  const tmp2Result5 = userId(onClose[20]);
-  const stateFromStores1 = tmp2Result5.useStateFromStores(tmp16, tmp17, tmp18);
-  if (stateFromStores1 != null) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-  }
-  let c7 = tmp21;
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    const items4 = [c7];
-    cResult[9] = items4;
-    tmp22 = items4;
-  } else {
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-  }
-  if (cResult[10] === undefined) {
-    let tmp31;
-    class D {
-      constructor() {
-        return closure_8.getUser(userId);
-      }
-    }
-    const tmp2Result6 = userId(onClose[20]);
-    stateFromStores2 = tmp2Result6.useStateFromStores(tmp22, J);
-    const tmp7Result = channelId(onClose[21]);
-    if (tmp13 != null) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    if (undefined == null) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    UserProfileAnalyticsTypes = tmp7Result(undefined, undefined);
-    const IGNORED_USER_SHEET = UserProfileAnalyticsTypes.IGNORED_USER_SHEET;
-    tmp7Result(undefined, undefined);
-    const tmp30 = location(navigationReplace.useState(false), 2);
-    constants = tmp30[0];
-    let closure_11 = tmp30[1];
-    if (cResult[13] !== tmp5) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-      const arraySpreadResult = HermesBuiltin.arraySpread(tmp32, tmp5, 0);
-      tmp32[arraySpreadResult] = channelId(onClose[22]).IGNORED_PROFILE_ACTION_SHEET;
-      cResult[13] = tmp5;
-      cResult[14] = tmp32;
-      tmp31 = tmp32;
-    } else {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    const analyticsLocations = tmp7(tmp3[23])(tmp31).analyticsLocations;
-    if (cResult[15] === channelId) {
-      class D {
-        constructor() {
-          return closure_8.getUser(userId);
-        }
-      }
-    }
-    const obj2 = { layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId };
-    cResult[15] = channelId;
-    cResult[16] = messageId;
-    cResult[17] = roleId;
-    cResult[18] = sessionId;
-    cResult[19] = userId;
-    cResult[20] = obj2;
-  }
-  class J {
-    constructor() {
-      member = null;
-      if (null != guild_id) {
-        tmp3 = closure_7;
-        tmp4 = userId;
-        member = closure_7.getMember(tmp, userId);
-      }
-      return member;
-    }
-  }
-  cResult[10] = undefined;
-  cResult[11] = userId;
-  cResult[12] = J;
-}) : (function UserProfileSpeedBumpActionSheet(userId) {
+const memoResult = react.memo(function UserProfileSpeedBumpActionSheet(userId) {
   let Icon;
   let Text3;
   let UserProfileAnalyticsProvider;
@@ -439,10 +137,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let createUserProfileAnalyticsContext;
   closure_14 = undefined;
   let tmp2 = closure_14();
-  let obj = userId(onClose[18]);
+  let obj = userId(onClose[16]);
   const items = [stateFromStores2];
-  const isThemeLightResult = obj.isThemeLight(channelId(onClose[19])());
-  const obj2 = userId(onClose[20]);
+  const isThemeLightResult = obj.isThemeLight(channelId(onClose[17])());
+  const obj2 = userId(onClose[18]);
   const stateFromStores = obj2.useStateFromStores(items, () => UserStore.getUser(userId));
   let tmp8 = stateFromStores;
   if (stateFromStores == null) {
@@ -459,14 +157,14 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   localUser = tmp8;
   const items1 = [localUser];
   const items2 = [channelId];
-  const tmp3Result = userId(onClose[20]);
+  const tmp3Result = userId(onClose[18]);
   const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
   guild_id = undefined;
   if (stateFromStores1 != null) {
     guild_id = stateFromStores1.guild_id;
   }
   const items3 = [guild_id];
-  const tmp3Result3 = userId(onClose[20]);
+  const tmp3Result3 = userId(onClose[18]);
   stateFromStores2 = tmp3Result3.useStateFromStores(items3, () => {
     let member = null;
     if (null != guild_id) {
@@ -475,7 +173,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return member;
   });
   let id1;
-  const tmp5Result = channelId(onClose[21]);
+  const tmp5Result = channelId(onClose[19]);
   if (tmp8 != null) {
     id1 = tmp8.id;
   }
@@ -487,13 +185,13 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const IGNORED_USER_SHEET = UserProfileAnalyticsTypes.IGNORED_USER_SHEET;
   [first, closure_11] = react.useState(false);
   const items4 = [];
-  const tmp5Result3 = channelId(onClose[23]);
+  const tmp5Result3 = channelId(onClose[20]);
   const arraySpreadResult = HermesBuiltin.arraySpread(items4, sourceAnalyticsLocations, 0);
-  items4[arraySpreadResult] = channelId(onClose[22]).IGNORED_PROFILE_ACTION_SHEET;
+  items4[arraySpreadResult] = channelId(onClose[21]).IGNORED_PROFILE_ACTION_SHEET;
   analyticsLocations = tmp5Result3(items4).analyticsLocations;
-  const tmp3Result4 = userId(onClose[24]);
+  const tmp3Result4 = userId(onClose[22]);
   createUserProfileAnalyticsContext = tmp3Result4.useCreateUserProfileAnalyticsContext({ layout: "ACTION_SHEET", sourceSessionId: sessionId, userId, channelId, messageId, roleId });
-  const tmp22 = channelId(onClose[25])({ userId, user: tmp8, channelId, guildId: guild_id, displayProfile: tmp5ResultResult, guildMember: stateFromStores2, type: IGNORED_USER_SHEET });
+  const tmp22 = channelId(onClose[23])({ userId, user: tmp8, channelId, guildId: guild_id, displayProfile: tmp5ResultResult, guildMember: stateFromStores2, type: IGNORED_USER_SHEET });
   closure_14 = tmp22;
   const items5 = [tmp22, tmp5ResultResult, guild_id, first, stateFromStores2];
   const effect = react.useEffect(() => {
@@ -531,10 +229,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return null;
   } else {
     const obj3 = { value: analyticsLocations, children: analyticsLocations(UserProfileAnalyticsProvider, obj4) };
-    const AnalyticsLocationProvider = tmp3(tmp4[23]).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp3(tmp4[20]).AnalyticsLocationProvider;
     obj4 = { value: createUserProfileAnalyticsContext, openedAt, fetchStartedAt, fetchEndedAt, isLoaded, children: analyticsLocations(BottomSheet, obj19) };
     fetchStartedAt = undefined;
-    UserProfileAnalyticsProvider = tmp3(tmp4[24]).UserProfileAnalyticsProvider;
+    UserProfileAnalyticsProvider = tmp3(tmp4[22]).UserProfileAnalyticsProvider;
     if (tmp5ResultResult != null) {
       fetchStartedAt = tmp5ResultResult.fetchStartedAt;
     }
@@ -546,16 +244,16 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (tmp5ResultResult != null) {
       isLoaded = tmp5ResultResult.isLoaded;
     }
-    BottomSheet = tmp3(tmp4[36]).BottomSheet;
+    BottomSheet = tmp3(tmp4[27]).BottomSheet;
     const obj5 = { style: tmp2.header, children: items9 };
     const obj6 = { style: tmp2.avatarContainer, children: items8 };
-    const BottomSheetView = tmp3(tmp4[37]).BottomSheetView;
-    const obj7 = { user: tmp8, guildId: guild_id, animate: false, size: userId(onClose[17]).AvatarSizes.XLARGE, style: tmp2.avatar };
-    const Avatar = tmp3(tmp4[17]).Avatar;
+    const BottomSheetView = tmp3(tmp4[28]).BottomSheetView;
+    const obj7 = { user: tmp8, guildId: guild_id, animate: false, size: userId(onClose[15]).AvatarSizes.XLARGE, style: tmp2.avatar };
+    const Avatar = tmp3(tmp4[15]).Avatar;
     items8 = [analyticsLocations(Avatar, obj7), ];
     const obj8 = { style: tmp2.avatarIconContainer, children: analyticsLocations(Icon, tmp32) };
-    const obj9 = { size: userId(onClose[17]).Icon.Sizes.MEDIUM, source: null };
-    Icon = tmp3(tmp4[17]).Icon;
+    const obj9 = { size: userId(onClose[15]).Icon.Sizes.MEDIUM, source: null };
+    Icon = tmp3(tmp4[15]).Icon;
     if ("block" === speedBumpType) {
       obj9.source = channelId(onClose[29]);
       tmp32 = obj9;
@@ -579,7 +277,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     tmp5Result4 = channelId(onClose[32]);
     items9[2] = analyticsLocations(Text2, obj11);
     const items10 = [createUserProfileAnalyticsContext(stateFromStores, obj5), , ];
-    const obj13 = { style: tmp2.tableContainer, children: analyticsLocations(closure_16, obj14) };
+    const obj13 = { style: tmp2.tableContainer, children: analyticsLocations(InformationTable, obj14) };
     obj14 = { speedBumpType };
     items10[1] = analyticsLocations(stateFromStores, obj13);
     let str2 = "secondary";
@@ -624,7 +322,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     items10[2] = createUserProfileAnalyticsContext(stateFromStores, obj15);
     return analyticsLocations(AnalyticsLocationProvider, obj3);
   }
-}));
+});
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileSpeedBumpActionSheet.tsx");
 
 export default memoResult;

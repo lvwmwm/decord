@@ -1,10 +1,10 @@
 // Module ID: 4081
 // Function ID: 4082
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 4081 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX21vZGU=", scales: [1], hash: "95dbb411510f796cb2de02a66380a54d", name: "sv-SE.messages.95dbb411510f796cb2de02a66380a54d.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX21vZGU=", scales: [1], hash: "6db72da6e9439e2571cc2eda94a7a6c8", name: "ru.messages.6db72da6e9439e2571cc2eda94a7a6c8.compiled.messages", type: "jsona" });

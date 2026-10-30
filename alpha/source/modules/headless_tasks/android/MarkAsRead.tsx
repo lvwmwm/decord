@@ -1,11 +1,11 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20089
+// Function ID: 20090
 // Name: MarkAsRead
-// Dependencies: [1084, 7266, 2]
+// Dependencies: [1072, 7273, 2]
 
-// Module 20026 (MarkAsRead)
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7266 */;
-import Constants from "Constants" /* 1084 */;
+// Module 20089 (MarkAsRead)
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7273 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2;

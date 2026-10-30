@@ -1,21 +1,20 @@
-// Module ID: 12552
-// Function ID: 12553
+// Module ID: 12709
+// Function ID: 12710
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12553, 1125, 5271, 5707, 1415, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 12710, 5619, 1114, 5712, 1410, 2]
+// Exports: default
 
-// Module 12552 (ConjurePlanCommandMenuPreview)
+// Module 12709 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12553 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12710 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -34,157 +33,10 @@ obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX
 obj4 = { borderColor: nativeDefault.colors.BORDER_FOCUS };
 size = { width: 20, height: 20, borderRadius: nativeDefault.radii.sm };
 let closure_6 = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanCommandMenuPreview(target) {
-  let appIconSrc;
-  let commandName;
-  let items;
-  let items1;
-  let items3;
-  let tmpResult;
-  const obj = react2;
-  const cResult = obj.c(30);
-  ({ commandName, appIconSrc } = target);
-  target = target.target;
-  const tmp4 = closure_6();
-  if (cResult[0] === tmp4.muted) {
-    let tmp6;
-    let tmp8;
-    let tmp12;
-    let tmp14;
-    if (cResult[1] === tmp4.row) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] !== ("message" === target)) {
-      let tmp9 = null;
-      if ("message" === target) {
-        const obj2 = { size: "xs", color: nativeDefault.colors.ICON_DEFAULT };
-        const ArrowAngleLeftUpIcon = tmp(12553).ArrowAngleLeftUpIcon;
-        tmp9 = React3(ArrowAngleLeftUpIcon, obj2);
-      }
-      cResult[3] = "message" === target;
-      cResult[4] = tmp9;
-      tmp8 = tmp9;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] !== ("message" === target)) {
-      const intl = tmp(1125).intl;
-      const string = intl.string;
-      const t = tmp(1125).t;
-      const stringResult = string("message" === target ? t["5IEsGx"] : t.LYju5J);
-      cResult[5] = "message" === target;
-      cResult[6] = stringResult;
-      tmp12 = stringResult;
-    } else {
-      tmp12 = cResult[6];
-    }
-    if (cResult[7] !== tmp12) {
-      const obj3 = { variant: "text-sm/medium", color: "text-default", children: tmp12 };
-      const tmp16 = React3(Text_Text.Text, obj3);
-      cResult[7] = tmp12;
-      cResult[8] = tmp16;
-      tmp14 = tmp16;
-    } else {
-      tmp14 = cResult[8];
-    }
-    if (cResult[9] === tmp6) {
-      if (cResult[10] === tmp8) {
-        let tmp17;
-        if (cResult[11] === tmp14) {
-          tmp17 = cResult[12];
-        }
-        if (cResult[13] === tmp4.highlighted) {
-          let tmp21;
-          if (cResult[14] === tmp4.row) {
-            tmp21 = cResult[15];
-          }
-          if (cResult[16] === appIconSrc) {
-            let tmp22;
-            if (cResult[17] === tmp4.appIcon) {
-              tmp22 = cResult[18];
-            }
-            if (cResult[19] === commandName) {
-              let tmp27;
-              if (cResult[20] === tmp4.label) {
-                tmp27 = cResult[21];
-              }
-              if (cResult[22] === tmp21) {
-                if (cResult[23] === tmp22) {
-                  let tmp30;
-                  if (cResult[24] === tmp27) {
-                    tmp30 = cResult[25];
-                  }
-                  if (cResult[26] === tmp4.sheet) {
-                    if (cResult[27] === tmp30) {
-                      let tmp34;
-                      if (cResult[28] === tmp17) {
-                        tmp34 = cResult[29];
-                      }
-                      return tmp34;
-                    }
-                  }
-                  const obj4 = { style: tmp5, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items };
-                  items = [tmp17, tmp30];
-                  const tmp37 = hasOwnProperty(View, obj4);
-                  cResult[26] = tmp4.sheet;
-                  cResult[27] = tmp30;
-                  cResult[28] = tmp17;
-                  cResult[29] = tmp37;
-                  tmp34 = tmp37;
-                }
-              }
-              const obj5 = { style: tmp21, children: items1 };
-              items1 = [tmp22, tmp27];
-              const tmp33 = hasOwnProperty(View, obj5);
-              cResult[22] = tmp21;
-              cResult[23] = tmp22;
-              cResult[24] = tmp27;
-              cResult[25] = tmp33;
-              tmp30 = tmp33;
-            }
-            const obj6 = { variant: "text-sm/medium", color: "text-strong", style: tmp4.label, children: commandName };
-            const tmp29 = React3(Text_Text.Text, obj6);
-            cResult[19] = commandName;
-            cResult[20] = tmp4.label;
-            cResult[21] = tmp29;
-            tmp27 = tmp29;
-          }
-          let tmp23 = null;
-          if (null != appIconSrc) {
-            const obj7 = { source: tmpResult.makeSource(appIconSrc), style: tmp4.appIcon };
-            const tmp26 = FastImageDefault;
-            tmpResult = AvatarUtils;
-            tmp23 = React3(tmp26, obj7);
-          }
-          cResult[16] = appIconSrc;
-          cResult[17] = tmp4.appIcon;
-          cResult[18] = tmp23;
-          tmp22 = tmp23;
-        }
-        const items2 = [, ];
-        ({ row: arr3[0], highlighted: arr3[1] } = tmp4);
-        cResult[13] = tmp4.highlighted;
-        cResult[14] = tmp4.row;
-        cResult[15] = items2;
-        tmp21 = items2;
-      }
-    }
-    const obj8 = { style: tmp6, children: items3 };
-    items3 = [tmp8, tmp14];
-    const tmp20 = hasOwnProperty(View, obj8);
-    cResult[9] = tmp6;
-    cResult[10] = tmp8;
-    cResult[11] = tmp14;
-    cResult[12] = tmp20;
-    tmp17 = tmp20;
-  }
-  const items4 = [, ];
-  ({ row: arr[0], muted: arr[1] } = tmp4);
-  cResult[0] = tmp4.muted;
-  cResult[1] = tmp4.row;
-  cResult[2] = items4;
-  tmp6 = items4;
-}) : (function ConjurePlanCommandMenuPreview(appIconSrc) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanCommandMenuPreview.tsx");
+
+export default function ConjurePlanCommandMenuPreview(appIconSrc) {
   let commandName;
   let items;
   let items1;
@@ -229,8 +81,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanC
   items4[1] = React3(Text_Text.Text, obj7);
   items2[1] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/conjure/plan/native/ConjurePlanCommandMenuPreview.tsx");
-
-export default tmp5;
+};

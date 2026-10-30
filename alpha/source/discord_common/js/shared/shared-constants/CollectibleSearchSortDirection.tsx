@@ -1,9 +1,9 @@
-// Module ID: 1090
-// Function ID: 1091
+// Module ID: 1078
+// Function ID: 1079
 // Name: CollectibleSearchSortDirection
 // Dependencies: [2]
 
-// Module 1090 (CollectibleSearchSortDirection)
+// Module 1078 (CollectibleSearchSortDirection)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchSortDirection.tsx");

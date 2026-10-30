@@ -1,16 +1,16 @@
-// Module ID: 15729
-// Function ID: 15730
+// Module ID: 15769
+// Function ID: 15770
 // Name: subscriptionSettingsDeepLink
-// Dependencies: [5, 2056, 1084, 7549, 15730, 5247, 1125, 1264, 6522, 2]
+// Dependencies: [5, 2053, 1072, 7557, 15770, 5253, 1114, 1253, 6529, 2]
 // Exports: openSubscriptionSettingsFromDeepLink
 
-// Module 15729 (subscriptionSettingsDeepLink)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6522 */;
-import openUserSettings from "openUserSettings" /* 7549 */;
+// Module 15769 (subscriptionSettingsDeepLink)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6529 */;
+import openUserSettings from "openUserSettings" /* 7557 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 2056 */;
-import Constants from "Constants" /* 1084 */;
+import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_0;
@@ -80,7 +80,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -114,7 +114,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
           closure_130_11();
           closure_130_8();
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;
@@ -142,7 +142,7 @@ let obj = function _openSubscriptionSettingsFromDeepLink() {
             showSubscriptionPicker();
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
         const tmp28 = hasGuild;
         if (tmp28) {

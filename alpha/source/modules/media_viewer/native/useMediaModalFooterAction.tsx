@@ -1,18 +1,18 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14622
+// Function ID: 14623
 // Name: useMediaModalFooterAction
-// Dependencies: [570, 1271, 2]
+// Dependencies: [560, 1260, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 14589 (useMediaModalFooterAction)
-import react_native from "react-native" /* 1271 */;
-import module_570 from "module_570" /* 570 */;
+// Module 14622 (useMediaModalFooterAction)
+import react_native from "react-native" /* 1260 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const useMediaModalFooterActionStore = module_570.create(() => ({}));
+const useMediaModalFooterActionStore = module_560.create(() => ({}));
 const result = size.fileFinishedImporting("modules/media_viewer/native/useMediaModalFooterAction.tsx");
 
 export { useMediaModalFooterActionStore };
@@ -27,5 +27,5 @@ export function setMediaModalFooterAction(footerAction) {
 export function clearMediaModalFooterAction() {
   let state;
   const obj = react_native;
-  obj.batchUpdates(() => state.setState({ footerAction: "r" }));
+  obj.batchUpdates(() => state.setState({ footerAction: "getCurrentUser" }));
 }

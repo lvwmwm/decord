@@ -1,10 +1,10 @@
-// Module ID: 5886
-// Function ID: 5887
+// Module ID: 5893
+// Function ID: 5894
 // Name: AV1BitrateTuningExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 5886 (AV1BitrateTuningExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 5893 (AV1BitrateTuningExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

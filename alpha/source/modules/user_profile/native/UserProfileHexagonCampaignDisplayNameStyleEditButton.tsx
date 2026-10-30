@@ -1,32 +1,32 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16431
+// Function ID: 16432
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1389, 1084, 5030, 21, 5005, 587, 558, 576, 16380, 1125, 2930, 16358, 6771, 8695, 6426, 5032, 10729, 5300, 8693, 16357, 5701, 7313, 7338, 9858, 9859, 16381, 7026, 5295, 6972, 7356, 6968, 16374, 7069, 2]
+// Dependencies: [5, 32, 19, 17, 1384, 1072, 5034, 21, 5009, 575, 16432, 1114, 2931, 16411, 6778, 8729, 6433, 5036, 10752, 5588, 8727, 16410, 5707, 7320, 7345, 9884, 9885, 7077, 16433, 6974, 7032, 5582, 6978, 7364, 16426, 2]
+// Exports: default
 
-// Module 16379 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
-import nativeDefault from "native" /* 587 */;
-import _modDef2930 from "module_2930" /* 2930 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6426 */;
-import _modDef7026 from "module_7026" /* 7026 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7313 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9858 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9859 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10729 */;
+// Module 16431 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+import nativeDefault from "native" /* 575 */;
+import _modDef2931 from "module_2931" /* 2931 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6433 */;
+import _modDef7032 from "module_7032" /* 7032 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7320 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9884 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9885 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10752 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5030 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5034 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, closure_0, currentUser, dependencyMap, displayNameStyles, importDefault, pendingDisplayNameStyles, ref;
+let _require, closure_0, currentUser, dependencyMap, displayNameStyles, importDefault, ref;
 
 let StyleSheet;
 let c10;
@@ -63,311 +63,9 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj5 = { width: nativeDefault.space.PX_32 };
 obj6 = { marginLeft: nativeDefault.space.PX_8 };
 let closure_19 = createStyles(obj);
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileHexagonCampaignDisplayNameStyleEditButton(availability) {
-  let closure_3;
-  let closure_5;
-  let disabled;
-  let tmp21;
-  let tmp37;
-  let user;
-  let tmp = _require;
-  let obj = require("react");
-  const cResult = obj.c(64);
-  ({ user, disabled } = availability);
-  let tmp4 = undefined !== disabled;
-  availability = availability.availability;
-  if (tmp4) {
-    tmp4 = disabled;
-  }
-  closure_19();
-  _require = tmp6;
-  const tmpResult = tmp(16380);
-  const displayNameStylesPendingName = tmpResult.useDisplayNameStylesPendingName(user);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1125).intl;
-    const stringResult = intl.string(_modDef2930["86GtGH"]);
-    cResult[0] = stringResult;
-    let first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  const useTrackHexagonCampaignContentViewed = tmp(16358).useTrackHexagonCampaignContentViewed;
-  tmp(16358);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(tmp(6771).QuestContent.DISPLAY_NAME_STYLES_SETTINGS, tmp(16358).HexagonCampaignContentSurface.NON_NITRO_CARD, true);
-  const tmpResult6 = tmp(8695);
-  pendingDisplayNameStyles = tmpResult6.useGuildMemberOrUserPendingDisplayNameStyles(user).pendingDisplayNameStyles;
-  if (cResult[1] === pendingDisplayNameStyles) {
-    let tmp13;
-    let tmp16;
-    if (cResult[2] === user.id) {
-      tmp13 = cResult[3];
-    }
-    const tmp15 = useDisplayNameStylesDefault(tmp13);
-    if (cResult[4] !== tmp15) {
-      let result = null != tmp15;
-      if (result) {
-        const tmpResult7 = tmp(5032);
-        result = tmpResult7.isHexagonCampaignDisplayNameStyle(tmp15);
-      }
-      cResult[4] = tmp15;
-      cResult[5] = result;
-      tmp16 = result;
-    } else {
-      tmp16 = cResult[5];
-    }
-    importDefault = tmp16;
-    let obj6 = react;
-    [tmp21, dependencyMap] = _slicedToArray(react.useState(0), 2);
-    const tmp20 = _slicedToArray(react.useState(0), 2);
-    [, _asyncToGenerator] = react.useState(0);
-    const _Symbol = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(nativeEvent) {
-          dependencyMap(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-      cResult[6] = G;
-    } else {
-      class G {
-        constructor(nativeEvent) {
-          dependencyMap(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-      class W {
-        constructor(nativeEvent) {
-          closure_3(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-      cResult[7] = W;
-    } else {
-      class W {
-        constructor(nativeEvent) {
-          closure_3(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-    }
-    if (cResult[8] === displayNameStylesPendingName) {
-      let tmp31;
-      let tmp34;
-      class W {
-        constructor(nativeEvent) {
-          closure_3(nativeEvent.nativeEvent.layout.width);
-        }
-      }
-      [r10128, _slicedToArray] = _slicedToArray(obj6.useState(false), 2);
-      _slicedToArray(obj6.useState(false), 2);
-      react = obj6.useRef(false);
-      let closure_6 = obj6.useRef(true);
-      const _Symbol3 = Symbol;
-      if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-        cResult[11] = tmp32;
-        tmp31 = tmp32;
-      } else {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      const tmpResult8 = tmp(5300);
-      const unmountEffect = tmpResult8.useUnmountEffect(tmp31);
-      if (!tmp4) {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      const _Symbol4 = Symbol;
-      if (cResult[12] === Symbol.for("react.memo_cache_sentinel")) {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-        _require = _asyncToGenerator(async (arg0, value) => {
-          let intl;
-          let obj9;
-          let tmp51;
-          let v1;
-          closure_0 = arg0;
-          if (ref === 2) {
-            ref = 3;
-            throw new TypeError("Generator functions may not be called on executing generators");
-          } else if (tmp3 === 3) {
-            if (arg0 === 1) {
-              throw value;
-            } else if (arg0 === 2) {
-              const obj2 = { value, done: true };
-              return obj2;
-            } else {
-              return { value: "IconComponent", done: "IconComponent" };
-            }
-          } else {
-            let c3;
-            try {
-              ref = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  ref = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  ref = 3;
-                  const obj5 = { value, done: true };
-                  return obj5;
-                } else {
-                  let closure_2 = tmp;
-                  closure_1 = tmp51;
-                  closure_0 = undefined;
-                  if (!ref.current) {
-                    if (closure_0) {
-                      ref.current = true;
-                      c4(true);
-                      c3 = 1;
-                      c4 = 2;
-                      ref = 1;
-                      const obj8 = { value: obj9.ensureHexagonCampaignEnrollment(constants.DISPLAY_NAME_STYLE), done: false };
-                      obj9 = closure_0(dependencyMap[23]);
-                      return obj8;
-                    } else {
-                      currentUser = currentUser.getCurrentUser();
-                      displayNameStyles = undefined;
-                      if (currentUser != null) {
-                        displayNameStyles = currentUser.displayNameStyles;
-                      }
-                      const setPendingChanges = closure_0(dependencyMap[22]).setPendingChanges;
-                      const tmp40 = closure_0(dependencyMap[22]);
-                      if (null == displayNameStyles) {
-                        displayNameStyles = null;
-                      } else {
-                        const obj7 = closure_0(dependencyMap[19]);
-                      }
-                      const obj10 = { displayNameStyles };
-                      setPendingChanges(obj10);
-                    }
-                  }
-                }
-              } else {
-                if (1 === tmp4) {
-                  c3 = 0;
-                  closure_0 = false;
-                } else if (arg0 === 1) {
-                  ref = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c3 = 0;
-                  ref = 3;
-                  const obj = { value, done: true };
-                  return obj;
-                } else {
-                  closure_0 = value;
-                  c3 = 0;
-                }
-                if (ref2.current) {
-                  ref.current = false;
-                  c4(false);
-                  if (closure_0) {
-                    const obj3 = closure_0(dependencyMap[23]);
-                    const result = obj3.saveHexagonCampaignPreviousDisplayNameStyles();
-                    const obj11 = { displayNameStyles };
-                    const obj4 = closure_0(dependencyMap[22]);
-                    obj4.setPendingChanges(obj11);
-                    const obj6 = closure_0(dependencyMap[23]);
-                    const result1 = obj6.markHexagonCampaignPerkApplied(constants.DISPLAY_NAME_STYLE);
-                  } else {
-                    const obj12 = { text: intl.string(closure_0(dependencyMap[13]).t.F8FvUy) };
-                    const open = closure_2_1(dependencyMap[24]).open;
-                    const tmp18 = closure_2_1(dependencyMap[24]);
-                    intl = closure_0(dependencyMap[13]).intl;
-                    open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj12);
-                  }
-                }
-              }
-              ref = 3;
-              return { value: "IconComponent", done: "IconComponent" };
-            } catch (tmp50) {
-              tmp51 = c3;
-              if (0 === c3) {
-                ref = 3;
-                throw tmp50;
-              } else {
-                c4 = 1;
-              }
-            }
-          }
-        });
-        function t9() {
-          return closure_0(...arguments);
-        }
-        cResult[12] = t9;
-        tmp34 = t9;
-      } else {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      t9 = tmp34;
-      const tmp14Result = useAnalyticsLocationsDefault;
-      const analyticsLocations = tmp14Result(tmp14(7338).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
-      if (cResult[13] !== analyticsLocations) {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-        cResult[13] = analyticsLocations;
-        cResult[14] = tmp37;
-      } else {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      tmp37 = tmp36;
-      if (cResult[15] === tmp36) {
-        class W {
-          constructor(nativeEvent) {
-            closure_3(nativeEvent.nativeEvent.layout.width);
-          }
-        }
-      }
-      function ye() {
-        const tmp = closure_0;
-        if (tmp) {
-          tmp37();
-        } else {
-          t9(!closure_1);
-        }
-      }
-      cResult[15] = tmp36;
-      cResult[16] = tmp16;
-      cResult[17] = availability === constants5.LOCKED;
-      cResult[18] = ye;
-    }
-    let obj2 = { userId: user.id, userName: displayNameStylesPendingName, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true, variant: "heading-xxl/semibold", lineClamp: 1, ellipsizeMode: "clip" };
-    cResult[8] = displayNameStylesPendingName;
-    cResult[9] = user.id;
-    cResult[10] = closure_15(UsernameWithEffectsDefault, obj2);
-    const tmp29 = closure_15(UsernameWithEffectsDefault, obj2);
-  }
-  let obj3 = { userId: user.id, pendingDisplayNameStyles, ignoreDisabledStylesSetting: true };
-  cResult[1] = pendingDisplayNameStyles;
-  cResult[2] = user.id;
-  cResult[3] = obj3;
-  tmp13 = obj3;
-}) : (function UserProfileHexagonCampaignDisplayNameStyleEditButton(availability) {
+let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileHexagonCampaignDisplayNameStyleEditButton.tsx");
+
+export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(availability) {
   let _undefined;
   let _undefined2;
   let _undefined22;
@@ -414,7 +112,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   let obj = require("useDisplayNameStylesPendingName");
   const displayNameStylesPendingName = obj.useDisplayNameStylesPendingName(user);
   let intl = require("intl").intl;
-  const stringResult = intl.string(_modDef2930["86GtGH"]);
+  const stringResult = intl.string(_modDef2931["86GtGH"]);
   const useTrackHexagonCampaignContentViewed = require("HexagonCampaignAnalytics").useTrackHexagonCampaignContentViewed;
   const tmp8 = require("HexagonCampaignAnalytics");
   const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(require("QuestTypes").QuestContent.DISPLAY_NAME_STYLES_SETTINGS, require("HexagonCampaignAnalytics").HexagonCampaignContentSurface.NON_NITRO_CARD, true);
@@ -423,7 +121,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp10 = useDisplayNameStylesDefault(obj3);
   let result = null != tmp10;
   if (result) {
-    const tmp3Result = tmp3(5032);
+    const tmp3Result = tmp3(5036);
     result = tmp3Result.isHexagonCampaignDisplayNameStyle(tmp10);
   }
   importDefault = result;
@@ -445,7 +143,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   const tmp21 = _slicedToArray(react.useState(false), 2);
   react = react.useRef(false);
   closure_6 = react.useRef(true);
-  const tmp3Result2 = tmp3(5300);
+  const tmp3Result2 = tmp3(5588);
   const unmountEffect = tmp3Result2.useUnmountEffect(() => {
     closure_6.current = false;
   });
@@ -469,7 +167,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -496,7 +194,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
                 c4 = 2;
                 ref = 1;
                 const obj8 = { value: obj9.ensureHexagonCampaignEnrollment(constants.DISPLAY_NAME_STYLE), done: false };
-                obj9 = closure_0(_undefined[23]);
+                obj9 = closure_0(_undefined[21]);
                 return obj8;
               } else {
                 currentUser = currentUser.getCurrentUser();
@@ -504,12 +202,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
                 if (currentUser != null) {
                   displayNameStyles = currentUser.displayNameStyles;
                 }
-                const setPendingChanges = closure_0(_undefined[22]).setPendingChanges;
-                const tmp40 = closure_0(_undefined[22]);
+                const setPendingChanges = closure_0(_undefined[20]).setPendingChanges;
+                const tmp40 = closure_0(_undefined[20]);
                 if (null == displayNameStyles) {
                   displayNameStyles = null;
                 } else {
-                  const obj7 = closure_0(_undefined[19]);
+                  const obj7 = closure_0(_undefined[17]);
                 }
                 const obj10 = { displayNameStyles };
                 setPendingChanges(obj10);
@@ -536,24 +234,24 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
             ref.current = false;
             c4(false);
             if (closure_0) {
-              const obj3 = closure_0(_undefined[23]);
+              const obj3 = closure_0(_undefined[21]);
               const result = obj3.saveHexagonCampaignPreviousDisplayNameStyles();
               const obj11 = { displayNameStyles };
-              const obj4 = closure_0(_undefined[22]);
+              const obj4 = closure_0(_undefined[20]);
               obj4.setPendingChanges(obj11);
-              const obj6 = closure_0(_undefined[23]);
+              const obj6 = closure_0(_undefined[21]);
               const result1 = obj6.markHexagonCampaignPerkApplied(constants.DISPLAY_NAME_STYLE);
             } else {
-              const obj12 = { text: intl.string(closure_0(_undefined[13]).t.F8FvUy) };
-              const open = _undefined(_undefined[24]).open;
-              const tmp18 = _undefined(_undefined[24]);
-              intl = closure_0(_undefined[13]).intl;
+              const obj12 = { text: intl.string(closure_0(_undefined[11]).t.F8FvUy) };
+              const open = _undefined(_undefined[22]).open;
+              const tmp18 = _undefined(_undefined[22]);
+              intl = closure_0(_undefined[11]).intl;
               open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj12);
             }
           }
         }
         ref = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp50) {
         if (0 === c3) {
           ref = 3;
@@ -568,7 +266,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
     return closure_0(...arguments);
   }, []);
   const tmp6Result = useAnalyticsLocationsDefault;
-  analyticsLocations = tmp6Result(tmp6(7338).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
+  analyticsLocations = tmp6Result(tmp6(7345).EDIT_DISPLAY_NAME_STYLES_MODAL).analyticsLocations;
   const items = [analyticsLocations];
   callback3 = obj5.useCallback(() => {
     let obj2;
@@ -588,16 +286,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   }, items1);
   let obj6 = { label: stringResult, labelTrailing: tmp18Result, children: tmp31(tmp32, obj9) };
   tmp18Result = undefined;
-  const Input = tmp3(7069).Input;
+  const Input = tmp3(7077).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16381), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16433), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
   obj9 = { style: tmp.card, children: items5 };
   let obj10 = { onPress: callback4, style: tmp.row, disabled, accessibilityRole: str, accessibilityLabel: stringResult, accessibilityState: tmp33, children: items4 };
   str = "switch";
-  const PressableHighlight = tmp3(6968).PressableHighlight;
+  const PressableHighlight = tmp3(6974).PressableHighlight;
   if (availability === constants5.LOCKED) {
     str = "button";
   }
@@ -615,7 +313,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
       obj14 = { style: tmp.nameMask, children: items2 };
       items2 = [, ];
       const obj15 = { colors, style: tmp.nameMaskOpaque };
-      const tmp6Result2 = _modDef7026;
+      const tmp6Result2 = _modDef7032;
       items2[0] = tmp18(LinearGradientDefault, obj15);
       const obj16 = { colors: colors2, start: null, end: null, style: tmp.nameMaskFade };
       ({ START: obj22.start, END: obj22.end } = closure_11);
@@ -630,15 +328,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileH
   items3[1] = tmp18(closure_6, obj17);
   items4 = [tmp31(tmp32, obj12), ];
   if (availability === constants5.LOCKED) {
-    tmp18Result4 = tmp18(tmp3(6972).TableRowArrow, {});
+    tmp18Result4 = tmp18(tmp3(6978).TableRowArrow, {});
   } else {
     const obj20 = { "aria-hidden": true, value: result, onValueChange: callback2, disabled };
-    tmp18Result4 = tmp18(tmp3(7356).FormSwitch, obj20);
+    tmp18Result4 = tmp18(tmp3(7364).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16374), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16426), { showLearnMore: true })];
   return tmp18(Input, obj6);
-});
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileHexagonCampaignDisplayNameStyleEditButton.tsx");
-
-export default tmp8;
+};

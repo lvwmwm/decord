@@ -1,12 +1,12 @@
-// Module ID: 19344
-// Function ID: 19345
+// Module ID: 19408
+// Function ID: 19409
 // Name: trackInAppReportsFeedback
-// Dependencies: [1084, 1264, 2]
+// Dependencies: [1072, 1253, 2]
 // Exports: default
 
-// Module 19344 (trackInAppReportsFeedback)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+// Module 19408 (trackInAppReportsFeedback)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

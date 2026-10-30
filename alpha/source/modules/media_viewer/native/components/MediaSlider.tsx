@@ -1,17 +1,17 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 8838
+// Function ID: 8839
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5005, 1381, 5636, 12, 683, 8227, 6968, 1125, 8805, 8807, 5271, 8809, 8818, 587, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 1376, 5607, 12, 671, 8230, 6974, 1114, 8839, 8841, 5619, 8843, 8852, 575, 2]
 // Exports: default
 
-// Module 8804 (MediaSlider)
+// Module 8838 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -78,14 +78,14 @@ export default function MediaSlider(controls) {
   _slicedToArray(react.useState("transparent"), 2);
   ref = react.useRef(0);
   [first1, closure_9] = react.useState(0);
-  const tmp13 = paused(5636)(() => {
+  const tmp13 = paused(5607)(() => {
     const obj = _modDef12;
     return obj.throttle((arg0) => {
       closure_1_5(arg0);
     }, 100);
   });
   let closure_10 = tmp13;
-  let closure_11 = paused(5636)(() => {
+  let closure_11 = paused(5607)(() => {
     let obj = _modDef12;
     return obj.throttle((arg0) => {
       closure_1_6(arg0);
@@ -128,7 +128,7 @@ export default function MediaSlider(controls) {
       tmp2.current = false;
     }
   }, items2);
-  let obj = controls(8227);
+  let obj = controls(8230);
   const obj2 = { style: items3, children: items4 };
   items3 = [tmp.container, style];
   const timeFormat = obj.getTimeFormat(tmp3);
@@ -145,45 +145,45 @@ export default function MediaSlider(controls) {
     hitSlop: { top: 8, right: 8, bottom: 8, left: 8 },
     children: closure_6(PauseIcon, { size: "md", color: "white" })
   };
-  const PressableOpacity = controls(6968).PressableOpacity;
-  const intl = controls(1125).intl;
+  const PressableOpacity = controls(6974).PressableOpacity;
+  const intl = controls(1114).intl;
   const string = intl.string;
-  const t = controls(1125).t;
+  const t = controls(1114).t;
   if (paused) {
     stringResult = string(t.RscU7I);
   } else {
     stringResult = string(t.ZcgDJX);
   }
   if (paused) {
-    PauseIcon = tmp18(8805).PlayIcon;
+    PauseIcon = tmp18(8839).PlayIcon;
   } else {
-    PauseIcon = tmp18(8807).PauseIcon;
+    PauseIcon = tmp18(8841).PauseIcon;
   }
   items4 = [closure_6(PressableOpacity, obj3), , , ];
   const obj4 = { style: items5, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
   items5 = [tmp.centerText, { width: first1 }];
-  items4[1] = closure_6(controls(5271).Text, obj4);
+  items4[1] = closure_6(controls(5619).Text, obj4);
   const obj5 = { style: tmp.sliderContainer, children: items7 };
   const obj6 = { pointerEvents: "none", style: tmp.progressSliderContainer, children: items6 };
   const obj7 = { style: tmp.timelineBackgroundSlider, value: 1, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult.hex(), minimumTrackTintColor: alphaResult1.hex(), maximumTrackTintColor: alphaResult2.hex() };
-  const tmp11Result = paused(8809);
-  const obj8 = paused(683)("#FFFFFF");
+  const tmp11Result = paused(8843);
+  const obj8 = paused(671)("#FFFFFF");
   alphaResult = obj8.alpha(0);
-  const obj10 = paused(683)("#FFFFFF");
+  const obj10 = paused(671)("#FFFFFF");
   alphaResult1 = obj10.alpha(0.1);
-  const obj12 = paused(683)("#FFFFFF");
+  const obj12 = paused(671)("#FFFFFF");
   alphaResult2 = obj12.alpha(0.1);
   items6 = [closure_6(tmp11Result, obj7), ];
   const obj9 = { style: tmp.downloadProgressSlider, value: first, minimumValue: 0, maximumValue: 1, thumbTintColor: alphaResult3.hex(), minimumTrackTintColor: alphaResult4.hex(), maximumTrackTintColor: tmp7 };
-  const tmp11Result3 = paused(8809);
-  const obj15 = paused(683)("#FFFFFF");
+  const tmp11Result3 = paused(8843);
+  const obj15 = paused(671)("#FFFFFF");
   alphaResult3 = obj15.alpha(0);
-  const obj17 = paused(683)("#FFFFFF");
+  const obj17 = paused(671)("#FFFFFF");
   alphaResult4 = obj17.alpha(0.2);
   items6[1] = closure_6(tmp11Result3, obj9);
   items7 = [c7(c5, obj6), ];
-  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8818), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(587).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
-  const tmp11Result4 = paused(8809);
+  const obj11 = { style: tmp.playbackSlider, value: tmp3, thumbImage: paused(8852), minimumValue: 0, maximumValue: ref.current, minimumTrackTintColor: paused(575).unsafe_rawColors.WHITE, maximumTrackTintColor: "transparent", onValueChange: tmp13, onSlidingStart: callback, onSlidingComplete: callback1 };
+  const tmp11Result4 = paused(8843);
   items7[1] = closure_6(tmp11Result4, obj11);
   items4[2] = c7(c5, obj5);
   const obj13 = {
@@ -197,8 +197,8 @@ export default function MediaSlider(controls) {
     },
     children: tmp18Result.getTimeFormat(ref.current)
   };
-  const Text = tmp18(5271).Text;
-  tmp18Result = controls(8227);
+  const Text = tmp18(5619).Text;
+  tmp18Result = controls(8230);
   items4[3] = closure_6(Text, obj13);
   return c7(c5, obj2);
 };

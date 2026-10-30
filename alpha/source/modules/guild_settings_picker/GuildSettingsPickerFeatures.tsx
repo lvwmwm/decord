@@ -1,17 +1,17 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15673
+// Function ID: 15674
 // Name: GuildSettingsPickerFeatures
-// Dependencies: [32, 19, 4937, 15634, 15635, 1125, 504, 2]
+// Dependencies: [32, 19, 4941, 15674, 15675, 1114, 504, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 15633 (GuildSettingsPickerFeatures)
+// Module 15673 (GuildSettingsPickerFeatures)
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1125 */;
-import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15634 */;
-import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15635 */;
+import intl2 from "intl" /* 1114 */;
+import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15674 */;
+import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15675 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 let obj = { "server-subscriptions-onboarding": RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault, "server-subscriptions-create-tier-from-template": RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault };

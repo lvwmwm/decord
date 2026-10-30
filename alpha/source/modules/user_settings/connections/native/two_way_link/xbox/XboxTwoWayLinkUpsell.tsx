@@ -1,22 +1,21 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16818
+// Function ID: 16819
 // Name: XboxTwoWayLinkUpsell
-// Dependencies: [19, 1084, 21, 5005, 558, 576, 2065, 16765, 1125, 5707, 16766, 9676, 4841, 2]
+// Dependencies: [19, 1072, 21, 5009, 2062, 16819, 1114, 5712, 16820, 4842, 9701, 2]
+// Exports: XboxTwoWayLinkUpsell
 
-// Module 16764 (XboxTwoWayLinkUpsell)
+// Module 16818 (XboxTwoWayLinkUpsell)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9676 */;
-import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16765 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16766 */;
+import intl3 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 9701 */;
+import OneWayToTwoWayLinkUpsell2 from "OneWayToTwoWayLinkUpsell" /* 16819 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16820 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import Constants from "Constants" /* 1072 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -24,63 +23,9 @@ let closure_4;
 ({ HelpdeskArticles: c3, AnalyticsLocations: closure_4 } = Constants);
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ upsellImage: { alignSelf: "center", width: 84, marginLeft: 16 } });
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLinkUpsell() {
-  let tmp13;
-  let tmp18;
-  let tmp19;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let obj = react2;
-  const cResult = obj.c(8);
-  const tmp4 = closure_6();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = HelpdeskUtilsDefault;
-    const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-    const OneWayToTwoWayLinkUpsell = tmp(16765).OneWayToTwoWayLinkUpsell;
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl3.t["2okkZV"]);
-    const intl2 = tmp(1125).intl;
-    const obj3 = { help_article: articleURL };
-    const formatResult = intl2.format(intl3.t.OnERSS, obj3);
-    cResult[0] = OneWayToTwoWayLinkUpsell;
-    cResult[1] = stringResult;
-    cResult[2] = formatResult;
-    tmp6 = stringResult;
-    tmp7 = formatResult;
-  } else {
-    [tmp5, tmp6, tmp7] = cResult;
-  }
-  if (cResult[3] !== tmp4.upsellImage) {
-    FastImageDefault;
-    const tmp17 = <tmp16 style={tmp4.upsellImage} source={AssetRegistryDefault} resizeMode="contain" />;
-    cResult[3] = tmp4.upsellImage;
-    cResult[4] = tmp17;
-    tmp13 = tmp17;
-  } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function p() {
-      const items = [constants.RELINK_UPSELL];
-      const obj = XboxLinkModalActionCreatorsDefault;
-      return obj.showModal(items);
-    };
-    cResult[5] = fn;
-    tmp18 = fn;
-  } else {
-    tmp18 = cResult[5];
-  }
-  if (cResult[6] !== tmp13) {
-    const tmp21 = <tmp5 title={tmp6} body={tmp7} img={tmp13} newIndicatorDismissibleContent={dismissible_content.DismissibleContent.XBOX_ONE_WAY_RECONNECT} onPress={tmp18} />;
-    cResult[6] = tmp13;
-    cResult[7] = tmp21;
-    tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[7];
-  }
-  return tmp19;
-}) : (function XboxTwoWayLinkUpsell() {
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
+
+export function XboxTwoWayLinkUpsell() {
   const tmp = closure_6();
   let obj = HelpdeskUtilsDefault;
   const articleURL = obj.getArticleURL(constants.XBOX_CONNECTION);
@@ -94,7 +39,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxTwoWayLi
     const obj = XboxLinkModalActionCreatorsDefault;
     return obj.showModal(items);
   }} />;
-});
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxTwoWayLinkUpsell.tsx");
-
-export const XboxTwoWayLinkUpsell = tmp4;
+}

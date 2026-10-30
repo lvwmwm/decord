@@ -1,192 +1,40 @@
-// Module ID: 7543
-// Function ID: 7544
+// Module ID: 7551
+// Function ID: 7552
 // Name: SearchBarNav
-// Dependencies: [109, 19, 17, 21, 5005, 5305, 587, 558, 576, 1125, 1381, 6988, 5271, 6968, 7205, 2]
+// Dependencies: [19, 17, 21, 5009, 5581, 575, 6974, 1114, 1376, 6996, 5619, 7212, 2]
+// Exports: default
 
-// Module 7543 (SearchBarNav)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl3 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import Pressables from "Pressables" /* 6968 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 7551 (SearchBarNav)
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import Pressables from "Pressables" /* 6974 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
+let c2;
+let c3;
 let closure_4;
-let hasOwnProperty;
-let metroRequire;
 let obj2;
 let obj3;
 let obj4;
-let closure_2 = ["onClose", "ref"];
-({ View: closure_4, StyleSheet } = react_native);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
+({ View: c2, StyleSheet } = react_native);
+({ jsx: c3, jsxs: closure_4 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, cancelText: obj3, cancelIcon: obj4, flex: { flex: 1 } };
 obj2 = { flexDirection: "row", alignItems: "center", height: NavigatorConstants.NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG };
 createStyles = createStyles.createStyles;
 obj3 = { paddingLeft: nativeDefault.space.PX_16 };
 obj4 = { marginRight: nativeDefault.space.PX_16 };
-let closure_7 = createStyles(obj);
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav(arg0) {
-  let SearchBar;
-  let intl2;
-  let items;
-  let obj5;
-  let onClose;
-  let ref;
-  let tmp11;
-  let tmp13;
-  let tmp15Result;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(27);
-  if (cResult[0] !== arg0) {
-    ({ onClose, ref } = arg0);
-    const tmp9 = _objectWithoutProperties(arg0, closure_2);
-    cResult[0] = arg0;
-    cResult[1] = onClose;
-    cResult[2] = tmp9;
-    cResult[3] = ref;
-    tmp6 = ref;
-    tmp5 = tmp9;
-    tmp4 = onClose;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-  }
-  const tmp10 = closure_7();
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl3.t["ETE/oC"]);
-    cResult[4] = stringResult;
-    tmp11 = stringResult;
-  } else {
-    tmp11 = cResult[4];
-  }
-  if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-    const rect = { top: 8, right: 8, bottom: 8, left: 8 };
-    cResult[5] = rect;
-    tmp13 = rect;
-  } else {
-    tmp13 = cResult[5];
-  }
-  if (cResult[6] === tmp10.cancelIcon) {
-    let tmp14;
-    if (cResult[7] === tmp10.cancelText) {
-      tmp14 = cResult[8];
-    }
-    if (cResult[9] === tmp4) {
-      let tmp17;
-      let tmp20;
-      if (cResult[10] === tmp14) {
-        tmp17 = cResult[11];
-      }
-      if (cResult[12] !== tmp17) {
-        let tmp21 = null;
-        const tmpResult = PlatformUtils;
-        if (tmpResult.isAndroid()) {
-          tmp21 = tmp17;
-        }
-        cResult[12] = tmp17;
-        cResult[13] = tmp21;
-        tmp20 = tmp21;
-      } else {
-        tmp20 = cResult[13];
-      }
-      if (cResult[14] === tmp5) {
-        let tmp22;
-        if (cResult[15] === tmp6) {
-          tmp22 = cResult[16];
-        }
-        if (cResult[17] === tmp10.flex) {
-          let tmp29;
-          let tmp33;
-          if (cResult[18] === tmp22) {
-            tmp29 = cResult[19];
-          }
-          if (cResult[20] !== tmp17) {
-            let tmp34 = null;
-            const tmpResult3 = PlatformUtils;
-            if (!tmpResult3.isAndroid()) {
-              tmp34 = tmp17;
-            }
-            cResult[20] = tmp17;
-            cResult[21] = tmp34;
-            tmp33 = tmp34;
-          } else {
-            tmp33 = cResult[21];
-          }
-          if (cResult[22] === tmp10.container) {
-            if (cResult[23] === tmp20) {
-              if (cResult[24] === tmp29) {
-                let tmp35;
-                if (cResult[25] === tmp33) {
-                  tmp35 = cResult[26];
-                }
-                return tmp35;
-              }
-            }
-          }
-          const obj2 = { style: tmp10.container, children: items };
-          items = [tmp20, tmp29, tmp33];
-          const tmp38 = metroRequire(React3, obj2);
-          cResult[22] = tmp10.container;
-          cResult[23] = tmp20;
-          cResult[24] = tmp29;
-          cResult[25] = tmp33;
-          cResult[26] = tmp38;
-          tmp35 = tmp38;
-        }
-        const obj3 = { style: tmp10.flex, children: tmp22 };
-        const tmp32 = hasOwnProperty(React3, obj3);
-        cResult[17] = tmp10.flex;
-        cResult[18] = tmp22;
-        cResult[19] = tmp32;
-        tmp29 = tmp32;
-      }
-      const obj4 = { children: hasOwnProperty(SearchBar, obj5) };
-      obj5 = { size: "md", round: true, ref: tmp6 };
-      SearchBar = tmp(7205).SearchBar;
-      const merged = Object.assign(tmp5);
-      const tmp28 = hasOwnProperty(React3, obj4);
-      cResult[14] = tmp5;
-      cResult[15] = tmp6;
-      cResult[16] = tmp28;
-      tmp22 = tmp28;
-    }
-    const obj6 = { accessibilityRole: "button", accessibilityLabel: tmp11, onPress: tmp4, hitSlop: tmp13, children: tmp14 };
-    const tmp19 = hasOwnProperty(Pressables.PressableOpacity, obj6);
-    cResult[9] = tmp4;
-    cResult[10] = tmp14;
-    cResult[11] = tmp19;
-    tmp17 = tmp19;
-  }
-  const tmpResult4 = PlatformUtils;
-  if (tmpResult4.isAndroid()) {
-    const obj7 = { style: tmp10.cancelIcon };
-    tmp15Result = tmp15(tmp(6988).ArrowLargeLeftIcon, obj7);
-  } else {
-    const obj8 = { style: tmp10.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp(5271).Text;
-    intl2 = tmp(1125).intl;
-    tmp15Result = tmp15(Text, obj8);
-  }
-  cResult[6] = tmp10.cancelIcon;
-  cResult[7] = tmp10.cancelText;
-  cResult[8] = tmp15Result;
-  tmp14 = tmp15Result;
-}) : (function SearchBarNav(arg0) {
+let closure_5 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/SearchBarNav.tsx");
+
+export default function SearchBarNav(arg0) {
   let SearchBar;
   let intl;
   let intl2;
@@ -198,43 +46,40 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchBarNav
   let tmp3Result;
   ({ onClose, ref } = arg0);
   const merged = Object.assign(arg0, Object.assign({ onClose: 0, ref: 0 }));
-  const tmp2 = closure_7();
+  const tmp2 = closure_5();
   const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl3.t["ETE/oC"]), onPress: onClose, hitSlop: { top: 8, right: 8, bottom: 8, left: 8 }, children: tmp3Result };
   const PressableOpacity = Pressables.PressableOpacity;
   intl = intl3.intl;
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(6988).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(6996).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(5271).Text;
-    intl2 = tmp4(1125).intl;
+    const Text = tmp4(5619).Text;
+    intl2 = tmp4(1114).intl;
     tmp3Result = tmp3(Text, obj4);
   }
-  const tmp3Result2 = hasOwnProperty(PressableOpacity, obj);
+  const tmp3Result2 = _false(PressableOpacity, obj);
   let tmp10 = null;
   const obj5 = { style: tmp2.container, children: items };
   const tmp4Result = PlatformUtils;
-  const tmp8 = metroRequire;
+  const tmp8 = React3;
   if (tmp4Result.isAndroid()) {
     tmp10 = tmp3Result2;
   }
   items = [tmp10, , ];
-  const obj6 = { style: tmp2.flex, children: hasOwnProperty(React3, obj7) };
-  obj7 = { children: hasOwnProperty(SearchBar, obj8) };
+  const obj6 = { style: tmp2.flex, children: _false(React2, obj7) };
+  obj7 = { children: _false(SearchBar, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchBar = tmp4(7205).SearchBar;
+  SearchBar = tmp4(7212).SearchBar;
   const merged1 = Object.assign(merged);
-  items[1] = hasOwnProperty(React3, obj6);
+  items[1] = _false(React2, obj6);
   let tmp12 = null;
   const tmp4Result2 = PlatformUtils;
   if (!tmp4Result2.isAndroid()) {
     tmp12 = tmp3Result2;
   }
   items[2] = tmp12;
-  return tmp8(React3, obj5);
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/SearchBarNav.tsx");
-
-export default tmp6;
+  return tmp8(React2, obj5);
+};

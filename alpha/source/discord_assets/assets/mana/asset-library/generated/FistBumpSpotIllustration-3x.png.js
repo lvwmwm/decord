@@ -1,8 +1,8 @@
-// Module ID: 15252
-// Function ID: 15253
+// Module ID: 15292
+// Function ID: 15293
 // Dependencies: [2]
 
-// Module 15252
+// Module 15292
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FistBumpSpotIllustration-3x.png.js");

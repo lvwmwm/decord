@@ -1,175 +1,45 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18685
+// Function ID: 18686
 // Name: SearchMediaImage
-// Dependencies: [109, 32, 19, 17, 4857, 6850, 1084, 21, 5005, 558, 576, 5242, 5012, 7454, 14440, 8611, 5623, 504, 8803, 1496, 13576, 1381, 5707, 1125, 9411, 13107, 1402, 6740, 8797, 9348, 12157, 2]
+// Dependencies: [32, 19, 17, 4858, 6857, 1072, 21, 5009, 5248, 5016, 7462, 14473, 8645, 5595, 504, 8837, 1491, 13725, 1376, 5712, 1114, 9428, 11062, 1397, 6747, 8831, 9362, 11092, 2]
+// Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 18626 (SearchMediaImage)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import FlagUtils from "FlagUtils" /* 1402 */;
-import shared from "shared" /* 5012 */;
-import useThemeDefault from "useTheme" /* 5242 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6740 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 7454 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8611 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8797 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 13107 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13576 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 14440 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+// Module 18685 (SearchMediaImage)
+import Constants from "Constants" /* 1072 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 7462 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8645 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8831 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9362 */;
+import AttachmentPreview from "AttachmentPreview" /* 11092 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13725 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 14473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SearchMessageStore from "SearchMessageStore" /* 6850 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SearchMessageStore from "SearchMessageStore" /* 6857 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, flag;
+let dependencyMap;
 
 let c10;
-let c9;
-let closure_14;
-let closure_15;
-let closure_16;
-let tmp;
-let tmp5;
-const VisualEffectViewDefault = tmp5(5623);
-const CirclePlayIcon = tmp(9348);
-const AttachmentPreview = tmp(12157);
-let closure_3 = ["attachment", "channelId", "authorId"];
-let closure_4 = ["embed", "sources", "messageId", "channelId", "authorId"];
-let closure_5 = ["unfurledMediaItem", "sources", "channelId", "authorId", "isBot"];
-({ StyleSheet: c9, View: c10 } = react_native);
-const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
-({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = Fragment);
-let closure_17 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center" }, sound: { justifyContent: "center", alignItems: "center" } });
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchMediaObscurityIcon(arg0) {
-  let height;
-  let items1;
-  let items2;
-  let obscureReason;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(16);
-  ({ obscureReason, height, width } = arg0);
-  const tmp4 = closure_17();
-  let str = "light";
-  const tmp6 = useThemeDefault();
-  const obj2 = shared;
-  if (obj2.isThemeDark(tmp6)) {
-    str = "dark";
-  }
-  if (cResult[0] === height) {
-    let tmp7;
-    let tmp8;
-    let tmp17;
-    if (cResult[1] === width) {
-      tmp7 = cResult[2];
-    }
-    if (ObscureMediaModels.ObscureReason.SPOILER === obscureReason) {
-      let tmp14;
-      const _Symbol2 = Symbol;
-      if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp16 = syncedClientThemes(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
-        cResult[3] = tmp16;
-        tmp14 = tmp16;
-      } else {
-        tmp14 = cResult[3];
-      }
-      tmp8 = tmp14;
-    } else {
-      let tmp10;
-      if (ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {
-        if (ObscureMediaModels.ObscureReason.GORE_CONTENT !== obscureReason) {
-          if (ObscureMediaModels.ObscureReason.SELF_HARM_CONTENT !== obscureReason) {
-            if (ObscureMediaModels.ObscureReason.POTENTIAL_EXPLICIT_CONTENT === obscureReason) {
-              tmp8 = null;
-            }
-          }
-        }
-      }
-      const _Symbol = Symbol;
-      if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-        const tmp12 = syncedClientThemes(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
-        cResult[4] = tmp12;
-        tmp10 = tmp12;
-      } else {
-        tmp10 = cResult[4];
-      }
-      tmp8 = tmp10;
-    }
-    if (cResult[5] !== tmp7) {
-      const items = [React4.absoluteFill, tmp7];
-      cResult[5] = tmp7;
-      cResult[6] = items;
-      tmp17 = items;
-    } else {
-      tmp17 = cResult[6];
-    }
-    if (cResult[7] === str) {
-      let tmp19;
-      if (cResult[8] === tmp17) {
-        tmp19 = cResult[9];
-      }
-      if (cResult[10] === tmp8) {
-        let tmp22;
-        if (cResult[11] === tmp4) {
-          tmp22 = cResult[12];
-        }
-        if (cResult[13] === tmp19) {
-          let tmp28;
-          if (cResult[14] === tmp22) {
-            tmp28 = cResult[15];
-          }
-          return tmp28;
-        }
-        const obj3 = { children: items1 };
-        items1 = [tmp19, tmp22];
-        const tmp31 = authStore3(closure_15, obj3);
-        cResult[13] = tmp19;
-        cResult[14] = tmp22;
-        cResult[15] = tmp31;
-        tmp28 = tmp31;
-      }
-      let tmp24 = null != tmp8;
-      if (tmp24) {
-        const obj4 = { style: items2, children: tmp8 };
-        items2 = [React4.absoluteFill, tmp4.container];
-        tmp24 = syncedClientThemes(authStore, obj4);
-      }
-      cResult[10] = tmp8;
-      cResult[11] = tmp4;
-      cResult[12] = tmp24;
-      tmp22 = tmp24;
-    }
-    const obj5 = { blurTheme: str, style: tmp17 };
-    const tmp21 = syncedClientThemes(VisualEffectViewDefault, obj5);
-    cResult[7] = str;
-    cResult[8] = tmp17;
-    cResult[9] = tmp21;
-    tmp19 = tmp21;
-  }
-  size = { height, width };
-  cResult[0] = height;
-  cResult[1] = width;
-  cResult[2] = size;
-  tmp7 = size;
-}) : (function SearchMediaObscurityIcon(obscureReason) {
+let closure_12;
+let hasOwnProperty;
+let metroRequire;
+let unpackModuleId;
+function SearchMediaObscurityIcon(obscureReason) {
   let items2;
   let items4;
   obscureReason = obscureReason.obscureReason;
   const height = obscureReason.height;
   const width = obscureReason.width;
-  const tmp = closure_17();
+  const tmp = closure_13();
   let str = "light";
-  const tmp4 = height(width[11])();
-  const obj = obscureReason(width[12]);
+  const tmp4 = height(width[8])();
+  const obj = obscureReason(width[9]);
   const tmp2 = height;
   const tmp3 = width;
   if (obj.isThemeDark(tmp4)) {
@@ -183,7 +53,7 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
   }, items);
   const memo1 = react.useMemo(() => {
     if (ObscureMediaModels.ObscureReason.SPOILER === obscureReason) {
-      return syncedClientThemes(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
+      return authStore(generated_SpoilerIcon.SpoilerIcon, { size: "lg" });
     } else {
       if (ObscureMediaModels.ObscureReason.EXPLICIT_CONTENT !== obscureReason) {
         if (ObscureMediaModels.ObscureReason.GORE_CONTENT !== obscureReason) {
@@ -194,295 +64,30 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function Search
           }
         }
       }
-      return syncedClientThemes(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
+      return authStore(ImageWarningIcon.ImageWarningIcon, { size: "lg" });
     }
   }, items1);
   const obj2 = { blurTheme: str, style: items2 };
-  items2 = [closure_9.absoluteFill, memo];
-  const children = [closure_14(tmp2(tmp3[16]), obj2), ];
+  items2 = [closure_5.absoluteFill, memo];
+  const children = [closure_10(tmp2(tmp3[13]), obj2), ];
   let tmp9Result = null != memo1;
-  const tmp10 = closure_9;
-  const tmp7 = closure_16;
-  const tmp8 = closure_15;
-  const tmp9 = closure_14;
+  const tmp10 = closure_5;
+  const tmp7 = closure_12;
+  const tmp8 = closure_11;
+  const tmp9 = closure_10;
   if (tmp9Result) {
     const obj3 = { style: items4, children: memo1 };
     items4 = [tmp10.absoluteFill, tmp.container];
-    tmp9Result = tmp9(closure_10, obj3);
+    tmp9Result = tmp9(closure_6, obj3);
   }
   children[1] = tmp9Result;
   return tmp7(tmp8, { children });
-});
-let memo = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function SearchMediaImage(channelId) {
-  let containerHeight;
-  let containerStyle;
-  let containerWidth;
-  let items2;
-  let items3;
-  let mediaHeight;
-  let mediaUrl;
-  let mediaWidth;
-  let obscureReason;
-  let placeholder;
-  let placeholderVersion;
-  let renderFallback;
-  let scale;
-  let tmp18;
-  let tmp19;
-  const obj = channelId(576);
-  const cResult = obj.c(48);
-  channelId = channelId.channelId;
-  ({ mediaUrl, mediaHeight, mediaWidth, containerStyle, placeholder, placeholderVersion, renderFallback, obscureReason, containerHeight, containerWidth, scale } = channelId);
-  if (cResult[0] === containerHeight) {
-    let tmp4;
-    let tmp6;
-    let tmp8;
-    let tmp11;
-    let tmp51;
-    if (cResult[1] === containerWidth) {
-      tmp4 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const items = [ChannelStore];
-      cResult[3] = items;
-      tmp6 = items;
-    } else {
-      tmp6 = cResult[3];
-    }
-    if (cResult[4] !== channelId) {
-      const fn = function _() {
-        return ChannelStore.getChannel(channelId);
-      };
-      cResult[4] = channelId;
-      cResult[5] = fn;
-      tmp8 = fn;
-    } else {
-      tmp8 = cResult[5];
-    }
-    const tmpResult = channelId(504);
-    const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp8);
-    const tmpResult6 = channelId(8803);
-    const shouldDisplaySpoilerObscurity = tmpResult6.useShouldDisplaySpoilerObscurity(stateFromStores);
-    if (obscureReason !== channelId(7454).ObscureReason.SPOILER) {
-      tmp11 = obscureReason;
-    } else {
-      tmp11 = null;
-    }
-    if (null != mediaUrl) {
-      if (null != mediaHeight) {
-        if (null != mediaWidth) {
-          let items5;
-          if (cResult[8] === containerHeight) {
-            if (cResult[9] === containerWidth) {
-              if (cResult[10] === mediaHeight) {
-                if (cResult[11] === mediaUrl) {
-                  if (cResult[12] === mediaWidth) {
-                    let tmp13;
-                    let tmp21;
-                    if (cResult[13] === scale) {
-                      tmp13 = cResult[14];
-                    }
-                    if (cResult[15] !== tmp11) {
-                      const tmpResult7 = channelId(13576);
-                      const obscuredAlt = tmpResult7.getObscuredAlt(tmp11);
-                      cResult[15] = tmp11;
-                      cResult[16] = obscuredAlt;
-                      tmp21 = obscuredAlt;
-                    } else {
-                      tmp21 = cResult[16];
-                    }
-                    if (cResult[17] === containerHeight) {
-                      if (cResult[18] === containerWidth) {
-                        let tmp23;
-                        let tmp27;
-                        if (cResult[19] === tmp11) {
-                          tmp23 = cResult[20];
-                        }
-                        const tmpResult8 = channelId(1381);
-                        if (tmpResult8.isAndroid()) {
-                          if (null != tmp11) {
-                            let tmp36;
-                            let tmp38;
-                            if (cResult[21] !== tmp4) {
-                              const items1 = [closure_9.absoluteFill, tmp4];
-                              cResult[21] = tmp4;
-                              cResult[22] = items1;
-                              tmp36 = items1;
-                            } else {
-                              tmp36 = cResult[22];
-                            }
-                            if (cResult[23] !== tmp13) {
-                              const obj2 = { uri: tmp13 };
-                              cResult[23] = tmp13;
-                              cResult[24] = obj2;
-                              tmp38 = obj2;
-                            } else {
-                              tmp38 = cResult[24];
-                            }
-                            if (cResult[25] === tmp21) {
-                              if (cResult[26] === tmp36) {
-                                let tmp39;
-                                if (cResult[27] === tmp38) {
-                                  tmp39 = cResult[28];
-                                }
-                                if (cResult[29] === tmp4) {
-                                  let tmp43;
-                                  if (cResult[30] === tmp39) {
-                                    tmp43 = cResult[31];
-                                  }
-                                  if (cResult[32] === containerStyle) {
-                                    if (cResult[33] === tmp23) {
-                                      let tmp47;
-                                      if (cResult[34] === tmp43) {
-                                        tmp47 = cResult[35];
-                                      }
-                                      return tmp47;
-                                    }
-                                  }
-                                  const obj3 = { style: containerStyle, children: items2 };
-                                  items2 = [tmp43, tmp23];
-                                  const tmp50 = closure_16(closure_10, obj3);
-                                  cResult[32] = containerStyle;
-                                  cResult[33] = tmp23;
-                                  cResult[34] = tmp43;
-                                  cResult[35] = tmp50;
-                                  tmp47 = tmp50;
-                                }
-                                const obj4 = { style: tmp4, children: tmp39 };
-                                const tmp46 = closure_14(closure_10, obj4);
-                                cResult[29] = tmp4;
-                                cResult[30] = tmp39;
-                                cResult[31] = tmp46;
-                                tmp43 = tmp46;
-                              }
-                            }
-                            const obj5 = { style: tmp36, source: tmp38, blurRadius: 10, resizeMode: "cover", accessibilityLabel: tmp21 };
-                            const tmp42 = closure_14(FastImageDefault, obj5);
-                            cResult[25] = tmp21;
-                            cResult[26] = tmp36;
-                            cResult[27] = tmp38;
-                            cResult[28] = tmp42;
-                            tmp39 = tmp42;
-                          }
-                        }
-                        if (cResult[36] !== tmp21) {
-                          let stringResult = tmp21;
-                          const tmpResult9 = channelId(1381);
-                          if (tmpResult9.isAndroid()) {
-                            const intl = tmp(1125).intl;
-                            stringResult = intl.string(tmp(1125).t.jes7FG);
-                          }
-                          cResult[36] = tmp21;
-                          cResult[37] = stringResult;
-                          tmp27 = stringResult;
-                        } else {
-                          tmp27 = cResult[37];
-                        }
-                        if (cResult[38] === tmp27) {
-                          if (cResult[39] === placeholder) {
-                            if (cResult[40] === placeholderVersion) {
-                              if (cResult[41] === tmp4) {
-                                let tmp29;
-                                if (cResult[42] === tmp13) {
-                                  tmp29 = cResult[43];
-                                }
-                                if (cResult[44] === containerStyle) {
-                                  if (cResult[45] === tmp23) {
-                                    let tmp32;
-                                    if (cResult[46] === tmp29) {
-                                      tmp32 = cResult[47];
-                                    }
-                                    return tmp32;
-                                  }
-                                }
-                                const obj6 = { style: containerStyle, children: items3 };
-                                items3 = [tmp29, tmp23];
-                                const tmp35 = closure_16(closure_10, obj6);
-                                cResult[44] = containerStyle;
-                                cResult[45] = tmp23;
-                                cResult[46] = tmp29;
-                                cResult[47] = tmp35;
-                                tmp32 = tmp35;
-                              }
-                            }
-                          }
-                        }
-                        const obj7 = { style: tmp4, uri: tmp13, placeholder, placeholderVersion, alt: tmp27 };
-                        const tmp31 = closure_14(channelId(9411).ImageWithPlaceholder, obj7);
-                        cResult[38] = tmp27;
-                        cResult[39] = placeholder;
-                        cResult[40] = placeholderVersion;
-                        cResult[41] = tmp4;
-                        cResult[42] = tmp13;
-                        cResult[43] = tmp31;
-                        tmp29 = tmp31;
-                      }
-                    }
-                    let tmp24 = null;
-                    if (null != tmp11) {
-                      size = { obscureReason: tmp11, height: containerHeight, width: containerWidth };
-                      tmp24 = closure_14(closure_18, size);
-                    }
-                    cResult[17] = containerHeight;
-                    cResult[18] = containerWidth;
-                    cResult[19] = tmp11;
-                    cResult[20] = tmp24;
-                    tmp23 = tmp24;
-                  }
-                }
-              }
-            }
-          }
-          const result = containerHeight * scale;
-          const result1 = containerWidth * scale;
-          if (mediaWidth > mediaHeight) {
-            const _Math2 = Math;
-            const items4 = [Math.round(mediaWidth * (result1 / mediaHeight)), result1];
-            items5 = items4;
-          } else {
-            items5 = [result, ];
-            const _Math = Math;
-            items5[1] = Math.round(mediaHeight * (result / mediaWidth));
-          }
-          [tmp18, tmp19] = items5;
-          _slicedToArray(items5, 2);
-          const obj8 = { src: mediaUrl, sourceWidth: mediaWidth, sourceHeight: mediaHeight, targetWidth: tmp18, targetHeight: tmp19, format: "png" };
-          const tmpResult10 = channelId(1496);
-          const srcWithWidthAndHeight = tmpResult10.getSrcWithWidthAndHeight(obj8);
-          cResult[8] = containerHeight;
-          cResult[9] = containerWidth;
-          cResult[10] = mediaHeight;
-          cResult[11] = mediaUrl;
-          cResult[12] = mediaWidth;
-          cResult[13] = scale;
-          cResult[14] = srcWithWidthAndHeight;
-          tmp13 = srcWithWidthAndHeight;
-        }
-      }
-    }
-    if (cResult[6] !== renderFallback) {
-      let tmp52 = null;
-      if (null != renderFallback) {
-        const obj9 = { children: renderFallback() };
-        tmp52 = closure_14(closure_15, obj9);
-      }
-      cResult[6] = renderFallback;
-      cResult[7] = tmp52;
-      tmp51 = tmp52;
-    } else {
-      tmp51 = cResult[7];
-    }
-    return tmp51;
-  }
-  const size1 = { height: containerHeight, width: containerWidth };
-  cResult[0] = containerHeight;
-  cResult[1] = containerWidth;
-  cResult[2] = size1;
-  tmp4 = size1;
-}) : (function SearchMediaImage(containerWidth) {
+}
+({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
+const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
+({ jsx: c10, Fragment: unpackModuleId, jsxs: closure_12 } = Fragment);
+let closure_13 = createStyles.createStyles({ container: { justifyContent: "center", alignItems: "center" }, sound: { justifyContent: "center", alignItems: "center" } });
+let closure_15 = react.memo(function SearchMediaImage(containerWidth) {
   let containerHeight;
   let containerStyle;
   let items4;
@@ -497,7 +102,6 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   let placeholder;
   let placeholderVersion;
   let renderFallback;
-  let require;
   let tmp11;
   let tmp12;
   let tmp6;
@@ -512,7 +116,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
   }, items);
   const items1 = [ChannelStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items1, () => ChannelStore.getChannel(_require));
+  const stateFromStores = obj.useStateFromStores(items1, () => ChannelStore.getChannel(require));
   const obj2 = require("computeGlobalSpoilerDisplay");
   const shouldDisplaySpoilerObscurity = obj2.useShouldDisplaySpoilerObscurity(stateFromStores);
   if (obscureReason !== require("ObscureMediaModels").ObscureReason.SPOILER) {
@@ -545,144 +149,44 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function S
         let tmp15 = null;
         if (null != tmp6) {
           size = { obscureReason: tmp6, height: containerHeight, width: containerWidth };
-          tmp15 = closure_14(closure_18, size);
+          tmp15 = closure_10(SearchMediaObscurityIcon, size);
         }
         const tmp2Result5 = require("PlatformUtils");
         if (tmp2Result5.isAndroid()) {
           if (null != tmp6) {
             const obj4 = { style: containerStyle, children: items5 };
-            const obj5 = { style: memo, children: closure_14(containerHeight(containerWidth[22]), obj6) };
+            const obj5 = { style: memo, children: closure_10(containerHeight(containerWidth[19]), obj6) };
             obj6 = { style: items4, source: obj7, blurRadius: 10, resizeMode: "cover", accessibilityLabel: obscuredAlt };
-            items4 = [closure_9.absoluteFill, memo];
+            items4 = [closure_5.absoluteFill, memo];
             obj7 = { uri: srcWithWidthAndHeight };
-            items5 = [closure_14(closure_10, obj5), tmp15];
-            return closure_16(closure_10, obj4);
+            items5 = [closure_10(closure_6, obj5), tmp15];
+            return closure_12(closure_6, obj4);
           }
         }
         let stringResult = obscuredAlt;
         const tmp2Result6 = require("PlatformUtils");
         if (tmp2Result6.isAndroid()) {
-          const intl = tmp2(tmp3[23]).intl;
-          stringResult = intl.string(tmp2(tmp3[23]).t.jes7FG);
+          const intl = tmp2(tmp3[20]).intl;
+          stringResult = intl.string(tmp2(tmp3[20]).t.jes7FG);
         }
         const obj8 = { style: containerStyle, children: items6 };
         const obj9 = { style: memo, uri: srcWithWidthAndHeight, placeholder, placeholderVersion, alt: stringResult };
-        items6 = [closure_14(require("ImageWithPlaceholder").ImageWithPlaceholder, obj9), tmp15];
-        return closure_16(closure_10, obj8);
+        items6 = [closure_10(require("ImageWithPlaceholder").ImageWithPlaceholder, obj9), tmp15];
+        return closure_12(closure_6, obj8);
       }
     }
   }
   let tmp27 = null;
   if (null != renderFallback) {
     const obj10 = { children: renderFallback() };
-    tmp27 = closure_14(closure_15, obj10);
+    tmp27 = closure_10(closure_11, obj10);
   }
   return tmp27;
-}));
-ReactCompilerGating = ReactCompilerGating_mod;
-tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachmentMediaImage(arg0) {
-  let attachment;
-  let authorId;
-  let channelId;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(21);
-  if (cResult[0] !== arg0) {
-    ({ attachment, channelId, authorId } = arg0);
-    const tmp9 = _objectWithoutProperties(arg0, closure_3);
-    cResult[0] = arg0;
-    cResult[1] = attachment;
-    cResult[2] = authorId;
-    cResult[3] = channelId;
-    cResult[4] = tmp9;
-    tmp6 = tmp9;
-    tmp5 = channelId;
-    tmp4 = authorId;
-    size = attachment;
-  } else {
-    size = cResult[1];
-    tmp4 = cResult[2];
-    tmp5 = cResult[3];
-    tmp6 = cResult[4];
-  }
-  const tmpResult = useContentHarmTypes;
-  const enabledHarmTypesBitmaskForChannelAndAuthorId = tmpResult.useEnabledHarmTypesBitmaskForChannelAndAuthorId(tmp5, tmp4);
-  if (cResult[5] === size.flags) {
-    let tmp11;
-    if (cResult[6] === tmp5) {
-      tmp11 = cResult[7];
-    }
-    if (cResult[8] === size) {
-      if (cResult[9] === enabledHarmTypesBitmaskForChannelAndAuthorId) {
-        let tmp15;
-        let tmp17;
-        if (cResult[10] === tmp11) {
-          tmp15 = cResult[11];
-        }
-        if (cResult[12] !== size) {
-          const tmpResult5 = MediaSourceUtil;
-          const attachmentUrl = tmpResult5.getAttachmentUrl(size);
-          cResult[12] = size;
-          cResult[13] = attachmentUrl;
-          tmp17 = attachmentUrl;
-        } else {
-          tmp17 = cResult[13];
-        }
-        if (cResult[14] === size.height) {
-          if (cResult[15] === size.width) {
-            if (cResult[16] === tmp5) {
-              if (cResult[17] === tmp17) {
-                if (cResult[18] === tmp15) {
-                  let tmp19;
-                  if (cResult[19] === tmp6) {
-                    tmp19 = cResult[20];
-                  }
-                  return tmp19;
-                }
-              }
-            }
-          }
-        }
-        const obj2 = { channelId: tmp5, obscureReason: tmp15, mediaUrl: tmp17 };
-        const merged = Object.assign(tmp6);
-        ({ height: obj6.mediaHeight, width: obj6.mediaWidth } = size);
-        const tmp25 = syncedClientThemes(closure_19, obj2);
-        cResult[14] = size.height;
-        cResult[15] = size.width;
-        cResult[16] = tmp5;
-        cResult[17] = tmp17;
-        cResult[18] = tmp15;
-        cResult[19] = tmp6;
-        cResult[20] = tmp25;
-        tmp19 = tmp25;
-      }
-    }
-    const tmpResult6 = MessageAttachmentUtils;
-    const obscureReasonForAttachment = tmpResult6.getObscureReasonForAttachment(size, enabledHarmTypesBitmaskForChannelAndAuthorId, tmp11);
-    cResult[8] = size;
-    cResult[9] = enabledHarmTypesBitmaskForChannelAndAuthorId;
-    cResult[10] = tmp11;
-    cResult[11] = obscureReasonForAttachment;
-    tmp15 = obscureReasonForAttachment;
-  }
-  let num6 = size.flags;
-  const hasFlag = FlagUtils.hasFlag;
-  FlagUtils;
-  if (num6 == null) {
-    num6 = 0;
-  }
-  let hasFlagResult = hasFlag(num6, MessageAttachmentFlags.IS_SPOILER);
-  if (!hasFlagResult) {
-    const tmpResult8 = SpoilerChannelUtils;
-    hasFlagResult = tmpResult8.isChannelSpoilerGated(ChannelStore.getChannel(tmp5));
-  }
-  cResult[5] = size.flags;
-  cResult[6] = tmp5;
-  cResult[7] = hasFlagResult;
-  tmp11 = hasFlagResult;
-}) : (function SearchAttachmentMediaImage(attachment) {
+});
+let size = size_mod;
+let result = size.fileFinishedImporting("modules/search/native/components/list/SearchMediaImage.tsx");
+
+export function SearchAttachmentMediaImage(attachment) {
   let attachmentUrl;
   let c2;
   attachment = attachment.attachment;
@@ -690,17 +194,17 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachment
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(13107);
+  let obj = attachment(11062);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
-  const hasFlag = attachment(1402).hasFlag;
-  attachment(1402);
+  const hasFlag = attachment(1397).hasFlag;
+  attachment(1397);
   if (num == null) {
     num = 0;
   }
   let hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_SPOILER);
   if (!hasFlagResult) {
-    const tmp2Result = attachment(6740);
+    const tmp2Result = attachment(6747);
     hasFlagResult = tmp2Result.isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   }
   dependencyMap = hasFlagResult;
@@ -710,270 +214,25 @@ tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchAttachment
     return obj.getObscureReasonForAttachment(attachment, enabledHarmTypesBitmaskForChannelAndAuthorId, c2);
   }, items);
   const obj2 = { channelId, obscureReason: memo, mediaUrl: attachmentUrl };
-  const tmp2Result2 = attachment(8797);
+  const tmp2Result2 = attachment(8831);
   attachmentUrl = tmp2Result2.getAttachmentUrl(attachment);
   const merged1 = Object.assign(merged);
   ({ height: obj4.mediaHeight, width: obj4.mediaWidth } = attachment);
-  return closure_14(closure_19, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedMediaImage(embed) {
-  let authorId;
+  return closure_10(closure_15, obj2);
+}
+export function SearchEmbedMediaImage(embed) {
   let channelId;
-  let closure_0;
-  let closure_2;
-  let isChannelSpoilerGated;
-  let tmp14;
-  let tmp18;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp2 = dependencyMap;
-  let obj = require("react");
-  const cResult = obj.c(26);
-  if (cResult[0] !== embed) {
-    embed = embed.embed;
-    _require = embed;
-    const sources = embed.sources;
-    dependencyMap = sources;
-    const messageId = embed.messageId;
-    let closure_1 = messageId;
-    ({ channelId, authorId } = embed);
-    cResult[0] = embed;
-    cResult[1] = authorId;
-    cResult[2] = channelId;
-    cResult[3] = embed;
-    cResult[4] = messageId;
-    const tmp12 = _objectWithoutProperties(embed, isChannelSpoilerGated);
-    class M {
-      constructor() {
-        message = closure_12.getMessage(closure_1);
-        if (null == message) {
-          return null;
-        } else {
-          tmp2 = closure_0;
-          tmp3 = closure_2;
-          obj = closure_0(closure_2[28]);
-          tmp4 = closure_2;
-          flag = false;
-          flattenSourceResult = obj.flattenSource(closure_2, false);
-          flag2 = undefined;
-          if (flattenSourceResult != null) {
-            flag2 = flattenSourceResult.spoiler;
-          }
-          if (flag2 == null) {
-            flag2 = false;
-          }
-          tmp2Result = tmp2(tmp3[20]);
-          tmp7 = closure_0;
-          getObscureReasonForEmbed = tmp2Result.getObscureReasonForEmbed;
-          if (!flag2) {
-            flag2 = closure_4;
-          }
-          tmp8 = closure_3;
-          tmp9 = tmp2Result;
-          tmp10 = tmp7;
-          tmp11 = message;
-          tmp12 = flag2;
-          return getObscureReasonForEmbed(tmp7, message, flag2, closure_3);
-        }
-      }
-    }
-    cResult[6] = sources;
-    tmp8 = tmp12;
-    tmp5 = channelId;
-    tmp4 = authorId;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    _require = cResult[3];
-    closure_1 = cResult[4];
-    tmp8 = cResult[5];
-    dependencyMap = cResult[6];
-  }
-  const tmpResult = require("useContentHarmTypes");
-  const enabledHarmTypesBitmaskForChannelAndAuthorId = tmpResult.useEnabledHarmTypesBitmaskForChannelAndAuthorId(tmp5, tmp4);
-  if (cResult[7] !== tmp5) {
-    const channel = ChannelStore.getChannel(tmp5);
-    cResult[7] = tmp5;
-    cResult[8] = channel;
-    tmp14 = channel;
-  } else {
-    tmp14 = cResult[8];
-  }
-  const tmpResult5 = require("SpoilerChannelUtils");
-  isChannelSpoilerGated = tmpResult5.useIsChannelSpoilerGated(tmp14);
-  if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SearchMessageStore];
-    cResult[9] = items;
-    tmp18 = items;
-  } else {
-    tmp18 = cResult[9];
-  }
-  if (cResult[10] === tmp6) {
-    if (cResult[11] === enabledHarmTypesBitmaskForChannelAndAuthorId) {
-      if (cResult[12] === isChannelSpoilerGated) {
-        if (cResult[13] === tmp7) {
-          let tmp20;
-          let url;
-          let height;
-          let width;
-          if (cResult[14] === tmp9) {
-            tmp20 = cResult[15];
-          }
-          const tmpResult6 = require("get initialized");
-          const stateFromStores = tmpResult6.useStateFromStores(tmp18, tmp20);
-          const thumbnail = tmp6.thumbnail;
-          if (cResult[16] !== tmp6) {
-            const tmpResult7 = require("MediaSourceUtil");
-            const embedMedia = tmpResult7.getEmbedMedia(tmp6);
-            let embedUrl = null;
-            if (null != embedMedia) {
-              const tmpResult8 = require("MediaSourceUtil");
-              embedUrl = tmpResult8.getEmbedUrl(embedMedia);
-            }
-            cResult[16] = tmp6;
-            cResult[17] = embedMedia;
-            cResult[18] = embedUrl;
-            url = embedUrl;
-            size = embedMedia;
-          } else {
-            size = cResult[17];
-            url = cResult[18];
-          }
-          if (null != thumbnail) {
-            url = thumbnail.url;
-          }
-          if (null != thumbnail) {
-            height = thumbnail.height;
-          } else if (size != null) {
-            height = size.height;
-          }
-          if (null != thumbnail) {
-            width = thumbnail.width;
-          } else if (size != null) {
-            width = size.width;
-          }
-          if (cResult[19] === tmp5) {
-            if (cResult[20] === height) {
-              if (cResult[21] === url) {
-                if (cResult[22] === width) {
-                  if (cResult[23] === stateFromStores) {
-                    let tmp25;
-                    if (cResult[24] === tmp8) {
-                      tmp25 = cResult[25];
-                    }
-                    return tmp25;
-                  }
-                }
-              }
-            }
-          }
-          const obj2 = { channelId: tmp5, obscureReason: stateFromStores, mediaUrl: url, mediaHeight: height, mediaWidth: width };
-          const merged = Object.assign(tmp8);
-          const tmp31 = closure_14(closure_19, obj2);
-          class M {
-            constructor() {
-              message = closure_12.getMessage(closure_1);
-              if (null == message) {
-                return null;
-              } else {
-                tmp2 = closure_0;
-                tmp3 = closure_2;
-                obj = closure_0(closure_2[28]);
-                tmp4 = closure_2;
-                flag = false;
-                flattenSourceResult = obj.flattenSource(closure_2, false);
-                flag2 = undefined;
-                if (flattenSourceResult != null) {
-                  flag2 = flattenSourceResult.spoiler;
-                }
-                if (flag2 == null) {
-                  flag2 = false;
-                }
-                tmp2Result = tmp2(tmp3[20]);
-                tmp7 = closure_0;
-                getObscureReasonForEmbed = tmp2Result.getObscureReasonForEmbed;
-                if (!flag2) {
-                  flag2 = closure_4;
-                }
-                tmp8 = closure_3;
-                tmp9 = tmp2Result;
-                tmp10 = tmp7;
-                tmp11 = message;
-                tmp12 = flag2;
-                return getObscureReasonForEmbed(tmp7, message, flag2, closure_3);
-              }
-            }
-          }
-          cResult[19] = tmp5;
-          cResult[20] = height;
-          cResult[21] = url;
-          cResult[22] = width;
-          cResult[23] = stateFromStores;
-          cResult[24] = tmp8;
-          cResult[25] = tmp31;
-          tmp25 = tmp31;
-        }
-      }
-    }
-  }
-  class M {
-    constructor() {
-      message = closure_12.getMessage(closure_1);
-      if (null == message) {
-        return null;
-      } else {
-        tmp2 = closure_0;
-        tmp3 = closure_2;
-        obj = closure_0(closure_2[28]);
-        tmp4 = closure_2;
-        flag = false;
-        flattenSourceResult = obj.flattenSource(closure_2, false);
-        flag2 = undefined;
-        if (flattenSourceResult != null) {
-          flag2 = flattenSourceResult.spoiler;
-        }
-        if (flag2 == null) {
-          flag2 = false;
-        }
-        tmp2Result = tmp2(tmp3[20]);
-        tmp7 = closure_0;
-        getObscureReasonForEmbed = tmp2Result.getObscureReasonForEmbed;
-        if (!flag2) {
-          flag2 = closure_4;
-        }
-        tmp8 = closure_3;
-        tmp9 = tmp2Result;
-        tmp10 = tmp7;
-        tmp11 = message;
-        tmp12 = flag2;
-        return getObscureReasonForEmbed(tmp7, message, flag2, closure_3);
-      }
-    }
-  }
-  cResult[10] = tmp6;
-  cResult[11] = enabledHarmTypesBitmaskForChannelAndAuthorId;
-  cResult[12] = isChannelSpoilerGated;
-  cResult[13] = tmp7;
-  cResult[14] = tmp9;
-  cResult[15] = M;
-  tmp20 = M;
-}) : (function SearchEmbedMediaImage(embed) {
-  let channelId;
-  let height;
-  let width;
   embed = embed.embed;
   ({ sources: importDefault, messageId: dependencyMap, channelId } = embed);
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(13107);
-  closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = embed(6740);
-  closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
+  let obj = embed(11062);
+  let closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
+  const obj2 = embed(6747);
+  let closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [SearchMessageStore];
-  const thumbnail = embed.thumbnail;
+  let video = embed.thumbnail;
   const obj3 = embed(504);
   const stateFromStores = obj3.useStateFromStores(items, () => {
     const message = SearchMessageStore.getMessage(dependencyMap);
@@ -990,170 +249,55 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchEmbedM
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(13576).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(13576);
+      const getObscureReasonForEmbed = tmp2(13725).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(13725);
       if (!flag2) {
         flag2 = closure_4;
       }
       return getObscureReasonForEmbed(embed, message, flag2, closure_3);
     }
   });
-  const obj4 = embed(8797);
-  size = obj4.getEmbedMedia(embed);
+  if (video == null) {
+    video = embed.image;
+  }
+  if (video == null) {
+    video = embed.video;
+  }
   let embedUrl = null;
-  if (null != size) {
-    let tmp2Result = tmp2(8797);
-    embedUrl = tmp2Result.getEmbedUrl(size);
+  if (null != video) {
+    let tmp2Result = tmp2(8831);
+    const obj4 = { proxyURL: null, url: null };
+    ({ proxyURL: obj5.proxyURL, url: obj5.url } = video);
+    embedUrl = tmp2Result.getEmbedUrl(obj4);
   }
-  if (null != thumbnail) {
-    embedUrl = thumbnail.url;
-  }
-  if (null != thumbnail) {
-    height = thumbnail.height;
-  } else if (size != null) {
-    height = size.height;
-  }
-  if (null != thumbnail) {
-    width = thumbnail.width;
-  } else if (size != null) {
-    width = size.width;
-  }
-  const obj5 = { channelId, obscureReason: stateFromStores, mediaUrl: embedUrl, mediaHeight: height, mediaWidth: width };
-  const merged1 = Object.assign(merged);
-  return closure_14(closure_19, obj5);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchSoundMediaImage(arg0) {
-  let containerStyle;
   let height;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ height, width, containerStyle } = arg0);
-  const tmp4 = closure_17();
-  if (cResult[0] === height) {
-    let tmp5;
-    if (cResult[1] === width) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === containerStyle) {
-      if (cResult[4] === tmp5) {
-        let tmp6;
-        let tmp8;
-        let tmp11;
-        if (cResult[5] === tmp4.sound) {
-          tmp6 = cResult[6];
-        }
-        const _Symbol = Symbol;
-        if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp10 = syncedClientThemes(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" });
-          cResult[7] = tmp10;
-          tmp8 = tmp10;
-        } else {
-          tmp8 = cResult[7];
-        }
-        if (cResult[8] !== tmp6) {
-          const obj2 = { style: tmp6, children: tmp8 };
-          const tmp14 = syncedClientThemes(authStore, obj2);
-          cResult[8] = tmp6;
-          cResult[9] = tmp14;
-          tmp11 = tmp14;
-        } else {
-          tmp11 = cResult[9];
-        }
-        return tmp11;
-      }
-    }
-    const items = [tmp4.sound, containerStyle, tmp5];
-    cResult[3] = containerStyle;
-    cResult[4] = tmp5;
-    cResult[5] = tmp4.sound;
-    cResult[6] = items;
-    tmp6 = items;
+  if (video != null) {
+    height = video.height;
   }
-  size = { height, width };
-  cResult[0] = height;
-  cResult[1] = width;
-  cResult[2] = size;
-  tmp5 = size;
-}) : (function SearchSoundMediaImage(height) {
+  let width;
+  if (video != null) {
+    width = video.width;
+  }
+  const obj6 = { channelId, obscureReason: stateFromStores, mediaUrl: embedUrl, mediaHeight: height, mediaWidth: width };
+  const merged1 = Object.assign(merged);
+  return closure_10(closure_15, obj6);
+}
+export function SearchSoundMediaImage(height) {
   let items1;
-  let logger;
   height = height.height;
   const width = height.width;
   const containerStyle = height.containerStyle;
   const items = [height, width];
-  let tmp = closure_17();
-  const obj = { style: items1, children: syncedClientThemes(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" }) };
-  items1 = [
-    tmp.sound,
-    containerStyle,
-    react.useMemo(() => {
-      size = { height, width };
-      return size;
-    }, items)
-  ];
-  return syncedClientThemes(authStore, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchFileMediaImage(arg0) {
-  let containerStyle;
-  let fileName;
-  let height;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(12);
-  ({ fileName, height, width, containerStyle } = arg0);
-  const tmp4 = closure_17();
-  if (cResult[0] === height) {
-    let tmp5;
-    if (cResult[1] === width) {
-      tmp5 = cResult[2];
-    }
-    if (cResult[3] === containerStyle) {
-      if (cResult[4] === tmp5) {
-        let tmp6;
-        let tmp7;
-        if (cResult[5] === tmp4.sound) {
-          tmp6 = cResult[6];
-        }
-        if (cResult[7] !== fileName) {
-          const obj2 = { fileName };
-          const tmp9 = syncedClientThemes(AttachmentPreview.AttachmentIcon, obj2);
-          cResult[7] = fileName;
-          cResult[8] = tmp9;
-          tmp7 = tmp9;
-        } else {
-          tmp7 = cResult[8];
-        }
-        if (cResult[9] === tmp6) {
-          let tmp10;
-          if (cResult[10] === tmp7) {
-            tmp10 = cResult[11];
-          }
-          return tmp10;
-        }
-        const obj3 = { style: tmp6, children: tmp7 };
-        const tmp13 = syncedClientThemes(authStore, obj3);
-        cResult[9] = tmp6;
-        cResult[10] = tmp7;
-        cResult[11] = tmp13;
-        tmp10 = tmp13;
-      }
-    }
-    const items = [tmp4.sound, containerStyle, tmp5];
-    cResult[3] = containerStyle;
-    cResult[4] = tmp5;
-    cResult[5] = tmp4.sound;
-    cResult[6] = items;
-    tmp6 = items;
-  }
-  size = { height, width };
-  cResult[0] = height;
-  cResult[1] = width;
-  cResult[2] = size;
-  tmp5 = size;
-}) : (function SearchFileMediaImage(height) {
+  const obj = { style: items1, children: authStore(CirclePlayIcon.CirclePlayIcon, { size: "lg", color: "interactive-text-default" }) };
+  items1 = [closure_13().sound, containerStyle, ];
+  closure_13();
+  items1[2] = react.useMemo(() => {
+    size = { height, width };
+    return size;
+  }, items);
+  return authStore(metroRequire, obj);
+}
+export function SearchFileMediaImage(height) {
   let containerStyle;
   let fileName;
   let items1;
@@ -1161,128 +305,16 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchFileMe
   const width = height.width;
   ({ fileName, containerStyle } = height);
   const items = [height, width];
-  const obj = { style: items1, children: syncedClientThemes(AttachmentPreview.AttachmentIcon, { fileName }) };
-  items1 = [closure_17().sound, containerStyle, ];
-  closure_17();
+  const obj = { style: items1, children: authStore(AttachmentPreview.AttachmentIcon, { fileName }) };
+  items1 = [closure_13().sound, containerStyle, ];
+  closure_13();
   items1[2] = react.useMemo(() => {
     size = { height, width };
     return size;
   }, items);
-  return syncedClientThemes(authStore, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchComponentMediaImage(arg0) {
-  let authorId;
-  let channelId;
-  let isBot;
-  let sources;
-  let tmp13;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let unfurledMediaItem;
-  const obj = react2;
-  const cResult = obj.c(24);
-  if (cResult[0] !== arg0) {
-    ({ unfurledMediaItem, sources, channelId, authorId, isBot } = arg0);
-    const tmp11 = _objectWithoutProperties(arg0, closure_5);
-    cResult[0] = arg0;
-    cResult[1] = authorId;
-    cResult[2] = channelId;
-    cResult[3] = isBot;
-    cResult[4] = tmp11;
-    cResult[5] = sources;
-    cResult[6] = unfurledMediaItem;
-    size = unfurledMediaItem;
-    tmp8 = sources;
-    tmp7 = tmp11;
-    tmp6 = isBot;
-    tmp5 = channelId;
-    tmp4 = authorId;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-    tmp8 = cResult[5];
-    size = cResult[6];
-  }
-  const tmpResult = useContentHarmTypes;
-  const enabledHarmTypesBitmaskForChannelAndAuthorId = tmpResult.useEnabledHarmTypesBitmaskForChannelAndAuthorId(tmp5, tmp4);
-  if (cResult[7] !== tmp5) {
-    const channel = ChannelStore.getChannel(tmp5);
-    cResult[7] = tmp5;
-    cResult[8] = channel;
-    tmp13 = channel;
-  } else {
-    tmp13 = cResult[8];
-  }
-  const tmpResult4 = SpoilerChannelUtils;
-  const isChannelSpoilerGated = tmpResult4.useIsChannelSpoilerGated(tmp13);
-  if (cResult[9] === isChannelSpoilerGated) {
-    let tmp17;
-    if (cResult[10] === tmp8) {
-      tmp17 = cResult[11];
-    }
-    if (cResult[12] === enabledHarmTypesBitmaskForChannelAndAuthorId) {
-      if (cResult[13] === tmp6) {
-        if (cResult[14] === tmp17) {
-          let tmp21;
-          if (cResult[15] === size) {
-            tmp21 = cResult[16];
-          }
-          if (cResult[17] === tmp5) {
-            if (cResult[18] === tmp21) {
-              if (cResult[19] === tmp7) {
-                if (cResult[20] === size.height) {
-                  if (cResult[21] === size.proxyUrl) {
-                    let tmp28;
-                    if (cResult[22] === size.width) {
-                      tmp28 = cResult[23];
-                    }
-                    return tmp28;
-                  }
-                }
-              }
-            }
-          }
-          const obj2 = { channelId: tmp5, obscureReason: tmp21 };
-          const merged = Object.assign(tmp7);
-          ({ proxyUrl: obj6.mediaUrl, height: obj6.mediaHeight, width: obj6.mediaWidth } = size);
-          const tmp34 = syncedClientThemes(closure_19, obj2);
-          cResult[17] = tmp5;
-          cResult[18] = tmp21;
-          cResult[19] = tmp7;
-          cResult[20] = size.height;
-          cResult[21] = size.proxyUrl;
-          cResult[22] = size.width;
-          cResult[23] = tmp34;
-          tmp28 = tmp34;
-        }
-      }
-    }
-    const tmpResult5 = MessageAttachmentUtils;
-    const obscureReasonForUnfurledMediaItem = tmpResult5.getObscureReasonForUnfurledMediaItem(size, enabledHarmTypesBitmaskForChannelAndAuthorId, tmp17, tmp6);
-    cResult[12] = enabledHarmTypesBitmaskForChannelAndAuthorId;
-    cResult[13] = tmp6;
-    cResult[14] = tmp17;
-    cResult[15] = size;
-    cResult[16] = obscureReasonForUnfurledMediaItem;
-    tmp21 = obscureReasonForUnfurledMediaItem;
-  }
-  const tmpResult6 = MediaSourceUtil;
-  const flattenSourceResult = tmpResult6.flattenSource(tmp8);
-  let spoiler;
-  if (flattenSourceResult != null) {
-    spoiler = flattenSourceResult.spoiler;
-  }
-  cResult[9] = isChannelSpoilerGated;
-  cResult[10] = tmp8;
-  cResult[11] = spoiler || isChannelSpoilerGated;
-  tmp17 = tmp20;
-}) : (function SearchComponentMediaImage(unfurledMediaItem) {
+  return authStore(metroRequire, obj);
+}
+export function SearchComponentMediaImage(unfurledMediaItem) {
   let channelId;
   let isBot;
   let memo;
@@ -1291,13 +323,13 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchCompon
   ({ channelId, isBot } = unfurledMediaItem);
   const authorId = unfurledMediaItem.authorId;
   const merged = Object.assign(unfurledMediaItem, Object.assign({ unfurledMediaItem: 0, sources: 0, channelId: 0, authorId: 0, isBot: 0 }));
-  let obj = unfurledMediaItem(isBot[25]);
+  let obj = unfurledMediaItem(isBot[22]);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = unfurledMediaItem(isBot[27]);
+  const obj2 = unfurledMediaItem(isBot[24]);
   const isChannelSpoilerGated = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [unfurledMediaItem, enabledHarmTypesBitmaskForChannelAndAuthorId, sources, isBot, isChannelSpoilerGated];
   const obj4 = { channelId, obscureReason: memo };
-  memo = react.useMemo(() => {
+  memo = isChannelSpoilerGated.useMemo(() => {
     const getObscureReasonForUnfurledMediaItem = MessageAttachmentUtils.getObscureReasonForUnfurledMediaItem;
     MessageAttachmentUtils;
     const obj = MediaSourceUtil;
@@ -1313,13 +345,5 @@ let tmp9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SearchCompon
   }, items);
   const merged1 = Object.assign(merged);
   ({ proxyUrl: obj3.mediaUrl, height: obj3.mediaHeight, width: obj3.mediaWidth } = unfurledMediaItem);
-  return closure_14(closure_19, obj4);
-});
-let size = size_mod;
-let result = size.fileFinishedImporting("modules/search/native/components/list/SearchMediaImage.tsx");
-
-export const SearchAttachmentMediaImage = tmp5;
-export const SearchEmbedMediaImage = tmp6;
-export const SearchSoundMediaImage = tmp7;
-export const SearchFileMediaImage = tmp8;
-export const SearchComponentMediaImage = tmp9;
+  return closure_10(closure_15, obj4);
+}

@@ -1,24 +1,22 @@
-// Module ID: 17940
-// Function ID: 17941
+// Module ID: 17999
+// Function ID: 18000
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 4857, 4908, 5036, 1084, 4864, 5188, 5187, 558, 576, 5190, 2]
-// Exports: isActiveTabsGuilds
+// Dependencies: [32, 19, 4858, 4912, 5040, 1072, 4865, 5194, 5193, 5196, 2]
+// Exports: default, isActiveTabsGuilds
 
-// Module 17940 (useChannelScreensFromNavigation)
-import Constants from "Constants" /* 1084 */;
-import ChannelConstants from "ChannelConstants" /* 4864 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import useChatLayoutDefault from "useChatLayout" /* 5190 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
+// Module 17999 (useChannelScreensFromNavigation)
+import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4865 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import useChatLayoutDefault from "useChatLayout" /* 5196 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5036 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5040 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let importDefault;
 
 function getActiveTabsRoute(coerceTabsRouteResult) {
@@ -26,7 +24,7 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
     const state3 = coerceTabsRouteResult.state;
     let tmp3;
     if (state3 != null) {
-      state = coerceTabsRouteResult.state;
+      const state = coerceTabsRouteResult.state;
       let index;
       const routes = state3.routes;
       if (state != null) {
@@ -150,173 +148,12 @@ function resolveChannelScreens(state, isChatLockedOpen) {
   }
   return tmp10;
 }
-let _slicedToArray = _slicedToArray_mod;
 const ME = Constants.ME;
 const isStaticChannelRoute = ChannelConstants.isStaticChannelRoute;
 const ChannelScreenType = { DEFAULT: 0, [0]: "DEFAULT", BACKGROUND_SAVED: 1, [1]: "BACKGROUND_SAVED", FALLBACK_RENDERED: 2, [2]: "FALLBACK_RENDERED" };
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelScreensFromNavigation(arg0) {
-  let closure_0;
-  let closure_1;
-  let closure_2;
-  let closure_3;
-  let first;
-  const _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(11);
-  let tmp2 = useChatLayoutDefault();
-  importDefault = tmp2;
-  if (cResult[0] === tmp2) {
-    let tmp3;
-    let tmp8;
-    if (cResult[1] === arg0) {
-      tmp3 = cResult[2];
-    }
-    const tmp4 = _slicedToArray;
-    [first, dependencyMap] = react.useState(tmp3);
-    let tmp7 = globalThis;
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn2 = function o(arg0, arg1) {
-        if (null != arg0) {
-          if (arg0.length > 0) {
-            closure_2(arg0);
-          }
-        }
-        const first = arg1.routes[0];
-        const tmp2 = require;
-        let obj = NavigationRouteUtils;
-        const coerceTabsRouteResult = obj.coerceTabsRoute(first);
-        let tmp5;
-        if (null != coerceTabsRouteResult) {
-          const tmp7 = getActiveTabsRoute(coerceTabsRouteResult);
-          if (null != tmp7) {
-            const tmp2Result = NavigationRouteUtils;
-            const coerceGuildsRouteResult = tmp2Result.coerceGuildsRoute(tmp7);
-            let guildId;
-            if (coerceGuildsRouteResult != null) {
-              const params = coerceGuildsRouteResult.params;
-              if (params != null) {
-                guildId = params.guildId;
-              }
-            }
-            tmp5 = guildId;
-          }
-        }
-        guildId = tmp5;
-        closure_2((arg0) => {
-          let tmp = arg0;
-          if (0 !== arg0.length) {
-            let items;
-            if (null != guildId) {
-              if (tmp2 !== arg0[0].guildId) {
-                items = [];
-              }
-              tmp = items;
-            }
-            items = arg0;
-            if (arg0[0].type !== constants.FALLBACK_RENDERED) {
-              const obj = { type: tmp4.FALLBACK_RENDERED };
-              const merged = Object.assign(arg0[0]);
-              const items1 = [obj];
-              items = items1;
-            }
-          }
-          return tmp;
-        });
-      };
-      cResult[3] = fn2;
-      tmp8 = fn2;
-    } else {
-      tmp8 = cResult[3];
-    }
-    _slicedToArray = tmp8;
-    if (cResult[4] === tmp2) {
-      let tmp9;
-      let tmp10;
-      let tmp13;
-      let tmp12;
-      if (cResult[5] === arg0) {
-        tmp9 = cResult[6];
-        tmp10 = cResult[7];
-      }
-      const effect = obj2.useEffect(tmp9, tmp10);
-      if (cResult[8] !== arg0) {
-        class S {
-          constructor() {
-            function handleStateChange(data) {
-              state = data.data.state;
-              const obj = handleStateChange(closure_2[11]);
-              closure_1_3(resolveChannelScreens(state, obj.getChatLayout()), data.data.state);
-            }
-            handleStateChange.addListener("state", handleStateChange);
-            return () => {
-              handleStateChange.removeListener("state", handleStateChange);
-            };
-          }
-        }
-        let items = [arg0, tmp8];
-        cResult[8] = arg0;
-        cResult[9] = S;
-        cResult[10] = items;
-        tmp13 = items;
-        tmp12 = S;
-      } else {
-        class S {
-          constructor() {
-            function handleStateChange(data) {
-              state = data.data.state;
-              const obj = handleStateChange(closure_2[11]);
-              closure_1_3(resolveChannelScreens(state, obj.getChatLayout()), data.data.state);
-            }
-            handleStateChange.addListener("state", handleStateChange);
-            return () => {
-              handleStateChange.removeListener("state", handleStateChange);
-            };
-          }
-        }
-        tmp13 = cResult[10];
-      }
-      const effect1 = obj2.useEffect(tmp12, tmp13);
-      return first;
-    }
-    class R {
-      constructor() {
-        state = closure_0.getState();
-        closure_3(resolveChannelScreens(state, closure_1), state);
-      }
-    }
-    let items1 = [arg0, tmp2, tmp8];
-    cResult[4] = tmp2;
-    cResult[5] = arg0;
-    cResult[6] = R;
-    cResult[7] = items1;
-    tmp10 = items1;
-    tmp9 = R;
-  }
-  const fn = function l() {
-    let obj;
-    let arr = resolveChannelScreens(closure_0.getState(), closure_1);
-    if (arr.length <= 0) {
-      let items;
-      let guildId = SelectedGuildStore.getGuildId();
-      const channelId = SelectedChannelStore.getChannelId();
-      if (null == channelId) {
-        items = [];
-      } else {
-        obj = { index: 0, type: obj.FALLBACK_RENDERED, guildId, channelId };
-        if (guildId == null) {
-          guildId = ME;
-        }
-        items = [obj];
-      }
-      arr = items;
-    }
-    return arr;
-  };
-  cResult[1] = arg0;
-  cResult[2] = fn;
-  tmp3 = fn;
-}) : (function useChannelScreensFromNavigation(arg0) {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx");
+
+export default function useChannelScreensFromNavigation(arg0) {
   let callback;
   let closure_1;
   let tmp3;
@@ -394,14 +231,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSc
   }, []);
   let items = [arg0, tmp, callback];
   const effect = react.useEffect(() => {
-    state = closure_0.getState();
+    const state = closure_0.getState();
     callback(resolveChannelScreens(state, closure_1), state);
   }, items);
   let items1 = [arg0, callback];
   const effect1 = react.useEffect(() => {
     function handleStateChange(data) {
-      state = data.data.state;
-      const obj = handleStateChange(dependencyMap[11]);
+      const state = data.data.state;
+      const obj = handleStateChange(dependencyMap[9]);
       callback(resolveChannelScreens(state, obj.getChatLayout()), data.data.state);
     }
     handleStateChange.addListener("state", handleStateChange);
@@ -410,10 +247,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useChannelSc
     };
   }, items1);
   return tmp3;
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/useChannelScreensFromNavigation.tsx");
-
-export default tmp2;
+};
 export { ChannelScreenType };
 export { getActiveTabsRoute };
 export function isActiveTabsGuilds(state) {

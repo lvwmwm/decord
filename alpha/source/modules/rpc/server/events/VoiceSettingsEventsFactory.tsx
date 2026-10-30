@@ -1,13 +1,13 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16328
+// Function ID: 16329
 // Name: VoiceSettingsEventsFactory
-// Dependencies: [6437, 1084, 8867, 12, 2]
+// Dependencies: [6444, 1072, 8901, 12, 2]
 // Exports: default
 
-// Module 16287 (VoiceSettingsEventsFactory)
+// Module 16328 (VoiceSettingsEventsFactory)
 import _modDef12 from "module_12" /* 12 */;
-import Constants2 from "Constants" /* 1084 */;
-import Constants from "Constants" /* 6437 */;
+import Constants2 from "Constants" /* 1072 */;
+import Constants from "Constants" /* 6444 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

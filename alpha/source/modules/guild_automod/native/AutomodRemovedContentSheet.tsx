@@ -1,23 +1,19 @@
-// Module ID: 19277
-// Function ID: 19278
+// Module ID: 19340
+// Function ID: 19341
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1084, 21, 8188, 5005, 587, 558, 576, 1125, 6051, 7308, 9838, 5271, 7358, 2]
+// Dependencies: [19, 17, 1072, 21, 8369, 5009, 575, 1114, 6058, 7360, 7315, 9864, 5619, 2]
+// Exports: default
 
-// Module 19277 (AutomodRemovedContentSheet)
+// Module 19340 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6051 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
-import RowGeneratorDefault from "RowGenerator" /* 8188 */;
-import ChatItemDefault from "ChatItem" /* 9838 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6058 */;
+import RowGeneratorDefault from "RowGenerator" /* 8369 */;
+import ChatItemDefault from "ChatItem" /* 9864 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -25,137 +21,17 @@ let obj3;
 const View = react_native.View;
 const MessageFlags = Constants.MessageFlags;
 const jsx = Fragment.jsx;
+const rowGenerator = new RowGeneratorDefault();
 const tmp2 = new RowGeneratorDefault();
-const rowGenerator = tmp2;
 let createStyles = createStyles_mod;
 let obj = { content: obj2, blockedMessage: obj3 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.MESSAGE_AUTOMOD_BACKGROUND_DEFAULT, borderLeftWidth: 2, borderLeftColor: nativeDefault.unsafe_rawColors.RED_345 };
 let closure_8 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemovedContentSheet(action) {
-  let message;
-  let notice;
-  let num2;
-  let thread;
-  let tmp14;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(18);
-  action = action.action;
-  const tmp4 = closure_8();
-  ({ message, thread, notice } = action);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function u(message) {
-      message = message.message;
-      let ephemeralIndication1;
-      if (message != null) {
-        ephemeralIndication1 = message.ephemeralIndication;
-      }
-      if (null != ephemeralIndication1) {
-        const ephemeralIndication = message.message.ephemeralIndication;
-        const intl = intl2.intl;
-        ephemeralIndication.content = intl.string(intl2.t.Nb1EQx);
-      }
-    };
-    cResult[0] = fn;
-    let first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== message) {
-    let messageRecord;
-    if (null != message) {
-      const obj2 = { flags: num2 | MessageFlags.EPHEMERAL };
-      const createMessageRecord = MessageRecordUtils.createMessageRecord;
-      MessageRecordUtils;
-      const merged = Object.assign(message);
-      num2 = message.flags;
-      if (num2 == null) {
-        num2 = 0;
-      }
-      messageRecord = createMessageRecord(obj2);
-    }
-    cResult[1] = message;
-    cResult[2] = messageRecord;
-    tmp6 = messageRecord;
-  } else {
-    tmp6 = cResult[2];
-  }
-  if (cResult[3] !== thread) {
-    let StrErG;
-    let intl = tmp(1125).intl;
-    const string = intl.string;
-    if (null != thread) {
-      StrErG = tmp(1125).t["8czF24"];
-    } else {
-      StrErG = tmp(1125).t.StrErG;
-    }
-    const stringResult = string(StrErG);
-    cResult[3] = thread;
-    cResult[4] = stringResult;
-    tmp14 = stringResult;
-  } else {
-    tmp14 = cResult[4];
-  }
-  let name;
-  if (thread != null) {
-    name = thread.name;
-  }
-  if (cResult[5] === tmp14) {
-    let tmp18;
-    let tmp22;
-    if (cResult[6] === name) {
-      tmp18 = cResult[7];
-    }
-    if (cResult[8] === tmp6) {
-      if (cResult[9] === notice) {
-        let tmp20;
-        if (cResult[10] === tmp4.blockedMessage) {
-          tmp20 = cResult[11];
-        }
-        if (cResult[12] === tmp4.content) {
-          let tmp27;
-          if (cResult[13] === tmp20) {
-            tmp27 = cResult[14];
-          }
-          if (cResult[15] === tmp18) {
-            let tmp31;
-            if (cResult[16] === tmp27) {
-              tmp31 = cResult[17];
-            }
-            return tmp31;
-          }
-          const tmp33 = jsx(ActionSheet2.ActionSheet, { header: tmp18, children: tmp27 });
-          cResult[15] = tmp18;
-          cResult[16] = tmp27;
-          cResult[17] = tmp33;
-          tmp31 = tmp33;
-        }
-        const tmp30 = <View style={tmp4.content}>{tmp20}</View>;
-        cResult[12] = tmp4.content;
-        cResult[13] = tmp20;
-        cResult[14] = tmp30;
-        tmp27 = tmp30;
-      }
-    }
-    if (null != tmp6) {
-      tmp22 = <View style={tmp4.blockedMessage}>{null}</View>;
-    } else {
-      tmp22 = jsx(tmp(5271).Text, { variant: "text-md/normal", color: "text-default", children: notice });
-    }
-    cResult[8] = tmp6;
-    cResult[9] = notice;
-    cResult[10] = tmp4.blockedMessage;
-    cResult[11] = tmp22;
-    tmp20 = tmp22;
-  }
-  const tmp19 = jsx(BottomSheetTitleHeader2.BottomSheetTitleHeader, { title: tmp14, subtitle: name });
-  cResult[5] = tmp14;
-  cResult[6] = name;
-  cResult[7] = tmp19;
-  tmp18 = tmp19;
-}) : (function AutomodRemovedContentSheet(action) {
+const result = size.fileFinishedImporting("modules/guild_automod/native/AutomodRemovedContentSheet.tsx");
+
+export default function AutomodRemovedContentSheet(action) {
   let StrErG;
   let name;
   let obj3;
@@ -175,8 +51,8 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     }
     if (null != ephemeralIndication1) {
       const ephemeralIndication = message.message.ephemeralIndication;
-      const intl = message(dependencyMap[9]).intl;
-      ephemeralIndication.content = intl.string(message(dependencyMap[9]).t.Nb1EQx);
+      const intl = message(dependencyMap[7]).intl;
+      ephemeralIndication.content = intl.string(message(dependencyMap[7]).t.Nb1EQx);
     }
   }, []);
   const memo = react.useMemo(() => {
@@ -196,14 +72,14 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7358).ActionSheet;
-  const BottomSheetTitleHeader = message(7308).BottomSheetTitleHeader;
-  let intl = message(1125).intl;
+  const ActionSheet = message(7360).ActionSheet;
+  const BottomSheetTitleHeader = message(7315).BottomSheetTitleHeader;
+  let intl = message(1114).intl;
   const string = intl.string;
   if (null != thread) {
-    StrErG = tmp5(1125).t["8czF24"];
+    StrErG = tmp5(1114).t["8czF24"];
   } else {
-    StrErG = tmp5(1125).t.StrErG;
+    StrErG = tmp5(1114).t.StrErG;
   }
   let obj = { title: string(StrErG), subtitle: name };
   name = undefined;
@@ -218,10 +94,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function AutomodRemov
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5271).Text, obj6);
+    tmp4Result = tmp4(tmp5(5619).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
-});
-const result = size.fileFinishedImporting("modules/guild_automod/native/AutomodRemovedContentSheet.tsx");
-
-export default tmp4;
+};

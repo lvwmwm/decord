@@ -1,58 +1,38 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 11240
+// Function ID: 11241
 // Name: useLikelyAtoWarning
-// Dependencies: [10761, 558, 11002, 11003, 11004, 11005, 11001, 2]
+// Dependencies: [10784, 11232, 11233, 11234, 11235, 11231, 2]
+// Exports: useLikelyAtoWarning
 
-// Module 11010 (useLikelyAtoWarning)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10761 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 11001 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11002 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 11003 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11004 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11240 (useLikelyAtoWarning)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10784 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 11231 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11232 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11233 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11234 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11235 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLikelyAtoWarning(arg0) {
-  const obj = useIsSpamMessageRequest;
-  const isSpamMessageRequest = obj.useIsSpamMessageRequest(arg0);
-  const obj2 = useIsMessageRequest;
-  const isMessageRequest = obj2.useIsMessageRequest(arg0);
-  const obj3 = useChannelSafetyWarning;
-  const channelSafetyWarning = obj3.useChannelSafetyWarning(arg0, SafetyWarningTypes.LIKELY_ATO);
-  const obj4 = useInappropriateConversationWarningsForChannel;
-  const tmp4 = obj4.useInappropriateConversationWarningsForChannel(arg0).length > 0;
-  const obj5 = useStrangerDangerWarning;
-  if (!isSpamMessageRequest) {
-    if (!isMessageRequest) {
-      if (!tmp4) {
-        if (null == obj5.useStrangerDangerWarning(arg0)) {
-          return channelSafetyWarning;
-        }
-      }
-    }
-  }
-}) : (function useLikelyAtoWarning(arg0) {
-  const obj = useIsSpamMessageRequest;
-  const isSpamMessageRequest = obj.useIsSpamMessageRequest(arg0);
-  const obj2 = useIsMessageRequest;
-  const isMessageRequest = obj2.useIsMessageRequest(arg0);
-  const obj3 = useChannelSafetyWarning;
-  const channelSafetyWarning = obj3.useChannelSafetyWarning(arg0, SafetyWarningTypes.LIKELY_ATO);
-  const obj4 = useInappropriateConversationWarningsForChannel;
-  const tmp4 = obj4.useInappropriateConversationWarningsForChannel(arg0).length > 0;
-  const obj5 = useStrangerDangerWarning;
-  if (!isSpamMessageRequest) {
-    if (!isMessageRequest) {
-      if (!tmp4) {
-        if (null == obj5.useStrangerDangerWarning(arg0)) {
-          return channelSafetyWarning;
-        }
-      }
-    }
-  }
-});
 const result = size.fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");
 
-export const useLikelyAtoWarning = tmp2;
+export function useLikelyAtoWarning(channelId) {
+  const obj = useIsSpamMessageRequest;
+  const isSpamMessageRequest = obj.useIsSpamMessageRequest(channelId);
+  const obj2 = useIsMessageRequest;
+  const isMessageRequest = obj2.useIsMessageRequest(channelId);
+  const obj3 = useChannelSafetyWarning;
+  const channelSafetyWarning = obj3.useChannelSafetyWarning(channelId, SafetyWarningTypes.LIKELY_ATO);
+  const obj4 = useInappropriateConversationWarningsForChannel;
+  const tmp4 = obj4.useInappropriateConversationWarningsForChannel(channelId).length > 0;
+  const obj5 = useStrangerDangerWarning;
+  if (!isSpamMessageRequest) {
+    if (!isMessageRequest) {
+      if (!tmp4) {
+        if (null == obj5.useStrangerDangerWarning(channelId)) {
+          return channelSafetyWarning;
+        }
+      }
+    }
+  }
+}

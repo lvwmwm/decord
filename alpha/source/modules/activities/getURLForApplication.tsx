@@ -1,14 +1,14 @@
-// Module ID: 5661
-// Function ID: 5662
+// Module ID: 5667
+// Function ID: 5668
 // Name: getURLForApplication
-// Dependencies: [32, 5662, 5663, 1383, 2]
+// Dependencies: [32, 5668, 5669, 1378, 2]
 // Exports: default, getApplicationRouterOrigin, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 5661 (getURLForApplication)
-import URLUtilsDefault from "URLUtils" /* 1383 */;
+// Module 5667 (getURLForApplication)
+import URLUtilsDefault from "URLUtils" /* 1378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import TestModeStore from "TestModeStore" /* 5662 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5663 */;
+import TestModeStore from "TestModeStore" /* 5668 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5669 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/getURLForApplication.tsx");
@@ -73,9 +73,9 @@ export function getNonTestModeUrlForApplication(arg0) {
     return "https://" + arg0 + "." + ACTIVITY_APPLICATION_HOST;
   }
 }
-export function getApplicationRouterOrigin(embeddedAppUrl) {
+export function getApplicationRouterOrigin(assetURL) {
   const obj = URLUtilsDefault;
-  const toURLSafeResult = obj.toURLSafe(embeddedAppUrl);
+  const toURLSafeResult = obj.toURLSafe(assetURL);
   if (null == toURLSafeResult) {
     return null;
   } else {

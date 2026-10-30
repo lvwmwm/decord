@@ -1,11 +1,11 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15898
+// Function ID: 15899
 // Name: LowLatencyRateControlExperiment
-// Dependencies: [1454, 2]
+// Dependencies: [1449, 2]
 // Exports: getLowLatencyRateControlExperimentConfig
 
-// Module 15859 (LowLatencyRateControlExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
+// Module 15898 (LowLatencyRateControlExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,9 +1,9 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 8913
+// Function ID: 8914
 // Name: ContentInventoryConstants
 // Dependencies: [2]
 
-// Module 8879 (ContentInventoryConstants)
+// Module 8913 (ContentInventoryConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryConstants.tsx");

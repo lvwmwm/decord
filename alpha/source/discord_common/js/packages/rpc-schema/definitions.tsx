@@ -1,35 +1,39 @@
-// Module ID: 16216
-// Function ID: 16217
+// Module ID: 16256
+// Function ID: 16257
 // Name: definitions
-// Dependencies: [1095, 2025, 11570, 1105, 5664, 8867, 16217, 16213, 16218, 10717, 16219, 2]
+// Dependencies: [1083, 2020, 9718, 11771, 1094, 5670, 1086, 8901, 2021, 16257, 16253, 16258, 7873, 5757, 10740, 16259, 2]
 
-// Module 16216 (definitions)
-import ChannelTypes from "ChannelTypes" /* 1105 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5664 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8867 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10717 */;
-import ActivityPlatform from "ActivityPlatform" /* 11570 */;
-import ThermalStates from "ThermalStates" /* 16213 */;
-import SKUTypes from "SKUTypes" /* 16217 */;
-import helpers from "helpers" /* 16218 */;
-import contextMenuIcons from "contextMenuIcons" /* 16219 */;
-import Constants_mod from "Constants" /* 1095 */;
-import Constants_mod2 from "Constants" /* 2025 */;
+// Module 16256 (definitions)
+import Constants2 from "Constants" /* 1083 */;
+import EntitlementTypes from "EntitlementTypes" /* 1086 */;
+import ChannelTypes from "ChannelTypes" /* 1094 */;
+import EmbeddedActivityOrientationLockState2 from "EmbeddedActivityOrientationLockState" /* 2021 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5670 */;
+import ActivityTypes from "ActivityTypes" /* 5757 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7873 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8901 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9718 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10740 */;
+import ActivityPlatform from "ActivityPlatform" /* 11771 */;
+import ThermalStates from "ThermalStates" /* 16253 */;
+import SKUTypes from "SKUTypes" /* 16257 */;
+import helpers from "helpers" /* 16258 */;
+import contextMenuIcons from "contextMenuIcons" /* 16259 */;
+import Constants from "Constants" /* 2020 */;
 import size_mod from "module_2" /* 2 */;
 
-let ActivityGamePlatforms;
-let EntitlementTypes;
-let InviteTargetTypes;
-let OrientationLockState;
-let c2;
-let c3;
+let ActivityIntent;
+let ActivityLayoutMode;
+let obj10;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
 let obj7;
-function joiEnum(number, OrientationLockState, arg2) {
+let obj8;
+let obj9;
+function joiEnum(number, EmbeddedActivityOrientationLockState, arg2) {
   let applyResult;
   let metaResult;
   let obj = arg2;
@@ -40,7 +44,7 @@ function joiEnum(number, OrientationLockState, arg2) {
   if (flag === undefined) {
     flag = false;
   }
-  const values = Object.values(obj[OrientationLockState].values);
+  const values = Object.values(obj[EmbeddedActivityOrientationLockState].values);
   const found = values.filter((item) => typeof item === "number");
   if (found.length > 0) {
     const numberResult = number.number();
@@ -57,12 +61,12 @@ function joiEnum(number, OrientationLockState, arg2) {
   }
   if (flag) {
     const _HermesInternal = HermesInternal;
-    const obj2 = { className: "" + OrientationLockState + " | null" };
+    const obj2 = { className: "" + EmbeddedActivityOrientationLockState + " | null" };
     const meta = applyResult.allow(null).meta;
     applyResult.allow(null);
     metaResult = meta(obj2);
   } else {
-    const obj3 = { className: OrientationLockState };
+    const obj3 = { className: EmbeddedActivityOrientationLockState };
     metaResult = applyResult.meta(obj3);
   }
   return metaResult;
@@ -1153,18 +1157,19 @@ class EmbeddedSurface {
     return _tryResult.meta({ className: "EmbeddedSurface" });
   }
 }
-let Constants = Constants_mod2;
-({ ActivityPartyPrivacy: c2, ActivityTypes: c3, ActivityGamePlatforms, EntitlementTypes, InviteTargetTypes } = Constants);
-Constants = Constants_mod2;
-const RPCEnums = { ActivityGamePlatforms: { values: ActivityGamePlatforms, from: "@discordapp/common/Constants" }, ActivityIntent: { values: Constants.ActivityIntent, from: "@discordapp/common/activities/Constants" }, ActivityLayoutMode: { values: Constants.ActivityLayoutMode, from: "@discordapp/common/activities/Constants" }, ActivityPlatform: obj2, ChannelTypes: obj3, EmbeddedSurfaceType: obj4, EntitlementTypes: { values: EntitlementTypes, from: "@discordapp/common/Constants" }, InviteTargetTypes: { values: InviteTargetTypes, from: "@discordapp/common/Constants" }, OAuth2Scopes: obj5, OrientationLockState: { values: OrientationLockState, from: "@discordapp/common/activities/Constants" }, SKUTypes: obj6, ThermalStates: obj7 };
-obj2 = { values: ActivityPlatform.ActivityPlatform, from: "@discordapp/common/constants/ActivityPlatform" };
-OrientationLockState = Constants.OrientationLockState;
-obj3 = { values: ChannelTypes.ChannelTypes, from: "@discordapp/common/shared-constants/ChannelTypes" };
-obj4 = { values: EmbeddedSurfaceType.EmbeddedSurfaceType, from: "@discordapp/common/shared-constants/EmbeddedSurfaceType" };
-obj5 = { values: OAuth2Scopes.OAuth2Scopes, from: "@discordapp/common/shared-constants/OAuth2Scopes" };
-obj6 = { values: SKUTypes.SKUTypes, from: "@discordapp/common/shared-constants/SKUTypes" };
-obj7 = { values: ThermalStates.ThermalStates, from: "@discordapp/common/constants/ThermalStates" };
-let obj8 = {
+const ActivityPartyPrivacy = Constants2.ActivityPartyPrivacy;
+const RPCEnums = { ActivityGamePlatforms: obj2, ActivityIntent: { values: ActivityIntent, from: "@discordapp/common/activities/Constants" }, ActivityLayoutMode: { values: ActivityLayoutMode, from: "@discordapp/common/activities/Constants" }, ActivityPlatform: obj3, ChannelTypes: obj4, EmbeddedSurfaceType: obj5, EntitlementTypes: obj6, OAuth2Scopes: obj7, EmbeddedActivityOrientationLockState: obj8, SKUTypes: obj9, ThermalStates: obj10 };
+obj2 = { values: ActivityGamePlatforms.ActivityGamePlatforms, from: "@discordapp/common/shared-constants/ActivityGamePlatforms" };
+({ ActivityIntent, ActivityLayoutMode } = Constants);
+obj3 = { values: ActivityPlatform.ActivityPlatform, from: "@discordapp/common/constants/ActivityPlatform" };
+obj4 = { values: ChannelTypes.ChannelTypes, from: "@discordapp/common/shared-constants/ChannelTypes" };
+obj5 = { values: EmbeddedSurfaceType.EmbeddedSurfaceType, from: "@discordapp/common/shared-constants/EmbeddedSurfaceType" };
+obj6 = { values: EntitlementTypes.EntitlementTypes, from: "@discordapp/common/shared-constants/EntitlementTypes" };
+obj7 = { values: OAuth2Scopes.OAuth2Scopes, from: "@discordapp/common/shared-constants/OAuth2Scopes" };
+obj8 = { values: EmbeddedActivityOrientationLockState2.EmbeddedActivityOrientationLockState, from: "@discordapp/common/shared-constants/EmbeddedActivityOrientationLockState" };
+obj9 = { values: SKUTypes.SKUTypes, from: "@discordapp/common/shared-constants/SKUTypes" };
+obj10 = { values: ThermalStates.ThermalStates, from: "@discordapp/common/constants/ThermalStates" };
+let obj11 = {
   request(string) {
     let stringResult;
     const obj = { session_id: stringResult.required() };
@@ -1178,7 +1183,7 @@ let obj8 = {
     return obj;
   }
 };
-let obj9 = {
+let obj12 = {
   request(string) {
     let stringResult;
     let validResult;
@@ -1195,7 +1200,7 @@ let obj9 = {
     return obj;
   }
 };
-let obj10 = {
+let obj13 = {
   request(string) {
     let maxResult;
     let stringResult;
@@ -1225,7 +1230,7 @@ let obj10 = {
     return obj;
   }
 };
-let obj11 = {
+let obj14 = {
   embeddedAppSDK: true,
   subscribeArgs(string) {
     let optionalResult;
@@ -1247,7 +1252,7 @@ let obj11 = {
     return obj;
   }
 };
-let obj12 = {
+let obj15 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -1257,7 +1262,7 @@ let obj12 = {
     return obj;
   }
 };
-let obj13 = {
+let obj16 = {
   embeddedAppSDK: true,
   response: "Array",
   request(string) {
@@ -1268,7 +1273,7 @@ let obj13 = {
     return obj;
   }
 };
-let obj14 = {
+let obj17 = {
   embeddedAppSDK: true,
   request(string) {
     let allowResult;
@@ -1320,8 +1325,8 @@ let obj14 = {
     return obj;
   }
 };
-let obj15 = { embeddedAppSDK: true, request: "Array", response: ActivityInstanceParticipants };
-let obj16 = {
+let obj18 = { embeddedAppSDK: true, request: "Array", response: ActivityInstanceParticipants };
+let obj19 = {
   request(string) {
     let maxResult;
     const obj = { build: maxResult.required() };
@@ -1336,13 +1341,13 @@ let obj16 = {
     return obj;
   }
 };
-let obj17 = {
+let obj20 = {
   request: "Array",
   response(object) {
     return VoiceCapabilities(object);
   }
 };
-let obj18 = {
+let obj21 = {
   request(string) {
     let stringResult;
     const obj = { session_id: stringResult.required() };
@@ -1379,7 +1384,7 @@ let obj18 = {
     return obj;
   }
 };
-let obj19 = {
+let obj22 = {
   request: "Array",
   response(string) {
     let allowResult;
@@ -1417,7 +1422,7 @@ let obj19 = {
     return obj;
   }
 };
-let obj20 = {
+let obj23 = {
   request(string) {
     let itemsResult;
     let maxResult;
@@ -1498,7 +1503,7 @@ let obj20 = {
     return obj;
   }
 };
-let obj21 = {
+let obj24 = {
   request(string) {
     let booleanResult;
     let booleanResult1;
@@ -1707,7 +1712,7 @@ let obj21 = {
     return obj;
   }
 };
-let obj22 = {
+let obj25 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -1721,7 +1726,7 @@ let obj22 = {
     return obj;
   }
 };
-let obj23 = {
+let obj26 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -1733,7 +1738,8 @@ let obj23 = {
     return obj;
   }
 };
-let obj24 = {
+let items = [, , , , , , , ];
+const obj27 = {
   request(string) {
     let items;
     let items2;
@@ -1800,7 +1806,7 @@ let obj24 = {
     return obj;
   }
 };
-let obj25 = {
+const obj28 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -1824,7 +1830,7 @@ let obj25 = {
     return obj;
   }
 };
-let obj26 = {
+const obj29 = {
   request(string) {
     let items;
     let maxResult;
@@ -1872,8 +1878,7 @@ let obj26 = {
     return obj;
   }
 };
-let items = [, , , , , , , ];
-const obj27 = {
+const obj30 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -1908,7 +1913,7 @@ const obj27 = {
     return obj;
   }
 };
-const obj28 = {
+const obj31 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -1931,7 +1936,7 @@ const obj28 = {
     return obj;
   }
 };
-const obj29 = {
+const obj32 = {
   request(array) {
     let maxResult;
     let maxResult1;
@@ -1967,7 +1972,7 @@ const obj29 = {
     return obj;
   }
 };
-const obj30 = {
+const obj33 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -1984,7 +1989,7 @@ const obj30 = {
     return obj;
   }
 };
-const obj31 = {
+const obj34 = {
   request(string) {
     let stringResult;
     let stringResult1;
@@ -2000,7 +2005,7 @@ const obj31 = {
     return obj;
   }
 };
-const obj32 = {
+const obj35 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -2029,7 +2034,7 @@ const obj32 = {
     return obj;
   }
 };
-const obj33 = {
+const obj36 = {
   request: "Array",
   response(boolean) {
     let booleanResult;
@@ -2038,7 +2043,7 @@ const obj33 = {
     return obj;
   }
 };
-const obj34 = {
+const obj37 = {
   request(string) {
     let maxResult;
     let validResult;
@@ -2056,7 +2061,7 @@ const obj34 = {
     return obj;
   }
 };
-const obj35 = {
+const obj38 = {
   request(string) {
     let maxResult;
     let maxResult1;
@@ -2079,7 +2084,7 @@ const obj35 = {
     return obj;
   }
 };
-const obj36 = {
+const obj39 = {
   request: "Array",
   response(array) {
     let items;
@@ -2100,7 +2105,7 @@ const obj36 = {
     return obj;
   }
 };
-const obj37 = {
+const obj40 = {
   request(array) {
     let items;
     let validResult;
@@ -2133,7 +2138,7 @@ const obj37 = {
     return obj;
   }
 };
-const obj38 = {
+const obj41 = {
   request(number) {
     let maxResult;
     let maxResult1;
@@ -2164,7 +2169,7 @@ const obj38 = {
     return size;
   }
 };
-const obj39 = {
+const obj42 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2192,7 +2197,7 @@ const obj39 = {
     return obj;
   }
 };
-const obj40 = {
+const obj43 = {
   embeddedAppSDK: true,
   request(string) {
     let minResult;
@@ -2203,9 +2208,9 @@ const obj40 = {
     minResult = stringResult1.min(0);
     return obj;
   },
-  response: "Reflect"
+  response: "flexDirection"
 };
-const obj41 = {
+const obj44 = {
   embeddedAppSDK: true,
   request: "Array",
   response(object) {
@@ -2227,7 +2232,7 @@ const obj41 = {
     return obj;
   }
 };
-const obj42 = {
+const obj45 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2241,7 +2246,7 @@ const obj42 = {
     return obj.allow(null);
   }
 };
-const obj43 = {
+const obj46 = {
   embeddedAppSDK: true,
   request: "Array",
   response(arg0) {
@@ -2249,7 +2254,7 @@ const obj43 = {
     return obj.allow(null);
   }
 };
-const obj44 = {
+const obj47 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2260,7 +2265,7 @@ const obj44 = {
   },
   response: QuestEnrollmentStatus
 };
-const obj45 = {
+const obj48 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2276,7 +2281,7 @@ const obj45 = {
     return obj;
   }
 };
-const obj46 = {
+const obj49 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2294,7 +2299,7 @@ const obj46 = {
     return obj;
   }
 };
-const obj47 = {
+const obj50 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2304,7 +2309,7 @@ const obj47 = {
     return obj;
   }
 };
-const obj48 = {
+const obj51 = {
   request(boolean) {
     let booleanResult;
     const obj = { enabled: booleanResult.required() };
@@ -2318,7 +2323,7 @@ const obj48 = {
     return obj;
   }
 };
-const obj49 = {
+const obj52 = {
   request(string) {
     let allowResult;
     const obj = { hash: allowResult.required() };
@@ -2335,7 +2340,7 @@ const obj49 = {
     return obj;
   }
 };
-const obj50 = {
+const obj53 = {
   request(string) {
     let validResult;
     const obj = { type: validResult.required() };
@@ -2350,7 +2355,7 @@ const obj50 = {
     return obj;
   }
 };
-const obj51 = {
+const obj54 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2362,9 +2367,9 @@ const obj51 = {
     maxResult1 = stringResult1.max(1000);
     return obj;
   },
-  response: "Reflect"
+  response: "flexDirection"
 };
-const obj52 = {
+const obj55 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2374,7 +2379,7 @@ const obj52 = {
     return obj;
   }
 };
-const obj53 = {
+const obj56 = {
   embeddedAppSDK: true,
   request: "Array",
   response(boolean) {
@@ -2384,7 +2389,7 @@ const obj53 = {
     return obj;
   }
 };
-const obj54 = {
+const obj57 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2394,21 +2399,21 @@ const obj54 = {
     return obj;
   }
 };
-const obj55 = {
+const obj58 = {
   embeddedAppSDK: true,
   request(number) {
     let obj2;
     let obj3;
     let obj4;
     const obj = { lock_state: obj2.required(), picture_in_picture_lock_state: obj3.optional(), grid_lock_state: obj4.optional() };
-    obj2 = joiEnum(number, "OrientationLockState");
-    obj3 = joiEnum(number, "OrientationLockState", { nullable: true });
-    obj4 = joiEnum(number, "OrientationLockState", { nullable: true });
+    obj2 = joiEnum(number, "EmbeddedActivityOrientationLockState");
+    obj3 = joiEnum(number, "EmbeddedActivityOrientationLockState", { nullable: true });
+    obj4 = joiEnum(number, "EmbeddedActivityOrientationLockState", { nullable: true });
     return obj;
   },
-  response: "Reflect"
+  response: "flexDirection"
 };
-const obj56 = {
+const obj59 = {
   embeddedAppSDK: true,
   request(boolean) {
     let booleanResult;
@@ -2423,7 +2428,7 @@ const obj56 = {
     return obj;
   }
 };
-const obj57 = {
+const obj60 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2442,7 +2447,7 @@ const obj57 = {
     return objectResult.default({ opened: null });
   }
 };
-const obj58 = {
+const obj61 = {
   embeddedAppSDK: true,
   request: "Array",
   response(string) {
@@ -2454,7 +2459,7 @@ const obj58 = {
     return obj;
   }
 };
-const obj59 = {
+const obj62 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2465,7 +2470,7 @@ const obj59 = {
     return obj;
   }
 };
-const obj60 = {
+const obj63 = {
   embeddedAppSDK: true,
   request: "Array",
   response(array) {
@@ -2476,7 +2481,7 @@ const obj60 = {
     return obj;
   }
 };
-const obj61 = {
+const obj64 = {
   embeddedAppSDK: true,
   request(string) {
     let numberResult;
@@ -2493,7 +2498,7 @@ const obj61 = {
     return itemsResult.allow(null);
   }
 };
-const obj62 = {
+const obj65 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2506,7 +2511,7 @@ const obj62 = {
     return Channel(arg0);
   }
 };
-const obj63 = {
+const obj66 = {
   embeddedAppSDK: true,
   request(string) {
     let optionalResult;
@@ -2535,14 +2540,14 @@ const obj63 = {
     return obj;
   }
 };
-const obj64 = {
+const obj67 = {
   request: "Array",
   response(arg0) {
     const obj = Channel(arg0);
     return obj.allow(null);
   }
 };
-const obj65 = {
+const obj68 = {
   request(string) {
     let booleanResult;
     let booleanResult1;
@@ -2564,7 +2569,7 @@ const obj65 = {
     return obj.allow(null);
   }
 };
-const obj66 = {
+const obj69 = {
   request(string) {
     let maxResult;
     let optionalResult;
@@ -2582,29 +2587,32 @@ const obj66 = {
     return obj.allow(null);
   }
 };
-const obj67 = {
+const obj70 = {
   request(string) {
-    let allowResult1;
+    let allowResult;
+    let allowResult2;
     let booleanResult;
     let booleanResult1;
     let numberResult;
     let numberResult1;
-    let obj8;
     let optionalResult;
     let requiredResult;
-    const obj = { channel_id: requiredResult.meta({ className: "ChannelId" }), max_age: numberResult.optional(), max_uses: numberResult1.optional(), temporary: booleanResult.optional(), unique: booleanResult1.optional(), target_type: obj8.optional(), target_user_id: optionalResult.meta({ className: "UserId" }), target_application_id: allowResult1.optional() };
+    const obj = { channel_id: requiredResult.meta({ className: "ChannelId" }), max_age: numberResult.optional(), max_uses: numberResult1.optional(), temporary: booleanResult.optional(), unique: booleanResult1.optional(), target_type: allowResult.optional(), target_user_id: optionalResult.meta({ className: "UserId" }), target_application_id: allowResult2.optional() };
     const stringResult = string.string();
     requiredResult = stringResult.required();
     numberResult = string.number();
     numberResult1 = string.number();
     booleanResult = string.boolean();
+    const items = [...InviteTargetTypes.InviteTargetTypesSets.USER_CREATABLE];
     booleanResult1 = string.boolean();
-    obj8 = joiEnum(string, "InviteTargetTypes", { nullable: true });
+    const numberResult2 = string.number();
+    const applyResult = numberResult2.valid.apply(items);
+    allowResult = applyResult.allow(null);
     const stringResult1 = string.string();
-    const allowResult = stringResult1.allow(null);
-    optionalResult = allowResult.optional();
+    const allowResult1 = stringResult1.allow(null);
+    optionalResult = allowResult1.optional();
     const stringResult2 = string.string();
-    allowResult1 = stringResult2.allow(null);
+    allowResult2 = stringResult2.allow(null);
     return obj;
   },
   response(string) {
@@ -2650,7 +2658,7 @@ const obj67 = {
     return obj;
   }
 };
-const obj68 = {
+const obj71 = {
   embeddedAppSDK: true,
   request(string) {
     let maxResult;
@@ -2679,7 +2687,7 @@ const obj68 = {
     return obj;
   }
 };
-const obj69 = {
+const obj72 = {
   request: "Array",
   response(array) {
     let allowResult;
@@ -2700,7 +2708,7 @@ const obj69 = {
     return obj;
   }
 };
-const obj70 = {
+const obj73 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2717,7 +2725,7 @@ const obj70 = {
     return obj;
   }
 };
-const obj71 = {
+const obj74 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2731,7 +2739,7 @@ const obj71 = {
     return obj.allow(null);
   }
 };
-const obj72 = {
+const obj75 = {
   embeddedAppSDK: true,
   request(string) {
     let requiredResult;
@@ -2748,7 +2756,7 @@ const obj72 = {
     return obj.allow(null);
   }
 };
-const obj73 = {
+const obj76 = {
   embeddedAppSDK: true,
   request(string) {
     let _try2Result;
@@ -2800,12 +2808,13 @@ const obj73 = {
     return obj;
   }
 };
-const obj74 = {
+const obj77 = {
   embeddedAppSDK: true,
   request(number) {
+    let LISTENING;
     let NAME;
+    let PLAYING;
     let defaultResult;
-    let defaultResult1;
     let itemsResult;
     let maxResult;
     let maxResult1;
@@ -2836,10 +2845,11 @@ const obj74 = {
     let object9Result;
     let unknownResult;
     let valid;
+    let valid2;
     const obj = { pid: numberResult.min(0), activity: unknownResult.allow(null) };
     numberResult = number.number();
     const object = number.object;
-    const obj2 = { name: minResult.max(128), state: minResult1.max(128), state_url: minResult2.max(256), details: minResult3.max(128), details_url: minResult4.max(256), timestamps: object1Result.unknown(true), assets: object7Result.unknown(true), party: object8Result.unknown(true), secrets: object9Result.unknown(true), buttons: minResult18.max(2), instance: number.boolean(), supported_platforms: minResult19.max(10), type: defaultResult1.valid(constants2.PLAYING, constants2.LISTENING, constants2.WATCHING, constants2.COMPETING), status_display_type: valid(NAME, StatusDisplayTypes.StatusDisplayTypes.STATE, StatusDisplayTypes.StatusDisplayTypes.DETAILS) };
+    const obj2 = { name: minResult.max(128), state: minResult1.max(128), state_url: minResult2.max(256), details: minResult3.max(128), details_url: minResult4.max(256), timestamps: object1Result.unknown(true), assets: object7Result.unknown(true), party: object8Result.unknown(true), secrets: object9Result.unknown(true), buttons: minResult18.max(2), instance: number.boolean(), supported_platforms: minResult19.max(10), type: valid(PLAYING, LISTENING, ActivityTypes.ActivityTypes.WATCHING, ActivityTypes.ActivityTypes.COMPETING), status_display_type: valid2(NAME, StatusDisplayTypes.StatusDisplayTypes.STATE, StatusDisplayTypes.StatusDisplayTypes.DETAILS) };
     const stringResult = number.string();
     minResult = stringResult.min(1);
     const stringResult1 = number.string();
@@ -2877,7 +2887,7 @@ const obj74 = {
     minResult11 = stringResult11.min(1);
     object7Result = object3(obj4);
     const object4 = number.object;
-    const obj5 = { id: minResult12.max(128), size: itemsResult.length(2), privacy: defaultResult.valid(constants.PRIVATE, constants.PUBLIC) };
+    const obj5 = { id: minResult12.max(128), size: itemsResult.length(2), privacy: defaultResult.valid(ActivityPartyPrivacy.PRIVATE, ActivityPartyPrivacy.PUBLIC) };
     const stringResult12 = number.string();
     minResult12 = stringResult12.min(2);
     const items = number.array().items;
@@ -2885,7 +2895,7 @@ const obj74 = {
     const numberResult3 = number.number();
     itemsResult = items(numberResult3.min(0));
     const numberResult4 = number.number();
-    defaultResult = numberResult4.default(constants.PRIVATE);
+    defaultResult = numberResult4.default(ActivityPartyPrivacy.PRIVATE);
     object8Result = object4(obj5);
     const object5 = number.object;
     const obj6 = { match: minResult13.max(128), join: minResult14.max(128), spectate: minResult15.max(128) };
@@ -2914,9 +2924,12 @@ const obj74 = {
     const itemsResult1 = arrayResult4.items(joiEnum(number, "ActivityGamePlatforms"));
     minResult19 = itemsResult1.min(1);
     const numberResult5 = number.number();
-    defaultResult1 = numberResult5.default(constants2.PLAYING);
+    valid = numberResult5.default(ActivityTypes.ActivityTypes.PLAYING).valid;
+    numberResult5.default(ActivityTypes.ActivityTypes.PLAYING);
+    PLAYING = ActivityTypes.ActivityTypes.PLAYING;
+    LISTENING = ActivityTypes.ActivityTypes.LISTENING;
     const numberResult6 = number.number();
-    valid = numberResult6.optional().valid;
+    valid2 = numberResult6.optional().valid;
     numberResult6.optional();
     NAME = StatusDisplayTypes.StatusDisplayTypes.NAME;
     const objectResult = object(obj2);
@@ -2933,7 +2946,7 @@ const obj74 = {
     return keys1.allow(null);
   }
 };
-const obj75 = {
+const obj78 = {
   embeddedAppSDK: true,
   subscribeArgs(string) {
     let requiredResult;
@@ -2978,7 +2991,7 @@ const obj75 = {
     return object(obj);
   }
 };
-const obj76 = {
+const obj79 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload(number) {
@@ -2988,14 +3001,14 @@ const obj76 = {
     return obj;
   }
 };
-const obj77 = {
+const obj80 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload(arg0) {
     return User(arg0);
   }
 };
-const obj78 = {
+const obj81 = {
   embeddedAppSDK: true,
   subscribeArgs(string) {
     let requiredResult;
@@ -3008,7 +3021,7 @@ const obj78 = {
     return GuildMember(object, { legacyCompat: true });
   }
 };
-const obj79 = {
+const obj82 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload(object) {
@@ -3018,7 +3031,7 @@ const obj79 = {
     return obj;
   }
 };
-const obj80 = {
+const obj83 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload(number) {
@@ -3028,8 +3041,8 @@ const obj80 = {
     return obj;
   }
 };
-const obj81 = { embeddedAppSDK: true, subscribeArgs: "Array", payload: ActivityInstanceParticipants };
-const obj82 = {
+const obj84 = { embeddedAppSDK: true, subscribeArgs: "Array", payload: ActivityInstanceParticipants };
+const obj85 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload: function Relationship(object) {
@@ -3050,7 +3063,7 @@ const obj82 = {
     return object(obj);
   }
 };
-const obj83 = {
+const obj86 = {
   embeddedAppSDK: true,
   subscribeArgs: "Array",
   payload(string) {
@@ -3064,7 +3077,7 @@ const obj83 = {
     return obj;
   }
 };
-const obj84 = {
+const obj87 = {
   embeddedAppSDK: true,
   subscribeArgs(string) {
     let requiredResult;
@@ -3108,6 +3121,6 @@ let size = size_mod;
 const result = size.fileFinishedImporting("../discord_common/js/packages/rpc-schema/definitions.tsx");
 
 export { RPCEnums };
-export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj12, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj13, [helpers.RPCCommand.AUTHENTICATE]: obj14, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj15, [helpers.RPCCommand.RELAUNCH_FRAME]: obj16, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj17, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj18, [helpers.RPCCommand.START_VOICE_SESSION]: obj19, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj20, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj21, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj8, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj8, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj8, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj22, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj10, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj8, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj8, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj9, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj8, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj8, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj23, [helpers.RPCCommand.START_CAMERA_VIEW]: obj10, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj8, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj8, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj9, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj8, [helpers.RPCCommand.SHARE_INTERACTION]: obj24, [helpers.RPCCommand.SHARE_LINK]: obj25, [helpers.RPCCommand.SHARE_CONTENT]: obj26, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj27, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj28, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj29, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj30, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj31, [helpers.RPCCommand.SHOW_TOOLTIP]: obj32, [helpers.RPCCommand.HIDE_TOOLTIP]: obj33, [helpers.RPCCommand.SHOW_TOAST]: obj34, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj35, [helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj36, [helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj37, [helpers.RPCCommand.CAPTURE_SCREEN]: obj38, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj39, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj40, [helpers.RPCCommand.GET_CONTEXT]: obj41, [helpers.RPCCommand.GET_USER]: obj42, [helpers.RPCCommand.GET_CURRENT_USER]: obj43, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj44, [helpers.RPCCommand.QUEST_START_TIMER]: obj45, [helpers.RPCCommand.GET_QUEST]: obj46, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj47, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj48, [helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj49, [helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj50, [helpers.RPCCommand.CAPTURE_LOG]: obj51, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj52, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj53, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj54, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj55, [helpers.RPCCommand.SET_CONFIG]: obj56, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "context", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj57, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj58, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj59, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj60, [helpers.RPCCommand.START_PURCHASE]: obj61, [helpers.RPCCommand.GET_CHANNEL]: obj62, [helpers.RPCCommand.GET_CHANNELS]: obj63, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj64, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj65, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj66, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj67, [helpers.RPCCommand.GET_GUILD]: obj68, [helpers.RPCCommand.GET_GUILDS]: obj69, [helpers.RPCCommand.GET_ROLES]: obj70, [helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj71, [helpers.RPCCommand.GET_GUILD_MEMBER]: obj72, [helpers.RPCCommand.AUTHORIZE]: obj73, [helpers.RPCCommand.SET_ACTIVITY]: obj74 };
-export const RPCEventSchemas = { [helpers.RPCEvent.VOICE_STATE_UPDATE]: obj75, [helpers.RPCEvent.SPEAKING_START]: obj11, [helpers.RPCEvent.SPEAKING_STOP]: obj11, [helpers.RPCEvent.ACTIVITY_LAYOUT_MODE_UPDATE]: obj76, [helpers.RPCEvent.CURRENT_USER_UPDATE]: obj77, [helpers.RPCEvent.CURRENT_GUILD_MEMBER_UPDATE]: obj78, [helpers.RPCEvent.ENTITLEMENT_CREATE]: obj79, [helpers.RPCEvent.THERMAL_STATE_UPDATE]: obj80, [helpers.RPCEvent.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: obj81, [helpers.RPCEvent.RELATIONSHIP_UPDATE]: obj82, [helpers.RPCEvent.ACTIVITY_JOIN]: obj83, [helpers.RPCEvent.QUEST_ENROLLMENT_STATUS_UPDATE]: obj84 };
+export const RPCCommandSchemas = { [helpers.RPCCommand.INITIATE_IMAGE_UPLOAD]: obj15, [helpers.RPCCommand.OPEN_SHARE_MOMENT_DIALOG]: obj16, [helpers.RPCCommand.AUTHENTICATE]: obj17, [helpers.RPCCommand.GET_ACTIVITY_INSTANCE_CONNECTED_PARTICIPANTS]: obj18, [helpers.RPCCommand.RELAUNCH_FRAME]: obj19, [helpers.RPCCommand.GET_VOICE_CAPABILITIES]: obj20, [helpers.RPCCommand.GET_VOICE_SESSION_PARTICIPANTS]: obj21, [helpers.RPCCommand.START_VOICE_SESSION]: obj22, [helpers.RPCCommand.UPDATE_VOICE_SPATIAL]: obj23, [helpers.RPCCommand.SET_VOICE_SPATIAL_ACOUSTICS]: obj24, [helpers.RPCCommand.ENABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.DISABLE_VOICE_SPATIAL]: obj11, [helpers.RPCCommand.STOP_VOICE_SESSION]: obj11, [helpers.RPCCommand.GET_APPLICATION_STREAMING_VIEW_CAPABILITIES]: obj25, [helpers.RPCCommand.START_APPLICATION_STREAMING_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.RESUME_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.SET_APPLICATION_STREAMING_VIEW_FIT]: obj12, [helpers.RPCCommand.WATCH_APPLICATION_STREAMING_VIEW_ON_DISCORD]: obj11, [helpers.RPCCommand.STOP_APPLICATION_STREAMING_VIEW]: obj11, [helpers.RPCCommand.GET_CAMERA_VIEW_CAPABILITIES]: obj26, [helpers.RPCCommand.START_CAMERA_VIEW]: obj13, [helpers.RPCCommand.SUSPEND_CAMERA_VIEW]: obj11, [helpers.RPCCommand.RESUME_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SET_CAMERA_VIEW_FIT]: obj12, [helpers.RPCCommand.STOP_CAMERA_VIEW]: obj11, [helpers.RPCCommand.SHARE_INTERACTION]: obj27, [helpers.RPCCommand.SHARE_LINK]: obj28, [helpers.RPCCommand.SHARE_CONTENT]: obj29, [helpers.RPCCommand.OPEN_CONTEXT_MENU]: obj30, [helpers.RPCCommand.OPEN_USER_POPOUT]: obj31, [helpers.RPCCommand.OPEN_MEDIA_VIEWER]: obj32, [helpers.RPCCommand.OPEN_USER_PROFILE]: obj33, [helpers.RPCCommand.OPEN_GAME_PROFILE]: obj34, [helpers.RPCCommand.SHOW_TOOLTIP]: obj35, [helpers.RPCCommand.HIDE_TOOLTIP]: obj36, [helpers.RPCCommand.SHOW_TOAST]: obj37, [helpers.RPCCommand.SHOW_CONFIRM_MODAL]: obj38, [helpers.RPCCommand.GET_DEVICE_PERMISSIONS]: obj39, [helpers.RPCCommand.REQUEST_DEVICE_PERMISSIONS]: obj40, [helpers.RPCCommand.CAPTURE_SCREEN]: obj41, [helpers.RPCCommand.GET_RELATIONSHIPS]: obj42, [helpers.RPCCommand.INVITE_USER_EMBEDDED]: obj43, [helpers.RPCCommand.GET_CONTEXT]: obj44, [helpers.RPCCommand.GET_USER]: obj45, [helpers.RPCCommand.GET_CURRENT_USER]: obj46, [helpers.RPCCommand.GET_QUEST_ENROLLMENT_STATUS]: obj47, [helpers.RPCCommand.QUEST_START_TIMER]: obj48, [helpers.RPCCommand.GET_QUEST]: obj49, [helpers.RPCCommand.REQUEST_PROXY_TICKET_REFRESH]: obj50, [helpers.RPCCommand.SET_RUNS_IN_BACKGROUND]: obj51, [helpers.RPCCommand.SET_FRAME_RELAUNCH_DEEP_LINK]: obj52, [helpers.RPCCommand.SET_AUDIO_SESSION_TYPE]: obj53, [helpers.RPCCommand.CAPTURE_LOG]: obj54, [helpers.RPCCommand.ENCOURAGE_HW_ACCELERATION]: obj55, [helpers.RPCCommand.GET_PLATFORM_BEHAVIORS]: obj56, [helpers.RPCCommand.USER_SETTINGS_GET_LOCALE]: obj57, [helpers.RPCCommand.SET_ORIENTATION_LOCK_STATE]: obj58, [helpers.RPCCommand.SET_CONFIG]: obj59, [helpers.RPCCommand.OPEN_INVITE_DIALOG]: { embeddedAppSDK: true, request: "concat", response: "add" }, [helpers.RPCCommand.OPEN_EXTERNAL_LINK]: obj60, [helpers.RPCCommand.GET_CHANNEL_PERMISSIONS]: obj61, [helpers.RPCCommand.GET_SKUS_EMBEDDED]: obj62, [helpers.RPCCommand.GET_ENTITLEMENTS_EMBEDDED]: obj63, [helpers.RPCCommand.START_PURCHASE]: obj64, [helpers.RPCCommand.GET_CHANNEL]: obj65, [helpers.RPCCommand.GET_CHANNELS]: obj66, [helpers.RPCCommand.GET_SELECTED_VOICE_CHANNEL]: obj67, [helpers.RPCCommand.SELECT_VOICE_CHANNEL]: obj68, [helpers.RPCCommand.SELECT_TEXT_CHANNEL]: obj69, [helpers.RPCCommand.CREATE_CHANNEL_INVITE]: obj70, [helpers.RPCCommand.GET_GUILD]: obj71, [helpers.RPCCommand.GET_GUILDS]: obj72, [helpers.RPCCommand.GET_ROLES]: obj73, [helpers.RPCCommand.GET_CURRENT_USER_GUILD_MEMBER]: obj74, [helpers.RPCCommand.GET_GUILD_MEMBER]: obj75, [helpers.RPCCommand.AUTHORIZE]: obj76, [helpers.RPCCommand.SET_ACTIVITY]: obj77 };
+export const RPCEventSchemas = { [helpers.RPCEvent.VOICE_STATE_UPDATE]: obj78, [helpers.RPCEvent.SPEAKING_START]: obj14, [helpers.RPCEvent.SPEAKING_STOP]: obj14, [helpers.RPCEvent.ACTIVITY_LAYOUT_MODE_UPDATE]: obj79, [helpers.RPCEvent.CURRENT_USER_UPDATE]: obj80, [helpers.RPCEvent.CURRENT_GUILD_MEMBER_UPDATE]: obj81, [helpers.RPCEvent.ENTITLEMENT_CREATE]: obj82, [helpers.RPCEvent.THERMAL_STATE_UPDATE]: obj83, [helpers.RPCEvent.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE]: obj84, [helpers.RPCEvent.RELATIONSHIP_UPDATE]: obj85, [helpers.RPCEvent.ACTIVITY_JOIN]: obj86, [helpers.RPCEvent.QUEST_ENROLLMENT_STATUS_UPDATE]: obj87 };
 export const RPCNamedSchemas = items;

@@ -1,14 +1,17 @@
 // Module ID: 16108
 // Function ID: 16109
-// Dependencies: [16087, 16086]
+// Dependencies: [16109]
 
 // Module 16108
-import _mod16086 from "module_16086" /* 16086 */;
-import _mod16087 from "module_16087" /* 16087 */;
+import _mod16109 from "module_16109" /* 16109 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16087;
-  return tmp(arg0, _mod16086);
-});
 
-export default tmp;
+export default (obj) => {
+  let tmp2;
+  if (typeof obj === "object") {
+    tmp2 = null !== obj;
+  } else {
+    tmp2 = _mod16109(obj);
+  }
+  return tmp2;
+};

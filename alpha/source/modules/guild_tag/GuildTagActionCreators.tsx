@@ -1,14 +1,14 @@
-// Module ID: 15657
-// Function ID: 15658
+// Module ID: 15697
+// Function ID: 15698
 // Name: GuildTagActionCreators
-// Dependencies: [5, 1389, 1084, 1294, 584, 2]
+// Dependencies: [5, 1384, 1072, 1283, 572, 2]
 // Exports: adoptGuildIdentity
 
-// Module 15657 (GuildTagActionCreators)
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 15697 (GuildTagActionCreators)
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
@@ -31,7 +31,7 @@ let obj = function _adoptGuildIdentity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

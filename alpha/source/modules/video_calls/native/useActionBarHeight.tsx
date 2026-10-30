@@ -1,68 +1,32 @@
-// Module ID: 11475
-// Function ID: 11476
+// Module ID: 11676
+// Function ID: 11677
 // Name: useActionBarHeight
-// Dependencies: [2012, 1084, 5303, 11476, 558, 576, 11479, 11484, 504, 2]
+// Dependencies: [2007, 1072, 5268, 11677, 11680, 11173, 504, 2]
+// Exports: default
 
-// Module 11475 (useActionBarHeight)
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5303 */;
-import CallBarAction from "CallBarAction" /* 11476 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11479 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11484 */;
-import MediaEngineStore from "MediaEngineStore" /* 2012 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11676 (useActionBarHeight)
+import get_initialized from "get initialized" /* 504 */;
+import Constants from "Constants" /* 1072 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5268 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11173 */;
+import CallBarAction from "CallBarAction" /* 11677 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 11680 */;
+import MediaEngineStore from "MediaEngineStore" /* 2007 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
 const InputModes = Constants.InputModes;
 let closure_5 = ActionSheetConstants.ACTION_SHEET_HANDLE_SPACING;
 const sum = 2 * CallBarAction.SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;
 let metroRequire = sum;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionBarHeight(arg0) {
-  let mode;
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(2);
-  const obj2 = useIsFiveButtonLayout;
-  const isFiveButtonLayout = obj2.useIsFiveButtonLayout(arg0);
-  const tmp5 = useCanSpeakInChannelDefault(arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MediaEngineStore];
-    const fn = function s() {
-      return mode.getMode() === constants.PUSH_TO_TALK;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  let num3 = 88;
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  if (isFiveButtonLayout) {
-    num3 = metroRequire;
-  }
-  let num4 = 0;
-  metroRequire = num3 + closure_5;
-  if (stateFromStores) {
-    num4 = 0;
-    if (tmp5) {
-      num4 = 56;
-    }
-  }
-  return metroRequire + num4;
-}) : (function useActionBarHeight(arg0) {
+const result = size.fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
+
+export default function useActionBarHeight(id) {
   let mode;
   const obj = useIsFiveButtonLayout;
-  const isFiveButtonLayout = obj.useIsFiveButtonLayout(arg0);
+  const isFiveButtonLayout = obj.useIsFiveButtonLayout(id);
   const items = [MediaEngineStore];
   let num = 88;
-  const tmp2 = useCanSpeakInChannelDefault(arg0);
+  const tmp2 = useCanSpeakInChannelDefault(id);
   const obj2 = get_initialized;
   const stateFromStores = obj2.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
   if (isFiveButtonLayout) {
@@ -77,10 +41,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useActionB
     }
   }
   return metroRequire + num2;
-});
-const result = size.fileFinishedImporting("modules/video_calls/native/useActionBarHeight.tsx");
-
-export default tmp3;
+};
 export const CALL_ACTION_BAR_HEIGHT = 88;
 export const FIVE_BUTTON_CONTAINER_PADDING_TOP = 16;
 export const FIVE_BUTTON_CONTAINER_PADDING_BOTTOM = 16;

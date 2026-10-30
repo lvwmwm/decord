@@ -1,65 +1,38 @@
-// Module ID: 16775
-// Function ID: 16776
+// Module ID: 16829
+// Function ID: 16830
 // Name: FriendRequestsMutualFriendsSetting
-// Dependencies: [19, 8387, 1084, 558, 16613, 576, 4833, 7151, 1402, 11302, 1125, 2]
+// Dependencies: [19, 8424, 1072, 16666, 4834, 7159, 1397, 11505, 1114, 2]
 
-// Module 16775 (FriendRequestsMutualFriendsSetting)
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16613 */;
+// Module 16829 (FriendRequestsMutualFriendsSetting)
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import FlagUtilsAll from "FlagUtils" /* 1397 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7159 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16666 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const UserSettingsUtils = tmp(7151);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const FriendSourceFlags = Constants.FriendSourceFlags;
-let ReactCompilerGating = ReactCompilerGating_mod;
-ReactCompilerGating.isReactCompilerEnabled();
-ReactCompilerGating = ReactCompilerGating_mod;
-function useIsDisabled() {
-  const obj = useParentalControlSettings;
-  return obj.useIsParentallyControlled();
-}
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFriendRequestsMutualFriendsSettingValue() {
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
-  const setting = FriendSourceFlagsSetting.useSetting();
-  if (cResult[0] !== setting) {
-    const tmpResult = UserSettingsUtils;
-    const flags = tmpResult.computeFlags(setting);
-    cResult[0] = setting;
-    cResult[1] = flags;
-    tmp5 = flags;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5.mutualFriends;
-}) : (function useFriendRequestsMutualFriendsSettingValue() {
-  let setting;
-  const FriendSourceFlagsSetting = setting(4833).FriendSourceFlagsSetting;
-  setting = FriendSourceFlagsSetting.useSetting();
-  const items = [setting];
-  return react.useMemo(() => {
-    const obj = UserSettingsUtils;
-    return obj.computeFlags(setting);
-  }, items).mutualFriends;
-});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t.IqlCSq);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
-  useValue: tmp3,
+  useValue: function useFriendRequestsMutualFriendsSettingValue() {
+    let setting;
+    const FriendSourceFlagsSetting = setting(4834).FriendSourceFlagsSetting;
+    setting = FriendSourceFlagsSetting.useSetting();
+    const items = [setting];
+    return react.useMemo(() => {
+      const obj = UserSettingsUtils;
+      return obj.computeFlags(setting);
+    }, items).mutualFriends;
+  },
   onValueChange: function onFriendRequestsMutualFriendsSettingValueChange(arg0) {
     let addFlagResult;
     const FriendSourceFlagsSetting = UserSettings.FriendSourceFlagsSetting;
@@ -75,9 +48,12 @@ let obj = {
     }
     updateSetting(addFlagResult);
   },
-  useIsDisabled
+  useIsDisabled() {
+    const obj = useParentalControlSettings;
+    return obj.useIsParentallyControlled();
+  }
 };
 const toggle = SettingBuilders.createToggle(obj);
-const result1 = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualFriendsSetting.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/FriendRequestsMutualFriendsSetting.tsx");
 
 export default toggle;

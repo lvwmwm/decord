@@ -1,10 +1,10 @@
 // Module ID: 18261
 // Function ID: 18262
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 18261 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 16, height: 16, scales: [1, 2, 3], hash: "d5f86d80f0a1d11d99b6b752d01d2cf8", name: "ic-application-rejected", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 32, height: 32, scales: [2, 3, 4], hash: "c33937cb1ecf8da1cf6ed34f37467be9", name: "ic-customize", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 14009
-// Function ID: 14010
+// Module ID: 14131
+// Function ID: 14132
 // Name: getMutualGuildsLabel
-// Dependencies: [1125, 2]
+// Dependencies: [1114, 2]
 // Exports: default
 
-// Module 14009 (getMutualGuildsLabel)
-import intl4 from "intl" /* 1125 */;
+// Module 14131 (getMutualGuildsLabel)
+import intl4 from "intl" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/getMutualGuildsLabel.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15181
+// Function ID: 15182
 // Name: AndroidTwoWeekTrialsExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 15141 (AndroidTwoWeekTrialsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 15181 (AndroidTwoWeekTrialsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

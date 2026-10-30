@@ -1,10 +1,10 @@
-// Module ID: 2036
-// Function ID: 2037
+// Module ID: 2033
+// Function ID: 2034
 // Name: UrlHostUtils
 // Dependencies: [2]
 // Exports: getHostWithoutPort, isLocalhost
 
-// Module 2036 (UrlHostUtils)
+// Module 2033 (UrlHostUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/UrlHostUtils.tsx");

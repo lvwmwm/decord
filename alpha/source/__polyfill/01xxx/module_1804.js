@@ -1,74 +1,84 @@
 // Module ID: 1804
 // Function ID: 1805
-// Dependencies: [19, 1700, 1681]
-// Exports: useAnimatedKeyboard
+// Dependencies: [19, 1803, 1654, 1695]
+// Exports: useAnimatedReaction
 
 // Module 1804
 import react from "react" /* 19 */;
+import startMapper from "startMapper" /* 1695 */;
 
-let dependencyMap;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-let c2;
-let c3;
-({ useEffect: c2, useRef: c3 } = react);
-let closure_4 = { code: "function pnpm_useAnimatedKeyboardTs1(state,height){const{keyboardEventData}=this.__closure;keyboardEventData.state.value=state;keyboardEventData.height.value=height;}" };
-let closure_5 = { code: "function pnpm_useAnimatedKeyboardTs2(state,height){const{_keyboardEventData}=this.__closure;_keyboardEventData.state.value=state;_keyboardEventData.height.value=height;}" };
+let useEffect = react.useEffect;
+let closure_3 = { code: "function pnpm_useAnimatedReactionTs1(){const{prepare,react,previous}=this.__closure;const input=prepare();react(input,previous.value);previous.value=input;}" };
 
-export function useAnimatedKeyboard() {
-  let obj3;
-  let obj4;
-  let ref;
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "Reflect" };
+export function useAnimatedReaction(fn, fn2, items) {
+  let previous;
+  let react;
+  _require = fn;
+  dependencyMap = fn2;
+  let obj = require("module_1803");
+  useEffect = obj.useSharedValue(null);
+  let __closure = fn.__closure;
+  const _Object = Object;
+  const tmp2 = _require;
+  if (__closure == null) {
+    __closure = {};
   }
-  let ref2;
-  let obj2;
-  const tmp = ref2(null);
-  dependencyMap = tmp;
-  const tmp2 = ref2(-1);
-  let closure_2 = tmp2;
-  const tmp3 = ref2(false);
-  ref2 = tmp3;
-  if (null === tmp.current) {
-    obj2 = { state: obj3.makeMutable(obj(1681).KeyboardState.UNKNOWN), height: obj4.makeMutable(0) };
-    obj3 = obj(1700);
-    let fn = function c(value, value2) {
-      obj2.state.value = value;
-      obj2.height.value = value2;
-    };
-    const obj6 = { keyboardEventData: obj2 };
-    fn.__closure = obj6;
-    fn.__workletHash = 4393537867728;
-    fn.__initData = obj2;
-    obj4 = obj(1700);
-    const obj5 = obj(1700);
-    tmp2.current = obj5.subscribeForKeyboardEvents(fn, obj);
-    tmp.current = obj2;
-    tmp3.current = true;
-  }
-  closure_2(() => {
-    if (false === ref2.current) {
-      if (null !== ref.current) {
-        const current = ref.current;
-        obj = obj(ref[1]);
-        const fn = function u(value, value2) {
-          current.state.value = value;
-          current.height.value = value2;
-        };
-        obj2 = { _keyboardEventData: current };
-        fn.__closure = obj2;
-        fn.__workletHash = 5041909921996;
-        fn.__initData = __initData;
-        ref.current = obj.subscribeForKeyboardEvents(fn, current);
-        tmp.current = true;
-      }
+  let values2 = values(__closure);
+  const tmp2Result = tmp2(1654);
+  let tmp4 = tmp2Result.shouldBeUseWeb() && !values2.length;
+  let arr2 = items;
+  if (tmp4) {
+    let length;
+    if (arr2 != null) {
+      length = arr2.length;
     }
-    return () => {
-      obj = obj(closure_1[1]);
-      const result = obj.unsubscribeFromKeyboardEvents(ref.current);
-      ref2.current = false;
+    tmp4 = length;
+  }
+  if (tmp4) {
+    values2 = arr2;
+  }
+  if (undefined === arr2) {
+    let __closure1 = fn.__closure;
+    const _Object2 = Object;
+    const values3 = Object.values;
+    if (__closure1 == null) {
+      __closure1 = {};
+    }
+    items = [, ];
+    let __closure2 = fn2.__closure;
+    const _Object3 = Object;
+    const values6 = Object.values;
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, values3(__closure1), 0);
+    if (__closure2 == null) {
+      __closure2 = {};
+    }
+    const arraySpreadResult2 = HermesBuiltin.arraySpread(items, values6(__closure2), arraySpreadResult);
+    items[arraySpreadResult2] = fn.__workletHash;
+    items[arraySpreadResult2 + 1] = fn2.__workletHash;
+    arr2 = items;
+  } else {
+    arr2.push(fn.__workletHash, fn2.__workletHash);
+  }
+  useEffect(() => {
+    let closure_0;
+    let value;
+    const fn = function t() {
+      const tmp = closure_0();
+      react(tmp, value.value);
+      value.value = tmp;
     };
-  }, []);
-  return tmp.current;
+    let obj = { prepare, react, previous };
+    fn.__closure = obj;
+    fn.__workletHash = 3026350450260;
+    fn.__initData = values2;
+    const obj2 = prepare(react[3]);
+    prepare = obj2.startMapper(fn, values2);
+    return () => {
+      const obj = startMapper;
+      obj.stopMapper(closure_0);
+    };
+  }, arr2);
 }

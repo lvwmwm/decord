@@ -1,19 +1,19 @@
-// Module ID: 11152
-// Function ID: 11153
+// Module ID: 11028
+// Function ID: 11029
 // Name: useScaledTextLineHeight
-// Dependencies: [11153, 5271, 558, 576, 5290, 2]
-// Exports: scaleLineHeight, scaleTextLineHeight
+// Dependencies: [11029, 5619, 5637, 2]
+// Exports: scaleLineHeight, scaleTextLineHeight, useScaledTextLineHeight
 
-// Module 11152 (useScaledTextLineHeight)
-import react from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useFontScale from "useFontScale" /* 5290 */;
-import react_nativeDefault from "react-native" /* 11153 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11028 (useScaledTextLineHeight)
+import Text_Text from "Text/Text" /* 5619 */;
+import useFontScale from "useFontScale" /* 5637 */;
+import react_nativeDefault from "react-native" /* 11029 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
-function scaleLineHeight(arg0) {
+let result = size.fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
+
+export function scaleLineHeight(arg0) {
   let value = map.get(arg0);
   const obj = map;
   if (null == value) {
@@ -24,8 +24,8 @@ function scaleLineHeight(arg0) {
   }
   return value;
 }
-function scaleTextLineHeight(c15, fontScale) {
-  const lineHeight = Text_Text.TextStyleSheet[c15].lineHeight;
+export function scaleTextLineHeight(c10, fontScale) {
+  const lineHeight = Text_Text.TextStyleSheet[c10].lineHeight;
   let value = map.get(lineHeight);
   const obj = map;
   if (null == value) {
@@ -36,35 +36,10 @@ function scaleTextLineHeight(c15, fontScale) {
   }
   return value;
 }
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledTextLineHeight(arg0) {
-  const obj = react;
-  const cResult = obj.c(3);
-  const obj2 = useFontScale;
-  const fontScale = obj2.useFontScale();
-  if (cResult[0] === fontScale) {
-    let tmp5;
-    if (cResult[1] === arg0) {
-      tmp5 = cResult[2];
-    }
-    return tmp5;
-  }
-  const lineHeight = Text_Text.TextStyleSheet[arg0].lineHeight;
-  let value = map.get(lineHeight);
-  const obj3 = map;
-  if (null == value) {
-    const obj4 = react_nativeDefault;
-    const scaledHeightForText = obj4.getScaledHeightForText(lineHeight);
-    const result = obj3.set(lineHeight, scaledHeightForText);
-    value = scaledHeightForText;
-  }
-  cResult[0] = fontScale;
-  cResult[1] = arg0;
-  cResult[2] = value;
-  tmp5 = value;
-}) : (function useScaledTextLineHeight(arg0) {
+export function useScaledTextLineHeight(c7) {
   const obj = useFontScale;
   const fontScale = obj.useFontScale();
-  const lineHeight = Text_Text.TextStyleSheet[arg0].lineHeight;
+  const lineHeight = Text_Text.TextStyleSheet[c7].lineHeight;
   let value = map.get(lineHeight);
   const obj2 = map;
   if (null == value) {
@@ -74,9 +49,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useScaledT
     value = scaledHeightForText;
   }
   return value;
-});
-let result = size.fileFinishedImporting("modules/screen/native/useScaledTextLineHeight.android.tsx");
-
-export { scaleLineHeight };
-export { scaleTextLineHeight };
-export const useScaledTextLineHeight = tmp3;
+}

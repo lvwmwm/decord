@@ -1,86 +1,21 @@
-// Module ID: 6005
-// Function ID: 6006
+// Module ID: 6012
+// Function ID: 6013
 // Name: Dialog
-// Dependencies: [109, 19, 17, 21, 558, 576, 6006, 2]
+// Dependencies: [19, 17, 21, 6013, 2]
+// Exports: Dialog
 
-// Module 6005 (Dialog)
+// Module 6012 (Dialog)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import AccessibilityView2 from "AccessibilityView" /* 6013 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const AccessibilityView2 = tmp(6006);
-let closure_2 = ["dialogKey", "onDismiss", "zIndex"];
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dialog(arg0) {
-  let dialogKey;
-  let onDismiss;
-  let tmp12;
-  let tmp4;
-  let tmp5;
-  let tmp6;
-  let tmp7;
-  let zIndex;
-  const obj = react2;
-  const cResult = obj.c(12);
-  if (cResult[0] !== arg0) {
-    ({ dialogKey, onDismiss, zIndex } = arg0);
-    const tmp10 = _objectWithoutProperties(arg0, closure_2);
-    cResult[0] = arg0;
-    cResult[1] = dialogKey;
-    cResult[2] = onDismiss;
-    cResult[3] = tmp10;
-    cResult[4] = zIndex;
-    tmp7 = zIndex;
-    tmp6 = tmp10;
-    tmp5 = onDismiss;
-    tmp4 = dialogKey;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-    tmp6 = cResult[3];
-    tmp7 = cResult[4];
-  }
-  const id = react.useId();
-  if (cResult[5] !== tmp7) {
-    const items = [StyleSheet.absoluteFill, ];
-    const obj2 = { zIndex: tmp7 };
-    items[1] = obj2;
-    cResult[5] = tmp7;
-    cResult[6] = items;
-    tmp12 = items;
-  } else {
-    tmp12 = cResult[6];
-  }
-  if (tmp4 == null) {
-    tmp4 = id;
-  }
-  if (cResult[7] === tmp5) {
-    if (cResult[8] === tmp12) {
-      if (cResult[9] === tmp4) {
-        let tmp14;
-        if (cResult[10] === tmp6) {
-          tmp14 = cResult[11];
-        }
-        return tmp14;
-      }
-    }
-  }
-  const AccessibilityView = AccessibilityView2.AccessibilityView;
-  const merged = Object.assign(tmp6);
-  const tmp16 = <AccessibilityView style={tmp12} accessibilityViewIsModal onAccessibilityEscape={tmp5} nativeID={tmp4} />;
-  cResult[7] = tmp5;
-  cResult[8] = tmp12;
-  cResult[9] = tmp4;
-  cResult[10] = tmp6;
-  cResult[11] = tmp16;
-  tmp14 = tmp16;
-}) : (function Dialog(dialogKey) {
+const result = size.fileFinishedImporting("design/components/Dialog/native/Dialog.native.tsx");
+
+export function Dialog(dialogKey) {
   let items;
   let onDismiss;
   let zIndex;
@@ -97,7 +32,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Dialog(arg
   }
   const merged1 = Object.assign(merged);
   return tmp3(AccessibilityView, obj);
-});
-const result = size.fileFinishedImporting("design/components/Dialog/native/Dialog.native.tsx");
-
-export const Dialog = tmp2;
+}

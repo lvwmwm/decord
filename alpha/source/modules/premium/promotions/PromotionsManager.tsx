@@ -1,22 +1,21 @@
-// Module ID: 19473
-// Function ID: 19474
+// Module ID: 19536
+// Function ID: 19537
 // Name: PromotionsManager
-// Dependencies: [2066, 2056, 9583, 1084, 1095, 7274, 9624, 2]
+// Dependencies: [2063, 2053, 9606, 1083, 7281, 9648, 1086, 2]
 
-// Module 19473 (PromotionsManager)
-import Constants from "Constants" /* 1084 */;
-import Constants2 from "Constants" /* 1095 */;
-import PromotionsActionCreators from "PromotionsActionCreators" /* 9624 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
-import SubscriptionStore from "SubscriptionStore" /* 2056 */;
-import PromotionsStore from "PromotionsStore" /* 9583 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+// Module 19536 (PromotionsManager)
+import Constants from "Constants" /* 1083 */;
+import EntitlementTypes from "EntitlementTypes" /* 1086 */;
+import PromotionsActionCreators from "PromotionsActionCreators" /* 9648 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
+import SubscriptionStore from "SubscriptionStore" /* 2053 */;
+import PromotionsStore from "PromotionsStore" /* 9606 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let map;
 
-const EntitlementTypes = Constants.EntitlementTypes;
-const SubscriptionTypes = Constants2.SubscriptionTypes;
+const SubscriptionTypes = Constants.SubscriptionTypes;
 class PromotionsManager extends AutomaticLifecycleManager {
   constructor() {
     let onMobilePurchaseSuccess;
@@ -112,7 +111,7 @@ class PromotionsManager extends AutomaticLifecycleManager {
   }
   onVCRedeemed(entitlements) {
     entitlements = entitlements.entitlements;
-    if (entitlements.some((type) => type.type === constants.FRACTIONAL_REDEMPTION)) {
+    if (entitlements.some((type) => type.type === EntitlementTypes.EntitlementTypes.FRACTIONAL_REDEMPTION)) {
       const obj = PromotionsActionCreators;
       const result = obj.maybeFetchActivePromotions(false);
     }

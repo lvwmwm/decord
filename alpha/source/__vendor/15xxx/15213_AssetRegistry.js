@@ -1,10 +1,10 @@
 // Module ID: 15213
 // Function ID: 15214
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 15213 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "fac2e3b3b87c5c331642c571eab831c9", name: "sticker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 179, height: 32, scales: [2, 3], hash: "ed5b973480dda2a9e5ec5c3384729f7b", name: "img_logo_bundle_horizontal_black", type: "png" });

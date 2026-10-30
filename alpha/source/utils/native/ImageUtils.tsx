@@ -1,21 +1,21 @@
-// Module ID: 1496
-// Function ID: 1497
+// Module ID: 1491
+// Function ID: 1492
 // Name: utils/ImageUtils
-// Dependencies: [32, 17, 1084, 1451, 1497, 1491, 1452, 1898, 12, 1418, 1415, 1899, 2]
+// Dependencies: [32, 17, 1072, 1446, 1492, 1486, 1447, 1893, 12, 1413, 1410, 1894, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1496 (utils/ImageUtils)
+// Module 1491 (utils/ImageUtils)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1418 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1451 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1452 */;
-import _modDef1491 from "module_1491" /* 1491 */;
-import useWindowDimensions from "useWindowDimensions" /* 1497 */;
-import react_nativeDefault from "react-native" /* 1898 */;
-import react_nativeDefault2 from "react-native" /* 1899 */;
+import Constants from "Constants" /* 1072 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1413 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1446 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1447 */;
+import _modDef1486 from "module_1486" /* 1486 */;
+import useWindowDimensions from "useWindowDimensions" /* 1492 */;
+import react_nativeDefault from "react-native" /* 1893 */;
+import react_nativeDefault2 from "react-native" /* 1894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ function getSrcWithWidthAndHeight(animated) {
   const tmp = _slicedToArray(src.split("?"), 2);
   const items = [tmp[0], ];
   const tmp2 = tmp[1];
-  let obj = _modDef1491;
+  let obj = _modDef1486;
   items[1] = obj.parse(tmp2);
   let tmp5 = _slicedToArray(items, 2);
   [tmp6, tmp7] = tmp5;
@@ -90,12 +90,12 @@ function getSrcWithWidthAndHeight(animated) {
   let text = tmp6;
   const tmp3Result = _modDef12;
   if (!tmp3Result.isEmpty(tmp7)) {
-    _modDef1491;
+    _modDef1486;
     text = `${tmp6}?${obj5.stringify(tmp7)}`;
   }
   return text;
 }
-function getMobileOptimizedSrc(proxy_url, c7, c72, png) {
+function getMobileOptimizedSrc(proxy_url, width, height, png) {
   let tmp = png;
   if (png === undefined) {
     tmp = null;
@@ -107,23 +107,23 @@ function getMobileOptimizedSrc(proxy_url, c7, c72, png) {
   const obj = useWindowDimensions;
   size = obj.getWindowDimensions();
   const result = PixelRatio.getPixelSizeForLayoutSize(size.width) * num;
-  const bound = Math.min(c7 > c72 ? result / c7 : PixelRatio.getPixelSizeForLayoutSize(size.height / 2) * num / c72, 1);
-  let rounded1 = c72;
-  let rounded = c7;
+  const bound = Math.min(width > height ? result / width : PixelRatio.getPixelSizeForLayoutSize(size.height / 2) * num / height, 1);
+  let rounded1 = height;
+  let rounded = width;
   if (bound < 1) {
     const _Math = Math;
-    rounded = Math.ceil(c7 * bound);
+    rounded = Math.ceil(width * bound);
     const _Math2 = Math;
-    rounded1 = Math.ceil(c72 * bound);
+    rounded1 = Math.ceil(height * bound);
   }
-  const obj2 = { src: proxy_url, sourceWidth: c7, sourceHeight: c72, targetWidth: rounded, targetHeight: rounded1, format: tmp };
+  const obj2 = { src: proxy_url, sourceWidth: width, sourceHeight: height, targetWidth: rounded, targetHeight: rounded1, format: tmp };
   return getSrcWithWidthAndHeight(obj2);
 }
-function getPaletteForAvatarMobile(src) {
+function getPaletteForAvatarMobile(automodAvatarURL) {
   const ensureAvatarSource = utils_AvatarUtils.ensureAvatarSource;
   utils_AvatarUtils;
   const obj = AvatarUtils;
-  const ensureAvatarSourceResult = ensureAvatarSource(obj.makeSource(src));
+  const ensureAvatarSourceResult = ensureAvatarSource(obj.makeSource(automodAvatarURL));
   const obj2 = react_nativeDefault2;
   return obj2.getDominantColors(ensureAvatarSourceResult);
 }

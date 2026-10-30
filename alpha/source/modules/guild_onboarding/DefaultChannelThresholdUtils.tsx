@@ -1,17 +1,17 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 9024
+// Function ID: 9025
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 4879, 7255, 7256, 1084, 7254, 7261, 1096, 5946, 1125, 2]
+// Dependencies: [5, 4880, 7262, 7263, 1072, 7261, 7268, 1084, 5953, 1114, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 9011 (DefaultChannelThresholdUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7254 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7256 */;
+// Module 9024 (DefaultChannelThresholdUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7261 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7263 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7255 */;
-import Constants from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7262 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, guild, set;
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,20 +1,32 @@
-// Module ID: 13016
-// Function ID: 13017
+// Module ID: 13168
+// Function ID: 13169
 // Name: usePendingFolderGuildIds
-// Dependencies: [5037, 4879, 558, 576, 504, 2]
-// Exports: getPendingFolderGuildIds
+// Dependencies: [5041, 4880, 504, 2]
+// Exports: default, getPendingFolderGuildIds
 
-// Module 13016 (usePendingFolderGuildIds)
-import react from "react" /* 576 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5037 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13168 (usePendingFolderGuildIds)
+import get_initialized from "get initialized" /* 504 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5041 */;
+import GuildStore from "GuildStore" /* 4880 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const get_initialized = tmp(504);
-const f118108 = (item) => null == closure_0[item];
-function getPendingFolderGuildIds() {
+const f103728 = (item) => null == closure_0[item];
+const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
+
+export default function usePendingFolderGuildIds() {
+  const obj = get_initialized;
+  let items = [UserGuildJoinRequestStore, GuildStore];
+  return obj.useStateFromStoresArray(items, () => {
+    let obj;
+    let obj2;
+    const items = [UserGuildJoinRequestStore, GuildStore];
+    [obj, obj2] = items;
+    const guildIds = obj.computeGuildIds();
+    const guilds = obj2.getGuilds();
+    return guildIds.filter(f103728);
+  });
+};
+export function getPendingFolderGuildIds() {
   let obj;
   let obj2;
   let tmp = arg0;
@@ -25,47 +37,5 @@ function getPendingFolderGuildIds() {
   [obj, obj2] = tmp;
   const guildIds = obj.computeGuildIds();
   const guilds = obj2.getGuilds();
-  return guildIds.filter(f118108);
+  return guildIds.filter(f103728);
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePendingFolderGuildIds() {
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [UserGuildJoinRequestStore, GuildStore];
-    const fn = function u() {
-      let obj;
-      let obj2;
-      const items = [UserGuildJoinRequestStore, GuildStore];
-      [obj, obj2] = items;
-      const guildIds = obj.computeGuildIds();
-      const guilds = obj2.getGuilds();
-      return guildIds.filter(f118108);
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  return tmpResult.useStateFromStoresArray(tmp4, tmp5);
-}) : (function usePendingFolderGuildIds() {
-  const obj = get_initialized;
-  let items = [UserGuildJoinRequestStore, GuildStore];
-  return obj.useStateFromStoresArray(items, () => {
-    let obj;
-    let obj2;
-    const items = [UserGuildJoinRequestStore, GuildStore];
-    [obj, obj2] = items;
-    const guildIds = obj.computeGuildIds();
-    const guilds = obj2.getGuilds();
-    return guildIds.filter(f118108);
-  });
-});
-const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
-
-export default tmp2;
-export { getPendingFolderGuildIds };

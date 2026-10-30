@@ -1,14 +1,14 @@
-// Module ID: 14054
-// Function ID: 14055
+// Module ID: 14202
+// Function ID: 14203
 // Name: ContactSyncActionCreators
-// Dependencies: [5, 6559, 1084, 4833, 1402, 1264, 14050, 7334, 2]
+// Dependencies: [5, 6566, 1072, 4834, 1397, 1253, 14198, 7341, 2]
 
-// Module 14054 (ContactSyncActionCreators)
-import FlagUtils from "FlagUtils" /* 1402 */;
-import UserSettings from "UserSettings" /* 4833 */;
+// Module 14202 (ContactSyncActionCreators)
+import FlagUtils from "FlagUtils" /* 1397 */;
+import UserSettings from "UserSettings" /* 4834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6559 */;
-import Constants from "Constants" /* 1084 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6566 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let am_discoverable_email, c5, c6, constants;
@@ -33,7 +33,7 @@ let obj = function _updateDiscoverability() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -103,7 +103,7 @@ let obj = function _updateDiscoverability() {
           obj3 = closure_132_0(closure_132_2[6]);
           track(USER_DISCOVERY_UPDATED, obj10);
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp38) {
         c6 = 3;
@@ -131,7 +131,7 @@ _asyncToGenerator(async (name) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ _asyncToGenerator(async (name) => {
             }
             track(NAME_SUBMITTED, obj);
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp17) {
@@ -202,7 +202,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "IconComponent", done: "IconComponent" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -319,7 +319,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         const obj7 = closure_1(setting[5]);
         obj7.track(constants.CONTACT_SYNC_TOGGLED, obj19);
         constants = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp47) {
       constants = 3;

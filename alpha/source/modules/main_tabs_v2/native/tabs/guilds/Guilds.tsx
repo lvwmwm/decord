@@ -1,34 +1,24 @@
-// Module ID: 17954
-// Function ID: 17955
+// Module ID: 18014
+// Function ID: 18015
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6555, 11276, 1084, 21, 558, 576, 5190, 9, 5193, 5187, 5188, 584, 1120, 17955, 5183, 9628, 17956, 16951, 17957, 18320, 17030, 5071, 2]
+// Dependencies: [32, 19, 6562, 11479, 1072, 21, 5196, 9, 5199, 5193, 5194, 572, 1109, 18015, 5189, 9653, 18016, 5075, 17005, 18017, 18379, 17084, 2]
 
-// Module 17954 (guilds/Guilds)
+// Module 18014 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
-import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1120 */;
-import native from "native" /* 5071 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5183 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5193 */;
-import QuestsEligibility from "QuestsEligibility" /* 9628 */;
-import MainTabsConstants from "MainTabsConstants" /* 11276 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17955 */;
-import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 17956 */;
-import MainChannelsDefault from "MainChannels" /* 17957 */;
-import YouBarDefault from "YouBar" /* 18320 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5199 */;
+import MainTabsConstants from "MainTabsConstants" /* 11479 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6555 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6562 */;
 import Fragment from "Fragment" /* 21 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require;
+let dependencyMap;
 
 let c9;
 let metroImportAll;
@@ -36,135 +26,30 @@ const YouBarNavigatorScreens = MainTabsConstants.YouBarNavigatorScreens;
 const ComponentActions = Constants.ComponentActions;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let c10 = false;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useShouldRender(arg0) {
-  let closure_0;
+const memoResult = react.memo(function GuildsOnly() {
+  let QuestDockExternalCoordinationContextProvider;
   let closure_2;
   let connected;
+  let enabled;
   let first;
-  let tmp2;
-  let tmp5;
-  let tmp6;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(5);
-  const isChatBesideChannelList = first(5190)().isChatBesideChannelList;
-  if (cResult[0] !== arg0) {
-    const fn = function u() {
-      const tmp = closure_0;
-      if (tmp) {
-        TTITrackerDefault;
-        let landOnHome = c10 || "other" !== tmp5;
-        if (!landOnHome) {
-          const MobileHomeDrawerExperiment = HomeDrawerExperiment.MobileHomeDrawerExperiment;
-          landOnHome = MobileHomeDrawerExperiment.getConfig({ location: "app-start" }).landOnHome;
-        }
-        return landOnHome;
-      } else {
-        return true;
-      }
-    };
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-  }
-  let obj2 = react;
-  [first, dependencyMap] = react.useState(tmp2);
-  if (cResult[2] !== first) {
-    const fn2 = function f() {
-      let allowRender;
-      let closure_4;
-      if (allowRender) {
-        c10 = true;
-      } else {
-        let c0 = true;
-        allowRender = function allowRender() {
-          const tmp = c0;
-          if (tmp) {
-            allowRenderAfterReady(true);
-          }
-        };
-        function allowRenderAfterReady() {
-          const timerId = setTimeout(allowRender, 0);
-        }
-        function handleNavigationChange() {
-          const coerceGuildsRoute = NavigationRouteUtils.coerceGuildsRoute;
-          NavigationRouteUtils;
-          const obj = RootNavigationRef;
-          const rootNavigationRef = obj.getRootNavigationRef();
-          let currentRoute;
-          if (rootNavigationRef != null) {
-            currentRoute = rootNavigationRef.getCurrentRoute();
-          }
-          if (null != coerceGuildsRoute(currentRoute)) {
-            if (typeof allowRender === "function") {
-              const tmp4 = c0;
-              if (tmp4) {
-                allowRenderAfterReady(true);
-              }
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          }
-        }
-        let tmp = connected;
-        if (connected.isConnected()) {
-          const tmp2 = c0;
-          if (tmp2) {
-            let tmp4 = allowRenderAfterReady(true);
-          }
-        }
-        const _setTimeout = setTimeout;
-        const timeout = setTimeout(allowRender, 4000);
-        let obj = first(allowRenderAfterReady[13]);
-        const subscription = obj.subscribe("CONNECTION_OPEN", allowRenderAfterReady);
-        let ComponentDispatch = closure_0(allowRenderAfterReady[14]).ComponentDispatch;
-        const subscription1 = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-        let obj2 = closure_0(allowRenderAfterReady[12]);
-        let rootNavigationRef = obj2.getRootNavigationRef();
-        if (rootNavigationRef != null) {
-          rootNavigationRef.addListener("state", handleNavigationChange);
-        }
-        return () => {
-          c0 = false;
-          clearTimeout(closure_4);
-          const obj = DispatcherDefault;
-          obj.unsubscribe("CONNECTION_OPEN", allowRenderAfterReady);
-          const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
-          ComponentDispatch.unsubscribe(ComponentActions.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-          const obj2 = RootNavigationRef;
-          const rootNavigationRef = obj2.getRootNavigationRef();
-          if (rootNavigationRef != null) {
-            rootNavigationRef.removeListener("state", handleNavigationChange);
-          }
-        };
-      }
-    };
-    const items = [first];
-    cResult[2] = first;
-    cResult[3] = fn2;
-    cResult[4] = items;
-    tmp6 = items;
-    tmp5 = fn2;
-  } else {
-    tmp5 = cResult[3];
-    tmp6 = cResult[4];
-  }
-  const effect = obj2.useEffect(tmp5, tmp6);
-  if (!first) {
-    first = isChatBesideChannelList;
-  }
-  return first;
-}) : (function useShouldRender(arg0) {
-  let closure_2;
-  let connected;
-  let first;
-  let closure_0 = arg0;
-  const isChatBesideChannelList = first(5190)().isChatBesideChannelList;
+  let obj4;
+  let tmp11Result;
+  let tmp12;
+  let tmp = enabled;
+  let tmp2 = dependencyMap;
+  let obj = enabled(18015);
+  const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
+  const tmp4 = first;
+  const tmp5 = first(5189)();
+  let obj2 = enabled(9653);
+  let isEligibleForQuests = obj2.getIsEligibleForQuests();
+  const GuildsRenderExperiment = enabled(18016).GuildsRenderExperiment;
+  enabled = GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled;
+  first = undefined;
+  dependencyMap = undefined;
+  const isChatBesideChannelList = first(5196)().isChatBesideChannelList;
   [first, dependencyMap] = react.useState(() => {
-    const tmp = closure_0;
+    const tmp = enabled;
     if (tmp) {
       TTITrackerDefault;
       let landOnHome = c10 || "other" !== tmp5;
@@ -220,11 +105,11 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
       }
       const _setTimeout = setTimeout;
       timeout = setTimeout(allowRender, 4000);
-      let obj = first(allowRender[13]);
+      let obj = first(allowRender[11]);
       const subscription = obj.subscribe("CONNECTION_OPEN", allowRenderAfterReady);
-      let ComponentDispatch = closure_0(allowRender[14]).ComponentDispatch;
+      let ComponentDispatch = enabled(allowRender[12]).ComponentDispatch;
       const subscription1 = ComponentDispatch.subscribe(constants.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
-      let obj2 = closure_0(allowRender[12]);
+      let obj2 = enabled(allowRender[10]);
       let rootNavigationRef = obj2.getRootNavigationRef();
       if (rootNavigationRef != null) {
         rootNavigationRef.addListener("state", handleNavigationChange);
@@ -247,96 +132,23 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   if (!first) {
     first = isChatBesideChannelList;
   }
-  return first;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GuildsOnly() {
-  let first;
-  let tmp11;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(5);
-  const obj2 = TabsPerformanceTracker;
-  const trackTabPerformance = obj2.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
-  const tmp6 = useColorThemeBackgroundDefault();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmpResult = QuestsEligibility;
-    const isEligibleForQuests = tmpResult.getIsEligibleForQuests();
-    cResult[0] = isEligibleForQuests;
-    first = isEligibleForQuests;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj3 = { location: "GuildsOnly" };
-    cResult[1] = obj3;
-    tmp9 = obj3;
-  } else {
-    tmp9 = cResult[1];
-  }
-  const GuildsRenderExperiment = tmp(17956).GuildsRenderExperiment;
-  if (!GuildsRenderExperiment.useConfig(tmp9).enabled) {
-    let tmp12;
-    let tmp16;
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const QuestDockExternalCoordinationContextProvider = tmp(16951).QuestDockExternalCoordinationContextProvider;
-      const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
-      const tmp13 = React4;
-      const tmp14 = metroImportAll;
-      if (first) {
-        first = tmp14(tmp5(17030), {});
-      }
-      const obj4 = { children: items };
-      items[2] = first;
-      const tmp13Result = tmp13(QuestDockExternalCoordinationContextProvider, obj4);
-      cResult[2] = tmp13Result;
-      tmp12 = tmp13Result;
-    } else {
-      tmp12 = cResult[2];
-    }
-    if (cResult[3] !== tmp6) {
-      const obj5 = { gradient: tmp6, children: tmp12 };
-      const tmp18 = metroImportAll(native.ThemeContextProvider, obj5);
-      cResult[3] = tmp6;
-      cResult[4] = tmp18;
-      tmp16 = tmp18;
-    } else {
-      tmp16 = cResult[4];
-    }
-    tmp11 = tmp16;
-  } else {
-    tmp11 = null;
-  }
-  return tmp11;
-}) : (function GuildsOnly() {
-  let QuestDockExternalCoordinationContextProvider;
-  let obj4;
-  let tmp10;
-  let tmp9Result;
-  const obj = TabsPerformanceTracker;
-  const trackTabPerformance = obj.useTrackTabPerformance(YouBarNavigatorScreens.GUILDS);
-  const tmp5 = useColorThemeBackgroundDefault();
-  const obj2 = QuestsEligibility;
-  let isEligibleForQuests = obj2.getIsEligibleForQuests();
-  const GuildsRenderExperiment = GuildsRenderExperiment2.GuildsRenderExperiment;
-  if (!GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled) {
-    const obj3 = { gradient: tmp5, children: tmp10(QuestDockExternalCoordinationContextProvider, obj4) };
-    const ThemeContextProvider = tmp(5071).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(16951).QuestDockExternalCoordinationContextProvider;
-    const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
-    tmp10 = React4;
+  if (!enabled) {
+    const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
+    const ThemeContextProvider = tmp(5075).ThemeContextProvider;
+    QuestDockExternalCoordinationContextProvider = tmp(17005).QuestDockExternalCoordinationContextProvider;
+    const items1 = [closure_8(tmp4(18017), {}), closure_8(tmp4(18379), {}), ];
+    tmp12 = closure_9;
     if (isEligibleForQuests) {
-      isEligibleForQuests = tmp9(tmp4(17030), {});
+      isEligibleForQuests = tmp11(tmp4(17084), {});
     }
-    obj4 = { children: items };
-    items[2] = isEligibleForQuests;
-    tmp9Result = tmp9(ThemeContextProvider, obj3);
+    obj4 = { children: items1 };
+    items1[2] = isEligibleForQuests;
+    tmp11Result = tmp11(ThemeContextProvider, obj3);
   } else {
-    tmp9Result = null;
+    tmp11Result = null;
   }
-  return tmp9Result;
-}), () => true);
+  return tmp11Result;
+}, () => true);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/guilds/Guilds.tsx");
 
 export default memoResult;

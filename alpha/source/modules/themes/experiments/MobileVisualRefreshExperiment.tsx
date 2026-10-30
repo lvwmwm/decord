@@ -1,63 +1,30 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12344
+// Function ID: 12345
 // Name: MobileVisualRefreshExperiment
-// Dependencies: [1454, 558, 576, 2]
-// Exports: isMobileVisualRefreshEnabled, resolveRefreshToken
+// Dependencies: [1449, 2]
+// Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
-// Module 12185 (MobileVisualRefreshExperiment)
-import react from "react" /* 576 */;
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1454 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 12344 (MobileVisualRefreshExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, variations: { 0: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, 1: { enabled: true, chatInputFloating: false, chatInputLegacySendButton: false }, 2: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 3: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 4: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: true } } };
-let tmp2 = apex_ApexExperimentDefault(obj);
-let closure_2 = tmp2;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsMobileVisualRefreshExperimentEnabled(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2).enabled;
-}) : (function useIsMobileVisualRefreshExperimentEnabled(location) {
-  const obj = { location };
-  return closure_2.useConfig(obj).enabled;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useMobileVisualRefreshConfig(location) {
-  let tmp2;
-  const obj = react;
-  const cResult = obj.c(2);
-  const _location = location.location;
-  if (cResult[0] !== _location) {
-    const obj2 = { location: _location };
-    cResult[0] = _location;
-    cResult[1] = obj2;
-    tmp2 = obj2;
-  } else {
-    tmp2 = cResult[1];
-  }
-  return closure_2.useConfig(tmp2);
-}) : (function useMobileVisualRefreshConfig(location) {
-  const obj = { location: location.location };
-  return closure_2.useConfig(obj);
-});
+const tmp2 = apex_ApexExperimentDefault(obj);
+let closure_0 = tmp2;
 const result = size.fileFinishedImporting("modules/themes/experiments/MobileVisualRefreshExperiment.tsx");
 
-export default tmp3;
+export default function useIsMobileVisualRefreshExperimentEnabled(location) {
+  const obj = { location };
+  return closure_0.useConfig(obj).enabled;
+};
 export const MobileVisualRefreshExperiment = tmp2;
-export const useMobileVisualRefreshConfig = tmp4;
+export function useMobileVisualRefreshConfig(location) {
+  const obj = { location: location.location };
+  return closure_0.useConfig(obj);
+}
 export function isMobileVisualRefreshEnabled(location) {
   const obj = { location };
-  return closure_2.getConfig(obj).enabled;
+  return closure_0.getConfig(obj).enabled;
 }
 export function resolveRefreshToken(MESSAGES_HEADER_PADDING_BOTTOM) {
   return MESSAGES_HEADER_PADDING_BOTTOM.resolve({ enabledExperiments: ["mobile-visual-refresh"] });

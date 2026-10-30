@@ -1,43 +1,18 @@
-// Module ID: 11712
-// Function ID: 11713
+// Module ID: 11905
+// Function ID: 11906
 // Name: useIsVideoBackgroundEnabled
-// Dependencies: [558, 576, 5915, 11713, 1381, 2]
+// Dependencies: [5922, 11906, 1376, 2]
+// Exports: default
 
-// Module 11712 (useIsVideoBackgroundEnabled)
-import react from "react" /* 576 */;
-import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5915 */;
-import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 11713 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11905 (useIsVideoBackgroundEnabled)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import VirtualBackgroundsIosExperimentDefault from "VirtualBackgroundsIosExperiment" /* 5922 */;
+import useIsVideoBackgroundSupportedDefault from "useIsVideoBackgroundSupported" /* 11906 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const PlatformUtils = tmp(1381);
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBackgroundEnabled(location) {
-  let tmp4;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] !== location) {
-    const obj2 = { location };
-    cResult[0] = location;
-    cResult[1] = obj2;
-    tmp4 = obj2;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const obj3 = VirtualBackgroundsIosExperimentDefault;
-  const enabled = obj3.useConfig(tmp4).enabled;
-  let tmp5 = useIsVideoBackgroundSupportedDefault();
-  if (tmp5) {
-    const tmpResult = PlatformUtils;
-    const isIOSResult = tmpResult.isIOS();
-    let tmp7 = !isIOSResult;
-    if (isIOSResult) {
-      tmp7 = enabled;
-    }
-    tmp5 = tmp7;
-  }
-  return tmp5;
-}) : (function useIsVideoBackgroundEnabled(location) {
+const result = size.fileFinishedImporting("modules/video_backgrounds/useIsVideoBackgroundEnabled.tsx");
+
+export default function useIsVideoBackgroundEnabled(location) {
   const obj = VirtualBackgroundsIosExperimentDefault;
   const obj2 = { location };
   const enabled = obj.useConfig(obj2).enabled;
@@ -52,7 +27,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsVideoBa
     tmp2 = tmp5;
   }
   return tmp2;
-});
-const result = size.fileFinishedImporting("modules/video_backgrounds/useIsVideoBackgroundEnabled.tsx");
-
-export default tmp2;
+};

@@ -1,27 +1,27 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18286
+// Function ID: 18287
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5006, 4938, 4879, 1084, 21, 5005, 587, 504, 1415, 1450, 1497, 7508, 7507, 6889, 6893, 1125, 9468, 5707, 9273, 1199, 5271, 5281, 9827, 8014, 9710, 2]
+// Dependencies: [5, 32, 19, 17, 5010, 4942, 4880, 1072, 21, 5009, 575, 504, 1410, 1445, 1492, 7516, 7515, 6896, 6900, 1114, 9487, 5712, 9287, 1188, 5619, 5629, 9853, 8020, 9736, 2]
 // Exports: default
 
-// Module 18226 (GameCommunityMultiGuildUpsellCard)
+// Module 18286 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl7 from "intl" /* 1125 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1415 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1450 */;
-import transitionToGuild from "transitionToGuild" /* 7508 */;
-import IconButton2 from "IconButton" /* 8014 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9710 */;
+import nativeDefault from "native" /* 575 */;
+import intl7 from "intl" /* 1114 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1410 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1445 */;
+import transitionToGuild from "transitionToGuild" /* 7516 */;
+import IconButton2 from "IconButton" /* 8020 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 9736 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5006 */;
-import LurkingStore from "LurkingStore" /* 4938 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import Constants from "Constants" /* 1084 */;
+import AccessibilityStore from "AccessibilityStore" /* 5010 */;
+import LurkingStore from "LurkingStore" /* 4942 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;
@@ -193,7 +193,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -264,7 +264,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
           closure_129_4(false);
         }
         c5 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp37) {
         onDismiss = tmp37;
         if (0 === c3) {

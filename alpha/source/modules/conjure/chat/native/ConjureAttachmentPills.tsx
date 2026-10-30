@@ -1,19 +1,17 @@
-// Module ID: 12457
-// Function ID: 12458
+// Module ID: 12610
+// Function ID: 12611
 // Name: ConjureAttachmentPills
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 12290, 5698, 6965, 1125, 3864, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 12453, 5704, 6971, 1114, 3865, 5619, 2]
+// Exports: default
 
-// Module 12457 (ConjureAttachmentPills)
+// Module 12610 (ConjureAttachmentPills)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12290 */;
+import nativeDefault from "native" /* 575 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12453 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-let dependencyMap;
 
 let obj2;
 let obj3;
@@ -25,92 +23,9 @@ obj2 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 }
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4 };
 let closure_6 = createStyles(obj);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAttachmentPills(projectId) {
-  let closure_2;
-  let tmp3;
-  let tmp5;
-  let obj = projectId(576);
-  const cResult = obj.c(12);
-  projectId = projectId.projectId;
-  const attachments = projectId.attachments;
-  const tmp2 = closure_6();
-  let closure_1 = tmp2;
-  if (cResult[0] !== projectId) {
-    const fn = function o(arg0) {
-      let obj = conjureAttachmentRequests;
-      const attachmentUrl = obj.getAttachmentUrl(projectId, arg0);
-      const nextPromise = attachmentUrl.then((result) => {
-        const obj = closure_1_1(closure_1_2[8]);
-        return obj.openURL(result);
-      });
-      nextPromise.catch(() => {
+const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureAttachmentPills.tsx");
 
-      });
-    };
-    cResult[0] = projectId;
-    cResult[1] = fn;
-    tmp3 = fn;
-  } else {
-    tmp3 = cResult[1];
-  }
-  dependencyMap = tmp3;
-  if (cResult[2] === attachments) {
-    if (cResult[3] === tmp3) {
-      if (cResult[4] === tmp2.attachmentPill) {
-        tmp5 = cResult[5];
-      }
-      if (cResult[9] === tmp2.attachmentPills) {
-        let tmp8;
-        if (cResult[10] === tmp5) {
-          tmp8 = cResult[11];
-        }
-        return tmp8;
-      }
-      const tmp11 = <View style={tmp4}>{tmp5}</View>;
-      cResult[9] = tmp2.attachmentPills;
-      cResult[10] = tmp5;
-      cResult[11] = tmp11;
-      tmp8 = tmp11;
-    }
-  }
-  if (cResult[6] === tmp3) {
-    let tmp6;
-    if (cResult[7] === tmp2.attachmentPill) {
-      tmp6 = cResult[8];
-    }
-    const mapped = attachments.map(tmp6);
-    cResult[2] = attachments;
-    cResult[3] = tmp3;
-    cResult[4] = tmp2.attachmentPill;
-    cResult[5] = mapped;
-    tmp5 = mapped;
-  }
-  const fn2 = function p(id, arg1) {
-    let intl2;
-    let obj6;
-    let tmp12;
-    if (null != id.id) {
-      const Card = projectId(closure_2[9]).Card;
-      const intl = projectId(closure_2[10]).intl;
-      const obj2 = { name: id.name };
-      tmp12 = <Card key={arg0.id} style={closure_1.attachmentPill} onPress={function onPress() {
-        return closure_2(id.id);
-      }} accessibilityLabel={intl.formatToPlainString(closure_1(closure_2[11]).GtNukg, obj2)}>{null}</Card>;
-    } else {
-      ({ variant: "text-xs/medium", color: "text-muted", children: intl2.formatToPlainString(closure_1(closure_2[11]).nd81jR, obj6) });
-      const Text = projectId(closure_2[12]).Text;
-      intl2 = projectId(closure_2[10]).intl;
-      const _HermesInternal = HermesInternal;
-      obj6 = { name: id.name };
-      tmp12 = <View key={"" + arg0.name + "-" + arg1} style={closure_1.attachmentPill}>{null}</View>;
-    }
-    return tmp12;
-  };
-  cResult[6] = tmp3;
-  cResult[7] = tmp2.attachmentPill;
-  cResult[8] = fn2;
-  tmp6 = fn2;
-}) : (function ConjureAttachmentPills(projectId) {
+export default function ConjureAttachmentPills(projectId) {
   projectId = projectId.projectId;
   const attachments = projectId.attachments;
   const tmp = closure_6();
@@ -120,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAttac
     let obj = conjureAttachmentRequests;
     const attachmentUrl = obj.getAttachmentUrl(projectId, arg0);
     const nextPromise = attachmentUrl.then((result) => {
-      const obj = closure_1_1(closure_1_2[8]);
+      const obj = closure_1_1(closure_1_2[6]);
       return obj.openURL(result);
     });
     nextPromise.catch(() => {
@@ -132,23 +47,20 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjureAttac
     let obj6;
     let tmp12;
     if (null != id.id) {
-      const Card = projectId(closure_2[9]).Card;
-      const intl = projectId(closure_2[10]).intl;
+      const Card = projectId(closure_2[7]).Card;
+      const intl = projectId(closure_2[8]).intl;
       const obj2 = { name: id.name };
       tmp12 = <Card key={arg0.id} style={closure_1.attachmentPill} onPress={function onPress() {
         return closure_2(id.id);
-      }} accessibilityLabel={intl.formatToPlainString(closure_1(closure_2[11]).GtNukg, obj2)}>{null}</Card>;
+      }} accessibilityLabel={intl.formatToPlainString(closure_1(closure_2[9]).GtNukg, obj2)}>{null}</Card>;
     } else {
-      ({ variant: "text-xs/medium", color: "text-muted", children: intl2.formatToPlainString(closure_1(closure_2[11]).nd81jR, obj6) });
-      const Text = projectId(closure_2[12]).Text;
-      intl2 = projectId(closure_2[10]).intl;
+      ({ variant: "text-xs/medium", color: "text-muted", children: intl2.formatToPlainString(closure_1(closure_2[9]).nd81jR, obj6) });
+      const Text = projectId(closure_2[10]).Text;
+      intl2 = projectId(closure_2[8]).intl;
       const _HermesInternal = HermesInternal;
       obj6 = { name: id.name };
       tmp12 = <View key={"" + arg0.name + "-" + arg1} style={closure_1.attachmentPill}>{null}</View>;
     }
     return tmp12;
   })}</View>;
-});
-const result = size.fileFinishedImporting("modules/conjure/chat/native/ConjureAttachmentPills.tsx");
-
-export default tmp3;
+};

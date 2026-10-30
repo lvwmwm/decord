@@ -1,9 +1,9 @@
-// Module ID: 17218
-// Function ID: 17219
+// Module ID: 17272
+// Function ID: 17273
 // Name: ColorPickerConsts
 // Dependencies: [2]
 
-// Module 17218 (ColorPickerConsts)
+// Module 17272 (ColorPickerConsts)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/consts/ColorPickerConsts.tsx");

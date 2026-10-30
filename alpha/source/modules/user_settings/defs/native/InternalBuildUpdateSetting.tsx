@@ -1,180 +1,69 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17698
+// Function ID: 17699
 // Name: InternalBuildUpdateSetting
-// Dependencies: [16140, 21, 15649, 558, 576, 504, 2047, 16638, 5722, 12356, 11302, 2]
+// Dependencies: [16180, 21, 15689, 504, 2044, 16691, 5728, 12518, 11505, 2]
 
-// Module 17627 (InternalBuildUpdateSetting)
+// Module 17698 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 15649 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16638 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16140 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 15689 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16691 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16180 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useInternalBuildUpdateDescription() {
-  let str;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  const obj = react;
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+let obj = {
+  useTitle() {
+    return "Internal Build Update";
+  },
+  parent: null,
+  IconComponent: function InstallNativeUpdateIcon() {
+    let RefreshIcon;
     const items = [MobileNativeUpdateStore];
-    const fn = function l() {
+    const obj = get_initialized;
+    const tmp3 = jsx;
+    if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
+      RefreshIcon = tmp(5728).DownloadIcon;
+    } else {
+      RefreshIcon = tmp(12518).RefreshIcon;
+    }
+    return tmp3(RefreshIcon, {});
+  },
+  useDescription: function useInternalBuildUpdateDescription() {
+    let str;
+    const items = [MobileNativeUpdateStore];
+    const obj = get_initialized;
+    const stateFromStores = obj.useStateFromStores(items, () => {
       const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
       let build;
       if (newBuild != null) {
         build = newBuild.build;
       }
       return build;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
+    });
     const items1 = [MobileNativeUpdateStore];
-    const fn2 = function o() {
-      return MobileNativeUpdateStore.latestFetchedBuild().lastCheck;
-    };
-    cResult[2] = items1;
-    cResult[3] = fn2;
-    tmp9 = fn2;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult2 = get_initialized;
-  const stateFromStores1 = tmpResult2.useStateFromStores(tmp8, tmp9);
-  if (null != stateFromStores) {
-    const _HermesInternal2 = HermesInternal;
-    str = "Open build " + stateFromStores + " installer in a browser";
-  } else {
-    str = "Never refreshed";
-    if (null != stateFromStores1) {
-      let tmp12;
-      if (cResult[4] !== stateFromStores1) {
-        const obj4 = _modDef2047(stateFromStores1);
-        const fromNowResult = obj4.fromNow();
-        cResult[4] = stateFromStores1;
-        cResult[5] = fromNowResult;
-        tmp12 = fromNowResult;
-      } else {
-        tmp12 = cResult[5];
-      }
-      const _HermesInternal = HermesInternal;
-      str = "Last refreshed " + tmp12;
-    }
-  }
-  return str;
-}) : (function useInternalBuildUpdateDescription() {
-  let str;
-  const items = [MobileNativeUpdateStore];
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
-    let build;
-    if (newBuild != null) {
-      build = newBuild.build;
-    }
-    return build;
-  });
-  const items1 = [MobileNativeUpdateStore];
-  const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, () => MobileNativeUpdateStore.latestFetchedBuild().lastCheck);
-  if (null != stateFromStores) {
-    const _HermesInternal2 = HermesInternal;
-    str = "Open build " + stateFromStores + " installer in a browser";
-  } else {
-    str = "Never refreshed";
-    if (null != stateFromStores1) {
-      const _HermesInternal = HermesInternal;
-      const obj3 = _modDef2047(stateFromStores1);
-      str = "Last refreshed " + obj3.fromNow();
-    }
-  }
-  return str;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useHasInternalBuildUpdateSetting() {
-  const obj = useIsStaffOrDeveloperSettingPredicate;
-  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
-  return tmp;
-}) : (function useHasInternalBuildUpdateSetting() {
-  const obj = useIsStaffOrDeveloperSettingPredicate;
-  const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
-  return tmp;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstallNativeUpdateIcon() {
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [MobileNativeUpdateStore];
-    const fn = function s() {
-      return null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let RefreshIcon;
-    const tmp9 = jsx;
-    if (stateFromStores) {
-      RefreshIcon = tmp(5722).DownloadIcon;
+    const obj2 = get_initialized;
+    const stateFromStores1 = obj2.useStateFromStores(items1, () => MobileNativeUpdateStore.latestFetchedBuild().lastCheck);
+    if (null != stateFromStores) {
+      const _HermesInternal2 = HermesInternal;
+      str = "Open build " + stateFromStores + " installer in a browser";
     } else {
-      RefreshIcon = tmp(12356).RefreshIcon;
+      str = "Never refreshed";
+      if (null != stateFromStores1) {
+        const _HermesInternal = HermesInternal;
+        const obj3 = _modDef2044(stateFromStores1);
+        str = "Last refreshed " + obj3.fromNow();
+      }
     }
-    const tmp9Result = tmp9(RefreshIcon, {});
-    cResult[2] = stateFromStores;
-    cResult[3] = tmp9Result;
-    tmp8 = tmp9Result;
-  } else {
-    tmp8 = cResult[3];
-  }
-  return tmp8;
-}) : (function InstallNativeUpdateIcon() {
-  let RefreshIcon;
-  const items = [MobileNativeUpdateStore];
-  const obj = get_initialized;
-  const tmp3 = jsx;
-  if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-    RefreshIcon = tmp(5722).DownloadIcon;
-  } else {
-    RefreshIcon = tmp(12356).RefreshIcon;
-  }
-  return tmp3(RefreshIcon, {});
-});
-let obj = {
-  useTitle() {
-    return "Internal Build Update";
+    return str;
   },
-  parent: null,
-  IconComponent: tmp4,
-  useDescription: tmp2,
-  usePredicate: tmp3,
+  usePredicate: function useHasInternalBuildUpdateSetting() {
+    const obj = useIsStaffOrDeveloperSettingPredicate;
+    const tmp = MobileNativeUpdateStore.hasUpdatesConfigured && obj.useStaffOrDeveloperSettingPredicate();
+    return tmp;
+  },
   onPress: function handleInstallNativeUpdateSettingPress() {
     const newBuild = MobileNativeUpdateStore.latestFetchedBuild().newBuild;
     const obj = MobileNativeUpdateStore;

@@ -1,10 +1,10 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 9019
+// Function ID: 9020
 // Name: AppChannelExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1448, 2]
 
-// Module 9006 (AppChannelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1453 */;
+// Module 9019 (AppChannelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1448 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

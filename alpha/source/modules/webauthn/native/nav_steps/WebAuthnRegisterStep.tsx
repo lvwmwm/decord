@@ -1,21 +1,20 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16633
+// Function ID: 16634
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1084, 21, 5005, 587, 7102, 558, 576, 1125, 1199, 1503, 1381, 16581, 16582, 5271, 6754, 5281, 7281, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5009, 575, 7110, 1114, 1188, 1498, 1376, 16634, 7286, 16635, 5619, 6761, 5629, 2]
+// Exports: default
 
-// Module 16580 (WebAuthnRegisterStep)
+// Module 16633 (WebAuthnRegisterStep)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl4 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7102 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7110 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, navigation;
@@ -26,87 +25,7 @@ let PASSKEY_DEVICE;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
-const View = react_native.View;
-const UserSettingsSections = Constants.UserSettingsSections;
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let obj = { flexContainer: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: 16, marginRight: 16, marginTop: 16 }, centerFlex: { display: "flex", alignItems: "center" }, margin: { marginTop: 16, textAlign: "center" }, radioItem: obj2 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md };
-let closure_9 = createStyles.createStyles(obj);
-let obj3 = { PASSKEY_CREDENTIAL_MANAGER: 0, [0]: "PASSKEY_CREDENTIAL_MANAGER", PASSKEY_DEVICE: 1, [1]: "PASSKEY_DEVICE", OTHER_AND_ANDROID_NONDISCOVERABLE: 2, [2]: "OTHER_AND_ANDROID_NONDISCOVERABLE" };
-let obj4 = { [PASSKEY_CREDENTIAL_MANAGER]: NativeCeremoniesDefault.registerPasskey, [PASSKEY_DEVICE]: NativeCeremoniesDefault.registerAndroidDevicePasskey, [OTHER_AND_ANDROID_NONDISCOVERABLE]: NativeCeremoniesDefault.registerSecurityKey };
-({ PASSKEY_CREDENTIAL_MANAGER, PASSKEY_DEVICE, OTHER_AND_ANDROID_NONDISCOVERABLE } = obj3);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function AndroidPasskeyRadioGroup(registering) {
-  let authenticatorSelection;
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  let onChange;
-  let tmp7;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(10);
-  ({ authenticatorSelection, onChange } = registering);
-  registering = registering.registering;
-  const tmp4 = closure_9();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { value: obj3.PASSKEY_CREDENTIAL_MANAGER, name: intl.string(intl4.t.JQbo8L) };
-    intl = tmp(1125).intl;
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    obj3 = { value: obj3.PASSKEY_DEVICE, name: intl2.string(intl4.t.GjBNMg) };
-    intl2 = tmp(1125).intl;
-    cResult[1] = obj3;
-    tmp7 = obj3;
-  } else {
-    tmp7 = cResult[1];
-  }
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [first, tmp7, ];
-    obj4 = { value: obj3.OTHER_AND_ANDROID_NONDISCOVERABLE, name: intl3.string(intl4.t["OhC77+"]) };
-    intl3 = tmp(1125).intl;
-    items[2] = obj4;
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== onChange) {
-    class N {
-      constructor(arg0) {
-        return onChange(registering.value);
-      }
-    }
-    cResult[3] = onChange;
-    cResult[4] = N;
-  } else {
-    class N {
-      constructor(arg0) {
-        return onChange(registering.value);
-      }
-    }
-  }
-  if (cResult[5] === authenticatorSelection) {
-    class N {
-      constructor(arg0) {
-        return onChange(registering.value);
-      }
-    }
-  }
-  const obj5 = { style: tmp4.radioItem, options: tmp9, onChange: tmp11, value: authenticatorSelection, disabled: registering, size: native.RadioGroup.Sizes.LARGE, withSpacing: true };
-  const RadioGroup = tmp(1199).RadioGroup;
-  cResult[5] = authenticatorSelection;
-  cResult[6] = registering;
-  cResult[7] = tmp4.radioItem;
-  cResult[8] = tmp11;
-  cResult[9] = metroImportDefault(RadioGroup, obj5);
-  metroImportDefault(RadioGroup, obj5);
-}) : (function AndroidPasskeyRadioGroup(onChange) {
+function AndroidPasskeyRadioGroup(onChange) {
   let authenticatorSelection;
   let intl;
   let intl2;
@@ -137,218 +56,19 @@ let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function Androi
   };
   const RadioGroup = native.RadioGroup;
   return metroImportDefault(RadioGroup, obj4);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRegisterStep() {
-  let closure_1;
-  let closure_2;
-  let first;
-  let items1;
-  let tmp11;
-  let tmp12;
-  let tmp15;
-  let tmp16;
-  let tmp17;
-  let tmp19;
-  let tmp21;
-  let tmp24;
-  let tmp36;
-  let tmp9;
-  const obj = navigation(576);
-  const cResult = obj.c(33);
-  const obj2 = navigation(1503);
-  navigation = obj2.useNavigation();
-  const tmp5 = closure_9();
-  [first, tmp9] = react.useState(false);
-  [tmp11, tmp12] = react.useState("");
-  _slicedToArray(react.useState(""), 2);
-  obj4 = navigation(1381);
-  [tmp15, tmp16] = react.useState(obj4.isAndroid() ? react.PASSKEY_CREDENTIAL_MANAGER : react.OTHER_AND_ANDROID_NONDISCOVERABLE);
-  _slicedToArray(react.useState(obj4.isAndroid() ? react.PASSKEY_CREDENTIAL_MANAGER : react.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
-  if (cResult[0] !== navigation) {
-    const fn = function l(arg0) {
-      const replaced = navigation.replace(UserSettingsSections.WEBAUTHN_NAME, arg0);
-    };
-    cResult[0] = navigation;
-    cResult[1] = fn;
-    tmp17 = fn;
-  } else {
-    tmp17 = cResult[1];
-  }
-  importDefault = tmp18;
-  if (cResult[2] !== tmp17) {
-    const obj5 = { onRegisterSuccess: tmp17, setError: tmp12, setRegistering: tmp9 };
-    cResult[2] = tmp17;
-    cResult[3] = obj5;
-    tmp19 = obj5;
-  } else {
-    tmp19 = cResult[3];
-  }
-  dependencyMap = tmp19;
-  const tmpResult = navigation(16581);
-  const announceError = tmpResult.useAnnounceError(tmp11);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const tmp23 = closure_7(navigation(16582).KeyImage, {});
-    cResult[4] = tmp23;
-    tmp21 = tmp23;
-  } else {
-    tmp21 = cResult[4];
-  }
-  if (cResult[5] !== first) {
-    let stringResult;
-    const intl = tmp(1125).intl;
-    const string = intl.string;
-    const t = tmp(1125).t;
-    if (first) {
-      stringResult = string(t.aVMiX3);
-    } else {
-      stringResult = string(t.Lh5vTW);
-    }
-    cResult[5] = first;
-    cResult[6] = stringResult;
-    tmp24 = stringResult;
-  } else {
-    tmp24 = cResult[6];
-  }
-  if (cResult[7] === tmp5.margin) {
-    let tmp26;
-    let tmp28;
-    if (cResult[8] === tmp24) {
-      tmp26 = cResult[9];
-    }
-    if (cResult[10] !== tmp11) {
-      let tmp29 = "" !== tmp11;
-      if (tmp29) {
-        const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp11 };
-        tmp29 = closure_7(tmp(5271).Text, obj6);
-      }
-      cResult[10] = tmp11;
-      cResult[11] = tmp29;
-      tmp28 = tmp29;
-    } else {
-      tmp28 = cResult[11];
-    }
-    if (cResult[12] === tmp5.centerFlex) {
-      if (cResult[13] === tmp26) {
-        let tmp31;
-        if (cResult[14] === tmp28) {
-          tmp31 = cResult[15];
-        }
-        if (cResult[16] === tmp15) {
-          let tmp34;
-          let tmp39;
-          if (cResult[17] === first) {
-            tmp34 = cResult[18];
-          }
-          if (cResult[19] !== first) {
-            const string2 = tmp(1125).intl.string;
-            const t2 = tmp(1125).t;
-            class W {
-              constructor() {
-                return closure_1(closure_2);
-              }
-            }
-            cResult[19] = first;
-            cResult[20] = tmp40;
-            tmp39 = tmp40;
-          } else {
-            tmp39 = cResult[20];
-          }
-          if (cResult[21] === obj4[tmp15]) {
-            let tmp41;
-            if (cResult[22] === tmp19) {
-              tmp41 = cResult[23];
-            }
-            if (cResult[24] === first) {
-              if (cResult[25] === tmp39) {
-                let tmp42;
-                if (cResult[26] === tmp41) {
-                  tmp42 = cResult[27];
-                }
-                if (cResult[28] === tmp5.flexContainer) {
-                  if (cResult[29] === tmp42) {
-                    if (cResult[30] === tmp31) {
-                      let tmp46;
-                      if (cResult[31] === tmp34) {
-                        tmp46 = cResult[32];
-                      }
-                      return tmp46;
-                    }
-                  }
-                }
-                class W {
-                  constructor() {
-                    return closure_1(closure_2);
-                  }
-                }
-                tmp48[3] = tmp5.flexContainer;
-                const items = [tmp31, tmp34, tmp42];
-                tmp48[4] = items;
-                const tmp49 = closure_8(navigation(7281).SafeAreaPaddingView, tmp48);
-                cResult[28] = tmp5.flexContainer;
-                cResult[29] = tmp42;
-                cResult[30] = tmp31;
-                cResult[31] = tmp34;
-                cResult[32] = tmp49;
-                tmp46 = tmp49;
-              }
-            }
-            class W {
-              constructor() {
-                return closure_1(closure_2);
-              }
-            }
-            const ButtonGroup = tmp(6754).ButtonGroup;
-            const obj7 = { text: tmp39, disabled: first, loading: first, onPress: tmp41, size: "lg" };
-            tmp44[0] = closure_7(navigation(5281).Button, obj7);
-            const tmp45 = closure_7(ButtonGroup, tmp44);
-            cResult[24] = first;
-            cResult[25] = tmp39;
-            cResult[26] = tmp41;
-            cResult[27] = tmp45;
-            tmp42 = tmp45;
-          }
-          class W {
-            constructor() {
-              return closure_1(closure_2);
-            }
-          }
-          cResult[21] = obj4[tmp15];
-          cResult[22] = tmp19;
-          cResult[23] = W;
-          tmp41 = W;
-        }
-        if (tmp36) {
-          const obj8 = { authenticatorSelection: null, registering: first, onChange: tmp16 };
-          class W {
-            constructor() {
-              return closure_1(closure_2);
-            }
-          }
-          tmp36 = closure_7(closure_12, obj8);
-        }
-        cResult[16] = tmp15;
-        cResult[17] = first;
-        cResult[18] = tmp36;
-        tmp34 = tmp36;
-      }
-    }
-    const obj9 = { style: tmp5.centerFlex, children: items1 };
-    items1 = [tmp21, tmp26, tmp28];
-    const tmp33 = closure_8(View, obj9);
-    cResult[12] = tmp5.centerFlex;
-    cResult[13] = tmp26;
-    cResult[14] = tmp28;
-    cResult[15] = tmp33;
-    tmp31 = tmp33;
-  }
-  const obj10 = { style: tmp5.margin, variant: "text-md/normal", children: tmp24 };
-  const tmp27 = closure_7(navigation(5271).Text, obj10);
-  cResult[7] = tmp5.margin;
-  cResult[8] = tmp24;
-  cResult[9] = tmp27;
-  tmp26 = tmp27;
-}) : (function WebAuthnRegisterStep() {
+}
+const View = react_native.View;
+const UserSettingsSections = Constants.UserSettingsSections;
+({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+let obj = { flexContainer: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: 16, marginRight: 16, marginTop: 16 }, centerFlex: { display: "flex", alignItems: "center" }, margin: { marginTop: 16, textAlign: "center" }, radioItem: obj2 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.md };
+let closure_9 = createStyles.createStyles(obj);
+let obj3 = { PASSKEY_CREDENTIAL_MANAGER: 0, [0]: "PASSKEY_CREDENTIAL_MANAGER", PASSKEY_DEVICE: 1, [1]: "PASSKEY_DEVICE", OTHER_AND_ANDROID_NONDISCOVERABLE: 2, [2]: "OTHER_AND_ANDROID_NONDISCOVERABLE" };
+let obj4 = { [PASSKEY_CREDENTIAL_MANAGER]: NativeCeremoniesDefault.registerPasskey, [PASSKEY_DEVICE]: NativeCeremoniesDefault.registerAndroidDevicePasskey, [OTHER_AND_ANDROID_NONDISCOVERABLE]: NativeCeremoniesDefault.registerSecurityKey };
+({ PASSKEY_CREDENTIAL_MANAGER, PASSKEY_DEVICE, OTHER_AND_ANDROID_NONDISCOVERABLE } = obj3);
+const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx");
+
+export default function WebAuthnRegisterStep() {
   let authenticatorSelection;
   let items3;
   let items4;
@@ -362,7 +82,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp11;
   let tmp7;
   let tmp8;
-  const obj = navigation(1503);
+  const obj = navigation(1498);
   navigation = obj.useNavigation();
   const tmp4 = closure_9();
   [tmp7, tmp8] = authenticatorSelection(onRegisterSuccess.useState(false), 2);
@@ -371,7 +91,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   [tmp10, tmp11] = authenticatorSelection(onRegisterSuccess.useState(""), 2);
   dependencyMap = tmp11;
   authenticatorSelection(onRegisterSuccess.useState(""), 2);
-  obj3 = navigation(1381);
+  obj3 = navigation(1376);
   const tmp5Result = authenticatorSelection(onRegisterSuccess.useState(obj3.isAndroid() ? obj3.PASSKEY_CREDENTIAL_MANAGER : obj3.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
   authenticatorSelection = tmp5Result[0];
   const items = [navigation];
@@ -383,17 +103,17 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16581);
+  const tmpResult = navigation(16634);
   const announceError = tmpResult.useAnnounceError(tmp10);
   const rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   obj4 = { style: tmp4.centerFlex, children: items3 };
-  const SafeAreaPaddingView = tmp(7281).SafeAreaPaddingView;
-  items3 = [closure_7(navigation(16582).KeyImage, {}), , ];
+  const SafeAreaPaddingView = tmp(7286).SafeAreaPaddingView;
+  items3 = [closure_7(navigation(16635).KeyImage, {}), , ];
   const obj5 = { style: tmp4.margin, variant: "text-md/normal", children: stringResult };
-  const Text = tmp(5271).Text;
-  const intl = tmp(1125).intl;
+  const Text = tmp(5619).Text;
+  const intl = tmp(1114).intl;
   const string = intl.string;
-  const t = tmp(1125).t;
+  const t = tmp(1114).t;
   const tmp19 = closure_5;
   if (tmp7) {
     stringResult = string(t.aVMiX3);
@@ -404,21 +124,21 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   let tmp20Result = "" !== tmp10;
   if (tmp20Result) {
     const obj6 = { variant: "text-md/normal", color: "text-feedback-critical", children: tmp10 };
-    tmp20Result = tmp20(tmp(5271).Text, obj6);
+    tmp20Result = tmp20(tmp(5619).Text, obj6);
   }
   items3[2] = tmp20Result;
   items4 = [closure_8(tmp19, obj4), , ];
   let shouldDisplayAndroidFidoSelector = NativeCeremoniesDefault.shouldDisplayAndroidFidoSelector;
   if (shouldDisplayAndroidFidoSelector) {
     const obj7 = { authenticatorSelection, registering: tmp7, onChange: tmp15 };
-    shouldDisplayAndroidFidoSelector = tmp20(closure_12, obj7);
+    shouldDisplayAndroidFidoSelector = tmp20(AndroidPasskeyRadioGroup, obj7);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const ButtonGroup = tmp(6754).ButtonGroup;
-  const Button = tmp(5281).Button;
-  const intl2 = tmp(1125).intl;
+  const ButtonGroup = tmp(6761).ButtonGroup;
+  const Button = tmp(5629).Button;
+  const intl2 = tmp(1114).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1125).t;
+  const t2 = tmp(1114).t;
   if (tmp7) {
     string2Result = string2(t2.wePEBF);
   } else {
@@ -436,7 +156,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function WebAuthnRe
   };
   items4[2] = closure_7(ButtonGroup, obj8);
   return closure_8(SafeAreaPaddingView, rect);
-});
-const result = size.fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx");
-
-export default tmp3;
+};

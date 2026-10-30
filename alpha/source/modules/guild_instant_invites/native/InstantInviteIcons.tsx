@@ -1,9 +1,9 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 10793
+// Function ID: 10794
 // Name: InstantInviteIcons
-// Dependencies: [17, 10771, 10772, 10773, 9133, 2]
+// Dependencies: [17, 10794, 10795, 10796, 9146, 2]
 
-// Module 10770 (InstantInviteIcons)
+// Module 10793 (InstantInviteIcons)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

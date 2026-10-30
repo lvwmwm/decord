@@ -1,52 +1,23 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11864
+// Function ID: 11865
 // Name: useCanRaiseHand
-// Dependencies: [4937, 1095, 558, 576, 504, 2]
+// Dependencies: [4941, 1083, 504, 2]
+// Exports: useCanRaiseHand
 
-// Module 11650 (useCanRaiseHand)
-import Constants from "Constants" /* 1095 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 11864 (useCanRaiseHand)
+import Constants from "Constants" /* 1083 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const Permissions = Constants.Permissions;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanRaiseHand(arg0) {
-  let closure_0;
-  let first;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return PermissionStore.can(Permissions.REQUEST_TO_SPEAK, closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp6);
-}) : (function useCanRaiseHand(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [PermissionStore];
-  const obj = require("get initialized");
-  return obj.useStateFromStores(items, () => PermissionStore.can(Permissions.REQUEST_TO_SPEAK, closure_0));
-});
 const result = size.fileFinishedImporting("modules/stage_channels/useCanRaiseHand.tsx");
 
-export const useCanRaiseHand = tmp2;
+export function useCanRaiseHand(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => PermissionStore.can(Permissions.REQUEST_TO_SPEAK, channel));
+}

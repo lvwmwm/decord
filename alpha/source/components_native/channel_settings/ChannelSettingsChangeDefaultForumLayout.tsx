@@ -1,21 +1,19 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18888
+// Function ID: 18889
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 4857, 21, 5005, 587, 558, 576, 10160, 1125, 4867, 7044, 18789, 7248, 7045, 5271, 7047, 18829, 18830, 5707, 504, 2]
+// Dependencies: [32, 19, 17, 4858, 21, 5009, 575, 8191, 7052, 1114, 4868, 7055, 18849, 7255, 5619, 7054, 5712, 18889, 18890, 504, 2]
+// Exports: default
 
-// Module 18828 (ChannelSettingsChangeDefaultForumLayout)
+// Module 18888 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10160 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18829 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18830 */;
+import nativeDefault from "native" /* 575 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8191 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -24,6 +22,73 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
+class ChannelSettingsChangeDefaultForumLayout {
+  constructor(channel) {
+    let LIST;
+    let _undefined;
+    let c1;
+    let intl;
+    let intl2;
+    let intl3;
+    let intl4;
+    let intl5;
+    let items1;
+    let items2;
+    let tmp10Result;
+    let tmp3;
+    channel = channel.channel;
+    importDefault = undefined;
+    const tmp = closure_9();
+    [tmp3, c1] = react.useState(channel.defaultForumLayout);
+    const items = [channel.id];
+    let obj = { style: tmp.container, children: items2 };
+    _slicedToArray(react.useState(channel.defaultForumLayout), 2);
+    const callback = react.useCallback((defaultForumLayout) => {
+      _undefined(defaultForumLayout);
+      const obj = ChannelSettingsActionCreatorsDefault;
+      const obj2 = { defaultForumLayout };
+      obj.updateChannel(obj2);
+      const obj3 = ChannelSettingsActionCreatorsDefault;
+      const obj4 = { defaultForumLayout };
+      obj3.saveChannel(channel.id, obj4);
+    }, items);
+    let obj2 = { title: intl.string(channel(1114).t.mFMDSq), defaultValue: LIST, onChange: callback, hasIcons: true, children: items1 };
+    const TableRadioGroup = channel(7052).TableRadioGroup;
+    intl = channel(1114).intl;
+    LIST = tmp3;
+    const tmp6 = View;
+    if (tmp3 == null) {
+      LIST = tmp7(4868).ForumLayout.LIST;
+    }
+    let obj3 = { icon: closure_7(channel(18849).GridSquareIcon, {}), label: intl2.string(channel(1114).t["U+rQfW"]), value: channel(4868).ForumLayout.GRID };
+    const TableRadioRow = tmp7(7055).TableRadioRow;
+    intl2 = tmp7(1114).intl;
+    items1 = [closure_7(TableRadioRow, obj3), ];
+    let obj4 = { icon: closure_7(channel(7255).ListViewIcon, {}), label: intl3.string(channel(1114).t.tuHPRX), value: channel(4868).ForumLayout.LIST };
+    const TableRadioRow2 = tmp7(7055).TableRadioRow;
+    intl3 = tmp7(1114).intl;
+    items1[1] = closure_7(TableRadioRow2, obj4);
+    items2 = [closure_8(TableRadioGroup, obj2), , , ];
+    const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl4.string(channel(1114).t.MbX5Hu) };
+    const Text = tmp7(5619).Text;
+    intl4 = tmp7(1114).intl;
+    items2[1] = closure_7(Text, obj5);
+    const obj6 = { title: intl5.string(channel(1114).t.e4oMl4) };
+    const TableRowGroupTitle = tmp7(7054).TableRowGroupTitle;
+    intl5 = tmp7(1114).intl;
+    items2[2] = closure_7(TableRowGroupTitle, obj6);
+    const obj7 = { style: tmp.thumbnailImagePortrait, source: tmp10Result };
+    const tmp11 = FastImageDefault;
+    const tmp9 = closure_7;
+    if (tmp3 === channel(4868).ForumLayout.GRID) {
+      tmp10Result = tmp10(18889);
+    } else {
+      tmp10Result = tmp10(18890);
+    }
+    items2[3] = tmp9(tmp11, obj7);
+    return closure_8(tmp6, obj);
+  }
+}
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -31,270 +96,10 @@ let obj = { container: obj2, description: obj3, thumbnailImagePortrait: { alignS
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };
-let closure_9 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChannelSettingsChangeDefaultForumLayout(channel) {
-  let intl2;
-  let intl3;
-  let intl5;
-  let items;
-  let items1;
-  let tmp10;
-  let tmp13;
-  let tmp6;
-  let tmp7;
-  let tmp8;
-  let obj = channel(576);
-  const cResult = obj.c(20);
-  channel = channel.channel;
-  const tmp4 = closure_9();
-  [tmp6, importDefault] = react.useState(channel.defaultForumLayout);
-  _slicedToArray(react.useState(channel.defaultForumLayout), 2);
-  if (cResult[0] !== channel.id) {
-    const fn = function u(defaultForumLayout) {
-      importDefault(defaultForumLayout);
-      const obj = ChannelSettingsActionCreatorsDefault;
-      const obj2 = { defaultForumLayout };
-      obj.updateChannel(obj2);
-      const obj3 = ChannelSettingsActionCreatorsDefault;
-      const obj4 = { defaultForumLayout };
-      obj3.saveChannel(channel.id, obj4);
-    };
-    cResult[0] = channel.id;
-    cResult[1] = fn;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[1];
-  }
-  const container = tmp4.container;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(channel(1125).t.mFMDSq);
-    cResult[2] = stringResult;
-    tmp8 = stringResult;
-  } else {
-    tmp8 = cResult[2];
-  }
-  let LIST = tmp6;
-  if (tmp6 == null) {
-    LIST = tmp(4867).ForumLayout.LIST;
-  }
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { icon: closure_7(tmp(18789).GridSquareIcon, {}), label: intl2.string(tmp(1125).t["U+rQfW"]), value: tmp(4867).ForumLayout.GRID };
-    const TableRadioRow = tmp(7044).TableRadioRow;
-    intl2 = tmp(1125).intl;
-    const tmp12 = closure_7(TableRadioRow, obj2);
-    cResult[3] = tmp12;
-    tmp10 = tmp12;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj3 = { icon: closure_7(tmp(7248).ListViewIcon, {}), label: intl3.string(tmp(1125).t.tuHPRX), value: tmp(4867).ForumLayout.LIST };
-    const TableRadioRow2 = tmp(7044).TableRadioRow;
-    intl3 = tmp(1125).intl;
-    const tmp15 = closure_7(TableRadioRow2, obj3);
-    cResult[4] = tmp15;
-    tmp13 = tmp15;
-  } else {
-    tmp13 = cResult[4];
-  }
-  if (cResult[5] === tmp7) {
-    let tmp16;
-    let tmp18;
-    let tmp20;
-    let tmp23;
-    let tmp28;
-    let tmp27;
-    if (cResult[6] === LIST) {
-      tmp16 = cResult[7];
-    }
-    const _Symbol = Symbol;
-    const description = tmp4.description;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1125).intl;
-      const stringResult1 = intl4.string(channel(1125).t.MbX5Hu);
-      cResult[8] = stringResult1;
-      tmp18 = stringResult1;
-    } else {
-      tmp18 = cResult[8];
-    }
-    if (cResult[9] !== tmp4.description) {
-      let obj4 = { style: description, variant: "text-sm/medium", color: "text-muted", children: tmp18 };
-      const tmp22 = closure_7(channel(5271).Text, obj4);
-      cResult[9] = tmp4.description;
-      cResult[10] = tmp22;
-      tmp20 = tmp22;
-    } else {
-      tmp20 = cResult[10];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[11] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj5 = { title: intl5.string(channel(1125).t.e4oMl4) };
-      const TableRowGroupTitle = tmp(7047).TableRowGroupTitle;
-      intl5 = tmp(1125).intl;
-      const tmp25 = closure_7(TableRowGroupTitle, obj5);
-      cResult[11] = tmp25;
-      tmp23 = tmp25;
-    } else {
-      tmp23 = cResult[11];
-    }
-    if (tmp6 === channel(4867).ForumLayout.GRID) {
-      tmp28 = AssetRegistryDefault;
-      tmp27 = importDefault;
-    } else {
-      tmp27 = importDefault;
-      tmp28 = AssetRegistryDefault2;
-    }
-    if (cResult[12] === tmp4.thumbnailImagePortrait) {
-      let tmp30;
-      if (cResult[13] === tmp28) {
-        tmp30 = cResult[14];
-      }
-      if (cResult[15] === tmp4.container) {
-        if (cResult[16] === tmp20) {
-          if (cResult[17] === tmp30) {
-            let tmp33;
-            if (cResult[18] === tmp16) {
-              tmp33 = cResult[19];
-            }
-            return tmp33;
-          }
-        }
-      }
-      const obj6 = { style: container, children: items };
-      items = [tmp16, tmp20, tmp23, tmp30];
-      const tmp36 = closure_8(View, obj6);
-      cResult[15] = tmp4.container;
-      cResult[16] = tmp20;
-      cResult[17] = tmp30;
-      cResult[18] = tmp16;
-      cResult[19] = tmp36;
-      tmp33 = tmp36;
-    }
-    const obj7 = { style: tmp4.thumbnailImagePortrait, source: tmp28 };
-    const tmp32 = closure_7(tmp27(5707), obj7);
-    cResult[12] = tmp4.thumbnailImagePortrait;
-    cResult[13] = tmp28;
-    cResult[14] = tmp32;
-    tmp30 = tmp32;
-  }
-  const obj8 = { title: tmp8, defaultValue: LIST, onChange: tmp7, hasIcons: true, children: items1 };
-  items1 = [tmp10, tmp13];
-  const tmp17 = closure_8(channel(7045).TableRadioGroup, obj8);
-  cResult[5] = tmp7;
-  cResult[6] = LIST;
-  cResult[7] = tmp17;
-  tmp16 = tmp17;
-}) : (function ChannelSettingsChangeDefaultForumLayout(channel) {
-  let LIST;
-  let _undefined;
-  let c1;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
-  let intl5;
-  let items1;
-  let items2;
-  let tmp10Result;
-  let tmp3;
-  channel = channel.channel;
-  importDefault = undefined;
-  const tmp = closure_9();
-  [tmp3, c1] = react.useState(channel.defaultForumLayout);
-  const items = [channel.id];
-  let obj = { style: tmp.container, children: items2 };
-  _slicedToArray(react.useState(channel.defaultForumLayout), 2);
-  const callback = react.useCallback((defaultForumLayout) => {
-    _undefined(defaultForumLayout);
-    const obj = ChannelSettingsActionCreatorsDefault;
-    const obj2 = { defaultForumLayout };
-    obj.updateChannel(obj2);
-    const obj3 = ChannelSettingsActionCreatorsDefault;
-    const obj4 = { defaultForumLayout };
-    obj3.saveChannel(channel.id, obj4);
-  }, items);
-  let obj2 = { title: intl.string(channel(1125).t.mFMDSq), defaultValue: LIST, onChange: callback, hasIcons: true, children: items1 };
-  const TableRadioGroup = channel(7045).TableRadioGroup;
-  intl = channel(1125).intl;
-  LIST = tmp3;
-  const tmp6 = View;
-  if (tmp3 == null) {
-    LIST = tmp7(4867).ForumLayout.LIST;
-  }
-  let obj3 = { icon: closure_7(channel(18789).GridSquareIcon, {}), label: intl2.string(channel(1125).t["U+rQfW"]), value: channel(4867).ForumLayout.GRID };
-  const TableRadioRow = tmp7(7044).TableRadioRow;
-  intl2 = tmp7(1125).intl;
-  items1 = [closure_7(TableRadioRow, obj3), ];
-  let obj4 = { icon: closure_7(channel(7248).ListViewIcon, {}), label: intl3.string(channel(1125).t.tuHPRX), value: channel(4867).ForumLayout.LIST };
-  const TableRadioRow2 = tmp7(7044).TableRadioRow;
-  intl3 = tmp7(1125).intl;
-  items1[1] = closure_7(TableRadioRow2, obj4);
-  items2 = [closure_8(TableRadioGroup, obj2), , , ];
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-muted", children: intl4.string(channel(1125).t.MbX5Hu) };
-  const Text = tmp7(5271).Text;
-  intl4 = tmp7(1125).intl;
-  items2[1] = closure_7(Text, obj5);
-  const obj6 = { title: intl5.string(channel(1125).t.e4oMl4) };
-  const TableRowGroupTitle = tmp7(7047).TableRowGroupTitle;
-  intl5 = tmp7(1125).intl;
-  items2[2] = closure_7(TableRowGroupTitle, obj6);
-  const obj7 = { style: tmp.thumbnailImagePortrait, source: tmp10Result };
-  const tmp11 = FastImageDefault;
-  const tmp9 = closure_7;
-  if (tmp3 === channel(4867).ForumLayout.GRID) {
-    tmp10Result = tmp10(18829);
-  } else {
-    tmp10Result = tmp10(18830);
-  }
-  items2[3] = tmp9(tmp11, obj7);
-  return closure_8(tmp6, obj);
-});
-let closure_10 = tmp4;
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedChannelSettingsChangeDefaultForumLayout(channelId) {
-  let first;
-  let tmp6;
-  const obj = channelId(576);
-  const cResult = obj.c(5);
-  const tmp = channelId;
-  channelId = channelId.channelId;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [ChannelStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channelId) {
-    const fn = function o() {
-      return ChannelStore.getChannel(channelId);
-    };
-    cResult[1] = channelId;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  let tmp8 = null;
-  if (null != stateFromStores) {
-    let tmp9;
-    if (cResult[3] !== stateFromStores) {
-      const obj2 = { channel: stateFromStores };
-      const tmp12 = closure_7(closure_10, obj2);
-      cResult[3] = stateFromStores;
-      cResult[4] = tmp12;
-      tmp9 = tmp12;
-    } else {
-      tmp9 = cResult[4];
-    }
-    tmp8 = tmp9;
-  }
-  return tmp8;
-}) : (function ConnectedChannelSettingsChangeDefaultForumLayout(channelId) {
+const React4 = createStyles(obj);
+const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx");
+
+export default function ConnectedChannelSettingsChangeDefaultForumLayout(channelId) {
   channelId = channelId.channelId;
   const items = [ChannelStore];
   const obj = channelId(504);
@@ -302,11 +107,8 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedC
   let tmp2 = null;
   if (null != stateFromStores) {
     const obj2 = { channel: stateFromStores };
-    tmp2 = closure_7(closure_10, obj2);
+    tmp2 = closure_7(ChannelSettingsChangeDefaultForumLayout, obj2);
   }
   return tmp2;
-});
-const result = size.fileFinishedImporting("components_native/channel_settings/ChannelSettingsChangeDefaultForumLayout.tsx");
-
-export default tmp5;
-export const ChannelSettingsChangeDefaultForumLayout = tmp4;
+};
+export { ChannelSettingsChangeDefaultForumLayout };

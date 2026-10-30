@@ -1,13 +1,13 @@
-// Module ID: 10704
-// Function ID: 10705
+// Module ID: 10727
+// Function ID: 10728
 // Name: useDiscoverableApplicationStream
-// Dependencies: [6701, 4947, 1084, 558, 576, 504, 2]
+// Dependencies: [6708, 4951, 1072, 504, 2]
+// Exports: default
 
-// Module 10704 (useDiscoverableApplicationStream)
-import Constants from "Constants" /* 1084 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6701 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 10727 (useDiscoverableApplicationStream)
+import Constants from "Constants" /* 1072 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,40 +42,9 @@ function getDiscoverableApplicationStream(userId, items) {
   return tmp6;
 }
 const RelationshipTypes = Constants.RelationshipTypes;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscoverableApplicationStream(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [ApplicationStreamingStore, RelationshipStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function c() {
-      const items = [ApplicationStreamingStore, RelationshipStore];
-      return getDiscoverableApplicationStream(closure_0, items);
-    };
-    const items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useDiscoverableApplicationStream(arg0) {
+const result = size.fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
+
+export default function useDiscoverableApplicationStream(arg0) {
   let closure_0;
   _require = arg0;
   let items = [ApplicationStreamingStore, RelationshipStore];
@@ -85,8 +54,5 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDiscove
     const items = [ApplicationStreamingStore, RelationshipStore];
     return getDiscoverableApplicationStream(closure_0, items);
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/blocking/useDiscoverableApplicationStream.tsx");
-
-export default tmp2;
+};
 export { getDiscoverableApplicationStream };

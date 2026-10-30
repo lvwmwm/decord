@@ -1,12 +1,12 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 15571
+// Function ID: 15572
 // Name: GuildFriendshipStore
-// Dependencies: [504, 6889, 584, 2]
+// Dependencies: [504, 6896, 572, 2]
 
-// Module 15531 (GuildFriendshipStore)
+// Module 15571 (GuildFriendshipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6889 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6896 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -29,9 +29,9 @@ class GuildFriendshipStore extends Store {
     }
     return fetchState === constants.FETCHING;
   }
-  fetchFriendMembersIfNotFetched(id1, items) {
+  fetchFriendMembersIfNotFetched(guildId, items) {
     let fetchState;
-    if (closure_3[id1] != null) {
+    if (closure_3[guildId] != null) {
       fetchState = tmp.fetchState;
     }
     if (fetchState == null) {
@@ -39,9 +39,9 @@ class GuildFriendshipStore extends Store {
     }
     if (fetchState === constants.NOT_FETCHED) {
       const obj = { fetchState: tmp4.FETCHING, foundMembers: 0, notFoundMembers: 0 };
-      closure_3[id1] = obj;
+      closure_3[guildId] = obj;
       const obj2 = GuildActionCreatorsDefault;
-      const membersById = obj2.requestMembersById(id1, items, false);
+      const membersById = obj2.requestMembersById(guildId, items, false);
     }
   }
 }

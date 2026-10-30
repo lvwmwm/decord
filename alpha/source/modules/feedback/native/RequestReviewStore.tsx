@@ -1,25 +1,25 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15544
+// Function ID: 15545
 // Name: RequestReviewStore
-// Dependencies: [5227, 1258, 4908, 1084, 1628, 15505, 5760, 15506, 5188, 5187, 7087, 15508, 1104, 510, 1264, 504, 584, 2]
+// Dependencies: [5233, 1247, 4912, 1072, 1623, 15545, 5767, 15546, 5194, 5193, 7095, 15548, 1093, 510, 1253, 504, 572, 2]
 
-// Module 15504 (RequestReviewStore)
+// Module 15544 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1628 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import TimeUtils from "TimeUtils" /* 5760 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7087 */;
-import requestReviewModalDefault from "requestReviewModal" /* 15506 */;
-import InstallTime from "InstallTime" /* 15508 */;
-import ExperimentStore from "ExperimentStore" /* 5227 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1258 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4908 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1623 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5193 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import TimeUtils from "TimeUtils" /* 5767 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7095 */;
+import requestReviewModalDefault from "requestReviewModal" /* 15546 */;
+import InstallTime from "InstallTime" /* 15548 */;
+import ExperimentStore from "ExperimentStore" /* 5233 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1247 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
 import size from "module_2" /* 2 */;
 
 function delayShowReviewRequestModal() {
@@ -31,7 +31,7 @@ function delayShowReviewRequestModal() {
   }
   obj = MetaQuestUtils;
   if (!obj.isMetaQuest()) {
-    const RequestReviewNoTTIExperiment = tmp4(15505).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp4(15545).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
     if (tmp6) {
@@ -43,7 +43,7 @@ function delayShowReviewRequestModal() {
     }
     if (tmp6) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp4(5760).MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, tmp4(5767).MS_PER_MINUTE);
     }
   }
 }

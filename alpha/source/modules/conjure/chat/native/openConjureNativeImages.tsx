@@ -1,10 +1,10 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12456
+// Function ID: 12457
 // Name: openConjureNativeImages
-// Dependencies: [5, 17, 12290, 8791, 2]
+// Dependencies: [5, 17, 12453, 8825, 2]
 // Exports: openConjureNativeImages
 
-// Module 12293 (openConjureNativeImages)
+// Module 12456 (openConjureNativeImages)
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size_mod from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ let obj = function _openConjureNativeImages() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ let obj = function _openConjureNativeImages() {
                                 } else if (arg0 === 2) {
                                   return { value, done: true };
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "HermesInternal", done: null };
                                 }
                               } else {
                                 try {
@@ -109,7 +109,7 @@ let obj = function _openConjureNativeImages() {
                                       uri = undefined;
                                       c5 = 1;
                                       c6 = 1;
-                                      return { value: "Reflect", done: null };
+                                      return { value: "flexDirection", done: true };
                                     }
                                   } else if (1 === c5) {
                                     if (arg0 === 1) {
@@ -177,7 +177,7 @@ let obj = function _openConjureNativeImages() {
           } else if (1 === tmp4) {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -195,7 +195,7 @@ let obj = function _openConjureNativeImages() {
             closure_132_0(closure_132_1[3]);
             openMediaModal(obj);
             c7 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           if (0 === c5) {

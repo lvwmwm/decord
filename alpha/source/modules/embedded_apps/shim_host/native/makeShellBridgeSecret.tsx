@@ -1,11 +1,11 @@
-// Module ID: 11581
-// Function ID: 11582
+// Module ID: 11782
+// Function ID: 11783
 // Name: makeShellBridgeSecret
-// Dependencies: [1278, 2]
+// Dependencies: [1267, 2]
 // Exports: default
 
-// Module 11581 (makeShellBridgeSecret)
-import v1 from "v1" /* 1278 */;
+// Module 11782 (makeShellBridgeSecret)
+import v1 from "v1" /* 1267 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/embedded_apps/shim_host/native/makeShellBridgeSecret.tsx");

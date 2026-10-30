@@ -1,25 +1,103 @@
 // Module ID: 8273
 // Function ID: 8274
-// Dependencies: []
+// Dependencies: [8274, 8275, 8277, 8278, 8279, 8283, 8284, 8285, 8286, 8271]
 
 // Module 8273
-let c0 = 18761;
-let c1 = 19789;
+import _mod8271 from "module_8271" /* 8271 */;
+import _modDef8274 from "module_8274" /* 8274 */;
+import _modDef8275 from "module_8275" /* 8275 */;
+import _modDef8277 from "module_8277" /* 8277 */;
+import PNG_CHUNK_TYPE_SIZEDefault from "PNG_CHUNK_TYPE_SIZE" /* 8278 */;
+import ITEM_INFO_TYPE_EXIFDefault from "ITEM_INFO_TYPE_EXIF" /* 8279 */;
+import _modDef8283 from "module_8283" /* 8283 */;
+import _modDef8284 from "module_8284" /* 8284 */;
+import _modDef8285 from "module_8285" /* 8285 */;
+import _modDef8286 from "module_8286" /* 8286 */;
+
 
 export default {
-  BIG_ENDIAN: 19789,
-  LITTLE_ENDIAN: 18761,
-  getByteOrder(getUint16, c5) {
-    if (getUint16.getUint16(c5) === c0) {
-      return c0;
-    } else if (getUint16.getUint16(c5) === c1) {
-      return c1;
-    } else {
-      const _Error = Error;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Illegal byte order value. Faulty image.");
-      throw error;
+  parseAppMarkers(byteLength, flag2) {
+    if (_modDef8274.USE_TIFF) {
+      const tmpResult = _modDef8275;
+      if (tmpResult.isTiffFile(byteLength)) {
+        const tmpResult16 = _modDef8275;
+        const findTiffOffsetsResult = tmpResult16.findTiffOffsets();
+        const obj = { fileType: { value: "tiff", description: "TIFF" } };
+        const obj31 = _mod8271;
+        return obj31.objectAssign({}, findTiffOffsetsResult, obj);
+      }
     }
+    if (_modDef8274.USE_JPEG) {
+      const tmpResult17 = _modDef8277;
+      if (tmpResult17.isJpegFile(byteLength)) {
+        const tmpResult18 = _modDef8277;
+        const findJpegOffsetsResult = tmpResult18.findJpegOffsets(byteLength);
+        const obj2 = { fileType: { value: "jpeg", description: "JPEG" } };
+        const obj28 = _mod8271;
+        return obj28.objectAssign({}, findJpegOffsetsResult, obj2);
+      }
+    }
+    if (_modDef8274.USE_PNG) {
+      const tmpResult19 = PNG_CHUNK_TYPE_SIZEDefault;
+      if (tmpResult19.isPngFile(byteLength)) {
+        const tmpResult20 = PNG_CHUNK_TYPE_SIZEDefault;
+        const findPngOffsetsResult = tmpResult20.findPngOffsets(byteLength, flag2);
+        const obj3 = { fileType: { value: "png", description: "PNG" } };
+        const obj25 = _mod8271;
+        return obj25.objectAssign({}, findPngOffsetsResult, obj3);
+      }
+    }
+    if (_modDef8274.USE_HEIC) {
+      const tmpResult21 = ITEM_INFO_TYPE_EXIFDefault;
+      if (tmpResult21.isHeicFile(byteLength)) {
+        const tmpResult22 = ITEM_INFO_TYPE_EXIFDefault;
+        const findHeicOffsetsResult = tmpResult22.findHeicOffsets(byteLength);
+        const obj4 = { fileType: { value: "heic", description: "HEIC" } };
+        const obj22 = _mod8271;
+        return obj22.objectAssign({}, findHeicOffsetsResult, obj4);
+      }
+    }
+    if (_modDef8274.USE_AVIF) {
+      const tmpResult23 = _modDef8283;
+      if (tmpResult23.isAvifFile(byteLength)) {
+        const tmpResult24 = _modDef8283;
+        const findAvifOffsetsResult = tmpResult24.findAvifOffsets(byteLength);
+        const obj5 = { fileType: { value: "avif", description: "AVIF" } };
+        const obj19 = _mod8271;
+        return obj19.objectAssign({}, findAvifOffsetsResult, obj5);
+      }
+    }
+    if (_modDef8274.USE_WEBP) {
+      const tmpResult25 = _modDef8284;
+      if (tmpResult25.isWebpFile(byteLength)) {
+        const tmpResult26 = _modDef8284;
+        const findOffsetsResult = tmpResult26.findOffsets(byteLength);
+        const obj6 = { fileType: { value: "webp", description: "WebP" } };
+        const obj16 = _mod8271;
+        return obj16.objectAssign({}, findOffsetsResult, obj6);
+      }
+    }
+    if (_modDef8274.USE_GIF) {
+      const tmpResult27 = _modDef8285;
+      if (tmpResult27.isGifFile(byteLength)) {
+        const tmpResult28 = _modDef8285;
+        const findOffsetsResult1 = tmpResult28.findOffsets(byteLength);
+        const obj7 = { fileType: { value: "gif", description: "GIF" } };
+        const obj13 = _mod8271;
+        return obj13.objectAssign({}, findOffsetsResult1, obj7);
+      }
+    }
+    if (_modDef8274.USE_XMP) {
+      const tmpResult29 = _modDef8286;
+      if (tmpResult29.isXMLFile(byteLength)) {
+        const tmpResult30 = _modDef8286;
+        const findOffsetsResult2 = tmpResult30.findOffsets(byteLength);
+        const obj8 = { fileType: { value: "xml", description: "XML" } };
+        const obj10 = _mod8271;
+        return obj10.objectAssign({}, findOffsetsResult2, obj8);
+      }
+    }
+    const error = new Error("Invalid image format");
+    throw error;
   }
 };

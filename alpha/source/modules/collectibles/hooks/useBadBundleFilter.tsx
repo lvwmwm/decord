@@ -1,170 +1,31 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16923
+// Function ID: 16924
 // Name: useBadBundleFilter
-// Dependencies: [19, 1389, 7723, 558, 576, 573, 2051, 9496, 7720, 7719, 2]
+// Dependencies: [19, 1384, 7728, 563, 2048, 9515, 7725, 7724, 2]
+// Exports: useBadBundleFilter
 
-// Module 16869 (useBadBundleFilter)
+// Module 16923 (useBadBundleFilter)
 import react from "react" /* 19 */;
-import useStateFromStores from "useStateFromStores" /* 573 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7719 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7720 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9496 */;
-import UserStore from "UserStore" /* 1389 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7723 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7724 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7725 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9515 */;
+import UserStore from "UserStore" /* 1384 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7728 */;
 import size from "module_2" /* 2 */;
 
-let _require;
-
 const useCallback = react.useCallback;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBundleFilter() {
-  let closure_0;
-  let currentUser;
-  let tmp11;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let obj = require("react");
-  const cResult = obj.c(6);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function c() {
-      return currentUser.getCurrentUser();
-    };
-    let num = 0;
-    cResult[0] = items;
-    let num2 = 1;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let tmpResult = tmp(573);
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] !== stateFromStores) {
-    let obj3 = PremiumUtilsDefault;
-    const canUseShopDiscountsResult = obj3.canUseShopDiscounts(stateFromStores);
-    cResult[2] = stateFromStores;
-    cResult[3] = canUseShopDiscountsResult;
-    tmp8 = canUseShopDiscountsResult;
-  } else {
-    tmp8 = cResult[3];
-  }
-  _require = tmp8;
-  if (cResult[4] !== tmp8) {
-    class P {
-      constructor(arg0) {
-        found = arg0;
-        if (null != arg0) {
-          num = 0;
-          found = arg0;
-          if (0 !== arg0.length) {
-            found = arg0.filter((product) => {
-              let obj = hasShopDiscount(dependencyMap[7]);
-              const isPurchased = obj.getProductPurchaseState(CollectiblesPurchaseStore, product).isPurchased;
-              const obj2 = hasShopDiscount(dependencyMap[8]);
-              if (obj2.isBundleProduct(product)) {
-                const tmpResult = hasShopDiscount(dependencyMap[8]);
-                if (!tmpResult.isFreeCollectiblesProduct(product)) {
-                  if (!isPurchased) {
-                    const tmpResult5 = hasShopDiscount(dependencyMap[9]);
-                    if (tmpResult5.isOrbsExclusiveProduct(product)) {
-                      const obj3 = { product, hasShopDiscount };
-                      const tmpResult6 = hasShopDiscount(dependencyMap[9]);
-                      return null != tmpResult6.getProductOrbPrice(obj3);
-                    } else {
-                      const tmpResult7 = hasShopDiscount(dependencyMap[8]);
-                      const defaultPriceSetAssignmentPurchaseType = tmpResult7.getDefaultPriceSetAssignmentPurchaseType(hasShopDiscount);
-                      const tmpResult8 = hasShopDiscount(dependencyMap[8]);
-                      let result = tmpResult8.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
-                      if (null != result) {
-                        let num = 0;
-                        if (0 !== result.amount) {
-                          let num2 = 0;
-                          if (null != product.bundledProducts) {
-                            const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(function() { /* body not rendered: F164137 */ }, 0);
-                          }
-                          return result.amount < num2;
-                        }
-                      }
-                      return true;
-                    }
-                  }
-                }
-              }
-              return true;
-            });
-          }
-        }
-        return found;
-      }
-    }
-    cResult[4] = tmp8;
-    cResult[5] = P;
-    tmp11 = P;
-  } else {
-    class P {
-      constructor(arg0) {
-        found = arg0;
-        if (null != arg0) {
-          num = 0;
-          found = arg0;
-          if (0 !== arg0.length) {
-            found = arg0.filter((product) => {
-              let obj = hasShopDiscount(dependencyMap[7]);
-              const isPurchased = obj.getProductPurchaseState(CollectiblesPurchaseStore, product).isPurchased;
-              const obj2 = hasShopDiscount(dependencyMap[8]);
-              if (obj2.isBundleProduct(product)) {
-                const tmpResult = hasShopDiscount(dependencyMap[8]);
-                if (!tmpResult.isFreeCollectiblesProduct(product)) {
-                  if (!isPurchased) {
-                    const tmpResult5 = hasShopDiscount(dependencyMap[9]);
-                    if (tmpResult5.isOrbsExclusiveProduct(product)) {
-                      const obj3 = { product, hasShopDiscount };
-                      const tmpResult6 = hasShopDiscount(dependencyMap[9]);
-                      return null != tmpResult6.getProductOrbPrice(obj3);
-                    } else {
-                      const tmpResult7 = hasShopDiscount(dependencyMap[8]);
-                      const defaultPriceSetAssignmentPurchaseType = tmpResult7.getDefaultPriceSetAssignmentPurchaseType(hasShopDiscount);
-                      const tmpResult8 = hasShopDiscount(dependencyMap[8]);
-                      let result = tmpResult8.extractPriceByPurchaseTypes(product, defaultPriceSetAssignmentPurchaseType);
-                      if (null != result) {
-                        let num = 0;
-                        if (0 !== result.amount) {
-                          let num2 = 0;
-                          if (null != product.bundledProducts) {
-                            const bundledProducts = product.bundledProducts;
-                            num2 = bundledProducts.reduce(function() { /* body not rendered: F164137 */ }, 0);
-                          }
-                          return result.amount < num2;
-                        }
-                      }
-                      return true;
-                    }
-                  }
-                }
-              }
-              return true;
-            });
-          }
-        }
-        return found;
-      }
-    }
-  }
-  return tmp11;
-}) : (function useBadBundleFilter() {
+let result = size.fileFinishedImporting("modules/collectibles/hooks/useBadBundleFilter.tsx");
+
+export function useBadBundleFilter() {
   let currentUser;
   let obj = useStateFromStores;
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   let obj2 = PremiumUtilsDefault;
   const canUseShopDiscountsResult = obj2.canUseShopDiscounts(stateFromStores);
-  const require = canUseShopDiscountsResult;
+  require = canUseShopDiscountsResult;
   const items1 = [canUseShopDiscountsResult];
   return useCallback((arr) => {
     let hasShopDiscount;
@@ -198,7 +59,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
                       if (null != product.bundledProducts) {
                         const bundledProducts = product.bundledProducts;
                         num2 = bundledProducts.reduce((acc, item) => {
-                          const obj = hasShopDiscount(closure_2_2[8]);
+                          const obj = hasShopDiscount(closure_2_2[6]);
                           const result = obj.extractPriceByPurchaseTypes(item, defaultPriceSetAssignmentPurchaseType);
                           let num;
                           if (result != null) {
@@ -224,7 +85,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBadBund
     }
     return found;
   }, items1);
-});
-let result = size.fileFinishedImporting("modules/collectibles/hooks/useBadBundleFilter.tsx");
-
-export const useBadBundleFilter = tmp2;
+}

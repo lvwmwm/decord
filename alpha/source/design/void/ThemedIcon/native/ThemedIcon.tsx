@@ -1,55 +1,20 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15937
+// Function ID: 15938
 // Name: ThemedIcon
-// Dependencies: [109, 19, 21, 558, 576, 5289, 5283, 2]
+// Dependencies: [19, 21, 5591, 5631, 2]
+// Exports: default
 
-// Module 15897 (ThemedIcon)
+// Module 15937 (ThemedIcon)
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import IconDefault from "Icon" /* 5283 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import useToken from "useToken" /* 5591 */;
+import IconDefault from "Icon" /* 5631 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const useToken = tmp(5289);
-let closure_3 = ["themedColor"];
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedIcon(themedColor) {
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(6);
-  if (cResult[0] !== themedColor) {
-    themedColor = themedColor.themedColor;
-    const tmp8 = _objectWithoutProperties(themedColor, closure_3);
-    cResult[0] = themedColor;
-    cResult[1] = tmp8;
-    cResult[2] = themedColor;
-    tmp5 = themedColor;
-    tmp4 = tmp8;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const tmpResult = useToken;
-  const token = tmpResult.useToken(tmp5);
-  if (cResult[3] === tmp4) {
-    let tmp10;
-    if (cResult[4] === token) {
-      tmp10 = cResult[5];
-    }
-    return tmp10;
-  }
-  IconDefault;
-  const merged = Object.assign(tmp4);
-  const tmp13 = <tmp11 color={token} />;
-  cResult[3] = tmp4;
-  cResult[4] = token;
-  cResult[5] = tmp13;
-  tmp10 = tmp13;
-}) : (function ThemedIcon(themedColor) {
+const result = size.fileFinishedImporting("design/void/ThemedIcon/native/ThemedIcon.tsx");
+
+export default function ThemedIcon(themedColor) {
   themedColor = themedColor.themedColor;
   const merged = Object.assign(themedColor, Object.assign({ themedColor: 0 }));
   const obj = useToken;
@@ -57,7 +22,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ThemedIcon
   IconDefault;
   const merged1 = Object.assign(merged);
   return <tmp3 color={token} />;
-});
-const result = size.fileFinishedImporting("design/void/ThemedIcon/native/ThemedIcon.tsx");
-
-export default tmp3;
+};

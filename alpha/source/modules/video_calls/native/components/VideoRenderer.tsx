@@ -1,21 +1,19 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11727
+// Function ID: 11728
 // Name: VideoRenderer
-// Dependencies: [32, 19, 17, 21, 5005, 558, 576, 5876, 11530, 11531, 1497, 1381, 8860, 11533, 11534, 11536, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 5883, 11728, 11730, 1492, 1376, 8894, 11732, 11733, 11735, 2]
 
-// Module 11529 (VideoRenderer)
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import useWindowDimensions from "useWindowDimensions" /* 1497 */;
+// Module 11727 (VideoRenderer)
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import useWindowDimensions from "useWindowDimensions" /* 1492 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let dependencyMap, ref;
+let dependencyMap;
 
 let c9;
 let hasOwnProperty;
@@ -25,376 +23,13 @@ let metroRequire;
 let react = react_mod;
 ({ View: hasOwnProperty, StyleSheet: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let ref2 = createStyles.createStyles({ spinner: { height: 32, width: 32 }, center: { alignItems: "center", justifyContent: "center" }, zoomLayoutAndroid: { flex: 1 } });
+let closure_10 = createStyles.createStyles({ spinner: { height: 32, width: 32 }, center: { alignItems: "center", justifyContent: "center" }, zoomLayoutAndroid: { flex: 1 } });
 const ResizeMode = { COVER: 0, [0]: "COVER", CONTAIN: 1, [1]: "CONTAIN", AUTO: 2, [2]: "AUTO" };
-let memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VideoRenderer(arg0) {
-  let COVER;
-  let closure_3;
-  let closure_5;
-  let closure_6;
-  let first;
-  let first1;
-  let first2;
-  let gestureEnabled;
-  let paused;
-  let renderTag;
-  let require;
-  let resizeMode;
-  let streamId;
-  let streamKey;
-  let tmp10;
-  let tmp12;
-  let tmp18;
-  let userId;
-  let videoSpinnerContext;
-  let tmp = require;
-  let tmp2 = first1;
-  let obj = require("react");
-  const cResult = obj.c(116);
-  ({ streamId, resizeMode, gestureEnabled, renderTag, videoSpinnerContext, userId, streamKey, paused } = arg0);
-  if (undefined === resizeMode) {
-    resizeMode = obj.CONTAIN;
-  }
-  let tmp5 = undefined !== paused && paused;
-  let tmp6 = ref2();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { location: "VideoRenderer" };
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(tmp2[7]);
-  const surfaceDirectRendererExperiment = tmpResult.useSurfaceDirectRendererExperiment(userId, first);
-  [tmp10, require] = first2.useState(0);
-  _slicedToArray(first2.useState(0), 2);
-  [tmp12, importDefault] = first2.useState(0);
-  _slicedToArray(first2.useState(0), 2);
-  [first1, _slicedToArray] = first2.useState(0);
-  [first2, closure_5] = first2.useState(0);
-  [tmp18, closure_6] = first2.useState(true);
-  _slicedToArray(first2.useState(true), 2);
-  if (cResult[1] === tmp18) {
-    if (cResult[2] === tmp5) {
-      if (cResult[3] === streamId) {
-        if (cResult[4] === userId) {
-          let tmp19;
-          if (cResult[5] === videoSpinnerContext) {
-            tmp19 = cResult[6];
-          }
-          require("useVideoSpinnerTimer")(tmp19);
-          const tmp20 = importDefault;
-          if (cResult[7] === tmp18) {
-            if (cResult[8] === tmp5) {
-              if (cResult[9] === streamId) {
-                if (cResult[10] === streamKey) {
-                  if (cResult[11] === userId) {
-                    let tmp22;
-                    let tmp26;
-                    let tmp34;
-                    let tmp36;
-                    if (cResult[12] === videoSpinnerContext) {
-                      tmp22 = cResult[13];
-                    }
-                    const onReady = tmp20(tmp2[9])(tmp22).onReady;
-                    ref = obj4.useRef(null);
-                    const ref1 = obj4.useRef(null);
-                    const _Symbol = Symbol;
-                    if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-                      size = { width: 0, height: 0 };
-                      cResult[14] = size;
-                      tmp26 = size;
-                    } else {
-                      tmp26 = cResult[14];
-                    }
-                    const _Symbol2 = Symbol;
-                    ref2 = first2.useRef(tmp26);
-                    if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-                      function ie(nativeEvent) {
-                        let height;
-                        let width;
-                        ({ width, height } = nativeEvent.nativeEvent);
-                        const obj = useWindowDimensions;
-                        size = obj.getWindowDimensions();
-                        const bound = Math.min(Math.sqrt(size.width * size.height * 4 / (width * height)), 1);
-                        closure_3(width * bound);
-                        closure_5(height * bound);
-                      }
-                      cResult[15] = ie;
-                    }
-                    if (cResult[16] !== onReady) {
-                      function le() {
-                        closure_6(false);
-                        onReady();
-                      }
-                      cResult[16] = onReady;
-                      cResult[17] = le;
-                    }
-                    const _Symbol3 = Symbol;
-                    if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                      function se(nativeEvent) {
-                        let height;
-                        let width;
-                        ({ width, height } = nativeEvent.nativeEvent.layout);
-                        _require(width);
-                        importDefault(height);
-                        ref.current = { width, height };
-                      }
-                      cResult[18] = se;
-                    }
-                    const _Symbol4 = Symbol;
-                    if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-                      function de(nativeEvent) {
-                        const layout = nativeEvent.nativeEvent.layout;
-                        const width = layout.width;
-                        const height = layout.height;
-                        const obj = require("PlatformUtils");
-                        let isAndroidResult = obj.isAndroid();
-                        if (!isAndroidResult) {
-                          const tmp2 = ref;
-                          let tmp3 = null;
-                          isAndroidResult = null == ref.current;
-                        }
-                        if (!isAndroidResult) {
-                          let current = ref.current;
-                          const tmp5 = width <= 0 || height <= 0;
-                          if (!tmp5) {
-                            size = { x: 0, y: 0, width, height, animated: false };
-                            let result = current.scrollResponderZoomTo(size);
-                            current.scrollTo({ x: 0, y: 0, animated: false });
-                          }
-                          const _requestAnimationFrame = requestAnimationFrame;
-                          const animationFrame = requestAnimationFrame(() => {
-                            if (null != ref.current) {
-                              const current = ref.current;
-                              let tmp3 = width <= 0;
-                              const tmp = width;
-                              if (!tmp3) {
-                                tmp3 = tmp2 <= 0;
-                              }
-                              if (!tmp3) {
-                                size = { x: 0, y: 0, width: tmp, height, animated: false };
-                                const result = current.scrollResponderZoomTo(size);
-                                current.scrollTo({ x: 0, y: 0, animated: false });
-                              }
-                            }
-                          });
-                        }
-                      }
-                      cResult[19] = de;
-                    }
-                    let num15 = 0;
-                    if (0 !== tmp10) {
-                      num15 = 0;
-                      if (0 !== tmp12) {
-                        num15 = 0;
-                        if (0 !== first1) {
-                          num15 = 0;
-                          if (0 !== first2) {
-                            let result = tmp10 / tmp12;
-                            const result1 = first1 / first2;
-                            if (resizeMode === obj.AUTO) {
-                              if (result <= 1) {
-                                if (result < 1) {
-                                  resizeMode = COVER;
-                                }
-                                COVER = tmp33.CONTAIN;
-                              }
-                              COVER = tmp33.COVER;
-                            }
-                            if (resizeMode !== obj.CONTAIN) {
-                              num15 = 0;
-                              if (resizeMode === obj.COVER) {
-                                num15 = result1 > result ? tmp12 / first2 : tmp10 / first1;
-                              }
-                            } else {
-                              num15 = result > result1 ? tmp12 / first2 : tmp10 / first1;
-                            }
-                          }
-                        }
-                      }
-                    }
-                    const _Symbol5 = Symbol;
-                    if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-                      function ve(orientation) {
-                        return orientation.orientation;
-                      }
-                      cResult[20] = ve;
-                      tmp34 = ve;
-                    } else {
-                      tmp34 = cResult[20];
-                    }
-                    const _Symbol6 = Symbol;
-                    const tmpResult2 = tmp(tmp2[12]);
-                    const store = tmpResult2.useStore(tmp34);
-                    if (cResult[21] === Symbol.for("react.memo_cache_sentinel")) {
-                      function ge() {
-                        const obj = PlatformUtils;
-                        const isAndroidResult = obj.isAndroid() && null != ref1.current;
-                        if (isAndroidResult) {
-                          const current = ref1.current;
-                          if (current != null) {
-                            current.unzoom({ animated: false });
-                          }
-                        }
-                      }
-                      cResult[21] = ge;
-                      tmp36 = ge;
-                    } else {
-                      tmp36 = cResult[21];
-                    }
-                    if (cResult[22] === tmp12) {
-                      if (cResult[23] === tmp10) {
-                        if (cResult[24] === num15) {
-                          if (cResult[25] === first2) {
-                            let tmp37;
-                            if (cResult[26] === first1) {
-                              tmp37 = cResult[27];
-                            }
-                            const layoutEffect = obj4.useLayoutEffect(tmp36, tmp37);
-                            if (cResult[28] === first2) {
-                              let tmp39;
-                              let tmp40;
-                              if (cResult[29] === first1) {
-                                tmp39 = cResult[30];
-                                tmp40 = cResult[31];
-                              }
-                              const layoutEffect1 = obj4.useLayoutEffect(tmp39, tmp40);
-                              const result2 = first1 * num15;
-                              class Re {
-                                constructor() {
-                                  let height;
-                                  let width;
-                                  const obj = PlatformUtils;
-                                  if (!obj.isAndroid()) {
-                                    if (null != ref.current) {
-                                      if (first1 > 0) {
-                                        if (first2 > 0) {
-                                          ({ width, height } = ref.current);
-                                          const current = tmp.current;
-                                          const tmp6 = width <= 0 || height <= 0;
-                                          if (!tmp6) {
-                                            size = { x: 0, y: 0, width, height, animated: false };
-                                            const result = current.scrollResponderZoomTo(size);
-                                            current.scrollTo({ x: 0, y: 0, animated: false });
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                              if (cResult[32] === result2) {
-                                const result3 = first1 * num15;
-                                const result4 = first2 * num15;
-                                class Re {
-                                  constructor() {
-                                    let height;
-                                    let width;
-                                    const obj = PlatformUtils;
-                                    if (!obj.isAndroid()) {
-                                      if (null != ref.current) {
-                                        if (first1 > 0) {
-                                          if (first2 > 0) {
-                                            ({ width, height } = ref.current);
-                                            const current = tmp.current;
-                                            const tmp6 = width <= 0 || height <= 0;
-                                            if (!tmp6) {
-                                              size = { x: 0, y: 0, width, height, animated: false };
-                                              const result = current.scrollResponderZoomTo(size);
-                                              current.scrollTo({ x: 0, y: 0, animated: false });
-                                            }
-                                          }
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                                const size1 = { width: result3, height: result4 };
-                                cResult[35] = result3;
-                                cResult[36] = result4;
-                                cResult[37] = size1;
-                              }
-                              const size2 = { width: result2, height: tmp43 };
-                              cResult[32] = result2;
-                              cResult[33] = tmp43;
-                              cResult[34] = size2;
-                            }
-                            class Re {
-                              constructor() {
-                                let height;
-                                let width;
-                                const obj = PlatformUtils;
-                                if (!obj.isAndroid()) {
-                                  if (null != ref.current) {
-                                    if (first1 > 0) {
-                                      if (first2 > 0) {
-                                        ({ width, height } = ref.current);
-                                        const current = tmp.current;
-                                        const tmp6 = width <= 0 || height <= 0;
-                                        if (!tmp6) {
-                                          size = { x: 0, y: 0, width, height, animated: false };
-                                          const result = current.scrollResponderZoomTo(size);
-                                          current.scrollTo({ x: 0, y: 0, animated: false });
-                                        }
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                            const items = [first1, first2];
-                            cResult[28] = first2;
-                            cResult[29] = first1;
-                            cResult[30] = Re;
-                            cResult[31] = items;
-                            tmp40 = items;
-                            tmp39 = Re;
-                          }
-                        }
-                      }
-                    }
-                    const items1 = [tmp10, tmp12, first1, first2, num15];
-                    cResult[22] = tmp12;
-                    cResult[23] = tmp10;
-                    cResult[24] = num15;
-                    cResult[25] = first2;
-                    cResult[26] = first1;
-                    cResult[27] = items1;
-                    tmp37 = items1;
-                  }
-                }
-              }
-            }
-          }
-          const obj3 = { streamId, userId, videoSpinnerContext, paused: tmp5, loading: tmp18, streamKey };
-          cResult[7] = tmp18;
-          cResult[8] = tmp5;
-          cResult[9] = streamId;
-          cResult[10] = streamKey;
-          cResult[11] = userId;
-          cResult[12] = videoSpinnerContext;
-          cResult[13] = obj3;
-          tmp22 = obj3;
-        }
-      }
-    }
-  }
-  const obj5 = { location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused: tmp5, loading: tmp18 };
-  cResult[1] = tmp18;
-  cResult[2] = tmp5;
-  cResult[3] = streamId;
-  cResult[4] = userId;
-  cResult[5] = videoSpinnerContext;
-  cResult[6] = obj5;
-  tmp19 = obj5;
-}) : (function VideoRenderer(gestureEnabled) {
+const memoResult = react.memo(function VideoRenderer(gestureEnabled) {
   let _undefined;
   let c9;
   let closure_2;
   let closure_4;
-  let closure_8;
   let items10;
   let items11;
   let items12;
@@ -406,6 +41,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let obj10;
   let obj6;
   let paused;
+  let ref;
   let renderTag;
   let resizeMode;
   let streamId;
@@ -436,7 +72,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let tmp2 = onReady();
   let tmp3 = resizeMode;
   const tmp4 = dependencyMap;
-  let obj = resizeMode(5876);
+  let obj = resizeMode(5883);
   const surfaceDirectRendererExperiment = obj.useSurfaceDirectRendererExperiment(userId, { location: "VideoRenderer" });
   let tmp6 = first1(react.useState(0), 2);
   let width = tmp6[0];
@@ -449,10 +85,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let closure_6 = tmp12;
   const tmp13 = first1(react.useState(0), 2);
   const first3 = tmp13[0];
+  let closure_8 = tmp15;
   [tmp17, c9] = first1(react.useState(true), 2);
   first1(react.useState(true), 2);
-  width(11530)({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused, loading: tmp17 });
-  onReady = width(11531)({ streamId, userId, videoSpinnerContext, paused, loading: tmp17, streamKey }).onReady;
+  width(11728)({ location: "VideoRenderer", videoSpinnerContext, userId, streamId, paused, loading: tmp17 });
+  onReady = width(11730)({ streamId, userId, videoSpinnerContext, paused, loading: tmp17, streamKey }).onReady;
   react.useRef(null);
   const ref1 = react.useRef(null);
   ref = react.useRef({ width: 0, height: 0 });
@@ -483,7 +120,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const layout = nativeEvent.nativeEvent.layout;
     width = layout.width;
     const height = layout.height;
-    const obj = resizeMode(closure_2[11]);
+    const obj = resizeMode(closure_2[9]);
     let isAndroidResult = obj.isAndroid();
     if (!isAndroidResult) {
       const tmp2 = ref;
@@ -551,7 +188,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     return 0;
   }, items2);
   const items3 = [width, first1, first2, first3, memo];
-  const obj2 = resizeMode(8860);
+  const obj2 = resizeMode(8894);
   const store = obj2.useStore((orientation) => orientation.orientation);
   const layoutEffect = react.useLayoutEffect(() => {
     const obj = PlatformUtils;
@@ -615,10 +252,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   }, items9);
   if (tmp17) {
     const obj3 = { animate: true, style: tmp2.spinner };
-    tmp35 = ref(tmp18(11533), obj3);
+    tmp35 = closure_8(tmp18(11732), obj3);
   }
-  const tmp37 = store === tmp3(8860).OrientationType.PORTRAIT;
-  const tmp3Result = tmp3(1381);
+  const tmp37 = store === tmp3(8894).OrientationType.PORTRAIT;
+  const tmp3Result = tmp3(1376);
   if (tmp3Result.isAndroid()) {
     const obj4 = { onLayout: callback2, style: items10, children: items12 };
     items10 = [tmp2.center, closure_6.absoluteFillObject];
@@ -627,14 +264,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     size = { width, height: first1, alignItems: "center", justifyContent: "center" };
     items11 = [, ];
     const obj7 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo2 };
-    const tmp18Result = width(11536);
-    items11[0] = ref(width(11534), obj7);
+    const tmp18Result = width(11733);
+    items11[0] = closure_8(width(11735), obj7);
     items11[1] = tmp35;
-    items12 = [ref(tmp18Result, obj5), ];
+    items12 = [closure_8(tmp18Result, obj5), ];
     const obj8 = { style: memo5, children: tmp56 };
     tmp56 = null;
     const tmp51 = c9;
-    const tmp54 = ref;
+    const tmp54 = closure_8;
     if (!tmp17) {
       tmp56 = null;
       if (flag) {
@@ -655,7 +292,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     obj10 = { collapsable: false, style: memo4, onLayout: callback3, children: items14 };
     const obj11 = { style: memo3, children: items13 };
     const obj12 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    items13 = [ref(width(11534), obj12), ];
+    items13 = [closure_8(width(11735), obj12), ];
     let tmp48 = null;
     const tmp44 = first3;
     const tmp45 = closure_6;
@@ -680,11 +317,11 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     const obj14 = { onLayout: callback2, style: items16, children: items17 };
     items16 = [tmp2.center, closure_6.absoluteFillObject];
     const obj15 = { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, streamId, onSize: callback, onReady: callback1, style: memo1 };
-    items17 = [ref(width(11534), obj15), tmp35];
+    items17 = [closure_8(width(11735), obj15), tmp35];
     tmp43Result1 = c9(first2, obj14);
   }
   return tmp43Result1;
-}));
+});
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/video_calls/native/components/VideoRenderer.tsx");
 

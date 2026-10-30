@@ -1,106 +1,33 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 17494
+// Function ID: 17495
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5005, 587, 17441, 4883, 5014, 1125, 558, 576, 5271, 6438, 6015, 1381, 6965, 17443, 2]
-// Exports: useDiskUsageMeasurement
+// Dependencies: [5, 32, 19, 21, 5009, 575, 17495, 4887, 5018, 1114, 6022, 5619, 6445, 1376, 6971, 17497, 2]
+// Exports: default, useDiskUsageMeasurement
 
-// Module 17440 (CacheActionsDiskUsageSection)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl24 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import FileSizeUtils from "FileSizeUtils" /* 6438 */;
-import Card_Card from "Card/Card" /* 6965 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17443 */;
+// Module 17494 (CacheActionsDiskUsageSection)
+import nativeDefault from "native" /* 575 */;
+import intl24 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import FileSizeUtils from "FileSizeUtils" /* 6445 */;
+import Card_Card from "Card/Card" /* 6971 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17497 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c5, ref;
+let c5, ref, root;
 
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
-let Fragment = Fragment_mod;
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
-let obj = { label: { flex: 1 }, nestedLabel: obj2, value: { flexShrink: 1 } };
-obj2 = { flex: 1, paddingLeft: nativeDefault.space.PX_16 };
-let closure_9 = createStyles.createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRow(arg0) {
-  let bytes;
-  let indented;
-  let items;
-  let label;
-  const obj = react2;
-  const cResult = obj.c(11);
-  ({ label, bytes, indented } = arg0);
-  const tmp4 = undefined !== indented && indented;
-  const iter = closure_9();
-  const tmp5 = tmp4 ? iter.nestedLabel : iter.label;
-  if (cResult[0] === label) {
-    let tmp6;
-    let tmp8;
-    if (cResult[1] === tmp5) {
-      tmp6 = cResult[2];
-    }
-    if (cResult[3] !== bytes) {
-      let formatKbSizeResult;
-      if (null != bytes) {
-        const tmpResult = FileSizeUtils;
-        formatKbSizeResult = tmpResult.formatKbSize(bytes);
-      } else {
-        const intl = tmp(1125).intl;
-        formatKbSizeResult = intl.string(tmp(1125).t.Yrz9rv);
-      }
-      cResult[3] = bytes;
-      cResult[4] = formatKbSizeResult;
-      tmp8 = formatKbSizeResult;
-    } else {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === iter.value) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      if (cResult[8] === tmp6) {
-        let tmp14;
-        if (cResult[9] === tmp11) {
-          tmp14 = cResult[10];
-        }
-        return tmp14;
-      }
-      const obj2 = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: items };
-      const Stack = tmp(6015).Stack;
-      items = [tmp6, tmp11];
-      const tmp17 = metroImportDefault(Stack, obj2);
-      cResult[8] = tmp6;
-      cResult[9] = tmp11;
-      cResult[10] = tmp17;
-      tmp14 = tmp17;
-    }
-    const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: tmp8 };
-    const tmp13 = metroRequire(Text_Text.Text, obj3);
-    cResult[5] = iter.value;
-    cResult[6] = tmp8;
-    cResult[7] = tmp13;
-    tmp11 = tmp13;
-  }
-  const tmp7 = metroRequire(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", style: tmp5, children: label });
-  cResult[0] = label;
-  cResult[1] = tmp5;
-  cResult[2] = tmp7;
-  tmp6 = tmp7;
-}) : (function SizeRow(label) {
+function SizeRow(label) {
   let bytes;
   let formatKbSizeResult;
   let indented;
@@ -117,290 +44,19 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function SizeRo
   const obj2 = { variant: "text-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
   items[0] = metroRequire(Text_Text.Text, obj2);
   const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
-  const Text = tmp2(5271).Text;
+  const Text = tmp2(5619).Text;
   const tmp = metroImportDefault;
   if (null != bytes) {
     const tmp2Result = FileSizeUtils;
     formatKbSizeResult = tmp2Result.formatKbSize(bytes);
   } else {
-    const intl = tmp2(1125).intl;
-    formatKbSizeResult = intl.string(tmp2(1125).t.Yrz9rv);
+    const intl = tmp2(1114).intl;
+    formatKbSizeResult = intl.string(tmp2(1114).t.Yrz9rv);
   }
   items[1] = metroRequire(Text, obj3);
   return tmp(Stack, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUsageResults(arg0) {
-  let first;
-  let intl;
-  let intl10;
-  let intl11;
-  let intl12;
-  let intl13;
-  let intl14;
-  let intl15;
-  let intl16;
-  let intl17;
-  let intl18;
-  let intl19;
-  let intl2;
-  let intl21;
-  let intl22;
-  let intl23;
-  let intl3;
-  let intl4;
-  let intl5;
-  let intl6;
-  let intl7;
-  let intl8;
-  let intl9;
-  let items;
-  let items1;
-  let kvDatabaseUsage;
-  let metricKitSize;
-  let obj10;
-  let report;
-  let str;
-  let tmp11;
-  let tmp15;
-  let tmp22;
-  let tmp5;
-  let tmp7;
-  const tmp = kvDatabaseUsage;
-  const tmp2 = str;
-  let obj = kvDatabaseUsage(str[11]);
-  const cResult = obj.c(25);
-  ({ report, metricKitSize, kvDatabaseUsage } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let obj2 = { caches: intl.string(tmp(tmp2[9]).t["2CKnsF"]), files: intl2.string(tmp(tmp2[9]).t["8Hvr3+"]), databases: intl3.string(tmp(tmp2[9]).t["9paF2r"]), shared_preferences: intl4.string(tmp(tmp2[9]).t["Y9/ijr"]), no_backup: intl5.string(tmp(tmp2[9]).t["lZWCZ+"]), code_cache: intl6.string(tmp(tmp2[9]).t.GN6kqM), external_files: intl7.string(tmp(tmp2[9]).t["6Ej9W0"]), external_caches: intl8.string(tmp(tmp2[9]).t.ZmaptE), documents: intl9.string(tmp(tmp2[9]).t.aE3Wbw), tmp: intl10.string(tmp(tmp2[9]).t.UQsNEK), application_support: intl11.string(tmp(tmp2[9]).t.DGQvlY), webkit: intl12.string(tmp(tmp2[9]).t.aIcsfw), library_other: intl13.string(tmp(tmp2[9]).t.U2f1ef), container_other: intl14.string(tmp(tmp2[9]).t.ZduI7f), app_group: intl15.string(tmp(tmp2[9]).t.rManeQ), share_extension: intl16.string(tmp(tmp2[9]).t.BEL9MJ), notification_service_extension: intl17.string(tmp(tmp2[9]).t.V46Edz), broadcast_upload_extension: intl18.string(tmp(tmp2[9]).t.BhYGtj), lockscreen_widget_extension: intl19.string(tmp(tmp2[9]).t.toGFBn) };
-    intl = tmp(tmp2[9]).intl;
-    intl2 = tmp(tmp2[9]).intl;
-    intl3 = tmp(tmp2[9]).intl;
-    intl4 = tmp(tmp2[9]).intl;
-    intl5 = tmp(tmp2[9]).intl;
-    intl6 = tmp(tmp2[9]).intl;
-    intl7 = tmp(tmp2[9]).intl;
-    intl8 = tmp(tmp2[9]).intl;
-    intl9 = tmp(tmp2[9]).intl;
-    intl10 = tmp(tmp2[9]).intl;
-    intl11 = tmp(tmp2[9]).intl;
-    intl12 = tmp(tmp2[9]).intl;
-    intl13 = tmp(tmp2[9]).intl;
-    intl14 = tmp(tmp2[9]).intl;
-    intl15 = tmp(tmp2[9]).intl;
-    intl16 = tmp(tmp2[9]).intl;
-    intl17 = tmp(tmp2[9]).intl;
-    intl18 = tmp(tmp2[9]).intl;
-    intl19 = tmp(tmp2[9]).intl;
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  let tmpResult = tmp(tmp2[15]);
-  str = "files";
-  if (tmpResult.isIOS()) {
-    str = "caches";
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl20 = tmp(tmp2[9]).intl;
-    const stringResult = intl20.string(tmp(tmp2[9]).t.O20zQi);
-    cResult[1] = stringResult;
-    tmp5 = stringResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  if (cResult[2] !== report.totalMeasuredBytes) {
-    const tmp9 = closure_10;
-    let obj3 = { label: tmp5, bytes: report.totalMeasuredBytes };
-    const tmp10 = closure_6(closure_10, obj3);
-    cResult[2] = report.totalMeasuredBytes;
-    cResult[3] = tmp10;
-    tmp7 = tmp10;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] !== metricKitSize) {
-    const tmpResult2 = tmp(tmp2[15]);
-    let isIOSResult = tmpResult2.isIOS();
-    if (isIOSResult) {
-      const obj4 = { label: intl21.string(tmp(tmp2[9]).t.VQKK5O), bytes: metricKitSize };
-      intl21 = tmp(tmp2[9]).intl;
-      isIOSResult = closure_6(closure_10, obj4);
-    }
-    cResult[4] = metricKitSize;
-    cResult[5] = isIOSResult;
-    tmp11 = isIOSResult;
-  } else {
-    tmp11 = cResult[5];
-  }
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj5 = { variant: "heading-sm/semibold", children: intl22.string(tmp(tmp2[9]).t.CoudPr) };
-    const Heading = tmp(tmp2[12]).Heading;
-    intl22 = tmp(tmp2[9]).intl;
-    const tmp17 = closure_6(Heading, obj5);
-    cResult[6] = tmp17;
-    tmp15 = tmp17;
-  } else {
-    tmp15 = cResult[6];
-  }
-  let free;
-  const tmp18 = cResult[7];
-  if (kvDatabaseUsage != null) {
-    free = kvDatabaseUsage.free;
-  }
-  if (tmp18 === free) {
-    let total;
-    const tmp20 = cResult[8];
-    if (kvDatabaseUsage != null) {
-      total = kvDatabaseUsage.total;
-    }
-    if (tmp20 === total) {
-      if (cResult[9] === report.roots) {
-        tmp22 = cResult[10];
-      }
-      if (cResult[14] === report.complete) {
-        if (cResult[15] === report.errorCount) {
-          let tmp33;
-          if (cResult[16] === report.unmeasuredRootCount) {
-            tmp33 = cResult[17];
-          }
-          if (cResult[18] === tmp22) {
-            let tmp36;
-            if (cResult[19] === tmp33) {
-              tmp36 = cResult[20];
-            }
-            if (cResult[21] === tmp7) {
-              if (cResult[22] === tmp11) {
-                let tmp39;
-                if (cResult[23] === tmp36) {
-                  tmp39 = cResult[24];
-                }
-                return tmp39;
-              }
-            }
-            const obj6 = { spacing: first(tmp2[5]).space.PX_16, children: items };
-            const Stack = tmp(tmp2[14]).Stack;
-            items = [tmp7, tmp11, tmp36];
-            const tmp42 = closure_7(Stack, obj6);
-            cResult[21] = tmp7;
-            cResult[22] = tmp11;
-            cResult[23] = tmp36;
-            cResult[24] = tmp42;
-            tmp39 = tmp42;
-          }
-          const obj7 = { children: items1 };
-          items1 = [tmp15, tmp22, tmp33];
-          const tmp38 = closure_7(tmp(tmp2[14]).Stack, obj7);
-          cResult[18] = tmp22;
-          cResult[19] = tmp33;
-          cResult[20] = tmp38;
-          tmp36 = tmp38;
-        }
-      }
-      const complete = report.complete;
-      let tmp34 = !complete;
-      if (complete) {
-        tmp34 = report.errorCount > 0;
-      }
-      if (!tmp34) {
-        tmp34 = report.unmeasuredRootCount > 0;
-      }
-      if (tmp34) {
-        const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl23.formatToPlainString(tmp(tmp2[9]).t.kt7tAT, obj10) };
-        const Text = tmp(tmp2[12]).Text;
-        intl23 = tmp(tmp2[9]).intl;
-        obj10 = { errors: null, unavailable: null };
-        ({ errorCount: obj9.errors, unmeasuredRootCount: obj9.unavailable } = report);
-        tmp34 = closure_6(Text, obj8);
-      }
-      cResult[14] = report.complete;
-      cResult[15] = report.errorCount;
-      cResult[16] = report.unmeasuredRootCount;
-      cResult[17] = tmp34;
-      tmp33 = tmp34;
-    }
-  }
-  let free1;
-  const tmp23 = cResult[11];
-  if (kvDatabaseUsage != null) {
-    free1 = kvDatabaseUsage.free;
-  }
-  if (tmp23 === free1) {
-    let tmp27;
-    let total1;
-    const tmp25 = cResult[12];
-    if (kvDatabaseUsage != null) {
-      total1 = kvDatabaseUsage.total;
-    }
-    if (tmp25 === total1) {
-      tmp27 = cResult[13];
-    }
-    const roots = report.roots;
-    const mapped = roots.map(tmp27);
-    let free2;
-    if (kvDatabaseUsage != null) {
-      free2 = kvDatabaseUsage.free;
-    }
-    cResult[7] = free2;
-    let total2;
-    if (kvDatabaseUsage != null) {
-      total2 = kvDatabaseUsage.total;
-    }
-    cResult[8] = total2;
-    cResult[9] = report.roots;
-    cResult[10] = mapped;
-    tmp22 = mapped;
-  }
-  let free3;
-  if (kvDatabaseUsage != null) {
-    free3 = kvDatabaseUsage.free;
-  }
-  cResult[11] = free3;
-  let total3;
-  if (kvDatabaseUsage != null) {
-    total3 = kvDatabaseUsage.total;
-  }
-  const fn = function k(root) {
-    let free;
-    let intl;
-    let intl2;
-    let total;
-    root = root.root;
-    let tmp4 = first[root];
-    const bytes = root.bytes;
-    const Fragment = react.Fragment;
-    if (tmp4 == null) {
-      tmp4 = root;
-    }
-    const children = [metroRequire(closure_10, { label: tmp4, bytes }), ];
-    let tmpResult = root === str;
-    if (tmpResult) {
-      const obj = { label: intl.string(intl24.t["He+1tx"]), bytes: total, indented: true };
-      intl = intl24.intl;
-      total = undefined;
-      const tmp6 = metroImportAll;
-      if (kvDatabaseUsage != null) {
-        total = tmp9.total;
-      }
-      const items1 = [metroRequire(closure_10, obj), ];
-      const obj2 = { label: intl2.string(intl24.t.UD3OKX), bytes: free, indented: true };
-      intl2 = tmp7(1125).intl;
-      free = undefined;
-      if (kvDatabaseUsage != null) {
-        free = tmp9.free;
-      }
-      const obj3 = { children: items1 };
-      items1[1] = metroRequire(closure_10, obj2);
-      tmpResult = tmp(tmp6, obj3);
-    }
-    children[1] = tmpResult;
-    return metroImportDefault(Fragment, { children }, root);
-  };
-  cResult[12] = total3;
-  cResult[13] = fn;
-  tmp27 = fn;
-}) : (function DiskUsageResults(metricKitSize) {
+}
+function DiskUsageResults(metricKitSize) {
   let intl;
   let intl10;
   let intl11;
@@ -457,23 +113,23 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     str = "caches";
   }
   let obj3 = { spacing: obj(tmp2[5]).space.PX_16, children: items };
-  const Stack = tmp(tmp2[14]).Stack;
+  const Stack = tmp(tmp2[10]).Stack;
   let tmp4 = closure_6;
   const obj4 = { label: intl20.string(tmp(str[9]).t.O20zQi), bytes: report.totalMeasuredBytes };
   intl20 = tmp(tmp2[9]).intl;
-  items = [closure_6(closure_10, obj4), , ];
-  let tmpResult = tmp(tmp2[15]);
+  items = [closure_6(SizeRow, obj4), , ];
+  let tmpResult = tmp(tmp2[13]);
   let isIOSResult = tmpResult.isIOS();
-  const tmp5 = closure_10;
+  const tmp5 = SizeRow;
   if (isIOSResult) {
     const obj5 = { label: intl21.string(tmp(str[9]).t.VQKK5O), bytes: metricKitSize };
     intl21 = tmp(tmp2[9]).intl;
     isIOSResult = tmp4(tmp5, obj5);
   }
   items[1] = isIOSResult;
-  const Stack2 = tmp(tmp2[14]).Stack;
+  const Stack2 = tmp(tmp2[10]).Stack;
   const obj6 = { variant: "heading-sm/semibold", children: intl22.string(tmp(str[9]).t.CoudPr) };
-  const Heading = tmp(tmp2[12]).Heading;
+  const Heading = tmp(tmp2[11]).Heading;
   intl22 = tmp(tmp2[9]).intl;
   let items1 = [tmp4(Heading, obj6), , ];
   const roots = report.roots;
@@ -489,7 +145,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
     if (tmp4 == null) {
       tmp4 = root;
     }
-    const children = [metroRequire(closure_10, { label: tmp4, bytes }), ];
+    const children = [metroRequire(SizeRow, { label: tmp4, bytes }), ];
     let tmpResult = root === str;
     if (tmpResult) {
       obj = { label: intl.string(intl24.t["He+1tx"]), bytes: total, indented: true };
@@ -499,15 +155,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
       if (require != null) {
         total = tmp9.total;
       }
-      const items1 = [metroRequire(closure_10, obj), ];
+      const items1 = [metroRequire(SizeRow, obj), ];
       const obj2 = { label: intl2.string(intl24.t.UD3OKX), bytes: free, indented: true };
-      intl2 = tmp7(1125).intl;
+      intl2 = tmp7(1114).intl;
       free = undefined;
       if (require != null) {
         free = tmp9.free;
       }
       const obj3 = { children: items1 };
-      items1[1] = metroRequire(closure_10, obj2);
+      items1[1] = metroRequire(SizeRow, obj2);
       tmpResult = tmp(tmp6, obj3);
     }
     children[1] = tmpResult;
@@ -523,7 +179,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
   }
   if (tmp4Result) {
     const obj7 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl23.formatToPlainString(tmp(str[9]).t.kt7tAT, obj8) };
-    const Text = tmp(tmp2[12]).Text;
+    const Text = tmp(tmp2[11]).Text;
     intl23 = tmp(tmp2[9]).intl;
     obj8 = { errors: null, unavailable: null };
     ({ errorCount: obj9.errors, unmeasuredRootCount: obj9.unavailable } = report);
@@ -532,132 +188,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function DiskUs
   items1[2] = tmp4Result;
   items[2] = closure_7(Stack2, { children: items1 });
   return closure_7(Stack, obj3);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActionsDiskUsageSection(arg0) {
-  let first;
-  let intl;
-  let intl2;
-  let intl3;
-  let items;
-  let items1;
-  let onDiagnosticsBusyChange;
-  let state;
-  let tmp10;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(20);
-  ({ state, onDiagnosticsBusyChange } = arg0);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: "heading-md/semibold", children: intl.string(intl24.t.m8BOpo) };
-    const Heading = tmp(5271).Heading;
-    intl = tmp(1125).intl;
-    const tmp6 = metroRequire(Heading, obj2);
-    cResult[0] = tmp6;
-    first = tmp6;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== state.status) {
-    let tmp8 = "loading" === state.status;
-    if (tmp8) {
-      const obj3 = { variant: "text-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-      const Text = tmp(5271).Text;
-      intl2 = tmp(1125).intl;
-      tmp8 = metroRequire(Text, obj3);
-    }
-    cResult[1] = state.status;
-    cResult[2] = tmp8;
-    tmp7 = tmp8;
-  } else {
-    tmp7 = cResult[2];
-  }
-  if (cResult[3] !== state.status) {
-    let tmp11 = "error" === state.status;
-    if (tmp11) {
-      const obj4 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-      const Text2 = tmp(5271).Text;
-      intl3 = tmp(1125).intl;
-      tmp11 = metroRequire(Text2, obj4);
-    }
-    cResult[3] = state.status;
-    cResult[4] = tmp11;
-    tmp10 = tmp11;
-  } else {
-    tmp10 = cResult[4];
-  }
-  if (cResult[5] === state.kvDatabaseUsage) {
-    if (cResult[6] === state.metricKitSize) {
-      if (cResult[7] === state.report) {
-        let tmp13;
-        if (cResult[8] === state.status) {
-          tmp13 = cResult[9];
-        }
-        if (cResult[10] === tmp7) {
-          if (cResult[11] === tmp10) {
-            let tmp17;
-            if (cResult[12] === tmp13) {
-              tmp17 = cResult[13];
-            }
-            if (cResult[14] === onDiagnosticsBusyChange) {
-              let tmp20;
-              if (cResult[15] === state.status) {
-                tmp20 = cResult[16];
-              }
-              if (cResult[17] === tmp17) {
-                let tmp24;
-                if (cResult[18] === tmp20) {
-                  tmp24 = cResult[19];
-                }
-                return tmp24;
-              }
-              const obj6 = { children: items };
-              items = [first, tmp17, tmp20];
-              const tmp26 = metroImportDefault(Stack_Stack.Stack, obj6);
-              cResult[17] = tmp17;
-              cResult[18] = tmp20;
-              cResult[19] = tmp26;
-              tmp24 = tmp26;
-            }
-            let isIOSResult = "success" === state.status;
-            if (isIOSResult) {
-              const tmpResult = PlatformUtils;
-              isIOSResult = tmpResult.isIOS();
-            }
-            if (isIOSResult) {
-              const obj7 = { onBusyChange: onDiagnosticsBusyChange };
-              isIOSResult = metroRequire(CacheActionsStorageDiagnosticsDefault, obj7);
-            }
-            cResult[14] = onDiagnosticsBusyChange;
-            cResult[15] = state.status;
-            cResult[16] = isIOSResult;
-            tmp20 = isIOSResult;
-          }
-        }
-        const obj8 = { children: items1 };
-        items1 = [tmp7, tmp10, tmp13];
-        const tmp19 = metroImportDefault(Card_Card.Card, obj8);
-        cResult[10] = tmp7;
-        cResult[11] = tmp10;
-        cResult[12] = tmp13;
-        cResult[13] = tmp19;
-        tmp17 = tmp19;
-      }
-    }
-  }
-  let tmp14 = "success" === state.status;
-  if (tmp14) {
-    const obj9 = { report: null, metricKitSize: null, kvDatabaseUsage: null };
-    ({ report: obj5.report, metricKitSize: obj5.metricKitSize, kvDatabaseUsage: obj5.kvDatabaseUsage } = state);
-    tmp14 = metroRequire(closure_11, obj9);
-  }
-  cResult[5] = state.kvDatabaseUsage;
-  cResult[6] = state.metricKitSize;
-  cResult[7] = state.report;
-  cResult[8] = state.status;
-  cResult[9] = tmp14;
-  tmp13 = tmp14;
-}) : (function CacheActionsDiskUsageSection(state) {
+}
+let Fragment = Fragment_mod;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let obj = { label: { flex: 1 }, nestedLabel: obj2, value: { flexShrink: 1 } };
+obj2 = { flex: 1, paddingLeft: nativeDefault.space.PX_16 };
+let closure_9 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsDiskUsageSection.tsx");
+
+export default function CacheActionsDiskUsageSection(state) {
   let intl;
   let intl2;
   let intl3;
@@ -672,16 +211,16 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   const Card = Card_Card.Card;
   if (tmp4Result) {
     const obj2 = { variant: "text-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-    const Text = tmp2(5271).Text;
-    intl2 = tmp2(1125).intl;
+    const Text = tmp2(5619).Text;
+    intl2 = tmp2(1114).intl;
     tmp4Result = tmp4(Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result3 = "error" === state.status;
   if (tmp4Result3) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-    const Text2 = tmp2(5271).Text;
-    intl3 = tmp2(1125).intl;
+    const Text2 = tmp2(5619).Text;
+    intl3 = tmp2(1114).intl;
     tmp4Result3 = tmp4(Text2, obj3);
   }
   items1[1] = tmp4Result3;
@@ -689,7 +228,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   if (tmp4Result4) {
     const obj5 = { report: null, metricKitSize: null, kvDatabaseUsage: null };
     ({ report: obj4.report, metricKitSize: obj4.metricKitSize, kvDatabaseUsage: obj4.kvDatabaseUsage } = state);
-    tmp4Result4 = tmp4(closure_11, obj5);
+    tmp4Result4 = tmp4(DiskUsageResults, obj5);
   }
   items1[2] = tmp4Result4;
   children[1] = metroImportDefault(Card, { children: items1 });
@@ -704,10 +243,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function CacheActio
   }
   children[2] = isIOSResult;
   return metroImportDefault(Stack, { children });
-});
-const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsDiskUsageSection.tsx");
-
-export default tmp3;
+};
 export function useDiskUsageMeasurement() {
   let status;
   let tmp2;
@@ -724,7 +260,7 @@ export function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp43;
@@ -837,7 +373,7 @@ export function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp43) {
           if (0 === c3) {
             c5 = 3;

@@ -1,10 +1,10 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10164
+// Function ID: 10165
 // Name: openConversationFocusLink
-// Dependencies: [5, 10138, 9808, 2000, 2]
+// Dependencies: [5, 10165, 9834, 1995, 2]
 // Exports: default
 
-// Module 10137 (openConversationFocusLink)
+// Module 10164 (openConversationFocusLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _openConversationFocusLink() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -50,7 +50,7 @@ let obj = function _openConversationFocusLink() {
               ({ guildId: c0, channelId: c1, conversationId: c2, messageId: c3 } = closure_0);
               messageId = 1;
               c4 = 1;
-              return { value: "Reflect", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === messageId) {
             if (arg0 === 1) {
@@ -92,7 +92,7 @@ let obj = function _openConversationFocusLink() {
               const result = value.openConversationNavigator(obj);
             }
             c4 = 3;
-            return { value: "IconComponent", done: "IconComponent" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = 3;

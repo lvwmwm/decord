@@ -1,30 +1,29 @@
-// Module ID: 14081
-// Function ID: 14082
+// Module ID: 14229
+// Function ID: 14230
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 14078, 7133, 1084, 21, 5005, 5305, 587, 558, 576, 1125, 5271, 1503, 1631, 14053, 1264, 5281, 14082, 13683, 7047, 7281, 2]
+// Dependencies: [32, 19, 17, 14226, 7141, 1072, 21, 5009, 5581, 575, 5619, 1114, 1498, 1626, 5629, 14201, 1253, 13822, 14230, 7286, 7054, 2]
+// Exports: default
 
-// Module 14081 (GuildTemplates)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl4 from "intl" /* 1125 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import NavigatorConstants from "NavigatorConstants" /* 5305 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 13683 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14053 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 14082 */;
+// Module 14229 (GuildTemplates)
+import nativeDefault from "native" /* 575 */;
+import intl4 from "intl" /* 1114 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import NavigatorConstants from "NavigatorConstants" /* 5581 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 13822 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14201 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 14230 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 14078 */;
-import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7133 */;
-import Constants from "Constants" /* 1084 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 14226 */;
+import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7141 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, navigation;
+let dependencyMap;
 
 let c10;
 let c9;
@@ -41,89 +40,7 @@ let obj3;
 let obj4;
 let obj5;
 let unpackModuleId;
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
-let CreateGuildConstants = CreateGuildConstants_mod2;
-({ getGuildTemplatesMap: metroImportDefault, GuildTemplateId: metroImportAll } = CreateGuildConstants);
-CreateGuildConstants = CreateGuildConstants_mod2;
-({ CreateGuildModalStates: c9, GuildTemplateTriggers: c10, NUXGuildTemplatesAnalytics: unpackModuleId } = CreateGuildConstants);
-({ AnalyticEvents: closure_12, AnalyticsLocations: map1 } = Constants);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { flex: { flex: 1 }, contentContainer: obj2, scrollContainer: obj3, sections: obj4, headerContainer: { alignItems: "center", paddingTop: 20, paddingBottom: 20, paddingHorizontal: 16 }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center" }, footerSafeAreaContainer: obj5, footerContainer: { padding: 16, gap: 16, minHeight: 110, justifyContent: "center" }, footerTitle: { alignSelf: "center", textAlign: "center" } };
-obj2 = { marginTop: NavigatorConstants.NAV_BAR_HEIGHT };
-createStyles = createStyles.createStyles;
-obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING, gap: 24 };
-obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
-let closure_16 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplatesHeader() {
-  let first;
-  let headerContainer;
-  let headerTitle;
-  let items;
-  let tmp10;
-  let tmp12;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(10);
-  const tmp4 = closure_16();
-  ({ headerContainer, headerTitle } = tmp4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl4.t["5HZu07"]);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== tmp4.headerTitle) {
-    const obj2 = { style: headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: first };
-    const tmp9 = syncedClientThemes(Text_Text.Text, obj2);
-    cResult[1] = tmp4.headerTitle;
-    cResult[2] = tmp9;
-    tmp7 = tmp9;
-  } else {
-    tmp7 = cResult[2];
-  }
-  const headerDescription = tmp4.headerDescription;
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl4.t["/k/L/j"]);
-    cResult[3] = stringResult1;
-    tmp10 = stringResult1;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] !== tmp4.headerDescription) {
-    const obj3 = { style: headerDescription, variant: "text-sm/medium", color: "text-default", children: tmp10 };
-    const tmp14 = syncedClientThemes(Text_Text.Text, obj3);
-    cResult[4] = tmp4.headerDescription;
-    cResult[5] = tmp14;
-    tmp12 = tmp14;
-  } else {
-    tmp12 = cResult[5];
-  }
-  if (cResult[6] === tmp4.headerContainer) {
-    if (cResult[7] === tmp7) {
-      let tmp15;
-      if (cResult[8] === tmp12) {
-        tmp15 = cResult[9];
-      }
-      return tmp15;
-    }
-  }
-  const obj4 = { style: headerContainer, children: items };
-  items = [tmp7, tmp12];
-  const tmp16 = closure_15(hasOwnProperty, obj4);
-  cResult[6] = tmp4.headerContainer;
-  cResult[7] = tmp7;
-  cResult[8] = tmp12;
-  cResult[9] = tmp16;
-  tmp15 = tmp16;
-}) : (function GuildTemplatesHeader() {
+function GuildTemplatesHeader() {
   let intl;
   let intl2;
   let items;
@@ -132,173 +49,14 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const obj2 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["5HZu07"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
-  items = [syncedClientThemes(Text, obj2), ];
+  items = [authStore3(Text, obj2), ];
   const obj3 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl4.t["/k/L/j"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
-  items[1] = syncedClientThemes(Text2, obj3);
+  items[1] = authStore3(Text2, obj3);
   return closure_15(hasOwnProperty, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplatesJoinFooter(trigger) {
-  let footerContainer;
-  let footerTitle;
-  let items;
-  let obj3;
-  let tmp6;
-  const tmp = trigger;
-  const tmp2 = navigation;
-  let obj = trigger(navigation[11]);
-  const cResult = obj.c(26);
-  trigger = trigger.trigger;
-  const onHeightChange = trigger.onHeightChange;
-  const tmp4 = closure_16();
-  let obj2 = trigger(navigation[14]);
-  navigation = obj2.useNavigation();
-  const bottom = onHeightChange(navigation[15])().bottom;
-  if (cResult[0] !== trigger) {
-    let stringResult;
-    if (trigger === constants3.NUF) {
-      const intl2 = tmp(tmp2[12]).intl;
-      stringResult = intl2.string(tmp(tmp2[12]).t.INo2NK);
-    } else {
-      const intl = tmp(tmp2[12]).intl;
-      stringResult = intl.string(tmp(tmp2[12]).t.riOUtB);
-    }
-    cResult[0] = trigger;
-    cResult[1] = stringResult;
-    tmp6 = stringResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] !== onHeightChange) {
-    class G {
-      constructor(nativeEvent) {
-        onHeightChange(nativeEvent.nativeEvent.layout.height);
-      }
-    }
-    cResult[2] = onHeightChange;
-    cResult[3] = G;
-  } else {
-    class G {
-      constructor(nativeEvent) {
-        onHeightChange(nativeEvent.nativeEvent.layout.height);
-      }
-    }
-  }
-  if (cResult[4] !== bottom) {
-    class G {
-      constructor(nativeEvent) {
-        onHeightChange(nativeEvent.nativeEvent.layout.height);
-      }
-    }
-    tmp11[0] = bottom;
-    cResult[4] = bottom;
-    cResult[5] = tmp11;
-  } else {
-    class G {
-      constructor(nativeEvent) {
-        onHeightChange(nativeEvent.nativeEvent.layout.height);
-      }
-    }
-  }
-  if (cResult[6] === tmp4.footerSafeAreaContainer) {
-    let tmp13;
-    class G {
-      constructor(nativeEvent) {
-        onHeightChange(nativeEvent.nativeEvent.layout.height);
-      }
-    }
-    const _Symbol = Symbol;
-    ({ footerContainer, footerTitle } = tmp4);
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      class G {
-        constructor(nativeEvent) {
-          onHeightChange(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-      const stringResult1 = obj3.string(tmp(tmp2[12]).t["N+Mi/U"]);
-      cResult[9] = stringResult1;
-      tmp13 = stringResult1;
-    } else {
-      class G {
-        constructor(nativeEvent) {
-          onHeightChange(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-    }
-    if (cResult[10] !== tmp4.footerTitle) {
-      class G {
-        constructor(nativeEvent) {
-          onHeightChange(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-      let obj4 = { style: footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: tmp13 };
-      cResult[10] = tmp4.footerTitle;
-      cResult[11] = closure_14(tmp(tmp2[13]).Text, obj4);
-      const tmp16 = closure_14(tmp(tmp2[13]).Text, obj4);
-    } else {
-      class G {
-        constructor(nativeEvent) {
-          onHeightChange(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-    }
-    if (cResult[12] === navigation) {
-      class G {
-        constructor(nativeEvent) {
-          onHeightChange(nativeEvent.nativeEvent.layout.height);
-        }
-      }
-      if (cResult[15] === tmp17) {
-        class G {
-          constructor(nativeEvent) {
-            onHeightChange(nativeEvent.nativeEvent.layout.height);
-          }
-        }
-        if (cResult[18] === tmp4.footerContainer) {
-          class G {
-            constructor(nativeEvent) {
-              onHeightChange(nativeEvent.nativeEvent.layout.height);
-            }
-          }
-        }
-        const obj5 = { style: footerContainer, children: items };
-        items = [tmp15, tmp18];
-        cResult[18] = tmp4.footerContainer;
-        cResult[19] = tmp18;
-        cResult[20] = tmp15;
-        cResult[21] = closure_15(closure_5, obj5);
-        const tmp24 = closure_15(closure_5, obj5);
-      }
-      const obj6 = { variant: "primary", grow: true, text: tmp6, onPress: tmp17 };
-      cResult[15] = tmp17;
-      cResult[16] = tmp6;
-      cResult[17] = closure_14(tmp(tmp2[18]).Button, obj6);
-      const tmp20 = closure_14(tmp(tmp2[18]).Button, obj6);
-    }
-    const fn = function v() {
-      if (constants2.NUF === trigger) {
-        const obj = NewUserAnalyticsUtils;
-        obj.trackNUFStep(unpackModuleId.STEP_GUILD_TEMPLATE, unpackModuleId.STEP_GUILD_JOIN, { skip: false });
-        const obj2 = AnalyticsUtilsDefault;
-        obj2.track(constants3.JOIN_GUILD_VIEWED);
-      } else if (tmp2.IN_APP === tmp) {
-        const obj4 = { location_section: map1.CREATE_JOIN_GUILD_MODAL };
-        const obj3 = AnalyticsUtilsDefault;
-        obj3.track(constants3.JOIN_GUILD_VIEWED, obj4);
-      }
-      navigation.push(constants.JOIN_SERVER, {});
-    };
-    cResult[12] = navigation;
-    cResult[13] = trigger;
-    cResult[14] = fn;
-  }
-  const items1 = [tmp4.footerSafeAreaContainer, tmp10];
-  cResult[6] = tmp4.footerSafeAreaContainer;
-  cResult[7] = tmp10;
-  cResult[8] = items1;
-}) : (function GuildTemplatesJoinFooter(trigger) {
+}
+function GuildTemplatesJoinFooter(trigger) {
   let closure_2;
   let intl3;
   let items1;
@@ -309,15 +67,15 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   const onHeightChange = trigger.onHeightChange;
   const tmp = closure_16();
   const tmp2 = trigger;
-  let obj = trigger(1503);
+  let obj = trigger(1498);
   dependencyMap = obj.useNavigation();
-  const bottom = onHeightChange(1631)().bottom;
+  const bottom = onHeightChange(1626)().bottom;
   if (trigger === constants3.NUF) {
-    const intl2 = tmp2(1125).intl;
-    stringResult = intl2.string(tmp2(1125).t.INo2NK);
+    const intl2 = tmp2(1114).intl;
+    stringResult = intl2.string(tmp2(1114).t.INo2NK);
   } else {
-    const intl = tmp2(1125).intl;
-    stringResult = intl.string(tmp2(1125).t.riOUtB);
+    const intl = tmp2(1114).intl;
+    stringResult = intl.string(tmp2(1114).t.riOUtB);
   }
   const items = [onHeightChange];
   let obj2 = {
@@ -329,9 +87,9 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
   };
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
-  let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1125).t["N+Mi/U"]) };
-  const Text = tmp2(5271).Text;
-  intl3 = tmp2(1125).intl;
+  let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1114).t["N+Mi/U"]) };
+  const Text = tmp2(5619).Text;
+  intl3 = tmp2(1114).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
     variant: "primary",
@@ -351,46 +109,10 @@ let closure_18 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5281).Button, obj5);
+  items2[1] = closure_14(tmp2(5629).Button, obj5);
   return closure_14(closure_5, obj2);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplatesItem(guildTemplate) {
-  const obj = react2;
-  const cResult = obj.c(7);
-  guildTemplate = guildTemplate.guildTemplate;
-  const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
-  const tmp3 = CreateGuildIcons.GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id];
-  if (cResult[0] === guildTemplate) {
-    let tmp4;
-    if (cResult[1] === onGuildTemplatePress) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[3] === guildTemplate.label) {
-      if (cResult[4] === tmp3) {
-        let tmp5;
-        if (cResult[5] === tmp4) {
-          tmp5 = cResult[6];
-        }
-        return tmp5;
-      }
-    }
-    const obj2 = { Icon: tmp3, message: guildTemplate.label, onPress: tmp4 };
-    const tmp8 = syncedClientThemes(ListSelectionItemDefault, obj2);
-    cResult[3] = guildTemplate.label;
-    cResult[4] = tmp3;
-    cResult[5] = tmp4;
-    cResult[6] = tmp8;
-    tmp5 = tmp8;
-  }
-  const fn = function l() {
-    return onGuildTemplatePress(guildTemplate);
-  };
-  cResult[0] = guildTemplate;
-  cResult[1] = onGuildTemplatePress;
-  cResult[2] = fn;
-  tmp4 = fn;
-}) : (function GuildTemplatesItem(guildTemplate) {
+}
+function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = {
@@ -401,340 +123,28 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildT
     }
   };
   const tmp = ListSelectionItemDefault;
-  return syncedClientThemes(tmp, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplates(trigger) {
-  let closure_4;
-  let flex;
-  let fromStep;
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let obj17;
-  let scrollContainer;
-  const tmp = trigger;
-  const tmp2 = fromStep;
-  let obj = trigger(fromStep[11]);
-  const cResult = obj.c(62);
-  trigger = trigger.trigger;
-  const _location = trigger.location;
-  fromStep = trigger.fromStep;
-  const tmp4 = closure_16();
-  const bottom = _location(fromStep[15])().bottom;
-  let obj2 = trigger(fromStep[14]);
-  navigation = obj2.useNavigation();
-  if (cResult[0] === fromStep) {
-    if (cResult[1] === _location) {
-      let tmp6;
-      let tmp7;
-      if (cResult[2] === trigger) {
-        tmp6 = cResult[3];
-        tmp7 = cResult[4];
-      }
-      let obj3 = react;
-      const effect = react.useEffect(tmp6, tmp7);
-      if (cResult[5] === navigation) {
-        let tmp9;
-        let tmp11;
-        let tmp18;
-        if (cResult[6] === trigger) {
-          tmp9 = cResult[7];
-        }
-        const _Symbol = Symbol;
-        let str = "react.memo_cache_sentinel";
-        if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-          const tmp13 = closure_7();
-          cResult[8] = tmp13;
-          tmp11 = tmp13;
-        } else {
-          tmp11 = cResult[8];
-        }
-        const first = navigation(obj3.useState(tmp11), 1)[0];
-        const tmp16 = navigation(obj3.useState(110), 2);
-        react = tmp16[1];
-        const _Symbol2 = Symbol;
-        const first1 = tmp16[0];
-        if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-          const fn2 = function k(arg0) {
-            closure_4(arg0);
-          };
-          cResult[9] = fn2;
-          tmp18 = fn2;
-        } else {
-          tmp18 = cResult[9];
-        }
-        const sum = first1 + bottom + 16;
-        if (cResult[10] === tmp4.contentContainer) {
-          let tmp20;
-          let tmp21;
-          let tmp22;
-          if (cResult[11] === tmp4.flex) {
-            tmp20 = cResult[12];
-          }
-          ({ flex, scrollContainer } = tmp4);
-          if (cResult[13] !== sum) {
-            const obj4 = { paddingBottom: sum };
-            cResult[13] = sum;
-            cResult[14] = obj4;
-            tmp21 = obj4;
-          } else {
-            tmp21 = cResult[14];
-          }
-          const _Symbol3 = Symbol;
-          if (cResult[15] === Symbol.for("react.memo_cache_sentinel")) {
-            const tmp25 = closure_14(closure_17, {});
-            cResult[15] = tmp25;
-            tmp22 = tmp25;
-          } else {
-            tmp22 = cResult[15];
-          }
-          if (cResult[16] === tmp9) {
-            let tmp29;
-            let tmp33;
-            if (cResult[17] === first[constants.CREATE]) {
-              tmp29 = cResult[18];
-            }
-            const _Symbol4 = Symbol;
-            if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl = tmp(tmp2[12]).intl;
-              const stringResult = intl.string(tmp(tmp2[12]).t.JGDkfg);
-              cResult[19] = stringResult;
-              tmp33 = stringResult;
-            } else {
-              tmp33 = cResult[19];
-            }
-            if (cResult[20] === tmp9) {
-              let tmp36;
-              if (cResult[21] === first[constants.GAMING]) {
-                tmp36 = cResult[22];
-              }
-              if (cResult[23] === tmp9) {
-                let tmp41;
-                if (cResult[24] === first[constants.SCHOOL_CLUB]) {
-                  tmp41 = cResult[25];
-                }
-                if (cResult[26] === tmp9) {
-                  let tmp46;
-                  if (cResult[27] === first[constants.STUDY]) {
-                    tmp46 = cResult[28];
-                  }
-                  if (cResult[29] === tmp9) {
-                    let tmp51;
-                    if (cResult[30] === first[constants.FRIENDS]) {
-                      tmp51 = cResult[31];
-                    }
-                    if (cResult[32] === tmp9) {
-                      let tmp56;
-                      if (cResult[33] === first[constants.CREATORS]) {
-                        tmp56 = cResult[34];
-                      }
-                      if (cResult[35] === tmp9) {
-                        let tmp61;
-                        if (cResult[36] === first[constants.LOCAL_COMMUNITY]) {
-                          tmp61 = cResult[37];
-                        }
-                        if (cResult[38] === tmp36) {
-                          if (cResult[39] === tmp41) {
-                            if (cResult[40] === tmp46) {
-                              if (cResult[41] === tmp51) {
-                                if (cResult[42] === tmp56) {
-                                  let tmp65;
-                                  if (cResult[43] === tmp61) {
-                                    tmp65 = cResult[44];
-                                  }
-                                  if (cResult[45] === tmp4.sections) {
-                                    if (cResult[46] === tmp29) {
-                                      let tmp68;
-                                      if (cResult[47] === tmp65) {
-                                        tmp68 = cResult[48];
-                                      }
-                                      if (cResult[49] === tmp4.scrollContainer) {
-                                        if (cResult[50] === tmp68) {
-                                          let tmp72;
-                                          let tmp76;
-                                          if (cResult[51] === tmp21) {
-                                            tmp72 = cResult[52];
-                                          }
-                                          if (cResult[53] !== trigger) {
-                                            const obj5 = { trigger, onHeightChange: tmp18 };
-                                            const tmp79 = closure_14(closure_18, obj5);
-                                            cResult[53] = trigger;
-                                            cResult[54] = tmp79;
-                                            tmp76 = tmp79;
-                                          } else {
-                                            tmp76 = cResult[54];
-                                          }
-                                          if (cResult[55] === tmp4.flex) {
-                                            if (cResult[56] === tmp72) {
-                                              let tmp80;
-                                              if (cResult[57] === tmp76) {
-                                                tmp80 = cResult[58];
-                                              }
-                                              if (cResult[59] === tmp80) {
-                                                let tmp84;
-                                                if (cResult[60] === tmp20) {
-                                                  tmp84 = cResult[61];
-                                                }
-                                                return tmp84;
-                                              }
-                                              const rect = { top: true, left: true, right: true, style: tmp20, children: tmp80 };
-                                              const tmp86 = closure_14(tmp(tmp2[22]).SafeAreaPaddingView, rect);
-                                              cResult[59] = tmp80;
-                                              cResult[60] = tmp20;
-                                              cResult[61] = tmp86;
-                                              tmp84 = tmp86;
-                                            }
-                                          }
-                                          const obj6 = { style: flex, children: items };
-                                          items = [tmp72, tmp76];
-                                          const tmp83 = closure_15(closure_5, obj6);
-                                          cResult[55] = tmp4.flex;
-                                          cResult[56] = tmp72;
-                                          cResult[57] = tmp76;
-                                          cResult[58] = tmp83;
-                                          tmp80 = tmp83;
-                                        }
-                                      }
-                                      const obj7 = { style: scrollContainer, contentContainerStyle: tmp21, children: items1 };
-                                      items1 = [tmp22, tmp68];
-                                      const tmp75 = closure_15(closure_6, obj7);
-                                      cResult[49] = tmp4.scrollContainer;
-                                      cResult[50] = tmp68;
-                                      cResult[51] = tmp21;
-                                      cResult[52] = tmp75;
-                                      tmp72 = tmp75;
-                                    }
-                                  }
-                                  const obj8 = { style: tmp26, children: items2 };
-                                  items2 = [tmp29, tmp65];
-                                  const tmp71 = closure_15(closure_5, obj8);
-                                  cResult[45] = tmp4.sections;
-                                  cResult[46] = tmp29;
-                                  cResult[47] = tmp65;
-                                  cResult[48] = tmp71;
-                                  tmp68 = tmp71;
-                                }
-                              }
-                            }
-                          }
-                        }
-                        const obj9 = { title: tmp33, hasIcons: true, children: items3 };
-                        items3 = [tmp36, tmp41, tmp46, tmp51, tmp56, tmp61];
-                        const tmp67 = closure_15(tmp(tmp2[21]).TableRowGroup, obj9);
-                        cResult[38] = tmp36;
-                        cResult[39] = tmp41;
-                        cResult[40] = tmp46;
-                        cResult[41] = tmp51;
-                        cResult[42] = tmp56;
-                        cResult[43] = tmp61;
-                        cResult[44] = tmp67;
-                        tmp65 = tmp67;
-                      }
-                      const obj10 = { guildTemplate: first[constants.LOCAL_COMMUNITY], onGuildTemplatePress: tmp9 };
-                      const tmp64 = closure_14(closure_19, obj10);
-                      cResult[35] = tmp9;
-                      cResult[36] = first[constants.LOCAL_COMMUNITY];
-                      cResult[37] = tmp64;
-                      tmp61 = tmp64;
-                    }
-                    const obj11 = { guildTemplate: first[constants.CREATORS], onGuildTemplatePress: tmp9 };
-                    const tmp59 = closure_14(closure_19, obj11);
-                    cResult[32] = tmp9;
-                    cResult[33] = first[constants.CREATORS];
-                    cResult[34] = tmp59;
-                    tmp56 = tmp59;
-                  }
-                  const obj12 = { guildTemplate: first[constants.FRIENDS], onGuildTemplatePress: tmp9 };
-                  const tmp54 = closure_14(closure_19, obj12);
-                  cResult[29] = tmp9;
-                  cResult[30] = first[constants.FRIENDS];
-                  cResult[31] = tmp54;
-                  tmp51 = tmp54;
-                }
-                const obj13 = { guildTemplate: first[constants.STUDY], onGuildTemplatePress: tmp9 };
-                const tmp49 = closure_14(closure_19, obj13);
-                cResult[26] = tmp9;
-                cResult[27] = first[constants.STUDY];
-                cResult[28] = tmp49;
-                tmp46 = tmp49;
-              }
-              const obj14 = { guildTemplate: first[constants.SCHOOL_CLUB], onGuildTemplatePress: tmp9 };
-              const tmp44 = closure_14(closure_19, obj14);
-              cResult[23] = tmp9;
-              cResult[24] = first[constants.SCHOOL_CLUB];
-              cResult[25] = tmp44;
-              tmp41 = tmp44;
-            }
-            const obj15 = { guildTemplate: first[constants.GAMING], onGuildTemplatePress: tmp9 };
-            const tmp39 = closure_14(closure_19, obj15);
-            cResult[20] = tmp9;
-            cResult[21] = first[constants.GAMING];
-            cResult[22] = tmp39;
-            tmp36 = tmp39;
-          }
-          const obj16 = { hasIcons: true, children: closure_14(closure_19, obj17) };
-          obj17 = { guildTemplate: first[constants.CREATE], onGuildTemplatePress: tmp9 };
-          const TableRowGroup = tmp(tmp2[21]).TableRowGroup;
-          const tmp32 = closure_14(TableRowGroup, obj16);
-          cResult[16] = tmp9;
-          cResult[17] = first[constants.CREATE];
-          cResult[18] = tmp32;
-          tmp29 = tmp32;
-        }
-        const items4 = [, ];
-        ({ flex: arr2[0], contentContainer: arr2[1] } = tmp4);
-        cResult[10] = tmp4.contentContainer;
-        cResult[11] = tmp4.flex;
-        cResult[12] = items4;
-        tmp20 = items4;
-      }
-      function onGuildTemplatePress(guildTemplate) {
-        const obj = { guildTemplate, trigger };
-        navigation.push(constants.CREATION_INTENT, obj);
-        if (trigger === constants2.IN_APP) {
-          const obj3 = { template_name: guildTemplate.id };
-          const obj2 = AnalyticsUtilsDefault;
-          obj2.track(constants3.GUILD_TEMPLATE_SELECTED, obj3);
-        }
-      }
-      cResult[5] = navigation;
-      cResult[6] = trigger;
-      cResult[7] = onGuildTemplatePress;
-      tmp9 = onGuildTemplatePress;
-    }
-  }
-  const fn = function c() {
-    if (constants2.NUF === trigger) {
-      let STEP_REGISTRATION = fromStep;
-      const trackNUFStep = NewUserAnalyticsUtils.trackNUFStep;
-      NewUserAnalyticsUtils;
-      if (fromStep == null) {
-        STEP_REGISTRATION = unpackModuleId.STEP_REGISTRATION;
-      }
-      trackNUFStep(STEP_REGISTRATION, unpackModuleId.STEP_GUILD_TEMPLATE, { skip: false });
-    } else if (tmp2.IN_APP === tmp) {
-      let str = _location;
-      const track = AnalyticsUtilsDefault.track;
-      const OPEN_MODAL = constants3.OPEN_MODAL;
-      AnalyticsUtilsDefault;
-      if (_location == null) {
-        str = "Guild List";
-      }
-      const obj = { type: "Create Guild Templates", source: str };
-      track(OPEN_MODAL, obj);
-    }
-  };
-  const items5 = [trigger, _location, fromStep];
-  cResult[0] = fromStep;
-  cResult[1] = _location;
-  cResult[2] = trigger;
-  cResult[3] = fn;
-  cResult[4] = items5;
-  tmp7 = items5;
-  tmp6 = fn;
-}) : (function GuildTemplates(trigger) {
+  return authStore3(tmp, obj);
+}
+let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
+({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
+let CreateGuildConstants = CreateGuildConstants_mod2;
+({ getGuildTemplatesMap: metroImportDefault, GuildTemplateId: metroImportAll } = CreateGuildConstants);
+CreateGuildConstants = CreateGuildConstants_mod2;
+({ CreateGuildModalStates: c9, GuildTemplateTriggers: c10, NUXGuildTemplatesAnalytics: unpackModuleId } = CreateGuildConstants);
+({ AnalyticEvents: closure_12, AnalyticsLocations: map1 } = Constants);
+({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { flex: { flex: 1 }, contentContainer: obj2, scrollContainer: obj3, sections: obj4, headerContainer: { alignItems: "center", paddingTop: 20, paddingBottom: 20, paddingHorizontal: 16 }, headerTitle: { textAlign: "center", marginBottom: 8 }, headerDescription: { lineHeight: 18, textAlign: "center" }, footerSafeAreaContainer: obj5, footerContainer: { padding: 16, gap: 16, minHeight: 110, justifyContent: "center" }, footerTitle: { alignSelf: "center", textAlign: "center" } };
+obj2 = { marginTop: NavigatorConstants.NAV_BAR_HEIGHT };
+createStyles = createStyles.createStyles;
+obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+obj4 = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING, gap: 24 };
+obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, position: "absolute", bottom: 0, width: "100%" };
+let closure_16 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/create_guild/native/components/GuildTemplates.tsx");
+
+export default function GuildTemplates(trigger) {
   let _undefined;
   let c4;
   let closure_3;
@@ -762,8 +172,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
     }
   }
   const tmp = closure_16();
-  const bottom = _location(fromStep[15])().bottom;
-  let obj = trigger(fromStep[14]);
+  const bottom = _location(fromStep[13])().bottom;
+  let obj = trigger(fromStep[12]);
   _slicedToArray = obj.useNavigation();
   const items = [trigger, _location, fromStep];
   const effect = react.useEffect(() => {
@@ -799,34 +209,31 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildTemplat
   obj2 = { style: tmp.flex, children: items5 };
   let obj3 = { style: tmp.scrollContainer, contentContainerStyle: obj4, children: items2 };
   obj4 = { paddingBottom: tmp5 + bottom + 16 };
-  const SafeAreaPaddingView = trigger(fromStep[22]).SafeAreaPaddingView;
-  items2 = [closure_14(closure_17, {}), ];
+  const SafeAreaPaddingView = trigger(fromStep[19]).SafeAreaPaddingView;
+  items2 = [closure_14(GuildTemplatesHeader, {}), ];
   const obj5 = { style: tmp.sections, children: items3 };
-  const obj6 = { hasIcons: true, children: closure_14(closure_19, obj7) };
+  const obj6 = { hasIcons: true, children: closure_14(GuildTemplatesItem, obj7) };
   obj7 = { guildTemplate: first[constants.CREATE], onGuildTemplatePress };
-  const TableRowGroup = trigger(fromStep[21]).TableRowGroup;
+  const TableRowGroup = trigger(fromStep[20]).TableRowGroup;
   items3 = [closure_14(TableRowGroup, obj6), ];
-  const obj8 = { title: intl.string(trigger(fromStep[12]).t.JGDkfg), hasIcons: true, children: items4 };
-  const TableRowGroup2 = trigger(fromStep[21]).TableRowGroup;
-  intl = trigger(fromStep[12]).intl;
+  const obj8 = { title: intl.string(trigger(fromStep[11]).t.JGDkfg), hasIcons: true, children: items4 };
+  const TableRowGroup2 = trigger(fromStep[20]).TableRowGroup;
+  intl = trigger(fromStep[11]).intl;
   items4 = [, , , , , ];
   const obj9 = { guildTemplate: first[constants.GAMING], onGuildTemplatePress };
-  items4[0] = closure_14(closure_19, obj9);
+  items4[0] = closure_14(GuildTemplatesItem, obj9);
   const obj10 = { guildTemplate: first[constants.SCHOOL_CLUB], onGuildTemplatePress };
-  items4[1] = closure_14(closure_19, obj10);
+  items4[1] = closure_14(GuildTemplatesItem, obj10);
   const obj11 = { guildTemplate: first[constants.STUDY], onGuildTemplatePress };
-  items4[2] = closure_14(closure_19, obj11);
+  items4[2] = closure_14(GuildTemplatesItem, obj11);
   const obj12 = { guildTemplate: first[constants.FRIENDS], onGuildTemplatePress };
-  items4[3] = closure_14(closure_19, obj12);
+  items4[3] = closure_14(GuildTemplatesItem, obj12);
   const obj13 = { guildTemplate: first[constants.CREATORS], onGuildTemplatePress };
-  items4[4] = closure_14(closure_19, obj13);
+  items4[4] = closure_14(GuildTemplatesItem, obj13);
   const obj14 = { guildTemplate: first[constants.LOCAL_COMMUNITY], onGuildTemplatePress };
-  items4[5] = closure_14(closure_19, obj14);
+  items4[5] = closure_14(GuildTemplatesItem, obj14);
   items3[1] = closure_15(TableRowGroup2, obj8);
   items2[1] = closure_15(closure_5, obj5);
-  items5 = [closure_15(closure_6, obj3), closure_14(closure_18, { trigger, onHeightChange: callback })];
+  items5 = [closure_15(closure_6, obj3), closure_14(GuildTemplatesJoinFooter, { trigger, onHeightChange: callback })];
   return closure_14(SafeAreaPaddingView, rect);
-});
-const result = size.fileFinishedImporting("modules/create_guild/native/components/GuildTemplates.tsx");
-
-export default tmp8;
+};

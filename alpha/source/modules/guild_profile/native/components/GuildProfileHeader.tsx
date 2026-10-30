@@ -1,25 +1,25 @@
-// Module ID: 9269
-// Function ID: 9270
+// Module ID: 9283
+// Function ID: 9284
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2066, 502, 4917, 9270, 21, 5005, 587, 558, 576, 504, 7868, 11, 4871, 9271, 9272, 5701, 5247, 7508, 6943, 5271, 9273, 6968, 1125, 2]
+// Dependencies: [19, 17, 2063, 502, 4921, 9284, 21, 5009, 575, 504, 7874, 11, 4872, 9285, 9286, 5707, 5253, 7516, 6951, 5619, 6974, 9287, 1114, 2]
+// Exports: default
 
-// Module 9269 (GuildProfileHeader)
+// Module 9283 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4871 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5701 */;
-import transitionToGuild from "transitionToGuild" /* 7508 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9270 */;
-import GuildTraits from "GuildTraits" /* 9271 */;
-import BadgeCategory from "BadgeCategory" /* 9272 */;
+import nativeDefault from "native" /* 575 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4872 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5707 */;
+import transitionToGuild from "transitionToGuild" /* 7516 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9284 */;
+import GuildTraits from "GuildTraits" /* 9285 */;
+import BadgeCategory from "BadgeCategory" /* 9286 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2066 */;
+import LocaleStore from "LocaleStore" /* 2063 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -37,365 +37,10 @@ createStyles = createStyles.createStyles;
 size1 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
 size2 = { width: 8, height: 8, borderRadius: 4, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 const styles = createStyles(obj);
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfileHeader(profile) {
-  let id;
-  let locale;
-  let stateFromStores1;
-  let tmp15;
-  let tmp17;
-  let tmp18;
-  let tmp5;
-  let tmp6;
-  let tmp = profile;
-  let obj = profile(stateFromStores1[10]);
-  const cResult = obj.c(71);
-  profile = profile.profile;
-  const guildIconSource = profile.guildIconSource;
-  const tmp4 = styles();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [LocaleStore];
-    const fn = function x() {
-      return locale.locale;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = tmp(stateFromStores1[11]);
-  const stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
-  const getEstablishedDate = tmp(tmp2[12]).getEstablishedDate;
-  tmp(stateFromStores1[12]);
-  let obj3 = id(tmp2[13]);
-  const establishedDate = getEstablishedDate(obj3.extractTimestamp(profile.id), stateFromStores);
-  const tmp10 = id;
-  if (cResult[2] !== profile) {
-    const tmpResult5 = tmp(stateFromStores1[14]);
-    let fromGuildProfileResult = tmpResult5.fromGuildProfile(profile);
-    cResult[2] = profile;
-    cResult[3] = fromGuildProfileResult;
-  }
-  if (cResult[4] !== profile) {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-    cResult[4] = profile;
-    cResult[5] = R;
-  } else {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-  }
-  id = profile.id;
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-    const items1 = [GuildMemberStore, AuthenticationStore];
-    cResult[6] = items1;
-    tmp15 = items1;
-  } else {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-  }
-  if (cResult[7] !== id) {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-    const items2 = [id];
-    cResult[7] = id;
-    cResult[8] = tmp19;
-    cResult[9] = items2;
-    tmp18 = items2;
-    tmp17 = tmp19;
-  } else {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-    tmp18 = cResult[9];
-  }
-  const tmpResult6 = tmp(stateFromStores1[11]);
-  stateFromStores1 = tmpResult6.useStateFromStores(tmp15, tmp17, tmp18);
-  if (cResult[10] === id) {
-    class R {
-      constructor() {
-        let tooltipSubtitle;
-        let tooltipTitle;
-        const obj = GuildRecordUtils;
-        const fromGuildProfileResult = obj.fromGuildProfile(profile);
-        const obj2 = GuildTraits;
-        const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-        const obj3 = BadgeCategory;
-        ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-        getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-        const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-        if (!tmp5) {
-          const open = ToastActionCreatorsDefault.open;
-          ToastActionCreatorsDefault;
-          if (tooltipSubtitle == null) {
-            tooltipSubtitle = tooltipTitle;
-          }
-          const obj4 = { text: tooltipSubtitle };
-          open("guild-badge-tooltip", obj4);
-        }
-      }
-    }
-    const tmp21 = View;
-    if (cResult[13] === guildIconSource) {
-      class R {
-        constructor() {
-          let tooltipSubtitle;
-          let tooltipTitle;
-          const obj = GuildRecordUtils;
-          const fromGuildProfileResult = obj.fromGuildProfile(profile);
-          const obj2 = GuildTraits;
-          const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-          const obj3 = BadgeCategory;
-          ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-          getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-          const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-          if (!tmp5) {
-            const open = ToastActionCreatorsDefault.open;
-            ToastActionCreatorsDefault;
-            if (tooltipSubtitle == null) {
-              tooltipSubtitle = tooltipTitle;
-            }
-            const obj4 = { text: tooltipSubtitle };
-            open("guild-badge-tooltip", obj4);
-          }
-        }
-      }
-      if (cResult[16] === tmp4.avatarBackground) {
-        class R {
-          constructor() {
-            let tooltipSubtitle;
-            let tooltipTitle;
-            const obj = GuildRecordUtils;
-            const fromGuildProfileResult = obj.fromGuildProfile(profile);
-            const obj2 = GuildTraits;
-            const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-            const obj3 = BadgeCategory;
-            ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-            getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-            const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-            if (!tmp5) {
-              const open = ToastActionCreatorsDefault.open;
-              ToastActionCreatorsDefault;
-              if (tooltipSubtitle == null) {
-                tooltipSubtitle = tooltipTitle;
-              }
-              const obj4 = { text: tooltipSubtitle };
-              open("guild-badge-tooltip", obj4);
-            }
-          }
-        }
-        if (stateFromStores1) {
-          class R {
-            constructor() {
-              let tooltipSubtitle;
-              let tooltipTitle;
-              const obj = GuildRecordUtils;
-              const fromGuildProfileResult = obj.fromGuildProfile(profile);
-              const obj2 = GuildTraits;
-              const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-              const obj3 = BadgeCategory;
-              ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-              getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-              const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-              if (!tmp5) {
-                const open = ToastActionCreatorsDefault.open;
-                ToastActionCreatorsDefault;
-                if (tooltipSubtitle == null) {
-                  tooltipSubtitle = tooltipTitle;
-                }
-                const obj4 = { text: tooltipSubtitle };
-                open("guild-badge-tooltip", obj4);
-              }
-            }
-          }
-        }
-        if (cResult[19] === profile.name) {
-          class R {
-            constructor() {
-              let tooltipSubtitle;
-              let tooltipTitle;
-              const obj = GuildRecordUtils;
-              const fromGuildProfileResult = obj.fromGuildProfile(profile);
-              const obj2 = GuildTraits;
-              const guildTraits = obj2.getGuildTraits(fromGuildProfileResult);
-              const obj3 = BadgeCategory;
-              ({ tooltipTitle, tooltipSubtitle } = getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility));
-              getBadgeTooltip(obj3.getBadgeCategory(guildTraits), guildTraits.visibility);
-              const tmp5 = null == tooltipTitle && null == tooltipSubtitle;
-              if (!tmp5) {
-                const open = ToastActionCreatorsDefault.open;
-                ToastActionCreatorsDefault;
-                if (tooltipSubtitle == null) {
-                  tooltipSubtitle = tooltipTitle;
-                }
-                const obj4 = { text: tooltipSubtitle };
-                open("guild-badge-tooltip", obj4);
-              }
-            }
-          }
-        }
-        let obj2 = { onPress: undefined, style: tmp4.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
-        cResult[19] = profile.name;
-        cResult[20] = tmp4.guildName;
-        cResult[21] = undefined;
-        cResult[22] = closure_9(tmp(stateFromStores1[21]).Text, obj2);
-        const tmp32 = closure_9(tmp(stateFromStores1[21]).Text, obj2);
-      }
-      let obj4 = { style: tmp4.avatarBackground, children: tmp22 };
-      cResult[16] = tmp4.avatarBackground;
-      cResult[17] = tmp22;
-      cResult[18] = closure_9(tmp21, obj4);
-      const tmp28 = closure_9(tmp21, obj4);
-    }
-    const obj5 = { icon: guildIconSource, size: tmp(stateFromStores1[20]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
-    const tmp10Result = tmp10(stateFromStores1[20]);
-    cResult[13] = guildIconSource;
-    cResult[14] = profile.name;
-    cResult[15] = closure_9(tmp10Result, obj5);
-    const tmp25 = closure_9(tmp10Result, obj5);
-  }
-  const fn2 = function k() {
-    const tmp = stateFromStores1;
-    if (tmp) {
-      const _HermesInternal = HermesInternal;
-      const obj = ActionSheetActionCreatorsDefault;
-      obj.hideActionSheet("GuildProfileActionSheet:" + id);
-      const obj2 = transitionToGuild;
-      obj2.transitionToGuild(id);
-    }
-  };
-  cResult[10] = id;
-  cResult[11] = stateFromStores1;
-  cResult[12] = fn2;
-}) : (function GuildProfileHeader(profile) {
+size = size_mod;
+const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
+
+export default function GuildProfileHeader(profile) {
   let Text4;
   let intl;
   let intl2;
@@ -417,14 +62,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
   let stateFromStores1;
   const guildIconSource = profile.guildIconSource;
   let tmp = styles();
-  let obj = profile(stateFromStores1[11]);
+  let obj = profile(stateFromStores1[9]);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let tmp5 = profile(stateFromStores1[12]);
+  let tmp5 = profile(stateFromStores1[10]);
   const getEstablishedDate = tmp5.getEstablishedDate;
-  let obj2 = id(stateFromStores1[13]);
+  let obj2 = id(stateFromStores1[11]);
   const establishedDate = getEstablishedDate(obj2.extractTimestamp(profile.id), stateFromStores);
-  let obj3 = profile(stateFromStores1[14]);
+  let obj3 = profile(stateFromStores1[12]);
   const items1 = [profile];
   let fromGuildProfileResult = obj3.fromGuildProfile(profile);
   const tmp6 = id;
@@ -450,7 +95,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       open("guild-badge-tooltip", obj4);
     }
   }, items1);
-  let obj4 = profile(stateFromStores1[11]);
+  let obj4 = profile(stateFromStores1[9]);
   const items2 = [GuildMemberStore, AuthenticationStore];
   const items3 = [id];
   stateFromStores1 = obj4.useStateFromStores(items2, () => {
@@ -474,20 +119,20 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
       obj2.transitionToGuild(id);
     }
   }, items4);
-  obj7 = { icon: guildIconSource, size: profile(stateFromStores1[20]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
-  tmp15 = id(stateFromStores1[20]);
+  obj7 = { icon: guildIconSource, size: profile(stateFromStores1[18]).GuildIconSizes.XXLARGE, animate: true, value: profile.name, selected: false };
+  tmp15 = id(stateFromStores1[18]);
   items5 = [closure_9(View, obj6), , , ];
   let tmp16;
   const obj8 = { style: tmp.nameRow, children: items6 };
-  const Text = profile(stateFromStores1[21]).Text;
+  const Text = profile(stateFromStores1[19]).Text;
   if (stateFromStores1) {
     tmp16 = callback1;
   }
   items6 = [, ];
   const obj9 = { onPress: tmp16, style: tmp.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
   items6[0] = closure_9(Text, obj9);
-  const obj10 = { onPress: callback, children: closure_9(tmp6(stateFromStores1[22]), obj11) };
-  const PressableHighlight = tmp2(tmp3[23]).PressableHighlight;
+  const obj10 = { onPress: callback, children: closure_9(tmp6(stateFromStores1[21]), obj11) };
+  const PressableHighlight = tmp2(tmp3[20]).PressableHighlight;
   obj11 = { guild: fromGuildProfileResult, style: tmp.guildIcon };
   items6[1] = closure_9(PressableHighlight, obj10);
   items5[1] = closure_10(View, obj8);
@@ -496,9 +141,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
   const obj12 = { style: tmp.members, children: items8 };
   const obj14 = { style: tmp.dotOnline };
   items7[0] = closure_9(View, obj14);
-  const obj15 = { variant: "text-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[24]).t["LC+S+m"], obj16) };
-  const Text2 = tmp2(tmp3[21]).Text;
-  intl = tmp2(tmp3[24]).intl;
+  const obj15 = { variant: "text-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[22]).t["LC+S+m"], obj16) };
+  const Text2 = tmp2(tmp3[19]).Text;
+  intl = tmp2(tmp3[22]).intl;
   obj16 = { membersOnline: profile.onlineCount };
   items7[1] = closure_9(Text2, obj15);
   items8 = [closure_10(View, obj13), ];
@@ -506,22 +151,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildProfile
   items9 = [, ];
   const obj18 = { style: tmp.dot };
   items9[0] = closure_9(View, obj18);
-  const obj19 = { variant: "text-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[24]).t.zRl6XR, obj20) };
-  const Text3 = tmp2(tmp3[21]).Text;
-  intl2 = tmp2(tmp3[24]).intl;
+  const obj19 = { variant: "text-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[22]).t.zRl6XR, obj20) };
+  const Text3 = tmp2(tmp3[19]).Text;
+  intl2 = tmp2(tmp3[22]).intl;
   obj20 = { count: profile.memberCount };
   items9[1] = closure_9(Text3, obj19);
   items8[1] = closure_10(View, obj17);
   items5[2] = closure_10(View, obj12);
   const obj21 = { style: tmp.established, children: closure_9(Text4, obj22) };
-  obj22 = { variant: "text-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[24]).t.zb2Q56, { createdAtDate: establishedDate }) };
-  Text4 = tmp2(tmp3[21]).Text;
-  intl3 = tmp2(tmp3[24]).intl;
+  obj22 = { variant: "text-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate }) };
+  Text4 = tmp2(tmp3[19]).Text;
+  intl3 = tmp2(tmp3[22]).intl;
   items5[3] = closure_9(View, obj21);
   return closure_10(View, obj5);
-});
-size = size_mod;
-const result = size.fileFinishedImporting("modules/guild_profile/native/components/GuildProfileHeader.tsx");
-
-export default tmp5;
+};
 export const useStyles = styles;

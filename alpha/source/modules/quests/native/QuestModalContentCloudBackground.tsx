@@ -1,19 +1,18 @@
-// Module ID: 16981
-// Function ID: 16982
+// Module ID: 17035
+// Function ID: 17036
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5005, 558, 576, 5242, 5027, 5295, 16982, 16983, 5707, 2]
+// Dependencies: [19, 17, 21, 5009, 5031, 5248, 5582, 5712, 17036, 17037, 2]
+// Exports: default
 
-// Module 16981 (QuestModalContentCloudBackground)
-import react2 from "react" /* 576 */;
-import themes from "themes" /* 5027 */;
-import useTheme from "useTheme" /* 5242 */;
-import LinearGradientDefault from "LinearGradient" /* 5295 */;
-import FastImageDefault from "FastImage" /* 5707 */;
+// Module 17035 (QuestModalContentCloudBackground)
+import themes from "themes" /* 5031 */;
+import useTheme from "useTheme" /* 5248 */;
+import LinearGradientDefault from "LinearGradient" /* 5582 */;
+import FastImageDefault from "FastImage" /* 5712 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -31,11 +30,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp3 = arg0 ? { top: "getCurrentUser" } : { bottom: "getCurrentUser" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
+  const tmp6 = arg0 ? { top: "getCurrentUser" } : { bottom: "getCurrentUser" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -55,116 +54,9 @@ let closure_7 = createStyles.createStyles((arg0) => {
 let items = ["#292252FF", "#1E1F2200"];
 const substr = items.slice();
 let closure_9 = substr.reverse();
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalContentCloudBackground(arg0) {
-  let align;
-  let imgStyle;
-  let resizeMode;
-  let style;
-  let tmp6;
-  const obj = react2;
-  const cResult = obj.c(21);
-  ({ align, style, imgStyle, resizeMode } = arg0);
-  let str = "bottom";
-  if (undefined !== align) {
-    str = align;
-  }
-  let str2 = "cover";
-  if (undefined !== resizeMode) {
-    str2 = resizeMode;
-  }
-  const tmp4 = closure_7("bottom" === str);
-  const tmpResult = useTheme;
-  const theme = tmpResult.useTheme();
-  if (cResult[0] !== theme) {
-    const tmpResult2 = themes;
-    const isThemeDarkResult = tmpResult2.isThemeDark(theme);
-    cResult[0] = theme;
-    cResult[1] = isThemeDarkResult;
-    tmp6 = isThemeDarkResult;
-  } else {
-    tmp6 = cResult[1];
-  }
-  if (cResult[2] === style) {
-    let tmp8;
-    let tmp10Result;
-    if (cResult[3] === tmp4.wrapper) {
-      tmp8 = cResult[4];
-    }
-    if (cResult[5] === str) {
-      if (cResult[6] === tmp6) {
-        if (cResult[7] === tmp4.gradient) {
-          let tmp9;
-          if (cResult[8] === tmp4.solidBackground) {
-            tmp9 = cResult[9];
-          }
-          const tmp14 = tmp6 ? tmp4.cloudsImage : tmp4.cloudsImageLight;
-          if (cResult[10] === imgStyle) {
-            let tmp15;
-            if (cResult[11] === tmp14) {
-              tmp15 = cResult[12];
-            }
-            const tmp16Result = importDefault(tmp6 ? 16982 : 16983);
-            if (cResult[13] === str2) {
-              if (cResult[14] === tmp15) {
-                let tmp18;
-                if (cResult[15] === tmp16Result) {
-                  tmp18 = cResult[16];
-                }
-                if (cResult[17] === tmp8) {
-                  if (cResult[18] === tmp9) {
-                    let tmp21;
-                    if (cResult[19] === tmp18) {
-                      tmp21 = cResult[20];
-                    }
-                    return tmp21;
-                  }
-                }
-                const obj2 = { style: tmp8, children: items };
-                items = [tmp9, tmp18];
-                const tmp24 = metroRequire(_false, obj2);
-                cResult[17] = tmp8;
-                cResult[18] = tmp9;
-                cResult[19] = tmp18;
-                cResult[20] = tmp24;
-                tmp21 = tmp24;
-              }
-            }
-            const obj3 = { style: tmp15, source: tmp16Result, resizeMode: str2 };
-            const tmp20 = hasOwnProperty(FastImageDefault, obj3);
-            cResult[13] = str2;
-            cResult[14] = tmp15;
-            cResult[15] = tmp16Result;
-            cResult[16] = tmp20;
-            tmp18 = tmp20;
-          }
-          const items1 = [tmp14, imgStyle];
-          cResult[10] = imgStyle;
-          cResult[11] = tmp14;
-          cResult[12] = items1;
-          tmp15 = items1;
-        }
-      }
-    }
-    if (tmp6) {
-      const obj4 = { colors: "top" === str ? items : closure_9, style: tmp4.gradient };
-      tmp10Result = tmp10(LinearGradientDefault, obj4);
-    } else {
-      const obj5 = { style: tmp4.solidBackground };
-      tmp10Result = tmp10(_false, obj5);
-    }
-    cResult[5] = str;
-    cResult[6] = tmp6;
-    cResult[7] = tmp4.gradient;
-    cResult[8] = tmp4.solidBackground;
-    cResult[9] = tmp10Result;
-    tmp9 = tmp10Result;
-  }
-  const items2 = [tmp4.wrapper, style];
-  cResult[2] = style;
-  cResult[3] = tmp4.wrapper;
-  cResult[4] = items2;
-  tmp8 = items2;
-}) : (function QuestModalContentCloudBackground(align) {
+const result = size.fileFinishedImporting("modules/quests/native/QuestModalContentCloudBackground.tsx");
+
+export default function QuestModalContentCloudBackground(align) {
   let imgStyle;
   let items1;
   let items2;
@@ -200,12 +92,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function QuestModalCo
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 16982 : 16983), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17036 : 17037), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);
   return tmp5(_false, obj2);
-});
-const result = size.fileFinishedImporting("modules/quests/native/QuestModalContentCloudBackground.tsx");
-
-export default tmp5;
+};

@@ -1,20 +1,20 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 18934
+// Function ID: 18935
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 5005, 18872, 587, 558, 576, 1125, 5271, 6968, 2]
+// Dependencies: [32, 19, 17, 21, 5009, 18932, 575, 6974, 5619, 1114, 2]
+// Exports: default
 
-// Module 18874 (RestrictedBlockedMessageGroup)
+// Module 18934 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18872 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 18932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,104 +28,9 @@ const View = react_native.View;
 let obj = { toggle: obj2 };
 obj2 = { marginLeft: RestrictedMessagePreviewLayout.RESTRICTED_CONTENT_INSET, marginVertical: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj);
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function RestrictedBlockedMessageGroup(arg0) {
-  let first;
-  let items;
-  let messages;
-  let renderMessage;
-  let tmp11;
-  let tmp6;
-  let tmp8;
-  let tmp9;
-  let obj = renderMessage(576);
-  const cResult = obj.c(18);
-  ({ messages, renderMessage } = arg0);
-  const tmp4 = closure_7();
-  [tmp6, dependencyMap] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h() {
-      dependencyMap((arg0) => !arg0);
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  const toggle = tmp4.toggle;
-  if (cResult[1] !== tmp6) {
-    const obj2 = { expanded: tmp6 };
-    cResult[1] = tmp6;
-    cResult[2] = obj2;
-    tmp8 = obj2;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== messages.length) {
-    const intl = tmp(1125).intl;
-    const obj3 = { count: messages.length };
-    const formatResult = intl.format(renderMessage(1125).t["+FcYM/"], obj3);
-    cResult[3] = messages.length;
-    cResult[4] = formatResult;
-    tmp9 = formatResult;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== tmp9) {
-    const obj4 = { variant: "text-sm/medium", color: "text-muted", children: tmp9 };
-    const tmp13 = closure_5(renderMessage(5271).Text, obj4);
-    cResult[5] = tmp9;
-    cResult[6] = tmp13;
-    tmp11 = tmp13;
-  } else {
-    tmp11 = cResult[6];
-  }
-  if (cResult[7] === tmp4.toggle) {
-    if (cResult[8] === tmp8) {
-      let tmp14;
-      if (cResult[9] === tmp11) {
-        tmp14 = cResult[10];
-      }
-      if (cResult[11] === messages) {
-        if (cResult[12] === renderMessage) {
-          let tmp16;
-          if (cResult[13] === tmp6) {
-            tmp16 = cResult[14];
-          }
-          if (cResult[15] === tmp14) {
-            let tmp18;
-            if (cResult[16] === tmp16) {
-              tmp18 = cResult[17];
-            }
-            return tmp18;
-          }
-          const obj5 = { children: items };
-          items = [tmp14, tmp16];
-          const tmp21 = closure_6(View, obj5);
-          cResult[15] = tmp14;
-          cResult[16] = tmp16;
-          cResult[17] = tmp21;
-          tmp18 = tmp21;
-        }
-      }
-      const tmp17 = tmp6 && messages.map((id) => {
-        const obj = { children: renderMessage(id) };
-        return hasOwnProperty(View, obj, id.id);
-      });
-      cResult[11] = messages;
-      cResult[12] = renderMessage;
-      cResult[13] = tmp6;
-      cResult[14] = tmp17;
-      tmp16 = tmp17;
-    }
-  }
-  const tmp15 = closure_5(renderMessage(6968).PressableOpacity, { style: toggle, accessibilityRole: "button", accessibilityState: tmp8, onPress: first, children: tmp11 });
-  cResult[7] = tmp4.toggle;
-  cResult[8] = tmp8;
-  cResult[9] = tmp11;
-  cResult[10] = tmp15;
-  tmp14 = tmp15;
-}) : (function RestrictedBlockedMessageGroup(arg0) {
+const result = size.fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
+
+export default function RestrictedBlockedMessageGroup(arg0) {
   let Text;
   let _undefined;
   let c1;
@@ -160,7 +65,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function Restricted
   }
   children[1] = mapped;
   return tmp5(tmp6, { children });
-});
-const result = size.fileFinishedImporting("modules/message_request/native/RestrictedBlockedMessageGroup.tsx");
-
-export default tmp3;
+};

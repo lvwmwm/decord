@@ -1,24 +1,23 @@
-// Module ID: 13534
-// Function ID: 13535
+// Module ID: 13683
+// Function ID: 13684
 // Name: CustomTypingIndicatorUtils
-// Dependencies: [6783, 8689, 4857, 6759, 1389, 1084, 1392, 1397, 3866, 4951, 4955, 1411, 1096, 4942, 558, 576, 504, 2]
-// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis
+// Dependencies: [6790, 8723, 4858, 6766, 1384, 1072, 1387, 1392, 3867, 4955, 4959, 1406, 1084, 4946, 504, 2]
+// Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
 
-// Module 13534 (CustomTypingIndicatorUtils)
-import Constants from "Constants" /* 1084 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1096 */;
-import EmojiConstants from "EmojiConstants" /* 1392 */;
-import user2 from "user" /* 1397 */;
-import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1411 */;
-import _modDef3866 from "module_3866" /* 3866 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4942 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4951 */;
-import EmojiStore from "EmojiStore" /* 6783 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8689 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import SortedGuildStore from "SortedGuildStore" /* 6759 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 13683 (CustomTypingIndicatorUtils)
+import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+import EmojiConstants from "EmojiConstants" /* 1387 */;
+import user2 from "user" /* 1392 */;
+import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1406 */;
+import _modDef3867 from "module_3867" /* 3867 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4946 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4955 */;
+import EmojiStore from "EmojiStore" /* 6790 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8723 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import UserStore from "UserStore" /* 1384 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,118 +26,25 @@ let _require, set, usableGuildEmoji;
 const Permissions = Constants.Permissions;
 const EmojiIntention = EmojiConstants.EmojiIntention;
 let obj = {};
-obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3866["6Cdy4a"];
-obj[user2.TypingSuggestion.YAPPING] = _modDef3866.E5VRaj;
-obj[user2.TypingSuggestion.VENTING] = _modDef3866.xmxdPC;
-obj[user2.TypingSuggestion.OVERSHARING] = _modDef3866["qGaH/9"];
-obj[user2.TypingSuggestion.BARKING] = _modDef3866.M282uk;
-obj[user2.TypingSuggestion.BABBLING] = _modDef3866.myNZDT;
-obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3866.F7RLTP;
-obj[user2.TypingSuggestion.MEOWING] = _modDef3866.EfxyQI;
+obj[user2.TypingSuggestion.UNSPECIFIED] = _modDef3867["6Cdy4a"];
+obj[user2.TypingSuggestion.YAPPING] = _modDef3867.E5VRaj;
+obj[user2.TypingSuggestion.VENTING] = _modDef3867.xmxdPC;
+obj[user2.TypingSuggestion.OVERSHARING] = _modDef3867["qGaH/9"];
+obj[user2.TypingSuggestion.BARKING] = _modDef3867.M282uk;
+obj[user2.TypingSuggestion.BABBLING] = _modDef3867.myNZDT;
+obj[user2.TypingSuggestion.DAYDREAMING] = _modDef3867.F7RLTP;
+obj[user2.TypingSuggestion.MEOWING] = _modDef3867.EfxyQI;
 let obj2 = {};
-obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3866.kh4K4F;
-obj2[user2.TypingSuggestion.YAPPING] = _modDef3866.m9AeqG;
-obj2[user2.TypingSuggestion.VENTING] = _modDef3866["SZ0/Qu"];
-obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3866.N8cWE8;
-obj2[user2.TypingSuggestion.BARKING] = _modDef3866.L5aWEN;
-obj2[user2.TypingSuggestion.BABBLING] = _modDef3866.AoBaEw;
-obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3866["3hOLod"];
-obj2[user2.TypingSuggestion.MEOWING] = _modDef3866["0Z9/o9"];
+obj2[user2.TypingSuggestion.UNSPECIFIED] = _modDef3867.kh4K4F;
+obj2[user2.TypingSuggestion.YAPPING] = _modDef3867.m9AeqG;
+obj2[user2.TypingSuggestion.VENTING] = _modDef3867["SZ0/Qu"];
+obj2[user2.TypingSuggestion.OVERSHARING] = _modDef3867.N8cWE8;
+obj2[user2.TypingSuggestion.BARKING] = _modDef3867.L5aWEN;
+obj2[user2.TypingSuggestion.BABBLING] = _modDef3867.AoBaEw;
+obj2[user2.TypingSuggestion.DAYDREAMING] = _modDef3867["3hOLod"];
+obj2[user2.TypingSuggestion.MEOWING] = _modDef3867["0Z9/o9"];
 let items = [user2.TypingSuggestion.UNSPECIFIED, user2.TypingSuggestion.YAPPING, user2.TypingSuggestion.VENTING, user2.TypingSuggestion.OVERSHARING, user2.TypingSuggestion.BARKING, user2.TypingSuggestion.BABBLING, user2.TypingSuggestion.DAYDREAMING, user2.TypingSuggestion.MEOWING];
 let items1 = [user2.TypingIndicatorAnimation.PULSE, user2.TypingIndicatorAnimation.RING, user2.TypingIndicatorAnimation.WAVE];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCurrentCustomTypingIndicatorConfig(arg0) {
-  let closure_0;
-  let first;
-  let tmp7;
-  let tmp8;
-  _require = arg0;
-  obj = require("react");
-  const cResult = obj.c(4);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    items = [UserProfileSettingsStore, ];
-    items[1] = UserStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      if (closure_0) {
-        let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
-        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
-          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        }
-        return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
-      } else {
-        let typingIndicatorStyle;
-        let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
-        if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
-          if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
-            EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-          }
-          typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        } else {
-          const currentUser = UserStore.getCurrentUser();
-          typingIndicatorStyle = undefined;
-          if (currentUser != null) {
-            typingIndicatorStyle = currentUser.typingIndicatorStyle;
-          }
-          if (typingIndicatorStyle == null) {
-            typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-          }
-        }
-        return typingIndicatorStyle;
-      }
-    };
-    items1 = [arg0];
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp8 = items1;
-    tmp7 = fn;
-  } else {
-    tmp7 = cResult[2];
-    tmp8 = cResult[3];
-  }
-  const tmpResult = tmp(504);
-  return tmpResult.useStateFromStores(first, tmp7, tmp8);
-}) : (function useCurrentCustomTypingIndicatorConfig(arg0) {
-  let closure_0;
-  _require = arg0;
-  obj = require("get initialized");
-  items = [UserProfileSettingsStore, UserStore];
-  items1 = [arg0];
-  return obj.useStateFromStores(items, () => {
-    if (closure_0) {
-      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
-      if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
-        EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-      }
-      return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
-    } else {
-      let typingIndicatorStyle;
-      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
-      if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
-        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
-          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        }
-        typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-      } else {
-        const currentUser = UserStore.getCurrentUser();
-        typingIndicatorStyle = undefined;
-        if (currentUser != null) {
-          typingIndicatorStyle = currentUser.typingIndicatorStyle;
-        }
-        if (typingIndicatorStyle == null) {
-          typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
-        }
-      }
-      return typingIndicatorStyle;
-    }
-  }, items1);
-});
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorUtils.tsx");
 
@@ -253,4 +159,37 @@ export function getViewableCustomTypingIndicatorConfig(customTypingIndicatorConf
   }
   return customTypingIndicatorConfig;
 }
-export const useCurrentCustomTypingIndicatorConfig = tmp2;
+export function useCurrentCustomTypingIndicatorConfig(isTryItOut) {
+  _require = isTryItOut;
+  obj = require("get initialized");
+  items = [UserProfileSettingsStore, UserStore];
+  items1 = [isTryItOut];
+  return obj.useStateFromStores(items, () => {
+    if (isTryItOut) {
+      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = obj.getTryItOutChanges().tryItOutCustomTypingIndicatorStyle;
+      if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 == null) {
+        EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2 = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+      }
+      return EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG2;
+    } else {
+      let typingIndicatorStyle;
+      let EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = obj.getPendingChanges().pendingCustomTypingIndicatorStyle;
+      if (undefined !== EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG) {
+        if (EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG == null) {
+          EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        }
+        typingIndicatorStyle = EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+      } else {
+        const currentUser = UserStore.getCurrentUser();
+        typingIndicatorStyle = undefined;
+        if (currentUser != null) {
+          typingIndicatorStyle = currentUser.typingIndicatorStyle;
+        }
+        if (typingIndicatorStyle == null) {
+          typingIndicatorStyle = CustomTypingIndicatorTypes.EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG;
+        }
+      }
+      return typingIndicatorStyle;
+    }
+  }, items1);
+}

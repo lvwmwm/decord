@@ -1,33 +1,32 @@
-// Module ID: 14736
-// Function ID: 14737
+// Module ID: 14771
+// Function ID: 14772
 // Name: GuildInviteUtils
-// Dependencies: [5, 19, 4935, 5231, 4917, 4879, 4937, 6759, 1389, 14737, 7867, 1084, 1264, 5247, 14738, 2000, 6886, 558, 576, 504, 5014, 1125, 8903, 9088, 9168, 2]
-// Exports: sendGuildInvite, showGuildInviteActionSheet
+// Dependencies: [5, 19, 4939, 5237, 4921, 4880, 4941, 6766, 1384, 14772, 7872, 1072, 1253, 5253, 14773, 1995, 6893, 504, 5018, 1114, 8937, 9101, 9181, 2]
+// Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 14736 (GuildInviteUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6886 */;
-import Constants2 from "Constants" /* 7867 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8903 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9088 */;
-import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14737 */;
+// Module 14771 (GuildInviteUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6893 */;
+import Constants2 from "Constants" /* 7872 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8937 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9101 */;
+import GuildInviteSendStateStore from "GuildInviteSendStateStore" /* 14772 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4935 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5231 */;
-import GuildMemberStore from "GuildMemberStore" /* 4917 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import SortedGuildStore from "SortedGuildStore" /* 6759 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildChannelStore from "GuildChannelStore" /* 4939 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5237 */;
+import GuildMemberStore from "GuildMemberStore" /* 4921 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import SortedGuildStore from "SortedGuildStore" /* 6766 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c6, c7, defaultChannel, dependencyMap, flattenedGuildIds, guild;
+let _require, c6, c7, defaultChannel, flattenedGuildIds, guild;
 
 let closure_14;
 let closure_15;
@@ -47,7 +46,7 @@ let obj = function _sendGuildInvite() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -90,10 +89,10 @@ let obj = function _sendGuildInvite() {
           if (1 === c6) {
             c5 = 0;
             closure_132_12(closure_0, closure_1, closure_132_13.ERROR);
-            let AccessibilityAnnouncer = closure_132_0(closure_132_2[20]).AccessibilityAnnouncer;
+            let AccessibilityAnnouncer = closure_132_0(closure_132_2[18]).AccessibilityAnnouncer;
             let announce = AccessibilityAnnouncer.announce;
-            let intl = closure_132_0(closure_132_2[21]).intl;
-            const announceResult = announce(intl.string(closure_132_0(closure_132_2[21]).t.fEptJP));
+            let intl = closure_132_0(closure_132_2[19]).intl;
+            const announceResult = announce(intl.string(closure_132_0(closure_132_2[19]).t.fEptJP));
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -104,21 +103,21 @@ let obj = function _sendGuildInvite() {
             return obj;
           } else {
             code = value;
-            const obj6 = { inviteKey: code.code, type: closure_132_0(closure_132_2[24]).InvitePropertiesType.USER, user: closure_132_11.getUser(closure_0), location: source, inviteAnalyticsMetadata: obj7 };
-            const enqueue = closure_132_1(closure_132_2[24]).enqueue;
-            const tmp30 = closure_132_1(closure_132_2[24]);
+            const obj6 = { inviteKey: code.code, type: closure_132_0(closure_132_2[22]).InvitePropertiesType.USER, user: closure_132_11.getUser(closure_0), location: source, inviteAnalyticsMetadata: obj7 };
+            const enqueue = closure_132_1(closure_132_2[22]).enqueue;
+            const tmp30 = closure_132_1(closure_132_2[22]);
             obj7 = { source };
             enqueue(obj6, () => {
               closure_2_12(closure_1_0, closure_1_1, constants.SENT);
-              const AccessibilityAnnouncer = closure_0(closure_2[20]).AccessibilityAnnouncer;
+              const AccessibilityAnnouncer = closure_0(closure_2[18]).AccessibilityAnnouncer;
               const announce = AccessibilityAnnouncer.announce;
-              const intl = closure_0(closure_2[21]).intl;
-              announce(intl.string(closure_0(closure_2[21]).t.PuLLzP));
+              const intl = closure_0(closure_2[19]).intl;
+              announce(intl.string(closure_0(closure_2[19]).t.PuLLzP));
             });
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         if (0 === c5) {
@@ -135,112 +134,23 @@ let obj = function _sendGuildInvite() {
 const setSendState = GuildInviteSendStateStore.setSendState;
 const InviteSendStates = Constants2.InviteSendStates;
 ({ Permissions: closure_14, AnalyticEvents: closure_15 } = Constants);
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInviteRows(arg0, arg1) {
-  let closure_0;
-  let closure_2;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  _require = arg0;
-  let closure_1 = arg1;
-  obj = require("react");
-  const cResult = obj.c(7);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [SortedGuildStore, ];
-    let tmp7 = GuildStore;
-    items[1] = GuildStore;
-    const fn = function o() {
-      flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
-      const items = [];
-      const item = flattenedGuildIds.forEach((item) => {
-        guild = guild.getGuild(item);
-        if (null != guild) {
-          items.push(guild);
-        }
-      });
-      return items;
-    };
-    let num = 0;
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(504);
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5);
-  if (null != arg0) {
-    if (cResult[3] === stateFromStoresArray) {
-      if (cResult[4] === arg1) {
-        let tmp9;
-        if (cResult[5] === arg0) {
-          tmp9 = cResult[6];
-        }
-        tmp8 = tmp9;
-      }
-    }
-    dependencyMap = GuildMemberCountStore.getMemberCounts();
-    const items1 = [];
-    const items2 = [];
-    let item = stateFromStoresArray.forEach((vanityURLCode) => {
-      let num;
-      const canResult = PermissionStore.can(constants.CREATE_INSTANT_INVITE, vanityURLCode) || null != vanityURLCode.vanityURLCode;
-      if (canResult) {
-        let tmp7Result = null == closure_1;
-        const str = vanityURLCode.name;
-        const str2 = closure_1;
-        if (!tmp7Result) {
-          const tmp7 = fuzzysearchDefault;
-          const formatted = str2.toLowerCase();
-          tmp7Result = tmp7(formatted, str.toLowerCase());
-        }
-        if (tmp7Result) {
-          if (!GuildMemberStore.isMember(vanityURLCode.id, closure_0)) {
-            obj = { guild: vanityURLCode, memberCount: num };
-            num = closure_2[vanityURLCode.id];
-            if (num == null) {
-              num = 0;
-            }
-            const ownerId = vanityURLCode.ownerId;
-            const currentUser = UserStore.getCurrentUser();
-            let id;
-            if (currentUser != null) {
-              id = currentUser.id;
-            }
-            if (ownerId === id) {
-              items1.push(obj);
-            } else {
-              items2.push(obj);
-            }
-          }
-        }
-      }
-    });
-    const items3 = [items1, items2];
-    cResult[3] = stateFromStoresArray;
-    cResult[4] = arg1;
-    cResult[5] = arg0;
-    cResult[6] = items3;
-    tmp9 = items3;
-  } else {
-    const _Symbol = Symbol;
-    if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const items4 = [[], []];
-      cResult[2] = items4;
-      tmp8 = items4;
-    } else {
-      tmp8 = cResult[2];
-    }
-  }
-  return tmp8;
-}) : (function useServerInviteRows(arg0, arg1) {
-  let closure_0;
+const result = size.fileFinishedImporting("modules/instant_invite/native/GuildInviteUtils.tsx");
+
+export function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
+  obj = AnalyticsUtilsDefault;
+  const obj2 = { type: "Invite to Guilds", source: newestAnalyticsLocation };
+  obj.track(constants2.OPEN_POPOUT, obj2);
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  ActionSheetActionCreatorsDefault;
+  const obj3 = { recipientId: id2, source: newestAnalyticsLocation };
+  const tmp3 = asyncRequire(14773, dependencyMap.paths);
+  openLazy(tmp3, "invite-to-guilds-" + id2, obj3);
+}
+export function useServerInviteRows(id, query) {
   let memberCounts;
   let stateFromStoresArray;
-  _require = arg0;
-  let closure_1 = arg1;
+  _require = id;
+  let closure_1 = query;
   obj = require("get initialized");
   let items = [SortedGuildStore, GuildStore];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -254,8 +164,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInv
     });
     return items;
   });
-  let items1 = [stateFromStoresArray, arg1, arg0];
+  let items1 = [stateFromStoresArray, query, id];
   return react.useMemo(() => {
+    let closure_0;
     let memberCounts2;
     if (null == memberCounts2) {
       const items = [[], []];
@@ -268,9 +179,9 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInv
         let num;
         const canResult = PermissionStore.can(constants.CREATE_INSTANT_INVITE, vanityURLCode) || null != vanityURLCode.vanityURLCode;
         if (canResult) {
-          let tmp7Result = null == closure_1;
+          let tmp7Result = null == query;
           const str = vanityURLCode.name;
-          const str2 = closure_1;
+          const str2 = query;
           if (!tmp7Result) {
             const tmp7 = fuzzysearchDefault;
             const formatted = str2.toLowerCase();
@@ -285,7 +196,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInv
               }
               const ownerId = vanityURLCode.ownerId;
               const currentUser = UserStore.getCurrentUser();
-              let id;
+              id = undefined;
               if (currentUser != null) {
                 id = currentUser.id;
               }
@@ -302,20 +213,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useServerInv
       return items3;
     }
   }, items1);
-});
-const result = size.fileFinishedImporting("modules/instant_invite/native/GuildInviteUtils.tsx");
-
-export function showGuildInviteActionSheet(id2, newestAnalyticsLocation) {
-  obj = AnalyticsUtilsDefault;
-  const obj2 = { type: "Invite to Guilds", source: newestAnalyticsLocation };
-  obj.track(constants2.OPEN_POPOUT, obj2);
-  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-  ActionSheetActionCreatorsDefault;
-  const obj3 = { recipientId: id2, source: newestAnalyticsLocation };
-  const tmp3 = asyncRequire(14738, dependencyMap.paths);
-  openLazy(tmp3, "invite-to-guilds-" + id2, obj3);
 }
-export const useServerInviteRows = tmp3;
 export function sendGuildInvite() {
   return obj(...arguments);
 }

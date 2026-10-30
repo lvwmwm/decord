@@ -1,72 +1,37 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16654
+// Function ID: 16655
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4947, 8387, 1084, 558, 576, 504, 1125, 11302, 7121, 16602, 2]
+// Dependencies: [4951, 8424, 1072, 504, 1114, 11505, 7129, 16655, 2]
 
-// Module 16601 (AccountIgnoredUsersSetting)
+// Module 16654 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl2 from "intl" /* 1125 */;
-import EyeSlashIcon from "EyeSlashIcon" /* 7121 */;
-import SettingsConstants from "SettingsConstants" /* 8387 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11302 */;
+import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1114 */;
+import EyeSlashIcon from "EyeSlashIcon" /* 7129 */;
+import SettingsConstants from "SettingsConstants" /* 8424 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import SettingBuilders from "SettingBuilders" /* 11505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAccountIgnoredUsersSettingDescription() {
-  let ignoredIDs;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(4);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    const fn = function s() {
-      return ignoredIDs.getIgnoredIDs();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp4, tmp5);
-  if (cResult[2] !== stateFromStoresArray.length) {
-    const intl = tmp(1125).intl;
-    const obj2 = { numberOfIgnoredUsers: stateFromStoresArray.length };
-    const formatResult = intl.format(intl2.t.rXUeOl, obj2);
-    cResult[2] = stateFromStoresArray.length;
-    cResult[3] = formatResult;
-    tmp7 = formatResult;
-  } else {
-    tmp7 = cResult[3];
-  }
-  return tmp7;
-}) : (function useAccountIgnoredUsersSettingDescription() {
-  let ignoredIDs;
-  const items = [RelationshipStore];
-  const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
-  const intl = intl2.intl;
-  const obj2 = { numberOfIgnoredUsers: stateFromStoresArray.length };
-  return intl.format(intl2.t.rXUeOl, obj2);
-});
 let obj = {
   IconComponent: EyeSlashIcon.EyeSlashIcon,
   useTitle() {
     const intl = intl2.intl;
     return intl.string(intl2.t["93ZDWE"]);
   },
-  useDescription: tmp2,
+  useDescription: function useAccountIgnoredUsersSettingDescription() {
+    let ignoredIDs;
+    const items = [RelationshipStore];
+    const obj = get_initialized;
+    const stateFromStoresArray = obj.useStateFromStoresArray(items, () => ignoredIDs.getIgnoredIDs());
+    const intl = intl2.intl;
+    const obj2 = { numberOfIgnoredUsers: stateFromStoresArray.length };
+    return intl.format(intl2.t.rXUeOl, obj2);
+  },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   screen: {
     route: UserSettingsSections.IGNORED_USERS,

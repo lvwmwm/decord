@@ -1,11 +1,11 @@
-// Module ID: 15060
-// Function ID: 15061
+// Module ID: 15104
+// Function ID: 15105
 // Name: MessageActivityInviteCoverImageActionCreators
-// Dependencies: [584, 2]
+// Dependencies: [572, 2]
 // Exports: setCoverImageURL
 
-// Module 15060 (MessageActivityInviteCoverImageActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
+// Module 15104 (MessageActivityInviteCoverImageActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/MessageActivityInviteCoverImageActionCreators.tsx");

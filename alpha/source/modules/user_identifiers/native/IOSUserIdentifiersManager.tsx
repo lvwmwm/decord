@@ -1,16 +1,16 @@
-// Module ID: 19383
-// Function ID: 19384
+// Module ID: 19446
+// Function ID: 19447
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1389, 1084, 7274, 1381, 19384, 1294, 1254, 1264, 2]
+// Dependencies: [5, 17, 1384, 1072, 7281, 1376, 19447, 1283, 1243, 1253, 2]
 
-// Module 19383 (IOSUserIdentifiersManager)
+// Module 19446 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1084 */;
-import SentryUtilsDefault from "SentryUtils" /* 1254 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
+import Constants from "Constants" /* 1072 */;
+import SentryUtilsDefault from "SentryUtils" /* 1243 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import UserStore from "UserStore" /* 1384 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size from "module_2" /* 2 */;
 
 let _self, c1, c4;
@@ -45,7 +45,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
             return obj;
           }
           _self = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           _self = 3;
           throw tmp8;
@@ -171,7 +171,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
         c3 = 0;
         closure_129_0.trackSync("synced", null, verified);
       }
-      await "IconComponent";
+      await "HermesInternal";
       let closure_3 = tmp38;
       closure_129_0.trackSync(getNativeReason(closure_3), closure_3);
     })();

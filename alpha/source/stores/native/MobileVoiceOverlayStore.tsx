@@ -1,19 +1,19 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11902
+// Function ID: 11903
 // Name: MobileVoiceOverlayStore
-// Dependencies: [1084, 1264, 1381, 1628, 504, 584, 2]
+// Dependencies: [1072, 1253, 1376, 1623, 504, 572, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 11709 (MobileVoiceOverlayStore)
+// Module 11902 (MobileVoiceOverlayStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const MetaQuestUtils = tmp(1628);
+const MetaQuestUtils = tmp(1623);
 const AnalyticEvents = Constants.AnalyticEvents;
 let flag = false;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;

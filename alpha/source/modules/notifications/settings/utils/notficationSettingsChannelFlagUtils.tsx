@@ -1,19 +1,19 @@
-// Module ID: 11065
-// Function ID: 11066
+// Module ID: 11292
+// Function ID: 11293
 // Name: notficationSettingsChannelFlagUtils
-// Dependencies: [6762, 6763, 1094, 7275, 11066, 7270, 2]
-// Exports: updateChannelNotificationSetting, updateChannelUnreadSetting
+// Dependencies: [6769, 6770, 1082, 7282, 11050, 7277, 2]
+// Exports: updateChannelUnreadSetting
 
-// Module 11065 (notficationSettingsChannelFlagUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1094 */;
-import ReadStateConstants from "ReadStateConstants" /* 6763 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7275 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11066 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
+// Module 11292 (notficationSettingsChannelFlagUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import ReadStateConstants from "ReadStateConstants" /* 6770 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7282 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11050 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const NotificationSettingsUtils = tmp4(7270);
+const NotificationSettingsUtils = tmp4(7277);
 const UnreadSetting = ReadStateConstants.UnreadSetting;
 const constants = UserSettingsConstants.ChannelNotificationSettingsFlags;
 let result = size.fileFinishedImporting("modules/notifications/settings/utils/notficationSettingsChannelFlagUtils.tsx");
@@ -34,14 +34,6 @@ export function updateChannelUnreadSetting(guild_id, id, ALL_MESSAGES) {
     UNREADS_ONLY_MENTIONS = constants.UNREADS_ONLY_MENTIONS;
   }
   ({ flags: withChannelUnreadFlags(channelIdFlags, UNREADS_ONLY_MENTIONS) });
-  NotificationLabel = NotificationSettingsUtils.NotificationLabel;
-  const result = updateChannelOverrideSettings(obj);
-}
-export function updateChannelNotificationSetting(guildId, channelId, message_notifications) {
-  let NotificationLabel;
-  const obj = { guildId, channelId, settings: { message_notifications }, label: NotificationLabel.notifications(message_notifications) };
-  const updateChannelOverrideSettings = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings;
-  NotificationSettingsModalActionCreatorsDefault;
   NotificationLabel = NotificationSettingsUtils.NotificationLabel;
   const result = updateChannelOverrideSettings(obj);
 }

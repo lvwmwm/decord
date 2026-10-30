@@ -1,17 +1,16 @@
-// Module ID: 13430
-// Function ID: 13431
+// Module ID: 13580
+// Function ID: 13581
 // Name: useCheckpointCharacterTextureSwaps
-// Dependencies: [32, 5, 19, 5081, 558, 576, 2]
+// Dependencies: [5, 19, 5085, 2]
+// Exports: useCheckpointCharacterTextureSwaps
 
-// Module 13430 (useCheckpointCharacterTextureSwaps)
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 13580 (useCheckpointCharacterTextureSwaps)
+import DataBindByName from "DataBindByName" /* 5085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c4, c5, c6, dependencyMap, map, map1, set;
+let c4, c5, c6, map, map1, set;
 
 let obj = function _loadImage() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -19,15 +18,12 @@ let obj = function _loadImage() {
     let c2;
     let c3;
     let closure_0 = arg0;
-    const RiveImages = require("DataBindByName").RiveImages;
+    const RiveImages = DataBindByName.RiveImages;
     await RiveImages.loadFromURLAsync(closure_0);
     return arg1;
   });
   return obj(...arguments);
 };
-function swapTextures() {
-  return obj(...arguments);
-}
 obj = function _swapTextures() {
   obj = _asyncToGenerator(async function(arg0, value, arg2, arg3) {
     function releaseLater(arg0) {
@@ -48,7 +44,7 @@ obj = function _swapTextures() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -99,9 +95,9 @@ obj = function _swapTextures() {
               c6 = 1;
               let obj4 = {
                 value: Promise.all(Array.from(set, (() => {
-                            closure_0 = closure_1_3(function*(arg0, value) {
+                            closure_0 = closure_1_2(function*(arg0, value) {
                               function loadImage() {
-                                return closure_1_5(...arguments);
+                                return closure_1_4(...arguments);
                               }
                               closure_0 = arg0;
                               if (c4 === 2) {
@@ -114,7 +110,7 @@ obj = function _swapTextures() {
                                   const obj2 = { value, done: true };
                                   return obj2;
                                 } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
+                                  return { value: "HermesInternal", done: null };
                                 }
                               } else {
                                 try {
@@ -148,7 +144,7 @@ obj = function _swapTextures() {
                                       const result = closure_1_5.set(closure_0, closure_1);
                                     }
                                     c4 = 3;
-                                    return { value: "IconComponent", done: "IconComponent" };
+                                    return { value: "HermesInternal", done: null };
                                   }
                                 } catch (tmp15) {
                                   c4 = 3;
@@ -193,7 +189,7 @@ obj = function _swapTextures() {
           }
         }
         c6 = 3;
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c6 = 3;
         throw tmp16;
@@ -202,87 +198,17 @@ obj = function _swapTextures() {
   });
   return obj(...arguments);
 };
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointCharacterTextureSwaps(arg0, arg1, arg2) {
-  let closure_0;
-  let closure_1;
-  let first;
-  let tmp5;
-  _require = arg0;
-  dependencyMap = arg1;
-  let closure_2 = arg2;
-  obj = require("react");
-  const cResult = obj.c(10);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
-    cResult[0] = map;
-    first = map;
-  } else {
-    first = cResult[0];
-  }
-  const ref = react.useRef(first);
-  if (cResult[1] !== arg2) {
-    const fn = function p() {
-      map = new Map();
-      const entries = Object.entries(closure_2);
-      const item = entries.forEach((item) => {
-        const tmp = closure_2_2(item, 2);
-        return map.set(tmp[0], tmp[1].source.uri);
-      });
-      ref.current = map;
-    };
-    cResult[1] = arg2;
-    cResult[2] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[2];
-  }
-  if (cResult[3] === arg0) {
-    let tmp6;
-    if (cResult[4] === arg2) {
-      tmp6 = cResult[5];
-    }
-    const effect = obj2.useEffect(tmp5, tmp6);
-    if (cResult[6] === arg0) {
-      let tmp8;
-      let tmp9;
-      if (cResult[7] === arg1) {
-        tmp8 = cResult[8];
-        tmp9 = cResult[9];
-      }
-      const effect1 = obj2.useEffect(tmp8, tmp9);
-    }
-    const fn2 = function h() {
-      if (null != closure_0) {
-        let c0 = false;
-        swapTextures(closure_0, ref.current, closure_1, () => c0);
-        return () => {
-          c0 = true;
-        };
-      }
-    };
-    const items = [arg0, arg1];
-    cResult[6] = arg0;
-    cResult[7] = arg1;
-    cResult[8] = fn2;
-    cResult[9] = items;
-    tmp9 = items;
-    tmp8 = fn2;
-  }
-  const items1 = [arg0, arg2];
-  cResult[3] = arg0;
-  cResult[4] = arg2;
-  cResult[5] = items1;
-  tmp6 = items1;
-}) : (function useCheckpointCharacterTextureSwaps(arg0, arg1, arg2) {
+let react = react_mod;
+let result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointCharacterTextureSwaps.tsx");
+
+export function useCheckpointCharacterTextureSwaps(arg0, memo2, arg2) {
+  let ref;
   let closure_0 = arg0;
-  let closure_1 = arg1;
+  let closure_1 = memo2;
   let closure_2 = arg2;
   const useRef = react.useRef;
   map = new Map();
-  const ref = useRef(map);
+  react = useRef(map);
   const items = [arg0, arg2];
   const effect = react.useEffect(() => {
     map = new Map();
@@ -294,17 +220,17 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpo
     });
     ref.current = map;
   }, items);
-  const items1 = [arg0, arg1];
+  const items1 = [arg0, memo2];
   const effect1 = react.useEffect(() => {
+    function swapTextures() {
+      return closure_1_5(...arguments);
+    }
     if (null != closure_0) {
       let c0 = false;
-      swapTextures(closure_0, ref.current, closure_1, () => c0);
+      swapTextures(closure_0, ref.current, memo2, () => c0);
       return () => {
         c0 = true;
       };
     }
   }, items1);
-});
-let result = size.fileFinishedImporting("modules/checkpoint/native/useCheckpointCharacterTextureSwaps.tsx");
-
-export const useCheckpointCharacterTextureSwaps = tmp2;
+}

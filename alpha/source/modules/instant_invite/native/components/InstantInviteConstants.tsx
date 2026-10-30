@@ -1,39 +1,39 @@
-// Module ID: 9128
-// Function ID: 9129
+// Module ID: 9141
+// Function ID: 9142
 // Name: components/InstantInviteConstants
-// Dependencies: [17, 9092, 1084, 9129, 9132, 587, 1125, 9086, 9133, 5717, 9134, 1628, 9135, 5247, 9136, 2000, 9097, 1381, 9153, 9154, 7881, 7624, 5947, 9155, 9156, 9157, 9158, 9159, 9160, 9161, 9162, 2]
+// Dependencies: [17, 9105, 1072, 9142, 9145, 575, 1114, 9099, 9146, 5723, 9147, 1623, 9148, 5253, 9149, 1995, 9110, 1376, 9166, 9167, 7887, 7629, 5954, 9168, 9169, 9170, 9171, 9172, 9173, 9174, 9175, 2]
 
-// Module 9128 (components/InstantInviteConstants)
+// Module 9141 (components/InstantInviteConstants)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5717 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5947 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7624 */;
-import getInviteURLDefault from "getInviteURL" /* 9097 */;
-import ShareDefault from "Share" /* 9129 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9132 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9133 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9134 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9135 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9153 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9154 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9155 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9156 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 9157 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 9158 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 9159 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 9160 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 9161 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 9162 */;
-import InstantInviteConstants from "InstantInviteConstants" /* 9092 */;
-import Constants from "Constants" /* 1084 */;
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1628 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1381 */;
-import DCDSendUtils_mod from "DCDSendUtils" /* 7881 */;
-import InstantInviteUtils_mod from "instant_invite/InstantInviteUtils" /* 9086 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5723 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5954 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7629 */;
+import getInviteURLDefault from "getInviteURL" /* 9110 */;
+import ShareDefault from "Share" /* 9142 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9145 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9146 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9147 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9148 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9166 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9167 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9168 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9169 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 9170 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 9171 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 9172 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 9173 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 9174 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 9175 */;
+import InstantInviteConstants from "InstantInviteConstants" /* 9105 */;
+import Constants from "Constants" /* 1072 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1623 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1376 */;
+import DCDSendUtils_mod from "DCDSendUtils" /* 7887 */;
+import InstantInviteUtils_mod from "instant_invite/InstantInviteUtils" /* 9099 */;
 import size from "module_2" /* 2 */;
 
 let DCDSendUtils;
@@ -108,7 +108,7 @@ const obj4 = {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { link: getInviteURLDefault(code), location: _location, channel };
-    const tmp2 = asyncRequire(9136, dependencyMap.paths);
+    const tmp2 = asyncRequire(9149, dependencyMap.paths);
     const combined = "InstantInviteQRCodeActionSheet-" + code;
     openLazy(tmp2, combined, obj, "stack");
   }
@@ -132,14 +132,14 @@ const obj5 = {
     const code = channel.code;
     ({ message, location: _location } = channel);
     let tmp = channel;
-    let obj = channel(9086);
+    let obj = channel(9099);
     obj.trackOptionClicked(code, channel, constants.SMS, _location);
-    let obj2 = channel(1381);
+    let obj2 = channel(1376);
     if (obj2.isIOS()) {
-      let obj3 = code(5247);
+      let obj3 = code(5253);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(7881);
+    const tmpResult = tmp(7887);
     tmpResult.sendSMS({ body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;
@@ -198,14 +198,14 @@ const obj6 = {
     const code = channel.code;
     ({ message, location: _location } = channel);
     let tmp = channel;
-    let obj = channel(9086);
+    let obj = channel(9099);
     obj.trackOptionClicked(code, channel, constants.EMAIL, _location);
-    let obj2 = channel(1381);
+    let obj2 = channel(1376);
     if (obj2.isIOS()) {
-      let obj3 = code(5247);
+      let obj3 = code(5253);
       obj3.hideActionSheet();
     }
-    const tmpResult = tmp(7881);
+    const tmpResult = tmp(7887);
     tmpResult.sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
       let id;
       let intl;

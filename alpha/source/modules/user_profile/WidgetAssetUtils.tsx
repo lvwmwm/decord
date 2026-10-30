@@ -1,12 +1,12 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14928
+// Function ID: 14929
 // Name: WidgetAssetUtils
-// Dependencies: [1084, 1415, 2]
+// Dependencies: [1072, 1410, 2]
 // Exports: getWidgetAssetURL
 
-// Module 14891 (WidgetAssetUtils)
-import Constants from "Constants" /* 1084 */;
-import AvatarUtils from "AvatarUtils" /* 1415 */;
+// Module 14928 (WidgetAssetUtils)
+import Constants from "Constants" /* 1072 */;
+import AvatarUtils from "AvatarUtils" /* 1410 */;
 import size from "module_2" /* 2 */;
 
 let CDN_HOST;

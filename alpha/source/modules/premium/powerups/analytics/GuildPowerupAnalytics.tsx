@@ -1,57 +1,28 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 14067
+// Function ID: 14068
 // Name: GuildPowerupAnalytics
-// Dependencies: [19, 1084, 558, 576, 1264, 2]
+// Dependencies: [19, 1072, 1253, 2]
+// Exports: useLogPowerupModalOpened
 
-// Module 13935 (GuildPowerupAnalytics)
-import Constants from "Constants" /* 1084 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14067 (GuildPowerupAnalytics)
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
-
+let react = react_mod;
 const AnalyticEvents = Constants.AnalyticEvents;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useLogPowerupModalOpened(guild_id, skuId, type) {
-  _require = guild_id;
-  dependencyMap = type;
-  let obj = require("react");
-  const cResult = obj.c(5);
-  if (cResult[0] === guild_id) {
-    if (cResult[1] === skuId.skuId) {
-      let tmp2;
-      let tmp3;
-      if (cResult[2] === type) {
-        tmp2 = cResult[3];
-        tmp3 = cResult[4];
-      }
-      const effect = react.useEffect(tmp2, tmp3);
-    }
-  }
-  const fn = function l() {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { type, sku_id: skuId.skuId, guild_id };
-    obj.track(AnalyticEvents.OPEN_MODAL, obj2);
-  };
-  const items = [type, guild_id, skuId.skuId];
-  cResult[0] = guild_id;
-  cResult[1] = skuId.skuId;
-  cResult[2] = type;
-  cResult[3] = fn;
-  cResult[4] = items;
-  tmp3 = items;
-  tmp2 = fn;
-}) : (function useLogPowerupModalOpened(guild_id, skuId, type) {
-  const items = [type, guild_id, skuId.skuId];
-  const effect = react.useEffect(() => {
-    const obj = AnalyticsUtilsDefault;
-    const obj2 = { type, sku_id: skuId.skuId, guild_id };
-    obj.track(AnalyticEvents.OPEN_MODAL, obj2);
-  }, items);
-});
 const result = size.fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
 
 export const ModalType = { DETAIL: "Boost Perk Shop Details", DEACTIVATE: "Boost Perk Shop Disable" };
-export const useLogPowerupModalOpened = tmp2;
+export function useLogPowerupModalOpened(guildId, powerup, DEACTIVATE) {
+  let type;
+  const guild_id = guildId;
+  react = DEACTIVATE;
+  const items = [DEACTIVATE, guildId, powerup.skuId];
+  const effect = react.useEffect(() => {
+    const obj = AnalyticsUtilsDefault;
+    const obj2 = { type, sku_id: powerup.skuId, guild_id };
+    obj.track(AnalyticEvents.OPEN_MODAL, obj2);
+  }, items);
+}

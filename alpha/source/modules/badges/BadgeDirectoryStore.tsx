@@ -1,18 +1,18 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8755
+// Function ID: 8756
 // Name: BadgeDirectoryStore
-// Dependencies: [1389, 1101, 1457, 8722, 569, 8726, 504, 584, 2]
+// Dependencies: [1384, 1090, 1452, 8756, 559, 8760, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8721 (BadgeDirectoryStore)
+// Module 8755 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import BackoffDefault from "Backoff" /* 569 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import DurationsDefault from "Durations" /* 1101 */;
-import LRUCacheDefault from "LRUCache" /* 1457 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8722 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8726 */;
-import UserStore from "UserStore" /* 1389 */;
+import BackoffDefault from "Backoff" /* 559 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import DurationsDefault from "Durations" /* 1090 */;
+import LRUCacheDefault from "LRUCache" /* 1452 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8756 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8760 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -74,9 +74,9 @@ class BadgeDirectoryStore extends Store {
     }
     return tmp3;
   }
-  hasCatalogFetchErrorFor(targetUserId) {
-    let tmp = targetUserId;
-    if (targetUserId == null) {
+  hasCatalogFetchErrorFor(displayedUserId) {
+    let tmp = displayedUserId;
+    if (displayedUserId == null) {
       const currentUser = UserStore.getCurrentUser();
       let id;
       if (currentUser != null) {
@@ -200,7 +200,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f103203 = (badge_id) => {
+    const f92985 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +215,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f103203));
+    peekResult.badges = new Map(badges.map(f92985));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f103203));
+    new Map(badges.map(f92985));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

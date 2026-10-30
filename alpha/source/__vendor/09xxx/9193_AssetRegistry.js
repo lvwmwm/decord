@@ -1,10 +1,10 @@
 // Module ID: 9193
 // Function ID: 9194
 // Name: AssetRegistry
-// Dependencies: [1131]
+// Dependencies: [1120]
 
 // Module 9193 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1131 */;
+import AssetRegistry from "AssetRegistry" /* 1120 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [1, 2], hash: "acab5012253c87ed34de4d06c393d7c0", name: "voice_bar_phone", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "3db3f02153afc41647b2d1efd43e1f34", name: "ic_event_calendar", type: "png" });

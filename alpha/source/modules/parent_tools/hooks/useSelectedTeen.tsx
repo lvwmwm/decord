@@ -1,69 +1,21 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8363
+// Function ID: 8364
 // Name: useSelectedTeen
-// Dependencies: [1389, 7703, 558, 576, 573, 2]
+// Dependencies: [1384, 7708, 563, 2]
+// Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 8182 (useSelectedTeen)
-import react from "react" /* 576 */;
-import UserStore from "UserStore" /* 1389 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7703 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+// Module 8363 (useSelectedTeen)
+import useStateFromStores from "useStateFromStores" /* 563 */;
+import UserStore from "UserStore" /* 1384 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7708 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-let tmp;
-const useStateFromStores = tmp(573);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTeen() {
-  let selectedTeenId;
-  let stateFromStores;
-  let tmp10;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  const tmp = stateFromStores;
-  const obj = stateFromStores(576);
-  const cResult = obj.c(5);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
-    const fn = function s() {
-      return selectedTeenId.getSelectedTeenId();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = tmp(573);
-  stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
-    cResult[2] = items1;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-  }
-  if (cResult[3] !== stateFromStores) {
-    const fn2 = function u() {
-      let user;
-      if (null !== stateFromStores) {
-        user = UserStore.getUser(tmp);
-      }
-      return user;
-    };
-    cResult[3] = stateFromStores;
-    cResult[4] = fn2;
-    tmp10 = fn2;
-  } else {
-    tmp10 = cResult[4];
-  }
-  const tmpResult2 = tmp(573);
-  return tmpResult2.useStateFromStores(tmp8, tmp10);
-}) : (function useSelectedTeen() {
+const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");
+
+export function useSelectedTeen() {
   let closure_0;
   let selectedTeenId;
   const items = [FamilyCenterStore];
@@ -78,35 +30,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelecte
     }
     return user;
   });
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSelectedTeenId() {
-  let selectedTeenId;
-  let tmp4;
-  let tmp5;
-  const obj = react;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [FamilyCenterStore];
-    const fn = function o() {
-      return selectedTeenId.getSelectedTeenId();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = useStateFromStores;
-  return tmpResult.useStateFromStores(tmp4, tmp5);
-}) : (function useSelectedTeenId() {
+}
+export function useSelectedTeenId() {
   let selectedTeenId;
   const items = [FamilyCenterStore];
   const obj = useStateFromStores;
   return obj.useStateFromStores(items, () => selectedTeenId.getSelectedTeenId());
-});
-const result = size.fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");
-
-export const useSelectedTeen = tmp2;
-export const useSelectedTeenId = tmp3;
+}

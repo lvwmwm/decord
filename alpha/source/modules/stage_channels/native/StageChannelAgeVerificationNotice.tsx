@@ -1,19 +1,18 @@
-// Module ID: 7940
-// Function ID: 7941
+// Module ID: 7946
+// Function ID: 7947
 // Name: StageChannelAgeVerificationNotice
-// Dependencies: [19, 17, 1084, 21, 5005, 587, 558, 576, 6713, 1125, 5271, 5694, 2065, 7941, 6716, 5724, 8012, 8011, 6745, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 575, 6720, 1114, 5619, 5700, 2062, 7947, 6723, 5730, 8018, 8017, 6752, 2]
+// Exports: default
 
-// Module 7940 (StageChannelAgeVerificationNotice)
+// Module 7946 (StageChannelAgeVerificationNotice)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6745 */;
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6752 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -25,159 +24,7 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const View = react_native.View;
-const HelpdeskArticles = Constants.HelpdeskArticles;
-({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { container: obj2, containerWithDivider: obj3, divider: obj4, noticeContainer: obj5, icon: { flexShrink: 0 }, linkText: { textDecorationLine: "underline" }, contentText: { flex: 1 } };
-obj2 = { marginTop: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj3 = { paddingVertical: nativeDefault.space.PX_16 };
-obj4 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
-obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
-let closure_8 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
-  let closure_1;
-  let formatResult;
-  let items;
-  let tmp = onConfirmPress;
-  let obj = onConfirmPress(576);
-  const cResult = obj.c(17);
-  onConfirmPress = onConfirmPress.onConfirmPress;
-  const noBackground = onConfirmPress.noBackground;
-  const tmp4 = closure_8();
-  importDefault = tmp4;
-  let obj2 = onConfirmPress(6713);
-  const isVerifiedTeen = obj2.useIsVerifiedTeen();
-  if (cResult[0] === isVerifiedTeen) {
-    if (cResult[1] === onConfirmPress) {
-      let tmp6;
-      if (cResult[2] === tmp4) {
-        tmp6 = cResult[3];
-      }
-      if (noBackground) {
-        let WarningIcon;
-        if (cResult[4] === isVerifiedTeen) {
-          let tmp11;
-          if (cResult[5] === tmp4.icon) {
-            tmp11 = cResult[6];
-          }
-          if (cResult[7] === tmp6) {
-            let tmp15;
-            if (cResult[8] === tmp4.contentText) {
-              tmp15 = cResult[9];
-            }
-            if (cResult[10] === tmp4.noticeContainer) {
-              if (cResult[11] === tmp11) {
-                let tmp18;
-                if (cResult[12] === tmp15) {
-                  tmp18 = cResult[13];
-                }
-                return tmp18;
-              }
-            }
-            const obj3 = { style: tmp4.noticeContainer, children: items };
-            items = [tmp11, tmp15];
-            const tmp21 = closure_6(View, obj3);
-            cResult[10] = tmp4.noticeContainer;
-            cResult[11] = tmp11;
-            cResult[12] = tmp15;
-            cResult[13] = tmp21;
-            tmp18 = tmp21;
-          }
-          const obj4 = { variant: "text-sm/medium", color: "text-subtle", style: tmp4.contentText, children: tmp6 };
-          const tmp17 = closure_5(tmp(5271).Text, obj4);
-          cResult[7] = tmp6;
-          cResult[8] = tmp4.contentText;
-          cResult[9] = tmp17;
-          tmp15 = tmp17;
-        }
-        const tmp12 = closure_5;
-        if (isVerifiedTeen) {
-          WarningIcon = tmp(5724).CircleInformationIcon;
-        } else {
-          WarningIcon = tmp(8012).WarningIcon;
-        }
-        const obj5 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp4.icon };
-        const tmp12Result = tmp12(WarningIcon, obj5);
-        cResult[4] = isVerifiedTeen;
-        cResult[5] = tmp4.icon;
-        cResult[6] = tmp12Result;
-        tmp11 = tmp12Result;
-      } else {
-        let str = "warning";
-        if (isVerifiedTeen) {
-          str = "info";
-        }
-        if (cResult[14] === tmp6) {
-          let tmp8;
-          if (cResult[15] === str) {
-            tmp8 = cResult[16];
-          }
-          return tmp8;
-        }
-        obj6 = { type: str, message: tmp6, role: "none" };
-        const tmp10 = closure_5(tmp(8011).InlineNotice, obj6);
-        cResult[14] = tmp6;
-        cResult[15] = str;
-        cResult[16] = tmp10;
-        tmp8 = tmp10;
-      }
-    }
-  }
-  const intl = tmp(1125).intl;
-  const format = intl.format;
-  const t = tmp(1125).t;
-  if (isVerifiedTeen) {
-    const obj7 = {
-      hook(children) {
-          let obj = {
-            variant: "text-sm/medium",
-            color: "text-default",
-            style: closure_1.linkText,
-            onPress() {
-              const tmp = closure_1(dependencyMap[11]);
-              const obj = closure_1(dependencyMap[12]);
-              tmp(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
-              if (onConfirmPress != null) {
-                onConfirmPress();
-              }
-            },
-            children
-          };
-          return hasOwnProperty(Text_Text.Text, obj);
-        }
-    };
-    formatResult = format(t.iWGjcg, obj7);
-  } else {
-    const obj8 = {
-      hook(children) {
-          let obj = {
-            variant: "text-sm/medium",
-            color: "text-default",
-            style: closure_1.linkText,
-            onPress() {
-              const obj = closure_1(dependencyMap[13]);
-              const obj2 = { entryPoint: onConfirmPress(dependencyMap[14]).AgeVerificationModalEntryPoint.START_STAGE_PROMPT };
-              const result = obj.showAgeVerificationGetStartedModal(obj2);
-              if (closure_1_0 != null) {
-                closure_1_0();
-              }
-            },
-            children
-          };
-          return hasOwnProperty(Text_Text.Text, obj);
-        }
-    };
-    formatResult = format(t.edpbxy, obj8);
-  }
-  cResult[0] = isVerifiedTeen;
-  cResult[1] = onConfirmPress;
-  cResult[2] = tmp4;
-  cResult[3] = formatResult;
-  tmp6 = formatResult;
-}) : (function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
+function StageChannelAgeVerificationNoticeWrapper(onConfirmPress) {
   let closure_1;
   let formatResult;
   let items;
@@ -186,11 +33,11 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
   const noBackground = onConfirmPress.noBackground;
   let tmp = closure_8();
   importDefault = tmp;
-  let obj = onConfirmPress(6713);
+  let obj = onConfirmPress(6720);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  const intl = onConfirmPress(1125).intl;
+  const intl = onConfirmPress(1114).intl;
   const format = intl.format;
-  const t = onConfirmPress(1125).t;
+  const t = onConfirmPress(1114).t;
   if (isVerifiedTeen) {
     let obj2 = {
       hook(children) {
@@ -199,8 +46,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const tmp = closure_1(dependencyMap[11]);
-              const obj = closure_1(dependencyMap[12]);
+              const tmp = closure_1(dependencyMap[9]);
+              const obj = closure_1(dependencyMap[10]);
               tmp(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
               if (onConfirmPress != null) {
                 onConfirmPress();
@@ -220,8 +67,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const obj = closure_1(dependencyMap[13]);
-              const obj2 = { entryPoint: onConfirmPress(dependencyMap[14]).AgeVerificationModalEntryPoint.START_STAGE_PROMPT };
+              const obj = closure_1(dependencyMap[11]);
+              const obj2 = { entryPoint: onConfirmPress(dependencyMap[12]).AgeVerificationModalEntryPoint.START_STAGE_PROMPT };
               const result = obj.showAgeVerificationGetStartedModal(obj2);
               if (closure_1_0 != null) {
                 closure_1_0();
@@ -240,18 +87,18 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
     const tmp8 = closure_6;
     const tmp9 = View;
     if (isVerifiedTeen) {
-      WarningIcon = tmp2(5724).CircleInformationIcon;
+      WarningIcon = tmp2(5730).CircleInformationIcon;
     } else {
-      WarningIcon = tmp2(8012).WarningIcon;
+      WarningIcon = tmp2(8018).WarningIcon;
     }
     const obj5 = { size: "refresh_sm", color: nativeDefault.colors.TEXT_DEFAULT, style: tmp.icon };
     items = [closure_5(WarningIcon, obj5), ];
     obj6 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.contentText, children: formatResult };
-    items[1] = closure_5(onConfirmPress(5271).Text, obj6);
+    items[1] = closure_5(onConfirmPress(5619).Text, obj6);
     tmp6Result = tmp8(tmp9, obj4);
   } else {
     let str = "warning";
-    const InlineNotice = tmp2(8011).InlineNotice;
+    const InlineNotice = tmp2(8017).InlineNotice;
     const tmp6 = closure_5;
     if (isVerifiedTeen) {
       str = "info";
@@ -260,130 +107,22 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageCh
     tmp6Result = tmp6(InlineNotice, obj7);
   }
   return tmp6Result;
-});
+}
+const View = react_native.View;
+const HelpdeskArticles = Constants.HelpdeskArticles;
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { container: obj2, containerWithDivider: obj3, divider: obj4, noticeContainer: obj5, icon: { flexShrink: 0 }, linkText: { textDecorationLine: "underline" }, contentText: { flex: 1 } };
+obj2 = { marginTop: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { paddingVertical: nativeDefault.space.PX_16 };
+obj4 = { borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
+obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.sm };
+let closure_8 = createStyles(obj);
 let obj6 = { TOP: 0, [0]: "TOP", BOTTOM: 1, [1]: "BOTTOM" };
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannelAgeVerificationNotice(arg0) {
-  let channelId;
-  let divider;
-  let items2;
-  let noBackground;
-  let onConfirmPress;
-  let style;
-  const obj = react2;
-  const cResult = obj.c(21);
-  ({ noBackground, onConfirmPress, style, divider, channelId } = arg0);
-  const tmp2 = closure_8();
-  const useShouldAgeVerifyToSpeakForCurrentUser = useStageSpeakingForCurrentUser.useShouldAgeVerifyToSpeakForCurrentUser;
-  useStageSpeakingForCurrentUser;
-  if (useShouldAgeVerifyToSpeakForCurrentUser(channelId)) {
-    let arr;
-    if (cResult[0] !== divider) {
-      const _Array = Array;
-      let tmp5 = divider;
-      if (!Array.isArray(divider)) {
-        let items1;
-        if (null != divider) {
-          const items = [divider];
-          items1 = items;
-        } else {
-          items1 = [];
-        }
-        tmp5 = items1;
-      }
-      cResult[0] = divider;
-      cResult[1] = tmp5;
-      arr = tmp5;
-    } else {
-      arr = cResult[1];
-    }
-    if (cResult[2] === arr) {
-      let tmp6;
-      if (cResult[3] === tmp2.divider) {
-        tmp6 = cResult[4];
-      }
-      const tmp11 = arr.length > 0 ? tmp2.containerWithDivider : tmp2.container;
-      if (cResult[5] === style) {
-        let tmp12;
-        if (cResult[6] === tmp11) {
-          tmp12 = cResult[7];
-        }
-        if (cResult[8] === noBackground) {
-          let tmp13;
-          if (cResult[9] === onConfirmPress) {
-            tmp13 = cResult[10];
-          }
-          if (cResult[11] === tmp12) {
-            let tmp17;
-            if (cResult[12] === tmp13) {
-              tmp17 = cResult[13];
-            }
-            if (cResult[14] === arr) {
-              let tmp21;
-              if (cResult[15] === tmp2.divider) {
-                tmp21 = cResult[16];
-              }
-              if (cResult[17] === tmp6) {
-                if (cResult[18] === tmp17) {
-                  let tmp26;
-                  if (cResult[19] === tmp21) {
-                    tmp26 = cResult[20];
-                  }
-                  return tmp26;
-                }
-              }
-              const obj2 = { children: items2 };
-              items2 = [tmp6, tmp17, tmp21];
-              const tmp29 = metroRequire(metroImportDefault, obj2);
-              cResult[17] = tmp6;
-              cResult[18] = tmp17;
-              cResult[19] = tmp21;
-              cResult[20] = tmp29;
-              tmp26 = tmp29;
-            }
-            let hasItem = arr.includes(obj6.BOTTOM);
-            if (hasItem) {
-              const obj3 = { style: tmp2.divider };
-              hasItem = hasOwnProperty(View, obj3);
-            }
-            cResult[14] = arr;
-            cResult[15] = tmp2.divider;
-            cResult[16] = hasItem;
-            tmp21 = hasItem;
-          }
-          const obj4 = { style: tmp12, children: tmp13 };
-          const tmp20 = hasOwnProperty(View, obj4);
-          cResult[11] = tmp12;
-          cResult[12] = tmp13;
-          cResult[13] = tmp20;
-          tmp17 = tmp20;
-        }
-        const obj5 = { noBackground, onConfirmPress };
-        const tmp16 = hasOwnProperty(closure_9, obj5);
-        cResult[8] = noBackground;
-        cResult[9] = onConfirmPress;
-        cResult[10] = tmp16;
-        tmp13 = tmp16;
-      }
-      const items3 = [tmp11, style];
-      cResult[5] = style;
-      cResult[6] = tmp11;
-      cResult[7] = items3;
-      tmp12 = items3;
-    }
-    let hasItem1 = arr.includes(obj6.TOP);
-    if (hasItem1) {
-      obj6 = { style: tmp2.divider };
-      hasItem1 = hasOwnProperty(View, obj6);
-    }
-    cResult[2] = arr;
-    cResult[3] = tmp2.divider;
-    cResult[4] = hasItem1;
-    tmp6 = hasItem1;
-  } else {
-    return null;
-  }
-}) : (function StageChannelAgeVerificationNotice(arg0) {
+let result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx");
+
+export default function StageChannelAgeVerificationNotice(arg0) {
   let channelId;
   let divider;
   let items3;
@@ -419,7 +158,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
       tmp9 = hasOwnProperty(View, obj);
     }
     const items2 = [tmp9, , ];
-    const obj2 = { style: items3, children: hasOwnProperty(closure_9, obj3) };
+    const obj2 = { style: items3, children: hasOwnProperty(StageChannelAgeVerificationNoticeWrapper, obj3) };
     items3 = [arr.length > 0 ? tmp.containerWithDivider : tmp.container, style];
     obj3 = { noBackground, onConfirmPress };
     items2[1] = hasOwnProperty(View, obj2);
@@ -434,8 +173,5 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function StageChannel
   } else {
     return null;
   }
-});
-let result = size.fileFinishedImporting("modules/stage_channels/native/StageChannelAgeVerificationNotice.tsx");
-
-export default tmp5;
+};
 export const DividerPosition = obj6;

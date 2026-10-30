@@ -1,32 +1,22 @@
-// Module ID: 9136
-// Function ID: 9137
+// Module ID: 9149
+// Function ID: 9150
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 4879, 1389, 1084, 21, 5005, 587, 6943, 558, 576, 504, 1125, 584, 5700, 7308, 9137, 5271, 7358, 2]
+// Dependencies: [19, 17, 4880, 1384, 1072, 21, 5009, 575, 6951, 504, 1114, 572, 5706, 7360, 7315, 9150, 5619, 2]
+// Exports: default
 
-// Module 9136 (InstantInviteQRCodeActionSheet)
+// Module 9149 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
-import get_initialized from "get initialized" /* 504 */;
-import react2 from "react" /* 576 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import nativeDefault from "native" /* 587 */;
-import intl5 from "intl" /* 1125 */;
-import ToastUtils from "ToastUtils" /* 5700 */;
-import GuildIcon from "GuildIcon" /* 6943 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7308 */;
-import ActionSheet2 from "ActionSheet" /* 7358 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 9137 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import nativeDefault from "native" /* 575 */;
+import GuildIconDefault from "GuildIcon" /* 6951 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 9150 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-const GuildIconDefault = GuildIcon;
-let _require;
 
 let c10;
 let c9;
@@ -43,147 +33,69 @@ obj2 = { padding: nativeDefault.space.PX_12, display: "flex", alignItems: "cente
 createStyles = createStyles.createStyles;
 obj3 = { padding: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.lg + nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.WHITE };
 let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDescription(channel) {
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
+
+export default function InstantInviteQRCodeActionSheet(link) {
+  let _location;
+  let channel;
   let currentUser;
   let intl3;
   let intl4;
-  let obj3;
-  let obj4;
-  let tmp4;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(11);
-  channel = channel.channel;
-  const _location = channel.location;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function s() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp4 = items;
-    tmp5 = fn;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp4, tmp5);
-  if (null != channel) {
-    let tmp8;
-    if (cResult[2] !== channel.guild_id) {
-      const _Symbol = Symbol;
-      let forResult = Symbol.for("react.early_return_sentinel");
-      const guild = GuildStore.getGuild(channel.guild_id);
-      if (null != guild) {
-        const obj2 = { visible: intl3.format(intl5.t.VK3zyF, obj3), plainText: intl4.formatToPlainString(intl5.t.VK3zyF, obj4) };
-        intl3 = tmp(1125).intl;
-        obj3 = { name: guild.name };
-        intl4 = tmp(1125).intl;
-        forResult = obj2;
-        obj4 = { name: guild.name };
-      }
-      cResult[2] = channel.guild_id;
-      cResult[3] = forResult;
-      tmp8 = forResult;
-    } else {
-      tmp8 = cResult[3];
-    }
-    const _Symbol2 = Symbol;
-    if (tmp8 !== Symbol.for("react.early_return_sentinel")) {
-      return tmp8;
-    }
-  }
-  let tmp12 = null;
-  if (_location === metroImportDefault.ADD_FRIENDS_MODAL) {
-    tmp12 = null;
-    if (null != stateFromStores) {
-      let tmp13;
-      let tmp15;
-      if (cResult[4] !== stateFromStores.username) {
-        const intl = tmp(1125).intl;
-        const obj5 = { name: stateFromStores.username };
-        const formatResult = intl.format(intl5.t.zDGAfl, obj5);
-        cResult[4] = stateFromStores.username;
-        cResult[5] = formatResult;
-        tmp13 = formatResult;
-      } else {
-        tmp13 = cResult[5];
-      }
-      if (cResult[6] !== stateFromStores.username) {
-        const intl2 = tmp(1125).intl;
-        const obj6 = { name: stateFromStores.username };
-        const formatToPlainStringResult = intl2.formatToPlainString(intl5.t.zDGAfl, obj6);
-        cResult[6] = stateFromStores.username;
-        cResult[7] = formatToPlainStringResult;
-        tmp15 = formatToPlainStringResult;
-      } else {
-        tmp15 = cResult[7];
-      }
-      if (cResult[8] === tmp13) {
-        let tmp17;
-        if (cResult[9] === tmp15) {
-          tmp17 = cResult[10];
-        }
-        tmp12 = tmp17;
-      }
-      const obj7 = { visible: tmp13, plainText: tmp15 };
-      cResult[8] = tmp13;
-      cResult[9] = tmp15;
-      cResult[10] = obj7;
-      tmp17 = obj7;
-    }
-  }
-  return tmp12;
-}) : (function useDescription(channel) {
-  let currentUser;
-  let intl;
-  let intl2;
-  let intl3;
-  let intl4;
+  let intl5;
+  let intl6;
+  let items3;
+  let obj11;
+  let obj15;
+  let obj16;
+  let obj2;
   let obj3;
   let obj6;
   let obj7;
-  channel = channel.channel;
-  const _location = channel.location;
+  let plainText;
+  let presentFriendRequestAcceptedToast;
+  let stringResult;
+  let tmp12;
+  let tmp6;
+  link = link.link;
+  const tmp = closure_11();
+  const tmp2 = constants;
+  if (link.location === constants.ADD_FRIENDS_MODAL) {
+    const intl2 = presentFriendRequestAcceptedToast(1114).intl;
+    stringResult = intl2.string(presentFriendRequestAcceptedToast(1114).t.VUNqoc);
+    tmp6 = presentFriendRequestAcceptedToast;
+  } else {
+    const intl = presentFriendRequestAcceptedToast(1114).intl;
+    stringResult = intl.string(presentFriendRequestAcceptedToast(1114).t.DqE26p);
+    tmp6 = presentFriendRequestAcceptedToast;
+  }
+  ({ channel, location: _location } = link);
   const items = [UserStore];
-  const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
+  const tmp6Result = tmp6(504);
+  const stateFromStores = tmp6Result.useStateFromStores(items, () => currentUser.getCurrentUser());
   if (null != channel) {
     const guild = GuildStore.getGuild(channel.guild_id);
     if (null != guild) {
-      const obj2 = { visible: intl3.format(intl5.t.VK3zyF, obj3), plainText: intl4.formatToPlainString(intl5.t.VK3zyF, obj4) };
-      intl3 = tmp(1125).intl;
+      let obj = { visible: intl5.format(tmp6(1114).t.VK3zyF, obj2), plainText: intl6.formatToPlainString(tmp6(1114).t.VK3zyF, obj3) };
+      intl5 = tmp6(1114).intl;
+      obj2 = { name: guild.name };
+      intl6 = tmp6(1114).intl;
+      tmp12 = obj;
       obj3 = { name: guild.name };
-      intl4 = tmp(1125).intl;
-      return obj2;
     }
-  }
-  let tmp6 = null;
-  if (_location === metroImportDefault.ADD_FRIENDS_MODAL) {
-    tmp6 = null;
-    if (null != stateFromStores) {
-      const obj5 = { visible: intl.format(intl5.t.zDGAfl, obj6), plainText: intl2.formatToPlainString(intl5.t.zDGAfl, obj7) };
-      intl = tmp(1125).intl;
-      obj6 = { name: stateFromStores.username };
-      intl2 = tmp(1125).intl;
-      tmp6 = obj5;
-      obj7 = { name: stateFromStores.username };
+    const channel2 = link.channel;
+    let tmp13 = null;
+    if (null != channel2) {
+      tmp13 = null;
+      const obj8 = GuildStore;
+      if (null != GuildStore.getGuild(channel2.guild_id)) {
+        const obj4 = { guild: obj8.getGuild(channel2.guild_id), size: tmp6(6951).GuildIconSizes.LARGE };
+        const tmp16 = GuildIconDefault;
+        tmp13 = closure_9(tmp16, obj4);
+      }
     }
-  }
-  return tmp6;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnFriendAdded(arg0) {
-  let closure_0;
-  let tmp2;
-  let tmp3;
-  _require = arg0;
-  let obj = require("react");
-  const cResult = obj.c(3);
-  if (cResult[0] !== arg0) {
-    const fn = function l() {
+    presentFriendRequestAcceptedToast = tmp6(5706).presentFriendRequestAcceptedToast;
+    const items1 = [presentFriendRequestAcceptedToast];
+    const effect = react.useEffect(() => {
       function handleRelationshipAdd(relationship) {
         relationship = relationship.relationship;
         if (relationship.type === constants.FRIEND) {
@@ -196,242 +108,45 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnF
         const obj = DispatcherDefault;
         obj.unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       };
-    };
-    const items = [arg0];
-    cResult[0] = arg0;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp3 = items;
-    tmp2 = fn;
-  } else {
-    tmp2 = cResult[1];
-    tmp3 = cResult[2];
-  }
-  const effect = react.useEffect(tmp2, tmp3);
-}) : (function useOnFriendAdded(arg0) {
-  let closure_0 = arg0;
-  const items = [arg0];
-  const effect = react.useEffect(() => {
-    function handleRelationshipAdd(relationship) {
-      relationship = relationship.relationship;
-      if (relationship.type === constants.FRIEND) {
-        handleRelationshipAdd(relationship.user);
-      }
+    }, items1);
+    const obj5 = { header: closure_9(tmp6(7315).BottomSheetTitleHeader, obj6), children: closure_10(View, obj7) };
+    const ActionSheet = tmp6(7360).ActionSheet;
+    const obj9 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
+    plainText = undefined;
+    obj6 = { title: stringResult };
+    obj7 = { style: tmp.container, children: items3 };
+    const tmp23 = components_native_QRCodeDefault;
+    if (tmp12 != null) {
+      plainText = tmp12.plainText;
     }
-    let obj = DispatcherDefault;
-    const subscription = obj.subscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
-    return () => {
-      const obj = DispatcherDefault;
-      obj.unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
-    };
-  }, items);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteQRCodeActionSheet(link) {
-  let items;
-  let items1;
-  let obj10;
-  let tmp16;
-  let tmp5;
-  let tmp9;
-  const obj = react2;
-  const cResult = obj.c(26);
-  link = link.link;
-  const tmp4 = closure_11();
-  if (cResult[0] !== link) {
-    let stringResult;
-    if (link.location === metroImportDefault.ADD_FRIENDS_MODAL) {
-      const intl2 = tmp(1125).intl;
-      stringResult = intl2.string(tmp(1125).t.VUNqoc);
-    } else {
-      const intl = tmp(1125).intl;
-      stringResult = intl.string(tmp(1125).t.DqE26p);
+    const items2 = [closure_9(tmp23, obj9), ];
+    let tmp19Result = null != tmp13;
+    if (tmp19Result) {
+      const obj10 = { style: tmp.iconContainer, children: closure_9(View, obj11) };
+      obj11 = { style: tmp.icon, children: tmp13 };
+      tmp19Result = tmp19(tmp21, obj10);
     }
-    cResult[0] = link;
-    cResult[1] = stringResult;
-    tmp5 = stringResult;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmp8 = closure_12(link);
-  if (cResult[2] !== link) {
-    const channel = link.channel;
-    let tmp11 = null;
-    if (null != channel) {
-      tmp11 = null;
-      const obj2 = GuildStore;
-      if (null != GuildStore.getGuild(channel.guild_id)) {
-        const obj3 = { guild: obj2.getGuild(channel.guild_id), size: GuildIcon.GuildIconSizes.LARGE };
-        const tmp14 = GuildIconDefault;
-        tmp11 = React4(tmp14, obj3);
-      }
+    const obj12 = { children: items2 };
+    items2[1] = tmp19Result;
+    items3 = [closure_10(View, obj12), ];
+    let tmp19Result2 = null != tmp12;
+    if (tmp19Result2) {
+      const obj13 = { variant: "text-md/normal", children: tmp12.visible };
+      tmp19Result2 = tmp19(tmp6(5619).Text, obj13);
     }
-    cResult[2] = link;
-    cResult[3] = tmp11;
-    tmp9 = tmp11;
-  } else {
-    tmp9 = cResult[3];
+    items3[1] = tmp19Result2;
+    return closure_9(ActionSheet, obj5);
   }
-  closure_13(ToastUtils.presentFriendRequestAcceptedToast);
-  if (cResult[4] !== tmp5) {
-    const obj4 = { title: tmp5 };
-    const tmp18 = React4(BottomSheetTitleHeader.BottomSheetTitleHeader, obj4);
-    cResult[4] = tmp5;
-    cResult[5] = tmp18;
-    tmp16 = tmp18;
-  } else {
-    tmp16 = cResult[5];
-  }
-  let plainText;
-  if (tmp8 != null) {
-    plainText = tmp8.plainText;
-  }
-  if (cResult[6] === link) {
-    if (cResult[7] === tmp4.code) {
-      let tmp20;
-      if (cResult[8] === plainText) {
-        tmp20 = cResult[9];
-      }
-      if (cResult[10] === tmp9) {
-        if (cResult[11] === tmp4.icon) {
-          let tmp22;
-          if (cResult[12] === tmp4.iconContainer) {
-            tmp22 = cResult[13];
-          }
-          if (cResult[14] === tmp20) {
-            let tmp26;
-            let tmp30;
-            if (cResult[15] === tmp22) {
-              tmp26 = cResult[16];
-            }
-            if (cResult[17] !== tmp8) {
-              let tmp31 = null != tmp8;
-              if (tmp31) {
-                const obj5 = { variant: "text-md/normal", children: tmp8.visible };
-                tmp31 = React4(tmp(5271).Text, obj5);
-              }
-              cResult[17] = tmp8;
-              cResult[18] = tmp31;
-              tmp30 = tmp31;
-            } else {
-              tmp30 = cResult[18];
-            }
-            if (cResult[19] === tmp4.container) {
-              if (cResult[20] === tmp26) {
-                let tmp33;
-                if (cResult[21] === tmp30) {
-                  tmp33 = cResult[22];
-                }
-                if (cResult[23] === tmp16) {
-                  let tmp37;
-                  if (cResult[24] === tmp33) {
-                    tmp37 = cResult[25];
-                  }
-                  return tmp37;
-                }
-                const obj6 = { header: tmp16, children: tmp33 };
-                const tmp39 = React4(ActionSheet2.ActionSheet, obj6);
-                cResult[23] = tmp16;
-                cResult[24] = tmp33;
-                cResult[25] = tmp39;
-                tmp37 = tmp39;
-              }
-            }
-            const obj7 = { style: tmp4.container, children: items };
-            items = [tmp26, tmp30];
-            const tmp36 = authStore(View, obj7);
-            cResult[19] = tmp4.container;
-            cResult[20] = tmp26;
-            cResult[21] = tmp30;
-            cResult[22] = tmp36;
-            tmp33 = tmp36;
-          }
-          const obj8 = { children: items1 };
-          items1 = [tmp20, tmp22];
-          const tmp29 = authStore(View, obj8);
-          cResult[14] = tmp20;
-          cResult[15] = tmp22;
-          cResult[16] = tmp29;
-          tmp26 = tmp29;
-        }
-      }
-      let tmp23 = null != tmp9;
-      if (tmp23) {
-        const obj9 = { style: tmp4.iconContainer, children: React4(View, obj10) };
-        obj10 = { style: tmp4.icon, children: tmp9 };
-        tmp23 = React4(View, obj9);
-      }
-      cResult[10] = tmp9;
-      cResult[11] = tmp4.icon;
-      cResult[12] = tmp4.iconContainer;
-      cResult[13] = tmp23;
-      tmp22 = tmp23;
+  tmp12 = null;
+  if (_location === tmp2.ADD_FRIENDS_MODAL) {
+    tmp12 = null;
+    if (null != stateFromStores) {
+      const obj14 = { visible: intl3.format(tmp6(1114).t.zDGAfl, obj15), plainText: intl4.formatToPlainString(tmp6(1114).t.zDGAfl, obj16) };
+      intl3 = tmp6(1114).intl;
+      obj15 = { name: stateFromStores.username };
+      intl4 = tmp6(1114).intl;
+      tmp12 = obj14;
+      obj16 = { name: stateFromStores.username };
     }
   }
-  const obj11 = { text: link, size: 240, style: tmp4.code, accessibilityLabel: plainText };
-  const tmp21 = React4(components_native_QRCodeDefault, obj11);
-  cResult[6] = link;
-  cResult[7] = tmp4.code;
-  cResult[8] = plainText;
-  cResult[9] = tmp21;
-  tmp20 = tmp21;
-}) : (function InstantInviteQRCodeActionSheet(link) {
-  let items1;
-  let obj4;
-  let obj7;
-  let plainText;
-  let stringResult;
-  let tmp5;
-  link = link.link;
-  const tmp = closure_11();
-  if (link.location === metroImportDefault.ADD_FRIENDS_MODAL) {
-    const intl2 = intl5.intl;
-    stringResult = intl2.string(intl5.t.VUNqoc);
-    tmp5 = require;
-  } else {
-    const intl = intl5.intl;
-    stringResult = intl.string(intl5.t.DqE26p);
-    tmp5 = require;
-  }
-  const tmp8 = closure_12(link);
-  const channel = link.channel;
-  let tmp9 = null;
-  if (null != channel) {
-    tmp9 = null;
-    const obj = GuildStore;
-    if (null != GuildStore.getGuild(channel.guild_id)) {
-      const obj2 = { guild: obj.getGuild(channel.guild_id), size: tmp5(6943).GuildIconSizes.LARGE };
-      const tmp12 = GuildIconDefault;
-      tmp9 = React4(tmp12, obj2);
-    }
-  }
-  closure_13(tmp5(5700).presentFriendRequestAcceptedToast);
-  const obj3 = { header: React4(tmp5(7308).BottomSheetTitleHeader, { title: stringResult }), children: authStore(View, obj4) };
-  const ActionSheet = tmp5(7358).ActionSheet;
-  const obj5 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
-  plainText = undefined;
-  obj4 = { style: tmp.container, children: items1 };
-  const tmp17 = components_native_QRCodeDefault;
-  if (tmp8 != null) {
-    plainText = tmp8.plainText;
-  }
-  const items = [React4(tmp17, obj5), ];
-  let tmp14Result = null != tmp9;
-  if (tmp14Result) {
-    const obj6 = { style: tmp.iconContainer, children: React4(View, obj7) };
-    obj7 = { style: tmp.icon, children: tmp9 };
-    tmp14Result = tmp14(tmp16, obj6);
-  }
-  items[1] = tmp14Result;
-  items1 = [authStore(View, { children: items }), ];
-  let tmp14Result2 = null != tmp8;
-  if (tmp14Result2) {
-    const obj8 = { variant: "text-md/normal", children: tmp8.visible };
-    tmp14Result2 = tmp14(tmp5(5271).Text, obj8);
-  }
-  items1[1] = tmp14Result2;
-  return React4(ActionSheet, obj3);
-});
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteQRCodeActionSheet.tsx");
-
-export default tmp5;
+};

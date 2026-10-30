@@ -1,24 +1,23 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 14577
+// Function ID: 14578
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1084, 21, 5005, 558, 576, 9685, 2065, 14545, 5707, 1125, 5271, 5281, 7281, 2]
+// Dependencies: [19, 17, 1072, 21, 5009, 9710, 2062, 14578, 5712, 5619, 1114, 7286, 5629, 2]
+// Exports: default
 
-// Module 14544 (XboxLinkEducation)
+// Module 14577 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import Constants from "Constants" /* 1084 */;
-import intl4 from "intl" /* 1125 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2065 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import components_Button_Button from "components/Button/Button" /* 5281 */;
-import FastImageDefault from "FastImage" /* 5707 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7281 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9685 */;
-import _modDef14545 from "module_14545" /* 14545 */;
+import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1114 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2062 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import components_Button_Button from "components/Button/Button" /* 5629 */;
+import FastImageDefault from "FastImage" /* 5712 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7286 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9710 */;
+import _modDef14578 from "module_14578" /* 14578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -27,232 +26,9 @@ const View = react_native.View;
 const HelpdeskArticles = Constants.HelpdeskArticles;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ image: { width: 124, height: 160, marginBottom: 24 } });
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEducation(onClose) {
-  let container;
-  let content;
-  let footerButton;
-  let footerContainer;
-  let items;
-  let items1;
-  let tmp17;
-  let tmp19;
-  let tmp22;
-  let tmp24;
-  const obj = react2;
-  const cResult = obj.c(48);
-  onClose = onClose.onClose;
-  const tmp4 = closure_8();
-  const obj2 = TwoWayLinkStyles;
-  const twoWayLinkStyles = obj2.useTwoWayLinkStyles();
-  if (cResult[0] === twoWayLinkStyles.body) {
-    if (cResult[1] === twoWayLinkStyles.container) {
-      if (cResult[2] === twoWayLinkStyles.content) {
-        if (cResult[3] === twoWayLinkStyles.title) {
-          let tmp6;
-          let tmp7;
-          let tmp8;
-          let str;
-          let str2;
-          let tmp9;
-          let tmp10;
-          let tmp11;
-          let tmp12;
-          let tmp13;
-          let tmp14;
-          if (cResult[4] === tmp4.image) {
-            tmp6 = cResult[5];
-            tmp7 = cResult[6];
-            tmp8 = cResult[7];
-            str = cResult[8];
-            str2 = cResult[9];
-            tmp9 = cResult[10];
-            tmp10 = cResult[11];
-            tmp11 = cResult[12];
-            tmp12 = cResult[13];
-            tmp13 = cResult[14];
-            tmp14 = cResult[15];
-          }
-          if (cResult[22] === tmp6) {
-            if (cResult[23] === str) {
-              if (cResult[24] === str2) {
-                if (cResult[25] === tmp9) {
-                  let tmp28;
-                  if (cResult[26] === tmp10) {
-                    tmp28 = cResult[27];
-                  }
-                  if (cResult[28] === tmp7) {
-                    if (cResult[29] === tmp11) {
-                      if (cResult[30] === tmp12) {
-                        if (cResult[31] === tmp13) {
-                          let tmp31;
-                          let tmp35;
-                          let tmp37;
-                          if (cResult[32] === tmp28) {
-                            tmp31 = cResult[33];
-                          }
-                          const _Symbol = Symbol;
-                          ({ footerContainer, footerButton } = twoWayLinkStyles);
-                          if (cResult[34] === Symbol.for("react.memo_cache_sentinel")) {
-                            const intl3 = tmp(1125).intl;
-                            const stringResult = intl3.string(intl4.t.i4jeWR);
-                            cResult[34] = stringResult;
-                            tmp35 = stringResult;
-                          } else {
-                            tmp35 = cResult[34];
-                          }
-                          if (cResult[35] !== onClose) {
-                            const obj4 = { size: "lg", variant: "primary", text: tmp35, onPress: onClose };
-                            const tmp39 = metroRequire(components_Button_Button.Button, obj4);
-                            cResult[35] = onClose;
-                            cResult[36] = tmp39;
-                            tmp37 = tmp39;
-                          } else {
-                            tmp37 = cResult[36];
-                          }
-                          if (cResult[37] === twoWayLinkStyles.footerButton) {
-                            let tmp40;
-                            if (cResult[38] === tmp37) {
-                              tmp40 = cResult[39];
-                            }
-                            if (cResult[40] === twoWayLinkStyles.footerContainer) {
-                              let tmp44;
-                              if (cResult[41] === tmp40) {
-                                tmp44 = cResult[42];
-                              }
-                              if (cResult[43] === tmp8) {
-                                if (cResult[44] === tmp31) {
-                                  if (cResult[45] === tmp44) {
-                                    let tmp47;
-                                    if (cResult[46] === tmp14) {
-                                      tmp47 = cResult[47];
-                                    }
-                                    return tmp47;
-                                  }
-                                }
-                              }
-                              const obj5 = { style: tmp14, children: items };
-                              items = [tmp31, tmp44];
-                              const tmp49 = metroImportDefault(tmp8, obj5);
-                              cResult[43] = tmp8;
-                              cResult[44] = tmp31;
-                              cResult[45] = tmp44;
-                              cResult[46] = tmp14;
-                              cResult[47] = tmp49;
-                              tmp47 = tmp49;
-                            }
-                            const obj6 = { bottom: true, style: footerContainer, children: tmp40 };
-                            const tmp46 = metroRequire(common_SafeAreaView.SafeAreaPaddingView, obj6);
-                            cResult[40] = twoWayLinkStyles.footerContainer;
-                            cResult[41] = tmp40;
-                            cResult[42] = tmp46;
-                            tmp44 = tmp46;
-                          }
-                          const obj7 = { style: footerButton, children: tmp37 };
-                          const tmp43 = metroRequire(View, obj7);
-                          cResult[37] = twoWayLinkStyles.footerButton;
-                          cResult[38] = tmp37;
-                          cResult[39] = tmp43;
-                          tmp40 = tmp43;
-                        }
-                      }
-                    }
-                  }
-                  const obj8 = { style: tmp11, children: items1 };
-                  items1 = [tmp12, tmp13, tmp28];
-                  const tmp33 = metroImportDefault(tmp7, obj8);
-                  cResult[28] = tmp7;
-                  cResult[29] = tmp11;
-                  cResult[30] = tmp12;
-                  cResult[31] = tmp13;
-                  cResult[32] = tmp28;
-                  cResult[33] = tmp33;
-                  tmp31 = tmp33;
-                }
-              }
-            }
-          }
-          const obj9 = { variant: str, color: str2, style: tmp9, children: tmp10 };
-          const tmp30 = metroRequire(tmp6, obj9);
-          cResult[22] = tmp6;
-          cResult[23] = str;
-          cResult[24] = str2;
-          cResult[25] = tmp9;
-          cResult[26] = tmp10;
-          cResult[27] = tmp30;
-          tmp28 = tmp30;
-        }
-      }
-    }
-  }
-  const obj3 = HelpdeskUtilsDefault;
-  const articleURL = obj3.getArticleURL(HelpdeskArticles.XBOX_CONNECTION);
-  if (cResult[16] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj10 = { uri: _modDef14545 };
-    cResult[16] = obj10;
-    tmp17 = obj10;
-  } else {
-    tmp17 = cResult[16];
-  }
-  ({ container, content } = twoWayLinkStyles);
-  if (cResult[17] !== tmp4.image) {
-    const obj11 = { source: tmp17, style: tmp4.image };
-    const tmp21 = metroRequire(FastImageDefault, obj11);
-    cResult[17] = tmp4.image;
-    cResult[18] = tmp21;
-    tmp19 = tmp21;
-  } else {
-    tmp19 = cResult[18];
-  }
-  const title = twoWayLinkStyles.title;
-  if (cResult[19] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult1 = intl.string(intl4.t.jHytat);
-    cResult[19] = stringResult1;
-    tmp22 = stringResult1;
-  } else {
-    tmp22 = cResult[19];
-  }
-  if (cResult[20] !== twoWayLinkStyles.title) {
-    const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", style: title, children: tmp22 };
-    const tmp26 = metroRequire(Text_Text.Text, obj12);
-    cResult[20] = twoWayLinkStyles.title;
-    cResult[21] = tmp26;
-    tmp24 = tmp26;
-  } else {
-    tmp24 = cResult[21];
-  }
-  const Text = tmp(5271).Text;
-  const body = twoWayLinkStyles.body;
-  const intl2 = tmp(1125).intl;
-  const formatResult = intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL });
-  cResult[0] = twoWayLinkStyles.body;
-  cResult[1] = twoWayLinkStyles.container;
-  cResult[2] = twoWayLinkStyles.content;
-  cResult[3] = twoWayLinkStyles.title;
-  cResult[4] = tmp4.image;
-  cResult[5] = Text;
-  cResult[6] = View;
-  cResult[7] = View;
-  cResult[8] = "text-md/medium";
-  cResult[9] = "text-default";
-  cResult[10] = body;
-  cResult[11] = formatResult;
-  cResult[12] = content;
-  cResult[13] = tmp19;
-  cResult[14] = tmp24;
-  cResult[15] = container;
-  tmp13 = tmp24;
-  tmp14 = container;
-  tmp12 = tmp19;
-  tmp11 = content;
-  tmp10 = formatResult;
-  tmp9 = body;
-  str2 = "text-default";
-  str = "text-md/medium";
-  tmp8 = tmp18;
-  tmp7 = tmp18;
-  tmp6 = Text;
-}) : (function XboxLinkEducation(onClose) {
+const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
+
+export default function XboxLinkEducation(onClose) {
   let Button;
   let intl;
   let intl2;
@@ -270,7 +46,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14545 };
+    const obj = { uri: _modDef14578 };
     return obj;
   }, []);
   items = [, , ];
@@ -293,7 +69,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function XboxLinkEd
   intl3 = intl4.intl;
   items1[1] = metroRequire(SafeAreaPaddingView, obj8);
   return metroImportDefault(View, obj3);
-});
-const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkEducation.tsx");
-
-export default tmp3;
+};

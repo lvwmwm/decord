@@ -1,21 +1,20 @@
-// Module ID: 8904
-// Function ID: 8905
+// Module ID: 8938
+// Function ID: 8939
 // Name: InstantInviteStore
-// Dependencies: [8905, 7867, 8906, 8908, 8909, 504, 584, 2]
+// Dependencies: [8193, 7873, 8939, 8941, 8942, 504, 572, 2]
 
-// Module 8904 (InstantInviteStore)
+// Module 8938 (InstantInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 7867 */;
-import headDefault from "head" /* 8906 */;
-import reverseDefault from "reverse" /* 8908 */;
-import _modDef8909 from "module_8909" /* 8909 */;
-import InviteRecord from "InviteRecord" /* 8905 */;
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7873 */;
+import headDefault from "head" /* 8939 */;
+import reverseDefault from "reverse" /* 8941 */;
+import _modDef8942 from "module_8942" /* 8942 */;
+import InviteRecord from "InviteRecord" /* 8193 */;
 import size from "module_2" /* 2 */;
 
-let c2, closure_5, closure_6, closure_7;
+let c3, closure_5, closure_6, closure_7;
 
-const InviteTargetTypes = Constants.InviteTargetTypes;
 const hasOwnProperty = {};
 const metroRequire = {};
 const metroImportDefault = {};
@@ -30,42 +29,41 @@ class InstantInviteStore extends Store {
     let targetApplicationId;
     let targetType;
     let targetUserId;
-    let tmp4;
+    let tmp5;
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
     ({ targetType, targetUserId, targetApplicationId } = obj);
-    const tmp = InviteTargetTypes;
-    if (targetType === InviteTargetTypes.STREAM) {
+    if (targetType === InviteTargetTypes.InviteTargetTypes.STREAM) {
       if (null != targetUserId) {
-        let tmp10;
+        let tmp11;
         if (closure_6[arg0] != null) {
-          tmp10 = tmp9[targetUserId];
+          tmp11 = tmp10[targetUserId];
         }
-        tmp4 = tmp10;
+        tmp5 = tmp11;
       }
-      return tmp4;
+      return tmp5;
     }
-    if (targetType === tmp.EMBEDDED_APPLICATION) {
+    if (targetType === InviteTargetTypes.InviteTargetTypes.EMBEDDED_APPLICATION) {
       if (null != targetApplicationId) {
-        let tmp7;
+        let tmp8;
         if (closure_7[arg0] != null) {
-          tmp7 = tmp6[targetApplicationId];
+          tmp8 = tmp7[targetApplicationId];
         }
-        tmp4 = tmp7;
+        tmp5 = tmp8;
       }
     }
-    tmp4 = closure_5[arg0];
+    tmp5 = closure_5[arg0];
   }
   getFriendInvite() {
-    return c2;
+    return c3;
   }
   getFriendInvitesFetching() {
     return c9;
   }
   canRevokeFriendInvite() {
-    return null != c2 && !c10 && !c11;
+    return null != c3 && !c10 && !c11;
   }
   getReceivedInstallationIdForInviteCode(result) {
     return map.get(result.toLowerCase());
@@ -79,7 +77,7 @@ let obj = {
     closure_6 = {};
     closure_7 = {};
     closure_8 = {};
-    c2 = null;
+    c3 = null;
     c10 = false;
     c11 = false;
     c9 = false;
@@ -94,12 +92,12 @@ let obj = {
     closure_8[invite.invite.code] = InviteRecord.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    const tmp3 = _modDef8909;
+    const tmp3 = _modDef8942;
     let tmpResult = tmp(tmp2(tmp3(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
     }
-    c2 = tmpResult;
+    c3 = tmpResult;
     c11 = false;
   },
   FRIEND_INVITE_CREATE_FAILURE: function handleFriendInviteCreateFailure() {
@@ -116,19 +114,18 @@ let obj = {
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef8909;
+    const tmp4 = _modDef8942;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
-    c2 = tmp2Result;
+    c3 = tmp2Result;
     c10 = false;
   },
   INSTANT_INVITE_CREATE_SUCCESS: function handleInstantInviteCreateSuccess(channelId) {
     channelId = channelId.channelId;
     const fromServer = InviteRecord.createFromServer(channelId.invite);
-    const tmp2 = InviteTargetTypes;
-    if (fromServer.targetType === InviteTargetTypes.STREAM) {
+    if (fromServer.targetType === InviteTargetTypes.InviteTargetTypes.STREAM) {
       if (null != fromServer.targetUser) {
         if (null == closure_6[channelId]) {
           closure_6[channelId] = {};
@@ -137,7 +134,7 @@ let obj = {
         closure_6[channelId][String(fromServer.targetUser.id)] = fromServer;
       }
     }
-    if (fromServer.targetType === tmp2.EMBEDDED_APPLICATION) {
+    if (fromServer.targetType === InviteTargetTypes.InviteTargetTypes.EMBEDDED_APPLICATION) {
       if (null != fromServer.targetApplication) {
         if (null == closure_7[channelId]) {
           closure_7[channelId] = {};
@@ -170,12 +167,12 @@ let obj = {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef8909;
+    const tmp4 = _modDef8942;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
     }
-    c2 = tmp2Result;
+    c3 = tmp2Result;
     c9 = false;
   },
   INSTANT_INVITE_CLEAR: function handleInstantInviteClear(arg0) {

@@ -1,21 +1,21 @@
-// Module ID: 15793
-// Function ID: 15794
+// Module ID: 15831
+// Function ID: 15832
 // Name: PremiumPerkGates
-// Dependencies: [1391, 5066, 6438, 5062, 1395, 1397, 2]
+// Dependencies: [1386, 5070, 6445, 5066, 1390, 1392, 2]
 // Exports: canEditDiscriminator, canInstallPremiumApplications, canRedeemPremiumPerks, canStreamQuality, canUploadLargeFiles, canUseAnimatedAvatar, canUseAnimatedEmojis, canUseBadges, canUseClientThemes, canUseCollectibles, canUseCustomBackgrounds, canUseCustomCallSounds, canUseCustomStickersEverywhere, canUseEmojisEverywhere, canUseHighVideoUploadQuality, canUseIncreasedGuildCap, canUseIncreasedMessageLength, canUseMonthlyOrbs, canUseMoreQuestOrbs, canUsePremiumAppIcons, canUsePremiumGuildMemberProfile, canUsePremiumProfileCustomization, canUseQuestOrbMultiplier, canUseShopDiscounts, canUseSoundboardEverywhere, getMaxFileSizeForPremiumType, hasBoostDiscount, hasFreeBoosts
 
-// Module 15793 (PremiumPerkGates)
-import PerksStateUtils from "PerksStateUtils" /* 1395 */;
-import ProductCatalog from "ProductCatalog" /* 5062 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5066 */;
-import FileSizeUtils from "FileSizeUtils" /* 6438 */;
-import PremiumConstants from "PremiumConstants" /* 1391 */;
+// Module 15831 (PremiumPerkGates)
+import PerksStateUtils from "PerksStateUtils" /* 1390 */;
+import ProductCatalog from "ProductCatalog" /* 5066 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5070 */;
+import FileSizeUtils from "FileSizeUtils" /* 6445 */;
+import PremiumConstants from "PremiumConstants" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let tmp;
-const user2 = tmp(1397);
+const user2 = tmp(1392);
 ({ PremiumTypes: c2, PremiumUserLimits: c3 } = PremiumConstants);
 const StreamQuality = { MID: "mid", HIGH: "high" };
 const result = size.fileFinishedImporting("modules/premium/perks_state/PremiumPerkGates.tsx");
@@ -49,9 +49,9 @@ export function canUseSoundboardEverywhere(currentUser) {
   const obj = ProductCatalog;
   return obj.canUserUse(ProductCatalog.SOUNDBOARD_EVERYWHERE, currentUser);
 }
-export function canUseCustomCallSounds(stateFromStores) {
+export function canUseCustomCallSounds(currentUser) {
   const obj = ProductCatalog;
-  return obj.canUserUse(ProductCatalog.CUSTOM_CALL_SOUNDS, stateFromStores);
+  return obj.canUserUse(ProductCatalog.CUSTOM_CALL_SOUNDS, currentUser);
 }
 export function canUploadLargeFiles(currentUser) {
   const obj = ProductCatalog;
@@ -109,15 +109,15 @@ export function canUseClientThemes(currentUser) {
   const obj = ProductCatalog;
   return obj.canUserUse(ProductCatalog.CLIENT_THEMES, currentUser);
 }
-export function canStreamQuality(MID, user) {
+export function canStreamQuality(MID, currentUser) {
   let canUserUseResult;
   let obj;
   if (MID === obj.HIGH) {
     const obj2 = ProductCatalog;
-    canUserUseResult = obj2.canUserUse(ProductCatalog.STREAM_HIGH_QUALITY, user);
+    canUserUseResult = obj2.canUserUse(ProductCatalog.STREAM_HIGH_QUALITY, currentUser);
   } else {
     obj = ProductCatalog;
-    canUserUseResult = obj.canUserUse(ProductCatalog.STREAM_MID_QUALITY, user);
+    canUserUseResult = obj.canUserUse(ProductCatalog.STREAM_MID_QUALITY, currentUser);
   }
   return canUserUseResult;
 }
@@ -157,10 +157,10 @@ export function canUseShopDiscounts(currentUser) {
   if (currentUser != null) {
     perks = currentUser.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1397).Perk.SHOP_DISCOUNTS);
+  let hasPerkResult = hasPerk(perks, tmp(1392).Perk.SHOP_DISCOUNTS);
   if (!hasPerkResult) {
     const tmpResult = ProductCatalog;
-    hasPerkResult = tmpResult.canUserUse(tmp(5062).COLLECTIBLES, currentUser);
+    hasPerkResult = tmpResult.canUserUse(tmp(5066).COLLECTIBLES, currentUser);
   }
   return hasPerkResult;
 }
@@ -171,10 +171,10 @@ export function canUseMoreQuestOrbs(perks) {
   if (perks != null) {
     perks = perks.perks;
   }
-  let hasPerkResult = hasPerk(perks, tmp(1397).Perk.MORE_QUEST_ORBS);
+  let hasPerkResult = hasPerk(perks, tmp(1392).Perk.MORE_QUEST_ORBS);
   if (!hasPerkResult) {
     const tmpResult = ProductCatalog;
-    hasPerkResult = tmpResult.canUserUse(tmp(5062).QUEST_ORB_MULTIPLIER, perks);
+    hasPerkResult = tmpResult.canUserUse(tmp(5066).QUEST_ORB_MULTIPLIER, perks);
   }
   return hasPerkResult;
 }

@@ -1,32 +1,29 @@
-// Module ID: 18180
-// Function ID: 18181
+// Module ID: 18240
+// Function ID: 18241
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7694, 4937, 6829, 6762, 5755, 12046, 1084, 21, 587, 8590, 6931, 2000, 7925, 558, 576, 9058, 18179, 18181, 10960, 504, 18174, 10706, 5743, 9054, 8336, 6034, 18068, 18059, 1264, 18175, 10759, 1125, 18069, 12023, 2]
+// Dependencies: [5, 19, 17, 7699, 4941, 6836, 6769, 5762, 11027, 1072, 21, 575, 8624, 6938, 1995, 7931, 9071, 18239, 18241, 10985, 504, 18234, 10729, 5749, 8393, 9066, 1253, 18235, 18118, 10782, 1114, 6041, 18132, 18123, 12209, 2]
 
-// Module 18180 (VoiceChannel)
+// Module 18240 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1264 */;
-import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5755 */;
-import ChannelUtils from "ChannelUtils" /* 6034 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9054 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10759 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12023 */;
+import nativeDefault from "native" /* 575 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1253 */;
+import SortedVoiceStateStore2 from "SortedVoiceStateStore" /* 5762 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9066 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10782 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12209 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7694 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import ReadStateStore from "ReadStateStore" /* 6829 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6762 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12046 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7699 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import ReadStateStore from "ReadStateStore" /* 6836 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6769 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11027 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const SortedVoiceStateStore = SortedVoiceStateStore2;
-let voiceStates;
 
 let CHANNEL_MARGIN_VERTICAL;
 let closure_12;
@@ -34,9 +31,6 @@ let closure_14;
 let map1;
 let obj2;
 let obj3;
-function handleVoiceChannelPress() {
-  return obj(...arguments);
-}
 let obj = function _handleVoiceChannelPress() {
   let paths;
   obj = _asyncToGenerator(async (arg0) => {
@@ -58,7 +52,7 @@ let obj = function _handleVoiceChannelPress() {
       }
       await require("asyncRequire")(paths[15], paths.paths);
       value.openGuildVoiceModal(guildId, "Channel List");
-      await "IconComponent";
+      await "HermesInternal";
       return value.openMemberVerificationModal(guildId);
     })();
   });
@@ -73,324 +67,7 @@ const jsx = Fragment.jsx;
 obj = { channelInfo: obj2, voiceStates: { marginLeft: 36, marginTop: -4, marginBottom: 2 }, voiceStatesCollapsed: { marginLeft: 16 }, container: obj3 };
 obj2 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, maxHeight: 1 };
 obj3 = { marginVertical: CHANNEL_MARGIN_VERTICAL, marginHorizontal: 8, borderRadius: nativeDefault.radii.md };
-const memo = react.memo;
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceChannel(channel) {
-  let collapsed;
-  let embeddedActivitiesCount;
-  let first;
-  let locked;
-  let selected;
-  let subtitle;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  obj = channel(embeddedActivitiesCount[17]);
-  const cResult = obj.c(52);
-  channel = channel.channel;
-  ({ selected, locked, collapsed } = channel);
-  ({ subtitle, embeddedActivitiesCount } = channel);
-  voiceStates = channel.voiceStates;
-  let obj2 = channel(embeddedActivitiesCount[18]);
-  const activeEvent = obj2.useActiveEvent(channel.id);
-  let obj3 = channel(embeddedActivitiesCount[19]);
-  const tmp5 = null != activeEvent || null != obj3.useStartTime(channel);
-  const tmpResult = channel(embeddedActivitiesCount[20]);
-  const ensureSyncedChannelVoiceStates = tmpResult.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  const tmpResult5 = channel(embeddedActivitiesCount[21]);
-  const isConnectedToVoiceChannel = tmpResult5.useIsConnectedToVoiceChannel(channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [ReadStateStore, ];
-    items[1] = UserGuildSettingsStore;
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel) {
-    const fn = function c() {
-      obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id), resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel) };
-      return obj;
-    };
-    const items1 = [channel];
-    cResult[1] = channel;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp12 = items1;
-    tmp11 = fn;
-  } else {
-    tmp11 = cResult[2];
-    tmp12 = cResult[3];
-  }
-  const tmpResult6 = channel(embeddedActivitiesCount[22]);
-  const stateFromStoresObject = tmpResult6.useStateFromStoresObject(first, tmp11, tmp12);
-  const hasUnread = stateFromStoresObject.hasUnread;
-  const mentionCount = stateFromStoresObject.mentionCount;
-  const resolvedUnreadSetting = stateFromStoresObject.resolvedUnreadSetting;
-  if (cResult[4] !== subtitle) {
-    const tmpResult7 = channel(embeddedActivitiesCount[23]);
-    const channelSubtitleData = tmpResult7.getChannelSubtitleData(subtitle);
-    cResult[4] = subtitle;
-    cResult[5] = channelSubtitleData;
-    tmp14 = channelSubtitleData;
-  } else {
-    tmp14 = cResult[5];
-  }
-  let type;
-  if (subtitle != null) {
-    type = subtitle.type;
-  }
-  let text = null;
-  if ("voice" === type) {
-    text = null;
-    if (subtitle.text.length > 0) {
-      text = subtitle.text;
-    }
-  }
-  const tmpResult8 = channel(embeddedActivitiesCount[24]);
-  const gameMentionsAsPlainText = tmpResult8.useGameMentionsAsPlainText(text);
-  if (cResult[6] === channel.id) {
-    let tmp19;
-    if (cResult[7] === gameMentionsAsPlainText) {
-      tmp19 = cResult[8];
-    }
-    if (cResult[9] === channel) {
-      if (cResult[10] === embeddedActivitiesCount) {
-        if (cResult[11] === hasUnread) {
-          if (cResult[12] === mentionCount) {
-            let tmp23;
-            if (cResult[13] === ensureSyncedChannelVoiceStates) {
-              tmp23 = cResult[14];
-            }
-            if (cResult[15] === channel.name) {
-              let tmp24;
-              if (cResult[16] === tmp23) {
-                tmp24 = cResult[17];
-              }
-              if (cResult[18] === channel) {
-                if (cResult[19] === collapsed) {
-                  let tmp26;
-                  if (cResult[20] === ensureSyncedChannelVoiceStates) {
-                    tmp26 = cResult[21];
-                  }
-                  if (cResult[22] === channel.guild_id) {
-                    if (cResult[23] === channel.id) {
-                      class B {
-                        constructor() {
-                          obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                          return getChannelA11yLabelDefault(obj);
-                        }
-                      }
-                      if (tmp19 == null) {
-                        if (tmp14 != null) {
-                          const subtitle2 = tmp14.subtitle;
-                        }
-                        class B {
-                          constructor() {
-                            obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                            return getChannelA11yLabelDefault(obj);
-                          }
-                        }
-                      }
-                      if (cResult[27] === channel) {
-                        if (cResult[28] === collapsed) {
-                          if (cResult[29] === selected) {
-                            let tmp32;
-                            let tmp38;
-                            if (cResult[30] === ensureSyncedChannelVoiceStates) {
-                              tmp32 = cResult[31];
-                            }
-                            if (cResult[32] !== channel) {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                              class B {
-                                constructor() {
-                                  obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                                  return getChannelA11yLabelDefault(obj);
-                                }
-                              }
-                              cResult[33] = Y;
-                            } else {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                            }
-                            class B {
-                              constructor() {
-                                obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                                return getChannelA11yLabelDefault(obj);
-                              }
-                            }
-                            const _Symbol = Symbol;
-                            if (cResult[36] === Symbol.for("react.memo_cache_sentinel")) {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                              const string = tmp39.string;
-                              class B {
-                                constructor() {
-                                  obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                                  return getChannelA11yLabelDefault(obj);
-                                }
-                              }
-                              cResult[36] = tmp40;
-                              tmp38 = tmp40;
-                            } else {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                            }
-                            if (hasUnread) {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                            }
-                            if (cResult[37] !== tmp26) {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                              class B {
-                                constructor() {
-                                  obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                                  return getChannelA11yLabelDefault(obj);
-                                }
-                              }
-                              cResult[38] = tmp42;
-                            } else {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                            }
-                            if (cResult[39] === tmp24) {
-                              class Y {
-                                constructor() {
-                                  return handleVoiceChannelPress(channel);
-                                }
-                              }
-                            }
-                            cResult[39] = tmp24;
-                            cResult[40] = channel;
-                            cResult[41] = tmp32;
-                            cResult[42] = tmp5;
-                            cResult[43] = locked;
-                            cResult[44] = resolvedUnreadSetting;
-                            cResult[45] = selected;
-                            cResult[46] = tmp19;
-                            cResult[47] = tmp36;
-                            cResult[48] = tmp37;
-                            cResult[49] = hasUnread;
-                            cResult[50] = tmp41;
-                            cResult[51] = jsx(collapsed(embeddedActivitiesCount[35]), { onPress: tmp36, onLongPress: tmp37, style: obj.container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp24, accessibilityHint: tmp38, channel, selected, locked, unread: hasUnread, resolvedUnreadSetting, subtitle: tmp19, isChannelLive: tmp5, channelInfo: tmp32, children: tmp41 });
-                            const tmp47 = jsx(collapsed(embeddedActivitiesCount[35]), { onPress: tmp36, onLongPress: tmp37, style: obj.container, accessible: true, accessibilityRole: "button", accessibilityLabel: tmp24, accessibilityHint: tmp38, channel, selected, locked, unread: hasUnread, resolvedUnreadSetting, subtitle: tmp19, isChannelLive: tmp5, channelInfo: tmp32, children: tmp41 });
-                          }
-                        }
-                      }
-                      const tmp35 = jsx(collapsed(embeddedActivitiesCount[32]), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
-                      cResult[27] = channel;
-                      cResult[28] = collapsed;
-                      cResult[29] = selected;
-                      cResult[30] = ensureSyncedChannelVoiceStates;
-                      cResult[31] = tmp35;
-                      tmp32 = tmp35;
-                    }
-                  }
-                  class B {
-                    constructor() {
-                      obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                      return getChannelA11yLabelDefault(obj);
-                    }
-                  }
-                  const items2 = [, , ];
-                  ({ id: arr3[0], guild_id: arr3[1] } = channel);
-                  items2[2] = gameMentionsAsPlainText;
-                  cResult[22] = channel.guild_id;
-                  cResult[23] = channel.id;
-                  cResult[24] = gameMentionsAsPlainText;
-                  cResult[25] = items2;
-                  cResult[26] = tmp30;
-                }
-              }
-              class B {
-                constructor() {
-                  obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                  return getChannelA11yLabelDefault(obj);
-                }
-              }
-              cResult[18] = channel;
-              cResult[19] = collapsed;
-              cResult[20] = ensureSyncedChannelVoiceStates;
-              cResult[21] = tmp27;
-              tmp26 = tmp27;
-            }
-            class B {
-              constructor() {
-                obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-                return getChannelA11yLabelDefault(obj);
-              }
-            }
-            const obj6 = { expensive: tmp23, cheap: channel.name };
-            const accessibilityLabelOrCheapFallbackUnsafe = obj10.getAccessibilityLabelOrCheapFallbackUnsafe(obj6);
-            cResult[15] = channel.name;
-            cResult[16] = tmp23;
-            cResult[17] = accessibilityLabelOrCheapFallbackUnsafe;
-            tmp24 = accessibilityLabelOrCheapFallbackUnsafe;
-          }
-        }
-      }
-    }
-    class B {
-      constructor() {
-        obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-        return getChannelA11yLabelDefault(obj);
-      }
-    }
-    cResult[9] = channel;
-    cResult[10] = embeddedActivitiesCount;
-    cResult[11] = hasUnread;
-    cResult[12] = mentionCount;
-    cResult[13] = ensureSyncedChannelVoiceStates;
-    cResult[14] = B;
-    tmp23 = B;
-  }
-  let result = null;
-  if (null != gameMentionsAsPlainText) {
-    class Y {
-      constructor() {
-        return handleVoiceChannelPress(channel);
-      }
-    }
-    const obj9 = collapsed(embeddedActivitiesCount[25]);
-    class B {
-      constructor() {
-        obj = { channel, unread: hasUnread, mentionCount, voiceStates: ensureSyncedChannelVoiceStates, embeddedActivitiesCount };
-        return getChannelA11yLabelDefault(obj);
-      }
-    }
-    tmp21[0] = channel.id;
-    tmp21[1] = closure_12;
-    tmp21[2] = closure_12;
-    result = obj9.parseVoiceChannelStatus(gameMentionsAsPlainText, true, tmp21);
-  }
-  cResult[6] = channel.id;
-  cResult[7] = gameMentionsAsPlainText;
-  cResult[8] = result;
-  tmp19 = result;
-}) : (function VoiceChannel(channel) {
+let closure_18 = react.memo(function VoiceChannel(channel) {
   let c4;
   let collapsed;
   let embeddedActivitiesCount;
@@ -401,30 +78,31 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   let resolvedUnreadSetting;
   let selected;
   let subtitle;
+  let voiceStates;
   channel = channel.channel;
   ({ selected, collapsed, subtitle, embeddedActivitiesCount: importDefault } = channel);
   let ensureSyncedChannelVoiceStates;
   react = undefined;
   let gameMentionsAsPlainText;
   ({ locked, voiceStates } = channel);
-  obj = channel(ensureSyncedChannelVoiceStates[18]);
+  obj = channel(ensureSyncedChannelVoiceStates[16]);
   const activeEvent = obj.useActiveEvent(channel.id);
-  const obj2 = channel(ensureSyncedChannelVoiceStates[19]);
+  const obj2 = channel(ensureSyncedChannelVoiceStates[17]);
   const startTime = obj2.useStartTime(channel);
-  let obj3 = channel(ensureSyncedChannelVoiceStates[20]);
+  let obj3 = channel(ensureSyncedChannelVoiceStates[18]);
   ensureSyncedChannelVoiceStates = obj3.useEnsureSyncedChannelVoiceStates(channel.id, voiceStates);
-  const obj4 = channel(ensureSyncedChannelVoiceStates[21]);
+  const obj4 = channel(ensureSyncedChannelVoiceStates[19]);
   const isConnectedToVoiceChannel = obj4.useIsConnectedToVoiceChannel(channel);
   const items = [ReadStateStore, UserGuildSettingsStore];
   const items1 = [channel];
-  const obj5 = channel(ensureSyncedChannelVoiceStates[22]);
+  const obj5 = channel(ensureSyncedChannelVoiceStates[20]);
   const stateFromStoresObject = obj5.useStateFromStoresObject(items, () => {
     obj = { hasUnread: ReadStateStore.hasUnread(channel.id), mentionCount: ReadStateStore.getMentionCount(channel.id), resolvedUnreadSetting: UserGuildSettingsStore.resolveUnreadSetting(channel) };
     return obj;
   }, items1);
   let hasUnread = stateFromStoresObject.hasUnread;
   ({ mentionCount: c4, resolvedUnreadSetting } = stateFromStoresObject);
-  const obj6 = channel(ensureSyncedChannelVoiceStates[23]);
+  const obj6 = channel(ensureSyncedChannelVoiceStates[21]);
   const channelSubtitleData = obj6.getChannelSubtitleData(subtitle);
   let type;
   if (subtitle != null) {
@@ -437,7 +115,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       text = subtitle.text;
     }
   }
-  const tmpResult = channel(ensureSyncedChannelVoiceStates[24]);
+  const tmpResult = channel(ensureSyncedChannelVoiceStates[22]);
   gameMentionsAsPlainText = tmpResult.useGameMentionsAsPlainText(text);
   let result = null;
   if (null != gameMentionsAsPlainText) {
@@ -455,7 +133,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   };
   ({ id: arr4[0], guild_id: arr4[1] } = channel);
   items2[2] = gameMentionsAsPlainText;
-  const tmpResult3 = channel(ensureSyncedChannelVoiceStates[27]);
+  const tmpResult3 = channel(ensureSyncedChannelVoiceStates[24]);
   const accessibilityLabelOrCheapFallbackUnsafe = tmpResult3.getAccessibilityLabelOrCheapFallbackUnsafe(obj9);
   const effect = react.useEffect(() => {
     if (null !== gameMentionsAsPlainText) {
@@ -474,7 +152,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
   }
   const tmp19 = jsx(require("ChannelInfo"), { channel, isChannelSelected: selected, isChannelCollapsed: collapsed, voiceStates: ensureSyncedChannelVoiceStates, enableConnectedUserLimit: true, enableActivities: true });
   require("ChannelItem");
-  const intl = tmp(tmp2[34]).intl;
+  const intl = tmp(tmp2[30]).intl;
   if (hasUnread) {
     hasUnread = isConnectedToVoiceChannel;
   }
@@ -486,7 +164,7 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
       obj12 = {};
       obj12[channel.id] = ensureSyncedChannelVoiceStates;
       const obj13 = { style: obj.voiceStatesCollapsed, children: null };
-      const tmpResult4 = channel(ensureSyncedChannelVoiceStates[28]);
+      const tmpResult4 = channel(ensureSyncedChannelVoiceStates[31]);
       const summarizedVoiceUsers = tmpResult4.computeSummarizedVoiceUsers(obj11);
       tmp17Result = tmp17(gameMentionsAsPlainText, obj13);
     } else {
@@ -495,116 +173,16 @@ let closure_19 = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function V
     }
   }
   return <tmp20 onPress={function onPress() {
+    function handleVoiceChannelPress() {
+      return closure_1_17(...arguments);
+    }
     return handleVoiceChannelPress(channel);
   }} onLongPress={function onLongPress() {
     obj = openChannelLongPressActionSheet;
     const result = obj.openChannelLongPressActionSheet(channel.id);
-  }} style={obj.container} accessible accessibilityRole="button" accessibilityLabel={accessibilityLabelOrCheapFallbackUnsafe} accessibilityHint={intl.string(channel(ensureSyncedChannelVoiceStates[34]).t["9C444m"])} channel={channel} selected={selected} locked={locked} unread={hasUnread} resolvedUnreadSetting={resolvedUnreadSetting} subtitle={result} isChannelLive={null != activeEvent || null != startTime} channelInfo={tmp19}>{tmp17Result}</tmp20>;
-}));
-const memo2 = react.memo;
-ReactCompilerGating = ReactCompilerGating_mod;
-const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedVoiceChannel(channel) {
-  let bypassLimit;
-  let collapsed;
-  let first;
-  let locked;
-  let selected;
-  let subtitle;
-  let tmp12;
-  let tmp6;
-  let tmp7;
-  let tmp9;
-  obj = channel(576);
-  const cResult = obj.c(16);
-  channel = channel.channel;
-  ({ selected, subtitle } = channel);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [SortedVoiceStateStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== channel.guild_id) {
-    const fn = function l() {
-      return SortedVoiceStateStore.getVoiceStates(channel.guild_id);
-    };
-    const items1 = [channel.guild_id];
-    cResult[1] = channel.guild_id;
-    cResult[2] = fn;
-    cResult[3] = items1;
-    tmp7 = items1;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-    tmp7 = cResult[3];
-  }
-  const tmpResult = channel(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6, tmp7);
-  const arr3 = useEmbeddedAppsForChannelDefault(channel);
-  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-    const items2 = [PermissionStore, CollapsedVoiceChannelStore];
-    cResult[4] = items2;
-    tmp9 = items2;
-  } else {
-    tmp9 = cResult[4];
-  }
-  if (cResult[5] !== channel) {
-    const fn2 = function p() {
-      obj = { locked: !PermissionStore.can(constants.CONNECT, channel), bypassLimit: PermissionStore.can(constants.MOVE_MEMBERS, channel), collapsed: CollapsedVoiceChannelStore.isCollapsed(channel.id) };
-      return obj;
-    };
-    cResult[5] = channel;
-    cResult[6] = fn2;
-    tmp12 = fn2;
-  } else {
-    tmp12 = cResult[6];
-  }
-  const tmpResult2 = channel(504);
-  const stateFromStoresObject = tmpResult2.useStateFromStoresObject(tmp9, tmp12);
-  ({ locked, bypassLimit, collapsed } = stateFromStoresObject);
-  let num8;
-  if (arr3 != null) {
-    num8 = arr3.length;
-  }
-  if (num8 == null) {
-    num8 = 0;
-  }
-  let tmp14 = stateFromStores[channel.id];
-  if (tmp14 == null) {
-    tmp14 = NO_VOICE_STATES;
-  }
-  if (cResult[7] === bypassLimit) {
-    if (cResult[8] === channel) {
-      if (cResult[9] === collapsed) {
-        if (cResult[10] === locked) {
-          if (cResult[11] === selected) {
-            if (cResult[12] === subtitle) {
-              if (cResult[13] === num8) {
-                let tmp15;
-                if (cResult[14] === tmp14) {
-                  tmp15 = cResult[15];
-                }
-                return tmp15;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  const tmp16 = <closure_19 channel={channel} embeddedActivitiesCount={num8} collapsed={collapsed} voiceStates={tmp14} selected={selected} locked={locked} bypassLimit={bypassLimit} subtitle={subtitle} />;
-  cResult[7] = bypassLimit;
-  cResult[8] = channel;
-  cResult[9] = collapsed;
-  cResult[10] = locked;
-  cResult[11] = selected;
-  cResult[12] = subtitle;
-  cResult[13] = num8;
-  cResult[14] = tmp14;
-  cResult[15] = tmp16;
-  tmp15 = tmp16;
-}) : (function ConnectedVoiceChannel(channel) {
+  }} style={obj.container} accessible accessibilityRole="button" accessibilityLabel={accessibilityLabelOrCheapFallbackUnsafe} accessibilityHint={intl.string(channel(ensureSyncedChannelVoiceStates[30]).t["9C444m"])} channel={channel} selected={selected} locked={locked} unread={hasUnread} resolvedUnreadSetting={resolvedUnreadSetting} subtitle={result} isChannelLive={null != activeEvent || null != startTime} channelInfo={tmp19}>{tmp17Result}</tmp20>;
+});
+const memoResult = react.memo(function ConnectedVoiceChannel(channel) {
   let bypassLimit;
   let collapsed;
   let locked;
@@ -629,7 +207,7 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   num = undefined;
   ({ locked, bypassLimit, collapsed } = stateFromStoresObject);
   const tmp3 = jsx;
-  const tmp4 = closure_19;
+  const tmp4 = closure_18;
   if (arr3 != null) {
     num = arr3.length;
   }
@@ -641,9 +219,9 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
     tmp5 = NO_VOICE_STATES;
   }
   return tmp3(tmp4, obj3);
-}));
+});
 let result = size.fileFinishedImporting("modules/channel_list_v2/native/items/VoiceChannel.tsx");
 
-export default memo2Result;
+export default memoResult;
 export const VOICE_USERS_MARGIN_TOP = -4;
 export const VOICE_USERS_MARGIN_BOTTOM = 2;

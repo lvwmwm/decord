@@ -1,42 +1,22 @@
-// Module ID: 5192
-// Function ID: 5193
+// Module ID: 5198
+// Function ID: 5199
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1497, 1631, 558, 576, 2]
-// Exports: getBaseAppContainerDimensions
+// Dependencies: [19, 1492, 1626, 2]
+// Exports: default, getBaseAppContainerDimensions
 
-// Module 5192 (useBaseAppContainerDimensions)
-import react2 from "react" /* 576 */;
-import useWindowDimensions from "useWindowDimensions" /* 1497 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1631 */;
+// Module 5198 (useBaseAppContainerDimensions)
+import useWindowDimensions from "useWindowDimensions" /* 1492 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1626 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const useWindowDimensionsDefault = useWindowDimensions;
 const useSafeAreaInsetsDefault = useSafeAreaInsets;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseAppContainerDimensions() {
-  let height;
-  let width;
-  const obj = react2;
-  const cResult = obj.c(3);
-  ({ height, width } = useWindowDimensionsDefault());
-  useWindowDimensionsDefault();
-  const rect = useSafeAreaInsetsDefault();
-  const diff = width - rect.left - rect.right;
-  if (cResult[0] === height) {
-    let tmp4;
-    if (cResult[1] === diff) {
-      tmp4 = cResult[2];
-    }
-    return tmp4;
-  }
-  size = { width: diff, height };
-  cResult[0] = height;
-  cResult[1] = diff;
-  cResult[2] = size;
-  tmp4 = size;
-}) : (function useBaseAppContainerDimensions() {
+let size = size_mod;
+const result = size.fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
+
+export default function useBaseAppContainerDimensions() {
   size = useWindowDimensionsDefault();
   const width = size.width;
   const height = size.height;
@@ -48,11 +28,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBaseApp
     size = { width: width - left - right, height };
     return size;
   }, items);
-});
-let size = size_mod;
-const result = size.fileFinishedImporting("modules/screen/native/useBaseAppContainerDimensions.tsx");
-
-export default tmp2;
+};
 export function getBaseAppContainerDimensions() {
   let height;
   let width;

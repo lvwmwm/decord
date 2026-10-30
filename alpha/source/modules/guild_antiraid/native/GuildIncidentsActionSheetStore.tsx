@@ -1,20 +1,20 @@
-// Module ID: 13054
-// Function ID: 13055
+// Module ID: 13206
+// Function ID: 13207
 // Name: GuildIncidentsActionSheetStore
-// Dependencies: [8441, 570, 1271, 2]
+// Dependencies: [8475, 560, 1260, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 13054 (GuildIncidentsActionSheetStore)
-import react_native from "react-native" /* 1271 */;
-import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8441 */;
-import module_570 from "module_570" /* 570 */;
+// Module 13206 (GuildIncidentsActionSheetStore)
+import react_native from "react-native" /* 1260 */;
+import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8475 */;
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 const DEFAULT_LOCKDOWN_DURATION = GuildAntiRaidConstants.DEFAULT_LOCKDOWN_DURATION;
-const useGuildIncidentsActionSheetStore = module_570.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false }));
+const useGuildIncidentsActionSheetStore = module_560.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: true, pauseDms: true, hasTimeChanges: false }));
 const result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
 
 export { useGuildIncidentsActionSheetStore };

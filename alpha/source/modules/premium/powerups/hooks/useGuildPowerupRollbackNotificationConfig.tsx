@@ -1,22 +1,61 @@
-// Module ID: 13889
-// Function ID: 13890
+// Module ID: 14023
+// Function ID: 14024
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5218, 13890, 4841, 1125, 2568, 558, 576, 504, 5222, 13891, 2]
-// Exports: getGuildThemeRollbackNotificationConfig
+// Dependencies: [5224, 14024, 4842, 1114, 2569, 504, 5228, 14025, 2]
+// Exports: default, getGuildThemeRollbackNotificationConfig
 
-// Module 13889 (useGuildPowerupRollbackNotificationConfig)
-import intl3 from "intl" /* 1125 */;
-import _modDef2568 from "module_2568" /* 2568 */;
-import dismissible_content from "dismissible_content" /* 4841 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13890 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5218 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14023 (useGuildPowerupRollbackNotificationConfig)
+import intl3 from "intl" /* 1114 */;
+import _modDef2569 from "module_2569" /* 2569 */;
+import dismissible_content from "dismissible_content" /* 4842 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14024 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5224 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
+const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
+
+export default function useGuildPowerupRollbackNotificationConfig(guildId, useGuildPowerupNewPerkMarketingVersion) {
+  let intl;
+  let intl2;
+  let obj3;
+  let obj4;
+  let tmp4;
+  _require = guildId;
+  const items = [GuildPowerupsStore];
+  const obj = require("get initialized");
+  const stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(guildId));
+  if (stateFromStores != null) {
+    tmp4 = stateFromStores.allPowerups[require("Powerups").GUILD_POWERUP_GUILD_THEME_SKU_ID];
+  }
+  let tmp5 = null;
+  const tmpResult = require("guildTheme");
+  if (tmpResult.useShouldShowGuildThemeRollback(guildId, useGuildPowerupNewPerkMarketingVersion)) {
+    let storeRemovalDate;
+    if (tmp4 != null) {
+      storeRemovalDate = tmp4.storeRemovalDate;
+    }
+    let tmp6 = null;
+    if (null != tmp4) {
+      tmp6 = null;
+      if (null != storeRemovalDate) {
+        const tmp8 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
+        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2569["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2569.jd8fki, obj4) };
+        intl = tmp(1114).intl;
+        obj3 = { dateString: tmp8 };
+        intl2 = tmp(1114).intl;
+        obj4 = { startDate: tmp8, endDate: tmp8, perkName: null, boostCount: null };
+        ({ title: obj5.perkName, cost: obj5.boostCount } = tmp4);
+        tmp6 = obj2;
+      }
+    }
+    tmp5 = tmp6;
+  }
+  return tmp5;
+};
+export function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   let intl;
   let intl2;
   let obj2;
@@ -27,7 +66,7 @@ function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   if (null != storeRemovalDate) {
     if (null != storeRemovalDate) {
       const tmp3 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2568["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2568.jd8fki, obj5) };
+      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2569["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2569.jd8fki, obj5) };
       intl = intl3.intl;
       obj2 = { dateString: tmp3 };
       intl2 = intl3.intl;
@@ -38,115 +77,3 @@ function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   }
   return null;
 }
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildPowerupRollbackNotificationConfig(arg0, arg1) {
-  let closure_0;
-  let first;
-  let intl;
-  let intl2;
-  let obj3;
-  let obj4;
-  let tmp6;
-  _require = arg0;
-  const obj = require("react");
-  const cResult = obj.c(6);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GuildPowerupsStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== arg0) {
-    const fn = function u() {
-      return GuildPowerupsStore.getStateForGuild(closure_0);
-    };
-    cResult[1] = arg0;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = require("get initialized");
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  let tmp8;
-  if (stateFromStores != null) {
-    tmp8 = stateFromStores.allPowerups[tmp(undefined, 5222).GUILD_POWERUP_GUILD_THEME_SKU_ID];
-  }
-  const tmpResult2 = require("guildTheme");
-  const shouldShowGuildThemeRollback = tmpResult2.useShouldShowGuildThemeRollback(arg0, arg1);
-  if (cResult[3] === tmp8) {
-    let tmp10;
-    if (cResult[4] === shouldShowGuildThemeRollback) {
-      tmp10 = cResult[5];
-    }
-    return tmp10;
-  }
-  let tmp11 = null;
-  if (shouldShowGuildThemeRollback) {
-    let storeRemovalDate;
-    if (tmp8 != null) {
-      storeRemovalDate = tmp8.storeRemovalDate;
-    }
-    let tmp12 = null;
-    if (null != tmp8) {
-      tmp12 = null;
-      if (null != storeRemovalDate) {
-        const tmp14 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2568["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2568.jd8fki, obj4) };
-        intl = tmp(1125).intl;
-        obj3 = { dateString: tmp14 };
-        intl2 = tmp(1125).intl;
-        obj4 = { startDate: tmp14, endDate: tmp14, perkName: null, boostCount: null };
-        ({ title: obj6.perkName, cost: obj6.boostCount } = tmp8);
-        tmp12 = obj2;
-      }
-    }
-    tmp11 = tmp12;
-  }
-  cResult[3] = tmp8;
-  cResult[4] = shouldShowGuildThemeRollback;
-  cResult[5] = tmp11;
-  tmp10 = tmp11;
-}) : (function useGuildPowerupRollbackNotificationConfig(arg0, arg1) {
-  let closure_0;
-  let intl;
-  let intl2;
-  let obj3;
-  let obj4;
-  let tmp4;
-  _require = arg0;
-  const items = [GuildPowerupsStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => GuildPowerupsStore.getStateForGuild(closure_0));
-  if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[require("Powerups").GUILD_POWERUP_GUILD_THEME_SKU_ID];
-  }
-  let tmp5 = null;
-  const tmpResult = require("guildTheme");
-  if (tmpResult.useShouldShowGuildThemeRollback(arg0, arg1)) {
-    let storeRemovalDate;
-    if (tmp4 != null) {
-      storeRemovalDate = tmp4.storeRemovalDate;
-    }
-    let tmp6 = null;
-    if (null != tmp4) {
-      tmp6 = null;
-      if (null != storeRemovalDate) {
-        const tmp8 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2568["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2568.jd8fki, obj4) };
-        intl = tmp(1125).intl;
-        obj3 = { dateString: tmp8 };
-        intl2 = tmp(1125).intl;
-        obj4 = { startDate: tmp8, endDate: tmp8, perkName: null, boostCount: null };
-        ({ title: obj5.perkName, cost: obj5.boostCount } = tmp4);
-        tmp6 = obj2;
-      }
-    }
-    tmp5 = tmp6;
-  }
-  return tmp5;
-});
-const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
-
-export default tmp2;
-export { getGuildThemeRollbackNotificationConfig };

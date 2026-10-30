@@ -1,166 +1,21 @@
-// Module ID: 9544
-// Function ID: 9545
+// Module ID: 9563
+// Function ID: 9564
 // Name: useSimilarGames
-// Dependencies: [2020, 1389, 9417, 558, 576, 9416, 7466, 504, 9284, 8640, 9342, 2]
+// Dependencies: [2015, 1384, 9434, 9433, 7474, 504, 9297, 8674, 9356, 2]
+// Exports: default
 
-// Module 9544 (useSimilarGames)
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9417 */;
-import GameStore from "GameStore" /* 2020 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 9563 (useSimilarGames)
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9434 */;
+import GameStore from "GameStore" /* 2015 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const set = SimilarGamesConstants.SIMILAR_GAMES_BLOCKED_GAME_IDS;
 let closure_5 = [];
 const similarGames = [];
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGames(arg0) {
-  let data;
-  let error;
-  let isLoading;
-  let tmp10;
-  let tmp12;
-  let tmp14;
-  let tmp15;
-  let tmp17;
-  let tmp19;
-  let tmp20;
-  let tmp24;
-  let tmp4;
-  let tmp = data;
-  let obj = data(576);
-  const cResult = obj.c(14);
-  if (cResult[0] !== arg0) {
-    const hasItem = set.has(arg0);
-    cResult[0] = arg0;
-    cResult[1] = hasItem;
-    tmp4 = hasItem;
-  } else {
-    tmp4 = cResult[1];
-  }
-  const tmp7 = !tmp4;
-  let tmpResult = tmp(9416);
-  const similarGameIds = tmpResult.useSimilarGameIds(arg0, tmp7);
-  ({ data, isLoading, error } = similarGameIds);
-  if (tmp4) {
-    tmp10 = closure_5;
-  } else {
-    tmp10 = data;
-  }
-  data = tmp10;
-  const tmpResult4 = tmp(7466);
-  const games = tmpResult4.useGames(tmp10);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [GameStore];
-    cResult[2] = items;
-    tmp12 = items;
-  } else {
-    tmp12 = cResult[2];
-  }
-  if (cResult[3] !== tmp10) {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    const items1 = [tmp10];
-    cResult[3] = tmp10;
-    cResult[4] = S;
-    cResult[5] = items1;
-    tmp15 = items1;
-    tmp14 = S;
-  } else {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    tmp15 = cResult[5];
-  }
-  const tmpResult5 = tmp(504);
-  const stateFromStores = tmpResult5.useStateFromStores(tmp12, tmp14, tmp15);
-  if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    const items2 = [GameStore, UserStore];
-    cResult[6] = items2;
-    tmp17 = items2;
-  } else {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-  }
-  if (cResult[7] !== tmp10) {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    const items3 = [tmp10];
-    cResult[7] = tmp10;
-    cResult[8] = tmp21;
-    cResult[9] = items3;
-    tmp20 = items3;
-    tmp19 = tmp21;
-  } else {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    tmp20 = cResult[9];
-  }
-  const tmpResult6 = tmp(504);
-  const stateFromStoresArray = tmpResult6.useStateFromStoresArray(tmp17, tmp19, tmp20);
-  if (tmp4) {
-    let tmp25;
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
-      class S {
-        constructor() {
-          return data.some(function() { /* body not rendered: F149321 */ });
-        }
-      }
-      tmp26[1] = closure_6;
-      cResult[10] = tmp26;
-      tmp25 = tmp26;
-    } else {
-      class S {
-        constructor() {
-          return data.some(function() { /* body not rendered: F149321 */ });
-        }
-      }
-    }
-    return tmp25;
-  } else {
-    class S {
-      constructor() {
-        return data.some(function() { /* body not rendered: F149321 */ });
-      }
-    }
-    if (cResult[11] === stateFromStoresArray) {
-      class S {
-        constructor() {
-          return data.some(function() { /* body not rendered: F149321 */ });
-        }
-      }
-      return tmp24;
-    }
-    const obj2 = { isFetching: null == error && null == data || isLoading || stateFromStores, similarGames: stateFromStoresArray };
-    cResult[11] = stateFromStoresArray;
-    cResult[12] = null == error && null == data || isLoading || stateFromStores;
-    cResult[13] = obj2;
-    tmp24 = obj2;
-  }
-}) : (function useSimilarGames(arg0) {
+const result = size.fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
+
+export default function useSimilarGames(arg0) {
   let data;
   let error;
   let isLoading;
@@ -169,7 +24,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
   let tmp7;
   const hasItem = set.has(arg0);
   const tmp2 = !hasItem;
-  let obj = data(9416);
+  let obj = data(9433);
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp2);
   ({ data, isLoading, error } = similarGameIds);
   if (hasItem) {
@@ -178,7 +33,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
     tmp7 = data;
   }
   data = tmp7;
-  const tmp3Result = data(7466);
+  const tmp3Result = data(7474);
   const games = tmp3Result.useGames(tmp7);
   const items = [GameStore];
   const items1 = [tmp7];
@@ -201,7 +56,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSimilarGa
     tmp13 = null == error && null == data || isLoading || stateFromStores;
   }
   return obj3;
-});
-const result = size.fileFinishedImporting("modules/game_profile/hooks/useSimilarGames.tsx");
-
-export default tmp2;
+};

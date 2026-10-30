@@ -1,13 +1,13 @@
-// Module ID: 10938
-// Function ID: 10939
+// Module ID: 10963
+// Function ID: 10964
 // Name: InappropriateConversationsActionCreators
-// Dependencies: [1084, 584, 1294, 1294, 2]
+// Dependencies: [1072, 572, 1283, 1283, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10938 (InappropriateConversationsActionCreators)
-import DispatcherDefault from "Dispatcher" /* 584 */;
-import Constants from "Constants" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1294 */;
+// Module 10963 (InappropriateConversationsActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1283 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

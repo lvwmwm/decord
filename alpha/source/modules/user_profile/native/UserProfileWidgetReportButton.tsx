@@ -1,82 +1,27 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 14923
+// Function ID: 14924
 // Name: UserProfileWidgetReportButton
-// Dependencies: [109, 19, 17, 21, 558, 576, 1125, 10037, 14887, 9710, 587, 9827, 2]
+// Dependencies: [19, 17, 21, 1114, 10064, 14924, 9853, 9736, 575, 2]
+// Exports: default
 
-// Module 14886 (UserProfileWidgetReportButton)
+// Module 14923 (UserProfileWidgetReportButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9710 */;
-import ContextMenu from "ContextMenu" /* 9827 */;
-import FlagIcon from "FlagIcon" /* 10037 */;
-import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14887 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import MoreHorizontalIcon2 from "MoreHorizontalIcon" /* 9736 */;
+import ContextMenu from "ContextMenu" /* 9853 */;
+import FlagIcon from "FlagIcon" /* 10064 */;
+import showReportModalForUserWidget from "showReportModalForUserWidget" /* 14924 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = ["ref"];
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
-let closure_7 = { top: 8, bottom: 8, left: 8, right: 8 };
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfileWidgetReportButton(userId) {
-  let first;
-  let hitSlop;
-  function action() {
-    const obj = showReportModalForUserWidget;
-    return obj.showReportModalForUserWidget(userId, widget);
-  }
-  let obj = userId(576);
-  const cResult = obj.c(7);
-  userId = userId.userId;
-  const widget = userId.widget;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let intl = tmp(1125).intl;
-    const stringResult = intl.string(userId(1125).t.D4GvHE);
-    cResult[0] = stringResult;
-    first = stringResult;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === userId) {
-    let tmp6;
-    let tmp7;
-    let tmp8;
-    if (cResult[2] === widget) {
-      tmp6 = cResult[3];
-    }
-    const _Symbol = Symbol;
-    if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function h(ref) {
-        const merged = Object.assign(_objectWithoutProperties(ref, closure_1_3));
-        const intl = userId(dependencyMap[6]).intl;
-        const MoreHorizontalIcon = userId(dependencyMap[9]).MoreHorizontalIcon;
-        return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(userId(dependencyMap[6]).t.xpSHSk)}><MoreHorizontalIcon size="sm" color={widget(dependencyMap[10]).colors.TEXT_MUTED} /></Pressable>;
-      };
-      cResult[4] = fn;
-      tmp7 = fn;
-    } else {
-      tmp7 = cResult[4];
-    }
-    if (cResult[5] !== tmp6) {
-      const tmp10 = jsx(userId(9827).ContextMenu, { items: tmp6, children: tmp7 });
-      cResult[5] = tmp6;
-      cResult[6] = tmp10;
-      tmp8 = tmp10;
-    } else {
-      tmp8 = cResult[6];
-    }
-    return tmp8;
-  }
-  const items = [{ label: first, variant: "destructive", IconComponent: userId(10037).FlagIcon, action }];
-  cResult[1] = userId;
-  cResult[2] = widget;
-  cResult[3] = items;
-  tmp6 = items;
-  ({ label: first, variant: "destructive", IconComponent: userId(10037).FlagIcon, action });
-}) : (function UserProfileWidgetReportButton(arg0) {
+let closure_5 = { top: 8, bottom: 8, left: 8, right: 8 };
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
+
+export default function UserProfileWidgetReportButton(arg0) {
   let hitSlop;
   let intl;
   ({ userId: require, widget: importDefault } = arg0);
@@ -100,7 +45,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function UserProfil
       return <Pressable ref={arg0.ref} hitSlop={hitSlop} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.xpSHSk)}><MoreHorizontalIcon size="sm" color={nativeDefault.colors.TEXT_MUTED} /></Pressable>;
     }
   });
-});
-const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetReportButton.tsx");
-
-export default tmp3;
+};

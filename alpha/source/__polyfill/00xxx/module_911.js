@@ -1,0 +1,28 @@
+// Module ID: 911
+// Function ID: 912
+// Dependencies: []
+// Exports: initUnique
+
+// Module 911
+let set;
+
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+const weakMap = new WeakMap();
+
+export function initUnique(visibilityWatcher, InteractionManager) {
+  try {
+    if (!weakMap.get(visibilityWatcher)) {
+      const self = this;
+      const self2 = this;
+      set = weakMap.set;
+      const tmp2 = new InteractionManager();
+      const result = set(visibilityWatcher, tmp2);
+    }
+    return weakMap.get(visibilityWatcher);
+  } catch (err) {
+    const self3 = this;
+    const self4 = this;
+    const tmp5 = new InteractionManager();
+    return tmp5;
+  }
+}

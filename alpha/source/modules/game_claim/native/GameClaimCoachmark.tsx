@@ -1,24 +1,23 @@
-// Module ID: 18133
-// Function ID: 18134
+// Module ID: 18194
+// Function ID: 18195
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1084, 4854, 21, 587, 18134, 11152, 5287, 5005, 558, 576, 18135, 1125, 14878, 6991, 6968, 5271, 8147, 5281, 7489, 7493, 6965, 2]
+// Dependencies: [5, 19, 17, 1072, 4855, 21, 575, 18195, 11028, 5635, 5009, 18196, 14914, 1114, 6971, 6974, 7048, 5619, 5629, 8153, 7497, 7501, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 18133 (GameClaimCoachmark)
+// Module 18194 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
-import nativeDefault from "native" /* 587 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4854 */;
-import ButtonConstants from "ButtonConstants" /* 5287 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11152 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14878 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 18134 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18135 */;
+import nativeDefault from "native" /* 575 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4855 */;
+import ButtonConstants from "ButtonConstants" /* 5635 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11028 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 14914 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 18195 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18196 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1084 */;
+import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,15 +32,15 @@ let obj3;
 let obj4;
 let size;
 let tmp2;
-let tmp8;
-const intl5 = tmp2(1125);
-const Text_Text = tmp2(5271);
-const components_Button_Button = tmp2(5281);
-const Card_Card = tmp2(6965);
-const Pressables = tmp2(6968);
-const XSmallIcon = tmp2(6991);
-const LinkExternalSmallIcon = tmp2(8147);
-const GameClaimCardStackDefault = tmp8(18134);
+let tmp5;
+const intl5 = tmp2(1114);
+const Text_Text = tmp2(5619);
+const components_Button_Button = tmp2(5629);
+const Card_Card = tmp2(6971);
+const Pressables = tmp2(6974);
+const XSmallIcon = tmp2(7048);
+const LinkExternalSmallIcon = tmp2(8153);
+const GameClaimCardStackDefault = tmp5(18195);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -57,272 +56,7 @@ size = { position: "absolute", top: nativeDefault.space.PX_12, right: nativeDefa
 obj3 = { marginTop: nativeDefault.space.PX_4 };
 obj4 = { marginTop: nativeDefault.space.PX_8 };
 let closure_13 = createStyles(obj);
-const memo = react.memo;
-const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function GameClaimCoachmark(arg0) {
-  let coverImageUrl;
-  let first1;
-  let gameName;
-  let guild;
-  let items;
-  let markAsDismissed;
-  const tmp2 = dependencyMap;
-  let obj = markAsDismissed(576);
-  const cResult = obj.c(36);
-  ({ guild, markAsDismissed } = arg0);
-  const tmp4 = closure_13();
-  let obj2 = markAsDismissed(18135);
-  let first = obj2.useUnclaimedGameIdsForGuild(guild.id)[0];
-  if (first == null) {
-    first = null;
-  }
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(markAsDismissed(1125).t.VQq92a);
-    cResult[0] = stringResult;
-    first1 = stringResult;
-  } else {
-    first1 = cResult[0];
-  }
-  ({ coverImageUrl, gameName } = useGameNameAndCoverImageDefault(first, first1));
-  const tmp9 = useGameNameAndCoverImageDefault(first, first1);
-  if (null == coverImageUrl) {
-    return null;
-  } else {
-    let tmp10;
-    let tmp14;
-    let tmp15;
-    if (cResult[1] !== guild.features) {
-      let stringResult1;
-      const features = guild.features;
-      const tmp11 = constants;
-      const hasItem = features.has(constants.VERIFIED);
-      const intl2 = tmp(1125).intl;
-      const string = intl2.string;
-      const t = tmp(1125).t;
-      if (hasItem) {
-        stringResult1 = string(t.uUARXe);
-      } else {
-        stringResult1 = string(t["0Dx29f"]);
-      }
-      cResult[1] = guild.features;
-      cResult[2] = stringResult1;
-      tmp10 = stringResult1;
-    } else {
-      tmp10 = cResult[2];
-    }
-    const card = tmp4.card;
-    if (cResult[3] !== markAsDismissed) {
-      const fn = function p() {
-        return markAsDismissed(ContentDismissActionType.USER_DISMISS);
-      };
-      cResult[3] = markAsDismissed;
-      cResult[4] = fn;
-      tmp14 = fn;
-    } else {
-      tmp14 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const tmp17 = closure_8(markAsDismissed(6991).XSmallIcon, { size: "sm", color: "text-default" });
-      cResult[5] = tmp17;
-      tmp15 = tmp17;
-    } else {
-      tmp15 = cResult[5];
-    }
-    if (cResult[6] === tmp4.closeButton) {
-      let tmp18;
-      let tmp21;
-      let tmp24;
-      if (cResult[7] === tmp14) {
-        tmp18 = cResult[8];
-      }
-      if (cResult[9] !== coverImageUrl) {
-        let obj3 = { imageSrc: coverImageUrl };
-        const tmp23 = closure_8(GameClaimCardStackDefault, obj3);
-        cResult[9] = coverImageUrl;
-        cResult[10] = tmp23;
-        tmp21 = tmp23;
-      } else {
-        tmp21 = cResult[10];
-      }
-      const centeredText = tmp4.centeredText;
-      if (cResult[11] !== gameName) {
-        const intl3 = tmp(1125).intl;
-        let obj4 = { gameName };
-        const formatResult = intl3.format(markAsDismissed(1125).t.Q11WTQ, obj4);
-        cResult[11] = gameName;
-        cResult[12] = formatResult;
-        tmp24 = formatResult;
-      } else {
-        tmp24 = cResult[12];
-      }
-      if (cResult[13] === tmp4.centeredText) {
-        let tmp26;
-        if (cResult[14] === tmp24) {
-          tmp26 = cResult[15];
-        }
-        if (cResult[16] === tmp4.body) {
-          let tmp29;
-          if (cResult[17] === tmp4.centeredText) {
-            tmp29 = cResult[18];
-          }
-          if (cResult[19] === tmp10) {
-            let tmp30;
-            let tmp34;
-            let tmp33;
-            let tmp38;
-            if (cResult[20] === tmp29) {
-              tmp30 = cResult[21];
-            }
-            const _Symbol2 = Symbol;
-            const cta = tmp4.cta;
-            if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-              const intl4 = tmp(1125).intl;
-              const stringResult2 = intl4.string(markAsDismissed(1125).t["2u6ZlY"]);
-              const tmp37 = closure_8(markAsDismissed(8147).LinkExternalSmallIcon, { size: "xs", color: "white" });
-              cResult[22] = stringResult2;
-              cResult[23] = tmp37;
-              tmp34 = tmp37;
-              tmp33 = stringResult2;
-            } else {
-              tmp33 = cResult[22];
-              tmp34 = cResult[23];
-            }
-            if (cResult[24] !== markAsDismissed) {
-              let obj5 = {
-                variant: "primary",
-                size: "sm",
-                text: tmp33,
-                icon: tmp34,
-                iconPosition: "end",
-                onPress: _asyncToGenerator(async (arg0, value) => {
-                              let v1;
-                              let v3;
-                              if (markAsDismissed === 2) {
-                                markAsDismissed = 3;
-                                throw new TypeError("Generator functions may not be called on executing generators");
-                              } else if (tmp2 === 3) {
-                                if (arg0 === 1) {
-                                  throw value;
-                                } else if (arg0 === 2) {
-                                  const obj3 = { value, done: true };
-                                  return obj3;
-                                } else {
-                                  return { value: "IconComponent", done: "IconComponent" };
-                                }
-                              } else {
-                                try {
-                                  markAsDismissed = 2;
-                                  if (0 === c1) {
-                                    if (arg0 === 1) {
-                                      markAsDismissed = 3;
-                                      throw value;
-                                    } else if (arg0 === 2) {
-                                      markAsDismissed = 3;
-                                      const obj4 = { value, done: true };
-                                      return obj4;
-                                    } else {
-                                      markAsDismissed(constants2.TAKE_ACTION);
-                                      const obj2 = c1(dependencyMap[21]);
-                                      c1 = 1;
-                                      markAsDismissed = 1;
-                                      const obj5 = { value: obj2.redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, markAsDismissed(dependencyMap[22]).LoginHandoffSource.GAME_CLAIM), done: false };
-                                      return obj5;
-                                    }
-                                  } else if (arg0 === 1) {
-                                    markAsDismissed = 3;
-                                    throw value;
-                                  } else if (arg0 === 2) {
-                                    markAsDismissed = 3;
-                                    const obj = { value, done: true };
-                                    return obj;
-                                  } else {
-                                    markAsDismissed = 3;
-                                    return { value: "IconComponent", done: "IconComponent" };
-                                  }
-                                } catch (tmp11) {
-                                  markAsDismissed = 3;
-                                  throw tmp11;
-                                }
-                              }
-                            })
-              };
-              const Button = tmp(5281).Button;
-              const tmp41 = closure_8(Button, obj5);
-              cResult[24] = markAsDismissed;
-              cResult[25] = tmp41;
-              tmp38 = tmp41;
-            } else {
-              tmp38 = cResult[25];
-            }
-            if (cResult[26] === tmp4.cta) {
-              let tmp42;
-              if (cResult[27] === tmp38) {
-                tmp42 = cResult[28];
-              }
-              if (cResult[29] === tmp4.card) {
-                if (cResult[30] === tmp26) {
-                  if (cResult[31] === tmp30) {
-                    if (cResult[32] === tmp42) {
-                      if (cResult[33] === tmp18) {
-                        let tmp46;
-                        if (cResult[34] === tmp21) {
-                          tmp46 = cResult[35];
-                        }
-                        return tmp46;
-                      }
-                    }
-                  }
-                }
-              }
-              const obj6 = { variant: "secondary", style: card, children: items };
-              items = [tmp18, tmp21, tmp26, tmp30, tmp42];
-              const tmp48 = closure_9(markAsDismissed(6965).Card, obj6);
-              cResult[29] = tmp4.card;
-              cResult[30] = tmp26;
-              cResult[31] = tmp30;
-              cResult[32] = tmp42;
-              cResult[33] = tmp18;
-              cResult[34] = tmp21;
-              cResult[35] = tmp48;
-              tmp46 = tmp48;
-            }
-            const obj7 = { style: cta, children: tmp38 };
-            const tmp45 = closure_8(View, obj7);
-            cResult[26] = tmp4.cta;
-            cResult[27] = tmp38;
-            cResult[28] = tmp45;
-            tmp42 = tmp45;
-          }
-          const obj8 = { variant: "text-sm/normal", color: "text-overlay-light", style: tmp29, children: tmp10 };
-          const tmp32 = closure_8(markAsDismissed(5271).Text, obj8);
-          cResult[19] = tmp10;
-          cResult[20] = tmp29;
-          cResult[21] = tmp32;
-          tmp30 = tmp32;
-        }
-        const items1 = [, ];
-        ({ body: arr[0], centeredText: arr[1] } = tmp4);
-        cResult[16] = tmp4.body;
-        cResult[17] = tmp4.centeredText;
-        cResult[18] = items1;
-        tmp29 = items1;
-      }
-      const obj9 = { variant: "text-md/medium", color: "text-overlay-light", style: centeredText, children: tmp24 };
-      const tmp28 = closure_8(markAsDismissed(5271).Text, obj9);
-      cResult[13] = tmp4.centeredText;
-      cResult[14] = tmp24;
-      cResult[15] = tmp28;
-      tmp26 = tmp28;
-    }
-    const obj10 = { accessibilityRole: "button", onPress: tmp14, style: tmp4.closeButton, children: tmp15 };
-    const tmp20 = closure_8(markAsDismissed(6968).PressableOpacity, obj10);
-    cResult[6] = tmp4.closeButton;
-    cResult[7] = tmp14;
-    cResult[8] = tmp20;
-    tmp18 = tmp20;
-  }
-}) : (function GameClaimCoachmark(arg0) {
+const memoResult = react.memo(function GameClaimCoachmark(arg0) {
   let Button;
   let guild;
   let intl2;
@@ -401,7 +135,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: "IconComponent" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -416,10 +150,10 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                   return obj4;
                 } else {
                   require(constants2.TAKE_ACTION);
-                  const obj2 = c1(dependencyMap[21]);
+                  const obj2 = c1(dependencyMap[20]);
                   c1 = 1;
                   c0 = 1;
-                  const obj5 = { value: obj2.redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, c0(dependencyMap[22]).LoginHandoffSource.GAME_CLAIM), done: false };
+                  const obj5 = { value: obj2.redirectDeveloperPortalWithHandoffToken(constants.DEVELOPER_PORTAL_APPLICATIONS_GAME_IDENTITY, c0(dependencyMap[21]).LoginHandoffSource.GAME_CLAIM), done: false };
                   return obj5;
                 }
               } else if (arg0 === 1) {
@@ -431,7 +165,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
                 return obj;
               } else {
                 c0 = 3;
-                return { value: "IconComponent", done: "IconComponent" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp11) {
               c0 = 3;
@@ -445,7 +179,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     items[4] = closure_8(View, obj8);
     return closure_9(Card, obj2);
   }
-}));
+});
 size = size_mod;
 let result = size.fileFinishedImporting("modules/game_claim/native/GameClaimCoachmark.tsx");
 

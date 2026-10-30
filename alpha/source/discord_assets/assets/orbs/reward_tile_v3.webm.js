@@ -1,8 +1,8 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9688
+// Function ID: 9689
 // Dependencies: [2]
 
-// Module 9663
+// Module 9688
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3.webm.js");

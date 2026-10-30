@@ -1,24 +1,23 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9178
+// Function ID: 9179
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1084, 21, 5005, 6710, 587, 558, 576, 1125, 1199, 5247, 5188, 6968, 5271, 9166, 5630, 7280, 2]
+// Dependencies: [19, 1072, 21, 5009, 6717, 575, 1188, 1114, 6974, 5253, 5194, 5619, 9179, 5602, 7288, 2]
+// Exports: default
 
-// Module 9165 (InstantInviteFriendsList)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import intl5 from "intl" /* 1125 */;
-import native from "native" /* 1199 */;
-import RootNavigationRef from "RootNavigationRef" /* 5188 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Pressables from "Pressables" /* 6968 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9166 */;
+// Module 9178 (InstantInviteFriendsList)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1114 */;
+import native from "native" /* 1188 */;
+import RootNavigationRef from "RootNavigationRef" /* 5194 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Pressables from "Pressables" /* 6974 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9179 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import TextStyles_mod from "TextStyles" /* 6710 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import TextStyles_mod from "TextStyles" /* 6717 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,122 +28,7 @@ let obj3;
 function keyExtractor(item) {
   return item.item.id;
 }
-const Fonts = Constants.Fonts;
-({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { emptyTitle: obj2, emptyBody: obj3, goToFriendsLink: { textAlign: "center" } };
-obj2 = { textTransform: "none", lineHeight: 24 };
-createStyles = createStyles.createStyles;
-let TextStyles = TextStyles_mod;
-const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
-obj3 = { lineHeight: 20, fontWeight: "600" };
-TextStyles = TextStyles_mod;
-const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
-let closure_7 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (function FriendsEmptyComponent() {
-  let items;
-  let obj3;
-  let tmp5;
-  let tmp6;
-  let obj = react2;
-  const cResult = obj.c(14);
-  const tmp4 = closure_7();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const intl = tmp(1125).intl;
-    const stringResult = intl.string(intl5.t.dz4UlO);
-    const intl2 = tmp(1125).intl;
-    const stringResult1 = intl2.string(intl5.t.MBQBI7);
-    cResult[0] = stringResult;
-    cResult[1] = stringResult1;
-    tmp5 = stringResult;
-    tmp6 = stringResult1;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  if (cResult[2] === tmp4.emptyBody) {
-    let tmp9;
-    let tmp11;
-    let tmp13;
-    let tmp12;
-    let tmp15;
-    let tmp17;
-    if (cResult[3] === tmp4.emptyTitle) {
-      tmp9 = cResult[4];
-    }
-    const _Symbol = Symbol;
-    if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
-      const fn = function p() {
-        const obj = ActionSheetActionCreatorsDefault;
-        obj.hideActionSheet();
-        const obj2 = RootNavigationRef;
-        const rootNavigationRef = obj2.getRootNavigationRef();
-        if (null != rootNavigationRef) {
-          const obj3 = { screen: "add-friends", params: { sourcePage: "Instant Invite Empty State" } };
-          rootNavigationRef.navigate("friends", obj3);
-        }
-      };
-      cResult[5] = fn;
-      tmp11 = fn;
-    } else {
-      tmp11 = cResult[5];
-    }
-    const _Symbol2 = Symbol;
-    if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl3 = tmp(1125).intl;
-      const stringResult2 = intl3.string(intl5.t.a7FVbE);
-      const rect = { top: 8, left: 8, bottom: 8, right: 8 };
-      cResult[6] = stringResult2;
-      cResult[7] = rect;
-      tmp13 = rect;
-      tmp12 = stringResult2;
-    } else {
-      tmp12 = cResult[6];
-      tmp13 = cResult[7];
-    }
-    const _Symbol3 = Symbol;
-    const goToFriendsLink = tmp4.goToFriendsLink;
-    if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl4 = tmp(1125).intl;
-      const stringResult3 = intl4.string(intl5.t.a7FVbE);
-      cResult[8] = stringResult3;
-      tmp15 = stringResult3;
-    } else {
-      tmp15 = cResult[8];
-    }
-    if (cResult[9] !== tmp4.goToFriendsLink) {
-      let obj2 = { onPress: tmp11, accessibilityRole: "link", accessibilityLabel: tmp12, hitSlop: tmp13, children: React3(Text_Text.Text, obj3) };
-      const PressableOpacity = tmp(6968).PressableOpacity;
-      obj3 = { style: goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: tmp15 };
-      const tmp19 = React3(PressableOpacity, obj2);
-      cResult[9] = tmp4.goToFriendsLink;
-      cResult[10] = tmp19;
-      tmp17 = tmp19;
-    } else {
-      tmp17 = cResult[10];
-    }
-    if (cResult[11] === tmp9) {
-      let tmp20;
-      if (cResult[12] === tmp17) {
-        tmp20 = cResult[13];
-      }
-      return tmp20;
-    }
-    const obj4 = { children: items };
-    items = [tmp9, tmp17];
-    const tmp23 = metroRequire(hasOwnProperty, obj4);
-    cResult[11] = tmp9;
-    cResult[12] = tmp17;
-    cResult[13] = tmp23;
-    tmp20 = tmp23;
-  }
-  const obj5 = { title: tmp5, body: tmp6, titleStyle: tmp4.emptyTitle, bodyStyle: tmp4.emptyBody };
-  const tmp10 = React3(native.RefreshEmptyState, obj5);
-  cResult[2] = tmp4.emptyBody;
-  cResult[3] = tmp4.emptyTitle;
-  cResult[4] = tmp10;
-  tmp9 = tmp10;
-}) : (function FriendsEmptyComponent() {
+function FriendsEmptyComponent() {
   let Text;
   let intl;
   let intl2;
@@ -183,79 +67,22 @@ const ListEmptyComponent = ReactCompilerGating.isReactCompilerEnabled() ? (funct
   intl4 = intl5.intl;
   items[1] = React3(PressableOpacity, obj4);
   return metroRequire(hasOwnProperty, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteFriendsList(code) {
-  let onInviteSent;
-  let obj = code(onInviteSent[7]);
-  const cResult = obj.c(13);
-  const tmp = code;
-  code = code.code;
-  const onPressAvatar = code.onPressAvatar;
-  onInviteSent = code.onInviteSent;
-  const data = code.data;
-  const source = code.source;
-  if (cResult[0] === code) {
-    if (cResult[1] === data.length) {
-      if (cResult[2] === onInviteSent) {
-        if (cResult[3] === onPressAvatar) {
-          let tmp4;
-          let tmp6;
-          let tmp9;
-          if (cResult[4] === source) {
-            tmp4 = cResult[5];
-          }
-          const _Symbol = Symbol;
-          if (cResult[6] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj2 = { isKeyboardAwareOnAndroid: false };
-            cResult[6] = obj2;
-            tmp6 = obj2;
-          } else {
-            tmp6 = cResult[6];
-          }
-          const sum = onPressAvatar(tmp2[5]).space.PX_16 + onPressAvatar(tmp2[15])(tmp6).insets.bottom;
-          const tmp7 = onPressAvatar;
-          if (cResult[7] !== sum) {
-            const obj3 = { paddingBottom: sum, paddingHorizontal: tmp7(onInviteSent[5]).space.PX_12 };
-            cResult[7] = sum;
-            cResult[8] = obj3;
-            tmp9 = obj3;
-          } else {
-            tmp9 = cResult[8];
-          }
-          if (cResult[9] === data) {
-            if (cResult[10] === tmp4) {
-              let tmp10;
-              if (cResult[11] === tmp9) {
-                tmp10 = cResult[12];
-              }
-              return tmp10;
-            }
-          }
-          const obj4 = { contentContainerStyle: tmp9, bounces: false, renderItem: tmp4, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
-          const tmp14 = source(tmp(onInviteSent[16]).BottomSheetFlashList, obj4);
-          cResult[9] = data;
-          cResult[10] = tmp4;
-          cResult[11] = tmp9;
-          cResult[12] = tmp14;
-          tmp10 = tmp14;
-        }
-      }
-    }
-  }
-  const fn = function n(row) {
-    const index = row.index;
-    const obj = { start: 0 === index, end: index === data.length - 1, row: row.item, onPressAvatar, onInviteSent, code, source };
-    return React3(InstantInviteRowDefault, obj);
-  };
-  cResult[0] = code;
-  cResult[1] = data.length;
-  cResult[2] = onInviteSent;
-  cResult[3] = onPressAvatar;
-  cResult[4] = source;
-  cResult[5] = fn;
-  tmp4 = fn;
-}) : (function InstantInviteFriendsList(code) {
+}
+const Fonts = Constants.Fonts;
+({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { emptyTitle: obj2, emptyBody: obj3, goToFriendsLink: { textAlign: "center" } };
+obj2 = { textTransform: "none", lineHeight: 24 };
+createStyles = createStyles.createStyles;
+let TextStyles = TextStyles_mod;
+const merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 18));
+obj3 = { lineHeight: 20, fontWeight: "600" };
+TextStyles = TextStyles_mod;
+const merged1 = Object.assign(TextStyles(Fonts.PRIMARY_MEDIUM, nativeDefault.colors.TEXT_SUBTLE, 16));
+let closure_7 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
+
+export default function InstantInviteFriendsList(code) {
   let obj2;
   code = code.code;
   const onPressAvatar = code.onPressAvatar;
@@ -268,12 +95,9 @@ const tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInv
     const obj = { start: 0 === index, end: index === data.length - 1, row: row.item, onPressAvatar, onInviteSent, code, source };
     return React3(InstantInviteRowDefault, obj);
   }, items);
-  const insets = onPressAvatar(onInviteSent[15])({ isKeyboardAwareOnAndroid: false }).insets;
-  let obj = { contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent };
+  const insets = onPressAvatar(onInviteSent[13])({ isKeyboardAwareOnAndroid: false }).insets;
+  let obj = { contentContainerStyle: obj2, bounces: false, renderItem: callback, data, keyExtractor, keyboardShouldPersistTaps: "always", ListEmptyComponent: FriendsEmptyComponent };
   obj2 = { paddingBottom: onPressAvatar(onInviteSent[5]).space.PX_16 + insets.bottom, paddingHorizontal: onPressAvatar(onInviteSent[5]).space.PX_12 };
-  const BottomSheetFlashList = code(onInviteSent[16]).BottomSheetFlashList;
+  const BottomSheetFlashList = code(onInviteSent[14]).BottomSheetFlashList;
   return source(BottomSheetFlashList, obj);
-});
-const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteFriendsList.tsx");
-
-export default tmp8;
+};

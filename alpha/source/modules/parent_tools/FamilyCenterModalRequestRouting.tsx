@@ -1,12 +1,12 @@
-// Module ID: 13158
-// Function ID: 13159
+// Module ID: 13308
+// Function ID: 13309
 // Name: FamilyCenterModalRequestRouting
-// Dependencies: [5, 7704, 7705, 2]
+// Dependencies: [5, 7709, 7710, 2]
 // Exports: resolveConnectionPrereqTarget
 
-// Module 13158 (FamilyCenterModalRequestRouting)
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7704 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7705 */;
+// Module 13308 (FamilyCenterModalRequestRouting)
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7709 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7710 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let obj = function _resolveConnectionPrereqTarget() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

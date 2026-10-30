@@ -1,256 +1,22 @@
-// Module ID: 12461
-// Function ID: 12462
+// Module ID: 12614
+// Function ID: 12615
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 4879, 1389, 558, 576, 12444, 504, 5059, 12462, 1125, 3864, 2]
+// Dependencies: [19, 4880, 1384, 12598, 504, 5063, 12615, 1114, 3865, 2]
+// Exports: default
 
-// Module 12461 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12444 */;
+// Module 12614 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12598 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4879 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
-  let closure_1;
-  let stateFromStores;
-  let tmp10;
-  let tmp15;
-  let tmp17;
-  let tmp18;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  let tmp9;
-  function userHook(arg0, arg1) {
-    return closure_1(stateFromStores.id, name, arg1);
-  }
-  _require = actor_user_id;
-  importDefault = arg2;
-  const tmp = _require;
-  let tmp2 = actor_user_id;
-  let obj = require("react");
-  const cResult = obj.c(23);
-  actor_user_id = actor_user_id.actor_user_id;
-  if (cResult[0] !== actor_user_id) {
-    const fn = function c() {
-      const obj = conjureMessageAuthors;
-      const messageAuthor = obj.requestMessageAuthor(actor_user_id);
-    };
-    const items = [actor_user_id];
-    cResult[0] = actor_user_id;
-    cResult[1] = fn;
-    cResult[2] = items;
-    tmp5 = items;
-    tmp4 = fn;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const effect = stateFromStores.useEffect(tmp4, tmp5);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
-    cResult[3] = items1;
-    tmp7 = items1;
-  } else {
-    tmp7 = cResult[3];
-  }
-  if (cResult[4] !== actor_user_id) {
-    const fn2 = function f() {
-      let user = null;
-      if (null != actor_user_id) {
-        user = UserStore.getUser(tmp);
-      }
-      return user;
-    };
-    const items2 = [actor_user_id];
-    cResult[4] = actor_user_id;
-    cResult[5] = fn2;
-    cResult[6] = items2;
-    tmp10 = items2;
-    tmp9 = fn2;
-  } else {
-    tmp9 = cResult[5];
-    tmp10 = cResult[6];
-  }
-  const tmpResult = tmp(tmp2[6]);
-  stateFromStores = tmpResult.useStateFromStores(tmp7, tmp9, tmp10);
-  const tmpResult3 = tmp(tmp2[7]);
-  let name = tmpResult3.useName(stateFromStores);
-  const tmp14 = require("useConjurePublishedAppName")(arg0);
-  if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-    const items3 = [name];
-    cResult[7] = items3;
-    tmp15 = items3;
-  } else {
-    tmp15 = cResult[7];
-  }
-  if (cResult[8] !== actor_user_id.guild_id) {
-    const fn3 = function y() {
-      let tmp2 = null;
-      if (null != actor_user_id.guild_id) {
-        const guild = GuildStore.getGuild(tmp.guild_id);
-        name = undefined;
-        if (guild != null) {
-          name = guild.name;
-        }
-        tmp2 = name;
-      }
-      return tmp2;
-    };
-    const items4 = [actor_user_id.guild_id];
-    cResult[8] = actor_user_id.guild_id;
-    cResult[9] = fn3;
-    cResult[10] = items4;
-    tmp18 = items4;
-    tmp17 = fn3;
-  } else {
-    tmp17 = cResult[9];
-    tmp18 = cResult[10];
-  }
-  const tmpResult4 = tmp(tmp2[6]);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp15, tmp17, tmp18);
-  if (cResult[11] === stateFromStores) {
-    if (cResult[12] === tmp14) {
-      if (cResult[13] === actor_user_id.channel_name) {
-        if (cResult[14] === actor_user_id.source_name) {
-          if (cResult[15] === actor_user_id.type) {
-            if (cResult[16] === stateFromStores1) {
-              if (cResult[17] === arg2) {
-                let tmp20;
-                if (cResult[18] === name) {
-                  tmp20 = cResult[19];
-                }
-                const _Symbol = Symbol;
-                if (tmp20 !== Symbol.for("react.early_return_sentinel")) {
-                  return tmp20;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  let forResult = Symbol.for("react.early_return_sentinel");
-  let stringResult = stateFromStores1;
-  if (stateFromStores1 == null) {
-    const intl = tmp(tmp2[9]).intl;
-    stringResult = intl.string(tmp13(tmp2[10]).R1tPlP);
-  }
-  let tmp23 = null;
-  if (null != stateFromStores) {
-    tmp23 = null;
-    if (null != name) {
-      tmp23 = { user: name, userHook };
-      const obj2 = { user: name, userHook };
-    }
-  }
-  const type = actor_user_id.type;
-  if ("app_removed" === type) {
-    let formatResult;
-    if (null == tmp23) {
-      const intl11 = tmp(tmp2[9]).intl;
-      const obj3 = { app: tmp14, server: stringResult };
-      formatResult = intl11.format(tmp13(tmp2[10]).Lwsrhg, obj3);
-    } else {
-      const intl10 = tmp(tmp2[9]).intl;
-      const format4 = intl10.format;
-      const obj4 = { app: tmp14, server: stringResult };
-      const qqePfT = tmp13(tmp2[10]).qqePfT;
-      const merged = Object.assign(tmp23);
-      formatResult = format4(qqePfT, obj4);
-    }
-    forResult = formatResult;
-  } else if ("bot_removed" === type) {
-    let formatResult1;
-    if (null == tmp23) {
-      const intl9 = tmp(tmp2[9]).intl;
-      const obj5 = { app: tmp14, server: stringResult };
-      formatResult1 = intl9.format(tmp13(tmp2[10]).mT7EQG, obj5);
-    } else {
-      const intl8 = tmp(tmp2[9]).intl;
-      const format3 = intl8.format;
-      const obj6 = { app: tmp14, server: stringResult };
-      const prop = tmp13(tmp2[10])["lA/crI"];
-      const merged1 = Object.assign(tmp23);
-      formatResult1 = format3(prop, obj6);
-    }
-    forResult = formatResult1;
-  } else if ("preview_bot_removed" === type) {
-    let formatResult2;
-    if (null == tmp23) {
-      const intl7 = tmp(tmp2[9]).intl;
-      const obj7 = { app: tmp14, server: stringResult };
-      formatResult2 = intl7.format(tmp13(tmp2[10])["4LVIeo"], obj7);
-    } else {
-      const intl6 = tmp(tmp2[9]).intl;
-      const format2 = intl6.format;
-      const obj8 = { app: tmp14, server: stringResult };
-      const YJOV6D = tmp13(tmp2[10]).YJOV6D;
-      const merged2 = Object.assign(tmp23);
-      formatResult2 = format2(YJOV6D, obj8);
-    }
-    forResult = formatResult2;
-  } else if ("app_channel_deleted" === type) {
-    let formatResult3;
-    let str2 = actor_user_id.channel_name;
-    if (str2 == null) {
-      str2 = "";
-    }
-    if (null == tmp23) {
-      const intl5 = tmp(tmp2[9]).intl;
-      const obj9 = { channel: str2, server: stringResult };
-      formatResult3 = intl5.format(tmp13(tmp2[10])["4VQfid"], obj9);
-    } else {
-      const intl4 = tmp(tmp2[9]).intl;
-      const format = intl4.format;
-      const obj10 = { channel: str2, server: stringResult };
-      const RlMIJN = tmp13(tmp2[10]).RlMIJN;
-      const merged3 = Object.assign(tmp23);
-      formatResult3 = format(RlMIJN, obj10);
-    }
-    forResult = formatResult3;
-  } else if ("remixed" === type) {
-    let tmp26;
-    if (cResult[20] !== actor_user_id.source_name) {
-      const intl3 = tmp(tmp2[9]).intl;
-      const obj11 = { source: actor_user_id.source_name };
-      const formatResult4 = intl3.format(require("module_3864").mHCXtm, obj11);
-      cResult[20] = actor_user_id.source_name;
-      cResult[21] = formatResult4;
-      tmp26 = formatResult4;
-    } else {
-      tmp26 = cResult[21];
-    }
-    forResult = tmp26;
-  } else if ("voice_channel_pin" === type) {
-    let tmp24;
-    const _Symbol2 = Symbol;
-    if (cResult[22] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl2 = tmp(tmp2[9]).intl;
-      const stringResult1 = intl2.string(require("module_3864").UGAfl9);
-      cResult[22] = stringResult1;
-      tmp24 = stringResult1;
-    } else {
-      tmp24 = cResult[22];
-    }
-    forResult = tmp24;
-  }
-  cResult[11] = stateFromStores;
-  cResult[12] = tmp14;
-  cResult[13] = actor_user_id.channel_name;
-  cResult[14] = actor_user_id.source_name;
-  cResult[15] = actor_user_id.type;
-  cResult[16] = stateFromStores1;
-  cResult[17] = arg2;
-  cResult[18] = name;
-  cResult[19] = forResult;
-  tmp20 = forResult;
-}) : (function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
+const result = size.fileFinishedImporting("modules/conjure/chat/useConjureProjectEventLine.tsx");
+
+export default function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
   let closure_1;
   let stateFromStores;
   function userHook(arg0, arg1) {
@@ -294,8 +60,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
     return tmp2;
   }, items4);
   if (stateFromStores1 == null) {
-    const intl = tmp2(tmp3[9]).intl;
-    stateFromStores1 = intl.string(tmp6(tmp3[10]).R1tPlP);
+    const intl = tmp2(tmp3[7]).intl;
+    stateFromStores1 = intl.string(tmp6(tmp3[8]).R1tPlP);
   }
   let tmp9 = null;
   if (null != stateFromStores) {
@@ -309,14 +75,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   if ("app_removed" === type) {
     let formatResult;
     if (null == tmp9) {
-      const intl11 = tmp2(tmp3[9]).intl;
+      const intl11 = tmp2(tmp3[7]).intl;
       const obj5 = { app: tmp7, server: stateFromStores1 };
-      formatResult = intl11.format(tmp6(tmp3[10]).Lwsrhg, obj5);
+      formatResult = intl11.format(tmp6(tmp3[8]).Lwsrhg, obj5);
     } else {
-      const intl10 = tmp2(tmp3[9]).intl;
+      const intl10 = tmp2(tmp3[7]).intl;
       const format4 = intl10.format;
       const obj6 = { app: tmp7, server: stateFromStores1 };
-      const qqePfT = tmp6(tmp3[10]).qqePfT;
+      const qqePfT = tmp6(tmp3[8]).qqePfT;
       const merged = Object.assign(tmp9);
       formatResult = format4(qqePfT, obj6);
     }
@@ -324,14 +90,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   } else if ("bot_removed" === type) {
     let formatResult1;
     if (null == tmp9) {
-      const intl9 = tmp2(tmp3[9]).intl;
+      const intl9 = tmp2(tmp3[7]).intl;
       const obj7 = { app: tmp7, server: stateFromStores1 };
-      formatResult1 = intl9.format(tmp6(tmp3[10]).mT7EQG, obj7);
+      formatResult1 = intl9.format(tmp6(tmp3[8]).mT7EQG, obj7);
     } else {
-      const intl8 = tmp2(tmp3[9]).intl;
+      const intl8 = tmp2(tmp3[7]).intl;
       const format3 = intl8.format;
       const obj8 = { app: tmp7, server: stateFromStores1 };
-      const prop = tmp6(tmp3[10])["lA/crI"];
+      const prop = tmp6(tmp3[8])["lA/crI"];
       const merged1 = Object.assign(tmp9);
       formatResult1 = format3(prop, obj8);
     }
@@ -339,14 +105,14 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
   } else if ("preview_bot_removed" === type) {
     let formatResult2;
     if (null == tmp9) {
-      const intl7 = tmp2(tmp3[9]).intl;
+      const intl7 = tmp2(tmp3[7]).intl;
       const obj9 = { app: tmp7, server: stateFromStores1 };
-      formatResult2 = intl7.format(tmp6(tmp3[10])["4LVIeo"], obj9);
+      formatResult2 = intl7.format(tmp6(tmp3[8])["4LVIeo"], obj9);
     } else {
-      const intl6 = tmp2(tmp3[9]).intl;
+      const intl6 = tmp2(tmp3[7]).intl;
       const format2 = intl6.format;
       const obj10 = { app: tmp7, server: stateFromStores1 };
-      const YJOV6D = tmp6(tmp3[10]).YJOV6D;
+      const YJOV6D = tmp6(tmp3[8]).YJOV6D;
       const merged2 = Object.assign(tmp9);
       formatResult2 = format2(YJOV6D, obj10);
     }
@@ -358,27 +124,24 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePr
       str2 = "";
     }
     if (null == tmp9) {
-      const intl5 = tmp2(tmp3[9]).intl;
+      const intl5 = tmp2(tmp3[7]).intl;
       const obj11 = { channel: str2, server: stateFromStores1 };
-      formatResult3 = intl5.format(tmp6(tmp3[10])["4VQfid"], obj11);
+      formatResult3 = intl5.format(tmp6(tmp3[8])["4VQfid"], obj11);
     } else {
-      const intl4 = tmp2(tmp3[9]).intl;
+      const intl4 = tmp2(tmp3[7]).intl;
       const format = intl4.format;
       const obj12 = { channel: str2, server: stateFromStores1 };
-      const RlMIJN = tmp6(tmp3[10]).RlMIJN;
+      const RlMIJN = tmp6(tmp3[8]).RlMIJN;
       const merged3 = Object.assign(tmp9);
       formatResult3 = format(RlMIJN, obj12);
     }
     return formatResult3;
   } else if ("remixed" === type) {
-    const intl3 = tmp2(tmp3[9]).intl;
+    const intl3 = tmp2(tmp3[7]).intl;
     const obj13 = { source: actor_user_id.source_name };
-    return intl3.format(require("module_3864").mHCXtm, obj13);
+    return intl3.format(require("module_3865").mHCXtm, obj13);
   } else if ("voice_channel_pin" === type) {
-    const intl2 = tmp2(tmp3[9]).intl;
-    return intl2.string(require("module_3864").UGAfl9);
+    const intl2 = tmp2(tmp3[7]).intl;
+    return intl2.string(require("module_3865").UGAfl9);
   }
-});
-const result = size.fileFinishedImporting("modules/conjure/chat/useConjureProjectEventLine.tsx");
-
-export default tmp2;
+};

@@ -1,64 +1,21 @@
-// Module ID: 18282
-// Function ID: 18283
+// Module ID: 18341
+// Function ID: 18342
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 558, 576, 6029, 1125, 5271, 2]
+// Dependencies: [19, 21, 5619, 1114, 6036, 2]
+// Exports: default
 
-// Module 18282 (VoiceSubtitle)
+// Module 18341 (VoiceSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6029 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6036 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubtitle(guildId) {
-  let mapped;
-  let tmp5;
-  let obj = guildId(576);
-  const cResult = obj.c(7);
-  guildId = guildId.guildId;
-  const voiceUsers = guildId.voiceUsers;
-  if (cResult[0] === guildId) {
-    let tmp4;
-    let tmp7;
-    if (cResult[1] === voiceUsers) {
-      tmp4 = cResult[2];
-    }
-    if (cResult[5] !== tmp4) {
-      const tmp9 = jsx(guildId(5271).Text, { variant: "text-xs/medium", color: "text-voice-connected", lineClamp: 1, children: tmp4 });
-      cResult[5] = tmp4;
-      cResult[6] = tmp9;
-      tmp7 = tmp9;
-    } else {
-      tmp7 = cResult[6];
-    }
-    return tmp7;
-  }
-  if (cResult[3] !== guildId) {
-    const fn = function n(arg0) {
-      const obj = NicknameUtilsDefault;
-      return obj.getName(guildId, null, arg0);
-    };
-    cResult[3] = guildId;
-    cResult[4] = fn;
-    tmp5 = fn;
-  } else {
-    tmp5 = cResult[4];
-  }
-  const intl = tmp(1125).intl;
-  const format = intl.format;
-  const obj3 = { users: mapped.join(", "), overflowCount: Math.max(voiceUsers.length - 2, 0) };
-  const r1Vkoc = tmp(1125).t.r1Vkoc;
-  const substr = voiceUsers.slice(0, 2);
-  mapped = substr.map(tmp5);
-  const formatResult = format(r1Vkoc, obj3);
-  cResult[0] = guildId;
-  cResult[1] = voiceUsers;
-  cResult[2] = formatResult;
-  tmp4 = formatResult;
-}) : (function VoiceSubtitle(arg0) {
+const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
+
+export default function VoiceSubtitle(arg0) {
   let mapped;
   let voiceUsers;
   ({ guildId: require, voiceUsers } = arg0);
@@ -73,7 +30,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function VoiceSubti
     return obj.getName(require, null, item);
   });
   return <Text variant="text-xs/medium" color="text-voice-connected" lineClamp={1}>{format(r1Vkoc, obj2)}</Text>;
-});
-const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/VoiceSubtitle.tsx");
-
-export default tmp3;
+};

@@ -1,12 +1,12 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9683
+// Function ID: 9684
 // Name: QuestOrbMultiplierUtils
-// Dependencies: [2051, 1395, 1397, 2]
+// Dependencies: [2048, 1390, 1392, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 9658 (QuestOrbMultiplierUtils)
-import PerksStateUtils from "PerksStateUtils" /* 1395 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2051 */;
+// Module 9683 (QuestOrbMultiplierUtils)
+import PerksStateUtils from "PerksStateUtils" /* 1390 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2048 */;
 import size from "module_2" /* 2 */;
 
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", XBOX_GAME_PASS: "XBOX_GAME_PASS", INELIGIBLE: "INELIGIBLE" };
@@ -17,8 +17,8 @@ const result = size.fileFinishedImporting("modules/quests/utils/QuestOrbMultipli
 
 export const QuestOrbMultiplierEligibilityType = obj;
 export const QuestOrbMultiplierSource = obj2;
-export function shouldReceiveQuestOrbMultiplier(orbMultiplierEligibility) {
-  return items.includes(orbMultiplierEligibility);
+export function shouldReceiveQuestOrbMultiplier(questOrbMultiplierEligibilityForUser) {
+  return items.includes(questOrbMultiplierEligibilityForUser);
 }
 export function getQuestOrbMultiplierSource(perks) {
   const obj = PremiumUtilsDefault;
@@ -29,10 +29,10 @@ export function getQuestOrbMultiplierSource(perks) {
     if (perks != null) {
       perks = perks.perks;
     }
-    const perkSource = getPerkSource(perks, tmp4(1397).Perk.MORE_QUEST_ORBS);
+    const perkSource = getPerkSource(perks, tmp4(1392).Perk.MORE_QUEST_ORBS);
     let hasItem;
     if (perkSource != null) {
-      hasItem = perkSource.includes(tmp4(1397).PerkSource.SOURCE_NITRO);
+      hasItem = perkSource.includes(tmp4(1392).PerkSource.SOURCE_NITRO);
     }
     if (!hasItem) {
       let XBOX_GAME_PASS;
@@ -40,7 +40,7 @@ export function getQuestOrbMultiplierSource(perks) {
       if (!tmpResult.canUseQuestOrbMultiplier(perks)) {
         let hasItem1;
         if (perkSource != null) {
-          hasItem1 = perkSource.includes(tmp4(1397).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+          hasItem1 = perkSource.includes(tmp4(1392).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         }
         XBOX_GAME_PASS = null;
         if (hasItem1) {

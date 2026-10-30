@@ -1,25 +1,24 @@
-// Module ID: 18239
-// Function ID: 18240
+// Module ID: 18299
+// Function ID: 18300
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 18145, 21, 5005, 587, 558, 576, 14319, 5271, 1125, 3446, 8610, 8631, 8601, 6015, 2]
+// Dependencies: [19, 17, 18206, 21, 5009, 575, 14349, 5619, 1114, 3447, 8644, 8665, 8635, 6022, 2]
+// Exports: default
 
-// Module 18239 (FavoritesGuildSidebarHeader)
+// Module 18299 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import _modDef3446 from "module_3446" /* 3446 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import Stack_Stack from "Stack/Stack" /* 6015 */;
-import ChatIcon2 from "ChatIcon" /* 8601 */;
-import TextIcon2 from "TextIcon" /* 8610 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8631 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14319 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18145 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import _modDef3447 from "module_3447" /* 3447 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import Stack_Stack from "Stack/Stack" /* 6022 */;
+import ChatIcon2 from "ChatIcon" /* 8635 */;
+import TextIcon2 from "TextIcon" /* 8644 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8665 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14349 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18206 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -32,64 +31,17 @@ let obj5;
 let obj6;
 let obj7;
 let obj8;
-const View = react_native.View;
-let closure_5 = FavoritesGuildSuggestionsStore.useHasFavoritesGuildSuggestions;
-({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
-let c9 = "heading-md/semibold";
-let c10 = "text-sm/medium";
-let createStyles = createStyles_mod;
-let obj = { copy: obj2, divider: obj3, placeholderRows: obj4, placeholderRow: obj5, placeholderBar: obj6, placeholderBarShort: obj7, placeholderBarLong: obj8 };
-obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
-createStyles = createStyles.createStyles;
-obj3 = { height: 1, marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj4 = { paddingTop: nativeDefault.space.PX_8 };
-obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
-obj6 = { height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
-obj7 = { width: nativeDefault.space.PX_80 };
-obj8 = { width: nativeDefault.space.PX_128 };
-let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_12 = ReactCompilerGating.isReactCompilerEnabled() ? (function EmptyBody() {
-  let first;
-  let intl;
-  let obj3;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(2);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function l() {
-      openFavoritesGuildAddChannelModalDefault({ source: "favorites_empty_sidebar" });
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { variant: variant2, color: "text-muted", children: intl.format(_modDef3446.Z3Hdr5, obj3) };
-    const Text = tmp(5271).Text;
-    intl = tmp(1125).intl;
-    obj3 = { onClick: first };
-    const tmp9 = metroRequire(Text, obj2);
-    cResult[1] = tmp9;
-    tmp5 = tmp9;
-  } else {
-    tmp5 = cResult[1];
-  }
-  return tmp5;
-}) : (function EmptyBody() {
+function EmptyBody() {
   let intl;
   const callback = react.useCallback(() => {
     openFavoritesGuildAddChannelModalDefault({ source: "favorites_empty_sidebar" });
   }, []);
-  const obj = { variant: variant2, color: "text-muted", children: intl.format(_modDef3446.Z3Hdr5, { onClick: callback }) };
+  const obj = { variant: "text-sm/medium", color: "text-muted", children: intl.format(_modDef3447.Z3Hdr5, { onClick: callback }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return metroRequire(Text, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function PlaceholderRows() {
-  let first;
+}
+function PlaceholderRows() {
   let items;
   let items1;
   let items2;
@@ -97,150 +49,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
   let items4;
   let items5;
   let items6;
-  const obj = react2;
-  const cResult = obj.c(26);
-  const tmp4 = closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-    const TextIcon = tmp(8610).TextIcon;
-    const tmp8 = metroRequire(TextIcon, obj2);
-    cResult[0] = tmp8;
-    first = tmp8;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === tmp4.placeholderBar) {
-    let tmp9;
-    if (cResult[2] === tmp4.placeholderBarShort) {
-      tmp9 = cResult[3];
-    }
-    if (cResult[4] === tmp4.placeholderRow) {
-      let tmp11;
-      let tmp15;
-      if (cResult[5] === tmp9) {
-        tmp11 = cResult[6];
-      }
-      const _Symbol = Symbol;
-      if (cResult[7] === Symbol.for("react.memo_cache_sentinel")) {
-        const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-        const VoiceNormalIcon = tmp(8631).VoiceNormalIcon;
-        const tmp18 = metroRequire(VoiceNormalIcon, obj3);
-        cResult[7] = tmp18;
-        tmp15 = tmp18;
-      } else {
-        tmp15 = cResult[7];
-      }
-      if (cResult[8] === tmp4.placeholderBar) {
-        let tmp19;
-        if (cResult[9] === tmp4.placeholderBarLong) {
-          tmp19 = cResult[10];
-        }
-        if (cResult[11] === tmp4.placeholderRow) {
-          let tmp23;
-          let tmp27;
-          if (cResult[12] === tmp19) {
-            tmp23 = cResult[13];
-          }
-          const _Symbol2 = Symbol;
-          if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
-            const obj4 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
-            const ChatIcon = tmp(8601).ChatIcon;
-            const tmp30 = metroRequire(ChatIcon, obj4);
-            cResult[14] = tmp30;
-            tmp27 = tmp30;
-          } else {
-            tmp27 = cResult[14];
-          }
-          if (cResult[15] === tmp4.placeholderBar) {
-            let tmp31;
-            if (cResult[16] === tmp4.placeholderBarShort) {
-              tmp31 = cResult[17];
-            }
-            if (cResult[18] === tmp4.placeholderRow) {
-              let tmp35;
-              if (cResult[19] === tmp31) {
-                tmp35 = cResult[20];
-              }
-              if (cResult[21] === tmp4.placeholderRows) {
-                if (cResult[22] === tmp11) {
-                  if (cResult[23] === tmp23) {
-                    let tmp39;
-                    if (cResult[24] === tmp35) {
-                      tmp39 = cResult[25];
-                    }
-                    return tmp39;
-                  }
-                }
-              }
-              const obj5 = { style: tmp4.placeholderRows, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items };
-              items = [tmp11, tmp23, tmp35];
-              const tmp42 = metroImportDefault(View, obj5);
-              cResult[21] = tmp4.placeholderRows;
-              cResult[22] = tmp11;
-              cResult[23] = tmp23;
-              cResult[24] = tmp35;
-              cResult[25] = tmp42;
-              tmp39 = tmp42;
-            }
-            const obj6 = { style: tmp4.placeholderRow, children: items1 };
-            items1 = [tmp27, tmp31];
-            const tmp38 = metroImportDefault(View, obj6);
-            cResult[18] = tmp4.placeholderRow;
-            cResult[19] = tmp31;
-            cResult[20] = tmp38;
-            tmp35 = tmp38;
-          }
-          const obj7 = { style: items2 };
-          items2 = [, ];
-          ({ placeholderBar: arr5[0], placeholderBarShort: arr5[1] } = tmp4);
-          const tmp34 = metroRequire(View, obj7);
-          cResult[15] = tmp4.placeholderBar;
-          cResult[16] = tmp4.placeholderBarShort;
-          cResult[17] = tmp34;
-          tmp31 = tmp34;
-        }
-        const obj8 = { style: tmp4.placeholderRow, children: items3 };
-        items3 = [tmp15, tmp19];
-        const tmp26 = metroImportDefault(View, obj8);
-        cResult[11] = tmp4.placeholderRow;
-        cResult[12] = tmp19;
-        cResult[13] = tmp26;
-        tmp23 = tmp26;
-      }
-      const obj9 = { style: items4 };
-      items4 = [, ];
-      ({ placeholderBar: arr3[0], placeholderBarLong: arr3[1] } = tmp4);
-      const tmp22 = metroRequire(View, obj9);
-      cResult[8] = tmp4.placeholderBar;
-      cResult[9] = tmp4.placeholderBarLong;
-      cResult[10] = tmp22;
-      tmp19 = tmp22;
-    }
-    const obj10 = { style: tmp4.placeholderRow, children: items5 };
-    items5 = [first, tmp9];
-    const tmp14 = metroImportDefault(View, obj10);
-    cResult[4] = tmp4.placeholderRow;
-    cResult[5] = tmp9;
-    cResult[6] = tmp14;
-    tmp11 = tmp14;
-  }
-  const obj11 = { style: items6 };
-  items6 = [, ];
-  ({ placeholderBar: arr[0], placeholderBarShort: arr[1] } = tmp4);
-  const tmp10 = metroRequire(View, obj11);
-  cResult[1] = tmp4.placeholderBar;
-  cResult[2] = tmp4.placeholderBarShort;
-  cResult[3] = tmp10;
-  tmp9 = tmp10;
-}) : (function PlaceholderRows() {
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let items5;
-  let items6;
-  const tmp = closure_11();
+  const tmp = closure_9();
   const obj = { style: tmp.placeholderRows, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items2 };
   const obj2 = { style: tmp.placeholderRow, children: items };
   const obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
@@ -270,102 +79,29 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function Placeh
   items5[1] = metroRequire(View, obj10);
   items2[2] = metroImportDefault(View, obj8);
   return metroImportDefault(View, obj);
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGuildSidebarHeader() {
+}
+const View = react_native.View;
+let closure_5 = FavoritesGuildSuggestionsStore.useHasFavoritesGuildSuggestions;
+({ jsx: metroRequire, jsxs: metroImportDefault, Fragment: metroImportAll } = Fragment);
+let createStyles = createStyles_mod;
+let obj = { copy: obj2, divider: obj3, placeholderRows: obj4, placeholderRow: obj5, placeholderBar: obj6, placeholderBarShort: obj7, placeholderBarLong: obj8 };
+obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
+createStyles = createStyles.createStyles;
+obj3 = { height: 1, marginTop: nativeDefault.space.PX_12, marginHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
+obj4 = { paddingTop: nativeDefault.space.PX_8 };
+obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16 };
+obj6 = { height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+obj7 = { width: nativeDefault.space.PX_80 };
+obj8 = { width: nativeDefault.space.PX_128 };
+let closure_9 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildSidebarHeader.tsx");
+
+export default function FavoritesGuildSidebarHeader() {
   let intl;
   let items;
   let items1;
   let items2;
-  const obj = react2;
-  const cResult = obj.c(14);
-  const tmp4 = closure_11();
-  const tmp5 = closure_5();
-  if (cResult[0] === tmp5) {
-    let tmp6;
-    let tmp12;
-    let tmp11;
-    let tmp19;
-    if (cResult[1] === tmp4.divider) {
-      tmp6 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const obj2 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3446["1n0TGE"]) };
-      const Heading = tmp(5271).Heading;
-      intl = tmp(1125).intl;
-      const tmp16 = metroRequire(Heading, obj2);
-      const tmp18 = metroRequire(closure_12, {});
-      cResult[3] = tmp16;
-      cResult[4] = tmp18;
-      tmp12 = tmp18;
-      tmp11 = tmp16;
-    } else {
-      tmp11 = cResult[3];
-      tmp12 = cResult[4];
-    }
-    if (cResult[5] !== tmp4.copy) {
-      const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp4.copy, children: items };
-      const Stack = tmp(6015).Stack;
-      items = [tmp11, tmp12];
-      const tmp22 = metroImportDefault(Stack, obj3);
-      cResult[5] = tmp4.copy;
-      cResult[6] = tmp22;
-      tmp19 = tmp22;
-    } else {
-      tmp19 = cResult[6];
-    }
-    if (cResult[7] === tmp5) {
-      let tmp23;
-      if (cResult[8] === tmp4.divider) {
-        tmp23 = cResult[9];
-      }
-      if (cResult[10] === tmp6) {
-        if (cResult[11] === tmp19) {
-          let tmp30;
-          if (cResult[12] === tmp23) {
-            tmp30 = cResult[13];
-          }
-          return tmp30;
-        }
-      }
-      const obj4 = { spacing: nativeDefault.space.PX_8, children: items1 };
-      const Stack2 = tmp(6015).Stack;
-      items1 = [tmp6, tmp19, tmp23];
-      const tmp33 = metroImportDefault(Stack2, obj4);
-      cResult[10] = tmp6;
-      cResult[11] = tmp19;
-      cResult[12] = tmp23;
-      cResult[13] = tmp33;
-      tmp30 = tmp33;
-    }
-    let tmp24 = null;
-    if (!tmp5) {
-      const obj5 = { children: items2 };
-      const obj6 = { style: tmp4.divider };
-      items2 = [metroRequire(View, obj6), metroRequire(closure_13, {})];
-      tmp24 = metroImportDefault(metroImportAll, obj5);
-    }
-    cResult[7] = tmp5;
-    cResult[8] = tmp4.divider;
-    cResult[9] = tmp24;
-    tmp23 = tmp24;
-  }
-  let tmp7 = null;
-  if (tmp5) {
-    const obj7 = { style: tmp4.divider };
-    tmp7 = metroRequire(View, obj7);
-  }
-  cResult[0] = tmp5;
-  cResult[1] = tmp4.divider;
-  cResult[2] = tmp7;
-  tmp6 = tmp7;
-}) : (function FavoritesGuildSidebarHeader() {
-  let intl;
-  let items;
-  let items1;
-  let items2;
-  const tmp = closure_11();
+  const tmp = closure_9();
   const tmp2 = closure_5();
   const obj = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack = Stack_Stack.Stack;
@@ -376,22 +112,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function FavoritesGui
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(6015).Stack;
-  const obj4 = { variant, color: "mobile-text-heading-primary", children: intl.string(_modDef3446["1n0TGE"]) };
-  const Heading = tmp4(5271).Heading;
-  intl = tmp4(1125).intl;
-  items1 = [metroRequire(Heading, obj4), metroRequire(closure_12, {})];
+  const Stack2 = tmp4(6022).Stack;
+  const obj4 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3447["1n0TGE"]) };
+  const Heading = tmp4(5619).Heading;
+  intl = tmp4(1114).intl;
+  items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);
   let tmp3Result = null;
   if (!tmp2) {
     const obj5 = { children: items2 };
     const obj6 = { style: tmp.divider };
-    items2 = [metroRequire(View, obj6), metroRequire(closure_13, {})];
+    items2 = [metroRequire(View, obj6), metroRequire(PlaceholderRows, {})];
     tmp3Result = tmp3(metroImportAll, obj5);
   }
   items[2] = tmp3Result;
   return metroImportDefault(Stack, obj);
-});
-const result = size.fileFinishedImporting("modules/favorites/native/FavoritesGuildSidebarHeader.tsx");
-
-export default tmp4;
+};

@@ -1,45 +1,44 @@
-// Module ID: 11689
-// Function ID: 11690
+// Module ID: 11882
+// Function ID: 11883
 // Name: MobileGoLiveActionSheet
-// Dependencies: [32, 19, 5917, 6701, 4857, 4879, 4908, 1389, 5852, 1084, 5756, 21, 5005, 587, 1382, 5247, 11689, 2000, 1272, 558, 576, 504, 11690, 11694, 7313, 7338, 5086, 7887, 5889, 7113, 1125, 2340, 11695, 11697, 6946, 5271, 5706, 10000, 5302, 5306, 7281, 9738, 1104, 7044, 7047, 7045, 9997, 5064, 10245, 7355, 5281, 11688, 2]
+// Dependencies: [32, 19, 5924, 6708, 4858, 4880, 4912, 1384, 5859, 1072, 5763, 21, 5009, 575, 1377, 5253, 11882, 1995, 1261, 504, 11883, 11887, 7320, 7345, 5090, 7893, 5896, 7121, 1114, 2341, 11888, 11890, 6954, 5619, 5711, 10027, 5267, 5270, 7286, 7054, 7052, 9764, 1093, 7055, 10024, 5068, 10270, 7363, 5629, 11881, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 11689 (MobileGoLiveActionSheet)
-import nativeDefault from "native" /* 587 */;
-import Constants from "Constants" /* 1084 */;
-import ConstantsIOS from "ConstantsIOS" /* 1104 */;
-import intl8 from "intl" /* 1125 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1272 */;
-import asyncRequire from "asyncRequire" /* 2000 */;
-import _modDef2340 from "module_2340" /* 2340 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5247 */;
-import Constants2 from "Constants" /* 5756 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5852 */;
-import NativeViewDefault from "NativeView" /* 6946 */;
-import TableRadioRow2 from "TableRadioRow" /* 7044 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7113 */;
-import StreamActionCreators from "StreamActionCreators" /* 7887 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9738 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10000 */;
-import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11690 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 11695 */;
-import ImageSparkleIcon from "ImageSparkleIcon" /* 11697 */;
+// Module 11882 (MobileGoLiveActionSheet)
+import nativeDefault from "native" /* 575 */;
+import Constants from "Constants" /* 1072 */;
+import ConstantsIOS from "ConstantsIOS" /* 1093 */;
+import intl8 from "intl" /* 1114 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1261 */;
+import asyncRequire from "asyncRequire" /* 1995 */;
+import _modDef2341 from "module_2341" /* 2341 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5253 */;
+import Constants2 from "Constants" /* 5763 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5859 */;
+import NativeViewDefault from "NativeView" /* 6954 */;
+import TableRadioRow2 from "TableRadioRow" /* 7055 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7121 */;
+import StreamActionCreators from "StreamActionCreators" /* 7893 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9764 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10027 */;
+import getStreamSettingsForPreset from "getStreamSettingsForPreset" /* 11883 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 11888 */;
+import ImageSparkleIcon from "ImageSparkleIcon" /* 11890 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5917 */;
-import ApplicationStreamingStore_mod from "ApplicationStreamingStore" /* 6701 */;
-import ChannelStore from "ChannelStore" /* 4857 */;
-import GuildStore_mod from "GuildStore" /* 4879 */;
-import SelectedChannelStore_mod from "SelectedChannelStore" /* 4908 */;
-import UserStore_mod from "UserStore" /* 1389 */;
+import react from "react" /* 19 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5924 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6708 */;
+import ChannelStore from "ChannelStore" /* 4858 */;
+import GuildStore from "GuildStore" /* 4880 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4912 */;
+import UserStore from "UserStore" /* 1384 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import PlatformUtils_mod from "utils/PlatformUtils" /* 1382 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
+import PlatformUtils_mod from "utils/PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 const getStreamSettingsForPresetDefault = getStreamSettingsForPreset;
-let BottomSheet, dependencyMap;
+let BottomSheet, closure_8;
 
 let PlatformUtils;
 let closure_14;
@@ -48,12 +47,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp;
-const AudioActionCreatorsDefault = tmp(5889);
-let react = react_mod;
-let ApplicationStreamingStore = ApplicationStreamingStore_mod;
-let GuildStore = GuildStore_mod;
-let SelectedChannelStore = SelectedChannelStore_mod;
-let UserStore = UserStore_mod;
+const AudioActionCreatorsDefault = tmp(5896);
 let ApplicationStreamPresets = StreamSettingsConstants.ApplicationStreamPresets;
 const ApplicationStreamStates = Constants.ApplicationStreamStates;
 const MediaEngineContextTypes = Constants2.MediaEngineContextTypes;
@@ -74,1365 +68,7 @@ items[1] = obj6;
 items[2] = { preset: ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY, enabled: true };
 const found = items.filter((enabled) => enabled.enabled);
 let closure_18 = found.map((preset) => preset.preset);
-const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function MobileGoLiveActionSheet() {
-  let analyticsLocations;
-  let closure_11;
-  let closure_2;
-  let closure_4;
-  let closure_8;
-  let currentUser;
-  let intl3;
-  let obj10;
-  let obj12;
-  let tmp22Result;
-  let tmp4;
-  let tmp5;
-  let tmp8;
-  let tmp9;
-  let user;
-  let value;
-  let voiceChannelId;
-  let tmp = user;
-  let obj = user(576);
-  const cResult = obj.c(79);
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    let items = [analyticsLocations];
-    class A {
-      constructor() {
-        return analyticsLocations.getState();
-      }
-    }
-    cResult[0] = items;
-    cResult[1] = A;
-    tmp5 = A;
-    tmp4 = items;
-  } else {
-    [tmp4, tmp5] = cResult;
-  }
-  let tmpResult = tmp(504);
-  const stateFromStoresObject = tmpResult.useStateFromStoresObject(tmp4, tmp5);
-  const preset = stateFromStoresObject.preset;
-  const soundshareEnabled = stateFromStoresObject.soundshareEnabled;
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore, , , ];
-    class A {
-      constructor() {
-        return analyticsLocations.getState();
-      }
-    }
-    items1[1] = SelectedChannelStore;
-    items1[2] = value;
-    let tmp12 = GuildStore;
-    items1[3] = GuildStore;
-    class R {
-      constructor() {
-        user = currentUser.getCurrentUser();
-        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-        let guildId;
-        const getGuild = closure_8.getGuild;
-        if (channel != null) {
-          guildId = channel.getGuildId();
-        }
-        const guild = getGuild(guildId);
-        guildPremiumTier = undefined;
-        if (guild != null) {
-          guildPremiumTier = guild.premiumTier;
-        }
-        return { user, guildPremiumTier };
-      }
-    }
-    cResult[2] = items1;
-    cResult[3] = R;
-    tmp9 = R;
-    tmp8 = items1;
-  } else {
-    tmp8 = cResult[2];
-    tmp9 = cResult[3];
-  }
-  const tmpResult4 = tmp(504);
-  const stateFromStoresObject1 = tmpResult4.useStateFromStoresObject(tmp8, tmp9);
-  user = stateFromStoresObject1.user;
-  let guildPremiumTier = stateFromStoresObject1.guildPremiumTier;
-  if (cResult[4] === guildPremiumTier) {
-    let tmp14;
-    let tmp17;
-    let tmp16;
-    let tmp21;
-    let tmp26;
-    if (cResult[5] === user) {
-      tmp14 = cResult[6];
-    }
-    dependencyMap = tmp14;
-    const _Symbol = Symbol;
-    class A {
-      constructor() {
-        return analyticsLocations.getState();
-      }
-    }
-    if (tmp15 === Symbol.for("react.memo_cache_sentinel")) {
-      const items2 = [ApplicationStreamingStore];
-      class H {
-        constructor() {
-          let sourceId;
-          const obj = currentUserActiveStream;
-          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-          sourceId = undefined;
-          if (streamerActiveStreamMetadata != null) {
-            sourceId = streamerActiveStreamMetadata.sourceId;
-          }
-          if (sourceId == null) {
-            sourceId = null;
-          }
-          return obj2;
-        }
-      }
-      cResult[7] = items2;
-      cResult[8] = H;
-      tmp17 = H;
-      class R {
-        constructor() {
-          user = currentUser.getCurrentUser();
-          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-          let guildId;
-          const getGuild = closure_8.getGuild;
-          if (channel != null) {
-            guildId = channel.getGuildId();
-          }
-          const guild = getGuild(guildId);
-          guildPremiumTier = undefined;
-          if (guild != null) {
-            guildPremiumTier = guild.premiumTier;
-          }
-          return { user, guildPremiumTier };
-        }
-      }
-    } else {
-      tmp17 = cResult[8];
-      tmp16 = cResult[7];
-    }
-    const tmpResult5 = tmp(504);
-    const stateFromStoresObject2 = tmpResult5.useStateFromStoresObject(tmp16, tmp17);
-    const isStreaming = stateFromStoresObject2.isStreaming;
-    class R {
-      constructor() {
-        user = currentUser.getCurrentUser();
-        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-        let guildId;
-        const getGuild = closure_8.getGuild;
-        if (channel != null) {
-          guildId = channel.getGuildId();
-        }
-        const guild = getGuild(guildId);
-        guildPremiumTier = undefined;
-        if (guild != null) {
-          guildPremiumTier = guild.premiumTier;
-        }
-        return { user, guildPremiumTier };
-      }
-    }
-    react = tmp20;
-    const _Symbol2 = Symbol;
-    if (cResult[9] === Symbol.for("react.memo_cache_sentinel")) {
-      let obj2 = { location: "MobileGoLiveActionSheet" };
-      cResult[9] = obj2;
-      class H {
-        constructor() {
-          let sourceId;
-          const obj = currentUserActiveStream;
-          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-          sourceId = undefined;
-          if (streamerActiveStreamMetadata != null) {
-            sourceId = streamerActiveStreamMetadata.sourceId;
-          }
-          if (sourceId == null) {
-            sourceId = null;
-          }
-          return obj2;
-        }
-      }
-    } else {
-      tmp21 = cResult[9];
-    }
-    let obj6 = guildPremiumTier(11694);
-    const goLiveUpsellVariant = obj6.useConfig(tmp21).goLiveUpsellVariant;
-    const tmp23 = guildPremiumTier(7313);
-    analyticsLocations = tmp23(guildPremiumTier(7338).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
-    const tmp25 = closure_16();
-    ApplicationStreamingStore = tmp25;
-    if (cResult[10] === tmp14) {
-      if (cResult[11] === preset) {
-        tmp26 = cResult[12];
-      }
-      class H {
-        constructor() {
-          let sourceId;
-          const obj = currentUserActiveStream;
-          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-          sourceId = undefined;
-          if (streamerActiveStreamMetadata != null) {
-            sourceId = streamerActiveStreamMetadata.sourceId;
-          }
-          if (sourceId == null) {
-            sourceId = null;
-          }
-          return obj2;
-        }
-      }
-      const tmp32 = isStreaming(react.useState(tmp26), 2);
-      value = tmp32[0];
-      GuildStore = tmp32[1];
-      const tmp34 = isStreaming(react.useState(soundshareEnabled), 2);
-      class R {
-        constructor() {
-          user = currentUser.getCurrentUser();
-          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-          let guildId;
-          const getGuild = closure_8.getGuild;
-          if (channel != null) {
-            guildId = channel.getGuildId();
-          }
-          const guild = getGuild(guildId);
-          guildPremiumTier = undefined;
-          if (guild != null) {
-            guildPremiumTier = guild.premiumTier;
-          }
-          return { user, guildPremiumTier };
-        }
-      }
-      SelectedChannelStore = tmp35;
-      UserStore = tmp34[1];
-      const tmpResult6 = tmp(5086);
-      const sharedValue = tmpResult6.useSharedValue(!tmp14(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY));
-      if (cResult[13] === tmp20) {
-        if (cResult[14] === guildPremiumTier) {
-          if (cResult[15] === isStreaming) {
-            let tmp37;
-            let tmp38;
-            let tmp45;
-            if (cResult[16] === user) {
-              tmp37 = cResult[17];
-            }
-            ApplicationStreamPresets = tmp37;
-            if (cResult[18] !== tmp25.highQualityLabel) {
-              function getTableRadioRowConfig(value) {
-                let formatToPlainStringResult;
-                let intl;
-                let intl3;
-                let intl5;
-                let items;
-                let obj9;
-                let str2;
-                let tmp8Result;
-                const obj = getStreamSettingsForPreset;
-                const maxSettingsForPreset = obj.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_DEFAULT);
-                const obj2 = getStreamSettingsForPreset;
-                const maxSettingsForPreset1 = obj2.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE);
-                const obj3 = getStreamSettingsForPreset;
-                const maxSettingsForPreset2 = obj3.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY);
-                const obj4 = { value };
-                const PRESET_MOBILE_DEFAULT = ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
-                const obj5 = { icon: syncedClientThemes(MobilePhoneIcon.MobilePhoneIcon, {}), label: intl.string(_modDef2340["2qmQ8N"]), subLabel: str2 };
-                intl = intl8.intl;
-                let str = "";
-                str2 = "";
-                if (null != maxSettingsForPreset) {
-                  const intl2 = tmp(1125).intl;
-                  str2 = intl2.formatToPlainString(tmp8(2340).ibH7vy, maxSettingsForPreset);
-                }
-                const obj6 = { [PRESET_MOBILE_DEFAULT]: obj5 };
-                const PRESET_MOBILE_PERFORMANCE = tmp3.PRESET_MOBILE_PERFORMANCE;
-                const obj7 = { icon: syncedClientThemes(SpeedometerIcon.SpeedometerIcon, {}), label: intl3.string(_modDef2340["5eO4/m"]), subLabel: formatToPlainStringResult };
-                intl3 = tmp(1125).intl;
-                formatToPlainStringResult = str;
-                if (null != maxSettingsForPreset1) {
-                  const intl4 = tmp(1125).intl;
-                  formatToPlainStringResult = intl4.formatToPlainString(tmp8(2340).fN0UQY, maxSettingsForPreset1);
-                }
-                obj6[PRESET_MOBILE_PERFORMANCE] = obj7;
-                const PRESET_MOBILE_HIGH_QUALITY = tmp3.PRESET_MOBILE_HIGH_QUALITY;
-                const obj8 = { icon: syncedClientThemes(ImageSparkleIcon.ImageSparkleIcon, {}), label: closure_15(tmp8Result, obj9), subLabel: str };
-                obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
-                const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2340.nMcXo1) };
-                tmp8Result = NativeViewDefault;
-                const Text = tmp(5271).Text;
-                intl5 = tmp(1125).intl;
-                items = [syncedClientThemes(Text, obj10), ];
-                const obj11 = { source: AssetRegistryDefault, size: "xs" };
-                const BaseIconImage = tmp(5706).BaseIconImage;
-                items[1] = syncedClientThemes(BaseIconImage, obj11);
-                if (null != maxSettingsForPreset2) {
-                  const intl6 = tmp(1125).intl;
-                  str = intl6.formatToPlainString(tmp8(2340).q4gYBi, maxSettingsForPreset2);
-                }
-                obj6[PRESET_MOBILE_HIGH_QUALITY] = obj8;
-                const merged = Object.assign(obj6[value]);
-                return obj4;
-              }
-              cResult[18] = tmp25.highQualityLabel;
-              class H {
-                constructor() {
-                  let sourceId;
-                  const obj = currentUserActiveStream;
-                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                  sourceId = undefined;
-                  if (streamerActiveStreamMetadata != null) {
-                    sourceId = streamerActiveStreamMetadata.sourceId;
-                  }
-                  if (sourceId == null) {
-                    sourceId = null;
-                  }
-                  return obj2;
-                }
-              }
-              cResult[19] = getTableRadioRowConfig;
-              tmp38 = getTableRadioRowConfig;
-            } else {
-              tmp38 = cResult[19];
-            }
-            class H {
-              constructor() {
-                let sourceId;
-                const obj = currentUserActiveStream;
-                currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                sourceId = undefined;
-                if (streamerActiveStreamMetadata != null) {
-                  sourceId = streamerActiveStreamMetadata.sourceId;
-                }
-                if (sourceId == null) {
-                  sourceId = null;
-                }
-                return obj2;
-              }
-            }
-            const AnalyticsLocationProvider = tmp(7313).AnalyticsLocationProvider;
-            BottomSheet = tmp(5302).BottomSheet;
-            const BottomSheetScrollView = tmp(5306).BottomSheetScrollView;
-            const SafeAreaPaddingView = tmp(7281).SafeAreaPaddingView;
-            const _Symbol3 = Symbol;
-            class R {
-              constructor() {
-                user = currentUser.getCurrentUser();
-                const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                let guildId;
-                const getGuild = closure_8.getGuild;
-                if (channel != null) {
-                  guildId = channel.getGuildId();
-                }
-                const guild = getGuild(guildId);
-                guildPremiumTier = undefined;
-                if (guild != null) {
-                  guildPremiumTier = guild.premiumTier;
-                }
-                return { user, guildPremiumTier };
-              }
-            }
-            const header = tmp25.header;
-            if (cResult[20] === Symbol.for("react.memo_cache_sentinel")) {
-              let intl = tmp(1125).intl;
-              const stringResult = intl.string(guildPremiumTier(2340).CrNjqp);
-              class H {
-                constructor() {
-                  let sourceId;
-                  const obj = currentUserActiveStream;
-                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                  sourceId = undefined;
-                  if (streamerActiveStreamMetadata != null) {
-                    sourceId = streamerActiveStreamMetadata.sourceId;
-                  }
-                  if (sourceId == null) {
-                    sourceId = null;
-                  }
-                  return obj2;
-                }
-              }
-              cResult[20] = stringResult;
-            }
-            if (cResult[21] !== tmp25.header) {
-              let obj3 = { style: header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: null };
-              class H {
-                constructor() {
-                  let sourceId;
-                  const obj = currentUserActiveStream;
-                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                  sourceId = undefined;
-                  if (streamerActiveStreamMetadata != null) {
-                    sourceId = streamerActiveStreamMetadata.sourceId;
-                  }
-                  if (sourceId == null) {
-                    sourceId = null;
-                  }
-                  return obj2;
-                }
-              }
-              cResult[21] = tmp25.header;
-              cResult[22] = closure_14(tmp(5271).Text, obj3);
-              closure_14(tmp(5271).Text, obj3);
-              class R {
-                constructor() {
-                  user = currentUser.getCurrentUser();
-                  const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                  let guildId;
-                  const getGuild = closure_8.getGuild;
-                  if (channel != null) {
-                    guildId = channel.getGuildId();
-                  }
-                  const guild = getGuild(guildId);
-                  guildPremiumTier = undefined;
-                  if (guild != null) {
-                    guildPremiumTier = guild.premiumTier;
-                  }
-                  return { user, guildPremiumTier };
-                }
-              }
-            }
-            const _Symbol4 = Symbol;
-            const section = tmp25.section;
-            if (cResult[23] === Symbol.for("react.memo_cache_sentinel")) {
-              let intl2 = tmp(1125).intl;
-              const stringResult1 = intl2.string(guildPremiumTier(2340)["/XSr8v"]);
-              class H {
-                constructor() {
-                  let sourceId;
-                  const obj = currentUserActiveStream;
-                  currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                  const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                  const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                  sourceId = undefined;
-                  if (streamerActiveStreamMetadata != null) {
-                    sourceId = streamerActiveStreamMetadata.sourceId;
-                  }
-                  if (sourceId == null) {
-                    sourceId = null;
-                  }
-                  return obj2;
-                }
-              }
-              cResult[23] = stringResult1;
-              tmp45 = stringResult1;
-            } else {
-              tmp45 = cResult[23];
-            }
-            if (cResult[24] === analyticsLocations) {
-              if (cResult[25] === tmp37) {
-                if (cResult[26] === tmp14) {
-                  if (cResult[27] === isStreaming) {
-                    let tmp47;
-                    let tmp48;
-                    if (cResult[28] === tmp35) {
-                      tmp47 = cResult[29];
-                    }
-                    if (cResult[30] !== tmp38) {
-                      const mapped = closure_18.map((item) => {
-                        const obj = {};
-                        const TableRadioRow = TableRadioRow2.TableRadioRow;
-                        const merged = Object.assign(ApplicationStreamStates(item));
-                        return syncedClientThemes(TableRadioRow, obj, item);
-                      });
-                      class H {
-                        constructor() {
-                          let sourceId;
-                          const obj = currentUserActiveStream;
-                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                          sourceId = undefined;
-                          if (streamerActiveStreamMetadata != null) {
-                            sourceId = streamerActiveStreamMetadata.sourceId;
-                          }
-                          if (sourceId == null) {
-                            sourceId = null;
-                          }
-                          return obj2;
-                        }
-                      }
-                      cResult[31] = mapped;
-                      tmp48 = mapped;
-                    } else {
-                      tmp48 = cResult[31];
-                    }
-                    if (cResult[32] === value) {
-                      if (cResult[33] === tmp47) {
-                        let tmp51;
-                        if (cResult[34] === tmp48) {
-                          tmp51 = cResult[35];
-                        }
-                        if (cResult[36] === tmp25.section) {
-                          let tmp53;
-                          if (cResult[37] === tmp51) {
-                            tmp53 = cResult[38];
-                          }
-                          let str = "one-step";
-                          const tmp57 = "one-step" === goLiveUpsellVariant && sharedValue.get();
-                          class H {
-                            constructor() {
-                              let sourceId;
-                              const obj = currentUserActiveStream;
-                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                              sourceId = undefined;
-                              if (streamerActiveStreamMetadata != null) {
-                                sourceId = streamerActiveStreamMetadata.sourceId;
-                              }
-                              if (sourceId == null) {
-                                sourceId = null;
-                              }
-                              return obj2;
-                            }
-                          }
-                          if (cResult[39] === analyticsLocations) {
-                            if (cResult[40] === goLiveUpsellVariant) {
-                              if (cResult[41] === sharedValue) {
-                                let tmp58;
-                                let tmp64;
-                                let tmp66;
-                                if (cResult[42] === tmp25.section) {
-                                  tmp58 = cResult[43];
-                                }
-                                const _Symbol5 = Symbol;
-                                const section2 = tmp25.section;
-                                class H {
-                                  constructor() {
-                                    let sourceId;
-                                    const obj = currentUserActiveStream;
-                                    currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                    const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                    const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                    sourceId = undefined;
-                                    if (streamerActiveStreamMetadata != null) {
-                                      sourceId = streamerActiveStreamMetadata.sourceId;
-                                    }
-                                    if (sourceId == null) {
-                                      sourceId = null;
-                                    }
-                                    return obj2;
-                                  }
-                                }
-                                if (tmp63 === Symbol.for("react.memo_cache_sentinel")) {
-                                  let intl4 = tmp(1125).intl;
-                                  const stringResult2 = intl4.string(guildPremiumTier(2340)["j+eAMQ"]);
-                                  class H {
-                                    constructor() {
-                                      let sourceId;
-                                      const obj = currentUserActiveStream;
-                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                      sourceId = undefined;
-                                      if (streamerActiveStreamMetadata != null) {
-                                        sourceId = streamerActiveStreamMetadata.sourceId;
-                                      }
-                                      if (sourceId == null) {
-                                        sourceId = null;
-                                      }
-                                      return obj2;
-                                    }
-                                  }
-                                  cResult[44] = stringResult2;
-                                  tmp64 = stringResult2;
-                                } else {
-                                  tmp64 = cResult[44];
-                                }
-                                const _Symbol6 = Symbol;
-                                if (cResult[45] === Symbol.for("react.memo_cache_sentinel")) {
-                                  let intl5 = tmp(1125).intl;
-                                  const stringResult3 = intl5.string(guildPremiumTier(2340).uwMBDo);
-                                  class H {
-                                    constructor() {
-                                      let sourceId;
-                                      const obj = currentUserActiveStream;
-                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                      sourceId = undefined;
-                                      if (streamerActiveStreamMetadata != null) {
-                                        sourceId = streamerActiveStreamMetadata.sourceId;
-                                      }
-                                      if (sourceId == null) {
-                                        sourceId = null;
-                                      }
-                                      return obj2;
-                                    }
-                                  }
-                                  cResult[45] = stringResult3;
-                                  tmp66 = stringResult3;
-                                } else {
-                                  tmp66 = cResult[45];
-                                }
-                                if (cResult[46] === tmp37) {
-                                  let tmp68;
-                                  if (cResult[47] === value) {
-                                    tmp68 = cResult[48];
-                                  }
-                                  if (cResult[49] === tmp35) {
-                                    let tmp70;
-                                    if (cResult[50] === tmp68) {
-                                      tmp70 = cResult[51];
-                                    }
-                                    if (cResult[52] === tmp25.section) {
-                                      let tmp74;
-                                      let tmp78;
-                                      if (cResult[53] === tmp70) {
-                                        tmp74 = cResult[54];
-                                      }
-                                      if (cResult[55] !== isStreaming) {
-                                        const Button = tmp(5281).Button;
-                                        if (isStreaming) {
-                                          let obj4 = {
-                                            size: "lg",
-                                            variant: "destructive",
-                                            text: null,
-                                            onPress() {
-                                                                                      const obj = user(closure_2[51]);
-                                                                                      obj.stopScreenshare();
-                                                                                      const obj2 = guildPremiumTier(closure_2[15]);
-                                                                                      obj2.hideActionSheet(MobileGoLiveActionSheet_str);
-                                                                                    }
-                                          };
-                                          const string2 = tmp(1125).intl.string;
-                                          class H {
-                                            constructor() {
-                                              let sourceId;
-                                              const obj = currentUserActiveStream;
-                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                              sourceId = undefined;
-                                              if (streamerActiveStreamMetadata != null) {
-                                                sourceId = streamerActiveStreamMetadata.sourceId;
-                                              }
-                                              if (sourceId == null) {
-                                                sourceId = null;
-                                              }
-                                              return obj2;
-                                            }
-                                          }
-                                          let obj5 = obj4;
-                                        } else {
-                                          obj5 = {
-                                            size: "lg",
-                                            variant: "primary",
-                                            text: null,
-                                            onPress() {
-                                                                                      const obj = guildPremiumTier(closure_2[15]);
-                                                                                      obj.hideActionSheet(MobileGoLiveActionSheet_str);
-                                                                                      const obj2 = user(closure_2[51]);
-                                                                                      obj2.startStream();
-                                                                                    }
-                                          };
-                                          const string = tmp(1125).intl.string;
-                                          class H {
-                                            constructor() {
-                                              let sourceId;
-                                              const obj = currentUserActiveStream;
-                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                              sourceId = undefined;
-                                              if (streamerActiveStreamMetadata != null) {
-                                                sourceId = streamerActiveStreamMetadata.sourceId;
-                                              }
-                                              if (sourceId == null) {
-                                                sourceId = null;
-                                              }
-                                              return obj2;
-                                            }
-                                          }
-                                        }
-                                        class H {
-                                          constructor() {
-                                            let sourceId;
-                                            const obj = currentUserActiveStream;
-                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                            sourceId = undefined;
-                                            if (streamerActiveStreamMetadata != null) {
-                                              sourceId = streamerActiveStreamMetadata.sourceId;
-                                            }
-                                            if (sourceId == null) {
-                                              sourceId = null;
-                                            }
-                                            return obj2;
-                                          }
-                                        }
-                                        cResult[55] = isStreaming;
-                                        cResult[56] = tmp80;
-                                        tmp78 = tmp80;
-                                      } else {
-                                        tmp78 = cResult[56];
-                                      }
-                                      if (cResult[57] === tmp25.section) {
-                                        let tmp81;
-                                        if (cResult[58] === tmp78) {
-                                          tmp81 = cResult[59];
-                                        }
-                                        if (cResult[60] === SafeAreaPaddingView) {
-                                          if (cResult[61] === tmp25.wrapper) {
-                                            if (cResult[62] === tmp42) {
-                                              if (cResult[63] === tmp53) {
-                                                if (cResult[64] === tmp57) {
-                                                  if (cResult[65] === tmp58) {
-                                                    if (cResult[66] === tmp74) {
-                                                      let tmp83;
-                                                      if (cResult[67] === tmp81) {
-                                                        tmp83 = cResult[68];
-                                                      }
-                                                      if (cResult[69] === BottomSheetScrollView) {
-                                                        let tmp87;
-                                                        if (cResult[70] === tmp83) {
-                                                          tmp87 = cResult[71];
-                                                        }
-                                                        if (cResult[72] === BottomSheet) {
-                                                          let tmp91;
-                                                          if (cResult[73] === tmp87) {
-                                                            tmp91 = cResult[74];
-                                                          }
-                                                          if (cResult[75] === AnalyticsLocationProvider) {
-                                                            if (cResult[76] === analyticsLocations) {
-                                                              let tmp95;
-                                                              if (cResult[77] === tmp91) {
-                                                                tmp95 = cResult[78];
-                                                              }
-                                                              return tmp95;
-                                                            }
-                                                          }
-                                                          class H {
-                                                            constructor() {
-                                                              let sourceId;
-                                                              const obj = currentUserActiveStream;
-                                                              currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                                              const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                                              const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                                              sourceId = undefined;
-                                                              if (streamerActiveStreamMetadata != null) {
-                                                                sourceId = streamerActiveStreamMetadata.sourceId;
-                                                              }
-                                                              if (sourceId == null) {
-                                                                sourceId = null;
-                                                              }
-                                                              return obj2;
-                                                            }
-                                                          }
-                                                          tmp97[0] = analyticsLocations;
-                                                          tmp97[1] = tmp91;
-                                                          const tmp98 = closure_14(AnalyticsLocationProvider, tmp97);
-                                                          cResult[75] = AnalyticsLocationProvider;
-                                                          class R {
-                                                            constructor() {
-                                                              user = currentUser.getCurrentUser();
-                                                              const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                                              let guildId;
-                                                              const getGuild = closure_8.getGuild;
-                                                              if (channel != null) {
-                                                                guildId = channel.getGuildId();
-                                                              }
-                                                              const guild = getGuild(guildId);
-                                                              guildPremiumTier = undefined;
-                                                              if (guild != null) {
-                                                                guildPremiumTier = guild.premiumTier;
-                                                              }
-                                                              return { user, guildPremiumTier };
-                                                            }
-                                                          }
-                                                          cResult[76] = analyticsLocations;
-                                                          cResult[77] = tmp91;
-                                                          cResult[78] = tmp98;
-                                                          tmp95 = tmp98;
-                                                        }
-                                                        class H {
-                                                          constructor() {
-                                                            let sourceId;
-                                                            const obj = currentUserActiveStream;
-                                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                                            sourceId = undefined;
-                                                            if (streamerActiveStreamMetadata != null) {
-                                                              sourceId = streamerActiveStreamMetadata.sourceId;
-                                                            }
-                                                            if (sourceId == null) {
-                                                              sourceId = null;
-                                                            }
-                                                            return obj2;
-                                                          }
-                                                        }
-                                                        tmp93[1] = tmp87;
-                                                        const tmp94 = closure_14(BottomSheet, tmp93);
-                                                        cResult[72] = BottomSheet;
-                                                        class R {
-                                                          constructor() {
-                                                            user = currentUser.getCurrentUser();
-                                                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                                            let guildId;
-                                                            const getGuild = closure_8.getGuild;
-                                                            if (channel != null) {
-                                                              guildId = channel.getGuildId();
-                                                            }
-                                                            const guild = getGuild(guildId);
-                                                            guildPremiumTier = undefined;
-                                                            if (guild != null) {
-                                                              guildPremiumTier = guild.premiumTier;
-                                                            }
-                                                            return { user, guildPremiumTier };
-                                                          }
-                                                        }
-                                                        cResult[74] = tmp94;
-                                                        tmp91 = tmp94;
-                                                      }
-                                                      class H {
-                                                        constructor() {
-                                                          let sourceId;
-                                                          const obj = currentUserActiveStream;
-                                                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                                          sourceId = undefined;
-                                                          if (streamerActiveStreamMetadata != null) {
-                                                            sourceId = streamerActiveStreamMetadata.sourceId;
-                                                          }
-                                                          if (sourceId == null) {
-                                                            sourceId = null;
-                                                          }
-                                                          return obj2;
-                                                        }
-                                                      }
-                                                      tmp89[0] = tmp83;
-                                                      const tmp90 = closure_14(BottomSheetScrollView, tmp89);
-                                                      cResult[69] = BottomSheetScrollView;
-                                                      class R {
-                                                        constructor() {
-                                                          user = currentUser.getCurrentUser();
-                                                          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                                          let guildId;
-                                                          const getGuild = closure_8.getGuild;
-                                                          if (channel != null) {
-                                                            guildId = channel.getGuildId();
-                                                          }
-                                                          const guild = getGuild(guildId);
-                                                          guildPremiumTier = undefined;
-                                                          if (guild != null) {
-                                                            guildPremiumTier = guild.premiumTier;
-                                                          }
-                                                          return { user, guildPremiumTier };
-                                                        }
-                                                      }
-                                                      cResult[71] = tmp90;
-                                                      tmp87 = tmp90;
-                                                    }
-                                                  }
-                                                }
-                                              }
-                                            }
-                                          }
-                                        }
-                                        class H {
-                                          constructor() {
-                                            let sourceId;
-                                            const obj = currentUserActiveStream;
-                                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                            sourceId = undefined;
-                                            if (streamerActiveStreamMetadata != null) {
-                                              sourceId = streamerActiveStreamMetadata.sourceId;
-                                            }
-                                            if (sourceId == null) {
-                                              sourceId = null;
-                                            }
-                                            return obj2;
-                                          }
-                                        }
-                                        tmp85[1] = tmp39;
-                                        const items3 = [tmp42, tmp53, tmp57, , , ];
-                                        class R {
-                                          constructor() {
-                                            user = currentUser.getCurrentUser();
-                                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                            let guildId;
-                                            const getGuild = closure_8.getGuild;
-                                            if (channel != null) {
-                                              guildId = channel.getGuildId();
-                                            }
-                                            const guild = getGuild(guildId);
-                                            guildPremiumTier = undefined;
-                                            if (guild != null) {
-                                              guildPremiumTier = guild.premiumTier;
-                                            }
-                                            return { user, guildPremiumTier };
-                                          }
-                                        }
-                                        items3[4] = tmp74;
-                                        items3[5] = tmp81;
-                                        tmp85[2] = items3;
-                                        const tmp86 = closure_15(SafeAreaPaddingView, tmp85);
-                                        cResult[60] = SafeAreaPaddingView;
-                                        cResult[61] = tmp25.wrapper;
-                                        class Ee {
-                                          constructor(arg0) {
-                                            if (closure_2(arg0)) {
-                                              closure_8(arg0);
-                                              closure_11(arg0, SelectedChannelStore);
-                                              const tmp13 = isStreaming;
-                                              if (tmp13) {
-                                                const obj2 = ActionSheetActionCreatorsDefault;
-                                                obj2.hideActionSheet(MobileGoLiveActionSheet_str);
-                                              }
-                                            } else {
-                                              const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
-                                              const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
-                                              PremiumUpsellUtilsDefault;
-                                              const result = handleShowUpsellAlert(obj);
-                                            }
-                                          }
-                                        }
-                                        cResult[63] = tmp53;
-                                        cResult[64] = tmp57;
-                                        cResult[65] = tmp58;
-                                        cResult[66] = tmp74;
-                                        cResult[67] = tmp81;
-                                        cResult[68] = tmp86;
-                                        tmp83 = tmp86;
-                                      }
-                                      class H {
-                                        constructor() {
-                                          let sourceId;
-                                          const obj = currentUserActiveStream;
-                                          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                          sourceId = undefined;
-                                          if (streamerActiveStreamMetadata != null) {
-                                            sourceId = streamerActiveStreamMetadata.sourceId;
-                                          }
-                                          if (sourceId == null) {
-                                            sourceId = null;
-                                          }
-                                          return obj2;
-                                        }
-                                      }
-                                      let obj7 = { style: tmp25.section, children: tmp78 };
-                                      const tmp82 = closure_14(guildPremiumTier(6946), obj7);
-                                      class R {
-                                        constructor() {
-                                          user = currentUser.getCurrentUser();
-                                          const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                          let guildId;
-                                          const getGuild = closure_8.getGuild;
-                                          if (channel != null) {
-                                            guildId = channel.getGuildId();
-                                          }
-                                          const guild = getGuild(guildId);
-                                          guildPremiumTier = undefined;
-                                          if (guild != null) {
-                                            guildPremiumTier = guild.premiumTier;
-                                          }
-                                          return { user, guildPremiumTier };
-                                        }
-                                      }
-                                      cResult[58] = tmp78;
-                                      cResult[59] = tmp82;
-                                      tmp81 = tmp82;
-                                    }
-                                    class H {
-                                      constructor() {
-                                        let sourceId;
-                                        const obj = currentUserActiveStream;
-                                        currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                        const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                        const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                        sourceId = undefined;
-                                        if (streamerActiveStreamMetadata != null) {
-                                          sourceId = streamerActiveStreamMetadata.sourceId;
-                                        }
-                                        if (sourceId == null) {
-                                          sourceId = null;
-                                        }
-                                        return obj2;
-                                      }
-                                    }
-                                    tmp76[0] = section2;
-                                    tmp76[1] = tmp70;
-                                    const tmp77 = closure_14(guildPremiumTier(6946), tmp76);
-                                    cResult[52] = tmp25.section;
-                                    class R {
-                                      constructor() {
-                                        user = currentUser.getCurrentUser();
-                                        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                        let guildId;
-                                        const getGuild = closure_8.getGuild;
-                                        if (channel != null) {
-                                          guildId = channel.getGuildId();
-                                        }
-                                        const guild = getGuild(guildId);
-                                        guildPremiumTier = undefined;
-                                        if (guild != null) {
-                                          guildPremiumTier = guild.premiumTier;
-                                        }
-                                        return { user, guildPremiumTier };
-                                      }
-                                    }
-                                    cResult[53] = tmp70;
-                                    cResult[54] = tmp77;
-                                    tmp74 = tmp77;
-                                  }
-                                  class H {
-                                    constructor() {
-                                      let sourceId;
-                                      const obj = currentUserActiveStream;
-                                      currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                      const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                      const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                      sourceId = undefined;
-                                      if (streamerActiveStreamMetadata != null) {
-                                        sourceId = streamerActiveStreamMetadata.sourceId;
-                                      }
-                                      if (sourceId == null) {
-                                        sourceId = null;
-                                      }
-                                      return obj2;
-                                    }
-                                  }
-                                  tmp72[0] = tmp64;
-                                  const TableRowGroup2 = tmp(7047).TableRowGroup;
-                                  let obj8 = { label: tmp66, value: tmp35, onValueChange: null };
-                                  class R {
-                                    constructor() {
-                                      user = currentUser.getCurrentUser();
-                                      const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                      let guildId;
-                                      const getGuild = closure_8.getGuild;
-                                      if (channel != null) {
-                                        guildId = channel.getGuildId();
-                                      }
-                                      const guild = getGuild(guildId);
-                                      guildPremiumTier = undefined;
-                                      if (guild != null) {
-                                        guildPremiumTier = guild.premiumTier;
-                                      }
-                                      return { user, guildPremiumTier };
-                                    }
-                                  }
-                                  tmp72[2] = closure_14(tmp(7355).TableSwitchRow, obj8);
-                                  const tmp73 = closure_14(TableRowGroup2, tmp72);
-                                  cResult[49] = tmp35;
-                                  cResult[50] = tmp68;
-                                  cResult[51] = tmp73;
-                                  tmp70 = tmp73;
-                                }
-                                class R {
-                                  constructor() {
-                                    user = currentUser.getCurrentUser();
-                                    const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                    let guildId;
-                                    const getGuild = closure_8.getGuild;
-                                    if (channel != null) {
-                                      guildId = channel.getGuildId();
-                                    }
-                                    const guild = getGuild(guildId);
-                                    guildPremiumTier = undefined;
-                                    if (guild != null) {
-                                      guildPremiumTier = guild.premiumTier;
-                                    }
-                                    return { user, guildPremiumTier };
-                                  }
-                                }
-                                cResult[46] = tmp37;
-                                cResult[47] = value;
-                                cResult[48] = tmp69;
-                                tmp68 = tmp69;
-                              }
-                            }
-                          }
-                          let str2 = "two-step";
-                          let tmp59 = "two-step" === goLiveUpsellVariant && sharedValue.get();
-                          if (tmp59) {
-                            let obj9 = { style: tmp25.section, children: closure_14(tmp22Result, obj10) };
-                            class H {
-                              constructor() {
-                                let sourceId;
-                                const obj = currentUserActiveStream;
-                                currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                                const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                                const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                                sourceId = undefined;
-                                if (streamerActiveStreamMetadata != null) {
-                                  sourceId = streamerActiveStreamMetadata.sourceId;
-                                }
-                                if (sourceId == null) {
-                                  sourceId = null;
-                                }
-                                return obj2;
-                              }
-                            }
-                            obj10 = { text: intl3.string(guildPremiumTier(2340).u72Prd), onPress: null };
-                            tmp22Result = guildPremiumTier(10245);
-                            intl3 = tmp(1125).intl;
-                            class R {
-                              constructor() {
-                                user = currentUser.getCurrentUser();
-                                const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                                let guildId;
-                                const getGuild = closure_8.getGuild;
-                                if (channel != null) {
-                                  guildId = channel.getGuildId();
-                                }
-                                const guild = getGuild(guildId);
-                                guildPremiumTier = undefined;
-                                if (guild != null) {
-                                  guildPremiumTier = guild.premiumTier;
-                                }
-                                return { user, guildPremiumTier };
-                              }
-                            }
-                            tmp59 = closure_14(tmp61, obj9);
-                          }
-                          class R {
-                            constructor() {
-                              user = currentUser.getCurrentUser();
-                              const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                              let guildId;
-                              const getGuild = closure_8.getGuild;
-                              if (channel != null) {
-                                guildId = channel.getGuildId();
-                              }
-                              const guild = getGuild(guildId);
-                              guildPremiumTier = undefined;
-                              if (guild != null) {
-                                guildPremiumTier = guild.premiumTier;
-                              }
-                              return { user, guildPremiumTier };
-                            }
-                          }
-                          cResult[40] = goLiveUpsellVariant;
-                          cResult[41] = sharedValue;
-                          cResult[42] = tmp25.section;
-                          cResult[43] = tmp59;
-                          tmp58 = tmp59;
-                        }
-                        class H {
-                          constructor() {
-                            let sourceId;
-                            const obj = currentUserActiveStream;
-                            currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                            const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                            const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                            sourceId = undefined;
-                            if (streamerActiveStreamMetadata != null) {
-                              sourceId = streamerActiveStreamMetadata.sourceId;
-                            }
-                            if (sourceId == null) {
-                              sourceId = null;
-                            }
-                            return obj2;
-                          }
-                        }
-                        tmp55[0] = section;
-                        tmp55[1] = tmp51;
-                        const tmp56 = closure_14(guildPremiumTier(6946), tmp55);
-                        cResult[36] = tmp25.section;
-                        class R {
-                          constructor() {
-                            user = currentUser.getCurrentUser();
-                            const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                            let guildId;
-                            const getGuild = closure_8.getGuild;
-                            if (channel != null) {
-                              guildId = channel.getGuildId();
-                            }
-                            const guild = getGuild(guildId);
-                            guildPremiumTier = undefined;
-                            if (guild != null) {
-                              guildPremiumTier = guild.premiumTier;
-                            }
-                            return { user, guildPremiumTier };
-                          }
-                        }
-                        cResult[37] = tmp51;
-                        cResult[38] = tmp56;
-                        tmp53 = tmp56;
-                      }
-                    }
-                    class H {
-                      constructor() {
-                        let sourceId;
-                        const obj = currentUserActiveStream;
-                        currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-                        const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-                        const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-                        sourceId = undefined;
-                        if (streamerActiveStreamMetadata != null) {
-                          sourceId = streamerActiveStreamMetadata.sourceId;
-                        }
-                        if (sourceId == null) {
-                          sourceId = null;
-                        }
-                        return obj2;
-                      }
-                    }
-                    let obj11 = { title: tmp45, hasIcons: false, children: closure_14(tmp(7045).TableRadioGroup, obj12) };
-                    const TableRowGroup = tmp(7047).TableRowGroup;
-                    obj12 = { value, onChange: null, hasIcons: true, children: tmp48 };
-                    class R {
-                      constructor() {
-                        user = currentUser.getCurrentUser();
-                        const channel = first.getChannel(SelectedChannelStore.getVoiceChannelId());
-                        let guildId;
-                        const getGuild = closure_8.getGuild;
-                        if (channel != null) {
-                          guildId = channel.getGuildId();
-                        }
-                        const guild = getGuild(guildId);
-                        guildPremiumTier = undefined;
-                        if (guild != null) {
-                          guildPremiumTier = guild.premiumTier;
-                        }
-                        return { user, guildPremiumTier };
-                      }
-                    }
-                    const tmp52 = closure_14(TableRowGroup, obj11);
-                    cResult[32] = value;
-                    cResult[33] = tmp47;
-                    cResult[34] = tmp48;
-                    class Ee {
-                      constructor(arg0) {
-                        if (closure_2(arg0)) {
-                          closure_8(arg0);
-                          closure_11(arg0, SelectedChannelStore);
-                          const tmp13 = isStreaming;
-                          if (tmp13) {
-                            const obj2 = ActionSheetActionCreatorsDefault;
-                            obj2.hideActionSheet(MobileGoLiveActionSheet_str);
-                          }
-                        } else {
-                          const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
-                          const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
-                          PremiumUpsellUtilsDefault;
-                          const result = handleShowUpsellAlert(obj);
-                        }
-                      }
-                    }
-                    cResult[35] = tmp52;
-                    tmp51 = tmp52;
-                  }
-                }
-              }
-            }
-            class Ee {
-              constructor(arg0) {
-                if (closure_2(arg0)) {
-                  closure_8(arg0);
-                  closure_11(arg0, SelectedChannelStore);
-                  const tmp13 = isStreaming;
-                  if (tmp13) {
-                    const obj2 = ActionSheetActionCreatorsDefault;
-                    obj2.hideActionSheet(MobileGoLiveActionSheet_str);
-                  }
-                } else {
-                  const obj = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
-                  const handleShowUpsellAlert = PremiumUpsellUtilsDefault.handleShowUpsellAlert;
-                  PremiumUpsellUtilsDefault;
-                  const result = handleShowUpsellAlert(obj);
-                }
-              }
-            }
-            cResult[24] = analyticsLocations;
-            cResult[25] = tmp37;
-            cResult[26] = tmp14;
-            cResult[27] = isStreaming;
-            cResult[28] = tmp35;
-            cResult[29] = Ee;
-            tmp47 = Ee;
-          }
-        }
-      }
-      const fn2 = function z(preset, soundshareEnabled) {
-        let obj3;
-        let tmp4;
-        let tmp5;
-        let items = getStreamSettingsForPresetDefault(preset, user, guildPremiumTier);
-        if (items == null) {
-          items = [];
-        }
-        [tmp4, tmp5] = items;
-        _slicedToArray(items, 2);
-        if (null != tmp4) {
-          if (null != tmp5) {
-            const obj2 = { preset, resolution: tmp4, frameRate: tmp5, soundshareEnabled };
-            const obj5 = StreamActionCreators;
-            obj5.updateStreamSettings(obj2);
-            const tmp12 = isStreaming;
-            if (tmp12) {
-              const obj = { qualityOptions: obj3, context: MediaEngineContextTypes.STREAM };
-              obj3 = { preset, resolution: tmp4, frameRate: tmp5 };
-              if (null != react) {
-                const obj4 = { sourceId: tmp7, sound: soundshareEnabled };
-                obj.desktopSettings = obj4;
-              }
-              const tmpResult = AudioActionCreatorsDefault;
-              tmpResult.setGoLiveSource(obj);
-            }
-          }
-        }
-      };
-      cResult[14] = guildPremiumTier;
-      cResult[15] = isStreaming;
-      cResult[16] = user;
-      cResult[17] = fn2;
-      tmp37 = fn2;
-    }
-    const tmp28 = preset === ApplicationStreamPresets.PRESET_MOBILE_DEFAULT || preset === ApplicationStreamPresets.PRESET_MOBILE_PERFORMANCE || preset === ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY;
-    if (tmp28) {
-      let PRESET_MOBILE_DEFAULT;
-      if (closure_18.includes(preset)) {
-        PRESET_MOBILE_DEFAULT = preset;
-      }
-      class H {
-        constructor() {
-          let sourceId;
-          const obj = currentUserActiveStream;
-          currentUserActiveStream = currentUserActiveStream.getCurrentUserActiveStream();
-          const obj2 = { isStreaming: null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE, activeSourceId: sourceId };
-          const streamerActiveStreamMetadata = obj.getStreamerActiveStreamMetadata();
-          sourceId = undefined;
-          if (streamerActiveStreamMetadata != null) {
-            sourceId = streamerActiveStreamMetadata.sourceId;
-          }
-          if (sourceId == null) {
-            sourceId = null;
-          }
-          return obj2;
-        }
-      }
-      cResult[11] = preset;
-      cResult[12] = PRESET_MOBILE_DEFAULT;
-      tmp26 = PRESET_MOBILE_DEFAULT;
-    }
-    PRESET_MOBILE_DEFAULT = tmp27.PRESET_MOBILE_DEFAULT;
-  }
-  const fn = function f(arg0) {
-    const obj = getStreamSettingsForPreset;
-    return obj.canStreamWithPreset(arg0, user, guildPremiumTier);
-  };
-  cResult[4] = guildPremiumTier;
-  cResult[5] = user;
-  cResult[6] = fn;
-  tmp14 = fn;
-}) : (function MobileGoLiveActionSheet() {
+const memoResult = react.memo(function MobileGoLiveActionSheet() {
   let Button;
   let TableRadioGroup;
   let TableRowGroup;
@@ -1470,11 +106,11 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let value;
   let tmp = user;
   const tmp2 = callback;
-  let obj = user(callback[21]);
+  let obj = user(callback[19]);
   let items = [analyticsLocations];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => analyticsLocations.getState());
   ({ preset, soundshareEnabled } = stateFromStoresObject);
-  let obj2 = user(callback[21]);
+  let obj2 = user(callback[19]);
   const items1 = [currentUser, first1, value, closure_8];
   const stateFromStoresObject1 = obj2.useStateFromStoresObject(items1, () => {
     user = currentUser.getCurrentUser();
@@ -1499,7 +135,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const obj = getStreamSettingsForPreset;
     return obj.canStreamWithPreset(arg0, user, guildPremiumTier);
   }, items2);
-  let obj4 = user(callback[21]);
+  let obj4 = user(callback[19]);
   const items3 = [currentUserActiveStream];
   const stateFromStoresObject2 = obj4.useStateFromStoresObject(items3, () => {
     let sourceId;
@@ -1519,10 +155,10 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const isStreaming = stateFromStoresObject2.isStreaming;
   activeSourceId = stateFromStoresObject2.activeSourceId;
   const tmp7 = guildPremiumTier;
-  let obj5 = guildPremiumTier(callback[23]);
+  let obj5 = guildPremiumTier(callback[21]);
   const goLiveUpsellVariant = obj5.useConfig({ location: "MobileGoLiveActionSheet" }).goLiveUpsellVariant;
-  const tmp8 = guildPremiumTier(callback[24]);
-  analyticsLocations = tmp8(guildPremiumTier(callback[25]).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
+  const tmp8 = guildPremiumTier(callback[22]);
+  analyticsLocations = tmp8(guildPremiumTier(callback[23]).MOBILE_GO_LIVE_ACTION_SHEET).analyticsLocations;
   const tmp9 = closure_16();
   currentUserActiveStream = tmp9;
   let tmp11 = preset === ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
@@ -1542,7 +178,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     const tmp16 = isStreaming(obj3.useState(soundshareEnabled), 2);
     first1 = tmp16[0];
     currentUser = tmp16[1];
-    let tmpResult = tmp(tmp2[26]);
+    let tmpResult = tmp(tmp2[24]);
     const sharedValue = tmpResult.useSharedValue(!callback(tmp10.PRESET_MOBILE_HIGH_QUALITY));
     const items4 = [user, guildPremiumTier, activeSourceId, isStreaming];
     ApplicationStreamPresets = obj3.useCallback((preset, soundshareEnabled) => {
@@ -1575,20 +211,20 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
     }, items4);
     let obj6 = { value: analyticsLocations, children: closure_14(BottomSheet, obj22) };
-    const AnalyticsLocationProvider = tmp(tmp2[24]).AnalyticsLocationProvider;
-    BottomSheet = tmp(tmp2[38]).BottomSheet;
-    const BottomSheetScrollView = tmp(tmp2[39]).BottomSheetScrollView;
+    const AnalyticsLocationProvider = tmp(tmp2[22]).AnalyticsLocationProvider;
+    BottomSheet = tmp(tmp2[36]).BottomSheet;
+    const BottomSheetScrollView = tmp(tmp2[37]).BottomSheetScrollView;
     let obj7 = { bottom: true, style: tmp9.wrapper, children: items5 };
-    const SafeAreaPaddingView = tmp(tmp2[40]).SafeAreaPaddingView;
-    let obj8 = { style: tmp9.header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp7(tmp2[31]).CrNjqp) };
-    let Text = tmp(tmp2[35]).Text;
-    intl = tmp(tmp2[30]).intl;
+    const SafeAreaPaddingView = tmp(tmp2[38]).SafeAreaPaddingView;
+    let obj8 = { style: tmp9.header, variant: "redesign/heading-18/bold", color: "text-strong", accessibilityRole: "header", children: intl.string(tmp7(tmp2[29]).CrNjqp) };
+    let Text = tmp(tmp2[33]).Text;
+    intl = tmp(tmp2[28]).intl;
     items5 = [closure_14(Text, obj8), , , , , ];
     let obj9 = { style: tmp9.section, children: closure_14(TableRowGroup, obj10) };
-    obj10 = { title: intl2.string(tmp7(tmp2[31])["/XSr8v"]), hasIcons: false, children: closure_14(TableRadioGroup, obj11) };
-    const tmp7Result = tmp7(tmp2[34]);
-    TableRowGroup = tmp(tmp2[44]).TableRowGroup;
-    intl2 = tmp(tmp2[30]).intl;
+    obj10 = { title: intl2.string(tmp7(tmp2[29])["/XSr8v"]), hasIcons: false, children: closure_14(TableRadioGroup, obj11) };
+    const tmp7Result = tmp7(tmp2[32]);
+    TableRowGroup = tmp(tmp2[39]).TableRowGroup;
+    intl2 = tmp(tmp2[28]).intl;
     obj11 = {
       value,
       onChange(arg0) {
@@ -1626,56 +262,56 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const maxSettingsForPreset2 = obj3.getMaxSettingsForPreset(ApplicationStreamPresets.PRESET_MOBILE_HIGH_QUALITY);
           const obj4 = { value };
           const PRESET_MOBILE_DEFAULT = ApplicationStreamPresets.PRESET_MOBILE_DEFAULT;
-          const obj5 = { icon: syncedClientThemes(MobilePhoneIcon.MobilePhoneIcon, {}), label: intl.string(_modDef2340["2qmQ8N"]), subLabel: str2 };
+          const obj5 = { icon: authStore3(MobilePhoneIcon.MobilePhoneIcon, {}), label: intl.string(_modDef2341["2qmQ8N"]), subLabel: str2 };
           intl = intl8.intl;
           let str = "";
           str2 = "";
           if (null != maxSettingsForPreset) {
-            const intl2 = tmp2(1125).intl;
-            str2 = intl2.formatToPlainString(tmp8(2340).ibH7vy, maxSettingsForPreset);
+            const intl2 = tmp2(1114).intl;
+            str2 = intl2.formatToPlainString(tmp8(2341).ibH7vy, maxSettingsForPreset);
           }
           const obj6 = { [PRESET_MOBILE_DEFAULT]: obj5 };
           const PRESET_MOBILE_PERFORMANCE = tmp4.PRESET_MOBILE_PERFORMANCE;
-          const obj7 = { icon: syncedClientThemes(SpeedometerIcon.SpeedometerIcon, {}), label: intl3.string(_modDef2340["5eO4/m"]), subLabel: formatToPlainStringResult };
-          intl3 = tmp2(1125).intl;
+          const obj7 = { icon: authStore3(SpeedometerIcon.SpeedometerIcon, {}), label: intl3.string(_modDef2341["5eO4/m"]), subLabel: formatToPlainStringResult };
+          intl3 = tmp2(1114).intl;
           formatToPlainStringResult = str;
           if (null != maxSettingsForPreset1) {
-            const intl4 = tmp2(1125).intl;
-            formatToPlainStringResult = intl4.formatToPlainString(tmp8(2340).fN0UQY, maxSettingsForPreset1);
+            const intl4 = tmp2(1114).intl;
+            formatToPlainStringResult = intl4.formatToPlainString(tmp8(2341).fN0UQY, maxSettingsForPreset1);
           }
           obj6[PRESET_MOBILE_PERFORMANCE] = obj7;
           const PRESET_MOBILE_HIGH_QUALITY = tmp4.PRESET_MOBILE_HIGH_QUALITY;
-          const obj8 = { icon: syncedClientThemes(ImageSparkleIcon.ImageSparkleIcon, {}), label: closure_15(tmp8Result, obj9), subLabel: str };
+          const obj8 = { icon: authStore3(ImageSparkleIcon.ImageSparkleIcon, {}), label: closure_15(tmp8Result, obj9), subLabel: str };
           obj9 = { style: currentUserActiveStream.highQualityLabel, children: items };
-          const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2340.nMcXo1) };
+          const obj10 = { variant: "text-md/semibold", color: "text-strong", children: intl5.string(_modDef2341.nMcXo1) };
           tmp8Result = NativeViewDefault;
-          const Text = tmp2(5271).Text;
-          intl5 = tmp2(1125).intl;
-          items = [syncedClientThemes(Text, obj10), ];
+          const Text = tmp2(5619).Text;
+          intl5 = tmp2(1114).intl;
+          items = [authStore3(Text, obj10), ];
           const obj11 = { source: AssetRegistryDefault, size: "xs" };
-          const BaseIconImage = tmp2(5706).BaseIconImage;
-          items[1] = syncedClientThemes(BaseIconImage, obj11);
+          const BaseIconImage = tmp2(5711).BaseIconImage;
+          items[1] = authStore3(BaseIconImage, obj11);
           if (null != maxSettingsForPreset2) {
-            const intl6 = tmp2(1125).intl;
-            str = intl6.formatToPlainString(tmp8(2340).q4gYBi, maxSettingsForPreset2);
+            const intl6 = tmp2(1114).intl;
+            str = intl6.formatToPlainString(tmp8(2341).q4gYBi, maxSettingsForPreset2);
           }
           const obj12 = {};
           obj6[PRESET_MOBILE_HIGH_QUALITY] = obj8;
           const merged = Object.assign(obj6[value]);
           const merged1 = Object.assign(obj4);
-          return syncedClientThemes(TableRadioRow, obj12, value);
+          return authStore3(TableRadioRow, obj12, value);
         })
     };
-    TableRadioGroup = tmp(tmp2[45]).TableRadioGroup;
+    TableRadioGroup = tmp(tmp2[40]).TableRadioGroup;
     items5[1] = closure_14(tmp7Result, obj9);
     let str = "one-step";
     let tmp18Result = "one-step" === goLiveUpsellVariant && sharedValue.get();
     const tmp19 = closure_15;
     if (tmp18Result) {
       let obj12 = { style: tmp9.section, children: closure_14(tmp7Result8, obj13) };
-      obj13 = { featureName: tmp(tmp2[47]).EntitlementFeatureNames.STREAM_HIGH_QUALITY, shouldShow: sharedValue };
-      const tmp7Result7 = tmp7(tmp2[34]);
-      tmp7Result8 = tmp7(tmp2[46]);
+      obj13 = { featureName: tmp(tmp2[45]).EntitlementFeatureNames.STREAM_HIGH_QUALITY, shouldShow: sharedValue };
+      const tmp7Result7 = tmp7(tmp2[32]);
+      tmp7Result8 = tmp7(tmp2[44]);
       tmp18Result = tmp18(tmp7Result7, obj12);
     }
     items5[2] = tmp18Result;
@@ -1684,65 +320,65 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     if (tmp18Result2) {
       const obj14 = { style: tmp9.section, children: closure_14(tmp7Result10, obj15) };
       obj15 = {
-        text: intl3.string(tmp7(tmp2[31]).u72Prd),
+        text: intl3.string(tmp7(tmp2[29]).u72Prd),
         onPress() {
               const obj = PremiumUpsellUtilsDefault;
               const obj2 = { initialUpsellKey: ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY, analyticsLocations };
               const result = obj.handleShowUpsellAlert(obj2);
             }
       };
-      const tmp7Result9 = tmp7(tmp2[34]);
-      tmp7Result10 = tmp7(tmp2[48]);
-      intl3 = tmp(tmp2[30]).intl;
+      const tmp7Result9 = tmp7(tmp2[32]);
+      tmp7Result10 = tmp7(tmp2[46]);
+      intl3 = tmp(tmp2[28]).intl;
       tmp18Result2 = tmp18(tmp7Result9, obj14);
     }
     items5[3] = tmp18Result2;
     const obj16 = { style: tmp9.section, children: closure_14(TableRowGroup2, obj17) };
-    obj17 = { title: intl4.string(tmp7(tmp2[31])["j+eAMQ"]), hasIcons: false, children: closure_14(TableSwitchRow, obj18) };
-    const tmp7Result11 = tmp7(tmp2[34]);
-    TableRowGroup2 = tmp(tmp2[44]).TableRowGroup;
-    intl4 = tmp(tmp2[30]).intl;
+    obj17 = { title: intl4.string(tmp7(tmp2[29])["j+eAMQ"]), hasIcons: false, children: closure_14(TableSwitchRow, obj18) };
+    const tmp7Result11 = tmp7(tmp2[32]);
+    TableRowGroup2 = tmp(tmp2[39]).TableRowGroup;
+    intl4 = tmp(tmp2[28]).intl;
     obj18 = {
-      label: intl5.string(tmp7(tmp2[31]).uwMBDo),
+      label: intl5.string(tmp7(tmp2[29]).uwMBDo),
       value: first1,
       onValueChange(arg0) {
           currentUser(arg0);
           closure_11(first, arg0);
         }
     };
-    TableSwitchRow = tmp(tmp2[49]).TableSwitchRow;
-    intl5 = tmp(tmp2[30]).intl;
+    TableSwitchRow = tmp(tmp2[47]).TableSwitchRow;
+    intl5 = tmp(tmp2[28]).intl;
     items5[4] = closure_14(tmp7Result11, obj16);
     const obj19 = { style: tmp9.section, children: closure_14(Button, obj21) };
-    const tmp7Result12 = tmp7(tmp2[34]);
-    Button = tmp(tmp2[50]).Button;
+    const tmp7Result12 = tmp7(tmp2[32]);
+    Button = tmp(tmp2[48]).Button;
     if (isStreaming) {
       const obj20 = {
         size: "lg",
         variant: "destructive",
-        text: intl7.string(tmp7(tmp2[31]).OsS9Ll),
+        text: intl7.string(tmp7(tmp2[29]).OsS9Ll),
         onPress() {
-              const obj = user(callback[51]);
+              const obj = user(callback[49]);
               obj.stopScreenshare();
               const obj2 = guildPremiumTier(callback[15]);
               obj2.hideActionSheet(MobileGoLiveActionSheet_str);
             }
       };
-      intl7 = tmp(tmp2[30]).intl;
+      intl7 = tmp(tmp2[28]).intl;
       obj21 = obj20;
     } else {
       obj21 = {
         size: "lg",
         variant: "primary",
-        text: intl6.string(tmp7(tmp2[31])["3wwZ/Q"]),
+        text: intl6.string(tmp7(tmp2[29])["3wwZ/Q"]),
         onPress() {
               const obj = guildPremiumTier(callback[15]);
               obj.hideActionSheet(MobileGoLiveActionSheet_str);
-              const obj2 = user(callback[51]);
+              const obj2 = user(callback[49]);
               obj2.startStream();
             }
       };
-      intl6 = tmp(tmp2[30]).intl;
+      intl6 = tmp(tmp2[28]).intl;
     }
     obj22 = { startExpanded: true, children: closure_14(BottomSheetScrollView, obj23) };
     obj23 = { children: tmp19(SafeAreaPaddingView, obj7) };
@@ -1750,7 +386,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     return closure_14(AnalyticsLocationProvider, obj6);
   }
   preset = tmp10.PRESET_MOBILE_DEFAULT;
-}));
+});
 let result = size.fileFinishedImporting("modules/go_live/native/MobileGoLiveActionSheet.tsx");
 
 export default memoResult;
@@ -1760,6 +396,6 @@ export function showMobileGoLiveActionSheet(location_stack) {
   const obj = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: obj2 };
   ActionSheetActionCreatorsDefault;
   obj2 = { location_stack };
-  const tmp2 = asyncRequire(11689, dependencyMap.paths);
+  const tmp2 = asyncRequire(11882, dependencyMap.paths);
   openLazy(tmp2, MobileGoLiveActionSheet_str, obj);
 }

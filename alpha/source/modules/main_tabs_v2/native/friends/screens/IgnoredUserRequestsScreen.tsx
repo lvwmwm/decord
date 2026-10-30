@@ -1,172 +1,41 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18809
+// Function ID: 18810
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4947, 1389, 10684, 1084, 21, 558, 576, 7313, 7338, 18748, 504, 8708, 10690, 2]
+// Dependencies: [19, 4951, 1384, 10707, 1072, 21, 7320, 7345, 504, 18807, 8742, 10713, 2]
+// Exports: default
 
-// Module 18750 (IgnoredUserRequestsScreen)
+// Module 18809 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1084 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8708 */;
-import UserRowConstants from "UserRowConstants" /* 10684 */;
+import Constants from "Constants" /* 1072 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8742 */;
+import UserRowConstants from "UserRowConstants" /* 10707 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4947 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import RelationshipStore from "RelationshipStore" /* 4951 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
-
-let onPress;
 
 const UserRowModes = UserRowConstants.UserRowModes;
 const RelationshipTypes = Constants.RelationshipTypes;
 const jsx = Fragment.jsx;
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoredUserRequestsScreen(arg0) {
-  let analyticsLocations;
-  let mutableRelationships;
-  let stateFromStores;
-  let stateFromStoresArray;
-  let tmp11;
-  let tmp12;
-  let tmp14;
-  let tmp17;
-  let tmp5;
-  let tmp6;
-  let tmp9;
-  let obj = analyticsLocations(stateFromStores[7]);
-  const cResult = obj.c(17);
-  const tmp4 = stateFromStoresArray(stateFromStores[8]);
-  analyticsLocations = tmp4(stateFromStoresArray(stateFromStores[9]).FRIEND_REQUESTS).analyticsLocations;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [RelationshipStore];
-    const fn = function p() {
-      const obj = analyticsLocations(stateFromStores[10]);
-      return obj.getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).ignoredUserIds;
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp5 = items;
-    tmp6 = fn;
-  } else {
-    [tmp5, tmp6] = cResult;
-  }
-  const tmpResult = analyticsLocations(stateFromStores[11]);
-  stateFromStoresArray = tmpResult.useStateFromStoresArray(tmp5, tmp6);
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [UserStore];
-    cResult[2] = items1;
-    tmp9 = items1;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] !== stateFromStoresArray) {
-    const fn2 = function y() {
-      let user;
-      const mapped = stateFromStoresArray.map((item) => user.getUser(item));
-      return mapped.filter((item) => null != item);
-    };
-    const items2 = [stateFromStoresArray];
-    cResult[3] = stateFromStoresArray;
-    cResult[4] = fn2;
-    cResult[5] = items2;
-    tmp12 = items2;
-    tmp11 = fn2;
-  } else {
-    tmp11 = cResult[4];
-    tmp12 = cResult[5];
-  }
-  const tmpResult2 = analyticsLocations(stateFromStores[11]);
-  stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp11, tmp12);
-  if (cResult[6] !== analyticsLocations) {
-    class U {
-      constructor(id) {
-        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
-        showUserProfileActionSheetDefault(obj);
-      }
-    }
-    cResult[6] = analyticsLocations;
-    cResult[7] = U;
-  } else {
-    class U {
-      constructor(id) {
-        const obj = { userId: id.id, localUser: id, sourceAnalyticsLocations: analyticsLocations };
-        showUserProfileActionSheetDefault(obj);
-      }
-    }
-  }
-  U = tmp13;
-  if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
-    class N {
-      constructor() {
+const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx");
 
-      }
-    }
-    cResult[8] = N;
-    tmp14 = N;
-  } else {
-    class N {
-      constructor() {
-
-      }
-    }
-  }
-  if (cResult[9] === tmp13) {
-    class N {
-      constructor() {
-
-      }
-    }
-    if (0 !== stateFromStores.length) {
-      class N {
-        constructor() {
-
-        }
-      }
-      if (cResult[14] === tmp15) {
-        class N {
-          constructor() {
-
-          }
-        }
-        return tmp17;
-      }
-      const tmp19 = jsx(analyticsLocations(stateFromStores[13]).UsersFastList, { getItemProps: tmp15, getSectionProps: tmp14, sections: tmp16 });
-      cResult[14] = tmp15;
-      cResult[15] = tmp16;
-      cResult[16] = tmp19;
-      tmp17 = tmp19;
-    } else {
-      class N {
-        constructor() {
-
-        }
-      }
-    }
-  }
-  class P {
-    constructor(arg0) {
-      const element = { type: "user", props: obj };
-      return element;
-    }
-  }
-  cResult[9] = tmp13;
-  cResult[10] = stateFromStores;
-  cResult[11] = P;
-}) : (function IgnoredUserRequestsScreen(navigation) {
+export default function IgnoredUserRequestsScreen(navigation) {
   let mutableRelationships;
   navigation = navigation.navigation;
   let stateFromStoresArray;
   let stateFromStores;
-  onPress = undefined;
-  const tmp2 = stateFromStoresArray(stateFromStores[8]);
-  const analyticsLocations = tmp2(stateFromStoresArray(stateFromStores[9]).FRIEND_REQUESTS).analyticsLocations;
-  let obj = analyticsLocations(stateFromStores[11]);
+  let onPress;
+  const tmp2 = stateFromStoresArray(stateFromStores[6]);
+  const analyticsLocations = tmp2(stateFromStoresArray(stateFromStores[7]).FRIEND_REQUESTS).analyticsLocations;
+  let obj = analyticsLocations(stateFromStores[8]);
   const items = [RelationshipStore];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const obj = analyticsLocations(stateFromStores[10]);
+    const obj = analyticsLocations(stateFromStores[9]);
     return obj.getPendingRelationshipIds(mutableRelationships.getMutableRelationships()).ignoredUserIds;
   });
   const items1 = [UserStore];
   const items2 = [stateFromStoresArray];
-  const obj2 = analyticsLocations(stateFromStores[11]);
+  const obj2 = analyticsLocations(stateFromStores[8]);
   const tmp = stateFromStores;
   stateFromStores = obj2.useStateFromStores(items1, () => {
     let user;
@@ -185,11 +54,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function IgnoredUserR
   const tmp3 = analyticsLocations;
   if (0 !== stateFromStores.length) {
     const items5 = [stateFromStores.length];
-    return jsx(tmp3(tmp[13]).UsersFastList, { getItemProps: tmp7, getSectionProps: callback1, sections: items5 });
+    return jsx(tmp3(tmp[11]).UsersFastList, { getItemProps: tmp7, getSectionProps: callback1, sections: items5 });
   } else {
     navigation.goBack();
   }
-});
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/friends/screens/IgnoredUserRequestsScreen.tsx");
-
-export default tmp2;
+};

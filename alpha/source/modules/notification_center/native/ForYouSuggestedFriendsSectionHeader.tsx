@@ -1,79 +1,31 @@
-// Module ID: 18395
-// Function ID: 18396
+// Module ID: 18454
+// Function ID: 18455
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 5005, 587, 558, 576, 1125, 5271, 2]
+// Dependencies: [19, 17, 21, 5009, 575, 5619, 1114, 2]
+// Exports: default
 
-// Module 18395 (ForYouSuggestedFriendsSectionHeader)
+// Module 18454 (ForYouSuggestedFriendsSectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import Text_Text from "Text/Text" /* 5271 */;
+import nativeDefault from "native" /* 575 */;
+import intl2 from "intl" /* 1114 */;
+import Text_Text from "Text/Text" /* 5619 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-let obj3;
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
-let obj = { container: obj2, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: obj3 };
+const obj = { container: obj2, noDivider: { borderTopWidth: 0, marginTop: 0 }, text: { marginTop: nativeDefault.space.PX_16 } };
 obj2 = { borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: 12, marginBottom: 8, paddingHorizontal: 24, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
 createStyles = createStyles.createStyles;
-obj3 = { marginTop: nativeDefault.space.PX_16 };
+({ marginTop: nativeDefault.space.PX_16 });
 let closure_4 = createStyles(obj);
-let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouSuggestedFriendsSectionHeader(showDivider) {
-  const obj = react2;
-  const cResult = obj.c(9);
-  showDivider = showDivider.showDivider;
-  const tmp4 = closure_4();
-  if (cResult[0] === tmp4.container) {
-    let tmp6;
-    let tmp8;
-    let tmp10;
-    if (cResult[1] === (!showDivider && tmp4.noDivider)) {
-      tmp6 = cResult[2];
-    }
-    const _Symbol = Symbol;
-    const text = tmp4.text;
-    if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-      const intl = tmp(1125).intl;
-      const stringResult = intl.string(intl2.t["1uAmCw"]);
-      cResult[3] = stringResult;
-      tmp8 = stringResult;
-    } else {
-      tmp8 = cResult[3];
-    }
-    if (cResult[4] !== tmp4.text) {
-      const tmp12 = jsx(Text_Text.Text, { style: text, color: "text-muted", variant: "text-sm/semibold", children: tmp8 });
-      cResult[4] = tmp4.text;
-      cResult[5] = tmp12;
-      tmp10 = tmp12;
-    } else {
-      tmp10 = cResult[5];
-    }
-    if (cResult[6] === tmp6) {
-      let tmp13;
-      if (cResult[7] === tmp10) {
-        tmp13 = cResult[8];
-      }
-      return tmp13;
-    }
-    const tmp16 = <View style={tmp6}>{tmp10}</View>;
-    cResult[6] = tmp6;
-    cResult[7] = tmp10;
-    cResult[8] = tmp16;
-    tmp13 = tmp16;
-  }
-  const items = [tmp4.container, !showDivider && tmp4.noDivider];
-  cResult[0] = tmp4.container;
-  cResult[1] = !showDivider && tmp4.noDivider;
-  cResult[2] = items;
-  tmp6 = items;
-}) : (function ForYouSuggestedFriendsSectionHeader(showDivider) {
+const result = size.fileFinishedImporting("modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx");
+
+export default function ForYouSuggestedFriendsSectionHeader(showDivider) {
   let intl;
   showDivider = showDivider.showDivider;
   const tmp = closure_4();
@@ -87,7 +39,4 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function ForYouSugges
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <tmp3 style={items}>{null}</tmp3>;
-});
-const result = size.fileFinishedImporting("modules/notification_center/native/ForYouSuggestedFriendsSectionHeader.tsx");
-
-export default tmp4;
+};

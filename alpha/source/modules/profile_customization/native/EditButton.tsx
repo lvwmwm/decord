@@ -1,65 +1,22 @@
-// Module ID: 16352
-// Function ID: 16353
+// Module ID: 16405
+// Function ID: 16406
 // Name: EditButton
-// Dependencies: [19, 17, 21, 558, 576, 8014, 8379, 2]
+// Dependencies: [19, 17, 21, 8020, 8416, 2]
+// Exports: default
 
-// Module 16352 (EditButton)
+// Module 16405 (EditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react2 from "react" /* 576 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8379 */;
+import IconButton2 from "IconButton" /* 8020 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8416 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const IconButton2 = tmp(8014);
 const View = react_native.View;
 const jsx = Fragment.jsx;
-const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditButton(arg0) {
-  let accessibilityLabel;
-  let disabled;
-  let onPress;
-  let style;
-  let variant;
-  const obj = react2;
-  const cResult = obj.c(8);
-  ({ onPress, accessibilityLabel, style, variant, disabled } = arg0);
-  let str = "primary-overlay";
-  if (undefined !== variant) {
-    str = variant;
-  }
-  if (cResult[0] === accessibilityLabel) {
-    if (cResult[1] === disabled) {
-      if (cResult[2] === onPress) {
-        let tmp4;
-        if (cResult[3] === str) {
-          tmp4 = cResult[4];
-        }
-        if (cResult[5] === style) {
-          let tmp6;
-          if (cResult[6] === tmp4) {
-            tmp6 = cResult[7];
-          }
-          return tmp6;
-        }
-        const tmp9 = <View style={style}>{tmp4}</View>;
-        cResult[5] = style;
-        cResult[6] = tmp4;
-        cResult[7] = tmp9;
-        tmp6 = tmp9;
-      }
-    }
-  }
-  const IconButton = IconButton2.IconButton;
-  const tmp5 = <IconButton icon={AssetRegistryDefault} variant={str} size="sm" onPress={onPress} accessibilityLabel={accessibilityLabel} disabled={disabled} />;
-  cResult[0] = accessibilityLabel;
-  cResult[1] = disabled;
-  cResult[2] = onPress;
-  cResult[3] = str;
-  cResult[4] = tmp5;
-  tmp4 = tmp5;
-}) : (function EditButton(variant) {
+const result = size.fileFinishedImporting("modules/profile_customization/native/EditButton.tsx");
+
+export default function EditButton(variant) {
   let accessibilityLabel;
   let onPress;
   let style;
@@ -72,7 +29,4 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function EditButton
   ({ icon: AssetRegistryDefault, variant: str, size: "sm", onPress, accessibilityLabel, disabled });
   const IconButton = IconButton2.IconButton;
   return <View style={style}>{null}</View>;
-});
-const result = size.fileFinishedImporting("modules/profile_customization/native/EditButton.tsx");
-
-export default tmp3;
+};

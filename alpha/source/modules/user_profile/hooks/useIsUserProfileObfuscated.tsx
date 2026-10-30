@@ -1,91 +1,19 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14797
+// Function ID: 14798
 // Name: useIsUserProfileObfuscated
-// Dependencies: [7760, 558, 576, 504, 2]
+// Dependencies: [7765, 504, 2]
+// Exports: default
 
-// Module 14762 (useIsUserProfileObfuscated)
-import UserProfileStore from "UserProfileStore" /* 7760 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+// Module 14797 (useIsUserProfileObfuscated)
+import UserProfileStore from "UserProfileStore" /* 7765 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserProfileObfuscated(id) {
-  let first;
-  let tmp6;
-  _require = id;
-  const obj = require("react");
-  const cResult = obj.c(3);
-  const tmp = _require;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserProfileStore];
-    cResult[0] = items;
-    first = items;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] !== id.id) {
-    const fn = function l() {
-      return UserProfileStore.getUserProfile(id.id);
-    };
-    cResult[1] = id.id;
-    cResult[2] = fn;
-    tmp6 = fn;
-  } else {
-    tmp6 = cResult[2];
-  }
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(first, tmp6);
-  let bio;
-  if (stateFromStores != null) {
-    bio = stateFromStores.bio;
-  }
-  let tmp9 = "" === bio;
-  if (tmp9) {
-    let pronouns;
-    if (stateFromStores != null) {
-      pronouns = stateFromStores.pronouns;
-    }
-    tmp9 = "" === pronouns;
-  }
-  if (tmp9) {
-    let banner;
-    if (stateFromStores != null) {
-      banner = stateFromStores.banner;
-    }
-    tmp9 = undefined === banner;
-  }
-  if (tmp9) {
-    let accentColor;
-    if (stateFromStores != null) {
-      accentColor = stateFromStores.accentColor;
-    }
-    tmp9 = undefined === accentColor;
-  }
-  if (tmp9) {
-    tmp9 = id.flags === id.publicFlags;
-  }
-  if (tmp9) {
-    let badges;
-    if (stateFromStores != null) {
-      badges = stateFromStores.badges;
-    }
-    let tmp14 = null == badges;
-    if (!tmp14) {
-      let length;
-      if (stateFromStores != null) {
-        const badges1 = stateFromStores.badges;
-        if (badges1 != null) {
-          length = badges1.length;
-        }
-      }
-      tmp14 = 0 === length;
-    }
-    tmp9 = tmp14;
-  }
-  return tmp9;
-}) : (function useIsUserProfileObfuscated(flags) {
+const result = size.fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
+
+export default function useIsUserProfileObfuscated(flags) {
   _require = flags;
   const items = [UserProfileStore];
   const obj = require("get initialized");
@@ -138,7 +66,4 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIsUserP
     tmp3 = tmp8;
   }
   return tmp3;
-});
-const result = size.fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
-
-export default tmp2;
+};

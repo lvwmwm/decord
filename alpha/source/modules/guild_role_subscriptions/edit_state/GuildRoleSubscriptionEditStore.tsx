@@ -1,13 +1,13 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17148
+// Function ID: 17149
 // Name: GuildRoleSubscriptionEditStore
-// Dependencies: [570, 1271, 2]
+// Dependencies: [560, 1260, 2]
 
-// Module 17094 (GuildRoleSubscriptionEditStore)
-import module_570 from "module_570" /* 570 */;
+// Module 17148 (GuildRoleSubscriptionEditStore)
+import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
-let obj = module_570.create((arg0) => {
+let obj = module_560.create((arg0) => {
   let closure_0 = arg0;
   let obj = {
     listings: {},

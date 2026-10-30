@@ -1,0 +1,21 @@
+// Module ID: 1588
+// Function ID: 1589
+// Name: react
+// Dependencies: [19, 1547]
+// Exports: useCurrentRender
+
+// Module 1588 (react)
+import react2 from "react" /* 1547 */;
+import react from "react" /* 19 */;
+
+
+export function useCurrentRender(descriptors) {
+  let state;
+  ({ state, navigation } = descriptors);
+  descriptors = descriptors.descriptors;
+  const context = react.useContext(react2.CurrentRenderContext);
+  const tmp2 = context && navigation.isFocused();
+  if (tmp2) {
+    context.options = descriptors[state.routes[state.index].key].options;
+  }
+}

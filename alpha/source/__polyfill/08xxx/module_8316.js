@@ -1,116 +1,237 @@
 // Module ID: 8316
 // Function ID: 8317
-// Dependencies: [8285, 8275, 8268]
+// Dependencies: [8276, 8291, 8292, 8288, 8271]
 
 // Module 8316
-import _mod8268 from "module_8268" /* 8268 */;
-import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8275 */;
-import _modDef8285 from "module_8285" /* 8285 */;
+import _mod8271 from "module_8271" /* 8271 */;
+import _modDef8276 from "module_8276" /* 8276 */;
+import _modDef8288 from "module_8288" /* 8288 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 8291 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 8292 */;
 
-
-export default {
-  read(byteLength, arg1) {
-    let combined;
-    let combined1;
-    let combined2;
-    let combined3;
-    let combined4;
-    let items;
-    let num;
-    let str7;
-    const obj = {};
-    for (let num = 0; num < arg1.length; num = num + 1) {
-      let tmp = importDefault;
-      let obj2 = _modDef8285;
-      let tmp3 = require;
-      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
-      let tmp5 = _mod8268;
-      let getStringFromDataView = tmp5.getStringFromDataView;
-      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
-      let stringFromDataView = getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
-      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
-        let tmp23 = arg1[num];
-        let tmp24 = 4 <= longAt && tmp23 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
-        let tmp25;
-        if (tmp24) {
-          let tmpResult = tmp(8285);
-          let longAt1 = tmpResult.getLongAt(byteLength, tmp23 + tmp3(8275).PNG_CHUNK_DATA_OFFSET);
-          let obj3 = { value: longAt1, description: "" + longAt1 };
-          tmp25 = obj3;
-        }
-        obj["Pixels Per Unit X"] = tmp25;
-        let tmp27 = arg1[num];
-        let tmp28 = 8 <= longAt && tmp27 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
-        let tmp29;
-        if (tmp28) {
-          let tmpResult9 = tmp(8285);
-          let longAt2 = tmpResult9.getLongAt(byteLength, tmp27 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 4);
-          let obj4 = { value: longAt2, description: "" + longAt2 };
-          tmp29 = obj4;
-        }
-        obj["Pixels Per Unit Y"] = tmp29;
-        let tmp31 = arg1[num];
-        let tmp32 = 9 <= longAt && tmp31 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
-        let tmp33;
-        if (tmp32) {
-          let tmpResult10 = tmp(8285);
-          let byteAt = tmpResult10.getByteAt(byteLength, tmp31 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 8);
-          let obj5 = { value: byteAt, description: str7 };
-          str7 = "Unknown";
-          if (1 === byteAt) {
-            str7 = "meters";
+let obj = {
+  read(buffer, c5, arg2) {
+    let str11;
+    let str12;
+    let tmp16;
+    let obj = _modDef8276;
+    const byteOrder = obj.getByteOrder(buffer, c5);
+    const readIfd = get0thIfdOffset.readIfd;
+    get0thIfdOffset;
+    const IFD_TYPE_MPF = IFD_TYPE_0TH.IFD_TYPE_MPF;
+    const obj2 = get0thIfdOffset;
+    const ifd = readIfd(buffer, IFD_TYPE_MPF, c5, obj2.get0thIfdOffset(buffer, c5, byteOrder), byteOrder, arg2);
+    if (ifd.MPEntry) {
+      const items = [];
+      const _Math = Math;
+      let num13 = 0;
+      if (0 < Math.ceil(ifd.MPEntry.value.length / c3)) {
+        do {
+          let num16;
+          let num22;
+          let num35;
+          let num41;
+          items[num13] = {};
+          let value = ifd.MPEntry.value;
+          let result = num13 * c3;
+          let obj3 = _modDef8288;
+          let typeSize = obj3.getTypeSize("LONG");
+          if (byteOrder === _modDef8276.LITTLE_ENDIAN) {
+            let num17 = 0;
+            let num18 = 0;
+            let num19 = 0;
+            if (0 < typeSize) {
+              do {
+                num18 = num18 + (value[result + num17] << 8 * num17);
+                num17 = num17 + 1;
+                num19 = num18;
+              } while (num17 < typeSize);
+            }
+            num16 = num19;
+          } else {
+            let num14 = 0;
+            let num15 = 0;
+            num16 = 0;
+            if (0 < typeSize) {
+              do {
+                num15 = num15 + (value[result + num14] << 8 * (typeSize - 1 - num14));
+                num14 = num14 + 1;
+                num16 = num15;
+              } while (num14 < typeSize);
+            }
           }
-          tmp33 = obj5;
-        }
-        obj["Pixel Units"] = tmp33;
-      } else if (stringFromDataView === tmp3(8275).TYPE_TIME) {
-        let tmp35 = arg1[num];
-        let tmp9 = 7 <= longAt && tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
-        let tmp10;
-        if (tmp9) {
-          let tmpResult11 = tmp(8285);
-          let shortAt = tmpResult11.getShortAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET);
-          let tmpResult12 = tmp(8285);
-          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 2);
-          let tmpResult13 = tmp(8285);
-          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 3);
-          let tmpResult14 = tmp(8285);
-          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 4);
-          let tmpResult15 = tmp(8285);
-          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 5);
-          let tmpResult16 = tmp(8285);
-          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp35 + tmp3(8275).PNG_CHUNK_DATA_OFFSET + 6);
-          let obj6 = { value: items, description: "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - ("" + byteAt5).length) + byteAt5 };
-          items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
-          let repeat = "0".repeat;
-          let _HermesInternal = HermesInternal;
-          combined = "" + "0".repeat(4 - ("" + shortAt).length) + shortAt;
-          let repeat2 = "0".repeat;
-          let _HermesInternal2 = HermesInternal;
-          let repeat3 = "0".repeat;
-          combined1 = "" + "0".repeat(2 - ("" + byteAt1).length) + byteAt1;
-          let _HermesInternal3 = HermesInternal;
-          let repeat4 = "0".repeat;
-          combined2 = "" + "0".repeat(2 - ("" + byteAt2).length) + byteAt2;
-          let _HermesInternal4 = HermesInternal;
-          let repeat5 = "0".repeat;
-          combined3 = "" + "0".repeat(2 - ("" + byteAt3).length) + byteAt3;
-          let _HermesInternal5 = HermesInternal;
-          let repeat6 = "0".repeat;
-          combined4 = "" + "0".repeat(2 - ("" + byteAt4).length) + byteAt4;
-          let _HermesInternal6 = HermesInternal;
-          let _HermesInternal7 = HermesInternal;
-          let str = "";
-          let str2 = "-";
-          let str3 = "-";
-          let str4 = " ";
-          let str5 = ":";
-          let str6 = ":";
-          tmp10 = obj6;
-        }
-        obj["Modify Date"] = tmp10;
+          let items1 = [num16 >> 31 & 1, num16 >> 30 & 1, num16 >> 29 & 1];
+          let items2 = [];
+          let tmp12 = items[num13];
+          if (items1[0]) {
+            let arr = items2.push("Dependent Parent Image");
+          }
+          if (items1[1]) {
+            let arr2 = items2.push("Dependent Child Image");
+          }
+          if (items1[2]) {
+            let arr3 = items2.push("Representative Image");
+          }
+          let obj4 = { value: items1, description: tmp16 };
+          tmp16 = items2.join(", ") || "None";
+          tmp12.ImageFlags = obj4;
+          let tmp18 = num16 >> 24 & 7;
+          let obj5 = { value: tmp18, description: str11 };
+          str11 = "Unknown";
+          let tmp17 = items[num13];
+          if (0 === tmp18) {
+            str11 = "JPEG";
+          }
+          tmp17.ImageFormat = obj5;
+          let tmp20 = 16777215 & num16;
+          let obj6 = { value: tmp20, description: str12 };
+          str12 = { 196608: "Baseline MP Primary Image", 65537: "Large Thumbnail (VGA equivalent)", 65538: "Large Thumbnail (Full HD equivalent)", 131073: "Multi-Frame Image (Panorama)", 131074: "Multi-Frame Image (Disparity)", 131075: "Multi-Frame Image (Multi-Angle)", 0: "Undefined" }[tmp20];
+          let tmp19 = items[num13];
+          if (!str12) {
+            str12 = "Unknown";
+          }
+          tmp19.ImageType = obj6;
+          let value2 = ifd.MPEntry.value;
+          let sum = num13 * c3 + 4;
+          let obj7 = _modDef8288;
+          let typeSize1 = obj7.getTypeSize("LONG");
+          if (byteOrder === _modDef8276.LITTLE_ENDIAN) {
+            let num23 = 0;
+            let num24 = 0;
+            let num25 = 0;
+            if (0 < typeSize1) {
+              do {
+                num24 = num24 + (value2[sum + num23] << 8 * num23);
+                num23 = num23 + 1;
+                num25 = num24;
+              } while (num23 < typeSize1);
+            }
+            num22 = num25;
+          } else {
+            let num20 = 0;
+            let num21 = 0;
+            num22 = 0;
+            if (0 < typeSize1) {
+              do {
+                num21 = num21 + (value2[sum + num20] << 8 * (typeSize1 - 1 - num20));
+                num20 = num20 + 1;
+                num22 = num21;
+              } while (num20 < typeSize1);
+            }
+          }
+          let obj8 = { value: num22, description: "" + num22 };
+          items[num13].ImageSize = obj8;
+          let num26 = 0;
+          if (0 !== num13) {
+            let num29;
+            let value3 = ifd.MPEntry.value;
+            let sum1 = num13 * c3 + 8;
+            let obj15 = _modDef8288;
+            let typeSize2 = obj15.getTypeSize("LONG");
+            if (byteOrder === _modDef8276.LITTLE_ENDIAN) {
+              let num30 = 0;
+              let num31 = 0;
+              let num32 = 0;
+              if (0 < typeSize2) {
+                do {
+                  num31 = num31 + (value3[sum1 + num30] << 8 * num30);
+                  num30 = num30 + 1;
+                  num32 = num31;
+                } while (num30 < typeSize2);
+              }
+              num29 = num32;
+            } else {
+              let num27 = 0;
+              let num28 = 0;
+              num29 = 0;
+              if (0 < typeSize2) {
+                do {
+                  num28 = num28 + (value3[sum1 + num27] << 8 * (typeSize2 - 1 - num27));
+                  num27 = num27 + 1;
+                  num29 = num28;
+                } while (num27 < typeSize2);
+              }
+            }
+            num26 = num29 + c5;
+          }
+          let obj9 = { value: num26, description: "" + num26 };
+          items[num13].ImageOffset = obj9;
+          let value4 = ifd.MPEntry.value;
+          let sum2 = num13 * c3 + 12;
+          let obj10 = _modDef8288;
+          let typeSize3 = obj10.getTypeSize("SHORT");
+          if (byteOrder === _modDef8276.LITTLE_ENDIAN) {
+            let num36 = 0;
+            let num37 = 0;
+            let num38 = 0;
+            if (0 < typeSize3) {
+              do {
+                num37 = num37 + (value4[sum2 + num36] << 8 * num36);
+                num36 = num36 + 1;
+                num38 = num37;
+              } while (num36 < typeSize3);
+            }
+            num35 = num38;
+          } else {
+            let num33 = 0;
+            let num34 = 0;
+            num35 = 0;
+            if (0 < typeSize3) {
+              do {
+                num34 = num34 + (value4[sum2 + num33] << 8 * (typeSize3 - 1 - num33));
+                num33 = num33 + 1;
+                num35 = num34;
+              } while (num33 < typeSize3);
+            }
+          }
+          let obj11 = { value: num35, description: "" + num35 };
+          items[num13].DependentImage1EntryNumber = obj11;
+          let value5 = ifd.MPEntry.value;
+          let sum3 = num13 * c3 + 14;
+          let obj12 = _modDef8288;
+          let typeSize4 = obj12.getTypeSize("SHORT");
+          if (byteOrder === _modDef8276.LITTLE_ENDIAN) {
+            let num42 = 0;
+            let num43 = 0;
+            let num44 = 0;
+            if (0 < typeSize4) {
+              do {
+                num43 = num43 + (value5[sum3 + num42] << 8 * num42);
+                num42 = num42 + 1;
+                num44 = num43;
+              } while (num42 < typeSize4);
+            }
+            num41 = num44;
+          } else {
+            let num39 = 0;
+            let num40 = 0;
+            num41 = 0;
+            if (0 < typeSize4) {
+              do {
+                num40 = num40 + (value5[sum3 + num39] << 8 * (typeSize4 - 1 - num39));
+                num39 = num39 + 1;
+                num41 = num40;
+              } while (num39 < typeSize4);
+            }
+          }
+          let obj13 = { value: num41, description: "" + num41 };
+          items[num13].DependentImage2EntryNumber = obj13;
+          buffer = buffer.buffer;
+          items[num13].image = buffer.slice(num26, num26 + num22);
+          let obj14 = _mod8271;
+          let deferInitResult = obj14.deferInit(items[num13], "base64", function() {
+            const obj = _mod8271;
+            return obj.getBase64Image(this.image);
+          });
+          num13 = num13 + 1;
+          let _Math2 = Math;
+        } while (num13 < Math.ceil(ifd.MPEntry.value.length / c3));
       }
+      ifd.Images = items;
     }
-    return obj;
+    return ifd;
   }
 };
+let c3 = 16;
+
+export default obj;

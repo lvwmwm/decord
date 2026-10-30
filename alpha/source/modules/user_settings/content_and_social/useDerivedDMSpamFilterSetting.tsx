@@ -1,73 +1,23 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16688
+// Function ID: 16689
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1389, 4835, 558, 576, 4833, 504, 5682, 5689, 1208, 2]
+// Dependencies: [1384, 4836, 4834, 504, 5688, 5695, 1197, 2]
+// Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 16635 (useDerivedDMSpamFilterSetting)
+// Module 16688 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
-import react from "react" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1208 */;
-import UserSettings from "UserSettings" /* 4833 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 4835 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5682 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5689 */;
-import UserStore from "UserStore" /* 1389 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1197 */;
+import UserSettings from "UserSettings" /* 4834 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4836 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5688 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5695 */;
+import UserStore from "UserStore" /* 1384 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = DMSafetyConstants.ExplicitContentFilterToDmSpamFilterV2;
-const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerivedDmSpamFilterSettingValue() {
-  let currentUser;
-  let tmp6;
-  let tmp7;
-  const obj = react;
-  const cResult = obj.c(4);
-  const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
-  let setting = DmSpamFilterV2.useSetting();
-  const ExplicitContentFilter = UserSettings.ExplicitContentFilter;
-  const setting1 = ExplicitContentFilter.useSetting();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
-    const fn = function l() {
-      return currentUser.getCurrentUser();
-    };
-    cResult[0] = items;
-    cResult[1] = fn;
-    tmp6 = items;
-    tmp7 = fn;
-  } else {
-    [tmp6, tmp7] = cResult;
-  }
-  const tmpResult = get_initialized;
-  const stateFromStores = tmpResult.useStateFromStores(tmp6, tmp7);
-  const tmpResult2 = RegionalFeatureConfigUtils;
-  const isSettingTeenByDefault = tmpResult2.useIsSettingTeenByDefault(tmp(5689).SettingsDefaultFeature.SPAM_FILTERS);
-  if (setting === preloaded_user_settings.DmSpamFilterV2.DEFAULT_UNSET) {
-    let FRIENDS_AND_NON_FRIENDS;
-    let nsfwAllowed;
-    if (stateFromStores != null) {
-      nsfwAllowed = stateFromStores.nsfwAllowed;
-    }
-    if (false === nsfwAllowed) {
-      if (isSettingTeenByDefault) {
-        FRIENDS_AND_NON_FRIENDS = tmp(1208).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
-      }
-      setting = FRIENDS_AND_NON_FRIENDS;
-    }
-    if (cResult[2] !== setting1) {
-      let NON_FRIENDS = closure_3.get(setting1);
-      if (NON_FRIENDS == null) {
-        NON_FRIENDS = tmp(1208).DmSpamFilterV2.NON_FRIENDS;
-      }
-      cResult[2] = setting1;
-      cResult[3] = NON_FRIENDS;
-      FRIENDS_AND_NON_FRIENDS = NON_FRIENDS;
-    } else {
-      FRIENDS_AND_NON_FRIENDS = cResult[3];
-    }
-  }
-  return setting;
-}) : (function useDerivedDmSpamFilterSettingValue() {
+const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
+
+export function useDerivedDmSpamFilterSettingValue() {
   let currentUser;
   const DmSpamFilterV2 = UserSettings.DmSpamFilterV2;
   let setting = DmSpamFilterV2.useSetting();
@@ -86,17 +36,14 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useDerived
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        NON_FRIENDS = tmp(1208).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        NON_FRIENDS = tmp(1197).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = NON_FRIENDS;
     }
     NON_FRIENDS = closure_3.get(setting1);
     if (NON_FRIENDS == null) {
-      NON_FRIENDS = tmp(1208).DmSpamFilterV2.NON_FRIENDS;
+      NON_FRIENDS = tmp(1197).DmSpamFilterV2.NON_FRIENDS;
     }
   }
   return setting;
-});
-const result = size.fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");
-
-export const useDerivedDmSpamFilterSettingValue = tmp2;
+}

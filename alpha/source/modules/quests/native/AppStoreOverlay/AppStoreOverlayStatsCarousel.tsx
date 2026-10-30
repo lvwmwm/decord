@@ -1,23 +1,22 @@
-// Module ID: 14583
-// Function ID: 14584
+// Module ID: 14616
+// Function ID: 14617
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 587, 5005, 14584, 1125, 14585, 558, 576, 5271, 1381, 5334, 7850, 7859, 2]
+// Dependencies: [19, 17, 21, 575, 5009, 14617, 1114, 14618, 5619, 1376, 5298, 7855, 7864, 2]
+// Exports: default
 
-// Module 14583 (AppStoreOverlayStatsCarousel)
-import react2 from "react" /* 576 */;
-import nativeDefault from "native" /* 587 */;
-import intl2 from "intl" /* 1125 */;
-import PlatformUtils from "PlatformUtils" /* 1381 */;
-import Text_Text from "Text/Text" /* 5271 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5334 */;
-import AnalyticsActions from "AnalyticsActions" /* 7850 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14584 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14585 */;
+// Module 14616 (AppStoreOverlayStatsCarousel)
+import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1114 */;
+import PlatformUtils from "PlatformUtils" /* 1376 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5298 */;
+import Text_Text from "Text/Text" /* 5619 */;
+import AnalyticsActions from "AnalyticsActions" /* 7855 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14617 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14618 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5005 */;
-import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
+import createStyles_mod from "createStyles" /* 5009 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -33,42 +32,59 @@ let obj3;
 let obj4;
 let obj5;
 let size;
-function getStatCardContent(stat) {
+function AppStoreOverlayStatCardItem(onRatingPress) {
+  let accessibilityLabel;
+  let expanded;
   let num2;
+  let obj6;
+  let ratingCount;
+  let secondaryContent;
+  let secondaryText;
+  let stat;
+  let stringResult;
+  let tmp24Result2;
+  let tmp6;
+  ({ stat, expanded } = onRatingPress);
+  if (expanded === undefined) {
+    expanded = false;
+  }
+  onRatingPress = onRatingPress.onRatingPress;
+  const tmp = closure_11();
   const type = stat.type;
   if ("rating" === type) {
     let num = stat.maxRating;
     if (num == null) {
       num = 5;
     }
-    const obj4 = AppStoreOverlayStatCardUtils;
-    const result = obj4.formatAppStoreRatingValue(stat.rating, intl2.intl.currentLocale);
+    const obj3 = AppStoreOverlayStatCardUtils;
+    const result = obj3.formatAppStoreRatingValue(stat.rating, intl3.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      const tmp11Result = AppStoreOverlayStatCardUtils;
-      result1 = tmp11Result.formatAppStoreRatingCount(stat.ratingCount, tmp11(1125).intl.currentLocale);
+      const tmp9Result = AppStoreOverlayStatCardUtils;
+      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1114).intl.currentLocale);
     }
-    const tmp11Result2 = AppStoreOverlayStatCardUtils;
-    const appStoreStarFillAmounts = tmp11Result2.getAppStoreStarFillAmounts(stat.rating, num);
-    const intl = tmp11(1125).intl;
+    const tmp9Result2 = AppStoreOverlayStatCardUtils;
+    const appStoreStarFillAmounts = tmp9Result2.getAppStoreStarFillAmounts(stat.rating, num);
+    const intl = tmp9(1114).intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj2 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
+    const obj4 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
     num2 = stat.ratingCount;
-    const prop = tmp11(1125).t["/0p2sz"];
+    const prop = tmp9(1114).t["/0p2sz"];
     if (num2 == null) {
       num2 = 0;
     }
-    const obj5 = { accessibilityLabel: formatToPlainString(prop, obj2), primaryText: result, secondaryContent: metroImportDefault(AppStoreOverlayStarRatingDefault, obj6), ratingCount: result1 };
-    return obj5;
+    const obj5 = { accessibilityLabel: formatToPlainString(prop, obj4), primaryText: result, secondaryContent: metroImportDefault(AppStoreOverlayStarRatingDefault, obj6), ratingCount: result1 };
+    tmp6 = obj5;
+    obj6 = { fillAmounts: appStoreStarFillAmounts };
   } else if ("age" === type) {
     const _HermesInternal3 = HermesInternal;
-    ({ ageRating: obj3.primaryText, ageRatingLabel: obj3.secondaryText } = stat);
+    ({ ageRating: obj2.primaryText, ageRatingLabel: obj2.secondaryText } = stat);
+    tmp6 = { accessibilityLabel: "" + stat.label + ", " + stat.ageRating, primaryText: null, secondaryText: null };
     const obj7 = { accessibilityLabel: "" + stat.label + ", " + stat.ageRating, primaryText: null, secondaryText: null };
-    return obj7;
   } else if ("chart" === type) {
     let combined;
-    const obj = AppStoreOverlayStatCardUtils;
-    const result2 = obj.formatAppStoreChartRank(stat.rank);
+    const obj14 = AppStoreOverlayStatCardUtils;
+    const result2 = obj14.formatAppStoreChartRank(stat.rank);
     if (null != stat.category) {
       const _HermesInternal2 = HermesInternal;
       combined = "" + stat.label + ", " + result2 + ", " + stat.category;
@@ -76,8 +92,57 @@ function getStatCardContent(stat) {
       const _HermesInternal = HermesInternal;
       combined = "" + stat.label + ", " + result2;
     }
-    return { accessibilityLabel: combined, primaryText: result2, secondaryText: stat.category };
+    tmp6 = { accessibilityLabel: combined, primaryText: result2, secondaryText: stat.category };
+    const obj = { accessibilityLabel: combined, primaryText: result2, secondaryText: stat.category };
   }
+  ({ accessibilityLabel, secondaryText, secondaryContent, ratingCount } = tmp6);
+  let tmp17 = "rating" === stat.type;
+  const primaryText = tmp6.primaryText;
+  if (tmp17) {
+    tmp17 = null != onRatingPress;
+  }
+  const items = [tmp.statCard, ];
+  if (expanded) {
+    expanded = tmp.statCardExpanded;
+  }
+  items[1] = expanded;
+  const items1 = [stat.label, " ", ];
+  let str9 = "";
+  const Text = Text_Text.Text;
+  const tmp20 = React4;
+  if (null != ratingCount) {
+    const _HermesInternal4 = HermesInternal;
+    str9 = "(" + ratingCount + ")";
+  }
+  items1[2] = str9;
+  const items2 = [metroImportAll(Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
+  let tmp24Result = null != secondaryContent || null != secondaryText;
+  if (tmp24Result) {
+    const obj8 = { style: tmp.secondaryRow, children: secondaryContent };
+    const tmp26 = metroRequire;
+    if (null == secondaryContent) {
+      const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
+      secondaryContent = tmp24(tmp21(5619).Text, obj9);
+    }
+    tmp24Result = tmp24(tmp26, obj8);
+  }
+  items2[2] = tmp24Result;
+  const tmp19Result = metroImportAll(tmp20, { children: items2 });
+  if (tmp17) {
+    const obj10 = { style: items, onPress: onRatingPress, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityHint: stringResult, children: tmp19Result };
+    stringResult = undefined;
+    const tmp21Result = PlatformUtils;
+    const tmp30 = React3;
+    if (tmp21Result.isIOS()) {
+      const intl2 = tmp21(1114).intl;
+      stringResult = intl2.string(tmp21(1114).t.quJD0Y);
+    }
+    tmp24Result2 = tmp24(tmp30, obj10);
+  } else {
+    const obj11 = { style: items, accessible: true, accessibilityRole: "text", accessibilityLabel, children: tmp19Result };
+    tmp24Result2 = tmp24(metroRequire, obj11);
+  }
+  return tmp24Result2;
 }
 ({ Pressable: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -91,504 +156,14 @@ size = { width: 130, height: 92, borderRadius: nativeDefault.space.PX_16, backgr
 obj4 = { flexDirection: "row", gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj5 = { height: nativeDefault.space.PX_16, justifyContent: "center" };
 let closure_11 = createStyles(obj);
-let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayStatCardItem(arg0) {
-  let accessibilityLabel;
-  let expanded;
-  let items;
-  let items1;
-  let onRatingPress;
-  let primaryText;
-  let ratingCount;
-  let secondaryContent;
-  let secondaryText;
-  let stat;
-  let tmp21Result;
-  let tmp5;
-  const obj = react2;
-  const cResult = obj.c(28);
-  ({ stat, expanded, onRatingPress } = arg0);
-  let statCardExpanded = undefined !== expanded && expanded;
-  const tmp4 = closure_11();
-  if (cResult[0] !== stat) {
-    const tmp7 = getStatCardContent(stat);
-    cResult[0] = stat;
-    cResult[1] = tmp7;
-    tmp5 = tmp7;
-  } else {
-    tmp5 = cResult[1];
-  }
-  ({ accessibilityLabel, primaryText, secondaryText, secondaryContent, ratingCount } = tmp5);
-  const tmp8 = "rating" === stat.type && null != onRatingPress;
-  if (statCardExpanded) {
-    statCardExpanded = tmp4.statCardExpanded;
-  }
-  if (cResult[2] === tmp4.statCard) {
-    let tmp10;
-    if (cResult[3] === statCardExpanded) {
-      tmp10 = cResult[4];
-    }
-    let str = "";
-    if (null != ratingCount) {
-      const _HermesInternal = HermesInternal;
-      str = "(" + ratingCount + ")";
-    }
-    if (cResult[5] === stat.label) {
-      let tmp13;
-      let tmp16;
-      if (cResult[6] === str) {
-        tmp13 = cResult[7];
-      }
-      if (cResult[8] !== primaryText) {
-        const obj2 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText };
-        const tmp18 = metroImportDefault(Text_Text.Text, obj2);
-        cResult[8] = primaryText;
-        cResult[9] = tmp18;
-        tmp16 = tmp18;
-      } else {
-        tmp16 = cResult[9];
-      }
-      if (cResult[10] === secondaryContent) {
-        if (cResult[11] === secondaryText) {
-          let tmp19;
-          if (cResult[12] === tmp4.secondaryRow) {
-            tmp19 = cResult[13];
-          }
-          if (cResult[14] === tmp13) {
-            if (cResult[15] === tmp16) {
-              let tmp24;
-              let tmp28;
-              if (cResult[16] === tmp19) {
-                tmp24 = cResult[17];
-              }
-              if (tmp8) {
-                let tmp33;
-                const _Symbol = Symbol;
-                if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
-                  let stringResult;
-                  const tmpResult = PlatformUtils;
-                  if (tmpResult.isIOS()) {
-                    const intl = tmp(1125).intl;
-                    stringResult = intl.string(tmp(1125).t.quJD0Y);
-                  }
-                  cResult[18] = stringResult;
-                  tmp33 = stringResult;
-                } else {
-                  tmp33 = cResult[18];
-                }
-                if (cResult[19] === accessibilityLabel) {
-                  if (cResult[20] === tmp24) {
-                    if (cResult[21] === tmp10) {
-                      let tmp35;
-                      if (cResult[22] === onRatingPress) {
-                        tmp35 = cResult[23];
-                      }
-                      tmp28 = tmp35;
-                    }
-                  }
-                }
-                const obj3 = { style: tmp10, onPress: onRatingPress, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityHint: tmp33, children: tmp24 };
-                const tmp38 = metroImportDefault(React3, obj3);
-                cResult[19] = accessibilityLabel;
-                cResult[20] = tmp24;
-                cResult[21] = tmp10;
-                cResult[22] = onRatingPress;
-                cResult[23] = tmp38;
-                tmp35 = tmp38;
-              } else {
-                if (cResult[24] === accessibilityLabel) {
-                  if (cResult[25] === tmp24) {
-                    if (cResult[26] === tmp10) {
-                      tmp28 = cResult[27];
-                    }
-                  }
-                }
-                const obj4 = { style: tmp10, accessible: true, accessibilityRole: "text", accessibilityLabel, children: tmp24 };
-                const tmp31 = metroImportDefault(metroRequire, obj4);
-                cResult[24] = accessibilityLabel;
-                cResult[25] = tmp24;
-                cResult[26] = tmp10;
-                cResult[27] = tmp31;
-                tmp28 = tmp31;
-              }
-              return tmp28;
-            }
-          }
-          const obj5 = { children: items };
-          items = [tmp13, tmp16, tmp19];
-          const tmp27 = metroImportAll(React4, obj5);
-          cResult[14] = tmp13;
-          cResult[15] = tmp16;
-          cResult[16] = tmp19;
-          cResult[17] = tmp27;
-          tmp24 = tmp27;
-        }
-      }
-      let tmp21Result2 = null != secondaryContent || null != secondaryText;
-      if (tmp21Result2) {
-        const obj6 = { style: tmp4.secondaryRow, children: tmp21Result };
-        tmp21Result = secondaryContent;
-        const tmp22 = metroRequire;
-        if (null == secondaryContent) {
-          const obj7 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-          tmp21Result = tmp21(tmp(5271).Text, obj7);
-        }
-        tmp21Result2 = tmp21(tmp22, obj6);
-      }
-      cResult[10] = secondaryContent;
-      cResult[11] = secondaryText;
-      cResult[12] = tmp4.secondaryRow;
-      cResult[13] = tmp21Result2;
-      tmp19 = tmp21Result2;
-    }
-    const obj8 = { variant: "text-xs/semibold", color: "text-subtle", children: items1 };
-    items1 = [stat.label, " ", str];
-    const tmp15 = metroImportAll(Text_Text.Text, obj8);
-    cResult[5] = stat.label;
-    cResult[6] = str;
-    cResult[7] = tmp15;
-    tmp13 = tmp15;
-  }
-  const items2 = [tmp4.statCard, statCardExpanded];
-  cResult[2] = tmp4.statCard;
-  cResult[3] = statCardExpanded;
-  cResult[4] = items2;
-  tmp10 = items2;
-}) : (function AppStoreOverlayStatCardItem(onRatingPress) {
-  let accessibilityLabel;
-  let expanded;
-  let ratingCount;
-  let secondaryContent;
-  let secondaryText;
-  let stat;
-  let stringResult;
-  let tmp10Result2;
-  ({ stat, expanded } = onRatingPress);
-  if (expanded === undefined) {
-    expanded = false;
-  }
-  onRatingPress = onRatingPress.onRatingPress;
-  const tmp = closure_11();
-  const tmp2 = getStatCardContent(stat);
-  ({ accessibilityLabel, secondaryText, secondaryContent, ratingCount } = tmp2);
-  let tmp3 = "rating" === stat.type;
-  const primaryText = tmp2.primaryText;
-  if (tmp3) {
-    tmp3 = null != onRatingPress;
-  }
-  const items = [tmp.statCard, ];
-  if (expanded) {
-    expanded = tmp.statCardExpanded;
-  }
-  items[1] = expanded;
-  const items1 = [stat.label, " ", ];
-  let str = "";
-  const Text = Text_Text.Text;
-  const tmp6 = React4;
-  if (null != ratingCount) {
-    const _HermesInternal = HermesInternal;
-    str = "(" + ratingCount + ")";
-  }
-  items1[2] = str;
-  const items2 = [metroImportAll(Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
-  let tmp10Result = null != secondaryContent || null != secondaryText;
-  if (tmp10Result) {
-    const obj = { style: tmp.secondaryRow, children: secondaryContent };
-    const tmp12 = metroRequire;
-    if (null == secondaryContent) {
-      const obj2 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp10(tmp7(5271).Text, obj2);
-    }
-    tmp10Result = tmp10(tmp12, obj);
-  }
-  items2[2] = tmp10Result;
-  const tmp5Result = metroImportAll(tmp6, { children: items2 });
-  if (tmp3) {
-    const obj3 = { style: items, onPress: onRatingPress, accessible: true, accessibilityRole: "button", accessibilityLabel, accessibilityHint: stringResult, children: tmp5Result };
-    stringResult = undefined;
-    const tmp16 = React3;
-    const tmp7Result = PlatformUtils;
-    if (tmp7Result.isIOS()) {
-      const intl = tmp7(1125).intl;
-      stringResult = intl.string(tmp7(1125).t.quJD0Y);
-    }
-    tmp10Result2 = tmp10(tmp16, obj3);
-  } else {
-    const obj4 = { style: items, accessible: true, accessibilityRole: "text", accessibilityLabel, children: tmp5Result };
-    tmp10Result2 = tmp10(metroRequire, obj4);
-  }
-  return tmp10Result2;
-});
-ReactCompilerGating = ReactCompilerGating_mod;
-let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOverlayStatsCarousel(onCarouselScroll) {
-  let first;
-  let length;
-  let onRatingPress;
-  let ref;
-  let stats;
-  let tmp8;
-  let tmp9;
-  let tmp = onRatingPress;
-  let tmp2 = dependencyMap;
-  let obj = onRatingPress(576);
-  const cResult = obj.c(34);
-  ({ stats, onRatingPress } = onCarouselScroll);
-  onCarouselScroll = onCarouselScroll.onCarouselScroll;
-  closure_11();
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const obj2 = { disallowInterruption: true };
-    let num = 0;
-    cResult[0] = obj2;
-    first = obj2;
-  } else {
-    first = cResult[0];
-  }
-  const tmpResult = tmp(5334);
-  const nativeGesture = tmpResult.useNativeGesture(first);
-  const tmp7 = stats.length <= 2;
-  dependencyMap = length.useRef(0);
-  const obj4 = length;
-  length = stats.length;
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function h() {
-      ref.current = 0;
-    };
-    cResult[1] = fn;
-    tmp8 = fn;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== length) {
-    const items = [length];
-    cResult[2] = length;
-    cResult[3] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[3];
-  }
-  const effect = obj4.useEffect(tmp8, tmp9);
-  if (cResult[4] === length) {
-    let tmp11;
-    if (cResult[5] === onCarouselScroll) {
-      tmp11 = cResult[6];
-    }
-    let closure_4 = tmp11;
-    if (cResult[7] !== tmp11) {
-      class E {
-        constructor(nativeEvent) {
-          const velocity = nativeEvent.nativeEvent.velocity;
-          let num;
-          if (velocity != null) {
-            num = velocity.x;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          if (0 === num) {
-            closure_4(nativeEvent);
-          }
-        }
-      }
-      cResult[7] = tmp11;
-      cResult[8] = E;
-    } else {
-      class E {
-        constructor(nativeEvent) {
-          const velocity = nativeEvent.nativeEvent.velocity;
-          let num;
-          if (velocity != null) {
-            num = velocity.x;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          if (0 === num) {
-            closure_4(nativeEvent);
-          }
-        }
-      }
-    }
-    if (0 === stats.length) {
-      class E {
-        constructor(nativeEvent) {
-          const velocity = nativeEvent.nativeEvent.velocity;
-          let num;
-          if (velocity != null) {
-            num = velocity.x;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          if (0 === num) {
-            closure_4(nativeEvent);
-          }
-        }
-      }
-      return null;
-    } else {
-      class E {
-        constructor(nativeEvent) {
-          const velocity = nativeEvent.nativeEvent.velocity;
-          let num;
-          if (velocity != null) {
-            num = velocity.x;
-          }
-          if (num == null) {
-            num = 0;
-          }
-          if (0 === num) {
-            closure_4(nativeEvent);
-          }
-        }
-      }
-      if (tmp7) {
-        let tmp17;
-        class E {
-          constructor(nativeEvent) {
-            const velocity = nativeEvent.nativeEvent.velocity;
-            let num;
-            if (velocity != null) {
-              num = velocity.x;
-            }
-            if (num == null) {
-              num = 0;
-            }
-            if (0 === num) {
-              closure_4(nativeEvent);
-            }
-          }
-        }
-        if (cResult[12] !== onRatingPress) {
-          class E {
-            constructor(nativeEvent) {
-              const velocity = nativeEvent.nativeEvent.velocity;
-              let num;
-              if (velocity != null) {
-                num = velocity.x;
-              }
-              if (num == null) {
-                num = 0;
-              }
-              if (0 === num) {
-                closure_4(nativeEvent);
-              }
-            }
-          }
-          cResult[12] = onRatingPress;
-          cResult[13] = tmp18;
-          tmp17 = tmp18;
-        } else {
-          class E {
-            constructor(nativeEvent) {
-              const velocity = nativeEvent.nativeEvent.velocity;
-              let num;
-              if (velocity != null) {
-                num = velocity.x;
-              }
-              if (num == null) {
-                num = 0;
-              }
-              if (0 === num) {
-                closure_4(nativeEvent);
-              }
-            }
-          }
-        }
-        const mapped = stats.map(tmp17);
-        cResult[9] = onRatingPress;
-        cResult[10] = stats;
-        cResult[11] = mapped;
-      } else {
-        let tmp14;
-        class E {
-          constructor(nativeEvent) {
-            const velocity = nativeEvent.nativeEvent.velocity;
-            let num;
-            if (velocity != null) {
-              num = velocity.x;
-            }
-            if (num == null) {
-              num = 0;
-            }
-            if (0 === num) {
-              closure_4(nativeEvent);
-            }
-          }
-        }
-        if (cResult[23] !== onRatingPress) {
-          class G {
-            constructor(stat) {
-              let tmp3;
-              const obj = { stat, onRatingPress: tmp3 };
-              tmp3 = undefined;
-              const tmp = metroImportDefault;
-              const tmp2 = closure_13;
-              if ("rating" === stat.type) {
-                tmp3 = onRatingPress;
-              }
-              return tmp(tmp2, obj, stat.type);
-            }
-          }
-          cResult[23] = onRatingPress;
-          cResult[24] = G;
-          tmp14 = G;
-        } else {
-          class G {
-            constructor(stat) {
-              let tmp3;
-              const obj = { stat, onRatingPress: tmp3 };
-              tmp3 = undefined;
-              const tmp = metroImportDefault;
-              const tmp2 = closure_13;
-              if ("rating" === stat.type) {
-                tmp3 = onRatingPress;
-              }
-              return tmp(tmp2, obj, stat.type);
-            }
-          }
-        }
-        const mapped1 = stats.map(tmp14);
-        cResult[20] = onRatingPress;
-        cResult[21] = stats;
-        cResult[22] = mapped1;
-      }
-    }
-  }
-  class R {
-    constructor(nativeEvent) {
-      let LEFT;
-      if (null != onCarouselScroll) {
-        if (length > 1) {
-          const _Math = Math;
-          const diff = tmp5 - 1;
-          const _Math2 = Math;
-          const _Math3 = Math;
-          const bound = Math.min(diff, Math.max(0, Math.round(nativeEvent.nativeEvent.contentOffset.x / closure_10)));
-          const current = ref.current;
-          if (bound !== current) {
-            const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
-            if (bound > current) {
-              LEFT = tmp2(7859).HorizontalScrollingDirection.RIGHT;
-            } else {
-              LEFT = tmp2(7859).HorizontalScrollingDirection.LEFT;
-            }
-            tmp(obj);
-            tmp11.current = bound;
-          }
-        }
-      }
-    }
-  }
-  cResult[4] = length;
-  cResult[5] = onCarouselScroll;
-  cResult[6] = R;
-  tmp11 = R;
-}) : (function AppStoreOverlayStatsCarousel(arg0) {
+size = size_mod;
+let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatsCarousel.tsx");
+
+export default function AppStoreOverlayStatsCarousel(arg0) {
   let obj4;
   let obj9;
   let onCarouselScroll;
   let ref;
-  let require;
   let stats;
   ({ stats, onRatingPress: require, onCarouselScroll } = arg0);
   dependencyMap = undefined;
@@ -619,9 +194,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7859).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(7864).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7859).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(7864).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;
@@ -642,9 +217,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
               const obj = { stat, expanded: true, onRatingPress: tmp3 };
               tmp3 = undefined;
               const tmp = metroImportDefault;
-              const tmp2 = closure_13;
+              const tmp2 = AppStoreOverlayStatCardItem;
               if ("rating" === stat.type) {
-                tmp3 = _require;
+                tmp3 = require;
               }
               return tmp(tmp2, obj, stat.type);
             })
@@ -666,9 +241,9 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
               const obj = { stat, onRatingPress: tmp3 };
               tmp3 = undefined;
               const tmp = metroImportDefault;
-              const tmp2 = closure_13;
+              const tmp2 = AppStoreOverlayStatCardItem;
               if ("rating" === stat.type) {
-                tmp3 = _require;
+                tmp3 = require;
               }
               return tmp(tmp2, obj, stat.type);
             })
@@ -679,8 +254,4 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function AppStoreOver
     tmp9 = tmp13Result;
   }
   return tmp9;
-});
-size = size_mod;
-let result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatsCarousel.tsx");
-
-export default tmp5;
+};

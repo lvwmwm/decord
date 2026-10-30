@@ -1,133 +1,138 @@
 // Module ID: 751
 // Function ID: 752
-// Dependencies: [713]
-// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
+// Dependencies: [687, 688, 712]
+// Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 751
-import _mod713 from "module_713" /* 713 */;
+import _mod687 from "module_687" /* 687 */;
+import _mod712 from "module_712" /* 712 */;
 
-Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let integrations;
 
-export function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
-  if (!combined1) {
-    let str2 = "";
-    if (protocol.protocol) {
-      const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
-    }
-    let str4 = "";
-    if (protocol.port) {
+function setupIntegration(on, name, arg2) {
+  let closure_0 = on;
+  if (arg2[name.name]) {
+    const tmp10 = require;
+    if (_mod687.DEBUG_BUILD) {
+      const debug2 = tmp10(688).debug;
       const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
+      debug2.log("Integration skipped because it was already installed: " + name.name);
     }
-    const host = protocol.host;
-    let str6 = "";
-    if (protocol.path) {
-      const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
-    }
-    const tmp12 = name;
-    if (tmp12) {
-      const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
-    }
-    const _URLSearchParams = URLSearchParams;
-    const self = this;
-    const self2 = this;
-    const _HermesInternal7 = HermesInternal;
-    const str13 = new URLSearchParams(obj);
-    combined1 = "" + combined + "?" + str13.toString();
-  }
-  return combined1;
-}
-export function getReportDialogEndpoint(arg0, user) {
-  const obj = _mod713;
-  const url = obj.makeDsn(arg0);
-  if (url) {
-    let str = "";
-    if (url.protocol) {
-      const _HermesInternal = HermesInternal;
-      str = "" + url.protocol + ":";
-    }
-    let str3 = "";
-    if (url.port) {
-      const _HermesInternal2 = HermesInternal;
-      str3 = ":" + url.port;
-    }
-    const host = url.host;
-    let str5 = "";
-    if (url.path) {
-      const _HermesInternal3 = HermesInternal;
-      str5 = "/" + url.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
-    const _HermesInternal6 = HermesInternal;
-    const tmp2Result = _mod713;
-    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
-    let tmp16 = combined1;
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      tmp16 = combined1;
-      while (keys[tmp] !== undefined) {
-        if ("dsn" === tmp19) {
-          continue;
-        } else {
-          combined1 = tmp18;
-          if ("onClose" === tmp19) {
-            continue;
-          } else {
-            if ("user" === tmp19) {
-              user = user.user;
-              combined1 = tmp18;
-              if (!user) {
-                continue;
-              } else {
-                let sum = tmp18;
-                if (user.name) {
-                  let _encodeURIComponent3 = encodeURIComponent;
-                  let _HermesInternal8 = HermesInternal;
-                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
-                }
-                combined1 = sum;
-                if (!user.email) {
-                  continue;
-                } else {
-                  let _encodeURIComponent4 = encodeURIComponent;
-                  let _HermesInternal9 = HermesInternal;
-                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
-                  continue;
-                }
-                continue;
-              }
-              continue;
-            } else {
-              let _encodeURIComponent = encodeURIComponent;
-              let _encodeURIComponent2 = encodeURIComponent;
-              let encodeURIComponentResult = encodeURIComponent(tmp19);
-              let _HermesInternal7 = HermesInternal;
-              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
-              continue;
-            }
-            continue;
-          }
-          continue;
-        }
-        continue;
-      }
-    }
-    const _HermesInternal10 = HermesInternal;
-    return "" + combined + "?" + tmp16;
   } else {
-    return "";
+    arg2[name.name] = name;
+    const arr = items;
+    const tmp = items.includes(name.name) || typeof name.setupOnce !== "function";
+    if (!tmp) {
+      name.setupOnce();
+      arr.push(name.name);
+    }
+    const tmp4 = name.setup && typeof name.setup === "function";
+    if (tmp4) {
+      name.setup(on);
+    }
+    if (typeof name.preprocessEvent === "function") {
+      const preprocessEvent = name.preprocessEvent;
+      let closure_1 = preprocessEvent.bind(name);
+      on.on("preprocessEvent", (arg0, arg1) => closure_1(arg0, arg1, closure_0));
+    }
+    if (typeof name.processEvent === "function") {
+      const processEvent = name.processEvent;
+      let closure_2 = processEvent.bind(name);
+      const _Object = Object;
+      const obj = { id: name.name };
+      on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
+    }
+    const tmp6 = require;
+    if (_mod687.DEBUG_BUILD) {
+      const debug = tmp6(688).debug;
+      const _HermesInternal = HermesInternal;
+      debug.log("Integration installed: " + name.name);
+    }
   }
+}
+Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
+let items = [];
+
+export function addIntegration(name) {
+  const obj = _mod712;
+  const client = obj.getClient();
+  if (client) {
+    client.addIntegration(name);
+  } else if (_mod687.DEBUG_BUILD) {
+    const debug = tmp(688).debug;
+    const _HermesInternal = HermesInternal;
+    debug.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
+  }
+}
+export function afterSetupIntegrations(arg0, arg1) {
+  const iter = arg1[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let obj = nextResult;
+    let afterAllSetup;
+    if (nextResult != null) {
+      afterAllSetup = nextResult.afterAllSetup;
+    }
+    if (afterAllSetup) {
+      let afterAllSetupResult = obj.afterAllSetup(arg0);
+    }
+    continue;
+  }
+}
+export function defineIntegration(arg0) {
+  return arg0;
+}
+export function getIntegrationsToSetup(defaultIntegrations) {
+  let arr2;
+  const arr = defaultIntegrations.defaultIntegrations || [];
+  integrations = defaultIntegrations.integrations;
+  const item = arr.forEach((item) => {
+    item.isDefaultInstance = true;
+  });
+  if (Array.isArray(integrations)) {
+    items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, arr, 0));
+    arr2 = items;
+  } else {
+    arr2 = arr;
+    if (typeof integrations === "function") {
+      const integrationsResult = integrations(arr);
+      const _Array = Array;
+      let tmp3 = integrationsResult;
+      if (!Array.isArray(integrationsResult)) {
+        const items1 = [integrationsResult];
+        tmp3 = items1;
+      }
+      arr2 = tmp3;
+    }
+  }
+  const obj = {};
+  const item1 = arr2.forEach((name) => {
+    name = name.name;
+    let isDefaultInstance = tmp2;
+    const tmp = obj;
+    if (obj[name]) {
+      isDefaultInstance = !tmp2.isDefaultInstance;
+    }
+    if (isDefaultInstance) {
+      isDefaultInstance = name.isDefaultInstance;
+    }
+    if (!isDefaultInstance) {
+      tmp[name] = name;
+    }
+  });
+  return Object.values(obj);
+}
+export const installedIntegrations = items;
+export { setupIntegration };
+export function setupIntegrations(arg0, arr) {
+  let closure_0 = arg0;
+  const obj = {};
+  const item = arr.forEach((item) => {
+    const tmp = item;
+    if (tmp) {
+      setupIntegration(closure_0, item, obj);
+    }
+  });
+  return obj;
 }

@@ -1,19 +1,18 @@
-// Module ID: 8388
-// Function ID: 8389
+// Module ID: 8425
+// Function ID: 8426
 // Name: canReplyToMessage
-// Dependencies: [32, 4937, 1389, 1084, 1095, 1100, 558, 576, 7429, 8389, 504, 2]
-// Exports: canReplyToMessage
+// Dependencies: [32, 4941, 1384, 1072, 1083, 1089, 7437, 8426, 504, 2]
+// Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 8388 (canReplyToMessage)
-import Constants2 from "Constants" /* 1095 */;
-import MessageTypes from "MessageTypes" /* 1100 */;
-import ThreadHooks from "ThreadHooks" /* 7429 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8389 */;
+// Module 8425 (canReplyToMessage)
+import Constants2 from "Constants" /* 1083 */;
+import MessageTypes from "MessageTypes" /* 1089 */;
+import ThreadHooks from "ThreadHooks" /* 7437 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8426 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4937 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
+import PermissionStore from "PermissionStore" /* 4941 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,120 +22,29 @@ let hasOwnProperty;
 let metroRequire;
 ({ MessageFlags: hasOwnProperty, MessageStates: metroRequire } = Constants);
 const Permissions = Constants2.Permissions;
-let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyToMessage(getGuildId, hasFlag) {
-  let tmp5;
-  let tmp9;
-  _require = getGuildId;
-  dependencyMap = hasFlag;
-  let tmp = _require;
-  const obj = require("react");
-  const cResult = obj.c(12);
-  const obj2 = require("ThreadHooks");
-  const canUnarchiveThread = obj2.useCanUnarchiveThread(getGuildId);
-  if (cResult[0] !== getGuildId) {
-    let guildId;
-    if (getGuildId != null) {
-      guildId = getGuildId.getGuildId();
-    }
-    cResult[0] = getGuildId;
-    cResult[1] = guildId;
-    tmp5 = guildId;
-  } else {
-    tmp5 = cResult[1];
-  }
-  const tmpResult = tmp(8389);
-  const tmp8 = _slicedToArray(tmpResult.useCurrentUserCommunicationDisabled(tmp5), 2)[1];
-  if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [PermissionStore];
-    cResult[2] = items;
-    tmp9 = items;
-  } else {
-    tmp9 = cResult[2];
-  }
-  if (cResult[3] === getGuildId) {
-    let tmp11;
-    if (cResult[4] === hasFlag) {
-      tmp11 = cResult[5];
-    }
-    const tmpResult2 = tmp(504);
-    const stateFromStores = tmpResult2.useStateFromStores(tmp9, tmp11);
-    let tmp14 = null != getGuildId && null != hasFlag;
-    if (tmp14) {
-      if (cResult[6] === stateFromStores) {
-        if (cResult[7] === canUnarchiveThread) {
-          if (cResult[8] === getGuildId) {
-            if (cResult[9] === tmp8) {
-              let tmp15;
-              if (cResult[10] === hasFlag) {
-                tmp15 = cResult[11];
-              }
-              tmp14 = tmp15;
-            }
-          }
-        }
-      }
-      const state = hasFlag.state;
-      const SENT = constants2.SENT;
-      const hasFlagResult = hasFlag.hasFlag(constants.EPHEMERAL);
-      const isArchivedThreadResult = getGuildId.isArchivedThread();
-      let tmp20 = !isArchivedThreadResult;
-      if (isArchivedThreadResult) {
-        tmp20 = canUnarchiveThread;
-      }
-      const tmp21 = stateFromStores && state === SENT && !hasFlagResult && !tmp8 && tmp20;
-      cResult[6] = stateFromStores;
-      cResult[7] = canUnarchiveThread;
-      cResult[8] = getGuildId;
-      cResult[9] = tmp8;
-      cResult[10] = hasFlag;
-      cResult[11] = tmp21;
-      tmp15 = tmp21;
-    }
-    return tmp14;
-  }
-  const fn = function y() {
-    let tmp = null != getGuildId && null != hasFlag;
-    if (tmp) {
-      let hasItem;
-      const tmp3 = hasFlag;
-      if (getGuildId.isPrivate()) {
-        hasItem = !obj.isSystemDM();
-      } else {
-        hasItem = obj2.can(Permissions.SEND_MESSAGES, obj) && obj2.can(Permissions.READ_MESSAGE_HISTORY, obj);
-      }
-      if (hasItem) {
-        const REPLYABLE = MessageTypes.MessageTypesSets.REPLYABLE;
-        hasItem = REPLYABLE.has(tmp3.type);
-      }
-      tmp = hasItem;
-    }
-    return tmp;
-  };
-  cResult[3] = getGuildId;
-  cResult[4] = hasFlag;
-  cResult[5] = fn;
-  tmp11 = fn;
-}) : (function useCanReplyToMessage(getGuildId, hasFlag) {
-  _require = getGuildId;
-  dependencyMap = hasFlag;
+const result = size.fileFinishedImporting("modules/replies/canReplyToMessage.tsx");
+
+export function useCanReplyToMessage(channel, message) {
+  _require = channel;
+  dependencyMap = message;
   let tmp = _require;
   const obj = require("ThreadHooks");
-  const canUnarchiveThread = obj.useCanUnarchiveThread(getGuildId);
+  const canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   const tmp4 = require("useUserCommunicationDisabled");
   let guildId;
   const useCurrentUserCommunicationDisabled = tmp4.useCurrentUserCommunicationDisabled;
-  if (getGuildId != null) {
-    guildId = getGuildId.getGuildId();
+  if (channel != null) {
+    guildId = channel.getGuildId();
   }
   const items = [PermissionStore];
   const tmp6 = _slicedToArray(useCurrentUserCommunicationDisabled(guildId), 2)[1];
   const tmpResult = tmp(504);
   let stateFromStores = tmpResult.useStateFromStores(items, () => {
-    let tmp = null != getGuildId && null != hasFlag;
+    let tmp = null != channel && null != message;
     if (tmp) {
       let hasItem;
-      const tmp3 = hasFlag;
-      if (getGuildId.isPrivate()) {
+      const tmp3 = message;
+      if (channel.isPrivate()) {
         hasItem = !obj.isSystemDM();
       } else {
         hasItem = obj2.can(Permissions.SEND_MESSAGES, obj) && obj2.can(Permissions.READ_MESSAGE_HISTORY, obj);
@@ -149,12 +57,12 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyT
     }
     return tmp;
   });
-  let tmp8 = null != getGuildId && null != hasFlag;
+  let tmp8 = null != channel && null != message;
   if (tmp8) {
-    const state = hasFlag.state;
+    const state = message.state;
     const SENT = constants2.SENT;
-    const hasFlagResult = hasFlag.hasFlag(constants.EPHEMERAL);
-    const isArchivedThreadResult = getGuildId.isArchivedThread();
+    const hasFlagResult = message.hasFlag(constants.EPHEMERAL);
+    const isArchivedThreadResult = channel.isArchivedThread();
     let tmp13 = !isArchivedThreadResult;
     if (isArchivedThreadResult) {
       tmp13 = canUnarchiveThread;
@@ -174,10 +82,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCanReplyT
     tmp8 = stateFromStores;
   }
   return tmp8;
-});
-const result = size.fileFinishedImporting("modules/replies/canReplyToMessage.tsx");
-
-export const useCanReplyToMessage = tmp3;
+}
 export function canReplyToMessage(isPrivate, type) {
   let hasItem;
   const obj = ThreadHooks;
@@ -188,7 +93,7 @@ export function canReplyToMessage(isPrivate, type) {
     hasItem = obj2.can(Permissions.SEND_MESSAGES, isPrivate) && obj2.can(Permissions.READ_MESSAGE_HISTORY, isPrivate);
   }
   if (hasItem) {
-    const REPLYABLE = tmp(1100).MessageTypesSets.REPLYABLE;
+    const REPLYABLE = tmp(1089).MessageTypesSets.REPLYABLE;
     hasItem = REPLYABLE.has(type.type);
   }
   const currentUser = UserStore.getCurrentUser();

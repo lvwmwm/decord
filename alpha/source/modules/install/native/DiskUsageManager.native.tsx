@@ -1,17 +1,17 @@
-// Module ID: 17441
-// Function ID: 17442
+// Module ID: 17495
+// Function ID: 17496
 // Name: DiskUsageManager
-// Dependencies: [5, 1389, 1084, 3, 1366, 510, 10165, 1381, 17442, 1264, 7642, 7274, 14261, 14262, 2]
+// Dependencies: [5, 1384, 1072, 3, 1355, 510, 10190, 1376, 17496, 1253, 7647, 7281, 11078, 11079, 2]
 
-// Module 17441 (DiskUsageManager)
+// Module 17495 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
-import react_native from "react-native" /* 1366 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10165 */;
-import react_nativeDefault from "react-native" /* 17442 */;
+import react_native from "react-native" /* 1355 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10190 */;
+import react_nativeDefault from "react-native" /* 17496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1389 */;
-import Constants from "Constants" /* 1084 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7274 */;
+import UserStore from "UserStore" /* 1384 */;
+import Constants from "Constants" /* 1072 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7281 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: "IconComponent" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: "IconComponent" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

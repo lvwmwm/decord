@@ -1,16 +1,20 @@
 // Module ID: 16105
 // Function ID: 16106
-// Dependencies: [16069, 16043]
+// Dependencies: [16090]
 
 // Module 16105
-import _mod16043 from "module_16043" /* 16043 */;
-import module_16069 from "module_16069" /* 16069 */;
+import _mod16090 from "module_16090" /* 16090 */;
 
-let _moduleResult = module_16069(_mod16043.WeakMap);
-if (_moduleResult) {
-  const _String = String;
-  const obj = /native code/;
-  _moduleResult = obj.test(String(_mod16043.WeakMap));
-}
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod16090((1).toString);
 
-export default _moduleResult;
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
+  }
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
+};

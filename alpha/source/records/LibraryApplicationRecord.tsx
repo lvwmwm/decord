@@ -1,15 +1,15 @@
-// Module ID: 2042
-// Function ID: 2043
+// Module ID: 2039
+// Function ID: 2040
 // Name: LibraryApplicationRecord
-// Dependencies: [1404, 2043, 2044, 1084, 2047, 1402, 2]
+// Dependencies: [1399, 2040, 2041, 1072, 2044, 1397, 2]
 
-// Module 2042 (LibraryApplicationRecord)
-import FlagUtilsAll from "FlagUtils" /* 1402 */;
-import _modDef2047 from "module_2047" /* 2047 */;
-import Record from "Record" /* 1404 */;
-import ApplicationStore from "ApplicationStore" /* 2043 */;
-import EntitlementRecord from "EntitlementRecord" /* 2044 */;
-import Constants from "Constants" /* 1084 */;
+// Module 2039 (LibraryApplicationRecord)
+import FlagUtilsAll from "FlagUtils" /* 1397 */;
+import _modDef2044 from "module_2044" /* 2044 */;
+import Record from "Record" /* 1399 */;
+import ApplicationStore from "ApplicationStore" /* 2040 */;
+import EntitlementRecord from "EntitlementRecord" /* 2041 */;
+import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -41,7 +41,7 @@ class LibraryApplicationRecord extends Record {
     obj2 = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: entitlementsResult, preorderApproximateReleaseDate: prop };
     entitlementsResult = null;
     if (null != id.sku.preorder_release_at) {
-      entitlements = _modDef2047;
+      entitlements = _modDef2044;
       entitlementsResult = entitlements(id.sku.preorder_release_at);
     }
     prop = null;

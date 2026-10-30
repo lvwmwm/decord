@@ -1,16 +1,15 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12399
+// Function ID: 12400
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1125, 3864, 558, 576, 11857, 2]
+// Dependencies: [32, 19, 1114, 3865, 12400, 2]
+// Exports: default
 
-// Module 12243 (useConjurePublishButton)
-import react2 from "react" /* 576 */;
-import intl3 from "intl" /* 1125 */;
-import _modDef3864 from "module_3864" /* 3864 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 11857 */;
+// Module 12399 (useConjurePublishButton)
+import intl3 from "intl" /* 1114 */;
+import _modDef3865 from "module_3865" /* 3865 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 function publishButtonText(upToDate, arg1) {
@@ -19,13 +18,13 @@ function publishButtonText(upToDate, arg1) {
     let label;
     if (null == upToDate) {
       const intl2 = intl3.intl;
-      label = intl2.string(_modDef3864["120EFN"]);
+      label = intl2.string(_modDef3865["120EFN"]);
     } else {
       const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
       if (tmp2) {
         if (!upToDate.publishing) {
           const intl = intl3.intl;
-          label = intl.string(_modDef3864.kAfbEN);
+          label = intl.string(_modDef3865.kAfbEN);
         }
       }
       label = upToDate.label;
@@ -34,120 +33,9 @@ function publishButtonText(upToDate, arg1) {
   }
   return tmp;
 }
-let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePublishButton(arg0, guildId, busy, arg3) {
-  let closure_129_0;
-  let first;
-  let tmp4;
-  let tmp5;
-  let tmp7;
-  const obj = react2;
-  const cResult = obj.c(29);
-  [r10015, closure_129_0] = _slicedToArray(react.useState(null), 2);
-  const tmp2 = _slicedToArray(react.useState(null), 2);
-  let closure_1 = react.useRef(null);
-  const obj2 = react;
-  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn = function c() {
-      if (null != ref.current) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(ref.current);
-      }
-      ref.current = null;
-    };
-    cResult[0] = fn;
-    first = fn;
-  } else {
-    first = cResult[0];
-  }
-  if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const fn2 = function y() {
-      return first;
-    };
-    const items = [first];
-    cResult[1] = fn2;
-    cResult[2] = items;
-    tmp5 = items;
-    tmp4 = fn2;
-  } else {
-    tmp4 = cResult[1];
-    tmp5 = cResult[2];
-  }
-  const effect = obj2.useEffect(tmp4, tmp5);
-  if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
-    class P {
-      constructor(arg0) {
-        tmp = closure_2();
-        tmp2 = closure_0(arg0);
-        closure_1.current = setTimeout(() => {
-          ref.current = null;
-          closure_1_0(null);
-        }, 1500);
-        return;
-      }
-    }
-    cResult[3] = P;
-    tmp7 = P;
-  } else {
-    class P {
-      constructor(arg0) {
-        tmp = closure_2();
-        tmp2 = closure_0(arg0);
-        closure_1.current = setTimeout(() => {
-          ref.current = null;
-          closure_1_0(null);
-        }, 1500);
-        return;
-      }
-    }
-  }
-  if (cResult[4] !== arg3) {
-    class P {
-      constructor(arg0) {
-        tmp = closure_2();
-        tmp2 = closure_0(arg0);
-        closure_1.current = setTimeout(() => {
-          ref.current = null;
-          closure_1_0(null);
-        }, 1500);
-        return;
-      }
-    }
-    const merged = Object.assign(arg3);
-    tmp9.showConfirmation = tmp7;
-    cResult[4] = arg3;
-    cResult[5] = tmp9;
-  } else {
-    class P {
-      constructor(arg0) {
-        tmp = closure_2();
-        tmp2 = closure_0(arg0);
-        closure_1.current = setTimeout(() => {
-          ref.current = null;
-          closure_1_0(null);
-        }, 1500);
-        return;
-      }
-    }
-  }
-  if (cResult[6] === busy) {
-    class P {
-      constructor(arg0) {
-        tmp = closure_2();
-        tmp2 = closure_0(arg0);
-        closure_1.current = setTimeout(() => {
-          ref.current = null;
-          closure_1_0(null);
-        }, 1500);
-        return;
-      }
-    }
-  }
-  const obj3 = { guildId, platform: tmp8, busy };
-  cResult[6] = busy;
-  cResult[7] = guildId;
-  cResult[8] = tmp8;
-  cResult[9] = obj3;
-}) : (function useConjurePublishButton(arg0, arg1, arg2, arg3) {
+const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishButton.tsx");
+
+export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   let closure_129_3;
   let str2;
   let tmp13;
@@ -223,7 +111,4 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     tmp13 = str3;
   }
   return obj2;
-});
-const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishButton.tsx");
-
-export default tmp2;
+};
