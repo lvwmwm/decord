@@ -155,17 +155,17 @@ class RPCServerManager {
     };
     obj.handleNotificationCreate = function handleNotificationCreate(icon) {
       let obj2;
-      let tmp8;
+      let tmp6;
       icon = icon.icon;
       if (0 !== obj.rpcServer.subscriptions.length) {
         const rpcServer = obj.rpcServer;
-        obj = { channel_id: tmp, message: obj2.transformServerMessage(tmp2), icon_url: tmp8, title: tmp3, body: tmp4 };
+        obj = { channel_id: tmp, message: obj2.transformServerMessage(tmp2), icon_url: tmp6, title: tmp3, body: tmp4 };
         const dispatchToSubscriptions = rpcServer.dispatchToSubscriptions;
         const NOTIFICATION_CREATE = constants3.NOTIFICATION_CREATE;
-        tmp8 = null;
+        tmp6 = null;
         obj2 = transformMessage;
         if (null != icon) {
-          tmp8 = getRemoteIconURLDefault(icon);
+          tmp6 = getRemoteIconURLDefault(icon);
         }
         const result = dispatchToSubscriptions(NOTIFICATION_CREATE, {}, obj);
       }

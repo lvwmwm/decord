@@ -364,7 +364,7 @@ export const showGuildEventModeratorActionSheet = function showGuildEventModerat
                   const obj2 = { event: guildScheduledEvent, recurrenceId, guildId, onRsvp };
                   obj.openLazy(event(paths[14])(paths[26], paths.paths), "GuildEventRsvpPickerActionSheet", obj2, "stack");
                 },
-                onRsvp: "applicationId"
+                onRsvp: "application"
               };
               obj.handleRsvp(obj2);
             }

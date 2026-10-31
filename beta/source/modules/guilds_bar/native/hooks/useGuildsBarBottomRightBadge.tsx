@@ -259,7 +259,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGuildsBar
         items2 = [tmp5];
         return obj8;
       } else {
-        return { badge: null, cutout: "r", cutouts: "toCharArray$esjava$1" };
+        return { badge: null, cutout: "Array", cutouts: "toCharArray$esjava$1" };
       }
     }
   }, items1);

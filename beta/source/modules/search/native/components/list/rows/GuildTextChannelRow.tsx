@@ -129,7 +129,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
     channelActiveAgoTimestamp = tmpResult2.getChannelActiveAgoTimestamp(tmp12);
   }
   const obj4 = { subtitle: channelActiveAgoTimestamp, layout, channelId: id, guildId: guild_id };
-  const result = renderChannelSubtitle(obj4);
+  let result = renderChannelSubtitle(obj4);
   cResult[8] = id;
   cResult[9] = guild_id;
   cResult[10] = tmp12;

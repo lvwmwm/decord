@@ -219,8 +219,8 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
         return { value: "IconComponent", done: null };
       }
@@ -233,14 +233,14 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
             throw value;
           } else if (arg0 === 2) {
             activity = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            const obj5 = { channelId, applicationId: application.id, launchId: activity.launchId, inputApplication: application, analyticsLocations };
+            const obj4 = { channelId, applicationId: application.id, launchId: activity.launchId, inputApplication: application, analyticsLocations };
             c1 = 1;
-            const obj2 = activity(channelId[10]);
+            const obj5 = activity(channelId[10]);
             activity = 1;
-            const obj6 = { value: obj2.maybeJoinEmbeddedActivity(obj5), done: false };
+            const obj6 = { value: obj5.maybeJoinEmbeddedActivity(obj4), done: false };
             return obj6;
           }
         } else if (arg0 === 1) {
@@ -254,9 +254,9 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function Activit
           activity = 3;
           return { value: "IconComponent", done: null };
         }
-      } catch (tmp10) {
+      } catch (tmp4) {
         activity = 3;
-        throw tmp10;
+        throw tmp4;
       }
     }
   }), items);

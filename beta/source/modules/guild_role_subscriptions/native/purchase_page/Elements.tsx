@@ -56,10 +56,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   let tmp4;
   let tmp5;
   let tmp = require;
-  const obj = react2;
+  let obj = react2;
   const cResult = obj.c(20);
   if (cResult[0] !== lineClamp) {
     lineClamp = lineClamp.lineClamp;
+    let tmp6 = _objectWithoutProperties;
     const tmp8 = _objectWithoutProperties(lineClamp, closure_4);
     cResult[0] = lineClamp;
     cResult[1] = tmp8;
@@ -75,8 +76,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
     num4 = tmp5;
   }
   const tmp9 = closure_13();
-  [tmp11, closure_129_1] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
+  [tmp11, closure_129_1] = _slicedToArray(react.useState(false), 2);
+  const tmp10 = _slicedToArray(react.useState(false), 2);
   [first, dependencyMap] = react.useState(false);
   closure_4 = react.useRef(false);
   if (cResult[3] !== first) {
@@ -126,14 +127,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
           }
         }
       }
-      const obj2 = { lineClamp: tmp20, onTextLayout: tmp21 };
+      let obj2 = { lineClamp: tmp20, onTextLayout: tmp21 };
       const Text2 = Text_Text.Text;
       const merged = Object.assign(tmp4);
+      const tmp27 = unpackModuleId(Text2, obj2);
       cResult[11] = tmp4;
       cResult[12] = tmp20;
       cResult[13] = tmp21;
-      cResult[14] = unpackModuleId(Text2, obj2);
-      const tmp27 = unpackModuleId(Text2, obj2);
+      cResult[14] = tmp27;
     }
   }
   let tmp17Result = first;
@@ -146,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
         }
       }
     }
-    const obj3 = { style: tmp9.toggleTruncateButton, children: tmp17(Text, obj4) };
+    let obj3 = { style: tmp9.toggleTruncateButton, children: tmp17(Text, obj4) };
     Text = Text_Text.Text;
     const string = intl2.intl.string;
     const t = intl2.t;
@@ -196,14 +197,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   first = undefined;
   closure_3 = undefined;
   const tmp2 = closure_13();
+  [tmp4, c1] = _slicedToArray(react.useState(false), 2);
   const tmp3 = _slicedToArray(react.useState(false), 2);
-  [tmp4, c1] = tmp3;
   [first, closure_3] = react.useState(false);
   closure_4 = react.useRef(false);
   let tmp8Result = first;
   if (tmp8Result) {
     let stringResult;
-    let obj = { style: tmp2.toggleTruncateButton, children: tmp8(Text, obj2) };
+    const obj = { style: tmp2.toggleTruncateButton, children: unpackModuleId(Text, obj2) };
     Text = Text_Text.Text;
     const intl = intl2.intl;
     const string = intl.string;
@@ -217,7 +218,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
     obj2 = { variant: "text-sm/medium", color: "text-default", children: stringResult };
     tmp8Result = tmp8(tmp9, obj);
   }
-  let obj3 = {
+  const obj3 = {
     onPress: function handleToggle() {
       const tmp = first && _undefined((arg0) => !arg0);
       return tmp;
@@ -232,7 +233,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   if (first) {
     num2 = 0.8;
   }
-  let obj4 = {
+  const obj4 = {
     lineClamp: tmp17,
     onTextLayout(nativeEvent) {
       if (!ref.current) {

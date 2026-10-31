@@ -15,7 +15,6 @@ const jsx = Fragment.jsx;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageRequestsScreen(navigation) {
   let tmp3;
   let tmp4;
-  const tmp = dependencyMap;
   let obj = react2;
   const cResult = obj.c(4);
   navigation = navigation.navigation;
@@ -31,7 +30,6 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function MessageReq
     tmp3 = cResult[1];
   }
   if (cResult[2] !== tmp3) {
-    let tmp5 = jsx;
     const tmp7 = jsx(SpamMessageListDefault, { goToMessageRequestPreview: tmp3 });
     cResult[2] = tmp3;
     cResult[3] = tmp7;

@@ -710,7 +710,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(closure_22, obj, arg0);
 }
-let closure_26 = Object.freeze({ renderAlert: "toCharArray$esjava$1", renderKey: "test", props: "ix" });
+let closure_26 = Object.freeze({ renderAlert: "Boolean", renderKey: "emoji", props: "toCharArray$esjava$1" });
 ReactCompilerGating = ReactCompilerGating_mod;
 const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (function Alerts() {
   let alertDismissable;
@@ -758,7 +758,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             return <component />;
           };
         } else {
-          return { renderAlert: "toCharArray$esjava$1", renderKey: "test", props: "ix" };
+          return { renderAlert: "Boolean", renderKey: "emoji", props: "toCharArray$esjava$1" };
         }
       }
     };
@@ -876,7 +876,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           return <component />;
         };
       } else {
-        return { renderAlert: "toCharArray$esjava$1", renderKey: "test", props: "ix" };
+        return { renderAlert: "Boolean", renderKey: "emoji", props: "toCharArray$esjava$1" };
       }
     }
   });

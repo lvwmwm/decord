@@ -645,7 +645,7 @@ export const createActivityRichPresenceInviteEmbed = function createActivityRich
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1128).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Reflect", ctaButtonIsLoading: "Array", footerLabel: "Set", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "enumerable", maxPartySize: "Object", partyMemberAvatarURIs: "toCharArray$esjava$1", partySizeText: true, platformIconKeys: [], coverImageUrl: true, detailsText: true, title: true };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1128).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Reflect", ctaButtonIsLoading: "Array", footerLabel: "Set", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "application", maxPartySize: "fill", partyMemberAvatarURIs: "accessibilityRole", partySizeText: null, platformIconKeys: [], coverImageUrl: "user", detailsText: null, title: null };
           intl = tmp4(1128).intl;
           if (contentClassificationVisibility === tmp4(13072).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1128).intl;

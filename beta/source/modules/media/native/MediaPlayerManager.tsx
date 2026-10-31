@@ -53,7 +53,7 @@ const useMediaPlayerManagerStore = module_570.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Reflect",
-    showPip: "Show unpublished items in collectibles shop",
+    showPip: "Enable verbose telemetry logging for libdiscore",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));

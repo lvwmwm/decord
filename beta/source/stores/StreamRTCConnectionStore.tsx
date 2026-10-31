@@ -312,7 +312,7 @@ if (MediaEngineStore.isSupported()) {
     STREAM_STOP: function handleStreamStop(appContext) {
         appContext = appContext.appContext;
         const streamKey = appContext.streamKey;
-        closure_11[streamKey] = { appContext, analyticsLocations: "r" };
+        closure_11[streamKey] = { appContext, analyticsLocations: "a" };
         const arr = _modDef12;
         const item = arr.forEach(closure_18, (analyticsContext) => {
           analyticsContext = analyticsContext.analyticsContext;

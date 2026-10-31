@@ -13,9 +13,9 @@ import DisplayNameFont from "DisplayNameFont" /* 1412 */;
 import ActionSheetConstants from "ActionSheetConstants" /* 5298 */;
 import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9253 */;
 import AppIconConstants from "AppIconConstants" /* 9897 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1208 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -27,7 +27,7 @@ import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let BottomSheet, c3, c4, importDefault, perk;
+let BottomSheet, _require, c3, c4, importDefault, perk;
 
 let Platform;
 let StyleSheet;
@@ -36,6 +36,7 @@ let closure_16;
 let closure_17;
 let closure_18;
 let items;
+let items1;
 let metroRequire;
 let obj10;
 let obj11;
@@ -47,8 +48,10 @@ let obj7;
 let obj8;
 let obj9;
 let rect;
-let size;
+let rect1;
 let unpackModuleId;
+let _asyncToGenerator = _asyncToGenerator_mod;
+let react = react_mod;
 ({ Platform, View: metroRequire, StyleSheet } = react_native);
 const HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT = HexagonCampaignConstants.HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT;
 ({ HexagonCampaignPerk: unpackModuleId, HexagonCampaignPerkAvailability: closure_12 } = HexagonCampaignConstants);
@@ -59,13 +62,14 @@ const Fonts = Constants.Fonts;
 ({ jsx: closure_16, jsxs: closure_17, Fragment: closure_18 } = Fragment);
 const HexagonCampaignSheet_str = "HexagonCampaignSheet";
 let c20 = 143.48;
+let size = Math.round(66.3);
 let obj = { fontId: DisplayNameFont.DisplayNameFont.DEFAULT, effectId: DisplayNameEffect.DisplayNameEffect.SOLID, colors: [] };
 let PRIMARY_SEMIBOLD = useDisplayNameStylesFont.DISPLAY_NAME_STYLES_FONT_FAMILY_MAP[HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT];
 if (PRIMARY_SEMIBOLD == null) {
   PRIMARY_SEMIBOLD = Fonts.PRIMARY_SEMIBOLD;
 }
 let createStyles = createStyles_mod;
-let obj2 = { content: obj3, card: obj4, cardShade: obj5, previewArea: obj6, scaledPreviewContainer: { width: 288 }, scaledPreview: rect, rows: obj7, rowIcon: size, fontRowIcon: obj8, fontRowIconText: { fontFamily: PRIMARY_SEMIBOLD }, badgeRow: obj9, footer: obj10, legal: obj11 };
+let obj2 = { content: obj3, card: obj4, cardShade: obj5, previewArea: obj6, scaledPreviewContainer: { width: 288 }, scaledPreview: rect, previewAppIcon: rect1, rows: obj7, rowIcon: size, fontRowIcon: obj8, fontRowIconText: { fontFamily: PRIMARY_SEMIBOLD }, badgeRow: obj9, footer: obj10, legal: obj11 };
 obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj4 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -74,24 +78,29 @@ let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj6 = { height: 274, paddingHorizontal: nativeDefault.space.PX_16, alignItems: "center" };
 rect = { position: "absolute", top: 0, left: 0, width: 360, transform: items, transformOrigin: "top left" };
 items = [{ scale: 0.8 }];
+rect1 = { position: "absolute", left: Math.round(214.20000000000002), top: Math.round(59), borderRadius: 0.65 * nativeDefault.radii.xl, borderCurve: "continuous", borderWidth: 0, transform: items1 };
+items1 = [{ rotate: "15deg" }];
 obj7 = { paddingTop: nativeDefault.space.PX_16 };
 size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm, overflow: "hidden", borderWidth: 0 };
 obj8 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
 obj9 = { alignItems: "center", paddingTop: nativeDefault.space.PX_8 };
 obj10 = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj11 = { paddingHorizontal: nativeDefault.space.PX_24, paddingTop: nativeDefault.space.PX_16 };
-let closure_22 = createStyles(obj2);
+let closure_23 = createStyles(obj2);
 let ReactCompilerGating = ReactCompilerGating_mod;
-let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScaledPreview(children) {
+let closure_24 = ReactCompilerGating.isReactCompilerEnabled() ? (function ScaledPreview(arg0) {
   let PX_12;
+  let children;
   let closure_129_0;
   let first;
+  let items;
+  let overlay;
   let tmp5;
   let tmp8;
   obj = react2;
-  const cResult = obj.c(12);
-  children = children.children;
-  const tmp3 = closure_22();
+  const cResult = obj.c(13);
+  ({ children, overlay } = arg0);
+  const tmp3 = closure_23();
   [tmp5, closure_129_0] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
@@ -127,18 +136,22 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scaled
       if (cResult[7] === tmp3.scaledPreview) {
         tmp10 = cResult[8];
       }
-      if (cResult[9] === tmp9) {
-        let tmp14;
-        if (cResult[10] === tmp10) {
-          tmp14 = cResult[11];
+      if (cResult[9] === overlay) {
+        if (cResult[10] === tmp9) {
+          let tmp14;
+          if (cResult[11] === tmp10) {
+            tmp14 = cResult[12];
+          }
+          return tmp14;
         }
-        return tmp14;
       }
-      const obj3 = { style: tmp9, children: tmp10 };
-      const tmp17 = authStore3(metroRequire, obj3);
-      cResult[9] = tmp9;
-      cResult[10] = tmp10;
-      cResult[11] = tmp17;
+      const obj3 = { style: tmp9, children: items };
+      items = [tmp10, overlay];
+      const tmp17 = closure_17(metroRequire, obj3);
+      cResult[9] = overlay;
+      cResult[10] = tmp9;
+      cResult[11] = tmp10;
+      cResult[12] = tmp17;
       tmp14 = tmp17;
     }
     const obj4 = { style: tmp3.scaledPreview, onLayout: first, children };
@@ -148,20 +161,22 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scaled
     cResult[8] = tmp13;
     tmp10 = tmp13;
   }
-  const items = [tmp3.scaledPreviewContainer, tmp8];
+  const items1 = [tmp3.scaledPreviewContainer, tmp8];
   cResult[3] = tmp3.scaledPreviewContainer;
   cResult[4] = tmp8;
-  cResult[5] = items;
-  tmp9 = items;
-}) : (function ScaledPreview(children) {
+  cResult[5] = items1;
+  tmp9 = items1;
+}) : (function ScaledPreview(arg0) {
   let PX_12;
   let c0;
+  let children;
   let items;
-  let obj2;
+  let items1;
+  let overlay;
   let tmp3;
   c0 = undefined;
-  children = children.children;
-  const tmp = closure_22();
+  ({ children, overlay } = arg0);
+  const tmp = closure_23();
   [tmp3, c0] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
   const callback = react.useCallback((nativeEvent) => {
@@ -173,10 +188,13 @@ let closure_23 = ReactCompilerGating.isReactCompilerEnabled() ? (function Scaled
   } else {
     PX_12 = nativeDefault.space.PX_12;
   }
-  obj = { style: items, children: authStore3(metroRequire, obj2) };
+  obj = { style: items, children: items1 };
   items = [tmp.scaledPreviewContainer, { marginTop: PX_12 }];
-  obj2 = { style: tmp.scaledPreview, onLayout: callback, children };
-  return authStore3(metroRequire, obj);
+  items1 = [, ];
+  const obj2 = { style: tmp.scaledPreview, onLayout: callback, children };
+  items1[0] = authStore3(metroRequire, obj2);
+  items1[1] = overlay;
+  return closure_17(metroRequire, obj);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 ReactCompilerGating.isReactCompilerEnabled();
@@ -186,19 +204,22 @@ function usePerkSelectable(arg0) {
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampaignSheet() {
   let analyticsLocations;
+  let closure_3;
+  let closure_5;
   let currentUser;
   let stateFromStores;
   let tmp10;
+  let tmp48;
   let tmp5;
   let tmp6;
   let tmp9;
   let tmp = stateFromStores;
   let tmp2 = analyticsLocations;
   obj = stateFromStores(analyticsLocations[19]);
-  const cResult = obj.c(117);
-  closure_22();
+  const cResult = obj.c(123);
+  const tmp4 = closure_23();
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-    const items = [UserStore];
+    const items = [currentUser];
     const fn = function s() {
       return currentUser.getCurrentUser();
     };
@@ -212,34 +233,430 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   const tmpResult = tmp(tmp2[21]);
   stateFromStores = tmpResult.useStateFromStores(tmp5, tmp6);
   if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-    const items1 = [SelectivelySyncedUserSettingsStore];
-    class C {
-      constructor() {
-        return SelectivelySyncedUserSettingsStore.shouldSync("appearance");
-      }
-    }
+    const items1 = [closure_7];
+    const fn2 = function v() {
+      return closure_7.shouldSync("appearance");
+    };
     cResult[2] = items1;
-    cResult[3] = C;
-    tmp10 = C;
+    cResult[3] = fn2;
+    tmp10 = fn2;
     tmp9 = items1;
   } else {
     tmp9 = cResult[2];
     tmp10 = cResult[3];
   }
-  const tmpResult4 = tmp(tmp2[21]);
-  const stateFromStores1 = tmpResult4.useStateFromStores(tmp9, tmp10);
-  const tmp13 = stateFromStores1(tmp2[22]);
-  analyticsLocations = tmp13(stateFromStores1(tmp2[23]).QUEST_HOME_PAGE).analyticsLocations;
-  const tmpResult5 = tmp(tmp2[24]);
-  const currentAppIcon = tmpResult5.useCurrentAppIcon();
+  const tmpResult9 = tmp(tmp2[21]);
+  const stateFromStores1 = tmpResult9.useStateFromStores(tmp9, tmp10);
+  const tmp14 = stateFromStores1(tmp2[22]);
+  analyticsLocations = tmp14(stateFromStores1(tmp2[23]).QUEST_HOME_PAGE).analyticsLocations;
+  const tmpResult10 = tmp(tmp2[24]);
+  let HEXAGON = tmpResult10.useCurrentAppIcon();
+  let tmp16 = closure_11;
   if (typeof usePerkSelectable === "function") {
     tmp(tmp2[20]);
-    class C {
-      constructor() {
-        return SelectivelySyncedUserSettingsStore.shouldSync("appearance");
+    const tmp18 = HexagonCampaignSheet_str;
+    const tmp20 = closure_12;
+    if (typeof usePerkSelectable === "function") {
+      tmp(tmp2[20]);
+      if (typeof usePerkSelectable === "function") {
+        let tmp26 = tmp19 === tmp21;
+        const tmpResult13 = tmp(tmp2[20]);
+        const tmp28 = tmpResult13.useHexagonCampaignPerkAvailability(tmp25, tmp18) === tmp20.SELECTABLE;
+        if (cResult[4] === tmp26) {
+          if (cResult[5] === tmp23 === tmp24) {
+            let tmp29;
+            let tmp31;
+            let tmp30;
+            let tmp35;
+            let tmp34;
+            let tmp40;
+            if (cResult[6] === tmp28) {
+              tmp29 = cResult[7];
+            }
+            _asyncToGenerator = tmp29;
+            const _Symbol = Symbol;
+            if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
+              const items2 = [HexagonCampaignPersistedStore];
+              class X {
+                constructor() {
+                  return HexagonCampaignPersistedStore.hasAppliedPerk;
+                }
+              }
+              cResult[8] = items2;
+              cResult[9] = X;
+              tmp31 = X;
+              tmp30 = items2;
+            } else {
+              tmp30 = cResult[8];
+              tmp31 = cResult[9];
+            }
+            const _Symbol2 = Symbol;
+            const tmpResult14 = tmp(tmp2[21]);
+            const stateFromStores2 = tmpResult14.useStateFromStores(tmp30, tmp31);
+            if (cResult[10] === Symbol.for("react.memo_cache_sentinel")) {
+              const items3 = [HexagonCampaignPersistedStore];
+              class K {
+                constructor() {
+                  return HexagonCampaignPersistedStore.previousPerkValues;
+                }
+              }
+              cResult[10] = items3;
+              cResult[11] = K;
+              tmp35 = K;
+              tmp34 = items3;
+            } else {
+              tmp34 = cResult[10];
+              tmp35 = cResult[11];
+            }
+            const tmpResult15 = tmp(tmp2[21]);
+            const stateFromStores3 = tmpResult15.useStateFromStores(tmp34, tmp35);
+            let displayNameStyles;
+            if (stateFromStores != null) {
+              displayNameStyles = stateFromStores.displayNameStyles;
+            }
+            if (cResult[12] !== displayNameStyles) {
+              const tmpResult16 = tmp(tmp2[25]);
+              let result = tmpResult16.hasHexagonCampaignDisplayNameFont(displayNameStyles);
+              class K {
+                constructor() {
+                  return HexagonCampaignPersistedStore.previousPerkValues;
+                }
+              }
+              cResult[13] = result;
+              tmp40 = result;
+            } else {
+              tmp40 = cResult[13];
+            }
+            let tmp42 = isHexagonCampaignAppIcon;
+            let obj10 = react;
+            isHexagonCampaignAppIcon(HEXAGON);
+            const first = _slicedToArray(react.useState(stateFromStores2), 1)[0];
+            const _Symbol3 = Symbol;
+            if (cResult[14] === Symbol.for("react.memo_cache_sentinel")) {
+              let obj2 = {};
+              cResult[14] = obj2;
+              class K {
+                constructor() {
+                  return HexagonCampaignPersistedStore.previousPerkValues;
+                }
+              }
+            }
+            [tmp48, _slicedToArray] = _slicedToArray(obj10.useState(tmp46), 2);
+            _slicedToArray(obj10.useState(tmp46), 2);
+            if (cResult[15] === tmp29) {
+              let tmp49;
+              let tmp60;
+              if (cResult[16] === tmp48) {
+                tmp49 = cResult[17];
+              }
+              react = tmp49;
+              class K {
+                constructor() {
+                  return HexagonCampaignPersistedStore.previousPerkValues;
+                }
+              }
+              let closure_6 = tmp56[0];
+              closure_7 = tmp56[1];
+              currentUser = obj10.useRef(false);
+              [r10179, HexagonCampaignPersistedStore] = _slicedToArray(obj10.useState(0), 2);
+              const _Math = Math;
+              const _Symbol4 = Symbol;
+              _slicedToArray(obj10.useState(0), 2);
+              const bound = Math.max(tmp13(tmp2[26])().bottom, closure_13);
+              if (cResult[18] === Symbol.for("react.memo_cache_sentinel")) {
+                cResult[18] = 4;
+                class K {
+                  constructor() {
+                    return HexagonCampaignPersistedStore.previousPerkValues;
+                  }
+                }
+              } else {
+                tmp60 = cResult[18];
+              }
+              const sum = bound + tmp60;
+              let displayNameStyles1;
+              if (stateFromStores != null) {
+                displayNameStyles1 = stateFromStores.displayNameStyles;
+              }
+              if (displayNameStyles1 == null) {
+                displayNameStyles1 = obj;
+              }
+              if (cResult[19] === displayNameStyles1) {
+                if (cResult[20] === tmp40) {
+                  if (cResult[21] === stateFromStores3) {
+                    let tmp63;
+                    if (cResult[22] === stateFromStores) {
+                      tmp63 = cResult[23];
+                      let tmp64 = cResult[24];
+                    }
+                    if (cResult[25] === tmp63) {
+                      let tmp70;
+                      let tmp73;
+                      let tmp72;
+                      if (cResult[26] === displayNameStyles1) {
+                        tmp70 = cResult[27];
+                      }
+                      let closure_10 = tmp70;
+                      if (tmp49[tmp16.DISPLAY_NAME_STYLE]) {
+                        tmp64 = tmp70;
+                      }
+                      class K {
+                        constructor() {
+                          return HexagonCampaignPersistedStore.previousPerkValues;
+                        }
+                      }
+                      if (tmp49[tmp16.APP_ICON]) {
+                        HEXAGON = tmp(tmp2[28]).LimitedTimeAppIconIds.HEXAGON;
+                      }
+                      const _Symbol5 = Symbol;
+                      if (cResult[28] === Symbol.for("react.memo_cache_sentinel")) {
+                        class Te {
+                          constructor() {
+                            obj = stateFromStores(analyticsLocations[29]);
+                            const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                            const result = obj.trackHexagonCampaignContentViewed(obj2);
+                          }
+                        }
+                        const items4 = [];
+                        class K {
+                          constructor() {
+                            return HexagonCampaignPersistedStore.previousPerkValues;
+                          }
+                        }
+                        cResult[29] = items4;
+                        tmp73 = items4;
+                        tmp72 = Te;
+                      } else {
+                        class Te {
+                          constructor() {
+                            obj = stateFromStores(analyticsLocations[29]);
+                            const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                            const result = obj.trackHexagonCampaignContentViewed(obj2);
+                          }
+                        }
+                        tmp73 = cResult[29];
+                      }
+                      const effect = obj10.useEffect(tmp72, tmp73);
+                      if (cResult[30] === analyticsLocations) {
+                        class Te {
+                          constructor() {
+                            obj = stateFromStores(analyticsLocations[29]);
+                            const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                            const result = obj.trackHexagonCampaignContentViewed(obj2);
+                          }
+                        }
+                      }
+                      _require = _asyncToGenerator(async (arg0, value) => {
+                        let intl;
+                        let intl2;
+                        let obj7;
+                        let values;
+                        if (c4 === 2) {
+                          c4 = 3;
+                          throw new TypeError("Generator functions may not be called on executing generators");
+                        } else if (tmp3 === 3) {
+                          if (arg0 === 1) {
+                            throw value;
+                          } else if (arg0 === 2) {
+                            const obj2 = { value, done: true };
+                            return obj2;
+                          } else {
+                            return { value: "IconComponent", done: null };
+                          }
+                        } else {
+                          try {
+                            c4 = 2;
+                            if (0 === c3) {
+                              if (arg0 === 1) {
+                                c4 = 3;
+                                throw value;
+                              } else if (arg0 === 2) {
+                                c4 = 3;
+                                const obj3 = { value, done: true };
+                                return obj3;
+                              } else {
+                                const isThemeSynced = tmp;
+                                closure_0 = undefined;
+                                if (null != closure_0) {
+                                  if (!ref.current) {
+                                    ref.current = true;
+                                    closure_1_7(true);
+                                    analyticsLocations = 1;
+                                    const obj5 = { selection, displayNameStyles, premiumType: tmp64.premiumType, isThemeSynced, analyticsLocations };
+                                    c3 = 2;
+                                    c4 = 1;
+                                    const obj6 = { value: obj7.applyHexagonCampaignPerks(obj5), done: false };
+                                    obj7 = closure_0(analyticsLocations[31]);
+                                    return obj6;
+                                  }
+                                }
+                              }
+                            } else {
+                              if (1 === c3) {
+                                analyticsLocations = 0;
+                                closure_0 = false;
+                              } else if (arg0 === 1) {
+                                c4 = 3;
+                                throw value;
+                              } else if (arg0 === 2) {
+                                analyticsLocations = 0;
+                                c4 = 3;
+                                obj = { value, done: true };
+                                return obj;
+                              } else {
+                                closure_0 = value;
+                                analyticsLocations = 0;
+                              }
+                              ref.current = false;
+                              closure_1_7(false);
+                              const tmp12 = closure_0;
+                              if (tmp12) {
+                                const obj8 = { perks: values.filter((item) => selection[item]), content: closure_0(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: closure_0(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                                const _Object = Object;
+                                const trackHexagonCampaignPerkAction = closure_0(analyticsLocations[29]).trackHexagonCampaignPerkAction;
+                                const tmp26 = closure_0(analyticsLocations[29]);
+                                values = Object.values(closure_2_11);
+                                const result = trackHexagonCampaignPerkAction(obj8);
+                                const obj4 = stateFromStores1(analyticsLocations[34]);
+                                obj4.hideActionSheet(closure_0(analyticsLocations[35]).HEXAGON_CAMPAIGN_SHEET_KEY);
+                                const _Object2 = Object;
+                                const values2 = Object.values(selection);
+                                const _Boolean = Boolean;
+                                if (values2.some(Boolean)) {
+                                  const obj9 = { text: intl2.string(stateFromStores1(analyticsLocations[36]).fX2UkH), variant: "success" };
+                                  const open2 = stateFromStores1(analyticsLocations[32]).open;
+                                  const tmp42 = stateFromStores1(analyticsLocations[32]);
+                                  intl2 = closure_0(analyticsLocations[33]).intl;
+                                  open2("HEXAGON_CAMPAIGN_THEME_EQUIPPED", obj9);
+                                }
+                              } else {
+                                const obj10 = { text: intl.string(closure_0(analyticsLocations[33]).t.F8FvUy) };
+                                const open = stateFromStores1(analyticsLocations[32]).open;
+                                const tmp16 = stateFromStores1(analyticsLocations[32]);
+                                intl = closure_0(analyticsLocations[33]).intl;
+                                open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj10);
+                              }
+                            }
+                            c4 = 3;
+                            return { value: "IconComponent", done: null };
+                          } catch (tmp57) {
+                            if (0 === analyticsLocations) {
+                              c4 = 3;
+                              throw tmp57;
+                            } else {
+                              c3 = 1;
+                            }
+                          }
+                        }
+                      });
+                      function handleSave() {
+                        return closure_0(...arguments);
+                      }
+                      cResult[30] = analyticsLocations;
+                      cResult[31] = tmp70;
+                      cResult[32] = stateFromStores1;
+                      cResult[33] = tmp49;
+                      cResult[34] = stateFromStores;
+                      cResult[35] = handleSave;
+                    }
+                    let obj3 = {};
+                    class K {
+                      constructor() {
+                        return HexagonCampaignPersistedStore.previousPerkValues;
+                      }
+                    }
+                    cResult[25] = tmp63;
+                    cResult[26] = displayNameStyles1;
+                    cResult[27] = tmp71;
+                    tmp70 = tmp71;
+                  }
+                }
+              }
+              const tmp13Result = stateFromStores1(tmp2[27]);
+              const result1 = tmp13Result.canUsePremiumProfileCustomization(stateFromStores);
+              let tmp66 = displayNameStyles1;
+              if (tmp40) {
+                class Te {
+                  constructor() {
+                    obj = stateFromStores(analyticsLocations[29]);
+                    const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                    const result = obj.trackHexagonCampaignContentViewed(obj2);
+                  }
+                }
+                const getHexagonCampaignRestoredDisplayNameStyles = tmp67.getHexagonCampaignRestoredDisplayNameStyles;
+                class K {
+                  constructor() {
+                    return HexagonCampaignPersistedStore.previousPerkValues;
+                  }
+                }
+                let obj4 = { currentDisplayNameStyles: undefined, previousDisplayNameStyles: stateFromStores3.displayNameStyles, canUsePremiumProfileCustomization: result1 };
+                const hexagonCampaignRestoredDisplayNameStyles = getHexagonCampaignRestoredDisplayNameStyles(obj4);
+                if (hexagonCampaignRestoredDisplayNameStyles == null) {
+                  class Te {
+                    constructor() {
+                      obj = stateFromStores(analyticsLocations[29]);
+                      const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+                      const result = obj.trackHexagonCampaignContentViewed(obj2);
+                    }
+                  }
+                }
+                tmp66 = hexagonCampaignRestoredDisplayNameStyles;
+              }
+              cResult[19] = displayNameStyles1;
+              cResult[20] = tmp40;
+              cResult[21] = stateFromStores3;
+              cResult[22] = stateFromStores;
+              cResult[23] = result1;
+              cResult[24] = tmp66;
+              tmp64 = tmp66;
+              tmp63 = result1;
+            }
+            let obj5 = {};
+            let merged = Object.assign(tmp29);
+            const merged1 = Object.assign(tmp48);
+            cResult[15] = tmp29;
+            cResult[16] = tmp48;
+            cResult[17] = obj5;
+            tmp49 = obj5;
+          }
+        }
+        let obj6 = {};
+        obj6[tmp16.CLIENT_THEME] = tmp26;
+        obj6[tmp16.DISPLAY_NAME_STYLE] = tmp23 === tmp24;
+        obj6[tmp16.APP_ICON] = tmp28;
+        cResult[4] = tmp26;
+        cResult[5] = tmp23 === tmp24;
+        cResult[6] = tmp28;
+        cResult[7] = obj6;
+        tmp29 = obj6;
+      } else {
+        class Te {
+          constructor() {
+            obj = stateFromStores(analyticsLocations[29]);
+            const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+            const result = obj.trackHexagonCampaignContentViewed(obj2);
+          }
+        }
+        throw new TypeError("Trying to call a non-function");
       }
+    } else {
+      class Te {
+        constructor() {
+          obj = stateFromStores(analyticsLocations[29]);
+          const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+          const result = obj.trackHexagonCampaignContentViewed(obj2);
+        }
+      }
+      throw new TypeError("Trying to call a non-function");
     }
   } else {
+    class Te {
+      constructor() {
+        obj = stateFromStores(analyticsLocations[29]);
+        const obj2 = { content: stateFromStores(analyticsLocations[30]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[30]).QuestContent.QUEST_HOME_MOBILE };
+        const result = obj.trackHexagonCampaignContentViewed(obj2);
+      }
+    }
     throw new TypeError("Trying to call a non-function");
   }
 }) : (function HexagonCampaignSheet() {
@@ -254,6 +671,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let intl2;
   let intl3;
   let intl4;
+  let intl5;
   let items10;
   let items11;
   let items12;
@@ -268,10 +686,12 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let obj17;
   let obj20;
   let obj22;
+  let obj23;
   let obj24;
-  let obj25;
+  let obj32;
   let obj33;
-  let obj35;
+  let obj34;
+  let obj36;
   let obj5;
   let obj8;
   let obj9;
@@ -281,6 +701,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
   let tmp40;
   let tmp56;
   let tmp5Result3;
+  let tmp5Result4;
   let username;
   obj = function _handleSave2() {
     let displayNameStyles;
@@ -394,7 +815,7 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
     });
     return obj(...arguments);
   };
-  let tmp = closure_22();
+  let tmp = closure_23();
   let tmp2 = stateFromStores;
   const tmp3 = analyticsLocations;
   obj = stateFromStores(analyticsLocations[21]);
@@ -508,29 +929,29 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
         if (null == stateFromStores) {
           return null;
         } else {
-          let obj7 = { perk: tmp8.CLIENT_THEME, label: intl.string(tmp5(tmp3[36]).TTUKuI), icon: closure_16(first1, obj8) };
-          intl = tmp2(tmp3[33]).intl;
+          let obj7 = { perk: tmp8.CLIENT_THEME, label: intl2.string(tmp5(tmp3[36]).TTUKuI), icon: closure_16(first1, obj8) };
+          intl2 = tmp2(tmp3[33]).intl;
           obj8 = { style: tmp.rowIcon, children: closure_16(tmp2(tmp3[37]).Gradient, obj9) };
           obj9 = { gradient: HEXAGON_GRADIENT_PRESET, absolute: true };
           const items5 = [obj7, , ];
-          const obj11 = { perk: result1.DISPLAY_NAME_STYLE, label: intl2.string(tmp5(tmp3[36]).fobter), icon: closure_16(first1, obj12) };
-          intl2 = tmp2(tmp3[33]).intl;
+          const obj11 = { perk: result1.DISPLAY_NAME_STYLE, label: intl3.string(tmp5(tmp3[36]).fobter), icon: closure_16(first1, obj12) };
+          intl3 = tmp2(tmp3[33]).intl;
           obj12 = { style: items6, children: closure_16(tmp2(tmp3[38]).Text, obj13) };
           items6 = [, ];
           ({ rowIcon: arr11[0], fontRowIcon: arr11[1] } = tmp);
           obj13 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
           items5[1] = obj11;
-          const obj14 = { perk: result1.APP_ICON, label: intl3.string(tmp5(tmp3[36]).DTv8Yq), icon: closure_16(tmp5Result3, obj15) };
-          intl3 = tmp2(tmp3[33]).intl;
+          const obj14 = { perk: result1.APP_ICON, label: intl4.string(tmp5(tmp3[36]).DTv8Yq), icon: closure_16(tmp5Result3, obj15) };
+          intl4 = tmp2(tmp3[33]).intl;
           obj15 = { id: tmp2(tmp3[28]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
           items5[2] = obj14;
           tmp5Result3 = tmp5(tmp3[39]);
-          const obj16 = { header: closure_17(first1, obj17), footer: closure_16(first1, obj20), startExpanded: true, children: tmp62(first1, obj24) };
+          const obj16 = { header: closure_17(first1, obj17), footer: closure_16(first1, obj20), startExpanded: true, children: tmp63(first1, obj23) };
           obj17 = { children: items7 };
           BottomSheet = tmp2(tmp3[47]).BottomSheet;
-          const obj18 = { title: intl4.string(tmp5(tmp3[36]).rZmLDm) };
+          const obj18 = { title: intl5.string(tmp5(tmp3[36]).rZmLDm) };
           const BottomSheetTitleHeader = tmp2(tmp3[40]).BottomSheetTitleHeader;
-          intl4 = tmp2(tmp3[33]).intl;
+          intl5 = tmp2(tmp3[33]).intl;
           items7 = [closure_16(BottomSheetTitleHeader, obj18), ];
           const obj19 = { style: tmp.badgeRow, children: closure_16(tmp5(tmp3[41]), {}) };
           items7[1] = closure_16(first1, obj19);
@@ -539,8 +960,8 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
           const obj21 = { paddingBottom: sum };
           items8[1] = obj21;
           Button = tmp2(tmp3[42]).Button;
-          const intl5 = tmp2(tmp3[33]).intl;
-          const string = intl5.string;
+          const intl6 = tmp2(tmp3[33]).intl;
+          const string = intl6.string;
           const t = tmp2(tmp3[33]).t;
           obj22 = {
             size: "lg",
@@ -552,36 +973,39 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
             loading: first1,
             disabled: first1
           };
-          obj24 = { style: obj25, children: items12 };
+          obj23 = { style: obj24, children: items12 };
           const _Math2 = Math;
-          let tmp62Result = obj5[tmp8.CLIENT_THEME];
-          obj25 = { paddingBottom: Math.max(tmp40 - sum, 0) };
+          let tmp63Result = obj5[tmp8.CLIENT_THEME];
+          obj24 = { paddingBottom: Math.max(tmp40 - sum, 0) };
           const obj26 = { style: tmp.content, children: items11 };
           const obj27 = { style: tmp.card, children: items10 };
-          const tmp60 = HEXAGON_GRADIENT_PRESET;
-          if (tmp62Result) {
+          const tmp61 = HEXAGON_GRADIENT_PRESET;
+          if (tmp63Result) {
             const obj28 = { children: items9 };
-            const obj29 = { gradient: tmp60, absolute: true, angleOverride };
-            items9 = [tmp58(tmp2(tmp3[37]).Gradient, obj29), ];
+            const obj29 = { gradient: tmp61, absolute: true, angleOverride };
+            items9 = [tmp59(tmp2(tmp3[37]).Gradient, obj29), ];
             const obj30 = { style: tmp.cardShade };
             items9[1] = closure_16(first1, obj30);
-            tmp62Result = tmp62(closure_18, obj28);
+            tmp63Result = tmp63(closure_18, obj28);
           }
-          items10 = [tmp62Result, ];
-          const obj31 = { style: tmp.previewArea, children: closure_16(tmp56, obj33) };
-          const obj32 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, appIconId: HEXAGON, appIconScale: 0.8125, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true };
+          items10 = [tmp63Result, ];
+          const obj31 = { style: tmp.previewArea, children: closure_16(tmp56, obj32) };
+          obj32 = { overlay: closure_16(tmp5(tmp3[39]), obj33), children: closure_16(tmp5Result4, obj34) };
+          const tmp57 = size;
+          obj33 = { id: HEXAGON, size, style: tmp.previewAppIcon };
+          obj34 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl.string(tmp5(tmp3[36])["U/irIt"]) };
           username = stateFromStores.globalName;
-          tmp56 = closure_23;
-          const tmp5Result4 = tmp5(tmp3[43]);
+          tmp56 = closure_24;
+          tmp5Result4 = tmp5(tmp3[43]);
           if (username == null) {
             username = stateFromStores.username;
           }
-          ({ fontId: obj23.selectedFontId, effectId: obj23.selectedEffectId, colors: obj23.selectedColors } = tmp46);
-          obj33 = { children: closure_16(tmp5Result4, obj32) };
+          ({ fontId: obj25.selectedFontId, effectId: obj25.selectedEffectId, colors: obj25.selectedColors } = tmp46);
+          intl = tmp2(tmp3[33]).intl;
           items10[1] = closure_16(first1, obj31);
-          items11 = [tmp62(tmp59, obj27), ];
-          const obj34 = { style: tmp.rows, children: closure_16(TableRowGroup, obj35) };
-          obj35 = {
+          items11 = [tmp63(tmp60, obj27), ];
+          const obj35 = { style: tmp.rows, children: closure_16(TableRowGroup, obj36) };
+          obj36 = {
             hasIcons: true,
             children: items5.map((perk) => {
                       let icon;
@@ -614,10 +1038,10 @@ let tmp8 = ReactCompilerGating.isReactCompilerEnabled() ? (function HexagonCampa
                     })
           };
           TableRowGroup = tmp2(tmp3[44]).TableRowGroup;
-          items11[1] = closure_16(first1, obj34);
-          items12 = [tmp62(tmp59, obj26), ];
-          const obj36 = { style: tmp.legal, children: closure_16(tmp5(tmp3[46]), { showLogo: true }) };
-          items12[1] = closure_16(first1, obj36);
+          items11[1] = closure_16(first1, obj35);
+          items12 = [tmp63(tmp60, obj26), ];
+          const obj37 = { style: tmp.legal, children: closure_16(tmp5(tmp3[46]), { showLogo: true }) };
+          items12[1] = closure_16(first1, obj37);
           return closure_16(BottomSheet, obj16);
         }
       } else {

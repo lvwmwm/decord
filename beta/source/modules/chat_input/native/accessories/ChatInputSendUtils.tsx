@@ -447,7 +447,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "application", source: null, params };
+                          obj = { text: require, parsedMessage, tts: "application", source: 19334128148088540000000000000000000000000000000000000000000000000000000000000000000, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -478,7 +478,7 @@ export const chatInputHandleSendText = function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2002)(13127, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "application", source: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000014029835918600925, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "application", source: "Array", params };
         chatInputSendMessage(obj6);
       }
     }

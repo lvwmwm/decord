@@ -173,7 +173,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
       cResult[13] = tmp16;
       tmp14 = tmp16;
     }
-    const obj11 = { style: tmp10, size: user(1202).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
+    const obj11 = { style: tmp10, size: user(1202).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
     const Avatar = tmp(1202).Avatar;
     const tmp13 = closure_5(Avatar, obj11);
     cResult[7] = tmp10;
@@ -209,7 +209,7 @@ let closure_9 = ReactCompilerGating.isReactCompilerEnabled() ? (function SharedU
   if (tmp6) {
     erroredAvatar = tmp.erroredAvatar;
   }
-  let obj3 = { style: items, size: tmp5(1202).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "a" };
+  let obj3 = { style: items, size: tmp5(1202).AvatarSizes.REFRESH_MEDIUM_32, user, guildId: "Array" };
   items[1] = erroredAvatar;
   items1 = [closure_5(Avatar, obj3), , ];
   if (tmp6) {

@@ -189,7 +189,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DefaultKeywo
     const tmp3 = arg1;
     if (tmp3) {
       const items = [];
-      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== set), 0)] = arg0;
+      items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = arg0;
       found = items;
     } else {
       found = filter((arg0) => arg0 !== closure_0);

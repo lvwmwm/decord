@@ -210,9 +210,9 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   let items2;
   navigation = navigation.navigation;
   closure_1 = undefined;
-  const tmp = closure_9();
+  let tmp = closure_9();
   [first, closure_1] = react.useState(0);
-  const items = [navigation];
+  let items = [navigation];
   const callback = react.useCallback((channelId) => {
     const obj = { channelId };
     return navigation.push("preview", obj);
@@ -220,25 +220,24 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
   const callback1 = react.useCallback((nativeEvent) => {
     closure_1(nativeEvent.nativeEvent.layout.width);
   }, []);
+  let tmp6 = SegmentedControlState;
   let obj = { items: items1, pageWidth: first, defaultIndex: 0 };
-  const obj2 = { label: intl.string(intl3.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
-  const useSegmentedControlState = SegmentedControlState.useSegmentedControlState;
-  SegmentedControlState;
+  let obj2 = { label: intl.string(intl3.t["7RFcXZ"]), id: constants.REQUEST, page: metroRequire(MessageRequestListDefault, { goToMessageRequestPreview: callback }) };
+  const useSegmentedControlState = tmp6.useSegmentedControlState;
   intl = intl3.intl;
   items1 = [obj2, ];
-  const obj3 = { label: intl2.string(intl3.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
+  let obj3 = { label: intl2.string(intl3.t.ulKXHp), id: constants.SPAM, page: metroRequire(SpamMessageListDefault, { goToMessageRequestPreview: callback }) };
   intl2 = intl3.intl;
   items1[1] = obj3;
   const segmentedControlState = useSegmentedControlState(obj);
-  const obj4 = { style: tmp.container, children: items2 };
-  items2 = [, , ];
-  const obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
-  items2[0] = metroRequire(View, obj5);
-  const obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
+  let obj4 = { style: tmp.container, children: items2 };
+  let obj5 = { style: tmp.tabContainer, onLayout: callback1, children: metroRequire(SegmentedControl.SegmentedControl, { state: segmentedControlState }) };
+  items2 = [metroRequire(View, obj5), , ];
+  let obj6 = { style: tmp.messageRequestContent, children: metroRequire(SegmentedControlPages.SegmentedControlPages, { state: segmentedControlState }) };
   items2[1] = metroRequire(View, obj6);
   items2[2] = metroRequire(TTIFirstContentfulPaint.TTIFirstContentfulPaint, { label: "message_requests" });
   return metroImportDefault(View, obj4);
 }));
-const result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
+let result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/screens/MessageRequestsScreenWithTabs.tsx");
 
 export default memoResult;

@@ -459,7 +459,6 @@ obj = function _resetGuildJoinRequest() {
     let c4 = 0;
     return (async (arg0, value) => {
       let obj9;
-      let tmp;
       if (c6 === 2) {
         c6 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");

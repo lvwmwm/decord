@@ -148,7 +148,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "test", isSoundsEnabled: "y", isNotifyEveryTime: "IconComponent" }));
+let closure_4 = module_1269.createWithEqualityFn(() => ({ isLightsEnabled: "concat", isVibrationsEnabled: "backgroundColor", isSoundsEnabled: "e", isNotifyEveryTime: "user" }));
 let ReactCompilerGating = ReactCompilerGating_mod;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAndroidNotificationLightsEnabled() {
   let first;

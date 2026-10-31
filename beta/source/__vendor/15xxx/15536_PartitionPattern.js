@@ -26,7 +26,7 @@ export const PartitionPattern = function PartitionPattern(arr) {
           let push = items.push;
           arr = push(obj);
         }
-        let obj2 = { type: arr.substring(index + 1, index1), value: "r" };
+        let obj2 = { type: arr.substring(index + 1, index1), value: "a" };
         let push2 = items.push;
         let push2Result = push2(obj2);
         let sum = index1 + 1;

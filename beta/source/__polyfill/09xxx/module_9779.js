@@ -365,7 +365,7 @@ export const useHeaderConfigProps = function useHeaderConfigProps(headerLargeTit
   let tmp19 = null != headerBack;
   let headerLeftResult;
   if (headerLeft != null) {
-    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "a" };
+    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "Array" };
     tmp21 = headerBackTitle;
     if (headerBackTitle == null) {
       let title1;
@@ -489,7 +489,7 @@ export const useHeaderConfigProps = function useHeaderConfigProps(headerLargeTit
     tmp45 = closure_10(ScreenStackHeaderSearchBarView, obj19);
   }
   items7[3] = tmp45;
-  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "gap", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: "jsona", headerRightBarButtonItems: "amount", experimental_userInterfaceStyle: "bit" };
+  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "gap", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: null, headerRightBarButtonItems: "\u{1F6B5}\u{1F3FC}\u200D\u2642\uFE0F", experimental_userInterfaceStyle: true };
   tmp51 = false === headerShadowVisible;
   tmp34Result2 = closure_12(closure_11, { children: items7 });
   if (!tmp51) {

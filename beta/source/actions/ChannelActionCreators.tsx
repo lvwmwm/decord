@@ -471,7 +471,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "r", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "toCharArray$esjava$1" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

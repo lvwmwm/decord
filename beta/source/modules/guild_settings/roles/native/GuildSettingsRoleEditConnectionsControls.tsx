@@ -788,7 +788,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
         tmp2 = arg1;
       }
       const items = [...arr5];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: tmp2, operator: "length", value: "y" };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: tmp2, operator: "now", value: null };
       items.push(obj);
       const updateRoleConnectionConfigurations = GuildSettingsRolesActionCreators.updateRoleConnectionConfigurations;
       const id = role.id;
@@ -990,7 +990,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildSetting
     handleConnectionTapped(connectionType, applicationId) {
       let values2;
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "length", value: "y" };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId, operator: "now", value: null };
       items.push(obj);
       const updateRoleConnectionConfigurations = GuildSettingsRolesActionCreators.updateRoleConnectionConfigurations;
       const id = role.id;

@@ -286,10 +286,10 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
         const intl4 = tmp2(1128).intl;
         const format3 = intl4.format;
         const _Math3 = Math;
-        const obj6 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
+        const obj3 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
         const Kj5GIT = tmp2(1128).t.Kj5GIT;
-        [obj5.role1, obj5.role2] = mapped;
-        str6 = format3(Kj5GIT, obj6);
+        [obj6.role1, obj6.role2] = mapped;
+        str6 = format3(Kj5GIT, obj3);
       }
       str = str6;
       str2 = "";
@@ -305,7 +305,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
       const _Math = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
       const Rj841R = tmp2(1128).t.Rj841R;
-      [obj3.channel1, obj3.channel2] = stateFromStoresArray1;
+      [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str3 = format(Rj841R, obj11);
     }
     let str4 = "";
@@ -317,7 +317,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePromptH
         const _Math2 = Math;
         const obj12 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
         const cJZxWf = tmp2(1128).t.cJZxWf;
-        [obj4.role1, obj4.role2] = mapped;
+        [obj5.role1, obj5.role2] = mapped;
         str5 = format2(cJZxWf, obj12);
       }
       str4 = str5;

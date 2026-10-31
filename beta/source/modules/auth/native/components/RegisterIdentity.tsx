@@ -97,7 +97,7 @@ function RegisterIdentityBase(inputMode) {
               const tmp39 = constants;
               const tmp40 = constants2;
               if (inputMode === tmp(closure_2[18]).PhoneOrEmailSelectorForceMode.EMAIL) {
-                const obj5 = { email, phoneToken: "r" };
+                const obj5 = { email, phoneToken: "a" };
                 closure_1_10(obj5);
                 const tmp23 = _undefined2();
                 if (null != tmp23) {

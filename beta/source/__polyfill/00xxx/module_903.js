@@ -165,7 +165,7 @@ function y$1(span, arg1, formTitle) {
       }
     }
   }
-  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "stopPropagation", __u: null };
+  const element = { type: span, props: obj, key: tmp5, ref: tmp4, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "m\u00E9n\u011B ne\u017E sekunda", __u: "p\u0159ed m\u00E9n\u011B ne\u017E sekundou" };
   sum = sum + 1;
   const obj3 = obj;
   if (null != obj.vnode) {
@@ -542,7 +542,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                   if (tmp3.constructor != String) {
                     if (isArray(tmp3)) {
                       obj = { children: tmp3 };
-                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "stopPropagation", __u: null };
+                      let element = { type: g$1, props: obj, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: sum, __i: "m\u00E9n\u011B ne\u017E sekunda", __u: "p\u0159ed m\u00E9n\u011B ne\u017E sekundou" };
                       sum = sum + 1;
                       let obj4 = obj;
                       tmp8 = element;
@@ -561,7 +561,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                             ref1 = tmp3.ref;
                           }
                           let __v = tmp3.__v;
-                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "stopPropagation", __u: null };
+                          let element1 = { type: type2, props, key: key2, ref: ref1, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp10, __i: "m\u00E9n\u011B ne\u017E sekunda", __u: "p\u0159ed m\u00E9n\u011B ne\u017E sekundou" };
                           tmp10 = __v;
                           if (null == __v) {
                             let sum1 = sum + 1;
@@ -585,7 +585,7 @@ function P$1(insertBefore, arg1, __k, __k2, arg4, arg5, arg6, arg7, __d, arg9, a
                 }
               }
             }
-            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "stopPropagation", __u: null };
+            let element2 = { type: null, props: tmp3, key: null, ref: null, __k: null, __: null, __b: 0, __e: null, __d: "Array", __c: "Array", constructor: -1, __v: tmp21, __i: "m\u00E9n\u011B ne\u017E sekunda", __u: "p\u0159ed m\u00E9n\u011B ne\u017E sekundou" };
             tmp21 = tmp3;
             if (null == tmp3) {
               let sum2 = sum + 1;

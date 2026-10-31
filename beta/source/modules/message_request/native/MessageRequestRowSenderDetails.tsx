@@ -34,7 +34,7 @@ createStyles = createStyles.createStyles;
 obj3 = { flexShrink: 1, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 let closure_8 = createStyles(obj);
 let closure_9 = ReactCompilerGating.isReactCompilerEnabled();
-let result = size.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
+const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestRowSenderDetails.tsx");
 
 export default function MessageRequestRowSenderDetails(isRestricted) {
   let Avatar;
@@ -58,7 +58,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let otherUser2;
   let stringResult1;
   let tmp14Result2;
-  let tmp = closure_9;
+  const tmp = closure_9;
   if (tmp) {
     let first;
     let tmp35;
@@ -70,7 +70,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const tmp31 = closure_8();
     const _Symbol = Symbol;
     if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
-      let items = [RelationshipStore];
+      const items = [RelationshipStore];
       cResult[0] = items;
       first = items;
     } else {
@@ -104,7 +104,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const floor2 = Math.floor;
     const random = Math.random();
     const floor2Result = floor2(random * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
-    const tmp41 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floor2Result];
+    let tmp41 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floor2Result];
     if (cResult[3] === otherUser2) {
       let tmp42;
       if (cResult[4] === tmp31.avatar) {
@@ -231,7 +231,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                         }
                         let tmp78 = !tmp29;
                         if (tmp78) {
-                          const obj8 = { style: tmp31.messagePreview, channel: channel2 };
+                          let obj8 = { style: tmp31.messagePreview, channel: channel2 };
                           tmp78 = closure_5(tmp39(18371), obj8);
                         }
                         cResult[31] = channel2;
@@ -253,7 +253,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
                   tmp73 = tmp76;
                 }
               }
-              let obj10 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.usernameTextContainer, children: items4 };
+              const obj10 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp31.usernameTextContainer, children: items4 };
               items4 = [tmp58, tmp61];
               const tmp66 = closure_6(otherUser(5266).Text, obj10);
               cResult[18] = tmp31.usernameTextContainer;
@@ -292,7 +292,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
           stringResult = username1;
         }
         if (stringResult == null) {
-          const intl3 = tmp26(1128).intl;
+          let intl3 = tmp26(1128).intl;
           stringResult = intl3.string(tmp26(1128).t["30mdIx"]);
         }
         let username2;
@@ -337,8 +337,8 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     let tmp2 = closure_8;
     const tmp3 = closure_8();
     const tmp4 = otherUser;
+    let tmp5 = dependencyMap;
     let obj = otherUser(504);
-    let tmp6 = RelationshipStore;
     const items6 = [RelationshipStore];
     const stateFromStores1 = obj.useStateFromStores(items6, () => {
       let tmp2 = null;
@@ -359,9 +359,9 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     const random1 = Math.random();
     const obj16 = { style: tmp3.avatarContainer, children: closure_5(Avatar, obj19) };
     const floorResult = floor(random1 * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
-    const tmp15 = closure_7;
     const tmp13 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floorResult];
     Avatar = otherUser(1202).Avatar;
+    const tmp15 = closure_7;
     if (null != otherUser) {
       const obj18 = { avatarStyle: tmp3.avatar, user: otherUser, guildId: "IconComponent", disablePlaceholder: null, avatarDecoration: avatarDecoration1 };
       avatarDecoration1 = undefined;
@@ -372,7 +372,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     } else {
       obj19 = { avatarStyle: tmp3.avatar, source: tmp13 };
     }
-    const items7 = [tmp16(tmp17, obj16), ];
+    const items7 = [closure_5(tmp17, obj16), ];
     const obj20 = { style: tmp3.detailsContainer, children: items11 };
     const obj21 = { style: tmp3.messageDetails, children: items10 };
     const obj22 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp3.usernameTextContainer, children: items8 };
@@ -388,10 +388,10 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
       stringResult1 = username3;
     }
     if (stringResult1 == null) {
-      const intl = tmp4(1128).intl;
+      let intl = tmp4(1128).intl;
       stringResult1 = intl.string(tmp4(1128).t["30mdIx"]);
     }
-    items8 = [tmp16(Text2, obj23), ];
+    items8 = [closure_5(Text2, obj23), ];
     let tmp14Result = null != stateFromStores1;
     if (tmp14Result) {
       const obj24 = { variant: "text-md/medium", color: "text-muted", children: items9 };

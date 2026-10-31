@@ -471,8 +471,8 @@ const memo2Result = memo2(ReactCompilerGating.isReactCompilerEnabled() ? (functi
   const items = [onPressEmoji];
   const stateFromStores = obj2.useStateFromStores(items, () => onPressEmoji.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
-    const obj = onPressEmoji(substr[17]);
     const obj2 = { emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI };
+    const obj = onPressEmoji(substr[17]);
     return !obj.isEmojiFilteredOrLocked(obj2);
   });
   substr = found.slice(0, rounded - 1);

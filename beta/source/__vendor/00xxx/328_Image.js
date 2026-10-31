@@ -62,7 +62,7 @@ let obj = function _queryCache() {
 const use = react2.use;
 const jsx = Fragment.jsx;
 let closure_6 = 1;
-let closure_8 = { uri: "toCharArray$esjava$1", width: "test", height: "ix" };
+let closure_8 = { uri: "Boolean", width: "emoji", height: "toCharArray$esjava$1" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;

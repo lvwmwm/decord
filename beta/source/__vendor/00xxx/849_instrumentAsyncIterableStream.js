@@ -263,6 +263,7 @@ let obj = function _instrumentAsyncIterableStream() {
       throw new TypeError("Generator functions may not be called on executing generators");
     } else {
       let str2 = "";
+      const flag = true;
       if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
@@ -303,7 +304,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "get", cacheReadInputTokens: "isReactCompilerEnabled", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "channelId", cacheReadInputTokens: "it", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -1062,21 +1063,21 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "get", cacheReadInputTokens: "isReactCompilerEnabled", toolCalls: [], activeToolBlocks: {} };
+  let closure_2 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "channelId", cacheReadInputTokens: "it", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
-    processEvent(arg0, obj, flag, closure_0);
+    processEvent(arg0, closure_2, flag, closure_0);
   });
   applyResult.on("message", () => {
     let tmp2 = closure_1;
     if (closure_0.isRecording()) {
-      if (obj.responseId) {
+      if (closure_2.responseId) {
         const obj2 = {};
-        obj2[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_ID_ATTRIBUTE] = obj.responseId;
+        obj2[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_ID_ATTRIBUTE] = closure_2.responseId;
         closure_0.setAttributes(obj2);
       }
-      if (obj.responseModel) {
+      if (closure_2.responseModel) {
         const obj3 = {};
-        obj3[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = obj.responseModel;
+        obj3[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_MODEL_ATTRIBUTE] = closure_2.responseModel;
         closure_0.setAttributes(obj3);
       }
       const obj4 = extractSystemInstructions;
@@ -1085,14 +1086,14 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
       closure_1 = true;
       obj5[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_STREAMING_ATTRIBUTE] = true;
       closure_0.setAttributes(obj5);
-      if (obj.finishReasons.length > 0) {
+      if (closure_2.finishReasons.length > 0) {
         const obj6 = {};
         const setAttributes = obj.setAttributes;
         const _JSON = JSON;
-        obj6[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(obj.finishReasons);
+        obj6[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_FINISH_REASONS_ATTRIBUTE] = JSON.stringify(closure_2.finishReasons);
         setAttributes(obj6);
       }
-      const tmp21 = tmp2 && obj.responseTexts.length > 0;
+      const tmp21 = tmp2 && closure_2.responseTexts.length > 0;
       if (tmp21) {
         const obj7 = {};
         const setAttributes2 = obj.setAttributes;
@@ -1107,7 +1108,7 @@ export const instrumentMessageStream = function instrumentMessageStream(applyRes
         const obj8 = {};
         const setAttributes3 = obj.setAttributes;
         const _JSON2 = JSON;
-        obj8[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(obj.toolCalls);
+        obj8[ANTHROPIC_AI_RESPONSE_TIMESTAMP_ATTRIBUTE.GEN_AI_RESPONSE_TOOL_CALLS_ATTRIBUTE] = JSON.stringify(closure_2.toolCalls);
         setAttributes3(obj8);
       }
       closure_0.end();

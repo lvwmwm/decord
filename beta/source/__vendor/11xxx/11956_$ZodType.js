@@ -2793,8 +2793,8 @@ export const $ZodOptional = NEVER.$constructor("$ZodOptional", (_zod, arg1) => {
           if (issues.issues.length) {
             tmp2 = issues;
             if (undefined === tmp) {
-              tmp2 = { issues: [], value: "r" };
-              const obj = { issues: [], value: "r" };
+              tmp2 = { issues: [], value: "a" };
+              const obj = { issues: [], value: "a" };
             }
           }
           return tmp2;
@@ -2804,7 +2804,7 @@ export const $ZodOptional = NEVER.$constructor("$ZodOptional", (_zod, arg1) => {
         if (runResult.issues.length) {
           nextPromise = runResult;
           if (undefined === tmp4) {
-            let obj = { issues: [], value: "r" };
+            let obj = { issues: [], value: "a" };
             nextPromise = obj;
           }
         }

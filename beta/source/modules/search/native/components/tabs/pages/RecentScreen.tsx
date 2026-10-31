@@ -185,7 +185,7 @@ let closure_19 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSug
       }
       return tmp9;
     }
-    const items = [];
+    let items = [];
     if (0 !== arr.length) {
       let item = arr.forEach((item) => {
         let obj;

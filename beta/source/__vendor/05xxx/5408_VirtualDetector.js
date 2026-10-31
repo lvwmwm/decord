@@ -91,7 +91,7 @@ export const VirtualDetector = function VirtualDetector(children) {
           if (obj.gesture.config.shouldUseReanimatedDetector) {
             setMode(children(register[4]).InterceptingDetectorMode.REANIMATED);
           }
-          obj = { viewTag: tmp, handlerTags, methods: obj.gesture.detectorCallbacks, viewRef: "a", userSelect: "Array", touchAction: "1070132870233980928", enableContextMenu: "googleAuthorizationFingerprint" };
+          obj = { viewTag: tmp, handlerTags, methods: obj.gesture.detectorCallbacks, viewRef: "a", userSelect: null, touchAction: null, enableContextMenu: null };
           ({ userSelect: obj.userSelect, touchAction: obj.touchAction, enableContextMenu: obj.enableContextMenu } = obj);
           register(obj);
           return () => {

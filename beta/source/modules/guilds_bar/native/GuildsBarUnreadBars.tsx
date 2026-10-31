@@ -233,7 +233,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               return tmp37;
             }
-            let obj6 = { beforeItem: obj7, afterItem: "r" };
+            let obj6 = { beforeItem: obj7, afterItem: "a" };
             obj7 = { section: sum, row: tmp32.item, mention: true };
             return obj6;
           }
@@ -253,7 +253,7 @@ const jsx = Fragment.jsx;
 let obj = { wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } };
 let closure_15 = createStyles.createStyles(obj);
 let closure_17 = { beforeItem: "Array", afterItem: "Reflect" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "a" };
 let ReactCompilerGating = ReactCompilerGating_mod;
 let closure_20 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUnreadBarWrapperStyles() {
   const obj = react2;

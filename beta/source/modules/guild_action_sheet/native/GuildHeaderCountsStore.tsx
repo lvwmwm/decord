@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "emoji", memberCount: "toCharArray$esjava$1" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "emoji", memberCount: "toCharArray$esjava$1" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "toCharArray$esjava$1", onlineCount: "test", memberCount: "ix" };
+      closure_6[guildId] = { activeChannelsCount: "Boolean", onlineCount: "emoji", memberCount: "toCharArray$esjava$1" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

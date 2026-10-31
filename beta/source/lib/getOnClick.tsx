@@ -337,7 +337,7 @@ export default function getOnClick(url) {
         openURLDefault(url);
         return true;
       }
-      result = { applicationId: code, skuId: "r" };
+      result = { applicationId: code, skuId: "a" };
     };
   }
   if (null != findCodedLinkResult) {

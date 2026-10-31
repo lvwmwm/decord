@@ -181,8 +181,8 @@ export const getDefaultIcon = function getDefaultIcon() {
   intl = intl25.intl;
   return obj;
 };
-export const isHexagonCampaignAppIcon = function isHexagonCampaignAppIcon(currentAppIcon) {
-  return currentAppIcon === AppIconTypes.LimitedTimeAppIconIds.HEXAGON;
+export const isHexagonCampaignAppIcon = function isHexagonCampaignAppIcon(HEXAGON) {
+  return HEXAGON === AppIconTypes.LimitedTimeAppIconIds.HEXAGON;
 };
 export const isIconExpired = function isIconExpired(expiresAt) {
   let tmp = null != expiresAt.expiresAt;

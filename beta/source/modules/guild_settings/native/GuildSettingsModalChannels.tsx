@@ -106,8 +106,7 @@ class Category extends PureComponent {
     if (sortingEnabled) {
       sortHandlers = self.props.sortHandlers;
     }
-    const tmp3 = authStore3;
-    let obj = {
+    const obj = {
       accessibilityRole: "button",
       accessibilityActions: items,
       onAccessibilityAction(nativeEvent) {
@@ -122,14 +121,15 @@ class Category extends PureComponent {
         return tmp;
       },
       underlayColor: hex2rgbResult,
-      children: tmp3(tmp13, obj7)
+      children: authStore3(tmp13, obj7)
     };
-    let obj2 = { name: "activate", label: intl.string(intl5.t.bt75uw) };
+    const obj2 = { name: "activate", label: intl.string(intl5.t.bt75uw) };
     intl = intl5.intl;
     items = [obj2];
-    let obj3 = shared;
+    const obj3 = shared;
     const isThemeDarkResult = obj3.isThemeDark(self.context.theme);
     const hex2rgb = utils_ColorUtils.hex2rgb;
+    utils_ColorUtils;
     const unsafe_rawColors = nativeDefault.unsafe_rawColors;
     const tmp4 = metroRequire;
     if (isThemeDarkResult) {
@@ -140,7 +140,7 @@ class Category extends PureComponent {
       tmp11 = tmp9;
     }
     const merged = Object.assign(sortHandlers);
-    let obj4 = { title: category.name, numberOfLines: 1, textStyle: tmp.categoryText, viewStyle: items1, icon: tmp3Result };
+    const obj4 = { title: category.name, numberOfLines: 1, textStyle: tmp.categoryText, viewStyle: items1, icon: tmp3Result };
     items1 = [tmp.categoryView, ];
     let sortingCategoryView = null;
     const FormTitle = tmp5(8983).FormTitle;
@@ -165,8 +165,8 @@ class Category extends PureComponent {
         tmp3Result = tmp3(Icon, obj6);
       }
     }
-    obj7 = { children: tmp3(FormTitle, obj4) };
-    return tmp3(tmp4, obj);
+    obj7 = { children: authStore3(FormTitle, obj4) };
+    return authStore3(tmp4, obj);
   }
 }
 const prototype = Category.prototype;

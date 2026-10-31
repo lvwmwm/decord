@@ -240,7 +240,7 @@ export default function getJankScreenName() {
         }
         ({ focused, rendered } = obj5);
         if (0 === focused.length) {
-          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "__didUploadProgress" };
+          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "__didReceiveResponse" };
           obj10 = obj9;
         } else {
           obj10 = { screen: resolveScreenName(focused), expectedScreenIds: mapped1.join(","), focusedRoute: focused[focused.length - 1], chatScreens: tmp17 };

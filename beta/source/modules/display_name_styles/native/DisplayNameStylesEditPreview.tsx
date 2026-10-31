@@ -9,7 +9,6 @@ import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import _modDef2928 from "module_2928" /* 2928 */;
 import DateUtils from "DateUtils" /* 4828 */;
 import Text_Text from "Text/Text" /* 5266 */;
 import useAvatarDecoration from "useAvatarDecoration" /* 6814 */;
@@ -67,6 +66,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let NameplatePreview;
   let appIconId;
   let appIconScale;
+  let chatMessage;
   let closure_2;
   let displayName;
   let guildId;
@@ -88,10 +88,10 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   let tmp43;
   let userNameplate;
   const obj = user(576);
-  const cResult = obj.c(58);
+  const cResult = obj.c(59);
   user = user.user;
   ({ displayName, guildId } = user);
-  ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut, appIconId, appIconScale, hideNameplate, hideBadges, hidePronouns, hideGuildTag, tilted } = user);
+  ({ selectedFontId, selectedEffectId, selectedColors, isTryItOut, appIconId, appIconScale, hideNameplate, hideBadges, hidePronouns, hideGuildTag, tilted, chatMessage } = user);
   dependencyMap = tmp4;
   let num = 1;
   if (undefined !== appIconScale) {
@@ -173,70 +173,72 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                 tmp29 = cResult[27];
                               }
                               if (cResult[28] === stateFromStores) {
-                                if (cResult[29] === displayName) {
-                                  if (cResult[30] === tmp18) {
-                                    if (cResult[31] === guildId) {
-                                      if (cResult[32] === (undefined !== isTryItOut && isTryItOut)) {
-                                        let tmp30;
-                                        if (cResult[33] === user) {
-                                          tmp30 = cResult[34];
-                                        }
-                                        if (cResult[35] === tmp29) {
-                                          let tmp34;
-                                          if (cResult[36] === tmp30) {
-                                            tmp34 = cResult[37];
+                                if (cResult[29] === chatMessage) {
+                                  if (cResult[30] === displayName) {
+                                    if (cResult[31] === tmp18) {
+                                      if (cResult[32] === guildId) {
+                                        if (cResult[33] === (undefined !== isTryItOut && isTryItOut)) {
+                                          let tmp30;
+                                          if (cResult[34] === user) {
+                                            tmp30 = cResult[35];
                                           }
-                                          if (cResult[38] === stateFromStores) {
-                                            if (cResult[39] === displayName) {
-                                              if (cResult[40] === tmp18) {
-                                                if (cResult[41] === guildId) {
-                                                  if (cResult[42] === tmp12) {
-                                                    if (cResult[43] === (undefined !== hideNameplate && hideNameplate)) {
-                                                      if (cResult[44] === pendingNameplate) {
-                                                        if (cResult[45] === tmp9.nameplatePreviewWrapper) {
-                                                          if (cResult[46] === user) {
-                                                            let tmp38;
-                                                            if (cResult[47] === userNameplate) {
-                                                              tmp38 = cResult[48];
-                                                            }
-                                                            if (cResult[49] === appIconId) {
-                                                              let tmp45;
-                                                              if (cResult[50] === tmp10) {
-                                                                tmp45 = cResult[51];
+                                          if (cResult[36] === tmp29) {
+                                            let tmp34;
+                                            if (cResult[37] === tmp30) {
+                                              tmp34 = cResult[38];
+                                            }
+                                            if (cResult[39] === stateFromStores) {
+                                              if (cResult[40] === displayName) {
+                                                if (cResult[41] === tmp18) {
+                                                  if (cResult[42] === guildId) {
+                                                    if (cResult[43] === tmp12) {
+                                                      if (cResult[44] === (undefined !== hideNameplate && hideNameplate)) {
+                                                        if (cResult[45] === pendingNameplate) {
+                                                          if (cResult[46] === tmp9.nameplatePreviewWrapper) {
+                                                            if (cResult[47] === user) {
+                                                              let tmp38;
+                                                              if (cResult[48] === userNameplate) {
+                                                                tmp38 = cResult[49];
                                                               }
-                                                              if (cResult[52] === tmp20) {
-                                                                if (cResult[53] === tmp25) {
-                                                                  if (cResult[54] === tmp34) {
-                                                                    if (cResult[55] === tmp38) {
-                                                                      let tmp50;
-                                                                      if (cResult[56] === tmp45) {
-                                                                        tmp50 = cResult[57];
+                                                              if (cResult[50] === appIconId) {
+                                                                let tmp45;
+                                                                if (cResult[51] === tmp10) {
+                                                                  tmp45 = cResult[52];
+                                                                }
+                                                                if (cResult[53] === tmp20) {
+                                                                  if (cResult[54] === tmp25) {
+                                                                    if (cResult[55] === tmp34) {
+                                                                      if (cResult[56] === tmp38) {
+                                                                        let tmp50;
+                                                                        if (cResult[57] === tmp45) {
+                                                                          tmp50 = cResult[58];
+                                                                        }
+                                                                        return tmp50;
                                                                       }
-                                                                      return tmp50;
                                                                     }
                                                                   }
                                                                 }
+                                                                let obj2 = { style: tmp20, children: items1 };
+                                                                items1 = [tmp25, tmp34, tmp38, tmp45];
+                                                                const tmp53 = closure_8(View, obj2);
+                                                                cResult[53] = tmp20;
+                                                                cResult[54] = tmp25;
+                                                                cResult[55] = tmp34;
+                                                                cResult[56] = tmp38;
+                                                                cResult[57] = tmp45;
+                                                                cResult[58] = tmp53;
+                                                                tmp50 = tmp53;
                                                               }
-                                                              let obj2 = { style: tmp20, children: items1 };
-                                                              items1 = [tmp25, tmp34, tmp38, tmp45];
-                                                              const tmp53 = closure_8(View, obj2);
-                                                              cResult[52] = tmp20;
-                                                              cResult[53] = tmp25;
-                                                              cResult[54] = tmp34;
-                                                              cResult[55] = tmp38;
-                                                              cResult[56] = tmp45;
-                                                              cResult[57] = tmp53;
-                                                              tmp50 = tmp53;
+                                                              let tmp47 = null != appIconId;
+                                                              if (tmp47) {
+                                                                let obj3 = { id: appIconId, size: 102, style: tmp10.appIconTilted };
+                                                                tmp47 = closure_7(guildId(16418), obj3);
+                                                              }
+                                                              cResult[50] = appIconId;
+                                                              cResult[51] = tmp10;
+                                                              cResult[52] = tmp47;
+                                                              tmp45 = tmp47;
                                                             }
-                                                            let tmp47 = null != appIconId;
-                                                            if (tmp47) {
-                                                              let obj3 = { id: appIconId, size: 102, style: tmp10.appIconTilted };
-                                                              tmp47 = closure_7(guildId(16418), obj3);
-                                                            }
-                                                            cResult[49] = appIconId;
-                                                            cResult[50] = tmp10;
-                                                            cResult[51] = tmp47;
-                                                            tmp45 = tmp47;
                                                           }
                                                         }
                                                       }
@@ -245,56 +247,57 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
                                                 }
                                               }
                                             }
-                                          }
-                                          let tmp40Result = !tmp5;
-                                          if (tmp40Result) {
-                                            const obj4 = { style: tmp9.nameplatePreviewWrapper, children: closure_7(NameplatePreview, obj5) };
-                                            obj5 = { user, nameplate: pendingNameplate, nameplateData: tmp43, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp18, pendingGlobalName: displayName };
-                                            tmp43 = undefined;
-                                            NameplatePreview = tmp(11206).NameplatePreview;
-                                            const tmp41 = View;
-                                            if (null == pendingNameplate) {
-                                              let tmp44 = tmp12;
-                                              if (tmp12 == null) {
-                                                tmp44 = userNameplate;
+                                            let tmp40Result = !tmp5;
+                                            if (tmp40Result) {
+                                              const obj4 = { style: tmp9.nameplatePreviewWrapper, children: closure_7(NameplatePreview, obj5) };
+                                              obj5 = { user, nameplate: pendingNameplate, nameplateData: tmp43, guildId, pendingAvatarSrc: stateFromStores, pendingDisplayNameStyles: tmp18, pendingGlobalName: displayName };
+                                              tmp43 = undefined;
+                                              NameplatePreview = tmp(11206).NameplatePreview;
+                                              const tmp41 = View;
+                                              if (null == pendingNameplate) {
+                                                let tmp44 = tmp12;
+                                                if (tmp12 == null) {
+                                                  tmp44 = userNameplate;
+                                                }
+                                                tmp43 = tmp44;
                                               }
-                                              tmp43 = tmp44;
+                                              tmp40Result = tmp40(tmp41, obj4);
                                             }
-                                            tmp40Result = tmp40(tmp41, obj4);
+                                            cResult[39] = stateFromStores;
+                                            cResult[40] = displayName;
+                                            cResult[41] = tmp18;
+                                            cResult[42] = guildId;
+                                            cResult[43] = tmp12;
+                                            cResult[44] = undefined !== hideNameplate && hideNameplate;
+                                            cResult[45] = pendingNameplate;
+                                            cResult[46] = tmp9.nameplatePreviewWrapper;
+                                            cResult[47] = user;
+                                            cResult[48] = userNameplate;
+                                            cResult[49] = tmp40Result;
+                                            tmp38 = tmp40Result;
                                           }
-                                          cResult[38] = stateFromStores;
-                                          cResult[39] = displayName;
-                                          cResult[40] = tmp18;
-                                          cResult[41] = guildId;
-                                          cResult[42] = tmp12;
-                                          cResult[43] = undefined !== hideNameplate && hideNameplate;
-                                          cResult[44] = pendingNameplate;
-                                          cResult[45] = tmp9.nameplatePreviewWrapper;
-                                          cResult[46] = user;
-                                          cResult[47] = userNameplate;
-                                          cResult[48] = tmp40Result;
-                                          tmp38 = tmp40Result;
+                                          const obj6 = { style: tmp29, children: tmp30 };
+                                          const tmp37 = closure_7(View, obj6);
+                                          cResult[36] = tmp29;
+                                          cResult[37] = tmp30;
+                                          cResult[38] = tmp37;
+                                          tmp34 = tmp37;
                                         }
-                                        const obj6 = { style: tmp29, children: tmp30 };
-                                        const tmp37 = closure_7(View, obj6);
-                                        cResult[35] = tmp29;
-                                        cResult[36] = tmp30;
-                                        cResult[37] = tmp37;
-                                        tmp34 = tmp37;
                                       }
                                     }
                                   }
                                 }
                               }
-                              const obj7 = { user, displayName, displayNameStyles: tmp18, guildId, avatarSrcOverride: stateFromStores, isTryItOut: undefined !== isTryItOut && isTryItOut };
+                              const obj7 = { user, displayName, displayNameStyles: tmp18, guildId, avatarSrcOverride: stateFromStores, isTryItOut: undefined !== isTryItOut && isTryItOut, chatMessage };
                               const tmp33 = closure_7(closure_11, obj7);
                               cResult[28] = stateFromStores;
-                              cResult[29] = displayName;
-                              cResult[30] = tmp18;
-                              cResult[31] = guildId;
-                              cResult[32] = undefined !== isTryItOut && isTryItOut;
-                              cResult[33] = user;
-                              cResult[34] = tmp33;
+                              cResult[29] = chatMessage;
+                              cResult[30] = displayName;
+                              cResult[31] = tmp18;
+                              cResult[32] = guildId;
+                              cResult[33] = undefined !== isTryItOut && isTryItOut;
+                              cResult[34] = user;
+                              cResult[35] = tmp33;
                               tmp30 = tmp33;
                             }
                             const items2 = [tmp9.chatPreviewWrapper, chatPreviewWrapperTilted];
@@ -339,7 +342,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
       tmp18 = obj9;
     }
   }
-  class X {
+  class K {
     constructor() {
       obj = closure_6;
       if (isTryItOut) {
@@ -356,8 +359,8 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   cResult[3] = guildId;
   cResult[4] = undefined !== isTryItOut && isTryItOut;
   cResult[5] = user.id;
-  cResult[6] = X;
-  tmp16 = X;
+  cResult[6] = K;
+  tmp16 = K;
 }) : (function DisplayNameStylesEditPreview(user) {
   let NameplatePreview;
   let appIconId;
@@ -405,6 +408,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
   if (flag6 === undefined) {
     flag6 = false;
   }
+  const chatMessage = user.chatMessage;
   const tmp = closure_9();
   const tmp2 = closure_10(appIconScale);
   const obj = user(selectedFontId[9]);
@@ -448,7 +452,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
     flag6 = tmp.chatPreviewWrapperTilted;
   }
   items4[1] = flag6;
-  const obj6 = { style: items4, children: closure_7(closure_11, { user, displayName, displayNameStyles: memo, guildId, avatarSrcOverride: stateFromStores, isTryItOut: flag }) };
+  const obj6 = { style: items4, children: closure_7(closure_11, { user, displayName, displayNameStyles: memo, guildId, avatarSrcOverride: stateFromStores, isTryItOut: flag, chatMessage }) };
   items3[1] = closure_7(selectedColors, obj6);
   let tmp11Result = !flag2;
   if (tmp11Result) {
@@ -476,6 +480,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function DisplayNam
 ReactCompilerGating = ReactCompilerGating_mod;
 let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPreview(arg0) {
   let avatarSrcOverride;
+  let chatMessage;
   let displayName;
   let displayNameStyles;
   let guildId;
@@ -487,16 +492,15 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   let useReducedMotion;
   let user;
   const obj = react2;
-  const cResult = obj.c(35);
-  ({ user, displayName, displayNameStyles, guildId, avatarSrcOverride, isTryItOut } = arg0);
+  const cResult = obj.c(37);
+  ({ user, displayName, displayNameStyles, guildId, avatarSrcOverride, isTryItOut, chatMessage } = arg0);
   const tmp5 = closure_9();
   useAvatarDecoration;
   if (cResult[0] === guildId) {
     let tmp8;
     let tmp12;
     let tmp11;
-    let tmp15;
-    let obj9;
+    let obj8;
     if (cResult[1] === (undefined !== isTryItOut && isTryItOut)) {
       tmp8 = cResult[2];
     }
@@ -504,12 +508,14 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
     const _Symbol = Symbol;
     if (cResult[3] === Symbol.for("react.memo_cache_sentinel")) {
       const items = [AccessibilityStore];
-      const fn = function x() {
-        return useReducedMotion.useReducedMotion;
-      };
+      class A {
+        constructor() {
+          return closure_1_5.useReducedMotion;
+        }
+      }
       cResult[3] = items;
-      cResult[4] = fn;
-      tmp12 = fn;
+      cResult[4] = A;
+      tmp12 = A;
       tmp11 = items;
     } else {
       tmp11 = cResult[3];
@@ -521,15 +527,16 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
     if (cResult[5] === Symbol.for("react.memo_cache_sentinel")) {
       const _Date = Date;
       const self = this;
-      const self2 = this;
-      const calendarFormat = DateUtils.calendarFormat;
-      DateUtils;
+      const tmpResult5 = DateUtils;
+      class A {
+        constructor() {
+          return closure_1_5.useReducedMotion;
+        }
+      }
+      const calendarFormat = tmpResult5.calendarFormat;
       const date = new Date();
+      cResult[5] = calendarFormat(date, true);
       const calendarFormatResult = calendarFormat(date, true);
-      cResult[5] = calendarFormatResult;
-      tmp15 = calendarFormatResult;
-    } else {
-      tmp15 = cResult[5];
     }
     let tmp20 = tmp7;
     if (undefined !== pendingAvatarDecoration) {
@@ -539,145 +546,198 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
       if (cResult[7] === tmp20) {
         if (cResult[8] === guildId) {
           if (cResult[9] === stateFromStores) {
-            let tmp22;
+            let tmp21;
             if (cResult[10] === user) {
-              tmp22 = cResult[11];
+              tmp21 = cResult[11];
             }
             if (cResult[12] === displayName) {
               if (cResult[13] === displayNameStyles) {
                 if (cResult[14] === guildId) {
                   if (cResult[15] === tmp5.chatUsername) {
-                    let tmp31;
-                    let tmp35;
+                    let tmp28;
+                    let tmp33;
                     if (cResult[16] === user.id) {
-                      tmp31 = cResult[17];
+                      tmp28 = cResult[17];
                     }
                     if (cResult[18] !== tmp5.chatTimestamp) {
-                      const obj2 = { variant: "text-xs/medium", color: "text-muted", style: tmp5.chatTimestamp, children: tmp15 };
-                      const tmp37 = metroImportDefault(Text_Text.Text, obj2);
+                      const obj2 = { variant: "text-xs/medium", color: "text-muted", style: tmp5.chatTimestamp, children: null };
+                      class A {
+                        constructor() {
+                          return closure_1_5.useReducedMotion;
+                        }
+                      }
+                      const tmp35 = metroImportDefault(Text_Text.Text, obj2);
                       cResult[18] = tmp5.chatTimestamp;
-                      cResult[19] = tmp37;
-                      tmp35 = tmp37;
+                      cResult[19] = tmp35;
+                      tmp33 = tmp35;
                     } else {
-                      tmp35 = cResult[19];
+                      tmp33 = cResult[19];
                     }
                     if (cResult[20] === tmp5.chatHeader) {
-                      if (cResult[21] === tmp35) {
-                        let tmp38;
-                        let tmp42;
-                        let tmp44;
-                        if (cResult[22] === tmp31) {
-                          tmp38 = cResult[23];
+                      if (cResult[21] === tmp28) {
+                        let tmp36;
+                        let tmp39;
+                        if (cResult[22] === tmp33) {
+                          tmp36 = cResult[23];
                         }
-                        const _Symbol3 = Symbol;
-                        const chatMessageText = tmp5.chatMessageText;
-                        if (cResult[24] === Symbol.for("react.memo_cache_sentinel")) {
-                          const intl = tmp(1128).intl;
-                          const stringResult = intl.string(_modDef2928.h5Cuej);
-                          cResult[24] = stringResult;
-                          tmp42 = stringResult;
-                        } else {
-                          tmp42 = cResult[24];
-                        }
-                        if (cResult[25] !== tmp5.chatMessageText) {
-                          const obj3 = { variant: "text-md/normal", color: "text-default", style: chatMessageText, children: tmp42 };
-                          const tmp46 = metroImportDefault(Text_Text.Text, obj3);
-                          cResult[25] = tmp5.chatMessageText;
-                          cResult[26] = tmp46;
-                          tmp44 = tmp46;
-                        } else {
-                          tmp44 = cResult[26];
-                        }
-                        if (cResult[27] === tmp5.chatContent) {
-                          if (cResult[28] === tmp38) {
-                            let tmp47;
-                            if (cResult[29] === tmp44) {
-                              tmp47 = cResult[30];
+                        if (cResult[24] !== chatMessage) {
+                          let stringResult = chatMessage;
+                          if (chatMessage == null) {
+                            const intl = tmp(1128).intl;
+                            stringResult = intl.string(tmp9(2928).h5Cuej);
+                          }
+                          class A {
+                            constructor() {
+                              return closure_1_5.useReducedMotion;
                             }
-                            if (cResult[31] === tmp5.chatContainer) {
-                              if (cResult[32] === tmp47) {
-                                let tmp51;
-                                if (cResult[33] === tmp22) {
-                                  tmp51 = cResult[34];
-                                }
-                                return tmp51;
+                          }
+                          cResult[24] = chatMessage;
+                          cResult[25] = stringResult;
+                          tmp39 = stringResult;
+                        } else {
+                          tmp39 = cResult[25];
+                        }
+                        if (cResult[26] === tmp5.chatMessageText) {
+                          let tmp42;
+                          if (cResult[27] === tmp39) {
+                            tmp42 = cResult[28];
+                          }
+                          if (cResult[29] === tmp5.chatContent) {
+                            if (cResult[30] === tmp42) {
+                              let tmp44;
+                              if (cResult[31] === tmp36) {
+                                tmp44 = cResult[32];
                               }
+                              if (cResult[33] === tmp5.chatContainer) {
+                                if (cResult[34] === tmp44) {
+                                  let tmp47;
+                                  if (cResult[35] === tmp21) {
+                                    tmp47 = cResult[36];
+                                  }
+                                  return tmp47;
+                                }
+                              }
+                              class A {
+                                constructor() {
+                                  return closure_1_5.useReducedMotion;
+                                }
+                              }
+                              const obj3 = { style: tmp5.chatContainer, pointerEvents: "none", children: items1 };
+                              items1 = [tmp21, tmp44];
+                              const tmp49 = metroImportAll(View, obj3);
+                              cResult[33] = tmp5.chatContainer;
+                              cResult[34] = tmp44;
+                              cResult[35] = tmp21;
+                              cResult[36] = tmp49;
+                              tmp47 = tmp49;
                             }
-                            const obj4 = { style: tmp21, pointerEvents: "none", children: items1 };
-                            items1 = [tmp22, tmp47];
-                            const tmp54 = metroImportAll(View, obj4);
-                            cResult[31] = tmp5.chatContainer;
-                            cResult[32] = tmp47;
-                            cResult[33] = tmp22;
-                            cResult[34] = tmp54;
-                            tmp51 = tmp54;
+                          }
+                          class A {
+                            constructor() {
+                              return closure_1_5.useReducedMotion;
+                            }
+                          }
+                          const obj4 = { style: tmp5.chatContent, children: items2 };
+                          items2 = [tmp36, tmp42];
+                          const tmp46 = metroImportAll(View, obj4);
+                          cResult[29] = tmp5.chatContent;
+                          cResult[30] = tmp42;
+                          cResult[31] = tmp36;
+                          cResult[32] = tmp46;
+                          tmp44 = tmp46;
+                        }
+                        class A {
+                          constructor() {
+                            return closure_1_5.useReducedMotion;
                           }
                         }
-                        const obj5 = { style: tmp30, children: items2 };
-                        items2 = [tmp38, tmp44];
-                        const tmp50 = metroImportAll(View, obj5);
-                        cResult[27] = tmp5.chatContent;
-                        cResult[28] = tmp38;
-                        cResult[29] = tmp44;
-                        cResult[30] = tmp50;
-                        tmp47 = tmp50;
+                        const obj5 = { variant: "text-md/normal", color: "text-default", style: tmp5.chatMessageText, children: tmp39 };
+                        const tmp43 = metroImportDefault(Text_Text.Text, obj5);
+                        cResult[26] = tmp5.chatMessageText;
+                        cResult[27] = tmp39;
+                        cResult[28] = tmp43;
+                        tmp42 = tmp43;
+                      }
+                    }
+                    class A {
+                      constructor() {
+                        return closure_1_5.useReducedMotion;
                       }
                     }
                     const obj6 = { style: tmp5.chatHeader, children: items3 };
-                    items3 = [tmp31, tmp35];
-                    const tmp41 = metroImportAll(View, obj6);
+                    items3 = [tmp28, tmp33];
+                    const tmp38 = metroImportAll(View, obj6);
                     cResult[20] = tmp5.chatHeader;
-                    cResult[21] = tmp35;
-                    cResult[22] = tmp31;
-                    cResult[23] = tmp41;
-                    tmp38 = tmp41;
+                    cResult[21] = tmp28;
+                    cResult[22] = tmp33;
+                    cResult[23] = tmp38;
+                    tmp36 = tmp38;
                   }
                 }
               }
             }
-            const obj7 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: types.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp5.chatUsername };
+            class A {
+              constructor() {
+                return closure_1_5.useReducedMotion;
+              }
+            }
+            tmp31[0] = user.id;
+            tmp31[1] = guildId;
+            tmp31[2] = displayName;
             const tmp9Result = UsernameWithEffectsDefault;
-            const tmp34 = metroImportDefault(tmp9Result, obj7);
+            tmp31[4] = types.EffectDisplayType.PLAIN;
+            tmp31[6] = displayNameStyles;
+            tmp31[7] = tmp5.chatUsername;
+            const tmp32 = metroImportDefault(tmp9Result, tmp31);
             cResult[12] = displayName;
             cResult[13] = displayNameStyles;
             cResult[14] = guildId;
             cResult[15] = tmp5.chatUsername;
             cResult[16] = user.id;
-            cResult[17] = tmp34;
-            tmp31 = tmp34;
+            cResult[17] = tmp32;
+            tmp28 = tmp32;
           }
         }
       }
     }
     const Avatar = tmp(1202).Avatar;
-    const tmp23 = metroImportDefault;
+    const tmp22 = metroImportDefault;
     if (undefined !== avatarSrcOverride) {
-      const obj8 = { source: tmpResult6.getAvatarSource(user, guildId, avatarSrcOverride, stateFromStores), size: native.AvatarSizes.NORMAL, avatarDecoration: tmp20 };
-      obj9 = obj8;
+      const obj7 = { source: tmpResult6.getAvatarSource(user, guildId, avatarSrcOverride, stateFromStores), size: native.AvatarSizes.NORMAL, avatarDecoration: tmp20 };
       tmpResult6 = profile_customization_ProfileCustomizationUtils;
+      class A {
+        constructor() {
+          return closure_1_5.useReducedMotion;
+        }
+      }
+      obj8 = obj7;
     } else {
-      obj9 = { user, size: native.AvatarSizes.NORMAL, guildId, avatarDecoration: tmp20, animate: !stateFromStores };
+      obj8 = { user, size: native.AvatarSizes.NORMAL, guildId: null, avatarDecoration: tmp20, animate: !stateFromStores };
+      class A {
+        constructor() {
+          return closure_1_5.useReducedMotion;
+        }
+      }
     }
-    const tmp23Result = tmp23(Avatar, obj9);
+    const tmp22Result = tmp22(Avatar, obj8);
     cResult[6] = avatarSrcOverride;
     cResult[7] = tmp20;
     cResult[8] = guildId;
     cResult[9] = stateFromStores;
     cResult[10] = user;
-    cResult[11] = tmp23Result;
-    tmp22 = tmp23Result;
+    cResult[11] = tmp22Result;
+    tmp21 = tmp22Result;
   }
-  const obj10 = { guildId, isTryItOut: undefined !== isTryItOut && isTryItOut };
+  const obj9 = { guildId, isTryItOut: undefined !== isTryItOut && isTryItOut };
   cResult[0] = guildId;
   cResult[1] = undefined !== isTryItOut && isTryItOut;
-  cResult[2] = obj10;
-  tmp8 = obj10;
-}) : (function ChatPreview(arg0) {
+  cResult[2] = obj9;
+  tmp8 = obj9;
+}) : (function ChatPreview(chatMessage) {
   let avatarSrcOverride;
   let displayName;
   let displayNameStyles;
   let guildId;
-  let intl;
   let isTryItOut;
   let items1;
   let items2;
@@ -686,11 +746,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   let tmp2Result;
   let useReducedMotion;
   let user;
-  ({ user, guildId, avatarSrcOverride, isTryItOut } = arg0);
-  ({ displayName, displayNameStyles } = arg0);
+  ({ user, guildId, avatarSrcOverride, isTryItOut } = chatMessage);
+  ({ displayName, displayNameStyles } = chatMessage);
   if (isTryItOut === undefined) {
     isTryItOut = false;
   }
+  chatMessage = chatMessage.chatMessage;
   const tmp = closure_9();
   const obj = useAvatarDecoration;
   const avatarDecoration = obj.useAvatarDecoration(user, guildId);
@@ -726,9 +787,12 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function ChatPr
   const obj9 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
-  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: intl.string(_modDef2928.h5Cuej) };
+  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
   const Text = tmp2(5266).Text;
-  intl = tmp2(1128).intl;
+  if (chatMessage == null) {
+    const intl = tmp2(1128).intl;
+    chatMessage = intl.string(tmp5(2928).h5Cuej);
+  }
   items3[1] = metroImportDefault(Text, obj10);
   items1[1] = metroImportAll(View, obj6);
   return metroImportAll(View, obj3);
